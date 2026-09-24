@@ -3,25 +3,10 @@
 ## Critical Requirement
 
 All Filament action methods **MUST** return associative arrays with **string keys**, not indexed arrays.
-<<<<<<< HEAD
-<<<<<<< .merge_file_3Hd6mi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_8tvpRa
 When configuring actions inside a static `make()` method, the callback **MUST NOT**
 rely on `$this` from the closure scope. Capture the created action instance with
 `use ($action)` and narrow any payload read from `$arguments` / `$data` before
 delegating to typed services or actions.
-<<<<<<< .merge_file_3Hd6mi
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_8tvpRa
-=======
->>>>>>> da9ae01a0 (.)
 
 ## The Rule
 
@@ -154,13 +139,6 @@ When creating or updating Filament pages:
 
 ## Common Mistakes
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_3Hd6mi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_8tvpRa
 ### Mistake 0: Using `$this` inside `static make()` callbacks
 ```php
 // ❌ WRONG
@@ -209,14 +187,6 @@ if (! is_string($year) && null !== $year) {
 $modelCopyAction->execute($modelClass, $fieldName, $year);
 ```
 
-<<<<<<< .merge_file_3Hd6mi
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_8tvpRa
-=======
->>>>>>> da9ae01a0 (.)
 ### Mistake 1: Indexed Array
 ```php
 // ❌ WRONG
@@ -316,20 +286,4 @@ Using string keys for Filament actions is **required** for:
 - ✅ Code readability
 - ✅ Maintainability
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_3Hd6mi
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Always use associative arrays with string keys for all Filament action methods.**
-=======
-**Always use associative arrays with string keys for all Filament action methods.**
->>>>>>> laraxot/dev
-=======
-**Always use associative arrays with string keys for all Filament action methods.**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Always use associative arrays with string keys for all Filament action methods.**
->>>>>>> .merge_file_8tvpRa
-=======
-**Always use associative arrays with string keys for all Filament action methods.**
->>>>>>> da9ae01a0 (.)

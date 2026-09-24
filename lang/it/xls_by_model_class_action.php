@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/xls_by_model_class_action.php
->>>>>>> 930f8146 (Check & fix styling)
 return [
     'id' => 'id',
     'level' => 'level',
@@ -31,27 +24,7 @@ return [
         ],
         'label' => 'Xls By Model Class Action',
         'sort' => 1,
-<<<<<<< HEAD
-<<<<<<< .merge_file_vCAt4A
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'icon' => 'heroicon-o-collection',
-=======
         'icon' => 'xot-files.xls',
->>>>>>> laraxot/dev
-=======
-        'icon' => 'heroicon-o-collection',
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        'icon' => 'xot-files.xls',
->>>>>>> .merge_file_BbQvw5
-=======
-<<<<<<< HEAD
-        'icon' => 'xot-files.xls',
-=======
-        'icon' => 'heroicon-o-collection',
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
     'fields' => [
         'id' => [

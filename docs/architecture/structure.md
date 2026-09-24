@@ -292,30 +292,7 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\Xot
 Modules\\Xot\\Database\\Factories
 Modules\\Xot\\Database\\Seeders
-<<<<<<< .merge_file_DUsRtu
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_xot_fila3
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Pacchetto Composer**: laraxot/module_xot_fila3
-=======
-- **Pacchetto Composer**: laraxot/module_xot_fila5
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Pacchetto Composer**: laraxot/module_xot_fila5
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **Pacchetto Composer**: laraxot/module_xot_fila3
->>>>>>> .merge_file_WBw9nb
-=======
-=======
-- **Pacchetto Composer**: laraxot/module_xot_fila5
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 marco sottana
 - **Dipendenze**: php ^8.2 calebporzio/sushi ^2.5 coolsam/panel-modules * doctrine/dbal * fidum/laravel-eloquent-morph-to-one * filament/filament ^3.3 filament/spatie-laravel-media-library-plugin ^3.2 filament/spatie-laravel-translatable-plugin ^3.2 aaronfrancis/fast-paginate * guzzlehttp/guzzle * laravel/folio ^1.1 laravel/framework * laravel/pennant ^1.11 laravel/pulse ^1.2 livewire/livewire * maatwebsite/excel ^3.1 nwidart/laravel-modules * predis/predis ^2.2 spatie/cpu-load-health-check ^1.0 spatie/laravel-data ^4.7
 - **Totale file PHP**: 968
@@ -869,30 +846,7 @@ lang/fr
 lang/gr
 lang/it
 lang/ka
-<<<<<<< .merge_file_DUsRtu
-<<<<<<< HEAD
-<<<<<<< HEAD
 lang/lang
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-lang/lang
-=======
-lang/<locale>
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-lang/<locale>
->>>>>>> 3792da0d (Check & fix styling)
-=======
-lang/lang
->>>>>>> .merge_file_WBw9nb
-=======
-=======
-lang/<locale>
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 lang/lang/ar
 lang/lang/da
 lang/lang/de
@@ -1076,47 +1030,6 @@ tests_old
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
-<<<<<<< .merge_file_DUsRtu
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-* [structure.md](../../../gdpr/project_docs/structure.md)
-* [structure.md](../../../notify/project_docs/structure.md)
-* [structure.md](../../../xot/project_docs/structure.md)
-* [structure.md](../../../xot/project_docs/base/structure.md)
-* [structure.md](../../../xot/project_docs/config/structure.md)
-* [structure.md](../../../user/project_docs/structure.md)
-* [structure.md](../../../ui/project_docs/structure.md)
-* [structure.md](../../../lang/project_docs/structure.md)
-* [structure.md](../../../job/project_docs/structure.md)
-* [structure.md](../../../media/project_docs/structure.md)
-* [structure.md](../../../tenant/project_docs/structure.md)
-* [structure.md](../../../activity/project_docs/structure.md)
-* [structure.md](../../../cms/project_docs/structure.md)
-* [structure.md](../../../cms/project_docs/themes/structure.md)
-* [structure.md](../../../cms/project_docs/components/structure.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_WBw9nb
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 * [structure.md](../../../Gdpr/project_docs/structure.md)
 * [structure.md](../../../Notify/project_docs/structure.md)
 * [structure.md](../../../Xot/project_docs/structure.md)
@@ -1152,27 +1065,4 @@ b6f667c (.)
 - La registrazione dei comandi nel ServiceProvider del modulo deve usare il namespace e path corretti.
 - Aggiornare la documentazione del modulo con esempi e riferimenti.
 
-<<<<<<< .merge_file_DUsRtu
-<<<<<<< HEAD
-<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> .merge_file_WBw9nb
-=======
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

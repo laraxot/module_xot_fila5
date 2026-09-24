@@ -214,26 +214,6 @@ Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collega
 
 ```markdown
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/project_docs/README.md).
-<<<<<<< .merge_file_L1wrwX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/project_docs/readme.md).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/project_docs/readme.md).
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wmoyXU
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 2. Documentazione Centralizzata
@@ -242,26 +222,6 @@ Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo X
 
 ```markdown
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/project_docs/best-practices.md).
-<<<<<<< .merge_file_L1wrwX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-Per le best practices generali sul framework, consultare la [guida principale](../xot/project_docs/best-practices.md).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Per le best practices generali sul framework, consultare la [guida principale](../xot/project_docs/best-practices.md).
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wmoyXU
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ## Esempi di Eccellenza
@@ -318,27 +278,4 @@ Per implementare queste linee guida:
 
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Documentazione Laravel](https://laravel.com/docs)
-<<<<<<< .merge_file_L1wrwX
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> .merge_file_wmoyXU
-=======
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

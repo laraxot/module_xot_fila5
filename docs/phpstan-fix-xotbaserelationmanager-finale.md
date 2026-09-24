@@ -173,12 +173,4 @@ public function canDetachBulk(Model|\stdClass|null $record): bool
 
 **Tutti gli errori PHPStan corretti!** ✅
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Il file passa PHPStan livello max senza errori, mantenendo backward compatibility e funzionalità esistente.
-=======
-Il file passa PHPStan livello max senza errori, mantenendo backward compatibility e funzionalità esistente.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Il file passa PHPStan livello max senza errori, mantenendo backward compatibility e funzionalità esistente.
->>>>>>> da9ae01a0 (.)

@@ -1,15 +1,3 @@
-<<<<<<< .merge_file_qncOwF
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ZftSH0
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()
@@ -236,32 +224,3 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_qncOwF
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
----
-module: theme
-topic: translation-system
-canonical: ../../../Themes/docs/shared-components/translation-system-1-Modules.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/translation-system-1-Modules.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/translation-system-1-Modules.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ZftSH0
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

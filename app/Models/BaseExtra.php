@@ -14,35 +14,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 /**
  * Model Extra.
  *
-<<<<<<< .merge_file_fWIeYd
-<<<<<<< HEAD
- * <<<<<<< HEAD
- *
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property int                                               $id
- * @property int|null                                          $model_id
- * @property string|null                                       $model_type
- * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
- *
- * @method static Builder|BaseModel disableCache()
- * @method static ExtraFactory      factory($count = null, $state = [])
- * @method static Builder|Extra     newModelQuery()
- * @method static Builder|Extra     newQuery()
- * @method static Builder|Extra     query()
- * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
- * @method static Builder|Extra     withExtraAttributes()
-<<<<<<< HEAD
- *                                                                                 =======
- *
- * @property int                                               $id
- * @property int|null                                          $model_id
- * @property string|null                                       $model_type
-=======
  * @property int $id
  * @property int|null $model_id
  * @property string|null $model_type
->>>>>>> .merge_file_wAx8VN
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  *
  * @method static Builder|BaseModel disableCache()
@@ -51,14 +25,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|Extra newQuery()
  * @method static Builder|Extra query()
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
-<<<<<<< .merge_file_fWIeYd
- * @method static Builder|Extra     withExtraAttributes()
- *                                                                                 >>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
  * @method static Builder|Extra withExtraAttributes()
->>>>>>> .merge_file_wAx8VN
  *
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

@@ -1,37 +1,7 @@
 # Mass Fix Errori Sintassi PHP
 
 > **Versione**: 1.0
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qrl25X
-<<<<<<< HEAD
-<<<<<<< HEAD
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_SwY9HF
-> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
-=======
-<<<<<<< HEAD
-> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_95WQCz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
->>>>>>> .merge_file_t6sVsr
-=======
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Stato**: ✅ COMPLETATO
 **Causa Radice**: Conflitti Git risolti automaticamente con duplicazioni non rilevate
@@ -298,34 +268,4 @@ done < /tmp/broken_files.txt
 
 **Status**: ✅ COMPLETATO
 **Filosofia**: "Ogni bug è un maestro. Ogni fix è una lezione."
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qrl25X
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Cronologia**: Vedi [CHANGELOG.md](changelog.md)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_SwY9HF
-**Cronologia**: Vedi [CHANGELOG.md](changelog.md)
-=======
-<<<<<<< HEAD
-**Cronologia**: Vedi [CHANGELOG.md](changelog.md)
-=======
-**Cronologia**: Vedi [CHANGELOG.md](./CHANGELOG.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_95WQCz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Cronologia**: Vedi [CHANGELOG.md](./CHANGELOG.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Cronologia**: Vedi [CHANGELOG.md](changelog.md)
->>>>>>> .merge_file_t6sVsr
-=======
-=======
-**Cronologia**: Vedi [CHANGELOG.md](changelog.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

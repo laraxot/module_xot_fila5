@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_X3YEhL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_n5l3kH
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_X3YEhL
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_n5l3kH
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
 ---
 name: phpstan-fixes-gennaio-phpstan-fixes-gennaio-2025-modulo-xot
 description: " Riassunto delle Correzioni"
@@ -27,24 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_X3YEhL
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_n5l3kH
->>>>>>> laraxot/dev
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
 ## Riassunto delle Correzioni
@@ -218,13 +178,6 @@ public function getAllColors(): array
 
 *Ultimo aggiornamento: Gennaio 2025*
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
 ## Variant 2
 

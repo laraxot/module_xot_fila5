@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
-=======
-use Filament\Widgets\Widget;
->>>>>>> 930f8146 (Check & fix styling)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
@@ -16,21 +12,11 @@ use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
  * Widget per mostrare una panoramica dei moduli disponibili.
  * Utilizza l'action GetModulesNavigationItems per caricare dinamicamente i moduli.
  */
-<<<<<<< HEAD
 class ModulesOverviewWidget extends XotBaseWidget
 {
-<<<<<<< HEAD
     /** @var view-string */
-=======
-<<<<<<< HEAD
-    /** @phpstan-ignore property.defaultValue */
->>>>>>> 3792da0d (Check & fix styling)
-=======
-class ModulesOverviewWidget extends Widget
-{
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    protected string $view = 'xot::filament.widgets.modules-overview';
+    /** @var view-string */
+    protected string $view;
 
     protected int|string|array $columnSpan = 'full';
 
@@ -49,15 +35,7 @@ class ModulesOverviewWidget extends Widget
             $configs = app(GetModulesNavigationItems::class)->getCachedModuleConfigs();
 
             // Ordina per sort
-<<<<<<< HEAD
             usort($configs, static fn (array $a, array $b) => ($a['sort'] <=> $b['sort']));
-=======
-            usort($configs, static fn ($a, $b) => ($a['sort'] <=> $b['sort']));
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
             $user = Auth::user();
             $hasRoleFn = static function (string $role) use ($user): bool {
@@ -136,22 +114,7 @@ class ModulesOverviewWidget extends Widget
     /**
      * Ottiene la descrizione per un modulo.
      *
-<<<<<<< .merge_file_eJw1DO
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param string $module Nome del modulo
-     *                       =======
-     * @param string $module Nome del modulo
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param string $module Nome del modulo
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  string  $module  Nome del modulo
->>>>>>> .merge_file_BMl82l
      * @return string Descrizione del modulo
      */
     private function getModuleDescription(string $module): string

@@ -947,40 +947,6 @@ GeneratePngChartAction::dispatch($type, $data)
 ---
 
 **Last Updated:** 2025-12-09
-<<<<<<< .merge_file_nwBoj6
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, Spatie QueueableAction
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Version:** 1.0.0
-**PHPStan Level:** 10 ✅
-**Dependencies:** Imagick, Spatie QueueableAction
-=======
-**
-**Version:** 1.0.0
-**PHPStan Level:** 10 ✅
-**Dependencies:** Imagick, Spatie QueueableAction
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**
-**Version:** 1.0.0
-**PHPStan Level:** 10 ✅
-**Dependencies:** Imagick, Spatie QueueableAction
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-**Version:** 1.0.0
-**PHPStan Level:** 10 ✅
-**Dependencies:** Imagick, Spatie QueueableAction
-<<<<<<< HEAD
->>>>>>> .merge_file_7UJHSz
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

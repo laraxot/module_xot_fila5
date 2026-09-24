@@ -5,33 +5,7 @@ type: reference
 slug: phpstan-error
 description: 'modulo Geo'
 tags: [migrato-da-txt, xot]
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_KEdVfV
-<<<<<<< HEAD
-converted_from: phpstan_error.txt
->>>>>>> laraxot/dev
-=======
 converted_from: phpstan-error.txt
->>>>>>> .merge_file_jTTu2R
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-converted_from: phpstan-error.txt
-=======
-converted_from: phpstan_error.txt
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_KEdVfV
-<<<<<<< HEAD
-=======
-=======
-converted_from: phpstan-error.txt
->>>>>>> .merge_file_jTTu2R
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
 created: 2026-08-24
 updated: 2026-08-24
 ---

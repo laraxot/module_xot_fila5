@@ -1,15 +1,3 @@
-<<<<<<< .merge_file_Vw5ui3
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2b9oH5
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Comprehensive Improvement Recommendations
 ## DRY + KISS + SOLID + Robust + Filament 4 + Laravel 12 + PHP 8.3
 
@@ -709,32 +697,3 @@ class ContactNotificationService
 ```
 
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
-<<<<<<< HEAD
-<<<<<<< .merge_file_Vw5ui3
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
----
-module: theme
-topic: comprehensive-improvement-recommendations-1
-canonical: ../../../Themes/docs/shared-components/comprehensive-improvement-recommendations-1-1.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-improvement-recommendations-1-1.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-improvement-recommendations-1-1.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_2b9oH5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

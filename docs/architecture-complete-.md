@@ -143,39 +143,10 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_rlK6Az
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_61wzdk
-=======
->>>>>>> da9ae01a0 (.)
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_rlK6Az
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_61wzdk
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -368,11 +339,7 @@ Defines contracts for modular extensibility:
 
 ### 9. Helper Functions (200+)
 
-<<<<<<< HEAD
 **File:** `Modules/Xot/Helpers/Helper.php`
-=======
-**File:** `Modules/Xot/helpers/Helper.php`
->>>>>>> 930f8146 (Check & fix styling)
 
 **Categories:**
 
@@ -617,39 +584,10 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_rlK6Az
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_61wzdk
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_rlK6Az
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_61wzdk
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('field1')->required(),
@@ -727,39 +665,10 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_rlK6Az
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_61wzdk
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_rlK6Az
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_61wzdk
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('title')
@@ -933,11 +842,7 @@ $value = $model->getExtra('custom_field');
 - Filament Resource Base: `Modules/Xot/app/Filament/Resources/XotBaseResource.php`
 - Provider Base: `Modules/Xot/app/Providers/XotBaseServiceProvider.php`
 - Central Config: `Modules/Xot/app/Datas/XotData.php`
-<<<<<<< HEAD
 - Global Helpers: `Modules/Xot/Helpers/Helper.php`
-=======
-- Global Helpers: `Modules/Xot/helpers/Helper.php`
->>>>>>> 930f8146 (Check & fix styling)
 - Actions: `Modules/Xot/app/Actions/` (150+ classes)
 - Test Base: `Modules/Xot/tests/TestCase.php`
 

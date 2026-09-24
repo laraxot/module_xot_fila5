@@ -95,52 +95,7 @@ class ColumnBuilder
     /**
      * Status badge column with standard colors.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Yc6UwK
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_8og3Hu
->>>>>>> da9ae01a0 (.)
-     *
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< .merge_file_8og3Hu
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     *                                            <<<<<<< .merge_file_EWEHSW
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< .merge_file_7zKQmf
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            >>>>>>> laraxot/dev
-     *                                            >>>>>>> .merge_file_aPYjex
-     *                                            >>>>>>> .merge_file_Kk5VfB
-     *                                            =======
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                                            >>>>>>> .merge_file_NLfj6K
-     *                                            >>>>>>> laraxot/dev
-=======
-     * @param array<string, string> $customColors Custom color mappings
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  array<string, string>  $customColors  Custom color mappings
->>>>>>> .merge_file_qXoygP
-=======
->>>>>>> .merge_file_NLfj6K
-=======
-     * @param array<string, string> $customColors Custom color mappings
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public static function statusBadge(array $customColors = []): TextColumn
     {
@@ -159,52 +114,7 @@ class ColumnBuilder
     /**
      * Priority badge column.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Yc6UwK
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_8og3Hu
->>>>>>> da9ae01a0 (.)
-     *
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< .merge_file_8og3Hu
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     *                                            <<<<<<< .merge_file_EWEHSW
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< .merge_file_7zKQmf
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            =======
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            >>>>>>> laraxot/dev
-     *                                            >>>>>>> .merge_file_aPYjex
-     *                                            >>>>>>> .merge_file_Kk5VfB
-     *                                            =======
-     * @param array<string, string> $customColors Custom color mappings
-     *                                            >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                                            >>>>>>> .merge_file_NLfj6K
-     *                                            >>>>>>> laraxot/dev
-=======
-     * @param array<string, string> $customColors Custom color mappings
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  array<string, string>  $customColors  Custom color mappings
->>>>>>> .merge_file_qXoygP
-=======
->>>>>>> .merge_file_NLfj6K
-=======
-     * @param array<string, string> $customColors Custom color mappings
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public static function priorityBadge(array $customColors = []): TextColumn
     {

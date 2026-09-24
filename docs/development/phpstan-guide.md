@@ -154,50 +154,9 @@ use Modules\User\Models\User; // Namespace corretto
 
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
-<<<<<<< .merge_file_upq53K
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_wuGED2
-=======
->>>>>>> da9ae01a0 (.)
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
 
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
 **Versione:** 2.0 - Consolidata DRY + KISS
-<<<<<<< .merge_file_upq53K
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-**Ultimo aggiornamento:** Gennaio 2025
-- [Best Practices Sistema](../../../../docs/core/best-practices.md)
-
----
-
-<<<<<<< HEAD
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wuGED2
-=======
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

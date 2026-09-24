@@ -6,19 +6,6 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-<<<<<<< .merge_file_bYZhWI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Filament\Tables\Columns\Layout\Stack;
-use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
-=======
-use Filament\Tables\Columns\Layout\Stack;
-use Filament\Tables\Columns\TextColumn;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_d2L0L9
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
@@ -40,66 +27,6 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_bYZhWI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-=======
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
-     */
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'key' => TextColumn::make('key')
-                ->searchable()
-                ->sortable()
-                ->wrap()
-                ->label('Key'),
-            'value' => TextColumn::make('value')
-                ->searchable()
-                ->wrap()
-                ->label('Value'),
-            'expiration' => TextColumn::make('expiration')
-                ->dateTime()
-                ->sortable()
-                ->label('Expiration'),
-        ];
-    }
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    #[\Override]
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    /**
-     * @return array<int, Stack>
-     */
-    #[\Override]
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    public function getGridTableColumns(): array
-    {
-        return [
-            Stack::make($this->getTableColumns()),
-        ];
-    }
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_d2L0L9
     /**
      * @return array<string, Action>
      */

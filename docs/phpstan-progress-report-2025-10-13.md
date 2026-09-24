@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZLbAMe
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_1Nx7Kf
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZLbAMe
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_1Nx7Kf
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
 ---
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
@@ -27,24 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ZLbAMe
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_1Nx7Kf
->>>>>>> laraxot/dev
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary
@@ -383,13 +343,6 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 *Errors Fixed: 861*
 *Progress: 17.8% complete*
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
 ## Merged from phpstan-progress_2.md
 
@@ -401,14 +354,6 @@ canonical: ../../../Themes/docs/shared-components/phpstan-progress-2-1.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-2-1.md
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
 ## Variant 10
 

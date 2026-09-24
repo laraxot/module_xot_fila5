@@ -3,13 +3,8 @@
 ## Principi Fondamentali
 
 1. **Struttura Modulare**
-<<<<<<< HEAD
    - Ogni modulo ha la sua documentazione in `/Modules/{ModuleName}/project_docs/`
    - Le regole generali sono in `/Modules/Xot/project_docs/`
-=======
-   - Ogni modulo ha la sua documentazione in `/Modules/{ModuleName}/docs/`
-   - Le regole generali sono in `/Modules/Xot/docs/`
->>>>>>> 930f8146 (Check & fix styling)
    - La root `/docs` contiene solo indici e collegamenti
 
 2. **Collegamenti Bidirezionali**
@@ -19,11 +14,7 @@
 
 3. **Organizzazione dei Contenuti**
    ```
-<<<<<<< HEAD
    Modules/Xot/project_docs/
-=======
-   Modules/Xot/docs/
->>>>>>> 930f8146 (Check & fix styling)
    ├── guidelines/           # Linee guida generali
    ├── conventions/          # Convenzioni di codice
    ├── architecture/         # Architettura del framework
@@ -89,11 +80,7 @@ public function example(): void
 
 ### 1. Struttura Base
 ```
-<<<<<<< HEAD
 Modules/{ModuleName}/project_docs/
-=======
-Modules/{ModuleName}/docs/
->>>>>>> 930f8146 (Check & fix styling)
 ├── README.md              # Panoramica del modulo
 ├── installation.md        # Istruzioni di installazione
 ├── configuration.md       # Configurazione
@@ -116,10 +103,6 @@ Breve descrizione...
 [Configurazione](configuration.md)
 
 ## Utilizzo
-<<<<<<< HEAD
-=======
-[Guide all'uso](usage/README.md)
->>>>>>> 930f8146 (Check & fix styling)
 [Guide all'uso](usage/readme.md)
 ```
 
@@ -176,48 +159,13 @@ php artisan api:generate
 
 ## Collegamenti
 
-<<<<<<< .merge_file_HzAb3h
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Convenzioni di Codice](README.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Convenzioni di Codice](README.md)
-=======
-- [Convenzioni di Codice](../conventions/readme.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Convenzioni di Codice](../conventions/readme.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Convenzioni di Codice](README.md)
->>>>>>> .merge_file_F4lcZL
-=======
-=======
-- [Convenzioni di Codice](../conventions/README.md)
-- [Architettura](../architecture/README.md)
-- [Best Practices](../best-practices/README.md)
-- [Convenzioni di Codice](../conventions/readme.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Architettura](../architecture/readme.md)
 - [Best Practices](../best-practices/readme.md)
 - [Markdown Guide](https://www.markdownguide.org)
 
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
-<<<<<<< HEAD
 * [documentation.md](../../../xot/project_docs/documentation.md)
 * [documentation.md](../../../xot/project_docs/guidelines/documentation.md)
 * [documentation.md](../../../cms/project_docs/roadmap/features/documentation.md)
-=======
-* [documentation.md](../../../Xot/docs/documentation.md)
-* [documentation.md](../../../Xot/docs/guidelines/documentation.md)
-* [documentation.md](../../../Cms/docs/roadmap/features/documentation.md)
-* [documentation.md](../../../xot/docs/documentation.md)
-* [documentation.md](../../../xot/docs/guidelines/documentation.md)
-* [documentation.md](../../../cms/docs/roadmap/features/documentation.md)
->>>>>>> 930f8146 (Check & fix styling)

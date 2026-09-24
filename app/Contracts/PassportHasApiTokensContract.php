@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -63,22 +47,7 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
-<<<<<<< .merge_file_kAn0iR
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<int, string> $scopes
-     *                                   =======
-     * @param array<int, string> $scopes
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<int, string> $scopes
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  array<int, string>  $scopes
->>>>>>> .merge_file_4gx2Mg
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;

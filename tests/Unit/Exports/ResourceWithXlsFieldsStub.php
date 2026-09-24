@@ -11,55 +11,7 @@ namespace Modules\Xot\Tests\Unit\Exports;
 class ResourceWithXlsFieldsStub
 {
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_jwoq8a
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_nCtqKB
->>>>>>> da9ae01a0 (.)
-     *
-     * @param array<array-key, mixed> $data
-     *                                      =======
-     *                                      <<<<<<< .merge_file_nCtqKB.
-     * @param array<array-key, mixed> $data
-     *                                      =======
-     *                                      <<<<<<< .merge_file_zBrJKn.
-     * @param array<array-key, mixed> $data
-     *
-     * =======
-     * <<<<<<< .merge_file_JCJjsQ.
-     * @param array<array-key, mixed> $data
-     *                                      =======
-     *                                      <<<<<<< .merge_file_ARVwq6.
-     * @param array<array-key, mixed> $data
-     *                                      =======
-     *                                      <<<<<<< HEAD
-     * @param array<array-key, mixed> $data
-     *                                      =======
-     * @param array<array-key, mixed> $data
-     *
-     * >>>>>>> laraxot/dev
-     *
-     * >>>>>>> .merge_file_VDF7Hc
-     *
-     * >>>>>>> .merge_file_kG4HSa
-     * >>>>>>> .merge_file_5iYPWw
-     *
-     * >>>>>>> .merge_file_KSvTHm
-=======
-     * @param array<array-key, mixed> $data
->>>>>>> 930f8146 (Check & fix styling)
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<array-key, mixed> $data
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  array<array-key, mixed>  $data
->>>>>>> .merge_file_CBrh91
      * @return array<int|string, string>
      */
     public static function getXlsFields(array $data): array

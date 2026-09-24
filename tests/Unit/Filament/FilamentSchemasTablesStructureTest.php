@@ -5,33 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 /**
  * @return list<array{0: string, 1: string}>
@@ -110,19 +91,7 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
 
     $body = trim($m[1]);
 
-<<<<<<< .merge_file_0Ki3by
-<<<<<<< HEAD
-<<<<<<< HEAD
     return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
-=======
-    return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
->>>>>>> laraxot/dev
-=======
-    return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
->>>>>>> .merge_file_vGSw3a
 }
 
 test('every concrete filament resource has populated schemas and table classes', function (): void {

@@ -228,27 +228,4 @@ public function getTableActions(): array
 
 ## Collegamenti alla Documentazione Specifica
 
-<<<<<<< .merge_file_FrHx3H
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
-=======
-- [Standard di Codice nel Progetto](../../../../../docs/standard-codice.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Standard di Codice nel Progetto](../../../../../docs/standard-codice.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
->>>>>>> .merge_file_wjAY9p
-=======
-=======
-- [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

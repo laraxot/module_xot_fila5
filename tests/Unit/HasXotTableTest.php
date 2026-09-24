@@ -1,14 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Filament\Tables\Table;
 use Mockery\MockInterface;
 use Modules\Xot\Tests\TestCase;
@@ -20,22 +12,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< .merge_file_DGxbam
-<<<<<<< HEAD
- * <<<<<<< HEAD.
- *
- * @param MockInterface&Table $tableMock
- *                                       =======
- * @param MockInterface&Table $tableMock
- *
- * >>>>>>> laraxot/dev
-=======
- * @param MockInterface&Table $tableMock
->>>>>>> 3792da0d (Check & fix styling)
- *
-=======
  * @param  MockInterface&Table  $tableMock
->>>>>>> .merge_file_jSUFZ7
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface
@@ -48,14 +25,7 @@ function stubTableChain(MockInterface $tableMock): MockInterface
         'filters',
         'filtersLayout',
         'filtersFormColumns',
-<<<<<<< HEAD
         'deferFilters',
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         'persistFiltersInSession',
         'headerActions',
         'actions',
@@ -92,16 +62,7 @@ it('tests table method with all methods implemented', function (): void {
     /** @var HasTableWithXotTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithXotTestClass::class)
         ->makePartial()
-<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
-=======
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     $mock->allows([
         'getTableHeaderActions' => [],
         'getTableActions' => [],
@@ -133,16 +94,7 @@ it('tests table method with no optional methods implemented', function (): void 
     /** @var HasTableWithoutOptionalMethodsTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)
         ->makePartial()
-<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
-=======
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     $mock->allows([
         'getModelClass' => DummyTestModel::class,
         'getTableRecordTitleAttribute' => 'name',

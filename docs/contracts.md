@@ -1,15 +1,3 @@
-<<<<<<< .merge_file_L6EzmZ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_x0G0Ey
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Contratti del Modulo Xot
 
 ## Descrizione
@@ -23,24 +11,6 @@ Il modulo Xot definisce vari contratti (interfacce) che standardizzano il compor
 ### Scopo
 Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenticazione, autorizzazione, ruoli, permessi e media.
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_L6EzmZ
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_x0G0Ey
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ### Problema Critico Identificato (2025-01-06)
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
@@ -122,39 +92,3 @@ Contratto per modelli che hanno profili.
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< .merge_file_L6EzmZ
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-//--- Illuminate\Database\Eloquent\Relations\relation (abstract class Relation)
-->getRelated()
-
-//--- Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable (trait InteractsWithPivotTable) - BelongsToMany
-->detach()
-->attach()
-
-
-//---- Illuminate\Database\Eloquent\Concerns\QueriesRelationships (trait QueriesRelationships)
-public function whereHas($relation, Closure $callback = null, $operator = '>=', $count = 1)
-
-//---- Illuminate\Database\Eloquent\Builder  (class Builder)
-<<<<<<< HEAD
- public function getModel()
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
- public function getModel()
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_x0G0Ey
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

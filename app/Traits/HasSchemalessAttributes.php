@@ -5,30 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< .merge_file_l1GrQz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_jVdqmf
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\json_encode;
 
-<<<<<<< .merge_file_l1GrQz
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-use function Safe\json_encode;
-
-use Spatie\SchemalessAttributes\SchemalessAttributes;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_jVdqmf
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
  *
@@ -38,11 +18,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property SchemalessAttributes|null $extra_attributes
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
-<<<<<<< HEAD
  *
  * @phpstan-ignore trait.unused
-=======
->>>>>>> 3792da0d (Check & fix styling)
  */
 trait HasSchemalessAttributes
 {
@@ -76,21 +53,7 @@ trait HasSchemalessAttributes
     /**
      * Scope per filtrare per attributi schemaless.
      *
-<<<<<<< .merge_file_l1GrQz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Builder<static>  $query
->>>>>>> .merge_file_jVdqmf
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -105,31 +68,8 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_l1GrQz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Builder<static>  $query
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-     * @param Builder<static>                     $query
-     * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile da confrontare
-=======
-     * @param Builder<static> $query
->>>>>>> 930f8146 (Check & fix styling)
-     *
->>>>>>> laraxot/dev
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Builder<static>  $query
-     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
->>>>>>> .merge_file_jVdqmf
      * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
@@ -160,16 +100,9 @@ trait HasSchemalessAttributes
 
     /**
      * Get un valore da extra_attributes.
-<<<<<<< HEAD
      *
      * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {
@@ -178,22 +111,8 @@ trait HasSchemalessAttributes
 
     /**
      * Set un valore in extra_attributes.
-<<<<<<< HEAD
      *
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
-<<<<<<< .merge_file_l1GrQz
-=======
-     * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_jVdqmf
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
 use Modules\Xot\Models\XotBaseModel;
@@ -10,35 +9,9 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
-use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
-use Modules\Xot\Models\XotBaseModel;
-use PHPUnit\Framework\Assert;
-
->>>>>>> 930f8146 (Check & fix styling)
 test('safe array by model cast action works', function () {
     $model = new class extends XotBaseModel
     {
-<<<<<<< .merge_file_MDdxm2
-=======
-    $model = new class extends XotBaseModel {
->>>>>>> laraxot/dev
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
-use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
-use Modules\Xot\Models\XotBaseModel;
-use PHPUnit\Framework\Assert;
-
-test('safe array by model cast action works', function () {
-    $model = new class extends XotBaseModel {
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_jzf5Sa
         protected $attributes = [
             'id' => 1,
             'name' => 'Test',
@@ -54,21 +27,8 @@ test('safe array by model cast action works', function () {
 });
 
 test('safe attribute cast action works', function () {
-<<<<<<< .merge_file_MDdxm2
-<<<<<<< HEAD
-<<<<<<< HEAD
     $model = new class extends XotBaseModel
     {
-=======
-    $model = new class extends XotBaseModel {
->>>>>>> laraxot/dev
-=======
-    $model = new class extends XotBaseModel {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $model = new class extends XotBaseModel
-    {
->>>>>>> .merge_file_jzf5Sa
         protected $attributes = [
             'str' => 'test',
             'int' => 123,

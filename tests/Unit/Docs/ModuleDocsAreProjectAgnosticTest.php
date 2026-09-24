@@ -57,33 +57,7 @@ function moduleDocsWithHostProjectName(): array
         );
 
         foreach ($iterator as $fileInfo) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_PReCKq
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_Ou8sr1
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
-=======
-            if (! $fileInfo instanceof \SplFileInfo || 'md' !== $fileInfo->getExtension()) {
->>>>>>> .merge_file_VilMNh
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
->>>>>>> .merge_file_MDmkIN
-=======
-=======
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 continue;
             }
 
@@ -116,44 +90,7 @@ test('nessun documento nuovo di modulo nomina il progetto ospite', function (): 
     expect(count($hits))->toBeLessThanOrEqual(
         MODULE_DOCS_HOST_NAME_FILE_BASELINE,
         "Un documento di modulo nomina un'installazione specifica. Un modulo gira in "
-<<<<<<< HEAD
-<<<<<<< .merge_file_PReCKq
-<<<<<<< HEAD
-<<<<<<< HEAD
         .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_Ou8sr1
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
-=======
-<<<<<<< HEAD
-        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
-=======
-        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
->>>>>>> .merge_file_VilMNh
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
->>>>>>> .merge_file_MDmkIN
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         .'Vedi docs/wiki/rules/project-agnostic.md'
     );
 });

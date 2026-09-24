@@ -1,38 +1,14 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-use Modules\Xot\Actions\Cast\SafeObjectCastAction;
-use PHPUnit\Framework\Assert;
-
-uses(Modules\Xot\Tests\TestCase::class);
->>>>>>> 930f8146 (Check & fix styling)
 
 it('manages object properties safely', function (): void {
     $obj = new stdClass;
-<<<<<<< .merge_file_pzBQd5
-=======
-    $obj = new stdClass();
->>>>>>> laraxot/dev
-=======
-
-use Modules\Xot\Actions\Cast\SafeObjectCastAction;
-use PHPUnit\Framework\Assert;
-
-uses(Modules\Xot\Tests\TestCase::class);
-
-it('manages object properties safely', function (): void {
-    $obj = new stdClass();
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_yeWvvf
     $obj->name = 'Test Object';
     $obj->id = 123;
     $obj->active = true;
@@ -70,43 +46,16 @@ it('manages object properties safely', function (): void {
     Assert::assertTrue($action->hasPropertyValue($obj, 'id', 123));
     Assert::assertFalse($action->hasPropertyValue($obj, 'id', '123'));
     // getValidatedProperty
-<<<<<<< HEAD
     Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (int $v): bool {
         return $v > 100;
     }));
     Assert::assertSame(0, $action->getValidatedProperty($obj, 'id', 'int', function (int $v): bool {
-=======
-    Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
-        return $v > 100;
-    }));
-    Assert::assertSame(0, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
->>>>>>> 930f8146 (Check & fix styling)
         return $v > 200;
     }, 0));
     // Methods
-<<<<<<< HEAD
     $complexObj = new class
     {
         public function test(string $p): string
-=======
-    Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
-        return $v > 100;
-    }));
-    Assert::assertSame(0, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
-        return $v > 200;
-    }, 0));
-    // Methods
-    $complexObj = new class {
-        public function test(mixed $p): mixed
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $complexObj = new class {
-<<<<<<< HEAD
-        public function test(string $p): string
-=======
-        public function test(mixed $p): mixed
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         {
             return $p;
         }

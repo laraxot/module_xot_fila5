@@ -44,14 +44,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerLivewireComponents();
         $this->registerBladeComponents();
         $this->registerCommands();
-<<<<<<< HEAD
         $this->registerPublicAssets();
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     public function register(): void
@@ -65,19 +58,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
-<<<<<<< .merge_file_NO4PaF
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $this->name) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($this->name === '') {
->>>>>>> .merge_file_no3IXN
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -105,53 +86,22 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
-<<<<<<< .merge_file_NO4PaF
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $this->name) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($this->name === '') {
->>>>>>> .merge_file_no3IXN
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
         $viewPath = module_path($this->name, 'resources/views');
-<<<<<<< HEAD
 
         if (! is_dir($viewPath)) {
             return;
         }
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
     public function registerTranslations(): void
     {
-<<<<<<< .merge_file_NO4PaF
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $this->name) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($this->name === '') {
->>>>>>> .merge_file_no3IXN
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -171,23 +121,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     {
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
 
-<<<<<<< HEAD
         if (is_dir($componentViewPath)) {
             try {
                 Blade::anonymousComponentPath($componentViewPath);
             } catch (\Exception $e) {
                 // Ignore invalid or unavailable anonymous component paths.
             }
-=======
-        try {
-            Blade::anonymousComponentPath($componentViewPath);
-        } catch (\Exception $e) {
-            // Ignore invalid or unavailable anonymous component paths.
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         }
 
         $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
@@ -215,11 +154,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
-<<<<<<< .merge_file_NO4PaF
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_no3IXN
         if ($comps->count() === 0) {
             return;
         }
@@ -227,56 +161,11 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $commands = $comps->toArray();
         /** @var array<int, string> $commands */
         $commands = array_map(static function (array $item): string {
-<<<<<<< .merge_file_NO4PaF
-=======
-        if (0 === $comps->count()) {
-            return;
-        }
-<<<<<<< HEAD
-        $items = $comps->toArray();
-=======
-        $commands = $comps->toArray();
-        /** @var array<int, array{ns: string}> $commands */
->>>>>>> 930f8146 (Check & fix styling)
-        $commands = array_map(static function (mixed $item): string {
-            Assert::isArray($item);
->>>>>>> laraxot/dev
-=======
-        if (0 === $comps->count()) {
-            return;
-        }
-        $commands = $comps->toArray();
-        /** @var array<int, array{ns: string}> $commands */
-        $commands = array_map(static function (mixed $item): string {
-            Assert::isArray($item);
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_no3IXN
             Assert::keyExists($item, 'ns');
             Assert::string($item['ns'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
             return $item['ns'];
-<<<<<<< HEAD
-<<<<<<< .merge_file_NO4PaF
-<<<<<<< HEAD
-<<<<<<< HEAD
         }, $commands);
-=======
-        }, $items);
->>>>>>> laraxot/dev
-=======
-        }, $commands);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        }, $commands);
->>>>>>> .merge_file_no3IXN
-=======
-<<<<<<< HEAD
-        }, $items);
-=======
-        }, $commands);
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $this->commands($commands);
     }
 
@@ -313,7 +202,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             // Ignore config registration failures for optional module config.
         }
     }
-<<<<<<< HEAD
 
     protected function registerPublicAssets(): void
     {
@@ -341,10 +229,4 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             ],
         );
     }
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 }

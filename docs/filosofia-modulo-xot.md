@@ -1,26 +1,6 @@
 # Analisi Approfondita del Modulo Xot
 
 > **Generato**: 2025-12-24
-<<<<<<< .merge_file_ctunPT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-> **Generato**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-> **Generato**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_apXpkO
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo Xot
 
 ---
@@ -43,39 +23,10 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
 <<<<<<< HEAD
-<<<<<<< .merge_file_ctunPT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_apXpkO
-=======
->>>>>>> da9ae01a0 (.)
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_ctunPT
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_apXpkO
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -380,39 +331,10 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
-<<<<<<< .merge_file_ctunPT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_apXpkO
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_ctunPT
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array {
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_apXpkO
-=======
-=======
-    public static function getFormSchema(): array {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         return [TextInput::make('name')];
     }
 }
@@ -469,25 +391,3 @@ Il modulo Xot rappresenta **l'incarnazione perfetta dei principi DRY+KISS applic
 - [Base Classes Documentation](./consolidated/base-classes.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 - [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
-<<<<<<< .merge_file_ctunPT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
-- [Filament 4 Laraxot Rules](./filament_4_laraxot_rules.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
-- [Filament 4 Laraxot Rules](./filament_4_laraxot_rules.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_apXpkO
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

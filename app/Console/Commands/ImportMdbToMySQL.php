@@ -89,52 +89,7 @@ class ImportMdbToMySQL extends Command
     /**
      * Importa le tabelle in MySQL.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_GFxj5g
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_cbpLum
->>>>>>> da9ae01a0 (.)
-     *
-     * @param array<int, string> $tables
-     *                                   =======
-     *                                   <<<<<<< .merge_file_cbpLum
-     * @param array<int, string> $tables
-     *                                   =======
-     *                                   <<<<<<< HEAD
-     *                                   <<<<<<< .merge_file_V88qU4
-     * @param array<int, string> $tables
-     *                                   =======
-     *                                   <<<<<<< .merge_file_8tVWLS
-     * @param array<int, string> $tables
-     *                                   =======
-     *                                   <<<<<<< HEAD
-     * @param array<int, string> $tables
-     *                                   =======
-     * @param array<int, string> $tables
-     *                                   >>>>>>> laraxot/dev
-     *                                   >>>>>>> .merge_file_REDNjH
-     *                                   >>>>>>> .merge_file_JWAepJ
-     *                                   =======
-     * @param array<int, string> $tables
-     *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                                   >>>>>>> .merge_file_aQREAj
-     *                                   >>>>>>> laraxot/dev
-=======
-     * @param array<int, string> $tables
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  array<int, string>  $tables
->>>>>>> .merge_file_jXqN2Q
-=======
->>>>>>> .merge_file_aQREAj
-=======
-     * @param array<int, string> $tables
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     private function importTablesIntoMySQL(array $tables, string $mysqlDb): void
     {

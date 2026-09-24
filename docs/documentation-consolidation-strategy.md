@@ -5,26 +5,6 @@
 **RIDURRE** il numero di file documentation da **migliaia** a **~10 file focalizzati per modulo**, seguendo i principi **KISS** e **DRY**.
 
 ## 📊 Stato Attuale (2025-11-04)
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## 📊 Stato Attuale ([DATE])
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## 📊 Stato Attuale ([DATE])
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 | Modulo | File .md Attuali | Target | Riduzione Necessaria |
 |--------|------------------|--------|---------------------|
@@ -56,30 +36,6 @@ model-inheritance-audit.md
 merge-conflict-resolution-2025-11-04.md
 lessons-learned-2025-11-04-merge-conflicts.md
 phpstan-analysis-2025-08-18.md
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-merge-conflict-resolution-[DATE].md
-lessons-learned-[DATE]-merge-conflicts.md
-phpstan-analysis-[DATE].md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-merge-conflict-resolution-[DATE].md
-lessons-learned-[DATE]-merge-conflicts.md
-phpstan-analysis-[DATE].md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 # ✅ Usare CHANGELOG.md invece
 # Oppure nomi generici aggiornati:
@@ -182,18 +138,6 @@ rm auth_pages.md         # Keep auth-pages.md
 ### Fase 4: Archiviare File Obsoleti
 ```bash
 # Creare cartella archive
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 mkdir -p Modules/ModuleName/docs/archive
 
 # Spostare file obsoleti/datati
@@ -202,36 +146,6 @@ mv Modules/Xot/docs/*-2025-*.md Modules/Xot/docs/archive/
 
 # Mantenere solo l'ultimo se rilevante
 mv Modules/Xot/docs/archive/merge-conflict-resolution-2025-11-04.md \
-<<<<<<< HEAD
-<<<<<<< .merge_file_lmrSyS
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-mv Modules/Xot/docs/archive/merge-conflict-resolution-2025-11-04.md \
-mkdir -p Modules/ModuleName/docs/archived
-
-# Spostare file obsoleti/datati
-mv Modules/Xot/docs/*-2024-*.md Modules/Xot/docs/archived/
-mv Modules/Xot/docs/*-2025-*.md Modules/Xot/docs/archived/
-
-# Mantenere solo l'ultimo se rilevante
-mv Modules/Xot/docs/archived/merge-conflict-resolution-[DATE].md \
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    Modules/Xot/docs/merge-conflict-resolution.md
 ```
 
@@ -240,52 +154,12 @@ mv Modules/Xot/docs/archived/merge-conflict-resolution-[DATE].md \
 # Changelog - Modulo Xot
 
 ## 2025-11-04 - Merge Conflicts Resolution
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## [DATE] - Merge Conflicts Resolution
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## [DATE] - Merge Conflicts Resolution
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Corretti 18 file con merge conflicts massivi
 - Implementato File Locking Pattern
 - Fix PSR-4 namespace violations
 - Server Laravel ora funzionante
 
 ## 2025-10-29 - PHPStan Level 10 Achievement
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## [DATE] - PHPStan Level 10 Achievement
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## [DATE] - PHPStan Level 10 Achievement
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Raggiunto PHPStan Level 10 su tutto il modulo
 - Corretti 500+ type hints
 - Documentazione aggiornata
@@ -299,26 +173,6 @@ mv Modules/Xot/docs/archived/merge-conflict-resolution-[DATE].md \
 - ✅ **kebab-case lowercase**: `my-document.md`
 - ❌ **NO UPPERCASE**: ~~`MY_DOCUMENT.md`~~
 - ❌ **NO dates**: ~~`analysis-2025-11-04.md`~~
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- ❌ **NO dates**: ~~`analysis-[DATE].md`~~
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- ❌ **NO dates**: ~~`analysis-[DATE].md`~~
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - ❌ **NO underscores**: ~~`my_document.md`~~
 - ✅ **Exception**: `README.md`, `CHANGELOG.md`
 
@@ -339,26 +193,6 @@ See /var/www/.../Modules/Xot/docs/xotbase-rules.md
 
 <!-- ✅ CORRECT -->
 See [XotBase Rules](../../Xot/docs/xotbase-rules.md)
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-See [XotBase Rules](../../xot/docs/xotbase-rules.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See [XotBase Rules](../../xot/docs/xotbase-rules.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ## 📝 Template README.md Standard
@@ -406,31 +240,6 @@ Common issues e soluzioni.
 
 ## References
 - [Doc interna 1](./other-doc.md)
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Doc Xot](../../xot/docs/core-doc.md)
-- [External](https://example.com)
-
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Doc Xot](../../Xot/docs/core-doc.md)
 - [External](https://example.com)
 
@@ -545,35 +354,5 @@ Prima di considerare un modulo "consolidato":
 ---
 
 **Created:** 2025-11-04
-<<<<<<< .merge_file_lmrSyS
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Purpose:** Strategic plan per ridurre documentation bloat
 **Target:** ~350 total files across all modules (da ~5,267)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Purpose:** Strategic plan per ridurre documentation bloat
-**Target:** ~350 total files across all modules (da ~5,267)
-=======
-**Created:** [DATE]
-**Purpose:** Strategic plan per ridurre documentation bloat
-**Target:** ~350 total files across all modules (da ~5,267)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Created:** [DATE]
-**Purpose:** Strategic plan per ridurre documentation bloat
-**Target:** ~350 total files across all modules (da ~5,267)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Purpose:** Strategic plan per ridurre documentation bloat
-**Target:** ~350 total files across all modules (da ~5,267)
->>>>>>> .merge_file_gIrOSZ
-=======
-=======
-**Purpose:** Strategic plan per ridurre documentation bloat
-**Target:** ~350 total files across all modules (da ~5,267)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -19,19 +19,7 @@ class MorphManyAction
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
-<<<<<<< .merge_file_6YTR8E
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($relationDTO->data === []) {
-=======
-        if ([] === $relationDTO->data) {
->>>>>>> laraxot/dev
-=======
-        if ([] === $relationDTO->data) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($relationDTO->data === []) {
->>>>>>> .merge_file_0429IZ
             // dddx(['model'=>$model,'relationDTO'=>$relationDTO]);
             // save Model
             $relation = $model->{$relationDTO->name}();

@@ -4,68 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\LogResource\Pages;
 
-<<<<<<< .merge_file_aqH6Qs
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Qr3nRa
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewLog extends XotBaseViewRecord
 {
     protected static string $resource = LogResource::class;
-<<<<<<< .merge_file_aqH6Qs
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-use Filament\Infolists\Components\TextEntry;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Components\Section;
-use Modules\Xot\Filament\Resources\LogResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-
-use function Safe\json_encode;
-
-class ViewLog extends XotBaseViewRecord
-{
-    protected static string $resource = LogResource::class;
-
-    #[\Override]
-    protected function getInfolistSchema(): array
-    {
-<<<<<<< HEAD
-=======
-        $log = $this->getRecord()->getModel();
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-        return [
-            'log_info' => Section::make('Informazioni Log')->schema([
-                'log_grid' => Grid::make(['default' => 3])->schema([
-                    'id' => TextEntry::make('id'),
-                    'message' => TextEntry::make('message'),
-                    'level' => TextEntry::make('level'),
-                    'level_name' => TextEntry::make('level_name'),
-                    'channel' => TextEntry::make('channel'),
-                    'datetime' => TextEntry::make('datetime')->dateTime(),
-                    'context' => TextEntry::make('context')->formatStateUsing(
-                        fn ($state) => json_encode($state, JSON_PRETTY_PRINT),
-                    ),
-                    'extra' => TextEntry::make('extra')->formatStateUsing(
-                        fn ($state) => json_encode($state, JSON_PRETTY_PRINT),
-                    ),
-                ]),
-            ]),
-        ];
-    }
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Qr3nRa
 }

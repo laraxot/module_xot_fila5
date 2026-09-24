@@ -1,26 +1,6 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
-<<<<<<< .merge_file_1UCpIA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## Data: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wjdIHd
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -206,34 +186,6 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
-<<<<<<< .merge_file_1UCpIA
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
-
-### Modulo User
-- [Theme Translation Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
-
-### Modulo Xot
-- [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wjdIHd
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -297,28 +249,6 @@ php artisan lang:check
 ### Documentazione Moduli
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
-<<<<<<< .merge_file_1UCpIA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wjdIHd
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
@@ -328,26 +258,6 @@ php artisan lang:check
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_1UCpIA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wjdIHd
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
@@ -385,27 +295,4 @@ php artisan lang:check
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
 
-<<<<<<< .merge_file_1UCpIA
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Stato**: ✅ Completato
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Stato**: ✅ Completato
-=======
-**Stato**: ✅ Completato
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Stato**: ✅ Completato
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Stato**: ✅ Completato
->>>>>>> .merge_file_wjdIHd
-=======
-=======
-**Stato**: ✅ Completato
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

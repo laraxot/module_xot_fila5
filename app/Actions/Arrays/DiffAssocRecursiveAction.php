@@ -14,34 +14,7 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_RGVP7l
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_fveJ0C
-     * @param  array<int|string, mixed>  $data
-=======
-     * @param array<int|string, mixed> $data
-     *
->>>>>>> .merge_file_Swjp0m
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param  array<int|string, mixed>  $data
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<int|string, mixed>  $data
->>>>>>> .merge_file_tvssXK
-=======
-=======
-     * @param  array<int|string, mixed>  $data
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -64,40 +37,8 @@ class DiffAssocRecursiveAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_RGVP7l
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $arr_1
      * @param  array<int|string, mixed>  $arr_2
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_fveJ0C
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
-=======
-     * @param array<int|string, mixed> $arr_1
-     * @param array<int|string, mixed> $arr_2
-     *
->>>>>>> .merge_file_Swjp0m
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
->>>>>>> .merge_file_tvssXK
-=======
-=======
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return array<int|string, array<int|string, mixed>>
      */
     public function execute(array $arr_1, array $arr_2): array
@@ -105,44 +46,7 @@ class DiffAssocRecursiveAction
         $coll_1 = collect(self::fixType($arr_1));
         $arr_2 = self::fixType($arr_2);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_RGVP7l
-<<<<<<< HEAD
-<<<<<<< HEAD
         $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_fveJ0C
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
-=======
-<<<<<<< HEAD
-        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
-=======
-        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
->>>>>>> .merge_file_Swjp0m
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
->>>>>>> .merge_file_tvssXK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {

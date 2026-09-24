@@ -129,30 +129,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Gestione errori e logging**: loggare i casi di fallback e le eccezioni non bloccanti.
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
-<<<<<<< .merge_file_c1DBYr
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
-=======
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
->>>>>>> .merge_file_aW9ruw
-=======
-=======
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -184,30 +161,7 @@ public function boot(): void
 
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
-<<<<<<< .merge_file_c1DBYr
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Registrazione icone Blade](registerbladeicons.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Registrazione icone Blade](registerbladeicons.md)
-=======
-- [Registrazione icone Blade](./registerBladeIcons.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Registrazione icone Blade](./registerBladeIcons.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Registrazione icone Blade](registerbladeicons.md)
->>>>>>> .merge_file_aW9ruw
-=======
-=======
-- [Registrazione icone Blade](./registerBladeIcons.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Gestione dei Path delle Traduzioni
 
@@ -241,30 +195,7 @@ $this->loadTranslationsFrom($langPath, $this->nameLower);
 Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
-<<<<<<< .merge_file_c1DBYr
-<<<<<<< HEAD
-<<<<<<< HEAD
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
-=======
-Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
->>>>>>> .merge_file_aW9ruw
-=======
-=======
-Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 
@@ -296,32 +227,3 @@ $this->commands([
 
 ### Zen finale
 > "Il miglior comando è quello che non devi mai registrare a mano."
-<<<<<<< .merge_file_c1DBYr
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
----
-module: theme
-topic: xotbaseserviceprovider
-canonical: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_aW9ruw
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

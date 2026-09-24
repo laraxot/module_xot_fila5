@@ -145,30 +145,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 ## 📚 Collegamenti
 
 - [Laraxot Architecture](./architecture.md)
-<<<<<<< .merge_file_b57fgc
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Project Structure Guidelines](PROJECT-STRUCTURE.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Project Structure Guidelines](PROJECT-STRUCTURE.md)
-=======
-- [Project Structure Guidelines](./project-structure.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Project Structure Guidelines](./project-structure.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Project Structure Guidelines](PROJECT-STRUCTURE.md)
->>>>>>> .merge_file_fHqqNN
-=======
-=======
-- [Project Structure Guidelines](./project-structure.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Deploy Best Practices](./deploy-best-practices.md)
 
 ---
@@ -176,40 +153,3 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 **Ultimo aggiornamento**: Gennaio 2025
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
-<<<<<<< .merge_file_b57fgc
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-## Regola Operativa Rafforzata
-
-Gli script standalone di progetto non devono vivere dentro `laravel/Modules/*/`.
-
-Percorso corretto:
-- `laravel/bashscripts/<area>/...`
-
-Esempio concreto validato:
-- errato: `laravel/Modules/Cms/generate_test_data.php`
-- corretto: `laravel/bashscripts/cms/generate_test_data.php`
-
-Motivo:
-- separa chiaramente codice applicativo da tooling operativo
-- evita che PHPStan/quality gates del modulo analizzino script non applicativi
-<<<<<<< HEAD
-- riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_fHqqNN
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/pt_br/passwords.php
->>>>>>> 930f8146 (Check & fix styling)
 return [
     'password' => 'A senha deverá conter pelo menos seis carateres e ser igual à confirmação.',
     'reset' => 'Sua senha foi redefinida!',

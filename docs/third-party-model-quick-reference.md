@@ -90,32 +90,6 @@ class {Model} extends {Package}{Model}
 - **[third-party-model-inheritance-philosophy.md](third-party-model-inheritance-philosophy.md)** - Complete philosophy guide
 
 ### Module-Specific Patterns
-<<<<<<< .merge_file_joIHcA
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- **[User Module](../user/docs/third-party-model-patterns.md)** - Permission & Role integration
-- **[Activity Module](../activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
-
-### Related Documentation
-- **[Model Architecture](models/model_architecture.md)** - Laraxot model patterns
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_6jzuVe
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **[User Module](../User/docs/third-party-model-patterns.md)** - Permission & Role integration
 - **[Activity Module](../Activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
 
@@ -179,27 +153,4 @@ class Feature extends PackageFeature
 
 ---
 
-<<<<<<< .merge_file_joIHcA
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
-=======
-**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
->>>>>>> .merge_file_6jzuVe
-=======
-=======
-**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

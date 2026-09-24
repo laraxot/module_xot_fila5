@@ -13,26 +13,6 @@
 2. **Nessuna data nel nome file**
    - ✅ CORRETTO: `phpstan-fixes.md`, `roadmap.md`
    - ❌ SBAGLIATO: `phpstan-fixes-2025-10-10.md`, `ROADMAP_2025.md`
-<<<<<<< .merge_file_1vF0Nf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-   - ❌ SBAGLIATO: `phpstan-fixes-[DATE].md`, `ROADMAP_2025.md`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   - ❌ SBAGLIATO: `phpstan-fixes-[DATE].md`, `ROADMAP_2025.md`
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_N3z6Lm
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    - **Motivo**: Le date nei nomi file causano duplicazione, rendono difficile il refactoring e non riflettono lo stato corrente del documento
 
 3. **Usa trattini `-` per separare parole** (non underscore `_`)
@@ -77,30 +57,6 @@
    - ✅ CORRETTO: `[Documentazione](../Xot/docs/architecture.md)`
    - ✅ CORRETTO: `[Esempio](./examples/example.md)`
    - ❌ SBAGLIATO: `[Doc](/var/www/laravel/Modules/Xot/docs/architecture.md)`
-<<<<<<< .merge_file_1vF0Nf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-   - ✅ CORRETTO: `[Documentazione](../xot/docs/architecture.md)`
-   - ✅ CORRETTO: `[Esempio](./examples/example.md)`
-   - ❌ SBAGLIATO: `[Doc](/var/www/laravel/modules/xot/docs/architecture.md)`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   - ✅ CORRETTO: `[Documentazione](../xot/docs/architecture.md)`
-   - ✅ CORRETTO: `[Esempio](./examples/example.md)`
-   - ❌ SBAGLIATO: `[Doc](/var/www/laravel/modules/xot/docs/architecture.md)`
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_N3z6Lm
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 2. **Portabilità totale**
    - I link devono funzionare ovunque il progetto venga clonato
@@ -281,35 +237,5 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 ---
 
 **Last Updated**: 2025-10-11
-<<<<<<< .merge_file_1vF0Nf
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: ✅ ACTIVE STANDARD
 **Compliance**: MANDATORY for all modules and themes
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status**: ✅ ACTIVE STANDARD
-**Compliance**: MANDATORY for all modules and themes
-=======
-
-**Status**: ✅ ACTIVE STANDARD
-**Compliance**: MANDATORY for all modules and themes
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
-**Status**: ✅ ACTIVE STANDARD
-**Compliance**: MANDATORY for all modules and themes
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status**: ✅ ACTIVE STANDARD
-**Compliance**: MANDATORY for all modules and themes
->>>>>>> .merge_file_N3z6Lm
-=======
-=======
-**Status**: ✅ ACTIVE STANDARD
-**Compliance**: MANDATORY for all modules and themes
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

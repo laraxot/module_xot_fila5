@@ -162,31 +162,7 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
-<<<<<<< .merge_file_M4lSLN
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_9r4qzP
-public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_TdizHu
-public function getFormSchema(): array
-=======
 public static function getFormSchema(): array
->>>>>>> .merge_file_ggMDkf
->>>>>>> .merge_file_0ACMgE
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_W5LggC
-=======
-public function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -195,31 +171,7 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
-<<<<<<< .merge_file_M4lSLN
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_9r4qzP
-public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_TdizHu
-public function getFormSchema(): array
-=======
 public static function getFormSchema(): array
->>>>>>> .merge_file_ggMDkf
->>>>>>> .merge_file_0ACMgE
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_W5LggC
-=======
-public function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -312,31 +264,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_M4lSLN
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_9r4qzP
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_TdizHu
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> .merge_file_ggMDkf
->>>>>>> .merge_file_0ACMgE
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_W5LggC
-=======
-    public function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),
@@ -463,31 +391,7 @@ try {
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_M4lSLN
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_9r4qzP
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_TdizHu
-- [Architettura Moduli](architecture.md)
-=======
 - [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> .merge_file_ggMDkf
->>>>>>> .merge_file_0ACMgE
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> .merge_file_W5LggC
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

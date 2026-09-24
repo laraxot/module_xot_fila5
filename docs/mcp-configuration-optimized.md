@@ -1,99 +1,18 @@
-<<<<<<< .merge_file_SMK6Ux
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_TVUX23
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
 
 **Data Creazione**: 2025-01-27
 **Ultimo Aggiornamento**: 2025-01-27
-<<<<<<< HEAD
-<<<<<<< .merge_file_SMK6Ux
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-**Data Creazione**: 2025-01-27
-**Ultimo Aggiornamento**: 2025-01-27
-# Configurazione MCP Ottimizzata per base_techplanner_fila5_mono
-
-**Data Creazione**: [DATE]
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_TVUX23
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Status**: ✅ Configurazione Completa e Ottimizzata
 **Metodologia**: Super Mucca 🐮⚡
 
 ### ⚠️ Cambiamenti Recenti
 - **2025-01-27**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
-<<<<<<< .merge_file_SMK6Ux
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- **[DATE]**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **[DATE]**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_TVUX23
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
 ## 🎯 Scopo del Documento
 
-<<<<<<< .merge_file_SMK6Ux
-<<<<<<< HEAD
-<<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila5_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila5_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> .merge_file_TVUX23
-=======
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -434,30 +353,7 @@ npm install -g @executeautomation/playwright-mcp-server
 
 - [MCP Servers Configuration](./mcp-servers-configuration.md) - Configurazione generale MCP
 - [MCP Servers Complete List](./mcp-servers.md) - Lista completa server disponibili
-<<<<<<< .merge_file_SMK6Ux
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
-=======
-- [Project Understanding Consolidated](../../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Project Understanding Consolidated](../../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
->>>>>>> .merge_file_TVUX23
-=======
-=======
-- [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### External Resources
 
@@ -563,35 +459,5 @@ npx -y @modelcontextprotocol/server-filesystem --version
 ---
 
 **Ultimo aggiornamento**: 2025-01-27
-<<<<<<< .merge_file_SMK6Ux
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Autore**: Super Mucca Analysis
 **Status**: ✅ Configurazione Completa e Ottimizzata
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Autore**: Super Mucca Analysis
-**Status**: ✅ Configurazione Completa e Ottimizzata
-=======
-**Ultimo aggiornamento**: [DATE]
-**Autore**: Super Mucca Analysis
-**Status**: ✅ Configurazione Completa e Ottimizzata
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
-**Autore**: Super Mucca Analysis
-**Status**: ✅ Configurazione Completa e Ottimizzata
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Autore**: Super Mucca Analysis
-**Status**: ✅ Configurazione Completa e Ottimizzata
->>>>>>> .merge_file_TVUX23
-=======
-=======
-**Autore**: Super Mucca Analysis
-**Status**: ✅ Configurazione Completa e Ottimizzata
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

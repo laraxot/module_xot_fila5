@@ -921,39 +921,7 @@ class ExampleChartWidget extends XotBaseChartWidget
 
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_pIykIp
-<<<<<<< HEAD
-<<<<<<< HEAD
 **`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_8I2bBr
-**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
-=======
-<<<<<<< HEAD
-**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
-=======
-**`Modules/healthcare_app/Filament/Widgets/SimpleChartWidget.php`**
-**`Modules/ExternalProject/Filament/Widgets/SimpleChartWidget.php`**
->>>>>>> laraxot/dev
->>>>>>> .merge_file_4gLdAO
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**`Modules/healthcare_app/Filament/Widgets/SimpleChartWidget.php`**
-**`Modules/ExternalProject/Filament/Widgets/SimpleChartWidget.php`**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
->>>>>>> .merge_file_3d8Bkq
-=======
-=======
-**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 Key pattern:
 ```php
@@ -984,34 +952,4 @@ JS);
 4. **Flexibility**: Provide configuration methods that allow child classes to customize behavior
 5. **Maintainability**: Keep the base implementation clean and well-documented
 6. **Scalability**: Design configuration options that can be extended without breaking existing functionality
-<<<<<<< HEAD
-<<<<<<< .merge_file_pIykIp
-<<<<<<< HEAD
-<<<<<<< HEAD
 7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_8I2bBr
-7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
-=======
-<<<<<<< HEAD
-7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
-=======
-7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
->>>>>>> laraxot/dev
->>>>>>> .merge_file_4gLdAO
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
->>>>>>> 3792da0d (Check & fix styling)
-=======
-7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
->>>>>>> .merge_file_3d8Bkq
-=======
-=======
-7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -136,24 +136,6 @@ abstract class TestCase extends BaseTestCase
 
 ## Important Rules
 
-<<<<<<< .merge_file_ddaCEK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_BGpOj2
 ### Never Use `migrate:fresh` in Tests (CRITICAL)
 
 `migrate:fresh` **drops ALL tables** in the target database. In a shared test database (like `<nome progetto>_data_test`) this destroys data for ALL modules and causes cascading failures across the entire test suite.
@@ -171,29 +153,6 @@ php artisan migrate:fresh --env=testing --force
 ```
 Then never repeat it again in the suite.
 
-<<<<<<< .merge_file_ddaCEK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> a01602c7 (.)
-=======
->>>>>>> 64619e34 (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> a01602c7 (.)
-=======
->>>>>>> 64619e34 (.)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_BGpOj2
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ### Never Use RefreshDatabase
 
 The project uses `DatabaseTransactions` instead of `RefreshDatabase` because:

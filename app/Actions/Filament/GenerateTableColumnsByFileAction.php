@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * -WIP.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Actions\Filament;
 
 // use Filament\Forms\Commands\Concerns\CanGenerateForms; // Non disponibile in Filament v4
@@ -47,20 +31,7 @@ class GenerateTableColumnsByFileAction
     /**
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
-<<<<<<< .merge_file_O93Xxt
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param File $file Il file della risorsa Filament
-     *                   =======
-     * @param File $file Il file della risorsa Filament
-     *                   >>>>>>> laraxot/dev
-=======
-     * @param File $file Il file della risorsa Filament
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  File  $file  Il file della risorsa Filament
->>>>>>> .merge_file_d2G9NR
      */
     public function execute(File $file): void
     {
@@ -139,20 +110,7 @@ class GenerateTableColumnsByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-<<<<<<< .merge_file_O93Xxt
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param File $file Il file da analizzare
-     *                   =======
-     * @param File $file Il file da analizzare
-     *                   >>>>>>> laraxot/dev
-=======
-     * @param File $file Il file da analizzare
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  File  $file  Il file da analizzare
->>>>>>> .merge_file_d2G9NR
      */
     public function ddFile(File $file): void
     {

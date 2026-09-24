@@ -9,17 +9,6 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-<<<<<<< .merge_file_Ts3FYv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
-=======
-use Filament\Tables\Columns\TextColumn;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_bl7EX3
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Xot\Filament\Resources\ExtraResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -31,38 +20,6 @@ class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ts3FYv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-=======
-    /**
-     * @return array<string, TextColumn>
-     */
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->sortable()->label('ID'),
-            'model_type' => TextColumn::make('model_type')->searchable()->label('Model Type'),
-            'model_id' => TextColumn::make('model_id')->sortable()->label('Model ID'),
-            'extra_attributes' => TextColumn::make('extra_attributes')->searchable()->label('Extra Attributes'),
-        ];
-    }
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_bl7EX3
     /**
      * @return array<BaseFilter>
      */

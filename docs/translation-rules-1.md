@@ -140,47 +140,8 @@ return [
 
 ## Link alla documentazione correlata
 
-<<<<<<< .merge_file_thedew
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2Hk2xh
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/docs/errori_comuni_traduzione.md)
 - [Convenzioni di documentazione](/laravel/Modules/Xot/docs/documentation_conventions.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
-<<<<<<< HEAD
-<<<<<<< .merge_file_thedew
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Errori comuni nei file di traduzione](/laravel/modules/lang/docs/errori_comuni_traduzione.md)
-- [Convenzioni di documentazione](/laravel/modules/xot/docs/documentation_conventions.md)
-- [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_2Hk2xh
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -1,15 +1,3 @@
-<<<<<<< .merge_file_cHHHTL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_yy7rFb
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso
@@ -74,34 +62,3 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_cHHHTL
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [convenzioni di codice](docs/conventions.md)
-- [struttura progetto](docs/project-structure.md)
----
-module: theme
-topic: module-namespace-path-convention
-canonical: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_yy7rFb
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

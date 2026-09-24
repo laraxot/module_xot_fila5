@@ -1,14 +1,3 @@
-<<<<<<< .merge_file_dBbNju
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WEJpdW
-=======
->>>>>>> da9ae01a0 (.)
 # XotBasePivot - Analisi Architettuale Completa
 
 ## 🎯 Executive Summary
@@ -834,34 +823,3 @@ class SpecialPivot extends XotBasePivot
 *Analisi completata il: 2025-10-15*
 *Versione: 1.0*
 *Status: READY FOR IMPLEMENTATION*
-<<<<<<< .merge_file_dBbNju
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
----
-module: theme
-topic: xotbasepivot-analysis
-canonical: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_WEJpdW
-=======
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

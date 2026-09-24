@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /*
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Datas;
 
 use Illuminate\Database\Eloquent\Model;
@@ -164,20 +148,7 @@ class PdfData extends Data
     }
 
     /**
-<<<<<<< .merge_file_AWU2Hj
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-     *
-     * @param array<string, mixed> $params
-     *                                     =======
-     * @param array<string, mixed> $params
-     *                                     >>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $params
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  array<string, mixed>  $params
->>>>>>> .merge_file_kMSXll
      */
     public function view(string $view, array $params = []): self
     {

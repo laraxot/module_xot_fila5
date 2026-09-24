@@ -5,42 +5,7 @@ type: reference
 slug: lazy
 description: 'Elenco di 6 riferimenti esterni raccolti per lazy, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_bMttNM
-<<<<<<< HEAD
-=======
-converted_from: _lazy.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-converted_from: _lazy.txt
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-converted_from: _lazy.txt
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_ImgY1V
 converted_from: lazy.txt
-=======
-converted_from: _lazy.txt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_bMttNM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
-=======
-converted_from: _lazy.txt
->>>>>>> .merge_file_ImgY1V
->>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
 ---

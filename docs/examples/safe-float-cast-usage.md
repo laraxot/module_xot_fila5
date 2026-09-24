@@ -444,11 +444,3 @@ class Product extends BaseModel
 
 ---
 
-<<<<<<< HEAD
-=======
-- [Xot Actions Documentation](../actions/README.md)
-
----
-
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 930f8146 (Check & fix styling)

@@ -4,29 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
-=======
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
->>>>>>> 930f8146 (Check & fix styling)
 use Filament\Widgets\StatsOverviewWidget\Stat;
-<<<<<<< HEAD
 use Spatie\Health\Enums\Status;
 use Spatie\Health\ResultStores\ResultStore;
 
-<<<<<<< HEAD
 class HealthOverviewWidget extends XotBaseStatsOverviewWidget
-=======
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
-use Spatie\Health\Enums\Status;
-use Spatie\Health\ResultStores\ResultStore;
-
-class HealthOverviewWidget extends BaseWidget
->>>>>>> 3792da0d (Check & fix styling)
-=======
-class HealthOverviewWidget extends BaseWidget
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     public function iconColor(string $status): string
     {
@@ -44,19 +26,7 @@ class HealthOverviewWidget extends BaseWidget
         $stats = [];
 
         $checkResults = app(ResultStore::class)->latestResults();
-<<<<<<< .merge_file_i8MwzY
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($checkResults === null) {
-=======
-        if (null === $checkResults) {
->>>>>>> laraxot/dev
-=======
-        if (null === $checkResults) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($checkResults === null) {
->>>>>>> .merge_file_HCcyV6
             return $stats;
         }
         foreach ($checkResults->storedCheckResults as $result) {

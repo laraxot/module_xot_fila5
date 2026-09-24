@@ -59,30 +59,7 @@ Verificare **TUTTI i moduli** per accessor che chiamano `save()` senza guard `if
 ### ⏳ Progressioni - DA VERIFICARE
 
 **File Principali**:
-<<<<<<< .merge_file_4X1uKc
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. `Models/Schede.php` - Da verificare
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. `Models/Schede.php` - Da verificare
-=======
-1. `Models/Scheda.php` - Da verificare
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-1. `Models/Scheda.php` - Da verificare
->>>>>>> 3792da0d (Check & fix styling)
-=======
-1. `Models/Schede.php` - Da verificare
->>>>>>> .merge_file_V35CaL
-=======
-=======
-1. `Models/Schede.php` - Da verificare
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 2. `Models/Pesi.php` - Da verificare
 3. `Models/MaxCatecoPosfunAnno.php` - Da verificare
 
@@ -172,26 +149,6 @@ Ogni modulo deve avere:
 ## Collegamenti
 
 - [Regola Globale](../../Xot/docs/accessor-save-guard-global-rule.md)
-<<<<<<< .merge_file_4X1uKc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V35CaL
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ## Metriche Target
@@ -216,33 +173,6 @@ Ogni modulo deve avere:
 ## Collegamenti
 
 - [Regola Globale](./accessor-save-guard-global-rule.md)
-<<<<<<< .merge_file_4X1uKc
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Sigma Implementation](../../sigma/docs/fix-duplicate-entry-error-summary.md)
-- [Pattern Template](../../sigma/docs/accessor-refactoring-philosophy.md)
-
----
-
-**Creato**: [DATE]
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V35CaL
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Sigma Implementation](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Pattern Template](../../Sigma/docs/accessor-refactoring-philosophy.md)
 
@@ -251,27 +181,4 @@ Ogni modulo deve avere:
 **Creato**: 2025-01-29
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
-<<<<<<< .merge_file_4X1uKc
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Timeline**: 3 settimane per audit completo
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Timeline**: 3 settimane per audit completo
-=======
-**Timeline**: 3 settimane per audit completo
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Timeline**: 3 settimane per audit completo
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Timeline**: 3 settimane per audit completo
->>>>>>> .merge_file_V35CaL
-=======
-=======
-**Timeline**: 3 settimane per audit completo
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

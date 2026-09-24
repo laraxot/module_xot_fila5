@@ -7,30 +7,10 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
-<<<<<<< .merge_file_B4KzA8
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_n1IzXT
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\scandir;
 
-<<<<<<< .merge_file_B4KzA8
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-use function Safe\scandir;
-
-use Spatie\QueueableAction\QueueableAction;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_n1IzXT
 class GetModulePathAction
 {
     use QueueableAction;
@@ -38,21 +18,7 @@ class GetModulePathAction
     /**
      * Ottiene il percorso di un modulo.
      *
-<<<<<<< .merge_file_B4KzA8
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  string  $moduleName  Il nome del modulo
-=======
-     * @param string $moduleName Il nome del modulo
-     *
->>>>>>> laraxot/dev
-=======
-     * @param string $moduleName Il nome del modulo
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  string  $moduleName  Il nome del modulo
->>>>>>> .merge_file_n1IzXT
      * @return string Il percorso completo del modulo
      */
     public function execute(string $moduleName): string
@@ -65,39 +31,16 @@ class GetModulePathAction
                 return __DIR__.'/../';
             }
 
-<<<<<<< HEAD
             /** @var array<int, string> $files */
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
 
             $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
-=======
-            $files = scandir($modulesPath);
-            $moduleNameLower = Str::lower($moduleName);
-
-            $foundModule = collect($files)->filter(static function ($item) use ($moduleNameLower): bool {
-                if (! is_string($item)) {
-                    return false;
-                }
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 return Str::lower($item) === $moduleNameLower;
             })->first();
 
             // Se non troviamo il modulo, restituiamo un percorso di fallback
-<<<<<<< HEAD
             if (! is_string($foundModule)) {
-=======
-            if (null === $foundModule || ! is_string($foundModule)) {
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 return base_path('Modules/'.$moduleName);
             }
 

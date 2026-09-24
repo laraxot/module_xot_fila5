@@ -10,27 +10,4 @@ use Modules\Xot\Models\Cache;
 class MockResourceWithRelations extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
-<<<<<<< .merge_file_ggkB4L
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-    public function getFormSchemaOld(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
-    {
-        return [];
-    }
->>>>>>> laraxot/dev
-=======
-
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_OGmlHp
 }

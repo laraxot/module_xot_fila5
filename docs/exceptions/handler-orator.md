@@ -1,14 +1,3 @@
-<<<<<<< .merge_file_UMjLiX
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GsPh6x
-=======
->>>>>>> da9ae01a0 (.)
 # HandlerDecorator
 
 ## Descrizione
@@ -52,34 +41,3 @@ class HandlerDecorator implements ExceptionHandlerContract
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Error Formatters](./formatters/readme.md)
-<<<<<<< .merge_file_UMjLiX
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
----
-module: theme
-topic: handler-orator
-canonical: ../../../../Themes/docs/shared-components/handler-decorator.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GsPh6x
-=======
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

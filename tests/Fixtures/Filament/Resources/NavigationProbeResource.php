@@ -15,27 +15,4 @@ class NavigationProbeResource extends XotBaseResource
     protected static string|\UnitEnum|null $navigationGroup = 'Test Group';
 
     protected static ?int $navigationSort = 1;
-<<<<<<< .merge_file_0XJ777
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-    public function getFormSchemaOld(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
-    {
-        return [];
-    }
->>>>>>> laraxot/dev
-=======
-
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_NjEpdG
 }

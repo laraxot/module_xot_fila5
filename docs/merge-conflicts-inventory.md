@@ -1,26 +1,6 @@
 # Merge Conflicts Inventory
 
 **Date**: 2025-11-12
-<<<<<<< .merge_file_67QrOg
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Date**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Date**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0FicJj
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Total Files with Conflicts**: 77
 **Status**: In Progress
 
@@ -213,27 +193,4 @@ This document catalogs all files containing merge conflict markers found through
 5. Finalize with non-critical files
 
 ---
-<<<<<<< .merge_file_67QrOg
-<<<<<<< HEAD
-<<<<<<< HEAD
 *This inventory will be updated as conflicts are resolved.*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*This inventory will be updated as conflicts are resolved.*
-=======
-*This inventory will be updated as conflicts are resolved.*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*This inventory will be updated as conflicts are resolved.*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*This inventory will be updated as conflicts are resolved.*
->>>>>>> .merge_file_0FicJj
-=======
-=======
-*This inventory will be updated as conflicts are resolved.*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

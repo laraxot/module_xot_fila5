@@ -1,24 +1,3 @@
-<<<<<<< .merge_file_w6zDcH
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
-=======
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q6HON0
-<<<<<<< HEAD
-https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uBRQ89
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_OgwbTL
 ---
 title: 'Clean code — risorse esterne'
 module: Xot
@@ -39,27 +18,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names>
-<<<<<<< .merge_file_w6zDcH
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_q6HON0
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
->>>>>>> .merge_file_uBRQ89
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_OgwbTL
-=======
-=======
-https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

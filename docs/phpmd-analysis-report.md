@@ -45,23 +45,4 @@ The plan is as follows:
     -   Handling file existence checks and fallbacks.
 3.  **Extract Private Methods**: Each logical block will be extracted into a separate, well-named private method (e.g., `resolveFromCurrentTheme`, `resolveFromVendorPackage`, `findAssetInPaths`).
 4.  **Simplify Control Flow**: The main `execute` method will be simplified to a sequence of calls to these new private methods, making the overall flow much easier to read and understand.
-<<<<<<< HEAD
-<<<<<<< .merge_file_LtG6uJ
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_rIVsjm
 5.  **Verify**: After refactoring, run all quality tools again to confirm that the complexity and length violations have been resolved and that the action's functionality remains unchanged.
-=======
-5.  **Verify**: After refactoring, run all quality tools again to confirm that the complexity and length violations have been resolved and that the action's functionality remains unchanged.
->>>>>>> .merge_file_rBqGq7
-=======
-5.  **Verify**: After refactoring, run all quality tools again to confirm that the complexity and length violations have been resolved and that the action's functionality remains unchanged.
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-5.  **Verify**: After refactoring, run all quality tools again to confirm that the complexity and length violations have been resolved and that the action's functionality remains unchanged.
->>>>>>> .merge_file_ZQuBXA
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

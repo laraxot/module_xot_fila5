@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-<<<<<<< HEAD
     'values' => [
         1 => [
             'label' => 'Lunedì',
@@ -49,17 +47,6 @@ return [
             'description' => 'Giorno di riposo settimanale',
         ],
     ],
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/day_of_week.php
-return [
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     'label' => 'Giorno della Settimana',
     'options' => [
         1 => 'Lunedì',
@@ -101,7 +88,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         1 => ['label' => '1', 'placeholder' => '1', 'helper_text' => '1', 'description' => '1'],
         2 => ['label' => '2', 'placeholder' => '2', 'helper_text' => '2', 'description' => '2'],
         3 => ['label' => '3', 'placeholder' => '3', 'helper_text' => '3', 'description' => '3'],
@@ -114,22 +100,5 @@ return [
         'create' => ['label' => 'Crea Day Of Week'],
         'edit' => ['label' => 'Modifica Day Of Week'],
         'delete' => ['label' => 'Elimina Day Of Week'],
-=======
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Day Of Week',
-        ],
-        'edit' => [
-            'label' => 'Modifica Day Of Week',
-        ],
-        'delete' => [
-            'label' => 'Elimina Day Of Week',
-        ],
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
 ];

@@ -14,20 +14,9 @@ Modulo test serve per mettere azioni da testare.
 ### Versione HEAD
 
 ## Collegamenti tra versioni di test.md
-<<<<<<< HEAD
 * [test.md](../../../xot/project_docs/modules/test.md)
 * [test.md](../../../lang/project_docs/test.md)
 
 ### Versione Incoming
 
 ---
-=======
-* [test.md](../../../Xot/docs/modules/test.md)
-* [test.md](../../../Lang/docs/test.md)
-* [test.md](../../../xot/docs/modules/test.md)
-* [test.md](../../../lang/docs/test.md)
-
-### Versione Incoming
-
----
->>>>>>> 930f8146 (Check & fix styling)

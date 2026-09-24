@@ -42,39 +42,10 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = Integparam::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_cyMWU0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qTxoCD
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_cyMWU0
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qTxoCD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             // Schema del form
@@ -152,39 +123,10 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_cyMWU0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qTxoCD
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_cyMWU0
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qTxoCD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Section::make('Dati Anagrafici')
@@ -261,28 +203,6 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 ## Collegamenti
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
-<<<<<<< .merge_file_cyMWU0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
-- [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
-- [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qTxoCD
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ## Checklist per Integrazioni Cross-Module
@@ -306,58 +226,9 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [ ] Implementare test automatizzati
 
 ## Collegamenti
-<<<<<<< .merge_file_cyMWU0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
-- [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
-- [Filament Resources Best Practices](/docs/filament-best-practices.md)
-- [Translation Standards](/docs/translation-standards.md)
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qTxoCD
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
-<<<<<<< .merge_file_cyMWU0
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 5 giugno 2025*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: 5 giugno 2025*
-=======
-*Ultimo aggiornamento: 5 giugno 2025*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 5 giugno 2025*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: 5 giugno 2025*
->>>>>>> .merge_file_qTxoCD
-=======
-=======
-*Ultimo aggiornamento: 5 giugno 2025*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

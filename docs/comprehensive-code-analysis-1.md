@@ -163,39 +163,10 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uP1sYO
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uP1sYO
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -205,39 +176,10 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uP1sYO
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uP1sYO
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -331,39 +273,10 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uP1sYO
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uP1sYO
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),
@@ -490,47 +403,10 @@ try {
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uP1sYO
-=======
->>>>>>> da9ae01a0 (.)
 - [Architettura Moduli](architecture.md)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Architettura Moduli](./architecture.md)
-- [Best Practices Laravel 12](./laravel_12_guide.md)
-- [Pattern Filament](./filament_patterns.md)
-- [Performance Optimization](./performance_guide.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uP1sYO
-=======
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
-- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
-- [Pattern Filament](./FILAMENT_PATTERNS.md)
-- [Performance Optimization](./PERFORMANCE_GUIDE.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## 📊 Metriche di Qualità
 
@@ -551,27 +427,4 @@ try {
 **Data Analisi**: 2025-01-06
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
-<<<<<<< .merge_file_SQqBIw
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Stima Effort**: 40-60 ore di refactoring
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Stima Effort**: 40-60 ore di refactoring
-=======
-**Stima Effort**: 40-60 ore di refactoring
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Stima Effort**: 40-60 ore di refactoring
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Stima Effort**: 40-60 ore di refactoring
->>>>>>> .merge_file_uP1sYO
-=======
-=======
-**Stima Effort**: 40-60 ore di refactoring
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

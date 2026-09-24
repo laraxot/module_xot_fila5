@@ -80,30 +80,7 @@ public static function getPluralModelLabel(): string
 ## 📚 Documentazione Creata
 
 - **[User Reference Pattern](./user-reference-pattern.md)** - Guida completa pattern corretti
-<<<<<<< .merge_file_VXTlCt
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **[PHPStan Corrections January 2025](./phpstan-corrections-january-2025.md)** - Aggiornato con riferimenti User
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **[PHPStan Corrections January 2025](./phpstan-corrections-january-2025.md)** - Aggiornato con riferimenti User
-=======
-- **[PHPStan Corrections January 2025](./phpstan-corrections-january.md)** - Aggiornato con riferimenti User
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **[PHPStan Corrections January 2025](./phpstan-corrections-january.md)** - Aggiornato con riferimenti User
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **[PHPStan Corrections January 2025](./phpstan-corrections-january-2025.md)** - Aggiornato con riferimenti User
->>>>>>> .merge_file_Xs6bx2
-=======
-=======
-- **[PHPStan Corrections January 2025](./phpstan-corrections-january-2025.md)** - Aggiornato con riferimenti User
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -170,27 +147,4 @@ $userClass = XotData::make()->getUserClass();
 
 ---
 
-<<<<<<< .merge_file_VXTlCt
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-10*
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> .merge_file_Xs6bx2
-=======
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

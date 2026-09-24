@@ -1,42 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_y6hgDJ
->>>>>>> laraxot/dev
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_QM3Vp2
-title: 'Machine learning'
-module: Xot
-type: reference
-slug: machine-learning
-description: 'http://php-nlp-tools.com/blog/category/greek-pos-tagger/'
-tags: [migrato-da-txt, xot]
-converted_from: machine_learning.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
--------------------------------------
-=======
-<<<<<<< .merge_file_y6hgDJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QM3Vp2
->>>>>>> laraxot/dev
 title: "Machine learning"
 type: reference
 status: active
@@ -51,16 +13,6 @@ note: "Convertito da machine_learning.txt (documento) da convert-docs-txt-to-md.
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
 ----------------------------------------
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 rephrasing
 https://cloudmersive.com/nlp-api  !!!!!!!!!!!!!!!
 
@@ -101,30 +53,6 @@ https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_y6hgDJ
-<<<<<<< HEAD
-
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QM3Vp2
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_y6hgDJ
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_QM3Vp2
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP

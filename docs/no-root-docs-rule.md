@@ -40,40 +40,6 @@ find var/www/html/_bases/base_<nome progetto>/docs$|^docs$)"
 
 ## DATA IMPLEMENTAZIONE:
 2025-08-08 - Regola implementata e verificata
-<<<<<<< .merge_file_OwJgFK
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ## RESPONSABILITÀ:
 Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-## RESPONSABILITÀ:
-Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
-=======
-[DATE] - Regola implementata e verificata
-
-## RESPONSABILITÀ:
-Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-[DATE] - Regola implementata e verificata
-
-## RESPONSABILITÀ:
-Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-
-## RESPONSABILITÀ:
-Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
-<<<<<<< HEAD
->>>>>>> .merge_file_Jjo7Aj
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -1,28 +1,3 @@
-<<<<<<< .merge_file_Euz9f9
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_haZ5Or
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-//-----------------------------------------------------------
-4 tips to improve Laravel performance
-https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
-//-------------------------------------------------------------
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_jHdQO9
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_RDTXrO
 ---
 title: "Performance"
 type: reference
@@ -40,34 +15,3 @@ note: "Convertito da _performance.txt (documento) da convert-docs-txt-to-md.py."
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
-<<<<<<< .merge_file_Euz9f9
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_haZ5Or
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-//-----------------------------------------------------------
-4 tips to improve Laravel performance
-https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
-//-------------------------------------------------------------
->>>>>>> .merge_file_jHdQO9
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
-=======
-//-----------------------------------------------------------
-4 tips to improve Laravel performance
-https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
-//-------------------------------------------------------------
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_RDTXrO
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

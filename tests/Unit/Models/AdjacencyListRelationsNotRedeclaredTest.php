@@ -12,37 +12,7 @@ use function Safe\preg_match;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
 /**
-<<<<<<< .merge_file_1TkgaY
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_jH9lAZ
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-/**
-=======
-/*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-/*
->>>>>>> .merge_file_2NiukP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-/*
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ezyJEK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  * Un model che compone l'adjacency list non riscrive le relazioni che il trait gli da'.
  *
  * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` fornisce
@@ -79,102 +49,18 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
         $source = file_get_contents($file);
 
         // Solo i model che compongono davvero il trait: gli altri sono liberi.
-<<<<<<< HEAD
-<<<<<<< .merge_file_1TkgaY
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jH9lAZ
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ezyJEK
         if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) !== 1) {
             continue;
         }
 
         if (preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class) !== 1) {
-<<<<<<< .merge_file_1TkgaY
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_2NiukP
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-        if (1 !== preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
-            continue;
-        }
-
-        if (1 !== preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class)) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_jH9lAZ
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2NiukP
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ezyJEK
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             continue;
         }
 
         $className = (string) ($class[1] ?? '');
 
         foreach ($relations as $relation) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_1TkgaY
-<<<<<<< HEAD
             if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_jH9lAZ
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
-=======
-            if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
->>>>>>> .merge_file_2NiukP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
->>>>>>> .merge_file_ezyJEK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 $offenders[] = $className.'::'.$relation.'()';
             }
         }
@@ -194,39 +80,7 @@ test('i model ad albero del progetto compongono davvero il trait', function (): 
     foreach ($files as $file) {
         $source = file_get_contents($file);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_1TkgaY
-<<<<<<< HEAD
         if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) === 1) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_jH9lAZ
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) === 1) {
-=======
-        if (1 === preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        if (1 === preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
->>>>>>> .merge_file_2NiukP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if (1 === preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) === 1) {
->>>>>>> .merge_file_ezyJEK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             $composers[] = basename($file, '.php');
         }
     }

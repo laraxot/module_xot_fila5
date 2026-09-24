@@ -4,42 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_0HJ8FS
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_8KDXH9
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> .merge_file_EyPVSz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> .merge_file_mHhsp1
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
@@ -77,33 +42,7 @@ class GetRelatedResourceClassAction
         if (method_exists($page, 'getRelatedResource')) {
             /** @var class-string<XotBaseResource>|null $relatedResource */
             $relatedResource = $page::getRelatedResource();
-<<<<<<< HEAD
-<<<<<<< .merge_file_0HJ8FS
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($relatedResource !== null) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_8KDXH9
-            if ($relatedResource !== null) {
-=======
-            if (null !== $relatedResource) {
->>>>>>> .merge_file_EyPVSz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ($relatedResource !== null) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($relatedResource !== null) {
->>>>>>> .merge_file_mHhsp1
-=======
-=======
-            if ($relatedResource !== null) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 return $relatedResource;
             }
         }
@@ -112,77 +51,14 @@ class GetRelatedResourceClassAction
             return null;
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_0HJ8FS
-<<<<<<< HEAD
-<<<<<<< HEAD
         /** @var class-string<Model> $modelClass */
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_8KDXH9
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
-=======
-<<<<<<< HEAD
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
-=======
-        /** @var class-string<Model> $modelClass */
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        /** @var class-string<Model> $modelClass */
->>>>>>> .merge_file_EyPVSz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        /** @var class-string<Model> $modelClass */
->>>>>>> .merge_file_mHhsp1
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $modelClass = $page->getModelClass();
         $moduleName = Str::between($modelClass, 'Modules\\', '\Models\\');
         $modelName = class_basename($modelClass);
         $guess = 'Modules\\'.$moduleName.'\Filament\Resources\\'.$modelName.'Resource';
 
         if (class_exists($guess) && is_subclass_of($guess, XotBaseResource::class)) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_0HJ8FS
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @var class-string<XotBaseResource> $guess */
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_8KDXH9
-            /** @var class-string<XotBaseResource> $guess */
-=======
-            /* @var class-string<XotBaseResource> $guess */
->>>>>>> .merge_file_EyPVSz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            /** @var class-string<XotBaseResource> $guess */
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            /** @var class-string<XotBaseResource> $guess */
->>>>>>> .merge_file_mHhsp1
-=======
-=======
-            /** @var class-string<XotBaseResource> $guess */
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return $guess;
         }
 

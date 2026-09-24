@@ -7,41 +7,13 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ComponentFileData;
-<<<<<<< .merge_file_CxBEZp
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-use Spatie\LaravelData\DataCollection;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
->>>>>>> .merge_file_WLFQCQ
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-<<<<<<< .merge_file_CxBEZp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-use Spatie\LaravelData\DataCollection;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_WLFQCQ
 class GetComponentsAction
 {
     use QueueableAction;
@@ -79,12 +51,10 @@ class GetComponentsAction
                 $content = File::get($components_json),
                 '['.__LINE__.']['.class_basename(static::class).']',
             );
-<<<<<<< HEAD
             $decoded = json_decode($content, true);
             /** @var array<int, array<string, mixed>> $comps */
             $comps = is_array($decoded) ? array_values($decoded) : [];
 
-<<<<<<< HEAD
             if ($this->hasCurrentSchema($comps)) {
                 return ComponentFileData::collection($comps);
             }
@@ -93,37 +63,13 @@ class GetComponentsAction
             // mancanti): rigenerare invece di far fallire il boot dell'app con
             // "Typed property ...::$name must not be accessed before
             // initialization" alla prima lettura di un DTO incompleto.
-=======
-<<<<<<< HEAD
-            $decoded = json_decode($content, false);
-            /** @var array<int, mixed> $comps */
-            $comps = is_array($decoded) ? array_values($decoded) : [];
-
-            return ComponentFileData::collection($comps);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            return ComponentFileData::collection($comps);
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         }
 
         $files = File::allFiles($path);
         $comps = [];
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_CxBEZp
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> laraxot/dev
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($file->getExtension() !== 'php') {
->>>>>>> .merge_file_WLFQCQ
                 continue;
             }
 
@@ -138,27 +84,10 @@ class GetComponentsAction
             $comp_name = $prefix.$comp_name;
             $comp_ns = $namespace.'\\'.$class_name;
 
-<<<<<<< .merge_file_CxBEZp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_WLFQCQ
             if ($relative_path !== '') {
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
-<<<<<<< HEAD
                     ->map(fn (string $item) => Str::slug(Str::snake($item)))
-=======
-<<<<<<< HEAD
-            if ('' !== $relative_path) {
-                $comp_name = '';
-                $piece = collect(explode('\\', $relative_path))
-                    ->map(fn ($item) => Str::slug(Str::snake($item)))
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                    ->map(fn ($item) => Str::slug(Str::snake($item)))
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     ->implode('.');
 
                 $comp_name = $prefix.$piece.'.'.Str::slug(Str::snake(Str::replace('\\', ' ', $class_name)));
@@ -207,7 +136,6 @@ class GetComponentsAction
 
         return ComponentFileData::collection($comps);
     }
-<<<<<<< HEAD
 
     /**
      * @param  array<int, array<string, mixed>>  $comps
@@ -227,10 +155,4 @@ class GetComponentsAction
 
         return true;
     }
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 }

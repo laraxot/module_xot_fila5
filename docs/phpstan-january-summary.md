@@ -19,15 +19,7 @@
 9. **Lang** - 1 errore corretto
 10. **Media** - Già a 0 errori
 11. **Notify** - Già a 0 errori
-<<<<<<< HEAD
-<<<<<<< HEAD
 12. **Quaeris** - 2 errori corretti
-=======
-12. **healthcare_app** - 2 errori corretti
->>>>>>> 3792da0d (Check & fix styling)
-=======
-12. **Quaeris** - 2 errori corretti
->>>>>>> da9ae01a0 (.)
 13. **UI** - 4 errori corretti
 14. **User** - 1 errore critico corretto (BaseUser)
 15. **Xot** - Già a 0 errori
@@ -50,18 +42,8 @@
 ### Type Narrowing (6 file)
 - `Activity/app/Actions/ActivityLogger.php` - mapWithKeys() return type
 - `UI/app/Filament/Forms/Components/RadioBadge.php` - is_string() ridondante
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `Quaeris/app/Actions/Question/GetValue.php` - getExtra() return type
 - `Quaeris/app/Filament/Pages/AutoPage.php` - is_object() ridondante
-=======
-- `healthcare_app/app/Actions/Question/GetValue.php` - getExtra() return type
-- `healthcare_app/app/Filament/Pages/AutoPage.php` - is_object() ridondante
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- `Quaeris/app/Actions/Question/GetValue.php` - getExtra() return type
-- `Quaeris/app/Filament/Pages/AutoPage.php` - is_object() ridondante
->>>>>>> da9ae01a0 (.)
 - `Geo/app/Models/Address.php` - is_string() ridondante in array_filter()
 - `Geo/app/Actions/UpdateClientCoordinatesBulkAction.php` - is_string() ridondante
 
@@ -81,15 +63,7 @@
 
 1. `Activity/docs/phpstan-corrections-january-2026.md`
 2. `UI/docs/phpstan-corrections-january-2026.md`
-<<<<<<< HEAD
-<<<<<<< HEAD
 3. `Quaeris/docs/phpstan-corrections-january-2026.md`
-=======
-3. `healthcare_app/docs/phpstan-corrections-january-2026.md`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-3. `Quaeris/docs/phpstan-corrections-january-2026.md`
->>>>>>> da9ae01a0 (.)
 4. `Geo/docs/phpstan-corrections-january-2026.md`
 5. `Xot/docs/phpstan-january-2026-summary.md` (questo file)
 
@@ -193,13 +167,3 @@ if (null !== $value) {
 - [UI Corrections](../UI/docs/phpstan-corrections-january-2026.md)
 - [Quaeris Corrections](../Quaeris/docs/phpstan-corrections-january-2026.md)
 - [Geo Corrections](../Geo/docs/phpstan-corrections-january-2026.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Activity Corrections](../activity/docs/phpstan-corrections-january-2026.md)
-- [UI Corrections](../ui/docs/phpstan-corrections-january-2026.md)
-- [healthcare_app Corrections](../healthcare_app/docs/phpstan-corrections-january-2026.md)
-- [Geo Corrections](../geo/docs/phpstan-corrections-january-2026.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)

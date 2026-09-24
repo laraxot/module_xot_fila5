@@ -64,33 +64,7 @@ try {
 
 ## Module-Specific Considerations
 
-<<<<<<< .merge_file_GyzFOE
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### Quaeris Module
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Quaeris Module
-=======
-### healthcare_app Module
-### ExternalProject Module
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-### healthcare_app Module
-### ExternalProject Module
->>>>>>> 3792da0d (Check & fix styling)
-=======
-### Quaeris Module
->>>>>>> .merge_file_rvOgiQ
-=======
-=======
-### healthcare_app Module
-### ExternalProject Module
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Optimize survey contact imports
 - Implement JSON payload persistence
 - Use queue-based processing for contact operations

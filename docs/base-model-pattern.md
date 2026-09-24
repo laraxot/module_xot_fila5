@@ -77,30 +77,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< .merge_file_titcaz
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected $connection = 'quaeris'; // Module-specific connection
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected $connection = 'quaeris'; // Module-specific connection
-=======
-    protected $connection = 'module_name'; // Module-specific connection
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    protected $connection = 'module_name'; // Module-specific connection
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    protected $connection = 'quaeris'; // Module-specific connection
->>>>>>> .merge_file_H5HoP7
-=======
-=======
-    protected $connection = 'quaeris'; // Module-specific connection
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
     protected $with = [
         'extra', // Always load extra fields
@@ -148,40 +125,6 @@ The module BaseModel is where you add:
 - Module-specific relationship loading
 - Module-specific configurations
 
-<<<<<<< .merge_file_titcaz
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-### Rule 4: Use Contracts for Auditing PHPDocs (CRITICAL)
-Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties managed by the `Updater` trait (`creator`, `updater`, `deleter`). NEVER use the concrete `Profile` model of the module to avoid tight coupling and ensure modular decoupling.
-
-✅ **CORRECT:**
-```php
-/**
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
- */
-class Event extends BaseModel { ... }
-```
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_H5HoP7
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -250,30 +193,7 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
-<<<<<<< .merge_file_titcaz
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Predictable patterns
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Predictable patterns
-=======
-- <nome progetto>able patterns
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- <nome progetto>able patterns
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Predictable patterns
->>>>>>> .merge_file_H5HoP7
-=======
-=======
-- Predictable patterns
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -324,27 +244,4 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 - **Type Safety**: Contract-based development
 - **DRY Compliance**: No duplicated base functionality
 
-<<<<<<< .merge_file_titcaz
-<<<<<<< HEAD
-<<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
-=======
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
->>>>>>> .merge_file_H5HoP7
-=======
-=======
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

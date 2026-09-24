@@ -270,33 +270,6 @@ Per migrare le rotte esistenti:
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< .merge_file_8BYeal
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Architettura Folio + Volt + Filament](./folio_volt_architecture.md)
-- [Struttura dei Moduli](./module_structure.md)
-- [Documentazione Generale](./documentation.md)
-- [Regole del Progetto](./rules.md)
-- [Collegamenti al Modulo Cms](../../cms/docs/frontoffice/routing.md)
-- [Collegamenti al Modulo Lang](../../lang/docs/packages/localization.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vhlu90
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md)
 - [Documentazione Generale](./documentation.md)
@@ -307,29 +280,3 @@ Per migrare le rotte esistenti:
 ## Collegamenti tra versioni di routing.md
 * [routing.md](../../../../docs/routing.md)
 * [routing.md](../../Cms/docs/frontoffice/routing.md)
-<<<<<<< .merge_file_8BYeal
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Collegamenti alla Root](../../../../docs/routing.md)
-## Collegamenti tra versioni di routing.md
-* [routing.md](../../../../../docs/routing.md)
-* [routing.md](../../cms/docs/frontoffice/routing.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Collegamenti alla Root](../../../../docs/routing.md)
-## Collegamenti tra versioni di routing.md
-* [routing.md](../../../../../docs/routing.md)
-* [routing.md](../../cms/docs/frontoffice/routing.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vhlu90
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

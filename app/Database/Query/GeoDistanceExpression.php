@@ -13,21 +13,7 @@ final class GeoDistanceExpression implements Expression
         private readonly float $latitude,
         private readonly float $longitude,
         private readonly ?string $alias = null,
-<<<<<<< .merge_file_hl4iES
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    ) {}
->>>>>>> .merge_file_ceck8P
 
     public function getValue(Grammar $grammar): string
     {
@@ -38,19 +24,7 @@ final class GeoDistanceExpression implements Expression
             $this->latitude,
         );
 
-<<<<<<< .merge_file_hl4iES
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->alias !== null) {
-=======
-        if (null !== $this->alias) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $this->alias) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($this->alias !== null) {
->>>>>>> .merge_file_ceck8P
             $sql .= ' AS '.$this->alias;
         }
 

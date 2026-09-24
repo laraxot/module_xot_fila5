@@ -1,26 +1,13 @@
 # PHPStan Level 10 Compliance Status
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Updated**: 2026-07-06
-=======
-**Last Updated**: 2026-06-09 (STORY-287)
->>>>>>> 3792da0d (Check & fix styling)
 
 **Status**: ✅ FULLY COMPLIANT (0 errors, level max)
 
 Baseline STORY-287: 282 errori → 0. Pattern: Contracts `Model` generics, Cast/Export/Trait PHPDoc, `HasXotFactory` covariant.
 
-<<<<<<< HEAD
 Baseline sessione 2026-07-06: 1 → 0. `Modules\Xot\Contracts\UserContract::membershipTeams()` era disallineato con `HasTeams::teams()` (secondo parametro generico di `BelongsToMany` — `$this` non è un sottotipo valido di `Model` nel bound del contratto). Allineato a `Model`. `HasSchemalessAttributesTest.php` chiamava un metodo mai esistito (`getSchemalessAttributes()`) invece dell'accesso magico `$model->extra_attributes`; corretto il test.
 
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Last Updated**: 2025-12-10
-**Status**: ✅ FULLY COMPLIANT (0 errors)
-
->>>>>>> da9ae01a0 (.)
 ## Summary
 The Xot module is now fully compliant with PHPStan Level 10 analysis. All static analysis errors have been resolved, ensuring type safety and code quality.
 
@@ -88,8 +75,6 @@ To maintain PHPStan compliance:
 - [Xot Base Classes](xot-base-classes.md)
 - [Framework Integration Patterns](framework-integration.md)
 - [HTTP Client Best Practices](http-client-best-practices.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Dummy Actions Pattern](dummy-actions-pattern.md)
 ## Aggiornamento 2026-07-06
 
@@ -107,9 +92,3 @@ To maintain PHPStan compliance:
 
 Ri-verificato: `./vendor/bin/phpstan analyse Modules` → `[OK] No errors`
 sull'intero progetto.
-=======
-- [Dummy Actions Pattern](dummy-actions-pattern.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Dummy Actions Pattern](dummy-actions-pattern.md)
->>>>>>> da9ae01a0 (.)

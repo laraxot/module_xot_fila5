@@ -6,7 +6,6 @@ namespace Modules\Xot\Filament\Resources\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -22,89 +21,10 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseResourceTable
 {
     use HasXotTable;
-=======
-use Modules\Xot\Filament\Traits\HasXotTable;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Webmozart\Assert\Assert;
-
-abstract class XotBaseResourceTable
-{
-    use HasXotTable {
-        getTableHeaderActions as private xotGetTableHeaderActions;
-        getGridTableColumns as private xotGetGridTableColumns;
-        getTablePaginated as private xotGetTablePaginated;
-        getSearchableColumns as private xotSearchableColumns;
-    }
-    use TransTrait;
-
-    /**
-     * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
-     */
-    public function getTableHeaderActions(): array
-    {
-        return $this->xotGetTableHeaderActions();
-    }
-
-    /**
-     * @return array<int, Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
-     */
-    public function getGridTableColumns(): array
-    {
-        return $this->xotGetGridTableColumns();
-    }
-
-    /**
-     * @return bool|array<int|string>
-     */
-    protected function getTablePaginated(): bool|array
-    {
-        $paginated = $this->xotGetTablePaginated();
-
-        if (is_bool($paginated)) {
-            return $paginated;
-        }
-
-        /** @var array<int|string> $options */
-        $options = $paginated;
-
-        return $options;
-    }
-
-    /**
-     * @return array<string>
-     */
-    protected function getSearchableColumns(): array
-    {
-        /** @var array<string> $columns */
-        $columns = $this->xotSearchableColumns();
-
-        return $columns;
-    }
->>>>>>> 930f8146 (Check & fix styling)
 
     public static function configure(Table $table): Table
     {
         if (static::class === self::class) {
-<<<<<<< .merge_file_H30r4j
-=======
-        if (self::class === static::class) {
->>>>>>> laraxot/dev
-=======
-use Modules\Xot\Filament\Traits\HasXotTable;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Webmozart\Assert\Assert;
-
-abstract class XotBaseResourceTable
-{
-    use HasXotTable;
-    use TransTrait;
-
-    public static function configure(Table $table): Table
-    {
-        if (self::class === static::class) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ICbZzS
             throw new \LogicException('XotBaseResourceTable::configure() must be called on a concrete table class.');
         }
 
@@ -115,7 +35,6 @@ abstract class XotBaseResourceTable
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, Column>
      */
     abstract public function getTableColumns(): array;
@@ -159,13 +78,4 @@ abstract class XotBaseResourceTable
 
         return $model;
     }
-=======
-     * @return array<int|string, Column>
-     */
-    abstract public function getTableColumns(): array;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 }

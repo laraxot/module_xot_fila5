@@ -24,7 +24,6 @@ class EnvData extends Data implements Wireable
 
     public string $telegram_bot_token = '';
 
-<<<<<<< HEAD
     public string $sms_driver = '';
 
     public string $netfun_token = '';
@@ -45,12 +44,6 @@ class EnvData extends Data implements Wireable
 
     public string $mail_from_name = '';
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     private static ?self $instance = null;
 
     public static function make(): self
@@ -60,29 +53,10 @@ class EnvData extends Data implements Wireable
 
             foreach ($_ENV as $k => $v) {
                 $k = mb_strtolower($k);
-<<<<<<< .merge_file_28GAa0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_sQXl2R
                 if ($v === 'false') {
                     $v = false;
                 }
                 if ($v === 'true') {
-<<<<<<< .merge_file_28GAa0
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-                if ('false' === $v) {
-                    $v = false;
-                }
-                if ('true' === $v) {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_sQXl2R
                     $v = true;
                 }
                 $data[$k] = $v;
@@ -95,19 +69,7 @@ class EnvData extends Data implements Wireable
     }
 
     /**
-<<<<<<< .merge_file_28GAa0
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $data
->>>>>>> .merge_file_sQXl2R
      */
     public function update(array $data): void
     {
@@ -115,19 +77,7 @@ class EnvData extends Data implements Wireable
         $env_content = File::get($env_path);
 
         foreach ($data as $k => $v) {
-<<<<<<< .merge_file_28GAa0
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($v !== $this->$k && (is_bool($v) || is_int($v) || is_string($v))) {
-=======
-            if ($this->$k !== $v && (is_bool($v) || is_int($v) || is_string($v))) {
->>>>>>> laraxot/dev
-=======
-            if ($this->$k !== $v && (is_bool($v) || is_int($v) || is_string($v))) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($v !== $this->$k && (is_bool($v) || is_int($v) || is_string($v))) {
->>>>>>> .merge_file_sQXl2R
                 $env_content = $this->updateVar($k, $v, $env_content);
             }
         }
@@ -140,36 +90,12 @@ class EnvData extends Data implements Wireable
         $key = str($key)->upper()->toString();
         $replace = $this->getLine($key, $value);
         $pos_start = mb_strpos($env_content, $key.'=');
-<<<<<<< .merge_file_28GAa0
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($pos_start === false) {
-=======
-        if (false === $pos_start) {
->>>>>>> laraxot/dev
-=======
-        if (false === $pos_start) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($pos_start === false) {
->>>>>>> .merge_file_sQXl2R
             // throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             return $env_content."\n".$replace;
         }
         $pos_end = mb_strpos($env_content, "\n", $pos_start);
-<<<<<<< .merge_file_28GAa0
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($pos_end === false) {
-=======
-        if (false === $pos_end) {
->>>>>>> laraxot/dev
-=======
-        if (false === $pos_end) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($pos_end === false) {
->>>>>>> .merge_file_sQXl2R
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 

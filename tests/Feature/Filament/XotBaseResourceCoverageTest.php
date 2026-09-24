@@ -1,34 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-uses(TestCase::class);
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GfdDdI
-=======
-=======
-uses(Modules\Xot\Tests\TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -39,28 +11,14 @@ use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
 use Modules\Xot\Tests\Fixtures\Models\Probe;
 use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
 use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 it('covers model resolution and model cache', function (): void {
     ProbeResource::resetModelCache();
 
@@ -81,21 +39,8 @@ it('covers default page discovery including optional view page', function (): vo
 });
 
 it('covers translation helper key normalization', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(GetTransKeyAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): string
         {
             return 'probe.cluster.pages.item_widget';
@@ -106,21 +51,8 @@ it('covers translation helper key normalization', function (): void {
 });
 
 it('covers translation helper edit and widget normalization branches', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(GetTransKeyAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): string
         {
             return 'edit_';
@@ -128,21 +60,8 @@ it('covers translation helper edit and widget normalization branches', function 
     });
 
     Assert::assertSame('.name', ProbeResource::callGetKeyTrans('name'));
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(GetTransKeyAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): string
         {
             return 'probe';
@@ -153,21 +72,8 @@ it('covers translation helper edit and widget normalization branches', function 
 });
 
 it('covers translation helper string path and missing key fallback', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(GetTransKeyAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): string
         {
             return 'probe.messages';
@@ -181,21 +87,8 @@ it('covers translation helper string path and missing key fallback', function ()
 });
 
 it('covers translation helper array and fix fallback branches', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(GetTransKeyAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): string
         {
             return 'probe.arr';
@@ -212,21 +105,8 @@ it('covers translation helper array and fix fallback branches', function (): voi
 });
 
 it('covers translation helper exception branch', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(GetTransKeyAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(GetTransKeyAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): string
         {
             return 'probe.exceptions';
@@ -243,21 +123,8 @@ it('covers translation helper exception branch', function (): void {
 });
 
 it('covers navigation badge success and fallback', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(CountAction::class, new class
     {
-=======
-    app()->instance(CountAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(CountAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(CountAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): int
         {
             return 42;
@@ -265,21 +132,8 @@ it('covers navigation badge success and fallback', function (): void {
     });
 
     Assert::assertSame('42', ProbeResource::getNavigationBadge());
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
     app()->instance(CountAction::class, new class
     {
-=======
-    app()->instance(CountAction::class, new class {
->>>>>>> laraxot/dev
-=======
-    app()->instance(CountAction::class, new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    app()->instance(CountAction::class, new class
-    {
->>>>>>> .merge_file_GfdDdI
         public function execute(string $class): int
         {
             throw new Exception('boom');
@@ -290,27 +144,9 @@ it('covers navigation badge success and fallback', function (): void {
 });
 
 it('covers get attachments schema branches', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GfdDdI
     $resourceNoAttachments = new class extends XotBaseResource
     {
         protected static ?string $model = Probe::class;
-=======
-    $resourceNoAttachments = new class extends XotBaseResource {
-        protected static ?string $model = Probe::class;
-<<<<<<< HEAD
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
     };
 
     Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
@@ -318,91 +154,25 @@ it('covers get attachments schema branches', function (): void {
         eval(' class ProbeBadAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): string { return "invalid"; } }');
     }
 
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GfdDdI
     $resourceBadAttachments = new class extends XotBaseResource
     {
         protected static ?string $model = ProbeBadAttachments::class;
-=======
-    $resourceBadAttachments = new class extends XotBaseResource {
-        protected static ?string $model = ProbeBadAttachments::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
->>>>>>> 3792da0d (Check & fix styling)
     };
 
     Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
     if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeGoodAttachments')) {
         eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
     }
-=======
 
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
-    };
-
-    Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
-
-    $resourceBadAttachments = new class extends XotBaseResource {
-        protected static ?string $model = ProbeBadAttachments::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
-    };
-
-    Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
->>>>>>> 930f8146 (Check & fix styling)
-
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GfdDdI
     app()->instance(GetAttachmentsSchemaAction::class, new class
     {
         /**
          * @param  string[]  $attachments
-<<<<<<< .merge_file_jzECXu
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-    app()->instance(GetAttachmentsSchemaAction::class, new class {
-        /**
-         * @param string[] $attachments
-         *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GfdDdI
          * @return string[]
          */
         public function execute(array $attachments, string $disk): array
         {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($attachments !== ['one', 'two'] || $disk !== 'attachments') {
-=======
-            if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
->>>>>>> laraxot/dev
-=======
-            if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($attachments !== ['one', 'two'] || $disk !== 'attachments') {
->>>>>>> .merge_file_GfdDdI
                 throw new RuntimeException('unexpected attachments payload');
             }
 
@@ -410,32 +180,9 @@ it('covers get attachments schema branches', function (): void {
         }
     });
 
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GfdDdI
     $resourceGoodAttachments = new class extends XotBaseResource
     {
         protected static ?string $model = ProbeGoodAttachments::class;
-=======
-    $resourceGoodAttachments = new class extends XotBaseResource {
-        protected static ?string $model = ProbeGoodAttachments::class;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> da9ae01a0 (.)
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     };
 
     Assert::assertSame(['schema'], $resourceGoodAttachments::getAttachmentsSchema());
@@ -460,36 +207,12 @@ it('covers step builder branches', function (): void {
 });
 
 it('covers simple base helpers', function (): void {
-<<<<<<< .merge_file_jzECXu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GfdDdI
     $resource = new ProbeResource;
 
-<<<<<<< HEAD
     Assert::assertSame([], $resource->getInfolistSchema());
-=======
-<<<<<<< HEAD
-    $resource = new ProbeResource();
-
-    Assert::assertSame([], ProbeResource::getInfolistSchema());
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    Assert::assertSame([], ProbeResource::getInfolistSchema());
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     Assert::assertSame([], ProbeResource::extendTableCallback());
     Assert::assertSame([], ProbeResource::extendFormCallback());
     Assert::assertStringStartsWith('Xot', ProbeResource::getModuleName());
     Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
-<<<<<<< HEAD
     Assert::assertGreaterThan(0, ProbeResource::getFormColumns());
-=======
-    Assert::assertGreaterThan(0, ProbeResource::getFormSchemaColumns());
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 });

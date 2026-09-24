@@ -13,14 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\Pivot;
-<<<<<<< HEAD
 use Illuminate\Support\Carbon;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\PersonalAccessTokenResult;
 use Laravel\Passport\Token;
@@ -33,83 +26,11 @@ use Nwidart\Modules\Laravel\Module;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-<<<<<<< HEAD
 use Spatie\Permission\Traits\HasRoles;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 /**
  * Modules\Xot\Contracts\UserContract.
  *
-<<<<<<< HEAD
-<<<<<<< .merge_file_T9MNWV
-<<<<<<< HEAD
- * <<<<<<< HEAD
- *
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
- * @property string|null               $id
- * @property string|null               $email
- * @property Carbon|null               $email_verified_at
- * @property string|null               $first_name
- * @property string|null               $last_name
- * @property string|null               $full_name
- * @property string|null               $name
- * @property string|null               $phone
- * @property string|null               $type
- * @property string|null               $current_team_id
- * @property TeamContract              $currentTeam
- * @property ProfileContract|null      $profile
- * @property Collection<int, UserRole> $roles
- * @property Collection<int, Team>     $membershipTeams
- * @property Collection<int, Team>     $teams
- * @property Collection<int, Tenant>   $tenants
-<<<<<<< HEAD
- *                                                        =======
- * @property string|null               $id
- * @property string|null               $email
- * @property Carbon|null               $email_verified_at
- * @property string|null               $first_name
- * @property string|null               $last_name
- * @property string|null               $full_name
- * @property string|null               $name
- * @property string|null               $phone
- * @property string|null               $type
- * @property string|null               $current_team_id
- * @property TeamContract              $currentTeam
- * @property ProfileContract|null      $profile
- * @property Collection<int, UserRole> $roles
- * @property Collection<int, Team>     $membershipTeams
- * @property Collection<int, Team>     $teams
- * @property Collection<int, Tenant>   $tenants
- *                                                        >>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
-=======
- * @property string|null                     $id
- * @property string|null                     $email
- * @property \Illuminate\Support\Carbon|null $email_verified_at
- * @property string|null                     $first_name
- * @property string|null                     $last_name
- * @property string|null                     $full_name
- * @property string|null                     $name
- * @property string|null                     $phone
- * @property string|null                     $type
- * @property string|null                     $current_team_id
- * @property TeamContract                    $currentTeam
- * @property ProfileContract|null            $profile
- * @property Collection<int, UserRole>       $roles
- * @property Collection<int, Team>           $membershipTeams
-<<<<<<< HEAD
- * @property Collection<int, Team>           $teams
- * @property Collection<int, Tenant>         $tenants
->>>>>>> 3792da0d (Check & fix styling)
-=======
  * @property string|null $id
  * @property string|null $email
  * @property Carbon|null $email_verified_at
@@ -126,12 +47,6 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Team> $membershipTeams
  * @property Collection<int, Team> $teams
  * @property Collection<int, Tenant> $tenants
->>>>>>> .merge_file_tKyMwK
-=======
- * @property Collection<int, Model>          $teams
- * @property Collection<int, Tenant>         $tenants
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  *
  * @phpstan-require-extends Model
  *
@@ -146,17 +61,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * public function avatar();
      */
     /**
-<<<<<<< HEAD
      * @return HasOne<Model&ProfileContract, Model&static>
-=======
-     * @return HasOne<Model&ProfileContract, $this>
-     *
-     * @phpstan-ignore generics.notSubtype
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function profile(): HasOne;
 
@@ -170,22 +75,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Create a new personal access token for the user.
      *
-<<<<<<< .merge_file_T9MNWV
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<int, string> $scopes
-     *                                   =======
-     * @param array<int, string> $scopes
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<int, string> $scopes
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  array<int, string>  $scopes
->>>>>>> .merge_file_tKyMwK
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
@@ -197,20 +87,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Determine if the model has (one of) the given role(s).
      */
     /**
-<<<<<<< .merge_file_T9MNWV
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-     *
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
-     *                                                                               =======
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
-     *                                                                               >>>>>>> laraxot/dev
-=======
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>  $roles
->>>>>>> .merge_file_tKyMwK
      */
     public function hasRole(
         string|int|array|UserRole|Collection $roles,
@@ -220,22 +97,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Assign the given role to the model.
      *
-<<<<<<< .merge_file_T9MNWV
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
-     *                                                                               =======
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
->>>>>>> .merge_file_tKyMwK
      * @return $this
      */
     public function assignRole(array|string|int|UserRole|Collection $roles = []): static;
@@ -243,22 +105,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Remove all current roles and set the given ones.
      *
-<<<<<<< .merge_file_T9MNWV
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
-     *                                                                               =======
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
->>>>>>> .merge_file_tKyMwK
      * @return $this
      */
     public function syncRoles(array|string|int|UserRole|Collection $roles = []): static;
@@ -271,19 +118,12 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool;
 
     /**
-<<<<<<< HEAD
      * Come hasPermissionTo(), ma se il permesso non esiste ancora in DB lo
      * crea al volo invece di lasciare esplodere PermissionDoesNotExist.
      */
     public function hasPermissionToOrCreate(string $permission, ?string $guardName = null): bool;
 
     /**
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * Check if the user can access Socialite.
      */
     public function canAccessSocialite(): bool;
@@ -295,77 +135,30 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function roles(): BelongsToMany;
 
     /**
-<<<<<<< HEAD
      * Spatie Permission — team pivot for role scoping ({@see HasRoles::teams()}).
      *
      * @return BelongsToMany<Model, Model&static>
-=======
-     * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
-     *
-     * @return BelongsToMany<Model, $this>
-     *
-     * @phpstan-ignore generics.notSubtype
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function teams(): BelongsToMany;
 
     /**
      * Laraxot team membership (Jetstream-style pivot).
      *
-<<<<<<< HEAD
      * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
-=======
-     * @return BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>
-     *
-     * @phpstan-ignore generics.notSubtype
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function membershipTeams(): BelongsToMany;
 
     /**
      * Get the user's tenants.
      *
-<<<<<<< HEAD
      * @return BelongsToMany<Model, Model&static>
-=======
-     * @return BelongsToMany<Model, $this>
-     *
-     * @phpstan-ignore generics.notSubtype
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function tenants(): BelongsToMany;
 
     /**
      * Revoke the given role from the model.
      *
-<<<<<<< .merge_file_T9MNWV
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
-     *                                                                                             =======
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum  ...$role
->>>>>>> .merge_file_tKyMwK
      * @return $this
      */
     public function removeRole(...$role);

@@ -183,28 +183,6 @@ Corretti i file per usare la sintassi corretta `<x-ui.logo>` invece di `<x-pub_t
 ### Riferimenti
 - [Pub Theme Component Namespace Error Analysis](../../Themes/Meetup/docs/pub-theme-component-namespace-error-analysis.md)
 - [Blade Anonymous Components Rule](../../Xot/docs/blade-anonymous-components-namespace-rule.md)
-<<<<<<< .merge_file_9vP4Qd
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Pub Theme Component Namespace Error Analysis](../../themes/meetup/docs/pub-theme-component-namespace-error-analysis.md)
-- [Blade Anonymous Components Rule](../../xot/docs/blade-anonymous-components-namespace-rule.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Pub Theme Component Namespace Error Analysis](../../themes/meetup/docs/pub-theme-component-namespace-error-analysis.md)
-- [Blade Anonymous Components Rule](../../xot/docs/blade-anonymous-components-namespace-rule.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_5l2sLQ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -235,27 +213,4 @@ Tutte le Blade templates sono state compilate correttamente e salvate in cache. 
 
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
-<<<<<<< .merge_file_9vP4Qd
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: ✅ Completato con successo
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status**: ✅ Completato con successo
-=======
-**Status**: ✅ Completato con successo
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Status**: ✅ Completato con successo
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status**: ✅ Completato con successo
->>>>>>> .merge_file_5l2sLQ
-=======
-=======
-**Status**: ✅ Completato con successo
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -348,41 +348,9 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-<<<<<<< .merge_file_Kxb1xA
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-=======
-- `Modules/healthcare_app/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/healthcare_app/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- `Modules/healthcare_app/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/healthcare_app/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-<<<<<<< HEAD
->>>>>>> .merge_file_kpcmCA
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Soluzione DRY + KISS**:
 ```php
@@ -647,27 +615,4 @@ return array_merge(
 ---
 
 *Ultimo aggiornamento: Giugno 2025*
-<<<<<<< .merge_file_Kxb1xA
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Autore: Analisi Automatica del Progetto*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Autore: Analisi Automatica del Progetto*
-=======
-*Autore: Analisi Automatica del Progetto*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Autore: Analisi Automatica del Progetto*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Autore: Analisi Automatica del Progetto*
->>>>>>> .merge_file_kpcmCA
-=======
-=======
-*Autore: Analisi Automatica del Progetto*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

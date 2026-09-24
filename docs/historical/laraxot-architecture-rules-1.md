@@ -47,31 +47,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_gMIf5H
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_kmFoKq
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_pnHLc6
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> .merge_file_q4TOZs
->>>>>>> .merge_file_v4ZCCB
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_o67aT5
-=======
-    public function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -276,31 +252,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_gMIf5H
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_kmFoKq
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_pnHLc6
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> .merge_file_q4TOZs
->>>>>>> .merge_file_v4ZCCB
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_o67aT5
-=======
-    public function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components

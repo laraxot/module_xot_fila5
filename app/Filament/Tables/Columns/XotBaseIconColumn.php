@@ -14,20 +14,4 @@ use Filament\Tables\Columns\IconColumn as FilamentIconColumn;
  *
  * @method static static make(string $name) Create a new instance of the column
  */
-<<<<<<< .merge_file_QvWNyO
-<<<<<<< HEAD
-<<<<<<< HEAD
 abstract class XotBaseIconColumn extends FilamentIconColumn {}
-=======
-abstract class XotBaseIconColumn extends FilamentIconColumn
-{
-}
->>>>>>> laraxot/dev
-=======
-abstract class XotBaseIconColumn extends FilamentIconColumn
-{
-}
->>>>>>> 3792da0d (Check & fix styling)
-=======
-abstract class XotBaseIconColumn extends FilamentIconColumn {}
->>>>>>> .merge_file_p07Em1

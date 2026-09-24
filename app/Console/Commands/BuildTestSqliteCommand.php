@@ -8,32 +8,7 @@ use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Facades\DB;
 use Modules\Xot\Tests\XotBaseTestCase;
-<<<<<<< HEAD
 use Throwable;
-<<<<<<< .merge_file_OSBPmq
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-use Throwable;
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_jj3QIu
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_S8EJGR
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 use function Safe\glob;
 use function Safe\preg_replace;
@@ -76,39 +51,7 @@ class BuildTestSqliteCommand extends Command
     {
         $target = $this->stringOption('path') ?? XotBaseTestCase::sharedSqlitePath();
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_OSBPmq
-<<<<<<< HEAD
         if ($this->option('fresh') === true && file_exists($target)) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        if ($this->option('fresh') === true && file_exists($target)) {
-=======
-        if (true === $this->option('fresh') && file_exists($target)) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        if (true === $this->option('fresh') && file_exists($target)) {
->>>>>>> .merge_file_jj3QIu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if (true === $this->option('fresh') && file_exists($target)) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($this->option('fresh') === true && file_exists($target)) {
->>>>>>> .merge_file_S8EJGR
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             unlink($target);
         }
 
@@ -123,37 +66,7 @@ class BuildTestSqliteCommand extends Command
         $this->newLine();
         $this->info(sprintf('Tabelle in %s: %d', $target, $this->countTables($target)));
 
-<<<<<<< HEAD
         if ($failures === []) {
-<<<<<<< .merge_file_OSBPmq
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        if ($failures === []) {
-=======
-        if ([] === $failures) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        if ([] === $failures) {
->>>>>>> .merge_file_jj3QIu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if ([] === $failures) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_S8EJGR
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return self::SUCCESS;
         }
 
@@ -229,76 +142,14 @@ class BuildTestSqliteCommand extends Command
                     '--realpath' => true,
                 ]);
                 $this->line(sprintf('  %-32s <fg=green>ok</>', $module));
-<<<<<<< HEAD
-<<<<<<< .merge_file_OSBPmq
-<<<<<<< HEAD
             } catch (Throwable $e) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            } catch (Throwable $e) {
-=======
-            } catch (\Throwable $e) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            } catch (\Throwable $e) {
->>>>>>> .merge_file_jj3QIu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Throwable $e) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Throwable $e) {
->>>>>>> .merge_file_S8EJGR
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 // Una migration che inciampa ferma tutte quelle dopo di lei nella stessa
                 // directory: la prima volta è successo con `imports already exists`, e le
                 // tabelle `cache` e `model_has_roles` — dichiarate più avanti nella stessa
                 // cartella — non sono mai state create. Si riprova file per file.
                 $survivors = $this->migrateFileByFile($path);
 
-<<<<<<< HEAD
                 if ($survivors === []) {
-<<<<<<< .merge_file_OSBPmq
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-                if ($survivors === []) {
-=======
-                if ([] === $survivors) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-                if ([] === $survivors) {
->>>>>>> .merge_file_jj3QIu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                if ([] === $survivors) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_S8EJGR
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     $this->line(sprintf('  %-32s <fg=green>ok</> (file per file)', $module));
                 } else {
                     $failures[$module] = $this->firstLine(implode('; ', $survivors));
@@ -335,39 +186,7 @@ class BuildTestSqliteCommand extends Command
                     '--path' => $file,
                     '--realpath' => true,
                 ]);
-<<<<<<< HEAD
-<<<<<<< .merge_file_OSBPmq
-<<<<<<< HEAD
             } catch (Throwable $e) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            } catch (Throwable $e) {
-=======
-            } catch (\Throwable $e) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            } catch (\Throwable $e) {
->>>>>>> .merge_file_jj3QIu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Throwable $e) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Throwable $e) {
->>>>>>> .merge_file_S8EJGR
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 $failed[] = basename($file).': '.$this->firstLine($e->getMessage());
             }
         }
@@ -380,37 +199,7 @@ class BuildTestSqliteCommand extends Command
         $pdo = new \PDO('sqlite:'.$target);
         $count = $pdo->query('SELECT count(*) FROM sqlite_master WHERE type = "table"');
 
-<<<<<<< HEAD
         return $count === false ? 0 : (int) $count->fetchColumn();
-<<<<<<< .merge_file_OSBPmq
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        return $count === false ? 0 : (int) $count->fetchColumn();
-=======
-        return false === $count ? 0 : (int) $count->fetchColumn();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        return false === $count ? 0 : (int) $count->fetchColumn();
->>>>>>> .merge_file_jj3QIu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        return false === $count ? 0 : (int) $count->fetchColumn();
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_S8EJGR
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     private function firstLine(string $message): string
@@ -424,38 +213,6 @@ class BuildTestSqliteCommand extends Command
     {
         $value = $this->option($name);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_OSBPmq
-<<<<<<< HEAD
         return is_string($value) && $value !== '' ? $value : null;
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_EjysZ0
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        return is_string($value) && $value !== '' ? $value : null;
-=======
-        return is_string($value) && '' !== $value ? $value : null;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        return is_string($value) && '' !== $value ? $value : null;
->>>>>>> .merge_file_jj3QIu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        return is_string($value) && '' !== $value ? $value : null;
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        return is_string($value) && $value !== '' ? $value : null;
->>>>>>> .merge_file_S8EJGR
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 }

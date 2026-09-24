@@ -7,30 +7,7 @@ Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi,
 Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo immediatamente evidente la logica di aggregazione utilizzata.
 
 **Collegamento bidirezionale:**
-<<<<<<< .merge_file_EKAzJL
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
-=======
-- [Motivazione e applicazione nel modulo Performance](../../performance/docs/azioni_organizzativa.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Motivazione e applicazione nel modulo Performance](../../performance/docs/azioni_organizzativa.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
->>>>>>> .merge_file_i9A18r
-=======
-=======
-- [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 
@@ -67,46 +44,7 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
 - **Le duplicazioni vanno eliminate**: ogni refactoring deve essere documentato con motivazione e percorso nella sezione dedicata.
 - **Tipizzazione rigorosa**: tutto il codice deve essere conforme a phpstan livello 10.
 - **Collegamenti rapidi**:
-<<<<<<< .merge_file_EKAzJL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_i9A18r
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
   - [Documentazione generale e convenzioni di progetto](../../../../docs/coding-standards.md)
   - [Esempio e memo nel modulo Performance](../../Performance/docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
 
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
-<<<<<<< HEAD
-<<<<<<< .merge_file_EKAzJL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-  - [Documentazione generale e convenzioni di progetto](../../../../../docs/coding-standards.md)
-  - [Esempio e memo nel modulo Performance](../../Performance/docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
-
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-  - [Documentazione generale e convenzioni di progetto](../../../../../docs/coding-standards.md)
-  - [Esempio e memo nel modulo Performance](../../Performance/docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
-
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_i9A18r
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

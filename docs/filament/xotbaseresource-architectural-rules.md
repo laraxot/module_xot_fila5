@@ -98,39 +98,10 @@ final class TeamUserResource extends XotBaseResource
 
     // ✅ SOLO getFormSchema() e metodi table* se necessario
 <<<<<<< HEAD
-<<<<<<< .merge_file_gS80Ge
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_io5h3J
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_gS80Ge
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_io5h3J
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             // Schema del form
@@ -210,27 +181,4 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 
 **Data Decisione**: Gennaio 2026  
 **Vincitore Dibattito**: Posizione B - Centralizzazione Totale  
-<<<<<<< .merge_file_gS80Ge
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Conforme a**: DRY, KISS, Filosofia Laraxot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Conforme a**: DRY, KISS, Filosofia Laraxot
-=======
-**Conforme a**: DRY, KISS, Filosofia Laraxot
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Conforme a**: DRY, KISS, Filosofia Laraxot
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Conforme a**: DRY, KISS, Filosofia Laraxot
->>>>>>> .merge_file_io5h3J
-=======
-=======
-**Conforme a**: DRY, KISS, Filosofia Laraxot
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -23,49 +23,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Grant the given permission(s) to a role.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ab6egb
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_DMxry3
-=======
->>>>>>> da9ae01a0 (.)
-     * <<<<<<< HEAD
-     *
-     * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
-     *                                                                                                         =======
-     *                                                                                                         <<<<<<< .merge_file_DMxry3
-     *                                                                                                         =======
-     *                                                                                                         <<<<<<< HEAD
-     *                                                                                                         <<<<<<< .merge_file_7zavuJ
-     *                                                                                                         >>>>>>> .merge_file_55oZz4
-     * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
-     *
-     * <<<<<<< .merge_file_DMxry3
-     * =======
-     * =======
-     * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
-     *                                                                                                         >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-<<<<<<< HEAD
-     * >>>>>>> .merge_file_55oZz4
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission>  $permissions
->>>>>>> .merge_file_xbv2t4
-=======
->>>>>>> .merge_file_55oZz4
-=======
-     * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
-     *
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return $this
      */
     public function givePermissionTo(string|int|array|Permission|Collection $permissions = []);
@@ -73,49 +31,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Assign the given role to the model.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ab6egb
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_DMxry3
-=======
->>>>>>> da9ae01a0 (.)
-     * <<<<<<< HEAD
-     *
-     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< .merge_file_DMxry3
-     *                                                                                 =======
-     *                                                                                 <<<<<<< HEAD
-     *                                                                                 <<<<<<< .merge_file_7zavuJ
-     *                                                                                 >>>>>>> .merge_file_55oZz4
-     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
-     *
-     * <<<<<<< .merge_file_DMxry3
-     * =======
-     * =======
-     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
-     *                                                                                 >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-<<<<<<< HEAD
-     * >>>>>>> .merge_file_55oZz4
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  array<int, string|int|Role>|string|int|Role|Collection<int, Role>  $roles
->>>>>>> .merge_file_xbv2t4
-=======
->>>>>>> .merge_file_55oZz4
-=======
-     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
-     *
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return $this
      */
     public function assignRole(array|string|int|Role|Collection $roles = [
@@ -124,52 +40,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Determine if the model has (one of) the given role(s).
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ab6egb
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_DMxry3
->>>>>>> da9ae01a0 (.)
-     *
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< .merge_file_DMxry3
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< HEAD
-     *                                                                                 <<<<<<< .merge_file_7zavuJ
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< .merge_file_x9kVYp
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< HEAD
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 >>>>>>> laraxot/dev
-     *                                                                                 >>>>>>> .merge_file_an0rj9
-     *                                                                                 >>>>>>> .merge_file_PlLTO3
-     *                                                                                 =======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                                                                                 >>>>>>> .merge_file_55oZz4
-     *                                                                                 >>>>>>> laraxot/dev
-=======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  string|int|array<int, string|int|Role>|Role|Collection<int, Role>  $roles
->>>>>>> .merge_file_xbv2t4
-=======
->>>>>>> .merge_file_55oZz4
-=======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function hasRole(
         string|int|array|Role|Collection $roles,
@@ -181,52 +52,7 @@ interface ModelProfileContract extends ModelContract
      *
      * Alias to hasRole() but without Guard controls
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ab6egb
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_DMxry3
->>>>>>> da9ae01a0 (.)
-     *
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< .merge_file_DMxry3
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< HEAD
-     *                                                                                 <<<<<<< .merge_file_7zavuJ
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< .merge_file_x9kVYp
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     *                                                                                 <<<<<<< HEAD
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 =======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 >>>>>>> laraxot/dev
-     *                                                                                 >>>>>>> .merge_file_an0rj9
-     *                                                                                 >>>>>>> .merge_file_PlLTO3
-     *                                                                                 =======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
-     *                                                                                 >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                                                                                 >>>>>>> .merge_file_55oZz4
-     *                                                                                 >>>>>>> laraxot/dev
-=======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  string|int|array<int, string|int|Role>|Role|Collection<int, Role>  $roles
->>>>>>> .merge_file_xbv2t4
-=======
->>>>>>> .merge_file_55oZz4
-=======
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function hasAnyRole(string|int|array|Role|Collection $roles = [
     ]): bool;
@@ -241,49 +67,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Create a new Eloquent query builder for the model.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ab6egb
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_DMxry3
-=======
->>>>>>> da9ae01a0 (.)
-     * <<<<<<< HEAD
-     *
-     * @param Builder<Model> $query
-     *                              =======
-     *                              <<<<<<< .merge_file_DMxry3
-     *                              =======
-     *                              <<<<<<< HEAD
-     *                              <<<<<<< .merge_file_7zavuJ
-     *                              >>>>>>> .merge_file_55oZz4
-     * @param Builder<Model> $query
-     *
-     * <<<<<<< .merge_file_DMxry3
-     * =======
-     * =======
-     * @param Builder<Model> $query
-     *                              >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-<<<<<<< HEAD
-     * >>>>>>> .merge_file_55oZz4
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param Builder<Model> $query
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  Builder<Model>  $query
->>>>>>> .merge_file_xbv2t4
-=======
->>>>>>> .merge_file_55oZz4
-=======
-     * @param Builder<Model> $query
-     *
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return Builder<Model>
      */
     public function newEloquentBuilder(Builder $query): Builder;

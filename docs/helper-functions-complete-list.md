@@ -2,11 +2,7 @@
 
 ## 📋 Overview
 
-<<<<<<< HEAD
 **File**: `Modules/Xot/Helpers/Helper.php`
-=======
-**File**: `Modules/Xot/helpers/Helper.php`
->>>>>>> 930f8146 (Check & fix styling)
 **Autoload**: Via `"files": ["Helpers/Helper.php"]` in `Xot/composer.json`
 **Disponibilità**: Globale in tutto il framework Laraxot
 
@@ -69,30 +65,7 @@ $json = dddx(['key' => 'value']);
 ```
 
 **Caratteristiche**:
-<<<<<<< .merge_file_mktYxB
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Logga sempre via `Log::debug()`
-=======
-- Solo sviluppo: non usare in produzione (policy no-log-debug)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Solo sviluppo: non usare in produzione (policy no-log-debug)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Logga sempre via `Log::debug()`
->>>>>>> .merge_file_7SP5BP
-=======
-=======
-- Logga sempre via `Log::debug()`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Usa `Safe\json_encode()` per type safety
 - Ritorna string (non void)
 
@@ -327,11 +300,7 @@ if (! function_exists('helperName')) {
    ↓
 2. Autoload PSR-4 + files
    ↓
-<<<<<<< HEAD
 3. Xot/Helpers/Helper.php loaded (via "files")
-=======
-3. Xot/helpers/Helper.php loaded (via "files")
->>>>>>> 930f8146 (Check & fix styling)
    ↓
 4. Helper functions disponibili globalmente
    ↓
@@ -394,53 +363,10 @@ composer dump-autoload
 ---
 
 **Last Updated**: 2 Dicembre 2025
-<<<<<<< .merge_file_mktYxB
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_7SP5BP
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
 
 ---
 
-<<<<<<< .merge_file_mktYxB
-<<<<<<< HEAD
-<<<<<<< HEAD
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
-=======
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
->>>>>>> .merge_file_7SP5BP
-=======
-=======
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

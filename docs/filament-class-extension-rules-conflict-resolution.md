@@ -1,32 +1,6 @@
-<<<<<<< .merge_file_Ecpzx2
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Risoluzione Conflitti Git - Filament Class Extension Rules
 
 ## Data Risoluzione
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Risoluzione Conflitti Git - Filament Class Extension Rules
-
-## Data Risoluzione
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-# Risoluzione Conflitti Git - Filament Class Extension Rules
-
-## Data Risoluzione
-<<<<<<< HEAD
->>>>>>> .merge_file_Gyo7MM
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 2026-01-02
 
 ## Problema Identificato
@@ -98,32 +72,3 @@ Il file `filament-class-extension-rules.md` conteneva conflitti Git multipli:
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Base Classes Documentation](./consolidated/base-classes.md)
-<<<<<<< .merge_file_Ecpzx2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
----
-module: theme
-topic: filament-class-extension-rules-conflict-resolution
-canonical: ../../../Themes/docs/shared-components/filament-class-extension-resolution.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/filament-class-extension-resolution.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/filament-class-extension-resolution.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Gyo7MM
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
