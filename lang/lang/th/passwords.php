@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_E17vGR
 
-=======
-<<<<<<< .merge_file_ArGTAT
-=======
-
->>>>>>> .merge_file_hhZ1DS
->>>>>>> .merge_file_gT3TNY
 return [
     'password' => 'รหัสผ่านต้องมีความยาวอย่างน้อยหกตัวอักษรและต้องตรงกับช่องยืนยันรหัสผ่าน',
     'reset' => 'ทำการตั้งค่ารหัสผ่านใหม่แล้ว!',

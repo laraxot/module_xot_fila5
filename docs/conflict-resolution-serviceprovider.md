@@ -26,34 +26,10 @@ Questa scelta garantisce:
 
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
-<<<<<<< HEAD
 - [Best Practices Provider](best-practices.md)
-=======
-<<<<<<< HEAD
-- [Best Practices Provider](best-practices.md)
-=======
-- [Best Practices Provider](./BEST-PRACTICES.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
-<<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](best-practices.md)
-=======
-<<<<<<< HEAD
-- [docs/BEST-PRACTICES.md](best-practices.md)
-=======
-- [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
-- [Struttura moduli Xot](./module_namespace_rules.md)
-- [Best Practices Provider](./best-practices.md)
-- [docs/links.md globale](../../../../../docs/links.md)
-
-## Backlink
-- [docs/links.md](../../../../../docs/links.md)
-- [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
-- [docs/BEST-PRACTICES.md](./best-practices.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

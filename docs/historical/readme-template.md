@@ -256,32 +256,7 @@ php artisan test --filter=[NomeModulo]
 
 ## Changelog
 
-<<<<<<< .merge_file_DaWFph
-<<<<<<< HEAD
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
-=======
-=======
-<<<<<<< .merge_file_tMZJV8
-Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
-=======
-<<<<<<< HEAD
-Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
-=======
->>>>>>> .merge_file_CVwVYr
-<<<<<<< .merge_file_mdDLJS
-Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
-=======
-<<<<<<< HEAD
-Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
-=======
-Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti.
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZmCxQh
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_DaWFph
-=======
->>>>>>> .merge_file_T4eOPx
->>>>>>> .merge_file_CVwVYr
 
 ## Licenza
 

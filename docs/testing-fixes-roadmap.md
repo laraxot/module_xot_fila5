@@ -119,15 +119,6 @@ $currentTeam = $user->currentTeam;
 - [Testing Priority Rule](../Geo/docs/testing-priority-rule.md)
 - [No RefreshDatabase Policy](../Activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../UI/docs/test-fix-philosophy.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Testing Priority Rule](../geo/docs/testing-priority-rule.md)
-- [No RefreshDatabase Policy](../activity/docs/testing/no-refresh-database-policy.md)
-- [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 🔄 Workflow per Ogni Test
 
@@ -142,13 +133,4 @@ $currentTeam = $user->currentTeam;
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
-<<<<<<< HEAD
 **Prossimo step**: Correggere ArtisanServiceTest.php
-=======
-<<<<<<< HEAD
-**Prossimo step**: Correggere ArtisanServiceTest.php
-=======
-**Ultimo aggiornamento**: [DATE]
-**Prossimo step**: Correggere ArtisanServiceTest.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

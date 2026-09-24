@@ -1038,12 +1038,4 @@ $schedule->call(function () {
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x
 **Chart.js:** 4.x
-<<<<<<< HEAD
 **PHPStan Level:** 10
-=======
-<<<<<<< HEAD
-**PHPStan Level:** 10
-=======
-**PHPStan Level:** 10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

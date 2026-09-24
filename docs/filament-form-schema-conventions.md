@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Convenzioni per Form Schema in Filament
 
 ## Regola Fondamentale
@@ -170,29 +166,9 @@ resta un gap aperto (18.41 AC, task "guardia").
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [XotBaseResource](./XOT_BASE_RESOURCE.md)
 - [Form Components](./FORM_COMPONENTS.md)
 - [Form Validation](./FORM_VALIDATION.md)
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)
-<<<<<<< HEAD
 - [Story 18.41 — test che chiamano getFormSchema staticamente](./stories/18.41.test-chiamano-getformschema-staticamente.story.md)
 - [Epic 5.86 — forma canonica istanza](./stories/5.86.xotbaseresourceform-infolist-trait-based-instance-pattern-epic.story.md)
-=======
-<<<<<<< HEAD
-- [Story 18.41 — test che chiamano getFormSchema staticamente](./stories/18.41.test-chiamano-getformschema-staticamente.story.md)
-- [Epic 5.86 — forma canonica istanza](./stories/5.86.xotbaseresourceform-infolist-trait-based-instance-pattern-epic.story.md)
-=======
----
-module: theme
-topic: filament-form-schema-conventions
-canonical: ../../../Themes/docs/shared-components/filament-form-schema-conventions-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-form-schema-conventions-1.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

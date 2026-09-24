@@ -1,31 +1,6 @@
 # Filament 5.x Requirements & Configuration
 
-<<<<<<< .merge_file_n4bGoO
-<<<<<<< HEAD
 **Data Analisi**: 2026-01-30
-=======
-=======
-<<<<<<< .merge_file_vnzXfc
-**Data Analisi**: 2026-01-30
-=======
-<<<<<<< HEAD
-**Data Analisi**: 2026-01-30
-=======
->>>>>>> .merge_file_Pqvjgb
-<<<<<<< .merge_file_LorNKm
-**Data Analisi**: 2026-01-30
-=======
-<<<<<<< HEAD
-**Data Analisi**: 2026-01-30
-=======
-**Data Analisi**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_WC7I9S
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_n4bGoO
-=======
->>>>>>> .merge_file_9VICOY
->>>>>>> .merge_file_Pqvjgb
 **Versione Filament**: 5.1.1
 **Documentazione Upstream**: https://filamentphp.com/docs/5.x/introduction/installation
 
@@ -90,45 +65,8 @@ Chart.register(ChartDataLabels);  // ❌ NON funziona
 ## Collegamenti
 
 - [Filament 5.x Installation](https://filamentphp.com/docs/5.x/introduction/installation)
-<<<<<<< .merge_file_n4bGoO
-=======
-<<<<<<< .merge_file_vnzXfc
-=======
->>>>>>> .merge_file_Pqvjgb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_LorNKm
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_WC7I9S
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_n4bGoO
-=======
->>>>>>> .merge_file_9VICOY
->>>>>>> .merge_file_Pqvjgb
 - [Chart Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
 
 ---
 
 **Ultimo Aggiornamento**: 2026-01-30
-<<<<<<< .merge_file_n4bGoO
-=======
-<<<<<<< .merge_file_vnzXfc
-=======
->>>>>>> .merge_file_Pqvjgb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_LorNKm
-=======
-=======
-- [Chart Installation Guide](../../chart/docs/filament-5-installation-guide.md)
-
----
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_WC7I9S
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_n4bGoO
-=======
->>>>>>> .merge_file_9VICOY
->>>>>>> .merge_file_Pqvjgb

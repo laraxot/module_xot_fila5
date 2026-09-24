@@ -103,49 +103,11 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
-<<<<<<< .merge_file_nosGIF
-=======
-<<<<<<< .merge_file_rGLH82
-=======
->>>>>>> .merge_file_pQ1LuG
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GgvncZ
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_f9PlBY
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_nosGIF
-=======
->>>>>>> .merge_file_4FqC9d
->>>>>>> .merge_file_pQ1LuG
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
-<<<<<<< .merge_file_nosGIF
-=======
-<<<<<<< .merge_file_rGLH82
-=======
->>>>>>> .merge_file_pQ1LuG
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GgvncZ
-=======
-=======
-- [Configurazione Generale](CONFIGURATION.md)
-- [Struttura dei Moduli](MODULE_STRUCTURE.md)
-- [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
-- [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
-- [Regole per i Namespace](NAMESPACE-RULES.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_f9PlBY
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_nosGIF
-=======
->>>>>>> .merge_file_4FqC9d
->>>>>>> .merge_file_pQ1LuG
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto

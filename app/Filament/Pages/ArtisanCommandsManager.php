@@ -108,19 +108,11 @@ class ArtisanCommandsManager extends XotBasePage
     }
 
     /**
-<<<<<<< HEAD
      * @param  'completed'|'failed'  $status
      */
     private function notifyCommandResult(string $command, string $status): void
     {
         if ($status === 'completed') {
-=======
-     * @param 'completed'|'failed' $status
-     */
-    private function notifyCommandResult(string $command, string $status): void
-    {
-        if ('completed' === $status) {
->>>>>>> laraxot/dev
             Notification::make()
                 ->title((string) __('xot::artisan-commands-manager.messages.command_completed'))
                 ->body((string) __('xot::artisan-commands-manager.messages.command_completed_desc', ['command' => $command]))

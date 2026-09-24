@@ -58,11 +58,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -90,11 +86,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -109,11 +101,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerTranslations(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -166,7 +154,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
-<<<<<<< HEAD
         if ($comps->count() === 0) {
             return;
         }
@@ -174,23 +161,11 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $commands = $comps->toArray();
         /** @var array<int, string> $commands */
         $commands = array_map(static function (array $item): string {
-=======
-        if (0 === $comps->count()) {
-            return;
-        }
-        $items = $comps->toArray();
-        $commands = array_map(static function (mixed $item): string {
-            Assert::isArray($item);
->>>>>>> laraxot/dev
             Assert::keyExists($item, 'ns');
             Assert::string($item['ns'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
             return $item['ns'];
-<<<<<<< HEAD
         }, $commands);
-=======
-        }, $items);
->>>>>>> laraxot/dev
         $this->commands($commands);
     }
 
@@ -230,11 +205,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     protected function registerPublicAssets(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 

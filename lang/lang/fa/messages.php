@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_qrClao
 
-=======
-<<<<<<< .merge_file_WbaX0L
-=======
-
->>>>>>> .merge_file_GnY9wQ
->>>>>>> .merge_file_kaj6DH
 return [
     'title' => 'نصب کننده لاراول',
     'next' => 'قدم بعدی',

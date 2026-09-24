@@ -207,57 +207,6 @@ if (! $this->hasIndex('nome_indice')) {
 
 Ogni modulo può avere best practices specifiche per le migrazioni. Consultare la documentazione del modulo per ulteriori dettagli:
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/project_docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/project_docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/project_docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/Modules/Patient/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/Modules/Tenant/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/Modules/User/docs/MIGRATION_BEST_PRACTICES.md)
@@ -428,12 +377,4 @@ Seguire questi standard per le migrazioni è fondamentale per garantire la coere
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
-<<<<<<< HEAD
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
-=======
-<<<<<<< HEAD
-Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
-=======
-Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

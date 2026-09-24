@@ -15,11 +15,7 @@ abstract class XotBaseResourceInfolist
 
     public static function configure(Schema $schema): Schema
     {
-<<<<<<< HEAD
-        if (static::class === self::class) {
-=======
         if (self::class === static::class) {
->>>>>>> laraxot/dev
             throw new \LogicException('XotBaseResourceInfolist::configure() must be called on a concrete infolist class.');
         }
 

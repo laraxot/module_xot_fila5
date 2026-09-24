@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_oZTsgr
 
-=======
-<<<<<<< .merge_file_NiiVTQ
-=======
-
->>>>>>> .merge_file_sjyjDj
->>>>>>> .merge_file_sEp8iZ
 return [
     'title' => 'Procesul de instalare Laravel',
     'next' => 'Pasul următor',

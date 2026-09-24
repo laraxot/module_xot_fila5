@@ -22,7 +22,6 @@ class FakeSeederAction
     /**
      * Execute the fake data seeding process.
      *
-     * <<<<<<< .merge_file_fM7WBS
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass The fully qualified model class name
@@ -31,15 +30,6 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass The fully qualified model class name
      * @param int<1, max>         $qty        Number of records to generate
      *                                        >>>>>>> laraxot/dev
-     *                                        =======
-     *                                        <<<<<<< HEAD
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
-     *                                        =======
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
-     *                                        >>>>>>> laraxot/dev
-     *                                        >>>>>>> .merge_file_sICqZS
      *
      * @throws \InvalidArgumentException When model class is invalid
      */
@@ -77,7 +67,6 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-     * <<<<<<< .merge_file_fM7WBS
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass
@@ -88,23 +77,11 @@ class FakeSeederAction
      * @throws \RuntimeException
      *                           =======
      * @throws \RuntimeException
-     *                           <<<<<<< .merge_file_fM7WBS
-     *                           =======
-     * @throws \RuntimeException
      *
      * @return Factory<Model>
      * @return Factory<Model>
-     *                        =======
-     *                        <<<<<<< HEAD
-     *                        >>>>>>> .merge_file_sICqZS
      * @return Factory<Model>
      *                        >>>>>>> laraxot/dev
-     *                        =======
-     * @return Factory<Model>
-     * @return Factory<Model>
-     * @return Factory<Model>
-     *                        >>>>>>> laraxot/dev
-     *                        >>>>>>> .merge_file_sICqZS
      */
     private function getModelFactory(string $modelClass): Factory
     {
@@ -121,7 +98,6 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
-     * <<<<<<< .merge_file_fM7WBS
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass
@@ -130,15 +106,6 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass
      * @param int<1, max>         $count
      *                                        >>>>>>> laraxot/dev
-     *                                        =======
-     *                                        <<<<<<< HEAD
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
-     *                                        =======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
-     *                                        >>>>>>> laraxot/dev
-     *                                        >>>>>>> .merge_file_sICqZS
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -152,7 +119,6 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-     * <<<<<<< .merge_file_fM7WBS
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass
@@ -161,15 +127,6 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass
      * @param int<1, max>         $qty
      *                                        >>>>>>> laraxot/dev
-     *                                        =======
-     *                                        <<<<<<< HEAD
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
-     *                                        =======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
-     *                                        >>>>>>> laraxot/dev
-     *                                        >>>>>>> .merge_file_sICqZS
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {

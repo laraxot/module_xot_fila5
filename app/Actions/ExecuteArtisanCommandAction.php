@@ -39,35 +39,18 @@ class ExecuteArtisanCommandAction
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
-     * <<<<<<< .merge_file_KbcoQo
      * <<<<<<< HEAD
      *
      * @param string $command Il comando Artisan da eseguire (senza "php artisan")
      *                        =======
-     *                        =======
-     *                        <<<<<<< HEAD
-     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
-     *                        =======
-     *                        >>>>>>> .merge_file_xtZ4mz
      * @param string $command Il comando Artisan da eseguire (senza "php artisan")
      *
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      *
-     * <<<<<<< .merge_file_KbcoQo
-     * >>>>>>> laraxot/dev
-     * =======
      * >>>>>>> laraxot/dev
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      *                           =======
      *                           >>>>>>> laraxot/dev
-     *
-     * >>>>>>> .merge_file_xtZ4mz
-     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
-     *                           =======
-     *                           >>>>>>> laraxot/dev
-     *                           =======
-     *                           <<<<<<< HEAD
-     *                           >>>>>>> .merge_file_xtZ4mz
      *
      * @return array{
      *     command: string,
@@ -75,7 +58,6 @@ class ExecuteArtisanCommandAction
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
-     * <<<<<<< .merge_file_KbcoQo
      * <<<<<<< HEAD
      */
     public function execute(string $command): array
@@ -149,23 +131,12 @@ class ExecuteArtisanCommandAction
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
-     * <<<<<<< .merge_file_KbcoQo
-     * <<<<<<< HEAD
-     *
-     * @param string $command Il comando da verificare
-     *                        =======
-     * @param string $command Il comando da verificare
-     *
-     * >>>>>>> laraxot/dev
-     * =======
      * <<<<<<< HEAD
      * @param string $command Il comando da verificare
      *                        =======
      * @param string $command Il comando da verificare
      *
      * >>>>>>> laraxot/dev
-     *
-     * >>>>>>> .merge_file_xtZ4mz
      *
      * @return bool True se il comando è consentito, false altrimenti
      */

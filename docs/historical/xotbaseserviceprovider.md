@@ -129,32 +129,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Gestione errori e logging**: loggare i casi di fallback e le eccezioni non bloccanti.
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
-<<<<<<< .merge_file_PziNpU
-<<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
-=======
-=======
-<<<<<<< .merge_file_scnUVG
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
-=======
-<<<<<<< HEAD
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
-=======
->>>>>>> .merge_file_Qzw1hE
-<<<<<<< .merge_file_nkxXUp
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
-=======
-<<<<<<< HEAD
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
-=======
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
->>>>>>> laraxot/dev
->>>>>>> .merge_file_1FfRKh
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_PziNpU
-=======
->>>>>>> .merge_file_tiZgED
->>>>>>> .merge_file_Qzw1hE
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -186,29 +161,7 @@ public function boot(): void
 
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
-<<<<<<< .merge_file_PziNpU
-=======
-<<<<<<< .merge_file_scnUVG
 - [Registrazione icone Blade](registerbladeicons.md)
-=======
->>>>>>> .merge_file_Qzw1hE
-<<<<<<< HEAD
-- [Registrazione icone Blade](registerbladeicons.md)
-=======
-<<<<<<< .merge_file_nkxXUp
-- [Registrazione icone Blade](registerbladeicons.md)
-=======
-<<<<<<< HEAD
-- [Registrazione icone Blade](registerbladeicons.md)
-=======
-- [Registrazione icone Blade](./registerBladeIcons.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_1FfRKh
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_PziNpU
-=======
->>>>>>> .merge_file_tiZgED
->>>>>>> .merge_file_Qzw1hE
 
 ## Gestione dei Path delle Traduzioni
 
@@ -242,29 +195,7 @@ $this->loadTranslationsFrom($langPath, $this->nameLower);
 Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
-<<<<<<< .merge_file_PziNpU
-=======
-<<<<<<< .merge_file_scnUVG
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
-=======
->>>>>>> .merge_file_Qzw1hE
-<<<<<<< HEAD
-Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
-=======
-<<<<<<< .merge_file_nkxXUp
-Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
-=======
-<<<<<<< HEAD
-Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
-=======
-Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
->>>>>>> laraxot/dev
->>>>>>> .merge_file_1FfRKh
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_PziNpU
-=======
->>>>>>> .merge_file_tiZgED
->>>>>>> .merge_file_Qzw1hE
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 

@@ -25,7 +25,6 @@ class ComponentFileData extends Data
     public ?string $ns = null;
 
     /**
-     * <<<<<<< .merge_file_ESsvn1
      * <<<<<<< HEAD.
      *
      * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data

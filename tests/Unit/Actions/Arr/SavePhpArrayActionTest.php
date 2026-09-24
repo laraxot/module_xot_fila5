@@ -14,8 +14,7 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
 // la temp dir del test vive in una variabile locale condivisa per riferimento.
@@ -29,11 +28,7 @@ beforeEach(function () use (&$tempDir): void {
 });
 
 afterEach(function () use (&$tempDir): void {
-<<<<<<< HEAD
-    if ($tempDir !== '' && file_exists($tempDir)) {
-=======
     if ('' !== $tempDir && file_exists($tempDir)) {
->>>>>>> laraxot/dev
         $files = glob($tempDir.'/*');
         foreach ($files as $file) {
             Assert::assertIsString($file);

@@ -5,48 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Traits\HasXotTable;
-<<<<<<< .merge_file_aFiPPU
-=======
-<<<<<<< .merge_file_PR4zKU
-=======
->>>>>>> .merge_file_8k2K0q
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_EEX3P6
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aFiPPU
-=======
->>>>>>> .merge_file_rtFwJR
->>>>>>> .merge_file_8k2K0q
 use ReflectionClass;
 
 use function Safe\file_get_contents;
 
 /**
-<<<<<<< .merge_file_aFiPPU
-=======
-<<<<<<< .merge_file_PR4zKU
-=======
->>>>>>> .merge_file_8k2K0q
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Bxvh2s
 
 use function Safe\file_get_contents;
 
 /*
-<<<<<<< .merge_file_EEX3P6
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Bxvh2s
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aFiPPU
-=======
->>>>>>> .merge_file_rtFwJR
->>>>>>> .merge_file_8k2K0q
  * Guardia della regola docs/wiki/rules/xot-table-method-names.md:
  * `table()` non decide, chiede — e lo chiede direttamente all'hook.
  *
@@ -57,36 +24,7 @@ use function Safe\file_get_contents;
 test('HasXotTable non dichiara metodi resolve*', function (): void {
     $methods = array_map(
         static fn (\ReflectionMethod $m): string => $m->getName(),
-<<<<<<< .merge_file_aFiPPU
-<<<<<<< HEAD
         (new ReflectionClass(HasXotTable::class))->getMethods(),
-=======
-<<<<<<< .merge_file_EEX3P6
-<<<<<<< HEAD
-        (new ReflectionClass(HasXotTable::class))->getMethods(),
-=======
-=======
-<<<<<<< .merge_file_PR4zKU
-        (new ReflectionClass(HasXotTable::class))->getMethods(),
-=======
-<<<<<<< HEAD
-        (new ReflectionClass(HasXotTable::class))->getMethods(),
-=======
-<<<<<<< .merge_file_EEX3P6
-<<<<<<< HEAD
-        (new ReflectionClass(HasXotTable::class))->getMethods(),
-=======
->>>>>>> .merge_file_8k2K0q
-        (new \ReflectionClass(HasXotTable::class))->getMethods(),
->>>>>>> laraxot/dev
-=======
-        (new \ReflectionClass(HasXotTable::class))->getMethods(),
->>>>>>> .merge_file_Bxvh2s
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aFiPPU
-=======
->>>>>>> .merge_file_rtFwJR
->>>>>>> .merge_file_8k2K0q
     );
 
     $offenders = array_values(array_filter(
@@ -100,36 +38,7 @@ test('HasXotTable non dichiara metodi resolve*', function (): void {
 
 test('table() non contiene valori hardcoded fra i setter', function (): void {
     $source = file_get_contents(
-<<<<<<< .merge_file_aFiPPU
-<<<<<<< HEAD
         (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
-<<<<<<< .merge_file_EEX3P6
-<<<<<<< HEAD
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
-=======
-<<<<<<< .merge_file_PR4zKU
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
-<<<<<<< HEAD
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
-<<<<<<< .merge_file_EEX3P6
-<<<<<<< HEAD
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
->>>>>>> .merge_file_8k2K0q
-        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
->>>>>>> laraxot/dev
-=======
-        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
->>>>>>> .merge_file_Bxvh2s
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aFiPPU
-=======
->>>>>>> .merge_file_rtFwJR
->>>>>>> .merge_file_8k2K0q
     );
 
     $start = strpos($source, 'public function table(');
@@ -145,29 +54,7 @@ test('table() non contiene valori hardcoded fra i setter', function (): void {
 
 test('gli hook di azione non sono avvolti in array_values()', function (): void {
     $source = file_get_contents(
-<<<<<<< .merge_file_aFiPPU
-=======
-<<<<<<< .merge_file_PR4zKU
         (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
->>>>>>> .merge_file_8k2K0q
-<<<<<<< HEAD
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
-<<<<<<< .merge_file_EEX3P6
-<<<<<<< HEAD
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
-=======
-        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
->>>>>>> laraxot/dev
-=======
-        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
->>>>>>> .merge_file_Bxvh2s
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aFiPPU
-=======
->>>>>>> .merge_file_rtFwJR
->>>>>>> .merge_file_8k2K0q
     );
 
     foreach ([

@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_8IAlN1
 
-=======
-<<<<<<< .merge_file_Mwbq3r
-=======
-
->>>>>>> .merge_file_szaEmY
->>>>>>> .merge_file_3sMVCE
 return [
     'backend' => [
         'none' => 'Det finns ingen historik för förändringar.',

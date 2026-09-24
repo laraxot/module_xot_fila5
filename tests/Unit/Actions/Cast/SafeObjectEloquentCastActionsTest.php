@@ -11,12 +11,7 @@ uses(TestCase::class);
 
 test('safe object cast action works', function (): void {
     $action = app(SafeObjectCastAction::class);
-<<<<<<< HEAD
-    $obj = new class
-    {
-=======
     $obj = new class {
->>>>>>> laraxot/dev
         public string $str = 'test';
 
         public int $int = 123;
@@ -68,12 +63,7 @@ test('safe object cast action works', function (): void {
 
 test('safe eloquent cast action works', function (): void {
     $action = app(SafeEloquentCastAction::class);
-<<<<<<< HEAD
-    $model = new class extends XotBaseModel
-    {
-=======
     $model = new class extends XotBaseModel {
->>>>>>> laraxot/dev
         protected $attributes = [
             'str' => 'test',
             'int' => 123,
@@ -101,11 +91,7 @@ test('safe eloquent cast action works', function (): void {
         return $v > 100;
     }));
     Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (int $v): bool {
-<<<<<<< HEAD
-        return $v === 123;
-=======
         return 123 === $v;
->>>>>>> laraxot/dev
     }));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'str', 'null_val', 'string'));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'null_val', 'str', 'string'));

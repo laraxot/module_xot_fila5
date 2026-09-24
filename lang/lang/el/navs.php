@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_vFXVTr
 
-=======
-<<<<<<< .merge_file_6RAjJl
-=======
-
->>>>>>> .merge_file_3Dwfix
->>>>>>> .merge_file_sh9bit
 return [
     'general' => [
         'home' => 'Αρχική',

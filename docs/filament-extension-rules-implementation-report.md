@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Filament Extension Rules Implementation Report
 
 **Date**: 18 Dicembre 2025
@@ -91,15 +87,3 @@ Created comprehensive documentation file:
 ---
 
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: filament-extension-rules-implementation-report
-canonical: ../../../Themes/docs/shared-components/filament-extension-implementation.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-extension-implementation.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

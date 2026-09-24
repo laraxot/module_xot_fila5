@@ -36,21 +36,7 @@ public function getTableActions(): array
 }
 
 // ❌ SBAGLIATO - Array numerico
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -77,21 +63,7 @@ public function getTableActions(): array
 
 // ✅ CORRETTO - Array associativo con chiavi string
 /** @return array<string, Component> */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -148,21 +120,7 @@ class UserResource extends XotBaseResource
     /**
      * @return array<string, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             'name_field' => TextInput::make('name'),
@@ -271,12 +229,4 @@ Prima di commit:
 
 ---
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-10*
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

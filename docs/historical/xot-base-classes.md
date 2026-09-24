@@ -18,67 +18,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_iGWT66
-=======
-<<<<<<< .merge_file_uCNogw
-=======
->>>>>>> .merge_file_cipSLY
-=======
-<<<<<<< .merge_file_9PnOj3
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
       public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_KBBmvv
-<<<<<<< .merge_file_iGWT66
-      public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      public function getFormSchema(): array
-=======
-=======
->>>>>>> .merge_file_cipSLY
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> .merge_file_cMgbuC
-      public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_uCNogw
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9PnOj3
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_KBBmvv
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_iGWT66
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9PnOj3
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_KBBmvv
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_cMgbuC
->>>>>>> .merge_file_cipSLY
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),

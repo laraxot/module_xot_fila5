@@ -10,18 +10,10 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\exec;
 
-=======
-
-use function Safe\exec;
-
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
 class DatabaseBackUpCommand extends Command
 {
     /**
@@ -39,13 +31,10 @@ class DatabaseBackUpCommand extends Command
     protected $description = 'Dump your Mysql database to a file';
 
     /**
-<<<<<<< HEAD
-=======
      * Create a new command instance.
      */
 
     /**
->>>>>>> laraxot/dev
      * Execute the console command.
      */
     public function handle(): void

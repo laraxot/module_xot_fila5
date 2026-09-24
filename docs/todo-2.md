@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "_todo"
 module: "Xot"
@@ -15,11 +11,6 @@ related:
 ---
 
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

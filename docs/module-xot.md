@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Modulo Xot
 
 ## Informazioni Generali
@@ -110,15 +106,3 @@ composer format        # Formatta il codice
 
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub.
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: module-xot
-canonical: ../../../Themes/docs/shared-components/module-xot.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/module-xot.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

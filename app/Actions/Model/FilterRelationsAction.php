@@ -11,7 +11,6 @@ use Webmozart\Assert\Assert;
 class FilterRelationsAction
 {
     /**
-     * <<<<<<< .merge_file_tUHPNr
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $relations

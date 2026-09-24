@@ -10,15 +10,9 @@ use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 it('deletes model and returns it', function (): void {
-<<<<<<< HEAD
-    $mockModel = new class extends BaseModel
-    {
-=======
     $mockModel = new class extends BaseModel {
->>>>>>> laraxot/dev
         public bool $deleted = false;
 
         public function delete(): bool
@@ -36,12 +30,7 @@ it('deletes model and returns it', function (): void {
 });
 
 it('flashes status message on successful delete', function (): void {
-<<<<<<< HEAD
-    $mockModel = new class extends BaseModel
-    {
-=======
     $mockModel = new class extends BaseModel {
->>>>>>> laraxot/dev
         public function delete(): bool
         {
             return true;
@@ -54,12 +43,7 @@ it('flashes status message on successful delete', function (): void {
 });
 
 it('flashes failure message when delete returns false', function (): void {
-<<<<<<< HEAD
-    $mockModel = new class extends BaseModel
-    {
-=======
     $mockModel = new class extends BaseModel {
->>>>>>> laraxot/dev
         public function delete(): bool
         {
             return false;

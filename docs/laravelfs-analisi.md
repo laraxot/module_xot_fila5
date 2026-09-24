@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Analisi di LaravelFS
 
 ## Introduzione
@@ -38,15 +34,3 @@ Il progetto ha una struttura ben organizzata:
 - **tests/**: Test automatizzati
 
 ## Aspetti interessanti per il nostro progetto
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: laravelfs-analisi
-canonical: ../../../Themes/docs/shared-components/laravelfs-analisi.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -11,32 +11,7 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-=======
-<<<<<<< .merge_file_vHzPyc
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_RJmjjz
-=======
-<<<<<<< .merge_file_xythK1
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_IxpDAc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YAOBsQ
-=======
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
 uses(TestCase::class);
 
 /**
@@ -84,41 +59,7 @@ function modelSourceFiles(): array
         }
         $it = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-=======
-<<<<<<< .merge_file_vHzPyc
-=======
->>>>>>> .merge_file_RJmjjz
-            if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
-=======
-<<<<<<< .merge_file_xythK1
-<<<<<<< HEAD
             if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-=======
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
-            if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
-=======
-            if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YAOBsQ
-=======
-<<<<<<< .merge_file_vHzPyc
-=======
->>>>>>> .merge_file_RJmjjz
->>>>>>> laraxot/dev
-=======
-            if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
->>>>>>> .merge_file_IxpDAc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YAOBsQ
-=======
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
                 continue;
             }
             $out[] = $file->getPathname();
@@ -147,41 +88,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
             continue;
         }
         $src = file_get_contents($file);
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-=======
-<<<<<<< .merge_file_vHzPyc
-=======
->>>>>>> .merge_file_RJmjjz
-        if (preg_match($handRolled, $src) === 1) {
-=======
-<<<<<<< .merge_file_xythK1
-<<<<<<< HEAD
         if (1 === preg_match($handRolled, $src)) {
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-=======
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
-        if (1 === preg_match($handRolled, $src)) {
-=======
-        if (preg_match($handRolled, $src) === 1) {
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YAOBsQ
-=======
-<<<<<<< .merge_file_vHzPyc
-=======
->>>>>>> .merge_file_RJmjjz
->>>>>>> laraxot/dev
-=======
-        if (1 === preg_match($handRolled, $src)) {
->>>>>>> .merge_file_IxpDAc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YAOBsQ
-=======
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
             $offenders[] = $rel;
         }
     }
@@ -192,44 +99,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
         "Risoluzione di classe scritta a mano invece di `<Model>::getClassName()`:\n  "
         .implode("\n  ", $offenders)
         ."\n\nOgni modulo ha il suo model su una connessione diversa con lo stesso nome di"
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-=======
-<<<<<<< .merge_file_vHzPyc
-=======
->>>>>>> .merge_file_RJmjjz
-        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
-=======
-<<<<<<< .merge_file_xythK1
-<<<<<<< HEAD
         ." tabella: il ripiego su un altro modulo legge un altro database in silenzio."
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-        ." tabella: il ripiego su un altro modulo legge un altro database in silenzio."
-=======
-        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
->>>>>>> .merge_file_IxpDAc
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_BanN87
-        ." tabella: il ripiego su un altro modulo legge un altro database in silenzio."
-=======
-        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_vHzPyc
-=======
->>>>>>> laraxot/dev
-=======
-        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
->>>>>>> .merge_file_IxpDAc
->>>>>>> laraxot/dev
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
         ."\nCanon: Modules/Xot/docs/wiki/concepts/xotbasemodel-get-class-name.md"
     );
 });
@@ -241,46 +111,7 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
     $offenders = [];
     foreach (modelSourceFiles() as $file) {
         $src = file_get_contents($file);
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-        if (preg_match($silentFallback, $src) === 1) {
-=======
-<<<<<<< .merge_file_xythK1
-<<<<<<< HEAD
         if (1 === preg_match($silentFallback, $src)) {
-=======
-<<<<<<< HEAD
-        if (1 === preg_match($silentFallback, $src)) {
-=======
-        if (preg_match($silentFallback, $src) === 1) {
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_vHzPyc
-=======
-        if (preg_match($silentFallback, $src) === 1) {
-=======
-<<<<<<< .merge_file_xythK1
-<<<<<<< HEAD
-        if (1 === preg_match($silentFallback, $src)) {
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_BanN87
-        if (1 === preg_match($silentFallback, $src)) {
-=======
-        if (preg_match($silentFallback, $src) === 1) {
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_vHzPyc
-=======
->>>>>>> .merge_file_RJmjjz
->>>>>>> laraxot/dev
-=======
-        if (1 === preg_match($silentFallback, $src)) {
->>>>>>> .merge_file_IxpDAc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YAOBsQ
-=======
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
             $offenders[] = str_replace(\dirname(__DIR__, 5).'/', '', $file);
         }
     }
@@ -291,34 +122,6 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
         "Ripiego silenzioso su un model di un altro modulo:\n  "
         .implode("\n  ", $offenders)
         ."\n\nUsare `<Model>::getClassName()`: se il gemello manca deve LANCIARE, non"
-<<<<<<< HEAD
-<<<<<<< .merge_file_YAOBsQ
-=======
-<<<<<<< .merge_file_vHzPyc
         ." rispondere con i dati di un altro ente."
-=======
-        .' rispondere con i dati di un altro ente.'
-=======
->>>>>>> .merge_file_RJmjjz
-        .' rispondere con i dati di un altro ente.'
-=======
-<<<<<<< .merge_file_xythK1
-<<<<<<< HEAD
-        ." rispondere con i dati di un altro ente."
-=======
-<<<<<<< HEAD
-        ." rispondere con i dati di un altro ente."
-=======
-        .' rispondere con i dati di un altro ente.'
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-        .' rispondere con i dati di un altro ente.'
->>>>>>> .merge_file_IxpDAc
-<<<<<<< .merge_file_YAOBsQ
-=======
->>>>>>> .merge_file_BanN87
->>>>>>> .merge_file_RJmjjz
->>>>>>> laraxot/dev
     );
 });

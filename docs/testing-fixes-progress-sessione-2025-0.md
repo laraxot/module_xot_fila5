@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_aSu1Mh
-=======
-<<<<<<< .merge_file_jEplCk
-=======
->>>>>>> .merge_file_6r2tdZ
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aSu1Mh
-=======
->>>>>>> .merge_file_D96gup
->>>>>>> .merge_file_6r2tdZ
 ---
 name: testing-fixes-progress-sessione-2025-0
 description: "Data: 2025-01-22"
@@ -23,39 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< .merge_file_aSu1Mh
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_jEplCk
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_6r2tdZ
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_D96gup
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aSu1Mh
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_jEplCk
-=======
->>>>>>> .merge_file_6r2tdZ
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aSu1Mh
-=======
->>>>>>> .merge_file_D96gup
->>>>>>> .merge_file_6r2tdZ
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22

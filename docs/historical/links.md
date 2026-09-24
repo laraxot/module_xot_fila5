@@ -196,43 +196,9 @@
 - [Chart](../Chart/docs/README.md) - Grafici
 
 ## Collegamenti tra versioni di LINKS.md
-<<<<<<< .merge_file_SRXAmC
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_g1ub1o
->>>>>>> .merge_file_AAamPB
 * [LINKS.md](links.md)
 * [LINKS.md](links.md)
 * [LINKS.md](links.md)
-=======
-<<<<<<< .merge_file_SRXAmC
-=======
-<<<<<<< HEAD
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-=======
->>>>>>> .merge_file_AAamPB
-<<<<<<< .merge_file_dSUctB
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-=======
-<<<<<<< HEAD
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-=======
-* [LINKS.md](../../../Xot/docs/LINKS.md)
-* [LINKS.md](../../../User/docs/LINKS.md)
-* [LINKS.md](../../../UI/docs/LINKS.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_t85IPO
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_SRXAmC
-=======
->>>>>>> .merge_file_Tjw4s1
->>>>>>> .merge_file_AAamPB
 * [LINKS.md](../../../Cms/docs/LINKS.md)
 * [LINKS.md](../../../../Themes/One/docs/LINKS.md)
 

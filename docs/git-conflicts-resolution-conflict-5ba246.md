@@ -1,13 +1,6 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -193,19 +186,6 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
-
-### Modulo User
-- [Theme Translation Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
-
-### Modulo Xot
-- [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -269,14 +249,6 @@ php artisan lang:check
 ### Documentazione Moduli
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
@@ -286,13 +258,6 @@ php artisan lang:check
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
@@ -330,12 +295,4 @@ php artisan lang:check
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
 
-<<<<<<< HEAD
 **Stato**: ✅ Completato
-=======
-<<<<<<< HEAD
-**Stato**: ✅ Completato
-=======
-**Stato**: ✅ Completato
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

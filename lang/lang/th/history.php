@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_OMgN7u
 
-=======
-<<<<<<< .merge_file_MM1R6F
-=======
-
->>>>>>> .merge_file_OQh3A9
->>>>>>> .merge_file_ceFal6
 return [
     'backend' => [
         'none' => 'ไม่มีประวัติล่าสุด',

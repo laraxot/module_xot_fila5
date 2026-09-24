@@ -10,8 +10,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 use function Safe\preg_match_all;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 /**
  * In Filament 5 `->options()` accetta la **classe** dell'enum.
  *
@@ -37,32 +36,7 @@ function xotPhpFilesUnderFilament(): array
     );
 
     foreach ($iterator as $fileInfo) {
-<<<<<<< .merge_file_hqfNun
-<<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
-=======
-=======
-<<<<<<< .merge_file_u3agd3
-        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
-=======
-<<<<<<< HEAD
-        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
-=======
->>>>>>> .merge_file_gYCY2h
-<<<<<<< .merge_file_ClwtiG
-<<<<<<< HEAD
-        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
-=======
-        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
->>>>>>> laraxot/dev
-=======
-        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
->>>>>>> .merge_file_qrAyQk
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_hqfNun
-=======
->>>>>>> .merge_file_pqF2dd
->>>>>>> .merge_file_gYCY2h
             continue;
         }
 

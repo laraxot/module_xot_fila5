@@ -1065,12 +1065,4 @@ b6f667c (.)
 - La registrazione dei comandi nel ServiceProvider del modulo deve usare il namespace e path corretti.
 - Aggiornare la documentazione del modulo con esempi e riferimenti.
 
-<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
-=======
-<<<<<<< HEAD
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

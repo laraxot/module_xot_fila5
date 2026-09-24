@@ -67,15 +67,7 @@ public function get<Nome>Attribute(?type $value): ?type
 ### Scopo Business
 
 **Nei sistemi PA (PTVX)**:
-<<<<<<< HEAD
 - Schede valutazione calcolano valori durante edit
-=======
-<<<<<<< HEAD
-- Schede valutazione calcolano valori durante edit
-=======
-- Scheda valutazione calcola valori durante edit
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Performance evaluation aggrega dati storici
 - Indennità calcola importi da timbrature
 
@@ -132,15 +124,7 @@ if (null == $this->getKey()) {
 
 6. ⏳ **Rating/Models/Traits/RatingTrait.php**
 7. ⏳ **Ptv/Models/BaseScheda.php**
-<<<<<<< HEAD
 8. ⏳ **Progressioni/Models/Schede.php**
-=======
-<<<<<<< HEAD
-8. ⏳ **Progressioni/Models/Schede.php**
-=======
-8. ⏳ **Progressioni/Models/Scheda.php**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 9. ⏳ **Performance/Models/StabiDirigente.php**
 10. ⏳ **User/Models/BaseTenant.php**
 
@@ -235,15 +219,7 @@ public function getMediaAttribute(): float {
 **Settimana 2**:
 - [ ] Rating/RatingTrait
 - [ ] Ptv/BaseScheda
-<<<<<<< HEAD
 - [ ] Progressioni/Schede
-=======
-<<<<<<< HEAD
-- [ ] Progressioni/Schede
-=======
-- [ ] Progressioni/Scheda
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Settimana 3**:
 - [ ] Altri moduli + cleanup finale
@@ -313,19 +289,6 @@ test('accessor salva se model ha PK', function () {
 ## Collegamenti
 
 ### Implementazioni Modulo-Specifiche
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Sigma - SchedaTrait Fix](../../sigma/docs/fix-duplicate-entry-error-summary.md)
-- [Performance - MutatorTrait](../../performance/docs/mutator-guard-fix.md) (da creare)
-- [IndennitaCondizioniLavoro - MutatorTrait](../../indennitacondizionilavoro/docs/accessor-guard.md) (da creare)
-
-### Documentazione Pattern
-- [Accessor Pattern](../../sigma/docs/scheda-trait-accessor-pattern.md)
-- [Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Sigma - SchedaTrait Fix](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../Performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../IndennitaCondizioniLavoro/docs/accessor-guard.md) (da creare)
@@ -341,21 +304,7 @@ test('accessor salva se model ha PK', function () {
 ---
 
 **Creato**: 2025-01-29
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 **Tipo**: Regola Architettutale Globale
 **Applicazione**: Tutti i moduli
 **Severità**: 🔴 CRITICA
 **Status**: 📖 Documentata, 🔄 Implementazione in corso
-<<<<<<< HEAD
-=======
-=======
-**Creato**: [DATE]
-**Tipo**: Regola Architettutale Globale
-**Applicazione**: Tutti i moduli
-**Severità**: 🔴 CRITICA
-**Status**: 📖 Documentata, 🔄 Implementazione in corso
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
