@@ -33,9 +33,15 @@ class CheckAccessorTwinsCommand extends Command
     public function handle(): int
     {
         $module = $this->option('module');
+<<<<<<< HEAD
         $pattern = base_path('Modules/'.(is_string($module) && $module !== '' ? $module : '*').'/app/Models/*.php');
 
         if ($this->option('orphans') === true) {
+=======
+        $pattern = base_path('Modules/'.(is_string($module) && '' !== $module ? $module : '*').'/app/Models/*.php');
+
+        if (true === $this->option('orphans')) {
+>>>>>>> laraxot/dev
             return $this->reportOrphanTwins($pattern);
         }
 
@@ -50,7 +56,11 @@ class CheckAccessorTwinsCommand extends Command
             }
 
             $class = $this->classFromPath($file);
+<<<<<<< HEAD
             if ($class === null) {
+=======
+            if (null === $class) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
@@ -60,6 +70,7 @@ class CheckAccessorTwinsCommand extends Command
                 continue;
             }
 
+<<<<<<< HEAD
             $analyzed++;
 
             foreach ($reflection->getMethods() as $method) {
@@ -69,6 +80,17 @@ class CheckAccessorTwinsCommand extends Command
                 }
 
                 $accessors++;
+=======
+            ++$analyzed;
+
+            foreach ($reflection->getMethods() as $method) {
+                $twin = $this->twinName($method);
+                if (null === $twin) {
+                    continue;
+                }
+
+                ++$accessors;
+>>>>>>> laraxot/dev
 
                 if (! $reflection->hasMethod($twin)) {
                     $missing[$class][] = $method->getName();
@@ -92,7 +114,11 @@ class CheckAccessorTwinsCommand extends Command
             $missingCount
         ));
 
+<<<<<<< HEAD
         if ($missingCount > 0 && $this->option('fail-on-missing') === true) {
+=======
+        if ($missingCount > 0 && true === $this->option('fail-on-missing')) {
+>>>>>>> laraxot/dev
             return self::FAILURE;
         }
 
@@ -119,7 +145,11 @@ class CheckAccessorTwinsCommand extends Command
             }
 
             $class = $this->classFromPath($file);
+<<<<<<< HEAD
             if ($class === null) {
+=======
+            if (null === $class) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
@@ -137,17 +167,29 @@ class CheckAccessorTwinsCommand extends Command
                 continue; // connection non raggiungibile in questo ambiente
             }
 
+<<<<<<< HEAD
             if ($columns === []) {
                 continue;
             }
 
             $analyzed++;
+=======
+            if ([] === $columns) {
+                continue;
+            }
+
+            ++$analyzed;
+>>>>>>> laraxot/dev
             $found = [];
 
             foreach ($reflection->getMethods() as $method) {
                 $name = $method->getName();
 
+<<<<<<< HEAD
                 if (preg_match('/^get([A-Z].*)$/', $name, $matches) !== 1) {
+=======
+                if (1 !== preg_match('/^get([A-Z].*)$/', $name, $matches)) {
+>>>>>>> laraxot/dev
                     continue;
                 }
                 if (str_ends_with($name, 'Attribute') || $method->getNumberOfRequiredParameters() > 0) {
@@ -156,12 +198,20 @@ class CheckAccessorTwinsCommand extends Command
 
                 // Metodi del framework (es. Authenticatable::getRememberToken()): non sono gemelli di dominio.
                 $declaredIn = (string) $method->getDeclaringClass()->getFileName();
+<<<<<<< HEAD
                 if ($declaredIn === '' || str_contains($declaredIn, '/vendor/')) {
+=======
+                if ('' === $declaredIn || str_contains($declaredIn, '/vendor/')) {
+>>>>>>> laraxot/dev
                     continue;
                 }
 
                 $suffix = $matches[1] ?? '';
+<<<<<<< HEAD
                 if ($suffix === '') {
+=======
+                if ('' === $suffix) {
+>>>>>>> laraxot/dev
                     continue;
                 }
 
@@ -173,20 +223,32 @@ class CheckAccessorTwinsCommand extends Command
                 $found[$column] = $name;
             }
 
+<<<<<<< HEAD
             if ($found === []) {
+=======
+            if ([] === $found) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
             $this->line($class);
             foreach ($found as $column => $name) {
                 $this->line('  - '.$name.'()  =>  colonna `'.$column.'` senza accessor: calcolo mai invocato');
+<<<<<<< HEAD
                 $orphans++;
+=======
+                ++$orphans;
+>>>>>>> laraxot/dev
             }
         }
 
         $this->info(sprintf('Classi analizzate: %d | gemelli orfani: %d', $analyzed, $orphans));
 
+<<<<<<< HEAD
         if ($orphans > 0 && $this->option('fail-on-missing') === true) {
+=======
+        if ($orphans > 0 && true === $this->option('fail-on-missing')) {
+>>>>>>> laraxot/dev
             return self::FAILURE;
         }
 
@@ -198,12 +260,20 @@ class CheckAccessorTwinsCommand extends Command
      */
     private function twinName(\ReflectionMethod $method): ?string
     {
+<<<<<<< HEAD
         if (preg_match('/^get(.+)Attribute$/', $method->getName(), $matches) !== 1) {
+=======
+        if (1 !== preg_match('/^get(.+)Attribute$/', $method->getName(), $matches)) {
+>>>>>>> laraxot/dev
             return null;
         }
 
         $name = $matches[1] ?? '';
+<<<<<<< HEAD
         if ($name === '') {
+=======
+        if ('' === $name) {
+>>>>>>> laraxot/dev
             return null;
         }
 

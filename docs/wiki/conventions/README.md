@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# Xot
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "Readme"
 type: reference
@@ -5,6 +18,13 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 # Convenzioni
 
@@ -19,6 +39,10 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -99,6 +123,11 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 
 ---
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -131,7 +160,14 @@ Core module for the FixCity Platform.
 
 ---
 
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
 # Convenzioni
@@ -147,6 +183,12 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -197,7 +239,14 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Dental/docs/README.md)
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
+=======
+<<<<<<< HEAD
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -224,7 +273,15 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -259,3 +316,11 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

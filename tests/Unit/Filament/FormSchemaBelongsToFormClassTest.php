@@ -8,8 +8,18 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert as WebmozartAssert;
 use ReflectionClass;
+=======
+<<<<<<< HEAD
+use Webmozart\Assert\Assert as WebmozartAssert;
+use ReflectionClass;
+=======
+use ReflectionClass;
+use Webmozart\Assert\Assert as WebmozartAssert;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 use function Safe\file_get_contents;
 use function Safe\glob;

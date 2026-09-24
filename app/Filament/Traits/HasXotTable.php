@@ -18,7 +18,14 @@ use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+<<<<<<< HEAD
 use Filament\Tables;
+=======
+<<<<<<< HEAD
+use Filament\Tables;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
@@ -27,9 +34,21 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Filament\Tables\Filters\BaseFilter;
+<<<<<<< HEAD
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
+=======
+<<<<<<< HEAD
+use Filament\Tables\Filters\TernaryFilter;
+use Filament\Tables\Table;
+use Filament\Widgets\TableWidget;
+=======
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\TernaryFilter;
+use Filament\Tables\Table;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -298,7 +317,15 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< HEAD
      * @return array<string|int, \Filament\Tables\Filters\Filter|TernaryFilter|BaseFilter>
+=======
+<<<<<<< HEAD
+     * @return array<string|int, \Filament\Tables\Filters\Filter|TernaryFilter|BaseFilter>
+=======
+     * @return array<string|int, Filter|TernaryFilter|BaseFilter>
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      */
     public function getTableFilters(): array
     {
@@ -338,7 +365,14 @@ trait HasXotTable
         }
         // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
+<<<<<<< HEAD
         
+=======
+<<<<<<< HEAD
+        
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
@@ -407,6 +441,13 @@ trait HasXotTable
      *
      *
      * @return class-string<Model>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      * @phpstan-return class-string<Model>
      *
      * @throws \Exception Se non viene trovata una classe modello valida
@@ -422,9 +463,21 @@ trait HasXotTable
             $related = $relationship instanceof Builder ? $relationship->getModel() : $relationship->getRelated();
             if ($related instanceof Model) {
                 /** @var class-string<Model> $relatedClass */
+<<<<<<< HEAD
             $relatedClass = get_class($related);
 
             return $relatedClass;
+=======
+<<<<<<< HEAD
+            $relatedClass = get_class($related);
+
+            return $relatedClass;
+=======
+                $relatedClass = get_class($related);
+
+                return $relatedClass;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             }
         }
 
@@ -711,7 +764,15 @@ trait HasXotTable
         if ($this->hasColumn('order_column')) {
             return 'order_column';
         }
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         return null;
     }
 
@@ -721,7 +782,14 @@ trait HasXotTable
     protected function applyReorderable(Table $table): Table
     {
         $orderColumn = $this->getOrderColumn();
+<<<<<<< HEAD
        
+=======
+<<<<<<< HEAD
+       
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         if ($orderColumn !== null) {
             return $table->reorderable($orderColumn);

@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/fr/auth.php
+>>>>>>> laraxot/dev
 return [
     'failed' => 'Ces informations de connexion ne correspondent pas.',
     'general_error' => 'Vous n\'avez pas les droits requis pour cette action.',

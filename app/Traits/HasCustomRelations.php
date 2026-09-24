@@ -17,8 +17,14 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
+<<<<<<< HEAD
  */
 // @phpstan-ignore trait.unused
+=======
+ *
+ * @phpstan-ignore trait.unused
+ */
+>>>>>>> laraxot/dev
 trait HasCustomRelations
 {
     public function customRelation(
@@ -27,7 +33,11 @@ trait HasCustomRelations
         ?\Closure $eagerConstraints = null,
         ?\Closure $eagerMatcher = null,
     ): CustomRelation {
+<<<<<<< HEAD
         $instance = new $related;
+=======
+        $instance = new $related();
+>>>>>>> laraxot/dev
         // Call to an undefined method object::newQuery()
         Assert::isInstanceOf($instance, Model::class, '['.__LINE__.']['.class_basename($this).']');
         $query = $instance->newQuery();

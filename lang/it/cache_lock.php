@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/cache_lock.php
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'cache lock',
@@ -9,9 +15,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'Blocchi Cache',
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 95,
+=======
+>>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +58,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -67,10 +77,13 @@ return [
             'helper_text' => 'expiration',
             'description' => 'expiration',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache Lock',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -98,6 +111,14 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Cache Lock',
+        ],
+        'delete' => [
+            'label' => 'Elimina Cache Lock',
+>>>>>>> laraxot/dev
         ],
     ],
 ];

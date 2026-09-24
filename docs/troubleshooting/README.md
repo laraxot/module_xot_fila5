@@ -2,7 +2,10 @@
 
 ## Common Issues
 
+<<<<<<< HEAD
 > **Core module for the FixCity Platform.**
+=======
+>>>>>>> laraxot/dev
 ### PHPStan Errors
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
@@ -25,6 +28,14 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< HEAD
+=======
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+>>>>>>> laraxot/dev
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -50,6 +61,7 @@
 
 ## Getting Help
 
+<<<<<<< HEAD
 
 ## Perché esiste
 
@@ -72,10 +84,13 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
 - Check module-specific documentation
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< HEAD
 [![Module](https://img.shields.io/badge/Module-Troubleshooting Guide-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -108,3 +123,5 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
+<<<<<<< HEAD
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Models\Activity;
@@ -19,6 +20,25 @@ describe('Safe Attribute Cast Action', function (): void {
         $model->shouldReceive('getAttribute')->with('id')->andReturn(123);
         $model->shouldReceive('getAttribute')->with('active')->andReturn(1);
         $model->shouldReceive('getAttribute')->with('missing')->andReturn(null);
+=======
+use Modules\Activity\Models\Activity;
+use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+
+describe('Safe Attribute Cast Action', function (): void {
+    test('manages eloquent attributes safely', function (): void {
+        $model = $this->createUnitMock(Activity::class);
+        $model->method('getAttribute')->willReturnMap([
+            ['name', 'Test User'],
+            ['email', ''],
+            ['id', 123],
+            ['active', 1],
+            ['missing', null],
+        ]);
+>>>>>>> laraxot/dev
 
         $action = app(SafeAttributeCastAction::class);
 

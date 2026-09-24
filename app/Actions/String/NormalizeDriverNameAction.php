@@ -6,6 +6,10 @@ namespace Modules\Xot\Actions\String;
 
 use function Safe\preg_replace;
 
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
@@ -16,6 +20,11 @@ use Webmozart\Assert\Assert;
  */
 class NormalizeDriverNameAction
 {
+<<<<<<< HEAD
+=======
+    use QueueableAction;
+
+>>>>>>> laraxot/dev
     /**
      * Normalizza il nome del driver eliminando caratteri non alfanumerici
      * e gestendo eventuali casi speciali/alias.

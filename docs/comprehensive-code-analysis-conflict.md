@@ -176,7 +176,11 @@ try {
 
 ```php
 // ContactResource.php
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -185,7 +189,11 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -281,7 +289,11 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),
@@ -414,7 +426,11 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> laraxot/dev
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

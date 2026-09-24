@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Filament\Resources\Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
@@ -12,6 +13,16 @@ uses(TestCase::class);
 
 test('xot base resource extends filament resource', function (): void {
     Assert::assertInstanceOf(Resource::class, new NavigationProbeResource);
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+use Filament\Resources\Resource;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
+use PHPUnit\Framework\Assert;
+
+test('xot base resource extends filament resource', function (): void {
+    Assert::assertInstanceOf(Resource::class, new NavigationProbeResource());
+>>>>>>> laraxot/dev
 });
 
 test('xot base resource has navigation icon', function (): void {
@@ -27,5 +38,9 @@ test('xot base resource has navigation sort', function (): void {
 });
 
 test('xot base resource can be instantiated', function (): void {
+<<<<<<< HEAD
     Assert::assertInstanceOf(XotBaseResource::class, new NavigationProbeResource);
+=======
+    Assert::assertInstanceOf(XotBaseResource::class, new NavigationProbeResource());
+>>>>>>> laraxot/dev
 });

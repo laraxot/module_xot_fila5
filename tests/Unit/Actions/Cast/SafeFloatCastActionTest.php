@@ -2,12 +2,27 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+use Modules\Xot\Actions\Cast\SafeFloatCastAction;
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 it('casts float values', function (): void {
     $result = app(SafeFloatCastAction::class)->execute(123.45);
     Assert::assertSame(123.45, $result);
@@ -72,7 +87,11 @@ it('casts arrays', function (): void {
 });
 
 it('casts objects', function (): void {
+<<<<<<< HEAD
     $result = app(SafeFloatCastAction::class)->execute(new stdClass);
+=======
+    $result = app(SafeFloatCastAction::class)->execute(new stdClass());
+>>>>>>> laraxot/dev
     Assert::assertSame(0.0, $result);
 });
 

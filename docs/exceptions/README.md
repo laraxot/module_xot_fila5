@@ -2,6 +2,7 @@
 
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
 
+<<<<<<< HEAD
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
@@ -32,6 +33,38 @@ Core module for the FixCity Platform.
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
+=======
+## HandlerDecorator
+- [Documentazione Dettagliata](./handler-decorator.md)
+- Modulo: Xot
+- Percorso: `Modules/Xot/app/Exceptions/Handlers/HandlerDecorator.php`
+
+### Funzionalità Principali
+- Decorazione del gestore eccezioni Laravel
+- Gestione personalizzata delle eccezioni
+- Supporto per log dettagliati e webhook
+- Integrazione con sistemi di monitoraggio
+
+## Formatters
+- [WebhookErrorFormatter](./formatters/webhook-error-formatter.md)
+- Altri formattatori personalizzati
+
+### Caratteristiche
+- Formattazione consistente degli errori
+- Supporto per diversi canali di output
+- Integrazione con sistemi esterni
+
+## Best Practices
+1. Utilizzo di pattern di design appropriati
+2. Logging strutturato e dettagliato
+3. Gestione errori robusta
+4. Supporto per PHPStan livello 9
+5. Conforme alle convenzioni Laraxot/<nome progetto>
+
+## Collegamenti
+- [Exception Handling Guidelines](../exception-handling-guide.md)
+- [Logging Best Practices](../logging-best-practices.md)
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
@@ -65,6 +98,7 @@ Core module for the FixCity Platform.
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< HEAD
 * [README.md](laravel/vendor/mockery/mockery/project_docs/readme.md)
 * [README.md](../../../chart/project_docs/readme.md)
 * [README.md](../../../reporting/project_docs/readme.md)
@@ -227,6 +261,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/One/docs/README.md)
 
 
+=======
+>>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -271,6 +307,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< HEAD
 
 
 ---
@@ -312,6 +349,10 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md) 
+=======
+- [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
+- [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -388,6 +429,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Cms/docs/frontoffice/README.md)
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../../Themes/One/docs/README.md)
 [![Module](https://img.shields.io/badge/Module-Gestione delle Eccezioni-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -421,3 +463,6 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+* [README.md](../../../../Themes/One/docs/README.md)
+>>>>>>> laraxot/dev

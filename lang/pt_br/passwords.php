@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/pt_br/passwords.php
+>>>>>>> laraxot/dev
 return [
     'password' => 'A senha deverá conter pelo menos seis carateres e ser igual à confirmação.',
     'reset' => 'Sua senha foi redefinida!',

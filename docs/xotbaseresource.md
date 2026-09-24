@@ -25,7 +25,11 @@ Questo significa che:
 ### Metodi Astratti
 
 ```php
+<<<<<<< HEAD
 abstract public function getFormSchema(): array;
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -59,7 +63,11 @@ class NotificationResource extends XotBaseResource
 {
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('title')

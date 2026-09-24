@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# Xot
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "Readme"
 type: reference
@@ -5,6 +18,13 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 # Standard di Codice
 
@@ -21,6 +41,10 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -139,6 +163,11 @@ class Doctor extends User
 
 ---
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -171,7 +200,14 @@ class Doctor extends User
 
 ---
 
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
 # Standard di Codice
@@ -189,6 +225,13 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
+=======
+=======
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -236,7 +279,14 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../Dental/docs/README.md)
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
+=======
+<<<<<<< HEAD
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -300,8 +350,17 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+<<<<<<< HEAD
 // Aggiungere qui altri moduli se necessario
 
+=======
+<<<<<<< HEAD
+// Aggiungere qui altri moduli se necessario
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -336,3 +395,13 @@ class Doctor extends User
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+- [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
+// Aggiungere qui altri moduli se necessario
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

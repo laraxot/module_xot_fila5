@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/en/pagination.php
+>>>>>>> laraxot/dev
 return [
     'previous' => '&laquo; Previous',
     'next' => 'Next &raquo;',

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 name: 37-residuo-domani
 description: "Status: TODO — sub-agent assegnato (swarm 36-40)"
@@ -5,6 +11,15 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # BMAD Story 37 — Residuo PHPStan (continuazione domani)
 **Status:** TODO — sub-agent assegnato (swarm 36-40)
 **Regola:** XotBaseResource NON ha getFormSchema(); solo Schema Form; no GatedXotBasePage; no @phpstan-ignore

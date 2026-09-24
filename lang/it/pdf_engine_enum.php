@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'values' => [
         'spipu' => [
@@ -17,6 +18,12 @@ return [
             'description' => 'Motore PDF basato su DomPDF per documenti HTML/CSS',
         ],
     ],
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/pdf_engine_enum.php
+return [
+>>>>>>> laraxot/dev
     'label' => 'Motore PDF',
     'options' => [
         'spipu' => 'Spipu',
@@ -53,7 +60,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'spipu' => ['label' => 'spipu', 'placeholder' => 'spipu', 'helper_text' => 'spipu', 'description' => 'spipu'],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
@@ -66,5 +76,8 @@ return [
             'label' => 'Elimina Pdf Engine Enum',
         ],
     ],
+<<<<<<< HEAD
     'test' => 'pdf engine enum',
+=======
+>>>>>>> laraxot/dev
 ];

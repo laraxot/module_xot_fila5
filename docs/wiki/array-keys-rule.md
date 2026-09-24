@@ -79,7 +79,11 @@ public static function getTableColumns(): array
 
 ### Form
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'title' => TextInput::make('title')->required()->maxLength(255),
@@ -91,7 +95,11 @@ public function getFormSchema(): array
 
 ### Infolist
 ```php
+<<<<<<< HEAD
 public function getInfolistSchema(): array
+=======
+public static function getInfolistSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'title' => TextEntry::make('title'),

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Piano di Risoluzione Conflitti Git"
 module: "Xot"
@@ -9,6 +10,8 @@ qmd: "conflict resolution plan"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Piano di Risoluzione Conflitti Git
 
 ## Panoramica

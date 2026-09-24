@@ -30,10 +30,25 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< HEAD
 
 
 ## Contenuto originale (txt)
 =======
+=======
+<<<<<<< HEAD
+
+
+## Contenuto originale (txt)
+<<<<<<< HEAD
+
+>>>>>>> .merge_file_bMOZuq
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> .merge_file_bMOZuq
+>>>>>>> laraxot/dev
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 ---
@@ -44,3 +59,8 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

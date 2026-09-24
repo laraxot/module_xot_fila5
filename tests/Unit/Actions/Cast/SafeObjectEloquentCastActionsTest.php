@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Models\XotBaseModel;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -27,6 +28,22 @@ test('safe object cast action works', function (): void {
 
         public mixed $null_val;
 
+=======
+use PHPUnit\Framework\Assert;
+
+uses(Modules\Xot\Tests\TestCase::class);
+
+test('safe object cast action works', function (): void {
+    $action = app(SafeObjectCastAction::class);
+    $obj = new class {
+        public string $str = 'test';
+        public int $int = 123;
+        public float $float = 12.3;
+        public bool $bool = true;
+        /** @var array<string, int> */
+        public array $arr = ['a' => 1];
+        public mixed $null_val;
+>>>>>>> laraxot/dev
         public string $empty_str = '';
 
         public function testMethod(mixed $p): mixed
@@ -65,8 +82,12 @@ test('safe object cast action works', function (): void {
 
 test('safe eloquent cast action works', function (): void {
     $action = app(SafeEloquentCastAction::class);
+<<<<<<< HEAD
     $model = new class extends XotBaseModel
     {
+=======
+    $model = new class extends XotBaseModel {
+>>>>>>> laraxot/dev
         protected $attributes = [
             'str' => 'test',
             'int' => 123,
@@ -94,7 +115,11 @@ test('safe eloquent cast action works', function (): void {
         return $v > 100;
     }));
     Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (mixed $v): bool {
+<<<<<<< HEAD
         return $v === 123;
+=======
+        return 123 === $v;
+>>>>>>> laraxot/dev
     }));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'str', 'null_val', 'string'));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'null_val', 'str', 'string'));

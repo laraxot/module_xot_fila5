@@ -144,7 +144,11 @@ describe('Event Management', function () {
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'details' => Section::make('Details')

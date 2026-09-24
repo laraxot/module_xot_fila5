@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/nl/auth.php
+>>>>>>> laraxot/dev
 return [
     'failed' => 'Toegangsgegevens niet gevonden',
     'general_error' => 'Je hebt niet de rechten om dat te doen.',

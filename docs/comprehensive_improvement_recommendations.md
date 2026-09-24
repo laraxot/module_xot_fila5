@@ -702,6 +702,7 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
+<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 
 ---
@@ -2124,3 +2125,6 @@ class ContactNotificationService
 ```
 
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> laraxot/dev

@@ -6,10 +6,18 @@ namespace Modules\Xot\Actions\Arrays;
 
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match;
 
+=======
+
+use function Safe\preg_match;
+
+use Spatie\QueueableAction\QueueableAction;
+
+>>>>>>> laraxot/dev
 /**
  * Converte un array PHP in RawJs (oggetto JavaScript) sicuro per attributi HTML.
  *
@@ -24,7 +32,11 @@ class ArrayToRawJsAction
     /**
      * Converte l'array in una stringa JavaScript (oggetto letterale) e restituisce RawJs.
      *
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
+=======
+     * @param array<int|string, mixed> $array Array associativo (anche annidato); valori RawJs restano raw
+>>>>>>> laraxot/dev
      */
     public function execute(array $array): RawJs
     {

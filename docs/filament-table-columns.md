@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regola Generale: Metodo getTableColumns per Filament Table (Xot)"
 module: "Xot"
@@ -9,6 +10,8 @@ qmd: "filament table columns"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
 ## Regola

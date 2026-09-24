@@ -2,12 +2,21 @@
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
 
+<<<<<<< HEAD
 **NON è stato modificato** `/var/www/html/_bases/<directory progetto>/laravel/phpstan.neon`
 
 ## Analisi Completa
 
 **Totale Errori**: 776  
 **Livello PHPStan**: 9  
+=======
+**NON è stato modificato** `phpstan.neon`
+
+## Analisi Completa
+
+**Totale Errori**: 776
+**Livello PHPStan**: 9
+>>>>>>> laraxot/dev
 **Data Analisi**: 18 Agosto 2025
 
 ## Categorizzazione Errori
@@ -188,6 +197,11 @@ class MyModel extends BaseModel
 
 ---
 
+<<<<<<< HEAD
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso  
 **phpstan.neon**: ✅ INTOCCATO  
+=======
+**Stato**: 🔄 Analisi Completata - Correzioni in Corso
+**phpstan.neon**: ✅ INTOCCATO
+>>>>>>> laraxot/dev
 **Approccio**: DRY + KISS + Type Safety

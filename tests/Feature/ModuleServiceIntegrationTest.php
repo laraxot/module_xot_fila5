@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
@@ -13,11 +14,21 @@ use function Safe\class_uses;
 uses(TestCase::class);
 
 describe('GetAllModelsByModuleNameAction Integration', function () {
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
+use PHPUnit\Framework\Assert;
+
+describe('GetAllModelsByModuleNameAction integration', function () {
+>>>>>>> laraxot/dev
     it('integrates with Nwidart Modules system', function () {
         Assert::assertTrue(class_exists('Nwidart\Modules\Facades\Module'));
         Assert::assertTrue(class_exists('Nwidart\Modules\Module'));
     });
 
+<<<<<<< HEAD
     it('can find existing modules', function () {
         $action = app(GetAllModelsByModuleNameAction::class);
 
@@ -43,6 +54,13 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
 
         $hasUserModels = false;
         foreach (array_values($models) as $modelClass) {
+=======
+    it('returns models from existing modules', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('User');
+
+        $hasUserModels = false;
+        foreach ($models as $modelClass) {
+>>>>>>> laraxot/dev
             if (str_contains($modelClass, 'User\\Models\\')) {
                 $hasUserModels = true;
                 break;
@@ -52,6 +70,7 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
         Assert::assertTrue($hasUserModels);
     });
 
+<<<<<<< HEAD
     it('filters abstract models correctly', function () {
         $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
@@ -61,6 +80,15 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
     });
 
     it('returns class strings as keys and values', function () {
+=======
+    it('filters abstract models', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        Assert::assertStringNotContainsString('base_model', implode(',', array_keys($models)));
+    });
+
+    it('returns class strings as values', function () {
+>>>>>>> laraxot/dev
         $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
         foreach ($models as $key => $modelClass) {
@@ -70,6 +98,7 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
         }
     });
 
+<<<<<<< HEAD
     it('handles reflection operations safely', function () {
         $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
@@ -131,11 +160,25 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
     });
 
     it('can be resolved from the Laravel service container', function () {
+=======
+    it('returns empty array for unknown module', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('NonExistentModule');
+
+        Assert::assertSame([], $models);
+    });
+
+    it('handles snake_case conversion', function () {
+        Assert::assertSame('test_model_name', Str::snake('TestModelName'));
+    });
+
+    it('resolves via service container', function () {
+>>>>>>> laraxot/dev
         $action = app(GetAllModelsByModuleNameAction::class);
 
         Assert::assertInstanceOf(GetAllModelsByModuleNameAction::class, $action);
     });
 
+<<<<<<< HEAD
     it('returns consistent results across repeated calls', function () {
         $action = app(GetAllModelsByModuleNameAction::class);
         $results = [
@@ -176,5 +219,13 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
         $executionTime = microtime(true) - $startTime;
 
         Assert::assertLessThan(5.0, $executionTime);
+=======
+    it('returns consistent results on repeated calls', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+        $first = $action->execute('Xot');
+        $second = $action->execute('Xot');
+
+        Assert::assertSame($first, $second);
+>>>>>>> laraxot/dev
     });
 });

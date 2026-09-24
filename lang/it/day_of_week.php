@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'values' => [
         1 => [
@@ -47,6 +48,12 @@ return [
             'description' => 'Giorno di riposo settimanale',
         ],
     ],
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/day_of_week.php
+return [
+>>>>>>> laraxot/dev
     'label' => 'Giorno della Settimana',
     'options' => [
         1 => 'Lunedì',
@@ -88,6 +95,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         1 => ['label' => '1', 'placeholder' => '1', 'helper_text' => '1', 'description' => '1'],
         2 => ['label' => '2', 'placeholder' => '2', 'helper_text' => '2', 'description' => '2'],
         3 => ['label' => '3', 'placeholder' => '3', 'helper_text' => '3', 'description' => '3'],
@@ -100,5 +108,18 @@ return [
         'create' => ['label' => 'Crea Day Of Week'],
         'edit' => ['label' => 'Modifica Day Of Week'],
         'delete' => ['label' => 'Elimina Day Of Week'],
+=======
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Day Of Week',
+        ],
+        'edit' => [
+            'label' => 'Modifica Day Of Week',
+        ],
+        'delete' => [
+            'label' => 'Elimina Day Of Week',
+        ],
+>>>>>>> laraxot/dev
     ],
 ];

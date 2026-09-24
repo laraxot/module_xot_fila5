@@ -13,7 +13,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  MockInterface&Table  $tableMock
+=======
+ * @param MockInterface&Table $tableMock
+ *
+>>>>>>> laraxot/dev
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface
@@ -26,7 +31,10 @@ function stubTableChain(MockInterface $tableMock): MockInterface
         'filters',
         'filtersLayout',
         'filtersFormColumns',
+<<<<<<< HEAD
         'deferFilters',
+=======
+>>>>>>> laraxot/dev
         'persistFiltersInSession',
         'headerActions',
         'actions',
@@ -63,7 +71,12 @@ it('tests table method with all methods implemented', function (): void {
     /** @var HasTableWithXotTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithXotTestClass::class)
         ->makePartial()
+<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
+=======
+        ->shouldAllowMockingProtectedMethods()
+        ->shouldDeferMissing();
+>>>>>>> laraxot/dev
     $mock->allows([
         'getTableHeaderActions' => [],
         'getTableActions' => [],
@@ -95,7 +108,12 @@ it('tests table method with no optional methods implemented', function (): void 
     /** @var HasTableWithoutOptionalMethodsTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)
         ->makePartial()
+<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
+=======
+        ->shouldAllowMockingProtectedMethods()
+        ->shouldDeferMissing();
+>>>>>>> laraxot/dev
     $mock->allows([
         'getModelClass' => DummyTestModel::class,
         'getTableRecordTitleAttribute' => 'name',

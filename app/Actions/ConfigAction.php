@@ -11,14 +11,32 @@ class ConfigAction
 {
     private static ?self $instance = null;
 
+<<<<<<< HEAD
     public function __construct()
     {
     }
+=======
+<<<<<<< HEAD
+    public function __construct()
+    {
+    }
+=======
+    public function __construct() {}
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     public static function getInstance(): self
     {
         if (! self::$instance instanceof self) {
+<<<<<<< HEAD
             self::$instance = new self();
+=======
+<<<<<<< HEAD
+            self::$instance = new self();
+=======
+            self::$instance = new self;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         }
 
         return self::$instance;

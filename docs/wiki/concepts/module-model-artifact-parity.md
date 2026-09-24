@@ -37,7 +37,11 @@ Gate sessione: `run-session-gate.sh` §1.1c.
 ## Esclusi dal conteggio
 
 - `abstract` / `Base*`
+<<<<<<< HEAD
 - `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
+=======
+- `TestModel`, `TestSushiModel`
+>>>>>>> laraxot/dev
 - Wrapper cross-modulo (es. `Predict\Models\User`)
 
 ## Backlog migrazioni
@@ -47,6 +51,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 ## Collegamenti
 
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+<<<<<<< HEAD
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
 
@@ -87,3 +92,5 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 - [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
 - [data-sacred](../../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md)
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+=======
+>>>>>>> laraxot/dev

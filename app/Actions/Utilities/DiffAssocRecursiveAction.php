@@ -13,9 +13,22 @@ class DiffAssocRecursiveAction
     /**
      * Recursively compute difference of arrays with additional index check.
      *
+<<<<<<< HEAD
      * @param array<int|string, mixed> $array1
      * @param array<int|string, mixed> $array2
      *
+=======
+     * <<<<<<< HEAD
+     *
+     * @param array<int|string, mixed> $array1
+     * @param array<int|string, mixed> $array2
+     *
+     * =======
+     * @param array<int|string, mixed> $array1
+     * @param array<int|string, mixed> $array2
+     *                                         >>>>>>> laraxot/dev
+     *
+>>>>>>> laraxot/dev
      * @return array<int|string, mixed>
      */
     public function execute(array $array1, array $array2): array

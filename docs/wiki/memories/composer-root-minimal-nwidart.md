@@ -4,7 +4,11 @@ type: memory
 module: Xot
 tags: [composer, xot, nwidart, merge-plugin, skeleton]
 created: 2026-07-09
+<<<<<<< HEAD
 updated: 2026-07-09
+=======
+updated: 2026-07-13
+>>>>>>> laraxot/dev
 qmd: "Xot composer root skeleton merge-plugin moduli owner vendor unico composer update -W"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/30"
@@ -27,6 +31,21 @@ Quando un agente installa un pacchetto:
 - infrastruttura condivisa (Filament, Folio, PHPStan, Pest) → `Modules/Xot/composer.json`
 - dominio verticale → modulo owner (es. event sourcing → Activity)
 
+<<<<<<< HEAD
 Workflow unico: `rm -rf Modules/<Owner>/vendor` poi `cd laravel && composer update -W`.
+=======
+Workflow unico: `rm -rf Modules/<Owner>/vendor` poi `cd laravel && composer go`.
+
+## Pin L13 (2026-07-13)
+
+| Pacchetto | Modulo owner | Constraint |
+|-----------|--------------|------------|
+| `larastan/larastan` | Xot, AI, Seo | `^3.9` (L13 da v3.9.3+) |
+| `codewithdennis/filament-select-tree` | Blog | `^4.0.17` (L13 da v4.0.17) |
+| `rector/rector` + `driftingly/rector-laravel` | AI | `^2.2.7` / `^2.5` |
+| `livewire/livewire` | Xot | `^4.3` |
+
+Root `allow-plugins`: `codewithkyrian/transformers-libsloader` (modulo AI).
+>>>>>>> laraxot/dev
 
 Canon: [composer-root-skeleton-modular](../concepts/composer-root-skeleton-modular.md)

@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/zh-CN/messages.php
+>>>>>>> laraxot/dev
 return [
     'title' => 'Laravel安装程序',
     'next' => '下一步',

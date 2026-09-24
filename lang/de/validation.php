@@ -2,7 +2,22 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/de/validation.php
+return [
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> laraxot/dev
     'accepted' => ':attribute must Akzeptert werden.',
     'active_url' => ':attribute ist keine gültige URL.',
     'after' => ':attribute muss ein Datun nach dem :date sein.',

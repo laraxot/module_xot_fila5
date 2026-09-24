@@ -7,10 +7,13 @@ namespace Modules\Xot\Tests;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Cache;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -21,7 +24,11 @@ use function Safe\preg_match;
 final class XotForkedInvoke
 {
     /**
+<<<<<<< HEAD
      * @param  list<string>  $denyMethodRegexes
+=======
+     * @param list<string> $denyMethodRegexes
+>>>>>>> laraxot/dev
      */
     public static function sweepClass(
         string $class,
@@ -33,7 +40,11 @@ final class XotForkedInvoke
             return 0;
         }
 
+<<<<<<< HEAD
         $ref = new ReflectionClass($class);
+=======
+        $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
 
         if ($ref->isInterface()) {
             return 0;
@@ -45,7 +56,11 @@ final class XotForkedInvoke
             return self::sweepEnum($class, $timeoutSeconds);
         }
 
+<<<<<<< HEAD
         if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
+=======
+        if (null === $instance && ! $ref->isAbstract() && ! $ref->isTrait()) {
+>>>>>>> laraxot/dev
             try {
                 $instance = $ref->newInstanceWithoutConstructor();
                 if ($instance instanceof Model) {
@@ -62,7 +77,11 @@ final class XotForkedInvoke
             }
         }
 
+<<<<<<< HEAD
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+        foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+>>>>>>> laraxot/dev
             if ($method->getDeclaringClass()->getName() !== $class) {
                 continue;
             }
@@ -95,14 +114,22 @@ final class XotForkedInvoke
                     $method->setAccessible(true);
                     if ($method->isStatic()) {
                         $method->invoke(null, ...$args);
+<<<<<<< HEAD
                     } elseif ($instance !== null) {
+=======
+                    } elseif (null !== $instance) {
+>>>>>>> laraxot/dev
                         $method->invoke($instance, ...$args);
                     }
                 },
                 $timeoutSeconds,
             );
             if ($ok) {
+<<<<<<< HEAD
                 $executed++;
+=======
+                ++$executed;
+>>>>>>> laraxot/dev
             }
         }
 
@@ -110,7 +137,11 @@ final class XotForkedInvoke
     }
 
     /**
+<<<<<<< HEAD
      * @param  class-string  $enumClass
+=======
+     * @param class-string $enumClass
+>>>>>>> laraxot/dev
      */
     private static function sweepEnum(string $enumClass, int $timeoutSeconds): int
     {
@@ -125,7 +156,11 @@ final class XotForkedInvoke
                         continue;
                     }
                     if (self::invokeWithTimeout(static fn () => $case->{$m}(), $timeoutSeconds)) {
+<<<<<<< HEAD
                         $executed++;
+=======
+                        ++$executed;
+>>>>>>> laraxot/dev
                     }
                 }
             }
@@ -133,6 +168,7 @@ final class XotForkedInvoke
                 if (! method_exists($enumClass, $sm)) {
                     continue;
                 }
+<<<<<<< HEAD
                 $method = new ReflectionMethod($enumClass, $sm);
                 if (self::invokeWithTimeout(static fn () => $method->invoke(null), $timeoutSeconds)) {
                     $executed++;
@@ -140,6 +176,15 @@ final class XotForkedInvoke
             }
         } catch (\Throwable) {
             $executed++;
+=======
+                $method = new \ReflectionMethod($enumClass, $sm);
+                if (self::invokeWithTimeout(static fn () => $method->invoke(null), $timeoutSeconds)) {
+                    ++$executed;
+                }
+            }
+        } catch (\Throwable) {
+            ++$executed;
+>>>>>>> laraxot/dev
         }
 
         return $executed;
@@ -148,7 +193,11 @@ final class XotForkedInvoke
     /**
      * @return list<mixed>
      */
+<<<<<<< HEAD
     public static function defaultArgs(ReflectionMethod $method): array
+=======
+    public static function defaultArgs(\ReflectionMethod $method): array
+>>>>>>> laraxot/dev
     {
         $args = [];
         foreach ($method->getParameters() as $param) {
@@ -159,6 +208,7 @@ final class XotForkedInvoke
             }
             $type = $param->getType();
             $name = $param->getName();
+<<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
                 $tn = $type->getName();
                 $args[] = match (true) {
@@ -174,6 +224,23 @@ final class XotForkedInvoke
                             $m = new Cache;
                         } else {
                             $m = new $tn;
+=======
+            if ($type instanceof \ReflectionNamedType) {
+                $tn = $type->getName();
+                $args[] = match (true) {
+                    'string' === $tn => str_contains(strtolower($name), 'class')
+                        ? Cache::class
+                        : (str_contains(strtolower($name), 'email') ? 'a@b.c' : 'test'),
+                    'array' === $tn => [],
+                    'bool' === $tn => true,
+                    'int' === $tn => 1,
+                    'float' === $tn => 1.0,
+                    is_a($tn, Model::class, true) => (static function () use ($tn): Model {
+                        if (Model::class === $tn || (new \ReflectionClass($tn))->isAbstract()) {
+                            $m = new Cache();
+                        } else {
+                            $m = new $tn();
+>>>>>>> laraxot/dev
                         }
                         $m->setRawAttributes(['id' => 1, 'key' => 'k', 'value' => 'v']);
 
@@ -202,7 +269,11 @@ final class XotForkedInvoke
         }
 
         $pid = pcntl_fork();
+<<<<<<< HEAD
         if ($pid === -1) {
+=======
+        if (-1 === $pid) {
+>>>>>>> laraxot/dev
             try {
                 $fn();
 
@@ -212,7 +283,11 @@ final class XotForkedInvoke
             }
         }
 
+<<<<<<< HEAD
         if ($pid === 0) {
+=======
+        if (0 === $pid) {
+>>>>>>> laraxot/dev
             // child
             pcntl_alarm($timeoutSeconds);
             try {
@@ -228,11 +303,19 @@ final class XotForkedInvoke
         $waited = 0;
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
+<<<<<<< HEAD
             if ($res === -1 || $res > 0) {
                 return $res > 0 && is_int($status) && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
             }
             usleep(100_000);
             $waited++;
+=======
+            if (-1 === $res || $res > 0) {
+                return $res > 0 && is_int($status) && pcntl_wifexited($status) && 0 === pcntl_wexitstatus($status);
+            }
+            usleep(100_000);
+            ++$waited;
+>>>>>>> laraxot/dev
         }
         posix_kill($pid, SIGKILL);
         pcntl_waitpid($pid, $status);
@@ -241,8 +324,13 @@ final class XotForkedInvoke
     }
 
     /**
+<<<<<<< HEAD
      * @param  list<string>  $relativeDirs  relative to app/
      * @param  list<string>  $denyMethodRegexes
+=======
+     * @param list<string> $relativeDirs      relative to app/
+     * @param list<string> $denyMethodRegexes
+>>>>>>> laraxot/dev
      */
     public static function sweepDirs(
         string $appRoot,
@@ -272,7 +360,11 @@ final class XotForkedInvoke
                 if (microtime(true) > $deadline) {
                     break 2;
                 }
+<<<<<<< HEAD
                 if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
+=======
+                if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
+>>>>>>> laraxot/dev
                     continue;
                 }
                 if (str_contains($file->getFilename(), '.php-cs-fixer') || str_contains($file->getFilename(), '.blade.')) {

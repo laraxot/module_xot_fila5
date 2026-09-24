@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Skill: Troubleshooting Filament Edit Forms in XotBaseManageRelatedRecords"
 module: "Xot"
@@ -9,6 +10,8 @@ qmd: "troubleshooting filament edit forms"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Skill: Troubleshooting Filament Edit Forms in XotBaseManageRelatedRecords
 
 ## Contesto del Problema

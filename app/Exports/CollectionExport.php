@@ -37,8 +37,13 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public ?array $fields = null;
 
     /**
+<<<<<<< HEAD
      * @param  SupportCollection<int, mixed>|EloquentCollection<int, Model>  $collection
      * @param  array<int, string>  $fields
+=======
+     * @param SupportCollection<int, mixed>|EloquentCollection<int, Model> $collection
+     * @param array<int, string>                                           $fields
+>>>>>>> laraxot/dev
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -87,6 +92,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
      */
     public function map(mixed $row): array
     {
+<<<<<<< HEAD
         if ($this->fields === null || empty($this->fields)) {
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
@@ -102,20 +108,60 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
                 return SafeStringCastAction::cast($value);
             }));
+=======
+        if (null === $this->fields || empty($this->fields)) {
+            Assert::isInstanceOf($row, Model::class);
+            $res = app(SafeArrayByModelCastAction::class)->execute($row);
+
+            return array_values(Arr::map($res, fn (mixed $value, mixed $_key): string => self::stringifyExportValue($value)));
+>>>>>>> laraxot/dev
         }
 
         $data = [];
 
         foreach ($this->fields as $field) {
             $value = data_get($row, $field);
+<<<<<<< HEAD
             if (\is_object($value)) {
                 if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
                     $value = $value->getLabel();
                 }
             }
             $data[] = SafeStringCastAction::cast($value);
+=======
+            $data[] = SafeStringCastAction::cast(self::normalizeExportFieldValue($value));
+>>>>>>> laraxot/dev
         }
 
         return $data;
     }
+<<<<<<< HEAD
+=======
+
+    private static function stringifyExportValue(mixed $value): string
+    {
+        if ($value instanceof \BackedEnum) {
+            if (method_exists($value, 'getLabel')) {
+                return SafeStringCastAction::cast($value->getLabel());
+            }
+
+            return SafeStringCastAction::cast($value->value);
+        }
+
+        return SafeStringCastAction::cast($value);
+    }
+
+    private static function normalizeExportFieldValue(mixed $value): mixed
+    {
+        if (! \is_object($value)) {
+            return $value;
+        }
+
+        if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
+            return $value->getLabel();
+        }
+
+        return $value;
+    }
+>>>>>>> laraxot/dev
 }

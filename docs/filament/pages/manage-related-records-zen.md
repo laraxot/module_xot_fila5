@@ -23,4 +23,8 @@
 - "A relation is a bridge between two worlds; the bridge must be clean."
 - "Translate the intent, not just the word."
 - "Visual hierarchy is the silent architecture of clarity."
+<<<<<<< HEAD
 - "A sexy UI is a Predictable UI."
+=======
+- "A sexy UI is a <nome progetto>able UI."
+>>>>>>> laraxot/dev

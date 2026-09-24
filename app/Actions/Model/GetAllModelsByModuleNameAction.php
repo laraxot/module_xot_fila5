@@ -1,11 +1,26 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Actions\Model;
 
 use Illuminate\Support\Facades\File;

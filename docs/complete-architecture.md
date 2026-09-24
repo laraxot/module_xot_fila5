@@ -15,7 +15,11 @@
 Laraxot is built on the **DRY (Don't Repeat Yourself)** and **KISS (Keep It Simple, Stupid)** principles with a strong emphasis on:
 
 - **Modularity**: Everything is organized into independent modules
+<<<<<<< HEAD
 - **Inheritance Chain**: Clear, Predictable inheritance patterns
+=======
+- **Inheritance Chain**: Clear, <nome progetto>able inheritance patterns
+>>>>>>> laraxot/dev
 - **Convention over Configuration**: Predefined patterns that reduce decision-making
 - **Separation of Concerns**: Clear boundaries between different system components
 
@@ -124,7 +128,11 @@ Filament Resource → XotBaseResource → FilamentResource
 
 ### Required Implementation
 ```php
+<<<<<<< HEAD
 abstract public function getFormSchema(): array
+=======
+abstract public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 ```
 
 ### Page Generation
@@ -183,4 +191,8 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Inheritance over Composition**: Clear inheritance chains for maintainability
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
+<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a Predictable, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
+=======
+This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
+>>>>>>> laraxot/dev

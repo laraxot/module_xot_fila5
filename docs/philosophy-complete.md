@@ -315,11 +315,19 @@ TextInput::make('name')
     ->placeholder('Inserisci nome'); // Hardcoded!
 ```
 
+<<<<<<< HEAD
 #### 5. Mai Creare Services / Support — Solo QueueableActions
 
 **Comandamento**: Mai creare file in `app/Services/` o `app/Support/`. Usare sempre `app/Actions/` con Spatie QueueableAction. Multi-metodo su contratti/framework → `app/Adapters/`.
 
 **Violazione**: Creare Services o Support è eresia architetturale.
+=======
+#### 5. Mai Creare Services
+
+**Comandamento**: Mai creare Services. Sempre QueueableActions.
+
+**Violazione**: Creare Services è eresia.
+>>>>>>> laraxot/dev
 
 **Manifestazione**:
 ```php
@@ -342,6 +350,7 @@ class UserService
         // Services sono deprecati!
     }
 }
+<<<<<<< HEAD
 
 // ❌ ERESIA: Support helper statico
 class UserSupport
@@ -363,6 +372,10 @@ class UserSupport
 - **No `app/Support/`**: helper statici di dominio violano il pattern Action
 - **Migrazione 2026-07-12/13**: tutti i moduli e Sixteen hanno eliminato Services/Support
 
+=======
+```
+
+>>>>>>> laraxot/dev
 #### 6. Mai Usare `property_exists()` nei Modelli
 
 **Comandamento**: Mai usare `property_exists()` per magic attributes Eloquent. Sempre `isset()`.
@@ -501,24 +514,38 @@ Modules/MyModule/database/MyModel.php // SBAGLIATO!
 - File traduzioni strutturati
 - Auto-discovery traduzioni
 
+<<<<<<< HEAD
 #### 6. Actions Over Services / Support
 
 **Decisione**: QueueableActions invece di Services o Support.
+=======
+#### 6. Actions Over Services
+
+**Decisione**: QueueableActions invece di Services.
+>>>>>>> laraxot/dev
 
 **Motivazione**:
 - Actions sono single-purpose
 - Actions sono queueable
 - Actions sono testabili
 - Actions seguono SOLID
+<<<<<<< HEAD
 - `app/Support/` incoraggia helper statici che violano SRP
 - `app/Services/` diventa facade multi-metodo non referenziabili
+=======
+>>>>>>> laraxot/dev
 
 **Manifestazione**:
 - Tutte le operazioni business sono Actions
 - Actions usano Spatie QueueableActions
+<<<<<<< HEAD
 - `app/Services/` e `app/Support/` sono eliminati monorepo (2026-07-13)
 - Migrazione da Services/Support a Actions completata in tutti i moduli
 - `app(ClasseAction::class)->execute()` è l'unico modo per chiamare logica di dominio
+=======
+- Services sono deprecati
+- Migrazione da Services a Actions
+>>>>>>> laraxot/dev
 
 ### Governance
 

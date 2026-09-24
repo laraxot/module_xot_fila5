@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 name: issue-01-table-trans
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -5,6 +11,15 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Issue GH #01 — Rimuovere TransTrait ridondante da XotBaseResourceTable
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

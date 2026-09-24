@@ -18,7 +18,11 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
+<<<<<<< HEAD
       public function getFormSchema(): array
+=======
+      public static function getFormSchema(): array
+>>>>>>> laraxot/dev
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -56,7 +60,12 @@ The Xot base classes provide a centralized way to customize and extend functiona
 
 ## Links to Related Documentation
 - [Code Quality](../Xot/docs/CODE_QUALITY.md)
+<<<<<<< HEAD
 - [Filament Extension Pattern](filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](filament_extension_pattern_analysis.md)
+=======
+- [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
+- [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
+>>>>>>> laraxot/dev
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)

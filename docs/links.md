@@ -48,7 +48,11 @@
 
 ### Sicurezza e Performance
 - [Security Guidelines](security-guidelines.md) - Linee guida per la sicurezza
+<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
+=======
+- [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
+>>>>>>> laraxot/dev
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 

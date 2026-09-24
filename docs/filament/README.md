@@ -2,6 +2,7 @@
 
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
+<<<<<<< HEAD
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
@@ -85,6 +86,8 @@ $prefix = static::$translationPrefix;
 
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
+=======
+>>>>>>> laraxot/dev
 ## File Contenuti
 
 - `resources.md` - Struttura delle risorse Filament
@@ -205,6 +208,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](docs/implementazione/reporting/README.md)
 * [README.md](docs/implementazione/isee/README.md)
 * [README.md](docs/it/README.md)
+<<<<<<< HEAD
 * [README.md](laravel/vendor/mockery/mockery/docs/README.md)
 * [README.md](../../../Chart/docs/README.md)
 * [README.md](../../../Reporting/docs/README.md)
@@ -249,6 +253,8 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/project_docs/README.md)
 * [README.md](../../../Chart/project_docs/README.md)
 * [README.md](../../../Reporting/project_docs/README.md)
@@ -320,6 +326,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Aggiornare la documentazione ogni volta che si corregge questo errore.
 
 ### Collegamento
+<<<<<<< HEAD
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
@@ -375,6 +382,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome modulo>/docs/filament-best-practices.mdc](../../../<nome modulo>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
+=======
+- Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+>>>>>>> laraxot/dev
 
 ### Checklist
 - [ ] Nessuna closure void restituisce un valore
@@ -408,6 +418,7 @@ $prefix = static::$translationPrefix;
 ```
 
 ## Moduli che fanno riferimento a questa regola
+<<<<<<< HEAD
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
@@ -618,3 +629,8 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+- [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
+- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+>>>>>>> laraxot/dev

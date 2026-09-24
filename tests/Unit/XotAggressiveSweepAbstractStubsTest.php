@@ -6,7 +6,10 @@ namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
+<<<<<<< HEAD
 use Mockery;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsCheckbox3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsGroup3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsRadio3;
@@ -17,13 +20,20 @@ use Modules\Xot\Tests\Fixtures\Stubs\XotAbsViewColumn3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsWizard3;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 describe('Xot abstract Filament stubs', function (): void {
@@ -44,12 +54,21 @@ describe('Xot abstract Filament stubs', function (): void {
             try {
                 $inst = method_exists($class, 'make')
                     ? $class::make('field')
+<<<<<<< HEAD
                     : (new ReflectionClass($class))->newInstanceWithoutConstructor();
                 Assert::assertIsObject($inst);
                 $n++;
                 $parent = (new ReflectionClass($class))->getParentClass();
                 if ($parent) {
                     foreach ($parent->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
+=======
+                    : (new \ReflectionClass($class))->newInstanceWithoutConstructor();
+                Assert::assertIsObject($inst);
+                ++$n;
+                $parent = (new \ReflectionClass($class))->getParentClass();
+                if ($parent) {
+                    foreach ($parent->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
+>>>>>>> laraxot/dev
                         if ($method->getDeclaringClass()->getName() !== $parent->getName()) {
                             continue;
                         }
@@ -70,15 +89,25 @@ describe('Xot abstract Filament stubs', function (): void {
                             } else {
                                 $method->invoke($inst, ...$args);
                             }
+<<<<<<< HEAD
                             $n++;
                         } catch (\Throwable) {
                             $n++;
+=======
+                            ++$n;
+                        } catch (\Throwable) {
+                            ++$n;
+>>>>>>> laraxot/dev
                         }
                     }
                 }
             } catch (\Throwable $e) {
                 Assert::assertNotEmpty($e->getMessage());
+<<<<<<< HEAD
                 $n++;
+=======
+                ++$n;
+>>>>>>> laraxot/dev
             }
         }
         Assert::assertGreaterThan(5, $n);

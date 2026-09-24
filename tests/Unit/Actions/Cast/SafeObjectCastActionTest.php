@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -10,6 +11,14 @@ uses(TestCase::class);
 
 it('manages object properties safely', function (): void {
     $obj = new stdClass;
+=======
+use PHPUnit\Framework\Assert;
+
+uses(Modules\Xot\Tests\TestCase::class);
+
+it('manages object properties safely', function (): void {
+    $obj = new stdClass();
+>>>>>>> laraxot/dev
     $obj->name = 'Test Object';
     $obj->id = 123;
     $obj->active = true;
@@ -54,8 +63,12 @@ it('manages object properties safely', function (): void {
         return $v > 200;
     }, 0));
     // Methods
+<<<<<<< HEAD
     $complexObj = new class
     {
+=======
+    $complexObj = new class {
+>>>>>>> laraxot/dev
         public function test(mixed $p): mixed
         {
             return $p;

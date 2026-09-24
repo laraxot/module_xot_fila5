@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;

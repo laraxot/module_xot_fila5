@@ -35,7 +35,11 @@ return new class extends XotBaseMigration
 ```
 
 ## Related Documentation
+<<<<<<< HEAD
 - [User Module Database Errors](database_errors.md)
+=======
+- [User Module Database Errors](../../User/docs/DATABASE_ERRORS.md)
+>>>>>>> laraxot/dev
 - [Xot Base Classes](../XOT_BASE_CLASSES.md)
 - [Code Quality](../CODE_QUALITY.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)

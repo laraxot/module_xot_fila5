@@ -16,7 +16,11 @@ abstract class XotBaseComponent extends IlluminateComponent
     /**
      * Undocumented variable.
      *
+<<<<<<< HEAD
      * @var array<string, mixed>
+=======
+     * @var array<mixed>
+>>>>>>> laraxot/dev
      */
     public array $attrs = [];
 

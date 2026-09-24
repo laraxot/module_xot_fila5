@@ -7,11 +7,20 @@ namespace Modules\Xot\Actions\Artisan;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match_all;
 
+=======
+
+use function Safe\preg_match_all;
+
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * Replaces Modules\Xot\Services\ArtisanService::errorShow().
  */
@@ -29,7 +38,11 @@ class ShowArtisanErrorLogAction
             $log = '';
         }
         $content = '';
+<<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+=======
+        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> laraxot/dev
             $content = File::get(storage_path('logs/'.$log));
         }
 

@@ -434,8 +434,11 @@ public function processData(): void
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
 - [Code Quality Standards](./code_quality_standards.md)
 - [Common Anti-Patterns](./common_anti_patterns.md)
+=======
+>>>>>>> laraxot/dev
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
 - [Testing Guidelines](./testing-guidelines.md)

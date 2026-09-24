@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use Modules\Xot\Tests\TestCase;
@@ -10,6 +11,14 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 uses(TestCase::class);
 
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+use Illuminate\Support\Facades\Facade;
+use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
+use PHPUnit\Framework\Assert;
+use Symfony\Component\HttpFoundation\StreamedResponse;
+
+>>>>>>> laraxot/dev
 it('builds a streamed pdf download response for the generic test view', function (): void {
     Facade::setFacadeApplication(app());
 

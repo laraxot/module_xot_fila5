@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Rapporto PHPStan Livello 9 per il modulo Xot"
 module: "Xot"
 type: concept
@@ -10,11 +11,16 @@ related:
   - "./eloquent-magic-properties-rule.md"
 ---
 ---
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: level
 canonical: ../../../Themes/docs/shared-components/level-9.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
+<<<<<<< HEAD
 
 See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
+=======
+>>>>>>> laraxot/dev

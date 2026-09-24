@@ -6,6 +6,10 @@ namespace Modules\Xot\Actions\File;
 
 use BladeUI\Icons\Factory as IconFactory;
 use Illuminate\Support\Facades\App;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 
 /**
  * Verifica l'esistenza di un SVG registrato utilizzando BladeUI Icons.
@@ -14,6 +18,11 @@ use Illuminate\Support\Facades\App;
  */
 class SvgExistsAction
 {
+<<<<<<< HEAD
+=======
+    use QueueableAction;
+
+>>>>>>> laraxot/dev
     /**
      * Verifica se l'SVG esiste nei set di icone registrati.
      *
@@ -27,6 +36,19 @@ class SvgExistsAction
             return false;
         }
 
+<<<<<<< HEAD
+=======
+        // BladeUI Kit icon check: only for standard sets (heroicon-*, etc.)
+        // Geo SVGs use "geo-" prefix (e.g., "geo-magnifying-glass") — served via <img> or Lit JS, not BladeUI Kit
+        if (str_starts_with($svgName, 'geo-')) {
+            // Geo SVGs are in Modules/Geo/resources/svg/ — check file existence directly
+            $relativePath = str_replace('geo-', '', $svgName);
+            $svgPath = base_path('Modules/Geo/resources/svg/'.$relativePath.'.svg');
+
+            return file_exists($svgPath);
+        }
+
+>>>>>>> laraxot/dev
         /** @var IconFactory $iconsFactory */
         $iconsFactory = App::make(IconFactory::class);
         try {

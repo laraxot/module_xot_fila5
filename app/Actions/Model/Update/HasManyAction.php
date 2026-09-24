@@ -40,7 +40,11 @@ class HasManyAction
     /**
      * Determine if the update is a direct update.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     private function isDirectUpdate(array $data): bool
     {
@@ -94,7 +98,11 @@ class HasManyAction
     /**
      * Clean up orphaned records after batch update.
      *
+<<<<<<< HEAD
      * @param  array<int, int|string>  $updatedIds
+=======
+     * @param array<int, int|string> $updatedIds
+>>>>>>> laraxot/dev
      */
     private function cleanupOrphanedRecords(
         RelationData $relationDTO,

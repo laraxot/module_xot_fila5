@@ -2,16 +2,34 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/module.php
+return [
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> laraxot/dev
     'navigation' => [
         'name' => 'Modulo',
         'plural' => 'Moduli',
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'Moduli',
         'icon' => 'heroicon-o-cube',
         'sort' => 65,
+=======
+>>>>>>> laraxot/dev
     ],
     'fields' => [
         'name' => [
@@ -108,12 +126,15 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'path' => [
             'label' => 'path',
         ],
         'enabled' => [
             'label' => 'enabled',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -135,6 +156,7 @@ return [
     'actions' => [
         'create' => [
             'label' => 'Crea Module',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -162,6 +184,14 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Module',
+        ],
+        'delete' => [
+            'label' => 'Elimina Module',
+>>>>>>> laraxot/dev
         ],
     ],
 ];

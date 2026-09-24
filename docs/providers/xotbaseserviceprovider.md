@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+---
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> laraxot/dev
 # XotBaseServiceProvider
 
 ## Descrizione
@@ -172,4 +180,8 @@ try {
 2. Il nome del modulo deve essere impostato nella classe figlia
 3. I percorsi sono relativi alla root del modulo
 4. Le eccezioni vengono gestite con fallback appropriati
+<<<<<<< HEAD
 5. La registrazione dei componenti è automatica ma configurabile
+=======
+5. La registrazione dei componenti è automatica ma configurabile
+>>>>>>> laraxot/dev

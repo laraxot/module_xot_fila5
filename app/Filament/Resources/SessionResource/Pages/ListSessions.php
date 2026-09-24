@@ -16,5 +16,49 @@ class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
 
+<<<<<<< HEAD
    
+=======
+    /**
+     * @return array<int, Stack>
+     */
+    #[\Override]
+    public function getGridTableColumns(): array
+    {
+        return [
+            Stack::make($this->getTableColumns()),
+        ];
+    }
+
+    /**
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
+    #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id')->sortable()->label('ID'),
+            'user_id' => TextColumn::make('user_id')
+                ->sortable()
+                ->searchable()
+                ->label('User ID'),
+            'ip_address' => TextColumn::make('ip_address')->searchable()->label('IP Address'),
+            'user_agent' => TextColumn::make('user_agent')
+                ->searchable()
+                ->wrap()
+                ->label('User Agent'),
+            'payload' => TextColumn::make('payload')
+                ->searchable()
+                ->wrap()
+                ->label('Payload'),
+            'last_activity' => TextColumn::make('last_activity')
+                ->dateTime()
+                ->sortable()
+                ->label('Last Activity'),
+        ];
+    }
+>>>>>>> laraxot/dev
 }

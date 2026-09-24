@@ -1,5 +1,6 @@
 # Risoluzione Problema con ai_init.sh
 
+<<<<<<< HEAD
 ## Stato attuale
 
 Questa nota descrive un modello ormai superato.
@@ -42,6 +43,8 @@ bash bashscripts/tools/sync-ide-junctions.sh
 
 `bashscripts/ai/ai_init.sh` va considerato legacy rispetto al modello SSoT
 `.agents`.
+=======
+>>>>>>> laraxot/dev
 ## Problema Risolto
 
 Lo script `./bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.

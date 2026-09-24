@@ -70,7 +70,11 @@ class MediaConvertResource extends XotBaseResource
      * Restituisce lo schema del form per la risorsa MediaConvert.
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             Radio::make('format')

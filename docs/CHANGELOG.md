@@ -5,6 +5,11 @@ Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<<<<<<< HEAD
+=======
+All notable changes to `:package_name` will be documented in this file.
+
+>>>>>>> laraxot/dev
 ## [Unreleased]
 
 ### Added
@@ -37,9 +42,19 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 #### Added
 - **File Locking Pattern** - Nuova regola fondamentale per modifiche sicure
 - **Documentazione:**
+<<<<<<< HEAD
   - `documentation-consolidation-strategy.md` - Piano riduzione docs
   - `index.md` - Indice navigazione docs
   - `essential-reading.md` - Top 10 docs da leggere
+=======
+  - `merge-conflict-resolution-2025-11-04.md` - Report tecnico
+  - `lessons-learned-2025-11-04-merge-conflicts.md` - Processo filosofico
+  - `file-locking-pattern.md` - Pattern documentation
+  - `documentation-consolidation-strategy.md` - Piano riduzione docs
+  - `index.md` - Indice navigazione 2,560 docs
+  - `essential-reading.md` - Top 10 docs da leggere
+  - `project-best-practices-2025.md` - Best practices aggiornate
+>>>>>>> laraxot/dev
 
 #### Removed
 - Centinaia di linee duplicate da merge conflicts
@@ -77,8 +92,13 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 - Type safety improvements (500+ type hints)
 
 ### Changed
+<<<<<<< HEAD
 - Migrazione a Laravel 12.x (superata da Laravel 13.x, vedi [README.md](./README.md))
 - Upgrade Filament 4.x (superato da Filament 5.x, vedi [README.md](./README.md))
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
 - Tailwind CSS 4.x implementation
 
 ---
@@ -97,6 +117,7 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 
 ---
 
+<<<<<<< HEAD
 ## Sessione Fix Critica - 2025-06-04
 
 *(voce cronologicamente precedente alla 1.1.0, conservata per storia: proveniva da un file
@@ -117,6 +138,8 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 
 ---
 
+=======
+>>>>>>> laraxot/dev
 ## Pattern di Versioning
 
 ### Major (x.0.0)
@@ -139,6 +162,7 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 ## 🔗 Collegamenti
 
 ### Documenti Correlati
+<<<<<<< HEAD
 - [README.md](./README.md) - Entry point
 - [File Locking Pattern](./file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./laraxot-architecture-rules.md) - Regole base
@@ -170,3 +194,21 @@ identificabile con certezza come quella citata, quindi non collegata a caso). Ag
 i valori "Repository" (branch/Laravel/PHP/Filament) ai valori correnti verificati nel
 codice al momento di questa modifica; le voci di versione storiche sopra non sono state
 alterate. Vedi anche la nota gemella in [README.md](./README.md).*
+=======
+- [README.md](./docs/README.md) - Entry point
+- [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
+- [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
+- [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+
+### Repository
+- **Branch:** develop
+- **Laravel:** 12.x
+- **PHP:** 8.3.25
+- **Filament:** 4.x
+
+---
+
+**Maintained by:** Team Laraxot PTVX
+**Format:** [Keep a Changelog](https://keepachangelog.com/)
+**Versioning:** [Semantic Versioning](https://semver.org/)
+>>>>>>> laraxot/dev

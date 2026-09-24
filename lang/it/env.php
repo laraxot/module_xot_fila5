@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/env.php
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Env',
@@ -9,9 +15,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'Variabili Ambiente',
         'icon' => 'heroicon-o-cog-6-tooth',
         'sort' => 94,
+=======
+>>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +58,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'app_url' => [
             'label' => 'app_url',
             'placeholder' => 'app_url',
@@ -73,6 +83,8 @@ return [
             'helper_text' => 'telegram_bot_token',
             'description' => 'telegram_bot_token',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
@@ -84,6 +96,7 @@ return [
         'delete' => [
             'label' => 'Elimina Env',
         ],
+<<<<<<< HEAD
         'save' => [
             'label' => 'save',
             'icon' => 'save',
@@ -91,4 +104,7 @@ return [
         ],
     ],
     'title' => 'env',
+=======
+    ],
+>>>>>>> laraxot/dev
 ];

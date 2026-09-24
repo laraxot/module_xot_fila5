@@ -249,7 +249,11 @@ class MyResource extends XotBaseResource
 class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),

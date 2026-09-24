@@ -37,6 +37,7 @@ test('widget can be rendered', function () {
 function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
+<<<<<<< HEAD
     
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\SaluteOra\Models\User::class);
@@ -44,6 +45,15 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
     
+=======
+
+    $mockXotData->shouldReceive('getUserClass')
+        ->andReturn(\Modules\<nome progetto>\Models\User::class);
+
+    $mockXotData->shouldReceive('make')
+        ->andReturn($mockXotData);
+
+>>>>>>> laraxot/dev
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -210,7 +220,14 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ---
 
+<<<<<<< HEAD
 **Status**: ✅ Best Practices Validate  
 **Enforcement**: Obbligatorio per tutti i test  
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024 
+=======
+**Status**: ✅ Best Practices Validate
+**Enforcement**: Obbligatorio per tutti i test
+**Version**: 1.0 - Gold Standard
+**Last Update**: Dicembre 2024
+>>>>>>> laraxot/dev

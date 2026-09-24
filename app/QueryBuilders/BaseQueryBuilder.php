@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\QueryBuilders;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 
 /**
  * Base query builder providing chainable query abstractions for models.
@@ -216,11 +220,19 @@ abstract class BaseQueryBuilder
     /**
      * Get all results from the query.
      *
+<<<<<<< HEAD
      * @return Collection<int, T>
      */
     public function get(): Collection
     {
         /** @var Collection<int, T> $results */
+=======
+     * @return \Illuminate\Database\Eloquent\Collection<int, T>
+     */
+    public function get(): \Illuminate\Database\Eloquent\Collection
+    {
+        /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
+>>>>>>> laraxot/dev
         $results = $this->query->get();
 
         return $results;
@@ -240,9 +252,15 @@ abstract class BaseQueryBuilder
     /**
      * Get results with pagination.
      *
+<<<<<<< HEAD
      * @return LengthAwarePaginator<int, T>
      */
     public function paginate(int $perPage = 15): LengthAwarePaginator
+=======
+     * @return \Illuminate\Pagination\LengthAwarePaginator<int, T>
+     */
+    public function paginate(int $perPage = 15): \Illuminate\Pagination\LengthAwarePaginator
+>>>>>>> laraxot/dev
     {
         /* @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
         return $this->query->paginate($perPage);

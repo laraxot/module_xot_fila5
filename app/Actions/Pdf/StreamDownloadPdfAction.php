@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Enums\PdfEngineEnum;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Component\HttpFoundation\StreamedResponse;

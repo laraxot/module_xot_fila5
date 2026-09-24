@@ -41,8 +41,13 @@ Modules/[Nome]/
 
 ## Collegamenti
 - [Indice della Documentazione](../docs/INDEX.md)
+<<<<<<< HEAD
 - [Regole del Progetto](rules.md)
 - [Struttura dei Moduli](structure.md)
+=======
+- [Regole del Progetto](../docs/RULES.md)
+- [Struttura dei Moduli](../docs/STRUCTURE.md)
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
 * [documentation.md](../../../Xot/docs/documentation.md)
