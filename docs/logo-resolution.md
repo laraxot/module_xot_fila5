@@ -1,6 +1,5 @@
 # Risoluzione dei Loghi
 
-<<<<<<< HEAD
 Il login Filament (`/admin/login`) prende il logo da `MetatagData::getBrandLogo()`,
 che chiama `AssetAction` sulla chiave `logo_header` (es. `ptv::img/icon.png`).
 
@@ -22,8 +21,6 @@ Story: `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
 
 ## Processo di Risoluzione
 
-=======
->>>>>>> laraxot/dev
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
 
 ## Processo di Risoluzione
