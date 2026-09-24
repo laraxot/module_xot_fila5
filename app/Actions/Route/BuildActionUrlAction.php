@@ -20,6 +20,7 @@ class BuildActionUrlAction
         $row = $params['row'] ?? (object) [];
         $query = is_array($params['query'] ?? null) ? $params['query'] : [];
         $route = request()->route();
+<<<<<<< .merge_file_16jv0C
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! $route instanceof Route || $route->getName() === null) {
@@ -37,6 +38,9 @@ class BuildActionUrlAction
 =======
         if (! $route instanceof Route || null === $route->getName()) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (! $route instanceof Route || $route->getName() === null) {
+>>>>>>> .merge_file_wpolKo
             return '#'.$action;
         }
 

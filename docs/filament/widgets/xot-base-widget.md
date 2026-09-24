@@ -176,6 +176,7 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../folio_volt_filament_integration.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../module_structure.md) - Struttura standard dei moduli
 - [README.md](../../README.md) - Indice principale della documentazione
+<<<<<<< .merge_file_wXEuAb
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [DIRECTORY-CASE-SENSITIVITY.md](directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
@@ -193,6 +194,10 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [DIRECTORY-CASE-SENSITIVITY.md](../../DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity delle directory
 - [NAMESPACE-RULES.md](../../NAMESPACE-RULES.md) - Regole per i namespace nei moduli
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [DIRECTORY-CASE-SENSITIVITY.md](directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
+- [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
+>>>>>>> .merge_file_X9V3Zi
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)

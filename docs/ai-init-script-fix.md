@@ -1,6 +1,7 @@
 # Aggiornamento Importante: ai_init.sh Script
 
 ## Problema Risolto
+<<<<<<< .merge_file_JsCxbT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,10 +25,14 @@ Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collega
 =======
 Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
+>>>>>>> .merge_file_NpfxeQ
 
 ## Situazione Prima della Correzione
 - `.ai` - ✅ Collegamento simbolico presente
 - `.cursor` - ❌ Cartella reale esistente, non collegamento simbolico
+<<<<<<< .merge_file_JsCxbT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -51,6 +56,9 @@ Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegame
 =======
 - `.claude` - ❌ Cartella reale esistente, non collegamento simbolico
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- `.claude` - ❌ Cartella reale esistente, non collegamento simbolico
+>>>>>>> .merge_file_NpfxeQ
 - `.gemini` - ✅ Collegamento simbolico presente
 - `.windsurf` - ❌ Cartella reale esistente, non collegamento simbolico
 
@@ -62,6 +70,7 @@ Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegame
 ## Risultato Attuale
 Tutti i collegamenti simbolici ora funzionano correttamente:
 - `.ai` → `bashscripts/ai/.ai`
+<<<<<<< .merge_file_JsCxbT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -85,6 +94,9 @@ Tutti i collegamenti simbolici ora funzionano correttamente:
 =======
 - `.cursor` → `bashscripts/ai/.cursor`
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- `.cursor` → `bashscripts/ai/.cursor`
+>>>>>>> .merge_file_NpfxeQ
 - `.claude` → `bashscripts/ai/.claude`
 - `.gemini` → `bashscripts/ai/.gemini`
 - `.windsurf` → `bashscripts/ai/.windsurf`
@@ -95,6 +107,7 @@ Lo script `ai_init.sh` ha una logica di sicurezza che non sovrascrive directory 
 ## Verifica Corretta
 Per verificare che tutto funzioni correttamente:
 ```bash
+<<<<<<< .merge_file_JsCxbT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,13 +134,13 @@ Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_JGx2JG
-file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 =======
-file .ai .cursor .claude .windsurf .gemini
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_NpfxeQ
+file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
+<<<<<<< .merge_file_JsCxbT
 <<<<<<< .merge_file_QQLPIl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -138,3 +151,5 @@ Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_NpfxeQ

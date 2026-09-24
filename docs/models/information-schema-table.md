@@ -44,15 +44,19 @@ class InformationSchemaTable extends Model
 - [Database Guidelines](../database-guidelines.md)
 - [Schema Documentation](../directory-structure-guide.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+<<<<<<< .merge_file_0kmQfz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_0Jzg07
 - [Model Best Practices](README.md)
 - [Database Guidelines](database-guidelines.md)
 - [Schema Documentation](directory-structure-guide.md)
 - [PHPStan Level 9 Guide](phpstan-level9-guide.md)
+<<<<<<< .merge_file_0kmQfz
 <<<<<<< HEAD
 =======
 =======
@@ -67,4 +71,6 @@ class InformationSchemaTable extends Model
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_0Jzg07
 - [Model Best Practices](../models/README.md)

@@ -23,6 +23,7 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
 <<<<<<< HEAD
+<<<<<<< .merge_file_fvhvQ9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -33,10 +34,13 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Sa7TAc
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_fvhvQ9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,6 +53,8 @@ abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Sa7TAc
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -353,6 +359,7 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
+<<<<<<< .merge_file_fvhvQ9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -363,10 +370,13 @@ class UserResource extends XotBaseResource {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Sa7TAc
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_fvhvQ9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -379,6 +389,8 @@ class UserResource extends XotBaseResource {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Sa7TAc
         return [TextInput::make('name')];
     }
 }

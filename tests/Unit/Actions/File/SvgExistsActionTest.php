@@ -14,6 +14,7 @@ it('verifies svg existence', function (): void {
     $action = app(SvgExistsAction::class);
 
     Assert::assertFalse($action->execute(''));
+<<<<<<< .merge_file_G2czhs
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,5 +23,7 @@ it('verifies svg existence', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_x0hKXv
     Assert::assertFalse($action->execute('non-existent-icon-123456'));
 });

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Ndsj1P
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LWiPXY
 # BMAD Story 13 — Quotation: 13 errori PHPStan
 
 **Modulo:** `Quotation`

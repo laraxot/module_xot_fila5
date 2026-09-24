@@ -40,6 +40,7 @@ trait HasCustomRelations
         ?\Closure $eagerConstraints = null,
         ?\Closure $eagerMatcher = null,
     ): CustomRelation {
+<<<<<<< .merge_file_9xHXoi
 <<<<<<< HEAD
 <<<<<<< HEAD
         $instance = new $related;
@@ -49,6 +50,9 @@ trait HasCustomRelations
 =======
         $instance = new $related();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $instance = new $related;
+>>>>>>> .merge_file_7wJsO2
         // Call to an undefined method object::newQuery()
         Assert::isInstanceOf($instance, Model::class, '['.__LINE__.']['.class_basename($this).']');
         $query = $instance->newQuery();

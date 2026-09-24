@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 return [
+<<<<<<< .merge_file_uPQ7TI
 <<<<<<< HEAD
 =======
 // Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
@@ -17,6 +18,8 @@ return [
             'icon' => 'heroicon-o-arrow-down-tray',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_izo2UE
     'label' => 'Export Xls',
     'plural_label' => 'Export Xls',
     'icon' => 'xot-files.xls',
@@ -25,9 +28,12 @@ return [
         'export_xls' => [
             'label' => 'Export Excel',
             'icon' => 'xot-files.xls',
+<<<<<<< .merge_file_uPQ7TI
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_izo2UE
             'tooltip' => 'Export data in Excel format (.xlsx)',
             'placeholder' => 'Export to Excel',
             'help' => 'Download current data in Excel format for offline analysis',
@@ -48,6 +54,7 @@ return [
         ],
     ],
     'navigation' => [
+<<<<<<< .merge_file_uPQ7TI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -62,15 +69,20 @@ return [
     'plural_label' => 'Missing Plural label',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_izo2UE
         'label' => 'Export Xls',
         'plural_label' => 'Export Xls',
         'group' => 'General',
         'icon' => 'xot-files.xls',
         'sort' => 100,
     ],
+<<<<<<< .merge_file_uPQ7TI
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_izo2UE
     'fields' => [
     ],
 ];

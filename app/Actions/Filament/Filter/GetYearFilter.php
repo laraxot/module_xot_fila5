@@ -17,6 +17,7 @@ class GetYearFilter
     public function execute(string $fieldName, int $from, int $to): SelectFilter
     {
         $opts = [];
+<<<<<<< .merge_file_NfQ52R
 <<<<<<< HEAD
 <<<<<<< HEAD
         for ($curr = $from; $curr <= $to; $curr++) {
@@ -26,6 +27,9 @@ class GetYearFilter
 =======
         for ($curr = $from; $curr <= $to; ++$curr) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        for ($curr = $from; $curr <= $to; $curr++) {
+>>>>>>> .merge_file_1KDQf5
             $currStr = (string) $curr;
             $opts[$currStr] = $currStr;
         }

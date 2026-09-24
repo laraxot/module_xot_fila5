@@ -335,6 +335,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [IsTenant Trait](../../User/app/Models/Traits/IsTenant.php)
 
 ### **Documentazione Moduli**
+<<<<<<< .merge_file_j8QfHE
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
@@ -352,12 +353,17 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../User/docs/traits_complete_guide.md)
+>>>>>>> .merge_file_9iwwBU
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 
 ---
 
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
+<<<<<<< .merge_file_j8QfHE
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Responsabile**: Team Architettura Laraxot
@@ -371,3 +377,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 =======
 **Responsabile**: Team Architettura Laraxot
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Responsabile**: Team Architettura Laraxot
+>>>>>>> .merge_file_9iwwBU

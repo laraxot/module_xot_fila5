@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_A2Vml7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4ZwsZQ
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;

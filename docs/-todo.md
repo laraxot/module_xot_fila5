@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_YbJ7kN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -24,6 +25,8 @@
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_puqSXg
 ---
 title: '_todo'
 module: Xot
@@ -36,6 +39,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_YbJ7kN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -72,6 +76,8 @@ updated: 2026-08-24
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_puqSXg
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->
@@ -79,6 +85,7 @@ updated: 2026-08-24
 questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
 https://github.com/limewell/laravel-make-extender
 
+<<<<<<< .merge_file_YbJ7kN
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -145,3 +152,7 @@ mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+mostrare in una blade uso disco etc
+https://github.com/spatie/laravel-health
+>>>>>>> .merge_file_puqSXg

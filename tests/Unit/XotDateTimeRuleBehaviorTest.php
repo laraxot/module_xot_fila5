@@ -14,6 +14,7 @@ uses(TestCase::class)->group('no-xot-db');
 test('DateTimeRule accepts the documented day month year format', function (): void {
     $validator = Validator::make(
         ['published_at' => '10/10/2019 13:43'],
+<<<<<<< .merge_file_ILQjgf
 <<<<<<< HEAD
 <<<<<<< HEAD
         ['published_at' => [new DateTimeRule]],
@@ -27,11 +28,15 @@ test('DateTimeRule accepts the documented day month year format', function (): v
 =======
         ['published_at' => [new DateTimeRule]],
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        ['published_at' => [new DateTimeRule]],
+>>>>>>> .merge_file_0F546v
     );
 
     Assert::assertFalse($validator->fails());
 });
 
+<<<<<<< .merge_file_ILQjgf
 <<<<<<< HEAD
 <<<<<<< HEAD
 $rejectsInvalidDateTime = function (int|string $value): void {
@@ -67,6 +72,12 @@ $rejectsInvalidDateTime = function (int|string $value): void {
         ['published_at' => $value],
         ['published_at' => [new DateTimeRule]],
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+$rejectsInvalidDateTime = function (int|string $value): void {
+    $validator = Validator::make(
+        ['published_at' => $value],
+        ['published_at' => [new DateTimeRule]],
+>>>>>>> .merge_file_0F546v
     );
 
     Assert::assertTrue($validator->fails());

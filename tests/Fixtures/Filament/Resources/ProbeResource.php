@@ -13,6 +13,7 @@ class ProbeResource extends XotBaseResource
 
     protected static ?string $model = null;
 
+<<<<<<< .merge_file_fp79Gl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -28,6 +29,8 @@ class ProbeResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_QwI8UB
     /**
      * @return array<int, string>
      */

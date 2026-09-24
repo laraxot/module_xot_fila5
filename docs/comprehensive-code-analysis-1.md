@@ -163,15 +163,19 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_R1Vqho
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 =======
 =======
@@ -181,6 +185,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_R1Vqho
 {
     return [
         TextInput::make('first_name'),
@@ -190,15 +196,19 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_R1Vqho
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 =======
 =======
@@ -208,6 +218,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_R1Vqho
 {
     return [
         TextInput::make('name')->required(),
@@ -301,15 +313,19 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_R1Vqho
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 =======
 =======
@@ -319,6 +335,8 @@ class ContactResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_R1Vqho
     {
         return [
             TextInput::make('first_name'),
@@ -445,15 +463,19 @@ try {
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_R1Vqho
 - [Architettura Moduli](architecture.md)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 =======
 =======
@@ -469,6 +491,8 @@ try {
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_R1Vqho
 
 ## 📊 Metriche di Qualità
 
@@ -489,6 +513,7 @@ try {
 **Data Analisi**: 2025-01-06
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
+<<<<<<< .merge_file_RBMfhj
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Stima Effort**: 40-60 ore di refactoring
@@ -502,3 +527,6 @@ try {
 =======
 **Stima Effort**: 40-60 ore di refactoring
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Stima Effort**: 40-60 ore di refactoring
+>>>>>>> .merge_file_R1Vqho

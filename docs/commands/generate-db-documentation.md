@@ -39,6 +39,7 @@ php artisan xot:generate-db-documentation {schema_file} {output_dir?}
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [Documentation Guidelines](../DOCUMENTATION-GUIDELINES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< .merge_file_dgJWDY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -54,3 +55,5 @@ php artisan xot:generate-db-documentation {schema_file} {output_dir?}
 - [Documentation Guidelines](../documentation-guidelines.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Nms2MO

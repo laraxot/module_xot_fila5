@@ -55,6 +55,7 @@ trait NavigationLabelTrait
 
         $value = intval($res);
 
+<<<<<<< .merge_file_FRU0o8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($value === 0) {
@@ -64,6 +65,9 @@ trait NavigationLabelTrait
 =======
         if (0 === $value) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($value === 0) {
+>>>>>>> .merge_file_6aedJF
             $key = static::getKeyTransFunc(__FUNCTION__);
             $value = rand(1, 100);
             app(SaveTransAction::class)->execute($key, $value);

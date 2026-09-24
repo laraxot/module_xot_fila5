@@ -64,6 +64,7 @@
 **Status**: 🧘 **IN PIANIFICAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_jvujAH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -74,3 +75,5 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_UQ3BUt

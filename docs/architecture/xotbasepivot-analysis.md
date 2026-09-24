@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_1e3hxX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_s7CgZi
 # XotBasePivot - Analisi Architettuale Completa
 
 ## 🎯 Executive Summary
@@ -828,6 +831,7 @@ class SpecialPivot extends XotBasePivot
 *Analisi completata il: 2025-10-15*
 *Versione: 1.0*
 *Status: READY FOR IMPLEMENTATION*
+<<<<<<< .merge_file_1e3hxX
 <<<<<<< HEAD
 =======
 =======
@@ -846,3 +850,5 @@ See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_s7CgZi

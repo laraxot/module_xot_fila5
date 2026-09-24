@@ -63,6 +63,7 @@ return [
    - Mantenere aggiornata la documentazione
 
 ## Collegamenti
+<<<<<<< .merge_file_bH3mw4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -79,12 +80,15 @@ return [
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_uhoWKw
 - [Gestione Domini](DOMAIN_CONFIGURATION.md)
 - [Struttura del Progetto](PROJECT_STRUCTURE.md)
 - [Documentazione Principale](../README.md)
 ## Collegamenti tra versioni di configuration.md
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../Xot/docs/configuration.md)
+<<<<<<< .merge_file_bH3mw4
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [configuration.md](../../../Cms/docs/configuration.md)
@@ -98,3 +102,6 @@ return [
 =======
 * [configuration.md](../../../Cms/docs/configuration.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+* [configuration.md](../../../Cms/docs/configuration.md)
+>>>>>>> .merge_file_uhoWKw

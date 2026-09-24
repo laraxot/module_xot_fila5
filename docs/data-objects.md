@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_OPSuF9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -78,6 +79,8 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_21xVNY
 # Data Objects
 
 ## Principi Fondamentali
@@ -159,6 +162,7 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 
 - [Data Objects Patient](../Patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
+<<<<<<< .merge_file_OPSuF9
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
@@ -172,3 +176,6 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 =======
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> .merge_file_21xVNY

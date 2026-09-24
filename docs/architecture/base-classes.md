@@ -32,15 +32,19 @@ class MyResource extends XotBaseResource
 {
     // ✅ OK - Ha getFormSchema()
 <<<<<<< HEAD
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_O330YT
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 =======
 =======
@@ -50,6 +54,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array { /* ... */ }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_O330YT
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -149,15 +155,19 @@ abstract class XotBaseResource extends Filament\Resources\Resource
      * Get form schema with automatic translations.
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_O330YT
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 =======
 =======
@@ -167,6 +177,8 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_O330YT
     {
         return [
             Section::make(__('filament.section.general'))
@@ -330,15 +342,19 @@ class YourResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-document';
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_O330YT
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 =======
 =======
@@ -348,6 +364,8 @@ class YourResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_O330YT
     {
         return [
             ...parent::getFormSchema(),
@@ -417,15 +435,19 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 // ✅ OPTIMIZED in XotBase classes
 /** @return array<string, Component> */
 <<<<<<< HEAD
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_O330YT
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 =======
 =======
@@ -435,6 +457,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_O330YT
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array
@@ -494,6 +518,7 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 
 ### Documentation Links
 
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
@@ -511,12 +536,17 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 - [Filament 4.x Upgrade Guide](../../../docs/filament-4-upgrade.md)
 - [Module Upgrade Guide](../../../docs/upgrade-modules-to-filament-4.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
+- [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
+>>>>>>> .merge_file_O330YT
 - [Breaking Changes Reference](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 ## 📊 Architecture Benefits
 
 ### Consistency
 - **Uniform Interface**: Tutte le classi seguono gli stessi pattern
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Predictable Behavior**: Comportamento consistente across modules
@@ -530,6 +560,9 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 =======
 - **<nome progetto>able Behavior**: Comportamento consistente across modules
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- **Predictable Behavior**: Comportamento consistente across modules
+>>>>>>> .merge_file_O330YT
 - **Standard Conventions**: Naming e structure conventions
 
 ### Maintainability
@@ -611,6 +644,7 @@ class MyModel extends XotBaseModel
 
 ---
 
+<<<<<<< .merge_file_r6OEGH
 <<<<<<< HEAD
 <<<<<<< HEAD
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
@@ -624,3 +658,6 @@ class MyModel extends XotBaseModel
 =======
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
+>>>>>>> .merge_file_O330YT

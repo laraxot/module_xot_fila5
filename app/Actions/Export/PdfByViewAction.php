@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< .merge_file_zikBcD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@ namespace Modules\Xot\Actions\Export;
 // use Modules\Xot\Services\ArrayService;
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_6BGlQ9
 use Illuminate\View\View;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;

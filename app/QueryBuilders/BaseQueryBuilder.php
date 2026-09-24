@@ -40,6 +40,7 @@ abstract class BaseQueryBuilder
     /**
      * Create a new query builder instance.
      *
+<<<<<<< .merge_file_Ul1qj8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<T>|null  $query
@@ -49,6 +50,9 @@ abstract class BaseQueryBuilder
 =======
      * @param Builder<T>|null $query
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  Builder<T>|null  $query
+>>>>>>> .merge_file_cHt9mz
      */
     public function __construct(?Builder $query = null)
     {
@@ -91,13 +95,15 @@ abstract class BaseQueryBuilder
      * Apply a where condition to the query.
 <<<<<<< HEAD
      *
-<<<<<<< HEAD
      * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+<<<<<<< .merge_file_Ul1qj8
 =======
      * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cHt9mz
      */
     public function where(string $column, mixed $value): static
     {
@@ -110,13 +116,15 @@ abstract class BaseQueryBuilder
      * Apply a where condition with operator to the query.
 <<<<<<< HEAD
      *
-<<<<<<< HEAD
      * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+<<<<<<< .merge_file_Ul1qj8
 =======
      * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cHt9mz
      */
     public function whereOperator(string $column, string $operator, mixed $value): static
     {
@@ -128,6 +136,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where in condition to the query.
      *
+<<<<<<< .merge_file_Ul1qj8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<mixed>  $values
@@ -137,6 +146,9 @@ abstract class BaseQueryBuilder
 =======
      * @param array<mixed> $values
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<mixed>  $values
+>>>>>>> .merge_file_cHt9mz
      */
     public function whereIn(string $column, array $values): static
     {
@@ -148,6 +160,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where not in condition to the query.
      *
+<<<<<<< .merge_file_Ul1qj8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<mixed>  $values
@@ -157,6 +170,9 @@ abstract class BaseQueryBuilder
 =======
      * @param array<mixed> $values
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<mixed>  $values
+>>>>>>> .merge_file_cHt9mz
      */
     public function whereNotIn(string $column, array $values): static
     {
@@ -188,6 +204,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where between condition to the query.
      *
+<<<<<<< .merge_file_Ul1qj8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, mixed>  $values
@@ -197,6 +214,9 @@ abstract class BaseQueryBuilder
 =======
      * @param array<int, mixed> $values
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<int, mixed>  $values
+>>>>>>> .merge_file_cHt9mz
      */
     public function whereBetween(string $column, array $values): static
     {
@@ -210,6 +230,7 @@ abstract class BaseQueryBuilder
      */
     public function orderBy(string $column, string $direction = 'asc'): static
     {
+<<<<<<< .merge_file_Ul1qj8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($direction !== 'asc' && $direction !== 'desc') {
@@ -219,6 +240,9 @@ abstract class BaseQueryBuilder
 =======
         if ('asc' !== $direction && 'desc' !== $direction) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($direction !== 'asc' && $direction !== 'desc') {
+>>>>>>> .merge_file_cHt9mz
             $direction = 'asc';
         }
 
@@ -258,6 +282,7 @@ abstract class BaseQueryBuilder
     /**
      * Get eager loading relations.
      *
+<<<<<<< .merge_file_Ul1qj8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string>  $relations
@@ -267,6 +292,9 @@ abstract class BaseQueryBuilder
 =======
      * @param array<string> $relations
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string>  $relations
+>>>>>>> .merge_file_cHt9mz
      */
     public function with(array $relations): static
     {

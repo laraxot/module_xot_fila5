@@ -4,6 +4,7 @@
 Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare icone personalizzate nel sistema Xot.
 
 ## Prerequisiti
+<<<<<<< .merge_file_S4MA08
 <<<<<<< HEAD
 <<<<<<< HEAD
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
@@ -21,6 +22,9 @@ Prima di procedere, assicurarsi di aver compreso il [processo di registrazione d
 =======
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
+>>>>>>> .merge_file_2u3D9M
 
 ## Processo di Implementazione
 
@@ -63,6 +67,7 @@ public function register(): void
 ```
 
 ## Troubleshooting
+<<<<<<< .merge_file_S4MA08
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,11 +78,14 @@ public function register(): void
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2u3D9M
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerbladeicons.md).
 
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
+<<<<<<< .merge_file_S4MA08
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -94,3 +102,5 @@ Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeI
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2u3D9M

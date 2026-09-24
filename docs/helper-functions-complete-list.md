@@ -69,6 +69,7 @@ $json = dddx(['key' => 'value']);
 ```
 
 **Caratteristiche**:
+<<<<<<< .merge_file_uI7L1G
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Logga sempre via `Log::debug()`
@@ -82,6 +83,9 @@ $json = dddx(['key' => 'value']);
 =======
 - Logga sempre via `Log::debug()`
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Logga sempre via `Log::debug()`
+>>>>>>> .merge_file_Zp0Med
 - Usa `Safe\json_encode()` per type safety
 - Ritorna string (non void)
 
@@ -383,6 +387,7 @@ composer dump-autoload
 ---
 
 **Last Updated**: 2 Dicembre 2025
+<<<<<<< .merge_file_uI7L1G
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -393,12 +398,15 @@ composer dump-autoload
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Zp0Med
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
 
 ---
 
+<<<<<<< .merge_file_uI7L1G
 <<<<<<< HEAD
 <<<<<<< HEAD
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
@@ -412,3 +420,6 @@ composer dump-autoload
 =======
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+>>>>>>> .merge_file_Zp0Med

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_FpXbm4
 ---
 module: theme
 topic: optimization_opportunities
@@ -388,3 +389,5 @@ return array_merge(
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Q7CZYC

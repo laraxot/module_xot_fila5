@@ -5,18 +5,20 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< .merge_file_AkgE9t
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_zafBhd
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 
 /**
  * Provides factory support for models using GetFactoryAction.
  *
-<<<<<<< HEAD
  * Usage: just use the trait in your model. No type parameters needed.
  *
  * DO NOT DELETE the `$count`/`$state` parameters from factory() below, and DO
@@ -32,34 +34,17 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  * `docs/chat/2026-09-07-URGENT-xotbasemodel-itself-lost-hasxotfactory.md`
  * before touching this file again.
  *
-=======
- * Usage: just use the trait in your model.
- *
- * The public static `factory($count = null, $state = [])` comes from Eloquent's
- * HasFactory and MUST keep its `$count`/`$state` parameters, and newFactory()
- * below MUST NOT be dropped. This trait has been silently broken 5+ times by
- * well-meaning simplifications. Every time, it silently regresses a real call
- * site instead of throwing: PHP does not error when you call a user-defined
- * method with more positional args than it declares, it just discards them.
- * `User::factory(5)` (Modules/Employee/database/seeders/WorkHourSeeder.php)
- * needs $count to reach ->count(5) or it silently creates 1 record instead of 5.
- * See `docs/chat/2026-09-07-URGENT-xotbasemodel-itself-lost-hasxotfactory.md`
- * before touching this file again.
- *
- * @template TFactory of Factory
- *
->>>>>>> laraxot/dev
  * @mixin Model
  */
 trait HasXotFactory
 {
-<<<<<<< HEAD
     /**
      * @return Factory<static>
      */
     protected static function factory(): Factory
     {
         /** @var Factory<static> $factory */
+<<<<<<< .merge_file_AkgE9t
 =======
 =======
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
@@ -86,6 +71,8 @@ trait HasXotFactory
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zafBhd
         $factory = app(GetFactoryAction::class)->execute(static::class);
 
         return $factory;

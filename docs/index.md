@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_HXRGy7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bG50He
 ---
 title: "Xot Module Documentation Index"
 module: "Xot"
@@ -568,6 +571,7 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 - [Dependency intelligence](dependency-intelligence.md) (ripetuta 3× identica in entrambi i file, deduplicata qui).
 
 *Metadati snapshot storico: Module Version 1.0, Laravel 12.x, PHP 8.2+, Last Updated 2026-03-02 (superato dai metadati reali in cima a questo file).*
+<<<<<<< .merge_file_HXRGy7
 <<<<<<< HEAD
 =======
 =======
@@ -669,3 +673,5 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 =======
 *Last update: January 2025*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_bG50He

@@ -98,15 +98,19 @@ class {ModelName}Resource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_jO2zxr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_EEpR9S
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_jO2zxr
 <<<<<<< HEAD
 =======
 =======
@@ -116,6 +120,8 @@ class {ModelName}Resource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_EEpR9S
     {
         return [
             Forms\Components\TextInput::make('name')
@@ -335,6 +341,7 @@ class Create{ModelName}Action
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
+<<<<<<< .merge_file_jO2zxr
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
@@ -348,3 +355,6 @@ class Create{ModelName}Action
 =======
 **Versione:** 2.0 - Consolidata DRY + KISS
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> .merge_file_EEpR9S

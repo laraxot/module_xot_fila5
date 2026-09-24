@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_KY2m8r
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -8,6 +9,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uyvs1g
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica
@@ -476,6 +479,7 @@ L'analisi del `SimpleChartWidget` ha identificato diversi problemi che impattano
 2. **Ottimizzano l'esperienza utente** (accessibilità, performance)
 3. **Migliorano la manutenibilità** (separazione logica, refactoring)
 
+<<<<<<< .merge_file_KY2m8r
 <<<<<<< HEAD
 <<<<<<< HEAD
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
@@ -498,3 +502,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/simplechartw
 =======
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
+>>>>>>> .merge_file_Uyvs1g

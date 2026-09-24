@@ -12,9 +12,9 @@ uses(TestCase::class);
 $action = app(HasColumnAction::class);
 
 it('executes without errors', function () use ($action): void {
-<<<<<<< HEAD
     $model = new class extends BaseModel
     {
+<<<<<<< .merge_file_uod0Yq
 =======
     $model = new class extends BaseModel {
 >>>>>>> laraxot/dev
@@ -30,6 +30,8 @@ $action = app(HasColumnAction::class);
 it('executes without errors', function () use ($action): void {
     $model = new class extends BaseModel {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_RB9buV
         protected $table = 'users';
     };
 
@@ -42,6 +44,7 @@ it('executes without errors', function () use ($action): void {
 });
 
 it('handles different tables', function () use ($action): void {
+<<<<<<< .merge_file_uod0Yq
 <<<<<<< HEAD
 <<<<<<< HEAD
     $model = new class extends BaseModel
@@ -52,6 +55,10 @@ it('handles different tables', function () use ($action): void {
 =======
     $model = new class extends BaseModel {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $model = new class extends BaseModel
+    {
+>>>>>>> .merge_file_RB9buV
         protected $table = 'migrations';
     };
 
@@ -64,6 +71,7 @@ it('handles different tables', function () use ($action): void {
 });
 
 it('returns boolean result', function () use ($action): void {
+<<<<<<< .merge_file_uod0Yq
 <<<<<<< HEAD
 <<<<<<< HEAD
     $model = new class extends BaseModel
@@ -74,6 +82,10 @@ it('returns boolean result', function () use ($action): void {
 =======
     $model = new class extends BaseModel {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $model = new class extends BaseModel
+    {
+>>>>>>> .merge_file_RB9buV
         protected $table = 'users';
     };
 

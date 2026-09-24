@@ -35,6 +35,7 @@ return new class extends XotBaseMigration
 ```
 
 ## Related Documentation
+<<<<<<< .merge_file_NvkRWQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [User Module Database Errors](database_errors.md)
@@ -48,10 +49,14 @@ return new class extends XotBaseMigration
 =======
 - [User Module Database Errors](../../User/docs/DATABASE_ERRORS.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [User Module Database Errors](database_errors.md)
+>>>>>>> .merge_file_eZYxdx
 - [Xot Base Classes](../XOT_BASE_CLASSES.md)
 - [Code Quality](../CODE_QUALITY.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../DATABASE_GUIDELINES.md)
+<<<<<<< .merge_file_NvkRWQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -66,3 +71,5 @@ return new class extends XotBaseMigration
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_eZYxdx

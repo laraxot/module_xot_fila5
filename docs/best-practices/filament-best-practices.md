@@ -17,6 +17,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
+<<<<<<< .merge_file_NPBKDe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,6 +37,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_oeYoGL
    {
        return [
            TextInput::make('nome')->required(),
@@ -228,6 +232,7 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
+<<<<<<< .merge_file_NPBKDe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,6 +252,9 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_oeYoGL
 {
     return [
         TextInput::make('nome')->required(),
@@ -407,6 +415,7 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< .merge_file_NPBKDe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -425,6 +434,9 @@ class ReportResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_oeYoGL
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -468,6 +480,7 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
     
     // Form Schema - CORRETTO ✅
+<<<<<<< .merge_file_NPBKDe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -486,6 +499,9 @@ class SocioResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_oeYoGL
     {
         return [
             TextInput::make('cognome')
@@ -727,6 +743,7 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
+<<<<<<< .merge_file_NPBKDe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -745,6 +762,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_oeYoGL
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -999,6 +1019,7 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
     
+<<<<<<< .merge_file_NPBKDe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1017,6 +1038,9 @@ class SocioResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_oeYoGL
     {
         return [
             TextInput::make('nome')->required(),
@@ -1116,6 +1140,7 @@ Appointment::where('doctor_id', $doctorId)
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
+<<<<<<< .merge_file_NPBKDe
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
@@ -1129,3 +1154,6 @@ Appointment::where('doctor_id', $doctorId)
 =======
 - Refactoring sicuro, massima estendibilità
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Refactoring sicuro, massima estendibilità
+>>>>>>> .merge_file_oeYoGL

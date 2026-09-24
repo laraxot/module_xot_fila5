@@ -41,6 +41,7 @@ return Forms\Components\Wizard\Step::make($name)
 ```php
 $schema = Str::of($name)
     ->snake()      // 'studio_step' → 'studio_step'
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -52,6 +53,8 @@ $schema = Str::of($name)
 =======
     ->studly()     // 'studio_step' → 'StudioStep'
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SuS2AN
     ->studly()     // 'studio_step' → 'StudioStep'  
     ->prepend('get') // 'StudioStep' → 'getStudioStep'
     ->append('Schema') // 'getStudioStep' → 'getStudioStepSchema'
@@ -74,6 +77,7 @@ $attachments = $model::$attachments;
 ```
 
 ### **Correzione Applicata**
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -85,6 +89,8 @@ $attachments = $model::$attachments;
 =======
 ```php
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SuS2AN
 ```php  
 // ✅ CORRETTO - Check esistenza proprietà
 $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
@@ -106,6 +112,7 @@ $attachments = property_exists($model, 'attachments') ? $model::$attachments : [
 
 ### **Verifica Wizard Steps**
 - [ ] studio_step → Chiama `getStudioStepSchema()` ✅
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -117,6 +124,8 @@ $attachments = property_exists($model, 'attachments') ? $model::$attachments : [
 =======
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SuS2AN
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅  
 - [ ] personal_info_step → Chiama `getPersonalInfoStepSchema()` ✅
 
@@ -139,6 +148,7 @@ $attachments = property_exists($model, 'attachments') ? $model::$attachments : [
 $methodName = 'getMethodName';
 static::{$methodName}();
 
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -150,6 +160,8 @@ static::{$methodName}();
 =======
 // ✅ Property existence check
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SuS2AN
 // ✅ Property existence check  
 $prop = property_exists($class, 'property') ? $class::$property : [];
 ```
@@ -161,11 +173,14 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_SuS2AN
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/docs/wizard-step-implementation.md)
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
@@ -175,6 +190,7 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 
 ### **Documentazione Correlata**
 - [Wizard Step Implementation](../../../Modules/SaluteOra/docs/wizard-step-implementation.md)
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 =======
 =======
@@ -186,6 +202,8 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SuS2AN
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -195,6 +213,7 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 **Risolto**: Gennaio 2025  
 **Impatto**: Blocco completo sistema registrazione dottori  
 **Tempo risoluzione**: < 10 minuti dalla diagnosi  
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -212,6 +231,8 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SuS2AN
 
 ## 💡 **Lesson Learned**
 
@@ -221,11 +242,14 @@ Questo fix dimostra l'importanza di:
 3. **Property existence checking** per codice robusto
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_SuS2AN
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
 *Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
@@ -235,6 +259,7 @@ Questo fix dimostra l'importanza di:
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
 *Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+<<<<<<< .merge_file_cQyMYO
 <<<<<<< HEAD
 =======
 =======
@@ -387,3 +412,5 @@ Questo fix dimostra l'importanza di:
 =======
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SuS2AN

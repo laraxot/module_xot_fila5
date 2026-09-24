@@ -80,8 +80,8 @@
 <<<<<<< HEAD
 - [Data Objects Patient](../patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
-<<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
+<<<<<<< .merge_file_MwbQnh
 =======
 <<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
@@ -94,3 +94,5 @@
 - [Best Practices](./best-practices.md)
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_GYk4En

@@ -763,6 +763,7 @@ protected function getData(): array
 ### PHPStan Level 10 Compliance
 ```bash
 # ✅ Zero errori dopo refactoring
+<<<<<<< .merge_file_oeGrpY
 <<<<<<< HEAD
 <<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
@@ -780,11 +781,15 @@ protected function getData(): array
 =======
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+>>>>>>> .merge_file_L7wwVs
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
+<<<<<<< .merge_file_oeGrpY
 <<<<<<< HEAD
 <<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
@@ -802,6 +807,9 @@ protected function getData(): array
 =======
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
+>>>>>>> .merge_file_L7wwVs
 ```
 
 ### Performance Metrics

@@ -28,6 +28,7 @@ use Tests\TestCase;
 class HasXotTableReorderingTest extends TestCase
 {
     #[Test]
+<<<<<<< .merge_file_iBR2Kz
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function it_returns_order_column_when_model_has_column(): void
@@ -37,11 +38,15 @@ class HasXotTableReorderingTest extends TestCase
 =======
     public function itReturnsOrderColumnWhenModelHasColumn(): void
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function it_returns_order_column_when_model_has_column(): void
+>>>>>>> .merge_file_7I1R6D
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
+<<<<<<< .merge_file_iBR2Kz
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function it_returns_null_when_model_missing_order_column(): void
@@ -51,11 +56,15 @@ class HasXotTableReorderingTest extends TestCase
 =======
     public function itReturnsNullWhenModelMissingOrderColumn(): void
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function it_returns_null_when_model_missing_order_column(): void
+>>>>>>> .merge_file_7I1R6D
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
+<<<<<<< .merge_file_iBR2Kz
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function it_allows_override_in_subclass(): void
@@ -65,11 +74,15 @@ class HasXotTableReorderingTest extends TestCase
 =======
     public function itAllowsOverrideInSubclass(): void
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function it_allows_override_in_subclass(): void
+>>>>>>> .merge_file_7I1R6D
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
+<<<<<<< .merge_file_iBR2Kz
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function it_checks_column_existence_via_schema(): void
@@ -79,11 +92,15 @@ class HasXotTableReorderingTest extends TestCase
 =======
     public function itChecksColumnExistenceViaSchema(): void
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function it_checks_column_existence_via_schema(): void
+>>>>>>> .merge_file_7I1R6D
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::hasOrderableColumn() non esiste.');
     }
 
     #[Test]
+<<<<<<< .merge_file_iBR2Kz
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function it_auto_enables_reorderable_when_column_exists(): void
@@ -93,11 +110,15 @@ class HasXotTableReorderingTest extends TestCase
 =======
     public function itAutoEnablesReorderableWhenColumnExists(): void
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function it_auto_enables_reorderable_when_column_exists(): void
+>>>>>>> .merge_file_7I1R6D
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }
 
     #[Test]
+<<<<<<< .merge_file_iBR2Kz
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function it_skips_reorderable_when_column_missing(): void
@@ -107,6 +128,9 @@ class HasXotTableReorderingTest extends TestCase
 =======
     public function itSkipsReorderableWhenColumnMissing(): void
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function it_skips_reorderable_when_column_missing(): void
+>>>>>>> .merge_file_7I1R6D
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }

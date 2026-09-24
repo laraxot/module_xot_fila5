@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_jC7Lqm
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-tw
 =======
 >>>>>>> .merge_file_wgtkWm
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PsYwEC
 ---
 title: 'send_sms'
 module: Xot
@@ -30,6 +33,7 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/send_sms.txt -->
 
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
+<<<<<<< .merge_file_jC7Lqm
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gsBktN
@@ -45,3 +49,5 @@ https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-tw
 =======
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PsYwEC

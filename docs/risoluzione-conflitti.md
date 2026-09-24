@@ -6,6 +6,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ## Casi Risolti Recentemente
 
 ### 1. Namespace e Convenzioni
+<<<<<<< .merge_file_fKMLU4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_rB2kjW
 - [Convenzioni Namespace](namespace-conventions.md)
 =======
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
@@ -35,6 +38,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ### 3. Autenticazione e UI
 - [Componenti Filament](../../Themes/One/project_docs/FILAMENT_COMPONENTS.md)
 - [Registrazione Utenti](../../Themes/One/project_docs/AUTH.md)
+<<<<<<< .merge_file_fKMLU4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -46,6 +50,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rB2kjW
   - Implementazione completa sistema registrazione
   - Gestione tipi utente dinamica
   - UI moderna con Filament
@@ -129,6 +135,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 - [Documentazione generale sulla risoluzione dei conflitti git](../../../project_docs/risoluzione_conflitti_git.md)
 - [Report completo di intervento](../../../project_docs/logs/conflict_resolution_report.md)
+<<<<<<< .merge_file_fKMLU4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -140,6 +147,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rB2kjW
 - [Dettagli risoluzione ModelWithPosContract](./conflicts/model_with_pos_contract_resolution.md)
 
 ## XotBaseMainPanelProvider.php
@@ -233,6 +242,7 @@ Le modifiche sono state applicate seguendo le best practice documentate in `CONF
 
 ### Modulo Activity
 - Diversi file di documentazione in `Activity/project_docs/phpstan/` (level_1.md fino a level_10.md)
+<<<<<<< .merge_file_fKMLU4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -243,6 +253,8 @@ Le modifiche sono state applicate seguendo le best practice documentate in `CONF
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rB2kjW
 - File README.md del modulo Activity
 
 ### Modulo Xot
@@ -268,6 +280,7 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 
 * [risoluzione_conflitti.md](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../Tenant/project_docs/risoluzione_conflitti.md)
+<<<<<<< .merge_file_fKMLU4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -279,6 +292,8 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rB2kjW
 
 aurmich/dev
 5693302 (.)
@@ -286,6 +301,7 @@ b6f667c (.)
 * [Risoluzione Conflitti Xot](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../Tenant/project_docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../project_docs/conflict_resolution.md)
+<<<<<<< .merge_file_fKMLU4
 <<<<<<< HEAD
 <<<<<<< HEAD
 fc83074 (.)
@@ -302,3 +318,6 @@ fc83074 (.)
 =======
 fc83074 (.)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+fc83074 (.)
+>>>>>>> .merge_file_rB2kjW

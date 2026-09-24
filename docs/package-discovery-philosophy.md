@@ -339,6 +339,7 @@ The command discovered these categories:
 **Module Packages**:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
+<<<<<<< .merge_file_i6W1XJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
@@ -353,6 +354,9 @@ The command discovered these categories:
 =======
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+>>>>>>> .merge_file_QZGMwT
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -363,6 +367,7 @@ Each module uses this pattern:
 
 ```json
 {
+<<<<<<< .merge_file_i6W1XJ
 <<<<<<< HEAD
 <<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
@@ -376,6 +381,9 @@ Each module uses this pattern:
 =======
     "name": "laraxot/module_user_fila3",
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    "name": "laraxot/module_user_fila3",
+>>>>>>> .merge_file_QZGMwT
     "extra": {
         "laravel": {
             "providers": [
@@ -569,6 +577,7 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 
 **Document Version**: 1.0
 **Last Updated**: 2026-01-12
+<<<<<<< .merge_file_i6W1XJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -579,12 +588,15 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_QZGMwT
 **Status**: Living document - update as understanding deepens
 **Philosophy**: Super Mucca methodology applied
 
 **Related Documentation**:
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Module System](./packages.md)
+<<<<<<< .merge_file_i6W1XJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
@@ -598,3 +610,6 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 =======
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
+>>>>>>> .merge_file_QZGMwT

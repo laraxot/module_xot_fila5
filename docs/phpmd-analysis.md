@@ -32,6 +32,7 @@
 I warning PHPMD sono spesso informativi e non bloccanti. Focus su:
 - Problemi che possono causare bug
 - Code smells che impattano manutenibilità
+<<<<<<< .merge_file_0dgWz2
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lae6Oz
 - Pattern che violano principi SOLID
@@ -41,3 +42,6 @@ I warning PHPMD sono spesso informativi e non bloccanti. Focus su:
 =======
 - Pattern che violano principi SOLID
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Pattern che violano principi SOLID
+>>>>>>> .merge_file_WABYSg

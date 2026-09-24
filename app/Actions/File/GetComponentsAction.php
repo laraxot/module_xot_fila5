@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ComponentFileData;
+<<<<<<< .merge_file_jSY5Ct
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Spatie\LaravelData\DataCollection;
@@ -16,10 +17,16 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Spatie\LaravelData\DataCollection;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+>>>>>>> .merge_file_IsTZEP
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
+<<<<<<< .merge_file_jSY5Ct
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -33,6 +40,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_IsTZEP
 class GetComponentsAction
 {
     use QueueableAction;
@@ -92,6 +101,7 @@ class GetComponentsAction
         $comps = [];
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_jSY5Ct
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
@@ -101,6 +111,9 @@ class GetComponentsAction
 =======
             if ('php' !== $file->getExtension()) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($file->getExtension() !== 'php') {
+>>>>>>> .merge_file_IsTZEP
                 continue;
             }
 
@@ -115,12 +128,12 @@ class GetComponentsAction
             $comp_name = $prefix.$comp_name;
             $comp_ns = $namespace.'\\'.$class_name;
 
+<<<<<<< .merge_file_jSY5Ct
 <<<<<<< HEAD
 <<<<<<< HEAD
-            if ($relative_path !== '') {
 =======
-            if ('' !== $relative_path) {
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_IsTZEP
+            if ($relative_path !== '') {
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
                     ->map(fn (string $item) => Str::slug(Str::snake($item)))
@@ -181,26 +194,16 @@ class GetComponentsAction
 <<<<<<< HEAD
 
     /**
-<<<<<<< HEAD
      * @param  array<int, array<string, mixed>>  $comps
-=======
-     * @param array<int, array<string, mixed>> $comps
->>>>>>> laraxot/dev
      */
     private function hasCurrentSchema(array $comps): bool
     {
         foreach ($comps as $comp) {
             if (
                 ! isset($comp['name'], $comp['class'], $comp['ns'])
-<<<<<<< HEAD
                 || ! is_string($comp['name']) || $comp['name'] === ''
                 || ! is_string($comp['class']) || $comp['class'] === ''
                 || ! is_string($comp['ns']) || $comp['ns'] === ''
-=======
-                || ! is_string($comp['name']) || '' === $comp['name']
-                || ! is_string($comp['class']) || '' === $comp['class']
-                || ! is_string($comp['ns']) || '' === $comp['ns']
->>>>>>> laraxot/dev
             ) {
                 return false;
             }

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_OVRVZD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,6 +11,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_5XusGr
 ---
 name: phpstan-analysis-report-2025-11-18
 description: " Executive Summary"
@@ -17,6 +20,7 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_OVRVZD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +40,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_5XusGr
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary

@@ -63,6 +63,7 @@ This document summarizes the code quality improvements made to the Xot module, w
 ---
 
 *Last Updated: November 17, 2025*
+<<<<<<< .merge_file_peVe7H
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,3 +74,5 @@ This document summarizes the code quality improvements made to the Xot module, w
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_XE4cMS

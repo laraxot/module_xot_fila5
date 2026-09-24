@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_P8j4DN
 <<<<<<< HEAD
 <<<<<<< .merge_file_FWXja8
 =======
@@ -24,6 +25,8 @@ related:
 >>>>>>> .merge_file_ebu3m1
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_6e0z2H
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

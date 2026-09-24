@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
+<<<<<<< .merge_file_3c0WwF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -16,6 +17,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hCtooK
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
@@ -37,6 +40,7 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< .merge_file_3c0WwF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -83,6 +87,8 @@ class ListCaches extends XotBaseListRecords
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hCtooK
     /**
      * @return array<string, Action>
      */

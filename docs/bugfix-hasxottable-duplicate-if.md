@@ -2,6 +2,7 @@
 
 > **Versione**: 1.0
 > **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< .merge_file_tVvrlN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_d9Dney
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -174,6 +177,7 @@ done
 **Autore Fix**: AI Assistant
 **Review**: Pending
 **Data**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< .merge_file_tVvrlN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -184,3 +188,5 @@ done
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_d9Dney

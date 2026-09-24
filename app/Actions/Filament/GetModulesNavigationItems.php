@@ -15,12 +15,12 @@ use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 
+<<<<<<< .merge_file_hIjXKF
 =======
 =======
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
@@ -37,6 +37,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vIA23u
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
@@ -56,6 +58,7 @@ class GetModulesNavigationItems
 
 <<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
+<<<<<<< .merge_file_hIjXKF
 <<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
@@ -64,6 +67,8 @@ class GetModulesNavigationItems
         $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
         // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vIA23u
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -140,6 +145,7 @@ class GetModulesNavigationItems
                      * @var Authenticatable|null $user
                      */
                     $user = Auth::user();
+<<<<<<< .merge_file_hIjXKF
 <<<<<<< HEAD
 <<<<<<< HEAD
                     if ($user === null) {
@@ -149,6 +155,9 @@ class GetModulesNavigationItems
 =======
                     if (null === $user) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+                    if ($user === null) {
+>>>>>>> .merge_file_vIA23u
                         return false;
                     }
 
@@ -176,6 +185,7 @@ class GetModulesNavigationItems
     {
 <<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
+<<<<<<< .merge_file_hIjXKF
 <<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
@@ -184,6 +194,8 @@ class GetModulesNavigationItems
         $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
         // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vIA23u
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 

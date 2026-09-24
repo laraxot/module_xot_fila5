@@ -9,8 +9,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('manages object properties safely', function (): void {
-<<<<<<< HEAD
     $obj = new stdClass;
+<<<<<<< .merge_file_NEBiXp
 =======
     $obj = new stdClass();
 >>>>>>> laraxot/dev
@@ -24,6 +24,8 @@ uses(Modules\Xot\Tests\TestCase::class);
 it('manages object properties safely', function (): void {
     $obj = new stdClass();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Hsi3WL
     $obj->name = 'Test Object';
     $obj->id = 123;
     $obj->active = true;
@@ -69,12 +71,8 @@ it('manages object properties safely', function (): void {
         return $v > 200;
     }, 0));
     // Methods
-<<<<<<< HEAD
     $complexObj = new class
     {
-=======
-    $complexObj = new class {
->>>>>>> laraxot/dev
         public function test(string $p): string
 =======
     Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_BVPLUl
 <<<<<<< HEAD
 <<<<<<< HEAD
 use App\Application;
@@ -24,11 +25,15 @@ use App\Application;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use App\Application;
+>>>>>>> .merge_file_NSQpRN
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
 
+<<<<<<< .merge_file_BVPLUl
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
@@ -42,6 +47,9 @@ uses(TestCase::class)->group('no-xot-db');
 =======
 /**
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+/**
+>>>>>>> .merge_file_NSQpRN
  * Guardia sul document root.
  *
  * Il web server serve `public_html/`, non `laravel/public/`. `App\Application` sovrascrive
@@ -80,6 +88,7 @@ it('restituisce un percorso anche per segmenti non ancora creati', function (): 
 });
 
 it('usa la Application con publicPath sovrascritto', function (): void {
+<<<<<<< .merge_file_BVPLUl
 <<<<<<< HEAD
 <<<<<<< HEAD
     expect(app())->toBeInstanceOf(Application::class)
@@ -113,6 +122,11 @@ it('usa la Application con publicPath sovrascritto', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    expect(app())->toBeInstanceOf(Application::class)
+        ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
+        ->toBe(Application::class);
+>>>>>>> .merge_file_NSQpRN
 });
 
 it('public_html esiste ed e fuori da laravel/', function (): void {

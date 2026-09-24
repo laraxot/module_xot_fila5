@@ -21,6 +21,7 @@ class GetDistanceExpressionAction
     /**
      * Genera l'espressione SQL per calcolare la distanza tra due punti.
      *
+<<<<<<< .merge_file_P716IK
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -39,6 +40,11 @@ class GetDistanceExpressionAction
      * @param string|null $alias     Alias per l'espressione (opzionale)
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  float  $latitude  Latitudine del punto di riferimento
+     * @param  float  $longitude  Longitudine del punto di riferimento
+     * @param  string|null  $alias  Alias per l'espressione (opzionale)
+>>>>>>> .merge_file_kmR1Du
      * @return Expression Espressione SQL per il calcolo della distanza
      */
     public function execute(

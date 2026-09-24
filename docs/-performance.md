@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_kMwnSq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -24,6 +25,8 @@
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_enWHrB
 ---
 title: '_performance'
 module: Xot
@@ -36,6 +39,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_kMwnSq
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
@@ -60,6 +64,8 @@ updated: 2026-08-24
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_enWHrB
 # _performance
 
 <!-- Contenuto migrato da _docs/_performance.txt -->
@@ -68,6 +74,7 @@ updated: 2026-08-24
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
+<<<<<<< .merge_file_kMwnSq
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -113,3 +120,5 @@ https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_enWHrB

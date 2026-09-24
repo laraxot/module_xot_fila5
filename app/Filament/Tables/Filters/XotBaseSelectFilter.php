@@ -12,6 +12,7 @@ use Filament\Tables\Filters\SelectFilter as FilamentSelectFilter;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's SelectFilter to provide a XotBase layer.
  */
+<<<<<<< .merge_file_uEfnfG
 <<<<<<< HEAD
 <<<<<<< HEAD
 abstract class XotBaseSelectFilter extends FilamentSelectFilter {}
@@ -41,3 +42,6 @@ abstract class XotBaseSelectFilter extends FilamentSelectFilter
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+abstract class XotBaseSelectFilter extends FilamentSelectFilter {}
+>>>>>>> .merge_file_LwZYpd

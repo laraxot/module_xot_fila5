@@ -759,6 +759,7 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
+<<<<<<< .merge_file_Sk9WBj
 <<<<<<< HEAD
 <<<<<<< HEAD
             'Quaeris' => 'quaeris',
@@ -773,6 +774,9 @@ class ConnectionManagerService
 =======
             'Quaeris' => 'quaeris',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            'Quaeris' => 'quaeris',
+>>>>>>> .merge_file_aPrcPt
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -855,6 +859,7 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
+<<<<<<< .merge_file_Sk9WBj
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/Contracts/ChartRendererContract.php
@@ -869,12 +874,16 @@ class ContactValidationService
 =======
 // Modules/Quaeris/Contracts/ChartRendererContract.php
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+// Modules/Quaeris/Contracts/ChartRendererContract.php
+>>>>>>> .merge_file_aPrcPt
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
+<<<<<<< .merge_file_Sk9WBj
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
@@ -889,6 +898,9 @@ interface ChartRendererContract
 =======
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+// Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> .merge_file_aPrcPt
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1054,6 +1066,7 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
+<<<<<<< .merge_file_Sk9WBj
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/Services/BulkProcessingService.php
@@ -1068,6 +1081,9 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 =======
 // Modules/Quaeris/Services/BulkProcessingService.php
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+// Modules/Quaeris/Services/BulkProcessingService.php
+>>>>>>> .merge_file_aPrcPt
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void
@@ -1459,6 +1475,7 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
+<<<<<<< .merge_file_Sk9WBj
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
@@ -1472,3 +1489,6 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> .merge_file_aPrcPt

@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_GVs48X
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -9,6 +10,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WAobUd
 module: Xot
 topic: legacy-roadmap-and-issues
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
@@ -20,6 +23,7 @@ updated: 2026-07-15
 Documentazione canonica spostata:
 
 See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md)
+<<<<<<< .merge_file_GVs48X
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,6 +53,8 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WAobUd
 
 ---
 
@@ -364,6 +370,7 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+<<<<<<< .merge_file_GVs48X
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -379,3 +386,5 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/legacy
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WAobUd

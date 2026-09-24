@@ -1,5 +1,6 @@
 # Policy Inheritance Strategy in Laraxot
 
+<<<<<<< .merge_file_jFOBLu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_NTxYwo
 ## 🔴 REGOLA CRITICA: mai cancellare policy modello
 
 `app/Models/Policies/{Model}Policy.php` è **obbligatoria** per Laravel/Filament anche se il body è solo `class XPolicy extends *BasePolicy {}`.
@@ -25,6 +28,7 @@ Regola agenti: [bashscripts/ai/.agents/docs/rules/model-policy-never-delete.md](
 
 ---
 
+<<<<<<< .merge_file_jFOBLu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,6 +43,8 @@ Regola agenti: [bashscripts/ai/.agents/docs/rules/model-policy-never-delete.md](
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_NTxYwo
 ## REGOLA PERMANENTE: Gerarchia corretta delle Policy Base
 
 ### Panoramica
@@ -127,6 +133,7 @@ grep -r "extends.*XotBasePolicy" laravel/Modules/User/app/Models/Policies/
 
 - `Modules/Xot/docs/wiki/concepts/xotbasepolicy-architecture.md`
 - `Modules/User/docs/wiki/concepts/userpolicy-domain-specific.md`
+<<<<<<< .merge_file_jFOBLu
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
@@ -152,3 +159,8 @@ grep -r "extends.*XotBasePolicy" laravel/Modules/User/app/Models/Policies/
 =======
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+>>>>>>> .merge_file_NTxYwo

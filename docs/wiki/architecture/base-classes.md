@@ -42,27 +42,16 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
+<<<<<<< .merge_file_sX0Rpw
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array { /* ... */ }
 =======
-<<<<<<< .merge_file_pb4y2z
+>>>>>>> .merge_file_KGwde4
     public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array { /* ... */ }
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array { /* ... */ }
@@ -169,27 +158,16 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_sX0Rpw
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_pb4y2z
+>>>>>>> .merge_file_KGwde4
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -360,27 +338,16 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_sX0Rpw
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_pb4y2z
+>>>>>>> .merge_file_KGwde4
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -457,27 +424,16 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_sX0Rpw
 <<<<<<< HEAD
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_pb4y2z
+>>>>>>> .merge_file_KGwde4
 public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array

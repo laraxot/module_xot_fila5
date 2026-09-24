@@ -16,6 +16,7 @@ class FieldFilterDTO extends Data
         public string $field_name,
         public ?string $where_method,
         public ?string $rules,
+<<<<<<< .merge_file_B00p00
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -27,4 +28,7 @@ class FieldFilterDTO extends Data
     ) {
     }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_kJnvYq
 }

@@ -19,15 +19,19 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
+<<<<<<< .merge_file_oyOCrz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lHuV4M
 - [docs root](../../../../docs/actions.md)
 - [docs Lang](../../lang/docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
+<<<<<<< .merge_file_oyOCrz
 <<<<<<< HEAD
 =======
 =======
@@ -43,3 +47,5 @@ Ultimo aggiornamento: maggio 2025.
 
 Ultimo aggiornamento: maggio 2025.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lHuV4M

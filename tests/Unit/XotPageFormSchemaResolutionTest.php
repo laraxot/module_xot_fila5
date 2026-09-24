@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_mBpK3M
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,11 +22,14 @@ declare(strict_types=1);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Um18WC
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\FormSchemaPageFixture;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_mBpK3M
 <<<<<<< HEAD
 <<<<<<< HEAD
 use ReflectionMethod;
@@ -38,10 +42,14 @@ use ReflectionMethod;
 =======
 use ReflectionMethod;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use ReflectionMethod;
+>>>>>>> .merge_file_Um18WC
 
 uses(TestCase::class);
 
 test('un override di getFormSchema viene onorato su XotBasePage', function (): void {
+<<<<<<< .merge_file_mBpK3M
 <<<<<<< HEAD
 <<<<<<< HEAD
     $fixture = new FormSchemaPageFixture;
@@ -65,6 +73,9 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $fixture = new FormSchemaPageFixture;
+>>>>>>> .merge_file_Um18WC
     $method = new ReflectionMethod($fixture, 'resolveFormSchemaForXotPage');
     $method->setAccessible(true);
 
@@ -76,6 +87,7 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
 });
 
 test('senza override getFormSchema restituisce schema vuoto', function (): void {
+<<<<<<< .merge_file_mBpK3M
 <<<<<<< HEAD
 <<<<<<< HEAD
     $fixture = new class extends XotBasePage
@@ -92,6 +104,10 @@ test('senza override getFormSchema restituisce schema vuoto', function (): void 
     $fixture = new class extends XotBasePage
     {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $fixture = new class extends XotBasePage
+    {
+>>>>>>> .merge_file_Um18WC
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
         protected string $view = 'xot::filament.pages.base';

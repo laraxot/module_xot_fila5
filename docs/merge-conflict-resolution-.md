@@ -80,6 +80,7 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 14. **EditProfile.php**
     - Marker di merge conflict GIT non risolti:
       ```
+<<<<<<< .merge_file_YsT3GZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,10 +96,13 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 =======
 >>>>>>> .merge_file_Q2RME2
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_TIUpbd
       =======
       >>>>>>> 041533e (.)
       =======
       >>>>>>> 00a34d0 (.)
+<<<<<<< .merge_file_YsT3GZ
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
@@ -111,6 +115,8 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_TIUpbd
       ```
 
 15. **PasswordResetConfirmWidget.php**
@@ -306,6 +312,7 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
 - [Code Quality Standards](./code-quality-standards.md)
+<<<<<<< .merge_file_YsT3GZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -328,3 +335,6 @@ Questi possono essere corretti in un secondo momento se necessario.
 =======
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+>>>>>>> .merge_file_TIUpbd

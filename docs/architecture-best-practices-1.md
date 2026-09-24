@@ -7,6 +7,7 @@ Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi,
 Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo immediatamente evidente la logica di aggregazione utilizzata.
 
 **Collegamento bidirezionale:**
+<<<<<<< .merge_file_CXyBzR
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
@@ -20,6 +21,9 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 =======
 - [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
+>>>>>>> .merge_file_WLZ7Bf
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 
@@ -56,6 +60,7 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
 - **Le duplicazioni vanno eliminate**: ogni refactoring deve essere documentato con motivazione e percorso nella sezione dedicata.
 - **Tipizzazione rigorosa**: tutto il codice deve essere conforme a phpstan livello 10.
 - **Collegamenti rapidi**:
+<<<<<<< .merge_file_CXyBzR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,10 +68,13 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WLZ7Bf
   - [Documentazione generale e convenzioni di progetto](../../../../docs/coding-standards.md)
   - [Esempio e memo nel modulo Performance](../../Performance/docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
 
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
+<<<<<<< .merge_file_CXyBzR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -79,3 +87,5 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WLZ7Bf

@@ -39,6 +39,7 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,10 +50,13 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -65,6 +69,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 {
     return [
         TextInput::make('nome')->required(),
@@ -202,6 +208,7 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -212,10 +219,13 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -228,6 +238,8 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     {
         return [
             TextInput::make('cognome')
@@ -408,6 +420,7 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -418,10 +431,13 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -434,6 +450,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -681,6 +699,7 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -691,10 +710,13 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -707,6 +729,8 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     {
         return [
             TextInput::make('nome')->required(),
@@ -777,6 +801,7 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -787,10 +812,13 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -803,6 +831,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 {
     return [
         TextInput::make('nome')->required(),
@@ -940,6 +970,7 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -950,10 +981,13 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -966,6 +1000,8 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     {
         return [
             TextInput::make('cognome')
@@ -1146,6 +1182,7 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1156,10 +1193,13 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1172,6 +1212,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1419,6 +1461,7 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1429,10 +1472,13 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rEdsdj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1445,6 +1491,8 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MRrDtU
     {
         return [
             TextInput::make('nome')->required(),

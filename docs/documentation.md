@@ -41,6 +41,7 @@ Modules/[Nome]/
 
 ## Collegamenti
 - [Indice della Documentazione](../docs/INDEX.md)
+<<<<<<< .merge_file_4edx7t
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Regole del Progetto](rules.md)
@@ -58,11 +59,16 @@ Modules/[Nome]/
 - [Regole del Progetto](../docs/RULES.md)
 - [Struttura dei Moduli](../docs/STRUCTURE.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Regole del Progetto](rules.md)
+- [Struttura dei Moduli](structure.md)
+>>>>>>> .merge_file_aQEzaU
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
 * [documentation.md](../../../Xot/docs/documentation.md)
 * [documentation.md](../../../Xot/docs/guidelines/documentation.md)
 * [documentation.md](../../../Cms/docs/roadmap/features/documentation.md)
+<<<<<<< .merge_file_4edx7t
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -107,3 +113,5 @@ https://flarum.org/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aQEzaU

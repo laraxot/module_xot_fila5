@@ -508,6 +508,7 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 
 **Version**: 1.0
 **Last Updated**: December 23, 2025
+<<<<<<< .merge_file_63Vjyb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -515,10 +516,13 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_GOD8co
 **Module**: Xot (Core Engine)
 **Maintainer**: Laraxot Team
 
 *This guide is part of the Laraxot PTVX Framework documentation standard.*
+<<<<<<< .merge_file_63Vjyb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -532,3 +536,5 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_GOD8co

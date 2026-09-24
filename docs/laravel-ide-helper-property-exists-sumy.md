@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_m01e29
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ejxf2v
 ---
 title: IDE Helper e property_exists — alias storico
 type: historical
@@ -21,6 +24,7 @@ Consultare:
 - [laravel-ide-helper-property-exists.md](./laravel-ide-helper-property-exists.md) per il contesto storico;
 - [ide-helper-models-governance.md](./ide-helper-models-governance.md) per la procedura corrente;
 - [property-exists-replacement-guide.md](./property-exists-replacement-guide.md) per i pattern Eloquent.
+<<<<<<< .merge_file_m01e29
 <<<<<<< HEAD
 =======
 =======
@@ -245,3 +249,5 @@ La filosofia è chiara: rispettare l'architettura Eloquent e fidarsi delle annot
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ejxf2v

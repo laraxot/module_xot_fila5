@@ -19,6 +19,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< .merge_file_1FRXNz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -28,10 +29,13 @@ use function Safe\realpath;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_gzVllP
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_1FRXNz
 <<<<<<< HEAD
 <<<<<<< HEAD
 use function Safe\realpath;
@@ -40,6 +44,10 @@ use function Safe\realpath;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use function Safe\realpath;
+
+>>>>>>> .merge_file_gzVllP
 /**
  * Class Modules\Xot\Datas\XotData.
  * ----.
@@ -153,6 +161,7 @@ class XotData extends Data implements Wireable
     public function getUserByEmail(string $email): UserContract
     {
         $user_class = $this->getUserClass();
+<<<<<<< .merge_file_1FRXNz
 <<<<<<< HEAD
 <<<<<<< HEAD
         $userInstance = new $user_class;
@@ -162,6 +171,9 @@ class XotData extends Data implements Wireable
 =======
         $userInstance = new $user_class();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $userInstance = new $user_class;
+>>>>>>> .merge_file_gzVllP
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
@@ -169,6 +181,7 @@ class XotData extends Data implements Wireable
         /** @var (Model&UserContract)|null $user */
         $user = $user_class::query()->where('email', $email)->first();
 
+<<<<<<< .merge_file_1FRXNz
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($user === null) {
@@ -178,6 +191,9 @@ class XotData extends Data implements Wireable
 =======
         if (null === $user) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($user === null) {
+>>>>>>> .merge_file_gzVllP
             throw new \Exception('user not found for email '.$email);
         }
 
@@ -339,11 +355,7 @@ class XotData extends Data implements Wireable
     public function iAmSuperAdmin(): bool
     {
         $user = Auth::user();
-<<<<<<< HEAD
         if ($user === null) {
-=======
-        if (null === $user) {
->>>>>>> laraxot/dev
             return false;
         }
 
@@ -354,20 +366,12 @@ class XotData extends Data implements Wireable
         // Utilizziamo un'asserzione per garantire che hasRole restituisca un booleano
         $result = $user->hasRole('super-admin');
 
-<<<<<<< HEAD
         return $result === true;
-=======
-        return true === $result;
->>>>>>> laraxot/dev
     }
 
     public function getProfileModel(): ProfileContract
     {
-<<<<<<< HEAD
         if ($this->profile !== null) {
-=======
-        if (null !== $this->profile) {
->>>>>>> laraxot/dev
             return $this->profile;
         }
 
@@ -385,11 +389,7 @@ class XotData extends Data implements Wireable
     /**
      * Update the XotData instance.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
      */
     public function update(array $data): self
     {
@@ -525,11 +525,7 @@ class XotData extends Data implements Wireable
 
         // $enum_class = Arr::get($user_class::casts(),'type',null);
         $enum_class = Arr::get($castsResult, 'type', null);
-<<<<<<< HEAD
         if ($enum_class === null) {
-=======
-        if (null === $enum_class) {
->>>>>>> laraxot/dev
             $enum_class = Str::of($user_class)
                 ->replace('\\Models\\', '\\Enums\\')
                 ->append('TypeEnum')
@@ -556,7 +552,6 @@ class XotData extends Data implements Wireable
         if (! $this->force_ssl) {
             return false;
         }
-<<<<<<< HEAD
         if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === 'localhost') {
             return false;
         }
@@ -565,16 +560,6 @@ class XotData extends Data implements Wireable
         }
         // AWS ELB
         if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
-=======
-        if (isset($_SERVER['SERVER_NAME']) && 'localhost' === $_SERVER['SERVER_NAME']) {
-            return false;
-        }
-        if (isset($_SERVER['SERVER_NAME']) && '127.0.0.1' === $_SERVER['SERVER_NAME']) {
-            return false;
-        }
-        // AWS ELB
-        if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO']) {
->>>>>>> laraxot/dev
             return true;
         }
 

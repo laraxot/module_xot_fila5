@@ -374,6 +374,7 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [wikimedia/composer-merge-plugin GitHub](https://github.com/wikimedia/composer-merge-plugin)
 - [Xot Helpers Documentation](./helpers.md)
 - [Tenant Helper Dependency](../../Tenant/docs/helper-functions-dependency.md)
+<<<<<<< .merge_file_uBOIOz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -384,6 +385,8 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kB8LbZ
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 
@@ -509,6 +512,7 @@ $models = $action->execute($moduleName);
 
 ---
 
+<<<<<<< .merge_file_uBOIOz
 <<<<<<< HEAD
 <<<<<<< HEAD
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
@@ -522,3 +526,6 @@ $models = $action->execute($moduleName);
 =======
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+>>>>>>> .merge_file_kB8LbZ

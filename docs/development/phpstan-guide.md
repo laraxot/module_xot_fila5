@@ -154,17 +154,21 @@ use Modules\User\Models\User; // Namespace corretto
 
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
+<<<<<<< .merge_file_Bb7RKL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Wwtvsf
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
 
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
 **Versione:** 2.0 - Consolidata DRY + KISS
+<<<<<<< .merge_file_Bb7RKL
 <<<<<<< HEAD
 =======
 =======
@@ -182,3 +186,5 @@ use Modules\User\Models\User; // Namespace corretto
 =======
 **Versione:** 2.0 - Consolidata DRY + KISS
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wwtvsf

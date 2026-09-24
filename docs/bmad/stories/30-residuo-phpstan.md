@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Q3NCHB
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_RGxX8p
 # BMAD Story 30 — Residuo PHPStan (sub-agent)
 **Status:** IN PROGRESS — sub-agent attivo (swarm)
 **File:** da correggere (staticCall/getFormSchema/getInfolistSchema su instance)

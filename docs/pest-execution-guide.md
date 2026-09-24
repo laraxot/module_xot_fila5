@@ -383,6 +383,7 @@ cd laravel
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
 **Versione Pest**: 3.8.4  
+<<<<<<< .merge_file_z60hFz
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status**: ✅ Documentazione Completa
@@ -396,3 +397,6 @@ cd laravel
 =======
 **Status**: ✅ Documentazione Completa
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Status**: ✅ Documentazione Completa
+>>>>>>> .merge_file_kE83z8

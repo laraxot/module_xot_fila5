@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
 <<<<<<< HEAD
 declare(strict_types=1);
@@ -21,10 +22,14 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_QxbLND
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Table;
@@ -60,6 +65,11 @@ namespace Modules\Xot\Filament\Actions\Table;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+namespace Modules\Xot\Filament\Actions\Table;
+
+use Exception;
+>>>>>>> .merge_file_QxbLND
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -77,6 +87,7 @@ class ExportXlsTableAction extends XotBaseAction
         $this->translateLabel()
             ->tooltip(__('xot::actions.export_xls'))
             // ->icon('fas-file-excel')
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
             ->icon('heroicon-o-arrow-down-tray')
             ->action(static function (RelationManager $livewire) {
@@ -110,6 +121,11 @@ class ExportXlsTableAction extends XotBaseAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            ->icon('xot-files.xls')
+            ->action(static function (RelationManager $livewire) {
+                $livewireClass = $livewire::class;
+>>>>>>> .merge_file_QxbLND
                 $filterParts = array_map(
                     static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
                     Arr::flatten($livewire->tableFilters ?? []),
@@ -119,6 +135,7 @@ class ExportXlsTableAction extends XotBaseAction
                     '-'.
                     implode('-', $filterParts).
                     '.xlsx';
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -143,11 +160,14 @@ class ExportXlsTableAction extends XotBaseAction
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 =======
+=======
+>>>>>>> .merge_file_QxbLND
                 $transKey = app(GetTransKeyAction::class)->execute($livewireClass);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
                 if ($query === null) {
                     throw new Exception('Query is null');
+<<<<<<< .merge_file_rOQSCh
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -161,11 +181,14 @@ class ExportXlsTableAction extends XotBaseAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_QxbLND
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 /** @var Builder<Model> $eloquentQuery */
                 $eloquentQuery = $query;
                 $rows = $eloquentQuery->get();
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
 <<<<<<< HEAD
                 /** @var array<int|string, string> $fields */
@@ -228,6 +251,9 @@ class ExportXlsTableAction extends XotBaseAction
                 $fields = self::resolveXlsFields($livewireClass, $livewire->tableFilters);
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+                $fields = self::resolveXlsFields($livewireClass, $livewire->tableFilters);
+>>>>>>> .merge_file_QxbLND
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
@@ -237,6 +263,7 @@ class ExportXlsTableAction extends XotBaseAction
     {
         return 'export_xls';
     }
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -249,11 +276,14 @@ class ExportXlsTableAction extends XotBaseAction
 >>>>>>> .merge_file_MVGGlS
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_QxbLND
 
     /**
      * Chiave stringa = percorso data_get con intestazione esplicita
      * (title rating); chiave intera = percorso tradotto via transKey.
      *
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
 <<<<<<< .merge_file_D03j1Y
      * @param  class-string  $livewireClass
@@ -267,6 +297,10 @@ class ExportXlsTableAction extends XotBaseAction
      * @param  class-string  $livewireClass
      * @param  array<string, mixed>|null  $tableFilters
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  class-string  $livewireClass
+     * @param  array<string, mixed>|null  $tableFilters
+>>>>>>> .merge_file_QxbLND
      * @return array<int|string, string>
      */
     private static function resolveXlsFields(string $livewireClass, ?array $tableFilters): array
@@ -290,6 +324,7 @@ class ExportXlsTableAction extends XotBaseAction
 
         return $fields;
     }
+<<<<<<< .merge_file_rOQSCh
 <<<<<<< HEAD
 <<<<<<< .merge_file_D03j1Y
 >>>>>>> laraxot/dev
@@ -299,4 +334,6 @@ class ExportXlsTableAction extends XotBaseAction
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_QxbLND
 }

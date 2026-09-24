@@ -36,15 +36,19 @@ use Filament\Forms\Components\DatePicker;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_a1bU1Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iioeKT
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_a1bU1Y
 <<<<<<< HEAD
 =======
 =======
@@ -54,6 +58,8 @@ class ExampleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iioeKT
     {
         return [
             TextInput::make('nome')->required(),
@@ -136,15 +142,19 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_a1bU1Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iioeKT
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_a1bU1Y
 <<<<<<< HEAD
 =======
 =======
@@ -154,6 +164,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iioeKT
 {
     return [
         // Schema del form
@@ -509,6 +521,7 @@ class ExampleResource extends XotBaseResource
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< .merge_file_a1bU1Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Categoria: Filament*
@@ -522,3 +535,6 @@ class ExampleResource extends XotBaseResource
 =======
 *Categoria: Filament*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Categoria: Filament*
+>>>>>>> .merge_file_iioeKT

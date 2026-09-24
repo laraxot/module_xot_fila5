@@ -12,6 +12,7 @@ use Filament\Actions\AttachAction as FilamentAttachAction;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's AttachAction to provide a XotBase layer.
  */
+<<<<<<< .merge_file_GTJ9Eb
 <<<<<<< HEAD
 <<<<<<< HEAD
 abstract class XotBaseAttachAction extends FilamentAttachAction {}
@@ -41,3 +42,9 @@ abstract class XotBaseAttachAction extends FilamentAttachAction
 =======
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+abstract class XotBaseAttachAction extends FilamentAttachAction
+{
+    // ...
+}
+>>>>>>> .merge_file_zCzkt7

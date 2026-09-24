@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< .merge_file_SpO0Pc
 <<<<<<< HEAD
 <<<<<<< HEAD
-use Mockery;
 =======
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_7t3JNr
+use Mockery;
 use Mockery\MockInterface;
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -36,11 +37,7 @@ describe('Get Tenant Config Actions', function (): void {
 
 <<<<<<< HEAD
         /** @var GetTenantFilePathAction&MockInterface $mock */
-<<<<<<< HEAD
         $mock = Mockery::mock(GetTenantFilePathAction::class);
-=======
-        $mock = \Mockery::mock(GetTenantFilePathAction::class);
->>>>>>> laraxot/dev
         $mock->shouldReceive('execute')
             ->with($configName.'.php')
             ->andReturn($tempPath);
@@ -66,11 +63,7 @@ describe('Get Tenant Config Actions', function (): void {
         $configName = 'non_existent';
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
-<<<<<<< HEAD
         $mock = Mockery::mock(GetTenantFilePathAction::class);
-=======
-        $mock = \Mockery::mock(GetTenantFilePathAction::class);
->>>>>>> laraxot/dev
         $mock->shouldReceive('execute')
             ->andReturn('/path/to/nothing.php');
 =======

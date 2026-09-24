@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_NuBqa8
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,6 +11,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Trn1Ld
 ---
 name: testing-fixes-progress-sessione-2025-0
 description: "Data: 2025-01-22"
@@ -17,6 +20,7 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_NuBqa8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +40,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Trn1Ld
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22

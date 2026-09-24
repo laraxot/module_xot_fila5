@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_VzFHex
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -136,6 +137,8 @@ Tutti i test corretti seguono questo principio:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yFH7eL
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22
@@ -252,6 +255,7 @@ Tutti i test corretti seguono questo principio:
 ## 🔗 Collegamenti
 
 - [Testing Rules](../testing-rules.md)
+<<<<<<< .merge_file_VzFHex
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -266,6 +270,8 @@ Tutti i test corretti seguono questo principio:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yFH7eL
 - [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
@@ -275,6 +281,7 @@ Tutti i test corretti seguono questo principio:
 ---
 
 **Status**: In Progress
+<<<<<<< .merge_file_VzFHex
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
@@ -288,3 +295,6 @@ Tutti i test corretti seguono questo principio:
 =======
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
+>>>>>>> .merge_file_yFH7eL

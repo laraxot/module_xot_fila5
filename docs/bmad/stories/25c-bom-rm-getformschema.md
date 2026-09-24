@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_YRZucV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_AYyC1I
 # 25c-bom — Rimuovere getFormSchema da BomResource
 
 **Modulo:** Bom

@@ -125,6 +125,7 @@ Filament Resource → XotBaseResource → FilamentResource
 ### Required Implementation
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_6n0s23
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -135,10 +136,13 @@ Filament Resource → XotBaseResource → FilamentResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_5WGOGt
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_6n0s23
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -151,6 +155,8 @@ abstract public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_5WGOGt
 ```
 
 ### Page Generation

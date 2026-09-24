@@ -30,14 +30,18 @@ it('casts various values to array correctly', function (): void {
     // Collection
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     // stdClass
+<<<<<<< .merge_file_mxhXdF
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_o9nb1q
     $obj = new stdClass;
     $obj->c = 3;
     Assert::assertSame(['c' => 3], $action->execute($obj));
     // Object with toArray
     $objToArray = new class
     {
+<<<<<<< .merge_file_mxhXdF
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -50,6 +54,8 @@ it('casts various values to array correctly', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9nb1q
         /** @return array<string, int> */
         public function toArray(): array
         {
@@ -58,6 +64,7 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['d' => 4], $action->execute($objToArray));
     // Object with __toArray
+<<<<<<< .merge_file_mxhXdF
 <<<<<<< HEAD
 <<<<<<< HEAD
     $objUnderscoreToArray = new class
@@ -68,6 +75,10 @@ it('casts various values to array correctly', function (): void {
 =======
     $objUnderscoreToArray = new class {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $objUnderscoreToArray = new class
+    {
+>>>>>>> .merge_file_o9nb1q
         /** @return array<string, int> */
         public function __toArray(): array
         {
@@ -76,6 +87,7 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['e' => 5], $action->execute($objUnderscoreToArray));
     // Regular object (public properties)
+<<<<<<< .merge_file_mxhXdF
 <<<<<<< HEAD
 <<<<<<< HEAD
     $regObj = new class
@@ -86,6 +98,10 @@ it('casts various values to array correctly', function (): void {
 =======
     $regObj = new class {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $regObj = new class
+    {
+>>>>>>> .merge_file_o9nb1q
         public int $f = 6;
     };
     Assert::assertSame(['f' => 6], $action->execute($regObj));
@@ -127,6 +143,7 @@ it('checks if value can be cast', function (): void {
     Assert::assertTrue($action->canCast([]));
     Assert::assertTrue($action->canCast(null));
     Assert::assertTrue($action->canCast('str'));
+<<<<<<< .merge_file_mxhXdF
 <<<<<<< HEAD
 <<<<<<< HEAD
     Assert::assertTrue($action->canCast(new stdClass));
@@ -136,6 +153,9 @@ it('checks if value can be cast', function (): void {
 =======
     Assert::assertTrue($action->canCast(new stdClass()));
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    Assert::assertTrue($action->canCast(new stdClass));
+>>>>>>> .merge_file_o9nb1q
 });
 
 it('uses static cast method correctly', function (): void {

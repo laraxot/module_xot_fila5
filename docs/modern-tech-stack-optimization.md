@@ -1808,6 +1808,7 @@ class ContactDashboard extends Dashboard
         return [
             'overview' => [
                 'label' => 'Overview',
+<<<<<<< .merge_file_f6NCww
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1815,6 +1816,8 @@ class ContactDashboard extends Dashboard
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tJn692
                 'url' => route('filament.quaeris.dashboard'),
                 'isActive' => request()->routeIs('filament.quaeris.dashboard'),
             ],
@@ -1827,6 +1830,7 @@ class ContactDashboard extends Dashboard
                 'label' => 'Reports',
                 'url' => route('filament.quaeris.reports'),
                 'isActive' => request()->routeIs('filament.quaeris.reports'),
+<<<<<<< .merge_file_f6NCww
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1847,6 +1851,8 @@ class ContactDashboard extends Dashboard
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tJn692
             ],
         ];
     }
@@ -1944,6 +1950,7 @@ class PerformanceMonitoringMiddleware
 - [ ] Documentation updated
 - [ ] Tests comprehensive (85%+ coverage)
 
+<<<<<<< .merge_file_f6NCww
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
@@ -1957,3 +1964,6 @@ Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfru
 =======
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
+>>>>>>> .merge_file_tJn692

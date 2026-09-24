@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_cLCbjV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HNl0no
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto
@@ -110,6 +113,7 @@ Prima di ogni commit, verificare:
 - [Convenzioni Namespace](namespace-rules.md)
 - [Best Practices](best-practices.md)
 - [PHPStan Configuration](phpstan/configuration.md)
+<<<<<<< .merge_file_cLCbjV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -130,3 +134,5 @@ Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wik
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HNl0no

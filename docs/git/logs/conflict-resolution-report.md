@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitti Git - Report di Intervento"
+module: "Xot"
+type: concept
+tags: [conflict, resolution, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Conflitti Git - Report di Intervento
 
 ## Panoramica

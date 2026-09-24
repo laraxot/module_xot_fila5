@@ -66,6 +66,7 @@
         "tightenco/parental": "*"
     },
     "require_comment": {
+<<<<<<< .merge_file_isBurT
 <<<<<<< HEAD
 <<<<<<< HEAD
        
@@ -75,6 +76,9 @@
 =======
         "filament/spatie-laravel-translatable-plugin": "*"
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+       
+>>>>>>> .merge_file_J1mAFM
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
@@ -182,6 +186,7 @@
     "require-dev_comment": {
         "spatie/laravel-error-solutions": "*"
     }
+<<<<<<< .merge_file_isBurT
 <<<<<<< HEAD
 }
 =======
@@ -191,3 +196,6 @@
     "prefer-stable": true
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+}
+>>>>>>> .merge_file_J1mAFM

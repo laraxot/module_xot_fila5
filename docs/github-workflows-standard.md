@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_oeaqxn
 <<<<<<< HEAD
 <<<<<<< HEAD
 # GitHub Workflows Standard - base_laravelpizza
@@ -20,6 +21,11 @@
 
 **Ultimo aggiornamento**: 2025-01-10
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+# GitHub Workflows Standard - base_laravelpizza
+
+**Ultimo aggiornamento**: 2025-01-10
+>>>>>>> .merge_file_udjlsb
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 
@@ -133,6 +139,7 @@ Per ogni modulo/tema:
 Workflow per la sincronizzazione dei subtree e repository remoti.
 
 **Gestione Repository Privati (Bashscripts):**
+<<<<<<< .merge_file_oeaqxn
 <<<<<<< HEAD
 <<<<<<< HEAD
 Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
@@ -146,12 +153,16 @@ Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'or
 =======
 Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
+>>>>>>> .merge_file_udjlsb
 Questo ci permette di usare il `GITHUB_TOKEN` standard invece di dover gestire un PAT segreto (`BASHSCRIPTS_PAT`) per repository esterni.
 
 ```yaml
       - name: Checkout bashscripts
         uses: actions/checkout@v4
         with:
+<<<<<<< .merge_file_oeaqxn
 <<<<<<< HEAD
 <<<<<<< HEAD
           repository: provtv/bashscripts_fila4
@@ -165,6 +176,9 @@ Questo ci permette di usare il `GITHUB_TOKEN` standard invece di dover gestire u
 =======
           repository: provtv/bashscripts_fila4
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+          repository: provtv/bashscripts_fila4
+>>>>>>> .merge_file_udjlsb
           token: ${{ secrets.GITHUB_TOKEN }} # Accessibile nativamente nell'organizzazione
           path: bashscripts
 ```
@@ -191,6 +205,7 @@ Il checkout principale deve disabilitare i submodule per evitare errori su indic
 
 ---
 
+<<<<<<< .merge_file_oeaqxn
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
@@ -204,3 +219,6 @@ Il checkout principale deve disabilitare i submodule per evitare errori su indic
 =======
 **Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
+>>>>>>> .merge_file_udjlsb

@@ -56,6 +56,7 @@
 ## Stato
 - ❌ Conflitti da risolvere
 - 📅 Data rilevamento: 2025-11-12
+<<<<<<< .merge_file_Yplm7a
 <<<<<<< HEAD
 <<<<<<< HEAD
 - 🔄 Priorità: ALTA - File critici del core framework
@@ -70,3 +71,6 @@
 =======
 - 🔄 Priorità: ALTA - File critici del core framework
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- 🔄 Priorità: ALTA - File critici del core framework
+>>>>>>> .merge_file_8NbQdX

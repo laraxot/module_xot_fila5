@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Translators;
 
+<<<<<<< .merge_file_D3iCMk
 <<<<<<< HEAD
 <<<<<<< HEAD
 abstract class BaseTranslator {}
@@ -27,3 +28,6 @@ abstract class BaseTranslator
 {
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+abstract class BaseTranslator {}
+>>>>>>> .merge_file_sUWjOm

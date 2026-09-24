@@ -21,6 +21,7 @@ class UpdateAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_cEY4X5
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $data
@@ -33,6 +34,10 @@ class UpdateAction
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $rules
+>>>>>>> .merge_file_sBpBWE
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -41,6 +46,7 @@ class UpdateAction
 
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
+<<<<<<< .merge_file_cEY4X5
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($model->getKey() === null) {
@@ -50,6 +56,9 @@ class UpdateAction
 =======
         if (null === $model->getKey()) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($model->getKey() === null) {
+>>>>>>> .merge_file_sBpBWE
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();

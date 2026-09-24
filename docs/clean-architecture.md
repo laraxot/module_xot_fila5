@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_gEttJb
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Drive
 =======
 >>>>>>> .merge_file_B5S3eV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FzqRrN
 ---
 title: 'clean_architecture'
 module: Xot
@@ -30,6 +33,7 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/clean_architecture.txt -->
 
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
+<<<<<<< .merge_file_gEttJb
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_siD0xb
@@ -45,3 +49,5 @@ https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Drive
 =======
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_FzqRrN

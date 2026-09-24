@@ -16,6 +16,7 @@ class RelationAction
     /**
      * Undocumented function.
      *
+<<<<<<< .merge_file_MMBqsg
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -46,6 +47,9 @@ class RelationAction
 =======
      * @param array<string, mixed> $data
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_VpcJa0
      */
     public function execute(Model $model, array $data): void
     {

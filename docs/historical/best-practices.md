@@ -289,6 +289,7 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_3lQZ2F
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -299,10 +300,13 @@ class MioModelloResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DWthe0
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3lQZ2F
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -315,6 +319,8 @@ class MioModelloResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DWthe0
     {
         return [
             Forms\Components\TextInput::make('nome')

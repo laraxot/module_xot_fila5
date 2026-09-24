@@ -19,6 +19,7 @@ final class SafeNullableStringCastAction
     {
         $stringValue = SafeStringCastAction::cast($value);
 
+<<<<<<< .merge_file_yGqPYe
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $stringValue !== '' ? $stringValue : null;
@@ -28,6 +29,9 @@ final class SafeNullableStringCastAction
 =======
         return '' !== $stringValue ? $stringValue : null;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        return $stringValue !== '' ? $stringValue : null;
+>>>>>>> .merge_file_K81nUi
     }
 
     public static function cast(mixed $value): ?string

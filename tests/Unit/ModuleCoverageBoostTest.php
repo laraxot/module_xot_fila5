@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Unit;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_BPuhxu
 <<<<<<< HEAD
 <<<<<<< HEAD
 use ReflectionClass;
@@ -21,6 +22,9 @@ use ReflectionClass;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use ReflectionClass;
+>>>>>>> .merge_file_QVx5JY
 
 use function Safe\glob;
 
@@ -65,6 +69,7 @@ describe('Xot coverage boost', function (): void {
                     Assert::assertNotEmpty($case->getLabel());
                 }
             }
+<<<<<<< .merge_file_BPuhxu
 <<<<<<< HEAD
 <<<<<<< HEAD
             $seen++;
@@ -82,12 +87,16 @@ describe('Xot coverage boost', function (): void {
 =======
             ++$seen;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            $seen++;
+>>>>>>> .merge_file_QVx5JY
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un enum concreto');
     });
 
     test('cast and string actions resolve from container', function (): void {
         foreach (array_merge(xotBoostClasses('Actions/Cast/*.php'), xotBoostClasses('Actions/String/*.php')) as $class) {
+<<<<<<< .merge_file_BPuhxu
 <<<<<<< HEAD
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -105,6 +114,9 @@ describe('Xot coverage boost', function (): void {
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            $ref = new ReflectionClass($class);
+>>>>>>> .merge_file_QVx5JY
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -115,6 +127,7 @@ describe('Xot coverage boost', function (): void {
 
     test('value objects and datas are constructible', function (): void {
         foreach (array_merge(xotBoostClasses('ValueObjects/*.php'), xotBoostClasses('Datas/*.php')) as $class) {
+<<<<<<< .merge_file_BPuhxu
 <<<<<<< HEAD
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -132,6 +145,9 @@ describe('Xot coverage boost', function (): void {
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            $ref = new ReflectionClass($class);
+>>>>>>> .merge_file_QVx5JY
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }

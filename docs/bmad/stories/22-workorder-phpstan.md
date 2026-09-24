@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_j13SJO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_X51UZH
 # BMAD Story 22 — WorkOrder: 6 errori PHPStan
 
 **Modulo:** `WorkOrder`

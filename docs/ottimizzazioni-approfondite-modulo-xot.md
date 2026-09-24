@@ -227,6 +227,7 @@ grep -r "extends.*Resource" app/Filament/Resources/
 
 ## 🔗 Collegamenti Sistema
 
+<<<<<<< .merge_file_arsVWo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -234,11 +235,14 @@ grep -r "extends.*Resource" app/Filament/Resources/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kppJpA
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
+<<<<<<< .merge_file_arsVWo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -252,6 +256,8 @@ grep -r "extends.*Resource" app/Filament/Resources/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kppJpA
 
 ---
 
@@ -259,6 +265,7 @@ grep -r "extends.*Resource" app/Filament/Resources/
 **Impatto:** Tutti i moduli e sviluppatori
 **Stato:** In attesa implementazione
 **Responsabile:** Team Core
+<<<<<<< .merge_file_arsVWo
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Data:** 2025-01-XX
@@ -272,3 +279,6 @@ grep -r "extends.*Resource" app/Filament/Resources/
 =======
 **Data:** 2025-01-XX
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Data:** 2025-01-XX
+>>>>>>> .merge_file_kppJpA

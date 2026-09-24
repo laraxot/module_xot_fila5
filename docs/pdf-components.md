@@ -153,6 +153,7 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 
 - [Documentazione Componenti](../componenti_personalizzati.md)
 - [Best Practices Filament](../filament-best-practices.mdc)
+<<<<<<< .merge_file_g7HRgL
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [README Principale](README.md)
@@ -166,6 +167,9 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 =======
 - [README Principale](../readme.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [README Principale](README.md)
+>>>>>>> .merge_file_mJIEuf
 
 ## Note di Sviluppo
 

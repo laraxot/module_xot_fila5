@@ -39,8 +39,8 @@ class FieldRefreshAction extends Action
 <<<<<<< HEAD
             ->action(function (mixed $record, Set $set): void {
                 $name = $this->getName();
-<<<<<<< HEAD
                 if ($name === null) {
+<<<<<<< .merge_file_C5ogIV
 =======
                 if (null === $name) {
 >>>>>>> laraxot/dev
@@ -49,6 +49,8 @@ class FieldRefreshAction extends Action
                 $name = $this->getName();
                 if (null === $name) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_gqLj5z
                     return;
                 }
 

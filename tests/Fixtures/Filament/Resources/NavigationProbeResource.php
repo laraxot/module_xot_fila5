@@ -15,6 +15,7 @@ class NavigationProbeResource extends XotBaseResource
     protected static string|\UnitEnum|null $navigationGroup = 'Test Group';
 
     protected static ?int $navigationSort = 1;
+<<<<<<< .merge_file_HTLnqL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -31,4 +32,6 @@ class NavigationProbeResource extends XotBaseResource
         return [];
     }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DAmcMC
 }

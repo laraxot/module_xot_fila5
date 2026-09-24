@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_jT2EOp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,6 +24,8 @@ https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 =======
 >>>>>>> .merge_file_HzSzlD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nZ4qCK
 ---
 title: 'Lazy — risorse esterne'
 module: Xot
@@ -48,6 +51,7 @@ updated: 2026-08-24
 - <https://github.com/ressio/lazy-load-xt>
 - <https://github.com/aFarkas/lazysizes>
 - <https://lazy-loading.firebaseapp.com/lazy_loading_lib.html>
+<<<<<<< .merge_file_jT2EOp
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_SSeQZ8
@@ -69,3 +73,5 @@ https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 =======
 https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_nZ4qCK

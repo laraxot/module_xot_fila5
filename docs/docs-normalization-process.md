@@ -27,6 +27,7 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
 ❌ ERRATO:
 - BugfixIconsMissing.md (maiuscole)
 - bugfix-icons-missing-2025-01-27.md (data nel nome)
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 - bugfix_icons_missing.md (underscore invece di trattini)
@@ -45,6 +46,10 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
 - bugfix_icons_missing.md (underscore invece di trattini)
 - bugfix-icons-missing-2025.md (anno nel nome)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- bugfix_icons_missing.md (underscore invece di trattini)
+- bugfix-icons-missing-2025.md (anno nel nome)
+>>>>>>> .merge_file_LgMyR9
 ```
 
 ## Processo di Normalizzazione
@@ -92,6 +97,7 @@ Per ogni file identificato:
 # Esempio: bugfix-icons-missing-2025-01-27.md è identico a bugfix-icons-missing.md
 # Azione: Eliminare file con data
 rm bugfix-icons-missing-2025-01-27.md
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -104,6 +110,8 @@ rm bugfix-icons-missing-[DATE].md
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LgMyR9
 ```
 
 #### Caso 2: File con Data (nessun duplicato)
@@ -112,6 +120,7 @@ rm bugfix-icons-missing-[DATE].md
 # Esempio: translation-refactor-complete-summary-2025-08-08.md
 # Azione: Rinominare rimuovendo data
 mv translation-refactor-complete-summary-2025-08-08.md translation-refactor-complete-summary.md
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -124,6 +133,8 @@ mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LgMyR9
 ```
 
 #### Caso 3: File con Maiuscole
@@ -168,6 +179,7 @@ Dopo ogni rinomina:
 
 **Situazione**:
 - `bugfix-icons-missing-2025-01-27.md` (100 righe)
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -178,6 +190,8 @@ Dopo ogni rinomina:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LgMyR9
 - `bugfix-icons-missing.md` (100 righe, identico)
 
 **Azione**:
@@ -186,6 +200,7 @@ Dopo ogni rinomina:
 diff bugfix-icons-missing-2025-01-27.md bugfix-icons-missing.md
 # Se identici, eliminare file con data
 rm bugfix-icons-missing-2025-01-27.md
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -198,12 +213,15 @@ rm bugfix-icons-missing-[DATE].md
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LgMyR9
 ```
 
 ### Esempio 2: File con Data (versione unica)
 
 **Situazione**:
 - `translation-refactor-complete-summary-2025-08-08.md` (contenuto completo)
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -214,12 +232,15 @@ rm bugfix-icons-missing-[DATE].md
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LgMyR9
 - `translation-refactor-complete-summary.md` (vuoto o non esiste)
 
 **Azione**:
 ```bash
 # Rinominare file rimuovendo data
 mv translation-refactor-complete-summary-2025-08-08.md translation-refactor-complete-summary.md
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -230,6 +251,8 @@ mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LgMyR9
 # Se il file contiene data nel corpo, mantenerla ma non nel nome
 ```
 
@@ -284,6 +307,7 @@ Per processi futuri, considerare script di automazione:
 ## Riferimenti
 
 - [Regole Naming File](../file-naming-rules.md)
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Piano Consolidamento Documentazione](../../../../docs/consolidamento-documentazione-2025.md)
@@ -301,11 +325,16 @@ Per processi futuri, considerare script di automazione:
 - [Piano Consolidamento Documentazione](../../../../docs/consolidamento-documentazione-2025.md)
 - [Filosofia DRY + KISS](../../../../docs/philosophy-guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Piano Consolidamento Documentazione](../../../../docs/consolidamento-documentazione-2025.md)
+- [Filosofia DRY + KISS](../../../../docs/philosophy-guide.md)
+>>>>>>> .merge_file_LgMyR9
 
 ---
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Stato**: Processo attivo
+<<<<<<< .merge_file_nOtmeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Priorità**: Alta (conformità regole progetto)
@@ -319,3 +348,6 @@ Per processi futuri, considerare script di automazione:
 =======
 **Priorità**: Alta (conformità regole progetto)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Priorità**: Alta (conformità regole progetto)
+>>>>>>> .merge_file_LgMyR9

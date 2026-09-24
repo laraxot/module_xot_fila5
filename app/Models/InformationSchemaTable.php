@@ -12,8 +12,11 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 
 /**
+<<<<<<< .merge_file_mabgCB
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_3nyUpx
  * @property int|null $table_rows
  * @property string $table_schema
  * @property string $table_name
@@ -23,6 +26,7 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  * @property int $id
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
+<<<<<<< .merge_file_mabgCB
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -39,10 +43,13 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_3nyUpx
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
+<<<<<<< .merge_file_mabgCB
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @method static InformationSchemaTableFactory factory($count = null, $state = [])
@@ -52,6 +59,9 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 =======
  * @method static InformationSchemaTableFactory          factory($count = null, $state = [])
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+ * @method static InformationSchemaTableFactory factory($count = null, $state = [])
+>>>>>>> .merge_file_3nyUpx
  * @method static Builder<static>|InformationSchemaTable newModelQuery()
  * @method static Builder<static>|InformationSchemaTable newQuery()
  * @method static Builder<static>|InformationSchemaTable query()
@@ -132,6 +142,7 @@ class InformationSchemaTable extends BaseModel
     /**
      * Aggiorna il numero di record memorizzato per un modello.
      *
+<<<<<<< .merge_file_mabgCB
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
@@ -141,6 +152,9 @@ class InformationSchemaTable extends BaseModel
 =======
      * @param class-string<Model> $modelClass
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> .merge_file_3nyUpx
      */
     public static function updateModelCount(string $modelClass, int $total): void
     {
@@ -170,6 +184,7 @@ class InformationSchemaTable extends BaseModel
     /**
      * Restituisce il numero di record per un modello.
      *
+<<<<<<< .merge_file_mabgCB
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
@@ -179,6 +194,9 @@ class InformationSchemaTable extends BaseModel
 =======
      * @param class-string<Model> $modelClass
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> .merge_file_3nyUpx
      */
     public static function getModelCount(string $modelClass): int
     {
@@ -202,6 +220,7 @@ class InformationSchemaTable extends BaseModel
             'table_name' => $table,
         ]);
 
+<<<<<<< .merge_file_mabgCB
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($record->table_rows === null) {
@@ -211,6 +230,9 @@ class InformationSchemaTable extends BaseModel
 =======
         if (null === $record->table_rows) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($record->table_rows === null) {
+>>>>>>> .merge_file_3nyUpx
             $record->update(['table_rows' => $model->count()]);
         }
 

@@ -81,27 +81,16 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_E1WNBP
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_X6u7DV
+>>>>>>> .merge_file_wnLo9m
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GdZKOa
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -178,8 +167,8 @@ class MediaConvertResource extends XotBaseResource
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
 - [Documentazione modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
-<<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
+<<<<<<< .merge_file_E1WNBP
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -210,3 +199,5 @@ class MediaConvertResource extends XotBaseResource
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wnLo9m

@@ -74,6 +74,7 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< .merge_file_K3eTc4
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -99,6 +100,9 @@ class EditModule extends XotBaseEditRecord
      * @param array<array-key, mixed> $config
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  array<array-key, mixed>  $config
+>>>>>>> .merge_file_sUtEtI
      * @return array<string, mixed>
      */
     private function normalizeConfigArray(array $config): array

@@ -205,6 +205,7 @@ $rows = $query->get();
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_IsukKg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -212,10 +213,13 @@ $rows = $query->get();
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oTJjn8
 - [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< .merge_file_IsukKg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -228,3 +232,5 @@ $rows = $query->get();
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oTJjn8

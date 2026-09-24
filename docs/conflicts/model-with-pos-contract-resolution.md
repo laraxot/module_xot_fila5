@@ -115,6 +115,7 @@ Questa risoluzione garantisce:
 
 ## Collegamento con la Documentazione Principale
 
+<<<<<<< .merge_file_WXVBWJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
@@ -128,3 +129,6 @@ Per una panoramica di tutti i conflitti risolti, vedere il documento principale 
 =======
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
+>>>>>>> .merge_file_4A7aQD

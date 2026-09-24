@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -235,6 +236,8 @@ class YourResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_enUpMf
 # Laravel XOT Architecture Documentation
 
 ## Overview
@@ -708,6 +711,7 @@ class ModuleResource extends XotBaseResource
 }
 ```
 
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -790,6 +794,8 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_enUpMf
 ### 2. Custom Actions
 
 ```php
@@ -1519,6 +1525,7 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 
 3. **Form Schema**
    ```php
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1537,6 +1544,9 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
    {
        return [
            // Form fields
@@ -4775,6 +4785,7 @@ protected function getListTableBulkActions(): array
 protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4793,6 +4804,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 ```
 
 ### 2. Implementazione Corretta
@@ -4802,6 +4816,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4820,6 +4835,9 @@ class TicketResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
     {
         return [
             TextInput::make('title')->required(),
@@ -4840,6 +4858,7 @@ protected function getFormSchema(): array
 public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4858,11 +4877,15 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 ```
 
 ### 2. Accesso a Proprietà
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4882,6 +4905,9 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 {
     return [
         TextInput::make('name')
@@ -4890,6 +4916,7 @@ public static function getFormSchema(): array
 }
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4908,6 +4935,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 {
     return [
         TextInput::make('name')
@@ -4925,6 +4955,7 @@ public static function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4944,6 +4975,9 @@ public static function getFormSchema(): array
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
    {
        return [
            // schema components
@@ -4975,6 +5009,7 @@ public static function getFormSchema(): array
 2. **Type Safety**:
    ```php
    // Usa sempre return type declarations
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4993,6 +5028,9 @@ public static function getFormSchema(): array
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
    ```
 
 3. **Documentazione**:
@@ -5000,6 +5038,7 @@ public static function getFormSchema(): array
    /**
     * @return array<int, \Filament\Forms\Components\Component>
     */
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5019,6 +5058,9 @@ public static function getFormSchema(): array
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
    ```
 
 4. **Contesto Statico**:
@@ -6171,6 +6213,7 @@ class TicketResource extends XotBaseResource
 {
     protected static ?string $model = Ticket::class;
 
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6189,6 +6232,9 @@ class TicketResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
     {
         return [...];
     }
@@ -7635,6 +7681,7 @@ protected function getListTableBulkActions(): array
 protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7653,6 +7700,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 ```
 
 ### 2. Implementazione Corretta
@@ -7662,6 +7712,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7680,6 +7731,9 @@ class TicketResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
     {
         return [
             TextInput::make('title')->required(),
@@ -7700,6 +7754,7 @@ protected function getFormSchema(): array
 public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7718,11 +7773,15 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 ```
 
 ### 2. Accesso a Proprietà
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7742,6 +7801,9 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 {
     return [
         TextInput::make('name')
@@ -7750,6 +7812,7 @@ public static function getFormSchema(): array
 }
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7768,6 +7831,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
 {
     return [
         TextInput::make('name')
@@ -7785,6 +7851,7 @@ public static function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7804,6 +7871,9 @@ public static function getFormSchema(): array
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
    {
        return [
            // schema components
@@ -7835,6 +7905,7 @@ public static function getFormSchema(): array
 2. **Type Safety**:
    ```php
    // Usa sempre return type declarations
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7853,6 +7924,9 @@ public static function getFormSchema(): array
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
    ```
 
 3. **Documentazione**:
@@ -7860,6 +7934,7 @@ public static function getFormSchema(): array
    /**
     * @return array<int, \Filament\Forms\Components\Component>
     */
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7879,6 +7954,9 @@ public static function getFormSchema(): array
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_enUpMf
    ```
 
 4. **Contesto Statico**:
@@ -9460,6 +9538,7 @@ class ClientMapWidget extends Widget
 4. Gestire i casi di errore in modo graceful
 5. La reattività funziona automaticamente con Livewire 3
   - Contact section
+<<<<<<< .merge_file_rLeajt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -9471,3 +9550,5 @@ class ClientMapWidget extends Widget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_enUpMf

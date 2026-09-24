@@ -10,6 +10,7 @@ Secondo le regole di organizzazione della documentazione:
 
 ## Collegamenti Principali
 
+<<<<<<< .merge_file_H9BAsA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -32,6 +33,8 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oZIACc
 - [Documentazione Frontend](../../Cms/docs/frontoffice.md) - Documentazione completa sul frontend
 - [Gestione dei Temi](../../Cms/docs/theme_compilation.md) - Compilazione e pubblicazione dei temi
 - [Componenti Blade](../../Cms/docs/components.md) - Documentazione sui componenti Blade
@@ -49,6 +52,7 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 > Aggiorna entrambi i riferimenti se modifichi la struttura della documentazione o aggiungi nuove sezioni.
 
 ## Collegamenti tra versioni di cms-link.md
+<<<<<<< .merge_file_H9BAsA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -68,11 +72,16 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 * [cms-link.md](../../../user/docs/cms-link.md)
 * [cms-link.md](../../../ui/docs/cms-link.md)
 * [cms-link.md](../../../lang/docs/cms-link.md)
+=======
+>>>>>>> .merge_file_oZIACc
 * [cms-link.md](../../../Xot/docs/cms-link.md)
 * [cms-link.md](../../../User/docs/cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
 * [cms-link.md](../../../Lang/docs/cms-link.md)
+<<<<<<< .merge_file_H9BAsA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oZIACc

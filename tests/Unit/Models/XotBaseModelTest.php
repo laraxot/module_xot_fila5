@@ -62,6 +62,7 @@ test('xot base model has correct property types', function (): void {
     $snakeType = $snakeAttributesProperty->getType();
     $perPageType = $perPageProperty->getType();
 
+<<<<<<< .merge_file_mS75ty
 <<<<<<< HEAD
 <<<<<<< HEAD
     if ($snakeType !== null) {
@@ -71,12 +72,16 @@ test('xot base model has correct property types', function (): void {
 =======
     if (null !== $snakeType) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    if ($snakeType !== null) {
+>>>>>>> .merge_file_aKFwyv
         Assert::assertInstanceOf(ReflectionNamedType::class, $snakeType);
         Assert::assertSame('bool', $snakeType->getName());
     } else {
         Assert::assertTrue(XotBaseModel::$snakeAttributes);
     }
 
+<<<<<<< .merge_file_mS75ty
 <<<<<<< HEAD
 <<<<<<< HEAD
     if ($perPageType !== null) {
@@ -86,6 +91,9 @@ test('xot base model has correct property types', function (): void {
 =======
     if (null !== $perPageType) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    if ($perPageType !== null) {
+>>>>>>> .merge_file_aKFwyv
         Assert::assertInstanceOf(ReflectionNamedType::class, $perPageType);
         Assert::assertSame('int', $perPageType->getName());
     } else {

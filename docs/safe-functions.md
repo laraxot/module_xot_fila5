@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_6r3ekV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JOhEJi
 # Funzioni Safe nel Modulo Xot
 
 ## Panoramica
@@ -201,6 +204,7 @@ Safe\file_put_contents($filename, $modifiedContents);
 - [Documentazione thecodingmachine/safe](https://github.com/thecodingmachine/safe)
 - [Lista completa funzioni Safe](https://github.com/thecodingmachine/safe/blob/master/generated/Safe.php)
 - [Gestione Eccezioni in PHP](https://www.php.net/manual/en/language.exceptions.php)
+<<<<<<< .merge_file_6r3ekV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -216,3 +220,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/safe-functio
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JOhEJi

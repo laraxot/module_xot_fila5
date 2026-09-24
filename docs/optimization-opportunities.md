@@ -348,6 +348,7 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+<<<<<<< .merge_file_fT5QID
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
@@ -369,6 +370,11 @@ abstract class BaseModel extends XotBaseModel
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+>>>>>>> .merge_file_7Zb1CD
 
 **Soluzione DRY + KISS**:
 ```php
@@ -633,6 +639,7 @@ return array_merge(
 ---
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< .merge_file_fT5QID
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Autore: Analisi Automatica del Progetto*
@@ -646,3 +653,6 @@ return array_merge(
 =======
 *Autore: Analisi Automatica del Progetto*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Autore: Analisi Automatica del Progetto*
+>>>>>>> .merge_file_7Zb1CD

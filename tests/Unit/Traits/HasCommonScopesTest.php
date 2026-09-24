@@ -23,8 +23,8 @@ use Modules\Xot\Tests\Fixtures\Models\HasCommonScopesProbe;
 use PHPUnit\Framework\Assert;
 
 beforeEach(function (): void {
-<<<<<<< HEAD
     $capsule = new Capsule;
+<<<<<<< .merge_file_E4BhFN
 =======
     $capsule = new Capsule();
 >>>>>>> laraxot/dev
@@ -33,6 +33,8 @@ beforeEach(function (): void {
 beforeEach(function (): void {
     $capsule = new Capsule();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lJgYix
     $capsule->addConnection([
         'driver' => 'sqlite',
         'database' => ':memory:',
@@ -139,12 +141,12 @@ it('reports isPublished false when published_at is in the future', function (): 
 it('reports isActive correctly based on is_active flag', function (): void {
     $active = new HasCommonScopesProbe(['is_active' => true]);
     $inactive = new HasCommonScopesProbe(['is_active' => false]);
+<<<<<<< .merge_file_E4BhFN
 <<<<<<< HEAD
 <<<<<<< HEAD
-    $unset = new HasCommonScopesProbe;
 =======
-    $unset = new HasCommonScopesProbe();
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_lJgYix
+    $unset = new HasCommonScopesProbe;
 
     Assert::assertTrue($active->isActive());
     Assert::assertFalse($inactive->isActive());

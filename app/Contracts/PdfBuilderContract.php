@@ -13,6 +13,7 @@ interface PdfBuilderContract
     public function download(): self;
 
     /**
+<<<<<<< .merge_file_88qrDd
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -43,6 +44,9 @@ interface PdfBuilderContract
 =======
      * @param \Closure(object): void $callback
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  \Closure(object): void  $callback
+>>>>>>> .merge_file_BMzuFa
      */
     public function withBrowsershot(\Closure $callback): self;
 

@@ -60,6 +60,7 @@ abstract class XotBaseComponent extends IlluminateComponent
         }
 
         $module_name = Str::between($class, 'Modules\\', '\\Views\\');
+<<<<<<< .merge_file_dQqrn6
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($module_name === '') {
@@ -69,6 +70,9 @@ abstract class XotBaseComponent extends IlluminateComponent
 =======
         if ('' === $module_name) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($module_name === '') {
+>>>>>>> .merge_file_tYOJtq
             throw new \InvalidArgumentException("Unable to determine module name from class [{$class}].");
         }
 

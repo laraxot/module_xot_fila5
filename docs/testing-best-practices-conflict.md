@@ -230,6 +230,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
+<<<<<<< .merge_file_G6AxVI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -242,6 +243,8 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_uYsbsK
 
 ---
 
@@ -267,6 +270,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Last Update**: Dicembre 2024
 **Last Update**: Dicembre 2024
 **Last Update**: Dicembre 2024
+<<<<<<< .merge_file_G6AxVI
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Last Update**: Dicembre 2024
@@ -280,3 +284,6 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 **Last Update**: Dicembre 2024
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Last Update**: Dicembre 2024
+>>>>>>> .merge_file_uYsbsK

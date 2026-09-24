@@ -73,6 +73,7 @@ public function registerTimezone(): void
 - [Carbon Documentation](https://carbon.nesbot.com/project_docs/)
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
+<<<<<<< .merge_file_7G4rhY
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
@@ -94,6 +95,11 @@ public function registerTimezone(): void
 
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> .merge_file_PQP7jv
 *Risolto da: Windsurf AI Assistant*
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
@@ -170,6 +176,7 @@ public function registerTimezone(): void
 - [Carbon Documentation](https://carbon.nesbot.com/project_docs/)
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
+<<<<<<< .merge_file_7G4rhY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -177,10 +184,13 @@ public function registerTimezone(): void
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PQP7jv
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
+<<<<<<< .merge_file_7G4rhY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -193,3 +203,5 @@ public function registerTimezone(): void
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PQP7jv

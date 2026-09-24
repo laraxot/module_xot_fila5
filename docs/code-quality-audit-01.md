@@ -1,5 +1,6 @@
 # Code Quality Audit Completo - Gennaio 2025
 
+<<<<<<< .merge_file_mVephq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 =======
 **Data**: 2025-01-22
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_TTC60U
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -34,6 +37,7 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 ## 📋 Moduli con Documentazione Qualità
 
 ### ✅ Completati
+<<<<<<< .merge_file_mVephq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,6 +46,8 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_TTC60U
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
 =======
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
@@ -113,6 +119,7 @@ Ogni modulo dovrebbe avere:
 - La documentazione viene aggiornata costantemente durante l'analisi
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
+<<<<<<< .merge_file_mVephq
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
@@ -126,3 +133,6 @@ Ogni modulo dovrebbe avere:
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Ultimo aggiornamento: [DATE]*
+>>>>>>> .merge_file_TTC60U

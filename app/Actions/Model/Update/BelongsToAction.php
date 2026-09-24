@@ -32,6 +32,7 @@ class BelongsToAction
          * }
          */
 
+<<<<<<< .merge_file_9GWJDI
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
@@ -47,6 +48,11 @@ class BelongsToAction
             $related_id = reset($relationDTO->data);
             if (null === $related_id) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
+            $related_id = reset($relationDTO->data);
+            if ($related_id === null) {
+>>>>>>> .merge_file_njyZ9Q
                 return;
             }
 
@@ -68,6 +74,7 @@ class BelongsToAction
         if (Arr::isAssoc($relationDTO->data)) {
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
+<<<<<<< .merge_file_9GWJDI
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($sub === null) {
@@ -77,6 +84,9 @@ class BelongsToAction
 =======
             if (null === $sub) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($sub === null) {
+>>>>>>> .merge_file_njyZ9Q
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 

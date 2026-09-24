@@ -16,6 +16,7 @@ class FilterRelationsAction
 {
 <<<<<<< HEAD
     /**
+<<<<<<< .merge_file_zPPeQD
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $relations
@@ -30,6 +31,9 @@ class FilterRelationsAction
      * @param array<string, mixed> $relations
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  array<string, mixed>  $relations
+>>>>>>> .merge_file_DVyiK3
      * @return array<string, Relation<Model, Model, mixed>>
      */
     public function execute(Model $_model, array $relations): array

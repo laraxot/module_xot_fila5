@@ -9,6 +9,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseValueFactory;
 
 /**
+<<<<<<< .merge_file_Tc30Ja
 <<<<<<< HEAD
  * <<<<<<< HEAD.
  *
@@ -18,10 +19,19 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @property string               $key
  * @property string|null          $key_hash
  * @property string               $value
+=======
+ * @property string $id
+ * @property int $timestamp
+ * @property string $type
+ * @property string $key
+ * @property string|null $key_hash
+ * @property string $value
+>>>>>>> .merge_file_GyGpRc
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static PulseValueFactory factory($count = null, $state = [])
+<<<<<<< .merge_file_Tc30Ja
  *                                                                      =======
  *
 =======
@@ -40,6 +50,8 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  *                                                                               >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_GyGpRc
  * @method static Builder<static>|PulseValue newModelQuery()
  * @method static Builder<static>|PulseValue newQuery()
  * @method static Builder<static>|PulseValue query()

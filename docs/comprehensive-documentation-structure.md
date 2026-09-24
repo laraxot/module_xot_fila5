@@ -347,6 +347,7 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 
 **Documentation Version**: 1.0
 **Last Updated**: 2025-11-17
+<<<<<<< .merge_file_EzH5ve
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Maintenance**: Xot Module Documentation Team
@@ -365,3 +366,7 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Maintenance**: Xot Module Documentation Team
+**Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
+>>>>>>> .merge_file_oGQwIT

@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< .merge_file_gqqb1W
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_ItenHt
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\json_encode;
 
+<<<<<<< .merge_file_gqqb1W
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -23,6 +27,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ItenHt
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
  *
@@ -67,6 +73,7 @@ trait HasSchemalessAttributes
     /**
      * Scope per filtrare per attributi schemaless.
      *
+<<<<<<< .merge_file_gqqb1W
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
@@ -78,6 +85,9 @@ trait HasSchemalessAttributes
      * @param Builder<static> $query
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  Builder<static>  $query
+>>>>>>> .merge_file_ItenHt
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -92,6 +102,7 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
+<<<<<<< .merge_file_gqqb1W
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
@@ -105,6 +116,10 @@ trait HasSchemalessAttributes
      * @param Builder<static> $query
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  Builder<static>  $query
+     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
+>>>>>>> .merge_file_ItenHt
      * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
@@ -137,12 +152,7 @@ trait HasSchemalessAttributes
      * Get un valore da extra_attributes.
 <<<<<<< HEAD
      *
-<<<<<<< HEAD
      * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
-=======
-     * @param scalar|array<array-key, mixed>|null $default Fallback JSON-serializzabile
-     *
->>>>>>> laraxot/dev
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -156,13 +166,15 @@ trait HasSchemalessAttributes
      * Set un valore in extra_attributes.
 <<<<<<< HEAD
      *
-<<<<<<< HEAD
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
+<<<<<<< .merge_file_gqqb1W
 =======
      * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ItenHt
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {

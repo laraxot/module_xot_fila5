@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_9vrmFP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -30,6 +31,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCH
 <<<<<<< HEAD
 >>>>>>> .merge_file_JWgtKm
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5zW381
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot
@@ -79,19 +82,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_i7Kbpa
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_JWgtKm
->>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -306,19 +297,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_i7Kbpa
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_JWgtKm
->>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -419,6 +398,7 @@ BadgeColumn::make('status')
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 
 
+<<<<<<< .merge_file_9vrmFP
 <<<<<<< HEAD
 ---
 
@@ -808,3 +788,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCH
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_5zW381

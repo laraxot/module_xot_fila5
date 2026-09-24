@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_xdLbJA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_z6Lf1l
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles
@@ -127,6 +130,7 @@ Remember to always:
 - Optimize for performance from the beginning
 - Document decisions and patterns
 - Learn from external packages and integrate best practices
+<<<<<<< .merge_file_xdLbJA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -142,3 +146,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/updated-arch
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_z6Lf1l

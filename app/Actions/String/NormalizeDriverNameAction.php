@@ -4,12 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
+<<<<<<< .merge_file_45XkXQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Yk5CvH
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
+<<<<<<< .merge_file_45XkXQ
 =======
 use function Safe\preg_replace;
 
@@ -23,6 +27,8 @@ use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Yk5CvH
 /**
  * Action per normalizzare i nomi dei driver.
  *

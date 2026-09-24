@@ -1,6 +1,7 @@
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0
+<<<<<<< .merge_file_ZwkjBq
 <<<<<<< HEAD
 <<<<<<< HEAD
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
@@ -18,6 +19,9 @@
 =======
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+>>>>>>> .merge_file_3Xfmiw
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -179,6 +183,7 @@ done
 **Stato**: ✅ RISOLTO
 **Autore Fix**: AI Assistant
 **Review**: Pending
+<<<<<<< .merge_file_ZwkjBq
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Data**: Vedi [CHANGELOG.md](changelog.md)
@@ -196,3 +201,6 @@ done
 =======
 **Data**: Vedi [CHANGELOG.md](changelog.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Data**: Vedi [CHANGELOG.md](changelog.md)
+>>>>>>> .merge_file_3Xfmiw

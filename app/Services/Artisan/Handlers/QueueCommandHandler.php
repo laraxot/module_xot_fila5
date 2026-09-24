@@ -19,6 +19,7 @@ class QueueCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
+<<<<<<< .merge_file_SGJkiL
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $command === 'queue:flush';
@@ -36,5 +37,8 @@ class QueueCommandHandler implements CommandHandlerInterface
 =======
         return 'queue:flush' === $command;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        return $command === 'queue:flush';
+>>>>>>> .merge_file_Jjf9xI
     }
 }

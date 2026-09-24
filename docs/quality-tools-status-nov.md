@@ -29,6 +29,7 @@ cd laravel
 ```
 
 ### Documentazione
+<<<<<<< .merge_file_zfkfpn
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
@@ -42,6 +43,9 @@ cd laravel
 =======
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
+>>>>>>> .merge_file_panmQn
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -184,6 +188,7 @@ php -l path/to/modified/file.php
 
 ## 📚 Documentazione Correlata
 
+<<<<<<< .merge_file_zfkfpn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -191,10 +196,13 @@ php -l path/to/modified/file.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_panmQn
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
+<<<<<<< .merge_file_zfkfpn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -207,6 +215,8 @@ php -l path/to/modified/file.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_panmQn
 
 ## 🚀 Next Steps
 
@@ -271,6 +281,7 @@ cd laravel
 ```
 
 ### Documentazione
+<<<<<<< .merge_file_zfkfpn
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
@@ -284,6 +295,9 @@ cd laravel
 =======
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
+>>>>>>> .merge_file_panmQn
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -426,6 +440,7 @@ php -l path/to/modified/file.php
 
 ## 📚 Documentazione Correlata
 
+<<<<<<< .merge_file_zfkfpn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -433,10 +448,13 @@ php -l path/to/modified/file.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_panmQn
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
+<<<<<<< .merge_file_zfkfpn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -449,6 +467,8 @@ php -l path/to/modified/file.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_panmQn
 
 ## 🚀 Next Steps
 

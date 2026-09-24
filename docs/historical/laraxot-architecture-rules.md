@@ -48,6 +48,7 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -58,10 +59,13 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -74,6 +78,8 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     {
         return [
             // Form components
@@ -289,6 +295,7 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -299,10 +306,13 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -315,6 +325,8 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     {
         return [
             // Form components
@@ -463,6 +475,7 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -473,10 +486,13 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -489,6 +505,8 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     {
         return [
             // Form components
@@ -704,6 +722,7 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -714,10 +733,13 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5AFex5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -730,6 +752,8 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4pLPSp
     {
         return [
             // Form components

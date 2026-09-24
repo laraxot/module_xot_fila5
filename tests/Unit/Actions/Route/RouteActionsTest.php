@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_jZchZw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -20,6 +21,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5lpCqJ
 use Modules\Xot\Actions\Route\BuildLanguageUrlAction;
 use Modules\Xot\Actions\Route\BuildNestedRouteNameAction;
 use Modules\Xot\Actions\Route\IsAdminRouteAction;

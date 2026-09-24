@@ -26,6 +26,7 @@ class XotComposer
     /**
      * Undocumented function.
      *
+<<<<<<< .merge_file_mV1mis
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, mixed>  $arguments
@@ -35,6 +36,9 @@ class XotComposer
 =======
      * @param array<mixed|void> $arguments
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<int, mixed>  $arguments
+>>>>>>> .merge_file_MHYw3y
      */
     public function __call(string $name, array $arguments): mixed
     {
@@ -80,6 +84,7 @@ class XotComposer
         $view->with('_theme', $this);
 
         if (class_exists('\Jenssegers\Agent\Agent')) {
+<<<<<<< .merge_file_mV1mis
 <<<<<<< HEAD
 <<<<<<< HEAD
             $agent = new Agent;
@@ -89,6 +94,9 @@ class XotComposer
 =======
             $agent = new Agent();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            $agent = new Agent;
+>>>>>>> .merge_file_MHYw3y
             $view->with('isMobile', $agent->isMobile());
             $view->with('isTablet', $agent->isTablet());
             $view->with('isDesktop', $agent->isDesktop());

@@ -10,15 +10,19 @@
 ### Form Schema
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_JglFth
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2j75HV
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_JglFth
 <<<<<<< HEAD
 =======
 =======
@@ -28,6 +32,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2j75HV
 {
     return [
         // Campi base

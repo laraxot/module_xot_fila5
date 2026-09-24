@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_VKYfPJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -9,14 +10,19 @@
 **Data Analisi**: [DATE]
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_PniAn5
 # PHPStan Errori Modulo Xot - 2025-01-22
 
 ## Analisi Completa
 
 **Data Analisi**: 2025-01-22
+<<<<<<< .merge_file_VKYfPJ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PniAn5
 **PHPStan Level**: 10
 **Modulo**: Xot (Base Framework)
 **Errori Trovati**: 7
@@ -171,6 +177,7 @@ Tutti gli errori seguono lo stesso pattern:
 
 ## Stato Correzioni
 
+<<<<<<< .merge_file_VKYfPJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 ✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
@@ -180,6 +187,9 @@ Tutti gli errori seguono lo stesso pattern:
 =======
 ✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
+>>>>>>> .merge_file_PniAn5
 
 - ✅ ParsePrintPageStringAction.php - Aggiunti controlli esistenza array
 - ✅ NormalizeDriverNameAction.php - Aggiunto Assert::string() per type narrowing

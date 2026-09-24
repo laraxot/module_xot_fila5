@@ -5,8 +5,8 @@ type: reference
 slug: form-request
 description: 'Elenco di 1 riferimenti esterni raccolti per form request, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
-<<<<<<< HEAD
 converted_from: form-request.txt
+<<<<<<< .merge_file_y6AP1K
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +24,8 @@ converted_from: form_request.txt
 converted_from: form_request.txt
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rLfXM4
 created: 2026-08-24
 updated: 2026-08-24
 ---

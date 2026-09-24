@@ -112,6 +112,7 @@ composer dump-autoload
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< .merge_file_CuCUyZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
@@ -125,3 +126,6 @@ composer dump-autoload
 =======
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
+>>>>>>> .merge_file_1Fm8he

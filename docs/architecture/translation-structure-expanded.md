@@ -165,6 +165,7 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 ### Documentazione Moduli Correlati
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
+<<<<<<< .merge_file_jRXyS5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -178,6 +179,8 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tRd3hG
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole
@@ -206,6 +209,7 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS
+<<<<<<< .merge_file_jRXyS5
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Data**: 2025-08-08
@@ -219,3 +223,6 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 =======
 **Data**: 2025-08-08
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Data**: 2025-08-08
+>>>>>>> .merge_file_tRd3hG

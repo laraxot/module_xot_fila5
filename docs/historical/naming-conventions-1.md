@@ -51,6 +51,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 
 ## Collegamenti alla documentazione correlata
 - [Qualità del codice](./CODE_QUALITY.md)
+<<<<<<< .merge_file_tPABRh
 <<<<<<< HEAD
 <<<<<<< .merge_file_Rcd0cL
 =======
@@ -66,11 +67,16 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 <<<<<<< .merge_file_Rcd0cL
 =======
 =======
+=======
+>>>>>>> .merge_file_T8H0bF
 - [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
 - [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
+<<<<<<< .merge_file_tPABRh
 >>>>>>> .merge_file_BlwwIq
 >>>>>>> .merge_file_nLAgCO
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_T8H0bF

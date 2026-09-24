@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_j0GHgO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_cdvOHM
 ---
 title: "Lessons Learned Aug"
 type: concept
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [lessons-learned-aug.md](./lessons-learned-aug.md)
+<<<<<<< .merge_file_j0GHgO
 <<<<<<< HEAD
 =======
 =======
@@ -97,3 +101,5 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cdvOHM

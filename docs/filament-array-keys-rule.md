@@ -37,15 +37,19 @@ public function getTableActions(): array
 
 // ❌ SBAGLIATO - Array numerico
 <<<<<<< HEAD
+<<<<<<< .merge_file_grvthR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lqL1ts
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_grvthR
 <<<<<<< HEAD
 =======
 =======
@@ -55,6 +59,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lqL1ts
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -82,15 +88,19 @@ public function getTableActions(): array
 // ✅ CORRETTO - Array associativo con chiavi string
 /** @return array<string, Component> */
 <<<<<<< HEAD
+<<<<<<< .merge_file_grvthR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lqL1ts
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_grvthR
 <<<<<<< HEAD
 =======
 =======
@@ -100,6 +110,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lqL1ts
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -157,15 +169,19 @@ class UserResource extends XotBaseResource
      * @return array<string, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_grvthR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lqL1ts
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_grvthR
 <<<<<<< HEAD
 =======
 =======
@@ -175,6 +191,8 @@ class UserResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lqL1ts
     {
         return [
             'name_field' => TextInput::make('name'),
@@ -283,6 +301,7 @@ Prima di commit:
 
 ---
 
+<<<<<<< .merge_file_grvthR
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
@@ -296,3 +315,6 @@ Prima di commit:
 =======
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> .merge_file_lqL1ts

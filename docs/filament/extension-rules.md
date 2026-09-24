@@ -289,15 +289,19 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_Mvk2SC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_gL8iBz
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Mvk2SC
 <<<<<<< HEAD
 =======
 =======
@@ -307,6 +311,8 @@ class UserResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_gL8iBz
     {
         return [
             TextInput::make('name')->required(),
@@ -318,6 +324,7 @@ class UserResource extends XotBaseResource
     // getPages() NON necessario se standard
     // getTableActions() NON necessario se standard
 }
+<<<<<<< .merge_file_Mvk2SC
 <<<<<<< HEAD
 <<<<<<< HEAD
 ```
@@ -331,3 +338,6 @@ class UserResource extends XotBaseResource
 =======
 ```
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+```
+>>>>>>> .merge_file_gL8iBz

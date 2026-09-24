@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_F9CXVE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vVsMyB
 ## [2026-07-06] membershipTeams non appartiene a UserContract
 
 - `membershipTeams()` e un alias concreto di `HasTeams::teams()` su `BaseUser`, non una capability cross-module richiesta da `Modules\Xot\Contracts\UserContract`.
@@ -18,6 +21,7 @@
 - Canon: [xotbasemodel-get-class-name.md](./xotbasemodel-get-class-name.md) · Ptv [criteri-model-class-resolution.md](../../../Ptv/docs/wiki/concepts/criteri-model-class-resolution.md)
 - Verifica: `cd laravel && ./vendor/bin/phpstan analyse Modules` → `[OK] No errors`.
 
+<<<<<<< .merge_file_F9CXVE
 <<<<<<< HEAD
 =======
 =======
@@ -25,6 +29,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vVsMyB
 # PHPStan Fixes Log - Story 8-121
 
 > **Story**: 8-121 - PHPStan Full Compliance (Zero Errors, No Ignoring)
@@ -148,6 +154,7 @@ Baseline 205 → 0. Batch Contracts/Datas/Traits (14), Actions (43), Models/Fila
 Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `EnumTrait::toArray()` → `array<int|string, string>`.
 
 Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
+<<<<<<< .merge_file_F9CXVE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -163,6 +170,8 @@ Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, ba
 =======
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vVsMyB
 ## Fix 2026-06-30: fatal trait collision + tail Modules/
 
 ### Problema 1 — PHPStan non partiva (fatal)
@@ -180,11 +189,14 @@ use HasSpatiePermission, HasTeams {
 
 Wiki: [User trait-alias-conflict-resolution](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 
+<<<<<<< .merge_file_F9CXVE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vVsMyB
 ### Problema 2 — `UserContract` relation generics (`generics.notSubtype`)
 
 Su un'interfaccia con `@phpstan-require-extends Model`, `$this` nel secondo template di `HasOne`/`BelongsToMany` non è sottotipo di `TDeclaringModel` (Model). Pattern canonico Laraxot (come `ProfileContract::user()` → `BelongsTo<Model&UserContract, Model>`):
@@ -193,6 +205,7 @@ Su un'interfaccia con `@phpstan-require-extends Model`, `$this` nel secondo temp
 - es.: `HasOne<Model&ProfileContract, Model&static>`, `BelongsToMany<Model, Model&static>`
 
 Issue #175 — niente `@phpstan-ignore` su queste relazioni.
+<<<<<<< .merge_file_F9CXVE
 <<<<<<< HEAD
 =======
 =======
@@ -206,6 +219,8 @@ Issue #175 — niente `@phpstan-ignore` su queste relazioni.
 
 `static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vVsMyB
 
 ### Problema 3 — `Article::scopePublishedUntilToday()`
 
@@ -220,6 +235,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules
 
 <<<<<<< HEAD
 Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
+<<<<<<< .merge_file_F9CXVE
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -233,3 +249,5 @@ Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vVsMyB

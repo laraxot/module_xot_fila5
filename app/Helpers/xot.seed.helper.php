@@ -10,6 +10,7 @@ declare(strict_types=1);
  * This file contains helper functions for seeding data with Xot modules
  * The functions ensure that models are only seeded once
  */
+<<<<<<< .merge_file_ZUdYle
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -20,6 +21,8 @@ declare(strict_types=1);
 declare(strict_types=1);
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PMMUcY
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
@@ -27,6 +30,7 @@ use Illuminate\Support\Facades\Cache;
 /**
  * Seed a model once per application lifetime.
  *
+<<<<<<< .merge_file_ZUdYle
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @param  string  $modelClass  The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
@@ -36,6 +40,9 @@ use Illuminate\Support\Facades\Cache;
 =======
  * @param string $modelClass The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+ * @param  string  $modelClass  The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
+>>>>>>> .merge_file_PMMUcY
  */
 function xotSeedModelOnce(string $modelClass): void
 {
@@ -68,6 +75,7 @@ function xotSeedModelOnce(string $modelClass): void
         // Check if seeder class exists
         if (class_exists($seederClass)) {
             // Create seeder instance and run its seed method
+<<<<<<< .merge_file_ZUdYle
 <<<<<<< HEAD
 <<<<<<< HEAD
             $seeder = new $seederClass;
@@ -77,6 +85,9 @@ function xotSeedModelOnce(string $modelClass): void
 =======
             $seeder = new $seederClass();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            $seeder = new $seederClass;
+>>>>>>> .merge_file_PMMUcY
 
             if ($seeder instanceof Seeder && is_callable([$seeder, 'run'])) {
                 $seeder->{'run'}();

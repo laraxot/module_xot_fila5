@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_JsmPOC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,10 +6,13 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cDY0rC
 # Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
 
 **Data Creazione**: 2025-01-27
 **Ultimo Aggiornamento**: 2025-01-27
+<<<<<<< .merge_file_JsmPOC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,11 +26,14 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cDY0rC
 **Status**: ✅ Configurazione Completa e Ottimizzata
 **Metodologia**: Super Mucca 🐮⚡
 
 ### ⚠️ Cambiamenti Recenti
 - **2025-01-27**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
+<<<<<<< .merge_file_JsmPOC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -37,11 +44,14 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cDY0rC
 
 ---
 
 ## 🎯 Scopo del Documento
 
+<<<<<<< .merge_file_JsmPOC
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
@@ -55,6 +65,9 @@ Questo documento descrive la configurazione MCP ottimizzata per il progetto **ba
 =======
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+>>>>>>> .merge_file_cDY0rC
 
 ---
 
@@ -395,6 +408,7 @@ npm install -g @executeautomation/playwright-mcp-server
 
 - [MCP Servers Configuration](./mcp-servers-configuration.md) - Configurazione generale MCP
 - [MCP Servers Complete List](./mcp-servers.md) - Lista completa server disponibili
+<<<<<<< .merge_file_JsmPOC
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
@@ -408,6 +422,9 @@ npm install -g @executeautomation/playwright-mcp-server
 =======
 - [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
+>>>>>>> .merge_file_cDY0rC
 
 ### External Resources
 
@@ -513,6 +530,7 @@ npx -y @modelcontextprotocol/server-filesystem --version
 ---
 
 **Ultimo aggiornamento**: 2025-01-27
+<<<<<<< .merge_file_JsmPOC
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Autore**: Super Mucca Analysis
@@ -531,3 +549,7 @@ npx -y @modelcontextprotocol/server-filesystem --version
 **Autore**: Super Mucca Analysis
 **Status**: ✅ Configurazione Completa e Ottimizzata
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Autore**: Super Mucca Analysis
+**Status**: ✅ Configurazione Completa e Ottimizzata
+>>>>>>> .merge_file_cDY0rC

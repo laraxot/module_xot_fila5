@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_367jH9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_DvO2Im
 ---
 title: "Rapporto PHPStan Livello 9 per il modulo Xot"
 module: "Xot"
@@ -14,6 +17,7 @@ qmd: "level"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_367jH9
 <<<<<<< HEAD
 =======
 =======
@@ -25,20 +29,26 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DvO2Im
 ---
 module: theme
 topic: level
 canonical: ../../../Themes/docs/shared-components/level-9.md
 ---
+<<<<<<< .merge_file_367jH9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_DvO2Im
 
 See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
+<<<<<<< .merge_file_367jH9
 <<<<<<< HEAD
 =======
 =======
@@ -199,3 +209,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DvO2Im

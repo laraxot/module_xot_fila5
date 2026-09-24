@@ -181,6 +181,7 @@ class DashboardSettingsPolicy
 
 ## ATTENZIONE: errori critici da evitare
 - NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).
+<<<<<<< .merge_file_TlKwCc
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
@@ -194,3 +195,6 @@ class DashboardSettingsPolicy
 =======
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
+>>>>>>> .merge_file_y8ix1X

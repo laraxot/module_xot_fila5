@@ -1,5 +1,6 @@
 # Aggiornamento Documentazione - Problema con ai_init.sh
 
+<<<<<<< .merge_file_Vcjv7A
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,8 @@
 =======
 >>>>>>> .merge_file_mcL7Dk
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JMIc1K
 ## Analisi corretta
 
 Il problema non e' "manca la cartella `bashscripts/ai/.gemini`".
@@ -53,6 +56,7 @@ Non:
 
 - Source: `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/.gemini`
 - Target symlink: `/var/www/_bases/base_quaeris_fila4_mono/.gemini`
+<<<<<<< .merge_file_Vcjv7A
 <<<<<<< HEAD
 =======
 =======
@@ -69,6 +73,9 @@ Non:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_JMIc1K
 ## Problema Identificato
 
 Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
@@ -101,6 +108,7 @@ Lo script deve essere corretto per invertire la logica:
 ## Cartelle Coinvolte
 
 - Source: `./bashscripts/ai/.gemini`
+<<<<<<< .merge_file_Vcjv7A
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,3 +129,6 @@ Lo script deve essere corretto per invertire la logica:
 =======
 - Target symlink: `./.gemini`
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Target symlink: `./.gemini`
+>>>>>>> .merge_file_JMIc1K

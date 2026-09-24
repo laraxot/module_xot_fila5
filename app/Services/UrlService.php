@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_Uzja0D
 <<<<<<< HEAD
 <<<<<<< HEAD
 declare(strict_types=1);
@@ -21,11 +22,15 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_OFMOww
 /**
  * @see https://www.webslesson.info/2019/02/import-excel-file-in-laravel.html
  * @see https://sweetcode.io/import-and-export-excel-files-data-using-in-laravel/
  */
 
+<<<<<<< .merge_file_Uzja0D
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -48,6 +53,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OFMOww
 namespace Modules\Xot\Services;
 
 /**
@@ -57,6 +64,7 @@ class UrlService
 {
     private static ?self $instance = null;
 
+<<<<<<< .merge_file_Uzja0D
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,11 +72,14 @@ class UrlService
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OFMOww
     public function __construct() {}
 
     public static function getInstance(): self
     {
         if (! (self::$instance instanceof self)) {
+<<<<<<< .merge_file_Uzja0D
 <<<<<<< HEAD
 <<<<<<< HEAD
             self::$instance = new self;
@@ -98,6 +109,9 @@ class UrlService
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            self::$instance = new self;
+>>>>>>> .merge_file_OFMOww
         }
 
         return self::$instance;
@@ -113,6 +127,7 @@ class UrlService
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< .merge_file_Uzja0D
 <<<<<<< HEAD
 <<<<<<< HEAD
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
@@ -126,5 +141,8 @@ class UrlService
 =======
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        return filter_var($url, FILTER_VALIDATE_URL) !== false;
+>>>>>>> .merge_file_OFMOww
     }
 }

@@ -120,6 +120,7 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var
 
 ## Collegamenti ad Altri Documenti
 
+<<<<<<< .merge_file_ObJNMA
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
@@ -137,6 +138,10 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
+- [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
+>>>>>>> .merge_file_VVAE6W
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -147,6 +152,7 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 
 - [README.md](./README.md) - Indice principale della documentazione
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
+<<<<<<< .merge_file_ObJNMA
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
@@ -160,5 +166,8 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 =======
 - [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
+>>>>>>> .merge_file_VVAE6W
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget

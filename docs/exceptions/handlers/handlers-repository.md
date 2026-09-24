@@ -83,15 +83,19 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 - Gestire correttamente le eccezioni annidate
 
 ## Collegamenti
+<<<<<<< .merge_file_eVDuda
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_BWcxY5
 - [Exception Handling Guide](../EXCEPTION-HANDLING-GUIDE.md)
 - [Error Formatters](../formatters/README.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
 - [Handlers Overview](./README.md)
+<<<<<<< .merge_file_eVDuda
 <<<<<<< HEAD
 =======
 =======
@@ -111,3 +115,5 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 =======
 - [Handlers Overview](./README.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_BWcxY5

@@ -2,6 +2,7 @@
 
 ## 📋 Introduzione
 
+<<<<<<< .merge_file_z7ZYjA
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
@@ -20,6 +21,9 @@ Questo documento fornisce best practices per implementare Filament Nesting in pr
 =======
 Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
+>>>>>>> .merge_file_gQqRDM
 
 ---
 
@@ -429,6 +433,7 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 - **Filament Nesting**: https://filamentphp.com/docs/5.x/resources/nesting
 - **Filament Relation Managers**: https://filamentphp.com/docs/5.x/resources/managing-relationships
 - **XotBaseResource**: `/Modules/Xot/docs/filament/resources.md`
+<<<<<<< .merge_file_z7ZYjA
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
@@ -447,11 +452,15 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 =======
 - **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
+>>>>>>> .merge_file_gQqRDM
 
 ---
 
 **Ultimo aggiornamento**: 23 Gennaio 2026  
 **Stato**: Documentazione Best Practices  
+<<<<<<< .merge_file_z7ZYjA
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Applicabile a**: Tutti i moduli Laraxot
@@ -469,3 +478,6 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 =======
 **Applicabile a**: Tutti i moduli Laraxot
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Applicabile a**: Tutti i moduli Laraxot
+>>>>>>> .merge_file_gQqRDM

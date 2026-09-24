@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_XmdfjY
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,6 +11,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_jdM7tT
 ---
 name: phpstan-fixes-gennaio-phpstan-fixes-gennaio-2025-modulo-xot
 description: " Riassunto delle Correzioni"
@@ -17,6 +20,7 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_XmdfjY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +40,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_jdM7tT
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
 ## Riassunto delle Correzioni
@@ -208,7 +214,6 @@ public function getAllColors(): array
 - [PHPStan Level 10 Guide](phpstan_livello10_linee_guida.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
-
 
 ---
 ## Variant 2

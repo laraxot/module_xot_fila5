@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ltpmnk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_PiD4kM
@@ -26,6 +27,8 @@
 >>>>>>> .merge_file_IGTrVd
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_IO5NOb
 ---
 title: "Index"
 type: reference
@@ -34,6 +37,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_ltpmnk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_PiD4kM
@@ -61,6 +65,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_IO5NOb
 # Xot Module - commands Index
 
 ## Purpose

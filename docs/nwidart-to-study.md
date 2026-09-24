@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_0C9AwU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ https://github.com/HichemTab-tech/LaravelFS
 =======
 >>>>>>> .merge_file_NOHb4s
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yGbUeE
 ---
 title: 'Nwidart to study — risorse esterne'
 module: Xot
@@ -45,6 +48,7 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< .merge_file_0C9AwU
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5QFPsB
@@ -77,3 +81,5 @@ https://github.com/HichemTab-tech/LaravelFS
 =======
 https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yGbUeE

@@ -23,13 +23,17 @@ final class MorphOneAction
     /**
      * Execute the morphOne relationship action.
      *
+<<<<<<< .merge_file_VH5ZPR
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_G5LEyI
      * @param  Model  $model  The model instance
      * @param  RelationDTO  $relationDTO  The relation data transfer object
      *
      * @throws \InvalidArgumentException When relation is not MorphOne
      * @throws \RuntimeException When data array is invalid
+<<<<<<< .merge_file_VH5ZPR
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -42,6 +46,8 @@ final class MorphOneAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_G5LEyI
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
@@ -63,6 +69,7 @@ final class MorphOneAction
     /**
      * Validate and prepare the data array.
      *
+<<<<<<< .merge_file_VH5ZPR
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $data  The input data array
@@ -74,6 +81,9 @@ final class MorphOneAction
      * @param array<string, mixed> $data The input data array
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data  The input data array
+>>>>>>> .merge_file_G5LEyI
      * @return array<string, mixed> The validated and prepared data
      */
     private function validateAndPrepareData(array $data): array
@@ -84,6 +94,7 @@ final class MorphOneAction
         }
 
         // Remove null values from the data array
+<<<<<<< .merge_file_VH5ZPR
 <<<<<<< HEAD
 <<<<<<< HEAD
         return array_filter($data, static fn (mixed $value): bool => $value !== null);
@@ -93,5 +104,8 @@ final class MorphOneAction
 =======
         return array_filter($data, static fn ($value): bool => null !== $value);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        return array_filter($data, static fn (mixed $value): bool => $value !== null);
+>>>>>>> .merge_file_G5LEyI
     }
 }

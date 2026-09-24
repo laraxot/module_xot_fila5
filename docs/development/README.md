@@ -1,5 +1,6 @@
 # Sviluppo
 
+<<<<<<< .merge_file_eFON5b
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pNEpfM
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.
 
 ## File Contenuti
@@ -25,6 +28,7 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 ## Note
 
+<<<<<<< .merge_file_eFON5b
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -92,11 +96,13 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](bashscripts/project_docs/it/readme.md)
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> .merge_file_pNEpfM
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
 ## Collegamenti tra versioni di README.md
->>>>>>> laraxot/dev
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+<<<<<<< .merge_file_eFON5b
 >>>>>>> laraxot/dev
 =======
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
@@ -104,6 +110,8 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pNEpfM
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -134,6 +142,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_eFON5b
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -339,6 +348,8 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 <<<<<<< HEAD
 >>>>>>> .merge_file_i2SPKI
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_pNEpfM
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -383,6 +394,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_eFON5b
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_CTh2Gd
@@ -481,3 +493,5 @@ Core module for the FixCity Platform.
 =======
 * [README.md](../../../../Themes/One/docs/README.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pNEpfM

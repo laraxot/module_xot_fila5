@@ -28,6 +28,7 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
     public function __construct(
         private string $help = '',
         private string $error = '',
+<<<<<<< .merge_file_S1vsJr
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -39,6 +40,9 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
     ) {
     }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_STFS4k
 
     /** @return array<string, string> */
     public function toArray(): array

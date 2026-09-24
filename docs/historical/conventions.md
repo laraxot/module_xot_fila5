@@ -145,6 +145,7 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 - Le cartelle standard Laravel devono sempre essere in lowercase
 - Le pagine Folio devono seguire la struttura `resources/views/pages/`
 ## Collegamenti tra versioni di CONVENTIONS.md
+<<<<<<< .merge_file_iBFMnJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [CONVENTIONS.md](conventions.md)
@@ -162,6 +163,9 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 =======
 * [CONVENTIONS.md](conventions.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+* [CONVENTIONS.md](conventions.md)
+>>>>>>> .merge_file_hYv3Ow
 * [CONVENTIONS.md](../../../Dental/docs/CONVENTIONS.md)
 * [CONVENTIONS.md](../../../Patient/docs/CONVENTIONS.md)
 

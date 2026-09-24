@@ -56,6 +56,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Completamento piattaforma
 
 - [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md) — **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
+<<<<<<< .merge_file_hAR0Dh
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
@@ -92,12 +93,16 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [phpstan-best-practices.md](./phpstan-best-practices.md)
+>>>>>>> .merge_file_zg9xEj
 
 ## Compiled Pages
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+<<<<<<< .merge_file_hAR0Dh
 <<<<<<< HEAD
 <<<<<<< HEAD
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
@@ -137,6 +142,9 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+>>>>>>> .merge_file_zg9xEj
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |

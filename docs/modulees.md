@@ -88,15 +88,19 @@ protected function generateFormSchema(string $file, string $content, string $cla
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_SP8yWj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yYjwmQ
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SP8yWj
 <<<<<<< HEAD
 =======
 =======
@@ -106,6 +110,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yYjwmQ
 {
     return [
         'field_name' => [
@@ -811,6 +817,7 @@ $count = CountAction::execute(User::class);
 - [ ] Implementare cache opzionale
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
+<<<<<<< .merge_file_SP8yWj
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [ ] Aggiungere test di performance
@@ -824,3 +831,6 @@ $count = CountAction::execute(User::class);
 =======
 - [ ] Aggiungere test di performance
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [ ] Aggiungere test di performance
+>>>>>>> .merge_file_yYjwmQ

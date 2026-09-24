@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_UnI7di
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cZMKVD
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -149,6 +152,7 @@ Descrizione dettagliata se necessaria
 ```
 
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+<<<<<<< .merge_file_UnI7di
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -164,3 +168,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/naming-conve
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cZMKVD

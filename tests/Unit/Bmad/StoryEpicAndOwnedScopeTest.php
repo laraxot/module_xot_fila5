@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_sHONpd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6bH4zE
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
@@ -94,6 +97,7 @@ test('gli epic dichiarati nelle story esistono in docs/epics.md', function () us
     $orphans = [];
     foreach ($storyFiles() as $path) {
         $name = basename($path);
+<<<<<<< .merge_file_sHONpd
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
@@ -107,6 +111,9 @@ test('gli epic dichiarati nelle story esistono in docs/epics.md', function () us
 =======
         if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
+>>>>>>> .merge_file_6bH4zE
             continue; // story senza numero: fuori dal perimetro di questo test
         }
         if (! isset($m[1])) {

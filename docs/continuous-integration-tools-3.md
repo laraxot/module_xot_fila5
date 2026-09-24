@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_giTXAe
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_K6HEV9
 ---
 title: "_continuous_integration_tools"
 module: "Xot"
@@ -14,6 +17,7 @@ qmd: "continuous integration tools 3"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_giTXAe
 <<<<<<< HEAD
 =======
 =======
@@ -21,6 +25,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_K6HEV9
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->

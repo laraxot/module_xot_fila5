@@ -32,12 +32,16 @@ class HandlerDecorator implements ExceptionHandler
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
+<<<<<<< .merge_file_WhwnkS
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_hhQTjp
     ) {}
 
     /**
      * @param  array<int, mixed>  $parameters
+<<<<<<< .merge_file_WhwnkS
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -49,6 +53,8 @@ class HandlerDecorator implements ExceptionHandler
 <<<<<<< HEAD
      *
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_hhQTjp
      * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
 =======
 >>>>>>> 8d801bbe (Check & fix styling)

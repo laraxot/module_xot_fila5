@@ -17,6 +17,7 @@ test('action URLs fall back to an explicit fragment outside a route', function (
     /** @var array<string, mixed> $paramsArray */
     $paramsArray = $params->toArray();
 
+<<<<<<< .merge_file_TYdnuT
 <<<<<<< HEAD
 <<<<<<< HEAD
     expect((new BuildActionUrlAction)->execute($paramsArray))->toBe('#edit');
@@ -34,6 +35,9 @@ test('action URLs fall back to an explicit fragment outside a route', function (
 =======
     expect((new BuildActionUrlAction())->execute($paramsArray))->toBe('#edit');
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    expect((new BuildActionUrlAction)->execute($paramsArray))->toBe('#edit');
+>>>>>>> .merge_file_ZyvV2D
 });
 
 test('component analyzer exposes its supported filters', function (): void {

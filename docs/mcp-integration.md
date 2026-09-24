@@ -2,6 +2,7 @@
 
 ## Panoramica
 
+<<<<<<< .merge_file_7Fs6dq
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questo documento fornisce linee guida per l'integrazione dei server MCP (Model Context Protocol) con il modulo Xot, seguendo le regole di sviluppo e le convenzioni di codice stabilite per i progetti base_predict_fila3_mono.
@@ -15,6 +16,9 @@ Questo documento fornisce linee guida per l'integrazione dei server MCP (Model C
 =======
 Questo documento fornisce linee guida per l'integrazione dei server MCP (Model Context Protocol) con il modulo Xot, seguendo le regole di sviluppo e le convenzioni di codice stabilite per i progetti base_predict_fila3_mono.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Questo documento fornisce linee guida per l'integrazione dei server MCP (Model Context Protocol) con il modulo Xot, seguendo le regole di sviluppo e le convenzioni di codice stabilite per i progetti base_predict_fila3_mono.
+>>>>>>> .merge_file_mK8IS0
 
 ## Server MCP Consigliati
 
@@ -885,6 +889,7 @@ class CodeAnalysisData extends Data
 
 ## Conclusione
 
+<<<<<<< .merge_file_7Fs6dq
 <<<<<<< HEAD
 <<<<<<< HEAD
 L'integrazione dei server MCP con il modulo Xot consente di migliorare significativamente le funzionalità di base del progetto, fornendo interazione avanzata con database, gestione efficiente della cache, operazioni avanzate sui file e analisi del codice. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_predict_fila3_mono.
@@ -898,3 +903,6 @@ L'integrazione dei server MCP con il modulo Xot consente di migliorare significa
 =======
 L'integrazione dei server MCP con il modulo Xot consente di migliorare significativamente le funzionalità di base del progetto, fornendo interazione avanzata con database, gestione efficiente della cache, operazioni avanzate sui file e analisi del codice. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_predict_fila3_mono.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+L'integrazione dei server MCP con il modulo Xot consente di migliorare significativamente le funzionalità di base del progetto, fornendo interazione avanzata con database, gestione efficiente della cache, operazioni avanzate sui file e analisi del codice. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_predict_fila3_mono.
+>>>>>>> .merge_file_mK8IS0

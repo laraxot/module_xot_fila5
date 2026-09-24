@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_2o5SEh
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 =======
 >>>>>>> .merge_file_XcEywU
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_oXnMZR
 ---
 title: 'Nwidart — risorse esterne'
 module: Xot
@@ -32,19 +35,9 @@ updated: 2026-08-24
 
 ## Riferimenti
 
-<<<<<<< HEAD
-- <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_3NMSc0
-<<<<<<< HEAD
-- <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_XcEywU
 - <https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927>
 - <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
+<<<<<<< .merge_file_2o5SEh
 =======
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 >>>>>>> laraxot/dev
@@ -52,3 +45,5 @@ https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 =======
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oXnMZR

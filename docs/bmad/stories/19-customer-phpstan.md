@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_5aHOrl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_POKs3U
 # BMAD Story 19 — Customer: 8 errori PHPStan
 
 **Modulo:** `Customer`

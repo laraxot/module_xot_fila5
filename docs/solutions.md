@@ -257,6 +257,7 @@ class CacheTest extends TestCase {
 
 5. Mantenere compatibilità con le versioni precedenti
 
+<<<<<<< .merge_file_VQtitR
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -270,3 +271,6 @@ class CacheTest extends TestCase {
 =======
 ---
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_FXOgq8

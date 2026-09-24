@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_C5Us7Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_dvmhVe
 # BMAD Story 23 — UI: 6 errori PHPStan (test)
 
 **Modulo:** `UI`

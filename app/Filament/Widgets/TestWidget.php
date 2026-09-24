@@ -11,6 +11,7 @@ namespace Modules\Xot\Filament\Widgets;
 class TestWidget extends XotBaseWidget
 {
     /** @var view-string */
+<<<<<<< .merge_file_ISz09a
 =======
 use Filament\Widgets\Widget;
 
@@ -24,6 +25,10 @@ class TestWidget extends Widget
      */
 >>>>>>> 8d801bbe (Check & fix styling)
     protected string $view = 'xot::filament.widgets.test';
+=======
+    /** @var view-string */
+    protected string $view;
+>>>>>>> .merge_file_34yvo9
 
     protected int|string|array $columnSpan = 'full';
 

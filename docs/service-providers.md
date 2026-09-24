@@ -257,6 +257,7 @@ class ValidationServiceProvider extends ServiceProvider
 ```
 
 ## 🔧 Merge Conflicts Resolution - 2025-11-04
+<<<<<<< .merge_file_Xd7vbF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -267,6 +268,8 @@ class ValidationServiceProvider extends ServiceProvider
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oMQ9tB
 
 ### Problema Risolto
 Il `RouteServiceProvider` e `XotBaseRouteServiceProvider` nel modulo Xot contenevano **merge conflicts massivi non risolti** che impedivano l'avvio del server Laravel.
@@ -345,6 +348,7 @@ vendor/bin/pint --dirty Modules/Xot/app
 
 ### References
 - [Merge Conflict Resolution 2025-11-04](./merge-conflict-resolution-2025-11-04.md) - Report completo
+<<<<<<< .merge_file_Xd7vbF
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) - Nuova regola fondamentale
@@ -367,3 +371,8 @@ vendor/bin/pint --dirty Modules/Xot/app
 - [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [File Locking Pattern](./file-locking-pattern.md) - Nuova regola fondamentale
+- [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti
+- [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
+>>>>>>> .merge_file_oMQ9tB

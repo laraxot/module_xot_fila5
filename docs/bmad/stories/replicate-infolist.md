@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_F6ygns
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,4 +51,6 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oWhuKS
 BMAD story: XotBaseResourceInfolist replica istanza non statica e schema come XotBaseResourceForm

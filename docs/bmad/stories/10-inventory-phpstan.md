@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_PcmuSb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_dvJrdy
 # BMAD Story 10 — Inventory: 20 errori PHPStan
 
 **Modulo:** `Inventory`
