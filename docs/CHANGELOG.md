@@ -1,6 +1,7 @@
 # Changelog - Modulo Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 ## [2025-06-04] - Sessione Fix Critica
@@ -65,6 +66,8 @@ All notable changes to `:package_name` will be documented in this file.
 
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
@@ -196,6 +199,7 @@ All notable changes to `:package_name` will be documented in this file.
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 - [README.md](./docs/README.md) - Entry point
@@ -204,6 +208,8 @@ All notable changes to `:package_name` will be documented in this file.
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ### Repository
@@ -217,6 +223,7 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -312,4 +319,6 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 - Focus su COSA è cambiato e PERCHÉ
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

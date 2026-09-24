@@ -22,7 +22,11 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 describe('Xot security handlers deep', function (): void {
@@ -75,6 +79,21 @@ describe('Xot security handlers deep', function (): void {
             return 'r';
         });
         $repo->addConsoleRenderer(static function (string $e): void {}); // builtin type → true
+<<<<<<< HEAD
+=======
+        $repo = new HandlersRepository();
+        $repo->addReporter(static function (\InvalidArgumentException $e): void {
+        });
+        $repo->addReporter(static function (\Throwable $e): void {
+        });
+        $repo->addReporter(static function (): void {
+        }); // no params → false
+        $repo->addRenderer(static function (\RuntimeException $e): string {
+            return 'r';
+        });
+        $repo->addConsoleRenderer(static function (string $e): void {
+        }); // builtin type → true
+>>>>>>> laraxot/dev
 
         $a = new \InvalidArgumentException('a');
         $b = new \RuntimeException('b');

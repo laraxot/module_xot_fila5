@@ -15,6 +15,13 @@ use Spatie\LaravelData\Data;
 final class ArticleData extends Data
 {
     /**
+<<<<<<< HEAD
+=======
+     * @param  array<int, string>  $types
+     * @param  array<int, string>  $categories
+     * @param  array<string, string>  $defaultMeta
+     * @param  array<string, bool>  $features
+>>>>>>> laraxot/dev
      * @param array<int, string>    $types
      * @param array<int, string>    $categories
      * @param array<string, string> $defaultMeta

@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://dev.to/jackmiras/laravel-delete-actions-simplified-4h8b
  */

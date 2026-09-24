@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
@@ -50,6 +54,11 @@ interface PassportHasApiTokensContract
      *
      * @param array<int, string> $scopes
      *
+<<<<<<< HEAD
+=======
+     * @param array<int, string> $scopes
+     *
+>>>>>>> laraxot/dev
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;

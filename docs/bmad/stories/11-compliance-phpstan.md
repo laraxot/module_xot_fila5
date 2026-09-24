@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: 11-compliance-phpstan
 description: "Modulo: Compliance"
@@ -7,6 +8,8 @@ metadata:
   type: bmad
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

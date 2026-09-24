@@ -130,7 +130,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param class-string $expectedClass
+=======
+     * @param  class-string  $expectedClass
+>>>>>>> laraxot/dev
      */
     public function toBeInstanceOf(string $expectedClass, string $message = ''): self
     {
@@ -201,7 +205,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param iterable<array-key> $keys
+=======
+     * @param  iterable<array-key>  $keys
+>>>>>>> laraxot/dev
      */
     public function toHaveKeys(iterable $keys): self
     {
@@ -226,7 +234,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param iterable<string> $properties
+=======
+     * @param  iterable<string>  $properties
+>>>>>>> laraxot/dev
      */
     public function toHaveProperties(iterable $properties): self
     {
@@ -247,7 +259,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param array<array-key, mixed> $expectedSubset
+=======
+     * @param  array<array-key, mixed>  $expectedSubset
+>>>>>>> laraxot/dev
      */
     public function toMatchArray(array $expectedSubset): self
     {
@@ -315,7 +331,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param iterable<mixed> $expectedValues
+=======
+     * @param  iterable<mixed>  $expectedValues
+>>>>>>> laraxot/dev
      */
     public function toBeIn(iterable $expectedValues): self
     {

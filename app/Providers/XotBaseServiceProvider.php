@@ -157,6 +157,13 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         if ($comps->count() === 0) {
             return;
         }
+<<<<<<< HEAD
+=======
+        /** @var array<int, array<string, mixed>> $commands */
+        $commands = $comps->toArray();
+        /** @var array<int, string> $commands */
+        $commands = array_map(static function (array $item): string {
+>>>>>>> laraxot/dev
         $commands = $comps->toArray();
         /** @var array<int, array{ns: string}> $commands */
         $commands = array_map(static function (mixed $item): string {

@@ -4,17 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Array;
 
+<<<<<<< HEAD
 use function Safe\file_put_contents;
 use function Safe\json_encode;
 
 use Spatie\QueueableAction\QueueableAction;
+=======
+use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\file_put_contents;
+use function Safe\json_encode;
+
+
+>>>>>>> laraxot/dev
 
 class SaveJsonArrayAction
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param array<int|string, mixed> $data
+=======
+     * @param  array<int|string, mixed>  $data
+>>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename): bool
     {

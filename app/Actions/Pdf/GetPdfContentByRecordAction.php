@@ -31,6 +31,14 @@ class GetPdfContentByRecordAction
     /**
      * Genera contenuto PDF binario da un record Eloquent.
      *
+<<<<<<< HEAD
+=======
+     * @param  Model  $record  Record Eloquent da cui generare il PDF
+     * @param  string|null  $filename  Nome file PDF personalizzato (opzionale)
+     * @return string Contenuto binario del PDF
+     *
+     * @throws \Exception Se la vista non esiste o si verificano errori di generazione
+>>>>>>> laraxot/dev
      * @param Model       $record   Record Eloquent da cui generare il PDF
      * @param string|null $filename Nome file PDF personalizzato (opzionale)
      *
@@ -62,7 +70,11 @@ class GetPdfContentByRecordAction
         }
 
         // Generate filename if not provided
+<<<<<<< HEAD
         if (null === $filename) {
+=======
+        if ($filename === null) {
+>>>>>>> laraxot/dev
             $filename = $this->generateFilename($record);
         }
 
@@ -168,6 +180,14 @@ class GetPdfContentByRecordAction
     /**
      * Genera contenuto PDF binario utilizzando spipu/html2pdf.
      *
+<<<<<<< HEAD
+=======
+     * @param  string  $html  Contenuto HTML da convertire
+     * @param  string  $filename  Nome file per riferimento
+     * @return string Contenuto binario del PDF
+     *
+     * @throws \Exception Se si verificano errori durante la generazione PDF
+>>>>>>> laraxot/dev
      * @param string $html     Contenuto HTML da convertire
      * @param string $filename Nome file per riferimento
      *

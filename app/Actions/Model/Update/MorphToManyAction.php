@@ -27,6 +27,10 @@ class MorphToManyAction
     /**
      * Execute the action to update morphToMany relationships.
      *
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
      *

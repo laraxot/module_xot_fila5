@@ -1,7 +1,11 @@
 # PHPStan Errors - TransTrait.php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-16
+>>>>>>> laraxot/dev
 =======
 **Date**: 2025-12-16
 >>>>>>> laraxot/dev
@@ -393,7 +397,11 @@ This fix may also resolve related errors in:
 ## Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-[date].md)
+=======
+- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+>>>>>>> laraxot/dev
 =======
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
 >>>>>>> laraxot/dev
@@ -405,7 +413,11 @@ This fix may also resolve related errors in:
 **Status**: 🟡 Documented - Awaiting Fix
 **Assigned To**: Module Owner
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+**Last Updated**: 2025-12-16
+>>>>>>> laraxot/dev
 =======
 **Last Updated**: 2025-12-16
 >>>>>>> laraxot/dev

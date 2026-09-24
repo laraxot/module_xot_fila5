@@ -88,7 +88,11 @@ abstract class XotBaseTransition
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $data
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> laraxot/dev
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/verlok/vanilla-lazyload   
 https://github.com/ApoorvSaxena/lozad.js
 https://github.com/malchata/yall.js
@@ -7,6 +8,8 @@ https://github.com/aFarkas/lazysizes
 
 https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: 'Lazy — risorse esterne'
 module: Xot
@@ -32,4 +35,7 @@ updated: 2026-08-24
 - <https://github.com/ressio/lazy-load-xt>
 - <https://github.com/aFarkas/lazysizes>
 - <https://lazy-loading.firebaseapp.com/lazy_loading_lib.html>
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

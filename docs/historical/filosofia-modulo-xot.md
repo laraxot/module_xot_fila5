@@ -23,9 +23,19 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 final public static function form(Schema $schema): Schema {
@@ -331,9 +341,19 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array {
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return [TextInput::make('name')];
     }

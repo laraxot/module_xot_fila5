@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: 25d-catalog-rm-getformschema
 description: "Modulo: Catalog"
@@ -7,6 +8,8 @@ metadata:
   type: bmad
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

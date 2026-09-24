@@ -12,6 +12,14 @@ class FilterRelationsAction
 {
     /**
      * @param  array<string, mixed>  $relations
+<<<<<<< HEAD
+=======
+     * @param array<string, mixed> $relations
+     *
+     *
+     *
+     * @param  array<string, mixed>  $relations
+>>>>>>> laraxot/dev
      * @return array<string, Relation<Model, Model, mixed>>
      */
     public function execute(Model $_model, array $relations): array

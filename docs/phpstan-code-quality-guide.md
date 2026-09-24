@@ -1970,4 +1970,12 @@ $model->update($filtered);
 **Riferimenti**: 
 - `laravel/Modules/Xot/docs/filament-extension-rules-complete.md` - Regole complete Filament
 - `laravel/Modules/Xot/docs/phpstan-code-quality-guide.md` - Guida completa PHPStan
+<<<<<<< HEAD
 - `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
+=======
+<<<<<<< HEAD
+- `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
+=======
+- `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -15,6 +15,14 @@ class PlainTextFromFilamentValueAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @param  mixed  $value  Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
+     * @param  string|int|float|bool|\Stringable|null  $fallback  Valore di riserva se $value non è testo
+     */
+    public function execute(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
+>>>>>>> laraxot/dev
     public function execute(mixed $value, mixed $fallback = ''): string
     {
         if ($value instanceof Htmlable) {
@@ -40,6 +48,14 @@ class PlainTextFromFilamentValueAction
         return '';
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @param  mixed  $value  Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
+     * @param  string|int|float|bool|\Stringable|null  $fallback  Valore di riserva se $value non è testo
+     */
+    public static function cast(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
+>>>>>>> laraxot/dev
     public static function cast(mixed $value, mixed $fallback = ''): string
     {
         return app(self::class)->execute($value, $fallback);

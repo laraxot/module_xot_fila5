@@ -18,6 +18,10 @@ class UpdateCountAction
     /**
      * Execute the count action for the given model class.
      *
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
      * @param class-string<Model> $modelClass The fully qualified model class name
      */
     public function execute(string $modelClass, int $total): void

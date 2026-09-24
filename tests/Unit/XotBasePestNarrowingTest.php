@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 

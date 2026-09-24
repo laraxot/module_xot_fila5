@@ -18,9 +18,19 @@ updated: 2026-08-24
 ### Form Schema
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

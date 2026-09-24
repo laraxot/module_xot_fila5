@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /*
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
@@ -149,6 +153,11 @@ class PdfData extends Data
     }
 
     /**
+<<<<<<< HEAD
+=======
+     *
+     * @param array<string, mixed> $params
+>>>>>>> laraxot/dev
      * @param array<string, mixed> $params
      */
     public function view(string $view, array $params = []): self

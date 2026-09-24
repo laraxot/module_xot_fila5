@@ -21,6 +21,14 @@ class GetDistanceExpressionAction
     /**
      * Genera l'espressione SQL per calcolare la distanza tra due punti.
      *
+<<<<<<< HEAD
+=======
+     * @param float       $latitude  Latitudine del punto di riferimento
+     * @param float       $longitude Longitudine del punto di riferimento
+     * @param string|null $alias     Alias per l'espressione (opzionale)
+     *
+     *
+>>>>>>> laraxot/dev
      * @param  float  $latitude  Latitudine del punto di riferimento
      * @param  float  $longitude  Longitudine del punto di riferimento
      * @param  string|null  $alias  Alias per l'espressione (opzionale)

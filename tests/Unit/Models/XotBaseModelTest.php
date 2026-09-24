@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;
@@ -53,14 +56,22 @@ test('xot base model has correct property types', function (): void {
     $snakeType = $snakeAttributesProperty->getType();
     $perPageType = $perPageProperty->getType();
 
+<<<<<<< HEAD
     if ($snakeType !== null) {
+=======
+    if (null !== $snakeType) {
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(ReflectionNamedType::class, $snakeType);
         Assert::assertSame('bool', $snakeType->getName());
     } else {
         Assert::assertTrue(XotBaseModel::$snakeAttributes);
     }
 
+<<<<<<< HEAD
     if ($perPageType !== null) {
+=======
+    if (null !== $perPageType) {
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(ReflectionNamedType::class, $perPageType);
         Assert::assertSame('int', $perPageType->getName());
     } else {

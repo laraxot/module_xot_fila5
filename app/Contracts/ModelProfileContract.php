@@ -23,6 +23,13 @@ interface ModelProfileContract extends ModelContract
     /**
      * Grant the given permission(s) to a role.
      *
+<<<<<<< HEAD
+=======
+     *
+     * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
+     *
+     *
+>>>>>>> laraxot/dev
      * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
      *
      * @return $this
@@ -32,6 +39,13 @@ interface ModelProfileContract extends ModelContract
     /**
      * Assign the given role to the model.
      *
+<<<<<<< HEAD
+=======
+     *
+     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
+     *
+     *
+>>>>>>> laraxot/dev
      * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
      *
      * @return $this
@@ -42,6 +56,10 @@ interface ModelProfileContract extends ModelContract
     /**
      * Determine if the model has (one of) the given role(s).
      *
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
      * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
      */
     public function hasRole(
@@ -54,6 +72,10 @@ interface ModelProfileContract extends ModelContract
      *
      * Alias to hasRole() but without Guard controls
      *
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
      * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
      */
     public function hasAnyRole(string|int|array|Role|Collection $roles = [
@@ -69,6 +91,13 @@ interface ModelProfileContract extends ModelContract
     /**
      * Create a new Eloquent query builder for the model.
      *
+<<<<<<< HEAD
+=======
+     *
+     * @param Builder<Model> $query
+     *
+     *
+>>>>>>> laraxot/dev
      * @param Builder<Model> $query
      *
      * @return Builder<Model>

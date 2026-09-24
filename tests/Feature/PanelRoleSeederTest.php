@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Filament\Facades\Filament;
 use Modules\User\Models\Role;
 use Modules\Xot\Database\Seeders\PanelRoleSeeder;

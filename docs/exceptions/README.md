@@ -1,6 +1,9 @@
 # Gestione delle Eccezioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
 
 ## HandlerDecorator
@@ -30,6 +33,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 4. Supporto per PHPStan livello 9
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 [![Module](https://img.shields.io/badge/Module-Gestione delle Eccezioni-8B0000.svg)]()
@@ -84,6 +88,14 @@ Core module for the FixCity Platform.
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 >>>>>>> laraxot/dev
+=======
+## Collegamenti
+- [Exception Handling Guidelines](../exception-handling-guide.md)
+- [Logging Best Practices](../logging-best-practices.md)
+## Collegamenti tra versioni di README.md
+* [README.md](bashscripts/docs/readme.md)
+* [README.md](bashscripts/docs/it/readme.md)
+>>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -114,6 +126,7 @@ Core module for the FixCity Platform.
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< HEAD
 * [README.md](laravel/vendor/mockery/mockery/project_docs/readme.md)
 * [README.md](../../../chart/project_docs/readme.md)
 * [README.md](../../../reporting/project_docs/readme.md)
@@ -278,6 +291,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/One/docs/README.md)
 
 
+=======
+>>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -322,6 +337,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< HEAD
 
 
 ---
@@ -478,4 +494,6 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
