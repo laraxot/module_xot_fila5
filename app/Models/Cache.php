@@ -13,6 +13,10 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @property string $key
  * @property string $value
+ *
+ * @property int $expiration
+ *
+ * @method static CacheFactory          factory($count = null, $state = [])
  * @property int $expiration
  *
  * @method static CacheFactory factory($count = null, $state = [])

@@ -270,7 +270,7 @@ final class PestAssert
     {
         Assert::assertIsString($prefix);
 
-        if ($prefix === '') {
+        if ('' === $prefix) {
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -281,7 +281,7 @@ final class PestAssert
     {
         Assert::assertIsString($suffix);
 
-        if ($suffix === '') {
+        if ('' === $suffix) {
             Assert::fail('Expected a non-empty suffix.');
         }
 
@@ -335,7 +335,7 @@ final class PestAssert
                 continue;
             }
 
-            if (is_string($constraint) && $constraint !== '') {
+            if (is_string($constraint) && '' !== $constraint) {
                 Assert::assertStringContainsString($constraint, $exception->getMessage());
             }
         }

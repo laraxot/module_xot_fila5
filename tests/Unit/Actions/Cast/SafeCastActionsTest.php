@@ -18,6 +18,10 @@ test('safe array cast action works', function (): void {
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     Assert::assertSame(['c' => 3], $action->execute((object) ['c' => 3]));
     Assert::assertSame(['scalar'], $action->execute('scalar'));
+    Assert::assertSame(['d' => 4], $action->execute(new class {
+        public int $d = 4;
+    }));
+    Assert::assertSame(['e' => 5], $action->execute(new class {
     Assert::assertSame(['d' => 4], $action->execute(new class
     {
         public int $d = 4;

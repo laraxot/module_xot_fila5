@@ -32,6 +32,11 @@ class GetFactoryAction
      * @return Factory<covariant Model>
      *
      * @throws \Exception when the factory file cannot be loaded or generated
+     * @param string $model_class the class name of the model
+     *
+     * @throws \Exception when the factory file cannot be loaded or generated
+     *
+     * @return Factory<covariant Model>
      */
     public function execute(string $model_class): Factory
     {
@@ -67,7 +72,8 @@ class GetFactoryAction
     /**
      * Get the factory class name for a model class.
      *
-     * @param  string  $model_class  The model class name
+     * @param string $model_class The model class name
+     *
      * @return string The fully qualified factory class name
      */
     public function getFactoryClass(string $model_class): string
@@ -169,7 +175,8 @@ class GetFactoryAction
     }
 
     /**
-     * @param  class-string  $factory_class
+     * @param class-string $factory_class
+     *
      * @return Factory<covariant Model>
      */
     private function instantiateFactory(string $factory_class): Factory

@@ -17,8 +17,7 @@ use function Safe\rmdir;
 use function Safe\scandir;
 use function Safe\unlink;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall (vedi
 // @param-closure-this in vendor/pestphp/pest/src/Functions.php), non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var,
@@ -34,7 +33,7 @@ $rrmdir = function (string $dir) use (&$rrmdir): void {
     $files = scandir($dir);
 
     foreach ($files as $file) {
-        if ($file === '.' || $file === '..') {
+        if ('.' === $file || '..' === $file) {
             continue;
         }
 
@@ -60,7 +59,7 @@ beforeEach(function () use (&$testDir): void {
 
 afterEach(function () use (&$testDir, $rrmdir): void {
     // Puliamo la directory di test
-    if ($testDir !== '') {
+    if ('' !== $testDir) {
         $rrmdir($testDir);
     }
 });

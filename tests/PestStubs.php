@@ -12,6 +12,8 @@ declare(strict_types=1);
  * - This file is only for static analysis and test helper convenience.
  */
 
+declare(strict_types=1);
+
 namespace Pest\Laravel;
 
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -36,8 +38,9 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
 /**
  * Perform a GET request.
  *
- * @param  string|array<int|string, mixed>  $uri
- * @param  array<string, mixed>  $options
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $options
+ *
  * @return TestResponse<Response>
  */
 function get(string|array $uri = '', array $options = []): TestResponse
@@ -47,6 +50,10 @@ function get(string|array $uri = '', array $options = []): TestResponse
 
 /**
  * Perform a POST request.
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $options
  *
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -61,8 +68,9 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
 /**
  * Perform a PUT request.
  *
- * @param  string|array<int|string, mixed>  $uri
- * @param  array<string, mixed>  $data
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *
  * @return TestResponse<Response>
  */
 function put(string|array $uri, array $data = []): TestResponse
@@ -73,8 +81,9 @@ function put(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a PATCH request.
  *
- * @param  string|array<int|string, mixed>  $uri
- * @param  array<string, mixed>  $data
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *
  * @return TestResponse<Response>
  */
 function patch(string|array $uri, array $data = []): TestResponse
@@ -85,7 +94,8 @@ function patch(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a DELETE request.
  *
- * @param  string|array<int|string, mixed>  $uri
+ * @param string|array<int|string, mixed> $uri
+ *
  * @return TestResponse<Response>
  */
 function delete(string|array $uri): TestResponse
@@ -96,7 +106,8 @@ function delete(string|array $uri): TestResponse
 /**
  * Perform a HEAD request.
  *
- * @param  string|array<int|string, mixed>  $uri
+ * @param string|array<int|string, mixed> $uri
+ *
  * @return TestResponse<Response>
  */
 function head(string|array $uri): TestResponse
@@ -107,7 +118,8 @@ function head(string|array $uri): TestResponse
 /**
  * Perform an OPTIONS request.
  *
- * @param  string|array<int|string, mixed>  $uri
+ * @param string|array<int|string, mixed> $uri
+ *
  * @return TestResponse<Response>
  */
 function options(string|array $uri): TestResponse
@@ -118,8 +130,9 @@ function options(string|array $uri): TestResponse
 /**
  * Perform a JSON GET request.
  *
- * @param  string|array<int|string, mixed>  $uri
- * @param  array<string, mixed>  $headers
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $headers
+ *
  * @return TestResponse<Response>
  */
 function getJson(string|array $uri, array $headers = []): TestResponse
@@ -129,6 +142,10 @@ function getJson(string|array $uri, array $headers = []): TestResponse
 
 /**
  * Perform a JSON POST request.
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
  *
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -143,6 +160,10 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
 /**
  * Perform a JSON PUT request.
  *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
@@ -156,6 +177,10 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
 /**
  * Perform a JSON PATCH request.
  *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
@@ -168,6 +193,10 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
 
 /**
  * Perform a JSON DELETE request.
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
  *
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -191,8 +220,12 @@ function followingRedirects(int $number = 5): TestResponse
 
 /**
  * Define a test case.
+ *
+ * Return void: TestCall è `@internal` → `return.internalClass` se tipizzato.
  */
-function test(string $description, ?\Closure $closure = null): TestCall
+function test(string $description, ?\Closure $closure = null): void
+ */
+function test(string $description, ?\Closure $closure = null): mixed
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }

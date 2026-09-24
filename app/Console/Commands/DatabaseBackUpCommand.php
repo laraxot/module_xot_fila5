@@ -14,6 +14,9 @@ use Webmozart\Assert\Assert;
 
 use function Safe\exec;
 
+
+
+
 class DatabaseBackUpCommand extends Command
 {
     /**
@@ -29,6 +32,10 @@ class DatabaseBackUpCommand extends Command
      * @var string
      */
     protected $description = 'Dump your Mysql database to a file';
+
+    /**
+     * Create a new command instance.
+     */
 
     /**
      * Execute the console command.

@@ -12,6 +12,19 @@ use Modules\Xot\Database\Factories\SessionFactory;
 /**
  * Modules\Xot\Models\Session.
  *
+ *
+ * @property string               $id
+ * @property string|null          $user_id
+ * @property string|null          $ip_address
+ * @property string|null          $user_agent
+ * @property string               $payload
+ * @property int                  $last_activity
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
  * @property string $id
  * @property string|null $user_id
  * @property string|null $ip_address
@@ -28,6 +41,23 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property ProfileContract|null $updater
  *
  * @method static SessionFactory factory($count = null, $state = [])
+ *
+ * @property string               $id
+ * @property string|null          $user_id
+ * @property string|null          $ip_address
+ * @property string|null          $user_agent
+ * @property string               $payload
+ * @property int                  $last_activity
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+ * @method static SessionFactory          factory($count = null, $state = [])
  * @method static Builder<static>|Session newModelQuery()
  * @method static Builder<static>|Session newQuery()
  * @method static Builder<static>|Session query()

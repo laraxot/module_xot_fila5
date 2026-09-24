@@ -164,6 +164,10 @@ it('covers get attachments schema branches', function (): void {
         eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
     }
 
+    app()->instance(GetAttachmentsSchemaAction::class, new class {
+        /**
+         * @param string[] $attachments
+         *
     app()->instance(GetAttachmentsSchemaAction::class, new class
     {
         /**
@@ -172,7 +176,7 @@ it('covers get attachments schema branches', function (): void {
          */
         public function execute(array $attachments, string $disk): array
         {
-            if ($attachments !== ['one', 'two'] || $disk !== 'attachments') {
+            if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
                 throw new RuntimeException('unexpected attachments payload');
             }
 
@@ -207,7 +211,7 @@ it('covers step builder branches', function (): void {
 });
 
 it('covers simple base helpers', function (): void {
-    $resource = new ProbeResource;
+    $resource = new ProbeResource();
 
     Assert::assertSame([], $resource->getInfolistSchema());
     Assert::assertSame([], ProbeResource::extendTableCallback());

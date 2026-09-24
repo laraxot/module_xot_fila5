@@ -175,9 +175,13 @@ namespace Modules\NewModule\Filament\Resources;
 class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -190,9 +194,13 @@ class ProductResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -526,4 +534,9 @@ echo "5. Run quality checks"
 
 **Workflow Version**: 1.0
 **Last Updated**: 2025-11-17
+<<<<<<< HEAD
 **Maintained by**: Xot Module Development Team
+=======
+
+**Maintained by**: Xot Module Development Team
+>>>>>>> laraxot/dev

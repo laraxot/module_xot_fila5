@@ -13,7 +13,7 @@ use PHPUnit\Framework\Assert;
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
         /** @var Activity&MockInterface $model */
-        $model = Mockery::mock(Activity::class);
+        $model = \Mockery::mock(Activity::class);
         $model->shouldReceive('getAttribute')->with('name')->andReturn('Test User');
         $model->shouldReceive('getAttribute')->with('email')->andReturn('');
         $model->shouldReceive('getAttribute')->with('id')->andReturn(123);

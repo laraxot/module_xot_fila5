@@ -1081,7 +1081,7 @@ final class ModuleExecuteCoverage
 
     /**
      * @param  ReflectionClass<Model>  $ref
-     * @return array<string, list<int>>
+     * @return array<string, list<mixed>>
      */
     private static function discoverLocalScopes(ReflectionClass $ref): array
     {

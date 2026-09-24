@@ -29,6 +29,8 @@ final class GetFieldnamesByTablenameAction
             throw new \InvalidArgumentException('Table name cannot be empty.');
         }
 
+        Assert::string($connectionName ??= config('database.default'));
+
         // Use default connection if none is provided
         Assert::string($connectionName ??= config('database.default'));
 
@@ -42,6 +44,17 @@ final class GetFieldnamesByTablenameAction
             throw new \InvalidArgumentException(sprintf('Table "%s" does not exist in connection "%s".', $table, $connectionName));
         }
 
+        try {
+            $columns = Schema::connection($connectionName)->getColumnListing($table);
+
+            return array_values(array_map(
+                static function (mixed $column): string {
+                    Assert::string($column);
+
+                    return $column;
+                },
+                $columns,
+            ));
         // Get and return column listing
         try {
             $columns = Schema::connection($connectionName)->getColumnListing($table);

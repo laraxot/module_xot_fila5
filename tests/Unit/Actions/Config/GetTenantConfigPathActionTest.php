@@ -11,6 +11,11 @@ use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class)->group('xot');
+describe('Get Tenant Config Path Action', function (): void {
+    test('delegates to tenant file path action with php filename', function (): void {
+        /** @var GetTenantFilePathAction&MockInterface $tenantPathAction */
+        $tenantPathAction = \Mockery::mock(GetTenantFilePathAction::class);
 uses(TestCase::class);
 
 describe('Get Tenant Config Path Action', function (): void {

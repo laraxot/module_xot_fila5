@@ -23,7 +23,7 @@ it('crea un ruolo per ogni pannello registrato', function (): void {
 
     Role::query()->whereIn('name', $panelIds)->delete();
 
-    (new PanelRoleSeeder)->run();
+    (new PanelRoleSeeder())->run();
 
     foreach ($panelIds as $panelId) {
         expect(Role::query()->where('name', $panelId)->exists())
@@ -34,7 +34,7 @@ it('crea un ruolo per ogni pannello registrato', function (): void {
 it('non duplica i ruoli se gira due volte', function (): void {
     $this->prepareSharedSqliteForTesting();
 
-    $seeder = new PanelRoleSeeder;
+    $seeder = new PanelRoleSeeder();
     $seeder->run();
     $seeder->run();
 

@@ -6,6 +6,9 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
+
+
+return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */

@@ -10,6 +10,9 @@ use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class)->group('xot');
+it('deletes model and returns it', function (): void {
+    $mockModel = new class extends BaseModel {
 uses(TestCase::class);
 
 it('deletes model and returns it', function (): void {

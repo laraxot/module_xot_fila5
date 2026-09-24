@@ -2,6 +2,7 @@
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+<<<<<<< HEAD
 ## Misura 2026-09-23 (story 5.224 — comando utente)
 
 ```bash
@@ -19,6 +20,23 @@ Misura precedente 2026-09-21: `analyse` senza path e `analyse Modules` entrambi 
 il comando senza argomenti. Oggi l'utente ha chiesto esplicitamente `analyse Modules`.
 
 Il 2026-09-21, dopo la verifica 18.59: un `analyse` su file Media caricava Setting e
+=======
+## Misura 2026-09-21 (comando che certifica)
+
+```bash
+cd laravel
+php -d memory_limit=-1 ./vendor/bin/phpstan analyse --no-progress --memory-limit=-1
+# EXIT 0
+# totals.file_errors: 0
+# stderr: solo "Note: Using configuration file .../phpstan.neon"
+# nessun "Result is incomplete because of severe errors"
+```
+
+`analyse Modules` nello stesso momento è anch'esso a 0. I due conteggi coincidono:
+non resta residuo `typeCoverage` visibile sul full-tree.
+
+Stesso giorno, dopo la verifica 18.59: un `analyse` su file Media caricava Setting e
+>>>>>>> laraxot/dev
 il bootstrap Filament andava in fatal (`Cannot override final method
 XotBaseResource::getFormSchema()`), poi 25 errori Setting, poi marker `<<<<<<<`
 in `Activity/LogViewer.php` (mute-gate). Tutto chiuso. Rilancio certifying: ancora 0.

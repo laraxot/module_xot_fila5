@@ -101,8 +101,12 @@ class ExecuteComposerDumpAutoloadAction
             $status = $result->successful() ? 'completed' : 'failed';
 
             if ($status === 'failed') {
-                $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
+                $failureNotice = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
+                $output[] = $failureNotice;
+                Event::dispatch('artisan-command.output', ['composer dump-autoload', $failureNotice]);
             }
+
+            Event::dispatch('artisan-command.'.$status, ['composer dump-autoload', $finalErrorOutput]);
 
             return [
                 'output' => $output,

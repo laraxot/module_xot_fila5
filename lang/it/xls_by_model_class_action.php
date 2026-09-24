@@ -24,7 +24,7 @@ return [
         ],
         'label' => 'Xls By Model Class Action',
         'sort' => 1,
-        'icon' => 'xot-files.xls',
+        'icon' => 'heroicon-o-collection',
     ],
     'fields' => [
         'id' => [

@@ -24,6 +24,7 @@ use Webmozart\Assert\Assert;
  * ristretto a Model.
  *
  * @implements WithMapping<mixed>
+ * @implements WithMapping<Model>
  */
 class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, WithMapping
 {
@@ -49,6 +50,14 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     /**
      * @param  SupportCollection<int|string, mixed>|EloquentCollection<int, Model>  $collection
      * @param  array<int|string, string>  $fields
+     * @param SupportCollection<int|string, mixed>|EloquentCollection<int, Model> $collection
+     * @param array<int|string, string>                                           $fields
+    /** @var array<int, string>|null */
+    public ?array $fields = null;
+
+    /**
+     * @param  SupportCollection<int, mixed>|EloquentCollection<int, Model>  $collection
+     * @param  array<int, string>  $fields
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -107,6 +116,14 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     /**
      * @return SupportCollection<int|string, mixed>|EloquentCollection<int, Model>
+        $headings = $this->getHead();
+        $transKey = $this->transKey;
+
+        return app(TransArrayAction::class)->execute($headings, $transKey);
+    }
+
+    /**
+     * @return SupportCollection<int, mixed>|EloquentCollection<int, Model>
      */
     public function collection(): SupportCollection|EloquentCollection
     {
@@ -114,6 +131,25 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     }
 
     /**
+     * @return list<string>
+     */
+    public function map(mixed $row): array
+    {
+        if (null === $this->fields || [] === $this->fields) {
+            Assert::isInstanceOf($row, Model::class);
+            $res = app(SafeArrayByModelCastAction::class)->execute($row);
+
+            return array_values(array_map(
+                static fn (mixed $value): string => self::castCell($value),
+                $res,
+            ));
+        }
+
+        $data = [];
+        foreach ($this->fields as $key => $value) {
+            $path = \is_string($key) ? $key : $value;
+            Assert::string($path);
+            $data[] = self::castCell(data_get($row, $path));
      * @return array<int|string, mixed>
      */
     public function map(mixed $row): array
@@ -127,9 +163,14 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
         $data = [];
 
-        foreach ($this->fields as $key => $field) {
-            $path = \is_string($key) ? $key : $field;
-            $data[] = self::castCell(data_get($row, $path));
+        foreach ($this->fields as $field) {
+            $value = data_get($row, $field);
+            if (\is_object($value)) {
+                if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
+                    $value = $value->getLabel();
+                }
+            }
+            $data[] = SafeStringCastAction::cast($value);
         }
 
         return $data;

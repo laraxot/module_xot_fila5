@@ -192,7 +192,7 @@ abstract class XotBasePage extends Page implements HasForms
     /**
      * Resolve concrete page schema without invoking deprecated Filament hook directly.
      *
-     * @return array<int|string, Component>
+     * @return array<int|string, \Filament\Schemas\Components\Component>
      */
     private function resolveFormSchemaForXotPage(): array
     {
@@ -204,6 +204,11 @@ abstract class XotBasePage extends Page implements HasForms
         }
 
         /** @var array<int|string, Component> $schema */
+        if (self::class === $declaringClass || str_starts_with($declaringClass, 'Filament\\')) {
+            return [];
+        }
+
+        /** @var array<int|string, \Filament\Schemas\Components\Component> $schema */
         $schema = $method->invoke($this);
 
         return $schema;
