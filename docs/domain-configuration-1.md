@@ -81,9 +81,18 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 - [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
+<<<<<<< .merge_file_sw0ZcK
 <<<<<<< HEAD
 - [Documentazione Principale](README.md)
 =======
+=======
+<<<<<<< .merge_file_tEy6Qy
+- [Documentazione Principale](README.md)
+=======
+<<<<<<< HEAD
+- [Documentazione Principale](README.md)
+=======
+>>>>>>> .merge_file_JTwrIn
 <<<<<<< .merge_file_fATdHN
 - [Documentazione Principale](README.md)
 =======
@@ -94,6 +103,10 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4WEJt4
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_sw0ZcK
+=======
+>>>>>>> .merge_file_bcZPvu
+>>>>>>> .merge_file_JTwrIn
 - [Standard di Progetto](../../../../docs/standards/readme.md)
 - [Gestione Media](../../media/docs/readme.md)
 - [Gestione UI](../../ui/docs/readme.md)

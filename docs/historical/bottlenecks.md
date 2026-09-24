@@ -683,6 +683,11 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
+<<<<<<< .merge_file_VM6ny8
+=======
+<<<<<<< .merge_file_lCFYGE
+=======
+>>>>>>> .merge_file_z9GAlM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_0p0CmV
@@ -690,6 +695,10 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 <<<<<<< HEAD
 >>>>>>> .merge_file_7Hccwm
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VM6ny8
+=======
+>>>>>>> .merge_file_F1EqMt
+>>>>>>> .merge_file_z9GAlM
 - [Best Practices Performance](best-practices.md#performance)
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
@@ -697,6 +706,11 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](bottlenecks.md)
 * [BOTTLENECKS.md](bottlenecks.md)
 * [BOTTLENECKS.md](bottlenecks.md)
+<<<<<<< .merge_file_VM6ny8
+=======
+<<<<<<< .merge_file_lCFYGE
+=======
+>>>>>>> .merge_file_z9GAlM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_0p0CmV
@@ -712,4 +726,8 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_7Hccwm
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VM6ny8
+=======
+>>>>>>> .merge_file_F1EqMt
+>>>>>>> .merge_file_z9GAlM
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)

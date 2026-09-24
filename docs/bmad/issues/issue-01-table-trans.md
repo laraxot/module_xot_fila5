@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_yJEjfM
+=======
+<<<<<<< .merge_file_VSGgGQ
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_8cCPcL
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_1OyY5C
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cOWpO7
 >>>>>>> .merge_file_pPMTif
+<<<<<<< .merge_file_yJEjfM
+=======
+>>>>>>> .merge_file_jYPO8E
+>>>>>>> .merge_file_8cCPcL
 ---
 name: issue-01-table-trans
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_yJEjfM
+=======
+<<<<<<< .merge_file_VSGgGQ
+=======
+>>>>>>> .merge_file_8cCPcL
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yJEjfM
+=======
+>>>>>>> .merge_file_jYPO8E
+>>>>>>> .merge_file_8cCPcL
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yJEjfM
+=======
+<<<<<<< .merge_file_VSGgGQ
+=======
+=======
+>>>>>>> .merge_file_8cCPcL
 <<<<<<< .merge_file_1OyY5C
 =======
 <<<<<<< .merge_file_twtNwX
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cOWpO7
 >>>>>>> .merge_file_pPMTif
+<<<<<<< .merge_file_yJEjfM
+=======
+>>>>>>> .merge_file_jYPO8E
+>>>>>>> .merge_file_8cCPcL
 >>>>>>> laraxot/dev
 # Issue GH #01 — Rimuovere TransTrait ridondante da XotBaseResourceTable
 

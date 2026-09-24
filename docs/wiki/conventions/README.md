@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+>>>>>>> .merge_file_t1sdwn
 <<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< HEAD
@@ -12,11 +17,18 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+>>>>>>> .merge_file_tVxjxs
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+=======
+>>>>>>> .merge_file_t1sdwn
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +42,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -41,6 +57,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+>>>>>>> .merge_file_t1sdwn
 <<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< .merge_file_rK4MHl
@@ -62,6 +83,10 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 >>>>>>> laraxot/dev
 
 # Convenzioni
@@ -78,6 +103,11 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 <<<<<<< HEAD
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+>>>>>>> .merge_file_t1sdwn
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
@@ -96,6 +126,10 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -176,16 +210,31 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 
 ---
 
+<<<<<<< .merge_file_VvwH28
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9LrTE1
+>>>>>>> .merge_file_t1sdwn
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_t1sdwn
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -221,6 +270,11 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+>>>>>>> .merge_file_t1sdwn
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -228,6 +282,10 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -244,6 +302,14 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_t1sdwn
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_SmVuUD
@@ -266,6 +332,10 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -319,6 +389,11 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 <<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+>>>>>>> .merge_file_t1sdwn
 <<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
 =======
@@ -342,6 +417,10 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 >>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
@@ -370,6 +449,38 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_SmVuUD
+=======
+<<<<<<< .merge_file_9LrTE1
+>>>>>>> .merge_file_t1sdwn
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_rK4MHl
+=======
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi
+>>>>>>> laraxot/dev
+
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VvwH28
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
@@ -395,6 +506,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -429,6 +542,7 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< .merge_file_VvwH28
 <<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
@@ -436,10 +550,27 @@ Core module for the FixCity Platform.
 =======
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_VvwH28
+=======
+<<<<<<< .merge_file_9LrTE1
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_t1sdwn
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_SmVuUD
 >>>>>>> laraxot/dev
@@ -450,4 +581,8 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
+<<<<<<< .merge_file_VvwH28
+=======
+>>>>>>> .merge_file_tVxjxs
+>>>>>>> .merge_file_t1sdwn
 >>>>>>> laraxot/dev

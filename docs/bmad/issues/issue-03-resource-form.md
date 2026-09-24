@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_QFz37Z
+=======
+<<<<<<< .merge_file_FHhRvX
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_8ijTyh
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_FWkPak
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TDwE0m
 >>>>>>> .merge_file_5CnG6h
+<<<<<<< .merge_file_QFz37Z
+=======
+>>>>>>> .merge_file_BiKpRL
+>>>>>>> .merge_file_8ijTyh
 ---
 name: issue-03-resource-form
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_QFz37Z
+=======
+<<<<<<< .merge_file_FHhRvX
+=======
+>>>>>>> .merge_file_8ijTyh
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QFz37Z
+=======
+>>>>>>> .merge_file_BiKpRL
+>>>>>>> .merge_file_8ijTyh
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QFz37Z
+=======
+<<<<<<< .merge_file_FHhRvX
+=======
+=======
+>>>>>>> .merge_file_8ijTyh
 <<<<<<< .merge_file_FWkPak
 =======
 <<<<<<< .merge_file_bb83U7
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TDwE0m
 >>>>>>> .merge_file_5CnG6h
+<<<<<<< .merge_file_QFz37Z
+=======
+>>>>>>> .merge_file_BiKpRL
+>>>>>>> .merge_file_8ijTyh
 >>>>>>> laraxot/dev
 # Issue GH #03 — XotBaseResourceForm: `use HasXotForm`
 

@@ -6,20 +6,38 @@ slug: to-integrate
 description: 'Elenco di 1 riferimenti esterni raccolti per to integrate, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< .merge_file_0XScov
+=======
+<<<<<<< .merge_file_4afEvn
+=======
+>>>>>>> .merge_file_EtXyaH
 <<<<<<< HEAD
 =======
 converted_from: ___to_integrate.txt
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_0XScov
+=======
+>>>>>>> .merge_file_adXwzB
+>>>>>>> .merge_file_EtXyaH
 converted_from: to-integrate.txt
 =======
 converted_from: ___to_integrate.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_0XScov
+=======
+<<<<<<< .merge_file_4afEvn
+=======
+>>>>>>> .merge_file_EtXyaH
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_0XScov
+=======
+>>>>>>> .merge_file_adXwzB
+>>>>>>> .merge_file_EtXyaH
 created: 2026-08-24
 updated: 2026-08-24
 ---

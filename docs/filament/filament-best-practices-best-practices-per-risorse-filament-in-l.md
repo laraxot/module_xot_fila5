@@ -58,6 +58,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    // CORRETTO ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_ygWPdT
+=======
+<<<<<<< .merge_file_GxmhE6
+=======
+>>>>>>> .merge_file_JzNZkh
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -74,6 +79,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_ygWPdT
+=======
+>>>>>>> .merge_file_hvWOKW
+>>>>>>> .merge_file_JzNZkh
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
@@ -81,9 +90,18 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ygWPdT
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_yEiMv4
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_GxmhE6
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_yEiMv4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hvWOKW
+>>>>>>> .merge_file_JzNZkh
    {
        return [
            TextInput::make('nome'),
@@ -221,6 +239,13 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 =======
+<<<<<<< .merge_file_ygWPdT
+=======
+<<<<<<< .merge_file_GxmhE6
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JzNZkh
 <<<<<<< HEAD
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 =======
@@ -241,3 +266,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> .merge_file_pOT3Dc
 >>>>>>> .merge_file_yEiMv4
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ygWPdT
+=======
+>>>>>>> .merge_file_hvWOKW
+>>>>>>> .merge_file_JzNZkh

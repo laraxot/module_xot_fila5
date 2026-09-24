@@ -3,6 +3,12 @@
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_3vNPgq
+<<<<<<< .merge_file_ehPyLA
+=======
+<<<<<<< .merge_file_nbbopw
+>>>>>>> .merge_file_Sk5YFY
+=======
 <<<<<<< .merge_file_ehPyLA
 =======
 <<<<<<< HEAD
@@ -11,6 +17,13 @@
 >>>>>>> .merge_file_QGn7N3
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_3vNPgq
+<<<<<<< .merge_file_OrBKVO
+>>>>>>> .merge_file_QGn7N3
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_Sk5YFY
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
@@ -20,6 +33,10 @@
 =======
 >>>>>>> .merge_file_98ujdm
 >>>>>>> .merge_file_QGn7N3
+<<<<<<< .merge_file_3vNPgq
+=======
+>>>>>>> .merge_file_AVvPxe
+>>>>>>> .merge_file_Sk5YFY
 >>>>>>> laraxot/dev
 ---
 title: '_performance'
@@ -34,10 +51,24 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_3vNPgq
+=======
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_nbbopw
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ehPyLA
+<<<<<<< HEAD
+>>>>>>> .merge_file_Sk5YFY
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_3vNPgq
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ehPyLA
@@ -46,6 +77,8 @@ updated: 2026-08-24
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> .merge_file_Sk5YFY
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -53,6 +86,10 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QGn7N3
+<<<<<<< .merge_file_3vNPgq
+=======
+>>>>>>> .merge_file_AVvPxe
+>>>>>>> .merge_file_Sk5YFY
 >>>>>>> laraxot/dev
 # _performance
 
@@ -64,6 +101,11 @@ https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46
 //-------------------------------------------------------------
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_3vNPgq
+=======
+<<<<<<< .merge_file_nbbopw
+=======
+>>>>>>> .merge_file_Sk5YFY
 =======
 <<<<<<< .merge_file_ehPyLA
 =======
@@ -73,15 +115,31 @@ https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46
 >>>>>>> .merge_file_QGn7N3
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3vNPgq
+=======
+>>>>>>> .merge_file_AVvPxe
+>>>>>>> .merge_file_Sk5YFY
 
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_3vNPgq
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_nbbopw
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_AVvPxe
+>>>>>>> .merge_file_Sk5YFY
 
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_3vNPgq
+=======
+<<<<<<< .merge_file_nbbopw
+=======
+>>>>>>> .merge_file_Sk5YFY
 <<<<<<< .merge_file_ehPyLA
 
 >>>>>>> 7f6cf6be (.)
@@ -97,4 +155,8 @@ https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QGn7N3
+<<<<<<< .merge_file_3vNPgq
+=======
+>>>>>>> .merge_file_AVvPxe
+>>>>>>> .merge_file_Sk5YFY
 >>>>>>> laraxot/dev

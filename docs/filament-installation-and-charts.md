@@ -323,9 +323,18 @@ public function panel(Panel $panel): Panel
 
 ```php
 // ❌ ERRATO - NON registrare asset chart in altri moduli
+<<<<<<< .merge_file_xdDeKu
 <<<<<<< HEAD
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
 =======
+=======
+<<<<<<< .merge_file_LLUD5y
+// Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
+=======
+<<<<<<< HEAD
+// Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
+=======
+>>>>>>> .merge_file_0l86gp
 <<<<<<< .merge_file_nNBS7c
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
 =======
@@ -337,6 +346,10 @@ public function panel(Panel $panel): Panel
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xdDeKu
+=======
+>>>>>>> .merge_file_4TD0H8
+>>>>>>> .merge_file_0l86gp
 // Modules/UI/app/Providers/Filament/AdminPanelProvider.php
 // Themes/Zero/app/Providers/Filament/AdminPanelProvider.php
 
@@ -346,6 +359,12 @@ public function panel(Panel $panel): Panel
     
     // ❌ NON fare questo - causa duplicazioni e conflitti
     // FilamentAsset::register([
+<<<<<<< .merge_file_xdDeKu
+=======
+<<<<<<< .merge_file_LLUD5y
+    //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
+=======
+>>>>>>> .merge_file_0l86gp
 <<<<<<< HEAD
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
 =======
@@ -359,6 +378,10 @@ public function panel(Panel $panel): Panel
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xdDeKu
+=======
+>>>>>>> .merge_file_4TD0H8
+>>>>>>> .merge_file_0l86gp
     // ]);
     
     return $panel;
@@ -370,9 +393,18 @@ public function panel(Panel $panel): Panel
 - **KISS**: Configurazione semplice e centralizzata
 - **Coerenza**: Tutti i moduli ereditano automaticamente gli asset chart
 
+<<<<<<< .merge_file_xdDeKu
 <<<<<<< HEAD
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
 =======
+=======
+<<<<<<< .merge_file_LLUD5y
+Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
+=======
+<<<<<<< HEAD
+Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
+=======
+>>>>>>> .merge_file_0l86gp
 <<<<<<< .merge_file_nNBS7c
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
 =======
@@ -383,6 +415,10 @@ Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../chart/
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xdDeKu
+=======
+>>>>>>> .merge_file_4TD0H8
+>>>>>>> .merge_file_0l86gp
 
 ## Configuration Files
 
@@ -481,6 +517,12 @@ The project uses a modular architecture where:
 ## Documentazione Completa
 
 Per guide dettagliate, consultare:
+<<<<<<< .merge_file_xdDeKu
+=======
+<<<<<<< .merge_file_LLUD5y
+- [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
+=======
+>>>>>>> .merge_file_0l86gp
 <<<<<<< HEAD
 - [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
 =======
@@ -494,5 +536,9 @@ Per guide dettagliate, consultare:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xdDeKu
+=======
+>>>>>>> .merge_file_4TD0H8
+>>>>>>> .merge_file_0l86gp
 - [Filament 5.x Requirements](./filament-5-requirements.md)
 - [Filament 5.x Official Docs](https://filamentphp.com/docs/5.x/introduction/installation)

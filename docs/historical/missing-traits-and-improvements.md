@@ -613,9 +613,18 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+<<<<<<< .merge_file_YsCFoB
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
 =======
+=======
+<<<<<<< .merge_file_dfjo1Y
+- [Architettura Moduli](architecture.md)
+=======
+<<<<<<< HEAD
+- [Architettura Moduli](architecture.md)
+=======
+>>>>>>> .merge_file_At75Ef
 <<<<<<< .merge_file_Ra3gjm
 - [Architettura Moduli](architecture.md)
 =======
@@ -626,6 +635,10 @@ class AlertWidget extends BaseTableWidget
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lmzzfd
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YsCFoB
+=======
+>>>>>>> .merge_file_x6mKGR
+>>>>>>> .merge_file_At75Ef
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1249,6 +1262,12 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+<<<<<<< .merge_file_YsCFoB
+=======
+<<<<<<< .merge_file_dfjo1Y
+- [Architettura Moduli](architecture.md)
+=======
+>>>>>>> .merge_file_At75Ef
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
 =======
@@ -1262,6 +1281,10 @@ class AlertWidget extends BaseTableWidget
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lmzzfd
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YsCFoB
+=======
+>>>>>>> .merge_file_x6mKGR
+>>>>>>> .merge_file_At75Ef
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---

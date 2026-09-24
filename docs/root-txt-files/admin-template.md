@@ -8,17 +8,32 @@ tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: admin-template.txt
 =======
+<<<<<<< .merge_file_TkOieT
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_YGOWqE
+>>>>>>> .merge_file_7PBs2z
 converted_from: admin_template.txt
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_TkOieT
+=======
+converted_from: admin_template.txt
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_7PBs2z
 converted_from: admin-template.txt
 =======
 converted_from: admin_template.txt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TkOieT
+=======
+>>>>>>> .merge_file_RIf6KN
+>>>>>>> .merge_file_7PBs2z
 created: 2026-08-24
 updated: 2026-08-24
 ---

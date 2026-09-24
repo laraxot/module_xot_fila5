@@ -57,6 +57,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 - [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md) — **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
 <<<<<<< HEAD
+<<<<<<< .merge_file_NNX4C3
+=======
+<<<<<<< .merge_file_mMnXxO
+=======
+>>>>>>> .merge_file_lKwwuF
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
 =======
 <<<<<<< HEAD
@@ -75,10 +80,19 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 - [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_NNX4C3
+=======
+>>>>>>> .merge_file_dLRbTi
+>>>>>>> .merge_file_lKwwuF
 - [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
 =======
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NNX4C3
+=======
+<<<<<<< .merge_file_mMnXxO
+=======
+>>>>>>> .merge_file_lKwwuF
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_xoWcN5
 =======
@@ -86,6 +100,10 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 >>>>>>> .merge_file_EyOY49
 >>>>>>> .merge_file_FEgV6P
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NNX4C3
+=======
+>>>>>>> .merge_file_dLRbTi
+>>>>>>> .merge_file_lKwwuF
 
 ## Compiled Pages
 
@@ -93,6 +111,14 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 |--------|------|-----------|------|
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
 <<<<<<< HEAD
+<<<<<<< .merge_file_NNX4C3
+=======
+<<<<<<< .merge_file_mMnXxO
+| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+>>>>>>> .merge_file_lKwwuF
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 =======
 <<<<<<< HEAD
@@ -124,6 +150,10 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_EyOY49
 >>>>>>> .merge_file_FEgV6P
+<<<<<<< .merge_file_NNX4C3
+=======
+>>>>>>> .merge_file_dLRbTi
+>>>>>>> .merge_file_lKwwuF
 >>>>>>> laraxot/dev
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |

@@ -9,9 +9,18 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
+<<<<<<< .merge_file_VkUeeK
 <<<<<<< HEAD
 use Mockery;
 =======
+=======
+<<<<<<< .merge_file_uoiY98
+use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> .merge_file_rG6Mnb
 <<<<<<< .merge_file_8AmCPR
 <<<<<<< HEAD
 use Mockery;
@@ -20,6 +29,10 @@ use Mockery;
 =======
 >>>>>>> .merge_file_ue0Q9W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VkUeeK
+=======
+>>>>>>> .merge_file_hHis1N
+>>>>>>> .merge_file_rG6Mnb
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
@@ -28,6 +41,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_VkUeeK
+=======
+<<<<<<< .merge_file_uoiY98
+    Mockery::close();
+=======
+>>>>>>> .merge_file_rG6Mnb
 <<<<<<< HEAD
     Mockery::close();
 =======
@@ -41,6 +60,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_ue0Q9W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VkUeeK
+=======
+>>>>>>> .merge_file_hHis1N
+>>>>>>> .merge_file_rG6Mnb
 });
 
 describe('Xot floor50 extras non-public', function (): void {

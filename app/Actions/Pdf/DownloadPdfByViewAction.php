@@ -21,6 +21,7 @@ class DownloadPdfByViewAction
     /**
      * Genera PDF dalla view e restituisce StreamedResponse per il download.
      *
+<<<<<<< .merge_file_7rafI3
 <<<<<<< HEAD
      * @param  string  $view  Nome view (es. indennita-responsabilita::indennita_responsabilita.index.pdf)
      * @param  array<string, mixed>  $viewParams  Dati per la view (es. ['rows' => $rows])
@@ -30,6 +31,18 @@ class DownloadPdfByViewAction
      * @param array<string, mixed> $viewParams Dati per la view (es. ['rows' => $rows])
      * @param string|null          $filename   Nome file per il download (opzionale)
 >>>>>>> laraxot/dev
+=======
+     * <<<<<<< HEAD
+     *
+     * @param string               $view       Nome view (es. indennita-responsabilita::indennita_responsabilita.index.pdf)
+     * @param array<string, mixed> $viewParams Dati per la view (es. ['rows' => $rows])
+     * @param string|null          $filename   Nome file per il download (opzionale)
+     *                                         =======
+     * @param string               $view       Nome view (es. indennita-responsabilita::indennita_responsabilita.index.pdf)
+     * @param array<string, mixed> $viewParams Dati per la view (es. ['rows' => $rows])
+     * @param string|null          $filename   Nome file per il download (opzionale)
+     *                                         >>>>>>> laraxot/dev
+>>>>>>> .merge_file_Xm14UW
      */
     public function execute(
         string $view,

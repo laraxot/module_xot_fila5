@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_tj0F6O
+=======
+<<<<<<< .merge_file_1NPKrD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_16PhKx
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_YFYj2o
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_pka5UF
 >>>>>>> .merge_file_O4G9hO
+<<<<<<< .merge_file_tj0F6O
+=======
+>>>>>>> .merge_file_0fdh78
+>>>>>>> .merge_file_16PhKx
 ---
 name: story-hasxotform-columns
 description: "Fix: ->columns($this->getFormColumns()) invece di ->columns(2). Metodi getFormSchema/getFormColumns non statici."
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_tj0F6O
+=======
+<<<<<<< .merge_file_1NPKrD
+=======
+>>>>>>> .merge_file_16PhKx
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tj0F6O
+=======
+>>>>>>> .merge_file_0fdh78
+>>>>>>> .merge_file_16PhKx
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tj0F6O
+=======
+<<<<<<< .merge_file_1NPKrD
+=======
+=======
+>>>>>>> .merge_file_16PhKx
 <<<<<<< .merge_file_YFYj2o
 =======
 <<<<<<< .merge_file_GLbHKx
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_pka5UF
 >>>>>>> .merge_file_O4G9hO
+<<<<<<< .merge_file_tj0F6O
+=======
+>>>>>>> .merge_file_0fdh78
+>>>>>>> .merge_file_16PhKx
 >>>>>>> laraxot/dev
 # BMAD Story: HasXotForm columns
 Fix: ->columns($this->getFormColumns()) invece di ->columns(2). Metodi getFormSchema/getFormColumns non statici.

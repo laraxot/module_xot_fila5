@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Ljx15u
 
+=======
+<<<<<<< .merge_file_Tz1xq0
+=======
+
+>>>>>>> .merge_file_WARdHk
+>>>>>>> .merge_file_usqlt0
 return [
     'general' => [
         'all' => 'Tout',

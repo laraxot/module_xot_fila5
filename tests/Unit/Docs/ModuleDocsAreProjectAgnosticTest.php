@@ -57,15 +57,28 @@ function moduleDocsWithHostProjectName(): array
         );
 
         foreach ($iterator as $fileInfo) {
+<<<<<<< .merge_file_Z0eq4t
 <<<<<<< HEAD
             if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
 =======
+=======
+<<<<<<< .merge_file_wdQpUq
+            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
+=======
+<<<<<<< HEAD
+            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
+=======
+>>>>>>> .merge_file_Wezq21
 <<<<<<< .merge_file_Ou8sr1
             if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
 =======
             if (! $fileInfo instanceof \SplFileInfo || 'md' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_VilMNh
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z0eq4t
+=======
+>>>>>>> .merge_file_X599t3
+>>>>>>> .merge_file_Wezq21
                 continue;
             }
 
@@ -99,6 +112,14 @@ test('nessun documento nuovo di modulo nomina il progetto ospite', function (): 
         MODULE_DOCS_HOST_NAME_FILE_BASELINE,
         "Un documento di modulo nomina un'installazione specifica. Un modulo gira in "
 <<<<<<< HEAD
+<<<<<<< .merge_file_Z0eq4t
+=======
+<<<<<<< .merge_file_wdQpUq
+        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
+=======
+        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
+=======
+>>>>>>> .merge_file_Wezq21
         .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
 =======
 <<<<<<< .merge_file_Ou8sr1
@@ -114,6 +135,10 @@ test('nessun documento nuovo di modulo nomina il progetto ospite', function (): 
 =======
         .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
 >>>>>>> .merge_file_VilMNh
+<<<<<<< .merge_file_Z0eq4t
+=======
+>>>>>>> .merge_file_X599t3
+>>>>>>> .merge_file_Wezq21
 >>>>>>> laraxot/dev
         .'Vedi docs/wiki/rules/project-agnostic.md'
     );

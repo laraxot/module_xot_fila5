@@ -26,9 +26,18 @@ Questa scelta garantisce:
 
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< .merge_file_aOkHZi
 <<<<<<< HEAD
 - [Best Practices Provider](best-practices.md)
 =======
+=======
+<<<<<<< .merge_file_NjB7JI
+- [Best Practices Provider](best-practices.md)
+=======
+<<<<<<< HEAD
+- [Best Practices Provider](best-practices.md)
+=======
+>>>>>>> .merge_file_4v49ZR
 <<<<<<< .merge_file_clQPtA
 - [Best Practices Provider](best-practices.md)
 =======
@@ -39,11 +48,21 @@ Questa scelta garantisce:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_rL1hlY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_aOkHZi
+=======
+>>>>>>> .merge_file_K0PqVp
+>>>>>>> .merge_file_4v49ZR
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< .merge_file_aOkHZi
+=======
+<<<<<<< .merge_file_NjB7JI
+- [docs/BEST-PRACTICES.md](best-practices.md)
+=======
+>>>>>>> .merge_file_4v49ZR
 <<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](best-practices.md)
 =======
@@ -57,3 +76,7 @@ Questa scelta garantisce:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_rL1hlY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_aOkHZi
+=======
+>>>>>>> .merge_file_K0PqVp
+>>>>>>> .merge_file_4v49ZR

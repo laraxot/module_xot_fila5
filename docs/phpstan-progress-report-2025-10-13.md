@@ -1,5 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_Jl6sVa
+=======
+<<<<<<< .merge_file_urthBT
+=======
+>>>>>>> .merge_file_1RMvWq
 <<<<<<< HEAD
 =======
 =======
@@ -7,6 +12,10 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Jl6sVa
+=======
+>>>>>>> .merge_file_hPuhg1
+>>>>>>> .merge_file_1RMvWq
 ---
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
@@ -14,19 +23,39 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_Jl6sVa
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
+<<<<<<< .merge_file_urthBT
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_1RMvWq
 =======
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_hPuhg1
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_Jl6sVa
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_urthBT
+=======
+>>>>>>> .merge_file_1RMvWq
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Jl6sVa
+=======
+>>>>>>> .merge_file_hPuhg1
+>>>>>>> .merge_file_1RMvWq
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary

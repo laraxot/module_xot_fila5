@@ -9,9 +9,18 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Request;
+<<<<<<< .merge_file_3E1I8d
 <<<<<<< HEAD
 use Mockery;
 =======
+=======
+<<<<<<< .merge_file_wyvp8F
+use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 use Mockery;
@@ -20,6 +29,10 @@ use Mockery;
 =======
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
 use Modules\Xot\Actions\ArtisanAction;
 use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
 use Modules\Xot\Console\Commands\ExecuteSqlFileCommand;
@@ -30,25 +43,45 @@ use Modules\Xot\Services\RouteService;
 use Modules\Xot\States\Transitions\XotBaseTransition;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_3E1I8d
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
+=======
+<<<<<<< .merge_file_GP3xsC
+=======
+<<<<<<< .merge_file_wyvp8F
+use ReflectionClass;
+use ReflectionMethod;
+=======
+>>>>>>> .merge_file_QDA6B0
+<<<<<<< HEAD
+use ReflectionClass;
+use ReflectionMethod;
+=======
+<<<<<<< .merge_file_3E1I8d
 =======
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 =======
+>>>>>>> .merge_file_QDA6B0
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_3E1I8d
 <<<<<<< HEAD
     Mockery::close();
 =======
@@ -56,12 +89,28 @@ afterEach(function (): void {
 <<<<<<< HEAD
     Mockery::close();
 =======
+=======
+<<<<<<< .merge_file_wyvp8F
+    Mockery::close();
+=======
+<<<<<<< HEAD
+    Mockery::close();
+=======
+<<<<<<< .merge_file_GP3xsC
+<<<<<<< HEAD
+    Mockery::close();
+=======
+>>>>>>> .merge_file_QDA6B0
     \Mockery::close();
 >>>>>>> laraxot/dev
 =======
     \Mockery::close();
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
 });
 
 describe('Xot artisan commands helpers coverage', function (): void {
@@ -81,11 +130,23 @@ describe('Xot artisan commands helpers coverage', function (): void {
             }
         }
 
+<<<<<<< .merge_file_3E1I8d
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wyvp8F
+>>>>>>> .merge_file_QDA6B0
+        $ref = new ReflectionClass(ArtisanAction::class);
+        foreach ($ref->getMethods() as $method) {
+            if ($method->getDeclaringClass()->getName() !== ArtisanAction::class || str_starts_with($method->getName(), '__')) {
+=======
+<<<<<<< .merge_file_3E1I8d
+=======
 <<<<<<< HEAD
         $ref = new ReflectionClass(ArtisanAction::class);
         foreach ($ref->getMethods() as $method) {
             if ($method->getDeclaringClass()->getName() !== ArtisanAction::class || str_starts_with($method->getName(), '__')) {
 =======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
         $ref = new ReflectionClass(ArtisanAction::class);
@@ -102,6 +163,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
             if (ArtisanAction::class !== $method->getDeclaringClass()->getName() || str_starts_with($method->getName(), '__')) {
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
                 continue;
             }
             try {
@@ -110,9 +175,18 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 foreach ($method->getParameters() as $param) {
                     $args[] = $param->isDefaultValueAvailable()
                         ? $param->getDefaultValue()
+<<<<<<< .merge_file_3E1I8d
 <<<<<<< HEAD
                         : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : null);
 =======
+=======
+<<<<<<< .merge_file_wyvp8F
+                        : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : null);
+=======
+<<<<<<< HEAD
+                        : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : null);
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
                         : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : null);
@@ -123,6 +197,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         : ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName() ? 'Xot' : null);
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
                 }
                 if ($method->isStatic()) {
                     $method->invoke(null, ...$args);
@@ -149,6 +227,12 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 continue;
             }
             try {
+<<<<<<< .merge_file_3E1I8d
+=======
+<<<<<<< .merge_file_wyvp8F
+                $ref = new ReflectionClass($class);
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
@@ -162,6 +246,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
                 $inst = $ref->isAbstract() ? null : $ref->newInstanceWithoutConstructor();
                 if ($inst instanceof Command) {
                     try {
@@ -169,9 +257,18 @@ describe('Xot artisan commands helpers coverage', function (): void {
                     } catch (\Throwable) {
                     }
                 }
+<<<<<<< .merge_file_3E1I8d
 <<<<<<< HEAD
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
+=======
+<<<<<<< .merge_file_wyvp8F
+                foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+<<<<<<< HEAD
+                foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
@@ -182,6 +279,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
                     if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                         continue;
                     }
@@ -194,11 +295,20 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         foreach ($method->getParameters() as $param) {
                             $args[] = $param->isDefaultValueAvailable()
                                 ? $param->getDefaultValue()
+<<<<<<< .merge_file_3E1I8d
+=======
+<<<<<<< .merge_file_wyvp8F
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
                                 : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : []);
                         }
                         if ($method->isStatic()) {
@@ -209,6 +319,11 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         $n++;
                     } catch (\Throwable) {
                         $n++;
+<<<<<<< .merge_file_3E1I8d
+=======
+<<<<<<< .merge_file_wyvp8F
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< HEAD
 =======
 =======
@@ -229,6 +344,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
 =======
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
                     }
                 }
                 if ($inst instanceof Command) {
@@ -244,11 +363,20 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         if ($def->hasOption('module')) {
                             $input['--module'] = 'Xot';
                         }
+<<<<<<< .merge_file_3E1I8d
+=======
+<<<<<<< .merge_file_wyvp8F
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
                         $inst->run(new ArrayInput($input), new NullOutput);
                         $n++;
                     } catch (\Throwable) {
@@ -257,6 +385,11 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 }
             } catch (\Throwable) {
                 $n++;
+<<<<<<< .merge_file_3E1I8d
+=======
+<<<<<<< .merge_file_wyvp8F
+=======
+>>>>>>> .merge_file_QDA6B0
 <<<<<<< HEAD
 =======
 =======
@@ -275,6 +408,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
 =======
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3E1I8d
+=======
+>>>>>>> .merge_file_nnevJy
+>>>>>>> .merge_file_QDA6B0
             }
         }
         Assert::assertGreaterThan(5, $n);

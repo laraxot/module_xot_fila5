@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_p6iv5u
 
+=======
+<<<<<<< .merge_file_YjiPUD
+=======
+
+>>>>>>> .merge_file_BLeD8l
+>>>>>>> .merge_file_ZoBaPR
 return [
     'title' => 'Laravel安裝程序',
     'next' => '下一步',

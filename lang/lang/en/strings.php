@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_lCMdnE
 
+=======
+<<<<<<< .merge_file_89StLp
+=======
+
+>>>>>>> .merge_file_DSqE9T
+>>>>>>> .merge_file_qq4zcj
 return [
     'backend' => [
         'access' => [

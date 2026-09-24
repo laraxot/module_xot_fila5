@@ -268,6 +268,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_15WMdh
+=======
+<<<<<<< .merge_file_Jfhiwo
+=======
+>>>>>>> .merge_file_h0lY07
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zakQSu
@@ -277,10 +282,19 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_pyjiAs
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_15WMdh
+=======
+>>>>>>> .merge_file_i6hUwr
+>>>>>>> .merge_file_h0lY07
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_15WMdh
+=======
+<<<<<<< .merge_file_Jfhiwo
+=======
+>>>>>>> .merge_file_h0lY07
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zakQSu
@@ -290,6 +304,10 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_pyjiAs
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_15WMdh
+=======
+>>>>>>> .merge_file_i6hUwr
+>>>>>>> .merge_file_h0lY07
     {
         return [
             TextInput::make('name'),  // No ->label()!

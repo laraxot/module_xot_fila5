@@ -39,6 +39,11 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -46,10 +51,19 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -59,6 +73,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 {
     return [
         TextInput::make('nome')->required(),
@@ -196,6 +214,11 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -203,10 +226,19 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -216,6 +248,10 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('cognome')
@@ -396,6 +432,11 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -403,10 +444,19 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -416,6 +466,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -663,6 +717,11 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -670,10 +729,19 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -683,6 +751,10 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('nome')->required(),
@@ -753,6 +825,11 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -760,10 +837,19 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -773,6 +859,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 {
     return [
         TextInput::make('nome')->required(),
@@ -910,6 +1000,11 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -917,10 +1012,19 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -930,6 +1034,10 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('cognome')
@@ -1110,6 +1218,11 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -1117,10 +1230,19 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -1130,6 +1252,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1377,6 +1503,11 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -1384,10 +1515,19 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+<<<<<<< .merge_file_lbWR6J
+=======
+>>>>>>> .merge_file_ZxzVHa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GFMS9A
@@ -1397,6 +1537,10 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TIyMq5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YdV1uK
+=======
+>>>>>>> .merge_file_qM1iOI
+>>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('nome')->required(),

@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_ga6k87
+=======
+<<<<<<< .merge_file_FcrKXC
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_qARVxl
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_tz3meF
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ax8pSZ
 >>>>>>> .merge_file_zroUHY
+<<<<<<< .merge_file_ga6k87
+=======
+>>>>>>> .merge_file_uXX5pn
+>>>>>>> .merge_file_qARVxl
 ---
 name: 09-intervention-phpstan
 description: "Modulo: Intervention"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_ga6k87
+=======
+<<<<<<< .merge_file_FcrKXC
+=======
+>>>>>>> .merge_file_qARVxl
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ga6k87
+=======
+>>>>>>> .merge_file_uXX5pn
+>>>>>>> .merge_file_qARVxl
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ga6k87
+=======
+<<<<<<< .merge_file_FcrKXC
+=======
+=======
+>>>>>>> .merge_file_qARVxl
 <<<<<<< .merge_file_tz3meF
 =======
 <<<<<<< .merge_file_OHq1SR
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ax8pSZ
 >>>>>>> .merge_file_zroUHY
+<<<<<<< .merge_file_ga6k87
+=======
+>>>>>>> .merge_file_uXX5pn
+>>>>>>> .merge_file_qARVxl
 >>>>>>> laraxot/dev
 # BMAD Story 09 — Intervention: 21 errori PHPStan
 

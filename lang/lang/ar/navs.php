@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_IsGfnj
 
+=======
+<<<<<<< .merge_file_mdWWGH
+=======
+
+>>>>>>> .merge_file_1Whjsa
+>>>>>>> .merge_file_v0KS30
 return [
     'general' => [
         'home' => 'الرئيسية',

@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_37rzQq
 
+=======
+<<<<<<< .merge_file_fYlqbp
+=======
+
+>>>>>>> .merge_file_JxTMRv
+>>>>>>> .merge_file_CoEPET
 return [
     /*
     |--------------------------------------------------------------------------

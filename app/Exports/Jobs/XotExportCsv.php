@@ -12,6 +12,14 @@ use Illuminate\Database\Query\Expression;
 use Illuminate\Support\Facades\DB;
 use League\Csv\Writer;
 use Modules\Xot\Exports\XotBaseExporter;
+<<<<<<< .merge_file_elR3Gs
+=======
+<<<<<<< .merge_file_EOE7Ro
+use SplTempFileObject;
+use Throwable;
+=======
+>>>>>>> .merge_file_2W9FG9
+>>>>>>> .merge_file_2yikmd
 
 /**
  * `ExportCsv` con il CSV intermedio in escape `XotBaseExporter::CSV_ESCAPE`.
@@ -38,7 +46,15 @@ class XotExportCsv extends ExportCsv
             $processedRows = 0;
             $successfulRows = 0;
 
+<<<<<<< .merge_file_elR3Gs
             $csv = Writer::from(new \SplTempFileObject());
+=======
+<<<<<<< .merge_file_EOE7Ro
+            $csv = Writer::from(new SplTempFileObject);
+=======
+            $csv = Writer::from(new \SplTempFileObject());
+>>>>>>> .merge_file_2W9FG9
+>>>>>>> .merge_file_2yikmd
             $csv->setDelimiter($this->exporter::getCsvDelimiter());
             $csv->setEscape(XotBaseExporter::CSV_ESCAPE);
 
@@ -53,12 +69,27 @@ class XotExportCsv extends ExportCsv
                 try {
                     $csv->insertOne(($this->exporter)($record));
 
+<<<<<<< .merge_file_elR3Gs
+=======
+<<<<<<< .merge_file_EOE7Ro
+                    $successfulRows++;
+                } catch (Throwable $exception) {
+                    report($exception);
+                }
+
+                $processedRows++;
+=======
+>>>>>>> .merge_file_2yikmd
                     ++$successfulRows;
                 } catch (\Throwable $exception) {
                     report($exception);
                 }
 
                 ++$processedRows;
+<<<<<<< .merge_file_elR3Gs
+=======
+>>>>>>> .merge_file_2W9FG9
+>>>>>>> .merge_file_2yikmd
             }
 
             $filePath = $this->export->getFileDirectory().DIRECTORY_SEPARATOR.str_pad((string) $this->page, 16, '0', STR_PAD_LEFT).'.csv';

@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+>>>>>>> .merge_file_w5nTgv
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< HEAD
@@ -12,11 +17,18 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+>>>>>>> .merge_file_zoozHA
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+=======
+>>>>>>> .merge_file_w5nTgv
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +42,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -41,6 +57,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+>>>>>>> .merge_file_w5nTgv
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< .merge_file_gDspsU
@@ -62,6 +83,10 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 >>>>>>> laraxot/dev
 
 # Sviluppo
@@ -79,6 +104,11 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
 <<<<<<< HEAD
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+>>>>>>> .merge_file_w5nTgv
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
@@ -97,6 +127,10 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -177,16 +211,31 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 
 ---
 
+<<<<<<< .merge_file_ftBVue
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_E47Vap
+>>>>>>> .merge_file_w5nTgv
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_w5nTgv
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -222,6 +271,11 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+>>>>>>> .merge_file_w5nTgv
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -229,6 +283,10 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -246,6 +304,14 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 ## Note
 
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto. 
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_w5nTgv
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7aUYvN
@@ -268,6 +334,10 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -321,6 +391,11 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 <<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+>>>>>>> .merge_file_w5nTgv
 <<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
@@ -344,6 +419,10 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 >>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
@@ -372,6 +451,38 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_7aUYvN
+=======
+<<<<<<< .merge_file_E47Vap
+>>>>>>> .merge_file_w5nTgv
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gDspsU
+=======
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF
+>>>>>>> laraxot/dev
+
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ftBVue
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
@@ -397,6 +508,8 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -431,6 +544,7 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< .merge_file_ftBVue
 <<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
@@ -438,10 +552,27 @@ Core module for the FixCity Platform.
 =======
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_ftBVue
+=======
+<<<<<<< .merge_file_E47Vap
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_w5nTgv
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_7aUYvN
 >>>>>>> laraxot/dev
@@ -452,4 +583,8 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+<<<<<<< .merge_file_ftBVue
+=======
+>>>>>>> .merge_file_zoozHA
+>>>>>>> .merge_file_w5nTgv
 >>>>>>> laraxot/dev

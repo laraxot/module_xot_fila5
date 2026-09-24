@@ -38,6 +38,12 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
+<<<<<<< .merge_file_GWQCs4
+=======
+<<<<<<< .merge_file_pxULXG
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_Kr9VZT
 <<<<<<< .merge_file_v5dtUL
 public function getFormSchema(): array
 =======
@@ -47,6 +53,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
+<<<<<<< .merge_file_GWQCs4
+=======
+>>>>>>> .merge_file_QrBkpa
+>>>>>>> .merge_file_Kr9VZT
 {
     return [
         TextInput::make('nome')->required(),
@@ -132,6 +142,12 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
+<<<<<<< .merge_file_GWQCs4
+=======
+<<<<<<< .merge_file_pxULXG
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_Kr9VZT
 <<<<<<< .merge_file_v5dtUL
     public function getFormSchema(): array
 =======
@@ -141,6 +157,10 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
+<<<<<<< .merge_file_GWQCs4
+=======
+>>>>>>> .merge_file_QrBkpa
+>>>>>>> .merge_file_Kr9VZT
     {
         return [
             TextInput::make('cognome')
@@ -320,6 +340,12 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
+<<<<<<< .merge_file_GWQCs4
+=======
+<<<<<<< .merge_file_pxULXG
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_Kr9VZT
 <<<<<<< .merge_file_v5dtUL
 public function getFormSchema(): array
 =======
@@ -329,6 +355,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
+<<<<<<< .merge_file_GWQCs4
+=======
+>>>>>>> .merge_file_QrBkpa
+>>>>>>> .merge_file_Kr9VZT
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -575,6 +605,12 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
+<<<<<<< .merge_file_GWQCs4
+=======
+<<<<<<< .merge_file_pxULXG
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_Kr9VZT
 <<<<<<< .merge_file_v5dtUL
     public function getFormSchema(): array
 =======
@@ -584,6 +620,10 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
+<<<<<<< .merge_file_GWQCs4
+=======
+>>>>>>> .merge_file_QrBkpa
+>>>>>>> .merge_file_Kr9VZT
     {
         return [
             TextInput::make('nome')->required(),

@@ -2,6 +2,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_JlGAaQ
+=======
+<<<<<<< .merge_file_PzuYPx
+=======
+>>>>>>> .merge_file_v0Qu5x
 =======
 <<<<<<< .merge_file_RYtcQU
 =======
@@ -87,6 +92,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_MXE3H5
+<<<<<<< .merge_file_JlGAaQ
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,6 +100,16 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI
+>>>>>>> .merge_file_v0Qu5x
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -128,6 +144,11 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< .merge_file_JlGAaQ
+=======
+<<<<<<< .merge_file_PzuYPx
+=======
+>>>>>>> .merge_file_v0Qu5x
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -135,12 +156,23 @@ Core module for the FixCity Platform.
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_JlGAaQ
+=======
+>>>>>>> .merge_file_JFwPVI
+>>>>>>> .merge_file_v0Qu5x
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_JlGAaQ
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_PzuYPx
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI
+>>>>>>> .merge_file_v0Qu5x
 ---
 title: "Readme"
 type: reference
@@ -158,9 +190,18 @@ updated: 2026-08-24
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
+<<<<<<< .merge_file_JlGAaQ
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_PzuYPx
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI
+>>>>>>> .merge_file_v0Qu5x
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -179,10 +220,20 @@ updated: 2026-08-24
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_JlGAaQ
+=======
+<<<<<<< .merge_file_PzuYPx
+=======
+=======
+>>>>>>> .merge_file_v0Qu5x
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_JlGAaQ
+=======
+>>>>>>> .merge_file_JFwPVI
+>>>>>>> .merge_file_v0Qu5x
 >>>>>>> laraxot/dev
 
 ### Translation Problems
@@ -216,9 +267,15 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_JlGAaQ
+=======
+<<<<<<< .merge_file_PzuYPx
+=======
+>>>>>>> .merge_file_v0Qu5x
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+>>>>>>> .merge_file_JFwPVI
 =======
 # Xot
 
@@ -257,6 +314,13 @@ Core module for the FixCity Platform.
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_JlGAaQ
+=======
+<<<<<<< .merge_file_PzuYPx
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_v0Qu5x
 <<<<<<< HEAD
 =======
 =======
@@ -271,3 +335,7 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_W8gVlC
 >>>>>>> .merge_file_MXE3H5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_JlGAaQ
+=======
+>>>>>>> .merge_file_JFwPVI
+>>>>>>> .merge_file_v0Qu5x

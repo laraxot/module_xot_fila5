@@ -54,6 +54,11 @@ class ThemeAction
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_8olDzZ
+=======
+<<<<<<< .merge_file_NljGl3
+=======
+>>>>>>> .merge_file_8lvsMK
     public function execute(): void {}
 =======
 <<<<<<< .merge_file_uj7qR3
@@ -63,12 +68,21 @@ class ThemeAction
     }
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_8olDzZ
+=======
+>>>>>>> .merge_file_AFJnWC
+>>>>>>> .merge_file_8lvsMK
     public function execute(): void
     {
     }
 =======
     public function execute(): void {}
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8olDzZ
+=======
+<<<<<<< .merge_file_NljGl3
+=======
+>>>>>>> .merge_file_8lvsMK
 >>>>>>> laraxot/dev
 =======
     public function execute(): void
@@ -76,4 +90,8 @@ class ThemeAction
     }
 >>>>>>> .merge_file_iaoQ85
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8olDzZ
+=======
+>>>>>>> .merge_file_AFJnWC
+>>>>>>> .merge_file_8lvsMK
 }

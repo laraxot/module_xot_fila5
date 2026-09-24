@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_024P3p
 
+=======
+<<<<<<< .merge_file_DGOk4k
+=======
+
+>>>>>>> .merge_file_FpXXWP
+>>>>>>> .merge_file_T2349Y
 return [
     'password' => 'Lösenordet måste vara minst sex tecken långt och stämma med bekräftelsen av lösenordet.',
     'reset' => 'Ditt lösenord har återställts!',

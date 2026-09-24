@@ -56,6 +56,11 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_EMjmMu
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+>>>>>>> .merge_file_0MlNQF
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -63,10 +68,19 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+>>>>>>> .merge_file_0MlNQF
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -76,6 +90,10 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
     {
         return [
             // Schema del form
@@ -110,13 +128,29 @@ class MyResource extends XotBaseResource
    - ✅ `protected static ?string $model`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_EMjmMu
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
    - ✅ `public function getFormSchema(): array`
 =======
    - ✅ `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+   - ✅ `public function getFormSchema(): array`
+=======
+>>>>>>> .merge_file_0MlNQF
 <<<<<<< HEAD
 =======
 =======
@@ -126,6 +160,10 @@ class MyResource extends XotBaseResource
    - ✅ `public static function getFormSchema(): array`
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
 >>>>>>> laraxot/dev
    - ✅ `public static function getPages(): array`
 
@@ -239,6 +277,11 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_EMjmMu
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+>>>>>>> .merge_file_0MlNQF
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -246,10 +289,19 @@ class ListRecords extends XotBaseListRecords
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+>>>>>>> .merge_file_0MlNQF
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -259,6 +311,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -588,6 +644,11 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_EMjmMu
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+>>>>>>> .merge_file_0MlNQF
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -595,10 +656,19 @@ public function getTableColumns(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+<<<<<<< .merge_file_eygsfs
+=======
+>>>>>>> .merge_file_0MlNQF
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -608,6 +678,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EMjmMu
+=======
+>>>>>>> .merge_file_lC5vVX
+>>>>>>> .merge_file_0MlNQF
 {
     return [
         'nome' => TextInput::make('nome'),

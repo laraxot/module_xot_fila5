@@ -11,9 +11,18 @@ use function Safe\preg_match_all;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_298ACl
 <<<<<<< HEAD
 /**
 =======
+=======
+<<<<<<< .merge_file_JuUfIx
+/**
+=======
+<<<<<<< HEAD
+/**
+=======
+>>>>>>> .merge_file_r4stgZ
 <<<<<<< .merge_file_iLgn85
 <<<<<<< HEAD
 /**
@@ -24,6 +33,10 @@ uses(TestCase::class);
 /*
 >>>>>>> .merge_file_1ZkZjM
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_298ACl
+=======
+>>>>>>> .merge_file_2YkIw0
+>>>>>>> .merge_file_r4stgZ
  * I file citati dai `CLAUDE.md` esistono.
  *
  * I `CLAUDE.md` sono istruzioni caricate a ogni sessione: un riferimento a un file che non

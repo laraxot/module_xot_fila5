@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< HEAD
@@ -12,11 +17,18 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+>>>>>>> .merge_file_FW2Cah
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +42,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -41,6 +57,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< .merge_file_kkjBRW
@@ -62,6 +83,10 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 >>>>>>> laraxot/dev
 
 # Best Practices
@@ -95,6 +120,11 @@ updated: 2026-08-24
 ## Code Quality
 - PHPStan level 9+ for all new code
 <<<<<<< HEAD
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> .merge_file_UIiMNX
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
@@ -112,6 +142,10 @@ updated: 2026-08-24
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
@@ -135,6 +169,13 @@ updated: 2026-08-24
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_55fVAe
@@ -154,6 +195,10 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
@@ -164,6 +209,11 @@ updated: 2026-08-24
 - Update both module and root documentation
 - Include practical examples in all guides
 <<<<<<< HEAD
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> .merge_file_UIiMNX
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
@@ -183,15 +233,28 @@ updated: 2026-08-24
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 
 ---
 
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -227,6 +290,11 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -234,6 +302,10 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -246,6 +318,12 @@ canonical: ../../../../Themes/docs/shared-components/README-Modules.md
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< HEAD
 =======
 =======
@@ -254,6 +332,10 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -288,11 +370,23 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< .merge_file_qB8ox9
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_qB8ox9
+=======
+<<<<<<< .merge_file_pcQ7To
+=======
+>>>>>>> .merge_file_UIiMNX
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
@@ -309,4 +403,8 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+<<<<<<< .merge_file_qB8ox9
+=======
+>>>>>>> .merge_file_FW2Cah
+>>>>>>> .merge_file_UIiMNX
 >>>>>>> laraxot/dev

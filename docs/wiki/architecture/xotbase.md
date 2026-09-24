@@ -24,6 +24,13 @@ XotBase funge da wrapper per tutti i componenti Filament nel progetto Laraxot. C
 | `Filament\Actions\Action` | `Modules\Xot\Filament\Actions\XotBaseAction` |
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_ty7Xrj
+=======
+<<<<<<< .merge_file_xjnaLS
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4b0po1
 <<<<<<< HEAD
 <<<<<<< .merge_file_w2Apc8
 =======
@@ -48,6 +55,10 @@ XotBase funge da wrapper per tutti i componenti Filament nel progetto Laraxot. C
 >>>>>>> .merge_file_g1eER4
 >>>>>>> .merge_file_YofIXc
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ty7Xrj
+=======
+>>>>>>> .merge_file_bf8ZoJ
+>>>>>>> .merge_file_4b0po1
 | `Filament\Resources\Resource` | `Modules\Xot\Filament\Resources\XotBaseResource` |
 | `Filament\Pages\Page` | `Modules\Xot\Filament\Pages\XotBasePage` |
 | `Filament\Widgets\Widget` | `Modules\Xot\Filament\Widgets\XotBaseWidget` |
@@ -65,6 +76,11 @@ Alcune classi `XotBase` impongono pattern specifici per garantire la conformità
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_ty7Xrj
+=======
+<<<<<<< .merge_file_xjnaLS
+=======
+>>>>>>> .merge_file_4b0po1
 =======
 <<<<<<< .merge_file_w2Apc8
 =======
@@ -78,10 +94,22 @@ Alcune classi `XotBase` impongono pattern specifici per garantire la conformità
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ty7Xrj
+=======
+>>>>>>> .merge_file_bf8ZoJ
+>>>>>>> .merge_file_4b0po1
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
 =======
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ty7Xrj
+=======
+<<<<<<< .merge_file_xjnaLS
+=======
+- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4b0po1
 <<<<<<< HEAD
 =======
 =======
@@ -96,6 +124,10 @@ Alcune classi `XotBase` impongono pattern specifici per garantire la conformità
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_YofIXc
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ty7Xrj
+=======
+>>>>>>> .merge_file_bf8ZoJ
+>>>>>>> .merge_file_4b0po1
 
 ### 3. Namespace Standard
 Assicurati di usare i namespace corretti. Mai includere `App` nel percorso se sei all'interno di un modulo (es. `Modules\Xot\Filament\...` non `Modules\Xot\App\Filament\...`).

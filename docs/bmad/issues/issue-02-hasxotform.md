@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_5k59kv
+=======
+<<<<<<< .merge_file_vIvlEA
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Yu4C1v
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_zq8VWP
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_dGvMn0
 >>>>>>> .merge_file_p6DdLH
+<<<<<<< .merge_file_5k59kv
+=======
+>>>>>>> .merge_file_tIAMKO
+>>>>>>> .merge_file_Yu4C1v
 ---
 name: issue-02-hasxotform
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_5k59kv
+=======
+<<<<<<< .merge_file_vIvlEA
+=======
+>>>>>>> .merge_file_Yu4C1v
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5k59kv
+=======
+>>>>>>> .merge_file_tIAMKO
+>>>>>>> .merge_file_Yu4C1v
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5k59kv
+=======
+<<<<<<< .merge_file_vIvlEA
+=======
+=======
+>>>>>>> .merge_file_Yu4C1v
 <<<<<<< .merge_file_zq8VWP
 =======
 <<<<<<< .merge_file_Z1KnwD
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_dGvMn0
 >>>>>>> .merge_file_p6DdLH
+<<<<<<< .merge_file_5k59kv
+=======
+>>>>>>> .merge_file_tIAMKO
+>>>>>>> .merge_file_Yu4C1v
 >>>>>>> laraxot/dev
 # Issue GH #02 — HasXotForm: istanza + colonne dinamiche
 

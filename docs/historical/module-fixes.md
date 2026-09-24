@@ -88,6 +88,11 @@ protected function generateFormSchema(string $file, string $content, string $cla
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_K2CQL8
+=======
+<<<<<<< .merge_file_abhtjF
+=======
+>>>>>>> .merge_file_V2xSS4
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TxXcBZ
@@ -95,10 +100,19 @@ declare(strict_types=1);
 <<<<<<< HEAD
 >>>>>>> .merge_file_NZqIS8
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_K2CQL8
+=======
+>>>>>>> .merge_file_HOZGKs
+>>>>>>> .merge_file_V2xSS4
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_K2CQL8
+=======
+<<<<<<< .merge_file_abhtjF
+=======
+>>>>>>> .merge_file_V2xSS4
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TxXcBZ
@@ -108,6 +122,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_NZqIS8
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_K2CQL8
+=======
+>>>>>>> .merge_file_HOZGKs
+>>>>>>> .merge_file_V2xSS4
 {
     return [
         'field_name' => [

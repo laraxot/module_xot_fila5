@@ -17,6 +17,12 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
+<<<<<<< .merge_file_i9eeYx
+=======
+<<<<<<< .merge_file_uSfsjR
+   public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_0C75dv
 <<<<<<< .merge_file_nipalq
    public function getFormSchema(): array
 =======
@@ -26,6 +32,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public static function getFormSchema(): array
 >>>>>>> .merge_file_ykwmgc
 >>>>>>> .merge_file_lGAGRT
+<<<<<<< .merge_file_i9eeYx
+=======
+>>>>>>> .merge_file_FDLlbv
+>>>>>>> .merge_file_0C75dv
    {
        return [
            TextInput::make('nome')->required(),
@@ -427,6 +437,12 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< .merge_file_i9eeYx
+=======
+<<<<<<< .merge_file_uSfsjR
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_0C75dv
 <<<<<<< .merge_file_nipalq
     public function getFormSchema(): array
 =======
@@ -436,6 +452,10 @@ class ReportResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_ykwmgc
 >>>>>>> .merge_file_lGAGRT
+<<<<<<< .merge_file_i9eeYx
+=======
+>>>>>>> .merge_file_FDLlbv
+>>>>>>> .merge_file_0C75dv
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
