@@ -276,16 +276,26 @@ if (! function_exists('followingRedirects')) {
 }
 
 if (! function_exists('test')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function test(string $title, Closure $callback): void
+    /**
+     * Stub PHPStan per `test()` — return void.
+     *
+     * Non tipizzare con `Pest\PendingCalls\TestCall` / `Pest\Support\HigherOrderTapProxy`:
+     * sono `@internal` e producono `return.internalClass` (il plugin pest-plugin-phpstan
+     * ignora solo method/property.internalClass, non return.internalClass).
+     * Canon: docs/wiki/rules/pest-internal-class-phpstan.md · Xot docs/phpstan-pest-bridge-antipattern.md
+     * Gruppo test: `uses(TestCase::class)->group('…')`, non `describe(…)->group(…)`.
+     */
+    function test(string $description, ?Closure $closure = null): void
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('describe')) {
-    /** Firma allineata a Pest: describe(...)->group(...) è legittimo. */
-    function describe(string $description, Closure $tests): Pest\PendingCalls\DescribeCall
+    /**
+     * Stub PHPStan per `describe()` — return void (DescribeCall è `@internal`).
+     */
+    function describe(string $description, Closure $tests): void
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
