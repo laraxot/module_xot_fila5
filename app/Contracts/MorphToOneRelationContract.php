@@ -14,11 +14,12 @@ use Illuminate\Database\Eloquent\Model;
 interface MorphToOneRelationContract
 {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $attributes
-=======
+     * <<<<<<< HEAD.
+     *
      * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
+     *                                         =======
+     * @param array<string, mixed> $attributes
+     *                                         >>>>>>> laraxot/dev
      */
     public function create(array $attributes): Model;
 }

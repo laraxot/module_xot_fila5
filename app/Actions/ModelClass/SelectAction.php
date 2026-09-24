@@ -15,12 +15,14 @@ class SelectAction
     /**
      * Execute a select query.
      *
-<<<<<<< HEAD
-     * @param  class-string<Model>  $modelClass
-=======
+     * <<<<<<< HEAD
+     *
+     * @param class-string<Model> $modelClass
+     *                                        =======
      * @param class-string<Model> $modelClass
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return array<mixed>
      */
     public function execute(string $modelClass, string $sql): array
