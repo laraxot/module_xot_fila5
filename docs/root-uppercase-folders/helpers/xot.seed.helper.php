@@ -1,6 +1,9 @@
 <?php
 
 declare(strict_types=1);
+
+
+declare(strict_types=1);
 /**
  * Xot Seeder Helper Functions.
  *
@@ -8,7 +11,7 @@ declare(strict_types=1);
  * The functions ensure that models are only seeded once
  */
 
-declare(strict_types=1);
+
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
