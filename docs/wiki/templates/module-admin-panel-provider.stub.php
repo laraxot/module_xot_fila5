@@ -5,6 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers\Filament;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_MywGsG
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_UwnNro
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 =======
@@ -14,6 +19,10 @@ use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_MywGsG
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_UwnNro
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Xot';

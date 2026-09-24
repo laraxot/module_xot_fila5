@@ -2,15 +2,7 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
+uses(TestCase::class);
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -21,10 +13,13 @@ use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
 use Modules\Xot\Tests\Fixtures\Models\Probe;
 use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
 use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
+
+uses(TestCase::class);
 
 it('covers model resolution and model cache', function (): void {
     ProbeResource::resetModelCache();
@@ -145,25 +140,21 @@ it('covers navigation badge success and fallback', function (): void {
 it('covers get attachments schema branches', function (): void {
     $resourceNoAttachments = new class extends XotBaseResource {
         protected static ?string $model = Probe::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
     };
 
     Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
+    if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeBadAttachments')) {
+        eval(' class ProbeBadAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): string { return "invalid"; } }');
+    }
 
     $resourceBadAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeBadAttachments::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
     };
 
     Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
+    if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeGoodAttachments')) {
+        eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
+    }
 
     app()->instance(GetAttachmentsSchemaAction::class, new class {
         /**
@@ -183,11 +174,6 @@ it('covers get attachments schema branches', function (): void {
 
     $resourceGoodAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeGoodAttachments::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
     };
 
     Assert::assertSame(['schema'], $resourceGoodAttachments::getAttachmentsSchema());
@@ -214,10 +200,10 @@ it('covers step builder branches', function (): void {
 it('covers simple base helpers', function (): void {
     $resource = new ProbeResource();
 
-    Assert::assertSame([], ProbeResource::getInfolistSchema());
+    Assert::assertSame([], $resource->getInfolistSchema());
     Assert::assertSame([], ProbeResource::extendTableCallback());
     Assert::assertSame([], ProbeResource::extendFormCallback());
     Assert::assertStringStartsWith('Xot', ProbeResource::getModuleName());
     Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
-    Assert::assertGreaterThan(0, ProbeResource::getFormSchemaColumns());
+    Assert::assertGreaterThan(0, ProbeResource::getFormColumns());
 });

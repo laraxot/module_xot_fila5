@@ -124,6 +124,34 @@ XotBaseModel (Xot) - Base standard
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_w7dI85
+<<<<<<< HEAD
+- [Model Inheritance Complete Fix](../../docs/MODEL_INHERITANCE_COMPLETE_FIX.md)
+- [DRY/KISS Analysis](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+- [Model Inheritance Complete Fix](../../../docs/model_inheritance_complete_fix.md)
+- [DRY/KISS Analysis](../../../docs/dry_kiss_analysis_2025-10-15.md)
+
+---
+
+<<<<<<< HEAD
+**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+=======
+<<<<<<< HEAD
+**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+
+=======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ifhpJJ
+- [Model Inheritance Complete Fix](../../docs/model_inheritance_complete_fix.md)
+- [DRY/KISS Analysis](../../docs/dry_kiss_analysis_2025-10-15.md)
+
+---
+
+**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+<<<<<<< HEAD
+=======
 - [Model Inheritance Complete Fix](../../docs/MODEL_INHERITANCE_COMPLETE_FIX.md)
 - [DRY/KISS Analysis](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 - [Model Inheritance Complete Fix](../../../docs/model_inheritance_complete_fix.md)
@@ -132,3 +160,6 @@ XotBaseModel (Xot) - Base standard
 ---
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev

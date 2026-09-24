@@ -70,7 +70,8 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
-     * @param Builder<static> $query
+     * @param Builder<static>                     $query
+     * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile da confrontare
      *
      * @return Builder<static>
      */
@@ -102,6 +103,10 @@ trait HasSchemalessAttributes
 
     /**
      * Get un valore da extra_attributes.
+     *
+     * @param scalar|array<array-key, mixed>|null $default Fallback JSON-serializzabile
+     *
+     * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {
@@ -110,6 +115,8 @@ trait HasSchemalessAttributes
 
     /**
      * Set un valore in extra_attributes.
+     *
+     * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {

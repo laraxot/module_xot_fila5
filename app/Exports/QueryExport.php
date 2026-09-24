@@ -34,7 +34,6 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public ?string $transKey = null;
 
     /** @var QueryBuilder|EloquentBuilder<Model> */
-    /** @var QueryBuilder|EloquentBuilder<Model> */
     public QueryBuilder|EloquentBuilder $query;
 
     /**
@@ -56,7 +55,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         if (! empty($this->fields)) {
             return collect(array_values($this->fields))
                 ->map(
-                    static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+                    static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
                 );
         }
 
@@ -71,7 +70,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         /** @var Collection<int, int|string> $result */
         $result = collect(array_keys($this->normalizeRow($first)))
             ->map(
-                static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+                static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
             );
 
         return $result;
@@ -131,7 +130,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         }
 
         return collect($this->fields)
-            ->mapWithKeys(static function (mixed $field, int|string $_key) use ($rowArray): array {
+            ->mapWithKeys(static function (int|string $field, int|string $_key) use ($rowArray): array {
                 $keyString = \is_string($field) ? $field : (string) $field;
 
                 return [$keyString => $rowArray[$keyString] ?? null];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regola PSR-4 Namespace per Moduli Laravel
 
 ## Quando
@@ -27,3 +28,12 @@ namespace Modules\Patient\app\States;
 - [ ] Nessun namespace contiene `app` dopo il nome del modulo
 - [ ] Tutti gli use statement sono coerenti con la struttura delle cartelle
 - [ ] Dopo ogni modifica, esegui `composer dump-autoload`
+=======
+---
+module: theme
+topic: psr4-namespaces
+canonical: ../../../Themes/docs/shared-components/psr4-namespaces.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/psr4-namespaces.md
+>>>>>>> laraxot/dev

@@ -15,13 +15,13 @@ use Spatie\LaravelData\Data;
 class NotificationData extends Data
 {
     /**
-     * @param array<mixed> $channels        Canali di notifica disponibili
-     * @param string       $default_channel Canale predefinito
-     * @param bool         $queue           Se accodare le notifiche
-     * @param array<mixed> $mail            Configurazione email di notifica
-     * @param array<mixed> $broadcast       Configurazione broadcast
-     * @param array<mixed> $slack           Configurazione Slack
-     * @param array<mixed> $telegram        Configurazione Telegram
+     * @param array<int, string>   $channels        Canali di notifica disponibili
+     * @param string               $default_channel Canale predefinito
+     * @param bool                 $queue           Se accodare le notifiche
+     * @param array<string, mixed> $mail            Configurazione email di notifica
+     * @param array<string, mixed> $broadcast       Configurazione broadcast
+     * @param array<string, mixed> $slack           Configurazione Slack
+     * @param array<string, mixed> $telegram        Configurazione Telegram
      */
     public function __construct(
         public readonly array $channels = ['mail', 'database'],

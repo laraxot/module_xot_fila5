@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+<<<<<<< .merge_file_WIADpN
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kVdc4x
+---
+title: "Install module"
+type: reference
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py."
+---
+
+# Install module
+
+<<<<<<< .merge_file_WIADpN
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kVdc4x
+=======
+>>>>>>> laraxot/dev
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -30,4 +56,12 @@
         $new_dir=$module_json->name;
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
+<<<<<<< HEAD
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> laraxot/dev
+=======
+    }
+>>>>>>> laraxot/dev

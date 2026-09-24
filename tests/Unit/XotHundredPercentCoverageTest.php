@@ -8,10 +8,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
 use Mockery;
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JF3giD
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\MetatagData;
@@ -27,27 +30,36 @@ use Modules\Xot\Tests\ModuleRemainingCoverage;
 use Modules\Xot\Tests\TestCase;
 use PhpCsFixer\Config;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JF3giD
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
     Mockery::close();
 =======
+=======
+>>>>>>> .merge_file_JF3giD
 use Symfony\Component\HttpFoundation\Response;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
     \Mockery::close();
+<<<<<<< .merge_file_WOkH7B
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JF3giD
 });
 
 function xot100Invoke(object $target, string $method, mixed ...$args): mixed
@@ -112,6 +124,7 @@ namespace PhpCsFixer\Runner\Parallel {
 }
 namespace PhpCsFixer {
     final class Config {
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -124,13 +137,18 @@ namespace PhpCsFixer {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> .merge_file_JF3giD
         public function setParallelConfig(object $c): self { return $this; }
         public function setRiskyAllowed(bool $v): self { return $this; }
         /** @param array<string, mixed> $rules */
         public function setRules(array $rules): self { return $this; }
         public function setFinder(object $f): self { return $this; }
+<<<<<<< .merge_file_WOkH7B
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JF3giD
     }
     final class Finder {
         public function in(string $dir): self { return $this; }
@@ -299,11 +317,15 @@ PHP);
             FileAction::getFileNameByClassName(XotData::class)
         );
 
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
         $action = new FileAction;
 =======
         $action = new FileAction();
 >>>>>>> laraxot/dev
+=======
+        $action = new FileAction();
+>>>>>>> .merge_file_JF3giD
         try {
             $action->execute();
         } catch (\Throwable) {
@@ -311,11 +333,15 @@ PHP);
     });
 
     test('XotData rami SSL tenant profile team child e update', function (): void {
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
         $xot = new XotData;
 =======
         $xot = new XotData();
 >>>>>>> laraxot/dev
+=======
+        $xot = new XotData();
+>>>>>>> .merge_file_JF3giD
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->adm_theme = 'One';
@@ -354,11 +380,15 @@ PHP);
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
         $meta = new MetatagData;
 =======
         $meta = new MetatagData();
 >>>>>>> laraxot/dev
+=======
+        $meta = new MetatagData();
+>>>>>>> .merge_file_JF3giD
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Desc';
@@ -394,11 +424,15 @@ PHP);
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
         $mw = new SecurityMiddleware;
 =======
         $mw = new SecurityMiddleware();
 >>>>>>> laraxot/dev
+=======
+        $mw = new SecurityMiddleware();
+>>>>>>> .merge_file_JF3giD
 
         // GET ok
         $ok = Request::create('/dashboard', 'GET', [], [], [], [
@@ -458,6 +492,7 @@ PHP);
     });
 
     test('XotBaseMigration reflection helper schema e blueprint', function (): void {
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
         $migration = new class extends XotBaseMigration
         {
@@ -465,13 +500,18 @@ PHP);
 
             public function up(): void {}
 =======
+=======
+>>>>>>> .merge_file_JF3giD
         $migration = new class extends XotBaseMigration {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void
             {
             }
+<<<<<<< .merge_file_WOkH7B
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JF3giD
         };
 
         Assert::assertSame(CacheModel::class, $migration->getModelClass());
@@ -480,11 +520,15 @@ PHP);
 
         $ref = new \ReflectionClass($migration);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+<<<<<<< .merge_file_WOkH7B
 <<<<<<< HEAD
             if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
 =======
             if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
 >>>>>>> laraxot/dev
+=======
+            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
+>>>>>>> .merge_file_JF3giD
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

@@ -76,6 +76,7 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
+<<<<<<< HEAD
 * [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
@@ -85,3 +86,14 @@ class Foo extends bar
 ### Versione Incoming
 
 ---
+=======
+* [customizing-your-site.md](../../../gdpr/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../xot/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
+* [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
+
+### Versione Incoming
+
+---
+>>>>>>> laraxot/dev

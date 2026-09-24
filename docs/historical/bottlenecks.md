@@ -683,6 +683,10 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
+<<<<<<< .merge_file_0p0CmV
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_7Hccwm
 - [Best Practices Performance](best-practices.md#performance)
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
@@ -690,4 +694,16 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](bottlenecks.md)
 * [BOTTLENECKS.md](bottlenecks.md)
 * [BOTTLENECKS.md](bottlenecks.md)
+<<<<<<< .merge_file_0p0CmV
+=======
+=======
+- [Best Practices Performance](./BEST-PRACTICES.md#performance)
+- [Struttura Moduli](./MODULE_STRUCTURE.md)
+
+## Collegamenti tra versioni di BOTTLENECKS.md
+* [BOTTLENECKS.md](../../../Xot/docs/BOTTLENECKS.md)
+* [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
+* [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_7Hccwm
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)

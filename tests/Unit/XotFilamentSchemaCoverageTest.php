@@ -59,11 +59,15 @@ describe('Xot enum and provider coverage', function (): void {
                 continue;
             }
             Assert::assertNotEmpty($class::cases());
+<<<<<<< .merge_file_EhNjKb
 <<<<<<< HEAD
             $seen++;
 =======
             ++$seen;
 >>>>>>> laraxot/dev
+=======
+            ++$seen;
+>>>>>>> .merge_file_1oXcvs
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un enum concreto');
     });
@@ -87,11 +91,15 @@ describe('Xot enum and provider coverage', function (): void {
             if (property_exists($provider, 'name')) {
                 Assert::assertSame('Xot', $provider->name);
             }
+<<<<<<< .merge_file_EhNjKb
 <<<<<<< HEAD
             $seen++;
 =======
             ++$seen;
 >>>>>>> laraxot/dev
+=======
+            ++$seen;
+>>>>>>> .merge_file_1oXcvs
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un service provider concreto');
     });

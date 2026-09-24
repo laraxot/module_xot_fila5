@@ -19,8 +19,6 @@ class ViewLog extends XotBaseViewRecord
     #[\Override]
     protected function getInfolistSchema(): array
     {
-        $log = $this->getRecord()->getModel();
-
         return [
             'log_info' => Section::make('Informazioni Log')->schema([
                 'log_grid' => Grid::make(['default' => 3])->schema([

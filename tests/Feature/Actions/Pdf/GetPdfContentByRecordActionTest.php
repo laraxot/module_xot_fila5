@@ -12,11 +12,18 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    $this->action = new GetPdfContentByRecordAction();
+// $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
+// Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
+// l'action del test vive in una variabile locale condivisa per riferimento. Per lo
+// stesso motivo expectException()/markTestSkipped() via $this non sono risolvibili
+// da PHPStan qui: si usano try/catch + Assert e Assert::markTestSkipped() statico.
+$action = null;
+
+beforeEach(function () use (&$action): void {
+    $action = new GetPdfContentByRecordAction();
 });
 
-describe('Get Pdf Content By Record Action', function (): void {
+describe('Get Pdf Content By Record Action', function () use (&$action): void {
     test('it generates pdf content from record', function (): void {
         // Arrange
         $user = UserFactory::new()->createOne([
@@ -28,13 +35,15 @@ describe('Get Pdf Content By Record Action', function (): void {
         view()->addNamespace('user', resource_path('views'));
 
         // Act & Assert
-        $this->expectThrowable(\Exception::class);
-        $this->expectThrowableMessage("View 'user::user.show.pdf' not found");
-
-        app(GetPdfContentByRecordAction::class)->execute($user);
+        try {
+            app(GetPdfContentByRecordAction::class)->execute($user);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertSame("View 'user::user.show.pdf' not found", $e->getMessage());
+        }
     });
 
-    test('it generates correct view name', function (): void {
+    test('it generates correct view name', function () use (&$action): void {
         // Arrange
         $user = UserFactory::new()->createOne();
 
@@ -52,7 +61,7 @@ describe('Get Pdf Content By Record Action', function (): void {
         Assert::assertEquals('user::user.show.pdf', $viewName);
     });
 
-    test('it generates correct filename for basic model', function (): void {
+    test('it generates correct filename for basic model', function () use (&$action): void {
         // Arrange
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
@@ -70,7 +79,7 @@ describe('Get Pdf Content By Record Action', function (): void {
         Assert::assertEquals('user_123_test-user.pdf', $filename);
     });
 
-    test('it generates enhanced filename for performance models', function (): void {
+    test('it generates enhanced filename for performance models', function () use (&$action): void {
         // Arrange - Create a mock model with performance fields
         $record = new class extends Model {
             protected $table = 'test_performance';
@@ -101,7 +110,7 @@ describe('Get Pdf Content By Record Action', function (): void {
         Assert::assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename);
     });
 
-    test('it prepares correct view parameters', function (): void {
+    test('it prepares correct view parameters', function () use (&$action): void {
         // Arrange
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
@@ -130,16 +139,18 @@ describe('Get Pdf Content By Record Action', function (): void {
         $user = UserFactory::new()->createOne();
 
         // Act & Assert
-        $this->expectThrowable(\Exception::class);
-        $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
-
-        app(GetPdfContentByRecordAction::class)->execute($user);
+        try {
+            app(GetPdfContentByRecordAction::class)->execute($user);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertMatchesRegularExpression("/View 'user::user\.show\.pdf' not found/", $e->getMessage());
+        }
     });
 
     test('it throws exception for empty html content', function (): void {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
-        $this->skipTest('Requires view mocking infrastructure');
+        Assert::markTestSkipped('Requires view mocking infrastructure');
     });
 
     test('it uses custom filename when provided', function (): void {
@@ -148,9 +159,12 @@ describe('Get Pdf Content By Record Action', function (): void {
         $customFilename = 'custom-report.pdf';
 
         // Act & Assert - Should use custom filename in error message
-        $this->expectThrowable(\Exception::class);
-
-        app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
+        try {
+            app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertInstanceOf(\Exception::class, $e);
+        }
     });
 
     test('it handles from record convenience method', function (): void {
@@ -159,21 +173,23 @@ describe('Get Pdf Content By Record Action', function (): void {
         $filename = 'convenience-test.pdf';
 
         // Act & Assert
-        $this->expectThrowable(\Exception::class);
-        $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
-
-        app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
+        try {
+            app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertMatchesRegularExpression("/View 'user::user\.show\.pdf' not found/", $e->getMessage());
+        }
     });
 
     test('it logs errors when pdf generation fails', function (): void {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
-        $this->skipTest('Requires HTML2PDF mocking infrastructure');
+        Assert::markTestSkipped('Requires HTML2PDF mocking infrastructure');
     });
 
     test('it returns valid pdf content when view exists', function (): void {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
-        $this->skipTest('Requires test view infrastructure');
+        Assert::markTestSkipped('Requires test view infrastructure');
     });
 });

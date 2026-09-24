@@ -83,7 +83,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         parent::setUp();
 
-        $database = database_path('fixcity_data.sqlite');
+        $database = self::sharedSqlitePath();
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -141,7 +141,7 @@ abstract class TestCase extends XotBaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-        $this->expectExceptionMessage($message);
+        $this->expectExceptionMessageIsOrContains($message);
     }
 
     public function expectThrowableMessageMatches(string $pattern): void
@@ -174,6 +174,7 @@ abstract class TestCase extends XotBaseTestCase
             $path = $dir.'/'.$file;
             if (is_dir($path) && ! is_link($path)) {
                 $this->rrmdir($path);
+
                 continue;
             }
 

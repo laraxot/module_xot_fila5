@@ -63,10 +63,20 @@ public function getTableBulkActions(): array
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -104,10 +114,20 @@ public function getTableActions(): array
  * @return array<mixed, Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
 {
     // ...
 }
@@ -155,10 +175,20 @@ public function getTableBulkActions(): array
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
 {
     return [
         'template_slug' => Select::make('template_slug')

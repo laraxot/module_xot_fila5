@@ -1,19 +1,6 @@
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
 <?php
 
 declare(strict_types=1);
-
 ?>
 <div>
     <div class="btn-group group-toggle">
@@ -30,12 +17,6 @@ declare(strict_types=1);
     [{{ $animal }}]
     <hr />
     {{--
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot — see module docs/wiki for domain contract.
     https://forum.laravel-livewire.com/t/unable-to-get-checkbox-value/157/7
     --}}
 

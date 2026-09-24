@@ -53,6 +53,7 @@ class ThemeAction
         return resource_path('themes/'.self::$currentTheme);
     }
 
+<<<<<<< .merge_file_uj7qR3
 <<<<<<< HEAD
     public function execute(): void
     {
@@ -66,4 +67,9 @@ class ThemeAction
     public function execute(): void {}
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> .merge_file_iaoQ85
 }

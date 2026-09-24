@@ -3,7 +3,11 @@
 **Modulo**: Xot (Core Framework)
 **Status**: 95% COMPLETATO
 **Priority**: CRITICAL
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 9 (0 errori)
+=======
+**PHPStan**: ✅ Level 10 (0 errori)
+>>>>>>> laraxot/dev
 **PHPStan**: ✅ level 10 (0 errori)
 **Filament**: ✅ 4.x Compatibile
 
@@ -92,7 +96,11 @@ Xot Module (Core Framework)
 - [x] **Events**: Eventi del sistema
 
 ### 🔧 Technical Excellence
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori
+=======
+- [x] **PHPStan Level 10**: 0 errori
+>>>>>>> laraxot/dev
 - [x] **PHPStan level 10**: 0 errori
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
@@ -172,13 +180,22 @@ Xot Module (Core Framework)
 
 #### 📋 Features
 - [ ] **Smart Caching** (Priority: MEDIUM)
+<<<<<<< HEAD
   - [ ] ML-based cache prediction
+=======
+  - [ ] ML-based cache <nome progetto>ion
+>>>>>>> laraxot/dev
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
   - [ ] Performance optimization
 
+<<<<<<< HEAD
 - [ ] **Predictive Services** (Priority: MEDIUM)
   - [ ] Load prediction
+=======
+- [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
+  - [ ] Load <nome progetto>ion
+>>>>>>> laraxot/dev
   - [ ] Resource optimization
   - [ ] Performance forecasting
   - [ ] Anomaly detection
@@ -191,7 +208,11 @@ Xot Module (Core Framework)
 
 #### 🎯 Success Criteria
 - [ ] AI caching working
+<<<<<<< HEAD
 - [ ] Predictive services active
+=======
+- [ ] <nome progetto>ive services active
+>>>>>>> laraxot/dev
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
 
@@ -231,7 +252,11 @@ Xot Module (Core Framework)
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
+<<<<<<< HEAD
 - [x] PHPStan Level 9 compliance
+=======
+- [x] PHPStan Level 10 compliance
+>>>>>>> laraxot/dev
 - [x] PHPStan level 10 compliance
 - [x] Type safety implementation
 - [x] Error handling improvement
@@ -291,7 +316,11 @@ Xot Module (Core Framework)
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori ✅
+=======
+- [x] **PHPStan Level 10**: 0 errori ✅
+>>>>>>> laraxot/dev
 - [x] **PHPStan level 10**: 0 errori ✅
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 90% (target)
@@ -345,7 +374,11 @@ Xot Module (Core Framework)
 - [ ] AI research and planning
 - [ ] ML model development
 - [ ] Smart caching implementation
+<<<<<<< HEAD
 - [ ] Predictive services
+=======
+- [ ] <nome progetto>ive services
+>>>>>>> laraxot/dev
 
 #### May 2025
 - [ ] AI integration testing
@@ -469,7 +502,11 @@ Xot Module (Core Framework)
 
 ### Development Tools
 - **Testing**: Pest/PHPUnit
+<<<<<<< HEAD
 - **Code Quality**: PHPStan Level 9
+=======
+- **Code Quality**: PHPStan Level 10
+>>>>>>> laraxot/dev
 - **Code Quality**: PHPStan level 10
 - **Performance**: Blackfire, New Relic
 - **Monitoring**: Grafana, Prometheus
@@ -486,9 +523,17 @@ Xot Module (Core Framework)
 
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 
 ---
 
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> laraxot/dev

@@ -25,6 +25,8 @@ use Webmozart\Assert\Assert;
 /**
  * Wrapper trait that re-exposes the vendor recursive relationship helpers
  * with proper return types required by {@see Modules\Xot\Contracts\HasRecursiveRelationshipsContract}.
+ *
+ * @phpstan-ignore trait.unused
  */
 trait TypedHasRecursiveRelationships
 {
@@ -45,6 +47,7 @@ trait TypedHasRecursiveRelationships
         childrenAndSelf as protected vendorChildrenAndSelf;
         descendants as protected vendorDescendants;
         descendantsAndSelf as protected vendorDescendantsAndSelf;
+        parent as protected vendorParent;
         parentAndSelf as protected vendorParentAndSelf;
         rootAncestor as protected vendorRootAncestor;
         rootAncestorOrSelf as protected vendorRootAncestorOrSelf;
@@ -57,37 +60,58 @@ trait TypedHasRecursiveRelationships
 
     public function getParentKeyName(): string
     {
-        return Assert::string($this->vendorGetParentKeyName());
+        $value = $this->vendorGetParentKeyName();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function getQualifiedParentKeyName(): string
     {
-        return Assert::string($this->vendorGetQualifiedParentKeyName());
+        $value = $this->vendorGetQualifiedParentKeyName();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function getLocalKeyName(): string
     {
-        return Assert::string($this->vendorGetLocalKeyName());
+        $value = $this->vendorGetLocalKeyName();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function getQualifiedLocalKeyName(): string
     {
-        return Assert::string($this->vendorGetQualifiedLocalKeyName());
+        $value = $this->vendorGetQualifiedLocalKeyName();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function getDepthName(): string
     {
-        return Assert::string($this->vendorGetDepthName());
+        $value = $this->vendorGetDepthName();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function getPathName(): string
     {
-        return Assert::string($this->vendorGetPathName());
+        $value = $this->vendorGetPathName();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function getPathSeparator(): string
     {
-        return Assert::string($this->vendorGetPathSeparator());
+        $value = $this->vendorGetPathSeparator();
+        Assert::string($value);
+
+        return $value;
     }
 
     /**
@@ -103,7 +127,10 @@ trait TypedHasRecursiveRelationships
 
     public function getExpressionName(): string
     {
-        return Assert::string($this->vendorGetExpressionName());
+        $value = $this->vendorGetExpressionName();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function ancestors(): Ancestors
@@ -164,7 +191,7 @@ trait TypedHasRecursiveRelationships
 
     public function parent(): BelongsTo
     {
-        $relation = $this->VendorHasRecursiveRelationships::parent();
+        $relation = $this->vendorParent();
         Assert::isInstanceOf($relation, BelongsTo::class);
 
         return $relation;
@@ -212,16 +239,25 @@ trait TypedHasRecursiveRelationships
 
     public function getFirstPathSegment(): string
     {
-        return Assert::string($this->vendorGetFirstPathSegment());
+        $value = $this->vendorGetFirstPathSegment();
+        Assert::string($value);
+
+        return $value;
     }
 
     public function hasNestedPath(): bool
     {
-        return Assert::boolean($this->vendorHasNestedPath());
+        $result = $this->vendorHasNestedPath();
+        Assert::boolean($result);
+
+        return $result;
     }
 
     public function isIntegerAttribute(string $attribute): bool
     {
-        return Assert::boolean($this->vendorIsIntegerAttribute($attribute));
+        $result = $this->vendorIsIntegerAttribute($attribute);
+        Assert::boolean($result);
+
+        return $result;
     }
 }

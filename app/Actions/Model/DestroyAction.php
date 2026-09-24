@@ -13,12 +13,37 @@ class DestroyAction
     use QueueableAction;
 
     /**
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_dGbAu9.
+     *
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     *                                     =======
+     *                                     <<<<<<< .merge_file_7pWvkY.
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     *                                     =======
+     *                                     <<<<<<< HEAD
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      */
     /**
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
+     *                                     =======
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     */
+    /**
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     *                                     >>>>>>> laraxot/dev
+     *                                     >>>>>>> .merge_file_Pqg8ia
+     *                                     >>>>>>> .merge_file_0r7kiR
+     *                                     =======
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     *                                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      */
     public function execute(Model $model, array $_data, array $_rules): Model
     {

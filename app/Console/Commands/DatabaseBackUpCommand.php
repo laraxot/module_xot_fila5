@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/paulvl/backup/blob/master/src/Console/Commands/MysqlDump.php
  */
@@ -31,6 +30,10 @@ class DatabaseBackUpCommand extends Command
      * @var string
      */
     protected $description = 'Dump your Mysql database to a file';
+
+    /**
+     * Create a new command instance.
+     */
 
     /**
      * Execute the console command.

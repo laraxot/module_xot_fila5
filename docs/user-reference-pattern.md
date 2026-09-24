@@ -223,4 +223,8 @@ if ($user instanceof UserContract) {
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> laraxot/dev

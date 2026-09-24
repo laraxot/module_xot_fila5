@@ -41,7 +41,10 @@ return Forms\Components\Wizard\Step::make($name)
 ```php
 $schema = Str::of($name)
     ->snake()      // 'studio_step' → 'studio_step'
+<<<<<<< HEAD
+=======
     ->studly()     // 'studio_step' → 'StudioStep'
+>>>>>>> laraxot/dev
     ->studly()     // 'studio_step' → 'StudioStep'  
     ->prepend('get') // 'StudioStep' → 'getStudioStep'
     ->append('Schema') // 'getStudioStep' → 'getStudioStepSchema'
@@ -64,7 +67,10 @@ $attachments = $model::$attachments;
 ```
 
 ### **Correzione Applicata**
+<<<<<<< HEAD
+=======
 ```php
+>>>>>>> laraxot/dev
 ```php  
 // ✅ CORRETTO - Check esistenza proprietà
 $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
@@ -86,7 +92,10 @@ $attachments = property_exists($model, 'attachments') ? $model::$attachments : [
 
 ### **Verifica Wizard Steps**
 - [ ] studio_step → Chiama `getStudioStepSchema()` ✅
+<<<<<<< HEAD
+=======
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅
+>>>>>>> laraxot/dev
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅  
 - [ ] personal_info_step → Chiama `getPersonalInfoStepSchema()` ✅
 
@@ -109,7 +118,10 @@ $attachments = property_exists($model, 'attachments') ? $model::$attachments : [
 $methodName = 'getMethodName';
 static::{$methodName}();
 
+<<<<<<< HEAD
+=======
 // ✅ Property existence check
+>>>>>>> laraxot/dev
 // ✅ Property existence check  
 $prop = property_exists($class, 'property') ? $class::$property : [];
 ```
@@ -121,8 +133,20 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**
+<<<<<<< HEAD
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/docs/wizard-step-implementation.md)
+- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
+
+### **Documentazione Correlata**
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/docs/wizard-step-implementation.md)
+- [DoctorResource.php](../../../Modules/SaluteOra/app/Filament/Resources/DoctorResource.php) - Utilizzo step
+
+### **Documentazione Correlata**
+- [Wizard Step Implementation](../../../Modules/SaluteOra/docs/wizard-step-implementation.md)
+=======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> laraxot/dev
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -132,11 +156,14 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 **Risolto**: Gennaio 2025  
 **Impatto**: Blocco completo sistema registrazione dottori  
 **Tempo risoluzione**: < 10 minuti dalla diagnosi  
+<<<<<<< HEAD
+=======
 **Priorità**: 🚨 **P0 - CRITICA**
 **Creato**: Gennaio 2025
 **Risolto**: Gennaio 2025
 **Impatto**: Blocco completo sistema registrazione dottori
 **Tempo risoluzione**: < 10 minuti dalla diagnosi
+>>>>>>> laraxot/dev
 
 ## 💡 **Lesson Learned**
 
@@ -146,6 +173,17 @@ Questo fix dimostra l'importanza di:
 3. **Property existence checking** per codice robusto
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
+<<<<<<< HEAD
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+=======
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
@@ -287,3 +325,4 @@ Questo fix dimostra l'importanza di:
 
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+>>>>>>> laraxot/dev

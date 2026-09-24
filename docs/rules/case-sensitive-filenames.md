@@ -187,4 +187,8 @@ Aggiungere al workflow GitHub Actions:
 
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
+<<<<<<< HEAD
 **Categoria**: Regole di Codice
+=======
+**Categoria**: Regole di Codice
+>>>>>>> laraxot/dev

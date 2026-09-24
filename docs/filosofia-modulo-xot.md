@@ -1,6 +1,10 @@
 # Analisi Approfondita del Modulo Xot
 
 > **Generato**: 2025-12-24
+<<<<<<< HEAD
+=======
+> **Generato**: [DATE]
+>>>>>>> laraxot/dev
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo Xot
 
 ---
@@ -22,7 +26,15 @@ Il modulo **Xot** è il **cuore pulsante** del framework Laraxot. Funziona come:
 Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
+<<<<<<< HEAD
+<<<<<<< HEAD
+abstract public function getFormSchema(): array;
+=======
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+=======
 abstract public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -326,7 +338,15 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 ```php
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function getFormSchema(): array {
+=======
+    public function getFormSchema(): array {
+>>>>>>> laraxot/dev
+=======
     public static function getFormSchema(): array {
+>>>>>>> laraxot/dev
         return [TextInput::make('name')];
     }
 }
@@ -383,3 +403,8 @@ Il modulo Xot rappresenta **l'incarnazione perfetta dei principi DRY+KISS applic
 - [Base Classes Documentation](./consolidated/base-classes.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 - [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
+<<<<<<< HEAD
+=======
+- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
+- [Filament 4 Laraxot Rules](./filament_4_laraxot_rules.md)
+>>>>>>> laraxot/dev

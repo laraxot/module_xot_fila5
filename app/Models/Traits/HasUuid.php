@@ -11,26 +11,28 @@ use Illuminate\Support\Str;
  *
  * Adds a separate 'uuid' column that is automatically generated on creation.
  * This is NOT for using UUID as the primary key.
+ *
+ * @phpstan-ignore trait.unused
  */
 trait HasUuid
 {
+    /**
+     * Boot the trait.
+     */
+    protected static function bootHasUuid(): void
+    {
+        static::creating(static function (self $model): void {
+            if (empty($model->uuid)) {
+                $model->uuid = (string) Str::uuid();
+            }
+        });
+    }
+
     /**
      * Initialize the trait.
      */
     public function initializeHasUuid(): void
     {
         $this->mergeCasts(['uuid' => 'string']);
-    }
-
-    /**
-     * Boot the trait.
-     */
-    protected static function bootHasUuid(): void
-    {
-        static::creating(static function ($model): void {
-            if (empty($model->uuid)) {
-                $model->uuid = (string) Str::uuid();
-            }
-        });
     }
 }

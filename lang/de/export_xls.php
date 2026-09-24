@@ -2,15 +2,11 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/de/export_xls.php
 return [
     'actions' => [
         'export_xls' => [
             'label' => 'Excel exportieren',
-            'icon' => 'heroicon-o-arrow-down-tray',
+            'icon' => 'xot-files.xls',
             'tooltip' => 'Daten im Excel-Format (.xlsx) exportieren',
             'placeholder' => 'Nach Excel exportieren',
             'help' => 'Aktuelle Daten im Excel-Format für Offline-Analyse herunterladen',
@@ -34,7 +30,7 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
+        'icon' => 'xot-files.xls',
         'sort' => 100,
     ],
     'label' => 'Missing Label',

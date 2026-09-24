@@ -62,4 +62,9 @@ class YourModel extends Model
 ## Collegamenti
 - [Laravel Relationships](https://laravel.com/docs/relationships)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
+<<<<<<< HEAD
+- [Best Practices](best-practices.md)
+=======
 - [Best Practices](BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)
+>>>>>>> laraxot/dev

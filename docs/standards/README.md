@@ -1,5 +1,12 @@
 # Standard di Codice
 
+<<<<<<< .merge_file_Hp58sm
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_D5BShy
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
 
 ## File Contenuti
@@ -13,6 +20,17 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hp58sm
+* [README.md](bashscripts/project_docs/readme.md)
+* [README.md](bashscripts/project_docs/it/readme.md)
+=======
+=======
+=======
+* [README.md](bashscripts/project_docs/readme.md)
+* [README.md](bashscripts/project_docs/it/readme.md)
+>>>>>>> .merge_file_D5BShy
+>>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -43,6 +61,97 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_Hp58sm
+<<<<<<< HEAD
+* [README.md](laravel/vendor/mockery/mockery/project_docs/readme.md)
+* [README.md](../../../chart/project_docs/readme.md)
+* [README.md](../../../reporting/project_docs/readme.md)
+* [README.md](../../../gdpr/project_docs/phpstan/readme.md)
+* [README.md](../../../gdpr/project_docs/readme.md)
+* [README.md](../../../notify/project_docs/phpstan/readme.md)
+* [README.md](../../../notify/project_docs/readme.md)
+* [README.md](../../../xot/project_docs/filament/readme.md)
+* [README.md](../../../xot/project_docs/phpstan/readme.md)
+* [README.md](../../../xot/project_docs/exceptions/readme.md)
+* [README.md](../../../xot/project_docs/readme.md)
+* [README.md](../../../xot/project_docs/standards/readme.md)
+* [README.md](../../../xot/project_docs/conventions/readme.md)
+* [README.md](../../../xot/project_docs/development/readme.md)
+* [README.md](../../../dental/project_docs/readme.md)
+* [README.md](../../../user/project_docs/phpstan/readme.md)
+* [README.md](../../../user/project_docs/readme.md)
+* [README.md](../../../user/project_docs/readme.md)
+* [README.md](../../../ui/project_docs/phpstan/readme.md)
+* [README.md](../../../ui/project_docs/readme.md)
+* [README.md](../../../ui/project_docs/standards/readme.md)
+* [README.md](../../../ui/project_docs/themes/readme.md)
+* [README.md](../../../ui/project_docs/components/readme.md)
+* [README.md](../../../lang/project_docs/phpstan/readme.md)
+* [README.md](../../../lang/project_docs/readme.md)
+* [README.md](../../../job/project_docs/phpstan/readme.md)
+* [README.md](../../../job/project_docs/readme.md)
+* [README.md](../../../media/project_docs/phpstan/readme.md)
+* [README.md](../../../media/project_docs/readme.md)
+* [README.md](../../../tenant/project_docs/phpstan/readme.md)
+* [README.md](../../../tenant/project_docs/readme.md)
+* [README.md](../../../activity/project_docs/phpstan/readme.md)
+* [README.md](../../../activity/project_docs/readme.md)
+* [README.md](../../../patient/project_docs/readme.md)
+* [README.md](../../../patient/project_docs/standards/readme.md)
+* [README.md](../../../patient/project_docs/value-objects/readme.md)
+* [README.md](../../../cms/project_docs/blocks/readme.md)
+* [README.md](../../../cms/project_docs/readme.md)
+* [README.md](../../../cms/project_docs/standards/readme.md)
+* [README.md](../../../cms/project_docs/content/readme.md)
+* [README.md](../../../cms/project_docs/frontoffice/readme.md)
+* [README.md](../../../cms/project_docs/components/readme.md)
+* [README.md](../../../../themes/two/project_docs/readme.md)
+* [README.md](../../../../themes/one/project_docs/readme.md)
+
+# Standard Xot: Ereditarietà dei Modelli
+
+## Gestione campi e Single Table Inheritance (STI)
+
+> **Nota importante:**
+> Con Single Table Inheritance (STI), **tutti i campi usati dai modelli specializzati devono essere presenti nella tabella base** (`users`).
+> Se aggiungi un campo (es. `certifications`), aggiorna la migration della tabella `users` e documenta la modifica.
+> Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
+
+=======
+<<<<<<< HEAD
+[![Module](https://img.shields.io/badge/Module-Standard di Codice-8B0000.svg)]()
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
+]()
+=======
+<<<<<<< HEAD
+Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
+>>>>>>> 28b0298a (fix: phpstan issues)
+
+> ****Nota importante:****
+
+## Perché esiste
+
+**Nota importante:**
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+<<<<<<< HEAD
+## Documentazione
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_D5BShy
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -87,6 +196,154 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_Hp58sm
+
+# Standard Xot: Ereditarietà dei Modelli
+<<<<<<< HEAD
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> .merge_file_D5BShy
+=======
+* [README.md](laravel/vendor/mockery/mockery/project_docs/readme.md)
+* [README.md](../../../chart/project_docs/readme.md)
+* [README.md](../../../reporting/project_docs/readme.md)
+* [README.md](../../../gdpr/project_docs/phpstan/readme.md)
+* [README.md](../../../gdpr/project_docs/readme.md)
+* [README.md](../../../notify/project_docs/phpstan/readme.md)
+* [README.md](../../../notify/project_docs/readme.md)
+* [README.md](../../../xot/project_docs/filament/readme.md)
+* [README.md](../../../xot/project_docs/phpstan/readme.md)
+* [README.md](../../../xot/project_docs/exceptions/readme.md)
+* [README.md](../../../xot/project_docs/readme.md)
+* [README.md](../../../xot/project_docs/standards/readme.md)
+* [README.md](../../../xot/project_docs/conventions/readme.md)
+* [README.md](../../../xot/project_docs/development/readme.md)
+* [README.md](../../../dental/project_docs/readme.md)
+* [README.md](../../../user/project_docs/phpstan/readme.md)
+* [README.md](../../../user/project_docs/readme.md)
+* [README.md](../../../user/project_docs/readme.md)
+* [README.md](../../../ui/project_docs/phpstan/readme.md)
+* [README.md](../../../ui/project_docs/readme.md)
+* [README.md](../../../ui/project_docs/standards/readme.md)
+* [README.md](../../../ui/project_docs/themes/readme.md)
+* [README.md](../../../ui/project_docs/components/readme.md)
+* [README.md](../../../lang/project_docs/phpstan/readme.md)
+* [README.md](../../../lang/project_docs/readme.md)
+* [README.md](../../../job/project_docs/phpstan/readme.md)
+* [README.md](../../../job/project_docs/readme.md)
+* [README.md](../../../media/project_docs/phpstan/readme.md)
+* [README.md](../../../media/project_docs/readme.md)
+* [README.md](../../../tenant/project_docs/phpstan/readme.md)
+* [README.md](../../../tenant/project_docs/readme.md)
+* [README.md](../../../activity/project_docs/phpstan/readme.md)
+* [README.md](../../../activity/project_docs/readme.md)
+* [README.md](../../../patient/project_docs/readme.md)
+* [README.md](../../../patient/project_docs/standards/readme.md)
+* [README.md](../../../patient/project_docs/value-objects/readme.md)
+* [README.md](../../../cms/project_docs/blocks/readme.md)
+* [README.md](../../../cms/project_docs/readme.md)
+* [README.md](../../../cms/project_docs/standards/readme.md)
+* [README.md](../../../cms/project_docs/content/readme.md)
+* [README.md](../../../cms/project_docs/frontoffice/readme.md)
+* [README.md](../../../cms/project_docs/components/readme.md)
+* [README.md](../../../../themes/two/project_docs/readme.md)
+* [README.md](../../../../themes/one/project_docs/readme.md)
+>>>>>>> laraxot/dev
+
+# Standard Xot: Ereditarietà dei Modelli
+=======
+>>>>>>> laraxot/dev
+
+## Gestione campi e Single Table Inheritance (STI)
+
+> **Nota importante:**
+> Con Single Table Inheritance (STI), **tutti i campi usati dai modelli specializzati devono essere presenti nella tabella base** (`users`).
+> Se aggiungi un campo (es. `certifications`), aggiorna la migration della tabella `users` e documenta la modifica.
+> Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
+
+## Collegamenti
+<<<<<<< HEAD
+<<<<<<< .merge_file_Hp58sm
+- [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
+- [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
+- [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
+- [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
+- [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_D5BShy
+- [Modello Doctor (Patient)](../../../patient/docs/models/doctor.md)
+- [Gestione campi e migrazioni con STI (README Patient)](../../../patient/docs/readme.md)
+- [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/docs/filament/resources/doctor-resource.md)
+- [Struttura progetto e STI (Patient)](../../../patient/docs/architecture/struttura-progetto.md)
+- [Migrazioni e database (Patient)](../../../patient/docs/database/migrations.md)
+=======
+- [Modello Doctor (Patient)](../../../patient/project_docs/models/doctor.md)
+- [Gestione campi e migrazioni con STI (README Patient)](../../../patient/project_docs/readme.md)
+- [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/project_docs/filament/resources/doctor-resource.md)
+- [Struttura progetto e STI (Patient)](../../../patient/project_docs/architecture/struttura-progetto.md)
+- [Migrazioni e database (Patient)](../../../patient/project_docs/database/migrations.md)
+>>>>>>> laraxot/dev
+
+## Regola generale
+
+- I modelli specializzati (es. Doctor, Patient, ecc.) **devono** estendere il modello User del proprio modulo, **mai** Model o BaseModel direttamente.
+- Devono usare sempre il trait `\Parental\HasParent` per il corretto funzionamento dello STI (Single Table Inheritance) con tighten/parental.
+- Tutta la logica comune va nel modello User, mentre i modelli specializzati contengono solo le specificità.
+
+**Esempio corretto:**
+```php
+namespace Modules\Patient\Models;
+
+use Parental\HasParent;
+
+class Doctor extends User
+{
+    use HasParent;
+    // ...
+}
+```
+
+## Moduli che applicano questa regola
+<<<<<<< .merge_file_Hp58sm
+// Aggiungere qui altri moduli se necessario
+<<<<<<< HEAD
+
+
+---
+
+## Contenuto assorbito da `readme.md`
+
+# Standard di Codice
+
+Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
+
+## File Contenuti
+
+- `coding-standards.md` - Standard di codice generali
+- `phpstan-rules.md` - Regole PHPStan specifiche
+- `testing-standards.md` - Standard per i test
+
+## Note
+
+Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
+
+## Collegamenti tra versioni di README.md
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -172,11 +429,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
 ## Collegamenti
-- [Modello Doctor (Patient)](../../../patient/docs/models/doctor.md)
-- [Gestione campi e migrazioni con STI (README Patient)](../../../patient/docs/readme.md)
-- [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/docs/filament/resources/doctor-resource.md)
-- [Struttura progetto e STI (Patient)](../../../patient/docs/architecture/struttura-progetto.md)
-- [Migrazioni e database (Patient)](../../../patient/docs/database/migrations.md)
 - [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
@@ -203,4 +455,17 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+- [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
 // Aggiungere qui altri moduli se necessario
+=======
+>>>>>>> .merge_file_D5BShy
+<<<<<<< HEAD
+=======
+- [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_Hp58sm
+=======
+>>>>>>> laraxot/dev
+=======
+// Aggiungere qui altri moduli se necessario
+>>>>>>> .merge_file_D5BShy

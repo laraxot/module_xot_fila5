@@ -6,8 +6,8 @@ namespace Modules\Xot\Actions\Model\Update;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
+use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
-use Modules\Xot\Support\MorphToOneRelationSupport;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -38,7 +38,7 @@ class MorphToOneAction
 
         $data = $this->prepareData($relationDTO->data);
 
-        MorphToOneRelationSupport::create($relation, $data);
+        app(CreateMorphToOneRelatedModelAction::class)->execute($relation, $data);
     }
 
     /**
@@ -56,6 +56,6 @@ class MorphToOneAction
         }
 
         // Return the prepared data
-        return array_filter($data, static fn ($value) => null !== $value);
+        return array_filter($data, static fn (mixed $value) => null !== $value);
     }
 }

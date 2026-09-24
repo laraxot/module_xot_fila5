@@ -1,7 +1,7 @@
 ---
 module: Xot
 concept: services-to-actions-migration
-last_updated: 2026-06-30
+last_updated: 2026-07-13
 ---
 
 # Migrazione app/Services -> Spatie QueueableAction (sessione 2026-06-30)
@@ -51,10 +51,34 @@ equivalente per tutti i chiamanti reali trovati).
 | Service | Chiamanti trovati | Motivo per cui NON e' stato forzato |
 |---|---|---|
 | `ArtisanService` (308 righe) + `Artisan/CommandRegistry`, `Artisan/Contracts/CommandHandlerInterface`, `Artisan/Handlers/*` (8 handler) | Solo interno a Xot (8 Handlers + test), nessun chiamante esterno trovato, ma accoppiamento interno alto (pattern Handler/Registry gia' in atto) | Esplicitamente segnalato come rischioso nel task; 308 righe, troppo per una sessione "quality over quantity" |
-| `RouteService` (353 righe, `inAdmin()`, `urlAct()`, ecc.) | `Modules/Tenant/app/Services/Config/Resolvers/MorphMapConfigResolver.php` (`RouteService::inAdmin()`), piu' riferimenti `RouteService::inAdmin()` documentati in `Modules/Tenant/docs/helper-functions-dependency.md` come wrapper di helper globali | Multi-responsabilita', chiamato da modulo esterno critico (Tenant/morph_map), nessun caso di test che copra `urlAct()`: rischio alto di rottura silenziosa |
 | `ModuleService::getModels()` | Zero chiamanti esterni, ma 2 file di test interni Xot (`tests/Unit/ModuleServiceTest.php` + `tests/Feature/ModuleServiceIntegrationTest.php`, ~25 test) verificano direttamente forma/costruttore della classe `ModuleService` | Riscrivere ~25 test per adattarli a una Action e' un lavoro a se', fuori budget "5-8 conversioni di qualita'" di questa sessione |
 | `Services/Translators/*` (`BaseTranslator`, `Apertium`, `DeepL`, `Google`, `MyMemory`, `Systran`) | Zero chiamanti trovati ovunque nel repo, nemmeno internamente a Xot | Probabile codice morto/mai cablato; va verificato con un grep dedicato su config/binding dinamici prima di archiviare, non e' bastato il tempo in questa sessione |
 | `Services/Trend/Adapters/*` (`AbstractAdapter`, `MySqlAdapter`, `PgsqlAdapter`, `SqliteAdapter`) | Zero chiamanti trovati ovunque nel repo | Stesso discorso di Translators: probabile codice morto, da verificare a parte |
+
+## Completamento `RouteService` (2026-07-13)
+
+Il grep repo-wide su PHP, Blade, config e test ha confermato un solo chiamante storico:
+`Tenant/MorphMapConfigResolver`, gia' instradato sull'helper canonico `inAdmin()`.
+Gli altri metodi non avevano chiamanti attivi; i riferimenti restanti sono documentazione e report di coverage.
+
+Il tentativo intermedio `Actions/RouteAction.php` e' stato scartato: conservava la facade
+multi-metodo statica e aggiungeva un `execute()` vuoto. La conversione definitiva usa una
+Action per use case in `app/Actions/Route/`, sempre `QueueableAction` + `execute()`:
+
+| Metodo legacy | Action |
+|---|---|
+| `inAdmin` | `IsAdminRouteAction` |
+| `urlAct` | `BuildActionUrlAction` |
+| `getRoutenameN` | `BuildNestedRouteNameAction` |
+| `urlLang` | `BuildLanguageUrlAction` |
+| `getAct` | `GetCurrentRouteActionNameAction` |
+| `getModuleName` | `GetCurrentRouteModuleNameAction` |
+| `getControllerName` | `GetCurrentRouteControllerNameAction` |
+| `getView` | `GetCurrentRouteViewAction` |
+
+Nessuna Action inietta o chiama un'altra Action. I chiamanti nuovi usano sempre
+`app(Action::class)->execute(...)`; il test `tests/Unit/Actions/Route/RouteActionsTest.php`
+lascia un controllo eseguibile sul contratto pubblico.
 
 ## Blocco infrastrutturale incontrato
 

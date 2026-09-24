@@ -52,15 +52,19 @@ class AddStrictTypesDeclarationCommand extends Command
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
+<<<<<<< .merge_file_ZviOfK
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_D40KR9
                     if (false === $fileName) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     ++$count;
+<<<<<<< .merge_file_ZviOfK
 <<<<<<< HEAD
 =======
 =======
@@ -71,11 +75,14 @@ class AddStrictTypesDeclarationCommand extends Command
                     $count++;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_D40KR9
 
                     continue;
                 }
 
                 $path = $file->getRealPath();
+<<<<<<< .merge_file_ZviOfK
 <<<<<<< HEAD
                 if (false === $path) {
 =======
@@ -85,6 +92,9 @@ class AddStrictTypesDeclarationCommand extends Command
                 if ($path === false) {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+                if (false === $path) {
+>>>>>>> .merge_file_D40KR9
                     continue;
                 }
 
@@ -94,6 +104,7 @@ class AddStrictTypesDeclarationCommand extends Command
                 try {
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");
+<<<<<<< .merge_file_ZviOfK
 <<<<<<< HEAD
                     ++$count;
 =======
@@ -103,6 +114,9 @@ class AddStrictTypesDeclarationCommand extends Command
                     $count++;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+                    ++$count;
+>>>>>>> .merge_file_D40KR9
                 } catch (\Exception $e) {
                     $this->error("Errore nel processare {$path}: ".$e->getMessage());
                 }
@@ -131,6 +145,7 @@ class AddStrictTypesDeclarationCommand extends Command
         }
 
         $path = $file->getRealPath();
+<<<<<<< .merge_file_ZviOfK
 <<<<<<< HEAD
         if (false === $path) {
 =======
@@ -140,6 +155,9 @@ class AddStrictTypesDeclarationCommand extends Command
         if ($path === false) {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        if (false === $path) {
+>>>>>>> .merge_file_D40KR9
             return false;
         }
 

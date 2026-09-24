@@ -21,22 +21,30 @@ final class XotBaseTransitionFixture
      */
     public static function make(): array
     {
+<<<<<<< .merge_file_tUKVM8
 <<<<<<< HEAD
         $record = new class extends Model
         {
 =======
         $record = new class extends Model {
 >>>>>>> laraxot/dev
+=======
+        $record = new class extends Model {
+>>>>>>> .merge_file_3BlN1b
             /** @var string */
             protected $table = 'xot_transition_test';
         };
 
+<<<<<<< .merge_file_tUKVM8
 <<<<<<< HEAD
         $transition = new class($record) extends XotBaseTransition
         {
 =======
         $transition = new class($record) extends XotBaseTransition {
 >>>>>>> laraxot/dev
+=======
+        $transition = new class($record) extends XotBaseTransition {
+>>>>>>> .merge_file_3BlN1b
             public static string $name = 'test_transition';
         };
 

@@ -37,6 +37,10 @@ test('widget can be rendered', function () {
 function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -44,6 +48,18 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
+<<<<<<< HEAD
+=======
+    
+    $mockXotData->shouldReceive('getUserClass')
+        ->andReturn(\Modules\SaluteOra\Models\User::class);
+        
+    $mockXotData->shouldReceive('make')
+        ->andReturn($mockXotData);
+    
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -127,7 +143,19 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
    - Content presence
    - Layout structure
 
+<<<<<<< .merge_file_DssTs6
+<<<<<<< HEAD
+<<<<<<< HEAD
 2. **Middleware** (Raccomandato)
+=======
+2. **Middleware** (Raccomandato) 
+>>>>>>> laraxot/dev
+=======
+2. **Middleware** (Raccomandato)
+>>>>>>> laraxot/dev
+=======
+2. **Middleware** (Raccomandato)
+>>>>>>> .merge_file_PDp0OC
    - Authentication flow
    - Authorization checks
    - Redirect behavior
@@ -162,7 +190,19 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - ✅ **Performance**: < 5 secondi per test suite
 - ✅ **Architecture**: Separazione rispettata
 
+<<<<<<< .merge_file_DssTs6
+<<<<<<< HEAD
+<<<<<<< HEAD
 ### Gold Standard Criteria
+=======
+### Gold Standard Criteria  
+>>>>>>> laraxot/dev
+=======
+### Gold Standard Criteria
+>>>>>>> laraxot/dev
+=======
+### Gold Standard Criteria
+>>>>>>> .merge_file_PDp0OC
 - ✅ **Success Rate**: > 90% test passati
 - ✅ **Zero Warnings**: Nessun warning PHP/Pest
 - ✅ **Performance**: < 3 secondi per test suite
@@ -181,7 +221,15 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 # Execution time monitoring
 ./vendor/bin/pest -v {TestFile} | grep -E "(seconds|ms)"
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 # Success rate calculation
+=======
+# Success rate calculation  
+>>>>>>> laraxot/dev
+=======
+# Success rate calculation
+>>>>>>> laraxot/dev
 ./vendor/bin/pest {TestFile} --compact
 
 # Memory usage monitoring
@@ -207,10 +255,30 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [Widget Test Patterns](../Cms/project_docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/project_docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
+<<<<<<< HEAD
+=======
+- [Widget Test Patterns](../cms/project_docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../cms/project_docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](xotdata_testing.md)
+>>>>>>> laraxot/dev
 
 ---
 
+<<<<<<< .merge_file_DssTs6
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PDp0OC
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
+<<<<<<< HEAD
 **Last Update**: Dicembre 2024
+<<<<<<< HEAD
+=======
+**Last Update**: Dicembre 2024
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev

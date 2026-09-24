@@ -163,7 +163,15 @@ class ResourceName extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -195,5 +203,11 @@ class ResourceName extends XotBaseResource
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ⚠️ In Lavorazione
+=======
+**Ultimo aggiornamento**: [DATE]
+**Versione**: 1.0.0
+**Status**: ⚠️ In Lavorazione
+>>>>>>> laraxot/dev

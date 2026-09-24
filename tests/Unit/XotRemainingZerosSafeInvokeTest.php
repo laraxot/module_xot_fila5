@@ -12,6 +12,7 @@ use Modules\Xot\ValueObjects\PhoneValueObject;
 uses(TestCase::class)->group('no-xot-db');
 
 test('phone cast round-trips a validated value object', function (): void {
+<<<<<<< .merge_file_cj63PR
 <<<<<<< HEAD
     $cast = new PhoneCast;
     $phone = PhoneValueObject::fromString('+15551234567');
@@ -21,16 +22,25 @@ test('phone cast round-trips a validated value object', function (): void {
     $phone = PhoneValueObject::fromString('+15551234567');
     $model = new Cache();
 >>>>>>> laraxot/dev
+=======
+    $cast = new PhoneCast();
+    $phone = PhoneValueObject::fromString('+15551234567');
+    $model = new Cache();
+>>>>>>> .merge_file_xXfdDi
 
     expect($cast->set($model, 'phone', $phone, []))->toBe('+15551234567')
         ->and($cast->get($model, 'phone', '+15551234567', [])->toString())->toBe('+15551234567');
 });
 
 test('phone cast rejects storage values without the domain type', function (): void {
+<<<<<<< .merge_file_cj63PR
 <<<<<<< HEAD
     expect(fn (): string => (new PhoneCast)->set(new Cache, 'phone', null, []))
 =======
     expect(fn (): string => (new PhoneCast())->set(new Cache(), 'phone', null, []))
 >>>>>>> laraxot/dev
+=======
+    expect(fn (): string => (new PhoneCast())->set(new Cache(), 'phone', null, []))
+>>>>>>> .merge_file_xXfdDi
         ->toThrow(\InvalidArgumentException::class);
 });

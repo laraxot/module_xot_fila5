@@ -17,6 +17,7 @@ use Filament\Forms\Components\Builder\Block as FilamentBuilderBlock;
  * when a concrete class needs `extends Block` semantics, e.g. overriding
  * `make()`/`create()` while keeping the Filament\Forms\Components\Builder\Block API.
  */
+<<<<<<< .merge_file_jUaKYq
 <<<<<<< HEAD
 abstract class XotBaseBuilderBlock extends FilamentBuilderBlock
 {
@@ -30,3 +31,8 @@ abstract class XotBaseBuilderBlock extends FilamentBuilderBlock
 abstract class XotBaseBuilderBlock extends FilamentBuilderBlock {}
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+abstract class XotBaseBuilderBlock extends FilamentBuilderBlock
+{
+}
+>>>>>>> .merge_file_l80ixZ
