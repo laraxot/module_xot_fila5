@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Process;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Tests\TestCase;
@@ -20,17 +19,6 @@ uses(TestCase::class);
  * queste asserzioni ora coprono solo il contratto reale.
  */
 it('executes allowed artisan command correctly', function (): void {
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Process;
-use Modules\Xot\Actions\ExecuteArtisanCommandAction;
-use PHPUnit\Framework\Assert;
-
-it('executes allowed artisan command correctly', function (): void {
-    Event::fake();
->>>>>>> laraxot/dev
     Process::fake([
         'php artisan migrate' => Process::result('Migration successful', '', 0),
     ]);
@@ -43,18 +31,9 @@ it('executes allowed artisan command correctly', function (): void {
     /** @var array<int, string> $output */
     $output = $result['output'];
     Assert::assertStringContainsString('Migration successful', implode("\n", $output));
-<<<<<<< HEAD
 });
 
 it('handles failed artisan command correctly', function (): void {
-=======
-    Event::assertDispatched('artisan-command.started');
-    Event::assertDispatched('artisan-command.completed');
-});
-
-it('handles failed artisan command correctly', function (): void {
-    Event::fake();
->>>>>>> laraxot/dev
     Process::fake([
         'php artisan migrate' => Process::result('', 'Migration failed', 1),
     ]);
@@ -67,8 +46,4 @@ it('handles failed artisan command correctly', function (): void {
     /** @var array<int, string> $output */
     $output = $result['output'];
     Assert::assertStringContainsString('[ERROR] Migration failed', implode("\n", $output));
-<<<<<<< HEAD
-=======
-    Event::assertDispatched('artisan-command.failed');
->>>>>>> laraxot/dev
 });

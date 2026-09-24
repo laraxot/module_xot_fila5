@@ -41,10 +41,7 @@ return [
     'actions' => [
         'queue_restart' => [
             'label' => 'queue_restart',
-<<<<<<< .merge_file_ybOpUx
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_XjpNmo
             'icon' => 'queue_restart',
             'tooltip' => 'queue_restart',
         ],
@@ -117,8 +114,6 @@ return [
             'label' => 'cancel',
             'icon' => 'cancel',
             'tooltip' => 'cancel',
-<<<<<<< .merge_file_ybOpUx
-=======
 =======
         ],
         'event_cache' => [
@@ -141,7 +136,6 @@ return [
         ],
         'migrate' => [
             'label' => 'migrate',
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_XjpNmo
         ],
     ],

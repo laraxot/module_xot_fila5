@@ -15,10 +15,6 @@ use Spatie\LaravelData\Data;
 class PwaData extends Data
 {
     /**
-<<<<<<< .merge_file_skXMdx
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_vVg0US
      * @param  bool  $enable  Se il PWA è abilitato
      * @param  string  $name  Nome dell'applicazione
      * @param  string  $short_name  Nome breve dell'applicazione
@@ -27,19 +23,6 @@ class PwaData extends Data
      * @param  string  $theme_color  Colore del tema
      * @param  string  $icon_path  Percorso dell'icona
      * @param  array<string, string>  $splash  Configurazione splash screen
-<<<<<<< .merge_file_skXMdx
-=======
-=======
-     * @param bool                  $enable           Se il PWA è abilitato
-     * @param string                $name             Nome dell'applicazione
-     * @param string                $short_name       Nome breve dell'applicazione
-     * @param string                $description      Descrizione dell'applicazione
-     * @param string                $background_color Colore di sfondo
-     * @param string                $theme_color      Colore del tema
-     * @param string                $icon_path        Percorso dell'icona
-     * @param array<string, string> $splash           Configurazione splash screen
->>>>>>> laraxot/dev
->>>>>>> .merge_file_vVg0US
      */
     public function __construct(
         public readonly bool $enable = false,
@@ -55,30 +38,13 @@ class PwaData extends Data
             '1242x2208' => 'img/splash/splash-1242x2208.png',
             '1125x2436' => 'img/splash/splash-1125x2436.png',
         ],
-<<<<<<< .merge_file_skXMdx
     ) {}
-=======
-<<<<<<< HEAD
-    ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_vVg0US
 
     /**
      * Create a new instance of PwaData with default values.
      */
     public static function make(): self
     {
-<<<<<<< .merge_file_skXMdx
         return new self;
-=======
-<<<<<<< HEAD
-        return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
->>>>>>> .merge_file_vVg0US
     }
 }

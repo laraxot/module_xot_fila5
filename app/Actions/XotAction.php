@@ -20,15 +20,5 @@ class XotAction
         return Tenant::class;
     }
 
-<<<<<<< .merge_file_5tLwak
     public function execute(): void {}
-=======
-<<<<<<< HEAD
-    public function execute(): void {}
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_SElIzp
 }

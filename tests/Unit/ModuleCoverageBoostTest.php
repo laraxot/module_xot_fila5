@@ -59,15 +59,7 @@ describe('Xot coverage boost', function (): void {
                     Assert::assertNotEmpty($case->getLabel());
                 }
             }
-<<<<<<< HEAD
             $seen++;
-=======
-<<<<<<< HEAD
-            $seen++;
-=======
-            ++$seen;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un enum concreto');
     });

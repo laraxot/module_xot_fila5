@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-<<<<<<< HEAD
-=======
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
->>>>>>> laraxot/dev
 use Filament\Resources\Pages\Page;
 use Illuminate\Support\Str;
 use Modules\Xot\Models\Module;
@@ -19,8 +16,6 @@ class ModuleResource extends XotBaseResource
     protected static ?string $model = Module::class;
 
     #[\Override]
-<<<<<<< HEAD
-=======
     public static function getFormSchema(): array
     {
         return [
@@ -33,7 +28,6 @@ class ModuleResource extends XotBaseResource
     }
 
     #[\Override]
->>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

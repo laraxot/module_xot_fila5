@@ -44,10 +44,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerLivewireComponents();
         $this->registerBladeComponents();
         $this->registerCommands();
-<<<<<<< HEAD
         $this->registerPublicAssets();
-=======
->>>>>>> laraxot/dev
     }
 
     public function register(): void
@@ -61,11 +58,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -93,33 +86,22 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
         $viewPath = module_path($this->name, 'resources/views');
-<<<<<<< HEAD
 
         if (! is_dir($viewPath)) {
             return;
         }
 
-=======
->>>>>>> laraxot/dev
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
     public function registerTranslations(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -139,19 +121,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     {
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
 
-<<<<<<< HEAD
         if (is_dir($componentViewPath)) {
             try {
                 Blade::anonymousComponentPath($componentViewPath);
             } catch (\Exception $e) {
                 // Ignore invalid or unavailable anonymous component paths.
             }
-=======
-        try {
-            Blade::anonymousComponentPath($componentViewPath);
-        } catch (\Exception $e) {
-            // Ignore invalid or unavailable anonymous component paths.
->>>>>>> laraxot/dev
         }
 
         $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
@@ -179,28 +154,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
-<<<<<<< HEAD
         if ($comps->count() === 0) {
             return;
         }
-<<<<<<< .merge_file_qwbc0q
-        /** @var array<int, mixed> $items */
         $items = $comps->toArray();
-=======
-        /** @var array<int, array<string, mixed>> $commands */
-        $commands = $comps->toArray();
-        /** @var array<int, string> $commands */
-        $commands = array_map(static function (array $item): string {
-=======
-        if (0 === $comps->count()) {
-            return;
-        }
-        $commands = $comps->toArray();
-        /** @var array<int, array{ns: string}> $commands */
->>>>>>> .merge_file_fI2ArF
         $commands = array_map(static function (mixed $item): string {
             Assert::isArray($item);
->>>>>>> laraxot/dev
             Assert::keyExists($item, 'ns');
             Assert::string($item['ns'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
@@ -242,7 +201,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             // Ignore config registration failures for optional module config.
         }
     }
-<<<<<<< HEAD
 
     protected function registerPublicAssets(): void
     {
@@ -270,6 +228,4 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             ],
         );
     }
-=======
->>>>>>> laraxot/dev
 }

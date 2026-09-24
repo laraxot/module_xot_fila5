@@ -4,16 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< HEAD
         'qty' => ['label' => 'qty', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'qty'],
-=======
-        'qty' => [
-            'label' => 'qty',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
->>>>>>> laraxot/dev
     ],
     'label' => 'Fake Seeder Header',
     'plural_label' => 'Fake Seeder Header (Plurale)',

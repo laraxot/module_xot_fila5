@@ -11,17 +11,6 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 /**
@@ -69,23 +58,7 @@ function modelSourceFiles(): array
         }
         $it = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
-<<<<<<< .merge_file_gEMDX1
             if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
-=======
-<<<<<<< HEAD
-            if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
-=======
-<<<<<<< HEAD
-            if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
-=======
-<<<<<<< HEAD
-            if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
-=======
-            if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_3sfzxN
                 continue;
             }
             $out[] = $file->getPathname();
@@ -114,23 +87,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
             continue;
         }
         $src = file_get_contents($file);
-<<<<<<< .merge_file_gEMDX1
         if (preg_match($handRolled, $src) === 1) {
-=======
-<<<<<<< HEAD
-        if (preg_match($handRolled, $src) === 1) {
-=======
-<<<<<<< HEAD
-        if (1 === preg_match($handRolled, $src)) {
-=======
-<<<<<<< HEAD
-        if (1 === preg_match($handRolled, $src)) {
-=======
-        if (preg_match($handRolled, $src) === 1) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_3sfzxN
             $offenders[] = $rel;
         }
     }
@@ -141,23 +98,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
         "Risoluzione di classe scritta a mano invece di `<Model>::getClassName()`:\n  "
         .implode("\n  ", $offenders)
         ."\n\nOgni modulo ha il suo model su una connessione diversa con lo stesso nome di"
-<<<<<<< .merge_file_gEMDX1
         .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
-=======
-<<<<<<< HEAD
-        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
-=======
-<<<<<<< HEAD
-        ." tabella: il ripiego su un altro modulo legge un altro database in silenzio."
-=======
-<<<<<<< HEAD
-        ." tabella: il ripiego su un altro modulo legge un altro database in silenzio."
-=======
-        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_3sfzxN
         ."\nCanon: Modules/Xot/docs/wiki/concepts/xotbasemodel-get-class-name.md"
     );
 });
@@ -169,23 +110,7 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
     $offenders = [];
     foreach (modelSourceFiles() as $file) {
         $src = file_get_contents($file);
-<<<<<<< .merge_file_gEMDX1
         if (preg_match($silentFallback, $src) === 1) {
-=======
-<<<<<<< HEAD
-        if (preg_match($silentFallback, $src) === 1) {
-=======
-<<<<<<< HEAD
-        if (1 === preg_match($silentFallback, $src)) {
-=======
-<<<<<<< HEAD
-        if (1 === preg_match($silentFallback, $src)) {
-=======
-        if (preg_match($silentFallback, $src) === 1) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_3sfzxN
             $offenders[] = str_replace(\dirname(__DIR__, 5).'/', '', $file);
         }
     }
@@ -196,22 +121,6 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
         "Ripiego silenzioso su un model di un altro modulo:\n  "
         .implode("\n  ", $offenders)
         ."\n\nUsare `<Model>::getClassName()`: se il gemello manca deve LANCIARE, non"
-<<<<<<< .merge_file_gEMDX1
         .' rispondere con i dati di un altro ente.'
-=======
-<<<<<<< HEAD
-        .' rispondere con i dati di un altro ente.'
-=======
-<<<<<<< HEAD
-        ." rispondere con i dati di un altro ente."
-=======
-<<<<<<< HEAD
-        ." rispondere con i dati di un altro ente."
-=======
-        .' rispondere con i dati di un altro ente.'
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_3sfzxN
     );
 });

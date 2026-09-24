@@ -8,16 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 use Mockery;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
-=======
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 /**
  * Coverage business: policies, models, actions — esecuzione reale, non class_exists.
@@ -52,15 +44,7 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
-<<<<<<< HEAD
             $ref = new ReflectionClass($class);
-=======
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                 continue;
             }
@@ -79,15 +63,7 @@ final class ModuleBusinessCoverage
     public static function mockUser(): UserContract
     {
         /** @var Mockery\MockInterface&UserContract $user */
-<<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
-=======
-<<<<<<< HEAD
-        $user = Mockery::mock(UserContract::class);
-=======
-        $user = \Mockery::mock(UserContract::class);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $user->shouldIgnoreMissing();
         $user->shouldReceive('can')->andReturn(true);
         $user->shouldReceive('hasRole')->andReturn(false);
@@ -103,23 +79,11 @@ final class ModuleBusinessCoverage
     {
         $executed = 0;
         $user = self::mockUser();
-<<<<<<< HEAD
         $record = Mockery::mock(Model::class);
-=======
-<<<<<<< HEAD
-        $record = Mockery::mock(Model::class);
-=======
-        $record = \Mockery::mock(Model::class);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $record->shouldIgnoreMissing();
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                 $policy = new $class;
                 $executed++;
 
@@ -128,19 +92,6 @@ final class ModuleBusinessCoverage
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
                     $name = $method->getName();
                     if ($name === '__construct') {
-<<<<<<< HEAD
-=======
-=======
-                $policy = new $class();
-                ++$executed;
-
-                $ref = new \ReflectionClass($policy);
-
-                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-                    $name = $method->getName();
-                    if ('__construct' === $name) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                         continue;
                     }
 
@@ -151,28 +102,12 @@ final class ModuleBusinessCoverage
                             $type = $param->getType();
                             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                                 $typeName = $type->getName();
-<<<<<<< HEAD
                                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
-=======
-<<<<<<< HEAD
-                                if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
-=======
-                                if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                                     $args[] = $user;
 
                                     continue;
                                 }
-<<<<<<< HEAD
                                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-=======
-<<<<<<< HEAD
-                                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-=======
-                                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                                     $args[] = $record;
 
                                     continue;
@@ -185,15 +120,7 @@ final class ModuleBusinessCoverage
                     }
                 }
             } catch (\Throwable) {
-<<<<<<< HEAD
                 $executed++;
-=======
-<<<<<<< HEAD
-                $executed++;
-=======
-                ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         }
 
@@ -214,10 +141,6 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
             $discovered++;
 
             try {
@@ -231,24 +154,6 @@ final class ModuleBusinessCoverage
         }
 
         if ($discovered === 0) {
-<<<<<<< HEAD
-=======
-=======
-            ++$discovered;
-
-            try {
-                $model = new $class();
-                ++$executed;
-                Assert::assertNotEmpty($model->getTable());
-                Assert::assertNotEmpty($model->getFillable());
-            } catch (\Throwable) {
-                ++$executed;
-            }
-        }
-
-        if (0 === $discovered) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             Assert::assertSame(0, $executed);
 
             return;
@@ -263,15 +168,7 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
             try {
-<<<<<<< HEAD
                 $ref = new ReflectionClass($class);
-=======
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
-                $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 if (! $ref->hasMethod('execute') && ! $ref->hasMethod('handle')) {
                     continue;
                 }
@@ -285,10 +182,6 @@ final class ModuleBusinessCoverage
                     }
                 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                 if ($instance === null) {
                     continue;
                 }
@@ -296,18 +189,6 @@ final class ModuleBusinessCoverage
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< HEAD
-=======
-=======
-                if (null === $instance) {
-                    continue;
-                }
-
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         }
 
@@ -320,27 +201,12 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Datas') as $class) {
             try {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                 $executed++;
                 if (method_exists($class, 'from')) {
                     Assert::assertTrue((new ReflectionClass($class))->hasMethod('from'));
                 }
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< HEAD
-=======
-=======
-                ++$executed;
-                if (method_exists($class, 'from')) {
-                    Assert::assertTrue((new \ReflectionClass($class))->hasMethod('from'));
-                }
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         }
 

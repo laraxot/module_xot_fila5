@@ -18,17 +18,7 @@ use Webmozart\Assert\Assert;
  */
 final class PanelModuleAdapter
 {
-<<<<<<< .merge_file_NcMSnT
     private function __construct() {}
-=======
-<<<<<<< HEAD
-    private function __construct() {}
-=======
-    private function __construct()
-    {
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_M7ZiKx
 
     public static function moduleName(Panel $panel): string
     {

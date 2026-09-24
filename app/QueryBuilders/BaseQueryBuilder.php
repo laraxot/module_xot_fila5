@@ -5,13 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\QueryBuilders;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 
 /**
  * Base query builder providing chainable query abstractions for models.
@@ -40,15 +36,7 @@ abstract class BaseQueryBuilder
     /**
      * Create a new query builder instance.
      *
-<<<<<<< .merge_file_qKJmRn
      * @param  Builder<T>|null  $query
-=======
-<<<<<<< HEAD
-     * @param  Builder<T>|null  $query
-=======
-     * @param Builder<T>|null $query
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
      */
     public function __construct(?Builder $query = null)
     {
@@ -89,16 +77,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition to the query.
-<<<<<<< .merge_file_qKJmRn
      *
      * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
-=======
-<<<<<<< HEAD
-     *
-     * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
      */
     public function where(string $column, mixed $value): static
     {
@@ -109,16 +89,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition with operator to the query.
-<<<<<<< .merge_file_qKJmRn
      *
      * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
-=======
-<<<<<<< HEAD
-     *
-     * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
      */
     public function whereOperator(string $column, string $operator, mixed $value): static
     {
@@ -130,15 +102,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where in condition to the query.
      *
-<<<<<<< .merge_file_qKJmRn
      * @param  array<mixed>  $values
-=======
-<<<<<<< HEAD
-     * @param  array<mixed>  $values
-=======
-     * @param array<mixed> $values
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
      */
     public function whereIn(string $column, array $values): static
     {
@@ -150,15 +114,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where not in condition to the query.
      *
-<<<<<<< .merge_file_qKJmRn
      * @param  array<mixed>  $values
-=======
-<<<<<<< HEAD
-     * @param  array<mixed>  $values
-=======
-     * @param array<mixed> $values
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
      */
     public function whereNotIn(string $column, array $values): static
     {
@@ -190,15 +146,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where between condition to the query.
      *
-<<<<<<< .merge_file_qKJmRn
      * @param  array<int, mixed>  $values
-=======
-<<<<<<< HEAD
-     * @param  array<int, mixed>  $values
-=======
-     * @param array<int, mixed> $values
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
      */
     public function whereBetween(string $column, array $values): static
     {
@@ -212,15 +160,7 @@ abstract class BaseQueryBuilder
      */
     public function orderBy(string $column, string $direction = 'asc'): static
     {
-<<<<<<< .merge_file_qKJmRn
         if ($direction !== 'asc' && $direction !== 'desc') {
-=======
-<<<<<<< HEAD
-        if ($direction !== 'asc' && $direction !== 'desc') {
-=======
-        if ('asc' !== $direction && 'desc' !== $direction) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
             $direction = 'asc';
         }
 
@@ -260,15 +200,7 @@ abstract class BaseQueryBuilder
     /**
      * Get eager loading relations.
      *
-<<<<<<< .merge_file_qKJmRn
      * @param  array<string>  $relations
-=======
-<<<<<<< HEAD
-     * @param  array<string>  $relations
-=======
-     * @param array<string> $relations
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JSoZrp
      */
     public function with(array $relations): static
     {
@@ -288,19 +220,11 @@ abstract class BaseQueryBuilder
     /**
      * Get all results from the query.
      *
-<<<<<<< HEAD
      * @return Collection<int, T>
      */
     public function get(): Collection
     {
         /** @var Collection<int, T> $results */
-=======
-     * @return \Illuminate\Database\Eloquent\Collection<int, T>
-     */
-    public function get(): \Illuminate\Database\Eloquent\Collection
-    {
-        /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
->>>>>>> laraxot/dev
         $results = $this->query->get();
 
         return $results;
@@ -320,15 +244,9 @@ abstract class BaseQueryBuilder
     /**
      * Get results with pagination.
      *
-<<<<<<< HEAD
      * @return LengthAwarePaginator<int, T>
      */
     public function paginate(int $perPage = 15): LengthAwarePaginator
-=======
-     * @return \Illuminate\Pagination\LengthAwarePaginator<int, T>
-     */
-    public function paginate(int $perPage = 15): \Illuminate\Pagination\LengthAwarePaginator
->>>>>>> laraxot/dev
     {
         /* @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
         return $this->query->paginate($perPage);

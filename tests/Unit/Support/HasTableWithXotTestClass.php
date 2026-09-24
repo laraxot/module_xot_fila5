@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Support;
 
-<<<<<<< .merge_file_b0Ds3u
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_TFFQw5
 use Filament\Schemas\Schema;
 use Filament\Support\Contracts\TranslatableContentDriver;
 use Filament\Tables\Columns\Column;
@@ -173,19 +170,13 @@ class HasTableWithXotTestClass
         return [];
     }
 
-<<<<<<< .merge_file_b0Ds3u
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_TFFQw5
     /**
      * @return Model|array<string, mixed>|null
      */
     public function getTableRecord(): Model|array|null
-<<<<<<< .merge_file_b0Ds3u
-=======
 =======
     public function getTableRecord(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_TFFQw5
     {
         return null;
@@ -230,91 +221,61 @@ class HasTableWithXotTestClass
         return [];
     }
 
-<<<<<<< .merge_file_b0Ds3u
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_TFFQw5
     /**
      * @return Builder<Model>|null
      */
     public function getTableQueryForExport(): ?Builder
-<<<<<<< .merge_file_b0Ds3u
-=======
 =======
     public function getTableQueryForExport(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_TFFQw5
     {
         return null;
     }
 
-<<<<<<< .merge_file_b0Ds3u
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_TFFQw5
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredTableQuery(): ?Builder
-<<<<<<< .merge_file_b0Ds3u
-=======
 =======
     public function getFilteredTableQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_TFFQw5
     {
         return null;
     }
 
-<<<<<<< .merge_file_b0Ds3u
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_TFFQw5
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredSortedTableQuery(): ?Builder
-<<<<<<< .merge_file_b0Ds3u
-=======
 =======
     public function getFilteredSortedTableQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_TFFQw5
     {
         return null;
     }
 
-<<<<<<< .merge_file_b0Ds3u
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_TFFQw5
     /**
      * @return Builder<Model>|null
      */
     public function getAllTableSummaryQuery(): ?Builder
-<<<<<<< .merge_file_b0Ds3u
-=======
 =======
     public function getAllTableSummaryQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_TFFQw5
     {
         return null;
     }
 
-<<<<<<< .merge_file_b0Ds3u
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_TFFQw5
     /**
      * @return Builder<Model>|null
      */
     public function getPageTableSummaryQuery(): ?Builder
-<<<<<<< .merge_file_b0Ds3u
-=======
 =======
     public function getPageTableSummaryQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_TFFQw5
     {
         return null;

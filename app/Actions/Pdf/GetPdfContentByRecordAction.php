@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -34,28 +31,11 @@ class GetPdfContentByRecordAction
     /**
      * Genera contenuto PDF binario da un record Eloquent.
      *
-<<<<<<< .merge_file_rTr9Cp
      * @param  Model  $record  Record Eloquent da cui generare il PDF
      * @param  string|null  $filename  Nome file PDF personalizzato (opzionale)
      * @return string Contenuto binario del PDF
      *
      * @throws \Exception Se la vista non esiste o si verificano errori di generazione
-=======
-<<<<<<< HEAD
-     * @param  Model  $record  Record Eloquent da cui generare il PDF
-     * @param  string|null  $filename  Nome file PDF personalizzato (opzionale)
-     * @return string Contenuto binario del PDF
-     *
-     * @throws \Exception Se la vista non esiste o si verificano errori di generazione
-=======
-     * @param Model       $record   Record Eloquent da cui generare il PDF
-     * @param string|null $filename Nome file PDF personalizzato (opzionale)
-     *
-     * @throws \Exception Se la vista non esiste o si verificano errori di generazione
-     *
-     * @return string Contenuto binario del PDF
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6m1NPa
      */
     public function execute(Model $record, ?string $filename = null): string
     {
@@ -81,15 +61,7 @@ class GetPdfContentByRecordAction
         }
 
         // Generate filename if not provided
-<<<<<<< .merge_file_rTr9Cp
         if ($filename === null) {
-=======
-<<<<<<< HEAD
-        if ($filename === null) {
-=======
-        if (null === $filename) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6m1NPa
             $filename = $this->generateFilename($record);
         }
 
@@ -100,19 +72,8 @@ class GetPdfContentByRecordAction
     /**
      * Metodo di convenienza per generare PDF da record con nome file personalizzato.
      *
-<<<<<<< .merge_file_rTr9Cp
      * @param  Model  $record  Record Eloquent
      * @param  string  $filename  Nome file personalizzato
-=======
-<<<<<<< HEAD
-     * @param  Model  $record  Record Eloquent
-     * @param  string  $filename  Nome file personalizzato
-=======
-     * @param Model  $record   Record Eloquent
-     * @param string $filename Nome file personalizzato
-     *
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6m1NPa
      * @return string Contenuto binario del PDF
      */
     public function fromRecord(Model $record, string $filename): string
@@ -123,16 +84,7 @@ class GetPdfContentByRecordAction
     /**
      * Genera il nome della vista seguendo le convenzioni Laraxot.
      *
-<<<<<<< .merge_file_rTr9Cp
      * @param  Model  $record  Record Eloquent
-=======
-<<<<<<< HEAD
-     * @param  Model  $record  Record Eloquent
-=======
-     * @param Model $record Record Eloquent
-     *
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6m1NPa
      * @return string Nome della vista nel formato {module}::{model-kebab}.show.pdf
      */
     protected function generateViewName(Model $record): string
@@ -147,19 +99,8 @@ class GetPdfContentByRecordAction
     /**
      * Prepara i parametri standard per la vista.
      *
-<<<<<<< .merge_file_rTr9Cp
      * @param  Model  $record  Record Eloquent
      * @param  string  $viewName  Nome della vista
-=======
-<<<<<<< HEAD
-     * @param  Model  $record  Record Eloquent
-     * @param  string  $viewName  Nome della vista
-=======
-     * @param Model  $record   Record Eloquent
-     * @param string $viewName Nome della vista
-     *
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6m1NPa
      * @return array<string, mixed> Parametri per la vista
      */
     protected function prepareViewParameters(Model $record, string $viewName): array
@@ -192,16 +133,7 @@ class GetPdfContentByRecordAction
     /**
      * Genera nome file automatico basato sul record.
      *
-<<<<<<< .merge_file_rTr9Cp
      * @param  Model  $record  Record Eloquent
-=======
-<<<<<<< HEAD
-     * @param  Model  $record  Record Eloquent
-=======
-     * @param Model $record Record Eloquent
-     *
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6m1NPa
      * @return string Nome file generato
      */
     protected function generateFilename(Model $record): string
@@ -231,28 +163,11 @@ class GetPdfContentByRecordAction
     /**
      * Genera contenuto PDF binario utilizzando spipu/html2pdf.
      *
-<<<<<<< .merge_file_rTr9Cp
      * @param  string  $html  Contenuto HTML da convertire
      * @param  string  $filename  Nome file per riferimento
      * @return string Contenuto binario del PDF
      *
      * @throws \Exception Se si verificano errori durante la generazione PDF
-=======
-<<<<<<< HEAD
-     * @param  string  $html  Contenuto HTML da convertire
-     * @param  string  $filename  Nome file per riferimento
-     * @return string Contenuto binario del PDF
-     *
-     * @throws \Exception Se si verificano errori durante la generazione PDF
-=======
-     * @param string $html     Contenuto HTML da convertire
-     * @param string $filename Nome file per riferimento
-     *
-     * @throws \Exception Se si verificano errori durante la generazione PDF
-     *
-     * @return string Contenuto binario del PDF
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6m1NPa
      */
     protected function generatePdfContent(string $html, string $filename): string
     {
@@ -276,11 +191,7 @@ class GetPdfContentByRecordAction
             // Generate and return PDF content as binary string
             return $html2pdf->output('', 'S'); // 'S' returns string content
         } catch (\Exception $e) {
-<<<<<<< HEAD
             Log::error('PDF generation failed in GetPdfContentByRecordAction', [
-=======
-            \Log::error('PDF generation failed in GetPdfContentByRecordAction', [
->>>>>>> laraxot/dev
                 'filename' => $filename,
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),

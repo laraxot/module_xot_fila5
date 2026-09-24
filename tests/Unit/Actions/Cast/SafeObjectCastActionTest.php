@@ -57,10 +57,7 @@ it('manages object properties safely', function (): void {
     Assert::assertTrue($action->hasPropertyValue($obj, 'id', 123));
     Assert::assertFalse($action->hasPropertyValue($obj, 'id', '123'));
     // getValidatedProperty
-<<<<<<< .merge_file_c1J6Q6
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_e0Vjmw
     Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (int $v): bool {
         return $v > 100;
     }));
@@ -71,8 +68,6 @@ it('manages object properties safely', function (): void {
     $complexObj = new class
     {
         public function test(string $p): string
-<<<<<<< .merge_file_c1J6Q6
-=======
 =======
     Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
         return $v > 100;
@@ -83,7 +78,6 @@ it('manages object properties safely', function (): void {
     // Methods
     $complexObj = new class {
         public function test(mixed $p): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_e0Vjmw
         {
             return $p;

@@ -32,21 +32,9 @@ class BelongsToAction
          * }
          */
 
-<<<<<<< .merge_file_HFzVSQ
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
             $related_id = reset($relationDTO->data);
             if ($related_id === null) {
-=======
-<<<<<<< HEAD
-        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
-            $related_id = reset($relationDTO->data);
-            if ($related_id === null) {
-=======
-        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
-            $related_id = reset($relationDTO->data);
-            if (null === $related_id) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_xF3Tg6
                 return;
             }
 
@@ -68,15 +56,7 @@ class BelongsToAction
         if (Arr::isAssoc($relationDTO->data)) {
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
-<<<<<<< .merge_file_HFzVSQ
             if ($sub === null) {
-=======
-<<<<<<< HEAD
-            if ($sub === null) {
-=======
-            if (null === $sub) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_xF3Tg6
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 

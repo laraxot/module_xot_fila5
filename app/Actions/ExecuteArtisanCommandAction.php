@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\Event;
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Process;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -37,20 +33,12 @@ class ExecuteArtisanCommandAction
         'passport:keys',
         'passport:purge',
         'passport:hash',
-<<<<<<< .merge_file_HHUEzP
         'notify:migrate-themes-to-mail-templates',
-=======
-<<<<<<< HEAD
-        'notify:migrate-themes-to-mail-templates',
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_nH7yJ7
     ];
 
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
-<<<<<<< HEAD
      * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
      * @return array{
      *     command: string,
@@ -60,18 +48,6 @@ class ExecuteArtisanCommandAction
      * } Array con informazioni sull'esecuzione del comando
      *
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
-=======
-     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
-     *
-     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
-     *
-     * @return array{
-     *     command: string,
-     *     output: array<int, string>,
-     *     status: 'completed'|'failed',
-     *     exitCode: int
-     * } Array con informazioni sull'esecuzione del comando
->>>>>>> laraxot/dev
      */
     public function execute(string $command): array
     {
@@ -81,53 +57,26 @@ class ExecuteArtisanCommandAction
             throw new \RuntimeException("Comando non consentito: {$command}");
         }
 
-<<<<<<< .merge_file_HHUEzP
-        /** @var list<string> $output */
-=======
-<<<<<<< HEAD
         /** @var list<string> $output */
         $output = [];
         $status = 'running';
 
-=======
-        /** @var array<int, string> $output */
->>>>>>> .merge_file_nH7yJ7
-        $output = [];
-        $status = 'running';
-
-        Event::dispatch('artisan-command.started', [$command]);
-
->>>>>>> laraxot/dev
         try {
             $process = Process::path(base_path())
                 ->command("php artisan {$command}")
                 ->timeout(300)
                 ->start();
 
-<<<<<<< .merge_file_HHUEzP
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_nH7yJ7
             // Cattura l'output man mano che il processo produce dati; non e'
             // "tempo reale" lato browser (questa chiamata resta bloccante
             // dentro un'unica richiesta Livewire sincrona), ma evita di
             // rileggere tutto solo alla fine se il processo e' lungo.
-<<<<<<< .merge_file_HHUEzP
-=======
-=======
-            // Cattura l'output in tempo reale
->>>>>>> laraxot/dev
->>>>>>> .merge_file_nH7yJ7
             while ($process->running()) {
                 $data = $process->latestOutput();
                 if (! empty($data)) {
                     $formattedData = trim($data);
                     if (! empty($formattedData)) {
                         $output[] = $formattedData;
-<<<<<<< HEAD
-=======
-                        Event::dispatch('artisan-command.output', [$command, $formattedData]);
->>>>>>> laraxot/dev
                     }
                 }
 
@@ -136,10 +85,6 @@ class ExecuteArtisanCommandAction
                     $formattedError = trim($errorData);
                     if (! empty($formattedError)) {
                         $output[] = '[ERROR] '.$formattedError;
-<<<<<<< HEAD
-=======
-                        Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$formattedError]);
->>>>>>> laraxot/dev
                     }
                 }
 
@@ -152,31 +97,14 @@ class ExecuteArtisanCommandAction
             $finalOutput = trim($result->output());
             if (! empty($finalOutput)) {
                 $output[] = $finalOutput;
-<<<<<<< HEAD
-=======
-                Event::dispatch('artisan-command.output', [$command, $finalOutput]);
->>>>>>> laraxot/dev
             }
 
             $finalErrorOutput = trim($result->errorOutput());
             if (! empty($finalErrorOutput)) {
                 $output[] = '[ERROR] '.$finalErrorOutput;
-<<<<<<< HEAD
             }
 
             $status = $result->successful() ? 'completed' : 'failed';
-=======
-                Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$finalErrorOutput]);
-            }
-
-            if ($result->successful()) {
-                $status = 'completed';
-                Event::dispatch('artisan-command.completed', [$command]);
-            } else {
-                $status = 'failed';
-                Event::dispatch('artisan-command.failed', [$command, $finalErrorOutput]);
-            }
->>>>>>> laraxot/dev
 
             return [
                 'command' => $command,
@@ -185,10 +113,6 @@ class ExecuteArtisanCommandAction
                 'exitCode' => $result->exitCode() ?? 0,
             ];
         } catch (\Throwable $e) {
-<<<<<<< HEAD
-=======
-            Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
->>>>>>> laraxot/dev
             throw new \RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }
@@ -196,12 +120,7 @@ class ExecuteArtisanCommandAction
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
-<<<<<<< HEAD
      * @param  string  $command  Il comando da verificare
-=======
-     * @param string $command Il comando da verificare
-     *
->>>>>>> laraxot/dev
      * @return bool True se il comando è consentito, false altrimenti
      */
     private function isCommandAllowed(string $command): bool

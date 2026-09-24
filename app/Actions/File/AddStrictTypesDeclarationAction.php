@@ -32,15 +32,7 @@ class AddStrictTypesDeclarationAction
 
         // Trova la posizione del tag di apertura PHP
         $phpTagPos = strpos($content, '<?php');
-<<<<<<< .merge_file_GxUJir
         if ($phpTagPos === false) {
-=======
-<<<<<<< HEAD
-        if ($phpTagPos === false) {
-=======
-        if (false === $phpTagPos) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_nwlHAB
             throw new \RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
         }
 
@@ -48,27 +40,11 @@ class AddStrictTypesDeclarationAction
         $lines = explode("\n", $content);
         $firstNonEmptyLine = 0;
         foreach ($lines as $i => $line) {
-<<<<<<< .merge_file_GxUJir
             if ($i === 0) {
                 continue; // Salta la prima riga che contiene <?php
             }
             $trimmedLine = trim($line);
             if ($trimmedLine !== '') {
-=======
-<<<<<<< HEAD
-            if ($i === 0) {
-                continue; // Salta la prima riga che contiene <?php
-            }
-            $trimmedLine = trim($line);
-            if ($trimmedLine !== '') {
-=======
-            if (0 === $i) {
-                continue; // Salta la prima riga che contiene <?php
-            }
-            $trimmedLine = trim($line);
-            if ('' !== $trimmedLine) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_nwlHAB
                 $firstNonEmptyLine = $i;
                 break;
             }

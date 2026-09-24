@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_LKlEZq
-=======
-
->>>>>>> .merge_file_K272R1
 return [
     'fields' => [
         'matr' => [

@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_HtqSYt
-=======
-
->>>>>>> .merge_file_MOSbIL
 return [
     'title' => 'Laravel Instalator',
     'next' => 'Następny krok',

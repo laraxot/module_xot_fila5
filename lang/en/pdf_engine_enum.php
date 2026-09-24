@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
     'values' => [
         'spipu' => [
             'label' => 'Spipu',
@@ -18,8 +17,6 @@ return [
             'description' => 'PDF engine based on DomPDF for HTML/CSS documents',
         ],
     ],
-=======
->>>>>>> laraxot/dev
     'label' => 'PDF Engine',
     'options' => [
         'spipu' => 'Spipu',

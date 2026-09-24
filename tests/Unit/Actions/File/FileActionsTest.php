@@ -1,28 +1,19 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
 uses(Modules\Xot\Tests\TestCase::class);
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-use Nwidart\Modules\Facades\Module;
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
 test('fix path action works', function (): void {
     $action = app(FixPathAction::class);
     $path = 'some/path/with/mixed/slashes';
@@ -32,18 +23,11 @@ test('fix path action works', function (): void {
 
 test('view path action works', function (): void {
     // Replace GetViewNameSpacePathAction with a spy that returns test path
-<<<<<<< HEAD
     $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction
     {
         public function execute(string $namespace): string
         {
             return $namespace === 'test_ns' ? '/view/path' : '';
-=======
-    $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
-        public function execute(string $namespace): string
-        {
-            return 'test_ns' === $namespace ? '/view/path' : '';
->>>>>>> laraxot/dev
         }
     };
 
@@ -62,11 +46,7 @@ test('asset path action works', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-<<<<<<< HEAD
             return $module === 'test_module' ? '/module/path/' : '';
-=======
-            return 'test_module' === $module ? '/module/path/' : '';
->>>>>>> laraxot/dev
         },
     ]);
 

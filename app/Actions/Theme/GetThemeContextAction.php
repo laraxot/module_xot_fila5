@@ -32,15 +32,7 @@ class GetThemeContextAction
         $day = $today->day;
 
         // Christmas season: December 1 to January 10
-<<<<<<< .merge_file_CKIC46
         if (($month === 12 && $day >= 1) || ($month === 1 && $day <= 10)) {
-=======
-<<<<<<< HEAD
-        if (($month === 12 && $day >= 1) || ($month === 1 && $day <= 10)) {
-=======
-        if ((12 === $month && $day >= 1) || (1 === $month && $day <= 10)) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_hj3yQs
             return 'christmas';
         }
 
@@ -54,28 +46,12 @@ class GetThemeContextAction
         }
 
         // Summer period: July 15 to August 31
-<<<<<<< .merge_file_CKIC46
         if (($month === 7 && $day >= 15) || ($month === 8)) {
-=======
-<<<<<<< HEAD
-        if (($month === 7 && $day >= 15) || ($month === 8)) {
-=======
-        if ((7 === $month && $day >= 15) || (8 === $month)) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_hj3yQs
             return 'summer';
         }
 
         // Halloween: October 25 to November 1
-<<<<<<< .merge_file_CKIC46
         if (($month === 10 && $day >= 25) || ($month === 11 && $day <= 1)) {
-=======
-<<<<<<< HEAD
-        if (($month === 10 && $day >= 25) || ($month === 11 && $day <= 1)) {
-=======
-        if ((10 === $month && $day >= 25) || (11 === $month && $day <= 1)) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_hj3yQs
             return 'halloween';
         }
 

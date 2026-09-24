@@ -81,15 +81,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< .merge_file_mcrQ9y
      * @param  class-string  $expectedClass
-=======
-<<<<<<< HEAD
-     * @param  class-string  $expectedClass
-=======
-     * @param class-string $expectedClass
->>>>>>> laraxot/dev
->>>>>>> .merge_file_FwfSVA
      */
     public static function instanceOf(string $expectedClass, mixed $actual): void
     {
@@ -201,15 +193,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< .merge_file_mcrQ9y
      * @param  iterable<array-key>  $keys
-=======
-<<<<<<< HEAD
-     * @param  iterable<array-key>  $keys
-=======
-     * @param iterable<array-key> $keys
->>>>>>> laraxot/dev
->>>>>>> .merge_file_FwfSVA
      */
     public static function hasKeys(iterable $keys, mixed $actual): void
     {
@@ -226,15 +210,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< .merge_file_mcrQ9y
      * @param  iterable<string>  $properties
-=======
-<<<<<<< HEAD
-     * @param  iterable<string>  $properties
-=======
-     * @param iterable<string> $properties
->>>>>>> laraxot/dev
->>>>>>> .merge_file_FwfSVA
      */
     public static function hasProperties(iterable $properties, mixed $actual): void
     {
@@ -294,15 +270,7 @@ final class PestAssert
     {
         Assert::assertIsString($prefix);
 
-<<<<<<< .merge_file_mcrQ9y
         if ($prefix === '') {
-=======
-<<<<<<< HEAD
-        if ($prefix === '') {
-=======
-        if ('' === $prefix) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_FwfSVA
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -313,15 +281,7 @@ final class PestAssert
     {
         Assert::assertIsString($suffix);
 
-<<<<<<< .merge_file_mcrQ9y
         if ($suffix === '') {
-=======
-<<<<<<< HEAD
-        if ($suffix === '') {
-=======
-        if ('' === $suffix) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_FwfSVA
             Assert::fail('Expected a non-empty suffix.');
         }
 
@@ -364,15 +324,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< .merge_file_mcrQ9y
      * @param  array<array-key, mixed>  $constraints
-=======
-<<<<<<< HEAD
-     * @param  array<array-key, mixed>  $constraints
-=======
-     * @param array<array-key, mixed> $constraints
->>>>>>> laraxot/dev
->>>>>>> .merge_file_FwfSVA
      */
     private static function assertThrownExceptionMatches(\Throwable $exception, array $constraints): void
     {
@@ -383,15 +335,7 @@ final class PestAssert
                 continue;
             }
 
-<<<<<<< .merge_file_mcrQ9y
             if (is_string($constraint) && $constraint !== '') {
-=======
-<<<<<<< HEAD
-            if (is_string($constraint) && $constraint !== '') {
-=======
-            if (is_string($constraint) && '' !== $constraint) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_FwfSVA
                 Assert::assertStringContainsString($constraint, $exception->getMessage());
             }
         }

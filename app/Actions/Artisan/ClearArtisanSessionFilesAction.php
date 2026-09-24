@@ -19,15 +19,7 @@ class ClearArtisanSessionFilesAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
-=======
-<<<<<<< HEAD
-            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
-=======
-            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 File::delete($file->getRealPath());
             }
         }

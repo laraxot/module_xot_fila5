@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 /**
  * --- usata ricorsivamente.
  */
@@ -21,18 +17,8 @@ class UpdateAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_FAETQT
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $rules
-=======
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $rules
-=======
-     * @param array<string, mixed> $data
-     * @param array<string, mixed> $rules
->>>>>>> laraxot/dev
->>>>>>> .merge_file_aEp3GP
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -41,15 +27,7 @@ class UpdateAction
 
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
-<<<<<<< .merge_file_FAETQT
         if ($model->getKey() === null) {
-=======
-<<<<<<< HEAD
-        if ($model->getKey() === null) {
-=======
-        if (null === $model->getKey()) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_aEp3GP
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();

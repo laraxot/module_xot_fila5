@@ -12,16 +12,7 @@ class WebhookErrorFormatter
 {
     public function __construct(
         private \Throwable $exception,
-<<<<<<< .merge_file_uRgmLk
     ) {}
-=======
-<<<<<<< HEAD
-    ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_EWH2bI
 
     /**
      * @return array<string, mixed>

@@ -18,15 +18,7 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
-<<<<<<< .merge_file_MZ6qoe
         'icon' => 'xot-files.xls',
-=======
-<<<<<<< HEAD
-        'icon' => 'xot-files.xls',
-=======
-        'icon' => 'heroicon-o-puzzle-piece',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_sj8L4Z
         'sort' => 100,
     ],
     'label' => 'Missing Label',

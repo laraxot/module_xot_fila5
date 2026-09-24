@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Tests\TestCase;
@@ -9,14 +8,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Facades\View;
-use Modules\Xot\Actions\View\GetViewByClassAction;
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
 it('converts class names to view names correctly', function (): void {
     $action = app(GetViewByClassAction::class);
 

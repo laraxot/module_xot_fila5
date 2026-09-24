@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_dpl3tg
-=======
-
->>>>>>> .merge_file_MoVUYU
 return [
     'general' => [
         'home' => 'الرئيسية',

@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Support;
 
-<<<<<<< .merge_file_wUY7Zj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_74umne
 use Filament\Schemas\Schema;
 use Filament\Support\Contracts\TranslatableContentDriver;
 use Filament\Tables\Columns\Column;
@@ -171,19 +168,13 @@ class HasTableWithoutOptionalMethodsTestClass
         return [];
     }
 
-<<<<<<< .merge_file_wUY7Zj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_74umne
     /**
      * @return Model|array<string, mixed>|null
      */
     public function getTableRecord(): Model|array|null
-<<<<<<< .merge_file_wUY7Zj
-=======
 =======
     public function getTableRecord(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_74umne
     {
         return null;
@@ -224,91 +215,61 @@ class HasTableWithoutOptionalMethodsTestClass
         return [];
     }
 
-<<<<<<< .merge_file_wUY7Zj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_74umne
     /**
      * @return Builder<Model>|null
      */
     public function getTableQueryForExport(): ?Builder
-<<<<<<< .merge_file_wUY7Zj
-=======
 =======
     public function getTableQueryForExport(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_74umne
     {
         return null;
     }
 
-<<<<<<< .merge_file_wUY7Zj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_74umne
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredTableQuery(): ?Builder
-<<<<<<< .merge_file_wUY7Zj
-=======
 =======
     public function getFilteredTableQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_74umne
     {
         return null;
     }
 
-<<<<<<< .merge_file_wUY7Zj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_74umne
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredSortedTableQuery(): ?Builder
-<<<<<<< .merge_file_wUY7Zj
-=======
 =======
     public function getFilteredSortedTableQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_74umne
     {
         return null;
     }
 
-<<<<<<< .merge_file_wUY7Zj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_74umne
     /**
      * @return Builder<Model>|null
      */
     public function getAllTableSummaryQuery(): ?Builder
-<<<<<<< .merge_file_wUY7Zj
-=======
 =======
     public function getAllTableSummaryQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_74umne
     {
         return null;
     }
 
-<<<<<<< .merge_file_wUY7Zj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_74umne
     /**
      * @return Builder<Model>|null
      */
     public function getPageTableSummaryQuery(): ?Builder
-<<<<<<< .merge_file_wUY7Zj
-=======
 =======
     public function getPageTableSummaryQuery(): mixed
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_74umne
     {
         return null;
@@ -441,7 +402,6 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
-<<<<<<< HEAD
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -451,27 +411,6 @@ class HasTableWithoutOptionalMethodsTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
-=======
-    public function replaceMountedTableAction(): void
-    {
-    }
-
-    public function replaceMountedTableBulkAction(): void
-    {
-    }
-
-    public function resetTableSearch(): void
-    {
-    }
-
-    public function resetTableColumnSearch(): void
-    {
-    }
-
-    public function toggleTableReordering(): void
-    {
-    }
->>>>>>> laraxot/dev
 
     public function parseTableFilterName(): string
     {

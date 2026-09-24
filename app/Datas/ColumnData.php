@@ -11,14 +11,5 @@ class ColumnData extends Data
     public function __construct(
         public string $name,
         public string $type,
-<<<<<<< .merge_file_5f4MJ6
     ) {}
-=======
-<<<<<<< HEAD
-    ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_XNdQOO
 }

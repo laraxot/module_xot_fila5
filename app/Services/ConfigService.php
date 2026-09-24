@@ -1,40 +1,10 @@
 <?php
 
-<<<<<<< .merge_file_IVUiVu
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ccPpGJ
 /**
  * @see https://medium.com/technology-hits/how-to-import-a-csv-excel-file-in-laravel-d50f93b98aa4
  */
 
-<<<<<<< .merge_file_IVUiVu
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ccPpGJ
 namespace Modules\Xot\Services;
 
 /**

@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_DxGBeN
-=======
-
->>>>>>> .merge_file_HTYeqq
 return [
     'accepted' => ':attribute must Akzeptert werden.',
     'active_url' => ':attribute ist keine gültige URL.',

@@ -11,14 +11,4 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @phpstan-require-extends Model
  */
-<<<<<<< .merge_file_sqopzT
 interface WithStateStatusContract {}
-=======
-<<<<<<< HEAD
-interface WithStateStatusContract {}
-=======
-interface WithStateStatusContract
-{
-}
->>>>>>> laraxot/dev
->>>>>>> .merge_file_RQltwt

@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 use Modules\Xot\Tests\TestCase;

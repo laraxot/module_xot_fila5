@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
     'values' => [
         'f' => [
             'label' => 'Femmina',
@@ -18,8 +17,6 @@ return [
             'description' => 'Genere maschile',
         ],
     ],
-=======
->>>>>>> laraxot/dev
     'label' => 'Genere',
     'options' => [
         'f' => 'Femmina',

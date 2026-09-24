@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_XdJ9Zn
-=======
-
->>>>>>> .merge_file_ue0JsQ
 return [
     'backend' => [
         'none' => 'ไม่มีประวัติล่าสุด',

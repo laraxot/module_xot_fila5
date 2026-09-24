@@ -4,13 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-<<<<<<< HEAD
 use Filament\Resources\RelationManagers\RelationManager;
-=======
-use Filament\Forms\Components\KeyValue;
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\CreateExtra;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\EditExtra;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\ListExtras;
@@ -21,32 +15,9 @@ class ExtraResource extends XotBaseResource
     protected static ?string $model = Extra::class;
 
     /**
-<<<<<<< HEAD
      * @return array<string, class-string<RelationManager>>
      */
     #[\Override]
-=======
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'id' => TextInput::make('id')->required()->maxLength(36),
-            'post_type' => TextInput::make('post_type')->required()->maxLength(255),
-            'post_id' => TextInput::make('post_id')->required()->numeric(),
-            'value' => KeyValue::make('value')
-                ->keyLabel('Chiave')
-                ->valueLabel('Valore')
-                ->reorderable()
-                ->columnSpanFull(),
-        ];
-    }
-
-    #[\Override]
->>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

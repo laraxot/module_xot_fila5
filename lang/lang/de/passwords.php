@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_rZR4TG
-=======
-
->>>>>>> .merge_file_LcCubj
 return [
     'password' => 'Passwörter müssen mind. 6 Zeichen haben und gleich der Wiederholung sein.',
     'reset' => 'Dein Passwort wurde zurückgesetzt!',

@@ -5,28 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\ModelClass;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< .merge_file_J9BY1m
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\file;
 
-=======
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-use function Safe\file;
-
-=======
-
-use function Safe\file;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_pwB8q5
 class GetMethodBodyAction
 {
     use QueueableAction;

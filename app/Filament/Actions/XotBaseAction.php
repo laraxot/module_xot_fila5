@@ -14,14 +14,4 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @method static static make(?string $name = null) Create a new instance of the action
  */
-<<<<<<< .merge_file_76XOpu
 abstract class XotBaseAction extends FilamentAction {}
-=======
-<<<<<<< HEAD
-abstract class XotBaseAction extends FilamentAction {}
-=======
-abstract class XotBaseAction extends FilamentAction
-{
-}
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Ds94ZP

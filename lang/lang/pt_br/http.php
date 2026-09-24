@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_aACQuh
-=======
-
->>>>>>> .merge_file_QrObly
 return [
     404 => [
         'title' => 'Página não encontrada',
