@@ -58,23 +58,17 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
 
         // Solo i model che compongono davvero il trait: gli altri sono liberi.
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
         if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) !== 1) {
             continue;
         }
 
         if (preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class) !== 1) {
-<<<<<<< HEAD
-=======
 =======
         if (1 !== preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
             continue;
         }
 
         if (1 !== preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class)) {
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
             continue;
         }

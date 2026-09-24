@@ -91,10 +91,7 @@ class ArtisanCommandsManager extends XotBasePage
         $this->isRunning = true;
 
         try {
-<<<<<<< .merge_file_Z7rgs3
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_AWHIZv
             $result = app(ExecuteArtisanCommandAction::class)->execute($command);
 
             $this->output = $result['output'];
@@ -102,8 +99,6 @@ class ArtisanCommandsManager extends XotBasePage
             $this->isRunning = false;
 
             $this->notifyCommandResult($command, $result['status']);
-<<<<<<< .merge_file_Z7rgs3
-=======
         } catch (\Exception $e) {
             $this->status = 'failed';
             $this->isRunning = false;
@@ -170,7 +165,6 @@ class ArtisanCommandsManager extends XotBasePage
             ->body((string) __('xot::artisan-commands-manager.messages.command_failed_desc', ['command' => $command]))
 =======
             app(ExecuteArtisanCommandAction::class)->execute($command);
->>>>>>> .merge_file_AWHIZv
         } catch (\Exception $e) {
             $this->status = 'failed';
             $this->isRunning = false;
@@ -312,10 +306,7 @@ class ArtisanCommandsManager extends XotBasePage
                 ->iconPosition(IconPosition::Before)
                 ->disabled(fn () => $this->isRunning)
                 ->action(fn () => $this->executeCommand('queue:restart')),
-<<<<<<< .merge_file_Z7rgs3
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_AWHIZv
             Action::make('composer_dump_autoload')
                 ->label((string) __('xot::artisan-commands-manager.commands.composer_dump_autoload.label'))
                 ->icon('heroicon-o-cube')
@@ -335,10 +326,7 @@ class ArtisanCommandsManager extends XotBasePage
                 ->requiresConfirmation()
                 ->modalDescription((string) __('xot::artisan-commands-manager.commands.notify_migrate_themes_to_mail_templates.modal_description'))
                 ->action(fn () => $this->executeCommand('notify:migrate-themes-to-mail-templates')),
-<<<<<<< .merge_file_Z7rgs3
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_AWHIZv
         ];
     }

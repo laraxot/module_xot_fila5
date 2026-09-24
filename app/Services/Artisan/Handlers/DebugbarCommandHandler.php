@@ -19,14 +19,6 @@ class DebugbarCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
-<<<<<<< HEAD
         return $command === 'debugbar:clear';
-=======
-<<<<<<< HEAD
-        return $command === 'debugbar:clear';
-=======
-        return 'debugbar:clear' === $command;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     }
 }

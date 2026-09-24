@@ -105,23 +105,7 @@ final class FilamentSchemaCoverage
             }
 
             try {
-<<<<<<< .merge_file_sviZSH
                 // @phpstan-ignore-next-line
-=======
-<<<<<<< HEAD
-                // @phpstan-ignore-next-line
-=======
-<<<<<<< HEAD
-                # @phpstan-ignore-next-line
-=======
-<<<<<<< HEAD
-                # @phpstan-ignore-next-line
-=======
-                // @phpstan-ignore-next-line
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TOl7Dk
                 $schema = $class::getFormSchema();
                 $executed++;
                 if ($schema === []) {

@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< .merge_file_IjRjWx
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_IgOpCI
 /*
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
 
-<<<<<<< .merge_file_IjRjWx
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_IgOpCI
 namespace Modules\Xot\Datas;
 
 use Illuminate\Database\Eloquent\Model;
@@ -163,15 +148,7 @@ class PdfData extends Data
     }
 
     /**
-<<<<<<< .merge_file_IjRjWx
      * @param  array<string, mixed>  $params
-=======
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $params
-=======
-     * @param array<string, mixed> $params
->>>>>>> laraxot/dev
->>>>>>> .merge_file_IgOpCI
      */
     public function view(string $view, array $params = []): self
     {

@@ -20,19 +20,13 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use SplFileInfo;
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 use function Safe\file;
@@ -41,12 +35,9 @@ use function Safe\preg_replace;
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 /**
  * Sweep aggressivo verso coverage 100%: closure Filament, policy con matrice ruoli, metodi senza limite parametri.
@@ -108,15 +99,7 @@ final class ModuleRemainingCoverage
                 if ($ref->hasMethod('make') && $ref->getMethod('make')->isStatic()) {
                     $make = $ref->getMethod('make');
                     $argc = $make->getNumberOfRequiredParameters();
-<<<<<<< HEAD
                     $instance = $argc === 0
-=======
-<<<<<<< HEAD
-                    $instance = $argc === 0
-=======
-                    $instance = 0 === $argc
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                         ? $class::make()
                         : $class::make('coverage_field');
                 }
@@ -163,21 +146,9 @@ final class ModuleRemainingCoverage
                         ? $method->invoke(null, ...self::defaultArgsForMethod($method))
                         : $method->invoke($instance, ...self::defaultArgsForMethod($method));
                     self::invokeClosuresInValue($result, $record, $invoked);
-<<<<<<< HEAD
                     $invoked++;
                 } catch (\Throwable) {
                     $invoked++;
-=======
-<<<<<<< HEAD
-                    $invoked++;
-                } catch (\Throwable) {
-                    $invoked++;
-=======
-                    ++$invoked;
-                } catch (\Throwable) {
-                    ++$invoked;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 }
             }
         }
@@ -264,23 +235,17 @@ final class ModuleRemainingCoverage
                 }
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                 if ($instance === null) {
                     continue;
                 }
 
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
-<<<<<<< HEAD
-=======
 =======
                 if (null === $instance) {
                     continue;
                 }
 
                 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
                     if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                         continue;
@@ -291,21 +256,9 @@ final class ModuleRemainingCoverage
                     try {
                         $method->setAccessible(true);
                         $method->invoke($instance, ...self::defaultArgsForMethod($method));
-<<<<<<< HEAD
                         $executed++;
                     } catch (\Throwable) {
                         $executed++;
-=======
-<<<<<<< HEAD
-                        $executed++;
-                    } catch (\Throwable) {
-                        $executed++;
-=======
-                        ++$executed;
-                    } catch (\Throwable) {
-                        ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                     }
                 }
             }
@@ -390,15 +343,7 @@ final class ModuleRemainingCoverage
                 }
             }
 
-<<<<<<< HEAD
             if ($instance === null) {
-=======
-<<<<<<< HEAD
-            if ($instance === null) {
-=======
-            if (null === $instance) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 continue;
             }
 
@@ -407,23 +352,17 @@ final class ModuleRemainingCoverage
                     $instance->setRawAttributes(self::defaultModelAttributes());
                 } catch (\Throwable) {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                     $executed++;
                 }
             }
 
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
-<<<<<<< HEAD
-=======
 =======
                     ++$executed;
                 }
             }
 
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
                 if ($method->getDeclaringClass()->getName() !== $class) {
                     continue;
@@ -462,21 +401,9 @@ final class ModuleRemainingCoverage
                         $result = $method->invoke($instance, ...self::defaultArgsForMethod($method));
                     }
                     self::invokeClosuresInValue($result, $instance, $executed);
-<<<<<<< HEAD
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 }
             }
         }
@@ -493,23 +420,12 @@ final class ModuleRemainingCoverage
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Filament') as $class) {
             try {
                 if (is_subclass_of($class, XotBaseResourceTable::class)) {
-<<<<<<< HEAD
                     $table = new $class;
-=======
-<<<<<<< HEAD
-                    $table = new $class;
-=======
-                    $table = new $class();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                     self::invokeClosuresInValue($table->getTableColumns(), $record, $invoked);
                     try {
                         self::invokeClosuresInValue($table->getTableFilters(), $record, $invoked);
                     } catch (\Throwable) {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                         $invoked++;
                     }
                     if ((new ReflectionClass($table))->hasMethod('getTableActions')) {
@@ -518,8 +434,6 @@ final class ModuleRemainingCoverage
                             self::invokeClosuresInValue($m->invoke($table), $record, $invoked);
                         } catch (\Throwable) {
                             $invoked++;
-<<<<<<< HEAD
-=======
 =======
                         ++$invoked;
                     }
@@ -529,7 +443,6 @@ final class ModuleRemainingCoverage
                             self::invokeClosuresInValue($m->invoke($table), $record, $invoked);
                         } catch (\Throwable) {
                             ++$invoked;
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
                         }
                     }
@@ -570,15 +483,7 @@ final class ModuleRemainingCoverage
                         }
                         self::invokeClosuresInValue($rm->invoke(null), $record, $invoked);
                     } catch (\Throwable) {
-<<<<<<< HEAD
                         $invoked++;
-=======
-<<<<<<< HEAD
-                        $invoked++;
-=======
-                        ++$invoked;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                     }
                 }
 
@@ -601,25 +506,11 @@ final class ModuleRemainingCoverage
                         $result = $method->invoke($instance, ...$args);
                         self::invokeClosuresInValue($result, $record, $invoked);
                     } catch (\Throwable) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                         $invoked++;
                     }
                 }
             } catch (\Throwable) {
                 $invoked++;
-<<<<<<< HEAD
-=======
-=======
-                        ++$invoked;
-                    }
-                }
-            } catch (\Throwable) {
-                ++$invoked;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         }
 
@@ -673,34 +564,14 @@ final class ModuleRemainingCoverage
                         try {
                             $args = self::buildPolicyArgs($method, $user);
                             $method->invoke($policy, ...$args);
-<<<<<<< HEAD
                             $executed++;
                         } catch (\Throwable) {
                             $executed++;
-=======
-<<<<<<< HEAD
-                            $executed++;
-                        } catch (\Throwable) {
-                            $executed++;
-=======
-                            ++$executed;
-                        } catch (\Throwable) {
-                            ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                         }
                     }
                 }
             } catch (\Throwable) {
-<<<<<<< HEAD
                 $executed++;
-=======
-<<<<<<< HEAD
-                $executed++;
-=======
-                ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         }
 
@@ -741,15 +612,7 @@ final class ModuleRemainingCoverage
                     }
                 }
 
-<<<<<<< HEAD
                 if ($instance === null) {
-=======
-<<<<<<< HEAD
-                if ($instance === null) {
-=======
-                if (null === $instance) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                     continue;
                 }
 
@@ -793,21 +656,9 @@ final class ModuleRemainingCoverage
                         } else {
                             $method->invoke($instance, ...self::defaultArgsForMethod($method));
                         }
-<<<<<<< HEAD
                         $executed++;
                     } catch (\Throwable) {
                         $executed++;
-=======
-<<<<<<< HEAD
-                        $executed++;
-                    } catch (\Throwable) {
-                        $executed++;
-=======
-                        ++$executed;
-                    } catch (\Throwable) {
-                        ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                     }
                 }
             }
@@ -868,21 +719,9 @@ final class ModuleRemainingCoverage
                         continue;
                     }
                     $method->invoke($controller, ...self::defaultArgsForMethod($method));
-<<<<<<< HEAD
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 }
             }
         }
@@ -897,35 +736,21 @@ final class ModuleRemainingCoverage
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Projectors') as $class) {
             try {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                 $projector = new $class;
                 $ref = new ReflectionClass($class);
 
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< HEAD
-=======
 =======
                 $projector = new $class();
                 $ref = new \ReflectionClass($class);
 
                 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                     $name = $method->getName();
                     if (str_starts_with($name, '__')) {
                         continue;
                     }
-<<<<<<< HEAD
                     if (! str_starts_with($name, 'on') && $name !== 'handle') {
-=======
-<<<<<<< HEAD
-                    if (! str_starts_with($name, 'on') && $name !== 'handle') {
-=======
-                    if (! str_starts_with($name, 'on') && 'handle' !== $name) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                         continue;
                     }
 
@@ -936,9 +761,6 @@ final class ModuleRemainingCoverage
                     try {
                         $args = self::defaultArgsForMethod($method);
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                         if ($args === [] && $method->getNumberOfRequiredParameters() > 0) {
                             continue;
                         }
@@ -950,8 +772,6 @@ final class ModuleRemainingCoverage
                 }
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< HEAD
-=======
 =======
                         if ([] === $args && $method->getNumberOfRequiredParameters() > 0) {
                             continue;
@@ -965,7 +785,6 @@ final class ModuleRemainingCoverage
             } catch (\Throwable) {
                 ++$executed;
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         }
 
@@ -973,16 +792,7 @@ final class ModuleRemainingCoverage
     }
 
     /**
-<<<<<<< HEAD
      * @param  list<string>  $roles
-=======
-<<<<<<< HEAD
-     * @param  list<string>  $roles
-=======
-     * @param list<string> $roles
-     *
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      * @return Mockery\MockInterface&UserContract
      */
     private static function mockUserWithRoles(array $roles): UserContract
@@ -1067,16 +877,7 @@ final class ModuleRemainingCoverage
     }
 
     /**
-<<<<<<< HEAD
      * @param  class-string<Model>|null  $class
-=======
-<<<<<<< HEAD
-     * @param  class-string<Model>|null  $class
-=======
-     * @param class-string<Model>|null $class
-     *
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      * @return Mockery\MockInterface&Model
      */
     private static function mockEloquentRecord(?string $class = null): Model
@@ -1147,15 +948,7 @@ final class ModuleRemainingCoverage
             }
             self::$closureVisited[$key] = true;
             self::invokeClosureWithArgMatrix($value, $context);
-<<<<<<< HEAD
             $invoked++;
-=======
-<<<<<<< HEAD
-            $invoked++;
-=======
-            ++$invoked;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
             return;
         }
@@ -1232,15 +1025,7 @@ final class ModuleRemainingCoverage
                     self::invokeClosuresInValue($result, $context, $invoked);
                 }
             } catch (\Throwable) {
-<<<<<<< HEAD
                 $invoked++;
-=======
-<<<<<<< HEAD
-                $invoked++;
-=======
-                ++$invoked;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         }
     }
@@ -1265,23 +1050,17 @@ final class ModuleRemainingCoverage
         }
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
         $get = Mockery::mock(Get::class);
         $get->shouldReceive('__invoke')->andReturn('done', 'pending', null, 'grid', 'list');
         $get->shouldIgnoreMissing();
 
         $set = Mockery::mock(Set::class);
-<<<<<<< HEAD
-=======
 =======
         $get = \Mockery::mock(Get::class);
         $get->shouldReceive('__invoke')->andReturn('done', 'pending', null, 'grid', 'list');
         $get->shouldIgnoreMissing();
 
         $set = \Mockery::mock(Set::class);
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         $set->shouldReceive('__invoke')->andReturnNull();
         $set->shouldIgnoreMissing();
@@ -1327,9 +1106,6 @@ final class ModuleRemainingCoverage
         // Spatie media upload closures (ImageSpatie/VideoSpatie)
         try {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
             $tmpUpload = Mockery::mock(TemporaryUploadedFile::class);
             $tmpUpload->shouldIgnoreMissing();
             $livewire = Mockery::mock(HasForms::class);
@@ -1338,8 +1114,6 @@ final class ModuleRemainingCoverage
             $component->shouldIgnoreMissing();
             $media = Mockery::mock(HasMedia::class);
             $adder = Mockery::mock(FileAdder::class);
-<<<<<<< HEAD
-=======
 =======
             $tmpUpload = \Mockery::mock(TemporaryUploadedFile::class);
             $tmpUpload->shouldIgnoreMissing();
@@ -1349,7 +1123,6 @@ final class ModuleRemainingCoverage
             $component->shouldIgnoreMissing();
             $media = \Mockery::mock(HasMedia::class);
             $adder = \Mockery::mock(FileAdder::class);
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
             $adder->shouldReceive('withResponsiveImages')->andReturnSelf();
             $adder->shouldReceive('toMediaCollection')->andReturnNull();
@@ -1374,9 +1147,6 @@ final class ModuleRemainingCoverage
             foreach ($ref->getParameters() as $param) {
                 $type = $param->getType();
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
                 if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                     $typeName = $type->getName();
                     if ($typeName === Get::class) {
@@ -1384,8 +1154,6 @@ final class ModuleRemainingCoverage
                     } elseif ($typeName === Set::class) {
                         $built[] = $set;
                     } elseif (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-<<<<<<< HEAD
-=======
 =======
                 if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                     $typeName = $type->getName();
@@ -1394,7 +1162,6 @@ final class ModuleRemainingCoverage
                     } elseif (Set::class === $typeName) {
                         $built[] = $set;
                     } elseif (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
                         $built[] = $context;
                     } elseif (class_exists($typeName)) {
@@ -1547,15 +1314,7 @@ final class ModuleRemainingCoverage
     }
 
     /**
-<<<<<<< HEAD
      * @param  class-string  $class
-=======
-<<<<<<< HEAD
-     * @param  class-string  $class
-=======
-     * @param class-string $class
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      */
     private static function instantiate(string $class, int $depth = 0): ?object
     {
@@ -1577,15 +1336,7 @@ final class ModuleRemainingCoverage
         }
 
         $ctor = $ref->getConstructor();
-<<<<<<< HEAD
         if ($ctor === null) {
-=======
-<<<<<<< HEAD
-        if ($ctor === null) {
-=======
-        if (null === $ctor) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             try {
                 return $ref->newInstance();
             } catch (\Throwable) {
@@ -1650,15 +1401,7 @@ final class ModuleRemainingCoverage
         }
 
         $file = $method->getFileName();
-<<<<<<< HEAD
         if ($file === false || ! is_readable($file)) {
-=======
-<<<<<<< HEAD
-        if ($file === false || ! is_readable($file)) {
-=======
-        if (false === $file || ! is_readable($file)) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             return self::$dddxMethodCache[$cacheKey] = false;
         }
 

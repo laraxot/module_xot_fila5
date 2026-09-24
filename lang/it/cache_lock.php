@@ -9,18 +9,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< .merge_file_PcWozn
         'label' => 'cache lock.navigation',
         'icon' => 'cache lock.navigation',
         'sort' => 95,
-=======
-<<<<<<< HEAD
-        'label' => 'cache lock.navigation',
-        'icon' => 'cache lock.navigation',
-        'sort' => 95,
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_MSbkH3
     ],
     'pages' => [
         'health_check_results' => [
@@ -58,10 +49,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_PcWozn
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_MSbkH3
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -80,19 +67,10 @@ return [
             'helper_text' => 'expiration',
             'description' => 'expiration',
         ],
-<<<<<<< .merge_file_PcWozn
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_MSbkH3
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache Lock',
-<<<<<<< .merge_file_PcWozn
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_MSbkH3
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -120,17 +98,6 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
-<<<<<<< .merge_file_PcWozn
-=======
-=======
-        ],
-        'edit' => [
-            'label' => 'Modifica Cache Lock',
-        ],
-        'delete' => [
-            'label' => 'Elimina Cache Lock',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_MSbkH3
         ],
     ],
 ];

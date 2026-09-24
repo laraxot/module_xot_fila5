@@ -7,18 +7,10 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\scandir;
 
-=======
-
-use function Safe\scandir;
-
-use Spatie\QueueableAction\QueueableAction;
-
->>>>>>> laraxot/dev
 class GetModulePathAction
 {
     use QueueableAction;
@@ -26,12 +18,7 @@ class GetModulePathAction
     /**
      * Ottiene il percorso di un modulo.
      *
-<<<<<<< HEAD
      * @param  string  $moduleName  Il nome del modulo
-=======
-     * @param string $moduleName Il nome del modulo
-     *
->>>>>>> laraxot/dev
      * @return string Il percorso completo del modulo
      */
     public function execute(string $moduleName): string
@@ -44,43 +31,16 @@ class GetModulePathAction
                 return __DIR__.'/../';
             }
 
-<<<<<<< .merge_file_eHOGUJ
             /** @var array<int, string> $files */
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
 
             $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
-=======
-<<<<<<< HEAD
-            /** @var array<int, string> $files */
-            $files = scandir($modulesPath);
-            $moduleNameLower = Str::lower($moduleName);
-
-            $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
-=======
-            $files = scandir($modulesPath);
-            $moduleNameLower = Str::lower($moduleName);
-
-            $foundModule = collect($files)->filter(static function ($item) use ($moduleNameLower): bool {
-                if (! is_string($item)) {
-                    return false;
-                }
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_UPbkDW
                 return Str::lower($item) === $moduleNameLower;
             })->first();
 
             // Se non troviamo il modulo, restituiamo un percorso di fallback
-<<<<<<< .merge_file_eHOGUJ
             if (! is_string($foundModule)) {
-=======
-<<<<<<< HEAD
-            if (! is_string($foundModule)) {
-=======
-            if (null === $foundModule || ! is_string($foundModule)) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_UPbkDW
                 return base_path('Modules/'.$moduleName);
             }
 

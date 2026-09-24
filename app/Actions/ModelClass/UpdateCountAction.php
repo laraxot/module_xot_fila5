@@ -18,16 +18,7 @@ class UpdateCountAction
     /**
      * Execute the count action for the given model class.
      *
-<<<<<<< .merge_file_7ietVv
      * @param  class-string<Model>  $modelClass  The fully qualified model class name
-=======
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     *                                        =======
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     *                                        >>>>>>> laraxot/dev
->>>>>>> .merge_file_arlv8Y
      */
     public function execute(string $modelClass, int $total): void
     {

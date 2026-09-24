@@ -13,15 +13,7 @@ class XotDatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-<<<<<<< .merge_file_o9NjDm
         if ($this->command !== null) {
-=======
-<<<<<<< HEAD
-        if ($this->command !== null) {
-=======
-        if (null !== $this->command) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_B1MVtA
             $this->command->info('XotDatabaseSeeder: entity seeders…');
         }
 
@@ -40,15 +32,7 @@ class XotDatabaseSeeder extends Seeder
             SessionSeeder::class,
         ]);
 
-<<<<<<< .merge_file_o9NjDm
         if ($this->command !== null) {
-=======
-<<<<<<< HEAD
-        if ($this->command !== null) {
-=======
-        if (null !== $this->command) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_B1MVtA
             $this->command->info('XotDatabaseSeeder: completato.');
         }
     }

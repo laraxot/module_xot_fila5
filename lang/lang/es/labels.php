@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_GixS8D
-=======
-
->>>>>>> .merge_file_WF3yV9
 return [
     'general' => [
         'all' => 'Todos',

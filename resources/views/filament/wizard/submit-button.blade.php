@@ -1,15 +1,9 @@
-<<<<<<< .merge_file_RPrhYj
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_Mg5l4t
 <?php
 
 declare(strict_types=1);
 ?>
-<<<<<<< .merge_file_RPrhYj
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_Mg5l4t
 @if (\Illuminate\Support\Facades\View::exists('pub_theme::filament.wizard.submit-button'))
     @include('pub_theme::filament.wizard.submit-button')

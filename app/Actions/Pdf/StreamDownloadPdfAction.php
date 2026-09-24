@@ -18,23 +18,10 @@ class StreamDownloadPdfAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
-<<<<<<< .merge_file_frqBMQ
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_r5R7lt
      * @param  string|null  $html  Contenuto HTML da convertire
      * @param  string|null  $view  Nome della view da renderizzare
      * @param  array<string, mixed>|null  $data  Dati da passare alla view
      * @param  string  $filename  Nome del file PDF
-<<<<<<< .merge_file_frqBMQ
-=======
-=======
-     * @param string|null               $html     Contenuto HTML da convertire
-     * @param string|null               $view     Nome della view da renderizzare
-     * @param array<string, mixed>|null $data     Dati da passare alla view
-     * @param string                    $filename Nome del file PDF
->>>>>>> laraxot/dev
->>>>>>> .merge_file_r5R7lt
      */
     public function execute(
         ?string $html = null,
@@ -42,15 +29,7 @@ class StreamDownloadPdfAction
         ?array $data = null,
         string $filename = 'my_doc.pdf',
     ): StreamedResponse {
-<<<<<<< .merge_file_frqBMQ
         if ($html === null && $view !== null) {
-=======
-<<<<<<< HEAD
-        if ($html === null && $view !== null) {
-=======
-        if (null === $html && null !== $view) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_r5R7lt
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');
             }

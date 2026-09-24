@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers\Filament;
 
-<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Auth\Pages\Login;
 use Filament\Http\Middleware\Authenticate;
@@ -16,17 +15,6 @@ use Filament\View\PanelsRenderHook;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
-=======
-use Filament\Http\Middleware\Authenticate;
-use Filament\Http\Middleware\DisableBladeIconComponents;
-use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Navigation\MenuItem;
-use Filament\Panel;
-use Filament\PanelProvider;
-use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
-use Illuminate\Cookie\Middleware\EncryptCookies;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
->>>>>>> laraxot/dev
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
@@ -103,18 +91,13 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
                 StartSession::class,
                 AuthenticateSession::class,
                 ShareErrorsFromSession::class,
-<<<<<<< HEAD
                 PreventRequestForgery::class,
-=======
-                VerifyCsrfToken::class,
->>>>>>> laraxot/dev
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
             ->authMiddleware([
                 Authenticate::class,
-<<<<<<< HEAD
             ])
             // Fix "This page has expired" (Livewire) sulla pagina di login del
             // panel admin principale: vedi spiegazione e riproduzione in
@@ -134,9 +117,6 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
                     HTML,
                 scopes: Login::class,
             );
-=======
-            ]);
->>>>>>> laraxot/dev
         $navs = app(GetModulesNavigationItems::class)->execute();
         $panel->navigationItems($navs);
 
@@ -148,11 +128,7 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
         $profileLabel = is_string($profileLabelRaw) ? $profileLabelRaw : null;
 
         $panel->userMenuItems([
-<<<<<<< HEAD
             Action::make('profile')
-=======
-            MenuItem::make()
->>>>>>> laraxot/dev
                 ->label($profileLabel)
                 ->url($profile_url)
                 ->icon('heroicon-o-user'),

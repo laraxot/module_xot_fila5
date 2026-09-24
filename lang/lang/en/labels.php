@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_mMphEb
-=======
-
->>>>>>> .merge_file_ezqnrE
 return [
     'general' => [
         'actions' => 'Action',

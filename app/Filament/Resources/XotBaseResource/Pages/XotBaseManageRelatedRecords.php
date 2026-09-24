@@ -77,10 +77,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
-<<<<<<< HEAD
-=======
     #[\Override]
->>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [
@@ -131,15 +128,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
-<<<<<<< .merge_file_H16idm
                     if ($url === '') {
-=======
-<<<<<<< HEAD
-                    if ($url === '') {
-=======
-                    if ('' === $url) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_1vG3mT
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -152,15 +141,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
-<<<<<<< .merge_file_H16idm
                     if ($url === '') {
-=======
-<<<<<<< HEAD
-                    if ($url === '') {
-=======
-                    if ('' === $url) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_1vG3mT
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 

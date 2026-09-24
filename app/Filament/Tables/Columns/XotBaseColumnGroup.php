@@ -13,14 +13,4 @@ use Filament\Tables\Columns\ColumnGroup as FilamentColumnGroup;
  *
  * @method static static make(string $name) Create a new instance of the column group
  */
-<<<<<<< .merge_file_nNrxhl
 abstract class XotBaseColumnGroup extends FilamentColumnGroup {}
-=======
-<<<<<<< HEAD
-abstract class XotBaseColumnGroup extends FilamentColumnGroup {}
-=======
-abstract class XotBaseColumnGroup extends FilamentColumnGroup
-{
-}
->>>>>>> laraxot/dev
->>>>>>> .merge_file_XPfoo3

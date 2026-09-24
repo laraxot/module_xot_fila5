@@ -28,15 +28,7 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
-<<<<<<< .merge_file_5bUjoZ
             self::$_instance = new self;
-=======
-<<<<<<< HEAD
-            self::$_instance = new self;
-=======
-            self::$_instance = new self();
->>>>>>> laraxot/dev
->>>>>>> .merge_file_KEAF8z
         }
 
         return self::$_instance;
@@ -74,15 +66,7 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
-<<<<<<< .merge_file_5bUjoZ
                 $tmp = new \stdClass;
-=======
-<<<<<<< HEAD
-                $tmp = new \stdClass;
-=======
-                $tmp = new \stdClass();
->>>>>>> laraxot/dev
->>>>>>> .merge_file_KEAF8z
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -100,10 +84,7 @@ class ModuleAction
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
-<<<<<<< HEAD
                     // Skip files whose class name does not resolve to an existing/valid class.
-=======
->>>>>>> laraxot/dev
                 }
             }
         }
@@ -111,11 +92,5 @@ class ModuleAction
         return $data;
     }
 
-<<<<<<< HEAD
     public function execute(): void {}
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> laraxot/dev
 }

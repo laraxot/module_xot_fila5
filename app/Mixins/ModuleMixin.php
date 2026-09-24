@@ -49,15 +49,7 @@ class ModuleMixin
             $value = Arr::get($data, $item, null);
 
             if (
-<<<<<<< HEAD
                 $value !== null
-=======
-<<<<<<< HEAD
-                $value !== null
-=======
-                null !== $value
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 && ! is_array($value)
                 && ! is_int($value)
                 && ! is_string($value)

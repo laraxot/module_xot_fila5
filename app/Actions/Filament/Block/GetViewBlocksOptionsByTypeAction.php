@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< .merge_file_o7Mm56
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_uiQGSJ
 /**
  * -WIP.
  */
 
-<<<<<<< .merge_file_o7Mm56
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_uiQGSJ
 namespace Modules\Xot\Actions\Filament\Block;
 
 use Illuminate\Support\Arr;
@@ -40,14 +25,8 @@ class GetViewBlocksOptionsByTypeAction
     /**
      * Ottiene le opzioni dei blocchi di vista per un determinato tipo.
      *
-<<<<<<< HEAD
      * @param  string  $type  Il tipo di blocco da cercare
      * @param  bool  $img  Se includere i percorsi delle immagini invece dei nomi
-=======
-     * @param string $type Il tipo di blocco da cercare
-     * @param bool   $img  Se includere i percorsi delle immagini invece dei nomi
-     *
->>>>>>> laraxot/dev
      * @return array<string, string> Array di opzioni con chiave = vista e valore = nome o percorso immagine
      */
     public function execute(string $type, bool $img = false): array
@@ -60,30 +39,16 @@ class GetViewBlocksOptionsByTypeAction
         $globPattern = $basePath.'/*/resources/views/components/blocks/'.$type.'/*.blade.php';
         $files = File::glob($globPattern);
 
-<<<<<<< HEAD
         if ($files === false) {
-=======
-        if (false === $files) {
->>>>>>> laraxot/dev
             return []; // Ritorna un array vuoto se non ci sono file
         }
 
         Assert::isArray($files, 'Il risultato di File::glob() deve essere un array');
-<<<<<<< HEAD
         /** @var array<int, string> $files */
         $fixPathAction = app(FixPathAction::class);
         Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
 
         $opts = Arr::mapWithKeys($files, function (string $path) use ($img, $type, $fixPathAction): array {
-=======
-
-        $fixPathAction = app(FixPathAction::class);
-        Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
-
-        $opts = Arr::mapWithKeys($files, function ($path) use ($img, $type, $fixPathAction): array {
-            // Verifichiamo che il percorso sia una stringa
-            Assert::string($path, 'Il percorso del file deve essere una stringa');
->>>>>>> laraxot/dev
 
             // Normalizziamo il percorso
             $pathStr = $fixPathAction->execute($path);

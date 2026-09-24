@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_dtwHL0
-=======
-
->>>>>>> .merge_file_u8HOOe
 return [
     'title' => 'Установка Laravel',
     'next' => 'Следующий шаг',

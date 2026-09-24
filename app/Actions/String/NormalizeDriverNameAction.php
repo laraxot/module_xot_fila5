@@ -4,24 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
-<<<<<<< .merge_file_eUtQKE
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
-=======
-<<<<<<< HEAD
-use Webmozart\Assert\Assert;
-
-use function Safe\preg_replace;
-
-=======
-use function Safe\preg_replace;
-
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_wMJUAl
 /**
  * Action per normalizzare i nomi dei driver.
  *

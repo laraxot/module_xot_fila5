@@ -6,28 +6,11 @@ namespace Modules\Xot\Actions\Pdf;
 
 use Modules\Xot\Adapters\PdfBuilderAdapter;
 use Modules\Xot\Contracts\PdfBuilderContract;
-<<<<<<< .merge_file_WgUWmb
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 use function Safe\base64_decode;
 
-=======
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\StreamedResponse;
-
-use function Safe\base64_decode;
-
-=======
-
-use function Safe\base64_decode;
-
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\StreamedResponse;
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ELJbQ4
 class MakePdfSpatieTestAction
 {
     use QueueableAction;
@@ -35,15 +18,7 @@ class MakePdfSpatieTestAction
     /**
      * Build a minimal Spatie PDF download response from a generic test view.
      *
-<<<<<<< .merge_file_WgUWmb
      * @param  array<string, mixed>  $data
-=======
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ELJbQ4
      */
     public function execute(
         array $data = [],
@@ -65,15 +40,7 @@ class MakePdfSpatieTestAction
     }
 
     /**
-<<<<<<< .merge_file_WgUWmb
      * @param  array<string, mixed>  $data
-=======
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ELJbQ4
      */
     private function makePdfBuilder(string $view, array $data, string $filename): PdfBuilderContract
     {
@@ -104,41 +71,17 @@ class MakePdfSpatieTestAction
                 $browsershot->showBackground();
 
                 $nodeBinary = config('laravel-pdf.browsershot.node_binary');
-<<<<<<< .merge_file_WgUWmb
                 if (is_string($nodeBinary) && $nodeBinary !== '' && method_exists($browsershot, 'setNodeBinary')) {
-=======
-<<<<<<< HEAD
-                if (is_string($nodeBinary) && $nodeBinary !== '' && method_exists($browsershot, 'setNodeBinary')) {
-=======
-                if (is_string($nodeBinary) && '' !== $nodeBinary && method_exists($browsershot, 'setNodeBinary')) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ELJbQ4
                     $browsershot->setNodeBinary($nodeBinary);
                 }
 
                 $npmBinary = config('laravel-pdf.browsershot.npm_binary');
-<<<<<<< .merge_file_WgUWmb
                 if (is_string($npmBinary) && $npmBinary !== '' && method_exists($browsershot, 'setNpmBinary')) {
-=======
-<<<<<<< HEAD
-                if (is_string($npmBinary) && $npmBinary !== '' && method_exists($browsershot, 'setNpmBinary')) {
-=======
-                if (is_string($npmBinary) && '' !== $npmBinary && method_exists($browsershot, 'setNpmBinary')) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ELJbQ4
                     $browsershot->setNpmBinary($npmBinary);
                 }
 
                 $chromePath = config('laravel-pdf.browsershot.chrome_path');
-<<<<<<< .merge_file_WgUWmb
                 if (is_string($chromePath) && $chromePath !== '' && method_exists($browsershot, 'setChromePath')) {
-=======
-<<<<<<< HEAD
-                if (is_string($chromePath) && $chromePath !== '' && method_exists($browsershot, 'setChromePath')) {
-=======
-                if (is_string($chromePath) && '' !== $chromePath && method_exists($browsershot, 'setChromePath')) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ELJbQ4
                     $browsershot->setChromePath($chromePath);
                 }
             });

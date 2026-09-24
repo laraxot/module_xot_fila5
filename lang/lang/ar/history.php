@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_xv5wRT
-=======
-
->>>>>>> .merge_file_HnoHQv
 return [
     'backend' => [
         'none' => 'لا يوجد ماضي حديث.',

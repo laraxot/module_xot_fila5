@@ -21,15 +21,7 @@ class ErrorCommandHandler implements CommandHandlerInterface
     {
         $command = $this->getCurrentCommand();
 
-<<<<<<< HEAD
         if ($command === 'error-clear') {
-=======
-<<<<<<< HEAD
-        if ($command === 'error-clear') {
-=======
-        if ('error-clear' === $command) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             return app(ClearArtisanErrorLogAction::class)->execute();
         }
 

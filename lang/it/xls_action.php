@@ -25,15 +25,7 @@ return [
         ],
         'label' => 'Xls Action',
         'sort' => 1,
-<<<<<<< .merge_file_mOSdZe
         'icon' => 'xot-files.xls',
-=======
-<<<<<<< HEAD
-        'icon' => 'xot-files.xls',
-=======
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_VlCwvo
     ],
     'fields' => [
         'id' => [

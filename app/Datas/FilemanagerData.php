@@ -15,18 +15,8 @@ use Spatie\LaravelData\Data;
 final class FilemanagerData extends Data
 {
     /**
-<<<<<<< .merge_file_RxGtuV
      * @param  array<int, string>  $disks
      * @param  array<int, string>  $allowedExt
-=======
-<<<<<<< HEAD
-     * @param  array<int, string>  $disks
-     * @param  array<int, string>  $allowedExt
-=======
-     * @param array<int, string> $disks
-     * @param array<int, string> $allowedExt
->>>>>>> laraxot/dev
->>>>>>> .merge_file_aRgx69
      */
     public function __construct(
         public readonly string $disk = 'public',
@@ -38,30 +28,13 @@ final class FilemanagerData extends Data
         public readonly int $maxSize = 10,
         public readonly string $routePrefix = 'filemanager',
         public readonly bool $enableCrop = true,
-<<<<<<< .merge_file_RxGtuV
     ) {}
-=======
-<<<<<<< HEAD
-    ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_aRgx69
 
     /**
      * Create a new instance of FilemanagerData with default values.
      */
     public static function make(): self
     {
-<<<<<<< .merge_file_RxGtuV
         return new self;
-=======
-<<<<<<< HEAD
-        return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
->>>>>>> .merge_file_aRgx69
     }
 }

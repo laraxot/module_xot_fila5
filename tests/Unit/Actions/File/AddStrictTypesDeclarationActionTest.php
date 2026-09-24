@@ -11,7 +11,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall (vedi
 // @param-closure-this in vendor/pestphp/pest/src/Functions.php), non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var,
@@ -32,29 +31,6 @@ afterEach(function () use (&$workDir): void {
 describe('Add Strict Types Declaration Action', function () use (&$workDir): void {
     test('adds strict types declaration to php file', function () use (&$workDir): void {
         $file = $workDir.'/test.php';
-=======
-beforeEach(function (): void {
-    /* @var \Modules\Xot\Tests\TestCase $this */
-    $this->action = app(AddStrictTypesDeclarationAction::class);
-    $this->workDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'test_strict_types_'.uniqid();
-    assert(is_string($this->workDir));
-    File::makeDirectory($this->workDir, 0755, true);
-});
-
-afterEach(function (): void {
-    /* @var \Modules\Xot\Tests\TestCase $this */
-    assert(is_string($this->workDir));
-    if (File::isDirectory($this->workDir)) {
-        File::deleteDirectory($this->workDir);
-    }
-});
-
-describe('Add Strict Types Declaration Action', function (): void {
-    test('adds strict types declaration to php file', function (): void {
-        /** @var TestCase $this */
-        $file = $this->workDir.'/test.php';
-        Assert::assertIsString($this->workDir);
->>>>>>> laraxot/dev
         File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
 
         app(AddStrictTypesDeclarationAction::class)->execute($file);
@@ -64,15 +40,8 @@ describe('Add Strict Types Declaration Action', function (): void {
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 
-<<<<<<< HEAD
     test('does not duplicate strict types if already present', function () use (&$workDir): void {
         $file = $workDir.'/test.php';
-=======
-    test('does not duplicate strict types if already present', function (): void {
-        /** @var TestCase $this */
-        $file = $this->workDir.'/test.php';
-        Assert::assertIsString($this->workDir);
->>>>>>> laraxot/dev
         File::put($file, "<?php\n\n\n\nnamespace Test;");
 
         app(AddStrictTypesDeclarationAction::class)->execute($file);
@@ -82,15 +51,8 @@ describe('Add Strict Types Declaration Action', function (): void {
         Assert::assertSame(1, substr_count($content, 'declare(strict_types=1)'));
     });
 
-<<<<<<< HEAD
     test('handles file with existing namespace', function () use (&$workDir): void {
         $file = $workDir.'/test.php';
-=======
-    test('handles file with existing namespace', function (): void {
-        /** @var TestCase $this */
-        $file = $this->workDir.'/test.php';
-        Assert::assertIsString($this->workDir);
->>>>>>> laraxot/dev
         File::put($file, "<?php\n\n\n\nclass TestAction {}");
 
         app(AddStrictTypesDeclarationAction::class)->execute($file);

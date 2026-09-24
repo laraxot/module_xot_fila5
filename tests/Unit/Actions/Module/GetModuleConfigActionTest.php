@@ -1,16 +1,9 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Modules\Xot\Tests\TestCase;
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\Module\GetModuleConfigAction;
-use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
@@ -18,11 +11,8 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
->>>>>>> laraxot/dev
 it('returns config array from module config file', function (): void {
     $tempDir = sys_get_temp_dir().'/xot_modcfg_'.uniqid('', true);
     mkdir($tempDir, 0755, true);

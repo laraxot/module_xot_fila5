@@ -1,45 +1,21 @@
 <?php
 
-<<<<<<< .merge_file_54kyvD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_AclOt7
 /**
  * -WIP.
  */
 
-<<<<<<< .merge_file_54kyvD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_AclOt7
 namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< HEAD
-=======
-
-use function Safe\file;
-
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 use function Safe\file;
 
-=======
->>>>>>> laraxot/dev
 class GenerateFormByFileAction
 {
     use QueueableAction;
@@ -47,12 +23,7 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
-<<<<<<< HEAD
      * @param  File  $file  Il file della risorsa Filament
-=======
-     * @param File $file Il file della risorsa Filament
-     *
->>>>>>> laraxot/dev
      * @return int Numero di input aggiunti
      */
     public function execute(File $file): int
@@ -126,11 +97,7 @@ class GenerateFormByFileAction
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
-<<<<<<< HEAD
                 $inputCount++;
-=======
-                ++$inputCount;
->>>>>>> laraxot/dev
             }
         }
 
@@ -140,11 +107,7 @@ class GenerateFormByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-<<<<<<< HEAD
      * @param  File  $file  Il file da analizzare
-=======
-     * @param File $file Il file da analizzare
->>>>>>> laraxot/dev
      */
     public function ddFile(File $file): void
     {

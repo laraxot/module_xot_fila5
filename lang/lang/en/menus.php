@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_dxYu3o
-=======
-
->>>>>>> .merge_file_CKlAZo
 return [
     'backend' => [
         'voucher' => [

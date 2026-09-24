@@ -12,18 +12,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< .merge_file_goxMyi
         'label' => 'log.navigation',
         'icon' => 'log.navigation',
         'sort' => 61,
-=======
-<<<<<<< HEAD
-        'label' => 'log.navigation',
-        'icon' => 'log.navigation',
-        'sort' => 61,
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_l7gW3g
     ],
     'fields' => [
         'name' => [
@@ -31,10 +22,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'name',
-=======
->>>>>>> laraxot/dev
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -74,10 +62,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_goxMyi
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_l7gW3g
         'id' => [
             'label' => 'id',
         ],
@@ -111,11 +95,6 @@ return [
         'file-content' => [
             'label' => 'file-content',
         ],
-<<<<<<< .merge_file_goxMyi
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_l7gW3g
     ],
     'actions' => [
         'import' => [
@@ -130,10 +109,6 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-<<<<<<< .merge_file_goxMyi
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_l7gW3g
         'create' => [
             'label' => 'create',
             'icon' => 'create',
@@ -168,9 +143,4 @@ return [
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
     'title' => 'log',
-=======
-    ],
-    'label' => 'Log',
-    'plural_label' => 'Log (Plurale)',
->>>>>>> laraxot/dev
 ];

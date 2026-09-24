@@ -12,24 +12,4 @@ use Filament\Pages\Tenancy\EditTenantProfile as FilamentEditTenantProfile;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's EditTenantProfile to provide a XotBase layer.
  */
-<<<<<<< .merge_file_h4d2C1
 abstract class XotBaseEditTenantProfile extends FilamentEditTenantProfile {}
-=======
-<<<<<<< HEAD
-abstract class XotBaseEditTenantProfile extends FilamentEditTenantProfile {}
-=======
-<<<<<<< HEAD
-abstract class XotBaseEditTenantProfile extends FilamentEditTenantProfile
-{
-}
-=======
-<<<<<<< HEAD
-abstract class XotBaseEditTenantProfile extends FilamentEditTenantProfile
-{
-}
-=======
-abstract class XotBaseEditTenantProfile extends FilamentEditTenantProfile {}
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Va48iu

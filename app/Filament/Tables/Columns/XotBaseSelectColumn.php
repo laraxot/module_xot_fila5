@@ -14,14 +14,4 @@ use Filament\Tables\Columns\SelectColumn as FilamentSelectColumn;
  *
  * @method static static make(string $name) Create a new instance of the column
  */
-<<<<<<< .merge_file_hd5zEQ
 abstract class XotBaseSelectColumn extends FilamentSelectColumn {}
-=======
-<<<<<<< HEAD
-abstract class XotBaseSelectColumn extends FilamentSelectColumn {}
-=======
-abstract class XotBaseSelectColumn extends FilamentSelectColumn
-{
-}
->>>>>>> laraxot/dev
->>>>>>> .merge_file_EH7jd0
