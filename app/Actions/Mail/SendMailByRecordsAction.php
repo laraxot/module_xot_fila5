@@ -13,20 +13,7 @@ class SendMailByRecordsAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_0WgkJo
      * @param  Collection<int, Model>  $records
-=======
-     * <<<<<<< .merge_file_jHRYFu.
-     *
-     * @param Collection<int, Model> $records
-     *                                        =======
-     *                                        <<<<<<< HEAD
-     * @param Collection<int, Model> $records
-     *                                        =======
-     * @param Collection<int, Model> $records
-     *                                        >>>>>>> laraxot/dev
-     *                                        >>>>>>> .merge_file_CEjyJs
->>>>>>> .merge_file_CFlUJD
      */
     public function execute(Collection $records, string $mail_class): bool
     {
