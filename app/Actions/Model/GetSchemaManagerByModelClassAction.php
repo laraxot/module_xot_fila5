@@ -17,7 +17,23 @@ class GetSchemaManagerByModelClassAction
     /**
      * Ottiene lo schema manager Doctrine per una classe di modello Eloquent.
      *
+<<<<<<< .merge_file_xyZp2T
      * @param  string  $modelClass  La classe del modello
+=======
+     * <<<<<<< .merge_file_7Y7dge
+     *
+     * @param string $modelClass La classe del modello
+     *                           =======
+     *                           <<<<<<< HEAD
+     * @param string $modelClass La classe del modello
+     *                           =======
+     * @param string $modelClass La classe del modello
+     *
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_BepykK
+     *
+>>>>>>> .merge_file_k0zmqY
      * @return AbstractSchemaManager<AbstractPlatform> Lo schema manager di Doctrine
      */
     public function execute(string $modelClass): AbstractSchemaManager

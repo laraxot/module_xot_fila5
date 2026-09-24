@@ -16,7 +16,20 @@ class RelationAction
     /**
      * Undocumented function.
      *
+<<<<<<< .merge_file_t0NMtp
      * @param  array<string, mixed>  $data
+=======
+     * <<<<<<< .merge_file_J16tDc
+     *
+     * @param array<string, mixed> $data
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     * @param array<string, mixed> $data
+     *                                   =======
+     * @param array<string, mixed> $data
+     *                                   >>>>>>> laraxot/dev
+     *                                   >>>>>>> .merge_file_540y8u
+>>>>>>> .merge_file_qy9tGS
      */
     public function execute(Model $model, array $data): void
     {
