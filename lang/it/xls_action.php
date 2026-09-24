@@ -25,7 +25,6 @@ return [
         ],
         'label' => 'Xls Action',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
         'icon' => 'xot-files.xls',
     ],
     'fields' => [
