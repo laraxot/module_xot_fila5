@@ -6,7 +6,6 @@ return [
     'actions' => [
         'export_xls' => [
             'label' => 'Excel exportieren',
-            'icon' => 'heroicon-o-arrow-down-tray',
             'icon' => 'xot-files.xls',
             'tooltip' => 'Daten im Excel-Format (.xlsx) exportieren',
             'placeholder' => 'Nach Excel exportieren',
@@ -31,7 +30,6 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
         'icon' => 'xot-files.xls',
         'sort' => 100,
     ],
