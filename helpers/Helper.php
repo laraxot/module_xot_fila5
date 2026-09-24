@@ -284,8 +284,8 @@ if (! function_exists('test')) {
 }
 
 if (! function_exists('describe')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function describe(string $title, Closure $callback): void
+    /** Firma allineata a Pest: describe(...)->group(...) è legittimo. */
+    function describe(string $description, Closure $tests): Pest\PendingCalls\DescribeCall
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
