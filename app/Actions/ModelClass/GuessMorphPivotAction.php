@@ -22,10 +22,10 @@ class GuessMorphPivotAction
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
      *                                            =======
-<<<<<<< .merge_file_Cof58c
+     *                                            <<<<<<< .merge_file_Cof58c
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
-=======
+     *                                            =======
      *                                            <<<<<<< HEAD
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
@@ -33,7 +33,7 @@ class GuessMorphPivotAction
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
      *                                            >>>>>>> laraxot/dev
->>>>>>> .merge_file_0xKkpD
+     *                                            >>>>>>> .merge_file_0xKkpD
      *                                            >>>>>>> laraxot/dev
      */
     public function execute(string $related, string $class): MorphPivot
