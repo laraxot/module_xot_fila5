@@ -17,12 +17,14 @@ class GetSchemaManagerByModelClassAction
     /**
      * Ottiene lo schema manager Doctrine per una classe di modello Eloquent.
      *
-<<<<<<< HEAD
-     * @param  string  $modelClass  La classe del modello
-=======
+     * <<<<<<< HEAD
+     *
+     * @param string $modelClass La classe del modello
+     *                           =======
      * @param string $modelClass La classe del modello
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return AbstractSchemaManager<AbstractPlatform> Lo schema manager di Doctrine
      */
     public function execute(string $modelClass): AbstractSchemaManager
