@@ -23,47 +23,7 @@ class PerformanceResource extends XotBaseResource
 {
     protected static ?string $model = Performance::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_hVHmIW
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_epECxO
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_BnXcux
-<<<<<<< .merge_file_pcAwg0
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cvYoFY
-<<<<<<< .merge_file_hVHmIW
-=======
->>>>>>> .merge_file_gSKSHY
->>>>>>> .merge_file_BnXcux
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\Card::make()
@@ -280,47 +240,7 @@ Forms\Components\Grid::make()
 ### Eventi Form
 
 ```php
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_hVHmIW
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_epECxO
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
->>>>>>> .merge_file_BnXcux
-<<<<<<< .merge_file_pcAwg0
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cvYoFY
-<<<<<<< .merge_file_hVHmIW
-=======
->>>>>>> .merge_file_gSKSHY
->>>>>>> .merge_file_BnXcux
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\TextInput::make('codice')

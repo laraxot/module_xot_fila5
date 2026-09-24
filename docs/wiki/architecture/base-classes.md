@@ -39,47 +39,7 @@ class MyPage extends Modules\Xot\Filament\Resources\Pages\XotBasePage
 class MyResource extends XotBaseResource
 {
     // ✅ OK - Ha getFormSchema()
-<<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
-=======
-<<<<<<< .merge_file_kCpxBN
-<<<<<<< HEAD
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array { /* ... */ }
-=======
-=======
-<<<<<<< .merge_file_IfW84N
-    public function getFormSchema(): array { /* ... */ }
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array { /* ... */ }
-=======
->>>>>>> .merge_file_zeJif0
-<<<<<<< .merge_file_pb4y2z
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array { /* ... */ }
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
-<<<<<<< .merge_file_kCpxBN
-=======
->>>>>>> .merge_file_8WlnOm
->>>>>>> .merge_file_zeJif0
->>>>>>> laraxot/dev
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -178,47 +138,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
     /**
      * Get form schema with automatic translations.
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_kCpxBN
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_IfW84N
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_zeJif0
-<<<<<<< .merge_file_pb4y2z
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
-<<<<<<< .merge_file_kCpxBN
-=======
->>>>>>> .merge_file_8WlnOm
->>>>>>> .merge_file_zeJif0
->>>>>>> laraxot/dev
     {
         return [
             Section::make(__('filament.section.general'))
@@ -381,47 +301,7 @@ class YourResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-document';
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_kCpxBN
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_IfW84N
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_zeJif0
-<<<<<<< .merge_file_pb4y2z
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
-<<<<<<< .merge_file_kCpxBN
-=======
->>>>>>> .merge_file_8WlnOm
->>>>>>> .merge_file_zeJif0
->>>>>>> laraxot/dev
     {
         return [
             ...parent::getFormSchema(),
@@ -490,47 +370,7 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 ```php
 // ✅ OPTIMIZED in XotBase classes
 /** @return array<string, Component> */
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_kCpxBN
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_IfW84N
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
->>>>>>> .merge_file_zeJif0
-<<<<<<< .merge_file_pb4y2z
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9nmDCT
-<<<<<<< .merge_file_kCpxBN
-=======
->>>>>>> .merge_file_8WlnOm
->>>>>>> .merge_file_zeJif0
->>>>>>> laraxot/dev
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array

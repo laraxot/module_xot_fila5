@@ -154,45 +154,7 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
-<<<<<<< HEAD
-<<<<<<< .merge_file_ukKZMx
-=======
-<<<<<<< .merge_file_rh3j0I
-=======
->>>>>>> .merge_file_PfUTsk
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_DlVP8b
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_O2fNTY
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukKZMx
-=======
->>>>>>> .merge_file_7dChoj
->>>>>>> .merge_file_PfUTsk
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukKZMx
-=======
-<<<<<<< .merge_file_rh3j0I
-=======
->>>>>>> .merge_file_PfUTsk
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_DlVP8b
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_O2fNTY
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukKZMx
-=======
->>>>>>> .merge_file_7dChoj
->>>>>>> .merge_file_PfUTsk
 
 // ✅ CORRETTO
 public function getFormSchema(): array

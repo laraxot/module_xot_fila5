@@ -25,45 +25,7 @@ Questo significa che:
 ### Metodi Astratti
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZAl04E
-=======
-<<<<<<< .merge_file_FjQdC1
-=======
->>>>>>> .merge_file_35pySh
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_xxTppR
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_wPaPKR
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZAl04E
-=======
->>>>>>> .merge_file_fw9tcg
->>>>>>> .merge_file_35pySh
-abstract public function getFormSchema(): array;
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZAl04E
-=======
-<<<<<<< .merge_file_FjQdC1
-=======
->>>>>>> .merge_file_35pySh
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_xxTppR
-=======
-=======
 abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> .merge_file_wPaPKR
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZAl04E
-=======
->>>>>>> .merge_file_fw9tcg
->>>>>>> .merge_file_35pySh
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -97,45 +59,7 @@ class NotificationResource extends XotBaseResource
 {
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZAl04E
-=======
-<<<<<<< .merge_file_FjQdC1
-=======
->>>>>>> .merge_file_35pySh
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_xxTppR
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_wPaPKR
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZAl04E
-=======
->>>>>>> .merge_file_fw9tcg
->>>>>>> .merge_file_35pySh
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZAl04E
-=======
-<<<<<<< .merge_file_FjQdC1
-=======
->>>>>>> .merge_file_35pySh
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_xxTppR
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_wPaPKR
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ZAl04E
-=======
->>>>>>> .merge_file_fw9tcg
->>>>>>> .merge_file_35pySh
     {
         return [
             Forms\Components\TextInput::make('title')
