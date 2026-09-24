@@ -118,6 +118,7 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 
 ### **Documentazione Correlata**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 =======
 <<<<<<< HEAD
@@ -125,6 +126,9 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+- [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> laraxot/dev
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 

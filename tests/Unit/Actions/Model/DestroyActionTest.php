@@ -10,6 +10,12 @@ use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
+=======
+uses(TestCase::class)->group('xot');
+it('deletes model and returns it', function (): void {
+    $mockModel = new class extends BaseModel {
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 it('deletes model and returns it', function (): void {

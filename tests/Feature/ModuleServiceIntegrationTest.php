@@ -7,6 +7,10 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 
 use function Safe\class_uses;
 

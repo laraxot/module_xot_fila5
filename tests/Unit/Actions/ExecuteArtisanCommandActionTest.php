@@ -10,6 +10,20 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+/*
+ * `execute()` un tempo dispacciava anche `Event::dispatch('artisan-command.*',
+ * ...)` (Laravel, server-side), che `ArtisanCommandsManager`/`PassportDashboard`
+ * intercettavano via `#[On(...)]` (Livewire, un bus di eventi separato che
+ * quegli `Event::dispatch()` non possono mai raggiungere) — nessun listener
+ * li riceveva mai davvero, quindi il valore di ritorno di questo metodo è
+ * sempre stato l'unico segnale affidabile di stato/output/esito. Rimossi i
+ * dispatch morti (story-xot-artisan-commands-manager-stuck-running-state);
+ * queste asserzioni ora coprono solo il contratto reale.
+ */
+it('executes allowed artisan command correctly', function (): void {
+>>>>>>> laraxot/dev
 it('executes allowed artisan command correctly', function (): void {
     Event::fake();
     Process::fake([

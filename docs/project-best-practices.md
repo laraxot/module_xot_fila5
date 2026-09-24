@@ -113,6 +113,13 @@ architecture-overview.md
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+analysis-[DATE].md      # date in name (use CHANGELOG.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### 8. DRY Principle
@@ -267,9 +274,19 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -402,6 +419,19 @@ git push origin feature-branch
 ---
 
 **Creato:** 2025-11-04
+<<<<<<< HEAD
 **Versione:** 1.0
 **Autori:** Team Laraxot + AI Claude Process Filosofico
 **Prossimo Review:** Trimestrale o dopo major changes
+=======
+<<<<<<< HEAD
+**Versione:** 1.0
+**Autori:** Team Laraxot + AI Claude Process Filosofico
+**Prossimo Review:** Trimestrale o dopo major changes
+=======
+**Creato:** [DATE]
+**Versione:** 1.0
+**Autori:** Team Laraxot + AI Claude Process Filosofico
+**Prossimo Review:** Trimestrale o dopo major changes
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

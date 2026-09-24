@@ -6,6 +6,9 @@ Sono stati rilevati diversi problemi di struttura delle directory all'interno de
 
 1. **Case Sensitivity Errata**:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
    - **Percorso ERRATO**: `Modules/User/Resources`
    - **Percorso CORRETTO**: `Modules/User/resources`
 
@@ -15,6 +18,7 @@ Sono stati rilevati diversi problemi di struttura delle directory all'interno de
 2. **Posizione Errata del Codice PHP**:
    - **Percorso ERRATO**: `Modules/User/Filament/Widgets`
    - **Percorso CORRETTO**: `Modules/User/app/Filament/Widgets`
+<<<<<<< HEAD
 =======
    - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Resources`
    - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/resources`
@@ -25,6 +29,8 @@ Sono stati rilevati diversi problemi di struttura delle directory all'interno de
 2. **Posizione Errata del Codice PHP**:
    - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets`
    - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament/Widgets`
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Regole Fondamentali
@@ -94,15 +100,21 @@ Per verificare la corretta struttura delle directory nei moduli:
 ```bash
 # Verifica case sensitivity errata
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 find Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
 
 # Verifica codice PHP fuori da app/
 find Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -v "/app/"
+<<<<<<< HEAD
 =======
 find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
 
 # Verifica codice PHP fuori da app/
 find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -v "/app/"
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -113,17 +125,23 @@ find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Filament"
 ```bash
 # Rinomina la directory (su sistemi Linux/Unix)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 mv Modules/User/Resources Modules/User/resources_temp
 mv Modules/User/resources_temp Modules/User/resources
 
 mv Modules/User/Config Modules/User/config_temp
 mv Modules/User/config_temp Modules/User/config
+<<<<<<< HEAD
 =======
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Resources /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp /var/www/html/base_<nome progetto>/laravel/Modules/User/resources
 
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Config /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp /var/www/html/base_<nome progetto>/laravel/Modules/User/config
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -132,15 +150,21 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp /var/www/
 ```bash
 # Crea la directory app se non esiste
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 mkdir -p Modules/User/app/Filament
 
 # Sposta i file nella posizione corretta
 mv Modules/User/Filament/Widgets Modules/User/app/Filament/
+<<<<<<< HEAD
 =======
 mkdir -p /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament
 
 # Sposta i file nella posizione corretta
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament/
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 

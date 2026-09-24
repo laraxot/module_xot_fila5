@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 # User Research: Xot Framework
 
 ## 🔬 Research Goals
@@ -18,6 +21,7 @@ Identify bottlenecks in developer productivity when working with XotBase classes
 ## ✅ Actionable Insights / Next Steps
 - Simplify the `XotBaseServiceProvider` boot process.
 - Improve documentation for the `HasXotTable` trait.
+<<<<<<< HEAD
 =======
 # Xot Module - User Research
 
@@ -107,4 +111,6 @@ Users expect vetted extensions.
 ---
 
 *Last Updated: March 12, 2026*
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

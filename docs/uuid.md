@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 module: theme
 topic: uuid
 canonical: ../../../Themes/docs/shared-components/UUID.txt
@@ -7,11 +8,17 @@ canonical: ../../../Themes/docs/shared-components/UUID.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
 =======
+=======
+>>>>>>> laraxot/dev
 title: 'Uuid'
 module: Xot
 type: reference
 slug: uuid
+<<<<<<< HEAD
 description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models //--------------------------------------------------------'
+=======
+description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models'
+>>>>>>> laraxot/dev
 tags: [migrato-da-txt, xot]
 converted_from: _uuid.txt
 created: 2026-08-24
@@ -21,4 +28,7 @@ updated: 2026-08-24
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

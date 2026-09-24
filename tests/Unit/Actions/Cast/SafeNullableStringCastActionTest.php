@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeNullableStringCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -16,7 +19,11 @@ it('casts nullable string values consistently', function (): void {
     Assert::assertSame('1', $action->execute(true));
     Assert::assertNull($action->execute(null));
     Assert::assertNull($action->execute([]));
+<<<<<<< HEAD
     Assert::assertNull($action->execute(new stdClass));
+=======
+    Assert::assertNull($action->execute(new stdClass()));
+>>>>>>> laraxot/dev
 });
 
 it('uses static nullable string cast method correctly', function (): void {

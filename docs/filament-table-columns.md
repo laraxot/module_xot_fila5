@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Regola Generale: Metodo getTableColumns per Filament Table (Xot)"
 module: "Xot"
@@ -11,6 +14,9 @@ qmd: "filament table columns"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
@@ -43,7 +49,11 @@ public function getTableColumns(): array
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
+=======
+- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
+>>>>>>> laraxot/dev
 =======
 - [Esempio e Applicazione - Modulo User](filament_table_columns.md)
 >>>>>>> laraxot/dev

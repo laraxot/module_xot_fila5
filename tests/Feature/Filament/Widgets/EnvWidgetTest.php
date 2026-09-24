@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Section;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Filament\Widgets\EnvWidget;
 use Tests\TestCase;
@@ -124,7 +128,11 @@ it('groups fields into General/SMS/Mail sections and keeps every selected field 
 
     expect($schema)->toHaveCount(3);
     foreach ($schema as $component) {
+<<<<<<< HEAD
         expect($component)->toBeInstanceOf(\Filament\Schemas\Components\Section::class);
+=======
+        expect($component)->toBeInstanceOf(Section::class);
+>>>>>>> laraxot/dev
     }
 });
 
@@ -139,7 +147,11 @@ it('does not drop a field that is selected but missing from the GROUPS map', fun
     // resta comunque una Section (nessun campo sparisce fuori dal gruppo
     // mappato in GROUPS).
     expect($schema)->toHaveCount(1);
+<<<<<<< HEAD
     expect($schema[0])->toBeInstanceOf(\Filament\Schemas\Components\Section::class);
+=======
+    expect($schema[0])->toBeInstanceOf(Section::class);
+>>>>>>> laraxot/dev
 });
 
 it('resolves field labels and section headings from the translation file, not from hardcoded strings', function (): void {

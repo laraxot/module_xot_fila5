@@ -3,6 +3,17 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    'label' => 'Export Xls',
+    'plural_label' => 'Export Xls',
+    'icon' => 'xot-files.xls',
+    'tooltip' => 'Export Excel (XLS)',
+    'actions' => [
+        'export_xls' => [
+            'label' => 'Export Excel',
+            'icon' => 'xot-files.xls',
+>>>>>>> laraxot/dev
     'actions' => [
         'export_xls' => [
             'label' => 'Export Excel',
@@ -27,6 +38,15 @@ return [
         ],
     ],
     'navigation' => [
+<<<<<<< HEAD
+=======
+        'label' => 'Export Xls',
+        'plural_label' => 'Export Xls',
+        'group' => 'General',
+        'icon' => 'xot-files.xls',
+        'sort' => 100,
+    ],
+>>>>>>> laraxot/dev
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',

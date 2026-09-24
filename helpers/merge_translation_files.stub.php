@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 /**
  * Stub file for PHPStan static analysis of merge_translation_files function.
  * This file provides the function signature for static analysis.

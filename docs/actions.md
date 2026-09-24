@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -92,4 +93,7 @@ execute(array $array1, array $array2): array
 =======
 
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev

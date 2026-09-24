@@ -24,7 +24,10 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
     public function getInfolistSchema(): array
     {
         return [
@@ -47,11 +50,19 @@ class LogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [

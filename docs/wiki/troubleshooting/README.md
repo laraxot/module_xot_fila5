@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 # Xot
@@ -38,6 +39,8 @@ Core module for the FixCity Platform.
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Readme"
 type: reference
@@ -54,6 +57,7 @@ updated: 2026-08-24
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< HEAD
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -72,6 +76,8 @@ updated: 2026-08-24
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+=======
+>>>>>>> laraxot/dev
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -101,6 +107,7 @@ updated: 2026-08-24
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -140,4 +147,6 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

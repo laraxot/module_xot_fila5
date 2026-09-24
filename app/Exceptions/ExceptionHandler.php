@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://dev.to/jackmiras/laravels-exceptions-part-2-custom-exceptions-1367
  */
@@ -18,6 +22,11 @@ class ExceptionHandler
     /**
      * Configura la gestione delle eccezioni.
      *
+<<<<<<< HEAD
+=======
+     *
+     * @param Exceptions $exceptions Configuratore eccezioni Laravel
+>>>>>>> laraxot/dev
      * @param Exceptions $exceptions Configuratore eccezioni Laravel
      */
     public static function handles(Exceptions $exceptions): void

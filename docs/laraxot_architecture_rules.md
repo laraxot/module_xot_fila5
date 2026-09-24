@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: laraxot_architecture_rules
@@ -13,6 +14,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCH
 
 <!-- Merged from LARAXOT_ARCHITECTURE_RULES.md, which collided with this file on case-insensitive filesystems. -->
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot
@@ -62,7 +65,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -277,7 +284,11 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -378,6 +389,7 @@ BadgeColumn::make('status')
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 
 
+<<<<<<< HEAD
 ---
 
 ## Contenuto assorbito da `LARAXOT_ARCHITECTURE_RULES.md`
@@ -747,4 +759,6 @@ BadgeColumn::make('status')
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -15,6 +15,14 @@ use Spatie\LaravelData\Data;
 class OptionData extends Data
 {
     /**
+<<<<<<< HEAD
+=======
+     * @param  string  $cache_driver  Driver per la cache delle opzioni
+     * @param  bool  $enable_cache  Se abilitare la cache delle opzioni
+     * @param  int  $cache_ttl  TTL cache in secondi
+     * @param  string  $prefix  Prefisso per le chiavi delle opzioni
+     * @param  list<string>  $autoload  Opzioni da caricare automaticamente
+>>>>>>> laraxot/dev
      * @param string       $cache_driver Driver per la cache delle opzioni
      * @param bool         $enable_cache Se abilitare la cache delle opzioni
      * @param int          $cache_ttl    TTL cache in secondi

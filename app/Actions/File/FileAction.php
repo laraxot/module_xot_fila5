@@ -41,10 +41,18 @@ class FileAction
                 return __DIR__.'/../../..';
             }
 
+<<<<<<< HEAD
             $files = scandir($modulesPath);
             $module_path = collect($files)
                 ->filter(
                     fn (mixed $item): bool => is_string($item) && Str::lower($item) === Str::lower($moduleName)
+=======
+            /** @var array<int, string> $files */
+            $files = scandir($modulesPath);
+            $module_path = collect($files)
+                ->filter(
+                    fn (string $item): bool => Str::lower($item) === Str::lower($moduleName)
+>>>>>>> laraxot/dev
                 )->first();
             $module_path = base_path('Modules/'.(is_string($module_path) ? $module_path : ''));
         }

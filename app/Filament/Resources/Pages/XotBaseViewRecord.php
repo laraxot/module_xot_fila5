@@ -8,11 +8,36 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
 use Filament\Resources\Pages\ViewRecord as FilamentViewRecord;
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
+>>>>>>> laraxot/dev
 
 abstract class XotBaseViewRecord extends FilamentViewRecord
 {
     use HasFiltersForm;
 
+<<<<<<< HEAD
+=======
+    final public function infolist(Schema $schema): Schema
+    {
+        return $schema->components($this->getInfolistSchema());
+    }
+
+    /**
+     * Restituisce lo schema dell'infolist per la visualizzazione dei dettagli del record.
+     * Default vuoto: le View concrete dovrebbero override-are (spesso via `*Infolist`).
+     * Non astratto: i merge sync possono togliere gli override e un abstract blocca tutto il bootstrap.
+     *
+     * @return array<string, Component>
+     */
+    protected function getInfolistSchema(): array
+    {
+        return [];
+    }
+
+>>>>>>> laraxot/dev
     /**
      * Get the header actions.
      *
