@@ -8,6 +8,7 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
 use Webmozart\Assert\Assert;
 

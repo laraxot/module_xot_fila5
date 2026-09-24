@@ -9,8 +9,7 @@ use Modules\Xot\Actions\File\CreateDirectoryForFilenameAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall (vedi
 // @param-closure-this in vendor/pestphp/pest/src/Functions.php), non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var,
