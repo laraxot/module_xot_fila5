@@ -1,6 +1,7 @@
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-01-18
+<<<<<<< .merge_file_RStkYy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WWr7me
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -785,6 +788,7 @@ TextInput::make('name')
 
 ---
 
+<<<<<<< .merge_file_RStkYy
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
@@ -798,3 +802,6 @@ TextInput::make('name')
 =======
 **Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
+>>>>>>> .merge_file_WWr7me

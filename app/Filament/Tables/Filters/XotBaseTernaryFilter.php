@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Tables\Filters;
 
+<<<<<<< .merge_file_JX2QGD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,11 +12,14 @@ namespace Modules\Xot\Filament\Tables\Filters;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ElMD61
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
+<<<<<<< .merge_file_JX2QGD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * Ternary 
@@ -55,12 +59,16 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  * Ternary 
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+ * Ternary
+>>>>>>> .merge_file_ElMD61
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< .merge_file_JX2QGD
 <<<<<<< HEAD
 <<<<<<< HEAD
         /*
@@ -96,6 +104,12 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
             return [
                 ToggleButtons::make('value')
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        /*
+        $this->schema(function (): array {
+            return [
+                ToggleButtons::make('value')
+>>>>>>> .merge_file_ElMD61
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -106,12 +120,16 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         1 => 'success',
                         0 => 'danger',
                     ])
+<<<<<<< .merge_file_JX2QGD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_ElMD61
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
         */
+<<<<<<< .merge_file_JX2QGD
 =======
 <<<<<<< .merge_file_zj90Sv
 =======
@@ -138,5 +156,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         */
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ElMD61
     }
 }

@@ -40,6 +40,7 @@ class GetCurrentRouteViewAction
 
         return collect(explode('\\', $controller))
             ->reject(static fn (string $part): bool => in_array($part, ['Module', 'Item'], true))
+<<<<<<< .merge_file_0cew4E
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,11 +65,14 @@ class GetCurrentRouteViewAction
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_d0QRgD
             ->map(static function (string $part) use ($params): string {
                 $part = Str::snake($part);
                 $value = $params[$part] ?? $part;
 
                 return is_scalar($value) || $value instanceof \Stringable ? (string) $value : $part;
+<<<<<<< .merge_file_0cew4E
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -80,6 +84,8 @@ class GetCurrentRouteViewAction
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_d0QRgD
             })
             ->implode('.');
     }

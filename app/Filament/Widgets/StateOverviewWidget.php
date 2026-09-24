@@ -34,9 +34,14 @@ class StateOverviewWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
     /** @var view-string */
+<<<<<<< .merge_file_p9qZoE
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
     protected string $view = 'xot::filament.widgets.state-overview';
+=======
+    /** @var view-string */
+    protected string $view;
+>>>>>>> .merge_file_ZUcq2q
 
     /**
      * Occupa tutta la larghezza disponibile.
@@ -80,6 +85,7 @@ class StateOverviewWidget extends XotBaseSchemaWidget
 
             return $cacheKey;
         } catch (\Error $e) {
+<<<<<<< .merge_file_p9qZoE
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($this->cacheKey === '') {
@@ -89,6 +95,9 @@ class StateOverviewWidget extends XotBaseSchemaWidget
 =======
             if ('' === $this->cacheKey) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($this->cacheKey === '') {
+>>>>>>> .merge_file_ZUcq2q
                 $this->cacheKey = Str::uuid()->toString();
             }
 

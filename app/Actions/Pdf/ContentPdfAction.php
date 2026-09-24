@@ -27,8 +27,11 @@ class ContentPdfAction
     /**
      * Genera contenuto PDF dall'HTML fornito.
      *
+<<<<<<< .merge_file_yTwnfY
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_224bdz
      * @param  string|null  $html  Contenuto HTML da convertire
      * @param  string|null  $view  Nome della vista Blade da renderizzare
      * @param  array<string, mixed>|null  $data  Dati da passare alla vista
@@ -36,6 +39,7 @@ class ContentPdfAction
      * @return string Contenuto binario del PDF
      *
      * @throws \Exception Se la vista non esiste
+<<<<<<< .merge_file_yTwnfY
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -51,6 +55,8 @@ class ContentPdfAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_224bdz
      */
     public function execute(
         ?string $html = null,
@@ -59,6 +65,7 @@ class ContentPdfAction
         string $_filename = 'my_doc.pdf',
     ): string {
         // Generate HTML content if view is provided
+<<<<<<< .merge_file_yTwnfY
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($html === null && $view !== null) {
@@ -68,6 +75,9 @@ class ContentPdfAction
 =======
         if (null === $html && null !== $view) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($html === null && $view !== null) {
+>>>>>>> .merge_file_224bdz
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');
             }
@@ -102,8 +112,11 @@ class ContentPdfAction
      *
      * Metodo di convenienza per generare PDF da viste Blade.
      *
+<<<<<<< .merge_file_yTwnfY
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_224bdz
      * @param  string  $view  Nome della vista Blade
      * @param  array  $data  Dati da passare alla vista
      * @param  string  $filename  Nome del file PDF (per riferimento)
@@ -112,6 +125,7 @@ class ContentPdfAction
     /**
      * @param  array<string, mixed>  $data
      */
+<<<<<<< .merge_file_yTwnfY
 =======
      * @param string               $view     Nome della vista Blade
      * @param array<string, mixed> $data     Dati da passare alla vista
@@ -131,6 +145,8 @@ class ContentPdfAction
      * @param array<string, mixed> $data
      */
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_224bdz
     public function fromView(string $view, array $data = [], string $filename = 'document.pdf'): string
     {
         return $this->execute(
@@ -146,6 +162,7 @@ class ContentPdfAction
      *
      * Metodo di convenienza per generare PDF da contenuto HTML.
      *
+<<<<<<< .merge_file_yTwnfY
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $html  Contenuto HTML
@@ -160,6 +177,10 @@ class ContentPdfAction
      * @param string $filename Nome del file PDF (per riferimento)
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string  $html  Contenuto HTML
+     * @param  string  $filename  Nome del file PDF (per riferimento)
+>>>>>>> .merge_file_224bdz
      * @return string Contenuto binario del PDF
      */
     public function fromHtml(string $html, string $filename = 'document.pdf'): string

@@ -11,26 +11,17 @@ declare(strict_types=1);
 <<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Header;
 
-<<<<<<< HEAD
-// Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
-// use Filament\Actions\Action;
-use Filament\Resources\Pages\ListRecords;
-=======
 use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Actions\GetTransKeyAction;
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Pdf\DownloadPdfByViewAction;
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
-=======
 /**
  * Export PDF da lista: icona `xot-files.pdf`, solo icona (tooltip), view
  * `{modulo}::{model}.index.pdf` con RichEditor via `{!! $rating->getTxtHtml() !!}`.
  */
->>>>>>> laraxot/dev
 class ExportPdfAction extends XotBaseAction
 =======
 declare(strict_types=1);
@@ -51,6 +42,7 @@ class ExportPdfAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< .merge_file_qEp0kS
 <<<<<<< HEAD
 <<<<<<< HEAD
         $this->translateLabel()
@@ -58,6 +50,8 @@ class ExportPdfAction extends Action
             //->tooltip(__('xot::actions.export_pdf.tooltip'))
             ->icon('ui-files.pdf')
 =======
+=======
+>>>>>>> .merge_file_BPIyLu
         $this
             ->label('')
             ->iconButton()
@@ -71,12 +65,13 @@ class ExportPdfAction extends Action
                 $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_pdf.tooltip';
                 $translated = __($key);
 
-                if (\is_string($translated) && $translated !== $key && 'export_pdf' !== $translated) {
+                if (\is_string($translated) && $translated !== $key && $translated !== 'export_pdf') {
                     return $translated;
                 }
 
                 return (string) __('xot::export_pdf.tooltip');
             })
+<<<<<<< .merge_file_qEp0kS
 >>>>>>> laraxot/dev
 =======
         $this->translateLabel()
@@ -84,6 +79,8 @@ class ExportPdfAction extends Action
             ->tooltip(__('xot::actions.export_pdf.tooltip'))
             ->icon('ui-files.pdf')
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_BPIyLu
             ->action(static function (ListRecords $livewire) {
                 $filename =
                     class_basename($livewire).
@@ -91,6 +88,7 @@ class ExportPdfAction extends Action
                     collect($livewire->tableFilters)->flatten()->implode('-').
                     '.pdf';
                 $query = $livewire->getFilteredTableQuery();
+<<<<<<< .merge_file_qEp0kS
 <<<<<<< HEAD
 <<<<<<< HEAD
                 if ($query === null) {
@@ -100,6 +98,9 @@ class ExportPdfAction extends Action
 =======
                 if (null === $query) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+                if ($query === null) {
+>>>>>>> .merge_file_BPIyLu
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();

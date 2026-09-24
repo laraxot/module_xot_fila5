@@ -1,6 +1,7 @@
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
+<<<<<<< .merge_file_uESfqL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_XNXCbQ
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -45,6 +48,7 @@
 ### Pattern di Rinomina
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
+<<<<<<< .merge_file_uESfqL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +59,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_XNXCbQ
 ✅ DOPO: nome-file.md
 ```
 
@@ -101,6 +107,7 @@
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_uESfqL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -111,3 +118,5 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_XNXCbQ

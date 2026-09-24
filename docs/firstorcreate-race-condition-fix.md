@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Zvg2Kt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -8,10 +9,13 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4Rmn9J
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  
 **Data**: 2026-01-22
+<<<<<<< .merge_file_Zvg2Kt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -26,6 +30,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4Rmn9J
 
 ## Problema
 
@@ -187,6 +193,7 @@ expect($profileA->id)->toBe($profileB->id);
 
 ## Riferimenti
 
+<<<<<<< .merge_file_Zvg2Kt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -197,6 +204,8 @@ expect($profileA->id)->toBe($profileB->id);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4Rmn9J
 - [Activity Module: firstOrCreate Error Handling](../../Activity/docs/errori/attributerawvalues-null-firstorcreate.md)
 - [User Profile Models: Transaction Patterns](../../User/docs/user-profile-models.md)
 - [Query Safety Principle](../../../docs/operational-rules/query-safety-principle.md)
@@ -204,6 +213,7 @@ expect($profileA->id)->toBe($profileB->id);
 **Versione**: 1.0  
 **Ultimo aggiornamento**: 2026-01-22  
 **Status**: ✅ Completato
+<<<<<<< .merge_file_Zvg2Kt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -222,3 +232,5 @@ expect($profileA->id)->toBe($profileB->id);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4Rmn9J

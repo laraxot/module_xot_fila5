@@ -145,6 +145,7 @@ class YourModel extends BaseModel
 
 ### 5. **Consistency**
 - Same pattern across all models
+<<<<<<< .merge_file_I493dt
 <<<<<<< HEAD
 <<<<<<< HEAD
 - <nome progetto>able code structure
@@ -168,6 +169,9 @@ class YourModel extends BaseModel
 =======
 - <nome progetto>able code structure
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- <nome progetto>able code structure
+>>>>>>> .merge_file_Mf6zrP
 - Easier onboarding for developers
 
 ## Migration Strategy

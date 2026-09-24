@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_S3y3AI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -377,6 +378,8 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vRCdcn
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen
 
 ## Core Philosophy (Filosofia)
@@ -521,6 +524,7 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Inheritance over Composition**: Clear inheritance chains for maintainability
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
+<<<<<<< .merge_file_S3y3AI
 <<<<<<< HEAD
 <<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
@@ -534,3 +538,6 @@ This architecture creates a harmonious system where all components work together
 =======
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
+>>>>>>> .merge_file_vRCdcn

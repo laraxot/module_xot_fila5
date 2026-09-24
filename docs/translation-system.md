@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_9Wxr64
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_YjUc7a
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()
@@ -231,6 +234,7 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md)
+<<<<<<< .merge_file_9Wxr64
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -246,3 +250,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/translation-
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_YjUc7a

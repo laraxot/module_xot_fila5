@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_pzYThd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pee8fQ
 # Architettura Frontend
 
 ## Tecnologie Principali
@@ -109,6 +112,7 @@ $post = Post::findOrFail($id);
 - [Struttura dei Temi](themes-structure.md)
 - [Standard del Codice](code-standards.md)
 - [Regole di Documentazione](documentation-rules.md)
+<<<<<<< .merge_file_pzYThd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -124,3 +128,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/frontend-arc
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pee8fQ

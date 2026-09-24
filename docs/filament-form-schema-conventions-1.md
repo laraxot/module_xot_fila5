@@ -9,15 +9,19 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lA8ykk
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 =======
 =======
@@ -27,6 +31,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lA8ykk
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -44,15 +50,19 @@ public static function getFormSchema(): array
 ```php
 // ❌ ERRATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lA8ykk
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 =======
 =======
@@ -62,6 +72,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lA8ykk
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -134,15 +146,19 @@ class MyResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lA8ykk
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 =======
 =======
@@ -152,6 +168,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lA8ykk
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -167,15 +185,19 @@ class MyResource extends XotBaseResource
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lA8ykk
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_zG3Zkb
 <<<<<<< HEAD
 =======
 =======
@@ -185,6 +207,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lA8ykk
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),
@@ -207,11 +231,8 @@ class MyResource extends XotBaseResource
 - [XotBaseResource](./xot_base_resource.md)
 - [Form Components](./form_components.md)
 - [Form Validation](./form_validation.md)
-<<<<<<< HEAD
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)
-=======
-<<<<<<< HEAD
-- [Filament Best Practices](../../docs/rules/filament_best_practices.md)
+<<<<<<< .merge_file_zG3Zkb
 =======
 - [Filament Best Practices](../../../docs/rules/filament_best_practices.md)
 >>>>>>> laraxot/dev
@@ -222,3 +243,5 @@ class MyResource extends XotBaseResource
 - [Form Validation](./FORM_VALIDATION.md)
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lA8ykk

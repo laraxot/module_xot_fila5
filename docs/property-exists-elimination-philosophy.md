@@ -271,6 +271,7 @@ if (isset($record->email)) {
 - User/Filament/Resources/BaseProfileResource
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
+<<<<<<< .merge_file_Ox3hsV
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Quaeris/Filament (2 file)
@@ -285,6 +286,9 @@ if (isset($record->email)) {
 =======
 - Quaeris/Filament (2 file)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> .merge_file_fu6p99
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -412,6 +416,7 @@ if (method_exists($record, 'getUrl')) {
 | Xot | 12 | High | Alta |
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
+<<<<<<< .merge_file_Ox3hsV
 <<<<<<< HEAD
 <<<<<<< HEAD
 | Quaeris | 2 | Medium | Bassa |
@@ -426,6 +431,9 @@ if (method_exists($record, 'getUrl')) {
 =======
 | Quaeris | 2 | Medium | Bassa |
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> .merge_file_fu6p99
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort
@@ -493,6 +501,7 @@ if (method_exists($record, 'getUrl')) {
 **Status**: 📜 Manifesto Filosofico
 **Revision**: 1.0
 
+<<<<<<< .merge_file_Ox3hsV
 <<<<<<< HEAD
 <<<<<<< HEAD
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
@@ -506,3 +515,6 @@ Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 =======
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+>>>>>>> .merge_file_fu6p99

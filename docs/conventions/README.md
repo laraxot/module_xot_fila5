@@ -1,5 +1,6 @@
 # Convenzioni
 
+<<<<<<< .merge_file_ENJcSm
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_AgO9Un
 Questa cartella contiene le convenzioni di nomenclatura e le regole di stile utilizzate nel progetto.
 
 ## File Contenuti
@@ -24,6 +27,7 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 ## Note
 
+<<<<<<< .merge_file_ENJcSm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -91,11 +95,13 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](bashscripts/project_docs/it/readme.md)
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> .merge_file_AgO9Un
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 ## Collegamenti tra versioni di README.md
->>>>>>> laraxot/dev
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+<<<<<<< .merge_file_ENJcSm
 >>>>>>> laraxot/dev
 =======
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
@@ -103,6 +109,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_AgO9Un
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -133,6 +141,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_ENJcSm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -337,6 +346,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 <<<<<<< HEAD
 >>>>>>> .merge_file_HWEz4P
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AgO9Un
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -381,6 +392,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_ENJcSm
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_FTUjAj
@@ -479,3 +491,5 @@ Core module for the FixCity Platform.
 =======
 * [README.md](../../../../Themes/One/docs/README.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_AgO9Un

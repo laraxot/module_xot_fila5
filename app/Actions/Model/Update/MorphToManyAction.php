@@ -27,6 +27,7 @@ class MorphToManyAction
     /**
      * Execute the action to update morphToMany relationships.
      *
+<<<<<<< .merge_file_SIoZ0Z
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -65,6 +66,10 @@ class MorphToManyAction
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  Model  $row  The model instance to update
+     * @param  RelationDTO  $relationDTO  Data transfer object containing relation information
+>>>>>>> .merge_file_ziXjjH
      *
      * @throws \Exception When data is not in correct format or relation is invalid
      */

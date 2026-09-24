@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_tCkZNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +10,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DSextp
 title: 'Todo'
 module: Xot
 type: reference
@@ -16,6 +19,7 @@ slug: todo
 description: "usare userprovider che e' un contratto sulle policy"
 tags: [migrato-da-txt, xot]
 converted_from: todo.txt
+<<<<<<< .merge_file_tCkZNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -40,10 +44,13 @@ converted_from: _todo.txt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DSextp
 created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_tCkZNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,6 +68,11 @@ usare userprovider che e' un contratto sulle policy
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 # _todo
+=======
+usare userprovider che e' un contratto sulle policy
+
+## Da `_todo.txt`
+>>>>>>> .merge_file_DSextp
 
 <!-- Contenuto migrato da _docs/_todo.txt -->
 
@@ -69,6 +81,7 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
+<<<<<<< .merge_file_tCkZNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -79,3 +92,5 @@ https://github.com/spatie/laravel-health
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_DSextp

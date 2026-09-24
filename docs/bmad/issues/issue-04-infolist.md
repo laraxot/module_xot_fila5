@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ozpW5f
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oCF69N
 # Issue GH #04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

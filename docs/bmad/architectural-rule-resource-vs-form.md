@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_kJMKkU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2u8eR1
 # BMAD Story 25 — Regola architetturale: XotBaseResource vs XotBaseResourceForm
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

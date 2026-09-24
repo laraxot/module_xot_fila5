@@ -303,6 +303,7 @@ Moduli con logica inline complessa:
 ## Collegamenti Documentazione
 
 ### Guide Filosofiche
+<<<<<<< .merge_file_pfPhBH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -318,6 +319,8 @@ Moduli con logica inline complessa:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_EXHpAT
 - [Accessor Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
 - [Philosophy Guide PTVX](../../../docs/philosophy-guide.md)
 
@@ -331,6 +334,7 @@ Moduli con logica inline complessa:
 - [Accessor Audit Cross-Modules](./accessor-audit-cross-modules.md)
 
 ### Implementazioni Modulo
+<<<<<<< .merge_file_pfPhBH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -346,6 +350,8 @@ Moduli con logica inline complessa:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_EXHpAT
 - [Sigma - SchedaTrait](../../Sigma/docs/session-complete-summary.md)
 - [IndennitaCondizioniLavoro - Audit](../../IndennitaCondizioniLavoro/docs/accessor-guard-audit.md)
 
@@ -354,6 +360,7 @@ Moduli con logica inline complessa:
 **Creato**: 2025-01-29
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
+<<<<<<< .merge_file_pfPhBH
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
@@ -367,3 +374,6 @@ Moduli con logica inline complessa:
 =======
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
+>>>>>>> .merge_file_EXHpAT

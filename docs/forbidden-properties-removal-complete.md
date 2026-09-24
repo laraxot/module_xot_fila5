@@ -230,6 +230,7 @@ return [
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_6NlLQ7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -240,3 +241,5 @@ return [
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_9mhAWQ

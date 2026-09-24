@@ -128,15 +128,19 @@ return [
 ```php
 // ✅ CORRECT
 <<<<<<< HEAD
+<<<<<<< .merge_file_yQIBMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HdnErK
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yQIBMX
 <<<<<<< HEAD
 =======
 =======
@@ -146,6 +150,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HdnErK
 {
     return [
         'name' => TextInput::make('name'),
@@ -155,15 +161,19 @@ public static function getFormSchema(): array
 
 // ❌ WRONG
 <<<<<<< HEAD
+<<<<<<< .merge_file_yQIBMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HdnErK
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yQIBMX
 <<<<<<< HEAD
 =======
 =======
@@ -173,6 +183,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HdnErK
 {
     return [
         TextInput::make('name')->label('Nome'),
@@ -373,6 +385,7 @@ This document outlines the best practices for maintaining high code quality with
 - Update this document if new tools or standards for code quality are introduced.
 
 ## Links to Related Documentation
+<<<<<<< .merge_file_yQIBMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -392,21 +405,27 @@ This document outlines the best practices for maintaining high code quality with
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HdnErK
 - [Xot Base Classes](../Xot/project_docs/XOT_BASE_CLASSES.md)
 - [Filament Extension Pattern](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN.md)
 - [Filament Extension Pattern Analysis](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Namespace Conventions](../../Patient/project_docs/NAMESPACE_CONVENTIONS.md)
 - [Patient Module - Validation Errors](../../Patient/project_docs/VALIDATION_ERRORS.md)
+<<<<<<< .merge_file_yQIBMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HdnErK
 - [PHP Strict Types](php-strict-types.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
+<<<<<<< .merge_file_yQIBMX
 <<<<<<< HEAD
 =======
 =======
@@ -422,3 +441,5 @@ This document outlines the best practices for maintaining high code quality with
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HdnErK

@@ -6,6 +6,7 @@
 
 ### Collegamenti
 - [Azioni Organizzativa (Performance)](../../Performance/docs/azioni_organizzativa.md)
+<<<<<<< .merge_file_7siarq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +56,8 @@ class ChatOllamaAction extends QueueableAction {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iZObc9
 
 ## Regole sui Model
 - Nei moduli, i model devono **sempre** estendere `BaseModel` e **mai** direttamente `Model`.
@@ -87,6 +90,7 @@ class ChatOllamaAction extends QueueableAction {
 - [ ] Validazione phpstan e test di regressione
 
 ### Esempio e motivazione
+<<<<<<< .merge_file_7siarq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -101,12 +105,15 @@ class ChatOllamaAction extends QueueableAction {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iZObc9
 - Vedi [Performance/docs/organizzativa-migration-errors.md](../../Performance/docs/organizzativa-migration-errors.md) per esempio pratico, motivazione e memoria storica.
 - Queste regole sono obbligatorie per tutti i moduli che implementano action custom Filament.
 
 ### Collegamenti
 - [Performance: pattern e anti-pattern Action Filament](../../Performance/docs/organizzativa-migration-errors.md)
 - [Indice e collegamenti root](../../../docs/links.md)
+<<<<<<< .merge_file_7siarq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -117,6 +124,8 @@ class ChatOllamaAction extends QueueableAction {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iZObc9
 
 ## Regole sulle colonne delle tabelle Filament
 - Le colonne delle tabelle Filament devono corrispondere esattamente a quelle del modello e della migrazione.
@@ -125,6 +134,7 @@ class ChatOllamaAction extends QueueableAction {
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../Performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../Performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../Performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
+<<<<<<< .merge_file_7siarq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -137,3 +147,5 @@ class ChatOllamaAction extends QueueableAction {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iZObc9

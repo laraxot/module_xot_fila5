@@ -17,6 +17,7 @@ class GuessMorphPivotAction
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
+<<<<<<< .merge_file_lHrjCf
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -50,6 +51,10 @@ class GuessMorphPivotAction
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string|class-string<Model>  $related  The related model class name
+     * @param  string|class-string<Model>  $class  The class
+>>>>>>> .merge_file_N4y0F7
      */
     public function execute(string $related, string $class): MorphPivot
     {

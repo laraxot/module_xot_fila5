@@ -12,6 +12,7 @@ return [
     'actions' => [
         'export_xls' => [
             'label' => 'Excel exportieren',
+<<<<<<< .merge_file_aT955E
 <<<<<<< HEAD
 <<<<<<< HEAD
             'icon' => 'heroicon-o-arrow-down-tray',
@@ -21,6 +22,9 @@ return [
 =======
             'icon' => 'heroicon-o-arrow-down-tray',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            'icon' => 'xot-files.xls',
+>>>>>>> .merge_file_YmNzHI
             'tooltip' => 'Daten im Excel-Format (.xlsx) exportieren',
             'placeholder' => 'Nach Excel exportieren',
             'help' => 'Aktuelle Daten im Excel-Format für Offline-Analyse herunterladen',
@@ -44,6 +48,7 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
+<<<<<<< .merge_file_aT955E
 <<<<<<< HEAD
 <<<<<<< HEAD
         'icon' => 'heroicon-o-puzzle-piece',
@@ -53,6 +58,9 @@ return [
 =======
         'icon' => 'heroicon-o-puzzle-piece',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        'icon' => 'xot-files.xls',
+>>>>>>> .merge_file_YmNzHI
         'sort' => 100,
     ],
     'label' => 'Missing Label',

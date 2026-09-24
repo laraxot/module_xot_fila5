@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_VssF6m
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,6 +11,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_IpmM1G
 ---
 name: phpstan-fixes-2025-01-06
 description: " Errori Risolti"
@@ -17,6 +20,7 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_VssF6m
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +40,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_IpmM1G
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

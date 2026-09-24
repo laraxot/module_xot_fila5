@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_0LGLAt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +17,8 @@ https://github.com/christophrumpel/larastreamers/tree/main/resources/views
 =======
 >>>>>>> .merge_file_lHt7I9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_LXXxk7
 ---
 title: 'theme_livewire'
 module: Xot
@@ -34,6 +37,7 @@ updated: 2026-08-24
 
 componenti da prendere
 https://github.com/christophrumpel/larastreamers/tree/main/resources/views
+<<<<<<< .merge_file_0LGLAt
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_krh3XC
@@ -53,3 +57,5 @@ https://github.com/christophrumpel/larastreamers/tree/main/resources/views
 componenti da prendere
 https://github.com/christophrumpel/larastreamers/tree/main/resources/views
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LXXxk7

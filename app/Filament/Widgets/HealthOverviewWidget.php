@@ -34,6 +34,7 @@ class HealthOverviewWidget extends BaseWidget
         $stats = [];
 
         $checkResults = app(ResultStore::class)->latestResults();
+<<<<<<< .merge_file_yt6J2E
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($checkResults === null) {
@@ -43,6 +44,9 @@ class HealthOverviewWidget extends BaseWidget
 =======
         if (null === $checkResults) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($checkResults === null) {
+>>>>>>> .merge_file_TIx8fT
             return $stats;
         }
         foreach ($checkResults->storedCheckResults as $result) {

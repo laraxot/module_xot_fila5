@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_5ptn5m
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_DQmvqo
 use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
@@ -29,6 +32,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
+<<<<<<< .merge_file_5ptn5m
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
@@ -42,6 +46,9 @@ use function Safe\file_get_contents;
 =======
 /**
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+/**
+>>>>>>> .merge_file_DQmvqo
  * Guardia meccanica contro due regressioni avvenute nello stesso giorno
  * (2026-09-11):
  *

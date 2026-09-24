@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Hrvgoy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_urcUGk
 use Modules\Xot\Actions\Url\IsValidUrlAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

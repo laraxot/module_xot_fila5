@@ -14,8 +14,11 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
+<<<<<<< .merge_file_XJcAqH
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_KHYIhw
 use Sushi\Sushi;
 
 use function Safe\json_encode;
@@ -32,6 +35,7 @@ use function Safe\json_encode;
  * @property int|null $priority
  * @property string|null $path
  * @property string|null $icon
+<<<<<<< .merge_file_XJcAqH
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -54,19 +58,15 @@ use Sushi\Sushi;
  * @property string|null                  $path
  * @property string|null                  $icon
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KHYIhw
  * @property array<array-key, mixed>|null $colors
  * @property array<array-key, mixed>|null $dependencies
  * @property array<array-key, mixed>|null $config
  * @property array<array-key, mixed>|null $metadata
-<<<<<<< HEAD
  * @property Carbon|null $activation_date
  * @property Carbon|null $deactivation_date
  * @property Carbon|null $installation_date
-=======
- * @property Carbon|null                  $activation_date
- * @property Carbon|null                  $deactivation_date
- * @property Carbon|null                  $installation_date
->>>>>>> laraxot/dev
  * @property array<array-key, mixed>|null $update_history
 =======
  * @property int                             $id
@@ -187,13 +187,17 @@ final class Module extends BaseModel
 
     public function isEnabled(): bool
     {
+<<<<<<< .merge_file_XJcAqH
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_KHYIhw
         if ($this->enabled !== null) {
             return (bool) $this->enabled;
         }
 
         if ($this->status !== null) {
+<<<<<<< .merge_file_XJcAqH
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -206,6 +210,8 @@ final class Module extends BaseModel
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_KHYIhw
             return (bool) $this->status;
         }
 

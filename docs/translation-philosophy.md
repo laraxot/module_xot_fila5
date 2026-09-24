@@ -116,6 +116,7 @@ grep -A 10 "'navigation' =>" Modules/*/lang/it/*.php | grep -E "(label|group|ico
 **Modulo**: User
 **File corretti**: 11 file con traduzioni `.navigation` sistemate
 **Documentazione**: [User/docs/navigation-translations-fixes-january-2026.md](../../User/docs/navigation-translations-fixes-january-2026.md)
+<<<<<<< .merge_file_nJJNxQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -128,6 +129,8 @@ grep -A 10 "'navigation' =>" Modules/*/lang/it/*.php | grep -E "(label|group|ico
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2eCDiL
 
 ### Automated Fixes
 When you find `.navigation` placeholders:
@@ -167,6 +170,7 @@ When creating a new module:
 ---
 
 **Maintained by**: Xot Module (Core Laraxot Engine)
+<<<<<<< .merge_file_nJJNxQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Last Updated**: 2025-11-17
@@ -180,3 +184,6 @@ When creating a new module:
 =======
 **Last Updated**: 2025-11-17
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Last Updated**: 2025-11-17
+>>>>>>> .merge_file_2eCDiL

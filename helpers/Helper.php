@@ -17,6 +17,7 @@ use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Webmozart\Assert\Assert;
@@ -24,10 +25,14 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> .merge_file_aP6Mgv
 
 use function Safe\define;
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -38,6 +43,8 @@ use Webmozart\Assert\Assert;
 use Webmozart\Assert\Assert;
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aP6Mgv
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {
@@ -93,6 +100,7 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (Request::segment(2) === 'admin') {
@@ -102,11 +110,15 @@ if (! function_exists('inAdmin')) {
 =======
         if ('admin' === Request::segment(2)) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (Request::segment(2) === 'admin') {
+>>>>>>> .merge_file_aP6Mgv
             return true;
         }
 
         $segments = Request::segments();
 
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
         return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
@@ -116,11 +128,15 @@ if (! function_exists('inAdmin')) {
 =======
         return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
+>>>>>>> .merge_file_aP6Mgv
     }
 }
 
 if (! function_exists('params2ContainerItem')) {
     /**
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>|null  $params
@@ -132,10 +148,14 @@ if (! function_exists('params2ContainerItem')) {
      * @param array<string, mixed>|null $params
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>|null  $params
+>>>>>>> .merge_file_aP6Mgv
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($params === null) {
@@ -145,6 +165,9 @@ if (! function_exists('params2ContainerItem')) {
 =======
         if (null === $params) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($params === null) {
+>>>>>>> .merge_file_aP6Mgv
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -188,6 +211,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
             return $id === null ? null : (string) $id;
@@ -197,6 +221,9 @@ if (! function_exists('authId')) {
 =======
             return null === $id ? null : (string) $id;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            return $id === null ? null : (string) $id;
+>>>>>>> .merge_file_aP6Mgv
         } catch (Throwable $e) {
             return null;
         }
@@ -213,6 +240,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
             $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
@@ -222,6 +250,9 @@ if (! function_exists('trans_string')) {
 =======
             $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
+>>>>>>> .merge_file_aP6Mgv
         }
 
         $result = __($key, $safeReplace, $locale);
@@ -259,6 +290,7 @@ if (! function_exists('actingAs')) {
 
 if (! function_exists('get')) {
     /**
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $options
@@ -270,6 +302,9 @@ if (! function_exists('get')) {
      * @param array<string, mixed> $options
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $options
+>>>>>>> .merge_file_aP6Mgv
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
@@ -280,15 +315,13 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_aP6Mgv
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $options
-=======
-     * @param array<string, mixed> $data
-     * @param array<string, mixed> $options
-     *
->>>>>>> laraxot/dev
      * @return TestResponse<Response>
      */
     function post(string $uri, array $data = [], array $options = []): TestResponse
@@ -306,13 +339,12 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  array<string, mixed>  $data
 =======
-     * @param array<string, mixed> $data
-     *
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_aP6Mgv
+     * @param  array<string, mixed>  $data
      * @return TestResponse<Response>
      */
     function put(string $uri, array $data = []): TestResponse
@@ -328,13 +360,12 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  array<string, mixed>  $data
 =======
-     * @param array<string, mixed> $data
-     *
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_aP6Mgv
+     * @param  array<string, mixed>  $data
      * @return TestResponse<Response>
      */
     function patch(string $uri, array $data = []): TestResponse
@@ -388,6 +419,7 @@ if (! function_exists('followingRedirects')) {
     }
 }
 
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -413,17 +445,23 @@ if (! function_exists('describe')) {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aP6Mgv
 if (! function_exists('xotSeedModelOnce')) {
     /**
      * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
      *
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_aP6Mgv
      * @param  class-string<Model>  $modelClass
      */
     function xotSeedModelOnce(string $modelClass): void
     {
         (new GetFactoryAction)
+<<<<<<< .merge_file_TTqLaa
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -436,10 +474,13 @@ if (! function_exists('xotSeedModelOnce')) {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aP6Mgv
             ->execute($modelClass)
             ->createOne();
     }
 }
+<<<<<<< .merge_file_TTqLaa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -520,3 +561,5 @@ if (! function_exists('merge_translation_files')) {
     }
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aP6Mgv

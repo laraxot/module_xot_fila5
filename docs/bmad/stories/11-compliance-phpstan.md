@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Yq9owq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_susFvL
 # BMAD Story 11 — Compliance: 18 errori PHPStan
 
 **Modulo:** `Compliance`

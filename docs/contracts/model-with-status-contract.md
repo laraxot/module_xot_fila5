@@ -86,6 +86,7 @@ $latestStatus = $order->latestStatus();
 - [Status Management](../features/STATUS-MANAGEMENT.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+<<<<<<< .merge_file_JjbfR5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -101,3 +102,5 @@ $latestStatus = $order->latestStatus();
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_sAvy5g

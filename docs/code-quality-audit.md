@@ -1,6 +1,7 @@
 # Code Quality Audit Completo - Gennaio 2025
 
 **Data**: 2025-01-22
+<<<<<<< .merge_file_AeRHBp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_qyPNwj
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -36,6 +39,7 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 
 ### ✅ Completati
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
+<<<<<<< .merge_file_AeRHBp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -46,6 +50,8 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_qyPNwj
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%
@@ -113,6 +119,7 @@ Ogni modulo dovrebbe avere:
 - La documentazione viene aggiornata costantemente durante l'analisi
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
+<<<<<<< .merge_file_AeRHBp
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-22*
@@ -126,3 +133,6 @@ Ogni modulo dovrebbe avere:
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> .merge_file_qyPNwj

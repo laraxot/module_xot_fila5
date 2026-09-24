@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_2giQxN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Sdgam0
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\Theme\GetThemeAction;
 use Modules\Xot\Actions\Theme\GetThemePathAction;

@@ -98,15 +98,19 @@ final class TeamUserResource extends XotBaseResource
 
     // ✅ SOLO getFormSchema() e metodi table* se necessario
 <<<<<<< HEAD
+<<<<<<< .merge_file_8QA8ho
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ESP3Sf
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8QA8ho
 <<<<<<< HEAD
 =======
 =======
@@ -116,6 +120,8 @@ final class TeamUserResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ESP3Sf
     {
         return [
             // Schema del form
@@ -195,6 +201,7 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 
 **Data Decisione**: Gennaio 2026  
 **Vincitore Dibattito**: Posizione B - Centralizzazione Totale  
+<<<<<<< .merge_file_8QA8ho
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Conforme a**: DRY, KISS, Filosofia Laraxot
@@ -208,3 +215,6 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 =======
 **Conforme a**: DRY, KISS, Filosofia Laraxot
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Conforme a**: DRY, KISS, Filosofia Laraxot
+>>>>>>> .merge_file_ESP3Sf

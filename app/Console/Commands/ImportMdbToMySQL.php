@@ -89,6 +89,7 @@ class ImportMdbToMySQL extends Command
     /**
      * Importa le tabelle in MySQL.
      *
+<<<<<<< .merge_file_8BbIuV
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -119,6 +120,9 @@ class ImportMdbToMySQL extends Command
 =======
      * @param array<int, string> $tables
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<int, string>  $tables
+>>>>>>> .merge_file_FRl2AH
      */
     private function importTablesIntoMySQL(array $tables, string $mysqlDb): void
     {

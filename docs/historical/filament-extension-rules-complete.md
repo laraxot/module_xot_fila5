@@ -290,6 +290,7 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
  * @return array<int, Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_vWR6wT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -300,10 +301,13 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z7U3fV
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_vWR6wT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -316,6 +320,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z7U3fV
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -500,6 +506,7 @@ class UserResource extends XotBaseResource
      * @return array<int, Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_vWR6wT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -510,10 +517,13 @@ class UserResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z7U3fV
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_vWR6wT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -526,6 +536,8 @@ class UserResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z7U3fV
     {
         return [
             TextInput::make('name')->required(),

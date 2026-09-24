@@ -12,6 +12,7 @@ use Spatie\QueueableAction\QueueableAction;
 class UrlAction
 {
     use QueueableAction;
+<<<<<<< .merge_file_Ve5rY8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,10 +40,13 @@ class UrlAction
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_RCKXMA
 
     private static ?self $instance = null;
 
     public function __construct() {}
+<<<<<<< .merge_file_Ve5rY8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -53,10 +57,13 @@ class UrlAction
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_RCKXMA
 
     public static function getInstance(): self
     {
         if (! self::$instance instanceof self) {
+<<<<<<< .merge_file_Ve5rY8
 <<<<<<< HEAD
 <<<<<<< HEAD
             self::$instance = new self;
@@ -80,6 +87,9 @@ class UrlAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            self::$instance = new self;
+>>>>>>> .merge_file_RCKXMA
         }
 
         return self::$instance;
@@ -92,6 +102,7 @@ class UrlAction
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< .merge_file_Ve5rY8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -119,10 +130,13 @@ class UrlAction
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_RCKXMA
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
     }
 
     public function execute(): void {}
+<<<<<<< .merge_file_Ve5rY8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -133,4 +147,6 @@ class UrlAction
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_RCKXMA
 }

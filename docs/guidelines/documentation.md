@@ -176,6 +176,7 @@ php artisan api:generate
 
 ## Collegamenti
 
+<<<<<<< .merge_file_UkWJT3
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Convenzioni di Codice](README.md)
@@ -192,6 +193,9 @@ php artisan api:generate
 - [Best Practices](../best-practices/README.md)
 - [Convenzioni di Codice](../conventions/readme.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Convenzioni di Codice](README.md)
+>>>>>>> .merge_file_Lj9PnG
 - [Architettura](../architecture/readme.md)
 - [Best Practices](../best-practices/readme.md)
 - [Markdown Guide](https://www.markdownguide.org)

@@ -276,6 +276,7 @@ Eccezioni rare:
 - [git-conflicts-mal-risolti.md](./git-conflicts-mal-risolti.md)
 - [../../bashscripts/docs/file-locking-pattern.md](../../../bashscripts/docs/file-locking-pattern.md)
 - [../../User/docs/syntax-errors-to-fix.md](../../User/docs/syntax-errors-to-fix.md)
+<<<<<<< .merge_file_6F5y7u
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -294,3 +295,6 @@ Eccezioni rare:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
+>>>>>>> .merge_file_Kadd02

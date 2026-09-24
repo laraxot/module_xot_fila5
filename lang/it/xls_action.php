@@ -31,6 +31,7 @@ return [
         ],
         'label' => 'Xls Action',
         'sort' => 1,
+<<<<<<< .merge_file_FgP54R
 <<<<<<< HEAD
 <<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
@@ -40,6 +41,9 @@ return [
 =======
         'icon' => 'heroicon-o-collection',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        'icon' => 'xot-files.xls',
+>>>>>>> .merge_file_ixAXw1
     ],
     'fields' => [
         'id' => [

@@ -11,6 +11,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
+<<<<<<< .merge_file_mGT42L
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_BLt6ry
   - ../log.md
 ---
 

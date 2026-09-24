@@ -350,11 +350,14 @@ Questi file devono essere:
 
 ---
 
+<<<<<<< .merge_file_kA3zvP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_anAsZp
 ## Regressione e ri-bonifica 2026-07-06
 
 Le cartelle root PascalCase erano tornate (probabile merge/copy incidentale
@@ -392,6 +395,7 @@ esserci solo README.md". `CHANGELOG.md` esiste ancora alla root di
 dell'utente, per non perdere contenuto storico senza conferma.
 
 *Ultimo aggiornamento: 2026-07-06*
+<<<<<<< .merge_file_kA3zvP
 <<<<<<< HEAD
 =======
 =======
@@ -401,3 +405,5 @@ dell'utente, per non perdere contenuto storico senza conferma.
 =======
 *Ultimo aggiornamento: 2026-06-18*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_anAsZp

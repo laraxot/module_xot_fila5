@@ -414,6 +414,7 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
+<<<<<<< .merge_file_dmQ0sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -424,6 +425,8 @@ class MyTableWidget extends XotBaseTableWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_oYYh8k
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 # Widget Implementation Rules - Xot Module
@@ -499,6 +502,7 @@ class MyTableWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_dmQ0sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
@@ -513,6 +517,9 @@ namespace Modules\Chart\Filament\Widgets;
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_oYYh8k
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -568,6 +575,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_dmQ0sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
@@ -582,6 +590,9 @@ namespace Modules\Chart\Filament\Widgets;
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_oYYh8k
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -658,6 +669,7 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_dmQ0sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
@@ -672,6 +684,9 @@ namespace Modules\Chart\Filament\Widgets;
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_oYYh8k
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -881,6 +896,7 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
+<<<<<<< .merge_file_dmQ0sh
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -899,3 +915,7 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+>>>>>>> .merge_file_oYYh8k

@@ -114,27 +114,16 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_u1P82k
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_GD0hmk
+>>>>>>> .merge_file_Kv1OLc
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0zKIQB
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array

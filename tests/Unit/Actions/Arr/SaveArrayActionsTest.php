@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_BYyNYV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_da2BUE
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;

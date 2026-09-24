@@ -16,6 +16,7 @@ related:
   - ../../../Fixcity/docs/wiki/overviews/completion-roadmap.md
   - ../../../../Themes/Sixteen/docs/wiki/overviews/completion-roadmap.md
   - ../concepts/phpstan-pest-bridge-discipline.md
+<<<<<<< .merge_file_tUKOYX
 <<<<<<< HEAD
 <<<<<<< HEAD
   - ../phpstan-best-practices.md
@@ -35,6 +36,9 @@ related:
 =======
   - ../PHPSTAN-BEST-PRACTICES.md
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+  - ../phpstan-best-practices.md
+>>>>>>> .merge_file_ppntzT
   - ../../../../../docs/wiki/PHPSTAN-INDEX.md
 ---
 

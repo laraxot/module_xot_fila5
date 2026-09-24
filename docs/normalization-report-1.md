@@ -4,6 +4,7 @@
 
 ### File Eliminati (Duplicati con Date)
 
+<<<<<<< .merge_file_16Lpv4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,11 +12,14 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_sGqrdm
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
 
 2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-2025-01-27.md`**
+<<<<<<< .merge_file_16Lpv4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -29,11 +33,14 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_sGqrdm
    - **Motivo**: Duplicato identico di `bugfix-table-layout-action.md`
    - **Stato**: Eliminato con successo
 
 ### File Rinominati (Rimozione Date)
 
+<<<<<<< .merge_file_16Lpv4
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
@@ -47,6 +54,9 @@
 =======
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
+>>>>>>> .merge_file_sGqrdm
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -97,6 +107,7 @@
 - Altri file con pattern `bugfix-*-2025-*.md`
 
 ### Modulo Lang
+<<<<<<< .merge_file_16Lpv4
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
@@ -114,6 +125,10 @@
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction-2025.md` (verificare duplicati)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
+- `translation-errors-correction-2025.md` (verificare duplicati)
+>>>>>>> .merge_file_sGqrdm
 
 ### Modulo Xot
 - File in cartella `archive/` (valutare se mantenere date per storico)
@@ -149,6 +164,7 @@
 
 ## Riferimenti
 
+<<<<<<< .merge_file_16Lpv4
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
@@ -170,11 +186,17 @@
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
+- [Regole Naming File](../Xot/docs/file-naming-rules.md)
+- [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
+>>>>>>> .merge_file_sGqrdm
 
 ---
 
 **Data**: Gennaio 2025
 **Stato**: In corso
+<<<<<<< .merge_file_16Lpv4
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
@@ -188,3 +210,6 @@
 =======
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+>>>>>>> .merge_file_sGqrdm

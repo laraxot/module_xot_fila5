@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_PrDJeq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_QDY1BM
 title: "Refactor Panelmixin"
 type: concept
 status: deprecated
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [REFACTOR-panelmixin.md](./refactor-panelmixin.md)
+<<<<<<< .merge_file_PrDJeq
 <<<<<<< HEAD
 =======
 =======
@@ -43,3 +47,5 @@ This file is deprecated due to dated filename convention violation.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_QDY1BM

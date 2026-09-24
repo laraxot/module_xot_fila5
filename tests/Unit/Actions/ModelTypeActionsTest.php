@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_tRrlLT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CpSKPt
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
 use Modules\Xot\Actions\GetModelTypeByModelAction;
@@ -33,6 +36,7 @@ it('resolves model types correctly', function (): void {
     Assert::assertSame(Log::class, $classAction->execute('log'));
 
     $typeAction = app(GetModelTypeByModelAction::class);
+<<<<<<< .merge_file_tRrlLT
 <<<<<<< HEAD
 <<<<<<< HEAD
     $result = $typeAction->execute(new class extends Log implements ModelContract {});
@@ -44,5 +48,8 @@ it('resolves model types correctly', function (): void {
     $result = $typeAction->execute(new class extends Log implements ModelContract {
     });
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $result = $typeAction->execute(new class extends Log implements ModelContract {});
+>>>>>>> .merge_file_CpSKPt
     Assert::assertIsString($result);
 });

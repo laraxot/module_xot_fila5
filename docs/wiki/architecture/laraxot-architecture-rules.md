@@ -58,27 +58,16 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_64TdYX
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_rRHrAX
+>>>>>>> .merge_file_wZMtLJ
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0STLdl
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -301,27 +290,16 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_64TdYX
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_rRHrAX
+>>>>>>> .merge_file_wZMtLJ
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0STLdl
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array

@@ -612,6 +612,7 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_aJfTLb
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
@@ -636,6 +637,10 @@ class AlertWidget extends BaseTableWidget
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_kPwb4P
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -643,6 +648,7 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
+<<<<<<< .merge_file_aJfTLb
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Benefici**: ALTI
@@ -656,3 +662,6 @@ class AlertWidget extends BaseTableWidget
 =======
 **Benefici**: ALTI
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Benefici**: ALTI
+>>>>>>> .merge_file_kPwb4P

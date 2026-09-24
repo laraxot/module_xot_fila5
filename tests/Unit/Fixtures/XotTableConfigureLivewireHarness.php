@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Fixtures;
 
 use Filament\Support\Contracts\TranslatableContentDriver;
+<<<<<<< .merge_file_H8hCM2
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Concerns\InteractsWithTable;
@@ -36,11 +37,17 @@ use Filament\Tables\Table;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Filament\Tables\Concerns\InteractsWithTable;
+use Filament\Tables\Contracts\HasTable;
+use Filament\Tables\Table;
+>>>>>>> .merge_file_a5oWo0
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component;
 
 /**
+<<<<<<< .merge_file_H8hCM2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -84,6 +91,8 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_a5oWo0
  * Harness minimo per istanziare {@see Table::make()}.
  */
 final class XotTableConfigureLivewireHarness extends Component implements HasTable
@@ -107,6 +116,7 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
     {
         return Model::query();
     }
+<<<<<<< .merge_file_H8hCM2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -118,4 +128,6 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_a5oWo0
 }

@@ -15,12 +15,16 @@ use Spatie\LaravelData\Data;
 final class AuthData extends Data
 {
     /**
+<<<<<<< .merge_file_7XPJog
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_U6YGv3
      * @param  array<string>  $guards
      * @param  array<string, array<string, string>>  $providers
      * @param  array<string, bool|int|string>  $throttle
      * @param  array<string, bool>  $social
+<<<<<<< .merge_file_7XPJog
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -32,6 +36,8 @@ final class AuthData extends Data
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_U6YGv3
      */
     public function __construct(
         public readonly string $guard = 'web',
@@ -52,6 +58,7 @@ final class AuthData extends Data
             'twitter' => false,
             'github' => false,
         ],
+<<<<<<< .merge_file_7XPJog
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -63,12 +70,16 @@ final class AuthData extends Data
     ) {
     }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_U6YGv3
 
     /**
      * Create a new instance of AuthData with default values.
      */
     public static function make(): self
     {
+<<<<<<< .merge_file_7XPJog
 <<<<<<< HEAD
 <<<<<<< HEAD
         return new self;
@@ -78,5 +89,8 @@ final class AuthData extends Data
 =======
         return new self();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        return new self;
+>>>>>>> .merge_file_U6YGv3
     }
 }

@@ -119,6 +119,7 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 ## Collegamenti Correlati
 
 - [Modulo DbForge](../DbForge/docs/)
+<<<<<<< .merge_file_V0gmQK
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Best Practices Database](../../docs/database-best-practices.md)
@@ -136,6 +137,10 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 - [Best Practices Database](../../docs/database-best-practices.md)
 - [Architettura Moduli](../../docs/module-architecture.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Best Practices Database](../../docs/database-best-practices.md)
+- [Architettura Moduli](../../docs/module-architecture.md)
+>>>>>>> .merge_file_oNuYQ7
 
 ## Note per gli Sviluppatori
 
@@ -154,6 +159,7 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 ---
 
+<<<<<<< .merge_file_V0gmQK
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
@@ -167,3 +173,6 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> .merge_file_oNuYQ7

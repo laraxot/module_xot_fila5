@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_9oZcYp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -6,6 +7,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CUaVdI
 title: Custom Relation
 description: Custom Relation
 extends: _layouts.documentation
@@ -315,6 +318,7 @@ class Person
     }
 }
 ```
+<<<<<<< .merge_file_9oZcYp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -329,3 +333,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/custom-relat
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CUaVdI

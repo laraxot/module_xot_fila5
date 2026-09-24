@@ -58,15 +58,19 @@ class ProductResource extends XotBaseResource
 
     // UNICI metodi che dovrebbero essere implementati
 <<<<<<< HEAD
+<<<<<<< .merge_file_cHOEEe
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ttefKg
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cHOEEe
 <<<<<<< HEAD
 =======
 =======
@@ -76,6 +80,8 @@ class ProductResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ttefKg
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Columns\Column;
@@ -24,11 +25,15 @@ use Filament\Tables\Columns\Column;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Filament\Tables\Columns\Column;
+>>>>>>> .merge_file_fkze7t
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -53,6 +58,8 @@ use PHPUnit\Framework\Assert;
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fkze7t
 function invokeProtectedTableHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -61,6 +68,7 @@ function invokeProtectedTableHook(object $instance, string $method): mixed
 }
 
 test('getTableFiltersLayout default e override', function (): void {
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
     $default = new class
@@ -77,10 +85,15 @@ test('getTableFiltersLayout default e override', function (): void {
     $default = new class
     {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $default = new class
+    {
+>>>>>>> .merge_file_fkze7t
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @return array<string, Column> */
@@ -113,6 +126,11 @@ test('getTableFiltersLayout default e override', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_fkze7t
         {
             return [];
         }
@@ -120,6 +138,7 @@ test('getTableFiltersLayout default e override', function (): void {
 
     Assert::assertSame(FiltersLayout::AboveContent, invokeProtectedTableHook($default, 'getTableFiltersLayout'));
 
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
     $custom = new class
@@ -136,10 +155,15 @@ test('getTableFiltersLayout default e override', function (): void {
     $custom = new class
     {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $custom = new class
+    {
+>>>>>>> .merge_file_fkze7t
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @return array<string, Column> */
@@ -172,6 +196,11 @@ test('getTableFiltersLayout default e override', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_fkze7t
         {
             return [];
         }
@@ -186,6 +215,7 @@ test('getTableFiltersLayout default e override', function (): void {
 });
 
 test('getTableRecordActionsPosition default e override', function (): void {
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
     $default = new class
@@ -202,10 +232,15 @@ test('getTableRecordActionsPosition default e override', function (): void {
     $default = new class
     {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $default = new class
+    {
+>>>>>>> .merge_file_fkze7t
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @return array<string, Column> */
@@ -238,6 +273,11 @@ test('getTableRecordActionsPosition default e override', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_fkze7t
         {
             return [];
         }
@@ -245,6 +285,7 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
     Assert::assertSame(RecordActionsPosition::BeforeColumns, invokeProtectedTableHook($default, 'getTableRecordActionsPosition'));
 
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
     $custom = new class
@@ -261,10 +302,15 @@ test('getTableRecordActionsPosition default e override', function (): void {
     $custom = new class
     {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $custom = new class
+    {
+>>>>>>> .merge_file_fkze7t
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_wax9oN
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @return array<string, Column> */
@@ -297,6 +343,11 @@ test('getTableRecordActionsPosition default e override', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_fkze7t
         {
             return [];
         }

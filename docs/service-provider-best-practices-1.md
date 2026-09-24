@@ -433,6 +433,7 @@ class RouteServiceProvider extends ServiceProvider
 ## Riferimenti
 
 - [Documentazione Ufficiale Laravel Service Provider](https://laravel.com/docs/providers)
+<<<<<<< .merge_file_AtNebx
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [XotBaseServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
@@ -454,3 +455,8 @@ class RouteServiceProvider extends ServiceProvider
 - [XotBaseRouteServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
 - [BaseEventServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [XotBaseServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
+- [XotBaseRouteServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
+- [BaseEventServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+>>>>>>> .merge_file_hSpjIo

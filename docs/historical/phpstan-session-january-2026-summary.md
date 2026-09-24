@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Mt1eqr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -8,6 +9,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LXRO1O
 ---
 title: "Phpstan Session Summary"
 type: concept
@@ -24,6 +27,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-session-summary.md](./phpstan-session-summary.md)
+<<<<<<< .merge_file_Mt1eqr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -319,3 +323,5 @@ Eseguire PHPStan su tutti i moduli, comprendere logica, politica, business logic
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LXRO1O

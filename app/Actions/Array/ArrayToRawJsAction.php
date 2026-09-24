@@ -6,12 +6,16 @@ namespace Modules\Xot\Actions\Array;
 
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_7Ln8QM
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_mMX83y
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_7Ln8QM
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -24,6 +28,8 @@ use Spatie\QueueableAction\QueueableAction;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_mMX83y
 /**
  * Converte un array PHP in RawJs (oggetto JavaScript) sicuro per attributi HTML.
  *
@@ -38,6 +44,7 @@ class ArrayToRawJsAction
     /**
      * Converte l'array in una stringa JavaScript (oggetto letterale) e restituisce RawJs.
      *
+<<<<<<< .merge_file_7Ln8QM
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int|string, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
@@ -47,6 +54,9 @@ class ArrayToRawJsAction
 =======
      * @param array<int|string, mixed> $array Array associativo (anche annidato); valori RawJs restano raw
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<int|string, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
+>>>>>>> .merge_file_mMX83y
      */
     public function execute(array $array): RawJs
     {

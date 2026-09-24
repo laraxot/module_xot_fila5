@@ -102,6 +102,7 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
 
     $body = trim($m[1]);
 
+<<<<<<< .merge_file_KUZBQi
 <<<<<<< HEAD
 <<<<<<< HEAD
     return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
@@ -111,6 +112,9 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
 =======
     return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
+>>>>>>> .merge_file_pQZPS5
 }
 
 test('every concrete filament resource has populated schemas and table classes', function (): void {

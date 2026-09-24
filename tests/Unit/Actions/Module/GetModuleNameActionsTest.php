@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_hMUGYC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_8Id8cm
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelAction;
@@ -42,6 +45,7 @@ it('returns extracted fragment for non-module class signatures', function (): vo
 });
 
 it('delegates model instance class to model class action', function (): void {
+<<<<<<< .merge_file_hMUGYC
 <<<<<<< HEAD
 <<<<<<< HEAD
     $model = new class extends Model
@@ -52,6 +56,10 @@ it('delegates model instance class to model class action', function (): void {
 =======
     $model = new class extends Model {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $model = new class extends Model
+    {
+>>>>>>> .merge_file_8Id8cm
         protected $table = 'test';
     };
     $delegate = Mockery::mock(GetModuleNameByModelClassAction::class);

@@ -253,6 +253,7 @@ class MioModelloResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_PtQ1US
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -279,6 +280,10 @@ class MioModelloResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_nAojLW
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -767,6 +772,7 @@ public function handle($user) {
 
 ### Motivi per utilizzare UserContract
 
+<<<<<<< .merge_file_PtQ1US
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
@@ -806,10 +812,14 @@ public function handle($user) {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
+>>>>>>> .merge_file_nAojLW
 2. **Disaccoppiamento**: Riduce le dipendenze verso implementazioni specifiche.
 3. **Testabilità**: Facilita il testing con implementazioni mock dell'interfaccia.
 4. **Flessibilità**: Consente di estendere o cambiare l'implementazione senza impattare il codice esistente.
 
+<<<<<<< .merge_file_PtQ1US
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -831,6 +841,8 @@ public function handle($user) {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_nAojLW
 **Anti-pattern**: `Assert::isInstanceOf($user, User::class)` (o `BaseUser::class`) accoppia il codice al leaf. Canon:
 
 ```php
@@ -839,6 +851,7 @@ Assert::isInstanceOf($user, UserContract::class);
 
 `UserContract` è `Modules\Xot\Contracts\UserContract`. `getUserClass()` serve per factory/relazioni Eloquent, non per narrowing di `auth()->user()`.
 
+<<<<<<< .merge_file_PtQ1US
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -857,6 +870,8 @@ Assert::isInstanceOf($user, UserContract::class);
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nAojLW
 ### Come ottenere la classe User corretta
 
 Se è necessario ottenere programmaticamente la classe User configurata:
@@ -887,6 +902,7 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< .merge_file_PtQ1US
 <<<<<<< HEAD
 ```
 =======
@@ -919,3 +935,6 @@ public function process(\Modules\User\Models\User $user) {
 ```
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+```
+>>>>>>> .merge_file_nAojLW

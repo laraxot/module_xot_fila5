@@ -21,6 +21,7 @@
 
 ## 🧹 Manutenzione
 - 🗑️ [Cleanup Plan](./cleanup-action-plan.md) - Strategia per consolidare documenti accumulati.
+<<<<<<< .merge_file_uYwKBQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -29,12 +30,15 @@
 <<<<<<< HEAD
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vLm2ax
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - 🔁 [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - UrlService/ThemeService/HtmlService migrati ad Actions; ConfigService/XotService/ArrayService/ProfileTest archiviati in .bak (codice morto); ArtisanService/RouteService/ModuleService/Translators/Trend lasciati intatti per sessione dedicata.
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - ✅ [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - Include la chiusura di HtmlService e la scomposizione di RouteService in Action contestuali con ingresso unico `execute()`.
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - 🔁 [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - UrlService/ThemeService/HtmlService migrati ad Actions; ConfigService/XotService/ArrayService/ProfileTest archiviati in .bak (codice morto); ArtisanService/RouteService/ModuleService/Translators/Trend lasciati intatti per sessione dedicata.
+<<<<<<< .merge_file_uYwKBQ
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_T8QccE
@@ -57,12 +61,15 @@
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - 🔁 [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - UrlService/ThemeService/HtmlService migrati ad Actions; ConfigService/XotService/ArrayService/ProfileTest archiviati in .bak (codice morto); ArtisanService/RouteService/ModuleService/Translators/Trend lasciati intatti per sessione dedicata.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vLm2ax
 
 ## 🔗 Moduli Dipendenti
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< .merge_file_uYwKBQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -148,6 +155,11 @@
 # Xot Module Documentation Index
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+# Xot Module Documentation Index
+
+>>>>>>> .merge_file_vLm2ax
 > **Core Framework Module** - Provides base classes and shared functionality for all modules
 
 ## Roadmap
@@ -156,6 +168,7 @@
 
 ## 📚 Documentation Sections
 
+<<<<<<< .merge_file_uYwKBQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### Composer / dipendenze
@@ -178,10 +191,14 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+### Composer / dipendenze
+>>>>>>> .merge_file_vLm2ax
 
 - [composer-root-skeleton-modular](./wiki/concepts/composer-root-skeleton-modular.md) — root skeleton + merge solo moduli
 - [theme-psr4-autoload-without-merge](./wiki/concepts/theme-psr4-autoload-without-merge.md) — autoload temi senza merge root
 - [Module Dependency Management](./composer-module-dependency-management.md)
+<<<<<<< .merge_file_uYwKBQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
@@ -201,6 +218,9 @@
 - [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
 - [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
+>>>>>>> .merge_file_vLm2ax
 - [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study.md)
 - [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog.md) - Studio completo package-by-package da `composer show`
 - [Database Connection Configuration](./database-configuration-critical-rules.md)
@@ -260,6 +280,7 @@
 
 ## Dependency Intelligence
 
+<<<<<<< .merge_file_uYwKBQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
@@ -278,12 +299,12 @@
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
-- [Dependency intelligence](dependency-intelligence.md)
 =======
+>>>>>>> .merge_file_vLm2ax
 - [Dependency intelligence](dependency-intelligence.md)
->>>>>>> 64619e34 (.)
-=======
 - [Dependency intelligence](dependency-intelligence.md)
+- [Dependency intelligence](dependency-intelligence.md)
+<<<<<<< .merge_file_uYwKBQ
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
@@ -291,3 +312,5 @@
 =======
 - [Dependency intelligence](dependency-intelligence.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vLm2ax

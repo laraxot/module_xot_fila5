@@ -25,6 +25,7 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 ### Moduli Corretti
 - [FormBuilder FieldOption Model](../FormBuilder/docs/phpstan-corrections.md)
 - [Lang Console Commands](../Lang/docs/phpstan-corrections.md)
+<<<<<<< .merge_file_5JqfFy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +37,8 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_n57ras
 
 ## Principi di Correzione
 
@@ -58,6 +61,7 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 
 - [FormBuilder PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 - [Lang PHPStan Corrections](../Lang/docs/phpstan-corrections.md)
+<<<<<<< .merge_file_5JqfFy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -69,6 +73,8 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_n57ras
 - [Xot Architecture](./architecture.md)
 
 ## Note per Sviluppo Futuro
@@ -76,6 +82,7 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 1. **Type Safety**: Mantenere sempre type hints espliciti
 2. **Static Properties**: Evitare accesso statico a proprietà di istanza
 3. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting appropriato
+<<<<<<< .merge_file_5JqfFy
 <<<<<<< HEAD
 <<<<<<< HEAD
 4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
@@ -89,3 +96,6 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 =======
 4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
+>>>>>>> .merge_file_n57ras

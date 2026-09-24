@@ -4,18 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trend\Adapters;
 
+<<<<<<< .merge_file_tb1uTo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_54vAe8
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nrYa51
 use Error;
 use Override;
 
 class SqliteAdapter extends AbstractAdapter
 {
     #[Override]
+<<<<<<< .merge_file_tb1uTo
 <<<<<<< HEAD
 =======
 =======
@@ -34,6 +38,8 @@ class SqliteAdapter extends AbstractAdapter
 {
     #[\Override]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_nrYa51
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {
@@ -42,6 +48,7 @@ class SqliteAdapter extends AbstractAdapter
             'day' => '%Y-%m-%d',
             'month' => '%Y-%m',
             'year' => '%Y',
+<<<<<<< .merge_file_tb1uTo
 <<<<<<< HEAD
 <<<<<<< HEAD
             default => throw new Error('Invalid interval.'),
@@ -59,6 +66,9 @@ class SqliteAdapter extends AbstractAdapter
 =======
             default => throw new \Error('Invalid interval.'),
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            default => throw new Error('Invalid interval.'),
+>>>>>>> .merge_file_nrYa51
         };
 
         return sprintf("strftime('%s', %s)", $format, $column);

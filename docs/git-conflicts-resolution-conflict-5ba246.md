@@ -1,6 +1,7 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
+<<<<<<< .merge_file_4Vcnsa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_1JLMnr
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -196,6 +199,7 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
+<<<<<<< .merge_file_4Vcnsa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -212,6 +216,8 @@ php artisan lang:check
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_1JLMnr
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -275,6 +281,7 @@ php artisan lang:check
 ### Documentazione Moduli
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
+<<<<<<< .merge_file_4Vcnsa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -286,6 +293,8 @@ php artisan lang:check
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_1JLMnr
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
@@ -295,6 +304,7 @@ php artisan lang:check
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+<<<<<<< .merge_file_4Vcnsa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -305,6 +315,8 @@ php artisan lang:check
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_1JLMnr
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
@@ -342,6 +354,7 @@ php artisan lang:check
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
 
+<<<<<<< .merge_file_4Vcnsa
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Stato**: ✅ Completato
@@ -355,3 +368,6 @@ php artisan lang:check
 =======
 **Stato**: ✅ Completato
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Stato**: ✅ Completato
+>>>>>>> .merge_file_1JLMnr

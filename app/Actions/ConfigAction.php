@@ -11,6 +11,7 @@ class ConfigAction
 {
     private static ?self $instance = null;
 
+<<<<<<< .merge_file_T1xhBx
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function __construct() {}
@@ -40,10 +41,14 @@ class ConfigAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function __construct() {}
+>>>>>>> .merge_file_8gp3r3
 
     public static function getInstance(): self
     {
         if (! self::$instance instanceof self) {
+<<<<<<< .merge_file_T1xhBx
 <<<<<<< HEAD
 <<<<<<< HEAD
             self::$instance = new self;
@@ -67,6 +72,9 @@ class ConfigAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            self::$instance = new self;
+>>>>>>> .merge_file_8gp3r3
         }
 
         return self::$instance;

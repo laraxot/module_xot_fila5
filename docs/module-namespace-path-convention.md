@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_nyUYXg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_358Eu8
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso
@@ -69,6 +72,7 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
+<<<<<<< .merge_file_nyUYXg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,3 +90,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/module-names
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_358Eu8

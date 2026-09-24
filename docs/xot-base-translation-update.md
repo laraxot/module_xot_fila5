@@ -2,6 +2,7 @@
 
 ## Data Aggiornamento
 2025-01-27
+<<<<<<< .merge_file_XIvgCq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wCA9B5
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`
@@ -98,6 +101,7 @@ return [
 
 - [Regole Traduzioni Xot](translation_rules.md)
 - [Best Practices Traduzioni](translations-best-practices.md)
+<<<<<<< .merge_file_XIvgCq
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
@@ -118,3 +122,8 @@ return [
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
+
+*Ultimo aggiornamento: 27 Gennaio 2025*
+>>>>>>> .merge_file_wCA9B5
