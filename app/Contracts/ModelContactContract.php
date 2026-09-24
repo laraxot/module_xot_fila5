@@ -10,12 +10,13 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
-<<<<<<< .merge_file_3JPFC0
-=======
+ * <<<<<<< .merge_file_3JPFC0
+ * =======
  * <<<<<<< HEAD
  * <<<<<<< .merge_file_rd5PoV
  *
->>>>>>> .merge_file_Mi4DdT
+ * >>>>>>> .merge_file_Mi4DdT
+ *
  * @property int                $id
  * @property int|null           $user_id
  * @property string|null        $post_type
@@ -26,8 +27,8 @@ use Illuminate\Support\Carbon;
  * @property string|null        $title
  * @property bool               $is_reclamed
  * @property bool               $table_enable
-<<<<<<< .merge_file_3JPFC0
-=======
+ *                                            <<<<<<< .merge_file_3JPFC0
+ *                                            =======
  *                                            =======
  *                                            <<<<<<< .merge_file_ckQNQG
  * @property int                $id
@@ -64,7 +65,7 @@ use Illuminate\Support\Carbon;
  * @property bool               $is_reclamed
  * @property bool               $table_enable
  *                                            >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_Mi4DdT
+ *                                            >>>>>>> .merge_file_Mi4DdT
  * @property PivotContract|null $pivot
  * @property string             $tennant_name
  * @property string             $mail_subject
@@ -92,6 +93,7 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                         treeLabel()
  * @method array<string, mixed>                         treeSons()
  * @method array<string, mixed>                         toArray()
+ *
  * @property PivotContract|null $pivot
  * @property string             $tennant_name
  * @property string             $mail_subject
@@ -100,7 +102,6 @@ use Illuminate\Support\Carbon;
  * @property string             $mobile_phone
  * @property string             $sms_body
  * @property string             $sms_count
- *
  *
  * @method int|string|null                                                 getKey()
  * @method string                                                          getRouteKey()
@@ -118,8 +119,8 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
-<<<<<<< .merge_file_3JPFC0
-=======
+ *                                                                                           <<<<<<< .merge_file_3JPFC0
+ *                                                                                           =======
  *                                                                                           =======
  *                                                                                           <<<<<<< .merge_file_ckQNQG
  * @method int|string|null                                                 getKey()
@@ -176,7 +177,7 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
  *                                                                                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_Mi4DdT
+ *                                                                                           >>>>>>> .merge_file_Mi4DdT
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
@@ -193,13 +194,12 @@ interface ModelContactContract
     public function sendEmailCallback(): void;
 
     /**
-<<<<<<< .merge_file_3JPFC0
+     * <<<<<<< .merge_file_3JPFC0.
      *
      * @param array<string, mixed> $data
-=======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_rd5PoV.
-     *
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     *                                   <<<<<<< .merge_file_rd5PoV.
      * @param array<string, mixed> $data
      *                                   =======
      *                                   <<<<<<< .merge_file_ckQNQG.
@@ -215,7 +215,7 @@ interface ModelContactContract
      *                                   =======
      * @param array<string, mixed> $data
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_Mi4DdT
+     *                                   >>>>>>> .merge_file_Mi4DdT
      */
     public function increase(string $what, array $data): void;
 }

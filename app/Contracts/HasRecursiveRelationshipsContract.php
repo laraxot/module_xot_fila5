@@ -20,7 +20,6 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
- *
  * @property int                    $id
  * @property string                 $name
  * @property int                    $depth

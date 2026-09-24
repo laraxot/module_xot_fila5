@@ -14,14 +14,13 @@ class StoreAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_pJAByG
+     * <<<<<<< .merge_file_pJAByG.
      *
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
-=======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_EBFvzt.
-     *
+     *                                    =======
+     *                                    <<<<<<< HEAD
+     *                                    <<<<<<< .merge_file_EBFvzt.
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
      *                                    =======
@@ -42,7 +41,7 @@ class StoreAction
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
      *                                    >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_DoCQvn
+     *                                    >>>>>>> .merge_file_DoCQvn
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
