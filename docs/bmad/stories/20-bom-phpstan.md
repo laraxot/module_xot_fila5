@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_ueoGUX
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +14,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_3h27lz
+>>>>>>> .merge_file_EfdKcg
 ---
 name: 20-bom-phpstan
 description: "Modulo: Bom"
@@ -24,11 +30,14 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ueoGUX
+=======
 <<<<<<< .merge_file_RjG241
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_3h27lz
+>>>>>>> .merge_file_EfdKcg
 >>>>>>> laraxot/dev
 # BMAD Story 20 — Bom: 7 errori PHPStan
 

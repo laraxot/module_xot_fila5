@@ -24,6 +24,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_pJcWzN
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
    public function getFormSchema(): array
@@ -34,6 +38,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_O6nLGZ
    {
        return [
            TextInput::make('nome')->required(),

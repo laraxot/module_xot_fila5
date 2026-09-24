@@ -9,13 +9,21 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< .merge_file_cPt02z
+public function getFormSchema(): array
+=======
+=======
+>>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cPt02z
+=======
 =======
 public static function getFormSchema(): array
+>>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
 {
     return [
@@ -34,13 +42,21 @@ public static function getFormSchema(): array
 ```php
 // ❌ ERRATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_cPt02z
+public function getFormSchema(): array
+=======
+=======
+>>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cPt02z
+=======
 =======
 public static function getFormSchema(): array
+>>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
 {
     return [
@@ -114,13 +130,21 @@ class MyResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cPt02z
+    public function getFormSchema(): array
+=======
+=======
+>>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cPt02z
+=======
 =======
     public static function getFormSchema(): array
+>>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
     {
         return [
@@ -137,13 +161,21 @@ class MyResource extends XotBaseResource
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_cPt02z
+    public function getFormSchema(): array
+=======
+=======
+>>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cPt02z
+=======
 =======
     public static function getFormSchema(): array
+>>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
     {
         return [

@@ -1,10 +1,33 @@
 <?php
 
+<<<<<<< .merge_file_e5CE6n
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 declare(strict_types=1);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_JmA3pJ
 /**
  * @see https://medium.com/technology-hits/how-to-import-a-csv-excel-file-in-laravel-d50f93b98aa4
  */
 
+<<<<<<< .merge_file_e5CE6n
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JmA3pJ
 namespace Modules\Xot\Services;
 
 /**
@@ -25,8 +48,13 @@ class ConfigService
      */
     public static function getInstance(): self
     {
+<<<<<<< .merge_file_e5CE6n
+        if (! (self::$instance instanceof self)) {
+            self::$instance = new self;
+=======
         if (! self::$instance instanceof self) {
             self::$instance = new self();
+>>>>>>> .merge_file_JmA3pJ
         }
 
         return self::$instance;

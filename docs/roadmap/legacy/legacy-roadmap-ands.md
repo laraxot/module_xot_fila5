@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_LJxcgs
+=======
 <<<<<<< .merge_file_w3RpVY
 # Xot Module - Roadmap, Issues & Optimization
 
@@ -336,6 +338,7 @@ function xot_config(string $key): mixed
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
 =======
+>>>>>>> .merge_file_7FUtwH
 ---
 module: theme
 topic: legacy-roadmap-ands
@@ -343,4 +346,7 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
+<<<<<<< .merge_file_LJxcgs
+=======
 >>>>>>> .merge_file_e59rpe
+>>>>>>> .merge_file_7FUtwH

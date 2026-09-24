@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_tFQzrS
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +14,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_q8WYVW
+>>>>>>> .merge_file_CRYYwr
 ---
 name: 25f-tests-getformschema
 description: "Modulo: multi (Activity, Cms, Job, Lang, Media, Notify, Tenant, User)"
@@ -24,11 +30,14 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tFQzrS
+=======
 <<<<<<< .merge_file_ERiHyX
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_q8WYVW
+>>>>>>> .merge_file_CRYYwr
 >>>>>>> laraxot/dev
 # 25f — Correggere test con static call getFormSchema() su Resource
 

@@ -46,14 +46,20 @@ Each resource must implement the abstract method:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_15cnyp
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_lktZau
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_15cnyp
+=======
 =======
 abstract public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_lktZau
 ```
 
 This enforces consistent form schema definition across all resources.
@@ -80,14 +86,20 @@ Resources define forms through `getFormSchema()`:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_15cnyp
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_lktZau
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_15cnyp
+=======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_lktZau
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -189,14 +201,20 @@ Consistent form setup with standardized columns:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_15cnyp
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_lktZau
 public function getFormSchemaColumns(): int
 =======
 public function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_15cnyp
+=======
 =======
 public static function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_lktZau
 {
     return 1; // Standard single column layout
 }
@@ -372,14 +390,20 @@ public static function getModel(): string
 Always implement `getFormSchema()` for consistency:
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_15cnyp
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_lktZau
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_15cnyp
+=======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_lktZau
 {
     // Return array of form components
 }

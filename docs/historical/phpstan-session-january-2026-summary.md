@@ -1,4 +1,7 @@
+<<<<<<< .merge_file_QOTeBF
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_guHxSj
 ---
 title: "Phpstan Session Summary"
 type: concept
@@ -15,6 +18,8 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-session-summary.md](./phpstan-session-summary.md)
+<<<<<<< .merge_file_QOTeBF
+=======
 =======
 # PHPStan Session - Gennaio 2026 - Riepilogo Completo
 
@@ -301,3 +306,4 @@ Eseguire PHPStan su tutti i moduli, comprendere logica, politica, business logic
 
 *Ultimo aggiornamento: 2026-01-22*
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_guHxSj

@@ -47,8 +47,8 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public ?array $fields = null;
 
     /**
-     * @param  SupportCollection<int|string, mixed>|EloquentCollection<int, Model>  $collection
-     * @param  array<int|string, string>  $fields
+     * @param SupportCollection<int|string, mixed>|EloquentCollection<int, Model> $collection
+     * @param array<int|string, string>                                           $fields
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -79,7 +79,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public function headings(): array
     {
         $fields = $this->fields;
-        if ($fields === null || $fields === []) {
+        if (null === $fields || [] === $fields) {
             return app(TransArrayAction::class)->execute($this->getHead(), $this->transKey);
         }
 
@@ -118,7 +118,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
      */
     public function map(mixed $row): array
     {
-        if ($this->fields === null || $this->fields === []) {
+        if (null === $this->fields || [] === $this->fields) {
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
