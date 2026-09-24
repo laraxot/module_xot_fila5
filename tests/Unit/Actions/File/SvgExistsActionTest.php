@@ -8,8 +8,7 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 it('verifies svg existence', function (): void {
     $action = app(SvgExistsAction::class);
 

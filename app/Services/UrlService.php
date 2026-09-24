@@ -6,8 +6,6 @@ declare(strict_types=1);
  * @see https://sweetcode.io/import-and-export-excel-files-data-using-in-laravel/
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Services;
 
 /**
