@@ -95,11 +95,7 @@ class ColumnBuilder
     /**
      * Status badge column with standard colors.
      *
-<<<<<<< HEAD
-     * @param array<string, string> $customColors Custom color mappings
-=======
      * @param  array<string, string>  $customColors  Custom color mappings
->>>>>>> laraxot/dev
      */
     public static function statusBadge(array $customColors = []): TextColumn
     {
@@ -118,11 +114,7 @@ class ColumnBuilder
     /**
      * Priority badge column.
      *
-<<<<<<< HEAD
-     * @param array<string, string> $customColors Custom color mappings
-=======
      * @param  array<string, string>  $customColors  Custom color mappings
->>>>>>> laraxot/dev
      */
     public static function priorityBadge(array $customColors = []): TextColumn
     {

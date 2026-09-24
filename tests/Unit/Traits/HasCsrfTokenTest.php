@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Tests\TestCase;

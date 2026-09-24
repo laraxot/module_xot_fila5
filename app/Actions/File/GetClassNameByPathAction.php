@@ -4,19 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-<<<<<<< HEAD
-use function Safe\file_get_contents;
-use function Safe\preg_match;
-
-use Spatie\QueueableAction\QueueableAction;
-
-=======
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 
->>>>>>> laraxot/dev
 class GetClassNameByPathAction
 {
     use QueueableAction;

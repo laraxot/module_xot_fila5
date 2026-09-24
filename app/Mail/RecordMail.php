@@ -26,11 +26,7 @@ class RecordMail extends Mailable
     /**
      * Crea una nuova istanza del mailable.
      *
-<<<<<<< HEAD
-     * @param array<string, mixed> $data I dati del record
-=======
      * @param  array<string, mixed>  $data  I dati del record
->>>>>>> laraxot/dev
      */
     public function __construct(array $data)
     {

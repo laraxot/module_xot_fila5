@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Pdf\PdfByHtmlAction;
 use Modules\Xot\Actions\Pdf\PdfEngineEnum;
 use Modules\Xot\Tests\TestCase;

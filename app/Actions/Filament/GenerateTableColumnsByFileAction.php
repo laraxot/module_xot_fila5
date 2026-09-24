@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * -WIP.
  */
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Actions\Filament;
 
 // use Filament\Forms\Commands\Concerns\CanGenerateForms; // Non disponibile in Filament v4

@@ -1,21 +1,13 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * Xot Seeder Helper Functions.
  *
  * This file contains helper functions for seeding data with Xot modules
  * The functions ensure that models are only seeded once
  */
-<<<<<<< HEAD
 
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;

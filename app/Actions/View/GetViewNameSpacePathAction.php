@@ -16,11 +16,7 @@ class GetViewNameSpacePathAction
      */
     public function execute(?string $module_name = null): string
     {
-<<<<<<< HEAD
-        if (null !== $module_name && '' !== $module_name) {
-=======
         if ($module_name !== null && $module_name !== '') {
->>>>>>> laraxot/dev
             $module_path = Module::getModulePath($module_name);
             /** @var non-falsy-string $namespace_path */
             $namespace_path = $module_path.'resources/views';

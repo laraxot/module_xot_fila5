@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Traits;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Mockery;
 use Mockery\MockInterface;
@@ -45,11 +42,7 @@ it('gets searchable values', function (): void {
 
 it('gets form schema', function (): void {
     $schema = TestEnum::ALPHA->getFormSchema();
-<<<<<<< HEAD
-    //Assert::assertIsArray($schema);
-=======
     // Assert::assertIsArray($schema);
->>>>>>> laraxot/dev
     Assert::assertCount(2, $schema);
 });
 

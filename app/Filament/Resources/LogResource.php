@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
-=======
->>>>>>> laraxot/dev
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
@@ -27,10 +24,7 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     public function getInfolistSchema(): array
     {
         return [

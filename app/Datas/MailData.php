@@ -15,13 +15,8 @@ use Spatie\LaravelData\Data;
 final class MailData extends Data
 {
     /**
-<<<<<<< HEAD
-     * @param array<string, int|string> $smtpConfig
-     * @param array<string, string>     $fromConfig
-=======
      * @param  array<string, int|string>  $smtpConfig
      * @param  array<string, string>  $fromConfig
->>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly string $driver = 'smtp',
@@ -38,22 +33,13 @@ final class MailData extends Data
         ],
         public readonly ?string $replyTo = null,
         public readonly bool $verifyPeer = true,
-<<<<<<< HEAD
-    ) {
-    }
-=======
     ) {}
->>>>>>> laraxot/dev
 
     /**
      * Create a new instance of MailData with default values.
      */
     public static function make(): self
     {
-<<<<<<< HEAD
-        return new self();
-=======
         return new self;
->>>>>>> laraxot/dev
     }
 }

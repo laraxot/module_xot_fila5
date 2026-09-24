@@ -29,11 +29,7 @@ class Clock extends XotBaseWidget
             // Decrement the counter...
             // $this->start = $this->start - 1;
             $this->start = (string) now();
-<<<<<<< HEAD
-            if ('impossible' === $this->start) {
-=======
             if ($this->start === 'impossible') {
->>>>>>> laraxot/dev
                 $cond = false;
             }
         }

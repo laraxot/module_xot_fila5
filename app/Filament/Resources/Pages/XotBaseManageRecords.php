@@ -12,10 +12,4 @@ use Filament\Resources\Pages\ManageRecords as FilamentManageRecords;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's ManageRecords to provide a XotBase layer.
  */
-<<<<<<< HEAD
-abstract class XotBaseManageRecords extends FilamentManageRecords
-{
-}
-=======
 abstract class XotBaseManageRecords extends FilamentManageRecords {}
->>>>>>> laraxot/dev

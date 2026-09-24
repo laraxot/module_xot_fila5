@@ -23,11 +23,7 @@ it('throws if record has no email', function (): void {
         {
             return new class
             {
-<<<<<<< HEAD
-                /** @param array<mixed> $data */
-=======
                 /** @param array<string, mixed> $data */
->>>>>>> laraxot/dev
                 public function create(array $data): void {}
             };
         }

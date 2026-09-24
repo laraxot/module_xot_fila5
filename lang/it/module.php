@@ -9,12 +9,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
-=======
         'label' => 'module.navigation',
         'icon' => 'module.navigation',
         'sort' => 65,
->>>>>>> laraxot/dev
     ],
     'fields' => [
         'name' => [
@@ -111,17 +108,12 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-        'path' => ['label' => 'path'],
-        'enabled' => ['label' => 'enabled'],
-=======
         'path' => [
             'label' => 'path',
         ],
         'enabled' => [
             'label' => 'enabled',
         ],
->>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -141,14 +133,6 @@ return [
     'label' => 'Module',
     'plural_label' => 'Module (Plurale)',
     'actions' => [
-<<<<<<< HEAD
-        'create' => ['label' => 'Crea Module', 'icon' => 'create', 'tooltip' => 'create'],
-        'edit' => ['label' => 'Modifica Module', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'delete' => ['label' => 'Elimina Module', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-=======
         'create' => [
             'label' => 'Crea Module',
             'icon' => 'create',
@@ -179,6 +163,5 @@ return [
             'icon' => 'view',
             'tooltip' => 'view',
         ],
->>>>>>> laraxot/dev
     ],
 ];

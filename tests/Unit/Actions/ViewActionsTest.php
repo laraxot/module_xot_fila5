@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\View\View;
 use Modules\Xot\Actions\GetViewByClassAction;

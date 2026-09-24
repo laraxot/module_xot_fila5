@@ -14,13 +14,8 @@ class StoreAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-     * @param array<string, mixed> $rules
-=======
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $rules
->>>>>>> laraxot/dev
      */
     public function execute(Model $model, array $data, array $rules): Model
     {

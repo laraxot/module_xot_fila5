@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\MorphPivot as EloquentMorphPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -36,10 +33,7 @@ use function Safe\preg_match;
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
     use HasXotFactory;
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     use Updater;
 
     /** @var bool */

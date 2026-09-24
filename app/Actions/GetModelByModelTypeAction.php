@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Actions;
 
 use Illuminate\Database\Eloquent\Model;
@@ -34,15 +26,9 @@ class GetModelByModelTypeAction
         Assert::isAOf($model_class, Model::class);
 
         /** @var class-string<Model> $model_class */
-<<<<<<< HEAD
-        $model = null !== $model_id
-            ? $model_class::query()->find($model_id)
-            : new $model_class();
-=======
         $model = $model_id !== null
             ? $model_class::query()->find($model_id)
             : new $model_class;
->>>>>>> laraxot/dev
 
         if (! $model instanceof Model) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');

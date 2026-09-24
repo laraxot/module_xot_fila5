@@ -34,8 +34,6 @@ return [
         'queue_restart' => [
             'label' => 'Riavvia Code',
         ],
-<<<<<<< HEAD
-=======
         'composer_dump_autoload' => [
             'label' => 'Composer Dump Autoload',
         ],
@@ -43,7 +41,6 @@ return [
             'label' => 'Import Legacy Email/SMS Templates',
             'modal_description' => 'Copies email/SMS content from the legacy notify_themes table into mail_templates (the new invite sending system). Idempotent: re-running it updates already-migrated templates instead of duplicating them, overwriting any manual edits made after the last run.',
         ],
->>>>>>> laraxot/dev
     ],
     'status' => [
         'completed' => 'Completato',

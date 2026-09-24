@@ -17,16 +17,6 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 /**
  * Modules\Xot\Contracts\ProfileContract.
  *
-<<<<<<< HEAD
- * @property string                $id
- * @property string                $email
- * @property string                $slug
- * @property string                $user_id
- * @property int|null              $matr
- * @property Collection<int, Role> $roles
- * @property int|null              $roles_count
- * @property UserContract          $user
-=======
  * @property string $id
  * @property string $email
  * @property string $slug
@@ -35,7 +25,6 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property Collection<int, Role> $roles
  * @property int|null $roles_count
  * @property UserContract $user
->>>>>>> laraxot/dev
  *
  * @phpstan-require-extends Model
  *
@@ -46,12 +35,7 @@ interface ProfileContract extends HasMedia
     /**
      * Grant the given permission(s) to a role.
      *
-<<<<<<< HEAD
-     * @param string|int|array<int|string>|Permission|SupportCollection<int, Permission> $permissions
-     *
-=======
      * @param  string|int|array<int|string>|Permission|SupportCollection<int, Permission>  $permissions
->>>>>>> laraxot/dev
      * @return $this
      */
     public function givePermissionTo(string|int|array|Permission|SupportCollection $permissions = []): static;
@@ -59,12 +43,7 @@ interface ProfileContract extends HasMedia
     /**
      * Assign the given role to the model.
      *
-<<<<<<< HEAD
-     * @param array<int|string>|string|int|RoleContract|SupportCollection<int, RoleContract> $roles
-     *
-=======
      * @param  array<int|string>|string|int|RoleContract|SupportCollection<int, RoleContract>  $roles
->>>>>>> laraxot/dev
      * @return $this
      */
     public function assignRole(array|string|int|RoleContract|SupportCollection $roles = []): static;
@@ -72,11 +51,7 @@ interface ProfileContract extends HasMedia
     /**
      * Determine if the model has (one of) the given role(s).
      *
-<<<<<<< HEAD
-     * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
-=======
      * @param  string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract>  $roles
->>>>>>> laraxot/dev
      */
     public function hasRole(
         string|int|array|RoleContract|SupportCollection $roles,
@@ -88,11 +63,7 @@ interface ProfileContract extends HasMedia
      *
      * Alias to hasRole() but without Guard controls
      *
-<<<<<<< HEAD
-     * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
-=======
      * @param  string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract>  $roles
->>>>>>> laraxot/dev
      */
     public function hasAnyRole(string|int|array|RoleContract|SupportCollection $roles = []): bool;
 

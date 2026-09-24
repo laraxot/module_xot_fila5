@@ -15,16 +15,6 @@ use Spatie\LaravelData\Data;
 class PwaData extends Data
 {
     /**
-<<<<<<< HEAD
-     * @param bool                  $enable           Se il PWA è abilitato
-     * @param string                $name             Nome dell'applicazione
-     * @param string                $short_name       Nome breve dell'applicazione
-     * @param string                $description      Descrizione dell'applicazione
-     * @param string                $background_color Colore di sfondo
-     * @param string                $theme_color      Colore del tema
-     * @param string                $icon_path        Percorso dell'icona
-     * @param array<string, string> $splash           Configurazione splash screen
-=======
      * @param  bool  $enable  Se il PWA è abilitato
      * @param  string  $name  Nome dell'applicazione
      * @param  string  $short_name  Nome breve dell'applicazione
@@ -33,7 +23,6 @@ class PwaData extends Data
      * @param  string  $theme_color  Colore del tema
      * @param  string  $icon_path  Percorso dell'icona
      * @param  array<string, string>  $splash  Configurazione splash screen
->>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly bool $enable = false,
@@ -49,22 +38,13 @@ class PwaData extends Data
             '1242x2208' => 'img/splash/splash-1242x2208.png',
             '1125x2436' => 'img/splash/splash-1125x2436.png',
         ],
-<<<<<<< HEAD
-    ) {
-    }
-=======
     ) {}
->>>>>>> laraxot/dev
 
     /**
      * Create a new instance of PwaData with default values.
      */
     public static function make(): self
     {
-<<<<<<< HEAD
-        return new self();
-=======
         return new self;
->>>>>>> laraxot/dev
     }
 }

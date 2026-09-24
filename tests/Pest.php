@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 /*
  * Bootstrap Pest — modulo Xot.
  * Helper globali: tests/Support/helpers.php (composer autoload-dev files).

@@ -1,23 +1,13 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-namespace Modules\Xot\Filament\Actions\Header;
-
-=======
 namespace Modules\Xot\Filament\Actions\Header;
 
 use Exception;
->>>>>>> laraxot/dev
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
@@ -33,16 +23,6 @@ class ExportXlsLazyAction extends XotBaseAction
     {
         parent::setUp();
 
-<<<<<<< HEAD
-        $this->label((string) __('xot::actions.export_xls.label'))
-            ->tooltip((string) __('xot::actions.export_xls.tooltip'))
-            ->icon((string) __('xot::actions.export_xls.icon'))
-            ->modalHeading((string) __('xot::actions.export_xls.modal.heading'))
-            ->modalDescription((string) __('xot::actions.export_xls.modal.description'))
-            ->modalSubmitActionLabel((string) __('xot::actions.export_xls.modal.confirm'))
-            ->modalCancelActionLabel((string) __('xot::actions.export_xls.modal.cancel'))
-            ->successNotificationTitle((string) __('xot::actions.export_xls.success'))
-=======
         $this->label('')
             ->iconButton()
             ->color('success')
@@ -53,7 +33,6 @@ class ExportXlsLazyAction extends XotBaseAction
             ->modalSubmitActionLabel((string) __('xot::export_xls.actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::export_xls.actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::export_xls.actions.export_xls.success'))
->>>>>>> laraxot/dev
             ->requiresConfirmation()
             ->action(static function (ListRecords $livewire) {
                 $filename =
@@ -64,48 +43,6 @@ class ExportXlsLazyAction extends XotBaseAction
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
 
-<<<<<<< HEAD
-                $resource = $livewire->getResource();
-                /** @var array<int, string> $fields */
-                $fields = [];
-                if (method_exists($resource, 'getXlsFields')) {
-                    $rawFields = $resource::getXlsFields($livewire->tableFilters);
-                    if (is_array($rawFields)) {
-                        $fields = array_map(
-                            static function (mixed $field): string {
-                                // Handle objects with __toString method
-                                if (is_object($field) && method_exists($field, '__toString')) {
-                                    $stringValue = $field->__toString();
-
-                                    // Type narrowing for PHPStan Level 10
-                                    return is_string($stringValue) ? $stringValue : '';
-                                }
-
-                                // Handle scalar values
-                                if (is_scalar($field)) {
-                                    return (string) $field;
-                                }
-
-                                return '';
-                            },
-                            $rawFields
-                        );
-                    }
-                    Assert::isArray($fields);
-                }
-
-                $lazy = $livewire->getFilteredTableQuery();
-                if ($lazy === null) {
-                    throw new \Exception('Query is null');
-                }
-
-                if ($lazy->count() < 7) {
-                    /** @var array<int, string> $stringFields */
-                    $stringFields = array_values($fields);
-
-                    // PHPStan knows $lazy is Builder|Relation here, no need for Assert
-                    return app(ExportXlsByQuery::class)->execute($lazy, $filename, $stringFields, null);
-=======
                 $pathFields = self::resolvePathFields($livewire);
 
                 $lazy = $livewire->getFilteredTableQuery();
@@ -116,7 +53,6 @@ class ExportXlsLazyAction extends XotBaseAction
                 if ($lazy->count() < 7) {
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
                     return app(ExportXlsByQuery::class)->execute($lazy, $filename, $pathFields, null);
->>>>>>> laraxot/dev
                 }
 
                 $lazyCursor = $lazy->cursor();
@@ -125,17 +61,10 @@ class ExportXlsLazyAction extends XotBaseAction
 
                 if ($lazyCursor->count() > 3000) {
                     return app(ExportXlsStreamByLazyCollection::class)
-<<<<<<< HEAD
-                        ->execute($exportCollection, $filename, $transKey, array_values($fields));
-                }
-
-                return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, array_values($fields));
-=======
                         ->execute($exportCollection, $filename, $transKey, $pathFields);
                 }
 
                 return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, $pathFields);
->>>>>>> laraxot/dev
             });
     }
 
@@ -143,8 +72,6 @@ class ExportXlsLazyAction extends XotBaseAction
     {
         return 'export_xls';
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Il canale lazy lavora sui soli percorsi data_get: le intestazioni
@@ -190,5 +117,4 @@ class ExportXlsLazyAction extends XotBaseAction
 
         return '';
     }
->>>>>>> laraxot/dev
 }

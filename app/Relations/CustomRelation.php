@@ -1,20 +1,12 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * ---.
  *
  * @see https://github.com/johnnyfreeman/laravel-custom-relation/blob/master/src/Relations/Custom.php
  */
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Relations;
 
 use Closure;
@@ -46,17 +38,6 @@ class CustomRelation extends Relation
         /**
          * The baseConstraints callback.
          */
-<<<<<<< HEAD
-        protected \Closure $baseConstraints,
-        /**
-         * The eagerConstraints callback.
-         */
-        protected ?\Closure $eagerConstraints,
-        /**
-         * The eager constraints model matcher.
-         */
-        protected ?\Closure $eagerMatcher,
-=======
         protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -66,7 +47,6 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected ?Closure $eagerMatcher,
->>>>>>> laraxot/dev
     ) {
         parent::__construct($query, $model);
     }
@@ -83,11 +63,7 @@ class CustomRelation extends Relation
      * Set the constraints for an eager load of the relation.
      */
     /**
-<<<<<<< HEAD
-     * @param array<int, Model> $models
-=======
      * @param  array<int, Model>  $models
->>>>>>> laraxot/dev
      */
     public function addEagerConstraints(array $models): void
     {
@@ -103,24 +79,16 @@ class CustomRelation extends Relation
      * Initialize the relation on a set of models.
      */
     /**
-<<<<<<< HEAD
-     * @param array<int, Model> $models
-     *
-=======
      * @param  array<int, Model>  $models
      * @param  string  $relation  the relation name (parent signature is untyped)
->>>>>>> laraxot/dev
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
     {
-<<<<<<< HEAD
         if (! \is_string($relation)) {
             throw new \Exception('relation is not a string');
         }
 
-=======
->>>>>>> laraxot/dev
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -134,15 +102,9 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     /**
-<<<<<<< HEAD
-     * @param array<int, Model>      $models
-     * @param Collection<int, Model> $collection
-     *
-=======
      * @param  array<int, Model>  $models
      * @param  Collection<int, Model>  $collection
      * @param  string  $relation  the relation name (parent signature is untyped)
->>>>>>> laraxot/dev
      * @return array<int, Model>
      */
     public function match(array $models, Collection $collection, mixed $relation): array
@@ -176,12 +138,7 @@ class CustomRelation extends Relation
      * Execute the query as a "select" statement.
      */
     /**
-<<<<<<< HEAD
-     * @param array<int, string>|string $columns
-     *
-=======
      * @param  array<int, string>|string  $columns
->>>>>>> laraxot/dev
      * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection

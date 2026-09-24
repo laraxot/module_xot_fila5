@@ -12,12 +12,7 @@ class WebhookErrorFormatter
 {
     public function __construct(
         private \Throwable $exception,
-<<<<<<< HEAD
-    ) {
-    }
-=======
     ) {}
->>>>>>> laraxot/dev
 
     /**
      * @return array<string, mixed>

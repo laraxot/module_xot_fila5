@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://dev.to/jackmiras/laravels-exceptions-part-2-custom-exceptions-1367
  */
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Exceptions;
 
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -25,11 +17,7 @@ class ExceptionHandler
     /**
      * Configura la gestione delle eccezioni.
      *
-<<<<<<< HEAD
-     * @param Exceptions $exceptions Configuratore eccezioni Laravel
-=======
      * @param  Exceptions  $exceptions  Configuratore eccezioni Laravel
->>>>>>> laraxot/dev
      */
     public static function handles(Exceptions $exceptions): void
     {

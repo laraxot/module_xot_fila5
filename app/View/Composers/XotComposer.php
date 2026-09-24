@@ -26,11 +26,7 @@ class XotComposer
     /**
      * Undocumented function.
      *
-<<<<<<< HEAD
-     * @param  array<mixed|void>  $arguments
-=======
      * @param  array<int, mixed>  $arguments
->>>>>>> laraxot/dev
      */
     public function __call(string $name, array $arguments): mixed
     {

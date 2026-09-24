@@ -23,10 +23,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-<<<<<<< HEAD
-=======
 use Safe\Exceptions\FilesystemException;
->>>>>>> laraxot/dev
 
 /**
  * Class XotBaseTestCase.
@@ -269,11 +266,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         try {
             /** @var list<string> $found */
             $found = \Safe\glob(database_path('*.sqlite'));
-<<<<<<< HEAD
-        } catch (\Safe\Exceptions\FilesystemException) {
-=======
         } catch (FilesystemException) {
->>>>>>> laraxot/dev
             $found = [];
         }
 

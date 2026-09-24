@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Mockery\MockInterface;
 use Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel;

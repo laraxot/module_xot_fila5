@@ -53,11 +53,5 @@ class ThemeAction
         return resource_path('themes/'.self::$currentTheme);
     }
 
-<<<<<<< HEAD
-    public function execute(): void
-    {
-    }
-=======
     public function execute(): void {}
->>>>>>> laraxot/dev
 }
