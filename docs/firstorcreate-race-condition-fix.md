@@ -1,7 +1,31 @@
+<<<<<<< .merge_file_gRlwAb
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_8vpi2k
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_I95shV
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f1frnO
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  
 **Data**: 2026-01-22
+<<<<<<< .merge_file_gRlwAb
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_8vpi2k
+=======
+=======
+# Fix Race Condition firstOrCreate con UUID - [DATE]
+
+**Status**: ✅ Completato  
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_I95shV
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f1frnO
 
 ## Problema
 
@@ -163,6 +187,16 @@ expect($profileA->id)->toBe($profileB->id);
 
 ## Riferimenti
 
+<<<<<<< .merge_file_gRlwAb
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_8vpi2k
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_I95shV
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f1frnO
 - [Activity Module: firstOrCreate Error Handling](../../Activity/docs/errori/attributerawvalues-null-firstorcreate.md)
 - [User Profile Models: Transaction Patterns](../../User/docs/user-profile-models.md)
 - [Query Safety Principle](../../../docs/operational-rules/query-safety-principle.md)
@@ -170,3 +204,21 @@ expect($profileA->id)->toBe($profileB->id);
 **Versione**: 1.0  
 **Ultimo aggiornamento**: 2026-01-22  
 **Status**: ✅ Completato
+<<<<<<< .merge_file_gRlwAb
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_8vpi2k
+=======
+=======
+- [Activity Module: firstOrCreate Error Handling](../../activity/docs/errori/attributerawvalues-null-firstorcreate.md)
+- [User Profile Models: Transaction Patterns](../../user/docs/user-profile-models.md)
+- [Query Safety Principle](../../../../docs/operational-rules/query-safety-principle.md)
+
+**Versione**: 1.0  
+**Ultimo aggiornamento**: [DATE]  
+**Status**: ✅ Completato
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_I95shV
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f1frnO

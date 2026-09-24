@@ -153,8 +153,32 @@ All Filament resources extend this base class:
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
+<<<<<<< .merge_file_SAWznS
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+abstract public function getFormSchema(): array;
+=======
+<<<<<<< .merge_file_gIYnxU
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+abstract public function getFormSchema(): array;
+=======
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_nTLeny
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kioafU
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -595,8 +619,32 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_SAWznS
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_gIYnxU
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_nTLeny
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kioafU
     {
         return [
             TextInput::make('field1')->required(),
@@ -676,7 +724,30 @@ class ArticleResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_SAWznS
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_gIYnxU
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_nTLeny
+>>>>>>> .merge_file_kioafU
 >>>>>>> laraxot/dev
     {
         return [

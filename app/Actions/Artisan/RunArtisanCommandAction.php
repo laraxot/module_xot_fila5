@@ -19,7 +19,23 @@ class RunArtisanCommandAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_313Wdf
      * @param  array<string, mixed>  $arguments
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $arguments
+=======
+<<<<<<< .merge_file_KJTBr5
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $arguments
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> .merge_file_hPYTqt
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_npqqBK
      */
     public function execute(string $command, array $arguments = []): string
     {
@@ -27,7 +43,23 @@ class RunArtisanCommandAction
             Artisan::call($command, $arguments);
 
             return '[<pre>'.Artisan::output().'</pre>]';
+<<<<<<< .merge_file_313Wdf
         } catch (Exception $exception) {
+=======
+<<<<<<< HEAD
+        } catch (Exception $exception) {
+=======
+<<<<<<< .merge_file_KJTBr5
+<<<<<<< HEAD
+        } catch (Exception $exception) {
+=======
+        } catch (\Exception $exception) {
+>>>>>>> laraxot/dev
+=======
+        } catch (\Exception $exception) {
+>>>>>>> .merge_file_hPYTqt
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_npqqBK
             return '[<pre>'.$exception->getMessage().'</pre>]';
         }
     }

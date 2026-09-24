@@ -1,5 +1,55 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_OsuWnA
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # _macro
 
 <!-- Contenuto migrato da _docs/_macro.txt -->
 
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iP95kB
+>>>>>>> laraxot/dev
+---
+title: 'Macro — risorse esterne'
+module: Xot
+type: reference
+slug: macro
+description: 'Elenco di 1 riferimenti esterni raccolti per macro, deduplicati e convertiti da un dump di link.'
+tags: [migrato-da-txt, xot]
+converted_from: _macro.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+# Macro — risorse esterne
+
+> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
+> collega a un punto del codice: leggila, poi trova dove è già applicata.
+
+## Riferimenti
+
+- <https://www.larashout.com/laravel-macros-extending-laravels-core-classes>
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_OsuWnA
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+# _macro
+
+<!-- Contenuto migrato da _docs/_macro.txt -->
+
+https://www.larashout.com/laravel-macros-extending-laravels-core-classes
+>>>>>>> .merge_file_iP95kB
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

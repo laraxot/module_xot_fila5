@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_oGGSAP
+=======
+
+>>>>>>> .merge_file_rIFKL1
 return [
     'backend' => [
         'access' => [

@@ -23,7 +23,23 @@ class HtmlAction
         string $pdforientation = 'L',
         string $filename = '',
     ): string {
+<<<<<<< .merge_file_frm8hi
         if ($filename === '') {
+=======
+<<<<<<< HEAD
+        if ($filename === '') {
+=======
+<<<<<<< .merge_file_66RXQz
+<<<<<<< HEAD
+        if ($filename === '') {
+=======
+        if ('' === $filename) {
+>>>>>>> laraxot/dev
+=======
+        if ('' === $filename) {
+>>>>>>> .merge_file_lJikoe
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ca8I0Y
             $filename = Storage::disk('local')->path('test.pdf');
         }
 
@@ -35,11 +51,37 @@ class HtmlAction
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
+<<<<<<< .merge_file_frm8hi
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_66RXQz
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ca8I0Y
             if ($out === 'content_PDF') {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ($out === 'file') {
+<<<<<<< .merge_file_frm8hi
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_lJikoe
+            if ('content_PDF' === $out) {
+                return $html2pdf->Output($filename.'.pdf', 'S');
+            }
+
+            if ('file' === $out) {
+<<<<<<< .merge_file_66RXQz
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lJikoe
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ca8I0Y
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

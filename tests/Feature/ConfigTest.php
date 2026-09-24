@@ -4,31 +4,27 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
 
-use Modules\Xot\Tests\XotBaseTestCase;
+use Modules\Xot\Tests\TestCase;
 
-class ConfigTest extends XotBaseTestCase
-{
-    public function testXotConfigLoadsCorrectly(): void
-    {
-        $config = config('xot');
+uses(TestCase::class);
 
-        $this->assertIsArray($config);
-        $this->assertNotEmpty($config);
-    }
+it('loads xot config correctly', function () {
+    $config = config('xot');
 
-    public function testXotConfigHasExpectedKeys(): void
-    {
-        $config = config('xot');
+    expect($config)->toBeArray();
+    expect($config)->not->toBeEmpty();
+});
 
-        // Verify some base structure exists
-        $this->assertIsArray($config);
-    }
+it('has expected keys in xot config', function () {
+    $config = config('xot');
 
-    public function testDatabaseConfigLoads(): void
-    {
-        $config = config('database');
+    // Verify some base structure exists
+    expect($config)->toBeArray();
+});
 
-        $this->assertIsArray($config);
-        $this->assertArrayHasKey('default', $config);
-    }
-}
+it('loads database config', function () {
+    $config = config('database');
+
+    expect($config)->toBeArray();
+    expect($config)->toHaveKey('default');
+});

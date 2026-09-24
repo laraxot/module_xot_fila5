@@ -13,9 +13,31 @@ use Filament\Forms\Components\Repeater as FilamentRepeater;
  * This class wraps Filament's Repeater to provide a XotBase layer.
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_LnR1n6
+=======
+abstract class XotBaseRepeater extends FilamentRepeater {}
+=======
+<<<<<<< .merge_file_WR0ZBo
+<<<<<<< HEAD
+abstract class XotBaseRepeater extends FilamentRepeater
+{
+}
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_LDjPXG
 abstract class XotBaseRepeater extends FilamentRepeater
 {
 }
 =======
 abstract class XotBaseRepeater extends FilamentRepeater {}
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LnR1n6
+=======
+>>>>>>> laraxot/dev
+=======
+abstract class XotBaseRepeater extends FilamentRepeater
+{
+}
+>>>>>>> .merge_file_tfyTnW
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LDjPXG

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_GLVDAd
+=======
+
+>>>>>>> .merge_file_KSrzPX
 return [
     'general' => [
         'home' => 'Home',

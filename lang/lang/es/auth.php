@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_uAD5SX
+=======
+
+>>>>>>> .merge_file_SdRiAg
 return [
     'failed' => 'Las credenciales no se han encontrado.',
     'general_error' => 'No tiene suficientes permisos..',

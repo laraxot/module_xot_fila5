@@ -19,6 +19,22 @@ class DebugbarCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
+<<<<<<< .merge_file_D2J0Cy
         return $command === 'debugbar:clear';
+=======
+<<<<<<< HEAD
+        return $command === 'debugbar:clear';
+=======
+<<<<<<< .merge_file_Anop3z
+<<<<<<< HEAD
+        return $command === 'debugbar:clear';
+=======
+        return 'debugbar:clear' === $command;
+>>>>>>> laraxot/dev
+=======
+        return 'debugbar:clear' === $command;
+>>>>>>> .merge_file_r5Obyv
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eTbTCW
     }
 }

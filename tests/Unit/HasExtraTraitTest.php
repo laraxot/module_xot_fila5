@@ -11,18 +11,26 @@ use Modules\Xot\Tests\Fixtures\Models\ExtraModelTest;
 use Modules\Xot\Tests\Fixtures\Models\TestModelHasExtra;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+
+use function Safe\class_uses;
+
+uses(TestCase::class);
+
+/**
+ * @param  array<string, mixed>  $values
+ */
+function makeExtraWithValues(array $values): ExtraModelTest
+{
+    $extra = new ExtraModelTest;
+=======
 
 use function Safe\class_uses;
 
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 uses(TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 
 /**
  * @param array<string, mixed> $values
@@ -30,6 +38,7 @@ uses(TestCase::class);
 function makeExtraWithValues(array $values): ExtraModelTest
 {
     $extra = new ExtraModelTest();
+>>>>>>> laraxot/dev
     $attributes = SchemalessAttributes::createForModel($extra, 'extra_attributes');
 
     foreach ($values as $key => $value) {
@@ -42,8 +51,13 @@ function makeExtraWithValues(array $values): ExtraModelTest
 }
 
 describe('HasExtraTrait', function (): void {
+<<<<<<< HEAD
+    $testModel = new TestModelHasExtra;
+    $extraClass = new ExtraModelTest;
+=======
     $testModel = new TestModelHasExtra();
     $extraClass = new ExtraModelTest();
+>>>>>>> laraxot/dev
 
     it('uses the trait correctly', function () use ($testModel): void {
         $traits = class_uses($testModel);
@@ -64,7 +78,7 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('can set and get extra attributes', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues(['test_key' => 'test_value']);
+        $testModel->setRelation('extra', makeExtraWithValues(['test_key' => 'test_value']));
 
         $result = $testModel->getExtra('test_key');
 
@@ -72,13 +86,13 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('handles different data types correctly', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues([
+        $testModel->setRelation('extra', makeExtraWithValues([
             'string_value' => 'test_string',
             'int_value' => 123,
             'bool_value' => true,
             'array_value' => ['nested', 'array'],
             'null_value' => null,
-        ]);
+        ]));
 
         Assert::assertSame('test_string', $testModel->getExtra('string_value'));
         Assert::assertSame(123, $testModel->getExtra('int_value'));
@@ -88,9 +102,13 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('returns null for unsupported stored types', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues([
+        $testModel->setRelation('extra', makeExtraWithValues([
+<<<<<<< HEAD
+            'invalid_value' => new \stdClass,
+=======
             'invalid_value' => new \stdClass(),
-        ]);
+>>>>>>> laraxot/dev
+        ]));
 
         Assert::assertNull($testModel->getExtra('invalid_value'));
     });
@@ -133,7 +151,7 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('handles empty extra attributes', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues([]);
+        $testModel->setRelation('extra', makeExtraWithValues([]));
 
         $result = $testModel->getExtra('non_existent');
         Assert::assertNull($result);

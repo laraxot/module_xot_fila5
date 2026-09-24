@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/health.php
 return [
     'navigation' => [
         'name' => 'Salute',
@@ -37,6 +34,7 @@ return [
         'logout' => [
             'tooltip' => 'logout',
         ],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'label' => 'Health',
     'plural_label' => 'Health (Plurale)',

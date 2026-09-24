@@ -11,12 +11,20 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ColumnData;
+<<<<<<< HEAD
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+use function Safe\ini_set;
+
+=======
 
 use function Safe\ini_set;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+>>>>>>> laraxot/dev
 class ImportCsvAction
 {
     use QueueableAction;
@@ -24,10 +32,17 @@ class ImportCsvAction
     /**
      * Import a CSV file into a database table.
      *
+<<<<<<< HEAD
+     * @param  string  $disk  the storage disk where the file is located
+     * @param  string  $filename  the name of the file to import
+     * @param  string  $db  the database connection name
+     * @param  string  $tbl  the table name where data will be imported
+=======
      * @param string $disk     the storage disk where the file is located
      * @param string $filename the name of the file to import
      * @param string $db       the database connection name
      * @param string $tbl      the table name where data will be imported
+>>>>>>> laraxot/dev
      *
      * @throws \Exception
      */
@@ -80,8 +95,7 @@ class ImportCsvAction
         $excludedColumns = ['id'];
 
         return array_map(
-            function ($column) use ($conn, $tbl) {
-                /** @var string $column */
+            function (string $column) use ($conn, $tbl) {
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(
@@ -96,14 +110,22 @@ class ImportCsvAction
     /**
      * Prepare fields for the SQL query.
      *
+<<<<<<< HEAD
+     * @param  array<int, ColumnData>  $columns
+=======
      * @param array<int, ColumnData> $columns
      *
+>>>>>>> laraxot/dev
      * @return array<string>
      */
     private function prepareFields(array $columns): array
     {
         return array_map(
+<<<<<<< HEAD
+            fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
+=======
             fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
+>>>>>>> laraxot/dev
             $columns,
         );
     }
@@ -111,7 +133,11 @@ class ImportCsvAction
     /**
      * Build the SQL query for importing data.
      *
+<<<<<<< HEAD
+     * @param  array<int, ColumnData>  $columns
+=======
      * @param array<int, ColumnData> $columns
+>>>>>>> laraxot/dev
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -128,7 +154,11 @@ class ImportCsvAction
 
         $sqlReplace = [];
         foreach ($columns as $column) {
+<<<<<<< HEAD
+            if ($column->type === 'decimal') {
+=======
             if ('decimal' === $column->type) {
+>>>>>>> laraxot/dev
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
@@ -139,11 +169,13 @@ class ImportCsvAction
 
         return $sql;
     }
+<<<<<<< HEAD
+=======
 
     /**
      * Transform columns into ColumnData objects.
      *
-     * @param array<int, string> $columns
+     * @param array<string> $columns
      *
      * @return array<ColumnData>
      *
@@ -163,4 +195,5 @@ class ImportCsvAction
             $columns,
         );
     }
+>>>>>>> laraxot/dev
 }

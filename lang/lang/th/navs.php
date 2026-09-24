@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_lmXEIe
+=======
+
+>>>>>>> .merge_file_Y1xdLE
 return [
     'general' => [
         'home' => 'หน้าแรก',

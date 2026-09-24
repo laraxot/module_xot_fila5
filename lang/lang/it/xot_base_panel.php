@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_h0JuiJ
+=======
+
+>>>>>>> .merge_file_vXKD97
 return [
     'A' => 'A',
     'B' => 'B',

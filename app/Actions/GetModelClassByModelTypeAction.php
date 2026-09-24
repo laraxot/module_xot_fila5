@@ -1,11 +1,15 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
+<<<<<<< HEAD
+=======
 declare(strict_types=1);
 
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Actions;
 
 use Spatie\QueueableAction\QueueableAction;

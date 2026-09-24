@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_DQvvZx
+=======
+
+>>>>>>> .merge_file_5Rq7sP
 return [
     'navigation' => [
         'name' => 'cache',

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_knq5dm
+=======
+
+>>>>>>> .merge_file_PgxKjJ
 return [
     'id' => 'id',
     'tipo' => 'tipo',

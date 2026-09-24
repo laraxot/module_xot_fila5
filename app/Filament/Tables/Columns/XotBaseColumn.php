@@ -13,6 +13,10 @@ use Filament\Tables\Columns\Column;
  *
  * @method static static make(string $name) Create a new instance of the column
  */
+<<<<<<< HEAD
+abstract class XotBaseColumn extends Column {}
+=======
 abstract class XotBaseColumn extends Column
 {
 }
+>>>>>>> laraxot/dev

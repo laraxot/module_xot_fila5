@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
@@ -9,7 +8,12 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+$baseModel = new class extends BaseModel
+{
+=======
 $baseModel = new class extends BaseModel {
+>>>>>>> laraxot/dev
     protected $table = 'test_table';
 };
 

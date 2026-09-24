@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/cache_lock.php
 return [
     'navigation' => [
         'name' => 'cache lock',
@@ -12,6 +9,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'cache lock.navigation',
+        'icon' => 'cache lock.navigation',
+        'sort' => 95,
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,16 +49,55 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'key' => [
+            'label' => 'key',
+            'placeholder' => 'key',
+            'helper_text' => 'key',
+            'description' => 'key',
+        ],
+        'owner' => [
+            'label' => 'owner',
+            'placeholder' => 'owner',
+            'helper_text' => 'owner',
+            'description' => 'owner',
+        ],
+        'expiration' => [
+            'label' => 'expiration',
+            'placeholder' => 'expiration',
+            'helper_text' => 'expiration',
+            'description' => 'expiration',
+        ],
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache Lock',
+            'icon' => 'create',
+            'tooltip' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Cache Lock',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Cache Lock',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
         ],
     ],
 ];

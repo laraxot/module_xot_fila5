@@ -4,11 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
-use function Safe\preg_replace;
-
-use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
+use function Safe\preg_replace;
+
+=======
+use function Safe\preg_replace;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * Action per normalizzare i nomi dei driver.
  *
@@ -17,8 +23,6 @@ use Webmozart\Assert\Assert;
  */
 class NormalizeDriverNameAction
 {
-    use QueueableAction;
-
     /**
      * Normalizza il nome del driver eliminando caratteri non alfanumerici
      * e gestendo eventuali casi speciali/alias.

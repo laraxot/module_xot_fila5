@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/cache.php
 return [
     'navigation' => [
         'name' => 'cache',
@@ -12,6 +9,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'cache.navigation',
+        'icon' => 'cache.navigation',
+        'sort' => 90,
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,16 +49,75 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'key' => [
+            'label' => 'key',
+            'placeholder' => 'key',
+            'helper_text' => 'key',
+            'description' => 'key',
+        ],
+        'value' => [
+            'label' => 'value',
+            'placeholder' => 'value',
+            'helper_text' => '',
+            'description' => 'value',
+        ],
+        'expiration' => [
+            'label' => 'expiration',
+            'placeholder' => 'expiration',
+            'helper_text' => 'expiration',
+            'description' => 'expiration',
+        ],
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache',
+            'icon' => 'create',
+            'tooltip' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Cache',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Cache',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
+        ],
+        'route:list' => [
+            'label' => 'route:list',
+            'icon' => 'route:list',
+            'tooltip' => 'route:list',
+        ],
+        'icons:cache' => [
+            'label' => 'icons:cache',
+            'icon' => 'icons:cache',
+            'tooltip' => 'icons:cache',
+        ],
+        'filament:cache-components' => [
+            'label' => 'filament:cache-components',
+            'icon' => 'filament:cache-components',
+            'tooltip' => 'filament:cache-components',
+        ],
+        'filament:clear-cached-components' => [
+            'label' => 'filament:clear-cached-components',
+            'icon' => 'filament:clear-cached-components',
+            'tooltip' => 'filament:clear-cached-components',
         ],
     ],
 ];

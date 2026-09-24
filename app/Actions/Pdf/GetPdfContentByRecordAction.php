@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Enums\PdfEngineEnum;
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Webmozart\Assert\Assert;
@@ -31,12 +31,20 @@ class GetPdfContentByRecordAction
     /**
      * Genera contenuto PDF binario da un record Eloquent.
      *
+<<<<<<< HEAD
+     * @param  Model  $record  Record Eloquent da cui generare il PDF
+     * @param  string|null  $filename  Nome file PDF personalizzato (opzionale)
+     * @return string Contenuto binario del PDF
+     *
+     * @throws \Exception Se la vista non esiste o si verificano errori di generazione
+=======
      * @param Model       $record   Record Eloquent da cui generare il PDF
      * @param string|null $filename Nome file PDF personalizzato (opzionale)
      *
      * @throws \Exception Se la vista non esiste o si verificano errori di generazione
      *
      * @return string Contenuto binario del PDF
+>>>>>>> laraxot/dev
      */
     public function execute(Model $record, ?string $filename = null): string
     {
@@ -62,7 +70,11 @@ class GetPdfContentByRecordAction
         }
 
         // Generate filename if not provided
+<<<<<<< HEAD
+        if ($filename === null) {
+=======
         if (null === $filename) {
+>>>>>>> laraxot/dev
             $filename = $this->generateFilename($record);
         }
 
@@ -73,9 +85,14 @@ class GetPdfContentByRecordAction
     /**
      * Metodo di convenienza per generare PDF da record con nome file personalizzato.
      *
+<<<<<<< HEAD
+     * @param  Model  $record  Record Eloquent
+     * @param  string  $filename  Nome file personalizzato
+=======
      * @param Model  $record   Record Eloquent
      * @param string $filename Nome file personalizzato
      *
+>>>>>>> laraxot/dev
      * @return string Contenuto binario del PDF
      */
     public function fromRecord(Model $record, string $filename): string
@@ -86,8 +103,12 @@ class GetPdfContentByRecordAction
     /**
      * Genera il nome della vista seguendo le convenzioni Laraxot.
      *
+<<<<<<< HEAD
+     * @param  Model  $record  Record Eloquent
+=======
      * @param Model $record Record Eloquent
      *
+>>>>>>> laraxot/dev
      * @return string Nome della vista nel formato {module}::{model-kebab}.show.pdf
      */
     protected function generateViewName(Model $record): string
@@ -102,9 +123,14 @@ class GetPdfContentByRecordAction
     /**
      * Prepara i parametri standard per la vista.
      *
+<<<<<<< HEAD
+     * @param  Model  $record  Record Eloquent
+     * @param  string  $viewName  Nome della vista
+=======
      * @param Model  $record   Record Eloquent
      * @param string $viewName Nome della vista
      *
+>>>>>>> laraxot/dev
      * @return array<string, mixed> Parametri per la vista
      */
     protected function prepareViewParameters(Model $record, string $viewName): array
@@ -137,8 +163,12 @@ class GetPdfContentByRecordAction
     /**
      * Genera nome file automatico basato sul record.
      *
+<<<<<<< HEAD
+     * @param  Model  $record  Record Eloquent
+=======
      * @param Model $record Record Eloquent
      *
+>>>>>>> laraxot/dev
      * @return string Nome file generato
      */
     protected function generateFilename(Model $record): string
@@ -168,12 +198,20 @@ class GetPdfContentByRecordAction
     /**
      * Genera contenuto PDF binario utilizzando spipu/html2pdf.
      *
+<<<<<<< HEAD
+     * @param  string  $html  Contenuto HTML da convertire
+     * @param  string  $filename  Nome file per riferimento
+     * @return string Contenuto binario del PDF
+     *
+     * @throws \Exception Se si verificano errori durante la generazione PDF
+=======
      * @param string $html     Contenuto HTML da convertire
      * @param string $filename Nome file per riferimento
      *
      * @throws \Exception Se si verificano errori durante la generazione PDF
      *
      * @return string Contenuto binario del PDF
+>>>>>>> laraxot/dev
      */
     protected function generatePdfContent(string $html, string $filename): string
     {
@@ -197,7 +235,7 @@ class GetPdfContentByRecordAction
             // Generate and return PDF content as binary string
             return $html2pdf->output('', 'S'); // 'S' returns string content
         } catch (\Exception $e) {
-            \Log::error('PDF generation failed in GetPdfContentByRecordAction', [
+            Log::error('PDF generation failed in GetPdfContentByRecordAction', [
                 'filename' => $filename,
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),

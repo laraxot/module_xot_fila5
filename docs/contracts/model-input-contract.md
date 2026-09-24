@@ -48,6 +48,17 @@ interface ModelInputContract extends ModelContract
 5. Gestione null-safety
 
 ## Collegamenti
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+- [Form Guidelines](../forms/README.md)
+- [Input Components](../components/FORM-COMPONENTS.md)
+- [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+- [Contracts Overview](./README.md)
+<<<<<<< HEAD
+=======
+=======
 - [Form Guidelines](../forms/readme.md)
 - [Input Components](../components/form-components.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -56,3 +67,5 @@ interface ModelInputContract extends ModelContract
 - [Input Components](../components/FORM-COMPONENTS.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

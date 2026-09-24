@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Qa70fI
+=======
+
+>>>>>>> .merge_file_MeeVqR
 return [
     'title' => 'Εγκατάσταση Laravel',
     'next' => 'Επόμενο',

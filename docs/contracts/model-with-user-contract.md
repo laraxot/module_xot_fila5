@@ -71,6 +71,12 @@ class Article extends Model implements ModelWithUserContract
 - [User Management](../features/USER-MANAGEMENT.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 - [User Management](../features/user-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

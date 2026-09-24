@@ -1,4 +1,11 @@
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+# Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🎯 Missione Completata
 
@@ -116,6 +123,15 @@ Creati 3 nuovi documenti:
 1. `merge-conflict-resolution-2025-11-04.md` - Report tecnico dettagliato
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-2025-11-04-merge-conflicts.md` - Questo documento
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
+2. `file-locking-pattern.md` - Nuova regola fondamentale
+3. `lessons-learned-[DATE]-merge-conflicts.md` - Questo documento
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 10. **AGGIORNAMENTO E STUDIO**
 
@@ -238,6 +254,13 @@ public null|string $var = null;
 ## 💾 Documentazione Creata
 
 1. **merge-conflict-resolution-2025-11-04.md**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+1. **merge-conflict-resolution-[DATE].md**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -255,6 +278,13 @@ public null|string $var = null;
    - File locking integration
 
 4. **lessons-learned-2025-11-04-merge-conflicts.md** (questo file)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    - Processo completo 10-step
    - Filosofia + Implementation
    - Checklist operativa
@@ -314,6 +344,13 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ## 📚 References
 
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-2025-11-04.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
@@ -322,6 +359,16 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Data:** [DATE]
+**Autore:** AI Claude + Metodologia Filosofica 10-Step
+**Status:** ✅ COMPLETATO CON SUCCESSO
+# Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Data:** 2025-11-04
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
@@ -443,6 +490,15 @@ Creati 3 nuovi documenti:
 1. `merge-conflict-resolution-2025-11-04.md` - Report tecnico dettagliato
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-2025-11-04-merge-conflicts.md` - Questo documento
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
+2. `file-locking-pattern.md` - Nuova regola fondamentale
+3. `lessons-learned-[DATE]-merge-conflicts.md` - Questo documento
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 10. **AGGIORNAMENTO E STUDIO**
 
@@ -566,6 +622,13 @@ public null|string $var = null;
 ## 💾 Documentazione Creata
 
 1. **merge-conflict-resolution-2025-11-04.md**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+1. **merge-conflict-resolution-[DATE].md**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -583,6 +646,13 @@ public null|string $var = null;
    - File locking integration
 
 4. **lessons-learned-2025-11-04-merge-conflicts.md** (questo file)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    - Processo completo 10-step
    - Filosofia + Implementation
    - Checklist operativa
@@ -642,6 +712,13 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ## 📚 References
 
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-2025-11-04.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
@@ -651,5 +728,16 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ---
 
 **Data:** 2025-11-04
+<<<<<<< HEAD
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
+=======
+<<<<<<< HEAD
+**Autore:** AI Claude + Metodologia Filosofica 10-Step
+**Status:** ✅ COMPLETATO CON SUCCESSO
+=======
+**Data:** [DATE]
+**Autore:** AI Claude + Metodologia Filosofica 10-Step
+**Status:** ✅ COMPLETATO CON SUCCESSO
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

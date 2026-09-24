@@ -233,10 +233,32 @@ abstract class XotBaseResource extends Resource
      * Get form schema con validation automatica
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_8Lyyh9
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_3GtQwM
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_xf0vfX
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_COxDbv
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8Lyyh9
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_3GtQwM
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xf0vfX
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_COxDbv
     {
         return [
             // Schema base automatico

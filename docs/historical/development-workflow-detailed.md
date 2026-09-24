@@ -175,10 +175,32 @@ namespace Modules\NewModule\Filament\Resources;
 class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_POli2Y
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_4Na5eZ
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_psj0op
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_POli2Y
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4Na5eZ
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_psj0op
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -190,10 +212,32 @@ class ProductResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_POli2Y
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_4Na5eZ
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_psj0op
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_POli2Y
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4Na5eZ
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_psj0op
     {
         return [
             Infolists\Components\TextEntry::make('name'),

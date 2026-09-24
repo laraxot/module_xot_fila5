@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_xOyXvL
+=======
+
+>>>>>>> .merge_file_IGFbI2
 return [
     404 => [
         'title' => 'Sidan kunde inte visas.',

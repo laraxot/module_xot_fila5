@@ -166,7 +166,21 @@ use Filament\Forms\Components\TextInput;
 
 class ExampleResource extends XotBaseResource
 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -196,4 +210,12 @@ class ExampleResource extends XotBaseResource
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Filament*
+<<<<<<< HEAD
 *Status: ✅ Correzioni Implementate*
+=======
+<<<<<<< HEAD
+*Status: ✅ Correzioni Implementate*
+=======
+*Status: ✅ Correzioni Implementate*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

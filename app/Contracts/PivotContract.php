@@ -11,14 +11,22 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property string|null $title
  * @property string|null $subtitle
+<<<<<<< HEAD
+ * @property int|null $status
+=======
  * @property int|null    $status
+>>>>>>> laraxot/dev
  *
- * @method mixed update($params)
+ * @method bool update($params)
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
+interface PivotContract {}
+=======
 interface PivotContract
 {
 }
+>>>>>>> laraxot/dev

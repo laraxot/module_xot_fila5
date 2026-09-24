@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\ModuleResource\Pages;
 
+<<<<<<< HEAD
+=======
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
@@ -15,6 +17,7 @@ use Filament\Tables;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
+>>>>>>> laraxot/dev
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Resources\ModuleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -24,11 +27,9 @@ class ListModules extends XotBaseListRecords
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = ModuleResource::class;
+<<<<<<< HEAD
+=======
 
-    /**
-     * @return array<int, Stack>
-     */
-    #[\Override]
     public function getGridTableColumns(): array
     {
         return [
@@ -52,7 +53,7 @@ class ListModules extends XotBaseListRecords
     /**
      * Undocumented function.
      *
-     * @return array<string, BaseFilter>
+     * @return array<BaseFilter>
      */
     #[\Override]
     public function getTableFilters(): array
@@ -71,7 +72,7 @@ class ListModules extends XotBaseListRecords
     /**
      * Undocumented function.
      *
-     * @return array<int|string, Action|ActionGroup>
+     * @return array<Action|ActionGroup>
      */
     #[\Override]
     public function getTableActions(): array
@@ -93,4 +94,5 @@ class ListModules extends XotBaseListRecords
             'delete' => DeleteBulkAction::make(),
         ];
     }
+>>>>>>> laraxot/dev
 }

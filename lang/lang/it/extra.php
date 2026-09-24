@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_zuldSy
+=======
+
+>>>>>>> .merge_file_jKPPUO
 return [
     'navigation' => [
         'name' => 'extra',

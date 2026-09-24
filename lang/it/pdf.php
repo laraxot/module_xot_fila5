@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/pdf.php
 return [
     'fields' => [
         'pdf' => [
@@ -25,7 +22,11 @@ return [
         ],
         'label' => 'Pdf',
         'sort' => 1,
+<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
+=======
+        'icon' => 'xot-files.pdf',
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [

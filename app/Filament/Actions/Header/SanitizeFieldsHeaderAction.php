@@ -1,18 +1,52 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_TyHJQO
 =======
 declare(strict_types=1);
 >>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+=======
+<<<<<<< .merge_file_x7bx60
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_F8dg7R
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FHLYNr
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_TyHJQO
+=======
+=======
+<<<<<<< .merge_file_x7bx60
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FHLYNr
 declare(strict_types=1);
 
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TyHJQO
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_F8dg7R
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FHLYNr
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
@@ -57,10 +91,28 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                             $row->{$fieldName} = $string;
                             $save = true;
 <<<<<<< HEAD
+<<<<<<< .merge_file_TyHJQO
+=======
+                            $c++;
+=======
+<<<<<<< .merge_file_x7bx60
+<<<<<<< HEAD
+                            ++$c;
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FHLYNr
                             ++$c;
 =======
                             $c++;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TyHJQO
+=======
+>>>>>>> laraxot/dev
+=======
+                            ++$c;
+>>>>>>> .merge_file_F8dg7R
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FHLYNr
                         }
                     }
                     if ($save) {
@@ -76,10 +128,28 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< .merge_file_TyHJQO
+=======
+     * @param  list<string>  $fields
+=======
+<<<<<<< .merge_file_x7bx60
+<<<<<<< HEAD
+     * @param list<string> $fields
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FHLYNr
      * @param list<string> $fields
 =======
      * @param  list<string>  $fields
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TyHJQO
+=======
+>>>>>>> laraxot/dev
+=======
+     * @param list<string> $fields
+>>>>>>> .merge_file_F8dg7R
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FHLYNr
      */
     public function setFields(array $fields): self
     {

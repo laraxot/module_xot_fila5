@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+---
+title: "_todo"
+module: "Xot"
+type: concept
+tags: [todo]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "todo"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

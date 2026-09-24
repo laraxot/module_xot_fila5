@@ -6,10 +6,26 @@ slug: tips
 description: 'https://github.com/phpstan/phpstan/issues/1242'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< .merge_file_I7wtoE
+=======
+<<<<<<< HEAD
+=======
+converted_from: __tips.txt
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QhaYc4
 converted_from: tips.txt
 =======
 converted_from: __tips.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_I7wtoE
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QhaYc4
 created: 2026-08-24
 updated: 2026-08-24
 ---

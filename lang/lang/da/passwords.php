@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_qIbwIg
+=======
+
+>>>>>>> .merge_file_cIWA1r
 return [
     'password' => 'Adgangskoder skal være mindst seks tegn og matche bekræftelsen.',
     'reset' => 'Din adgangskode er blevet nulstillet!',

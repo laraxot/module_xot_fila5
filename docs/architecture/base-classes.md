@@ -31,7 +31,21 @@ class MyPage extends Modules\Xot\Filament\Resources\Pages\XotBasePage
 class MyResource extends XotBaseResource
 {
     // ✅ OK - Ha getFormSchema()
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array { /* ... */ }
+=======
+    public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -130,7 +144,21 @@ abstract class XotBaseResource extends Filament\Resources\Resource
     /**
      * Get form schema with automatic translations.
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             Section::make(__('filament.section.general'))
@@ -293,7 +321,21 @@ class YourResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-document';
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             ...parent::getFormSchema(),
@@ -362,7 +404,21 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 ```php
 // ✅ OPTIMIZED in XotBase classes
 /** @return array<string, Component> */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
 public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array
@@ -422,15 +478,33 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 
 ### Documentation Links
 
+<<<<<<< HEAD
+- [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
+- [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
+=======
+<<<<<<< HEAD
+- [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
+- [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
+=======
 - [Filament 4.x Upgrade Guide](../../../docs/filament-4-upgrade.md)
 - [Module Upgrade Guide](../../../docs/upgrade-modules-to-filament-4.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Breaking Changes Reference](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 ## 📊 Architecture Benefits
 
 ### Consistency
 - **Uniform Interface**: Tutte le classi seguono gli stessi pattern
+<<<<<<< HEAD
+- **Predictable Behavior**: Comportamento consistente across modules
+=======
+<<<<<<< HEAD
+- **Predictable Behavior**: Comportamento consistente across modules
+=======
 - **<nome progetto>able Behavior**: Comportamento consistente across modules
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Standard Conventions**: Naming e structure conventions
 
 ### Maintainability
@@ -512,4 +586,12 @@ class MyModel extends XotBaseModel
 
 ---
 
+<<<<<<< HEAD
+**See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
+=======
+<<<<<<< HEAD
+**See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
+=======
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

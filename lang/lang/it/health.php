@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ODwbWS
+=======
+
+>>>>>>> .merge_file_HLxJDe
 return [
     'navigation' => [
         'name' => 'Salute',

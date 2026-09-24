@@ -116,7 +116,15 @@ public function createUser(array $data): User
 - Document permission and role systems
 - Include social login integration guides
 
+<<<<<<< HEAD
 ### Quaeris Module
+=======
+<<<<<<< HEAD
+### Quaeris Module
+=======
+### healthcare_app Module
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - Document survey management workflows
 - Document reporting and analytics features
@@ -151,4 +159,13 @@ public function createUser(array $data): User
 ---
 
 **Last Updated**: 2025-11-11
+<<<<<<< HEAD
 **Standard Version**: 1.0
+=======
+<<<<<<< HEAD
+**Standard Version**: 1.0
+=======
+
+**Standard Version**: 1.0
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

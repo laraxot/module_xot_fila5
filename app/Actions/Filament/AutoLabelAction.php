@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * -WIP.
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
@@ -26,7 +25,13 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
+     * <<<<<<< HEAD
+     *
      * @param Field|Component $component Il componente a cui applicare l'etichetta
+     *                                   =======
+     * @param Field|Component $component Il componente a cui applicare l'etichetta
+     *
+     * >>>>>>> laraxot/dev
      *
      * @return Field|Component Il componente con l'etichetta applicata
      */
@@ -84,7 +89,7 @@ class AutoLabelAction
                 $saveTransAction = app(SaveTransAction::class);
                 Assert::isCallable([$saveTransAction, 'execute'], 'SaveTransAction::execute deve essere chiamabile');
 
-                $saveTransAction->execute($label_key, $label_value);
+                $saveTransAction->execute($label_key, (string) $label_value);
             }
 
             // Applichiamo l'etichetta al componente
@@ -98,7 +103,13 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
+     * <<<<<<< HEAD
+     *
      * @param Field|Component $component Il componente di cui ottenere il nome
+     *                                   =======
+     * @param Field|Component $component Il componente di cui ottenere il nome
+     *
+     * >>>>>>> laraxot/dev
      *
      * @return string Il nome del componente
      */

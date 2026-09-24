@@ -21,7 +21,23 @@ final class BrokenAttributesModelForSafeArrayCast extends Model
      */
     public function attributesToArray(): array
     {
+<<<<<<< .merge_file_kWx9bb
         throw new ValueError('Mock error');
+=======
+<<<<<<< HEAD
+        throw new ValueError('Mock error');
+=======
+<<<<<<< .merge_file_0NYkOr
+<<<<<<< HEAD
+        throw new ValueError('Mock error');
+=======
+        throw new \ValueError('Mock error');
+>>>>>>> laraxot/dev
+=======
+        throw new \ValueError('Mock error');
+>>>>>>> .merge_file_s2kNh3
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cn7nxj
     }
 
     /**
@@ -34,6 +50,22 @@ final class BrokenAttributesModelForSafeArrayCast extends Model
 
     public function getAttribute($key): mixed
     {
+<<<<<<< .merge_file_kWx9bb
         return $key === 'name' ? 'Fallback' : null;
+=======
+<<<<<<< HEAD
+        return $key === 'name' ? 'Fallback' : null;
+=======
+<<<<<<< .merge_file_0NYkOr
+<<<<<<< HEAD
+        return $key === 'name' ? 'Fallback' : null;
+=======
+        return 'name' === $key ? 'Fallback' : null;
+>>>>>>> laraxot/dev
+=======
+        return 'name' === $key ? 'Fallback' : null;
+>>>>>>> .merge_file_s2kNh3
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cn7nxj
     }
 }

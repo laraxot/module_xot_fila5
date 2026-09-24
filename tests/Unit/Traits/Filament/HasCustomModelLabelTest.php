@@ -1,8 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\Fixtures\Traits\BreadcrumbProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromModelNameProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromPropertyProbe;
@@ -10,7 +13,10 @@ use Modules\Xot\Tests\Fixtures\Traits\NavigationLabelFromPluralProbe;
 use Modules\Xot\Tests\Fixtures\Traits\NavigationLabelFromPropertyProbe;
 use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromPropertyProbe;
 use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromSingularProbe;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('gets model label from property', function (): void {
     Assert::assertSame('Custom Label', ModelLabelFromPropertyProbe::getModelLabel());

@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
@@ -48,7 +47,13 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
+     * <<<<<<< HEAD
+     *
      * @param array<int, string> $scopes
+     *                                   =======
+     * @param array<int, string> $scopes
+     *
+     * >>>>>>> laraxot/dev
      *
      * @return PersonalAccessTokenResult<Token>
      */

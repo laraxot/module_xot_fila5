@@ -52,7 +52,16 @@ $user->hasAttribute('name');  // true
 | **Tenant** | 1 | 9 | ~3 min |
 | **Lang** | 1 | 2 | ~1 min |
 | **DbForge** | 1 | 1 | ~1 min |
+<<<<<<< HEAD
 | **Quaeris** | 1 | 1 | ~2 min |
+=======
+<<<<<<< HEAD
+| **Quaeris** | 1 | 1 | ~2 min |
+=======
+| **healthcare_app** | 1 | 1 | ~2 min |
+| **ModuloEsempio** | 1 | 1 | ~2 min |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | **Xot** | 0 | 0 (solo in commenti) | ~1 min |
 | **TOTALE** | **28** | **72** | **~36 min** |
 
@@ -67,7 +76,16 @@ $user->hasAttribute('name');  // true
 ✅ Tenant:  0 errori (già perfetto)
 ✅ Lang:    0 errori
 ✅ DbForge: 0 errori
+<<<<<<< HEAD
 ✅ Quaeris: 0 errori su file modificato
+=======
+<<<<<<< HEAD
+✅ Quaeris: 0 errori su file modificato
+=======
+✅ healthcare_app: 0 errori su file modificato
+✅ ModuloEsempio: 0 errori su file modificato
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ⚠️  Xot:     4 errori pre-esistenti (non property_exists)
 ```
 
@@ -234,7 +252,16 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 ### DbForge (1 file)
 1. `Console/Commands/SearchTextInDbCommand.php` - dynamic table property ✅
 
+<<<<<<< HEAD
 ### Quaeris (1 file)
+=======
+<<<<<<< HEAD
+### Quaeris (1 file)
+=======
+### healthcare_app (1 file)
+### ModuloEsempio (1 file)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 1. `Filament/Resources/.../ViewQuestionChartVisualizationWidget.php` - livewire property ✅
 
 ---
@@ -302,7 +329,16 @@ if (isset($media->file_name)) {
 | **Tenant** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **Lang** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **DbForge** | ✅ 0 errori | ⚠️ OK | ✅ OK |
+<<<<<<< HEAD
 | **Quaeris** | ⚠️ 64 errori* | - | - |
+=======
+<<<<<<< HEAD
+| **Quaeris** | ⚠️ 64 errori* | - | - |
+=======
+| **healthcare_app** | ⚠️ 64 errori* | - | - |
+| **ModuloEsempio** | ⚠️ 64 errori* | - | - |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | **Xot** | ⚠️ 4 errori* | - | - |
 
 \* Errori pre-esistenti non correlati a property_exists
@@ -554,7 +590,16 @@ Ogni modulo ha ora:
 
 ### 1. Moduli Rimanenti con Errori
 
+<<<<<<< HEAD
 **Quaeris** (64 errori):
+=======
+<<<<<<< HEAD
+**Quaeris** (64 errori):
+=======
+**healthcare_app** (64 errori):
+**ModuloEsempio** (64 errori):
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Errori pre-esistenti non correlati a property_exists
 - Richiedono intervento separato per type hints
 - Priorità media
@@ -584,6 +629,10 @@ Implementare:
 ## 🔗 Collegamenti
 
 **Documentazione Root**:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [../../../docs/code-quality/eloquent-magic-properties.md](../../../docs/code-quality/eloquent-magic-properties.md)
 - [../../../docs/phpstan/level-10-guide.md](../../../docs/phpstan/level-10-guide.md)
 
@@ -591,6 +640,21 @@ Implementare:
 - [User/docs/phpstan-level10-fixes.md](../../User/docs/phpstan-level10-fixes.md)
 - [Tenant/docs/phpstan-level10-fixes.md](../../Tenant/docs/phpstan-level10-fixes.md)
 - [Notify/docs/eloquent-properties-best-practices.md](../../Notify/docs/eloquent-properties-best-practices.md)
+<<<<<<< HEAD
+=======
+=======
+- [User/docs/phpstan-level10-fixes.md](../../User/docs/phpstan-level10-fixes.md)
+- [Tenant/docs/phpstan-level10-fixes.md](../../Tenant/docs/phpstan-level10-fixes.md)
+- [Notify/docs/eloquent-properties-best-practices.md](../../Notify/docs/eloquent-properties-best-practices.md)
+- [../../../../docs/code-quality/eloquent-magic-properties.md](../../../../docs/code-quality/eloquent-magic-properties.md)
+- [../../../../docs/phpstan/level-10-guide.md](../../../../docs/phpstan/level-10-guide.md)
+
+**Documentazione Moduli**:
+- [User/docs/phpstan-level10-fixes.md](../../user/docs/phpstan-level10-fixes.md)
+- [Tenant/docs/phpstan-level10-fixes.md](../../tenant/docs/phpstan-level10-fixes.md)
+- [Notify/docs/eloquent-properties-best-practices.md](../../notify/docs/eloquent-properties-best-practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **References Esterne**:
 - [Laravel Eloquent Properties](https://laravel.com/docs/11.x/eloquent#accessing-attributes)
@@ -608,4 +672,12 @@ Implementare:
 ---
 
 > "L'attributo che non esiste, esiste. Usa isset() per vedere l'essenza, non il corpo."
+<<<<<<< HEAD
 > — Zen degli Attributi Magici Eloquent 🙏
+=======
+<<<<<<< HEAD
+> — Zen degli Attributi Magici Eloquent 🙏
+=======
+> — Zen degli Attributi Magici Eloquent 🙏
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

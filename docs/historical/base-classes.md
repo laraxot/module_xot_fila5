@@ -14,10 +14,32 @@ namespace Modules\Xot\Filament\Resources;
 class XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_1HvnPn
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ATwocH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_lnwnQg
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_APMm2D
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_1HvnPn
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ATwocH
+=======
+=======
+    public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_lnwnQg
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_APMm2D
     public static function getListTableColumns(): array;
 }
 ```
