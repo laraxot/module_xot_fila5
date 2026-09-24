@@ -175,7 +175,10 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute(string $attribute);
 
     /**
+<<<<<<< HEAD
      * @param  Builder  $query
+=======
+>>>>>>> laraxot/dev
      * @return AdjacencyBuilder<Model>
      */
     public function newEloquentBuilder(Builder $query);

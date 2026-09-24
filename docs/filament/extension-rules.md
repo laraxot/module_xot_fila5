@@ -304,4 +304,8 @@ class UserResource extends XotBaseResource
     // getPages() NON necessario se standard
     // getTableActions() NON necessario se standard
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> laraxot/dev

@@ -115,4 +115,8 @@ public function getInfolistSchema(): array
 
 ---
 **Creato**: 2026-05-07
+<<<<<<< HEAD
 **Modulo**: Xot
+=======
+**Modulo**: Xot
+>>>>>>> laraxot/dev

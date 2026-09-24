@@ -77,7 +77,11 @@ class StateOverviewWidget extends XotBaseSchemaWidget
 
             return $cacheKey;
         } catch (\Error $e) {
+<<<<<<< HEAD
             if ('' === $this->cacheKey) {
+=======
+            if ($this->cacheKey === '') {
+>>>>>>> laraxot/dev
                 $this->cacheKey = Str::uuid()->toString();
             }
 

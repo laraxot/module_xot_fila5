@@ -10,6 +10,10 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 // use Filament\Resources\Pages\Page;
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Component;
+>>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -191,18 +195,30 @@ abstract class XotBasePage extends Page implements HasForms
     /**
      * Resolve concrete page schema without invoking deprecated Filament hook directly.
      *
+<<<<<<< HEAD
      * @return array<int|string, \Filament\Schemas\Components\Component>
+=======
+     * @return array<int|string, Component>
+>>>>>>> laraxot/dev
      */
     private function resolveFormSchemaForXotPage(): array
     {
         $method = new \ReflectionMethod($this, 'getFormSchema');
         $declaringClass = $method->getDeclaringClass()->getName();
 
+<<<<<<< HEAD
         if (self::class === $declaringClass || str_starts_with($declaringClass, 'Filament\\')) {
             return [];
         }
 
         /** @var array<int|string, \Filament\Schemas\Components\Component> $schema */
+=======
+        if ($declaringClass === self::class || str_starts_with($declaringClass, 'Filament\\')) {
+            return [];
+        }
+
+        /** @var array<int|string, Component> $schema */
+>>>>>>> laraxot/dev
         $schema = $method->invoke($this);
 
         return $schema;

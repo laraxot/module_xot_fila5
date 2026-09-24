@@ -699,7 +699,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -1040,4 +1044,8 @@ Prima di considerare completa una risorsa Filament, verificare:
 - `CreateAppointment.php` - Estende `XotBaseCreateRecord`
 - `EditAppointment.php` - Estende `XotBaseEditRecord`
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
+=======
+*Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
+>>>>>>> laraxot/dev

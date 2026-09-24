@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * Pest Laravel helper stubs for PHPStan.
  *
@@ -11,13 +15,24 @@
  * - This file is only for static analysis and test helper convenience.
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> laraxot/dev
 namespace Pest\Laravel;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
+<<<<<<< HEAD
+=======
+use Pest\PendingCalls\AfterEachCall;
+use Pest\PendingCalls\BeforeEachCall;
+use Pest\PendingCalls\DescribeCall;
+use Pest\PendingCalls\TestCall;
+use Pest\PendingCalls\UsesCall;
+>>>>>>> laraxot/dev
 
 /**
  * Authenticate as a given model or ID.
@@ -188,7 +203,11 @@ function followingRedirects(int $number = 5): TestResponse
 /**
  * Define a test case.
  */
+<<<<<<< HEAD
 function test(string $description, ?\Closure $closure = null): mixed
+=======
+function test(string $description, ?\Closure $closure = null): TestCall
+>>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -196,7 +215,11 @@ function test(string $description, ?\Closure $closure = null): mixed
 /**
  * Define a test case.
  */
+<<<<<<< HEAD
 function it(string $description, ?\Closure $closure = null): mixed
+=======
+function it(string $description, ?\Closure $closure = null): TestCall
+>>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -204,7 +227,11 @@ function it(string $description, ?\Closure $closure = null): mixed
 /**
  * Define a test group.
  */
+<<<<<<< HEAD
 function describe(string $description, \Closure $closure): mixed
+=======
+function describe(string $description, \Closure $closure): DescribeCall
+>>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -212,7 +239,11 @@ function describe(string $description, \Closure $closure): mixed
 /**
  * Define a before each hook.
  */
+<<<<<<< HEAD
 function beforeEach(\Closure $closure): mixed
+=======
+function beforeEach(\Closure $closure): BeforeEachCall
+>>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -220,7 +251,11 @@ function beforeEach(\Closure $closure): mixed
 /**
  * Define an after each hook.
  */
+<<<<<<< HEAD
 function afterEach(\Closure $closure): mixed
+=======
+function afterEach(\Closure $closure): AfterEachCall
+>>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -230,7 +265,11 @@ function afterEach(\Closure $closure): mixed
  *
  * @param  class-string  ...$classes
  */
+<<<<<<< HEAD
 function uses(string ...$classes): mixed
+=======
+function uses(string ...$classes): UsesCall
+>>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }

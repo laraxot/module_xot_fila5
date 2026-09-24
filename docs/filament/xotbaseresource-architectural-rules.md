@@ -181,4 +181,8 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 
 **Data Decisione**: Gennaio 2026  
 **Vincitore Dibattito**: Posizione B - Centralizzazione Totale  
+<<<<<<< HEAD
 **Conforme a**: DRY, KISS, Filosofia Laraxot
+=======
+**Conforme a**: DRY, KISS, Filosofia Laraxot
+>>>>>>> laraxot/dev

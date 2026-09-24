@@ -1,15 +1,22 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+use Filament\Tables\Columns\Column;
+>>>>>>> laraxot/dev
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 /**
  * @param object $instance
  */
+=======
+>>>>>>> laraxot/dev
 function invokeProtectedTableHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -24,9 +31,15 @@ test('getTableFiltersLayout default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
     public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }
@@ -40,9 +53,15 @@ test('getTableFiltersLayout default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
     public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }
@@ -63,9 +82,15 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
     public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }
@@ -79,9 +104,15 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
     public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }

@@ -45,6 +45,7 @@ abstract class TestCase extends XotBaseTestCase
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite', 'user', 'tenant', 'xot'];
 
+<<<<<<< HEAD
     public mixed $action = null;
 
     public mixed $model = null;
@@ -71,6 +72,8 @@ abstract class TestCase extends XotBaseTestCase
 
     public mixed $extra_attributes = null;
 
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<int, class-string<ServiceProvider>>
      */

@@ -13,8 +13,12 @@ class GetPronounceablePasswordAction
     /**
      * Genera una password pronunciabile con caratteri speciali e numeri.
      *
+<<<<<<< HEAD
      * @param int $length Lunghezza minima della password (default: 12)
      *
+=======
+     * @param  int  $length  Lunghezza minima della password (default: 12)
+>>>>>>> laraxot/dev
      * @return string Password generata
      */
     public function execute(int $length = 12): string
@@ -54,7 +58,11 @@ class GetPronounceablePasswordAction
         }
 
         // Verifica che la password non sia vuota prima di accedere agli offset
+<<<<<<< HEAD
         if (0 === strlen($password)) {
+=======
+        if (strlen($password) === 0) {
+>>>>>>> laraxot/dev
             // Fallback: genera almeno una consonante e una vocale
             $password = $consonants[array_rand($consonants)].$vowels[array_rand($vowels)];
         }

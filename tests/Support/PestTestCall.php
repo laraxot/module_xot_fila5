@@ -6,9 +6,13 @@ namespace Modules\Xot\Tests\Support;
 
 final class PestTestCall
 {
+<<<<<<< HEAD
     public function __construct(private readonly ?object $call = null)
     {
     }
+=======
+    public function __construct(private readonly ?object $call = null) {}
+>>>>>>> laraxot/dev
 
     public function group(string ...$groups): self
     {
@@ -56,8 +60,13 @@ final class PestTestCall
     }
 
     /**
+<<<<<<< HEAD
      * @param class-string|string          $abstract
      * @param (callable(mixed): void)|null $mock
+=======
+     * @param  class-string|string  $abstract
+     * @param  (callable(mixed): void)|null  $mock
+>>>>>>> laraxot/dev
      */
     public function mock(string $abstract, ?callable $mock = null): self
     {
@@ -65,7 +74,11 @@ final class PestTestCall
     }
 
     /**
+<<<<<<< HEAD
      * @param array<array-key, mixed> $arguments
+=======
+     * @param  array<array-key, mixed>  $arguments
+>>>>>>> laraxot/dev
      */
     private function forward(string $method, array $arguments): self
     {

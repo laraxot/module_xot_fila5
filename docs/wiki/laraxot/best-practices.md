@@ -78,7 +78,11 @@ return [
 
 ### Regole di Estensione
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Implementare `public function getFormSchema(): array`
+=======
+1. Implementare `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
 =======
 1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev

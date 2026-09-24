@@ -1,12 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 use Illuminate\Support\Facades\File;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 
 use function Safe\class_uses;
 
@@ -163,7 +170,11 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
 
     it('uses the QueueableAction trait for sync/async execution', function () {
         Assert::assertContains(
+<<<<<<< HEAD
             \Spatie\QueueableAction\QueueableAction::class,
+=======
+            QueueableAction::class,
+>>>>>>> laraxot/dev
             class_uses(GetAllModelsByModuleNameAction::class),
         );
     });

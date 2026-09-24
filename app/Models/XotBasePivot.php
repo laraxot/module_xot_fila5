@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -29,7 +32,10 @@ use function Safe\preg_match;
 abstract class XotBasePivot extends EloquentPivot
 {
     use HasXotFactory;
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
     use Updater;
 
     /**

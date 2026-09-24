@@ -922,4 +922,8 @@ return [
 **Data Analisi**: [DATE]
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
+<<<<<<< HEAD
 **Stima Effort**: 40-60 ore di refactoring
+=======
+**Stima Effort**: 40-60 ore di refactoring
+>>>>>>> laraxot/dev

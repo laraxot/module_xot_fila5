@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers\Filament;
 
+<<<<<<< HEAD
+=======
+use Filament\Auth\Pages\Login;
+>>>>>>> laraxot/dev
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -18,8 +22,13 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
 // Remove if not used elsewhere implicitly
+=======
+// Remove if not used elsewhere implicitly
+use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -118,7 +127,11 @@ abstract class XotBasePanelProvider extends PanelProvider
                         });
                     </script>
                     HTML,
+<<<<<<< HEAD
                 scopes: \Filament\Auth\Pages\Login::class,
+=======
+                scopes: Login::class,
+>>>>>>> laraxot/dev
             );
 
         if ($this->discoverModuleComponents) {

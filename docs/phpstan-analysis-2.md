@@ -3,12 +3,16 @@
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 **NON è stato modificato** `phpstan.neon`
 
 ## Analisi Completa
 
 **Totale Errori**: 776
 **Livello PHPStan**: 9
+<<<<<<< HEAD
 =======
 **NON è stato modificato** `/var/www/html/_bases/<directory progetto>/laravel/phpstan.neon`
 
@@ -16,6 +20,8 @@
 
 **Totale Errori**: 776  
 **Livello PHPStan**: 9  
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 **Data Analisi**: 18 Agosto 2025
 
@@ -32,9 +38,13 @@ Collection $items
 public function method(array $params): array
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ✅ CORRETTO
 =======
 // ✅ CORRETTO  
+>>>>>>> laraxot/dev
+=======
+// ✅ CORRETTO
 >>>>>>> laraxot/dev
 array<string, mixed> $data
 Collection<int, Model> $items
@@ -194,9 +204,13 @@ class MyModel extends BaseModel
 
 - **Fase 1 (Xot)**: 2-3 ore
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Fase 2 (User)**: 1-2 ore
 =======
 - **Fase 2 (User)**: 1-2 ore  
+>>>>>>> laraxot/dev
+=======
+- **Fase 2 (User)**: 1-2 ore
 >>>>>>> laraxot/dev
 - **Fase 3 (Applicazione)**: 3-4 ore
 - **Fase 4 (Verifica)**: 1 ora
@@ -206,10 +220,15 @@ class MyModel extends BaseModel
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 =======
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso  
 **phpstan.neon**: ✅ INTOCCATO  
+>>>>>>> laraxot/dev
+=======
+**Stato**: 🔄 Analisi Completata - Correzioni in Corso
+**phpstan.neon**: ✅ INTOCCATO
 >>>>>>> laraxot/dev
 **Approccio**: DRY + KISS + Type Safety

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Install module"
 type: reference
@@ -11,6 +14,9 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
 # Install module
 
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  public function test(){
 
@@ -45,7 +51,11 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> laraxot/dev
 =======
     }
 >>>>>>> laraxot/dev
