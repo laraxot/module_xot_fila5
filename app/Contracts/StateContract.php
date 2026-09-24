@@ -43,16 +43,16 @@ interface StateContract
     /**
      * Execute modal action by record.
      *
-<<<<<<< .merge_file_0ishpY
-     * @param  array<string, mixed>  $data
-=======
-     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_0ishpY
      *
+     * @param array<string, mixed> $data
+     *                                   =======
+     *                                   <<<<<<< HEAD
      * @param array<string, mixed> $data
      *                                   =======
      * @param array<string, mixed> $data
      *                                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_Hh7ips
+     *                                   >>>>>>> .merge_file_Hh7ips
      */
     public function modalActionByRecord(Model $record, array $data): void;
 }

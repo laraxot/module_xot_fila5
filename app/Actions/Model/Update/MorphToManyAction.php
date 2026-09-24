@@ -27,19 +27,19 @@ class MorphToManyAction
     /**
      * Execute the action to update morphToMany relationships.
      *
-<<<<<<< .merge_file_1igvWF
-     * @param  Model  $row  The model instance to update
-     * @param  RelationDTO  $relationDTO  Data transfer object containing relation information
-=======
-     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_1igvWF
      *
+     * @param Model       $row         The model instance to update
+     * @param RelationDTO $relationDTO Data transfer object containing relation information
+     *                                 =======
+     *                                 <<<<<<< HEAD
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
      *                                 =======
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
      *                                 >>>>>>> laraxot/dev
->>>>>>> .merge_file_P67EmK
+     *                                 >>>>>>> .merge_file_P67EmK
      *
      * @throws \Exception When data is not in correct format or relation is invalid
      */

@@ -13,12 +13,12 @@ class DestroyAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_7pWvkY
-     * @param  array<string, mixed>  $_data
-     * @param  array<string, mixed>  $_rules
-=======
-     * <<<<<<< HEAD.
+     * <<<<<<< .merge_file_7pWvkY.
      *
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     *                                     =======
+     *                                     <<<<<<< HEAD
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      */
@@ -33,7 +33,7 @@ class DestroyAction
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      *                                     >>>>>>> laraxot/dev
->>>>>>> .merge_file_Pqg8ia
+     *                                     >>>>>>> .merge_file_Pqg8ia
      */
     public function execute(Model $model, array $_data, array $_rules): Model
     {

@@ -17,16 +17,16 @@ class PdfByHtmlAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
-<<<<<<< .merge_file_oVI9nZ
-     * @param  string  $html  Contenuto HTML da convertire
-     * @param  string  $filename  Nome del file PDF
-     * @param  string  $disk  Disco di storage
-     * @param  string  $out  Tipo di output (download, path, etc.)
-     * @param  string  $orientation  Orientamento (P=Portrait, L=Landscape)
-     * @param  PdfEngineEnum  $engine  Engine da utilizzare
-=======
-     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_oVI9nZ
      *
+     * @param string        $html        Contenuto HTML da convertire
+     * @param string        $filename    Nome del file PDF
+     * @param string        $disk        Disco di storage
+     * @param string        $out         Tipo di output (download, path, etc.)
+     * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
+     * @param PdfEngineEnum $engine      Engine da utilizzare
+     *                                   =======
+     *                                   <<<<<<< HEAD
      * @param string        $html        Contenuto HTML da convertire
      * @param string        $filename    Nome del file PDF
      * @param string        $disk        Disco di storage
@@ -41,7 +41,7 @@ class PdfByHtmlAction
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
      *                                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_LXtK0g
+     *                                   >>>>>>> .merge_file_LXtK0g
      */
     public function execute(
         string $html,

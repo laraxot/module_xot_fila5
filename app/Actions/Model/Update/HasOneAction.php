@@ -24,15 +24,10 @@ class HasOneAction
     /**
      * Execute the update operation for a HasOne relationship.
      *
-<<<<<<< .merge_file_3gk7Nx
-     * @param  Model  $model  The parent model instance
-     * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
+     * <<<<<<< .merge_file_3gk7Nx
      *
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException When relationship data is invalid
-=======
-     * <<<<<<< HEAD
-     *
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
      * @param Model       $model       The parent model instance
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
      * @param Model       $model       The parent model instance
@@ -41,10 +36,14 @@ class HasOneAction
      * @throws \InvalidArgumentException When relationship type is invalid
      * @throws \RuntimeException         When relationship data is invalid
      *                                   =======
+     *                                   <<<<<<< HEAD
+     * @throws \InvalidArgumentException When relationship type is invalid
+     * @throws \RuntimeException         When relationship data is invalid
+     *                                   =======
      * @throws \InvalidArgumentException When relationship type is invalid
      * @throws \RuntimeException         When relationship data is invalid
      *                                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_SqQcWu
+     *                                   >>>>>>> .merge_file_SqQcWu
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
