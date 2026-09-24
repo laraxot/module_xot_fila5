@@ -17,11 +17,11 @@ class PdfByHtmlAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
-<<<<<<< .merge_file_fiqDWW
-=======
+     * <<<<<<< .merge_file_fiqDWW
+     * =======
      * <<<<<<< HEAD
      * <<<<<<< .merge_file_7F9KEC
->>>>>>> .merge_file_EziQIl
+     * >>>>>>> .merge_file_EziQIl
      *
      * @param string        $html        Contenuto HTML da convertire
      * @param string        $filename    Nome del file PDF
@@ -29,8 +29,8 @@ class PdfByHtmlAction
      * @param string        $out         Tipo di output (download, path, etc.)
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
-<<<<<<< .merge_file_fiqDWW
-=======
+     *                                   <<<<<<< .merge_file_fiqDWW
+     *                                   =======
      *                                   =======
      *                                   <<<<<<< .merge_file_oVI9nZ
      * @param string        $html        Contenuto HTML da convertire
@@ -65,7 +65,7 @@ class PdfByHtmlAction
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_EziQIl
+     *                                   >>>>>>> .merge_file_EziQIl
      */
     public function execute(
         string $html,

@@ -13,7 +13,6 @@ use Nwidart\Modules\Module as NwidartModule;
 use Webmozart\Assert\Assert;
 
 /**
- *
  * @method string               getId()
  * @method string               getName()
  * @method NwidartModule        getModule()
