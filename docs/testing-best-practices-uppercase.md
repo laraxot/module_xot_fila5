@@ -38,9 +38,6 @@ function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -48,7 +45,6 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
-<<<<<<< HEAD
 =======
     
     $mockXotData->shouldReceive('getUserClass')
@@ -57,8 +53,6 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
     
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
@@ -198,13 +192,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ./vendor/bin/pest -v {TestFile} | grep -E "(seconds|ms)"
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 # Success rate calculation
 =======
 # Success rate calculation  
->>>>>>> laraxot/dev
-=======
-# Success rate calculation
 >>>>>>> laraxot/dev
 ./vendor/bin/pest {TestFile} --compact
 
@@ -231,20 +221,10 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [Widget Test Patterns](../Cms/project_docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/project_docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
-<<<<<<< HEAD
-=======
-- [Widget Test Patterns](../cms/project_docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../cms/project_docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](xotdata_testing.md)
->>>>>>> laraxot/dev
 
 ---
 
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
-<<<<<<< HEAD
 **Last Update**: Dicembre 2024
-=======
-**Last Update**: Dicembre 2024
->>>>>>> laraxot/dev
