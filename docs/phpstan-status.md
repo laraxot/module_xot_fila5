@@ -2,6 +2,13 @@
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+## Misura 2026-09-24 (sera) — GeoTrait generics + re-zero
+
+`analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
+**0** `file_errors`. Canon:
+[geo-trait.md](../Geo/docs/traits/geo-trait.md) ·
+[phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
+
 ## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
 
 Dopo cache clear, `cd laravel && ./vendor/bin/phpstan analyse Modules` ha riportato
