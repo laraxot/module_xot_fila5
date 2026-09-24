@@ -15,8 +15,24 @@ class RenderContextNavigation
     /**
      * Render context navigation hooks for Filament sidebar.
      *
+<<<<<<< .merge_file_uYnYjw
      * @param  string  $module  Module name
      * @param  string  $_context  Context (unused but kept for compatibility)
+=======
+     * <<<<<<< .merge_file_q18Slp
+     *
+     * @param string $module   Module name
+     * @param string $_context Context (unused but kept for compatibility)
+     *                         =======
+     *                         <<<<<<< HEAD
+     * @param string $module   Module name
+     * @param string $_context Context (unused but kept for compatibility)
+     *                         =======
+     * @param string $module   Module name
+     * @param string $_context Context (unused but kept for compatibility)
+     *                         >>>>>>> laraxot/dev
+     *                         >>>>>>> .merge_file_ipoDxG
+>>>>>>> .merge_file_XPAcoB
      */
     public function execute(string $module, string $_context): void
     {
