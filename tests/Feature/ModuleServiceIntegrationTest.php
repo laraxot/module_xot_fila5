@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
 use Modules\Xot\Tests\TestCase;
@@ -164,7 +162,7 @@ describe('GetAllModelsByModuleNameAction Integration', function () {
 
     it('uses the QueueableAction trait for sync/async execution', function () {
         Assert::assertContains(
-            \Spatie\QueueableAction\QueueableAction::class,
+            QueueableAction::class,
             class_uses(GetAllModelsByModuleNameAction::class),
         );
     });

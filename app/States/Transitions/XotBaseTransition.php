@@ -19,8 +19,7 @@ abstract class XotBaseTransition
     public function __construct(
         public Model $record,
         public ?string $message = '',
-    ) {
-    }
+    ) {}
 
     public function handle(): Model
     {

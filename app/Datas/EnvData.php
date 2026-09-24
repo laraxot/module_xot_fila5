@@ -57,10 +57,6 @@ class EnvData extends Data implements Wireable
                     $v = false;
                 }
                 if ($v === 'true') {
-                if ('false' === $v) {
-                    $v = false;
-                }
-                if ('true' === $v) {
                     $v = true;
                 }
                 $data[$k] = $v;

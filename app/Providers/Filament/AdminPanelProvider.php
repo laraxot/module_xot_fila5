@@ -38,8 +38,5 @@ class AdminPanelProvider extends XotBasePanelProvider
         );
 
         return $panel;
-        return $panel->pages([
-            MainDashboard::class,
-        ]);
     }
 }

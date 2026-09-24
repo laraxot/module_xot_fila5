@@ -9,8 +9,6 @@ use Spatie\QueueableAction\QueueableAction;
 use function Safe\file_put_contents;
 use function Safe\json_encode;
 
-
-
 class SaveJsonArrayAction
 {
     use QueueableAction;

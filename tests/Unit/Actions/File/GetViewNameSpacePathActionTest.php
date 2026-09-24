@@ -9,7 +9,8 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('xot');
+uses(TestCase::class);
+
 it('gets view namespace path from theme fallback correctly', function (): void {
     $ns = 'pub_theme';
     $themeName = 'TestTheme';
