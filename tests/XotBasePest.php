@@ -133,7 +133,9 @@ final class XotBasePest
 
         $result = [];
         foreach ($value as $key => $item) {
-            Assert::string($key);
+            if (! \is_string($key)) {
+                Assert::fail('Expected string array keys, got '.get_debug_type($key).'.');
+            }
             $result[$key] = $item;
         }
 
