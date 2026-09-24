@@ -12,7 +12,7 @@ use ReflectionMethod;
 uses(TestCase::class);
 
 test('un override di getFormSchema viene onorato su XotBasePage', function (): void {
-    $fixture = new FormSchemaPageFixture;
+    $fixture = new FormSchemaPageFixture();
     $method = new ReflectionMethod($fixture, 'resolveFormSchemaForXotPage');
     $method->setAccessible(true);
 
@@ -24,8 +24,7 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
 });
 
 test('senza override getFormSchema restituisce schema vuoto', function (): void {
-    $fixture = new class extends XotBasePage
-    {
+    $fixture = new class extends XotBasePage {
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
         protected string $view = 'xot::filament.pages.base';

@@ -10,14 +10,13 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('un override di getTableFilters viene onorato', function (): void {
-    $fixture = new LegacyTableNameFixture;
+    $fixture = new LegacyTableNameFixture();
 
     Assert::assertSame(['legacy_filter'], array_keys($fixture->getTableFilters()));
 });
 
 test('senza override si ricade sul default vuoto', function (): void {
-    $fixture = new class
-    {
+    $fixture = new class {
         use HasXotTable;
 
         public string $tableSearch = '';
@@ -31,4 +30,3 @@ test('senza override si ricade sul default vuoto', function (): void {
 
     Assert::assertSame([], $fixture->getTableFilters());
 });
-

@@ -57,7 +57,7 @@ function moduleDocsWithHostProjectName(): array
         );
 
         foreach ($iterator as $fileInfo) {
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
+            if (! $fileInfo instanceof \SplFileInfo || 'md' !== $fileInfo->getExtension()) {
                 continue;
             }
 

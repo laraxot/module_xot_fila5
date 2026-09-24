@@ -24,22 +24,21 @@ class HasOneAction
     /**
      * Execute the update operation for a HasOne relationship.
      *
-<<<<<<< .merge_file_T31w2M
-     * @param  Model  $model  The parent model instance
-     * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
+     * <<<<<<< .merge_file_T31w2M
+     *
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
      *
      * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException When relationship data is invalid
-=======
-     * <<<<<<< .merge_file_3gk7Nx
-     *
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     *
+     * @throws \RuntimeException         When relationship data is invalid
+     *                                   =======
+     *                                   <<<<<<< .merge_file_3gk7Nx
      * @throws \InvalidArgumentException When relationship type is invalid
      * @throws \RuntimeException         When relationship data is invalid
      *                                   =======
@@ -51,7 +50,7 @@ class HasOneAction
      * @throws \RuntimeException         When relationship data is invalid
      *                                   >>>>>>> laraxot/dev
      *                                   >>>>>>> .merge_file_SqQcWu
->>>>>>> .merge_file_tFlRWf
+     *                                   >>>>>>> .merge_file_tFlRWf
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {

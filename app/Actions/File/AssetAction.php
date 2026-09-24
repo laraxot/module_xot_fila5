@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
-use Throwable;
 use Webmozart\Assert\Assert;
 
 class AssetAction
@@ -21,10 +20,11 @@ class AssetAction
     /**
      * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
      *
-     * @param  string  $path  Il percorso dell'asset
-     * @return string Il percorso pubblico dell'asset
+     * @param string $path Il percorso dell'asset
      *
-     * @throws Exception Se il file sorgente non esiste o non può essere copiato
+     * @throws \Exception Se il file sorgente non esiste o non può essere copiato
+     *
+     * @return string Il percorso pubblico dell'asset
      */
     public function execute(string $path): string
     {
@@ -109,13 +109,13 @@ class AssetAction
             if (isRunningTestBench()) {
                 return $originalPath;
             }
-            throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
         }
 
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
-        $forceCopy = app()->environment() !== 'production';
+        $forceCopy = 'production' !== app()->environment();
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
@@ -149,7 +149,7 @@ class AssetAction
 
         try {
             $copied = File::copy($from, $to);
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             $this->handleCopyFailure($e, $path, $from, $to);
 
             return;
@@ -160,7 +160,7 @@ class AssetAction
         }
 
         $this->handleCopyFailure(
-            new Exception('Unable to copy asset file'),
+            new \Exception('Unable to copy asset file'),
             $path,
             $from,
             $to,
@@ -171,15 +171,15 @@ class AssetAction
      * If the public dest is already readable, keep serving it.
      * Otherwise rethrow so the caller can fail loudly.
      */
-    private function handleCopyFailure(Throwable $e, string $path, string $from, string $to): void
+    private function handleCopyFailure(\Throwable $e, string $path, string $from, string $to): void
     {
         if (File::exists($to) && File::isReadable($to)) {
             return;
         }
 
-        $exception = $e instanceof Exception
+        $exception = $e instanceof \Exception
             ? $e
-            : new Exception($e->getMessage(), (int) $e->getCode(), $e);
+            : new \Exception($e->getMessage(), (int) $e->getCode(), $e);
 
         $this->throwCopyException($exception, $path, $from, $to);
     }
@@ -197,9 +197,9 @@ class AssetAction
     /**
      * Throws a formatted exception for a file copy error.
      */
-    private function throwCopyException(Exception $e, string $path, string $from, string $to): void
+    private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
     {
-        throw new Exception('message:['.$e->getMessage().']
+        throw new \Exception('message:['.$e->getMessage().']
             public_path ['.public_path().']
             path ['.$path.']
             file from ['.$from.']

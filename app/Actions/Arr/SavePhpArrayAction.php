@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use function Safe\file_put_contents;
+
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Persiste un array PHP con **una chiave per riga** (mai array annidati inline).
@@ -21,7 +21,7 @@ class SavePhpArrayAction
     use QueueableAction;
 
     /**
-     * @param  array<int|string, mixed>  $data
+     * @param array<int|string, mixed> $data
      */
     public function execute(array $data, string $filename): bool
     {
@@ -32,11 +32,11 @@ class SavePhpArrayAction
     }
 
     /**
-     * @param  array<int|string, mixed>  $data
+     * @param array<int|string, mixed> $data
      */
     private function exportArray(array $data, int $depth): string
     {
-        if ($data === []) {
+        if ([] === $data) {
             return '[]';
         }
 
@@ -57,7 +57,7 @@ class SavePhpArrayAction
     private function exportValue(mixed $value, int $depth): string
     {
         if (is_array($value)) {
-            /** @var array<int|string, mixed> $value */
+            /* @var array<int|string, mixed> $value */
             return $this->exportArray($value, $depth);
         }
 

@@ -9,7 +9,6 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
-use Exception;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -18,7 +17,6 @@ use Modules\Xot\Actions\Export\GetExportFileNameAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Exports\XlsFieldsExporter;
 use Modules\Xot\Filament\Actions\XotBaseAction;
-use RuntimeException;
 use Webmozart\Assert\Assert;
 
 class ExportXlsAction extends XotBaseAction
@@ -38,7 +36,7 @@ class ExportXlsAction extends XotBaseAction
                 $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_xls.tooltip';
                 $translated = __($key);
 
-                if (\is_string($translated) && $translated !== $key && $translated !== 'export_xls') {
+                if (\is_string($translated) && $translated !== $key && 'export_xls' !== $translated) {
                     return $translated;
                 }
 
@@ -53,15 +51,15 @@ class ExportXlsAction extends XotBaseAction
                 // Filtri + search + sort: stesse righe nello stesso ordine di
                 // `getTableQueryForExport()` usato dal nativo (story Ptv/5.165).
                 $query = $livewire->getFilteredSortedTableQuery();
-                if ($query === null) {
-                    throw new Exception('Query is null');
+                if (null === $query) {
+                    throw new \Exception('Query is null');
                 }
                 // Stesso eager del canale nativo (XotBaseExporter::modifyQuery).
                 XlsFieldsExporter::modifyQuery($query);
 
                 $fields = self::resolveXlsFields($livewire);
 
-                if ($fields === []) {
+                if ([] === $fields) {
                     // Stesso esito del nativo (CanExportRecords, columnMap vuoto):
                     // avviso e stop. Senza fields CollectionExport farebbe il dump
                     // di tutti gli attributi del model (story Xot/5.162).
@@ -93,7 +91,7 @@ class ExportXlsAction extends XotBaseAction
         if (! method_exists($resource, 'getXlsFields')) {
             // Errore di programmazione (Resource senza il contratto export), non
             // un caso da ispezionare con un dump: story 5.160, AC 3.
-            throw new RuntimeException('method getXlsFields does not exist in '.$resource);
+            throw new \RuntimeException('method getXlsFields does not exist in '.$resource);
         }
         $rawFields = $resource::getXlsFields($livewire->tableFilters ?? []);
         Assert::isArray($rawFields);

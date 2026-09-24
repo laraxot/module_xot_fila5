@@ -6,6 +6,7 @@ declare(strict_types=1);
  */
 
 declare(strict_types=1);
+
 namespace Modules\Xot\Actions;
 
 use Spatie\QueueableAction\QueueableAction;

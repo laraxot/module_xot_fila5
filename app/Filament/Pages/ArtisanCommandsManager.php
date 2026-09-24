@@ -108,11 +108,11 @@ class ArtisanCommandsManager extends XotBasePage
     }
 
     /**
-     * @param  'completed'|'failed'  $status
+     * @param 'completed'|'failed' $status
      */
     private function notifyCommandResult(string $command, string $status): void
     {
-        if ($status === 'completed') {
+        if ('completed' === $status) {
             Notification::make()
                 ->title((string) __('xot::artisan-commands-manager.messages.command_completed'))
                 ->body((string) __('xot::artisan-commands-manager.messages.command_completed_desc', ['command' => $command]))

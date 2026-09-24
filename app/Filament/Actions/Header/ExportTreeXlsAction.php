@@ -9,7 +9,6 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
-use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -31,7 +30,7 @@ class ExportTreeXlsAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
-            //->tooltip(__('xot::actions.export_xls'))
+            // ->tooltip(__('xot::actions.export_xls'))
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('xot-files.xls')

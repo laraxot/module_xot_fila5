@@ -19,7 +19,7 @@ class RunArtisanCommandAction
     use QueueableAction;
 
     /**
-     * @param  array<string, mixed>  $arguments
+     * @param array<string, mixed> $arguments
      */
     public function execute(string $command, array $arguments = []): string
     {
@@ -27,7 +27,7 @@ class RunArtisanCommandAction
             Artisan::call($command, $arguments);
 
             return '[<pre>'.Artisan::output().'</pre>]';
-        } catch (Exception $exception) {
+        } catch (\Exception $exception) {
             return '[<pre>'.$exception->getMessage().'</pre>]';
         }
     }

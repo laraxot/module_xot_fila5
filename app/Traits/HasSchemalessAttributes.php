@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\json_encode;
+
+use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
@@ -53,7 +54,8 @@ trait HasSchemalessAttributes
     /**
      * Scope per filtrare per attributi schemaless.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -68,8 +70,9 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
-     * @param  Builder<static>  $query
-     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
+     * @param Builder<static>                     $query
+     * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile da confrontare
+     *
      * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
@@ -101,7 +104,8 @@ trait HasSchemalessAttributes
     /**
      * Get un valore da extra_attributes.
      *
-     * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
+     * @param scalar|array<array-key, mixed>|null $default Fallback JSON-serializzabile
+     *
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
@@ -112,7 +116,7 @@ trait HasSchemalessAttributes
     /**
      * Set un valore in extra_attributes.
      *
-     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
+     * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {

@@ -18,7 +18,6 @@ use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
-use Filament\Tables;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
@@ -42,7 +41,6 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
-use RuntimeException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -51,7 +49,7 @@ use Webmozart\Assert\Assert;
  * Provides enhanced table functionality with translations and optimized structure.
  *
  * @property TableLayoutEnum $layoutView
- * @property string|null $tableSearch
+ * @property string|null     $tableSearch
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CyclomaticComplexity")
@@ -153,7 +151,7 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
-                        if ($state === null || $state === '') {
+                        if (null === $state || '' === $state) {
                             return $labelText.': —';
                         }
 
@@ -277,12 +275,12 @@ trait HasXotTable
         $sortColumn = $this->getDefaultTableSortColumn();
         // @phpstan-ignore method.deprecated
         $sortDirection = $this->getDefaultTableSortDirection();
-        if ($sortColumn !== null && $sortDirection !== null) {
+        if (null !== $sortColumn && null !== $sortDirection) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if ($pollInterval !== null) {
+        if (null !== $pollInterval) {
             $table = $table->poll($pollInterval);
         }
 
@@ -404,12 +402,11 @@ trait HasXotTable
     /**
      * Get model class.
      *
+     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
      *
      * @phpstan-return class-string<Model>
-     *
-     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
@@ -433,13 +430,13 @@ trait HasXotTable
             $model = $this->getModel();
             Assert::string($model);
             if (! is_a($model, Model::class, true)) {
-                throw new RuntimeException('Invalid model class '.$model);
+                throw new \RuntimeException('Invalid model class '.$model);
             }
 
             return $model;
         }
 
-        throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
@@ -461,7 +458,7 @@ trait HasXotTable
 
         $trimmed = Str::trim(SafeStringCastAction::cast($tableSearch));
 
-        return $trimmed !== '' ? $trimmed : null;
+        return '' !== $trimmed ? $trimmed : null;
     }
 
     /**
@@ -722,7 +719,7 @@ trait HasXotTable
     {
         $orderColumn = $this->getOrderColumn();
 
-        if ($orderColumn !== null) {
+        if (null !== $orderColumn) {
             return $table->reorderable($orderColumn);
         }
 

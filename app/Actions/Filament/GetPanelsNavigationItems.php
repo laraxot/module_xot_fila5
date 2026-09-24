@@ -35,7 +35,7 @@ class GetPanelsNavigationItems
                 ->visible(static function () use ($panel): bool {
                     /** @var FilamentUser|null $user */
                     $user = Auth::user();
-                    if ($user === null) {
+                    if (null === $user) {
                         return false;
                     }
 

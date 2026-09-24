@@ -12,4 +12,6 @@ use Filament\Tables\Filters\Filter as FilamentFilter;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's Filter to provide a XotBase layer.
  */
-abstract class XotBaseFilter extends FilamentFilter {}
+abstract class XotBaseFilter extends FilamentFilter
+{
+}

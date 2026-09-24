@@ -28,37 +28,37 @@ use Tests\TestCase;
 class HasXotTableReorderingTest extends TestCase
 {
     #[Test]
-    public function it_returns_order_column_when_model_has_column(): void
+    public function itReturnsOrderColumnWhenModelHasColumn(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
-    public function it_returns_null_when_model_missing_order_column(): void
+    public function itReturnsNullWhenModelMissingOrderColumn(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
-    public function it_allows_override_in_subclass(): void
+    public function itAllowsOverrideInSubclass(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
-    public function it_checks_column_existence_via_schema(): void
+    public function itChecksColumnExistenceViaSchema(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::hasOrderableColumn() non esiste.');
     }
 
     #[Test]
-    public function it_auto_enables_reorderable_when_column_exists(): void
+    public function itAutoEnablesReorderableWhenColumnExists(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }
 
     #[Test]
-    public function it_skips_reorderable_when_column_missing(): void
+    public function itSkipsReorderableWhenColumnMissing(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }

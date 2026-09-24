@@ -10,17 +10,15 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-use Mockery;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionMethod;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 describe('Xot migration getModelClass and uuid paths', function (): void {
@@ -41,9 +39,10 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 
         // Force getModelClass() discovery path (model_class null until resolved)
         try {
-            new class extends XotBaseMigration
-            {
-                public function up(): void {}
+            new class extends XotBaseMigration {
+                public function up(): void
+                {
+                }
             };
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
@@ -63,19 +62,20 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             'value' => 'v',
         ]);
 
-        $migration = new class extends XotBaseMigration
-        {
+        $migration = new class extends XotBaseMigration {
             protected ?string $model_class = CacheModel::class;
 
-            public function up(): void {}
+            public function up(): void
+            {
+            }
         };
 
-        $isUuid = new ReflectionMethod($migration, 'isUuidColumnType');
+        $isUuid = new \ReflectionMethod($migration, 'isUuidColumnType');
         $isUuid->setAccessible(true);
         Assert::assertTrue($isUuid->invoke($migration, 'char'));
 
         // Force convert when id is uuid-like
-        $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
+        $convert = new \ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
         $convert->setAccessible(true);
         try {
             $convert->invoke(
@@ -90,7 +90,8 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                 [
                     'pivot_table' => 'cache_locks',
                     'pivot_fk' => 'key',
-                    'pivot_post_update' => static function (): void {},
+                    'pivot_post_update' => static function (): void {
+                    },
                 ],
             );
         } catch (\Throwable $e) {
@@ -107,7 +108,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
         DB::table('cache')->insert(['id' => 1, 'uuid' => null, 'key' => 'a', 'value' => 'b']);
         DB::table('cache')->insert(['id' => 2, 'uuid' => (string) Str::uuid(), 'key' => 'c', 'value' => 'd']);
 
-        $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
+        $backfill = new \ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
         $backfill->setAccessible(true);
         try {
             $backfill->invoke($migration);
@@ -120,7 +121,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             if (! method_exists($migration, $name)) {
                 continue;
             }
-            $rm = new ReflectionMethod($migration, $name);
+            $rm = new \ReflectionMethod($migration, $name);
             $rm->setAccessible(true);
             $args = [];
             foreach ($rm->getParameters() as $param) {
@@ -132,18 +133,18 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                 $tn = $param->getType() instanceof \ReflectionNamedType ? $param->getType()->getName() : '';
                 $pn = $param->getName();
                 $args[] = match (true) {
-                    $tn === Blueprint::class => new Blueprint(DB::connection(), 'cache'),
-                    $tn === \Closure::class || $tn === 'callable' => static function (Blueprint $t): void {
+                    Blueprint::class === $tn => new Blueprint(DB::connection(), 'cache'),
+                    \Closure::class === $tn || 'callable' === $tn => static function (Blueprint $t): void {
                         $t->id();
                     },
-                    $tn === 'array' => ['key', 'value'],
-                    $pn === 'from' || $pn === 'oldTable' || $pn === 'sourceTable' => 'cache',
-                    $pn === 'to' || $pn === 'newTable' => 'cache_new',
-                    $pn === 'pivotTable' => 'cache',
-                    $pn === 'fkColumn' || $pn === 'column' || $pn === 'constraint' => 'key',
-                    $pn === 'class' => CacheModel::class,
-                    $tn === 'string' => 'cache',
-                    $tn === 'bool' => true,
+                    'array' === $tn => ['key', 'value'],
+                    'from' === $pn || 'oldTable' === $pn || 'sourceTable' === $pn => 'cache',
+                    'to' === $pn || 'newTable' === $pn => 'cache_new',
+                    'pivotTable' === $pn => 'cache',
+                    'fkColumn' === $pn || 'column' === $pn || 'constraint' === $pn => 'key',
+                    'class' === $pn => CacheModel::class,
+                    'string' === $tn => 'cache',
+                    'bool' === $tn => true,
                     default => null,
                 };
             }

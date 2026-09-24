@@ -15,12 +15,14 @@ class UrlService
 {
     private static ?self $instance = null;
 
-    public function __construct() {}
+    public function __construct()
+    {
+    }
 
     public static function getInstance(): self
     {
-        if (! (self::$instance instanceof self)) {
-            self::$instance = new self;
+        if (! self::$instance instanceof self) {
+            self::$instance = new self();
         }
 
         return self::$instance;
@@ -36,6 +38,6 @@ class UrlService
 
     public function checkValidUrl(string $url): bool
     {
-        return filter_var($url, FILTER_VALIDATE_URL) !== false;
+        return false !== filter_var($url, FILTER_VALIDATE_URL);
     }
 }
