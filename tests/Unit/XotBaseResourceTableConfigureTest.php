@@ -1,13 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tzdbkB
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ToSP23
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -27,6 +33,7 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 >>>>>>> .merge_file_cwDst1
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -34,6 +41,10 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 >>>>>>> .merge_file_ItmbaA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\XotBaseResourceTableConfigureFixture;
 use Modules\Xot\Tests\Unit\Fixtures\XotTableConfigureLivewireHarness;
@@ -42,12 +53,18 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('XotBaseResourceTable configure applica colonne e filtri dalla classe table', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tzdbkB
 <<<<<<< HEAD
 <<<<<<< HEAD
     $livewire = new XotTableConfigureLivewireHarness;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ToSP23
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -63,12 +80,17 @@ test('XotBaseResourceTable configure applica colonne e filtri dalla classe table
 =======
     $livewire = new XotTableConfigureLivewireHarness();
 >>>>>>> .merge_file_cwDst1
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
     $livewire = new XotTableConfigureLivewireHarness;
 >>>>>>> .merge_file_ItmbaA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     $table = Table::make($livewire);
 
     $configured = XotBaseResourceTableConfigureFixture::configure($table);
@@ -77,11 +99,16 @@ test('XotBaseResourceTable configure applica colonne e filtri dalla classe table
 });
 
 test('XotBaseResourceTable configure su classe astratta solleva LogicException', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tzdbkB
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ToSP23
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
@@ -113,6 +140,7 @@ test('XotBaseResourceTable configure su classe astratta solleva LogicException',
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     $livewire = new XotTableConfigureLivewireHarness();
     $table = Table::make($livewire);
@@ -120,6 +148,7 @@ test('XotBaseResourceTable configure su classe astratta solleva LogicException',
     expect(fn (): Table => XotBaseResourceTable::configure($table))
         ->toThrow(LogicException::class);
 >>>>>>> .merge_file_cwDst1
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -127,4 +156,8 @@ test('XotBaseResourceTable configure su classe astratta solleva LogicException',
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ItmbaA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });

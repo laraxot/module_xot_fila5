@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_vXpFgN
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_zSnDgF
 ---
@@ -19,9 +22,13 @@ related:
 Vedi il file canonico: [git-merge-conflict-inventory.md](./git-merge-conflict-inventory.md)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_V0B0xe
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Git Conflict Inventory
 
 - Date: 2026-04-28
@@ -100,13 +107,20 @@ Vedi il file canonico: [git-merge-conflict-inventory.md](./git-merge-conflict-in
 ## Notes
 
 - Inventory generated from `rg -l "^(<<<<<<<|=======|>>>>>>>)"`.
+<<<<<<< HEAD
 <<<<<<< .merge_file_vXpFgN
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 - Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
 >>>>>>> .merge_file_a5OcID
 =======
 - Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
 >>>>>>> .merge_file_V0B0xe
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

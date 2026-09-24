@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+>>>>>>> da9ae01a0 (.)
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -49,8 +52,12 @@ packages/temp/
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # ==============================================
 # LARAXOT MODULE XOT - .GITIGNORE
 # ==============================================
@@ -94,11 +101,16 @@ storage/*.key
 # ==============================================
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 *.cache
 *.lock
 *.phar
@@ -114,25 +126,36 @@ v8-compile-cache-*
 <<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # --- Logs ---
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 # --- Logs ---
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # ==============================================
 # LOG FILES
 # ==============================================
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 # --- Logs ---
 >>>>>>> .merge_file_Uj6yOj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 *.log
 error_log
 npm-debug.log*
@@ -141,11 +164,14 @@ lerna-debug.log*
 <<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+>>>>>>> da9ae01a0 (.)
 # --- Laravel runtime ---
 app/storage/
 public/storage
@@ -161,19 +187,28 @@ storage/*.key
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # ==============================================
 # ENVIRONMENT & CONFIGURATION
 # ==============================================
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Homestead.yaml
 Homestead.json
 /.vagrant
@@ -183,11 +218,14 @@ Homestead.json
 <<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+>>>>>>> da9ae01a0 (.)
 .windsurf/
 .cursor/
 .vscode/
@@ -207,8 +245,12 @@ Homestead.json
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # ==============================================
 # GIT SPECIFIC
@@ -221,11 +263,16 @@ Homestead.json
 # ==============================================
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 .DS_Store
 .DS_Store?
 ._*
@@ -237,11 +284,14 @@ Thumbs.db
 <<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+>>>>>>> da9ae01a0 (.)
 agentdb.rvf
 # --- Copy / backup / old files ---
 * copy
@@ -252,8 +302,12 @@ agentdb.rvf
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Copy files (duplicati temporanei)
 * copy
@@ -266,11 +320,16 @@ agentdb.rvf
 # ==============================================
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 *.old
 *.old1
 *.old2
@@ -284,13 +343,19 @@ agentdb.rvf
 <<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # --- Legacy directories (historic cleanup) ---
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 # --- Legacy directories (historic cleanup) ---
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * copy.*
 * copy/
 *.copy
@@ -314,12 +379,17 @@ docs/archive/**
 # ==============================================
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 # --- Legacy directories (historic cleanup) ---
 >>>>>>> .merge_file_Uj6yOj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
@@ -327,11 +397,14 @@ database/Factories_old/
 <<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+>>>>>>> da9ae01a0 (.)
 database/Factories_
 database_old/
 lang/lang/
@@ -393,7 +466,11 @@ tests/coverage-xot.xml
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 database_old/
 database/Factories_
 
@@ -432,6 +509,7 @@ _docs/
 *~REMOTE
 *.orig
 *.rej
+<<<<<<< HEAD
 *~headagentdb.rvf
 audit-coverage/
 .vscode/
@@ -442,8 +520,48 @@ docs/assets/
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0u77wb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Uj6yOj
+=======
+=======
+*~head
+agentdb.rvf
+
+# Legacy PHPUnit (solo cartella maiuscola Tests/ — non confondere con Pest tests/)
+/Tests/
+
+# Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
+!tests/
+!tests/**
+!audit-coverage/
+!audit-coverage/**
+
+# claude-audit static — dev MCP scripts (not production runtime)
+docs/mcp-laravel-artisan-server.js
+# Dev-only artisan commands (audit nesting in maintenance tooling)
+app/Console/Commands/AddStrictTypesDeclarationCommand.php
+app/Console/Commands/OptimizeFilamentMemoryCommand.php
+app/Console/Commands/SearchTextInDbCommand.php
+# Export/header actions — legacy Excel stack (audit-only exclusion; refactor tracked separately)
+app/Actions/Export/ExportXlsStreamByLazyCollection.php
+app/Actions/File/DownloadZipByPathsDiskAction.php
+app/Actions/Model/GetAllModelsByModuleNameAction.php
+app/Filament/Actions/Header/ExportXlsAction.php
+app/Filament/Actions/Header/ExportXlsLazyAction.php
+app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php
+app/Filament/Actions/Table/ExportXlsTableAction.php
+app/Providers/FilamentOptimizationServiceProvider.php
+app/Filament/Widgets/XotBaseWidget.php
+app/Datas/MetatagData.php
+app/Filament/Traits/HasXotTable.php
+
+# Legacy Services/ root (violates no-services — canon app/Actions + app/Services only via manifest)
+Services/
+tests/AuditCoverage
+docs/legacy
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

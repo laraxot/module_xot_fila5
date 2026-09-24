@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_5CfA99
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_LaKoWH
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "_pivot"
 module: "Xot"
@@ -22,11 +25,16 @@ related:
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_LaKoWH
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

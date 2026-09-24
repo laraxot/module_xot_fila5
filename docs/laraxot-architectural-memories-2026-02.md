@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_pheaCn
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_wXYpCK
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Laraxot Architectural Memories 02"
 type: concept
@@ -26,8 +29,12 @@ Vedi il file canonico: [laraxot-architectural-memories-02.md](./laraxot-architec
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Laraxot Architectural Memories - February 2026
 
 Critical architectural discoveries and best practices compiled during the Footer Refinement and Theme Integration phase.
@@ -83,8 +90,13 @@ If CDP connection fails, use `curl -s http://127.0.0.1:8000/{path} | grep -A 100
 - **Organization**: No `_docs` folders allowed. All sub-documentation must reside directly in the `docs/` folder of the respective module/theme.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wXYpCK
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

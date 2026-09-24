@@ -1,10 +1,14 @@
 # Convenzioni
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_CpOrnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_FTUjAj
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,11 +16,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_HWEz4P
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9uBN1N
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Questa cartella contiene le convenzioni di nomenclatura e le regole di stile utilizzate nel progetto.
 
 ## File Contenuti
@@ -27,10 +36,14 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 ## Note
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_CpOrnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_FTUjAj
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -99,17 +112,28 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> laraxot/dev
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_9uBN1N
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_CpOrnx
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9uBN1N
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -140,10 +164,14 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_CpOrnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_FTUjAj
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -215,6 +243,52 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
 ## Collegamenti tra versioni di README.md
+=======
+* [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
+* [README.md](../../../chart/docs/readme.md)
+* [README.md](../../../reporting/docs/readme.md)
+* [README.md](../../../gdpr/docs/phpstan/readme.md)
+* [README.md](../../../gdpr/docs/readme.md)
+* [README.md](../../../notify/docs/phpstan/readme.md)
+* [README.md](../../../notify/docs/readme.md)
+* [README.md](../../../xot/docs/filament/readme.md)
+* [README.md](../../../xot/docs/phpstan/readme.md)
+* [README.md](../../../xot/docs/exceptions/readme.md)
+* [README.md](../../../xot/docs/readme.md)
+* [README.md](../../../xot/docs/standards/readme.md)
+* [README.md](../../../xot/docs/conventions/readme.md)
+* [README.md](../../../xot/docs/development/readme.md)
+* [README.md](../../../dental/docs/readme.md)
+* [README.md](../../../user/docs/phpstan/readme.md)
+* [README.md](../../../user/docs/readme.md)
+* [README.md](../../../user/docs/readme.md)
+* [README.md](../../../ui/docs/phpstan/readme.md)
+* [README.md](../../../ui/docs/readme.md)
+* [README.md](../../../ui/docs/standards/readme.md)
+* [README.md](../../../ui/docs/themes/readme.md)
+* [README.md](../../../ui/docs/components/readme.md)
+* [README.md](../../../lang/docs/phpstan/readme.md)
+* [README.md](../../../lang/docs/readme.md)
+* [README.md](../../../job/docs/phpstan/readme.md)
+* [README.md](../../../job/docs/readme.md)
+* [README.md](../../../media/docs/phpstan/readme.md)
+* [README.md](../../../media/docs/readme.md)
+* [README.md](../../../tenant/docs/phpstan/readme.md)
+* [README.md](../../../tenant/docs/readme.md)
+* [README.md](../../../activity/docs/phpstan/readme.md)
+* [README.md](../../../activity/docs/readme.md)
+* [README.md](../../../patient/docs/readme.md)
+* [README.md](../../../patient/docs/standards/readme.md)
+* [README.md](../../../patient/docs/value-objects/readme.md)
+* [README.md](../../../cms/docs/blocks/readme.md)
+* [README.md](../../../cms/docs/readme.md)
+* [README.md](../../../cms/docs/standards/readme.md)
+* [README.md](../../../cms/docs/content/readme.md)
+* [README.md](../../../cms/docs/frontoffice/readme.md)
+* [README.md](../../../cms/docs/components/readme.md)
+* [README.md](../../../../themes/two/docs/readme.md)
+* [README.md](../../../../themes/one/docs/readme.md)
+>>>>>>> 930f8146 (Check & fix styling)
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -290,6 +364,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Cms/docs/frontoffice/README.md)
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../../Themes/One/docs/README.md)
 
 
@@ -442,8 +517,14 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9uBN1N
+=======
+=======
+* [README.md](../../../../Themes/One/docs/README.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

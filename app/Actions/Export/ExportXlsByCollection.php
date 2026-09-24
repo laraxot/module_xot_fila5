@@ -42,9 +42,11 @@ class ExportXlsByCollection
      * @param Collection<int|string, mixed>|EloquentCollection<int, Model> $collection La collezione da esportare
      * @param string                                                       $filename   Nome del file Excel
      * @param string|null                                                  $transKey   Chiave di traduzione per i campi
+<<<<<<< HEAD
      * @param array<int|string, string>                                    $fields     Campi da includere: chiave intera => percorso
      *                                                                                 (intestazione tradotta), chiave stringa => percorso con
      *                                                                                 valore = intestazione esplicita non tradotta
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param Collection<int|string, mixed>|EloquentCollection<int, Model> $collection La collezione da esportare
@@ -54,6 +56,11 @@ class ExportXlsByCollection
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_mnueqL
+=======
+=======
+     * @param array<int, string>                                           $fields     Campi da includere nell'export
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function execute(
         Collection|EloquentCollection $collection,
@@ -79,7 +86,11 @@ class ExportXlsByCollection
 
         $export = new CollectionExport(
             collection: $supportCollection,
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             transKey: $transKey,
             fields: $stringFields,
         );
@@ -98,7 +109,11 @@ class ExportXlsByCollection
      * @param  string  $filename  Nome del file Excel
 =======
      * @param Collection<int|string, mixed>|EloquentCollection<int, Model> $rows     La collezione da esportare
+<<<<<<< HEAD
      * @param array<int|string, string>                                    $fields   Campi da includere nell'export
+=======
+     * @param array<int, string>                                           $fields   Campi da includere nell'export
+>>>>>>> 930f8146 (Check & fix styling)
      * @param string                                                       $filename Nome del file Excel
      *
 >>>>>>> laraxot/dev
@@ -149,6 +164,7 @@ class ExportXlsByCollection
     /**
      * Scrive l'intestazione nel foglio Excel.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_Yf1t8N
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,6 +172,11 @@ class ExportXlsByCollection
 >>>>>>> .merge_file_mnueqL
      * @param  Worksheet  $sheet  Il foglio Excel
      * @param  array<int|string, string>  $fields  I campi da utilizzare come intestazioni
+=======
+<<<<<<< HEAD
+     * @param Worksheet                 $sheet  Il foglio Excel
+     * @param array<int|string, string> $fields I campi da utilizzare come intestazioni
+>>>>>>> da9ae01a0 (.)
      */
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
@@ -167,7 +188,11 @@ class ExportXlsByCollection
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach ($fields as $col => $field) {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
         }
     }
@@ -184,7 +209,9 @@ class ExportXlsByCollection
 =======
      * @param Worksheet                     $sheet  Il foglio di lavoro
      * @param Collection<int|string, mixed> $rows   I dati da scrivere
+<<<<<<< HEAD
      * @param array<int|string, string>     $fields I campi da utilizzare per le colonne
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param Worksheet                     $sheet  Il foglio di lavoro
@@ -196,6 +223,11 @@ class ExportXlsByCollection
      * @param  Collection<int|string, mixed>  $rows  I dati da scrivere
      * @param  array<int|string, string>  $fields  I campi da utilizzare per le colonne
 >>>>>>> .merge_file_mnueqL
+=======
+=======
+     * @param array<int, string>            $fields I campi da utilizzare per le colonne
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     protected function writeRows(Worksheet $sheet, Collection $rows, array $fields): void
     {
@@ -213,6 +245,11 @@ class ExportXlsByCollection
 <<<<<<< .merge_file_Yf1t8N
 =======
                 ++$col;
+=======
+            foreach ($fields as $col => $field) {
+                $value = $this->extractValue($data, $field);
+                $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
+>>>>>>> 930f8146 (Check & fix styling)
             }
             ++$row;
 >>>>>>> laraxot/dev

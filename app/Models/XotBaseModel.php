@@ -24,11 +24,16 @@ use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 
 /**
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * Class XotBaseModel.
  */
 abstract class XotBaseModel extends EloquentModel
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tgFAeb
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -40,6 +45,13 @@ abstract class XotBaseModel extends EloquentModel
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Epoa6W
+=======
+<<<<<<< HEAD
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+=======
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     use HasXotFactory;
     use RelationX;
     use Updater;
@@ -110,7 +122,11 @@ abstract class XotBaseModel extends EloquentModel
     }
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     /** @return array<string, string> */
     protected function casts(): array
     {

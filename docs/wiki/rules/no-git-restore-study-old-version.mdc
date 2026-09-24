@@ -4,11 +4,14 @@ type: rule
 <<<<<<< .merge_file_5R4jpf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_hC5REj
+=======
+>>>>>>> da9ae01a0 (.)
 tags: [git, recovery, study, refactoring, forward-only]
 created: 2026-01-21
 updated: 2026-07-27
@@ -23,8 +26,12 @@ related:
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 tags: [git, recovery, study, refactoring]
 created: 2026-01-21
 updated: 2026-07-01
@@ -34,11 +41,16 @@ discussions: []
 related:
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_hC5REj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - ../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md
   - ../../../../../../docs/wiki/memories/no-git-restore-study-improve.md
 ---
@@ -46,11 +58,14 @@ related:
 <<<<<<< .merge_file_5R4jpf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_hC5REj
+=======
+>>>>>>> da9ae01a0 (.)
 # NO git restore — studia vecchia versione (Xot)
 
 ## Regola assoluta
@@ -71,8 +86,12 @@ Git solo avanti. File perso o rotto:
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # NO git restore — studia vecchia versione
 
 ## Regola assoluta
@@ -126,8 +145,13 @@ git checkout -- Modules/<Modulo>/composer.json
 - Studia → Capisci → Migliora → Applica
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_hC5REj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

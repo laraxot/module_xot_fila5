@@ -135,10 +135,12 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
 =======
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
@@ -146,6 +148,11 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 =======
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
 >>>>>>> .merge_file_aW9ruw
+=======
+=======
+- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -183,10 +190,12 @@ public function boot(): void
 - [Registrazione icone Blade](registerbladeicons.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Registrazione icone Blade](registerbladeicons.md)
 =======
 - [Registrazione icone Blade](./registerBladeIcons.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Registrazione icone Blade](./registerBladeIcons.md)
@@ -194,6 +203,11 @@ public function boot(): void
 =======
 - [Registrazione icone Blade](registerbladeicons.md)
 >>>>>>> .merge_file_aW9ruw
+=======
+=======
+- [Registrazione icone Blade](./registerBladeIcons.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Gestione dei Path delle Traduzioni
 
@@ -233,10 +247,12 @@ Applicare la stessa regola per la registrazione delle traduzioni JSON.
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
 =======
 Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
@@ -244,6 +260,11 @@ Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione cent
 =======
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
 >>>>>>> .merge_file_aW9ruw
+=======
+=======
+Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 
@@ -278,6 +299,7 @@ $this->commands([
 <<<<<<< .merge_file_c1DBYr
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -292,9 +314,14 @@ canonical: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_aW9ruw
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

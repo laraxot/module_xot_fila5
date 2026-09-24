@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * Pest Laravel helper stubs for PHPStan.
  *
@@ -19,7 +23,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Pest\Laravel;
 
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -32,7 +40,11 @@ use Pest\PendingCalls\DescribeCall;
 use Pest\PendingCalls\TestCall;
 use Pest\PendingCalls\UsesCall;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * Authenticate as a given model or ID.
@@ -429,7 +441,11 @@ function followingRedirects(int $number = 5): TestResponse
 function test(string $description, ?\Closure $closure = null): TestCall
 =======
 function test(string $description, ?\Closure $closure = null): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -441,7 +457,11 @@ function test(string $description, ?\Closure $closure = null): mixed
 function it(string $description, ?\Closure $closure = null): TestCall
 =======
 function it(string $description, ?\Closure $closure = null): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -453,7 +473,11 @@ function it(string $description, ?\Closure $closure = null): mixed
 function describe(string $description, \Closure $closure): DescribeCall
 =======
 function describe(string $description, \Closure $closure): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -465,7 +489,11 @@ function describe(string $description, \Closure $closure): mixed
 function beforeEach(\Closure $closure): BeforeEachCall
 =======
 function beforeEach(\Closure $closure): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -477,7 +505,11 @@ function beforeEach(\Closure $closure): mixed
 function afterEach(\Closure $closure): AfterEachCall
 =======
 function afterEach(\Closure $closure): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -497,12 +529,18 @@ function afterEach(\Closure $closure): mixed
  * @param  class-string  ...$classes
 >>>>>>> .merge_file_xtErJP
  */
+<<<<<<< HEAD
 function uses(string ...$classes): UsesCall
 =======
+<<<<<<< HEAD
  * @param class-string ...$classes
  */
 function uses(string ...$classes): mixed
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+function uses(string ...$classes): mixed
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }

@@ -18,7 +18,11 @@ use Modules\Xot\Actions\ModelClass\UpdateCountAction;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 test('count actions work', function (): void {
     $action = app(CountAction::class);
     $updateAction = app(UpdateCountAction::class);

@@ -1,10 +1,14 @@
 # Best Practices
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_yBX7xn
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_p95rt1
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,11 +16,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FfdCBr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_opOmT4
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Laraxot Framework Standards
 
 ### Models
@@ -48,7 +57,40 @@
 <<<<<<< .merge_file_yBX7xn
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_p95rt1
+=======
+=======
+>>>>>>> .merge_file_FfdCBr
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_p95rt1
 =======
@@ -56,6 +98,7 @@
 >>>>>>> .merge_file_FfdCBr
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
@@ -93,14 +136,21 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_opOmT4
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_yBX7xn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_p95rt1
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -151,20 +201,29 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FfdCBr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_opOmT4
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Documentation
 - All files in docs/ must be lowercase (except README.md)
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
+<<<<<<< HEAD
 <<<<<<< .merge_file_yBX7xn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_p95rt1
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -227,8 +286,13 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FfdCBr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_opOmT4
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

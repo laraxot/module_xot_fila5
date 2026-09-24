@@ -3,14 +3,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_iVrrCY
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Limesurvey Database Analysis - quaeris_survey
 
 ## Overview
 The `quaeris_survey` database (identified as `txaesfry_quaeris_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
+<<<<<<< HEAD
 <<<<<<< .merge_file_7YiH3H
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -22,11 +29,16 @@ The `quaeris_survey` database (identified as `txaesfry_quaeris_survey` in the co
 The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_iVrrCY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Database Schema Analysis
 
@@ -37,10 +49,12 @@ The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_sur
 - Database: `txaesfry_quaeris_survey`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Database: `txaesfry_quaeris_survey`
 =======
 - Database: `txaesfry_healthcare_app_survey`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Database: `txaesfry_healthcare_app_survey`
@@ -48,6 +62,11 @@ The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_sur
 =======
 - Database: `txaesfry_quaeris_survey`
 >>>>>>> .merge_file_iVrrCY
+=======
+=======
+- Database: `txaesfry_quaeris_survey`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Connection name: `limesurvey` (configured in config files)
 - Access through: `DB::connection('limesurvey')`
 
@@ -90,15 +109,22 @@ The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_sur
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_iVrrCY
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### Integration with Quaeris
 - The system connects to the survey database to extract answers and generate reports
 - Uses LimeSurvey Remote Control API pattern (though direct DB access is also implemented)
 - Maps survey responses to question structures for analysis
 - Links survey data with Quaeris survey_pdf records
+<<<<<<< HEAD
 <<<<<<< .merge_file_7YiH3H
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -111,11 +137,16 @@ The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_sur
 - Links survey data with healthcare_app survey_pdf records
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_iVrrCY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Survey Data Flow
 1. Survey structure defined in `lime_questions` and `lime_question_l10ns`
@@ -128,10 +159,12 @@ The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_sur
 5. Results integrated with Quaeris data for comprehensive reporting
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. Results integrated with Quaeris data for comprehensive reporting
 =======
 5. Results integrated with healthcare_app data for comprehensive reporting
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 5. Results integrated with healthcare_app data for comprehensive reporting
@@ -139,6 +172,11 @@ The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_sur
 =======
 5. Results integrated with Quaeris data for comprehensive reporting
 >>>>>>> .merge_file_iVrrCY
+=======
+=======
+5. Results integrated with Quaeris data for comprehensive reporting
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Key Methods in LimeSurveyKK
 - `get_all_answers()`: Retrieves all answers for a given survey
@@ -160,15 +198,22 @@ From the code, it's evident that Limesurvey follows the standard schema where:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_iVrrCY
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 The quaeris_survey database is used primarily for:
 - Survey response analysis
 - Question/answer extraction
 - Response aggregation by time periods
 - Integration with Quaeris reporting features
+<<<<<<< HEAD
 <<<<<<< .merge_file_7YiH3H
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -181,9 +226,14 @@ The healthcare_app_survey database is used primarily for:
 - Integration with healthcare_app reporting features
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_iVrrCY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Participant management and tracking

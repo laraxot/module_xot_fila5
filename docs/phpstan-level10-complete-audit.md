@@ -3,9 +3,12 @@
 ## Data Audit
 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## Risultati Generali
 
@@ -65,9 +68,12 @@
 - **Causa**: Classe `Modules\Geo\Models\Comune` non esiste
 - **Status**: Documentato in [phpstan-errors-locationselector.md](../UI/docs/phpstan-errors-locationselector.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Status**: Documentato in [phpstan-errors-locationselector.md](../ui/docs/phpstan-errors-locationselector.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 - **Soluzione Proposta**: Creare modulo Geo con modello Comune (refactoring architetturale)
 
 ## Correzioni Implementate Durante Audit
@@ -81,9 +87,12 @@
   - Aggiunta annotazione PHPDoc `@var array<string, int>`
 - **Documentazione**: [phpstan-errors-activitylogger.md](../Activity/docs/phpstan-errors-activitylogger.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Documentazione**: [phpstan-errors-activitylogger.md](../activity/docs/phpstan-errors-activitylogger.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ### 2. Ptv Module
 - **File**: `ValutatoreField.php`
@@ -94,9 +103,12 @@
   - Rimosso codice debug e commentato
 - **Documentazione**: [phpstan-errors-valutatorefield.md](../Ptv/docs/phpstan-errors-valutatorefield.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Documentazione**: [phpstan-errors-valutatorefield.md](../ptv/docs/phpstan-errors-valutatorefield.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ### 3. IndennitaResponsabilita Module
 - **File**: `CompilaIndennitaResponsabilita.php`
@@ -106,9 +118,12 @@
   - Aggiunta annotazione `@phpstan-ignore-next-line` per `withExtraAttributes()` (Spatie Schemaless)
 - **Documentazione**: [phpstan-errors-compilaindennita.md](../IndennitaResponsabilita/docs/phpstan-errors-compilaindennita.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Documentazione**: [phpstan-errors-compilaindennita.md](../indennitaresponsabilita/docs/phpstan-errors-compilaindennita.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ### 4. Notify Module
 - **File**: `NotifyBasePolicy.php`
@@ -171,8 +186,13 @@
 - Tutte le correzioni seguono le regole Laraxot e metodologia "Super Mucca"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 
 =======
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: 2025-01-27*
+
+>>>>>>> da9ae01a0 (.)

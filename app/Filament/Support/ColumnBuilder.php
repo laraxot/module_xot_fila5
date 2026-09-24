@@ -14,7 +14,11 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Filament\Tables\Columns\BooleanColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * Builder for common Filament table columns.
@@ -82,7 +86,11 @@ class ColumnBuilder
             ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title) : '')
 =======
             ->tooltip(static fn ($record) => \is_object($record) && isset($record->title) ? (string) $record->title : '')
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->toggleable();
     }
 
@@ -125,7 +133,11 @@ class ColumnBuilder
             ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description) : '')
 =======
             ->tooltip(static fn ($record) => \is_object($record) && isset($record->description) ? (string) $record->description : '')
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->toggleable();
     }
 
@@ -204,7 +216,11 @@ class ColumnBuilder
             ->color(static function (mixed $record) {
 =======
             ->color(static function ($record) {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 if (! \is_object($record) || ! isset($record->published_at)) {
                     return 'warning';
                 }
@@ -232,7 +248,11 @@ class ColumnBuilder
     public static function isActive(): BooleanColumn
     {
         return BooleanColumn::make('is_active')
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->label(__('xot::fields.is_active.label'))
             ->sortable()
             ->toggleable();

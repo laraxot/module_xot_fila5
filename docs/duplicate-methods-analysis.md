@@ -591,10 +591,12 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **< 50%**: Richiede analisi dettagliata
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
 =======
 - **< 50%**: Richiede analisi dettagliata
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **< 50%**: Richiede analisi dettagliata
@@ -602,3 +604,8 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 =======
 - **< 50%**: Richiede analisi dettagliata
 >>>>>>> .merge_file_EQ4VYT
+=======
+=======
+- **< 50%**: Richiede analisi dettagliata
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

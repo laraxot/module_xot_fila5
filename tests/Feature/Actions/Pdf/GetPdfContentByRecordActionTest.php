@@ -31,7 +31,11 @@ beforeEach(function (): void {
 });
 
 describe('Get Pdf Content By Record Action', function (): void {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     test('it generates pdf content from record', function (): void {
         // Arrange
         $user = UserFactory::new()->createOne([
@@ -61,7 +65,11 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it generates correct view name', function (): void {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         // Arrange
         $user = UserFactory::new()->createOne();
 
@@ -93,7 +101,11 @@ describe('Get Pdf Content By Record Action', function (): void {
     test('it generates correct filename for basic model', function () use (&$action): void {
 =======
     test('it generates correct filename for basic model', function (): void {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         // Arrange
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
@@ -123,6 +135,9 @@ describe('Get Pdf Content By Record Action', function (): void {
 
 <<<<<<< HEAD
     test('it generates enhanced filename for performance models', function () use (&$action): void {
+=======
+    test('it generates enhanced filename for performance models', function (): void {
+>>>>>>> 930f8146 (Check & fix styling)
         // Arrange - Create a mock model with performance fields
         $record = new class extends Model
         {
@@ -179,7 +194,11 @@ describe('Get Pdf Content By Record Action', function (): void {
     test('it prepares correct view parameters', function () use (&$action): void {
 =======
     test('it prepares correct view parameters', function (): void {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         // Arrange
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
@@ -230,7 +249,11 @@ describe('Get Pdf Content By Record Action', function (): void {
         $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
         app(GetPdfContentByRecordAction::class)->execute($user);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 
     test('it throws exception for empty html content', function (): void {
@@ -240,7 +263,11 @@ describe('Get Pdf Content By Record Action', function (): void {
         Assert::markTestSkipped('Requires view mocking infrastructure');
 =======
         $this->skipTest('Requires view mocking infrastructure');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 
     test('it uses custom filename when provided', function (): void {
@@ -260,7 +287,11 @@ describe('Get Pdf Content By Record Action', function (): void {
         $this->expectThrowable(\Exception::class);
 
         app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 
     test('it handles from record convenience method', function (): void {
@@ -281,7 +312,11 @@ describe('Get Pdf Content By Record Action', function (): void {
         $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
         app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 
     test('it logs errors when pdf generation fails', function (): void {
@@ -291,7 +326,11 @@ describe('Get Pdf Content By Record Action', function (): void {
         Assert::markTestSkipped('Requires HTML2PDF mocking infrastructure');
 =======
         $this->skipTest('Requires HTML2PDF mocking infrastructure');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 
     test('it returns valid pdf content when view exists', function (): void {
@@ -301,6 +340,10 @@ describe('Get Pdf Content By Record Action', function (): void {
         Assert::markTestSkipped('Requires test view infrastructure');
 =======
         $this->skipTest('Requires test view infrastructure');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 });

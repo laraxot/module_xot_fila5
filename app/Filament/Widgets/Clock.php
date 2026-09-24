@@ -10,6 +10,7 @@ namespace Modules\Xot\Filament\Widgets;
 =======
 // use Symfony\Component\Console\Output\BufferedOutput;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // use Symfony\Component\Console\Output\BufferedOutput;
@@ -17,6 +18,9 @@ namespace Modules\Xot\Filament\Widgets;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Nc6kyF
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 class Clock extends XotBaseWidget
 {
     public string $start = '';
@@ -24,8 +28,18 @@ class Clock extends XotBaseWidget
 <<<<<<< HEAD
     /** @var view-string */
 =======
+<<<<<<< HEAD
     /** @phpstan-ignore property.defaultValue */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Filament\Widgets\Widget;
+
+class Clock extends Widget
+{
+    public string $start = '';
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected string $view = 'xot::filament.widgets.clock';
 
     public function begin(): void

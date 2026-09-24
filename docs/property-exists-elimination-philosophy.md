@@ -277,11 +277,13 @@ if (isset($record->email)) {
 - Quaeris/Filament (2 file)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Quaeris/Filament (2 file)
 =======
 - healthcare_app/Filament (2 file)
 - ExternalProject/Filament (2 file)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - healthcare_app/Filament (2 file)
@@ -290,6 +292,11 @@ if (isset($record->email)) {
 =======
 - Quaeris/Filament (2 file)
 >>>>>>> .merge_file_K3RTBa
+=======
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -423,11 +430,13 @@ if (method_exists($record, 'getUrl')) {
 | Quaeris | 2 | Medium | Bassa |
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Quaeris | 2 | Medium | Bassa |
 =======
 | healthcare_app | 2 | Medium | Bassa |
 | ExternalProject | 2 | Medium | Bassa |
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 | healthcare_app | 2 | Medium | Bassa |
@@ -436,6 +445,11 @@ if (method_exists($record, 'getUrl')) {
 =======
 | Quaeris | 2 | Medium | Bassa |
 >>>>>>> .merge_file_K3RTBa
+=======
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort
@@ -509,10 +523,12 @@ if (method_exists($record, 'getUrl')) {
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 =======
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
@@ -520,3 +536,8 @@ Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 =======
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 >>>>>>> .merge_file_K3RTBa
+=======
+=======
+Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

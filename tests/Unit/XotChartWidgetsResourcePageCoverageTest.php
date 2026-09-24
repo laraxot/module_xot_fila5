@@ -9,22 +9,32 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Schema;
+<<<<<<< HEAD
 use Mockery;
 <<<<<<< .merge_file_OKTnJm
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use Mockery;
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_KoLP8V
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_XKBqhM
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBasePage as ResourceXotBasePage;
 use Modules\Xot\Filament\Widgets\ModelTrendChartWidget;
 use Modules\Xot\Filament\Widgets\StatesChartWidget;
@@ -32,47 +42,64 @@ use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Tests\Fixtures\Stubs\XotResPageStub;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 <<<<<<< .merge_file_OKTnJm
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_KoLP8V
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 use ReflectionClass;
 use ReflectionMethod;
 >>>>>>> .merge_file_XKBqhM
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\preg_match;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OKTnJm
 <<<<<<< HEAD
     Mockery::close();
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
     Mockery::close();
 =======
     \Mockery::close();
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     \Mockery::close();
 >>>>>>> .merge_file_KoLP8V
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     \Mockery::close();
@@ -81,6 +108,10 @@ afterEach(function (): void {
 =======
     Mockery::close();
 >>>>>>> .merge_file_XKBqhM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });
 
 describe('Xot chart widgets and resource page', function (): void {
@@ -111,11 +142,17 @@ describe('Xot chart widgets and resource page', function (): void {
             ['key' => 'c', 'state' => 'active', 'value' => '3'],
         ]);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_OKTnJm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -132,11 +169,16 @@ describe('Xot chart widgets and resource page', function (): void {
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_KoLP8V
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $w = (new \ReflectionClass(StatesChartWidget::class))->newInstanceWithoutConstructor();
         $w->model = CacheModel::class;
         $w->stateClass = 'dummy';
@@ -148,10 +190,15 @@ describe('Xot chart widgets and resource page', function (): void {
 =======
 >>>>>>> .merge_file_KoLP8V
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_XKBqhM
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $getData->setAccessible(true);
         $data = $getData->invoke($w);
         if (! is_array($data)) {
@@ -170,19 +217,26 @@ describe('Xot chart widgets and resource page', function (): void {
         Assert::assertArrayHasKey('datasets', $data2);
 
         try {
+<<<<<<< HEAD
             Assert::assertTrue(is_string($w->getHeading()) || $w->getHeading() === null);
 <<<<<<< .merge_file_OKTnJm
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             Assert::assertTrue(is_string($w->getHeading()) || $w->getHeading() === null);
 =======
             Assert::assertTrue(is_string($w->getHeading()) || null === $w->getHeading());
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             Assert::assertTrue(is_string($w->getHeading()) || null === $w->getHeading());
 >>>>>>> .merge_file_KoLP8V
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             Assert::assertTrue(is_string($w->getHeading()) || null === $w->getHeading());
@@ -190,24 +244,35 @@ describe('Xot chart widgets and resource page', function (): void {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XKBqhM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_OKTnJm
 <<<<<<< HEAD
         $getType = new ReflectionMethod(StatesChartWidget::class, 'getType');
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         $getType = new ReflectionMethod(StatesChartWidget::class, 'getType');
 =======
         $getType = new \ReflectionMethod(StatesChartWidget::class, 'getType');
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $getType = new \ReflectionMethod(StatesChartWidget::class, 'getType');
 >>>>>>> .merge_file_KoLP8V
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         $getType = new \ReflectionMethod(StatesChartWidget::class, 'getType');
@@ -216,16 +281,26 @@ describe('Xot chart widgets and resource page', function (): void {
 =======
         $getType = new ReflectionMethod(StatesChartWidget::class, 'getType');
 >>>>>>> .merge_file_XKBqhM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $getType->setAccessible(true);
         Assert::assertSame('bar', $getType->invoke($w));
 
         // ModelTrendChartWidget
         if (class_exists(ModelTrendChartWidget::class)) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OKTnJm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -241,11 +316,16 @@ describe('Xot chart widgets and resource page', function (): void {
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_KoLP8V
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $t = (new \ReflectionClass(ModelTrendChartWidget::class))->newInstanceWithoutConstructor();
             $ref = new \ReflectionClass(ModelTrendChartWidget::class);
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
@@ -256,10 +336,15 @@ describe('Xot chart widgets and resource page', function (): void {
 =======
 >>>>>>> .merge_file_KoLP8V
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_XKBqhM
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     continue;
                 }
                 if (preg_match('/mount|render|boot|__/', $method->getName())) {
@@ -285,20 +370,27 @@ describe('Xot chart widgets and resource page', function (): void {
     test('Resource XotBasePage getView getViewTest navigation', function (): void {
         Http::fake();
         Process::fake();
+<<<<<<< HEAD
 <<<<<<< .merge_file_OKTnJm
 <<<<<<< HEAD
         $page = new XotResPageStub;
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         $page = new XotResPageStub;
 =======
         $page = new XotResPageStub();
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $page = new XotResPageStub();
 >>>>>>> .merge_file_KoLP8V
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         $page = new XotResPageStub();
@@ -307,6 +399,10 @@ describe('Xot chart widgets and resource page', function (): void {
 =======
         $page = new XotResPageStub;
 >>>>>>> .merge_file_XKBqhM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         Assert::assertNotEmpty($page->getView());
         try {
             $page->getViewTest();
@@ -319,14 +415,19 @@ describe('Xot chart widgets and resource page', function (): void {
             Assert::assertNotEmpty($e->getMessage());
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_OKTnJm
 <<<<<<< HEAD
         $ref = new ReflectionClass(ResourceXotBasePage::class);
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
             if ($method->getDeclaringClass()->getName() !== ResourceXotBasePage::class) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Xgc6jS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         $ref = new ReflectionClass(ResourceXotBasePage::class);
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
@@ -344,6 +445,7 @@ describe('Xot chart widgets and resource page', function (): void {
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
             if (ResourceXotBasePage::class !== $method->getDeclaringClass()->getName()) {
 >>>>>>> .merge_file_KoLP8V
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -352,6 +454,10 @@ describe('Xot chart widgets and resource page', function (): void {
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
             if ($method->getDeclaringClass()->getName() !== ResourceXotBasePage::class) {
 >>>>>>> .merge_file_XKBqhM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 continue;
             }
             if (preg_match('/mount|render|boot|__/', $method->getName())) {

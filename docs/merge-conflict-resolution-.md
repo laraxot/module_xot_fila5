@@ -84,9 +84,12 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_YXK4HS
 <<<<<<< HEAD
 =======
@@ -112,11 +115,16 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_EFPwzp
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       ```
 
 15. **PasswordResetConfirmWidget.php**
@@ -316,6 +324,7 @@ Questi possono essere corretti in un secondo momento se necessario.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 =======
 =======
@@ -331,6 +340,7 @@ Questi possono essere corretti in un secondo momento se necessario.
 =======
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
@@ -338,3 +348,8 @@ Questi possono essere corretti in un secondo momento se necessario.
 =======
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> .merge_file_EFPwzp
+=======
+=======
+- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

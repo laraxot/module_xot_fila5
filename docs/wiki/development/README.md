@@ -2,13 +2,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_Z6AaiF
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,6 +34,7 @@
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 >>>>>>> laraxot/dev
 =======
@@ -39,12 +45,17 @@
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_AmTfBI
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Readme"
 type: reference
@@ -56,7 +67,10 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< .merge_file_gDspsU
@@ -68,7 +82,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_Z6AaiF
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,11 +99,16 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AmTfBI
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Sviluppo
 
@@ -106,6 +129,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< HEAD
@@ -122,8 +146,15 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -286,8 +317,11 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< .merge_file_gDspsU
@@ -296,18 +330,22 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Z6AaiF
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 =======
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
@@ -316,6 +354,9 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 
 >>>>>>> .merge_file_AmTfBI
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -372,6 +413,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< .merge_file_gDspsU
@@ -382,6 +424,8 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_Z6AaiF
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -389,12 +433,14 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 =======
+<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
 >>>>>>> laraxot/dev
@@ -402,6 +448,9 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_AmTfBI
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -433,6 +482,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 
 =======
@@ -447,12 +497,19 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 <<<<<<< HEAD
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 <<<<<<< HEAD
 =======
@@ -524,7 +581,12 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_AmTfBI
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

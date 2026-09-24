@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_P7LMij
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Architettura Frontend
 
 ## Tecnologie Principali
@@ -110,7 +114,10 @@ $post = Post::findOrFail($id);
 - [Struttura dei Temi](themes-structure.md)
 - [Standard del Codice](code-standards.md)
 - [Regole di Documentazione](documentation-rules.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_HiHEwx
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -125,9 +132,14 @@ canonical: ../../../Themes/docs/shared-components/frontend-architecture.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/frontend-architecture.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/frontend-architecture.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_P7LMij
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

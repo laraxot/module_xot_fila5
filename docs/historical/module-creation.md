@@ -185,11 +185,15 @@ NomeModulo/
 ## Link Utili
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [blade-component-registration.md](blade-component-registration.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_UkpnVv
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_6tWZtT
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 =======
@@ -199,6 +203,7 @@ NomeModulo/
 - [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_sJSFjt
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
@@ -206,5 +211,10 @@ NomeModulo/
 =======
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 >>>>>>> .merge_file_8kf8vJ
+=======
+=======
+- [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)

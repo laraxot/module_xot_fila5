@@ -112,7 +112,11 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         $after = collect($after)->map(function (string $item) {
 =======
         $after = collect($after)->map(function ($item) {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             return Str::kebab($item);
             // return Str::snake($item);
         })->implode('.');

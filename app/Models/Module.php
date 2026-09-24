@@ -9,7 +9,11 @@ use Illuminate\Support\Arr;
 <<<<<<< HEAD
 use Illuminate\Support\Carbon;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
@@ -88,7 +92,11 @@ use Sushi\Sushi;
  * @property \Illuminate\Support\Carbon|null $deactivation_date
  * @property \Illuminate\Support\Carbon|null $installation_date
  * @property array<array-key, mixed>|null    $update_history
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()

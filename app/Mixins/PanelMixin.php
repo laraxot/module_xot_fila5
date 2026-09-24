@@ -13,12 +13,19 @@ use Nwidart\Modules\Module as NwidartModule;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_V27SrG
 <<<<<<< HEAD
  * <<<<<<< HEAD.
  *
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+ *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @method string               getId()
  * @method string               getName()
  * @method NwidartModule        getModule()

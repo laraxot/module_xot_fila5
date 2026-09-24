@@ -56,15 +56,21 @@ userfactory.php              → ELIMINA
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## 🗑️ Cleanup Effettuato ([DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## 🗑️ Cleanup Effettuato ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lxgmIZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Modulo Xot (6 file)
 ```bash
@@ -87,6 +93,7 @@ userfactory.php              → ELIMINA
 <<<<<<< .merge_file_rvp0QA
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -99,11 +106,16 @@ userfactory.php              → ELIMINA
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lxgmIZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### Modulo Media (1 file)
 ```bash
 ✗ tests/Filament/Resources/mediaconvertresourcetest.php
@@ -283,6 +295,7 @@ Ogni modulo interessato ha documentazione dettagliata:
 <<<<<<< .merge_file_rvp0QA
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -297,11 +310,16 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [User Module](../../user/docs/case-sensitivity-rules.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lxgmIZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Gdpr Module](../../Gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../Lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../Media/docs/case-sensitivity-rules.md)
@@ -372,15 +390,21 @@ python3 /path/to/check_duplicates.py
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [CLAUDE.md - Project Guidelines](claude.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [CLAUDE.md - Project Guidelines](claude.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lxgmIZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🎯 Conclusioni
 
@@ -414,6 +438,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 **Revisione**: Trimestrale (ogni 3 mesi)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
 =======
@@ -421,6 +446,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -431,3 +457,9 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
 >>>>>>> .merge_file_lxgmIZ
+=======
+=======
+**Status**: ✅ Cleanup completato, enforcement attivo
+**Revisione**: Trimestrale (ogni 3 mesi)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

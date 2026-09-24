@@ -13,6 +13,7 @@ Secondo le regole di organizzazione della documentazione:
 <<<<<<< .merge_file_toQJuC
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -33,11 +34,16 @@ Secondo le regole di organizzazione della documentazione:
 Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs/xot-link.md) nel modulo Cms.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_4Ohbdo
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Documentazione Frontend](../../Cms/docs/frontoffice.md) - Documentazione completa sul frontend
 - [Gestione dei Temi](../../Cms/docs/theme_compilation.md) - Compilazione e pubblicazione dei temi
 - [Componenti Blade](../../Cms/docs/components.md) - Documentazione sui componenti Blade
@@ -60,7 +66,11 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [cms-link.md](../../../Xot/docs/cms-link.md)
 * [cms-link.md](../../../User/docs/cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
@@ -83,9 +93,14 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 * [cms-link.md](../../../Lang/docs/cms-link.md)
 <<<<<<< .merge_file_toQJuC
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [cms-link.md](../../../Lang/docs/cms-link.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_4Ohbdo
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

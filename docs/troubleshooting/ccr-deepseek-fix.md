@@ -26,10 +26,12 @@ To activate the fix, update your CCR configuration (usually `~/.claude-code-rout
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
 =======
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila5_mono/bashscripts/ccr/custom-router.js"
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila5_mono/bashscripts/ccr/custom-router.js"
@@ -37,6 +39,11 @@ To activate the fix, update your CCR configuration (usually `~/.claude-code-rout
 =======
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
 >>>>>>> .merge_file_CquVxM
+=======
+=======
+  "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila5_mono/bashscripts/ccr/custom-router.js"
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }
 ```
 
@@ -64,10 +71,12 @@ After applying the config, run a command that triggers a tool call:
 The error should no longer occur.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 The error should no longer occur.
 =======
 The error should no longer occur.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 The error should no longer occur.
@@ -75,3 +84,8 @@ The error should no longer occur.
 =======
 The error should no longer occur.
 >>>>>>> .merge_file_CquVxM
+=======
+=======
+The error should no longer occur.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

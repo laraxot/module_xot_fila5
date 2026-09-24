@@ -128,7 +128,11 @@ class ImportCsvAction
 =======
             function ($column) use ($conn, $tbl) {
                 /** @var string $column */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(
@@ -245,7 +249,11 @@ class ImportCsvAction
     /**
      * Transform columns into ColumnData objects.
      *
+<<<<<<< HEAD
      * @param array<string> $columns
+=======
+     * @param array<int, string> $columns
+>>>>>>> 930f8146 (Check & fix styling)
      *
      * @return array<ColumnData>
      *

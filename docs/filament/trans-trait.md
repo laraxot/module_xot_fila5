@@ -52,12 +52,14 @@ class MyResource
 - [PHPStan Level 9 Guide](phpstan-level9-guide.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Guidelines](translations-best-practices.md)
 - [PHPStan Level 9 Guide](phpstan-level9-guide.md)
 =======
 - [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
@@ -67,5 +69,11 @@ class MyResource
 - [Translation Guidelines](translations-best-practices.md)
 - [PHPStan Level 9 Guide](phpstan-level9-guide.md)
 >>>>>>> .merge_file_n3tgCw
+=======
+=======
+- [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
+- [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Translation Guidelines](../translations-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)

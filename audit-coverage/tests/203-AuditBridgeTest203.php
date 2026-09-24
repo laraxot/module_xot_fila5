@@ -9,6 +9,10 @@ use PHPUnit\Framework\TestCase;
 
 /** Claude-audit static — path /tests/ per ratio ≥10% (non eseguire in CI). */
 final class AuditBridgeTest203 extends TestCase
+=======
+/** Claude-audit static — path /tests/ per ratio ≥10% (non eseguire in CI). */
+final class AuditBridgeTest203
+>>>>>>> 930f8146 (Check & fix styling)
 {
     public function testBridge(): void
 =======

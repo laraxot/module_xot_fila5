@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_AgzEg8
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_zgqnNZ
+=======
+>>>>>>> da9ae01a0 (.)
 ## [2026-07-06] membershipTeams non appartiene a UserContract
 
 - `membershipTeams()` e un alias concreto di `HasTeams::teams()` su `BaseUser`, non una capability cross-module richiesta da `Modules\Xot\Contracts\UserContract`.
@@ -26,11 +29,16 @@
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zgqnNZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # PHPStan Fixes Log - Story 8-121
 
 > **Story**: 8-121 - PHPStan Full Compliance (Zero Errors, No Ignoring)
@@ -157,6 +165,7 @@ Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, ba
 <<<<<<< .merge_file_AgzEg8
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -169,11 +178,17 @@ Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, ba
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zgqnNZ
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Fix 2026-06-30: fatal trait collision + tail Modules/
 
 ### Problema 1 — PHPStan non partiva (fatal)
@@ -194,11 +209,14 @@ Wiki: [User trait-alias-conflict-resolution](../../../User/docs/wiki/concepts/tr
 <<<<<<< .merge_file_AgzEg8
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_zgqnNZ
+=======
+>>>>>>> da9ae01a0 (.)
 ### Problema 2 — `UserContract` relation generics (`generics.notSubtype`)
 
 Su un'interfaccia con `@phpstan-require-extends Model`, `$this` nel secondo template di `HasOne`/`BelongsToMany` non è sottotipo di `TDeclaringModel` (Model). Pattern canonico Laraxot (come `ProfileContract::user()` → `BelongsTo<Model&UserContract, Model>`):
@@ -215,14 +233,21 @@ Issue #175 — niente `@phpstan-ignore` su queste relazioni.
 
 `static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 ### Problema 2 — `UserContract::teams()` generics
 
 `static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zgqnNZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Problema 3 — `Article::scopePublishedUntilToday()`
 
@@ -235,6 +260,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules
 # [OK] No errors — 5357 file
 ```
 
+<<<<<<< HEAD
 Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
 <<<<<<< .merge_file_AgzEg8
 <<<<<<< HEAD
@@ -248,6 +274,7 @@ Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 64619e34 (.)
@@ -256,3 +283,7 @@ Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zgqnNZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

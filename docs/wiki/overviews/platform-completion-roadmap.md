@@ -22,6 +22,7 @@ related:
   - ../phpstan-best-practices.md
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_HqWqL2
   - ../PHPSTAN-BEST-PRACTICES.md
 =======
@@ -32,6 +33,7 @@ related:
   - ../PHPSTAN-BEST-PRACTICES.md
 >>>>>>> .merge_file_YXPZ37
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
   - ../PHPSTAN-BEST-PRACTICES.md
@@ -39,6 +41,11 @@ related:
 =======
   - ../phpstan-best-practices.md
 >>>>>>> .merge_file_dDYYrx
+=======
+=======
+  - ../PHPSTAN-BEST-PRACTICES.md
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - ../../../../../docs/wiki/PHPSTAN-INDEX.md
 ---
 

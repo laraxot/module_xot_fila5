@@ -10,6 +10,15 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
+use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
+use Modules\Xot\Models\XotBaseModel;
+use PHPUnit\Framework\Assert;
+
+>>>>>>> 930f8146 (Check & fix styling)
 test('safe array by model cast action works', function () {
     $model = new class extends XotBaseModel
     {

@@ -288,12 +288,16 @@ Ogni modulo dovrebbe documentare le soluzioni ai problemi PHPStan specifici in `
 - [Blog PHPStan sui Generics](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 - [Solving Undefined Properties](https://phpstan.org/blog/solving-phpstan-access-to-undefined-property)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 - [Modules/Xot/docs/PHPSTAN-GENERIC-TYPES.md](../Xot/docs/PHPSTAN-GENERIC-TYPES.md) - Guida specifica per tipi generici
 - [Modules/Xot/docs/NAMESPACE-CONVENTIONS.md](../Xot/docs/NAMESPACE-CONVENTIONS.md) - Convenzioni per i namespace
 
 ---
 
 Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime.
+<<<<<<< HEAD
 =======
 - [Modules/Xot/docs/PHPSTAN-GENERIC-TYPES.md](../xot/docs/phpstan-generic-types.md) - Guida specifica per tipi generici
 - [Modules/Xot/docs/NAMESPACE-CONVENTIONS.md](../xot/docs/namespace-conventions.md) - Convenzioni per i namespace
@@ -302,3 +306,5 @@ Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i 
 
 Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

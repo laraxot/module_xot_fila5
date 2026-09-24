@@ -120,12 +120,16 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 
 ## Collegamenti ad Altri Documenti
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_9z0zAT
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_u9vRIp
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
@@ -138,6 +142,7 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 - [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hcwt1p
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
@@ -147,6 +152,12 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
 >>>>>>> .merge_file_8B0eaT
+=======
+=======
+- [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
+- [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -157,11 +168,15 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 
 - [README.md](./README.md) - Indice principale della documentazione
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
+<<<<<<< HEAD
 <<<<<<< .merge_file_9z0zAT
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_u9vRIp
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
@@ -171,6 +186,7 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hcwt1p
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
@@ -178,5 +194,10 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 =======
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 >>>>>>> .merge_file_8B0eaT
+=======
+=======
+- [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget

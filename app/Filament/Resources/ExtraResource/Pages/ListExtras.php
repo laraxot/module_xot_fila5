@@ -31,12 +31,21 @@ class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ts3FYv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, TextColumn>
+     */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     #[\Override]
     public function getTableColumns(): array
     {

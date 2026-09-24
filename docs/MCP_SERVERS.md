@@ -45,10 +45,12 @@ This document provides Xot-specific MCP usage guidelines only.
 - **Container Tag**: `ptv`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Container Tag**: `ptv`
 =======
 - **Container Tag**: `fixcity`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Container Tag**: `fixcity`
@@ -56,6 +58,11 @@ This document provides Xot-specific MCP usage guidelines only.
 =======
 - **Container Tag**: `ptv`
 >>>>>>> .merge_file_uFFnSQ
+=======
+=======
+- **Container Tag**: `fixcity`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Use**: Store Xot architectural decisions, evolution history
 - **Example**: Store reasoning behind XotBaseModel design
 

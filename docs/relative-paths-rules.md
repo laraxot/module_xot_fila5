@@ -8,6 +8,7 @@
 <<<<<<< .merge_file_8gaZz6
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -19,11 +20,16 @@
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Regola Fondamentale
 
@@ -42,15 +48,21 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [Modulo Xot](./laravel/modules/xot/docs/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 [Modulo Xot](./laravel/modules/xot/docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Da un file in un modulo verso un altro modulo
@@ -62,15 +74,21 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [Altro Modulo](../../../altromodulo/docs/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 [Altro Modulo](../../../altromodulo/docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Da un file in un modulo verso la root
@@ -82,15 +100,21 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [Documentazione Root](../../../../../docs/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 [Documentazione Root](../../../../../docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## Errori Comuni da Evitare
@@ -103,15 +127,21 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    [ERRATO](../xot/docs/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
    [ERRATO](../xot/docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:
@@ -123,10 +153,12 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    [ERRATO](/docs/readme.md)
    [ERRATO](/laravel/modules/xot/docs/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
    [ERRATO](/docs/readme.md)
@@ -134,6 +166,10 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    ```
 
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
@@ -145,10 +181,12 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    [ERRATO](modules/xot/docs/readme.md) <!-- Da un file nella root -->
    [ERRATO](../xot/docs/readme.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
    [ERRATO](modules/xot/docs/readme.md) <!-- Da un file nella root -->
@@ -156,6 +194,10 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi
@@ -177,10 +219,12 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
 =======
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
@@ -188,6 +232,11 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 =======
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 
@@ -216,10 +265,12 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
 =======
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
@@ -227,3 +278,8 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 =======
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
 >>>>>>> .merge_file_2W7kWi
+=======
+=======
+- [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

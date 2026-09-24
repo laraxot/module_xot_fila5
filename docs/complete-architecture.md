@@ -128,11 +128,14 @@ Filament Resource → XotBaseResource → FilamentResource
 <<<<<<< .merge_file_MooduA
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_op2q1J
+=======
+>>>>>>> da9ae01a0 (.)
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
@@ -143,12 +146,18 @@ abstract public function getFormSchema(): array
 =======
 abstract public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 abstract public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_op2q1J
+=======
+=======
+abstract public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Page Generation
@@ -213,10 +222,12 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
 =======
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
@@ -224,3 +235,8 @@ This architecture creates a harmonious system where all components work together
 =======
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
 >>>>>>> .merge_file_op2q1J
+=======
+=======
+This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

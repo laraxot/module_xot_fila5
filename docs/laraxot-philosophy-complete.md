@@ -17,10 +17,12 @@
 - **Predictable behavior > Unlimited options**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Predictable behavior > Unlimited options**
 =======
 - **<nome progetto>able behavior > Unlimited options**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **<nome progetto>able behavior > Unlimited options**
@@ -28,6 +30,11 @@
 =======
 - **Predictable behavior > Unlimited options**
 >>>>>>> .merge_file_eWdMyT
+=======
+=======
+- **Predictable behavior > Unlimited options**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Same patterns across all modules, same file structures
 - **Violation Example**: Different test structures across modules
 - **Zen Principle**: Harmony through uniformity
@@ -50,10 +57,12 @@ Xot (Core Engine)
 ├── Quaeris (Core Business Logic - Surveys)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── Quaeris (Core Business Logic - Surveys)
 =======
 ├── healthcare_app (Core Business Logic - Surveys)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ├── healthcare_app (Core Business Logic - Surveys)
@@ -61,6 +70,11 @@ Xot (Core Engine)
 =======
 ├── Quaeris (Core Business Logic - Surveys)
 >>>>>>> .merge_file_eWdMyT
+=======
+=======
+├── Quaeris (Core Business Logic - Surveys)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -146,10 +160,12 @@ TextInput::make('name');
 #### 3. **Quaeris Module (The Economy)**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 3. **Quaeris Module (The Economy)**
 =======
 #### 3. **healthcare_app Module (The Economy)**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 #### 3. **healthcare_app Module (The Economy)**
@@ -157,6 +173,11 @@ TextInput::make('name');
 =======
 #### 3. **Quaeris Module (The Economy)**
 >>>>>>> .merge_file_eWdMyT
+=======
+=======
+#### 3. **Quaeris Module (The Economy)**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -232,10 +253,12 @@ if (isset($model->email)) { ... }
 - **Reason**: Predictable autoloader behavior
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Reason**: Predictable autoloader behavior
 =======
 - **Reason**: <nome progetto>able autoloader behavior
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Reason**: <nome progetto>able autoloader behavior
@@ -243,6 +266,11 @@ if (isset($model->email)) { ... }
 =======
 - **Reason**: Predictable autoloader behavior
 >>>>>>> .merge_file_eWdMyT
+=======
+=======
+- **Reason**: Predictable autoloader behavior
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Location**: `Modules/{Module}/tests/`
 
 ## 🎯 Implementation Guidelines
@@ -281,11 +309,14 @@ class YourResource extends XotBaseResource
 <<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_eWdMyT
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -296,12 +327,18 @@ class YourResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_eWdMyT
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components - NO hardcoded labels
@@ -312,11 +349,14 @@ class YourResource extends XotBaseResource
 <<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_eWdMyT
+=======
+>>>>>>> da9ae01a0 (.)
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
@@ -327,12 +367,18 @@ class YourResource extends XotBaseResource
 =======
     public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getInfolistSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_eWdMyT
+=======
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Infolist components
@@ -422,6 +468,7 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Last Updated**: 2025-11-17
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy**: Consistency, Predictability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 **Last Updated**: 2025-11-17
@@ -430,6 +477,7 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Philosophy**: Consistency, <nome progetto>ability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Last Updated**: 2025-11-17
@@ -437,7 +485,13 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 **Philosophy**: Consistency, Predictability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 **Last Updated**: 2025-11-17
+<<<<<<< HEAD
 >>>>>>> .merge_file_eWdMyT
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

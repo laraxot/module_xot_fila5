@@ -10,6 +10,7 @@ namespace Modules\Xot\Actions\Arr;
 =======
 >>>>>>> .merge_file_wVghEZ
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 
 use function Safe\file_put_contents;
 
@@ -22,12 +23,18 @@ use function Safe\file_put_contents;
  * `php-array-one-key-per-line.md`).
  */
 =======
+<<<<<<< HEAD
 use function Safe\file_put_contents;
 
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\VarExporter\VarExporter;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Symfony\Component\VarExporter\VarExporter;
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 class SavePhpArrayAction
 {
     use QueueableAction;
@@ -42,8 +49,10 @@ class SavePhpArrayAction
      */
     public function execute(array $data, string $filename): bool
     {
+<<<<<<< HEAD
         $exported = $this->exportArray($data, 0);
 =======
+<<<<<<< HEAD
      * @param array<string, mixed> $data
      */
     public function execute(array $data, string $filename): bool
@@ -51,6 +60,11 @@ class SavePhpArrayAction
         $exported = VarExporter::export($data);
         // $exported = var_export($data, true);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $exported = VarExporter::export($data);
+        // $exported = var_export($data, true);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $content = "<?php\n\ndeclare(strict_types=1);\n\nreturn ".$exported.";\n";
 
         return (bool) file_put_contents($filename, $content);
@@ -90,5 +104,9 @@ class SavePhpArrayAction
         return var_export($value, true);
     }
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

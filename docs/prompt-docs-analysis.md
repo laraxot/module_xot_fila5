@@ -8,6 +8,7 @@
 <<<<<<< .merge_file_4wzX19
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -19,11 +20,16 @@
 > - [Regole per i Percorsi Relativi](./relative_paths_rules.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_g7Sh0E
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 > - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)
 > - [Analisi nel modulo bashscripts](../../../../bashscripts/docs/prompt_docs_analysis.md)
 
@@ -47,15 +53,21 @@ Per migliorare il prompt, propongo di applicare i seguenti principi:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./prompt_rules.md), il prompt deve rimanere una singola stringa continua senza formattazione.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./prompt_rules.md), il prompt deve rimanere una singola stringa continua senza formattazione.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_g7Sh0E
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 2. **Migliorare l'organizzazione logica**: Raggruppare concetti correlati per migliorare la comprensione.
 3. **Eliminare ridondanze**: Rimuovere informazioni duplicate per rendere il prompt più conciso.
 4. **Garantire coerenza**: Assicurare che tutti gli esempi e le istruzioni siano coerenti con le regole stabilite.
@@ -116,10 +128,12 @@ Dal punto di vista tecnico, l'implementazione di questi miglioramenti richiede:
 Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
 =======
 Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
@@ -127,3 +141,8 @@ Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qua
 =======
 Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
 >>>>>>> .merge_file_g7Sh0E
+=======
+=======
+Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

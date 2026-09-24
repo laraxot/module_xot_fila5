@@ -14,9 +14,32 @@ Le classi che estendono `XotBaseResource` **NON DEVONO MAI** implementare i segu
 ### Metodi di form e navigazione
 - ❌ `form(Form $form): Form`
 - ❌ `table(Table $table): Table`
+<<<<<<< HEAD
 - ❌ `getPages()` (se contiene solo route standard)
 - ❌ `getRelations()` (se restituisce un array vuoto)
 
+=======
+- ❌ `getPages()` (se contiene **solo** `index`, `create`, `edit` e le Page rispettano la convenzione naming — vedi sotto)
+- ❌ `getRelations()` (se restituisce un array vuoto)
+
+### `getPages()` — prerequisito naming
+
+`XotBaseResource::getPages()` risolve automaticamente:
+
+- `List{Str::plural($name)}`, `Create{$name}`, `Edit{$name}` nel namespace `{Resource}\Pages\`
+- `View{$name}` solo se la classe esiste
+
+Rimuovere l'override **solo** se le classi Page reali hanno **esattamente** quei nomi. Se la Resource è `AssenzeResource` ma le Page sono `ListAssenza`, l'override resta obbligatorio.
+
+Guida completa: [getpages-redundancy-rule.md](../../getpages-redundancy-rule.md)
+
+Verifica:
+
+```bash
+cd laravel && php ../bashscripts/filament/analyze-redundant-getpages.php
+```
+
+>>>>>>> 930f8146 (Check & fix styling)
 ## Motivazione architetturale
 
 Questi metodi sono già implementati in `XotBaseResource` e forniscono funzionalità standard ottimizzate per il progetto. Sovrascriverli:
@@ -38,11 +61,14 @@ class ProductResource extends XotBaseResource
 <<<<<<< .merge_file_znV4tQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_fbl17e
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -53,12 +79,18 @@ class ProductResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_fbl17e
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

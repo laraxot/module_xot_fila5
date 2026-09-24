@@ -206,10 +206,12 @@ find laravel/Themes -name "docs" -type d
 - [Struttura Progetto](PROJECT-STRUCTURE.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura Progetto](PROJECT-STRUCTURE.md)
 =======
 - [Struttura Progetto](project-structure.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Struttura Progetto](project-structure.md)
@@ -217,6 +219,11 @@ find laravel/Themes -name "docs" -type d
 =======
 - [Struttura Progetto](PROJECT-STRUCTURE.md)
 >>>>>>> .merge_file_MlEjVH
+=======
+=======
+- [Struttura Progetto](project-structure.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---

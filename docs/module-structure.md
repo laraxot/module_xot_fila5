@@ -50,15 +50,21 @@ Per dettagli implementativi e best practice vedi:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_sg9vzS
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [<nome progetto>/docs/geo-integration.md](../../<nome progetto>/docs/geo-integration.md)
 - [Questa stessa doc (Xot/module-structure.md)](module-structure.md)
 
@@ -90,11 +96,14 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 <<<<<<< .merge_file_WXBKrN
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_sg9vzS
+=======
+>>>>>>> da9ae01a0 (.)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -115,17 +124,24 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 - [Cms](../cms/project_docs/readme.md) - Gestione contenuti
 - [Lang](../lang/project_docs/readme.md) - Traduzioni
 - [User](../user/project_docs/readme.md) - Gestione utenti
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
 - [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_sg9vzS
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Moduli Collegati
 - [UI](../UI/project_docs/README.md) - Componenti di interfaccia
@@ -292,6 +308,7 @@ User/
 <<<<<<< .merge_file_WXBKrN
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -364,11 +381,16 @@ User/
 - [Visualizzazione](../chart/project_docs/visualization.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_sg9vzS
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Componenti Volt](../UI/project_docs/components/volt.md)
 - [Layout](../UI/project_docs/layouts.md)
 - [Temi](../UI/project_docs/themes.md)
@@ -582,10 +604,12 @@ Se trovi una directory con case errato:
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
 =======
 * [module_structure.md](../../../../../docs/project/error_analysis/module_structure.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [module_structure.md](../../../../../docs/project/error_analysis/module_structure.md)
@@ -593,3 +617,8 @@ Se trovi una directory con case errato:
 =======
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
 >>>>>>> .merge_file_sg9vzS
+=======
+=======
+* [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -506,6 +506,7 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **Priorità**: CRITICA
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Categoria**: database
 **Priorità**: CRITICA
 =======
@@ -513,6 +514,7 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **Categoria**: database
 **Priorità**: CRITICA
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Aggiornato**: [DATE]
@@ -523,3 +525,9 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **Categoria**: database
 **Priorità**: CRITICA
 >>>>>>> .merge_file_k9H3FK
+=======
+=======
+**Categoria**: database
+**Priorità**: CRITICA
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

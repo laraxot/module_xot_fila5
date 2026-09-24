@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: Indice Master Completo
 
 ## 📋 Panoramica
@@ -47,15 +53,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../TechPlanner/docs/philosophy-complete.md](../../techplanner/docs/philosophy-complete.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../TechPlanner/docs/philosophy-complete.md](../../techplanner/docs/philosophy-complete.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Client-Centric, Compliance-First, Integration Over Duplication
 
@@ -78,15 +90,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../User/docs/philosophy-complete.md](../../user/docs/philosophy-complete.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../User/docs/philosophy-complete.md](../../user/docs/philosophy-complete.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation
 
@@ -107,15 +125,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../UI/docs/philosophy.md](../../ui/docs/philosophy.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../UI/docs/philosophy.md](../../ui/docs/philosophy.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Riusabilità, Consistenza Visiva, Type Safety
 
@@ -136,15 +160,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../Geo/docs/philosophy.md](../../geo/docs/philosophy.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../Geo/docs/philosophy.md](../../geo/docs/philosophy.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Schema.org Compliance, Polymorphic Flexibility, Geographic Type Safety
 
@@ -165,15 +195,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../Tenant/docs/philosophy.md](../../tenant/docs/philosophy.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../Tenant/docs/philosophy.md](../../tenant/docs/philosophy.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Sovranità Digitale Distribuita, Isolamento Assoluto
 
@@ -194,15 +230,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../Notify/docs/philosophy.md](../../notify/docs/philosophy.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../Notify/docs/philosophy.md](../../notify/docs/philosophy.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Comunicazione Responsabile, Minimalismo Funzionale
 
@@ -223,15 +265,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../Activity/docs/philosophy-complete.md](../../activity/docs/philosophy-complete.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../Activity/docs/philosophy-complete.md](../../activity/docs/philosophy-complete.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Track Everything, Reconstruct Anything, Privacy First
 
@@ -252,15 +300,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../Media/docs/philosophy-complete.md](../../media/docs/philosophy-complete.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../Media/docs/philosophy-complete.md](../../media/docs/philosophy-complete.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Secure Upload, Smart Storage, Automatic Processing
 
@@ -281,15 +335,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../Cms/docs/philosophy.md](../../cms/docs/philosophy.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../Cms/docs/philosophy.md](../../cms/docs/philosophy.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Contenuto Strutturato e Modulare, Gerarchia Sacra
 
@@ -310,15 +370,21 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **File**: [../../Employee/docs/philosophy-complete.md](../../employee/docs/philosophy-complete.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: [../../Employee/docs/philosophy-complete.md](../../employee/docs/philosophy-complete.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Filosofia**: Actions-Only, Compliance-First, Italian Labor Law
 
@@ -427,10 +493,12 @@ Quando si modifica business logic, workflow, o pattern di un modulo:
 **Status**: ✅ Documentazione Filosofica Completa per Tutti i Moduli Principali
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Documentazione Filosofica Completa per Tutti i Moduli Principali
 =======
 **Status**: ✅ Documentazione Filosofica Completa per Tutti i Moduli Principali
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: ✅ Documentazione Filosofica Completa per Tutti i Moduli Principali
@@ -438,3 +506,8 @@ Quando si modifica business logic, workflow, o pattern di un modulo:
 =======
 **Status**: ✅ Documentazione Filosofica Completa per Tutti i Moduli Principali
 >>>>>>> .merge_file_bkK6G2
+=======
+=======
+**Status**: ✅ Documentazione Filosofica Completa per Tutti i Moduli Principali
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

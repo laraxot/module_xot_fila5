@@ -41,10 +41,20 @@ class ListModules extends XotBaseListRecords
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 =======
 
     #[\Override]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, Stack>
+     */
+    #[\Override]
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getGridTableColumns(): array
     {
         return [
@@ -68,7 +78,11 @@ class ListModules extends XotBaseListRecords
     /**
      * Undocumented function.
      *
+<<<<<<< HEAD
      * @return array<BaseFilter>
+=======
+     * @return array<string, BaseFilter>
+>>>>>>> 930f8146 (Check & fix styling)
      */
     #[\Override]
     public function getTableFilters(): array
@@ -87,7 +101,11 @@ class ListModules extends XotBaseListRecords
     /**
      * Undocumented function.
      *
+<<<<<<< HEAD
      * @return array<Action|ActionGroup>
+=======
+     * @return array<int|string, Action|ActionGroup>
+>>>>>>> 930f8146 (Check & fix styling)
      */
     #[\Override]
     public function getTableActions(): array

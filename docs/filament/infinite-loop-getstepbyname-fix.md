@@ -46,15 +46,22 @@ $schema = Str::of($name)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     ->studly()     // 'studio_step' → 'StudioStep'
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     ->studly()     // 'studio_step' → 'StudioStep'
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+=======
+    ->studly()     // 'studio_step' → 'StudioStep'
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ->studly()     // 'studio_step' → 'StudioStep'  
     ->prepend('get') // 'StudioStep' → 'getStudioStep'
     ->append('Schema') // 'getStudioStep' → 'getStudioStepSchema'
@@ -82,15 +89,22 @@ $attachments = $model::$attachments;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ```php
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ```php
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+=======
+```php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```php  
 // ✅ CORRETTO - Check esistenza proprietà
 $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
@@ -117,15 +131,22 @@ $attachments = property_exists($model, 'attachments') ? $model::$attachments : [
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+=======
+- [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅  
 - [ ] personal_info_step → Chiama `getPersonalInfoStepSchema()` ✅
 
@@ -153,15 +174,22 @@ static::{$methodName}();
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // ✅ Property existence check
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // ✅ Property existence check
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+=======
+// ✅ Property existence check
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 // ✅ Property existence check  
 $prop = property_exists($class, 'property') ? $class::$property : [];
 ```
@@ -176,11 +204,14 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 <<<<<<< .merge_file_Gv17gI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+>>>>>>> da9ae01a0 (.)
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/docs/wizard-step-implementation.md)
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
@@ -197,6 +228,7 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
@@ -204,6 +236,12 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+=======
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+- [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -216,11 +254,17 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 <<<<<<< .merge_file_Gv17gI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Priorità**: 🚨 **P0 - CRITICA**
 **Creato**: Gennaio 2025
 **Risolto**: Gennaio 2025
@@ -228,11 +272,16 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 **Tempo risoluzione**: < 10 minuti dalla diagnosi
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 💡 **Lesson Learned**
 
@@ -245,6 +294,7 @@ Questo fix dimostra l'importanza di:
 <<<<<<< .merge_file_Gv17gI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -265,6 +315,21 @@ Questo fix dimostra l'importanza di:
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+*Il sistema SaluteOra ora è resiliente a questo tipo di errori critici.* 
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
@@ -408,9 +473,15 @@ Questo fix dimostra l'importanza di:
 <<<<<<< HEAD
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGOvhg
+=======
+=======
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

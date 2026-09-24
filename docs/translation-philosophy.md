@@ -121,11 +121,13 @@ grep -A 10 "'navigation' =>" Modules/*/lang/it/*.php | grep -E "(label|group|ico
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Modulo**: User
 **File corretti**: 11 file con traduzioni `.navigation` sistemate
 **Documentazione**: [User/docs/navigation-translations-fixes-archive-1.md](../../user/docs/navigation-translations-fixes-archive-1.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Modulo**: User
@@ -134,6 +136,10 @@ grep -A 10 "'navigation' =>" Modules/*/lang/it/*.php | grep -E "(label|group|ico
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_oSgR0X
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Automated Fixes
 When you find `.navigation` placeholders:
@@ -179,10 +185,12 @@ When creating a new module:
 **Last Updated**: 2025-11-17
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated**: 2025-11-17
 =======
 **Last Updated**: 2025-11-17
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Last Updated**: 2025-11-17
@@ -190,3 +198,8 @@ When creating a new module:
 =======
 **Last Updated**: 2025-11-17
 >>>>>>> .merge_file_oSgR0X
+=======
+=======
+**Last Updated**: 2025-11-17
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

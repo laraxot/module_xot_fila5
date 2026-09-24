@@ -28,6 +28,10 @@ use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+=======
+use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Actions\ModelClass\CountAction;
+>>>>>>> 930f8146 (Check & fix styling)
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Webmozart\Assert\Assert;
 
@@ -50,11 +54,17 @@ use Webmozart\Assert\Assert;
 =======
 >>>>>>> .merge_file_lxPDX6
 /**
+<<<<<<< HEAD
  * @method static string getUrl(?string $name = null, array<string, mixed> $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?\Illuminate\Database\Eloquent\Model $tenant = null, bool $shouldGuessMissingParameters = false, ?string $configuration = null)
 =======
+<<<<<<< HEAD
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  */
 abstract class XotBaseResource extends FilamentResource
 {
@@ -127,7 +137,11 @@ abstract class XotBaseResource extends FilamentResource
 
     /**
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @return class-string<Model>
      */
     public static function getModel(): string
@@ -160,7 +174,11 @@ abstract class XotBaseResource extends FilamentResource
         }
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $moduleName = static::getModuleName();
         $modelName = Str::before(class_basename(static::class), 'Resource');
         $res = 'Modules\\'.$moduleName.'\Models\\'.$modelName;
@@ -174,7 +192,11 @@ abstract class XotBaseResource extends FilamentResource
         self::$resolvedModels[static::class] = $res;
 =======
         static::$model = $res;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $res;
     }
@@ -274,7 +296,11 @@ abstract class XotBaseResource extends FilamentResource
         return $schema
             ->components($components)
             ->columns(static::getFormSchemaColumns());
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public static function table(Table $table): Table
@@ -303,7 +329,11 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     public static function getFormSchemaColumns(): int
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return 1;
     }
@@ -317,7 +347,11 @@ abstract class XotBaseResource extends FilamentResource
     public function getInfolistSchema(): array
 =======
     public static function getInfolistSchema(): array
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [];
     }
@@ -346,7 +380,11 @@ abstract class XotBaseResource extends FilamentResource
 
     /**
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * Metodo finale: obbliga l'uso di getInfolistSchema().
      */
     final public static function infolist(Schema $schema): Schema
@@ -367,7 +405,11 @@ abstract class XotBaseResource extends FilamentResource
         }
 
         return $schema->components(static::getInfolistSchema());
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -493,7 +535,11 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
         /** @var view-string $submit_view */
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $submit_view = 'pub_theme::filament.wizard.submit-button';
         if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");

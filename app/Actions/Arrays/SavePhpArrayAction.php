@@ -15,11 +15,21 @@ class SavePhpArrayAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_UlkQLR
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_EvqBne
+     * @param  array<int|string, mixed>  $data
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $data
      *                                       =======
+<<<<<<< HEAD
 <<<<<<< HEAD
      *                                       <<<<<<< .merge_file_EvqBne.
      * @param array<int|string, mixed> $data
@@ -27,6 +37,8 @@ class SavePhpArrayAction
      *                                       <<<<<<< HEAD
      * @param array<int|string, mixed> $data
      *                                       =======
+=======
+>>>>>>> da9ae01a0 (.)
      *                                       <<<<<<< .merge_file_gemX0T
      * @param array<int|string, mixed> $data
      *                                       =======
@@ -37,6 +49,7 @@ class SavePhpArrayAction
      *                                       >>>>>>> laraxot/dev
      *                                       >>>>>>> .merge_file_z3uypR
      *                                       >>>>>>> laraxot/dev
+<<<<<<< HEAD
      *                                       >>>>>>> .merge_file_n4lYsv
 =======
      * @param array<int|string, mixed> $data
@@ -45,6 +58,13 @@ class SavePhpArrayAction
 =======
      * @param  array<int|string, mixed>  $data
 >>>>>>> .merge_file_Ac0HCU
+=======
+>>>>>>> .merge_file_n4lYsv
+=======
+     * @param array<int|string, mixed> $data
+     *                                       >>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function execute(array $data, string $filename): bool
     {

@@ -8,7 +8,11 @@ namespace Modules\Xot\Tests\Unit\Actions\Array;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 =======
 use Modules\Xot\Actions\Array\SaveArrayAction;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

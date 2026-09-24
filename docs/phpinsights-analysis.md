@@ -130,10 +130,12 @@
 - ✅ **Pint**: Stile corretto
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ **Pint**: Stile corretto
 =======
 - ✅ **Pint**: Stile corretto
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - ✅ **Pint**: Stile corretto
@@ -141,3 +143,8 @@
 =======
 - ✅ **Pint**: Stile corretto
 >>>>>>> .merge_file_P0Lc5Q
+=======
+=======
+- ✅ **Pint**: Stile corretto
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

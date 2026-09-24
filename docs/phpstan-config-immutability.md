@@ -11,6 +11,9 @@
 
 ## How to adjust analysis without editing phpstan.neon
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 - Scope via CLI paths and flags, e.g.:
 
 ```bash
@@ -23,6 +26,7 @@
 # Exclude heavy module via shell (do not touch config)
 find Modules -maxdepth 2 -type d -name app ! -path 'Modules/Activity/*' -print0 \
   | xargs -0 ./vendor/bin/phpstan analyze --level=9 --no-progress --memory-limit=2G
+<<<<<<< HEAD
 =======
 - Scope via CLI paths, e.g. per-module gate: `bash bashscripts/tools/phpstan-modules-gate.sh`
 - **Never create alternate `.neon` files** — see `docs/wiki/rules/phpstan-single-neon-config.md`
@@ -32,6 +36,8 @@ cd laravel
 php -d xdebug.mode=off -d memory_limit=2G \
   ./vendor/bin/phpstan analyse Modules/User --memory-limit=2G
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## Enforcement

@@ -17,11 +17,21 @@ use Filament\Schemas\Schema;
 >>>>>>> 3792da0d (Check & fix styling)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\View\GetViewByClassAction;
+=======
+use Filament\Schemas\Concerns\InteractsWithSchemas;
+use Filament\Schemas\Contracts\HasSchemas;
+use Filament\Schemas\Schema;
+use Filament\Widgets\Widget as FilamentWidget;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\View\GetViewByClassAction;
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> 930f8146 (Check & fix styling)
 
 /**
  * Base per widget FO/pannello che rendono un Infolist Filament v5 (schema unificato).
  *
  * Le sottoclassi forniscono record + componenti; la vista default espone {{ $this->infolist }}.
+<<<<<<< HEAD
  * Estende XotBaseWidget per coerenza con il pattern di widget XotBase*.
  */
 abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
@@ -31,8 +41,18 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
 <<<<<<< HEAD
     /** @var view-string */
 =======
+<<<<<<< HEAD
     /** @phpstan-ignore property.defaultValue */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ */
+abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchemas
+{
+    use InteractsWithSchemas;
+    use TransTrait;
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected string $view = 'xot::filament.widgets.infolist';
 
     protected int|string|array $columnSpan = 'full';
@@ -47,7 +67,11 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
      * @return array<int|string, Component|Htmlable|string>
 =======
      * @return array<int|string, \Filament\Schemas\Components\Component|\Illuminate\Contracts\Support\Htmlable|string>
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     abstract protected function getInfolistSchema(): array;
 

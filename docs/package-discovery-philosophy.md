@@ -345,11 +345,13 @@ The command discovered these categories:
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
 =======
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
@@ -358,6 +360,11 @@ The command discovered these categories:
 =======
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
 >>>>>>> .merge_file_TH5gzQ
+=======
+=======
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -374,10 +381,12 @@ Each module uses this pattern:
     "name": "laraxot/module_user_fila3",
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
 =======
     "name": "laraxot/module_user_fila5",
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     "name": "laraxot/module_user_fila5",
@@ -385,6 +394,11 @@ Each module uses this pattern:
 =======
     "name": "laraxot/module_user_fila3",
 >>>>>>> .merge_file_TH5gzQ
+=======
+=======
+    "name": "laraxot/module_user_fila3",
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     "extra": {
         "laravel": {
             "providers": [
@@ -583,15 +597,21 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_TH5gzQ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: Living document - update as understanding deepens
 **Philosophy**: Super Mucca methodology applied
 
@@ -604,10 +624,12 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
 =======
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
@@ -615,3 +637,8 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 =======
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
 >>>>>>> .merge_file_TH5gzQ
+=======
+=======
+- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

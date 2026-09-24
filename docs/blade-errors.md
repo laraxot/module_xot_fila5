@@ -2,10 +2,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CiOasO
 <<<<<<< HEAD
 Simplify Validation Messaging with Blade Directives
@@ -49,6 +52,7 @@ Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
 >>>>>>> .merge_file_GTrFXC
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Simplify Validation Messaging with Blade Directives
@@ -56,3 +60,9 @@ https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directi
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_4DlcUj
+=======
+=======
+Simplify Validation Messaging with Blade Directives
+https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

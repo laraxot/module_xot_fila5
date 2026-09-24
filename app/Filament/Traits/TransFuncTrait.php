@@ -52,7 +52,11 @@ trait TransFuncTrait
 <<<<<<< HEAD
             /*
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             dddx([
                 'e' => $e,
                 'key' => $key,
@@ -65,7 +69,11 @@ trait TransFuncTrait
 =======
 
             return null;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         if ($key !== $trans) {

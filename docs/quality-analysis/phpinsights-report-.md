@@ -6,6 +6,7 @@
 **Date:** 2025-11-12
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_17tmr3
 **Date:** 2025-11-12
 =======
@@ -14,12 +15,18 @@
 **Date:** 2025-11-12
 >>>>>>> .merge_file_iyk5vW
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Date:** 2025-11-12
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gPUBLe
+=======
+=======
+**Date:** 2025-11-12
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Module:** Xot (Core Module)
 **Tools:** phpmd 2.x, phpinsights 2.x, phpstan level 10
 
@@ -107,6 +114,7 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
+<<<<<<< HEAD
 <<<<<<< .merge_file_uVLUh2
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -118,6 +126,9 @@ protected array $fillable;
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_17tmr3
 <<<<<<< HEAD
 protected $fillable;
@@ -133,6 +144,7 @@ protected $fillable;
 =======
 protected array $fillable;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 protected $fillable;
@@ -140,6 +152,11 @@ protected $fillable;
 =======
 protected array $fillable;
 >>>>>>> .merge_file_gPUBLe
+=======
+=======
+protected $fillable;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### 🟢 Medium Priority
@@ -257,7 +274,10 @@ protected array $fillable;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_17tmr3
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -278,6 +298,7 @@ protected array $fillable;
 =======
 **
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Last Updated:** 2025-11-12 08:15 UTC
@@ -285,3 +306,8 @@ protected array $fillable;
 =======
 **
 >>>>>>> .merge_file_gPUBLe
+=======
+=======
+**Last Updated:** 2025-11-12 08:15 UTC
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

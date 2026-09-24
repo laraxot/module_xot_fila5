@@ -20,12 +20,19 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
+<<<<<<< HEAD
 <<<<<<< .merge_file_rtR9LR
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+ *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @property int                    $id
  * @property string                 $name
  * @property int                    $depth
@@ -230,6 +237,13 @@ interface HasRecursiveRelationshipsContract
      * @return AdjacencyBuilder<Model>
      */
     public function newEloquentBuilder(Builder $query);
+=======
+     * @param Builder $query
+     *
+     * @return AdjacencyBuilder<Model>
+     */
+    public function newEloquentBuilder($query);
+>>>>>>> 930f8146 (Check & fix styling)
 
     /**
 <<<<<<< .merge_file_rtR9LR

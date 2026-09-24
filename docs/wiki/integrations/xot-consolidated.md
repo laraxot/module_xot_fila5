@@ -95,7 +95,10 @@ The Xot base classes provide a centralized way to customize and extend functiona
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_sCEhGN
 =======
 <<<<<<< HEAD
@@ -110,7 +113,11 @@ The Xot base classes provide a centralized way to customize and extend functiona
 <<<<<<< HEAD
 >>>>>>> .merge_file_VQkxoF
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       public function getFormSchema(): array
 =======
 <<<<<<< HEAD
@@ -128,12 +135,17 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VQkxoF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
       public function getFormSchema(): array
 >>>>>>> .merge_file_9XttEM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -205,7 +217,10 @@ The Xot base classes provide a centralized way to customize and extend functiona
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_sCEhGN
 =======
 <<<<<<< HEAD
@@ -220,7 +235,11 @@ The Xot base classes provide a centralized way to customize and extend functiona
 <<<<<<< HEAD
 >>>>>>> .merge_file_VQkxoF
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       public function getFormSchema(): array
 =======
 <<<<<<< HEAD
@@ -238,12 +257,17 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VQkxoF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
       public function getFormSchema(): array
 >>>>>>> .merge_file_9XttEM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -917,6 +941,7 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_sCEhGN
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -933,6 +958,7 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VQkxoF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -940,6 +966,13 @@ abstract class XotBaseResource extends Resource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9XttEM
+=======
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Schema base automatico
@@ -4343,6 +4376,7 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_sCEhGN
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4359,11 +4393,19 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VQkxoF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9XttEM
+=======
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente
@@ -4589,6 +4631,7 @@ abstract public function getFormSchemaOld(): array;
 <<<<<<< HEAD
 abstract public function getFormSchemaOld(): array;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_sCEhGN
 abstract public function getFormSchemaOld(): array;
 >>>>>>> laraxot/dev
@@ -4605,6 +4648,7 @@ abstract public function getFormSchemaOld(): array;
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VQkxoF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -4612,6 +4656,13 @@ abstract public function getFormSchemaOld(): array;
 abstract public function getFormSchemaOld(): array;
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9XttEM
+=======
+=======
+abstract public function getFormSchemaOld(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form. `getFormSchema()` è ora `final` e ritorna `[]` — vedi [[xotbaseresource-formschema-old-pattern]].
@@ -4656,6 +4707,7 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchemaOld(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_sCEhGN
     public function getFormSchemaOld(): array
 >>>>>>> laraxot/dev
@@ -4672,11 +4724,19 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VQkxoF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9XttEM
+=======
+=======
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('title')

@@ -226,6 +226,7 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertEquals($validPath, $corrected);
     }
 
+<<<<<<< HEAD
     public function testModuleExistsRejectsMissingModule(): void
     {
         $this->assertFalse(PathHelper::moduleExists('__missing_module__'));
@@ -237,3 +238,21 @@ class PathHelperTest extends XotBaseTestCase
     }
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function testModuleExistsReturnsBool(): void
+    {
+        // Xot module should exist
+        $exists = PathHelper::moduleExists('Xot');
+
+        $this->assertIsBool($exists);
+    }
+
+    public function testGetModulesReturnsArray(): void
+    {
+        $modules = PathHelper::getModules();
+
+        $this->assertIsArray($modules);
+    }
+}
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

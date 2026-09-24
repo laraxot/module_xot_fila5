@@ -927,10 +927,12 @@ class BlogPostsChartTest extends TestCase
 - [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
 =======
 - [Widget Implementation Rules](./widget_implementation_rules.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Widget Implementation Rules](./widget_implementation_rules.md)
@@ -938,6 +940,11 @@ class BlogPostsChartTest extends TestCase
 =======
 - [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
 >>>>>>> .merge_file_BCqc7c
+=======
+=======
+- [Widget Implementation Rules](./widget_implementation_rules.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 

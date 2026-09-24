@@ -147,11 +147,14 @@ All Filament resources extend this base class:
 <<<<<<< .merge_file_gm24i2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_6VEoko
+=======
+>>>>>>> da9ae01a0 (.)
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
@@ -162,12 +165,18 @@ abstract public function getFormSchema(): array;
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6VEoko
+=======
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -360,7 +369,11 @@ Defines contracts for modular extensibility:
 
 ### 9. Helper Functions (200+)
 
+<<<<<<< HEAD
 **File:** `Modules/Xot/Helpers/Helper.php`
+=======
+**File:** `Modules/Xot/helpers/Helper.php`
+>>>>>>> 930f8146 (Check & fix styling)
 
 **Categories:**
 
@@ -608,11 +621,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_gm24i2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_6VEoko
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -623,12 +639,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6VEoko
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('field1')->required(),
@@ -709,11 +731,14 @@ class ArticleResource extends XotBaseResource
 <<<<<<< .merge_file_gm24i2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_6VEoko
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -724,12 +749,18 @@ class ArticleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6VEoko
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('title')
@@ -903,7 +934,11 @@ $value = $model->getExtra('custom_field');
 - Filament Resource Base: `Modules/Xot/app/Filament/Resources/XotBaseResource.php`
 - Provider Base: `Modules/Xot/app/Providers/XotBaseServiceProvider.php`
 - Central Config: `Modules/Xot/app/Datas/XotData.php`
+<<<<<<< HEAD
 - Global Helpers: `Modules/Xot/Helpers/Helper.php`
+=======
+- Global Helpers: `Modules/Xot/helpers/Helper.php`
+>>>>>>> 930f8146 (Check & fix styling)
 - Actions: `Modules/Xot/app/Actions/` (150+ classes)
 - Test Base: `Modules/Xot/tests/TestCase.php`
 
@@ -940,10 +975,12 @@ The Xot module is a comprehensive foundation providing:
 **Author:** Claude Code Analysis
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Author:** Claude Code Analysis
 =======
 **Author:** Claude Code Analysis
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Author:** Claude Code Analysis
@@ -951,3 +988,8 @@ The Xot module is a comprehensive foundation providing:
 =======
 **Author:** Claude Code Analysis
 >>>>>>> .merge_file_6VEoko
+=======
+=======
+**Author:** Claude Code Analysis
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

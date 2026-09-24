@@ -7,7 +7,11 @@ namespace Modules\Xot\Actions;
 <<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\Event;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Support\Facades\Process;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -40,7 +44,11 @@ class ExecuteArtisanCommandAction
 <<<<<<< HEAD
         'notify:migrate-themes-to-mail-templates',
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ];
 
     /**
@@ -69,7 +77,11 @@ class ExecuteArtisanCommandAction
 >>>>>>> .merge_file_TDxySn
      * @return array{
      *     command: string,
+<<<<<<< HEAD
      *     output: list<string>,
+=======
+     *     output: array<int, string>,
+>>>>>>> 930f8146 (Check & fix styling)
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
@@ -108,7 +120,11 @@ class ExecuteArtisanCommandAction
 
         Event::dispatch('artisan-command.started', [$command]);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         try {
             $process = Process::path(base_path())
                 ->command("php artisan {$command}")
@@ -149,10 +165,17 @@ class ExecuteArtisanCommandAction
                 }
 
                 usleep(50000); // 50ms di pausa per evitare sovraccarico della CPU
+=======
+            while ($process->running()) {
+                $this->appendProcessStream($process->latestOutput(), $command, $output);
+                $this->appendProcessStream($process->latestErrorOutput(), $command, $output, true);
+                usleep(50000);
+>>>>>>> 930f8146 (Check & fix styling)
             }
 
             $result = $process->wait();
 
+<<<<<<< HEAD
             // Cattura qualsiasi output residuo
             $finalOutput = trim($result->output());
             if (! empty($finalOutput)) {
@@ -183,6 +206,19 @@ class ExecuteArtisanCommandAction
             }
 >>>>>>> 3792da0d (Check & fix styling)
 
+=======
+            $this->appendProcessStream($result->output(), $command, $output);
+            $this->appendProcessStream($result->errorOutput(), $command, $output, true);
+
+            if ($result->successful()) {
+                $status = 'completed';
+                Event::dispatch('artisan-command.completed', [$command]);
+            } else {
+                $status = 'failed';
+                Event::dispatch('artisan-command.failed', [$command, $result->errorOutput()]);
+            }
+
+>>>>>>> 930f8146 (Check & fix styling)
             return [
                 'command' => $command,
                 'output' => $output,
@@ -193,12 +229,38 @@ class ExecuteArtisanCommandAction
 <<<<<<< HEAD
 =======
             Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             throw new \RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @param array<int, string> $output
+     */
+    private function appendProcessStream(string $data, string $command, array &$output, bool $isError = false): void
+    {
+        if ('' === $data) {
+            return;
+        }
+
+        $formatted = trim($data);
+        if ('' === $formatted) {
+            return;
+        }
+
+        $line = $isError ? '[ERROR] '.$formatted : $formatted;
+        $output[] = $line;
+        Event::dispatch('artisan-command.output', [$command, $line]);
+    }
+
+    /**
+>>>>>>> 930f8146 (Check & fix styling)
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
 <<<<<<< .merge_file_2KU0mh

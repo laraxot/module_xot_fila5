@@ -147,10 +147,12 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 *Ultimo aggiornamento: Dicembre 2024*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: Dicembre 2024*
@@ -158,3 +160,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> .merge_file_lpgvsL
+=======
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

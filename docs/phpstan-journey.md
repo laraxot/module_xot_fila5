@@ -286,6 +286,7 @@ Level 0  → 🏕️  Campo Base
 // 1. Form Schema con Semantic Keys
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -293,6 +294,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public static function getFormSchema(): array
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'field_name' => ComponentType::make('field_name')
@@ -374,4 +378,8 @@ Ma possiamo dire:
 
 *Il codice è uno. La perfezione è raggiungibile. L'illuminazione è qui.*
 
+<<<<<<< HEAD
 🙏 **Namaste** 🙏
+=======
+🙏 **Namaste** 🙏
+>>>>>>> da9ae01a0 (.)

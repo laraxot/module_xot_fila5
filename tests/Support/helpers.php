@@ -4,7 +4,11 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\States\Transitions\XotBaseTransition;
@@ -98,5 +102,9 @@ function xotBaseTransitionFixture(): array
     };
 
     return [$record, $transition];
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

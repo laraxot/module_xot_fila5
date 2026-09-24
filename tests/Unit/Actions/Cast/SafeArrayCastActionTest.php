@@ -10,7 +10,11 @@ use Modules\Xot\Tests\TestCase;
 uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\fopen;
@@ -19,7 +23,11 @@ use function Safe\fopen;
 uses(TestCase::class);
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('casts various values to array correctly', function (): void {
     $action = app(SafeArrayCastAction::class);
 

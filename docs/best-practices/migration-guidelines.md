@@ -45,6 +45,7 @@ return new class extends XotBaseMigration
 - [Database Guidelines](database_guidelines.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Code Quality](code_quality.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](database_guidelines.md)
@@ -53,17 +54,24 @@ return new class extends XotBaseMigration
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../DATABASE_GUIDELINES.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [Code Quality](../CODE_QUALITY.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../DATABASE_GUIDELINES.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [Code Quality](code_quality.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](database_guidelines.md)
 >>>>>>> .merge_file_dVZprw
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [User Module Database Errors](../../user/docs/database_errors.md)
 - [Xot Base Classes](../xot_base_classes.md)
 - [Code Quality](../code_quality.md)

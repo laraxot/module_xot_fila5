@@ -30,10 +30,12 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Studiare lo storico con `git show` senza ripristinare file completi
 - Reintrodurre solo compatibilita' minima nel codice corrente quando serve
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Studiare lo storico con `git show` senza ripristinare file completi
@@ -41,6 +43,10 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9FTILD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Il Perché
 
@@ -70,6 +76,7 @@ Gli errori sono maestri. Non si nascondono, si documentano e si correggono andan
 <<<<<<< .merge_file_38qjyW
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -90,11 +97,16 @@ git show HEAD~3:Modules/Foo/app/Bar.php
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9FTILD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### Scenario 1: Ho committato un bug
 
 ```bash
@@ -141,9 +153,13 @@ git reset --hard HEAD~1
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_9FTILD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Sposta il commit sul branch giusto
 git checkout correct-branch
 git cherry-pick wrong-branch
@@ -153,7 +169,10 @@ git push
 git checkout wrong-branch
 git revert HEAD
 git push
+<<<<<<< HEAD
 <<<<<<< .merge_file_38qjyW
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -168,11 +187,16 @@ git push
 # senza usare revert automatici
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9FTILD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Scenario 4: Voglio "annullare" modifiche
@@ -187,15 +211,22 @@ git reset --hard abc123
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_9FTILD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Usa revert per creare un nuovo commit che annulla
 git revert HEAD~2..HEAD
 git push
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_38qjyW
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -218,11 +249,16 @@ git show <old-sha>:Modules/Xot/app/Datas/XotData.php
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9FTILD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Eccezioni Rarissime
 
 Le UNICHE 3 eccezioni accettabili:
@@ -255,10 +291,12 @@ Le UNICHE 3 eccezioni accettabili:
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
 =======
 6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
@@ -266,6 +304,11 @@ Le UNICHE 3 eccezioni accettabili:
 =======
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
 >>>>>>> .merge_file_9FTILD
+=======
+=======
+6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Commit Message Format
 
@@ -314,10 +357,12 @@ Non è una best practice, è **l'unica pratica**.
 **Status**: Regola Assoluta e Immutabile
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: Regola Assoluta e Immutabile
 =======
 **Status**: Regola Assoluta e Immutabile
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: Regola Assoluta e Immutabile
@@ -325,3 +370,8 @@ Non è una best practice, è **l'unica pratica**.
 =======
 **Status**: Regola Assoluta e Immutabile
 >>>>>>> .merge_file_9FTILD
+=======
+=======
+**Status**: Regola Assoluta e Immutabile
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

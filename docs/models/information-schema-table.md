@@ -47,11 +47,14 @@ class InformationSchemaTable extends Model
 <<<<<<< .merge_file_2TrIfh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3fgTb2
+=======
+>>>>>>> da9ae01a0 (.)
 - [Model Best Practices](README.md)
 - [Database Guidelines](database-guidelines.md)
 - [Schema Documentation](directory-structure-guide.md)
@@ -60,17 +63,26 @@ class InformationSchemaTable extends Model
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Model Best Practices](../models/readme.md)
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [Schema Documentation](../DIRECTORY-STRUCTURE-GUIDE.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3fgTb2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Model Best Practices](../models/README.md)

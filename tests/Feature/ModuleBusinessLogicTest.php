@@ -11,6 +11,7 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
 
 beforeEach(function (): void {
 <<<<<<< HEAD
@@ -19,9 +20,30 @@ beforeEach(function (): void {
     // solo i metodi custom di XotBaseTestCase come assertDatabaseHasRow() tramite mixin.
     Assert::markTestSkipped('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
 =======
+<<<<<<< HEAD
     /* @var TestCase $this */
     $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// Laraxot — see module docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+
+beforeEach(function (): void {
+    /* @var TestCase $this */
+    $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });
 
 describe('Module Business Logic', function (): void {
@@ -40,7 +62,11 @@ describe('Module Business Logic', function (): void {
         \Pest\Laravel\assertDatabaseHas('modules', [
 =======
         $this->assertDatabaseHasRow('modules', [
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             'id' => $module->id,
             'name' => 'TestModule',
             'slug' => 'test-module',
@@ -80,7 +106,11 @@ describe('Module Business Logic', function (): void {
         \Pest\Laravel\assertDatabaseHas('modules', [
 =======
         $this->assertDatabaseHasRow('modules', [
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             'id' => $module->id,
             'version' => '2.0.0',
         ], 'sushi');
@@ -192,7 +222,11 @@ describe('Module Business Logic', function (): void {
             \Pest\Laravel\assertDatabaseHas('modules', [
 =======
             $this->assertDatabaseHasRow('modules', [
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 'id' => $module->id,
                 'version' => $version,
             ], 'sushi');
@@ -212,7 +246,11 @@ describe('Module Business Logic', function (): void {
         \Pest\Laravel\assertDatabaseHas('modules', [
 =======
         $this->assertDatabaseHasRow('modules', [
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             'id' => $module->id,
             'installation_date' => $installationDate,
         ], 'sushi');

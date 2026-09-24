@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_vJ8DU4
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles
@@ -128,7 +132,10 @@ Remember to always:
 - Optimize for performance from the beginning
 - Document decisions and patterns
 - Learn from external packages and integrate best practices
+<<<<<<< HEAD
 <<<<<<< .merge_file_6t0Hnd
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -143,9 +150,14 @@ canonical: ../../../Themes/docs/shared-components/updated-architecture-memories.
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/updated-architecture-memories.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/updated-architecture-memories.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vJ8DU4
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -11,7 +11,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 =======
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * Base query builder providing chainable query abstractions for models.
@@ -99,11 +103,16 @@ abstract class BaseQueryBuilder
 <<<<<<< .merge_file_YNc5vl
 =======
      * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uY3Ix7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function where(string $column, mixed $value): static
     {
@@ -120,11 +129,16 @@ abstract class BaseQueryBuilder
 <<<<<<< .merge_file_YNc5vl
 =======
      * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uY3Ix7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function whereOperator(string $column, string $operator, mixed $value): static
     {
@@ -326,7 +340,11 @@ abstract class BaseQueryBuilder
     public function get(): \Illuminate\Database\Eloquent\Collection
     {
         /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $results = $this->query->get();
 
         return $results;
@@ -354,7 +372,11 @@ abstract class BaseQueryBuilder
      * @return \Illuminate\Pagination\LengthAwarePaginator<int, T>
      */
     public function paginate(int $perPage = 15): \Illuminate\Pagination\LengthAwarePaginator
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         /* @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
         return $this->query->paginate($perPage);

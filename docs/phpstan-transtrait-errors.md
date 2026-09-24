@@ -1,5 +1,6 @@
 # PHPStan Errors - TransTrait.php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_zAtVHE
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,9 @@
 =======
 **Date**: 2025-12-16
 >>>>>>> .merge_file_Hvh5gq
+=======
+**Date**: [DATE]
+>>>>>>> da9ae01a0 (.)
 **File**: `Modules/Xot/app/Filament/Traits/TransTrait.php`
 **PHPStan Level**: 10
 **Total Errors**: ~10 (across multiple contexts)
@@ -400,6 +404,7 @@ This fix may also resolve related errors in:
 
 ## Related Documentation
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_zAtVHE
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -413,6 +418,9 @@ This fix may also resolve related errors in:
 =======
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
 >>>>>>> .merge_file_Hvh5gq
+=======
+- [PHPStan Analysis Summary](phpstan-analysis-[date].md)
+>>>>>>> da9ae01a0 (.)
 - [XotBase Extension Rules](xotbase-extension-rules.md)
 - [Filament Integration](filament-integration.md)
 
@@ -420,6 +428,7 @@ This fix may also resolve related errors in:
 
 **Status**: 🟡 Documented - Awaiting Fix
 **Assigned To**: Module Owner
+<<<<<<< HEAD
 <<<<<<< .merge_file_zAtVHE
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -433,3 +442,6 @@ This fix may also resolve related errors in:
 =======
 **Last Updated**: 2025-12-16
 >>>>>>> .merge_file_Hvh5gq
+=======
+
+>>>>>>> da9ae01a0 (.)

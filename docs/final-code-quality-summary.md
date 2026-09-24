@@ -70,11 +70,13 @@ if (property_exists($stateObject, 'name')) {
 - **Quaeris**: Main application module
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris**: Main application module
 =======
 - **healthcare_app**: Main application module
 - **ExternalProject**: Main application module
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **healthcare_app**: Main application module
@@ -83,6 +85,11 @@ if (property_exists($stateObject, 'name')) {
 =======
 - **Quaeris**: Main application module
 >>>>>>> .merge_file_eg9Xty
+=======
+=======
+- **Quaeris**: Main application module
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **UI**: Shared UI components
 - **Activity**: Activity tracking and logging
 - **Tenant**: Multi-tenancy support
@@ -183,10 +190,12 @@ if (property_exists($stateObject, 'name')) {
 *Status: ✅ COMPLETE - All quality improvements implemented*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Status: ✅ COMPLETE - All quality improvements implemented*
 =======
 *Status: ✅ COMPLETE - All quality improvements implemented*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Status: ✅ COMPLETE - All quality improvements implemented*
@@ -194,3 +203,8 @@ if (property_exists($stateObject, 'name')) {
 =======
 *Status: ✅ COMPLETE - All quality improvements implemented*
 >>>>>>> .merge_file_eg9Xty
+=======
+=======
+*Status: ✅ COMPLETE - All quality improvements implemented*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

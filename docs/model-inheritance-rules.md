@@ -199,10 +199,12 @@ Ogni nuovo modello deve essere documentato in:
 *Ultimo aggiornamento: giugno 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: giugno 2025*
@@ -210,3 +212,8 @@ Ogni nuovo modello deve essere documentato in:
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> .merge_file_1thzY0
+=======
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -5,10 +5,12 @@
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila4_mono
 
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -16,6 +18,12 @@
 # Configurazione MCP per base_ptvx_fila4_mono
 
 >>>>>>> .merge_file_kQ9HyZ
+=======
+=======
+# Configurazione MCP per base_ptvx_fila4_mono
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Data Creazione**: 2026-01-12  
 **Ultimo Aggiornamento**: 2026-01-12  
 **Status**: ✅ Configurazione Completa e Ottimizzata
@@ -34,6 +42,7 @@ Questo documento descrive la configurazione MCP ottimizzata per il progetto **ba
 
 File: `laravel/.mcp.json`
 <<<<<<< .merge_file_h5c0mG
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -56,11 +65,16 @@ Questo documento descrive la configurazione MCP effettivamente usata nel reposit
 E' il file condiviso dal progetto Laravel e contiene la configurazione applicativa principale. Per `laravel-boost` la configurazione corretta e portabile e':
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kQ9HyZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ```json
 {
@@ -71,9 +85,13 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_kQ9HyZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             "command": "php",
             "args": [
                 "./artisan",
@@ -140,7 +158,10 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
                 "--repository",
                 "/var/www/_bases/base_ptvx_fila4_mono"
             ]
+<<<<<<< HEAD
 <<<<<<< .merge_file_h5c0mG
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -153,9 +174,14 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
             ]
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
     }
 }
@@ -164,6 +190,7 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -173,6 +200,9 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 ```
 
 >>>>>>> .merge_file_kQ9HyZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 
 ## 📋 Descrizione Server
@@ -245,7 +275,10 @@ Se alcuni file risultano bloccati o non accessibili con tool standard:
 ---
 
 **Filosofia**: MCP come strumento per superare limitazioni e migliorare produttività nello sviluppo Laraxot.
+<<<<<<< HEAD
 <<<<<<< .merge_file_h5c0mG
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -300,9 +333,14 @@ Nel workspace `ptvx` risultano verificati:
 <<<<<<< HEAD
 **Filosofia**: un solo comando reale, una sola configurazione coerente, nessun path morto.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Filosofia**: un solo comando reale, una sola configurazione coerente, nessun path morto.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kQ9HyZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

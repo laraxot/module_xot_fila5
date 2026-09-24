@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_quseQl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Funzioni Safe nel Modulo Xot
 
 ## Panoramica
@@ -202,7 +206,10 @@ Safe\file_put_contents($filename, $modifiedContents);
 - [Documentazione thecodingmachine/safe](https://github.com/thecodingmachine/safe)
 - [Lista completa funzioni Safe](https://github.com/thecodingmachine/safe/blob/master/generated/Safe.php)
 - [Gestione Eccezioni in PHP](https://www.php.net/manual/en/language.exceptions.php)
+<<<<<<< HEAD
 <<<<<<< .merge_file_nk98uw
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -217,9 +224,14 @@ canonical: ../../../Themes/docs/shared-components/safe-functions.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/safe-functions.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/safe-functions.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_quseQl
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

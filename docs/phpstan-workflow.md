@@ -2,9 +2,12 @@
 
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](documentation_management.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## REGOLE FONDAMENTALI
 - ⚠️ **NON INTERROMPERE MAI L'ANALISI** finché non si raggiunge il livello 7
@@ -65,10 +68,14 @@
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
 <<<<<<< HEAD
+<<<<<<< HEAD
      base_predict_fila3_mono/
 =======
      base_<nome progetto>_fila5_mono/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     base_predict_fila3_mono/
+>>>>>>> da9ae01a0 (.)
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
@@ -174,7 +181,11 @@ class MyModel extends BaseModel
      - .cursor/rules per Cursor AI
      - .windsurfrules per Windsurf
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Mantenere coerenza tra le diverse documentazioni
 =======
    - Mantenere coerenza tra le diverse documentazioni
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+   - Mantenere coerenza tra le diverse documentazioni
+>>>>>>> da9ae01a0 (.)

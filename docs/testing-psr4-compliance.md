@@ -118,10 +118,12 @@ composer dump-autoload
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
 =======
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
@@ -129,3 +131,8 @@ composer dump-autoload
 =======
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
 >>>>>>> .merge_file_2e8nh9
+=======
+=======
+*Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

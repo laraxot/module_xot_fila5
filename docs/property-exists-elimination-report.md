@@ -58,11 +58,13 @@ $user->hasAttribute('name');  // true
 | **Quaeris** | 1 | 1 | ~2 min |
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **Quaeris** | 1 | 1 | ~2 min |
 =======
 | **healthcare_app** | 1 | 1 | ~2 min |
 | **ModuloEsempio** | 1 | 1 | ~2 min |
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 | **healthcare_app** | 1 | 1 | ~2 min |
@@ -71,6 +73,11 @@ $user->hasAttribute('name');  // true
 =======
 | **Quaeris** | 1 | 1 | ~2 min |
 >>>>>>> .merge_file_h8oQcj
+=======
+=======
+| **Quaeris** | 1 | 1 | ~2 min |
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | **Xot** | 0 | 0 (solo in commenti) | ~1 min |
 | **TOTALE** | **28** | **72** | **~36 min** |
 
@@ -91,11 +98,13 @@ $user->hasAttribute('name');  // true
 ✅ Quaeris: 0 errori su file modificato
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ✅ Quaeris: 0 errori su file modificato
 =======
 ✅ healthcare_app: 0 errori su file modificato
 ✅ ModuloEsempio: 0 errori su file modificato
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ✅ healthcare_app: 0 errori su file modificato
@@ -104,6 +113,11 @@ $user->hasAttribute('name');  // true
 =======
 ✅ Quaeris: 0 errori su file modificato
 >>>>>>> .merge_file_h8oQcj
+=======
+=======
+✅ Quaeris: 0 errori su file modificato
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ⚠️  Xot:     4 errori pre-esistenti (non property_exists)
 ```
 
@@ -276,11 +290,13 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 ### Quaeris (1 file)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Quaeris (1 file)
 =======
 ### healthcare_app (1 file)
 ### ModuloEsempio (1 file)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### healthcare_app (1 file)
@@ -289,6 +305,11 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 =======
 ### Quaeris (1 file)
 >>>>>>> .merge_file_h8oQcj
+=======
+=======
+### Quaeris (1 file)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 1. `Filament/Resources/.../ViewQuestionChartVisualizationWidget.php` - livewire property ✅
 
 ---
@@ -362,11 +383,13 @@ if (isset($media->file_name)) {
 | **Quaeris** | ⚠️ 64 errori* | - | - |
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **Quaeris** | ⚠️ 64 errori* | - | - |
 =======
 | **healthcare_app** | ⚠️ 64 errori* | - | - |
 | **ModuloEsempio** | ⚠️ 64 errori* | - | - |
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 | **healthcare_app** | ⚠️ 64 errori* | - | - |
@@ -375,6 +398,11 @@ if (isset($media->file_name)) {
 =======
 | **Quaeris** | ⚠️ 64 errori* | - | - |
 >>>>>>> .merge_file_h8oQcj
+=======
+=======
+| **Quaeris** | ⚠️ 64 errori* | - | - |
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | **Xot** | ⚠️ 4 errori* | - | - |
 
 \* Errori pre-esistenti non correlati a property_exists
@@ -632,11 +660,13 @@ Ogni modulo ha ora:
 **Quaeris** (64 errori):
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Quaeris** (64 errori):
 =======
 **healthcare_app** (64 errori):
 **ModuloEsempio** (64 errori):
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **healthcare_app** (64 errori):
@@ -645,6 +675,11 @@ Ogni modulo ha ora:
 =======
 **Quaeris** (64 errori):
 >>>>>>> .merge_file_h8oQcj
+=======
+=======
+**Quaeris** (64 errori):
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Errori pre-esistenti non correlati a property_exists
 - Richiedono intervento separato per type hints
 - Priorità media
@@ -679,9 +714,13 @@ Implementare:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_h8oQcj
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [../../../docs/code-quality/eloquent-magic-properties.md](../../../docs/code-quality/eloquent-magic-properties.md)
 - [../../../docs/phpstan/level-10-guide.md](../../../docs/phpstan/level-10-guide.md)
 
@@ -689,7 +728,10 @@ Implementare:
 - [User/docs/phpstan-level10-fixes.md](../../User/docs/phpstan-level10-fixes.md)
 - [Tenant/docs/phpstan-level10-fixes.md](../../Tenant/docs/phpstan-level10-fixes.md)
 - [Notify/docs/eloquent-properties-best-practices.md](../../Notify/docs/eloquent-properties-best-practices.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_XxXcaz
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -707,11 +749,16 @@ Implementare:
 - [Notify/docs/eloquent-properties-best-practices.md](../../notify/docs/eloquent-properties-best-practices.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_h8oQcj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **References Esterne**:
 - [Laravel Eloquent Properties](https://laravel.com/docs/11.x/eloquent#accessing-attributes)
@@ -735,10 +782,12 @@ Implementare:
 > — Zen degli Attributi Magici Eloquent 🙏
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 > — Zen degli Attributi Magici Eloquent 🙏
 =======
 > — Zen degli Attributi Magici Eloquent 🙏
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 > — Zen degli Attributi Magici Eloquent 🙏
@@ -746,3 +795,8 @@ Implementare:
 =======
 > — Zen degli Attributi Magici Eloquent 🙏
 >>>>>>> .merge_file_h8oQcj
+=======
+=======
+> — Zen degli Attributi Magici Eloquent 🙏
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

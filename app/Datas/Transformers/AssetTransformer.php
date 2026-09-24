@@ -20,10 +20,16 @@ class AssetTransformer implements Transformer
     /**
      * Trasforma un riferimento di file in un percorso completo.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_LFPpu1
 <<<<<<< HEAD
      * <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
      *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
      * @param DataProperty          $_property La proprietà di dati (non utilizzata)
      * @param mixed                 $value     Il valore da trasformare (es. "user::image.png")
      * @param TransformationContext $_context  Il contesto di trasformazione (non utilizzato)

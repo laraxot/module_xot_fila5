@@ -2,7 +2,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t2xlhu
 <<<<<<< HEAD
 =======
@@ -71,9 +74,14 @@ updated: 2026-08-24
 <<<<<<< .merge_file_2rEBMg
 =======
 >>>>>>> .merge_file_oH5CVy
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 https://github.com/seikan/Cart/blob/master/class.Cart.php
 
@@ -223,9 +231,15 @@ updated: 2026-08-24
 =======
 >>>>>>> .merge_file_oH5CVy
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://github.com/Codexshaper/laravel-woocommerce
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wodd2y
+=======
+=======
+https://github.com/Codexshaper/laravel-woocommerce
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

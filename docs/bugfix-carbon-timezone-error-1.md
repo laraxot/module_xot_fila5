@@ -78,22 +78,31 @@ public function registerTimezone(): void
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_kgWyUi
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Root Bugfix Guidelines](../../../docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
+<<<<<<< HEAD
 <<<<<<< .merge_file_qfMDEt
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 - [Root Bugfix Guidelines](../../../../docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Root Bugfix Guidelines](../../../../docs/bugfix-guidelines.md)
@@ -103,3 +112,7 @@ public function registerTimezone(): void
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kgWyUi
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -69,7 +69,11 @@ final class PestExpectation
         $this->negated
             ? Assert::assertNotSame($expected, $this->value)
             : Assert::assertSame($expected, $this->value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }
@@ -86,7 +90,11 @@ final class PestExpectation
         $this->negated
             ? Assert::assertNotEquals($expected, $this->value)
             : Assert::assertEquals($expected, $this->value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }
@@ -99,7 +107,11 @@ final class PestExpectation
     public function toBeTrue(): self
     {
         $this->negated ? Assert::assertNotTrue($this->value) : Assert::assertTrue($this->value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }
@@ -112,7 +124,11 @@ final class PestExpectation
     public function toBeFalse(): self
     {
         $this->negated ? Assert::assertNotFalse($this->value) : Assert::assertFalse($this->value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }
@@ -125,7 +141,11 @@ final class PestExpectation
     public function toBeNull(): self
     {
         $this->negated ? Assert::assertNotNull($this->value) : Assert::assertNull($this->value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }
@@ -191,20 +211,28 @@ final class PestExpectation
 >>>>>>> .merge_file_TlRRvZ
      * @param  class-string  $expectedClass
      */
+<<<<<<< HEAD
     public function toBeInstanceOf(string $expectedClass, string $message = ''): self
     {
         $this->negated
             ? Assert::assertNotInstanceOf($expectedClass, $this->value, $message)
             : Assert::assertInstanceOf($expectedClass, $this->value, $message);
 =======
+<<<<<<< HEAD
      * @param class-string $expectedClass
      */
+=======
+>>>>>>> da9ae01a0 (.)
     public function toBeInstanceOf(string $expectedClass): self
     {
         $this->negated
             ? Assert::assertNotInstanceOf($expectedClass, $this->value)
             : Assert::assertInstanceOf($expectedClass, $this->value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }
@@ -219,7 +247,11 @@ final class PestExpectation
     {
         if ($this->negated) {
             Assert::assertNotCount($count, $this->normaliseCountable($this->value));
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
             return $this;
         }
@@ -228,7 +260,11 @@ final class PestExpectation
         Assert::assertCount($count, $this->normaliseCountable($this->value), $message);
 =======
         Assert::assertCount($count, $this->normaliseCountable($this->value));
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }
@@ -257,7 +293,11 @@ final class PestExpectation
     public function toHaveKey(mixed $key, mixed $value = null, string $message = ''): self
 =======
     public function toHaveKey(mixed $key): self
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         if (! is_int($key) && ! is_string($key)) {
             Assert::fail('Expected key must be an integer or string.');
@@ -269,7 +309,11 @@ final class PestExpectation
             $this->negated ? Assert::assertFalse($exists, $message) : Assert::assertTrue($exists, $message);
 =======
             $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
             return $this;
         }
@@ -287,7 +331,11 @@ final class PestExpectation
 =======
             ? Assert::assertArrayNotHasKey($key, $this->value)
             : Assert::assertArrayHasKey($key, $this->value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $this;
     }

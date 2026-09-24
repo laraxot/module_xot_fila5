@@ -103,10 +103,14 @@ Violavano regola "TUTTI i test vanno in Pest":
 5. `Xot/tests/Unit/Support/TestTransitionForTest.php`
 6. `Xot/docs/phpstan-fixes-report.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 7. `Xot/docs/phpstan-victory-2025.md` (questo file)
 =======
 7. `Xot/docs/phpstan-victory.md` (questo file)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+7. `Xot/docs/phpstan-victory-2025.md` (questo file)
+>>>>>>> da9ae01a0 (.)
 8. `phpstan_stubs.php`
 
 ### Eliminati (14)
@@ -276,7 +280,11 @@ cd laravel
 **Achievement**: 👑 PHPStan Perfection (19,337→0)
 **Stato**: ✅ PERFEZIONE ASSOLUTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Hall of Fame**: 🥇 LEGENDARY MASTER
 =======
 **Hall of Fame**: 🥇 LEGENDARY MASTER
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Hall of Fame**: 🥇 LEGENDARY MASTER
+>>>>>>> da9ae01a0 (.)

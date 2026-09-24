@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_aMD5IC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_R5Ava5
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,11 +14,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_AyYXGH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9KbAyR
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Xot - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -72,6 +81,7 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Xot**, che nel proge
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### M4 - Eccellenza Web 2026
 - focus: Immersività, Accessibilità WCAG 2.2, Kinetisches Design e Micro-interazioni.
 - target completamento: 100% (Best-in-Class)
@@ -92,6 +102,7 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Xot**, che nel proge
 =======
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> a01602c7 (.)
@@ -100,6 +111,10 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Xot**, che nel proge
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9KbAyR
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Dipendenze
 
 - [PRD](prd.md)
@@ -215,6 +230,7 @@ To provide a **flexible extension framework** that enables rapid development, cu
 *Last Updated: March 12, 2026*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_R5Ava5
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
 =======
@@ -224,9 +240,15 @@ To provide a **flexible extension framework** that enables rapid development, cu
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9KbAyR
+=======
+=======
+- [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

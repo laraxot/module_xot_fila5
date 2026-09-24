@@ -89,10 +89,12 @@ namespace Modules\ModuleName\App\Console\Commands;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
@@ -100,3 +102,7 @@ namespace Modules\ModuleName\App\Console\Commands;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AmBssT
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

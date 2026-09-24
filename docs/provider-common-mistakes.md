@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_p4a1Os
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Purpose**: Document all common mistakes when creating ServiceProviders in Laraxot modules
 
 ## 🚨 Critical Mistakes (Fix Immediately)
@@ -347,15 +353,21 @@ Before committing ANY ServiceProvider:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Provider Errors - Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md) - Real-world examples
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Provider Errors - Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md) - Real-world examples
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_p4a1Os
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [XotBaseServiceProvider Source](../../Xot/app/Providers/XotBaseServiceProvider.php) - See what parent does
 - [XotBase Extension Rules](./xotbase-extension-rules.md) - General XotBase patterns
 
@@ -386,10 +398,12 @@ grep -r "module_dir\|module_ns" Modules/YourModule/app/Providers/
 **Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
 =======
 **Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
@@ -397,3 +411,8 @@ grep -r "module_dir\|module_ns" Modules/YourModule/app/Providers/
 =======
 **Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
 >>>>>>> .merge_file_p4a1Os
+=======
+=======
+**Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

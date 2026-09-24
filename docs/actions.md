@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_TS5CNO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_bWGWoB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -108,6 +112,7 @@ execute(array $array1, array $array2): array
 =======
 
 >>>>>>> .merge_file_bxbBZs
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -115,3 +120,8 @@ execute(array $array1, array $array2): array
 =======
 
 >>>>>>> .merge_file_aOqRPk
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

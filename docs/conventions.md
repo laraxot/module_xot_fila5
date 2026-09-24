@@ -157,6 +157,7 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 <<<<<<< .merge_file_A2HmWJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -173,9 +174,14 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 <<<<<<< HEAD
 * [conventions.md](../../patient/docs/conventions.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [conventions.md](../../patient/docs/conventions.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o8kpmU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -46,6 +46,7 @@ use function Safe\preg_match;
  */
 abstract class XotBasePivot extends EloquentPivot
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_1YIai2
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,6 +58,13 @@ abstract class XotBasePivot extends EloquentPivot
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0ItMp8
+=======
+<<<<<<< HEAD
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+=======
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     use HasXotFactory;
     use Updater;
 
