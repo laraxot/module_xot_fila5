@@ -33,13 +33,13 @@
         "laravel/pulse": "^1.2",
         "laravel/tinker": "*",
         "livewire/flux": "^2.1.1",
-        "livewire/livewire": "^4.3",
+        "livewire/livewire": "*",
         "livewire/volt": "^1.0",
         "maatwebsite/excel": "^3.1",
         "nwidart/laravel-modules": "^13.0",
         "predis/predis": "*",
         "spatie/cpu-load-health-check": "^1.0",
-        "spatie/laravel-data": "^4.7",
+        "spatie/laravel-data": "*",
         "spatie/laravel-health": "^1.29",
         "spatie/laravel-model-states": "*",
         "spatie/laravel-model-status": "*",
@@ -58,13 +58,17 @@
         "tightenco/parental": "*"
     },
     "require_comment": {
+<<<<<<< HEAD
+       
+=======
         "filament/spatie-laravel-translatable-plugin": "*"
+>>>>>>> laraxot/dev
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
         "fakerphp/faker": "^1.24",
         "fruitcake/laravel-debugbar": "^4.2",
-        "larastan/larastan": "^3.9.6",
+        "larastan/larastan": "*",
         "laravel/boost": "^2.0",
         "laravel/pint": "^1.18",
         "laravel/sail": "^1.41",
@@ -73,12 +77,21 @@
         "nunomaduro/phpinsights": "*",
         "orchestra/testbench": "*",
         "pestphp/pest": "*",
-        "pestphp/pest-plugin-type-coverage": "*",
-        "thecodingmachine/phpstan-safe-rule": "*"
-    },
-    "require-dev_comment": {
+        "pestphp/pest-plugin": "*",
+        "pestphp/pest-plugin-arch": "*",
+        "pestphp/pest-plugin-faker": "*",
         "pestphp/pest-plugin-laravel": "*",
-        "spatie/laravel-error-solutions": "*"
+        "pestphp/pest-plugin-livewire": "*",
+        "pestphp/pest-plugin-mutate": "*",
+        "pestphp/pest-plugin-phpstan": "*",
+        "pestphp/pest-plugin-profanity": "*",
+        "pestphp/pest-plugin-rector": "*",
+        "pestphp/pest-plugin-type-coverage": "*",
+        "phpstan/extension-installer": "*",
+        "phpstan/phpdoc-parser": "*",
+        "phpstan/phpstan": "*",
+        "phpstan/phpstan-deprecation-rules": "*",
+        "thecodingmachine/phpstan-safe-rule": "*"
     },
     "repositories_comment": "Local path packages (coolsam/panel-modules) moved to root composer.json for proper priority. DO NOT add Packagist here - it must remain non-canonical in root.",
     "repositories": [
@@ -138,5 +151,12 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev_comment": {
+        "spatie/laravel-error-solutions": "*"
+    }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> laraxot/dev

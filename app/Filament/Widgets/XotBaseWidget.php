@@ -25,11 +25,37 @@ use Webmozart\Assert\Assert;
  * Classe base astratta per tutti i widget Filament.
  * Fornisce funzionalità comuni e standardizzate per la gestione dei widget.
  *
+<<<<<<< .merge_file_imBVN2
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gBRTOX
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
  * @property bool $shouldRender Indica se il widget deve essere renderizzato
  * @property string $title Titolo del widget
  * @property string $icon Icona del widget
  * @property array<string, mixed>|null $data Dati del form
  * @property Schema $form
+<<<<<<< .merge_file_imBVN2
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_g5hQMb
+ * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
+ * @property string                    $title        Titolo del widget
+ * @property string                    $icon         Icona del widget
+ * @property array<string, mixed>|null $data         Dati del form
+ * @property Schema                    $form
+<<<<<<< .merge_file_gBRTOX
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
  */
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
@@ -75,7 +101,25 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     /**
      * Configura il form del widget.
      *
+<<<<<<< .merge_file_imBVN2
      * @param  Schema  $schema  Il form da configurare
+=======
+<<<<<<< HEAD
+     * @param  Schema  $schema  Il form da configurare
+=======
+<<<<<<< .merge_file_gBRTOX
+<<<<<<< HEAD
+     * @param  Schema  $schema  Il form da configurare
+=======
+     * @param Schema $schema Il form da configurare
+     *
+>>>>>>> laraxot/dev
+=======
+     * @param Schema $schema Il form da configurare
+     *
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
      * @return Schema Il form configurato
      */
     public function form(Schema $schema): Schema
@@ -84,7 +128,23 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $schema->statePath('data');
 
         $model = $this->getFormModel();
+<<<<<<< .merge_file_imBVN2
         if ($model !== null) {
+=======
+<<<<<<< HEAD
+        if ($model !== null) {
+=======
+<<<<<<< .merge_file_gBRTOX
+<<<<<<< HEAD
+        if ($model !== null) {
+=======
+        if (null !== $model) {
+>>>>>>> laraxot/dev
+=======
+        if (null !== $model) {
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
             // Ensure model is compatible with Schema::model()
             if (\is_string($model)) {
                 if (class_exists($model) && is_subclass_of($model, Model::class)) {
@@ -104,7 +164,23 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
+<<<<<<< .merge_file_imBVN2
         if ($model === null) {
+=======
+<<<<<<< HEAD
+        if ($model === null) {
+=======
+<<<<<<< .merge_file_gBRTOX
+<<<<<<< HEAD
+        if ($model === null) {
+=======
+        if (null === $model) {
+>>>>>>> laraxot/dev
+=======
+        if (null === $model) {
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
             return [];
         }
         if (\is_string($model)) {
@@ -121,7 +197,23 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                     $defaults = $model->getDataDefaults();
                     $merge1 = array_merge($defaults, $res);
                     $merge1 = Arr::map($merge1, static function (mixed $value, string|int $key) use ($defaults) {
+<<<<<<< .merge_file_imBVN2
                         if ($value === null) {
+=======
+<<<<<<< HEAD
+                        if ($value === null) {
+=======
+<<<<<<< .merge_file_gBRTOX
+<<<<<<< HEAD
+                        if ($value === null) {
+=======
+                        if (null === $value) {
+>>>>>>> laraxot/dev
+=======
+                        if (null === $value) {
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
                             $value = Arr::get($defaults, $key, null);
                         }
 
@@ -181,6 +273,16 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         }
 
         return Action::make('submit')
+<<<<<<< .merge_file_imBVN2
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gBRTOX
+=======
+            ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
             ->submit('save')
             ->view((string) $submit_view);
     }
@@ -194,6 +296,16 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         return [
             Action::make('save')
+<<<<<<< .merge_file_imBVN2
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gBRTOX
+=======
+                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
                 ->submit('save'),
         ];
     }
@@ -243,7 +355,25 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
+<<<<<<< .merge_file_imBVN2
      * @param  array<int|string, mixed>  $data
+=======
+<<<<<<< HEAD
+     * @param  array<int|string, mixed>  $data
+=======
+<<<<<<< .merge_file_gBRTOX
+<<<<<<< HEAD
+     * @param  array<int|string, mixed>  $data
+=======
+     * @param array<int|string, mixed> $data
+     *
+>>>>>>> laraxot/dev
+=======
+     * @param array<int|string, mixed> $data
+     *
+>>>>>>> .merge_file_g5hQMb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Whw5pr
      * @return array<string, mixed>
      */
     protected static function normalizeFormFill(array $data): array

@@ -2,8 +2,24 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_aC5Vrm
 
 =======
+=======
+=======
+<<<<<<< .merge_file_oACnyz
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_n6cc0K
+>>>>>>> .merge_file_HQeRlz
 >>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -13,7 +29,19 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
+<<<<<<< .merge_file_aC5Vrm
 /**
+=======
+<<<<<<< HEAD
+/**
+=======
+<<<<<<< .merge_file_oACnyz
+/**
+=======
+/*
+>>>>>>> .merge_file_n6cc0K
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HQeRlz
  * Guardia meccanica contro due regressioni avvenute nello stesso giorno
  * (2026-09-11):
  *

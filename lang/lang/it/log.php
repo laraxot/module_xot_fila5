@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_kXCz1T
+=======
+
+>>>>>>> .merge_file_TWDapi
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',

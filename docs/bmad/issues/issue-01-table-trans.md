@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_VSGgGQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_1OyY5C
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_twtNwX
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cOWpO7
+>>>>>>> .merge_file_pPMTif
+>>>>>>> .merge_file_jYPO8E
 ---
 name: issue-01-table-trans
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_VSGgGQ
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jYPO8E
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_VSGgGQ
 =======
+=======
+<<<<<<< .merge_file_1OyY5C
+=======
+<<<<<<< .merge_file_twtNwX
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cOWpO7
+>>>>>>> .merge_file_pPMTif
+>>>>>>> .merge_file_jYPO8E
 >>>>>>> laraxot/dev
 # Issue GH #01 — Rimuovere TransTrait ridondante da XotBaseResourceTable
 

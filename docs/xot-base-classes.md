@@ -18,7 +18,21 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
       public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -56,7 +70,27 @@ The Xot base classes provide a centralized way to customize and extend functiona
 
 ## Links to Related Documentation
 - [Code Quality](../Xot/docs/CODE_QUALITY.md)
+<<<<<<< HEAD
+- [Filament Extension Pattern](filament_extension_pattern.md)
+- [Filament Extension Pattern Analysis](filament_extension_pattern_analysis.md)
+- [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
+- [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+=======
+<<<<<<< HEAD
+- [Filament Extension Pattern](filament_extension_pattern.md)
+- [Filament Extension Pattern Analysis](filament_extension_pattern_analysis.md)
+- [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
+<<<<<<< .merge_file_730vgw
+<<<<<<< HEAD
+- [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+=======
+=======
+- [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+=======
 - [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
 - [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
+>>>>>>> .merge_file_I1bIu5
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

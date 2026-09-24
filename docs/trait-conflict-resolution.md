@@ -89,4 +89,13 @@ Dopo la modifica, verifica con:
 ---
 
 *Risolto: 2025-01-10*
+<<<<<<< HEAD
 *Architecture Version: XotBase 2.1*
+=======
+<<<<<<< HEAD
+*Architecture Version: XotBase 2.1*
+=======
+*Risolto: [DATE]*
+*Architecture Version: XotBase 2.1*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -1,4 +1,26 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+title: "Redundancy Audit"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated redundancy-audit"
+related:
+  - "./redundancy-audit.md"
+---
+# Redundancy Audit
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
+<<<<<<< HEAD
+=======
+=======
 title: "Xot redundancy audit 2026-05-21"
 type: audit
 module: Xot
@@ -35,3 +57,5 @@ Evidence commands:
 - Duplicate FQCN scan with PHP `RecursiveDirectoryIterator`.
 - Byte-identical file scan with `sha256sum`.
 - Case-only path scan using lowercase path map.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

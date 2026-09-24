@@ -236,9 +236,25 @@ return [
 ## Collegamenti tra versioni di services.md
 * [services.md](../../../Xot/docs/services.md)
 * [services.md](../../../Tenant/docs/it/config/services.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+* [services.md](../../../xot/docs/services.md)
+* [services.md](../../../tenant/docs/it/config/services.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Versione Incoming
 
    - Testare i casi limite
 
+<<<<<<< HEAD
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

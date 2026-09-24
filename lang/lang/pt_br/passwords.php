@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_vNzmmT
+=======
+
+>>>>>>> .merge_file_N9f92N
 return [
     'password' => 'A senha deverá conter pelo menos seis carateres e ser igual à confirmação.',
     'reset' => 'Sua senha foi redefinida!',

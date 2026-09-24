@@ -31,12 +31,21 @@ use Webmozart\Assert\Assert;
  * validazione campi solo nello schema — submit usa `$this->form->getState()` (mai `validateForm()`).
  * La *Form class è lo spartito (campi + regole + dehydrate). MAI duplicare TextInput nel widget.
  *
- * @property Schema                   $form
- * @property array<string, mixed>     $data
+<<<<<<< HEAD
+ * @property Schema $form
+=======
+ * @property Schema                    $form
+>>>>>>> laraxot/dev
+ * @property array<string, mixed>|null $data
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 {
     use InteractsWithSchemas;
+
+    /**
+     * @var array<string, mixed>|null
+     */
+    public ?array $data = [];
 
     /**
      * FQCN *Form (opzionale). Se presente, `form()` delega a `FormClass::{schemaMethod()}`.
@@ -73,7 +82,11 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     {
         $formClass = static::formClass();
 
+<<<<<<< HEAD
+        if ($formClass !== null) {
+=======
         if (null !== $formClass) {
+>>>>>>> laraxot/dev
             $method = static::schemaMethod();
 
             if (! method_exists($formClass, $method)) {
@@ -90,9 +103,14 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
+<<<<<<< HEAD
+     * @param  class-string  $formClass  Es. UserForm::class
+     * @param  string  $method  Es. getRegisterFormSchema
+=======
      * @param class-string $formClass Es. UserForm::class
      * @param string       $method    Es. getRegisterFormSchema
      *
+>>>>>>> laraxot/dev
      * @return array<int|string, Component>
      */
     protected static function resourceFormSchema(string $formClass, string $method): array
@@ -113,7 +131,11 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
+<<<<<<< HEAD
+        if ($model === null) {
+=======
         if (null === $model) {
+>>>>>>> laraxot/dev
             return [];
         }
         if (\is_string($model)) {
@@ -152,9 +174,13 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         $this->form->fill([]);
     }
 
+<<<<<<< HEAD
+    public function save(): void {}
+=======
     public function save(): void
     {
     }
+>>>>>>> laraxot/dev
 
     protected function getFormModel(): Model|string|null
     {

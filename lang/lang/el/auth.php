@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_j6BuTe
+=======
+
+>>>>>>> .merge_file_CL38t4
 return [
     'failed' => 'Αυτά τα διαπιστευτήρια δεν ταιριάζουν με τα αρχεία μας.',
     'general_error' => 'Δεν έχετε πρόσβαση σε αυτό.',

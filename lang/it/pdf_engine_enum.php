@@ -2,10 +2,21 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/pdf_engine_enum.php
 return [
+    'values' => [
+        'spipu' => [
+            'label' => 'Spipu',
+            'icon' => 'heroicon-o-table-cells',
+            'color' => 'info',
+            'description' => 'Motore PDF basato su TCPDF/mPDF per report tabellari',
+        ],
+        'spatie' => [
+            'label' => 'Spatie',
+            'icon' => 'heroicon-o-document-text',
+            'color' => 'primary',
+            'description' => 'Motore PDF basato su DomPDF per documenti HTML/CSS',
+        ],
+    ],
     'label' => 'Motore PDF',
     'options' => [
         'spipu' => 'Spipu',
@@ -42,6 +53,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'spipu' => ['label' => 'spipu', 'placeholder' => 'spipu', 'helper_text' => 'spipu', 'description' => 'spipu'],
     ],
     'actions' => [
         'create' => [
@@ -54,4 +66,5 @@ return [
             'label' => 'Elimina Pdf Engine Enum',
         ],
     ],
+    'test' => 'pdf engine enum',
 ];

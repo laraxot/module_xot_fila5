@@ -31,47 +31,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     use HasRelationshipModelClass;
     use HasXotTable {
         HasRelationshipModelClass::getModelClass insteadof HasXotTable;
-        getGridTableColumns as private xotGetGridTableColumns;
-        getTablePaginated as private xotGetTablePaginated;
-        getSearchableColumns as private xotSearchableColumns;
     }
     use InteractsWithForms;
-
-    /**
-     * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
-     */
-    public function getGridTableColumns(): array
-    {
-        return $this->xotGetGridTableColumns();
-    }
-
-    /**
-     * @return bool|array<int|string>
-     */
-    protected function getTablePaginated(): bool|array
-    {
-        $paginated = $this->xotGetTablePaginated();
-
-        if (is_bool($paginated)) {
-            return $paginated;
-        }
-
-        /** @var array<int|string> $options */
-        $options = $paginated;
-
-        return $options;
-    }
-
-    /**
-     * @return array<string>
-     */
-    protected function getSearchableColumns(): array
-    {
-        /** @var array<string> $columns */
-        $columns = $this->xotSearchableColumns();
-
-        return $columns;
-    }
     // protected static string $resource;
 
     /**
@@ -116,7 +77,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
+<<<<<<< HEAD
+=======
     #[\Override]
+>>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [
@@ -167,7 +131,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< HEAD
+                    if ($url === '') {
+=======
                     if ('' === $url) {
+>>>>>>> laraxot/dev
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -180,7 +148,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< HEAD
+                    if ($url === '') {
+=======
                     if ('' === $url) {
+>>>>>>> laraxot/dev
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 

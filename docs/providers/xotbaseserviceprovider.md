@@ -1,8 +1,3 @@
----
-description:
-globs:
-alwaysApply: false
----
 # XotBaseServiceProvider
 
 ## Descrizione

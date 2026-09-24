@@ -6,16 +6,31 @@ namespace Modules\Xot\Filament\Resources\Schemas;
 
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
+use Modules\Xot\Filament\Traits\HasXotInfolist;
+use Webmozart\Assert\Assert;
 
 abstract class XotBaseResourceInfolist
 {
-    final public static function configure(Schema $schema): Schema
+    use HasXotInfolist;
+
+    public static function configure(Schema $schema): Schema
     {
-        return $schema->components(static::getInfolistSchema());
+<<<<<<< HEAD
+        if (static::class === self::class) {
+=======
+        if (self::class === static::class) {
+>>>>>>> laraxot/dev
+            throw new \LogicException('XotBaseResourceInfolist::configure() must be called on a concrete infolist class.');
+        }
+
+        $instance = app(static::class);
+        Assert::isInstanceOf($instance, self::class);
+
+        return $instance->infolist($schema);
     }
 
     /**
      * @return array<string, Component>
      */
-    abstract public static function getInfolistSchema(): array;
+    abstract public function getInfolistSchema(): array;
 }

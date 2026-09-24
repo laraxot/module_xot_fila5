@@ -18,9 +18,31 @@ use Filament\Forms\Components\Builder\Block as FilamentBuilderBlock;
  * `make()`/`create()` while keeping the Filament\Forms\Components\Builder\Block API.
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_4V9pFK
+=======
+abstract class XotBaseBuilderBlock extends FilamentBuilderBlock {}
+=======
+<<<<<<< .merge_file_jUaKYq
+<<<<<<< HEAD
+abstract class XotBaseBuilderBlock extends FilamentBuilderBlock
+{
+}
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_rb9cod
 abstract class XotBaseBuilderBlock extends FilamentBuilderBlock
 {
 }
 =======
 abstract class XotBaseBuilderBlock extends FilamentBuilderBlock {}
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_4V9pFK
+=======
+>>>>>>> laraxot/dev
+=======
+abstract class XotBaseBuilderBlock extends FilamentBuilderBlock
+{
+}
+>>>>>>> .merge_file_l80ixZ
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_rb9cod

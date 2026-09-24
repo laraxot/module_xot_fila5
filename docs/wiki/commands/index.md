@@ -1,8 +1,32 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_H2yWqO
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_PiD4kM
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_flbgG0
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_IGTrVd
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_PiD4kM
+=======
+>>>>>>> .merge_file_7dtaMf
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_IGTrVd
+>>>>>>> .merge_file_itsoTC
 ---
 title: "Index"
 type: reference
@@ -12,9 +36,32 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_H2yWqO
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_PiD4kM
+=======
+<<<<<<< .merge_file_flbgG0
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_IGTrVd
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_PiD4kM
+=======
+>>>>>>> .merge_file_7dtaMf
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_IGTrVd
+>>>>>>> .merge_file_itsoTC
 # Xot Module - commands Index
 
 ## Purpose

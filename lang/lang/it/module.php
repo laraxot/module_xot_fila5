@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_XATI1m
+=======
+
+>>>>>>> .merge_file_pPfB5s
 return [
     'navigation' => [
         'name' => 'Modulo',

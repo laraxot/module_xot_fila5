@@ -1,6 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_phvNdz
 {"folders":[{"path":"."}],"settings":{}}
 =======
+=======
+=======
+<<<<<<< HEAD
+{"folders":[{"path":"."}],"settings":{}}
+=======
+<<<<<<< HEAD
+{"folders":[{"path":"."}],"settings":{}}
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OaXpMM
 {
 	"folders": [
 		{
@@ -40,4 +51,11 @@
 		"git.autofetch": "all"
 	}
 }
+<<<<<<< .merge_file_phvNdz
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OaXpMM
 >>>>>>> laraxot/dev

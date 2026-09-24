@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_mdWWGH
+=======
+
+>>>>>>> .merge_file_1Whjsa
 return [
     'general' => [
         'home' => 'الرئيسية',

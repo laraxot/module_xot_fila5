@@ -87,7 +87,21 @@ protected function generateFormSchema(string $file, string $content, string $cla
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
 public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         'field_name' => [
@@ -793,4 +807,12 @@ $count = CountAction::execute(User::class);
 - [ ] Implementare cache opzionale
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
+<<<<<<< HEAD
 - [ ] Aggiungere test di performance
+=======
+<<<<<<< HEAD
+- [ ] Aggiungere test di performance
+=======
+- [ ] Aggiungere test di performance
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

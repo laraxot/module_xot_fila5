@@ -1,8 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
@@ -11,7 +14,10 @@ use Modules\Xot\Actions\GetModelTypeByModelAction;
 use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Tests\Fixtures\DemoModel;
 use Modules\Xot\Tests\Fixtures\FakeQueryableModel;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('gets model class by model type from morph map', function (): void {
     config()->set('morph_map', ['demo' => DemoModel::class]);
@@ -55,7 +61,11 @@ it('instantiates model by type when id is null', function (): void {
 
 it('loads model by id when record exists', function (): void {
     config()->set('morph_map', ['demo' => FakeQueryableModel::class]);
+<<<<<<< HEAD
+    FakeQueryableModel::$findResult = new DemoModel;
+=======
     FakeQueryableModel::$findResult = new DemoModel();
+>>>>>>> laraxot/dev
     FakeQueryableModel::$findResult->setAttribute('id', 123);
 
     $result = app(GetModelByModelTypeAction::class)->execute('demo', '123');
@@ -77,8 +87,12 @@ it('throws when model id is provided but record is missing', function (): void {
 });
 
 it('returns snake model type from model contract instance', function (): void {
+<<<<<<< HEAD
+    $model = new class extends Model implements ModelContract {};
+=======
     $model = new class extends Model implements ModelContract {
     };
+>>>>>>> laraxot/dev
 
     $result = app(GetModelTypeByModelAction::class)->execute($model);
 

@@ -75,8 +75,28 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 ### Documentazione Correlata
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
+<<<<<<< .merge_file_NuOdd3
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
 - [Namespace Rules](namespace-rules.md) - Regole per i namespace
+=======
+<<<<<<< HEAD
+- [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
+- [Namespace Rules](namespace-rules.md) - Regole per i namespace
+=======
+<<<<<<< .merge_file_RwAE3E
+- [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
+- [Namespace Rules](namespace-rules.md) - Regole per i namespace
+=======
+<<<<<<< HEAD
+- [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
+- [Namespace Rules](namespace-rules.md) - Regole per i namespace
+=======
+- [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
+- [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TrHOd5
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TEdZpa
 
 ### Moduli Collegati
 - [UI](../UI/project_docs/README.md) - Componenti di interfaccia

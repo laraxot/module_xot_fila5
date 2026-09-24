@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+---
+title: "Laraxot Architectural Memories 02"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated laraxot-architectural-memories-02"
+related:
+  - "./laraxot-architectural-memories-02.md"
+---
+# Laraxot Architectural Memories 02
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [laraxot-architectural-memories-02.md](./laraxot-architectural-memories-02.md)
+<<<<<<< HEAD
+=======
+=======
 # Laraxot Architectural Memories - February 2026
 
 Critical architectural discoveries and best practices compiled during the Footer Refinement and Theme Integration phase.
@@ -51,3 +74,5 @@ If CDP connection fails, use `curl -s http://127.0.0.1:8000/{path} | grep -A 100
 ## 5. Documentation Standards
 - **Naming**: All `.md` files must be lowercase, no dates in filenames (except `CHANGELOG.md`/`README.md`).
 - **Organization**: No `_docs` folders allowed. All sub-documentation must reside directly in the `docs/` folder of the respective module/theme.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

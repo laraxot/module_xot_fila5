@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_TXpRAn
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_iwrm4y
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_wfoLQe
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jU8TMc
+>>>>>>> .merge_file_aqGKLA
+>>>>>>> .merge_file_ayPJpT
 ---
 name: 07-hr-table-filters
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_TXpRAn
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ayPJpT
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TXpRAn
 =======
+=======
+<<<<<<< .merge_file_iwrm4y
+=======
+<<<<<<< .merge_file_wfoLQe
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jU8TMc
+>>>>>>> .merge_file_aqGKLA
+>>>>>>> .merge_file_ayPJpT
 >>>>>>> laraxot/dev
 # BMAD Story 07 — HR: compatibilità getTableFilters()
 

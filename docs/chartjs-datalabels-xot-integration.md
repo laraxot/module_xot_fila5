@@ -921,7 +921,24 @@ class ExampleChartWidget extends XotBaseChartWidget
 
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
+<<<<<<< .merge_file_MUvWhX
 **`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+=======
+<<<<<<< HEAD
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+=======
+<<<<<<< .merge_file_8I2bBr
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+=======
+<<<<<<< HEAD
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+=======
+**`Modules/healthcare_app/Filament/Widgets/SimpleChartWidget.php`**
+**`Modules/ExternalProject/Filament/Widgets/SimpleChartWidget.php`**
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4gLdAO
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JNRqmY
 
 Key pattern:
 ```php
@@ -952,4 +969,20 @@ JS);
 4. **Flexibility**: Provide configuration methods that allow child classes to customize behavior
 5. **Maintainability**: Keep the base implementation clean and well-documented
 6. **Scalability**: Design configuration options that can be extended without breaking existing functionality
+<<<<<<< .merge_file_MUvWhX
 7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+=======
+<<<<<<< HEAD
+7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+=======
+<<<<<<< .merge_file_8I2bBr
+7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+=======
+<<<<<<< HEAD
+7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+=======
+7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4gLdAO
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JNRqmY

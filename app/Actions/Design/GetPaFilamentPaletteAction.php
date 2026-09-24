@@ -17,10 +17,29 @@ final class GetPaFilamentPaletteAction
     use QueueableAction;
 
     /** Verde PA — azioni primarie, CTA istituzionali */
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wWOdKs
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_WendtL
+>>>>>>> laraxot/dev
+    public const string PRIMARY_HEX = '#007A52';
+
+    /** Blu istituzionale — info, link header */
+    public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wWOdKs
+=======
     public const PRIMARY_HEX = '#007A52';
 
     /** Blu istituzionale — info, link header */
     public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_WendtL
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, array<int, string>|string>

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_meg1rq
+=======
+
+>>>>>>> .merge_file_2wGzhn
 return [
     'title' => 'Laraveli installer',
     'next' => 'Järgmine samm',

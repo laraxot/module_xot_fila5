@@ -102,7 +102,7 @@ class XotData extends Data implements Wireable
 
 #### Caratteristiche:
 ```php
-class MetatagData extends Data implements MetatagDataContract, Wireable
+class MetatagData extends Data implements MetatagDataInterface, Wireable
 {
     // Constructor with data validation
     public function __construct(array $data = []) { ... }
@@ -126,7 +126,7 @@ class MetatagData extends Data implements MetatagDataContract, Wireable
 
 1. **Smart getter logic**: Ogni getter ha fallback + type coercion
 2. **Default values**: Definiti nel getter, non nel costruttore
-3. **Interface implementation**: Implements `MetatagDataContract` (contract-driven)
+3. **Interface implementation**: Implements `MetatagDataInterface` (contract-driven)
 4. **Livewire 3 Wireable**: Serializzazione intelligente
 5. **Transformation**: `toLivewire()` trasforma per il frontend
 

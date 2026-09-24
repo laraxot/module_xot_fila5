@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_RidfSE
+=======
+
+>>>>>>> .merge_file_Y2LDD5
 return [
     'navigation' => [
         'name' => 'sessione',

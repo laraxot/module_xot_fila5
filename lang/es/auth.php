@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/es/auth.php
 return [
     'failed' => 'Las credenciales no se han encontrado.',
     'general_error' => 'No tiene suficientes permisos..',

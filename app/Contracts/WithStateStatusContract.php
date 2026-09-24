@@ -11,6 +11,10 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @phpstan-require-extends Model
  */
+<<<<<<< HEAD
+interface WithStateStatusContract {}
+=======
 interface WithStateStatusContract
 {
 }
+>>>>>>> laraxot/dev

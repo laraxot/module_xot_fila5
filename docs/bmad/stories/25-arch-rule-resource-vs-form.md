@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_5cTezV
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_P3VNLD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_aNXj4c
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DUJojZ
+>>>>>>> .merge_file_38Hamt
+>>>>>>> .merge_file_CeKWRR
 ---
 name: 25-arch-rule-resource-vs-form
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_5cTezV
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CeKWRR
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5cTezV
 =======
+=======
+<<<<<<< .merge_file_P3VNLD
+=======
+<<<<<<< .merge_file_aNXj4c
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DUJojZ
+>>>>>>> .merge_file_38Hamt
+>>>>>>> .merge_file_CeKWRR
 >>>>>>> laraxot/dev
 # BMAD Story 25 — Regola architetturale: XotBaseResource vs XotBaseResourceForm
 

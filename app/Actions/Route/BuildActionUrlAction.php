@@ -20,7 +20,23 @@ class BuildActionUrlAction
         $row = $params['row'] ?? (object) [];
         $query = is_array($params['query'] ?? null) ? $params['query'] : [];
         $route = request()->route();
+<<<<<<< .merge_file_4nkri8
         if (! $route instanceof Route || $route->getName() === null) {
+=======
+<<<<<<< HEAD
+        if (! $route instanceof Route || $route->getName() === null) {
+=======
+<<<<<<< .merge_file_OWDbnc
+<<<<<<< HEAD
+        if (! $route instanceof Route || $route->getName() === null) {
+=======
+        if (! $route instanceof Route || null === $route->getName()) {
+>>>>>>> laraxot/dev
+=======
+        if (! $route instanceof Route || null === $route->getName()) {
+>>>>>>> .merge_file_c5Ciqy
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vC05y2
             return '#'.$action;
         }
 

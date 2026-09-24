@@ -1,5 +1,14 @@
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_UqL3Uy
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_D0jXbq
 title: 'Inodes'
 module: Xot
 type: reference
@@ -12,6 +21,14 @@ updated: 2026-08-24
 ---
 
 -----------------------------------------------------------
+<<<<<<< .merge_file_UqL3Uy
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_D0jXbq
 =======
 title: "Inodes"
 type: reference
@@ -30,6 +47,13 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 
 --------------------------------------------------------------
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UqL3Uy
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_D0jXbq
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------

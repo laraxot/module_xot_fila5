@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_XROQcg
+=======
+
+>>>>>>> .merge_file_aLRmsu
 return [
     'failed' => 'Disse legitimationsoplysninger passer ikke vores optegnelser.',
     'general_error' => 'Du har ikke adgang til at udføre denne handling.',

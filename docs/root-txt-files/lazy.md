@@ -6,10 +6,26 @@ slug: lazy
 description: 'Elenco di 6 riferimenti esterni raccolti per lazy, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< .merge_file_uSMunZ
+=======
+<<<<<<< HEAD
+=======
+converted_from: _lazy.txt
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hltqpS
 converted_from: lazy.txt
 =======
 converted_from: _lazy.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_uSMunZ
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hltqpS
 created: 2026-08-24
 updated: 2026-08-24
 ---

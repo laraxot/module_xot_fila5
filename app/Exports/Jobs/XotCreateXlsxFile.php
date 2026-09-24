@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exports\Jobs;
 
+<<<<<<< .merge_file_kguQ87
 use Closure;
+=======
+>>>>>>> .merge_file_Vnnt1z
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Http\File;
@@ -14,11 +17,19 @@ use Modules\Xot\Exports\XotBaseExporter;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Common\Entity\Style\Style;
 use OpenSpout\Writer\XLSX\Writer;
+<<<<<<< .merge_file_kguQ87
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> .merge_file_Vnnt1z
 
 use function Safe\tempnam;
 use function Safe\unlink;
 
+<<<<<<< .merge_file_kguQ87
+=======
+use Webmozart\Assert\Assert;
+
+>>>>>>> .merge_file_Vnnt1z
 /**
  * `CreateXlsxFile` che legge il CSV intermedio con l'escape con cui e' stato
  * scritto (`XotBaseExporter::CSV_ESCAPE`) e conserva le righe vuote (una riga
@@ -50,14 +61,22 @@ class XotCreateXlsxFile extends CreateXlsxFile
 
         $csvDelimiter = $this->exporter::getCsvDelimiter();
 
+<<<<<<< .merge_file_kguQ87
         $writeRowsFromFile = function (string $file, ?Style $style, Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
+=======
+        $writeRowsFromFile = function (string $file, ?Style $style, \Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
+>>>>>>> .merge_file_Vnnt1z
             $stream = $disk->readStream($file);
             Assert::resource($stream);
             $csvReader = CsvReader::from($stream);
             $csvReader->setDelimiter($csvDelimiter);
             $csvReader->setEscape(XotBaseExporter::CSV_ESCAPE);
             $csvReader->includeEmptyRecords();
+<<<<<<< .merge_file_kguQ87
             $csvResults = (new Statement)->process($csvReader);
+=======
+            $csvResults = (new Statement())->process($csvReader);
+>>>>>>> .merge_file_Vnnt1z
 
             foreach ($csvResults->getRecords() as $values) {
                 $row = $makeRow($values, $style);

@@ -54,10 +54,32 @@ class ThemeAction
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_NljGl3
+=======
+    public function execute(): void {}
+=======
+<<<<<<< .merge_file_uj7qR3
+<<<<<<< HEAD
+    public function execute(): void
+    {
+    }
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_AFJnWC
     public function execute(): void
     {
     }
 =======
     public function execute(): void {}
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NljGl3
+=======
+>>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> .merge_file_iaoQ85
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AFJnWC
 }

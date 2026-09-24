@@ -6,9 +6,33 @@
 
 **USARE SEMPRE MySQL con suffisso "_test":**
 - `DB_CONNECTION=mysql` ✅
+<<<<<<< .merge_file_5h3bmf
 - `DB_DATABASE=quaeris_data_test` ✅  
 - `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
 - `DB_DATABASE_USER=quaeris_user_test` ✅
+=======
+<<<<<<< HEAD
+- `DB_DATABASE=quaeris_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
+- `DB_DATABASE_USER=quaeris_user_test` ✅
+=======
+<<<<<<< .merge_file_avzMVJ
+- `DB_DATABASE=quaeris_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
+- `DB_DATABASE_USER=quaeris_user_test` ✅
+=======
+<<<<<<< HEAD
+- `DB_DATABASE=quaeris_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
+- `DB_DATABASE_USER=quaeris_user_test` ✅
+=======
+- `DB_DATABASE=healthcare_app_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=healthcare_app_survey_test` ✅
+- `DB_DATABASE_USER=healthcare_app_user_test` ✅
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_K22tFR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F4SMAr
 
 ## 🚫 MAI USARE
 

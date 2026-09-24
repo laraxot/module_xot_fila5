@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/sv/passwords.php
 return [
     'password' => 'Lösenordet måste vara minst sex tecken långt och stämma med bekräftelsen av lösenordet.',
     'reset' => 'Ditt lösenord har återställts!',

@@ -14,7 +14,11 @@ uses(TestCase::class);
 describe('Base Morph Pivot Business Logic', function (): void {
     test('it extends pivot class', function (): void {
         // Arrange & Act
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
 
         // Assert
         Assert::assertInstanceOf(Pivot::class, $pivot);
@@ -22,7 +26,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage morph type', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('morph_type', 'App\Models\User');
 
         // Act
@@ -34,7 +42,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage morph id', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('morph_id', 123);
 
         // Act
@@ -46,7 +58,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage related type', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('related_type', 'App\Models\Post');
 
         // Act
@@ -58,7 +74,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage related id', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('related_id', 456);
 
         // Act
@@ -70,7 +90,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage pivot attributes', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('custom_field', 'custom_value');
         $pivot->setAttribute('numeric_field', 42);
 
@@ -87,7 +111,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage timestamps', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $now = now();
         $pivot->setAttribute('created_at', $now);
         $pivot->setAttribute('updated_at', $now);
@@ -103,7 +131,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage soft deletes', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $deletedAt = now();
         $pivot->setAttribute('deleted_at', $deletedAt);
 
@@ -116,7 +148,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage tenant id', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('tenant_id', 789);
 
         // Act
@@ -128,7 +164,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage user id', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('user_id', 101);
 
         // Act
@@ -147,7 +187,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
             'session_id' => 'session123',
         ];
 
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('metadata', $metadata);
 
         // Act
@@ -172,7 +216,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
             ],
         ];
 
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('extra_data', $extraData);
 
         // Act
@@ -190,7 +238,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage status', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('status', 'active');
 
         // Act
@@ -203,7 +255,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage priority', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('priority', 5);
 
         // Act
@@ -216,7 +272,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage sort order', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('sort_order', 10);
 
         // Act
@@ -229,7 +289,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage expires at', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $expiresAt = now()->addDays(30);
         $pivot->setAttribute('expires_at', $expiresAt);
 
@@ -242,7 +306,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage starts at', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $startsAt = now()->addHours(2);
         $pivot->setAttribute('starts_at', $startsAt);
 
@@ -255,7 +323,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage ends at', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $endsAt = now()->addDays(7);
         $pivot->setAttribute('ends_at', $endsAt);
 
@@ -268,7 +340,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage is active', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('is_active', true);
 
         // Act
@@ -286,7 +362,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage is public', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('is_public', false);
 
         // Act
@@ -304,7 +384,11 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
     test('it can manage is featured', function (): void {
         // Arrange
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
         $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
         $pivot->setAttribute('is_featured', false);
 
         // Act
@@ -318,5 +402,428 @@ describe('Base Morph Pivot Business Logic', function (): void {
 
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
+    });
+
+    test('it can manage tags', function (): void {
+        // Arrange
+        $tags = ['tag1', 'tag2', 'important'];
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('tags', $tags);
+
+        // Act
+        /** @var array<int, string> $pivotTags */
+        $pivotTags = $pivot->getAttribute('tags');
+
+        // Assert
+        Assert::assertIsArray($pivotTags);
+        Assert::assertContains('tag1', $pivotTags);
+        Assert::assertContains('tag2', $pivotTags);
+        Assert::assertContains('important', $pivotTags);
+        Assert::assertCount(3, $pivotTags);
+    });
+
+    test('it can manage categories', function (): void {
+        // Arrange
+        $categories = ['category1', 'category2'];
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('categories', $categories);
+
+        // Act
+        /** @var array<int, string> $pivotCategories */
+        $pivotCategories = $pivot->getAttribute('categories');
+
+        // Assert
+        Assert::assertIsArray($pivotCategories);
+        Assert::assertContains('category1', $pivotCategories);
+        Assert::assertContains('category2', $pivotCategories);
+        Assert::assertCount(2, $pivotCategories);
+    });
+
+    test('it can manage permissions', function (): void {
+        // Arrange
+        $permissions = [
+            'read' => true,
+            'write' => false,
+            'delete' => false,
+        ];
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('permissions', $permissions);
+
+        // Act
+        /** @var array<string, bool> $pivotPermissions */
+        $pivotPermissions = $pivot->getAttribute('permissions');
+
+        // Assert
+        Assert::assertIsArray($pivotPermissions);
+        Assert::assertTrue($pivotPermissions['read']);
+        Assert::assertFalse($pivotPermissions['write']);
+        Assert::assertFalse($pivotPermissions['delete']);
+    });
+
+    test('it can manage settings', function (): void {
+        // Arrange
+        $settings = [
+            'notifications' => true,
+            'auto_save' => false,
+            'timeout' => 30,
+        ];
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('settings', $settings);
+
+        // Act
+        /** @var array<string, mixed> $pivotSettings */
+        $pivotSettings = $pivot->getAttribute('settings');
+
+        // Assert
+        Assert::assertIsArray($pivotSettings);
+        Assert::assertTrue($pivotSettings['notifications']);
+        Assert::assertFalse($pivotSettings['auto_save']);
+        Assert::assertEquals(30, $pivotSettings['timeout']);
+    });
+
+    test('it can manage notes', function (): void {
+        // Arrange
+        $notes = 'This is a test note for the pivot relationship';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('notes', $notes);
+
+        // Act
+        $pivotNotes = $pivot->getAttribute('notes');
+
+        // Assert
+        Assert::assertEquals($notes, $pivotNotes);
+    });
+
+    test('it can manage description', function (): void {
+        // Arrange
+        $description = 'Test description for pivot relationship';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('description', $description);
+
+        // Act
+        $pivotDescription = $pivot->getAttribute('description');
+
+        // Assert
+        Assert::assertEquals($description, $pivotDescription);
+    });
+
+    test('it can manage url', function (): void {
+        // Arrange
+        $url = 'https://example.com/pivot/123';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('url', $url);
+
+        // Act
+        $pivotUrl = $pivot->getAttribute('url');
+
+        // Assert
+        Assert::assertEquals($url, $pivotUrl);
+    });
+
+    test('it can manage image url', function (): void {
+        // Arrange
+        $imageUrl = 'https://example.com/images/pivot.jpg';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('image_url', $imageUrl);
+
+        // Act
+        $pivotImageUrl = $pivot->getAttribute('image_url');
+
+        // Assert
+        Assert::assertEquals($imageUrl, $pivotImageUrl);
+    });
+
+    test('it can manage external id', function (): void {
+        // Arrange
+        $externalId = 'ext_12345';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('external_id', $externalId);
+
+        // Act
+        $pivotExternalId = $pivot->getAttribute('external_id');
+
+        // Assert
+        Assert::assertEquals($externalId, $pivotExternalId);
+    });
+
+    test('it can manage source', function (): void {
+        // Arrange
+        $source = 'api_import';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('source', $source);
+
+        // Act
+        $pivotSource = $pivot->getAttribute('source');
+
+        // Assert
+        Assert::assertEquals($source, $pivotSource);
+    });
+
+    test('it can manage version', function (): void {
+        // Arrange
+        $version = '1.2.3';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('version', $version);
+
+        // Act
+        $pivotVersion = $pivot->getAttribute('version');
+
+        // Assert
+        Assert::assertEquals($version, $pivotVersion);
+    });
+
+    test('it can manage hash', function (): void {
+        // Arrange
+        $hash = 'abc123def456';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('hash', $hash);
+
+        // Act
+        $pivotHash = $pivot->getAttribute('hash');
+
+        // Assert
+        Assert::assertEquals($hash, $pivotHash);
+    });
+
+    test('it can manage checksum', function (): void {
+        // Arrange
+        $checksum = 'sha256:abc123def456';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('checksum', $checksum);
+
+        // Act
+        $pivotChecksum = $pivot->getAttribute('checksum');
+
+        // Assert
+        Assert::assertEquals($checksum, $pivotChecksum);
+    });
+
+    test('it can manage size', function (): void {
+        // Arrange
+        $size = 1024;
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('size', $size);
+
+        // Act
+        /** @var int $pivotSize */
+        $pivotSize = $pivot->getAttribute('size');
+
+        // Assert
+        Assert::assertEquals($size, $pivotSize);
+    });
+
+    test('it can manage mime type', function (): void {
+        // Arrange
+        $mimeType = 'application/json';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('mime_type', $mimeType);
+
+        // Act
+        $pivotMimeType = $pivot->getAttribute('mime_type');
+
+        // Assert
+        Assert::assertEquals($mimeType, $pivotMimeType);
+    });
+
+    test('it can manage encoding', function (): void {
+        // Arrange
+        $encoding = 'UTF-8';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('encoding', $encoding);
+
+        // Act
+        $pivotEncoding = $pivot->getAttribute('encoding');
+
+        // Assert
+        Assert::assertEquals($encoding, $pivotEncoding);
+    });
+
+    test('it can manage language', function (): void {
+        // Arrange
+        $language = 'en';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('language', $language);
+
+        // Act
+        $pivotLanguage = $pivot->getAttribute('language');
+
+        // Assert
+        Assert::assertEquals($language, $pivotLanguage);
+    });
+
+    test('it can manage locale', function (): void {
+        // Arrange
+        $locale = 'en_US';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('locale', $locale);
+
+        // Act
+        $pivotLocale = $pivot->getAttribute('locale');
+
+        // Assert
+        Assert::assertEquals($locale, $pivotLocale);
+    });
+
+    test('it can manage timezone', function (): void {
+        // Arrange
+        $timezone = 'Europe/Rome';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('timezone', $timezone);
+
+        // Act
+        $pivotTimezone = $pivot->getAttribute('timezone');
+
+        // Assert
+        Assert::assertEquals($timezone, $pivotTimezone);
+    });
+
+    test('it can manage currency', function (): void {
+        // Arrange
+        $currency = 'EUR';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('currency', $currency);
+
+        // Act
+        $pivotCurrency = $pivot->getAttribute('currency');
+
+        // Assert
+        Assert::assertEquals($currency, $pivotCurrency);
+    });
+
+    test('it can manage decimal places', function (): void {
+        // Arrange
+        $decimalPlaces = 2;
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('decimal_places', $decimalPlaces);
+
+        // Act
+        /** @var int $pivotDecimalPlaces */
+        $pivotDecimalPlaces = $pivot->getAttribute('decimal_places');
+
+        // Assert
+        Assert::assertEquals($decimalPlaces, $pivotDecimalPlaces);
+    });
+
+    test('it can manage rounding mode', function (): void {
+        // Arrange
+        $roundingMode = 'half_up';
+
+<<<<<<< HEAD
+        $pivot = new TestConcreteMorphPivot;
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> laraxot/dev
+        $pivot->setAttribute('rounding_mode', $roundingMode);
+
+        // Act
+        $pivotRoundingMode = $pivot->getAttribute('rounding_mode');
+
+        // Assert
+        Assert::assertEquals($roundingMode, $pivotRoundingMode);
     });
 });

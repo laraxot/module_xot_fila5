@@ -289,10 +289,32 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_G2HcfH
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_yvlwZM
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_NLSaSx
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qpMKiA
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_G2HcfH
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_yvlwZM
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_NLSaSx
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qpMKiA
     {
         return [
             Forms\Components\TextInput::make('nome')

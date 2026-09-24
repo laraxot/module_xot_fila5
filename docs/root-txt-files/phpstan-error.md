@@ -8,8 +8,22 @@ tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: phpstan-error.txt
 =======
+<<<<<<< .merge_file_zySWe5
 converted_from: phpstan_error.txt
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: phpstan_error.txt
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: phpstan-error.txt
+=======
+converted_from: phpstan_error.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jJJmzY
 created: 2026-08-24
 updated: 2026-08-24
 ---

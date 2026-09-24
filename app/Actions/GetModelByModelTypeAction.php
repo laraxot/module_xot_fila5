@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
@@ -27,9 +26,15 @@ class GetModelByModelTypeAction
         Assert::isAOf($model_class, Model::class);
 
         /** @var class-string<Model> $model_class */
+<<<<<<< HEAD
+        $model = $model_id !== null
+            ? $model_class::query()->find($model_id)
+            : new $model_class;
+=======
         $model = null !== $model_id
             ? $model_class::query()->find($model_id)
             : new $model_class();
+>>>>>>> laraxot/dev
 
         if (! $model instanceof Model) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');

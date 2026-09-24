@@ -239,10 +239,32 @@ class ExampleResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_T6jYyL
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_k5dnsY
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_yIl5DP
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2Xe0Jp
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_T6jYyL
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_k5dnsY
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_yIl5DP
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2Xe0Jp
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -518,10 +540,32 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_T6jYyL
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_k5dnsY
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_yIl5DP
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2Xe0Jp
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_T6jYyL
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_k5dnsY
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_yIl5DP
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2Xe0Jp
     {
         return [
             Forms\Components\TextInput::make('nome')

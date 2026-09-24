@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_y90dhv
+=======
+
+>>>>>>> .merge_file_YcnnA2
 return [
     'pages' => [
         'health_check_results' => [
