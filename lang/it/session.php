@@ -9,9 +9,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'session.navigation',
         'icon' => 'session.navigation',
         'sort' => 21,
+=======
+>>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -36,7 +39,10 @@ return [
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'id',
+=======
+>>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -50,6 +56,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
@@ -80,10 +87,13 @@ return [
             'helper_text' => 'last_activity',
             'description' => 'last_activity',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Session',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -111,6 +121,14 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Session',
+        ],
+        'delete' => [
+            'label' => 'Elimina Session',
+>>>>>>> laraxot/dev
         ],
     ],
 ];

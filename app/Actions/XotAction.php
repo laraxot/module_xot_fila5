@@ -20,5 +20,11 @@ class XotAction
         return Tenant::class;
     }
 
+<<<<<<< HEAD
     public function execute(): void {}
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> laraxot/dev
 }

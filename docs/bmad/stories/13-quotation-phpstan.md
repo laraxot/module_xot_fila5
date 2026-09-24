@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+---
+name: 13-quotation-phpstan
+description: "Modulo: Quotation"
+metadata:
+  type: bmad
+---
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # BMAD Story 13 — Quotation: 13 errori PHPStan
 
 **Modulo:** `Quotation`

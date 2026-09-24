@@ -12,9 +12,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'metatag.navigation',
         'icon' => 'metatag.navigation',
         'sort' => 95,
+=======
+>>>>>>> laraxot/dev
     ],
     'fields' => [
         'name' => [
@@ -224,21 +227,30 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'key',
+=======
+>>>>>>> laraxot/dev
         ],
         'color' => [
             'label' => 'color',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'color',
+=======
+>>>>>>> laraxot/dev
         ],
         'hex' => [
             'label' => 'hex',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'hex',
+=======
+>>>>>>> laraxot/dev
         ],
         'timezone' => [
             'label' => 'Fuso orario',
@@ -327,6 +339,7 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
+<<<<<<< HEAD
         'save' => [
             'label' => 'save',
             'icon' => 'save',
@@ -336,4 +349,9 @@ return [
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',
     'title' => 'metatag',
+=======
+    ],
+    'label' => 'Metatag',
+    'plural_label' => 'Metatag (Plurale)',
+>>>>>>> laraxot/dev
 ];

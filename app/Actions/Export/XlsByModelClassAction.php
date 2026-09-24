@@ -10,6 +10,10 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Actions\Model\GetTransKeyByModelClassAction;
+<<<<<<< HEAD
+=======
+// use Modules\Xot\Services\ArrayService;
+>>>>>>> laraxot/dev
 use Modules\Xot\Exports\CollectionExport;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -22,11 +26,19 @@ class XlsByModelClassAction
     /**
      * Esporta i dati di un modello in Excel.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass  Classe del modello da esportare
      * @param  array<string, mixed>  $where  Condizioni where per la query
      * @param  array<int, string>  $includes  Relazioni o campi da includere
      * @param  array<int, string>  $excludes  Campi da escludere
      * @param  callable(array<string, mixed>|Model, int): mixed|null  $callback  Callback per manipolare i dati
+=======
+     * @param string               $modelClass Classe del modello da esportare
+     * @param array<string, mixed> $where      Condizioni where per la query
+     * @param array<int, string>   $includes   Relazioni o campi da includere
+     * @param array<int, string>   $excludes   Campi da escludere
+     * @param callable|null        $callback   Callback per manipolare i dati
+>>>>>>> laraxot/dev
      */
     public function execute(
         string $modelClass,
@@ -56,8 +68,13 @@ class XlsByModelClassAction
         $rows = $query->get();
 
         // Filtriamo i campi se sono specificati gli includes
+<<<<<<< HEAD
         if ($includes !== []) {
             $rows = $rows->map(static function (Model $item) use ($includes) {
+=======
+        if ([] !== $includes) {
+            $rows = $rows->map(static function ($item) use ($includes) {
+>>>>>>> laraxot/dev
                 $data = [];
                 foreach ($includes as $include) {
                     $data[$include] = data_get($item, $include);
@@ -67,6 +84,7 @@ class XlsByModelClassAction
             });
         }
 
+<<<<<<< HEAD
         if ($excludes !== []) {
             $rows = $rows->map(static fn (Model|array $item): Model|array => $item instanceof Model ? $item->makeHidden($excludes) : $item);
         }
@@ -74,11 +92,32 @@ class XlsByModelClassAction
         // Applichiamo il callback se fornito
         if ($callback !== null) {
             $rows = $rows->map($this->rowCallback($callback));
+=======
+        // Nascondiamo i campi esclusi
+        if ([] !== $excludes) {
+            $rows = $rows->map(function ($item) use ($excludes) {
+                if (is_object($item) && method_exists($item, 'makeHidden')) {
+                    /* @var Model $item */
+                    return $item->makeHidden($excludes);
+                }
+
+                return $item;
+            });
+        }
+
+        // Applichiamo il callback se fornito
+        if (null !== $callback) {
+            $rows = $rows->map($callback);
+>>>>>>> laraxot/dev
         }
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
+<<<<<<< HEAD
         /** @var Collection<int|string, mixed> $exportRows */
+=======
+        /** @var Collection<int, mixed> $exportRows */
+>>>>>>> laraxot/dev
         $exportRows = $rows;
         $collectionExport = new CollectionExport($exportRows, $transKey);
         $filename = $this->getExportName($modelClass);
@@ -87,6 +126,7 @@ class XlsByModelClassAction
     }
 
     /**
+<<<<<<< HEAD
      * @param  callable(array<string, mixed>|Model, int): mixed  $callback
      * @return \Closure(Model|array<array-key, mixed>, int): mixed
      */
@@ -113,6 +153,12 @@ class XlsByModelClassAction
      * Ottiene le relazioni da caricare in base ai campi inclusi.
      *
      * @param  array<int, string>  $includes  Campi da includere
+=======
+     * Ottiene le relazioni da caricare in base ai campi inclusi.
+     *
+     * @param array<int, string> $includes Campi da includere
+     *
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     private function getWithByIncludes(array $includes): array
@@ -140,7 +186,11 @@ class XlsByModelClassAction
     /**
      * Genera il nome del file di export.
      *
+<<<<<<< HEAD
      * @param  string  $modelClass  Classe del modello
+=======
+     * @param string $modelClass Classe del modello
+>>>>>>> laraxot/dev
      */
     private function getExportName(string $modelClass): string
     {

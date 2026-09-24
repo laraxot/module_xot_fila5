@@ -55,7 +55,11 @@ trait NavigationLabelTrait
 
         $value = intval($res);
 
+<<<<<<< HEAD
         if ($value === 0) {
+=======
+        if (0 === $value) {
+>>>>>>> laraxot/dev
             $key = static::getKeyTransFunc(__FUNCTION__);
             $value = rand(1, 100);
             app(SaveTransAction::class)->execute($key, $value);

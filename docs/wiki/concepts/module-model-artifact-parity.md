@@ -1,15 +1,37 @@
 ---
 type: concept
 module: Xot
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
 updated: 2026-06-30
 qmd: "xot module model migration factory seeder parity audit N equals N"
 related:
   - ../../../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md
   - ../../module-directory-structure-rule.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+updated: 2026-06-05
+qmd: "xot module model migration factory seeder parity audit cross module"
+>>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
 ---
 
 # Module model artifact parity
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## Regola N = N = N
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
@@ -47,6 +69,14 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 ## Collegamenti
 
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+<<<<<<< HEAD
+=======
+=======
+## Scopo
+=======
+## Regola N = N = N
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
 
@@ -82,8 +112,19 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 - [module-directory-structure-rule.md](../../module-directory-structure-rule.md)
 - [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
 - [data-sacred](../../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md)
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+=======
+<<<<<<< HEAD
+- [module-directory-structure-rule.md](../../module-directory-structure-rule.md)
+- [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
+- [data-sacred](../../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md)
+>>>>>>> 64619e34 (.)
+=======
+- [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev

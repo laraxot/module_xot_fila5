@@ -152,4 +152,8 @@ public function canDeleteBulk(Model|\stdClass $record): bool
 - Mantenere backward compatibility
 - Non rompere funzionalità esistente
 - Seguire convenzioni Filament
+<<<<<<< HEAD
 - Documentare cambiamenti
+=======
+- Documentare cambiamenti
+>>>>>>> laraxot/dev

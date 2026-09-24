@@ -142,7 +142,11 @@ Il comando `GenerateFilamentResources` genera automaticamente resources per tutt
 ## Collegamenti e Riferimenti
 
 - [XotBasePage getModel() Fix](./xotbasepage-getmodel-fix.md)
+<<<<<<< HEAD
 - [Architettura Laraxot](README.md)
+=======
+- [Architettura Laraxot](../readme.md)
+>>>>>>> laraxot/dev
 - [Comando GenerateFilamentResources](../../app/Console/Commands/GenerateFilamentResources.php)
 - [Documentazione Filament](https://filamentphp.com/docs)
 
@@ -160,4 +164,8 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 2. Aggiornare i metodi utilizzati
 3. Testare in ambiente di sviluppo
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> laraxot/dev

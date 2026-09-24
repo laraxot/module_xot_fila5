@@ -5,10 +5,18 @@ declare(strict_types=1);
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\json_encode;
 
+=======
+
+use function Safe\json_encode;
+
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+
+>>>>>>> laraxot/dev
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
  *
@@ -18,8 +26,11 @@ use function Safe\json_encode;
  * @property SchemalessAttributes|null $extra_attributes
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
+<<<<<<< HEAD
  *
  * @phpstan-ignore trait.unused
+=======
+>>>>>>> laraxot/dev
  */
 trait HasSchemalessAttributes
 {
@@ -53,7 +64,12 @@ trait HasSchemalessAttributes
     /**
      * Scope per filtrare per attributi schemaless.
      *
+<<<<<<< HEAD
      * @param  Builder<static>  $query
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -68,8 +84,13 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
+<<<<<<< HEAD
      * @param  Builder<static>  $query
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
@@ -100,9 +121,12 @@ trait HasSchemalessAttributes
 
     /**
      * Get un valore da extra_attributes.
+<<<<<<< HEAD
      *
      * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
+=======
+>>>>>>> laraxot/dev
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {
@@ -111,8 +135,11 @@ trait HasSchemalessAttributes
 
     /**
      * Set un valore in extra_attributes.
+<<<<<<< HEAD
      *
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
+=======
+>>>>>>> laraxot/dev
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {

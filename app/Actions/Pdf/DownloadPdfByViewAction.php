@@ -21,9 +21,15 @@ class DownloadPdfByViewAction
     /**
      * Genera PDF dalla view e restituisce StreamedResponse per il download.
      *
+<<<<<<< HEAD
      * @param  string  $view  Nome view (es. indennita-responsabilita::indennita_responsabilita.index.pdf)
      * @param  array<string, mixed>  $viewParams  Dati per la view (es. ['rows' => $rows])
      * @param  string|null  $filename  Nome file per il download (opzionale)
+=======
+     * @param string               $view       Nome view (es. indennita-responsabilita::indennita_responsabilita.index.pdf)
+     * @param array<string, mixed> $viewParams Dati per la view (es. ['rows' => $rows])
+     * @param string|null          $filename   Nome file per il download (opzionale)
+>>>>>>> laraxot/dev
      */
     public function execute(
         string $view,

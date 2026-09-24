@@ -10,7 +10,11 @@ final class SafeNullableStringCastAction
     {
         $stringValue = SafeStringCastAction::cast($value);
 
+<<<<<<< HEAD
         return $stringValue !== '' ? $stringValue : null;
+=======
+        return '' !== $stringValue ? $stringValue : null;
+>>>>>>> laraxot/dev
     }
 
     public static function cast(mixed $value): ?string

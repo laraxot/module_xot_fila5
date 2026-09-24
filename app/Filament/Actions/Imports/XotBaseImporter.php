@@ -12,4 +12,20 @@ use Filament\Actions\Imports\Importer as FilamentImporter;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's Importer to provide a XotBase layer.
  */
+<<<<<<< HEAD
 abstract class XotBaseImporter extends FilamentImporter {}
+=======
+<<<<<<< HEAD
+abstract class XotBaseImporter extends FilamentImporter
+{
+}
+=======
+<<<<<<< HEAD
+abstract class XotBaseImporter extends FilamentImporter
+{
+}
+=======
+abstract class XotBaseImporter extends FilamentImporter {}
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

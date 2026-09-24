@@ -1,6 +1,10 @@
 # Workflow Analisi PHPStan
 
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)
+<<<<<<< HEAD
+=======
+> **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](documentation_management.md)
+>>>>>>> laraxot/dev
 
 ## REGOLE FONDAMENTALI
 - ⚠️ **NON INTERROMPERE MAI L'ANALISI** finché non si raggiunge il livello 7
@@ -60,7 +64,11 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
+<<<<<<< HEAD
      base_predict_fila3_mono/
+=======
+     base_<nome progetto>_fila5_mono/
+>>>>>>> laraxot/dev
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
@@ -165,4 +173,8 @@ class MyModel extends BaseModel
      - Docs del modulo specifico
      - .cursor/rules per Cursor AI
      - .windsurfrules per Windsurf
+<<<<<<< HEAD
    - Mantenere coerenza tra le diverse documentazioni
+=======
+   - Mantenere coerenza tra le diverse documentazioni
+>>>>>>> laraxot/dev

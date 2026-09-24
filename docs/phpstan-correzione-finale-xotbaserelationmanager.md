@@ -91,4 +91,8 @@ Il file passa PHPStan livello max senza errori, mantenendo:
 - ✅ Backward compatibility
 - ✅ Funzionalità esistente
 - ✅ Pattern consistency con XotBaseResource
+<<<<<<< HEAD
 - ✅ Type safety migliorata
+=======
+- ✅ Type safety migliorata
+>>>>>>> laraxot/dev

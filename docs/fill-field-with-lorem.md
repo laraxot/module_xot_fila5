@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //------- IMMAGINI --------
 https://placeimg.com/640/480/arch
 https://picsum.photos/
@@ -81,4 +82,6 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+=======
+>>>>>>> laraxot/dev
 

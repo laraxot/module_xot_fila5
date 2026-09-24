@@ -59,6 +59,25 @@ class CommandRegistry
      */
     private function registerDefaultHandlers(): void
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+        $this->register(new MigrationCommandHandler())
+            ->register(new CacheCommandHandler())
+            ->register(new RouteCommandHandler())
+            ->register(new ViewCommandHandler())
+            ->register(new ErrorCommandHandler())
+            ->register(new ModuleCommandHandler())
+            ->register(new OptimizeCommandHandler())
+            ->register(new QueueCommandHandler())
+            ->register(new DebugbarCommandHandler());
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
         $this->register(new MigrationCommandHandler)
             ->register(new CacheCommandHandler)
             ->register(new RouteCommandHandler)
@@ -68,5 +87,10 @@ class CommandRegistry
             ->register(new OptimizeCommandHandler)
             ->register(new QueueCommandHandler)
             ->register(new DebugbarCommandHandler);
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 }

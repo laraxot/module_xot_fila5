@@ -1,14 +1,26 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+>>>>>>> laraxot/dev
 use Filament\Resources\Pages\Page;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -16,7 +28,10 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
@@ -24,17 +39,29 @@ use Webmozart\Assert\Assert;
  *
  * @property Model $record
  */
+<<<<<<< HEAD
 class ExportTreeXlsAction extends XotBaseAction
+=======
+class ExportTreeXlsAction extends Action
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {
         parent::setUp();
         $this->translateLabel()
+<<<<<<< HEAD
             //->tooltip(__('xot::actions.export_xls'))
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('xot-files.xls')
             ->action(static function (Page $livewire, Model $record, array $_data) {
+=======
+            ->tooltip(__('xot::actions.export_xls'))
+            // ->icon('heroicon-o-cloud-arrow-down')
+            // ->icon('fas-file-excel')
+            ->icon('heroicon-o-arrow-down-tray')
+            ->action(static function (Page $livewire, Model $record, $_data) {
+>>>>>>> laraxot/dev
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];

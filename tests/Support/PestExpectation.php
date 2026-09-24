@@ -15,11 +15,20 @@ final class PestExpectation
     public function __construct(
         private readonly mixed $value,
         private readonly bool $negated = false,
+<<<<<<< HEAD
     ) {}
 
     public function __get(string $name): self
     {
         if ($name === 'not') {
+=======
+    ) {
+    }
+
+    public function __get(string $name): self
+    {
+        if ('not' === $name) {
+>>>>>>> laraxot/dev
             return $this->not();
         }
 
@@ -36,41 +45,75 @@ final class PestExpectation
         return new self($value);
     }
 
+<<<<<<< HEAD
     public function toBe(mixed $expected, string $message = ''): self
     {
         $this->negated
             ? Assert::assertNotSame($expected, $this->value, $message)
             : Assert::assertSame($expected, $this->value, $message);
+=======
+    public function toBe(mixed $expected): self
+    {
+        $this->negated
+            ? Assert::assertNotSame($expected, $this->value)
+            : Assert::assertSame($expected, $this->value);
+>>>>>>> laraxot/dev
 
         return $this;
     }
 
+<<<<<<< HEAD
     public function toEqual(mixed $expected, string $message = ''): self
     {
         $this->negated
             ? Assert::assertNotEquals($expected, $this->value, $message)
             : Assert::assertEquals($expected, $this->value, $message);
+=======
+    public function toEqual(mixed $expected): self
+    {
+        $this->negated
+            ? Assert::assertNotEquals($expected, $this->value)
+            : Assert::assertEquals($expected, $this->value);
+>>>>>>> laraxot/dev
 
         return $this;
     }
 
+<<<<<<< HEAD
     public function toBeTrue(string $message = ''): self
     {
         $this->negated ? Assert::assertNotTrue($this->value, $message) : Assert::assertTrue($this->value, $message);
+=======
+    public function toBeTrue(): self
+    {
+        $this->negated ? Assert::assertNotTrue($this->value) : Assert::assertTrue($this->value);
+>>>>>>> laraxot/dev
 
         return $this;
     }
 
+<<<<<<< HEAD
     public function toBeFalse(string $message = ''): self
     {
         $this->negated ? Assert::assertNotFalse($this->value, $message) : Assert::assertFalse($this->value, $message);
+=======
+    public function toBeFalse(): self
+    {
+        $this->negated ? Assert::assertNotFalse($this->value) : Assert::assertFalse($this->value);
+>>>>>>> laraxot/dev
 
         return $this;
     }
 
+<<<<<<< HEAD
     public function toBeNull(string $message = ''): self
     {
         $this->negated ? Assert::assertNotNull($this->value, $message) : Assert::assertNull($this->value, $message);
+=======
+    public function toBeNull(): self
+    {
+        $this->negated ? Assert::assertNotNull($this->value) : Assert::assertNull($this->value);
+>>>>>>> laraxot/dev
 
         return $this;
     }
@@ -129,6 +172,7 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  class-string  $expectedClass
      */
     public function toBeInstanceOf(string $expectedClass, string $message = ''): self
@@ -136,19 +180,39 @@ final class PestExpectation
         $this->negated
             ? Assert::assertNotInstanceOf($expectedClass, $this->value, $message)
             : Assert::assertInstanceOf($expectedClass, $this->value, $message);
+=======
+     * @param class-string $expectedClass
+     */
+    public function toBeInstanceOf(string $expectedClass): self
+    {
+        $this->negated
+            ? Assert::assertNotInstanceOf($expectedClass, $this->value)
+            : Assert::assertInstanceOf($expectedClass, $this->value);
+>>>>>>> laraxot/dev
 
         return $this;
     }
 
+<<<<<<< HEAD
     public function toHaveCount(int $count, string $message = ''): self
     {
         if ($this->negated) {
             Assert::assertNotCount($count, $this->normaliseCountable($this->value), $message);
+=======
+    public function toHaveCount(int $count): self
+    {
+        if ($this->negated) {
+            Assert::assertNotCount($count, $this->normaliseCountable($this->value));
+>>>>>>> laraxot/dev
 
             return $this;
         }
 
+<<<<<<< HEAD
         Assert::assertCount($count, $this->normaliseCountable($this->value), $message);
+=======
+        Assert::assertCount($count, $this->normaliseCountable($this->value));
+>>>>>>> laraxot/dev
 
         return $this;
     }
@@ -173,7 +237,11 @@ final class PestExpectation
         return $this;
     }
 
+<<<<<<< HEAD
     public function toHaveKey(mixed $key, mixed $value = null, string $message = ''): self
+=======
+    public function toHaveKey(mixed $key): self
+>>>>>>> laraxot/dev
     {
         if (! is_int($key) && ! is_string($key)) {
             Assert::fail('Expected key must be an integer or string.');
@@ -181,13 +249,18 @@ final class PestExpectation
 
         if ($this->value instanceof \ArrayAccess) {
             $exists = $this->value->offsetExists($key);
+<<<<<<< HEAD
             $this->negated ? Assert::assertFalse($exists, $message) : Assert::assertTrue($exists, $message);
+=======
+            $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
+>>>>>>> laraxot/dev
 
             return $this;
         }
 
         Assert::assertIsArray($this->value);
         $this->negated
+<<<<<<< HEAD
             ? Assert::assertArrayNotHasKey($key, $this->value, $message)
             : Assert::assertArrayHasKey($key, $this->value, $message);
 
@@ -195,12 +268,20 @@ final class PestExpectation
             Assert::assertArrayHasKey($key, (array) $this->value);
             Assert::assertEquals($value, ((array) $this->value)[$key], $message);
         }
+=======
+            ? Assert::assertArrayNotHasKey($key, $this->value)
+            : Assert::assertArrayHasKey($key, $this->value);
+>>>>>>> laraxot/dev
 
         return $this;
     }
 
     /**
+<<<<<<< HEAD
      * @param  iterable<array-key>  $keys
+=======
+     * @param iterable<array-key> $keys
+>>>>>>> laraxot/dev
      */
     public function toHaveKeys(iterable $keys): self
     {
@@ -217,7 +298,11 @@ final class PestExpectation
         $exists = property_exists($this->value, $property) || isset($this->value->{$property});
         $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
 
+<<<<<<< HEAD
         if (func_num_args() === 2 && ! $this->negated) {
+=======
+        if (2 === func_num_args() && ! $this->negated) {
+>>>>>>> laraxot/dev
             Assert::assertEquals($expectedValue, $this->value->{$property});
         }
 
@@ -225,7 +310,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  iterable<string>  $properties
+=======
+     * @param iterable<string> $properties
+>>>>>>> laraxot/dev
      */
     public function toHaveProperties(iterable $properties): self
     {
@@ -246,7 +335,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $expectedSubset
+=======
+     * @param array<array-key, mixed> $expectedSubset
+>>>>>>> laraxot/dev
      */
     public function toMatchArray(array $expectedSubset): self
     {
@@ -314,7 +407,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  iterable<mixed>  $expectedValues
+=======
+     * @param iterable<mixed> $expectedValues
+>>>>>>> laraxot/dev
      */
     public function toBeIn(iterable $expectedValues): self
     {
@@ -328,7 +425,11 @@ final class PestExpectation
 
     public function toStartWith(string $prefix): self
     {
+<<<<<<< HEAD
         if ($prefix === '') {
+=======
+        if ('' === $prefix) {
+>>>>>>> laraxot/dev
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -341,7 +442,11 @@ final class PestExpectation
 
     public function toEndWith(string $suffix): self
     {
+<<<<<<< HEAD
         if ($suffix === '') {
+=======
+        if ('' === $suffix) {
+>>>>>>> laraxot/dev
             Assert::fail('Expected a non-empty suffix.');
         }
 

@@ -253,9 +253,13 @@ use Filament\Forms\Components\TextInput;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -297,9 +301,13 @@ class UserModerationResource extends XotBaseResource
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -907,4 +915,8 @@ php artisan view:clear
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< HEAD
 *Categoria: Best Practices*
+=======
+*Categoria: Best Practices*
+>>>>>>> laraxot/dev

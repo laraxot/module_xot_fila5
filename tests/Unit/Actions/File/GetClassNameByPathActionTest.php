@@ -1,15 +1,25 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetClassNameByPathAction;
 use Modules\Xot\Tests\TestCase;
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Illuminate\Support\Facades\File;
+use Modules\Xot\Actions\File\GetClassNameByPathAction;
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\tempnam;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
+=======
+>>>>>>> laraxot/dev
 it('gets class name from path correctly', function (): void {
     $tempFile = tempnam(sys_get_temp_dir(), 'test_class_');
     $tempPath = $tempFile.'.php';

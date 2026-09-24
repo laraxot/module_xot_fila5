@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 'Pivot'
 module: Xot
@@ -13,6 +14,11 @@ updated: 2026-08-24
 https://github.com/larastan/larastan/issues/515
 
 **
+=======
+//https://github.com/larastan/larastan/issues/515
+
+/**
+>>>>>>> laraxot/dev
  * @extends JsonResource<\App\User>
 */
 class UserResource extends JsonResource
@@ -30,6 +36,7 @@ class UserResource extends JsonResource
       }
 }
 
+<<<<<<< HEAD
 ## Appendice — contenuto migrato
 
 ---
@@ -77,11 +84,29 @@ getRelationValue("pivot")
 $dpia = request()->route('dpias');
 $dpia = app('request')->route('dpias');
 
+=======
+ //return $this->pivot->time_to_live;  // This is the line 45
+
+getRelationValue("pivot")
+
+
+
+$dpia = request()->route('dpias');
+$dpia = app('request')->route('dpias');
+///////////////////////
+>>>>>>> laraxot/dev
 /**
  * @property int $id
  */
 class MyCustomModel extends Model {}
+<<<<<<< HEAD
 ```
 
 - `getModel` - Builder
 - `paginate` - Builder
+=======
+////////////////////
+
+getModel - Builder
+paginate - Builder
+>>>>>>> laraxot/dev

@@ -18,7 +18,19 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
+<<<<<<< HEAD
       public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),

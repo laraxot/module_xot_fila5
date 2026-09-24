@@ -1,5 +1,9 @@
 # Code Quality Audit Completo - Gennaio 2025
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-22
+>>>>>>> laraxot/dev
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -23,6 +27,10 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 ## 📋 Moduli con Documentazione Qualità
 
 ### ✅ Completati
+<<<<<<< HEAD
+=======
+- **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
+>>>>>>> laraxot/dev
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
   - PHPStan: 0 errori
   - PHPDoc: Completo
@@ -91,4 +99,8 @@ Ogni modulo dovrebbe avere:
 - La documentazione viene aggiornata costantemente durante l'analisi
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> laraxot/dev

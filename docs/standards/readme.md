@@ -125,3 +125,7 @@ class Doctor extends User
 
 ## Moduli che applicano questa regola
 // Aggiungere qui altri moduli se necessario
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev

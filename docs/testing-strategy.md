@@ -19,8 +19,20 @@ This document outlines our testing strategy that uses MySQL as the test database
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
+<<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=test_database
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+DB_DATABASE=test_database
+=======
+DB_DATABASE=<nome progetto>_data_test
+>>>>>>> a01602c7 (.)
+=======
+DB_DATABASE=test_database
+>>>>>>> 64619e34 (.)
+>>>>>>> laraxot/dev
 DB_USERNAME=root
 DB_PASSWORD=
 ```

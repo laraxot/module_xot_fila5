@@ -116,4 +116,8 @@ Stessa soluzione per `canDetachBulk()`.
 
 1. **Component Import**: Usare `Filament\Support\Components\Component` (non `Filament\Forms\Components\Component`)
 2. **Schema::components()**: Accetta union type complesso, Component è compatibile
+<<<<<<< HEAD
 3. **stdClass nei bulk actions**: Filament usa stdClass per performance, gestirlo appropriatamente
+=======
+3. **stdClass nei bulk actions**: Filament usa stdClass per performance, gestirlo appropriatamente
+>>>>>>> laraxot/dev

@@ -8,9 +8,12 @@ use Filament\Pages\Dashboard as FilamentDashboard;
 
 abstract class XotBaseDashboard extends FilamentDashboard
 {
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> laraxot/dev
     public function getWidgets(): array
     {
         return [

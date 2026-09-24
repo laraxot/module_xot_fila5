@@ -1,6 +1,10 @@
 # Module Path Generation - Philosophy and Business Logic
 
 **Data Creazione**: 2026-01-02
+<<<<<<< HEAD
+=======
+**Data Creazione**: [DATE]
+>>>>>>> laraxot/dev
 **Status**: 📚 Foundation Document
 **Versione**: 1.0.0
 
@@ -89,4 +93,8 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
+=======
+**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
+>>>>>>> laraxot/dev

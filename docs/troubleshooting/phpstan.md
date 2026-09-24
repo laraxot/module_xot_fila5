@@ -172,3 +172,8 @@ Per ulteriori dettagli sulle soluzioni ai problemi di PHPStan, consulta:
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Modulo Xot - Documentazione PHPStan](../laravel/Modules/Xot/docs/PHPStan/PHPSTAN-SOLUTIONS.md)
 - [Modulo Xot - Correzioni PDO](../laravel/Modules/Xot/docs/PHPStan/PDO_CONSTANTS_FIXES.md)
+<<<<<<< HEAD
+=======
+- [Modulo Xot - Documentazione PHPStan](../laravel/modules/xot/docs/phpstan/phpstan-solutions.md)
+- [Modulo Xot - Correzioni PDO](../laravel/modules/xot/docs/phpstan/pdo_constants_fixes.md)
+>>>>>>> laraxot/dev

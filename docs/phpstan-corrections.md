@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan - Modulo Xot
 
 ## Panoramica
@@ -194,3 +195,12 @@ $averageTime = $count > 0 ? $totalTime / $count : 0.0;
 - [Architettura Modulo Xot](../architecture.md)
 - [Guida PHPStan](../../../docs/phpstan-guide.md)
 - [Best Practices Laraxot](../../../docs/laraxot-best-practices.md)
+=======
+---
+module: theme
+topic: phpstan-corrections
+canonical: ../../../Themes/docs/shared-components/phpstan-corrections-january-2026.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-january-2026.md
+>>>>>>> laraxot/dev

@@ -106,10 +106,18 @@ Prima di considerare completo un Panel Provider, verificare:
 ## Riferimenti
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
+<<<<<<< HEAD
 - [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
+=======
+- [Panel Provider Rules](../../../docs/filament/filament_panel_provider_rules.md)
+>>>>>>> laraxot/dev
 - [XotBasePanelProvider Source](../app/Providers/Filament/XotBasePanelProvider.php)
 - [XotBaseMainPanelProvider Source](../app/Providers/Filament/XotBaseMainPanelProvider.php)
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> laraxot/dev

@@ -19,7 +19,15 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
+<<<<<<< HEAD
 - [docs root](../../../../docs/actions.md)
 - [docs Lang](../../Lang/docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
+=======
+- [docs Lang](../../Lang/docs/filament-label.md)
+
+Ultimo aggiornamento: maggio 2025.
+- [docs root](../../../../../docs/actions.md)
+- [docs Lang](../../lang/docs/filament-label.md)
+>>>>>>> laraxot/dev

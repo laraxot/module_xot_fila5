@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 <x-filament-widgets::widget class="fi-wi-infolist">
     @if ($this->getInfolistRecord())

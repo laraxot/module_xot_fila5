@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 {{-- CSS Base per PDF - Componente riutilizzabile --}}
 {{-- 

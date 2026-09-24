@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Activity Log"
 type: log
 module: Xot
@@ -27,6 +28,13 @@ discussions:
 - Concept: [no-domain-actions-in-xot.md](concepts/no-domain-actions-in-xot.md)
 - Rimosse/spostate: AI/Ollama → AI, ContextCompressor → AI, Geo duplicati eliminati
 - Root: `domain-actions-belong-to-domain-module` · skill `xot-is-framework-base`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+
+>>>>>>> laraxot/dev
 
 ## [2026-06-30] governance | no legacy folders + model seeder parity
 
@@ -40,6 +48,10 @@ discussions:
 - Seeder parity: User 37/37, Job 15/15, Predict 16/16, Lang OK
 - Backlog: consolidamento migrazioni duplicate (GAP migration)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 title: "Activity Log"
 type: log
 module: Xot
@@ -50,6 +62,12 @@ qmd: "Xot log phpstan pest bridge discipline ponytail audit"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
   - "https://github.com/laraxot/base_predict_fila5/issues/237"
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
 title: "Activity Log"
 type: log
 module: Xot
@@ -59,10 +77,25 @@ updated: 2026-06-30
 qmd: "Xot log phpstan pest bridge discipline ponytail audit"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 64619e34 (.)
+=======
+  - "https://github.com/laraxot/base_predict_fila5/issues/237"
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.
@@ -81,6 +114,31 @@ discussions:
 - §6.1: tabella fix PHPStan + link `phpstan-trait-probes.md`; pattern Spatie `insteadof` su `BaseUser`.
 - `run-session-gate.sh` allineato a §1.6.
 
+<<<<<<< HEAD
+=======
+**Ultimo run:** 2026-06-30 run #4 (remediation wave — lang, test, seeders, wire-elements)
+
+## [2026-06-30] parità modello — 1 migrazione + 1 seeder (repo-wide)
+
+- Regola canonica: [module-model-migration-seeder-parity.md](../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md)
+- Script: `ensure-module-entity-seeders.sh` (+~120 stub), `audit-module-artifact-parity.sh`
+- Seeder parity OK: User 37/37, Job 15/15, Predict 16/16, Lang 3/3
+- Backlog: migrazioni duplicate `add_*` / `create_*` multipli (GAP migration resta su 12+ moduli)
+- Gate: `run-session-gate.sh` §1.1c
+
+## [2026-06-30] regola no-Legacy folders — User lang + Predict seeders
+
+- **Mai** cartelle `Legacy/`, `archive.bak/` nel codice — solo `.bak` in-place ([no-legacy-folders-code.md](../../../../docs/wiki/concepts/no-legacy-folders-code.md))
+- User: rimossa `lang/archive.bak/` → `lang/{locale}/*.php.bak` — [lang-backup-in-place.md](../../User/docs/wiki/concepts/lang-backup-in-place.md)
+- Predict: seeders ad-hoc flat `database/seeders/*.php.bak` (no `Legacy/`)
+
+## [2026-06-30] ponytail wave 4 — remediation audit
+
+- Test naming: 12 duplicati → `.php.bak`; Tenant `DomainTest.php`
+- Predict: `wire-elements/pro.bak`, PHPStan 0
+- Hub: [ponytail-audit.md](../../../../docs/audit/ponytail-audit.md) run #4
+
+>>>>>>> laraxot/dev
 ## [2026-06-30] prompts | start.txt v15 — baseline PHPStan 0 + Spatie teams
 
 - **PHPStan:** `Modules/` a **0 errori** (level max, ~5357 file) — regola gate aggiornata: mantenere baseline, non ~25 backlog.
@@ -169,14 +227,24 @@ discussions:
 
 - `start.txt` v6: hub [llm-wiki.md](../../../../../../docs/wiki/index/llm-wiki.md), [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md), [quality-gate-canonical-commands.md](../../../../../../docs/wiki/concepts/quality-gate-canonical-commands.md).
 - Gate §1.5 `guard-model-policy-delete.sh`; §1.4 `laravel-model-policies-sacred.mdc`; fallback `grep` se `rg` assente.
+<<<<<<< HEAD
 - Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
+=======
+- Prompt fratelli con `<<<<<<<`: WARN (non bloccante sessione); solo `start.txt`/`rules.txt` bloccanti.
+- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
+>>>>>>> laraxot/dev
 - `prompts/README.md`: `start.txt` come primo step Quick Start.
 
 ## [2026-06-30] prompts | start.txt v5 — gate infrastruttura e igiene
 
 - `start.txt` v5: sezioni `.claude` junction, ponytail, ponytail-audit hub, policy/actions protetti, fallback PHPStan modulo/file, anti-append ricorsivo.
 - `rules.txt`: conflitti Git risolti forward-only; allineato a policy stub + Queueable Actions + migrations.
+<<<<<<< HEAD
 - Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
+=======
+- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `<<<<<<<` (esclusi start.txt e rules.txt); runtime PSR-4 ok; composer skeleton ok; PHPStan full-scan timeout/output binario noto.
+
+>>>>>>> laraxot/dev
 ## [2026-06-30] prompts | start.txt v4 — gate one-shot e igiene prompt
 
 - `start.txt` v4: blocco **gate rapido one-shot**, regola igiene (no append query utente), `find -mindepth 1` per audit cartelle, link a `module-root-php-folders-forbidden.md`, `start.txt` canonico se `rules.txt` in conflitto.
@@ -193,10 +261,30 @@ discussions:
 - Nuova pagina Xot: [`composer-merge-plugin-modules-only.md`](concepts/composer-merge-plugin-modules-only.md).
 - Raw confronto aggiornato: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## [2026-06-30] composer | gate start.txt + autoload runtime temi
 
 - Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
 - Action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
+<<<<<<< HEAD
+=======
+=======
+## [2026-06-30] composer | gate start.txt + autoload runtime temi
+
+- Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
+- Nuova action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
+- Aggiornato `bashscripts/tools/prompts/start.txt` con gate, tabelle e verifica `jq`.
+>>>>>>> 64619e34 (.)
+=======
+## [2026-06-30] composer | gate start.txt + autoload runtime temi
+
+- Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
+- Action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
 - Pagina: [`theme-psr4-autoload-without-merge.md`](concepts/theme-psr4-autoload-without-merge.md).
 
 ## [2026-06-30] composer | root skeleton allineato a FixCity
@@ -237,7 +325,11 @@ discussions:
 ## [2026-06-13] docs | Hub platform-completion-roadmap + gate PHPStan zero
 
 - Creato [overviews/platform-completion-roadmap.md](overviews/platform-completion-roadmap.md) — SSoT completamento 16 moduli + 4 temi.
+<<<<<<< HEAD
 - Aggiornati [phpstan-best-practices.md](phpstan-best-practices.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+=======
+- Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+>>>>>>> laraxot/dev
 - Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
 - Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
@@ -246,13 +338,20 @@ discussions:
 - Aggiunto `rules/pest-global-class-imports.md`.
 - Durante STORY-345 i run coverage hanno evidenziato warning PHP da `use ReflectionClass;` in test senza namespace.
 - Regola: rimuovere l'import globale inutile; l'uso diretto `new ReflectionClass(...)` resta valido nei file global namespace.
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 ## [2026-06-10] testing | Module TestCase XotBase hierarchy
 
 - Aggiunto `rules/module-testcase-xotbase-hierarchy.md`.
 - Decisione verificata: XotBaseTestCase non estende `Nwidart\Modules\Tests\BaseTestCase` perche' la classe non esiste in `nwidart/laravel-modules v13.0.0`.
 - Activity/Xot TestCase usano XotBaseTestCase; transazioni e connessioni restano nei TestCase dei moduli.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ## [2026-06-10] testing | module TestCase hierarchy XotBase
 
 - Canon: `Modules/<Module>/tests/TestCase.php` -> `Modules\Xot\Tests\XotBaseTestCase` -> `Illuminate\Foundation\Testing\TestCase`.
@@ -265,7 +364,11 @@ discussions:
 - Aggiunto `concepts/phpstan-pest-bridge-discipline.md`.
 - Xot puo' ospitare helper/bridge riusabili, ma i test dei moduli restano Pest e `laravel/phpstan.neon` resta dell'utente.
 
+<<<<<<< HEAD
 ## [2026-06-07] phpstan | DTO concrete factory self per run Modules no-flag
+=======
+## [2026-06-07] phpstan | DTO factory self per run Modules no-flag
+>>>>>>> laraxot/dev
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules` -> **4993 file, [OK] No errors**.
 - DTO Xot concreti: factory `make()` con ritorno `self` e `new self()`, evitando `new static()` e PHPDoc `@var static` usati solo per placare PHPStan.
@@ -282,11 +385,28 @@ discussions:
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
+<<<<<<< HEAD
+=======
+---
+title: "Activity Log"
+module: "Xot"
+---
+
+# Activity Log — Xot
+
+>>>>>>> laraxot/dev
 ## [2026-06-05] docs | AI harness canon + stub moduli allineati
 
 - [ai-harness-xot-discipline.md](concepts/ai-harness-xot-discipline.md) — owner harness PHPStan/XotBase
 - Stub second-brain in 9+ moduli puntano a canon Xot + mappa HackerNoon #272
 
+<<<<<<< HEAD
+=======
+> **Purpose:** Append-only chronological activity record tracking ingests, queries, and lint passes.
+
+## Log Entries
+
+>>>>>>> laraxot/dev
 ## [2026-05-26] docs | codice nominale pivot / ThemeComposer / ProfileFactory scan
 
 - **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/Fixcity); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
@@ -295,7 +415,12 @@ discussions:
 ## [2026-05-25] docs | audit profondo ridondanze — second brain ripulito da merge-marker
 
 - **Obiettivo**: consolidare osservabilità delle ripetizioni (codice + documentazione) senza toccare applicativo.
+<<<<<<< HEAD
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
+=======
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `<<<<<<<`).
+- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
+>>>>>>> laraxot/dev
 
 ## [2026-05-24] refactor | wizard — normalizzazione stato **rimossa dalla base**
 
@@ -316,7 +441,11 @@ discussions:
 - **Canonico oggi**: non creare **`NormalizesWizardFormState.php`**; non usare **`use Modules\Xot\Filament\Traits\NormalizesWizardFormState`**.
 - **Nota storica / superata**: questa voce descriveva un tentativo di ripristino del trait; il trait **non** è parte dell'architettura.
 
+<<<<<<< HEAD
 - **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream … NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
+=======
+- **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream ... NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
+>>>>>>> laraxot/dev
 - **Fix (storico)**: rimuovere `use` trait fantasma / allineare al codice corrente; dopo pull eseguire `composer dump-autoload`.
 
 ## [2026-05-23] refactor | wizard widget — `HasWizard` sul widget Xot + trait satellite
@@ -328,6 +457,10 @@ discussions:
 
 - Gruppi byte-identical (SHA256; cross-owner senza `/tests/`): **431** `.php` (**72** cross-owner), **179** Blade (**53** cross-owner). [`redundancy/byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md). Hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md). Indice wiki root [`code-redundancy-audit.md`](../../../../../docs/wiki/concepts/code-redundancy-audit.md). Commenti `#89`, `#90`, `#80`.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ## [2026-05-22] docs | DRY second brain + merge doc wizard HasWizard
 
 - **`second-brain-local-discipline`:** solo [`concepts/second-brain-local-discipline.md`](concepts/second-brain-local-discipline.md) mantiene il corpo; negli altri nove moduli stesso basename → stub puntatore canonica.
@@ -418,12 +551,37 @@ discussions:
   - `docs/wiki/index.md`: aggiornato sezione Testing Patterns
 - **applicabilità**: pattern replicabile in qualsiasi modulo per test Pest/PHPUnit senza DB
 
+<<<<<<< HEAD
+=======
+---
+
+_No activity yet. Start by ingesting raw documents._
+
+### Format
+
+```
+[YYYY-MM-DD HH:MM:SS UTC] [OPERATION] Description
+```
+
+**Operations:**
+- `INGEST` — Added raw document to wiki
+- `QUERY` — Answered question from wiki
+- `LINT` — Maintained wiki quality
+- `UPDATE` — Modified existing wiki page
+
+---
+
+**Last Activity:** None  
+**Total Operations:** 0
+
+>>>>>>> laraxot/dev
 ## [2026-04-27] cross-reference | Policy Decision
 - Linked: ../User/docs/wiki/concepts/policy-inheritance-boundary.md
 - Decision: Mantenere separazione XotBasePolicy (foundation) vs UserBasePolicy (application)
 - XotBasePolicy: zero dipendenze, system processes, API token
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
+<<<<<<< HEAD
 
 2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
 
@@ -454,3 +612,15 @@ Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [d
 - Richiesta successiva dell'utente, stesso giorno: poter anche vedere/modificare `NETFUN_TOKEN` dalla stessa pagina (verifica di cosa c'è già in produzione, senza SSH). Aggiunta proprietà `netfun_token` a `EnvData` e `TextInput` (non `Select`: valore libero fornito dal provider) a `EnvWidget`, anch'esso attivato in `Notify\SettingPage`. Compare già valorizzato al caricamento della pagina — `mount()` carica sempre `$_ENV` corrente nel form, nessun lavoro aggiuntivo richiesto per la visualizzazione.
 - Documentato il meccanismo generale (mai descritto prima): [concepts/env-widget-no-ssh-env-editor.md](concepts/env-widget-no-ssh-env-editor.md) — come aggiungere una variabile editabile, e il passo successivo obbligato (`config:cache` via `ArtisanCommandsManager`, già disponibile) se la config è cache-ata in produzione.
 - PHPStan pulito sui 3 file toccati (`EnvData.php`, `EnvWidget.php`, `Notify\SettingPage.php`), `php -l` ok. Nessuna verifica end-to-end in produzione — i valori vanno ancora selezionati/salvati dall'utente dopo il deploy.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
+=======
+>>>>>>> 64619e34 (.)
+=======
+
+2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev

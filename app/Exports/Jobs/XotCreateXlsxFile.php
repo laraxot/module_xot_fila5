@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exports\Jobs;
 
+<<<<<<< HEAD
 use Closure;
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Http\File;
@@ -14,11 +17,19 @@ use Modules\Xot\Exports\XotBaseExporter;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Common\Entity\Style\Style;
 use OpenSpout\Writer\XLSX\Writer;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\tempnam;
 use function Safe\unlink;
 
+<<<<<<< HEAD
+=======
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * `CreateXlsxFile` che legge il CSV intermedio con l'escape con cui e' stato
  * scritto (`XotBaseExporter::CSV_ESCAPE`) e conserva le righe vuote (una riga
@@ -50,14 +61,22 @@ class XotCreateXlsxFile extends CreateXlsxFile
 
         $csvDelimiter = $this->exporter::getCsvDelimiter();
 
+<<<<<<< HEAD
         $writeRowsFromFile = function (string $file, ?Style $style, Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
+=======
+        $writeRowsFromFile = function (string $file, ?Style $style, \Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
+>>>>>>> laraxot/dev
             $stream = $disk->readStream($file);
             Assert::resource($stream);
             $csvReader = CsvReader::from($stream);
             $csvReader->setDelimiter($csvDelimiter);
             $csvReader->setEscape(XotBaseExporter::CSV_ESCAPE);
             $csvReader->includeEmptyRecords();
+<<<<<<< HEAD
             $csvResults = (new Statement)->process($csvReader);
+=======
+            $csvResults = (new Statement())->process($csvReader);
+>>>>>>> laraxot/dev
 
             foreach ($csvResults->getRecords() as $values) {
                 $row = $makeRow($values, $style);

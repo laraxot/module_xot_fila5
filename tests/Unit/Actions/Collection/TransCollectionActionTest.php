@@ -1,7 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Lang;
 use Modules\Xot\Actions\Collection\TransCollectionAction;
 use Modules\Xot\Tests\TestCase;
@@ -22,7 +26,11 @@ it('translates collection items correctly', function (): void {
     app()->setLocale('it');
 
     $action = app(TransCollectionAction::class);
+<<<<<<< HEAD
     /** @var Collection<int|string, mixed> $collection */
+=======
+    /** @var Illuminate\Support\Collection<int|string, mixed> $collection */
+>>>>>>> laraxot/dev
     $result = $action->execute($collection, $transKey);
 
     Assert::assertSame([
@@ -33,7 +41,11 @@ it('translates collection items correctly', function (): void {
 });
 
 it('returns original items if transKey is null', function (): void {
+<<<<<<< HEAD
     /** @var Collection<int|string, mixed> $collection */
+=======
+    /** @var Illuminate\Support\Collection<int|string, mixed> $collection */
+>>>>>>> laraxot/dev
     $collection = collect(['a', 1, null]);
     $action = app(TransCollectionAction::class);
     $result = $action->execute($collection, null);
@@ -42,7 +54,11 @@ it('returns original items if transKey is null', function (): void {
 });
 
 it('returns original item if translation not found', function (): void {
+<<<<<<< HEAD
     /** @var Collection<int|string, mixed> $collection */
+=======
+    /** @var Illuminate\Support\Collection<int|string, mixed> $collection */
+>>>>>>> laraxot/dev
     $collection = collect(['unknown']);
     $action = app(TransCollectionAction::class);
     $result = $action->execute($collection, 'missing');

@@ -150,4 +150,8 @@ public function canDetachBulk(\Illuminate\Database\Eloquent\Model|\stdClass $rec
 
 1. ✅ Correzione completata
 2. ⏳ Commit con messaggio descrittivo
+<<<<<<< HEAD
 3. ⏳ Push
+=======
+3. ⏳ Push
+>>>>>>> laraxot/dev

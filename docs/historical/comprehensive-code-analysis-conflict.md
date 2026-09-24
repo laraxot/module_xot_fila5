@@ -177,9 +177,13 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -190,9 +194,13 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -290,9 +298,13 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -426,7 +438,11 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> laraxot/dev
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

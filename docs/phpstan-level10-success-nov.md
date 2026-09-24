@@ -166,9 +166,15 @@ Risultato ottenuto seguendo rigorosamente:
 ## 🔧 Correzioni Principali
 
 ### 1. Conflitti Git Risolti (4 file)
+<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
 - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
 - `Modules/Quaeris/app/Datas/DashboardFilterData.php`
+=======
+- `Modules/healthcare_app/app/Filament/Pages/DashboardV2.php`
+- `Modules/healthcare_app/app/Datas/AlertDashboardFilterData.php`
+- `Modules/healthcare_app/app/Datas/DashboardFilterData.php`
+>>>>>>> laraxot/dev
 
 **Pattern**: Risoluzione manuale sempre scegliendo la versione HEAD con codice funzionante.
 
@@ -299,4 +305,8 @@ Risultato ottenuto seguendo rigorosamente:
 - Laraxot architecture rules
 - Zero compromessi su qualità codice
 
+<<<<<<< HEAD
 **Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
+=======
+**Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
+>>>>>>> laraxot/dev

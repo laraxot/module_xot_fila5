@@ -31,8 +31,11 @@ class MainDashboard extends XotBaseDashboard
      */
     public static function getSlug(?Panel $panel = null): string
     {
+<<<<<<< HEAD
         unset($panel);
 
+=======
+>>>>>>> laraxot/dev
         return 'dashboard';
     }
 
@@ -43,14 +46,22 @@ class MainDashboard extends XotBaseDashboard
         // Usa roles() come metodo invece della magic property per type safety
         $modules = $user->getModules();
 
+<<<<<<< HEAD
         if (count($modules) === 0) {
+=======
+        if (0 === count($modules)) {
+>>>>>>> laraxot/dev
             $url = '/'.app()->getLocale();
             redirect($url);
 
             return;
         }
 
+<<<<<<< HEAD
         if (count($modules) === 1) {
+=======
+        if (1 === count($modules)) {
+>>>>>>> laraxot/dev
             $module_first = Arr::first($modules);
             Assert::isInstanceOf($module_first, Module::class);
             $module_name = $module_first->getLowerName();
@@ -66,11 +77,22 @@ class MainDashboard extends XotBaseDashboard
     /**
      * Ottiene i widget da visualizzare nella dashboard.
      *
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public function getWidgets(): array
     {
         return [];
+=======
+     * @return array<int, string>
+     */
+    public function getWidgets(): array
+    {
+        return [
+            // Widget per mostrare i moduli disponibili
+            // Modules\Xot\Filament\Widgets\ModulesOverviewWidget::class,
+        ];
+>>>>>>> laraxot/dev
     }
 
     /**

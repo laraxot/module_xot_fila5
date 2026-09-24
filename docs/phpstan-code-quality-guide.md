@@ -1648,9 +1648,13 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -1970,4 +1974,8 @@ $model->update($filtered);
 **Riferimenti**: 
 - `laravel/Modules/Xot/docs/filament-extension-rules-complete.md` - Regole complete Filament
 - `laravel/Modules/Xot/docs/phpstan-code-quality-guide.md` - Guida completa PHPStan
+<<<<<<< HEAD
 - `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
+=======
+- `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
+>>>>>>> laraxot/dev

@@ -22,7 +22,11 @@
 8. **DbForge** (155 files) - 0 errori ✅
 9. **Job** (251 files) - 0 errori ✅
 10. **Geo** (343 files) - 0 errori ✅
+<<<<<<< HEAD
 11. **Quaeris** (380 files) - 0 errori ✅
+=======
+11. **healthcare_app** (380 files) - 0 errori ✅
+>>>>>>> laraxot/dev
 12. **Cms** (431 files) - 0 errori ✅
 13. **Notify** (472 files) - 0 errori ✅
 14. **UI** (543 files) - 0 errori ✅ (completato!)
@@ -270,4 +274,8 @@ I moduli rimanenti (Xot, User) richiedono ancora ~2-3 ore di lavoro sistematico 
 
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
 
+<<<<<<< HEAD
 *Mantra*: "Un modulo alla volta, un errore alla volta, zero compromessi"
+=======
+*Mantra*: "Un modulo alla volta, un errore alla volta, zero compromessi"
+>>>>>>> laraxot/dev

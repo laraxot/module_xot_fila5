@@ -140,8 +140,16 @@ return [
 
 ## Link alla documentazione correlata
 
+<<<<<<< HEAD
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/docs/errori_comuni_traduzione.md)
 - [Convenzioni di documentazione](/laravel/Modules/Xot/docs/documentation_conventions.md)
 - [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+- [Errori comuni nei file di traduzione](/laravel/modules/lang/docs/errori_comuni_traduzione.md)
+- [Convenzioni di documentazione](/laravel/modules/xot/docs/documentation_conventions.md)
+- [Documentazione principale sulle traduzioni](/docs/translation_rules.md)
+
+*Ultimo aggiornamento: 3 Giugno 2025*
+>>>>>>> laraxot/dev

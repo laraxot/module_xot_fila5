@@ -9,9 +9,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'cache lock.navigation',
         'icon' => 'cache lock.navigation',
         'sort' => 95,
+=======
+>>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +52,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -67,10 +71,13 @@ return [
             'helper_text' => 'expiration',
             'description' => 'expiration',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache Lock',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -98,6 +105,14 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Cache Lock',
+        ],
+        'delete' => [
+            'label' => 'Elimina Cache Lock',
+>>>>>>> laraxot/dev
         ],
     ],
 ];

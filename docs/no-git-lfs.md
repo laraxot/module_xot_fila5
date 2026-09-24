@@ -171,11 +171,23 @@ Prima di dare la colpa a LFS conviene guardare i primi byte del file: un puntato
 con `version https://git-lfs.github.com/spec/v1`, e qualunque altra cosa e' un altro
 problema.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 **23 settembre 2026 — login admin:** HTML con `src="…/ptv::img/icon.png"` (404).
 `Modules/Ptv/resources/img/icon.png` è PNG reale (`89 50 4E 47`). Causa:
 `AssetAction` force-copy sotto `www-data`, non LFS. Story
 `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ## Canone
 
 `bashscripts/ai/wiki/rules/no-git-lfs.md` — regola completa, storico degli incidenti e

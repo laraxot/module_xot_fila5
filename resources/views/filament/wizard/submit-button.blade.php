@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
+=======
+>>>>>>> laraxot/dev
 @if (\Illuminate\Support\Facades\View::exists('pub_theme::filament.wizard.submit-button'))
     @include('pub_theme::filament.wizard.submit-button')
 @else

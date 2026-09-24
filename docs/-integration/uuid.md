@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 'Uuid'
 module: Xot
@@ -9,6 +10,11 @@ converted_from: UUID.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+=======
+# uuid
+
+<!-- Contenuto migrato da _docs/uuid.txt -->
+>>>>>>> laraxot/dev
 
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
