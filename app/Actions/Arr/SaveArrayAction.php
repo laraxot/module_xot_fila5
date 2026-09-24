@@ -11,6 +11,7 @@ class SaveArrayAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_OIg4I2
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -41,6 +42,9 @@ class SaveArrayAction
 =======
      * @param array<int|string, mixed> $data
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<int|string, mixed>  $data
+>>>>>>> .merge_file_p8ewnt
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool
     {

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_5xfPQ2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,11 +25,15 @@
 
 ## Data: Gennaio 2025
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+# Report Normalizzazione Documentazione - Gennaio 2025
+>>>>>>> .merge_file_mYbeGw
 
 ## Azioni Completate
 
 ### File Eliminati (Duplicati con Date)
 
+<<<<<<< .merge_file_5xfPQ2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +48,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_mYbeGw
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
@@ -54,6 +61,7 @@
 ### File Rinominati (Rimozione Date)
 
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
+<<<<<<< .merge_file_5xfPQ2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,6 +72,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_mYbeGw
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -114,6 +124,7 @@
 - Altri file con pattern `bugfix-*-2025-*.md`
 
 ### Modulo Lang
+<<<<<<< .merge_file_5xfPQ2
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
@@ -131,6 +142,10 @@
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction-2025.md` (verificare duplicati)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
+- `translation-errors-correction-2025.md` (verificare duplicati)
+>>>>>>> .merge_file_mYbeGw
 
 ### Modulo Xot
 - File in cartella `archive/` (valutare se mantenere date per storico)
@@ -169,6 +184,7 @@
 - [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
+<<<<<<< .merge_file_5xfPQ2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -198,30 +214,22 @@
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mYbeGw
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
 
 ---
 
-<<<<<<< HEAD
 **Data**: Gennaio 2025
 **Stato**: In corso
-<<<<<<< .merge_file_cWKM6I
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_jsmDVA
 **Prossima Revisione**: Dopo normalizzazione batch successivo
-=======
-**Stato**: In corso
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-**Prossima Revisione**: Dopo normalizzazione batch successivo
+<<<<<<< .merge_file_5xfPQ2
 >>>>>>> laraxot/dev
 =======
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_mYbeGw

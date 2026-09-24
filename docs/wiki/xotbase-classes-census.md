@@ -13,6 +13,7 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 
 ## Filament Widgets
 
+<<<<<<< .merge_file_TKW8Gq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -23,6 +24,8 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Jx0QUj
 | Classe Base | Path | Estende |
 |-------------|------|---------|
 | `XotBaseWidget` | `app/Filament/Widgets/XotBaseWidget.php` | `Filament\Widgets\Widget` |
@@ -32,6 +35,7 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 | `XotBaseChartWidget` | `app/Filament/Widgets/XotBaseChartWidget.php` | `Filament\Widgets\ChartWidget` |
 | `XotBaseStatsOverviewWidget` | `app/Filament/Widgets/XotBaseStatsOverviewWidget.php` | `Filament\Widgets\StatsOverviewWidget` |
 | `XotBaseWizardWidget` | `app/Filament/Widgets/XotBaseWizardWidget.php` | `XotBaseWidget` |
+<<<<<<< .merge_file_TKW8Gq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -59,6 +63,8 @@ protected string $view = 'module::path.to.view';
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Jx0QUj
 
 ## Filament Resources
 

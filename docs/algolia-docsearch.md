@@ -72,6 +72,7 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione HEAD
 
 ## Collegamenti tra versioni di algolia-docsearch.md
+<<<<<<< .merge_file_0LfvmH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,6 +87,8 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wi6ueu
 * [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Xot/docs/algolia-docsearch.md)
@@ -94,6 +97,7 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ### Versione Incoming
 
+<<<<<<< .merge_file_0LfvmH
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -107,3 +111,6 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 =======
 ---
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_wi6ueu

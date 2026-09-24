@@ -19,6 +19,7 @@ class GetViewByClassAction
     /**
      * Ottiene una vista basata su una classe.
      *
+<<<<<<< .merge_file_udBsm7
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $class  Nome della classe
@@ -34,10 +35,16 @@ class GetViewByClassAction
      * @param array<string, mixed> $params   Parametri da passare alla vista
      * @param string|null          $viewName Nome personalizzato della vista
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string  $class  Nome della classe
+     * @param  array<string, mixed>  $params  Parametri da passare alla vista
+     * @param  string|null  $viewName  Nome personalizzato della vista
+>>>>>>> .merge_file_bywiEq
      */
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
+<<<<<<< .merge_file_udBsm7
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var view-string $viewName */
@@ -47,6 +54,9 @@ class GetViewByClassAction
 =======
         /* @var view-string $viewName */
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        /** @var view-string $viewName */
+>>>>>>> .merge_file_bywiEq
 
         return ViewFacade::make($viewName, $params);
     }
@@ -54,6 +64,7 @@ class GetViewByClassAction
     /**
      * Risolve il percorso della view basato sul namespace della classe.
      *
+<<<<<<< .merge_file_udBsm7
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $class  Il nome completo della classe
@@ -65,6 +76,9 @@ class GetViewByClassAction
      * @param string $class Il nome completo della classe
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string  $class  Il nome completo della classe
+>>>>>>> .merge_file_bywiEq
      * @return string Il percorso della view
      */
     public function executeOld(string $class): string
@@ -73,6 +87,7 @@ class GetViewByClassAction
         $arr = explode('\\', $class);
 
         // Verifica che la classe sia nel namespace Modules
+<<<<<<< .merge_file_udBsm7
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($arr[0] !== 'Modules') {
@@ -82,6 +97,9 @@ class GetViewByClassAction
 =======
         if ('Modules' !== $arr[0]) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($arr[0] !== 'Modules') {
+>>>>>>> .merge_file_bywiEq
             throw new \InvalidArgumentException('Class must be in Modules namespace');
         }
 
@@ -98,6 +116,7 @@ class GetViewByClassAction
     /**
      * Ottiene il nome della vista dal nome della classe.
      *
+<<<<<<< .merge_file_udBsm7
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $class  Nome della classe
@@ -107,6 +126,9 @@ class GetViewByClassAction
 =======
      * @param string $class Nome della classe
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string  $class  Nome della classe
+>>>>>>> .merge_file_bywiEq
      */
     protected function getViewNameFromClass(string $class): string
     {

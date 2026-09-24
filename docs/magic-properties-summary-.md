@@ -17,6 +17,7 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 ### ✅ healthcare_app Module
+<<<<<<< .merge_file_nSE928
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### ✅ ExternalProject Module
@@ -44,6 +45,8 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 =======
 ### ✅ ExternalProject Module
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_40sAMp
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module
@@ -88,6 +91,7 @@ Files generally have good scores with minor style issues:
 
 **✅ COMPLETED**: All `property_exists()` usage in Eloquent models has been eliminated and replaced with proper magic property checks.
 
+<<<<<<< .merge_file_nSE928
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -110,3 +114,6 @@ Files generally have good scores with minor style issues:
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> .merge_file_40sAMp

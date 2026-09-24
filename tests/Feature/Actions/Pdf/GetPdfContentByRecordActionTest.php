@@ -21,11 +21,7 @@ uses(TestCase::class);
 $action = null;
 
 beforeEach(function () use (&$action): void {
-<<<<<<< HEAD
     $action = new GetPdfContentByRecordAction;
-=======
-    $action = new GetPdfContentByRecordAction();
->>>>>>> laraxot/dev
 });
 
 describe('Get Pdf Content By Record Action', function () use (&$action): void {
@@ -70,6 +66,7 @@ describe('Get Pdf Content By Record Action', function (): void {
         $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
+<<<<<<< .merge_file_ZdaDcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -78,6 +75,8 @@ describe('Get Pdf Content By Record Action', function (): void {
 =======
         $action = $this->action;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hdVSoC
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateViewName');
@@ -99,6 +98,7 @@ describe('Get Pdf Content By Record Action', function (): void {
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
+<<<<<<< .merge_file_ZdaDcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -107,6 +107,8 @@ describe('Get Pdf Content By Record Action', function (): void {
 =======
         $action = $this->action;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hdVSoC
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
@@ -122,9 +124,9 @@ describe('Get Pdf Content By Record Action', function (): void {
 <<<<<<< HEAD
     test('it generates enhanced filename for performance models', function () use (&$action): void {
         // Arrange - Create a mock model with performance fields
-<<<<<<< HEAD
         $record = new class extends Model
         {
+<<<<<<< .merge_file_ZdaDcW
 =======
         $record = new class extends Model {
 >>>>>>> laraxot/dev
@@ -133,6 +135,8 @@ describe('Get Pdf Content By Record Action', function (): void {
         // Arrange - Create a mock model with performance fields
         $record = new class extends Model {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hdVSoC
             protected $table = 'test_performance';
 
             protected $fillable = ['id', 'matr', 'cognome', 'nome'];
@@ -148,6 +152,7 @@ describe('Get Pdf Content By Record Action', function (): void {
         $record->setAttribute('nome', 'Mario');
 
         // Use reflection to test protected method
+<<<<<<< .merge_file_ZdaDcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -156,6 +161,8 @@ describe('Get Pdf Content By Record Action', function (): void {
 =======
         $action = $this->action;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hdVSoC
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
@@ -177,6 +184,7 @@ describe('Get Pdf Content By Record Action', function (): void {
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
+<<<<<<< .merge_file_ZdaDcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -185,6 +193,8 @@ describe('Get Pdf Content By Record Action', function (): void {
 =======
         $action = $this->action;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hdVSoC
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('prepareViewParameters');

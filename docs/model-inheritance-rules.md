@@ -193,6 +193,7 @@ Ogni nuovo modello deve essere documentato in:
 - [Best Practices Laravel](laraxot-conventions.md)
 - [Regole Migrazioni](migrations.md)
 
+<<<<<<< .merge_file_oaYTAA
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
@@ -206,3 +207,6 @@ Ogni nuovo modello deve essere documentato in:
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> .merge_file_dfXLwv

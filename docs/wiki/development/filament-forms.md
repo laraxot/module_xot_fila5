@@ -26,27 +26,16 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_7o365M
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_pcAwg0
+>>>>>>> .merge_file_TtjFwY
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cvYoFY
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -271,27 +260,16 @@ Forms\Components\Grid::make()
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_7o365M
 <<<<<<< HEAD
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_pcAwg0
+>>>>>>> .merge_file_TtjFwY
 public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cvYoFY
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array

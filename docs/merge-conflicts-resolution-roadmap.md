@@ -164,15 +164,19 @@ class ResourceName extends XotBaseResource
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_YqI05e
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Xv9lsx
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YqI05e
 <<<<<<< HEAD
 =======
 =======
@@ -182,6 +186,8 @@ class ResourceName extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Xv9lsx
     {
         return [
             // Form components
@@ -213,6 +219,7 @@ class ResourceName extends XotBaseResource
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< .merge_file_YqI05e
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Versione**: 1.0.0
@@ -231,3 +238,7 @@ class ResourceName extends XotBaseResource
 **Versione**: 1.0.0
 **Status**: ⚠️ In Lavorazione
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Versione**: 1.0.0
+**Status**: ⚠️ In Lavorazione
+>>>>>>> .merge_file_Xv9lsx

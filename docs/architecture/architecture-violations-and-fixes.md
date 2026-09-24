@@ -338,6 +338,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ### **Documentazione Moduli**
 - [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/project_docs/traits_complete_guide.md)
+<<<<<<< .merge_file_5BWBbA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -351,6 +352,8 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_R3o3Ur
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 
 ---
@@ -361,6 +364,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
+<<<<<<< .merge_file_5BWBbA
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Responsabile**: Team Architettura Laraxot
@@ -380,3 +384,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 **Stato**: ✅ Pattern Documentato e Implementato
 **Responsabile**: Team Architettura Laraxot
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Responsabile**: Team Architettura Laraxot
+>>>>>>> .merge_file_R3o3Ur

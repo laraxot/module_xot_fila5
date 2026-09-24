@@ -31,6 +31,7 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< .merge_file_JYJ9nZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -46,3 +47,5 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2c2Ed1

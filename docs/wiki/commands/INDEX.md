@@ -1,5 +1,8 @@
+<<<<<<< .merge_file_XHpEWO
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4JjMoS
 ---
 title: "Index"
 type: reference
@@ -8,10 +11,13 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_XHpEWO
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4JjMoS
 # Xot Module - commands Index
 
 ## Purpose

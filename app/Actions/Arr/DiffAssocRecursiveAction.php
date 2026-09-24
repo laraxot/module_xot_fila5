@@ -14,6 +14,7 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_58ISD6
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -26,6 +27,9 @@ class DiffAssocRecursiveAction
      * @param array<int|string, mixed> $data
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  array<int|string, mixed>  $data
+>>>>>>> .merge_file_0LdH2m
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -56,6 +60,7 @@ class DiffAssocRecursiveAction
     }
 
     /**
+<<<<<<< .merge_file_58ISD6
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -71,6 +76,10 @@ class DiffAssocRecursiveAction
      * @param array<int|string, mixed> $arr_2
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  array<int|string, mixed>  $arr_1
+     * @param  array<int|string, mixed>  $arr_2
+>>>>>>> .merge_file_0LdH2m
      * @return array<int|string, array<int|string, mixed>>
      */
     public function execute(array $arr_1, array $arr_2): array

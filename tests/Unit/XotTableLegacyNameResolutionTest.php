@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_LTHIlI
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Columns\Column;
@@ -27,6 +28,10 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Filament\Tables\Columns\Column;
+use Modules\Xot\Filament\Traits\HasXotTable;
+>>>>>>> .merge_file_modfMV
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture;
 use PHPUnit\Framework\Assert;
@@ -34,6 +39,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('un override di getTableFilters viene onorato', function (): void {
+<<<<<<< .merge_file_LTHIlI
 <<<<<<< HEAD
 <<<<<<< HEAD
     $fixture = new LegacyTableNameFixture;
@@ -57,11 +63,15 @@ test('un override di getTableFilters viene onorato', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $fixture = new LegacyTableNameFixture;
+>>>>>>> .merge_file_modfMV
 
     Assert::assertSame(['legacy_filter'], array_keys($fixture->getTableFilters()));
 });
 
 test('senza override si ricade sul default vuoto', function (): void {
+<<<<<<< .merge_file_LTHIlI
 <<<<<<< HEAD
 <<<<<<< HEAD
     $fixture = new class
@@ -97,12 +107,17 @@ test('senza override si ricade sul default vuoto', function (): void {
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $fixture = new class
+    {
+>>>>>>> .merge_file_modfMV
         use HasXotTable;
 
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
         public function getTableColumns(): array
+<<<<<<< .merge_file_LTHIlI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -114,6 +129,8 @@ test('senza override si ricade sul default vuoto', function (): void {
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_modfMV
         {
             return [];
         }
@@ -121,6 +138,7 @@ test('senza override si ricade sul default vuoto', function (): void {
 
     Assert::assertSame([], $fixture->getTableFilters());
 });
+<<<<<<< .merge_file_LTHIlI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -141,3 +159,5 @@ test('senza override si ricade sul default vuoto', function (): void {
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_modfMV

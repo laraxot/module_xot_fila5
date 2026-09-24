@@ -250,6 +250,7 @@ class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< .merge_file_nbOctF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -260,10 +261,13 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CdGD69
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_nbOctF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -276,6 +280,8 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CdGD69
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),

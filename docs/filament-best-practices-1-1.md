@@ -17,6 +17,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
+<<<<<<< .merge_file_DUwc8K
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,6 +37,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
    public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_6TD8TZ
    {
        return [
            TextInput::make('nome')->required(),
@@ -607,15 +611,19 @@ class ReportResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_DUwc8K
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6TD8TZ
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_DUwc8K
 <<<<<<< HEAD
 =======
 =======
@@ -625,6 +633,8 @@ class ReportResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_6TD8TZ
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider

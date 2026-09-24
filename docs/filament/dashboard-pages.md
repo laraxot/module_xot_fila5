@@ -191,6 +191,7 @@ Il modulo Xot è il modulo core e potrebbe non necessitare di una dashboard trad
 
 - [XotBasePanelProvider](./xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](./filament_integration.md) - Integrazione generale Filament
+<<<<<<< .merge_file_7SPBLe
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Best Practices](best-practices.md) - Best practices generali
@@ -204,6 +205,9 @@ Il modulo Xot è il modulo core e potrebbe non necessitare di una dashboard trad
 =======
 - [Best Practices](./BEST-PRACTICES.md) - Best practices generali
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Best Practices](best-practices.md) - Best practices generali
+>>>>>>> .merge_file_VpKHe5
 - [Best Practices](./best-practices.md) - Best practices generali
 
 ## Collegamenti

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_IaBc6p
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -8,6 +9,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_35P91Y
 ---
 title: "Phpstan Session Nov"
 type: concept
@@ -24,6 +27,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-session-nov.md](./phpstan-session-nov.md)
+<<<<<<< .merge_file_IaBc6p
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -165,3 +169,5 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_35P91Y

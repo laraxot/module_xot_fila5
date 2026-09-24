@@ -17,8 +17,11 @@ use function Safe\preg_match;
  * Centralizes common MorphPivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
+<<<<<<< .merge_file_XjkBV8
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_EJ49nl
  * @property string|int $id
  * @property string $morph_type
  * @property string|int $morph_id
@@ -27,6 +30,7 @@ use function Safe\preg_match;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
+<<<<<<< .merge_file_XjkBV8
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -42,12 +46,15 @@ use function Safe\preg_match;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_EJ49nl
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
  * @property string|int|null $deleted_by
  */
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
+<<<<<<< .merge_file_XjkBV8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -56,6 +63,8 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
 =======
     /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_EJ49nl
     use HasXotFactory;
     use Updater;
 
@@ -115,6 +124,7 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         // Extract module name from namespace: Modules\Rating\... → rating
         $namespace = static::class;
         $matches = [];
+<<<<<<< .merge_file_XjkBV8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
@@ -124,6 +134,9 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
 =======
         if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
+>>>>>>> .merge_file_EJ49nl
             return strtolower($matches[1]);
         }
 

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_FMtUXJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
@@ -11,10 +12,14 @@
 =======
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+# Quaeris Fila4 Mono - Filosofia Completa del Progetto
+>>>>>>> .merge_file_JaVtmN
 
 ## Logica (Logic)
 
 ### Architettura del Sistema
+<<<<<<< .merge_file_FMtUXJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,10 +27,13 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JaVtmN
 Quaeris è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
 
 ```
 Xot (Motore) → Moduli Specifici (User, Quaeris, etc.) → Funzionalità
+<<<<<<< .merge_file_FMtUXJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -38,6 +46,8 @@ Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JaVtmN
 ```
 
 ### Domain Model Principale
@@ -108,6 +118,7 @@ Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
 
 ## Business Logic
 
+<<<<<<< .merge_file_FMtUXJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### Modulo Quaeris
@@ -121,6 +132,9 @@ Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
 =======
 ### Modulo Quaeris
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+### Modulo Quaeris
+>>>>>>> .merge_file_JaVtmN
 - **Customer Management**: Gestione clienti e organizzazioni
 - **Survey Management**: Creazione e gestione survey tramite LimeSurvey
 - **Contact Management**: Gestione contatti e inviti
@@ -164,6 +178,7 @@ Il sistema è configurato con Model Context Protocol (MCP) per potenziare IDE AI
 
 ## Conclusione
 
+<<<<<<< .merge_file_FMtUXJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
@@ -185,3 +200,8 @@ Quaeris rappresenta un sistema che riflette principi profondi di semplicità, ch
 
 La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+
+La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
+>>>>>>> .merge_file_JaVtmN

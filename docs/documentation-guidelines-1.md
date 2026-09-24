@@ -213,6 +213,7 @@ Prima di committare la documentazione:
 Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collegamenti relativi:
 
 ```markdown
+<<<<<<< .merge_file_lpd1jd
 <<<<<<< HEAD
 <<<<<<< HEAD
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
@@ -226,6 +227,9 @@ Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/d
 =======
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
+>>>>>>> .merge_file_Dr2JlE
 ```
 
 ### 2. Documentazione Centralizzata
@@ -233,6 +237,7 @@ Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/d
 Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo Xot e poi referenziati dagli altri moduli:
 
 ```markdown
+<<<<<<< .merge_file_lpd1jd
 <<<<<<< HEAD
 <<<<<<< HEAD
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
@@ -246,6 +251,9 @@ Per le best practices generali sul framework, consultare la [guida principale](.
 =======
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
+>>>>>>> .merge_file_Dr2JlE
 ```
 
 ## Esempi di Eccellenza
@@ -302,6 +310,7 @@ Per implementare queste linee guida:
 
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Documentazione Laravel](https://laravel.com/docs)
+<<<<<<< .merge_file_lpd1jd
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
@@ -315,3 +324,6 @@ Per implementare queste linee guida:
 =======
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Documentazione PHPDoc](https://docs.phpdoc.org/)
+>>>>>>> .merge_file_Dr2JlE

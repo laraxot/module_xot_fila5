@@ -13,6 +13,7 @@
 2. **Nessuna data nel nome file**
    - ✅ CORRETTO: `phpstan-fixes.md`, `roadmap.md`
    - ❌ SBAGLIATO: `phpstan-fixes-2025-10-10.md`, `ROADMAP_2025.md`
+<<<<<<< .merge_file_8WcvFR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -23,6 +24,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z2bVmJ
    - **Motivo**: Le date nei nomi file causano duplicazione, rendono difficile il refactoring e non riflettono lo stato corrente del documento
 
 3. **Usa trattini `-` per separare parole** (non underscore `_`)
@@ -67,6 +70,7 @@
    - ✅ CORRETTO: `[Documentazione](../Xot/docs/architecture.md)`
    - ✅ CORRETTO: `[Esempio](./examples/example.md)`
    - ❌ SBAGLIATO: `[Doc](/var/www/laravel/Modules/Xot/docs/architecture.md)`
+<<<<<<< .merge_file_8WcvFR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -79,6 +83,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z2bVmJ
 
 2. **Portabilità totale**
    - I link devono funzionare ovunque il progetto venga clonato
@@ -259,6 +265,7 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 ---
 
 **Last Updated**: 2025-10-11
+<<<<<<< .merge_file_8WcvFR
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status**: ✅ ACTIVE STANDARD
@@ -277,3 +284,7 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 **Status**: ✅ ACTIVE STANDARD
 **Compliance**: MANDATORY for all modules and themes
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Status**: ✅ ACTIVE STANDARD
+**Compliance**: MANDATORY for all modules and themes
+>>>>>>> .merge_file_Z2bVmJ

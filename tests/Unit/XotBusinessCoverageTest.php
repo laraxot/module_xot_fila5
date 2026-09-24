@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< .merge_file_6A8U1s
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Mockery;
@@ -18,12 +19,16 @@ use Mockery;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Mockery;
+>>>>>>> .merge_file_uHWeuX
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_6A8U1s
 <<<<<<< HEAD
 <<<<<<< HEAD
     Mockery::close();
@@ -41,6 +46,9 @@ afterEach(function (): void {
 =======
     \Mockery::close();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    Mockery::close();
+>>>>>>> .merge_file_uHWeuX
 });
 
 /** @return array{string, string} */

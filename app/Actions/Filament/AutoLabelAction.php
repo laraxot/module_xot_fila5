@@ -33,6 +33,7 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
+<<<<<<< .merge_file_RMkOEh
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -45,6 +46,9 @@ class AutoLabelAction
      * @param Field|Component $component Il componente a cui applicare l'etichetta
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
+>>>>>>> .merge_file_yS2oKE
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -119,6 +123,7 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
+<<<<<<< .merge_file_RMkOEh
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -131,6 +136,9 @@ class AutoLabelAction
      * @param Field|Component $component Il componente di cui ottenere il nome
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  Field|Component  $component  Il componente di cui ottenere il nome
+>>>>>>> .merge_file_yS2oKE
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string

@@ -1,4 +1,5 @@
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -9,6 +10,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
 
 ## 🎯 Missione Completata
 
@@ -126,6 +129,7 @@ Creati 3 nuovi documenti:
 1. `merge-conflict-resolution-2025-11-04.md` - Report tecnico dettagliato
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-2025-11-04-merge-conflicts.md` - Questo documento
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -138,6 +142,8 @@ Creati 3 nuovi documenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
 
 ### 10. **AGGIORNAMENTO E STUDIO**
 
@@ -260,6 +266,7 @@ public null|string $var = null;
 ## 💾 Documentazione Creata
 
 1. **merge-conflict-resolution-2025-11-04.md**
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -270,6 +277,8 @@ public null|string $var = null;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -287,6 +296,7 @@ public null|string $var = null;
    - File locking integration
 
 4. **lessons-learned-2025-11-04-merge-conflicts.md** (questo file)
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -297,6 +307,8 @@ public null|string $var = null;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
    - Processo completo 10-step
    - Filosofia + Implementation
    - Checklist operativa
@@ -356,6 +368,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ## 📚 References
 
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-2025-11-04.md)
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -366,6 +379,8 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
@@ -374,6 +389,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 
 ---
 
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -387,6 +403,8 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
 **Data:** 2025-11-04
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
@@ -508,6 +526,7 @@ Creati 3 nuovi documenti:
 1. `merge-conflict-resolution-2025-11-04.md` - Report tecnico dettagliato
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-2025-11-04-merge-conflicts.md` - Questo documento
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -520,6 +539,8 @@ Creati 3 nuovi documenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
 
 ### 10. **AGGIORNAMENTO E STUDIO**
 
@@ -643,6 +664,7 @@ public null|string $var = null;
 ## 💾 Documentazione Creata
 
 1. **merge-conflict-resolution-2025-11-04.md**
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -653,6 +675,8 @@ public null|string $var = null;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -670,6 +694,7 @@ public null|string $var = null;
    - File locking integration
 
 4. **lessons-learned-2025-11-04-merge-conflicts.md** (questo file)
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -680,6 +705,8 @@ public null|string $var = null;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
    - Processo completo 10-step
    - Filosofia + Implementation
    - Checklist operativa
@@ -739,6 +766,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ## 📚 References
 
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-2025-11-04.md)
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -749,6 +777,8 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kFynru
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
@@ -758,6 +788,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 ---
 
 **Data:** 2025-11-04
+<<<<<<< .merge_file_ynQtZV
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
@@ -776,3 +807,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Autore:** AI Claude + Metodologia Filosofica 10-Step
+**Status:** ✅ COMPLETATO CON SUCCESSO
+>>>>>>> .merge_file_kFynru

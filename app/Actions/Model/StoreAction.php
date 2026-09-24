@@ -14,6 +14,7 @@ class StoreAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_4Xnn7F
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -52,6 +53,10 @@ class StoreAction
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $rules
+>>>>>>> .merge_file_5IZvOl
      */
     public function execute(Model $model, array $data, array $rules): Model
     {

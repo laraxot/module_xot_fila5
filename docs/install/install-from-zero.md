@@ -176,16 +176,20 @@ create Folders :
  inside folder laravel/modules
 
 ~~~ bash
+<<<<<<< .merge_file_xi4R9F
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_aIrEH4
  git submodule add https://github.com/laraxot/module_xot_fila3.git Xot
  git submodule add https://github.com/laraxot/module_tenant_fila3.git Tenant
  git submodule add https://github.com/laraxot/module_user_fila3.git User
  git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
+<<<<<<< .merge_file_xi4R9F
 <<<<<<< HEAD
 =======
 =======
@@ -201,6 +205,8 @@ create Folders :
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aIrEH4
 ~~~
 
 from folder laravel
@@ -208,6 +214,7 @@ from folder laravel
 git submodule add  https://github.com/laraxot/filament-modules.git  packages/savannabits/filament-modules
 
 composer update -W (--with-all-dependencies)
+<<<<<<< .merge_file_xi4R9F
 <<<<<<< HEAD
 <<<<<<< HEAD
 ~~~
@@ -221,3 +228,6 @@ composer update -W (--with-all-dependencies)
 =======
 ~~~
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+~~~
+>>>>>>> .merge_file_aIrEH4

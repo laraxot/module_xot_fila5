@@ -6,6 +6,7 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+<<<<<<< .merge_file_l662UJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -18,6 +19,8 @@ Consulta la documentazione delle traduzioni:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_NOZxld
 
 ## Collegamento Bidirezionale
 
@@ -26,6 +29,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
+<<<<<<< .merge_file_l662UJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,6 +53,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_NOZxld
 * [lang-link.md](../../../Chart/docs/lang-link.md)
 * [lang-link.md](../../../Reporting/docs/lang-link.md)
 * [lang-link.md](../../../Gdpr/docs/lang-link.md)
@@ -62,6 +68,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../Tenant/docs/lang-link.md)
 * [lang-link.md](../../../Activity/docs/lang-link.md)
 * [lang-link.md](../../../Patient/docs/lang-link.md)
+<<<<<<< .merge_file_l662UJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [lang-link.md](../../../Cms/docs/lang-link.md)
@@ -75,3 +82,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 =======
 * [lang-link.md](../../../Cms/docs/lang-link.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+* [lang-link.md](../../../Cms/docs/lang-link.md)
+>>>>>>> .merge_file_NOZxld

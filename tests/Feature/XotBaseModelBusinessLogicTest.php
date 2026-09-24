@@ -19,6 +19,7 @@ uses(TestCase::class);
 
 function createXotBaseModelFixture(): BaseModel
 {
+<<<<<<< .merge_file_jaMcL2
 <<<<<<< HEAD
 <<<<<<< HEAD
     return new class extends BaseModel {};
@@ -30,6 +31,9 @@ function createXotBaseModelFixture(): BaseModel
     return new class extends BaseModel {
     };
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    return new class extends BaseModel {};
+>>>>>>> .merge_file_Fqj3dx
 }
 
 describe('Xot Base Model Business Logic', function (): void {
@@ -95,6 +99,7 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it can be used as base for other models', function (): void {
         // Arrange
+<<<<<<< .merge_file_jaMcL2
 <<<<<<< HEAD
 <<<<<<< HEAD
         $module = new Module;
@@ -104,6 +109,9 @@ describe('Xot Base Model Business Logic', function (): void {
 =======
         $module = new Module();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $module = new Module;
+>>>>>>> .merge_file_Fqj3dx
 
         // Act & Assert
         Assert::assertInstanceOf(XotBaseModel::class, $module);

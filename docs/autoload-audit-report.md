@@ -24,6 +24,7 @@ Each module's composer.json should have:
 
 ### Modules with CORRECT configuration:
 - User ✓
+<<<<<<< .merge_file_feobmc
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Quaeris ✓
@@ -37,6 +38,9 @@ Each module's composer.json should have:
 =======
 - Quaeris ✓
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Quaeris ✓
+>>>>>>> .merge_file_5e0tBQ
 - UI ✓
 - Tenant ✓
 - Limesurvey ✓
@@ -62,6 +66,7 @@ All modules now follow the correct autoload configuration standard. The main dev
 
 ## Recommendations
 - Continue to validate that all new modules follow the standard configuration
+<<<<<<< .merge_file_feobmc
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Implement automated checks to prevent this type of configuration issue
@@ -75,3 +80,6 @@ All modules now follow the correct autoload configuration standard. The main dev
 =======
 - Implement automated checks to prevent this type of configuration issue
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Implement automated checks to prevent this type of configuration issue
+>>>>>>> .merge_file_5e0tBQ

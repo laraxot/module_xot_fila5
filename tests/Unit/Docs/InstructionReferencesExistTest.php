@@ -11,6 +11,7 @@ use function Safe\preg_match_all;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_MFABvT
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
@@ -28,6 +29,9 @@ uses(TestCase::class);
 =======
 /*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+/**
+>>>>>>> .merge_file_i2n9gt
  * I file citati dai `CLAUDE.md` esistono.
  *
  * I `CLAUDE.md` sono istruzioni caricate a ogni sessione: un riferimento a un file che non

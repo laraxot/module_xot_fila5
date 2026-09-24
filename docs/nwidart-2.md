@@ -1,13 +1,17 @@
+<<<<<<< .merge_file_hGlN8a
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZRuqwh
 # nwidart
 
 <!-- Contenuto migrato da _docs/nwidart.txt -->
 
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
+<<<<<<< .merge_file_hGlN8a
 <<<<<<< HEAD
 =======
 =======
@@ -15,6 +19,8 @@ https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZRuqwh
 # _nwidart
 
 <!-- Contenuto migrato da _docs/_nwidart.txt -->

@@ -10,8 +10,11 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelWithAuthorContract.
  *
+<<<<<<< .merge_file_bI6Vov
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_QnolBD
  * @property int $id
  * @property int|null $user_id
  * @property string|null $post_type
@@ -42,6 +45,7 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed> treeLabel()
  * @method array<string, mixed> treeSons()
  * @method array<string, mixed> toArray()
+<<<<<<< .merge_file_bI6Vov
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -95,12 +99,15 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_QnolBD
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_bI6Vov
 <<<<<<< HEAD
 <<<<<<< HEAD
 interface ModelWithAuthorContract {}
@@ -114,3 +121,6 @@ interface ModelWithAuthorContract
 {
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+interface ModelWithAuthorContract {}
+>>>>>>> .merge_file_QnolBD

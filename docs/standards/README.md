@@ -1,5 +1,6 @@
 # Standard di Codice
 
+<<<<<<< .merge_file_PsgZuC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_8OtmcL
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
 
 ## File Contenuti
@@ -27,6 +30,7 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< .merge_file_PsgZuC
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [README.md](bashscripts/project_docs/readme.md)
@@ -46,6 +50,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_8OtmcL
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -76,6 +82,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_PsgZuC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -176,6 +183,8 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_8OtmcL
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -220,6 +229,7 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_PsgZuC
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -430,6 +440,10 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+# Standard Xot: Ereditarietà dei Modelli
+>>>>>>> .merge_file_8OtmcL
 
 ## Gestione campi e Single Table Inheritance (STI)
 
@@ -439,6 +453,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
 ## Collegamenti
+<<<<<<< .merge_file_PsgZuC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -460,11 +475,14 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_8OtmcL
 - [Modello Doctor (Patient)](../../../patient/docs/models/doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../patient/docs/readme.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/docs/database/migrations.md)
+<<<<<<< .merge_file_PsgZuC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -619,6 +637,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
+=======
+>>>>>>> .merge_file_8OtmcL
 
 ## Regola generale
 
@@ -640,6 +660,7 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+<<<<<<< .merge_file_PsgZuC
 <<<<<<< HEAD
 - [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
 // Aggiungere qui altri moduli se necessario
@@ -700,3 +721,6 @@ class Doctor extends User
 =======
 // Aggiungere qui altri moduli se necessario
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+// Aggiungere qui altri moduli se necessario
+>>>>>>> .merge_file_8OtmcL

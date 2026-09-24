@@ -4,13 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+<<<<<<< .merge_file_VInQ61
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_2KAmIL
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_VInQ61
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -23,6 +27,8 @@ use Spatie\QueueableAction\QueueableAction;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2KAmIL
 class GetClassNameByPathAction
 {
     use QueueableAction;

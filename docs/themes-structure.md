@@ -229,6 +229,7 @@ resources/views/
 ## Collegamenti tra versioni di themes-structure.md
 * [themes-structure.md](docs/tecnico/themes-structure.md)
 * [themes-structure.md](../../../Xot/docs/themes-structure.md)
+<<<<<<< .merge_file_BoZBvS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -239,3 +240,5 @@ resources/views/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_3mlihQ

@@ -103,6 +103,7 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
+<<<<<<< .merge_file_fqr0jY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -113,11 +114,14 @@ Per la versione dark:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pG1Ayo
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
+<<<<<<< .merge_file_fqr0jY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -134,6 +138,8 @@ Per la versione dark:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pG1Ayo
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto

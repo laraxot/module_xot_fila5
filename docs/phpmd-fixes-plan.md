@@ -71,6 +71,7 @@ $actions['edit'] = EditAction::make()
 
 - Verificare che rimozione `$resource` non impatti funzionalità
 - `$me` è necessaria per accesso a `$this` in closure (pattern standard)
+<<<<<<< .merge_file_lQAhKY
 <<<<<<< HEAD
 <<<<<<< .merge_file_fHZJn9
 - Complexity warning accettabili per metodi con controlli runtime robusti
@@ -80,3 +81,6 @@ $actions['edit'] = EditAction::make()
 =======
 - Complexity warning accettabili per metodi con controlli runtime robusti
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Complexity warning accettabili per metodi con controlli runtime robusti
+>>>>>>> .merge_file_pXbb8X

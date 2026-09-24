@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_oPoMqo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FtYf3n
 ---
 title: "_uuid"
 module: "Xot"
@@ -14,6 +17,7 @@ qmd: "uuid"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_oPoMqo
 <<<<<<< HEAD
 =======
 =======
@@ -21,6 +25,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_FtYf3n
 # _uuid
 
 <!-- Contenuto migrato da _docs/_uuid.txt -->
@@ -28,6 +34,7 @@ related:
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
+<<<<<<< .merge_file_oPoMqo
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -39,3 +46,6 @@ https://www.larashout.com/using-uuids-in-laravel-models
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_FtYf3n

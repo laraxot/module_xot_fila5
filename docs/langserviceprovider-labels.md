@@ -33,6 +33,7 @@ TextInput::make('first_name') // la label viene risolta automaticamente
 
 ## Collegamenti
 - [Doc specifica Patient](../../Patient/docs/langserviceprovider-labels.md)
+<<<<<<< .merge_file_9kVdOK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,11 +44,14 @@ TextInput::make('first_name') // la label viene risolta automaticamente
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_abLVSc
 
 **Questa regola è obbligatoria per tutti i moduli.**
 
 ## Collegamenti tra versioni di langserviceprovider-labels.md
 * [langserviceprovider-labels.md](../../Patient/docs/langserviceprovider-labels.md)
+<<<<<<< .merge_file_9kVdOK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -58,3 +62,5 @@ TextInput::make('first_name') // la label viene risolta automaticamente
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_abLVSc

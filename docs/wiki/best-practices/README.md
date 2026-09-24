@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_65IrIP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -38,6 +39,8 @@
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_80lZdU
 ---
 title: "Readme"
 type: reference
@@ -45,6 +48,7 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< .merge_file_65IrIP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,6 +77,8 @@ updated: 2026-08-24
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_80lZdU
 
 # Best Practices
 
@@ -104,6 +110,7 @@ updated: 2026-08-24
 
 ## Code Quality
 - PHPStan level 9+ for all new code
+<<<<<<< .merge_file_65IrIP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -191,6 +198,8 @@ updated: 2026-08-24
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_80lZdU
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
@@ -200,6 +209,7 @@ updated: 2026-08-24
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
+<<<<<<< .merge_file_65IrIP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -366,3 +376,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_80lZdU

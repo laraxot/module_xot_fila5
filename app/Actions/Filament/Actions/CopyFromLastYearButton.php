@@ -17,6 +17,7 @@ class CopyFromLastYearButton
         return Action::make('copy_from_last_year')
             ->tooltip('copy from last year')
             ->icon('heroicon-o-document-duplicate')
+<<<<<<< .merge_file_T9rgz2
 <<<<<<< HEAD
 <<<<<<< HEAD
             ->visible($year !== null)
@@ -26,6 +27,9 @@ class CopyFromLastYearButton
 =======
             ->visible(null !== $year)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            ->visible($year !== null)
+>>>>>>> .merge_file_fSTTeK
             ->action(static fn () => app(CopyFromLastYearAction::class)->execute($modelClass, $fieldName, $year));
     }
 }

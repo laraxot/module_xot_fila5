@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_8Oxgdi
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_gDPUUF
 # 25b-blog — Rimuovere getFormSchema da BannerResource, CategoryResource, TextWidgetResource
 
 **Modulo:** Blog

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_SaLu24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -38,6 +39,8 @@
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_djMYPy
 ---
 title: "Readme"
 type: reference
@@ -45,6 +48,7 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< .merge_file_SaLu24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,6 +77,8 @@ updated: 2026-08-24
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_djMYPy
 
 # Convenzioni
 
@@ -87,6 +93,7 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
+<<<<<<< .merge_file_SaLu24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -293,6 +300,9 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_djMYPy
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -343,6 +353,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Dental/docs/README.md)
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
+<<<<<<< .merge_file_SaLu24
 <<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
@@ -373,6 +384,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_djMYPy
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -399,6 +412,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< .merge_file_SaLu24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -493,3 +507,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_djMYPy

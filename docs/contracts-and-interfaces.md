@@ -1,6 +1,7 @@
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23
+<<<<<<< .merge_file_hqXDya
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rSQWDP
 **Status**: ✅ Complete Contract Documentation
 
 ## 🎯 Overview
@@ -79,6 +82,7 @@ interface UserContract extends
 > - `@property \Illuminate\Database\Eloquent\Collection<int, UserRole> $roles`
 > - `@property \Illuminate\Database\Eloquent\Collection<int, TeamContract> $teams`
 >
+<<<<<<< .merge_file_hqXDya
 <<<<<<< HEAD
 <<<<<<< HEAD
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
@@ -93,6 +97,9 @@ interface UserContract extends
 =======
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
+>>>>>>> .merge_file_rSQWDP
 
 ### 2. ProfileContract
 **File**: `app/Contracts/ProfileContract.php`
@@ -556,6 +563,7 @@ class AppointmentService
 
 ---
 
+<<<<<<< .merge_file_hqXDya
 <<<<<<< HEAD
 <<<<<<< HEAD
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
@@ -569,3 +577,6 @@ class AppointmentService
 =======
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
+>>>>>>> .merge_file_rSQWDP

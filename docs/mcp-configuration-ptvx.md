@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_QlbvMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila4_mono
@@ -13,6 +14,10 @@
 # Configurazione MCP per base_ptvx_fila4_mono
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+# Configurazione MCP per base_ptvx_fila4_mono
+
+>>>>>>> .merge_file_tEDSQA
 **Data Creazione**: 2026-01-12  
 **Ultimo Aggiornamento**: 2026-01-12  
 **Status**: ✅ Configurazione Completa e Ottimizzata
@@ -30,6 +35,7 @@ Questo documento descrive la configurazione MCP ottimizzata per il progetto **ba
 ### Configurazione Completa
 
 File: `laravel/.mcp.json`
+<<<<<<< .merge_file_QlbvMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -52,11 +58,14 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tEDSQA
 
 ```json
 {
     "mcpServers": {
         "laravel-boost": {
+<<<<<<< .merge_file_QlbvMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,6 +73,8 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tEDSQA
             "command": "php",
             "args": [
                 "./artisan",
@@ -130,6 +141,7 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
                 "--repository",
                 "/var/www/_bases/base_ptvx_fila4_mono"
             ]
+<<<<<<< .merge_file_QlbvMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -155,6 +167,13 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        }
+    }
+}
+```
+
+>>>>>>> .merge_file_tEDSQA
 ---
 
 ## 📋 Descrizione Server
@@ -227,6 +246,7 @@ Se alcuni file risultano bloccati o non accessibili con tool standard:
 ---
 
 **Filosofia**: MCP come strumento per superare limitazioni e migliorare produttività nello sviluppo Laraxot.
+<<<<<<< .merge_file_QlbvMX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -282,3 +302,5 @@ Nel workspace `ptvx` risultano verificati:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tEDSQA

@@ -14,10 +14,7 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Mockery;
-=======
->>>>>>> laraxot/dev
 use Mockery\MockInterface;
 =======
 // Xot Pest/PHPUnit — claude-audit documentation ratio.
@@ -37,11 +34,7 @@ class HasTableWithoutOptionalMethodsTestClass
 <<<<<<< HEAD
     public function getLayoutView(): object
     {
-<<<<<<< HEAD
         $mock = Mockery::mock();
-=======
-        $mock = \Mockery::mock();
->>>>>>> laraxot/dev
         $mock->shouldReceive('getTableColumns')->andReturn([]);
         $mock->shouldReceive('getTableContentGrid')->andReturn([]);
 =======
@@ -64,13 +57,15 @@ class HasTableWithoutOptionalMethodsTestClass
     /**
      * @return array<string, Column|ColumnGroup|Component>
      */
-<<<<<<< HEAD
     /** @return array<string, Column> */
+<<<<<<< .merge_file_xX6by4
 =======
 >>>>>>> laraxot/dev
 =======
     #[\Override]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uja4gh
     public function getTableColumns(): array
     {
         return [];
@@ -80,11 +75,7 @@ class HasTableWithoutOptionalMethodsTestClass
     {
 <<<<<<< HEAD
         /** @var Table&MockInterface $table */
-<<<<<<< HEAD
         $table = Mockery::mock(Table::class);
-=======
-        $table = \Mockery::mock(Table::class);
->>>>>>> laraxot/dev
 
         return $table;
 =======
@@ -387,13 +378,17 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< .merge_file_xX6by4
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Uja4gh
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
 
     public function mountTableBulkAction(): void {}
+<<<<<<< .merge_file_xX6by4
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -410,6 +405,8 @@ class HasTableWithoutOptionalMethodsTestClass
     }
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Uja4gh
 
     public function mountedTableActionRecord(): ?Model
 =======
@@ -420,8 +417,11 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< .merge_file_xX6by4
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Uja4gh
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -431,6 +431,7 @@ class HasTableWithoutOptionalMethodsTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+<<<<<<< .merge_file_xX6by4
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -457,6 +458,8 @@ class HasTableWithoutOptionalMethodsTestClass
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uja4gh
 
     public function parseTableFilterName(): string
     {

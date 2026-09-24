@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_z2D5wy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MXE3H5
+=======
+>>>>>>> .merge_file_rsC1VC
 ---
 title: "Readme"
 type: reference
@@ -27,33 +30,6 @@ updated: 2026-08-24
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
-<<<<<<< .merge_file_RYtcQU
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_MXE3H5
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-<<<<<<< .merge_file_RYtcQU
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_MXE3H5
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -83,6 +59,7 @@ updated: 2026-08-24
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< .merge_file_z2D5wy
 <<<<<<< .merge_file_RYtcQU
 =======
 <<<<<<< HEAD
@@ -310,3 +287,5 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rsC1VC

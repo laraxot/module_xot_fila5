@@ -29,6 +29,7 @@ class HtmlToPdfAction
         string $pdforientation = 'L',
         string $filename = '',
     ): string {
+<<<<<<< .merge_file_NqfU3d
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($filename === '') {
@@ -38,6 +39,9 @@ class HtmlToPdfAction
 =======
         if ('' === $filename) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($filename === '') {
+>>>>>>> .merge_file_mnWqB5
             $filename = Storage::disk('local')->path('test.pdf');
         }
 
@@ -49,13 +53,17 @@ class HtmlToPdfAction
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
+<<<<<<< .merge_file_NqfU3d
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_mnWqB5
             if ($out === 'content_PDF') {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ($out === 'file') {
+<<<<<<< .merge_file_NqfU3d
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -68,6 +76,8 @@ class HtmlToPdfAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_mnWqB5
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

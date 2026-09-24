@@ -224,6 +224,7 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/docs/forms)
 - [Best Practices Filament](../docs/filament-best-practices.md)
 - [Schema Conventions](../docs/schema-conventions.md)
+<<<<<<< .merge_file_cShXBO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -279,3 +280,5 @@ php artisan view:clear
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_pAEhH7

@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Forms\Components\XotBaseCheckboxList;
 
+<<<<<<< .merge_file_q35Xiy
 <<<<<<< HEAD
 <<<<<<< HEAD
 final class XotAbsCheckbox3 extends XotBaseCheckboxList {}
@@ -29,3 +30,6 @@ final class XotAbsCheckbox3 extends XotBaseCheckboxList
 {
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+final class XotAbsCheckbox3 extends XotBaseCheckboxList {}
+>>>>>>> .merge_file_H5KRBB

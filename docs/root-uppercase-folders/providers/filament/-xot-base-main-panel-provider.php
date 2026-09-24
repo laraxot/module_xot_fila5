@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_20wSkQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -9,6 +10,8 @@ declare(strict_types=1);
 =======
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MOYfvy
 /**
  * Base provider for the Xot main panel in Filament.
  *

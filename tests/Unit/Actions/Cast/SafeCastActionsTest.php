@@ -33,14 +33,18 @@ test('safe array cast action works', function (): void {
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     Assert::assertSame(['c' => 3], $action->execute((object) ['c' => 3]));
     Assert::assertSame(['scalar'], $action->execute('scalar'));
+<<<<<<< .merge_file_xxWw2G
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_kYzxgG
     Assert::assertSame(['d' => 4], $action->execute(new class
     {
         public int $d = 4;
     }));
     Assert::assertSame(['e' => 5], $action->execute(new class
     {
+<<<<<<< .merge_file_xxWw2G
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -52,12 +56,15 @@ test('safe array cast action works', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kYzxgG
         /** @return array<string, int> */
         public function toArray(): array
         {
             return ['e' => 5];
         }
     }));
+<<<<<<< .merge_file_xxWw2G
 <<<<<<< HEAD
 <<<<<<< HEAD
     Assert::assertSame(['f' => 6], $action->execute(new class
@@ -68,6 +75,10 @@ test('safe array cast action works', function (): void {
 =======
     Assert::assertSame(['f' => 6], $action->execute(new class {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    Assert::assertSame(['f' => 6], $action->execute(new class
+    {
+>>>>>>> .merge_file_kYzxgG
         /** @return array<string, int> */
         public function __toArray(): array
         {
@@ -108,9 +119,9 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(123, $action->execute(' +123 '));
     Assert::assertSame(1, $action->execute(true));
     Assert::assertSame(789, $action->execute(['789']));
-<<<<<<< HEAD
     Assert::assertSame(1011, $action->execute(new class
     {
+<<<<<<< .merge_file_xxWw2G
 =======
     Assert::assertSame(1011, $action->execute(new class {
 >>>>>>> laraxot/dev
@@ -121,6 +132,8 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(789, $action->execute(['789']));
     Assert::assertSame(1011, $action->execute(new class {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kYzxgG
         public function __toString(): string
         {
             return '1011';

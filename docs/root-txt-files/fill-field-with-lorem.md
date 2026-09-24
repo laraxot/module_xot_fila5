@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_JuuXWH
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +10,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_VNUNqL
 title: "fill_field_with_lorem"
 module: "Xot"
 type: concept
@@ -95,6 +98,7 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+<<<<<<< .merge_file_JuuXWH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -199,3 +203,5 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_VNUNqL

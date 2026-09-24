@@ -17,6 +17,7 @@ In tutto il progetto, **usare SEMPRE** i campi `first_name` e `last_name` per ra
 
 ## Collegamenti
 - [Errore e regola nel modulo Patient](../../Patient/docs/naming-user-fields.md)
+<<<<<<< .merge_file_0jqILi
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -27,11 +28,14 @@ In tutto il progetto, **usare SEMPRE** i campi `first_name` e `last_name` per ra
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_VNJsdt
 
 **Questa regola è trasversale e vincolante per tutti i moduli del progetto.**
 
 ## Collegamenti tra versioni di naming-user-fields.md
 * [naming-user-fields.md](../../Patient/docs/naming-user-fields.md)
+<<<<<<< .merge_file_0jqILi
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,3 +46,5 @@ In tutto il progetto, **usare SEMPRE** i campi `first_name` e `last_name` per ra
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_VNJsdt

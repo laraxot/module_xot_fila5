@@ -60,15 +60,19 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_guC05J
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_UptMzE
 - [Sistema di Collegamenti della Documentazione](../../../../docs/collegamenti-documentazione.md)
 - [Linee Guida per la Documentazione in Xot](./documentation-guidelines.md)
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/percorsi_relativi_documentazione.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/prompts_documentation_system.md)
+<<<<<<< .merge_file_guC05J
 <<<<<<< HEAD
 =======
 =======
@@ -84,3 +88,5 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_UptMzE

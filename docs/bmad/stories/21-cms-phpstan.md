@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_t2JVhT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_I4N3LM
 # BMAD Story 21 — Cms: 7 errori PHPStan (test)
 
 **Modulo:** `Cms`

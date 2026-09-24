@@ -43,6 +43,7 @@ interface StateContract
     /**
      * Execute modal action by record.
      *
+<<<<<<< .merge_file_zfLZKn
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -73,6 +74,9 @@ interface StateContract
 =======
      * @param array<string, mixed> $data
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_3g2ym4
      */
     public function modalActionByRecord(Model $record, array $data): void;
 }

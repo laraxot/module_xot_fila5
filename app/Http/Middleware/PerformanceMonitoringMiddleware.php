@@ -7,13 +7,17 @@ namespace Modules\Xot\Http\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
+<<<<<<< .merge_file_dURLx0
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_u2Gf9N
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
 use function Safe\sys_getloadavg;
 
+<<<<<<< .merge_file_dURLx0
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -27,6 +31,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_u2Gf9N
 /**
  * Middleware per il monitoring delle performance.
  *
@@ -35,6 +41,7 @@ use Webmozart\Assert\Assert;
  */
 class PerformanceMonitoringMiddleware
 {
+<<<<<<< .merge_file_dURLx0
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function __construct() {}
@@ -48,6 +55,9 @@ class PerformanceMonitoringMiddleware
     {
     }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function __construct() {}
+>>>>>>> .merge_file_u2Gf9N
 
     /**
      * Handle an incoming request.

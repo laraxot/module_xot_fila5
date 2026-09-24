@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_7FlJ3g
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_eG0c80
 ---
 title: IDE Helper e property_exists — nota storica
 type: historical
@@ -24,6 +27,7 @@ Questo documento registrava una precedente wave di analisi. I comandi e le metri
 - Mantenere `property_exists()` per normali oggetti PHP con proprietà dichiarate.
 
 Owner operativo: [ide-helper-models-governance.md](./ide-helper-models-governance.md). Guida al refactoring: [property-exists-replacement-guide.md](./property-exists-replacement-guide.md).
+<<<<<<< .merge_file_7FlJ3g
 <<<<<<< HEAD
 =======
 =======
@@ -248,3 +252,5 @@ La filosofia è chiara: rispettare l'architettura Eloquent e fidarsi delle annot
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_eG0c80

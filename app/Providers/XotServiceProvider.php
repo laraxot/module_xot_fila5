@@ -6,10 +6,7 @@ namespace Modules\Xot\Providers;
 
 <<<<<<< HEAD
 use Composer\Autoload\ClassLoader;
-<<<<<<< HEAD
-=======
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
->>>>>>> laraxot/dev
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -37,13 +34,6 @@ use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-use Modules\Xot\View\Composers\XotComposer;
-use Webmozart\Assert\Assert;
-
-use function Safe\realpath;
-
-=======
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
 =======
 use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
@@ -51,15 +41,19 @@ use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 >>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\View\Composers\XotComposer;
+use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
 
+<<<<<<< .merge_file_2s8AaF
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aFdL1z
 /**
  * Class XotServiceProvider.
  */
@@ -96,9 +90,12 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandlersRepository();
         // $this->extendExceptionHandler();
         $this->registerCommands();
+<<<<<<< .merge_file_2s8AaF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_aFdL1z
         $this->registerExportJobs();
     }
 
@@ -111,9 +108,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     private function registerExportJobs(): void
     {
         $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
+<<<<<<< .merge_file_2s8AaF
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aFdL1z
     }
 
     public function registerProviders(): void
@@ -136,8 +136,8 @@ class XotServiceProvider extends XotBaseServiceProvider
             return;
         }
 
-<<<<<<< HEAD
         (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
+<<<<<<< .merge_file_2s8AaF
 =======
         (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
 >>>>>>> laraxot/dev
@@ -148,6 +148,8 @@ class XotServiceProvider extends XotBaseServiceProvider
 
         (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aFdL1z
     }
 
     public function registerTimezone(): void
@@ -239,6 +241,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
+<<<<<<< .merge_file_2s8AaF
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
@@ -248,10 +251,14 @@ class XotServiceProvider extends XotBaseServiceProvider
 =======
             if ('php' !== $file->getExtension()) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($file->getExtension() !== 'php') {
+>>>>>>> .merge_file_aFdL1z
                 continue;
             }
 
             $realPath = $file->getRealPath();
+<<<<<<< .merge_file_2s8AaF
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($realPath === false) {
@@ -261,6 +268,9 @@ class XotServiceProvider extends XotBaseServiceProvider
 =======
             if (false === $realPath) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($realPath === false) {
+>>>>>>> .merge_file_aFdL1z
                 continue;
             }
 

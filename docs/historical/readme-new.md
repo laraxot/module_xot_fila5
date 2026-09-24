@@ -665,6 +665,7 @@ Located in `bashscripts/`:
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
+<<<<<<< .merge_file_S6ygmI
 <<<<<<< HEAD
 <<<<<<< HEAD
 See [CHANGELOG.md](changelog.md) for full history.
@@ -682,6 +683,9 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 =======
 See [CHANGELOG.md](changelog.md) for full history.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+See [CHANGELOG.md](changelog.md) for full history.
+>>>>>>> .merge_file_MU6TBt
 
 ---
 

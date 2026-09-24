@@ -75,6 +75,7 @@ echo $tenants->count(); // ✅ Output: 1
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+<<<<<<< .merge_file_DWAjVQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,6 +87,8 @@ echo $tenants->count(); // ✅ Output: 1
 =======
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_n7zbha
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -108,6 +111,7 @@ echo $tenants->count(); // ✅ Output: 1
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
+<<<<<<< .merge_file_DWAjVQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -130,6 +134,8 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_n7zbha
 
 ## Soluzione Implementata
 
@@ -167,6 +173,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 - ✅ Multi-tenancy cross-database
 
 ### Moduli Affetti
+<<<<<<< .merge_file_DWAjVQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Quaeris Module**: Customer-User relationships
@@ -182,6 +189,9 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 - **healthcare_app Module**: Customer-User relationships
 - **Modulo con database separato**: Customer-User relationships
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- **Quaeris Module**: Customer-User relationships
+>>>>>>> .merge_file_n7zbha
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 
@@ -211,6 +221,7 @@ echo $tenants->count(); // ✅ Output: 1
 
 - [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+<<<<<<< .merge_file_DWAjVQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -224,6 +235,8 @@ echo $tenants->count(); // ✅ Output: 1
 - [Customer User Fix Summary](../../healthcare_app/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_n7zbha
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -235,6 +248,7 @@ echo $tenants->count(); // ✅ Output: 1
 
 ---
 
+<<<<<<< .merge_file_DWAjVQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
@@ -248,3 +262,6 @@ echo $tenants->count(); // ✅ Output: 1
 =======
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+>>>>>>> .merge_file_n7zbha

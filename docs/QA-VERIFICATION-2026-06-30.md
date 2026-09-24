@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_zQYu9f
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_spKBEK
 title: "Qa Verification"
 type: concept
 status: deprecated
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [QA-VERIFICATION.md](./qa-verification.md)
+<<<<<<< .merge_file_zQYu9f
 <<<<<<< HEAD
 =======
 =======
@@ -191,3 +195,5 @@ Read `ERROR-ANALYSIS-HELPERS-CAPITALIZATION.md` and `ERROR-ANALYSIS-FOLDER-RENAM
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_spKBEK

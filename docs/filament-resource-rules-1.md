@@ -66,15 +66,19 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_EqAjRG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dw1EyD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EqAjRG
 <<<<<<< HEAD
 =======
 =======
@@ -84,6 +88,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_dw1EyD
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -179,15 +185,19 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_EqAjRG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dw1EyD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_EqAjRG
 <<<<<<< HEAD
 =======
 =======
@@ -197,6 +207,8 @@ class DoctorResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_dw1EyD
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

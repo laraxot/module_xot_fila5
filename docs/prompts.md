@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_zpRX1v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -30,6 +31,8 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SJw0X0
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:
@@ -94,6 +97,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/docs/prompts.md)
+<<<<<<< .merge_file_zpRX1v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -104,6 +108,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SJw0X0
 
 ## Modifiche al Prompt docs.txt
 
@@ -122,6 +128,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ### Collegamenti Correlati
 - [Regole Universali](./PROMPT_RULES.md)
 - [Gestione Documentazione](./DOCUMENTATION_MANAGEMENT.md)
+<<<<<<< .merge_file_zpRX1v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -133,6 +140,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SJw0X0
 - [Struttura Moduli](./module-structure.md)
 
 ## Errori Comuni da Evitare
@@ -140,6 +149,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ### Percorsi Assoluti
 ⚠️ **Problema Identificato**: Uso di percorsi assoluti nei collegamenti
 ❌ Esempio errato: `../Xot/docs/file.md`
+<<<<<<< .merge_file_zpRX1v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -150,6 +160,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_SJw0X0
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore
@@ -236,6 +248,7 @@ Il prompt `docs.txt` serve come:
 3. **Collegamenti Standardizzati**:
    ```markdown
    [Documento](./path/relativo) #tag-correlati
+<<<<<<< .merge_file_zpRX1v
 <<<<<<< HEAD
 <<<<<<< HEAD
    ```
@@ -249,3 +262,6 @@ Il prompt `docs.txt` serve come:
 =======
    ```
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   ```
+>>>>>>> .merge_file_SJw0X0

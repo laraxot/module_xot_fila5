@@ -14,6 +14,7 @@ class CreateMorphToOneRelatedModelAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_OKlcLJ
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
@@ -31,12 +32,16 @@ class CreateMorphToOneRelatedModelAction
 =======
      * @param array<string, mixed> $attributes
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $attributes
+>>>>>>> .merge_file_HNcyy4
      */
     public function execute(object $relation, array $attributes): Model
     {
         $this->assertHasCreate($relation);
 
         $created = $relation->create($attributes);
+<<<<<<< .merge_file_OKlcLJ
 <<<<<<< HEAD
 <<<<<<< HEAD
         Assert::isInstanceOf($created, Model::class);
@@ -52,6 +57,9 @@ class CreateMorphToOneRelatedModelAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        Assert::isInstanceOf($created, Model::class);
+>>>>>>> .merge_file_HNcyy4
 
         return $created;
     }

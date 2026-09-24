@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,11 +12,14 @@ use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 =======
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OocQub
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -23,6 +27,8 @@ use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OocQub
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -63,6 +69,7 @@ it('throws when fixType receives a non-array item', function (): void {
 });
 
 it('returns recursive diff', function (): void {
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
     $action = new DiffAssocRecursiveAction;
@@ -72,6 +79,9 @@ it('returns recursive diff', function (): void {
 =======
     $action = new DiffAssocRecursiveAction();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $action = new DiffAssocRecursiveAction;
+>>>>>>> .merge_file_OocQub
     $left = ['items' => [
         ['id' => '1', 'name' => 'a'],
         ['id' => '2', 'name' => 'b'],
@@ -86,6 +96,7 @@ it('returns recursive diff', function (): void {
 });
 
 it('covers all branches of range intersect', function (): void {
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
     $action = new RangeIntersectAction;
@@ -95,6 +106,9 @@ it('covers all branches of range intersect', function (): void {
 =======
     $action = new RangeIntersectAction();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $action = new RangeIntersectAction;
+>>>>>>> .merge_file_OocQub
 
     Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
     Assert::assertSame([2, 5], $action->execute(1, 7, 2, 5));
@@ -105,6 +119,7 @@ it('covers all branches of range intersect', function (): void {
     Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 it('writes JSON and PHP arrays', function (): void {
@@ -126,12 +141,16 @@ it('writes JSON and PHP arrays via Arr actions', function (): void {
 =======
 it('writes JSON and PHP arrays', function (): void {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+it('writes JSON and PHP arrays', function (): void {
+>>>>>>> .merge_file_OocQub
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
     $jsonFile = $tmpDir.'/data.json';
     $phpFile = $tmpDir.'/data.php';
 
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
     $jsonAction = new SaveJsonArrayAction;
@@ -144,6 +163,10 @@ it('writes JSON and PHP arrays', function (): void {
     $jsonAction = new SaveJsonArrayAction();
     $phpAction = new SavePhpArrayAction();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $jsonAction = new SaveJsonArrayAction;
+    $phpAction = new SavePhpArrayAction;
+>>>>>>> .merge_file_OocQub
 
     Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
     Assert::assertFileExists($phpFile);
@@ -157,6 +180,7 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
     $tmpDir = sys_get_temp_dir().'/xot-save-array-action-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
     $action = new SaveArrayAction;
@@ -166,6 +190,9 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
 =======
     $action = new SaveArrayAction();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $action = new SaveArrayAction;
+>>>>>>> .merge_file_OocQub
     $jsonFile = $tmpDir.'/one.json';
     $phpFile = $tmpDir.'/one.php';
 
@@ -175,6 +202,7 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
 
 it('throws on unsupported save format in SaveArrayAction', function (): void {
     try {
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
         $action = new SaveArrayAction;
@@ -184,12 +212,16 @@ it('throws on unsupported save format in SaveArrayAction', function (): void {
 =======
         $action = new SaveArrayAction();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $action = new SaveArrayAction;
+>>>>>>> .merge_file_OocQub
         $action->execute(['x' => 1], '/tmp/unused', 'xml');
         Assert::fail('Expected exception not thrown');
     } catch (InvalidArgumentException) {
         // Expected
     }
 });
+<<<<<<< .merge_file_MGxSlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -219,3 +251,5 @@ it('converts mixed PHP arrays to RawJs correctly', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OocQub

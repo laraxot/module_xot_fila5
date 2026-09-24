@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< .merge_file_7fK5wR
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
@@ -22,6 +23,11 @@ use Illuminate\Database\Eloquent\Relations\Relation;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Filament\Widgets\Concerns\InteractsWithPageFilters;
+use Filament\Widgets\TableWidget as FilamentTableWidget;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> .merge_file_WU7Uka
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -46,8 +52,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 <<<<<<< HEAD
      * Ascolta evento di aggiornamento filtri.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $filters
+<<<<<<< .merge_file_7fK5wR
 =======
      * @param array<string, mixed> $filters
 >>>>>>> laraxot/dev
@@ -103,6 +109,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
      *
      * @param array<string, mixed> $filters
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WU7Uka
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
@@ -112,6 +120,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     }
 
     /**
+<<<<<<< .merge_file_7fK5wR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -140,6 +149,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WU7Uka
      * Restituisce una chiave univoca per ogni record.
      * Usa _id che è l'alias della primary key creato da withAnswersLabel().
      *
@@ -154,6 +165,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
+<<<<<<< .merge_file_7fK5wR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -176,4 +188,6 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WU7Uka
 }

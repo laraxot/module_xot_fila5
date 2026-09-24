@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_fe2ivA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vZuxQf
 ---
 title: "Git Conflicts Resolution Jan"
 type: concept
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [git-conflicts-resolution-jan.md](./git-conflicts-resolution-jan.md)
+<<<<<<< .merge_file_fe2ivA
 <<<<<<< HEAD
 =======
 =======
@@ -231,3 +235,5 @@ php artisan lang:check
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_vZuxQf

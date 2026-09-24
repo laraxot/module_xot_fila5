@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_D29Imp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_sB6O0y
 # BMAD Story 03 — XotBaseResourceForm: `use HasXotForm`
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

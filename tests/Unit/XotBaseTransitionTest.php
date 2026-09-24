@@ -61,13 +61,17 @@ describe('XotBaseTransition', function (): void {
     it('can send notifications without errors', function (): void {
         $record = UserFactory::new()->createOne();
 
+<<<<<<< .merge_file_2cAMNi
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_jnqoLk
         $transition = new class($record) extends XotBaseTransition
         {
             public static string $name = 'test_transition';
 
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
+<<<<<<< .merge_file_2cAMNi
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -81,6 +85,8 @@ describe('XotBaseTransition', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_jnqoLk
         };
 
         $transition->sendNotifications();
@@ -99,6 +105,7 @@ describe('XotBaseTransition', function (): void {
     it('returns correct notification recipients structure', function (): void {
         $record = UserFactory::new()->createOne();
 
+<<<<<<< .merge_file_2cAMNi
 <<<<<<< HEAD
 <<<<<<< HEAD
         $transition = new class($record) extends XotBaseTransition
@@ -109,6 +116,10 @@ describe('XotBaseTransition', function (): void {
 =======
         $transition = new class($record) extends XotBaseTransition {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $transition = new class($record) extends XotBaseTransition
+        {
+>>>>>>> .merge_file_jnqoLk
             public static string $name = 'test_transition';
         };
 
@@ -131,6 +142,7 @@ describe('XotBaseTransition', function (): void {
     it('processes recipients correctly in sendNotifications', function (): void {
         $record = UserFactory::new()->createOne();
 
+<<<<<<< .merge_file_2cAMNi
 <<<<<<< HEAD
 <<<<<<< HEAD
         $transition = new class($record) extends XotBaseTransition
@@ -141,6 +153,10 @@ describe('XotBaseTransition', function (): void {
 =======
         $transition = new class($record) extends XotBaseTransition {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $transition = new class($record) extends XotBaseTransition
+        {
+>>>>>>> .merge_file_jnqoLk
             public static string $name = 'test_mixed_transition';
 
             /**
@@ -153,6 +169,7 @@ describe('XotBaseTransition', function (): void {
                 ];
             }
 
+<<<<<<< .merge_file_2cAMNi
 <<<<<<< HEAD
 <<<<<<< HEAD
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
@@ -166,6 +183,9 @@ describe('XotBaseTransition', function (): void {
             {
             }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
+>>>>>>> .merge_file_jnqoLk
         };
 
         $transition->sendNotifications();

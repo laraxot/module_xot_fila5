@@ -13,6 +13,7 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 - No ambiguity about which migration defines the "real" table structure
 - Clear, linear evolution of database schema
 
+<<<<<<< .merge_file_tGFc3y
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### 2. **Predictable Migration Order**
@@ -26,6 +27,9 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 =======
 ### 2. **Predictable Migration Order**
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+### 2. **Predictable Migration Order**
+>>>>>>> .merge_file_xMD4Q3
 - No confusion about which migration runs first
 - Consistent behavior across all environments (local, staging, production)
 - Eliminates race conditions in migration execution
@@ -69,6 +73,7 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
+<<<<<<< .merge_file_tGFc3y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -83,6 +88,8 @@ Modifiche schema: editare la stessa migrazione e aggiornare il timestamp nel nom
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_xMD4Q3
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
@@ -98,6 +105,7 @@ Modules/User/database/migrations/
 
 ### ✅ CREATE NEW MIGRATION
 - **New Table**: `create_{table}_table.php`
+<<<<<<< .merge_file_tGFc3y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -123,6 +131,8 @@ Modules/User/database/migrations/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_xMD4Q3
 - **Schema Changes**: `add_{column}_to_{table}.php`
 - **Data Migrations**: `migrate_{purpose}.php`
 
@@ -174,6 +184,7 @@ When duplicate migrations are discovered:
 ### Laraxot Core Values
 - **Simplicity**: One table, one migration, no exceptions
 - **Clarity**: Clear, unambiguous schema definitions
+<<<<<<< .merge_file_tGFc3y
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Predictability**: Consistent migration behavior across environments
@@ -187,6 +198,9 @@ When duplicate migrations are discovered:
 =======
 - **Predictability**: Consistent migration behavior across environments
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- **Predictability**: Consistent migration behavior across environments
+>>>>>>> .merge_file_xMD4Q3
 - **Maintainability**: Easy to understand and modify schema evolution
 
 ### Why This Matters
@@ -194,6 +208,7 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 
 ---
 
+<<<<<<< .merge_file_tGFc3y
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
@@ -207,3 +222,6 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 =======
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
+>>>>>>> .merge_file_xMD4Q3

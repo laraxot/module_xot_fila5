@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_ejbBW1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_YwzO8R
 # HandlerDecorator
 
 ## Descrizione
@@ -46,6 +49,7 @@ class HandlerDecorator implements ExceptionHandlerContract
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Error Formatters](./formatters/readme.md)
+<<<<<<< .merge_file_ejbBW1
 <<<<<<< HEAD
 =======
 =======
@@ -64,3 +68,5 @@ See canonical documentation: ../../../../Themes/docs/shared-components/handler-d
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_YwzO8R

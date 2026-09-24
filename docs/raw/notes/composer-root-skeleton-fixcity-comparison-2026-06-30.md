@@ -1,6 +1,9 @@
 ---
+<<<<<<< .merge_file_CN6ZAx
 <<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
+=======
+>>>>>>> .merge_file_mRgp0k
 title: "Composer Root Skeleton Fixcity Comparison"
 type: concept
 status: deprecated
@@ -15,6 +18,7 @@ related:
 
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
+<<<<<<< .merge_file_CN6ZAx
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -36,6 +40,8 @@ source:
 >>>>>>> .merge_file_iNeHny
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_mRgp0k
 ## Osservazione FixCity
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
@@ -58,6 +64,7 @@ Root allineato e piu' stretto di FixCity:
 - autoload solo `App\\` e `Tests\\`
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
+<<<<<<< .merge_file_CN6ZAx
 <<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 =======
@@ -67,6 +74,8 @@ Root allineato e piu' stretto di FixCity:
 ## Osservazione FixCity
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> .merge_file_iNeHny
+=======
+>>>>>>> .merge_file_mRgp0k
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
 
@@ -76,14 +85,11 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Debito FixCity (non replicare in Predict)
 
-<<<<<<< .merge_file_eHlvf2
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_iNeHny
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`);
 - `Modules\\` nell'autoload root;
 - merge di `Themes/*/composer.json`;
 - configurazione merge-plugin piu' ampia del necessario.
+<<<<<<< .merge_file_CN6ZAx
 <<<<<<< .merge_file_eHlvf2
 =======
 >>>>>>> 64619e34 (.)
@@ -104,6 +110,8 @@ Root allineato e piu' stretto di FixCity:
 >>>>>>> .merge_file_iNeHny
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_mRgp0k
 
 ## Regola dedotta
 

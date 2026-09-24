@@ -58,7 +58,7 @@ class ExportXlsxAction extends XotBaseExportAction
                 $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_xlsx.tooltip';
                 $translated = __($key);
 
-                if (\is_string($translated) && $translated !== $key && 'export_xlsx' !== $translated) {
+                if (\is_string($translated) && $translated !== $key && $translated !== 'export_xlsx') {
                     return $translated;
                 }
 

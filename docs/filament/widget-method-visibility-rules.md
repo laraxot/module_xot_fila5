@@ -1,5 +1,6 @@
 # Regole Visibilità Metodi Widget - HasXotTable
 
+<<<<<<< .merge_file_NBmRbC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,10 +31,10 @@ Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perc
 **Ultimo aggiornamento**: 2026-09-03
 =======
 =======
+=======
+>>>>>>> .merge_file_kC97zK
 **Status**: Critico
 **Ultimo aggiornamento**: 2026-09-03
->>>>>>> .merge_file_K6IqQn
->>>>>>> laraxot/dev
 
 ## Regola Fondamentale
 
@@ -41,6 +42,7 @@ Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perc
 
 In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTableActions`, `getTableBulkActions` devono essere migrati verso `table(Table $table): Table`. La regola `resolve*` non esiste come metodo: usare sempre `get*`.
 
+<<<<<<< .merge_file_NBmRbC
 <<<<<<< HEAD
 =======
 =======
@@ -74,6 +76,8 @@ In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTabl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kC97zK
 ## Metodi che Devono Essere Public
 
 | Metodo | Visibilità Richiesta | Motivo |
@@ -101,6 +105,7 @@ In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTabl
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_NBmRbC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -124,6 +129,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 =======
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_kC97zK
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
@@ -168,6 +176,7 @@ class MyWidget extends XotBaseTableWidget
 ### Errore: Access level must be public
 
 ```
+<<<<<<< .merge_file_NBmRbC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -191,6 +200,9 @@ PHP Fatal error: Access level to Widget::getTableHeaderActions()
 =======
 PHP Fatal error: Access level to Widget::getTableHeaderActions() 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+PHP Fatal error: Access level to Widget::getTableHeaderActions()
+>>>>>>> .merge_file_kC97zK
 must be public (as in class HasXotTable)
 ```
 
@@ -198,6 +210,7 @@ must be public (as in class HasXotTable)
 
 **Soluzione**: Cambiare visibilità a `public`
 
+<<<<<<< .merge_file_NBmRbC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,6 +236,8 @@ must be public (as in class HasXotTable)
 =======
 >>>>>>> .merge_file_K6IqQn
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kC97zK
 ## Convenzioni di Naming
 
 - `get*()` (mai `resolve*`, `getXot*`): convention Filament/Livewire standard
@@ -233,6 +248,7 @@ must be public (as in class HasXotTable)
 
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
 - [Filament 5 Migration Guide](https://filamentphp.com/docs/5.x/tables/upgrade-guide)
+<<<<<<< .merge_file_NBmRbC
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WDdGMm
@@ -254,3 +270,5 @@ must be public (as in class HasXotTable)
 =======
 - [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kC97zK

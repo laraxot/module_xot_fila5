@@ -121,6 +121,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
+<<<<<<< .merge_file_wtEf3v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -129,6 +130,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 =======
     #[\Override]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MA5LV1
     public function getTableColumns(): array
     {
         return [
@@ -179,6 +182,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< .merge_file_wtEf3v
 <<<<<<< HEAD
 <<<<<<< HEAD
                     if ($url === '') {
@@ -188,6 +192,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 =======
                     if ('' === $url) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+                    if ($url === '') {
+>>>>>>> .merge_file_MA5LV1
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -200,6 +207,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< .merge_file_wtEf3v
 <<<<<<< HEAD
 <<<<<<< HEAD
                     if ($url === '') {
@@ -209,6 +217,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 =======
                     if ('' === $url) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+                    if ($url === '') {
+>>>>>>> .merge_file_MA5LV1
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 

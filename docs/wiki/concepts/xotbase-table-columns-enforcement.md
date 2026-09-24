@@ -4,15 +4,19 @@ type: concept
 sources: []
 confidence: high
 created: 2026-05-07
+<<<<<<< .merge_file_hlOwV6
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_hAH1MG
 updated: 2026-07-16
 qmd: "xotbase filament mirror inheritance"
 issues: ["https://github.com/laraxot/base_techplanner_fila5/issues/45"]
 discussions: ["https://github.com/laraxot/base_techplanner_fila5/discussions/12"]
+<<<<<<< .merge_file_hlOwV6
 <<<<<<< HEAD
 =======
 =======
@@ -22,6 +26,8 @@ updated: 2026-05-07
 =======
 updated: 2026-05-07
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_hAH1MG
 tags: [xotbase, filament, tables, enforcement]
 related:
   - xotbase-resource-form-pattern.md
@@ -42,6 +48,7 @@ related:
 Resources: CacheLock, Cache, Extra, Log, Module, Session
 
 Note: XotBaseResourceTable.php itself is the abstract base class (not counted above).
+<<<<<<< .merge_file_hlOwV6
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -55,3 +62,7 @@ Note: XotBaseResourceTable.php itself is the abstract base class (not counted ab
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+
+>>>>>>> .merge_file_hAH1MG
