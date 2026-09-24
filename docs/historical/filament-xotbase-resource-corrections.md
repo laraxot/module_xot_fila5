@@ -167,6 +167,7 @@ use Filament\Forms\Components\TextInput;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_RIflln
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -175,10 +176,13 @@ class ExampleResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_Kn8Sgt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZRt3d2
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RIflln
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_I8kj5o
@@ -191,6 +195,8 @@ class ExampleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZRt3d2
     {
         return [
             TextInput::make('name')->required(),

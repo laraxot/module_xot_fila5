@@ -1,6 +1,7 @@
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27
+<<<<<<< .merge_file_B69mQM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Fc0iUY
 
 ## Problema Identificato
 
@@ -168,6 +171,7 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 - Utilizzare sempre template generics per modelli che estendono BaseModel
 - Tipizzare sempre proprietà array come `list<string>` o `array<string, mixed>`
 - Testare sempre con PHPStan dopo modifiche ai modelli base
+<<<<<<< .merge_file_B69mQM
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Implementare test di regressione per validare le correzioni
@@ -181,3 +185,6 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 =======
 - Implementare test di regressione per validare le correzioni
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Implementare test di regressione per validare le correzioni
+>>>>>>> .merge_file_Fc0iUY

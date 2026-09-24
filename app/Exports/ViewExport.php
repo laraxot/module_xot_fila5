@@ -26,6 +26,7 @@ class ViewExport implements FromView
     /**
      * Summary of __construct.
      *
+<<<<<<< .merge_file_ft7cQA
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -56,6 +57,9 @@ class ViewExport implements FromView
 =======
      * @param array<string> $fields
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string>  $fields
+>>>>>>> .merge_file_lhyLFl
      */
     public function __construct(View $view, ?string $transKey = null, ?array $fields = null)
     {

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_poY8in
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZxjAIu
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview
@@ -264,6 +267,7 @@ try {
     Log::error('Service failure', [
         'service' => get_class($service),
         'error' => $e->getMessage(),
+<<<<<<< .merge_file_poY8in
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -520,11 +524,14 @@ try {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZxjAIu
     ]);
     throw $e;
 }
 ```
 
+<<<<<<< .merge_file_poY8in
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -539,6 +546,8 @@ try {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZxjAIu
 ### Step 4: Implement Audit Trail
 ```php
 // Create audit records for important events
@@ -606,6 +615,7 @@ Following these guidelines will:
 5. **Make debugging easier**
 6. **Scale better** under load
 
+<<<<<<< .merge_file_poY8in
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Remember**: If everything is working correctly, there should be NO log output.
@@ -839,3 +849,6 @@ Excessive logging is a performance killer that provides little value. By followi
 =======
 **Remember**: If everything is working correctly, there should be NO log output.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Remember**: If everything is working correctly, there should be NO log output.
+>>>>>>> .merge_file_ZxjAIu

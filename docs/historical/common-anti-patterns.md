@@ -329,6 +329,7 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_gbZx5n
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -337,10 +338,13 @@ class MyWidget extends XotBaseWidget
 <<<<<<< HEAD
 >>>>>>> .merge_file_J9jXrw
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_TMOOxi
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_gbZx5n
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_x8zdl0
@@ -353,6 +357,8 @@ class MyWidget extends XotBaseWidget
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TMOOxi
     {
         // Filament methods should not be static
     }
@@ -880,6 +886,7 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_gbZx5n
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -888,10 +895,13 @@ class MyWidget extends XotBaseWidget
 <<<<<<< HEAD
 >>>>>>> .merge_file_J9jXrw
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_TMOOxi
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_gbZx5n
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_x8zdl0
@@ -904,6 +914,8 @@ class MyWidget extends XotBaseWidget
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TMOOxi
     {
         // Filament methods should not be static
     }

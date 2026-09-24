@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -32,10 +33,13 @@ use Symfony\Component\Process\Process;
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_QsgMzl
 use Symfony\Component\Process\Process;
 
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
@@ -45,6 +49,8 @@ use function Safe\preg_match;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_QsgMzl
 /**
  * Comando per ottimizzare la memory usage di Filament.
  * SuperMucca Memory Optimizer Command 🐄.
@@ -173,6 +179,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -195,10 +202,13 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_QsgMzl
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Models/')) {
                 $content = File::get($file->getPathname());
 
                 if (preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches) === 1) {
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
@@ -208,6 +218,8 @@ class OptimizeFilamentMemoryCommand extends Command
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_QsgMzl
                     $withContent = $matches[1] ?? '';
                     // Controlla se ha relazioni pesanti
                     if (str_contains($withContent, 'roles')
@@ -238,6 +250,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
@@ -259,6 +272,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
             if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Widgets/')) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
+>>>>>>> .merge_file_QsgMzl
                 $content = File::get($file->getPathname());
 
                 // Cerca query senza limitazioni
@@ -288,6 +304,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
@@ -309,6 +326,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
             if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
+>>>>>>> .merge_file_QsgMzl
                 $content = File::get($file->getPathname());
 
                 // Cerca eager loading eccessivo
@@ -336,6 +356,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
@@ -357,6 +378,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
             if ('php' === $file->getExtension() && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
+>>>>>>> .merge_file_QsgMzl
                 $content = File::get($file->getPathname());
 
                 // Cerca query di migrazione nei form
@@ -386,6 +410,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
@@ -407,6 +432,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
             if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Pages/List')) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
+>>>>>>> .merge_file_QsgMzl
                 $content = File::get($file->getPathname());
 
                 // Cerca liste senza paginazione
@@ -422,6 +450,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra i risultati dell'analisi.
      *
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, array<int, string>>  $issues
@@ -443,6 +472,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
      * @param array<string, mixed> $issues
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, array<int, string>>  $issues
+>>>>>>> .merge_file_QsgMzl
      */
     private function displayAnalysisResults(array $issues): void
     {
@@ -484,6 +516,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra dettagli sui problemi trovati.
      *
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, array<int, string>>  $issues
@@ -505,6 +538,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
      * @param array<string, mixed> $issues
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, array<int, string>>  $issues
+>>>>>>> .merge_file_QsgMzl
      */
     private function displayDetailedIssues(array $issues): void
     {
@@ -523,6 +559,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Applica le ottimizzazioni.
      *
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, array<int, string>>  $issues
@@ -544,6 +581,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
      * @param array<string, mixed> $issues
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, array<int, string>>  $issues
+>>>>>>> .merge_file_QsgMzl
      */
     private function applyOptimizations(array $issues, bool $verbose = false): void
     {
@@ -582,6 +622,7 @@ class OptimizeFilamentMemoryCommand extends Command
 
         // Ottimizza le tabelle MySQL se possibile
         try {
+<<<<<<< .merge_file_17pPP8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (config('database.default') === 'mysql') {
@@ -603,6 +644,9 @@ class OptimizeFilamentMemoryCommand extends Command
 =======
             if ('mysql' === config('database.default')) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if (config('database.default') === 'mysql') {
+>>>>>>> .merge_file_QsgMzl
                 DB::statement('OPTIMIZE TABLE users');
                 // Aggiungi altre tabelle critiche se necessario
             }

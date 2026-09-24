@@ -25,8 +25,8 @@ trait HasDynamicFillable
         $dynamicFillableEnums = $this->getDynamicFillableEnums();
 
         foreach ($dynamicFillableEnums as $enumClass) {
-<<<<<<< HEAD
             if (! is_string($enumClass) || $enumClass === '') {
+<<<<<<< .merge_file_Er3gft
 =======
             if (! is_string($enumClass) || '' === $enumClass) {
 >>>>>>> laraxot/dev
@@ -41,6 +41,8 @@ trait HasDynamicFillable
         foreach ($dynamicFillableEnums as $enumClass) {
             if (! is_string($enumClass) || '' === $enumClass) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fJffNz
                 continue;
             }
 

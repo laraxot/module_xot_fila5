@@ -32,6 +32,7 @@ La documentazione generica deve essere sempre inserita nella cartella `docs` del
 
 ### Collocazione della documentazione dei componenti UI
 La documentazione dei componenti UI deve essere sempre inserita nella cartella `docs` del modulo `UI`. Vedi [ui-link.md](../UI/project_docs/README.md) per i dettagli.
+<<<<<<< .merge_file_6NkSKy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,17 +44,22 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 =======
 La documentazione dei componenti UI deve essere sempre inserita nella cartella `docs` del modulo `UI`. Vedi [ui-link.md](../ui/project_docs/readme.md) per i dettagli.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lt5t9P
 
 ## Collegamenti Bidirezionali
 - [Documentazione Generale](./documentation.md)
 - [Regole del Progetto](./rules.md)
 - [Struttura dei Prompt](./prompts.md)
 - [Collegamenti al Modulo Cms](./cms-link.md)
+<<<<<<< .merge_file_6NkSKy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lt5t9P
 - [Collegamenti alla Root](../../../project_docs/prompts.md)
 
 ## Collegamenti tra versioni di PROMPT_RULES.md
@@ -62,6 +68,7 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 
 ## Collegamenti tra versioni di prompt_rules.md
 * [prompt_rules.md](rules/prompt_rules.md)
+<<<<<<< .merge_file_6NkSKy
 <<<<<<< HEAD
 =======
 =======
@@ -83,3 +90,5 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 =======
 * [prompt_rules.md](rules/prompt_rules.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lt5t9P

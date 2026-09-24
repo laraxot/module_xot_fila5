@@ -129,6 +129,7 @@ class {ModelName}Resource extends XotBaseResource
 
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
+<<<<<<< .merge_file_8RgYrQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -137,10 +138,13 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_E2QbTE
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_SjAd9Q
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8RgYrQ
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nZas4z
@@ -153,6 +157,8 @@ class {ModelName}Resource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_SjAd9Q
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente

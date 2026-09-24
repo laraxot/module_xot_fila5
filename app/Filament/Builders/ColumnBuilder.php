@@ -95,6 +95,7 @@ class ColumnBuilder
     /**
      * Status badge column with standard colors.
      *
+<<<<<<< .merge_file_Yc6UwK
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -125,6 +126,9 @@ class ColumnBuilder
 =======
      * @param array<string, string> $customColors Custom color mappings
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, string>  $customColors  Custom color mappings
+>>>>>>> .merge_file_qXoygP
      */
     public static function statusBadge(array $customColors = []): TextColumn
     {
@@ -143,6 +147,7 @@ class ColumnBuilder
     /**
      * Priority badge column.
      *
+<<<<<<< .merge_file_Yc6UwK
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -173,6 +178,9 @@ class ColumnBuilder
 =======
      * @param array<string, string> $customColors Custom color mappings
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, string>  $customColors  Custom color mappings
+>>>>>>> .merge_file_qXoygP
      */
     public static function priorityBadge(array $customColors = []): TextColumn
     {

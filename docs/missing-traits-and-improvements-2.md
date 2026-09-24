@@ -612,6 +612,7 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_tzvcuc
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
@@ -637,6 +638,10 @@ class AlertWidget extends BaseTableWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_Z3cM8U
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -644,6 +649,7 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
+<<<<<<< .merge_file_tzvcuc
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Benefici**: ALTI
@@ -657,3 +663,6 @@ class AlertWidget extends BaseTableWidget
 =======
 **Benefici**: ALTI
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Benefici**: ALTI
+>>>>>>> .merge_file_Z3cM8U

@@ -1,13 +1,17 @@
+<<<<<<< .merge_file_PGiGWN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_EhyWKE
 # Sintesi: Applicazione dei Principi Architetturali ai Moduli LaravelPizza
 
 ## Introduzione
 
 Dopo aver studiato il pacchetto `filament-spatie-laravel-database-mail-templates` di Olivier Guerriat, abbiamo analizzato come applicare i suoi principi architetturali ai moduli del progetto LaravelPizza. Questo documento riassume le migliorie ipotetiche proposte per i vari moduli.
+<<<<<<< .merge_file_PGiGWN
 <<<<<<< HEAD
 =======
 =======
@@ -23,6 +27,8 @@ Dopo aver studiato il pacchetto `filament-spatie-laravel-database-mail-templates
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_EhyWKE
 
 ## Principi Architetturali Chiave
 
@@ -121,6 +127,7 @@ Dopo aver studiato il pacchetto `filament-spatie-laravel-database-mail-templates
 
 ## Considerazioni Finali
 
+<<<<<<< .merge_file_PGiGWN
 <<<<<<< HEAD
 <<<<<<< HEAD
 L'applicazione dei principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates` al progetto LaravelPizza rappresenta un'opportunità significativa per migliorare:
@@ -134,6 +141,9 @@ L'applicazione dei principi architetturali osservati nel pacchetto `filament-spa
 =======
 L'applicazione dei principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates` al progetto <nome progetto> rappresenta un'opportunità significativa per migliorare:
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+L'applicazione dei principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates` al progetto LaravelPizza rappresenta un'opportunità significativa per migliorare:
+>>>>>>> .merge_file_EhyWKE
 
 - La qualità del codice
 - L'esperienza di sviluppo
@@ -141,6 +151,7 @@ L'applicazione dei principi architetturali osservati nel pacchetto `filament-spa
 - La manutenibilità del sistema
 - L'estendibilità del framework
 
+<<<<<<< .merge_file_PGiGWN
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questa approccio permette di mantenere l'innovazione e la flessibilità del progetto LaravelPizza mentre si adottano best practices consolidate dal settore.
@@ -154,6 +165,9 @@ Questa approccio permette di mantenere l'innovazione e la flessibilità del prog
 =======
 Questa approccio permette di mantenere l'innovazione e la flessibilità del progetto <nome progetto> mentre si adottano best practices consolidate dal settore.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Questa approccio permette di mantenere l'innovazione e la flessibilità del progetto LaravelPizza mentre si adottano best practices consolidate dal settore.
+>>>>>>> .merge_file_EhyWKE
 
 ## Risorse Ulteriori
 
@@ -161,6 +175,7 @@ Questa approccio permette di mantenere l'innovazione e la flessibilità del prog
 - [template-improvement-roadmap.md](template-improvement-roadmap.md) - Roadmap per l'implementazione
 - [filament-architecture-principles.md](filament-architecture-principles.md) - Principi architetturali per Cms
 - [advanced-user-architecture.md](advanced-user-architecture.md) - Architettura avanzata per User
+<<<<<<< .merge_file_PGiGWN
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [advanced-framework-architecture.md](advanced-framework-architecture.md) - Architettura avanzata per Xot
@@ -174,3 +189,6 @@ Questa approccio permette di mantenere l'innovazione e la flessibilità del prog
 =======
 - [advanced-framework-architecture.md](advanced-framework-architecture.md) - Architettura avanzata per Xot
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [advanced-framework-architecture.md](advanced-framework-architecture.md) - Architettura avanzata per Xot
+>>>>>>> .merge_file_EhyWKE

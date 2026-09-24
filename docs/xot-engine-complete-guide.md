@@ -233,15 +233,19 @@ abstract class XotBaseResource extends Resource
      * Get form schema con validation automatica
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_kxuD88
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uCD86k
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kxuD88
 <<<<<<< HEAD
 =======
 =======
@@ -251,6 +255,8 @@ abstract class XotBaseResource extends Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uCD86k
     {
         return [
             // Schema base automatico
@@ -287,6 +293,7 @@ abstract class XotBaseResource extends Resource
 ```php
 // Ogni modulo DEVE avere il proprio BaseModel
 abstract class BaseModel extends XotBaseModel {
+<<<<<<< .merge_file_kxuD88
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'quaeris';  // Connection specifica
@@ -300,6 +307,9 @@ abstract class BaseModel extends XotBaseModel {
 =======
     protected $connection = 'healthcare_app';  // Connection specifica
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    protected $connection = 'quaeris';  // Connection specifica
+>>>>>>> .merge_file_uCD86k
 
     // Solo funzionalità SPECIFICHE del modulo
     // MAI duplicare ciò che XotBaseModel già fornisce
@@ -533,6 +543,7 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 
 *Documentazione Xot v1.0*
 *Creato: 2025-11-17*
+<<<<<<< .merge_file_kxuD88
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Autore: AI Assistant con analisi approfondita*
@@ -548,3 +559,6 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 *Creato: [DATE]*
 *Autore: AI Assistant con analisi approfondita*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Autore: AI Assistant con analisi approfondita*
+>>>>>>> .merge_file_uCD86k

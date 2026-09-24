@@ -77,6 +77,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< .merge_file_titcaz
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'quaeris'; // Module-specific connection
@@ -90,6 +91,9 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 =======
     protected $connection = 'module_name'; // Module-specific connection
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    protected $connection = 'quaeris'; // Module-specific connection
+>>>>>>> .merge_file_H5HoP7
 
     protected $with = [
         'extra', // Always load extra fields
@@ -137,6 +141,7 @@ The module BaseModel is where you add:
 - Module-specific relationship loading
 - Module-specific configurations
 
+<<<<<<< .merge_file_titcaz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -162,6 +167,8 @@ class Event extends BaseModel { ... }
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_H5HoP7
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -230,6 +237,7 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
+<<<<<<< .merge_file_titcaz
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Predictable patterns
@@ -243,6 +251,9 @@ class SurveyPdf extends BaseModel
 =======
 - <nome progetto>able patterns
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Predictable patterns
+>>>>>>> .merge_file_H5HoP7
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -293,6 +304,7 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 - **Type Safety**: Contract-based development
 - **DRY Compliance**: No duplicated base functionality
 
+<<<<<<< .merge_file_titcaz
 <<<<<<< HEAD
 <<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
@@ -306,3 +318,6 @@ This pattern ensures that every model in the system follows the same foundationa
 =======
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+>>>>>>> .merge_file_H5HoP7

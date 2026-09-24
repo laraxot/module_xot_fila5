@@ -15,11 +15,7 @@ uses(TestCase::class);
 <<<<<<< HEAD
 function xotModuleServiceTestInstance(): ModuleService
 {
-<<<<<<< HEAD
     return (new ModuleService)->setName('TestModule');
-=======
-    return (new ModuleService())->setName('TestModule');
->>>>>>> laraxot/dev
 }
 
 describe('ModuleService', function () {
@@ -36,13 +32,8 @@ describe('ModuleService', function () {
     });
 
     it('can be instantiated with different module names', function () {
-<<<<<<< HEAD
         $service1 = (new ModuleService)->setName('Chart');
         $service2 = (new ModuleService)->setName('User');
-=======
-        $service1 = (new ModuleService())->setName('Chart');
-        $service2 = (new ModuleService())->setName('User');
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(ModuleService::class, $service1);
         Assert::assertInstanceOf(ModuleService::class, $service2);
@@ -54,10 +45,7 @@ describe('ModuleService', function () {
 
     it('returns array from getModels method', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     });
 
     it('getModels returns correct array structure', function () {
@@ -77,10 +65,7 @@ describe('ModuleService', function () {
 
     it('handles reflection exceptions gracefully', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     });
 
     it('processes model names correctly', function () {
@@ -108,11 +93,7 @@ describe('ModuleService', function () {
     });
 
     it('handles empty module gracefully', function () {
-<<<<<<< HEAD
         $emptyService = (new ModuleService)->setName('NonExistentModule');
-=======
-        $emptyService = (new ModuleService())->setName('NonExistentModule');
->>>>>>> laraxot/dev
         $result = $emptyService->getModels();
 
         Assert::assertSame([], $result);
@@ -154,10 +135,7 @@ describe('ModuleService', function () {
 
     it('processes file extensions correctly', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     });
 
     it('validates string utilities usage', function () {
@@ -170,8 +148,8 @@ describe('ModuleService', function () {
 
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-<<<<<<< HEAD
 
+<<<<<<< .merge_file_cNYoYN
 =======
 >>>>>>> laraxot/dev
 =======
@@ -191,5 +169,7 @@ describe('ModuleAction', function (): void {
         $result = $service->getModels();
         Assert::assertContains('string', array_map('gettype', $result ?: ['string']));
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_a7uSqn
     });
 });

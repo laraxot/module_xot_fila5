@@ -29,6 +29,7 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class XotBaseModel extends EloquentModel
 {
+<<<<<<< .merge_file_tgFAeb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -37,6 +38,8 @@ abstract class XotBaseModel extends EloquentModel
 =======
     /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Epoa6W
     use HasXotFactory;
     use RelationX;
     use Updater;

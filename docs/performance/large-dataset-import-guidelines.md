@@ -64,6 +64,7 @@ try {
 
 ## Module-Specific Considerations
 
+<<<<<<< .merge_file_GyzFOE
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### Quaeris Module
@@ -79,6 +80,9 @@ try {
 ### healthcare_app Module
 ### ExternalProject Module
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+### Quaeris Module
+>>>>>>> .merge_file_rvOgiQ
 - Optimize survey contact imports
 - Implement JSON payload persistence
 - Use queue-based processing for contact operations

@@ -95,6 +95,7 @@ actionlint -color
 ## Documentation
 - Each module/theme must have `quality-tools` page linking back here.
 - Record deviations and suppressions with rationale and next review date.
+<<<<<<< .merge_file_sjzYJB
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -115,3 +116,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-tool
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Gf4I00

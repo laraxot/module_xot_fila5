@@ -13,6 +13,7 @@ use Spatie\ModelStatus\Status;
 /**
  * Modules\Xot\Contracts\ModelWithStatusContract.
  *
+<<<<<<< .merge_file_Yfe4YS
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
@@ -30,9 +31,24 @@ use Spatie\ModelStatus\Status;
  * @property string                  $tennant_name
  * @property UserContract|null       $user
  * @property string                  $status
+=======
+ * @property int $id
+ * @property int|null $user_id
+ * @property string|null $post_type
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $title
+ * @property PivotContract|null $pivot
+ * @property string $tennant_name
+ * @property UserContract|null $user
+ * @property string $status
+>>>>>>> .merge_file_SkpiBQ
  * @property Collection<int, Status> $statuses
- * @property int|null                $statuses_count
+ * @property int|null $statuses_count
  *
+<<<<<<< .merge_file_Yfe4YS
 <<<<<<< HEAD
  * @method int|string|null                              getKey()
  * @method string                                       getRouteKey()
@@ -220,6 +236,24 @@ use Spatie\ModelStatus\Status;
  *                                                                                           >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @method int|string|null getKey()
+ * @method string getRouteKey()
+ * @method string getRouteKeyName()
+ * @method string getTable()
+ * @method \Illuminate\Database\Eloquent\Builder<Model> with($array)
+ * @method list<string> getFillable()
+ * @method static fill($array)
+ * @method \Illuminate\Database\Connection getConnection()
+ * @method bool update($params)
+ * @method bool|null delete()
+ * @method int detach($params)
+ * @method void attach($params)
+ * @method bool save($params)
+ * @method array<string, mixed> treeLabel()
+ * @method array<string, mixed> treeSons()
+ * @method array<string, mixed> toArray()
+>>>>>>> .merge_file_SkpiBQ
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model

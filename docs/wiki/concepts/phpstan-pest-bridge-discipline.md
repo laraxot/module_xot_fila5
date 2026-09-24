@@ -4,6 +4,7 @@ type: concept
 module: Xot
 tags: [xot, phpstan, pest, testing, bridge]
 created: 2026-06-10
+<<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 <<<<<<< HEAD
 updated: 2026-08-31
@@ -30,12 +31,17 @@ qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helpe
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+updated: 2026-08-31
+qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge"
+>>>>>>> .merge_file_6ORiKY
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
   - ../../../../../../docs/wiki/rules/phpstan-pest-tests-stay-pest.md
+<<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 <<<<<<< HEAD
   - ../../../../../../docs/wiki/rules/pest-phpstan-bridge.md
@@ -47,16 +53,22 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+  - ../../../../../../docs/wiki/rules/pest-phpstan-bridge.md
+>>>>>>> .merge_file_6ORiKY
   - ../../../../../../docs/wiki/skills/phpstan-pest-remediation.md
 ---
 
 # PHPStan Pest Bridge Discipline
 
+<<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6ORiKY
 Xot e' il posto giusto per pattern condivisi di test/static analysis, ma **non**
 si devono stubbare le funzioni Pest nei namespace test.
 
@@ -74,6 +86,7 @@ si devono stubbare le funzioni Pest nei namespace test.
 - File Pest: **niente** `namespace …;` in cima (rompe il parser PHPStan su `uses()`).
 - HTTP: `actingAs($user); get($url)->assertOk();` — non chainare `actingAs()->get()` (Pest tipizza `actingAs` → `TestCase` / overload confusi).
 - `@var` nelle closure Pest: preferire **FQCN** anche se c’è `use` in testa al file.
+<<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 =======
 =======
@@ -102,6 +115,8 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6ORiKY
 
 ## Helper XotBaseTestCase (usare nei moduli)
 
@@ -118,6 +133,7 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 - **Fixcity:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../Fixcity/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
 - **Notify:** `notificationManager()` + trait doubles — [phpstan-pest-test-doubles](../../../Notify/docs/wiki/concepts/phpstan-pest-test-doubles.md)
 - **Xot:** test File — no `@var TestCase $this` se la closure non usa `$this`; no `assertIsString(tempnam())`
+<<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [phpstan-best-practices](../phpstan-best-practices.md) §7–8)
@@ -135,6 +151,9 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [phpstan-best-practices](../phpstan-best-practices.md) §7–8)
+>>>>>>> .merge_file_6ORiKY
 - **Tenant:** non ridefinire `mockService()`; non re-tipizzare `$model`/`$baseModel` se il parent ha `mixed`
 - **UI:** `createStub` + `willReturn(null)` per action mock; no `andReturnNull()` Mockery
 
@@ -145,6 +164,7 @@ Hub piattaforma: [platform-completion-roadmap](../overviews/platform-completion-
 Centralizzare solo se il pattern e' usato da piu' moduli:
 
 - helper per database assertion senza `$this` ambiguo;
+<<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 <<<<<<< HEAD
 - helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
@@ -168,6 +188,9 @@ Centralizzare solo se il pattern e' usato da piu' moduli:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
+>>>>>>> .merge_file_6ORiKY
 - wrapper assertion per stringhe, array shape o class-string.
 
 Non centralizzare fix one-shot di un singolo test Activity.

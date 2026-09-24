@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ExtraContract;
+<<<<<<< .merge_file_V3A0A5
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_zmh52L
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Webmozart\Assert\Assert;
 
@@ -22,6 +25,7 @@ use function Safe\json_encode;
  * @property float $price
  * @property string $price_complete
  * @property int $qty
+<<<<<<< .merge_file_V3A0A5
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -40,6 +44,8 @@ use Webmozart\Assert\Assert;
  * @property int                $qty
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_zmh52L
  * @property ExtraContract|null $extra
  */
 /** @phpstan-ignore trait.unused */
@@ -109,6 +115,7 @@ trait HasExtraTrait
     }
 
     /**
+<<<<<<< .merge_file_V3A0A5
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  int|float|string|array<string, mixed>|bool|null  $value
@@ -118,6 +125,9 @@ trait HasExtraTrait
 =======
      * @param int|float|string|array<string, mixed>|bool|null $value
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  int|float|string|array<string, mixed>|bool|null  $value
+>>>>>>> .merge_file_zmh52L
      */
     public function setExtra(string $name, int|float|string|array|bool|null $value): void
     {

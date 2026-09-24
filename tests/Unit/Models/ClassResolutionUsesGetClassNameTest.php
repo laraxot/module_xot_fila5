@@ -11,6 +11,7 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -31,6 +32,8 @@ use function Safe\preg_match;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GNb5ko
 uses(TestCase::class);
 
 /**
@@ -78,6 +81,7 @@ function modelSourceFiles(): array
         }
         $it = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
+<<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
@@ -101,6 +105,9 @@ function modelSourceFiles(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
+>>>>>>> .merge_file_GNb5ko
                 continue;
             }
             $out[] = $file->getPathname();
@@ -129,6 +136,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
             continue;
         }
         $src = file_get_contents($file);
+<<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match($handRolled, $src) === 1) {
@@ -152,6 +160,9 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (preg_match($handRolled, $src) === 1) {
+>>>>>>> .merge_file_GNb5ko
             $offenders[] = $rel;
         }
     }
@@ -162,6 +173,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
         "Risoluzione di classe scritta a mano invece di `<Model>::getClassName()`:\n  "
         .implode("\n  ", $offenders)
         ."\n\nOgni modulo ha il suo model su una connessione diversa con lo stesso nome di"
+<<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
@@ -185,6 +197,9 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
+>>>>>>> .merge_file_GNb5ko
         ."\nCanon: Modules/Xot/docs/wiki/concepts/xotbasemodel-get-class-name.md"
     );
 });
@@ -196,6 +211,7 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
     $offenders = [];
     foreach (modelSourceFiles() as $file) {
         $src = file_get_contents($file);
+<<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match($silentFallback, $src) === 1) {
@@ -219,6 +235,9 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (preg_match($silentFallback, $src) === 1) {
+>>>>>>> .merge_file_GNb5ko
             $offenders[] = str_replace(\dirname(__DIR__, 5).'/', '', $file);
         }
     }
@@ -229,6 +248,7 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
         "Ripiego silenzioso su un model di un altro modulo:\n  "
         .implode("\n  ", $offenders)
         ."\n\nUsare `<Model>::getClassName()`: se il gemello manca deve LANCIARE, non"
+<<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         .' rispondere con i dati di un altro ente.'
@@ -252,5 +272,8 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        .' rispondere con i dati di un altro ente.'
+>>>>>>> .merge_file_GNb5ko
     );
 });

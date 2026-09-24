@@ -3,6 +3,7 @@
 **Modulo**: Xot (Core Framework Base)
 **Data Analisi**: 1 Ottobre 2025
 **Maintainer**: Laraxot Core Team
+<<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status PHPStan**: ⚠️ 9 errori (Level 9)
@@ -16,6 +17,9 @@
 =======
 **Status PHPStan**: ⚠️ 9 errori (Level 10)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Status PHPStan**: ⚠️ 9 errori (Level 9)
+>>>>>>> .merge_file_wHiuTt
 
 ---
 
@@ -34,6 +38,7 @@
 
 ---
 
+<<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
@@ -47,6 +52,9 @@
 =======
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (9)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
+>>>>>>> .merge_file_wHiuTt
 
 ### Priorità CRITICA - Blocca altri moduli
 
@@ -258,6 +266,7 @@ function xot_config(string $key): mixed
 - [ ] Rimuovere dead catch block (5 min)
 
 **Totale**: ~2 ore
+<<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 9
@@ -271,6 +280,9 @@ function xot_config(string $key): mixed
 =======
 **Risultato**: ✅ 0 errori PHPStan Level 10
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Risultato**: ✅ 0 errori PHPStan Level 9
+>>>>>>> .merge_file_wHiuTt
 
 ---
 
@@ -315,6 +327,7 @@ function xot_config(string $key): mixed
 ## 📋 CHECKLIST QUALITÀ
 
 ### Code Quality ✅
+<<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [x] PHPStan Level 9 (83% - domani 100%)
@@ -328,6 +341,9 @@ function xot_config(string $key): mixed
 =======
 - [x] PHPStan Level 10 (83% - domani 100%)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [x] PHPStan Level 9 (83% - domani 100%)
+>>>>>>> .merge_file_wHiuTt
 - [ ] PHPDoc 100% coverage
 - [ ] No dead code
 - [ ] No deprecated methods
@@ -371,6 +387,7 @@ function xot_config(string $key): mixed
 ## 🔗 Collegamenti
 
 - [← Xot Module README](./README.md)
+<<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -382,6 +399,8 @@ function xot_config(string $key): mixed
 =======
 - [← Xot Module README](./readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wHiuTt
 - [← Best Practices](./best-practices.md)
 - [← Troubleshooting](./troubleshooting.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
@@ -389,15 +408,19 @@ function xot_config(string $key): mixed
 
 ---
 
+<<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wHiuTt
 **Status**: ⚠️ 9 ERRORI DA CORREGGERE
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+<<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 =======
 =======
@@ -413,3 +436,5 @@ function xot_config(string $key): mixed
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wHiuTt

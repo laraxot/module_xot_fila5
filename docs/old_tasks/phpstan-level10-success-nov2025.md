@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ZePREu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -6,6 +7,8 @@
 <<<<<<< HEAD
 >>>>>>> .merge_file_16IGFh
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZTKfOG
 ---
 title: "Phpstan Level10 Success Nov"
 type: concept
@@ -22,6 +25,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-level10-success-nov.md](./phpstan-level10-success-nov.md)
+<<<<<<< .merge_file_ZePREu
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_qgRaEA
@@ -187,3 +191,5 @@ Risultato ottenuto seguendo rigorosamente:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZTKfOG

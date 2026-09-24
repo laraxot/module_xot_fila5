@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_ixSsl8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4qO73N
 # Analisi di LaravelFS
 
 ## Introduzione
@@ -39,6 +42,7 @@ Il progetto ha una struttura ben organizzata:
 - **tests/**: Test automatizzati
 
 ## Aspetti interessanti per il nostro progetto
+<<<<<<< .merge_file_ixSsl8
 <<<<<<< HEAD
 =======
 =======
@@ -57,3 +61,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-an
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4qO73N

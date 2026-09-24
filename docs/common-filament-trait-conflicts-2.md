@@ -8,6 +8,7 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Filament**: 4.x
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
+<<<<<<< .merge_file_wjFB8D
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -19,6 +20,8 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Bo07FW
 
 ## 🎯 Obiettivo
 
@@ -527,6 +530,7 @@ class MyPage extends XotBaseViewRecord
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
+<<<<<<< .merge_file_wjFB8D
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
@@ -540,3 +544,6 @@ class MyPage extends XotBaseViewRecord
 =======
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> .merge_file_Bo07FW

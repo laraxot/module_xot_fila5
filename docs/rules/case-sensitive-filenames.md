@@ -187,6 +187,7 @@ Aggiungere al workflow GitHub Actions:
 
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
+<<<<<<< .merge_file_qOEO9I
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Categoria**: Regole di Codice
@@ -200,3 +201,6 @@ Aggiungere al workflow GitHub Actions:
 =======
 **Categoria**: Regole di Codice
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Categoria**: Regole di Codice
+>>>>>>> .merge_file_AqndDy

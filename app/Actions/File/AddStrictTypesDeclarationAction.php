@@ -32,6 +32,7 @@ class AddStrictTypesDeclarationAction
 
         // Trova la posizione del tag di apertura PHP
         $phpTagPos = strpos($content, '<?php');
+<<<<<<< .merge_file_WRoZ1V
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($phpTagPos === false) {
@@ -41,6 +42,9 @@ class AddStrictTypesDeclarationAction
 =======
         if (false === $phpTagPos) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($phpTagPos === false) {
+>>>>>>> .merge_file_mHAzn4
             throw new \RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
         }
 
@@ -48,13 +52,17 @@ class AddStrictTypesDeclarationAction
         $lines = explode("\n", $content);
         $firstNonEmptyLine = 0;
         foreach ($lines as $i => $line) {
+<<<<<<< .merge_file_WRoZ1V
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_mHAzn4
             if ($i === 0) {
                 continue; // Salta la prima riga che contiene <?php
             }
             $trimmedLine = trim($line);
             if ($trimmedLine !== '') {
+<<<<<<< .merge_file_WRoZ1V
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -67,6 +75,8 @@ class AddStrictTypesDeclarationAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mHAzn4
                 $firstNonEmptyLine = $i;
                 break;
             }

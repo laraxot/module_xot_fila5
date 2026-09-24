@@ -28,6 +28,7 @@ class FakeSeederAction
     /**
      * Execute the fake data seeding process.
      *
+<<<<<<< .merge_file_xad97H
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -41,6 +42,10 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass The fully qualified model class name
      * @param int<1, max>         $qty        Number of records to generate
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass  The fully qualified model class name
+     * @param  int<1, max>  $qty  Number of records to generate
+>>>>>>> .merge_file_20i2n8
      *
      * @throws \InvalidArgumentException When model class is invalid
      */
@@ -87,6 +92,7 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
+<<<<<<< .merge_file_xad97H
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -109,6 +115,13 @@ class FakeSeederAction
      * @return Factory<Model>
      * @return Factory<Model>
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass
+     * @return Factory<Model>
+     * @return Factory<Model>
+     *
+     * @throws \RuntimeException
+>>>>>>> .merge_file_20i2n8
      */
     private function getModelFactory(string $modelClass): Factory
     {
@@ -125,6 +138,7 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
+<<<<<<< .merge_file_xad97H
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -138,6 +152,10 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass
      * @param int<1, max>         $count
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass
+     * @param  int<1, max>  $count
+>>>>>>> .merge_file_20i2n8
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -151,6 +169,7 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
+<<<<<<< .merge_file_xad97H
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -164,6 +183,10 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass
      * @param int<1, max>         $qty
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass
+     * @param  int<1, max>  $qty
+>>>>>>> .merge_file_20i2n8
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {

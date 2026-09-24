@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_6Vt3dO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Jgye1g
 title: "Composer Root Skeleton Fixcity Comparison Dup"
 type: concept
 status: deprecated
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [composer-root-skeleton-fixcity-comparison-dup.md](./composer-root-skeleton-fixcity-comparison-dup.md)
+<<<<<<< .merge_file_6Vt3dO
 <<<<<<< HEAD
 =======
 =======
@@ -71,3 +75,5 @@ Il root `autoload.psr-4.Modules\\ = Modules/` amplia la scansione Composer a tut
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Jgye1g

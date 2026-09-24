@@ -281,15 +281,19 @@ quality-check:
 ---
 
 **Creato**: 2025-01-29
+<<<<<<< .merge_file_9WrnfW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_BdBdSX
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA
 **Memoria AI**: ID 10479003
+<<<<<<< .merge_file_9WrnfW
 <<<<<<< HEAD
 =======
 =======
@@ -306,3 +310,5 @@ quality-check:
 =======
 **Memoria AI**: ID 10479003
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_BdBdSX

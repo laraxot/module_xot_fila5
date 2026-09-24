@@ -28,6 +28,7 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+<<<<<<< .merge_file_uEJbTn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,6 +40,8 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 =======
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_J2tWst
 
 ---
 
@@ -319,6 +322,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 
 ## Collegamenti
 
+<<<<<<< .merge_file_uEJbTn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -335,6 +339,8 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_J2tWst
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
@@ -342,6 +348,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
+<<<<<<< .merge_file_uEJbTn
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
@@ -355,3 +362,6 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 =======
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
+>>>>>>> .merge_file_J2tWst

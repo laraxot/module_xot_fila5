@@ -65,6 +65,7 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 // ✅ DICHIARARE SOLO QUESTE PROPRIETÀ/METODI
 protected static ?string $model = YourModel::class;
 
+<<<<<<< .merge_file_bu9s0W
 <<<<<<< HEAD
 <<<<<<< .merge_file_jadpwY
 public function getFormSchema(): array
@@ -78,6 +79,9 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_J4Q8b0
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -172,6 +176,7 @@ class DoctorResource extends XotBaseResource
 {
     protected static ?string $model = Doctor::class;
 
+<<<<<<< .merge_file_bu9s0W
 <<<<<<< HEAD
 <<<<<<< .merge_file_jadpwY
     public function getFormSchema(): array
@@ -185,6 +190,9 @@ class DoctorResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_J4Q8b0
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

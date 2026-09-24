@@ -12,6 +12,7 @@
 - actions-pattern.md + actions-standardization.md
 - directory_structure_guide.md + directory-structure-guide.md
 - naming_conventions.md + naming-conventions.md
+<<<<<<< .merge_file_xnUi0y
 <<<<<<< HEAD
 <<<<<<< HEAD
 - phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
@@ -25,6 +26,9 @@
 =======
 - phpstan_fixes.md + phpstan-fixes-archive-1.md + phpstan-fixes-archive-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
+>>>>>>> .merge_file_Vb8rQM
 - migration_guidelines.md + migration-guidelines.md + migration-standards.md
 
 ✅ DOPO (consolidato):
@@ -40,6 +44,7 @@
 #### 2. Documentazione PHPStan Frammentata
 ```
 ❌ PRIMA (16 file separati):
+<<<<<<< .merge_file_xnUi0y
 <<<<<<< HEAD
 <<<<<<< HEAD
 phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
@@ -53,6 +58,9 @@ phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
 =======
 phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
+>>>>>>> .merge_file_Vb8rQM
 phpstan_level9_guide.md, phpstan_workflow.md, phpstan_usage_guide.md, etc.
 
 ✅ DOPO (struttura consolidata):
@@ -148,6 +156,7 @@ Codice pratico.
 
 ## Collegamenti
 - [Doc correlata](./relativa.md)
+<<<<<<< .merge_file_xnUi0y
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Root docs](../../../docs/correlata.md)
@@ -169,6 +178,11 @@ Codice pratico.
 - [Root docs](../../../../docs/correlata.md)
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Root docs](../../../docs/correlata.md)
+
+*Ultimo aggiornamento: [data]*
+>>>>>>> .merge_file_Vb8rQM
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -238,6 +252,7 @@ DOPO:
 
 - [Template Standardizzato](./template-docs.md)
 - [Guida Refactoring](./refactoring-guide.md)
+<<<<<<< .merge_file_xnUi0y
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
@@ -251,12 +266,16 @@ DOPO:
 =======
 - [Root Ottimizzazioni](../../../../docs/ottimizzazioni-modulari.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
+>>>>>>> .merge_file_Vb8rQM
 
 ## 🏷️ **Tag Ottimizzazione**
 
 `#DRY` `#KISS` `#refactoring` `#documentation` `#xot-module` `#consolidation`
 
 ---
+<<<<<<< .merge_file_xnUi0y
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
@@ -270,3 +289,6 @@ DOPO:
 =======
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
+>>>>>>> .merge_file_Vb8rQM

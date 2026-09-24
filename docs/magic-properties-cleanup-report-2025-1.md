@@ -1,15 +1,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_0YHsNZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> .merge_file_GgIe4i
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_0YHsNZ
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_GgIe4i
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -21,23 +28,22 @@ metadata:
 ---
 
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_0YHsNZ
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GgIe4i
 >>>>>>> laraxot/dev
 # Magic Properties Cleanup Report - 2025-11-17
 

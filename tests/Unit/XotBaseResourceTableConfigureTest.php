@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_tzdbkB
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Table;
@@ -29,6 +30,10 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Filament\Tables\Table;
+use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+>>>>>>> .merge_file_ItmbaA
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\XotBaseResourceTableConfigureFixture;
 use Modules\Xot\Tests\Unit\Fixtures\XotTableConfigureLivewireHarness;
@@ -37,6 +42,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('XotBaseResourceTable configure applica colonne e filtri dalla classe table', function (): void {
+<<<<<<< .merge_file_tzdbkB
 <<<<<<< HEAD
 <<<<<<< HEAD
     $livewire = new XotTableConfigureLivewireHarness;
@@ -60,6 +66,9 @@ test('XotBaseResourceTable configure applica colonne e filtri dalla classe table
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $livewire = new XotTableConfigureLivewireHarness;
+>>>>>>> .merge_file_ItmbaA
     $table = Table::make($livewire);
 
     $configured = XotBaseResourceTableConfigureFixture::configure($table);
@@ -68,6 +77,7 @@ test('XotBaseResourceTable configure applica colonne e filtri dalla classe table
 });
 
 test('XotBaseResourceTable configure su classe astratta solleva LogicException', function (): void {
+<<<<<<< .merge_file_tzdbkB
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -90,11 +100,14 @@ test('XotBaseResourceTable configure su classe astratta solleva LogicException',
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ItmbaA
     $livewire = new XotTableConfigureLivewireHarness;
     $table = Table::make($livewire);
 
     expect(fn (): Table => XotBaseResourceTable::configure($table))
         ->toThrow(LogicException::class);
+<<<<<<< .merge_file_tzdbkB
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -112,4 +125,6 @@ test('XotBaseResourceTable configure su classe astratta solleva LogicException',
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ItmbaA
 });

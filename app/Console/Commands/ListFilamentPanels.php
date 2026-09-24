@@ -27,13 +27,17 @@ class ListFilamentPanels extends Command
                 continue;
             }
 
+<<<<<<< .merge_file_RJwV0W
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_jkVI7F
             /** @var list<string> $entries */
             $entries = scandir($providersPath);
             $providers = collect($entries)
                 ->filter(static function (string $file): bool {
                     return str_ends_with($file, 'ServiceProvider.php');
+<<<<<<< .merge_file_RJwV0W
 =======
             $providers = collect(scandir($providersPath))
                 ->filter(static function (mixed $file): bool {
@@ -44,6 +48,8 @@ class ListFilamentPanels extends Command
                 ->filter(function ($file): bool {
                     return is_string($file) && str_ends_with($file, 'ServiceProvider.php');
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_jkVI7F
                 });
 
             foreach ($providers as $provider) {

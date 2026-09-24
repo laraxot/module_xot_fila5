@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_nU8JNn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_pykrbM
 ---
 title: IDE Helper Models Governance
 type: reference
@@ -62,6 +65,7 @@ Se `0`: **non** lanciare write; **non** migrate distruttivo. Handoff al owner.
 
 - [ide-helper-refresh.md](../../../../docs/chat/ide-helper-refresh.md)
 - [ide-helper-best-practices.md](./ide-helper-best-practices.md)
+<<<<<<< .merge_file_nU8JNn
 <<<<<<< HEAD
 =======
 =======
@@ -107,3 +111,5 @@ non un model concreto `Modules\*\Models\Profile`.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_pykrbM

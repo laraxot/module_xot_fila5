@@ -60,6 +60,7 @@ Edita i file di configurazione e inserisci le tue keys.
 ### Debugging con Context
 
 ```text
+<<<<<<< .merge_file_FFt1uJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
@@ -73,6 +74,9 @@ Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/
 =======
 Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/rules/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
+>>>>>>> .merge_file_Ux93BK
 ```
 
 ### Refactoring Guidato
@@ -93,6 +97,7 @@ Crea PR per branch feature/mcp-integration con descrizione delle modifiche
 
 ## Supporto
 
+<<<<<<< .merge_file_FFt1uJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
@@ -106,3 +111,6 @@ Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshoot
 =======
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
+>>>>>>> .merge_file_Ux93BK

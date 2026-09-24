@@ -141,6 +141,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 
+<<<<<<< .merge_file_H0HfeW
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
@@ -154,3 +155,6 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> .merge_file_lpgvsL

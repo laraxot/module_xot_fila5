@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
@@ -29,11 +30,16 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+>>>>>>> .merge_file_k9XNZm
 
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +61,8 @@ use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_k9XNZm
 if (! defined('STDIN')) {
     define('STDIN', fopen('php://stdin', 'r'));
 }
@@ -78,16 +86,20 @@ class ArtisanAction
         switch ($act) {
             case 'migrate':
                 $defaultConn = Config::get('database.default');
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GlRtSo
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_k9XNZm
                 $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
                 if ($module_name !== '') {
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 =======
 =======
@@ -105,6 +117,8 @@ class ArtisanAction
 =======
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_k9XNZm
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -189,6 +203,7 @@ class ArtisanAction
             $log = '';
         }
         $content = '';
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
@@ -206,6 +221,9 @@ class ArtisanAction
 =======
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> .merge_file_k9XNZm
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -218,6 +236,7 @@ class ArtisanAction
         /** @var array<int, string> $urls */
         $urls = [];
         $urlsRaw = $matches[1];
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($urlsRaw !== []) {
@@ -235,6 +254,9 @@ class ArtisanAction
 =======
         if ([] !== $urlsRaw) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($urlsRaw !== []) {
+>>>>>>> .merge_file_k9XNZm
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -281,6 +303,7 @@ class ArtisanAction
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
@@ -298,6 +321,9 @@ class ArtisanAction
 =======
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+>>>>>>> .merge_file_k9XNZm
                 echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -312,6 +338,7 @@ class ArtisanAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
@@ -329,6 +356,9 @@ class ArtisanAction
 =======
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+>>>>>>> .merge_file_k9XNZm
                 File::delete($file->getRealPath());
             }
         }
@@ -340,6 +370,7 @@ class ArtisanAction
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
@@ -357,6 +388,9 @@ class ArtisanAction
 =======
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+>>>>>>> .merge_file_k9XNZm
                 File::delete($file->getRealPath());
             }
         }
@@ -365,6 +399,7 @@ class ArtisanAction
     }
 
     /**
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
@@ -382,6 +417,9 @@ class ArtisanAction
 =======
      * @param array<string, mixed> $arguments
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $arguments
+>>>>>>> .merge_file_k9XNZm
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -396,6 +434,7 @@ class ArtisanAction
         }
     }
 
+<<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
@@ -419,4 +458,7 @@ class ArtisanAction
     {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function execute(): void {}
+>>>>>>> .merge_file_k9XNZm
 }

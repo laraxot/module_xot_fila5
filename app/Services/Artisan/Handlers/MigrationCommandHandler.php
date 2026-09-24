@@ -18,8 +18,8 @@ class MigrationCommandHandler implements CommandHandlerInterface
         DB::purge('mysql');
         DB::reconnect('mysql');
 
-<<<<<<< HEAD
         if ($moduleName !== '') {
+<<<<<<< .merge_file_DwYWlP
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_oenBeG
@@ -36,6 +36,8 @@ class MigrationCommandHandler implements CommandHandlerInterface
         if ('' !== $moduleName) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_m1ISBt
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)
@@ -47,6 +49,7 @@ class MigrationCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
+<<<<<<< .merge_file_DwYWlP
 <<<<<<< HEAD
         return $command === 'migrate';
 =======
@@ -65,5 +68,8 @@ class MigrationCommandHandler implements CommandHandlerInterface
         return 'migrate' === $command;
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return $command === 'migrate';
+>>>>>>> .merge_file_m1ISBt
     }
 }

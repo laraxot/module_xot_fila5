@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_Zh8GGv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_DwPpII
 ---
 title: "Quality Tools Status Nov"
 type: concept
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [quality-tools-status-nov.md](./quality-tools-status-nov.md)
+<<<<<<< .merge_file_Zh8GGv
 <<<<<<< HEAD
 =======
 =======
@@ -241,3 +245,5 @@ php -l path/to/modified/file.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_DwPpII

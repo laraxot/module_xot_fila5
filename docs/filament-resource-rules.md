@@ -75,15 +75,19 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2qCnWM
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 =======
 =======
@@ -93,6 +97,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2qCnWM
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -143,11 +149,14 @@ public static function getRelations(): array
 // Non dichiarare il metodo se restituisce un array vuoto
 ```
 
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2qCnWM
 ## Pagine
 
 Se il metodo `getPages()` contiene solo le route standard (index, create, edit), **NON** dichiararlo:
@@ -167,6 +176,7 @@ public static function getPages(): array
 // Non dichiarare il metodo se contiene solo le route standard
 ```
 
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 =======
 =======
@@ -205,6 +215,8 @@ Documentazione: [filament/getpages-redundancy-rule.md](./filament/getpages-redun
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2qCnWM
 ## Motivazioni
 
 1. **Centralizzazione della Configurazione**: Le configurazioni comuni sono centralizzate nella classe base
@@ -231,15 +243,19 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2qCnWM
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 =======
 =======
@@ -249,6 +265,8 @@ class DoctorResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2qCnWM
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')
@@ -270,17 +288,21 @@ class DoctorResource extends XotBaseResource
 
 ## Documentazione Correlata
 
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2qCnWM
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
+<<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 =======
 =======
@@ -295,3 +317,5 @@ class DoctorResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2qCnWM

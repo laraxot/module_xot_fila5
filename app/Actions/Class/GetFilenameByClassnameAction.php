@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Class;
 
+<<<<<<< .merge_file_FvkEbn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@ namespace Modules\Xot\Actions\Class;
 =======
 // use Modules\Xot\Services\ArrayService;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_SosSZP
 use Spatie\QueueableAction\QueueableAction;
 
 class GetFilenameByClassnameAction

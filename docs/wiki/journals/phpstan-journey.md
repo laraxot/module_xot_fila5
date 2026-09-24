@@ -295,6 +295,7 @@ Level 0  → 🏕️  Campo Base
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_cVd4SI
 <<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
@@ -319,6 +320,9 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hW28XA
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_r8Kweg
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

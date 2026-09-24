@@ -20,6 +20,7 @@ class XotAction
         return Tenant::class;
     }
 
+<<<<<<< .merge_file_Z2Y1St
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
@@ -49,4 +50,7 @@ class XotAction
     {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function execute(): void {}
+>>>>>>> .merge_file_zinEkp
 }

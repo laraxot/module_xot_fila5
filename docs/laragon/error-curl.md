@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_GeEiNh
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_gTpsWz
 ---
 title: "Error Curl"
 module: "Xot"
@@ -14,6 +17,7 @@ qmd: "error curl"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_GeEiNh
 <<<<<<< HEAD
 =======
 =======
@@ -28,13 +32,15 @@ related:
 =======
 >>>>>>> 64619e34 (.)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_gTpsWz
 ---
 module: theme
 topic: error-curl
 canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 ---
-<<<<<<< HEAD
 
+<<<<<<< .merge_file_GeEiNh
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -50,6 +56,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/error-cur
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_gTpsWz
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 
@@ -92,6 +100,7 @@ composer clearcache
 
 composer config --global cafile PATH/TO/cacert.pem
 composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
+<<<<<<< .merge_file_GeEiNh
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -113,3 +122,7 @@ See canonical documentation: ../../../../Themes/docs/shared-components/error-cur
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
+>>>>>>> .merge_file_gTpsWz

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_XEJbTe
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -9,14 +10,19 @@
 Data analisi: [DATE]
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_ioFrpI
 # PHPStan Duplicate Imports Fix - 2026-01-05
 
 ## Analisi Errori PHPStan Modulo Xot
 
 Data analisi: 2026-01-05
+<<<<<<< .merge_file_XEJbTe
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ioFrpI
 PHPStan Level: max
 Comando eseguito: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`
 

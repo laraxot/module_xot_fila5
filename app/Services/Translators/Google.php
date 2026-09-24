@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Translators;
 
-<<<<<<< HEAD
 class Google extends BaseTranslator {}
+<<<<<<< .merge_file_kozQwx
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_Z7DPG2
@@ -27,3 +27,5 @@ class Google extends BaseTranslator
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YvsVcP

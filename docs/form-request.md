@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_IkMfD2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 =======
 >>>>>>> .merge_file_LAU83r
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_H4iYTa
 ---
 title: 'Form request — risorse esterne'
 module: Xot
@@ -33,6 +36,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb>
+<<<<<<< .merge_file_IkMfD2
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nbRc6Z
@@ -48,3 +52,5 @@ https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 =======
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_H4iYTa

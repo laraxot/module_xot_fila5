@@ -1279,6 +1279,7 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 
 ### ❌ Automazione Cieca
 ```bash
+<<<<<<< .merge_file_5sPiaD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Verifica conflitti rimanenti
@@ -1292,3 +1293,6 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 =======
 # Verifica conflitti rimanenti
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+# Verifica conflitti rimanenti
+>>>>>>> .merge_file_rDZ6JX

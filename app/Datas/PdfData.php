@@ -156,6 +156,7 @@ class PdfData extends Data
     }
 
     /**
+<<<<<<< .merge_file_AWU2Hj
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -166,6 +167,9 @@ class PdfData extends Data
 =======
      * @param array<string, mixed> $params
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $params
+>>>>>>> .merge_file_kMSXll
      */
     public function view(string $view, array $params = []): self
     {

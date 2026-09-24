@@ -28,6 +28,7 @@ qmd search "Xot rule filament" --limit 5
 ---
 
 **Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+<<<<<<< .merge_file_n9rJ7s
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
@@ -55,3 +56,8 @@ qmd search "Xot rule filament" --limit 5
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
+- [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
+- [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
+>>>>>>> .merge_file_RtOM4L

@@ -201,6 +201,7 @@ test('user can be saved to database', function () {
 ---
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
+<<<<<<< .merge_file_otahJ2
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status**: 🔄 **IN CORREZIONE**
@@ -214,3 +215,6 @@ test('user can be saved to database', function () {
 =======
 **Status**: 🔄 **IN CORREZIONE**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Status**: 🔄 **IN CORREZIONE**
+>>>>>>> .merge_file_BS2CP9

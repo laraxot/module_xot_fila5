@@ -21,6 +21,7 @@ class GenerateModelByModelClass
     /**
      * Execute the function with the given model class.
      *
+<<<<<<< .merge_file_Lbhk3y
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $model_class  the class name of the model
@@ -30,6 +31,9 @@ class GenerateModelByModelClass
 =======
      * @param string $model_class the class name of the model
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  string  $model_class  the class name of the model
+>>>>>>> .merge_file_Qzj23o
      */
     public function execute(string $model_class): string
     {
@@ -69,6 +73,7 @@ class GenerateModelByModelClass
             '['.__LINE__.']['.class_basename($this).']',
         );
         $fillable_end = mb_strpos($content, '];', $fillable_start);
+<<<<<<< .merge_file_Lbhk3y
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($table_start === false) {
@@ -78,6 +83,9 @@ class GenerateModelByModelClass
 =======
         if (false === $table_start) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($table_start === false) {
+>>>>>>> .merge_file_Qzj23o
             $before = mb_substr($content, 0, $fillable_end + 2);
             $after = mb_substr($content, $fillable_end + 2);
             $content = $before.PHP_EOL.'    protected $table = "'.$value.'";'.PHP_EOL.$after;
@@ -89,6 +97,7 @@ class GenerateModelByModelClass
     /**
      * Create a factory for the given model class.
      *
+<<<<<<< .merge_file_Lbhk3y
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $model_class  The class name of the model to create the factory for
@@ -98,6 +107,9 @@ class GenerateModelByModelClass
 =======
      * @param string $model_class The class name of the model to create the factory for
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  string  $model_class  The class name of the model to create the factory for
+>>>>>>> .merge_file_Qzj23o
      */
     public function generate(string $model_class): void
     {
@@ -124,6 +136,7 @@ class GenerateModelByModelClass
     }
 
     /**
+<<<<<<< .merge_file_Lbhk3y
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, string>  $replaces
@@ -133,6 +146,9 @@ class GenerateModelByModelClass
 =======
      * @param array<string, string> $replaces
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, string>  $replaces
+>>>>>>> .merge_file_Qzj23o
      */
     public function setCustomReplaces(array $replaces): self
     {

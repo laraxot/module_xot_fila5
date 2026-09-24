@@ -35,6 +35,7 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 3. **Localizzazione**: Assicurarsi che per ogni Resource esistano le traduzioni nelle 6 lingue target (IT, EN, ES, FR, ZH, AR).
 
 ---
+<<<<<<< .merge_file_tGhDfe
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
@@ -48,3 +49,6 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 =======
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
+>>>>>>> .merge_file_5eYF2n

@@ -19,15 +19,19 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
+<<<<<<< .merge_file_QqbED1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_9oAHTw
 - [docs root](../../../../docs/actions.md)
 - [docs Lang](../../Lang/docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
+<<<<<<< .merge_file_QqbED1
 <<<<<<< HEAD
 =======
 =======
@@ -44,3 +48,5 @@ Ultimo aggiornamento: maggio 2025.
 =======
 - [docs Lang](../../lang/docs/filament-label.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9oAHTw

@@ -12,8 +12,11 @@ use Spatie\ModelStatus\Status;
 /**
  * Modules\Xot\Contracts\ModelWithPosContract.
  *
+<<<<<<< .merge_file_uxEmZo
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_YYvwuE
  * @property int $id
  * @property int|null $user_id
  * @property string|null $post_type
@@ -46,6 +49,7 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed> treeLabel()
  * @method array<string, mixed> treeSons()
  * @method array<string, mixed> toArray()
+<<<<<<< .merge_file_uxEmZo
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -101,12 +105,15 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YYvwuE
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_uxEmZo
 <<<<<<< HEAD
 <<<<<<< HEAD
 interface ModelWithPosContract {}
@@ -120,3 +127,6 @@ interface ModelWithPosContract
 {
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+interface ModelWithPosContract {}
+>>>>>>> .merge_file_YYvwuE

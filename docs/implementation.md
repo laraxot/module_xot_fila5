@@ -301,6 +301,7 @@ class XotPageTest extends TestCase
 
 ### Versione Incoming
 
+<<<<<<< .merge_file_I6DVNr
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -314,3 +315,6 @@ class XotPageTest extends TestCase
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_gWahfB

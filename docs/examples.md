@@ -239,15 +239,19 @@ class ExampleResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_FAQwHf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GwbjGg
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_FAQwHf
 <<<<<<< HEAD
 =======
 =======
@@ -257,6 +261,8 @@ class ExampleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GwbjGg
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -532,15 +538,19 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_FAQwHf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GwbjGg
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_FAQwHf
 <<<<<<< HEAD
 =======
 =======
@@ -550,6 +560,8 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GwbjGg
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -1147,6 +1159,7 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+<<<<<<< .merge_file_FAQwHf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1158,12 +1171,15 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GwbjGg
 - [**Best Practices**](best-practices.md) - Best practices per lo sviluppo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Troubleshooting**](troubleshooting.md) - Risoluzione problemi
 
 ---
 
+<<<<<<< .merge_file_FAQwHf
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
@@ -1177,3 +1193,6 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> .merge_file_GwbjGg

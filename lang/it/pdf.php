@@ -22,6 +22,7 @@ return [
         ],
         'label' => 'Pdf',
         'sort' => 1,
+<<<<<<< .merge_file_AqI9uL
 <<<<<<< HEAD
 <<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
@@ -31,6 +32,9 @@ return [
 =======
         'icon' => 'heroicon-o-collection',
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        'icon' => 'xot-files.pdf',
+>>>>>>> .merge_file_6uS4tl
     ],
     'actions' => [
         'create' => [

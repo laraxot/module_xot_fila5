@@ -29,11 +29,14 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 - **XotBasePages**: `XotBaseListRecords`, `XotBaseEditRecord`, etc. rimangono compatibili
 - **XotBaseWidgets**: Tutte le classi widget rimangono valide
 - **XotBaseActions**: Actions, TableActions, BulkActions non richiedono modifiche
+<<<<<<< .merge_file_sKLqbU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JH9fZE
 - **Table**: `Filament\Tables\Table` esiste ancora, nessun cambiamento
 - **Resources**: Tutti i pattern esistenti rimangono validi
 
@@ -62,6 +65,7 @@ file, import morto) — rimosso insieme all'import altrettanto inutilizzato di
 `grep -rl "use Filament\\\\Forms\\\\Form;\|use Filament\\\\Infolists\\\\Infolist;" laravel/Modules --include="*.php"`:
 nessun'altra occorrenza nel resto del progetto.
 
+<<<<<<< .merge_file_sKLqbU
 <<<<<<< HEAD
 =======
 =======
@@ -75,6 +79,8 @@ nessun'altra occorrenza nel resto del progetto.
 - **Resources**: Tutti i pattern esistenti rimangono validi
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JH9fZE
 ### Cosa Cambia (Livewire 4)
 
 Tutti i cambiamenti sono legati alla migrazione a Livewire 4:
@@ -137,6 +143,7 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - **Documentazione**: dopo l’upgrade, verificare [filament.md](filament.md), [filament-v4-migration-guide.md](filament-v4-migration-guide.md) e [filament-best-practices.md](filament-best-practices.md) per eventuali adattamenti a v5.
 - **Configurazioni globali**: se in XotServiceProvider o AdminPanelProvider ci sono `configureUsing()` per Section/Grid/Fieldset/Table (es. v4), confrontare con il comportamento v5 e adattare se necessario.
 
+<<<<<<< .merge_file_sKLqbU
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## Stato upgrade (base_workorder_fila5)
@@ -150,21 +157,28 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 =======
 ## Stato upgrade (base_<nome progetto>)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## Stato upgrade (base_workorder_fila5)
+>>>>>>> .merge_file_JH9fZE
 
 - [x] Documentazione creata (filament-5-upgrade-guide.md)
 - [x] Script `vendor/bin/filament-v5` eseguito con directory `app,Modules` – modifiche applicate
 - [x] Root `composer.json`: `filament/filament` aggiornato a `^5.0`
 - [x] Modulo Xot: `livewire/livewire` aggiornato a `^4.0`; Pest e plugin test aggiornati a v4 (pest ^4.3, pest-plugin-livewire ^4.1, pest-plugin-type-coverage ^4.0)
 - [x] Fix conflitto nome in `Modules/User/.../ListOauthClients.php`: import duplicato `Filament\Notifications\Notification` e `CreateClientAction` rimossi; uso `Notification as FilamentNotification` e `Action` da Filament\Actions
+<<<<<<< .merge_file_sKLqbU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JH9fZE
 - [x] **Composer update completato** (verificato 2026-07-27): `filament/filament` installato v5.7.3, `laravel/framework` v13.22.0, `livewire/livewire` v4.3.3 (`composer show <pkg>`)
 - [x] `composer remove filament/upgrade --dev` completato (assente da `composer.json`, verificato 2026-07-27)
 - [ ] **Config Livewire 4 NON ancora rinominata**: `config/livewire.php` usa ancora le chiavi legacy `'layout' => 'components.layouts.app'` e `'lazy_placeholder' => null` invece di `component_layout`/`component_placeholder` (verificato 2026-07-27). L'app funziona comunque (probabile compat legacy in Livewire 4.3), ma va allineato quando si tocca quel file.
 - [x] `Filament\Forms\Form` / `Filament\Infolists\Infolist` audit completato (2026-07-27): rimossi da `XotBaseEditRecord.php`, nessun'altra occorrenza nel progetto — vedi sezione sopra.
+<<<<<<< .merge_file_sKLqbU
 <<<<<<< HEAD
 =======
 =======
@@ -178,6 +192,8 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - [ ] Dopo update: `composer remove filament/upgrade --dev`
 - [ ] Config Livewire 4: verificare `config/livewire.php` (layout → component_layout, lazy_placeholder → component_placeholder) se pubblicato
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JH9fZE
 - [ ] PHPStan livello 10 su moduli Filament
 - [ ] Verificare pannello admin Filament (login, risorse, widget)
 

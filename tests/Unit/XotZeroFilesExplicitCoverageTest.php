@@ -10,8 +10,8 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class)->group('no-xot-db');
 
 test('exception handlers are selected by their declared throwable type', function (): void {
-<<<<<<< HEAD
     $repository = new HandlersRepository;
+<<<<<<< .merge_file_R07bSe
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_8561Zw
@@ -28,6 +28,8 @@ test('exception handlers are selected by their declared throwable type', functio
     $repository = new HandlersRepository();
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_rLIZQp
     $runtimeHandler = static fn (\RuntimeException $exception): string => $exception->getMessage();
     $logicHandler = static fn (\LogicException $exception): string => $exception->getMessage();
     $repository->addRenderer($runtimeHandler);

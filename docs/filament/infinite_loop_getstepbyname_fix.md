@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_9YiKA9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Km663L
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**
@@ -122,17 +125,8 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_fqp7a4
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+<<<<<<< .merge_file_9YiKA9
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 7f6cf6be (.)
@@ -150,6 +144,8 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Km663L
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -169,6 +165,7 @@ Questo fix dimostra l'importanza di:
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+<<<<<<< .merge_file_9YiKA9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -189,3 +186,5 @@ See canonical documentation: ../../../../Themes/docs/shared-components/infinite-
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/infinite-loop-getstepbyname-fix.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Km663L

@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_Ghi8x1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vUflRK
 ---
 title: "_todo"
 module: "Xot"
@@ -16,6 +19,7 @@ related:
 ---
 
 
+<<<<<<< .merge_file_Ghi8x1
 <<<<<<< HEAD
 =======
 =======
@@ -23,6 +27,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vUflRK
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

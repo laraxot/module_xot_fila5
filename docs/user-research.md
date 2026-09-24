@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_HmWM2e
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_rLisJa
 # User Research: Xot Framework
 
 ## 🔬 Research Goals
@@ -31,6 +34,7 @@ Identify bottlenecks in developer productivity when working with XotBase classes
 ## ✅ Actionable Insights / Next Steps
 - Simplify the `XotBaseServiceProvider` boot process.
 - Improve documentation for the `HasXotTable` trait.
+<<<<<<< .merge_file_HmWM2e
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -136,3 +140,5 @@ Users expect vetted extensions.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_rLisJa

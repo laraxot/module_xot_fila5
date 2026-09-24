@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Filament;
 
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -32,11 +33,17 @@ use Modules\Xot\Tests\TestCase;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Xot\Tests\TestCase;
+use Webmozart\Assert\Assert as WebmozartAssert;
+>>>>>>> .merge_file_TRTllO
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -61,6 +68,8 @@ use Webmozart\Assert\Assert as WebmozartAssert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TRTllO
 uses(TestCase::class)->group('no-db');
 
 /**
@@ -111,6 +120,7 @@ function filamentPageFiles(): array
             WebmozartAssert::isInstanceOf($file, \SplFileInfo::class);
 
             $path = $file->getPathname();
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
@@ -134,6 +144,9 @@ function filamentPageFiles(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() !== 'php') {
+>>>>>>> .merge_file_TRTllO
                 continue;
             }
             if (! str_contains($path, '/app/Filament/')) {
@@ -161,6 +174,7 @@ function declaredClassAndParent(string $file): ?array
 {
     $src = file_get_contents($file);
 
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -190,10 +204,13 @@ function declaredClassAndParent(string $file): ?array
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TRTllO
     if (preg_match('/^namespace\s+([^;]+);/m', $src, $ns) !== 1) {
         return null;
     }
     if (preg_match('/^(?:final\s+|abstract\s+)*class\s+(\w+)(?:\s+extends\s+([\w\\\\]+))?/m', $src, $cls) !== 1) {
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -206,6 +223,8 @@ function declaredClassAndParent(string $file): ?array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TRTllO
         return null;
     }
 
@@ -215,6 +234,7 @@ function declaredClassAndParent(string $file): ?array
     $name = (string) ($cls[1] ?? '');
     $parent = (string) ($cls[2] ?? '');
 
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
     if ($namespace === '' || $name === '') {
@@ -238,11 +258,15 @@ function declaredClassAndParent(string $file): ?array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    if ($namespace === '' || $name === '') {
+>>>>>>> .merge_file_TRTllO
         return null;
     }
 
     $class = $namespace.'\\'.$name;
 
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
     if ($parent === '') {
@@ -266,11 +290,15 @@ function declaredClassAndParent(string $file): ?array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    if ($parent === '') {
+>>>>>>> .merge_file_TRTllO
         return ['class' => $class, 'parent' => null];
     }
     if (str_contains($parent, '\\')) {
         return ['class' => $class, 'parent' => ltrim($parent, '\\')];
     }
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -300,10 +328,13 @@ function declaredClassAndParent(string $file): ?array
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TRTllO
     if (preg_match('/^use\s+([\w\\\\]*\\\\'.preg_quote($parent, '/').')\s*;/m', $src, $imp) === 1) {
         $imported = (string) ($imp[1] ?? '');
 
         if ($imported !== '') {
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -316,6 +347,8 @@ function declaredClassAndParent(string $file): ?array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TRTllO
             return ['class' => $class, 'parent' => $imported];
         }
     }
@@ -338,6 +371,7 @@ function listPageFiles(): array
 
     foreach (filamentPageFiles() as $file) {
         $info = declaredClassAndParent($file);
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($info === null) {
@@ -361,6 +395,9 @@ function listPageFiles(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($info === null) {
+>>>>>>> .merge_file_TRTllO
             continue;
         }
         $parents[$info['class']] = $info['parent'];
@@ -373,6 +410,7 @@ function listPageFiles(): array
     foreach (array_keys($parents) as $class) {
         $current = $parents[$class] ?? null;
 
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
         for ($hop = 0; $hop < 10 && $current !== null; $hop++) {
@@ -396,6 +434,9 @@ function listPageFiles(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        for ($hop = 0; $hop < 10 && $current !== null; $hop++) {
+>>>>>>> .merge_file_TRTllO
             if ($current === $base) {
                 $pages[$class] = $files[$class];
                 break;
@@ -421,6 +462,7 @@ function declaresMethod(string $file, string $method): bool
     $tokens = token_get_all(file_get_contents($file));
     $count = count($tokens);
 
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -459,6 +501,8 @@ function declaresMethod(string $file, string $method): bool
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TRTllO
     for ($i = 0; $i < $count; $i++) {
         $token = $tokens[$i];
         if (! is_array($token) || $token[0] !== T_FUNCTION) {
@@ -472,6 +516,7 @@ function declaresMethod(string $file, string $method): bool
                 continue;
             }
             if ($tokens[$j][0] === T_STRING && $tokens[$j][1] === $method) {
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -484,6 +529,8 @@ function declaresMethod(string $file, string $method): bool
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TRTllO
                 return true;
             }
             break;
@@ -506,6 +553,7 @@ test('nessuna List page dichiara getTableColumns()', function (): void {
 });
 
 test('XotBaseListRecords::getTableColumns() e\' final', function (): void {
+<<<<<<< .merge_file_ASiP1Q
 <<<<<<< HEAD
 <<<<<<< HEAD
     $method = new \ReflectionMethod(XotBaseListRecords::class, 'getTableColumns');
@@ -529,6 +577,9 @@ test('XotBaseListRecords::getTableColumns() e\' final', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $method = new \ReflectionMethod(XotBaseListRecords::class, 'getTableColumns');
+>>>>>>> .merge_file_TRTllO
 
     expect($method->isFinal())->toBeTrue();
 });

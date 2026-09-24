@@ -1,6 +1,7 @@
 # 🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE
 
 **Data Creazione**: 2025-01-27
+<<<<<<< .merge_file_xZzauA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_0XOcUy
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -469,6 +472,7 @@ chmod +x scripts/*.sh
 
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
+<<<<<<< .merge_file_xZzauA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -480,11 +484,14 @@ chmod +x scripts/*.sh
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_0XOcUy
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 98%
 
 ---
 
+<<<<<<< .merge_file_xZzauA
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
@@ -498,3 +505,6 @@ chmod +x scripts/*.sh
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+>>>>>>> .merge_file_0XOcUy

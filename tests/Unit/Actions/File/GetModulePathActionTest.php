@@ -23,6 +23,7 @@ it('gets module path from facade correctly', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
+<<<<<<< .merge_file_VAQdK0
 <<<<<<< HEAD
 <<<<<<< HEAD
             return $module === 'Xot' ? '/path/to/Xot/' : '';
@@ -32,6 +33,9 @@ it('gets module path from facade correctly', function (): void {
 =======
             return 'Xot' === $module ? '/path/to/Xot/' : '';
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            return $module === 'Xot' ? '/path/to/Xot/' : '';
+>>>>>>> .merge_file_BRBLgC
         },
     ]);
 

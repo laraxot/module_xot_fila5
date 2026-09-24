@@ -30,6 +30,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
+<<<<<<< .merge_file_nhLzPy
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  LazyCollection<int, mixed>  $collection
@@ -42,6 +43,10 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      * @param LazyCollection<int, mixed> $collection
      * @param array<int, string>         $fields
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  LazyCollection<int, mixed>  $collection
+     * @param  array<int, string>  $fields
+>>>>>>> .merge_file_Gq8zBz
      */
     public function __construct(
         public LazyCollection $collection,
@@ -134,6 +139,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     private function normalizeRow(mixed $row): array
     {
+<<<<<<< .merge_file_nhLzPy
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($row === null) {
@@ -143,6 +149,9 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
 =======
         if (null === $row) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($row === null) {
+>>>>>>> .merge_file_Gq8zBz
             return [];
         }
 

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_2rEBMg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5,6 +6,8 @@
 <<<<<<< .merge_file_t2xlhu
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_wodd2y
 ---
 title: 'Cart session — risorse esterne'
 module: Xot
@@ -65,6 +68,7 @@ updated: 2026-08-24
 - <https://meritocracy.is/blog/2021/06/08/laravel-implementing-a-shopping-cart-for-your-website/>
 - <https://github.com/Tefoh/Cart>
 - <https://github.com/Codexshaper/laravel-woocommerce>
+<<<<<<< .merge_file_2rEBMg
 =======
 >>>>>>> .merge_file_oH5CVy
 >>>>>>> laraxot/dev
@@ -223,3 +227,5 @@ updated: 2026-08-24
 =======
 https://github.com/Codexshaper/laravel-woocommerce
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wodd2y

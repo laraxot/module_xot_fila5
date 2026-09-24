@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
@@ -16,10 +17,15 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
+>>>>>>> .merge_file_doDLwP
 
 use function Safe\json_encode;
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -32,6 +38,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_doDLwP
 /**
  * Middleware di sicurezza avanzato.
  *
@@ -75,6 +83,7 @@ class SecurityMiddleware
     }
 
     /**
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -96,6 +105,8 @@ class SecurityMiddleware
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_doDLwP
      * Applica rate limiting avanzato.
      */
     private function applyAdvancedRateLimiting(Request $request): void
@@ -327,6 +338,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
@@ -336,6 +348,9 @@ class SecurityMiddleware
 =======
         if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
+>>>>>>> .merge_file_doDLwP
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -388,6 +403,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
@@ -397,6 +413,9 @@ class SecurityMiddleware
 =======
             if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
+>>>>>>> .merge_file_doDLwP
                 return true;
             }
         }
@@ -412,6 +431,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($value !== null && is_string($value)) {
@@ -421,6 +441,9 @@ class SecurityMiddleware
 =======
             if (null !== $value && is_string($value)) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($value !== null && is_string($value)) {
+>>>>>>> .merge_file_doDLwP
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -461,6 +484,7 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $value
@@ -470,6 +494,9 @@ class SecurityMiddleware
 =======
      * @param array<int|string, mixed> $value
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<array-key, mixed>  $value
+>>>>>>> .merge_file_doDLwP
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -495,6 +522,7 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
+<<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $array
@@ -504,6 +532,9 @@ class SecurityMiddleware
 =======
      * @param array<int|string, mixed> $array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<array-key, mixed>  $array
+>>>>>>> .merge_file_doDLwP
      */
     private function getArrayDepth(array $array): int
     {

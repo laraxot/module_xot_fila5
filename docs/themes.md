@@ -84,6 +84,7 @@ Per personalizzare un tema:
 8. **Documentazione**: Documenta tutto accuratamente
 ## Collegamenti tra versioni di themes.md
 * [themes.md](docs/rules/themes.md)
+<<<<<<< .merge_file_3rT0Lr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -101,10 +102,13 @@ Per personalizzare un tema:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_azRfck
 * [themes.md](../../../Xot/docs/themes.md)
 * [themes.md](../../../Cms/docs/frontoffice/themes.md)
 
 * [README.md Tema One](laravel/Themes/One/docs/README.md)
+<<<<<<< .merge_file_3rT0Lr
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
@@ -118,3 +122,6 @@ Per personalizzare un tema:
 =======
 * [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+* [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
+>>>>>>> .merge_file_azRfck

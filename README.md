@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_yI3iJv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_foEZEO
 ---
 id: module-xot-readme
 title: "Xot — Fondazione Architetturale di Laraxot"
@@ -65,6 +68,7 @@ Maintain `declare(strict_types=1);` in PHP, adhere to project PHPStan config, an
 ---
 
 **Modulo** `xot` · **Laraxot ecosystem** · **Project-agnostic**
+<<<<<<< .merge_file_yI3iJv
 <<<<<<< HEAD
 =======
 =======
@@ -584,3 +588,5 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 =======
 **Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_foEZEO

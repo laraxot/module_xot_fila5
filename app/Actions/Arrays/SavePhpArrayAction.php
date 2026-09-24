@@ -15,6 +15,7 @@ class SavePhpArrayAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_UlkQLR
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $data
@@ -41,6 +42,9 @@ class SavePhpArrayAction
      * @param array<int|string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
      *                                       >>>>>>> laraxot/dev
+=======
+     * @param  array<int|string, mixed>  $data
+>>>>>>> .merge_file_Ac0HCU
      */
     public function execute(array $data, string $filename): bool
     {

@@ -12,7 +12,7 @@ uses(TestCase::class);
 
 describe('GetExportFileNameAction — stesso nome file per export_xls e export_xlsx', function (): void {
     test('class_basename della pagina + filtri appiattiti, come il custom storico', function (): void {
-        $page = new ListRecordsStub();
+        $page = new ListRecordsStub;
         $page->tableFilters = [
             'anno_valutatore' => [
                 'anno' => 2026,
@@ -27,7 +27,7 @@ describe('GetExportFileNameAction — stesso nome file per export_xls e export_x
     });
 
     test('filtri assenti o nulli non rompono il nome', function (): void {
-        $page = new ListRecordsStub();
+        $page = new ListRecordsStub;
         $page->tableFilters = [
             'anno_valutatore' => [
                 'anno' => null,

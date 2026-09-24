@@ -18,8 +18,8 @@ class GetRouteMethodAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
      * @param  array<string, mixed>  $v
+<<<<<<< .merge_file_om8gXo
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_PLRs1y
@@ -39,11 +39,14 @@ class GetRouteMethodAction
      *
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_v3zXIP
      * @return array<int, string>
      */
     public function execute(array $v, ?string $namespace = null): array
     {
         if (isset($v['method'])) {
+<<<<<<< .merge_file_om8gXo
 <<<<<<< HEAD
             /** @var array<int, string> */
 =======
@@ -62,6 +65,9 @@ class GetRouteMethodAction
             /* @var array<int, string> */
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            /** @var array<int, string> */
+>>>>>>> .merge_file_v3zXIP
             return Arr::wrap($v['method']);
         }
 

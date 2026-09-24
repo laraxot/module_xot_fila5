@@ -39,8 +39,8 @@ class HtmlService
         // include_once __DIR__.'/vendor/autoload.php';
         // $pdforientation = 'L'; // default;
         // $out = 'show';
-<<<<<<< HEAD
         if ($filename === '') {
+<<<<<<< .merge_file_5RqMXQ
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_FBBB6T
@@ -57,6 +57,8 @@ class HtmlService
         if ('' === $filename) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_VtQZTB
             $filename = Storage::disk('local')->path('test.pdf');
         }
         /*
@@ -73,6 +75,7 @@ class HtmlService
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
+<<<<<<< .merge_file_5RqMXQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -81,11 +84,14 @@ class HtmlService
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_VtQZTB
             if ($out === 'content_PDF') {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ($out === 'file') {
+<<<<<<< .merge_file_5RqMXQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -108,6 +114,8 @@ class HtmlService
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_VtQZTB
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

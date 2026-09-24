@@ -20,6 +20,7 @@ class CommandOutputEvent implements ShouldBroadcast
         public string $processId,
         public string $output,
         public string $type = 'output',
+<<<<<<< .merge_file_MnkF8i
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -31,6 +32,9 @@ class CommandOutputEvent implements ShouldBroadcast
     ) {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_l4Ph3M
 
     public function broadcastOn(): array
     {

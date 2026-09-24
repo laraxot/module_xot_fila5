@@ -64,6 +64,7 @@
 **Status**: 🧘 **IN PIANIFICAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_sdIWco
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -75,3 +76,5 @@
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yKk5KH

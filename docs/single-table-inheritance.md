@@ -77,6 +77,7 @@
 ## Collegamenti
 
 - [Modelli Patient](../Patient/docs/models.md)
+<<<<<<< .merge_file_nnVCYF
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Best Practices Modelli](./models.md)
@@ -96,3 +97,7 @@
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Best Practices Modelli](./models.md)
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> .merge_file_n1uRVj

@@ -31,6 +31,7 @@ class ComponentFileData extends Data
     public ?string $ns = null;
 
     /**
+<<<<<<< .merge_file_oBGx0T
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -43,6 +44,9 @@ class ComponentFileData extends Data
      * @param EloquentCollection<int, mixed>|Collection<int, mixed>|array<int, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
      *
+=======
+     * @param  EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>>  $data
+>>>>>>> .merge_file_RCWS7S
      * @return DataCollection<int, static>
      */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection

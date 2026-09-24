@@ -201,15 +201,19 @@ Questo è INUTILE perché:
 ---
 
 **Data:** 2026-01-09
+<<<<<<< .merge_file_6AdWBd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lQeA10
 **Stato:** Pronto per implementazione
 **Righe:** 126 → ~25 (-80%)
 **Complessità:** ESTREMA → MINIMALE
 **Filosofia:** MySQL Production = MySQL Tests ✅
+<<<<<<< .merge_file_6AdWBd
 <<<<<<< HEAD
 =======
 =======
@@ -226,3 +230,5 @@ Questo è INUTILE perché:
 =======
 **Filosofia:** MySQL Production = MySQL Tests ✅
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lQeA10

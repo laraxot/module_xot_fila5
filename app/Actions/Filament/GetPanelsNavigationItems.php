@@ -35,6 +35,7 @@ class GetPanelsNavigationItems
                 ->visible(static function () use ($panel): bool {
                     /** @var FilamentUser|null $user */
                     $user = Auth::user();
+<<<<<<< .merge_file_96GPtx
 <<<<<<< HEAD
 <<<<<<< HEAD
                     if ($user === null) {
@@ -44,6 +45,9 @@ class GetPanelsNavigationItems
 =======
                     if (null === $user) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                    if ($user === null) {
+>>>>>>> .merge_file_1PlWcJ
                         return false;
                     }
 

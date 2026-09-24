@@ -61,6 +61,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
+<<<<<<< .merge_file_NO4PaF
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($this->name === '') {
@@ -70,6 +71,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 =======
         if ('' === $this->name) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($this->name === '') {
+>>>>>>> .merge_file_no3IXN
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -97,6 +101,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
+<<<<<<< .merge_file_NO4PaF
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($this->name === '') {
@@ -106,6 +111,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 =======
         if ('' === $this->name) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($this->name === '') {
+>>>>>>> .merge_file_no3IXN
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -123,6 +131,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerTranslations(): void
     {
+<<<<<<< .merge_file_NO4PaF
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($this->name === '') {
@@ -132,6 +141,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 =======
         if ('' === $this->name) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($this->name === '') {
+>>>>>>> .merge_file_no3IXN
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -191,8 +203,11 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
+<<<<<<< .merge_file_NO4PaF
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_no3IXN
         if ($comps->count() === 0) {
             return;
         }
@@ -200,6 +215,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $commands = $comps->toArray();
         /** @var array<int, string> $commands */
         $commands = array_map(static function (array $item): string {
+<<<<<<< .merge_file_NO4PaF
 =======
         if (0 === $comps->count()) {
             return;
@@ -217,10 +233,13 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $commands = array_map(static function (mixed $item): string {
             Assert::isArray($item);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_no3IXN
             Assert::keyExists($item, 'ns');
             Assert::string($item['ns'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
             return $item['ns'];
+<<<<<<< .merge_file_NO4PaF
 <<<<<<< HEAD
 <<<<<<< HEAD
         }, $commands);
@@ -230,6 +249,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 =======
         }, $commands);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        }, $commands);
+>>>>>>> .merge_file_no3IXN
         $this->commands($commands);
     }
 
@@ -270,11 +292,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     protected function registerPublicAssets(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
             throw new \Exception('name is empty on ['.static::class.']');
         }
 

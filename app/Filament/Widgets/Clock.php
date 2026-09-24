@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< .merge_file_2cwAT4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@ namespace Modules\Xot\Filament\Widgets;
 // use Symfony\Component\Console\Output\BufferedOutput;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Nc6kyF
 class Clock extends XotBaseWidget
 {
     public string $start = '';
@@ -43,6 +46,7 @@ class Clock extends XotBaseWidget
             // Decrement the counter...
             // $this->start = $this->start - 1;
             $this->start = (string) now();
+<<<<<<< .merge_file_2cwAT4
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($this->start === 'impossible') {
@@ -52,6 +56,9 @@ class Clock extends XotBaseWidget
 =======
             if ('impossible' === $this->start) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($this->start === 'impossible') {
+>>>>>>> .merge_file_Nc6kyF
                 $cond = false;
             }
         }

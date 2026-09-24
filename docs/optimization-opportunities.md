@@ -348,6 +348,7 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+<<<<<<< .merge_file_Kxb1xA
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
@@ -369,6 +370,11 @@ abstract class BaseModel extends XotBaseModel
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/healthcare_app/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+>>>>>>> .merge_file_kpcmCA
 
 **Soluzione DRY + KISS**:
 ```php
@@ -633,6 +639,7 @@ return array_merge(
 ---
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< .merge_file_Kxb1xA
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Autore: Analisi Automatica del Progetto*
@@ -646,3 +653,6 @@ return array_merge(
 =======
 *Autore: Analisi Automatica del Progetto*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Autore: Analisi Automatica del Progetto*
+>>>>>>> .merge_file_kpcmCA

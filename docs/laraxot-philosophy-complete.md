@@ -11,6 +11,7 @@
 - **Zen Principle**: One truth, many manifestations
 
 #### 2. **Consistency Over Flexibility**
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Predictable behavior > Unlimited options**
@@ -24,6 +25,9 @@
 =======
 - **<nome progetto>able behavior > Unlimited options**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Predictable behavior > Unlimited options**
+>>>>>>> .merge_file_eWdMyT
 - Same patterns across all modules, same file structures
 - **Violation Example**: Different test structures across modules
 - **Zen Principle**: Harmony through uniformity
@@ -40,6 +44,7 @@
 ```
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
 ├── Quaeris (Core Business Logic - Surveys)
@@ -53,6 +58,9 @@ Xot (Core Engine)
 =======
 ├── healthcare_app (Core Business Logic - Surveys)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+├── Quaeris (Core Business Logic - Surveys)
+>>>>>>> .merge_file_eWdMyT
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -132,6 +140,7 @@ TextInput::make('name');
 - **Power**: Controls access to all resources
 - **Responsibility**: Security and permissions
 
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
 #### 3. **Quaeris Module (The Economy)**
@@ -145,6 +154,9 @@ TextInput::make('name');
 =======
 #### 3. **healthcare_app Module (The Economy)**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+#### 3. **Quaeris Module (The Economy)**
+>>>>>>> .merge_file_eWdMyT
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -214,6 +226,7 @@ if (isset($model->email)) { ... }
 
 #### 3. **Test Structure Consistency**
 - **Rule**: Tests in traditional Laravel structure only
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Reason**: Predictable autoloader behavior
@@ -227,6 +240,9 @@ if (isset($model->email)) { ... }
 =======
 - **Reason**: <nome progetto>able autoloader behavior
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Reason**: Predictable autoloader behavior
+>>>>>>> .merge_file_eWdMyT
 - **Location**: `Modules/{Module}/tests/`
 
 ## 🎯 Implementation Guidelines
@@ -262,15 +278,19 @@ class YourResource extends XotBaseResource
     // Pages auto-discovered following pattern
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_eWdMyT
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 =======
 =======
@@ -280,6 +300,8 @@ class YourResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_eWdMyT
     {
         return [
             // Form components - NO hardcoded labels
@@ -287,15 +309,19 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_eWdMyT
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 =======
 =======
@@ -305,6 +331,8 @@ class YourResource extends XotBaseResource
 =======
     public static function getInfolistSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_eWdMyT
     {
         return [
             // Infolist components
@@ -386,6 +414,7 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 ---
 
 **Maintained by**: Xot Module (The Laraxot Government)
+<<<<<<< .merge_file_iJljsp
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy**: Consistency, Predictability, Simplicity
@@ -407,3 +436,8 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Philosophy**: Consistency, <nome progetto>ability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Philosophy**: Consistency, Predictability, Simplicity
+**Goal**: Create a harmonious, maintainable, and scalable application architecture
+**Last Updated**: 2025-11-17
+>>>>>>> .merge_file_eWdMyT

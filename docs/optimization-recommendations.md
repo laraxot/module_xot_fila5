@@ -312,16 +312,20 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
+<<<<<<< .merge_file_ZhB1uc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_TATJcq
 - [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< .merge_file_ZhB1uc
 <<<<<<< HEAD
 =======
 =======
@@ -337,6 +341,8 @@ php artisan xot:test-framework
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TATJcq
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -651,16 +657,20 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
+<<<<<<< .merge_file_ZhB1uc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_TATJcq
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< .merge_file_ZhB1uc
 <<<<<<< HEAD
 =======
 =======
@@ -676,3 +686,5 @@ php artisan xot:test-framework
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TATJcq

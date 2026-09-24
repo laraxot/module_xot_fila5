@@ -1038,6 +1038,7 @@ $schedule->call(function () {
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x
 **Chart.js:** 4.x
+<<<<<<< .merge_file_lYlSxS
 <<<<<<< HEAD
 <<<<<<< HEAD
 **PHPStan Level:** 10
@@ -1051,3 +1052,6 @@ $schedule->call(function () {
 =======
 **PHPStan Level:** 10
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**PHPStan Level:** 10
+>>>>>>> .merge_file_PqyRmE

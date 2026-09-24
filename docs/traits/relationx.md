@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_CWRfAs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17,6 +18,8 @@ canonical: ../../../../Themes/docs/shared-components/RelationX.md
 See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_cBymq2
 # RelationX Trait
 
 ## Scopo Business
@@ -51,6 +54,7 @@ Versione estesa di `morphToMany` con le stesse funzionalità di `belongsToManyX`
 
 ## Utilizzo nei Moduli
 Questo trait è utilizzato nei modelli base di tutti i moduli per standardizzare le relazioni complesse e garantire coerenza nell'accesso ai dati.
+<<<<<<< .merge_file_CWRfAs
 # RelationX Trait
 
 ## Scopo Business
@@ -174,3 +178,5 @@ See canonical documentation: ../../../../Themes/docs/shared-components/RelationX
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_cBymq2
