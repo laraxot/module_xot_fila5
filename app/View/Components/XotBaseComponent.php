@@ -57,9 +57,13 @@ abstract class XotBaseComponent extends IlluminateComponent
 
         $module_name = Str::between($class, 'Modules\\', '\\Views\\');
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($module_name === '') {
 =======
         if ('' === $module_name) {
+>>>>>>> laraxot/dev
+=======
+        if ($module_name === '') {
 >>>>>>> laraxot/dev
             throw new \InvalidArgumentException("Unable to determine module name from class [{$class}].");
         }

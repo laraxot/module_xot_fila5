@@ -26,9 +26,13 @@ class LogsTable extends XotBaseResourceTable
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'size' => TextColumn::make('size')
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->formatStateUsing(static fn (?int $state): ?string => null === $state ? null : Number::fileSize($state))
 =======
                 ->formatStateUsing(static fn (?int $state): ?string => $state === null ? null : Number::fileSize($state))
+>>>>>>> laraxot/dev
+=======
+                ->formatStateUsing(static fn (?int $state): ?string => null === $state ? null : Number::fileSize($state))
 >>>>>>> laraxot/dev
                 ->placeholder('—')
                 ->sortable(),

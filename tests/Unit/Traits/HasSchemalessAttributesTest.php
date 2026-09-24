@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Mockery\MockInterface;
@@ -19,9 +22,13 @@ it('handles extra attributes scope', function (): void {
     $builder = Mockery::mock(Builder::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel();
 =======
     $model = new SchemalessTestModel;
+>>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
     $model->extra_attributes = SchemalessAttributes::createForModel($model, 'extra_attributes');
 
@@ -36,9 +43,13 @@ it('handles where extra attribute scope', function (): void {
     $builder->allows(['where' => $builder]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel();
 =======
     $model = new SchemalessTestModel;
+>>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
 
     $result = $model->scopeWhereExtraAttribute($builder, 'key', 'value');
@@ -48,9 +59,13 @@ it('handles where extra attribute scope', function (): void {
 
 it('gets and sets extra attributes', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel();
 =======
     $model = new SchemalessTestModel;
+>>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
     $model->setExtraAttribute('foo', 'bar');
 
@@ -61,9 +76,13 @@ it('gets and sets extra attributes', function (): void {
 
 it('returns all extra attributes as array', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel();
 =======
     $model = new SchemalessTestModel;
+>>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
     $model->setExtraAttribute('a', 1);
 
@@ -72,9 +91,13 @@ it('returns all extra attributes as array', function (): void {
 
 it('removes extra attribute', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel();
 =======
     $model = new SchemalessTestModel;
+>>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
     $model->setExtraAttribute('temp', 'val');
 

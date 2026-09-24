@@ -16,8 +16,12 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  *
  * Deselezionare = stato blank («tutti»), come il placeholder del Select precedente.
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Ternary 
 =======
+>>>>>>> laraxot/dev
+=======
+ * Ternary 
 >>>>>>> laraxot/dev
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
@@ -26,9 +30,13 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
     {
         parent::setUp();
 <<<<<<< HEAD
+<<<<<<< HEAD
         /*
 =======
 
+>>>>>>> laraxot/dev
+=======
+        /*
 >>>>>>> laraxot/dev
         $this->schema(function (): array {
             return [
@@ -47,8 +55,12 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
             ];
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
         */
 =======
+>>>>>>> laraxot/dev
+=======
+        */
 >>>>>>> laraxot/dev
     }
 }

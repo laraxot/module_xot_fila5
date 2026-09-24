@@ -1,17 +1,24 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
 >>>>>>> laraxot/dev
 /**
  * -WIP.
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Actions\Filament;
 
@@ -40,14 +47,20 @@ class GenerateTableColumnsByFileAction
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      *
      * @param File $file Il file della risorsa Filament
      *                   =======
      * @param File $file Il file della risorsa Filament
      *                   >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param  File  $file  Il file della risorsa Filament
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function execute(File $file): void
@@ -128,14 +141,20 @@ class GenerateTableColumnsByFileAction
      * Mostra informazioni di debug su un file.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      *
      * @param File $file Il file da analizzare
      *                   =======
      * @param File $file Il file da analizzare
      *                   >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param  File  $file  Il file da analizzare
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function ddFile(File $file): void

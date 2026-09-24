@@ -10,6 +10,9 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD.
  *
  * @property string               $id
@@ -18,6 +21,7 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @property string               $key
  * @property string|null          $key_hash
  * @property string               $value
+<<<<<<< HEAD
 =======
  * @property string $id
  * @property int $timestamp
@@ -26,11 +30,16 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @property string|null $key_hash
  * @property string $value
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static PulseValueFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *                                                                      =======
  *
  * @property string               $id
@@ -44,6 +53,9 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  *
  * @method static PulseValueFactory          factory($count = null, $state = [])
  *                                                                               >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  * @method static Builder<static>|PulseValue newModelQuery()

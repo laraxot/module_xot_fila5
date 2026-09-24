@@ -16,10 +16,14 @@ use function Safe\rmdir;
 use function Safe\unlink;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
@@ -33,9 +37,13 @@ beforeEach(function () use (&$tempDir): void {
 
 afterEach(function () use (&$tempDir): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     if ('' !== $tempDir && is_dir($tempDir)) {
 =======
     if ($tempDir !== '' && is_dir($tempDir)) {
+>>>>>>> laraxot/dev
+=======
+    if ('' !== $tempDir && is_dir($tempDir)) {
 >>>>>>> laraxot/dev
         $files = glob($tempDir.'/*');
         foreach ($files as $file) {

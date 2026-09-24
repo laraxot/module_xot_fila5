@@ -1,8 +1,12 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
 >>>>>>> laraxot/dev
 /**
  * Xot Seeder Helper Functions.
@@ -11,10 +15,13 @@ declare(strict_types=1);
  * The functions ensure that models are only seeded once
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 declare(strict_types=1);
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;

@@ -43,9 +43,13 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     {
         $record = $this->getInfolistRecord();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $record) {
 =======
         if ($record !== null) {
+>>>>>>> laraxot/dev
+=======
+        if (null !== $record) {
 >>>>>>> laraxot/dev
             $schema->record($record);
         }

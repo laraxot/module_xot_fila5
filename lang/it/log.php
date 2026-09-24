@@ -13,10 +13,16 @@ return [
             'name' => 'Admin',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'label' => 'log.navigation',
         'icon' => 'log.navigation',
         'sort' => 61,
 =======
+>>>>>>> laraxot/dev
+=======
+        'label' => 'log.navigation',
+        'icon' => 'log.navigation',
+        'sort' => 61,
 >>>>>>> laraxot/dev
     ],
     'fields' => [
@@ -66,6 +72,9 @@ return [
             'description' => '',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => [
             'label' => 'id',
         ],
@@ -99,6 +108,7 @@ return [
         'file-content' => [
             'label' => 'file-content',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'id'],
         'message' => ['label' => 'message'],
@@ -109,6 +119,8 @@ return [
         'path' => ['label' => 'path', 'placeholder' => 'path', 'helper_text' => 'path', 'description' => 'path'],
         'content' => ['label' => 'content', 'placeholder' => 'content', 'helper_text' => 'content', 'description' => 'content'],
         'file-content' => ['label' => 'file-content'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
     'actions' => [
@@ -125,6 +137,9 @@ return [
             ],
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'create' => [
             'label' => 'create',
             'icon' => 'create',
@@ -155,12 +170,15 @@ return [
             'icon' => 'logout',
             'label' => 'logout',
         ],
+<<<<<<< HEAD
 =======
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
     'label' => 'Log',

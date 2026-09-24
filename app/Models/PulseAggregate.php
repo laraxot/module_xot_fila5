@@ -10,6 +10,9 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD.
  *
  * @property string      $id
@@ -37,6 +40,7 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  *
  * @method static PulseAggregateFactory          factory($count = null, $state = [])
  *                                                                                   >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
  * @property string $id
  * @property int $bucket
@@ -49,6 +53,8 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @property int|null $count
  *
  * @method static PulseAggregateFactory factory($count = null, $state = [])
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @method static Builder<static>|PulseAggregate newModelQuery()
  * @method static Builder<static>|PulseAggregate newQuery()

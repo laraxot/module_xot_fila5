@@ -14,9 +14,13 @@ class XotDatabaseSeeder extends Seeder
     public function run(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->command !== null) {
 =======
         if (null !== $this->command) {
+>>>>>>> laraxot/dev
+=======
+        if ($this->command !== null) {
 >>>>>>> laraxot/dev
             $this->command->info('XotDatabaseSeeder: entity seeders…');
         }
@@ -37,9 +41,13 @@ class XotDatabaseSeeder extends Seeder
         ]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->command !== null) {
 =======
         if (null !== $this->command) {
+>>>>>>> laraxot/dev
+=======
+        if ($this->command !== null) {
 >>>>>>> laraxot/dev
             $this->command->info('XotDatabaseSeeder: completato.');
         }

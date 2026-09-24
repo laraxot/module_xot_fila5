@@ -1,17 +1,24 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
 >>>>>>> laraxot/dev
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Actions;
 
@@ -35,6 +42,7 @@ class GetModelByModelTypeAction
 
         /** @var class-string<Model> $model_class */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $model = $model_id !== null
             ? $model_class::query()->find($model_id)
             : new $model_class;
@@ -42,6 +50,11 @@ class GetModelByModelTypeAction
         $model = null !== $model_id
             ? $model_class::query()->find($model_id)
             : new $model_class();
+>>>>>>> laraxot/dev
+=======
+        $model = $model_id !== null
+            ? $model_class::query()->find($model_id)
+            : new $model_class;
 >>>>>>> laraxot/dev
 
         if (! $model instanceof Model) {

@@ -78,9 +78,14 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where condition to the query.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
 =======
+>>>>>>> laraxot/dev
+=======
+     *
+     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
 >>>>>>> laraxot/dev
      */
     public function where(string $column, mixed $value): static
@@ -93,9 +98,14 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where condition with operator to the query.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
 =======
+>>>>>>> laraxot/dev
+=======
+     *
+     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
 >>>>>>> laraxot/dev
      */
     public function whereOperator(string $column, string $operator, mixed $value): static

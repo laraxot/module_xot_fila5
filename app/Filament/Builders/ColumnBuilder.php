@@ -96,8 +96,12 @@ class ColumnBuilder
      * Status badge column with standard colors.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string, string> $customColors Custom color mappings
      */
@@ -119,8 +123,12 @@ class ColumnBuilder
      * Priority badge column.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string, string> $customColors Custom color mappings
      */

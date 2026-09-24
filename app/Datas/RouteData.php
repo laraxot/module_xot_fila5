@@ -15,12 +15,16 @@ class RouteData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  string  $prefix  Prefisso per tutte le rotte
      * @param  array<int, string>  $middleware  Middleware applicati a tutte le rotte
      * @param  string  $namespace  Namespace per i controller
      * @param  bool  $use_passport  Se utilizzare Passport per l'autenticazione API
      * @param  array<int, string>  $except_verify  Rotte eccettuate dalla verifica
      * @param  bool  $enable  Se le rotte sono abilitate
+<<<<<<< HEAD
 =======
      * @param string             $prefix        Prefisso per tutte le rotte
      * @param array<int, string> $middleware    Middleware applicati a tutte le rotte
@@ -28,6 +32,8 @@ class RouteData extends Data
      * @param bool               $use_passport  Se utilizzare Passport per l'autenticazione API
      * @param array<int, string> $except_verify Rotte eccettuate dalla verifica
      * @param bool               $enable        Se le rotte sono abilitate
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function __construct(
@@ -38,10 +44,14 @@ class RouteData extends Data
         public readonly array $except_verify = [],
         public readonly bool $enable = true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
+>>>>>>> laraxot/dev
+=======
+    ) {}
 >>>>>>> laraxot/dev
 
     /**
@@ -50,9 +60,13 @@ class RouteData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
+>>>>>>> laraxot/dev
+=======
+        return new self;
 >>>>>>> laraxot/dev
     }
 }

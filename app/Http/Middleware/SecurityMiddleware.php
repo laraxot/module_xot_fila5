@@ -9,19 +9,28 @@ use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 use function Safe\json_encode;
 use function Safe\preg_match;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
 =======
+>>>>>>> laraxot/dev
+=======
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
+
 >>>>>>> laraxot/dev
 /**
  * Middleware di sicurezza avanzato.
@@ -37,6 +46,9 @@ class SecurityMiddleware
     public function handle(Request $request, \Closure $next): Response
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if ($this->isDebugbarRoute($request)) {
             $response = $next($request);
             Assert::isInstanceOf($response, Response::class);
@@ -44,6 +56,9 @@ class SecurityMiddleware
             return $response;
         }
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
         // 1. Rate Limiting avanzato
@@ -68,6 +83,9 @@ class SecurityMiddleware
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Check if the request is for Debugbar routes.
      */
     private function isDebugbarRoute(Request $request): bool
@@ -80,6 +98,9 @@ class SecurityMiddleware
     }
 
     /**
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * Applica rate limiting avanzato.
@@ -314,9 +335,13 @@ class SecurityMiddleware
 
         // Log tentativi di accesso falliti
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
 =======
         if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
+>>>>>>> laraxot/dev
+=======
+        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
 >>>>>>> laraxot/dev
             Log::warning('Failed access attempt', $securityData);
         }
@@ -371,9 +396,13 @@ class SecurityMiddleware
 
         foreach ($suspiciousUserAgents as $suspicious) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
 =======
             if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
+>>>>>>> laraxot/dev
+=======
+            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
 >>>>>>> laraxot/dev
                 return true;
             }
@@ -391,9 +420,13 @@ class SecurityMiddleware
 
         foreach ($inputs as $key => $value) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (null !== $value && is_string($value)) {
 =======
             if ($value !== null && is_string($value)) {
+>>>>>>> laraxot/dev
+=======
+            if (null !== $value && is_string($value)) {
 >>>>>>> laraxot/dev
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
@@ -436,9 +469,13 @@ class SecurityMiddleware
      * Valida input array.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<array-key, mixed> $value
 =======
      * @param  array<array-key, mixed>  $value
+>>>>>>> laraxot/dev
+=======
+     * @param array<array-key, mixed> $value
 >>>>>>> laraxot/dev
      */
     private function validateArrayInput(string $key, array $value): void
@@ -466,9 +503,13 @@ class SecurityMiddleware
      * Ottieni profondità array.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<array-key, mixed> $array
 =======
      * @param  array<array-key, mixed>  $array
+>>>>>>> laraxot/dev
+=======
+     * @param array<array-key, mixed> $array
 >>>>>>> laraxot/dev
      */
     private function getArrayDepth(array $array): int

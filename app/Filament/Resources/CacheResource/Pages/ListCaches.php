@@ -7,8 +7,12 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 =======
+>>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Column;
 >>>>>>> laraxot/dev
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
@@ -29,6 +33,9 @@ class ListCaches extends XotBaseListRecords
     public function getHeaderWidgets(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return [];
     }
 
@@ -70,6 +77,7 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
 =======
         return [
             // Clock::make(),
@@ -78,6 +86,8 @@ class ListCaches extends XotBaseListRecords
 
     
    
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     /**
      * @return array<string, Action>

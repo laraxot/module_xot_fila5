@@ -53,9 +53,13 @@ abstract class XotBaseResourceTable
         return $resource;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
     /**
      * Modello delle righe mostrate (la relazione), distinto dal modello
@@ -80,6 +84,7 @@ abstract class XotBaseResourceTable
         $resource = static::getResource();
         $model = $resource::getModel();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return $model;
     }
@@ -87,5 +92,10 @@ abstract class XotBaseResourceTable
         return $model;
     }
 
+>>>>>>> laraxot/dev
+=======
+
+        return $model;
+    }
 >>>>>>> laraxot/dev
 }

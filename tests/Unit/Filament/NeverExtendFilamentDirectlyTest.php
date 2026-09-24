@@ -11,10 +11,14 @@ use function Safe\file_get_contents;
 use function Safe\preg_match;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 /**
  * Non si estende mai una classe Filament direttamente: si estende la sua XotBase.

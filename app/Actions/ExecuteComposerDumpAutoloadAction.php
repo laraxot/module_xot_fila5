@@ -110,6 +110,7 @@ class ExecuteComposerDumpAutoloadAction
 
             if ($status === 'failed') {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
             }
 
@@ -120,6 +121,11 @@ class ExecuteComposerDumpAutoloadAction
             }
 
             Event::dispatch('artisan-command.'.$status, ['composer dump-autoload', $finalErrorOutput]);
+
+>>>>>>> laraxot/dev
+=======
+                $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
+            }
 
 >>>>>>> laraxot/dev
             return [

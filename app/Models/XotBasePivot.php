@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Factories\Factory;
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
 use Illuminate\Support\Carbon;
@@ -22,15 +25,21 @@ use function Safe\preg_match;
  * The $connection is automatically set based on the child class namespace.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property string|int      $id
  * @property Carbon|null     $created_at
  * @property Carbon|null     $updated_at
  * @property Carbon|null     $deleted_at
+<<<<<<< HEAD
 =======
  * @property string|int $id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
@@ -40,8 +49,11 @@ abstract class XotBasePivot extends EloquentPivot
 {
     use HasXotFactory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     use Updater;
 
@@ -85,9 +97,13 @@ abstract class XotBasePivot extends EloquentPivot
         $namespace = static::class;
         $matches = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
 =======
         if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
+>>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
 >>>>>>> laraxot/dev
             return strtolower($matches[1]);
         }

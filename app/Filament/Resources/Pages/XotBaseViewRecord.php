@@ -9,9 +9,14 @@ use Filament\Actions\ActionGroup;
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
 use Filament\Resources\Pages\ViewRecord as FilamentViewRecord;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 =======
+>>>>>>> laraxot/dev
+=======
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
 >>>>>>> laraxot/dev
 
 abstract class XotBaseViewRecord extends FilamentViewRecord
@@ -19,6 +24,9 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
     use HasFiltersForm;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     final public function infolist(Schema $schema): Schema
     {
         return $schema->components($this->getInfolistSchema());
@@ -34,6 +42,9 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
         return [];
     }
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     /**

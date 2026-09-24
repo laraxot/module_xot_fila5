@@ -19,8 +19,12 @@ class UpdateCountAction
      * Execute the count action for the given model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param class-string<Model> $modelClass The fully qualified model class name
      */

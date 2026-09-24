@@ -30,11 +30,17 @@ class ExportXlsByCollection
      * @param  string  $filename  Nome del file Excel
      * @param  string|null  $transKey  Chiave di traduzione per i campi
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int|string, string>  $fields  Campi da includere: chiave intera => percorso
      *                                             (intestazione tradotta), chiave stringa => percorso con
      *                                             valore = intestazione esplicita non tradotta
 =======
      * @param  array<int, string>  $fields  Campi da includere nell'export
+>>>>>>> laraxot/dev
+=======
+     * @param  array<int|string, string>  $fields  Campi da includere: chiave intera => percorso
+     *                                             (intestazione tradotta), chiave stringa => percorso con
+     *                                             valore = intestazione esplicita non tradotta
 >>>>>>> laraxot/dev
      */
     public function execute(
@@ -44,10 +50,14 @@ class ExportXlsByCollection
         array $fields = [],
     ): BinaryFileResponse {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         // Conserva le chiavi stringa: chiave = percorso data_get, valore = intestazione esplicita.
         $stringFields = $fields;
         $export = new CollectionExport(
             collection: $collection,
+<<<<<<< HEAD
 =======
         // Assicuriamo che $fields sia un array di stringhe
         $stringFields = array_map(fn (mixed $field): string => (string) $field, array_values($fields));
@@ -59,6 +69,8 @@ class ExportXlsByCollection
 
         $export = new CollectionExport(
             collection: $supportCollection,
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             transKey: $transKey,
             fields: $stringFields,
@@ -72,9 +84,13 @@ class ExportXlsByCollection
      *
      * @param  Collection<int|string, mixed>|EloquentCollection<int, Model>  $rows  La collezione da esportare
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int|string, string>  $fields  Campi da includere nell'export
 =======
      * @param  array<int, string>  $fields  Campi da includere nell'export
+>>>>>>> laraxot/dev
+=======
+     * @param  array<int|string, string>  $fields  Campi da includere nell'export
 >>>>>>> laraxot/dev
      * @param  string  $filename  Nome del file Excel
      * @return string Il percorso del file generato
@@ -103,17 +119,23 @@ class ExportXlsByCollection
      *
      * @param  Worksheet  $sheet  Il foglio Excel
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  array<int|string, string>  $fields  I campi da utilizzare come intestazioni
      */
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach (array_values($fields) as $col => $field) {
+<<<<<<< HEAD
 =======
      * @param  array<int, string>  $fields  I campi da utilizzare come intestazioni
      */
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach ($fields as $col => $field) {
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
         }
@@ -125,9 +147,13 @@ class ExportXlsByCollection
      * @param  Worksheet  $sheet  Il foglio di lavoro
      * @param  Collection<int|string, mixed>  $rows  I dati da scrivere
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int|string, string>  $fields  I campi da utilizzare per le colonne
 =======
      * @param  array<int, string>  $fields  I campi da utilizzare per le colonne
+>>>>>>> laraxot/dev
+=======
+     * @param  array<int|string, string>  $fields  I campi da utilizzare per le colonne
 >>>>>>> laraxot/dev
      */
     protected function writeRows(Worksheet $sheet, Collection $rows, array $fields): void
@@ -135,16 +161,22 @@ class ExportXlsByCollection
         $row = 2;
         foreach ($rows as $data) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $col = 0;
             foreach ($fields as $key => $field) {
                 $path = \is_string($key) ? $key : $field;
                 $value = $this->extractValue($data, $path);
                 $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
                 $col++;
+<<<<<<< HEAD
 =======
             foreach ($fields as $col => $field) {
                 $value = $this->extractValue($data, $field);
                 $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             }
             $row++;

@@ -114,10 +114,15 @@ class ModulesOverviewWidget extends XotBaseWidget
      * Ottiene la descrizione per un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string $module Nome del modulo
      *
 =======
      * @param  string  $module  Nome del modulo
+>>>>>>> laraxot/dev
+=======
+     * @param string $module Nome del modulo
+     *
 >>>>>>> laraxot/dev
      * @return string Descrizione del modulo
      */

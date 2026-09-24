@@ -359,6 +359,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * PROPRIETARIA della pagina, non quella della relazione.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @throws \InvalidArgumentException se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali
      *
      * @return class-string<XotBaseResource>
@@ -366,6 +367,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * @return class-string<XotBaseResource>
      *
      * @throws \InvalidArgumentException Se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali.
+>>>>>>> laraxot/dev
+=======
+     * @throws \InvalidArgumentException se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali
+     *
+     * @return class-string<XotBaseResource>
 >>>>>>> laraxot/dev
      */
     protected function getRelatedResourceClass(): string

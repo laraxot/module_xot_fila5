@@ -14,10 +14,14 @@ use function Safe\rmdir;
 use function Safe\unlink;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 /** @var string|null $arrayTestTempDir */
 $arrayTestTempDir = null;

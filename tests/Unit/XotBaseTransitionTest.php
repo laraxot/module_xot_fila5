@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\User\Database\Factories\UserFactory;
@@ -48,18 +51,24 @@ describe('XotBaseTransition', function (): void {
         $record = UserFactory::new()->createOne();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $transition = new class($record) extends XotBaseTransition {
             public static string $name = 'test_transition';
 
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
             {
             }
+<<<<<<< HEAD
 =======
         $transition = new class($record) extends XotBaseTransition
         {
             public static string $name = 'test_transition';
 
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         };
 
@@ -76,10 +85,14 @@ describe('XotBaseTransition', function (): void {
         $record = UserFactory::new()->createOne();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $transition = new class($record) extends XotBaseTransition {
 =======
         $transition = new class($record) extends XotBaseTransition
         {
+>>>>>>> laraxot/dev
+=======
+        $transition = new class($record) extends XotBaseTransition {
 >>>>>>> laraxot/dev
             public static string $name = 'test_transition';
         };
@@ -100,10 +113,14 @@ describe('XotBaseTransition', function (): void {
         $record = UserFactory::new()->createOne();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $transition = new class($record) extends XotBaseTransition {
 =======
         $transition = new class($record) extends XotBaseTransition
         {
+>>>>>>> laraxot/dev
+=======
+        $transition = new class($record) extends XotBaseTransition {
 >>>>>>> laraxot/dev
             public static string $name = 'test_mixed_transition';
 
@@ -118,11 +135,17 @@ describe('XotBaseTransition', function (): void {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
             {
             }
 =======
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
+>>>>>>> laraxot/dev
+=======
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
+            {
+            }
 >>>>>>> laraxot/dev
         };
 

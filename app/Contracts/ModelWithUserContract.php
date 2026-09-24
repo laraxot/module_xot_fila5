@@ -11,6 +11,9 @@ use Illuminate\Support\Carbon;
  * Modules\Xot\Contracts\ModelContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property int $id
  * @property int|null $user_id
  * @property string|null $post_type
@@ -39,6 +42,7 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed> treeLabel()
  * @method array<string, mixed> treeSons()
  * @method array<string, mixed> toArray()
+<<<<<<< HEAD
 =======
  * @property int                $id
  * @property int|null           $user_id
@@ -69,6 +73,8 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
@@ -76,9 +82,13 @@ use Illuminate\Support\Carbon;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 interface ModelWithUserContract {}
 =======
 interface ModelWithUserContract
 {
 }
+>>>>>>> laraxot/dev
+=======
+interface ModelWithUserContract {}
 >>>>>>> laraxot/dev

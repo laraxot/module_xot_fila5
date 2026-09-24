@@ -32,9 +32,14 @@ use Spatie\Permission\Traits\HasRoles;
  * Modules\Xot\Contracts\UserContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
 =======
+>>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
 >>>>>>> laraxot/dev
  * @property string|null               $id
  * @property string|null               $email
@@ -53,6 +58,9 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *                                                        =======
  * @property string|null               $id
  * @property string|null               $email
@@ -71,6 +79,9 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
  *                                                        >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  *
@@ -102,14 +113,20 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Create a new personal access token for the user.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      * @param array<int, string> $scopes
      *                                   =======
      * @param array<int, string> $scopes
      *
      * >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param array<int, string> $scopes
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      *
      * @return PersonalAccessTokenResult<Token>
@@ -124,14 +141,20 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD.
      *
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
      *                                                                               =======
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
      *                                                                               >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function hasRole(
@@ -143,14 +166,20 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Assign the given role to the model.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *                                                                               =======
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *
      * >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      *
      * @return $this
@@ -161,14 +190,20 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Remove all current roles and set the given ones.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *                                                                               =======
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *
      * >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      *
      * @return $this
@@ -184,12 +219,18 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Come hasPermissionTo(), ma se il permesso non esiste ancora in DB lo
      * crea al volo invece di lasciare esplodere PermissionDoesNotExist.
      */
     public function hasPermissionToOrCreate(string $permission, ?string $guardName = null): bool;
 
     /**
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * Check if the user can access Socialite.
@@ -227,14 +268,20 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Revoke the given role from the model.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
      *                                                                                             =======
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
      *
      * >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      *
      * @return $this

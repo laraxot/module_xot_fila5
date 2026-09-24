@@ -11,9 +11,13 @@ final class SafeNullableStringCastAction
         $stringValue = SafeStringCastAction::cast($value);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $stringValue !== '' ? $stringValue : null;
 =======
         return '' !== $stringValue ? $stringValue : null;
+>>>>>>> laraxot/dev
+=======
+        return $stringValue !== '' ? $stringValue : null;
 >>>>>>> laraxot/dev
     }
 

@@ -12,6 +12,9 @@ class FilterRelationsAction
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $relations
@@ -29,8 +32,11 @@ class FilterRelationsAction
      *
      * >>>>>>> .merge_file_BmOCKH
      *
+<<<<<<< HEAD
 =======
      * @param  array<string, mixed>  $relations
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return array<string, Relation<Model, Model, mixed>>
      */

@@ -12,4 +12,10 @@ use Filament\Infolists\Components\Entry as FilamentEntry;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's Entry to provide a XotBase layer.
  */
+<<<<<<< HEAD
 abstract class XotBaseEntry extends FilamentEntry {}
+=======
+abstract class XotBaseEntry extends FilamentEntry
+{
+}
+>>>>>>> laraxot/dev

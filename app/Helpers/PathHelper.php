@@ -28,10 +28,16 @@ class PathHelper
      * Ottiene il percorso completo di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $moduleName Nome del modulo
@@ -47,12 +53,18 @@ class PathHelper
      * Ottiene il percorso dei modelli di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $moduleName Nome del modulo
@@ -68,10 +80,16 @@ class PathHelper
      * Ottiene il percorso delle migrazioni di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $moduleName Nome del modulo
@@ -87,12 +105,18 @@ class PathHelper
      * Ottiene il percorso dei seeder di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $moduleName Nome del modulo
@@ -108,10 +132,16 @@ class PathHelper
      * Ottiene il percorso dei controller di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $moduleName Nome del modulo
@@ -127,12 +157,18 @@ class PathHelper
      * Ottiene il percorso delle risorse Filament di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $moduleName Nome del modulo
@@ -148,13 +184,19 @@ class PathHelper
      * Ottiene il percorso dei provider di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
+<<<<<<< HEAD
 =======
      * @param string $moduleName Nome del modulo
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return string Percorso dei provider
      */
@@ -167,11 +209,17 @@ class PathHelper
      * Ottiene il percorso delle viste di un modulo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $moduleName Nome del modulo
@@ -187,13 +235,19 @@ class PathHelper
      * Verifica se un percorso è corretto secondo le convenzioni del progetto.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $path Percorso da verificare
      *
      *
+<<<<<<< HEAD
 =======
      * @param string $path Percorso da verificare
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return bool True se il percorso è corretto, false altrimenti
      */
@@ -211,11 +265,17 @@ class PathHelper
      * Corregge un percorso errato secondo le convenzioni del progetto.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $path Percorso da correggere
      *
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string $path Percorso da correggere
@@ -255,13 +315,19 @@ class PathHelper
      * Verifica se un modulo esiste.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string $moduleName Nome del modulo
      *
      *
+<<<<<<< HEAD
 =======
      * @param string $moduleName Nome del modulo
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return bool True se il modulo esiste, false altrimenti
      */

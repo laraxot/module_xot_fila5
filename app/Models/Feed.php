@@ -13,14 +13,20 @@ use Modules\Xot\Database\Factories\FeedFactory;
  * Modules\Xot\Models\Feed.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD
  *
  * @property string      $id
  *                                   =======
  * @property string      $id
  *                                   >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
  * @property string $id
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @property string|null $created_by
  * @property string|null $updated_by
@@ -28,14 +34,20 @@ use Modules\Xot\Database\Factories\FeedFactory;
  * @property Carbon|null $updated_at
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD
  *
  * @method static FeedFactory          factory($count = null, $state = [])
  *                                                                         =======
  * @method static FeedFactory          factory($count = null, $state = [])
  *                                                                         >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
  * @method static FeedFactory factory($count = null, $state = [])
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @method static Builder<static>|Feed newModelQuery()
  * @method static Builder<static>|Feed newQuery()

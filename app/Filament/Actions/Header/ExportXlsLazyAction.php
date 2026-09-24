@@ -24,6 +24,9 @@ class ExportXlsLazyAction extends XotBaseAction
         parent::setUp();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $this->label('')
             ->iconButton()
             ->color('success')
@@ -34,6 +37,7 @@ class ExportXlsLazyAction extends XotBaseAction
             ->modalSubmitActionLabel((string) __('xot::export_xls.actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::export_xls.actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::export_xls.actions.export_xls.success'))
+<<<<<<< HEAD
 =======
         $this->label((string) __('xot::actions.export_xls.label'))
             ->tooltip((string) __('xot::actions.export_xls.tooltip'))
@@ -43,6 +47,8 @@ class ExportXlsLazyAction extends XotBaseAction
             ->modalSubmitActionLabel((string) __('xot::actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::actions.export_xls.success'))
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             ->requiresConfirmation()
             ->action(static function (ListRecords $livewire) {
@@ -55,10 +61,14 @@ class ExportXlsLazyAction extends XotBaseAction
                 $transKey .= '.fields';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 $pathFields = self::resolvePathFields($livewire);
 
                 $lazy = $livewire->getFilteredTableQuery();
                 if (null === $lazy) {
+<<<<<<< HEAD
 =======
                 $resource = $livewire->getResource();
                 /** @var array<int, string> $fields */
@@ -92,10 +102,13 @@ class ExportXlsLazyAction extends XotBaseAction
                 $lazy = $livewire->getFilteredTableQuery();
                 if ($lazy === null) {
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
                     throw new \Exception('Query is null');
                 }
 
                 if ($lazy->count() < 7) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
                     return app(ExportXlsByQuery::class)->execute($lazy, $filename, $pathFields, null);
@@ -106,6 +119,10 @@ class ExportXlsLazyAction extends XotBaseAction
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
                     return app(ExportXlsByQuery::class)->execute($lazy, $filename, $stringFields, null);
 >>>>>>> laraxot/dev
+=======
+                    // PHPStan knows $lazy is Builder|Relation here, no need for Assert
+                    return app(ExportXlsByQuery::class)->execute($lazy, $filename, $pathFields, null);
+>>>>>>> laraxot/dev
                 }
 
                 $lazyCursor = $lazy->cursor();
@@ -115,15 +132,21 @@ class ExportXlsLazyAction extends XotBaseAction
                 if ($lazyCursor->count() > 3000) {
                     return app(ExportXlsStreamByLazyCollection::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                         ->execute($exportCollection, $filename, $transKey, $pathFields);
                 }
 
                 return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, $pathFields);
+<<<<<<< HEAD
 =======
                         ->execute($exportCollection, $filename, $transKey, array_values($fields));
                 }
 
                 return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, array_values($fields));
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             });
     }
@@ -133,6 +156,9 @@ class ExportXlsLazyAction extends XotBaseAction
         return 'export_xls';
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Il canale lazy lavora sui soli percorsi data_get: le intestazioni
@@ -178,6 +204,9 @@ class ExportXlsLazyAction extends XotBaseAction
 
         return '';
     }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 }
