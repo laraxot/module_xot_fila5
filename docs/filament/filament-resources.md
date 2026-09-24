@@ -108,4 +108,8 @@ return [
 
 - Mantenute le validazioni e la struttura del form
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

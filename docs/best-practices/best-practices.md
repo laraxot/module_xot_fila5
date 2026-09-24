@@ -770,4 +770,8 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> laraxot/dev

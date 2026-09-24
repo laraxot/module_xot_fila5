@@ -1,11 +1,18 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * Xot Seeder Helper — canonical seed-once logic (coverage perimeter under app/).
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Helpers;
 
 use Illuminate\Database\Eloquent\Model;

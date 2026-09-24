@@ -437,4 +437,8 @@ function processUserData(array $data): array
 **Quality Standard**: PHPStan Level 10
 **Type Coverage**: 98%+
 **Performance**: Optimized
+<<<<<<< HEAD
 **Documentation**: Complete PHPDoc coverage
+=======
+**Documentation**: Complete PHPDoc coverage
+>>>>>>> laraxot/dev

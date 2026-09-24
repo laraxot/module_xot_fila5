@@ -1,7 +1,12 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+use Filament\Tables\Columns\Column;
+use Modules\Xot\Filament\Traits\HasXotTable;
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture;
 use PHPUnit\Framework\Assert;
@@ -9,7 +14,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('un override di getTableFilters viene onorato', function (): void {
+<<<<<<< HEAD
     $fixture = new LegacyTableNameFixture();
+=======
+    $fixture = new LegacyTableNameFixture;
+>>>>>>> laraxot/dev
 
     Assert::assertSame(['legacy_filter'], array_keys($fixture->getTableFilters()));
 });
@@ -17,6 +26,7 @@ test('un override di getTableFilters viene onorato', function (): void {
 test('senza override si ricade sul default vuoto', function (): void {
     $fixture = new class
     {
+<<<<<<< HEAD
         use Modules\Xot\Filament\Traits\HasXotTable;
 
         public string $tableSearch = '';
@@ -24,6 +34,14 @@ test('senza override si ricade sul default vuoto', function (): void {
         /** @return array<string, mixed> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
     public function getTableColumns(): array
+=======
+        use HasXotTable;
+
+        public string $tableSearch = '';
+
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }
@@ -31,4 +49,7 @@ test('senza override si ricade sul default vuoto', function (): void {
 
     Assert::assertSame([], $fixture->getTableFilters());
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev

@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Route;
 
 $namespace = '\Modules\Xot\Http\Controllers';

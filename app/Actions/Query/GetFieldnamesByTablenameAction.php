@@ -16,12 +16,20 @@ final class GetFieldnamesByTablenameAction
     /**
      * Get column names from a table with specific database connection.
      *
+<<<<<<< HEAD
      * @param string      $table          Table name to get columns from
      * @param string|null $connectionName Database connection name (optional)
      *
      * @throws \InvalidArgumentException
      *
      * @return list<string>
+=======
+     * @param  string  $table  Table name to get columns from
+     * @param  string|null  $connectionName  Database connection name (optional)
+     * @return list<string>
+     *
+     * @throws \InvalidArgumentException
+>>>>>>> laraxot/dev
      */
     public function execute(string $table, ?string $connectionName = null): array
     {

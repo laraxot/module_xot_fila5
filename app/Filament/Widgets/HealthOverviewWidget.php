@@ -26,7 +26,11 @@ class HealthOverviewWidget extends XotBaseStatsOverviewWidget
         $stats = [];
 
         $checkResults = app(ResultStore::class)->latestResults();
+<<<<<<< HEAD
         if (null === $checkResults) {
+=======
+        if ($checkResults === null) {
+>>>>>>> laraxot/dev
             return $stats;
         }
         foreach ($checkResults->storedCheckResults as $result) {

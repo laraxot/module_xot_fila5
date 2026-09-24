@@ -1,11 +1,18 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://dev.to/jackmiras/laravels-exceptions-part-2-custom-exceptions-1367
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Exceptions;
 
 use Illuminate\Http\Response;

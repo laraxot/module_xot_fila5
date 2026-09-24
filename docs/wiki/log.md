@@ -4,7 +4,11 @@ type: log
 module: Xot
 tags: [xot, phpstan, pest, qmd, ponytail-audit]
 created: 2026-04-20
+<<<<<<< HEAD
 updated: 2026-07-24
+=======
+updated: 2026-09-21
+>>>>>>> laraxot/dev
 qmd: "Xot log phpstan pest bridge discipline ponytail audit domain actions"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -15,6 +19,16 @@ discussions:
 
 # Activity Log — Xot
 
+<<<<<<< HEAD
+=======
+## [2026-09-21] phpstan | zero certificato + wiki hygiene
+
+- `phpstan analyse` (senza path CLI) e `analyse Modules` entrambi 0, `totals.file_errors: 0`.
+- Canon: [phpstan-status.md](../phpstan-status.md) · story [18.59](../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md)
+- Merge markers risolti in [phpstan-best-practices.md](phpstan-best-practices.md); rimosso duplicato `PHPSTAN-BEST-PRACTICES.md`.
+- Mute-gate Setting (`getFormSchema` final) + marker PHP Activity chiusi; certify ancora 0.
+
+>>>>>>> laraxot/dev
 ## [2026-07-24] architecture | no domain Actions in Xot
 
 - Concept: [no-domain-actions-in-xot.md](concepts/no-domain-actions-in-xot.md)
@@ -230,7 +244,11 @@ discussions:
 ## [2026-06-13] docs | Hub platform-completion-roadmap + gate PHPStan zero
 
 - Creato [overviews/platform-completion-roadmap.md](overviews/platform-completion-roadmap.md) — SSoT completamento 16 moduli + 4 temi.
+<<<<<<< HEAD
 - Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+=======
+- Aggiornati [phpstan-best-practices.md](phpstan-best-practices.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+>>>>>>> laraxot/dev
 - Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
 - Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
@@ -439,3 +457,14 @@ Writer `/root`, reviewer `/root/proposal_review`; story condivisa aggiornata. [A
 ### 2026-09-11 — Tracking BMAD completato
 
 Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [discussion #114](https://github.com/laraxot/module_xot_fila5/discussions/114) nel repository Xot, collegate alla story e alla memoria. MCP tentato con 403; pubblicazione riuscita con gh. Nessuna modifica applicativa.
+<<<<<<< HEAD
+=======
+
+## [2026-09-17] EnvWidget: aggiunti campi `sms_driver` e `netfun_token` (blocco go-live Notify — nessun accesso SSH/FTP in produzione)
+
+- Richiesta utente: cambiare `SMS_DRIVER=netfun` nel `.env` di produzione, ma nessun accesso SSH/FTP disponibile per modificarlo a mano (vedi [module_quaeris_fila5#38](https://github.com/laraxot/module_quaeris_fila5/issues/38)).
+- `EnvWidget` esisteva già e scrive `.env` dal pannello admin, ma non esponeva `SMS_DRIVER`. Aggiunta proprietà `sms_driver` a [`EnvData`](../../app/Datas/EnvData.php) e campo `Select` (opzioni chiuse sui driver mappati in `SmsActionFactory`, non testo libero) a [`EnvWidget::getFormSchema()`](../../app/Filament/Widgets/EnvWidget.php). Attivato in `Notify\SettingPage` (`only`).
+- Richiesta successiva dell'utente, stesso giorno: poter anche vedere/modificare `NETFUN_TOKEN` dalla stessa pagina (verifica di cosa c'è già in produzione, senza SSH). Aggiunta proprietà `netfun_token` a `EnvData` e `TextInput` (non `Select`: valore libero fornito dal provider) a `EnvWidget`, anch'esso attivato in `Notify\SettingPage`. Compare già valorizzato al caricamento della pagina — `mount()` carica sempre `$_ENV` corrente nel form, nessun lavoro aggiuntivo richiesto per la visualizzazione.
+- Documentato il meccanismo generale (mai descritto prima): [concepts/env-widget-no-ssh-env-editor.md](concepts/env-widget-no-ssh-env-editor.md) — come aggiungere una variabile editabile, e il passo successivo obbligato (`config:cache` via `ArtisanCommandsManager`, già disponibile) se la config è cache-ata in produzione.
+- PHPStan pulito sui 3 file toccati (`EnvData.php`, `EnvWidget.php`, `Notify\SettingPage.php`), `php -l` ok. Nessuna verifica end-to-end in produzione — i valori vanno ancora selezionati/salvati dall'utente dopo il deploy.
+>>>>>>> laraxot/dev

@@ -10,6 +10,7 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 {
+<<<<<<< HEAD
   /**
    * @return array<string, TextColumn>
    */
@@ -29,4 +30,25 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
       'fixture_filter' => Filter::make('fixture_filter'),
     ];
   }
+=======
+    /**
+     * @return array<string, TextColumn>
+     */
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id'),
+        ];
+    }
+
+    /**
+     * @return array<string, Filter>
+     */
+    public function getTableFilters(): array
+    {
+        return [
+            'fixture_filter' => Filter::make('fixture_filter'),
+        ];
+    }
+>>>>>>> laraxot/dev
 }

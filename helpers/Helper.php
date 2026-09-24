@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -30,6 +33,10 @@ if (! function_exists('isRunningTestBench')) {
 }
 
 if (! function_exists('dddx')) {
+<<<<<<< HEAD
+=======
+    /** @param mixed $params Qualunque valore da dumpare (debug helper) */
+>>>>>>> laraxot/dev
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
@@ -197,10 +204,18 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $options
      * @return TestResponse<Response>
      */
     function post(string $uri, mixed $data = [], array $options = []): TestResponse
+=======
+     * @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $options
+     * @return TestResponse<Response>
+     */
+    function post(string $uri, array $data = [], array $options = []): TestResponse
+>>>>>>> laraxot/dev
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -208,9 +223,16 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function put(string $uri, mixed $data = []): TestResponse
+=======
+     * @param  array<string, mixed>  $data
+     * @return TestResponse<Response>
+     */
+    function put(string $uri, array $data = []): TestResponse
+>>>>>>> laraxot/dev
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -218,9 +240,16 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function patch(string $uri, mixed $data = []): TestResponse
+=======
+     * @param  array<string, mixed>  $data
+     * @return TestResponse<Response>
+     */
+    function patch(string $uri, array $data = []): TestResponse
+>>>>>>> laraxot/dev
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }

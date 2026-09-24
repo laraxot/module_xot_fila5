@@ -74,8 +74,12 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< HEAD
      * @param array<array-key, mixed> $config
      *
+=======
+     * @param  array<array-key, mixed>  $config
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function normalizeConfigArray(array $config): array
