@@ -115,7 +115,7 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
                         });
                     </script>
                     HTML,
-                scopes: Login::class,
+                scopes: \Filament\Auth\Pages\Login::class,
             );
         $navs = app(GetModulesNavigationItems::class)->execute();
         $panel->navigationItems($navs);

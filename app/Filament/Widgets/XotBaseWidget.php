@@ -30,6 +30,11 @@ use Webmozart\Assert\Assert;
  * @property string $icon Icona del widget
  * @property array<string, mixed>|null $data Dati del form
  * @property Schema $form
+ * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
+ * @property string                    $title        Titolo del widget
+ * @property string                    $icon         Icona del widget
+ * @property array<string, mixed>|null $data         Dati del form
+ * @property Schema                    $form
  */
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
@@ -181,6 +186,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         }
 
         return Action::make('submit')
+            ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
             ->submit('save')
             ->view((string) $submit_view);
     }
@@ -194,6 +200,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         return [
             Action::make('save')
+                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
                 ->submit('save'),
         ];
     }

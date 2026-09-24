@@ -20,6 +20,11 @@ it('casts various values to array correctly', function (): void {
     // Collection
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     // stdClass
+    $obj = new stdClass();
+    $obj->c = 3;
+    Assert::assertSame(['c' => 3], $action->execute($obj));
+    // Object with toArray
+    $objToArray = new class {
     $obj = new stdClass;
     $obj->c = 3;
     Assert::assertSame(['c' => 3], $action->execute($obj));
@@ -87,7 +92,7 @@ it('checks if value can be cast', function (): void {
     Assert::assertTrue($action->canCast([]));
     Assert::assertTrue($action->canCast(null));
     Assert::assertTrue($action->canCast('str'));
-    Assert::assertTrue($action->canCast(new stdClass));
+    Assert::assertTrue($action->canCast(new stdClass()));
 });
 
 it('uses static cast method correctly', function (): void {

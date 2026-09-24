@@ -37,7 +37,8 @@ class CopyFromLastYearAction extends XotBaseAction
     }
 
     /**
-     * @param  array<array-key, mixed>  $input
+     * @param array<array-key, mixed> $input
+     *
      * @return array<string, mixed>
      */
     private static function normalizeStringKeyArray(array $input): array

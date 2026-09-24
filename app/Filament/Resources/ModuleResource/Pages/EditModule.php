@@ -74,7 +74,12 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
-     * @param  array<array-key, mixed>  $config
+     *
+     * @param array<array-key, mixed> $config
+     *
+     *
+     * @param array<array-key, mixed> $config
+     *
      * @return array<string, mixed>
      */
     private function normalizeConfigArray(array $config): array

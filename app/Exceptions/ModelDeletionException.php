@@ -5,6 +5,8 @@ declare(strict_types=1);
  * @see https://dev.to/jackmiras/laravel-delete-actions-simplified-4h8b
  */
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Exceptions;
 
 use Illuminate\Http\Response;

@@ -28,13 +28,14 @@ final class FilemanagerData extends Data
         public readonly int $maxSize = 10,
         public readonly string $routePrefix = 'filemanager',
         public readonly bool $enableCrop = true,
-    ) {}
+    ) {
+    }
 
     /**
      * Create a new instance of FilemanagerData with default values.
      */
     public static function make(): self
     {
-        return new self;
+        return new self();
     }
 }

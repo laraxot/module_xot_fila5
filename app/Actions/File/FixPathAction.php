@@ -5,6 +5,8 @@ declare(strict_types=1);
  * moved from fileservice.
  */
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Actions\File;
 
 use Spatie\QueueableAction\QueueableAction;

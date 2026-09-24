@@ -17,6 +17,26 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property int $id
  * @property int|null $model_id
  * @property string|null $model_type
+ *
+ * @property int                                               $id
+ * @property int|null                                          $model_id
+ * @property string|null                                       $model_type
+ * @property int                                               $id
+ * @property int|null                                          $model_id
+ * @property string|null                                       $model_type
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
+ *
+ * @method static Builder|BaseModel disableCache()
+ * @method static ExtraFactory      factory($count = null, $state = [])
+ * @method static Builder|Extra     newModelQuery()
+ * @method static Builder|Extra     newQuery()
+ * @method static Builder|Extra     query()
+ * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
+ * @method static Builder|Extra     withExtraAttributes()
+ *
+ * @property int                                               $id
+ * @property int|null                                          $model_id
+ * @property string|null                                       $model_type
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  *
  * @method static Builder|BaseModel disableCache()
@@ -25,7 +45,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|Extra newQuery()
  * @method static Builder|Extra query()
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
- * @method static Builder|Extra withExtraAttributes()
+ * @method static Builder|Extra     withExtraAttributes()
  *
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

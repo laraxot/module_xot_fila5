@@ -18,7 +18,9 @@ use Webmozart\Assert\Assert;
  */
 final class PanelModuleAdapter
 {
-    private function __construct() {}
+    private function __construct()
+    {
+    }
 
     public static function moduleName(Panel $panel): string
     {

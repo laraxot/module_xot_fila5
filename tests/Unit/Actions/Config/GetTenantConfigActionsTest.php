@@ -14,8 +14,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\tempnam;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 describe('Get Tenant Config Actions', function (): void {
     test('gets tenant config array correctly', function (): void {
         $configName = 'test_config';
@@ -25,7 +24,7 @@ describe('Get Tenant Config Actions', function (): void {
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
-        $mock = Mockery::mock(GetTenantFilePathAction::class);
+        $mock = \Mockery::mock(GetTenantFilePathAction::class);
         $mock->shouldReceive('execute')
             ->with($configName.'.php')
             ->andReturn($tempPath);
@@ -43,7 +42,7 @@ describe('Get Tenant Config Actions', function (): void {
         $configName = 'non_existent';
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
-        $mock = Mockery::mock(GetTenantFilePathAction::class);
+        $mock = \Mockery::mock(GetTenantFilePathAction::class);
         $mock->shouldReceive('execute')
             ->andReturn('/path/to/nothing.php');
 

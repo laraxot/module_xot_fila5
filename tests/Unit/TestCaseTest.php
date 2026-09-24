@@ -7,8 +7,7 @@ namespace Modules\Xot\Tests\Unit;
 use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\TestCase;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 it('boots the xot service provider', function () {
     expect(app()->providerIsLoaded(XotServiceProvider::class))->toBeTrue();
 });

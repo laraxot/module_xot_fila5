@@ -26,6 +26,11 @@ class ComponentFileData extends Data
 
     /**
      * @param  EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>>  $data
+     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
+     *
+     *
+     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
+     *
      * @return DataCollection<int, static>
      */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection

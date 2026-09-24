@@ -7,6 +7,8 @@ declare(strict_types=1);
  * @see https://github.com/spatie/laravel-menu/tree/main/src
  */
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Facades;
 
 use Illuminate\Support\Facades\Facade;

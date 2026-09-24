@@ -47,6 +47,13 @@ class ArtisanCommandsManager extends XotBasePage
      * mai un output popolato, a prescindere da quanto il comando reale fosse
      * andato a buon fine). Fix: leggere direttamente il valore di ritorno.
      */
+        'artisan-command.started' => 'handleCommandStarted',
+        'artisan-command.output' => 'handleCommandOutput',
+        'artisan-command.completed' => 'handleCommandCompleted',
+        'artisan-command.failed' => 'handleCommandFailed',
+        'artisan-command.error' => 'handleCommandError',
+    ];
+
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -125,6 +132,67 @@ class ArtisanCommandsManager extends XotBasePage
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.messages.command_failed'))
             ->body((string) __('xot::artisan-commands-manager.messages.command_failed_desc', ['command' => $command]))
+            app(ExecuteArtisanCommandAction::class)->execute($command);
+        } catch (\Exception $e) {
+            Notification::make()
+                ->title((string) __('xot::artisan-commands-manager.notifications.error'))
+                ->body($e->getMessage())
+                ->danger()
+                ->send();
+
+            $this->isRunning = false;
+        }
+    }
+
+    #[On('artisan-command.started')]
+    public function handleCommandStarted(string $command): void
+    {
+        $this->isRunning = true;
+    }
+
+    #[On('artisan-command.output')]
+    public function handleCommandOutput(string $command, string $output): void
+    {
+        $this->output[] = $output;
+        $this->dispatch('terminal-update');
+    }
+
+    #[On('artisan-command.completed')]
+    public function handleCommandCompleted(string $command): void
+    {
+        $this->status = 'completed';
+        $this->isRunning = false;
+
+        Notification::make()
+            ->title((string) __('xot::artisan-commands-manager.notifications.success'))
+            ->success()
+            ->send();
+    }
+
+    #[On('artisan-command.failed')]
+    public function handleCommandFailed(string $command, string $error): void
+    {
+        $this->status = 'failed';
+        $this->isRunning = false;
+        $this->output[] = "[ERROR] {$error}";
+
+        Notification::make()
+            ->title((string) __('xot::artisan-commands-manager.notifications.error'))
+            ->body($error)
+            ->danger()
+            ->send();
+    }
+
+    #[On('artisan-command.error')]
+    public function handleCommandError(string $command, string $error): void
+    {
+        $this->status = 'failed';
+        $this->isRunning = false;
+        $this->output[] = "[ERROR] {$error}";
+
+        Notification::make()
+            ->title((string) __('xot::artisan-commands-manager.notifications.error'))
+            ->body($error)
             ->danger()
             ->send();
     }

@@ -45,6 +45,10 @@ class GetCurrentRouteViewAction
                 $value = $params[$part] ?? $part;
 
                 return is_scalar($value) || $value instanceof \Stringable ? (string) $value : $part;
+            ->map(static function (string $part) use ($params): mixed {
+                $part = Str::snake($part);
+
+                return $params[$part] ?? $part;
             })
             ->implode('.');
     }

@@ -15,7 +15,9 @@ class UrlAction
 
     private static ?self $instance = null;
 
-    public function __construct() {}
+    public function __construct()
+    {
+    }
 
     public static function getInstance(): self
     {
@@ -37,4 +39,10 @@ class UrlAction
     }
 
     public function execute(): void {}
+        return false !== filter_var($url, FILTER_VALIDATE_URL);
+    }
+
+    public function execute(): void
+    {
+    }
 }

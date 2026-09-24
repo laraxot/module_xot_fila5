@@ -6,8 +6,7 @@ namespace Modules\Xot\Tests\Feature;
 
 use Modules\Xot\Tests\TestCase;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 it('loads xot config correctly', function () {
     $config = config('xot');
 

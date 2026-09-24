@@ -8,7 +8,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('manages object properties safely', function (): void {
-    $obj = new stdClass;
+    $obj = new stdClass();
     $obj->name = 'Test Object';
     $obj->id = 123;
     $obj->active = true;
@@ -56,6 +56,18 @@ it('manages object properties safely', function (): void {
     $complexObj = new class
     {
         public function test(string $p): string
+    $complexObj = new class {
+        public function test(string $p): string
+    Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
+        return $v > 100;
+    }));
+    Assert::assertSame(0, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
+        return $v > 200;
+    }, 0));
+    // Methods
+    $complexObj = new class
+    {
+        public function test(mixed $p): mixed
         {
             return $p;
         }

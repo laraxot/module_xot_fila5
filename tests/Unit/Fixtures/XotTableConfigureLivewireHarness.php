@@ -36,4 +36,22 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
     {
         return Model::query();
     }
+
+  public function render(): string
+  {
+    return '';
+  }
+
+  public function makeFilamentTranslatableContentDriver(): ?TranslatableContentDriver
+  {
+    return null;
+  }
+
+  /**
+   * @return Builder<Model>
+   */
+  protected function getTableQuery(): Builder
+  {
+    return Model::query();
+  }
 }

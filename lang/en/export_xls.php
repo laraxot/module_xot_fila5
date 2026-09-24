@@ -11,6 +11,10 @@ return [
         'export_xls' => [
             'label' => 'Export Excel',
             'icon' => 'xot-files.xls',
+    'actions' => [
+        'export_xls' => [
+            'label' => 'Export Excel',
+            'icon' => 'heroicon-o-arrow-down-tray',
             'tooltip' => 'Export data in Excel format (.xlsx)',
             'placeholder' => 'Export to Excel',
             'help' => 'Download current data in Excel format for offline analysis',
@@ -37,6 +41,14 @@ return [
         'icon' => 'xot-files.xls',
         'sort' => 100,
     ],
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
 ];

@@ -25,6 +25,12 @@ class GetViewByClassAction
      * @return view-string
      *
      * @throws \Exception Se la vista non esiste
+     * @param string $class  Il nome della classe da convertire
+     * @param string $suffix Suffisso opzionale da aggiungere al nome della vista
+     *
+     * @throws \Exception Se la vista non esiste
+     *
+     * @return view-string
      */
     public function execute(string $class, string $suffix = ''): string
     {

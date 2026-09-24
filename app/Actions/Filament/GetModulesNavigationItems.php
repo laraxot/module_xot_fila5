@@ -19,6 +19,9 @@ use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 
+
+
+
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.

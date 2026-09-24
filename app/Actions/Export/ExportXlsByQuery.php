@@ -23,6 +23,10 @@ class ExportXlsByQuery
      * @param  string  $filename  Nome del file Excel
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  int|null  $limit  Limite di righe da esportare
+     * @param Builder<Model>     $query    Query da esportare
+     * @param string             $filename Nome del file Excel
+     * @param array<int, string> $fields   Campi da includere nell'export
+     * @param int|null           $limit    Limite di righe da esportare
      */
     public function execute(
         Builder $query,

@@ -31,7 +31,7 @@ use Webmozart\Assert\Assert;
  * validazione campi solo nello schema — submit usa `$this->form->getState()` (mai `validateForm()`).
  * La *Form class è lo spartito (campi + regole + dehydrate). MAI duplicare TextInput nel widget.
  *
- * @property Schema $form
+ * @property Schema                    $form
  * @property array<string, mixed>|null $data
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
@@ -78,7 +78,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     {
         $formClass = static::formClass();
 
-        if ($formClass !== null) {
+        if (null !== $formClass) {
             $method = static::schemaMethod();
 
             if (! method_exists($formClass, $method)) {
@@ -95,8 +95,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
-     * @param  class-string  $formClass  Es. UserForm::class
-     * @param  string  $method  Es. getRegisterFormSchema
+     * @param class-string $formClass Es. UserForm::class
+     * @param string       $method    Es. getRegisterFormSchema
+     *
      * @return array<int|string, Component>
      */
     protected static function resourceFormSchema(string $formClass, string $method): array
@@ -117,7 +118,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
-        if ($model === null) {
+        if (null === $model) {
             return [];
         }
         if (\is_string($model)) {
@@ -156,7 +157,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         $this->form->fill([]);
     }
 
-    public function save(): void {}
+    public function save(): void
+    {
+    }
 
     protected function getFormModel(): Model|string|null
     {

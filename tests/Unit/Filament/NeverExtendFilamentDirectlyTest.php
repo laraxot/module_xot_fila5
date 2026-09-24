@@ -10,8 +10,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 
-uses(TestCase::class);
-
+uses(TestCase::class)->group('xot');
 /**
  * Non si estende mai una classe Filament direttamente: si estende la sua XotBase.
  *

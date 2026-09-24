@@ -15,4 +15,9 @@ class NavigationProbeResource extends XotBaseResource
     protected static string|\UnitEnum|null $navigationGroup = 'Test Group';
 
     protected static ?int $navigationSort = 1;
+
+    public function getFormSchemaOld(): array
+    {
+        return [];
+    }
 }
