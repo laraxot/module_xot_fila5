@@ -1,0 +1,67 @@
+<?php
+
+declare(strict_types=1);
+
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/en/xot_base_list_records.php
+>>>>>>> laraxot/dev
+return [
+    'fields' => [
+        'create' => [
+            'label' => 'create',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'layout' => [
+            'label' => 'layout',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'view' => [
+            'label' => 'view',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'message' => [
+            'label' => 'message',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'create',
+        ],
+        'export_xls' => [
+            'label' => 'export_xls',
+        ],
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+];

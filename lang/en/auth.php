@@ -1,0 +1,32 @@
+<?php
+
+declare(strict_types=1);
+
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/en/auth.php
+>>>>>>> laraxot/dev
+return [
+    'failed' => 'These credentials do not match our records!',
+    'general_error' => 'You do not have access to do that.',
+    'socialite' => [
+        'unacceptable' => ':provider is not an acceptable login type.',
+    ],
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'unknown' => 'An unknown error occurred',
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+];
