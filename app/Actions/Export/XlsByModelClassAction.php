@@ -68,7 +68,11 @@ class XlsByModelClassAction
         }
 
         if ($excludes !== []) {
+<<<<<<< HEAD
             $rows = $rows->map(function (mixed $item) use ($excludes) {
+=======
+            $rows = $rows->map(function (Model|array $item) use ($excludes): Model|array {
+>>>>>>> laraxot/dev
                 if ($item instanceof Model) {
                     return $item->makeHidden($excludes);
                 }
@@ -79,8 +83,13 @@ class XlsByModelClassAction
 
         // Applichiamo il callback se fornito
         if ($callback !== null) {
+<<<<<<< HEAD
             /** @var \Closure(mixed, int): mixed $mapCallback */
             $mapCallback = static function (mixed $item, int $key) use ($callback): mixed {
+=======
+            /** @var \Closure(Model|array<array-key, mixed>, int): mixed $mapCallback */
+            $mapCallback = static function (Model|array $item, int $key) use ($callback): mixed {
+>>>>>>> laraxot/dev
                 if ($item instanceof Model) {
                     return $callback($item, $key);
                 }
@@ -104,7 +113,11 @@ class XlsByModelClassAction
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
+<<<<<<< HEAD
         /** @var Collection<int, mixed> $exportRows */
+=======
+        /** @var Collection<int|string, mixed> $exportRows */
+>>>>>>> laraxot/dev
         $exportRows = $rows;
         $collectionExport = new CollectionExport($exportRows, $transKey);
         $filename = $this->getExportName($modelClass);
@@ -113,6 +126,32 @@ class XlsByModelClassAction
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @param  callable(array<string, mixed>|Model, int): mixed  $callback
+     * @return \Closure(Model|array<array-key, mixed>, int): mixed
+     */
+    private function rowCallback(callable $callback): \Closure
+    {
+        return static function (Model|array $item, int $key) use ($callback): mixed {
+            if ($item instanceof Model) {
+                return $callback($item, $key);
+            }
+
+            /** @var array<string, mixed> $data */
+            $data = [];
+            foreach ($item as $itemKey => $itemValue) {
+                if (is_string($itemKey)) {
+                    $data[$itemKey] = $itemValue;
+                }
+            }
+
+            return $callback($data, $key);
+        };
+    }
+
+    /**
+>>>>>>> laraxot/dev
      * Ottiene le relazioni da caricare in base ai campi inclusi.
      *
      * @param  array<int, string>  $includes  Campi da includere

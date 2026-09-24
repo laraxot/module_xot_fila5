@@ -52,7 +52,11 @@ abstract class XotBaseResourceTable
 
         return $resource;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     /**
      * Modello delle righe mostrate (la relazione), distinto dal modello
      * dell'owner. Ridefinito DIRETTAMENTE qui, mai da un trait: vedi
@@ -75,7 +79,13 @@ abstract class XotBaseResourceTable
     {
         $resource = static::getResource();
         $model = $resource::getModel();
+<<<<<<< HEAD
         return $model;
     }
 
+=======
+
+        return $model;
+    }
+>>>>>>> laraxot/dev
 }

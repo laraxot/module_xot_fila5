@@ -7,8 +7,12 @@ namespace Modules\Xot\Tests\Unit;
 use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\TestCase;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
+=======
+uses(TestCase::class)->group('xot');
+>>>>>>> laraxot/dev
 it('boots the xot service provider', function () {
     expect(app()->providerIsLoaded(XotServiceProvider::class))->toBeTrue();
 });

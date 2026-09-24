@@ -27,9 +27,15 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Filament\Tables\Filters\BaseFilter;
+<<<<<<< HEAD
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
+=======
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\TernaryFilter;
+use Filament\Tables\Table;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -338,7 +344,10 @@ trait HasXotTable
         }
         // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
+<<<<<<< HEAD
         
+=======
+>>>>>>> laraxot/dev
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
@@ -407,6 +416,10 @@ trait HasXotTable
      *
      *
      * @return class-string<Model>
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
      * @phpstan-return class-string<Model>
      *
      * @throws \Exception Se non viene trovata una classe modello valida
@@ -422,9 +435,15 @@ trait HasXotTable
             $related = $relationship instanceof Builder ? $relationship->getModel() : $relationship->getRelated();
             if ($related instanceof Model) {
                 /** @var class-string<Model> $relatedClass */
+<<<<<<< HEAD
             $relatedClass = get_class($related);
 
             return $relatedClass;
+=======
+                $relatedClass = get_class($related);
+
+                return $relatedClass;
+>>>>>>> laraxot/dev
             }
         }
 
@@ -711,7 +730,11 @@ trait HasXotTable
         if ($this->hasColumn('order_column')) {
             return 'order_column';
         }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
         return null;
     }
 
@@ -721,7 +744,10 @@ trait HasXotTable
     protected function applyReorderable(Table $table): Table
     {
         $orderColumn = $this->getOrderColumn();
+<<<<<<< HEAD
        
+=======
+>>>>>>> laraxot/dev
 
         if ($orderColumn !== null) {
             return $table->reorderable($orderColumn);

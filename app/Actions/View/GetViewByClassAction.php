@@ -20,6 +20,14 @@ class GetViewByClassAction
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group".
      *
+<<<<<<< HEAD
+=======
+     * @param  string  $class  Il nome della classe da convertire
+     * @param  string  $suffix  Suffisso opzionale da aggiungere al nome della vista
+     * @return view-string
+     *
+     * @throws \Exception Se la vista non esiste
+>>>>>>> laraxot/dev
      * @param string $class  Il nome della classe da convertire
      * @param string $suffix Suffisso opzionale da aggiungere al nome della vista
      *
@@ -59,7 +67,11 @@ class GetViewByClassAction
             $module_low.'::'.$implode.$suffix,
         ];
         $view = Arr::first($views, view()->exists(...));
+<<<<<<< HEAD
         if (null === $view) {
+=======
+        if ($view === null) {
+>>>>>>> laraxot/dev
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 

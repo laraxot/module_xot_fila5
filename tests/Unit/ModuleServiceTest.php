@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Services\ModuleService;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -10,7 +13,11 @@ uses(TestCase::class);
 
 function xotModuleServiceTestInstance(): ModuleService
 {
+<<<<<<< HEAD
     return (new ModuleService())->setName('TestModule');
+=======
+    return (new ModuleService)->setName('TestModule');
+>>>>>>> laraxot/dev
 }
 
 describe('ModuleService', function () {
@@ -27,8 +34,13 @@ describe('ModuleService', function () {
     });
 
     it('can be instantiated with different module names', function () {
+<<<<<<< HEAD
         $service1 = (new ModuleService())->setName('Chart');
         $service2 = (new ModuleService())->setName('User');
+=======
+        $service1 = (new ModuleService)->setName('Chart');
+        $service2 = (new ModuleService)->setName('User');
+>>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(ModuleService::class, $service1);
         Assert::assertInstanceOf(ModuleService::class, $service2);
@@ -88,7 +100,11 @@ describe('ModuleService', function () {
     });
 
     it('handles empty module gracefully', function () {
+<<<<<<< HEAD
         $emptyService = (new ModuleService())->setName('NonExistentModule');
+=======
+        $emptyService = (new ModuleService)->setName('NonExistentModule');
+>>>>>>> laraxot/dev
         $result = $emptyService->getModels();
 
         Assert::assertSame([], $result);

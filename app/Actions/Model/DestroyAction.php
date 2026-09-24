@@ -13,12 +13,21 @@ class DestroyAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      */
     /**
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
+=======
+     * @param  array<string, mixed>  $_data
+     * @param  array<string, mixed>  $_rules
+     */
+    /**
+     * @param  array<string, mixed>  $_data
+     * @param  array<string, mixed>  $_rules
+>>>>>>> laraxot/dev
      */
     public function execute(Model $model, array $_data, array $_rules): Model
     {

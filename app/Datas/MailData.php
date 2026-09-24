@@ -15,8 +15,13 @@ use Spatie\LaravelData\Data;
 final class MailData extends Data
 {
     /**
+<<<<<<< HEAD
      * @param array<string, int|string> $smtpConfig
      * @param array<string, string>     $fromConfig
+=======
+     * @param  array<string, int|string>  $smtpConfig
+     * @param  array<string, string>  $fromConfig
+>>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly string $driver = 'smtp',

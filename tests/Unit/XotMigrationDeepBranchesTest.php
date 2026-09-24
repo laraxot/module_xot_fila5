@@ -20,7 +20,11 @@ use ReflectionMethod;
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 describe('Xot migration deep branches', function (): void {
@@ -56,6 +60,19 @@ describe('Xot migration deep branches', function (): void {
 
         // isUuidColumnType + backfill
         $isUuid = new ReflectionMethod($migration, 'isUuidColumnType');
+<<<<<<< HEAD
+=======
+        $migration = new class extends XotBaseMigration {
+            protected ?string $model_class = CacheModel::class;
+
+            public function up(): void
+            {
+            }
+        };
+
+        // isUuidColumnType + backfill
+        $isUuid = new \ReflectionMethod($migration, 'isUuidColumnType');
+>>>>>>> laraxot/dev
         $isUuid->setAccessible(true);
         Assert::assertTrue($isUuid->invoke($migration, 'char'));
         Assert::assertTrue($isUuid->invoke($migration, 'varchar'));

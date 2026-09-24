@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * -WIP.
  */
@@ -28,6 +32,11 @@ class AutoLabelAction
      *
      * @param Field|Component $component Il componente a cui applicare l'etichetta
      *
+<<<<<<< HEAD
+=======
+     * @param Field|Component $component Il componente a cui applicare l'etichetta
+     *
+>>>>>>> laraxot/dev
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -100,6 +109,11 @@ class AutoLabelAction
      *
      * @param Field|Component $component Il componente di cui ottenere il nome
      *
+<<<<<<< HEAD
+=======
+     * @param Field|Component $component Il componente di cui ottenere il nome
+     *
+>>>>>>> laraxot/dev
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string

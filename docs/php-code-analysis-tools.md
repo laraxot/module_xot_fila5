@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->
@@ -24,6 +25,8 @@ https://phpmd.org/
 
 
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
@@ -57,4 +60,7 @@ updated: 2026-08-24
 - <https://github.com/phan/phan>
 - <https://github.com/overtrue/phplint>
 - <https://phpmd.org/>
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Table;
 use Mockery\MockInterface;
 use Modules\Xot\Tests\TestCase;
@@ -13,7 +16,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  MockInterface&Table  $tableMock
+=======
+ * @param MockInterface&Table $tableMock
+ *
+>>>>>>> laraxot/dev
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface

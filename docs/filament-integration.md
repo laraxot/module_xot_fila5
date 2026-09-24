@@ -46,9 +46,19 @@ Each resource must implement the abstract method:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+abstract public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -76,9 +86,19 @@ Resources define forms through `getFormSchema()`:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -181,9 +201,19 @@ Consistent form setup with standardized columns:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchemaColumns(): int
 =======
 public function getFormSchemaColumns(): int
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchemaColumns(): int
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return 1; // Standard single column layout
@@ -335,7 +365,15 @@ Filament resources integrate with Laraxot's multi-tenancy system:
 - Standardized patterns across all modules
 
 ### KISS (Keep It Simple, Stupid)
+<<<<<<< HEAD
 - Clear, predictable inheritance
+=======
+<<<<<<< HEAD
+- Clear, predictable inheritance
+=======
+- Clear, <nome progetto>able inheritance
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Minimal configuration required
 - Consistent API across resources
 
@@ -360,9 +398,19 @@ public static function getModel(): string
 Always implement `getFormSchema()` for consistency:
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     // Return array of form components
@@ -379,4 +427,12 @@ The Filament integration in Laraxot embodies the project's core values:
 - **Type Safety**: Contract-based development
 - **User Experience**: Modern, intuitive admin interfaces
 
+<<<<<<< HEAD
 This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
+=======
+<<<<<<< HEAD
+This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
+=======
+This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

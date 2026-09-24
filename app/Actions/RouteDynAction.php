@@ -7,11 +7,21 @@ namespace Modules\Xot\Actions;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 
 use function Safe\preg_replace;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+use function Safe\preg_replace;
+
+
+
+>>>>>>> laraxot/dev
 
 /**
  * Class RouteDynAction.
@@ -23,7 +33,11 @@ class RouteDynAction
     private static string $namespace_start = '';
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     private static function requireStringValue(array $v, string $key): string
     {
@@ -34,8 +48,12 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public static function getGroupOpts(array $v, ?string $namespace): array
@@ -48,7 +66,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getPrefix(array $v, ?string $namespace): string
     {
@@ -59,7 +81,11 @@ class RouteDynAction
         $name = self::requireStringValue($v, 'name');
         $prefix = mb_strtolower($name);
         $param_name = self::getParamName($v, $namespace);
+<<<<<<< HEAD
         if ('' !== $param_name) {
+=======
+        if ($param_name !== '') {
+>>>>>>> laraxot/dev
             return $prefix.'/{'.$param_name.'}';
         }
 
@@ -67,7 +93,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getAs(array $v, ?string $_namespace): string
     {
@@ -91,7 +121,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getNamespace(array $v, ?string $namespace): ?string
     {
@@ -101,7 +135,11 @@ class RouteDynAction
 
         $namespace = self::requireStringValue($v, 'name');
         $namespace = str_replace(['{', '}'], '', $namespace);
+<<<<<<< HEAD
         if ('' === $namespace) {
+=======
+        if ($namespace === '') {
+>>>>>>> laraxot/dev
             return null;
         }
 
@@ -109,7 +147,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getAct(array $v, ?string $_namespace): string
     {
@@ -135,7 +177,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getParamName(array $v, ?string $_namespace): string
     {
@@ -151,8 +197,12 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public static function getParamsName(array $v, ?string $namespace): array
@@ -163,8 +213,12 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public static function getResourceOpts(array $v, ?string $namespace): array
@@ -182,7 +236,11 @@ class RouteDynAction
             $opts['only'] = $v['only'];
         }
 
+<<<<<<< HEAD
         if ('' === $param_name && ! isset($opts['only'])) {
+=======
+        if ($param_name === '' && ! isset($opts['only'])) {
+>>>>>>> laraxot/dev
             $opts['only'] = ['index'];
         }
 
@@ -192,7 +250,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getController(array $v, ?string $_namespace): string
     {
@@ -209,7 +271,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getUri(array $v, ?string $_namespace): string
     {
@@ -219,8 +285,12 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public static function getMethod(array $v, ?string $_namespace): array
@@ -239,7 +309,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function getUses(array $v, ?string $namespace): string
     {
@@ -250,8 +324,12 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public static function getCallback(array $v, ?string $namespace, ?string $curr): array
@@ -259,7 +337,11 @@ class RouteDynAction
         $name = self::requireStringValue($v, 'name');
         $as = Str::slug($name);
         $uses = self::getUses($v, $namespace);
+<<<<<<< HEAD
         if (null !== $curr) {
+=======
+        if ($curr !== null) {
+>>>>>>> laraxot/dev
             $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
         } else {
             $uses = '\\'.self::$namespace_start.'\\'.$uses;
@@ -269,7 +351,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<int, array<string, mixed>> $array
+=======
+     * @param  array<int, array<string, mixed>>  $array
+>>>>>>> laraxot/dev
      */
     public static function dynamic_route(
         array $array,
@@ -279,7 +365,11 @@ class RouteDynAction
     ): void {
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
+<<<<<<< HEAD
         if (null !== $namespace_start) {
+=======
+        if ($namespace_start !== null) {
+>>>>>>> laraxot/dev
             self::$namespace_start = $namespace_start;
         }
 
@@ -298,11 +388,19 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
         if (! array_key_exists('name', $v) || null === $v['name']) {
+=======
+     * @param  array<string, mixed>  $v
+     */
+    public static function createRouteResource(array $v, ?string $namespace): void
+    {
+        if (! array_key_exists('name', $v) || $v['name'] === null) {
+>>>>>>> laraxot/dev
             return;
         }
         $name = self::requireStringValue($v, 'name');
@@ -313,7 +411,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -322,7 +424,11 @@ class RouteDynAction
         }
 
         $sub_namespace = self::getNamespace($v, $namespace);
+<<<<<<< HEAD
         $curr = null === $curr ? $sub_namespace : $curr;
+=======
+        $curr = $curr === null ? $sub_namespace : $curr;
+>>>>>>> laraxot/dev
         Assert::isArray($subs = $v['subs']);
         /** @var array<int, array<string, mixed>> $subsList */
         $subsList = array_values($subs);
@@ -330,7 +436,11 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $v
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
      */
     public static function createRouteActs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -357,7 +467,11 @@ class RouteDynAction
      */
     public static function prefixedResourceNames(string $prefix): array
     {
+<<<<<<< HEAD
         if ('.' === mb_substr($prefix, -1)) {
+=======
+        if (mb_substr($prefix, -1) === '.') {
+>>>>>>> laraxot/dev
             $prefix = mb_substr($prefix, 0, -1);
         }
 
@@ -372,7 +486,11 @@ class RouteDynAction
         ];
     }
 
+<<<<<<< HEAD
     public function execute(): void
     {
     }
+=======
+    public function execute(): void {}
+>>>>>>> laraxot/dev
 }

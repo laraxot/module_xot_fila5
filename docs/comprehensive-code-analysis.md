@@ -177,9 +177,19 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -190,9 +200,19 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -290,9 +310,19 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -426,7 +456,19 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
+=======
+<<<<<<< HEAD
+- [Architettura Moduli](architecture.md)
+=======
+- [Architettura Moduli](./architecture.md)
+- [Best Practices Laravel 12](./laravel_12_guide.md)
+- [Pattern Filament](./filament_patterns.md)
+- [Performance Optimization](./performance_guide.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -448,6 +490,13 @@ return [
 ---
 
 **Data Analisi**: 2025-01-06
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Data Analisi**: [DATE]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring
@@ -461,24 +510,54 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 ### 1. Violazioni DRY - Duplicazioni di Codice
 
 #### Singleton Pattern Duplicato
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
+=======
+**File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 // DUPLICATO in LimeJsonService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
+<<<<<<< HEAD
     if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
+=======
+<<<<<<< HEAD
+    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
+=======
+    if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         self::$instance = new self();
     }
     return self::$instance;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 // DUPLICATO in QuaerisService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\Quaeris\Services\QuaerisService) {
+<<<<<<< HEAD
+=======
+=======
+// DUPLICATO in healthcare_appService.php
+private static ?self $instance = null;
+public static function getInstance(): self
+{
+    if (! self::$instance instanceof \Modules\healthcare_app\Services\healthcare_appService) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         self::$instance = new self();
     }
     return self::$instance;
@@ -488,13 +567,29 @@ public static function getInstance(): self
 **Soluzione**: Creare trait `SingletonTrait` in `Modules/Xot/app/Traits/SingletonTrait.php`
 
 #### Connection Hardcoded Duplicata
+<<<<<<< HEAD
 **Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
+=======
+<<<<<<< HEAD
+**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
+=======
+**Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
 
 #### Single Responsibility Principle Violato
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+=======
+**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -542,7 +637,15 @@ abstract class BaseUser extends Authenticatable implements
 ### 3. N+1 Query Problems
 
 #### Customer Model - Lazy Loading
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Customer.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Models/Customer.php`
+=======
+**File**: `Modules/healthcare_app/app/Models/Customer.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 public function surveyPdfsActive()
@@ -555,7 +658,15 @@ public function surveyPdfsActive()
 **Soluzione**: Usare query builder o eager loading
 
 #### AlertWidget - Query Complessa
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
+=======
+**File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -578,7 +689,15 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 ### 4. Violazioni KISS - Complessità Eccessiva
 
 #### QuestionChart Model - Metodi Complessi
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+=======
+**File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 public function participants(): CustomRelation
@@ -605,7 +724,15 @@ public function participants(): CustomRelation
 ### 5. Gestione Errori Inadeguata
 
 #### SendInviteAction - Catch Vuoti
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
+=======
+**File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 try {
@@ -625,6 +752,10 @@ try {
 ### 1. Filament Resources - Pattern Duplicati
 
 #### Schema Duplicato
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 **File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 
 ```php
@@ -633,6 +764,16 @@ try {
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+**File**: `Modules/healthcare_app/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
+
+```php
+// ContactResource.php
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -643,9 +784,19 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -682,9 +833,21 @@ public function customer(): HasOneThrough
 **File**: Tutti i ServiceProvider dei moduli
 
 ```php
+<<<<<<< HEAD
 class QuaerisServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Quaeris';
+=======
+<<<<<<< HEAD
+class QuaerisServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = 'Quaeris';
+=======
+class healthcare_appServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = 'healthcare_app';
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -743,9 +906,19 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -788,7 +961,15 @@ trait SingletonTrait
 ```
 
 #### B. Separare BaseModel Responsibilities
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+=======
+**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -801,7 +982,15 @@ abstract class BaseModel extends Model implements ModelContract
 ```
 
 #### C. Implementare Repository Pattern
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
+=======
+<<<<<<< HEAD
+**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
+=======
+**File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```php
 class SurveyFlipResponseRepository
 {
@@ -862,10 +1051,23 @@ try {
 
 #### B. Configuration Centralization
 ```php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 // config/quaeris.php
 return [
     'database' => [
         'connection' => env('QUAERIS_DB_CONNECTION', 'quaeris'),
+<<<<<<< HEAD
+=======
+=======
+// config/healthcare_app.php
+return [
+    'database' => [
+        'connection' => env('healthcare_app_DB_CONNECTION', 'healthcare_app'),
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'limesurvey' => [
         'api' => [
@@ -879,7 +1081,19 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
+=======
+<<<<<<< HEAD
+- [Architettura Moduli](architecture.md)
+=======
+- [Architettura Moduli](./architecture.md)
+- [Best Practices Laravel 12](./laravel_12_guide.md)
+- [Pattern Filament](./filament_patterns.md)
+- [Performance Optimization](./performance_guide.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -901,6 +1115,19 @@ return [
 ---
 
 **Data Analisi**: 2025-01-06
+<<<<<<< HEAD
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring
+=======
+<<<<<<< HEAD
+**Analista**: AI Code Review System
+**Priorità**: CRITICA - Richiede intervento immediato
+**Stima Effort**: 40-60 ore di refactoring
+=======
+**Data Analisi**: [DATE]
+**Analista**: AI Code Review System
+**Priorità**: CRITICA - Richiede intervento immediato
+**Stima Effort**: 40-60 ore di refactoring
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

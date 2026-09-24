@@ -45,4 +45,20 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
+<<<<<<< HEAD
+=======
+
+    public function getTableSearch(): ?string
+    {
+        $search = $this->tableSearch;
+
+        if (! \is_string($search)) {
+            return null;
+        }
+
+        $search = trim($search);
+
+        return '' !== $search ? $search : null;
+    }
+>>>>>>> laraxot/dev
 }

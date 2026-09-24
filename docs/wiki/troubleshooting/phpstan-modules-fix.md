@@ -3,7 +3,15 @@ title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
+<<<<<<< HEAD
 updated: 2026-07-24
+=======
+<<<<<<< HEAD
+updated: 2026-09-23
+=======
+updated: 2026-09-21
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
@@ -16,6 +24,7 @@ qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 
 # PHPStan su `Modules` — stato e fix
 
+<<<<<<< HEAD
 ## Comando canonico
 
 ```bash
@@ -29,6 +38,43 @@ Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`. **Non
 
 - `./vendor/bin/phpstan analyse Modules` → **0 errori**, exit 0, stabile anche dopo `clear-result-cache` (swarm 90→0 multi-agente).
 - Contesto: `composer run go` (`composer update -W`) ha portato `laravel/framework` **v12→v13.21.1**, `pestphp/pest` **v3→v4.7.5**, `phpunit/phpunit` **v11→v12.5.30**. La maggior parte dei 90 errori era fallout diretto di questo bump major, non bug applicativi.
+=======
+## Comando che certifica
+
+```bash
+cd laravel
+php -d memory_limit=-1 ./vendor/bin/phpstan analyse --no-progress --memory-limit=-1
+```
+
+**Senza path CLI.** Un argomento `Modules` sovrascrive `parameters.paths` e spegne
+`tomasvotruba/type-coverage`. Per lavorare su un modulo: `analyse Modules/<Nome>`.
+Per dichiarare zero: i due conteggi (`analyse` e `analyse Modules`) devono coincidere
+e `totals.file_errors` nel JSON deve essere 0.
+
+`clear-result-cache` **non** accetta `--no-progress`.
+
+Config: `laravel/phpstan.neon` livello **max**, baseline vuota. **Non passare mai `--level` da CLI** e **non modificare** `phpstan.neon` — fix solo su codice PHP/test.
+
+<<<<<<< HEAD
+## Stato attuale (2026-09-23)
+
+- `php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G` (cache `/tmp/phpstan` svuotata) → **[OK] No errors**, 9421 file, exit 0. Story [5.224](../../bmad/stories/5.224-phpstan-analyse-modules.story.md).
+- `phpstan.neon` immutato. Pest skip su `10.100.200.15`.
+- Drift chiuso il 2026-09-21: story [18.59](../../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) (23 errori su 4 file → 0).
+=======
+## Stato attuale (2026-09-21)
+
+- `./vendor/bin/phpstan analyse` (senza path) → **0 errori**, exit 0, `totals.file_errors: 0`.
+- `./vendor/bin/phpstan analyse Modules` → **0**, stesso momento. I due conteggi coincidono.
+- Drift chiuso oggi: story [18.59](../../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) (23 errori su 4 file → 0).
+- Mute-gate Setting + marker PHP nello stesso giorno: chiusi; certify ancora 0.
+>>>>>>> laraxot/dev
+- SSoT modulo: [phpstan-status.md](../../phpstan-status.md).
+
+## Storico (2026-07, bump framework)
+
+`composer run go` aveva portato `laravel/framework` v12→v13.21.1, Pest v3→v4.7.5. La maggior parte dei 90 errori di quella settimana era fallout del bump, non bug applicativi.
+>>>>>>> laraxot/dev
 - Modulo `Comment` **rimosso interamente** dal codebase (nessun file `namespace Modules\Comment\...` residuo). Il bridge Pest generato conteneva ancora 5 blocchi con riferimenti stale a `Modules\Comment\Tests(\Support)?\TestCase` → 25 errori `class.notFound` (28% del totale) risolti con una semplice rigenerazione (vedi sotto).
 - Coordinamento multi-agente reale osservato: un secondo agente (`agent-composer`, stesso periodo, lock su `docs/chat/handoff-phpstan-modules.md` e su singoli file test) ha corretto in parallelo AI, Activity, Notify, Tenant, UI, `Xot/tests/Unit/Actions/Blade/RegisterBladeComponentsActionTest.php`, e ha consolidato `Modules/Media/tests/` da doppioni case-sensitive (`tests/unit/...` minuscolo vs `tests/Unit/...` PascalCase) in un unico albero corretto — vedi [no-case-only-variations](../../../../../bashscripts/ai/.agents/rules/no-case-only-variations.md).
 

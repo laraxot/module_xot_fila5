@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 https://github.com/seikan/Cart/blob/master/class.Cart.php
 
@@ -72,6 +73,8 @@ https://github.com/Tefoh/Cart
 
 https://github.com/Codexshaper/laravel-woocommerce
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: 'Cart session — risorse esterne'
 module: Xot
@@ -132,4 +135,7 @@ updated: 2026-08-24
 - <https://meritocracy.is/blog/2021/06/08/laravel-implementing-a-shopping-cart-for-your-website/>
 - <https://github.com/Tefoh/Cart>
 - <https://github.com/Codexshaper/laravel-woocommerce>
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

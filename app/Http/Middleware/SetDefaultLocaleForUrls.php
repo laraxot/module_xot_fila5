@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 /**
  * @see https://laravel.com/docs/11.x/urls#default-values
  */
@@ -17,13 +20,21 @@ class SetDefaultLocaleForUrls
     /**
      * Handle an incoming request.
      *
+<<<<<<< HEAD
      * @param \Closure(Request):Response $next
+=======
+     * @param  \Closure(Request):Response  $next
+>>>>>>> laraxot/dev
      */
     public function handle(Request $request, \Closure $next): Response
     {
         $user = $request->user();
         $lang = app()->getLocale();
+<<<<<<< HEAD
         if (null !== $user) {
+=======
+        if ($user !== null) {
+>>>>>>> laraxot/dev
             $lang = $user->lang ?? app()->getLocale();
         }
 
