@@ -8,6 +8,8 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
 use Filament\Resources\Pages\ViewRecord as FilamentViewRecord;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
 
 abstract class XotBaseViewRecord extends FilamentViewRecord
 {
