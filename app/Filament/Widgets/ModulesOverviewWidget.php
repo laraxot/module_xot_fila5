@@ -113,14 +113,7 @@ class ModulesOverviewWidget extends XotBaseWidget
     /**
      * Ottiene la descrizione per un modulo.
      *
-<<<<<<< .merge_file_Pagvs3
-<<<<<<< HEAD
-     * @param  string  $module  Nome del modulo
-=======
-     * @param string $module Nome del modulo
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_Pagvs3
      * <<<<<<< HEAD
      *
      * @param string $module Nome del modulo
@@ -128,8 +121,16 @@ class ModulesOverviewWidget extends XotBaseWidget
      * @param string $module Nome del modulo
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param string $module Nome del modulo
+     *                       =======
+     * @param string $module Nome del modulo
      *
->>>>>>> .merge_file_qi2sEf
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_qi2sEf
+     *
      * @return string Descrizione del modulo
      */
     private function getModuleDescription(string $module): string

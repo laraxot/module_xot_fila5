@@ -15,18 +15,7 @@ class GetViewNameSpacePathAction
     /**
      * Ottiene il percorso di un namespace di vista.
      *
-<<<<<<< .merge_file_jfBA6K
-<<<<<<< HEAD
-     * @param  string  $ns  Il namespace della vista
-=======
-     * <<<<<<< .merge_file_nRDung
-     * =======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_LSM7m3
-     * >>>>>>> .merge_file_e535D9
-     *
-     * @param string $ns Il namespace della vista
-=======
+     * <<<<<<< .merge_file_jfBA6K
      * <<<<<<< HEAD
      *
      * @param string $ns Il namespace della vista
@@ -37,7 +26,17 @@ class GetViewNameSpacePathAction
      *                   <<<<<<< .merge_file_LSM7m3
      *                   >>>>>>> .merge_file_e535D9
      * @param string $ns Il namespace della vista
->>>>>>> .merge_file_RlzUTV
+     *                   =======
+     *                   <<<<<<< HEAD
+     * @param string $ns Il namespace della vista
+     *                   =======
+     *                   <<<<<<< .merge_file_nRDung
+     *                   =======
+     *                   <<<<<<< HEAD
+     *                   <<<<<<< .merge_file_LSM7m3
+     *                   >>>>>>> .merge_file_e535D9
+     * @param string $ns Il namespace della vista
+     *                   >>>>>>> .merge_file_RlzUTV
      *
      * <<<<<<< .merge_file_nRDung
      * =======
@@ -47,12 +46,13 @@ class GetViewNameSpacePathAction
      *
      * >>>>>>> .merge_file_e535D9
      *
-<<<<<<< .merge_file_jfBA6K
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_jfBA6K
+     * >>>>>>> laraxot/dev
+     * =======
      * >>>>>>> laraxot/dev
      *
->>>>>>> .merge_file_RlzUTV
+     * >>>>>>> .merge_file_RlzUTV
+     *
      * @return string|null Il percorso del namespace o null se non trovato
      */
     public function execute(string $ns): ?string

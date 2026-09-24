@@ -14,26 +14,26 @@ class StoreAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_gVvcVP
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $rules
-=======
-     * <<<<<<< .merge_file_pJAByG.
-=======
+     * <<<<<<< .merge_file_gVvcVP
      * <<<<<<< HEAD.
->>>>>>> .merge_file_qeQFRN
      *
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
      *                                    =======
-<<<<<<< .merge_file_gVvcVP
-=======
+     *                                    <<<<<<< .merge_file_pJAByG.
+     *                                    =======
+     *                                    <<<<<<< HEAD.
+     *                                    >>>>>>> .merge_file_qeQFRN
+     * @param array<string, mixed> $data
+     * @param array<string, mixed> $rules
+     *                                    =======
+     *                                    <<<<<<< .merge_file_gVvcVP
+     *                                    =======
      *                                    <<<<<<< .merge_file_pJAByG.
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
      *                                    =======
->>>>>>> .merge_file_qeQFRN
+     *                                    >>>>>>> .merge_file_qeQFRN
      *                                    <<<<<<< HEAD
      *                                    <<<<<<< .merge_file_EBFvzt.
      * @param array<string, mixed> $data
@@ -57,11 +57,11 @@ class StoreAction
      * @param array<string, mixed> $rules
      *                                    >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                    >>>>>>> .merge_file_DoCQvn
-<<<<<<< .merge_file_gVvcVP
->>>>>>> laraxot/dev
-=======
+     *                                    <<<<<<< .merge_file_gVvcVP
      *                                    >>>>>>> laraxot/dev
->>>>>>> .merge_file_qeQFRN
+     *                                    =======
+     *                                    >>>>>>> laraxot/dev
+     *                                    >>>>>>> .merge_file_qeQFRN
      */
     public function execute(Model $model, array $data, array $rules): Model
     {

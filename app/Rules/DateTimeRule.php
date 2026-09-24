@@ -18,15 +18,7 @@ class DateTimeRule implements ValidationRule
     /**
      * Run the validation rule.
      *
-<<<<<<< .merge_file_XQJZJR
-<<<<<<< HEAD
-     * @param  mixed  $value  Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
-     * @param  \Closure(string, string|null=): PotentiallyTranslatedString  $fail
-=======
-     * @param mixed                                                       $value Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
-     * @param \Closure(string, string|null=): PotentiallyTranslatedString $fail
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_XQJZJR
      * <<<<<<< HEAD
      *
      * @param mixed                                                       $value Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
@@ -35,7 +27,15 @@ class DateTimeRule implements ValidationRule
      * @param mixed                                                       $value Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
      * @param \Closure(string, string|null=): PotentiallyTranslatedString $fail
      *                                                                           >>>>>>> laraxot/dev
->>>>>>> .merge_file_4E96bx
+     *                                                                           =======
+     *                                                                           <<<<<<< HEAD
+     * @param mixed                                                       $value Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
+     * @param \Closure(string, string|null=): PotentiallyTranslatedString $fail
+     *                                                                           =======
+     * @param mixed                                                       $value Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
+     * @param \Closure(string, string|null=): PotentiallyTranslatedString $fail
+     *                                                                           >>>>>>> laraxot/dev
+     *                                                                           >>>>>>> .merge_file_4E96bx
      */
     public function validate(string $attribute, mixed $value, \Closure $fail): void
     {

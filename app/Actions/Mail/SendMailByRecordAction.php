@@ -18,15 +18,7 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
-<<<<<<< .merge_file_gyYpGk
-<<<<<<< HEAD
-     * @param  Model  $record  Il record da utilizzare come dati per la mail
-     * @param  string  $mailClass  La classe Mailable da utilizzare
-=======
-     * @param Model  $record    Il record da utilizzare come dati per la mail
-     * @param string $mailClass La classe Mailable da utilizzare
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_gyYpGk
      * <<<<<<< HEAD
      *
      * @param Model  $record    Il record da utilizzare come dati per la mail
@@ -35,7 +27,15 @@ class SendMailByRecordAction
      * @param Model  $record    Il record da utilizzare come dati per la mail
      * @param string $mailClass La classe Mailable da utilizzare
      *                          >>>>>>> laraxot/dev
->>>>>>> .merge_file_SHunjS
+     *                          =======
+     *                          <<<<<<< HEAD
+     * @param Model  $record    Il record da utilizzare come dati per la mail
+     * @param string $mailClass La classe Mailable da utilizzare
+     *                          =======
+     * @param Model  $record    Il record da utilizzare come dati per la mail
+     * @param string $mailClass La classe Mailable da utilizzare
+     *                          >>>>>>> laraxot/dev
+     *                          >>>>>>> .merge_file_SHunjS
      */
     public function execute(Model $record, string $mailClass): void
     {
