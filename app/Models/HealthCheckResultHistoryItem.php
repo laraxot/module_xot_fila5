@@ -12,30 +12,7 @@ use Illuminate\Support\Carbon;
 use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
 
 /**
-<<<<<<< .merge_file_qxX6e9
-<<<<<<< HEAD
- * @property int $id
- * @property string $check_name
- * @property string $check_label
- * @property string $status
- * @property string|null $notification_message
- * @property string|null $short_summary
- * @property array<array-key, mixed> $meta
- * @property string $ended_at
- * @property string $batch
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
-=======
- * @property int                     $id
- * @property string                  $check_name
- * @property string                  $check_label
- * @property string                  $status
- * @property string|null             $notification_message
- * @property string|null             $short_summary
- * @property array<array-key, mixed> $meta
-=======
+ * <<<<<<< .merge_file_qxX6e9
  * <<<<<<< HEAD.
  *
  * @property int                     $id
@@ -59,18 +36,41 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property string|null             $notification_message
  * @property string|null             $short_summary
  * @property array<array-key, mixed> $meta
->>>>>>> .merge_file_42g2Fa
+ *                                                         =======
+ *                                                         <<<<<<< HEAD.
+ * @property int                     $id
+ * @property string                  $check_name
+ * @property string                  $check_label
+ * @property string                  $status
+ * @property string|null             $notification_message
+ * @property string|null             $short_summary
+ * @property array<array-key, mixed> $meta
  * @property string                  $ended_at
  * @property string                  $batch
  * @property Carbon|null             $created_at
  * @property Carbon|null             $updated_at
  * @property string|null             $updated_by
  * @property string|null             $created_by
-<<<<<<< .merge_file_qxX6e9
->>>>>>> laraxot/dev
-=======
+ *                                                         =======
+ * @property int                     $id
+ * @property string                  $check_name
+ * @property string                  $check_label
+ * @property string                  $status
+ * @property string|null             $notification_message
+ * @property string|null             $short_summary
+ * @property array<array-key, mixed> $meta
+ *                                                         >>>>>>> .merge_file_42g2Fa
+ * @property string                  $ended_at
+ * @property string                  $batch
+ * @property Carbon|null             $created_at
+ * @property Carbon|null             $updated_at
+ * @property string|null             $updated_by
+ * @property string|null             $created_by
+ *                                                         <<<<<<< .merge_file_qxX6e9
  *                                                         >>>>>>> laraxot/dev
->>>>>>> .merge_file_42g2Fa
+ *                                                         =======
+ *                                                         >>>>>>> laraxot/dev
+ *                                                         >>>>>>> .merge_file_42g2Fa
  *
  * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
  * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()

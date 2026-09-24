@@ -11,17 +11,16 @@ namespace Modules\Xot\Tests\Unit\Exports;
 class ResourceWithXlsFieldsStub
 {
     /**
-<<<<<<< .merge_file_oEPQFp
-<<<<<<< HEAD
-     * @param  array<array-key, mixed>  $data
-=======
-     * <<<<<<< .merge_file_nCtqKB.
+     * <<<<<<< .merge_file_oEPQFp
+     * <<<<<<< HEAD.
      *
      * @param array<array-key, mixed> $data
      *                                      =======
-=======
-     * <<<<<<< .merge_file_EXpH35.
-     *
+     *                                      <<<<<<< .merge_file_nCtqKB.
+     * @param array<array-key, mixed> $data
+     *                                      =======
+     *                                      =======
+     *                                      <<<<<<< .merge_file_EXpH35.
      * @param array<array-key, mixed> $data
      *                                      =======
      *                                      <<<<<<< HEAD
@@ -30,7 +29,7 @@ class ResourceWithXlsFieldsStub
      *                                      <<<<<<< .merge_file_nCtqKB.
      * @param array<array-key, mixed> $data
      *                                      =======
->>>>>>> .merge_file_ZvsdWC
+     *                                      >>>>>>> .merge_file_ZvsdWC
      *                                      <<<<<<< .merge_file_zBrJKn.
      * @param array<array-key, mixed> $data
      *
@@ -55,14 +54,15 @@ class ResourceWithXlsFieldsStub
      *
      * >>>>>>> .merge_file_KSvTHm
      *
-<<<<<<< .merge_file_oEPQFp
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_oEPQFp
+     * >>>>>>> laraxot/dev
+     * =======
      * >>>>>>> laraxot/dev
      *
      * >>>>>>> .merge_file_xXGHYo
      *
->>>>>>> .merge_file_ZvsdWC
+     * >>>>>>> .merge_file_ZvsdWC
+     *
      * @return array<int|string, string>
      */
     public static function getXlsFields(array $data): array

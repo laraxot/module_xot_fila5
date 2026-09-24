@@ -22,20 +22,20 @@ class XotBaseController extends RoutingController
     /**
      * success response method.
      *
-<<<<<<< .merge_file_k1Nhl3
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $result
-=======
-     * @param array<string, mixed> $result
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_k1Nhl3
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $result
      *                                     =======
      * @param array<string, mixed> $result
      *                                     >>>>>>> laraxot/dev
->>>>>>> .merge_file_YLH5sW
+     *                                     =======
+     *                                     <<<<<<< HEAD
+     * @param array<string, mixed> $result
+     *                                     =======
+     * @param array<string, mixed> $result
+     *                                     >>>>>>> laraxot/dev
+     *                                     >>>>>>> .merge_file_YLH5sW
      */
     public function sendResponse(string $message, array $result): JsonResponse
     {
@@ -51,20 +51,20 @@ class XotBaseController extends RoutingController
     /**
      * return error response.
      *
-<<<<<<< .merge_file_k1Nhl3
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $errorMessages
-=======
-     * @param array<string, mixed> $errorMessages
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_k1Nhl3
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $errorMessages
      *                                            =======
      * @param array<string, mixed> $errorMessages
      *                                            >>>>>>> laraxot/dev
->>>>>>> .merge_file_YLH5sW
+     *                                            =======
+     *                                            <<<<<<< HEAD
+     * @param array<string, mixed> $errorMessages
+     *                                            =======
+     * @param array<string, mixed> $errorMessages
+     *                                            >>>>>>> laraxot/dev
+     *                                            >>>>>>> .merge_file_YLH5sW
      */
     public function sendError(string $error, array $errorMessages = [], int $code = 404): JsonResponse
     {

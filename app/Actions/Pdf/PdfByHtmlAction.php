@@ -17,23 +17,8 @@ class PdfByHtmlAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
-<<<<<<< .merge_file_rBaNfk
-<<<<<<< HEAD
-     * @param  string  $html  Contenuto HTML da convertire
-     * @param  string  $filename  Nome del file PDF
-     * @param  string  $disk  Disco di storage
-     * @param  string  $out  Tipo di output (download, path, etc.)
-     * @param  string  $orientation  Orientamento (P=Portrait, L=Landscape)
-     * @param  PdfEngineEnum  $engine  Engine da utilizzare
-=======
-     * <<<<<<< .merge_file_fiqDWW
-     * =======
+     * <<<<<<< .merge_file_rBaNfk
      * <<<<<<< HEAD
-     * <<<<<<< .merge_file_7F9KEC
-     * >>>>>>> .merge_file_EziQIl
-=======
-     * <<<<<<< HEAD
->>>>>>> .merge_file_qicR2H
      *
      * @param string        $html        Contenuto HTML da convertire
      * @param string        $filename    Nome del file PDF
@@ -41,8 +26,23 @@ class PdfByHtmlAction
      * @param string        $out         Tipo di output (download, path, etc.)
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
-<<<<<<< .merge_file_rBaNfk
-=======
+     *                                   =======
+     *                                   <<<<<<< .merge_file_fiqDWW
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     *                                   <<<<<<< .merge_file_7F9KEC
+     *                                   >>>>>>> .merge_file_EziQIl
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     *                                   >>>>>>> .merge_file_qicR2H
+     * @param string        $html        Contenuto HTML da convertire
+     * @param string        $filename    Nome del file PDF
+     * @param string        $disk        Disco di storage
+     * @param string        $out         Tipo di output (download, path, etc.)
+     * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
+     * @param PdfEngineEnum $engine      Engine da utilizzare
+     *                                   <<<<<<< .merge_file_rBaNfk
+     *                                   =======
      *                                   =======
      *                                   <<<<<<< .merge_file_fiqDWW
      *                                   =======
@@ -55,7 +55,7 @@ class PdfByHtmlAction
      * @param string        $out         Tipo di output (download, path, etc.)
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
->>>>>>> .merge_file_qicR2H
+     *                                   >>>>>>> .merge_file_qicR2H
      *                                   <<<<<<< .merge_file_fiqDWW
      *                                   =======
      *                                   =======
@@ -93,11 +93,11 @@ class PdfByHtmlAction
      * @param PdfEngineEnum $engine      Engine da utilizzare
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_EziQIl
-<<<<<<< .merge_file_rBaNfk
->>>>>>> laraxot/dev
-=======
+     *                                   <<<<<<< .merge_file_rBaNfk
      *                                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_qicR2H
+     *                                   =======
+     *                                   >>>>>>> laraxot/dev
+     *                                   >>>>>>> .merge_file_qicR2H
      */
     public function execute(
         string $html,

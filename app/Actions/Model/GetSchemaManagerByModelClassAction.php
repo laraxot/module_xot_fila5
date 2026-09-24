@@ -17,18 +17,7 @@ class GetSchemaManagerByModelClassAction
     /**
      * Ottiene lo schema manager Doctrine per una classe di modello Eloquent.
      *
-<<<<<<< .merge_file_WiJuic
-<<<<<<< HEAD
-     * @param  string  $modelClass  La classe del modello
-=======
-     * <<<<<<< .merge_file_meUCp6
-     * =======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_xyZp2T
-     * >>>>>>> .merge_file_rWeDnJ
-     *
-     * @param string $modelClass La classe del modello
-=======
+     * <<<<<<< .merge_file_WiJuic
      * <<<<<<< HEAD
      *
      * @param string $modelClass La classe del modello
@@ -39,7 +28,17 @@ class GetSchemaManagerByModelClassAction
      *                           <<<<<<< .merge_file_xyZp2T
      *                           >>>>>>> .merge_file_rWeDnJ
      * @param string $modelClass La classe del modello
->>>>>>> .merge_file_34Ym4H
+     *                           =======
+     *                           <<<<<<< HEAD
+     * @param string $modelClass La classe del modello
+     *                           =======
+     *                           <<<<<<< .merge_file_meUCp6
+     *                           =======
+     *                           <<<<<<< HEAD
+     *                           <<<<<<< .merge_file_xyZp2T
+     *                           >>>>>>> .merge_file_rWeDnJ
+     * @param string $modelClass La classe del modello
+     *                           >>>>>>> .merge_file_34Ym4H
      *
      * <<<<<<< .merge_file_meUCp6
      * =======
@@ -49,12 +48,13 @@ class GetSchemaManagerByModelClassAction
      *
      * >>>>>>> .merge_file_rWeDnJ
      *
-<<<<<<< .merge_file_WiJuic
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_WiJuic
+     * >>>>>>> laraxot/dev
+     * =======
      * >>>>>>> laraxot/dev
      *
->>>>>>> .merge_file_34Ym4H
+     * >>>>>>> .merge_file_34Ym4H
+     *
      * @return AbstractSchemaManager<AbstractPlatform> Lo schema manager di Doctrine
      */
     public function execute(string $modelClass): AbstractSchemaManager

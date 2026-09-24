@@ -12,14 +12,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< .merge_file_WlceCH
-<<<<<<< HEAD
- * @param  MockInterface&Table  $tableMock
-=======
- * @param MockInterface&Table $tableMock
- *
->>>>>>> laraxot/dev
-=======
+ * <<<<<<< .merge_file_WlceCH
  * <<<<<<< HEAD.
  *
  * @param MockInterface&Table $tableMock
@@ -27,8 +20,16 @@ uses(TestCase::class);
  * @param MockInterface&Table $tableMock
  *
  * >>>>>>> laraxot/dev
+ * =======
+ * <<<<<<< HEAD
+ * @param MockInterface&Table $tableMock
+ *                                       =======
+ * @param MockInterface&Table $tableMock
  *
->>>>>>> .merge_file_TnkzY2
+ * >>>>>>> laraxot/dev
+ *
+ * >>>>>>> .merge_file_TnkzY2
+ *
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface

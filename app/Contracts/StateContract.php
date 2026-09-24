@@ -43,15 +43,7 @@ interface StateContract
     /**
      * Execute modal action by record.
      *
-<<<<<<< .merge_file_rJfhoN
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
-     * <<<<<<< .merge_file_JzTKht
-     *
-     * @param array<string, mixed> $data
-     *                                   =======
-=======
+     * <<<<<<< .merge_file_rJfhoN
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $data
@@ -59,7 +51,14 @@ interface StateContract
      *                                   <<<<<<< .merge_file_JzTKht
      * @param array<string, mixed> $data
      *                                   =======
->>>>>>> .merge_file_rJUQca
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     * @param array<string, mixed> $data
+     *                                   =======
+     *                                   <<<<<<< .merge_file_JzTKht
+     * @param array<string, mixed> $data
+     *                                   =======
+     *                                   >>>>>>> .merge_file_rJUQca
      *                                   <<<<<<< HEAD
      *                                   <<<<<<< .merge_file_uuxng6
      * @param array<string, mixed> $data
@@ -78,11 +77,11 @@ interface StateContract
      * @param array<string, mixed> $data
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_5Pp3Zq
-<<<<<<< .merge_file_rJfhoN
->>>>>>> laraxot/dev
-=======
+     *                                   <<<<<<< .merge_file_rJfhoN
      *                                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_rJUQca
+     *                                   =======
+     *                                   >>>>>>> laraxot/dev
+     *                                   >>>>>>> .merge_file_rJUQca
      */
     public function modalActionByRecord(Model $record, array $data): void;
 }

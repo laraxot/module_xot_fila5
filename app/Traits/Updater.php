@@ -14,17 +14,7 @@ use Webmozart\Assert\Assert;
  * Trait Updater.
  * https://dev.to/hasanmn/automatically-update-createdby-and-updatedby-in-laravel-using-bootable-traits-28g9.
  *
-<<<<<<< .merge_file_usDef2
-<<<<<<< HEAD
- * @property int|null $created_by ID dell'utente che ha creato il record
- * @property int|null $updated_by ID dell'utente che ha aggiornato il record
- * @property int|null $deleted_by ID dell'utente che ha eliminato il record
-=======
- * @property int|null             $created_by ID dell'utente che ha creato il record
- * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
- * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
->>>>>>> laraxot/dev
-=======
+ * <<<<<<< .merge_file_usDef2
  * <<<<<<< HEAD
  *
  * @property int|null             $created_by ID dell'utente che ha creato il record
@@ -35,7 +25,17 @@ use Webmozart\Assert\Assert;
  * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
  * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
  *                                            >>>>>>> laraxot/dev
->>>>>>> .merge_file_jJgv9I
+ *                                            =======
+ *                                            <<<<<<< HEAD
+ * @property int|null             $created_by ID dell'utente che ha creato il record
+ * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
+ * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
+ *                                            =======
+ * @property int|null             $created_by ID dell'utente che ha creato il record
+ * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
+ * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
+ *                                            >>>>>>> laraxot/dev
+ *                                            >>>>>>> .merge_file_jJgv9I
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property ProfileContract|null $deleter

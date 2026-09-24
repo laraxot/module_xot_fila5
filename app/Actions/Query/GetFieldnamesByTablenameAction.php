@@ -16,34 +16,24 @@ final class GetFieldnamesByTablenameAction
     /**
      * Get column names from a table with specific database connection.
      *
-<<<<<<< .merge_file_hQHcgJ
-<<<<<<< HEAD
-     * @param  string  $table  Table name to get columns from
-     * @param  string|null  $connectionName  Database connection name (optional)
-     * @return list<string>
+     * <<<<<<< .merge_file_hQHcgJ
+     * <<<<<<< HEAD
      *
-     * @throws \InvalidArgumentException
-=======
-     * <<<<<<< .merge_file_9lJc4S
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     *
      * =======
      * <<<<<<< HEAD
-     * <<<<<<< .merge_file_Jfzn7Q
-     * >>>>>>> .merge_file_G3Zryu
-     *
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     *
-=======
-     * <<<<<<< HEAD
-     *
      * @param string      $table          Table name to get columns from
      * @param string|null $connectionName Database connection name (optional)
      * @param string      $table          Table name to get columns from
@@ -64,7 +54,14 @@ final class GetFieldnamesByTablenameAction
      *                                   <<<<<<< HEAD
      *                                   <<<<<<< .merge_file_Jfzn7Q
      *                                   >>>>>>> .merge_file_G3Zryu
->>>>>>> .merge_file_JnElX9
+     * @throws \InvalidArgumentException
+     *                                   =======
+     *                                   <<<<<<< .merge_file_9lJc4S
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     *                                   <<<<<<< .merge_file_Jfzn7Q
+     *                                   >>>>>>> .merge_file_G3Zryu
+     *                                   >>>>>>> .merge_file_JnElX9
      * @throws \InvalidArgumentException
      *                                   <<<<<<< .merge_file_9lJc4S
      *                                   =======
@@ -83,21 +80,22 @@ final class GetFieldnamesByTablenameAction
      * @return list<string>
      * @return list<string>
      * @return list<string>
-<<<<<<< .merge_file_hQHcgJ
-=======
      * @return list<string>
->>>>>>> .merge_file_JnElX9
+     *                      <<<<<<< .merge_file_hQHcgJ
+     *                      =======
+     * @return list<string>
+     *                      >>>>>>> .merge_file_JnElX9
      *                      >>>>>>> laraxot/dev
      *                      >>>>>>> .merge_file_46hKcJ
      *                      >>>>>>> .merge_file_hUuUgC
      *                      =======
      * @return list<string>
      *                      >>>>>>> .merge_file_G3Zryu
-<<<<<<< .merge_file_hQHcgJ
->>>>>>> laraxot/dev
-=======
+     *                      <<<<<<< .merge_file_hQHcgJ
      *                      >>>>>>> laraxot/dev
->>>>>>> .merge_file_JnElX9
+     *                      =======
+     *                      >>>>>>> laraxot/dev
+     *                      >>>>>>> .merge_file_JnElX9
      */
     public function execute(string $table, ?string $connectionName = null): array
     {
