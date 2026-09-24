@@ -5,28 +5,37 @@ declare(strict_types=1);
 namespace Modules\Xot\Services;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_vm6MQl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 use ReflectionClass;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use stdClass;
 
 // ----------- Requests ----------
@@ -51,6 +60,7 @@ class ModuleService
         if (! (self::$_instance instanceof self)) {
             self::$_instance = new self;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_vm6MQl
 <<<<<<< HEAD
         if (! (self::$_instance instanceof self)) {
@@ -64,6 +74,11 @@ class ModuleService
             self::$_instance = new self();
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+        if (! self::$_instance instanceof self) {
+            self::$_instance = new self();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         }
 
         return self::$_instance;
@@ -103,6 +118,7 @@ class ModuleService
 <<<<<<< HEAD
         if (! ($mod instanceof \Nwidart\Modules\Module)) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_vm6MQl
 <<<<<<< HEAD
         if (! ($mod instanceof \Nwidart\Modules\Module)) {
@@ -113,6 +129,10 @@ class ModuleService
         if (! $mod instanceof \Nwidart\Modules\Module) {
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+        if (! $mod instanceof \Nwidart\Modules\Module) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return [];
         }
 
@@ -130,6 +150,7 @@ class ModuleService
 <<<<<<< HEAD
                 $tmp = new stdClass;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_vm6MQl
 <<<<<<< HEAD
                 $tmp = new stdClass;
@@ -140,6 +161,10 @@ class ModuleService
                 $tmp = new \stdClass();
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+                $tmp = new \stdClass();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -158,29 +183,39 @@ class ModuleService
 
                 try {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_vm6MQl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     $reflection_class = new ReflectionClass($tmp->class);
                     if (! $reflection_class->isAbstract()) {
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (Exception) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_4KP26r
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     $reflection_class = new \ReflectionClass($tmp->class);
                     if (! $reflection_class->isAbstract()) {
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_vm6MQl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_4KP26r
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                     // Ignore reflection errors
                 }

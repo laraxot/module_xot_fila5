@@ -17,6 +17,7 @@
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -30,6 +31,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         // Campi modificabili dall'utente
@@ -81,6 +85,7 @@ return [
 ### Regole di Estensione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -94,6 +99,9 @@ return [
 1. Implementare `public static function getFormSchema(): array`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+1. Implementare `public static function getFormSchema(): array`
+>>>>>>> 3792da0d (Check & fix styling)
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -104,6 +112,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -119,6 +128,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('name')->required(),

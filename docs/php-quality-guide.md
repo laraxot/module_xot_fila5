@@ -2,12 +2,16 @@
 
 **Ultimo aggiornamento**: 2025-01-10
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
@@ -334,6 +338,7 @@ protected function getStats(): array
     if ($this->record === null) {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
 =======
@@ -345,6 +350,10 @@ protected function getStats(): array
                 ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+            Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
+                ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
+>>>>>>> 3792da0d (Check & fix styling)
                 ->color('gray'),
         ];
     }
@@ -722,6 +731,7 @@ private function createTotalResponsesStat(int $count): Stat
 {
     return Stat::make(
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -732,12 +742,17 @@ private function createTotalResponsesStat(int $count): Stat
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         __('healthcare_app::question_chart_stats_overview.stats.total_responses.label'),
         number_format((float) $count)
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.total_responses.description'))
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -745,6 +760,7 @@ private function createTotalResponsesStat(int $count): Stat
 private function createCompletionRateStat(float $rate): Stat
 {
     return Stat::make(
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -756,12 +772,17 @@ private function createCompletionRateStat(float $rate): Stat
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         __('healthcare_app::question_chart_stats_overview.stats.completion_rate.label'),
         $rate.'%'
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.completion_rate.description'))
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1151,6 +1172,7 @@ Dopo ogni modifica file:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 =======
 <<<<<<< HEAD
@@ -1159,3 +1181,6 @@ Dopo ogni modifica file:
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
+>>>>>>> 3792da0d (Check & fix styling)

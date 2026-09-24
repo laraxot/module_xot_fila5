@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7aUYvN
 =======
@@ -12,11 +13,17 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +37,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -40,6 +51,7 @@ updated: 2026-08-24
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7aUYvN
 =======
@@ -52,17 +64,22 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_Z6AaiF
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 # Sviluppo
 
@@ -81,6 +98,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< HEAD
@@ -96,6 +114,8 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
@@ -179,6 +199,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 28b0298a (fix: phpstan issues)
 =======
 <<<<<<< HEAD
@@ -187,6 +208,11 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -223,13 +249,19 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
 # Sviluppo
@@ -248,6 +280,7 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto. 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< .merge_file_gDspsU
@@ -267,6 +300,11 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+=======
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -322,6 +360,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< .merge_file_gDspsU
@@ -344,6 +383,11 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+=======
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
@@ -372,6 +416,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
@@ -389,13 +434,21 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
 >>>>>>> laraxot/dev
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 
 <<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 # Xot
 
@@ -432,17 +485,21 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7aUYvN
 >>>>>>> laraxot/dev
 =======
@@ -452,4 +509,6 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_FUvMgp
 >>>>>>> .merge_file_Z6AaiF
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev

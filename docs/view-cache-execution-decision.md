@@ -184,6 +184,7 @@ Corretti i file per usare la sintassi corretta `<x-ui.logo>` invece di `<x-pub_t
 - [Pub Theme Component Namespace Error Analysis](../../Themes/Meetup/docs/pub-theme-component-namespace-error-analysis.md)
 - [Blade Anonymous Components Rule](../../Xot/docs/blade-anonymous-components-namespace-rule.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -191,6 +192,10 @@ Corretti i file per usare la sintassi corretta `<x-ui.logo>` invece di `<x-pub_t
 - [Blade Anonymous Components Rule](../../xot/docs/blade-anonymous-components-namespace-rule.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Pub Theme Component Namespace Error Analysis](../../themes/meetup/docs/pub-theme-component-namespace-error-analysis.md)
+- [Blade Anonymous Components Rule](../../xot/docs/blade-anonymous-components-namespace-rule.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -222,6 +227,7 @@ Tutte le Blade templates sono state compilate correttamente e salvate in cache. 
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Completato con successo
 =======
 <<<<<<< HEAD
@@ -230,3 +236,6 @@ Tutte le Blade templates sono state compilate correttamente e salvate in cache. 
 **Status**: ✅ Completato con successo
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: ✅ Completato con successo
+>>>>>>> 3792da0d (Check & fix styling)

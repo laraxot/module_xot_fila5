@@ -34,6 +34,7 @@ test('Filament generators leave unsupported files unchanged', function (): void 
     expect((new GenerateFormByFileAction)->execute($file))->toBe(0);
     (new GenerateTableColumnsByFileAction)->execute($file);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_B37aiM
 <<<<<<< HEAD
     expect((new GenerateFormByFileAction)->execute($file))->toBe(0);
@@ -47,6 +48,11 @@ test('Filament generators leave unsupported files unchanged', function (): void 
     (new GenerateTableColumnsByFileAction())->execute($file);
 >>>>>>> .merge_file_2cEYKU
 >>>>>>> laraxot/dev
+=======
+    expect((new GenerateFormByFileAction())->execute($file))->toBe(0);
+    (new GenerateTableColumnsByFileAction())->execute($file);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
     expect(File::get($path))->toBe('unchanged');
 

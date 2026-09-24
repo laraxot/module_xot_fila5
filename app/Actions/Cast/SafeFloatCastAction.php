@@ -39,6 +39,7 @@ class SafeFloatCastAction
      * Converte in modo sicuro un valore mixed in float.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float|null  $default  Valore di default se la conversione fallisce (default: 0.0)
 =======
@@ -46,6 +47,11 @@ class SafeFloatCastAction
      * @param float|null $default Valore di default se la conversione fallisce (default: 0.0)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed      $value   Il valore da convertire
+     * @param float|null $default Valore di default se la conversione fallisce (default: 0.0)
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito
      */
     public function execute(mixed $value, ?float $default = 0.0): float
@@ -77,10 +83,14 @@ class SafeFloatCastAction
 
         // Se è un array e ha un solo elemento numerico
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (is_array($value) && count($value) === 1) {
 =======
         if (is_array($value) && 1 === count($value)) {
 >>>>>>> laraxot/dev
+=======
+        if (is_array($value) && 1 === count($value)) {
+>>>>>>> 3792da0d (Check & fix styling)
             return $this->execute(reset($value), $default);
         }
 
@@ -97,6 +107,7 @@ class SafeFloatCastAction
      * Metodo statico di convenienza per chiamate dirette.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float|null  $default  Valore di default se la conversione fallisce (default: 0.0)
 =======
@@ -104,6 +115,11 @@ class SafeFloatCastAction
      * @param float|null $default Valore di default se la conversione fallisce (default: 0.0)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed      $value   Il valore da convertire
+     * @param float|null $default Valore di default se la conversione fallisce (default: 0.0)
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito in float
      */
     public static function cast(mixed $value, ?float $default = 0.0): float
@@ -115,17 +131,23 @@ class SafeFloatCastAction
      * Converte un valore in float con validazione di range.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float  $min  Valore minimo consentito
      * @param  float  $max  Valore massimo consentito
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param mixed      $value   Il valore da convertire
      * @param float      $min     Valore minimo consentito
      * @param float      $max     Valore massimo consentito
      * @param float|null $default Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito e validato
      */
     public function executeWithRange(mixed $value, float $min, float $max, ?float $default = null): float
@@ -140,17 +162,23 @@ class SafeFloatCastAction
      * Metodo statico di convenienza per cast con range.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float  $min  Valore minimo consentito
      * @param  float  $max  Valore massimo consentito
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param mixed      $value   Il valore da convertire
      * @param float      $min     Valore minimo consentito
      * @param float      $max     Valore massimo consentito
      * @param float|null $default Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito e validato
      */
     public static function castWithRange(mixed $value, float $min, float $max, ?float $default = null): float
@@ -162,15 +190,21 @@ class SafeFloatCastAction
      * Converte un valore in float con controllo di precisione.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int  $precision  Numero di decimali (default: 2)
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param mixed      $value     Il valore da convertire
      * @param int        $precision Numero di decimali (default: 2)
      * @param float|null $default   Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito con precisione specificata
      */
     public function executeWithPrecision(mixed $value, int $precision = 2, ?float $default = 0.0): float
@@ -184,15 +218,21 @@ class SafeFloatCastAction
      * Metodo statico per cast con precisione.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int  $precision  Numero di decimali (default: 2)
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param mixed      $value     Il valore da convertire
      * @param int        $precision Numero di decimali (default: 2)
      * @param float|null $default   Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito con precisione specificata
      */
     public static function castWithPrecision(mixed $value, int $precision = 2, ?float $default = 0.0): float
@@ -204,6 +244,7 @@ class SafeFloatCastAction
      * Converte un valore in percentuale (0-100).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
@@ -211,6 +252,11 @@ class SafeFloatCastAction
      * @param float|null $default Valore di default se la conversione fallisce
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed      $value   Il valore da convertire
+     * @param float|null $default Valore di default se la conversione fallisce
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito come percentuale (0-100)
      */
     public function executeAsPercentage(mixed $value, ?float $default = 0.0): float
@@ -222,6 +268,7 @@ class SafeFloatCastAction
      * Metodo statico per cast come percentuale.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
@@ -229,6 +276,11 @@ class SafeFloatCastAction
      * @param float|null $default Valore di default se la conversione fallisce
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed      $value   Il valore da convertire
+     * @param float|null $default Valore di default se la conversione fallisce
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito come percentuale (0-100)
      */
     public static function castAsPercentage(mixed $value, ?float $default = 0.0): float
@@ -240,6 +292,7 @@ class SafeFloatCastAction
      * Converte un valore in formato monetario (sempre positivo, 2 decimali).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
@@ -247,6 +300,11 @@ class SafeFloatCastAction
      * @param float|null $default Valore di default se la conversione fallisce
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed      $value   Il valore da convertire
+     * @param float|null $default Valore di default se la conversione fallisce
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito come importo monetario
      */
     public function executeAsCurrency(mixed $value, ?float $default = 0.0): float
@@ -260,6 +318,7 @@ class SafeFloatCastAction
      * Metodo statico per cast come importo monetario.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float|null  $default  Valore di default se la conversione fallisce
 =======
@@ -267,6 +326,11 @@ class SafeFloatCastAction
      * @param float|null $default Valore di default se la conversione fallisce
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed      $value   Il valore da convertire
+     * @param float|null $default Valore di default se la conversione fallisce
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito come importo monetario
      */
     public static function castAsCurrency(mixed $value, ?float $default = 0.0): float
@@ -278,6 +342,7 @@ class SafeFloatCastAction
      * Converte una stringa in float con gestione avanzata.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $value  La stringa da convertire
      * @param  float|null  $default  Valore di default
 =======
@@ -285,6 +350,11 @@ class SafeFloatCastAction
      * @param float|null $default Valore di default
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string     $value   La stringa da convertire
+     * @param float|null $default Valore di default
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return float Il valore convertito
      */
     private function parseStringToFloat(string $value, ?float $default = 0.0): float

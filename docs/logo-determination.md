@@ -31,6 +31,7 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../Cms/docs/convenzioni-namespace-filament.md).
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -39,3 +40,8 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../cms/docs/convenzioni-namespace-filament.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../../docs/index.md).
+- Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md).
+- Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../cms/docs/convenzioni-namespace-filament.md).
+>>>>>>> 3792da0d (Check & fix styling)

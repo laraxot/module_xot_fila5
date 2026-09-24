@@ -271,17 +271,23 @@ Per migrare le rotte esistenti:
 ## Collegamenti Bidirezionali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Architettura Folio + Volt + Filament](./folio_volt_architecture.md)
 - [Struttura dei Moduli](./module_structure.md)
 - [Documentazione Generale](./documentation.md)
 - [Regole del Progetto](./rules.md)
 - [Collegamenti al Modulo Cms](../../cms/docs/frontoffice/routing.md)
 - [Collegamenti al Modulo Lang](../../lang/docs/packages/localization.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md)
 - [Documentazione Generale](./documentation.md)
@@ -293,6 +299,7 @@ Per migrare le rotte esistenti:
 * [routing.md](../../../../docs/routing.md)
 * [routing.md](../../Cms/docs/frontoffice/routing.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -302,3 +309,9 @@ Per migrare le rotte esistenti:
 * [routing.md](../../cms/docs/frontoffice/routing.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Collegamenti alla Root](../../../../docs/routing.md)
+## Collegamenti tra versioni di routing.md
+* [routing.md](../../../../../docs/routing.md)
+* [routing.md](../../cms/docs/frontoffice/routing.md)
+>>>>>>> 3792da0d (Check & fix styling)

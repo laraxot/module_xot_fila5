@@ -27,6 +27,7 @@ final class SafeEloquentCastFixture
         $model = new class extends Model
         {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_N1s52u
 <<<<<<< HEAD
         $model = new class extends Model
@@ -38,6 +39,10 @@ final class SafeEloquentCastFixture
         $model = new class extends Model {
 >>>>>>> .merge_file_Tuu2yP
 >>>>>>> laraxot/dev
+=======
+        $model = new class extends Model {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             /** @var string */
             protected $table = 'safe_eloquent_cast_test';
 

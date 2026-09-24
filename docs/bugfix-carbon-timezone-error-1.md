@@ -74,6 +74,7 @@ public function registerTimezone(): void
 - [Laravel Timezone Configuration](https://laravel.com/docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -90,3 +91,9 @@ public function registerTimezone(): void
 *Risolto da: Windsurf AI Assistant*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Root Bugfix Guidelines](../../../../docs/bugfix-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+*Risolto da: Windsurf AI Assistant*
+>>>>>>> 3792da0d (Check & fix styling)

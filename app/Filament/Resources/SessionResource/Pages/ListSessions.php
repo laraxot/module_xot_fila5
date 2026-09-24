@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\SessionResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Layout\Stack;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\SessionResource;
 
@@ -19,8 +24,13 @@ class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+=======
+
+    #[\Override]
+>>>>>>> 3792da0d (Check & fix styling)
     public function getGridTableColumns(): array
     {
         return [
@@ -52,5 +62,8 @@ class ListSessions extends XotBaseListRecords
                 ->label('Last Activity'),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 }

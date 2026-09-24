@@ -2,6 +2,7 @@
 type: concept
 module: Xot
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -11,6 +12,11 @@ module: Xot
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> 3792da0d (Check & fix styling)
 updated: 2026-06-30
 qmd: "xot module model migration factory seeder parity audit N equals N"
 related:
@@ -19,21 +25,28 @@ related:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 updated: 2026-06-05
 qmd: "xot module model migration factory seeder parity audit cross module"
 >>>>>>> 64619e34 (.)
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 
 # Module model artifact parity
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -41,6 +54,9 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 ## Regola N = N = N
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
@@ -79,16 +95,22 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 ## Scopo
 =======
 ## Regola N = N = N
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
 
@@ -124,6 +146,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 
 ## Collegamenti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -137,6 +160,8 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [module-directory-structure-rule.md](../../module-directory-structure-rule.md)
 - [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
 - [data-sacred](../../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md)
@@ -144,5 +169,8 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 =======
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

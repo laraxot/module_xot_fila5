@@ -13,6 +13,7 @@ test('exception handlers are selected by their declared throwable type', functio
 <<<<<<< HEAD
     $repository = new HandlersRepository;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_8561Zw
 <<<<<<< HEAD
     $repository = new HandlersRepository;
@@ -23,6 +24,10 @@ test('exception handlers are selected by their declared throwable type', functio
     $repository = new HandlersRepository();
 >>>>>>> .merge_file_hf5SNa
 >>>>>>> laraxot/dev
+=======
+    $repository = new HandlersRepository();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     $runtimeHandler = static fn (\RuntimeException $exception): string => $exception->getMessage();
     $logicHandler = static fn (\LogicException $exception): string => $exception->getMessage();
     $repository->addRenderer($runtimeHandler);

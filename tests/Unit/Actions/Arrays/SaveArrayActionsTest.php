@@ -2,9 +2,12 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_2DEY7V
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -12,10 +15,13 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 
 >>>>>>> .merge_file_DwmWLT
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;

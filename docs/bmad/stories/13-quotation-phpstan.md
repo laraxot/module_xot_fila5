@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_mKOCJP
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,11 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QNtpcK
 >>>>>>> .merge_file_kglMlb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 name: 13-quotation-phpstan
 description: "Modulo: Quotation"
@@ -30,6 +36,7 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_mKOCJP
 =======
 <<<<<<< .merge_file_QPpP45
@@ -38,6 +45,8 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QNtpcK
 >>>>>>> .merge_file_kglMlb
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 # BMAD Story 13 — Quotation: 13 errori PHPStan
 

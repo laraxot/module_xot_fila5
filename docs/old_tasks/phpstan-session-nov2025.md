@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_icK5Gk
 =======
@@ -26,6 +27,8 @@ Vedi il file canonico: [phpstan-session-nov.md](./phpstan-session-nov.md)
 <<<<<<< .merge_file_icK5Gk
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -156,6 +159,9 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_T2807y
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

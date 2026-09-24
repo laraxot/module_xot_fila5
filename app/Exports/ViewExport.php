@@ -26,6 +26,7 @@ class ViewExport implements FromView
     /**
      * Summary of __construct.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string> $fields
@@ -52,6 +53,9 @@ class ViewExport implements FromView
      *                              >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                              >>>>>>> .merge_file_ogFscl
      *                              >>>>>>> laraxot/dev
+=======
+     * @param array<string> $fields
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(View $view, ?string $transKey = null, ?array $fields = null)
     {

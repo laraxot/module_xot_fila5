@@ -155,6 +155,7 @@ abstract class XotBaseResource extends Resource
     // ✅ Metodi rimangono invariati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_A91uKJ
 =======
@@ -174,6 +175,9 @@ abstract class XotBaseResource extends Resource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4zQpju
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> 3792da0d (Check & fix styling)
     public static function getPages(): array { /* ... */ }
 
     // ❌ METODI VIETATI - Devono essere solo nelle pagine List

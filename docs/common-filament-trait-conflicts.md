@@ -9,12 +9,16 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Creazione**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🎯 Obiettivo
 
@@ -535,12 +539,16 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Creazione**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🎯 Obiettivo
 
@@ -918,6 +926,7 @@ foreach ($properties as $property) {
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 <<<<<<< HEAD
@@ -926,6 +935,9 @@ foreach ($properties as $property) {
 **File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -1058,6 +1070,7 @@ class MyPage extends XotBaseViewRecord
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 <<<<<<< HEAD
@@ -1066,3 +1079,6 @@ class MyPage extends XotBaseViewRecord
 - `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> 3792da0d (Check & fix styling)

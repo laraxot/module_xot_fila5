@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_GFVe6J
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,11 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_fTYlyD
 >>>>>>> .merge_file_ELETlN
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 name: issue-04-infolist
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -30,6 +36,7 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_GFVe6J
 =======
 <<<<<<< .merge_file_42wjIc
@@ -38,6 +45,8 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_fTYlyD
 >>>>>>> .merge_file_ELETlN
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 # Issue GH #04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 

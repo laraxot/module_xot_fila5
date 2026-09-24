@@ -509,6 +509,7 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 **Version**: 1.0
 **Last Updated**: December 23, 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -519,10 +520,16 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 **Module**: Xot (Core Engine)
 **Maintainer**: Laraxot Team
 
+<<<<<<< HEAD
 *This guide is part of the Laraxot PTVX Framework documentation standard.*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*This guide is part of the Laraxot PTVX Framework documentation standard.*
+>>>>>>> 3792da0d (Check & fix styling)

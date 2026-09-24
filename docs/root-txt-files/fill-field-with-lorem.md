@@ -1,11 +1,17 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 title: "fill_field_with_lorem"
 module: "Xot"
 type: concept
@@ -95,8 +101,11 @@ https://www.fakenamegenerator.com/gen-male-fr-fr.php
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 title: 'Fill field with lorem — risorse esterne'
 module: Xot
@@ -187,6 +196,9 @@ updated: 2026-08-24
 - <https://www.fakenamegenerator.com/gen-male-fr-fr.php>
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev

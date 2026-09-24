@@ -7,17 +7,24 @@ namespace Modules\Xot\Tests\Unit;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
 use Modules\Xot\Tests\TestCase;
+<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 uses(TestCase::class);
 
 it('throws if record has no email', function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $record = new class extends Model
     {
 =======
     $record = new class extends Model {
 >>>>>>> laraxot/dev
+=======
+    $record = new class extends Model {
+>>>>>>> 3792da0d (Check & fix styling)
         public function option(string $key): null
         {
             return null;
@@ -25,6 +32,7 @@ it('throws if record has no email', function (): void {
 
         public function myLogs(): object
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             return new class
             {
@@ -37,14 +45,27 @@ it('throws if record has no email', function (): void {
                 {
                 }
 >>>>>>> laraxot/dev
+=======
+            return new class {
+                /** @param array<mixed> $data */
+                public function create(array $data): void
+                {
+                }
+>>>>>>> 3792da0d (Check & fix styling)
             };
         }
     };
 
+<<<<<<< HEAD
     try {
         app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
         Assert::fail('Expected exception was not thrown.');
     } catch (\InvalidArgumentException $e) {
         Assert::assertInstanceOf(\InvalidArgumentException::class, $e);
     }
+=======
+    $this->expectThrowable(\InvalidArgumentException::class);
+
+    app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
+>>>>>>> 3792da0d (Check & fix styling)
 });

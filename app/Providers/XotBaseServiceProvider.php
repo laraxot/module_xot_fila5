@@ -44,7 +44,10 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerLivewireComponents();
         $this->registerBladeComponents();
         $this->registerCommands();
+<<<<<<< HEAD
         $this->registerPublicAssets();
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     public function register(): void
@@ -59,10 +62,14 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     public function registerBladeIcons(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->name === '') {
 =======
         if ('' === $this->name) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $this->name) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -91,29 +98,40 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     public function registerViews(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->name === '') {
 =======
         if ('' === $this->name) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $this->name) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
         $viewPath = module_path($this->name, 'resources/views');
+<<<<<<< HEAD
 
         if (! is_dir($viewPath)) {
             return;
         }
 
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
     public function registerTranslations(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->name === '') {
 =======
         if ('' === $this->name) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $this->name) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -133,12 +151,19 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     {
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
 
+<<<<<<< HEAD
         if (is_dir($componentViewPath)) {
             try {
                 Blade::anonymousComponentPath($componentViewPath);
             } catch (\Exception $e) {
                 // Ignore invalid or unavailable anonymous component paths.
             }
+=======
+        try {
+            Blade::anonymousComponentPath($componentViewPath);
+        } catch (\Exception $e) {
+            // Ignore invalid or unavailable anonymous component paths.
+>>>>>>> 3792da0d (Check & fix styling)
         }
 
         $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
@@ -167,6 +192,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 $prefix,
             );
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($comps->count() === 0) {
             return;
         }
@@ -182,15 +208,28 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $commands = array_map(static function (mixed $item): string {
             Assert::isArray($item);
 >>>>>>> laraxot/dev
+=======
+        if (0 === $comps->count()) {
+            return;
+        }
+        $commands = $comps->toArray();
+        /** @var array<int, array{ns: string}> $commands */
+        $commands = array_map(static function (mixed $item): string {
+            Assert::isArray($item);
+>>>>>>> 3792da0d (Check & fix styling)
             Assert::keyExists($item, 'ns');
             Assert::string($item['ns'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
             return $item['ns'];
 <<<<<<< HEAD
+<<<<<<< HEAD
         }, $commands);
 =======
         }, $items);
 >>>>>>> laraxot/dev
+=======
+        }, $commands);
+>>>>>>> 3792da0d (Check & fix styling)
         $this->commands($commands);
     }
 
@@ -227,6 +266,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             // Ignore config registration failures for optional module config.
         }
     }
+<<<<<<< HEAD
 
     protected function registerPublicAssets(): void
     {
@@ -258,4 +298,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             ],
         );
     }
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 }

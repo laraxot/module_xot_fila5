@@ -9,12 +9,16 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Creazione**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🎯 Obiettivo
 
@@ -524,6 +528,7 @@ class MyPage extends XotBaseViewRecord
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 <<<<<<< HEAD
@@ -532,3 +537,6 @@ class MyPage extends XotBaseViewRecord
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> 3792da0d (Check & fix styling)

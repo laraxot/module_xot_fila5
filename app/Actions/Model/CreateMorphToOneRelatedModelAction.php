@@ -15,6 +15,7 @@ class CreateMorphToOneRelatedModelAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
 =======
 <<<<<<< .merge_file_e4HVgT
@@ -27,6 +28,9 @@ class CreateMorphToOneRelatedModelAction
      * @param array<string, mixed> $attributes
 >>>>>>> .merge_file_FVCl3t
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $attributes
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(object $relation, array $attributes): Model
     {
@@ -34,6 +38,7 @@ class CreateMorphToOneRelatedModelAction
 
         $created = $relation->create($attributes);
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::isInstanceOf($created, Model::class);
 =======
 <<<<<<< .merge_file_e4HVgT
@@ -45,6 +50,9 @@ class CreateMorphToOneRelatedModelAction
         Assert::isInstanceOf($created, Model::class);
 >>>>>>> .merge_file_FVCl3t
 >>>>>>> laraxot/dev
+=======
+        Assert::isInstanceOf($created, Model::class);
+>>>>>>> 3792da0d (Check & fix styling)
 
         return $created;
     }

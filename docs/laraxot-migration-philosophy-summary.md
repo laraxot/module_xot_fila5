@@ -14,6 +14,7 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 - Clear, linear evolution of database schema
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2. **Predictable Migration Order**
 =======
 <<<<<<< HEAD
@@ -22,6 +23,9 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 ### 2. **<nome progetto>able Migration Order**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### 2. **<nome progetto>able Migration Order**
+>>>>>>> 3792da0d (Check & fix styling)
 - No confusion about which migration runs first
 - Consistent behavior across all environments (local, staging, production)
 - Eliminates race conditions in migration execution
@@ -66,16 +70,22 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 └── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
 
 Modifiche schema: editare la stessa migrazione e aggiornare il timestamp nel nome file.
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
@@ -92,9 +102,12 @@ Modules/User/database/migrations/
 ### ✅ CREATE NEW MIGRATION
 - **New Table**: `create_{table}_table.php`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - **Data Migrations**: `migrate_{purpose}.php` (solo trasformazioni dati)
 
 ### ❌ NEVER CREATE NEW MIGRATION
@@ -111,8 +124,11 @@ Modules/User/database/migrations/
 - **Modifiche**: Modificare questo file e aggiornare il timestamp nel nome
 
 ### 2. Data Migration Migrations
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - **Schema Changes**: `add_{column}_to_{table}.php`
 - **Data Migrations**: `migrate_{purpose}.php`
 
@@ -165,6 +181,7 @@ When duplicate migrations are discovered:
 - **Simplicity**: One table, one migration, no exceptions
 - **Clarity**: Clear, unambiguous schema definitions
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Predictability**: Consistent migration behavior across environments
 =======
 <<<<<<< HEAD
@@ -173,6 +190,9 @@ When duplicate migrations are discovered:
 - **<nome progetto>ability**: Consistent migration behavior across environments
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **<nome progetto>ability**: Consistent migration behavior across environments
+>>>>>>> 3792da0d (Check & fix styling)
 - **Maintainability**: Easy to understand and modify schema evolution
 
 ### Why This Matters
@@ -181,6 +201,7 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 =======
 <<<<<<< HEAD
@@ -189,3 +210,6 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
+>>>>>>> 3792da0d (Check & fix styling)

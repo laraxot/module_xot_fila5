@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_78IjtG
 title: "Redundancy Audit"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 title: "audit ridondanza monorepo 2026-05-26"
 module: Xot
 type: audit
@@ -93,4 +96,7 @@ related:
 ## Storico audit
 
 - [2026-05-21](redundancy-audit-2026-05-21.md) — scan precedente (Fixcity tracker)
+<<<<<<< HEAD
 >>>>>>> .merge_file_qWj4Pb
+=======
+>>>>>>> 3792da0d (Check & fix styling)

@@ -6,7 +6,10 @@ namespace Modules\Xot\Filament\Traits;
 
 use Illuminate\Contracts\Support\Htmlable;
 
+<<<<<<< HEAD
 /** @phpstan-ignore trait.unused */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 trait NavigationPageLabelTrait
 {
     use TransTrait;

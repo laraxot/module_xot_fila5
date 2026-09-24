@@ -84,12 +84,16 @@ Esempi chiave (non esaustivi):
 - `README.md` (indice ad alto livello)
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato 2025-12-24)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato [DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato [DATE])
+>>>>>>> 3792da0d (Check & fix styling)
 - `filament/` e `consolidated/` (guide dettagliate)
 
 ## Da migliorare (DRY + KISS)
@@ -99,6 +103,7 @@ Esempi chiave (non esaustivi):
 - **Normalizzare naming e link**: garantire link relativi e file docs in lowercase (tranne `README.md`).
 - **Testing**: migrazione sistematica dei test legacy a Pest (e evitare mega-classi con troppi metodi pubblici).
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
 =======
 <<<<<<< HEAD
@@ -107,3 +112,6 @@ Esempi chiave (non esaustivi):
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
+>>>>>>> 3792da0d (Check & fix styling)

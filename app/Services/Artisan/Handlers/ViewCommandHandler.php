@@ -22,6 +22,7 @@ class ViewCommandHandler implements CommandHandlerInterface
 <<<<<<< HEAD
         return $command === 'viewclear';
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_BPzZWS
 <<<<<<< HEAD
         return $command === 'viewclear';
@@ -32,5 +33,9 @@ class ViewCommandHandler implements CommandHandlerInterface
         return 'viewclear' === $command;
 >>>>>>> .merge_file_CYw4uZ
 >>>>>>> laraxot/dev
+=======
+        return 'viewclear' === $command;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 use function Safe\json_encode;
 ?>
 @extends('xot::layouts.email')

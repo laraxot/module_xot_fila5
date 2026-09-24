@@ -2,12 +2,16 @@
 
 **Data Creazione**: 2026-01-02
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Creazione**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -139,6 +143,7 @@ try {
 - [Xot Philosophy](./philosophy.md)
 - [Activity Philosophy](../Activity/docs/philosophy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -149,10 +154,16 @@ try {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Activity Philosophy](../activity/docs/philosophy.md)
 
 ---
 
+<<<<<<< HEAD
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+>>>>>>> 3792da0d (Check & fix styling)

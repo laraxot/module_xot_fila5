@@ -17,6 +17,7 @@ related:
   - ../../../../Themes/Sixteen/docs/wiki/overviews/completion-roadmap.md
   - ../concepts/phpstan-pest-bridge-discipline.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../phpstan-best-practices.md
 =======
 <<<<<<< HEAD
@@ -31,6 +32,9 @@ related:
 >>>>>>> .merge_file_YXPZ37
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  - ../PHPSTAN-BEST-PRACTICES.md
+>>>>>>> 3792da0d (Check & fix styling)
   - ../../../../../docs/wiki/PHPSTAN-INDEX.md
 ---
 

@@ -11,6 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
+<<<<<<< HEAD
     test('it can manage tags attributes', function (): void {
         // Arrange
         $tags = ['tag1', 'tag2', 'important'];
@@ -20,6 +21,13 @@ describe('Base Morph Pivot Business Logic', function (): void {
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+    describe('Base Morph Pivot Business Logic (attributes continued)', function (): void {
+        // Arrange
+        $tags = ['tag1', 'tag2', 'important'];
+
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('tags', $tags);
 
         // Act
@@ -39,10 +47,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $categories = ['category1', 'category2'];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('categories', $categories);
 
         // Act
@@ -65,10 +77,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('permissions', $permissions);
 
         // Act
@@ -91,10 +107,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('settings', $settings);
 
         // Act
@@ -113,10 +133,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $notes = 'This is a test note for the pivot relationship';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('notes', $notes);
 
         // Act
@@ -131,10 +155,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $description = 'Test description for pivot relationship';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('description', $description);
 
         // Act
@@ -149,10 +177,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $url = 'https://example.com/pivot/123';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('url', $url);
 
         // Act
@@ -167,10 +199,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $imageUrl = 'https://example.com/images/pivot.jpg';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('image_url', $imageUrl);
 
         // Act
@@ -185,10 +221,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $externalId = 'ext_12345';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('external_id', $externalId);
 
         // Act
@@ -203,10 +243,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $source = 'api_import';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('source', $source);
 
         // Act
@@ -221,10 +265,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $version = '1.2.3';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('version', $version);
 
         // Act
@@ -239,10 +287,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $hash = 'abc123def456';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('hash', $hash);
 
         // Act
@@ -257,10 +309,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $checksum = 'sha256:abc123def456';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('checksum', $checksum);
 
         // Act
@@ -275,10 +331,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $size = 1024;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('size', $size);
 
         // Act
@@ -294,10 +354,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $mimeType = 'application/json';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('mime_type', $mimeType);
 
         // Act
@@ -312,10 +376,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $encoding = 'UTF-8';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('encoding', $encoding);
 
         // Act
@@ -330,10 +398,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $language = 'en';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('language', $language);
 
         // Act
@@ -348,10 +420,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $locale = 'en_US';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('locale', $locale);
 
         // Act
@@ -366,10 +442,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $timezone = 'Europe/Rome';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('timezone', $timezone);
 
         // Act
@@ -384,10 +464,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $currency = 'EUR';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('currency', $currency);
 
         // Act
@@ -402,10 +486,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $decimalPlaces = 2;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('decimal_places', $decimalPlaces);
 
         // Act
@@ -421,10 +509,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $roundingMode = 'half_up';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 3792da0d (Check & fix styling)
         $pivot->setAttribute('rounding_mode', $roundingMode);
 
         // Act

@@ -12,6 +12,7 @@ use Modules\Xot\Database\Factories\SessionFactory;
 /**
  * Modules\Xot\Models\Session.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @property string               $id
@@ -32,6 +33,8 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @method static SessionFactory factory($count = null, $state = [])
  *                                                                   =======
  *
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property string               $id
  * @property string|null          $user_id
  * @property string|null          $ip_address
@@ -48,7 +51,10 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property ProfileContract|null $updater
  *
  * @method static SessionFactory          factory($count = null, $state = [])
+<<<<<<< HEAD
  *                                                                            >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @method static Builder<static>|Session newModelQuery()
  * @method static Builder<static>|Session newQuery()
  * @method static Builder<static>|Session query()

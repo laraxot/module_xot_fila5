@@ -34,17 +34,22 @@ TextInput::make('first_name') // la label viene risolta automaticamente
 ## Collegamenti
 - [Doc specifica Patient](../../Patient/docs/langserviceprovider-labels.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Doc specifica Patient](../../patient/docs/langserviceprovider-labels.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Doc specifica Patient](../../patient/docs/langserviceprovider-labels.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 **Questa regola è obbligatoria per tutti i moduli.**
 
 ## Collegamenti tra versioni di langserviceprovider-labels.md
 * [langserviceprovider-labels.md](../../Patient/docs/langserviceprovider-labels.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -52,3 +57,6 @@ TextInput::make('first_name') // la label viene risolta automaticamente
 * [langserviceprovider-labels.md](../../patient/docs/langserviceprovider-labels.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [langserviceprovider-labels.md](../../patient/docs/langserviceprovider-labels.md)
+>>>>>>> 3792da0d (Check & fix styling)

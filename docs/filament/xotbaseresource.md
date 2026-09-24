@@ -35,6 +35,7 @@ class CoeffResource extends XotBaseResource
    */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -48,6 +49,9 @@ class CoeffResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [ /* ... */ ];
     }
@@ -89,6 +93,7 @@ class ExampleResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -102,6 +107,9 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // campi con chiavi stringa

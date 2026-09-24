@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e
 =======
 =======
@@ -44,3 +45,6 @@ https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-
 >>>>>>> .merge_file_faAd33
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e
+>>>>>>> 3792da0d (Check & fix styling)

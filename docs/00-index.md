@@ -10,6 +10,7 @@
 - 🚫 [No Services Rule](./critical-no-services-rule.md) - Perché usiamo Actions invece dei Service.
 - 🗂️ [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole obbligatorie per Filament.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
 =======
 <<<<<<< .merge_file_MOASLX
@@ -21,6 +22,8 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4NCyjp
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🛠️ Utility & Trait
 - 🧬 [Trait Patterns](./traits-complete-guide.md) - HasTeams, HasXotTable e altri trait core.
@@ -108,6 +111,7 @@
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Module Dependency Management](./composer-module-dependency-management.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
 =======
 <<<<<<< .merge_file_MOASLX
@@ -121,6 +125,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4NCyjp
 >>>>>>> laraxot/dev
+=======
+- [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
+- [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
+>>>>>>> 3792da0d (Check & fix styling)
 - [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study.md)
 - [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog.md) - Studio completo package-by-package da `composer show`
 - [Database Connection Configuration](./database-configuration-critical-rules.md)

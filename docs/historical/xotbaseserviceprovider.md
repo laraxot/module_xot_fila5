@@ -130,6 +130,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
 =======
 <<<<<<< .merge_file_nkxXUp
@@ -142,6 +143,9 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_1FfRKh
 >>>>>>> laraxot/dev
+=======
+- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -174,6 +178,7 @@ public function boot(): void
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Registrazione icone Blade](registerbladeicons.md)
 =======
 <<<<<<< .merge_file_nkxXUp
@@ -186,6 +191,9 @@ public function boot(): void
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_1FfRKh
 >>>>>>> laraxot/dev
+=======
+- [Registrazione icone Blade](./registerBladeIcons.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Gestione dei Path delle Traduzioni
 
@@ -220,6 +228,7 @@ Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
 =======
 <<<<<<< .merge_file_nkxXUp
@@ -232,6 +241,9 @@ Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione cent
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_1FfRKh
 >>>>>>> laraxot/dev
+=======
+Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 

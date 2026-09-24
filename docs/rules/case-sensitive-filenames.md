@@ -188,6 +188,7 @@ Aggiungere al workflow GitHub Actions:
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Categoria**: Regole di Codice
 =======
 <<<<<<< HEAD
@@ -196,3 +197,6 @@ Aggiungere al workflow GitHub Actions:
 **Categoria**: Regole di Codice
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Categoria**: Regole di Codice
+>>>>>>> 3792da0d (Check & fix styling)

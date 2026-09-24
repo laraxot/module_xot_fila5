@@ -83,9 +83,13 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 
 **Ultimo aggiornamento**: 2026-01-09
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)

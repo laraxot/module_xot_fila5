@@ -74,6 +74,7 @@ public function registerTimezone(): void
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
@@ -88,6 +89,11 @@ public function registerTimezone(): void
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025*
+- [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
+
+>>>>>>> 3792da0d (Check & fix styling)
 *Risolto da: Windsurf AI Assistant*
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
@@ -165,6 +171,7 @@ public function registerTimezone(): void
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -181,3 +188,9 @@ public function registerTimezone(): void
 *Risolto da: Windsurf AI Assistant*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025*
+- [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
+
+*Risolto da: Windsurf AI Assistant*
+>>>>>>> 3792da0d (Check & fix styling)

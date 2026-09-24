@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 /**
  * Class MorphToOneAction.
@@ -19,11 +22,16 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class MorphToOneAction
 {
+<<<<<<< HEAD
     use QueueableAction;
+=======
+    use \Spatie\QueueableAction\QueueableAction;
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Execute the action to create a MorphToOne relationship.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Model  $model  The parent model
      * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
@@ -31,6 +39,10 @@ class MorphToOneAction
      * @param Model       $model       The parent model
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
 >>>>>>> laraxot/dev
+=======
+     * @param Model       $model       The parent model
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @throws \InvalidArgumentException When relation type is invalid
      */
@@ -50,11 +62,16 @@ class MorphToOneAction
      * Prepare the data array for creation.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data  The input data array
 =======
      * @param array<string, mixed> $data The input data array
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data The input data array
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string, mixed> The prepared data array
      */
     private function prepareData(array $data): array
@@ -66,9 +83,13 @@ class MorphToOneAction
 
         // Return the prepared data
 <<<<<<< HEAD
+<<<<<<< HEAD
         return array_filter($data, static fn (mixed $value) => $value !== null);
 =======
         return array_filter($data, static fn (mixed $value) => null !== $value);
 >>>>>>> laraxot/dev
+=======
+        return array_filter($data, static fn ($value) => null !== $value);
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

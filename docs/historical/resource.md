@@ -57,6 +57,7 @@ class MyResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
 =======
@@ -76,6 +77,9 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Schema del form
@@ -110,6 +114,7 @@ class MyResource extends XotBaseResource
    - ✅ `protected static ?string $model`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -127,6 +132,9 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   - ✅ `public static function getFormSchema(): array`
+>>>>>>> 3792da0d (Check & fix styling)
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -240,6 +248,7 @@ class ListRecords extends XotBaseListRecords
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
 =======
@@ -259,6 +268,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -589,6 +601,7 @@ public function getTableColumns(): array
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
 =======
@@ -608,6 +621,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         'nome' => TextInput::make('nome'),

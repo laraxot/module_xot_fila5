@@ -7,6 +7,7 @@ Le Blade Icons sono un componente fondamentale del sistema di interfaccia utente
 
 ### Registrazione delle Icons
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerbladeicons.md).
 =======
 <<<<<<< HEAD
@@ -15,6 +16,9 @@ Per una comprensione dettagliata del processo di registrazione delle icone, cons
 Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerBladeIcons.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerBladeIcons.md).
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Struttura delle Directory
 ```
@@ -37,6 +41,7 @@ Modules/
 
 ## Risorse Aggiuntive
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
 - [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
 =======
@@ -48,3 +53,7 @@ Modules/
 - [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
+- [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
+>>>>>>> 3792da0d (Check & fix styling)

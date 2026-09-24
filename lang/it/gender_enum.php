@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'values' => [
         'f' => [
             'label' => 'Femmina',
@@ -17,6 +18,8 @@ return [
             'description' => 'Genere maschile',
         ],
     ],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     'label' => 'Genere',
     'options' => [
         'f' => 'Femmina',

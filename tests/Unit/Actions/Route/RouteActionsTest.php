@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_vVEKCI
 <<<<<<< HEAD
@@ -15,6 +16,9 @@ declare(strict_types=1);
 =======
 >>>>>>> .merge_file_82r8dc
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Actions\Route\BuildLanguageUrlAction;
 use Modules\Xot\Actions\Route\BuildNestedRouteNameAction;
 use Modules\Xot\Actions\Route\IsAdminRouteAction;

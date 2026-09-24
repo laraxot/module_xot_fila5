@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Request;
 <<<<<<< HEAD
 use Mockery;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 use Mockery;
@@ -19,6 +20,8 @@ use Mockery;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Ozybem
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\ArtisanAction;
 use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
@@ -34,6 +37,7 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 use ReflectionClass;
@@ -42,6 +46,8 @@ use ReflectionMethod;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Ozybem
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
@@ -52,6 +58,7 @@ afterEach(function (): void {
 <<<<<<< HEAD
     Mockery::close();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
     Mockery::close();
@@ -62,6 +69,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 });
 
 describe('Xot artisan commands helpers coverage', function (): void {
@@ -86,22 +97,28 @@ describe('Xot artisan commands helpers coverage', function (): void {
         foreach ($ref->getMethods() as $method) {
             if ($method->getDeclaringClass()->getName() !== ArtisanAction::class || str_starts_with($method->getName(), '__')) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
         $ref = new ReflectionClass(ArtisanAction::class);
         foreach ($ref->getMethods() as $method) {
             if ($method->getDeclaringClass()->getName() !== ArtisanAction::class || str_starts_with($method->getName(), '__')) {
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $ref = new \ReflectionClass(ArtisanAction::class);
         foreach ($ref->getMethods() as $method) {
             if (ArtisanAction::class !== $method->getDeclaringClass()->getName() || str_starts_with($method->getName(), '__')) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $ref = new \ReflectionClass(ArtisanAction::class);
         foreach ($ref->getMethods() as $method) {
             if (ArtisanAction::class !== $method->getDeclaringClass()->getName() || str_starts_with($method->getName(), '__')) {
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
             try {
@@ -113,6 +130,7 @@ describe('Xot artisan commands helpers coverage', function (): void {
 <<<<<<< HEAD
                         : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : null);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
                         : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : null);
@@ -123,6 +141,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         : ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName() ? 'Xot' : null);
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+=======
+                        : ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName() ? 'Xot' : null);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 }
                 if ($method->isStatic()) {
                     $method->invoke(null, ...$args);
@@ -152,6 +174,7 @@ describe('Xot artisan commands helpers coverage', function (): void {
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
@@ -162,6 +185,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+=======
+                $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 $inst = $ref->isAbstract() ? null : $ref->newInstanceWithoutConstructor();
                 if ($inst instanceof Command) {
                     try {
@@ -172,6 +199,7 @@ describe('Xot artisan commands helpers coverage', function (): void {
 <<<<<<< HEAD
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
@@ -182,6 +210,10 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> .merge_file_Ozybem
 >>>>>>> laraxot/dev
+=======
+                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                         continue;
                     }
@@ -195,10 +227,13 @@ describe('Xot artisan commands helpers coverage', function (): void {
                             $args[] = $param->isDefaultValueAvailable()
                                 ? $param->getDefaultValue()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                                 : ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string' ? 'Xot' : []);
                         }
                         if ($method->isStatic()) {
@@ -210,10 +245,14 @@ describe('Xot artisan commands helpers coverage', function (): void {
                     } catch (\Throwable) {
                         $n++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_Ozybem
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                                 : ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName() ? 'Xot' : []);
                         }
                         if ($method->isStatic()) {
@@ -224,10 +263,13 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         ++$n;
                     } catch (\Throwable) {
                         ++$n;
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Ozybem
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                     }
                 }
@@ -245,10 +287,13 @@ describe('Xot artisan commands helpers coverage', function (): void {
                             $input['--module'] = 'Xot';
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GP3xsC
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         $inst->run(new ArrayInput($input), new NullOutput);
                         $n++;
                     } catch (\Throwable) {
@@ -258,10 +303,14 @@ describe('Xot artisan commands helpers coverage', function (): void {
             } catch (\Throwable) {
                 $n++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_Ozybem
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         $inst->run(new ArrayInput($input), new NullOutput());
                         ++$n;
                     } catch (\Throwable) {
@@ -270,10 +319,13 @@ describe('Xot artisan commands helpers coverage', function (): void {
                 }
             } catch (\Throwable) {
                 ++$n;
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3xsC
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Ozybem
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
             }
         }

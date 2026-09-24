@@ -92,6 +92,7 @@ public function processValue(?string $value): string
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
 - [Code Standards](code-standards.md)
 =======
@@ -108,6 +109,10 @@ public function processValue(?string $value): string
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_RPDh8C
 >>>>>>> laraxot/dev
+=======
+- [Best Practices](./BEST-PRACTICES.md)
+- [Code Standards](./CODE-STANDARDS.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni

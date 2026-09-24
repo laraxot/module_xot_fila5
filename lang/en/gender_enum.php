@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'values' => [
         'f' => [
             'label' => 'Female',
@@ -17,6 +18,8 @@ return [
             'description' => 'Male gender',
         ],
     ],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     'label' => 'Gender',
     'options' => [
         'f' => 'Female',

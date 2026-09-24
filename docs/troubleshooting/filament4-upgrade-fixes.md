@@ -169,6 +169,7 @@ Laravel Framework 12.28.1
 ✅ **DOCUMENTATO**: Soluzione centralizzata implementata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 19 Settembre 2025*
 =======
 <<<<<<< HEAD
@@ -177,3 +178,6 @@ Laravel Framework 12.28.1
 *Ultimo aggiornamento: 19 Settembre 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 19 Settembre 2025*
+>>>>>>> 3792da0d (Check & fix styling)

@@ -1,13 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_fwCtB7
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 da tenere d'occhio .. comprati
 https://livewiredemos.com/components
 
 
+<<<<<<< HEAD
 https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
 =======
 <<<<<<< HEAD
@@ -53,3 +57,6 @@ https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Li
 >>>>>>> .merge_file_6IFZTq
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
+>>>>>>> 3792da0d (Check & fix styling)

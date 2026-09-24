@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\XotBaseResource;
 =======
 <<<<<<< .merge_file_5HsDnO
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -14,10 +17,13 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource;
 >>>>>>> .merge_file_ErC8vg
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -66,9 +72,12 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
         try {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5HsDnO
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
             /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $resourceClass */
@@ -78,13 +87,17 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_ErC8vg
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             /** @var class-string<XotBaseResource> $resourceClass */
             $resourceClass = $page::getResource();
             $resourceClass::getTableClass();
         } catch (Throwable $e) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5HsDnO
@@ -93,6 +106,10 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
 =======
 >>>>>>> .merge_file_ErC8vg
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $senzaTable[] = $page.' — '.$e->getMessage();
         }
     }

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_EbRo0y
 <<<<<<< HEAD
@@ -47,3 +48,8 @@ https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepos
 >>>>>>> .merge_file_JC8zAQ
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+struttura con l5-repository
+https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepositoryEloquent.php
+>>>>>>> 3792da0d (Check & fix styling)

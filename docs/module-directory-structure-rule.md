@@ -347,6 +347,7 @@ Questi file devono essere:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -393,3 +394,6 @@ dell'utente, per non perdere contenuto storico senza conferma.
 *Ultimo aggiornamento: 2026-06-18*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2026-06-18*
+>>>>>>> 3792da0d (Check & fix styling)

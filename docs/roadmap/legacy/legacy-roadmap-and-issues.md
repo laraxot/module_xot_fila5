@@ -204,6 +204,7 @@ catch (CannotRegisterIconSet $e) {
 ---
 
 ### 2. Helper Functions - No Caching
+<<<<<<< HEAD
 <<<<<<< .merge_file_HBgqZh
 **File**: `Helpers/Helper.php`
 =======
@@ -213,6 +214,9 @@ catch (CannotRegisterIconSet $e) {
 **File**: `Helpers/Helper.php`
 >>>>>>> .merge_file_0Cgsel
 >>>>>>> .merge_file_Cawj5p
+=======
+**File**: `Helpers/Helper.php`
+>>>>>>> 3792da0d (Check & fix styling)
 
 **Problema**: Chiamate ripetute senza caching
 

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Array;
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Spatie\QueueableAction\QueueableAction;
 
 class SaveArrayAction
@@ -12,12 +15,16 @@ class SaveArrayAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $data
      *                                       =======
      * @param array<int|string, mixed> $data
      *                                       >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool
     {

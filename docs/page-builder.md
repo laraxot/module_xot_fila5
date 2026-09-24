@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JXk5Hx
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 //--- carino --
 http://preview.codecanyon.net/item/builderjs-html-email-page-builder/full_screen_preview/27146783?_ga=2.64183471.181704816.1592486325-1692742173.1592386239
 http://34.85.106.28:4001/design.php?id=1_2_1_column&type=layouts
@@ -26,6 +29,7 @@ https://codecanyon.net/item/drag-drop-email-builder/19423355
 
 
 
+<<<<<<< HEAD
 https://github.com/HansSchouten/Laravel-Pagebuilder
 =======
 <<<<<<< HEAD
@@ -100,3 +104,6 @@ https://github.com/HansSchouten/Laravel-Pagebuilder
 >>>>>>> .merge_file_eqEKyy
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/HansSchouten/Laravel-Pagebuilder
+>>>>>>> 3792da0d (Check & fix styling)

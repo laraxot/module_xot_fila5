@@ -415,12 +415,16 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 # Widget Implementation Rules - Xot Module
@@ -497,6 +501,7 @@ class MyTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -506,6 +511,10 @@ namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Chart\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -562,6 +571,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -571,6 +581,10 @@ namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Chart\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -648,6 +662,7 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -657,6 +672,10 @@ namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Chart\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -867,6 +886,7 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 =======
@@ -879,3 +899,8 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
+
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+>>>>>>> 3792da0d (Check & fix styling)

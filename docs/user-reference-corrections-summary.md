@@ -81,6 +81,7 @@ public static function getPluralModelLabel(): string
 
 - **[User Reference Pattern](./user-reference-pattern.md)** - Guida completa pattern corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **[PHPStan Corrections January 2025](./phpstan-corrections-january-2025.md)** - Aggiornato con riferimenti User
 =======
 <<<<<<< HEAD
@@ -89,6 +90,9 @@ public static function getPluralModelLabel(): string
 - **[PHPStan Corrections January 2025](./phpstan-corrections-january.md)** - Aggiornato con riferimenti User
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **[PHPStan Corrections January 2025](./phpstan-corrections-january.md)** - Aggiornato con riferimenti User
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -156,6 +160,7 @@ $userClass = XotData::make()->getUserClass();
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
 =======
 <<<<<<< HEAD
@@ -164,3 +169,6 @@ $userClass = XotData::make()->getUserClass();
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 3792da0d (Check & fix styling)

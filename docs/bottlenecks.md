@@ -684,6 +684,7 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Performance](best-practices.md#performance)
 =======
 <<<<<<< HEAD
@@ -692,6 +693,9 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 - [Best Practices Performance](./BEST-PRACTICES.md#performance)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Best Practices Performance](./BEST-PRACTICES.md#performance)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
@@ -699,6 +703,7 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
 =======
 <<<<<<< HEAD
@@ -707,3 +712,6 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -58,6 +58,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    // CORRETTO ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -71,6 +72,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            TextInput::make('nome'),
@@ -206,6 +210,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [filament_best_practices.md](../filament_best_practices.md)
 * [filament_best_practices.md](../../../user/docs/filament_best_practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 =======
 <<<<<<< HEAD
@@ -214,3 +219,6 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> 3792da0d (Check & fix styling)

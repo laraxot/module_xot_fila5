@@ -1066,6 +1066,7 @@ b6f667c (.)
 - Aggiornare la documentazione del modulo con esempi e riferimenti.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 =======
 <<<<<<< HEAD
@@ -1074,3 +1075,6 @@ Vedi anche la documentazione specifica del modulo per dettagli e casi particolar
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
+>>>>>>> 3792da0d (Check & fix styling)

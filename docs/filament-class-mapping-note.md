@@ -52,6 +52,7 @@ Se in futuro si volesse creare queste classi base:
 4. Refactorare tutti i componenti per estendere le classi base
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per ora, il mapping riflette la realtà del codice.
 =======
 <<<<<<< HEAD
@@ -60,3 +61,6 @@ Per ora, il mapping riflette la realtà del codice.
 Per ora, il mapping riflette la realtà del codice.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Per ora, il mapping riflette la realtà del codice.
+>>>>>>> 3792da0d (Check & fix styling)

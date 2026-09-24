@@ -49,6 +49,7 @@ use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -68,6 +69,8 @@ Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacre
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```bash
 
 # Ripristinare le migrazioni
@@ -77,8 +80,11 @@ php artisan migrate:fresh
 php artisan db:seed
 ```
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
 # Verificare che il modulo sia presente
@@ -456,6 +462,7 @@ SQLSTATE[23000]: Integrity constraint violation
 #### **Soluzioni**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -470,6 +477,8 @@ class MioModelloTest extends XotBaseTestCase
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Utilizzare RefreshDatabase**
 ```php
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -477,12 +486,16 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class MioModelloTest extends XotBaseTestCase
 {
     use RefreshDatabase;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -491,11 +504,16 @@ class MioModelloTest extends XotBaseTestCase
         // Setup database per i test
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+        // Setup database per i test
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
 
 =======
@@ -505,6 +523,8 @@ Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacre
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test
@@ -725,12 +745,16 @@ dd(DB::getQueryLog());
 
 - [**README.md**](README.md) - Documentazione principale del modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> 3792da0d (Check & fix styling)
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale
@@ -738,6 +762,7 @@ dd(DB::getQueryLog());
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 =======
 <<<<<<< HEAD
@@ -746,3 +771,6 @@ dd(DB::getQueryLog());
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> 3792da0d (Check & fix styling)

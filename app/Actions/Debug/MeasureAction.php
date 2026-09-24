@@ -18,19 +18,25 @@ class MeasureAction
      * Esegue una closure misurando il tempo di esecuzione e l'utilizzo di memoria.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Closure():T  $closure  La closure da eseguire e misurare
      * @param  string  $label  Etichetta opzionale per identificare la misurazione
      * @return T Il risultato dell'esecuzione della closure
      */
     public function execute(Closure $closure, string $label = ''): mixed
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param \Closure():T $closure La closure da eseguire e misurare
      * @param string       $label   Etichetta opzionale per identificare la misurazione
      *
      * @return T Il risultato dell'esecuzione della closure
      */
     public function execute(\Closure $closure, string $label = ''): mixed
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $start = microtime(true);
         $memory_start = memory_get_usage();
@@ -55,10 +61,14 @@ class MeasureAction
         // Mostriamo una notifica con le metriche
         Notification::make()
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->title('Performance Metrics '.($label !== '' ? $label : 'Unnamed'))
 =======
             ->title('Performance Metrics '.('' !== $label ? $label : 'Unnamed'))
 >>>>>>> laraxot/dev
+=======
+            ->title('Performance Metrics '.('' !== $label ? $label : 'Unnamed'))
+>>>>>>> 3792da0d (Check & fix styling)
             ->body($metrics['execution_time'].'  '.$metrics['memory_usage'])
             ->success()
             ->persistent()

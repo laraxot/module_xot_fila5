@@ -324,6 +324,7 @@ public function panel(Panel $panel): Panel
 ```php
 // ❌ ERRATO - NON registrare asset chart in altri moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
 =======
 <<<<<<< .merge_file_nNBS7c
@@ -337,6 +338,10 @@ public function panel(Panel $panel): Panel
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+=======
+// Modules/healthcare_app/app/Providers/Filament/AdminPanelProvider.php
+// Modules/ModuloEsempio/app/Providers/Filament/AdminPanelProvider.php
+>>>>>>> 3792da0d (Check & fix styling)
 // Modules/UI/app/Providers/Filament/AdminPanelProvider.php
 // Themes/Zero/app/Providers/Filament/AdminPanelProvider.php
 
@@ -346,6 +351,7 @@ public function panel(Panel $panel): Panel
     
     // ❌ NON fare questo - causa duplicazioni e conflitti
     // FilamentAsset::register([
+<<<<<<< HEAD
 <<<<<<< HEAD
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
 =======
@@ -359,6 +365,9 @@ public function panel(Panel $panel): Panel
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+=======
+    //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/healthcare_app'))->module(),
+>>>>>>> 3792da0d (Check & fix styling)
     // ]);
     
     return $panel;
@@ -370,6 +379,7 @@ public function panel(Panel $panel): Panel
 - **KISS**: Configurazione semplice e centralizzata
 - **Coerenza**: Tutti i moduli ereditano automaticamente gli asset chart
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
 =======
@@ -383,6 +393,9 @@ Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../chart/
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+=======
+Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../chart/docs/chart-assets-centralization-rule.md).
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Configuration Files
 
@@ -482,6 +495,7 @@ The project uses a modular architecture where:
 
 Per guide dettagliate, consultare:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
 =======
 <<<<<<< .merge_file_nNBS7c
@@ -494,5 +508,8 @@ Per guide dettagliate, consultare:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
 >>>>>>> laraxot/dev
+=======
+- [Chart Module Installation Guide](../../chart/docs/filament-5-installation-guide.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Filament 5.x Requirements](./filament-5-requirements.md)
 - [Filament 5.x Official Docs](https://filamentphp.com/docs/5.x/introduction/installation)

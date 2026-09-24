@@ -29,12 +29,16 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -316,15 +320,21 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [DRY/KISS Analysis](../../../../dry_kiss_analysis.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
@@ -333,6 +343,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
 =======
 <<<<<<< HEAD
@@ -341,3 +352,6 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
+>>>>>>> 3792da0d (Check & fix styling)

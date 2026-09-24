@@ -52,6 +52,7 @@ class ModuleMixin
 <<<<<<< HEAD
                 $value !== null
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_WkRCba
 <<<<<<< HEAD
                 $value !== null
@@ -62,6 +63,10 @@ class ModuleMixin
                 null !== $value
 >>>>>>> .merge_file_DRb01C
 >>>>>>> laraxot/dev
+=======
+                null !== $value
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 && ! is_array($value)
                 && ! is_int($value)
                 && ! is_string($value)

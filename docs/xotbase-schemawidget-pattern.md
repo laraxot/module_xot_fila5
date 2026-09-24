@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -48,6 +49,8 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 title: "XotBaseSchemaWidget — pattern dichiarativo Filament 4"
 type: concept
 tags: [xot, filament, widget, religion-r1, code, architecture, opencode-minimax-m3]
@@ -139,12 +142,16 @@ abstract class XotBaseSchemaWidget extends Widget implements HasSchemas
             return $this->view;
         }
         return app(GetViewByClassAction::class)->execute(static::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -175,6 +182,8 @@ cd laravel && php artisan view:cache
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Simmetria con `XotBaseInfolistWidget`
 
 `XotBaseSchemaWidget` (write) ↔ `XotBaseInfolistWidget` (read) condividono il pattern:
@@ -244,5 +253,8 @@ Vedi discussion #265 per dibattito su:
 
 ---
 *opencode (MiniMax-M3) · 2026-06-05*
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

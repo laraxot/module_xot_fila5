@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -201,12 +202,18 @@ Safe\file_put_contents($filename, $modifiedContents);
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: safe-functions
 canonical: ../../../Themes/docs/shared-components/safe-functions.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/safe-functions.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/safe-functions.md
+>>>>>>> 3792da0d (Check & fix styling)

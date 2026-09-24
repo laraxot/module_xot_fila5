@@ -2,9 +2,12 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ufWU9l
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -12,10 +15,13 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 
 >>>>>>> .merge_file_dQMLcK
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Actions\Classes\GetFilenameByClassnameAction;
 use Modules\Xot\Models\Log;
 use Modules\Xot\Tests\TestCase;

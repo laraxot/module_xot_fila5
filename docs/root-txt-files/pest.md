@@ -7,18 +7,27 @@ description: 'Elenco di 1 riferimenti esterni raccolti per pest, deduplicati e c
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 converted_from: _pest.txt
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+converted_from: _pest.txt
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 converted_from: pest.txt
 =======
 converted_from: _pest.txt
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

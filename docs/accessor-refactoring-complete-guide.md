@@ -304,17 +304,23 @@ Moduli con logica inline complessa:
 
 ### Guide Filosofiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Accessor Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
 - [Philosophy Guide PTVX](../../../../docs/philosophy-guide.md)
 
 ### Guide Operative
 - [Accessor Refactoring Roadmap](../../sigma/docs/accessor-refactoring-roadmap.md)
 - [Progress Tracker](../../sigma/docs/refactoring-progress-tracker.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Accessor Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
 - [Philosophy Guide PTVX](../../../docs/philosophy-guide.md)
 
@@ -329,17 +335,23 @@ Moduli con logica inline complessa:
 
 ### Implementazioni Modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Sigma - SchedaTrait](../../sigma/docs/session-complete-summary.md)
 - [IndennitaCondizioniLavoro - Audit](../../indennitacondizionilavoro/docs/accessor-guard-audit.md)
 
 ---
 
 **Creato**: [DATE]
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Sigma - SchedaTrait](../../Sigma/docs/session-complete-summary.md)
 - [IndennitaCondizioniLavoro - Audit](../../IndennitaCondizioniLavoro/docs/accessor-guard-audit.md)
 
@@ -349,6 +361,7 @@ Moduli con logica inline complessa:
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 =======
 <<<<<<< HEAD
@@ -357,3 +370,6 @@ Moduli con logica inline complessa:
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
+>>>>>>> 3792da0d (Check & fix styling)

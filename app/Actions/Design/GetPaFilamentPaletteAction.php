@@ -18,6 +18,7 @@ final class GetPaFilamentPaletteAction
 
     /** Verde PA — azioni primarie, CTA istituzionali */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_wWOdKs
 <<<<<<< HEAD
@@ -32,14 +33,19 @@ final class GetPaFilamentPaletteAction
 =======
 <<<<<<< .merge_file_wWOdKs
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public const PRIMARY_HEX = '#007A52';
 
     /** Blu istituzionale — info, link header */
     public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_WendtL
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * @return array<string, array<int, string>|string>

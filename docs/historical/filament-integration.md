@@ -47,6 +47,7 @@ Each resource must implement the abstract method:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
@@ -66,6 +67,9 @@ abstract public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 This enforces consistent form schema definition across all resources.
@@ -93,6 +97,7 @@ Resources define forms through `getFormSchema()`:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
@@ -112,6 +117,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -214,6 +222,7 @@ Consistent form setup with standardized columns:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
@@ -233,6 +242,9 @@ public static function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchemaColumns(): int
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return 1; // Standard single column layout
 }
@@ -409,6 +421,7 @@ Always implement `getFormSchema()` for consistency:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
@@ -428,6 +441,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     // Return array of form components
 }

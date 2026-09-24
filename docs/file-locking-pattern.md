@@ -195,12 +195,16 @@ if (Redis::set("lock:$filepath", $metadata, 'EX', 3600, 'NX')) {
 
 - [Merge Conflict Resolution 2025-11-04](./merge-conflict-resolution-2025-11-04.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Merge Conflict Resolution [DATE]](./merge-conflict-resolution-[DATE].md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Merge Conflict Resolution [DATE]](./merge-conflict-resolution-[DATE].md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Code Quality Standards](./code-quality-standards.md)
 - [DRY KISS Principles](./dry-kiss-analysis.md)
@@ -208,6 +212,7 @@ if (Redis::set("lock:$filepath", $metadata, 'EX', 3600, 'NX')) {
 ## 📅 Changelog
 
 - **2025-11-04**: Documento creato dopo risoluzione massiva di merge conflicts in 16 file
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Pattern identificati e documentati
 - Script di esempio forniti
@@ -221,3 +226,8 @@ if (Redis::set("lock:$filepath", $metadata, 'EX', 3600, 'NX')) {
 - Script di esempio forniti
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **[DATE]**: Documento creato dopo risoluzione massiva di merge conflicts in 16 file
+- Pattern identificati e documentati
+- Script di esempio forniti
+>>>>>>> 3792da0d (Check & fix styling)

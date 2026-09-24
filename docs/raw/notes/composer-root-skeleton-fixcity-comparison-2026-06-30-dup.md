@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [composer-root-skeleton-fixcity-comparison-dup.md](./comp
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 title: "Confronto composer root FixCity vs Predict"
 type: raw-note
 module: Xot
@@ -63,5 +66,8 @@ Il root deve essere lo skeleton Laravel. I moduli sono package Composer autonomi
 ## Impatto su PHPStan
 
 Il root `autoload.psr-4.Modules\\ = Modules/` amplia la scansione Composer a tutto l'albero dei moduli e aumenta ambiguita' PSR-4, classi duplicate e provider stale. La correzione e' togliere l'autoload root dei moduli e lasciare che ogni modulo esponga il proprio namespace dal proprio `composer.json`.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

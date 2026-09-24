@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -19,12 +20,18 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: state-machine
 canonical: ../../../Themes/docs/shared-components/state-machine-1.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/state-machine-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/state-machine-1.md
+>>>>>>> 3792da0d (Check & fix styling)

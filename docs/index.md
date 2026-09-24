@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -570,6 +571,8 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # 📚 Index of Xot Module Documentation
 
 ## 🎯 Quick Start
@@ -648,5 +651,8 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 =======
 *Last update: January 2025*
 >>>>>>> 64619e34 (.)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

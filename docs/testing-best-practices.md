@@ -8,6 +8,7 @@ When using Mockery to mock dependencies in Pest tests, PHPStan might fail to res
 
 ### Recommended Solution
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -59,6 +60,11 @@ QUEUE_CONNECTION=sync
 Ogni modulo dovrebbe avere un TestCase base nella cartella `tests/`:
 
 #### Example
+=======
+Assign the result of `shouldReceive()` to a variable annotated with `/** @var \Mockery\Expectation $expectation */`.
+
+#### Example
+>>>>>>> 3792da0d (Check & fix styling)
 ```php
 /** @var \Mockery\MockInterface&MyAction $mock */
 $mock = \Mockery::mock(MyAction::class);
@@ -67,6 +73,7 @@ $mock = \Mockery::mock(MyAction::class);
 $expectation = $mock->shouldReceive('execute');
 $expectation->with($param)->andReturn($result);
 ```
+<<<<<<< HEAD
 This pattern ensures PHPStan successfully validates the chain at Level 10.
 <<<<<<< HEAD
 =======
@@ -74,3 +81,6 @@ This pattern ensures PHPStan successfully validates the chain at Level 10.
 This pattern ensures PHPStan successfully validates the chain at Level 10.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+This pattern ensures PHPStan successfully validates the chain at Level 10.
+>>>>>>> 3792da0d (Check & fix styling)

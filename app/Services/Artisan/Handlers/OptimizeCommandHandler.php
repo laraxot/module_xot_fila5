@@ -22,6 +22,7 @@ class OptimizeCommandHandler implements CommandHandlerInterface
 <<<<<<< HEAD
         return $command === 'optimize';
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_kaXSCZ
 <<<<<<< HEAD
         return $command === 'optimize';
@@ -32,5 +33,9 @@ class OptimizeCommandHandler implements CommandHandlerInterface
         return 'optimize' === $command;
 >>>>>>> .merge_file_ZjfKZ7
 >>>>>>> laraxot/dev
+=======
+        return 'optimize' === $command;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

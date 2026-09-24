@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_I3XCCy
@@ -32,6 +33,8 @@ note: "Convertito da custom_casts.txt (documento) da convert-docs-txt-to-md.py."
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 php artisan make:cast Address
 
@@ -41,6 +44,7 @@ https://dev.to/slyfirefox/laravel-models-3-common-custom-cast-examples-2com
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -57,12 +61,18 @@ https://dev.to/slyfirefox/laravel-models-3-common-custom-cast-examples-2com
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+
+
+
+>>>>>>> 3792da0d (Check & fix styling)
 DB::table(‘orders’)
     ->where(‘address->postalCode’, ‘30582–0378’)
     ->get();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< .merge_file_I3XCCy
@@ -84,3 +94,7 @@ $table->json('address')->nullable();
 $table->json('address')->nullable();
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+$table->json('address')->nullable();
+>>>>>>> 3792da0d (Check & fix styling)

@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -7,10 +8,14 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
+<<<<<<< HEAD
 <<<<<<< HEAD
 updated: 2026-09-21
 =======
@@ -26,6 +31,9 @@ updated: 2026-06-30
 >>>>>>> .merge_file_gUKpDr
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+updated: 2026-06-30
+>>>>>>> 3792da0d (Check & fix styling)
 tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
@@ -33,6 +41,7 @@ related:
   - concepts/phpstan-trait-probes.md
   - concepts/xot-seed-model-once.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - concepts/phpstan-pest-bridge-discipline.md
 =======
 <<<<<<< HEAD
@@ -40,11 +49,14 @@ related:
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ---
 
 # PHPStan su `Modules` — stato e fix
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -138,6 +150,8 @@ Verificare sempre con `git status --short Modules/*/app/Models/*.php` dopo qualu
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Comando canonico
 
 ```bash
@@ -151,8 +165,11 @@ Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`. **Non
 
 - `./vendor/bin/phpstan analyse Modules` → **0 errori**, exit 0
 - Moduli analizzati: AI, Activity, Blog, Cms, Comment, Gdpr, Geo, Job, Lang, Media, Notify, Predict, Rating, Seo, Tenant, UI, User, Xot
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Fix strutturali (ponytail — una guard condivisa)
 
@@ -171,6 +188,7 @@ xotSeedModelOnce(Article::class);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Pest — bridge namespace (`PestFunctionBridge.php`)
 =======
 <<<<<<< HEAD
@@ -179,11 +197,15 @@ xotSeedModelOnce(Article::class);
 ### Pest — stub globali + bridge namespace
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### Pest — stub globali + bridge namespace
+>>>>>>> 3792da0d (Check & fix styling)
 
 | Componente | Path | Ruolo |
 |------------|------|-------|
 | Stub globali | `Helper.php` | `expect`, `it`, `test`, `uses`, `beforeEach`, … |
 | `PestUsesChain` | `Xot/tests/Support/PestUsesChain.php` | `uses(...)->beforeEach()` tipizzato |
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -208,6 +230,8 @@ php -l Modules/Xot/tests/Support/PestFunctionBridge.php
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 | Bridge per modulo | `Xot/tests/Support/PestFunctionBridge.php` | `uses()` → `PestUsesChain` per 192 namespace |
 
 Rigenerazione bridge:
@@ -215,8 +239,11 @@ Rigenerazione bridge:
 ```bash
 php bashscripts/tools/generate-pest-phpstan-bridge.php
 php bashscripts/tools/fix-pest-phpstan-test-patterns.php
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Factory — `HasXotFactory`
@@ -242,21 +269,28 @@ php bashscripts/tools/fix-pest-phpstan-test-patterns.php
 - `ConvertWidget.php`: loop `while` malformato, `$record` non qualificato → progresso solo in `onProgress`, tipi espliciti su `$remaining`/`$rate`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Comment / Predict User
 
 - `Predict\Models\User` usa `Modules\Comment\Models\Contracts\CanComment` + `InteractsWithComments` (non Spatie)
 - `CanComment::notify()` senza `: void` nel contratto (compatibilità `BaseUser::RoutesNotifications`); PHPDoc `@return mixed`
 - `InteractsWithComments::subscribeToCommentNotifications`: typo `$hasComment` → `$hasComments`; PHPDoc param corretto (`Model`, non `Model&CanComment`)
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Fix type-safety per modulo
 
 | Modulo | Fix principali |
 |--------|----------------|
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -273,6 +307,8 @@ Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 | Xot | `Helper.php`: `count($matches) >= 3` al posto di `isset` su offset regex |
 | Cms | `@var view-string` su `AppLayout::$view` |
 | Blog | `@property ProfileContract\|null $deleter` (trait `Updater`); rimossi import `Fixcity\Models\Profile` inutili |
@@ -282,8 +318,11 @@ Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $
 ## Regola `@property $deleter`
 
 Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $deleter`. I modelli che usano il trait devono allineare il PHPDoc a `ProfileContract`, non a implementazioni modulo-specifiche (`Fixcity\Models\Profile`, `Blog\Models\Profile`).
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Ignore in phpstan.neon (intenzionali)
 
@@ -291,6 +330,7 @@ Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $
 - cast `mixed` unsafe, `new static` unsafe
 - deps opzionali non installate (documentate, non forzate via Composer)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -304,10 +344,13 @@ Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Verifica post-modifica
 
 ```bash
 cd laravel
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -315,6 +358,9 @@ cd laravel
 php artisan about
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+php artisan about
+>>>>>>> 3792da0d (Check & fix styling)
 ./vendor/bin/phpstan analyse Modules --no-progress
 ```
 
@@ -322,6 +368,7 @@ php artisan about
 
 - [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-pest-bridge-discipline](../concepts/phpstan-pest-bridge-discipline.md)
 - [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
@@ -331,6 +378,8 @@ php artisan about
 - [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
 =======
@@ -466,5 +515,8 @@ php artisan about
 - [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

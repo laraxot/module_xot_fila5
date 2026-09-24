@@ -88,6 +88,7 @@ public function panel(Panel $panel): Panel
 ### Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
 =======
 <<<<<<< HEAD
@@ -95,10 +96,13 @@ public function panel(Panel $panel): Panel
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Architettura Filament](../../../docs/FILAMENT_BEST_PRACTICES.md)
 - [Configurazione Moduli](../../../docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -108,3 +112,8 @@ public function panel(Panel $panel): Panel
 - [Configurazione Moduli](../../../../docs/module_architecture.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Documentazione Root](../../../../docs/filament_panel_provider_rules.md)
+- [Architettura Filament](../../../../docs/filament_best_practices.md)
+- [Configurazione Moduli](../../../../docs/module_architecture.md)
+>>>>>>> 3792da0d (Check & fix styling)

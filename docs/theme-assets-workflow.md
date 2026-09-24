@@ -1,17 +1,23 @@
 # 🎨 Theme Assets Workflow - CSS/JS Frontend
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Related documents:
 - [Vite Configuration](./vite-configuration.md)
 - [Xot Documentation Index](./index.md)
 - [Sixteen Theme Documentation Index](../../Themes/Sixteen/docs/00-index.md)
 
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **⚠️ REGOLA CRITICA**: Per modifiche CSS/JS del frontend, lavorare SEMPRE nella cartella del tema, NON nella root Laravel.
 
 ## 📁 Struttura Corretta
@@ -50,12 +56,16 @@ npm run copy
 ## ✅ Processo Corretto
 1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 2. **Usa `@vite([...], 'themes/[Theme]')`** nei layout del tema per evitare il fallback a `public/build/manifest.json`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+2. **Usa `@vite([...], 'themes/[Theme]')`** nei layout del tema per evitare il fallback a `public/build/manifest.json`
+>>>>>>> 3792da0d (Check & fix styling)
 2. **Build assets** con `npm run build` dalla cartella tema
 3. **Copy assets** con `npm run copy` dalla cartella tema
 4. **Verifica risultato** nel browser
@@ -116,6 +126,7 @@ export default defineConfig({
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
 =======
 <<<<<<< HEAD
@@ -124,3 +135,6 @@ export default defineConfig({
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+>>>>>>> 3792da0d (Check & fix styling)

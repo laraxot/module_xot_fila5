@@ -20,10 +20,14 @@ abstract class XotBaseBlock
         $schema = array_merge(static::getBlockSchema(), static::getBlockVarSchema());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Block::make($name)->schema($schema)->columns($context === 'form' ? 3 : 1);
 =======
         return Block::make($name)->schema($schema)->columns('form' === $context ? 3 : 1);
 >>>>>>> laraxot/dev
+=======
+        return Block::make($name)->schema($schema)->columns('form' === $context ? 3 : 1);
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     /**

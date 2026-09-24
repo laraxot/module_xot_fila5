@@ -16,9 +16,13 @@ class IsValidUrlAction
     public function execute(string $url): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
 =======
         return false !== filter_var($url, FILTER_VALIDATE_URL);
 >>>>>>> laraxot/dev
+=======
+        return false !== filter_var($url, FILTER_VALIDATE_URL);
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

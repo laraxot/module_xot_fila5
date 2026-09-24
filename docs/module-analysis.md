@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_HyCAco
 =======
@@ -400,6 +401,8 @@ class CreateYourTable extends XotBaseMigration
 =======
 **Stato**: Production Framework - Foundation of All Modules
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Xot Module - Comprehensive Analysis
 
 ## Module Overview
@@ -471,7 +474,11 @@ Xot provides the foundational architecture that enables LimeSurvey integration t
 - Enhanced documentation system
 - Improved caching strategies
 - Advanced testing patterns
+<<<<<<< HEAD
 - More comprehensive API documentation
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_D7xoZI
 >>>>>>> laraxot/dev
+=======
+- More comprehensive API documentation
+>>>>>>> 3792da0d (Check & fix styling)

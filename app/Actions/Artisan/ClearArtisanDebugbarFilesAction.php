@@ -22,6 +22,7 @@ class ClearArtisanDebugbarFilesAction
 <<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZbyAkI
 <<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
@@ -32,6 +33,10 @@ class ClearArtisanDebugbarFilesAction
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_0YxRzI
 >>>>>>> laraxot/dev
+=======
+            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 File::delete($file->getRealPath());
             }
         }

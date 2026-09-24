@@ -7,10 +7,15 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Layout\Stack;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
@@ -33,7 +38,10 @@ class ListCaches extends XotBaseListRecords
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     #[\Override]
     public function getTableColumns(): array
     {
@@ -54,6 +62,10 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 3792da0d (Check & fix styling)
     public function getGridTableColumns(): array
     {
         return [
@@ -61,7 +73,10 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     /**
      * @return array<string, Action>
      */

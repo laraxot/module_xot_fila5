@@ -57,6 +57,7 @@ return [
 - [Form Components](../COMPONENTI_PERSONALIZZATI.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -64,3 +65,7 @@ return [
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Form Components](../componenti_personalizzati.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> 3792da0d (Check & fix styling)

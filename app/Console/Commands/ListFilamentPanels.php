@@ -28,6 +28,7 @@ class ListFilamentPanels extends Command
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var list<string> $entries */
             $entries = scandir($providersPath);
             $providers = collect($entries)
@@ -38,6 +39,11 @@ class ListFilamentPanels extends Command
                 ->filter(static function (mixed $file): bool {
                     return is_string($file) && str_ends_with($file, 'ServiceProvider.php');
 >>>>>>> laraxot/dev
+=======
+            $providers = collect(scandir($providersPath))
+                ->filter(function ($file): bool {
+                    return is_string($file) && str_ends_with($file, 'ServiceProvider.php');
+>>>>>>> 3792da0d (Check & fix styling)
                 });
 
             foreach ($providers as $provider) {

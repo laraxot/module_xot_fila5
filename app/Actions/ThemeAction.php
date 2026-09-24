@@ -15,6 +15,7 @@ class ThemeAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * Nome del tema corrente.
      */
@@ -23,36 +24,50 @@ class ThemeAction
     /**
      * Imposta il tema corrente.
      */
+=======
+    private static string $currentTheme = 'default';
+
+>>>>>>> 3792da0d (Check & fix styling)
     public static function setTheme(string $theme): void
     {
         self::$currentTheme = $theme;
         Config::set('theme.active', $theme);
     }
 
+<<<<<<< HEAD
     /**
      * Recupera il tema corrente.
      */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public static function getTheme(): string
     {
         return self::$currentTheme;
     }
 
+<<<<<<< HEAD
     /**
      * Verifica se un tema specifico è attivo.
      */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public static function isTheme(string $theme): bool
     {
         return self::$currentTheme === $theme;
     }
 
+<<<<<<< HEAD
     /**
      * Recupera il percorso delle risorse del tema.
      */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public static function getThemePath(): string
     {
         return resource_path('themes/'.self::$currentTheme);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
 =======
@@ -76,4 +91,9 @@ class ThemeAction
     }
 >>>>>>> .merge_file_iaoQ85
 >>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 }

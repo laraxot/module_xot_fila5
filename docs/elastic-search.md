@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_pw1c3T
@@ -33,6 +34,8 @@ note: "Convertito da elastic_search.txt (documento) da convert-docs-txt-to-md.py
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://github.com/matchish/laravel-scout-elasticsearch
 
 https://www.algolia.com/blog/engineering/scout-extended-the-full-power-of-algolia-in-laravel
@@ -41,6 +44,7 @@ https://github.com/babenkoivan/scout-elasticsearch-driver
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -55,6 +59,9 @@ https://github.com/babenkoivan/scout-elasticsearch-driver
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 https://github.com/Jeroen-G/Explorer
 Explorer is a next-gen Elasticsearch driver for Laravel Scout with
 the power of Elasticsearch’s queries.
@@ -63,6 +70,7 @@ For example, the Explored interface defines a mappableAs() method for getting co
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_pw1c3T
 <<<<<<< HEAD
@@ -72,6 +80,8 @@ For example, the Explored interface defines a mappableAs() method for getting co
 =======
 >>>>>>> .merge_file_PfS1ii
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
  tamayo/laravel-scout-elastic
 https://www.cloudways.com/blog/laravel-scout-elasticsearch/
@@ -86,6 +96,7 @@ https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php   
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_pw1c3T
 <<<<<<< HEAD
@@ -106,6 +117,8 @@ https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php   
 =======
 >>>>>>> .merge_file_PfS1ii
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://github.com/ErickTamayo/laravel-scout-elastic
 https://gist.github.com/thomasjsn/48185612dc7abe857b9a0ae5716b86c3
 
@@ -115,6 +128,7 @@ https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -142,3 +156,9 @@ meilisearch
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+
+
+meilisearch
+>>>>>>> 3792da0d (Check & fix styling)

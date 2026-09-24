@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\Xot\Actions\Model\HasColumnAction;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
@@ -17,6 +18,18 @@ it('executes without errors', function () use ($action): void {
 =======
     $model = new class extends BaseModel {
 >>>>>>> laraxot/dev
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Modules\Xot\Actions\Model\HasColumnAction;
+use Modules\Xot\Models\BaseModel;
+use PHPUnit\Framework\Assert;
+
+$action = app(HasColumnAction::class);
+
+it('executes without errors', function () use ($action): void {
+    $model = new class extends BaseModel {
+>>>>>>> 3792da0d (Check & fix styling)
         protected $table = 'users';
     };
 
@@ -30,11 +43,15 @@ it('executes without errors', function () use ($action): void {
 
 it('handles different tables', function () use ($action): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new class extends BaseModel
     {
 =======
     $model = new class extends BaseModel {
 >>>>>>> laraxot/dev
+=======
+    $model = new class extends BaseModel {
+>>>>>>> 3792da0d (Check & fix styling)
         protected $table = 'migrations';
     };
 
@@ -48,11 +65,15 @@ it('handles different tables', function () use ($action): void {
 
 it('returns boolean result', function () use ($action): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new class extends BaseModel
     {
 =======
     $model = new class extends BaseModel {
 >>>>>>> laraxot/dev
+=======
+    $model = new class extends BaseModel {
+>>>>>>> 3792da0d (Check & fix styling)
         protected $table = 'users';
     };
 

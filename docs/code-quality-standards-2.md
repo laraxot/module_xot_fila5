@@ -483,6 +483,7 @@ public function user(): BelongsTo
 - [Filament Best Practices](./filament-best-practices.md)
 - [Testing Guidelines](./testing-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 =======
 <<<<<<< HEAD
@@ -491,6 +492,9 @@ public function user(): BelongsTo
 - [Performance Optimization](./performance-optimization.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Security Guidelines](./security-guidelines.md)
 
 This document provides the foundation for maintaining high code quality standards across the Xot module and serves as a reference for other modules that extend Xot functionality.

@@ -5,16 +5,20 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Mockery;
 =======
 >>>>>>> laraxot/dev
 use Mockery\MockInterface;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
 use PHPUnit\Framework\Assert;
 
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
+<<<<<<< HEAD
         /** @var Activity&MockInterface $model */
 <<<<<<< HEAD
         $model = Mockery::mock(Activity::class);
@@ -26,6 +30,21 @@ describe('Safe Attribute Cast Action', function (): void {
         $model->shouldReceive('getAttribute')->with('id')->andReturn(123);
         $model->shouldReceive('getAttribute')->with('active')->andReturn(1);
         $model->shouldReceive('getAttribute')->with('missing')->andReturn(null);
+=======
+        $model = new class extends Activity {
+            public function getAttribute($key): mixed
+            {
+                return match ($key) {
+                    'name' => 'Test User',
+                    'email' => '',
+                    'id' => 123,
+                    'active' => 1,
+                    'missing' => null,
+                    default => null,
+                };
+            }
+        };
+>>>>>>> 3792da0d (Check & fix styling)
 
         $action = app(SafeAttributeCastAction::class);
 

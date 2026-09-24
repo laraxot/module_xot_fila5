@@ -18,6 +18,7 @@ class UpdateCountAction
     /**
      * Execute the count action for the given model class.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass The fully qualified model class name
@@ -44,6 +45,9 @@ class UpdateCountAction
      *                                        >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                        >>>>>>> .merge_file_NENwf0
      *                                        >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model> $modelClass The fully qualified model class name
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(string $modelClass, int $total): void
     {

@@ -27,16 +27,24 @@ class XotComposer
      * Undocumented function.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, mixed>  $arguments
 =======
      * @param array<int, mixed> $arguments
 >>>>>>> laraxot/dev
+=======
+     * @param array<mixed|void> $arguments
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __call(string $name, array $arguments): mixed
     {
         $modules = Module::getOrdered();
 
+<<<<<<< HEAD
         $module = Arr::first($modules, static function (mixed $module) use ($name): bool {
+=======
+        $module = Arr::first($modules, static function ($module) use ($name): bool {
+>>>>>>> 3792da0d (Check & fix styling)
             // Ensure the module is an instance of LaravelModule
             if (! $module instanceof LaravelModule) {
                 return false;
@@ -73,10 +81,14 @@ class XotComposer
 
         if (class_exists('\Jenssegers\Agent\Agent')) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $agent = new Agent;
 =======
             $agent = new Agent();
 >>>>>>> laraxot/dev
+=======
+            $agent = new Agent();
+>>>>>>> 3792da0d (Check & fix styling)
             $view->with('isMobile', $agent->isMobile());
             $view->with('isTablet', $agent->isTablet());
             $view->with('isDesktop', $agent->isDesktop());

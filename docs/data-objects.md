@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 # Data Objects in Laraxot
 
@@ -73,8 +76,11 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - **PHPDoc incompleto per le relazioni Eloquent**: Aggiungere tutti i tipi di template nella documentazione PHPDoc.
 - **Accesso a proprietà inesistenti**: Verificare l'esistenza delle proprietà prima dell'accesso.
 - **Tipo di ritorno `class-string`**: Usare asserzioni o casting appropriati quando si restituiscono stringhe che rappresentano classi.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Data Objects
 
 ## Principi Fondamentali
@@ -157,6 +163,7 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - [Data Objects Patient](../Patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
 =======
 <<<<<<< HEAD
@@ -165,3 +172,6 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,11 +22,16 @@ Vedi il file canonico: [git-conflicts-resolution.md](./git-conflicts-resolution.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 module: theme
 topic: git_conflicts_resolution_2025_01
 canonical: ../../../Themes/docs/shared-components/git_conflicts_resolution.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/git_conflicts_resolution.md
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

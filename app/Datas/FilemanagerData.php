@@ -16,12 +16,17 @@ final class FilemanagerData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, string>  $disks
      * @param  array<int, string>  $allowedExt
 =======
      * @param array<int, string> $disks
      * @param array<int, string> $allowedExt
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, string> $disks
+     * @param array<int, string> $allowedExt
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(
         public readonly string $disk = 'public',
@@ -34,11 +39,16 @@ final class FilemanagerData extends Data
         public readonly string $routePrefix = 'filemanager',
         public readonly bool $enableCrop = true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Create a new instance of FilemanagerData with default values.
@@ -46,9 +56,13 @@ final class FilemanagerData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
 >>>>>>> laraxot/dev
+=======
+        return new self();
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

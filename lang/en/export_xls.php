@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     'actions' => [
         'export_xls' => [
             'label' => 'Export Excel',
             'icon' => 'heroicon-o-arrow-down-tray',
+<<<<<<< HEAD
 =======
     'label' => 'Export Xls',
     'plural_label' => 'Export Xls',
@@ -18,6 +22,8 @@ return [
             'label' => 'Export Excel',
             'icon' => 'xot-files.xls',
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             'tooltip' => 'Export data in Excel format (.xlsx)',
             'placeholder' => 'Export to Excel',
             'help' => 'Download current data in Excel format for offline analysis',
@@ -39,6 +45,9 @@ return [
     ],
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
@@ -47,6 +56,7 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         'label' => 'Export Xls',
         'plural_label' => 'Export Xls',
@@ -55,6 +65,8 @@ return [
         'sort' => 100,
     ],
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     'fields' => [
     ],
 ];

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_5ACPjK
@@ -36,6 +37,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 1. Plyr.io:
 Plyr is quite simple, customizable and highly accessible HTML5 video player that also extends its support to Video and YouTube media players. It is popular enough among professionals and beginners due to its lightweight design that allows smooth processing even for larger video files. Plyr can make things simple with collection of effective elements to get jobs done correctly.
 
@@ -126,6 +129,7 @@ https://gist.github.com/jcamp/24d9d4882d81a83db598dac281056960
 https://www.codester.com/items/11695/vdrive-unlimited-video-convertor-tools-php
 ---------------------------------------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5ACPjK
 <<<<<<< HEAD
@@ -144,6 +148,9 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Addi
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
 >>>>>>> .merge_file_NNqFnH
 >>>>>>> laraxot/dev
+=======
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+>>>>>>> 3792da0d (Check & fix styling)
 ---------------------------------------------------------------------------------------------------------------
 https://spark.adobe.com/it-IT/sp/design/video/urn:aaid:sc:EU:d543a756-deaf-4b23-b79b-940d30c06ade
 ---------------------------------------------------------------------------------------------------------------
@@ -154,6 +161,7 @@ https://shotstack.io/product/sdk/php/
 https://github.com/shotstack/php-demos  a pagamento ..
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -167,3 +175,6 @@ https://github.com/shotstack/php-demos  a pagamento ..
 ---------------------------------------------------------------------------------------------------------------
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---------------------------------------------------------------------------------------------------------------
+>>>>>>> 3792da0d (Check & fix styling)

@@ -144,6 +144,7 @@ All Filament resources extend this base class:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -157,6 +158,9 @@ abstract public function getFormSchema(): array;
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> 3792da0d (Check & fix styling)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -595,6 +599,7 @@ class MyResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -608,6 +613,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('field1')->required(),
@@ -686,6 +694,7 @@ class ArticleResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -699,6 +708,9 @@ class ArticleResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('title')

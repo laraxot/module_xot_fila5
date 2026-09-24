@@ -922,6 +922,7 @@ class BlogPostsChartTest extends TestCase
 
 ### Documentazione PTVX
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
 =======
 <<<<<<< HEAD
@@ -930,6 +931,9 @@ class BlogPostsChartTest extends TestCase
 - [Widget Implementation Rules](./widget_implementation_rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Widget Implementation Rules](./widget_implementation_rules.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
@@ -946,6 +950,7 @@ class BlogPostsChartTest extends TestCase
 ## 🎯 Standard 2026: Professional Charts & PDF
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -956,13 +961,18 @@ Consultare la guida **[LimeSurvey Professional Charts Guide](../../../Limesurvey
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)**.
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito healthcare_app/PTVX:
 
 ### 1. Configurazione Professionale
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)**.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - Font unificati (Inter/Roboto).
 - Legende posizionate correttamente.
 - Gridline minimali.
@@ -976,6 +986,7 @@ Pattern:
 
 Vedi: **[Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)**.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -984,3 +995,6 @@ Vedi: **[Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-pract
 Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)**.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)**.
+>>>>>>> 3792da0d (Check & fix styling)

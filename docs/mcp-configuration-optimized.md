@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -9,18 +10,24 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Data Creazione**: 2025-01-27
 **Ultimo Aggiornamento**: 2025-01-27
 # Configurazione MCP Ottimizzata per base_techplanner_fila5_mono
 
 **Data Creazione**: [DATE]
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Status**: ✅ Configurazione Completa e Ottimizzata
 **Metodologia**: Super Mucca 🐮⚡
 
 ### ⚠️ Cambiamenti Recenti
 - **2025-01-27**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -28,11 +35,15 @@
 - **[DATE]**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **[DATE]**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
 ## 🎯 Scopo del Documento
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
 =======
@@ -42,6 +53,9 @@ Questo documento descrive la configurazione MCP ottimizzata per il progetto **ba
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila5_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila5_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -383,6 +397,7 @@ npm install -g @executeautomation/playwright-mcp-server
 - [MCP Servers Configuration](./mcp-servers-configuration.md) - Configurazione generale MCP
 - [MCP Servers Complete List](./mcp-servers.md) - Lista completa server disponibili
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
 =======
 <<<<<<< HEAD
@@ -391,6 +406,9 @@ npm install -g @executeautomation/playwright-mcp-server
 - [Project Understanding Consolidated](../../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Project Understanding Consolidated](../../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### External Resources
 
@@ -497,6 +515,7 @@ npx -y @modelcontextprotocol/server-filesystem --version
 
 **Ultimo aggiornamento**: 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Autore**: Super Mucca Analysis
 **Status**: ✅ Configurazione Completa e Ottimizzata
 =======
@@ -509,3 +528,8 @@ npx -y @modelcontextprotocol/server-filesystem --version
 **Status**: ✅ Configurazione Completa e Ottimizzata
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+**Autore**: Super Mucca Analysis
+**Status**: ✅ Configurazione Completa e Ottimizzata
+>>>>>>> 3792da0d (Check & fix styling)

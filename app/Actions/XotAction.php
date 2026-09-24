@@ -21,6 +21,7 @@ class XotAction
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(): void {}
 =======
 <<<<<<< .merge_file_nC2nlc
@@ -43,4 +44,9 @@ class XotAction
     }
 >>>>>>> .merge_file_xXOav4
 >>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 }

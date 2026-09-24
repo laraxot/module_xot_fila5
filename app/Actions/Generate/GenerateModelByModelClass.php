@@ -22,10 +22,14 @@ class GenerateModelByModelClass
      * Execute the function with the given model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $model_class  the class name of the model
 =======
      * @param string $model_class the class name of the model
 >>>>>>> laraxot/dev
+=======
+     * @param string $model_class the class name of the model
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(string $model_class): string
     {
@@ -66,10 +70,14 @@ class GenerateModelByModelClass
         );
         $fillable_end = mb_strpos($content, '];', $fillable_start);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($table_start === false) {
 =======
         if (false === $table_start) {
 >>>>>>> laraxot/dev
+=======
+        if (false === $table_start) {
+>>>>>>> 3792da0d (Check & fix styling)
             $before = mb_substr($content, 0, $fillable_end + 2);
             $after = mb_substr($content, $fillable_end + 2);
             $content = $before.PHP_EOL.'    protected $table = "'.$value.'";'.PHP_EOL.$after;
@@ -82,10 +90,14 @@ class GenerateModelByModelClass
      * Create a factory for the given model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $model_class  The class name of the model to create the factory for
 =======
      * @param string $model_class The class name of the model to create the factory for
 >>>>>>> laraxot/dev
+=======
+     * @param string $model_class The class name of the model to create the factory for
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function generate(string $model_class): void
     {
@@ -113,10 +125,14 @@ class GenerateModelByModelClass
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, string>  $replaces
 =======
      * @param array<string, string> $replaces
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, string> $replaces
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function setCustomReplaces(array $replaces): self
     {

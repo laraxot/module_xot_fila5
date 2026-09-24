@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_vFO8Zp
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,11 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_wvEixu
 >>>>>>> .merge_file_fnqwyj
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 name: 26-residuo-phpstan
 description: "Status: IN PROGRESS — sub-agent attivo (swarm)"
@@ -30,6 +36,7 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_vFO8Zp
 =======
 <<<<<<< .merge_file_YzZXHv
@@ -38,6 +45,8 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_wvEixu
 >>>>>>> .merge_file_fnqwyj
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 # BMAD Story 26 — Residuo PHPStan (sub-agent)
 **Status:** IN PROGRESS — sub-agent attivo (swarm)

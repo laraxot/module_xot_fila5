@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -221,12 +222,18 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: refactor-dry-kiss-summary
 canonical: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
+>>>>>>> 3792da0d (Check & fix styling)

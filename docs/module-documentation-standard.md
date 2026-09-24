@@ -117,6 +117,7 @@ public function createUser(array $data): User
 - Include social login integration guides
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Quaeris Module
 =======
 <<<<<<< HEAD
@@ -125,6 +126,9 @@ public function createUser(array $data): User
 ### healthcare_app Module
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### healthcare_app Module
+>>>>>>> 3792da0d (Check & fix styling)
 
 - Document survey management workflows
 - Document reporting and analytics features
@@ -160,6 +164,7 @@ public function createUser(array $data): User
 
 **Last Updated**: 2025-11-11
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Standard Version**: 1.0
 =======
 <<<<<<< HEAD
@@ -169,3 +174,7 @@ public function createUser(array $data): User
 **Standard Version**: 1.0
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+**Standard Version**: 1.0
+>>>>>>> 3792da0d (Check & fix styling)

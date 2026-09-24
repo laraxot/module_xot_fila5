@@ -25,6 +25,7 @@ class ClienteResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_EMo0DD
 =======
@@ -44,6 +45,9 @@ class ClienteResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_gcAzR7
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Schema del form

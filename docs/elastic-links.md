@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 http://127.0.0.1:9200/_cat/health?v=true
 =======
 =======
@@ -44,3 +45,6 @@ http://127.0.0.1:9200/_cat/health?v=true
 >>>>>>> .merge_file_e51nKA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+http://127.0.0.1:9200/_cat/health?v=true
+>>>>>>> 3792da0d (Check & fix styling)

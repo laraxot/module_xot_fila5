@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_Qtxqk9
@@ -36,6 +37,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ----------------------------------------
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
@@ -55,6 +58,7 @@ https://github.com/angeloskath/php-nlp-tools
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -69,6 +73,9 @@ https://github.com/angeloskath/php-nlp-tools
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 http://php-nlp-tools.com/documentation/
 
 ----------- PER RICERCA -------
@@ -79,6 +86,7 @@ https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-nam
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -93,6 +101,9 @@ https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-nam
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 https://www.we-rc.com/blog/2021/04/04/named-entity-recognition-in-php
 
 https://rubixml.com/
@@ -103,6 +114,7 @@ https://www.youtube.com/watch?v=06-AZXmwHjo
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -117,6 +129,9 @@ https://www.youtube.com/watch?v=06-AZXmwHjo
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 https://stackoverflow.com/questions/4304938/how-to-recognize-names-from-a-text-using-php +++
 http://www.complexityintelligence.com/en/knowledgebase/api/nlp_ner_v1/snippet_php
 http://www.alchemyapi.com/tools/
@@ -126,6 +141,7 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -140,6 +156,10 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+
+
+>>>>>>> 3792da0d (Check & fix styling)
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP
@@ -175,6 +195,7 @@ https://github.com/nqxcode/laravel-lucene-search
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -189,6 +210,9 @@ https://github.com/nqxcode/laravel-lucene-search
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 -----------------------------------------------------------------------------------------------------------------------
 
 https://www.textrazor.com/demo
@@ -197,6 +221,7 @@ https://www.textrazor.com/demo
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -211,6 +236,9 @@ https://www.textrazor.com/demo
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 TIPO PERSON OF INTEREST
 https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606
 
@@ -220,6 +248,7 @@ https://github.com/yooper/php-text-analysis  !!!!!
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -234,6 +263,9 @@ https://github.com/yooper/php-text-analysis  !!!!!
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 -----------------------------------------
 https://github.com/DaveChild/Text-Statistics
 
@@ -244,6 +276,7 @@ https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Names
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -258,12 +291,16 @@ https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Names
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 ------------------------------------------------
 
 https://github.com/patrickschur/language-detection
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -278,6 +315,9 @@ https://github.com/patrickschur/language-detection
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 ----------------------------------------------------
 https://www.sitepoint.com/how-to-analyze-tweet-sentiments-with-php-machine-learning/   !!!!!!!!!!!!!!!!!!!!!
 https://github.com/php-ai/php-ml
@@ -286,6 +326,7 @@ https://github.com/php-ai/php-ml
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
@@ -295,12 +336,15 @@ https://github.com/php-ai/php-ml
 =======
 >>>>>>> .merge_file_wGZyuy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://cloud.google.com/natural-language/docs/analyzing-sentiment
 
 https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ----------------------------------------------------------
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 https://accidentalfactors.com/part-of-speech-tagging/
 =======
@@ -322,3 +366,6 @@ https://accidentalfactors.com/part-of-speech-tagging/
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://accidentalfactors.com/part-of-speech-tagging/
+>>>>>>> 3792da0d (Check & fix styling)

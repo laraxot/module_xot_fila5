@@ -5,19 +5,26 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
+<<<<<<< HEAD
 =======
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use function Safe\chmod;
@@ -27,6 +34,8 @@ use function Safe\mkdir;
 use function Safe\unlink;
 
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 uses(TestCase::class);
 
 it('handles absolute urls in AssetAction', function (): void {
@@ -37,6 +46,9 @@ it('handles absolute urls in AssetAction', function (): void {
 
 it('returns path if asset already exists in public folder', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     $path = 'css/app.css';
 
     // Spy on File facade to simulate existing file
@@ -55,6 +67,7 @@ it('resolves module assets correctly in AssetAction', function (): void {
     $to = public_path('assets/Xot/css/style.css');
 
     // Replace GetModulePathAction with a spy
+<<<<<<< HEAD
     $getModulePathAction = new class($modulePath) extends GetModulePathAction
     {
         public function __construct(private string $modulePath) {}
@@ -92,19 +105,32 @@ it('publishes module asset to public assets path', function (): void {
         {
         }
 >>>>>>> laraxot/dev
+=======
+    $getModulePathAction = new class($modulePath) extends GetModulePathAction {
+        public function __construct(private string $modulePath)
+        {
+        }
+>>>>>>> 3792da0d (Check & fix styling)
 
         public function execute(string $module): string
         {
             return $this->modulePath;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     };
 
     app()->instance(GetModulePathAction::class, $getModulePathAction);
 
     // Replace FixPathAction with a spy (identity function)
+<<<<<<< HEAD
     $fixPathAction = new class extends FixPathAction
     {
+=======
+    $fixPathAction = new class extends FixPathAction {
+>>>>>>> 3792da0d (Check & fix styling)
         public function execute(string $path): string
         {
             return $path;
@@ -136,6 +162,7 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
+<<<<<<< HEAD
             return $module === 'User' ? '/path/to/User/' : '';
         },
     ]);
@@ -211,6 +238,11 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
         ->with('User')
         ->andReturn('/path/to/User/');
 >>>>>>> laraxot/dev
+=======
+            return 'User' === $module ? '/path/to/User/' : '';
+        },
+    ]);
+>>>>>>> 3792da0d (Check & fix styling)
 
     $action = app(AssetPathAction::class);
     $result = $action->execute('User::js/app.js');

@@ -82,6 +82,7 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
       ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -108,6 +109,8 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
       ```
 
 15. **PasswordResetConfirmWidget.php**
@@ -305,6 +308,7 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Code Quality Standards](./code-quality-standards.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 =======
 =======
@@ -321,3 +325,6 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+>>>>>>> 3792da0d (Check & fix styling)

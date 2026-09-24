@@ -1,13 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gLotr8
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # __to_study
 
 <!-- Contenuto migrato da _docs/__to_study.txt -->
 
+<<<<<<< HEAD
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 =======
 <<<<<<< HEAD
@@ -53,3 +57,6 @@ https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 >>>>>>> .merge_file_G2oLlP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
+>>>>>>> 3792da0d (Check & fix styling)

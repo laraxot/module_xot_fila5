@@ -2,6 +2,7 @@
 
 ## Overview
 <<<<<<< HEAD
+<<<<<<< HEAD
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
 =======
 <<<<<<< HEAD
@@ -11,6 +12,10 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the survey database used in the Limesurvey integration.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the healthcare_app_survey database used in the Limesurvey integration.
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the survey database used in the Limesurvey integration.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Available MCP Tools for Database Work
 
@@ -22,6 +27,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
   "command": "node",
   "args": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js"
 =======
 <<<<<<< HEAD
@@ -30,10 +36,14 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
     "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
+>>>>>>> 3792da0d (Check & fix styling)
   ]
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Use Cases for quaeris_survey Database**:
 =======
@@ -44,6 +54,10 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 **Use Cases for survey Database**:
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Use Cases for healthcare_app_survey Database**:
+**Use Cases for survey Database**:
+>>>>>>> 3792da0d (Check & fix styling)
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`
@@ -78,6 +92,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 ### Direct Database Queries (using MySQL MCP)
 ```sql
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- List all survey tables in quaeris_survey database
 =======
 <<<<<<< HEAD
@@ -86,6 +101,9 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 -- List all survey tables in healthcare_app_survey database
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+-- List all survey tables in healthcare_app_survey database
+>>>>>>> 3792da0d (Check & fix styling)
 SHOW TABLES LIKE 'lime_survey_%';
 
 -- Analyze question structure
@@ -128,6 +146,7 @@ Ensure database connections are properly configured in:
 Location: `~/.cursor/mcp.json`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
 =======
 <<<<<<< HEAD
@@ -136,10 +155,14 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the healthcare_app_survey database without additional configuration.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the healthcare_app_survey database without additional configuration.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Best Practices for Database Analysis
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
+<<<<<<< HEAD
 <<<<<<< HEAD
 2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
 =======
@@ -149,6 +172,9 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 2. **Use proper connection** (`limesurvey` connection for healthcare_app_survey database)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+2. **Use proper connection** (`limesurvey` connection for healthcare_app_survey database)
+>>>>>>> 3792da0d (Check & fix styling)
 3. **Limit result sets** when exploring large survey response tables
 4. **Check table existence** before querying survey-specific tables
 5. **Respect data privacy** when handling survey responses

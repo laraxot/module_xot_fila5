@@ -6,9 +6,12 @@
 - [Laravel Framework](laravel-framework.md) - Documentazione completa del framework Laravel
 - [Convenzioni Laraxot](conventions.md) - Regole e convenzioni per lo sviluppo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Piano Consolidamento Docs](docs_consolidation_plan.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -17,8 +20,11 @@
 - [Modulo UI](../ui/docs/readme.md) - Componenti UI e design system
 - [Modulo Performance](../performance/docs/readme.md) - Sistema di valutazione e performance
 - [Modulo Lang](../lang/docs/readme.md) - Gestione multilingua e traduzioni
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Piano Consolidamento Docs](DOCS_CONSOLIDATION_PLAN.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -63,6 +69,7 @@
 ### Sicurezza e Performance
 - [Security Guidelines](security-guidelines.md) - Linee guida per la sicurezza
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
 =======
 <<<<<<< HEAD
@@ -71,6 +78,9 @@
 - [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
+>>>>>>> 3792da0d (Check & fix styling)
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 
@@ -199,9 +209,12 @@
 - [Standard di Codice](./standards/CODE-STANDARDS.md)
 - [Convenzioni di Nomenclatura](./conventions/NAMING-CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [README](../../docs/readme.md) - Documentazione principale del progetto
 - [Roadmap](../../docs/roadmap.md) - Piano di sviluppo
 - [Filosofia](../../docs/filosofia.md) - Principi e filosofia del progetto
@@ -210,17 +223,23 @@
 - [Regole di Progetto](./rules/prompt_rules.md)
 - [Standard di Codice](./standards/code-standards.md)
 - [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
 
 ## Collegamenti ai Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Cms](../cms/docs/readme.md) - Frontend
 - [UI](../ui/docs/readme.md) - Componenti
 - [User](../user/docs/readme.md) - Utenti e Permessi
@@ -255,8 +274,11 @@
 * [links.md](../../tenant/docs/it/links/links.md)
 * [links.md](../../cms/docs/links.md)
 * [links.md](../../../themes/one/docs/links.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Cms](../Cms/docs/README.md) - Frontend
 - [UI](../UI/docs/README.md) - Componenti
 - [User](../User/docs/README.md) - Utenti e Permessi
@@ -291,6 +313,7 @@
 * [links.md](../../Tenant/docs/it/links/links.md)
 * [links.md](../../Cms/docs/links.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [links.md](../../../Themes/One/docs/links.md)
 =======
 <<<<<<< HEAD
@@ -299,3 +322,6 @@
 * [links.md](../../../Themes/One/docs/links.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [links.md](../../../Themes/One/docs/links.md)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -215,6 +215,7 @@ class YourResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
     public function getFormSchema(): array
@@ -236,12 +237,16 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Form components - NO hardcoded labels
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -265,6 +270,9 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Infolist components

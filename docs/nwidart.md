@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 =======
 =======
@@ -48,3 +49,6 @@ updated: 2026-08-24
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
+>>>>>>> 3792da0d (Check & fix styling)

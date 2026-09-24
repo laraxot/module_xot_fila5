@@ -19,12 +19,18 @@ use Webmozart\Assert\Assert;
 final class PanelModuleAdapter
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function __construct() {}
 =======
     private function __construct()
     {
     }
 >>>>>>> laraxot/dev
+=======
+    private function __construct()
+    {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 
     public static function moduleName(Panel $panel): string
     {

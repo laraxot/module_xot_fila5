@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 /**
  * Common query scopes for Laraxot models.
@@ -29,12 +32,16 @@ use Illuminate\Support\Carbon;
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
  */
+<<<<<<< HEAD
 /** @phpstan-ignore trait.unused */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 trait HasCommonScopes
 {
     /**
      * Scope query to only active records.
      *
+<<<<<<< HEAD
      * Trovato identico in piu' moduli che condividono questo scope.
      *
 <<<<<<< HEAD
@@ -43,6 +50,12 @@ trait HasCommonScopes
      * @param Builder<static> $query
      *
 >>>>>>> laraxot/dev
+=======
+     * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
+     *
+     * @param Builder<static> $query
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -54,11 +67,16 @@ trait HasCommonScopes
      * Scope query to only inactive records.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
      * @param Builder<static> $query
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Builder<static>
      */
     public function scopeInactive(Builder $query): Builder
@@ -72,11 +90,16 @@ trait HasCommonScopes
      * Records with published_at <= now().
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
      * @param Builder<static> $query
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Builder<static>
      */
     public function scopePublished(Builder $query): Builder
@@ -91,16 +114,25 @@ trait HasCommonScopes
      * Records with published_at = null or > now().
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
      * @param Builder<static> $query
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Builder<static>
      */
     public function scopeDraft(Builder $query): Builder
     {
+<<<<<<< HEAD
         return $query->where(function (Builder $q): void {
+=======
+        return $query->where(function ($q): void {
+>>>>>>> 3792da0d (Check & fix styling)
             $q->whereNull('published_at')
                 ->orWhere('published_at', '>', now());
         });
@@ -110,6 +142,7 @@ trait HasCommonScopes
      * Scope query to records created after a date.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
      * @param Builder<static> $query
@@ -118,6 +151,13 @@ trait HasCommonScopes
      * @return Builder<static>
      */
     public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
+=======
+     * @param Builder<static> $query
+     *
+     * @return Builder<static>
+     */
+    public function scopeCreatedAfter(Builder $query, mixed $date): Builder
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return $query->where('created_at', '>=', $date);
     }
@@ -125,6 +165,7 @@ trait HasCommonScopes
     /**
      * Scope query to records created before a date.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
@@ -134,6 +175,13 @@ trait HasCommonScopes
      * @return Builder<static>
      */
     public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
+=======
+     * @param Builder<static> $query
+     *
+     * @return Builder<static>
+     */
+    public function scopeCreatedBefore(Builder $query, mixed $date): Builder
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return $query->where('created_at', '<=', $date);
     }
@@ -141,6 +189,7 @@ trait HasCommonScopes
     /**
      * Scope query to records updated after a date.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
@@ -150,6 +199,13 @@ trait HasCommonScopes
      * @return Builder<static>
      */
     public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
+=======
+     * @param Builder<static> $query
+     *
+     * @return Builder<static>
+     */
+    public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return $query->where('updated_at', '>=', $date);
     }
@@ -158,11 +214,16 @@ trait HasCommonScopes
      * Scope query to records created by a specific user.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
      * @param Builder<static> $query
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Builder<static>
      */
     public function scopeCreatedBy(Builder $query, string|int $userId): Builder
@@ -177,7 +238,11 @@ trait HasCommonScopes
     {
         $publishedAt = $this->getAttribute('published_at');
 
+<<<<<<< HEAD
         if (! $publishedAt instanceof Carbon) {
+=======
+        if (! $publishedAt instanceof \Illuminate\Support\Carbon) {
+>>>>>>> 3792da0d (Check & fix styling)
             return false;
         }
 
@@ -198,9 +263,13 @@ trait HasCommonScopes
     public function isActive(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->getAttribute('is_active') === true;
 =======
         return true === $this->getAttribute('is_active');
 >>>>>>> laraxot/dev
+=======
+        return true === $this->getAttribute('is_active');
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

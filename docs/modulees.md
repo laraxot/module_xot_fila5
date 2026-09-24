@@ -89,6 +89,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -102,6 +103,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         'field_name' => [
@@ -808,6 +812,7 @@ $count = CountAction::execute(User::class);
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Aggiungere test di performance
 =======
 <<<<<<< HEAD
@@ -816,3 +821,6 @@ $count = CountAction::execute(User::class);
 - [ ] Aggiungere test di performance
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [ ] Aggiungere test di performance
+>>>>>>> 3792da0d (Check & fix styling)

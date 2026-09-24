@@ -49,6 +49,7 @@ This document provides guidelines for using strict typing in PHP within a Larave
 ## Links to Related Documentation
 - [Code Quality](./CODE_QUALITY.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_yQZSQn
 =======
@@ -64,10 +65,15 @@ This document provides guidelines for using strict typing in PHP within a Larave
 <<<<<<< .merge_file_yQZSQn
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_gtSZMG
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

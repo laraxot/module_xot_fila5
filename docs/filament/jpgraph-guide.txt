@@ -4,6 +4,7 @@ topic: jpgraph-guide
 canonical: ../../../../Themes/docs/shared-components/jpgraph-guide.txt
 ---
 
+<<<<<<< HEAD
 ## Overview
 JpGraph 4.4.2 is a PHP charting library with 200+ functions for server-side chart generation with PDF embedding support.
 
@@ -298,3 +299,6 @@ public function testChartInPDF()
 - GitHub repository
 - Community forums
 - Stack Overflow questions
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/jpgraph-guide.txt
+>>>>>>> 3792da0d (Check & fix styling)

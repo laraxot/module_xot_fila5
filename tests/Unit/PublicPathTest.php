@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Application;
 =======
 <<<<<<< .merge_file_S4odEp
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -14,15 +17,19 @@ use App\Application;
 use App\Application;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use App\Application;
 >>>>>>> .merge_file_iyK31b
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /**
 =======
@@ -32,6 +39,9 @@ uses(TestCase::class)->group('no-xot-db');
 /*
 >>>>>>> .merge_file_iyK31b
 >>>>>>> laraxot/dev
+=======
+/**
+>>>>>>> 3792da0d (Check & fix styling)
  * Guardia sul document root.
  *
  * Il web server serve `public_html/`, non `laravel/public/`. `App\Application` sovrascrive
@@ -71,12 +81,15 @@ it('restituisce un percorso anche per segmenti non ancora creati', function (): 
 
 it('usa la Application con publicPath sovrascritto', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     expect(app())->toBeInstanceOf(Application::class)
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
 =======
 <<<<<<< .merge_file_S4odEp
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     expect(app())->toBeInstanceOf(App\Application::class)
         ->and((new ReflectionMethod(App\Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(App\Application::class);
@@ -91,12 +104,15 @@ it('usa la Application con publicPath sovrascritto', function (): void {
         ->toBe(Application::class);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     expect(app())->toBeInstanceOf(Application::class)
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
 >>>>>>> .merge_file_iyK31b
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 });
 
 it('public_html esiste ed e fuori da laravel/', function (): void {

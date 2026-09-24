@@ -146,6 +146,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 
 - [Laraxot Architecture](./architecture.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Project Structure Guidelines](PROJECT-STRUCTURE.md)
 =======
 <<<<<<< HEAD
@@ -154,6 +155,9 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 - [Project Structure Guidelines](./project-structure.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Project Structure Guidelines](./project-structure.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Deploy Best Practices](./deploy-best-practices.md)
 
 ---
@@ -162,9 +166,12 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Regola Operativa Rafforzata
 
 Gli script standalone di progetto non devono vivere dentro `laravel/Modules/*/`.
@@ -179,6 +186,10 @@ Esempio concreto validato:
 Motivo:
 - separa chiaramente codice applicativo da tooling operativo
 - evita che PHPStan/quality gates del modulo analizzino script non applicativi
+<<<<<<< HEAD
 - riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
+>>>>>>> 3792da0d (Check & fix styling)

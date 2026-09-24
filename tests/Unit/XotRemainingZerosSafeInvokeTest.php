@@ -17,22 +17,28 @@ test('phone cast round-trips a validated value object', function (): void {
     $phone = PhoneValueObject::fromString('+15551234567');
     $model = new Cache;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_cj63PR
 <<<<<<< HEAD
     $cast = new PhoneCast;
     $phone = PhoneValueObject::fromString('+15551234567');
     $model = new Cache;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     $cast = new PhoneCast();
     $phone = PhoneValueObject::fromString('+15551234567');
     $model = new Cache();
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     $cast = new PhoneCast();
     $phone = PhoneValueObject::fromString('+15551234567');
     $model = new Cache();
 >>>>>>> .merge_file_xXfdDi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
     expect($cast->set($model, 'phone', $phone, []))->toBe('+15551234567')
         ->and($cast->get($model, 'phone', '+15551234567', [])->toString())->toBe('+15551234567');
@@ -42,6 +48,7 @@ test('phone cast rejects storage values without the domain type', function (): v
 <<<<<<< HEAD
     expect(fn (): string => (new PhoneCast)->set(new Cache, 'phone', null, []))
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_cj63PR
 <<<<<<< HEAD
     expect(fn (): string => (new PhoneCast)->set(new Cache, 'phone', null, []))
@@ -52,5 +59,9 @@ test('phone cast rejects storage values without the domain type', function (): v
     expect(fn (): string => (new PhoneCast())->set(new Cache(), 'phone', null, []))
 >>>>>>> .merge_file_xXfdDi
 >>>>>>> laraxot/dev
+=======
+    expect(fn (): string => (new PhoneCast())->set(new Cache(), 'phone', null, []))
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         ->toThrow(\InvalidArgumentException::class);
 });

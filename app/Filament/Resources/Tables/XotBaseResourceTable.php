@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -29,6 +30,20 @@ abstract class XotBaseResourceTable
 =======
         if (self::class === static::class) {
 >>>>>>> laraxot/dev
+=======
+use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Filament\Traits\TransTrait;
+use Webmozart\Assert\Assert;
+
+abstract class XotBaseResourceTable
+{
+    use HasXotTable;
+    use TransTrait;
+
+    public static function configure(Table $table): Table
+    {
+        if (self::class === static::class) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \LogicException('XotBaseResourceTable::configure() must be called on a concrete table class.');
         }
 
@@ -39,6 +54,7 @@ abstract class XotBaseResourceTable
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, Column>
      */
     abstract public function getTableColumns(): array;
@@ -82,4 +98,9 @@ abstract class XotBaseResourceTable
 
         return $model;
     }
+=======
+     * @return array<int|string, Column>
+     */
+    abstract public function getTableColumns(): array;
+>>>>>>> 3792da0d (Check & fix styling)
 }

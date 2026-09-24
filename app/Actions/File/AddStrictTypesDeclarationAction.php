@@ -33,10 +33,14 @@ class AddStrictTypesDeclarationAction
         // Trova la posizione del tag di apertura PHP
         $phpTagPos = strpos($content, '<?php');
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($phpTagPos === false) {
 =======
         if (false === $phpTagPos) {
 >>>>>>> laraxot/dev
+=======
+        if (false === $phpTagPos) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
         }
 
@@ -45,18 +49,24 @@ class AddStrictTypesDeclarationAction
         $firstNonEmptyLine = 0;
         foreach ($lines as $i => $line) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($i === 0) {
                 continue; // Salta la prima riga che contiene <?php
             }
             $trimmedLine = trim($line);
             if ($trimmedLine !== '') {
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if (0 === $i) {
                 continue; // Salta la prima riga che contiene <?php
             }
             $trimmedLine = trim($line);
             if ('' !== $trimmedLine) {
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $firstNonEmptyLine = $i;
                 break;
             }

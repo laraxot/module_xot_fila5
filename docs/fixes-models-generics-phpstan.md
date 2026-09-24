@@ -2,12 +2,16 @@
 
 ## Data: 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Data: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Problema Identificato
 
@@ -165,6 +169,7 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 - Tipizzare sempre proprietà array come `list<string>` o `array<string, mixed>`
 - Testare sempre con PHPStan dopo modifiche ai modelli base
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Implementare test di regressione per validare le correzioni
 =======
 <<<<<<< HEAD
@@ -173,3 +178,6 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 - Implementare test di regressione per validare le correzioni
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Implementare test di regressione per validare le correzioni
+>>>>>>> 3792da0d (Check & fix styling)

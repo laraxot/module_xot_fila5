@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Hp58sm
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_D5BShy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
 
 ## File Contenuti
@@ -25,6 +28,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 =======
@@ -40,6 +44,10 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> .merge_file_D5BShy
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [README.md](bashscripts/project_docs/readme.md)
+* [README.md](bashscripts/project_docs/it/readme.md)
+>>>>>>> 3792da0d (Check & fix styling)
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -71,10 +79,13 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Hp58sm
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [README.md](laravel/vendor/mockery/mockery/project_docs/readme.md)
 * [README.md](../../../chart/project_docs/readme.md)
 * [README.md](../../../reporting/project_docs/readme.md)
@@ -129,6 +140,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Se aggiungi un campo (es. `certifications`), aggiorna la migration della tabella `users` e documenta la modifica.
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 [![Module](https://img.shields.io/badge/Module-Standard di Codice-8B0000.svg)]()
@@ -235,6 +247,8 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Collegamenti
 - [Modello Doctor (Patient)](../../../patient/project_docs/models/doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../patient/project_docs/readme.md)
@@ -264,6 +278,7 @@ class Doctor extends User
 ## Moduli che applicano questa regola
 - [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
 // Aggiungere qui altri moduli se necessario
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -675,3 +690,5 @@ class Doctor extends User
 // Aggiungere qui altri moduli se necessario
 >>>>>>> .merge_file_D5BShy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

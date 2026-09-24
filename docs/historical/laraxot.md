@@ -1202,6 +1202,7 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
@@ -1230,6 +1231,9 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            // Form fields
@@ -4470,6 +4474,7 @@ protected function getFormSchema(): array
 // ✅ CORRETTO: getFormSchema deve essere statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -4498,6 +4503,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Implementazione Corretta
@@ -4507,6 +4515,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -4537,6 +4546,9 @@ class TicketResource extends XotBaseResource
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('title')->required(),
@@ -4559,6 +4571,7 @@ public function getFormSchema(): array
 // ✅ CORRETTO: public e statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -4587,6 +4600,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Accesso a Proprietà
@@ -4594,6 +4610,7 @@ public function getFormSchema(): array
 // ❌ ERRATO: Accesso a $this in metodo statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_q7Av8T
 public function getFormSchema(): array
@@ -4618,6 +4635,9 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -4628,6 +4648,7 @@ public static function getFormSchema(): array
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -4656,6 +4677,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -4673,6 +4697,7 @@ public function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -4699,6 +4724,9 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            // schema components
@@ -4732,6 +4760,7 @@ public function getFormSchema(): array
    // Usa sempre return type declarations
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
@@ -4760,6 +4789,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 3. **Documentazione**:
@@ -4769,6 +4801,7 @@ public function getFormSchema(): array
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_q7Av8T
    public function getFormSchema(): array
@@ -4793,6 +4826,9 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 4. **Contesto Statico**:
@@ -5947,6 +5983,7 @@ class TicketResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -5975,6 +6012,9 @@ class TicketResource extends XotBaseResource
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [...];
     }
@@ -7423,6 +7463,7 @@ protected function getFormSchema(): array
 // ✅ CORRETTO: getFormSchema deve essere statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -7451,6 +7492,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Implementazione Corretta
@@ -7460,6 +7504,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -7490,6 +7535,9 @@ class TicketResource extends XotBaseResource
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('title')->required(),
@@ -7512,6 +7560,7 @@ public function getFormSchema(): array
 // ✅ CORRETTO: public e statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -7540,6 +7589,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Accesso a Proprietà
@@ -7547,6 +7599,7 @@ public function getFormSchema(): array
 // ❌ ERRATO: Accesso a $this in metodo statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_q7Av8T
 public function getFormSchema(): array
@@ -7571,6 +7624,9 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -7581,6 +7637,7 @@ public static function getFormSchema(): array
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -7609,6 +7666,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -7626,6 +7686,7 @@ public function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -7652,6 +7713,9 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            // schema components
@@ -7685,6 +7749,7 @@ public function getFormSchema(): array
    // Usa sempre return type declarations
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
@@ -7713,6 +7778,9 @@ public function getFormSchema(): array
 =======
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 3. **Documentazione**:
@@ -7722,6 +7790,7 @@ public function getFormSchema(): array
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_q7Av8T
    public function getFormSchema(): array
@@ -7746,6 +7815,9 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_hDM65s
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 4. **Contesto Statico**:

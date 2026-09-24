@@ -19,6 +19,7 @@ class SavePhpArrayAction
      *
      * @param array<int|string, mixed> $data
      *                                       =======
+<<<<<<< HEAD
      *                                       <<<<<<< .merge_file_EvqBne.
      * @param array<int|string, mixed> $data
      *                                       =======
@@ -36,6 +37,9 @@ class SavePhpArrayAction
      *                                       >>>>>>> .merge_file_z3uypR
      *                                       >>>>>>> laraxot/dev
      *                                       >>>>>>> .merge_file_n4lYsv
+=======
+     * @param array<int|string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      *                                       >>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename): bool

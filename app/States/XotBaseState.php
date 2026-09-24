@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\States;
 
 use Filament\Forms\Components\Textarea;
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -19,12 +22,16 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * Defines the state machine configuration and required methods
  * that must be implemented by each concrete state class.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @property string $name  Il nome dello stato
  *                         =======
  * @property string $name  Il nome dello stato
  *                         >>>>>>> laraxot/dev
+=======
+ * @property string $name  Il nome dello stato
+>>>>>>> 3792da0d (Check & fix styling)
  * @property string $value Il valore dello stato nel database
  */
 abstract class XotBaseState implements StateContract
@@ -80,9 +87,12 @@ abstract class XotBaseState implements StateContract
         // return 'Sei sicuro di voler annullare questo appuntamento?';
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Component>
      */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public function modalFormSchema(): array
     {
         return [
@@ -93,6 +103,7 @@ abstract class XotBaseState implements StateContract
     /**
      * Fill form data for modal.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $arguments
@@ -102,6 +113,10 @@ abstract class XotBaseState implements StateContract
      * @param array<string, mixed> $data
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @return array<string, mixed>
      */
@@ -123,6 +138,7 @@ abstract class XotBaseState implements StateContract
     /**
      * Execute modal action.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $arguments
@@ -131,6 +147,10 @@ abstract class XotBaseState implements StateContract
      * @param array<string, mixed> $arguments
      * @param array<string, mixed> $data
      *                                        >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function modalAction(array $arguments, array $data): void
     {
@@ -140,6 +160,7 @@ abstract class XotBaseState implements StateContract
     /**
      * Process state action.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $arguments
@@ -148,6 +169,10 @@ abstract class XotBaseState implements StateContract
      * @param array<string, mixed> $arguments
      * @param array<string, mixed> $data
      *                                        >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function processStateAction(array $arguments, array $data): void
     {
@@ -167,12 +192,16 @@ abstract class XotBaseState implements StateContract
     /**
      * Execute modal action by record.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $data
      *                                   =======
      * @param array<string, mixed> $data
      *                                   >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function modalActionByRecord(Model $record, array $data): void
     {
@@ -182,12 +211,16 @@ abstract class XotBaseState implements StateContract
     /**
      * Process state action by record.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $data
      *                                   =======
      * @param array<string, mixed> $data
      *                                   >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function processStateActionByRecord(Model $record, array $data): void
     {
@@ -223,6 +256,7 @@ abstract class XotBaseState implements StateContract
         if (! \is_object($mapping) || ! method_exists($mapping, 'toArray')) {
             return [];
         }
+<<<<<<< HEAD
         $states = $mapping->toArray();
         if (! \is_array($states)) {
             return [];
@@ -236,6 +270,18 @@ abstract class XotBaseState implements StateContract
                 'states.'.$stateName.'.label',
             );
         }
+=======
+        /** @var array<string, mixed> $states */
+        $states = $mapping->toArray();
+
+        $labels = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
+            static::class,
+            'states.'.SafeStringCastAction::cast($state).'.label',
+        ));
+
+        /** @var array<string, mixed> $result */
+        $result = $labels;
+>>>>>>> 3792da0d (Check & fix styling)
 
         return $result;
     }

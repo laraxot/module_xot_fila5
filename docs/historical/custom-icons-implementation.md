@@ -5,6 +5,7 @@ Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare i
 
 ## Prerequisiti
 <<<<<<< HEAD
+<<<<<<< HEAD
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 =======
 <<<<<<< .merge_file_TtkSFp
@@ -17,6 +18,9 @@ Prima di procedere, assicurarsi di aver compreso il [processo di registrazione d
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QuWv1O
 >>>>>>> laraxot/dev
+=======
+Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Processo di Implementazione
 
@@ -60,6 +64,7 @@ public function register(): void
 
 ## Troubleshooting
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TtkSFp
 =======
@@ -76,11 +81,16 @@ Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeI
 <<<<<<< .merge_file_TtkSFp
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerBladeIcons.md).
 
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QuWv1O
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

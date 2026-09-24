@@ -26,10 +26,14 @@ return [
         'label' => 'Xls Action',
         'sort' => 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
 =======
         'icon' => 'xot-files.xls',
 >>>>>>> laraxot/dev
+=======
+        'icon' => 'heroicon-o-collection',
+>>>>>>> 3792da0d (Check & fix styling)
     ],
     'fields' => [
         'id' => [

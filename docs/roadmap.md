@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Roadmap Modulo Xot - Completamento e Miglioramenti
 
 **Data Creazione**: 2026-01-02
@@ -346,6 +349,7 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 
 ## 📂 Backlog / Future Ideas
 - Self-healing database migrations.
+<<<<<<< HEAD
 - Automatic API documentation generation for all modules.
 =======
 # Xot Module - Complete Roadmap 2026
@@ -1707,3 +1711,6 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 >>>>>>> .merge_file_msuasA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Automatic API documentation generation for all modules.
+>>>>>>> 3792da0d (Check & fix styling)

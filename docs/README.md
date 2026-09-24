@@ -1,10 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
 tags: [module, documentation, framework, template]
 created: 2026-07-14
+<<<<<<< HEAD
 updated: 2026-07-27
+=======
+updated: 2026-07-14
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 
 # 🏗️ Xot Module - Il Cuore del Framework Laraxot
@@ -15,9 +22,13 @@ updated: 2026-07-27
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![Modular Architecture](https://img.shields.io/badge/Architecture-Modular%20Monolith-yellow.svg)](https://martinfowler.com/articles/modular-monolith.html)
 
+<<<<<<< HEAD
 > **🚀 Xot Module**: Framework base e cuore architetturale di Laraxot.
 
 **Wiki operativo (2026-07-27):** [wiki/index.md](./wiki/index.md) — trinità panel (`config.php` + `AdminPanelProvider` + `Dashboard.php`), tenant `modules_statuses`.
+=======
+> **🚀 Xot Module**: Framework base e cuore architetturale di Laraxot - fornisce classi base, traits, convenzioni e infrastruttura core per tutti i moduli dell'ecosistema.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 📋 Overview
 
@@ -85,6 +96,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 
 **Example**: Resource Filament
 ```php
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -208,12 +220,17 @@ class MyAction
 =======
 // Esempio di una Resource Filament
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     // table() and form() inherited from base
 }
 ```
@@ -255,6 +272,7 @@ class MyModuleServiceProvider extends XotBaseServiceProvider
 
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 
+<<<<<<< HEAD
 =======
     
     // Il metodo table() e form() NON devono essere sovrascritti
@@ -283,6 +301,8 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```php
 use Modules\Xot\Actions\XotBaseAction;
 
@@ -291,6 +311,7 @@ class CreateUserAction extends XotBaseAction
     public function execute(array $data): User
     {
         $user = User::create($data);
+<<<<<<< HEAD
 <<<<<<< HEAD
         event(new UserCreated($user));
         return $user;
@@ -372,15 +393,23 @@ class MyAction
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+=======
+        event(new UserCreated($user));
+        return $user;
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Enums System
 
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -508,6 +537,8 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
 
@@ -519,15 +550,21 @@ enum UserStatus: string implements XotBaseEnum
     public function getLabel(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Traduzione gestita centralmente
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         return __('xot::enums.user_status.'.$this->value);
     }
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Filament Integration
 
 Xot fornisce wrapper base per tutti i componenti Filament:
@@ -616,18 +653,30 @@ All modules depend on **Xot**. Never have circular dependencies.
 
 ## 🔗 Related Documentation
 
+<<<<<<< HEAD
 - [Module Documentation Pattern](../../../../docs/wiki/rules/module-documentation-pattern.md)
+=======
+- [Module Documentation Pattern](../../../docs/wiki/rules/module-documentation-pattern.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Architecture Rules](../../../docs/wiki/rules/)
 - [PHPStan Configuration](../../../phpstan.neon)
 - [Testing Guidelines](../../../docs/wiki/standards/)
 
 ### Moduli Dipendenti
 
+<<<<<<< HEAD
 - [User Module](../../User/docs/README.md) - Authentication & Authorization
 - [Cms Module](../../Cms/docs/README.md) - Content Management
 - [Tenant Module](../../Tenant/docs/README.md) - Multi-tenancy
 - [Lang Module](../../Lang/docs/README.md) - Translations
 - [Notify Module](../../Notify/docs/README.md) - Notifications
+=======
+- [User Module](../User/docs/README.md) - Authentication & Authorization
+- [Cms Module](../Cms/docs/README.md) - Content Management
+- [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy
+- [Lang Module](../Lang/docs/README.md) - Translations
+- [Notify Module](../Notify/docs/README.md) - Notifications
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🗺️ Roadmap
 
@@ -647,9 +696,15 @@ All modules depend on **Xot**. Never have circular dependencies.
 
 ## Standard Rules & Workflow
 
+<<<<<<< HEAD
 - [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
 - [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
 - [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+=======
+- [[BMAD Method](../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../docs/wiki/concepts/llm-wiki-governance.md)]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -657,6 +712,7 @@ All modules depend on **Xot**. Never have circular dependencies.
 **Last Updated**: 2026-07-14  
 **Maintained by**: Laraxot Core Team  
 **PHPStan Level**: 10 (Compliant)
+<<<<<<< HEAD
 =======
 ## 🛠️ **Sviluppo e Qualità**
 
@@ -899,3 +955,5 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

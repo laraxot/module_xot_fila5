@@ -149,6 +149,7 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_oAiY4C
 <<<<<<< HEAD
@@ -167,6 +168,9 @@ public static function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_lfebTH
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -295,6 +299,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_oAiY4C
@@ -607,3 +612,5 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 =======
 >>>>>>> .merge_file_lfebTH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

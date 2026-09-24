@@ -11,9 +11,13 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ViewAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 3792da0d (Check & fix styling)
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -27,7 +31,10 @@ class ListLogs extends XotBaseListRecords
 
     #[\Override]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public function getTableColumns(): array
     {
         return [
@@ -56,7 +63,10 @@ class ListLogs extends XotBaseListRecords
     }
 
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public function getTableFilters(): array
     {
         return [

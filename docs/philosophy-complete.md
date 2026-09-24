@@ -2,12 +2,16 @@
 
 **Data Creazione**: 2025-01-18
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Creazione**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -756,6 +760,7 @@ TextInput::make('name')
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
 =======
 <<<<<<< HEAD
@@ -764,3 +769,6 @@ TextInput::make('name')
 **Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
+>>>>>>> 3792da0d (Check & fix styling)

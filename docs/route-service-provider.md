@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -104,12 +105,18 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: route-service-provider
 canonical: ../../../Themes/docs/shared-components/route-service-provider.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/route-service-provider.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/route-service-provider.md
+>>>>>>> 3792da0d (Check & fix styling)

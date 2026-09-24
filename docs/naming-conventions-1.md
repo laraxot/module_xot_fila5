@@ -55,6 +55,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](./service-provider-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best practice per Filament](./filament-best-practices.md)
 =======
 <<<<<<< HEAD
@@ -63,3 +64,6 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Best practice per Filament](./filament-best-practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Best practice per Filament](./filament-best-practices.md)
+>>>>>>> 3792da0d (Check & fix styling)

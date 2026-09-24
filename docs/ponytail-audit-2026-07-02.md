@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [ponytail-audit.md](./ponytail-audit.md)
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Ponytail-audit 2026-07-02: Xot module findings
 
 Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://github.com/laraxot/base_quaeris_fila5/issues/100), [#102](https://github.com/laraxot/base_quaeris_fila5/issues/102) and [#111](https://github.com/laraxot/base_quaeris_fila5/issues/111), summarized in discussion [#114](https://github.com/laraxot/base_quaeris_fila5/discussions/114).
@@ -47,5 +50,8 @@ This mirrors the same principle already applied to `Modules/Quaeris/app/Contract
 - Discussion [#74](https://github.com/laraxot/module_geo_fila5/discussions/74): Geo provider consolidation (repo modulo).
 - `docs/wiki/ponytail-audit-github-backlog.md`: earlier, broader audit pass (Meetup/Seo scaffold modules, docs sprawl, shadow files) — not yet published, no overlap with #100-#113.
 - Known doc-sprawl debt in this module (discussion #22) is out of scope here; `Modules/Xot/docs/` still has duplicate `README.md`/`readme-new.md`/`index.md`/`index-v2.md`/`INDEX.md` entrypoints pending consolidation.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

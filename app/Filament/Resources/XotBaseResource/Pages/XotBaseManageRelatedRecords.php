@@ -78,9 +78,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * @return array<string, TextColumn>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> laraxot/dev
+=======
+    #[\Override]
+>>>>>>> 3792da0d (Check & fix styling)
     public function getTableColumns(): array
     {
         return [
@@ -132,10 +136,14 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($url === '') {
 =======
                     if ('' === $url) {
 >>>>>>> laraxot/dev
+=======
+                    if ('' === $url) {
+>>>>>>> 3792da0d (Check & fix styling)
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -149,10 +157,14 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($url === '') {
 =======
                     if ('' === $url) {
 >>>>>>> laraxot/dev
+=======
+                    if ('' === $url) {
+>>>>>>> 3792da0d (Check & fix styling)
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 

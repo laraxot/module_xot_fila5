@@ -19,6 +19,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -36,6 +37,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            TextInput::make('nome')->required(),
@@ -230,6 +234,7 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -247,6 +252,9 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('nome')->required(),
@@ -409,6 +417,7 @@ class ReportResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
 =======
@@ -425,6 +434,9 @@ class ReportResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -470,6 +482,7 @@ class SocioResource extends XotBaseResource
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -487,6 +500,9 @@ class SocioResource extends XotBaseResource
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('cognome')
@@ -730,6 +746,7 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -747,6 +764,9 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1002,6 +1022,7 @@ class SocioResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
 =======
@@ -1018,6 +1039,9 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('nome')->required(),

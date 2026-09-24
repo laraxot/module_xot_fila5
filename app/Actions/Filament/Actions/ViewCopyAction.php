@@ -29,16 +29,25 @@ class ViewCopyAction extends XotBaseAction
             ->modalHeading('Copy View')
             ->modalDescription('Are you sure you want to copy this view?')
             ->action(static function (array $arguments, array $data) use ($actionClass): void {
+<<<<<<< HEAD
                 /** @var self $service */
                 $service = app($actionClass);
                 $service->execute(
                     array_filter($arguments, 'is_string', ARRAY_FILTER_USE_KEY),
                     array_filter($data, 'is_string', ARRAY_FILTER_USE_KEY),
                 );
+=======
+                /** @var array<string, mixed> $arguments */
+                /** @var array<string, mixed> $data */
+                /** @var self $service */
+                $service = app($actionClass);
+                $service->execute($arguments, $data);
+>>>>>>> 3792da0d (Check & fix styling)
             });
     }
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $arguments
@@ -47,6 +56,10 @@ class ViewCopyAction extends XotBaseAction
      * @param array<string, mixed> $arguments
      * @param array<string, mixed> $data
      *                                        >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(array $arguments, array $data): void
     {

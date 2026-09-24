@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sLH485
 =======
@@ -19,11 +20,14 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Ar6BGt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sLH485
@@ -65,3 +69,5 @@ CHANGELOG.md export-ignore
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Ar6BGt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

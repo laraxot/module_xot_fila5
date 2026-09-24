@@ -120,6 +120,7 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 
 ## Collegamenti ad Altri Documenti
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_w5Uax6
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
@@ -132,6 +133,10 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 - [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
 >>>>>>> .merge_file_f0msWj
 >>>>>>> .merge_file_79cXZ9
+=======
+- [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
+- [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
+>>>>>>> 3792da0d (Check & fix styling)
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -142,6 +147,7 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 
 - [README.md](./README.md) - Indice principale della documentazione
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
+<<<<<<< HEAD
 <<<<<<< .merge_file_w5Uax6
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
@@ -151,5 +157,8 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
 >>>>>>> .merge_file_f0msWj
 >>>>>>> .merge_file_79cXZ9
+=======
+- [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+>>>>>>> 3792da0d (Check & fix styling)
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget

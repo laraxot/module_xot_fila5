@@ -22,6 +22,7 @@ class QueueCommandHandler implements CommandHandlerInterface
 <<<<<<< HEAD
         return $command === 'queue:flush';
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5qIWvG
 <<<<<<< HEAD
         return $command === 'queue:flush';
@@ -32,5 +33,9 @@ class QueueCommandHandler implements CommandHandlerInterface
         return 'queue:flush' === $command;
 >>>>>>> .merge_file_J8dYiX
 >>>>>>> laraxot/dev
+=======
+        return 'queue:flush' === $command;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

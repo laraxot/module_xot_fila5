@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -322,3 +323,7 @@ multi key, fixing lazy loading
 https://github.com/topclaudy/compoships
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+multi key, fixing lazy loading
+https://github.com/topclaudy/compoships
+>>>>>>> 3792da0d (Check & fix styling)

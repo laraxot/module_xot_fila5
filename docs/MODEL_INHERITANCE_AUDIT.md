@@ -28,6 +28,7 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
 =======
 <<<<<<< HEAD
@@ -36,6 +37,9 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -319,6 +323,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Fixes](../../User/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../User/docs/model_inheritance_analysis.md)
 =======
@@ -330,6 +335,10 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+- [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)

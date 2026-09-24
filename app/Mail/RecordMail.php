@@ -27,10 +27,14 @@ class RecordMail extends Mailable
      * Crea una nuova istanza del mailable.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data  I dati del record
 =======
      * @param array<string, mixed> $data I dati del record
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data I dati del record
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(array $data)
     {
@@ -45,9 +49,13 @@ class RecordMail extends Mailable
     public function build(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         /* @phpstan-ignore argument.type (view-string not resolved for module views) */
 >>>>>>> laraxot/dev
+=======
+        /* @phpstan-ignore argument.type (view-string not resolved for module views) */
+>>>>>>> 3792da0d (Check & fix styling)
         return $this->view('xot::emails.record')->with(['data' => $this->recordData]);
     }
 }

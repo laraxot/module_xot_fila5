@@ -20,16 +20,22 @@ class ExportXlsByQuery
      * Esporta i risultati di una query in Excel.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<Model>  $query  Query da esportare
      * @param  string  $filename  Nome del file Excel
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  int|null  $limit  Limite di righe da esportare
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param Builder<Model>     $query    Query da esportare
      * @param string             $filename Nome del file Excel
      * @param array<int, string> $fields   Campi da includere nell'export
      * @param int|null           $limit    Limite di righe da esportare
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(
         Builder $query,
@@ -48,10 +54,14 @@ class ExportXlsByQuery
         // Note: QueryExport doesn't accept a limit parameter directly
         // If limit is needed, apply it to the query before passing to the exporter
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($limit !== null) {
 =======
         if (null !== $limit) {
 >>>>>>> laraxot/dev
+=======
+        if (null !== $limit) {
+>>>>>>> 3792da0d (Check & fix styling)
             $query->limit($limit);
         }
 

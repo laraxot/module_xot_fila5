@@ -16,6 +16,7 @@ class RelationAction
     /**
      * Undocumented function.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $data
@@ -42,6 +43,9 @@ class RelationAction
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_LFPE4B
      *                                   >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(Model $model, array $data): void
     {

@@ -1280,6 +1280,7 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 ### ❌ Automazione Cieca
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Verifica conflitti rimanenti
 =======
 <<<<<<< HEAD
@@ -1288,3 +1289,6 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 # Verifica conflitti rimanenti
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Verifica conflitti rimanenti
+>>>>>>> 3792da0d (Check & fix styling)

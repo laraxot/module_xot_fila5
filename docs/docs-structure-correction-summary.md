@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -218,12 +219,18 @@ find laravel/Themes -name "docs" -type d
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: docs-structure-correction-summary
 canonical: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
+>>>>>>> 3792da0d (Check & fix styling)

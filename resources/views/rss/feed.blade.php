@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 ?>
 @php
 '<?phpxml version="1.0" encoding="UTF-8"?>'.PHP_EOL

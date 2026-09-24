@@ -413,6 +413,7 @@ php artisan xot:test-framework
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -424,10 +425,16 @@ php artisan xot:test-framework
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 3792da0d (Check & fix styling)

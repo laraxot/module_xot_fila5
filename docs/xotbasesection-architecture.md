@@ -67,6 +67,7 @@ This architecture ensures:
 - Centralized configuration capability
 - Framework adherence to Laraxot principles
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Maintainable and predictable code structure
 =======
 <<<<<<< HEAD
@@ -75,3 +76,6 @@ This architecture ensures:
 - Maintainable and <nome progetto>able code structure
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Maintainable and <nome progetto>able code structure
+>>>>>>> 3792da0d (Check & fix styling)

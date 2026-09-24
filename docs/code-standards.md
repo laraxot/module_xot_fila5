@@ -229,6 +229,7 @@ public function getTableActions(): array
 ## Collegamenti alla Documentazione Specifica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
 =======
 <<<<<<< HEAD
@@ -237,3 +238,6 @@ public function getTableActions(): array
 - [Standard di Codice nel Progetto](../../../../../docs/standard-codice.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Standard di Codice nel Progetto](../../../../../docs/standard-codice.md)
+>>>>>>> 3792da0d (Check & fix styling)

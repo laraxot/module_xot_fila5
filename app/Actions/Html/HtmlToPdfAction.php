@@ -30,10 +30,14 @@ class HtmlToPdfAction
         string $filename = '',
     ): string {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($filename === '') {
 =======
         if ('' === $filename) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $filename) {
+>>>>>>> 3792da0d (Check & fix styling)
             $filename = Storage::disk('local')->path('test.pdf');
         }
 
@@ -46,18 +50,24 @@ class HtmlToPdfAction
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($out === 'content_PDF') {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ($out === 'file') {
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ('content_PDF' === $out) {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ('file' === $out) {
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

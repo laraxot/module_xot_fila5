@@ -255,6 +255,7 @@ class MioModelloResource extends XotBaseResource
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -268,12 +269,17 @@ class MioModelloResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_CHlzfu
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -763,6 +769,7 @@ public function handle($user) {
 ### Motivi per utilizzare UserContract
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
 =======
 <<<<<<< HEAD
@@ -781,10 +788,16 @@ public function handle($user) {
 <<<<<<< HEAD
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
+=======
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
 =======
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_nt9WL3
 >>>>>>> laraxot/dev
 =======
@@ -794,6 +807,8 @@ public function handle($user) {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 2. **Disaccoppiamento**: Riduce le dipendenze verso implementazioni specifiche.
 3. **Testabilità**: Facilita il testing con implementazioni mock dell'interfaccia.
@@ -803,6 +818,7 @@ public function handle($user) {
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_nt9WL3
 <<<<<<< HEAD
 =======
@@ -817,6 +833,8 @@ public function handle($user) {
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Anti-pattern**: `Assert::isInstanceOf($user, User::class)` (o `BaseUser::class`) accoppia il codice al leaf. Canon:
 
 ```php
@@ -826,6 +844,7 @@ Assert::isInstanceOf($user, UserContract::class);
 `UserContract` è `Modules\Xot\Contracts\UserContract`. `getUserClass()` serve per factory/relazioni Eloquent, non per narrowing di `auth()->user()`.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nt9WL3
 >>>>>>> laraxot/dev
@@ -838,6 +857,8 @@ Assert::isInstanceOf($user, UserContract::class);
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ### Come ottenere la classe User corretta
@@ -876,6 +897,7 @@ public function process(\Modules\User\Models\User $user) {
 <<<<<<< HEAD
 ```
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_nt9WL3
 =======
 <<<<<<< .merge_file_WPz13U
@@ -897,3 +919,8 @@ public function process(\Modules\User\Models\User $user) {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_CHlzfu
 >>>>>>> laraxot/dev
+=======
+```
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)

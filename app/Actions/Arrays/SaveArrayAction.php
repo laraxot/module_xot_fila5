@@ -16,6 +16,7 @@ class SaveArrayAction
      *
      * @param array<int|string, mixed> $data
      *                                       =======
+<<<<<<< HEAD
      *                                       <<<<<<< .merge_file_OY9ono.
      * @param array<int|string, mixed> $data
      *                                       =======
@@ -33,6 +34,9 @@ class SaveArrayAction
      *                                       >>>>>>> .merge_file_dp2bPs
      *                                       >>>>>>> laraxot/dev
      *                                       >>>>>>> .merge_file_6IHdiT
+=======
+     * @param array<int|string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      *                                       >>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool

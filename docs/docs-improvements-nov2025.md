@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [docs-improvements-nov.md](./docs-improvements-nov.md)
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Miglioramenti Documentazione - Novembre 2025
 
 ## 🎯 Obiettivo
@@ -284,5 +287,8 @@ find . -name "readme.md" -o -name "Readme.md"
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

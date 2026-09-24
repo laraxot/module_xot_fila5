@@ -130,6 +130,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
 =======
 <<<<<<< HEAD
@@ -138,6 +139,9 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -170,6 +174,7 @@ public function boot(): void
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Registrazione icone Blade](registerbladeicons.md)
 =======
 <<<<<<< HEAD
@@ -178,6 +183,9 @@ public function boot(): void
 - [Registrazione icone Blade](./registerBladeIcons.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Registrazione icone Blade](./registerBladeIcons.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Gestione dei Path delle Traduzioni
 
@@ -212,6 +220,7 @@ Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
 =======
 <<<<<<< HEAD
@@ -220,6 +229,9 @@ Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centra
 Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 
@@ -252,15 +264,22 @@ $this->commands([
 ### Zen finale
 > "Il miglior comando è quello che non devi mai registrare a mano."
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: xotbaseserviceprovider
 canonical: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/xotbaseserviceprovider.md
+>>>>>>> 3792da0d (Check & fix styling)

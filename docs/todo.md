@@ -1,14 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_M4wDet
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
 https://github.com/limewell/laravel-make-extender
 
 
 mostrare in una blade uso disco etc 
+<<<<<<< HEAD
 https://github.com/spatie/laravel-health
 =======
 <<<<<<< HEAD
@@ -53,3 +57,6 @@ https://github.com/spatie/laravel-health
 >>>>>>> .merge_file_U0aTiH
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/spatie/laravel-health
+>>>>>>> 3792da0d (Check & fix styling)

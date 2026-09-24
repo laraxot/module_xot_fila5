@@ -60,6 +60,7 @@ class UserResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -73,6 +74,9 @@ class UserResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Schema del form
@@ -155,6 +159,7 @@ class UserResource extends XotBaseResource
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -168,6 +173,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         Forms\Components\TextInput::make('name')
@@ -298,6 +306,7 @@ return [
 
 **Ultimo aggiornamento:** Gennaio 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
 =======
 <<<<<<< HEAD
@@ -306,3 +315,6 @@ return [
 **Versione:** 2.0 - Consolidata DRY + KISS
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> 3792da0d (Check & fix styling)

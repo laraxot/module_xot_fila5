@@ -35,6 +35,7 @@ ModuleName/
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -51,6 +52,8 @@ ModuleName/
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -61,8 +64,11 @@ ModuleName/
 - [Cms](../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../lang/docs/readme.md) - Traduzioni
 - [User](../user/docs/readme.md) - Gestione utenti
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Struttura Dettagliata
 
@@ -221,6 +227,7 @@ User/
 
 ### Modulo UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -292,6 +299,8 @@ User/
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Componenti Volt](../ui/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
@@ -357,8 +366,11 @@ User/
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 # Struttura dei Moduli Laravel
 
@@ -502,6 +514,7 @@ Se trovi una directory con case errato:
 
 ## Collegamenti tra versioni di module_structure.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [module_structure.md](../../../../docs/error_analysis/module_structure.md)
 =======
 <<<<<<< HEAD
@@ -510,3 +523,6 @@ Se trovi una directory con case errato:
 * [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
+>>>>>>> 3792da0d (Check & fix styling)

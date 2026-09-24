@@ -810,6 +810,7 @@ else {
 - [property-exists-elimination-philosophy.md](./property-exists-elimination-philosophy.md) - Filosofia
 - [phpstan/](./phpstan/) - PHPStan guides
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [../../../docs/quality/](../../../docs/quality/) - Root quality docs
 =======
 <<<<<<< HEAD
@@ -818,6 +819,9 @@ else {
 - [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -848,6 +852,7 @@ else {
 **Revision**: 1.0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
 =======
 <<<<<<< HEAD
@@ -856,3 +861,6 @@ else {
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ora posso procedere con l'eliminazione sistematica! ⚔️**
+>>>>>>> 3792da0d (Check & fix styling)

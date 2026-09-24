@@ -36,6 +36,7 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
 =======
 <<<<<<< HEAD
@@ -44,3 +45,6 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
+>>>>>>> 3792da0d (Check & fix styling)

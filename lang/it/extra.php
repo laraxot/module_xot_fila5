@@ -9,9 +9,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'extra.navigation',
         'icon' => 'extra.navigation',
         'sort' => 38,
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ],
     'pages' => [
         'health_check_results' => [
@@ -36,7 +39,10 @@ return [
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'id',
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -50,6 +56,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'model_type' => [
             'label' => 'model_type',
         ],
@@ -77,10 +84,13 @@ return [
             'helper_text' => '',
             'description' => 'value',
         ],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Extra',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -103,6 +113,14 @@ return [
             'label' => 'save',
             'icon' => 'save',
             'tooltip' => 'save',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Extra',
+        ],
+        'delete' => [
+            'label' => 'Elimina Extra',
+>>>>>>> 3792da0d (Check & fix styling)
         ],
     ],
 ];

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_YFYj2o
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,11 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_pka5UF
 >>>>>>> .merge_file_O4G9hO
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 name: story-hasxotform-columns
 description: "Fix: ->columns($this->getFormColumns()) invece di ->columns(2). Metodi getFormSchema/getFormColumns non statici."
@@ -30,6 +36,7 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_YFYj2o
 =======
 <<<<<<< .merge_file_GLbHKx
@@ -38,6 +45,8 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_pka5UF
 >>>>>>> .merge_file_O4G9hO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 # BMAD Story: HasXotForm columns
 Fix: ->columns($this->getFormColumns()) invece di ->columns(2). Metodi getFormSchema/getFormColumns non statici.

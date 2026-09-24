@@ -1,13 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_OsuWnA
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # _macro
 
 <!-- Contenuto migrato da _docs/_macro.txt -->
 
+<<<<<<< HEAD
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 =======
 <<<<<<< HEAD
@@ -53,3 +57,6 @@ https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 >>>>>>> .merge_file_iP95kB
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://www.larashout.com/laravel-macros-extending-laravels-core-classes
+>>>>>>> 3792da0d (Check & fix styling)

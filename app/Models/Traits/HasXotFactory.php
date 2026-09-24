@@ -6,6 +6,7 @@ namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 >>>>>>> laraxot/dev
@@ -60,6 +61,15 @@ trait HasXotFactory
     {
         /** @var Factory<static> $factory */
 =======
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
+
+/** @template-covariant TFactory of Factory */
+trait HasXotFactory
+{
+>>>>>>> 3792da0d (Check & fix styling)
     /** @use EloquentHasFactory<TFactory> */
     use EloquentHasFactory {
         newFactory as parentNewFactory;
@@ -70,10 +80,16 @@ trait HasXotFactory
      *
      * @return TFactory
      */
+<<<<<<< HEAD
     protected static function newFactory(): Factory
     {
         /** @var TFactory $factory */
 >>>>>>> laraxot/dev
+=======
+    protected static function newFactory()
+    {
+        /** @var TFactory $factory */
+>>>>>>> 3792da0d (Check & fix styling)
         $factory = app(GetFactoryAction::class)->execute(static::class);
 
         return $factory;

@@ -43,6 +43,7 @@ class IntegparamResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -56,6 +57,9 @@ class IntegparamResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Schema del form
@@ -134,6 +138,7 @@ class IntegparamResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -147,6 +152,9 @@ class IntegparamResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Section::make('Dati Anagrafici')
@@ -224,6 +232,7 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -231,6 +240,10 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
+- [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## Checklist per Integrazioni Cross-Module
@@ -255,22 +268,29 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
 - [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 5 giugno 2025*
 =======
 <<<<<<< HEAD
@@ -279,3 +299,6 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 *Ultimo aggiornamento: 5 giugno 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 5 giugno 2025*
+>>>>>>> 3792da0d (Check & fix styling)

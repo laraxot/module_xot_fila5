@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -10,6 +11,8 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MXE3H5
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 title: "Readme"
 type: reference
@@ -26,11 +29,14 @@ updated: 2026-08-24
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_MXE3H5
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -49,10 +55,13 @@ updated: 2026-08-24
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MXE3H5
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -82,18 +91,24 @@ updated: 2026-08-24
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_MXE3H5
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -131,16 +146,22 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 =======
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 title: "Readme"
 type: reference
@@ -158,6 +179,7 @@ updated: 2026-08-24
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -183,6 +205,27 @@ updated: 2026-08-24
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 ### Translation Problems
@@ -217,8 +260,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 # Xot
 
@@ -258,6 +304,7 @@ Core module for the FixCity Platform.
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
@@ -271,3 +318,8 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_W8gVlC
 >>>>>>> .merge_file_MXE3H5
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)

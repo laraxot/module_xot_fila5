@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
 use Webmozart\Assert\Assert;
 
@@ -16,6 +17,14 @@ use function Safe\copy;
 
 =======
 >>>>>>> laraxot/dev
+=======
+
+use function Safe\copy;
+
+use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
+use Webmozart\Assert\Assert;
+
+>>>>>>> 3792da0d (Check & fix styling)
 class AssetAction
 {
     use QueueableActionTrait;
@@ -26,17 +35,23 @@ class AssetAction
      * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $path  Il percorso dell'asset
      * @return string Il percorso pubblico dell'asset
      *
      * @throws Exception Se il file sorgente non esiste o non può essere copiato
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string $path Il percorso dell'asset
      *
      * @throws \Exception Se il file sorgente non esiste o non può essere copiato
      *
      * @return string Il percorso pubblico dell'asset
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(string $path): string
     {
@@ -122,20 +137,28 @@ class AssetAction
                 return $originalPath;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
 =======
             throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
 >>>>>>> laraxot/dev
+=======
+            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+>>>>>>> 3792da0d (Check & fix styling)
         }
 
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $forceCopy = app()->environment() !== 'production';
 =======
         $forceCopy = 'production' !== app()->environment();
 >>>>>>> laraxot/dev
+=======
+        $forceCopy = 'production' !== app()->environment();
+>>>>>>> 3792da0d (Check & fix styling)
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
@@ -147,6 +170,9 @@ class AssetAction
     /**
      * Copies an asset file if it doesn't exist or if forced.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function copyAsset(string $from, string $to, string $path, bool $force = false): void
     {
@@ -155,6 +181,7 @@ class AssetAction
 
             try {
                 File::copy($from, $to);
+<<<<<<< HEAD
             } catch (Exception $e) {
                 $this->throwCopyException($e, $path, $from, $to);
             }
@@ -217,6 +244,12 @@ class AssetAction
 
         $this->throwCopyException($exception, $path, $from, $to);
 >>>>>>> laraxot/dev
+=======
+            } catch (\Exception $e) {
+                $this->throwCopyException($e, $path, $from, $to);
+            }
+        }
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     /**
@@ -233,6 +266,7 @@ class AssetAction
      * Throws a formatted exception for a file copy error.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function throwCopyException(Exception $e, string $path, string $from, string $to): void
     {
         throw new Exception('message:['.$e->getMessage().']
@@ -241,6 +275,11 @@ class AssetAction
     {
         throw new \Exception('message:['.$e->getMessage().']
 >>>>>>> laraxot/dev
+=======
+    private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
+    {
+        throw new \Exception('message:['.$e->getMessage().']
+>>>>>>> 3792da0d (Check & fix styling)
             public_path ['.public_path().']
             path ['.$path.']
             file from ['.$from.']

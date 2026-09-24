@@ -1,4 +1,8 @@
 # PHPStan Action Plan - 2025-11-18
+<<<<<<< HEAD
+=======
+# PHPStan Action Plan - [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Executive Summary
 
@@ -264,4 +268,9 @@ class ChartDataValidator
 
 **Last Updated**: 2025-11-18
 **Next Review**: 2025-11-25
+<<<<<<< HEAD
 **Status**: 🟡 IN PROGRESS
+=======
+
+**Status**: 🟡 IN PROGRESS
+>>>>>>> 3792da0d (Check & fix styling)

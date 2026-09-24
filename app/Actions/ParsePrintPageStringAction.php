@@ -6,19 +6,25 @@ namespace Modules\Xot\Actions;
 
 use Illuminate\Support\Arr;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match_all;
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\preg_match_all;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Parses a print page string into an array of page numbers.
  *
@@ -32,11 +38,16 @@ class ParsePrintPageStringAction
      * Execute the page string parsing.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $str  The page range string to parse
 =======
      * @param string $str The page range string to parse
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string $str The page range string to parse
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<int> Array of page numbers
      */
     public static function execute(string $str): array
@@ -49,10 +60,14 @@ class ParsePrintPageStringAction
          * @var array{list<string>, list<numeric-string>, list<''|numeric-string>} $matches
          */
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($matches[0] === []) {
 =======
         if ([] === $matches[0]) {
 >>>>>>> laraxot/dev
+=======
+        if ([] === $matches[0]) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \InvalidArgumentException('No valid page numbers found');
         }
 
@@ -62,10 +77,14 @@ class ParsePrintPageStringAction
         $res = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         for ($i = 0; $i < $matchCount; $i++) {
 =======
         for ($i = 0; $i < $matchCount; ++$i) {
 >>>>>>> laraxot/dev
+=======
+        for ($i = 0; $i < $matchCount; ++$i) {
+>>>>>>> 3792da0d (Check & fix styling)
             $firstNumber = Arr::get($matches, "1.{$i}");
             $secondNumber = Arr::get($matches, "2.{$i}");
 
@@ -73,10 +92,14 @@ class ParsePrintPageStringAction
             Assert::string($secondNumber, 'Second number must be a string');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($secondNumber === '') {
 =======
             if ('' === $secondNumber) {
 >>>>>>> laraxot/dev
+=======
+            if ('' === $secondNumber) {
+>>>>>>> 3792da0d (Check & fix styling)
                 $res[] = (int) $firstNumber;
             } else {
                 $res = array_merge($res, self::fromTo((int) $firstNumber, (int) $secondNumber));
@@ -90,6 +113,7 @@ class ParsePrintPageStringAction
      * Generate an array of numbers from start to end inclusive.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  int  $from  Starting number
      * @param  int  $to  Ending number
 =======
@@ -97,6 +121,11 @@ class ParsePrintPageStringAction
      * @param int $to   Ending number
      *
 >>>>>>> laraxot/dev
+=======
+     * @param int $from Starting number
+     * @param int $to   Ending number
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<int> Array of sequential numbers
      */
     public static function fromTo(int $from, int $to): array

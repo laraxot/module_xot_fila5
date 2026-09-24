@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_582Ftc
@@ -32,6 +33,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://github.com/phpstan/phpstan/issues/1242
 
 
@@ -62,6 +65,7 @@ protected function callAction(array $match)
     throw new \Exception("Method not found: {$controllerClass}@{$method}");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -75,3 +79,6 @@ protected function callAction(array $match)
 }
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+}
+>>>>>>> 3792da0d (Check & fix styling)

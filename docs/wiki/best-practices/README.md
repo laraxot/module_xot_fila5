@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_55fVAe
 =======
@@ -12,11 +13,17 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +37,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -40,6 +51,7 @@ updated: 2026-08-24
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_55fVAe
 =======
@@ -52,17 +64,22 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_9BbkJZ
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 # Best Practices
 
@@ -97,6 +114,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< HEAD
@@ -111,6 +129,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
@@ -137,6 +157,7 @@ updated: 2026-08-24
 - PHPStan level 9+ for all new code
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< .merge_file_kkjBRW
@@ -154,6 +175,11 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
@@ -164,6 +190,7 @@ updated: 2026-08-24
 - Update both module and root documentation
 - Include practical examples in all guides
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
@@ -173,24 +200,32 @@ updated: 2026-08-24
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_9BbkJZ
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -228,13 +263,19 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
@@ -250,9 +291,12 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 # Xot
 
@@ -289,17 +333,21 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 >>>>>>> laraxot/dev
 =======
@@ -309,4 +357,6 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev

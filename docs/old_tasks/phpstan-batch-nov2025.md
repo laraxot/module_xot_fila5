@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Uvn27A
 =======
@@ -26,6 +27,8 @@ Vedi il file canonico: [phpstan-batch-nov.md](./phpstan-batch-nov.md)
 <<<<<<< .merge_file_Uvn27A
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # PHPStan Batch Fixes - Novembre 2025
 
 ## Sessione Correzione Modulo per Modulo
@@ -154,6 +157,9 @@ return $schema->components($formSchema);
 - **NO config changes**: phpstan.neon immutato
 - **YES forward only**: Git history preservata
 - **YES docs update**: Documentazione costante
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TX5e3v
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

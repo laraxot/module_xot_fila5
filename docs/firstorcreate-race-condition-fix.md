@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8vpi2k
 =======
@@ -20,6 +21,11 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I95shV
 >>>>>>> laraxot/dev
+=======
+# Fix Race Condition firstOrCreate con UUID - [DATE]
+
+**Status**: ✅ Completato  
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Problema
 
@@ -182,6 +188,7 @@ expect($profileA->id)->toBe($profileB->id);
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8vpi2k
 =======
@@ -200,13 +207,19 @@ expect($profileA->id)->toBe($profileB->id);
 <<<<<<< .merge_file_8vpi2k
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Activity Module: firstOrCreate Error Handling](../../activity/docs/errori/attributerawvalues-null-firstorcreate.md)
 - [User Profile Models: Transaction Patterns](../../user/docs/user-profile-models.md)
 - [Query Safety Principle](../../../../docs/operational-rules/query-safety-principle.md)
 
 **Versione**: 1.0  
 **Ultimo aggiornamento**: [DATE]  
+<<<<<<< HEAD
 **Status**: ✅ Completato
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I95shV
 >>>>>>> laraxot/dev
+=======
+**Status**: ✅ Completato
+>>>>>>> 3792da0d (Check & fix styling)

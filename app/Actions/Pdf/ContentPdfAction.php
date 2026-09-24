@@ -24,6 +24,7 @@ class ContentPdfAction
      * Genera contenuto PDF dall'HTML fornito.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string|null  $html  Contenuto HTML da convertire
      * @param  string|null  $view  Nome della vista Blade da renderizzare
      * @param  array<string, mixed>|null  $data  Dati da passare alla vista
@@ -32,6 +33,8 @@ class ContentPdfAction
      *
      * @throws \Exception Se la vista non esiste
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string|null               $html      Contenuto HTML da convertire
      * @param string|null               $view      Nome della vista Blade da renderizzare
      * @param array<string, mixed>|null $data      Dati da passare alla vista
@@ -40,7 +43,10 @@ class ContentPdfAction
      * @throws \Exception Se la vista non esiste
      *
      * @return string Contenuto binario del PDF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(
         ?string $html = null,
@@ -50,10 +56,14 @@ class ContentPdfAction
     ): string {
         // Generate HTML content if view is provided
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($html === null && $view !== null) {
 =======
         if (null === $html && null !== $view) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $html && null !== $view) {
+>>>>>>> 3792da0d (Check & fix styling)
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');
             }
@@ -89,6 +99,7 @@ class ContentPdfAction
      * Metodo di convenienza per generare PDF da viste Blade.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $view  Nome della vista Blade
      * @param  array  $data  Dati da passare alla vista
      * @param  string  $filename  Nome del file PDF (per riferimento)
@@ -105,6 +116,17 @@ class ContentPdfAction
      * @return string Contenuto binario del PDF
      */
 >>>>>>> laraxot/dev
+=======
+     * @param string $view     Nome della vista Blade
+     * @param array  $data     Dati da passare alla vista
+     * @param string $filename Nome del file PDF (per riferimento)
+     *
+     * @return string Contenuto binario del PDF
+     */
+    /**
+     * @param array<string, mixed> $data
+     */
+>>>>>>> 3792da0d (Check & fix styling)
     public function fromView(string $view, array $data = [], string $filename = 'document.pdf'): string
     {
         return $this->execute(
@@ -121,6 +143,7 @@ class ContentPdfAction
      * Metodo di convenienza per generare PDF da contenuto HTML.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $html  Contenuto HTML
      * @param  string  $filename  Nome del file PDF (per riferimento)
 =======
@@ -128,6 +151,11 @@ class ContentPdfAction
      * @param string $filename Nome del file PDF (per riferimento)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string $html     Contenuto HTML
+     * @param string $filename Nome del file PDF (per riferimento)
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return string Contenuto binario del PDF
      */
     public function fromHtml(string $html, string $filename = 'document.pdf'): string

@@ -62,6 +62,7 @@ class HandleArtisanActRequestAction
 <<<<<<< HEAD
         if ($moduleName !== '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_mncXCG
 <<<<<<< HEAD
         if ($moduleName !== '') {
@@ -72,6 +73,10 @@ class HandleArtisanActRequestAction
         if ('' !== $moduleName) {
 >>>>>>> .merge_file_rHh7g0
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $moduleName) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)
