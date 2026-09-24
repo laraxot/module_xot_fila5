@@ -7,7 +7,7 @@ use Webmozart\Assert\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
 
-/**
+/*
  * Guardia sul document root.
  *
  * Il web server serve `public_html/`, non `laravel/public/`. `App\Application` sovrascrive

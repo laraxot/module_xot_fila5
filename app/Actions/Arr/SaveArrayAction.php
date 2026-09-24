@@ -11,7 +11,7 @@ class SaveArrayAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
+     * <<<<<<< HEAD
      * <<<<<<< .merge_file_Ksm01z.
      *
      * @param array<int|string, mixed> $data
@@ -26,9 +26,9 @@ class SaveArrayAction
      *                                       >>>>>>> laraxot/dev
      *                                       >>>>>>> .merge_file_A27cnh
      *                                       >>>>>>> .merge_file_NzQM5y
-=======
-     * @param  array<int|string, mixed>  $data
->>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *                                       =======
+     * @param array<int|string, mixed> $data
+     *                                       >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool
     {
