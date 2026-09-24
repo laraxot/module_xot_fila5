@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: 'machine_learning'
 module: Xot
@@ -16,6 +19,9 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/machine_learning.txt -->
 
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ----------------------------------------
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
@@ -35,7 +41,10 @@ https://pii-tools.com/detect-person-names-in-text/
 https://github.com/angeloskath/php-nlp-tools
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 http://php-nlp-tools.com/documentation/
@@ -47,7 +56,10 @@ https://www.php.net/manual/en/function.metaphone.php
 https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-name-in-Latin-text.html
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 https://www.we-rc.com/blog/2021/04/04/named-entity-recognition-in-php
@@ -59,7 +71,10 @@ https://github.com/wamania/php-stemmer#languages
 https://www.youtube.com/watch?v=06-AZXmwHjo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 https://stackoverflow.com/questions/4304938/how-to-recognize-names-from-a-text-using-php +++
@@ -70,8 +85,11 @@ https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 //--------------------------------------------------------------------------------------------------------
@@ -108,7 +126,10 @@ LUCENE
 https://github.com/nqxcode/laravel-lucene-search
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 -----------------------------------------------------------------------------------------------------------------------
@@ -118,7 +139,10 @@ https://www.textrazor.com/demo
 --------------------------------------------------------------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 TIPO PERSON OF INTEREST
@@ -129,7 +153,10 @@ CON LIBRERIA Stanford
 https://github.com/yooper/php-text-analysis  !!!!!
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 -----------------------------------------
@@ -141,7 +168,10 @@ https://github.com/DaveChild/Best-websites-a-programmer-should-visit  !!
 https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Namespaces/IndicesNamespace.php   ????
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ------------------------------------------------
@@ -149,7 +179,10 @@ https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Names
 https://github.com/patrickschur/language-detection
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ----------------------------------------------------
@@ -159,6 +192,9 @@ https://github.com/php-ai/php-ml
 ---------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 https://cloud.google.com/natural-language/docs/analyzing-sentiment
 
 https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -166,6 +202,7 @@ https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!
 ----------------------------------------------------------
 
 https://accidentalfactors.com/part-of-speech-tagging/
+<<<<<<< HEAD
 =======
 https://cloud.google.com/natural-language/project_docs/analyzing-sentiment
 
@@ -174,4 +211,6 @@ https://cloud.google.com/natural-language/project_docs/analyzing-entities  !!!!!
 ----------------------------------------------------------
 
 https://accidentalfactors.com/part-of-speech-tagging/
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

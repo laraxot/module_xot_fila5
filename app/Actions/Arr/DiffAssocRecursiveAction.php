@@ -15,6 +15,14 @@ class DiffAssocRecursiveAction
 
     /**
      * @param  array<int|string, mixed>  $data
+<<<<<<< HEAD
+=======
+     * @param array<int|string, mixed> $data
+     *
+     *
+     *
+     * @param  array<int|string, mixed>  $data
+>>>>>>> laraxot/dev
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -37,6 +45,13 @@ class DiffAssocRecursiveAction
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @param array<int|string, mixed> $arr_1
+     * @param array<int|string, mixed> $arr_2
+     *
+     *
+>>>>>>> laraxot/dev
      * @param  array<int|string, mixed>  $arr_1
      * @param  array<int|string, mixed>  $arr_2
      * @return array<int|string, array<int|string, mixed>>
@@ -46,7 +61,11 @@ class DiffAssocRecursiveAction
         $coll_1 = collect(self::fixType($arr_1));
         $arr_2 = self::fixType($arr_2);
 
+<<<<<<< HEAD
         $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
+=======
+        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
+>>>>>>> laraxot/dev
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {

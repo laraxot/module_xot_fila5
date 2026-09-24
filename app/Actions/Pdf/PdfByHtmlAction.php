@@ -17,6 +17,10 @@ class PdfByHtmlAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
      * @param string        $html        Contenuto HTML da convertire
      * @param string        $filename    Nome del file PDF
      * @param string        $disk        Disco di storage

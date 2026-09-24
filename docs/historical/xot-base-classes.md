@@ -19,7 +19,11 @@ The Xot base classes provide a centralized way to customize and extend functiona
   {
       // Resource definition
 <<<<<<< HEAD
+<<<<<<< HEAD
       public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
       public function getFormSchema(): array
 >>>>>>> laraxot/dev

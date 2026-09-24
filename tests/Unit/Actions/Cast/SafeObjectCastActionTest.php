@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -9,7 +12,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('manages object properties safely', function (): void {
+<<<<<<< HEAD
     $obj = new stdClass;
+=======
+    $obj = new stdClass();
+>>>>>>> laraxot/dev
     $obj->name = 'Test Object';
     $obj->id = 123;
     $obj->active = true;
@@ -47,6 +54,21 @@ it('manages object properties safely', function (): void {
     Assert::assertTrue($action->hasPropertyValue($obj, 'id', 123));
     Assert::assertFalse($action->hasPropertyValue($obj, 'id', '123'));
     // getValidatedProperty
+<<<<<<< HEAD
+=======
+    Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (int $v): bool {
+        return $v > 100;
+    }));
+    Assert::assertSame(0, $action->getValidatedProperty($obj, 'id', 'int', function (int $v): bool {
+        return $v > 200;
+    }, 0));
+    // Methods
+    $complexObj = new class
+    {
+        public function test(string $p): string
+    $complexObj = new class {
+        public function test(string $p): string
+>>>>>>> laraxot/dev
     Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
         return $v > 100;
     }));

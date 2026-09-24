@@ -16,7 +16,11 @@ related:
   - ../../../Fixcity/docs/wiki/overviews/completion-roadmap.md
   - ../../../../Themes/Sixteen/docs/wiki/overviews/completion-roadmap.md
   - ../concepts/phpstan-pest-bridge-discipline.md
+<<<<<<< HEAD
   - ../PHPSTAN-BEST-PRACTICES.md
+=======
+  - ../phpstan-best-practices.md
+>>>>>>> laraxot/dev
   - ../../../../../docs/wiki/PHPSTAN-INDEX.md
 ---
 

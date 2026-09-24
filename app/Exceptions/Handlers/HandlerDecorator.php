@@ -36,6 +36,10 @@ class HandlerDecorator implements ExceptionHandler
 
     /**
      * @param  array<int, mixed>  $parameters
+<<<<<<< HEAD
+=======
+     * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
+>>>>>>> laraxot/dev
      */
     public function __call(string $name, array $parameters): mixed
     {

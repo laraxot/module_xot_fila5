@@ -58,7 +58,23 @@
         "tightenco/parental": "*"
     },
     "require_comment": {
+<<<<<<< HEAD
        
+=======
+<<<<<<< .merge_file_ePWx4o
+       
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "filament/spatie-laravel-translatable-plugin": "*"
+=======
+       
+>>>>>>> laraxot/dev
+=======
+        "filament/spatie-laravel-translatable-plugin": "*"
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_aG4RVw
+>>>>>>> laraxot/dev
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
@@ -151,4 +167,20 @@
     "require-dev_comment": {
         "spatie/laravel-error-solutions": "*"
     }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< .merge_file_ePWx4o
+}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> laraxot/dev
+=======
+}
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_aG4RVw
+>>>>>>> laraxot/dev

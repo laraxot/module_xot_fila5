@@ -13,6 +13,13 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @property string $key
  * @property string $value
+<<<<<<< HEAD
+=======
+ *
+ * @property int $expiration
+ *
+ * @method static CacheFactory          factory($count = null, $state = [])
+>>>>>>> laraxot/dev
  * @property int $expiration
  *
  * @method static CacheFactory factory($count = null, $state = [])

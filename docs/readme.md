@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -27,6 +28,8 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 ```php
 // Esempio di una Resource Filament
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
@@ -113,12 +116,16 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 
 **Example**: Resource Filament
 ```php
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     // Il metodo table() e form() NON devono essere sovrascritti
@@ -147,6 +154,8 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 =======
+=======
+>>>>>>> laraxot/dev
     // table() and form() inherited from base
 }
 ```
@@ -188,6 +197,9 @@ class MyModuleServiceProvider extends XotBaseServiceProvider
 
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```php
 use Modules\Xot\Actions\XotBaseAction;
@@ -198,8 +210,12 @@ class CreateUserAction extends XotBaseAction
     {
         $user = User::create($data);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->logActivity('user.created', $user); // Logging automatico
         event(new UserCreated($user)); // Dispatching eventi
+=======
+        event(new UserCreated($user));
+>>>>>>> laraxot/dev
 =======
         event(new UserCreated($user));
 >>>>>>> laraxot/dev
@@ -209,13 +225,19 @@ class CreateUserAction extends XotBaseAction
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
 =======
+=======
+>>>>>>> laraxot/dev
 ### Enums System
 
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
 
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
@@ -228,7 +250,10 @@ enum UserStatus: string implements XotBaseEnum
     public function getLabel(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Traduzione gestita centralmente
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
         return __('xot::enums.user_status.'.$this->value);
@@ -236,6 +261,7 @@ enum UserStatus: string implements XotBaseEnum
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## 🛠️ **Sviluppo e Qualità**
 
@@ -284,6 +310,8 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 - [Convenzioni sui Namespace](./namespace_conventions.md)
 - [Linee Guida per il Testing](./testing.md)
 =======
+=======
+>>>>>>> laraxot/dev
 ### Filament Integration
 
 Xot fornisce wrapper base per tutti i componenti Filament:
@@ -413,4 +441,7 @@ All modules depend on **Xot**. Never have circular dependencies.
 **Last Updated**: 2026-07-14  
 **Maintained by**: Laraxot Core Team  
 **PHPStan Level**: 10 (Compliant)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

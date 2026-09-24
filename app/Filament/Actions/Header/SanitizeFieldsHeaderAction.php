@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
@@ -49,7 +53,11 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
+<<<<<<< HEAD
                             ++$c;
+=======
+                            $c++;
+>>>>>>> laraxot/dev
                         }
                     }
                     if ($save) {
@@ -64,7 +72,11 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
     }
 
     /**
+<<<<<<< HEAD
      * @param list<string> $fields
+=======
+     * @param  list<string>  $fields
+>>>>>>> laraxot/dev
      */
     public function setFields(array $fields): self
     {

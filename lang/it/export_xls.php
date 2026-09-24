@@ -3,6 +3,18 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    'label' => 'Esporta Excel',
+    'plural_label' => 'Esporta Excel',
+    'icon' => 'xot-files.xls',
+    'tooltip' => 'Esporta Excel (XLS)',
+    'actions' => [
+        'export_xls' => [
+            'label' => 'Esporta Excel',
+            'icon' => 'xot-files.xls',
+            'tooltip' => 'Esporta i dati in formato Excel (.xlsx)',
+>>>>>>> laraxot/dev
     'actions' => [
         'export_xls' => [
             'label' => 'Esporta Excel',

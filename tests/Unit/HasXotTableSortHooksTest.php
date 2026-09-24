@@ -2,9 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
 use PHPUnit\Framework\Assert;
+=======
+use Filament\Tables\Columns\Column;
+use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+use Modules\Xot\Tests\Unit\Support\DummyTestModel;
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\TestCase;
+
+uses(TestCase::class);
+
+>>>>>>> laraxot/dev
 
 uses(PHPUnit\Framework\TestCase::class);
 
