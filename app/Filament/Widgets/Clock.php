@@ -6,8 +6,6 @@ namespace Modules\Xot\Filament\Widgets;
 
 // use Symfony\Component\Console\Output\BufferedOutput;
 
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
 class Clock extends XotBaseWidget
 {
     public string $start = '';

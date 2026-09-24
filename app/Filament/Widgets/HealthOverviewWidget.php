@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 use Spatie\Health\Enums\Status;
 use Spatie\Health\ResultStores\ResultStore;
 

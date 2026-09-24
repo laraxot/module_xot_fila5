@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;

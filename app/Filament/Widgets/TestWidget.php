@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
 /**
  * Widget di test per verificare la registrazione Livewire.
  */
