@@ -289,45 +289,7 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
 /**
  * @return array<int, Component>
  */
-<<<<<<< HEAD
-<<<<<<< .merge_file_zh4jQv
-=======
-<<<<<<< .merge_file_omoMAN
-=======
->>>>>>> .merge_file_dli3N8
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tfpHcz
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_Qjtf2J
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zh4jQv
-=======
->>>>>>> .merge_file_ILkwN3
->>>>>>> .merge_file_dli3N8
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zh4jQv
-=======
-<<<<<<< .merge_file_omoMAN
-=======
->>>>>>> .merge_file_dli3N8
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tfpHcz
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Qjtf2J
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zh4jQv
-=======
->>>>>>> .merge_file_ILkwN3
->>>>>>> .merge_file_dli3N8
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -511,45 +473,7 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, Component>
      */
-<<<<<<< HEAD
-<<<<<<< .merge_file_zh4jQv
-=======
-<<<<<<< .merge_file_omoMAN
-=======
->>>>>>> .merge_file_dli3N8
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tfpHcz
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_Qjtf2J
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zh4jQv
-=======
->>>>>>> .merge_file_ILkwN3
->>>>>>> .merge_file_dli3N8
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zh4jQv
-=======
-<<<<<<< .merge_file_omoMAN
-=======
->>>>>>> .merge_file_dli3N8
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tfpHcz
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Qjtf2J
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zh4jQv
-=======
->>>>>>> .merge_file_ILkwN3
->>>>>>> .merge_file_dli3N8
     {
         return [
             TextInput::make('name')->required(),

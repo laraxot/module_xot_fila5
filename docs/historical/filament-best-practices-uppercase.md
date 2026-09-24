@@ -38,45 +38,7 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
 {
     return [
         TextInput::make('nome')->required(),
@@ -213,45 +175,7 @@ class SocioResource extends XotBaseResource
     // NON definire $navigationSort quando si estende XotBaseResource
 
     // Form Schema - CORRETTO ✅
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('cognome')
@@ -431,45 +355,7 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -716,45 +602,7 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('nome')->required(),
@@ -824,45 +672,7 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
 {
     return [
         TextInput::make('nome')->required(),
@@ -999,45 +809,7 @@ class SocioResource extends XotBaseResource
     // NON definire $navigationSort quando si estende XotBaseResource
 
     // Form Schema - CORRETTO ✅
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('cognome')
@@ -1217,45 +989,7 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1502,45 +1236,7 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
-<<<<<<< .merge_file_lbWR6J
-=======
->>>>>>> .merge_file_ZxzVHa
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdV1uK
-=======
->>>>>>> .merge_file_qM1iOI
->>>>>>> .merge_file_ZxzVHa
     {
         return [
             TextInput::make('nome')->required(),

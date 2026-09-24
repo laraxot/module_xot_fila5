@@ -55,47 +55,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_jfgaC1
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_onmcvP
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qhLmIl
-<<<<<<< .merge_file_rRHrAX
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0STLdl
-<<<<<<< .merge_file_jfgaC1
-=======
->>>>>>> .merge_file_VyRD3X
->>>>>>> .merge_file_qhLmIl
->>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -310,47 +270,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_jfgaC1
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_onmcvP
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qhLmIl
-<<<<<<< .merge_file_rRHrAX
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0STLdl
-<<<<<<< .merge_file_jfgaC1
-=======
->>>>>>> .merge_file_VyRD3X
->>>>>>> .merge_file_qhLmIl
->>>>>>> laraxot/dev
     {
         return [
             // Form components

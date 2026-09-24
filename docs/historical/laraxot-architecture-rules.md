@@ -47,45 +47,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
     {
         return [
             // Form components
@@ -300,45 +262,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
     {
         return [
             // Form components
@@ -486,45 +410,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
     {
         return [
             // Form components
@@ -739,45 +625,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
-<<<<<<< .merge_file_En4XiN
-=======
->>>>>>> .merge_file_SEvMez
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_75A8DH
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_SdE2eb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_r4RnQT
-=======
->>>>>>> .merge_file_qRAJN9
->>>>>>> .merge_file_SEvMez
     {
         return [
             // Form components

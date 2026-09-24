@@ -252,45 +252,7 @@ use Filament\Forms\Components\TextInput;
 
 class ExampleResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_WavUSA
-=======
-<<<<<<< .merge_file_62nwoQ
-=======
->>>>>>> .merge_file_EJXRjb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MKUDrf
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_rGeWqd
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_WavUSA
-=======
->>>>>>> .merge_file_6cmyYQ
->>>>>>> .merge_file_EJXRjb
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_WavUSA
-=======
-<<<<<<< .merge_file_62nwoQ
-=======
->>>>>>> .merge_file_EJXRjb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MKUDrf
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_rGeWqd
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_WavUSA
-=======
->>>>>>> .merge_file_6cmyYQ
->>>>>>> .merge_file_EJXRjb
     {
         return [
             TextInput::make('name')->required(),
@@ -330,45 +292,7 @@ class UserModerationResource extends XotBaseResource
 /**
  * @return array<string, \Filament\Forms\Components\Component>
  */
-<<<<<<< HEAD
-<<<<<<< .merge_file_WavUSA
-=======
-<<<<<<< .merge_file_62nwoQ
-=======
->>>>>>> .merge_file_EJXRjb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MKUDrf
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_rGeWqd
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_WavUSA
-=======
->>>>>>> .merge_file_6cmyYQ
->>>>>>> .merge_file_EJXRjb
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_WavUSA
-=======
-<<<<<<< .merge_file_62nwoQ
-=======
->>>>>>> .merge_file_EJXRjb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MKUDrf
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_rGeWqd
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_WavUSA
-=======
->>>>>>> .merge_file_6cmyYQ
->>>>>>> .merge_file_EJXRjb
 {
     return [
         // Schema del form

@@ -41,45 +41,7 @@ class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = Integparam::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_5NBjwa
-=======
-<<<<<<< .merge_file_yOw3fZ
-=======
->>>>>>> .merge_file_gcatjS
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_bB3oCr
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_8ooCOz
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_5NBjwa
-=======
->>>>>>> .merge_file_fPT4o4
->>>>>>> .merge_file_gcatjS
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_5NBjwa
-=======
-<<<<<<< .merge_file_yOw3fZ
-=======
->>>>>>> .merge_file_gcatjS
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_bB3oCr
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_8ooCOz
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_5NBjwa
-=======
->>>>>>> .merge_file_fPT4o4
->>>>>>> .merge_file_gcatjS
     {
         return [
             // Schema del form
@@ -156,45 +118,7 @@ class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_5NBjwa
-=======
-<<<<<<< .merge_file_yOw3fZ
-=======
->>>>>>> .merge_file_gcatjS
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_bB3oCr
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_8ooCOz
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_5NBjwa
-=======
->>>>>>> .merge_file_fPT4o4
->>>>>>> .merge_file_gcatjS
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_5NBjwa
-=======
-<<<<<<< .merge_file_yOw3fZ
-=======
->>>>>>> .merge_file_gcatjS
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_bB3oCr
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_8ooCOz
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_5NBjwa
-=======
->>>>>>> .merge_file_fPT4o4
->>>>>>> .merge_file_gcatjS
     {
         return [
             Section::make('Dati Anagrafici')
