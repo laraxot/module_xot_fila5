@@ -16,12 +16,17 @@ class GuessPivotFullClassAction
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
+<<<<<<< HEAD
      * @param  string|class-string<Model>  $related  The related model class name
      * @param  string|class-string<Model>  $class  The class
 <<<<<<< .merge_file_cXKtLP
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_1HK41N
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
      * @param  string|class-string<Model>  $related  The related model class name
      * @param  string|class-string<Model>  $class  The class
@@ -29,10 +34,12 @@ class GuessPivotFullClassAction
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
 >>>>>>> .merge_file_UGRXoE
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param string|class-string<Model> $related The related model class name
@@ -41,6 +48,10 @@ class GuessPivotFullClassAction
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_05CrB3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function execute(string $pivot_name, string $related, string $class): string
     {
@@ -71,20 +82,27 @@ class GuessPivotFullClassAction
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
+<<<<<<< HEAD
 <<<<<<< .merge_file_cXKtLP
 <<<<<<< HEAD
         if ($parent_class === false) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_1HK41N
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if ($parent_class === false) {
 =======
         if (false === $parent_class) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (false === $parent_class) {
 >>>>>>> .merge_file_UGRXoE
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (false === $parent_class) {
@@ -93,6 +111,10 @@ class GuessPivotFullClassAction
 =======
         if ($parent_class === false) {
 >>>>>>> .merge_file_05CrB3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

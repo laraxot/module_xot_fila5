@@ -103,25 +103,38 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_0soFiI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GgvncZ
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_f9PlBY
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3wHTL7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_0soFiI
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GgvncZ
 =======
 =======
@@ -135,11 +148,16 @@ Per la versione dark:
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_f9PlBY
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3wHTL7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto

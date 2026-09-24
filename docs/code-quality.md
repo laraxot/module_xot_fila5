@@ -131,11 +131,14 @@ return [
 <<<<<<< .merge_file_diQv2L
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cYNPPJ
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -146,12 +149,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cYNPPJ
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'name' => TextInput::make('name'),
@@ -164,11 +173,14 @@ public static function getFormSchema(): array
 <<<<<<< .merge_file_diQv2L
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cYNPPJ
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -179,12 +191,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cYNPPJ
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->label('Nome'),
@@ -388,6 +406,7 @@ This document outlines the best practices for maintaining high code quality with
 <<<<<<< .merge_file_diQv2L
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -405,11 +424,16 @@ This document outlines the best practices for maintaining high code quality with
 - [Filament Best Practices](./filament-best-practices.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cYNPPJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Xot Base Classes](../Xot/project_docs/XOT_BASE_CLASSES.md)
 - [Filament Extension Pattern](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN.md)
 - [Filament Extension Pattern Analysis](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
@@ -418,11 +442,14 @@ This document outlines the best practices for maintaining high code quality with
 <<<<<<< .merge_file_diQv2L
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cYNPPJ
+=======
+>>>>>>> da9ae01a0 (.)
 - [PHP Strict Types](php-strict-types.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
@@ -432,18 +459,28 @@ This document outlines the best practices for maintaining high code quality with
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHP Strict Types](./PHP-STRICT-TYPES.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 <<<<<<< HEAD
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cYNPPJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gLotr8
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_gLotr8
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # __to_study
 
 <!-- Contenuto migrato da _docs/__to_study.txt -->
@@ -60,9 +67,15 @@ updated: 2026-08-24
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 >>>>>>> .merge_file_G2oLlP
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vHGSXn
+=======
+=======
+https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

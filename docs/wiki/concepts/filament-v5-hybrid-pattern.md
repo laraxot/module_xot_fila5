@@ -32,11 +32,14 @@ class TicketForm extends XotBaseResourceForm
 <<<<<<< .merge_file_3svrmN
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -47,12 +50,18 @@ class TicketForm extends XotBaseResourceForm
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [...]; // Array of components
     }
@@ -121,11 +130,14 @@ class ArticleForm extends XotBaseResourceForm
 <<<<<<< .merge_file_3svrmN
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -136,12 +148,18 @@ class ArticleForm extends XotBaseResourceForm
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         // Delegate to configure() to avoid duplication
         $schema = app(Schema::class);
@@ -219,11 +237,14 @@ class ArticleForm extends XotBaseResourceForm
 <<<<<<< .merge_file_3svrmN
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -234,12 +255,18 @@ class ArticleForm extends XotBaseResourceForm
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -281,11 +308,14 @@ abstract class XotBaseResourceForm
 <<<<<<< .merge_file_3svrmN
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -296,12 +326,18 @@ abstract class XotBaseResourceForm
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -363,11 +399,14 @@ abstract class XotBaseResourceInfolist
 <<<<<<< .merge_file_3svrmN
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+>>>>>>> da9ae01a0 (.)
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
@@ -378,12 +417,18 @@ abstract class XotBaseResourceInfolist
 =======
     public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getInfolistSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Y1dDlX
+=======
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();

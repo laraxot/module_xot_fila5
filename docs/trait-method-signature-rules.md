@@ -142,12 +142,14 @@ If you encounter this error:
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Trait Standards Version: 2.0*
 
 =======
 *
 *Trait Standards Version: 2.0*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *
@@ -157,3 +159,9 @@ If you encounter this error:
 *Trait Standards Version: 2.0*
 
 >>>>>>> .merge_file_NFFIGE
+=======
+=======
+*Trait Standards Version: 2.0*
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -6,7 +6,9 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -14,6 +16,11 @@ uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bVeUA0
+=======
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
@@ -28,7 +35,11 @@ uses(TestCase::class);
 =======
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('creates table index correctly', function (): void {
     // We use User model for testing as it surely has 'id' and 'email'
     // but we might want to avoid touching production tables.

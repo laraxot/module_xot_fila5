@@ -151,10 +151,12 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 - [Project Structure Guidelines](PROJECT-STRUCTURE.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Project Structure Guidelines](PROJECT-STRUCTURE.md)
 =======
 - [Project Structure Guidelines](./project-structure.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Project Structure Guidelines](./project-structure.md)
@@ -162,6 +164,11 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 =======
 - [Project Structure Guidelines](PROJECT-STRUCTURE.md)
 >>>>>>> .merge_file_fHqqNN
+=======
+=======
+- [Project Structure Guidelines](./project-structure.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Deploy Best Practices](./deploy-best-practices.md)
 
 ---
@@ -170,6 +177,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
 <<<<<<< .merge_file_b57fgc
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -194,9 +202,14 @@ Motivo:
 <<<<<<< HEAD
 - riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_fHqqNN
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

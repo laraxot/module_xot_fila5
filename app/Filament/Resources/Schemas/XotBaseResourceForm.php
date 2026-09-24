@@ -78,7 +78,11 @@ class XotBaseResourceForm
     public static function getFormSchemaColumns(): int
     {
         return 1;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -100,7 +104,11 @@ class XotBaseResourceForm
      * @return array<string, Step>
      */
     public static function getSteps(): array
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [];
     }
@@ -122,7 +130,11 @@ class XotBaseResourceForm
     }
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected static function getStepByName(string $name): Step
     {
         $methodName = Str::of($name)
@@ -138,7 +150,11 @@ class XotBaseResourceForm
             /** @var array<int, Component> $schemaComponents */
 =======
             /** @var array<Htmlable|string> $schemaComponents */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $schemaComponents = \is_array($schemaResult) ? array_values($schemaResult) : [];
 
             return Step::make($name)->schema($schemaComponents);
@@ -153,6 +169,10 @@ class XotBaseResourceForm
         dddx($methodName);
 
         return Step::make($name)->schema([]);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

@@ -9,10 +9,12 @@
 **Status PHPStan**: ⚠️ 9 errori (Level 9)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status PHPStan**: ⚠️ 9 errori (Level 9)
 =======
 **Status PHPStan**: ⚠️ 9 errori (Level 10)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status PHPStan**: ⚠️ 9 errori (Level 10)
@@ -20,6 +22,11 @@
 =======
 **Status PHPStan**: ⚠️ 9 errori (Level 9)
 >>>>>>> .merge_file_wHiuTt
+=======
+=======
+**Status PHPStan**: ⚠️ 9 errori (Level 9)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -44,10 +51,12 @@
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
 =======
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (9)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (9)
@@ -55,6 +64,11 @@
 =======
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
 >>>>>>> .merge_file_wHiuTt
+=======
+=======
+## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Priorità CRITICA - Blocca altri moduli
 
@@ -272,10 +286,12 @@ function xot_config(string $key): mixed
 **Risultato**: ✅ 0 errori PHPStan Level 9
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 9
 =======
 **Risultato**: ✅ 0 errori PHPStan Level 10
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Risultato**: ✅ 0 errori PHPStan Level 10
@@ -283,6 +299,11 @@ function xot_config(string $key): mixed
 =======
 **Risultato**: ✅ 0 errori PHPStan Level 9
 >>>>>>> .merge_file_wHiuTt
+=======
+=======
+**Risultato**: ✅ 0 errori PHPStan Level 9
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -333,10 +354,12 @@ function xot_config(string $key): mixed
 - [x] PHPStan Level 9 (83% - domani 100%)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] PHPStan Level 9 (83% - domani 100%)
 =======
 - [x] PHPStan Level 10 (83% - domani 100%)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [x] PHPStan Level 10 (83% - domani 100%)
@@ -344,6 +367,11 @@ function xot_config(string $key): mixed
 =======
 - [x] PHPStan Level 9 (83% - domani 100%)
 >>>>>>> .merge_file_wHiuTt
+=======
+=======
+- [x] PHPStan Level 9 (83% - domani 100%)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] PHPDoc 100% coverage
 - [ ] No dead code
 - [ ] No deprecated methods
@@ -392,15 +420,21 @@ function xot_config(string $key): mixed
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [← Xot Module README](./readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [← Xot Module README](./readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wHiuTt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [← Best Practices](./best-practices.md)
 - [← Troubleshooting](./troubleshooting.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
@@ -413,22 +447,31 @@ function xot_config(string $key): mixed
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_wHiuTt
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: ⚠️ 9 ERRORI DA CORREGGERE
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+<<<<<<< HEAD
 <<<<<<< .merge_file_ergF9E
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 **Status**: ⚠️ 9 COMPLETED DA CORREGGERE
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: ⚠️ 9 COMPLETED DA CORREGGERE
@@ -438,3 +481,7 @@ function xot_config(string $key): mixed
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wHiuTt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -31,8 +31,10 @@ class DiffAssocRecursiveAction
      */
     public static function fixType(array $data): array
     {
+<<<<<<< HEAD
         $collection = collect($data)->map(static function (mixed $item) {
 =======
+<<<<<<< HEAD
      * @param array<int|string, mixed> $data
      *
      * @return array<int|string, mixed>
@@ -41,6 +43,10 @@ class DiffAssocRecursiveAction
     {
         $collection = collect($data)->map(static function ($item) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $collection = collect($data)->map(static function ($item) {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if (! is_array($item)) {
                 throw new \Exception('['.__LINE__.']['.self::class.']');
             }
@@ -49,7 +55,11 @@ class DiffAssocRecursiveAction
             return collect($item)->map(static function (mixed $item0) {
 =======
             return collect($item)->map(static function ($item0) {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 if (is_numeric($item0)) {
                     $item0 *= 1;
                 }
@@ -95,7 +105,11 @@ class DiffAssocRecursiveAction
         $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
 =======
         $ris = $coll_1->filter(static function ($value, $key) use ($arr_2) {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {

@@ -21,7 +21,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 name: 25f-tests-getformschema
 description: "Modulo: multi (Activity, Cms, Job, Lang, Media, Notify, Tenant, User)"
@@ -47,7 +51,11 @@ metadata:
 >>>>>>> .merge_file_q8WYVW
 >>>>>>> .merge_file_CRYYwr
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_u2ikyB

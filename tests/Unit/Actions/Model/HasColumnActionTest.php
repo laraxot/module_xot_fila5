@@ -9,6 +9,14 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Modules\Xot\Actions\Model\HasColumnAction;
+use Modules\Xot\Models\BaseModel;
+use PHPUnit\Framework\Assert;
+
+>>>>>>> 930f8146 (Check & fix styling)
 $action = app(HasColumnAction::class);
 
 it('executes without errors', function () use ($action): void {

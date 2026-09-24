@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vceQHh
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Durata: ~3 ore
 ## Status: ✅ COMPLETATO
 
@@ -418,11 +424,13 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 **Status:** COMPLETATO CON SUCCESSO ✅
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status:** COMPLETATO CON SUCCESSO ✅
 =======
 **Data:** [DATE]
 **Status:** COMPLETATO CON SUCCESSO ✅
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data:** [DATE]
@@ -431,3 +439,8 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 =======
 **Status:** COMPLETATO CON SUCCESSO ✅
 >>>>>>> .merge_file_vceQHh
+=======
+=======
+**Status:** COMPLETATO CON SUCCESSO ✅
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

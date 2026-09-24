@@ -47,11 +47,14 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 <<<<<<< .merge_file_5BkwsP
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_NUzGj2
+=======
+>>>>>>> da9ae01a0 (.)
 - [Error Handling Guidelines](../../EXCEPTION-HANDLING-GUIDE.md)
 - [Webhook Integration](../../integrations/WEBHOOK-GUIDE.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
@@ -60,8 +63,12 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Error Handling Guidelines](../../exception-handling-guide.md)
 - [Webhook Integration](../../integrations/webhook-guide.md)
 - [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
@@ -72,9 +79,15 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 <<<<<<< HEAD
 - [Error Formatters Overview](../README.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Error Formatters Overview](../README.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_NUzGj2
+=======
+=======
+- [Error Formatters Overview](../README.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

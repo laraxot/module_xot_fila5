@@ -1,11 +1,17 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_3kjHaC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_IpxFJs
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 
 =======
@@ -14,14 +20,20 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_wgQVYe
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_R6OFyd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * Stub file for PHPStan static analysis of merge_translation_files function.
  * This file provides the function signature for static analysis.
@@ -31,13 +43,19 @@ if (! function_exists('merge_translation_files')) {
     /**
      * Merge multiple PHP translation files into a single array.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_3kjHaC
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $first  First translation file path
      * @param  string  ...$rest  Additional translation file paths
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_IpxFJs
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
      * @param string $first   First translation file path
      * @param string ...$rest Additional translation file paths
@@ -52,11 +70,13 @@ if (! function_exists('merge_translation_files')) {
      * @param  string  ...$rest  Additional translation file paths
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param string $first   First translation file path
      * @param string ...$rest Additional translation file paths
      *
 >>>>>>> .merge_file_wgQVYe
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param string $first   First translation file path
@@ -67,6 +87,10 @@ if (! function_exists('merge_translation_files')) {
      * @param  string  $first  First translation file path
      * @param  string  ...$rest  Additional translation file paths
 >>>>>>> .merge_file_R6OFyd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array

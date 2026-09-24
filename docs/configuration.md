@@ -66,6 +66,7 @@ return [
 <<<<<<< .merge_file_ntuLMd
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -80,11 +81,16 @@ return [
 * [configuration.md](../../../cms/docs/configuration.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zSC37q
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Gestione Domini](DOMAIN_CONFIGURATION.md)
 - [Struttura del Progetto](PROJECT_STRUCTURE.md)
 - [Documentazione Principale](../README.md)
@@ -97,10 +103,12 @@ return [
 * [configuration.md](../../../Cms/docs/configuration.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [configuration.md](../../../Cms/docs/configuration.md)
 =======
 * [configuration.md](../../../Cms/docs/configuration.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [configuration.md](../../../Cms/docs/configuration.md)
@@ -108,3 +116,8 @@ return [
 =======
 * [configuration.md](../../../Cms/docs/configuration.md)
 >>>>>>> .merge_file_zSC37q
+=======
+=======
+* [configuration.md](../../../Cms/docs/configuration.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

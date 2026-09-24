@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 # Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
 =======
@@ -12,6 +16,7 @@
 # Regole Fondamentali per Prompt AI - healthcare_app Fila5 Mono
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Regole Fondamentali per Prompt AI - healthcare_app Fila5 Mono
@@ -19,6 +24,11 @@
 =======
 # Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+# Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing
 
@@ -29,11 +39,15 @@
 Tutti i prompt per generazione di codice, test, o modifiche devono includere queste regole fondamentali:
 
 ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 =======
@@ -43,6 +57,7 @@ Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
@@ -50,6 +65,11 @@ Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
 =======
 Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 1. NEVER use SQLite for testing - ALWAYS MySQL with "_test" suffixed databases
 2. NEVER use RefreshDatabase trait - ALWAYS use DatabaseTransactions
 3. ALWAYS copy .env.testing to .env before running tests: cp .env.testing .env
@@ -63,11 +83,15 @@ Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 
 ### Per Test Generation
 ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 =======
@@ -77,6 +101,7 @@ Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
@@ -84,6 +109,11 @@ Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
 =======
 Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+Create test for ProfileService in Quaeris Fila5 Mono with these rules:
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Use DatabaseTransactions trait, NEVER RefreshDatabase
 - Test concurrent profile creation with first() + try/catch pattern
 - Use MySQL testing configuration (.env.testing with "_test" databases)
@@ -93,11 +123,15 @@ Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 
 ### Per Service Creation
 ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 Create ProfileService for Quaeris Fila5 Mono following these patterns:
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 Create ProfileService for Quaeris Fila5 Mono following these patterns:
 =======
@@ -107,6 +141,7 @@ Create ProfileService for Quaeris Fila5 Mono following these patterns:
 Create ProfileService for healthcare_app Fila5 Mono following these patterns:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Create ProfileService for healthcare_app Fila5 Mono following these patterns:
@@ -114,6 +149,11 @@ Create ProfileService for healthcare_app Fila5 Mono following these patterns:
 =======
 Create ProfileService for Quaeris Fila5 Mono following these patterns:
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+Create ProfileService for Quaeris Fila5 Mono following these patterns:
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Use Spatie QueueableAction pattern, not static service classes
 - Implement getOrCreateProfile with race condition handling:
   try/catch on firstOrFail() then create()
@@ -124,11 +164,15 @@ Create ProfileService for Quaeris Fila5 Mono following these patterns:
 
 ### Per Filament Resources
 ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
 =======
@@ -138,6 +182,7 @@ Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
 Create Filament resource extending XotBaseResource for healthcare_app Fila5 Mono:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Create Filament resource extending XotBaseResource for healthcare_app Fila5 Mono:
@@ -145,6 +190,11 @@ Create Filament resource extending XotBaseResource for healthcare_app Fila5 Mono
 =======
 Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Extend XotBaseResource, never Filament Resource directly
 - Implement getFormSchema() returning array
 - NEVER implement getTableColumns() method
@@ -174,6 +224,7 @@ Xot module base requirements:
 - PHPStan Level 10 compliance mandatory
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -181,6 +232,9 @@ Xot module base requirements:
 ```
 Quaeris module specific requirements:
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 ### Modulo Quaeris
 ```
@@ -196,6 +250,7 @@ Quaeris module specific requirements:
 healthcare_app module specific requirements:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### Modulo healthcare_app
@@ -203,10 +258,16 @@ healthcare_app module specific requirements:
 healthcare_app module specific requirements:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 ### Modulo Quaeris
 ```
 Quaeris module specific requirements:
+<<<<<<< HEAD
 >>>>>>> .merge_file_FRTA6B
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - LimeSurvey integration with proper MySQL connections
 - Use SurveyResponse scopes, never direct table access
 - Multi-database configuration with "_test" suffixes
@@ -272,17 +333,26 @@ Model structure requirements:
 ## 📚 Riferimenti Aggiuntivi
 
 ### Documentazione Principale
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [AGENTS.md](../../../../AGENTS.md) - Guida completa sviluppatori AI
 - [Database Testing Rules](../../../../docs/database-testing-rules.md) - Regole MySQL testing
 - [AI Coding Memory](../../../../AI_CODING_MEMORY.md) - Memoria completa regole
@@ -292,9 +362,13 @@ Model structure requirements:
 - [Profile Duplicate Resolution](../../../../docs/profile-duplicate-issue-resolution.md) - Soluzione completa
 - [MySQL Testing Configuration](../../../../docs/mysql-testing-configuration.md) - Configurazione MySQL
 - [PHPStan Critical Rules](../Xot/docs/phpstan-critical-rules.md) - Regole PHPStan
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 =======
 =======
@@ -312,11 +386,16 @@ Model structure requirements:
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🔧 Integration Guidelines
 
@@ -340,11 +419,15 @@ LimeSurvey specific rules:
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_LaPQc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Ultimo aggiornamento**: 2026-01-22  
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_CDLLFj
 **Ultimo aggiornamento**: 2026-01-22  
 =======
@@ -354,6 +437,7 @@ LimeSurvey specific rules:
 **Ultimo aggiornamento**: [DATE]  
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZR7FP2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]  
@@ -361,6 +445,11 @@ LimeSurvey specific rules:
 =======
 **Ultimo aggiornamento**: 2026-01-22  
 >>>>>>> .merge_file_FRTA6B
+=======
+=======
+**Ultimo aggiornamento**: 2026-01-22  
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **MySQL Testing**: ✅ OBBLIGATORIO  
 **Race Conditions**: ✅ Pattern first() + try/catch  
 **PHPStan Level**: ✅ 10 obbligatorio  

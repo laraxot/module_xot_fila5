@@ -8,24 +8,34 @@ use Illuminate\Database\Eloquent\Model;
 use Mockery;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 <<<<<<< .merge_file_kkYHN4
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * Coverage business: policies, models, actions — esecuzione reale, non class_exists.
@@ -60,19 +70,26 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
+<<<<<<< HEAD
             $ref = new ReflectionClass($class);
 <<<<<<< .merge_file_kkYHN4
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_WToxGZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             $ref = new \ReflectionClass($class);
@@ -80,6 +97,10 @@ final class ModuleBusinessCoverage
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                 continue;
             }
@@ -98,20 +119,27 @@ final class ModuleBusinessCoverage
     public static function mockUser(): UserContract
     {
         /** @var Mockery\MockInterface&UserContract $user */
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
 =======
         $user = \Mockery::mock(UserContract::class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $user = \Mockery::mock(UserContract::class);
 >>>>>>> .merge_file_WToxGZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         $user = \Mockery::mock(UserContract::class);
@@ -120,6 +148,10 @@ final class ModuleBusinessCoverage
 =======
         $user = Mockery::mock(UserContract::class);
 >>>>>>> .merge_file_MueA4G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $user->shouldIgnoreMissing();
         $user->shouldReceive('can')->andReturn(true);
         $user->shouldReceive('hasRole')->andReturn(false);
@@ -135,19 +167,26 @@ final class ModuleBusinessCoverage
     {
         $executed = 0;
         $user = self::mockUser();
+<<<<<<< HEAD
         $record = Mockery::mock(Model::class);
 <<<<<<< .merge_file_kkYHN4
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         $record = Mockery::mock(Model::class);
 =======
         $record = \Mockery::mock(Model::class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $record = \Mockery::mock(Model::class);
 >>>>>>> .merge_file_WToxGZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         $record = \Mockery::mock(Model::class);
@@ -155,15 +194,25 @@ final class ModuleBusinessCoverage
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $record->shouldIgnoreMissing();
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -183,11 +232,16 @@ final class ModuleBusinessCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $policy = new $class();
                 ++$executed;
 
@@ -202,10 +256,15 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                         continue;
                     }
 
@@ -216,20 +275,27 @@ final class ModuleBusinessCoverage
                             $type = $param->getType();
                             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                                 $typeName = $type->getName();
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
                                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
 =======
                                 if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                                 if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
 >>>>>>> .merge_file_WToxGZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                                 if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
@@ -238,23 +304,34 @@ final class ModuleBusinessCoverage
 =======
                                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
 >>>>>>> .merge_file_MueA4G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                                     $args[] = $user;
 
                                     continue;
                                 }
+<<<<<<< HEAD
                                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
 <<<<<<< .merge_file_kkYHN4
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
 =======
                                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
 >>>>>>> .merge_file_WToxGZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
@@ -262,6 +339,10 @@ final class ModuleBusinessCoverage
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                                     $args[] = $record;
 
                                     continue;
@@ -274,20 +355,27 @@ final class ModuleBusinessCoverage
                     }
                 }
             } catch (\Throwable) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
                 $executed++;
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $executed++;
 =======
                 ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 ++$executed;
 >>>>>>> .merge_file_WToxGZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 ++$executed;
@@ -296,6 +384,10 @@ final class ModuleBusinessCoverage
 =======
                 $executed++;
 >>>>>>> .merge_file_MueA4G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
 
@@ -316,11 +408,17 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -345,11 +443,16 @@ final class ModuleBusinessCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ++$discovered;
 
             try {
@@ -369,10 +472,15 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             Assert::assertSame(0, $executed);
 
             return;
@@ -387,20 +495,27 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
             try {
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
                 $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_WToxGZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 $ref = new \ReflectionClass($class);
@@ -409,6 +524,10 @@ final class ModuleBusinessCoverage
 =======
                 $ref = new ReflectionClass($class);
 >>>>>>> .merge_file_MueA4G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 if (! $ref->hasMethod('execute') && ! $ref->hasMethod('handle')) {
                     continue;
                 }
@@ -422,11 +541,17 @@ final class ModuleBusinessCoverage
                     }
                 }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -445,11 +570,16 @@ final class ModuleBusinessCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 if (null === $instance) {
                     continue;
                 }
@@ -463,10 +593,15 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
 
@@ -479,11 +614,17 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Datas') as $class) {
             try {
+<<<<<<< HEAD
 <<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_cppp08
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -501,11 +642,16 @@ final class ModuleBusinessCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 ++$executed;
                 if (method_exists($class, 'from')) {
                     Assert::assertTrue((new \ReflectionClass($class))->hasMethod('from'));
@@ -518,10 +664,15 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> .merge_file_WToxGZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_MueA4G
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
 

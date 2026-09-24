@@ -2,13 +2,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_x3GGMi
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,6 +34,7 @@
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
 >>>>>>> laraxot/dev
 =======
@@ -39,12 +45,17 @@
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dfkSnT
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Readme"
 type: reference
@@ -56,7 +67,10 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< .merge_file_rK4MHl
@@ -68,7 +82,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_x3GGMi
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,11 +99,16 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dfkSnT
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Convenzioni
 
@@ -105,6 +128,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< HEAD
@@ -121,8 +145,15 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -284,8 +315,11 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< .merge_file_rK4MHl
@@ -294,18 +328,22 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_x3GGMi
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
 =======
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
@@ -314,6 +352,9 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 
 >>>>>>> .merge_file_dfkSnT
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -370,6 +411,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< .merge_file_rK4MHl
@@ -380,6 +422,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_x3GGMi
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -387,12 +431,14 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
 =======
+<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
 >>>>>>> laraxot/dev
@@ -400,6 +446,9 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dfkSnT
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -431,6 +480,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_SmVuUD
 
 =======
@@ -445,12 +495,19 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 <<<<<<< HEAD
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 <<<<<<< HEAD
 =======
@@ -522,7 +579,12 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_vi7pr0
 >>>>>>> .merge_file_x3GGMi
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dfkSnT
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

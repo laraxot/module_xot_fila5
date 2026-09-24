@@ -52,6 +52,7 @@ class RecordMail extends Mailable
      */
     public function build(): self
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_CnH6MF
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,6 +64,12 @@ class RecordMail extends Mailable
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_JLFVIW
+=======
+<<<<<<< HEAD
+        /* @phpstan-ignore argument.type (view-string not resolved for module views) */
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return $this->view('xot::emails.record')->with(['data' => $this->recordData]);
     }
 }

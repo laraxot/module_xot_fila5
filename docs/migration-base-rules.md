@@ -28,10 +28,12 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../../docs/project/module_namespace_rules.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
@@ -39,6 +41,10 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -52,11 +58,13 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../../docs/project/module_namespace_rules.md)
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
@@ -65,6 +73,10 @@ Ultimo aggiornamento: 2025-05-13
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -77,15 +89,21 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#[DATE]-regola-nome-univoco-per-headeraction-filament)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#[DATE]-regola-nome-univoco-per-headeraction-filament)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -96,15 +114,21 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -116,15 +140,21 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#[DATE]-pattern-definitivo-headeraction-custom-filament-3]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#[DATE]-pattern-definitivo-headeraction-custom-filament-3]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Il pattern Filament 2 (override statico di make) è obsoleto e genera errori: non usarlo mai nei nuovi moduli o refactoring.
 
 ---
@@ -135,15 +165,21 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Regola colonne tabellari Filament ([DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Regola colonne tabellari Filament ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 - Le colonne delle tabelle Filament devono essere derivate solo dal modello e dalla migrazione.
 - La UI può mostrare solo un sottoinsieme delle colonne, secondo le regole documentate in Performance.
@@ -157,15 +193,21 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Regola estensione modelli aggregati ([DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Regola estensione modelli aggregati ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 - I modelli aggregati e di totali del modulo Performance (es. OrganizzativaTotValutatoreId) devono estendere il `BaseModel` locale (`Modules\Performance\Models\BaseModel`), **NON** `Modules\Xot\Models\BaseModel`.
 - **Motivazione**: isolamento, override locale, necessità di personalizzazione e compatibilità con logiche specifiche del modulo Performance.
@@ -180,7 +222,11 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 > ⚠️ **Warning**: Estendere Xot\BaseModel può causare override indesiderati, perdita di flessibilità e problemi di compatibilità con logiche locali. Seguire sempre la regola sopra per tutti i modelli di totali/aggregati in Performance.
 
@@ -203,9 +249,14 @@ Ultimo aggiornamento: 2025-05-13
 ---
 <<<<<<< .merge_file_iEkMjr
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_q7yTW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

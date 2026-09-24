@@ -1,11 +1,17 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_x7bx60
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -13,24 +19,36 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_F8dg7R
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_DwfLcr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_x7bx60
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 declare(strict_types=1);
 
@@ -41,8 +59,10 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_F8dg7R
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 declare(strict_types=1);
@@ -50,6 +70,10 @@ declare(strict_types=1);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_DwfLcr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
@@ -103,12 +127,18 @@ class SanitizeFieldsHeaderAction extends Action
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
+<<<<<<< HEAD
 <<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
                             $c++;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_x7bx60
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                             ++$c;
 =======
@@ -118,9 +148,11 @@ class SanitizeFieldsHeaderAction extends Action
                             $c++;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                             ++$c;
 >>>>>>> .merge_file_F8dg7R
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                             ++$c;
@@ -128,6 +160,10 @@ class SanitizeFieldsHeaderAction extends Action
 =======
                             $c++;
 >>>>>>> .merge_file_DwfLcr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                         }
                     }
                     if ($save) {
@@ -142,12 +178,18 @@ class SanitizeFieldsHeaderAction extends Action
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  list<string>  $fields
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_x7bx60
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
      * @param list<string> $fields
 =======
@@ -157,9 +199,11 @@ class SanitizeFieldsHeaderAction extends Action
      * @param  list<string>  $fields
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param list<string> $fields
 >>>>>>> .merge_file_F8dg7R
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param list<string> $fields
@@ -167,6 +211,10 @@ class SanitizeFieldsHeaderAction extends Action
 =======
      * @param  list<string>  $fields
 >>>>>>> .merge_file_DwfLcr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function setFields(array $fields): self
     {

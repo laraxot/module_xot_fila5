@@ -16,7 +16,11 @@ use Modules\User\Models\User;
 <<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\strtotime;
 
@@ -113,7 +117,11 @@ class FilterBuilder
                     ->when(
                         $data['until'] ?? null,
                         fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
@@ -131,7 +139,11 @@ class FilterBuilder
 =======
                     $fromStr = is_string($from) ? $from : (string) $from;
                     $untilStr = is_string($until) ? $until : (string) $until;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
@@ -141,7 +153,11 @@ class FilterBuilder
                     $fromStr = SafeStringCastAction::cast($from);
 =======
                     $fromStr = is_string($from) ? $from : (string) $from;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
@@ -151,7 +167,11 @@ class FilterBuilder
                     $untilStr = SafeStringCastAction::cast($until);
 =======
                     $untilStr = is_string($until) ? $until : (string) $until;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }

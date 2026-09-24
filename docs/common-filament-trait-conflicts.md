@@ -13,15 +13,21 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AMhkCf
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🎯 Obiettivo
 
@@ -546,15 +552,21 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AMhkCf
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🎯 Obiettivo
 
@@ -937,10 +949,12 @@ foreach ($properties as $property) {
 **File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 **File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
@@ -948,6 +962,11 @@ foreach ($properties as $property) {
 =======
 **File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> .merge_file_AMhkCf
+=======
+=======
+**File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -1085,10 +1104,12 @@ class MyPage extends XotBaseViewRecord
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 - `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
@@ -1096,3 +1117,8 @@ class MyPage extends XotBaseViewRecord
 =======
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> .merge_file_AMhkCf
+=======
+=======
+- `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

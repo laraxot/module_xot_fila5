@@ -4,15 +4,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qpubMv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🎯 Missione Completata
 
@@ -135,11 +141,13 @@ Creati 3 nuovi documenti:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-[DATE]-merge-conflicts.md` - Questo documento
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. `merge-conflict-resolution-[DATE].md` - Report tecnico dettagliato
@@ -148,6 +156,10 @@ Creati 3 nuovi documenti:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qpubMv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### 10. **AGGIORNAMENTO E STUDIO**
 
@@ -275,15 +287,21 @@ public null|string $var = null;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 1. **merge-conflict-resolution-[DATE].md**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. **merge-conflict-resolution-[DATE].md**
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qpubMv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -306,15 +324,21 @@ public null|string $var = null;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 4. **lessons-learned-[DATE]-merge-conflicts.md** (questo file)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qpubMv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    - Processo completo 10-step
    - Filosofia + Implementation
    - Checklist operativa
@@ -379,15 +403,21 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-[date].md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qpubMv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
@@ -404,6 +434,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 **Status:** ✅ COMPLETATO CON SUCCESSO
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
 =======
@@ -411,6 +442,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data:** [DATE]
@@ -421,3 +453,9 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
 >>>>>>> .merge_file_qpubMv
+=======
+=======
+**Autore:** AI Claude + Metodologia Filosofica 10-Step
+**Status:** ✅ COMPLETATO CON SUCCESSO
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

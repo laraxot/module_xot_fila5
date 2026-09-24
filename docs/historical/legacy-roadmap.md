@@ -176,6 +176,7 @@ Xot Module (Core Framework)
   - [ ] ML-based cache <nome progetto>ion
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_6yJ9bz
 =======
   - [ ] ML-based cache <nome progetto>ion
@@ -183,7 +184,11 @@ Xot Module (Core Framework)
 <<<<<<< HEAD
 >>>>>>> .merge_file_VUktxr
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - [ ] ML-based cache Prediction
 =======
   - [ ] ML-based cache <nome progetto>ion
@@ -193,12 +198,17 @@ Xot Module (Core Framework)
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
   - [ ] ML-based cache <nome progetto>ion
 >>>>>>> .merge_file_QED1cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
   - [ ] Performance optimization
@@ -210,6 +220,7 @@ Xot Module (Core Framework)
   - [ ] Load <nome progetto>ion
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_6yJ9bz
 =======
 - [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
@@ -218,7 +229,11 @@ Xot Module (Core Framework)
 <<<<<<< HEAD
 >>>>>>> .merge_file_VUktxr
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] **Predictive Services** (Priority: MEDIUM)
   - [ ] Load Prediction
 =======
@@ -230,6 +245,7 @@ Xot Module (Core Framework)
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -237,6 +253,10 @@ Xot Module (Core Framework)
 - [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
   - [ ] Load <nome progetto>ion
 >>>>>>> .merge_file_QED1cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - [ ] Resource optimization
   - [ ] Performance forecasting
   - [ ] Anomaly detection
@@ -255,6 +275,7 @@ Xot Module (Core Framework)
 - [ ] <nome progetto>ive services active
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_6yJ9bz
 =======
 - [ ] <nome progetto>ive services active
@@ -262,7 +283,11 @@ Xot Module (Core Framework)
 <<<<<<< HEAD
 >>>>>>> .merge_file_VUktxr
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] Predictive services active
 =======
 - [ ] <nome progetto>ive services active
@@ -272,12 +297,17 @@ Xot Module (Core Framework)
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [ ] <nome progetto>ive services active
 >>>>>>> .merge_file_QED1cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
 
@@ -435,6 +465,7 @@ Xot Module (Core Framework)
 - [ ] <nome progetto>ive services
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_6yJ9bz
 =======
 - [ ] <nome progetto>ive services
@@ -442,7 +473,11 @@ Xot Module (Core Framework)
 <<<<<<< HEAD
 >>>>>>> .merge_file_VUktxr
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] Predictive services
 =======
 - [ ] <nome progetto>ive services
@@ -452,12 +487,17 @@ Xot Module (Core Framework)
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [ ] <nome progetto>ive services
 >>>>>>> .merge_file_QED1cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 #### May 2025
 - [ ] AI integration testing

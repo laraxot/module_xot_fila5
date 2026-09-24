@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Session Summary"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-session-summary.md](./phpstan-session-summary.md)
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Session - Gennaio 2026 - Riepilogo Completo
 
 **Data**: 2026-01-22  
@@ -300,4 +303,7 @@ Eseguire PHPStan su tutti i moduli, comprendere logica, politica, business logic
 ---
 
 *Ultimo aggiornamento: 2026-01-22*
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

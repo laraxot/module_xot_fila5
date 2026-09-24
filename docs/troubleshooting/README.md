@@ -1,9 +1,13 @@
 # Troubleshooting Guide
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_6uKt2W
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -39,6 +43,7 @@
 ## Common Issues
 
 >>>>>>> .merge_file_2HRm7i
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Common Issues
@@ -48,6 +53,12 @@
 ## Common Issues
 
 >>>>>>> .merge_file_euRcG7
+=======
+=======
+## Common Issues
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### PHPStan Errors
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
@@ -79,10 +90,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_iJ18jI
 =======
 =======
 >>>>>>> .merge_file_2HRm7i
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -101,17 +115,28 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< HEAD
 <<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> .merge_file_2HRm7i
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_euRcG7
+=======
+=======
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -137,10 +162,14 @@
 
 ## Getting Help
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_6uKt2W
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -182,19 +211,28 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2HRm7i
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_euRcG7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Check module-specific documentation
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< HEAD
 <<<<<<< .merge_file_6uKt2W
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -242,8 +280,13 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2HRm7i
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_euRcG7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

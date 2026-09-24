@@ -7,10 +7,12 @@
 - [Architecture Complete Guide](./architecture-complete-2025.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Architecture Complete Guide](./architecture-complete-2025.md)
 =======
 - [Architecture Complete Guide](./architecture-complete.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Architecture Complete Guide](./architecture-complete.md)
@@ -18,6 +20,11 @@
 =======
 - [Architecture Complete Guide](./architecture-complete-2025.md)
 >>>>>>> .merge_file_6HJEBA
+=======
+=======
+- [Architecture Complete Guide](./architecture-complete-2025.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Project Philosophy, Religion, Politics, Zen](./project-philosophy-religion-politics-zen.md)
@@ -36,6 +43,7 @@
 <<<<<<< .merge_file_F4OoDx
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -50,11 +58,16 @@
 - [Quality Improvements Summary [DATE]](./quality-improvements-summary-[DATE].md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6HJEBA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHPStan Analysis 2025-01-27](./phpstan-analysis-2025-01-27.md)
 - [PHPStan Analysis 2025-12-17](./phpstan-analysis-2025-12-17.md)
 - [PHPStan Analysis 2025-12-18](./phpstan-analysis-2025-12-18.md)
@@ -83,12 +96,18 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6HJEBA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

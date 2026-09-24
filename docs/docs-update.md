@@ -63,10 +63,12 @@ Aggiornamento massivo documentazione progetto con:
 13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
 =======
 13. `phpstan-fixes-archive-1.md` - Aggiornato con fix novembre
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 13. `phpstan-fixes-archive-1.md` - Aggiornato con fix novembre
@@ -74,6 +76,11 @@ Aggiornamento massivo documentazione progetto con:
 =======
 13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
 >>>>>>> .merge_file_tCwlbn
+=======
+=======
+13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **bashscripts** (3 file):
 14. `docs/mcp-configuration.md`
@@ -235,6 +242,7 @@ Aggiornamento massivo documentazione progetto con:
 <<<<<<< .merge_file_WqvlJu
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -251,11 +259,16 @@ Aggiornamento massivo documentazione progetto con:
 - [bashscripts README](../../../bashscripts/readme.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_tCwlbn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Xot Module](./README.md) - Questo file
 - [Tenant Module](../../Tenant/docs/README.md)
 - [IndennitaResponsabilita Module](../../IndennitaResponsabilita/docs/README.md)
@@ -290,10 +303,12 @@ EOF
 echo "✅ Documento aggiornamento creato"
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 echo "✅ Documento aggiornamento creato"
 =======
 echo "✅ Documento aggiornamento creato"
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 echo "✅ Documento aggiornamento creato"
@@ -301,3 +316,8 @@ echo "✅ Documento aggiornamento creato"
 =======
 echo "✅ Documento aggiornamento creato"
 >>>>>>> .merge_file_tCwlbn
+=======
+=======
+echo "✅ Documento aggiornamento creato"
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

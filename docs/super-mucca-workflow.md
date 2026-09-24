@@ -364,15 +364,21 @@ nano Modules/{ModuleName}/docs/{pattern-name}.md
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Doc correlata 2](../../othermodule/docs/related.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Doc correlata 2](../../othermodule/docs/related.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_sPZxXy
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -422,15 +428,21 @@ phpstan-fixes-2025-12-02.md         # Date
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 phpstan-fixes-[DATE].md         # Date
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 phpstan-fixes-[DATE].md         # Date
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_sPZxXy
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 GUIDE.md                             # Maiuscolo (non README/CHANGELOG)
 ```
 
@@ -741,10 +753,12 @@ Mai tornare indietro. Sempre avanti. Fix forward.
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
 =======
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
@@ -752,3 +766,8 @@ Mai tornare indietro. Sempre avanti. Fix forward.
 =======
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
 >>>>>>> .merge_file_sPZxXy
+=======
+=======
+🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

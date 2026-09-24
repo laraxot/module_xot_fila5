@@ -43,6 +43,38 @@ This document provides guidelines for using strict typing in PHP within a Larave
   declare(strict_types=1);
   ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_TFBmVf
+=======
+- `declare(strict_types=1);` è la **prima istruzione** dopo `<?php` (riga vuota in mezzo). **Mai** prima del tag di apertura: PHP fatale `strict_types declaration must be the very first statement`.
+- Vale per ogni `.php` (app, lang, routes, config, test) e per ogni `.blade.php`.
+- Blade senza PHP in testa: **prepend** il blocco, non sostituire i primi byte (un replace cieco ha già mangiato `@extends` → `nds` e `<!DOCTYPE` → `TYPE html>`).
+  ```php
+  <?php
+
+  declare(strict_types=1);
+
+  ?>
+  ```
+- `mixed` solo ultima spiaggia: JSON / metadata / config bag vendor / firma vendor (Filament `formatStateUsing`, `ValidationRule::validate`). Preferire union, shape `array{…}`, `Assert::isInstanceOf`. Niente `@var mixed` per zittire PHPStan.
+- Collegato: [coverage Theme Zero](../../../Themes/Zero/docs/php-quality-gates-rule.md), campagna [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed-campaign.md).
+=======
+>>>>>>> .merge_file_trqcjj
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_gy2aQg
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+- Always declare strict types at the top of every PHP file to enable strict type checking.
+  ```php
+  declare(strict_types=1);
+  ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_TFBmVf
 =======
 - `declare(strict_types=1);` è la **prima istruzione** dopo `<?php` (riga vuota in mezzo). **Mai** prima del tag di apertura: PHP fatale `strict_types declaration must be the very first statement`.
@@ -60,11 +92,9 @@ This document provides guidelines for using strict typing in PHP within a Larave
 =======
 >>>>>>> .merge_file_trqcjj
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gy2aQg
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### 2. Function and Method Signatures
 - Use type hints for parameters and return types in all function and method declarations.
@@ -102,11 +132,14 @@ This document provides guidelines for using strict typing in PHP within a Larave
 <<<<<<< .merge_file_3adnJS
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_gy2aQg
+=======
+>>>>>>> da9ae01a0 (.)
 - [Code Quality](code_quality.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
@@ -137,17 +170,25 @@ Campagna: [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed
 - [Naming Conventions](./naming-conventions.md)
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 - [Code Quality](./CODE_QUALITY.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 <<<<<<< HEAD
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+<<<<<<< HEAD
 >>>>>>> .merge_file_trqcjj
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gy2aQg
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

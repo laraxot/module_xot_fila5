@@ -25,7 +25,11 @@ use Illuminate\Database\Eloquent\Factories\Factory;
     use Illuminate\Support\Str;
 =======
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 @endisset
 use {{ $reflection->getName() }};
 

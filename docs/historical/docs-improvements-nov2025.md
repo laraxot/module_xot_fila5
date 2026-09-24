@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_mWlv6C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_tUBpEY
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_SuQ85l
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2up271
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Docs Improvements Nov"
 type: concept
@@ -25,9 +34,13 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [docs-improvements-nov.md](./docs-improvements-nov.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_mWlv6C
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_tUBpEY
 =======
 =======
@@ -299,8 +312,13 @@ find . -name "readme.md" -o -name "Readme.md"
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_SuQ85l
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2up271
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

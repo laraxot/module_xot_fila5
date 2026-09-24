@@ -29,6 +29,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 =======
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_xZkTfO
@@ -37,6 +38,12 @@ use Safe\Exceptions\FilesystemException;
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+use Safe\Exceptions\FilesystemException;
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * Class XotBaseTestCase.
@@ -289,6 +296,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
+<<<<<<< HEAD
 <<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -300,6 +308,14 @@ abstract class XotBaseTestCase extends BaseTestCase
         if (null !== $message) {
             $this->expectExceptionMessage($message);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (null !== $message) {
+<<<<<<< HEAD
+            $this->expectExceptionMessageIsOrContains($message);
+=======
+            $this->expectExceptionMessage($message);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
     }
 
@@ -324,6 +340,10 @@ abstract class XotBaseTestCase extends BaseTestCase
 
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function (Application $app) {
+=======
+        if (! $this->app->bound('translator')) {
+            $this->app->singleton('translator', function ($app) {
+>>>>>>> 930f8146 (Check & fix styling)
                 return new Translator(
                     new ArrayLoader,
 <<<<<<< .merge_file_RIi0YP
@@ -502,7 +522,11 @@ abstract class XotBaseTestCase extends BaseTestCase
      * Punta ogni connessione sqlite al file condiviso e condivide un solo PDO.
 =======
      * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      *
      * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
      * each opening their own transaction causes "database is locked". Sharing the
@@ -512,11 +536,15 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
 <<<<<<< HEAD
     protected function prepareSharedSqliteForTesting(): void
+=======
+    protected function prepareSharedFixcitySqliteForTesting(): void
+>>>>>>> 930f8146 (Check & fix styling)
     {
         if ($this->app === null) {
             $this->refreshApplication();
         }
 
+<<<<<<< HEAD
         $database = self::sharedSqlitePath();
 
         // La connessione opzionale 'user' (driver mysql) senza database configurato
@@ -533,6 +561,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             ]);
         }
 =======
+<<<<<<< HEAD
     protected function prepareSharedFixcitySqliteForTesting(): void
     {
         if (null === $this->app) {
@@ -541,6 +570,10 @@ abstract class XotBaseTestCase extends BaseTestCase
 
         $database = database_path('fixcity_data.sqlite');
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $database = database_path('fixcity_data.sqlite');
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -612,10 +645,14 @@ abstract class XotBaseTestCase extends BaseTestCase
         $connectionsProperty->setValue($database, $resolved);
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
     /**
      * Legacy alias kept for module TestCases that still call the old name.
      *
@@ -626,11 +663,16 @@ abstract class XotBaseTestCase extends BaseTestCase
         $this->prepareSharedSqliteForTesting();
     }
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_xZkTfO
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function bindInstance(string $abstract, object $instance): void
     {
         $this->instance($abstract, $instance);
@@ -672,7 +714,11 @@ abstract class XotBaseTestCase extends BaseTestCase
         $this->expectExceptionMessageIsOrContains($message);
 =======
         $this->expectExceptionMessage($message);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

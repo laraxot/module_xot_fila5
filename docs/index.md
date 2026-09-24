@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_XKlP2D
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_tAgCOa
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Xot Module Documentation Index"
 module: "Xot"
@@ -575,19 +578,26 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # 📚 Index of Xot Module Documentation
 
 ## 🎯 Quick Start
 - [**README.md**](README.md) - General overview
 - [**Architecture**](architecture/architecture.md) - System architecture
 - [**Best Practices**](best-practices/best-practices.md) - Development guidelines
+<<<<<<< HEAD
 - [**README.md**](readme.md) - General overview
 - [**Architecture**](architecture/architecture.md) - System architecture
 - [**Best Practices**](best-practices/best-practices.md) - Development guidelines
 - Docs-first governance: before editing code, study and improve local module docs and the active theme docs, then align global `docs/*` and evaluate GitHub Issue/Discussion tracking.
 - Post-edit PHP quality gate: after changing a PHP file, run `phpstan`, `phpmd`, `phpinsights`, then review/create the associated Pest test when the behavior is testable.
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 
 ## 📖 Documentation by Category
 
@@ -605,8 +615,11 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 - [Data Objects](module-development/data-objects.md)
 
 ### 🎨 Filament & UI
+<<<<<<< HEAD
 - [Theme Vite Configuration](./vite-configuration.md)
 - [Theme Assets Workflow](./theme-assets-workflow.md)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 - [Filament Best Practices](filament/filament-best-practices.md)
 - [Filament Resource Rules](filament/filament-resource-rules.md)
 - [Filament Tables Guide](filament/filament-tables.md)
@@ -623,7 +636,10 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 - [Testing Strategy](testing/testing-strategy.md)
 - [Complete Testing Guide](testing/testing.md)
 - [PHPStan Complete Guide](phpstan/phpstan-complete-guide.md)
+<<<<<<< HEAD
 - [PHPStan Runtime Governance](phpstan-runtime-governance.md)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 
 ### 🌐 Translations & Localization
 - [Translation System](translations/translation-system.md)
@@ -633,17 +649,21 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 ### 🛠️ Bash Scripts & Automation
 - [BashScripts Organization](bashscripts/bashscripts-organization.md)
 
+<<<<<<< HEAD
 ### 🤖 AI & Development Tools
 - [Claude Context (Laravel)](../../../claude.md)
 - [AI Agents Guide](../../../../agents.md)
 - [Cursor Rules & Skills](../../../../.cursor/readme.md)
 - [Skills di progetto](../../../../.cursor/skills/)
 
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 ### 🚨 Troubleshooting
 - [**CCR DeepSeek Fix**](troubleshooting/ccr-deepseek-fix.md) - Resolve 400 API error
 - [General Troubleshooting](troubleshooting.md)
 
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Last update: January 2025*
@@ -657,8 +677,14 @@ già coperto sopra in questo `index.md`. Nessun contenuto perso.
 >>>>>>> 64619e34 (.)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_tAgCOa
+=======
+=======
+*Last update: January 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

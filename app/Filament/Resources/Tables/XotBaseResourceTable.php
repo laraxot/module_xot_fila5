@@ -22,6 +22,65 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseResourceTable
 {
     use HasXotTable;
+=======
+use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Filament\Traits\TransTrait;
+use Webmozart\Assert\Assert;
+
+abstract class XotBaseResourceTable
+{
+    use HasXotTable {
+        getTableHeaderActions as private xotGetTableHeaderActions;
+        getGridTableColumns as private xotGetGridTableColumns;
+        getTablePaginated as private xotGetTablePaginated;
+        getSearchableColumns as private xotSearchableColumns;
+    }
+    use TransTrait;
+
+    /**
+     * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     */
+    public function getTableHeaderActions(): array
+    {
+        return $this->xotGetTableHeaderActions();
+    }
+
+    /**
+     * @return array<int, Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getGridTableColumns(): array
+    {
+        return $this->xotGetGridTableColumns();
+    }
+
+    /**
+     * @return bool|array<int|string>
+     */
+    protected function getTablePaginated(): bool|array
+    {
+        $paginated = $this->xotGetTablePaginated();
+
+        if (is_bool($paginated)) {
+            return $paginated;
+        }
+
+        /** @var array<int|string> $options */
+        $options = $paginated;
+
+        return $options;
+    }
+
+    /**
+     * @return array<string>
+     */
+    protected function getSearchableColumns(): array
+    {
+        /** @var array<string> $columns */
+        $columns = $this->xotSearchableColumns();
+
+        return $columns;
+    }
+>>>>>>> 930f8146 (Check & fix styling)
 
     public static function configure(Table $table): Table
     {
@@ -104,5 +163,9 @@ abstract class XotBaseResourceTable
      * @return array<int|string, Column>
      */
     abstract public function getTableColumns(): array;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

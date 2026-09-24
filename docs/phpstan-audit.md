@@ -1,8 +1,11 @@
 # PHPStan Audit Completo - 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # PHPStan Audit Completo - [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## Obiettivo
 Eseguire analisi PHPStan livello 10 per tutti i moduli del progetto seguendo metodologia "Super Mucca".
@@ -105,10 +108,13 @@ Eseguire analisi PHPStan livello 10 per tutti i moduli del progetto seguendo met
 - `laravel/Modules/DbForge/docs/phpstan-fixes-2025-01-22.md` - Documentazione esistente verificata
 - `laravel/Modules/Xot/docs/phpstan-audit-2025-01-27.md` - Questo file
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `laravel/Modules/DbForge/docs/phpstan-fixes-[DATE].md` - Documentazione esistente verificata
 - `laravel/Modules/Xot/docs/phpstan-audit-[DATE].md` - Questo file
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## Pattern Applicati
 
@@ -150,6 +156,7 @@ Eseguire analisi PHPStan livello 10 per tutti i moduli del progetto seguendo met
 - Tutti gli errori PHPStan identificati sono stati corretti
 - La qualità del codice è stata migliorata seguendo best practices Laraxot
 <<<<<<< HEAD
+<<<<<<< HEAD
 - La documentazione è stata aggiornata per tracciare le correzioni
 
 *Ultimo aggiornamento: 2025-01-27*
@@ -157,3 +164,8 @@ Eseguire analisi PHPStan livello 10 per tutti i moduli del progetto seguendo met
 *Ultimo aggiornamento: 2025-01-27*
 - La documentazione è stata aggiornata per tracciare le correzioni
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- La documentazione è stata aggiornata per tracciare le correzioni
+
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> da9ae01a0 (.)

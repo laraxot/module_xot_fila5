@@ -7,11 +7,15 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 ## Collegamenti
 
 - [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_8GPcZ8
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_JfkhTL
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
 =======
@@ -21,6 +25,7 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 - [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ukLWaW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
@@ -28,6 +33,11 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 =======
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
 >>>>>>> .merge_file_O24WMf
+=======
+=======
+- [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Cos'è il Sistema di Prompt
 
@@ -49,11 +59,15 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 
 ### Come Utilizzare Entrambi i Sistemi
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_8GPcZ8
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_JfkhTL
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
 =======
@@ -63,6 +77,7 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ukLWaW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
@@ -70,6 +85,11 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 =======
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
 >>>>>>> .merge_file_O24WMf
+=======
+=======
+1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 2. Utilizzare il [Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md) per istruzioni dettagliate
 
 ## Miglioramenti Recenti
@@ -91,11 +111,15 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 ## Collegamenti Correlati
 
 - [Sistema di Collegamenti della Documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_8GPcZ8
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_JfkhTL
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
 =======
@@ -105,6 +129,7 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ukLWaW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
@@ -112,5 +137,10 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 =======
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
 >>>>>>> .merge_file_O24WMf
+=======
+=======
+- [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)

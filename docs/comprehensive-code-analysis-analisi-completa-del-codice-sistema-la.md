@@ -174,6 +174,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_7ATwon
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -190,6 +191,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -197,6 +199,13 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hZ3YJs
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -216,6 +225,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_7ATwon
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -232,11 +242,19 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_hZ3YJs
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -341,6 +359,7 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_7ATwon
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -359,10 +378,16 @@ class ContactResource extends XotBaseResource
 >>>>>>> .merge_file_JcuszA
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_hZ3YJs
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),
@@ -709,6 +734,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_7ATwon
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -725,6 +751,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -732,6 +759,13 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hZ3YJs
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -751,6 +785,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_7ATwon
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -767,11 +802,19 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_hZ3YJs
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -879,6 +922,7 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_7ATwon
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -897,10 +941,16 @@ class ContactResource extends XotBaseResource
 >>>>>>> .merge_file_JcuszA
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_hZ3YJs
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),

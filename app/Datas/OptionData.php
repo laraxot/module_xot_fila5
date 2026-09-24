@@ -35,12 +35,18 @@ class OptionData extends Data
      * @param string       $prefix       Prefisso per le chiavi delle opzioni
 <<<<<<< HEAD
      * @param list<string> $autoload     Opzioni da caricare automaticamente
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param array<mixed> $autoload     Opzioni da caricare automaticamente
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_QMRz6I
+=======
+=======
+     * @param array<mixed> $autoload     Opzioni da caricare automaticamente
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function __construct(
         public readonly string $cache_driver = 'file',

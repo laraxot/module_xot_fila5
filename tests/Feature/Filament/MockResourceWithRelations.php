@@ -15,7 +15,11 @@ class MockResourceWithRelations extends XotBaseResource
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
     public function getFormSchemaOld(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
     {
         return [];
     }

@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_dUhCW4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_r3GWY6
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,11 +14,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_tvLdGC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PGwqxh
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Sprint Planning: Xot Infrastructure
 
 ## 🏁 Sprint Goal
@@ -37,10 +46,14 @@ Finalize the core documentation and perform a final PHPStan Level 10 audit.
 ## ✅ Definition of Done
 - All 6 files exist and are verified.
 - No PHPStan errors in the module.
+<<<<<<< HEAD
 <<<<<<< .merge_file_dUhCW4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_r3GWY6
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -122,8 +135,13 @@ Implement core extension framework with API, hooks, and event bus.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_tvLdGC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PGwqxh
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -229,10 +229,12 @@ public function getLocalKeyName(): string
 **Status**: ✅ Completato e verificato
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Completato e verificato
 =======
 **Status**: ✅ Completato e verificato
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: ✅ Completato e verificato
@@ -240,3 +242,8 @@ public function getLocalKeyName(): string
 =======
 **Status**: ✅ Completato e verificato
 >>>>>>> .merge_file_GiJZpR
+=======
+=======
+**Status**: ✅ Completato e verificato
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

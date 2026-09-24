@@ -23,36 +23,54 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dcy0Jm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Sb37LO
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_kgyQKM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_5TRejk
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dcy0Jm
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Sb37LO
 =======
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_kgyQKM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5TRejk
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -357,36 +375,54 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dcy0Jm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Sb37LO
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_kgyQKM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_5TRejk
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dcy0Jm
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Sb37LO
 =======
 =======
     public static function getFormSchema(): array {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_kgyQKM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5TRejk
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return [TextInput::make('name')];
     }
 }

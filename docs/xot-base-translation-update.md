@@ -7,15 +7,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0G0VOt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`
@@ -110,6 +116,7 @@ return [
 *Ultimo aggiornamento: 27 Gennaio 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
@@ -117,13 +124,20 @@ return [
 *Ultimo aggiornamento: 27 Gennaio 2025*
 - [Documentazione Principale Traduzioni](../../../../docs/project/translation_rules.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 27 Gennaio 2025*
 - [Documentazione Principale Traduzioni](../../../../docs/project/translation_rules.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
+<<<<<<< HEAD
 >>>>>>> .merge_file_0G0VOt
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

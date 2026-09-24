@@ -2,13 +2,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_XuyG1u
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,6 +34,7 @@
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 >>>>>>> laraxot/dev
 =======
@@ -39,12 +45,17 @@
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_G7aIVN
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Readme"
 type: reference
@@ -56,7 +67,10 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< .merge_file_ykkpgJ
@@ -68,7 +82,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_XuyG1u
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,11 +99,16 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_G7aIVN
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Standard di Codice
 
@@ -107,6 +130,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< HEAD
@@ -124,8 +148,15 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -327,8 +358,11 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_PK9HhS
 <<<<<<< HEAD
 =======
@@ -356,12 +390,23 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 >>>>>>> .merge_file_G7aIVN
+=======
+<<<<<<< HEAD
+=======
+=======
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -415,6 +460,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< .merge_file_ykkpgJ
@@ -425,6 +471,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_XuyG1u
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -432,12 +480,14 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 =======
+<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
 >>>>>>> laraxot/dev
@@ -445,6 +495,9 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_G7aIVN
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -513,6 +566,7 @@ class Doctor extends User
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< .merge_file_ykkpgJ
@@ -523,7 +577,11 @@ class Doctor extends User
 <<<<<<< HEAD
 >>>>>>> .merge_file_XuyG1u
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 // Aggiungere qui altri moduli se necessario
 
 =======
@@ -533,9 +591,14 @@ class Doctor extends User
 =======
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 // Aggiungere qui altri moduli se necessario
 
 <<<<<<< HEAD
@@ -610,9 +673,14 @@ class Doctor extends User
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 - [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
 // Aggiungere qui altri moduli se necessario
 >>>>>>> .merge_file_G7aIVN
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 # La Filosofia Zen dei Getter Semantici
 
 ## Il Principio Fondamentale

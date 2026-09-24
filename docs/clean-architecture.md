@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_siD0xb
 <<<<<<< HEAD
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
@@ -45,9 +48,15 @@ https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Drive
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 >>>>>>> .merge_file_B5S3eV
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_YZhwrZ
+=======
+=======
+https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

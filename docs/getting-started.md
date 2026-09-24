@@ -368,6 +368,7 @@ npm run dev
 <<<<<<< .merge_file_AoVCQJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -385,11 +386,16 @@ npm run dev
 * [getting-started.md](../../../cms/docs/getting-started.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8hF7x3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
 * [getting-started.md](../../../UI/project_docs/getting-started.md)
@@ -487,6 +493,7 @@ npm run dev
 <<<<<<< .merge_file_AoVCQJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -499,11 +506,16 @@ npm run dev
 * [getting-started.md](../../../cms/project_docs/getting-started.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8hF7x3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
 * [getting-started.md](../../../UI/project_docs/getting-started.md)
@@ -518,10 +530,12 @@ npm run dev
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -529,3 +543,8 @@ npm run dev
 =======
 ---
 >>>>>>> .merge_file_8hF7x3
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

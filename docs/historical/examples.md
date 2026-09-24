@@ -239,36 +239,54 @@ class ExampleResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_2XHy9N
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_k5dnsY
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_yIl5DP
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_WiExkC
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_2XHy9N
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_k5dnsY
 =======
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_yIl5DP
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_WiExkC
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -544,36 +562,54 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_2XHy9N
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_k5dnsY
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_yIl5DP
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_WiExkC
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_2XHy9N
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_k5dnsY
 =======
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_yIl5DP
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_WiExkC
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('nome')

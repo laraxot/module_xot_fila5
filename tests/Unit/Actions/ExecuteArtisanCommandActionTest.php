@@ -30,7 +30,11 @@ use PHPUnit\Framework\Assert;
 
 it('executes allowed artisan command correctly', function (): void {
     Event::fake();
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     Process::fake([
         'php artisan migrate' => Process::result('Migration successful', '', 0),
     ]);
@@ -54,7 +58,11 @@ it('handles failed artisan command correctly', function (): void {
 
 it('handles failed artisan command correctly', function (): void {
     Event::fake();
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     Process::fake([
         'php artisan migrate' => Process::result('', 'Migration failed', 1),
     ]);
@@ -70,5 +78,9 @@ it('handles failed artisan command correctly', function (): void {
 <<<<<<< HEAD
 =======
     Event::assertDispatched('artisan-command.failed');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });

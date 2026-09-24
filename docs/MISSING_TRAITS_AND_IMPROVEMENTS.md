@@ -619,10 +619,12 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](architecture.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](architecture.md)
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -630,6 +632,10 @@ class AlertWidget extends BaseTableWidget
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](architecture.md)
 >>>>>>> .merge_file_9UzB0I
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)

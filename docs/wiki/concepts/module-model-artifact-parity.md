@@ -6,12 +6,14 @@ module: Xot
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -20,6 +22,10 @@ module: Xot
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_YpF5Cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 updated: 2026-06-30
 qmd: "xot module model migration factory seeder parity audit N equals N"
 related:
@@ -28,6 +34,7 @@ related:
 <<<<<<< .merge_file_hbc55p
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,11 +49,16 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_YpF5Cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 
 # Module model artifact parity
@@ -56,16 +68,22 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_YpF5Cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Regola N = N = N
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
@@ -93,7 +111,11 @@ Gate sessione: `run-session-gate.sh` §1.1c.
 ## Esclusi dal conteggio
 
 - `abstract` / `Base*`
+<<<<<<< HEAD
 - `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
+=======
+- `TestModel`, `TestSushiModel`
+>>>>>>> 930f8146 (Check & fix styling)
 - Wrapper cross-modulo (es. `Predict\Models\User`)
 
 ## Backlog migrazioni
@@ -104,6 +126,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 <<<<<<< .merge_file_hbc55p
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -164,6 +187,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 - [module-directory-structure-rule.md](../../module-directory-structure-rule.md)
 - [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
@@ -191,3 +215,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_YpF5Cm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

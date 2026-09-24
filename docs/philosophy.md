@@ -23,10 +23,12 @@ The `Xot` module embodies several key philosophical and design principles:
 *   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a predictable codebase, reducing cognitive load for developers.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a predictable codebase, reducing cognitive load for developers.
 =======
 *   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a <nome progetto>able codebase, reducing cognitive load for developers.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a <nome progetto>able codebase, reducing cognitive load for developers.
@@ -34,6 +36,11 @@ The `Xot` module embodies several key philosophical and design principles:
 =======
 *   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a predictable codebase, reducing cognitive load for developers.
 >>>>>>> .merge_file_EtUAKo
+=======
+=======
+*   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a predictable codebase, reducing cognitive load for developers.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 *   **Modularity & Extensibility (The "Xot" Layer):** The existence of `XotBase` prefixed classes is the cornerstone of `Xot`'s modular philosophy. It dictates that other modules must extend these base classes, promoting extensibility while strictly controlling the core architectural patterns. This layer serves as the primary gateway for interacting with underlying frameworks like Laravel and Filament.
 *   **Developer Experience (DX) Enhancement:** Through its development tooling (Artisan commands for resource generation, memory optimization) and structured base classes, `Xot` aims to streamline the development process, making it more efficient and less error-prone.
 *   **Robustness & Type Safety:** A commitment to robust code is evident through the use of `declare(strict_types=1);` and runtime assertions (`Webmozart\Assert\Assert`). This promotes type-safe coding practices, minimizing unexpected behaviors and improving code reliability.
@@ -55,8 +62,11 @@ While `Xot` does not contain specific business logic, it profoundly influences h
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nEiNQU
 <<<<<<< HEAD
 =======
@@ -141,11 +151,16 @@ All Table classes extending XotBaseResourceTable:
 >>>>>>> .merge_file_AlARRZ
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_EtUAKo
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## 🤖 Integration with Model Context Protocol (MCP)
 
 The `Xot` module, being the architectural foundation, naturally serves as the central point for integrating and leveraging Model Context Protocol (MCP) servers. MCPs deeply align with `Xot`'s core philosophy of modularity, developer experience, and structured development.
@@ -171,10 +186,12 @@ The `Xot` module, being the architectural foundation, naturally serves as the ce
 By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
 =======
 By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
@@ -182,3 +199,8 @@ By actively utilizing these MCPs, `Xot` ensures that the entire development ecos
 =======
 By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
 >>>>>>> .merge_file_EtUAKo
+=======
+=======
+By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

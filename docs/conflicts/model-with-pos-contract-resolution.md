@@ -121,10 +121,12 @@ Questa risoluzione garantisce:
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 =======
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
@@ -132,3 +134,8 @@ Per una panoramica di tutti i conflitti risolti, vedere il documento principale 
 =======
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 >>>>>>> .merge_file_aGxVT4
+=======
+=======
+Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

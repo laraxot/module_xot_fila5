@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_1WCDLJ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Case Sensitivity e Struttura Corretta delle Directory nei Moduli Laravel
 
 ## Problemi Identificati
@@ -13,6 +17,19 @@
 Sono stati rilevati diversi problemi di struttura delle directory all'interno dei moduli Laravel:
 
 1. **Case Sensitivity Errata**:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    - **Percorso ERRATO**: `Modules/User/Resources`
    - **Percorso CORRETTO**: `Modules/User/resources`
 
@@ -22,6 +39,29 @@ Sono stati rilevati diversi problemi di struttura delle directory all'interno de
 2. **Posizione Errata del Codice PHP**:
    - **Percorso ERRATO**: `Modules/User/Filament/Widgets`
    - **Percorso CORRETTO**: `Modules/User/app/Filament/Widgets`
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+=======
+   - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Resources`
+   - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/resources`
+
+   - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Config`
+   - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/config`
+
+2. **Posizione Errata del Codice PHP**:
+   - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets`
+   - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament/Widgets`
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Regole Fondamentali
 
@@ -89,10 +129,41 @@ Per verificare la corretta struttura delle directory nei moduli:
 
 ```bash
 # Verifica case sensitivity errata
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 find Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
 
 # Verifica codice PHP fuori da app/
 find Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -v "/app/"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+=======
+find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
+
+# Verifica codice PHP fuori da app/
+find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -v "/app/"
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## Come Correggere
@@ -101,21 +172,84 @@ find Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -
 
 ```bash
 # Rinomina la directory (su sistemi Linux/Unix)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 mv Modules/User/Resources Modules/User/resources_temp
 mv Modules/User/resources_temp Modules/User/resources
 
 mv Modules/User/Config Modules/User/config_temp
 mv Modules/User/config_temp Modules/User/config
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+=======
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Resources /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp /var/www/html/base_<nome progetto>/laravel/Modules/User/resources
+
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Config /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp /var/www/html/base_<nome progetto>/laravel/Modules/User/config
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Per problemi di posizione del codice PHP:
 
 ```bash
 # Crea la directory app se non esiste
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 mkdir -p Modules/User/app/Filament
 
 # Sposta i file nella posizione corretta
 mv Modules/User/Filament/Widgets Modules/User/app/Filament/
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Q80zs8
+<<<<<<< HEAD
+=======
+mkdir -p /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament
+
+# Sposta i file nella posizione corretta
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament/
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## Best Practices
@@ -128,6 +262,7 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 
 ## Collegamenti ad Altri Documenti
 
+<<<<<<< HEAD
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
 <<<<<<< .merge_file_T13AY0
@@ -137,6 +272,7 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
@@ -144,6 +280,12 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_1WCDLJ
+=======
+=======
+- [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
+- [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -155,6 +297,7 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [README.md](./README.md) - Indice principale della documentazione
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
 <<<<<<< .merge_file_T13AY0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
@@ -180,6 +323,7 @@ canonical: ../../../Themes/docs/shared-components/directory-case-sensitivity-1.m
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/directory-case-sensitivity-1.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/directory-case-sensitivity-1.md
@@ -189,3 +333,10 @@ See canonical documentation: ../../../Themes/docs/shared-components/directory-ca
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
 >>>>>>> .merge_file_1WCDLJ
+=======
+=======
+- [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+- [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
+- [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -14,7 +14,11 @@ uses(Modules\Xot\Tests\TestCase::class);
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Array\ArrayToRawJsAction;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 it('converts array to raw js string correctly', function (): void {
     $action = app(ArrayToRawJsAction::class);

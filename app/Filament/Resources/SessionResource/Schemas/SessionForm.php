@@ -18,7 +18,11 @@ class SessionForm extends XotBaseResourceForm
     public function getFormSchema(): array
 =======
     public static function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('id')->required()->maxLength(255),

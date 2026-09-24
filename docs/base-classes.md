@@ -17,11 +17,14 @@ class XotBaseResource
 <<<<<<< .merge_file_5WBwoS
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_LVEjbb
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
@@ -32,12 +35,18 @@ class XotBaseResource
 =======
     public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_LVEjbb
+=======
+=======
+    public static function getFormSchema(): array;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public static function getListTableColumns(): array;
 }
 ```
@@ -131,15 +140,21 @@ class XotBaseEditRecord
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [README](readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [README](readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_LVEjbb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 
@@ -332,10 +347,12 @@ class PolizzaConvenzioneController extends XotBaseController
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 * [base-classes.md](../../../xot/docs/base-classes.md)
 * [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [base-classes.md](../../../xot/docs/base-classes.md)
@@ -343,6 +360,10 @@ class PolizzaConvenzioneController extends XotBaseController
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_LVEjbb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Versione Incoming
 
@@ -354,10 +375,12 @@ class PolizzaConvenzioneController extends XotBaseController
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -365,3 +388,8 @@ class PolizzaConvenzioneController extends XotBaseController
 =======
 ---
 >>>>>>> .merge_file_LVEjbb
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

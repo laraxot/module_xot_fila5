@@ -5,15 +5,22 @@ declare(strict_types=1);
 namespace Modules\Xot\Datas;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+=======
+use Illuminate\Support\Str;
+use Livewire\Wireable;
+use Modules\Tenant\Services\TenantService;
+>>>>>>> 930f8146 (Check & fix styling)
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 <<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,6 +36,14 @@ use function Safe\realpath;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_07Td1a
+=======
+<<<<<<< HEAD
+
+use function Safe\realpath;
+
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
@@ -53,6 +68,10 @@ use function Safe\realpath;
 class XotData extends Data implements Wireable
 {
     use WireableData;
+<<<<<<< HEAD
+=======
+    use Concerns\XotDataProfileThemeAccessors;
+>>>>>>> 930f8146 (Check & fix styling)
 
     public string $main_module = '';
 
@@ -111,7 +130,11 @@ class XotData extends Data implements Wireable
     public static function make(): self
     {
         if (! self::$instance) {
+<<<<<<< HEAD
             $data = app(GetTenantConfigArrayAction::class)->execute('xra');
+=======
+            $data = TenantService::getConfig('xra');
+>>>>>>> 930f8146 (Check & fix styling)
 
             self::$instance = self::from($data);
         }
@@ -305,6 +328,7 @@ class XotData extends Data implements Wireable
         /* @var class-string<Model&ProfileContract> $class */
         return $class;
     }
+<<<<<<< HEAD
 
     public function getHomeController(): string
     {
@@ -643,4 +667,6 @@ class XotData extends Data implements Wireable
         // }
         return true;
     }
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 }

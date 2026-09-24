@@ -17,18 +17,29 @@ class PdfByHtmlAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_Yapzpa
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_fiqDWW
+=======
+>>>>>>> da9ae01a0 (.)
      * <<<<<<< HEAD
      *
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @param string        $html        Contenuto HTML da convertire
      * @param string        $filename    Nome del file PDF
      * @param string        $disk        Disco di storage
      * @param string        $out         Tipo di output (download, path, etc.)
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
+<<<<<<< HEAD
 <<<<<<< HEAD
      *                                   =======
      *                                   <<<<<<< .merge_file_fiqDWW
@@ -44,6 +55,10 @@ class PdfByHtmlAction
      * @param PdfEngineEnum $engine      Engine da utilizzare
      *                                   <<<<<<< .merge_file_fiqDWW
      *                                   =======
+=======
+<<<<<<< .merge_file_fiqDWW
+=======
+>>>>>>> da9ae01a0 (.)
      *                                   =======
      *                                   <<<<<<< .merge_file_oVI9nZ
      * @param string        $html        Contenuto HTML da convertire
@@ -78,6 +93,7 @@ class PdfByHtmlAction
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+<<<<<<< HEAD
      *                                   >>>>>>> .merge_file_EziQIl
      *                                   >>>>>>> laraxot/dev
 =======
@@ -90,6 +106,11 @@ class PdfByHtmlAction
      * @param  string  $orientation  Orientamento (P=Portrait, L=Landscape)
      * @param  PdfEngineEnum  $engine  Engine da utilizzare
 >>>>>>> .merge_file_82XlBl
+=======
+>>>>>>> .merge_file_EziQIl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function execute(
         string $html,

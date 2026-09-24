@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm_campaign=Beta&utm_term=%2Bapis_b&gclid=CjwKCAiAz--OBhBIEiwAG1rIOuHsNpwRqTkgMOTBMlWMqZ_eiLkaTIsgjT1px4eQnzn_Cj62ny9ONhoClisQAvD_BwE
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mUop1e
 <<<<<<< HEAD
 https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm_campaign=Beta&utm_term=%2Bapis_b&gclid=CjwKCAiAz--OBhBIEiwAG1rIOuHsNpwRqTkgMOTBMlWMqZ_eiLkaTIsgjT1px4eQnzn_Cj62ny9ONhoClisQAvD_BwE
@@ -45,9 +48,15 @@ https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm
 https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm_campaign=Beta&utm_term=%2Bapis_b&gclid=CjwKCAiAz--OBhBIEiwAG1rIOuHsNpwRqTkgMOTBMlWMqZ_eiLkaTIsgjT1px4eQnzn_Cj62ny9ONhoClisQAvD_BwE
 >>>>>>> .merge_file_jrBVMA
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm_campaign=Beta&utm_term=%2Bapis_b&gclid=CjwKCAiAz--OBhBIEiwAG1rIOuHsNpwRqTkgMOTBMlWMqZ_eiLkaTIsgjT1px4eQnzn_Cj62ny9ONhoClisQAvD_BwE
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_QxLWA8
+=======
+=======
+https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm_campaign=Beta&utm_term=%2Bapis_b&gclid=CjwKCAiAz--OBhBIEiwAG1rIOuHsNpwRqTkgMOTBMlWMqZ_eiLkaTIsgjT1px4eQnzn_Cj62ny9ONhoClisQAvD_BwE
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

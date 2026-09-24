@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
+<<<<<<< HEAD
+=======
+use Carbon\CarbonInterface;
+>>>>>>> 930f8146 (Check & fix styling)
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
 use Illuminate\Support\Carbon;
@@ -31,11 +35,20 @@ use Illuminate\Support\Carbon;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
+<<<<<<< HEAD
  */
 <<<<<<< HEAD
 /** @phpstan-ignore trait.unused */
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ *
+ * @property bool|null   $is_active
+ * @property Carbon|null $published_at
+ */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 trait HasCommonScopes
 {
     /**
@@ -43,6 +56,9 @@ trait HasCommonScopes
      *
 <<<<<<< HEAD
      * Trovato identico in piu' moduli che condividono questo scope.
+=======
+     * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
+>>>>>>> 930f8146 (Check & fix styling)
      *
      * @param  Builder<static>  $query
 <<<<<<< .merge_file_XQJCRG
@@ -114,8 +130,15 @@ trait HasCommonScopes
      */
     public function scopePublished(Builder $query): Builder
     {
+<<<<<<< HEAD
         return $query->whereNotNull('published_at')
             ->where('published_at', '<=', now());
+=======
+        $query->whereNotNull('published_at');
+        $query->where('published_at', '<=', now());
+
+        return $query;
+>>>>>>> 930f8146 (Check & fix styling)
     }
 
     /**
@@ -146,7 +169,11 @@ trait HasCommonScopes
         return $query->where(function (Builder $q): void {
 =======
         return $query->where(function ($q): void {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $q->whereNull('published_at')
                 ->orWhere('published_at', '>', now());
         });
@@ -169,8 +196,16 @@ trait HasCommonScopes
      *
      * @return Builder<static>
      */
+<<<<<<< HEAD
     public function scopeCreatedAfter(Builder $query, mixed $date): Builder
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+    public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
+=======
+    public function scopeCreatedAfter(Builder $query, mixed $date): Builder
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return $query->where('created_at', '>=', $date);
     }
@@ -192,8 +227,16 @@ trait HasCommonScopes
      *
      * @return Builder<static>
      */
+<<<<<<< HEAD
     public function scopeCreatedBefore(Builder $query, mixed $date): Builder
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+    public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
+=======
+    public function scopeCreatedBefore(Builder $query, mixed $date): Builder
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return $query->where('created_at', '<=', $date);
     }
@@ -215,8 +258,16 @@ trait HasCommonScopes
      *
      * @return Builder<static>
      */
+<<<<<<< HEAD
     public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+    public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
+=======
+    public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return $query->where('updated_at', '>=', $date);
     }
@@ -251,6 +302,7 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
+<<<<<<< HEAD
         $publishedAt = $this->getAttribute('published_at');
 
 <<<<<<< HEAD
@@ -262,6 +314,13 @@ trait HasCommonScopes
         }
 
         return $publishedAt->isPast();
+=======
+        if (! $this->published_at instanceof CarbonInterface) {
+            return false;
+        }
+
+        return $this->published_at->isPast();
+>>>>>>> 930f8146 (Check & fix styling)
     }
 
     /**
@@ -277,6 +336,7 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -290,5 +350,12 @@ trait HasCommonScopes
 =======
         return $this->getAttribute('is_active') === true;
 >>>>>>> .merge_file_OjJp3a
+=======
+<<<<<<< HEAD
+        return true === $this->getAttribute('is_active');
+=======
+        return isset($this->is_active) && true === $this->is_active;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

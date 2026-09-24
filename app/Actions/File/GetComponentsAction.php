@@ -84,6 +84,7 @@ class GetComponentsAction
             /** @var array<int, array<string, mixed>> $comps */
             $comps = is_array($decoded) ? array_values($decoded) : [];
 
+<<<<<<< HEAD
             if ($this->hasCurrentSchema($comps)) {
                 return ComponentFileData::collection($comps);
             }
@@ -93,12 +94,17 @@ class GetComponentsAction
             // "Typed property ...::$name must not be accessed before
             // initialization" alla prima lettura di un DTO incompleto.
 =======
+<<<<<<< HEAD
             $decoded = json_decode($content, false);
             /** @var array<int, mixed> $comps */
             $comps = is_array($decoded) ? array_values($decoded) : [];
 
             return ComponentFileData::collection($comps);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            return ComponentFileData::collection($comps);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         $files = File::allFiles($path);
@@ -140,13 +146,19 @@ class GetComponentsAction
             if ($relative_path !== '') {
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
+<<<<<<< HEAD
                     ->map(fn (string $item) => Str::slug(Str::snake($item)))
 =======
+<<<<<<< HEAD
             if ('' !== $relative_path) {
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
                     ->map(fn ($item) => Str::slug(Str::snake($item)))
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                    ->map(fn ($item) => Str::slug(Str::snake($item)))
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     ->implode('.');
 
                 $comp_name = $prefix.$piece.'.'.Str::slug(Str::snake(Str::replace('\\', ' ', $class_name)));
@@ -216,5 +228,9 @@ class GetComponentsAction
         return true;
     }
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

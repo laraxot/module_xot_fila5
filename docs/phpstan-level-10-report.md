@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  ------ -------------- 
   Line   app/Filament  
@@ -37,6 +38,8 @@
  [ERROR] Found 1 error 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi
@@ -255,7 +258,11 @@ vendor/bin/phpstan analyse --level=8 --error-format=github
 - [Assert Best Practices](https://github.com/webmozarts/assert)
 - [PHP Type System](https://www.php.net/manual/en/language.types.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Generics in PHP](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 =======
 - [Generics in PHP](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Generics in PHP](https://phpstan.org/blog/generics-in-php-using-phpdocs)
+>>>>>>> da9ae01a0 (.)

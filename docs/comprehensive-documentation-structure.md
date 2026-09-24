@@ -354,6 +354,7 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 =======
@@ -361,6 +362,7 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -371,3 +373,9 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 >>>>>>> .merge_file_qaqwmC
+=======
+=======
+**Maintenance**: Xot Module Documentation Team
+**Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

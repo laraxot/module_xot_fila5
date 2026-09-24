@@ -16,10 +16,12 @@
   - [README.md centrale](../../../docs/readme.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [README.md centrale](../../../docs/readme.md)
 =======
   - [README.md centrale](../../../../docs/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
   - [README.md centrale](../../../../docs/readme.md)
@@ -27,3 +29,8 @@
 =======
   - [README.md centrale](../../../docs/readme.md)
 >>>>>>> .merge_file_azoY2z
+=======
+=======
+  - [README.md centrale](../../../docs/README.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

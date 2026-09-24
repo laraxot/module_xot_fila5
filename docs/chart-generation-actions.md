@@ -955,6 +955,7 @@ GeneratePngChartAction::dispatch($type, $data)
 **Dependencies:** Imagick, Spatie QueueableAction
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, Spatie QueueableAction
@@ -964,6 +965,7 @@ GeneratePngChartAction::dispatch($type, $data)
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, Spatie QueueableAction
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **
@@ -972,7 +974,13 @@ GeneratePngChartAction::dispatch($type, $data)
 **Dependencies:** Imagick, Spatie QueueableAction
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, Spatie QueueableAction
+<<<<<<< HEAD
 >>>>>>> .merge_file_7UJHSz
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

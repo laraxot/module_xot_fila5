@@ -38,7 +38,11 @@ class ViewLog extends XotBaseViewRecord
 =======
         $log = $this->getRecord()->getModel();
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return [
             'log_info' => Section::make('Informazioni Log')->schema([
                 'log_grid' => Grid::make(['default' => 3])->schema([

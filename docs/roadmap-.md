@@ -204,6 +204,7 @@ done
 *"XotBase classes provide unshakeable foundation"*
 - Consistent API across all modules
 - Backward compatibility guaranteed
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -215,6 +216,9 @@ done
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 - <nome progetto>able behavior everywhere
@@ -230,6 +234,7 @@ done
 =======
 - Predictable behavior everywhere
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - <nome progetto>able behavior everywhere
@@ -237,6 +242,11 @@ done
 =======
 - Predictable behavior everywhere
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- <nome progetto>able behavior everywhere
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 #### **2. Water (Adaptability)**
 *"Xot flows into any module shape"*
@@ -381,6 +391,7 @@ done
 **Modulo**: Xot (Core Framework)
 **Status**: 95% COMPLETATO
 **Priority**: CRITICAL
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -392,6 +403,9 @@ done
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 **PHPStan**: ✅ Level 10 (0 errori)
@@ -407,6 +421,7 @@ done
 =======
 **PHPStan**: ✅ Level 9 (0 errori)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **PHPStan**: ✅ Level 10 (0 errori)
@@ -414,6 +429,11 @@ done
 =======
 **PHPStan**: ✅ Level 9 (0 errori)
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+**PHPStan**: ✅ Level 10 (0 errori)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Filament**: ✅ 4.x Compatibile
 
 ---
@@ -501,6 +521,7 @@ Xot Module (Core Framework)
 - [x] **Events**: Eventi del sistema
 
 ### 🔧 Technical Excellence
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -512,6 +533,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori
@@ -527,6 +551,7 @@ Xot Module (Core Framework)
 =======
 - [x] **PHPStan Level 9**: 0 errori
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [x] **PHPStan Level 10**: 0 errori
@@ -534,6 +559,11 @@ Xot Module (Core Framework)
 =======
 - [x] **PHPStan Level 9**: 0 errori
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- [x] **PHPStan Level 10**: 0 errori
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -612,6 +642,7 @@ Xot Module (Core Framework)
 
 #### 📋 Features
 - [ ] **Smart Caching** (Priority: MEDIUM)
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -623,6 +654,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
   - [ ] ML-based cache <nome progetto>ion
@@ -638,6 +672,7 @@ Xot Module (Core Framework)
 =======
   - [ ] ML-based cache prediction
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
   - [ ] ML-based cache <nome progetto>ion
@@ -645,14 +680,23 @@ Xot Module (Core Framework)
 =======
   - [ ] ML-based cache prediction
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+  - [ ] ML-based cache <nome progetto>ion
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
   - [ ] Performance optimization
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -679,6 +723,7 @@ Xot Module (Core Framework)
 - [ ] **Predictive Services** (Priority: MEDIUM)
   - [ ] Load prediction
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
@@ -688,6 +733,12 @@ Xot Module (Core Framework)
 - [ ] **Predictive Services** (Priority: MEDIUM)
   - [ ] Load prediction
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
+  - [ ] Load <nome progetto>ion
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - [ ] Resource optimization
   - [ ] Performance forecasting
   - [ ] Anomaly detection
@@ -700,6 +751,7 @@ Xot Module (Core Framework)
 
 #### 🎯 Success Criteria
 - [ ] AI caching working
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -711,6 +763,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 - [ ] <nome progetto>ive services active
@@ -726,6 +781,7 @@ Xot Module (Core Framework)
 =======
 - [ ] Predictive services active
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [ ] <nome progetto>ive services active
@@ -733,6 +789,11 @@ Xot Module (Core Framework)
 =======
 - [ ] Predictive services active
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- [ ] <nome progetto>ive services active
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
 
@@ -772,6 +833,7 @@ Xot Module (Core Framework)
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -783,6 +845,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 - [x] PHPStan Level 10 compliance
@@ -798,6 +863,7 @@ Xot Module (Core Framework)
 =======
 - [x] PHPStan Level 9 compliance
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [x] PHPStan Level 10 compliance
@@ -805,6 +871,11 @@ Xot Module (Core Framework)
 =======
 - [x] PHPStan Level 9 compliance
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- [x] PHPStan Level 10 compliance
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -863,6 +934,7 @@ Xot Module (Core Framework)
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -874,6 +946,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori ✅
@@ -889,6 +964,7 @@ Xot Module (Core Framework)
 =======
 - [x] **PHPStan Level 9**: 0 errori ✅
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [x] **PHPStan Level 10**: 0 errori ✅
@@ -896,6 +972,11 @@ Xot Module (Core Framework)
 =======
 - [x] **PHPStan Level 9**: 0 errori ✅
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- [x] **PHPStan Level 10**: 0 errori ✅
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 90% (target)
 - [ ] **Response Time**: < 50ms
@@ -948,6 +1029,7 @@ Xot Module (Core Framework)
 - [ ] AI research and planning
 - [ ] ML model development
 - [ ] Smart caching implementation
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -959,6 +1041,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 - [ ] <nome progetto>ive services
@@ -974,6 +1059,7 @@ Xot Module (Core Framework)
 =======
 - [ ] Predictive services
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [ ] <nome progetto>ive services
@@ -981,6 +1067,11 @@ Xot Module (Core Framework)
 =======
 - [ ] Predictive services
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- [ ] <nome progetto>ive services
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 #### May 2025
 - [ ] AI integration testing
@@ -1104,6 +1195,7 @@ Xot Module (Core Framework)
 
 ### Development Tools
 - **Testing**: Pest/PHPUnit
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1115,6 +1207,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 - **Code Quality**: PHPStan Level 10
@@ -1130,6 +1225,7 @@ Xot Module (Core Framework)
 =======
 - **Code Quality**: PHPStan Level 9
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Code Quality**: PHPStan Level 10
@@ -1137,6 +1233,11 @@ Xot Module (Core Framework)
 =======
 - **Code Quality**: PHPStan Level 9
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+- **Code Quality**: PHPStan Level 10
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Performance**: Blackfire, New Relic
 - **Monitoring**: Grafana, Prometheus
 - **Documentation**: MkDocs, Swagger
@@ -1150,10 +1251,14 @@ Xot Module (Core Framework)
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_poMNNJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_l2L56e
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -1174,6 +1279,7 @@ Xot Module (Core Framework)
 =======
 **
 >>>>>>> .merge_file_7AYmhW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **
@@ -1181,6 +1287,11 @@ Xot Module (Core Framework)
 =======
 **
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Next Review**: 2025-11-01
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
@@ -1188,6 +1299,7 @@ Xot Module (Core Framework)
 ---
 
 <<<<<<< .merge_file_poMNNJ
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1206,6 +1318,7 @@ Xot Module (Core Framework)
 =======
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
@@ -1213,3 +1326,8 @@ Xot Module (Core Framework)
 =======
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
 >>>>>>> .merge_file_yDYkoY
+=======
+=======
+*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

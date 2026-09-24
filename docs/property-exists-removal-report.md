@@ -100,15 +100,21 @@ Aggiunta sezione di stato:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_E1IdBU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
 
@@ -293,12 +299,18 @@ La rimozione di `property_exists()` dal modulo Xot rappresenta un importante pas
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Report generato automaticamente - Cascade AI - [DATE]*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Report generato automaticamente - Cascade AI - [DATE]*
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_E1IdBU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

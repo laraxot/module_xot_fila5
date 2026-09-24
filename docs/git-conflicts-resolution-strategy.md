@@ -8,15 +8,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data analisi:** [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data analisi:** [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_eWSluJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **File con conflitti identificati:** 586 file PHP
 **Approccio:** Risoluzione manuale focalizzata su business logic
 
@@ -276,10 +282,12 @@ I conflitti sono stati causati da:
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
 =======
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
@@ -287,3 +295,8 @@ I conflitti sono stati causati da:
 =======
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
 >>>>>>> .merge_file_eWSluJ
+=======
+=======
+**Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

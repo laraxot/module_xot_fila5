@@ -4,15 +4,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Lessons Learned – Consolidated Rules ([DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Lessons Learned – Consolidated Rules ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dxj7Ft
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).
 
@@ -85,10 +91,12 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 =======
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
@@ -96,3 +104,8 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 =======
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 >>>>>>> .merge_file_dxj7Ft
+=======
+=======
+- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

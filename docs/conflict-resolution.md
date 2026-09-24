@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_VatHzx
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dge7RB
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Report Conflitti Git - Modulo Xot"
 module: "Xot"
@@ -24,12 +27,17 @@ related:
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dge7RB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Report Conflitti Git - Modulo Xot
 
 ## Data
@@ -38,11 +46,14 @@ related:
 <<<<<<< .merge_file_VatHzx
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dge7RB
+=======
+>>>>>>> da9ae01a0 (.)
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto SaluteOra, coinvolgendo moduli Geo, User e tema Two.
 
@@ -314,6 +325,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 ## Data
 - 2025-01-06
 
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 ## File Risolti in Questa Sessione
 
 | File | Stato | Note |
@@ -336,11 +349,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 - `./vendor/bin/phpstan analyse Modules/Xot Modules/UI` → ❌ blocchi esistenti (warning storici riportati nel log)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> .merge_file_roAXTf
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
 >>>>>>> a01602c7 (.)
 =======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 ## Azioni Successive
 1. Pulire marker nelle documentazioni storiche o spostarle in `archive/`
 2. Valutare pulizia script legacy con marker (non usati in produzione)
@@ -348,6 +364,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 
 ---
 Ultimo aggiornamento: 2025-01-06
+<<<<<<< HEAD
 ---
 module: theme
 topic: conflict-resolution
@@ -358,6 +375,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 >>>>>>> 64619e34 (.)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -365,3 +383,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
 >>>>>>> .merge_file_dge7RB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

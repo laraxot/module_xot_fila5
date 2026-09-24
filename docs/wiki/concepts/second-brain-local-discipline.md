@@ -6,6 +6,7 @@ created: 2026-05-19
 <<<<<<< .merge_file_SRQjgy
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 updated: 2026-07-01
 updated: 2026-07-01
 updated: 2026-07-01
@@ -28,6 +29,7 @@ updated: 2026-07-01
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -36,6 +38,11 @@ updated: 2026-07-01
 updated: 2026-07-01
 updated: 2026-07-01
 >>>>>>> .merge_file_pMHw4g
+=======
+=======
+updated: 2026-07-01
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 qmd: "second brain local discipline module theme wiki on-demand xot canonical"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -85,6 +92,7 @@ Distillato Fixcity — **non** copiare i tip nel bootstrap:
 <<<<<<< .merge_file_SRQjgy
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
 | Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
 | Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
@@ -107,6 +115,7 @@ Distillato Fixcity — **non** copiare i tip nel bootstrap:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -115,6 +124,11 @@ Distillato Fixcity — **non** copiare i tip nel bootstrap:
 | Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
 | Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
 >>>>>>> .merge_file_pMHw4g
+=======
+=======
+| Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | Piano | 003/017 | QMD + wiki → piano breve → act |
 | Contesto | 009/013 | `llm-wiki-qmd.sh search -n 5`; no dump cartelle intere |
 | Spec | 008 | BMAD story + dev-story prima del codice |
@@ -147,6 +161,7 @@ Before closing a docs update in this module/theme:
 <<<<<<< .merge_file_SRQjgy
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
 - [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
 - [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
@@ -169,8 +184,14 @@ Before closing a docs update in this module/theme:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_pMHw4g
+=======
+=======
+- [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

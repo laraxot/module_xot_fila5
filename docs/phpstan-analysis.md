@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_iQDHuG
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,6 +11,11 @@
 - **data**: 2025-11-12
 - **data**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## stato analisi phpstan
+
+- **data**: 2025-11-12
+>>>>>>> da9ae01a0 (.)
 - **ambito**: `Modules/Xot`
 - **comando**: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`
 - **risultato**: ✅ nessun errore (livello massimo configurato)
@@ -17,6 +23,7 @@
 ### osservazioni operative
 - mantenere le classi base allineate ai pattern Laraxot (`XotBase*`, trait condivisi);
 - proseguire con la normalizzazione dei file in `docs/` (evitare duplicati e nomi non conformi);
+<<<<<<< HEAD
 <<<<<<< HEAD
 - verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
 =======
@@ -1086,3 +1093,6 @@ class MyModel extends BaseModel
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ykS9hF
+=======
+- verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
+>>>>>>> da9ae01a0 (.)

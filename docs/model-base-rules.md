@@ -59,15 +59,21 @@ Rollback della regola precedente (2025-05-14) effettuato il 2025-05-15, document
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Rollback della regola precedente ([DATE]) effettuato il [DATE], documentato in Performance/docs/organizzativa-models.md. La regola precedente è stata annullata per esigenze di override e compatibilità.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Rollback della regola precedente ([DATE]) effettuato il [DATE], documentato in Performance/docs/organizzativa-models.md. La regola precedente è stata annullata per esigenze di override e compatibilità.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_v84oQu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Eccezioni
 
@@ -111,10 +117,12 @@ abstract class BaseModel extends XotBaseModel
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [docs/MODULE_NAMESPACE_RULES.md](../../../docs/module_namespace_rules.md)
 - [modules/performance/docs/organizzativa-models.md](../performance/docs/organizzativa-models.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [docs/MODULE_NAMESPACE_RULES.md](../../../docs/module_namespace_rules.md)
@@ -122,3 +130,7 @@ abstract class BaseModel extends XotBaseModel
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_v84oQu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -1,15 +1,24 @@
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_btDrVW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Ck4O3z
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_AKTpHy
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_xbQMWM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 module: Xot
 topic: legacy-roadmap-and-issues
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
@@ -21,9 +30,13 @@ updated: 2026-07-15
 Documentazione canonica spostata:
 
 See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_btDrVW
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Ck4O3z
 =======
 =======
@@ -50,11 +63,16 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_xbQMWM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -370,10 +388,14 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+<<<<<<< HEAD
 <<<<<<< .merge_file_btDrVW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Ck4O3z
 =======
 <<<<<<< HEAD
@@ -383,6 +405,7 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/legacy
 >>>>>>> 64619e34 (.):docs/roadmap/legacy/legacy-roadmap-ands.md
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 =======
@@ -391,3 +414,7 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/legacy
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_xbQMWM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -108,10 +108,12 @@ public static function getModel(): null|string
 - [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
 =======
 - [Laraxot Extension Rules](../../../../docs/laraxot-conventions.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Laraxot Extension Rules](../../../../docs/laraxot-conventions.md)
@@ -119,6 +121,11 @@ public static function getModel(): null|string
 =======
 - [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
 >>>>>>> .merge_file_L46KE0
+=======
+=======
+- [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Note di Manutenzione
 - **Data correzione**: Gennaio 2025
@@ -132,10 +139,12 @@ public static function getModel(): null|string
 *Ultimo aggiornamento: gennaio 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: gennaio 2025*
@@ -143,3 +152,8 @@ public static function getModel(): null|string
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> .merge_file_L46KE0
+=======
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -167,6 +167,7 @@ Risultato ottenuto seguendo rigorosamente:
 
 ### 1. Conflitti Git Risolti (4 file)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
 - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
 - `Modules/Quaeris/app/Datas/DashboardFilterData.php`
@@ -175,6 +176,11 @@ Risultato ottenuto seguendo rigorosamente:
 - `Modules/healthcare_app/app/Datas/AlertDashboardFilterData.php`
 - `Modules/healthcare_app/app/Datas/DashboardFilterData.php`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
+- `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
+- `Modules/Quaeris/app/Datas/DashboardFilterData.php`
+>>>>>>> da9ae01a0 (.)
 
 **Pattern**: Risoluzione manuale sempre scegliendo la versione HEAD con codice funzionante.
 
@@ -306,7 +312,11 @@ Risultato ottenuto seguendo rigorosamente:
 - Zero compromessi su qualità codice
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
 =======
 **Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
+>>>>>>> da9ae01a0 (.)

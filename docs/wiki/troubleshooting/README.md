@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_RYtcQU
 =======
 <<<<<<< HEAD
@@ -13,9 +16,13 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MXE3H5
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_acjegK
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Readme"
 type: reference
@@ -32,7 +39,10 @@ updated: 2026-08-24
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< HEAD
 <<<<<<< .merge_file_UqXBwF
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 =======
@@ -40,7 +50,11 @@ updated: 2026-08-24
 =======
 >>>>>>> .merge_file_MXE3H5
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -65,9 +79,13 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MXE3H5
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_acjegK
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -97,7 +115,10 @@ updated: 2026-08-24
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< HEAD
 <<<<<<< .merge_file_UqXBwF
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 =======
@@ -105,7 +126,11 @@ updated: 2026-08-24
 =======
 >>>>>>> .merge_file_MXE3H5
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -315,6 +340,7 @@ Core module for the FixCity Platform.
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 >>>>>>> laraxot/dev
 =======
@@ -324,6 +350,7 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W8gVlC
 >>>>>>> .merge_file_MXE3H5
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 =======
@@ -332,3 +359,8 @@ Core module for the FixCity Platform.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_acjegK
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -10,6 +10,12 @@ use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 <<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
+=======
+
+use function Safe\copy;
+
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 930f8146 (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 <<<<<<< .merge_file_ZthsVI
@@ -30,7 +36,11 @@ use Webmozart\Assert\Assert;
 >>>>>>> .merge_file_2X5dYJ
 class AssetAction
 {
+<<<<<<< HEAD
     use QueueableActionTrait;
+=======
+    use QueueableAction;
+>>>>>>> 930f8146 (Check & fix styling)
 
     private XotData $xot;
 
@@ -186,6 +196,7 @@ class AssetAction
 
     /**
      * Copies an asset file if it doesn't exist or if forced.
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZthsVI
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -207,6 +218,9 @@ class AssetAction
 =======
 =======
 >>>>>>> .merge_file_2X5dYJ
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
      *
      * In APP_ENV=local the caller forces a copy on every request so assets
      * refresh without a rebuild. PHP-FPM runs as www-data: if the dest was
@@ -263,16 +277,32 @@ class AssetAction
             : new Exception($e->getMessage(), (int) $e->getCode(), $e);
 
         $this->throwCopyException($exception, $path, $from, $to);
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZthsVI
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+     */
+    private function copyAsset(string $from, string $to, string $path, bool $force = false): void
+    {
+        if (! File::exists($to) || $force) {
+            $this->ensureDirectoryExists(\dirname($to));
+
+            try {
+                File::copy($from, $to);
+>>>>>>> da9ae01a0 (.)
             } catch (\Exception $e) {
                 $this->throwCopyException($e, $path, $from, $to);
             }
         }
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2X5dYJ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**

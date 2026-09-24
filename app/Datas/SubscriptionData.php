@@ -7,7 +7,11 @@ namespace Modules\Xot\Datas;
 <<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Spatie\LaravelData\Data;
 
 /**
@@ -19,6 +23,7 @@ use Spatie\LaravelData\Data;
 final class SubscriptionData extends Data
 {
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_p7yoZA
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,6 +41,15 @@ final class SubscriptionData extends Data
      * @param  array<string, string|int>  $plans
      * @param  array<int, class-string<Model>>  $allowedModels
 >>>>>>> .merge_file_59Zxgj
+=======
+<<<<<<< HEAD
+     * @param array<string, string|int>       $plans
+     * @param array<int, class-string<Model>> $allowedModels
+=======
+     * @param array<string, string|int>                                     $plans
+     * @param array<int, class-string<\Illuminate\Database\Eloquent\Model>> $allowedModels
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function __construct(
         public readonly bool $enable = false,

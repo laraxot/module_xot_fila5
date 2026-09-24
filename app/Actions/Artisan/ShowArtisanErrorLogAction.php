@@ -7,11 +7,17 @@ namespace Modules\Xot\Actions\Artisan;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZD4zfl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_apVbWZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -28,11 +34,16 @@ use function Safe\preg_match_all;
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_6SIgjt
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\preg_match_all;
 
@@ -45,10 +56,15 @@ use Webmozart\Assert\Assert;
 =======
 >>>>>>> .merge_file_6SIgjt
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_tpKeSr
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * Replaces Modules\Xot\Services\ArtisanService::errorShow().
  */
@@ -66,20 +82,27 @@ class ShowArtisanErrorLogAction
             $log = '';
         }
         $content = '';
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZD4zfl
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_apVbWZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> .merge_file_6SIgjt
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
@@ -88,6 +111,10 @@ class ShowArtisanErrorLogAction
 =======
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> .merge_file_tpKeSr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $content = File::get(storage_path('logs/'.$log));
         }
 

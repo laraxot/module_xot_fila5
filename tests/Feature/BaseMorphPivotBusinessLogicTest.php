@@ -571,6 +571,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
     });
+<<<<<<< HEAD
 
     test('it can manage tags', function (): void {
         // Arrange
@@ -1170,4 +1171,6 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Assert
         Assert::assertEquals($roundingMode, $pivotRoundingMode);
     });
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 });

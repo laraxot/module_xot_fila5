@@ -86,11 +86,14 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 <<<<<<< .merge_file_9qqbbY
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jOD1zw
+=======
+>>>>>>> da9ae01a0 (.)
 - [Exception Handling Guide](../EXCEPTION-HANDLING-GUIDE.md)
 - [Error Formatters](../formatters/README.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
@@ -99,8 +102,12 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Exception Handling Guide](../exception-handling-guide.md)
 - [Error Formatters](../formatters/readme.md)
 - [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
@@ -111,9 +118,15 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 <<<<<<< HEAD
 - [Handlers Overview](./README.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Handlers Overview](./README.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jOD1zw
+=======
+=======
+- [Handlers Overview](./README.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

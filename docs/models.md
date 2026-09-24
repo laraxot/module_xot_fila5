@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_g5G0hD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Modelli
 
 ## Configurazione Base
@@ -319,13 +323,18 @@ class Comment extends Model
     }
 }
 ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_BdNPIB
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
+=======
 multi key, fixing lazy loading
 https://github.com/topclaudy/compoships
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 multi key, fixing lazy loading
@@ -333,3 +342,7 @@ https://github.com/topclaudy/compoships
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_g5G0hD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

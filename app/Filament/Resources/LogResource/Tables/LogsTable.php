@@ -12,7 +12,11 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Models\Log;
 =======
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 class LogsTable extends XotBaseResourceTable
 {
@@ -24,7 +28,11 @@ class LogsTable extends XotBaseResourceTable
 
     /**
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @return array<string, Column>
      */
     public function getTableColumns(): array
@@ -44,7 +52,11 @@ class LogsTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable(),
             'name' => TextColumn::make('name')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ];
     }
 }

@@ -24,7 +24,11 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 class HasTableWithoutOptionalMethodsTestClass
 {
     use HasXotTable;
@@ -33,21 +37,38 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getLayoutView(): object
 =======
     public function getLayoutView(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         $mock = \Mockery::mock();
         $mock->allows(['getTableColumns' => []]);
         $mock->allows(['getTableContentGrid' => []]);
 
         return $mock;
+<<<<<<< HEAD
     }
 
     #[\Override]
 <<<<<<< HEAD
     /** @return array<int, Column|ColumnGroup|Component> */
 =======
+<<<<<<< HEAD
     /** @return array<int, mixed> */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        // Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
+    }
+
+    #[\Override]
+    /** @return array<int, mixed> */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getTableColumns(): array
     {
         return [];
@@ -66,7 +87,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTable(): Table
     {
         /** @var Table&\Mockery\MockInterface $mock */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $mock = \Mockery::mock(Table::class);
 
         return $mock;
@@ -96,7 +121,11 @@ class HasTableWithoutOptionalMethodsTestClass
     /** @return array<string|int, BaseFilter> */
 =======
     /** @return array<int, mixed> */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getTableFilters(): array
     {
         return [];
@@ -106,7 +135,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTableFiltersForm(): ?Schema
 =======
     public function getTableFiltersForm(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -137,7 +170,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTableColumnToggleForm(): ?Schema
 =======
     public function getTableColumnToggleForm(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -155,7 +192,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTableRecord(): Model|array|null
 =======
     public function getTableRecord(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -164,7 +205,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTableRecordKey(): ?string
 =======
     public function getTableRecordKey(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -198,7 +243,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTableQueryForExport(): ?Builder
 =======
     public function getTableQueryForExport(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -210,7 +259,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getFilteredTableQuery(): ?Builder
 =======
     public function getFilteredTableQuery(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -222,7 +275,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getFilteredSortedTableQuery(): ?Builder
 =======
     public function getFilteredSortedTableQuery(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -234,7 +291,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getAllTableSummaryQuery(): ?Builder
 =======
     public function getAllTableSummaryQuery(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -246,7 +307,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getPageTableSummaryQuery(): ?Builder
 =======
     public function getPageTableSummaryQuery(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -260,7 +325,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getMountedTableActionForm(): ?Schema
 =======
     public function getMountedTableActionForm(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -269,7 +338,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getMountedTableActionRecord(): ?Model
 =======
     public function getMountedTableActionRecord(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -278,7 +351,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getMountedTableActionRecordKey(): ?string
 =======
     public function getMountedTableActionRecordKey(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -292,7 +369,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getMountedTableBulkActionForm(): ?Schema
 =======
     public function getMountedTableBulkActionForm(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -362,11 +443,17 @@ class HasTableWithoutOptionalMethodsTestClass
 =======
 >>>>>>> .merge_file_MuTF3C
 
+<<<<<<< HEAD
     public function mountedTableActionRecord(): ?Model
 =======
+<<<<<<< HEAD
 
     public function mountedTableActionRecord(): mixed
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function mountedTableActionRecord(): mixed
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }
@@ -424,7 +511,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function makeFilamentTranslatableContentDriver(): ?TranslatableContentDriver
 =======
     public function makeFilamentTranslatableContentDriver(): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return null;
     }

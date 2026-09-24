@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Batch Nov"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-batch-nov.md](./phpstan-batch-nov.md)
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Batch Fixes - Novembre 2025
 
 ## Sessione Correzione Modulo per Modulo
@@ -144,4 +147,7 @@ return $schema->components($formSchema);
 - **NO config changes**: phpstan.neon immutato
 - **YES forward only**: Git history preservata
 - **YES docs update**: Documentazione costante
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

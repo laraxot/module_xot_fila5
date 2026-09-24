@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_MEUpF0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_LJVgHf
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -58,6 +62,7 @@ class CreateMyTable extends XotBaseMigration {
 =======
 
 >>>>>>> .merge_file_Dg2owJ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -65,3 +70,8 @@ class CreateMyTable extends XotBaseMigration {
 =======
 
 >>>>>>> .merge_file_xaiVbK
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

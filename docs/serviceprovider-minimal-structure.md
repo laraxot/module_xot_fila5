@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_39R7u3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Principio**: DRY + KISS - Struttura minima necessaria, niente di più
 
 ## 🚨 Regola Fondamentale
@@ -312,10 +318,12 @@ Prima di creare un ServiceProvider:
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 =======
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
@@ -323,3 +331,8 @@ Prima di creare un ServiceProvider:
 =======
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 >>>>>>> .merge_file_39R7u3
+=======
+=======
+**Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

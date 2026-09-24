@@ -12,10 +12,16 @@ use Modules\Xot\Database\Factories\FeedFactory;
 /**
  * Modules\Xot\Models\Feed.
  *
+<<<<<<< HEAD
 <<<<<<< .merge_file_OmgX4Z
 <<<<<<< HEAD
  * <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
  *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
  * @property string      $id
  *                                   =======
  * @property string      $id
@@ -31,10 +37,16 @@ use Modules\Xot\Database\Factories\FeedFactory;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
+<<<<<<< HEAD
 <<<<<<< .merge_file_OmgX4Z
 <<<<<<< HEAD
  * <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
  *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
  * @method static FeedFactory          factory($count = null, $state = [])
  *                                                                         =======
  * @method static FeedFactory          factory($count = null, $state = [])

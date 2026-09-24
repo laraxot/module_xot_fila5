@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_aTK3Uj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_gbzHPc
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Git Conflicts Resolution Jan"
 type: concept
@@ -26,8 +29,12 @@ Vedi il file canonico: [git-conflicts-resolution-jan.md](./git-conflicts-resolut
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -232,8 +239,13 @@ php artisan lang:check
 **Stato**: ✅ Completato
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gbzHPc
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

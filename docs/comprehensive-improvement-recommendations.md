@@ -765,11 +765,13 @@ class ConnectionManagerService
             'Quaeris' => 'quaeris',
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
             'Quaeris' => 'quaeris',
 =======
             'healthcare_app' => 'healthcare_app',
             'ExternalProject' => '<nome progetto>',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             'healthcare_app' => 'healthcare_app',
@@ -778,6 +780,11 @@ class ConnectionManagerService
 =======
             'Quaeris' => 'quaeris',
 >>>>>>> .merge_file_vZsyRb
+=======
+=======
+            'Quaeris' => 'quaeris',
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -866,11 +873,13 @@ class ContactValidationService
 // Modules/Quaeris/Contracts/ChartRendererContract.php
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/Quaeris/Contracts/ChartRendererContract.php
 =======
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
 // Modules/ExternalProject/Contracts/ChartRendererContract.php
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
@@ -879,6 +888,11 @@ class ContactValidationService
 =======
 // Modules/Quaeris/Contracts/ChartRendererContract.php
 >>>>>>> .merge_file_vZsyRb
+=======
+=======
+// Modules/Quaeris/Contracts/ChartRendererContract.php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
@@ -891,11 +905,13 @@ interface ChartRendererContract
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
 =======
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
 // Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
@@ -904,6 +920,11 @@ interface ChartRendererContract
 =======
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> .merge_file_vZsyRb
+=======
+=======
+// Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1075,11 +1096,13 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 // Modules/Quaeris/Services/BulkProcessingService.php
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/Quaeris/Services/BulkProcessingService.php
 =======
 // Modules/healthcare_app/Services/BulkProcessingService.php
 // Modules/ExternalProject/Services/BulkProcessingService.php
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // Modules/healthcare_app/Services/BulkProcessingService.php
@@ -1088,6 +1111,11 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 =======
 // Modules/Quaeris/Services/BulkProcessingService.php
 >>>>>>> .merge_file_vZsyRb
+=======
+=======
+// Modules/Quaeris/Services/BulkProcessingService.php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void
@@ -1485,10 +1513,12 @@ class ContactNotificationService
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
@@ -1496,3 +1526,8 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> .merge_file_vZsyRb
+=======
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

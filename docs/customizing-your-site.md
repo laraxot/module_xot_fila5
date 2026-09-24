@@ -89,6 +89,7 @@ class Foo extends bar
 <<<<<<< .merge_file_JSpYEL
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -106,11 +107,16 @@ class Foo extends bar
 * [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_mP99av
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -206,6 +212,7 @@ class Foo extends bar
 <<<<<<< .merge_file_JSpYEL
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -218,11 +225,16 @@ class Foo extends bar
 * [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_mP99av
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -237,10 +249,12 @@ class Foo extends bar
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -248,3 +262,8 @@ class Foo extends bar
 =======
 ---
 >>>>>>> .merge_file_mP99av
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

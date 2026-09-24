@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_iDm5K6
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_K51boO
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: IDE Helper e property_exists — alias storico
 type: historical
@@ -28,8 +31,12 @@ Consultare:
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Summary: laravel-ide-helper e Eliminazione property_exists()
 
 ## Lavoro Completato
@@ -246,8 +253,13 @@ La filosofia è chiara: rispettare l'architettura Eloquent e fidarsi delle annot
 **Lo Zen:** Semplicità attraverso la comprensione
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_K51boO
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

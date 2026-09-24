@@ -11,11 +11,15 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 ## Note
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_A4rrmO
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nP6A1u
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,11 +27,16 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_nVd0ww
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Pvka5r
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto. 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -107,10 +116,14 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_A4rrmO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nP6A1u
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -200,8 +213,13 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_nVd0ww
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Pvka5r
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

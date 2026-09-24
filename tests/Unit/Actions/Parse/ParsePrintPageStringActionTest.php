@@ -12,7 +12,11 @@ uses(TestCase::class);
 uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\ParsePrintPageStringAction;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 it('parses single pages and ranges', function (): void {
     $str = '1-4,6,7,8,11-14';
@@ -28,7 +32,11 @@ it('throws when no valid page number exists')->todo();
 =======
 it('throws when no valid page number exists', function (): void {
 });
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 it('builds inclusive ranges from fromTo helper', function (): void {
     Assert::assertSame([1, 2, 3], ParsePrintPageStringAction::fromTo(1, 3));
@@ -40,4 +48,8 @@ it('throws when fromTo end is lower than start')->todo();
 =======
 it('throws when fromTo end is lower than start', function (): void {
 });
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

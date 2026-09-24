@@ -9,7 +9,11 @@ use Filament\Panel;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Filament\Pages\MainDashboard;
 
 class AdminPanelProvider extends XotBasePanelProvider
@@ -46,6 +50,10 @@ class AdminPanelProvider extends XotBasePanelProvider
         return $panel->pages([
             MainDashboard::class,
         ]);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

@@ -16,7 +16,11 @@ use function Safe\file_put_contents;
 
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 class SavePhpArrayAction
 {
     use QueueableAction;
@@ -36,8 +40,10 @@ class SavePhpArrayAction
      */
     public function execute(array $data, string $filename): bool
     {
+<<<<<<< HEAD
         return app(\Modules\Xot\Actions\Arr\SavePhpArrayAction::class)->execute($data, $filename);
 =======
+<<<<<<< HEAD
      * @param array<string, mixed> $data
      */
     public function execute(array $data, string $filename): bool
@@ -46,5 +52,11 @@ class SavePhpArrayAction
 
         return (bool) file_put_contents($filename, $content);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $content = "<?php\n\nreturn ".var_export($data, true).";\n";
+
+        return (bool) file_put_contents($filename, $content);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

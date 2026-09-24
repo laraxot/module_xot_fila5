@@ -13,15 +13,21 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Bo07FW
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🎯 Obiettivo
 
@@ -536,10 +542,12 @@ class MyPage extends XotBaseViewRecord
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
@@ -547,3 +555,8 @@ class MyPage extends XotBaseViewRecord
 =======
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> .merge_file_Bo07FW
+=======
+=======
+- `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

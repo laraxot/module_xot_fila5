@@ -261,6 +261,7 @@ class MioModelloResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_nt9WL3
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -277,11 +278,19 @@ class MioModelloResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_CHlzfu
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_FzaapZ
+=======
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -776,6 +785,7 @@ public function handle($user) {
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_nt9WL3
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
 =======
@@ -794,8 +804,12 @@ public function handle($user) {
 =======
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
 =======
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
@@ -811,11 +825,16 @@ public function handle($user) {
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
 >>>>>>> .merge_file_FzaapZ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 2. **Disaccoppiamento**: Riduce le dipendenze verso implementazioni specifiche.
 3. **Testabilità**: Facilita il testing con implementazioni mock dell'interfaccia.
 4. **Flessibilità**: Consente di estendere o cambiare l'implementazione senza impattare il codice esistente.
@@ -824,8 +843,11 @@ public function handle($user) {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nt9WL3
 <<<<<<< HEAD
 =======
@@ -839,11 +861,18 @@ public function handle($user) {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_FzaapZ
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Anti-pattern**: `Assert::isInstanceOf($user, User::class)` (o `BaseUser::class`) accoppia il codice al leaf. Canon:
 
 ```php
@@ -852,10 +881,14 @@ Assert::isInstanceOf($user, UserContract::class);
 
 `UserContract` è `Modules\Xot\Contracts\UserContract`. `getUserClass()` serve per factory/relazioni Eloquent, non per narrowing di `auth()->user()`.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_cLz5ZD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nt9WL3
 >>>>>>> laraxot/dev
 =======
@@ -868,7 +901,12 @@ Assert::isInstanceOf($user, UserContract::class);
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -908,9 +946,12 @@ public function process(\Modules\User\Models\User $user) {
 ```
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nt9WL3
 =======
 <<<<<<< .merge_file_WPz13U
@@ -920,17 +961,21 @@ public function process(\Modules\User\Models\User $user) {
 ```
 =======
 >>>>>>> .merge_file_CHlzfu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 ```
 =======
 ```
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_nt9WL3
 =======
 >>>>>>> .merge_file_f9rc18
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_CHlzfu
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ```
@@ -940,3 +985,7 @@ public function process(\Modules\User\Models\User $user) {
 =======
 ```
 >>>>>>> .merge_file_FzaapZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

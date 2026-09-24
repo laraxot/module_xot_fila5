@@ -57,7 +57,11 @@ class HandlerDecorator implements ExceptionHandler
 >>>>>>> .merge_file_ZmFeMI
      * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function __call(string $name, array $parameters): mixed
     {
@@ -224,6 +228,10 @@ class HandlerDecorator implements ExceptionHandler
             && (new \ReflectionClass($className))->isInstance($e);
 =======
         return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

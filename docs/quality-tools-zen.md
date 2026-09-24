@@ -455,10 +455,12 @@ php artisan insights
 **ZEN ACHIEVED** 🧘‍♂️
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **ZEN ACHIEVED** 🧘‍♂️
 =======
 **ZEN ACHIEVED** 🧘‍♂️
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **ZEN ACHIEVED** 🧘‍♂️
@@ -466,3 +468,8 @@ php artisan insights
 =======
 **ZEN ACHIEVED** 🧘‍♂️
 >>>>>>> .merge_file_Fgj9L5
+=======
+=======
+**ZEN ACHIEVED** 🧘‍♂️
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

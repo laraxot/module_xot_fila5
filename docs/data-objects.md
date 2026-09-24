@@ -1,6 +1,7 @@
 <<<<<<< .merge_file_VCn6Gt
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -79,11 +80,16 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - **Tipo di ritorno `class-string`**: Usare asserzioni o casting appropriati quando si restituiscono stringhe che rappresentano classi.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_7e5fM6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Data Objects
 
 ## Principi Fondamentali
@@ -171,10 +177,12 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - [Convenzioni di Codice](./coding-standards.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
 =======
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Convenzioni di Codice](./coding-standards.md)
@@ -182,3 +190,8 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 =======
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> .merge_file_7e5fM6
+=======
+=======
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

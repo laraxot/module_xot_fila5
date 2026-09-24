@@ -73,10 +73,12 @@ public function get<Nome>Attribute(?type $value): ?type
 - Schede valutazione calcolano valori durante edit
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Schede valutazione calcolano valori durante edit
 =======
 - Scheda valutazione calcola valori durante edit
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Scheda valutazione calcola valori durante edit
@@ -84,6 +86,11 @@ public function get<Nome>Attribute(?type $value): ?type
 =======
 - Schede valutazione calcolano valori durante edit
 >>>>>>> .merge_file_tcacJk
+=======
+=======
+- Schede valutazione calcolano valori durante edit
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Performance evaluation aggrega dati storici
 - Indennità calcola importi da timbrature
 
@@ -146,10 +153,12 @@ if (null == $this->getKey()) {
 8. ⏳ **Progressioni/Models/Schede.php**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 8. ⏳ **Progressioni/Models/Schede.php**
 =======
 8. ⏳ **Progressioni/Models/Scheda.php**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 8. ⏳ **Progressioni/Models/Scheda.php**
@@ -157,6 +166,11 @@ if (null == $this->getKey()) {
 =======
 8. ⏳ **Progressioni/Models/Schede.php**
 >>>>>>> .merge_file_tcacJk
+=======
+=======
+8. ⏳ **Progressioni/Models/Schede.php**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 9. ⏳ **Performance/Models/StabiDirigente.php**
 10. ⏳ **User/Models/BaseTenant.php**
 
@@ -257,10 +271,12 @@ public function getMediaAttribute(): float {
 - [ ] Progressioni/Schede
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Progressioni/Schede
 =======
 - [ ] Progressioni/Scheda
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [ ] Progressioni/Scheda
@@ -268,6 +284,11 @@ public function getMediaAttribute(): float {
 =======
 - [ ] Progressioni/Schede
 >>>>>>> .merge_file_tcacJk
+=======
+=======
+- [ ] Progressioni/Schede
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Settimana 3**:
 - [ ] Altri moduli + cleanup finale
@@ -340,6 +361,7 @@ test('accessor salva se model ha PK', function () {
 <<<<<<< .merge_file_1ZWyqw
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -354,11 +376,16 @@ test('accessor salva se model ha PK', function () {
 - [Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_tcacJk
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Sigma - SchedaTrait Fix](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../Performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../IndennitaCondizioniLavoro/docs/accessor-guard.md) (da creare)
@@ -377,6 +404,17 @@ test('accessor salva se model ha PK', function () {
 <<<<<<< .merge_file_1ZWyqw
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+**Tipo**: Regola Architettutale Globale
+**Applicazione**: Tutti i moduli
+**Severità**: 🔴 CRITICA
+**Status**: 📖 Documentata, 🔄 Implementazione in corso
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -399,9 +437,14 @@ test('accessor salva se model ha PK', function () {
 **Status**: 📖 Documentata, 🔄 Implementazione in corso
 <<<<<<< .merge_file_1ZWyqw
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: 📖 Documentata, 🔄 Implementazione in corso
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_tcacJk
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

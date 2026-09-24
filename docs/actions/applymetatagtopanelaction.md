@@ -44,10 +44,12 @@ In caso di errore durante l'applicazione dei metatag:
 - [MetatagData](metatagdata.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [MetatagData](metatagdata.md)
 =======
 - [MetatagData](../datas/MetatagData.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [MetatagData](../datas/MetatagData.md)
@@ -55,6 +57,11 @@ In caso di errore durante l'applicazione dei metatag:
 =======
 - [MetatagData](metatagdata.md)
 >>>>>>> .merge_file_kuNZTJ
+=======
+=======
+- [MetatagData](../datas/MetatagData.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [MetatagData](../datas/metatagdata.md)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
 

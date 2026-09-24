@@ -6,7 +6,9 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -14,6 +16,11 @@ uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Uamx1P
+=======
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
@@ -25,6 +32,10 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+use PHPUnit\Framework\Assert;
+
+>>>>>>> 930f8146 (Check & fix styling)
 it('gets table columns', function (): void {
     $probe = new HasTableFunctionsTraitProbe;
 <<<<<<< .merge_file_hyUPmv

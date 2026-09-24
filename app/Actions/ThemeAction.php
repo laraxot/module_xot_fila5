@@ -67,12 +67,18 @@ class ThemeAction
         return resource_path('themes/'.self::$currentTheme);
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_QLzixU
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_uj7qR3
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
     public function execute(): void
     {
@@ -86,11 +92,13 @@ class ThemeAction
     public function execute(): void {}
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     public function execute(): void
     {
     }
 >>>>>>> .merge_file_iaoQ85
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public function execute(): void
@@ -100,4 +108,8 @@ class ThemeAction
 =======
     public function execute(): void {}
 >>>>>>> .merge_file_SHiaS8
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

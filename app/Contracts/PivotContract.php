@@ -18,12 +18,18 @@ use Illuminate\Database\Eloquent\Model;
 >>>>>>> .merge_file_WTqF6z
  * @property int|null $status
  *
+<<<<<<< HEAD
  * @method bool update($params)
 =======
+<<<<<<< HEAD
  * @property int|null    $status
  *
  * @method mixed update($params)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @method mixed update($params)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  *
  * @phpstan-require-extends Model
  *

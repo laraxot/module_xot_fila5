@@ -72,6 +72,7 @@ public function __construct()
 <<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 📋 Pattern di Utilizzo
 
 ### Pattern 1: View Manuale (Raccomandato per nomi complessi)
@@ -109,14 +110,21 @@ class SimpleWidget extends XotBaseWidget
 ### Pattern 2: View Manuale (solo eccezione documentata)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 ## 📋 Pattern di Utilizzo
 
 ### Pattern 1: View Manuale (Raccomandato per nomi complessi)
+<<<<<<< HEAD
 >>>>>>> .merge_file_2bRltm
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ```php
 class TimeClockWidget extends XotBaseWidget
@@ -136,9 +144,13 @@ class TimeClockWidget extends XotBaseWidget
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2bRltm
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Nome widget complesso con trattini
 - View con nome diverso dal pattern automatico
 - Controllo esplicito sulla view utilizzata
@@ -162,14 +174,19 @@ class SimpleWidget extends XotBaseWidget
 **Quando usare**:
 - Nome widget semplice che segue il pattern automatico
 - Convenzione naming standard
+<<<<<<< HEAD
 <<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 - La view ha un nome realmente fuori convenzione
 - Il motivo dell'override è documentato
 - Si accetta consapevolmente che l'override blocchi la precedenza `pub_theme::...`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - La view ha un nome realmente fuori convenzione
@@ -178,6 +195,10 @@ class SimpleWidget extends XotBaseWidget
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2bRltm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -238,14 +259,21 @@ class MyWidget extends XotBaseWidget
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2bRltm
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 1. **Definire sempre la view manualmente** se il nome widget è complesso o contiene trattini
 2. **Verificare che la view esista** prima di definirla manualmente
 3. **Usare naming consistente**: se possibile, seguire il pattern automatico
 4. **Documentare view custom** nel widget se il nome non è ovvio
+<<<<<<< HEAD
 <<<<<<< .merge_file_WTedcW
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -258,11 +286,16 @@ class MyWidget extends XotBaseWidget
 5. **Usare naming consistente** per evitare override non necessari
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2bRltm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -280,12 +313,18 @@ class MyWidget extends XotBaseWidget
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2bRltm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

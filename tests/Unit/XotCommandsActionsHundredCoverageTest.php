@@ -30,12 +30,17 @@ test('Filament generators leave unsupported files unchanged', function (): void 
     File::put($path, 'unchanged');
     $file = new SplFileInfo($path, '', 'resource.txt');
 
+<<<<<<< HEAD
     expect((new GenerateFormByFileAction)->execute($file))->toBe(0);
     (new GenerateTableColumnsByFileAction)->execute($file);
 <<<<<<< .merge_file_GFLLog
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_B37aiM
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
     expect((new GenerateFormByFileAction)->execute($file))->toBe(0);
     (new GenerateTableColumnsByFileAction)->execute($file);
@@ -43,10 +48,12 @@ test('Filament generators leave unsupported files unchanged', function (): void 
     expect((new GenerateFormByFileAction())->execute($file))->toBe(0);
     (new GenerateTableColumnsByFileAction())->execute($file);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     expect((new GenerateFormByFileAction())->execute($file))->toBe(0);
     (new GenerateTableColumnsByFileAction())->execute($file);
 >>>>>>> .merge_file_2cEYKU
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     expect((new GenerateFormByFileAction())->execute($file))->toBe(0);
@@ -55,6 +62,10 @@ test('Filament generators leave unsupported files unchanged', function (): void 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cZw4fV
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     expect(File::get($path))->toBe('unchanged');
 

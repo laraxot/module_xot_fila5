@@ -13,9 +13,17 @@ class DestroyAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_TzBz0Z
 <<<<<<< HEAD
      * <<<<<<< HEAD.
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_lqWfgU
+=======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_dGbAu9.
+>>>>>>> da9ae01a0 (.)
      *
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -39,12 +47,15 @@ class DestroyAction
      * @param array<string, mixed> $_rules
      *                                     =======
      *                                     <<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      */
     /**
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
+<<<<<<< HEAD
      *                                     =======
      *                                     >>>>>>> .merge_file_wHn1MB
      * @param array<string, mixed> $_data
@@ -62,6 +73,7 @@ class DestroyAction
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      *                                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+<<<<<<< HEAD
      *                                     >>>>>>> .merge_file_wHn1MB
      *                                     >>>>>>> laraxot/dev
 =======
@@ -74,6 +86,11 @@ class DestroyAction
      * @param  array<string, mixed>  $_data
      * @param  array<string, mixed>  $_rules
 >>>>>>> .merge_file_nYC4Rh
+=======
+>>>>>>> .merge_file_wHn1MB
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function execute(Model $model, array $_data, array $_rules): Model
     {

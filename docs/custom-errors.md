@@ -2,19 +2,29 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -53,11 +63,16 @@ https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
 >>>>>>> .merge_file_ZZJKsV
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XXx0Gn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 public function render($request, Exception $exception)
 {
     if ($this->isHttpException($exception)) {
@@ -65,11 +80,15 @@ public function render($request, Exception $exception)
             return response()->view('errors.' . $exception->getStatusCode(), [], $exception->getStatusCode());
         }
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_6gWml8
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,20 +96,29 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ZZJKsV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XXx0Gn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_6gWml8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -106,11 +134,16 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ZZJKsV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XXx0Gn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 public function render($request, Exception $exception)
 {
     if ($this->isHttpException($exception)) {
@@ -121,10 +154,13 @@ public function render($request, Exception $exception)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
          
 =======
 
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
          
@@ -135,21 +171,31 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
          
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XXx0Gn
+=======
+=======
+         
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         if ($exception->getStatusCode() == 500) {
             return response()->view('errors.' . '500', [], 500);
         }
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_6gWml8
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -157,20 +203,29 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ZZJKsV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XXx0Gn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_6gWml8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -186,11 +241,16 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ZZJKsV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XXx0Gn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 public function render($request, Exception $exception)
 {
     if ($exception instanceof TestingHttpException) {
@@ -201,9 +261,12 @@ public function render($request, Exception $exception)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 }
 =======
 }
@@ -213,6 +276,7 @@ public function render($request, Exception $exception)
 =======
 }
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 }
@@ -220,3 +284,8 @@ public function render($request, Exception $exception)
 =======
 }
 >>>>>>> .merge_file_XXx0Gn
+=======
+=======
+}
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

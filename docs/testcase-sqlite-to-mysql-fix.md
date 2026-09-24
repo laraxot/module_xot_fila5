@@ -206,14 +206,21 @@ Questo è INUTILE perché:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_lQeA10
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Stato:** Pronto per implementazione
 **Righe:** 126 → ~25 (-80%)
 **Complessità:** ESTREMA → MINIMALE
 **Filosofia:** MySQL Production = MySQL Tests ✅
+<<<<<<< HEAD
 <<<<<<< .merge_file_6AdWBd
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -226,9 +233,14 @@ Questo è INUTILE perché:
 <<<<<<< HEAD
 **Filosofia:** MySQL Production = MySQL Tests ✅
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Filosofia:** MySQL Production = MySQL Tests ✅
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lQeA10
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

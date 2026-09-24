@@ -153,7 +153,11 @@ public function canDeleteBulk(Model|\stdClass $record): bool
 - Non rompere funzionalità esistente
 - Seguire convenzioni Filament
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Documentare cambiamenti
 =======
 - Documentare cambiamenti
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Documentare cambiamenti
+>>>>>>> da9ae01a0 (.)

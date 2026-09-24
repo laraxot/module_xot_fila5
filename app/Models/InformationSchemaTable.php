@@ -136,7 +136,11 @@ class InformationSchemaTable extends BaseModel
         return $rows;
 =======
         return $this->getSushiRows();
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**

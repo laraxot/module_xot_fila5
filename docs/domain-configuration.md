@@ -76,6 +76,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 <<<<<<< .merge_file_HtzhnL
 <<<<<<< HEAD
@@ -108,11 +109,17 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Configurazione Generale](CONFIGURATION.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ilAjgF
+=======
+=======
+- [Configurazione Generale](CONFIGURATION.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -133,6 +140,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Troubleshooting](troubleshooting.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](troubleshooting.md)
@@ -141,17 +149,24 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [Gestione Risorse](ASSETS.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](troubleshooting.md)
 >>>>>>> .merge_file_ilAjgF
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -164,10 +179,12 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Standard Interfaccia](../../../../docs/standards/interface_guidelines.md)
 - [Best Practices](../../../../docs/standards/best_practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Standard Interfaccia](../../../../docs/standards/interface_guidelines.md)
@@ -175,6 +192,10 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ilAjgF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Configurazione Basata sul Dominio
 
@@ -253,6 +274,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Struttura Temi](themes.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -262,6 +284,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Configurazione Generale](CONFIGURATION.md)
@@ -274,3 +297,10 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 >>>>>>> .merge_file_ilAjgF
+=======
+=======
+- [Configurazione Generale](CONFIGURATION.md)
+- [Gestione Asset](assets.md)
+- [Struttura Temi](themes.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

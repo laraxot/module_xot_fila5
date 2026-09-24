@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_GeEiNh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_gTpsWz
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Error Curl"
 module: "Xot"
@@ -26,6 +29,7 @@ related:
 =======
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -34,6 +38,10 @@ related:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gTpsWz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: error-curl
@@ -43,6 +51,7 @@ canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 <<<<<<< .merge_file_GeEiNh
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -119,6 +128,7 @@ See canonical documentation: ../../../../Themes/docs/shared-components/error-cur
 >>>>>>> 64619e34 (.)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -126,3 +136,9 @@ See canonical documentation: ../../../../Themes/docs/shared-components/error-cur
 
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 >>>>>>> .merge_file_gTpsWz
+=======
+=======
+
+See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

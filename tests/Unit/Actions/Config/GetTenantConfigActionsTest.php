@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 <<<<<<< .merge_file_Jf2ERO
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,12 @@ use Mockery;
 use Mockery\MockInterface;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+use Mockery\MockInterface;
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Tests\TestCase;
@@ -25,6 +32,10 @@ uses(TestCase::class);
 
 describe('Get Tenant Config Actions', function (): void {
     test('gets tenant config array correctly', function (): void {
+<<<<<<< HEAD
+=======
+        /** @var TestCase $this */
+>>>>>>> 930f8146 (Check & fix styling)
         $configName = 'test_config';
         $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
         $configData = ['key' => 'value'];
@@ -37,6 +48,13 @@ describe('Get Tenant Config Actions', function (): void {
         $mock->shouldReceive('execute')
             ->with($configName.'.php')
             ->andReturn($tempPath);
+=======
+        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+        $mock->expects($this->expectsAtLeastOnce())
+            ->method('execute')
+            ->with($configName.'.php')
+            ->willReturn($tempPath);
+>>>>>>> 930f8146 (Check & fix styling)
 
         app()->instance(GetTenantFilePathAction::class, $mock);
 =======
@@ -63,6 +81,7 @@ describe('Get Tenant Config Actions', function (): void {
     });
 
     test('returns empty array if tenant config file does not exist', function (): void {
+<<<<<<< HEAD
         $configName = 'non_existent';
 
 <<<<<<< HEAD
@@ -70,6 +89,15 @@ describe('Get Tenant Config Actions', function (): void {
         $mock = Mockery::mock(GetTenantFilePathAction::class);
         $mock->shouldReceive('execute')
             ->andReturn('/path/to/nothing.php');
+=======
+        /** @var TestCase $this */
+        $configName = 'non_existent';
+
+        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+        $mock->expects($this->expectsAtLeastOnce())
+            ->method('execute')
+            ->willReturn('/path/to/nothing.php');
+>>>>>>> 930f8146 (Check & fix styling)
 
         app()->instance(GetTenantFilePathAction::class, $mock);
 =======

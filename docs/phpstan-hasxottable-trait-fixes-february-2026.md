@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Hasxottable Trait Fixes"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-hasxottable-trait-fixes.md](./phpstan-hasxottable-trait-fixes.md)
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan HasXotTable Trait Type Safety Fixes - February 2026
 
 ## Data
@@ -179,5 +182,9 @@ Questi controlli sono necessari perché:
 - [PHPStan function.alreadyNarrowedType](https://phpstan.org/writing-php-code/phpdoc-types)
 - [PHPStan instanceof rules](https://phpstan.org/writing-php-code/inference-rules)
 - [Filament Traits Documentation](https://filamentphp.com/docs/4.x/support/traits)
+<<<<<<< HEAD
 - [Laravel Traits](https://laravel.com/docs/12.x/eloquent#traits)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Laravel Traits](https://laravel.com/docs/12.x/eloquent#traits)
+>>>>>>> da9ae01a0 (.)

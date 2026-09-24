@@ -357,10 +357,12 @@ public function getConnectionName(): ?string
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
 =======
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
@@ -368,6 +370,11 @@ public function getConnectionName(): ?string
 =======
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
 >>>>>>> .merge_file_jw5st7
+=======
+=======
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -797,10 +804,12 @@ it('tracks who created the record', function () {
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 =======
 - [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
@@ -808,6 +817,11 @@ it('tracks who created the record', function () {
 =======
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 >>>>>>> .merge_file_jw5st7
+=======
+=======
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 
 ---

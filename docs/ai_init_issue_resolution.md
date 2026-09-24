@@ -4,9 +4,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_K6pdVb
 <<<<<<< HEAD
 =======
@@ -75,12 +78,17 @@ bash bashscripts/tools/sync-ide-junctions.sh
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 
 >>>>>>> .merge_file_zqmjz5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Problema Risolto
 
 Lo script `./bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
@@ -110,10 +118,14 @@ lrwxrwxrwx 1 zorin zorin 22 Dec 22 16:17 ./.gemini -> bashscripts/ai/.gemini
 La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla root del progetto tramite il symlink `.gemini`, come richiesto.
 
 ## Documentazione Aggiornata
+<<<<<<< HEAD
 <<<<<<< .merge_file_CVx3Nd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_K6pdVb
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -127,10 +139,15 @@ La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla roo
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_HCZbKX
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zqmjz5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.

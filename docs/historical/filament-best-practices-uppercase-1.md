@@ -38,7 +38,10 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_9mqiGP
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_v5dtUL
 public function getFormSchema(): array
@@ -50,11 +53,16 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
 =======
+<<<<<<< HEAD
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 public static function getFormSchema(): array
 >>>>>>> .merge_file_TRTCfF
+=======
+public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('nome')->required(),
@@ -140,7 +148,10 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
+<<<<<<< HEAD
 <<<<<<< .merge_file_9mqiGP
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_v5dtUL
     public function getFormSchema(): array
@@ -152,11 +163,16 @@ class SocioResource extends XotBaseResource
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
 =======
+<<<<<<< HEAD
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_TRTCfF
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('cognome')
@@ -336,7 +352,10 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_9mqiGP
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_v5dtUL
 public function getFormSchema(): array
@@ -348,11 +367,16 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
 =======
+<<<<<<< HEAD
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 public static function getFormSchema(): array
 >>>>>>> .merge_file_TRTCfF
+=======
+public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -599,7 +623,10 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_9mqiGP
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_v5dtUL
     public function getFormSchema(): array
@@ -611,11 +638,16 @@ class SocioResource extends XotBaseResource
 >>>>>>> .merge_file_pmD7FL
 >>>>>>> .merge_file_XNaHVV
 =======
+<<<<<<< HEAD
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_TRTCfF
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('nome')->required(),

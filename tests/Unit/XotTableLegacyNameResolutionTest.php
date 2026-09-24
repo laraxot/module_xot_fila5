@@ -1,13 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_STwktN
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_YyLP1Q
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -25,6 +31,7 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 >>>>>>> .merge_file_UqdrtH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -32,6 +39,10 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 >>>>>>> .merge_file_jFBfty
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture;
 use PHPUnit\Framework\Assert;
@@ -39,12 +50,18 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('un override di getTableFilters viene onorato', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_STwktN
 <<<<<<< HEAD
 <<<<<<< HEAD
     $fixture = new LegacyTableNameFixture;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_YyLP1Q
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -60,17 +77,23 @@ test('un override di getTableFilters viene onorato', function (): void {
 =======
     $fixture = new LegacyTableNameFixture();
 >>>>>>> .merge_file_UqdrtH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
     $fixture = new LegacyTableNameFixture;
 >>>>>>> .merge_file_jFBfty
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     Assert::assertSame(['legacy_filter'], array_keys($fixture->getTableFilters()));
 });
 
 test('senza override si ricade sul default vuoto', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_STwktN
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,6 +103,12 @@ test('senza override si ricade sul default vuoto', function (): void {
 <<<<<<< .merge_file_YyLP1Q
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_YyLP1Q
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     $fixture = new class
     {
 <<<<<<< HEAD
@@ -100,6 +129,7 @@ test('senza override si ricade sul default vuoto', function (): void {
 =======
     $fixture = new class {
 >>>>>>> .merge_file_UqdrtH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -107,21 +137,30 @@ test('senza override si ricade sul default vuoto', function (): void {
     $fixture = new class
     {
 >>>>>>> .merge_file_jFBfty
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         use HasXotTable;
 
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
         public function getTableColumns(): array
+<<<<<<< HEAD
 <<<<<<< .merge_file_STwktN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_YyLP1Q
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_UqdrtH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -129,6 +168,12 @@ test('senza override si ricade sul default vuoto', function (): void {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jFBfty
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         {
             return [];
         }
@@ -136,11 +181,17 @@ test('senza override si ricade sul default vuoto', function (): void {
 
     Assert::assertSame([], $fixture->getTableFilters());
 });
+<<<<<<< HEAD
 <<<<<<< .merge_file_STwktN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_YyLP1Q
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -154,8 +205,13 @@ test('senza override si ricade sul default vuoto', function (): void {
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_UqdrtH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jFBfty
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -16,7 +16,11 @@ use Illuminate\Support\Facades\Http;
 use Modules\Xot\Actions\Dummy\GetProductsArrayDummyAction;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('maps only expected keys for each product', function (): void {
     Http::fake([
         'dummyjson.com/products' => Http::response([

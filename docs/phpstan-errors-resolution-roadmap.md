@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Roadmap risoluzione errori PHPStan (modulo base)
 
@@ -30,6 +31,8 @@ Definire un flusso ripetibile per ridurre gli errori PHPStan fino a **0** nel mo
 - [sessione phpstan](./phpstan-session-january-2026-summary.md)
 - [best practices](./best-practices-1.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 # Xot Module - PHPStan Level 10 Errors Resolution Roadmap
 
 **Data**: 2026-01-14  
@@ -69,6 +72,9 @@ Ridurre gli errori PHPStan a **0**.
 ### Fase 2: Verifica Finale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 **Obiettivo**: Confermare 0 errori.
 
 ### Correzioni Implementate (2026-02-02) - ✅ HasXotTable Fixes
@@ -78,6 +84,9 @@ Ridurre gli errori PHPStan a **0**.
     - Suppressi warning `staticMethod.alreadyNarrowedType` e `PHPMD` (Complexity, StaticAccess) per mantenere il codice pulito ma funzionale.
 
 *Ultimo aggiornamento: 2026-02-02*
+<<<<<<< HEAD
 =======
 **Obiettivo**: Confermare 0 errori.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

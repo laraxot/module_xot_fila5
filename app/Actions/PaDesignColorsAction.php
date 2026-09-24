@@ -19,6 +19,7 @@ final class PaDesignColorsAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_wG9Y73
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26,7 +27,12 @@ final class PaDesignColorsAction
 
     public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mHKQTN
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
     public const string PRIMARY_HEX = '#007A52';
 
@@ -36,11 +42,13 @@ final class PaDesignColorsAction
 
     public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     public const string PRIMARY_HEX = '#007A52';
 
     public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
 >>>>>>> .merge_file_VCjyz3
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public const PRIMARY_HEX = '#007A52';
@@ -52,6 +60,10 @@ final class PaDesignColorsAction
 
     public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
 >>>>>>> .merge_file_fxYeMA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     /**
      * @return array{primary: string, institutional_blue: string, danger: string, gray: string, info: string, success: string, warning: string}

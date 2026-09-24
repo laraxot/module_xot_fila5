@@ -328,6 +328,7 @@ Quando scrivi codice con Eloquent:
 **Status**: ✅ 0 Errors
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan Level**: 10
 **Status**: ✅ 0 Errors
 =======
@@ -335,6 +336,7 @@ Quando scrivi codice con Eloquent:
 **PHPStan Level**: 10
 **Status**: ✅ 0 Errors
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -345,3 +347,9 @@ Quando scrivi codice con Eloquent:
 **PHPStan Level**: 10
 **Status**: ✅ 0 Errors
 >>>>>>> .merge_file_8PiIEM
+=======
+=======
+**PHPStan Level**: 10
+**Status**: ✅ 0 Errors
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

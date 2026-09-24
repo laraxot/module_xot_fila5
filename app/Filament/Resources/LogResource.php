@@ -10,15 +10,22 @@ use Filament\Support\Components\Component;
 <<<<<<< .merge_file_3AzJ40
 =======
 use Filament\Schemas\Components\Component;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KuKQLt
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
@@ -49,7 +56,11 @@ class LogResource extends XotBaseResource
     }
 
     public static function getInfolistSchema(): array
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             'name' => TextEntry::make('name')->columnSpanFull(),

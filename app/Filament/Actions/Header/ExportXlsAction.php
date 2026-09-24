@@ -1,11 +1,17 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_x387bc
 <<<<<<< HEAD
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nmngVd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -13,24 +19,36 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_GC1Ny2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_W5RutX
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_x387bc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nmngVd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 declare(strict_types=1);
 
@@ -41,8 +59,10 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_GC1Ny2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 declare(strict_types=1);
@@ -50,15 +70,25 @@ declare(strict_types=1);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_W5RutX
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< HEAD
 <<<<<<< .merge_file_x387bc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nmngVd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -76,6 +106,14 @@ use Modules\Xot\Filament\Actions\XotBaseAction;
 =======
 >>>>>>> .merge_file_W5RutX
 use Exception;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_GC1Ny2
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -84,7 +122,22 @@ use Modules\Xot\Actions\Export\GetExportFileNameAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Exports\XlsFieldsExporter;
 use Modules\Xot\Filament\Actions\XotBaseAction;
+<<<<<<< HEAD
 use RuntimeException;
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_nmngVd
+use RuntimeException;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GC1Ny2
+=======
+use RuntimeException;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Webmozart\Assert\Assert;
 
 class ExportXlsAction extends XotBaseAction
@@ -103,12 +156,18 @@ class ExportXlsAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->label('')
+<<<<<<< HEAD
 <<<<<<< .merge_file_x387bc
 <<<<<<< HEAD
 <<<<<<< HEAD
             //->tooltip(__('xot::actions.export_xls'))
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nmngVd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -197,10 +256,15 @@ class ExportXlsAction extends Action
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_GC1Ny2
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_W5RutX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->iconButton()
             ->color('success')
             ->tooltip(function (): string {
@@ -211,7 +275,19 @@ class ExportXlsAction extends Action
                 $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_xls.tooltip';
                 $translated = __($key);
 
+<<<<<<< HEAD
                 if (\is_string($translated) && $translated !== $key && $translated !== 'export_xls') {
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_nmngVd
+                if (\is_string($translated) && $translated !== $key && $translated !== 'export_xls') {
+=======
+                if (\is_string($translated) && $translated !== $key && 'export_xls' !== $translated) {
+>>>>>>> .merge_file_GC1Ny2
+=======
+                if (\is_string($translated) && $translated !== $key && $translated !== 'export_xls') {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     return $translated;
                 }
 
@@ -226,15 +302,42 @@ class ExportXlsAction extends Action
                 // Filtri + search + sort: stesse righe nello stesso ordine di
                 // `getTableQueryForExport()` usato dal nativo (story Ptv/5.165).
                 $query = $livewire->getFilteredSortedTableQuery();
+<<<<<<< HEAD
                 if ($query === null) {
                     throw new Exception('Query is null');
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_nmngVd
+                if ($query === null) {
+                    throw new Exception('Query is null');
+=======
+                if (null === $query) {
+                    throw new \Exception('Query is null');
+>>>>>>> .merge_file_GC1Ny2
+=======
+                if ($query === null) {
+                    throw new Exception('Query is null');
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 }
                 // Stesso eager del canale nativo (XotBaseExporter::modifyQuery).
                 XlsFieldsExporter::modifyQuery($query);
 
                 $fields = self::resolveXlsFields($livewire);
 
+<<<<<<< HEAD
                 if ($fields === []) {
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_nmngVd
+                if ($fields === []) {
+=======
+                if ([] === $fields) {
+>>>>>>> .merge_file_GC1Ny2
+=======
+                if ($fields === []) {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     // Stesso esito del nativo (CanExportRecords, columnMap vuoto):
                     // avviso e stop. Senza fields CollectionExport farebbe il dump
                     // di tutti gli attributi del model (story Xot/5.162).
@@ -245,12 +348,17 @@ class ExportXlsAction extends Action
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);
+<<<<<<< HEAD
 <<<<<<< .merge_file_x387bc
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nmngVd
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_GC1Ny2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 }
@@ -259,6 +367,12 @@ class ExportXlsAction extends Action
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_W5RutX
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             });
     }
 
@@ -266,19 +380,30 @@ class ExportXlsAction extends Action
     {
         return 'export_xls';
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_x387bc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nmngVd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_GC1Ny2
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_W5RutX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     /**
      * Chiave stringa = percorso data_get, valore = intestazione esplicita
@@ -293,7 +418,19 @@ class ExportXlsAction extends Action
         if (! method_exists($resource, 'getXlsFields')) {
             // Errore di programmazione (Resource senza il contratto export), non
             // un caso da ispezionare con un dump: story 5.160, AC 3.
+<<<<<<< HEAD
             throw new RuntimeException('method getXlsFields does not exist in '.$resource);
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_nmngVd
+            throw new RuntimeException('method getXlsFields does not exist in '.$resource);
+=======
+            throw new \RuntimeException('method getXlsFields does not exist in '.$resource);
+>>>>>>> .merge_file_GC1Ny2
+=======
+            throw new RuntimeException('method getXlsFields does not exist in '.$resource);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
         $rawFields = $resource::getXlsFields($livewire->tableFilters ?? []);
         Assert::isArray($rawFields);
@@ -310,15 +447,26 @@ class ExportXlsAction extends Action
             ->danger()
             ->send();
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_x387bc
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nmngVd
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_GC1Ny2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_W5RutX
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

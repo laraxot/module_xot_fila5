@@ -47,11 +47,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 1. **[Meetup Module - Provider Errors Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)**
    - **Status**: ✅ Real-World Case Study
    - **Purpose**: Actual errors made and corrected in Meetup module ([DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. **[Meetup Module - Provider Errors Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)**
@@ -60,6 +62,10 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6OyWCd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    - **When to read**: To see real before/after examples
    - **Key Topics**:
      - 5 specific errors committed
@@ -219,15 +225,21 @@ class AdminPanelProvider extends XotBasePanelProvider
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 4. **Day 4**: Study [Meetup Module - Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 4. **Day 4**: Study [Meetup Module - Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6OyWCd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 5. **Day 5**: Create your first provider using templates
 
 ### For Code Review
@@ -274,6 +286,7 @@ When reviewing provider code:
 <<<<<<< .merge_file_ePMwcL
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -285,11 +298,16 @@ When reviewing provider code:
 | Meetup/provider-errors-lessons-learned.md | [DATE] | ✅ Current | High |
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6OyWCd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | serviceprovider-minimal-structure.md | 2025-01-10 | ✅ Current | Critical |
 | provider-common-mistakes.md | 2025-12-16 | ✅ Current | Critical |
 | xotbase-extension-rules.md | 2025-08-27 | ✅ Current | High |
@@ -307,6 +325,17 @@ When reviewing provider code:
 <<<<<<< .merge_file_ePMwcL
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+**Maintainer**: Laraxot Team
+**Status**: ✅ Active Index
+
+**Note**: Always consult this index before creating or modifying providers. Keep it updated when adding new provider documentation.
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -329,9 +358,14 @@ When reviewing provider code:
 **Note**: Always consult this index before creating or modifying providers. Keep it updated when adding new provider documentation.
 <<<<<<< .merge_file_ePMwcL
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Note**: Always consult this index before creating or modifying providers. Keep it updated when adding new provider documentation.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6OyWCd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

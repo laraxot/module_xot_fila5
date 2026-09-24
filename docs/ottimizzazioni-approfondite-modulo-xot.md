@@ -232,15 +232,22 @@ grep -r "extends.*Resource" app/Filament/Resources/
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ljCGb3
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ja2gG1
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -253,11 +260,16 @@ grep -r "extends.*Resource" app/Filament/Resources/
 - [**Template Moduli**](../../../docs/templates/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ljCGb3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -271,10 +283,12 @@ grep -r "extends.*Resource" app/Filament/Resources/
 **Data:** 2025-01-XX
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** 2025-01-XX
 =======
 **Data:** 2025-01-XX
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data:** 2025-01-XX
@@ -282,3 +296,8 @@ grep -r "extends.*Resource" app/Filament/Resources/
 =======
 **Data:** 2025-01-XX
 >>>>>>> .merge_file_ljCGb3
+=======
+=======
+**Data:** 2025-01-XX
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

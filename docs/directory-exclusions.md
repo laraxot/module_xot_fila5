@@ -117,10 +117,12 @@ Mentre la regola della directory `app` è importante per la coerenza e l'autoloa
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
 =======
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
@@ -128,3 +130,8 @@ Mentre la regola della directory `app` è importante per la coerenza e l'autoloa
 =======
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
 >>>>>>> .merge_file_exrzeu
+=======
+=======
+4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

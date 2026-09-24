@@ -6,8 +6,10 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 <<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +23,10 @@ use Webmozart\Assert\Assert;
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 >>>>>>> .merge_file_doDLwP
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\json_encode;
 use function Safe\preg_match;
@@ -68,7 +74,11 @@ class SecurityMiddleware
         if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
             $this->addSecurityHeaders($response);
         }
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -93,7 +103,11 @@ class SecurityMiddleware
      */
     private function isDebugbarRoute(Request $request): bool
     {
+<<<<<<< HEAD
         $debugbarPrefix = SafeStringCastAction::cast(config('debugbar.route_prefix', '_debugbar'));
+=======
+        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
+>>>>>>> 930f8146 (Check & fix styling)
 
         return str_starts_with($request->path(), $debugbarPrefix)
             || str_starts_with($request->path(), 'vendor/debugbar')
@@ -133,7 +147,11 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
+=======
+        $current = (int) cache()->get($key, 0);
+>>>>>>> 930f8146 (Check & fix styling)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for IP', [
@@ -157,7 +175,11 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
+=======
+        $current = (int) cache()->get($key, 0);
+>>>>>>> 930f8146 (Check & fix styling)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for User Agent', [
@@ -181,7 +203,11 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
+=======
+        $current = (int) cache()->get($key, 0);
+>>>>>>> 930f8146 (Check & fix styling)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for endpoint', [
@@ -484,6 +510,7 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -497,6 +524,13 @@ class SecurityMiddleware
 =======
      * @param  array<array-key, mixed>  $value
 >>>>>>> .merge_file_doDLwP
+=======
+<<<<<<< HEAD
+     * @param array<array-key, mixed> $value
+=======
+     * @param array<mixed> $value
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -522,6 +556,7 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_sz9Yh2
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -535,6 +570,13 @@ class SecurityMiddleware
 =======
      * @param  array<array-key, mixed>  $array
 >>>>>>> .merge_file_doDLwP
+=======
+<<<<<<< HEAD
+     * @param array<array-key, mixed> $array
+=======
+     * @param array<mixed> $array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     private function getArrayDepth(array $array): int
     {
@@ -561,7 +603,11 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
+<<<<<<< HEAD
             if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
+=======
+            if (! $token || ! hash_equals(session()->token(), (string) $token)) {
+>>>>>>> 930f8146 (Check & fix styling)
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

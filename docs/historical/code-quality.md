@@ -128,36 +128,54 @@ return [
 ```php
 // ✅ CORRECT
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_bOfK57
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_KOrpiu
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_hvQydK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KcgiK2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_bOfK57
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_KOrpiu
 =======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvQydK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KcgiK2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'name' => TextInput::make('name'),
@@ -167,36 +185,54 @@ public static function getFormSchema(): array
 
 // ❌ WRONG
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_bOfK57
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_KOrpiu
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_hvQydK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KcgiK2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_bOfK57
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_KOrpiu
 =======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvQydK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KcgiK2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->label('Nome'),
@@ -402,25 +438,38 @@ This document outlines the best practices for maintaining high code quality with
 - [Filament Extension Pattern Analysis](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Namespace Conventions](../../Patient/project_docs/NAMESPACE_CONVENTIONS.md)
 - [Patient Module - Validation Errors](../../Patient/project_docs/VALIDATION_ERRORS.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_bOfK57
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_KOrpiu
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_hvQydK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KcgiK2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHP Strict Types](php-strict-types.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_bOfK57
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_KOrpiu
 =======
 =======
@@ -434,8 +483,13 @@ This document outlines the best practices for maintaining high code quality with
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvQydK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KcgiK2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

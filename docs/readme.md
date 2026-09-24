@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_nCWPZB
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -36,8 +43,11 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 ```php
 // Esempio di una Resource Filament
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -170,11 +180,16 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 // Esempio di una Resource Filament
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGI8lq
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
@@ -184,12 +199,19 @@ class UserResource extends XotBaseResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_nCWPZB
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     
     // Il metodo table() e form() NON devono essere sovrascritti
     // se non per aggiungere logica specifica, ma la base
@@ -217,8 +239,11 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -305,11 +330,16 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGI8lq
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```php
 use Modules\Xot\Actions\XotBaseAction;
 
@@ -322,9 +352,12 @@ class CreateUserAction extends XotBaseAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->logActivity('user.created', $user); // Logging automatico
         event(new UserCreated($user)); // Dispatching eventi
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 =======
@@ -341,10 +374,14 @@ class CreateUserAction extends XotBaseAction
 =======
         $this->logActivity('user.created', $user); // Logging automatico
         event(new UserCreated($user)); // Dispatching eventi
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
         event(new UserCreated($user));
 >>>>>>> .merge_file_IGI8lq
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return $user;
     }
 }
@@ -354,10 +391,13 @@ class CreateUserAction extends XotBaseAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 ### 🏷️ **Enums System**
@@ -387,6 +427,7 @@ Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### 🏷️ **Enums System**
@@ -394,6 +435,12 @@ Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGI8lq
+=======
+=======
+### 🏷️ **Enums System**
+Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
 
@@ -408,9 +455,12 @@ enum UserStatus: string implements XotBaseEnum
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Traduzione gestita centralmente
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
         // Traduzione gestita centralmente
@@ -421,12 +471,18 @@ enum UserStatus: string implements XotBaseEnum
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         // Traduzione gestita centralmente
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGI8lq
+=======
+=======
+        // Traduzione gestita centralmente
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return __('xot::enums.user_status.'.$this->value);
     }
 }
@@ -436,12 +492,19 @@ enum UserStatus: string implements XotBaseEnum
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_nCWPZB
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## 🛠️ **Sviluppo e Qualità**
 
 ### Convenzioni
@@ -685,9 +748,15 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 - [Linee Guida per il Testing](./testing.md)
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Linee Guida per il Testing](./testing.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGI8lq
+=======
+=======
+- [Linee Guida per il Testing](./testing.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

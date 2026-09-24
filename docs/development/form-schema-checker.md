@@ -45,6 +45,7 @@ Lo script produce:
 - [PHPStan Configuration](../phpstan-usage.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
 - [PHPStan Configuration](../phpstan-usage.md)
 =======
@@ -52,13 +53,20 @@ Lo script produce:
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
 - [PHPStan Configuration](../phpstan-usage.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [Filament Best Practices](../filament_best_practices.md)
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
 - [PHPStan Configuration](../phpstan-usage.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
 - [PHPStan Configuration](../phpstan-usage.md)
 >>>>>>> .merge_file_RtYThN
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

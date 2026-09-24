@@ -34,6 +34,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public ?string $transKey = null;
 
     /** @var QueryBuilder|EloquentBuilder<Model> */
+<<<<<<< HEAD
 <<<<<<< .merge_file_5ImU5U
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -50,6 +51,12 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      * @param  array<int, int|string>  $fields
 <<<<<<< .merge_file_5ImU5U
 =======
+=======
+<<<<<<< HEAD
+=======
+    /** @var QueryBuilder|EloquentBuilder<Model> */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public QueryBuilder|EloquentBuilder $query;
 
     /**
@@ -82,7 +89,11 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
                     static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
 =======
                     static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 );
         }
 
@@ -113,7 +124,11 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
                 static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
 =======
                 static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             );
 
         return $result;
@@ -177,7 +192,11 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
             ->mapWithKeys(static function (int|string $field, int|string $_key) use ($rowArray): array {
 =======
             ->mapWithKeys(static function (mixed $field, int|string $_key) use ($rowArray): array {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $keyString = \is_string($field) ? $field : (string) $field;
 
                 return [$keyString => $rowArray[$keyString] ?? null];

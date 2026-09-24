@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gKNcjB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_gKNcjB
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 https://qiita.com/nunulk/items/4c491634ad843c7a138e
 
@@ -33,8 +40,11 @@ https://github.com/robclancy/presenter
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -78,7 +88,39 @@ https://github.com/robclancy/presenter
 <<<<<<< .merge_file_xic1LO
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
+>>>>>>> .merge_file_OaK6ae
+
+http://www.javaear.com/question/21542893.html
+
+https://gitee.com/gordensong/view-model
+=======
+
+---
+https://www.youtube.com/watch?v=xHs6jeoRRcc
+
+
+
+http://niceprogrammer.com/laravel-view-model/
+
+
+
+<<<<<<< .merge_file_gKNcjB
+https://gitee.com/gordensong/view-model
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+??
+https://github.com/robclancy/presenter
+
+
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 https://www.yuulinux.tokyo/13801/   pokemon :)
 
 view composers may function like "view models" or "presenters".
@@ -87,9 +129,13 @@ view composers may function like "view models" or "presenters".
 <<<<<<< HEAD
 >>>>>>> .merge_file_OaK6ae
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0G3HzO
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
 
 http://www.javaear.com/question/21542893.html
@@ -103,6 +149,7 @@ https://gitee.com/gordensong/view-model
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://gitee.com/gordensong/view-model
@@ -110,3 +157,8 @@ https://gitee.com/gordensong/view-model
 =======
 https://gitee.com/gordensong/view-model
 >>>>>>> .merge_file_0G3HzO
+=======
+=======
+https://gitee.com/gordensong/view-model
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

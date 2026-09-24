@@ -13,8 +13,14 @@ use Spatie\ModelStatus\Status;
 /**
  * Modules\Xot\Contracts\ModelWithStatusContract.
  *
+<<<<<<< HEAD
 <<<<<<< .merge_file_Yfe4YS
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Ak1OQV
+=======
+>>>>>>> da9ae01a0 (.)
  * <<<<<<< HEAD
  *
 =======
@@ -72,6 +78,8 @@ use Spatie\ModelStatus\Status;
  *                                                                        <<<<<<< HEAD
  *                                                                        <<<<<<< .merge_file_XXsVLF
  *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
  * @property int                     $id
  * @property int|null                $user_id
  * @property string|null             $post_type
@@ -84,6 +92,7 @@ use Spatie\ModelStatus\Status;
  * @property string                  $tennant_name
  * @property UserContract|null       $user
  * @property string                  $status
+<<<<<<< HEAD
  *                                                   =======
  *                                                   <<<<<<< .merge_file_RCHBHS
  *                                                   >>>>>>> .merge_file_WmDkAR
@@ -193,7 +202,14 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            toArray()
  *                                                                                           =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property Collection<int, Status> $statuses
+ * @property int|null                $statuses_count
+ *
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @method mixed                                                           getKey()
  * @method string                                                          getRouteKey()
  * @method string                                                          getRouteKeyName()
@@ -232,6 +248,7 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
  *                                                                                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+<<<<<<< HEAD
  *                                                                                           >>>>>>> .merge_file_WmDkAR
  *                                                                                           >>>>>>> laraxot/dev
 =======
@@ -254,6 +271,11 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed> treeSons()
  * @method array<string, mixed> toArray()
 >>>>>>> .merge_file_SkpiBQ
+=======
+>>>>>>> .merge_file_WmDkAR
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model

@@ -19,10 +19,12 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 ### 2. **Predictable Migration Order**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2. **Predictable Migration Order**
 =======
 ### 2. **<nome progetto>able Migration Order**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### 2. **<nome progetto>able Migration Order**
@@ -30,6 +32,11 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 =======
 ### 2. **Predictable Migration Order**
 >>>>>>> .merge_file_IGGrWn
+=======
+=======
+### 2. **Predictable Migration Order**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - No confusion about which migration runs first
 - Consistent behavior across all environments (local, staging, production)
 - Eliminates race conditions in migration execution
@@ -76,6 +83,7 @@ Modules/User/database/migrations/
 <<<<<<< .merge_file_0D9pIf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -88,11 +96,16 @@ Modifiche schema: editare la stessa migrazione e aggiornare il timestamp nel nom
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGGrWn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
@@ -109,6 +122,7 @@ Modules/User/database/migrations/
 ### ✅ CREATE NEW MIGRATION
 - **New Table**: `create_{table}_table.php`
 <<<<<<< .merge_file_0D9pIf
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -134,11 +148,16 @@ Modules/User/database/migrations/
 ### 2. Data Migration Migrations
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IGGrWn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Schema Changes**: `add_{column}_to_{table}.php`
 - **Data Migrations**: `migrate_{purpose}.php`
 
@@ -196,10 +215,12 @@ When duplicate migrations are discovered:
 - **Predictability**: Consistent migration behavior across environments
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Predictability**: Consistent migration behavior across environments
 =======
 - **<nome progetto>ability**: Consistent migration behavior across environments
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **<nome progetto>ability**: Consistent migration behavior across environments
@@ -207,6 +228,11 @@ When duplicate migrations are discovered:
 =======
 - **Predictability**: Consistent migration behavior across environments
 >>>>>>> .merge_file_IGGrWn
+=======
+=======
+- **Predictability**: Consistent migration behavior across environments
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Maintainability**: Easy to understand and modify schema evolution
 
 ### Why This Matters
@@ -220,10 +246,12 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 =======
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
@@ -231,3 +259,8 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 =======
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 >>>>>>> .merge_file_IGGrWn
+=======
+=======
+**Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

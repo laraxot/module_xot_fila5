@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
@@ -26,7 +30,11 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Utilities\Set;
 
 class FieldRefreshAction extends Action
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     protected function setUp(): void
     {
@@ -38,6 +46,9 @@ class FieldRefreshAction extends Action
             ->tooltip('Ricalcola valore')
 <<<<<<< HEAD
             ->action(function (mixed $record, Set $set): void {
+=======
+            ->action(function ($record, Set $set): void {
+>>>>>>> 930f8146 (Check & fix styling)
                 $name = $this->getName();
                 if ($name === null) {
 <<<<<<< .merge_file_Hf2A3D

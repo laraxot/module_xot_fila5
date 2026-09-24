@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Level 10 - Roadmap Completa per tutti i Moduli
 
 ## Stato Attuale
@@ -139,6 +142,7 @@ Per ogni modulo:
 3. Implementare correzioni modulo Geo
 4. Verificare con PHPStan Level 10
 5. Procedere con modulo User
+<<<<<<< HEAD
 6. Continuare con altri moduli in ordine di priorità
 =======
 ---
@@ -149,3 +153,6 @@ canonical: ../../../Themes/docs/shared-components/phpstan-completo.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-completo.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+6. Continuare con altri moduli in ordine di priorità
+>>>>>>> da9ae01a0 (.)

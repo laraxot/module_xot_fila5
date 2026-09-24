@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IRIpto
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_IRIpto
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: underscore-docs-rule
@@ -16,8 +23,11 @@ canonical: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -142,8 +152,13 @@ canonical: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 >>>>>>> .merge_file_noMCHo
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zAYyDW
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

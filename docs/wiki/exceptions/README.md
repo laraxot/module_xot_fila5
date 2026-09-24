@@ -2,13 +2,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_QXN9FT
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_nwfsLv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,6 +34,7 @@
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_QXN9FT
 >>>>>>> laraxot/dev
 =======
@@ -39,12 +45,17 @@
 >>>>>>> .merge_file_F2Om7m
 >>>>>>> .merge_file_nwfsLv
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ucICbC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Readme"
 type: reference
@@ -56,7 +67,10 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_QXN9FT
 =======
 <<<<<<< .merge_file_mfE3RR
@@ -68,7 +82,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_nwfsLv
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,11 +99,16 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
 >>>>>>> .merge_file_nwfsLv
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ucICbC
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Gestione delle Eccezioni
 
@@ -127,6 +150,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_QXN9FT
 =======
 <<<<<<< HEAD
@@ -143,8 +167,15 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> .merge_file_F2Om7m
 >>>>>>> .merge_file_nwfsLv
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -327,8 +358,11 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_QXN9FT
 =======
 <<<<<<< .merge_file_mfE3RR
@@ -337,18 +371,22 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_nwfsLv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_QXN9FT
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
 >>>>>>> .merge_file_nwfsLv
 =======
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
@@ -357,6 +395,9 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 
 >>>>>>> .merge_file_ucICbC
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -413,6 +454,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_QXN9FT
 =======
 <<<<<<< .merge_file_mfE3RR
@@ -423,6 +465,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_nwfsLv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -430,12 +474,14 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_QXN9FT
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
 >>>>>>> .merge_file_nwfsLv
 =======
+<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
 >>>>>>> laraxot/dev
@@ -443,6 +489,9 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ucICbC
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -474,6 +523,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_QXN9FT
 
 =======
@@ -488,12 +538,19 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 <<<<<<< HEAD
 >>>>>>> .merge_file_F2Om7m
 >>>>>>> .merge_file_nwfsLv
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 <<<<<<< HEAD
 =======
@@ -565,7 +622,12 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_F2Om7m
 >>>>>>> .merge_file_nwfsLv
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ucICbC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

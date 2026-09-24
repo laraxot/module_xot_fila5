@@ -10,11 +10,15 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 
 ## Note
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_OYzu8d
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hmmILT
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,11 +26,16 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_77BCgl
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_g5vRUr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
 ## Collegamenti tra versioni di README.md
@@ -104,10 +113,14 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_OYzu8d
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hmmILT
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -198,11 +211,16 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_77BCgl
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_g5vRUr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Standard Xot: Ereditarietà dei Modelli
 
@@ -214,11 +232,15 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
 ## Collegamenti
+<<<<<<< HEAD
 <<<<<<< .merge_file_OYzu8d
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hmmILT
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -226,20 +248,29 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_77BCgl
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_g5vRUr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_OYzu8d
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hmmILT
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -256,11 +287,16 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_77BCgl
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_g5vRUr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Regola generale
 
@@ -282,6 +318,7 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+<<<<<<< HEAD
 <<<<<<< .merge_file_OYzu8d
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -291,6 +328,9 @@ class Doctor extends User
 =======
 - [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hmmILT
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -308,7 +348,11 @@ class Doctor extends User
 =======
 // Aggiungere qui altri moduli se necessario
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 // Aggiungere qui altri moduli se necessario
 >>>>>>> .merge_file_g5vRUr
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

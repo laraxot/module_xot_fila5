@@ -64,10 +64,12 @@ Documento completo di ottimizzazioni per il modulo Xot seguendo i principi **SUP
 - `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
 =======
 - `_activity.code-workspace` (duplicato errato — ogni modulo deve avere UN SOLO file `_<snake_case_module_name>.code-workspace`, ad es. `_xot.code-workspace`)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - `_activity.code-workspace` (duplicato errato — ogni modulo deve avere UN SOLO file `_<snake_case_module_name>.code-workspace`, ad es. `_xot.code-workspace`)
@@ -75,6 +77,11 @@ Documento completo di ottimizzazioni per il modulo Xot seguendo i principi **SUP
 =======
 - `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
 >>>>>>> .merge_file_43iyf5
+=======
+=======
+- `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Soluzione SUPER DRY + KISS:**
 1. **Eliminare** file vuoti e backup
@@ -312,14 +319,21 @@ class ExampleService implements ServiceInterface
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_43iyf5
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Documentazione Core](../../../docs/core/)
 - [Best Practices Filament](../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_MeGWTC
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -331,11 +345,16 @@ class ExampleService implements ServiceInterface
 - [Template Modulo](../../../../docs/templates/module-template.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_43iyf5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -348,10 +367,12 @@ class ExampleService implements ServiceInterface
 **Priorità:** ALTA
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità:** ALTA
 =======
 **Priorità:** ALTA
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Priorità:** ALTA
@@ -359,3 +380,8 @@ class ExampleService implements ServiceInterface
 =======
 **Priorità:** ALTA
 >>>>>>> .merge_file_43iyf5
+=======
+=======
+**Priorità:** ALTA
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

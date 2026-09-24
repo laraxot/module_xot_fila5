@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TA86Rw
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_TA86Rw
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # _inodes
 
 <!-- Contenuto migrato da _docs/_inodes.txt -->
@@ -19,8 +26,11 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 
 --------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -52,11 +62,16 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_T5cVUW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_z8I8Pv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------
@@ -91,9 +106,12 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 --------------------------------------------------------------
 =======
 --------------------------------------------------------------
@@ -103,6 +121,7 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 =======
 --------------------------------------------------------------
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 --------------------------------------------------------------
@@ -110,3 +129,8 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 =======
 --------------------------------------------------------------
 >>>>>>> .merge_file_z8I8Pv
+=======
+=======
+--------------------------------------------------------------
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

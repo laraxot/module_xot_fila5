@@ -22,11 +22,14 @@
 <<<<<<< .merge_file_I7jUxr
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_C3X80O
+=======
+>>>>>>> da9ae01a0 (.)
 - [docs root](../../../../docs/actions.md)
 - [docs Lang](../../lang/docs/filament-label.md)
 
@@ -40,6 +43,7 @@ Ultimo aggiornamento: maggio 2025.
 
 Ultimo aggiornamento: maggio 2025.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [docs root](../../../../../docs/actions.md)
@@ -49,3 +53,11 @@ Ultimo aggiornamento: maggio 2025.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_C3X80O
+=======
+=======
+- [docs root](../../../../docs/actions.md)
+- [docs Lang](../../Lang/docs/filament-label.md)
+
+Ultimo aggiornamento: maggio 2025.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

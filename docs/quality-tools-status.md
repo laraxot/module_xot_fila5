@@ -35,10 +35,12 @@ cd laravel
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
@@ -46,6 +48,11 @@ cd laravel
 =======
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 >>>>>>> .merge_file_k5DPcv
+=======
+=======
+- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -193,14 +200,21 @@ php -l path/to/modified/file.php
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_k5DPcv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
+<<<<<<< HEAD
 <<<<<<< .merge_file_1AcbaI
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -212,11 +226,16 @@ php -l path/to/modified/file.php
 - [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_k5DPcv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🚀 Next Steps
 
@@ -249,6 +268,17 @@ php -l path/to/modified/file.php
 <<<<<<< .merge_file_1AcbaI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+
+- PHPMD eseguito sui file aggiornati (`GetAllIconsAction`, `InlineDatePicker`, `Extra`, `XotBasePivot`, `XotBaseUuidModel`): nessuna nuova violazione rilevata.
+- PHPInsights eseguito sugli stessi file: esito positivo (complessità segnalata da soglie legacy, documentata nelle relative sezioni di modulo).
+- Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -271,9 +301,14 @@ php -l path/to/modified/file.php
 - Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
 <<<<<<< .merge_file_1AcbaI
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_k5DPcv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

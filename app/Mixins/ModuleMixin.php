@@ -49,19 +49,26 @@ class ModuleMixin
             $value = Arr::get($data, $item, null);
 
             if (
+<<<<<<< HEAD
                 $value !== null
 <<<<<<< .merge_file_4RZkpT
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_WkRCba
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $value !== null
 =======
                 null !== $value
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 null !== $value
 >>>>>>> .merge_file_DRb01C
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 null !== $value
@@ -69,6 +76,10 @@ class ModuleMixin
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_mmYrOq
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 && ! is_array($value)
                 && ! is_int($value)
                 && ! is_string($value)

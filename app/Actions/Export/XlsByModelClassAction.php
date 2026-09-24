@@ -89,6 +89,7 @@ class XlsByModelClassAction
         $rows = $query->get();
 
         // Filtriamo i campi se sono specificati gli includes
+<<<<<<< HEAD
 <<<<<<< .merge_file_2IHQvJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,6 +101,14 @@ class XlsByModelClassAction
         if ([] !== $includes) {
             $rows = $rows->map(static function ($item) use ($includes) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ([] !== $includes) {
+<<<<<<< HEAD
+            $rows = $rows->map(static function (Model $item) use ($includes) {
+=======
+            $rows = $rows->map(static function ($item) use ($includes) {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $data = [];
                 foreach ($includes as $include) {
                     $data[$include] = data_get($item, $include);
@@ -118,6 +127,7 @@ class XlsByModelClassAction
 =======
         // Nascondiamo i campi esclusi
         if ([] !== $excludes) {
+<<<<<<< HEAD
             $rows = $rows->map(function ($item) use ($excludes) {
                 if (is_object($item) && method_exists($item, 'makeHidden')) {
                     /* @var Model $item */
@@ -154,10 +164,23 @@ class XlsByModelClassAction
 =======
         if ($excludes !== []) {
 >>>>>>> .merge_file_91pzl2
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
             $rows = $rows->map(static fn (Model|array $item): Model|array => $item instanceof Model ? $item->makeHidden($excludes) : $item);
+=======
+            $rows = $rows->map(function ($item) use ($excludes) {
+                if ($item instanceof Model) {
+                    return $item->makeHidden($excludes);
+                }
+
+                return $item;
+            });
+>>>>>>> 930f8146 (Check & fix styling)
         }
 
         // Applichiamo il callback se fornito
+<<<<<<< HEAD
         if ($callback !== null) {
             $rows = $rows->map($this->rowCallback($callback));
 <<<<<<< .merge_file_2IHQvJ
@@ -168,6 +191,14 @@ class XlsByModelClassAction
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_91pzl2
+=======
+        if (null !== $callback) {
+<<<<<<< HEAD
+            $rows = $rows->map($this->rowCallback($callback));
+=======
+            $rows = $rows->map($callback);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         // Otteniamo la chiave di traduzione e creiamo l'export
@@ -176,7 +207,11 @@ class XlsByModelClassAction
         /** @var Collection<int|string, mixed> $exportRows */
 =======
         /** @var Collection<int, mixed> $exportRows */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $exportRows = $rows;
         $collectionExport = new CollectionExport($exportRows, $transKey);
         $filename = $this->getExportName($modelClass);
@@ -185,6 +220,7 @@ class XlsByModelClassAction
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_2IHQvJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -192,6 +228,9 @@ class XlsByModelClassAction
      *
      * @param  array<int, string>  $includes  Campi da includere
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
      * @param callable(array<string, mixed>|Model, int): mixed $callback
      *
 =======
@@ -220,7 +259,11 @@ class XlsByModelClassAction
 
     /**
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * Ottiene le relazioni da caricare in base ai campi inclusi.
      *
 <<<<<<< .merge_file_2IHQvJ

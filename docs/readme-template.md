@@ -276,10 +276,12 @@ Questo modulo è rilasciato sotto la [MIT License](LICENSE.md).
 - [Nome Persona/Organizzazione] per [contributo specifico]
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Nome Persona/Organizzazione] per [contributo specifico]
 =======
 - [Nome Persona/Organizzazione] per [contributo specifico]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Nome Persona/Organizzazione] per [contributo specifico]
@@ -287,3 +289,8 @@ Questo modulo è rilasciato sotto la [MIT License](LICENSE.md).
 =======
 - [Nome Persona/Organizzazione] per [contributo specifico]
 >>>>>>> .merge_file_HfoYG0
+=======
+=======
+- [Nome Persona/Organizzazione] per [contributo specifico]
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

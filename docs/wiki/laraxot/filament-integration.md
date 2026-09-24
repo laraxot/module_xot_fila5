@@ -29,6 +29,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_lWInLe
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -47,10 +48,16 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_505tCX
 =======
 public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_PWYckZ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         // Campi base

@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_o62VOJ
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 
@@ -16,8 +23,11 @@ use Smalot\PdfParser\Parser;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -61,11 +71,16 @@ use Smalot\PdfParser\Parser;
 
 >>>>>>> .merge_file_aSxgdJ
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 $pdfParser = new Parser();
 $pdf = $pdfParser->parseFile($file->path());
@@ -78,9 +93,12 @@ https://www.pdfparser.org/demo
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -91,21 +109,31 @@ https://www.pdfparser.org/demo
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 https://www.phpclasses.org/blog/package/9732/post/1-How-to-Extract-Text-and-Images-from-PDF-File-Using-PHP.html
 http://www.phpclasses.org/package/9732-PHP-Extract-text-contents-from-PDF-files.html
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_b3B3Su
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -113,19 +141,28 @@ http://www.phpclasses.org/package/9732-PHP-Extract-text-contents-from-PDF-files.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_aSxgdJ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
 
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_b3B3Su
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -139,11 +176,16 @@ https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_aSxgdJ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 http://www.pdftotext.eu
 
 ---------------------------------------------------------------
@@ -153,9 +195,12 @@ https://mupdf.com/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -166,12 +211,18 @@ https://mupdf.com/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 https://laravelquestions.com/2021/09/03/read-pdf-with-php-and-pdf2text-or-pdf-to-text-spatie/
 PDF2Text
@@ -180,9 +231,12 @@ PDF2Text
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -193,12 +247,18 @@ PDF2Text
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 https://github.com/jrmuizel/pdf-extract  on 26 Oct 2021
 
@@ -214,9 +274,12 @@ https://github.com/pdfminer/pdfminer.six
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -227,12 +290,18 @@ https://github.com/pdfminer/pdfminer.six
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 https://github.com/cpierce/pdf2text
 
@@ -250,9 +319,12 @@ https://github.com/BinarySwami-10/PDF2Text
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -263,12 +335,18 @@ https://github.com/BinarySwami-10/PDF2Text
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 
 https://github.com/fabriziomiano/pdf2txt-azure-ocr
@@ -287,9 +365,12 @@ echo $tesseract->recognize();
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -300,12 +381,18 @@ echo $tesseract->recognize();
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 https://aws.amazon.com/fr/rekognition/    !!!!!!!!!!!!!!!!!!!!
 
@@ -317,9 +404,12 @@ https://github.com/alimranahmed/LaraOCR
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -330,12 +420,18 @@ https://github.com/alimranahmed/LaraOCR
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 https://hergen.nl/processing-identity-documents-in-laravel          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ---------------------------------------------------------------
@@ -347,9 +443,12 @@ https://www.xpdfreader.com/download.html
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 =======
@@ -364,9 +463,13 @@ https://www.xpdfreader.com/download.html
 =======
 
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-in-laravel
 
@@ -376,9 +479,12 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_o62VOJ
 <<<<<<< HEAD
 
@@ -389,10 +495,16 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 ---------------------------------------------------------------
@@ -407,6 +519,10 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---------------------------------------------------------------
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -426,9 +542,15 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 ---------------------------------------------------------------
 <<<<<<< .merge_file_b3B3Su
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---------------------------------------------------------------
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jYCmK6
+=======
+=======
+---------------------------------------------------------------
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

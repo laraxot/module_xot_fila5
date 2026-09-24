@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Fc0iUY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Problema Identificato
 
@@ -177,10 +183,12 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 - Implementare test di regressione per validare le correzioni
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Implementare test di regressione per validare le correzioni
 =======
 - Implementare test di regressione per validare le correzioni
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Implementare test di regressione per validare le correzioni
@@ -188,3 +196,8 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 =======
 - Implementare test di regressione per validare le correzioni
 >>>>>>> .merge_file_Fc0iUY
+=======
+=======
+- Implementare test di regressione per validare le correzioni
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -2,9 +2,12 @@
 
 **Data:** 2025-01-10
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data:** [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 **PHPStan Level:** max
 **Initial Errors:** 19,337
 **Final Errors:** 92
@@ -180,7 +183,11 @@ All module tests use **Pest** framework. PHPStan has challenges with Pest's magi
 
 *Generated during PHPStan compliance implementation*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Task: "Analyze and fix all PHPStan errors in Modules/"*
 =======
 *Task: "Analyze and fix all PHPStan errors in Modules/"*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Task: "Analyze and fix all PHPStan errors in Modules/"*
+>>>>>>> da9ae01a0 (.)

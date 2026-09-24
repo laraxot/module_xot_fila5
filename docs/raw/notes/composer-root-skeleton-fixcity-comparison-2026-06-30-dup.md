@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_6Vt3dO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Jgye1g
+=======
+>>>>>>> da9ae01a0 (.)
 title: "Composer Root Skeleton Fixcity Comparison Dup"
 type: concept
 status: deprecated
@@ -26,8 +29,12 @@ Vedi il file canonico: [composer-root-skeleton-fixcity-comparison-dup.md](./comp
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: "Confronto composer root FixCity vs Predict"
 type: raw-note
 module: Xot
@@ -72,8 +79,13 @@ Il root deve essere lo skeleton Laravel. I moduli sono package Composer autonomi
 Il root `autoload.psr-4.Modules\\ = Modules/` amplia la scansione Composer a tutto l'albero dei moduli e aumenta ambiguita' PSR-4, classi duplicate e provider stale. La correzione e' togliere l'autoload root dei moduli e lasciare che ogni modulo esponga il proprio namespace dal proprio `composer.json`.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Jgye1g
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

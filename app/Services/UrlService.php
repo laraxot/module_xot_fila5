@@ -1,11 +1,17 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_LhUa7U
 <<<<<<< HEAD
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ragDcZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -19,22 +25,33 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_uUcMgF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_ZSeaw0
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://www.webslesson.info/2019/02/import-excel-file-in-laravel.html
  * @see https://sweetcode.io/import-and-export-excel-files-data-using-in-laravel/
  */
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_LhUa7U
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ragDcZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -50,11 +67,16 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_uUcMgF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZSeaw0
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Services;
 
 /**
@@ -64,6 +86,7 @@ class UrlService
 {
     private static ?self $instance = null;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_LhUa7U
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,6 +97,12 @@ class UrlService
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZSeaw0
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_ragDcZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function __construct() {}
 
     public static function getInstance(): self
@@ -106,12 +135,17 @@ class UrlService
         if (! self::$instance instanceof self) {
             self::$instance = new self();
 >>>>>>> .merge_file_uUcMgF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
             self::$instance = new self;
 >>>>>>> .merge_file_ZSeaw0
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         return self::$instance;
@@ -127,16 +161,21 @@ class UrlService
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_LhUa7U
 <<<<<<< HEAD
 <<<<<<< HEAD
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ragDcZ
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
 =======
         return false !== filter_var($url, FILTER_VALIDATE_URL);
 >>>>>>> .merge_file_uUcMgF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
@@ -144,5 +183,10 @@ class UrlService
 =======
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
 >>>>>>> .merge_file_ZSeaw0
+=======
+=======
+        return filter_var($url, FILTER_VALIDATE_URL) !== false;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

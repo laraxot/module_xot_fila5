@@ -13,17 +13,26 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 
 ## Filament Widgets
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_uprH5D
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hvD7yA
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_EBYmG9
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_B52EkU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | Classe Base | Path | Estende |
 |-------------|------|---------|
 | `XotBaseWidget` | `app/Filament/Widgets/XotBaseWidget.php` | `Filament\Widgets\Widget` |
@@ -33,9 +42,13 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 | `XotBaseChartWidget` | `app/Filament/Widgets/XotBaseChartWidget.php` | `Filament\Widgets\ChartWidget` |
 | `XotBaseStatsOverviewWidget` | `app/Filament/Widgets/XotBaseStatsOverviewWidget.php` | `Filament\Widgets\StatsOverviewWidget` |
 | `XotBaseWizardWidget` | `app/Filament/Widgets/XotBaseWizardWidget.php` | `XotBaseWidget` |
+<<<<<<< HEAD
 <<<<<<< .merge_file_uprH5D
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hvD7yA
 =======
 =======
@@ -60,11 +73,16 @@ protected string $view = 'module::path.to.view';
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_EBYmG9
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_B52EkU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Filament Resources
 

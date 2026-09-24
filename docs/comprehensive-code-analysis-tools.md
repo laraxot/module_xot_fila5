@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0XOcUy
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -477,15 +483,21 @@ chmod +x scripts/*.sh
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0XOcUy
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 98%
 
@@ -497,10 +509,12 @@ chmod +x scripts/*.sh
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
@@ -508,3 +522,8 @@ chmod +x scripts/*.sh
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 >>>>>>> .merge_file_0XOcUy
+=======
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

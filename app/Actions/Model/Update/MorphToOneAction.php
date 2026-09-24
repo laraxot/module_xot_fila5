@@ -6,9 +6,17 @@ namespace Modules\Xot\Actions\Model\Update;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+use Modules\Xot\Datas\RelationData as RelationDTO;
+use Modules\Xot\Support\MorphToOneRelationSupport;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Spatie\QueueableAction\QueueableAction;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -60,7 +68,11 @@ class MorphToOneAction
 
         $data = $this->prepareData($relationDTO->data);
 
+<<<<<<< HEAD
         app(CreateMorphToOneRelatedModelAction::class)->execute($relation, $data);
+=======
+        MorphToOneRelationSupport::create($relation, $data);
+>>>>>>> 930f8146 (Check & fix styling)
     }
 
     /**
@@ -91,6 +103,7 @@ class MorphToOneAction
         }
 
         // Return the prepared data
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZhG5qz
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -104,5 +117,12 @@ class MorphToOneAction
 =======
         return array_filter($data, static fn (mixed $value) => $value !== null);
 >>>>>>> .merge_file_WlzXe7
+=======
+<<<<<<< HEAD
+        return array_filter($data, static fn (mixed $value) => null !== $value);
+=======
+        return array_filter($data, static fn ($value) => null !== $value);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

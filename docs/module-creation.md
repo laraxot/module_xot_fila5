@@ -188,6 +188,7 @@ NomeModulo/
 <<<<<<< .merge_file_s6S4Gw
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)
@@ -207,6 +208,7 @@ NomeModulo/
 <<<<<<< HEAD
 - [XotBaseEventServiceProvider.md](xotbaseeventserviceprovider.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [XotBaseEventServiceProvider.md](xotbaseeventserviceprovider.md)
@@ -216,3 +218,10 @@ NomeModulo/
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)
 >>>>>>> .merge_file_SapFtB
+=======
+=======
+- [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
+- [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
+- [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

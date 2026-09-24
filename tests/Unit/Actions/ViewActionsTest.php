@@ -18,7 +18,11 @@ use Illuminate\View\View;
 use Modules\Xot\Actions\GetViewByClassAction;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 test('get view actions work', function (): void {
     $classAction = app(GetViewByClassAction::class);
 

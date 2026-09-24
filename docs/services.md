@@ -241,10 +241,12 @@ return [
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 * [services.md](../../../xot/docs/services.md)
 * [services.md](../../../tenant/docs/it/config/services.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [services.md](../../../xot/docs/services.md)
@@ -252,6 +254,10 @@ return [
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_czTBAa
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Versione Incoming
 
@@ -263,10 +269,12 @@ return [
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -274,3 +282,8 @@ return [
 =======
 ---
 >>>>>>> .merge_file_czTBAa
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

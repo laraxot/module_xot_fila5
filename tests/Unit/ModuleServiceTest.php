@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Services\ModuleService;
 =======
 
@@ -148,6 +154,7 @@ describe('ModuleService', function () {
 
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+<<<<<<< HEAD
 
 <<<<<<< .merge_file_cNYoYN
 =======
@@ -158,6 +165,14 @@ describe('ModuleAction', function (): void {
 
     it('can be instantiated', function () use ($service): void {
         Assert::assertInstanceOf(ModuleAction::class, $service);
+=======
+=======
+describe('ModuleService', function (): void {
+    $service = new ModuleService();
+
+    it('can be instantiated', function () use ($service): void {
+        Assert::assertInstanceOf(ModuleService::class, $service);
+>>>>>>> da9ae01a0 (.)
     });
 
     it('has getModels method', function () use ($service): void {
@@ -168,8 +183,12 @@ describe('ModuleAction', function (): void {
     it('returns array from getModels method', function () use ($service): void {
         $result = $service->getModels();
         Assert::assertContains('string', array_map('gettype', $result ?: ['string']));
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_a7uSqn
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 });

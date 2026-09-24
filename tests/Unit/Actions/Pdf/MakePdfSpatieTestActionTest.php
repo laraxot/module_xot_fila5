@@ -18,7 +18,11 @@ use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('builds a streamed pdf download response for the generic test view', function (): void {
     Facade::setFacadeApplication(app());
 

@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8r6bFP
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_8r6bFP
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # _soketi
 
 <!-- Contenuto migrato da _docs/_soketi.txt -->
@@ -65,9 +72,15 @@ https://kbouzidi.com/real-time-events-with-laravel-and-soketi
 https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2
 >>>>>>> .merge_file_qH3PjR
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3d9vUO
+=======
+=======
+https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

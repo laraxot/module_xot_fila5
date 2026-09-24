@@ -48,11 +48,16 @@ use Webmozart\Assert\Assert;
 >>>>>>> .merge_file_zmh52L
  * @property ExtraContract|null $extra
  */
+<<<<<<< HEAD
 /** @phpstan-ignore trait.unused */
 =======
+<<<<<<< HEAD
  * @property ExtraContract|null $extra
  */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 trait HasExtraTrait
 {
     /**

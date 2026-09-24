@@ -23,7 +23,11 @@ class FakeSeederAction
     private const MAX_RECORDS = 200;
 
     private const CHUNK_SIZE = 50;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     /**
      * Execute the fake data seeding process.
@@ -113,6 +117,7 @@ class FakeSeederAction
      * @throws \RuntimeException
      *
      * @return Factory<Model>
+<<<<<<< HEAD
      * @return Factory<Model>
 >>>>>>> 3792da0d (Check & fix styling)
 =======
@@ -122,6 +127,12 @@ class FakeSeederAction
      *
      * @throws \RuntimeException
 >>>>>>> .merge_file_20i2n8
+=======
+<<<<<<< HEAD
+=======
+     * @return Factory<Model>
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     private function getModelFactory(string $modelClass): Factory
     {

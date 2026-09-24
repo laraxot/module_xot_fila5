@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_o9VOYF
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_8giRhQ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,11 +14,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_7QExDF
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BzAp35
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Laraxot Philosophy - Complete Summary
 
 ## Core Principles
@@ -36,10 +45,12 @@
 **Predictable behavior is more valuable than unlimited options:**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Predictable behavior is more valuable than unlimited options:**
 =======
 **<nome progetto>able behavior is more valuable than unlimited options:**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **<nome progetto>able behavior is more valuable than unlimited options:**
@@ -47,6 +58,11 @@
 =======
 **Predictable behavior is more valuable than unlimited options:**
 >>>>>>> .merge_file_BzAp35
+=======
+=======
+**Predictable behavior is more valuable than unlimited options:**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 - Same file structure across all modules
 - Same inheritance patterns for all models
@@ -110,10 +126,12 @@
 1. **Predictable Autoloading**: No ambiguous class resolution
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Predictable Autoloading**: No ambiguous class resolution
 =======
 1. **<nome progetto>able Autoloading**: No ambiguous class resolution
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. **<nome progetto>able Autoloading**: No ambiguous class resolution
@@ -121,6 +139,11 @@
 =======
 1. **Predictable Autoloading**: No ambiguous class resolution
 >>>>>>> .merge_file_BzAp35
+=======
+=======
+1. **Predictable Autoloading**: No ambiguous class resolution
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 2. **Consistent Behavior**: Same results in all environments
 3. **Easy Maintenance**: Clear, unambiguous code structure
 4. **Fast Debugging**: Obvious source of truth for each entity
@@ -208,6 +231,7 @@ composer dump-autoload
 ---
 
 <<<<<<< .merge_file_o9VOYF
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
@@ -423,9 +447,15 @@ Questo documento rappresenta la sintesi delle conoscenze acquisite attraverso:
 **Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 >>>>>>> .merge_file_7QExDF
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BzAp35
+=======
+=======
+**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -50,6 +50,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - Aggiornare questo documento se vengono introdotti nuovi schemi di denominazione o convenzioni.
 
 ## Collegamenti alla documentazione correlata
+<<<<<<< HEAD
 - [Qualità del codice](./code_quality.md)
 - [Tipi rigorosi PHP](./php-strict-types.md)
 - [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
@@ -64,6 +65,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 =======
 - [Best practice per Filament](./filament-best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best practice per Filament](./filament-best-practices.md)
@@ -71,3 +73,12 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 =======
 - [Best practice per Filament](./filament-best-practices.md)
 >>>>>>> .merge_file_PfzRCU
+=======
+=======
+- [Qualità del codice](./CODE_QUALITY.md)
+- [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
+- [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
+- [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+- [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

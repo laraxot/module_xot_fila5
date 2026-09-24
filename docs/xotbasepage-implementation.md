@@ -178,15 +178,21 @@ class DashboardSettingsPolicy
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [pattern di estensione filament](../xot/docs/filament_extension_pattern.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [pattern di estensione filament](../xot/docs/filament_extension_pattern.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_P4aA2u
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [best practices filament](../<nome progetto>/docs/filament-best-practices.md)
 
 ## ATTENZIONE: errori critici da evitare
@@ -197,10 +203,12 @@ class DashboardSettingsPolicy
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 =======
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
@@ -208,3 +216,8 @@ class DashboardSettingsPolicy
 =======
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 >>>>>>> .merge_file_P4aA2u
+=======
+=======
+- Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

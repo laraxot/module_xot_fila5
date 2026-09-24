@@ -94,6 +94,7 @@ final class MorphOneAction
         }
 
         // Remove null values from the data array
+<<<<<<< HEAD
 <<<<<<< .merge_file_ot79Xr
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -107,5 +108,12 @@ final class MorphOneAction
 =======
         return array_filter($data, static fn (mixed $value): bool => $value !== null);
 >>>>>>> .merge_file_zgxQGG
+=======
+<<<<<<< HEAD
+        return array_filter($data, static fn (mixed $value): bool => null !== $value);
+=======
+        return array_filter($data, static fn ($value): bool => null !== $value);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

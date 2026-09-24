@@ -1071,10 +1071,12 @@ b6f667c (.)
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 =======
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
@@ -1082,3 +1084,8 @@ Vedi anche la documentazione specifica del modulo per dettagli e casi particolar
 =======
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> .merge_file_rIkifa
+=======
+=======
+Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -3,6 +3,7 @@
 ## Critical Requirement
 
 All Filament action methods **MUST** return associative arrays with **string keys**, not indexed arrays.
+<<<<<<< HEAD
 <<<<<<< .merge_file_3Hd6mi
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -19,6 +20,8 @@ delegating to typed services or actions.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8tvpRa
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## The Rule
 
@@ -151,6 +154,7 @@ When creating or updating Filament pages:
 
 ## Common Mistakes
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3Hd6mi
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -211,6 +215,8 @@ $modelCopyAction->execute($modelClass, $fieldName, $year);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8tvpRa
+=======
+>>>>>>> da9ae01a0 (.)
 ### Mistake 1: Indexed Array
 ```php
 // ❌ WRONG
@@ -310,6 +316,7 @@ Using string keys for Filament actions is **required** for:
 - ✅ Code readability
 - ✅ Maintainability
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_3Hd6mi
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -323,3 +330,6 @@ Using string keys for Filament actions is **required** for:
 =======
 **Always use associative arrays with string keys for all Filament action methods.**
 >>>>>>> .merge_file_8tvpRa
+=======
+**Always use associative arrays with string keys for all Filament action methods.**
+>>>>>>> da9ae01a0 (.)

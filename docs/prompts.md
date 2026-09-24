@@ -1,6 +1,7 @@
 <<<<<<< .merge_file_VZtU0v
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -31,11 +32,16 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 - [indice documentazione](./00-index.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kJ3dEE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:
@@ -105,15 +111,21 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 * [prompts.md](../../../xot/project_docs/prompts.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [prompts.md](../../../xot/project_docs/prompts.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kJ3dEE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Modifiche al Prompt docs.txt
 
@@ -137,10 +149,12 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Regole Universali](./prompt_rules.md)
 - [Gestione Documentazione](./documentation_management.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Regole Universali](./prompt_rules.md)
@@ -148,6 +162,10 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kJ3dEE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Struttura Moduli](./module-structure.md)
 
 ## Errori Comuni da Evitare
@@ -160,15 +178,21 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kJ3dEE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore
@@ -261,10 +285,12 @@ Il prompt `docs.txt` serve come:
    ```
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
    ```
 =======
    ```
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
    ```
@@ -272,3 +298,8 @@ Il prompt `docs.txt` serve come:
 =======
    ```
 >>>>>>> .merge_file_kJ3dEE
+=======
+=======
+   ```
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

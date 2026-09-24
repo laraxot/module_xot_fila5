@@ -2,10 +2,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_j17dva
 <<<<<<< HEAD
 =======
@@ -474,9 +477,14 @@ return [
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: comprehensive_code_analysis
@@ -493,6 +501,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIV
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+<<<<<<< HEAD
 <<<<<<< .merge_file_j17dva
 >>>>>>> laraxot/dev
 
@@ -1414,6 +1423,7 @@ return [
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -1422,3 +1432,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIV
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_LjOQWB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

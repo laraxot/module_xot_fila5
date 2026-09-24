@@ -214,15 +214,23 @@ class YourResource extends XotBaseResource
     // Pages auto-discovered following pattern
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_ke2lB9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_440yi7
     public function getFormSchema(): array
 =======
 =======
 >>>>>>> .merge_file_Lp1RMZ
+=======
+    public function getFormSchema(): array
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -231,14 +239,20 @@ class YourResource extends XotBaseResource
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_ke2lB9
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_440yi7
 =======
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_Lp1RMZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -253,15 +267,23 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_ke2lB9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_440yi7
     public function getInfolistSchema(): array
 =======
 =======
 >>>>>>> .merge_file_Lp1RMZ
+=======
+    public function getInfolistSchema(): array
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -270,14 +292,20 @@ class YourResource extends XotBaseResource
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_ke2lB9
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_440yi7
 =======
 =======
     public static function getInfolistSchema(): array
 >>>>>>> .merge_file_Lp1RMZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======

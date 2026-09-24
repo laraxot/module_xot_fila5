@@ -5,11 +5,17 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -28,9 +34,11 @@ use ReflectionNamedType;
 =======
 use PHPUnit\Framework\Assert;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use PHPUnit\Framework\Assert;
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 =======
@@ -39,6 +47,10 @@ use PHPUnit\Framework\Assert;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\file_get_contents;
 use function Safe\glob;
@@ -54,20 +66,27 @@ final class ModuleDeepCoverage
         $executed = 0;
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             $ref = new \ReflectionClass($class);
@@ -76,6 +95,10 @@ final class ModuleDeepCoverage
 =======
             $ref = new ReflectionClass($class);
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if (! $ref->hasMethod('execute')) {
                 continue;
             }
@@ -94,13 +117,18 @@ final class ModuleDeepCoverage
             $sourceFile = $ref->getFileName();
             if (is_string($sourceFile) && is_file($sourceFile)) {
                 $source = file_get_contents($sourceFile);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
                 if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
                     $executed++;
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
                     $executed++;
@@ -108,10 +136,12 @@ final class ModuleDeepCoverage
                 if (1 === preg_match('/^\s*dddx\s*\(/m', $source)) {
                     ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 if (1 === preg_match('/^\s*dddx\s*\(/m', $source)) {
                     ++$executed;
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 if (1 === preg_match('/^\s*dddx\s*\(/m', $source)) {
@@ -122,6 +152,10 @@ final class ModuleDeepCoverage
                 if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
                     $executed++;
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
                     continue;
                 }
@@ -135,13 +169,18 @@ final class ModuleDeepCoverage
 
             try {
                 $method->invoke($instance, ...$args);
+<<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
 <<<<<<< .merge_file_tFC4te
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
@@ -159,11 +198,16 @@ final class ModuleDeepCoverage
             } catch (\Throwable) {
                 ++$executed;
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
 
@@ -173,19 +217,26 @@ final class ModuleDeepCoverage
     /**
      * @return list<mixed>
      */
+<<<<<<< HEAD
     private static function defaultArgsForMethod(ReflectionMethod $method): array
 <<<<<<< .merge_file_tFC4te
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
     private static function defaultArgsForMethod(ReflectionMethod $method): array
 =======
     private static function defaultArgsForMethod(\ReflectionMethod $method): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     private static function defaultArgsForMethod(\ReflectionMethod $method): array
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     private static function defaultArgsForMethod(\ReflectionMethod $method): array
@@ -193,6 +244,10 @@ final class ModuleDeepCoverage
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         $args = [];
 
@@ -206,11 +261,17 @@ final class ModuleDeepCoverage
                 continue;
             }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -232,11 +293,16 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
@@ -253,10 +319,15 @@ final class ModuleDeepCoverage
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
                     continue;
                 }
@@ -268,20 +339,27 @@ final class ModuleDeepCoverage
                 continue;
             }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
 =======
             if ($type instanceof \ReflectionNamedType) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if ($type instanceof \ReflectionNamedType) {
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if ($type instanceof \ReflectionNamedType) {
@@ -290,6 +368,10 @@ final class ModuleDeepCoverage
 =======
             if ($type instanceof ReflectionNamedType) {
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $args[] = match ($type->getName()) {
                     'array' => [],
                     'string' => '',
@@ -314,11 +396,17 @@ final class ModuleDeepCoverage
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Events') as $class) {
             try {
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -338,11 +426,16 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $ref = new \ReflectionClass($class);
                 $ctor = $ref->getConstructor();
                 if (null === $ctor || 0 === $ctor->getNumberOfRequiredParameters()) {
@@ -357,10 +450,15 @@ final class ModuleDeepCoverage
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
 
@@ -378,11 +476,17 @@ final class ModuleDeepCoverage
 
             try {
                 $class::from([]);
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -406,11 +510,16 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 ++$executed;
             } catch (\Throwable) {
                 try {
@@ -429,10 +538,15 @@ final class ModuleDeepCoverage
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 }
             }
         }
@@ -453,20 +567,27 @@ final class ModuleDeepCoverage
                 continue;
             }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             $ref = new \ReflectionClass($class);
@@ -475,6 +596,10 @@ final class ModuleDeepCoverage
 =======
             $ref = new ReflectionClass($class);
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -484,13 +609,18 @@ final class ModuleDeepCoverage
                 if (method_exists($provider, 'register')) {
                     $provider->register();
                 }
+<<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
 <<<<<<< .merge_file_tFC4te
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
@@ -508,11 +638,16 @@ final class ModuleDeepCoverage
             } catch (\Throwable) {
                 ++$executed;
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
 
@@ -529,19 +664,26 @@ final class ModuleDeepCoverage
             }
 
             try {
+<<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 <<<<<<< .merge_file_tFC4te
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
                 $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_8y0emR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 $ref = new \ReflectionClass($class);
@@ -549,15 +691,25 @@ final class ModuleDeepCoverage
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 if ($ref->isAbstract()) {
                     continue;
                 }
                 $ref->newInstanceWithoutConstructor();
+<<<<<<< HEAD
 <<<<<<< .merge_file_tFC4te
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_ltDMsG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -576,11 +728,16 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 ++$executed;
             } catch (\Throwable) {
                 try {
@@ -594,10 +751,15 @@ final class ModuleDeepCoverage
 =======
 >>>>>>> .merge_file_8y0emR
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_0UAoWU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 }
             }
         }

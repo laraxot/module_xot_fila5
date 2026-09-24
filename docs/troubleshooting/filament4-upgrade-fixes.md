@@ -174,10 +174,12 @@ Laravel Framework 12.28.1
 *Ultimo aggiornamento: 19 Settembre 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 19 Settembre 2025*
 =======
 *Ultimo aggiornamento: 19 Settembre 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 19 Settembre 2025*
@@ -185,3 +187,8 @@ Laravel Framework 12.28.1
 =======
 *Ultimo aggiornamento: 19 Settembre 2025*
 >>>>>>> .merge_file_tt41j2
+=======
+=======
+*Ultimo aggiornamento: 19 Settembre 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

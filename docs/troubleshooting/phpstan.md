@@ -177,10 +177,12 @@ Per ulteriori dettagli sulle soluzioni ai problemi di PHPStan, consulta:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Modulo Xot - Documentazione PHPStan](../laravel/modules/xot/docs/phpstan/phpstan-solutions.md)
 - [Modulo Xot - Correzioni PDO](../laravel/modules/xot/docs/phpstan/pdo_constants_fixes.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Modulo Xot - Documentazione PHPStan](../laravel/modules/xot/docs/phpstan/phpstan-solutions.md)
@@ -188,3 +190,9 @@ Per ulteriori dettagli sulle soluzioni ai problemi di PHPStan, consulta:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zDJ8Z4
+=======
+=======
+- [Modulo Xot - Documentazione PHPStan](../laravel/modules/xot/docs/phpstan/phpstan-solutions.md)
+- [Modulo Xot - Correzioni PDO](../laravel/modules/xot/docs/phpstan/pdo_constants_fixes.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

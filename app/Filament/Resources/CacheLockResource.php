@@ -9,7 +9,11 @@ use Filament\Resources\RelationManagers\RelationManager;
 =======
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Filament\Resources\CacheLockResource\Pages\CreateCacheLock;
 use Modules\Xot\Filament\Resources\CacheLockResource\Pages\EditCacheLock;
 use Modules\Xot\Filament\Resources\CacheLockResource\Pages\ListCacheLocks;
@@ -40,7 +44,11 @@ class CacheLockResource extends XotBaseResource
     }
 
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public static function getRelations(): array
     {
         return [];

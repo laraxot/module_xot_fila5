@@ -6,6 +6,7 @@
 <<<<<<< .merge_file_9vCcJs
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -17,11 +18,16 @@
 4. **GitHub Language and Metrics Rule**: Le GitHub Issue e le GitHub Discussion del progetto vanno scritte in italiano. Quando possibile, usare percentuali per esprimere avanzamento, rischio, copertura, priorita' o confidenza.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_HJSHMu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 2. **NO property_exists() on Eloquent models**: Use hasAttribute(), isFillable() or Schema::hasColumn() instead, because model attributes are magical properties.
 
@@ -70,11 +76,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 4. **GitHub Tracking Language**: GitHub Issues and GitHub Discussions for this project must be written in Italian, and when useful must include percentages for progress, risk, confidence, coverage, or priority.
 5. **Local AI Runtime Governance**: For Ollama/AMD/ROCm/WSL work, always distinguish guest Linux readiness from Windows host driver readiness. If `/dev/dxg` and ROCm libraries exist but `rocminfo` fails, treat it as WSL/runtime misalignment first, not as "Ollama missing".
 6. **Action-First Architecture**: Do not introduce generic `Services` for business logic. The preferred pattern is explicit Action classes, and for reusable/async work the standard is `spatie/laravel-queueable-action` with `execute()` as project convention.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 4. **GitHub Tracking Language**: GitHub Issues and GitHub Discussions for this project must be written in Italian, and when useful must include percentages for progress, risk, confidence, coverage, or priority.
@@ -83,3 +91,7 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_HJSHMu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -96,6 +96,7 @@ return [
 *Ultimo aggiornamento: 27 Gennaio 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Principale Traduzioni](../../../docs/translation_rules.md)
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
@@ -104,6 +105,7 @@ return [
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Documentazione Principale Traduzioni](../../../../docs/translation_rules.md)
@@ -111,7 +113,13 @@ return [
 *Ultimo aggiornamento: 27 Gennaio 2025*
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 - [Documentazione Principale Traduzioni](../../../docs/translation_rules.md)
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
+<<<<<<< HEAD
 >>>>>>> .merge_file_p0fY0G
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

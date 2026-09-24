@@ -31,6 +31,7 @@ qmd search "Xot rule filament" --limit 5
 <<<<<<< .merge_file_n9rJ7s
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
 - [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
 - [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
@@ -53,6 +54,7 @@ qmd search "Xot rule filament" --limit 5
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -61,3 +63,8 @@ qmd search "Xot rule filament" --limit 5
 - [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
 - [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
 >>>>>>> .merge_file_RtOM4L
+=======
+=======
+- [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Level10 Success Nov"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-level10-success-nov.md](./phpstan-level10-success-nov.md)
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Level 10 - Successo Totale (Novembre 2025)
 
 ## 🎯 Obiettivo Raggiunto
@@ -168,4 +171,7 @@ Risultato ottenuto seguendo rigorosamente:
 
 **Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

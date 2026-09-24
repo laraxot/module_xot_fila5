@@ -615,6 +615,7 @@ class AlertWidget extends BaseTableWidget
 <<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
@@ -635,6 +636,7 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](./ARCHITECTURE.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -642,6 +644,12 @@ class AlertWidget extends BaseTableWidget
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 >>>>>>> .merge_file_FqsCWe
+=======
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -724,6 +732,7 @@ class LimeJsonService
 <<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
 =======
@@ -739,6 +748,7 @@ class healthcare_appService
 class ModuloEsempioService
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -746,6 +756,12 @@ class ModuloEsempioService
 // QuaerisService.php
 class QuaerisService
 >>>>>>> .merge_file_FqsCWe
+=======
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     use SingletonTrait;
 
@@ -1221,6 +1237,7 @@ class LimeJsonService
 <<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
 =======
@@ -1236,6 +1253,7 @@ class healthcare_appService
 class ModuloEsempioService
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -1243,6 +1261,12 @@ class ModuloEsempioService
 // QuaerisService.php
 class QuaerisService
 >>>>>>> .merge_file_FqsCWe
+=======
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     use SingletonTrait;
 
@@ -1313,6 +1337,7 @@ class AlertWidget extends BaseTableWidget
 <<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
@@ -1333,6 +1358,7 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](./ARCHITECTURE.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -1340,6 +1366,12 @@ class AlertWidget extends BaseTableWidget
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 >>>>>>> .merge_file_FqsCWe
+=======
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1353,10 +1385,12 @@ class AlertWidget extends BaseTableWidget
 **Benefici**: ALTI
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Benefici**: ALTI
 =======
 **Benefici**: ALTI
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Benefici**: ALTI
@@ -1364,3 +1398,8 @@ class AlertWidget extends BaseTableWidget
 =======
 **Benefici**: ALTI
 >>>>>>> .merge_file_FqsCWe
+=======
+=======
+**Benefici**: ALTI
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

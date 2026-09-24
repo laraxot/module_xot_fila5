@@ -26,36 +26,54 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xxTppR
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_wPaPKR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_VApqnJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xxTppR
 =======
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_wPaPKR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_VApqnJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -90,36 +108,54 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xxTppR
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_wPaPKR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_VApqnJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xxTppR
 =======
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_wPaPKR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_VApqnJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('title')

@@ -28,12 +28,18 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_l6JogP
 <<<<<<< HEAD
 <<<<<<< HEAD
             self::$_instance = new self;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_6TJIo6
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             self::$_instance = new self();
 =======
@@ -43,9 +49,11 @@ class ModuleAction
             self::$_instance = new self;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             self::$_instance = new self();
 >>>>>>> .merge_file_cPuAL8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             self::$_instance = new self();
@@ -53,6 +61,10 @@ class ModuleAction
 =======
             self::$_instance = new self;
 >>>>>>> .merge_file_mdCtfb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         return self::$_instance;
@@ -90,12 +102,18 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_l6JogP
 <<<<<<< HEAD
 <<<<<<< HEAD
                 $tmp = new \stdClass;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_6TJIo6
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $tmp = new \stdClass();
 =======
@@ -105,9 +123,11 @@ class ModuleAction
                 $tmp = new \stdClass;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 $tmp = new \stdClass();
 >>>>>>> .merge_file_cPuAL8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 $tmp = new \stdClass();
@@ -115,6 +135,10 @@ class ModuleAction
 =======
                 $tmp = new \stdClass;
 >>>>>>> .merge_file_mdCtfb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -143,11 +167,15 @@ class ModuleAction
         return $data;
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_l6JogP
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_6TJIo6
     public function execute(): void {}
 =======
@@ -155,6 +183,7 @@ class ModuleAction
     {
     }
 >>>>>>> .merge_file_cPuAL8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public function execute(): void
@@ -164,4 +193,9 @@ class ModuleAction
 =======
     public function execute(): void {}
 >>>>>>> .merge_file_mdCtfb
+=======
+=======
+    public function execute(): void {}
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

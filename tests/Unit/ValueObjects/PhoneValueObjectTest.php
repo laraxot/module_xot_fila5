@@ -14,7 +14,11 @@ uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\ValueObjects\PhoneValueObject;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('accepts valid phone', function (): void {
     $phone = '+11234567890';
     $vo = PhoneValueObject::fromString($phone);
@@ -26,4 +30,8 @@ it('throws on invalid phone')->todo();
 =======
 it('throws on invalid phone', function (): void {
 });
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

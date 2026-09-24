@@ -12,7 +12,11 @@ uses(TestCase::class);
 uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 it('returns path using module_path helper in happy path', function (): void {
     config()->set('modules.paths.generator.config.path', 'config');

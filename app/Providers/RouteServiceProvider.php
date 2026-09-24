@@ -147,7 +147,11 @@ class RouteServiceProvider extends ServiceProvider
         $models_collect->map(fn (int|string $item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
 =======
         $models_collect->map(fn ($item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**

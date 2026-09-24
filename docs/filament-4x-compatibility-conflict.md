@@ -62,12 +62,14 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Rilevamento**: 2025-01-27
 **Data Risoluzione**: 2025-01-27
 =======
 **Data Rilevamento**: [DATE]
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Rilevamento**: [DATE]
@@ -77,6 +79,12 @@ $rows = $query->get();
 **Data Rilevamento**: 2025-01-27
 **Data Risoluzione**: 2025-01-27
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+**Data Rilevamento**: 2025-01-27
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Sintomi**:
 - Collegamenti ai moduli scomparsi dal dashboard principale
@@ -113,10 +121,12 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Risoluzione**: [DATE]
@@ -124,6 +134,11 @@ $rows = $query->get();
 =======
 **Data Risoluzione**: 2025-01-27
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Sintomi**:
 - SVG del link "Main Panel" conteneva caratteri non validi
@@ -145,10 +160,12 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Risoluzione**: [DATE]
@@ -156,6 +173,11 @@ $rows = $query->get();
 =======
 **Data Risoluzione**: 2025-01-27
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Soluzioni Implementate**:
 - ✅ Corretto problema di inizializzazione nel `XotBasePanelProvider`
@@ -172,10 +194,12 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Risoluzione**: [DATE]
@@ -183,6 +207,11 @@ $rows = $query->get();
 =======
 **Data Risoluzione**: 2025-01-27
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Sintomi**:
 - Errore "Cannot redeclare non static Widget::$view as static"
@@ -206,10 +235,12 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Risoluzione**: [DATE]
@@ -217,6 +248,11 @@ $rows = $query->get();
 =======
 **Data Risoluzione**: 2025-01-27
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Sintomi**:
 - Errore "Target [Illuminate\Database\Eloquent\Model] is not instantiable"
@@ -245,12 +281,14 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Rilevamento**: 2025-01-27
 **Data Risoluzione**: 2025-01-27
 =======
 **Data Rilevamento**: [DATE]
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Rilevamento**: [DATE]
@@ -260,6 +298,12 @@ $rows = $query->get();
 **Data Rilevamento**: 2025-01-27
 **Data Risoluzione**: 2025-01-27
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+**Data Rilevamento**: 2025-01-27
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 **Problemi Critici**:
 - ❌ **DUPLICAZIONE**: Discovery duplicato sia sopra che dentro il `when()`
@@ -288,10 +332,12 @@ $rows = $query->get();
 **Data Completamento**: 2025-01-27
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Completamento**: 2025-01-27
 =======
 **Data Completamento**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Completamento**: [DATE]
@@ -299,6 +345,11 @@ $rows = $query->get();
 =======
 **Data Completamento**: 2025-01-27
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+**Data Completamento**: 2025-01-27
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Errori PHPStan**: 0/3520 (livello 9)
 **Compatibilità**: Filament 4.x ✅
 **Problemi Dashboard**: ✅ RISOLTI
@@ -330,22 +381,31 @@ $rows = $query->get();
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_u8MkFv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< HEAD
 <<<<<<< .merge_file_tPeiJr
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: [DATE]*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
@@ -355,3 +415,7 @@ $rows = $query->get();
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_u8MkFv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

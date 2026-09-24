@@ -7,11 +7,14 @@ created: 2026-05-07
 <<<<<<< .merge_file_IT3BqW
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_qm1CGt
+=======
+>>>>>>> da9ae01a0 (.)
 updated: 2026-07-16
 qmd: "xotbase filament mirror inheritance"
 issues: ["https://github.com/laraxot/base_techplanner_fila5/issues/45"]
@@ -22,12 +25,18 @@ discussions: ["https://github.com/laraxot/base_techplanner_fila5/discussions/12"
 =======
 updated: 2026-05-07
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 updated: 2026-05-07
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qm1CGt
+=======
+=======
+updated: 2026-05-07
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 tags: [xotbase, filament, tables, enforcement]
 related:
   - xotbase-resource-form-pattern.md
@@ -55,10 +64,12 @@ Note: XotBaseResourceTable.php itself is the abstract base class (not counted ab
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -66,3 +77,7 @@ Note: XotBaseResourceTable.php itself is the abstract base class (not counted ab
 
 
 >>>>>>> .merge_file_qm1CGt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

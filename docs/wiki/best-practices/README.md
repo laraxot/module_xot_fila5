@@ -2,13 +2,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_9BbkJZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,6 +34,7 @@
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 >>>>>>> laraxot/dev
 =======
@@ -39,12 +45,17 @@
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_eAlcJO
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Readme"
 type: reference
@@ -56,7 +67,10 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< .merge_file_kkjBRW
@@ -68,7 +82,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_9BbkJZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,11 +99,16 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_eAlcJO
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Best Practices
 
@@ -122,6 +145,7 @@ updated: 2026-08-24
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< HEAD
@@ -137,8 +161,15 @@ updated: 2026-08-24
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
@@ -162,25 +193,32 @@ updated: 2026-08-24
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< .merge_file_kkjBRW
 =======
 =======
 >>>>>>> .merge_file_9BbkJZ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 >>>>>>> .merge_file_jogm6S
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9BbkJZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 =======
@@ -189,6 +227,10 @@ updated: 2026-08-24
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_eAlcJO
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
@@ -203,6 +245,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< .merge_file_kkjBRW
@@ -211,7 +254,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_9BbkJZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -222,9 +269,14 @@ updated: 2026-08-24
 =======
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -368,7 +420,12 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_eAlcJO
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

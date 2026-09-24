@@ -83,10 +83,12 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     protected $connection = 'quaeris'; // Module-specific connection
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'quaeris'; // Module-specific connection
 =======
     protected $connection = 'module_name'; // Module-specific connection
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     protected $connection = 'module_name'; // Module-specific connection
@@ -94,6 +96,11 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 =======
     protected $connection = 'quaeris'; // Module-specific connection
 >>>>>>> .merge_file_H5HoP7
+=======
+=======
+    protected $connection = 'quaeris'; // Module-specific connection
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     protected $with = [
         'extra', // Always load extra fields
@@ -144,6 +151,7 @@ The module BaseModel is where you add:
 <<<<<<< .merge_file_titcaz
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -164,11 +172,16 @@ class Event extends BaseModel { ... }
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H5HoP7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -243,10 +256,12 @@ class SurveyPdf extends BaseModel
 - Predictable patterns
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Predictable patterns
 =======
 - <nome progetto>able patterns
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - <nome progetto>able patterns
@@ -254,6 +269,11 @@ class SurveyPdf extends BaseModel
 =======
 - Predictable patterns
 >>>>>>> .merge_file_H5HoP7
+=======
+=======
+- Predictable patterns
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -310,10 +330,12 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 =======
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
@@ -321,3 +343,8 @@ This pattern ensures that every model in the system follows the same foundationa
 =======
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 >>>>>>> .merge_file_H5HoP7
+=======
+=======
+This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

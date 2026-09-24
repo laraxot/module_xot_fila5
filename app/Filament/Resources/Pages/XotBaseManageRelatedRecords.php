@@ -189,10 +189,56 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     use HasXotForm;
     use HasXotTable {
         HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+<<<<<<< HEAD
     }
     use NavigationLabelTrait;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        getGridTableColumns as private xotGetGridTableColumns;
+        getTablePaginated as private xotGetTablePaginated;
+        getSearchableColumns as private xotSearchableColumns;
+    }
+    use NavigationLabelTrait;
+
+    /**
+     * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getGridTableColumns(): array
+    {
+        return $this->xotGetGridTableColumns();
+    }
+
+    /**
+     * @return bool|array<int|string>
+     */
+    protected function getTablePaginated(): bool|array
+    {
+        $paginated = $this->xotGetTablePaginated();
+
+        if (is_bool($paginated)) {
+            return $paginated;
+        }
+
+        /** @var array<int|string> $options */
+        $options = $paginated;
+
+        return $options;
+    }
+
+    /**
+     * @return array<string>
+     */
+    protected function getSearchableColumns(): array
+    {
+        /** @var array<string> $columns */
+        $columns = $this->xotSearchableColumns();
+
+        return $columns;
+    }
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected static string $recordTitleAttribute = 'name';
 
     public static function getNavigationGroup(): string
@@ -207,7 +253,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getTitle(): string
     {
         return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
@@ -488,6 +538,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     public static function getNavigationLabel(): string
     {
         return static::transFunc(__FUNCTION__);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
+<<<<<<< HEAD
 use Modules\Xot\Adapters\PdfBuilderAdapter;
 use Modules\Xot\Contracts\PdfBuilderContract;
+<<<<<<< HEAD
 <<<<<<< .merge_file_782dpn
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -20,6 +22,12 @@ use function Safe\base64_decode;
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+use Modules\Xot\Contracts\PdfBuilderContract;
+use Modules\Xot\Support\PdfBuilderAdapter;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\base64_decode;
 

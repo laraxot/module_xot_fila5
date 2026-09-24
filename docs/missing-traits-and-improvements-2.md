@@ -615,6 +615,7 @@ class AlertWidget extends BaseTableWidget
 <<<<<<< .merge_file_tzvcuc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
@@ -635,6 +636,7 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](./ARCHITECTURE.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -642,6 +644,12 @@ class AlertWidget extends BaseTableWidget
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 >>>>>>> .merge_file_Z3cM8U
+=======
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -655,10 +663,12 @@ class AlertWidget extends BaseTableWidget
 **Benefici**: ALTI
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Benefici**: ALTI
 =======
 **Benefici**: ALTI
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Benefici**: ALTI
@@ -666,3 +676,8 @@ class AlertWidget extends BaseTableWidget
 =======
 **Benefici**: ALTI
 >>>>>>> .merge_file_Z3cM8U
+=======
+=======
+**Benefici**: ALTI
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

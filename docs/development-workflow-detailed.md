@@ -178,11 +178,14 @@ class ProductResource extends XotBaseResource
 <<<<<<< .merge_file_jNZLJI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_5lTUHz
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -193,12 +196,18 @@ class ProductResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5lTUHz
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -213,11 +222,14 @@ class ProductResource extends XotBaseResource
 <<<<<<< .merge_file_jNZLJI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_5lTUHz
+=======
+>>>>>>> da9ae01a0 (.)
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
@@ -228,12 +240,18 @@ class ProductResource extends XotBaseResource
 =======
     public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getInfolistSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5lTUHz
+=======
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Infolists\Components\TextEntry::make('name'),
@@ -572,11 +590,13 @@ echo "5. Run quality checks"
 **Maintained by**: Xot Module Development Team
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maintained by**: Xot Module Development Team
 =======
 
 **Maintained by**: Xot Module Development Team
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -585,3 +605,8 @@ echo "5. Run quality checks"
 =======
 **Maintained by**: Xot Module Development Team
 >>>>>>> .merge_file_5lTUHz
+=======
+=======
+**Maintained by**: Xot Module Development Team
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

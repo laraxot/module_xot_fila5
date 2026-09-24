@@ -1,22 +1,34 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_7lHAKy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
 =======
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 
 =======
 <<<<<<< HEAD
 
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Toeq77
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ?>
 <div
     x-data="{

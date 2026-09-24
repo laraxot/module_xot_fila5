@@ -64,19 +64,26 @@ function classesExtendingFilamentDirectly(): array
     );
 
     foreach ($iterator as $fileInfo) {
+<<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 <<<<<<< .merge_file_FPmeuX
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_BWtZ9P
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_ICsjQK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
@@ -84,6 +91,10 @@ function classesExtendingFilamentDirectly(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_TvmFCt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             continue;
         }
 
@@ -101,20 +112,27 @@ function classesExtendingFilamentDirectly(): array
         $source = file_get_contents($path);
         $match = [];
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_FPmeuX
 <<<<<<< HEAD
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_BWtZ9P
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
 =======
         if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
 >>>>>>> .merge_file_ICsjQK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
@@ -123,6 +141,10 @@ function classesExtendingFilamentDirectly(): array
 =======
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
 >>>>>>> .merge_file_TvmFCt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             continue;
         }
 
@@ -134,20 +156,27 @@ function classesExtendingFilamentDirectly(): array
 
         // `extends TextColumn` dove TextColumn è un alias di import di una XotBase
         // non è una violazione: conta cosa importa, non come lo chiama.
+<<<<<<< HEAD
 <<<<<<< .merge_file_FPmeuX
 <<<<<<< HEAD
         if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_BWtZ9P
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
 =======
         if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
 >>>>>>> .merge_file_ICsjQK
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
@@ -156,6 +185,10 @@ function classesExtendingFilamentDirectly(): array
 =======
         if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
 >>>>>>> .merge_file_TvmFCt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             continue;
         }
 

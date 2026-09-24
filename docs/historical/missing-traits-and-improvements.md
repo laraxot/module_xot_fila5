@@ -613,11 +613,15 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_KZx328
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Ra3gjm
 - [Architettura Moduli](architecture.md)
 =======
@@ -627,6 +631,7 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lmzzfd
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Architettura Moduli](./ARCHITECTURE.md)
@@ -634,6 +639,11 @@ class AlertWidget extends BaseTableWidget
 =======
 - [Architettura Moduli](architecture.md)
 >>>>>>> .merge_file_zHhLUB
+=======
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1257,11 +1267,15 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_KZx328
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Ra3gjm
 - [Architettura Moduli](architecture.md)
 =======
@@ -1271,6 +1285,7 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lmzzfd
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Architettura Moduli](./ARCHITECTURE.md)
@@ -1278,6 +1293,11 @@ class AlertWidget extends BaseTableWidget
 =======
 - [Architettura Moduli](architecture.md)
 >>>>>>> .merge_file_zHhLUB
+=======
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---

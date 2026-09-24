@@ -1,11 +1,16 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_gp9MNg
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
@@ -29,11 +34,16 @@ uses(PHPUnit\Framework\TestCase::class);
 =======
 
 >>>>>>> .merge_file_YmW2pL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wXxexd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
@@ -42,15 +52,20 @@ use PHPUnit\Framework\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gp9MNg
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_YmW2pL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -58,6 +73,12 @@ uses(TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wXxexd
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 function invokeProtectedSortHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -66,6 +87,7 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 }
 
 test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,6 +98,12 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
 <<<<<<< .merge_file_gp9MNg
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_gp9MNg
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     $table = new class extends XotBaseResourceTable
     {
 <<<<<<< HEAD
@@ -92,6 +120,7 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
     $table = new class extends XotBaseResourceTable {
         /** @return array<string, Column> */
 >>>>>>> .merge_file_YmW2pL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -100,6 +129,10 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
     {
         /** @return array<string, Column> */
 >>>>>>> .merge_file_wXxexd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         public function getTableColumns(): array
         {
             return [];
@@ -118,6 +151,7 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
 });
 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -128,6 +162,12 @@ test('getTableSortColumn override su XotBaseResourceTable', function (): void {
 <<<<<<< .merge_file_gp9MNg
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_gp9MNg
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     $table = new class extends XotBaseResourceTable
     {
 <<<<<<< HEAD
@@ -144,6 +184,7 @@ test('getTableSortColumn override su XotBaseResourceTable', function (): void {
     $table = new class extends XotBaseResourceTable {
         /** @return array<string, Column> */
 >>>>>>> .merge_file_YmW2pL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -152,6 +193,10 @@ test('getTableSortColumn override su XotBaseResourceTable', function (): void {
     {
         /** @return array<string, Column> */
 >>>>>>> .merge_file_wXxexd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         public function getTableColumns(): array
         {
             return [];

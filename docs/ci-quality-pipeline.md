@@ -66,11 +66,13 @@ docker run --rm -v "$PWD":/path zricethezav/gitleaks:latest detect --no-git --so
 - **`tests/AuditCoverage/` must never exist as a physical directory in any module or theme.** It looks like a legitimate test path but gets picked up by PHPUnit/Pest as if it contained real tests, and it was historically used by mistake as a dumping ground for phpstan/phpmd/phpinsights/pest/playwright/puppeteer output instead of `build/{tool}/` (this is why `laravel/phpstan.neon` had to add `excludePaths: ./*/tests/AuditCoverage/*` — a symptom fix for a wrong-destination problem, not a rule to rely on). If found: delete it, and ensure the module/theme `.gitignore` has both `tests/AuditCoverage` and `tests/AuditCoverage/`. Same anti-pattern applies to `.claude-audit/` and `audit-coverage/`.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Store reports in CI artifacts (e.g., `build/{tool}/`), not in `docs/` folders.
 - **`tests/AuditCoverage/` must never exist as a physical directory in any module or theme.** It looks like a legitimate test path but gets picked up by PHPUnit/Pest as if it contained real tests, and it was historically used by mistake as a dumping ground for phpstan/phpmd/phpinsights/pest/playwright/puppeteer output instead of `build/{tool}/` (this is why `laravel/phpstan.neon` had to add `excludePaths: ./*/tests/AuditCoverage/*` — a symptom fix for a wrong-destination problem, not a rule to rely on). If found: delete it, and ensure the module/theme `.gitignore` has both `tests/AuditCoverage` and `tests/AuditCoverage/`. Same anti-pattern applies to `.claude-audit/` and `audit-coverage/`.
 =======
 - Store reports in CI artifacts (e.g., `build/`), not in `docs/` folders.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Store reports in CI artifacts (e.g., `build/`), not in `docs/` folders.
@@ -79,6 +81,11 @@ docker run --rm -v "$PWD":/path zricethezav/gitleaks:latest detect --no-git --so
 - Store reports in CI artifacts (e.g., `build/{tool}/`), not in `docs/` folders.
 - **`tests/AuditCoverage/` must never exist as a physical directory in any module or theme.** It looks like a legitimate test path but gets picked up by PHPUnit/Pest as if it contained real tests, and it was historically used by mistake as a dumping ground for phpstan/phpmd/phpinsights/pest/playwright/puppeteer output instead of `build/{tool}/` (this is why `laravel/phpstan.neon` had to add `excludePaths: ./*/tests/AuditCoverage/*` — a symptom fix for a wrong-destination problem, not a rule to rely on). If found: delete it, and ensure the module/theme `.gitignore` has both `tests/AuditCoverage` and `tests/AuditCoverage/`. Same anti-pattern applies to `.claude-audit/` and `audit-coverage/`.
 >>>>>>> .merge_file_9xcLJN
+=======
+=======
+- Store reports in CI artifacts (e.g., `build/`), not in `docs/` folders.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Responsibilities
 - Module owners review advisory reports, fix low-risk issues first (formatting, naming), validate flows, then enable enforcement.

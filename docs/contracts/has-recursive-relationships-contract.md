@@ -1,11 +1,17 @@
 <<<<<<< .merge_file_dVkw5N
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "HasRecursiveRelationshipsContract Documentation"
 type: documentation
@@ -25,11 +31,16 @@ related:
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_NuIMQ2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # HasRecursiveRelationshipsContract Documentation
 
 ## Overview
@@ -46,10 +57,12 @@ This contract ensures type safety and consistency across all tree-structured mod
 - **Type Safety**: All methods have proper return types
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Type Safety**: All methods have proper return types
 =======
 - **Type Safety**: Relationship methods keep precise PHPDoc return types
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Type Safety**: Relationship methods keep precise PHPDoc return types
@@ -57,6 +70,11 @@ This contract ensures type safety and consistency across all tree-structured mod
 =======
 - **Type Safety**: All methods have proper return types
 >>>>>>> .merge_file_NuIMQ2
+=======
+=======
+- **Type Safety**: Relationship methods keep precise PHPDoc return types
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Consistency**: Standardized interface across modules
 - **PHPStan Compatibility**: Level 10 static analysis compliance
 
@@ -73,11 +91,14 @@ abstract class BaseTreeModel extends BaseModel implements HasRecursiveRelationsh
 <<<<<<< .merge_file_dVkw5N
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_NuIMQ2
+=======
+>>>>>>> da9ae01a0 (.)
 ### TypedHasRecursiveRelationships Trait
 The trait acts as a wrapper around the vendor package, providing:
 - **Return Type Safety**: All methods return properly typed objects
@@ -87,8 +108,12 @@ The trait acts as a wrapper around the vendor package, providing:
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### Vendor HasRecursiveRelationships trait
 
 STORY-346 removed the local `TypedHasRecursiveRelationships` wrapper. Tree models use `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` directly.
@@ -96,11 +121,16 @@ STORY-346 removed the local `TypedHasRecursiveRelationships` wrapper. Tree model
 The contract keeps the domain boundary and PHPDoc relationship types; runtime signatures follow the vendor package.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_NuIMQ2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Key Methods
 
@@ -210,10 +240,12 @@ class MyModel extends BaseTreeModel {
 4. Check trait aliasing in `TypedHasRecursiveRelationships`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Check trait aliasing in `TypedHasRecursiveRelationships`
 =======
 4. Check that models import the vendor `HasRecursiveRelationships` trait directly
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 4. Check that models import the vendor `HasRecursiveRelationships` trait directly
@@ -221,6 +253,11 @@ class MyModel extends BaseTreeModel {
 =======
 4. Check trait aliasing in `TypedHasRecursiveRelationships`
 >>>>>>> .merge_file_NuIMQ2
+=======
+=======
+4. Check that models import the vendor `HasRecursiveRelationships` trait directly
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Best Practices
 
@@ -239,10 +276,12 @@ class MyModel extends BaseTreeModel {
 - [TypedHasRecursiveRelationships](traits/typed-has-recursive-relationships.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [TypedHasRecursiveRelationships](traits/typed-has-recursive-relationships.md)
 =======
 - [Recursive relationships vendor direct](../recursive-relationships-vendor-direct.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Recursive relationships vendor direct](../recursive-relationships-vendor-direct.md)
@@ -250,4 +289,9 @@ class MyModel extends BaseTreeModel {
 =======
 - [TypedHasRecursiveRelationships](traits/typed-has-recursive-relationships.md)
 >>>>>>> .merge_file_NuIMQ2
+=======
+=======
+- [Recursive relationships vendor direct](../recursive-relationships-vendor-direct.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Laravel Adjacency List](https://github.com/staudenmeir/laravel-adjacency-list)

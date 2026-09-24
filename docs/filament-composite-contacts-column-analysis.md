@@ -235,15 +235,21 @@ Questa implementazione stabilisce un precedente per:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [UI Icons System](../../ui/project_docs/icons.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [UI Icons System](../../ui/project_docs/icons.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_RbV7tr
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [TechPlanner Client Model](../../TechPlanner/app/Models/Client.php)
 - [Filament Official Documentation](https://filamentphp.com/project_docs/3.x/tables/columns)
 
@@ -257,10 +263,12 @@ Questa implementazione stabilisce un precedente per:
 **Autore**: Cascade AI Assistant
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Autore**: Cascade AI Assistant
 =======
 **Autore**: Cascade AI Assistant
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Autore**: Cascade AI Assistant
@@ -268,3 +276,8 @@ Questa implementazione stabilisce un precedente per:
 =======
 **Autore**: Cascade AI Assistant
 >>>>>>> .merge_file_RbV7tr
+=======
+=======
+**Autore**: Cascade AI Assistant
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_2vX989
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_LJxcgs
 =======
@@ -342,9 +345,13 @@ function xot_config(string $key): mixed
 =======
 >>>>>>> .merge_file_7FUtwH
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_45BLgo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: legacy-roadmap-ands
@@ -352,13 +359,20 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
+<<<<<<< HEAD
 <<<<<<< .merge_file_2vX989
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_LJxcgs
 =======
 >>>>>>> .merge_file_e59rpe
 >>>>>>> .merge_file_7FUtwH
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_45BLgo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

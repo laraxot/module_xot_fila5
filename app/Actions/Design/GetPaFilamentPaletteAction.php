@@ -17,21 +17,32 @@ final class GetPaFilamentPaletteAction
     use QueueableAction;
 
     /** Verde PA — azioni primarie, CTA istituzionali */
+<<<<<<< HEAD
 <<<<<<< .merge_file_5mzLAN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_wWOdKs
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_WendtL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cwYzUA
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public const string PRIMARY_HEX = '#007A52';
 
     /** Blu istituzionale — info, link header */
     public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
+<<<<<<< HEAD
 <<<<<<< .merge_file_5mzLAN
 <<<<<<< HEAD
 =======
@@ -39,19 +50,32 @@ final class GetPaFilamentPaletteAction
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_wWOdKs
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
     public const PRIMARY_HEX = '#007A52';
 
     /** Blu istituzionale — info, link header */
     public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_WendtL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cwYzUA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     /**
      * @return array<string, array<int, string>|string>

@@ -124,11 +124,13 @@ $currentTeam = $user->currentTeam;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Testing Priority Rule](../geo/docs/testing-priority-rule.md)
 - [No RefreshDatabase Policy](../activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Testing Priority Rule](../geo/docs/testing-priority-rule.md)
@@ -137,6 +139,10 @@ $currentTeam = $user->currentTeam;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_boPhAF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🔄 Workflow per Ogni Test
 
@@ -157,11 +163,13 @@ $currentTeam = $user->currentTeam;
 **Prossimo step**: Correggere ArtisanServiceTest.php
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Prossimo step**: Correggere ArtisanServiceTest.php
 =======
 **Ultimo aggiornamento**: [DATE]
 **Prossimo step**: Correggere ArtisanServiceTest.php
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -170,3 +178,8 @@ $currentTeam = $user->currentTeam;
 =======
 **Prossimo step**: Correggere ArtisanServiceTest.php
 >>>>>>> .merge_file_boPhAF
+=======
+=======
+**Prossimo step**: Correggere ArtisanServiceTest.php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -495,6 +495,7 @@ Per aggiornare le traduzioni esistenti da una struttura semplice a una espansa:
 - [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [LangServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/LangServiceProvider.php)
 - [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
 =======
@@ -502,6 +503,7 @@ Per aggiornare le traduzioni esistenti da una struttura semplice a una espansa:
 - [LangServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/LangServiceProvider.php)
 - [TRANSLATIONS.md](base_orisbroker_fila5/laravel/modules/brain/docs/translations.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
@@ -512,3 +514,9 @@ Per aggiornare le traduzioni esistenti da una struttura semplice a una espansa:
 - [LangServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/LangServiceProvider.php)
 - [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
 >>>>>>> .merge_file_ApXBVy
+=======
+=======
+- [LangServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/LangServiceProvider.php)
+- [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -13,7 +13,11 @@ use Modules\Xot\Models\Module;
 =======
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 class ModulesTable extends XotBaseResourceTable
 {
@@ -25,7 +29,11 @@ class ModulesTable extends XotBaseResourceTable
 
     /**
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @return array<string, Column>
      */
     public function getTableColumns(): array
@@ -45,7 +53,11 @@ class ModulesTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable(),
             'name' => TextColumn::make('name')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ];
     }
 }

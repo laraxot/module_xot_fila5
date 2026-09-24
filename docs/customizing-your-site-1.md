@@ -81,9 +81,13 @@ class Foo extends bar
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_zhxoaN
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
@@ -93,7 +97,10 @@ class Foo extends bar
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_yOTid6
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -110,9 +117,14 @@ class Foo extends bar
 <<<<<<< HEAD
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zhxoaN
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

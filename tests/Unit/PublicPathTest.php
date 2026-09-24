@@ -1,12 +1,18 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_OILW8I
 <<<<<<< HEAD
 <<<<<<< HEAD
 use App\Application;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_S4odEp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -22,27 +28,37 @@ use App\Application;
 =======
 use App\Application;
 >>>>>>> .merge_file_iyK31b
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 use App\Application;
 >>>>>>> .merge_file_awsVU3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_OILW8I
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_S4odEp
 /**
 =======
 /*
 >>>>>>> .merge_file_iyK31b
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 /**
@@ -50,6 +66,11 @@ uses(TestCase::class)->group('no-xot-db');
 =======
 /**
 >>>>>>> .merge_file_awsVU3
+=======
+=======
+/**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * Guardia sul document root.
  *
  * Il web server serve `public_html/`, non `laravel/public/`. `App\Application` sovrascrive
@@ -88,6 +109,7 @@ it('restituisce un percorso anche per segmenti non ancora creati', function (): 
 });
 
 it('usa la Application con publicPath sovrascritto', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_OILW8I
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,7 +117,12 @@ it('usa la Application con publicPath sovrascritto', function (): void {
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_S4odEp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -119,6 +146,7 @@ it('usa la Application con publicPath sovrascritto', function (): void {
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
 >>>>>>> .merge_file_iyK31b
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -127,6 +155,10 @@ it('usa la Application con publicPath sovrascritto', function (): void {
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
 >>>>>>> .merge_file_awsVU3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });
 
 it('public_html esiste ed e fuori da laravel/', function (): void {

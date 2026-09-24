@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PyEr6e
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**
 
@@ -74,14 +80,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_PyEr6e
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 4. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
    - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< HEAD
 <<<<<<< .merge_file_KYazRV
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -93,11 +106,16 @@
    - **Impatto**: Coerenza nel modulo <nome progetto>
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PyEr6e
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 5. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/EditPageContent.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
@@ -119,14 +137,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_PyEr6e
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 8. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< HEAD
 <<<<<<< .merge_file_KYazRV
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -138,11 +163,16 @@
    - **Impatto**: Coerenza nel modulo <nome progetto>
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PyEr6e
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 9. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/ViewPageContent.php`**
    - **Prima**: `extends ViewRecord` + `use ViewRecord\Concerns\Translatable`
@@ -324,10 +354,12 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 // ... existing code ...
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ... existing code ...
 =======
 // ... existing code ...
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // ... existing code ...
@@ -335,3 +367,8 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 =======
 // ... existing code ...
 >>>>>>> .merge_file_PyEr6e
+=======
+=======
+// ... existing code ...
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

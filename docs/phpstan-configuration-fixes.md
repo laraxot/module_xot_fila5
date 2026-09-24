@@ -104,6 +104,7 @@ parameters:
         - ./vendor/amenadiel/jpgraph/src/config.inc.php
 
     scanFiles:
+<<<<<<< HEAD
         - ./Modules/Xot/Helpers/Helper.php
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
@@ -112,10 +113,17 @@ parameters:
 =======
     tmpDir: ./storage/app/phpstan
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        - ./Modules/Xot/helpers/Helper.php
+
+    editorUrl: 'vscode://file/%%file%%:%%line%%'
+    tmpDir: /tmp/phpstan
+>>>>>>> da9ae01a0 (.)
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Runtime Rule
@@ -126,6 +134,8 @@ parameters:
   `XDEBUG_MODE=off ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress`
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 ## Best Practices per PHPStan
 
 ### 1. Livello di Analisi
@@ -218,7 +228,11 @@ La configurazione PHPStan implementata mantiene un alto livello di qualità del 
 **Laravel Version**: 10+
 **Larastan Version**: 2.9+
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stato**: ✅ Configurazione Stabile
 =======
 **Stato**: ✅ Configurazione Stabile
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Stato**: ✅ Configurazione Stabile
+>>>>>>> da9ae01a0 (.)

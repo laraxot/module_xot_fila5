@@ -69,7 +69,11 @@ describe('Save Php Array Action', function (): void {
     test('saves array to php file', function (): void {
         $data = ['a' => 1, 'b' => 'test'];
         $path = $this->tempDir.'/data.php';
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         $result = app(SavePhpArrayAction::class)->execute($data, $path);
 
@@ -84,7 +88,11 @@ describe('Save Php Array Action', function (): void {
 =======
     test('saved file has strict types', function (): void {
         $path = $this->tempDir.'/strict.php';
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         app(SavePhpArrayAction::class)->execute(['x' => 1], $path);
 
         Assert::assertStringContainsString('declare(strict_types=1)', file_get_contents($path));
@@ -126,5 +134,9 @@ describe('Save Php Array Action', function (): void {
         );
     });
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });

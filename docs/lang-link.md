@@ -11,11 +11,13 @@ Consulta la documentazione delle traduzioni:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
@@ -24,6 +26,10 @@ Consulta la documentazione delle traduzioni:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UjOjQ6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Collegamento Bidirezionale
 
@@ -33,6 +39,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 
 ## Collegamenti tra versioni di lang-link.md
 <<<<<<< .merge_file_OcTApD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -56,11 +63,16 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../cms/docs/lang-link.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UjOjQ6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [lang-link.md](../../../Chart/docs/lang-link.md)
 * [lang-link.md](../../../Reporting/docs/lang-link.md)
 * [lang-link.md](../../../Gdpr/docs/lang-link.md)
@@ -80,10 +92,12 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../Cms/docs/lang-link.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [lang-link.md](../../../Cms/docs/lang-link.md)
 =======
 * [lang-link.md](../../../Cms/docs/lang-link.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [lang-link.md](../../../Cms/docs/lang-link.md)
@@ -91,3 +105,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 =======
 * [lang-link.md](../../../Cms/docs/lang-link.md)
 >>>>>>> .merge_file_UjOjQ6
+=======
+=======
+* [lang-link.md](../../../Cms/docs/lang-link.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

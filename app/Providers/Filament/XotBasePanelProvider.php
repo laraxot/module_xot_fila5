@@ -7,7 +7,11 @@ namespace Modules\Xot\Providers\Filament;
 <<<<<<< HEAD
 use Filament\Auth\Pages\Login;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -23,7 +27,11 @@ use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
@@ -34,7 +42,11 @@ use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
 =======
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
 // Remove if not used elsewhere implicitly
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -70,7 +82,11 @@ abstract class XotBasePanelProvider extends PanelProvider
     protected bool $discoverModuleComponents = true;
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function panel(Panel $panel): Panel
     {
         $moduleNamespace = $this->getModuleNamespace();
@@ -120,7 +136,11 @@ abstract class XotBasePanelProvider extends PanelProvider
                 base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
                 sprintf('%s\\Filament\\Clusters', $moduleNamespace),
             )
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
@@ -131,7 +151,11 @@ abstract class XotBasePanelProvider extends PanelProvider
                 PreventRequestForgery::class,
 =======
                 VerifyCsrfToken::class,
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
@@ -187,7 +211,11 @@ abstract class XotBasePanelProvider extends PanelProvider
         }
 =======
             ]);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $panel;
     }

@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_rqQVYV
 =======
 >>>>>>> laraxot/dev
@@ -43,7 +44,11 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 =======
 >>>>>>> .merge_file_Lx9qIP
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 The file MUST be named: `_<module_name_in_snake_case>.code-workspace`
 
 ## Examples
@@ -83,11 +88,16 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 =======
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_XjgPFF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Rationale
 
@@ -101,6 +111,7 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 5. **Il nome deriva dal remote**: il suffisso `_fila<number>` dipende dal deployment e non deve comparire nel nome del workspace
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_rqQVYV
 =======
 5. **Il nome deriva dal remote**: il suffisso `_fila<number>` dipende dal deployment e non deve comparire nel nome del workspace
@@ -109,12 +120,17 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 =======
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 5. **Il nome deriva dal remote**: il suffisso `_fila<number>` dipende dal deployment e non deve comparire nel nome del workspace
 >>>>>>> .merge_file_XjgPFF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Common Mistakes
 
@@ -129,6 +145,7 @@ Modules/Xot/
   _activity.code-workspace    # ✗ Wrong - belongs to Activity module
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_rqQVYV
   _xot.code-workspace       # ✓ Correct
   _activity.code-workspace  # ✗ Wrong - belongs to Activity module
@@ -143,6 +160,7 @@ Modules/Xot/
   _activity.code-workspace  # ✗ Wrong - belongs to Activity module
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
   _xot.code-workspace       # ✓ Correct
@@ -152,6 +170,12 @@ Modules/Xot/
   _module_xot.code-workspace  # ✓ Correct
   _activity.code-workspace    # ✗ Wrong - belongs to Activity module
 >>>>>>> .merge_file_XjgPFF
+=======
+=======
+  _xot.code-workspace       # ✓ Correct
+  _activity.code-workspace  # ✗ Wrong - belongs to Activity module
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### ❌ Wrong: Workspace file with wrong name
@@ -165,6 +189,7 @@ Modules/Job/
   _job_workspace.code-workspace     # ✗ Wrong - not derived from remote
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_rqQVYV
   _job_base.code-workspace  # ✗ Wrong
   _job_workspace.code-workspace  # ✗ Wrong
@@ -179,6 +204,7 @@ Modules/Job/
   _job_workspace.code-workspace  # ✗ Wrong
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
   _job_base.code-workspace  # ✗ Wrong
@@ -188,6 +214,12 @@ Modules/Job/
   _module_job_fila5.code-workspace  # ✗ Wrong - keeps the _fila suffix
   _job_workspace.code-workspace     # ✗ Wrong - not derived from remote
 >>>>>>> .merge_file_XjgPFF
+=======
+=======
+  _job_base.code-workspace  # ✗ Wrong
+  _job_workspace.code-workspace  # ✗ Wrong
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### ✅ Correct
@@ -200,6 +232,7 @@ Modules/Job/
   _module_job.code-workspace  # ✓ Correct (remote: module_job_fila5)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_rqQVYV
   _job.code-workspace  # ✓ Correct
 =======
@@ -210,6 +243,7 @@ Modules/Job/
   _job.code-workspace  # ✓ Correct
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
   _job.code-workspace  # ✓ Correct
@@ -217,6 +251,11 @@ Modules/Job/
 =======
   _module_job.code-workspace  # ✓ Correct (remote: module_job_fila5)
 >>>>>>> .merge_file_XjgPFF
+=======
+=======
+  _job.code-workspace  # ✓ Correct
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## Cross-Module Dependencies
