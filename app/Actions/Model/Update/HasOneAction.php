@@ -24,19 +24,19 @@ class HasOneAction
     /**
      * Execute the update operation for a HasOne relationship.
      *
-<<<<<<< HEAD
-     * @param  Model  $model  The parent model instance
-     * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
+     * <<<<<<< HEAD
      *
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException When relationship data is invalid
-=======
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
      * @param Model       $model       The parent model instance
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
      *
      * @throws \InvalidArgumentException When relationship type is invalid
      * @throws \RuntimeException         When relationship data is invalid
->>>>>>> laraxot/dev
+     *                                   =======
+     * @throws \InvalidArgumentException When relationship type is invalid
+     * @throws \RuntimeException         When relationship data is invalid
+     *                                   >>>>>>> laraxot/dev
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
