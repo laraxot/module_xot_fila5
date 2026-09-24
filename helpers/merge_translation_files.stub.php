@@ -1,32 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_aO58xO
-=======
-<<<<<<< .merge_file_QRdHRV
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_vErbo8
-=======
-<<<<<<< .merge_file_IpxFJs
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_wgQVYe
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aO58xO
-=======
->>>>>>> .merge_file_KTE3aD
->>>>>>> .merge_file_vErbo8
 /**
  * Stub file for PHPStan static analysis of merge_translation_files function.
  * This file provides the function signature for static analysis.
@@ -36,60 +11,9 @@ if (! function_exists('merge_translation_files')) {
     /**
      * Merge multiple PHP translation files into a single array.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_aO58xO
-     * @param  string  $first  First translation file path
-     * @param  string  ...$rest  Additional translation file paths
-=======
-<<<<<<< .merge_file_IpxFJs
-<<<<<<< HEAD
      * @param string $first   First translation file path
      * @param string ...$rest Additional translation file paths
      *
-=======
-<<<<<<< HEAD
-     * @param string $first   First translation file path
-     * @param string ...$rest Additional translation file paths
-     *
-=======
-     * @param  string  $first  First translation file path
-     * @param  string  ...$rest  Additional translation file paths
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_QRdHRV
-=======
-     * @param  string  $first  First translation file path
-     * @param  string  ...$rest  Additional translation file paths
-=======
-<<<<<<< .merge_file_IpxFJs
-<<<<<<< HEAD
-     * @param string $first   First translation file path
-     * @param string ...$rest Additional translation file paths
-     *
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_KTE3aD
-     * @param string $first   First translation file path
-     * @param string ...$rest Additional translation file paths
-     *
-=======
-     * @param  string  $first  First translation file path
-     * @param  string  ...$rest  Additional translation file paths
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_QRdHRV
-=======
->>>>>>> .merge_file_vErbo8
->>>>>>> laraxot/dev
-=======
-     * @param string $first   First translation file path
-     * @param string ...$rest Additional translation file paths
-     *
->>>>>>> .merge_file_wgQVYe
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_aO58xO
-=======
->>>>>>> .merge_file_KTE3aD
->>>>>>> .merge_file_vErbo8
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array

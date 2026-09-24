@@ -27,54 +27,9 @@ class MorphToManyAction
     /**
      * Execute the action to update morphToMany relationships.
      *
-     * <<<<<<< .merge_file_clpym5
-     * <<<<<<< HEAD
      *
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 =======
-     *                                 <<<<<<< .merge_file_vMvP9q
-     *                                 =======
-     *                                 <<<<<<< HEAD
-     *                                 >>>>>>> .merge_file_mBWaFH
-     * @param Model       $row         The model instance to update
-     * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 =======
-     *                                 <<<<<<< .merge_file_clpym5
-     *                                 =======
-     *                                 <<<<<<< .merge_file_vMvP9q
-     * @param Model       $row         The model instance to update
-     * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 =======
-     *                                 >>>>>>> .merge_file_mBWaFH
-     *                                 <<<<<<< HEAD
-     *                                 <<<<<<< .merge_file_dzY4dg
-     * @param Model       $row         The model instance to update
-     * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 =======
-     *                                 <<<<<<< .merge_file_1igvWF
-     * @param Model       $row         The model instance to update
-     * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 =======
-     *                                 <<<<<<< HEAD
-     * @param Model       $row         The model instance to update
-     * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 =======
-     * @param Model       $row         The model instance to update
-     * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 >>>>>>> laraxot/dev
-     *                                 >>>>>>> .merge_file_P67EmK
-     *                                 >>>>>>> .merge_file_gZmuQG
-     *                                 =======
-     * @param Model       $row         The model instance to update
-     * @param RelationDTO $relationDTO Data transfer object containing relation information
-     *                                 >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *                                 >>>>>>> .merge_file_o8Zv1E
-     *                                 <<<<<<< .merge_file_clpym5
-     *                                 >>>>>>> laraxot/dev
-     *                                 =======
-     *                                 >>>>>>> laraxot/dev
-     *                                 >>>>>>> .merge_file_mBWaFH
      *
      * @throws \Exception When data is not in correct format or relation is invalid
      */

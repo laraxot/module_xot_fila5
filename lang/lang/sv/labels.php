@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_NEkknp
 
-=======
-<<<<<<< .merge_file_aOJSoF
-=======
-
->>>>>>> .merge_file_NRy0vR
->>>>>>> .merge_file_DbIvCm
 return [
     'general' => [
         'all' => 'Alla',

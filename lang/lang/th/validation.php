@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_3kza8c
 
-=======
-<<<<<<< .merge_file_mmDZ3V
-=======
-
->>>>>>> .merge_file_wpWnQS
->>>>>>> .merge_file_4nstBI
 return [
     'accepted' => 'ข้อมูล :attribute ต้องผ่านการยอมรับก่อน',
     'active_url' => 'ข้อมูล :attribute ต้องเป็น URL เท่านั้น',

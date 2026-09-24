@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_NZUld2
 
-=======
-<<<<<<< .merge_file_7ayg9H
-=======
-
->>>>>>> .merge_file_W3E3wx
->>>>>>> .merge_file_QmElHs
 return [
     'backend' => [
         'roles' => [

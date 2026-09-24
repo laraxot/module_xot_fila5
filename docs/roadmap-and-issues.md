@@ -3,15 +3,7 @@
 **Modulo**: Xot (Core Framework Base)
 **Data Analisi**: 1 Ottobre 2025
 **Maintainer**: Laraxot Core Team
-<<<<<<< HEAD
 **Status PHPStan**: ⚠️ 9 errori (Level 9)
-=======
-<<<<<<< HEAD
-**Status PHPStan**: ⚠️ 9 errori (Level 9)
-=======
-**Status PHPStan**: ⚠️ 9 errori (Level 10)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -30,15 +22,7 @@
 
 ---
 
-<<<<<<< HEAD
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
-=======
-<<<<<<< HEAD
-## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
-=======
-## 🔴 COMPLETED PHPSTAN DA CORREGGERE (9)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Priorità CRITICA - Blocca altri moduli
 
@@ -250,15 +234,7 @@ function xot_config(string $key): mixed
 - [ ] Rimuovere dead catch block (5 min)
 
 **Totale**: ~2 ore
-<<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 9
-=======
-<<<<<<< HEAD
-**Risultato**: ✅ 0 errori PHPStan Level 9
-=======
-**Risultato**: ✅ 0 errori PHPStan Level 10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -303,15 +279,7 @@ function xot_config(string $key): mixed
 ## 📋 CHECKLIST QUALITÀ
 
 ### Code Quality ✅
-<<<<<<< HEAD
 - [x] PHPStan Level 9 (83% - domani 100%)
-=======
-<<<<<<< HEAD
-- [x] PHPStan Level 9 (83% - domani 100%)
-=======
-- [x] PHPStan Level 10 (83% - domani 100%)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [ ] PHPDoc 100% coverage
 - [ ] No dead code
 - [ ] No deprecated methods
@@ -355,13 +323,6 @@ function xot_config(string $key): mixed
 ## 🔗 Collegamenti
 
 - [← Xot Module README](./README.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [← Xot Module README](./readme.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [← Best Practices](./best-practices.md)
 - [← Troubleshooting](./troubleshooting.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
@@ -369,20 +330,7 @@ function xot_config(string $key): mixed
 
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 **Status**: ⚠️ 9 ERRORI DA CORREGGERE
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
-<<<<<<< HEAD
-=======
-=======
-**Status**: ⚠️ 9 COMPLETED DA CORREGGERE
-**Priorità**: 🔴 CRITICA (Core Framework)
-**Timeline**: 2 Ottobre 2025 (domani)
-**Effort**: ~2 ore → 100% CLEAN
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

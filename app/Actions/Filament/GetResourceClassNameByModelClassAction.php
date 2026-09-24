@@ -6,30 +6,7 @@ namespace Modules\Xot\Actions\Filament;
 
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< .merge_file_zQcnlC
-<<<<<<< HEAD
 use LogicException;
-=======
-=======
-<<<<<<< .merge_file_KGvBnl
-use LogicException;
-=======
-<<<<<<< HEAD
-use LogicException;
-=======
->>>>>>> .merge_file_dggyRL
-<<<<<<< .merge_file_SJi0u7
-<<<<<<< HEAD
-use LogicException;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_B170dV
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zQcnlC
-=======
->>>>>>> .merge_file_IC2nSz
->>>>>>> .merge_file_dggyRL
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -50,31 +27,7 @@ class GetResourceClassNameByModelClassAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_zQcnlC
-=======
-<<<<<<< .merge_file_KGvBnl
      * @param  class-string<Model>  $modelClass
-=======
->>>>>>> .merge_file_dggyRL
-<<<<<<< HEAD
-     * @param  class-string<Model>  $modelClass
-=======
-<<<<<<< .merge_file_SJi0u7
-<<<<<<< HEAD
-     * @param  class-string<Model>  $modelClass
-=======
-     * @param class-string<Model> $modelClass
-     *
->>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
-     *
->>>>>>> .merge_file_B170dV
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zQcnlC
-=======
->>>>>>> .merge_file_IC2nSz
->>>>>>> .merge_file_dggyRL
      * @return class-string<XotBaseResource>
      */
     public function execute(string $modelClass): string
@@ -83,20 +36,6 @@ class GetResourceClassNameByModelClassAction
 
         $resourceClass = Filament::getModelResource($modelClass);
 
-<<<<<<< .merge_file_zQcnlC
-=======
-<<<<<<< .merge_file_KGvBnl
-=======
->>>>>>> .merge_file_dggyRL
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_SJi0u7
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zQcnlC
-=======
->>>>>>> .merge_file_IC2nSz
->>>>>>> .merge_file_dggyRL
         if ($resourceClass === null) {
             throw new LogicException(
                 sprintf(
@@ -105,26 +44,6 @@ class GetResourceClassNameByModelClassAction
                     $modelClass
                 )
             );
-<<<<<<< .merge_file_zQcnlC
-=======
-<<<<<<< .merge_file_KGvBnl
-=======
->>>>>>> .merge_file_dggyRL
-<<<<<<< HEAD
-=======
-=======
-        if (null === $resourceClass) {
-            throw new \LogicException(sprintf('[%s] Nessuna Filament Resource registrata nel pannello corrente per il model [%s].', class_basename($this), $modelClass));
->>>>>>> laraxot/dev
-=======
-        if (null === $resourceClass) {
-            throw new \LogicException(sprintf('[%s] Nessuna Filament Resource registrata nel pannello corrente per il model [%s].', class_basename($this), $modelClass));
->>>>>>> .merge_file_B170dV
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_zQcnlC
-=======
->>>>>>> .merge_file_IC2nSz
->>>>>>> .merge_file_dggyRL
         }
 
         Assert::subclassOf($resourceClass, XotBaseResource::class);

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Troubleshooting Guide
 
 ## Common Issues
@@ -62,15 +58,3 @@
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: readme
-canonical: ../../../../Themes/docs/shared-components/README.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/README.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

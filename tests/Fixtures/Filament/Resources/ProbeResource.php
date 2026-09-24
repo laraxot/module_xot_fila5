@@ -13,14 +13,11 @@ class ProbeResource extends XotBaseResource
 
     protected static ?string $model = null;
 
-<<<<<<< HEAD
-=======
     public function getFormSchemaOld(): array
     {
         return [];
     }
 
->>>>>>> laraxot/dev
     /**
      * @return array<int, string>
      */

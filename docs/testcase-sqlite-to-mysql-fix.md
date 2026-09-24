@@ -201,21 +201,7 @@ Questo è INUTILE perché:
 ---
 
 **Data:** 2026-01-09
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 **Stato:** Pronto per implementazione
 **Righe:** 126 → ~25 (-80%)
 **Complessità:** ESTREMA → MINIMALE
 **Filosofia:** MySQL Production = MySQL Tests ✅
-<<<<<<< HEAD
-=======
-=======
-**Data:** [DATE]
-**Stato:** Pronto per implementazione
-**Righe:** 126 → ~25 (-80%)
-**Complessità:** ESTREMA → MINIMALE
-**Filosofia:** MySQL Production = MySQL Tests ✅
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

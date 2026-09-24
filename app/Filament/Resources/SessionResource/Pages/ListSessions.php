@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\SessionResource\Pages;
 
-<<<<<<< HEAD
-=======
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\SessionResource;
 
@@ -18,18 +16,11 @@ use Modules\Xot\Filament\Resources\SessionResource;
 class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
-<<<<<<< HEAD
-=======
 
-    public function getGridTableColumns(): array
-    {
-        return [
-            Stack::make($this->getTableColumns()),
-        ];
-    }
-
-    #[\Override]
-    public function getTableColumns(): array
+    /**
+     * @return array<string, Column>
+     */
+    protected function defineTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')->sortable()->label('ID'),
@@ -52,5 +43,20 @@ class ListSessions extends XotBaseListRecords
                 ->label('Last Activity'),
         ];
     }
->>>>>>> laraxot/dev
+
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return $this->defineTableColumns();
+    }
+
+    /**
+     * @return list<\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getGridTableColumns(): array
+    {
+        return [
+            Stack::make($this->defineTableColumns()),
+        ];
+    }
 }

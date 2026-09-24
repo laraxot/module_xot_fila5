@@ -25,31 +25,18 @@ use function Safe\unlink;
  * DatabaseTransactions handles rollback between tests.
  *
  * @property object|null $action
-<<<<<<< HEAD
- * @property Model|null $model
-=======
  * @property Model|null  $model
->>>>>>> laraxot/dev
  * @property object|null $service
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
-<<<<<<< HEAD
- * @property Model|null $testModel
- * @property object|null $extraClass
- * @property Model|null $baseModel
- * @property string|null $testDir
- * @property mixed $saved
- * @property mixed $extra_attributes
-=======
  * @property Model|null  $testModel
  * @property object|null $extraClass
  * @property Model|null  $baseModel
  * @property string|null $testDir
  * @property mixed       $saved
  * @property mixed       $extra_attributes
->>>>>>> laraxot/dev
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -58,8 +45,6 @@ abstract class TestCase extends XotBaseTestCase
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite', 'user', 'tenant', 'xot'];
 
-<<<<<<< HEAD
-=======
     public mixed $action = null;
 
     public mixed $model = null;
@@ -86,7 +71,6 @@ abstract class TestCase extends XotBaseTestCase
 
     public mixed $extra_attributes = null;
 
->>>>>>> laraxot/dev
     /**
      * @return array<int, class-string<ServiceProvider>>
      */
@@ -105,11 +89,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-<<<<<<< HEAD
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
-=======
             if ('sqlite' !== config("database.connections.{$connection}.driver")) {
->>>>>>> laraxot/dev
                 continue;
             }
 
@@ -121,12 +101,8 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< HEAD
-     * @param  class-string<T>  $class
-=======
      * @param class-string<T> $class
      *
->>>>>>> laraxot/dev
      * @return T
      */
     public function getAction(string $class): object
@@ -142,14 +118,9 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< HEAD
-     * @param  class-string<T>  $abstract
-     * @param  (\Closure(MockInterface&T): void)|null  $callback
-=======
      * @param class-string<T>                        $abstract
      * @param (\Closure(MockInterface&T): void)|null $callback
      *
->>>>>>> laraxot/dev
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -161,11 +132,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< HEAD
-     * @param  class-string<\Throwable>  $exception
-=======
      * @param class-string<\Throwable> $exception
->>>>>>> laraxot/dev
      */
     public function expectThrowable(string $exception): void
     {
@@ -200,11 +167,7 @@ abstract class TestCase extends XotBaseTestCase
         $files = scandir($dir);
 
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ($file === '.' || $file === '..') {
-=======
             if ('.' === $file || '..' === $file) {
->>>>>>> laraxot/dev
                 continue;
             }
 

@@ -8,12 +8,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-$baseModel = new class extends BaseModel
-{
-=======
 $baseModel = new class extends BaseModel {
->>>>>>> laraxot/dev
     protected $table = 'test_table';
 };
 

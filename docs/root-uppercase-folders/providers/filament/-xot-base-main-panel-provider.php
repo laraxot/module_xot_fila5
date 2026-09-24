@@ -1,20 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_rnIblU
-=======
-<<<<<<< .merge_file_cy5rRS
-
-=======
->>>>>>> .merge_file_GG50Fc
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_rnIblU
-=======
->>>>>>> .merge_file_NINMqG
->>>>>>> .merge_file_GG50Fc
 /**
  * Base provider for the Xot main panel in Filament.
  *

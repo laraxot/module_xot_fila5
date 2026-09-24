@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
@@ -21,20 +17,11 @@ class PdfAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
-<<<<<<< HEAD
             ->tooltip('pdf')
             ->openUrlInNewTab()
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('heroicon-o-document-arrow-down')
-=======
-            ->label('')
-            ->iconButton()
-            ->color('danger')
-            ->tooltip((string) __('xot::export_pdf.tooltip'))
-            ->openUrlInNewTab()
-            ->icon('xot-files.pdf')
->>>>>>> laraxot/dev
             ->action(fn (Model $record) => app(PdfByModelAction::class)->execute(model: $record));
     }
 }

@@ -24,11 +24,8 @@ return [
         ],
         'label' => 'Xls By Model Class Action',
         'sort' => 1,
-<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
-=======
         'icon' => 'xot-files.xls',
->>>>>>> laraxot/dev
     ],
     'fields' => [
         'id' => [

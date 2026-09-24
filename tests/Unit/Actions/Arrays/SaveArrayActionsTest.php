@@ -1,33 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_lEjlhi
-=======
-<<<<<<< .merge_file_Sf675N
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_dXpP3V
-=======
-<<<<<<< .merge_file_2DEY7V
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_DwmWLT
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_lEjlhi
-=======
->>>>>>> .merge_file_CH5Bp2
->>>>>>> .merge_file_dXpP3V
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;

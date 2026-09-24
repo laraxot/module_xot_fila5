@@ -1,17 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_QvoPzS
 declare(strict_types=1);
 
-=======
-<<<<<<< .merge_file_2aSTDF
-
-declare(strict_types=1);
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_ZBdHkl
->>>>>>> .merge_file_Vv89nt
 /**
  * da.
  */

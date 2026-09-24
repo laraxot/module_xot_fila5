@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_IWeucq
 
-=======
-<<<<<<< .merge_file_uAD5SX
-=======
-
->>>>>>> .merge_file_SdRiAg
->>>>>>> .merge_file_eeBZS6
 return [
     'failed' => 'Las credenciales no se han encontrado.',
     'general_error' => 'No tiene suficientes permisos..',

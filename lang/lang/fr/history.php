@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_bdBvyw
 
-=======
-<<<<<<< .merge_file_Op6Vp3
-=======
-
->>>>>>> .merge_file_svN0OM
->>>>>>> .merge_file_KDdpOx
 return [
     'backend' => [
         'none' => 'Aucun historique récent.',

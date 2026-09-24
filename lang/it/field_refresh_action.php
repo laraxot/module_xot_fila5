@@ -19,11 +19,8 @@ return [
         ],
         'success' => [
             'title' => 'Valore :name ricalcolato',
-<<<<<<< HEAD
             'body' => 'Il valore del campo Ã¨ stato ricalcolato con successo. Nuovo valore: :value',
-=======
             'body' => 'Il valore del campo è stato ricalcolato con successo. Nuovo valore: :value',
->>>>>>> laraxot/dev
         ],
     ],
 ];

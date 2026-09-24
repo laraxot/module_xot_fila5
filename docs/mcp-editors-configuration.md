@@ -2,15 +2,7 @@
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
-=======
-<<<<<<< HEAD
-Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
-=======
-Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto healthcare_app Fila4 Mono.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Cos'è MCP?
 
@@ -398,12 +390,4 @@ cp Modules/Xot/docs/windsurf-mcp-config.json ~/.codeium/windsurf/mcp_config.json
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
 - [MCP Server Recommended](./mcp-server-recommended.md) - Server consigliati per moduli
 - [Model Context Protocol](./model-context-protocol.md) - Panoramica generale MCP
-<<<<<<< HEAD
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
-=======
-<<<<<<< HEAD
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

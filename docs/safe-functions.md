@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Funzioni Safe nel Modulo Xot
 
 ## Panoramica
@@ -198,15 +194,3 @@ Safe\file_put_contents($filename, $modifiedContents);
 - [Documentazione thecodingmachine/safe](https://github.com/thecodingmachine/safe)
 - [Lista completa funzioni Safe](https://github.com/thecodingmachine/safe/blob/master/generated/Safe.php)
 - [Gestione Eccezioni in PHP](https://www.php.net/manual/en/language.exceptions.php)
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: safe-functions
-canonical: ../../../Themes/docs/shared-components/safe-functions.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/safe-functions.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

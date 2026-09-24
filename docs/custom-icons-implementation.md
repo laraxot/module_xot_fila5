@@ -4,13 +4,6 @@
 Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare icone personalizzate nel sistema Xot.
 
 ## Prerequisiti
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 
 ## Processo di Implementazione
@@ -59,14 +52,3 @@ Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeI
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerBladeIcons.md).
-
-## Risorse Aggiuntive
-- [Panoramica delle Blade Icons](blade-icons-overview.md)
-- [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

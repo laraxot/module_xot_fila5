@@ -229,10 +229,3 @@ public function processData(array $data): string
 **Status**: 🧘 **IN ANALISI**
 
 **Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

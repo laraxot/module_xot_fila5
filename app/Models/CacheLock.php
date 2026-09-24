@@ -13,7 +13,6 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *
  * @property string $key
  * @property string $owner
- *                              <<<<<<< .merge_file_aXAHpX
  *                              <<<<<<< HEAD
  * @property int    $expiration
  *
@@ -22,21 +21,8 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *
  * @property int $expiration
  *
- * @method static CacheLockFactory factory($count = null, $state = [])
- *                                                                     >>>>>>> laraxot/dev
- *                                                                     =======
- *                                                                     <<<<<<< HEAD
- *
- * @property int $expiration
- *
- * @method static CacheLockFactory factory($count = null, $state = [])
- *                                                                     =======
- *
- * @property int $expiration
- *
  * @method static CacheLockFactory          factory($count = null, $state = [])
  *                                                                              >>>>>>> laraxot/dev
- *                                                                              >>>>>>> .merge_file_Di1O57
  * @method static Builder<static>|CacheLock newModelQuery()
  * @method static Builder<static>|CacheLock newQuery()
  * @method static Builder<static>|CacheLock query()

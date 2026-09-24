@@ -53,32 +53,7 @@ describe('Xot RelationX ManageRelated StatesChart', function (): void {
             $t->timestamps();
         });
 
-<<<<<<< .merge_file_GNWjYH
-<<<<<<< HEAD
         $host = new XotCovRelationHost;
-=======
-=======
-<<<<<<< .merge_file_jy4t3C
-        $host = new XotCovRelationHost;
-=======
-<<<<<<< HEAD
-        $host = new XotCovRelationHost;
-=======
->>>>>>> .merge_file_Lp09rw
-<<<<<<< .merge_file_Y30LJe
-<<<<<<< HEAD
-        $host = new XotCovRelationHost;
-=======
-        $host = new XotCovRelationHost();
->>>>>>> laraxot/dev
-=======
-        $host = new XotCovRelationHost();
->>>>>>> .merge_file_n3eOFb
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_GNWjYH
-=======
->>>>>>> .merge_file_wSZYgq
->>>>>>> .merge_file_Lp09rw
         $host->forceFill(['id' => 1, 'key' => 'k', 'value' => 'v']);
         $host->exists = true;
 

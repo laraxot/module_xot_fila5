@@ -5,11 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources;
 
 use Filament\Infolists\Components\TextEntry;
-<<<<<<< HEAD
-use Filament\Support\Components\Component;
-=======
 use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
@@ -48,19 +44,13 @@ class LogResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
-=======
     #[\Override]
->>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];
     }
 
-<<<<<<< HEAD
-=======
     #[\Override]
->>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [

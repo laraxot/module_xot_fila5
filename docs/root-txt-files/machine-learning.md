@@ -1,45 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< .merge_file_TFUFgG
-=======
-<<<<<<< .merge_file_i6m2Ni
-=======
->>>>>>> .merge_file_dFvuUI
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_TFUFgG
-=======
->>>>>>> .merge_file_cXjShI
->>>>>>> .merge_file_dFvuUI
-title: 'Machine learning'
-module: Xot
-type: reference
-slug: machine-learning
-description: 'http://php-nlp-tools.com/blog/category/greek-pos-tagger/'
-tags: [migrato-da-txt, xot]
-converted_from: machine_learning.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
--------------------------------------
-=======
-<<<<<<< .merge_file_TFUFgG
-=======
-<<<<<<< .merge_file_i6m2Ni
-=======
->>>>>>> .merge_file_dFvuUI
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_TFUFgG
-=======
->>>>>>> .merge_file_cXjShI
->>>>>>> .merge_file_dFvuUI
 title: "Machine learning"
 type: reference
 status: active
@@ -54,22 +13,6 @@ note: "Convertito da machine_learning.txt (documento) da convert-docs-txt-to-md.
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
 ----------------------------------------
-<<<<<<< .merge_file_TFUFgG
-=======
-<<<<<<< .merge_file_i6m2Ni
-=======
->>>>>>> .merge_file_dFvuUI
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_TFUFgG
-=======
->>>>>>> .merge_file_cXjShI
->>>>>>> .merge_file_dFvuUI
->>>>>>> laraxot/dev
 rephrasing
 https://cloudmersive.com/nlp-api  !!!!!!!!!!!!!!!
 
@@ -110,36 +53,6 @@ https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TFUFgG
-<<<<<<< HEAD
-
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_i6m2Ni
-
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cXjShI
->>>>>>> .merge_file_dFvuUI
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP

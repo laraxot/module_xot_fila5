@@ -4,17 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_put_contents;
 
-=======
-use function Safe\file_put_contents;
-
-use Spatie\QueueableAction\QueueableAction;
-
->>>>>>> laraxot/dev
 /**
  * Persiste un array PHP con **una chiave per riga** (mai array annidati inline).
  *
@@ -28,11 +21,7 @@ class SavePhpArrayAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
-=======
-     * @param array<int|string, mixed> $data
->>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename): bool
     {
@@ -43,19 +32,11 @@ class SavePhpArrayAction
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
      */
     private function exportArray(array $data, int $depth): string
     {
         if ($data === []) {
-=======
-     * @param array<int|string, mixed> $data
-     */
-    private function exportArray(array $data, int $depth): string
-    {
-        if ([] === $data) {
->>>>>>> laraxot/dev
             return '[]';
         }
 
@@ -76,11 +57,7 @@ class SavePhpArrayAction
     private function exportValue(mixed $value, int $depth): string
     {
         if (is_array($value)) {
-<<<<<<< HEAD
             /** @var array<int|string, mixed> $value */
-=======
-            /* @var array<int|string, mixed> $value */
->>>>>>> laraxot/dev
             return $this->exportArray($value, $depth);
         }
 

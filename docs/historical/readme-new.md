@@ -665,32 +665,7 @@ Located in `bashscripts/`:
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
-<<<<<<< .merge_file_1N4mXx
-<<<<<<< HEAD
 See [CHANGELOG.md](changelog.md) for full history.
-=======
-=======
-<<<<<<< .merge_file_pTLjgz
-See [CHANGELOG.md](changelog.md) for full history.
-=======
-<<<<<<< HEAD
-See [CHANGELOG.md](changelog.md) for full history.
-=======
->>>>>>> .merge_file_szsWjV
-<<<<<<< .merge_file_UF4scq
-See [CHANGELOG.md](changelog.md) for full history.
-=======
-<<<<<<< HEAD
-See [CHANGELOG.md](changelog.md) for full history.
-=======
-See [CHANGELOG.md](./CHANGELOG.md) for full history.
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GyyFVR
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_1N4mXx
-=======
->>>>>>> .merge_file_A8Tjvq
->>>>>>> .merge_file_szsWjV
 
 ---
 

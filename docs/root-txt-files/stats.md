@@ -5,39 +5,7 @@ type: reference
 slug: stats
 description: 'Elenco di 8 riferimenti esterni raccolti per stats, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
-<<<<<<< HEAD
-<<<<<<< .merge_file_YdMYzZ
-=======
-<<<<<<< .merge_file_zqyp4a
-=======
->>>>>>> .merge_file_AtjV14
-<<<<<<< HEAD
-=======
 converted_from: _stats.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdMYzZ
-=======
->>>>>>> .merge_file_lhCZxP
->>>>>>> .merge_file_AtjV14
-converted_from: stats.txt
-=======
-converted_from: _stats.txt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdMYzZ
-=======
-<<<<<<< .merge_file_zqyp4a
-=======
->>>>>>> .merge_file_AtjV14
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_YdMYzZ
-=======
->>>>>>> .merge_file_lhCZxP
->>>>>>> .merge_file_AtjV14
 created: 2026-08-24
 updated: 2026-08-24
 ---

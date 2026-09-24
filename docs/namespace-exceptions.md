@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Exception Namespace Structure
 
 ## Directory Structure
@@ -47,15 +43,3 @@ This is often caused by namespace mismatches between the exception handler class
 ### Namespace Mismatch
 
 Ensure that the namespace in the file matches the actual directory structure. For example, a file in `Modules/Xot/app/Exceptions/Handlers/` should have the namespace `Modules\Xot\App\Exceptions\Handlers`.
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: namespace-exceptions
-canonical: ../../../Themes/docs/shared-components/namespace-exceptions.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/namespace-exceptions.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

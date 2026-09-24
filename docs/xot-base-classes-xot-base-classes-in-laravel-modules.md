@@ -18,71 +18,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_8lOYrr
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_j0XUnV
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cnwDsr
       public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_j0XUnV
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_G02ymk
->>>>>>> .merge_file_FYdm4t
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_chbN8w
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_8lOYrr
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_G02ymk
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_chbN8w
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_cnwDsr
->>>>>>> .merge_file_FYdm4t
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),

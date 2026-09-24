@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_cKJDYa
 
-=======
-<<<<<<< .merge_file_50G03A
-=======
-
->>>>>>> .merge_file_x2PkgW
->>>>>>> .merge_file_GvPFTM
 return [
     'accepted' => 'يجب قبول الحقل :attribute',
     'active_url' => 'الحقل :attribute لا يُمثّل رابطًا صحيحًا',

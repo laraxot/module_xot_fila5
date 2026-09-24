@@ -72,17 +72,6 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione HEAD
 
 ## Collegamenti tra versioni di algolia-docsearch.md
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [algolia-docsearch.md](../../../chart/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../gdpr/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../xot/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../ui/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 * [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Xot/docs/algolia-docsearch.md)
@@ -91,12 +80,4 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
