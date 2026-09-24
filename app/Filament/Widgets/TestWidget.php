@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Xot\Filament\Widgets;
+
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+/**
+ * Widget di test per verificare la registrazione Livewire.
+ */
+class TestWidget extends XotBaseWidget
+{
+    /** @phpstan-ignore property.defaultValue */
+    protected string $view = 'xot::filament.widgets.test';
+
+    protected int|string|array $columnSpan = 'full';
+
+    /**
+     * Determina se il widget deve essere visibile.
+     */
+    public static function canView(): bool
+    {
+        return true;
+    }
+}
