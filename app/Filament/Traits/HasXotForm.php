@@ -24,7 +24,11 @@ use Modules\UI\Enums\TableLayoutEnum;
  * @SuppressWarnings("PHPMD.CyclomaticComplexity")
  * @SuppressWarnings("PHPMD.NPathComplexity")
  */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 trait HasXotForm
 {
     /** @var array<string, mixed> */
@@ -44,7 +48,11 @@ trait HasXotForm
 =======
     abstract public function getFormSchema(): array;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     final public function form(Schema $schema): Schema
     {
         return $schema
@@ -62,5 +70,9 @@ trait HasXotForm
             ->columns(2)
             ->statePath('data');
     }
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

@@ -57,6 +57,7 @@ fuori scope di questa singola pulizia root.
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_jbSKvV
 =======
 <<<<<<< HEAD
@@ -72,8 +73,15 @@ fuori scope di questa singola pulizia root.
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Derivato da repo Git (`gitmodules.ini` o `git remote get-url origin`):
 
 ```
@@ -94,24 +102,35 @@ module_activity_fila5  →  _module_activity.code-workspace
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_W92sp7
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Nome = repo Git per intero (`gitmodules.ini` o `git remote get-url origin`), **senza
 togliere il suffisso** `_fila5`:
 
 ```
 theme_zero_fila5  →  _theme_zero_fila5.code-workspace
 module_activity_fila5  →  _module_activity_fila5.code-workspace
+<<<<<<< HEAD
 <<<<<<< .merge_file_9dnnAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_jbSKvV
 >>>>>>> laraxot/dev
 =======
@@ -124,7 +143,12 @@ module_activity_fila5  →  _module_activity_fila5.code-workspace
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -138,6 +162,7 @@ Moduli solo monorepo (remote `base_*`): fallback `_module_{alias}` da `module.js
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_jbSKvV
 =======
 <<<<<<< .merge_file_YVyaSR
@@ -148,7 +173,11 @@ Fix: `bash bashscripts/tools/fix-module-theme-root-hygiene.sh` (completo) · `fi
 <<<<<<< HEAD
 >>>>>>> .merge_file_72e1DA
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Fix: `bash bashscripts/tools/fix-module-theme-root-hygiene.sh` (completo) · `fix-module-theme-workspaces.sh` (solo workspace)
 =======
 <<<<<<< HEAD
@@ -160,11 +189,16 @@ Fix: `bash bashscripts/tools/fix-module-theme-root-hygiene.sh` (completo) · `fi
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_W92sp7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Correzione 2026-09-22: prima qui si diceva di togliere `_fila5` (`_theme_zero.code-workspace`).
 Sbagliato — l'utente ha corretto sul caso concreto di `Modules/Xot`
 (`module_xot_fila5.git` → `_module_xot_fila5.code-workspace`), confermato dalla storia
@@ -175,10 +209,14 @@ forma senza suffisso è comparsa dopo, luglio 2026). SSoT ora:
 Fix: `bash bashscripts/tools/audit-module-workspaces.sh` (verifica; i riferimenti a
 `fix-module-theme-root-hygiene.sh`/`fix-module-theme-workspaces.sh` in questo file erano
 aspirazionali — quegli script non esistono su disco).
+<<<<<<< HEAD
 <<<<<<< .merge_file_9dnnAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_jbSKvV
 >>>>>>> laraxot/dev
 =======
@@ -191,7 +229,12 @@ aspirazionali — quegli script non esistono su disco).
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======

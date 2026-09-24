@@ -61,10 +61,12 @@ return [
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Form Components](../componenti_personalizzati.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Form Components](../componenti_personalizzati.md)
@@ -72,3 +74,9 @@ return [
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_tSqsi8
+=======
+=======
+- [Form Components](../componenti_personalizzati.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

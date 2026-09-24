@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_h3MdJY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_QOTeBF
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_guHxSj
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_VmOJz7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Phpstan Session Summary"
 type: concept
@@ -25,9 +34,13 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-session-summary.md](./phpstan-session-summary.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_h3MdJY
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_QOTeBF
 =======
 =======
@@ -320,8 +333,13 @@ Eseguire PHPStan su tutti i moduli, comprendere logica, politica, business logic
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guHxSj
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_VmOJz7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

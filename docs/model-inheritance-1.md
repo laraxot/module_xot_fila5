@@ -315,10 +315,12 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [DRY/KISS Refactoring](DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY/KISS Refactoring](DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 =======
 - [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
@@ -326,6 +328,11 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 =======
 - [DRY/KISS Refactoring](DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 >>>>>>> .merge_file_uLoQ7h
+=======
+=======
+- [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)

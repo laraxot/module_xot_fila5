@@ -12,10 +12,16 @@ use Modules\Xot\Database\Factories\SessionFactory;
 /**
  * Modules\Xot\Models\Session.
  *
+<<<<<<< HEAD
 <<<<<<< .merge_file_IKEtJU
 <<<<<<< HEAD
  * <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
  *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
  * @property string               $id
  * @property string|null          $user_id
  * @property string|null          $ip_address
@@ -66,6 +72,7 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
  * @method static SessionFactory          factory($count = null, $state = [])
 <<<<<<< HEAD
  *                                                                            >>>>>>> laraxot/dev
@@ -73,6 +80,13 @@ use Modules\Xot\Database\Factories\SessionFactory;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_pCpx6A
+=======
+<<<<<<< HEAD
+ * @method static SessionFactory factory($count = null, $state = [])
+=======
+ * @method static SessionFactory          factory($count = null, $state = [])
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @method static Builder<static>|Session newModelQuery()
  * @method static Builder<static>|Session newQuery()
  * @method static Builder<static>|Session query()

@@ -349,14 +349,21 @@ class CleanupTemporaryFilesJob extends Job
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_JSxt1t
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Modules/User/docs/registration-widget.md](../../User/docs/registration-widget.md)
 
 *Ultimo aggiornamento: 2025-01-03*
+<<<<<<< HEAD
 <<<<<<< .merge_file_IlBn9Q
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -369,9 +376,14 @@ class CleanupTemporaryFilesJob extends Job
 <<<<<<< HEAD
 - [Modules/User/docs/registration-widget.md](../../user/docs/registration-widget.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Modules/User/docs/registration-widget.md](../../user/docs/registration-widget.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_JSxt1t
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

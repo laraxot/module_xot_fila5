@@ -10,15 +10,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### 1. [README.md](./readme.md) ⭐⭐⭐
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### 1. [README.md](./readme.md) ⭐⭐⭐
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gvzGUB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Cosa:** Entry point, panoramica generale, correzioni recenti
 **Perché:** Primo documento da leggere sempre
 **Tempo:** 5 minuti
@@ -74,15 +80,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Creato:** [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Creato:** [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gvzGUB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ```bash
 # Regola fondamentale
@@ -92,6 +104,7 @@ rm file.php.lock     # Dopo modifica
 ```
 
 <<<<<<< .merge_file_1aCpO6
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -106,11 +119,16 @@ rm file.php.lock     # Dopo modifica
 **Creato:** [DATE]
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gvzGUB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### 10. [merge-conflict-resolution-2025-11-04.md](./merge-conflict-resolution-2025-11-04.md) ⭐⭐ 🆕
 **Cosa:** Report tecnico risoluzione 18 file con merge conflicts
 **Perché:** Case study completo, pattern da evitare
@@ -141,15 +159,21 @@ rm file.php.lock     # Dopo modifica
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [lessons-learned-[DATE]-merge-conflicts.md](./lessons-learned-[DATE]-merge-conflicts.md) - Processo filosofico 10-step
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [lessons-learned-[DATE]-merge-conflicts.md](./lessons-learned-[DATE]-merge-conflicts.md) - Processo filosofico 10-step
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gvzGUB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🗺️ Learning Path Consigliato
 
@@ -173,15 +197,21 @@ rm file.php.lock     # Dopo modifica
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 2. merge-conflict-resolution-[DATE].md - Pattern errori comuni
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 2. merge-conflict-resolution-[DATE].md - Pattern errori comuni
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gvzGUB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 3. troubleshooting.md (se esiste)
 4. File specifico al problema (cerca in index.md)
 
@@ -222,10 +252,12 @@ rm file.php.lock     # Dopo modifica
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 10. merge-conflict-resolution-[DATE].md
 11. lessons-learned-[DATE]-merge-conflicts.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 10. merge-conflict-resolution-[DATE].md
@@ -233,6 +265,10 @@ rm file.php.lock     # Dopo modifica
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gvzGUB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 12. service-providers.md
 
 ## 🎓 Quiz Auto-Valutazione
@@ -260,6 +296,7 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 **Aggiornato:** Dopo risoluzione massiva merge conflicts
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts
 =======
@@ -267,6 +304,7 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Creato:** [DATE]
@@ -277,3 +315,9 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts
 >>>>>>> .merge_file_gvzGUB
+=======
+=======
+**Scopo:** Ridurre cognitive load navigando 2,560+ docs
+**Aggiornato:** Dopo risoluzione massiva merge conflicts
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_FjQhJZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: ✅ Complete Contract Documentation
 
 ## 🎯 Overview
@@ -89,11 +95,13 @@ interface UserContract extends
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
 =======
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, healthcare_app) lavorano solo contro il contratto Xot.
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, ExternalProject) lavorano solo contro il contratto Xot.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, healthcare_app) lavorano solo contro il contratto Xot.
@@ -102,6 +110,11 @@ interface UserContract extends
 =======
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
 >>>>>>> .merge_file_FjQhJZ
+=======
+=======
+> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### 2. ProfileContract
 **File**: `app/Contracts/ProfileContract.php`
@@ -571,10 +584,12 @@ class AppointmentService
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
 =======
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
@@ -582,3 +597,8 @@ class AppointmentService
 =======
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
 >>>>>>> .merge_file_FjQhJZ
+=======
+=======
+*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -2,7 +2,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_RS5bGe
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -44,14 +47,21 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/_process.txt -->
 >>>>>>> .merge_file_rIcbh0
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 # _process
 
 <!-- Contenuto migrato da _docs/_process.txt -->
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_7b0lwE
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 https://laravel-news.com/working-with-os-process-in-php
 https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCommands.php
@@ -60,9 +70,12 @@ https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCom
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 ------------------------------------
 =======
 ------------------------------------
@@ -72,6 +85,7 @@ https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCom
 =======
 ------------------------------------
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ------------------------------------
@@ -79,3 +93,8 @@ https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCom
 =======
 ------------------------------------
 >>>>>>> .merge_file_7b0lwE
+=======
+=======
+------------------------------------
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -51,11 +51,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_wUsLZq
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -66,12 +69,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -290,11 +299,14 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< .merge_file_wUsLZq
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -305,12 +317,18 @@ class QuestionChartResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -462,11 +480,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_wUsLZq
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -477,12 +498,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -701,11 +728,14 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< .merge_file_wUsLZq
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -716,12 +746,18 @@ class QuestionChartResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cvIbfx
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -825,10 +861,12 @@ BadgeColumn::make('status')
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 =======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
@@ -836,3 +874,8 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 =======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> .merge_file_cvIbfx
+=======
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

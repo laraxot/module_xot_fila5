@@ -27,6 +27,16 @@ The raw docs consistently point to one central idea: Xot base classes are the co
 <<<<<<< .merge_file_o2TWKt
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- **Never delete** `app/Models/Policies/*Policy.php` — even empty `extends XotBasePolicy {}` bodies are Laravel/Gate contracts. Hub: [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md).
+- Prefer actions over services for business logic execution ([queueable-actions-not-services-jobs.md](../../../../../../docs/wiki/concepts/queueable-actions-not-services-jobs.md)).
+- **Never delete** `app/Models/Policies/*Policy.php` — even empty `extends XotBasePolicy {}` bodies are Laravel/Gate contracts. Hub: [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md).
+- Prefer actions over services for business logic execution ([queueable-actions-not-services-jobs.md](../../../../../../docs/wiki/concepts/queueable-actions-not-services-jobs.md)).
+- **Never delete** `app/Models/Policies/*Policy.php` — even empty `extends XotBasePolicy {}` bodies are Laravel/Gate contracts. Hub: [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md).
+- Prefer actions over services for business logic execution ([queueable-actions-not-services-jobs.md](../../../../../../docs/wiki/concepts/queueable-actions-not-services-jobs.md)).
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -57,11 +67,18 @@ The raw docs consistently point to one central idea: Xot base classes are the co
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_iGUiJs
+=======
+=======
+- **Never delete** `app/Models/Policies/*Policy.php` — even empty `extends XotBasePolicy {}` bodies are Laravel/Gate contracts. Hub: [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md).
+- Prefer actions over services for business logic execution ([queueable-actions-not-services-jobs.md](../../../../../../docs/wiki/concepts/queueable-actions-not-services-jobs.md)).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Keep directory layouts DRY and avoid duplicated nested structures such as `lang/lang/`.
 - Keep translation behavior convention-driven instead of hardcoding labels and placeholders in components.
 

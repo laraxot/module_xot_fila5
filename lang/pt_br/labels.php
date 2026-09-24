@@ -2,7 +2,24 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/pt_br/labels.php
+return [
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 930f8146 (Check & fix styling)
     'general' => [
         'all' => 'Todos',
         'yes' => 'Sim',

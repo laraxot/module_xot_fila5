@@ -2,6 +2,7 @@
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,12 +10,15 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AyivA6
+=======
+>>>>>>> da9ae01a0 (.)
 **NON è stato modificato** `phpstan.neon`
 
 ## Analisi Completa
 
 **Totale Errori**: 776
 **Livello PHPStan**: 9
+<<<<<<< HEAD
 <<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 =======
@@ -29,6 +33,8 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AyivA6
+=======
+>>>>>>> da9ae01a0 (.)
 **Data Analisi**: 18 Agosto 2025
 
 ## Categorizzazione Errori
@@ -43,6 +49,7 @@ array $data
 Collection $items
 public function method(array $params): array
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -56,6 +63,9 @@ public function method(array $params): array
 =======
 // ✅ CORRETTO
 >>>>>>> .merge_file_AyivA6
+=======
+// ✅ CORRETTO
+>>>>>>> da9ae01a0 (.)
 array<string, mixed> $data
 Collection<int, Model> $items
 public function method(array<string, mixed> $params): array<int, string>
@@ -213,6 +223,7 @@ class MyModel extends BaseModel
 ## Timeline Stimata
 
 - **Fase 1 (Xot)**: 2-3 ore
+<<<<<<< HEAD
 <<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -226,6 +237,9 @@ class MyModel extends BaseModel
 =======
 - **Fase 2 (User)**: 1-2 ore
 >>>>>>> .merge_file_AyivA6
+=======
+- **Fase 2 (User)**: 1-2 ore
+>>>>>>> da9ae01a0 (.)
 - **Fase 3 (Applicazione)**: 3-4 ore
 - **Fase 4 (Verifica)**: 1 ora
 
@@ -233,6 +247,7 @@ class MyModel extends BaseModel
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -250,4 +265,8 @@ class MyModel extends BaseModel
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 >>>>>>> .merge_file_AyivA6
+=======
+**Stato**: 🔄 Analisi Completata - Correzioni in Corso
+**phpstan.neon**: ✅ INTOCCATO
+>>>>>>> da9ae01a0 (.)
 **Approccio**: DRY + KISS + Type Safety

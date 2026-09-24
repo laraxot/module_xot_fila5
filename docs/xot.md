@@ -10,20 +10,27 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Documentazione Completa](../../modules/xot/docs/module_xot.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Documentazione Completa](../../modules/xot/docs/module_xot.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_WjPosn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Componenti Principali
 
 ### Datas
 <<<<<<< .merge_file_bgeibc
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -51,11 +58,16 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Integrazione](../../modules/xot/docs/integration.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_WjPosn
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [MetatagData](../../Modules/Xot/docs/datas/MetatagData.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -79,10 +91,12 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 =======
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Integrazione](../../Modules/Xot/docs/integration.md)
@@ -90,3 +104,8 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 =======
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 >>>>>>> .merge_file_WjPosn
+=======
+=======
+- [Integrazione](../../Modules/Xot/docs/integration.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

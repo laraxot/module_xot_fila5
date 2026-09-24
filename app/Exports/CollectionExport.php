@@ -27,7 +27,11 @@ use Webmozart\Assert\Assert;
  * @implements WithMapping<mixed>
 =======
  * @implements WithMapping<Model>
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  */
 class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, WithMapping
 {
@@ -37,7 +41,11 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     /** @var SupportCollection<int|string, mixed>|EloquentCollection<int, Model> */
 =======
     /** @var SupportCollection<int, mixed>|EloquentCollection<int, Model> */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public SupportCollection|EloquentCollection $collection;
 
     /** @var array<int, string> */
@@ -62,7 +70,10 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 =======
      * @param SupportCollection<int|string, mixed>|EloquentCollection<int, Model> $collection
      * @param array<int|string, string>                                           $fields
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
     /** @var array<int, string>|null */
     public ?array $fields = null;
@@ -70,9 +81,13 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     /**
      * @param SupportCollection<int, mixed>|EloquentCollection<int, Model> $collection
      * @param array<int, string>                                           $fields
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IeUYGe
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -92,7 +107,11 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             return array_values($this->fields);
 =======
             return $this->fields;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         $head = $this->collection->first();
@@ -145,7 +164,11 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     /**
      * @return SupportCollection<int, mixed>|EloquentCollection<int, Model>
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function collection(): SupportCollection|EloquentCollection
     {
@@ -153,6 +176,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_ub26NL
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -212,6 +236,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             $data[] = SafeStringCastAction::cast($value);
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
      * @return list<string>
      */
     public function map(mixed $row): array
@@ -227,12 +254,33 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
         foreach ($this->fields as $key => $value) {
             $path = \is_string($key) ? $key : $value;
             $data[] = self::castCell(data_get($row, $path));
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
             $data[] = self::castCell(data_get($row, $path));
 >>>>>>> .merge_file_IeUYGe
+=======
+=======
+     * @return array<int|string, mixed>
+     */
+    public function map(mixed $row): array
+    {
+        if (null === $this->fields || empty($this->fields)) {
+            Assert::isInstanceOf($row, Model::class);
+            $res = app(SafeArrayByModelCastAction::class)->execute($row);
+
+            return array_values(Arr::map($res, fn (mixed $value, mixed $_key): string => self::stringifyExportValue($value)));
+        }
+
+        $data = [];
+
+        foreach ($this->fields as $field) {
+            $value = data_get($row, $field);
+            $data[] = SafeStringCastAction::cast(self::normalizeExportFieldValue($value));
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         return $data;
@@ -244,10 +292,14 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 =======
 >>>>>>> .merge_file_IeUYGe
 
+<<<<<<< HEAD
     /**
      * Stessa cella per CollectionExport e XotBaseExporter (export_xls = export_xlsx).
      */
     public static function castCell(mixed $value): string
+=======
+    private static function stringifyExportValue(mixed $value): string
+>>>>>>> 930f8146 (Check & fix styling)
     {
         if ($value instanceof \BackedEnum) {
             if (method_exists($value, 'getLabel')) {
@@ -257,16 +309,37 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             return SafeStringCastAction::cast($value->value);
         }
 
+<<<<<<< HEAD
         if (\is_object($value) && enum_exists($value::class) && method_exists($value, 'getLabel')) {
             $value = $value->getLabel();
         }
 
         return SafeStringCastAction::cast($value);
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_ub26NL
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IeUYGe
+=======
+=======
+        return SafeStringCastAction::cast($value);
+    }
+
+    private static function normalizeExportFieldValue(mixed $value): mixed
+    {
+        if (! \is_object($value)) {
+            return $value;
+        }
+
+        if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
+            return $value->getLabel();
+        }
+
+        return $value;
+    }
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

@@ -10,11 +10,16 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_KCxBuQ
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_NlBMYd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
@@ -46,11 +51,16 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_h9ahnh
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_QLXzFv
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     /**
      * @return array<string, TextColumn>
      */
@@ -70,15 +80,20 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
             'fixture_filter' => Filter::make('fixture_filter'),
         ];
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_KCxBuQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_NlBMYd
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_h9ahnh
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -86,4 +101,10 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_QLXzFv
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

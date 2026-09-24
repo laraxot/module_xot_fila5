@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_7P4hXa
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -826,15 +832,21 @@ jobs:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_7P4hXa
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 95%
 
@@ -846,10 +858,12 @@ jobs:
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
@@ -857,3 +871,8 @@ jobs:
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 >>>>>>> .merge_file_7P4hXa
+=======
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

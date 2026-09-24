@@ -34,7 +34,10 @@ class XotBasePlaceholder extends TextEntry
     {
         return $this->getState();
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 use Filament\Forms\Components\Placeholder;
 
@@ -49,7 +52,11 @@ use Filament\Forms\Components\Placeholder;
 class XotBasePlaceholder extends Placeholder
 {
     // Logica comune futura per i placeholder Xot
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_k6PQI6
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

@@ -15,10 +15,12 @@
 - [Gestione dipendenze Composer](../../../../docs/composer.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione dipendenze Composer](../../../../docs/composer.md)
 =======
 - [Gestione dipendenze Composer](../../../../../docs/composer.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Gestione dipendenze Composer](../../../../../docs/composer.md)
@@ -26,3 +28,8 @@
 =======
 - [Gestione dipendenze Composer](../../../../docs/composer.md)
 >>>>>>> .merge_file_n7CiQl
+=======
+=======
+- [Gestione dipendenze Composer](../../../../docs/composer.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

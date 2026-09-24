@@ -263,10 +263,12 @@ class CacheTest extends TestCase {
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -274,3 +276,8 @@ class CacheTest extends TestCase {
 =======
 ---
 >>>>>>> .merge_file_w9xY0n
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

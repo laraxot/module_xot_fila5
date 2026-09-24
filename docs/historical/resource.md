@@ -56,36 +56,54 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_v0df22
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dSJnCZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_v0df22
 =======
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dSJnCZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Schema del form
@@ -132,11 +150,15 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_v0df22
    - ✅ `public function getFormSchema(): array`
 =======
    - ✅ `public static function getFormSchema(): array`
 >>>>>>> .merge_file_tSrxgV
+=======
+   - ✅ `public function getFormSchema(): array`
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -257,36 +279,54 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_v0df22
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dSJnCZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_v0df22
 =======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dSJnCZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -616,36 +656,54 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_v0df22
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dSJnCZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_v0df22
 =======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tSrxgV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dSJnCZ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'nome' => TextInput::make('nome'),

@@ -68,11 +68,13 @@ class YourModel extends Model
 - [Best Practices](best-practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
 =======
 - [Best Practices](BEST-PRACTICES.md)
 - [Best Practices](best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best Practices](BEST-PRACTICES.md)
@@ -81,3 +83,8 @@ class YourModel extends Model
 =======
 - [Best Practices](best-practices.md)
 >>>>>>> .merge_file_McAuTm
+=======
+=======
+- [Best Practices](BEST-PRACTICES.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

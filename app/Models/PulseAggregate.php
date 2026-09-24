@@ -9,10 +9,16 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseAggregateFactory;
 
 /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_dQJ1BY
 <<<<<<< HEAD
  * <<<<<<< HEAD.
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
  *
+=======
+>>>>>>> 930f8146 (Check & fix styling)
  * @property string      $id
  * @property int         $bucket
  * @property int         $period
@@ -46,6 +52,7 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @property string      $value
  * @property int|null    $count
  *
+<<<<<<< HEAD
  * @method static PulseAggregateFactory          factory($count = null, $state = [])
 <<<<<<< HEAD
  *                                                                                   >>>>>>> laraxot/dev
@@ -53,6 +60,13 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_rqwWz3
+=======
+<<<<<<< HEAD
+ * @method static PulseAggregateFactory factory($count = null, $state = [])
+=======
+ * @method static PulseAggregateFactory          factory($count = null, $state = [])
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @method static Builder<static>|PulseAggregate newModelQuery()
  * @method static Builder<static>|PulseAggregate newQuery()
  * @method static Builder<static>|PulseAggregate query()

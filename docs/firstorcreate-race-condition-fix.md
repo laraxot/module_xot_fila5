@@ -1,21 +1,34 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_ptx1d3
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_8vpi2k
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_I95shV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_z948CF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  
 **Data**: 2026-01-22
+<<<<<<< HEAD
 <<<<<<< .merge_file_ptx1d3
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_8vpi2k
 =======
 =======
@@ -24,6 +37,7 @@
 **Status**: ✅ Completato  
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I95shV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Fix Race Condition firstOrCreate con UUID - [DATE]
@@ -32,6 +46,10 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_z948CF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Problema
 
@@ -193,17 +211,26 @@ expect($profileA->id)->toBe($profileB->id);
 
 ## Riferimenti
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_ptx1d3
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_8vpi2k
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_I95shV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_z948CF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Activity Module: firstOrCreate Error Handling](../../Activity/docs/errori/attributerawvalues-null-firstorcreate.md)
 - [User Profile Models: Transaction Patterns](../../User/docs/user-profile-models.md)
 - [Query Safety Principle](../../../docs/operational-rules/query-safety-principle.md)
@@ -211,9 +238,13 @@ expect($profileA->id)->toBe($profileB->id);
 **Versione**: 1.0  
 **Ultimo aggiornamento**: 2026-01-22  
 **Status**: ✅ Completato
+<<<<<<< HEAD
 <<<<<<< .merge_file_ptx1d3
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_8vpi2k
 =======
 =======
@@ -229,9 +260,14 @@ expect($profileA->id)->toBe($profileB->id);
 **Status**: ✅ Completato
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I95shV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: ✅ Completato
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_z948CF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

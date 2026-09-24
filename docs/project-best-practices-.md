@@ -117,11 +117,14 @@ analysis.md      # date in name (use CHANGELOG.md)
 <<<<<<< .merge_file_2oOFQR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KP9oUK
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
@@ -135,11 +138,16 @@ analysis.md      # date in name (use CHANGELOG.md)
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KP9oUK
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### 8. DRY Principle
@@ -298,11 +306,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_2oOFQR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KP9oUK
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -313,12 +324,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KP9oUK
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name'),  // No ->label()!

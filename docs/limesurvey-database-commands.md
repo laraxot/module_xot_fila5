@@ -4,10 +4,12 @@
 # Database Analysis Commands and Tools for quaeris_survey
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Database Analysis Commands and Tools for quaeris_survey
 =======
 # Database Analysis Commands and Tools for healthcare_app_survey
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Database Analysis Commands and Tools for healthcare_app_survey
@@ -15,6 +17,11 @@
 =======
 # Database Analysis Commands and Tools for quaeris_survey
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+# Database Analysis Commands and Tools for quaeris_survey
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Essential Database Queries
 
@@ -58,15 +65,21 @@ WHERE submitdate BETWEEN '2023-01-01' AND '2023-12-31'
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 WHERE submitdate BETWEEN '[DATE]' AND '[DATE]'
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 WHERE submitdate BETWEEN '[DATE]' AND '[DATE]'
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 GROUP BY DATE(submitdate)
 ORDER BY response_date;
 
@@ -104,14 +117,21 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_uCVBr5
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 mcp mysql --database=txaesfry_quaeris_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_quaeris_survey' AND table_name LIKE 'lime_survey_%'"
+<<<<<<< HEAD
 <<<<<<< .merge_file_MDwuew
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -123,11 +143,16 @@ mcp mysql --database=txaesfry_healthcare_app_survey
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_healthcare_app_survey' AND table_name LIKE 'lime_survey_%'"
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -150,15 +175,21 @@ $responses = DB::connection('limesurvey')
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     ->whereBetween('submitdate', ['[DATE]', '[DATE]'])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     ->whereBetween('submitdate', ['[DATE]', '[DATE]'])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ->count();
 
 // Get unique participants
@@ -184,10 +215,12 @@ php artisan tinker --execute="
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
 =======
     'healthcare_app' => DB::connection('healthcare_app')->getPdo() ? 'OK' : 'ERROR',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     'healthcare_app' => DB::connection('healthcare_app')->getPdo() ? 'OK' : 'ERROR',
@@ -195,6 +228,11 @@ php artisan tinker --execute="
 =======
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+    'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -222,15 +260,21 @@ EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '2023-01
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '[DATE]';
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '[DATE]';
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 -- Optimize large table queries
 SELECT SQL_CALC_FOUND_ROWS * FROM lime_survey_[SURVEY_ID] LIMIT 0, 1000;
@@ -273,14 +317,21 @@ WHERE q.qid IS NULL;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_uCVBr5
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+<<<<<<< HEAD
 <<<<<<< .merge_file_MDwuew
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -292,11 +343,16 @@ mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_survey_[SURVEY_I
 mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### 2. Data Validation Script
@@ -346,10 +402,12 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_quaeris_survey'
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
 =======
     AND table_schema = 'txaesfry_healthcare_app_survey'
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     AND table_schema = 'txaesfry_healthcare_app_survey'
@@ -357,6 +415,11 @@ LEFT JOIN (
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -370,10 +433,12 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_quaeris_survey'
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
 =======
     AND table_schema = 'txaesfry_healthcare_app_survey'
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     AND table_schema = 'txaesfry_healthcare_app_survey'
@@ -381,6 +446,11 @@ LEFT JOIN (
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
@@ -391,10 +461,12 @@ WHERE s.active = 'Y';
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
 =======
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
@@ -402,3 +474,8 @@ These commands and tools provide comprehensive access to analyze, maintain, and 
 =======
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
 >>>>>>> .merge_file_uCVBr5
+=======
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

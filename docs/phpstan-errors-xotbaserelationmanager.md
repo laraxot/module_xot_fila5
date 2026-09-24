@@ -145,7 +145,11 @@ Illuminate\Database\Eloquent\Model|stdClass given.
 - Mantenere compatibilità con codice che usa questi metodi
 - Seguire convenzioni Filament
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Garantire type safety
 =======
 - Garantire type safety
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Garantire type safety
+>>>>>>> da9ae01a0 (.)

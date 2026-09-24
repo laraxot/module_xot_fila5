@@ -73,7 +73,10 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_KNnwbB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -94,6 +97,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 =======
 *
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: Dicembre 2024*
@@ -101,3 +105,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 =======
 *
 >>>>>>> .merge_file_tnXRgW
+=======
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

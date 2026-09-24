@@ -6,7 +6,9 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -14,6 +16,19 @@ uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_GfdDdI
+=======
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -27,7 +42,11 @@ use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
 <<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
@@ -37,7 +56,11 @@ use function Safe\mkdir;
 uses(TestCase::class);
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('covers model resolution and model cache', function (): void {
     ProbeResource::resetModelCache();
 
@@ -278,12 +301,16 @@ it('covers get attachments schema branches', function (): void {
 =======
     $resourceNoAttachments = new class extends XotBaseResource {
         protected static ?string $model = Probe::class;
+<<<<<<< HEAD
 
         public static function getFormSchema(): array
         {
             return [];
         }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
     };
 
     Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
@@ -314,6 +341,27 @@ it('covers get attachments schema branches', function (): void {
     if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeGoodAttachments')) {
         eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
     }
+=======
+
+        public static function getFormSchema(): array
+        {
+            return [];
+        }
+    };
+
+    Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
+
+    $resourceBadAttachments = new class extends XotBaseResource {
+        protected static ?string $model = ProbeBadAttachments::class;
+
+        public static function getFormSchema(): array
+        {
+            return [];
+        }
+    };
+
+    Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
+>>>>>>> 930f8146 (Check & fix styling)
 
 <<<<<<< .merge_file_jzECXu
 <<<<<<< HEAD
@@ -373,12 +421,21 @@ it('covers get attachments schema branches', function (): void {
 =======
     $resourceGoodAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeGoodAttachments::class;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 
         public static function getFormSchema(): array
         {
             return [];
         }
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     };
 
     Assert::assertSame(['schema'], $resourceGoodAttachments::getAttachmentsSchema());
@@ -410,12 +467,18 @@ it('covers simple base helpers', function (): void {
 >>>>>>> .merge_file_GfdDdI
     $resource = new ProbeResource;
 
+<<<<<<< HEAD
     Assert::assertSame([], $resource->getInfolistSchema());
 =======
+<<<<<<< HEAD
     $resource = new ProbeResource();
 
     Assert::assertSame([], ProbeResource::getInfolistSchema());
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    Assert::assertSame([], ProbeResource::getInfolistSchema());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     Assert::assertSame([], ProbeResource::extendTableCallback());
     Assert::assertSame([], ProbeResource::extendFormCallback());
     Assert::assertStringStartsWith('Xot', ProbeResource::getModuleName());
@@ -424,5 +487,9 @@ it('covers simple base helpers', function (): void {
     Assert::assertGreaterThan(0, ProbeResource::getFormColumns());
 =======
     Assert::assertGreaterThan(0, ProbeResource::getFormSchemaColumns());
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });

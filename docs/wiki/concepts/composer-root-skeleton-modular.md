@@ -15,6 +15,7 @@ related:
 <<<<<<< .merge_file_wNeBOZ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
 =======
 <<<<<<< HEAD
@@ -32,12 +33,18 @@ related:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
   - ./composer-merge-plugin-modules-only.md
 >>>>>>> .merge_file_qUDkS8
+=======
+=======
+  - ./composer-merge-plugin-modules-only.md
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
   - ./theme-psr4-autoload-without-merge.md
 ---
@@ -101,11 +108,14 @@ Confronto 2026-06-30:
 <<<<<<< .merge_file_wNeBOZ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_qUDkS8
+=======
+>>>>>>> da9ae01a0 (.)
 
 Il root mantiene solo:
 
@@ -164,10 +174,15 @@ Confronto 2026-06-30:
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 
@@ -197,8 +212,13 @@ Confronto 2026-06-30:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qUDkS8
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

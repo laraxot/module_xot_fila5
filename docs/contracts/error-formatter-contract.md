@@ -43,16 +43,24 @@ interface ErrorFormatterContract
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Error Handling Guidelines](../exception-handling-guide.md)
 - [Error Formatters](../exceptions/formatters/readme.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [Error Handling Guidelines](../exception-handling-guide.md)
 - [Error Formatters](../exceptions/formatters/readme.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_liYRkJ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

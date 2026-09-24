@@ -33,10 +33,12 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
 =======
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
@@ -44,6 +46,11 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 =======
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
 >>>>>>> .merge_file_5eYEm0
+=======
+=======
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -333,12 +340,14 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [User Module Analysis](../../User/docs/model_inheritance_analysis.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Fixes](../../User/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../User/docs/model_inheritance_analysis.md)
 =======
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 - [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
@@ -348,6 +357,12 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [User Module Fixes](../../User/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../User/docs/model_inheritance_analysis.md)
 >>>>>>> .merge_file_5eYEm0
+=======
+=======
+- [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+- [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)

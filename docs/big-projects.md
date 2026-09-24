@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IPiVU3
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_IPiVU3
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 
@@ -59,9 +66,15 @@ https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 https://readme.so/it/editor
 >>>>>>> .merge_file_IquJ29
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://readme.so/it/editor
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_DpHiFA
+=======
+=======
+https://readme.so/it/editor
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -47,7 +47,11 @@ class CacheLocksTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->searchable()->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime(),
             'updated_at' => TextColumn::make('updated_at')->dateTime(),
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ];
     }
 }

@@ -262,15 +262,21 @@ class ValidationServiceProvider extends ServiceProvider
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## 🔧 Merge Conflicts Resolution - [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## 🔧 Merge Conflicts Resolution - [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AiKBJ4
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Problema Risolto
 Il `RouteServiceProvider` e `XotBaseRouteServiceProvider` nel modulo Xot contenevano **merge conflicts massivi non risolti** che impedivano l'avvio del server Laravel.
@@ -357,6 +363,7 @@ vendor/bin/pint --dirty Modules/Xot/app
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) - Nuova regola fondamentale
 - [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
@@ -366,6 +373,7 @@ vendor/bin/pint --dirty Modules/Xot/app
 - [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Merge Conflict Resolution [DATE]](./merge-conflict-resolution-[DATE].md) - Report completo
@@ -374,7 +382,13 @@ vendor/bin/pint --dirty Modules/Xot/app
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 - [File Locking Pattern](./file-locking-pattern.md) - Nuova regola fondamentale
 - [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
+<<<<<<< HEAD
 >>>>>>> .merge_file_AiKBJ4
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

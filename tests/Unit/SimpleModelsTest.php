@@ -18,7 +18,11 @@ use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('can create a test module', function () {
     $module = ModuleFactory::new()->createOne([
         'name' => 'TestModule',

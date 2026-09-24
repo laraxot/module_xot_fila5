@@ -6,10 +6,12 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Code Quality Audit Completo
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Code Quality Audit Completo
@@ -17,6 +19,10 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_SAGPri
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -46,15 +52,21 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_SAGPri
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%
@@ -128,10 +140,12 @@ Ogni modulo dovrebbe avere:
 *Ultimo aggiornamento: 2025-01-22*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-22*
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 2025-01-22*
@@ -139,3 +153,8 @@ Ogni modulo dovrebbe avere:
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> .merge_file_SAGPri
+=======
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

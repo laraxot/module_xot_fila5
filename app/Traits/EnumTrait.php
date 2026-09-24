@@ -52,7 +52,11 @@ trait EnumTrait
         return array_map(static fn (\BackedEnum $item): string => (string) $item->value, static::cases());
 =======
         return array_map(fn ($item) => (string) $item->value, static::cases());
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -184,7 +188,11 @@ trait EnumTrait
         return array_values(array_map(static fn (\BackedEnum $case): string => (string) $case->value, static::cases()));
 =======
         return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**

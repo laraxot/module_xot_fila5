@@ -10,6 +10,15 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Filament\Resources\Resource;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
+use PHPUnit\Framework\Assert;
+
+>>>>>>> 930f8146 (Check & fix styling)
 test('xot base resource extends filament resource', function (): void {
     Assert::assertInstanceOf(Resource::class, new NavigationProbeResource);
 <<<<<<< .merge_file_b3RMZq

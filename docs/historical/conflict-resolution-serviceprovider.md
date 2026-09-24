@@ -26,11 +26,15 @@ Questa scelta garantisce:
 
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_rWKP6m
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Best Practices Provider](best-practices.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_clQPtA
 - [Best Practices Provider](best-practices.md)
 =======
@@ -40,6 +44,7 @@ Questa scelta garantisce:
 - [Best Practices Provider](./BEST-PRACTICES.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_rL1hlY
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best Practices Provider](./BEST-PRACTICES.md)
@@ -47,16 +52,25 @@ Questa scelta garantisce:
 =======
 - [Best Practices Provider](best-practices.md)
 >>>>>>> .merge_file_Xn6gIJ
+=======
+=======
+- [Best Practices Provider](best-practices.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_rWKP6m
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](best-practices.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_clQPtA
 - [docs/BEST-PRACTICES.md](best-practices.md)
 =======
@@ -66,6 +80,7 @@ Questa scelta garantisce:
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_rL1hlY
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
@@ -73,3 +88,8 @@ Questa scelta garantisce:
 =======
 - [docs/BEST-PRACTICES.md](best-practices.md)
 >>>>>>> .merge_file_Xn6gIJ
+=======
+=======
+- [docs/BEST-PRACTICES.md](best-practices.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

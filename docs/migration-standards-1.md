@@ -144,6 +144,7 @@ Ogni modulo può avere best practices specifiche per le migrazioni. Consultare l
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/Modules/User/docs/MIGRATION_BEST_PRACTICES.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/Modules/Patient/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/Modules/Tenant/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/Modules/User/docs/MIGRATION_BEST_PRACTICES.md)
@@ -152,6 +153,7 @@ Ogni modulo può avere best practices specifiche per le migrazioni. Consultare l
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
@@ -159,10 +161,16 @@ Ogni modulo può avere best practices specifiche per le migrazioni. Consultare l
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/Modules/Patient/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/Modules/Tenant/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/Modules/User/docs/MIGRATION_BEST_PRACTICES.md)
+<<<<<<< HEAD
 >>>>>>> .merge_file_lavTyx
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Errori Comuni e Come Evitarli
 
@@ -237,10 +245,12 @@ protected ?string $connection = 'user'; // Stessa connessione del modello
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
 =======
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
@@ -248,3 +258,8 @@ Seguire questi standard per le migrazioni è fondamentale per garantire la coere
 =======
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
 >>>>>>> .merge_file_lavTyx
+=======
+=======
+Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

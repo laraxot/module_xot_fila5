@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_upzcfU
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,30 +25,50 @@ use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 >>>>>>> .merge_file_i7BNg6
+=======
+<<<<<<< HEAD
+use Modules\Xot\Actions\File\AssetAction;
+use Modules\Xot\Actions\File\AssetPathAction;
+=======
+use Illuminate\Support\Facades\File;
+use Modules\Xot\Actions\File\AssetAction;
+use Modules\Xot\Actions\File\AssetPathAction;
+use Modules\Xot\Actions\File\FixPathAction;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_upzcfU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> .merge_file_i7BNg6
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 use function Safe\chmod;
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 use function Safe\unlink;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_upzcfU
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_i7BNg6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 uses(TestCase::class);
 
 it('handles absolute urls in AssetAction', function (): void {
@@ -57,6 +78,7 @@ it('handles absolute urls in AssetAction', function (): void {
 });
 
 it('returns path if asset already exists in public folder', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_upzcfU
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,6 +109,9 @@ it('resolves module assets correctly in AssetAction', function (): void {
 =======
 =======
 >>>>>>> .merge_file_i7BNg6
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
     $relative = 'assets/xot-test-exists-'.uniqid('', true).'.txt';
     $absolute = public_path($relative);
     if (! is_dir(\dirname($absolute))) {
@@ -259,6 +284,46 @@ it('skips force-copy when destination exists but is not writable', function (): 
 it('calculates asset path correctly in AssetPathAction', function (): void {
     Module::partialMock()
         ->shouldReceive('getModulePath')
+=======
+    $path = 'css/app.css';
+    File::shouldReceive('exists')->with(public_path($path))->andReturn(true);
+
+    $action = app(AssetAction::class);
+    Assert::assertSame($path, $action->execute($path));
+});
+
+it('resolves module assets correctly in AssetAction', function (): void {
+    $path = 'Xot::css/style.css';
+    $modulePath = '/var/www/Modules/Xot';
+    $from = $modulePath.'/resources/css/style.css';
+    $to = public_path('assets/Xot/css/style.css');
+
+    $modulePathMock = $this->createUnitMock(GetModulePathAction::class);
+    $modulePathMock->method('execute')->with('Xot')->willReturn($modulePath);
+
+    app()->instance(GetModulePathAction::class, $modulePathMock);
+
+    $fixPathMock = $this->createUnitMock(FixPathAction::class);
+    $fixPathMock->method('execute')->willReturnArgument(0);
+
+    app()->instance(FixPathAction::class, $fixPathMock);
+
+    File::shouldReceive('exists')->with(public_path($path))->andReturn(false);
+    File::shouldReceive('exists')->with($from)->andReturn(true);
+    File::shouldReceive('exists')->with($to)->andReturn(true);
+    File::shouldReceive('exists')->with(dirname($to))->andReturn(true);
+    File::shouldReceive('copy')->once();
+
+    $action = app(AssetAction::class);
+    $result = $action->execute($path);
+
+    Assert::assertStringContainsString('assets/Xot/css/style.css', $result);
+});
+
+it('calculates asset path correctly in AssetPathAction', function (): void {
+    Module::shouldReceive('getModulePath')
+        ->once()
+>>>>>>> 930f8146 (Check & fix styling)
         ->with('User')
         ->andReturn('/path/to/User/');
 <<<<<<< .merge_file_upzcfU

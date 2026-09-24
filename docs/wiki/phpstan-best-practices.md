@@ -10,6 +10,7 @@ updated: 2026-09-21
 qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade mockService rrmdir"
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_L3awa3
 =======
 <<<<<<< .merge_file_QHz5RC
@@ -20,7 +21,11 @@ qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows
 <<<<<<< HEAD
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 updated: 2026-07-22
 qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade"
 =======
@@ -31,7 +36,11 @@ qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 updated: 2026-06-13
 qmd: "Xot PHPStan best practices Pest Assert closure mockService rrmdir"
@@ -54,12 +63,17 @@ qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 updated: 2026-09-21
 qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade mockService rrmdir"
 >>>>>>> .merge_file_BYRkMd
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/43"
 discussions:
@@ -77,6 +91,7 @@ related:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_L3awa3
 =======
 <<<<<<< HEAD
@@ -92,8 +107,15 @@ related:
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Pattern per Test in Pest con PHPStan Level Max
 
 ### 1. Property Dinamiche in Closure Pest
@@ -116,14 +138,21 @@ related:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BYRkMd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Disciplina: **risolvere**, non sopprimere. Niente `@phpstan-ignore` di evasione,
 niente baseline, niente `mixed` per zittire l'analizzatore.
 
@@ -133,10 +162,14 @@ niente baseline, niente `mixed` per zittire l'analizzatore.
 
 PHPStan non vede `$this->property` nelle closure Pest. Preferire variabile locale:
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_nIWxTC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_L3awa3
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -150,6 +183,7 @@ PHPStan non vede `$this->property` nelle closure Pest. Preferire variabile local
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -157,6 +191,12 @@ PHPStan non vede `$this->property` nelle closure Pest. Preferire variabile local
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BYRkMd
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```php
 test('example', function (): void {
     $action = new MyAction;
@@ -170,6 +210,7 @@ test('example', function (): void {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_L3awa3
 =======
 <<<<<<< HEAD
@@ -185,8 +226,15 @@ test('example', function (): void {
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Soluzione B - assert() Type Narrowing:**
 ```php
 beforeEach(function (): void {
@@ -206,23 +254,34 @@ beforeEach(function (): void {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BYRkMd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Narrowing solo se il body usa `$this`:
 
 ```php
 beforeEach(function (): void {
     $this->workDir = sys_get_temp_dir().'/test';
+<<<<<<< HEAD
 <<<<<<< .merge_file_nIWxTC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_L3awa3
 >>>>>>> laraxot/dev
 =======
@@ -235,7 +294,12 @@ beforeEach(function (): void {
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -249,6 +313,7 @@ beforeEach(function (): void {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_L3awa3
 =======
 <<<<<<< HEAD
@@ -264,8 +329,15 @@ beforeEach(function (): void {
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Soluzione C - @phpstan-ignore (Quando inevitabile):**
 ```php
 test('example', function (): void {
@@ -371,14 +443,21 @@ Assert::assertSame(0, $mockComps->count());
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BYRkMd
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### 2. Mock PHPUnit in closure Pest
 
 `$this->atLeastOnce()` è protected. Usare `createUnitMock()` o Mockery `allows()`.
@@ -409,10 +488,14 @@ Su file Pest namespaced, `Pest\Mixins\Expectation` è `@internal`. Preferire
 ### 8. Mockery sotto PHPStan
 
 Catene `shouldReceive()->andReturn()` spesso `method.notFound`. Pattern Xot:
+<<<<<<< HEAD
 <<<<<<< .merge_file_nIWxTC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_L3awa3
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -426,6 +509,7 @@ Catene `shouldReceive()->andReturn()` spesso `method.notFound`. Pattern Xot:
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -433,6 +517,12 @@ Catene `shouldReceive()->andReturn()` spesso `method.notFound`. Pattern Xot:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BYRkMd
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ```php
 /** @var GetComponentsAction&MockInterface $getComponents */
@@ -446,6 +536,7 @@ app()->instance(GetComponentsAction::class, $getComponents);
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_L3awa3
 =======
 <<<<<<< .merge_file_QHz5RC
@@ -454,7 +545,11 @@ app()->instance(GetComponentsAction::class, $getComponents);
 <<<<<<< HEAD
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 `RegisterBladeComponentsAction::execute(string $path, string $namespace, string $prefix = '')` — mockare `Modules\Xot\Actions\File\GetComponentsAction` (non un fantasma `Actions\Blade\GetComponentsAction`).
 
 =======
@@ -465,7 +560,11 @@ app()->instance(GetComponentsAction::class, $getComponents);
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 `RegisterBladeComponentsAction::execute(string $path, string $namespace, string $prefix = '')` — mockare `Modules\Xot\Actions\File\GetComponentsAction` (non un fantasma `Actions\Blade\GetComponentsAction`).
 
 >>>>>>> laraxot/dev
@@ -496,21 +595,30 @@ app()->instance(GetComponentsAction::class, $getComponents);
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BYRkMd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Checklist pre-commit
 
 - [ ] `php -d memory_limit=-1 vendor/bin/phpstan analyse` (comando che certifica) passa
 - [ ] Pest del modulo: `vendor/bin/pest Modules/Xot/tests/Unit`
 - [ ] Nessun `static::` in closure Pest
 - [ ] Mockery: `allows(['method' => $value])` + `@var Class&MockInterface`
+<<<<<<< HEAD
 <<<<<<< .merge_file_nIWxTC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_L3awa3
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -524,6 +632,7 @@ app()->instance(GetComponentsAction::class, $getComponents);
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -531,6 +640,12 @@ app()->instance(GetComponentsAction::class, $getComponents);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BYRkMd
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Links
 
@@ -544,6 +659,7 @@ app()->instance(GetComponentsAction::class, $getComponents);
 - [phpstan-modules-fix](troubleshooting/phpstan-modules-fix.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_L3awa3
 =======
 <<<<<<< .merge_file_QHz5RC
@@ -556,7 +672,11 @@ app()->instance(GetComponentsAction::class, $getComponents);
 <<<<<<< HEAD
 >>>>>>> .merge_file_s1WYE4
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 =======
@@ -569,9 +689,14 @@ app()->instance(GetComponentsAction::class, $getComponents);
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_PYTqPv
 >>>>>>> .merge_file_s1WYE4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [phpstan-modules-fix](troubleshooting/phpstan-modules-fix.md)
 >>>>>>> .merge_file_BYRkMd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

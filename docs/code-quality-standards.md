@@ -488,10 +488,12 @@ public function user(): BelongsTo
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 =======
 - [Performance Optimization](./performance-optimization.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Performance Optimization](./performance-optimization.md)
@@ -499,6 +501,11 @@ public function user(): BelongsTo
 =======
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 >>>>>>> .merge_file_AGNXq3
+=======
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Security Guidelines](./security-guidelines.md)
 
 This document provides the foundation for maintaining high code quality standards across the Xot module and serves as a reference for other modules that extend Xot functionality.
@@ -992,10 +999,12 @@ public function user(): BelongsTo
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 =======
 - [Performance Optimization](./performance-optimization.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Performance Optimization](./performance-optimization.md)
@@ -1003,6 +1012,11 @@ public function user(): BelongsTo
 =======
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 >>>>>>> .merge_file_AGNXq3
+=======
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Security Guidelines](./security-guidelines.md)
 
 This document provides the foundation for maintaining high code quality standards across the Xot module and serves as a reference for other modules that extend Xot functionality.

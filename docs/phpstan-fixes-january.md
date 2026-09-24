@@ -193,9 +193,12 @@ public function getModels(): array
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [README.md Modulo Xot](./readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -391,10 +394,13 @@ public function getAllColors(): array
 *Ultimo aggiornamento: Gennaio 2025*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti Correlati
 - [Architettura Modulo Xot](./architecture.md)
 - [Filament Widgets](./filament-widgets.md)
@@ -598,9 +604,12 @@ public function getModels(): array
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [README.md Modulo Xot](./readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -798,11 +807,14 @@ public function getAllColors(): array
 *Ultimo aggiornamento: Gennaio 2025*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti Correlati
 - [Architettura Modulo Xot](./architecture.md)
 - [Filament Widgets](./filament-widgets.md)
@@ -998,9 +1010,12 @@ public function getModels(): array
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [README.md Modulo Xot](./readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -1021,7 +1036,11 @@ public function getModels(): array
 *Ultimo aggiornamento: Gennaio 2025*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> da9ae01a0 (.)

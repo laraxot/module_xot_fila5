@@ -54,6 +54,7 @@ use function Safe\preg_match;
  */
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_draXte
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,6 +66,13 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_nB1j0y
+=======
+<<<<<<< HEAD
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+=======
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     use HasXotFactory;
     use Updater;
 

@@ -4,7 +4,11 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Tables\Table;
 use Mockery\MockInterface;
 use Modules\Xot\Tests\TestCase;
@@ -47,7 +51,11 @@ function stubTableChain(MockInterface $tableMock): MockInterface
 <<<<<<< HEAD
         'deferFilters',
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         'persistFiltersInSession',
         'headerActions',
         'actions',
@@ -89,7 +97,11 @@ it('tests table method with all methods implemented', function (): void {
 =======
         ->shouldAllowMockingProtectedMethods()
         ->shouldDeferMissing();
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     $mock->allows([
         'getTableHeaderActions' => [],
         'getTableActions' => [],
@@ -126,7 +138,11 @@ it('tests table method with no optional methods implemented', function (): void 
 =======
         ->shouldAllowMockingProtectedMethods()
         ->shouldDeferMissing();
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     $mock->allows([
         'getModelClass' => DummyTestModel::class,
         'getTableRecordTitleAttribute' => 'name',

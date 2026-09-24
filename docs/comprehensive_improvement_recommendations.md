@@ -613,10 +613,14 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
+<<<<<<< HEAD
 <<<<<<< .merge_file_C1hGbz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_8xy9zP
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -633,10 +637,16 @@ jobs:
 =======
           php-
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
           php-
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+          php-
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       - name: Install dependencies
         run: composer install
       - name: Run PHPStan
@@ -2172,9 +2182,15 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_qCBaR9
+=======
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

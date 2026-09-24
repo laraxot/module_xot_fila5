@@ -159,10 +159,12 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 - [README Principale](README.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Principale](README.md)
 =======
 - [README Principale](../readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [README Principale](../readme.md)
@@ -170,6 +172,11 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 =======
 - [README Principale](README.md)
 >>>>>>> .merge_file_HSG2K9
+=======
+=======
+- [README Principale](../readme.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Note di Sviluppo
 

@@ -6,11 +6,16 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_L7dj0t
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * ---.
  *
@@ -21,7 +26,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Relations;
 
 use Closure;
@@ -134,6 +143,7 @@ class CustomRelation extends Relation
      * Initialize the relation on a set of models.
      */
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -141,6 +151,14 @@ class CustomRelation extends Relation
 >>>>>>> .merge_file_L7dj0t
      * @param  array<int, Model>  $models
      * @param  string  $relation  the relation name (parent signature is untyped)
+=======
+     * @param array<int, Model> $models
+<<<<<<< HEAD
+     * @param string            $relation the relation name (parent signature is untyped)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+     *
+>>>>>>> da9ae01a0 (.)
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
@@ -152,6 +170,13 @@ class CustomRelation extends Relation
     public function initRelation(array $models, $relation): array
 >>>>>>> 3792da0d (Check & fix styling)
     {
+<<<<<<< HEAD
+=======
+        if (! \is_string($relation)) {
+            throw new \Exception('relation is not a string');
+        }
+
+>>>>>>> 930f8146 (Check & fix styling)
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -165,6 +190,7 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,6 +199,15 @@ class CustomRelation extends Relation
      * @param  array<int, Model>  $models
      * @param  Collection<int, Model>  $collection
      * @param  string  $relation  the relation name (parent signature is untyped)
+=======
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
+<<<<<<< HEAD
+     * @param string                 $relation   the relation name (parent signature is untyped)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+     *
+>>>>>>> da9ae01a0 (.)
      * @return array<int, Model>
      */
     public function match(array $models, Collection $collection, mixed $relation): array

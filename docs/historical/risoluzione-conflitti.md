@@ -6,11 +6,15 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ## Casi Risolti Recentemente
 
 ### 1. Namespace e Convenzioni
+<<<<<<< HEAD
 <<<<<<< .merge_file_MA6NG7
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Convenzioni Namespace](namespace-conventions.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_bYXyJA
 - [Convenzioni Namespace](namespace-conventions.md)
 =======
@@ -20,6 +24,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cN1zir
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
@@ -27,6 +32,11 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 =======
 - [Convenzioni Namespace](namespace-conventions.md)
 >>>>>>> .merge_file_V3Q85Y
+=======
+=======
+- [Convenzioni Namespace](namespace-conventions.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 

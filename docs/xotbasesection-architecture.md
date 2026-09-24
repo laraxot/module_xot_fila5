@@ -72,10 +72,12 @@ This architecture ensures:
 - Maintainable and predictable code structure
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Maintainable and predictable code structure
 =======
 - Maintainable and <nome progetto>able code structure
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Maintainable and <nome progetto>able code structure
@@ -83,3 +85,8 @@ This architecture ensures:
 =======
 - Maintainable and predictable code structure
 >>>>>>> .merge_file_GcH1Sw
+=======
+=======
+- Maintainable and predictable code structure
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -51,7 +51,11 @@ use Webmozart\Assert\Assert;
  *
  * @phpstan-ignore trait.unused
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  */
 trait TypedHasRecursiveRelationships
 {
@@ -72,6 +76,7 @@ trait TypedHasRecursiveRelationships
         childrenAndSelf as protected vendorChildrenAndSelf;
         descendants as protected vendorDescendants;
         descendantsAndSelf as protected vendorDescendantsAndSelf;
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -82,6 +87,12 @@ trait TypedHasRecursiveRelationships
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_reAx7M
+=======
+<<<<<<< HEAD
+        parent as protected vendorParent;
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         parentAndSelf as protected vendorParentAndSelf;
         rootAncestor as protected vendorRootAncestor;
         rootAncestorOrSelf as protected vendorRootAncestorOrSelf;
@@ -94,16 +105,21 @@ trait TypedHasRecursiveRelationships
 
     public function getParentKeyName(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetParentKeyName();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetParentKeyName();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetParentKeyName());
@@ -112,20 +128,30 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetParentKeyName();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetParentKeyName());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function getQualifiedParentKeyName(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetQualifiedParentKeyName();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetQualifiedParentKeyName();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetQualifiedParentKeyName());
@@ -134,20 +160,30 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetQualifiedParentKeyName();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetQualifiedParentKeyName());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function getLocalKeyName(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetLocalKeyName();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetLocalKeyName();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetLocalKeyName());
@@ -156,20 +192,30 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetLocalKeyName();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetLocalKeyName());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function getQualifiedLocalKeyName(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetQualifiedLocalKeyName();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetQualifiedLocalKeyName();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetQualifiedLocalKeyName());
@@ -178,20 +224,30 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetQualifiedLocalKeyName();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetQualifiedLocalKeyName());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function getDepthName(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetDepthName();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetDepthName();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetDepthName());
@@ -200,20 +256,30 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetDepthName();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetDepthName());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function getPathName(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetPathName();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetPathName();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetPathName());
@@ -222,20 +288,30 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetPathName();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetPathName());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function getPathSeparator(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetPathSeparator();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetPathSeparator();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetPathSeparator());
@@ -244,6 +320,11 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetPathSeparator();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetPathSeparator());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -275,16 +356,21 @@ trait TypedHasRecursiveRelationships
 
     public function getExpressionName(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetExpressionName();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetExpressionName();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetExpressionName());
@@ -293,6 +379,11 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetExpressionName();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetExpressionName());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function ancestors(): Ancestors
@@ -465,13 +556,20 @@ trait TypedHasRecursiveRelationships
 
     public function parent(): BelongsTo
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var BelongsTo $relation */
         return $this->VendorHasRecursiveRelationships::parent();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $relation = $this->vendorParent();
+=======
+        $relation = $this->VendorHasRecursiveRelationships::parent();
+>>>>>>> 930f8146 (Check & fix styling)
         Assert::isInstanceOf($relation, BelongsTo::class);
 
         return $relation;
@@ -610,16 +708,21 @@ trait TypedHasRecursiveRelationships
 
     public function getFirstPathSegment(): string
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetFirstPathSegment();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $value = $this->vendorGetFirstPathSegment();
         Assert::string($value);
 
         return $value;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::string($this->vendorGetFirstPathSegment());
@@ -628,20 +731,30 @@ trait TypedHasRecursiveRelationships
         /** @var string $value */
         return $this->vendorGetFirstPathSegment();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::string($this->vendorGetFirstPathSegment());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function hasNestedPath(): bool
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var bool $result */
         return $this->vendorHasNestedPath();
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $result = $this->vendorHasNestedPath();
         Assert::boolean($result);
 
         return $result;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::boolean($this->vendorHasNestedPath());
@@ -650,20 +763,30 @@ trait TypedHasRecursiveRelationships
         /** @var bool $result */
         return $this->vendorHasNestedPath();
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::boolean($this->vendorHasNestedPath());
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function isIntegerAttribute(string $attribute): bool
     {
+<<<<<<< HEAD
 <<<<<<< .merge_file_cBIyN5
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var bool $result */
         return $this->vendorIsIntegerAttribute($attribute);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $result = $this->vendorIsIntegerAttribute($attribute);
         Assert::boolean($result);
 
         return $result;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         return Assert::boolean($this->vendorIsIntegerAttribute($attribute));
@@ -672,5 +795,10 @@ trait TypedHasRecursiveRelationships
         /** @var bool $result */
         return $this->vendorIsIntegerAttribute($attribute);
 >>>>>>> .merge_file_reAx7M
+=======
+=======
+        return Assert::boolean($this->vendorIsIntegerAttribute($attribute));
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

@@ -11,11 +11,17 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xythK1
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -29,11 +35,16 @@ use function Safe\preg_match;
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_IxpDAc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_GNb5ko
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 uses(TestCase::class);
 
 /**
@@ -81,12 +92,18 @@ function modelSourceFiles(): array
         }
         $it = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xythK1
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -102,12 +119,17 @@ function modelSourceFiles(): array
 =======
             if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
 >>>>>>> .merge_file_IxpDAc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
             if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
 >>>>>>> .merge_file_GNb5ko
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 continue;
             }
             $out[] = $file->getPathname();
@@ -136,12 +158,18 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
             continue;
         }
         $src = file_get_contents($file);
+<<<<<<< HEAD
 <<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match($handRolled, $src) === 1) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xythK1
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -157,12 +185,17 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
 =======
         if (1 === preg_match($handRolled, $src)) {
 >>>>>>> .merge_file_IxpDAc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
         if (preg_match($handRolled, $src) === 1) {
 >>>>>>> .merge_file_GNb5ko
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $offenders[] = $rel;
         }
     }
@@ -173,12 +206,18 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
         "Risoluzione di classe scritta a mano invece di `<Model>::getClassName()`:\n  "
         .implode("\n  ", $offenders)
         ."\n\nOgni modulo ha il suo model su una connessione diversa con lo stesso nome di"
+<<<<<<< HEAD
 <<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xythK1
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -194,12 +233,17 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
 =======
         .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
 >>>>>>> .merge_file_IxpDAc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
         .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
 >>>>>>> .merge_file_GNb5ko
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ."\nCanon: Modules/Xot/docs/wiki/concepts/xotbasemodel-get-class-name.md"
     );
 });
@@ -211,12 +255,18 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
     $offenders = [];
     foreach (modelSourceFiles() as $file) {
         $src = file_get_contents($file);
+<<<<<<< HEAD
 <<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match($silentFallback, $src) === 1) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xythK1
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -232,12 +282,17 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
 =======
         if (1 === preg_match($silentFallback, $src)) {
 >>>>>>> .merge_file_IxpDAc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
         if (preg_match($silentFallback, $src) === 1) {
 >>>>>>> .merge_file_GNb5ko
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $offenders[] = str_replace(\dirname(__DIR__, 5).'/', '', $file);
         }
     }
@@ -248,12 +303,18 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
         "Ripiego silenzioso su un model di un altro modulo:\n  "
         .implode("\n  ", $offenders)
         ."\n\nUsare `<Model>::getClassName()`: se il gemello manca deve LANCIARE, non"
+<<<<<<< HEAD
 <<<<<<< .merge_file_VyQLsF
 <<<<<<< HEAD
 <<<<<<< HEAD
         .' rispondere con i dati di un altro ente.'
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_xythK1
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -269,11 +330,16 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
 =======
         .' rispondere con i dati di un altro ente.'
 >>>>>>> .merge_file_IxpDAc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
         .' rispondere con i dati di un altro ente.'
 >>>>>>> .merge_file_GNb5ko
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     );
 });

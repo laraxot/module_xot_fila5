@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_PCYDEp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -222,7 +226,10 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
+<<<<<<< HEAD
 <<<<<<< .merge_file_mODJhZ
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -237,9 +244,14 @@ canonical: ../../../Themes/docs/shared-components/testing-best-practices-1.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/testing-best-practices-1.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/testing-best-practices-1.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PCYDEp
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

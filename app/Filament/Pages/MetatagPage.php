@@ -12,7 +12,11 @@ use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
+<<<<<<< HEAD
 use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
+=======
+use Modules\Tenant\Services\TenantService;
+>>>>>>> 930f8146 (Check & fix styling)
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 
@@ -89,6 +93,10 @@ class MetatagPage extends XotBasePage
 >>>>>>> 3792da0d (Check & fix styling)
         $data = $this->form->getState();
         app(SaveTenantConfigAction::class)->execute('metatag', $data);
+=======
+        $data = $this->form->getState();
+        TenantService::saveConfig('metatag', $data);
+>>>>>>> 930f8146 (Check & fix styling)
 
         Notification::make()
             ->success()
@@ -112,6 +120,11 @@ class MetatagPage extends XotBasePage
     protected function getFormActions(): array
     {
         return [
+<<<<<<< HEAD
+=======
+            // Laraxot module file — see docs/wiki for domain contract.
+            // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 930f8146 (Check & fix styling)
             Action::make('save')->submit('save'),
         ];
     }

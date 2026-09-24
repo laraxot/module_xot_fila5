@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_1Vz9Nr
 <<<<<<< HEAD
 https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
@@ -44,9 +47,15 @@ updated: 2026-08-24
 https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
 >>>>>>> .merge_file_EOkssh
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PQzXMx
+=======
+=======
+https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -20,6 +20,7 @@ Questo documento contiene le regole generali che devono essere seguite in tutto 
 
 ## Collegamenti Bidirezionali
 - Questo documento è collegato alle documentazioni dei seguenti moduli:
+<<<<<<< HEAD
   - [Patient Module Documentation](../../../patient/docs/doctor-model-update.md)
   - [User Module Documentation](../../../user/docs/user-model-guidelines.md)
 
@@ -33,6 +34,7 @@ Queste regole devono essere seguite per garantire che il codice passi i controll
 =======
 Queste regole devono essere seguite per garantire che il codice passi i controlli di qualità futuri e aderisca ai principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid). Considerare sempre le implicazioni di politica, filosofia, religione e zen nelle soluzioni implementate.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Queste regole devono essere seguite per garantire che il codice passi i controlli di qualità futuri e aderisca ai principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid). Considerare sempre le implicazioni di politica, filosofia, religione e zen nelle soluzioni implementate.
@@ -40,3 +42,11 @@ Queste regole devono essere seguite per garantire che il codice passi i controll
 =======
 Queste regole devono essere seguite per garantire che il codice passi i controlli di qualità futuri e aderisca ai principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid). Considerare sempre le implicazioni di politica, filosofia, religione e zen nelle soluzioni implementate.
 >>>>>>> .merge_file_eFbHTV
+=======
+=======
+  - [Patient Module Documentation](../../../Patient/docs/doctor-model-update.md)
+  - [User Module Documentation](../../../User/docs/user-model-guidelines.md)
+
+Queste regole devono essere seguite per garantire che il codice passi i controlli di qualità futuri e aderisca ai principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid). Considerare sempre le implicazioni di politica, filosofia, religione e zen nelle soluzioni implementate.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

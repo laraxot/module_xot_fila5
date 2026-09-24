@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Last Update**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Last Update**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: ✅ Production Ready
 **PHPStan Level**: 10
 **Maintainers**: Laraxot Team
@@ -653,15 +659,21 @@ Located in `bashscripts/`:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
 
 ### Migration & Upgrade
@@ -685,15 +697,21 @@ Located in `bashscripts/`:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### v3.0.0 - [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### v3.0.0 - [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
 - **Added**: PHP 8.3 support
@@ -707,15 +725,21 @@ Located in `bashscripts/`:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### v2.9.0 - [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### v2.9.0 - [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Added**: New XotBaseChartWidget
 - **Fixed**: HasXotTable duplicate if statements
 - **Fixed**: Mass syntax errors across modules
@@ -727,15 +751,21 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 See [CHANGELOG.md](./changelog.md) for full history.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See [CHANGELOG.md](./changelog.md) for full history.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -758,11 +788,13 @@ See [CHANGELOG.md](./changelog.md) for full history.
 See [ROADMAP.md](roadmap.md) for details.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 See [ROADMAP.md](roadmap.md) for details.
 =======
 See [ROADMAP.md](./ROADMAP.md) for details.
 See [ROADMAP.md](./roadmap.md) for details.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See [ROADMAP.md](./ROADMAP.md) for details.
@@ -771,6 +803,11 @@ See [ROADMAP.md](./roadmap.md) for details.
 =======
 See [ROADMAP.md](roadmap.md) for details.
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+See [ROADMAP.md](./ROADMAP.md) for details.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -778,6 +815,7 @@ See [ROADMAP.md](roadmap.md) for details.
 
 ### Internal Modules
 <<<<<<< .merge_file_Npm30t
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -796,11 +834,16 @@ See [ROADMAP.md](roadmap.md) for details.
 - [Project README](../../../readme.md) - Main project documentation
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [User Module](../User/docs/README.md) - User management and authentication
 - [UI Module](../UI/docs/README.md) - UI components and design system
 - [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy support
@@ -836,15 +879,21 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -864,10 +913,12 @@ Part of the Laraxot PTVX ecosystem.
 **Test Coverage**: 85%+ ✅
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Test Coverage**: 85%+ ✅
 =======
 **Test Coverage**: 85%+ ✅
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Test Coverage**: 85%+ ✅
@@ -875,3 +926,8 @@ Part of the Laraxot PTVX ecosystem.
 =======
 **Test Coverage**: 85%+ ✅
 >>>>>>> .merge_file_UbhqVE
+=======
+=======
+**Test Coverage**: 85%+ ✅
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

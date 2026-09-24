@@ -81,7 +81,11 @@ abstract class XotBaseTransition
      * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
 =======
      * @return array<int, array<string, string>>
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function getNotificationAttachments(): array
     {

@@ -1,9 +1,13 @@
 # Filament
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Otv2VD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -114,11 +118,16 @@ $prefix = static::$translationPrefix;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_w52qsW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_a84MZD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
 ## File Contenuti
@@ -130,6 +139,7 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 
 ## Note
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -138,6 +148,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 
 ## Collegamenti tra versioni di README.md
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Otv2VD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -152,12 +165,19 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/docs/it/README.md)
 <<<<<<< .merge_file_5Bh1su
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -238,9 +258,12 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/project_docs/it/README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend. 
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 =======
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
@@ -282,11 +305,16 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/docs/it/README.md)
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_a84MZD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -321,8 +349,11 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Otv2VD
 <<<<<<< HEAD
 =======
@@ -387,9 +418,14 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 =======
 =======
 >>>>>>> .merge_file_w52qsW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](laravel/vendor/mockery/mockery/project_docs/README.md)
 * [README.md](../../../Chart/project_docs/README.md)
 * [README.md](../../../Reporting/project_docs/README.md)
@@ -436,17 +472,25 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../../Themes/One/project_docs/README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Otv2VD
 =======
 =======
 >>>>>>> .merge_file_w52qsW
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_a84MZD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Regola sulle closure void nelle azioni custom Filament
 
@@ -474,10 +518,14 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Aggiornare la documentazione ogni volta che si corregge questo errore.
 
 ### Collegamento
+<<<<<<< HEAD
 <<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Otv2VD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -548,10 +596,16 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 =======
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 >>>>>>> .merge_file_w52qsW
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+- Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Checklist
 - [ ] Nessuna closure void restituisce un valore
@@ -587,6 +641,10 @@ $prefix = static::$translationPrefix;
 ## Moduli che fanno riferimento a questa regola
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Otv2VD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
@@ -782,4 +840,15 @@ $prefix = static::$translationPrefix;
 // Aggiungere qui altri moduli se necessario
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_a84MZD
+=======
+- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+>>>>>>> laraxot/dev
+=======
+- [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
+- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

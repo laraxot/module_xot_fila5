@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_nuNwpJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_wbtQ8G
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Rapporto PHPStan Livello 9 per il modulo Xot"
 module: "Xot"
@@ -26,6 +29,7 @@ related:
 =======
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -34,6 +38,10 @@ related:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wbtQ8G
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: level
@@ -42,6 +50,14 @@ canonical: ../../../Themes/docs/shared-components/level-9.md
 <<<<<<< .merge_file_nuNwpJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
+
+See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -210,8 +226,15 @@ See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
 >>>>>>> 64619e34 (.)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wbtQ8G
+=======
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

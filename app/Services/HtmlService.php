@@ -39,19 +39,26 @@ class HtmlService
         // include_once __DIR__.'/vendor/autoload.php';
         // $pdforientation = 'L'; // default;
         // $out = 'show';
+<<<<<<< HEAD
         if ($filename === '') {
 <<<<<<< .merge_file_5RqMXQ
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_FBBB6T
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if ($filename === '') {
 =======
         if ('' === $filename) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if ('' === $filename) {
 >>>>>>> .merge_file_LYQQlq
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if ('' === $filename) {
@@ -59,6 +66,10 @@ class HtmlService
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_VtQZTB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $filename = Storage::disk('local')->path('test.pdf');
         }
         /*
@@ -75,11 +86,17 @@ class HtmlService
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
+<<<<<<< HEAD
 <<<<<<< .merge_file_5RqMXQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_FBBB6T
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -96,11 +113,16 @@ class HtmlService
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_LYQQlq
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if ('content_PDF' === $out) {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
@@ -112,10 +134,15 @@ class HtmlService
 =======
 >>>>>>> .merge_file_LYQQlq
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_VtQZTB
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

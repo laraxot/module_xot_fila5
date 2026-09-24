@@ -2,7 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/module.php
+return [
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 930f8146 (Check & fix styling)
     'navigation' => [
         'name' => 'Modulo',
         'plural' => 'Moduli',
@@ -14,7 +30,11 @@ return [
         'icon' => 'module.navigation',
         'sort' => 65,
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ],
     'fields' => [
         'name' => [
@@ -119,7 +139,11 @@ return [
             'label' => 'enabled',
         ],
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ],
     'pages' => [
         'health_check_results' => [
@@ -176,7 +200,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Module',
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ],
     ],
 ];

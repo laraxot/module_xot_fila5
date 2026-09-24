@@ -35,6 +35,7 @@ https://github.com/HichemTab-tech/LaravelFS
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_iL4tUU
 =======
 <<<<<<< .merge_file_epPRhw
@@ -43,7 +44,11 @@ https://github.com/HichemTab-tech/LaravelFS
 <<<<<<< HEAD
 >>>>>>> .merge_file_XiSHqv
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 
 ## Contenuto originale (txt)
@@ -55,9 +60,14 @@ https://github.com/HichemTab-tech/LaravelFS
 =======
 >>>>>>> .merge_file_J2Mz7N
 >>>>>>> .merge_file_XiSHqv
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 
 ## Contenuto originale (txt)
@@ -87,24 +97,31 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_iL4tUU
 =======
 <<<<<<< .merge_file_epPRhw
 =======
 =======
 >>>>>>> .merge_file_XiSHqv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_iL4tUU
 =======
 >>>>>>> .merge_file_J2Mz7N
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_XiSHqv
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 =======
@@ -113,3 +130,7 @@ https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ubx86B
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

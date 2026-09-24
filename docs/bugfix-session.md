@@ -280,7 +280,10 @@ Eccezioni rare:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_yxomsZ
 <<<<<<< HEAD
 =======
@@ -294,8 +297,12 @@ Eccezioni rare:
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
 >>>>>>> .merge_file_XOQPDz
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

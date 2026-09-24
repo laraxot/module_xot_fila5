@@ -23,12 +23,14 @@
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 =======
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
@@ -38,6 +40,12 @@
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 >>>>>>> .merge_file_3Uu8fD
+=======
+=======
+> Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
+> Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../<nome progetto>/docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../<nome progetto>/docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../<nome progetto>/docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../<nome progetto>/docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome modulo>/docs/resources/studio-resource.md](../../<nome modulo>/docs/resources/studio-resource.md) e [<nome modulo>/docs/README.md](../../<nome modulo>/docs/readme.md). Vedi esempi di implementazione e note di propagazione.
@@ -79,12 +87,14 @@
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 =======
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
@@ -94,6 +104,12 @@
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](README.md). Vedi esempi di implementazione e note di propagazione.
 >>>>>>> .merge_file_3Uu8fD
+=======
+=======
+> Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
+> Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../../../docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../../../docs/readme.md). Vedi esempi di implementazione e note di propagazione.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # List Records in Filament
 # List Records in Filament
 

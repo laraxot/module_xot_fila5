@@ -285,7 +285,11 @@ Vedere: `Modules/<nome progetto>/docs/factories/phpstan-factory-compliance.md`
 *Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+*
 =======
 *Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+*
+>>>>>>> da9ae01a0 (.)

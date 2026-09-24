@@ -9,6 +9,10 @@ use PHPUnit\Framework\TestCase;
 
 /** Claude-audit static ratio bridge — suite canonica in tests/ */
 final class AuditBridgeTest17 extends TestCase
+=======
+/** Claude-audit static ratio bridge — suite canonica in tests/ */
+final class AuditBridgeTest17
+>>>>>>> 930f8146 (Check & fix styling)
 {
     public function testBridge(): void
 =======

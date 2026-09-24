@@ -66,10 +66,12 @@ Edita i file di configurazione e inserisci le tue keys.
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
 =======
 Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/rules/
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/rules/
@@ -77,6 +79,11 @@ Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/
 =======
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
 >>>>>>> .merge_file_Ux93BK
+=======
+=======
+Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Refactoring Guidato
@@ -103,10 +110,12 @@ Crea PR per branch feature/mcp-integration con descrizione delle modifiche
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
 =======
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
@@ -114,3 +123,8 @@ Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshoot
 =======
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
 >>>>>>> .merge_file_Ux93BK
+=======
+=======
+Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

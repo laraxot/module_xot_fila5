@@ -126,12 +126,14 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 - [Architettura Moduli](../../docs/module-architecture.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Database](../../docs/database-best-practices.md)
 - [Architettura Moduli](../../docs/module-architecture.md)
 =======
 - [Best Practices Database](../../../docs/database-best-practices.md)
 - [Architettura Moduli](../../../docs/module-architecture.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best Practices Database](../../../docs/database-best-practices.md)
@@ -141,6 +143,12 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 - [Best Practices Database](../../docs/database-best-practices.md)
 - [Architettura Moduli](../../docs/module-architecture.md)
 >>>>>>> .merge_file_e5kQO8
+=======
+=======
+- [Best Practices Database](../../docs/database-best-practices.md)
+- [Architettura Moduli](../../docs/module-architecture.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Note per gli Sviluppatori
 
@@ -165,10 +173,12 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 *Ultimo aggiornamento: Giugno 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: Giugno 2025*
@@ -176,3 +186,8 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> .merge_file_e5kQO8
+=======
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

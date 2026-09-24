@@ -35,10 +35,12 @@ cd laravel
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
@@ -46,6 +48,11 @@ cd laravel
 =======
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 >>>>>>> .merge_file_PskQPR
+=======
+=======
+- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -193,14 +200,21 @@ php -l path/to/modified/file.php
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_PskQPR
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dm20NL
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -212,11 +226,16 @@ php -l path/to/modified/file.php
 - [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PskQPR
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🚀 Next Steps
 
@@ -287,10 +306,12 @@ cd laravel
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
@@ -298,6 +319,11 @@ cd laravel
 =======
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 >>>>>>> .merge_file_PskQPR
+=======
+=======
+- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -445,14 +471,21 @@ php -l path/to/modified/file.php
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_PskQPR
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dm20NL
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -464,11 +497,16 @@ php -l path/to/modified/file.php
 - [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PskQPR
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🚀 Next Steps
 

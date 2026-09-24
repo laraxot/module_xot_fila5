@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_aDl40D
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_a5SzNh
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -133,6 +136,7 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
+<<<<<<< HEAD
 
 
 ---
@@ -337,3 +341,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-sess
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_a5SzNh
+=======
+>>>>>>> da9ae01a0 (.)

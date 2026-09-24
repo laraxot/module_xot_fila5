@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3jTOsH
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali
@@ -222,7 +226,10 @@
 **Completato**: 2025-08-07
 **Durata refactor**: 15 minuti
 **Impatto**: TRASFORMATIVO
+<<<<<<< HEAD
 <<<<<<< .merge_file_xWxl2A
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -237,9 +244,14 @@ canonical: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3jTOsH
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

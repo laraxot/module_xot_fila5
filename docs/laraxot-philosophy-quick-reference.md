@@ -86,10 +86,12 @@ composer dump-autoload
 - ✅ Predictable autoloading
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Predictable autoloading
 =======
 - ✅ <nome progetto>able autoloading
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - ✅ <nome progetto>able autoloading
@@ -97,6 +99,11 @@ composer dump-autoload
 =======
 - ✅ Predictable autoloading
 >>>>>>> .merge_file_YQWC1A
+=======
+=======
+- ✅ Predictable autoloading
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - ✅ Reliable test execution
 - ✅ Easy maintenance
 - ✅ Fast debugging
@@ -131,10 +138,12 @@ composer dump-autoload
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
 =======
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
@@ -142,3 +151,8 @@ composer dump-autoload
 =======
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
 >>>>>>> .merge_file_YQWC1A
+=======
+=======
+**Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

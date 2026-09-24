@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_It6J0y
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_It6J0y
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # ___to_integrate
 
 <!-- Contenuto migrato da _docs/___to_integrate.txt -->
@@ -60,9 +67,15 @@ updated: 2026-08-24
 https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15
 >>>>>>> .merge_file_1LRUdu
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_c63Mdn
+=======
+=======
+https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

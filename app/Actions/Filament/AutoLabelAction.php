@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * -WIP.
  */
@@ -12,7 +16,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Actions\Filament;
 
 use Filament\Forms\Components\Field;
@@ -109,7 +117,11 @@ class AutoLabelAction
                 $saveTransAction->execute($label_key, (string) $label_value);
 =======
                 $saveTransAction->execute($label_key, $label_value);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
 
             // Applichiamo l'etichetta al componente

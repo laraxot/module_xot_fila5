@@ -273,10 +273,12 @@ return new class extends XotBaseMigration {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Regola Performance](../../performance/project_docs/database_migrations.md)
 - [Regole globali root](../../../../docs/project/database_migrations.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Regola Performance](../../performance/project_docs/database_migrations.md)
@@ -284,6 +286,10 @@ return new class extends XotBaseMigration {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_86TPPb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     /**
      * Ottiene la sezione associata al socio.
@@ -504,10 +510,12 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Utilizzare query builder o raw queries per query complesse
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Utilizzare query builder o raw queries per query complesse
 =======
 - Utilizzare query builder o raw queries per query complesse
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Utilizzare query builder o raw queries per query complesse
@@ -515,3 +523,8 @@ php artisan db:analyze-usage --connection=nome_connessione
 =======
 - Utilizzare query builder o raw queries per query complesse
 >>>>>>> .merge_file_86TPPb
+=======
+=======
+- Utilizzare query builder o raw queries per query complesse
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

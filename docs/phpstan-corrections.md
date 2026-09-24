@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 # Correzioni PHPStan - Modulo Xot
 
 ## Panoramica
@@ -195,6 +198,7 @@ $averageTime = $count > 0 ? $totalTime / $count : 0.0;
 - [Architettura Modulo Xot](../architecture.md)
 - [Guida PHPStan](../../../docs/phpstan-guide.md)
 - [Best Practices Laraxot](../../../docs/laraxot-best-practices.md)
+<<<<<<< HEAD
 =======
 ---
 module: theme
@@ -204,3 +208,5 @@ canonical: ../../../Themes/docs/shared-components/phpstan-corrections-january-20
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-january-2026.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

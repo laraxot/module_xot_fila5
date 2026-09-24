@@ -127,12 +127,14 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
 =======
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
@@ -142,6 +144,12 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
 >>>>>>> .merge_file_YNXfHm
+=======
+=======
+- [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
+- [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -158,10 +166,12 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
 - [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
@@ -169,5 +179,10 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 =======
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 >>>>>>> .merge_file_YNXfHm
+=======
+=======
+- [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget

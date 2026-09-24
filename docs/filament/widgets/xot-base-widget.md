@@ -183,12 +183,14 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DIRECTORY-CASE-SENSITIVITY.md](directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
 - [DIRECTORY-CASE-SENSITIVITY.md](../../DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity delle directory
 - [NAMESPACE-RULES.md](../../NAMESPACE-RULES.md) - Regole per i namespace nei moduli
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [DIRECTORY-CASE-SENSITIVITY.md](../../DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity delle directory
@@ -198,6 +200,12 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [DIRECTORY-CASE-SENSITIVITY.md](directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 >>>>>>> .merge_file_WEzOuC
+=======
+=======
+- [DIRECTORY-CASE-SENSITIVITY.md](../../DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity delle directory
+- [NAMESPACE-RULES.md](../../NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)

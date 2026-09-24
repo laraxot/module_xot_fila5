@@ -21,11 +21,13 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 - **Quaeris Module**: Handles survey data and PDF generation
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris Module**: Handles survey data and PDF generation
 =======
 - **healthcare_app Module**: Handles survey data and PDF generation
 - **ExternalProject Module**: Handles survey data and PDF generation
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **healthcare_app Module**: Handles survey data and PDF generation
@@ -34,6 +36,11 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 =======
 - **Quaeris Module**: Handles survey data and PDF generation
 >>>>>>> .merge_file_gOFfRM
+=======
+=======
+- **Quaeris Module**: Handles survey data and PDF generation
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Xot Module**: Provides core services including HTML to PDF conversion
 - **JpGraph Library**: Server-side chart generation
 - **Chart.js**: Client-side chart visualization
@@ -451,15 +458,21 @@ class MakePdfAction
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         if ($survey_date_to === null || $survey_date_to === '[DATE]') {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if ($survey_date_to === null || $survey_date_to === '[DATE]') {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gOFfRM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $survey_date_to = date('W / o');
         } else {
             $survey_date_to = date('W / o', strtotime($survey_date_to));
@@ -547,10 +560,12 @@ PDFs support multi-page layouts with proper headers and footers:
 @include('quaeris::pdf.css')
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 @include('quaeris::pdf.css')
 =======
 @include('healthcare_app::pdf.css')
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 @include('healthcare_app::pdf.css')
@@ -558,6 +573,11 @@ PDFs support multi-page layouts with proper headers and footers:
 =======
 @include('quaeris::pdf.css')
 >>>>>>> .merge_file_gOFfRM
+=======
+=======
+@include('quaeris::pdf.css')
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 <page backtop="{{ $pdf->backtop }}mm" backbottom="{{ $pdf->backbottom }}mm">
     <page_header>
@@ -637,10 +657,12 @@ PDFs support multi-page layouts with proper headers and footers:
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
 =======
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
@@ -648,3 +670,8 @@ This comprehensive system allows for flexible, scalable chart generation and PDF
 =======
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
 >>>>>>> .merge_file_gOFfRM
+=======
+=======
+This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

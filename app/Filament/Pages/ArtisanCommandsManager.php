@@ -13,7 +13,11 @@ use Modules\Xot\Actions\ExecuteComposerDumpAutoloadAction;
 =======
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * ---.
@@ -61,7 +65,11 @@ class ArtisanCommandsManager extends XotBasePage
         'artisan-command.error' => 'handleCommandError',
     ];
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -203,7 +211,11 @@ class ArtisanCommandsManager extends XotBasePage
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.notifications.error'))
             ->body($error)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->danger()
             ->send();
     }
@@ -296,7 +308,11 @@ class ArtisanCommandsManager extends XotBasePage
                 ->modalDescription((string) __('xot::artisan-commands-manager.commands.notify_migrate_themes_to_mail_templates.modal_description'))
                 ->action(fn () => $this->executeCommand('notify:migrate-themes-to-mail-templates')),
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ];
     }
 }

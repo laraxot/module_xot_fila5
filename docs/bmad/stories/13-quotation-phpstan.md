@@ -21,7 +21,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 name: 13-quotation-phpstan
 description: "Modulo: Quotation"
@@ -47,7 +51,11 @@ metadata:
 >>>>>>> .merge_file_QNtpcK
 >>>>>>> .merge_file_kglMlb
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_qtncSG

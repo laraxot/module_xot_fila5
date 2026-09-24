@@ -1,11 +1,17 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_I3fQxH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_BBiXKp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -20,11 +26,16 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_hYKgBf
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZjpOEw
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 

@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_KiEoPq
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_wrbMem
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Ponytail Audit"
 type: concept
@@ -26,8 +29,12 @@ Vedi il file canonico: [ponytail-audit.md](./ponytail-audit.md)
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Ponytail-audit 2026-07-02: Xot module findings
 
 Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://github.com/laraxot/base_quaeris_fila5/issues/100), [#102](https://github.com/laraxot/base_quaeris_fila5/issues/102) and [#111](https://github.com/laraxot/base_quaeris_fila5/issues/111), summarized in discussion [#114](https://github.com/laraxot/base_quaeris_fila5/discussions/114).
@@ -56,8 +63,13 @@ This mirrors the same principle already applied to `Modules/Quaeris/app/Contract
 - Known doc-sprawl debt in this module (discussion #22) is out of scope here; `Modules/Xot/docs/` still has duplicate `README.md`/`readme-new.md`/`index.md`/`index-v2.md`/`INDEX.md` entrypoints pending consolidation.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wrbMem
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

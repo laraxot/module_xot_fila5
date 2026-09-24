@@ -77,7 +77,11 @@ class GetViewAction
             ->map(static function (string $item) {
 =======
             ->map(static function ($item) {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $item = str_replace('.php', '', $item);
 
                 return Str::slug(Str::snake($item));

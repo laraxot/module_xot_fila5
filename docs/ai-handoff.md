@@ -9,6 +9,7 @@
 <<<<<<< .merge_file_gNScxp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -30,11 +31,16 @@
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wlICDC
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## configurazione ambiente test
 - file: `../../.env.testing`
 - il bootstrap carica `.env.testing` tramite `Modules/Xot/tests/CreatesApplication.php` (usa `$app->loadEnvironmentFrom('.env.testing')` se presente)
@@ -62,6 +68,7 @@
 <<<<<<< .merge_file_gNScxp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## note importanti per chi riprende
 - evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
 =======
@@ -86,6 +93,7 @@
 <<<<<<< HEAD
 - per bug dashboard/livewire/query: usare URL, payload Livewire e SQL dello stack trace come specifica minima del test di regressione
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - per bug dashboard/livewire/query: usare URL, payload Livewire e SQL dello stack trace come specifica minima del test di regressione
@@ -94,3 +102,9 @@
 ## note importanti per chi riprende
 - evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
 >>>>>>> .merge_file_wlICDC
+=======
+=======
+## note importanti per chi riprende
+- evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -76,10 +76,12 @@ Modules/<NomeModulo>/
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../xot/docs/translations.md) - Regole base
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
@@ -87,6 +89,10 @@ Modules/<NomeModulo>/
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_LFa9Zq
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Struttura
 
@@ -386,6 +392,7 @@ Action::make('delete')
 <<<<<<< .merge_file_jtQuSd
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -410,11 +417,16 @@ Action::make('delete')
 * [translations.md](../../../cms/docs/translations.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_LFa9Zq
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -443,10 +455,12 @@ Action::make('delete')
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -454,3 +468,8 @@ Action::make('delete')
 =======
 ---
 >>>>>>> .merge_file_LFa9Zq
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

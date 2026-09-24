@@ -417,15 +417,22 @@ php artisan xot:test-framework
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FHXrhc
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< HEAD
 <<<<<<< .merge_file_Vvk6UX
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -438,9 +445,14 @@ php artisan xot:test-framework
 <<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_FHXrhc
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

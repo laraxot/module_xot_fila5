@@ -145,15 +145,21 @@ return array(
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8T8qGL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 #### File Completati
 1. `progressioni.php` - Traduzioni principali
@@ -275,10 +281,12 @@ return [
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
@@ -286,6 +294,10 @@ return [
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8T8qGL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Laraxot Conventions](laraxot-conventions.md)
 
 ## Note Tecniche
@@ -308,10 +320,12 @@ return [
 *Ultimo aggiornamento: Giugno 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: Giugno 2025*
@@ -319,3 +333,8 @@ return [
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> .merge_file_8T8qGL
+=======
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

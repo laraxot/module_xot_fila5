@@ -59,6 +59,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_LoJ7Gr
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -77,10 +78,16 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_x0SWP2
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -297,6 +304,7 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_LoJ7Gr
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -315,10 +323,16 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> .merge_file_x0SWP2
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -483,6 +497,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_LoJ7Gr
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -501,10 +516,16 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_x0SWP2
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components
@@ -731,6 +752,7 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_LoJ7Gr
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -749,10 +771,16 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> .merge_file_x0SWP2
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Form components

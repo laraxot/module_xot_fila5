@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Widgets\Widget;
+>>>>>>> 930f8146 (Check & fix styling)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
@@ -12,13 +16,20 @@ use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
  * Widget per mostrare una panoramica dei moduli disponibili.
  * Utilizza l'action GetModulesNavigationItems per caricare dinamicamente i moduli.
  */
+<<<<<<< HEAD
 class ModulesOverviewWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
     /** @var view-string */
 =======
+<<<<<<< HEAD
     /** @phpstan-ignore property.defaultValue */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+class ModulesOverviewWidget extends Widget
+{
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected string $view = 'xot::filament.widgets.modules-overview';
 
     protected int|string|array $columnSpan = 'full';
@@ -42,7 +53,11 @@ class ModulesOverviewWidget extends XotBaseWidget
             usort($configs, static fn (array $a, array $b) => ($a['sort'] <=> $b['sort']));
 =======
             usort($configs, static fn ($a, $b) => ($a['sort'] <=> $b['sort']));
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
             $user = Auth::user();
             $hasRoleFn = static function (string $role) use ($user): bool {

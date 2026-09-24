@@ -10,9 +10,13 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_kytRgC
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 
@@ -36,6 +40,11 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  *
  * @mixin Model
  */
+=======
+use Modules\Xot\Actions\Factory\GetFactoryAction;
+
+/** @template TFactory of Factory */
+>>>>>>> 930f8146 (Check & fix styling)
 trait HasXotFactory
 {
     /**

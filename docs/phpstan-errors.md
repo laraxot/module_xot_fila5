@@ -1,13 +1,17 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_jjCPvO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Errori Modulo Xot - [DATE]
 
 ## Analisi Completa
 
 **Data Analisi**: [DATE]
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -23,6 +27,8 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KxX7r0
+=======
+>>>>>>> da9ae01a0 (.)
 **PHPStan Level**: 10
 **Modulo**: Xot (Base Framework)
 **Errori Trovati**: 7
@@ -177,6 +183,7 @@ Tutti gli errori seguono lo stesso pattern:
 
 ## Stato Correzioni
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_jjCPvO
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,6 +197,9 @@ Tutti gli errori seguono lo stesso pattern:
 =======
 ✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
 >>>>>>> .merge_file_KxX7r0
+=======
+✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
+>>>>>>> da9ae01a0 (.)
 
 - ✅ ParsePrintPageStringAction.php - Aggiunti controlli esistenza array
 - ✅ NormalizeDriverNameAction.php - Aggiunto Assert::string() per type narrowing

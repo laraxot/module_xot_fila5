@@ -153,6 +153,7 @@ Prima di ogni commit, verificare:
 **Status**: ✅ Regola Critica OBBLIGATORIA
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 =======
@@ -160,6 +161,7 @@ Prima di ogni commit, verificare:
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -170,3 +172,9 @@ Prima di ogni commit, verificare:
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> .merge_file_Maod7R
+=======
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

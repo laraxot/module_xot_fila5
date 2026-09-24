@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_HmWM2e
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_sQZZVp
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,11 +14,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_obkM5e
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_rLisJa
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # User Research: Xot Framework
 
 ## 🔬 Research Goals
@@ -34,10 +43,14 @@ Identify bottlenecks in developer productivity when working with XotBase classes
 ## ✅ Actionable Insights / Next Steps
 - Simplify the `XotBaseServiceProvider` boot process.
 - Improve documentation for the `HasXotTable` trait.
+<<<<<<< HEAD
 <<<<<<< .merge_file_HmWM2e
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_sQZZVp
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -137,8 +150,13 @@ Users expect vetted extensions.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_obkM5e
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_rLisJa
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -2,6 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_c0dBjM
+>>>>>>> da9ae01a0 (.)
+<<<<<<< HEAD
 # Correzione Mapping Classi Filament - [DATE]
 
 =======
@@ -18,6 +23,7 @@
 =======
 
 >>>>>>> .merge_file_Xcfpj8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Correzione Mapping Classi Filament - [DATE]
@@ -25,6 +31,12 @@
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_xcmrU8
+=======
+=======
+# Correzione Mapping Classi Filament - [DATE]
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Obiettivo**: Correggere mapping classi inesistenti nel file `filament_class.txt`
 
 ## ⚠️ Problema Identificato
@@ -142,9 +154,12 @@ Se in futuro si volesse creare queste classi base:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Correzione**: [DATE]
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_c0dBjM
 <<<<<<< HEAD
 **Data Correzione**: [DATE]
@@ -161,7 +176,11 @@ Se in futuro si volesse creare queste classi base:
 >>>>>>> laraxot/dev
 =======
 **Data Correzione**: [DATE]
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 **Data Correzione**: 2025-12-23
 >>>>>>> .merge_file_xcmrU8
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -65,10 +65,12 @@ Verificare **TUTTI i moduli** per accessor che chiamano `save()` senza guard `if
 1. `Models/Schede.php` - Da verificare
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. `Models/Schede.php` - Da verificare
 =======
 1. `Models/Scheda.php` - Da verificare
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. `Models/Scheda.php` - Da verificare
@@ -76,6 +78,11 @@ Verificare **TUTTI i moduli** per accessor che chiamano `save()` senza guard `if
 =======
 1. `Models/Schede.php` - Da verificare
 >>>>>>> .merge_file_V35CaL
+=======
+=======
+1. `Models/Schede.php` - Da verificare
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 2. `Models/Pesi.php` - Da verificare
 3. `Models/MaxCatecoPosfunAnno.php` - Da verificare
 
@@ -170,15 +177,21 @@ Ogni modulo deve avere:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_V35CaL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## Metriche Target
@@ -206,6 +219,7 @@ Ogni modulo deve avere:
 <<<<<<< .merge_file_4X1uKc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -219,11 +233,16 @@ Ogni modulo deve avere:
 **Creato**: [DATE]
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_V35CaL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Sigma Implementation](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Pattern Template](../../Sigma/docs/accessor-refactoring-philosophy.md)
 
@@ -238,10 +257,12 @@ Ogni modulo deve avere:
 **Timeline**: 3 settimane per audit completo
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Timeline**: 3 settimane per audit completo
 =======
 **Timeline**: 3 settimane per audit completo
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Timeline**: 3 settimane per audit completo
@@ -249,3 +270,8 @@ Ogni modulo deve avere:
 =======
 **Timeline**: 3 settimane per audit completo
 >>>>>>> .merge_file_V35CaL
+=======
+=======
+**Timeline**: 3 settimane per audit completo
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

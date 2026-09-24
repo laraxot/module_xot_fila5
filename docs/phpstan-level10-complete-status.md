@@ -91,10 +91,14 @@ Moduli che richiedono questa configurazione:
 ## 📖 Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Audit Completo](../../../docs/phpstan-audit-complete-2026-01.md)
 =======
 - [PHPStan Audit Completo](../../../../docs/phpstan-audit-complete-2026-01.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [PHPStan Audit Completo](../../../docs/phpstan-audit-complete-2026-01.md)
+>>>>>>> da9ae01a0 (.)
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Model Casting Rules](./model-casting-rules.md)
 - [Property Exists vs Isset](./phpstan-code-quality-guide.md#5-property-access-su-mixed-eloquent---regola-critica)
@@ -113,7 +117,11 @@ Moduli che richiedono questa configurazione:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2026*
 =======
 *Ultimo aggiornamento: gennaio 2026*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: gennaio 2026*
+>>>>>>> da9ae01a0 (.)

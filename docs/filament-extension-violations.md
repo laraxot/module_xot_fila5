@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Date**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Date**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IDe3kW
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: In Progress - Remediation Required
 
 ## Overview
@@ -127,10 +133,12 @@ According to the Filament Class Extension Rules:
 **Last Updated**: 2025-12-18
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated**: 2025-12-18
 =======
 **Last Updated**: 2025-12-18
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Last Updated**: 2025-12-18
@@ -138,3 +146,8 @@ According to the Filament Class Extension Rules:
 =======
 **Last Updated**: 2025-12-18
 >>>>>>> .merge_file_IDe3kW
+=======
+=======
+**Last Updated**: 2025-12-18
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

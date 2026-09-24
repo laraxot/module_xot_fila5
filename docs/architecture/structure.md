@@ -298,10 +298,12 @@ Modules\\Xot\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_xot_fila3
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_xot_fila3
 =======
 - **Pacchetto Composer**: laraxot/module_xot_fila5
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Pacchetto Composer**: laraxot/module_xot_fila5
@@ -309,6 +311,11 @@ Modules\\Xot\\Database\\Seeders
 =======
 - **Pacchetto Composer**: laraxot/module_xot_fila3
 >>>>>>> .merge_file_WBw9nb
+=======
+=======
+- **Pacchetto Composer**: laraxot/module_xot_fila5
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 marco sottana
 - **Dipendenze**: php ^8.2 calebporzio/sushi ^2.5 coolsam/panel-modules * doctrine/dbal * fidum/laravel-eloquent-morph-to-one * filament/filament ^3.3 filament/spatie-laravel-media-library-plugin ^3.2 filament/spatie-laravel-translatable-plugin ^3.2 aaronfrancis/fast-paginate * guzzlehttp/guzzle * laravel/folio ^1.1 laravel/framework * laravel/pennant ^1.11 laravel/pulse ^1.2 livewire/livewire * maatwebsite/excel ^3.1 nwidart/laravel-modules * predis/predis ^2.2 spatie/cpu-load-health-check ^1.0 spatie/laravel-data ^4.7
 - **Totale file PHP**: 968
@@ -868,10 +875,12 @@ lang/ka
 lang/lang
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 lang/lang
 =======
 lang/<locale>
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 lang/<locale>
@@ -879,6 +888,11 @@ lang/<locale>
 =======
 lang/lang
 >>>>>>> .merge_file_WBw9nb
+=======
+=======
+lang/<locale>
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 lang/lang/ar
 lang/lang/da
 lang/lang/de
@@ -1065,11 +1079,17 @@ tests_old
 <<<<<<< .merge_file_DUsRtu
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [structure.md](../../../gdpr/project_docs/structure.md)
 * [structure.md](../../../notify/project_docs/structure.md)
 * [structure.md](../../../xot/project_docs/structure.md)
@@ -1087,11 +1107,16 @@ tests_old
 * [structure.md](../../../cms/project_docs/components/structure.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_WBw9nb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [structure.md](../../../Gdpr/project_docs/structure.md)
 * [structure.md](../../../Notify/project_docs/structure.md)
 * [structure.md](../../../Xot/project_docs/structure.md)
@@ -1133,10 +1158,12 @@ b6f667c (.)
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 =======
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
@@ -1144,3 +1171,8 @@ Vedi anche la documentazione specifica del modulo per dettagli e casi particolar
 =======
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> .merge_file_WBw9nb
+=======
+=======
+Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

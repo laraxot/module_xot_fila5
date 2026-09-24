@@ -20,7 +20,11 @@ use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Actions\ModelClass\UpdateCountAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -42,6 +46,17 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseListRecords extends FilamentListRecords
 {
+=======
+ * @property ?string         $model
+ * @property ?string         $resource
+ * @property ?string         $slug
+ * @property TableLayoutEnum $layoutView
+ */
+abstract class XotBaseListRecords extends FilamentListRecords
+{
+    use HasXotTable;
+
+>>>>>>> 930f8146 (Check & fix styling)
     /**
 <<<<<<< .merge_file_22SpzE
      * <<<<<<< HEAD.
@@ -112,7 +127,11 @@ abstract class XotBaseListRecords extends FilamentListRecords
     protected function getDefaultSort(): array
     {
         return ['id' => 'desc'];
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -159,6 +178,10 @@ abstract class XotBaseListRecords extends FilamentListRecords
         app(UpdateCountAction::class)->execute($modelClass, $count);
 
         return $paginator;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

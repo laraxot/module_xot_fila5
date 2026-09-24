@@ -9,12 +9,22 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+
+use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
+use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+use Modules\Xot\Models\XotBaseModel;
+use PHPUnit\Framework\Assert;
+
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> 930f8146 (Check & fix styling)
 
 test('safe object cast action works', function (): void {
     $action = app(SafeObjectCastAction::class);
     $obj = new class
     {
         public string $str = 'test';
+<<<<<<< HEAD
 
         public int $int = 123;
 
@@ -31,6 +41,7 @@ test('safe object cast action works', function (): void {
 
         public function testMethod(string $p): string
 =======
+<<<<<<< HEAD
 
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
@@ -43,6 +54,8 @@ test('safe object cast action works', function (): void {
     $action = app(SafeObjectCastAction::class);
     $obj = new class {
         public string $str = 'test';
+=======
+>>>>>>> da9ae01a0 (.)
         public int $int = 123;
         public float $float = 12.3;
         public bool $bool = true;
@@ -52,7 +65,11 @@ test('safe object cast action works', function (): void {
         public string $empty_str = '';
 
         public function testMethod(mixed $p): mixed
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         {
             return $p;
         }
@@ -84,7 +101,11 @@ test('safe object cast action works', function (): void {
         return $v > 200;
     }, 0));
     Assert::assertSame(123, $action->getValidatedProperty($obj, 'int', 'int', function (mixed $v): bool {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return $v > 100;
     }));
     Assert::assertTrue($action->hasMethod($obj, 'testMethod'));
@@ -138,9 +159,18 @@ test('safe eloquent cast action works', function (): void {
         return $v > 100;
     }));
     Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (int $v): bool {
+<<<<<<< HEAD
         return $v === 123;
 <<<<<<< .merge_file_uJQxGb
 =======
+=======
+=======
+    Assert::assertSame(123, $action->getValidatedAttribute($model, 'int', 'int', function (mixed $v): bool {
+        return $v > 100;
+    }));
+    Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (mixed $v): bool {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return 123 === $v;
 >>>>>>> laraxot/dev
 =======

@@ -36,16 +36,24 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Database Guidelines](../database-guidelines.md)
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [Database Guidelines](../database-guidelines.md)
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9a4Mcz
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

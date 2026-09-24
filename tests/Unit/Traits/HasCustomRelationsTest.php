@@ -11,6 +11,15 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Relations\CustomRelation;
+use Modules\Xot\Traits\HasCustomRelations;
+use PHPUnit\Framework\Assert;
+
+>>>>>>> 930f8146 (Check & fix styling)
 it('creates custom relation', function (): void {
     $relatedModel = new class extends Model
     {
@@ -60,7 +69,11 @@ it('creates custom relation', function (): void {
     $baseConstraints = fn ($relation) => null;
     $eagerConstraints = fn ($relation, $models) => null;
     $eagerMatcher = fn ($models, $results, $relation) => [];
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     $relation = $parentModel->customRelation(
         get_class($relatedModel),

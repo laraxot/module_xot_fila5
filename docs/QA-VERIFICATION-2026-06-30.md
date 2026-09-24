@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_DzrdbL
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_y7tsUb
+=======
+>>>>>>> da9ae01a0 (.)
 title: "Qa Verification"
 type: concept
 status: deprecated
@@ -26,8 +29,12 @@ Vedi il file canonico: [QA-VERIFICATION.md](./qa-verification.md)
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: QA Verification Report - 2026-06-30
 date: 2026-06-30
 scope: Capitalized folders refactor + Critical bug discovery
@@ -192,8 +199,13 @@ Read `ERROR-ANALYSIS-HELPERS-CAPITALIZATION.md` and `ERROR-ANALYSIS-FOLDER-RENAM
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_y7tsUb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

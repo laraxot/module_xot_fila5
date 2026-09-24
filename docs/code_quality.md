@@ -61,11 +61,14 @@ This document outlines the best practices for maintaining high code quality with
 <<<<<<< .merge_file_LJoxDr
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_n0Aa0Q
+=======
+>>>>>>> da9ae01a0 (.)
 - [PHP Strict Types](php-strict-types.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
@@ -75,8 +78,12 @@ This document outlines the best practices for maintaining high code quality with
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHP Strict Types](./PHP-STRICT-TYPES.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
@@ -84,8 +91,13 @@ This document outlines the best practices for maintaining high code quality with
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_n0Aa0Q
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

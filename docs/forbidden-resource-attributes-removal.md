@@ -7,15 +7,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-[DATE].md`)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-[DATE].md`)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_yFIDtp
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -194,11 +200,13 @@ return [
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 
 **Report Completo**: Vedi `forbidden-resource-attributes-verification-[DATE].md`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -207,3 +215,7 @@ return [
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_yFIDtp
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

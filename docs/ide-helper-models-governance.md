@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_nU8JNn
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_pykrbM
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: IDE Helper Models Governance
 type: reference
@@ -69,8 +72,12 @@ Se `0`: **non** lanciare write; **non** migrate distruttivo. Handoff al owner.
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # IDE Helper Models Governance
 
 ## Regola locale
@@ -108,8 +115,13 @@ Per relazioni audit/profile come `creator`, `updater`, `deleter`, il PHPDoc corr
 non un model concreto `Modules\*\Models\Profile`.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_pykrbM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

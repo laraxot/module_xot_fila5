@@ -815,10 +815,12 @@ else {
 - [../../../docs/quality/](../../../docs/quality/) - Root quality docs
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [../../../docs/quality/](../../../docs/quality/) - Root quality docs
 =======
 - [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
@@ -826,6 +828,11 @@ else {
 =======
 - [../../../docs/quality/](../../../docs/quality/) - Root quality docs
 >>>>>>> .merge_file_zRA1Rm
+=======
+=======
+- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -861,10 +868,12 @@ else {
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
 =======
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
@@ -872,3 +881,8 @@ else {
 =======
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
 >>>>>>> .merge_file_zRA1Rm
+=======
+=======
+**Ora posso procedere con l'eliminazione sistematica! ⚔️**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

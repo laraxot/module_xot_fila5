@@ -828,6 +828,7 @@ class XotPerformanceMonitor
 - [Performance Best Practices](../../../project_docs/performance-best-practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
 - [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
 - [Performance Best Practices](../../../project_docs/performance-best-practices.md)
@@ -836,6 +837,7 @@ class XotPerformanceMonitor
 - [SOLID Principles in PHP](../../../../docs/project/solid-principles.md)
 - [Performance Best Practices](../../../../docs/project/performance-best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [PHPStan Level 10 Guidelines](../../../../docs/project/phpstan-level-10.md)
@@ -843,10 +845,16 @@ class XotPerformanceMonitor
 - [Performance Best Practices](../../../../docs/project/performance-best-practices.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 - [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
 - [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
 - [Performance Best Practices](../../../project_docs/performance-best-practices.md)
+<<<<<<< HEAD
 >>>>>>> .merge_file_G5pHyT
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -858,10 +866,12 @@ class XotPerformanceMonitor
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
 =======
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
@@ -869,3 +879,8 @@ class XotPerformanceMonitor
 =======
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
 >>>>>>> .merge_file_G5pHyT
+=======
+=======
+*Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -120,8 +120,13 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 
 ## Collegamenti ad Altri Documenti
 
+<<<<<<< HEAD
 - [DIRECTORY-STRUCTURE-GUIDE.md](./directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](./module-structure.md) - Struttura standard dei moduli
+=======
+- [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
+- [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
+>>>>>>> 930f8146 (Check & fix styling)
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -130,6 +135,7 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [README.md](./readme.md) - Indice principale della documentazione
 - [MODULE_STRUCTURE.md](./module_structure.md) - Struttura standard dei moduli
 - [NAMESPACE-RULES.md](./namespace-rules.md) - Regole per i namespace nei moduli
@@ -144,6 +150,7 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 =======
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
@@ -151,3 +158,12 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 =======
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
 >>>>>>> .merge_file_U7X495
+=======
+=======
+- [README.md](./README.md) - Indice principale della documentazione
+- [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
+- [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+- [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
+- [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -197,11 +197,14 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 <<<<<<< .merge_file_wgXVZj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Y4tGwk
+=======
+>>>>>>> da9ae01a0 (.)
 - [Qualità del codice](code_quality.md)
 - [Tipi rigorosi PHP](php-strict-types.md)
 - [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
@@ -218,6 +221,8 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](./service-provider-best-practices.md)
 - [Best practice per Filament](./filament-best-practices.md)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 - [Qualità del codice](./CODE_QUALITY.md)
 - [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
 - [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
@@ -225,11 +230,16 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Y4tGwk
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -379,10 +389,12 @@ Descrizione dettagliata se necessaria
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 =======
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
@@ -390,3 +402,8 @@ Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 =======
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 >>>>>>> .merge_file_Y4tGwk
+=======
+=======
+Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

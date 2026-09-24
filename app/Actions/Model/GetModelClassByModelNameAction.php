@@ -1,6 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+/**
+ * @see https://github.com/protonemedia/laravel-ffmpeg
+ */
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 declare(strict_types=1);
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg

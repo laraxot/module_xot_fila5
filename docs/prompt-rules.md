@@ -37,15 +37,21 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 La documentazione dei componenti UI deve essere sempre inserita nella cartella `docs` del modulo `UI`. Vedi [ui-link.md](../ui/project_docs/readme.md) per i dettagli.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 La documentazione dei componenti UI deve essere sempre inserita nella cartella `docs` del modulo `UI`. Vedi [ui-link.md](../ui/project_docs/readme.md) per i dettagli.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lt5t9P
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Collegamenti Bidirezionali
 - [Documentazione Generale](./documentation.md)
@@ -57,9 +63,13 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_lt5t9P
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Collegamenti alla Root](../../../project_docs/prompts.md)
 
 ## Collegamenti tra versioni di PROMPT_RULES.md
@@ -68,7 +78,10 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 
 ## Collegamenti tra versioni di prompt_rules.md
 * [prompt_rules.md](rules/prompt_rules.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_6NkSKy
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -86,9 +99,14 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 <<<<<<< HEAD
 * [prompt_rules.md](rules/prompt_rules.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [prompt_rules.md](rules/prompt_rules.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lt5t9P
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

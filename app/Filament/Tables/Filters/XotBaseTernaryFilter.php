@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Tables\Filters;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_eze6TV
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,12 @@ namespace Modules\Xot\Filament\Tables\Filters;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_7rPOI3
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_zj90Sv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
@@ -53,25 +60,38 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  * è al momento disattivata: vedi il blocco commentato in setUp(). Le query boolean del
  * parent restano invariate.
 >>>>>>> .merge_file_UIWvtc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
  * Ternary 
 >>>>>>> .merge_file_7rPOI3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 <<<<<<< .merge_file_eze6TV
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_zj90Sv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
         /*
         $this->schema(function (): array {
             return [
                 ToggleButtons::make('value')
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zj90Sv
 <<<<<<< HEAD
@@ -96,11 +116,16 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
             return [
                 \Filament\Forms\Components\ToggleButtons::make('value')
 >>>>>>> .merge_file_UIWvtc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_7rPOI3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -111,6 +136,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         1 => 'success',
                         0 => 'danger',
                     ])
+<<<<<<< HEAD
 <<<<<<< .merge_file_eze6TV
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -122,6 +148,12 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 <<<<<<< .merge_file_zj90Sv
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_zj90Sv
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
@@ -139,6 +171,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         });
         */
 >>>>>>> .merge_file_UIWvtc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -148,5 +181,9 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         });
         */
 >>>>>>> .merge_file_7rPOI3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }

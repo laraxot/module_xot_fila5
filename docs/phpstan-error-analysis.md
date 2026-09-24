@@ -78,7 +78,11 @@ return $assoc;
 ## 📝 Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Le correzioni mantengono la logica esistente ma aggiungono type guards e type assertions esplicite che permettono a PHPStan di inferire correttamente i tipi. Il codice è più type-safe e PHPStan-compliant.
 =======
 Le correzioni mantengono la logica esistente ma aggiungono type guards e type assertions esplicite che permettono a PHPStan di inferire correttamente i tipi. Il codice è più type-safe e PHPStan-compliant.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Le correzioni mantengono la logica esistente ma aggiungono type guards e type assertions esplicite che permettono a PHPStan di inferire correttamente i tipi. Il codice è più type-safe e PHPStan-compliant.
+>>>>>>> da9ae01a0 (.)

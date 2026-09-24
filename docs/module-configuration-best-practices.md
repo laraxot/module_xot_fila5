@@ -249,12 +249,14 @@ Before committing a config file, verify:
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Configuration Standards Version: 2.0*
 
 =======
 *
 *Configuration Standards Version: 2.0*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *
@@ -264,3 +266,9 @@ Before committing a config file, verify:
 *Configuration Standards Version: 2.0*
 
 >>>>>>> .merge_file_Y3Buiu
+=======
+=======
+*Configuration Standards Version: 2.0*
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -11,7 +11,11 @@ use Illuminate\Translation\PotentiallyTranslatedString;
 =======
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\preg_replace;
 
@@ -45,7 +49,11 @@ class DateTimeRule implements Rule
      * @param string $attribute The attribute name being validated
      * @param mixed  $value     The value being validated
      */
+<<<<<<< HEAD
     public function passes($attribute, $value): bool
+=======
+    public function passes(mixed $attribute, mixed $value): bool
+>>>>>>> da9ae01a0 (.)
     {
         // dddx($attribute); //published_at
         // dddx($value); //10/10/2019 13:43
@@ -53,7 +61,11 @@ class DateTimeRule implements Rule
 
         if (! is_string($value)) {
             return false;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         }
 
         $format = 'd/m/Y H:i';
@@ -74,7 +86,11 @@ class DateTimeRule implements Rule
          */
 
         return true;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function message(): string

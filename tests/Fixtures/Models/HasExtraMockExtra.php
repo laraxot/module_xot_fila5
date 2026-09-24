@@ -22,11 +22,17 @@ class HasExtraMockExtra extends Model implements ExtraContract
     protected $fillable = ['extra_attributes'];
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_nm05Pu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_eWqfDm
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -43,11 +49,16 @@ class HasExtraMockExtra extends Model implements ExtraContract
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_EDcINl
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @param array<string, mixed> $attributes
      */
     public static function withAttributes(array $attributes): self
@@ -59,10 +70,15 @@ class HasExtraMockExtra extends Model implements ExtraContract
 =======
 >>>>>>> .merge_file_EDcINl
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Rph95X
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $extra->extra_attributes = collect($attributes);
 
         return $extra;

@@ -143,6 +143,7 @@ return [
 <<<<<<< .merge_file_DJfuRf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -154,11 +155,16 @@ return [
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cFOkPR
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/project_docs/errori_comuni_traduzione.md)
 - [Convenzioni di documentazione](/laravel/Modules/Xot/project_docs/documentation_conventions.md)
 - [Documentazione principale sulle traduzioni](/project_docs/translation_rules.md)
@@ -169,10 +175,12 @@ return [
 *Ultimo aggiornamento: 3 Giugno 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
@@ -180,3 +188,8 @@ return [
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> .merge_file_cFOkPR
+=======
+=======
+*Ultimo aggiornamento: 3 Giugno 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

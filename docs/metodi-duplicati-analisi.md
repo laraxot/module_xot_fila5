@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
@@ -1082,6 +1083,8 @@ public function getTableFilters(): array
 <<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_TUJTQH
 <<<<<<< HEAD
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
@@ -4374,6 +4377,8 @@ _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -5449,6 +5454,7 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_TUJTQH
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
@@ -5459,9 +5465,15 @@ _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> .merge_file_1oX7DR
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_OOY5pG
+=======
+=======
+**Domande?** Chiedi alla Super Mucca! 🐄⚡
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

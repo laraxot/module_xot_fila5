@@ -256,11 +256,15 @@ php artisan test --filter=[NomeModulo]
 
 ## Changelog
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_bgxEZb
 <<<<<<< HEAD
 <<<<<<< HEAD
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mdDLJS
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
 =======
@@ -270,6 +274,7 @@ Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti
 Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZmCxQh
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti.
@@ -277,6 +282,11 @@ Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti
 =======
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
 >>>>>>> .merge_file_jPh2Qv
+=======
+=======
+Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Licenza
 

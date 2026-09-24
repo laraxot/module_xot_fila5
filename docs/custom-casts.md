@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_I3XCCy
 <<<<<<< HEAD
 =======
@@ -36,11 +39,16 @@ note: "Convertito da custom_casts.txt (documento) da convert-docs-txt-to-md.py."
 >>>>>>> .merge_file_ZpaCMd
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_C4iIKV
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 php artisan make:cast Address
 
@@ -52,10 +60,13 @@ https://dev.to/slyfirefox/laravel-models-3-common-custom-cast-examples-2com
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_I3XCCy
 <<<<<<< HEAD
 =======
@@ -72,19 +83,27 @@ https://dev.to/slyfirefox/laravel-models-3-common-custom-cast-examples-2com
 
 
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_C4iIKV
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 DB::table(‘orders’)
     ->where(‘address->postalCode’, ‘30582–0378’)
     ->get();
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_u3RtIZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_I3XCCy
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +122,7 @@ $table->json('address')->nullable();
 
 $table->json('address')->nullable();
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -112,3 +132,9 @@ $table->json('address')->nullable();
 
 $table->json('address')->nullable();
 >>>>>>> .merge_file_C4iIKV
+=======
+=======
+
+$table->json('address')->nullable();
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -389,10 +389,12 @@ cd laravel
 **Status**: ✅ Documentazione Completa
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Documentazione Completa
 =======
 **Status**: ✅ Documentazione Completa
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: ✅ Documentazione Completa
@@ -400,3 +402,8 @@ cd laravel
 =======
 **Status**: ✅ Documentazione Completa
 >>>>>>> .merge_file_Bc4zZV
+=======
+=======
+**Status**: ✅ Documentazione Completa
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

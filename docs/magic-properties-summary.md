@@ -16,10 +16,14 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 ### ✅ Xot Module
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_oMDLLC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_fS5TvL
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -37,6 +41,7 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 =======
 ### ✅ <nome progetto> Module
 >>>>>>> .merge_file_Mbrif3
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### ✅ <nome progetto> Module
@@ -44,6 +49,11 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 =======
 ### ✅ <nome progetto> Module
 >>>>>>> .merge_file_hYDGLL
+=======
+=======
+### ✅ <nome progetto> Module
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module
@@ -88,10 +98,14 @@ Files generally have good scores with minor style issues:
 
 **✅ COMPLETED**: All `property_exists()` usage in Eloquent models has been eliminated and replaced with proper magic property checks.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_oMDLLC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_fS5TvL
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -108,6 +122,7 @@ Files generally have good scores with minor style issues:
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> .merge_file_Mbrif3
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
@@ -115,3 +130,8 @@ Files generally have good scores with minor style issues:
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> .merge_file_hYDGLL
+=======
+=======
+**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -1,10 +1,38 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+// Xot Blade view — see Modules/Xot/docs/wiki.
+// Xot Blade view — see Modules/Xot/docs/wiki.
+// Xot Blade view — see Modules/Xot/docs/wiki.
+// Xot Blade view — see Modules/Xot/docs/wiki.
+// Xot Blade view — see Modules/Xot/docs/wiki.
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
+<?php
+
+declare(strict_types=1);
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ?>
 <div>
     <div class="row justify-content-between">

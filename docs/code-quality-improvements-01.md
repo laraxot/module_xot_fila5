@@ -94,6 +94,7 @@ use TransTrait {
 - [Best Practices](./best-practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Code Quality Rules](./code-quality.md)
 - [Best Practices](./best-practices.md)
 =======
@@ -101,6 +102,7 @@ use TransTrait {
 - [Code Quality Rules](./code-quality.md)
 - [Best Practices](./best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [README Modulo Xot](./readme.md)
@@ -111,3 +113,9 @@ use TransTrait {
 - [Code Quality Rules](./code-quality.md)
 - [Best Practices](./best-practices.md)
 >>>>>>> .merge_file_av7hjU
+=======
+=======
+- [Code Quality Rules](./code-quality.md)
+- [Best Practices](./best-practices.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

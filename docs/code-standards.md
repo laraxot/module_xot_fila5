@@ -234,10 +234,12 @@ public function getTableActions(): array
 - [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
 =======
 - [Standard di Codice nel Progetto](../../../../../docs/standard-codice.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Standard di Codice nel Progetto](../../../../../docs/standard-codice.md)
@@ -245,3 +247,8 @@ public function getTableActions(): array
 =======
 - [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
 >>>>>>> .merge_file_wjAY9p
+=======
+=======
+- [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

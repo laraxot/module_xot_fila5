@@ -84,6 +84,7 @@
 - [Convenzioni di Codice](./coding-standards.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)
 =======
@@ -91,6 +92,7 @@
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Modelli Patient](../patient/docs/models.md)
@@ -101,3 +103,9 @@
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> .merge_file_n1uRVj
+=======
+=======
+- [Best Practices Modelli](./models.md)
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

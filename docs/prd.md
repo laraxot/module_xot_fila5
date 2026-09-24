@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hKc5Vz
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_hKc5Vz
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # PRD: Xot Core Framework
 
 ## 📋 Overview
@@ -39,8 +46,11 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 - Domain-specific logic (HR, Finance, etc.).
 - Direct UI components (handled by the UI module).
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> laraxot/dev
@@ -513,8 +523,13 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 - Direct UI components (handled by the UI module).
 >>>>>>> .merge_file_bsTbqy
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Avuum7
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

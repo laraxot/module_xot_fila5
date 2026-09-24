@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 # Guida all'Utilizzo di PHPStan nel Framework Laraxot <nome progetto>
 
 ## Introduzione
@@ -238,6 +241,7 @@ cd /percorso/al/progetto/laravel
 # Analisi con output dettagliato
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9 --verbose
 ```
+<<<<<<< HEAD
 =======
 ---
 module: theme
@@ -247,3 +251,5 @@ canonical: ../../../Themes/docs/shared-components/phpstan-usage-guide-1.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-usage-guide-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

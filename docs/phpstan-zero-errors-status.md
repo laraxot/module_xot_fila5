@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan zero — puntatore (non più inventario)
 
 Questo file **non** è più lo stato vivo. L'inventario «1891 errori / 17 moduli»
@@ -12,6 +13,8 @@ SSoT corrente:
 
 Misura 2026-09-21: `phpstan analyse` (senza path CLI) → **0**, `totals.file_errors: 0`, exit 0.
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan level-max: percorso verso zero errori su tutto Modules/
 
 Stato reale al 2026-07-03, misurato con:
@@ -82,4 +85,7 @@ php -l <file>
 ```
 
 php-md non e' installato in vendor/bin nonostante `phpmd.xml` esista — non e' un gate disponibile finche' non viene aggiunto a composer.json (richiede approvazione utente per nuova dipendenza). phpinsights e' disponibile (`vendor/bin/phpinsights`).
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

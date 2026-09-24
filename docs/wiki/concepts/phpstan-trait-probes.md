@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_fqrHji
+=======
+>>>>>>> da9ae01a0 (.)
 title: "PHPStan trait probes — perché sono vietati"
 type: concept
 module: Xot
@@ -171,14 +174,22 @@ trait HasExample
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: "PHPStan trait probes"
 type: concept
 module: Xot
 tags: [phpstan, trait, probe, xot, second-brain]
 created: 2026-06-30
+<<<<<<< HEAD
 updated: 2026-07-13
+=======
+updated: 2026-06-30
+>>>>>>> 930f8146 (Check & fix styling)
 qmd: "phpstan trait probe unused trait xotPhpstanTraitProbeClasses Helper scanFiles"
 related:
   - ./phpstan-fixes-log.md
@@ -231,6 +242,7 @@ function xotPhpstanTraitProbeClasses(): array
 | Trait su modello produzione causa fatal/collision | **Non** wire su modello — solo probe |
 | Trait già su modello base (es. `RelationX`) | Nessun probe |
 
+<<<<<<< HEAD
 ## Attributi Eloquent nei trait riusabili
 
 Un trait non deve presumere che ogni host dichiari in PHPDoc le sue proprietà
@@ -245,6 +257,8 @@ $publishedAt = $this->getAttribute('published_at');
 return $publishedAt instanceof Carbon && $publishedAt->isPast();
 ```
 
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 ## Anti-pattern (revertiti in sessione 2026-06)
 
 - `HasCommonScopes` su `XotBaseModel` → conflitto con scope Blog
@@ -253,11 +267,16 @@ return $publishedAt instanceof Carbon && $publishedAt->isPast();
 - Probe Notify notification traits (`HasTenantNotifications`, …) → `$tenant_id` / contesto tenant mancante; usare `@phpstan-ignore trait.unused`
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_fqrHji
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Guard script
 
@@ -272,11 +291,13 @@ Archivia in-place (`.bak`) probe invalidi noti. Non sostituisce l'audit manuale:
 la lista al suo interno è storica, non esaustiva.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Archivia in-place (`.bak`) probe invalidi noti. Non sostituisce l'audit manuale:
 la lista al suo interno è storica, non esaustiva.
 =======
 Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
@@ -285,6 +306,11 @@ Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
 Archivia in-place (`.bak`) probe invalidi noti. Non sostituisce l'audit manuale:
 la lista al suo interno è storica, non esaustiva.
 >>>>>>> .merge_file_fqrHji
+=======
+=======
+Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Verifica
 
@@ -292,11 +318,14 @@ la lista al suo interno è storica, non esaustiva.
 <<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_fqrHji
+=======
+>>>>>>> da9ae01a0 (.)
 # Audit: non deve restituire nulla
 grep -rl "PhpstanProbeModel\|PhpstanTraitProbe" laravel/Modules laravel/Themes --include="*.php"
 find laravel/Modules laravel/Themes -type d -iname "Phpstan"
@@ -322,19 +351,28 @@ return $publishedAt instanceof Carbon && $publishedAt->isPast();
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 cd laravel
 ./vendor/bin/phpstan clear-result-cache
 ./vendor/bin/phpstan analyse Modules --no-progress
 # atteso: [OK] No errors (app + database + tests, 2026-06-30)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_fqrHji
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Fix correlati (2026-06-30)
@@ -351,11 +389,14 @@ cd laravel
 <<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_fqrHji
+=======
+>>>>>>> da9ae01a0 (.)
 - [Regola: no-phpstan-probe-models](../../../../../../bashscripts/ai/wiki/rules/no-phpstan-probe-models.md)
 - [phpstan-fixes-log](./phpstan-fixes-log.md)
 - [phpstan-remediation-swarm](../memories/phpstan-remediation-swarm.md)
@@ -369,11 +410,18 @@ cd laravel
 - [phpstan-remediation-swarm](../memories/phpstan-remediation-swarm.md)
 - [User trait alias conflict](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [phpstan-fixes-log](./phpstan-fixes-log.md)
 - [phpstan-remediation-swarm](../memories/phpstan-remediation-swarm.md)
 - [User trait alias conflict](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_fqrHji
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

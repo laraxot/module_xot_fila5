@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
@@ -37,11 +41,16 @@ use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Webmozart\Assert\Assert;
 
 class ExportPdfAction extends Action
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 <<<<<<< .merge_file_GdoUvZ
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +61,9 @@ class ExportPdfAction extends Action
 =======
 =======
 >>>>>>> .merge_file_3KeofS
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
         $this
             ->label('')
             ->iconButton()
@@ -71,16 +83,23 @@ class ExportPdfAction extends Action
 
                 return (string) __('xot::export_pdf.tooltip');
             })
+<<<<<<< HEAD
 <<<<<<< .merge_file_GdoUvZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
         $this->translateLabel()
             ->label('')
             ->tooltip(__('xot::actions.export_pdf.tooltip'))
             ->icon('ui-files.pdf')
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3KeofS
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->action(static function (ListRecords $livewire) {
                 $filename =
                     class_basename($livewire).

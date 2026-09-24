@@ -2,7 +2,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_LmHx8n
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -48,14 +51,21 @@ https://github.com/larastan/larastan/issues/515
 /**
 >>>>>>> .merge_file_OpyDQV
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 //https://github.com/larastan/larastan/issues/515
 
 /**
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KEISep
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @extends JsonResource<\App\User>
 */
 class UserResource extends JsonResource
@@ -77,12 +87,19 @@ class UserResource extends JsonResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_LmHx8n
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_LmHx8n
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  //return $this->pivot->time_to_live;  // This is the line 45
 
 getRelationValue("pivot")
@@ -177,9 +194,15 @@ getModel - Builder
 paginate - Builder
 >>>>>>> .merge_file_OpyDQV
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 paginate - Builder
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KEISep
+=======
+=======
+paginate - Builder
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

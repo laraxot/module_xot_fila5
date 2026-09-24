@@ -135,6 +135,7 @@ php artisan lang:check
 <<<<<<< .merge_file_hq9fJI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 =======
@@ -155,6 +156,7 @@ php artisan lang:check
 >>>>>>> 64619e34 (.)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -162,6 +164,11 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 >>>>>>> .merge_file_H8kscO
+=======
+=======
+- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Best Practices Applicate
 

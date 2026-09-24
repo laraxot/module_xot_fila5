@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_WIADpN
 <<<<<<< HEAD
 =======
@@ -35,11 +38,16 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 >>>>>>> .merge_file_kVdc4x
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_GiurRH
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -76,9 +84,12 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
     }
 =======
     }
@@ -88,6 +99,7 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 =======
     }
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     }
@@ -95,3 +107,8 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 =======
     }
 >>>>>>> .merge_file_GiurRH
+=======
+=======
+    }
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

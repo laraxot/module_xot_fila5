@@ -2,7 +2,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_haZ5Or
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -52,12 +55,19 @@ https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46
 //-------------------------------------------------------------
 >>>>>>> .merge_file_jHdQO9
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 //-----------------------------------------------------------
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_RDTXrO
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -44,16 +44,24 @@ php artisan xot:generate-db-documentation {schema_file} {output_dir?}
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Database Guidelines](../database-guidelines.md)
 - [Documentation Guidelines](../documentation-guidelines.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [Database Guidelines](../database-guidelines.md)
 - [Documentation Guidelines](../documentation-guidelines.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_nv0C29
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_Zh8GGv
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DwPpII
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Quality Tools Status Nov"
 type: concept
@@ -26,8 +29,12 @@ Vedi il file canonico: [quality-tools-status-nov.md](./quality-tools-status-nov.
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Status Quality Tools - Novembre 2025
 
 ## 🎯 Obiettivo
@@ -242,8 +249,13 @@ php -l path/to/modified/file.php
 - Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_DwPpII
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

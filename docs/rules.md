@@ -9,6 +9,7 @@
 <<<<<<< .merge_file_zEaDXR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -56,11 +57,16 @@ class ChatOllamaAction extends QueueableAction {
 - [Azioni Organizzativa (Performance)](../../performance/docs/azioni_organizzativa.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_CshDA0
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Regole sui Model
 - Nei moduli, i model devono **sempre** estendere `BaseModel` e **mai** direttamente `Model`.
@@ -96,6 +102,7 @@ class ChatOllamaAction extends QueueableAction {
 <<<<<<< .merge_file_zEaDXR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -108,11 +115,16 @@ class ChatOllamaAction extends QueueableAction {
 - [Performance: pattern e anti-pattern Action Filament](../../performance/docs/organizzativa-migration-errors.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_CshDA0
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Vedi [Performance/docs/organizzativa-migration-errors.md](../../Performance/docs/organizzativa-migration-errors.md) per esempio pratico, motivazione e memoria storica.
 - Queste regole sono obbligatorie per tutti i moduli che implementano action custom Filament.
 
@@ -124,15 +136,21 @@ class ChatOllamaAction extends QueueableAction {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Indice e collegamenti root](../../../../docs/links.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Indice e collegamenti root](../../../../docs/links.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_CshDA0
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Regole sulle colonne delle tabelle Filament
 - Le colonne delle tabelle Filament devono corrispondere esattamente a quelle del modello e della migrazione.
@@ -146,11 +164,13 @@ class ChatOllamaAction extends QueueableAction {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
@@ -159,3 +179,7 @@ class ChatOllamaAction extends QueueableAction {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_CshDA0
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

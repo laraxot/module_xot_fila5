@@ -6,6 +6,7 @@
 =======
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_6UqNqi
 <<<<<<< HEAD
 =======
@@ -17,16 +18,22 @@ canonical: ./README.md
 
 See canonical documentation: [README.md](./README.md)
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 module: theme
 topic: readme
 canonical: ../../../../Themes/docs/shared-components/README-Modules.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,6 +100,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 - Update both module and root documentation
 - Include practical examples in all guides
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 =======
 =======
@@ -106,8 +115,13 @@ canonical: ./README.md
 See canonical documentation: [README.md](./README.md)
 <<<<<<< .merge_file_AVfFw6
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Yq3Fn4
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

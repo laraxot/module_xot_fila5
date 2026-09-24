@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
 <<<<<<< HEAD
     'values' => [
@@ -19,7 +20,16 @@ return [
         ],
     ],
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/pdf_engine_enum.php
+return [
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     'label' => 'Motore PDF',
     'options' => [
         'spipu' => 'Spipu',
@@ -59,7 +69,11 @@ return [
 <<<<<<< HEAD
         'spipu' => ['label' => 'spipu', 'placeholder' => 'spipu', 'helper_text' => 'spipu', 'description' => 'spipu'],
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ],
     'actions' => [
         'create' => [
@@ -75,5 +89,9 @@ return [
 <<<<<<< HEAD
     'test' => 'pdf engine enum',
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ];

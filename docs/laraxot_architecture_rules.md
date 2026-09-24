@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_BDAOjj
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7,6 +8,13 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_i7Kbpa
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: laraxot_architecture_rules
@@ -785,8 +793,13 @@ See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCH
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dGNHiE
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

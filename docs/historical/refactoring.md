@@ -62,11 +62,15 @@ class YourModel extends Model
 ## Collegamenti
 - [Laravel Relationships](https://laravel.com/docs/relationships)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
+<<<<<<< HEAD
 <<<<<<< .merge_file_wzAACx
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Best Practices](best-practices.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_eZwHdw
 - [Best Practices](best-practices.md)
 =======
@@ -76,6 +80,7 @@ class YourModel extends Model
 - [Best Practices](BEST-PRACTICES.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_DASo0P
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best Practices](BEST-PRACTICES.md)
@@ -83,3 +88,8 @@ class YourModel extends Model
 =======
 - [Best Practices](best-practices.md)
 >>>>>>> .merge_file_9I4OSs
+=======
+=======
+- [Best Practices](best-practices.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

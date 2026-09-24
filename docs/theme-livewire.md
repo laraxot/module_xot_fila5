@@ -2,7 +2,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_krh3XC
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -51,11 +54,18 @@ componenti da prendere
 https://github.com/christophrumpel/larastreamers/tree/main/resources/views
 >>>>>>> .merge_file_lHt7I9
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 
 componenti da prendere
 https://github.com/christophrumpel/larastreamers/tree/main/resources/views
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lqXtCD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

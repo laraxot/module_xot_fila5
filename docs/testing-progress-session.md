@@ -1,6 +1,7 @@
 <<<<<<< .merge_file_GQRsR1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -137,11 +138,16 @@ Tutti i test corretti seguono questo principio:
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ukLsYW
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22
@@ -261,6 +267,7 @@ Tutti i test corretti seguono questo principio:
 <<<<<<< .merge_file_GQRsR1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -273,11 +280,16 @@ Tutti i test corretti seguono questo principio:
 - [User Command Integration Fix](../../user/docs/testing-user-command-integration-fix.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ukLsYW
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
@@ -293,10 +305,12 @@ Tutti i test corretti seguono questo principio:
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 =======
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
@@ -304,3 +318,8 @@ Tutti i test corretti seguono questo principio:
 =======
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 >>>>>>> .merge_file_ukLsYW
+=======
+=======
+**Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

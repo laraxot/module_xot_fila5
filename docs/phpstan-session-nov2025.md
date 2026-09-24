@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Session Nov"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-session-nov.md](./phpstan-session-nov.md)
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -146,4 +149,7 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

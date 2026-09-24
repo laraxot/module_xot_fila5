@@ -665,11 +665,15 @@ Located in `bashscripts/`:
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_gIvF8k
 <<<<<<< HEAD
 <<<<<<< HEAD
 See [CHANGELOG.md](changelog.md) for full history.
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_UF4scq
 See [CHANGELOG.md](changelog.md) for full history.
 =======
@@ -679,6 +683,7 @@ See [CHANGELOG.md](changelog.md) for full history.
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GyyFVR
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
@@ -686,6 +691,11 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 =======
 See [CHANGELOG.md](changelog.md) for full history.
 >>>>>>> .merge_file_bOn5D3
+=======
+=======
+See [CHANGELOG.md](changelog.md) for full history.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 

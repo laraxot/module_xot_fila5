@@ -11,19 +11,26 @@ use function Safe\preg_match;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 /**
 <<<<<<< .merge_file_4Ua2FS
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 /**
 =======
 /*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 /*
 >>>>>>> .merge_file_HUDeIn
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 /*
@@ -31,6 +38,10 @@ uses(TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ukqHlb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * Il **codice** dei moduli non nomina il progetto ospite.
  *
  * I moduli vivono in piu' progetti: un nome di progetto nel codice li rende portabili
@@ -63,20 +74,27 @@ test('nessun file php dei moduli nomina un progetto ospite', function (): void {
         $source = file_get_contents($file);
 
         foreach ($forbidden as $name) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_4Ua2FS
 <<<<<<< HEAD
             if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
 =======
             if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
 >>>>>>> .merge_file_HUDeIn
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
@@ -85,6 +103,10 @@ test('nessun file php dei moduli nomina un progetto ospite', function (): void {
 =======
             if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
 >>>>>>> .merge_file_ukqHlb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $offenders[] = str_replace(base_path().'/', '', $file).' → '.$name;
 
                 break;
@@ -107,19 +129,26 @@ test('il nome del file sqlite di test non e cablato', function (): void {
 
         $source = file_get_contents($file);
 
+<<<<<<< HEAD
         if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
 <<<<<<< .merge_file_4Ua2FS
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
 =======
         if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
 >>>>>>> .merge_file_HUDeIn
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
@@ -127,6 +156,10 @@ test('il nome del file sqlite di test non e cablato', function (): void {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ukqHlb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $offenders[] = str_replace(base_path().'/', '', $file);
         }
     }
@@ -157,20 +190,27 @@ function modulePhpFiles(): array
     );
 
     foreach ($iterator as $entry) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_4Ua2FS
 <<<<<<< HEAD
         if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
 =======
         if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
 >>>>>>> .merge_file_HUDeIn
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
@@ -179,6 +219,10 @@ function modulePhpFiles(): array
 =======
         if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
 >>>>>>> .merge_file_ukqHlb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             continue;
         }
 

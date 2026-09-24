@@ -83,9 +83,13 @@ npm run dev
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_o4dUQM
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [getting-started.md](../../../Gdpr/docs/getting-started.md)
 * [getting-started.md](../../../Xot/docs/getting-started.md)
 * [getting-started.md](../../../UI/docs/getting-started.md)
@@ -95,7 +99,10 @@ npm run dev
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_TdwUtG
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -112,9 +119,14 @@ npm run dev
 <<<<<<< HEAD
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o4dUQM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

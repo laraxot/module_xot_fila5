@@ -54,7 +54,11 @@ describe('Add Strict Types Declaration Action', function (): void {
         /** @var TestCase $this */
         $file = $this->workDir.'/test.php';
         Assert::assertIsString($this->workDir);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
 
         app(AddStrictTypesDeclarationAction::class)->execute($file);
@@ -72,7 +76,11 @@ describe('Add Strict Types Declaration Action', function (): void {
         /** @var TestCase $this */
         $file = $this->workDir.'/test.php';
         Assert::assertIsString($this->workDir);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         File::put($file, "<?php\n\n\n\nnamespace Test;");
 
         app(AddStrictTypesDeclarationAction::class)->execute($file);
@@ -90,7 +98,11 @@ describe('Add Strict Types Declaration Action', function (): void {
         /** @var TestCase $this */
         $file = $this->workDir.'/test.php';
         Assert::assertIsString($this->workDir);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         File::put($file, "<?php\n\n\n\nclass TestAction {}");
 
         app(AddStrictTypesDeclarationAction::class)->execute($file);

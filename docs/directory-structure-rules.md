@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_IEfn7i
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto
@@ -111,7 +115,10 @@ Prima di ogni commit, verificare:
 - [Convenzioni Namespace](namespace-rules.md)
 - [Best Practices](best-practices.md)
 - [PHPStan Configuration](phpstan/configuration.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_GfSqpi
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -131,9 +138,14 @@ Le vecchie cartelle duplicate individuate erano `Xot/lang/lang` e `Xot/_docs`.
 <<<<<<< HEAD
 Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IEfn7i
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

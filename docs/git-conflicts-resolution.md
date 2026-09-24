@@ -4,9 +4,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_onZeDm
 <<<<<<< HEAD
 ## Data: [DATE]
@@ -23,10 +26,14 @@
 >>>>>>> laraxot/dev
 =======
 ## Data: [DATE]
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 ## Data: 2025-01-06
 >>>>>>> .merge_file_w1lWmA
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -126,9 +133,12 @@ $res=Locality::query()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_onZeDm
 <<<<<<< HEAD
 ## Data: [DATE]
@@ -145,10 +155,14 @@ $res=Locality::query()
 >>>>>>> laraxot/dev
 =======
 ## Data: [DATE]
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 ## Data: 2025-01-06
 >>>>>>> .merge_file_w1lWmA
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -278,6 +292,7 @@ php artisan lang:check
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_onZeDm
 - [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 =======
@@ -290,9 +305,14 @@ php artisan lang:check
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution-2025-01-06.md)
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -314,6 +334,7 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 =======
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 =======
@@ -327,12 +348,17 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution-2025-01-06.md)
 <<<<<<< .merge_file_ePP7Js
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_w1lWmA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Best Practices Applicate
 
@@ -391,11 +417,14 @@ php artisan lang:check
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_onZeDm
 <<<<<<< HEAD
 =======
@@ -414,9 +443,14 @@ php artisan lang:check
 **Stato**: ✅ Completato
 >>>>>>> .merge_file_XsJlfn
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 
@@ -439,6 +473,7 @@ php artisan lang:check
 =======
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
+<<<<<<< HEAD
 **Stato**: ✅ Completato
 <<<<<<< .merge_file_onZeDm
 =======
@@ -461,6 +496,7 @@ php artisan lang:check
 =======
 >>>>>>> .merge_file_XsJlfn
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -469,3 +505,8 @@ php artisan lang:check
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_w1lWmA
+=======
+=======
+**Stato**: ✅ Completato
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

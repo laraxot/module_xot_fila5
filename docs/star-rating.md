@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GXcGKC
 <<<<<<< HEAD
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
@@ -45,9 +48,15 @@ https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 >>>>>>> .merge_file_1H7KiC
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3rlFZh
+=======
+=======
+https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

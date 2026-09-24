@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_hXWFk9
 <<<<<<< HEAD
 =======
@@ -37,11 +40,16 @@ note: "Convertito da auto_routes.txt (documento) da convert-docs-txt-to-md.py."
 >>>>>>> .merge_file_JbN6D6
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_nVihlo
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /it/tests
 va a prendere il modello "home" e vede se esiste la relazione "tests" se esiste usa quelle, altrimenti
 va a prendere il "singolar" di tests e va nel solito file xra.php
@@ -53,9 +61,12 @@ implica che nel pannello quando si va a prendere "parents" oltre a row, rows ci 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 che corrisponde al nome della relazione o della funzione
 =======
 che corrisponde al nome della relazione o della funzione
@@ -65,6 +76,7 @@ che corrisponde al nome della relazione o della funzione
 =======
 che corrisponde al nome della relazione o della funzione
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 che corrisponde al nome della relazione o della funzione
@@ -72,3 +84,8 @@ che corrisponde al nome della relazione o della funzione
 =======
 che corrisponde al nome della relazione o della funzione
 >>>>>>> .merge_file_nVihlo
+=======
+=======
+che corrisponde al nome della relazione o della funzione
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -91,16 +91,24 @@ $latestStatus = $order->latestStatus();
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Status Management](../features/status-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [Status Management](../features/status-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_oHZoaT
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

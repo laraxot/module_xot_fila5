@@ -21,7 +21,11 @@ class Item extends Component
         /** @var view-string $view */
 =======
         /** @var string $view */
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $view = 'xot::components.dashboard.item';
         /** @var array<string, string> $view_params */
         $view_params = [

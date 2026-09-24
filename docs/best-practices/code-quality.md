@@ -78,12 +78,14 @@ This document outlines the best practices for maintaining high code quality with
 - [Filament Best Practices](filament-best-practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
 =======
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
@@ -93,3 +95,9 @@ This document outlines the best practices for maintaining high code quality with
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
 >>>>>>> .merge_file_3Iebv5
+=======
+=======
+- [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

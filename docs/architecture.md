@@ -101,11 +101,14 @@ abstract class XotBaseResource extends Resource
 <<<<<<< .merge_file_URRxXT
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_EkChVU
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -116,12 +119,18 @@ abstract class XotBaseResource extends Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_EkChVU
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return static::getFormSchemaImplementation();
     }
@@ -162,6 +171,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 <<<<<<< .merge_file_URRxXT
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -188,11 +198,16 @@ Il file `composer.json` del modulo Xot è fondamentale per definire le sue dipen
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_EkChVU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## 🔄 **Flusso di Esecuzione**
 
 ### **1. Bootstrap Applicazione**
@@ -451,15 +466,21 @@ test('all models extend base model', function () {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_EkChVU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
@@ -471,10 +492,12 @@ test('all models extend base model', function () {
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
@@ -482,3 +505,8 @@ test('all models extend base model', function () {
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> .merge_file_EkChVU
+=======
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

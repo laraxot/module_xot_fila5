@@ -168,6 +168,7 @@ Before committing any model:
 **Status**: MANDATORY for all new code
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code
 =======
@@ -175,6 +176,7 @@ Before committing any model:
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -185,3 +187,9 @@ Before committing any model:
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code
 >>>>>>> .merge_file_VXplFY
+=======
+=======
+**Laravel Version**: 11+  
+**Status**: MANDATORY for all new code
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

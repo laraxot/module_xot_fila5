@@ -88,15 +88,21 @@ Esempi chiave (non esaustivi):
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato [DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato [DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Jp8lW2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - `filament/` e `consolidated/` (guide dettagliate)
 
 ## Da migliorare (DRY + KISS)
@@ -111,10 +117,12 @@ Esempi chiave (non esaustivi):
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
 =======
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
@@ -122,3 +130,8 @@ Esempi chiave (non esaustivi):
 =======
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
 >>>>>>> .merge_file_Jp8lW2
+=======
+=======
+- **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

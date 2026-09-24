@@ -122,10 +122,12 @@ public function createUser(array $data): User
 ### Quaeris Module
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Quaeris Module
 =======
 ### healthcare_app Module
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### healthcare_app Module
@@ -133,6 +135,11 @@ public function createUser(array $data): User
 =======
 ### Quaeris Module
 >>>>>>> .merge_file_2NWHgA
+=======
+=======
+### Quaeris Module
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 - Document survey management workflows
 - Document reporting and analytics features
@@ -173,11 +180,13 @@ public function createUser(array $data): User
 **Standard Version**: 1.0
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Standard Version**: 1.0
 =======
 
 **Standard Version**: 1.0
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -186,3 +195,8 @@ public function createUser(array $data): User
 =======
 **Standard Version**: 1.0
 >>>>>>> .merge_file_2NWHgA
+=======
+=======
+**Standard Version**: 1.0
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

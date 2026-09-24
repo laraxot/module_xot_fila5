@@ -1,6 +1,7 @@
 <<<<<<< .merge_file_FaI9Rg
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -378,11 +379,16 @@ BadgeColumn::make('status')
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AJXWzw
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen
 
 ## Core Philosophy (Filosofia)
@@ -533,10 +539,12 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
 =======
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
@@ -544,3 +552,8 @@ This architecture creates a harmonious system where all components work together
 =======
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
 >>>>>>> .merge_file_AJXWzw
+=======
+=======
+This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

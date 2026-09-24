@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_ZspKJj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2lEWV1
+=======
+>>>>>>> da9ae01a0 (.)
 title: "XotBaseSchemaWidget — pattern Filament 5 (codice reale)"
 type: concept
 module: Xot
@@ -53,8 +56,12 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: "XotBaseSchemaWidget — pattern dichiarativo Filament 4"
 type: concept
 tags: [xot, filament, widget, religion-r1, code, architecture, opencode-minimax-m3]
@@ -148,13 +155,19 @@ abstract class XotBaseSchemaWidget extends Widget implements HasSchemas
         return app(GetViewByClassAction::class)->execute(static::class);
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -166,6 +179,8 @@ abstract class XotBaseSchemaWidget extends Widget implements HasSchemas
 ```
 
 >>>>>>> .merge_file_2lEWV1
+=======
+>>>>>>> da9ae01a0 (.)
 ## Religione
 
 | Pezzo | Owner |
@@ -193,8 +208,12 @@ cd laravel && php artisan view:cache
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Simmetria con `XotBaseInfolistWidget`
 
 `XotBaseSchemaWidget` (write) ↔ `XotBaseInfolistWidget` (read) condividono il pattern:
@@ -266,8 +285,13 @@ Vedi discussion #265 per dibattito su:
 *opencode (MiniMax-M3) · 2026-06-05*
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2lEWV1
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

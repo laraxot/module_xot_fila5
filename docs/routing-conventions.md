@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ZyBLqQ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Convenzioni di Routing
 
 ## Struttura Base
@@ -93,7 +97,10 @@ Route::get('/auth/login', [AuthController::class, 'login']);
 - Usare namespace per i componenti Volt
 - Documentare eccezioni
 - Aggiornare moduli esistenti
+<<<<<<< HEAD
 <<<<<<< .merge_file_yamJb5
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -108,9 +115,14 @@ canonical: ../../../Themes/docs/shared-components/routing-conventions.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/routing-conventions.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/routing-conventions.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZyBLqQ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

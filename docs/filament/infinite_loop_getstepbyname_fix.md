@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Km663L
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**
@@ -125,11 +129,19 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**
+<<<<<<< HEAD
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 <<<<<<< .merge_file_9YiKA9
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 7f6cf6be (.)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_fqp7a4
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> da9ae01a0 (.)
 =======
 =======
 >>>>>>> .merge_file_FD8l8q
@@ -140,12 +152,18 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 =======
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Km663L
+=======
+=======
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -168,6 +186,7 @@ Questo fix dimostra l'importanza di:
 <<<<<<< .merge_file_9YiKA9
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -182,9 +201,14 @@ canonical: ../../../../Themes/docs/shared-components/infinite-loop-getstepbyname
 <<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/infinite-loop-getstepbyname-fix.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/infinite-loop-getstepbyname-fix.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Km663L
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

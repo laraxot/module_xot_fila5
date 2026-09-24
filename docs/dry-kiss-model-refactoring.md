@@ -4,6 +4,7 @@
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_t4fuPG
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
 =======
@@ -15,6 +16,7 @@
 >>>>>>> laraxot/dev
 # DRY/KISS Model Refactoring Analysis - [DATE]
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
@@ -23,6 +25,11 @@
 =======
 # DRY/KISS Model Refactoring Analysis - [DATE]
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+# DRY/KISS Model Refactoring Analysis - 2025-10-15
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Executive Summary
 
@@ -32,10 +39,14 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
+<<<<<<< HEAD
 <<<<<<< .merge_file_Qyn7hT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t4fuPG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -53,6 +64,7 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 =======
 - **Moduli interessati**: 4 (Geo, Cms, <nome progetto>, User)
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Moduli interessati**: 4 (Geo, Cms, <nome progetto>, User)
@@ -60,17 +72,26 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 =======
 - **Moduli interessati**: 4 (Geo, Cms, <nome progetto>, User)
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+- **Moduli interessati**: 4 (Geo, Cms, <nome progetto>, User)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
 
 ## Problemi Identificati e Risolti
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Qyn7hT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t4fuPG
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -78,20 +99,29 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### 1. ❌ <nome progetto>\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\<nome progetto>\Models;
+<<<<<<< HEAD
 <<<<<<< .merge_file_Qyn7hT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t4fuPG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -113,11 +143,16 @@ namespace Modules\ModuloEsempio\Models;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -131,10 +166,14 @@ abstract class BaseModel extends Model
 
     public $incrementing = true;
     public $timestamps = true;
+<<<<<<< HEAD
 <<<<<<< .merge_file_Qyn7hT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t4fuPG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -151,6 +190,7 @@ abstract class BaseModel extends Model
 =======
     protected $connection = '<nome progetto>';
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     protected $connection = '<nome progetto>';
@@ -158,6 +198,11 @@ abstract class BaseModel extends Model
 =======
     protected $connection = '<nome progetto>';
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+    protected $connection = '<nome progetto>';
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -171,10 +216,14 @@ abstract class BaseModel extends Model
 
 **Dopo** (✅ DRY & KISS):
 ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_Qyn7hT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t4fuPG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -192,6 +241,7 @@ namespace Modules\<nome progetto>\Models;
 =======
 namespace Modules\<nome progetto>\Models;
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 namespace Modules\<nome progetto>\Models;
@@ -199,6 +249,11 @@ namespace Modules\<nome progetto>\Models;
 =======
 namespace Modules\<nome progetto>\Models;
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+namespace Modules\<nome progetto>\Models;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -208,10 +263,14 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Qyn7hT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t4fuPG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -228,6 +287,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 =======
     protected $connection = '<nome progetto>';
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     protected $connection = '<nome progetto>';
@@ -235,6 +295,11 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 =======
     protected $connection = '<nome progetto>';
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+    protected $connection = '<nome progetto>';
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected $with = ['extra'];
 }
 ```
@@ -519,10 +584,14 @@ BaseModel → BaseModelLang → Post
 
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
+<<<<<<< HEAD
 <<<<<<< .merge_file_Qyn7hT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_t4fuPG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -540,6 +609,7 @@ BaseModel → BaseModelLang → Post
 =======
 | <nome progetto> | BaseModel | 66 | 20 | -70% |
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 | <nome progetto> | BaseModel | 66 | 20 | -70% |
@@ -547,6 +617,11 @@ BaseModel → BaseModelLang → Post
 =======
 | <nome progetto> | BaseModel | 66 | 20 | -70% |
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+| <nome progetto> | BaseModel | 66 | 20 | -70% |
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |
@@ -695,6 +770,7 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_t4fuPG
 =======
 =======
@@ -718,11 +794,15 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 =======
 =======
 >>>>>>> .merge_file_n6zj5I
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
+<<<<<<< HEAD
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
@@ -732,6 +812,9 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
 >>>>>>> .merge_file_ETWQ52
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -755,11 +838,14 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 10 passed*
 =======
 *Validato: ✅ Test passed, PHPStan level 9 passed*
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 *Validato: ✅ Test passed, PHPStan level 10 passed*
 =======
 *Validato: ✅ Test passed, PHPStan level 10 passed*
@@ -767,6 +853,7 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 =======
 *Validato: ✅ Test passed, PHPStan level 10 passed*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Validato: ✅ Test passed, PHPStan level 10 passed*
@@ -774,3 +861,8 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 =======
 *Validato: ✅ Test passed, PHPStan level 10 passed*
 >>>>>>> .merge_file_ETWQ52
+=======
+=======
+*Validato: ✅ Test passed, PHPStan level 10 passed*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -2,11 +2,19 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
+=======
+
+use Modules\Xot\Datas\MetatagData;
+use Modules\Xot\Support\PaDesignColors;
+>>>>>>> 930f8146 (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -52,7 +60,11 @@ test('getFilamentColors restituisce i colori Filament corretti', function (): vo
     Assert::assertArrayHasKey('success', $colors);
     Assert::assertArrayHasKey('warning', $colors);
     Assert::assertIsString($colors['primary'][600] ?? null);
+<<<<<<< HEAD
     Assert::assertEquals(app(PaDesignColorsAction::class)->filamentPalette(), $colors);
+=======
+    Assert::assertEquals(PaDesignColors::filamentPalette(), $colors);
+>>>>>>> 930f8146 (Check & fix styling)
 });
 
 test('getColors gestisce correttamente i colori personalizzati', function () {
@@ -85,7 +97,11 @@ test('getColors gestisce correttamente i colori personalizzati', function () {
     $colors = $metatagData->colors;
 =======
     $colors = $metatagData->getColors();
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     Assert::assertArrayHasKey('custom_color', $colors);
     Assert::assertArrayHasKey('primary', $colors);
@@ -100,7 +116,11 @@ test('getLogoHeight restituisce il valore corretto', function () {
     $metatagData = new MetatagData;
     $metatagData->logo_height = '3em';
 
+<<<<<<< HEAD
     Assert::assertSame('3em', $metatagData->getBrandLogoHeight());
+=======
+    Assert::assertSame('3em', $metatagData->getLogoHeight());
+>>>>>>> 930f8146 (Check & fix styling)
 });
 
 test('Le proprieta hanno i valori di default corretti', function () {

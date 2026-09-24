@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti
@@ -799,8 +802,11 @@ private function exportTablesToCSV(string $mdbFile): array
 - [Array Types Fixes](./phpstan-array-types-fixes.md)
 - [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 *Ultimo aggiornamento: 6 Gennaio 2025*
 *Ultimo aggiornamento: 6 Gennaio 2025*
 # PHPStan Analysis Report for Xot Module
@@ -833,6 +839,7 @@ A subsequent comprehensive PHPStan scan across all `Modules` revealed 4 errors s
 
 **Next Steps:**
 These errors will be addressed systematically. After each fix, `phpstan`, `phpmd`, and `phpinsights` will be run on the modified file to ensure compliance with all code quality standards.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # PHPStan Fixes - 2026-02-26
@@ -1213,3 +1220,5 @@ find Modules -name "*.php" -exec php -l {} \; | grep -v "No syntax errors"
 
 *Ultimo aggiornamento: 2026-02-26*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

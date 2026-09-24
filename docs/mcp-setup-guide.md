@@ -22,10 +22,12 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "marco:marco@localhost:3306/quaeris_survey"
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
         "marco:marco@localhost:3306/quaeris_survey"
 =======
         "marco:marco@localhost:3306/healthcare_app_survey"
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         "marco:marco@localhost:3306/healthcare_app_survey"
@@ -33,6 +35,11 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
 =======
         "marco:marco@localhost:3306/quaeris_survey"
 >>>>>>> .merge_file_F57Glp
+=======
+=======
+        "marco:marco@localhost:3306/quaeris_survey"
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       ]
     },
     "fetch": {
@@ -60,10 +67,12 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "/var/www/_bases/base_quaeris_fila4_mono/laravel"
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
         "/var/www/_bases/base_quaeris_fila4_mono/laravel"
 =======
         "/var/www/_bases/base_healthcare_app_fila5_mono/laravel"
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         "/var/www/_bases/base_healthcare_app_fila5_mono/laravel"
@@ -71,6 +80,11 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
 =======
         "/var/www/_bases/base_quaeris_fila4_mono/laravel"
 >>>>>>> .merge_file_F57Glp
+=======
+=======
+        "/var/www/_bases/base_quaeris_fila4_mono/laravel"
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       ]
     },
     "git": {

@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_7tnoDr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7CBxT8
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -126,6 +130,7 @@ https://www.fakenamegenerator.com/gen-male-fr-fr.php
 =======
 
 >>>>>>> .merge_file_IaLFTo
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -133,3 +138,8 @@ https://www.fakenamegenerator.com/gen-male-fr-fr.php
 =======
 
 >>>>>>> .merge_file_IUx4d6
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

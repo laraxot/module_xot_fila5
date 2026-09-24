@@ -4,11 +4,15 @@
 Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare icone personalizzate nel sistema Xot.
 
 ## Prerequisiti
+<<<<<<< HEAD
 <<<<<<< .merge_file_aoavpL
 <<<<<<< HEAD
 <<<<<<< HEAD
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_TtkSFp
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 =======
@@ -18,6 +22,7 @@ Prima di procedere, assicurarsi di aver compreso il [processo di registrazione d
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QuWv1O
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
@@ -25,6 +30,11 @@ Prima di procedere, assicurarsi di aver compreso il [processo di registrazione d
 =======
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 >>>>>>> .merge_file_gJa0Oo
+=======
+=======
+Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Processo di Implementazione
 
@@ -67,25 +77,38 @@ public function register(): void
 ```
 
 ## Troubleshooting
+<<<<<<< HEAD
 <<<<<<< .merge_file_aoavpL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_TtkSFp
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_QuWv1O
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_gJa0Oo
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerbladeicons.md).
 
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_aoavpL
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_TtkSFp
 =======
 =======
@@ -99,8 +122,13 @@ Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeI
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QuWv1O
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gJa0Oo
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

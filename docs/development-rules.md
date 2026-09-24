@@ -7,15 +7,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Documentazione generale progetto](/docs/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Documentazione generale progetto](/docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5BqaJF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -444,10 +450,12 @@ TextInput::make('name')
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
 =======
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
@@ -455,3 +463,8 @@ TextInput::make('name')
 =======
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
 >>>>>>> .merge_file_5BqaJF
+=======
+=======
+**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

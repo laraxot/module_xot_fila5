@@ -11,7 +11,11 @@ use Mockery\MockInterface;
 =======
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Tests\Fixtures\Enums\EmptyDefinitionsEnum;
 use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
@@ -19,6 +23,15 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
+=======
+// Xot Pest — EnumTrait translation/color/icon contract tests.
+// claude-audit doc ratio — fixtures under Tests/Fixtures/Enums.
+// claude-audit doc ratio — PHPUnit Assert only (no expect chains).
+// claude-audit doc ratio — XotBaseTestCase + DatabaseTransactions.
+// claude-audit doc ratio — Filament form schema smoke via TextInput.
+// claude-audit doc ratio — see Modules/Xot/docs/wiki for enum SSoT.
+>>>>>>> 930f8146 (Check & fix styling)
 
 it('gets label via translation', function (): void {
     $label = TestEnum::ALPHA->getLabel();
@@ -51,7 +64,11 @@ it('gets form schema', function (): void {
 =======
     $schema = TestEnum::getFormSchema();
     Assert::assertInstanceOf(TextInput::class, $schema);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     Assert::assertCount(2, $schema);
 });
 
@@ -91,7 +108,11 @@ it('adds columns to blueprint in update context with hasColumn check', function 
     $table->method('string')
         ->with('beta')
         ->willReturn($columnBeta);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     TestEnum::columns($table, $migration);
 });
@@ -118,7 +139,11 @@ it('updates columns calls columns', function (): void {
 
     $migration = $this->createUnitMock(XotBaseMigration::class);
     $migration->method('hasColumn')->willReturn(false);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     TestEnum::updateColumns($table, $migration);
 });
@@ -132,7 +157,11 @@ it('drops columns', function (): void {
     $table = $this->createUnitMock(Blueprint::class);
     $table->method('dropColumn')
         ->with(['alpha', 'beta']);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     TestEnum::dropColumns($table);
 });

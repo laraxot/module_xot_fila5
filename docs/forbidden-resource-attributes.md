@@ -64,15 +64,21 @@ Remove all forbidden attributes from XotBaseResource classes and ensure proper t
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Last Verification**: [DATE]  
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Last Verification**: [DATE]  
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lhYXUA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: ✅ **ALL RESOURCES COMPLIANT - PROPERTIES REMOVED**
 
 All Resources extending `XotBaseResource` have been verified and cleaned. All forbidden properties (including commented ones) have been removed from:
@@ -86,10 +92,12 @@ All Resources extending `XotBaseResource` have been verified and cleaned. All fo
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Verification Report**: See `forbidden-resource-attributes-verification-[DATE].md`  
 **Removal Report**: See `forbidden-properties-removal-complete-[DATE].md`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Verification Report**: See `forbidden-resource-attributes-verification-[DATE].md`  
@@ -97,6 +105,10 @@ All Resources extending `XotBaseResource` have been verified and cleaned. All fo
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lhYXUA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Key Findings
 

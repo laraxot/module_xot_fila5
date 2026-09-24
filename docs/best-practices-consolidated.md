@@ -256,11 +256,14 @@ class ExampleResource extends XotBaseResource
 <<<<<<< .merge_file_p2ri0o
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_nj3bNz
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -271,12 +274,18 @@ class ExampleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_nj3bNz
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name')->required(),
@@ -320,11 +329,14 @@ class UserModerationResource extends XotBaseResource
 <<<<<<< .merge_file_p2ri0o
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_nj3bNz
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -335,12 +347,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_nj3bNz
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         // Schema del form
@@ -953,10 +971,12 @@ php artisan view:clear
 *Categoria: Best Practices*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Categoria: Best Practices*
 =======
 *Categoria: Best Practices*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Categoria: Best Practices*
@@ -964,3 +984,8 @@ php artisan view:clear
 =======
 *Categoria: Best Practices*
 >>>>>>> .merge_file_nj3bNz
+=======
+=======
+*Categoria: Best Practices*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

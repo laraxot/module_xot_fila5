@@ -1,11 +1,17 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -13,26 +19,38 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_3PihIp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_flDjQL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Header;
 
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -52,10 +70,12 @@ namespace Modules\Xot\Filament\Actions\Header;
 use Exception;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 namespace Modules\Xot\Filament\Actions\Header;
 
 >>>>>>> .merge_file_3PihIp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 use Filament\Actions\Action;
@@ -65,6 +85,10 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 use Exception;
 >>>>>>> .merge_file_flDjQL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
@@ -86,11 +110,17 @@ class ExportXlsLazyAction extends Action
     {
         parent::setUp();
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -112,10 +142,15 @@ class ExportXlsLazyAction extends Action
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_3PihIp
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_flDjQL
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $this->label('')
             ->iconButton()
             ->color('success')
@@ -126,17 +161,28 @@ class ExportXlsLazyAction extends Action
             ->modalSubmitActionLabel((string) __('xot::export_xls.actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::export_xls.actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::export_xls.actions.export_xls.success'))
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3PihIp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_flDjQL
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->requiresConfirmation()
             ->action(static function (ListRecords $livewire) {
                 $filename =
@@ -147,13 +193,19 @@ class ExportXlsLazyAction extends Action
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
 <<<<<<< HEAD
 <<<<<<< HEAD
                 $resource = $livewire->getResource();
                 /** @var array<int|string, string> $fields */
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -242,22 +294,46 @@ class ExportXlsLazyAction extends Action
                 $lazy = $livewire->getFilteredTableQuery();
                 if ($lazy === null) {
                     throw new Exception('Query is null');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+                $pathFields = self::resolvePathFields($livewire);
+
+                $lazy = $livewire->getFilteredTableQuery();
+                if (null === $lazy) {
+                    throw new \Exception('Query is null');
+>>>>>>> .merge_file_3PihIp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 }
 
                 if ($lazy->count() < 7) {
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
                     return app(ExportXlsByQuery::class)->execute($lazy, $filename, $pathFields, null);
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3PihIp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_flDjQL
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 }
 
                 $lazyCursor = $lazy->cursor();
@@ -266,11 +342,17 @@ class ExportXlsLazyAction extends Action
 
                 if ($lazyCursor->count() > 3000) {
                     return app(ExportXlsStreamByLazyCollection::class)
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -285,28 +367,45 @@ class ExportXlsLazyAction extends Action
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_3PihIp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_flDjQL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                         ->execute($exportCollection, $filename, $transKey, $pathFields);
                 }
 
                 return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, $pathFields);
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3PihIp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_flDjQL
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             });
     }
 
@@ -314,19 +413,30 @@ class ExportXlsLazyAction extends Action
     {
         return 'export_xls';
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_3PihIp
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_flDjQL
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     /**
      * Il canale lazy lavora sui soli percorsi data_get: le intestazioni
@@ -372,15 +482,26 @@ class ExportXlsLazyAction extends Action
 
         return '';
     }
+<<<<<<< HEAD
 <<<<<<< .merge_file_uux3Fc
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3PihIp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_flDjQL
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

@@ -20,7 +20,11 @@ abstract class XotBaseComponent extends IlluminateComponent
      * @var array<string, mixed>
 =======
      * @var array<mixed>
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public array $attrs = [];
 

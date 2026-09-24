@@ -41,10 +41,12 @@ return new class extends XotBaseMigration
 - [User Module Database Errors](database_errors.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Database Errors](database_errors.md)
 =======
 - [User Module Database Errors](../../User/docs/DATABASE_ERRORS.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [User Module Database Errors](../../User/docs/DATABASE_ERRORS.md)
@@ -52,11 +54,17 @@ return new class extends XotBaseMigration
 =======
 - [User Module Database Errors](database_errors.md)
 >>>>>>> .merge_file_nUqWGm
+=======
+=======
+- [User Module Database Errors](../../User/docs/DATABASE_ERRORS.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Xot Base Classes](../XOT_BASE_CLASSES.md)
 - [Code Quality](../CODE_QUALITY.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../DATABASE_GUIDELINES.md)
 <<<<<<< .merge_file_SCn1ko
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -71,9 +79,14 @@ return new class extends XotBaseMigration
 <<<<<<< HEAD
 - [Database Guidelines](../database_guidelines.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Database Guidelines](../database_guidelines.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_nUqWGm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -314,7 +318,11 @@ class GetPdfContentByRecordAction
             Log::error('PDF generation failed in GetPdfContentByRecordAction', [
 =======
             \Log::error('PDF generation failed in GetPdfContentByRecordAction', [
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 'filename' => $filename,
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),

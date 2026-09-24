@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wjdIHd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -203,6 +209,7 @@ php artisan lang:check
 <<<<<<< .merge_file_1UCpIA
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -217,11 +224,16 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wjdIHd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -290,10 +302,12 @@ php artisan lang:check
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
@@ -301,6 +315,10 @@ php artisan lang:check
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wjdIHd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
@@ -315,15 +333,21 @@ php artisan lang:check
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wjdIHd
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
@@ -367,10 +391,12 @@ php artisan lang:check
 **Stato**: ✅ Completato
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stato**: ✅ Completato
 =======
 **Stato**: ✅ Completato
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Stato**: ✅ Completato
@@ -378,3 +404,8 @@ php artisan lang:check
 =======
 **Stato**: ✅ Completato
 >>>>>>> .merge_file_wjdIHd
+=======
+=======
+**Stato**: ✅ Completato
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

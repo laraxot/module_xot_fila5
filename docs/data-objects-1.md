@@ -77,6 +77,7 @@
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Data Objects Patient](../patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
 <<<<<<< .merge_file_akgQzo
@@ -89,6 +90,7 @@
 =======
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Convenzioni di Codice](./coding-standards.md)
@@ -96,3 +98,10 @@
 =======
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> .merge_file_QErdmW
+=======
+=======
+- [Data Objects Patient](../Patient/docs/data-objects.md)
+- [Best Practices](./best-practices.md)
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_B90x7L
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Modulo Xot
 
 ## Informazioni Generali
@@ -114,7 +118,10 @@ composer format        # Formatta il codice
 
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub.
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ft7jkG
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -129,9 +136,14 @@ canonical: ../../../Themes/docs/shared-components/module-xot.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/module-xot.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/module-xot.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_B90x7L
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

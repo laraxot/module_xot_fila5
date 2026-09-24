@@ -441,10 +441,12 @@ public function processData(): void
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Code Quality Standards](./code_quality_standards.md)
 - [Common Anti-Patterns](./common_anti_patterns.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Code Quality Standards](./code_quality_standards.md)
@@ -452,6 +454,10 @@ public function processData(): void
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_4cLv9T
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
@@ -896,6 +902,7 @@ public function processData(): void
 <<<<<<< .merge_file_EPRImK
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
@@ -914,12 +921,19 @@ This document provides comprehensive performance guidelines for maintaining opti
 <<<<<<< HEAD
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
+<<<<<<< HEAD
 >>>>>>> .merge_file_4cLv9T
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

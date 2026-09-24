@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_iqqmc6
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Convenzioni di Nomenclatura in Laravel Modules
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules.
@@ -58,6 +62,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - Aggiornare questo documento se vengono introdotti nuovi schemi di denominazione o convenzioni.
 
 ## Collegamenti alla documentazione correlata
+<<<<<<< HEAD
 - [Qualità del codice](code_quality.md)
 - [Tipi rigorosi PHP](php-strict-types.md)
 - [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
@@ -67,13 +72,18 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Qualità del codice](./CODE_QUALITY.md)
 - [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
 - [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
+<<<<<<< HEAD
 ---
 module: theme
 topic: naming-conventions
@@ -83,9 +93,14 @@ canonical: ../../../Themes/docs/shared-components/naming-conventions-1.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions-1.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions-1.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_iqqmc6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

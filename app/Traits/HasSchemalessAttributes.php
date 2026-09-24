@@ -105,14 +105,21 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_l1GrQz
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
      * @param Builder<static>                     $query
      * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile da confrontare
+=======
+     * @param Builder<static> $query
+>>>>>>> 930f8146 (Check & fix styling)
      *
 >>>>>>> laraxot/dev
 =======
@@ -158,7 +165,11 @@ trait HasSchemalessAttributes
      * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {
@@ -173,11 +184,16 @@ trait HasSchemalessAttributes
 <<<<<<< .merge_file_l1GrQz
 =======
      * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_jVdqmf
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {

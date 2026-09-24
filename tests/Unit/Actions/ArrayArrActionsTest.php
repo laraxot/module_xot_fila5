@@ -6,8 +6,10 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -16,11 +18,16 @@ use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_neikVz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
+<<<<<<< HEAD
 <<<<<<< .merge_file_DYYnzq
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,6 +39,12 @@ use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_neikVz
+=======
+<<<<<<< HEAD
+use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -39,6 +52,14 @@ use function Safe\file_get_contents;
 use function Safe\mkdir;
 
 uses(TestCase::class);
+<<<<<<< HEAD
+=======
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+>>>>>>> 930f8146 (Check & fix styling)
 
 it('normalizes nested numeric strings in diff fixType', function (): void {
     $input = ['items' => [
@@ -114,6 +135,7 @@ it('covers all branches of range intersect', function (): void {
     Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_DYYnzq
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,6 +143,9 @@ it('writes JSON and PHP arrays', function (): void {
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 it('covers all branches of range intersect in Array namespace', function (): void {
     $action = new ArrayRangeIntersectAction();
 
@@ -135,12 +160,18 @@ it('covers all branches of range intersect in Array namespace', function (): voi
 
 it('writes JSON and PHP arrays via Arr actions', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 it('writes JSON and PHP arrays', function (): void {
 >>>>>>> .merge_file_neikVz
+=======
+=======
+it('writes JSON and PHP arrays', function (): void {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
@@ -225,12 +256,16 @@ it('throws on unsupported save format in SaveArrayAction', function (): void {
         // Expected
     }
 });
+<<<<<<< HEAD
 <<<<<<< .merge_file_DYYnzq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 
 it('converts mixed PHP arrays to RawJs correctly', function (): void {
     $action = new ArrayToRawJsAction();
@@ -255,8 +290,13 @@ it('converts mixed PHP arrays to RawJs correctly', function (): void {
     Assert::assertStringContainsString('formatter: value => value * 2', $js);
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_neikVz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

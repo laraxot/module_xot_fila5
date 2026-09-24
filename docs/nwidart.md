@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_3NMSc0
 <<<<<<< HEAD
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
@@ -41,9 +44,15 @@ updated: 2026-08-24
 =======
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_dApNVA
+=======
+=======
+https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

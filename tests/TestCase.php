@@ -132,7 +132,11 @@ abstract class TestCase extends XotBaseTestCase
         $database = self::sharedSqlitePath();
 =======
         $database = database_path('fixcity_data.sqlite');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -247,7 +251,11 @@ abstract class TestCase extends XotBaseTestCase
         $this->expectExceptionMessageIsOrContains($message);
 =======
         $this->expectExceptionMessage($message);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     public function expectThrowableMessageMatches(string $pattern): void
@@ -295,7 +303,11 @@ abstract class TestCase extends XotBaseTestCase
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 continue;
             }
 

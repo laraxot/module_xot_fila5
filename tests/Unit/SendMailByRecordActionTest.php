@@ -10,7 +10,11 @@ use Modules\Xot\Tests\TestCase;
 <<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 uses(TestCase::class);
 
@@ -49,7 +53,11 @@ it('throws if record has no email', function (): void {
 <<<<<<< .merge_file_PP1lRK
 =======
             return new class {
+<<<<<<< HEAD
                 /** @param array<string, mixed> $data */
+=======
+                /** @param array<mixed> $data */
+>>>>>>> 930f8146 (Check & fix styling)
                 public function create(array $data): void
                 {
                 }
@@ -78,5 +86,9 @@ it('throws if record has no email', function (): void {
     $this->expectThrowable(\InvalidArgumentException::class);
 
     app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });

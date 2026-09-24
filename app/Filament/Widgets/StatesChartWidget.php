@@ -10,7 +10,11 @@ use Illuminate\Support\Facades\DB;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 class StatesChartWidget extends XotBaseChartWidget
 {
@@ -72,7 +76,11 @@ class StatesChartWidget extends XotBaseChartWidget
 =======
                 $state = (string) ($row->state ?? '');
                 $states[$state] = (int) ($row->count ?? 0);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
 
             $data = [];

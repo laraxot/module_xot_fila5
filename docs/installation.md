@@ -131,6 +131,7 @@ php artisan serve
 <<<<<<< .merge_file_LfeIEU
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -145,11 +146,16 @@ php artisan serve
 * [installation.md](../../../../themes/one/docs/installation.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_YiAPDO
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [installation.md](../../../Xot/docs/filament/installation.md)
 * [installation.md](../../../Xot/docs/installation.md)
 * [installation.md](../../../Xot/docs/base/installation.md)
@@ -162,10 +168,12 @@ php artisan serve
 * [installation.md](../../../../Themes/One/docs/installation.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [installation.md](../../../../Themes/One/docs/installation.md)
 =======
 * [installation.md](../../../../Themes/One/docs/installation.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [installation.md](../../../../Themes/One/docs/installation.md)
@@ -173,3 +181,8 @@ php artisan serve
 =======
 * [installation.md](../../../../Themes/One/docs/installation.md)
 >>>>>>> .merge_file_YiAPDO
+=======
+=======
+* [installation.md](../../../../Themes/One/docs/installation.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -202,11 +202,13 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 *Architecture Version: XotBase 2.0*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Architecture Version: XotBase 2.0*
 =======
 *
 *Architecture Version: XotBase 2.0*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *
@@ -215,3 +217,8 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 =======
 *Architecture Version: XotBase 2.0*
 >>>>>>> .merge_file_O3vDwM
+=======
+=======
+*Architecture Version: XotBase 2.0*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

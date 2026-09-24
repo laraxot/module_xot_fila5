@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_Wk3hcb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+>>>>>>> da9ae01a0 (.)
 title: "Activity Log"
 type: log
 module: Xot
@@ -60,11 +63,17 @@ discussions:
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## [2026-06-30] governance | no legacy folders + model seeder parity
 
@@ -83,14 +92,20 @@ discussions:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: "Activity Log"
 type: log
 module: Xot
@@ -105,6 +120,7 @@ issues:
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -143,11 +159,16 @@ issues:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
@@ -157,12 +178,14 @@ discussions:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -171,6 +194,10 @@ discussions:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.
@@ -192,11 +219,17 @@ discussions:
 <<<<<<< .merge_file_Wk3hcb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Ultimo run:** 2026-06-30 run #4 (remediation wave — lang, test, seeders, wire-elements)
 
 ## [2026-06-30] parità modello — 1 migrazione + 1 seeder (repo-wide)
@@ -221,11 +254,16 @@ discussions:
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-06-30] prompts | start.txt v15 — baseline PHPStan 0 + Spatie teams
 
 - **PHPStan:** `Modules/` a **0 errori** (level max, ~5357 file) — regola gate aggiornata: mantenere baseline, non ~25 backlog.
@@ -320,11 +358,13 @@ discussions:
 - Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 =======
 - Prompt fratelli con `<<<<<<<`: WARN (non bloccante sessione); solo `start.txt`/`rules.txt` bloccanti.
 - PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Prompt fratelli con `<<<<<<<`: WARN (non bloccante sessione); solo `start.txt`/`rules.txt` bloccanti.
@@ -333,6 +373,12 @@ discussions:
 =======
 - Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+- Prompt fratelli con `<<<<<<<`: WARN (non bloccante sessione); solo `start.txt`/`rules.txt` bloccanti.
+- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - `prompts/README.md`: `start.txt` come primo step Quick Start.
 
 ## [2026-06-30] prompts | start.txt v5 — gate infrastruttura e igiene
@@ -345,11 +391,13 @@ discussions:
 - Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
 =======
 - Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `<<<<<<<` (esclusi start.txt e rules.txt); runtime PSR-4 ok; composer skeleton ok; PHPStan full-scan timeout/output binario noto.
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `<<<<<<<` (esclusi start.txt e rules.txt); runtime PSR-4 ok; composer skeleton ok; PHPStan full-scan timeout/output binario noto.
@@ -358,6 +406,12 @@ discussions:
 =======
 - Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `<<<<<<<` (esclusi start.txt e rules.txt); runtime PSR-4 ok; composer skeleton ok; PHPStan full-scan timeout/output binario noto.
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-06-30] prompts | start.txt v4 — gate one-shot e igiene prompt
 
 - `start.txt` v4: blocco **gate rapido one-shot**, regola igiene (no append query utente), `find -mindepth 1` per audit cartelle, link a `module-root-php-folders-forbidden.md`, `start.txt` canonico se `rules.txt` in conflitto.
@@ -379,19 +433,26 @@ discussions:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-06-30] composer | gate start.txt + autoload runtime temi
 
 - Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
 - Action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
 <<<<<<< .merge_file_Wk3hcb
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -414,11 +475,16 @@ discussions:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Pagina: [`theme-psr4-autoload-without-merge.md`](concepts/theme-psr4-autoload-without-merge.md).
 
 ## [2026-06-30] composer | root skeleton allineato a FixCity
@@ -465,6 +531,7 @@ discussions:
 - Aggiornati [phpstan-best-practices.md](phpstan-best-practices.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_wb5BNZ
 - Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
 =======
@@ -475,6 +542,7 @@ discussions:
 - Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
 >>>>>>> .merge_file_jwNEvp
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
@@ -482,6 +550,11 @@ discussions:
 =======
 - Aggiornati [phpstan-best-practices.md](phpstan-best-practices.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+- Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
 - Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
@@ -496,15 +569,21 @@ discussions:
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-06-10] testing | Module TestCase XotBase hierarchy
 
 - Aggiunto `rules/module-testcase-xotbase-hierarchy.md`.
@@ -516,15 +595,22 @@ discussions:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-06-10] testing | module TestCase hierarchy XotBase
 
 - Canon: `Modules/<Module>/tests/TestCase.php` -> `Modules\Xot\Tests\XotBaseTestCase` -> `Illuminate\Foundation\Testing\TestCase`.
@@ -543,10 +629,12 @@ discussions:
 ## [2026-06-07] phpstan | DTO concrete factory self per run Modules no-flag
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## [2026-06-07] phpstan | DTO concrete factory self per run Modules no-flag
 =======
 ## [2026-06-07] phpstan | DTO factory self per run Modules no-flag
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## [2026-06-07] phpstan | DTO factory self per run Modules no-flag
@@ -554,6 +642,11 @@ discussions:
 =======
 ## [2026-06-07] phpstan | DTO concrete factory self per run Modules no-flag
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+## [2026-06-07] phpstan | DTO factory self per run Modules no-flag
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules` -> **4993 file, [OK] No errors**.
 - DTO Xot concreti: factory `make()` con ritorno `self` e `new self()`, evitando `new static()` e PHPDoc `@var static` usati solo per placare PHPStan.
@@ -573,11 +666,17 @@ discussions:
 <<<<<<< .merge_file_Wk3hcb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Activity Log"
 module: "Xot"
@@ -587,11 +686,16 @@ module: "Xot"
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-06-05] docs | AI harness canon + stub moduli allineati
 
 - [ai-harness-xot-discipline.md](concepts/ai-harness-xot-discipline.md) — owner harness PHPStan/XotBase
@@ -600,22 +704,33 @@ module: "Xot"
 <<<<<<< .merge_file_Wk3hcb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 > **Purpose:** Append-only chronological activity record tracking ingests, queries, and lint passes.
 
 ## Log Entries
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-05-26] docs | codice nominale pivot / ThemeComposer / ProfileFactory scan
 
 - **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/Fixcity); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
@@ -630,11 +745,13 @@ module: "Xot"
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
 =======
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `<<<<<<<`).
 - **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `<<<<<<<`).
@@ -643,6 +760,12 @@ module: "Xot"
 =======
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `<<<<<<<`).
+- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## [2026-05-24] refactor | wizard — normalizzazione stato **rimossa dalla base**
 
@@ -669,10 +792,12 @@ module: "Xot"
 - **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream … NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream … NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
 =======
 - **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream ... NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream ... NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
@@ -680,6 +805,11 @@ module: "Xot"
 =======
 - **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream … NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+- **Symptomo**: `/it/tests/segnalazione-crea` → errore fetale `Failed to open stream ... NormalizesWizardFormState.php` durante load di `CreateTicketWizardWidget`; niente markup wizard.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Fix (storico)**: rimuovere `use` trait fantasma / allineare al codice corrente; dopo pull eseguire `composer dump-autoload`.
 
 ## [2026-05-23] refactor | wizard widget — `HasWizard` sul widget Xot + trait satellite
@@ -696,15 +826,22 @@ module: "Xot"
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-05-22] docs | DRY second brain + merge doc wizard HasWizard
 
 - **`second-brain-local-discipline`:** solo [`concepts/second-brain-local-discipline.md`](concepts/second-brain-local-discipline.md) mantiene il corpo; negli altri nove moduli stesso basename → stub puntatore canonica.
@@ -798,11 +935,17 @@ module: "Xot"
 <<<<<<< .merge_file_Wk3hcb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 
 _No activity yet. Start by ingesting raw documents._
@@ -826,11 +969,16 @@ _No activity yet. Start by ingesting raw documents._
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## [2026-04-27] cross-reference | Policy Decision
 - Linked: ../User/docs/wiki/concepts/policy-inheritance-boundary.md
 - Decision: Mantenere separazione XotBasePolicy (foundation) vs UserBasePolicy (application)
@@ -840,11 +988,14 @@ _No activity yet. Start by ingesting raw documents._
 <<<<<<< .merge_file_Wk3hcb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+>>>>>>> da9ae01a0 (.)
 
 2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
 
@@ -896,8 +1047,15 @@ Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [d
 <<<<<<< HEAD
 >>>>>>> .merge_file_jwNEvp
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_kvz09j
+=======
+=======
+
+2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

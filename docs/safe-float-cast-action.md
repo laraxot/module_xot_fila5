@@ -186,15 +186,21 @@ class SafeFloatCastActionTest extends TestCase
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Xot Actions Documentation](../actions/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Xot Actions Documentation](../actions/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_eqxA4l
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [DRY Principle](../../project_docs/dry-principle.md)
 - [KISS Principle](../../project_docs/kiss-principle.md)
 
@@ -206,10 +212,12 @@ class SafeFloatCastActionTest extends TestCase
 *Ultimo aggiornamento: 2025-01-06*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 2025-01-06*
@@ -217,3 +225,8 @@ class SafeFloatCastActionTest extends TestCase
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> .merge_file_eqxA4l
+=======
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

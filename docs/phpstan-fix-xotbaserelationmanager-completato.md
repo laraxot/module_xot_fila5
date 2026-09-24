@@ -151,7 +151,11 @@ public function canDetachBulk(\Illuminate\Database\Eloquent\Model|\stdClass $rec
 1. ✅ Correzione completata
 2. ⏳ Commit con messaggio descrittivo
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. ⏳ Push
 =======
 3. ⏳ Push
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+3. ⏳ Push
+>>>>>>> da9ae01a0 (.)

@@ -98,6 +98,7 @@ actionlint -color
 <<<<<<< .merge_file_sjzYJB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -112,9 +113,14 @@ canonical: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Gf4I00
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

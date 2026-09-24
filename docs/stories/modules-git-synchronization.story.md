@@ -10,6 +10,7 @@ slug: modules-git-synchronization
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_9cZemc
 =======
 <<<<<<< HEAD
@@ -25,8 +26,15 @@ slug: modules-git-synchronization
 >>>>>>> .merge_file_nb5jOU
 >>>>>>> .merge_file_sN9ODr
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 status: ready-for-dev
 cold_gate: null
 created: '2026-09-11'
@@ -47,23 +55,34 @@ status_note: "Story creata per continuare domani la sincronizzazione git dei mod
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nb5jOU
 >>>>>>> .merge_file_sN9ODr
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_YlJDDG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 status: done
 cold_gate: null
 created: '2026-09-11'
 updated: '2026-09-21'
 status_note: "2026-09-21: sync di tutti i path in gitmodules.ini con git -C (mai cd/working_directory). Merge forward-only, no rebase. Issue #115."
+<<<<<<< HEAD
 <<<<<<< .merge_file_iexHuw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_9cZemc
 >>>>>>> laraxot/dev
 =======
@@ -76,7 +95,12 @@ status_note: "2026-09-21: sync di tutti i path in gitmodules.ini con git -C (mai
 >>>>>>> .merge_file_nb5jOU
 >>>>>>> .merge_file_sN9ODr
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======

@@ -416,6 +416,7 @@ it('can create user', function () {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -515,11 +516,16 @@ Questo progetto usa **MySQL** per i test (non SQLite in-memory), per garantire p
 >>>>>>> 64619e34 (.)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8G0xS8
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Conclusione
 
 Questa configurazione garantisce che Pest funzioni correttamente con l'architettura modulare di Laraxot, rispettando i principi di modularità e mantenendo la separazione tra i componenti del sistema. Seguendo queste regole, tutti i test saranno conformi all'architettura Laraxot e funzioneranno correttamente.

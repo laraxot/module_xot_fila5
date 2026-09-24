@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_zWWkti
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: 📚 Foundation Document
 **Versione**: 1.0.0
 
@@ -109,10 +115,12 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 =======
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
@@ -120,3 +128,8 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 =======
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 >>>>>>> .merge_file_zWWkti
+=======
+=======
+**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

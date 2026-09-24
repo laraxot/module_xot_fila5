@@ -5,12 +5,18 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Models;
 
 use Modules\Xot\Tests\TestCase;
+<<<<<<< HEAD
 <<<<<<< .merge_file_xfap1P
 <<<<<<< HEAD
 <<<<<<< HEAD
 use ReflectionClass;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_lpuvPc
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -25,12 +31,17 @@ use ReflectionClass;
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_TPktOC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 use ReflectionClass;
 >>>>>>> .merge_file_ZF9YnD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
@@ -94,16 +105,21 @@ function methodsShadowingTraits(): array
     );
 
     foreach ($iterator as $fileInfo) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_xfap1P
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_lpuvPc
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_TPktOC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
@@ -111,6 +127,11 @@ function methodsShadowingTraits(): array
 =======
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 >>>>>>> .merge_file_ZF9YnD
+=======
+=======
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             continue;
         }
 
@@ -124,6 +145,7 @@ function methodsShadowingTraits(): array
         $ns = [];
         $cls = [];
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_xfap1P
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,25 +156,40 @@ function methodsShadowingTraits(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZF9YnD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_lpuvPc
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
             continue;
         }
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls) !== 1) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_xfap1P
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
         if (1 !== preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns)) {
             continue;
         }
         if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls)) {
 >>>>>>> .merge_file_TPktOC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZF9YnD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             continue;
         }
 
@@ -162,16 +199,21 @@ function methodsShadowingTraits(): array
             continue;
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_xfap1P
 <<<<<<< HEAD
 <<<<<<< HEAD
         $reflection = new ReflectionClass($class);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_lpuvPc
         $reflection = new ReflectionClass($class);
 =======
         $reflection = new \ReflectionClass($class);
 >>>>>>> .merge_file_TPktOC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         $reflection = new ReflectionClass($class);
@@ -179,6 +221,11 @@ function methodsShadowingTraits(): array
 =======
         $reflection = new ReflectionClass($class);
 >>>>>>> .merge_file_ZF9YnD
+=======
+=======
+        $reflection = new ReflectionClass($class);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $traitMethods = [];
 
         foreach ($reflection->getTraits() as $trait) {
@@ -187,16 +234,21 @@ function methodsShadowingTraits(): array
             }
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_xfap1P
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($traitMethods === []) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_lpuvPc
         if ($traitMethods === []) {
 =======
         if ([] === $traitMethods) {
 >>>>>>> .merge_file_TPktOC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if ($traitMethods === []) {
@@ -204,6 +256,11 @@ function methodsShadowingTraits(): array
 =======
         if ($traitMethods === []) {
 >>>>>>> .merge_file_ZF9YnD
+=======
+=======
+        if ($traitMethods === []) {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             continue;
         }
 
@@ -225,16 +282,21 @@ function methodsShadowingTraits(): array
             $shadowed[] = $name.'() — oscura '.class_basename($traitMethods[$name]);
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_xfap1P
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($shadowed !== []) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_lpuvPc
         if ($shadowed !== []) {
 =======
         if ([] !== $shadowed) {
 >>>>>>> .merge_file_TPktOC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if ($shadowed !== []) {
@@ -242,6 +304,11 @@ function methodsShadowingTraits(): array
 =======
         if ($shadowed !== []) {
 >>>>>>> .merge_file_ZF9YnD
+=======
+=======
+        if ($shadowed !== []) {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $offenders[str_replace(base_path().'/', '', $path)] = $shadowed;
         }
     }

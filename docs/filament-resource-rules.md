@@ -78,11 +78,14 @@ protected static ?string $model = YourModel::class;
 <<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2qCnWM
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -93,12 +96,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2qCnWM
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -154,9 +163,13 @@ public static function getRelations(): array
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2qCnWM
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Pagine
 
 Se il metodo `getPages()` contiene solo le route standard (index, create, edit), **NON** dichiararlo:
@@ -176,7 +189,10 @@ public static function getPages(): array
 // Non dichiarare il metodo se contiene solo le route standard
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_WT7CjJ
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -212,11 +228,16 @@ Documentazione: [filament/getpages-redundancy-rule.md](./filament/getpages-redun
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2qCnWM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Motivazioni
 
 1. **Centralizzazione della Configurazione**: Le configurazioni comuni sono centralizzate nella classe base
@@ -246,11 +267,14 @@ class DoctorResource extends XotBaseResource
 <<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2qCnWM
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -261,12 +285,18 @@ class DoctorResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2qCnWM
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')
@@ -291,6 +321,19 @@ class DoctorResource extends XotBaseResource
 <<<<<<< .merge_file_WT7CjJ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+- [Filament Form Builder](/docs/filament-form-builder.md)
+- [Gestione delle Traduzioni](/docs/translation-management.md)
+- [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
+- [Filament Form Builder](/docs/filament-form-builder.md)
+- [Gestione delle Traduzioni](/docs/translation-management.md)
+- [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -314,8 +357,13 @@ class DoctorResource extends XotBaseResource
 - [consolidated/filament/resources/xot-base-resource.md](./consolidated/filament/resources/xot-base-resource.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2qCnWM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

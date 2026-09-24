@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://stackoverflow.com/questions/39213022/custom-laravel-relations
  * @see https://github.com/johnnyfreeman/laravel-custom-relation
@@ -13,7 +17,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Model;
@@ -24,11 +32,19 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
+<<<<<<< HEAD
  */
 <<<<<<< HEAD
 // @phpstan-ignore trait.unused
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ *
+ * @phpstan-ignore trait.unused
+ */
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 trait HasCustomRelations
 {
     public function customRelation(

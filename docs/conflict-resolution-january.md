@@ -14,15 +14,22 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_bY44Xj
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
     - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`
     - `Modules/Quaeris/app/Datas/DashboardFilterData.php.backup`
     - `Modules/Xot/tests/Unit/metatagdatatest.php.backup`
     - `Modules/Xot/tests/pest.php.backup`
+<<<<<<< HEAD
 <<<<<<< .merge_file_1aGeod
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -35,9 +42,14 @@
 <<<<<<< HEAD
     - `Modules/Xot/tests/pest.php.backup`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     - `Modules/Xot/tests/pest.php.backup`
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bY44Xj
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -10,7 +10,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
+=======
+use Modules\Tenant\Services\TenantService;
+>>>>>>> 930f8146 (Check & fix styling)
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
@@ -57,18 +61,26 @@ class GetModulesNavigationItems
     {
         $navs = [];
 
+<<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
 <<<<<<< .merge_file_HEipsd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_fYGM2p
+=======
+=======
+        $modules = TenantService::allModules();
+        // TenantService::allModules() restituisce sempre array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -183,18 +195,26 @@ class GetModulesNavigationItems
      */
     public function getCachedModuleConfigs(): array
     {
+<<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
 <<<<<<< .merge_file_HEipsd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_fYGM2p
+=======
+=======
+        $modules = TenantService::allModules();
+        // TenantService::allModules() restituisce sempre array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 

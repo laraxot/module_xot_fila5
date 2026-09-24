@@ -151,6 +151,7 @@ class YourModel extends BaseModel
 - <nome progetto>able code structure
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_QTum9m
 =======
 - <nome progetto>able code structure
@@ -158,7 +159,11 @@ class YourModel extends BaseModel
 <<<<<<< HEAD
 >>>>>>> .merge_file_yibIJO
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Predictable code structure
 =======
 - <nome progetto>able code structure
@@ -168,12 +173,17 @@ class YourModel extends BaseModel
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_yibIJO
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - <nome progetto>able code structure
 >>>>>>> .merge_file_KXldmT
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Easier onboarding for developers
 
 ## Migration Strategy

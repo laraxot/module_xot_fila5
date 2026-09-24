@@ -31,11 +31,15 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_H9Vcmd
    public function getFormSchema(): array
 =======
    public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
+=======
+   public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -250,11 +254,15 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_H9Vcmd
 public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
+=======
+public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -433,11 +441,15 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_H9Vcmd
     public function getFormSchema(): array
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -506,11 +518,15 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_H9Vcmd
     public function getFormSchema(): array
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -774,11 +790,15 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_H9Vcmd
 public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
+=======
+public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -1050,11 +1070,15 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_H9Vcmd
     public function getFormSchema(): array
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

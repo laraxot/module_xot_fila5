@@ -51,6 +51,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_pb4y2z
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
@@ -69,10 +70,16 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_9nmDCT
 =======
     public function getFormSchema(): array { /* ... */ }
+<<<<<<< HEAD
 >>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -183,6 +190,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_pb4y2z
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -201,10 +209,16 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 >>>>>>> .merge_file_9nmDCT
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Section::make(__('filament.section.general'))
@@ -379,6 +393,7 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_pb4y2z
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -397,10 +412,16 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_9nmDCT
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             ...parent::getFormSchema(),
@@ -481,6 +502,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_pb4y2z
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -499,10 +521,16 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_9nmDCT
 =======
 public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array

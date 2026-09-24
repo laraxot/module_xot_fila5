@@ -8,6 +8,7 @@
 <<<<<<< .merge_file_eZplJI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -23,11 +24,16 @@
 - [Modulo Lang](../lang/docs/readme.md) - Gestione multilingua e traduzioni
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PSRzTN
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Piano Consolidamento Docs](DOCS_CONSOLIDATION_PLAN.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -77,10 +83,12 @@
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
 =======
 - [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
@@ -88,6 +96,11 @@
 =======
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
 >>>>>>> .merge_file_PSRzTN
+=======
+=======
+- [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 
@@ -218,6 +231,7 @@
 <<<<<<< .merge_file_eZplJI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -233,17 +247,23 @@
 - [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PSRzTN
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
 
 ## Collegamenti ai Moduli
 <<<<<<< .merge_file_eZplJI
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -287,11 +307,16 @@
 * [links.md](../../../themes/one/docs/links.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_PSRzTN
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Cms](../Cms/docs/README.md) - Frontend
 - [UI](../UI/docs/README.md) - Componenti
 - [User](../User/docs/README.md) - Utenti e Permessi
@@ -331,10 +356,12 @@
 * [links.md](../../../Themes/One/docs/links.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [links.md](../../../Themes/One/docs/links.md)
 =======
 * [links.md](../../../Themes/One/docs/links.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [links.md](../../../Themes/One/docs/links.md)
@@ -342,3 +369,8 @@
 =======
 * [links.md](../../../Themes/One/docs/links.md)
 >>>>>>> .merge_file_PSRzTN
+=======
+=======
+* [links.md](../../../Themes/One/docs/links.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

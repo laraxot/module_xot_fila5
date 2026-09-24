@@ -21,6 +21,7 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di xra.md
+<<<<<<< HEAD
 * [xra.md](../../../xot/project_docs/install/xra.md)
 * [xra.md](../../../tenant/project_docs/it/xra.md)
 * [xra.md](../../../tenant/project_docs/it/config/xra.md)
@@ -28,3 +29,15 @@ return [
 ### Versione Incoming
 
 ---
+=======
+* [xra.md](../../../Xot/docs/install/xra.md)
+* [xra.md](../../../Tenant/docs/it/xra.md)
+* [xra.md](../../../Tenant/docs/it/config/xra.md)
+* [xra.md](../../../xot/docs/install/xra.md)
+* [xra.md](../../../tenant/docs/it/xra.md)
+* [xra.md](../../../tenant/docs/it/config/xra.md)
+
+### Versione Incoming
+
+---
+>>>>>>> 930f8146 (Check & fix styling)

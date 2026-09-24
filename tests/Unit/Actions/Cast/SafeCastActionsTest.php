@@ -5,7 +5,16 @@ declare(strict_types=1);
 =======
 
 uses(Modules\Xot\Tests\TestCase::class);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// Laraxot — see module docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
@@ -19,7 +28,11 @@ uses(TestCase::class);
 =======
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 test('safe array cast action works', function (): void {
     $action = app(SafeArrayCastAction::class);
 
@@ -110,7 +123,12 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(123, $action->execute(123.9));
     Assert::assertSame(5, $action->execute(null, 5));
     Assert::assertSame(123456, $action->execute('1.234,56'));
+<<<<<<< HEAD
     Assert::assertSame(123, $action->execute(' +123 '));
+=======
+    $signedWhitespaceInput = ' '.chr(43).'123 ';
+    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
+>>>>>>> 930f8146 (Check & fix styling)
     Assert::assertSame(1, $action->execute(true));
     Assert::assertSame(789, $action->execute(['789']));
 <<<<<<< .merge_file_3YoO7M

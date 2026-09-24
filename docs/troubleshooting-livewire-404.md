@@ -25,10 +25,12 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 APP_URL=http://quaeris.local
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 APP_URL=http://quaeris.local
 =======
 APP_URL=http://healthcare_app.local
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 APP_URL=http://healthcare_app.local
@@ -36,6 +38,11 @@ APP_URL=http://healthcare_app.local
 =======
 APP_URL=http://quaeris.local
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+APP_URL=http://quaeris.local
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Browser accede a
 http://127.0.0.1:8000
@@ -47,10 +54,12 @@ http://127.0.0.1:8000
 **Risultato**: Livewire genera URL con `quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Risultato**: Livewire genera URL con `quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
 =======
 **Risultato**: Livewire genera URL con `healthcare_app.local` ma browser invia richieste a `127.0.0.1:8000` → 404
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Risultato**: Livewire genera URL con `healthcare_app.local` ma browser invia richieste a `127.0.0.1:8000` → 404
@@ -58,6 +67,11 @@ http://127.0.0.1:8000
 =======
 **Risultato**: Livewire genera URL con `quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+**Risultato**: Livewire genera URL con `quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## ✅ Soluzioni
 
@@ -79,10 +93,12 @@ APP_URL=http://localhost:8000
 APP_URL=http://quaeris.local
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 APP_URL=http://quaeris.local
 =======
 APP_URL=http://healthcare_app.local
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 APP_URL=http://healthcare_app.local
@@ -90,6 +106,11 @@ APP_URL=http://healthcare_app.local
 =======
 APP_URL=http://quaeris.local
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+APP_URL=http://quaeris.local
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 **Dopo la modifica**:
@@ -106,15 +127,22 @@ php artisan optimize:clear
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_mweJB5
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Se vuoi usare `quaeris.local`, aggiungi al file hosts:
 
 **Linux/Mac**: `/etc/hosts`
 ```
 127.0.0.1 quaeris.local
+<<<<<<< HEAD
 <<<<<<< .merge_file_em9cNz
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -127,11 +155,16 @@ Se vuoi usare `healthcare_app.local`, aggiungi al file hosts:
 127.0.0.1 healthcare_app.local
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 **Windows**: `C:\Windows\System32\drivers\etc\hosts`
@@ -141,14 +174,21 @@ Se vuoi usare `healthcare_app.local`, aggiungi al file hosts:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_mweJB5
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 127.0.0.1 quaeris.local
 ```
 
 Poi accedi tramite: `http://quaeris.local:8000`
+<<<<<<< HEAD
 <<<<<<< .merge_file_em9cNz
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -160,11 +200,16 @@ Poi accedi tramite: `http://quaeris.local:8000`
 Poi accedi tramite: `http://healthcare_app.local:8000`
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Soluzione 3: Trusted Proxies (Per Ambienti Complessi)
 
@@ -241,10 +286,12 @@ APP_URL=http://127.0.0.1:8000
 APP_URL=http://quaeris.local
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 APP_URL=http://quaeris.local
 =======
 APP_URL=http://healthcare_app.local
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 APP_URL=http://healthcare_app.local
@@ -252,6 +299,11 @@ APP_URL=http://healthcare_app.local
 =======
 APP_URL=http://quaeris.local
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+APP_URL=http://quaeris.local
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Produzione
@@ -264,10 +316,12 @@ APP_URL=http://quaeris.local
 APP_URL=https://quaeris.com
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 APP_URL=https://quaeris.com
 =======
 APP_URL=https://healthcare_app.com
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 APP_URL=https://healthcare_app.com
@@ -275,6 +329,11 @@ APP_URL=https://healthcare_app.com
 =======
 APP_URL=https://quaeris.com
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+APP_URL=https://quaeris.com
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## 🔧 Comandi Rapidi Fix
@@ -312,10 +371,12 @@ php artisan tinker --execute="echo route('livewire.update');"
 **Categoria**: Troubleshooting
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Categoria**: Troubleshooting
 =======
 **Categoria**: Troubleshooting
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Categoria**: Troubleshooting
@@ -323,3 +384,8 @@ php artisan tinker --execute="echo route('livewire.update');"
 =======
 **Categoria**: Troubleshooting
 >>>>>>> .merge_file_mweJB5
+=======
+=======
+**Categoria**: Troubleshooting
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

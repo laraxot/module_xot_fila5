@@ -99,7 +99,11 @@ describe('Fix Structure', function (): void {
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Actions', 0o755, true);
         file_put_contents($this->testDir.'/Actions/test.php', 'echo "test";');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         // Copiamo lo script nella directory di test
         $script = base_path('../bashscripts/fix_structure.sh');
@@ -139,7 +143,11 @@ describe('Fix Structure', function (): void {
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Config', 0o755, true);
         file_put_contents($this->testDir.'/Config/test.php', 'echo "test";');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         // Copiamo lo script nella directory di test
         $script = base_path('../bashscripts/fix_structure.sh');
@@ -185,7 +193,11 @@ describe('Fix Structure', function (): void {
 
         mkdir($this->testDir.'/config', 0o755, true);
         file_put_contents($this->testDir.'/config/secondary.php', 'echo "secondary";');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         // Copiamo lo script nella directory di test
         $script = base_path('../bashscripts/fix_structure.sh');
@@ -216,6 +228,10 @@ describe('Fix Structure', function (): void {
         Assert::assertFileExists($this->testDir.'/config/secondary.php');
         Assert::assertDirectoryDoesNotExist($this->testDir.'/Config');
         Assert::assertDirectoryExists($this->testDir.'/config_old');
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     });
 });

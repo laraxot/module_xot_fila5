@@ -254,6 +254,7 @@ class DashboardTest extends TestCase
 <<<<<<< .merge_file_mZEass
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -268,11 +269,16 @@ class DashboardTest extends TestCase
 - [Documentazione Modulo Xot](../laravel/modules/xot/docs/filament/dashboard-pages.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_0ZsOYt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [XotBasePanelProvider](../laravel/Modules/Xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](../laravel/Modules/Xot/docs/filament/filament_integration.md) - Integrazione generale Filament
 - [Best Practices](../laravel/Modules/Xot/docs/BEST-PRACTICES.md) - Best practices generali
@@ -293,10 +299,12 @@ class DashboardTest extends TestCase
 **Moduli da implementare**: 13 moduli identificati
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Moduli da implementare**: 13 moduli identificati
 =======
 **Moduli da implementare**: 13 moduli identificati
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Moduli da implementare**: 13 moduli identificati
@@ -304,3 +312,8 @@ class DashboardTest extends TestCase
 =======
 **Moduli da implementare**: 13 moduli identificati
 >>>>>>> .merge_file_0ZsOYt
+=======
+=======
+**Moduli da implementare**: 13 moduli identificati
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

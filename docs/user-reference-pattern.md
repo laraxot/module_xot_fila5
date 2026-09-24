@@ -229,10 +229,12 @@ if ($user instanceof UserContract) {
 *Ultimo aggiornamento: 2025-01-10*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
 =======
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 2025-01-10*
@@ -240,3 +242,8 @@ if ($user instanceof UserContract) {
 =======
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> .merge_file_29BDM2
+=======
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

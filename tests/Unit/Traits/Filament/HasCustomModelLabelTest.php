@@ -6,7 +6,9 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -14,6 +16,11 @@ uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_GKqUIX
+=======
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\Fixtures\Traits\BreadcrumbProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromModelNameProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromPropertyProbe;
@@ -30,7 +37,11 @@ uses(TestCase::class);
 =======
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('gets model label from property', function (): void {
     Assert::assertSame('Custom Label', ModelLabelFromPropertyProbe::getModelLabel());
 });

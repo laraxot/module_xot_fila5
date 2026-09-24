@@ -175,11 +175,16 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 
 // ✅ CORRETTO

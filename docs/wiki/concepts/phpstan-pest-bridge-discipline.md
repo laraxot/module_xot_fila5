@@ -7,6 +7,7 @@ created: 2026-06-10
 <<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 updated: 2026-08-31
 qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge"
 =======
@@ -28,6 +29,7 @@ updated: 2026-06-30
 qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helper"
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -35,6 +37,12 @@ qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helpe
 updated: 2026-08-31
 qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge"
 >>>>>>> .merge_file_6ORiKY
+=======
+=======
+updated: 2026-06-30
+qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helper"
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
@@ -47,15 +55,21 @@ related:
   - ../../../../../../docs/wiki/rules/pest-phpstan-bridge.md
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../../../../../docs/wiki/rules/pest-phpstan-bridge.md
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
   - ../../../../../../docs/wiki/rules/pest-phpstan-bridge.md
 >>>>>>> .merge_file_6ORiKY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
   - ../../../../../../docs/wiki/skills/phpstan-pest-remediation.md
 ---
 
@@ -64,11 +78,14 @@ related:
 <<<<<<< .merge_file_deSduM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_6ORiKY
+=======
+>>>>>>> da9ae01a0 (.)
 Xot e' il posto giusto per pattern condivisi di test/static analysis, ma **non**
 si devono stubbare le funzioni Pest nei namespace test.
 
@@ -90,8 +107,12 @@ si devono stubbare le funzioni Pest nei namespace test.
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il bridge non deve cambiare il framework dei test.
 
 ## Contratto
@@ -100,6 +121,7 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 - PHPStan resta governato dal solo `laravel/phpstan.neon` utente.
 - Bridge/helper condivisi devono rendere tipizzabili le assertion ricorrenti, non mascherare errori.
 - Bridge `PestFunctionBridge.php`: `uses|test|it|describe` → `void`; `expect()` → `PestExpectation` (evita `function.resultUnused` e catene `function.void`).
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Rigenerare bridge: `php bashscripts/tools/generate-pest-phpstan-bridge.php` (195 namespace, 2026-06-30).
@@ -112,11 +134,18 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 - `uses(\Modules\<M>\Tests\TestCase::class)` sempre **dopo** gli `import use` nel file Pest.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6ORiKY
+=======
+=======
+- Rigenerare bridge: `php bashscripts/tools/generate-pest-phpstan-bridge.php` (195 namespace, 2026-06-30).
+- `uses(\Modules\<M>\Tests\TestCase::class)` sempre **dopo** gli `import use` nel file Pest.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Helper XotBaseTestCase (usare nei moduli)
 
@@ -139,6 +168,7 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 - **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [phpstan-best-practices](../phpstan-best-practices.md) §7–8)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_AxnXaA
 - **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [PHPSTAN-BEST-PRACTICES](../PHPSTAN-BEST-PRACTICES.md) §7–8)
 =======
@@ -148,12 +178,17 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 =======
 >>>>>>> .merge_file_FKJxM6
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [phpstan-best-practices](../phpstan-best-practices.md) §7–8)
 >>>>>>> .merge_file_6ORiKY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Tenant:** non ridefinire `mockService()`; non re-tipizzare `$model`/`$baseModel` se il parent ha `mixed`
 - **UI:** `createStub` + `willReturn(null)` per action mock; no `andReturnNull()` Mockery
 
@@ -165,6 +200,7 @@ Centralizzare solo se il pattern e' usato da piu' moduli:
 
 - helper per database assertion senza `$this` ambiguo;
 <<<<<<< .merge_file_deSduM
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
@@ -185,12 +221,18 @@ Centralizzare solo se il pattern e' usato da piu' moduli:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
 >>>>>>> .merge_file_6ORiKY
+=======
+=======
+- helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - wrapper assertion per stringhe, array shape o class-string.
 
 Non centralizzare fix one-shot di un singolo test Activity.

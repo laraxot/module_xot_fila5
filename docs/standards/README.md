@@ -1,10 +1,14 @@
 # Standard di Codice
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_jTS8Gk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Hp58sm
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,11 +16,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_D5BShy
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3LC8py
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel progetto.
 
 ## File Contenuti
@@ -37,6 +46,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](bashscripts/project_docs/it/readme.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_Hp58sm
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -47,6 +57,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](bashscripts/project_docs/it/readme.md)
 >>>>>>> .merge_file_D5BShy
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [README.md](bashscripts/project_docs/readme.md)
@@ -54,6 +65,10 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3LC8py
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -84,10 +99,14 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_jTS8Gk
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Hp58sm
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -185,9 +204,14 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_D5BShy
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3LC8py
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -232,10 +256,14 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< HEAD
 
 # Standard Xot: Ereditarietà dei Modelli
 <<<<<<< .merge_file_jTS8Gk
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Hp58sm
 
 # Standard Xot: Ereditarietà dei Modelli
@@ -310,6 +338,13 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
+=======
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -450,11 +485,25 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
 ## Collegamenti
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 - [Modello Doctor (Patient)](../../../patient/docs/models/doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../patient/docs/readme.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/docs/database/migrations.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+- [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
+- [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
+- [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
+- [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
+- [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
+>>>>>>> da9ae01a0 (.)
 
 ## Regola generale
 
@@ -476,11 +525,24 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
+>>>>>>> da9ae01a0 (.)
 // Aggiungere qui altri moduli se necessario
 <<<<<<< .merge_file_jTS8Gk
 >>>>>>> .merge_file_D5BShy
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3LC8py
+=======
+// Aggiungere qui altri moduli se necessario
+>>>>>>> .merge_file_D5BShy
+=======
+// Aggiungere qui altri moduli se necessario
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -13,7 +13,11 @@ use Filament\Pages\Page;
 <<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -229,7 +233,11 @@ abstract class XotBasePage extends Page implements HasForms
         $schema = $schema->components($this->resolveFormSchemaForXotPage());
 =======
         $schema = $schema->components($this->getFormSchema());
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         $schema->statePath('data');
 
@@ -308,7 +316,11 @@ abstract class XotBasePage extends Page implements HasForms
 
     /**
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * Ottiene il tempo di debounce per l'autosave in millisecondi.
      * Sovrascrivere nelle classi figlie per modificare questo valore.
      *

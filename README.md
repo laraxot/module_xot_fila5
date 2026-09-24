@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_yI3iJv
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_foEZEO
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 id: module-xot-readme
 title: "Xot — Fondazione Architetturale di Laraxot"
@@ -72,8 +75,12 @@ Maintain `declare(strict_types=1);` in PHP, adhere to project PHPStan config, an
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 > **Version**: 3.0 - DRY + KISS Documentation Refactor
 > **Status**: ✅ Core Framework Module
 > **Last Updated**: December 2025
@@ -584,9 +591,15 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 <<<<<<< HEAD
 **Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_foEZEO
+=======
+=======
+**Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

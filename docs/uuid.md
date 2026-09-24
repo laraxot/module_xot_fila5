@@ -3,12 +3,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TIj5kz
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_TIj5kz
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 module: theme
 topic: uuid
 canonical: ../../../Themes/docs/shared-components/UUID.txt
@@ -57,9 +64,15 @@ canonical: ../../../Themes/docs/shared-components/UUID.txt
 See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
 >>>>>>> .merge_file_4hNrlA
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_p23x9k
+=======
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

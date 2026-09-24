@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/shuvroroy/filament-spatie-laravel-health/tree/main
  */
@@ -12,7 +16,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
@@ -105,7 +113,11 @@ class HealthPage extends XotBasePage
          * @phpstan-ignore-next-line argument.type
          */
         Health::checks($checks);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         Artisan::call(RunHealthChecksCommand::class);
         $this->dispatch('refresh-component');
         Notification::make()

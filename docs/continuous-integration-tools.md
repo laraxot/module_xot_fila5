@@ -3,12 +3,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_D8BTfa
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_D8BTfa
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 module: theme
 topic: continuous-integration-tools
 canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
@@ -132,9 +139,15 @@ See canonical documentation: ../../../Themes/docs/shared-components/_continuous_
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vQ8hbh
+=======
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

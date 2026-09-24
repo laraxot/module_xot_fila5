@@ -171,7 +171,11 @@ class SafeBooleanCastAction
                     array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $trueValues),
 =======
                     array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $trueValues),
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     true,
                 )
             ) {
@@ -185,7 +189,11 @@ class SafeBooleanCastAction
                     array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $falseValues),
 =======
                     array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $falseValues),
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     true,
                 )
             ) {

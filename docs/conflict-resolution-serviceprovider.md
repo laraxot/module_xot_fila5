@@ -32,10 +32,12 @@ Questa scelta garantisce:
 - [Best Practices Provider](best-practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Provider](best-practices.md)
 =======
 - [Best Practices Provider](./BEST-PRACTICES.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best Practices Provider](./BEST-PRACTICES.md)
@@ -43,12 +45,18 @@ Questa scelta garantisce:
 =======
 - [Best Practices Provider](best-practices.md)
 >>>>>>> .merge_file_pgjINk
+=======
+=======
+- [Best Practices Provider](./BEST-PRACTICES.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
 <<<<<<< .merge_file_BsSLdq
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](best-practices.md)
@@ -69,6 +77,7 @@ Questa scelta garantisce:
 <<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](./best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [docs/BEST-PRACTICES.md](./best-practices.md)
@@ -76,3 +85,8 @@ Questa scelta garantisce:
 =======
 - [docs/BEST-PRACTICES.md](best-practices.md)
 >>>>>>> .merge_file_pgjINk
+=======
+=======
+- [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

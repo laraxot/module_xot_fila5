@@ -31,10 +31,20 @@ class ListSessions extends XotBaseListRecords
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 =======
 
     #[\Override]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, Stack>
+     */
+    #[\Override]
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function getGridTableColumns(): array
     {
         return [
@@ -42,7 +52,17 @@ class ListSessions extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    /**
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
+    #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> 930f8146 (Check & fix styling)
     public function getTableColumns(): array
     {
         return [

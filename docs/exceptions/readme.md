@@ -34,9 +34,12 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_pcsLlI
 <<<<<<< HEAD
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
@@ -54,6 +57,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 >>>>>>> .merge_file_NjHrpb
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
@@ -64,6 +68,12 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> .merge_file_20VonI
+=======
+=======
+- [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
+- [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -142,10 +152,14 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_pvmgFJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_pcsLlI
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -237,8 +251,13 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_NjHrpb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_20VonI
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

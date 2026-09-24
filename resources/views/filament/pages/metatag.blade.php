@@ -10,7 +10,11 @@ declare(strict_types=1);
 ?>
 <x-filament-panels::page>
     <x-filament-schemas::form wire:submit="save">
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         {{ $this->form }}
 
         <x-filament::actions
@@ -21,5 +25,9 @@ declare(strict_types=1);
     </form>
 =======
     </x-filament-schemas::form>
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 </x-filament-panels::page>

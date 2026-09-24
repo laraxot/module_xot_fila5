@@ -9,7 +9,11 @@ use Illuminate\Contracts\Support\Htmlable;
 <<<<<<< HEAD
 /** @phpstan-ignore trait.unused */
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 trait NavigationPageLabelTrait
 {
     use TransTrait;

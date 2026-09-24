@@ -22,15 +22,21 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Last Check**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Last Check**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_42nkMA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis
@@ -232,15 +238,21 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_42nkMA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: Analysis Complete
 
 ## 📊 Overview
@@ -307,10 +319,12 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 - **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
 =======
 - **Impact**: Could lead to un<nome progetto>able behavior or fatal errors if not addressed.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Impact**: Could lead to un<nome progetto>able behavior or fatal errors if not addressed.
@@ -318,6 +332,11 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 =======
 - **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
 >>>>>>> .merge_file_42nkMA
+=======
+=======
+- **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Action**: Requires manual investigation and resolution.
 
 ---
@@ -347,15 +366,21 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_42nkMA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
 1.  **Immediate**: Address the security vulnerability.
@@ -386,15 +411,21 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **Last Check**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **Last Check**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_42nkMA
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis
@@ -620,6 +651,7 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 *Priority: HIGH (Foundation Module)*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
 =======
@@ -627,6 +659,7 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *
@@ -637,3 +670,9 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
 >>>>>>> .merge_file_42nkMA
+=======
+=======
+*Status: Ready for PHPMD Analysis*
+*Priority: HIGH (Foundation Module)*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

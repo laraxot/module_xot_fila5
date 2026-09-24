@@ -273,6 +273,7 @@ Per migrare le rotte esistenti:
 <<<<<<< .merge_file_8BYeal
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -286,11 +287,16 @@ Per migrare le rotte esistenti:
 - [Collegamenti al Modulo Lang](../../lang/docs/packages/localization.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vhlu90
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md)
 - [Documentazione Generale](./documentation.md)
@@ -306,12 +312,14 @@ Per migrare le rotte esistenti:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Collegamenti alla Root](../../../../docs/routing.md)
 ## Collegamenti tra versioni di routing.md
 * [routing.md](../../../../../docs/routing.md)
 * [routing.md](../../cms/docs/frontoffice/routing.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Collegamenti alla Root](../../../../docs/routing.md)
@@ -321,3 +329,7 @@ Per migrare le rotte esistenti:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vhlu90
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

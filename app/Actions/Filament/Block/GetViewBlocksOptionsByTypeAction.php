@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * -WIP.
  */
@@ -12,7 +16,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Actions\Filament\Block;
 
 use Illuminate\Support\Arr;
@@ -87,10 +95,13 @@ class GetViewBlocksOptionsByTypeAction
         Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
 
         $opts = Arr::mapWithKeys($files, function (string $path) use ($img, $type, $fixPathAction): array {
+<<<<<<< HEAD
 
 <<<<<<< .merge_file_iyovLL
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 
         $fixPathAction = app(FixPathAction::class);
@@ -100,9 +111,13 @@ class GetViewBlocksOptionsByTypeAction
             // Verifichiamo che il percorso sia una stringa
             Assert::string($path, 'Il percorso del file deve essere una stringa');
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_p2b7i7
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             // Normalizziamo il percorso
             $pathStr = $fixPathAction->execute($path);
             Assert::stringNotEmpty($pathStr, 'Il percorso normalizzato non può essere vuoto');

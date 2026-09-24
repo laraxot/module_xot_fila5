@@ -93,6 +93,7 @@ class {Model} extends {Package}{Model}
 <<<<<<< .merge_file_joIHcA
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -105,11 +106,16 @@ class {Model} extends {Package}{Model}
 - **[Model Architecture](models/model_architecture.md)** - Laraxot model patterns
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6jzuVe
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **[User Module](../User/docs/third-party-model-patterns.md)** - Permission & Role integration
 - **[Activity Module](../Activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
 
@@ -179,10 +185,12 @@ class Feature extends PackageFeature
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
 =======
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
@@ -190,3 +198,8 @@ class Feature extends PackageFeature
 =======
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
 >>>>>>> .merge_file_6jzuVe
+=======
+=======
+**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -6,7 +6,9 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -14,6 +16,11 @@ uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_gIbcKB
+=======
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
 use Modules\Xot\Actions\GetModelTypeByModelAction;
@@ -28,7 +35,11 @@ uses(TestCase::class);
 =======
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 it('resolves model types correctly', function (): void {
     Config::set('morph_map', ['log' => Log::class]);
 

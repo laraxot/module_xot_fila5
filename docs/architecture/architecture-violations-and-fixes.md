@@ -343,10 +343,12 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
@@ -354,6 +356,12 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2lcbNG
+=======
+=======
+- [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../user/project_docs/traits_complete_guide.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 
 ---
@@ -370,6 +378,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 **Responsabile**: Team Architettura Laraxot
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Responsabile**: Team Architettura Laraxot
 =======
 ---
@@ -377,13 +386,20 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 **Stato**: ✅ Pattern Documentato e Implementato
 **Responsabile**: Team Architettura Laraxot
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 ---
 
 **Stato**: ✅ Pattern Documentato e Implementato
 **Responsabile**: Team Architettura Laraxot
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 **Responsabile**: Team Architettura Laraxot
 >>>>>>> .merge_file_2lcbNG
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

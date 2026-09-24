@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H5xSyM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -150,14 +156,21 @@ try {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_H5xSyM
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+<<<<<<< HEAD
 <<<<<<< .merge_file_A36k1D
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -170,9 +183,14 @@ try {
 <<<<<<< HEAD
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H5xSyM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

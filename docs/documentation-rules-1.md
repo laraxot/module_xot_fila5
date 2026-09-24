@@ -9,11 +9,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_bzc4yq
+=======
+>>>>>>> da9ae01a0 (.)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
@@ -30,11 +33,20 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bzc4yq
+=======
+=======
+- [README](../README.md) - Panoramica del modulo Xot
+- [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
+- [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Validazione dei Collegamenti
 
@@ -50,12 +62,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Root](../../../docs/documento.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 =======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
@@ -65,6 +79,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 >>>>>>> .merge_file_bzc4yq
+=======
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Formato Non Corretto
@@ -74,10 +94,33 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_bzc4yq
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
@@ -122,6 +165,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bzc4yq
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Checklist di Validazione
@@ -137,10 +183,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
@@ -148,6 +196,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> .merge_file_bzc4yq
+=======
+=======
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Validazione dei Collegamenti
 
@@ -163,12 +216,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Root](../../../docs/documento.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 =======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
@@ -178,6 +233,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 >>>>>>> .merge_file_bzc4yq
+=======
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Formato Non Corretto
@@ -187,10 +248,33 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_bzc4yq
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
@@ -235,6 +319,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bzc4yq
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Checklist di Validazione
@@ -250,10 +337,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
@@ -261,6 +350,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> .merge_file_bzc4yq
+=======
+=======
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Validazione dei Collegamenti
 
@@ -276,12 +370,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Root](../../../docs/documento.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 =======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
@@ -291,6 +387,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 >>>>>>> .merge_file_bzc4yq
+=======
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Formato Non Corretto
@@ -300,10 +402,33 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_bzc4yq
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
@@ -348,6 +473,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_bzc4yq
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Checklist di Validazione
@@ -447,10 +575,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 =======
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - I collegamenti bidirezionali sono essenziali per la navigabilità
@@ -458,3 +588,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 >>>>>>> .merge_file_bzc4yq
+=======
+=======
+- I collegamenti bidirezionali sono essenziali per la navigabilità
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -48,12 +48,14 @@ Modules/[Nome]/
 - [Struttura dei Moduli](structure.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole del Progetto](rules.md)
 - [Struttura dei Moduli](structure.md)
 =======
 - [Regole del Progetto](../docs/RULES.md)
 - [Struttura dei Moduli](../docs/STRUCTURE.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Regole del Progetto](../docs/RULES.md)
@@ -63,12 +65,19 @@ Modules/[Nome]/
 - [Regole del Progetto](rules.md)
 - [Struttura dei Moduli](structure.md)
 >>>>>>> .merge_file_joRkU1
+=======
+=======
+- [Regole del Progetto](../docs/RULES.md)
+- [Struttura dei Moduli](../docs/STRUCTURE.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
 * [documentation.md](../../../Xot/docs/documentation.md)
 * [documentation.md](../../../Xot/docs/guidelines/documentation.md)
 * [documentation.md](../../../Cms/docs/roadmap/features/documentation.md)
 <<<<<<< .merge_file_Uc9np8
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -113,9 +122,14 @@ https://beyondco.de/docs/laravel-apidoc-generator/getting-started/documenting-yo
 <<<<<<< HEAD
 https://flarum.org/
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://flarum.org/
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_joRkU1
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

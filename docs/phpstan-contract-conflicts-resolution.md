@@ -1,8 +1,11 @@
 - **2025-11-17 – UserContract Property Map**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **[DATE] – UserContract Property Map**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
   - Aggiunti i metadata `@property` su `Modules\Xot\Contracts\UserContract` per `name`, `currentTeam`, `roles`, `teams`, `tenants`. PHPStan livello 10 richiede che i contract descrivano le magic properties utilizzate nei moduli esterni (policy, comandi, widget).
   - Quando una proprietà proviene da una relazione Eloquent (es. `currentTeam`), documentarla come `@property TeamContract|null $currentTeam` e ricordare che i consumer dovrebbero comunque utilizzare `getRelationValue()` o i metodi della relazione per evitare accessi diretti.
 
@@ -22,6 +25,7 @@ Documentazione della risoluzione dei conflitti tra contratti e classi Eloquent n
 - `forceFill(array $attributes): static` - Conflitto con signature di Eloquent
 - `withoutRelations(): static` - Conflitto con signature di Eloquent
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 **Solution**: Rimossi tutti i metodi che duplicavano funzionalità Eloquent native
 =======
@@ -30,6 +34,10 @@ Documentazione della risoluzione dei conflitti tra contratti e classi Eloquent n
 
 **Solution**: Rimossi tutti i metodi che duplicavano funzionalità Eloquent native o che introducevano incompatibilità di signature.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+**Solution**: Rimossi tutti i metodi che duplicavano funzionalità Eloquent native
+>>>>>>> da9ae01a0 (.)
 
 ### 2. UserContract Simplification
 **Problem**: Il `UserContract` era troppo complesso e conteneva metodi in conflitto
@@ -86,7 +94,11 @@ interface UserContract
 - Proper exception handling for filesystem operations
 
 ### 4. Uso corretto di `dddx()`
+<<<<<<< HEAD
 **Contesto**: la funzione `dddx()` è definita nel file `Modules/Xot/Helpers/Helper.php` e viene autocaricata tramite la sezione `files` del `composer.json` del modulo Xot.
+=======
+**Contesto**: la funzione `dddx()` è definita nel file `Modules/Xot/helpers/Helper.php` e viene autocaricata tramite la sezione `files` del `composer.json` del modulo Xot.
+>>>>>>> da9ae01a0 (.)
 **Regola**: quando viene richiamata all'interno di classi namespaced (es. componenti Blade/Filament) va utilizzata come funzione globale (`\dddx()`), evitando `use function` inutili o riferimenti a namespace inesistenti.
 **Esempio**:
 ```php
@@ -108,7 +120,11 @@ Questo garantisce che PHPStan riconosca la funzione già caricata via composer e
 4. ✅ `Modules/Xot/app/Contracts/ProfileContract.php`
 
 ### Helper Fixed
+<<<<<<< HEAD
 1. ✅ `Modules/Xot/Helpers/Helper.php` - Complete rewrite
+=======
+1. ✅ `Modules/Xot/helpers/Helper.php` - Complete rewrite
+>>>>>>> da9ae01a0 (.)
 
 ### Components Fixed
 1. ✅ `Modules/Xot/app/View/Components/XDebug.php` - Function import added
@@ -190,7 +206,11 @@ Il modulo Xot è stato completamente risolto:
 **Files Fixed**: 6 contracts + 2 helpers + 1 component
 **PHPStan Errors**: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Pattern Applied**: Contract simplification + Safe functions
 =======
 **Pattern Applied**: Contract simplification + Safe functions
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Pattern Applied**: Contract simplification + Safe functions
+>>>>>>> da9ae01a0 (.)

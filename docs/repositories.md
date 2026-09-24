@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_x2o4t2
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Gestione dei Repository
 
 ## Repository Pattern
@@ -146,7 +150,10 @@ Tracker gathers a lot of information from your requests to identify and store:
 https://github.com/antonioribeiro/tracker
 
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_qnysxo
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -165,9 +172,14 @@ http://andersonandra.de/l5-repository/
 <<<<<<< HEAD
 https://www.programmersought.com/article/8489242324/
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://www.programmersought.com/article/8489242324/
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_x2o4t2
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
