@@ -20,7 +20,6 @@ trait HasXotFactory
     /**
      * Create a new factory instance for the model.
      *
-     *
      * @return TFactory
      */
     protected static function newFactory()

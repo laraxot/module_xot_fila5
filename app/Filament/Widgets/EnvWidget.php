@@ -11,14 +11,12 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * @property Schema $form
  */
 class EnvWidget extends XotBaseSchemaWidget
 {
-
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
