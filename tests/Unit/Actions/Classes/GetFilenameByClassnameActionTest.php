@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_r73ho1
+=======
+<<<<<<< .merge_file_ikv3pB
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_riOtOH
 =======
 <<<<<<< .merge_file_ufWU9l
 <<<<<<< HEAD
@@ -16,6 +24,10 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_dQMLcK
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_r73ho1
+=======
+>>>>>>> .merge_file_kV3dNj
+>>>>>>> .merge_file_riOtOH
 use Modules\Xot\Actions\Classes\GetFilenameByClassnameAction;
 use Modules\Xot\Models\Log;
 use Modules\Xot\Tests\TestCase;

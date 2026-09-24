@@ -7,9 +7,18 @@ namespace Modules\Xot\Tests\Unit;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_Y4ftxM
 <<<<<<< HEAD
 use ReflectionClass;
 =======
+=======
+<<<<<<< .merge_file_ma4C2V
+use ReflectionClass;
+=======
+<<<<<<< HEAD
+use ReflectionClass;
+=======
+>>>>>>> .merge_file_5gZN7A
 <<<<<<< .merge_file_ENGPaN
 <<<<<<< HEAD
 use ReflectionClass;
@@ -18,6 +27,10 @@ use ReflectionClass;
 =======
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Y4ftxM
+=======
+>>>>>>> .merge_file_7SOVm4
+>>>>>>> .merge_file_5gZN7A
 
 use function Safe\glob;
 
@@ -62,6 +75,12 @@ describe('Xot coverage boost', function (): void {
                     Assert::assertNotEmpty($case->getLabel());
                 }
             }
+<<<<<<< .merge_file_Y4ftxM
+=======
+<<<<<<< .merge_file_ma4C2V
+            $seen++;
+=======
+>>>>>>> .merge_file_5gZN7A
 <<<<<<< HEAD
             $seen++;
 =======
@@ -75,15 +94,28 @@ describe('Xot coverage boost', function (): void {
             ++$seen;
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Y4ftxM
+=======
+>>>>>>> .merge_file_7SOVm4
+>>>>>>> .merge_file_5gZN7A
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un enum concreto');
     });
 
     test('cast and string actions resolve from container', function (): void {
         foreach (array_merge(xotBoostClasses('Actions/Cast/*.php'), xotBoostClasses('Actions/String/*.php')) as $class) {
+<<<<<<< .merge_file_Y4ftxM
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+=======
+<<<<<<< .merge_file_ma4C2V
+            $ref = new ReflectionClass($class);
+=======
+<<<<<<< HEAD
+            $ref = new ReflectionClass($class);
+=======
+>>>>>>> .merge_file_5gZN7A
 <<<<<<< .merge_file_ENGPaN
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -94,6 +126,10 @@ describe('Xot coverage boost', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Y4ftxM
+=======
+>>>>>>> .merge_file_7SOVm4
+>>>>>>> .merge_file_5gZN7A
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -104,6 +140,12 @@ describe('Xot coverage boost', function (): void {
 
     test('value objects and datas are constructible', function (): void {
         foreach (array_merge(xotBoostClasses('ValueObjects/*.php'), xotBoostClasses('Datas/*.php')) as $class) {
+<<<<<<< .merge_file_Y4ftxM
+=======
+<<<<<<< .merge_file_ma4C2V
+            $ref = new ReflectionClass($class);
+=======
+>>>>>>> .merge_file_5gZN7A
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
@@ -117,6 +159,10 @@ describe('Xot coverage boost', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Y4ftxM
+=======
+>>>>>>> .merge_file_7SOVm4
+>>>>>>> .merge_file_5gZN7A
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }

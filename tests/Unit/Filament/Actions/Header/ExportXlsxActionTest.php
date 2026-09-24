@@ -63,6 +63,16 @@ describe('ExportXlsxAction — export nativo generico su getXlsFields', function
     });
 });
 
+<<<<<<< .merge_file_xGbwfQ
 class ExporterStub extends XotBaseExporter
 {
 }
+=======
+<<<<<<< .merge_file_3JEePG
+class ExporterStub extends XotBaseExporter {}
+=======
+class ExporterStub extends XotBaseExporter
+{
+}
+>>>>>>> .merge_file_bqsIlI
+>>>>>>> .merge_file_6AsvFV

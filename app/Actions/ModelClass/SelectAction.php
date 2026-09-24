@@ -15,6 +15,7 @@ class SelectAction
     /**
      * Execute a select query.
      *
+<<<<<<< .merge_file_b65CVG
 <<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
 =======
@@ -25,6 +26,18 @@ class SelectAction
      * >>>>>>> .merge_file_4eMRLe
      *
      * @param class-string<Model> $modelClass
+=======
+     * <<<<<<< HEAD
+     *
+     * @param class-string<Model> $modelClass
+     *                                        =======
+     *                                        <<<<<<< .merge_file_4PMnzD
+     *                                        =======
+     *                                        <<<<<<< HEAD
+     *                                        <<<<<<< .merge_file_3M00Bo
+     *                                        >>>>>>> .merge_file_4eMRLe
+     * @param class-string<Model> $modelClass
+>>>>>>> .merge_file_2P97LM
      *
      * <<<<<<< .merge_file_4PMnzD
      * =======
@@ -34,7 +47,12 @@ class SelectAction
      *
      * >>>>>>> .merge_file_4eMRLe
      *
+<<<<<<< .merge_file_b65CVG
 >>>>>>> laraxot/dev
+=======
+     * >>>>>>> laraxot/dev
+     *
+>>>>>>> .merge_file_2P97LM
      * @return array<mixed>
      */
     public function execute(string $modelClass, string $sql): array

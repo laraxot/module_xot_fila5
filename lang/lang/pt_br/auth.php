@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ZHrZOe
 
+=======
+<<<<<<< .merge_file_38pCTu
+=======
+
+>>>>>>> .merge_file_exabBJ
+>>>>>>> .merge_file_Ridez8
 return [
     'failed' => 'Estas credenciais não correspondem com nossos registros.',
     'general_error' => 'Você não tem acesso para fazer isso.',

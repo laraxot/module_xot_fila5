@@ -1,4 +1,9 @@
 ---
+<<<<<<< .merge_file_u7BUtV
+=======
+<<<<<<< .merge_file_EGN3uI
+=======
+>>>>>>> .merge_file_v4jGsx
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
@@ -6,6 +11,10 @@
 <<<<<<< HEAD
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_u7BUtV
+=======
+>>>>>>> .merge_file_Dz3ArX
+>>>>>>> .merge_file_v4jGsx
 module: Xot
 topic: legacy-roadmap-and-issues
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
@@ -17,6 +26,11 @@ updated: 2026-07-15
 Documentazione canonica spostata:
 
 See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md)
+<<<<<<< .merge_file_u7BUtV
+=======
+<<<<<<< .merge_file_EGN3uI
+=======
+>>>>>>> .merge_file_v4jGsx
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
@@ -43,6 +57,10 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_u7BUtV
+=======
+>>>>>>> .merge_file_Dz3ArX
+>>>>>>> .merge_file_v4jGsx
 
 ---
 
@@ -358,6 +376,11 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+<<<<<<< .merge_file_u7BUtV
+=======
+<<<<<<< .merge_file_EGN3uI
+=======
+>>>>>>> .merge_file_v4jGsx
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
@@ -370,3 +393,7 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/legacy
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_u7BUtV
+=======
+>>>>>>> .merge_file_Dz3ArX
+>>>>>>> .merge_file_v4jGsx

@@ -1,5 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_TmAos8
+=======
+<<<<<<< .merge_file_Xb8cqw
+=======
+>>>>>>> .merge_file_XTs0CI
 <<<<<<< HEAD
 =======
 =======
@@ -7,6 +12,10 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TmAos8
+=======
+>>>>>>> .merge_file_vWHGks
+>>>>>>> .merge_file_XTs0CI
 ---
 name: phpstan-analysis-2025-08-18
 description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
@@ -14,19 +23,39 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_TmAos8
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
+<<<<<<< .merge_file_Xb8cqw
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_XTs0CI
 =======
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_vWHGks
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_TmAos8
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_Xb8cqw
+=======
+>>>>>>> .merge_file_XTs0CI
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TmAos8
+=======
+>>>>>>> .merge_file_vWHGks
+>>>>>>> .merge_file_XTs0CI
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

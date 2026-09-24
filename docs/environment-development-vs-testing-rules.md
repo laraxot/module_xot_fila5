@@ -3,6 +3,11 @@
 ## Panoramica
 In Laraxot è fondamentale comprendere la differenza tra le configurazioni di ambiente di sviluppo e di test, specialmente riguardo all'uso dei database.
 
+<<<<<<< .merge_file_hc1UDo
+=======
+<<<<<<< .merge_file_pJHVei
+=======
+>>>>>>> .merge_file_rj4Rw8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7aud6t
@@ -87,6 +92,10 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_hc1UDo
+=======
+>>>>>>> .merge_file_ksSZkf
+>>>>>>> .merge_file_rj4Rw8
 ## Configurazione per Sviluppo (.env.development)
 
 ### Database
@@ -107,6 +116,12 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 
 ### Database
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
+<<<<<<< .merge_file_hc1UDo
+=======
+<<<<<<< .merge_file_pJHVei
+- Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
+=======
+>>>>>>> .merge_file_rj4Rw8
 <<<<<<< HEAD
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
 =======
@@ -120,6 +135,10 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_hc1UDo
+=======
+>>>>>>> .merge_file_ksSZkf
+>>>>>>> .merge_file_rj4Rw8
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione
@@ -149,6 +168,12 @@ Questa differenziazione rispetta i principi fondamentali:
 - **DRY**: Configurazioni separate per scopi diversi
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
+<<<<<<< .merge_file_hc1UDo
+=======
+<<<<<<< .merge_file_pJHVei
+- **Multi-tenancy**: Supporto completo per architettura multi-database
+=======
+>>>>>>> .merge_file_rj4Rw8
 <<<<<<< HEAD
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 =======
@@ -246,3 +271,7 @@ Il `setUp()` deve essere usato SOLO per:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_hc1UDo
+=======
+>>>>>>> .merge_file_ksSZkf
+>>>>>>> .merge_file_rj4Rw8

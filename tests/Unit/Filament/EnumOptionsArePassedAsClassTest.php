@@ -37,9 +37,18 @@ function xotPhpFilesUnderFilament(): array
     );
 
     foreach ($iterator as $fileInfo) {
+<<<<<<< .merge_file_hqfNun
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
+=======
+<<<<<<< .merge_file_u3agd3
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+<<<<<<< HEAD
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+>>>>>>> .merge_file_gYCY2h
 <<<<<<< .merge_file_ClwtiG
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
@@ -50,6 +59,10 @@ function xotPhpFilesUnderFilament(): array
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_qrAyQk
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_hqfNun
+=======
+>>>>>>> .merge_file_pqF2dd
+>>>>>>> .merge_file_gYCY2h
             continue;
         }
 

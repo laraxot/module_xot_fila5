@@ -4,17 +4,31 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trend\Adapters;
 
+<<<<<<< .merge_file_BBk89K
+=======
+<<<<<<< .merge_file_TwCfxw
+=======
+>>>>>>> .merge_file_EWFFi5
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_rto8cQ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_BBk89K
+=======
+>>>>>>> .merge_file_CgkvHl
+>>>>>>> .merge_file_EWFFi5
 use Error;
 use Override;
 
 class PgsqlAdapter extends AbstractAdapter
 {
     #[Override]
+<<<<<<< .merge_file_BBk89K
+=======
+<<<<<<< .merge_file_TwCfxw
+=======
+>>>>>>> .merge_file_EWFFi5
 <<<<<<< HEAD
 =======
 =======
@@ -28,6 +42,10 @@ class PgsqlAdapter extends AbstractAdapter
     #[\Override]
 >>>>>>> .merge_file_VGD9wX
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_BBk89K
+=======
+>>>>>>> .merge_file_CgkvHl
+>>>>>>> .merge_file_EWFFi5
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {
@@ -36,6 +54,12 @@ class PgsqlAdapter extends AbstractAdapter
             'day' => 'YYYY-MM-DD',
             'month' => 'YYYY-MM',
             'year' => 'YYYY',
+<<<<<<< .merge_file_BBk89K
+=======
+<<<<<<< .merge_file_TwCfxw
+            default => throw new Error('Invalid interval.'),
+=======
+>>>>>>> .merge_file_EWFFi5
 <<<<<<< HEAD
             default => throw new Error('Invalid interval.'),
 =======
@@ -49,6 +73,10 @@ class PgsqlAdapter extends AbstractAdapter
             default => throw new \Error('Invalid interval.'),
 >>>>>>> .merge_file_VGD9wX
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_BBk89K
+=======
+>>>>>>> .merge_file_CgkvHl
+>>>>>>> .merge_file_EWFFi5
         };
 
         return sprintf("to_char(%s, '%s')", $column, $format);

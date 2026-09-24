@@ -37,6 +37,11 @@ public function getTableActions(): array
 
 // ❌ SBAGLIATO - Array numerico
 <<<<<<< HEAD
+<<<<<<< .merge_file_Z6qjic
+=======
+<<<<<<< .merge_file_VU944w
+=======
+>>>>>>> .merge_file_wXFSL8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -44,10 +49,19 @@ public function getTableActions(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+>>>>>>> .merge_file_jev9W9
+>>>>>>> .merge_file_wXFSL8
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+<<<<<<< .merge_file_VU944w
+=======
+>>>>>>> .merge_file_wXFSL8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -57,6 +71,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+>>>>>>> .merge_file_jev9W9
+>>>>>>> .merge_file_wXFSL8
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -84,6 +102,11 @@ public function getTableActions(): array
 // ✅ CORRETTO - Array associativo con chiavi string
 /** @return array<string, Component> */
 <<<<<<< HEAD
+<<<<<<< .merge_file_Z6qjic
+=======
+<<<<<<< .merge_file_VU944w
+=======
+>>>>>>> .merge_file_wXFSL8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -91,10 +114,19 @@ public function getTableActions(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+>>>>>>> .merge_file_jev9W9
+>>>>>>> .merge_file_wXFSL8
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+<<<<<<< .merge_file_VU944w
+=======
+>>>>>>> .merge_file_wXFSL8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -104,6 +136,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+>>>>>>> .merge_file_jev9W9
+>>>>>>> .merge_file_wXFSL8
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -161,6 +197,11 @@ class UserResource extends XotBaseResource
      * @return array<string, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_Z6qjic
+=======
+<<<<<<< .merge_file_VU944w
+=======
+>>>>>>> .merge_file_wXFSL8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -168,10 +209,19 @@ class UserResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+>>>>>>> .merge_file_jev9W9
+>>>>>>> .merge_file_wXFSL8
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+<<<<<<< .merge_file_VU944w
+=======
+>>>>>>> .merge_file_wXFSL8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -181,6 +231,10 @@ class UserResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z6qjic
+=======
+>>>>>>> .merge_file_jev9W9
+>>>>>>> .merge_file_wXFSL8
     {
         return [
             'name_field' => TextInput::make('name'),

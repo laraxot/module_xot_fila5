@@ -74,6 +74,7 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< .merge_file_luVhi0
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $config
 =======
@@ -84,6 +85,18 @@ class EditModule extends XotBaseEditRecord
      * >>>>>>> .merge_file_gDEies.
      *
      * @param array<array-key, mixed> $config
+=======
+     * <<<<<<< HEAD.
+     *
+     * @param array<array-key, mixed> $config
+     *                                        =======
+     *                                        <<<<<<< .merge_file_R22bCP
+     *                                        =======
+     *                                        <<<<<<< HEAD
+     *                                        <<<<<<< .merge_file_bxS1IY.
+     *                                        >>>>>>> .merge_file_gDEies.
+     * @param array<array-key, mixed> $config
+>>>>>>> .merge_file_ps9q9t
      *
      * <<<<<<< .merge_file_R22bCP
      * =======
@@ -93,7 +106,12 @@ class EditModule extends XotBaseEditRecord
      *
      * >>>>>>> .merge_file_gDEies
      *
+<<<<<<< .merge_file_luVhi0
 >>>>>>> laraxot/dev
+=======
+     * >>>>>>> laraxot/dev
+     *
+>>>>>>> .merge_file_ps9q9t
      * @return array<string, mixed>
      */
     private function normalizeConfigArray(array $config): array

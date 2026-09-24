@@ -18,9 +18,18 @@ class MigrationCommandHandler implements CommandHandlerInterface
         DB::purge('mysql');
         DB::reconnect('mysql');
 
+<<<<<<< .merge_file_bUxR2g
 <<<<<<< HEAD
         if ($moduleName !== '') {
 =======
+=======
+<<<<<<< .merge_file_N3eflW
+        if ($moduleName !== '') {
+=======
+<<<<<<< HEAD
+        if ($moduleName !== '') {
+=======
+>>>>>>> .merge_file_ZK5Gvz
 <<<<<<< .merge_file_oenBeG
 <<<<<<< HEAD
         if ($moduleName !== '') {
@@ -31,6 +40,10 @@ class MigrationCommandHandler implements CommandHandlerInterface
         if ('' !== $moduleName) {
 >>>>>>> .merge_file_130BnN
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bUxR2g
+=======
+>>>>>>> .merge_file_4Sr07D
+>>>>>>> .merge_file_ZK5Gvz
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)
@@ -42,6 +55,12 @@ class MigrationCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
+<<<<<<< .merge_file_bUxR2g
+=======
+<<<<<<< .merge_file_N3eflW
+        return $command === 'migrate';
+=======
+>>>>>>> .merge_file_ZK5Gvz
 <<<<<<< HEAD
         return $command === 'migrate';
 =======
@@ -55,5 +74,9 @@ class MigrationCommandHandler implements CommandHandlerInterface
         return 'migrate' === $command;
 >>>>>>> .merge_file_130BnN
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bUxR2g
+=======
+>>>>>>> .merge_file_4Sr07D
+>>>>>>> .merge_file_ZK5Gvz
     }
 }

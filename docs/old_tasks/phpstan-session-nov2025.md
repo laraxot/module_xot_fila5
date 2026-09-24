@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_fetcd9
+=======
+<<<<<<< .merge_file_Ci5KWz
+=======
+>>>>>>> .merge_file_Eb8RtR
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_icK5Gk
@@ -5,6 +10,10 @@
 <<<<<<< HEAD
 >>>>>>> .merge_file_T2807y
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_fetcd9
+=======
+>>>>>>> .merge_file_V248cl
+>>>>>>> .merge_file_Eb8RtR
 ---
 title: "Phpstan Session Nov"
 type: concept
@@ -21,6 +30,11 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-session-nov.md](./phpstan-session-nov.md)
+<<<<<<< .merge_file_fetcd9
+=======
+<<<<<<< .merge_file_Ci5KWz
+=======
+>>>>>>> .merge_file_Eb8RtR
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_icK5Gk
@@ -159,3 +173,7 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_T2807y
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_fetcd9
+=======
+>>>>>>> .merge_file_V248cl
+>>>>>>> .merge_file_Eb8RtR

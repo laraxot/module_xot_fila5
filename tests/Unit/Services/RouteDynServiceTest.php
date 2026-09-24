@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_daMREK
+=======
+<<<<<<< .merge_file_l1p7Y6
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_rUwJZN
 =======
 <<<<<<< .merge_file_ubp6ek
 <<<<<<< HEAD
@@ -16,6 +24,10 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_F7ADYj
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_daMREK
+=======
+>>>>>>> .merge_file_gvmOAB
+>>>>>>> .merge_file_rUwJZN
 use Modules\Xot\Services\RouteDynService;
 use PHPUnit\Framework\Assert;
 

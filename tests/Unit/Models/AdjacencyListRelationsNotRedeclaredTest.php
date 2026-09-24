@@ -12,9 +12,18 @@ use function Safe\preg_match;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_yaCkla
 <<<<<<< HEAD
 /**
 =======
+=======
+<<<<<<< .merge_file_sKGPBv
+/**
+=======
+<<<<<<< HEAD
+/**
+=======
+>>>>>>> .merge_file_vuzmsx
 <<<<<<< .merge_file_jH9lAZ
 <<<<<<< HEAD
 /**
@@ -25,6 +34,10 @@ uses(TestCase::class);
 /*
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yaCkla
+=======
+>>>>>>> .merge_file_CZ7E54
+>>>>>>> .merge_file_vuzmsx
  * Un model che compone l'adjacency list non riscrive le relazioni che il trait gli da'.
  *
  * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` fornisce
@@ -61,16 +74,30 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
         $source = file_get_contents($file);
 
         // Solo i model che compongono davvero il trait: gli altri sono liberi.
+<<<<<<< .merge_file_yaCkla
+=======
+<<<<<<< .merge_file_sKGPBv
+=======
+>>>>>>> .merge_file_vuzmsx
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_jH9lAZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yaCkla
+=======
+>>>>>>> .merge_file_CZ7E54
+>>>>>>> .merge_file_vuzmsx
         if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) !== 1) {
             continue;
         }
 
         if (preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class) !== 1) {
+<<<<<<< .merge_file_yaCkla
+=======
+<<<<<<< .merge_file_sKGPBv
+=======
+>>>>>>> .merge_file_vuzmsx
 <<<<<<< HEAD
 =======
 =======
@@ -86,12 +113,17 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
 =======
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yaCkla
+=======
+>>>>>>> .merge_file_CZ7E54
+>>>>>>> .merge_file_vuzmsx
             continue;
         }
 
         $className = (string) ($class[1] ?? '');
 
         foreach ($relations as $relation) {
+<<<<<<< .merge_file_yaCkla
 <<<<<<< HEAD
             if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
 =======
@@ -99,12 +131,28 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
 <<<<<<< HEAD
             if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
 =======
+=======
+<<<<<<< .merge_file_sKGPBv
+            if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
+=======
+<<<<<<< HEAD
+            if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
+=======
+<<<<<<< .merge_file_jH9lAZ
+<<<<<<< HEAD
+            if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
+=======
+>>>>>>> .merge_file_vuzmsx
             if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
 >>>>>>> laraxot/dev
 =======
             if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yaCkla
+=======
+>>>>>>> .merge_file_CZ7E54
+>>>>>>> .merge_file_vuzmsx
                 $offenders[] = $className.'::'.$relation.'()';
             }
         }
@@ -124,6 +172,12 @@ test('i model ad albero del progetto compongono davvero il trait', function (): 
     foreach ($files as $file) {
         $source = file_get_contents($file);
 
+<<<<<<< .merge_file_yaCkla
+=======
+<<<<<<< .merge_file_sKGPBv
+        if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) === 1) {
+=======
+>>>>>>> .merge_file_vuzmsx
 <<<<<<< HEAD
         if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) === 1) {
 =======
@@ -137,6 +191,10 @@ test('i model ad albero del progetto compongono davvero il trait', function (): 
         if (1 === preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yaCkla
+=======
+>>>>>>> .merge_file_CZ7E54
+>>>>>>> .merge_file_vuzmsx
             $composers[] = basename($file, '.php');
         }
     }

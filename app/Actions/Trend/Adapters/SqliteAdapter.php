@@ -4,17 +4,31 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trend\Adapters;
 
+<<<<<<< .merge_file_NFWGbW
+=======
+<<<<<<< .merge_file_h0tesD
+=======
+>>>>>>> .merge_file_CqiA8D
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_54vAe8
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NFWGbW
+=======
+>>>>>>> .merge_file_pIBHfr
+>>>>>>> .merge_file_CqiA8D
 use Error;
 use Override;
 
 class SqliteAdapter extends AbstractAdapter
 {
     #[Override]
+<<<<<<< .merge_file_NFWGbW
+=======
+<<<<<<< .merge_file_h0tesD
+=======
+>>>>>>> .merge_file_CqiA8D
 <<<<<<< HEAD
 =======
 =======
@@ -28,6 +42,10 @@ class SqliteAdapter extends AbstractAdapter
     #[\Override]
 >>>>>>> .merge_file_PZ0cg5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NFWGbW
+=======
+>>>>>>> .merge_file_pIBHfr
+>>>>>>> .merge_file_CqiA8D
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {
@@ -36,6 +54,12 @@ class SqliteAdapter extends AbstractAdapter
             'day' => '%Y-%m-%d',
             'month' => '%Y-%m',
             'year' => '%Y',
+<<<<<<< .merge_file_NFWGbW
+=======
+<<<<<<< .merge_file_h0tesD
+            default => throw new Error('Invalid interval.'),
+=======
+>>>>>>> .merge_file_CqiA8D
 <<<<<<< HEAD
             default => throw new Error('Invalid interval.'),
 =======
@@ -49,6 +73,10 @@ class SqliteAdapter extends AbstractAdapter
             default => throw new \Error('Invalid interval.'),
 >>>>>>> .merge_file_PZ0cg5
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NFWGbW
+=======
+>>>>>>> .merge_file_pIBHfr
+>>>>>>> .merge_file_CqiA8D
         };
 
         return sprintf("strftime('%s', %s)", $format, $column);

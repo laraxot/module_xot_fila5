@@ -1,11 +1,20 @@
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_SwheW4
+=======
+<<<<<<< .merge_file_UqL3Uy
+=======
+>>>>>>> .merge_file_zzsSuy
 <<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SwheW4
+=======
+>>>>>>> .merge_file_D0jXbq
+>>>>>>> .merge_file_zzsSuy
 title: 'Inodes'
 module: Xot
 type: reference
@@ -18,11 +27,20 @@ updated: 2026-08-24
 ---
 
 -----------------------------------------------------------
+<<<<<<< .merge_file_SwheW4
+=======
+<<<<<<< .merge_file_UqL3Uy
+=======
+>>>>>>> .merge_file_zzsSuy
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SwheW4
+=======
+>>>>>>> .merge_file_D0jXbq
+>>>>>>> .merge_file_zzsSuy
 =======
 title: "Inodes"
 type: reference
@@ -41,10 +59,19 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 
 --------------------------------------------------------------
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SwheW4
+=======
+<<<<<<< .merge_file_UqL3Uy
+=======
+>>>>>>> .merge_file_zzsSuy
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SwheW4
+=======
+>>>>>>> .merge_file_D0jXbq
+>>>>>>> .merge_file_zzsSuy
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------

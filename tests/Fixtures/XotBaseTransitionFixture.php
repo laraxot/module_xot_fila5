@@ -21,10 +21,21 @@ final class XotBaseTransitionFixture
      */
     public static function make(): array
     {
+<<<<<<< .merge_file_24U5Mt
 <<<<<<< HEAD
         $record = new class extends Model
         {
 =======
+=======
+<<<<<<< .merge_file_HONhe1
+        $record = new class extends Model
+        {
+=======
+<<<<<<< HEAD
+        $record = new class extends Model
+        {
+=======
+>>>>>>> .merge_file_FZucZe
 <<<<<<< .merge_file_tUKVM8
 <<<<<<< HEAD
         $record = new class extends Model
@@ -36,10 +47,21 @@ final class XotBaseTransitionFixture
         $record = new class extends Model {
 >>>>>>> .merge_file_3BlN1b
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_24U5Mt
+=======
+>>>>>>> .merge_file_3UwFvp
+>>>>>>> .merge_file_FZucZe
             /** @var string */
             protected $table = 'xot_transition_test';
         };
 
+<<<<<<< .merge_file_24U5Mt
+=======
+<<<<<<< .merge_file_HONhe1
+        $transition = new class($record) extends XotBaseTransition
+        {
+=======
+>>>>>>> .merge_file_FZucZe
 <<<<<<< HEAD
         $transition = new class($record) extends XotBaseTransition
         {
@@ -55,6 +77,10 @@ final class XotBaseTransitionFixture
         $transition = new class($record) extends XotBaseTransition {
 >>>>>>> .merge_file_3BlN1b
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_24U5Mt
+=======
+>>>>>>> .merge_file_3UwFvp
+>>>>>>> .merge_file_FZucZe
             public static string $name = 'test_transition';
         };
 

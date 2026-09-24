@@ -58,6 +58,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_jfgaC1
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -65,6 +66,18 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_onmcvP
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_qhLmIl
 <<<<<<< .merge_file_rRHrAX
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -78,6 +91,10 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0STLdl
+<<<<<<< .merge_file_jfgaC1
+=======
+>>>>>>> .merge_file_VyRD3X
+>>>>>>> .merge_file_qhLmIl
 >>>>>>> laraxot/dev
     {
         return [
@@ -296,6 +313,7 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_jfgaC1
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -303,6 +321,18 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_onmcvP
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_qhLmIl
 <<<<<<< .merge_file_rRHrAX
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -316,6 +346,10 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0STLdl
+<<<<<<< .merge_file_jfgaC1
+=======
+>>>>>>> .merge_file_VyRD3X
+>>>>>>> .merge_file_qhLmIl
 >>>>>>> laraxot/dev
     {
         return [

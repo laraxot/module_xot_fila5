@@ -23,6 +23,11 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
 <<<<<<< HEAD
+<<<<<<< .merge_file_TRh5Ja
+=======
+<<<<<<< .merge_file_7TfsYt
+=======
+>>>>>>> .merge_file_u3VEPf
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Sb37LO
@@ -30,10 +35,19 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 <<<<<<< HEAD
 >>>>>>> .merge_file_kgyQKM
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TRh5Ja
+=======
+>>>>>>> .merge_file_qWg3PU
+>>>>>>> .merge_file_u3VEPf
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TRh5Ja
+=======
+<<<<<<< .merge_file_7TfsYt
+=======
+>>>>>>> .merge_file_u3VEPf
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Sb37LO
@@ -43,6 +57,10 @@ abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_kgyQKM
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TRh5Ja
+=======
+>>>>>>> .merge_file_qWg3PU
+>>>>>>> .merge_file_u3VEPf
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -347,6 +365,11 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
+<<<<<<< .merge_file_TRh5Ja
+=======
+<<<<<<< .merge_file_7TfsYt
+=======
+>>>>>>> .merge_file_u3VEPf
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Sb37LO
@@ -354,10 +377,19 @@ class UserResource extends XotBaseResource {
 <<<<<<< HEAD
 >>>>>>> .merge_file_kgyQKM
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TRh5Ja
+=======
+>>>>>>> .merge_file_qWg3PU
+>>>>>>> .merge_file_u3VEPf
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TRh5Ja
+=======
+<<<<<<< .merge_file_7TfsYt
+=======
+>>>>>>> .merge_file_u3VEPf
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Sb37LO
@@ -367,6 +399,10 @@ class UserResource extends XotBaseResource {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_kgyQKM
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TRh5Ja
+=======
+>>>>>>> .merge_file_qWg3PU
+>>>>>>> .merge_file_u3VEPf
         return [TextInput::make('name')];
     }
 }

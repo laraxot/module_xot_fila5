@@ -1,5 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_RsaHqr
+=======
+<<<<<<< .merge_file_XhtPfD
+=======
+>>>>>>> .merge_file_G2oZKU
 =======
 <<<<<<< .merge_file_SoxooX
 =======
@@ -15,6 +20,10 @@
 >>>>>>> .merge_file_M2jP9l
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RsaHqr
+=======
+>>>>>>> .merge_file_jEaXN1
+>>>>>>> .merge_file_G2oZKU
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->
@@ -40,6 +49,13 @@ https://phpmd.org/
 
 
 =======
+<<<<<<< .merge_file_RsaHqr
+=======
+<<<<<<< .merge_file_XhtPfD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_G2oZKU
 <<<<<<< HEAD
 =======
 =======
@@ -54,6 +70,10 @@ https://phpmd.org/
 >>>>>>> .merge_file_5f05n5
 >>>>>>> .merge_file_M2jP9l
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RsaHqr
+=======
+>>>>>>> .merge_file_jEaXN1
+>>>>>>> .merge_file_G2oZKU
 ---
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
@@ -90,6 +110,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_RsaHqr
+=======
+<<<<<<< .merge_file_XhtPfD
+=======
+>>>>>>> .merge_file_G2oZKU
 <<<<<<< HEAD
 <<<<<<< .merge_file_SoxooX
 =======
@@ -111,4 +136,8 @@ updated: 2026-08-24
 >>>>>>> .merge_file_5f05n5
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_M2jP9l
+<<<<<<< .merge_file_RsaHqr
+=======
+>>>>>>> .merge_file_jEaXN1
+>>>>>>> .merge_file_G2oZKU
 >>>>>>> laraxot/dev

@@ -1,8 +1,17 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_NjKGZN
 declare(strict_types=1);
 =======
+=======
+<<<<<<< .merge_file_6cvynU
+=======
+declare(strict_types=1);
+=======
+declare(strict_types=1);
+=======
+>>>>>>> .merge_file_Y54gpN
 <<<<<<< .merge_file_zL0npc
 <<<<<<< HEAD
 =======
@@ -14,12 +23,24 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 >>>>>>> .merge_file_QV7TQr
+<<<<<<< .merge_file_NjKGZN
+=======
+>>>>>>> .merge_file_EVz0q2
+>>>>>>> .merge_file_Y54gpN
 >>>>>>> laraxot/dev
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_NjKGZN
+=======
+<<<<<<< .merge_file_6cvynU
+declare(strict_types=1);
+
+=======
+=======
+>>>>>>> .merge_file_Y54gpN
 =======
 <<<<<<< .merge_file_zL0npc
 <<<<<<< HEAD
@@ -34,6 +55,10 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_QV7TQr
+<<<<<<< .merge_file_NjKGZN
+=======
+>>>>>>> .merge_file_EVz0q2
+>>>>>>> .merge_file_Y54gpN
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Actions\Model;
 
@@ -71,6 +96,12 @@ class GetAllModelsByModuleNameAction
             $ext = '.php';
             // dddx(['ext' => $file->getExtension(), get_class_methods($file)]);
             if (Str::endsWith($filename, $ext)) {
+<<<<<<< .merge_file_NjKGZN
+=======
+<<<<<<< .merge_file_6cvynU
+                $tmp = new \stdClass;
+=======
+>>>>>>> .merge_file_Y54gpN
 <<<<<<< HEAD
                 $tmp = new \stdClass;
 =======
@@ -80,6 +111,10 @@ class GetAllModelsByModuleNameAction
                 $tmp = new \stdClass();
 >>>>>>> .merge_file_QV7TQr
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NjKGZN
+=======
+>>>>>>> .merge_file_EVz0q2
+>>>>>>> .merge_file_Y54gpN
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
                 // dddx(['name' => $name, 'name1' => $file->getFilenameWithoutExtension()]);
                 /**

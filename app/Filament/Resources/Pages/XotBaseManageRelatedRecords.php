@@ -277,12 +277,23 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * non li sostituisce: aggiungere questo hook non perde nessuno scoping
      * (es. tenant) gia' applicato da `$resourceClass::table()`.
      *
+<<<<<<< .merge_file_8Hkq9Q
 <<<<<<< HEAD
      * @param  Builder<Model>  $query
 =======
      * @param Builder<Model> $query
      *
 >>>>>>> laraxot/dev
+=======
+     * <<<<<<< HEAD
+     *
+     * @param Builder<Model> $query
+     *                              =======
+     * @param Builder<Model> $query
+     *
+     * >>>>>>> laraxot/dev
+     *
+>>>>>>> .merge_file_tWWA0b
      * @return Builder<Model>
      */
     protected function modifyRelatedQuery(Builder $query): Builder
@@ -362,6 +373,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * NON usare mai `$this->getResource()` qui: identifica la Resource
      * PROPRIETARIA della pagina, non quella della relazione.
      *
+<<<<<<< .merge_file_8Hkq9Q
 <<<<<<< HEAD
      * @return class-string<XotBaseResource>
      *
@@ -371,6 +383,17 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return class-string<XotBaseResource>
 >>>>>>> laraxot/dev
+=======
+     * <<<<<<< HEAD
+     *
+     * @throws \InvalidArgumentException Se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali.
+     *                                   =======
+     * @throws \InvalidArgumentException se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali
+     *
+     * @return class-string<XotBaseResource>
+     * @return class-string<XotBaseResource>
+     *                                       >>>>>>> laraxot/dev
+>>>>>>> .merge_file_tWWA0b
      */
     protected function getRelatedResourceClass(): string
     {

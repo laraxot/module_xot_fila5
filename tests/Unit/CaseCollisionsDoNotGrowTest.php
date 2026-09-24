@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_6OqilY
+=======
+<<<<<<< .merge_file_nJUPrs
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_thMDvk
 =======
 <<<<<<< .merge_file_VreSMc
 <<<<<<< HEAD
@@ -16,6 +24,10 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_SrNGZf
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_6OqilY
+=======
+>>>>>>> .merge_file_eO1BcE
+>>>>>>> .merge_file_thMDvk
 /**
  * Guardia a cricchetto sulle collisioni case-insensitive.
  *
@@ -31,6 +43,7 @@ declare(strict_types=1);
  * Bonifica: python3 bashscripts/tools/audit/audit-case-collisions.py --fix-identical
  */
 
+<<<<<<< .merge_file_6OqilY
 <<<<<<< HEAD
 use Symfony\Component\Process\Process;
 
@@ -41,10 +54,32 @@ use Symfony\Component\Process\Process;
 =======
 >>>>>>> .merge_file_SrNGZf
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_nJUPrs
+use Symfony\Component\Process\Process;
+
+=======
+<<<<<<< HEAD
+use Symfony\Component\Process\Process;
+
+=======
+<<<<<<< .merge_file_VreSMc
+use Symfony\Component\Process\Process;
+
+=======
+>>>>>>> .merge_file_SrNGZf
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eO1BcE
+>>>>>>> .merge_file_thMDvk
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
 
+<<<<<<< .merge_file_6OqilY
+=======
+<<<<<<< .merge_file_nJUPrs
+=======
+>>>>>>> .merge_file_thMDvk
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VreSMc
@@ -53,6 +88,10 @@ use Symfony\Component\Process\Process;
 
 >>>>>>> .merge_file_SrNGZf
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_6OqilY
+=======
+>>>>>>> .merge_file_eO1BcE
+>>>>>>> .merge_file_thMDvk
 function repoRoot(): string
 {
     return \dirname(__DIR__, 5);
@@ -74,6 +113,14 @@ function collisionGroups(): int
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
 <<<<<<< HEAD
+<<<<<<< .merge_file_6OqilY
+=======
+<<<<<<< .merge_file_nJUPrs
+    } catch (\Throwable) {
+=======
+    } catch (Throwable) {
+=======
+>>>>>>> .merge_file_thMDvk
     } catch (Throwable) {
 =======
 <<<<<<< .merge_file_VreSMc
@@ -89,6 +136,10 @@ function collisionGroups(): int
 =======
     } catch (Throwable) {
 >>>>>>> .merge_file_SrNGZf
+<<<<<<< .merge_file_6OqilY
+=======
+>>>>>>> .merge_file_eO1BcE
+>>>>>>> .merge_file_thMDvk
 >>>>>>> laraxot/dev
         return -1;
     }

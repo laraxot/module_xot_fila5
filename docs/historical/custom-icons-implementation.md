@@ -4,9 +4,18 @@
 Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare icone personalizzate nel sistema Xot.
 
 ## Prerequisiti
+<<<<<<< .merge_file_SVNTaZ
 <<<<<<< HEAD
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 =======
+=======
+<<<<<<< .merge_file_jhWW3W
+Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
+=======
+<<<<<<< HEAD
+Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
+=======
+>>>>>>> .merge_file_OEbRC0
 <<<<<<< .merge_file_TtkSFp
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 =======
@@ -17,6 +26,10 @@ Prima di procedere, assicurarsi di aver compreso il [processo di registrazione d
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QuWv1O
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SVNTaZ
+=======
+>>>>>>> .merge_file_u6IVjU
+>>>>>>> .merge_file_OEbRC0
 
 ## Processo di Implementazione
 
@@ -59,6 +72,11 @@ public function register(): void
 ```
 
 ## Troubleshooting
+<<<<<<< .merge_file_SVNTaZ
+=======
+<<<<<<< .merge_file_jhWW3W
+=======
+>>>>>>> .merge_file_OEbRC0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TtkSFp
@@ -66,11 +84,20 @@ public function register(): void
 <<<<<<< HEAD
 >>>>>>> .merge_file_QuWv1O
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SVNTaZ
+=======
+>>>>>>> .merge_file_u6IVjU
+>>>>>>> .merge_file_OEbRC0
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerbladeicons.md).
 
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
+<<<<<<< .merge_file_SVNTaZ
+=======
+<<<<<<< .merge_file_jhWW3W
+=======
+>>>>>>> .merge_file_OEbRC0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TtkSFp
@@ -84,3 +111,7 @@ Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeI
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QuWv1O
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SVNTaZ
+=======
+>>>>>>> .merge_file_u6IVjU
+>>>>>>> .merge_file_OEbRC0

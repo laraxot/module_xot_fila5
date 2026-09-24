@@ -108,6 +108,7 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_ugHPR1
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -123,11 +124,35 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_h83bkc
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_NDor5m
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_lYqG05
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_a87Yeu
+<<<<<<< .merge_file_ugHPR1
+=======
+>>>>>>> .merge_file_zzxjaT
+>>>>>>> .merge_file_lYqG05
 >>>>>>> laraxot/dev
     {
         return [
@@ -351,6 +376,13 @@ class Create{ModelName}Action
 <<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
 =======
+<<<<<<< .merge_file_ugHPR1
+=======
+<<<<<<< .merge_file_h83bkc
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lYqG05
 <<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
 =======
@@ -375,3 +407,7 @@ class Create{ModelName}Action
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_a87Yeu
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ugHPR1
+=======
+>>>>>>> .merge_file_zzxjaT
+>>>>>>> .merge_file_lYqG05

@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_QBQ1p4
+=======
+<<<<<<< .merge_file_gRlwAb
+=======
+>>>>>>> .merge_file_cspCWa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8vpi2k
@@ -5,10 +10,19 @@
 <<<<<<< HEAD
 >>>>>>> .merge_file_I95shV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBQ1p4
+=======
+>>>>>>> .merge_file_f1frnO
+>>>>>>> .merge_file_cspCWa
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  
 **Data**: 2026-01-22
+<<<<<<< .merge_file_QBQ1p4
+=======
+<<<<<<< .merge_file_gRlwAb
+=======
+>>>>>>> .merge_file_cspCWa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8vpi2k
@@ -20,6 +34,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I95shV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBQ1p4
+=======
+>>>>>>> .merge_file_f1frnO
+>>>>>>> .merge_file_cspCWa
 
 ## Problema
 
@@ -181,6 +199,11 @@ expect($profileA->id)->toBe($profileB->id);
 
 ## Riferimenti
 
+<<<<<<< .merge_file_QBQ1p4
+=======
+<<<<<<< .merge_file_gRlwAb
+=======
+>>>>>>> .merge_file_cspCWa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8vpi2k
@@ -188,6 +211,10 @@ expect($profileA->id)->toBe($profileB->id);
 <<<<<<< HEAD
 >>>>>>> .merge_file_I95shV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBQ1p4
+=======
+>>>>>>> .merge_file_f1frnO
+>>>>>>> .merge_file_cspCWa
 - [Activity Module: firstOrCreate Error Handling](../../Activity/docs/errori/attributerawvalues-null-firstorcreate.md)
 - [User Profile Models: Transaction Patterns](../../User/docs/user-profile-models.md)
 - [Query Safety Principle](../../../docs/operational-rules/query-safety-principle.md)
@@ -195,6 +222,11 @@ expect($profileA->id)->toBe($profileB->id);
 **Versione**: 1.0  
 **Ultimo aggiornamento**: 2026-01-22  
 **Status**: ✅ Completato
+<<<<<<< .merge_file_QBQ1p4
+=======
+<<<<<<< .merge_file_gRlwAb
+=======
+>>>>>>> .merge_file_cspCWa
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8vpi2k
@@ -210,3 +242,7 @@ expect($profileA->id)->toBe($profileB->id);
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I95shV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBQ1p4
+=======
+>>>>>>> .merge_file_f1frnO
+>>>>>>> .merge_file_cspCWa

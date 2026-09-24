@@ -1,5 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_v6Cuv0
+=======
+<<<<<<< .merge_file_LErSVP
+=======
+>>>>>>> .merge_file_zXLxFe
 <<<<<<< HEAD
 =======
 =======
@@ -7,6 +12,10 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_v6Cuv0
+=======
+>>>>>>> .merge_file_FNFTtK
+>>>>>>> .merge_file_zXLxFe
 ---
 name: phpstan-fixes-2025-01-06
 description: " Errori Risolti"
@@ -14,19 +23,39 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_v6Cuv0
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
+<<<<<<< .merge_file_LErSVP
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_zXLxFe
 =======
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_FNFTtK
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_v6Cuv0
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_LErSVP
+=======
+>>>>>>> .merge_file_zXLxFe
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_v6Cuv0
+=======
+>>>>>>> .merge_file_FNFTtK
+>>>>>>> .merge_file_zXLxFe
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

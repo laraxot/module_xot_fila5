@@ -1,5 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_b9Qgkx
+=======
+<<<<<<< .merge_file_m0Hxj9
+=======
+>>>>>>> .merge_file_y6WKvB
 <<<<<<< HEAD
 =======
 =======
@@ -7,6 +12,10 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_b9Qgkx
+=======
+>>>>>>> .merge_file_Lf07XF
+>>>>>>> .merge_file_y6WKvB
 ---
 name: phpstan-fixes-gennaio-phpstan-fixes-gennaio-2025-modulo-xot
 description: " Riassunto delle Correzioni"
@@ -14,19 +23,39 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_b9Qgkx
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
+<<<<<<< .merge_file_m0Hxj9
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_y6WKvB
 =======
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_Lf07XF
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_b9Qgkx
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_m0Hxj9
+=======
+>>>>>>> .merge_file_y6WKvB
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_b9Qgkx
+=======
+>>>>>>> .merge_file_Lf07XF
+>>>>>>> .merge_file_y6WKvB
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
 ## Riassunto delle Correzioni

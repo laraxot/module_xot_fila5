@@ -7,15 +7,29 @@ namespace Modules\Xot\Tests;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Cache;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 =======
@@ -23,6 +37,10 @@ use SplFileInfo;
 =======
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
 
 use function Safe\posix_kill;
 use function Safe\preg_match;
@@ -33,9 +51,18 @@ use function Safe\preg_match;
 final class XotForkedInvoke
 {
     /**
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
      * @param  list<string>  $denyMethodRegexes
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+     * @param  list<string>  $denyMethodRegexes
+=======
+<<<<<<< HEAD
+     * @param  list<string>  $denyMethodRegexes
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
      * @param  list<string>  $denyMethodRegexes
@@ -46,6 +73,10 @@ final class XotForkedInvoke
      * @param list<string> $denyMethodRegexes
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
      */
     public static function sweepClass(
         string $class,
@@ -57,6 +88,7 @@ final class XotForkedInvoke
             return 0;
         }
 
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
         $ref = new ReflectionClass($class);
 =======
@@ -64,12 +96,28 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         $ref = new ReflectionClass($class);
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+        $ref = new ReflectionClass($class);
+=======
+<<<<<<< HEAD
+        $ref = new ReflectionClass($class);
+=======
+<<<<<<< .merge_file_VtsjQZ
+<<<<<<< HEAD
+        $ref = new ReflectionClass($class);
+=======
+>>>>>>> .merge_file_PirPXs
         $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
 =======
         $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
 
         if ($ref->isInterface()) {
             return 0;
@@ -81,6 +129,7 @@ final class XotForkedInvoke
             return self::sweepEnum($class, $timeoutSeconds);
         }
 
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
         if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
 =======
@@ -88,12 +137,28 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+        if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
+=======
+<<<<<<< HEAD
+        if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
+=======
+<<<<<<< .merge_file_VtsjQZ
+<<<<<<< HEAD
+        if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
+=======
+>>>>>>> .merge_file_PirPXs
         if (null === $instance && ! $ref->isAbstract() && ! $ref->isTrait()) {
 >>>>>>> laraxot/dev
 =======
         if (null === $instance && ! $ref->isAbstract() && ! $ref->isTrait()) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
             try {
                 $instance = $ref->newInstanceWithoutConstructor();
                 if ($instance instanceof Model) {
@@ -110,6 +175,7 @@ final class XotForkedInvoke
             }
         }
 
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
@@ -117,12 +183,28 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+        foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+<<<<<<< HEAD
+        foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+<<<<<<< .merge_file_VtsjQZ
+<<<<<<< HEAD
+        foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+>>>>>>> .merge_file_PirPXs
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> laraxot/dev
 =======
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
             if ($method->getDeclaringClass()->getName() !== $class) {
                 continue;
             }
@@ -155,6 +237,12 @@ final class XotForkedInvoke
                     $method->setAccessible(true);
                     if ($method->isStatic()) {
                         $method->invoke(null, ...$args);
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+                    } elseif ($instance !== null) {
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
                     } elseif ($instance !== null) {
 =======
@@ -168,12 +256,22 @@ final class XotForkedInvoke
                     } elseif (null !== $instance) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
                         $method->invoke($instance, ...$args);
                     }
                 },
                 $timeoutSeconds,
             );
             if ($ok) {
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+                $executed++;
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
                 $executed++;
 =======
@@ -187,6 +285,10 @@ final class XotForkedInvoke
                 ++$executed;
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
             }
         }
 
@@ -194,9 +296,18 @@ final class XotForkedInvoke
     }
 
     /**
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
      * @param  class-string  $enumClass
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+     * @param  class-string  $enumClass
+=======
+<<<<<<< HEAD
+     * @param  class-string  $enumClass
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
      * @param  class-string  $enumClass
@@ -207,6 +318,10 @@ final class XotForkedInvoke
      * @param class-string $enumClass
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
      */
     private static function sweepEnum(string $enumClass, int $timeoutSeconds): int
     {
@@ -221,6 +336,7 @@ final class XotForkedInvoke
                         continue;
                     }
                     if (self::invokeWithTimeout(static fn () => $case->{$m}(), $timeoutSeconds)) {
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
                         $executed++;
 =======
@@ -228,12 +344,28 @@ final class XotForkedInvoke
 <<<<<<< HEAD
                         $executed++;
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+                        $executed++;
+=======
+<<<<<<< HEAD
+                        $executed++;
+=======
+<<<<<<< .merge_file_VtsjQZ
+<<<<<<< HEAD
+                        $executed++;
+=======
+>>>>>>> .merge_file_PirPXs
                         ++$executed;
 >>>>>>> laraxot/dev
 =======
                         ++$executed;
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
                     }
                 }
             }
@@ -241,11 +373,20 @@ final class XotForkedInvoke
                 if (! method_exists($enumClass, $sm)) {
                     continue;
                 }
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
                 $method = new ReflectionMethod($enumClass, $sm);
                 if (self::invokeWithTimeout(static fn () => $method->invoke(null), $timeoutSeconds)) {
                     $executed++;
@@ -253,6 +394,11 @@ final class XotForkedInvoke
             }
         } catch (\Throwable) {
             $executed++;
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 =======
@@ -270,6 +416,10 @@ final class XotForkedInvoke
 =======
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
         }
 
         return $executed;
@@ -278,6 +428,12 @@ final class XotForkedInvoke
     /**
      * @return list<mixed>
      */
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+    public static function defaultArgs(ReflectionMethod $method): array
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
     public static function defaultArgs(ReflectionMethod $method): array
 =======
@@ -291,6 +447,10 @@ final class XotForkedInvoke
     public static function defaultArgs(\ReflectionMethod $method): array
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
     {
         $args = [];
         foreach ($method->getParameters() as $param) {
@@ -301,11 +461,20 @@ final class XotForkedInvoke
             }
             $type = $param->getType();
             $name = $param->getName();
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
             if ($type instanceof ReflectionNamedType) {
                 $tn = $type->getName();
                 $args[] = match (true) {
@@ -321,6 +490,11 @@ final class XotForkedInvoke
                             $m = new Cache;
                         } else {
                             $m = new $tn;
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 =======
@@ -346,6 +520,10 @@ final class XotForkedInvoke
 =======
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
                         }
                         $m->setRawAttributes(['id' => 1, 'key' => 'k', 'value' => 'v']);
 
@@ -374,6 +552,7 @@ final class XotForkedInvoke
         }
 
         $pid = pcntl_fork();
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
         if ($pid === -1) {
 =======
@@ -381,12 +560,28 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         if ($pid === -1) {
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+        if ($pid === -1) {
+=======
+<<<<<<< HEAD
+        if ($pid === -1) {
+=======
+<<<<<<< .merge_file_VtsjQZ
+<<<<<<< HEAD
+        if ($pid === -1) {
+=======
+>>>>>>> .merge_file_PirPXs
         if (-1 === $pid) {
 >>>>>>> laraxot/dev
 =======
         if (-1 === $pid) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
             try {
                 $fn();
 
@@ -396,6 +591,7 @@ final class XotForkedInvoke
             }
         }
 
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
         if ($pid === 0) {
 =======
@@ -403,12 +599,28 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         if ($pid === 0) {
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+        if ($pid === 0) {
+=======
+<<<<<<< HEAD
+        if ($pid === 0) {
+=======
+<<<<<<< .merge_file_VtsjQZ
+<<<<<<< HEAD
+        if ($pid === 0) {
+=======
+>>>>>>> .merge_file_PirPXs
         if (0 === $pid) {
 >>>>>>> laraxot/dev
 =======
         if (0 === $pid) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
             // child
             pcntl_alarm($timeoutSeconds);
             try {
@@ -424,16 +636,30 @@ final class XotForkedInvoke
         $waited = 0;
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
             if ($res === -1 || $res > 0) {
                 return $res > 0 && is_int($status) && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
             }
             usleep(100_000);
             $waited++;
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
 =======
 =======
@@ -458,6 +684,10 @@ final class XotForkedInvoke
             ++$waited;
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
         }
         posix_kill($pid, SIGKILL);
         pcntl_waitpid($pid, $status);
@@ -466,10 +696,21 @@ final class XotForkedInvoke
     }
 
     /**
+<<<<<<< .merge_file_R1CLlR
 <<<<<<< HEAD
      * @param  list<string>  $relativeDirs  relative to app/
      * @param  list<string>  $denyMethodRegexes
 =======
+=======
+<<<<<<< .merge_file_U6B2Fk
+     * @param  list<string>  $relativeDirs  relative to app/
+     * @param  list<string>  $denyMethodRegexes
+=======
+<<<<<<< HEAD
+     * @param  list<string>  $relativeDirs  relative to app/
+     * @param  list<string>  $denyMethodRegexes
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
      * @param  list<string>  $relativeDirs  relative to app/
@@ -483,6 +724,10 @@ final class XotForkedInvoke
      * @param list<string> $denyMethodRegexes
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
      */
     public static function sweepDirs(
         string $appRoot,
@@ -512,6 +757,12 @@ final class XotForkedInvoke
                 if (microtime(true) > $deadline) {
                     break 2;
                 }
+<<<<<<< .merge_file_R1CLlR
+=======
+<<<<<<< .merge_file_U6B2Fk
+                if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
+=======
+>>>>>>> .merge_file_PirPXs
 <<<<<<< HEAD
                 if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
 =======
@@ -525,6 +776,10 @@ final class XotForkedInvoke
                 if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_R1CLlR
+=======
+>>>>>>> .merge_file_HNPtWr
+>>>>>>> .merge_file_PirPXs
                     continue;
                 }
                 if (str_contains($file->getFilename(), '.php-cs-fixer') || str_contains($file->getFilename(), '.blade.')) {

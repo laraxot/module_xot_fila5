@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_0apQTX
+=======
+<<<<<<< .merge_file_QZfLki
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_YT0UEI
 =======
 <<<<<<< .merge_file_EKSg60
 <<<<<<< HEAD
@@ -16,6 +24,10 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_3EbYMp
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_0apQTX
+=======
+>>>>>>> .merge_file_IuITVM
+>>>>>>> .merge_file_YT0UEI
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 use Modules\Xot\Tests\TestCase;

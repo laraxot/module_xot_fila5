@@ -1,5 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_xfFB8J
+=======
+<<<<<<< .merge_file_ib2UrR
+=======
+>>>>>>> .merge_file_0Jokiq
 <<<<<<< HEAD
 =======
 =======
@@ -7,6 +12,10 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xfFB8J
+=======
+>>>>>>> .merge_file_MxgSKH
+>>>>>>> .merge_file_0Jokiq
 ---
 name: magic-properties-cleanup-report-2025-1
 description: " Summary"
@@ -14,19 +23,39 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_xfFB8J
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
+<<<<<<< .merge_file_ib2UrR
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_0Jokiq
 =======
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_MxgSKH
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_xfFB8J
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_ib2UrR
+=======
+>>>>>>> .merge_file_0Jokiq
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xfFB8J
+=======
+>>>>>>> .merge_file_MxgSKH
+>>>>>>> .merge_file_0Jokiq
 # Magic Properties Cleanup Report - 2025-11-17
 
 ## Summary

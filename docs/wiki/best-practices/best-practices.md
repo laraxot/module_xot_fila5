@@ -253,8 +253,34 @@ class MioModelloResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_dQnw89
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_XbqZCA
+>>>>>>> .merge_file_r0v55P
+    public function getFormSchema(): array
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_nt9WL3
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CHlzfu
+>>>>>>> .merge_file_eoQWqi
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -763,6 +789,7 @@ public function handle($user) {
 ### Motivi per utilizzare UserContract
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_dQnw89
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
 =======
 <<<<<<< HEAD
@@ -775,6 +802,25 @@ public function handle($user) {
 =======
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
 =======
+=======
+<<<<<<< .merge_file_XbqZCA
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
+=======
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
+=======
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_nt9WL3
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WPz13U
+=======
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
+=======
+>>>>>>> .merge_file_r0v55P
 <<<<<<< HEAD
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
 =======
@@ -794,6 +840,10 @@ public function handle($user) {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
+<<<<<<< .merge_file_dQnw89
+=======
+>>>>>>> .merge_file_eoQWqi
+>>>>>>> .merge_file_r0v55P
 >>>>>>> laraxot/dev
 2. **Disaccoppiamento**: Riduce le dipendenze verso implementazioni specifiche.
 3. **Testabilità**: Facilita il testing con implementazioni mock dell'interfaccia.
@@ -801,6 +851,11 @@ public function handle($user) {
 
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_dQnw89
+=======
+<<<<<<< .merge_file_XbqZCA
+=======
+>>>>>>> .merge_file_r0v55P
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nt9WL3
@@ -817,6 +872,10 @@ public function handle($user) {
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dQnw89
+=======
+>>>>>>> .merge_file_eoQWqi
+>>>>>>> .merge_file_r0v55P
 **Anti-pattern**: `Assert::isInstanceOf($user, User::class)` (o `BaseUser::class`) accoppia il codice al leaf. Canon:
 
 ```php
@@ -825,6 +884,11 @@ Assert::isInstanceOf($user, UserContract::class);
 
 `UserContract` è `Modules\Xot\Contracts\UserContract`. `getUserClass()` serve per factory/relazioni Eloquent, non per narrowing di `auth()->user()`.
 
+<<<<<<< .merge_file_dQnw89
+=======
+<<<<<<< .merge_file_XbqZCA
+=======
+>>>>>>> .merge_file_r0v55P
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nt9WL3
@@ -839,6 +903,10 @@ Assert::isInstanceOf($user, UserContract::class);
 >>>>>>> .merge_file_f9rc18
 >>>>>>> .merge_file_CHlzfu
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dQnw89
+=======
+>>>>>>> .merge_file_eoQWqi
+>>>>>>> .merge_file_r0v55P
 >>>>>>> laraxot/dev
 ### Come ottenere la classe User corretta
 
@@ -873,6 +941,13 @@ public function process(\Modules\User\Models\User $user) {
 <<<<<<< HEAD
 ```
 =======
+<<<<<<< .merge_file_dQnw89
+=======
+<<<<<<< .merge_file_XbqZCA
+```
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_r0v55P
 <<<<<<< HEAD
 ```
 =======
@@ -897,3 +972,7 @@ public function process(\Modules\User\Models\User $user) {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_CHlzfu
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dQnw89
+=======
+>>>>>>> .merge_file_eoQWqi
+>>>>>>> .merge_file_r0v55P

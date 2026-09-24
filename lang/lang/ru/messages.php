@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_X3jdpT
 
+=======
+<<<<<<< .merge_file_6sizNA
+=======
+
+>>>>>>> .merge_file_MGT4ei
+>>>>>>> .merge_file_WfZy6p
 return [
     'title' => 'Установка Laravel',
     'next' => 'Следующий шаг',

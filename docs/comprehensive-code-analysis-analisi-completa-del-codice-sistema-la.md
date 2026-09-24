@@ -165,6 +165,7 @@ try {
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_dHO81y
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -182,10 +183,37 @@ public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_8ayQdg
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_7ATwon
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_H0oXJ8
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dHO81y
+=======
+>>>>>>> .merge_file_bM8FWM
+>>>>>>> .merge_file_H0oXJ8
 {
     return [
         TextInput::make('first_name'),
@@ -197,6 +225,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_dHO81y
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -207,6 +236,22 @@ public function getFormSchema(): array
 <<<<<<< .merge_file_7ATwon
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_8ayQdg
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_7ATwon
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_H0oXJ8
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -218,6 +263,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dHO81y
+=======
+>>>>>>> .merge_file_bM8FWM
+>>>>>>> .merge_file_H0oXJ8
 {
     return [
         TextInput::make('name')->required(),
@@ -313,6 +362,7 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_dHO81y
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -320,6 +370,18 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_8ayQdg
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_H0oXJ8
 <<<<<<< .merge_file_7ATwon
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -333,6 +395,10 @@ class ContactResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+<<<<<<< .merge_file_dHO81y
+=======
+>>>>>>> .merge_file_bM8FWM
+>>>>>>> .merge_file_H0oXJ8
 >>>>>>> laraxot/dev
     {
         return [
@@ -671,6 +737,7 @@ try {
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_dHO81y
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -688,10 +755,37 @@ public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_8ayQdg
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_7ATwon
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_H0oXJ8
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dHO81y
+=======
+>>>>>>> .merge_file_bM8FWM
+>>>>>>> .merge_file_H0oXJ8
 {
     return [
         TextInput::make('first_name'),
@@ -703,6 +797,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_dHO81y
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -713,6 +808,22 @@ public function getFormSchema(): array
 <<<<<<< .merge_file_7ATwon
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_8ayQdg
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_7ATwon
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_H0oXJ8
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -724,6 +835,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dHO81y
+=======
+>>>>>>> .merge_file_bM8FWM
+>>>>>>> .merge_file_H0oXJ8
 {
     return [
         TextInput::make('name')->required(),
@@ -822,6 +937,7 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_dHO81y
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -829,6 +945,18 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_8ayQdg
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_H0oXJ8
 <<<<<<< .merge_file_7ATwon
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -842,6 +970,10 @@ class ContactResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+<<<<<<< .merge_file_dHO81y
+=======
+>>>>>>> .merge_file_bM8FWM
+>>>>>>> .merge_file_H0oXJ8
 >>>>>>> laraxot/dev
     {
         return [
