@@ -105,12 +105,14 @@ class ModuleService
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (Exception) {
-                    $reflection_class = new \ReflectionClass($tmp->class);
-                    if (! $reflection_class->isAbstract()) {
-                        $data[$tmp->name] = $tmp->class;
+                    try {
+                        $reflection_class = new \ReflectionClass($tmp->class);
+                        if (! $reflection_class->isAbstract()) {
+                            $data[$tmp->name] = $tmp->class;
+                        }
+                    } catch (\Throwable) {
+                        // Ignore reflection errors
                     }
-                } catch (\Exception) {
-                    // Ignore reflection errors
                 }
             }
         }
