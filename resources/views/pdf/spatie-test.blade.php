@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
-=======
->>>>>>> .merge_file_pStQT6
 <!DOCTYPE html>
 <html lang="it">
 <head>
