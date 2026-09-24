@@ -17,11 +17,12 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Handle an incoming request.
      *
-<<<<<<< HEAD
-     * @param  \Closure(Request):Response  $next
-=======
+     * <<<<<<< HEAD
+     *
      * @param \Closure(Request):Response $next
->>>>>>> laraxot/dev
+     *                                         =======
+     * @param \Closure(Request):Response $next
+     *                                         >>>>>>> laraxot/dev
      */
     public function handle(Request $request, \Closure $next): Response
     {
@@ -117,11 +118,12 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Logga l'uso della memoria.
      *
-<<<<<<< HEAD
-     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
-=======
-     * @param array<string, mixed> $metrics
->>>>>>> laraxot/dev
+     * <<<<<<< HEAD
+     *
+     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
+     *                                                                                                                                                                                                       =======
+     * @param array<string, mixed>                                                                                                                                                                  $metrics
+     *                                                                                                                                                                                                       >>>>>>> laraxot/dev
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
@@ -155,11 +157,12 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Determina il livello di log basato sulle metriche.
      *
-<<<<<<< HEAD
-     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
-=======
-     * @param array<string, mixed> $metrics
->>>>>>> laraxot/dev
+     * <<<<<<< HEAD
+     *
+     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
+     *                                                                                                                                                                                                       =======
+     * @param array<string, mixed>                                                                                                                                                                  $metrics
+     *                                                                                                                                                                                                       >>>>>>> laraxot/dev
      */
     private function determineLogLevel(array $metrics): string
     {
