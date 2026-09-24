@@ -95,16 +95,16 @@ class ColumnBuilder
     /**
      * Status badge column with standard colors.
      *
-<<<<<<< .merge_file_7zKQmf
-     * @param  array<string, string>  $customColors  Custom color mappings
-=======
-     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_7zKQmf
      *
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< HEAD
      * @param array<string, string> $customColors Custom color mappings
      *                                            =======
      * @param array<string, string> $customColors Custom color mappings
      *                                            >>>>>>> laraxot/dev
->>>>>>> .merge_file_aPYjex
+     *                                            >>>>>>> .merge_file_aPYjex
      */
     public static function statusBadge(array $customColors = []): TextColumn
     {
@@ -123,16 +123,16 @@ class ColumnBuilder
     /**
      * Priority badge column.
      *
-<<<<<<< .merge_file_7zKQmf
-     * @param  array<string, string>  $customColors  Custom color mappings
-=======
-     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_7zKQmf
      *
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< HEAD
      * @param array<string, string> $customColors Custom color mappings
      *                                            =======
      * @param array<string, string> $customColors Custom color mappings
      *                                            >>>>>>> laraxot/dev
->>>>>>> .merge_file_aPYjex
+     *                                            >>>>>>> .merge_file_aPYjex
      */
     public static function priorityBadge(array $customColors = []): TextColumn
     {
