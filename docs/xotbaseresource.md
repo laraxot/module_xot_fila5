@@ -26,13 +26,9 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 ```
 
@@ -68,13 +64,9 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -92,7 +84,6 @@ class NotificationResource extends XotBaseResource
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-<<<<<<< HEAD
 - [Architettura Filament](../../../docs/architecture/filament.md)
 - [Gestione Risorse](../../../docs/architecture/resources.md)
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
@@ -100,17 +91,6 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)
 - [User Resource](../../User/docs/filament-resources.md)
-=======
-- [Notify Resource](../../Notify/docs/filament-resources.md)
-- [User Resource](../../User/docs/filament-resources.md)
-- [Architettura Filament](../../../../docs/architecture/filament.md)
-- [Gestione Risorse](../../../../docs/architecture/resources.md)
-- [Regole XotBaseResource](../../../../docs/regole/xotbaseresource-rules.md)
-
-### Collegamenti ai Moduli
-- [Notify Resource](../../notify/docs/filament-resources.md)
-- [User Resource](../../user/docs/filament-resources.md)
->>>>>>> laraxot/dev
 
 ## Note Importanti
 
@@ -118,8 +98,4 @@ class NotificationResource extends XotBaseResource
 2. Implementare sempre i metodi astratti richiesti
 3. Utilizzare i file di traduzione per le label
 4. Evitare override non necessari di metodi
-<<<<<<< HEAD
 5. Seguire le convenzioni di Filament
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> laraxot/dev

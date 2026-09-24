@@ -149,13 +149,9 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 
 // ✅ CORRETTO
@@ -305,17 +301,10 @@ class MyPage extends XotBaseViewRecord
 ### 2. **Struttura Namespace Corretta**
 ```php
 // ✅ CORRETTO
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
 namespace Modules\Quaeris\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-
-// ❌ SBAGLIATO
-namespace Modules\healthcare_app\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> laraxot/dev
 ```
 
 ### 3. **Uso di Schema invece di Form**
@@ -361,11 +350,7 @@ class MyWidget extends Widget implements HasForms
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> laraxot/dev
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -388,11 +373,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> laraxot/dev
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -449,13 +430,9 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 
 // ✅ CORRETTO
@@ -465,17 +442,10 @@ public function getFormSchema(): array
 ### 3. **Namespace Errati**
 ```php
 // ❌ SBAGLIATO
-<<<<<<< HEAD
 namespace Modules\Quaeris\App\Filament\Widgets;
 
 // ✅ CORRETTO
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-namespace Modules\healthcare_app\App\Filament\Widgets;
-
-// ✅ CORRETTO
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> laraxot/dev
 ```
 
 ## 🔧 Implementazione Corretta
@@ -486,20 +456,12 @@ namespace Modules\healthcare_app\Filament\Widgets;
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> laraxot/dev
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-<<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-=======
-use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> laraxot/dev
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -543,11 +505,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> laraxot/dev
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -601,8 +559,4 @@ class QuestionChartFilterWidget extends XotBaseWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [Filament 4 Migration Guide](./filament4_migration.md)
 
-<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
-=======
-Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
->>>>>>> laraxot/dev

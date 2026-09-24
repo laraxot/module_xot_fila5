@@ -39,13 +39,9 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -184,13 +180,9 @@ class SocioResource extends XotBaseResource
     
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -372,13 +364,9 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -627,13 +615,9 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
     
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [

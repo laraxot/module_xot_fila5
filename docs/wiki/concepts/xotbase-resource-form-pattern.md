@@ -61,13 +61,9 @@ class XotBaseResourceForm
     }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [];
@@ -94,13 +90,9 @@ class XotBaseResourceForm
 class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         $steps = static::getSteps();

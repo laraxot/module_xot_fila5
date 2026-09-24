@@ -80,13 +80,9 @@ public static function getTableColumns(): array
 ### Form
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -100,13 +96,9 @@ public static function getFormSchema(): array
 ### Infolist
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getInfolistSchema(): array
 =======
 public function getInfolistSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -123,8 +115,4 @@ public static function getInfolistSchema(): array
 
 ---
 **Creato**: 2026-05-07
-<<<<<<< HEAD
 **Modulo**: Xot
-=======
-**Modulo**: Xot
->>>>>>> laraxot/dev

@@ -154,13 +154,9 @@ abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
     public static function getPages(): array { /* ... */ }
 
@@ -271,8 +267,4 @@ find laravel/Modules -name "*.php" -path "*/Filament/*" -exec grep -l "Radio::ma
 **Versione**: 1.0
 **Stato**: Ready for Implementation
 **Target**: Tutti i moduli PTVX
-<<<<<<< HEAD
 **Deadline**: 31 Dicembre 2025
-=======
-**Deadline**: 31 Dicembre 2025
->>>>>>> laraxot/dev
