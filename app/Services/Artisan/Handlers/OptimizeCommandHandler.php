@@ -19,6 +19,10 @@ class OptimizeCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
+<<<<<<< HEAD
         return $command === 'optimize';
+=======
+        return 'optimize' === $command;
+>>>>>>> laraxot/dev
     }
 }

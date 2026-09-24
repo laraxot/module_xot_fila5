@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'values' => [
         'spipu' => [
@@ -17,6 +18,12 @@ return [
             'description' => 'PDF engine based on DomPDF for HTML/CSS documents',
         ],
     ],
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/en/pdf_engine_enum.php
+return [
+>>>>>>> laraxot/dev
     'label' => 'PDF Engine',
     'options' => [
         'spipu' => 'Spipu',

@@ -40,7 +40,11 @@ class CoeffResource extends XotBaseResource
 {
     protected static ?string $model = Coeff::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [ /* ... */ ];
     }

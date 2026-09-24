@@ -63,12 +63,20 @@ Il modulo Xot definisce le **linee guida strategiche** per l'approccio al testin
 uses(Tests\TestCase::class);
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
+<<<<<<< HEAD
 // ✅ Fast, isolated, Predictable
+=======
+// ✅ Fast, isolated, <nome progetto>able
+>>>>>>> laraxot/dev
 test('user registration with mock data', function () {
     // Database reset every test
     $user = User::factory()->create();
 
+<<<<<<< HEAD
     expect($user->id)->toBe(1); // Always Predictable
+=======
+    expect($user->id)->toBe(1); // Always <nome progetto>able
+>>>>>>> laraxot/dev
 
     // Data destroyed after test
 });
@@ -78,7 +86,11 @@ test('user registration with mock data', function () {
 - ⚡ **Speed**: 10x faster execution
 - 🎯 **Isolation**: Perfect test independence
 - 🛠️ **Simplicity**: Easy setup and maintenance
+<<<<<<< HEAD
 - 🐛 **Debugging**: Clear, Predictable outcomes
+=======
+- 🐛 **Debugging**: Clear, <nome progetto>able outcomes
+>>>>>>> laraxot/dev
 
 **Disadvantages (Mock)**:
 - 🎭 **Unrealistic**: Doesn't reflect production

@@ -132,6 +132,7 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 ### Versione HEAD
 
 ## Collegamenti tra versioni di installation.md
+<<<<<<< HEAD
 * [installation.md](../../../xot/project_docs/filament/installation.md)
 * [installation.md](../../../xot/project_docs/installation.md)
 * [installation.md](../../../xot/project_docs/base/installation.md)
@@ -143,3 +144,23 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 ### Versione Incoming
 
 ---
+=======
+* [installation.md](../../../xot/docs/filament/installation.md)
+* [installation.md](../../../xot/docs/installation.md)
+* [installation.md](../../../xot/docs/base/installation.md)
+* [installation.md](../../../user/docs/installation.md)
+* [installation.md](../../../lang/docs/installation.md)
+* [installation.md](../../../cms/docs/installation.md)
+* [installation.md](../../../../themes/one/docs/installation.md)
+* [installation.md](../../../Xot/docs/filament/installation.md)
+* [installation.md](../../../Xot/docs/installation.md)
+* [installation.md](../../../Xot/docs/base/installation.md)
+* [installation.md](../../../User/docs/installation.md)
+* [installation.md](../../../Lang/docs/installation.md)
+* [installation.md](../../../Cms/docs/installation.md)
+* [installation.md](../../../../Themes/One/docs/installation.md)
+
+### Versione Incoming
+
+---
+>>>>>>> laraxot/dev

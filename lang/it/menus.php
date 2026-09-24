@@ -2,7 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/menus.php
+return [
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+>>>>>>> laraxot/dev
     'backend' => [
         'access' => [
             'title' => 'Gestione accessi',

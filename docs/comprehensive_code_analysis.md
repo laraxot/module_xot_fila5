@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -433,6 +434,8 @@ return [
 - **N+1 Queries**: 0 problemi
 - **Complexity**: Tutti i metodi <8
 
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: comprehensive_code_analysis
@@ -440,6 +443,7 @@ canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+<<<<<<< HEAD
 
 ---
 
@@ -1333,3 +1337,5 @@ return [
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
+=======
+>>>>>>> laraxot/dev

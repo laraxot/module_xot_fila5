@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/es/http.php
+>>>>>>> laraxot/dev
 return [
     404 => [
         'title' => 'La Página que intento acceder no ha sido encontrada.',

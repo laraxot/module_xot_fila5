@@ -12,7 +12,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
+<<<<<<< HEAD
 use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 
@@ -83,6 +86,7 @@ class MetatagPage extends XotBasePage
 
     public function save(): void
     {
+<<<<<<< HEAD
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
         app(SaveTenantConfigAction::class)->execute('metatag', $data);
@@ -90,6 +94,14 @@ class MetatagPage extends XotBasePage
         Notification::make()
             ->success()
             ->title('Salvato con Successo !')
+=======
+        $data = $this->form->getState();
+        app(\Modules\Tenant\Actions\Config\SaveTenantConfigAction::class)->execute('metatag', $data);
+
+        Notification::make()
+            ->success()
+            ->title(__('filament-panels::resources/edit-record.notifications.saved.title'))
+>>>>>>> laraxot/dev
             ->send();
     }
 
@@ -97,6 +109,11 @@ class MetatagPage extends XotBasePage
     protected function getFormActions(): array
     {
         return [
+<<<<<<< HEAD
+=======
+            // Laraxot module file — see docs/wiki for domain contract.
+            // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> laraxot/dev
             Action::make('save')->submit('save'),
         ];
     }

@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
+>>>>>>> laraxot/dev
 <?php
 
 declare(strict_types=1);
@@ -18,6 +34,11 @@ declare(strict_types=1);
         line-height: 1.3;
     }
 
+<<<<<<< HEAD
+=======
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> laraxot/dev
     /* ===== HEADINGS ===== */
     h1 {
         font-size: 16px;

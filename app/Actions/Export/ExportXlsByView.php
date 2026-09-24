@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< HEAD
+=======
+// use Modules\Xot\Services\ArrayService;
+
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\ViewExport;

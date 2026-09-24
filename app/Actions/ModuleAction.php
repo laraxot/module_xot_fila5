@@ -28,7 +28,15 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
+<<<<<<< HEAD
             self::$_instance = new self();
+=======
+<<<<<<< HEAD
+            self::$_instance = new self();
+=======
+            self::$_instance = new self;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         }
 
         return self::$_instance;
@@ -66,7 +74,15 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
+<<<<<<< HEAD
                 $tmp = new \stdClass();
+=======
+<<<<<<< HEAD
+                $tmp = new \stdClass();
+=======
+                $tmp = new \stdClass;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Elastic search"
 type: reference
@@ -11,12 +12,18 @@ note: "Convertito da elastic_search.txt (documento) da convert-docs-txt-to-md.py
 
 <!-- Contenuto migrato da _docs/elastic_search.txt -->
 
+=======
+>>>>>>> laraxot/dev
 https://github.com/matchish/laravel-scout-elasticsearch
 
 https://www.algolia.com/blog/engineering/scout-extended-the-full-power-of-algolia-in-laravel
 
 https://github.com/babenkoivan/scout-elasticsearch-driver
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 https://github.com/Jeroen-G/Explorer
 Explorer is a next-gen Elasticsearch driver for Laravel Scout with
 the power of Elasticsearch’s queries.
@@ -46,4 +53,8 @@ https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
 
 
 
+<<<<<<< HEAD
 meilisearch
+=======
+meilisearch
+>>>>>>> laraxot/dev

@@ -73,6 +73,7 @@ Questa e' la boundary corretta:
 
 Confronto 2026-06-30:
 
+<<<<<<< HEAD
 
 Il root mantiene solo:
 
@@ -124,6 +125,8 @@ Questa e' la boundary corretta:
 
 Confronto 2026-06-30:
 
+=======
+>>>>>>> laraxot/dev
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 

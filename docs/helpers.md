@@ -1,7 +1,11 @@
 # Helper Functions - Xot Module
 
 **Purpose**: Funzioni helper globali per utilità comuni nel framework Laraxot
+<<<<<<< HEAD
 **Location**: `Modules/Xot/Helpers/Helper.php`
+=======
+**Location**: `Modules/Xot/helpers/Helper.php`
+>>>>>>> laraxot/dev
 **Pattern**: Global functions con `function_exists()` check per evitare collisioni
 
 ---

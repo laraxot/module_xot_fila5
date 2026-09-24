@@ -6,10 +6,19 @@ namespace Modules\Xot\Actions\ModelClass;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Facades\Schema;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 class TableExistsByModelClassActions
 {
+<<<<<<< HEAD
+=======
+    use QueueableAction;
+
+>>>>>>> laraxot/dev
     public function execute(string $modelClass): bool
     {
         if (! class_exists($modelClass)) {

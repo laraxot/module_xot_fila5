@@ -3,14 +3,22 @@ title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
+<<<<<<< HEAD
 updated: 2026-07-24
+=======
+updated: 2026-06-30
+>>>>>>> laraxot/dev
 tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
   - concepts/phpstan-level10.md
+<<<<<<< HEAD
   - concepts/phpstan-trait-probes.md
   - concepts/xot-seed-model-once.md
   - concepts/phpstan-pest-bridge-discipline.md
+=======
+  - concepts/xot-seed-model-once.md
+>>>>>>> laraxot/dev
 qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ---
 
@@ -19,6 +27,7 @@ qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ## Comando canonico
 
 ```bash
+<<<<<<< HEAD
 cd laravel && php -d memory_limit=-1 ./vendor/bin/phpstan clear-result-cache
 cd laravel && php -d memory_limit=-1 ./vendor/bin/phpstan analyse Modules --no-progress
 ```
@@ -45,6 +54,18 @@ php artisan ide-helper:models --nowrite
 ```
 
 Verificare sempre con `git status --short Modules/*/app/Models/*.php` dopo qualunque comando `ide-helper:models` prima di procedere.
+=======
+cd laravel && ./vendor/bin/phpstan clear-result-cache
+cd laravel && ./vendor/bin/phpstan analyse Modules
+```
+
+Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`. **Non modificare** `phpstan.neon` — fix solo su codice PHP/test.
+
+## Stato attuale (2026-06-30)
+
+- `./vendor/bin/phpstan analyse Modules` → **0 errori**, exit 0
+- Moduli analizzati: AI, Activity, Blog, Cms, Comment, Gdpr, Geo, Job, Lang, Media, Notify, Predict, Rating, Seo, Tenant, UI, User, Xot
+>>>>>>> laraxot/dev
 
 ## Fix strutturali (ponytail — una guard condivisa)
 
@@ -62,12 +83,17 @@ Article::factory()->count(1)->create();
 xotSeedModelOnce(Article::class);
 ```
 
+<<<<<<< HEAD
 ### Pest — bridge namespace (`PestFunctionBridge.php`)
+=======
+### Pest — stub globali + bridge namespace
+>>>>>>> laraxot/dev
 
 | Componente | Path | Ruolo |
 |------------|------|-------|
 | Stub globali | `Helper.php` | `expect`, `it`, `test`, `uses`, `beforeEach`, … |
 | `PestUsesChain` | `Xot/tests/Support/PestUsesChain.php` | `uses(...)->beforeEach()` tipizzato |
+<<<<<<< HEAD
 | Bridge per modulo | `Xot/tests/Support/PestFunctionBridge.php` | stub `expect/test/it/describe/beforeEach/afterEach/uses/skip` per **213** namespace `Modules\{X}\Tests(\...)?` |
 
 Il bridge è **generato meccanicamente** da uno scanner che cerca `^namespace ...;` in ogni file sotto `*/tests/*` di ogni modulo. Se un modulo viene rimosso senza rigenerare il bridge, restano blocchi stale con `@param-closure-this \Modules\{Removed}\Tests\TestCase` non risolvibile → `class.notFound` su ogni funzione stub di quel blocco.
@@ -85,16 +111,28 @@ cd laravel
 php -l Modules/Xot/tests/Support/PestFunctionBridge.php
 ./vendor/bin/pint --test Modules/Xot/tests/Support/PestFunctionBridge.php
 ./vendor/bin/phpstan analyse Modules/Xot/tests/Support/PestFunctionBridge.php --no-progress
+=======
+| Bridge per modulo | `Xot/tests/Support/PestFunctionBridge.php` | `uses()` → `PestUsesChain` per 192 namespace |
+
+Rigenerazione bridge:
+
+```bash
+php bashscripts/tools/generate-pest-phpstan-bridge.php
+php bashscripts/tools/fix-pest-phpstan-test-patterns.php
+>>>>>>> laraxot/dev
 ```
 
 ### Factory — `HasXotFactory`
 
 `newFactory()` annotato `@return TFactory` per risolvere la catena generica sui modelli Xot.
 
+<<<<<<< HEAD
 ### Trait probe Notify
 
 `Modules/Notify/app/Phpstan/HasContactPhpstanProbe.php` registrato in `xotPhpstanTraitProbeClasses()` (valori `::class`, non stringhe).
 
+=======
+>>>>>>> laraxot/dev
 ### Test mock User — `RelationX`
 
 `MockUserWithTeams` (test) deve `use RelationX` se usa `HasTeams` (metodo `belongsToManyX`).
@@ -109,10 +147,20 @@ php -l Modules/Xot/tests/Support/PestFunctionBridge.php
 
 - `ConvertWidget.php`: loop `while` malformato, `$record` non qualificato → progresso solo in `onProgress`, tipi espliciti su `$remaining`/`$rate`
 
+<<<<<<< HEAD
+=======
+### Comment / Predict User
+
+- `Predict\Models\User` usa `Modules\Comment\Models\Contracts\CanComment` + `InteractsWithComments` (non Spatie)
+- `CanComment::notify()` senza `: void` nel contratto (compatibilità `BaseUser::RoutesNotifications`); PHPDoc `@return mixed`
+- `InteractsWithComments::subscribeToCommentNotifications`: typo `$hasComment` → `$hasComments`; PHPDoc param corretto (`Model`, non `Model&CanComment`)
+
+>>>>>>> laraxot/dev
 ## Fix type-safety per modulo
 
 | Modulo | Fix principali |
 |--------|----------------|
+<<<<<<< HEAD
 | Xot | `Helper.php`: `count($matches) >= 3` al posto di `isset` su offset regex; bridge Pest rigenerato (Comment stale) |
 | Cms | `@var view-string` su `AppLayout::$view` |
 | Employee | `Admin.php` — self-mixin `@mixin IdeHelperAdmin` orfano rimosso (nessuna classe `IdeHelperAdmin` reale esiste in nessun file: `_ide_helper_models.php` è escluso da `phpstan.neon` e non definisce comunque quella classe) |
@@ -122,6 +170,17 @@ php -l Modules/Xot/tests/Support/PestFunctionBridge.php
 ## Regola `@property $deleter`
 
 Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $deleter`. I modelli che usano il trait devono allineare il PHPDoc a `ProfileContract`, non a implementazioni modulo-specifiche.
+=======
+| Xot | `Helper.php`: `count($matches) >= 3` al posto di `isset` su offset regex |
+| Cms | `@var view-string` su `AppLayout::$view` |
+| Blog | `@property ProfileContract\|null $deleter` (trait `Updater`); rimossi import `Fixcity\Models\Profile` inutili |
+| Comment | `CommentsComponent`: guard `CanComment` su utente auth; modello `Commentable` passato a subscribe |
+| phpstan.neon | `excludePaths` aggiunto `./*/Tests/*` (Tenant ha cartella `Tests/`) |
+
+## Regola `@property $deleter`
+
+Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $deleter`. I modelli che usano il trait devono allineare il PHPDoc a `ProfileContract`, non a implementazioni modulo-specifiche (`Fixcity\Models\Profile`, `Blog\Models\Profile`).
+>>>>>>> laraxot/dev
 
 ## Ignore in phpstan.neon (intenzionali)
 
@@ -129,20 +188,30 @@ Il trait `Modules\Xot\Traits\Updater` dichiara `@property ProfileContract|null $
 - cast `mixed` unsafe, `new static` unsafe
 - deps opzionali non installate (documentate, non forzate via Composer)
 
+<<<<<<< HEAD
 ## Follow-up aperto (non PHPStan, trovato durante la verifica post-fix)
 
 `./vendor/bin/pest Modules/Xot` (intero modulo, non il solo file toccato) riporta **68 failed / 28 risky** su `HasCommonScopesTest.php` e classi limitrofe: `LogicException: The [bootIfNotBooted] method may not be called on model [Modules\Xot\Tests\Fixtures\Models\HasCommonScopesProbe] while it is being booted`. File non toccato da questa sessione (`git log` mostra un solo commit storico), quindi **preesistente**, non introdotto dal fix PHPStan. Ipotesi principale: fallout Eloquent del bump Laravel v12→v13 sul boot ricorsivo dei trait-probe model. Da investigare separatamente (task distinto, fuori scope da "phpstan analyse Modules").
 
+=======
+>>>>>>> laraxot/dev
 ## Verifica post-modifica
 
 ```bash
 cd laravel
+<<<<<<< HEAD
+=======
+php artisan about
+>>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse Modules --no-progress
 ```
 
 ## Related
 
 - [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)
+<<<<<<< HEAD
 - [phpstan-pest-bridge-discipline](../concepts/phpstan-pest-bridge-discipline.md)
+=======
+>>>>>>> laraxot/dev
 - [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)

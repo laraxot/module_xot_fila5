@@ -142,7 +142,11 @@ All Filament resources extend this base class:
 
 **Required Methods:**
 ```php
+<<<<<<< HEAD
 abstract public function getFormSchema(): array;
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -335,7 +339,11 @@ Defines contracts for modular extensibility:
 
 ### 9. Helper Functions (200+)
 
+<<<<<<< HEAD
 **File:** `Modules/Xot/Helpers/Helper.php`
+=======
+**File:** `Modules/Xot/helpers/Helper.php`
+>>>>>>> laraxot/dev
 
 **Categories:**
 
@@ -579,7 +587,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('field1')->required(),
@@ -656,7 +668,11 @@ class ArticleResource extends XotBaseResource
 {
     protected static ?string $model = Article::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('title')
@@ -830,7 +846,11 @@ $value = $model->getExtra('custom_field');
 - Filament Resource Base: `Modules/Xot/app/Filament/Resources/XotBaseResource.php`
 - Provider Base: `Modules/Xot/app/Providers/XotBaseServiceProvider.php`
 - Central Config: `Modules/Xot/app/Datas/XotData.php`
+<<<<<<< HEAD
 - Global Helpers: `Modules/Xot/Helpers/Helper.php`
+=======
+- Global Helpers: `Modules/Xot/helpers/Helper.php`
+>>>>>>> laraxot/dev
 - Actions: `Modules/Xot/app/Actions/` (150+ classes)
 - Test Base: `Modules/Xot/tests/TestCase.php`
 

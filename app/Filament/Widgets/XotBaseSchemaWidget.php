@@ -31,19 +31,27 @@ use Webmozart\Assert\Assert;
  * validazione campi solo nello schema — submit usa `$this->form->getState()` (mai `validateForm()`).
  * La *Form class è lo spartito (campi + regole + dehydrate). MAI duplicare TextInput nel widget.
  *
+<<<<<<< HEAD
  * @property Schema                    $form
  * @property array<string, mixed>|null $data
+=======
+ * @property Schema               $form
+ * @property array<string, mixed> $data
+>>>>>>> laraxot/dev
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 {
     use InteractsWithSchemas;
 
     /**
+<<<<<<< HEAD
      * @var array<string, mixed>|null
      */
     public ?array $data = [];
 
     /**
+=======
+>>>>>>> laraxot/dev
      * FQCN *Form (opzionale). Se presente, `form()` delega a `FormClass::{schemaMethod()}`.
      *
      * @return class-string|null

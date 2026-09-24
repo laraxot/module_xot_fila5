@@ -16,8 +16,13 @@ class GuessPivotFullClassAction
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
+<<<<<<< HEAD
      * @param  string|class-string<Model>  $related  The related model class name
      * @param  string|class-string<Model>  $class  The class
+=======
+     * @param string|class-string<Model> $related The related model class name
+     * @param string|class-string<Model> $class   The class
+>>>>>>> laraxot/dev
      */
     public function execute(string $pivot_name, string $related, string $class): string
     {
@@ -48,7 +53,11 @@ class GuessPivotFullClassAction
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
+<<<<<<< HEAD
         if ($parent_class === false) {
+=======
+        if (false === $parent_class) {
+>>>>>>> laraxot/dev
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

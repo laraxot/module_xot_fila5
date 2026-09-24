@@ -9,7 +9,11 @@
 
 ### Form Schema
 ```php
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         // Campi base
@@ -65,6 +69,7 @@ public function getFormSchema(): array
 ### Versione HEAD
 
 ## Collegamenti tra versioni di filament-integration.md
+<<<<<<< HEAD
 * [filament-integration.md](../../../xot/project_docs/laraxot/filament-integration.md)
 * [filament-integration.md](../../../cms/project_docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](../../../cms/project_docs/filament-integration.md)
@@ -72,3 +77,15 @@ public function getFormSchema(): array
 ### Versione Incoming
 
 ---
+=======
+* [filament-integration.md](../../../Xot/docs/laraxot/filament-integration.md)
+* [filament-integration.md](../../../Cms/docs/roadmap/features/filament-integration.md)
+* [filament-integration.md](../../../Cms/docs/filament-integration.md)
+* [filament-integration.md](../../../xot/docs/laraxot/filament-integration.md)
+* [filament-integration.md](../../../cms/docs/roadmap/features/filament-integration.md)
+* [filament-integration.md](../../../cms/docs/filament-integration.md)
+
+### Versione Incoming
+
+---
+>>>>>>> laraxot/dev

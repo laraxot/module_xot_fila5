@@ -43,7 +43,11 @@ class ArtisanService
             case 'migrate':
                 DB::purge('mysql');
                 DB::reconnect('mysql');
+<<<<<<< HEAD
                 if ($module_name !== '') {
+=======
+                if ('' !== $module_name) {
+>>>>>>> laraxot/dev
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -137,7 +141,11 @@ class ArtisanService
             $log = '';
         }
         $content = '';
+<<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+=======
+        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> laraxot/dev
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -198,7 +206,11 @@ class ArtisanService
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
                 // Parameter #1 $paths of static method Illuminate\Filesystem\Filesystem::delete() expects array|string, Symfony\Component\Finder\SplFileInfo given.
                 echo '<br/>'.$file->getRealPath();
 
@@ -214,7 +226,11 @@ class ArtisanService
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -230,7 +246,11 @@ class ArtisanService
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+=======
+            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -243,7 +263,11 @@ class ArtisanService
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> laraxot/dev
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -253,7 +277,11 @@ class ArtisanService
             Artisan::call($command, $arguments);
 
             return $output.'[<pre>'.Artisan::output().'</pre>]'; // dato che mi carico solo le route minime menufull.delete non esiste.. impostare delle route comuni.
+<<<<<<< HEAD
         } catch (Exception $exception) {
+=======
+        } catch (\Exception $exception) {
+>>>>>>> laraxot/dev
             // throw new Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
             return '[<pre>'.$exception->getMessage().'</pre>]';
 

@@ -29,8 +29,45 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     
    
+=======
+    /**
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'key' => TextColumn::make('key')
+                ->searchable()
+                ->sortable()
+                ->wrap()
+                ->label('Key'),
+            'value' => TextColumn::make('value')
+                ->searchable()
+                ->wrap()
+                ->label('Value'),
+            'expiration' => TextColumn::make('expiration')
+                ->dateTime()
+                ->sortable()
+                ->label('Expiration'),
+        ];
+    }
+
+    /**
+     * @return array<int, Stack>
+     */
+    #[\Override]
+    public function getGridTableColumns(): array
+    {
+        return [
+            Stack::make($this->getTableColumns()),
+        ];
+    }
+
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Action>
      */

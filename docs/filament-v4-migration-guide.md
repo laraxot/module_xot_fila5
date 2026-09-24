@@ -153,7 +153,11 @@ public function boot()
 abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
+<<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
     public static function getPages(): array { /* ... */ }
 
     // ❌ METODI VIETATI - Devono essere solo nelle pagine List

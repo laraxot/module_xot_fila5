@@ -98,11 +98,19 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Modello Doctor (Patient)](../../../patient/project_docs/models/doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../patient/project_docs/readme.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/project_docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../patient/project_docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/project_docs/database/migrations.md)
+=======
+- [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
+- [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
+- [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
+- [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
+- [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
+>>>>>>> laraxot/dev
 
 ## Regola generale
 
@@ -124,5 +132,10 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+<<<<<<< HEAD
 - [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
 // Aggiungere qui altri moduli se necessario
+=======
+// Aggiungere qui altri moduli se necessario
+
+>>>>>>> laraxot/dev

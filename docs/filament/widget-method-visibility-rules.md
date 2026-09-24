@@ -91,6 +91,7 @@ must be public (as in class HasXotTable)
 
 **Soluzione**: Cambiare visibilità a `public`
 
+<<<<<<< HEAD
 ## Convenzioni di Naming
 
 - `get*()` (mai `resolve*`, `getXot*`): convention Filament/Livewire standard
@@ -101,3 +102,12 @@ must be public (as in class HasXotTable)
 
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
 - [Filament 5 Migration Guide](https://filamentphp.com/docs/5.x/tables/upgrade-guide)
+=======
+## Riferimenti
+
+- [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
+- [Widget Table Configuration](../../../Modules/Xot/docs/filament/widget-table-configuration.md)
+
+*Ultimo aggiornamento: 2025-01-27*
+- [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+>>>>>>> laraxot/dev

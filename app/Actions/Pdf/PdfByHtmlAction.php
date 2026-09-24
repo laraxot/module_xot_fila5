@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Pdf;
 
 use Modules\Xot\Datas\PdfData;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Enums\PdfEngineEnum;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 

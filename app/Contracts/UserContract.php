@@ -13,7 +13,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\Pivot;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
+=======
+>>>>>>> laraxot/dev
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\PersonalAccessTokenResult;
 use Laravel\Passport\Token;
@@ -26,11 +29,15 @@ use Nwidart\Modules\Laravel\Module;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+<<<<<<< HEAD
 use Spatie\Permission\Traits\HasRoles;
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Modules\Xot\Contracts\UserContract.
  *
+<<<<<<< HEAD
  * @property string|null               $id
  * @property string|null               $email
  * @property Carbon|null               $email_verified_at
@@ -47,6 +54,24 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Team>     $membershipTeams
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
+=======
+ * @property string|null                     $id
+ * @property string|null                     $email
+ * @property \Illuminate\Support\Carbon|null $email_verified_at
+ * @property string|null                     $first_name
+ * @property string|null                     $last_name
+ * @property string|null                     $full_name
+ * @property string|null                     $name
+ * @property string|null                     $phone
+ * @property string|null                     $type
+ * @property string|null                     $current_team_id
+ * @property TeamContract                    $currentTeam
+ * @property ProfileContract|null            $profile
+ * @property Collection<int, UserRole>       $roles
+ * @property Collection<int, Team>           $membershipTeams
+ * @property Collection<int, Model>          $teams
+ * @property Collection<int, Tenant>         $tenants
+>>>>>>> laraxot/dev
  *
  * @phpstan-require-extends Model
  *
@@ -61,7 +86,13 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * public function avatar();
      */
     /**
+<<<<<<< HEAD
      * @return HasOne<Model&ProfileContract, Model&static>
+=======
+     * @return HasOne<Model&ProfileContract, $this>
+     *
+     * @phpstan-ignore generics.notSubtype
+>>>>>>> laraxot/dev
      */
     public function profile(): HasOne;
 
@@ -132,23 +163,43 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function roles(): BelongsToMany;
 
     /**
+<<<<<<< HEAD
      * Spatie Permission — team pivot for role scoping ({@see HasRoles::teams()}).
      *
      * @return BelongsToMany<Model, Model&static>
+=======
+     * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
+     *
+     * @return BelongsToMany<Model, $this>
+     *
+     * @phpstan-ignore generics.notSubtype
+>>>>>>> laraxot/dev
      */
     public function teams(): BelongsToMany;
 
     /**
      * Laraxot team membership (Jetstream-style pivot).
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
+=======
+     * @return BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>
+     *
+     * @phpstan-ignore generics.notSubtype
+>>>>>>> laraxot/dev
      */
     public function membershipTeams(): BelongsToMany;
 
     /**
      * Get the user's tenants.
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Model, Model&static>
+=======
+     * @return BelongsToMany<Model, $this>
+     *
+     * @phpstan-ignore generics.notSubtype
+>>>>>>> laraxot/dev
      */
     public function tenants(): BelongsToMany;
 

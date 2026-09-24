@@ -5,9 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Enums\PdfEngineEnum;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Webmozart\Assert\Assert;
@@ -197,7 +203,11 @@ class GetPdfContentByRecordAction
             // Generate and return PDF content as binary string
             return $html2pdf->output('', 'S'); // 'S' returns string content
         } catch (\Exception $e) {
+<<<<<<< HEAD
             Log::error('PDF generation failed in GetPdfContentByRecordAction', [
+=======
+            \Log::error('PDF generation failed in GetPdfContentByRecordAction', [
+>>>>>>> laraxot/dev
                 'filename' => $filename,
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),

@@ -6,6 +6,10 @@ namespace Modules\Xot\Actions\Debug;
 
 use Closure;
 use Filament\Notifications\Notification;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 
 /**
  * Classe per misurare le performance di esecuzione di un blocco di codice.
@@ -14,6 +18,11 @@ use Filament\Notifications\Notification;
  */
 class MeasureAction
 {
+<<<<<<< HEAD
+=======
+    use QueueableAction;
+
+>>>>>>> laraxot/dev
     /**
      * Esegue una closure misurando il tempo di esecuzione e l'utilizzo di memoria.
      *

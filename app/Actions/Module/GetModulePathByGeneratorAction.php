@@ -6,9 +6,18 @@ namespace Modules\Xot\Actions\Module;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 
 class GetModulePathByGeneratorAction
 {
+=======
+use Spatie\QueueableAction\QueueableAction;
+
+class GetModulePathByGeneratorAction
+{
+    use QueueableAction;
+
+>>>>>>> laraxot/dev
     public function execute(string $moduleName, string $generatorPath): string
     {
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');

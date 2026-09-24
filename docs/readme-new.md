@@ -682,7 +682,11 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Real-time update support for widgets
 - Advanced caching strategies
 
+<<<<<<< HEAD
 See [ROADMAP.md](roadmap.md) for details.
+=======
+See [ROADMAP.md](./ROADMAP.md) for details.
+>>>>>>> laraxot/dev
 
 ---
 

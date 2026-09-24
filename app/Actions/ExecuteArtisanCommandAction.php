@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Event;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Process;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -33,12 +37,16 @@ class ExecuteArtisanCommandAction
         'passport:keys',
         'passport:purge',
         'passport:hash',
+<<<<<<< HEAD
         'notify:migrate-themes-to-mail-templates',
+=======
+>>>>>>> laraxot/dev
     ];
 
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
+<<<<<<< HEAD
      * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
      * @return array{
      *     command: string,
@@ -48,6 +56,18 @@ class ExecuteArtisanCommandAction
      * } Array con informazioni sull'esecuzione del comando
      *
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
+=======
+     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
+     *
+     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
+     *
+     * @return array{
+     *     command: string,
+     *     output: array<int, string>,
+     *     status: 'completed'|'failed',
+     *     exitCode: int
+     * } Array con informazioni sull'esecuzione del comando
+>>>>>>> laraxot/dev
      */
     public function execute(string $command): array
     {
@@ -57,16 +77,26 @@ class ExecuteArtisanCommandAction
             throw new \RuntimeException("Comando non consentito: {$command}");
         }
 
+<<<<<<< HEAD
         /** @var list<string> $output */
         $output = [];
         $status = 'running';
 
+=======
+        /** @var array<int, string> $output */
+        $output = [];
+        $status = 'running';
+
+        Event::dispatch('artisan-command.started', [$command]);
+
+>>>>>>> laraxot/dev
         try {
             $process = Process::path(base_path())
                 ->command("php artisan {$command}")
                 ->timeout(300)
                 ->start();
 
+<<<<<<< HEAD
             // Cattura l'output man mano che il processo produce dati; non e'
             // "tempo reale" lato browser (questa chiamata resta bloccante
             // dentro un'unica richiesta Livewire sincrona), ma evita di
@@ -89,10 +119,17 @@ class ExecuteArtisanCommandAction
                 }
 
                 usleep(50000); // 50ms di pausa per evitare sovraccarico della CPU
+=======
+            while ($process->running()) {
+                $this->appendProcessStream($process->latestOutput(), $command, $output);
+                $this->appendProcessStream($process->latestErrorOutput(), $command, $output, true);
+                usleep(50000);
+>>>>>>> laraxot/dev
             }
 
             $result = $process->wait();
 
+<<<<<<< HEAD
             // Cattura qualsiasi output residuo
             $finalOutput = trim($result->output());
             if (! empty($finalOutput)) {
@@ -106,6 +143,19 @@ class ExecuteArtisanCommandAction
 
             $status = $result->successful() ? 'completed' : 'failed';
 
+=======
+            $this->appendProcessStream($result->output(), $command, $output);
+            $this->appendProcessStream($result->errorOutput(), $command, $output, true);
+
+            if ($result->successful()) {
+                $status = 'completed';
+                Event::dispatch('artisan-command.completed', [$command]);
+            } else {
+                $status = 'failed';
+                Event::dispatch('artisan-command.failed', [$command, $result->errorOutput()]);
+            }
+
+>>>>>>> laraxot/dev
             return [
                 'command' => $command,
                 'output' => $output,
@@ -113,14 +163,44 @@ class ExecuteArtisanCommandAction
                 'exitCode' => $result->exitCode() ?? 0,
             ];
         } catch (\Throwable $e) {
+<<<<<<< HEAD
+=======
+            Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
+>>>>>>> laraxot/dev
             throw new \RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }
 
     /**
+<<<<<<< HEAD
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
      * @param  string  $command  Il comando da verificare
+=======
+     * @param array<int, string> $output
+     */
+    private function appendProcessStream(string $data, string $command, array &$output, bool $isError = false): void
+    {
+        if ('' === $data) {
+            return;
+        }
+
+        $formatted = trim($data);
+        if ('' === $formatted) {
+            return;
+        }
+
+        $line = $isError ? '[ERROR] '.$formatted : $formatted;
+        $output[] = $line;
+        Event::dispatch('artisan-command.output', [$command, $line]);
+    }
+
+    /**
+     * Verifica se un comando è presente nella lista dei comandi consentiti.
+     *
+     * @param string $command Il comando da verificare
+     *
+>>>>>>> laraxot/dev
      * @return bool True se il comando è consentito, false altrimenti
      */
     private function isCommandAllowed(string $command): bool

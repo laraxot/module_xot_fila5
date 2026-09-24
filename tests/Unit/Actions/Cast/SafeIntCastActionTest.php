@@ -2,12 +2,19 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 it('casts various values to integer correctly', function (): void {
     $action = app(SafeIntCastAction::class);
 
@@ -21,7 +28,12 @@ it('casts various values to integer correctly', function (): void {
     // Strings
     Assert::assertSame(123, $action->execute('123'));
     Assert::assertSame(1234, $action->execute('1.234')); // Thousands separator
+<<<<<<< HEAD
     Assert::assertSame(123, $action->execute(' +123 '));
+=======
+    $signedWhitespaceInput = ' '.chr(43).'123 ';
+    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
+>>>>>>> laraxot/dev
     Assert::assertSame(7, $action->execute('invalid', 7));
     Assert::assertSame(0, $action->execute(''));
     // Booleans
@@ -31,8 +43,12 @@ it('casts various values to integer correctly', function (): void {
     Assert::assertSame(15, $action->execute(['15']));
     Assert::assertSame(2, $action->execute(['a', 'b'], 2));
     // Objects with toString
+<<<<<<< HEAD
     $obj = new class
     {
+=======
+    $obj = new class {
+>>>>>>> laraxot/dev
         public function __toString()
         {
             return '20';

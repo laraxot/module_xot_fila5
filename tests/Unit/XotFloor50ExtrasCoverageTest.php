@@ -9,7 +9,10 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
+<<<<<<< HEAD
 use Mockery;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
@@ -18,7 +21,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 describe('Xot floor50 extras non-public', function (): void {

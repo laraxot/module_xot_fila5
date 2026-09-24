@@ -294,7 +294,11 @@ Themes implement accessibility features while maintaining module functionality:
 
 ### KISS (Keep It Simple, Stupid)
 - Simple theme switching
+<<<<<<< HEAD
 - Predictable view resolution
+=======
+- <nome progetto>able view resolution
+>>>>>>> laraxot/dev
 - Clear separation of concerns
 - Minimal configuration needed
 

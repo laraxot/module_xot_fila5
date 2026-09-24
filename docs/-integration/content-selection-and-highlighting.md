@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 'Content selection and highlighting'
 module: Xot
@@ -13,10 +14,19 @@ updated: 2026-08-24
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
 
+=======
+# content_selection_and_highlighting
+
+<!-- Contenuto migrato da _docs/content_selection_and_highlighting.txt -->
+
+https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
+
+>>>>>>> laraxot/dev
 https://github.com/codeshifu/react-highlight-pop
 
 https://stackoverflow.com/questions/18543676/display-popup-above-highlighted-text-in-contenteditable-div
 
+<<<<<<< HEAD
 
 https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-highlight-js-9d9ab2797b8
 
@@ -24,6 +34,12 @@ https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-hi
 https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highlight-function
 
 
+=======
+https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-highlight-js-9d9ab2797b8
+
+https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highlight-function
+
+>>>>>>> laraxot/dev
 http://720kb.github.io/butler/
 https://720kb.github.io/highlighter.js/
 

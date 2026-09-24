@@ -8,7 +8,10 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
+<<<<<<< HEAD
 use Throwable;
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Crea sul database di test le tabelle che il modulo dichiara nelle proprie migration,
@@ -60,7 +63,11 @@ final class XotModuleSchema
     private static array $done = [];
 
     /**
+<<<<<<< HEAD
      * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
+=======
+     * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
+>>>>>>> laraxot/dev
      */
     public static function ensure(string $module): void
     {
@@ -186,7 +193,11 @@ final class XotModuleSchema
 
             $table = self::tableOf($migration);
 
+<<<<<<< HEAD
             if ($table !== null && Schema::hasTable($table)) {
+=======
+            if (null !== $table && Schema::hasTable($table)) {
+>>>>>>> laraxot/dev
                 return;
             }
 
@@ -199,7 +210,11 @@ final class XotModuleSchema
             /** @var callable(): void $up */
             $up = [$migration, 'up'];
             $up();
+<<<<<<< HEAD
         } catch (Throwable) {
+=======
+        } catch (\Throwable) {
+>>>>>>> laraxot/dev
             // Una migration che non gira lascia semplicemente la tabella assente: i test
             // che la richiedono si salteranno per precondizione. Vedi il docblock.
         }
@@ -219,8 +234,13 @@ final class XotModuleSchema
         try {
             $table = $migration->getTable();
 
+<<<<<<< HEAD
             return $table !== '' ? $table : null;
         } catch (Throwable) {
+=======
+            return '' !== $table ? $table : null;
+        } catch (\Throwable) {
+>>>>>>> laraxot/dev
             return null;
         }
     }

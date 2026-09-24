@@ -1,4 +1,8 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 title: 'Inodes'
 module: Xot
 type: reference
@@ -11,6 +15,27 @@ updated: 2026-08-24
 ---
 
 -----------------------------------------------------------
+<<<<<<< HEAD
+=======
+=======
+title: "Inodes"
+type: reference
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da _inodes.txt (documento) da convert-docs-txt-to-md.py."
+---
+
+# Inodes
+
+--------------------------------------------------------------
+$ df -i /
+Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
+/dev/xvda1      7692288 652294 7039994    9%      /
+
+--------------------------------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------

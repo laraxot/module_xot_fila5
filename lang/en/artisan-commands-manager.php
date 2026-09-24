@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/en/artisan-commands-manager.php
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'icon' => 'heroicon-o-command-line',
@@ -34,6 +40,7 @@ return [
         'queue_restart' => [
             'label' => 'Riavvia Code',
         ],
+<<<<<<< HEAD
         'composer_dump_autoload' => [
             'label' => 'Composer Dump Autoload',
         ],
@@ -41,6 +48,8 @@ return [
             'label' => 'Import Legacy Email/SMS Templates',
             'modal_description' => 'Copies email/SMS content from the legacy notify_themes table into mail_templates (the new invite sending system). Idempotent: re-running it updates already-migrated templates instead of duplicating them, overwriting any manual edits made after the last run.',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'status' => [
         'completed' => 'Completato',

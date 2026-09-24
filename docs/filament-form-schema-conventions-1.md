@@ -8,7 +8,11 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -25,7 +29,11 @@ public function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -97,7 +105,11 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -112,7 +124,11 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),
@@ -131,7 +147,13 @@ class MyResource extends XotBaseResource
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
 - [XotBaseResource](./xot_base_resource.md)
 - [Form Components](./form_components.md)
 - [Form Validation](./form_validation.md)
+=======
+- [XotBaseResource](./XOT_BASE_RESOURCE.md)
+- [Form Components](./FORM_COMPONENTS.md)
+- [Form Validation](./FORM_VALIDATION.md)
+>>>>>>> laraxot/dev
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)

@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/test.php
+>>>>>>> laraxot/dev
 return [
     'navigation' => ['label' => 'Test', 'group' => 'Sviluppo', 'icon' => 'heroicon-o-beaker', 'sort' => 999],
     'label' => 'Test',
@@ -17,6 +23,9 @@ return [
         'create' => ['label' => 'Crea Test'],
         'edit' => ['label' => 'Modifica Test'],
         'delete' => ['label' => 'Elimina Test'],
+<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+=======
+>>>>>>> laraxot/dev
     ],
 ];

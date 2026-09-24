@@ -28,6 +28,7 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 | `PanelModuleResolver` | `Adapters/Filament/PanelModuleAdapter` |
 | `PanelModuleSupport` | Eliminato (duplicato morto) |
 | `PdfBuilderAdapter` | `Adapters/PdfBuilderAdapter` |
+<<<<<<< HEAD
 | `PaDesignColors` | `Actions/PaDesignColorsAction` (`filamentPalette()` + `execute()`) |
 | `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
 
@@ -38,6 +39,12 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 - Il solo chiamante runtime storico di `RouteService::inAdmin()` usa ora l'helper globale canonico.
 - Nessuna facade multi-metodo e nessuna injection Action→Action: il bordo pubblico resta
   `app(Action::class)->execute(...)`.
+=======
+| `PaDesignColors` | `Actions/Design/GetPaFilamentPaletteAction` |
+| `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
+
+**Nota (2026-07-13):** nessun duplicato `ResolvePanelModuleAction` — panel multi-metodo resta solo su `PanelModuleAdapter`.
+>>>>>>> laraxot/dev
 
 ## Perché
 

@@ -22,11 +22,19 @@ class HasExtraMockExtra extends Model implements ExtraContract
     protected $fillable = ['extra_attributes'];
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
      */
     public static function withAttributes(array $attributes): self
     {
         $extra = new self;
+=======
+     * @param array<string, mixed> $attributes
+     */
+    public static function withAttributes(array $attributes): self
+    {
+        $extra = new self();
+>>>>>>> laraxot/dev
         $extra->extra_attributes = collect($attributes);
 
         return $extra;

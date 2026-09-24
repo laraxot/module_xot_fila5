@@ -6,7 +6,10 @@ namespace Modules\Xot\Actions\Filament;
 
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use LogicException;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -27,7 +30,12 @@ class GetResourceClassNameByModelClassAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
+=======
+     * @param class-string<Model> $modelClass
+     *
+>>>>>>> laraxot/dev
      * @return class-string<XotBaseResource>
      */
     public function execute(string $modelClass): string
@@ -36,6 +44,7 @@ class GetResourceClassNameByModelClassAction
 
         $resourceClass = Filament::getModelResource($modelClass);
 
+<<<<<<< HEAD
         if ($resourceClass === null) {
             throw new LogicException(
                 sprintf(
@@ -44,6 +53,10 @@ class GetResourceClassNameByModelClassAction
                     $modelClass
                 )
             );
+=======
+        if (null === $resourceClass) {
+            throw new \LogicException(sprintf('[%s] Nessuna Filament Resource registrata nel pannello corrente per il model [%s].', class_basename($this), $modelClass));
+>>>>>>> laraxot/dev
         }
 
         Assert::subclassOf($resourceClass, XotBaseResource::class);

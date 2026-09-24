@@ -56,7 +56,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 1. **SEMPRE** utilizzare `getFormSchema()` invece di `form()`:
    ```php
    // CORRETTO ✅
+<<<<<<< HEAD
    public function getFormSchema(): array
+=======
+   public static function getFormSchema(): array
+>>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome'),

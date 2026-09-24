@@ -8,11 +8,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Table;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Export\PdfByModelAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 
 class PdfAction extends XotBaseAction
+=======
+use Filament\Actions\Action;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Export\PdfByModelAction;
+
+class PdfAction extends Action
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {

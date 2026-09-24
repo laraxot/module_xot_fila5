@@ -10,6 +10,10 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+>>>>>>> laraxot/dev
 use Filament\Resources\Pages\Page;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -17,7 +21,10 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
@@ -25,7 +32,11 @@ use Webmozart\Assert\Assert;
  *
  * @property Model $record
  */
+<<<<<<< HEAD
 class ExportTreeXlsAction extends XotBaseAction
+=======
+class ExportTreeXlsAction extends Action
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {
@@ -35,7 +46,11 @@ class ExportTreeXlsAction extends XotBaseAction
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('heroicon-o-arrow-down-tray')
+<<<<<<< HEAD
             ->action(static function (Page $livewire, Model $record, array $_data) {
+=======
+            ->action(static function (Page $livewire, Model $record, $_data) {
+>>>>>>> laraxot/dev
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];

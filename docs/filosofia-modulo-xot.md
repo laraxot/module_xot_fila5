@@ -22,7 +22,11 @@ Il modulo **Xot** è il **cuore pulsante** del framework Laraxot. Funziona come:
 Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
+<<<<<<< HEAD
 abstract public function getFormSchema(): array;
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -326,7 +330,11 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 ```php
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
+<<<<<<< HEAD
     public function getFormSchema(): array {
+=======
+    public static function getFormSchema(): array {
+>>>>>>> laraxot/dev
         return [TextInput::make('name')];
     }
 }

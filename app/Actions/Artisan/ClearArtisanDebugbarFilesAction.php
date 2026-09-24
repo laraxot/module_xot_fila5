@@ -19,7 +19,11 @@ class ClearArtisanDebugbarFilesAction
         $files = File::files(storage_path('debugbar'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+=======
+            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
                 File::delete($file->getRealPath());
             }
         }

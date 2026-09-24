@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+>>>>>>> laraxot/dev
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Spatie\Health\Enums\Status;
 use Spatie\Health\ResultStores\ResultStore;
 
+<<<<<<< HEAD
 class HealthOverviewWidget extends XotBaseStatsOverviewWidget
+=======
+class HealthOverviewWidget extends BaseWidget
+>>>>>>> laraxot/dev
 {
     public function iconColor(string $status): string
     {

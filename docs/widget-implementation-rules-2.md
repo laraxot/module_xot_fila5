@@ -148,6 +148,10 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->dateTime()
                     ->sortable()
                     ->searchable(),
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
                 TextColumn::make('answert')
                     ->limit(50)
                     ->tooltip(function (TextColumn $column): ?string {
@@ -155,6 +159,10 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                         return strlen($state) > 50 ? $state : null;
                     })
                     ->searchable(),
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
                 TextColumn::make('answer_lang')
                     ->badge()
                     ->color(fn (string $state): string => match ($state) {
@@ -221,6 +229,10 @@ class QuestionChartWidget extends XotBaseWidget
     protected function getData(): array
     {
         $record = $this->getRecord();
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
         if (!$record) {
             return [
                 'datasets' => [],
@@ -272,16 +284,29 @@ class QuestionChartWidget extends XotBaseWidget
                 $query->where('submitdate', '<=', $dateTo);
             })
             ->get();
+<<<<<<< HEAD
         
         $grouped = $answers->groupBy('answer_lang');
         
         $labels = [];
         $values = [];
         
+=======
+
+        $grouped = $answers->groupBy('answer_lang');
+
+        $labels = [];
+        $values = [];
+
+>>>>>>> laraxot/dev
         foreach ($grouped as $lang => $langAnswers) {
             $labels[] = $lang ?: 'Unknown';
             $values[] = $langAnswers->count();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
         return [
             'labels' => $labels,
             'values' => $values,
@@ -300,10 +325,18 @@ class QuestionChartWidget extends XotBaseWidget
             'rgba(199, 199, 199, ' . $alpha . ')',
             'rgba(83, 102, 255, ' . $alpha . ')',
         ];
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
         $colors = [];
         for ($i = 0; $i < $count; $i++) {
             $colors[] = $baseColors[$i % count($baseColors)];
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
         return $colors;
     }
 }
@@ -359,6 +392,10 @@ class MyWidget extends XotBaseWidget
     {
         return []; // Form vuoto
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     public function table(Table $table): Table
     {
         // Tabella in widget di form

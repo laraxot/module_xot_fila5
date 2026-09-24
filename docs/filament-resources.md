@@ -23,7 +23,11 @@ class SessionResource extends XotBaseResource
 {
     protected static ?string $model = Session::class;
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione

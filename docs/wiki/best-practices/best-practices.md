@@ -250,7 +250,15 @@ class MioModelloResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -739,11 +747,33 @@ public function handle($user) {
 
 ### Motivi per utilizzare UserContract
 
+<<<<<<< HEAD
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
+=======
+<<<<<<< HEAD
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
+=======
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 2. **Disaccoppiamento**: Riduce le dipendenze verso implementazioni specifiche.
 3. **Testabilità**: Facilita il testing con implementazioni mock dell'interfaccia.
 4. **Flessibilità**: Consente di estendere o cambiare l'implementazione senza impattare il codice esistente.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Anti-pattern**: `Assert::isInstanceOf($user, User::class)` (o `BaseUser::class`) accoppia il codice al leaf. Canon:
+
+```php
+Assert::isInstanceOf($user, UserContract::class);
+```
+
+`UserContract` è `Modules\Xot\Contracts\UserContract`. `getUserClass()` serve per factory/relazioni Eloquent, non per narrowing di `auth()->user()`.
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### Come ottenere la classe User corretta
 
 Se è necessario ottenere programmaticamente la classe User configurata:
@@ -774,4 +804,12 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< HEAD
 ```
+=======
+<<<<<<< HEAD
+```
+=======
+```
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

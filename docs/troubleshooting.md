@@ -48,6 +48,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
+<<<<<<< HEAD
 
 ```bash
 # ✅ additivo, mai distruttivo (dati sacri)
@@ -61,6 +62,17 @@ cd laravel && php artisan migrate
 
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
+=======
+```bash
+
+# Ripristinare le migrazioni
+php artisan migrate:fresh
+
+# Eseguire i seed
+php artisan db:seed
+```
+
+>>>>>>> laraxot/dev
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
 # Verificare che il modulo sia presente
@@ -437,6 +449,7 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
+<<<<<<< HEAD
 **Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
 
 ```php
@@ -445,16 +458,33 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class MioModelloTest extends XotBaseTestCase
 {
     use DatabaseTransactions;
+=======
+**Utilizzare RefreshDatabase**
+```php
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class MioModelloTest extends XotBaseTestCase
+{
+    use RefreshDatabase;
+>>>>>>> laraxot/dev
 
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
+=======
+
+        // Setup database per i test
+>>>>>>> laraxot/dev
     }
 }
 ```
 
+<<<<<<< HEAD
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
 
+=======
+>>>>>>> laraxot/dev
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test

@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< HEAD
+=======
+// use Modules\Xot\Services\ArrayService;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;

@@ -4,20 +4,29 @@ type: concept
 module: Xot
 tags: [xot, phpstan, pest, testing, bridge]
 created: 2026-06-10
+<<<<<<< HEAD
 updated: 2026-08-31
 qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge"
+=======
+updated: 2026-06-30
+qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helper"
+>>>>>>> laraxot/dev
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
   - ../../../../../../docs/wiki/rules/phpstan-pest-tests-stay-pest.md
+<<<<<<< HEAD
   - ../../../../../../docs/wiki/rules/pest-phpstan-bridge.md
+=======
+>>>>>>> laraxot/dev
   - ../../../../../../docs/wiki/skills/phpstan-pest-remediation.md
 ---
 
 # PHPStan Pest Bridge Discipline
 
+<<<<<<< HEAD
 Xot e' il posto giusto per pattern condivisi di test/static analysis, ma **non**
 si devono stubbare le funzioni Pest nei namespace test.
 
@@ -35,6 +44,18 @@ si devono stubbare le funzioni Pest nei namespace test.
 - File Pest: **niente** `namespace …;` in cima (rompe il parser PHPStan su `uses()`).
 - HTTP: `actingAs($user); get($url)->assertOk();` — non chainare `actingAs()->get()` (Pest tipizza `actingAs` → `TestCase` / overload confusi).
 - `@var` nelle closure Pest: preferire **FQCN** anche se c’è `use` in testa al file.
+=======
+Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il bridge non deve cambiare il framework dei test.
+
+## Contratto
+
+- Pest resta il framework test.
+- PHPStan resta governato dal solo `laravel/phpstan.neon` utente.
+- Bridge/helper condivisi devono rendere tipizzabili le assertion ricorrenti, non mascherare errori.
+- Bridge `PestFunctionBridge.php`: `uses|test|it|describe` → `void`; `expect()` → `PestExpectation` (evita `function.resultUnused` e catene `function.void`).
+- Rigenerare bridge: `php bashscripts/tools/generate-pest-phpstan-bridge.php` (195 namespace, 2026-06-30).
+- `uses(\Modules\<M>\Tests\TestCase::class)` sempre **dopo** gli `import use` nel file Pest.
+>>>>>>> laraxot/dev
 
 ## Helper XotBaseTestCase (usare nei moduli)
 
@@ -51,7 +72,10 @@ si devono stubbare le funzioni Pest nei namespace test.
 - **Fixcity:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../Fixcity/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
 - **Notify:** `notificationManager()` + trait doubles — [phpstan-pest-test-doubles](../../../Notify/docs/wiki/concepts/phpstan-pest-test-doubles.md)
 - **Xot:** test File — no `@var TestCase $this` se la closure non usa `$this`; no `assertIsString(tempnam())`
+<<<<<<< HEAD
 - **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [PHPSTAN-BEST-PRACTICES](../PHPSTAN-BEST-PRACTICES.md) §7–8)
+=======
+>>>>>>> laraxot/dev
 - **Tenant:** non ridefinire `mockService()`; non re-tipizzare `$model`/`$baseModel` se il parent ha `mixed`
 - **UI:** `createStub` + `willReturn(null)` per action mock; no `andReturnNull()` Mockery
 

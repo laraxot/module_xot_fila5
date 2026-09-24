@@ -20,7 +20,11 @@ class ErrorCommandHandler implements CommandHandlerInterface
     {
         $command = $this->getCurrentCommand();
 
+<<<<<<< HEAD
         if ($command === 'error-clear') {
+=======
+        if ('error-clear' === $command) {
+>>>>>>> laraxot/dev
             return ArtisanService::errorClear();
         }
 

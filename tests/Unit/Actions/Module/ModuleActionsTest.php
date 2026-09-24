@@ -2,19 +2,29 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\mkdir;
 use function Safe\tempnam;
 use function Safe\unlink;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
+=======
+>>>>>>> laraxot/dev
 test('get module name by class action works', function (): void {
     $action = app(GetModuleNameByClassAction::class);
     Assert::assertSame('User', $action->execute('Modules\User\Models\User'));
