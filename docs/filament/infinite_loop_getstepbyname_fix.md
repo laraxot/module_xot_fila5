@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**
@@ -118,13 +122,29 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 
 ### **Documentazione Correlata**
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_fqp7a4
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 7f6cf6be (.)
+=======
+=======
+>>>>>>> .merge_file_FD8l8q
+- [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+=======
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> laraxot/dev
+=======
+- [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
@@ -145,3 +165,16 @@ Questo fix dimostra l'importanza di:
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+---
+module: theme
+topic: infinite_loop_getstepbyname_fix
+canonical: ../../../../Themes/docs/shared-components/infinite-loop-getstepbyname-fix.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/infinite-loop-getstepbyname-fix.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

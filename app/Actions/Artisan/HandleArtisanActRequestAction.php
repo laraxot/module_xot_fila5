@@ -59,7 +59,19 @@ class HandleArtisanActRequestAction
         DB::purge('mysql');
         DB::reconnect('mysql');
 
+<<<<<<< HEAD
         if ($moduleName !== '') {
+=======
+<<<<<<< .merge_file_mncXCG
+<<<<<<< HEAD
+        if ($moduleName !== '') {
+=======
+        if ('' !== $moduleName) {
+>>>>>>> laraxot/dev
+=======
+        if ('' !== $moduleName) {
+>>>>>>> .merge_file_rHh7g0
+>>>>>>> laraxot/dev
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)

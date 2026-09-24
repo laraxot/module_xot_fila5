@@ -2,6 +2,11 @@
 
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_Otv2VD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 [![Module](https://img.shields.io/badge/Module-Filament-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -101,6 +106,13 @@ $prefix = static::$translationPrefix;
 # Filament
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_w52qsW
+>>>>>>> laraxot/dev
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
 ## File Contenuti
@@ -113,9 +125,24 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 ## Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
 ## Collegamenti tra versioni di README.md
+=======
+<<<<<<< .merge_file_Otv2VD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_w52qsW
+Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
+
+## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
+=======
+>>>>>>> laraxot/dev
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -194,12 +221,19 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../../themes/one/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
+<<<<<<< HEAD
 =======
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend. 
+=======
+>>>>>>> laraxot/dev
+=======
+Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
+>>>>>>> laraxot/dev
 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
+<<<<<<< HEAD
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
 * [README.md](bashscripts/docs/README.md)
@@ -230,6 +264,8 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
@@ -262,7 +298,17 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](docs/implementazione/isee/README.md)
 * [README.md](docs/it/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_Otv2VD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_w52qsW
+>>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/docs/README.md)
 * [README.md](../../../Chart/docs/README.md)
 * [README.md](../../../Reporting/docs/README.md)
@@ -307,6 +353,15 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Otv2VD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_w52qsW
 >>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/project_docs/README.md)
 * [README.md](../../../Chart/project_docs/README.md)
@@ -352,6 +407,14 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../Cms/project_docs/components/README.md)
 * [README.md](../../../../Themes/Two/project_docs/README.md)
 * [README.md](../../../../Themes/One/project_docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Otv2VD
+=======
+=======
+>>>>>>> .merge_file_w52qsW
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Regola sulle closure void nelle azioni custom Filament
 
@@ -379,6 +442,11 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Aggiornare la documentazione ogni volta che si corregge questo errore.
 
 ### Collegamento
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Otv2VD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 =======
@@ -438,6 +506,15 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Vedi anche: [<nome modulo>/docs/filament-best-practices.mdc](../../../<nome modulo>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+- Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+>>>>>>> laraxot/dev
+=======
+- Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+>>>>>>> .merge_file_w52qsW
+>>>>>>> laraxot/dev
 
 ### Checklist
 - [ ] Nessuna closure void restituisce un valore
@@ -471,6 +548,7 @@ $prefix = static::$translationPrefix;
 ```
 
 ## Moduli che fanno riferimento a questa regola
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
@@ -692,4 +770,21 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+=======
+<<<<<<< .merge_file_Otv2VD
+<<<<<<< HEAD
+- [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
+=======
+>>>>>>> .merge_file_w52qsW
+- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+=======
+- [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
+- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+>>>>>>> laraxot/dev
+=======
+- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

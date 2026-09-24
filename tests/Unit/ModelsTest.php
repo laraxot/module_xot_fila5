@@ -40,7 +40,11 @@ it('can create a test tenant', function () {
 it('can resolve a sushi module row', function () {
     $module = Module::query()->first();
 
+<<<<<<< HEAD
     if ($module === null) {
+=======
+    if (null === $module) {
+>>>>>>> laraxot/dev
         Assert::markTestSkipped('No nwidart modules registered in test runtime.');
     }
 

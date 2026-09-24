@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles
@@ -120,3 +124,15 @@ Remember to always:
 - Optimize for performance from the beginning
 - Document decisions and patterns
 - Learn from external packages and integrate best practices
+<<<<<<< HEAD
+=======
+=======
+---
+module: theme
+topic: updated-architecture-rules-memories
+canonical: ../../../Themes/docs/shared-components/updated-architecture-memories.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/updated-architecture-memories.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

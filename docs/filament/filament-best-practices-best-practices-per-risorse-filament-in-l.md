@@ -57,9 +57,32 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
    // CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_U5tmnL
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   public function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_yEiMv4
 >>>>>>> laraxot/dev
    {
        return [
@@ -195,4 +218,26 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [filament_best_practices.md](../../../../../../docs/rules/filament_best_practices.md)
 * [filament_best_practices.md](../filament_best_practices.md)
 * [filament_best_practices.md](../../../user/docs/filament_best_practices.md)
+<<<<<<< HEAD
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+=======
+<<<<<<< HEAD
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+=======
+<<<<<<< .merge_file_U5tmnL
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_W9loh1
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+=======
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pOT3Dc
+>>>>>>> .merge_file_yEiMv4
+>>>>>>> laraxot/dev

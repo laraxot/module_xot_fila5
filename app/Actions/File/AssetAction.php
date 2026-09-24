@@ -11,8 +11,11 @@ use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 use function Safe\copy;
 
+=======
+>>>>>>> laraxot/dev
 class AssetAction
 {
     use QueueableActionTrait;
@@ -22,10 +25,18 @@ class AssetAction
     /**
      * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
      *
+<<<<<<< HEAD
      * @param  string  $path  Il percorso dell'asset
      * @return string Il percorso pubblico dell'asset
      *
      * @throws Exception Se il file sorgente non esiste o non può essere copiato
+=======
+     * @param string $path Il percorso dell'asset
+     *
+     * @throws \Exception Se il file sorgente non esiste o non può essere copiato
+     *
+     * @return string Il percorso pubblico dell'asset
+>>>>>>> laraxot/dev
      */
     public function execute(string $path): string
     {
@@ -110,13 +121,21 @@ class AssetAction
             if (isRunningTestBench()) {
                 return $originalPath;
             }
+<<<<<<< HEAD
             throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+=======
+            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+>>>>>>> laraxot/dev
         }
 
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
+<<<<<<< HEAD
         $forceCopy = app()->environment() !== 'production';
+=======
+        $forceCopy = 'production' !== app()->environment();
+>>>>>>> laraxot/dev
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
@@ -127,6 +146,7 @@ class AssetAction
 
     /**
      * Copies an asset file if it doesn't exist or if forced.
+<<<<<<< HEAD
      */
     private function copyAsset(string $from, string $to, string $path, bool $force = false): void
     {
@@ -139,6 +159,64 @@ class AssetAction
                 $this->throwCopyException($e, $path, $from, $to);
             }
         }
+=======
+     *
+     * In APP_ENV=local the caller forces a copy on every request so assets
+     * refresh without a rebuild. PHP-FPM runs as www-data: if the dest was
+     * written by another user, copy fails and MetatagData must not fall back
+     * to asset('module::img/x.png') (404). If the dest already exists and is
+     * readable, serve it instead. Story Xot/5.180.
+     */
+    private function copyAsset(string $from, string $to, string $path, bool $force = false): void
+    {
+        $destinationExists = File::exists($to);
+
+        if ($destinationExists && ! $force) {
+            return;
+        }
+
+        if ($destinationExists && ! File::isWritable($to)) {
+            return;
+        }
+
+        $this->ensureDirectoryExists(\dirname($to));
+
+        try {
+            $copied = File::copy($from, $to);
+        } catch (\Throwable $e) {
+            $this->handleCopyFailure($e, $path, $from, $to);
+
+            return;
+        }
+
+        if ($copied) {
+            return;
+        }
+
+        $this->handleCopyFailure(
+            new \Exception('Unable to copy asset file'),
+            $path,
+            $from,
+            $to,
+        );
+    }
+
+    /**
+     * If the public dest is already readable, keep serving it.
+     * Otherwise rethrow so the caller can fail loudly.
+     */
+    private function handleCopyFailure(\Throwable $e, string $path, string $from, string $to): void
+    {
+        if (File::exists($to) && File::isReadable($to)) {
+            return;
+        }
+
+        $exception = $e instanceof \Exception
+            ? $e
+            : new \Exception($e->getMessage(), (int) $e->getCode(), $e);
+
+        $this->throwCopyException($exception, $path, $from, $to);
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -154,9 +232,15 @@ class AssetAction
     /**
      * Throws a formatted exception for a file copy error.
      */
+<<<<<<< HEAD
     private function throwCopyException(Exception $e, string $path, string $from, string $to): void
     {
         throw new Exception('message:['.$e->getMessage().']
+=======
+    private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
+    {
+        throw new \Exception('message:['.$e->getMessage().']
+>>>>>>> laraxot/dev
             public_path ['.public_path().']
             path ['.$path.']
             file from ['.$from.']

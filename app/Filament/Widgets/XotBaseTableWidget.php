@@ -4,9 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
 use Illuminate\Database\Eloquent\Model;
+=======
+use Filament\Tables\Table;
+use Filament\Widgets\Concerns\InteractsWithPageFilters;
+use Filament\Widgets\TableWidget as FilamentTableWidget;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
+>>>>>>> laraxot/dev
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -21,7 +30,11 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     /**
      * Ascolta evento di aggiornamento filtri.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $filters
+=======
+     * @param array<string, mixed> $filters
+>>>>>>> laraxot/dev
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
@@ -31,6 +44,28 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Configura la tabella con le risposte.
+     */
+    public function tableOLD(Table $table): Table
+    {
+        $query = $this->getTableQuery();
+        if ($query instanceof Relation) {
+            $query = $query->getQuery();
+        }
+
+        /* @var Builder|null $query */
+        return $table
+            ->query($query)
+            ->columns($this->getTableColumns())
+            ->defaultSort('submitdate', 'desc')
+            ->paginated([10, 25, 50, 100])
+            ->poll('30s');
+    }
+
+    /**
+>>>>>>> laraxot/dev
      * Restituisce una chiave univoca per ogni record.
      * Usa _id che è l'alias della primary key creato da withAnswersLabel().
      *
@@ -45,4 +80,20 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
+<<<<<<< HEAD
+=======
+
+    public function getTableSearch(): ?string
+    {
+        $search = $this->tableSearch ?? null;
+
+        if (! \is_string($search)) {
+            return null;
+        }
+
+        $search = trim($search);
+
+        return '' !== $search ? $search : null;
+    }
+>>>>>>> laraxot/dev
 }

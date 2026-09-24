@@ -12,6 +12,16 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 ## Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_nP6A1u
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nVd0ww
+>>>>>>> laraxot/dev
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto. 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -91,6 +101,11 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_nP6A1u
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
 ## Collegamenti tra versioni di README.md
@@ -170,4 +185,11 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nVd0ww
 >>>>>>> laraxot/dev

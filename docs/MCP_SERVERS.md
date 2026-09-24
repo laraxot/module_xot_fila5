@@ -39,7 +39,15 @@ This document provides Xot-specific MCP usage guidelines only.
 - **Example**: Evaluating new base class patterns
 
 ### supermemory
+<<<<<<< HEAD
 - **Container Tag**: `ptv`
+=======
+<<<<<<< HEAD
+- **Container Tag**: `ptv`
+=======
+- **Container Tag**: `fixcity`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Use**: Store Xot architectural decisions, evolution history
 - **Example**: Store reasoning behind XotBaseModel design
 

@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use Mockery;
+=======
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
@@ -25,7 +28,11 @@ describe('Get Tenant Config Actions', function (): void {
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
+<<<<<<< HEAD
         $mock = Mockery::mock(GetTenantFilePathAction::class);
+=======
+        $mock = \Mockery::mock(GetTenantFilePathAction::class);
+>>>>>>> laraxot/dev
         $mock->shouldReceive('execute')
             ->with($configName.'.php')
             ->andReturn($tempPath);
@@ -43,7 +50,11 @@ describe('Get Tenant Config Actions', function (): void {
         $configName = 'non_existent';
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
+<<<<<<< HEAD
         $mock = Mockery::mock(GetTenantFilePathAction::class);
+=======
+        $mock = \Mockery::mock(GetTenantFilePathAction::class);
+>>>>>>> laraxot/dev
         $mock->shouldReceive('execute')
             ->andReturn('/path/to/nothing.php');
 

@@ -24,7 +24,11 @@ trait HasDynamicFillable
         $dynamicFillableEnums = $this->getDynamicFillableEnums();
 
         foreach ($dynamicFillableEnums as $enumClass) {
+<<<<<<< HEAD
             if (! is_string($enumClass) || $enumClass === '') {
+=======
+            if (! is_string($enumClass) || '' === $enumClass) {
+>>>>>>> laraxot/dev
                 continue;
             }
 

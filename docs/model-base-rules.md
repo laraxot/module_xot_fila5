@@ -54,6 +54,13 @@ I modelli aggregati e di totali (es. `OrganizzativaTotValutatoreId` del modulo P
 ### Memoria Storica
 
 Rollback della regola precedente (2025-05-14) effettuato il 2025-05-15, documentato in Performance/docs/organizzativa-models.md. La regola precedente è stata annullata per esigenze di override e compatibilità.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+Rollback della regola precedente ([DATE]) effettuato il [DATE], documentato in Performance/docs/organizzativa-models.md. La regola precedente è stata annullata per esigenze di override e compatibilità.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Eccezioni
 
@@ -92,3 +99,11 @@ abstract class BaseModel extends XotBaseModel
 - [modules/performance/docs/organizzativa-models.md](../Performance/docs/organizzativa-models.md)
 
 *Ultimo aggiornamento: maggio 2025*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [docs/MODULE_NAMESPACE_RULES.md](../../../docs/module_namespace_rules.md)
+- [modules/performance/docs/organizzativa-models.md](../performance/docs/organizzativa-models.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -15,7 +15,11 @@ class SavePhpArrayAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
+=======
+     * @param array<int|string, mixed> $data
+>>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename): bool
     {

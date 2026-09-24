@@ -60,9 +60,25 @@ Per `getFormSchema()` nei **resource e pagine** (dove non viene usato `statePath
 ```php
 // ✅ CORRETTO per resource/pagine
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_oSsp77
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_C2hVvI
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_oSsp77
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_C2hVvI
 >>>>>>> laraxot/dev
 {
     return [

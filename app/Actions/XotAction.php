@@ -20,5 +20,27 @@ class XotAction
         return Tenant::class;
     }
 
+<<<<<<< HEAD
     public function execute(): void {}
+=======
+<<<<<<< .merge_file_nC2nlc
+<<<<<<< HEAD
+    public function execute(): void
+    {
+    }
+=======
+<<<<<<< HEAD
+    public function execute(): void
+    {
+    }
+=======
+    public function execute(): void {}
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> .merge_file_xXOav4
+>>>>>>> laraxot/dev
 }

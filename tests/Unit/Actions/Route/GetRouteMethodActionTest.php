@@ -1,6 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Ssy17G
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_TU22tM
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\Route\GetRouteMethodAction;
 use PHPUnit\Framework\Assert;
 

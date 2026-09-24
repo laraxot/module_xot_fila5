@@ -19,7 +19,12 @@ abstract class XotBaseTransition
     public function __construct(
         public Model $record,
         public ?string $message = '',
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     public function handle(): Model
     {
@@ -87,7 +92,11 @@ abstract class XotBaseTransition
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {

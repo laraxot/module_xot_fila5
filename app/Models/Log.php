@@ -17,9 +17,15 @@ use Sushi\Sushi;
  *
  * @property string|null $id
  * @property string|null $name
+<<<<<<< HEAD
  * @property int|null $size
  *
  * @method static LogFactory factory($count = null, $state = [])
+=======
+ * @property int|null    $size
+ *
+ * @method static LogFactory          factory($count = null, $state = [])
+>>>>>>> laraxot/dev
  * @method static Builder<static>|Log newModelQuery()
  * @method static Builder<static>|Log newQuery()
  * @method static Builder<static>|Log query()
@@ -29,7 +35,11 @@ use Sushi\Sushi;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
+<<<<<<< HEAD
  * @property string|null $file_content
+=======
+ * @property string|null          $file_content
+>>>>>>> laraxot/dev
  * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent
@@ -49,7 +59,11 @@ class Log extends BaseModel
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'log') {
+=======
+            if ('log' === $file->getExtension()) {
+>>>>>>> laraxot/dev
                 $rows[] = [
                     'id' => $file->getFilenameWithoutExtension(),
                     'name' => $file->getFilenameWithoutExtension(),

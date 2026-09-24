@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()
@@ -224,3 +228,15 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md)
+<<<<<<< HEAD
+=======
+=======
+---
+module: theme
+topic: translation-system
+canonical: ../../../Themes/docs/shared-components/translation-system-1-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-system-1-Modules.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

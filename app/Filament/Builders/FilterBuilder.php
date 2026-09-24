@@ -163,7 +163,11 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
+=======
+     * @param class-string<Model> $modelClass
+>>>>>>> laraxot/dev
      */
     public static function selectFromModel(
         string $name,
@@ -178,7 +182,11 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
+<<<<<<< HEAD
         if ($relationshipName !== null) {
+=======
+        if (null !== $relationshipName) {
+>>>>>>> laraxot/dev
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -188,7 +196,11 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customStatuses
+=======
+     * @param array<string, string> $customStatuses
+>>>>>>> laraxot/dev
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -206,7 +218,11 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customPriorities
+=======
+     * @param array<string, string> $customPriorities
+>>>>>>> laraxot/dev
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -224,7 +240,11 @@ class FilterBuilder
     /**
      * Type select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $types
+=======
+     * @param array<string, string> $types
+>>>>>>> laraxot/dev
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -235,7 +255,11 @@ class FilterBuilder
     /**
      * Category select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $categoryModel
+=======
+     * @param class-string<Model> $categoryModel
+>>>>>>> laraxot/dev
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -245,7 +269,11 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $userModel
+=======
+     * @param class-string<Model> $userModel
+>>>>>>> laraxot/dev
      */
     public static function userSelect(
         string $name = 'user',
@@ -273,7 +301,11 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< HEAD
      * @param  Builder<Model>  $query
+=======
+     * @param Builder<Model> $query
+>>>>>>> laraxot/dev
      */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
@@ -281,7 +313,12 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< HEAD
      * @param  Builder<Model>  $query
+=======
+     * @param Builder<Model> $query
+     *
+>>>>>>> laraxot/dev
      * @return Builder<Model>
      */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder

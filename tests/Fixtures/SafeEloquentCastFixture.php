@@ -23,8 +23,21 @@ final class SafeEloquentCastFixture
     {
         $action = app(SafeEloquentCastAction::class);
 
+<<<<<<< HEAD
         $model = new class extends Model
         {
+=======
+<<<<<<< .merge_file_N1s52u
+<<<<<<< HEAD
+        $model = new class extends Model
+        {
+=======
+        $model = new class extends Model {
+>>>>>>> laraxot/dev
+=======
+        $model = new class extends Model {
+>>>>>>> .merge_file_Tuu2yP
+>>>>>>> laraxot/dev
             /** @var string */
             protected $table = 'safe_eloquent_cast_test';
 

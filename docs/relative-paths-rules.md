@@ -5,6 +5,16 @@
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+> - [README.md documentazione generale](../../../../../docs/readme.md)
+> - [Struttura dei Prompt](./prompts.md)
+> - [Regole per i Prompt](./prompt_rules.md)
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Regola Fondamentale
 
@@ -18,18 +28,39 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 
 ```markdown
 [Modulo Xot](./laravel/Modules/Xot/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+[Modulo Xot](./laravel/modules/xot/docs/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Da un file in un modulo verso un altro modulo
 
 ```markdown
 [Altro Modulo](../../../AltroModulo/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+[Altro Modulo](../../../altromodulo/docs/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Da un file in un modulo verso la root
 
 ```markdown
 [Documentazione Root](../../../../docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+[Documentazione Root](../../../../../docs/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ## Errori Comuni da Evitare
@@ -37,18 +68,41 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 1. **MAI utilizzare percorsi assoluti** come:
    ```markdown
    [ERRATO](../Xot/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+   [ERRATO](../xot/docs/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:
    ```markdown
    [ERRATO](/docs/README.md)
    [ERRATO](/laravel/Modules/Xot/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+   [ERRATO](/docs/readme.md)
+   [ERRATO](/laravel/modules/xot/docs/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    ```
 
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
    ```markdown
    [ERRATO](Modules/Xot/docs/README.md) <!-- Da un file nella root -->
    [ERRATO](../Xot/docs/README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+   [ERRATO](modules/xot/docs/readme.md) <!-- Da un file nella root -->
+   [ERRATO](../xot/docs/readme.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi
@@ -64,7 +118,15 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | Posizione File Sorgente | Posizione File Destinazione | Percorso Relativo Corretto |
 |-------------------------|------------------------------|----------------------------|
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
+<<<<<<< HEAD
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+=======
+<<<<<<< HEAD
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+=======
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 
@@ -87,4 +149,12 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 ## Riferimenti
 
 - [Markdown Link Syntax](https://www.markdownguide.org/basic-syntax/#links)
+<<<<<<< HEAD
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+=======
+<<<<<<< HEAD
+- [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+=======
+- [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

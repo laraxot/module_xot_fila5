@@ -1,5 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_D8BTfa
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 module: theme
 topic: continuous-integration-tools
 canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
@@ -7,6 +12,13 @@ canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.
 
 See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_d8OTKc
+>>>>>>> laraxot/dev
 title: 'Continuous integration tools'
 module: Xot
 type: reference
@@ -47,6 +59,11 @@ https://grafikart.fr/tutoriels/grumphp-836
 
 https://jakzal.github.io/toolbox/
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_D8BTfa
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 ## Appendice — contenuto migrato
 
@@ -60,6 +77,7 @@ updated: 2026-07-14
 qmd: "continuous integration tools 2"
 related:
   - "./eloquent-magic-properties-rule.md"
+<<<<<<< HEAD
 ---
 # continuous_integration_tools
 
@@ -93,4 +111,17 @@ https://grafikart.fr/tutoriels/grumphp-836
 ----------------------------------------------------------------------
 
 https://jakzal.github.io/toolbox/
+=======
+=======
+=======
+module: theme
+topic: continuous-integration-tools
+canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
+>>>>>>> .merge_file_d8OTKc
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

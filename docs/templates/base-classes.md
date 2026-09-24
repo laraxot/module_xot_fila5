@@ -98,9 +98,19 @@ class {ModelName}Resource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -321,4 +331,12 @@ class Create{ModelName}Action
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
+<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
+=======
+<<<<<<< HEAD
+**Versione:** 2.0 - Consolidata DRY + KISS
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

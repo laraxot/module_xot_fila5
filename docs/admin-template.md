@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_EQMZ7Y
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 https://themeselection.com/laravel-admin-panel-template/
 
 
@@ -7,6 +12,13 @@ https://github.com/BRACKETS-by-TRIAD/craftable
 
 https://github.com/InfyOmLabs/laravel-generator
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6WkEpE
+>>>>>>> laraxot/dev
 ---
 title: 'Admin template — risorse esterne'
 module: Xot
@@ -29,4 +41,21 @@ updated: 2026-08-24
 - <https://themeselection.com/laravel-admin-panel-template/>
 - <https://github.com/BRACKETS-by-TRIAD/craftable>
 - <https://github.com/InfyOmLabs/laravel-generator>
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_EQMZ7Y
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+https://themeselection.com/laravel-admin-panel-template/
+
+
+https://github.com/BRACKETS-by-TRIAD/craftable
+
+
+https://github.com/InfyOmLabs/laravel-generator
+>>>>>>> .merge_file_6WkEpE
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

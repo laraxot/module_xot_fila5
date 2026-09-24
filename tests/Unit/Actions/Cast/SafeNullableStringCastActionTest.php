@@ -15,7 +15,11 @@ it('casts nullable string values consistently', function (): void {
     Assert::assertSame('1', $action->execute(true));
     Assert::assertNull($action->execute(null));
     Assert::assertNull($action->execute([]));
+<<<<<<< HEAD
     Assert::assertNull($action->execute(new stdClass));
+=======
+    Assert::assertNull($action->execute(new stdClass()));
+>>>>>>> laraxot/dev
 });
 
 it('uses static nullable string cast method correctly', function (): void {

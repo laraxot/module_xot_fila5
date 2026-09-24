@@ -81,6 +81,26 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
   direttamente (vanno a capo su più righe, non esce nulla dallo schermo).
 - AC5: PHPStan pulito sui file toccati.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_n8IdV3
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_AlnPzA
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_lGzV1k
+>>>>>>> .merge_file_LJlZTI
+>>>>>>> laraxot/dev
 ## Ripristino 2026-09-17
 
 Scoperto lo stesso giorno del ripristino del bottone Passport "Nuove
@@ -103,11 +123,64 @@ traduzione mancanti. Verificato via reflection su `getHeaderActions()`:
 raggiungibile via `asset()`. PHPStan pulito. Committato questa volta
 nel repository reale del modulo.
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_n8IdV3
+=======
+<<<<<<< .merge_file_AlnPzA
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_LJlZTI
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_n8IdV3
+=======
+>>>>>>> .merge_file_lGzV1k
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LJlZTI
+>>>>>>> laraxot/dev
 ## Tasks/Subtasks
 
 - [x] Task 1: nuova `ExecuteComposerDumpAutoloadAction` (comando fisso,
       nessun input utente, stesso pattern di `ExecuteArtisanCommandAction`)
 - [x] Task 2: nuovo pulsante header "Composer Dump Autoload" su
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_n8IdV3
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AlnPzA
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_lGzV1k
+>>>>>>> .merge_file_LJlZTI
+      `ArtisanCommandsManager.php`, con `requiresConfirmation()`
+- [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
+      per il wrap dei pulsanti, registrato in `AdminPanelProvider.php`
+      (pannello xot) via `FilamentAsset::register()` — nessun tema Vite
+      creato, il file e' servito staticamente
+- [ ] Task 4: verifica manuale — rilancio del job fallito per "Job is
+      incomplete class" dopo l'azione, deve completare con successo
+
+=======
+<<<<<<< .merge_file_n8IdV3
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_AlnPzA
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_lGzV1k
+>>>>>>> .merge_file_LJlZTI
+>>>>>>> laraxot/dev
       `ArtisanCommandsManager.php`, con `requiresConfirmation()` —
       **ripristinato 2026-09-17**, vedi sopra
 - [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
@@ -140,6 +213,25 @@ svuotata `mail_templates` (40→0 righe, dati sorgente intatti in
 (`survey-pdf-48-invito`) e Vivaservizi (`survey-pdf-44-invito`) tornano
 completi con lo stesso contenuto reale di prima. PHPStan pulito.
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_n8IdV3
+=======
+<<<<<<< .merge_file_AlnPzA
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_LJlZTI
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_n8IdV3
+=======
+>>>>>>> .merge_file_lGzV1k
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LJlZTI
+>>>>>>> laraxot/dev
 ## Dev Notes
 
 - Scoperto in questa story: l'account admin non aveva il ruolo

@@ -13,7 +13,10 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Mockery;
+=======
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
@@ -26,7 +29,11 @@ class HasTableWithoutOptionalMethodsTestClass
 
     public function getLayoutView(): object
     {
+<<<<<<< HEAD
         $mock = Mockery::mock();
+=======
+        $mock = \Mockery::mock();
+>>>>>>> laraxot/dev
         $mock->shouldReceive('getTableColumns')->andReturn([]);
         $mock->shouldReceive('getTableContentGrid')->andReturn([]);
 
@@ -36,7 +43,10 @@ class HasTableWithoutOptionalMethodsTestClass
     /**
      * @return array<string, Column|ColumnGroup|Component>
      */
+<<<<<<< HEAD
     /** @return array<string, Column> */
+=======
+>>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [];
@@ -45,7 +55,11 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTable(): Table
     {
         /** @var Table&MockInterface $table */
+<<<<<<< HEAD
         $table = Mockery::mock(Table::class);
+=======
+        $table = \Mockery::mock(Table::class);
+>>>>>>> laraxot/dev
 
         return $table;
     }
@@ -266,17 +280,32 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
 
     public function mountTableBulkAction(): void {}
+=======
+    public function deselectAllTableRecords(): void
+    {
+    }
+
+    public function mountTableAction(): void
+    {
+    }
+
+    public function mountTableBulkAction(): void
+    {
+    }
+>>>>>>> laraxot/dev
 
     public function mountedTableActionRecord(): ?Model
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -286,6 +315,27 @@ class HasTableWithoutOptionalMethodsTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+=======
+    public function replaceMountedTableAction(): void
+    {
+    }
+
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
+
+    public function resetTableSearch(): void
+    {
+    }
+
+    public function resetTableColumnSearch(): void
+    {
+    }
+
+    public function toggleTableReordering(): void
+    {
+    }
+>>>>>>> laraxot/dev
 
     public function parseTableFilterName(): string
     {
