@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'title' => 'Установка Laravel',
     'next' => 'Следующий шаг',

@@ -18,7 +18,7 @@ use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
 /**
- * @property Schema $form
+ * @property Schema                    $form
  * @property array<string, mixed>|null $data
  */
 class EnvWidget extends Widget implements HasActions, HasForms
@@ -52,7 +52,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
 
     public function submit(): void
     {
-        if ($this->data !== null) {
+        if (null !== $this->data) {
             EnvData::make()->update($this->data);
         }
         Notification::make()

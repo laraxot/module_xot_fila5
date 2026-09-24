@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     404 => [
         'title' => 'La Página que intento acceder no ha sido encontrada.',

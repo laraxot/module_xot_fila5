@@ -41,10 +41,10 @@ use OpenSpout\Common\Entity\Style\Style;
  * (PhpSpreadsheet, `DefaultValueBinder`) lo scrive come numero: `makeXlsxRow()`
  * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
  *
-     * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
-     * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
-     * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
-     * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+ * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
+ * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
+ * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
+ * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
  *
  * CSV intermedio: i job Filament usano League\Csv con escape `\` (default PHP):
  * un valore che finisce con `\` chiude il campo con `\"` e il reader lo legge
@@ -65,7 +65,8 @@ abstract class XotBaseExporter extends Exporter
      *
      * @template TModel of Model
      *
-     * @param  Builder<TModel>  $query
+     * @param Builder<TModel> $query
+     *
      * @return Builder<TModel>
      */
     #[\Override]
@@ -81,7 +82,7 @@ abstract class XotBaseExporter extends Exporter
             $with[] = 'ratingMorphs';
         }
 
-        return $with === [] ? $query : $query->with($with);
+        return [] === $with ? $query : $query->with($with);
     }
 
     /**
@@ -109,7 +110,7 @@ abstract class XotBaseExporter extends Exporter
      * Righe (e intestazione: `makeXlsxHeaderRow` delega qui) con le celle
      * tipizzate come PhpSpreadsheet in `export_xls`. Story Ptv/5.165.
      *
-     * @param  array<mixed>  $values
+     * @param array<mixed> $values
      */
     #[\Override]
     public function makeXlsxRow(array $values, ?Style $style = null): Row
@@ -163,7 +164,7 @@ abstract class XotBaseExporter extends Exporter
             $filters = Arr::get($this->options, 'tableFilters', []);
             $transClass = Arr::get($this->options, 'livewireClass');
             $transClass = \is_string($transClass) && class_exists($transClass) ? $transClass : $resource;
-            /** @var array<string, mixed> $filters */
+            /* @var array<string, mixed> $filters */
             $this->cachedColumns = [];
             foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : [], $transClass) as $column) {
                 $this->cachedColumns[$column->getName()] = $column->exporter($this);
@@ -174,14 +175,15 @@ abstract class XotBaseExporter extends Exporter
     }
 
     /**
-     * @param  class-string|null  $resource
-     * @param  array<array-key, mixed>  $filters
-     * @param  class-string|null  $transClass  come ExportXlsAction: classe Livewire/page, non il Resource
+     * @param class-string|null       $resource
+     * @param array<array-key, mixed> $filters
+     * @param class-string|null       $transClass come ExportXlsAction: classe Livewire/page, non il Resource
+     *
      * @return array<int, ExportColumn>
      */
     protected static function resolveColumns(?string $resource, array $filters, ?string $transClass = null): array
     {
-        if ($resource === null || ! method_exists($resource, 'getXlsFields')) {
+        if (null === $resource || ! method_exists($resource, 'getXlsFields')) {
             return [];
         }
 
@@ -217,11 +219,11 @@ abstract class XotBaseExporter extends Exporter
         $livewire = app('livewire')->current();
 
         if ($livewire instanceof ListRecords) {
-            /** @var class-string<Model> */
+            /* @var class-string<Model> */
             return $livewire->getResource()::getModel();
         }
 
-        /** @var class-string<Model> */
+        /* @var class-string<Model> */
         return parent::getModel();
     }
 
