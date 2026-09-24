@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_zoPCgJ
-=======
-
->>>>>>> .merge_file_oBVFjp
 return [
     'failed' => 'ข้อมูลที่ใช้ในการยืนยันตัวตนไม่ถูกต้อง',
     'general_error' => 'คุณไม่มีสิทธิ์ในการเข้าถึงหรือกระทำการ',

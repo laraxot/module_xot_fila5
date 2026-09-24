@@ -13,9 +13,6 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
   /**
    * @return array<string, TextColumn>
    */
@@ -35,10 +32,7 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
       'fixture_filter' => Filter::make('fixture_filter'),
     ];
   }
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<string, TextColumn>
      */
@@ -58,9 +52,6 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
             'fixture_filter' => Filter::make('fixture_filter'),
         ];
     }
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 }

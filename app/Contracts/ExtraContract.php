@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< .merge_file_HrRj7I
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_IRdPLN
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
 
-<<<<<<< .merge_file_HrRj7I
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_IRdPLN
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -37,21 +22,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<Model> query()
  * @method static Builder<Model> withExtraAttributes()
  *
-<<<<<<< .merge_file_HrRj7I
  * @property int $id
  * @property string $model_type
  * @property string $model_id
-=======
-<<<<<<< HEAD
- * @property int $id
- * @property string $model_type
- * @property string $model_id
-=======
- * @property int         $id
- * @property string      $model_type
- * @property string      $model_id
->>>>>>> laraxot/dev
->>>>>>> .merge_file_IRdPLN
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -74,14 +47,4 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @mixin \Eloquent
  */
-<<<<<<< .merge_file_HrRj7I
 interface ExtraContract {}
-=======
-<<<<<<< HEAD
-interface ExtraContract {}
-=======
-interface ExtraContract
-{
-}
->>>>>>> laraxot/dev
->>>>>>> .merge_file_IRdPLN

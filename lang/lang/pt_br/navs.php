@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_dMxsrz
-=======
-
->>>>>>> .merge_file_tKsVx0
 return [
     'general' => [
         'home' => 'Início',

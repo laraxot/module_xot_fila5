@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
     'values' => [
         'spipu' => [
             'label' => 'Spipu',
@@ -18,8 +17,6 @@ return [
             'description' => 'Motore PDF basato su DomPDF per documenti HTML/CSS',
         ],
     ],
-=======
->>>>>>> laraxot/dev
     'label' => 'Motore PDF',
     'options' => [
         'spipu' => 'Spipu',
@@ -56,10 +53,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'spipu' => ['label' => 'spipu', 'placeholder' => 'spipu', 'helper_text' => 'spipu', 'description' => 'spipu'],
-=======
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
@@ -72,8 +66,5 @@ return [
             'label' => 'Elimina Pdf Engine Enum',
         ],
     ],
-<<<<<<< HEAD
     'test' => 'pdf engine enum',
-=======
->>>>>>> laraxot/dev
 ];

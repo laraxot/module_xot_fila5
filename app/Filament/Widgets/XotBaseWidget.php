@@ -25,19 +25,11 @@ use Webmozart\Assert\Assert;
  * Classe base astratta per tutti i widget Filament.
  * Fornisce funzionalità comuni e standardizzate per la gestione dei widget.
  *
-<<<<<<< HEAD
  * @property bool $shouldRender Indica se il widget deve essere renderizzato
  * @property string $title Titolo del widget
  * @property string $icon Icona del widget
  * @property array<string, mixed>|null $data Dati del form
  * @property Schema $form
-=======
- * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
- * @property string                    $title        Titolo del widget
- * @property string                    $icon         Icona del widget
- * @property array<string, mixed>|null $data         Dati del form
- * @property Schema                    $form
->>>>>>> laraxot/dev
  */
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
@@ -60,13 +52,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
-<<<<<<< HEAD
     protected string $view = 'xot::filament.widgets.base';
-=======
-    /** @var view-string */
-    /** @phpstan-ignore property.defaultValue */
-    protected string $view = '_params_xot';
->>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 
@@ -76,7 +62,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
-<<<<<<< HEAD
      * Schema del form del widget. Vuoto di default per i widget senza form
      * (es. widget di sola visualizzazione); i widget con form lo sovrascrivono.
      *
@@ -91,12 +76,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Configura il form del widget.
      *
      * @param  Schema  $schema  Il form da configurare
-=======
-     * Configura il form del widget.
-     *
-     * @param Schema $schema Il form da configurare
-     *
->>>>>>> laraxot/dev
      * @return Schema Il form configurato
      */
     public function form(Schema $schema): Schema
@@ -105,11 +84,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $schema->statePath('data');
 
         $model = $this->getFormModel();
-<<<<<<< HEAD
         if ($model !== null) {
-=======
-        if (null !== $model) {
->>>>>>> laraxot/dev
             // Ensure model is compatible with Schema::model()
             if (\is_string($model)) {
                 if (class_exists($model) && is_subclass_of($model, Model::class)) {
@@ -129,11 +104,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
-<<<<<<< HEAD
         if ($model === null) {
-=======
-        if (null === $model) {
->>>>>>> laraxot/dev
             return [];
         }
         if (\is_string($model)) {
@@ -149,13 +120,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                     /** @var array<string, mixed> $defaults */
                     $defaults = $model->getDataDefaults();
                     $merge1 = array_merge($defaults, $res);
-<<<<<<< HEAD
                     $merge1 = Arr::map($merge1, static function (mixed $value, string|int $key) use ($defaults) {
                         if ($value === null) {
-=======
-                    $merge1 = Arr::map($merge1, static function ($value, string|int $key) use ($defaults) {
-                        if (null === $value) {
->>>>>>> laraxot/dev
                             $value = Arr::get($defaults, $key, null);
                         }
 
@@ -215,10 +181,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         }
 
         return Action::make('submit')
-<<<<<<< HEAD
-=======
             ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
->>>>>>> laraxot/dev
             ->submit('save')
             ->view((string) $submit_view);
     }
@@ -232,10 +195,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         return [
             Action::make('save')
-<<<<<<< HEAD
-=======
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
->>>>>>> laraxot/dev
                 ->submit('save'),
         ];
     }
@@ -285,12 +245,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
-=======
-     * @param array<int|string, mixed> $data
-     *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     protected static function normalizeFormFill(array $data): array

@@ -39,15 +39,7 @@ class HtmlService
         // include_once __DIR__.'/vendor/autoload.php';
         // $pdforientation = 'L'; // default;
         // $out = 'show';
-<<<<<<< HEAD
         if ($filename === '') {
-=======
-<<<<<<< HEAD
-        if ($filename === '') {
-=======
-        if ('' === $filename) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             $filename = Storage::disk('local')->path('test.pdf');
         }
         /*
@@ -64,25 +56,11 @@ class HtmlService
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
             if ($out === 'content_PDF') {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ($out === 'file') {
-<<<<<<< HEAD
-=======
-=======
-            if ('content_PDF' === $out) {
-                return $html2pdf->Output($filename.'.pdf', 'S');
-            }
-
-            if ('file' === $out) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

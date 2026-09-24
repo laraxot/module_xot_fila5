@@ -22,10 +22,7 @@ use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_CLX9Ay
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_VzZA0n
 use ReflectionMethod;
 
 use function Safe\chmod;
@@ -33,10 +30,7 @@ use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 use function Safe\unlink;
-<<<<<<< .merge_file_CLX9Ay
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_VzZA0n
 
 uses(TestCase::class);
@@ -48,10 +42,7 @@ it('handles absolute urls in AssetAction', function (): void {
 });
 
 it('returns path if asset already exists in public folder', function (): void {
-<<<<<<< .merge_file_CLX9Ay
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_VzZA0n
     $relative = 'assets/xot-test-exists-'.uniqid('', true).'.txt';
     $absolute = public_path($relative);
     if (! is_dir(\dirname($absolute))) {
@@ -67,8 +58,6 @@ it('returns path if asset already exists in public folder', function (): void {
             unlink($absolute);
         }
     }
-<<<<<<< .merge_file_CLX9Ay
-=======
 });
 
 it('publishes module asset to public assets path', function (): void {
@@ -95,7 +84,6 @@ it('publishes module asset to public assets path', function (): void {
 
     $action = app(AssetAction::class);
     Assert::assertSame($path, $action->execute($path));
->>>>>>> .merge_file_VzZA0n
 });
 
 it('publishes module asset to public assets path', function (): void {
@@ -126,10 +114,7 @@ it('publishes module asset to public assets path', function (): void {
         {
             return $this->modulePath;
         }
-<<<<<<< .merge_file_CLX9Ay
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_VzZA0n
     });
 
     try {
@@ -142,8 +127,6 @@ it('publishes module asset to public assets path', function (): void {
         }
         if (is_file($resourceFile)) {
             unlink($resourceFile);
-<<<<<<< .merge_file_CLX9Ay
-=======
         }
     }
 });
@@ -212,7 +195,6 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
         public function execute(string $path): string
         {
             return $path;
->>>>>>> .merge_file_VzZA0n
         }
     }
 });

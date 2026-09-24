@@ -9,18 +9,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< .merge_file_QnMSME
         'label' => 'extra.navigation',
         'icon' => 'extra.navigation',
         'sort' => 38,
-=======
-<<<<<<< HEAD
-        'label' => 'extra.navigation',
-        'icon' => 'extra.navigation',
-        'sort' => 38,
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_N4Npon
     ],
     'pages' => [
         'health_check_results' => [
@@ -45,14 +36,7 @@ return [
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
             'description' => '',
-<<<<<<< .merge_file_QnMSME
             'placeholder' => 'id',
-=======
-<<<<<<< HEAD
-            'placeholder' => 'id',
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_N4Npon
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -66,10 +50,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_QnMSME
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_N4Npon
         'model_type' => [
             'label' => 'model_type',
         ],
@@ -97,19 +77,10 @@ return [
             'helper_text' => '',
             'description' => 'value',
         ],
-<<<<<<< .merge_file_QnMSME
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_N4Npon
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Extra',
-<<<<<<< .merge_file_QnMSME
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_N4Npon
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -132,17 +103,6 @@ return [
             'label' => 'save',
             'icon' => 'save',
             'tooltip' => 'save',
-<<<<<<< .merge_file_QnMSME
-=======
-=======
-        ],
-        'edit' => [
-            'label' => 'Modifica Extra',
-        ],
-        'delete' => [
-            'label' => 'Elimina Extra',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_N4Npon
         ],
     ],
 ];

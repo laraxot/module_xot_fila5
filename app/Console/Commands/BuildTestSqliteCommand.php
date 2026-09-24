@@ -8,14 +8,7 @@ use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Facades\DB;
 use Modules\Xot\Tests\XotBaseTestCase;
-<<<<<<< HEAD
 use Throwable;
-=======
-<<<<<<< HEAD
-use Throwable;
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 use function Safe\glob;
 use function Safe\preg_replace;
@@ -58,15 +51,7 @@ class BuildTestSqliteCommand extends Command
     {
         $target = $this->stringOption('path') ?? XotBaseTestCase::sharedSqlitePath();
 
-<<<<<<< HEAD
         if ($this->option('fresh') === true && file_exists($target)) {
-=======
-<<<<<<< HEAD
-        if ($this->option('fresh') === true && file_exists($target)) {
-=======
-        if (true === $this->option('fresh') && file_exists($target)) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             unlink($target);
         }
 
@@ -81,15 +66,7 @@ class BuildTestSqliteCommand extends Command
         $this->newLine();
         $this->info(sprintf('Tabelle in %s: %d', $target, $this->countTables($target)));
 
-<<<<<<< HEAD
         if ($failures === []) {
-=======
-<<<<<<< HEAD
-        if ($failures === []) {
-=======
-        if ([] === $failures) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             return self::SUCCESS;
         }
 
@@ -165,30 +142,14 @@ class BuildTestSqliteCommand extends Command
                     '--realpath' => true,
                 ]);
                 $this->line(sprintf('  %-32s <fg=green>ok</>', $module));
-<<<<<<< HEAD
             } catch (Throwable $e) {
-=======
-<<<<<<< HEAD
-            } catch (Throwable $e) {
-=======
-            } catch (\Throwable $e) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 // Una migration che inciampa ferma tutte quelle dopo di lei nella stessa
                 // directory: la prima volta è successo con `imports already exists`, e le
                 // tabelle `cache` e `model_has_roles` — dichiarate più avanti nella stessa
                 // cartella — non sono mai state create. Si riprova file per file.
                 $survivors = $this->migrateFileByFile($path);
 
-<<<<<<< HEAD
                 if ($survivors === []) {
-=======
-<<<<<<< HEAD
-                if ($survivors === []) {
-=======
-                if ([] === $survivors) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                     $this->line(sprintf('  %-32s <fg=green>ok</> (file per file)', $module));
                 } else {
                     $failures[$module] = $this->firstLine(implode('; ', $survivors));
@@ -225,15 +186,7 @@ class BuildTestSqliteCommand extends Command
                     '--path' => $file,
                     '--realpath' => true,
                 ]);
-<<<<<<< HEAD
             } catch (Throwable $e) {
-=======
-<<<<<<< HEAD
-            } catch (Throwable $e) {
-=======
-            } catch (\Throwable $e) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $failed[] = basename($file).': '.$this->firstLine($e->getMessage());
             }
         }
@@ -246,15 +199,7 @@ class BuildTestSqliteCommand extends Command
         $pdo = new \PDO('sqlite:'.$target);
         $count = $pdo->query('SELECT count(*) FROM sqlite_master WHERE type = "table"');
 
-<<<<<<< HEAD
         return $count === false ? 0 : (int) $count->fetchColumn();
-=======
-<<<<<<< HEAD
-        return $count === false ? 0 : (int) $count->fetchColumn();
-=======
-        return false === $count ? 0 : (int) $count->fetchColumn();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     }
 
     private function firstLine(string $message): string
@@ -268,14 +213,6 @@ class BuildTestSqliteCommand extends Command
     {
         $value = $this->option($name);
 
-<<<<<<< HEAD
         return is_string($value) && $value !== '' ? $value : null;
-=======
-<<<<<<< HEAD
-        return is_string($value) && $value !== '' ? $value : null;
-=======
-        return is_string($value) && '' !== $value ? $value : null;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     }
 }

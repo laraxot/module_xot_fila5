@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_3LyCG0
-=======
-
->>>>>>> .merge_file_nTPvUf
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',

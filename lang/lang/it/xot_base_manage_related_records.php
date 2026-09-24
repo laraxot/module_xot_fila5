@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_4fjO0S
-=======
-
->>>>>>> .merge_file_xpDOY9
 return [
     'actions' => [
         'create' => [

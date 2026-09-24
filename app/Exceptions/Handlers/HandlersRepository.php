@@ -63,11 +63,7 @@ class HandlersRepository
     {
         return array_filter(
             $this->reporters,
-<<<<<<< HEAD
             fn (callable $handler): bool => $this->handlesException($handler, $e),
-=======
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
->>>>>>> laraxot/dev
         );
     }
 
@@ -80,11 +76,7 @@ class HandlersRepository
     {
         return array_filter(
             $this->renderers,
-<<<<<<< HEAD
             fn (callable $handler): bool => $this->handlesException($handler, $e),
-=======
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
->>>>>>> laraxot/dev
         );
     }
 
@@ -97,11 +89,7 @@ class HandlersRepository
     {
         return array_filter(
             $this->consoleRenderers,
-<<<<<<< HEAD
             fn (callable $handler): bool => $this->handlesException($handler, $e),
-=======
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
->>>>>>> laraxot/dev
         );
     }
 
@@ -120,7 +108,6 @@ class HandlersRepository
             return false;
         }
 
-<<<<<<< HEAD
         $type = $params[0]->getType();
 
         if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
@@ -131,8 +118,5 @@ class HandlersRepository
 
         return (class_exists($className) || interface_exists($className))
             && (new \ReflectionClass($className))->isInstance($e);
-=======
-        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
->>>>>>> laraxot/dev
     }
 }

@@ -20,16 +20,7 @@ class CommandOutputEvent implements ShouldBroadcast
         public string $processId,
         public string $output,
         public string $type = 'output',
-<<<<<<< .merge_file_6LB8GP
     ) {}
-=======
-<<<<<<< HEAD
-    ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ae9RcV
 
     public function broadcastOn(): array
     {

@@ -4,27 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-<<<<<<< .merge_file_ZfxnAT
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 
-=======
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-
-use function Safe\file_get_contents;
-use function Safe\preg_match;
-
-=======
-use function Safe\file_get_contents;
-use function Safe\preg_match;
-
-use Spatie\QueueableAction\QueueableAction;
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_BHpNSz
 class GetClassNameByPathAction
 {
     use QueueableAction;

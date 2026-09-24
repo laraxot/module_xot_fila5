@@ -6,14 +6,11 @@ namespace Modules\Xot\Tests\Unit\Models;
 
 use Modules\Xot\Tests\TestCase;
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 =======
 <<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 use ReflectionClass;

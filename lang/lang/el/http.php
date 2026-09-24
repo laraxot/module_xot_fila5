@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_1iOmTg
-=======
-
->>>>>>> .merge_file_pnUWTm
 return [
     404 => [
         'title' => 'Η σελίδα δεν βρέθηκε.',

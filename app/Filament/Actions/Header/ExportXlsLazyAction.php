@@ -1,13 +1,6 @@
 <?php
 
-<<<<<<< .merge_file_gi4lxP
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_LlecOy
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
@@ -50,10 +43,7 @@ class ExportXlsLazyAction extends Action
     {
         parent::setUp();
 
-<<<<<<< .merge_file_gi4lxP
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_LlecOy
         $this->label('')
             ->iconButton()
             ->color('success')
@@ -64,8 +54,6 @@ class ExportXlsLazyAction extends Action
             ->modalSubmitActionLabel((string) __('xot::export_xls.actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::export_xls.actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::export_xls.actions.export_xls.success'))
-<<<<<<< .merge_file_gi4lxP
-=======
 =======
         $this->label((string) __('xot::actions.export_xls.label'))
             ->tooltip((string) __('xot::actions.export_xls.tooltip'))
@@ -75,7 +63,6 @@ class ExportXlsLazyAction extends Action
             ->modalSubmitActionLabel((string) __('xot::actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::actions.export_xls.success'))
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_LlecOy
             ->requiresConfirmation()
             ->action(static function (ListRecords $livewire) {
@@ -182,10 +169,7 @@ class ExportXlsLazyAction extends Action
     {
         return 'export_xls';
     }
-<<<<<<< .merge_file_gi4lxP
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_LlecOy
 
     /**
      * Il canale lazy lavora sui soli percorsi data_get: le intestazioni
@@ -231,9 +215,6 @@ class ExportXlsLazyAction extends Action
 
         return '';
     }
-<<<<<<< .merge_file_gi4lxP
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_LlecOy
 }

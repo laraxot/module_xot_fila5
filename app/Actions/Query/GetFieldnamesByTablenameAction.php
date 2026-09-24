@@ -16,28 +16,11 @@ final class GetFieldnamesByTablenameAction
     /**
      * Get column names from a table with specific database connection.
      *
-<<<<<<< .merge_file_AaGd7c
      * @param  string  $table  Table name to get columns from
      * @param  string|null  $connectionName  Database connection name (optional)
      * @return list<string>
      *
      * @throws \InvalidArgumentException
-=======
-     * <<<<<<< HEAD
-     *
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     *
-     * @throws \InvalidArgumentException
-     *                                   =======
-     * @throws \InvalidArgumentException
-     *
-     * @return list<string>
-     * @return list<string>
-     *                      >>>>>>> laraxot/dev
->>>>>>> .merge_file_46hKcJ
      */
     public function execute(string $table, ?string $connectionName = null): array
     {

@@ -34,10 +34,7 @@ return [
         'queue_restart' => [
             'label' => 'Riavvia Code',
         ],
-<<<<<<< .merge_file_CjQ2wk
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_9LLeNr
         'composer_dump_autoload' => [
             'label' => 'Composer Dump Autoload',
         ],
@@ -45,10 +42,7 @@ return [
             'label' => 'Importa Vecchi Template Email/SMS',
             'modal_description' => 'Copia i contenuti email/SMS dalla vecchia tabella notify_themes verso mail_templates (il nuovo sistema di invio inviti). Operazione idempotente: rilanciarla aggiorna i template già migrati invece di duplicarli, sovrascrivendo eventuali modifiche fatte a mano dopo l\'ultima esecuzione.',
         ],
-<<<<<<< .merge_file_CjQ2wk
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_9LLeNr
     ],
     'status' => [

@@ -48,9 +48,6 @@ return [
         'delete' => [
             'label' => 'Elimina Filter Form',
         ],
-<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-=======
->>>>>>> laraxot/dev
     ],
 ];

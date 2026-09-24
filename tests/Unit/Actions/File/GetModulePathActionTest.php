@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
@@ -10,24 +9,11 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\File\GetModulePathAction;
-use Nwidart\Modules\Facades\Module;
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
 it('gets module path from facade correctly', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-<<<<<<< HEAD
             return $module === 'Xot' ? '/path/to/Xot/' : '';
-=======
-            return 'Xot' === $module ? '/path/to/Xot/' : '';
->>>>>>> laraxot/dev
         },
     ]);
 

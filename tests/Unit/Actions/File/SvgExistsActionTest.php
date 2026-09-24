@@ -14,10 +14,7 @@ it('verifies svg existence', function (): void {
     $action = app(SvgExistsAction::class);
 
     Assert::assertFalse($action->execute(''));
-<<<<<<< HEAD
-=======
     // We can't easily ensure a real icon exists without registering one,
     // but the try/catch block will return false if it's missing.
->>>>>>> laraxot/dev
     Assert::assertFalse($action->execute('non-existent-icon-123456'));
 });

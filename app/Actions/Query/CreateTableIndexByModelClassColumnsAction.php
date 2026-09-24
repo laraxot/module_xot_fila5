@@ -22,18 +22,8 @@ class CreateTableIndexByModelClassColumnsAction
     /**
      * Execute the action.
      *
-<<<<<<< .merge_file_byGBmS
      * @param  class-string<Model>  $modelClass  fully qualified model class name
      * @param  array<string>  $columns  array of column names to include in the index
-=======
-<<<<<<< HEAD
-     * @param  class-string<Model>  $modelClass  fully qualified model class name
-     * @param  array<string>  $columns  array of column names to include in the index
-=======
-     * @param class-string<Model> $modelClass fully qualified model class name
-     * @param array<string>       $columns    array of column names to include in the index
->>>>>>> laraxot/dev
->>>>>>> .merge_file_txyWWX
      *
      * @throws \InvalidArgumentException|\RuntimeException
      */
@@ -45,15 +35,7 @@ class CreateTableIndexByModelClassColumnsAction
         }
 
         /** @var Model $modelInstance */
-<<<<<<< .merge_file_byGBmS
         $modelInstance = new $modelClass;
-=======
-<<<<<<< HEAD
-        $modelInstance = new $modelClass;
-=======
-        $modelInstance = new $modelClass();
->>>>>>> laraxot/dev
->>>>>>> .merge_file_txyWWX
 
         $tableName = $modelInstance->getTable();
         $connectionName = $modelInstance->getConnectionName() ?? config('database.default');
@@ -85,21 +67,9 @@ class CreateTableIndexByModelClassColumnsAction
     /**
      * Validate that all specified columns exist in the table.
      *
-<<<<<<< .merge_file_byGBmS
      * @param  string  $connectionName  database connection name
      * @param  string  $tableName  name of the table
      * @param  array<string>  $columns  columns to validate
-=======
-<<<<<<< HEAD
-     * @param  string  $connectionName  database connection name
-     * @param  string  $tableName  name of the table
-     * @param  array<string>  $columns  columns to validate
-=======
-     * @param string        $connectionName database connection name
-     * @param string        $tableName      name of the table
-     * @param array<string> $columns        columns to validate
->>>>>>> laraxot/dev
->>>>>>> .merge_file_txyWWX
      *
      * @throws \RuntimeException
      */
@@ -115,22 +85,9 @@ class CreateTableIndexByModelClassColumnsAction
     /**
      * Check if an index exists in the table.
      *
-<<<<<<< .merge_file_byGBmS
      * @param  string  $connectionName  database connection name
      * @param  string  $tableName  name of the table
      * @param  string  $indexName  name of the index
-=======
-<<<<<<< HEAD
-     * @param  string  $connectionName  database connection name
-     * @param  string  $tableName  name of the table
-     * @param  string  $indexName  name of the index
-=======
-     * @param string $connectionName database connection name
-     * @param string $tableName      name of the table
-     * @param string $indexName      name of the index
-     *
->>>>>>> laraxot/dev
->>>>>>> .merge_file_txyWWX
      * @return bool true if the index exists, false otherwise
      */
     private function indexExists(string $connectionName, string $tableName, string $indexName): bool
@@ -167,18 +124,8 @@ class CreateTableIndexByModelClassColumnsAction
     /**
      * Generate a unique index name based on the table and columns.
      *
-<<<<<<< .merge_file_byGBmS
      * @param  string  $tableName  name of the table
      * @param  array<string>  $columns  columns to include in the index
-=======
-<<<<<<< HEAD
-     * @param  string  $tableName  name of the table
-     * @param  array<string>  $columns  columns to include in the index
-=======
-     * @param string        $tableName name of the table
-     * @param array<string> $columns   columns to include in the index
->>>>>>> laraxot/dev
->>>>>>> .merge_file_txyWWX
      */
     private function generateIndexName(string $tableName, array $columns): string
     {

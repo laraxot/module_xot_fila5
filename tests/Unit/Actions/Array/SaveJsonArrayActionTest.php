@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
-<<<<<<< HEAD
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
-=======
-use Modules\Xot\Actions\Array\SaveJsonArrayAction;
->>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

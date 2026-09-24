@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< .merge_file_C7x5zn
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_z3ZZ0p
 /**
  * @see https://dev.to/jackmiras/laravel-delete-actions-simplified-4h8b
  */
 
-<<<<<<< .merge_file_C7x5zn
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_z3ZZ0p
 namespace Modules\Xot\Exceptions;
 
 use Illuminate\Http\Response;

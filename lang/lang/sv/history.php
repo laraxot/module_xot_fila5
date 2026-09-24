@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_wWsMiN
-=======
-
->>>>>>> .merge_file_tGYsmt
 return [
     'backend' => [
         'none' => 'Det finns ingen historik för förändringar.',

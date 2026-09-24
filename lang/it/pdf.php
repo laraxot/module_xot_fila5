@@ -22,15 +22,7 @@ return [
         ],
         'label' => 'Pdf',
         'sort' => 1,
-<<<<<<< .merge_file_gFIrgG
         'icon' => 'xot-files.pdf',
-=======
-<<<<<<< HEAD
-        'icon' => 'xot-files.pdf',
-=======
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
->>>>>>> .merge_file_8SKKcY
     ],
     'actions' => [
         'create' => [

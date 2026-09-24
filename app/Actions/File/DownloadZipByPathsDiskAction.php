@@ -15,14 +15,8 @@ class DownloadZipByPathsDiskAction
     /**
      * Crea un file ZIP dai percorsi forniti e lo restituisce come download.
      *
-<<<<<<< HEAD
      * @param  array<int, string>  $attachments  Array di percorsi file
      * @param  string  $disk  Nome del disco di storage
-=======
-     * @param array<string> $attachments Array di percorsi file
-     * @param string        $disk        Nome del disco di storage
-     *
->>>>>>> laraxot/dev
      * @return BinaryFileResponse|null Risposta di download o null se fallisce
      */
     public function execute(array $attachments, string $disk): ?BinaryFileResponse
@@ -31,31 +25,19 @@ class DownloadZipByPathsDiskAction
         $zipPath = 'temp/'.$zipFileName;
 
         // Crea un file temporaneo per lo ZIP usando Storage
-<<<<<<< HEAD
         $zip = new \ZipArchive;
-=======
-        $zip = new \ZipArchive();
->>>>>>> laraxot/dev
         $tempFilePath = storage_path('app/'.$zipPath);
 
         // Assicurati che la directory temp esista
         Storage::disk('local')->makeDirectory('temp');
 
-<<<<<<< HEAD
         if ($zip->open($tempFilePath, \ZipArchive::CREATE) === true) {
-=======
-        if (true === $zip->open($tempFilePath, \ZipArchive::CREATE)) {
->>>>>>> laraxot/dev
             foreach ($attachments as $attachment) {
                 $filePath = $attachment;
 
                 if (Storage::disk($disk)->exists($filePath)) {
                     $fileContent = Storage::disk($disk)->get($filePath);
-<<<<<<< HEAD
                     if ($fileContent !== null) {
-=======
-                    if (null !== $fileContent) {
->>>>>>> laraxot/dev
                         $zip->addFromString($attachment.'.pdf', $fileContent);
                     }
                 } else {

@@ -16,12 +16,9 @@ class ModuleFactory extends Factory
 {
     protected $model = Module::class;
 
-<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
-=======
->>>>>>> laraxot/dev
     public function definition(): array
     {
         return [

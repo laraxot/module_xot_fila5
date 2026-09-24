@@ -14,15 +14,7 @@ class GetModulePathByGeneratorAction
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');
         try {
             $res = module_path($moduleName, $relativePath);
-<<<<<<< .merge_file_hAafpK
             if ($res !== '') {
-=======
-<<<<<<< HEAD
-            if ($res !== '') {
-=======
-            if ('' !== $res) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_5BlUCi
                 return $res;
             }
         } catch (\Exception|\Error $e) {

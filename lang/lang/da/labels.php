@@ -1,12 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_DvsmGD
 
 declare(strict_types=1);
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_syq8Rf
 /**
  * da.
  */

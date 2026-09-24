@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_Pcy9R2
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_fMJU2S
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
@@ -42,10 +39,7 @@ it('creates custom relation', function (): void {
         protected $table = 'parent';
     };
 
-<<<<<<< .merge_file_Pcy9R2
-=======
 <<<<<<< HEAD
->>>>>>> .merge_file_fMJU2S
     $baseConstraints = fn (CustomRelation $relation) => null;
     /** @param array<int, Model> $models */
     $eagerConstraints = fn (CustomRelation $relation, array $models) => null;
@@ -54,13 +48,10 @@ it('creates custom relation', function (): void {
      * @param  mixed  $relation  relation name/value forwarded by the relation contract
      */
     $eagerMatcher = fn (array $models, Collection $results, mixed $relation) => [];
-<<<<<<< .merge_file_Pcy9R2
-=======
 =======
     $baseConstraints = fn ($relation) => null;
     $eagerConstraints = fn ($relation, $models) => null;
     $eagerMatcher = fn ($models, $results, $relation) => [];
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_fMJU2S
 
     $relation = $parentModel->customRelation(

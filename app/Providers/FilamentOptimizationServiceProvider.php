@@ -8,21 +8,12 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
-<<<<<<< HEAD
-use Nwidart\Modules\Module;
-use Webmozart\Assert\Assert;
-
-use function Safe\preg_match;
-
-=======
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
+use Webmozart\Assert\Assert;
 
 use function Safe\preg_match;
 
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -56,14 +47,11 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             $this->configureQueryLogging();
         }
 
-<<<<<<< HEAD
-=======
         // Registra middleware di monitoraggio
         if (config('filament_optimization.monitoring.memory_profiling', false)) {
             $this->registerMemoryMonitoring();
         }
 
->>>>>>> laraxot/dev
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -134,8 +122,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Registra il middleware di monitoraggio memoria.
      */
     private function registerMemoryMonitoring(): void
@@ -145,7 +131,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
->>>>>>> laraxot/dev
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

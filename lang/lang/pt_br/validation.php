@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_KmZCmQ
-=======
-
->>>>>>> .merge_file_1BzSKN
 return [
     'accepted' => 'O campo :attribute deve ser aceito.',
     'active_url' => 'O campo :attribute não contém um URL válido.',

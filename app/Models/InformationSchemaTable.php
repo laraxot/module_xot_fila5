@@ -12,7 +12,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 
 /**
-<<<<<<< HEAD
  * @property int|null $table_rows
  * @property string $table_schema
  * @property string $table_name
@@ -22,26 +21,11 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  * @property int $id
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
-=======
- * @property int|null             $table_rows
- * @property string               $table_schema
- * @property string               $table_name
- * @property string|null          $model_class
- * @property Carbon|null          $created_at
- * @property string|null          $created_by
- * @property int                  $id
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
->>>>>>> laraxot/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
-<<<<<<< HEAD
  * @method static InformationSchemaTableFactory factory($count = null, $state = [])
-=======
- * @method static InformationSchemaTableFactory          factory($count = null, $state = [])
->>>>>>> laraxot/dev
  * @method static Builder<static>|InformationSchemaTable newModelQuery()
  * @method static Builder<static>|InformationSchemaTable newQuery()
  * @method static Builder<static>|InformationSchemaTable query()
@@ -109,24 +93,13 @@ class InformationSchemaTable extends BaseModel
      */
     public function getRows(): array
     {
-<<<<<<< HEAD
-        /** @var array<int, array<string, mixed>> $rows */
-        $rows = $this->getSushiRows();
-
-        return $rows;
-=======
         return $this->getSushiRows();
->>>>>>> laraxot/dev
     }
 
     /**
      * Aggiorna il numero di record memorizzato per un modello.
      *
-<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
-=======
-     * @param class-string<Model> $modelClass
->>>>>>> laraxot/dev
      */
     public static function updateModelCount(string $modelClass, int $total): void
     {
@@ -156,11 +129,7 @@ class InformationSchemaTable extends BaseModel
     /**
      * Restituisce il numero di record per un modello.
      *
-<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
-=======
-     * @param class-string<Model> $modelClass
->>>>>>> laraxot/dev
      */
     public static function getModelCount(string $modelClass): int
     {
@@ -184,11 +153,7 @@ class InformationSchemaTable extends BaseModel
             'table_name' => $table,
         ]);
 
-<<<<<<< HEAD
         if ($record->table_rows === null) {
-=======
-        if (null === $record->table_rows) {
->>>>>>> laraxot/dev
             $record->update(['table_rows' => $model->count()]);
         }
 

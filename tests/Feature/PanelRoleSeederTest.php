@@ -8,15 +8,7 @@ use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_dzNwif
 /**
-=======
-<<<<<<< HEAD
-/**
-=======
-/*
->>>>>>> laraxot/dev
->>>>>>> .merge_file_jATUUJ
  * `BaseUser::canAccessPanel()` apre un pannello a chi ha il ruolo omonimo al suo
  * id. Finche' nessuno creava quei ruoli, ogni pannello verticale rispondeva 403
  * su un database appena migrato: 23 test lo dimostravano e nessuno leggeva il
@@ -31,15 +23,7 @@ it('crea un ruolo per ogni pannello registrato', function (): void {
 
     Role::query()->whereIn('name', $panelIds)->delete();
 
-<<<<<<< .merge_file_dzNwif
     (new PanelRoleSeeder)->run();
-=======
-<<<<<<< HEAD
-    (new PanelRoleSeeder)->run();
-=======
-    (new PanelRoleSeeder())->run();
->>>>>>> laraxot/dev
->>>>>>> .merge_file_jATUUJ
 
     foreach ($panelIds as $panelId) {
         expect(Role::query()->where('name', $panelId)->exists())
@@ -50,15 +34,7 @@ it('crea un ruolo per ogni pannello registrato', function (): void {
 it('non duplica i ruoli se gira due volte', function (): void {
     $this->prepareSharedSqliteForTesting();
 
-<<<<<<< .merge_file_dzNwif
     $seeder = new PanelRoleSeeder;
-=======
-<<<<<<< HEAD
-    $seeder = new PanelRoleSeeder;
-=======
-    $seeder = new PanelRoleSeeder();
->>>>>>> laraxot/dev
->>>>>>> .merge_file_jATUUJ
     $seeder->run();
     $seeder->run();
 

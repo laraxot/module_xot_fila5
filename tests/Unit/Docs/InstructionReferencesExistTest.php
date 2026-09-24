@@ -11,15 +11,7 @@ use function Safe\preg_match_all;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
 /**
-=======
-<<<<<<< HEAD
-/**
-=======
-/*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  * I file citati dai `CLAUDE.md` esistono.
  *
  * I `CLAUDE.md` sono istruzioni caricate a ogni sessione: un riferimento a un file che non

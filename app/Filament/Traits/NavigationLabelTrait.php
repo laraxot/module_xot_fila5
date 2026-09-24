@@ -55,15 +55,7 @@ trait NavigationLabelTrait
 
         $value = intval($res);
 
-<<<<<<< .merge_file_7HnUeW
         if ($value === 0) {
-=======
-<<<<<<< HEAD
-        if ($value === 0) {
-=======
-        if (0 === $value) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_aRi1pB
             $key = static::getKeyTransFunc(__FUNCTION__);
             $value = rand(1, 100);
             app(SaveTransAction::class)->execute($key, $value);

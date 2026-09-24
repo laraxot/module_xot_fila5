@@ -20,23 +20,7 @@ test('DateTimeRule accepts the documented day month year format', function (): v
     Assert::assertFalse($validator->fails());
 });
 
-<<<<<<< .merge_file_FDRsry
 $rejectsInvalidDateTime = function (int|string $value): void {
-=======
-<<<<<<< HEAD
-$rejectsInvalidDateTime = function (int|string $value): void {
-=======
-<<<<<<< HEAD
-$rejectsInvalidDateTime = function (mixed $value): void {
-=======
-<<<<<<< HEAD
-$rejectsInvalidDateTime = function (mixed $value): void {
-=======
-$rejectsInvalidDateTime = function (int|string $value): void {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_c3nE4t
     $validator = Validator::make(
         ['published_at' => $value],
         ['published_at' => [new DateTimeRule]],

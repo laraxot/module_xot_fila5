@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_SnGAma
-=======
-
->>>>>>> .merge_file_I73Ilr
 return [
     'backend' => [
         'roles' => [

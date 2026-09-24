@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_zVF4UU
-=======
-
->>>>>>> .merge_file_MFpUbo
 return [
     'password' => 'Lösenordet måste vara minst sex tecken långt och stämma med bekräftelsen av lösenordet.',
     'reset' => 'Ditt lösenord har återställts!',

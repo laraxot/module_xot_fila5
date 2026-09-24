@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_VUj0ws
-=======
-
->>>>>>> .merge_file_eTttSr
 return [
     'general' => [
         'all' => 'Alle',

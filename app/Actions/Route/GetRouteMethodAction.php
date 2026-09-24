@@ -18,30 +18,13 @@ class GetRouteMethodAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
      * @param  array<string, mixed>  $v
-=======
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $v
-=======
-     * @param array<string, mixed> $v
-     *
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public function execute(array $v, ?string $namespace = null): array
     {
         if (isset($v['method'])) {
-<<<<<<< HEAD
             /** @var array<int, string> */
-=======
-<<<<<<< HEAD
-            /** @var array<int, string> */
-=======
-            /* @var array<int, string> */
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             return Arr::wrap($v['method']);
         }
 

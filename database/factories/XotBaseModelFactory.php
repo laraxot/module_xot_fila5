@@ -24,12 +24,9 @@ class XotBaseModelFactory extends Factory
      *
      * @return array<string, mixed>
      */
-<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
-=======
->>>>>>> laraxot/dev
     public function definition(): array
     {
         return [

@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ?>
 <x-filament::page>
     <div class="space-y-6" wire:poll.visible="{{ $this->isRunning ? '100' : '1000' }}">

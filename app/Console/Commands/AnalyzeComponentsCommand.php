@@ -40,18 +40,8 @@ class AnalyzeComponentsCommand extends Command
 
         // Type-safe module handling
         $moduleStr = is_string($module) ? $module : '';
-<<<<<<< .merge_file_9QXI2v
         $path = $moduleStr !== '' ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
         $namespace = $moduleStr !== '' ? "Modules\\{$moduleStr}" : 'Modules';
-=======
-<<<<<<< HEAD
-        $path = $moduleStr !== '' ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
-        $namespace = $moduleStr !== '' ? "Modules\\{$moduleStr}" : 'Modules';
-=======
-        $path = '' !== $moduleStr ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
-        $namespace = '' !== $moduleStr ? "Modules\\{$moduleStr}" : 'Modules';
->>>>>>> laraxot/dev
->>>>>>> .merge_file_9g7E6T
 
         $components = $getComponentsAction->execute($path, $namespace, $prefix, $force);
 

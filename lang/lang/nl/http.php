@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_o3n8L1
-=======
-
->>>>>>> .merge_file_DpfbSq
 return [
     404 => [
         'title' => 'Pagina Niet Gevonden',

@@ -13,14 +13,4 @@ use Filament\Tables\Columns\Column;
  *
  * @method static static make(string $name) Create a new instance of the column
  */
-<<<<<<< .merge_file_PvzaiO
 abstract class XotBaseColumn extends Column {}
-=======
-<<<<<<< HEAD
-abstract class XotBaseColumn extends Column {}
-=======
-abstract class XotBaseColumn extends Column
-{
-}
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZgmOYa

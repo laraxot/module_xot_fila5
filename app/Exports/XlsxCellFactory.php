@@ -40,15 +40,7 @@ class XlsxCellFactory
 
         $value = StringHelper::sanitizeUTF8($value);
 
-<<<<<<< .merge_file_mputU5
         if ($value === '') {
-=======
-<<<<<<< HEAD
-        if ($value === '') {
-=======
-        if ('' === $value) {
->>>>>>> laraxot/dev
->>>>>>> .merge_file_RKRMjb
             return new EmptyCell($value, $style);
         }
 

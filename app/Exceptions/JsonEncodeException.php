@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< .merge_file_oIs0Pe
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_f2udau
 /**
  * @see https://dev.to/jackmiras/laravels-exceptions-part-2-custom-exceptions-1367
  */
 
-<<<<<<< .merge_file_oIs0Pe
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_f2udau
 namespace Modules\Xot\Exceptions;
 
 use Illuminate\Http\Response;

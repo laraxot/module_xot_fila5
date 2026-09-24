@@ -4,57 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Tables\Filters;
 
-use Filament\Forms\Components\ToggleButtons;
-use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
-<<<<<<< HEAD
- * Ternary 
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
- * Ternary sì/no/tutti con ToggleButtons raggruppati (non Select full-width).
+ * Ternary sì/no/tutti.
  *
- * Filament TernaryFilter estende SelectFilter: semanticamente ok, UI pesante per 3 stati.
- * Qui si sostituisce il field con ToggleButtons grouped; le query boolean del parent restano.
- *
- * Deselezionare = stato blank («tutti»), come il placeholder del Select precedente.
-<<<<<<< HEAD
-=======
-=======
- * Ternary 
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ * La variante con ToggleButtons raggruppati (al posto del Select full-width del parent)
+ * è al momento disattivata: vedi il blocco commentato in setUp(). Le query boolean del
+ * parent restano invariate.
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< .merge_file_EUmCaP
         /*
-=======
-<<<<<<< HEAD
-        /*
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
-        /*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_xexQAE
         $this->schema(function (): array {
             return [
-                ToggleButtons::make('value')
+                \Filament\Forms\Components\ToggleButtons::make('value')
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -65,23 +32,9 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         1 => 'success',
                         0 => 'danger',
                     ])
-                    ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
+                    ->stateCast(app(\Filament\Schemas\Components\StateCasts\BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
-<<<<<<< .merge_file_EUmCaP
         */
-=======
-<<<<<<< HEAD
-        */
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        */
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_xexQAE
     }
 }

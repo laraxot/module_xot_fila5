@@ -9,18 +9,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< .merge_file_Wi7ioM
         'label' => 'env.navigation',
         'icon' => 'env.navigation',
         'sort' => 94,
-=======
-<<<<<<< HEAD
-        'label' => 'env.navigation',
-        'icon' => 'env.navigation',
-        'sort' => 94,
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_XHmMv7
     ],
     'pages' => [
         'health_check_results' => [
@@ -58,10 +49,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_Wi7ioM
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_XHmMv7
         'app_url' => [
             'label' => 'URL applicazione',
             'placeholder' => 'http://localhost',
@@ -146,11 +133,6 @@ return [
             'helper_text' => 'Valore corrente di MAIL_FROM_NAME nel .env — nome che compare accanto all\'indirizzo mittente. Se nel .env vale ${APP_NAME} qui vedi il nome già risolto: lasciandolo invariato la riga non viene riscritta.',
             'description' => '',
         ],
-<<<<<<< .merge_file_Wi7ioM
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_XHmMv7
     ],
     'actions' => [
         'create' => [
@@ -162,10 +144,6 @@ return [
         'delete' => [
             'label' => 'Elimina Env',
         ],
-<<<<<<< .merge_file_Wi7ioM
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_XHmMv7
         'save' => [
             'label' => 'save',
             'icon' => 'save',
@@ -186,10 +164,5 @@ return [
             'label' => 'Mail',
             'heading' => 'Mail',
         ],
-<<<<<<< .merge_file_Wi7ioM
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_XHmMv7
     ],
 ];
