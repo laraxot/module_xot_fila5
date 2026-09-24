@@ -88,10 +88,9 @@ trait EnumIntegerTrait
     /**
      * Get enum case by integer value.
      *
-     *
      * @param int $value Integer value to find
-<<<<<<< .merge_file_1jcXwV
-=======
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
      *                   =======
      *                   <<<<<<< .merge_file_VA3lej
      * @param int $value Integer value to find
@@ -105,7 +104,7 @@ trait EnumIntegerTrait
      * >>>>>>> .merge_file_kRf6cQ
      *
      * >>>>>>> laraxot/dev
->>>>>>> .merge_file_cEwT4Z
+     * >>>>>>> .merge_file_cEwT4Z
      *
      * @return static|null Matching case or null
      */
@@ -123,10 +122,9 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is greater than another.
      *
-     *
      * @param int $value Value to compare against
-<<<<<<< .merge_file_1jcXwV
-=======
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
      *                   =======
      *                   <<<<<<< .merge_file_VA3lej
      * @param int $value Value to compare against
@@ -138,7 +136,7 @@ trait EnumIntegerTrait
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_kRf6cQ
      *                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_cEwT4Z
+     *                   >>>>>>> .merge_file_cEwT4Z
      */
     public function isGreaterThan(int $value): bool
     {
@@ -148,10 +146,9 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is less than another.
      *
-     *
      * @param int $value Value to compare against
-<<<<<<< .merge_file_1jcXwV
-=======
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
      *                   =======
      *                   <<<<<<< .merge_file_VA3lej
      * @param int $value Value to compare against
@@ -163,7 +160,7 @@ trait EnumIntegerTrait
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_kRf6cQ
      *                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_cEwT4Z
+     *                   >>>>>>> .merge_file_cEwT4Z
      */
     public function isLessThan(int $value): bool
     {
@@ -173,10 +170,9 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value equals another.
      *
-     *
      * @param int $value Value to compare against
-<<<<<<< .merge_file_1jcXwV
-=======
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
      *                   =======
      *                   <<<<<<< .merge_file_VA3lej
      * @param int $value Value to compare against
@@ -188,7 +184,7 @@ trait EnumIntegerTrait
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_kRf6cQ
      *                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_cEwT4Z
+     *                   >>>>>>> .merge_file_cEwT4Z
      */
     public function equals(int $value): bool
     {

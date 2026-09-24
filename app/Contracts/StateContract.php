@@ -43,13 +43,12 @@ interface StateContract
     /**
      * Execute modal action by record.
      *
-<<<<<<< .merge_file_JzTKht
+     * <<<<<<< .merge_file_JzTKht
      *
      * @param array<string, mixed> $data
-=======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_uuxng6
-     *
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     *                                   <<<<<<< .merge_file_uuxng6
      * @param array<string, mixed> $data
      *                                   =======
      *                                   <<<<<<< .merge_file_0ishpY
@@ -65,7 +64,7 @@ interface StateContract
      *                                   =======
      * @param array<string, mixed> $data
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_5Pp3Zq
+     *                                   >>>>>>> .merge_file_5Pp3Zq
      */
     public function modalActionByRecord(Model $record, array $data): void;
 }

@@ -9,7 +9,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseEntryFactory;
 
 /**
- *
  * @property string               $id
  * @property int                  $timestamp
  * @property string               $type
@@ -19,7 +18,7 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
- * @method static PulseEntryFactory factory($count = null, $state = [])
+ * @method static PulseEntryFactory          factory($count = null, $state = [])
  * @method static Builder<static>|PulseEntry newModelQuery()
  * @method static Builder<static>|PulseEntry newQuery()
  * @method static Builder<static>|PulseEntry query()
