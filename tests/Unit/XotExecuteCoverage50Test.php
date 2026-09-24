@@ -16,14 +16,27 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\LazyCollection;
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
 use Mockery;
 =======
+=======
+<<<<<<< .merge_file_isq2er
+use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< .merge_file_UAp5L6
 use Mockery;
 =======
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
 use Modules\Xot\Actions\ArtisanAction;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
 use Modules\Xot\Actions\Factory\GetPropertiesFromMethodsByModelAction;
@@ -31,6 +44,13 @@ use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 use Modules\Xot\Actions\File\FileAction;
 <<<<<<< HEAD
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+use Modules\Xot\Actions\Route\IsAdminRouteAction;
+=======
+>>>>>>> .merge_file_pjdptM
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
 =======
 <<<<<<< .merge_file_UAp5L6
@@ -38,12 +58,22 @@ use Modules\Xot\Actions\Route\IsAdminRouteAction;
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_QBNgQ8
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
 >>>>>>> .merge_file_ayyJ5W
+=======
+use Modules\Xot\Actions\Route\IsAdminRouteAction;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+use Modules\Xot\Actions\Route\IsAdminRouteAction;
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Console\Commands\AddStrictTypesDeclarationCommand;
@@ -99,6 +129,14 @@ use Modules\Xot\Models\XotBasePivot;
 use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Providers\FilamentOptimizationServiceProvider;
 <<<<<<< HEAD
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+use Modules\Xot\Actions\Route\IsAdminRouteAction;
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_pjdptM
 =======
 <<<<<<< .merge_file_UAp5L6
 <<<<<<< HEAD
@@ -112,6 +150,10 @@ use Modules\Xot\Actions\Route\IsAdminRouteAction;
 =======
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
 use Modules\Xot\QueryBuilders\BaseQueryBuilder;
 use Modules\Xot\States\XotBaseState;
 use Modules\Xot\Tests\FilamentSchemaCoverage;
@@ -120,6 +162,7 @@ use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasCsrfToken;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
@@ -134,6 +177,39 @@ use Symfony\Component\Console\Output\NullOutput;
 =======
 use Symfony\Component\Console\Output\OutputInterface;
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+use function Safe\ob_get_clean;
+use function Safe\ob_start;
+
+=======
+<<<<<<< .merge_file_isq2er
+>>>>>>> .merge_file_pjdptM
+use Symfony\Component\Console\Input\ArrayInput;
+use Symfony\Component\Console\Output\NullOutput;
+=======
+<<<<<<< HEAD
+use Symfony\Component\Console\Input\ArrayInput;
+use Symfony\Component\Console\Output\NullOutput;
+use Symfony\Component\Console\Output\OutputInterface;
+=======
+<<<<<<< .merge_file_UAp5L6
+use Symfony\Component\Console\Input\ArrayInput;
+use Symfony\Component\Console\Output\NullOutput;
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4DIecx
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Output\OutputInterface;
+<<<<<<< .merge_file_QBNgQ8
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_isq2er
+=======
 >>>>>>> laraxot/dev
 =======
 
@@ -145,14 +221,25 @@ use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_UAp5L6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
@@ -160,6 +247,11 @@ uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
     Mockery::close();
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 =======
@@ -169,6 +261,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
 });
 
 /** @return array{string, string} */
@@ -187,6 +283,12 @@ function xotInvoke(object $target, string $method, mixed ...$args): mixed
 }
 
 /**
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+ * @param  list<Model>  $models
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
  * @param  list<Model>  $models
 =======
@@ -197,6 +299,10 @@ function xotInvoke(object $target, string $method, mixed ...$args): mixed
  *
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
  * @return LazyCollection<int, mixed>
  */
 function xotModelRows(array $models): LazyCollection
@@ -277,6 +383,7 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('XotData e MetatagData eseguono getter semantici e rami puri', function (): void {
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         $xot = new XotData;
 =======
@@ -286,6 +393,21 @@ describe('Xot execute coverage floor 50', function (): void {
         $xot = new XotData();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+        $xot = new XotData;
+=======
+<<<<<<< HEAD
+        $xot = new XotData;
+=======
+<<<<<<< .merge_file_UAp5L6
+        $xot = new XotData;
+=======
+        $xot = new XotData();
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->force_ssl = true;
@@ -307,6 +429,12 @@ describe('Xot execute coverage floor 50', function (): void {
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+        $meta = new MetatagData;
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
         $meta = new MetatagData;
 =======
@@ -316,6 +444,10 @@ describe('Xot execute coverage floor 50', function (): void {
         $meta = new MetatagData();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Descrizione';
@@ -386,6 +518,12 @@ describe('Xot execute coverage floor 50', function (): void {
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+        $middleware = new SecurityMiddleware;
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
         $middleware = new SecurityMiddleware;
 =======
@@ -395,6 +533,10 @@ describe('Xot execute coverage floor 50', function (): void {
         $middleware = new SecurityMiddleware();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $request = Request::create('/dashboard', 'GET', [], [], [], [
             'HTTP_USER_AGENT' => 'PHPUnit/SecurityMiddleware',
             'REMOTE_ADDR' => '127.0.0.'.random_int(10, 200),
@@ -423,6 +565,22 @@ describe('Xot execute coverage floor 50', function (): void {
         File::put($tmp.'/Resources/Form.php', "<?php\ngetFormSchema(); \$x->whereNull('x')->update([]);\n");
         File::put($tmp.'/Pages/ListItems.php', "<?php\nclass ListItems {}\n");
 
+<<<<<<< .merge_file_QBNgQ8
+<<<<<<< HEAD
+        $splFiles = (new Filesystem)->allFiles($tmp);
+        $original = File::getFacadeRoot();
+        $mockFs = Mockery::mock(Filesystem::class)->makePartial();
+=======
+<<<<<<< .merge_file_UAp5L6
+=======
+<<<<<<< .merge_file_isq2er
+>>>>>>> .merge_file_pjdptM
+        $splFiles = (new Filesystem)->allFiles($tmp);
+        $original = File::getFacadeRoot();
+        $mockFs = Mockery::mock(Filesystem::class)->makePartial();
+=======
+<<<<<<< .merge_file_QBNgQ8
+=======
 <<<<<<< HEAD
         $splFiles = (new Filesystem)->allFiles($tmp);
         $original = File::getFacadeRoot();
@@ -433,11 +591,16 @@ describe('Xot execute coverage floor 50', function (): void {
         $original = File::getFacadeRoot();
         $mockFs = Mockery::mock(Filesystem::class)->makePartial();
 =======
+>>>>>>> .merge_file_pjdptM
         $splFiles = (new Filesystem())->allFiles($tmp);
         $original = File::getFacadeRoot();
         $mockFs = \Mockery::mock(Filesystem::class)->makePartial();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $mockFs->shouldReceive('allFiles')->andReturn($splFiles);
         File::swap($mockFs);
 
@@ -450,6 +613,7 @@ describe('Xot execute coverage floor 50', function (): void {
 
             $exitCode = $command->run(
                 new ArrayInput(['--analyze' => true, '--verbose' => true]),
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
                 new NullOutput
 =======
@@ -459,10 +623,26 @@ describe('Xot execute coverage floor 50', function (): void {
                 new NullOutput()
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+                new NullOutput
+=======
+<<<<<<< HEAD
+                new NullOutput
+=======
+<<<<<<< .merge_file_UAp5L6
+                new NullOutput
+=======
+                new NullOutput()
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             );
             Assert::assertSame(0, $exitCode);
         } finally {
             File::swap($original);
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
             Mockery::close();
 =======
@@ -472,19 +652,48 @@ describe('Xot execute coverage floor 50', function (): void {
             \Mockery::close();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+            Mockery::close();
+=======
+<<<<<<< HEAD
+            Mockery::close();
+=======
+<<<<<<< .merge_file_UAp5L6
+            Mockery::close();
+=======
+            \Mockery::close();
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         }
     });
 
     test('XotBaseMigration espone modello tabella e connessione', function (): void {
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_UAp5L6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 =======
@@ -496,6 +705,10 @@ describe('Xot execute coverage floor 50', function (): void {
             }
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         };
 
         Assert::assertSame(CacheModel::class, $migration->getModelClass());
@@ -528,6 +741,7 @@ describe('Xot execute coverage floor 50', function (): void {
 
     test('SecurityMiddleware copre path sospetti e rate limit endpoint', function (): void {
         config(['cache.default' => 'array']);
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         $middleware = new SecurityMiddleware;
 =======
@@ -537,6 +751,21 @@ describe('Xot execute coverage floor 50', function (): void {
         $middleware = new SecurityMiddleware();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+        $middleware = new SecurityMiddleware;
+=======
+<<<<<<< HEAD
+        $middleware = new SecurityMiddleware;
+=======
+<<<<<<< .merge_file_UAp5L6
+        $middleware = new SecurityMiddleware;
+=======
+        $middleware = new SecurityMiddleware();
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
 
         $suspicious = Request::create('/search', 'GET', [
             'q' => 'safe-query',
@@ -612,6 +841,12 @@ describe('Xot execute coverage floor 50', function (): void {
                         continue;
                     }
                     $m = new \ReflectionMethod($instance, $method);
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+                    if ($m->getNumberOfRequiredParameters() === 0) {
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
                     if ($m->getNumberOfRequiredParameters() === 0) {
 =======
@@ -621,6 +856,10 @@ describe('Xot execute coverage floor 50', function (): void {
                     if (0 === $m->getNumberOfRequiredParameters()) {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
                         $m->invoke($instance);
                     }
                 }
@@ -630,15 +869,29 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('XotBaseMigration helper schema su blueprint in memoria', function (): void {
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_UAp5L6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 =======
@@ -650,6 +903,10 @@ describe('Xot execute coverage floor 50', function (): void {
             }
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         };
 
         try {
@@ -713,6 +970,11 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertNotEmpty($resource::getPages());
             Assert::assertNotEmpty($resource::getRelations());
 <<<<<<< HEAD
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 
 =======
 <<<<<<< .merge_file_UAp5L6
@@ -720,15 +982,28 @@ describe('Xot execute coverage floor 50', function (): void {
             
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             
 =======
 
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 >>>>>>> laraxot/dev
 =======
 
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             try {
                 Assert::assertNotEmpty($resource::getInfolistSchema());
             } catch (\Throwable) {
@@ -813,15 +1088,29 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('XotBaseMigration blueprint helpers e schema methods', function (): void {
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_UAp5L6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 =======
@@ -833,6 +1122,10 @@ describe('Xot execute coverage floor 50', function (): void {
             }
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         };
 
         try {
@@ -844,15 +1137,28 @@ describe('Xot execute coverage floor 50', function (): void {
             $blueprint = null;
         }
 
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         if ($blueprint !== null) {
 =======
+=======
+<<<<<<< .merge_file_isq2er
+        if ($blueprint !== null) {
+=======
+<<<<<<< HEAD
+        if ($blueprint !== null) {
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< .merge_file_UAp5L6
         if ($blueprint !== null) {
 =======
         if (null !== $blueprint) {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             try {
                 $migration->addCommonFields($blueprint);
                 $migration->updateTimestamps($blueprint, true);
@@ -895,16 +1201,32 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
         try {
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
             $migration->tableUpdate(static function (Blueprint $table): void {});
 =======
 <<<<<<< .merge_file_UAp5L6
             $migration->tableUpdate(static function (Blueprint $table): void {});
 =======
+=======
+<<<<<<< .merge_file_isq2er
+            $migration->tableUpdate(static function (Blueprint $table): void {});
+=======
+<<<<<<< HEAD
+            $migration->tableUpdate(static function (Blueprint $table): void {});
+=======
+<<<<<<< .merge_file_UAp5L6
+            $migration->tableUpdate(static function (Blueprint $table): void {});
+=======
+>>>>>>> .merge_file_pjdptM
             $migration->tableUpdate(static function (Blueprint $table): void {
             });
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         } catch (\Throwable) {
         }
     });
@@ -954,15 +1276,29 @@ describe('Xot execute coverage floor 50', function (): void {
         $twins = app(CheckAccessorTwinsCommand::class);
         $twins->setLaravel(app());
         try {
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_UAp5L6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             $twins->run(new ArrayInput(['--module' => 'Xot']), new NullOutput);
         } catch (\Throwable) {
         }
         try {
             $twins->run(new ArrayInput(['--module' => 'Xot', '--orphans' => true]), new NullOutput);
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
 =======
 =======
@@ -973,6 +1309,10 @@ describe('Xot execute coverage floor 50', function (): void {
             $twins->run(new ArrayInput(['--module' => 'Xot', '--orphans' => true]), new NullOutput());
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         } catch (\Throwable) {
         }
 
@@ -981,15 +1321,28 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             $search->run(
                 new ArrayInput(['search' => 'xot-coverage-needle-impossible', '--tables' => ['cache']]),
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
                 new NullOutput
 =======
+=======
+<<<<<<< .merge_file_isq2er
+                new NullOutput
+=======
+<<<<<<< HEAD
+                new NullOutput
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< .merge_file_UAp5L6
                 new NullOutput
 =======
                 new NullOutput()
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             );
         } catch (\Throwable) {
         }
@@ -1000,6 +1353,12 @@ describe('Xot execute coverage floor 50', function (): void {
             'filament_optimization.monitoring.memory_threshold_mb' => 0.0001,
             'filament_optimization.monitoring.time_threshold_ms' => 0.0001,
         ]);
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+        $memMw = new FilamentMemoryMonitorMiddleware;
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
         $memMw = new FilamentMemoryMonitorMiddleware;
 =======
@@ -1009,6 +1368,10 @@ describe('Xot execute coverage floor 50', function (): void {
         $memMw = new FilamentMemoryMonitorMiddleware();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $adminReq = Request::create('/admin/xot/resources', 'GET', [], [], [], [
             'HTTP_USER_AGENT' => 'PHPUnit',
             'REMOTE_ADDR' => '10.9.9.'.random_int(1, 200),
@@ -1076,15 +1439,28 @@ describe('Xot execute coverage floor 50', function (): void {
         }
 
         try {
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
             app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
 =======
+=======
+<<<<<<< .merge_file_isq2er
+            app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
+=======
+<<<<<<< HEAD
+            app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< .merge_file_UAp5L6
             app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
 =======
             app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel());
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         } catch (\Throwable) {
         }
 
@@ -1101,6 +1477,12 @@ describe('Xot execute coverage floor 50', function (): void {
                         continue;
                     }
                     $method = new \ReflectionMethod($widget, $wm);
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+                    if ($method->getNumberOfRequiredParameters() === 0) {
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
                     if ($method->getNumberOfRequiredParameters() === 0) {
 =======
@@ -1110,6 +1492,10 @@ describe('Xot execute coverage floor 50', function (): void {
                     if (0 === $method->getNumberOfRequiredParameters()) {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
                         try {
                             $method->invoke($widget);
                         } catch (\Throwable) {
@@ -1189,6 +1575,7 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertStringEndsWith('#record-7', RecordAnchor::appendTo('/list', 7));
         Assert::assertSame('/list#x', RecordAnchor::appendTo('/list#x', 7));
 
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         $qb = new class extends BaseQueryBuilder
         {
@@ -1200,6 +1587,24 @@ describe('Xot execute coverage floor 50', function (): void {
         $qb = new class extends BaseQueryBuilder {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+        $qb = new class extends BaseQueryBuilder
+        {
+=======
+<<<<<<< HEAD
+        $qb = new class extends BaseQueryBuilder
+        {
+=======
+<<<<<<< .merge_file_UAp5L6
+        $qb = new class extends BaseQueryBuilder
+        {
+=======
+        $qb = new class extends BaseQueryBuilder {
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             protected function getModel(): string
             {
                 return CacheModel::class;
@@ -1255,6 +1660,7 @@ describe('Xot execute coverage floor 50', function (): void {
             return response('handled', 200);
         });
 <<<<<<< HEAD
+<<<<<<< .merge_file_QBNgQ8
         $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
 =======
 <<<<<<< .merge_file_UAp5L6
@@ -1266,17 +1672,45 @@ describe('Xot execute coverage floor 50', function (): void {
 =======
         $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+=======
+        $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
+=======
+<<<<<<< .merge_file_UAp5L6
+<<<<<<< HEAD
+        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_4DIecx
+        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
+=======
+        $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_isq2er
+=======
+>>>>>>> .merge_file_pjdptM
 >>>>>>> laraxot/dev
 =======
         $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {
         });
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $decorator->report(new \RuntimeException('cov'));
         Assert::assertTrue($reported);
         Assert::assertSame(200, $decorator->render(Request::create('/'), new \RuntimeException('r'))->getStatusCode());
         Assert::assertTrue($decorator->shouldReport(new \RuntimeException('s')));
         try {
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+            $decorator->renderForConsole(new NullOutput, new \RuntimeException('c'));
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
             $decorator->renderForConsole(new NullOutput, new \RuntimeException('c'));
 =======
@@ -1286,6 +1720,10 @@ describe('Xot execute coverage floor 50', function (): void {
             $decorator->renderForConsole(new NullOutput(), new \RuntimeException('c'));
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         } catch (\Throwable) {
         }
         try {
@@ -1293,6 +1731,7 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
 
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         $export = new ExportXlsStreamByLazyCollection;
         $rowExport = new CacheModel;
@@ -1301,10 +1740,28 @@ describe('Xot execute coverage floor 50', function (): void {
         $export = new ExportXlsStreamByLazyCollection;
         $rowExport = new CacheModel;
 =======
+=======
+<<<<<<< .merge_file_isq2er
+        $export = new ExportXlsStreamByLazyCollection;
+        $rowExport = new CacheModel;
+=======
+<<<<<<< HEAD
+        $export = new ExportXlsStreamByLazyCollection;
+        $rowExport = new CacheModel;
+=======
+<<<<<<< .merge_file_UAp5L6
+        $export = new ExportXlsStreamByLazyCollection;
+        $rowExport = new CacheModel;
+=======
+>>>>>>> .merge_file_pjdptM
         $export = new ExportXlsStreamByLazyCollection();
         $rowExport = new CacheModel();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $rowExport->setRawAttributes(['id' => 3, 'name' => 'B']);
         $lazy2 = xotModelRows([$rowExport]);
         Assert::assertSame([], $export->headings(LazyCollection::make([])));
@@ -1322,6 +1779,7 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             Assert::assertSame(0, $cmd->run(
                 new ArrayInput(['--module' => 'Xot', '--dry-run' => true]),
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
                 new NullOutput
 =======
@@ -1331,10 +1789,26 @@ describe('Xot execute coverage floor 50', function (): void {
                 new NullOutput()
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+                new NullOutput
+=======
+<<<<<<< HEAD
+                new NullOutput
+=======
+<<<<<<< .merge_file_UAp5L6
+                new NullOutput
+=======
+                new NullOutput()
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             ));
         } catch (\Throwable) {
         }
         try {
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
             $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
 =======
@@ -1344,6 +1818,21 @@ describe('Xot execute coverage floor 50', function (): void {
             $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput());
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
+=======
+<<<<<<< HEAD
+            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
+=======
+<<<<<<< .merge_file_UAp5L6
+            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
+=======
+            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput());
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         } catch (\Throwable) {
         }
 
@@ -1352,16 +1841,32 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
 
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         $chart = new class extends XotBaseChartWidget {};
 =======
 <<<<<<< .merge_file_UAp5L6
         $chart = new class extends XotBaseChartWidget {};
 =======
+=======
+<<<<<<< .merge_file_isq2er
+        $chart = new class extends XotBaseChartWidget {};
+=======
+<<<<<<< HEAD
+        $chart = new class extends XotBaseChartWidget {};
+=======
+<<<<<<< .merge_file_UAp5L6
+        $chart = new class extends XotBaseChartWidget {};
+=======
+>>>>>>> .merge_file_pjdptM
         $chart = new class extends XotBaseChartWidget {
         };
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $cref = new \ReflectionClass($chart);
         foreach (['getHeading', 'getData', 'getType', 'getOptionsArray', 'getHeight'] as $method) {
             if (! $cref->hasMethod($method)) {
@@ -1375,6 +1880,7 @@ describe('Xot execute coverage floor 50', function (): void {
             }
         }
 
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         $state = new class extends XotBaseState
         {
@@ -1386,6 +1892,24 @@ describe('Xot execute coverage floor 50', function (): void {
         $state = new class extends XotBaseState {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+        $state = new class extends XotBaseState
+        {
+=======
+<<<<<<< HEAD
+        $state = new class extends XotBaseState
+        {
+=======
+<<<<<<< .merge_file_UAp5L6
+        $state = new class extends XotBaseState
+        {
+=======
+        $state = new class extends XotBaseState {
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             public static string $name = 'cov_state';
         };
         Assert::assertSame('cov_state', $state::getName());
@@ -1400,26 +1924,48 @@ describe('Xot execute coverage floor 50', function (): void {
         }
         try {
             Assert::assertSame(['message' => 'x'], $state->modalFillForm([], ['message' => 'x']));
+<<<<<<< .merge_file_QBNgQ8
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_isq2er
+            Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
+            $state->modalAction([], ['message' => 'x']);
+            $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
+=======
 <<<<<<< HEAD
             Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
             $state->modalAction([], ['message' => 'x']);
             $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
 =======
 <<<<<<< .merge_file_UAp5L6
+>>>>>>> .merge_file_pjdptM
             Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
             $state->modalAction([], ['message' => 'x']);
             $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
 =======
+<<<<<<< .merge_file_QBNgQ8
+<<<<<<< .merge_file_UAp5L6
+            Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
+            $state->modalAction([], ['message' => 'x']);
+            $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
+=======
+=======
+>>>>>>> .merge_file_pjdptM
             Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel()));
             $state->modalAction([], ['message' => 'x']);
             $state->modalActionByRecord(new CacheModel(), ['message' => 'x']);
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             Assert::assertSame([], $state::getOptions());
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
         }
 
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
         $cache = new XotCovRelationHost;
 =======
@@ -1429,6 +1975,21 @@ describe('Xot execute coverage floor 50', function (): void {
         $cache = new XotCovRelationHost();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+        $cache = new XotCovRelationHost;
+=======
+<<<<<<< HEAD
+        $cache = new XotCovRelationHost;
+=======
+<<<<<<< .merge_file_UAp5L6
+        $cache = new XotCovRelationHost;
+=======
+        $cache = new XotCovRelationHost();
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         try {
             $cache->guessPivotFullClass('CacheSession', CacheModel::class);
         } catch (\Throwable) {
@@ -1442,6 +2003,12 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
 
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+        $gen = new GenerateTableColumnsByFileAction;
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
         $gen = new GenerateTableColumnsByFileAction;
 =======
@@ -1451,6 +2018,10 @@ describe('Xot execute coverage floor 50', function (): void {
         $gen = new GenerateTableColumnsByFileAction();
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
         $tmpTxt = sys_get_temp_dir().'/xot-not-php-'.uniqid('', true).'.txt';
         File::put($tmpTxt, 'nope');
         try {
@@ -1459,6 +2030,7 @@ describe('Xot execute coverage floor 50', function (): void {
         }
 
         try {
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
             $pivot = new class extends XotBasePivot
             {
@@ -1470,12 +2042,37 @@ describe('Xot execute coverage floor 50', function (): void {
             $pivot = new class extends XotBasePivot {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_isq2er
+            $pivot = new class extends XotBasePivot
+            {
+=======
+<<<<<<< HEAD
+            $pivot = new class extends XotBasePivot
+            {
+=======
+<<<<<<< .merge_file_UAp5L6
+            $pivot = new class extends XotBasePivot
+            {
+=======
+            $pivot = new class extends XotBasePivot {
+>>>>>>> .merge_file_ayyJ5W
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
                 protected $table = 'cache';
             };
             Assert::assertInstanceOf(XotBasePivot::class, $pivot);
         } catch (\Throwable) {
         }
         try {
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+            $morph = new class extends XotBaseMorphPivot
+            {
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
             $morph = new class extends XotBaseMorphPivot
             {
@@ -1487,6 +2084,10 @@ describe('Xot execute coverage floor 50', function (): void {
             $morph = new class extends XotBaseMorphPivot {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
                 protected $table = 'cache';
             };
             Assert::assertInstanceOf(XotBaseMorphPivot::class, $morph);
@@ -1494,10 +2095,21 @@ describe('Xot execute coverage floor 50', function (): void {
         }
 
         try {
+<<<<<<< .merge_file_QBNgQ8
 <<<<<<< HEAD
             $uuid = new class extends XotBaseUuidModel
             {
 =======
+=======
+<<<<<<< .merge_file_isq2er
+            $uuid = new class extends XotBaseUuidModel
+            {
+=======
+<<<<<<< HEAD
+            $uuid = new class extends XotBaseUuidModel
+            {
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< .merge_file_UAp5L6
             $uuid = new class extends XotBaseUuidModel
             {
@@ -1505,12 +2117,23 @@ describe('Xot execute coverage floor 50', function (): void {
             $uuid = new class extends XotBaseUuidModel {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
                 protected $table = 'cache';
             };
             Assert::assertNotEmpty((string) $uuid->getKeyName());
         } catch (\Throwable) {
         }
 
+<<<<<<< .merge_file_QBNgQ8
+=======
+<<<<<<< .merge_file_isq2er
+        $csrf = new class
+        {
+=======
+>>>>>>> .merge_file_pjdptM
 <<<<<<< HEAD
         $csrf = new class
         {
@@ -1522,6 +2145,10 @@ describe('Xot execute coverage floor 50', function (): void {
         $csrf = new class {
 >>>>>>> .merge_file_ayyJ5W
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QBNgQ8
+=======
+>>>>>>> .merge_file_4DIecx
+>>>>>>> .merge_file_pjdptM
             use HasCsrfToken;
         };
         try {

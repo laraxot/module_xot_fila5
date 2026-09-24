@@ -91,10 +91,21 @@ public function processValue(?string $value): string
 ## Collegamenti Correlati
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
+<<<<<<< .merge_file_G7uyAV
 <<<<<<< HEAD
 - [Best Practices](best-practices.md)
 - [Code Standards](code-standards.md)
 =======
+=======
+<<<<<<< .merge_file_taZ4gp
+- [Best Practices](best-practices.md)
+- [Code Standards](code-standards.md)
+=======
+<<<<<<< HEAD
+- [Best Practices](best-practices.md)
+- [Code Standards](code-standards.md)
+=======
+>>>>>>> .merge_file_AWCtz8
 <<<<<<< .merge_file_7A5cYR
 - [Best Practices](best-practices.md)
 - [Code Standards](code-standards.md)
@@ -108,6 +119,10 @@ public function processValue(?string $value): string
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_RPDh8C
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_G7uyAV
+=======
+>>>>>>> .merge_file_HXEDgo
+>>>>>>> .merge_file_AWCtz8
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni

@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_akGGig
 
+=======
+<<<<<<< .merge_file_RidfSE
+=======
+
+>>>>>>> .merge_file_Y2LDD5
+>>>>>>> .merge_file_RtOvwS
 return [
     'navigation' => [
         'name' => 'sessione',

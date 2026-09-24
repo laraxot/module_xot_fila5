@@ -4,9 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< .merge_file_YWY0uR
 <<<<<<< HEAD
 use Mockery;
 =======
+=======
+<<<<<<< .merge_file_QrT7Qx
+use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> .merge_file_V7myRl
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
 use Mockery;
@@ -15,29 +24,53 @@ use Mockery;
 =======
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YWY0uR
+=======
+>>>>>>> .merge_file_b4lilu
+>>>>>>> .merge_file_V7myRl
 use Modules\Xot\Filament\Builders\ColumnBuilder;
 use Modules\Xot\Filament\Builders\FilterBuilder;
 use Modules\Xot\Filament\Support\ColumnBuilder as SupportColumnBuilder;
 use Modules\Xot\Filament\Support\RecordAnchor;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_YWY0uR
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
+=======
+<<<<<<< .merge_file_t2L4B0
+=======
+<<<<<<< .merge_file_QrT7Qx
+use ReflectionClass;
+use ReflectionMethod;
+=======
+>>>>>>> .merge_file_V7myRl
+<<<<<<< HEAD
+use ReflectionClass;
+use ReflectionMethod;
+=======
+<<<<<<< .merge_file_YWY0uR
 =======
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 =======
+>>>>>>> .merge_file_V7myRl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YWY0uR
+=======
+>>>>>>> .merge_file_b4lilu
+>>>>>>> .merge_file_V7myRl
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_YWY0uR
 <<<<<<< HEAD
     Mockery::close();
 =======
@@ -45,12 +78,28 @@ afterEach(function (): void {
 <<<<<<< HEAD
     Mockery::close();
 =======
+=======
+<<<<<<< .merge_file_QrT7Qx
+    Mockery::close();
+=======
+<<<<<<< HEAD
+    Mockery::close();
+=======
+<<<<<<< .merge_file_t2L4B0
+<<<<<<< HEAD
+    Mockery::close();
+=======
+>>>>>>> .merge_file_V7myRl
     \Mockery::close();
 >>>>>>> laraxot/dev
 =======
     \Mockery::close();
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YWY0uR
+=======
+>>>>>>> .merge_file_b4lilu
+>>>>>>> .merge_file_V7myRl
 });
 
 describe('Xot filament support hundred', function (): void {
@@ -60,6 +109,7 @@ describe('Xot filament support hundred', function (): void {
             if (! class_exists($class)) {
                 continue;
             }
+<<<<<<< .merge_file_YWY0uR
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
@@ -67,12 +117,28 @@ describe('Xot filament support hundred', function (): void {
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+=======
+<<<<<<< .merge_file_QrT7Qx
+            $ref = new ReflectionClass($class);
+=======
+<<<<<<< HEAD
+            $ref = new ReflectionClass($class);
+=======
+<<<<<<< .merge_file_t2L4B0
+<<<<<<< HEAD
+            $ref = new ReflectionClass($class);
+=======
+>>>>>>> .merge_file_V7myRl
             $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
 =======
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YWY0uR
+=======
+>>>>>>> .merge_file_b4lilu
+>>>>>>> .merge_file_V7myRl
             $inst = null;
             if (! $ref->isAbstract()) {
                 try {
@@ -81,6 +147,7 @@ describe('Xot filament support hundred', function (): void {
                     $inst = null;
                 }
             }
+<<<<<<< .merge_file_YWY0uR
 <<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
@@ -88,12 +155,28 @@ describe('Xot filament support hundred', function (): void {
 <<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
+=======
+<<<<<<< .merge_file_QrT7Qx
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+<<<<<<< HEAD
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+<<<<<<< .merge_file_t2L4B0
+<<<<<<< HEAD
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+=======
+>>>>>>> .merge_file_V7myRl
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> laraxot/dev
 =======
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YWY0uR
+=======
+>>>>>>> .merge_file_b4lilu
+>>>>>>> .merge_file_V7myRl
                 if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -117,17 +200,31 @@ describe('Xot filament support hundred', function (): void {
                     }
                     if ($method->isStatic()) {
                         $method->invoke(null, ...$args);
+<<<<<<< .merge_file_YWY0uR
+=======
+<<<<<<< .merge_file_QrT7Qx
+=======
+>>>>>>> .merge_file_V7myRl
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YWY0uR
+=======
+>>>>>>> .merge_file_b4lilu
+>>>>>>> .merge_file_V7myRl
                     } elseif ($inst !== null) {
                         $method->invoke($inst, ...$args);
                     }
                     $n++;
                 } catch (\Throwable) {
                     $n++;
+<<<<<<< .merge_file_YWY0uR
+=======
+<<<<<<< .merge_file_QrT7Qx
+=======
+>>>>>>> .merge_file_V7myRl
 <<<<<<< HEAD
 =======
 =======
@@ -144,6 +241,10 @@ describe('Xot filament support hundred', function (): void {
 =======
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YWY0uR
+=======
+>>>>>>> .merge_file_b4lilu
+>>>>>>> .merge_file_V7myRl
                 }
             }
         }

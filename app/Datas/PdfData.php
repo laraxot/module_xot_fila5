@@ -148,11 +148,20 @@ class PdfData extends Data
     }
 
     /**
+<<<<<<< .merge_file_uO4Gvs
 <<<<<<< HEAD
      * @param  array<string, mixed>  $params
 =======
      * @param array<string, mixed> $params
 >>>>>>> laraxot/dev
+=======
+     * <<<<<<< HEAD.
+     *
+     * @param array<string, mixed> $params
+     *                                     =======
+     * @param array<string, mixed> $params
+     *                                     >>>>>>> laraxot/dev
+>>>>>>> .merge_file_XfpzqG
      */
     public function view(string $view, array $params = []): self
     {

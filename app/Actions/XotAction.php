@@ -21,6 +21,11 @@ class XotAction
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_xTN6wx
+=======
+<<<<<<< .merge_file_ik6ped
+=======
+>>>>>>> .merge_file_azSfqa
     public function execute(): void {}
 =======
 <<<<<<< .merge_file_nC2nlc
@@ -30,12 +35,21 @@ class XotAction
     }
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_xTN6wx
+=======
+>>>>>>> .merge_file_qPZTZD
+>>>>>>> .merge_file_azSfqa
     public function execute(): void
     {
     }
 =======
     public function execute(): void {}
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xTN6wx
+=======
+<<<<<<< .merge_file_ik6ped
+=======
+>>>>>>> .merge_file_azSfqa
 >>>>>>> laraxot/dev
 =======
     public function execute(): void
@@ -43,4 +57,8 @@ class XotAction
     }
 >>>>>>> .merge_file_xXOav4
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xTN6wx
+=======
+>>>>>>> .merge_file_qPZTZD
+>>>>>>> .merge_file_azSfqa
 }

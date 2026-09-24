@@ -83,6 +83,11 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
 
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_Kd2FZ7
+=======
+<<<<<<< .merge_file_XK6sQH
+=======
+>>>>>>> .merge_file_PQZSV4
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_n8IdV3
@@ -101,6 +106,10 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Kd2FZ7
+=======
+>>>>>>> .merge_file_676fud
+>>>>>>> .merge_file_PQZSV4
 ## Ripristino 2026-09-17
 
 Scoperto lo stesso giorno del ripristino del bottone Passport "Nuove
@@ -123,6 +132,11 @@ traduzione mancanti. Verificato via reflection su `getHeaderActions()`:
 raggiungibile via `asset()`. PHPStan pulito. Committato questa volta
 nel repository reale del modulo.
 
+<<<<<<< .merge_file_Kd2FZ7
+=======
+<<<<<<< .merge_file_XK6sQH
+=======
+>>>>>>> .merge_file_PQZSV4
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_n8IdV3
@@ -141,6 +155,10 @@ nel repository reale del modulo.
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LJlZTI
+<<<<<<< .merge_file_Kd2FZ7
+=======
+>>>>>>> .merge_file_676fud
+>>>>>>> .merge_file_PQZSV4
 >>>>>>> laraxot/dev
 ## Tasks/Subtasks
 
@@ -148,6 +166,11 @@ nel repository reale del modulo.
       nessun input utente, stesso pattern di `ExecuteArtisanCommandAction`)
 - [x] Task 2: nuovo pulsante header "Composer Dump Autoload" su
 <<<<<<< HEAD
+<<<<<<< .merge_file_Kd2FZ7
+=======
+<<<<<<< .merge_file_XK6sQH
+=======
+>>>>>>> .merge_file_PQZSV4
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
@@ -162,6 +185,10 @@ nel repository reale del modulo.
 <<<<<<< HEAD
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
+<<<<<<< .merge_file_Kd2FZ7
+=======
+>>>>>>> .merge_file_676fud
+>>>>>>> .merge_file_PQZSV4
       `ArtisanCommandsManager.php`, con `requiresConfirmation()`
 - [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
       per il wrap dei pulsanti, registrato in `AdminPanelProvider.php`
@@ -171,6 +198,11 @@ nel repository reale del modulo.
       incomplete class" dopo l'azione, deve completare con successo
 
 =======
+<<<<<<< .merge_file_Kd2FZ7
+=======
+<<<<<<< .merge_file_XK6sQH
+=======
+>>>>>>> .merge_file_PQZSV4
 <<<<<<< .merge_file_n8IdV3
 >>>>>>> laraxot/dev
 =======
@@ -181,6 +213,10 @@ nel repository reale del modulo.
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Kd2FZ7
+=======
+>>>>>>> .merge_file_676fud
+>>>>>>> .merge_file_PQZSV4
       `ArtisanCommandsManager.php`, con `requiresConfirmation()` —
       **ripristinato 2026-09-17**, vedi sopra
 - [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
@@ -213,6 +249,11 @@ svuotata `mail_templates` (40→0 righe, dati sorgente intatti in
 (`survey-pdf-48-invito`) e Vivaservizi (`survey-pdf-44-invito`) tornano
 completi con lo stesso contenuto reale di prima. PHPStan pulito.
 
+<<<<<<< .merge_file_Kd2FZ7
+=======
+<<<<<<< .merge_file_XK6sQH
+=======
+>>>>>>> .merge_file_PQZSV4
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_n8IdV3
@@ -231,6 +272,10 @@ completi con lo stesso contenuto reale di prima. PHPStan pulito.
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LJlZTI
+<<<<<<< .merge_file_Kd2FZ7
+=======
+>>>>>>> .merge_file_676fud
+>>>>>>> .merge_file_PQZSV4
 >>>>>>> laraxot/dev
 ## Dev Notes
 

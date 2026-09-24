@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_4KvQ2s
 
+=======
+<<<<<<< .merge_file_Ea4m3C
+=======
+
+>>>>>>> .merge_file_H0Ls2J
+>>>>>>> .merge_file_yodxdn
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',

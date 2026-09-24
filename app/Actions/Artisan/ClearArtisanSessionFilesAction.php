@@ -19,9 +19,18 @@ class ClearArtisanSessionFilesAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_qPCpNG
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
+=======
+<<<<<<< .merge_file_TYd7bZ
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+=======
+<<<<<<< HEAD
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+=======
+>>>>>>> .merge_file_ZAT8Tw
 <<<<<<< .merge_file_EYQlCp
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
@@ -32,6 +41,10 @@ class ClearArtisanSessionFilesAction
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_7u3lBJ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qPCpNG
+=======
+>>>>>>> .merge_file_Z6dDPk
+>>>>>>> .merge_file_ZAT8Tw
                 File::delete($file->getRealPath());
             }
         }

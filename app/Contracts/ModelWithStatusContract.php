@@ -13,6 +13,7 @@ use Spatie\ModelStatus\Status;
 /**
  * Modules\Xot\Contracts\ModelWithStatusContract.
  *
+<<<<<<< .merge_file_3Zo2ZF
 <<<<<<< HEAD
  * @property int $id
  * @property int|null $user_id
@@ -26,14 +27,31 @@ use Spatie\ModelStatus\Status;
  * @property string $tennant_name
  * @property UserContract|null $user
  * @property string $status
- * @property Collection<int, Status> $statuses
- * @property int|null $statuses_count
+=======
+ * <<<<<<< HEAD
  *
- * @method int|string|null getKey()
- * @method string getRouteKey()
- * @method string getRouteKeyName()
- * @method string getTable()
+ * @property int                     $id
+ * @property int|null                $user_id
+ * @property string|null             $post_type
+ * @property Carbon|null             $created_at
+ * @property Carbon|null             $updated_at
+ * @property string|null             $created_by
+ * @property string|null             $updated_by
+ * @property string|null             $title
+ * @property PivotContract|null      $pivot
+ * @property string                  $tennant_name
+ * @property UserContract|null       $user
+ * @property string                  $status
+>>>>>>> .merge_file_sgKZ38
+ * @property Collection<int, Status> $statuses
+ * @property int|null                $statuses_count
+ *
+ * @method int|string|null                              getKey()
+ * @method string                                       getRouteKey()
+ * @method string                                       getRouteKeyName()
+ * @method string                                       getTable()
  * @method \Illuminate\Database\Eloquent\Builder<Model> with($array)
+<<<<<<< .merge_file_3Zo2ZF
  * @method list<string> getFillable()
  * @method static fill($array)
  * @method \Illuminate\Database\Connection getConnection()
@@ -50,6 +68,24 @@ use Spatie\ModelStatus\Status;
  * =======
  * <<<<<<< HEAD
  * <<<<<<< .merge_file_XXsVLF
+=======
+ * @method list<string>                                 getFillable()
+ * @method static                                       fill($array)
+ * @method \Illuminate\Database\Connection              getConnection()
+ * @method bool                                         update($params)
+ * @method bool|null                                    delete()
+ * @method int                                          detach($params)
+ * @method void                                         attach($params)
+ * @method bool                                         save($params)
+ * @method array<string, mixed>                         treeLabel()
+ * @method array<string, mixed>                         treeSons()
+ * @method array<string, mixed>                         toArray()
+ *                                                                        =======
+ *                                                                        <<<<<<< .merge_file_Ak1OQV
+ *                                                                        =======
+ *                                                                        <<<<<<< HEAD
+ *                                                                        <<<<<<< .merge_file_XXsVLF
+>>>>>>> .merge_file_sgKZ38
  *
  * @property int                     $id
  * @property int|null                $user_id
@@ -209,7 +245,11 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            toArray()
  *                                                                                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
  *                                                                                           >>>>>>> .merge_file_WmDkAR
+<<<<<<< .merge_file_3Zo2ZF
 >>>>>>> laraxot/dev
+=======
+ *                                                                                           >>>>>>> laraxot/dev
+>>>>>>> .merge_file_sgKZ38
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model

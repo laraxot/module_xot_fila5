@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_cnMyRK
 
+=======
+<<<<<<< .merge_file_H6ezZl
+=======
+
+>>>>>>> .merge_file_jLvHxl
+>>>>>>> .merge_file_etQmvB
 return [
     'accepted' => 'The :attribute rmust be accepted.',
     'active_url' => 'The :attribute is not a valid URL.',

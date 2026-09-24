@@ -39,9 +39,18 @@ function chatFilesWithDateInName(): array
         $name = basename($file);
 
         // Qualunque posizione: prefisso, mezzo o coda. La regola le vieta tutte.
+<<<<<<< .merge_file_UNHw0p
 <<<<<<< HEAD
         if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
 =======
+=======
+<<<<<<< .merge_file_ion6NO
+        if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
+=======
+<<<<<<< HEAD
+        if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
+=======
+>>>>>>> .merge_file_w5TeE2
 <<<<<<< .merge_file_X467sT
 <<<<<<< HEAD
         if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
@@ -52,6 +61,10 @@ function chatFilesWithDateInName(): array
         if (1 === preg_match('/\d{4}-\d{2}-\d{2}/', $name)) {
 >>>>>>> .merge_file_oBj08m
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UNHw0p
+=======
+>>>>>>> .merge_file_h6xoCC
+>>>>>>> .merge_file_w5TeE2
             $offenders[] = $name;
         }
     }

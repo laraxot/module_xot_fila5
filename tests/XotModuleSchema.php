@@ -8,9 +8,18 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
+<<<<<<< .merge_file_WtpV7I
 <<<<<<< HEAD
 use Throwable;
 =======
+=======
+<<<<<<< .merge_file_0ZsWpq
+use Throwable;
+=======
+<<<<<<< HEAD
+use Throwable;
+=======
+>>>>>>> .merge_file_tduVuw
 <<<<<<< .merge_file_bNIQvw
 <<<<<<< HEAD
 use Throwable;
@@ -19,6 +28,10 @@ use Throwable;
 =======
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WtpV7I
+=======
+>>>>>>> .merge_file_sOKr4D
+>>>>>>> .merge_file_tduVuw
 
 /**
  * Crea sul database di test le tabelle che il modulo dichiara nelle proprie migration,
@@ -70,6 +83,7 @@ final class XotModuleSchema
     private static array $done = [];
 
     /**
+<<<<<<< .merge_file_WtpV7I
 <<<<<<< HEAD
      * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
 =======
@@ -77,12 +91,28 @@ final class XotModuleSchema
 <<<<<<< HEAD
      * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
 =======
+=======
+<<<<<<< .merge_file_0ZsWpq
+     * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
+=======
+<<<<<<< HEAD
+     * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
+=======
+<<<<<<< .merge_file_bNIQvw
+<<<<<<< HEAD
+     * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
+=======
+>>>>>>> .merge_file_tduVuw
      * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
 >>>>>>> laraxot/dev
 =======
      * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WtpV7I
+=======
+>>>>>>> .merge_file_sOKr4D
+>>>>>>> .merge_file_tduVuw
      */
     public static function ensure(string $module): void
     {
@@ -208,6 +238,12 @@ final class XotModuleSchema
 
             $table = self::tableOf($migration);
 
+<<<<<<< .merge_file_WtpV7I
+=======
+<<<<<<< .merge_file_0ZsWpq
+            if ($table !== null && Schema::hasTable($table)) {
+=======
+>>>>>>> .merge_file_tduVuw
 <<<<<<< HEAD
             if ($table !== null && Schema::hasTable($table)) {
 =======
@@ -221,6 +257,10 @@ final class XotModuleSchema
             if (null !== $table && Schema::hasTable($table)) {
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WtpV7I
+=======
+>>>>>>> .merge_file_sOKr4D
+>>>>>>> .merge_file_tduVuw
                 return;
             }
 
@@ -233,9 +273,18 @@ final class XotModuleSchema
             /** @var callable(): void $up */
             $up = [$migration, 'up'];
             $up();
+<<<<<<< .merge_file_WtpV7I
 <<<<<<< HEAD
         } catch (Throwable) {
 =======
+=======
+<<<<<<< .merge_file_0ZsWpq
+        } catch (Throwable) {
+=======
+<<<<<<< HEAD
+        } catch (Throwable) {
+=======
+>>>>>>> .merge_file_tduVuw
 <<<<<<< .merge_file_bNIQvw
 <<<<<<< HEAD
         } catch (Throwable) {
@@ -246,6 +295,10 @@ final class XotModuleSchema
         } catch (\Throwable) {
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WtpV7I
+=======
+>>>>>>> .merge_file_sOKr4D
+>>>>>>> .merge_file_tduVuw
             // Una migration che non gira lascia semplicemente la tabella assente: i test
             // che la richiedono si salteranno per precondizione. Vedi il docblock.
         }
@@ -265,6 +318,13 @@ final class XotModuleSchema
         try {
             $table = $migration->getTable();
 
+<<<<<<< .merge_file_WtpV7I
+=======
+<<<<<<< .merge_file_0ZsWpq
+            return $table !== '' ? $table : null;
+        } catch (Throwable) {
+=======
+>>>>>>> .merge_file_tduVuw
 <<<<<<< HEAD
             return $table !== '' ? $table : null;
         } catch (Throwable) {
@@ -282,6 +342,10 @@ final class XotModuleSchema
         } catch (\Throwable) {
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WtpV7I
+=======
+>>>>>>> .merge_file_sOKr4D
+>>>>>>> .merge_file_tduVuw
             return null;
         }
     }

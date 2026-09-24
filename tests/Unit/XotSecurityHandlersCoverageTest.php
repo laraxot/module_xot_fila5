@@ -11,9 +11,18 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
+<<<<<<< .merge_file_KRQgs0
 <<<<<<< HEAD
 use Mockery;
 =======
+=======
+<<<<<<< .merge_file_7U1VWY
+use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> .merge_file_TCmah3
 <<<<<<< .merge_file_rvICxF
 <<<<<<< HEAD
 use Mockery;
@@ -22,6 +31,10 @@ use Mockery;
 =======
 >>>>>>> .merge_file_KdsjYU
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRQgs0
+=======
+>>>>>>> .merge_file_MEhsMf
+>>>>>>> .merge_file_TCmah3
 use Modules\Xot\Exceptions\Handlers\HandlersRepository;
 use Modules\Xot\Http\Middleware\SecurityMiddleware;
 use Modules\Xot\Tests\TestCase;
@@ -32,6 +45,12 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_KRQgs0
+=======
+<<<<<<< .merge_file_7U1VWY
+    Mockery::close();
+=======
+>>>>>>> .merge_file_TCmah3
 <<<<<<< HEAD
     Mockery::close();
 =======
@@ -45,6 +64,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_KdsjYU
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRQgs0
+=======
+>>>>>>> .merge_file_MEhsMf
+>>>>>>> .merge_file_TCmah3
 });
 
 describe('Xot security handlers deep', function (): void {
@@ -56,6 +79,7 @@ describe('Xot security handlers deep', function (): void {
         Log::shouldReceive('debug')->zeroOrMoreTimes();
         Log::shouldReceive('error')->zeroOrMoreTimes();
 
+<<<<<<< .merge_file_KRQgs0
 <<<<<<< HEAD
         $mw = new SecurityMiddleware;
 =======
@@ -63,12 +87,28 @@ describe('Xot security handlers deep', function (): void {
 <<<<<<< HEAD
         $mw = new SecurityMiddleware;
 =======
+=======
+<<<<<<< .merge_file_7U1VWY
+        $mw = new SecurityMiddleware;
+=======
+<<<<<<< HEAD
+        $mw = new SecurityMiddleware;
+=======
+<<<<<<< .merge_file_rvICxF
+<<<<<<< HEAD
+        $mw = new SecurityMiddleware;
+=======
+>>>>>>> .merge_file_TCmah3
         $mw = new SecurityMiddleware();
 >>>>>>> laraxot/dev
 =======
         $mw = new SecurityMiddleware();
 >>>>>>> .merge_file_KdsjYU
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRQgs0
+=======
+>>>>>>> .merge_file_MEhsMf
+>>>>>>> .merge_file_TCmah3
         $next = static fn (Request $r): Response => new Response('ok', 200);
         $response = $mw->handle(Request::create('/health', 'GET'), $next);
 
@@ -87,6 +127,12 @@ describe('Xot security handlers deep', function (): void {
         $request = Request::create('/api/flood', 'GET', [], [], [], ['REMOTE_ADDR' => $ip]);
 
         try {
+<<<<<<< .merge_file_KRQgs0
+=======
+<<<<<<< .merge_file_7U1VWY
+            (new SecurityMiddleware)->handle($request, static fn (): Response => new Response('ok'));
+=======
+>>>>>>> .merge_file_TCmah3
 <<<<<<< HEAD
             (new SecurityMiddleware)->handle($request, static fn (): Response => new Response('ok'));
 =======
@@ -100,6 +146,10 @@ describe('Xot security handlers deep', function (): void {
             (new SecurityMiddleware())->handle($request, static fn (): Response => new Response('ok'));
 >>>>>>> .merge_file_KdsjYU
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRQgs0
+=======
+>>>>>>> .merge_file_MEhsMf
+>>>>>>> .merge_file_TCmah3
             Assert::fail('The request exceeded the configured IP rate limit.');
         } catch (HttpException $exception) {
             Assert::assertSame(429, $exception->getStatusCode());
@@ -113,11 +163,20 @@ describe('Xot security handlers deep', function (): void {
         Queue::fake();
         Process::fake();
 
+<<<<<<< .merge_file_KRQgs0
+=======
+<<<<<<< .merge_file_7U1VWY
+=======
+>>>>>>> .merge_file_TCmah3
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_rvICxF
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRQgs0
+=======
+>>>>>>> .merge_file_MEhsMf
+>>>>>>> .merge_file_TCmah3
         $repo = new HandlersRepository;
         $repo->addReporter(static function (\InvalidArgumentException $e): void {});
         $repo->addReporter(static function (\Throwable $e): void {});
@@ -126,6 +185,11 @@ describe('Xot security handlers deep', function (): void {
             return 'r';
         });
         $repo->addConsoleRenderer(static function (string $e): void {}); // builtin type → true
+<<<<<<< .merge_file_KRQgs0
+=======
+<<<<<<< .merge_file_7U1VWY
+=======
+>>>>>>> .merge_file_TCmah3
 <<<<<<< HEAD
 =======
 =======
@@ -148,6 +212,10 @@ describe('Xot security handlers deep', function (): void {
 =======
 >>>>>>> .merge_file_KdsjYU
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRQgs0
+=======
+>>>>>>> .merge_file_MEhsMf
+>>>>>>> .merge_file_TCmah3
 
         $a = new \InvalidArgumentException('a');
         $b = new \RuntimeException('b');

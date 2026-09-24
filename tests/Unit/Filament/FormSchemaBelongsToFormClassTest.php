@@ -9,6 +9,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+=======
+>>>>>>> .merge_file_0klK3L
 use ReflectionClass;
 use Webmozart\Assert\Assert as WebmozartAssert;
 =======
@@ -18,22 +23,40 @@ use Webmozart\Assert\Assert as WebmozartAssert;
 use ReflectionClass;
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
 use Webmozart\Assert\Assert as WebmozartAssert;
 use ReflectionClass;
 =======
 use ReflectionClass;
 use Webmozart\Assert\Assert as WebmozartAssert;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+=======
+>>>>>>> .merge_file_0klK3L
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_jvO4OZ
@@ -42,6 +65,10 @@ use Webmozart\Assert\Assert as WebmozartAssert;
 
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
 uses(TestCase::class);
 
 /**
@@ -84,14 +111,28 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
     foreach (resourceFiles() as $file) {
         $src = file_get_contents($file);
 
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_jvO4OZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
         if (preg_match('/extends\s+XotBaseResource\b/', $src) !== 1) {
             continue;
         }
         if (preg_match('/function\s+getFormSchema\s*\(/', $src) === 1) {
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
 =======
 =======
@@ -101,6 +142,10 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
         if (1 === preg_match('/function\s+getFormSchema\s*\(/', $src)) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             $offenders[] = str_replace(base_path(), '', $file);
         }
     }
@@ -109,6 +154,7 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
 });
 
 test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void {
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
     $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
 =======
@@ -118,6 +164,21 @@ test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void 
     $method = (new \ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+    $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
+=======
+<<<<<<< HEAD
+    $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
+=======
+<<<<<<< .merge_file_jvO4OZ
+    $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
+=======
+    $method = (new \ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
 
     expect($method->isAbstract())->toBeTrue();
     expect($method->isPublic())->toBeTrue();
@@ -126,6 +187,7 @@ test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void 
 test('getFormSchema() e final su XotBaseResource', function (): void {
     // Il final e' cio' che impedisce a una Resource di riprendersi lo schema:
     // senza, la regola tornerebbe affidata alla buona volonta'.
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
     $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
 =======
@@ -135,6 +197,21 @@ test('getFormSchema() e final su XotBaseResource', function (): void {
     $method = (new \ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+    $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
+=======
+<<<<<<< HEAD
+    $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
+=======
+<<<<<<< .merge_file_jvO4OZ
+    $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
+=======
+    $method = (new \ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
 
     expect($method->isFinal())->toBeTrue();
 });
@@ -167,6 +244,7 @@ function xotClassGraph(): array
     /** @var array<string, array{parent: string, file: string}>|null $graph */
     static $graph = null;
 
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
     if ($graph !== null) {
 =======
@@ -176,6 +254,21 @@ function xotClassGraph(): array
     if (null !== $graph) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+    if ($graph !== null) {
+=======
+<<<<<<< HEAD
+    if ($graph !== null) {
+=======
+<<<<<<< .merge_file_jvO4OZ
+    if ($graph !== null) {
+=======
+    if (null !== $graph) {
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
         return $graph;
     }
 
@@ -185,6 +278,7 @@ function xotClassGraph(): array
     );
 
     foreach ($iterator as $fileInfo) {
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
@@ -194,6 +288,21 @@ function xotClassGraph(): array
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+<<<<<<< HEAD
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+<<<<<<< .merge_file_jvO4OZ
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             continue;
         }
 
@@ -206,6 +315,7 @@ function xotClassGraph(): array
         $source = file_get_contents($path);
 
         $ns = [];
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
         if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
 =======
@@ -215,10 +325,31 @@ function xotClassGraph(): array
         if (1 !== preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns)) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+        if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
+=======
+<<<<<<< HEAD
+        if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
+=======
+<<<<<<< .merge_file_jvO4OZ
+        if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
+=======
+        if (1 !== preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns)) {
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             continue;
         }
 
         $cls = [];
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+        if (preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls) !== 1) {
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
         if (preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls) !== 1) {
 =======
@@ -228,6 +359,10 @@ function xotClassGraph(): array
         if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls)) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             continue;
         }
 
@@ -235,15 +370,28 @@ function xotClassGraph(): array
         $className = (string) ($cls[1] ?? '');
         $parent = (string) ($cls[2] ?? '');
 
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
         if ($namespace === '' || $className === '' || $parent === '') {
 =======
+=======
+<<<<<<< .merge_file_yN8Rog
+        if ($namespace === '' || $className === '' || $parent === '') {
+=======
+<<<<<<< HEAD
+        if ($namespace === '' || $className === '' || $parent === '') {
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< .merge_file_jvO4OZ
         if ($namespace === '' || $className === '' || $parent === '') {
 =======
         if ('' === $namespace || '' === $className || '' === $parent) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             continue;
         }
 
@@ -252,6 +400,7 @@ function xotClassGraph(): array
         if (! str_contains($parent, '\\')) {
             $use = [];
             $usePattern = '/^\s*use\s+([\\\\\w]*\\\\'.preg_quote($parent, '/').');/m';
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
             $parent = preg_match($usePattern, $source, $use) === 1
 =======
@@ -261,6 +410,21 @@ function xotClassGraph(): array
             $parent = 1 === preg_match($usePattern, $source, $use)
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+            $parent = preg_match($usePattern, $source, $use) === 1
+=======
+<<<<<<< HEAD
+            $parent = preg_match($usePattern, $source, $use) === 1
+=======
+<<<<<<< .merge_file_jvO4OZ
+            $parent = preg_match($usePattern, $source, $use) === 1
+=======
+            $parent = 1 === preg_match($usePattern, $source, $use)
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
                 ? (string) ($use[1] ?? '')
                 : $namespace.'\\'.$parent;
         }
@@ -312,6 +476,7 @@ test('nessun discendente di XotBaseResource dichiara getFormSchema', function ()
     $violations = [];
 
     foreach (xotDescendantsOf(XotBaseResource::class) as $file) {
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
         if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
 =======
@@ -321,6 +486,21 @@ test('nessun discendente di XotBaseResource dichiara getFormSchema', function ()
         if (1 === preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file))) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+        if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
+=======
+<<<<<<< HEAD
+        if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
+=======
+<<<<<<< .merge_file_jvO4OZ
+        if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
+=======
+        if (1 === preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file))) {
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             $violations[] = str_replace(base_path().'/', '', $file);
         }
     }
@@ -349,6 +529,7 @@ function xotEffectiveFormSchemaBody(string $class): ?string
         $seen[$cursor] = true;
         $match = [];
 
+<<<<<<< .merge_file_naXqw8
 <<<<<<< HEAD
         if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
 =======
@@ -358,6 +539,21 @@ function xotEffectiveFormSchemaBody(string $class): ?string
         if (1 === preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match)) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_yN8Rog
+        if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
+=======
+<<<<<<< HEAD
+        if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
+=======
+<<<<<<< .merge_file_jvO4OZ
+        if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
+=======
+        if (1 === preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match)) {
+>>>>>>> .merge_file_edfXpR
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             return trim((string) ($match[1] ?? ''));
         }
 
@@ -383,6 +579,14 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
         $body = xotEffectiveFormSchemaBody($class);
         $relative = str_replace(base_path().'/', '', $file);
 
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+        if ($body === null) {
+            // Solo una classe astratta puo' lasciare l'obbligo al figlio concreto.
+            if (preg_match('/^\s*abstract\s+class\s/m', file_get_contents($file)) !== 1) {
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
         if ($body === null) {
             // Solo una classe astratta puo' lasciare l'obbligo al figlio concreto.
@@ -398,6 +602,10 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
             if (1 !== preg_match('/^\s*abstract\s+class\s/m', file_get_contents($file))) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
                 $missing[] = $relative;
             }
 
@@ -408,6 +616,12 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
         // e' vuoto quanto `return [];`, e senza questo passaggio passa inosservato.
         $body = trim(preg_replace(['#/\*.*?\*/#s', '#//[^\n]*#'], '', $body));
 
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+        if ($body === '' || preg_match('/^return\s*\[\s*\]\s*;$/', $body) === 1) {
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
         if ($body === '' || preg_match('/^return\s*\[\s*\]\s*;$/', $body) === 1) {
 =======
@@ -417,6 +631,10 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
         if ('' === $body || 1 === preg_match('/^return\s*\[\s*\]\s*;$/', $body)) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             $stubs[] = $relative;
         }
     }
@@ -448,6 +666,12 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
 
         Assert::assertTrue(class_exists($formClass), "Form non caricabile: {$formClass}");
 
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+        if ((new ReflectionClass($formClass))->isAbstract()) {
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
         if ((new ReflectionClass($formClass))->isAbstract()) {
 =======
@@ -457,6 +681,10 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
         if ((new \ReflectionClass($formClass))->isAbstract()) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             continue;
         }
 
@@ -470,6 +698,12 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
             continue;
         }
 
+<<<<<<< .merge_file_naXqw8
+=======
+<<<<<<< .merge_file_yN8Rog
+        if ($schema === []) {
+=======
+>>>>>>> .merge_file_0klK3L
 <<<<<<< HEAD
         if ($schema === []) {
 =======
@@ -479,6 +713,10 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
         if ([] === $schema) {
 >>>>>>> .merge_file_edfXpR
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_naXqw8
+=======
+>>>>>>> .merge_file_eE7w0b
+>>>>>>> .merge_file_0klK3L
             $failures[] = $formClass.' :: schema vuoto';
         }
     }

@@ -17,11 +17,20 @@ class ExceptionHandler
     /**
      * Configura la gestione delle eccezioni.
      *
+<<<<<<< .merge_file_SNZuQV
 <<<<<<< HEAD
      * @param  Exceptions  $exceptions  Configuratore eccezioni Laravel
 =======
      * @param Exceptions $exceptions Configuratore eccezioni Laravel
 >>>>>>> laraxot/dev
+=======
+     * <<<<<<< HEAD
+     *
+     * @param Exceptions $exceptions Configuratore eccezioni Laravel
+     *                               =======
+     * @param Exceptions $exceptions Configuratore eccezioni Laravel
+     *                               >>>>>>> laraxot/dev
+>>>>>>> .merge_file_5niW0x
      */
     public static function handles(Exceptions $exceptions): void
     {

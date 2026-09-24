@@ -28,6 +28,11 @@ Every concrete resource must implement:
 - `protected static ?string $model`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_8BXg1c
+=======
+<<<<<<< .merge_file_Eh2iGQ
+=======
+>>>>>>> .merge_file_MlkCQy
 =======
 <<<<<<< .merge_file_eEoKJY
 =======
@@ -42,10 +47,21 @@ Every concrete resource must implement:
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_SwypVV
+<<<<<<< .merge_file_8BXg1c
 - `public function getFormSchema(): array`
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+- `public function getFormSchema(): array`
+=======
+=======
+>>>>>>> .merge_file_MlkCQy
+- `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> .merge_file_lG1BgE
 - `public function getFormSchema(): array`
 =======
 - `public function getFormSchema(): array`
@@ -53,12 +69,24 @@ Every concrete resource must implement:
 =======
 - `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Eh2iGQ
+=======
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_eEoKJY
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_SwypVV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8BXg1c
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_eEoKJY
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SwypVV
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lG1BgE
+>>>>>>> .merge_file_MlkCQy
 - `public static function getPages(): array`
 
 ### 3. Separation of Concerns

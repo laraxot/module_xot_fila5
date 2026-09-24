@@ -4,9 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Translators;
 
+<<<<<<< .merge_file_TUrIhh
 <<<<<<< HEAD
 class DeepL extends BaseTranslator {}
 =======
+=======
+<<<<<<< .merge_file_DRSLiG
+class DeepL extends BaseTranslator {}
+=======
+<<<<<<< HEAD
+class DeepL extends BaseTranslator {}
+=======
+>>>>>>> .merge_file_iaSqL5
 <<<<<<< .merge_file_FQ6KXy
 <<<<<<< HEAD
 class DeepL extends BaseTranslator {}
@@ -21,3 +30,7 @@ class DeepL extends BaseTranslator
 }
 >>>>>>> .merge_file_DLYAkV
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TUrIhh
+=======
+>>>>>>> .merge_file_aSEtsm
+>>>>>>> .merge_file_iaSqL5

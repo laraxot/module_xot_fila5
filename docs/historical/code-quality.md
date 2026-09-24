@@ -128,6 +128,11 @@ return [
 ```php
 // ✅ CORRECT
 <<<<<<< HEAD
+<<<<<<< .merge_file_iVzkvy
+=======
+<<<<<<< .merge_file_0XrOMP
+=======
+>>>>>>> .merge_file_MkWiR9
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_KOrpiu
@@ -135,10 +140,19 @@ return [
 <<<<<<< HEAD
 >>>>>>> .merge_file_hvQydK
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+>>>>>>> .merge_file_oG08Tw
+>>>>>>> .merge_file_MkWiR9
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+<<<<<<< .merge_file_0XrOMP
+=======
+>>>>>>> .merge_file_MkWiR9
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_KOrpiu
@@ -148,6 +162,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvQydK
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+>>>>>>> .merge_file_oG08Tw
+>>>>>>> .merge_file_MkWiR9
 {
     return [
         'name' => TextInput::make('name'),
@@ -157,6 +175,11 @@ public static function getFormSchema(): array
 
 // ❌ WRONG
 <<<<<<< HEAD
+<<<<<<< .merge_file_iVzkvy
+=======
+<<<<<<< .merge_file_0XrOMP
+=======
+>>>>>>> .merge_file_MkWiR9
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_KOrpiu
@@ -164,10 +187,19 @@ public static function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_hvQydK
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+>>>>>>> .merge_file_oG08Tw
+>>>>>>> .merge_file_MkWiR9
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+<<<<<<< .merge_file_0XrOMP
+=======
+>>>>>>> .merge_file_MkWiR9
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_KOrpiu
@@ -177,6 +209,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvQydK
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+>>>>>>> .merge_file_oG08Tw
+>>>>>>> .merge_file_MkWiR9
 {
     return [
         TextInput::make('name')->label('Nome'),
@@ -382,6 +418,11 @@ This document outlines the best practices for maintaining high code quality with
 - [Filament Extension Pattern Analysis](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Namespace Conventions](../../Patient/project_docs/NAMESPACE_CONVENTIONS.md)
 - [Patient Module - Validation Errors](../../Patient/project_docs/VALIDATION_ERRORS.md)
+<<<<<<< .merge_file_iVzkvy
+=======
+<<<<<<< .merge_file_0XrOMP
+=======
+>>>>>>> .merge_file_MkWiR9
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_KOrpiu
@@ -389,11 +430,20 @@ This document outlines the best practices for maintaining high code quality with
 <<<<<<< HEAD
 >>>>>>> .merge_file_hvQydK
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+>>>>>>> .merge_file_oG08Tw
+>>>>>>> .merge_file_MkWiR9
 - [PHP Strict Types](php-strict-types.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
+<<<<<<< .merge_file_iVzkvy
+=======
+<<<<<<< .merge_file_0XrOMP
+=======
+>>>>>>> .merge_file_MkWiR9
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_KOrpiu
@@ -407,3 +457,7 @@ This document outlines the best practices for maintaining high code quality with
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvQydK
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_iVzkvy
+=======
+>>>>>>> .merge_file_oG08Tw
+>>>>>>> .merge_file_MkWiR9

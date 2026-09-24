@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_vJ9DIT
 
+=======
+<<<<<<< .merge_file_LeIOku
+=======
+
+>>>>>>> .merge_file_03yAnS
+>>>>>>> .merge_file_QgIcHi
 return [
     'password' => 'La contraseña debe tener al menos seis caracteres y coincidir con la de su confirmación.',
     'reset' => 'Su contraseña se ha reiniciado!',

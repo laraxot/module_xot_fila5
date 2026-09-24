@@ -1,9 +1,18 @@
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0
+<<<<<<< .merge_file_M5d6Li
 <<<<<<< HEAD
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
 =======
+=======
+<<<<<<< .merge_file_PGXfAB
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+=======
+<<<<<<< HEAD
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+=======
+>>>>>>> .merge_file_mzFxjp
 <<<<<<< .merge_file_wH2Thh
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
 =======
@@ -14,6 +23,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_DOxBBI
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_M5d6Li
+=======
+>>>>>>> .merge_file_13T7Xe
+>>>>>>> .merge_file_mzFxjp
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -175,6 +188,12 @@ done
 **Stato**: ✅ RISOLTO
 **Autore Fix**: AI Assistant
 **Review**: Pending
+<<<<<<< .merge_file_M5d6Li
+=======
+<<<<<<< .merge_file_PGXfAB
+**Data**: Vedi [CHANGELOG.md](changelog.md)
+=======
+>>>>>>> .merge_file_mzFxjp
 <<<<<<< HEAD
 **Data**: Vedi [CHANGELOG.md](changelog.md)
 =======
@@ -188,3 +207,7 @@ done
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_DOxBBI
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_M5d6Li
+=======
+>>>>>>> .merge_file_13T7Xe
+>>>>>>> .merge_file_mzFxjp

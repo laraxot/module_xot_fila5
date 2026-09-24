@@ -329,6 +329,11 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_IZYc20
+=======
+<<<<<<< .merge_file_ZJ58vv
+=======
+>>>>>>> .merge_file_WI2jvC
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_x8zdl0
@@ -336,10 +341,19 @@ class MyWidget extends XotBaseWidget
 <<<<<<< HEAD
 >>>>>>> .merge_file_J9jXrw
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IZYc20
+=======
+>>>>>>> .merge_file_pIzGf6
+>>>>>>> .merge_file_WI2jvC
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IZYc20
+=======
+<<<<<<< .merge_file_ZJ58vv
+=======
+>>>>>>> .merge_file_WI2jvC
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_x8zdl0
@@ -349,6 +363,10 @@ class MyWidget extends XotBaseWidget
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_J9jXrw
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IZYc20
+=======
+>>>>>>> .merge_file_pIzGf6
+>>>>>>> .merge_file_WI2jvC
     {
         // Filament methods should not be static
     }
@@ -876,6 +894,11 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_IZYc20
+=======
+<<<<<<< .merge_file_ZJ58vv
+=======
+>>>>>>> .merge_file_WI2jvC
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_x8zdl0
@@ -883,10 +906,19 @@ class MyWidget extends XotBaseWidget
 <<<<<<< HEAD
 >>>>>>> .merge_file_J9jXrw
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IZYc20
+=======
+>>>>>>> .merge_file_pIzGf6
+>>>>>>> .merge_file_WI2jvC
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IZYc20
+=======
+<<<<<<< .merge_file_ZJ58vv
+=======
+>>>>>>> .merge_file_WI2jvC
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_x8zdl0
@@ -896,6 +928,10 @@ class MyWidget extends XotBaseWidget
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_J9jXrw
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IZYc20
+=======
+>>>>>>> .merge_file_pIzGf6
+>>>>>>> .merge_file_WI2jvC
     {
         // Filament methods should not be static
     }

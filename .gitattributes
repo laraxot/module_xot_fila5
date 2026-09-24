@@ -1,8 +1,12 @@
-<<<<<<< HEAD
+<<<<<<< .merge_file_NQbeco
 =======
+<<<<<<< .merge_file_hyPNmk
+>>>>>>> .merge_file_F8zAcV
+<<<<<<< HEAD
 <<<<<<< .merge_file_sLH485
 >>>>>>> .merge_file_Ar6BGt
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_TVGy4G
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: docs/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh

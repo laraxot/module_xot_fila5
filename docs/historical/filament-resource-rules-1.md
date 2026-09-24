@@ -65,6 +65,12 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 // ✅ DICHIARARE SOLO QUESTE PROPRIETÀ/METODI
 protected static ?string $model = YourModel::class;
 
+<<<<<<< .merge_file_3xiNaO
+=======
+<<<<<<< .merge_file_ERQm5n
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_hJL2ev
 <<<<<<< .merge_file_jadpwY
 public function getFormSchema(): array
 =======
@@ -74,6 +80,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_9yI28Z
 >>>>>>> .merge_file_GGIhTX
+<<<<<<< .merge_file_3xiNaO
+=======
+>>>>>>> .merge_file_wkISNz
+>>>>>>> .merge_file_hJL2ev
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -168,6 +178,12 @@ class DoctorResource extends XotBaseResource
 {
     protected static ?string $model = Doctor::class;
 
+<<<<<<< .merge_file_3xiNaO
+=======
+<<<<<<< .merge_file_ERQm5n
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_hJL2ev
 <<<<<<< .merge_file_jadpwY
     public function getFormSchema(): array
 =======
@@ -177,6 +193,10 @@ class DoctorResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_9yI28Z
 >>>>>>> .merge_file_GGIhTX
+<<<<<<< .merge_file_3xiNaO
+=======
+>>>>>>> .merge_file_wkISNz
+>>>>>>> .merge_file_hJL2ev
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

@@ -31,11 +31,20 @@ class GenerateTableColumnsByFileAction
     /**
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
+<<<<<<< .merge_file_DfY5wg
 <<<<<<< HEAD
      * @param  File  $file  Il file della risorsa Filament
 =======
      * @param File $file Il file della risorsa Filament
 >>>>>>> laraxot/dev
+=======
+     * <<<<<<< HEAD
+     *
+     * @param File $file Il file della risorsa Filament
+     *                   =======
+     * @param File $file Il file della risorsa Filament
+     *                   >>>>>>> laraxot/dev
+>>>>>>> .merge_file_esmeNR
      */
     public function execute(File $file): void
     {
@@ -114,11 +123,20 @@ class GenerateTableColumnsByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
+<<<<<<< .merge_file_DfY5wg
 <<<<<<< HEAD
      * @param  File  $file  Il file da analizzare
 =======
      * @param File $file Il file da analizzare
 >>>>>>> laraxot/dev
+=======
+     * <<<<<<< HEAD
+     *
+     * @param File $file Il file da analizzare
+     *                   =======
+     * @param File $file Il file da analizzare
+     *                   >>>>>>> laraxot/dev
+>>>>>>> .merge_file_esmeNR
      */
     public function ddFile(File $file): void
     {

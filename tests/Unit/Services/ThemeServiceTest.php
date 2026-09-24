@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_TqXEOW
+=======
+<<<<<<< .merge_file_7p5J3s
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5jcenC
 =======
 <<<<<<< .merge_file_48DKIz
 <<<<<<< HEAD
@@ -16,6 +24,10 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_uDfvoF
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TqXEOW
+=======
+>>>>>>> .merge_file_DjKxum
+>>>>>>> .merge_file_5jcenC
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\Theme\GetThemeAction;
 use Modules\Xot\Actions\Theme\GetThemePathAction;

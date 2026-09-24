@@ -19,13 +19,47 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_q7Ltx8
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_PQpeUE
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kSadHG
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PQpeUE
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_vDwyEH
+>>>>>>> .merge_file_L2eaoI
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   public function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_afqZXd
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_q7Ltx8
 <<<<<<< HEAD
 =======
 =======
@@ -45,6 +79,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_afqZXd
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kSadHG
+>>>>>>> .merge_file_L2eaoI
    {
        return [
            TextInput::make('nome')->required(),

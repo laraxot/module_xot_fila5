@@ -1,4 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_nR3rfu
+=======
+<<<<<<< .merge_file_H2yWqO
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HFMg01
 <<<<<<< .merge_file_PiD4kM
 =======
 <<<<<<< HEAD
@@ -20,6 +29,10 @@
 >>>>>>> .merge_file_7dtaMf
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_IGTrVd
+<<<<<<< .merge_file_nR3rfu
+=======
+>>>>>>> .merge_file_itsoTC
+>>>>>>> .merge_file_HFMg01
 ---
 title: "Index"
 type: reference
@@ -29,6 +42,14 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_nR3rfu
+=======
+<<<<<<< .merge_file_H2yWqO
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HFMg01
 <<<<<<< .merge_file_PiD4kM
 =======
 <<<<<<< .merge_file_flbgG0
@@ -49,6 +70,10 @@ updated: 2026-08-24
 >>>>>>> .merge_file_7dtaMf
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_IGTrVd
+<<<<<<< .merge_file_nR3rfu
+=======
+>>>>>>> .merge_file_itsoTC
+>>>>>>> .merge_file_HFMg01
 # Xot Module - commands Index
 
 ## Purpose

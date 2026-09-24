@@ -42,6 +42,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
+<<<<<<< .merge_file_kCpxBN
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
@@ -49,6 +50,18 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
+=======
+<<<<<<< .merge_file_IfW84N
+    public function getFormSchema(): array { /* ... */ }
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array { /* ... */ }
+=======
+>>>>>>> .merge_file_zeJif0
 <<<<<<< .merge_file_pb4y2z
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
@@ -62,6 +75,10 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+<<<<<<< .merge_file_kCpxBN
+=======
+>>>>>>> .merge_file_8WlnOm
+>>>>>>> .merge_file_zeJif0
 >>>>>>> laraxot/dev
 
     // ❌ VIETATO - ERRORE GRAVE
@@ -164,6 +181,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_kCpxBN
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -171,6 +189,18 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_IfW84N
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_zeJif0
 <<<<<<< .merge_file_pb4y2z
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -184,6 +214,10 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+<<<<<<< .merge_file_kCpxBN
+=======
+>>>>>>> .merge_file_8WlnOm
+>>>>>>> .merge_file_zeJif0
 >>>>>>> laraxot/dev
     {
         return [
@@ -350,6 +384,7 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_kCpxBN
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -357,6 +392,18 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_IfW84N
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_zeJif0
 <<<<<<< .merge_file_pb4y2z
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -370,6 +417,10 @@ class YourResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+<<<<<<< .merge_file_kCpxBN
+=======
+>>>>>>> .merge_file_8WlnOm
+>>>>>>> .merge_file_zeJif0
 >>>>>>> laraxot/dev
     {
         return [
@@ -442,6 +493,7 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_kCpxBN
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -449,6 +501,18 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_IfW84N
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_zeJif0
 <<<<<<< .merge_file_pb4y2z
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -462,6 +526,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+<<<<<<< .merge_file_kCpxBN
+=======
+>>>>>>> .merge_file_8WlnOm
+>>>>>>> .merge_file_zeJif0
 >>>>>>> laraxot/dev
 
 /** @return array<string, PageRegistration> */

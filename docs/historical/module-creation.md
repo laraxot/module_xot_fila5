@@ -185,9 +185,18 @@ NomeModulo/
 ## Link Utili
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [blade-component-registration.md](blade-component-registration.md)
+<<<<<<< .merge_file_AQDumD
 <<<<<<< HEAD
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 =======
+=======
+<<<<<<< .merge_file_npDdZB
+- [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
+=======
+<<<<<<< HEAD
+- [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
+=======
+>>>>>>> .merge_file_ga7T3q
 <<<<<<< .merge_file_6tWZtT
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 =======
@@ -198,5 +207,9 @@ NomeModulo/
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_sJSFjt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_AQDumD
+=======
+>>>>>>> .merge_file_rmgINY
+>>>>>>> .merge_file_ga7T3q
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)

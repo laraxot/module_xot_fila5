@@ -2,9 +2,18 @@
 
 ## 📋 Introduzione
 
+<<<<<<< .merge_file_ncNh1b
 <<<<<<< HEAD
 Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
 =======
+=======
+<<<<<<< .merge_file_wKGtN8
+Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
+=======
+<<<<<<< HEAD
+Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
+=======
+>>>>>>> .merge_file_m4kIiX
 <<<<<<< .merge_file_Y6bClQ
 Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
 =======
@@ -16,6 +25,10 @@ Questo documento fornisce best practices per implementare Filament Nesting in pr
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_aOT69s
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ncNh1b
+=======
+>>>>>>> .merge_file_UPm0HM
+>>>>>>> .merge_file_m4kIiX
 
 ---
 
@@ -425,6 +438,7 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 - **Filament Nesting**: https://filamentphp.com/docs/5.x/resources/nesting
 - **Filament Relation Managers**: https://filamentphp.com/docs/5.x/resources/managing-relationships
 - **XotBaseResource**: `/Modules/Xot/docs/filament/resources.md`
+<<<<<<< .merge_file_ncNh1b
 <<<<<<< HEAD
 - **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
 =======
@@ -434,16 +448,40 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 <<<<<<< HEAD
 - **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
 =======
+=======
+<<<<<<< .merge_file_wKGtN8
+- **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
+=======
+<<<<<<< HEAD
+- **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
+=======
+<<<<<<< .merge_file_Y6bClQ
+- **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
+=======
+<<<<<<< HEAD
+- **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
+=======
+>>>>>>> .merge_file_m4kIiX
 - **healthcare_app Nesting Strategy**: `/Modules/healthcare_app/docs/filament-nesting-strategy.md`
 - **ExternalProject Nesting Strategy**: `/Modules/ExternalProject/docs/filament-nesting-strategy.md`
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_aOT69s
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ncNh1b
+=======
+>>>>>>> .merge_file_UPm0HM
+>>>>>>> .merge_file_m4kIiX
 
 ---
 
 **Ultimo aggiornamento**: 23 Gennaio 2026  
 **Stato**: Documentazione Best Practices  
+<<<<<<< .merge_file_ncNh1b
+=======
+<<<<<<< .merge_file_wKGtN8
+**Applicabile a**: Tutti i moduli Laraxot
+=======
+>>>>>>> .merge_file_m4kIiX
 <<<<<<< HEAD
 **Applicabile a**: Tutti i moduli Laraxot
 =======
@@ -457,3 +495,7 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_aOT69s
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ncNh1b
+=======
+>>>>>>> .merge_file_UPm0HM
+>>>>>>> .merge_file_m4kIiX

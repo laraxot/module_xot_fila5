@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_OdyE3F
+=======
+<<<<<<< .merge_file_uu1iS0
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_h7717s
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_YeLZZ3
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Vkj6JN
 >>>>>>> .merge_file_KRvkT7
+<<<<<<< .merge_file_OdyE3F
+=======
+>>>>>>> .merge_file_x494jk
+>>>>>>> .merge_file_h7717s
 ---
 name: 01-refactor-table-trans
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_OdyE3F
+=======
+<<<<<<< .merge_file_uu1iS0
+=======
+>>>>>>> .merge_file_h7717s
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_OdyE3F
+=======
+>>>>>>> .merge_file_x494jk
+>>>>>>> .merge_file_h7717s
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_OdyE3F
+=======
+<<<<<<< .merge_file_uu1iS0
+=======
+=======
+>>>>>>> .merge_file_h7717s
 <<<<<<< .merge_file_YeLZZ3
 =======
 <<<<<<< .merge_file_byfRWx
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Vkj6JN
 >>>>>>> .merge_file_KRvkT7
+<<<<<<< .merge_file_OdyE3F
+=======
+>>>>>>> .merge_file_x494jk
+>>>>>>> .merge_file_h7717s
 >>>>>>> laraxot/dev
 # BMAD Story 01 — Rimuovere TransTrait ridondante
 

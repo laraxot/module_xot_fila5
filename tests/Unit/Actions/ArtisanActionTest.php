@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_ZnGm4c
+=======
+<<<<<<< .merge_file_ivEPre
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_H3KhK5
 =======
 <<<<<<< .merge_file_HJVv8V
 <<<<<<< HEAD
@@ -16,6 +24,10 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_rXnulU
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ZnGm4c
+=======
+>>>>>>> .merge_file_qtr5ZV
+>>>>>>> .merge_file_H3KhK5
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;

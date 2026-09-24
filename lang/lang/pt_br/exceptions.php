@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Hemzhj
 
+=======
+<<<<<<< .merge_file_l2FaEo
+=======
+
+>>>>>>> .merge_file_sthMx4
+>>>>>>> .merge_file_JTE4BR
 return [
     /*
       |--------------------------------------------------------------------------

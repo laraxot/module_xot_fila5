@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_fBoqpS
 
+=======
+<<<<<<< .merge_file_lZ7578
+=======
+
+>>>>>>> .merge_file_zAZmlq
+>>>>>>> .merge_file_OnQd0B
 return [
     'general' => [
         'actions' => 'Action',

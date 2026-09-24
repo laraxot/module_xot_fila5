@@ -36,6 +36,7 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
 /**
  * Perform a GET request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $options
@@ -44,6 +45,18 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
  * @param array<string, mixed>            $options
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $options
+ *                                                 =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $options
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function get(string|array $uri = '', array $options = []): TestResponse
@@ -54,6 +67,7 @@ function get(string|array $uri = '', array $options = []): TestResponse
 /**
  * Perform a POST request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -64,6 +78,20 @@ function get(string|array $uri = '', array $options = []): TestResponse
  * @param array<string, mixed>            $options
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $options
+ *                                                 =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $options
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function post(string|array $uri, array $data = [], array $options = []): TestResponse
@@ -74,6 +102,7 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
 /**
  * Perform a PUT request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -82,6 +111,18 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
  * @param array<string, mixed>            $data
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *                                              =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function put(string|array $uri, array $data = []): TestResponse
@@ -92,6 +133,7 @@ function put(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a PATCH request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -100,6 +142,18 @@ function put(string|array $uri, array $data = []): TestResponse
  * @param array<string, mixed>            $data
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *                                              =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function patch(string|array $uri, array $data = []): TestResponse
@@ -110,12 +164,23 @@ function patch(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a DELETE request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
 =======
  * @param string|array<int|string, mixed> $uri
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ *                                             =======
+ * @param string|array<int|string, mixed> $uri
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function delete(string|array $uri): TestResponse
@@ -126,12 +191,23 @@ function delete(string|array $uri): TestResponse
 /**
  * Perform a HEAD request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
 =======
  * @param string|array<int|string, mixed> $uri
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ *                                             =======
+ * @param string|array<int|string, mixed> $uri
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function head(string|array $uri): TestResponse
@@ -142,12 +218,23 @@ function head(string|array $uri): TestResponse
 /**
  * Perform an OPTIONS request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
 =======
  * @param string|array<int|string, mixed> $uri
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ *                                             =======
+ * @param string|array<int|string, mixed> $uri
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function options(string|array $uri): TestResponse
@@ -158,6 +245,7 @@ function options(string|array $uri): TestResponse
 /**
  * Perform a JSON GET request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $headers
@@ -166,6 +254,18 @@ function options(string|array $uri): TestResponse
  * @param array<string, mixed>            $headers
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $headers
+ *                                                 =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $headers
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function getJson(string|array $uri, array $headers = []): TestResponse
@@ -176,6 +276,7 @@ function getJson(string|array $uri, array $headers = []): TestResponse
 /**
  * Perform a JSON POST request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -186,6 +287,20 @@ function getJson(string|array $uri, array $headers = []): TestResponse
  * @param array<string, mixed>            $headers
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *                                                 =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function postJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -196,6 +311,7 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
 /**
  * Perform a JSON PUT request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -206,6 +322,20 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
  * @param array<string, mixed>            $headers
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *                                                 =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function putJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -216,6 +346,7 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
 /**
  * Perform a JSON PATCH request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -226,6 +357,20 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
  * @param array<string, mixed>            $headers
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *                                                 =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function patchJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -236,6 +381,7 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
 /**
  * Perform a JSON DELETE request.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
@@ -246,6 +392,20 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
  * @param array<string, mixed>            $headers
  *
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *                                                 =======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+ * >>>>>>> laraxot/dev
+ *
+>>>>>>> .merge_file_KaDpvB
  * @return TestResponse<Response>
  */
 function deleteJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -306,11 +466,20 @@ function afterEach(\Closure $closure): AfterEachCall
 /**
  * Define a test class.
  *
+<<<<<<< .merge_file_FyXFSn
 <<<<<<< HEAD
  * @param  class-string  ...$classes
 =======
  * @param class-string ...$classes
 >>>>>>> laraxot/dev
+=======
+ * <<<<<<< HEAD
+ *
+ * @param class-string ...$classes
+ *                                 =======
+ * @param class-string ...$classes
+ *                                 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_KaDpvB
  */
 function uses(string ...$classes): UsesCall
 {

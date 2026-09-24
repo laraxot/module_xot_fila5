@@ -8,6 +8,12 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
+<<<<<<< .merge_file_7WR5Rw
+=======
+<<<<<<< .merge_file_KuPHIE
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_siGLDh
 <<<<<<< .merge_file_MNCtA1
 public function getFormSchema(): array
 =======
@@ -17,6 +23,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+<<<<<<< .merge_file_7WR5Rw
+=======
+>>>>>>> .merge_file_gUhqpX
+>>>>>>> .merge_file_siGLDh
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -33,6 +43,12 @@ public static function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< .merge_file_7WR5Rw
+=======
+<<<<<<< .merge_file_KuPHIE
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_siGLDh
 <<<<<<< .merge_file_MNCtA1
 public function getFormSchema(): array
 =======
@@ -42,6 +58,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+<<<<<<< .merge_file_7WR5Rw
+=======
+>>>>>>> .merge_file_gUhqpX
+>>>>>>> .merge_file_siGLDh
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -113,6 +133,12 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< .merge_file_7WR5Rw
+=======
+<<<<<<< .merge_file_KuPHIE
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_siGLDh
 <<<<<<< .merge_file_MNCtA1
     public function getFormSchema(): array
 =======
@@ -122,6 +148,10 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+<<<<<<< .merge_file_7WR5Rw
+=======
+>>>>>>> .merge_file_gUhqpX
+>>>>>>> .merge_file_siGLDh
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -136,6 +166,12 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< .merge_file_7WR5Rw
+=======
+<<<<<<< .merge_file_KuPHIE
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_siGLDh
 <<<<<<< .merge_file_MNCtA1
     public function getFormSchema(): array
 =======
@@ -145,6 +181,10 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+<<<<<<< .merge_file_7WR5Rw
+=======
+>>>>>>> .merge_file_gUhqpX
+>>>>>>> .merge_file_siGLDh
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

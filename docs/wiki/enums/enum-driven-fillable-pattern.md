@@ -145,10 +145,20 @@ class YourModel extends BaseModel
 
 ### 5. **Consistency**
 - Same pattern across all models
+<<<<<<< .merge_file_lW9r9d
 <<<<<<< HEAD
 - <nome progetto>able code structure
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_hGucVx
+- <nome progetto>able code structure
+=======
+<<<<<<< HEAD
+- <nome progetto>able code structure
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_9PhgWu
 <<<<<<< .merge_file_QTum9m
 =======
 - <nome progetto>able code structure
@@ -164,6 +174,10 @@ class YourModel extends BaseModel
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_yibIJO
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_lW9r9d
+=======
+>>>>>>> .merge_file_uczDiz
+>>>>>>> .merge_file_9PhgWu
 - Easier onboarding for developers
 
 ## Migration Strategy
