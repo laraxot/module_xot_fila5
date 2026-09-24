@@ -153,45 +153,7 @@ public function boot()
 abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
-<<<<<<< HEAD
-<<<<<<< .merge_file_cQ6mIe
-=======
-<<<<<<< .merge_file_uEjLKS
-=======
->>>>>>> .merge_file_7U8ktx
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_A91uKJ
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_4zQpju
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_cQ6mIe
-=======
->>>>>>> .merge_file_UyFTj7
->>>>>>> .merge_file_7U8ktx
-    public function getFormSchema(): array { /* ... */ }
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_cQ6mIe
-=======
-<<<<<<< .merge_file_uEjLKS
-=======
->>>>>>> .merge_file_7U8ktx
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_A91uKJ
-=======
-=======
     public static function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_4zQpju
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_cQ6mIe
-=======
->>>>>>> .merge_file_UyFTj7
->>>>>>> .merge_file_7U8ktx
     public static function getPages(): array { /* ... */ }
 
     // ❌ METODI VIETATI - Devono essere solo nelle pagine List

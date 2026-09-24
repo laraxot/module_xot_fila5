@@ -763,60 +763,13 @@ protected function getData(): array
 ### PHPStan Level 10 Compliance
 ```bash
 # ✅ Zero errori dopo refactoring
-<<<<<<< .merge_file_KgRg3n
-<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-=======
-<<<<<<< .merge_file_P8jP8e
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-<<<<<<< HEAD
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
->>>>>>> .merge_file_88V8ym
-<<<<<<< .merge_file_KRtkJe
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-<<<<<<< HEAD
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TkhYUu
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_KgRg3n
-=======
->>>>>>> .merge_file_deL15m
->>>>>>> .merge_file_88V8ym
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
-<<<<<<< .merge_file_KgRg3n
-=======
-<<<<<<< .merge_file_P8jP8e
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
-=======
->>>>>>> .merge_file_88V8ym
-<<<<<<< HEAD
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
-=======
-<<<<<<< .merge_file_KRtkJe
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
-=======
-<<<<<<< HEAD
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
-=======
-./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TkhYUu
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_KgRg3n
-=======
->>>>>>> .merge_file_deL15m
->>>>>>> .merge_file_88V8ym
 ```
 
 ### Performance Metrics

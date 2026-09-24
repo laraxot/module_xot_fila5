@@ -97,45 +97,7 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_06vFbY
-=======
-<<<<<<< .merge_file_aah9IK
-=======
->>>>>>> .merge_file_fw0Q95
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_m6raoP
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_AwPKDe
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_06vFbY
-=======
->>>>>>> .merge_file_SQz3Oj
->>>>>>> .merge_file_fw0Q95
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_06vFbY
-=======
-<<<<<<< .merge_file_aah9IK
-=======
->>>>>>> .merge_file_fw0Q95
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_m6raoP
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_AwPKDe
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_06vFbY
-=======
->>>>>>> .merge_file_SQz3Oj
->>>>>>> .merge_file_fw0Q95
     {
         return static::getFormSchemaImplementation();
     }

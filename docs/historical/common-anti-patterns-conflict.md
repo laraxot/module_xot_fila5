@@ -328,45 +328,7 @@ public function canAccess($user): bool
 // ❌ ANTI-PATTERN
 class MyWidget extends XotBaseWidget
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_vKDBzr
-=======
-<<<<<<< .merge_file_1VNUL4
-=======
->>>>>>> .merge_file_gyOSgC
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_wUVVIp
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_JPZl1K
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_vKDBzr
-=======
->>>>>>> .merge_file_iw8zNw
->>>>>>> .merge_file_gyOSgC
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_vKDBzr
-=======
-<<<<<<< .merge_file_1VNUL4
-=======
->>>>>>> .merge_file_gyOSgC
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_wUVVIp
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_JPZl1K
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_vKDBzr
-=======
->>>>>>> .merge_file_iw8zNw
->>>>>>> .merge_file_gyOSgC
     {
         // Filament methods should not be static
     }
