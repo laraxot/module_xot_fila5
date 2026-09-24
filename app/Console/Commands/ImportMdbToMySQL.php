@@ -89,11 +89,11 @@ class ImportMdbToMySQL extends Command
     /**
      * Importa le tabelle in MySQL.
      *
-<<<<<<< HEAD
-     * @param  array<int, string>  $tables
-=======
-     * <<<<<<< .merge_file_cbpLum
+     * <<<<<<< HEAD
      *
+     * @param array<int, string> $tables
+     *                                   =======
+     *                                   <<<<<<< .merge_file_cbpLum
      * @param array<int, string> $tables
      *                                   =======
      *                                   <<<<<<< HEAD
@@ -114,7 +114,7 @@ class ImportMdbToMySQL extends Command
      * @param array<int, string> $tables
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_aQREAj
->>>>>>> laraxot/dev
+     *                                   >>>>>>> laraxot/dev
      */
     private function importTablesIntoMySQL(array $tables, string $mysqlDb): void
     {

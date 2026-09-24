@@ -16,30 +16,28 @@ final class GetFieldnamesByTablenameAction
     /**
      * Get column names from a table with specific database connection.
      *
-<<<<<<< HEAD
-     * @param  string  $table  Table name to get columns from
-     * @param  string|null  $connectionName  Database connection name (optional)
-     * @return list<string>
+     * <<<<<<< HEAD
+     *
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
+     * @param string      $table          Table name to get columns from
+     * @param string|null $connectionName Database connection name (optional)
      *
      * @throws \InvalidArgumentException
-=======
-     * <<<<<<< .merge_file_9lJc4S
-     * =======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_Jfzn7Q
-     * >>>>>>> .merge_file_G3Zryu
-     *
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     *
+     *                                   =======
+     *                                   <<<<<<< .merge_file_9lJc4S
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     *                                   <<<<<<< .merge_file_Jfzn7Q
+     *                                   >>>>>>> .merge_file_G3Zryu
      * @throws \InvalidArgumentException
      *                                   <<<<<<< .merge_file_9lJc4S
      *                                   =======
@@ -58,13 +56,14 @@ final class GetFieldnamesByTablenameAction
      * @return list<string>
      * @return list<string>
      * @return list<string>
+     * @return list<string>
      *                      >>>>>>> laraxot/dev
      *                      >>>>>>> .merge_file_46hKcJ
      *                      >>>>>>> .merge_file_hUuUgC
      *                      =======
      * @return list<string>
      *                      >>>>>>> .merge_file_G3Zryu
->>>>>>> laraxot/dev
+     *                      >>>>>>> laraxot/dev
      */
     public function execute(string $table, ?string $connectionName = null): array
     {

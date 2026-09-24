@@ -113,12 +113,14 @@ class ModulesOverviewWidget extends XotBaseWidget
     /**
      * Ottiene la descrizione per un modulo.
      *
-<<<<<<< HEAD
-     * @param  string  $module  Nome del modulo
-=======
+     * <<<<<<< HEAD
+     *
+     * @param string $module Nome del modulo
+     *                       =======
      * @param string $module Nome del modulo
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return string Descrizione del modulo
      */
     private function getModuleDescription(string $module): string
