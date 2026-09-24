@@ -15,6 +15,7 @@ class GetViewNameSpacePathAction
     /**
      * Ottiene il percorso di un namespace di vista.
      *
+<<<<<<< HEAD
      * <<<<<<< .merge_file_LSM7m3
      *
      * @param string $ns Il namespace della vista
@@ -33,6 +34,9 @@ class GetViewNameSpacePathAction
      *
      * >>>>>>> .merge_file_WayvAh
      *
+=======
+     * @param  string  $ns  Il namespace della vista
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      * @return string|null Il percorso del namespace o null se non trovato
      */
     public function execute(string $ns): ?string

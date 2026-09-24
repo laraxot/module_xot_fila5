@@ -18,6 +18,7 @@ class CountAction
     /**
      * Execute the count action for the given model class.
      *
+<<<<<<< HEAD
      * <<<<<<< .merge_file_oQ7x6d
      *
      * @param class-string<Model> $modelClass The fully qualified model class name
@@ -42,6 +43,12 @@ class CountAction
      *             >>>>>>> laraxot/dev
      *             >>>>>>> .merge_file_psG9l8
      *             >>>>>>> .merge_file_iXl7Ge
+=======
+     * @param  class-string<Model>  $modelClass  The fully qualified model class name
+     * @return int The total count of records
+     *
+     * @throws \InvalidArgumentException If model class is invalid or not found
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      */
     public function execute(string $modelClass): int
     {

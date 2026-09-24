@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 interface MorphToOneRelationContract
 {
     /**
+<<<<<<< HEAD
      * <<<<<<< .merge_file_2E1dgH.
      *
      * @param array<string, mixed> $attributes
@@ -28,6 +29,9 @@ interface MorphToOneRelationContract
      *                                         >>>>>>> laraxot/dev
      *                                         >>>>>>> .merge_file_bDJ3Gs
      *                                         >>>>>>> .merge_file_JwvZ1t
+=======
+     * @param  array<string, mixed>  $attributes
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      */
     public function create(array $attributes): Model;
 }

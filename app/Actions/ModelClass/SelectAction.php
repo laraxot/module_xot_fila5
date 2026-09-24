@@ -15,6 +15,7 @@ class SelectAction
     /**
      * Execute a select query.
      *
+<<<<<<< HEAD
      * <<<<<<< .merge_file_3M00Bo
      *
      * @param class-string<Model> $modelClass
@@ -33,6 +34,9 @@ class SelectAction
      *
      * >>>>>>> .merge_file_vbvucT
      *
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      * @return array<mixed>
      */
     public function execute(string $modelClass, string $sql): array
