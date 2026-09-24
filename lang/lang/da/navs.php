@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_kiJIVf
 
-=======
-<<<<<<< .merge_file_XPMq4D
-=======
-
->>>>>>> .merge_file_OHDcvV
->>>>>>> .merge_file_AafIYQ
 return [
     'general' => [
         'home' => 'Hjem',

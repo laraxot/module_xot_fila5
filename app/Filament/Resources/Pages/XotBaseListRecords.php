@@ -31,20 +31,7 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseListRecords extends FilamentListRecords
 {
     /**
-     * <<<<<<< .merge_file_O3Ssso
-     * <<<<<<< HEAD.
-     *
      * @param array<string, bool|float|int|string|null> $params
-     *                                                          =======
-     * @param array<string, bool|float|int|string|null> $params
-     *                                                          >>>>>>> laraxot/dev
-     *                                                          =======
-     *                                                          <<<<<<< HEAD
-     * @param array<string, bool|float|int|string|null> $params
-     *                                                          =======
-     * @param array<string, bool|float|int|string|null> $params
-     *                                                          >>>>>>> laraxot/dev
-     *                                                          >>>>>>> .merge_file_89ITAZ
      */
     public static function trans(string $key, array $params = []): string
     {

@@ -23,11 +23,7 @@ class FieldRefreshAction extends XotBaseAction
             ->tooltip('Ricalcola valore')
             ->action(function (mixed $record, Set $set): void {
                 $name = $this->getName();
-<<<<<<< HEAD
                 if ($name === null) {
-=======
-                if (null === $name) {
->>>>>>> laraxot/dev
                     return;
                 }
 

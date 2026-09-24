@@ -1,71 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_ucuiQy
 declare(strict_types=1);
-=======
-<<<<<<< .merge_file_TyHJQO
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> .merge_file_3spvKi
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> .merge_file_F8dg7R
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ucuiQy
-=======
->>>>>>> .merge_file_FHLYNr
->>>>>>> .merge_file_3spvKi
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_ucuiQy
-=======
-<<<<<<< .merge_file_TyHJQO
-=======
->>>>>>> .merge_file_3spvKi
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_ucuiQy
-=======
->>>>>>> .merge_file_FHLYNr
->>>>>>> .merge_file_3spvKi
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ucuiQy
-=======
-<<<<<<< .merge_file_TyHJQO
-=======
->>>>>>> .merge_file_3spvKi
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_F8dg7R
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ucuiQy
-=======
->>>>>>> .merge_file_FHLYNr
->>>>>>> .merge_file_3spvKi
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
@@ -109,41 +48,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
-<<<<<<< HEAD
-<<<<<<< .merge_file_ucuiQy
-=======
-<<<<<<< .merge_file_TyHJQO
-=======
->>>>>>> .merge_file_3spvKi
-                            $c++;
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
                             ++$c;
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_ucuiQy
-=======
->>>>>>> .merge_file_FHLYNr
->>>>>>> .merge_file_3spvKi
-                            ++$c;
-=======
-                            $c++;
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ucuiQy
-=======
-<<<<<<< .merge_file_TyHJQO
-=======
->>>>>>> .merge_file_3spvKi
->>>>>>> laraxot/dev
-=======
-                            ++$c;
->>>>>>> .merge_file_F8dg7R
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ucuiQy
-=======
->>>>>>> .merge_file_FHLYNr
->>>>>>> .merge_file_3spvKi
                         }
                     }
                     if ($save) {
@@ -158,41 +63,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_ucuiQy
-=======
-<<<<<<< .merge_file_TyHJQO
-=======
->>>>>>> .merge_file_3spvKi
-     * @param  list<string>  $fields
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
      * @param list<string> $fields
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_ucuiQy
-=======
->>>>>>> .merge_file_FHLYNr
->>>>>>> .merge_file_3spvKi
-     * @param list<string> $fields
-=======
-     * @param  list<string>  $fields
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ucuiQy
-=======
-<<<<<<< .merge_file_TyHJQO
-=======
->>>>>>> .merge_file_3spvKi
->>>>>>> laraxot/dev
-=======
-     * @param list<string> $fields
->>>>>>> .merge_file_F8dg7R
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ucuiQy
-=======
->>>>>>> .merge_file_FHLYNr
->>>>>>> .merge_file_3spvKi
      */
     public function setFields(array $fields): self
     {

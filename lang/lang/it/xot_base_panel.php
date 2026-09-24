@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_eCpA2f
 
-=======
-<<<<<<< .merge_file_h0JuiJ
-=======
-
->>>>>>> .merge_file_vXKD97
->>>>>>> .merge_file_2AaOxi
 return [
     'A' => 'A',
     'B' => 'B',

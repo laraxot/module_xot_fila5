@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Regole Generali sulle State Machine
 
 ## Transizioni
@@ -16,15 +12,3 @@
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: state-machine
-canonical: ../../../Themes/docs/shared-components/state-machine-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/state-machine-1.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

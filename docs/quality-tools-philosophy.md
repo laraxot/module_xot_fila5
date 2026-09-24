@@ -809,15 +809,7 @@ else {
 - [eloquent-models-critical-rules.md](./eloquent-models-critical-rules.md) - Regole critiche
 - [property-exists-elimination-philosophy.md](./property-exists-elimination-philosophy.md) - Filosofia
 - [phpstan/](./phpstan/) - PHPStan guides
-<<<<<<< HEAD
 - [../../../docs/quality/](../../../docs/quality/) - Root quality docs
-=======
-<<<<<<< HEAD
-- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
-=======
-- [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -847,12 +839,4 @@ else {
 **Status**: 📘 Master Reference Document
 **Revision**: 1.0
 
-<<<<<<< HEAD
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
-=======
-<<<<<<< HEAD
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

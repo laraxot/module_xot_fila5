@@ -17,20 +17,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Handle an incoming request.
      *
-     * <<<<<<< .merge_file_q07k8h
-     * <<<<<<< HEAD
-     *
      * @param \Closure(Request):Response $next
-     *                                         =======
-     * @param \Closure(Request):Response $next
-     *                                         >>>>>>> laraxot/dev
-     *                                         =======
-     *                                         <<<<<<< HEAD
-     * @param \Closure(Request):Response $next
-     *                                         =======
-     * @param \Closure(Request):Response $next
-     *                                         >>>>>>> laraxot/dev
-     *                                         >>>>>>> .merge_file_kmMUbo
      */
     public function handle(Request $request, \Closure $next): Response
     {
@@ -126,20 +113,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Logga l'uso della memoria.
      *
-     * <<<<<<< .merge_file_q07k8h
-     * <<<<<<< HEAD
-     *
      * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       =======
-     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       >>>>>>> laraxot/dev
-     *                                                                                                                                                                                                       =======
-     *                                                                                                                                                                                                       <<<<<<< HEAD
-     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       =======
-     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       >>>>>>> laraxot/dev
-     *                                                                                                                                                                                                       >>>>>>> .merge_file_kmMUbo
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
@@ -173,20 +147,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Determina il livello di log basato sulle metriche.
      *
-     * <<<<<<< .merge_file_q07k8h
-     * <<<<<<< HEAD
-     *
      * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       =======
-     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       >>>>>>> laraxot/dev
-     *                                                                                                                                                                                                       =======
-     *                                                                                                                                                                                                       <<<<<<< HEAD
-     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       =======
-     * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
-     *                                                                                                                                                                                                       >>>>>>> laraxot/dev
-     *                                                                                                                                                                                                       >>>>>>> .merge_file_kmMUbo
      */
     private function determineLogLevel(array $metrics): string
     {

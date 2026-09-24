@@ -4,14 +4,8 @@
 
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-MASTER.md)
 📖 **Documento Originale:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../../docs/analisi-metodi-duplicati-MASTER.md](../../../../docs/analisi-metodi-duplicati-master.md)
 📖 **Documento Originale:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 > ⚠️ **IMPORTANTE:** Questo documento è specifico per il modulo Xot. Per l'analisi completa con dati reali, ROI, implementazioni concrete e migration guide, consultare il DOCUMENTO MASTER.
 
@@ -257,21 +251,7 @@ class MyResource extends XotBaseResource
 class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),
@@ -339,15 +319,7 @@ Se l'unificazione viene implementata correttamente:
 
 ## Link Utili
 
-<<<<<<< HEAD
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
-=======
-<<<<<<< HEAD
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
-=======
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - 📖 [Regole Service Provider](./service-provider.md)
 - 📖 [Regole BaseModel](./model-inheritance-rules.md)
 - 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
@@ -357,23 +329,9 @@ Se l'unificazione viene implementata correttamente:
 | Data | Versione | Modifiche |
 |------|----------|-----------|
 | 2025-10-15 | 1.0 | Creazione documento iniziale |
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 | [DATE] | 1.0 | Creazione documento iniziale |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
 **Stato:** 📋 Draft per Review
-<<<<<<< HEAD
 **Responsabile:** Team Xot Core
-=======
-<<<<<<< HEAD
-**Responsabile:** Team Xot Core
-=======
-**Responsabile:** Team Xot Core
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

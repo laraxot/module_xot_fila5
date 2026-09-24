@@ -8,21 +8,7 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -39,21 +25,7 @@ public static function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -125,21 +97,7 @@ class MyResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -154,21 +112,7 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),
@@ -190,12 +134,4 @@ class MyResource extends XotBaseResource
 - [XotBaseResource](./xot_base_resource.md)
 - [Form Components](./form_components.md)
 - [Form Validation](./form_validation.md)
-<<<<<<< HEAD
-- [Filament Best Practices](../../docs/rules/filament_best_practices.md)
-=======
-<<<<<<< HEAD
-- [Filament Best Practices](../../docs/rules/filament_best_practices.md)
-=======
 - [Filament Best Practices](../../../docs/rules/filament_best_practices.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

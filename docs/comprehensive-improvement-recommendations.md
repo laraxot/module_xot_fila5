@@ -759,16 +759,7 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
-<<<<<<< HEAD
             'Quaeris' => 'quaeris',
-=======
-<<<<<<< HEAD
-            'Quaeris' => 'quaeris',
-=======
-            'healthcare_app' => 'healthcare_app',
-            'ExternalProject' => '<nome progetto>',
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -851,32 +842,14 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
-<<<<<<< HEAD
 // Modules/Quaeris/Contracts/ChartRendererContract.php
-=======
-<<<<<<< HEAD
-// Modules/Quaeris/Contracts/ChartRendererContract.php
-=======
-// Modules/healthcare_app/Contracts/ChartRendererContract.php
-// Modules/ExternalProject/Contracts/ChartRendererContract.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
-<<<<<<< HEAD
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
-=======
-<<<<<<< HEAD
-// Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
-=======
-// Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
-// Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1042,16 +1015,7 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
-<<<<<<< HEAD
 // Modules/Quaeris/Services/BulkProcessingService.php
-=======
-<<<<<<< HEAD
-// Modules/Quaeris/Services/BulkProcessingService.php
-=======
-// Modules/healthcare_app/Services/BulkProcessingService.php
-// Modules/ExternalProject/Services/BulkProcessingService.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void
@@ -1443,12 +1407,4 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
-<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
-=======
-<<<<<<< HEAD
-Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
-=======
-Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -1,13 +1,6 @@
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Status**: ✅ Complete Contract Documentation
 
 ## 🎯 Overview
@@ -76,16 +69,7 @@ interface UserContract extends
 > - `@property \Illuminate\Database\Eloquent\Collection<int, UserRole> $roles`
 > - `@property \Illuminate\Database\Eloquent\Collection<int, TeamContract> $teams`
 >
-<<<<<<< HEAD
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
-=======
-<<<<<<< HEAD
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
-=======
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, healthcare_app) lavorano solo contro il contratto Xot.
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, ExternalProject) lavorano solo contro il contratto Xot.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 2. ProfileContract
 **File**: `app/Contracts/ProfileContract.php`
@@ -549,12 +533,4 @@ class AppointmentService
 
 ---
 
-<<<<<<< HEAD
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
-=======
-<<<<<<< HEAD
-*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
-=======
-*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -11,15 +11,7 @@
 - **Zen Principle**: One truth, many manifestations
 
 #### 2. **Consistency Over Flexibility**
-<<<<<<< HEAD
-- **Predictable behavior > Unlimited options**
-=======
-<<<<<<< HEAD
-- **Predictable behavior > Unlimited options**
-=======
 - **<nome progetto>able behavior > Unlimited options**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Same patterns across all modules, same file structures
 - **Violation Example**: Different test structures across modules
 - **Zen Principle**: Harmony through uniformity
@@ -36,15 +28,7 @@
 ```
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
-<<<<<<< HEAD
-├── Quaeris (Core Business Logic - Surveys)
-=======
-<<<<<<< HEAD
-├── Quaeris (Core Business Logic - Surveys)
-=======
 ├── healthcare_app (Core Business Logic - Surveys)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -124,15 +108,7 @@ TextInput::make('name');
 - **Power**: Controls access to all resources
 - **Responsibility**: Security and permissions
 
-<<<<<<< HEAD
-#### 3. **Quaeris Module (The Economy)**
-=======
-<<<<<<< HEAD
-#### 3. **Quaeris Module (The Economy)**
-=======
 #### 3. **healthcare_app Module (The Economy)**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -202,15 +178,7 @@ if (isset($model->email)) { ... }
 
 #### 3. **Test Structure Consistency**
 - **Rule**: Tests in traditional Laravel structure only
-<<<<<<< HEAD
-- **Reason**: Predictable autoloader behavior
-=======
-<<<<<<< HEAD
-- **Reason**: Predictable autoloader behavior
-=======
 - **Reason**: <nome progetto>able autoloader behavior
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Location**: `Modules/{Module}/tests/`
 
 ## 🎯 Implementation Guidelines
@@ -245,42 +213,14 @@ class YourResource extends XotBaseResource
     // Model auto-resolved as Modules\YourModule\Models\YourResource
     // Pages auto-discovered following pattern
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             // Form components - NO hardcoded labels
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getInfolistSchema(): array
-=======
-    public function getInfolistSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getInfolistSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             // Infolist components
@@ -362,18 +302,6 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 ---
 
 **Maintained by**: Xot Module (The Laraxot Government)
-<<<<<<< HEAD
-**Philosophy**: Consistency, Predictability, Simplicity
-**Goal**: Create a harmonious, maintainable, and scalable application architecture
-**Last Updated**: 2025-11-17
-=======
-<<<<<<< HEAD
-**Philosophy**: Consistency, Predictability, Simplicity
-**Goal**: Create a harmonious, maintainable, and scalable application architecture
-**Last Updated**: 2025-11-17
-=======
 **Last Updated**: 2025-11-17
 **Philosophy**: Consistency, <nome progetto>ability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

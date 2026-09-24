@@ -7,10 +7,6 @@ declare(strict_types=1);
  * This file contains helper functions for seeding data with Xot modules
  * The functions ensure that models are only seeded once
  */
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
@@ -18,11 +14,7 @@ use Illuminate\Support\Facades\Cache;
 /**
  * Seed a model once per application lifetime.
  *
-<<<<<<< HEAD
  * @param  string  $modelClass  The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
-=======
- * @param string $modelClass The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
->>>>>>> laraxot/dev
  */
 function xotSeedModelOnce(string $modelClass): void
 {
@@ -55,11 +47,7 @@ function xotSeedModelOnce(string $modelClass): void
         // Check if seeder class exists
         if (class_exists($seederClass)) {
             // Create seeder instance and run its seed method
-<<<<<<< HEAD
             $seeder = new $seederClass;
-=======
-            $seeder = new $seederClass();
->>>>>>> laraxot/dev
 
             if ($seeder instanceof Seeder && is_callable([$seeder, 'run'])) {
                 $seeder->{'run'}();

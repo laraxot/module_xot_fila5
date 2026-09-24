@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "_filters"
 module: "Xot"
@@ -13,11 +9,6 @@ qmd: "filters 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # _filters
 
 <!-- Contenuto migrato da _docs/_filters.txt -->

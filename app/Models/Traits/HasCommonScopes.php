@@ -37,12 +37,7 @@ trait HasCommonScopes
      *
      * Trovato identico in piu' moduli che condividono questo scope.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -53,12 +48,7 @@ trait HasCommonScopes
     /**
      * Scope query to only inactive records.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeInactive(Builder $query): Builder
@@ -71,12 +61,7 @@ trait HasCommonScopes
      *
      * Records with published_at <= now().
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopePublished(Builder $query): Builder
@@ -90,12 +75,7 @@ trait HasCommonScopes
      *
      * Records with published_at = null or > now().
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeDraft(Builder $query): Builder
@@ -109,12 +89,7 @@ trait HasCommonScopes
     /**
      * Scope query to records created after a date.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -125,12 +100,7 @@ trait HasCommonScopes
     /**
      * Scope query to records created before a date.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -141,12 +111,7 @@ trait HasCommonScopes
     /**
      * Scope query to records updated after a date.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -157,12 +122,7 @@ trait HasCommonScopes
     /**
      * Scope query to records created by a specific user.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeCreatedBy(Builder $query, string|int $userId): Builder
@@ -197,10 +157,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-<<<<<<< HEAD
         return $this->getAttribute('is_active') === true;
-=======
-        return true === $this->getAttribute('is_active');
->>>>>>> laraxot/dev
     }
 }

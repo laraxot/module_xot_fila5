@@ -63,24 +63,6 @@ class CommandRegistry
      */
     private function registerDefaultHandlers(): void
     {
-<<<<<<< HEAD
-<<<<<<< .merge_file_rVXxG6
-=======
-<<<<<<< .merge_file_lxkxxs
-=======
->>>>>>> .merge_file_ODCgKK
-=======
-<<<<<<< .merge_file_h1HbWt
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_VvrbGp
-<<<<<<< .merge_file_rVXxG6
-=======
->>>>>>> .merge_file_ikFMTp
->>>>>>> .merge_file_ODCgKK
         $this->register(new MigrationCommandHandler())
             ->register(new CacheCommandHandler())
             ->register(new RouteCommandHandler())
@@ -90,45 +72,5 @@ class CommandRegistry
             ->register(new OptimizeCommandHandler())
             ->register(new QueueCommandHandler())
             ->register(new DebugbarCommandHandler());
-<<<<<<< .merge_file_rVXxG6
-=======
-<<<<<<< .merge_file_lxkxxs
-=======
-=======
->>>>>>> .merge_file_ODCgKK
-<<<<<<< .merge_file_h1HbWt
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_rVXxG6
-=======
->>>>>>> .merge_file_ikFMTp
->>>>>>> .merge_file_ODCgKK
-        $this->register(new MigrationCommandHandler)
-            ->register(new CacheCommandHandler)
-            ->register(new RouteCommandHandler)
-            ->register(new ViewCommandHandler)
-            ->register(new ErrorCommandHandler)
-            ->register(new ModuleCommandHandler)
-            ->register(new OptimizeCommandHandler)
-            ->register(new QueueCommandHandler)
-            ->register(new DebugbarCommandHandler);
-<<<<<<< .merge_file_rVXxG6
-=======
-<<<<<<< .merge_file_lxkxxs
-=======
->>>>>>> .merge_file_ODCgKK
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_VvrbGp
-<<<<<<< .merge_file_rVXxG6
-=======
->>>>>>> .merge_file_ikFMTp
->>>>>>> .merge_file_ODCgKK
->>>>>>> laraxot/dev
     }
 }

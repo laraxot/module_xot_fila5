@@ -612,25 +612,8 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
-=======
-- [Analisi Completa Codice](./comprehensive_code_analysis.md)
-- [Architettura Moduli](./architecture.md)
-- [Performance Guide](./performance_guide.md)
-
----
-
-**Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -710,20 +693,8 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
-<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
-=======
-<<<<<<< HEAD
-// QuaerisService.php
-class QuaerisService
-=======
-// healthcare_appService.php
-class healthcare_appService
-// ModuloEsempioService.php
-class ModuloEsempioService
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     use SingletonTrait;
 
@@ -1196,20 +1167,8 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
-<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
-=======
-<<<<<<< HEAD
-// QuaerisService.php
-class QuaerisService
-=======
-// healthcare_appService.php
-class healthcare_appService
-// ModuloEsempioService.php
-class ModuloEsempioService
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     use SingletonTrait;
 
@@ -1277,25 +1236,8 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
-=======
-- [Analisi Completa Codice](./comprehensive_code_analysis.md)
-- [Architettura Moduli](./architecture.md)
-- [Performance Guide](./performance_guide.md)
-
----
-
-**Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1303,12 +1245,4 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
-<<<<<<< HEAD
 **Benefici**: ALTI
-=======
-<<<<<<< HEAD
-**Benefici**: ALTI
-=======
-**Benefici**: ALTI
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

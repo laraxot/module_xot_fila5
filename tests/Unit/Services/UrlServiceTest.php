@@ -1,33 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_P0R8xh
-=======
-<<<<<<< .merge_file_KnmMpH
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_dz3O5w
-=======
-<<<<<<< .merge_file_Eku2TF
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_Gre1C5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_P0R8xh
-=======
->>>>>>> .merge_file_nO3Iz6
->>>>>>> .merge_file_dz3O5w
 use Modules\Xot\Actions\Url\IsValidUrlAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

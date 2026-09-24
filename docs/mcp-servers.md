@@ -518,13 +518,6 @@ iflow
 ## Changelog
 
 - **2025-01-06**: Documentazione iniziale creata
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- **[DATE]**: Documentazione iniziale creata
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   - Cursor, Windsurf, Cline, iFlow
   - Server MCP essenziali configurati
   - Best practices e troubleshooting
@@ -533,12 +526,4 @@ iflow
 
 ## Licenza
 
-<<<<<<< HEAD
 Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
-=======
-<<<<<<< HEAD
-Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
-=======
-Questa documentazione è parte del progetto **base_healthcare_app_fila5_mono** ed è soggetta alla stessa licenza del progetto principale.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

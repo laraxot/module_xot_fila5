@@ -28,41 +28,7 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_OFE25u
-=======
-<<<<<<< .merge_file_tvKiX0
-=======
->>>>>>> .merge_file_XD2lWi
-            self::$_instance = new self;
-=======
-<<<<<<< .merge_file_6TJIo6
-<<<<<<< HEAD
             self::$_instance = new self();
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_OFE25u
-=======
->>>>>>> .merge_file_uuDZfa
->>>>>>> .merge_file_XD2lWi
-            self::$_instance = new self();
-=======
-            self::$_instance = new self;
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_OFE25u
-=======
-<<<<<<< .merge_file_tvKiX0
-=======
->>>>>>> .merge_file_XD2lWi
->>>>>>> laraxot/dev
-=======
-            self::$_instance = new self();
->>>>>>> .merge_file_cPuAL8
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_OFE25u
-=======
->>>>>>> .merge_file_uuDZfa
->>>>>>> .merge_file_XD2lWi
         }
 
         return self::$_instance;
@@ -100,41 +66,7 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_OFE25u
-=======
-<<<<<<< .merge_file_tvKiX0
-=======
->>>>>>> .merge_file_XD2lWi
-                $tmp = new \stdClass;
-=======
-<<<<<<< .merge_file_6TJIo6
-<<<<<<< HEAD
                 $tmp = new \stdClass();
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_OFE25u
-=======
->>>>>>> .merge_file_uuDZfa
->>>>>>> .merge_file_XD2lWi
-                $tmp = new \stdClass();
-=======
-                $tmp = new \stdClass;
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_OFE25u
-=======
-<<<<<<< .merge_file_tvKiX0
-=======
->>>>>>> .merge_file_XD2lWi
->>>>>>> laraxot/dev
-=======
-                $tmp = new \stdClass();
->>>>>>> .merge_file_cPuAL8
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_OFE25u
-=======
->>>>>>> .merge_file_uuDZfa
->>>>>>> .merge_file_XD2lWi
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -160,31 +92,5 @@ class ModuleAction
         return $data;
     }
 
-<<<<<<< .merge_file_OFE25u
-<<<<<<< HEAD
     public function execute(): void {}
-=======
-<<<<<<< .merge_file_6TJIo6
-    public function execute(): void {}
-=======
-=======
-<<<<<<< .merge_file_tvKiX0
-    public function execute(): void {}
-=======
-<<<<<<< HEAD
-    public function execute(): void {}
-=======
-<<<<<<< .merge_file_6TJIo6
-    public function execute(): void {}
-=======
->>>>>>> .merge_file_XD2lWi
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_cPuAL8
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_OFE25u
-=======
->>>>>>> .merge_file_uuDZfa
->>>>>>> .merge_file_XD2lWi
 }

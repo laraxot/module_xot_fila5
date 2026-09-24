@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -41,52 +37,6 @@ docs/phpstan/
 packages/cache/
 packages/temp/
 # --- Cache & temporary ---
-<<<<<<< HEAD
-=======
-=======
-# ==============================================
-# LARAXOT MODULE XOT - .GITIGNORE
-# ==============================================
-# Modulo base Laraxot - Template standardizzato
-# Ultimo aggiornamento: 2025-01-06
-# ==============================================
-
-# ==============================================
-# DEPENDENCIES & PACKAGES
-# ==============================================
-vendor/
-node_modules/
-package-lock.json
-yarn.lock
-composer.lock
-docs/vendor/
-
-# ==============================================
-# BUILD & COMPILED FILES
-# ==============================================
-build/
-dist/
-cache/
-
-# ==============================================
-# LARAVEL SPECIFIC
-# ==============================================
-bootstrap/compiled.php
-app/storage/
-public/storage
-public/hot
-public_html/storage
-public_html/hot
-storage/*.key
-.env
-.env.*
-!.env.example
-
-# ==============================================
-# CACHE & TEMPORARY FILES
-# ==============================================
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 *.cache
 *.lock
 *.phar
@@ -99,27 +49,12 @@ storage/*.key
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
-<<<<<<< HEAD
 # --- Logs ---
-=======
-<<<<<<< HEAD
-# --- Logs ---
-=======
-
-# ==============================================
-# LOG FILES
-# ==============================================
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # --- Laravel runtime ---
 app/storage/
 public/storage
@@ -131,25 +66,12 @@ storage/*.key
 .env.*
 !.env.example
 # --- Environment & IDE ---
-<<<<<<< HEAD
-=======
-=======
-
-# ==============================================
-# ENVIRONMENT & CONFIGURATION
-# ==============================================
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 .phpstorm.meta.php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 .windsurf/
 .cursor/
 .vscode/
@@ -165,21 +87,6 @@ Homestead.json
 *.orig
 *.rej
 # --- System files ---
-<<<<<<< HEAD
-=======
-=======
-
-# ==============================================
-# GIT SPECIFIC
-# ==============================================
-.git-rewrite/
-.git-blame-ignore-revs
-
-# ==============================================
-# SYSTEM FILES
-# ==============================================
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 .DS_Store
 .DS_Store?
 ._*
@@ -188,31 +95,12 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 *.exe
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 agentdb.rvf
 # --- Copy / backup / old files ---
 * copy
 * copy.*
 * copy/
 *.copy
-<<<<<<< HEAD
-=======
-=======
-
-# Copy files (duplicati temporanei)
-* copy
-* copy.*
-*.copy
-*~
-
-# ==============================================
-# BACKUP FILES
-# ==============================================
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 *.old
 *.old1
 *.old2
@@ -223,43 +111,11 @@ agentdb.rvf
 *.bak
 *.bakcup
 *.new
-<<<<<<< HEAD
 # --- Legacy directories (historic cleanup) ---
-=======
-<<<<<<< HEAD
-# --- Legacy directories (historic cleanup) ---
-=======
-* copy.*
-* copy/
-*.copy
-
-# ==============================================
-# DEVELOPMENT TOOLS
-# ==============================================
-.windsurf/
-.cursor/
-
-# ==============================================
-# DOCUMENTATION CACHE
-# ==============================================
-docs/phpstan/
-docs/cache/
-docs/archive/
-docs/archive/**
-
-# ==============================================
-# OLD DIRECTORIES (LEGACY CLEANUP)
-# ==============================================
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 database/Factories_
 database_old/
 lang/lang/
@@ -314,56 +170,3 @@ docs/coverage-*.md
 .windsurf~*
 graphify-out/
 tests/coverage-xot.xml
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_dIJquH
-=======
-=======
-database_old/
-database/Factories_
-
-# ==============================================
-# MODULE SPECIFIC - XOT
-# ==============================================
-# File di test temporanei
-test.txt
-testbench.yaml
-
-# File di configurazione locale
-config/local.php
-config/development.php
-
-# Cache specifiche del modulo
-packages/cache/
-packages/temp/
-
-# ==============================================
-# PROJECT SPECIFIC
-# ==============================================
-*.fila2
-
-# ==============================================
-# END OF XOT .GITIGNORE
-# ==============================================
-lang/lang/
-_docs/
-_docs/
-*.pest.php
-
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-*~HEAD
-*~BASE
-*~LOCAL
-*~REMOTE
-*.orig
-*.rej
-*~headagentdb.rvf
-audit-coverage/
-.vscode/
-.devcontainer/
-.vscode/
-.claude-audit/
-docs/assets/
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0u77wb
->>>>>>> laraxot/dev

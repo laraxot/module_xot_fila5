@@ -202,12 +202,4 @@ Prima di creare un ServiceProvider:
 
 **Principio DRY**: Non duplicare logica già gestita dal parent.
 
-<<<<<<< HEAD
 **Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
-=======
-<<<<<<< HEAD
-**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
-=======
-**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

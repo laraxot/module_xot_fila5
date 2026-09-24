@@ -20,15 +20,6 @@ class BuildTrendCollectionAction
     /**
      * @template TModel of Model
      *
-     * <<<<<<< .merge_file_8jZNJ7
-     * <<<<<<< HEAD
-     *
-     * @param Builder<TModel> $query
-     *                               =======
-     * @param Builder<TModel> $query
-     *
-     * >>>>>>> laraxot/dev
-     * =======
      * <<<<<<< .merge_file_7XRe5V
      * @param Builder<TModel> $query
      *                               =======
@@ -40,8 +31,6 @@ class BuildTrendCollectionAction
      * >>>>>>> laraxot/dev
      *
      * >>>>>>> .merge_file_eVG8ew
-     *
-     * >>>>>>> .merge_file_nbb7lo
      *
      * @return Collection<int, TrendData>
      */

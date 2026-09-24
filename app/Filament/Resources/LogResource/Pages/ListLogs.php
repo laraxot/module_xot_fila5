@@ -10,10 +10,7 @@ use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ViewAction;
-<<<<<<< HEAD
-=======
 use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -26,8 +23,6 @@ class ListLogs extends XotBaseListRecords
     protected static string $resource = LogResource::class;
 
     #[\Override]
-<<<<<<< HEAD
-=======
     public function getTableColumns(): array
     {
         return [
@@ -56,7 +51,6 @@ class ListLogs extends XotBaseListRecords
     }
 
     #[\Override]
->>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [

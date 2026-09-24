@@ -32,19 +32,10 @@ class HandlerDecorator implements ExceptionHandler
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
-<<<<<<< HEAD
     ) {}
 
     /**
      * @param  array<int, mixed>  $parameters
-=======
-    ) {
-    }
-
-    /**
-     * @param array<int, mixed> $parameters
-     *
->>>>>>> laraxot/dev
      * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
      */
     public function __call(string $name, array $parameters): mixed

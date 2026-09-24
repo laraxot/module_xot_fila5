@@ -8,56 +8,12 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
-<<<<<<< .merge_file_8UG4nS
-<<<<<<< HEAD
-use Nwidart\Modules\Module;
-=======
-=======
-<<<<<<< .merge_file_9T0AKr
-use Nwidart\Modules\Module;
-=======
-<<<<<<< HEAD
-use Nwidart\Modules\Module;
-=======
->>>>>>> .merge_file_2jn1u9
-<<<<<<< .merge_file_GNpg2u
-use Nwidart\Modules\Module;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_8UG4nS
-=======
->>>>>>> .merge_file_86dHkx
->>>>>>> .merge_file_2jn1u9
-use Webmozart\Assert\Assert;
-
-use function Safe\preg_match;
-
-<<<<<<< .merge_file_8UG4nS
-=======
-<<<<<<< .merge_file_9T0AKr
-=======
->>>>>>> .merge_file_2jn1u9
-<<<<<<< HEAD
-=======
-=======
-=======
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
->>>>>>> .merge_file_D0wWUc
+use Webmozart\Assert\Assert;
 
 use function Safe\preg_match;
 
-use Webmozart\Assert\Assert;
-
-<<<<<<< .merge_file_GNpg2u
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_D0wWUc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_8UG4nS
-=======
->>>>>>> .merge_file_86dHkx
->>>>>>> .merge_file_2jn1u9
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -91,26 +47,11 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             $this->configureQueryLogging();
         }
 
-<<<<<<< .merge_file_8UG4nS
-=======
-<<<<<<< .merge_file_9T0AKr
-=======
->>>>>>> .merge_file_2jn1u9
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GNpg2u
-=======
         // Registra middleware di monitoraggio
         if (config('filament_optimization.monitoring.memory_profiling', false)) {
             $this->registerMemoryMonitoring();
         }
 
->>>>>>> .merge_file_D0wWUc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_8UG4nS
-=======
->>>>>>> .merge_file_86dHkx
->>>>>>> .merge_file_2jn1u9
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -181,15 +122,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
-<<<<<<< .merge_file_8UG4nS
-=======
-<<<<<<< .merge_file_9T0AKr
-=======
->>>>>>> .merge_file_2jn1u9
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GNpg2u
-=======
      * Registra il middleware di monitoraggio memoria.
      */
     private function registerMemoryMonitoring(): void
@@ -199,12 +131,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
->>>>>>> .merge_file_D0wWUc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_8UG4nS
-=======
->>>>>>> .merge_file_86dHkx
->>>>>>> .merge_file_2jn1u9
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

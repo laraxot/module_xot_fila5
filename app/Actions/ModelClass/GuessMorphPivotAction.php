@@ -17,54 +17,8 @@ class GuessMorphPivotAction
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
-     * <<<<<<< .merge_file_orevi1
-     * <<<<<<< HEAD
-     *
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< .merge_file_rSrRjv
-     *                                            =======
-     *                                            <<<<<<< .merge_file_bHRAaz
-     *                                            >>>>>>> .merge_file_lKlUYq
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< .merge_file_orevi1
-     *                                            =======
-     *                                            <<<<<<< .merge_file_rSrRjv
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            >>>>>>> .merge_file_lKlUYq
-     *                                            <<<<<<< .merge_file_Cof58c
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            >>>>>>> laraxot/dev
-     *                                            >>>>>>> .merge_file_0xKkpD
-     *                                            >>>>>>> laraxot/dev
-     *                                            >>>>>>> .merge_file_E7y1aE
-     *                                            <<<<<<< .merge_file_orevi1
-     *                                            >>>>>>> laraxot/dev
-     *                                            =======
-     *                                            >>>>>>> laraxot/dev
-     *                                            >>>>>>> .merge_file_GQREes
-     *                                            >>>>>>> .merge_file_lKlUYq
+     * @param  string|class-string<Model>  $related  The related model class name
+     * @param  string|class-string<Model>  $class  The class
      */
     public function execute(string $related, string $class): MorphPivot
     {

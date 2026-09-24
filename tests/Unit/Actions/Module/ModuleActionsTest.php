@@ -1,11 +1,8 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
 uses(TestCase::class);
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;

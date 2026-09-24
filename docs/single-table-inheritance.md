@@ -77,16 +77,5 @@
 ## Collegamenti
 
 - [Modelli Patient](../Patient/docs/models.md)
-<<<<<<< HEAD
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)
-=======
-<<<<<<< HEAD
-- [Best Practices Modelli](./models.md)
-- [Convenzioni di Codice](./coding-standards.md)
-=======
-- [Modelli Patient](../patient/docs/models.md)
-- [Best Practices Modelli](./models.md)
-- [Convenzioni di Codice](./coding-standards.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

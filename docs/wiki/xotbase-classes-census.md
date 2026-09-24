@@ -13,22 +13,6 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 
 ## Filament Widgets
 
-<<<<<<< .merge_file_BVcZj8
-=======
-<<<<<<< .merge_file_ysPnvH
-=======
->>>>>>> .merge_file_UtRsS1
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_hvD7yA
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_EBYmG9
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_BVcZj8
-=======
->>>>>>> .merge_file_myrnEv
->>>>>>> .merge_file_UtRsS1
 | Classe Base | Path | Estende |
 |-------------|------|---------|
 | `XotBaseWidget` | `app/Filament/Widgets/XotBaseWidget.php` | `Filament\Widgets\Widget` |
@@ -38,39 +22,6 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 | `XotBaseChartWidget` | `app/Filament/Widgets/XotBaseChartWidget.php` | `Filament\Widgets\ChartWidget` |
 | `XotBaseStatsOverviewWidget` | `app/Filament/Widgets/XotBaseStatsOverviewWidget.php` | `Filament\Widgets\StatsOverviewWidget` |
 | `XotBaseWizardWidget` | `app/Filament/Widgets/XotBaseWizardWidget.php` | `XotBaseWidget` |
-<<<<<<< .merge_file_BVcZj8
-=======
-<<<<<<< .merge_file_ysPnvH
-=======
->>>>>>> .merge_file_UtRsS1
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_hvD7yA
-=======
-=======
-| Classe Base | Path | Estende | Quando usarla |
-|-------------|------|---------|---------------|
-| `XotBaseWidget` | `app/Filament/Widgets/XotBaseWidget.php` | `Filament\Widgets\Widget` | Widget base generico |
-| `XotBaseInfolistWidget` | `app/Filament/Widgets/XotBaseInfolistWidget.php` | `Filament\Widgets\Widget` | Widget con infolist |
-| `XotBaseSchemaWidget` | `app/Filament/Widgets/XotBaseSchemaWidget.php` | `XotBaseWidget` | **Widget con form** (auth, wizard, registration) |
-| `XotBaseTableWidget` | `app/Filament/Widgets/XotBaseTableWidget.php` | `XotBaseWidget` | Widget con tabella |
-| `XotBaseChartWidget` | `app/Filament/Widgets/XotBaseChartWidget.php` | `Filament\Widgets\ChartWidget` | Widget con grafico |
-| `XotBaseStatsOverviewWidget` | `app/Filament/Widgets/XotBaseStatsOverviewWidget.php` | `Filament\Widgets\StatsOverviewWidget` | Widget statistiche |
-| `XotBaseWizardWidget` | `app/Filament/Widgets/XotBaseWizardWidget.php` | `XotBaseWidget` | Wizard multi-step |
-
-**Regola PHPStan per `$view`:**
-```php
-/** @var view-string */
-/** @phpstan-ignore property.defaultValue */
-protected string $view = 'module::path.to.view';
-```
->>>>>>> laraxot/dev
->>>>>>> .merge_file_EBYmG9
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_BVcZj8
-=======
->>>>>>> .merge_file_myrnEv
->>>>>>> .merge_file_UtRsS1
 
 ## Filament Resources
 

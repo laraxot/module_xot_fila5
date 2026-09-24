@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_It6J0y
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-# ___to_integrate
-
-<!-- Contenuto migrato da _docs/___to_integrate.txt -->
-
-https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_1LRUdu
->>>>>>> laraxot/dev
 ---
 title: 'To integrate — risorse esterne'
 module: Xot
@@ -37,19 +18,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15>
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_It6J0y
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-# ___to_integrate
-
-<!-- Contenuto migrato da _docs/___to_integrate.txt -->
-
-https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15
->>>>>>> .merge_file_1LRUdu
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

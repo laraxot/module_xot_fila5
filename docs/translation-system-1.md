@@ -222,15 +222,5 @@ php artisan view:clear
 
 - [Documentazione Laravel Translations](https://laravel.com/docs/localization)
 - [Filament Form Components](https://filamentphp.com/docs/forms)
-<<<<<<< HEAD
 - [Best Practices Filament](../docs/filament-best-practices.md)
 - [Schema Conventions](../docs/schema-conventions.md)
-=======
-<<<<<<< HEAD
-- [Best Practices Filament](../docs/filament-best-practices.md)
-- [Schema Conventions](../docs/schema-conventions.md)
-=======
-- [Best Practices Filament](../../docs/filament-best-practices.md)
-- [Schema Conventions](../../docs/schema-conventions.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_GJv0yW
 
-=======
-<<<<<<< .merge_file_zuldSy
-=======
-
->>>>>>> .merge_file_jKPPUO
->>>>>>> .merge_file_OvRnr5
 return [
     'navigation' => [
         'name' => 'extra',

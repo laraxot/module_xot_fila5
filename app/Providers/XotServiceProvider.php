@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers;
 
 use Composer\Autoload\ClassLoader;
-<<<<<<< HEAD
-=======
-use Filament\Actions\Exports\Jobs\CreateXlsxFile;
->>>>>>> laraxot/dev
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -29,21 +25,11 @@ use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
 
-=======
-use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
-use Modules\Xot\View\Composers\XotComposer;
-
-use function Safe\realpath;
-
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
 /**
  * Class XotServiceProvider.
  */
@@ -80,21 +66,6 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandlersRepository();
         // $this->extendExceptionHandler();
         $this->registerCommands();
-<<<<<<< HEAD
-=======
-        $this->registerExportJobs();
-    }
-
-    /**
-     * `CanExportRecords` risolve il job xlsx con `app(CreateXlsxFile::class, [...])`:
-     * il binding lo sostituisce con `XotCreateXlsxFile`, che per gli exporter
-     * `XotBaseExporter` legge il CSV intermedio con lo stesso escape con cui
-     * `XotExportCsv` lo scrive (story Ptv/5.165); per gli altri delega al vendor.
-     */
-    private function registerExportJobs(): void
-    {
-        $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
->>>>>>> laraxot/dev
     }
 
     public function registerProviders(): void
@@ -116,11 +87,7 @@ class XotServiceProvider extends XotBaseServiceProvider
             return;
         }
 
-<<<<<<< HEAD
         (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
-=======
-        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
->>>>>>> laraxot/dev
     }
 
     public function registerTimezone(): void
@@ -208,20 +175,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> laraxot/dev
                 continue;
             }
 
             $realPath = $file->getRealPath();
-<<<<<<< HEAD
             if ($realPath === false) {
-=======
-            if (false === $realPath) {
->>>>>>> laraxot/dev
                 continue;
             }
 

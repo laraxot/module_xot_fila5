@@ -227,25 +227,11 @@ grep -r "extends.*Resource" app/Filament/Resources/
 
 ## 🔗 Collegamenti Sistema
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
-<<<<<<< HEAD
-=======
-=======
-- [**Documentazione Core Sistema**](../../../docs/core/)
-- [**PHPStan Guide**](../../../docs/core/phpstan-guide.md)
-- [**Filament Best Practices**](../../../docs/core/filament-best-practices.md)
-- [**Convenzioni Sistema**](../../../docs/core/conventions.md)
-- [**Template Moduli**](../../../docs/templates/)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -253,12 +239,4 @@ grep -r "extends.*Resource" app/Filament/Resources/
 **Impatto:** Tutti i moduli e sviluppatori
 **Stato:** In attesa implementazione
 **Responsabile:** Team Core
-<<<<<<< HEAD
 **Data:** 2025-01-XX
-=======
-<<<<<<< HEAD
-**Data:** 2025-01-XX
-=======
-**Data:** 2025-01-XX
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

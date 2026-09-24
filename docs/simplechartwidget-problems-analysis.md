@@ -1,19 +1,3 @@
-<<<<<<< .merge_file_Wpwmo8
-=======
-<<<<<<< .merge_file_232AVd
-=======
->>>>>>> .merge_file_m4PtF6
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Ia9Mey
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_CKFyQT
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Wpwmo8
-=======
->>>>>>> .merge_file_kJPs3G
->>>>>>> .merge_file_m4PtF6
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica
@@ -482,31 +466,4 @@ L'analisi del `SimpleChartWidget` ha identificato diversi problemi che impattano
 2. **Ottimizzano l'esperienza utente** (accessibilità, performance)
 3. **Migliorano la manutenibilità** (separazione logica, refactoring)
 
-<<<<<<< .merge_file_Wpwmo8
-=======
-<<<<<<< .merge_file_232AVd
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
-=======
->>>>>>> .merge_file_m4PtF6
-<<<<<<< HEAD
-L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
-=======
-<<<<<<< .merge_file_Ia9Mey
-L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
-=======
-L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
-=======
----
-module: theme
-topic: simplechartwidget-problems-analysis
-canonical: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
->>>>>>> laraxot/dev
->>>>>>> .merge_file_CKFyQT
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Wpwmo8
-=======
->>>>>>> .merge_file_kJPs3G
->>>>>>> .merge_file_m4PtF6

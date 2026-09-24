@@ -22,43 +22,7 @@ XotBase funge da wrapper per tutti i componenti Filament nel progetto Laraxot. C
 | Componente Filament | Classe XotBase |
 | :--- | :--- |
 | `Filament\Actions\Action` | `Modules\Xot\Filament\Actions\XotBaseAction` |
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ty7Xrj
-=======
-<<<<<<< .merge_file_xjnaLS
 | `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4b0po1
-<<<<<<< HEAD
-<<<<<<< .merge_file_w2Apc8
-=======
-<<<<<<< .merge_file_cs2A2n
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> laraxot/dev
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_YofIXc
-=======
-<<<<<<< HEAD
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_w2Apc8
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_g1eER4
->>>>>>> .merge_file_YofIXc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ty7Xrj
-=======
->>>>>>> .merge_file_bf8ZoJ
->>>>>>> .merge_file_4b0po1
 | `Filament\Resources\Resource` | `Modules\Xot\Filament\Resources\XotBaseResource` |
 | `Filament\Pages\Page` | `Modules\Xot\Filament\Pages\XotBasePage` |
 | `Filament\Widgets\Widget` | `Modules\Xot\Filament\Widgets\XotBaseWidget` |
@@ -74,60 +38,7 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 ### 2. Metodi Obbligatori
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_ty7Xrj
-=======
-<<<<<<< .merge_file_xjnaLS
-=======
->>>>>>> .merge_file_4b0po1
-=======
-<<<<<<< .merge_file_w2Apc8
-=======
-<<<<<<< HEAD
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_YofIXc
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ty7Xrj
-=======
->>>>>>> .merge_file_bf8ZoJ
->>>>>>> .merge_file_4b0po1
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ty7Xrj
-=======
-<<<<<<< .merge_file_xjnaLS
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4b0po1
-<<<<<<< HEAD
-=======
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_w2Apc8
-=======
->>>>>>> laraxot/dev
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
->>>>>>> .merge_file_YofIXc
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ty7Xrj
-=======
->>>>>>> .merge_file_bf8ZoJ
->>>>>>> .merge_file_4b0po1
 
 ### 3. Namespace Standard
 Assicurati di usare i namespace corretti. Mai includere `App` nel percorso se sei all'interno di un modulo (es. `Modules\Xot\Filament\...` non `Modules\Xot\App\Filament\...`).

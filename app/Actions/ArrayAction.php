@@ -26,40 +26,8 @@ class ArrayAction
     }
 
     /**
-<<<<<<< .merge_file_EvbTaw
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $array1
      * @param  array<int|string, mixed>  $array2
-=======
-=======
-<<<<<<< .merge_file_20mcGn
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
-=======
-<<<<<<< HEAD
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
-=======
->>>>>>> .merge_file_li4w3e
-<<<<<<< .merge_file_BWNm5X
-<<<<<<< HEAD
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
-=======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
->>>>>>> laraxot/dev
-=======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
->>>>>>> .merge_file_fqc4li
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_EvbTaw
-=======
->>>>>>> .merge_file_MZsXS4
->>>>>>> .merge_file_li4w3e
      * @return array<int|string, mixed>
      */
     public static function diff_assoc_recursive(array $array1, array $array2): array
@@ -89,31 +57,5 @@ class ArrayAction
         return $outputDiff;
     }
 
-<<<<<<< .merge_file_EvbTaw
-=======
-<<<<<<< .merge_file_20mcGn
     public function execute(): void {}
-=======
->>>>>>> .merge_file_li4w3e
-<<<<<<< HEAD
-    public function execute(): void {}
-=======
-<<<<<<< .merge_file_BWNm5X
-<<<<<<< HEAD
-    public function execute(): void {}
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> laraxot/dev
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_fqc4li
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_EvbTaw
-=======
->>>>>>> .merge_file_MZsXS4
->>>>>>> .merge_file_li4w3e
 }

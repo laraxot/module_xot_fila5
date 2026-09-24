@@ -10,12 +10,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('safe array by model cast action works', function () {
-<<<<<<< HEAD
-    $model = new class extends XotBaseModel
-    {
-=======
     $model = new class extends XotBaseModel {
->>>>>>> laraxot/dev
         protected $attributes = [
             'id' => 1,
             'name' => 'Test',
@@ -31,12 +26,7 @@ test('safe array by model cast action works', function () {
 });
 
 test('safe attribute cast action works', function () {
-<<<<<<< HEAD
-    $model = new class extends XotBaseModel
-    {
-=======
     $model = new class extends XotBaseModel {
->>>>>>> laraxot/dev
         protected $attributes = [
             'str' => 'test',
             'int' => 123,

@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_XsSXCK
 
-=======
-<<<<<<< .merge_file_ODwbWS
-=======
-
->>>>>>> .merge_file_HLxJDe
->>>>>>> .merge_file_SK90zr
 return [
     'navigation' => [
         'name' => 'Salute',
