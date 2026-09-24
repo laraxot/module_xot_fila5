@@ -29,6 +29,11 @@ test('safe object cast action works', function (): void {
         public string $empty_str = '';
 
         public function testMethod(string $p): string
+        public mixed $null_val;
+
+        public string $empty_str = '';
+
+        public function testMethod(mixed $p): mixed
         {
             return $p;
         }
@@ -54,6 +59,10 @@ test('safe object cast action works', function (): void {
         return $v > 200;
     }, 0));
     Assert::assertSame(123, $action->getValidatedProperty($obj, 'int', 'int', function (int $v): bool {
+    Assert::assertSame(0, $action->getValidatedProperty($obj, 'int', 'int', function (mixed $v): bool {
+        return $v > 200;
+    }, 0));
+    Assert::assertSame(123, $action->getValidatedProperty($obj, 'int', 'int', function (mixed $v): bool {
         return $v > 100;
     }));
     Assert::assertTrue($action->hasMethod($obj, 'testMethod'));
@@ -93,6 +102,12 @@ test('safe eloquent cast action works', function (): void {
         return $v > 100;
     }));
     Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (int $v): bool {
+        return $v === 123;
+        return 123 === $v;
+    Assert::assertSame(123, $action->getValidatedAttribute($model, 'int', 'int', function (mixed $v): bool {
+        return $v > 100;
+    }));
+    Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (mixed $v): bool {
         return $v === 123;
     }));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'str', 'null_val', 'string'));

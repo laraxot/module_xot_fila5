@@ -10,6 +10,9 @@ use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
+
+
+
 class ExecuteSqlFileCommand extends Command
 {
     /**

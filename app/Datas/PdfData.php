@@ -5,6 +5,8 @@ declare(strict_types=1);
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Datas;
 
 use Illuminate\Database\Eloquent\Model;
@@ -148,7 +150,9 @@ class PdfData extends Data
     }
 
     /**
-     * @param  array<string, mixed>  $params
+     *
+     * @param array<string, mixed> $params
+     * @param array<string, mixed> $params
      */
     public function view(string $view, array $params = []): self
     {

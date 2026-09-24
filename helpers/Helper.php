@@ -18,6 +18,7 @@ use Webmozart\Assert\Assert;
 use function Safe\define;
 use function Safe\preg_match;
 
+
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {
@@ -70,24 +71,25 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-        if (Request::segment(2) === 'admin') {
+        if ('admin' === Request::segment(2)) {
             return true;
         }
 
         $segments = Request::segments();
 
-        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
+        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
     }
 }
 
 if (! function_exists('params2ContainerItem')) {
     /**
-     * @param  array<string, mixed>|null  $params
+     * @param array<string, mixed>|null $params
+     *
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
-        if ($params === null) {
+        if (null === $params) {
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -131,7 +133,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return $id === null ? null : (string) $id;
+            return null === $id ? null : (string) $id;
         } catch (Throwable $e) {
             return null;
         }
@@ -148,7 +150,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
+            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
         }
 
         $result = __($key, $safeReplace, $locale);
@@ -186,7 +188,8 @@ if (! function_exists('actingAs')) {
 
 if (! function_exists('get')) {
     /**
-     * @param  array<string, mixed>  $options
+     * @param array<string, mixed> $options
+     *
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
@@ -197,11 +200,16 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $options
+     * @param array<string, mixed> $data
+     * @param array<string, mixed> $options
+     *
      * @return TestResponse<Response>
      */
     function post(string $uri, array $data = [], array $options = []): TestResponse
+     * @param  array<string, mixed>  $options
+     * @return TestResponse<Response>
+     */
+    function post(string $uri, mixed $data = [], array $options = []): TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -209,10 +217,14 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
+     *
      * @return TestResponse<Response>
      */
     function put(string $uri, array $data = []): TestResponse
+     * @return TestResponse<Response>
+     */
+    function put(string $uri, mixed $data = []): TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -220,10 +232,14 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
+     *
      * @return TestResponse<Response>
      */
     function patch(string $uri, array $data = []): TestResponse
+     * @return TestResponse<Response>
+     */
+    function patch(string $uri, mixed $data = []): TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -269,10 +285,41 @@ if (! function_exists('followingRedirects')) {
     }
 }
 
+if (! function_exists('test')) {
+    /**
+     * Stub PHPStan per `test()` — return void.
+     *
+     * Non tipizzare con `Pest\PendingCalls\TestCall` / `Pest\Support\HigherOrderTapProxy`:
+     * sono `@internal` e producono `return.internalClass` (il plugin pest-plugin-phpstan
+     * ignora solo method/property.internalClass, non return.internalClass).
+     * Canon: docs/wiki/rules/pest-internal-class-phpstan.md · Xot docs/phpstan-pest-bridge-antipattern.md
+     * Gruppo test: `uses(TestCase::class)->group('…')`, non `describe(…)->group(…)`.
+     */
+    function test(string $description, ?Closure $closure = null): void
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('describe')) {
+    /**
+     * Stub PHPStan per `describe()` — return void (DescribeCall è `@internal`).
+     */
+    function describe(string $description, Closure $tests): void
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
 if (! function_exists('xotSeedModelOnce')) {
     /**
      * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
      *
+     * @param class-string<Model> $modelClass
+     */
+    function xotSeedModelOnce(string $modelClass): void
+    {
+        (new GetFactoryAction())
      * @param  class-string<Model>  $modelClass
      */
     function xotSeedModelOnce(string $modelClass): void
@@ -280,5 +327,27 @@ if (! function_exists('xotSeedModelOnce')) {
         (new GetFactoryAction)
             ->execute($modelClass)
             ->createOne();
+    }
+}
+
+if (! function_exists('merge_translation_files')) {
+    /**
+     * Merge multiple PHP translation files into a single array.
+     *
+     * @param string $first   First translation file path
+     * @param string ...$rest Additional translation file paths
+     *
+     * @return array<string, mixed>
+     */
+    function merge_translation_files(string $first, string ...$rest): array
+    {
+        $result = (array) require $first;
+
+        foreach ($rest as $file) {
+            $result = array_replace_recursive($result, (array) require $file);
+        }
+
+        /* @phpstan-ignore return.type */
+        return $result;
     }
 }

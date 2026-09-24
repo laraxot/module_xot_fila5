@@ -15,6 +15,11 @@ class DiffAssocRecursiveAction
 
     /**
      * @param  array<int|string, mixed>  $data
+     * @param array<int|string, mixed> $data
+     *
+     *
+     * @param array<int|string, mixed> $data
+     *
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -37,8 +42,12 @@ class DiffAssocRecursiveAction
     }
 
     /**
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
+     * @param array<int|string, mixed> $arr_1
+     * @param array<int|string, mixed> $arr_2
+     *
+     * @param array<int|string, mixed> $arr_1
+     * @param array<int|string, mixed> $arr_2
+     *
      * @return array<int|string, array<int|string, mixed>>
      */
     public function execute(array $arr_1, array $arr_2): array

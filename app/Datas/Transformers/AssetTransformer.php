@@ -20,6 +20,11 @@ class AssetTransformer implements Transformer
     /**
      * Trasforma un riferimento di file in un percorso completo.
      *
+     * @param DataProperty          $_property La proprietà di dati (non utilizzata)
+     * @param mixed                 $value     Il valore da trasformare (es. "user::image.png")
+     * @param TransformationContext $_context  Il contesto di trasformazione (non utilizzato)
+     *
+     *
      * @param  DataProperty  $_property  La proprietà di dati (non utilizzata)
      * @param  mixed  $value  Il valore da trasformare (es. "user::image.png")
      * @param  TransformationContext  $_context  Il contesto di trasformazione (non utilizzato)

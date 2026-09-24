@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
-use Throwable;
 use Webmozart\Assert\Assert;
+
+use function Safe\copy;
 
 class AssetAction
 {

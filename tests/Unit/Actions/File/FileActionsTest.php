@@ -21,6 +21,10 @@ test('fix path action works', function (): void {
 
 test('view path action works', function (): void {
     // Replace GetViewNameSpacePathAction with a spy that returns test path
+    $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
+        public function execute(string $namespace): string
+        {
+            return 'test_ns' === $namespace ? '/view/path' : '';
     $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction
     {
         public function execute(string $namespace): string
@@ -44,7 +48,7 @@ test('asset path action works', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-            return $module === 'test_module' ? '/module/path/' : '';
+            return 'test_module' === $module ? '/module/path/' : '';
         },
     ]);
 

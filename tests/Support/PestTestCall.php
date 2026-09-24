@@ -6,7 +6,9 @@ namespace Modules\Xot\Tests\Support;
 
 final class PestTestCall
 {
-    public function __construct(private readonly ?object $call = null) {}
+    public function __construct(private readonly ?object $call = null)
+    {
+    }
 
     public function group(string ...$groups): self
     {
@@ -54,8 +56,8 @@ final class PestTestCall
     }
 
     /**
-     * @param  class-string|string  $abstract
-     * @param  (callable(mixed): void)|null  $mock
+     * @param class-string|string          $abstract
+     * @param (callable(mixed): void)|null $mock
      */
     public function mock(string $abstract, ?callable $mock = null): self
     {

@@ -11,7 +11,8 @@ final class PdfBuilderAdapter implements PdfBuilderContract
 {
     public function __construct(
         private object $builder,
-    ) {}
+    ) {
+    }
 
     public function format(string $format): PdfBuilderContract
     {

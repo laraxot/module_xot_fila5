@@ -28,6 +28,9 @@ class HasTableWithXotTestClass
     public function getLayoutView(): object
     {
         $mock = Mockery::mock();
+    public function getLayoutView(): object
+    {
+        $mock = \Mockery::mock();
         $mock->shouldReceive('getTableColumns')->andReturn([]);
         $mock->shouldReceive('getTableContentGrid')->andReturn([]);
 
@@ -37,7 +40,7 @@ class HasTableWithXotTestClass
     /**
      * @return array<string, Column|ColumnGroup|Component>
      */
-    /** @return array<string, Column> */
+    /** @return array<string, \Filament\Tables\Columns\Column> */
     public function getTableColumns(): array
     {
         return [];
@@ -46,7 +49,7 @@ class HasTableWithXotTestClass
     public function getTable(): Table
     {
         /** @var Table&MockInterface $table */
-        $table = Mockery::mock(Table::class);
+        $table = \Mockery::mock(Table::class);
 
         return $table;
     }
@@ -72,7 +75,7 @@ class HasTableWithXotTestClass
     }
 
     /**
-     * @return array<string|int, BaseFilter>
+     * @return array<string|int, \Filament\Tables\Filters\BaseFilter>
      */
     public function getTableFilters(): array
     {
@@ -127,6 +130,7 @@ class HasTableWithXotTestClass
      * @return Model|array<string, mixed>|null
      */
     public function getTableRecord(): Model|array|null
+    public function getTableRecord(): mixed
     {
         return null;
     }
@@ -141,7 +145,7 @@ class HasTableWithXotTestClass
      */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
-        return new Collection;
+        return new Collection();
     }
 
     public function getAllTableRecordsCount(): int
@@ -166,6 +170,7 @@ class HasTableWithXotTestClass
      * @return Builder<Model>|null
      */
     public function getTableQueryForExport(): ?Builder
+    public function getTableQueryForExport(): mixed
     {
         return null;
     }
@@ -174,6 +179,7 @@ class HasTableWithXotTestClass
      * @return Builder<Model>|null
      */
     public function getFilteredTableQuery(): ?Builder
+    public function getFilteredTableQuery(): mixed
     {
         return null;
     }
@@ -182,6 +188,7 @@ class HasTableWithXotTestClass
      * @return Builder<Model>|null
      */
     public function getFilteredSortedTableQuery(): ?Builder
+    public function getFilteredSortedTableQuery(): mixed
     {
         return null;
     }
@@ -190,6 +197,7 @@ class HasTableWithXotTestClass
      * @return Builder<Model>|null
      */
     public function getAllTableSummaryQuery(): ?Builder
+    public function getAllTableSummaryQuery(): mixed
     {
         return null;
     }
@@ -198,6 +206,7 @@ class HasTableWithXotTestClass
      * @return Builder<Model>|null
      */
     public function getPageTableSummaryQuery(): ?Builder
+    public function getPageTableSummaryQuery(): mixed
     {
         return null;
     }
@@ -267,6 +276,19 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    public function deselectAllTableRecords(): void
+    {
+    }
+
+    public function mountTableAction(): void
+    {
+    }
+
+    public function mountTableBulkAction(): void
+    {
+    }
+
+    public function mountedTableActionRecord(): ?Model
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
@@ -278,6 +300,25 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    public function replaceMountedTableAction(): void
+    {
+    }
+
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
+
+    public function resetTableSearch(): void
+    {
+    }
+
+    public function resetTableColumnSearch(): void
+    {
+    }
+
+    public function toggleTableReordering(): void
+    {
+    }
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}

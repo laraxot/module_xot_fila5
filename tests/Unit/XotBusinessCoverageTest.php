@@ -11,7 +11,7 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 /** @return array{string, string} */

@@ -9,6 +9,18 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseAggregateFactory;
 
 /**
+ *
+ * @property string      $id
+ * @property int         $bucket
+ * @property int         $period
+ * @property string      $type
+ * @property string      $key
+ * @property string|null $key_hash
+ * @property string      $aggregate
+ * @property string      $value
+ * @property int|null    $count
+ *
+ * @method static PulseAggregateFactory          factory($count = null, $state = [])
  * @property string $id
  * @property int $bucket
  * @property int $period

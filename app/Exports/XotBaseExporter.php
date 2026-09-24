@@ -17,6 +17,7 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use OpenSpout\Common\Entity\Cell;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Common\Entity\Style\Style;
+use Webmozart\Assert\Assert;
 
 /**
  * Exporter Filament 5 che riusa il contratto `getXlsFields()` dei Resource.
@@ -65,7 +66,8 @@ abstract class XotBaseExporter extends Exporter
      *
      * @template TModel of Model
      *
-     * @param  Builder<TModel>  $query
+     * @param Builder<TModel> $query
+     *
      * @return Builder<TModel>
      */
     #[\Override]
@@ -81,7 +83,7 @@ abstract class XotBaseExporter extends Exporter
             $with[] = 'ratingMorphs';
         }
 
-        return $with === [] ? $query : $query->with($with);
+        return [] === $with ? $query : $query->with($with);
     }
 
     /**
@@ -174,14 +176,15 @@ abstract class XotBaseExporter extends Exporter
     }
 
     /**
-     * @param  class-string|null  $resource
-     * @param  array<array-key, mixed>  $filters
-     * @param  class-string|null  $transClass  come ExportXlsAction: classe Livewire/page, non il Resource
+     * @param class-string|null       $resource
+     * @param array<array-key, mixed> $filters
+     * @param class-string|null       $transClass come ExportXlsAction: classe Livewire/page, non il Resource
+     *
      * @return array<int, ExportColumn>
      */
     protected static function resolveColumns(?string $resource, array $filters, ?string $transClass = null): array
     {
-        if ($resource === null || ! method_exists($resource, 'getXlsFields')) {
+        if (null === $resource || ! method_exists($resource, 'getXlsFields')) {
             return [];
         }
 
@@ -217,12 +220,18 @@ abstract class XotBaseExporter extends Exporter
         $livewire = app('livewire')->current();
 
         if ($livewire instanceof ListRecords) {
-            /** @var class-string<Model> */
-            return $livewire->getResource()::getModel();
+            $model = $livewire->getResource()::getModel();
+            Assert::classExists($model);
+            Assert::true(is_a($model, Model::class, true));
+
+            return $model;
         }
 
-        /** @var class-string<Model> */
-        return parent::getModel();
+        $model = parent::getModel();
+        Assert::classExists($model);
+        Assert::true(is_a($model, Model::class, true));
+
+        return $model;
     }
 
     /**

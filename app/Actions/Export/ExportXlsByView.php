@@ -24,6 +24,10 @@ class ExportXlsByView
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  string  $filename  Nome del file Excel
      * @param  string|null  $transKey  Chiave di traduzione per i campi
+     * @param View               $view     La vista da esportare
+     * @param array<int, string> $fields   Campi da includere nell'export
+     * @param string             $filename Nome del file Excel
+     * @param string|null        $transKey Chiave di traduzione per i campi
      */
     public function execute(
         View $view,

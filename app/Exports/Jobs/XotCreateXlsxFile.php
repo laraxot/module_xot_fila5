@@ -19,6 +19,7 @@ use Webmozart\Assert\Assert;
 use function Safe\tempnam;
 use function Safe\unlink;
 
+
 /**
  * `CreateXlsxFile` che legge il CSV intermedio con l'escape con cui e' stato
  * scritto (`XotBaseExporter::CSV_ESCAPE`) e conserva le righe vuote (una riga
@@ -50,14 +51,14 @@ class XotCreateXlsxFile extends CreateXlsxFile
 
         $csvDelimiter = $this->exporter::getCsvDelimiter();
 
-        $writeRowsFromFile = function (string $file, ?Style $style, Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
+        $writeRowsFromFile = function (string $file, ?Style $style, \Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
             $stream = $disk->readStream($file);
             Assert::resource($stream);
             $csvReader = CsvReader::from($stream);
             $csvReader->setDelimiter($csvDelimiter);
             $csvReader->setEscape(XotBaseExporter::CSV_ESCAPE);
             $csvReader->includeEmptyRecords();
-            $csvResults = (new Statement)->process($csvReader);
+            $csvResults = (new Statement())->process($csvReader);
 
             foreach ($csvResults->getRecords() as $values) {
                 $row = $makeRow($values, $style);

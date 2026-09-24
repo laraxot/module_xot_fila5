@@ -8,6 +8,7 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
 use Webmozart\Assert\Assert;
 
@@ -44,6 +45,11 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         // Configura query logging per performance monitoring
         if (config('filament_optimization.monitoring.log_slow_queries', true)) {
             $this->configureQueryLogging();
+        }
+
+        // Registra middleware di monitoraggio
+        if (config('filament_optimization.monitoring.memory_profiling', false)) {
+            $this->registerMemoryMonitoring();
         }
 
         // Ottimizzazioni per l'ambiente di produzione
@@ -113,6 +119,15 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
                 }
             });
         }
+    }
+
+    /**
+     * Registra il middleware di monitoraggio memoria.
+     */
+    private function registerMemoryMonitoring(): void
+    {
+        // Il middleware verrà registrato nel kernel HTTP
+        app('router')->pushMiddlewareToGroup('web', FilamentMemoryMonitorMiddleware::class);
     }
 
     /**

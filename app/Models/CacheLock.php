@@ -13,6 +13,10 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *
  * @property string $key
  * @property string $owner
+ *
+ * @property int $expiration
+ *
+ * @method static CacheLockFactory          factory($count = null, $state = [])
  * @property int $expiration
  *
  * @method static CacheLockFactory factory($count = null, $state = [])
