@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Actions\Exports\Models\Export;
@@ -15,6 +16,8 @@ use ReflectionMethod;
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RDhUBQ
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Actions\Exports\Models\Export;
 use Illuminate\Database\Eloquent\Model;
@@ -35,6 +38,7 @@ use OpenSpout\Common\Entity\Cell\FormulaCell;
 use OpenSpout\Common\Entity\Cell\NumericCell;
 use OpenSpout\Common\Entity\Cell\StringCell;
 use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
 use function Safe\fopen;
 use function Safe\fwrite;
@@ -43,7 +47,7 @@ use function Safe\rewind;
 /**
  * Stub minimo per verificare gli eager-load di XotBaseExporter::modifyQuery.
  *
- * @property \Illuminate\Database\Eloquent\Collection<int, ExporterEagerLoadModelStub> $ratings
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, ExporterEagerLoadModelStub> $ratings
  */
 final class ExporterEagerLoadModelStub extends Model
 {
@@ -63,10 +67,13 @@ final class ExporterEagerLoadModelStub extends Model
         return $this->hasMany(self::class);
     }
 }
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RDhUBQ
 
 uses(TestCase::class);
 
@@ -84,29 +91,35 @@ class XotBaseExporterStub extends XotBaseExporter
 }
 
 /**
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @param  array<string, mixed>  $filters
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RDhUBQ
  * Action concreta di test: `setUp()` di XotBaseExportAction fissa il job.
  */
-class ExportActionStub extends XotBaseExportAction
-{
-}
+class ExportActionStub extends XotBaseExportAction {}
 
 /**
+<<<<<<< .merge_file_4nP6NF
  * @param array<string, mixed> $filters
  *
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @param  array<string, mixed>  $filters
+>>>>>>> .merge_file_RDhUBQ
  * @return array<int, ExportColumn>
  */
 function resolveExporterColumns(string $resourceClass, array $filters): array
 {
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 <<<<<<< HEAD
     $method = new ReflectionMethod(XotBaseExporterStub::class, 'resolveColumns');
@@ -116,6 +129,9 @@ function resolveExporterColumns(string $resourceClass, array $filters): array
 =======
     $method = new \ReflectionMethod(XotBaseExporterStub::class, 'resolveColumns');
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $method = new ReflectionMethod(XotBaseExporterStub::class, 'resolveColumns');
+>>>>>>> .merge_file_RDhUBQ
 
     /** @var array<int, ExportColumn> $columns */
     $columns = $method->invoke(null, $resourceClass, $filters);
@@ -124,13 +140,16 @@ function resolveExporterColumns(string $resourceClass, array $filters): array
 }
 
 describe('XotBaseExporter — colonne da getXlsFields del Resource', function (): void {
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RDhUBQ
     test('modifyQuery eager-load ratings, ratings.children e ratingMorphs quando esistono', function (): void {
-        $model = new ExporterEagerLoadModelStub();
+        $model = new ExporterEagerLoadModelStub;
 
         $query = $model->newQuery();
         $eager = XotBaseExporterStub::modifyQuery($query)->getEagerLoads();
@@ -140,10 +159,13 @@ describe('XotBaseExporter — colonne da getXlsFields del Resource', function ()
         Assert::assertArrayHasKey('ratingMorphs', $eager);
     });
 
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RDhUBQ
     test('senza ListRecords attivo getColumns e\' una lista vuota', function (): void {
         Assert::assertSame([], XotBaseExporterStub::getColumns());
     });
@@ -170,11 +192,14 @@ describe('XotBaseExporter — colonne da getXlsFields del Resource', function ()
         Assert::assertContains('Obiettivo A', $labels);
         Assert::assertNotContains('ratings_by_id.52.pivot.value', $labels);
     });
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RDhUBQ
 
     test('le intestazioni coincidono con CollectionExport sugli stessi getXlsFields', function (): void {
         $fields = ResourceWithXlsFieldsStub::getXlsFields(['anno' => 2026]);
@@ -276,13 +301,12 @@ describe('XotBaseExporter — review 5.165: overflow, testo lungo, UTF-8, CRLF',
 
 describe('XotBaseExporter — CSV intermedio con escape CSV_ESCAPE (round-trip intatto)', function (): void {
     /**
-     * @param list<list<string>> $rows
-     *
+     * @param  list<list<string>>  $rows
      * @return list<list<string>>
      */
     function csvRoundTrip(array $rows): array
     {
-        $writer = Writer::from(new \SplTempFileObject());
+        $writer = Writer::from(new \SplTempFileObject);
         $writer->setEscape(XotBaseExporter::CSV_ESCAPE);
         foreach ($rows as $row) {
             $writer->insertOne($row);
@@ -297,7 +321,7 @@ describe('XotBaseExporter — CSV intermedio con escape CSV_ESCAPE (round-trip i
         $reader->includeEmptyRecords();
 
         /** @var list<list<string>> $out */
-        $out = iterator_to_array((new Statement())->process($reader)->getRecords(), false);
+        $out = iterator_to_array((new Statement)->process($reader)->getRecords(), false);
 
         return $out;
     }
@@ -316,7 +340,7 @@ describe('XotBaseExporter — CSV intermedio con escape CSV_ESCAPE (round-trip i
     test('XotBaseExportAction usa XotPrepareCsvExport, che sceglie XotExportCsv', function (): void {
         Assert::assertSame(XotPrepareCsvExport::class, ExportActionStub::make('export')->getJob());
 
-        $job = new \ReflectionMethod(XotPrepareCsvExport::class, 'getExportCsvJob');
+        $job = new ReflectionMethod(XotPrepareCsvExport::class, 'getExportCsvJob');
         Assert::assertSame(XotExportCsv::class, $job->invoke($job->getDeclaringClass()->newInstanceWithoutConstructor()));
     });
 
@@ -332,8 +356,11 @@ describe('XotBaseExporter — CSV intermedio con escape CSV_ESCAPE (round-trip i
 
         Assert::assertInstanceOf(XotCreateXlsxFile::class, $job);
     });
+<<<<<<< .merge_file_4nP6NF
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RDhUBQ
 });

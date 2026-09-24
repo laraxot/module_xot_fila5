@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Tables\Filters;
 
+<<<<<<< .merge_file_eze6TV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,11 +12,14 @@ namespace Modules\Xot\Filament\Tables\Filters;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_7rPOI3
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
+<<<<<<< .merge_file_eze6TV
 <<<<<<< HEAD
 <<<<<<< HEAD
  * Ternary 
@@ -52,12 +56,16 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * Ternary 
+>>>>>>> .merge_file_7rPOI3
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< .merge_file_eze6TV
 <<<<<<< HEAD
 <<<<<<< HEAD
         /*
@@ -74,12 +82,13 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 <<<<<<< HEAD
 
 =======
+=======
+>>>>>>> .merge_file_7rPOI3
         /*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $this->schema(function (): array {
             return [
                 ToggleButtons::make('value')
+<<<<<<< .merge_file_eze6TV
 <<<<<<< HEAD
 =======
         /*
@@ -90,6 +99,8 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_7rPOI3
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -100,6 +111,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         1 => 'success',
                         0 => 'danger',
                     ])
+<<<<<<< .merge_file_eze6TV
 <<<<<<< HEAD
 <<<<<<< HEAD
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
@@ -130,5 +142,11 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                    ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
+            ];
+        });
+        */
+>>>>>>> .merge_file_7rPOI3
     }
 }

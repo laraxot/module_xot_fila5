@@ -98,6 +98,7 @@ abstract class XotBaseResource extends Resource
     use HasXotTable;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_UWf2fc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -106,10 +107,13 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
 >>>>>>> .merge_file_AwPKDe
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_pEannp
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UWf2fc
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_m6raoP
@@ -122,6 +126,8 @@ abstract class XotBaseResource extends Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_pEannp
     {
         return static::getFormSchemaImplementation();
     }

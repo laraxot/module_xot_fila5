@@ -1,6 +1,9 @@
+<<<<<<< .merge_file_kBe3Fs
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_ytOkhz
 ---
 title: 'Phpstan error'
 module: Xot
@@ -13,9 +16,12 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_kBe3Fs
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ytOkhz
 modulo Geo
 
   Line   \Actions\GetLatitudeLongitudeAction.php
@@ -36,6 +42,7 @@ modulo Xot
  ------ -----------------------------------------------------------------------
   28     Method Illuminate\Support\Collection<int,mixed>::get() invoked with 0
          parameters, 1-2 required.
+<<<<<<< .merge_file_kBe3Fs
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -44,3 +51,5 @@ modulo Xot
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ytOkhz

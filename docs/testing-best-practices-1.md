@@ -204,6 +204,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
+<<<<<<< .merge_file_R2o1Vi
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
@@ -225,12 +226,18 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](xotdata_testing.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](XOTDATA_TESTING.md)
+>>>>>>> .merge_file_n7qtz0
 
 ---
 
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
+<<<<<<< .merge_file_R2o1Vi
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Last Update**: Dicembre 2024
@@ -244,3 +251,6 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 **Last Update**: Dicembre 2024
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Last Update**: Dicembre 2024
+>>>>>>> .merge_file_n7qtz0

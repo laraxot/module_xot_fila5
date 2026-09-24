@@ -9,6 +9,7 @@
 - 📜 [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - La bibbia del Livello 10.
 - 🚫 [No Services Rule](./critical-no-services-rule.md) - Perché usiamo Actions invece dei Service.
 - 🗂️ [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole obbligatorie per Filament.
+<<<<<<< .merge_file_uHjJJS
 <<<<<<< HEAD
 <<<<<<< HEAD
 - 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
@@ -24,6 +25,9 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
+>>>>>>> .merge_file_ElrVec
 
 ## 🛠️ Utility & Trait
 - 🧬 [Trait Patterns](./traits-complete-guide.md) - HasTeams, HasXotTable e altri trait core.
@@ -110,6 +114,7 @@
 - [XotBase Classes & Inheritance Patterns](./xotbase-extension.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Module Dependency Management](./composer-module-dependency-management.md)
+<<<<<<< .merge_file_uHjJJS
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
@@ -129,6 +134,9 @@
 - [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
 - [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
+>>>>>>> .merge_file_ElrVec
 - [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study.md)
 - [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog.md) - Studio completo package-by-package da `composer show`
 - [Database Connection Configuration](./database-configuration-critical-rules.md)

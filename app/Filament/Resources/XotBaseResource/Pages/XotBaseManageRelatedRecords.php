@@ -77,6 +77,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
+<<<<<<< .merge_file_pVSuip
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -85,6 +86,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 =======
     #[\Override]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_G0ntmR
     public function getTableColumns(): array
     {
         return [
@@ -135,6 +138,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< .merge_file_pVSuip
 <<<<<<< HEAD
 <<<<<<< HEAD
                     if ($url === '') {
@@ -144,6 +148,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 =======
                     if ('' === $url) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                    if ($url === '') {
+>>>>>>> .merge_file_G0ntmR
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -156,6 +163,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
+<<<<<<< .merge_file_pVSuip
 <<<<<<< HEAD
 <<<<<<< HEAD
                     if ($url === '') {
@@ -165,6 +173,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 =======
                     if ('' === $url) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                    if ($url === '') {
+>>>>>>> .merge_file_G0ntmR
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 

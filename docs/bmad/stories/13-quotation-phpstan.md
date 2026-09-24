@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_jxl5Bo
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qtncSG
 # BMAD Story 13 — Quotation: 13 errori PHPStan
 
 **Modulo:** `Quotation`

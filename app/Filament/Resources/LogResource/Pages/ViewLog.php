@@ -4,14 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\LogResource\Pages;
 
+<<<<<<< .merge_file_aqH6Qs
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Qr3nRa
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewLog extends XotBaseViewRecord
 {
     protected static string $resource = LogResource::class;
+<<<<<<< .merge_file_aqH6Qs
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -58,4 +62,6 @@ class ViewLog extends XotBaseViewRecord
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Qr3nRa
 }

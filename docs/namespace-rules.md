@@ -27,6 +27,7 @@
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
+<<<<<<< .merge_file_Jsm3o4
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -54,3 +55,7 @@
 =======
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> .merge_file_lOsOe4

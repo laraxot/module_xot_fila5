@@ -48,15 +48,19 @@ interface ModelInputContract extends ModelContract
 5. Gestione null-safety
 
 ## Collegamenti
+<<<<<<< .merge_file_sjlDRC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_l8wMwb
 - [Form Guidelines](../forms/README.md)
 - [Input Components](../components/FORM-COMPONENTS.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+<<<<<<< .merge_file_sjlDRC
 <<<<<<< HEAD
 =======
 =======
@@ -76,3 +80,5 @@ interface ModelInputContract extends ModelContract
 =======
 - [Contracts Overview](./README.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_l8wMwb

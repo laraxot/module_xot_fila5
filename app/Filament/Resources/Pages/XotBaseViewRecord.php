@@ -8,6 +8,7 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
 use Filament\Resources\Pages\ViewRecord as FilamentViewRecord;
+<<<<<<< .merge_file_m5pzCu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -18,16 +19,23 @@ use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
+>>>>>>> .merge_file_KyO2w8
 
 abstract class XotBaseViewRecord extends FilamentViewRecord
 {
     use HasFiltersForm;
 
+<<<<<<< .merge_file_m5pzCu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KyO2w8
     final public function infolist(Schema $schema): Schema
     {
         return $schema->components($this->getInfolistSchema());
@@ -39,12 +47,18 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
      *
      * @return array<string, Component>
      */
-    abstract protected function getInfolistSchema(): array;
+    protected function getInfolistSchema(): array
+    {
+        return [];
+    }
 
+<<<<<<< .merge_file_m5pzCu
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KyO2w8
     /**
      * Get the header actions.
      *

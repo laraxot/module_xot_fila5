@@ -86,6 +86,7 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
+<<<<<<< .merge_file_JSpYEL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -108,6 +109,8 @@ class Foo extends bar
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mP99av
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -200,6 +203,7 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
+<<<<<<< .merge_file_JSpYEL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -217,6 +221,8 @@ class Foo extends bar
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mP99av
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -225,6 +231,7 @@ class Foo extends bar
 
 ### Versione Incoming
 
+<<<<<<< .merge_file_JSpYEL
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -238,3 +245,6 @@ class Foo extends bar
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_mP99av

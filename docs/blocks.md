@@ -101,6 +101,7 @@ Ogni blocco deve seguire questa struttura:
 8. **Codice**: Mantieni il codice pulito e documentato
 
 ## Collegamenti tra versioni di blocks.md
+<<<<<<< .merge_file_45fzd4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -119,11 +120,14 @@ Ogni blocco deve seguire questa struttura:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_BJhqcL
 * [blocks.md](../../../Xot/docs/blocks.md)
 * [blocks.md](../../../User/docs/blocks.md)
 * [blocks.md](../../../UI/docs/blocks.md)
 * [blocks.md](../../../Cms/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/blocks.md)
+<<<<<<< .merge_file_45fzd4
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
@@ -137,3 +141,6 @@ Ogni blocco deve seguire questa struttura:
 =======
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+* [blocks.md](../../../../Themes/One/docs/components/blocks.md)
+>>>>>>> .merge_file_BJhqcL

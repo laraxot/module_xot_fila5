@@ -28,6 +28,7 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 | `PanelModuleResolver` | `Adapters/Filament/PanelModuleAdapter` |
 | `PanelModuleSupport` | Eliminato (duplicato morto) |
 | `PdfBuilderAdapter` | `Adapters/PdfBuilderAdapter` |
+<<<<<<< .merge_file_waEJPb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -38,6 +39,8 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_3kwnDH
 | `PaDesignColors` | `Actions/PaDesignColorsAction` (`filamentPalette()` + `execute()`) |
 | `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
 
@@ -48,6 +51,7 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 - Il solo chiamante runtime storico di `RouteService::inAdmin()` usa ora l'helper globale canonico.
 - Nessuna facade multi-metodo e nessuna injection Action→Action: il bordo pubblico resta
   `app(Action::class)->execute(...)`.
+<<<<<<< .merge_file_waEJPb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,6 +67,8 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_3kwnDH
 
 ## Perché
 

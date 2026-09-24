@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_kwHzAP
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 =======
 >>>>>>> .merge_file_G2oLlP
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vHGSXn
 ---
 title: 'To study — risorse esterne'
 module: Xot
@@ -41,6 +44,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs>
+<<<<<<< .merge_file_kwHzAP
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gLotr8
@@ -60,3 +64,5 @@ https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 =======
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vHGSXn

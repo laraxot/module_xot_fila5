@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_rlTO6n
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,6 +23,8 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KESApZ
 use Modules\Xot\Actions\Classes\GetFilenameByClassnameAction;
 use Modules\Xot\Models\Log;
 use Modules\Xot\Tests\TestCase;

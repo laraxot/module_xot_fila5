@@ -17,8 +17,8 @@ test('action URLs fall back to an explicit fragment outside a route', function (
     /** @var array<string, mixed> $paramsArray */
     $paramsArray = $params->toArray();
 
-<<<<<<< HEAD
     expect((new BuildActionUrlAction)->execute($paramsArray))->toBe('#edit');
+<<<<<<< .merge_file_1fdEVl
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_DqOtoL
@@ -35,6 +35,8 @@ test('action URLs fall back to an explicit fragment outside a route', function (
     expect((new BuildActionUrlAction())->execute($paramsArray))->toBe('#edit');
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Zj17qi
 });
 
 test('component analyzer exposes its supported filters', function (): void {

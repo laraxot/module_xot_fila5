@@ -76,6 +76,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_6uJZIN
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
@@ -93,6 +94,9 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 =======
 - [Configurazione Generale](CONFIGURATION.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Configurazione Generale](configuration.md)
+>>>>>>> .merge_file_SXQagk
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -105,6 +109,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti Correlati
 - [Configurazione Moduli](MODULE_CONFIGURATION.md)
+<<<<<<< .merge_file_6uJZIN
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Gestione Risorse](assets.md)
@@ -132,6 +137,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Gestione Risorse](assets.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](troubleshooting.md)
+>>>>>>> .merge_file_SXQagk
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -209,6 +219,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
    - Assicurarsi che tutte le versioni necessarie del logo siano presenti
 
 ## Collegamenti
+<<<<<<< .merge_file_6uJZIN
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
@@ -226,5 +237,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 =======
 - [Configurazione Generale](CONFIGURATION.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Configurazione Generale](configuration.md)
+>>>>>>> .merge_file_SXQagk
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)

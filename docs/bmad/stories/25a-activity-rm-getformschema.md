@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_4lZl02
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_pVPHye
 # 25a-activity — Rimuovere getFormSchema da SnapshotResource e StoredEventResource
 
 **Modulo:** Activity

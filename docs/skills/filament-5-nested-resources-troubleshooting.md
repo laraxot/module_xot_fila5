@@ -1,9 +1,12 @@
+<<<<<<< .merge_file_4euhyC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_idBfza
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_QuvVpb
 ---
 title: "Skill: Troubleshooting Nested Resources in Filament 5.x"
 module: "Xot"
@@ -15,6 +18,7 @@ qmd: "filament 5 nested resources troubleshooting"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_4euhyC
 <<<<<<< HEAD
 =======
 =======
@@ -24,6 +28,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_QuvVpb
 # Skill: Troubleshooting Nested Resources in Filament 5.x
 
 ## Contesto Critico: Filament 5.x NON Supporta Nested Resources

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_mqtRCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@
 =======
 >>>>>>> .merge_file_QfUtb3
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qljmAV
 ---
 title: "Agents"
 type: reference
@@ -21,6 +24,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_mqtRCf
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
@@ -33,6 +37,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qljmAV
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

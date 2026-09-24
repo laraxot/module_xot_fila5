@@ -114,6 +114,7 @@ trait EnumTrait
      * ```
      */
     /**
+<<<<<<< .merge_file_X7OD9V
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Blueprint  $table  The table blueprint
@@ -126,6 +127,10 @@ trait EnumTrait
      * @param Blueprint             $table     The table blueprint
      * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Blueprint  $table  The table blueprint
+     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
+>>>>>>> .merge_file_uuK0xV
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -134,6 +139,7 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
+<<<<<<< .merge_file_X7OD9V
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($migration === null || ! $migration->hasColumn($name)) {
@@ -143,6 +149,9 @@ trait EnumTrait
 =======
             if (null === $migration || ! $migration->hasColumn($name)) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($migration === null || ! $migration->hasColumn($name)) {
+>>>>>>> .merge_file_uuK0xV
                 $definition($table); // @phpstan-ignore callable.nonCallable
             }
         }

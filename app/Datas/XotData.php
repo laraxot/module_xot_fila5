@@ -14,6 +14,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -26,10 +27,13 @@ use function Safe\realpath;
 use function Safe\realpath;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_07Td1a
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
 use function Safe\realpath;
@@ -38,6 +42,10 @@ use function Safe\realpath;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use function Safe\realpath;
+
+>>>>>>> .merge_file_07Td1a
 /**
  * Class Modules\Xot\Datas\XotData.
  * ----.
@@ -143,6 +151,7 @@ class XotData extends Data implements Wireable
     public function getUserByEmail(string $email): UserContract
     {
         $user_class = $this->getUserClass();
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
         $userInstance = new $user_class;
@@ -152,6 +161,9 @@ class XotData extends Data implements Wireable
 =======
         $userInstance = new $user_class();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $userInstance = new $user_class;
+>>>>>>> .merge_file_07Td1a
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
@@ -159,6 +171,7 @@ class XotData extends Data implements Wireable
         /** @var (Model&UserContract)|null $user */
         $user = $user_class::query()->where('email', $email)->first();
 
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($user === null) {
@@ -168,6 +181,9 @@ class XotData extends Data implements Wireable
 =======
         if (null === $user) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($user === null) {
+>>>>>>> .merge_file_07Td1a
             throw new \Exception('user not found for email '.$email);
         }
 
@@ -328,6 +344,7 @@ class XotData extends Data implements Wireable
     public function iAmSuperAdmin(): bool
     {
         $user = Auth::user();
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($user === null) {
@@ -337,6 +354,9 @@ class XotData extends Data implements Wireable
 =======
         if (null === $user) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($user === null) {
+>>>>>>> .merge_file_07Td1a
             return false;
         }
 
@@ -347,6 +367,7 @@ class XotData extends Data implements Wireable
         // Utilizziamo un'asserzione per garantire che hasRole restituisca un booleano
         $result = $user->hasRole('super-admin');
 
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $result === true;
@@ -356,10 +377,14 @@ class XotData extends Data implements Wireable
 =======
         return true === $result;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return $result === true;
+>>>>>>> .merge_file_07Td1a
     }
 
     public function getProfileModel(): ProfileContract
     {
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($this->profile !== null) {
@@ -369,6 +394,9 @@ class XotData extends Data implements Wireable
 =======
         if (null !== $this->profile) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($this->profile !== null) {
+>>>>>>> .merge_file_07Td1a
             return $this->profile;
         }
 
@@ -386,6 +414,7 @@ class XotData extends Data implements Wireable
     /**
      * Update the XotData instance.
      *
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $data
@@ -395,6 +424,9 @@ class XotData extends Data implements Wireable
 =======
      * @param array<string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_07Td1a
      */
     public function update(array $data): self
     {
@@ -530,6 +562,7 @@ class XotData extends Data implements Wireable
 
         // $enum_class = Arr::get($user_class::casts(),'type',null);
         $enum_class = Arr::get($castsResult, 'type', null);
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($enum_class === null) {
@@ -539,6 +572,9 @@ class XotData extends Data implements Wireable
 =======
         if (null === $enum_class) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($enum_class === null) {
+>>>>>>> .merge_file_07Td1a
             $enum_class = Str::of($user_class)
                 ->replace('\\Models\\', '\\Enums\\')
                 ->append('TypeEnum')
@@ -565,8 +601,11 @@ class XotData extends Data implements Wireable
         if (! $this->force_ssl) {
             return false;
         }
+<<<<<<< .merge_file_xQjEV9
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_07Td1a
         if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === 'localhost') {
             return false;
         }
@@ -575,6 +614,7 @@ class XotData extends Data implements Wireable
         }
         // AWS ELB
         if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+<<<<<<< .merge_file_xQjEV9
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -590,6 +630,8 @@ class XotData extends Data implements Wireable
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_07Td1a
             return true;
         }
 

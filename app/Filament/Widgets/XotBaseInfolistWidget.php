@@ -56,6 +56,7 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     public function infolist(Schema $schema): Schema
     {
         $record = $this->getInfolistRecord();
+<<<<<<< .merge_file_0SOF9V
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($record !== null) {
@@ -65,6 +66,9 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
 =======
         if (null !== $record) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($record !== null) {
+>>>>>>> .merge_file_3wiIVi
             $schema->record($record);
         }
 

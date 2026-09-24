@@ -10,6 +10,7 @@ use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ViewAction;
+<<<<<<< .merge_file_7S17op
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -18,6 +19,8 @@ use Filament\Tables\Columns\TextColumn;
 =======
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_F6HunX
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -30,6 +33,7 @@ class ListLogs extends XotBaseListRecords
     protected static string $resource = LogResource::class;
 
     #[\Override]
+<<<<<<< .merge_file_7S17op
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -67,6 +71,8 @@ class ListLogs extends XotBaseListRecords
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_F6HunX
     public function getTableFilters(): array
     {
         return [

@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_dKZD3Z
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_RI3b5z
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview
@@ -93,6 +96,7 @@ $content = Safe\file_get_contents('file.txt');
 - [Quality Tools Zen](./quality-tools-zen.md)
 - [Code Quality Audit](./code-quality-audit.md)
 - [CI Quality Pipeline](./ci-quality-pipeline.md)
+<<<<<<< .merge_file_dKZD3Z
 <<<<<<< HEAD
 =======
 =======
@@ -111,3 +115,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/code-quality
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/code-quality-1-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RI3b5z

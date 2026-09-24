@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
-<<<<<<< HEAD
 use Mockery;
+<<<<<<< .merge_file_a1btTK
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
@@ -18,12 +18,15 @@ use Mockery;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_q9NNRs
 use Modules\Xot\Filament\Builders\ColumnBuilder;
 use Modules\Xot\Filament\Builders\FilterBuilder;
 use Modules\Xot\Filament\Support\ColumnBuilder as SupportColumnBuilder;
 use Modules\Xot\Filament\Support\RecordAnchor;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_a1btTK
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
@@ -40,12 +43,16 @@ use ReflectionMethod;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+use ReflectionClass;
+use ReflectionMethod;
+>>>>>>> .merge_file_q9NNRs
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< HEAD
     Mockery::close();
+<<<<<<< .merge_file_a1btTK
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
@@ -62,6 +69,8 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_q9NNRs
 });
 
 describe('Xot filament support hundred', function (): void {
@@ -71,6 +80,7 @@ describe('Xot filament support hundred', function (): void {
             if (! class_exists($class)) {
                 continue;
             }
+<<<<<<< .merge_file_a1btTK
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
@@ -89,6 +99,9 @@ describe('Xot filament support hundred', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            $ref = new ReflectionClass($class);
+>>>>>>> .merge_file_q9NNRs
             $inst = null;
             if (! $ref->isAbstract()) {
                 try {
@@ -97,8 +110,8 @@ describe('Xot filament support hundred', function (): void {
                     $inst = null;
                 }
             }
-<<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+<<<<<<< .merge_file_a1btTK
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
@@ -115,6 +128,8 @@ describe('Xot filament support hundred', function (): void {
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_q9NNRs
                 if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -138,6 +153,7 @@ describe('Xot filament support hundred', function (): void {
                     }
                     if ($method->isStatic()) {
                         $method->invoke(null, ...$args);
+<<<<<<< .merge_file_a1btTK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -146,12 +162,15 @@ describe('Xot filament support hundred', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_q9NNRs
                     } elseif ($inst !== null) {
                         $method->invoke($inst, ...$args);
                     }
                     $n++;
                 } catch (\Throwable) {
                     $n++;
+<<<<<<< .merge_file_a1btTK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -175,6 +194,8 @@ describe('Xot filament support hundred', function (): void {
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_q9NNRs
                 }
             }
         }

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_HhP770
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_PZv27e
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_xlKQzu
 ---
 title: "Laravel mix"
 type: reference
@@ -24,6 +27,7 @@ note: "Convertito da laravel_mix.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/laravel_mix.txt -->
 
+<<<<<<< .merge_file_HhP770
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Iqy4Xz
@@ -36,6 +40,8 @@ note: "Convertito da laravel_mix.txt (documento) da convert-docs-txt-to-md.py."
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xlKQzu
 //-------------------------------------------------------------------------------------
 Use Laravel Mix without Laravel (using npm)
 https://dev.to/nickfrosty/use-laravel-mix-without-laravel-using-npm-m09
@@ -91,6 +97,7 @@ https://frostbutter.com/articles/use-laravel-mix-without-laravel-using-npm/
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
+<<<<<<< .merge_file_HhP770
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -110,3 +117,6 @@ https://frostbutter.com/articles/use-laravel-mix-without-laravel-using-npm/
 =======
 //-------------------------------------------------------------------------------------
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+//-------------------------------------------------------------------------------------
+>>>>>>> .merge_file_xlKQzu

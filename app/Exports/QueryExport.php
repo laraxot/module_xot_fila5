@@ -34,10 +34,13 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public ?string $transKey = null;
 
     /** @var QueryBuilder|EloquentBuilder<Model> */
+<<<<<<< .merge_file_5ImU5U
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_VvjknK
     /** @var QueryBuilder|EloquentBuilder<Model> */
     public QueryBuilder|EloquentBuilder $query;
 
@@ -45,6 +48,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
 <<<<<<< HEAD
      * @param  QueryBuilder|EloquentBuilder<Model>  $query
      * @param  array<int, int|string>  $fields
+<<<<<<< .merge_file_5ImU5U
 =======
     public QueryBuilder|EloquentBuilder $query;
 
@@ -56,6 +60,8 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      * @param QueryBuilder|EloquentBuilder<Model> $query
      * @param array<int, int|string>              $fields
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_VvjknK
      */
     public function __construct(QueryBuilder|EloquentBuilder $query, ?string $transKey = null, array $fields = [])
     {
@@ -81,6 +87,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         }
 
         $first = $this->query->first();
+<<<<<<< .merge_file_5ImU5U
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($first === null) {
@@ -90,6 +97,9 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
 =======
         if (null === $first) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($first === null) {
+>>>>>>> .merge_file_VvjknK
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
 
@@ -180,6 +190,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     private function normalizeRow(mixed $row): array
     {
+<<<<<<< .merge_file_5ImU5U
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($row === null) {
@@ -189,6 +200,9 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
 =======
         if (null === $row) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($row === null) {
+>>>>>>> .merge_file_VvjknK
             return [];
         }
 

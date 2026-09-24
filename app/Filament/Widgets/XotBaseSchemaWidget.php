@@ -31,6 +31,7 @@ use Webmozart\Assert\Assert;
  * validazione campi solo nello schema — submit usa `$this->form->getState()` (mai `validateForm()`).
  * La *Form class è lo spartito (campi + regole + dehydrate). MAI duplicare TextInput nel widget.
  *
+<<<<<<< .merge_file_7NuwJY
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property Schema $form
@@ -40,6 +41,9 @@ use Webmozart\Assert\Assert;
 =======
  * @property Schema                    $form
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property Schema $form
+>>>>>>> .merge_file_MBhhxG
  * @property array<string, mixed>|null $data
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
@@ -86,6 +90,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     {
         $formClass = static::formClass();
 
+<<<<<<< .merge_file_7NuwJY
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($formClass !== null) {
@@ -95,6 +100,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 =======
         if (null !== $formClass) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($formClass !== null) {
+>>>>>>> .merge_file_MBhhxG
             $method = static::schemaMethod();
 
             if (! method_exists($formClass, $method)) {
@@ -111,6 +119,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
+<<<<<<< .merge_file_7NuwJY
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string  $formClass  Es. UserForm::class
@@ -125,6 +134,10 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
      * @param string       $method    Es. getRegisterFormSchema
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string  $formClass  Es. UserForm::class
+     * @param  string  $method  Es. getRegisterFormSchema
+>>>>>>> .merge_file_MBhhxG
      * @return array<int|string, Component>
      */
     protected static function resourceFormSchema(string $formClass, string $method): array
@@ -145,6 +158,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
+<<<<<<< .merge_file_7NuwJY
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($model === null) {
@@ -154,6 +168,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 =======
         if (null === $model) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($model === null) {
+>>>>>>> .merge_file_MBhhxG
             return [];
         }
         if (\is_string($model)) {
@@ -192,6 +209,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         $this->form->fill([]);
     }
 
+<<<<<<< .merge_file_7NuwJY
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function save(): void {}
@@ -205,6 +223,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function save(): void {}
+>>>>>>> .merge_file_MBhhxG
 
     protected function getFormModel(): Model|string|null
     {

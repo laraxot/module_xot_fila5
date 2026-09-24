@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_ZspKJj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2lEWV1
 title: "XotBaseSchemaWidget — pattern Filament 5 (codice reale)"
 type: concept
 module: Xot
@@ -46,6 +49,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     public function mount(): void
     {
         $this->form->fill([]);
+<<<<<<< .merge_file_ZspKJj
 <<<<<<< HEAD
 =======
 =======
@@ -156,6 +160,12 @@ abstract class XotBaseSchemaWidget extends Widget implements HasSchemas
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+    }
+}
+```
+
+>>>>>>> .merge_file_2lEWV1
 ## Religione
 
 | Pezzo | Owner |
@@ -179,6 +189,7 @@ Versioni precedenti di questo file citavano `Modules\Xot\Filament\Traits\Interac
 php -l Modules/Xot/app/Filament/Widgets/XotBaseSchemaWidget.php
 cd laravel && php artisan view:cache
 ```
+<<<<<<< .merge_file_ZspKJj
 <<<<<<< HEAD
 =======
 =======
@@ -258,3 +269,5 @@ Vedi discussion #265 per dibattito su:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2lEWV1

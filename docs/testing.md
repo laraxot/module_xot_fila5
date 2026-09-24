@@ -692,6 +692,7 @@ test('no memory leaks in repeated operations', function (): void {
 **Ultimo aggiornamento**: Dicembre 2024
 **Framework**: Pest v2.x
 **Coverage Target**: 90%+ per core framework
+<<<<<<< .merge_file_TrUZVC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -712,3 +713,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/testing-guid
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/testing-guide.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_F2ksDv

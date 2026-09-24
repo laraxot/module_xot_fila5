@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_KJf81M
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,6 +43,8 @@
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_eAlcJO
 ---
 title: "Readme"
 type: reference
@@ -49,6 +52,7 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< .merge_file_KJf81M
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,6 +84,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_eAlcJO
 
 # Best Practices
 
@@ -111,6 +117,7 @@ updated: 2026-08-24
 
 ## Code Quality
 - PHPStan level 9+ for all new code
+<<<<<<< .merge_file_KJf81M
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -180,6 +187,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_eAlcJO
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
@@ -189,6 +198,7 @@ updated: 2026-08-24
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
+<<<<<<< .merge_file_KJf81M
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -360,3 +370,5 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_eAlcJO

@@ -146,6 +146,7 @@ Prima di ogni commit, verificare:
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< .merge_file_i7GeKW
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Versione**: 1.0.0
@@ -165,3 +166,7 @@ Prima di ogni commit, verificare:
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> .merge_file_Maod7R

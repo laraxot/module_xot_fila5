@@ -283,15 +283,19 @@ interface XotBaseResourceContract
     public static function getModel(): string;
     public static function getRelations(): array;
 <<<<<<< HEAD
+<<<<<<< .merge_file_AN0Tcm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vLLwmb
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_AN0Tcm
 <<<<<<< HEAD
 =======
 =======
@@ -301,6 +305,8 @@ interface XotBaseResourceContract
 =======
     public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vLLwmb
     public static function getTableColumns(): array;
 }
 ```

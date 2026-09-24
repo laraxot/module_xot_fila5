@@ -23,12 +23,15 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_xZkTfO
 use Safe\Exceptions\FilesystemException;
 =======
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
@@ -42,6 +45,7 @@ use PHPUnit\Framework\MockObject\Rule\InvokedCount;
  * DatabaseTransactions belongs in each module TestCase when that module needs transactional isolation.
  *
  * @property object|null $action
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property Model|null $model
@@ -51,14 +55,20 @@ use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 =======
  * @property Model|null  $model
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property Model|null $model
+>>>>>>> .merge_file_xZkTfO
  * @property object|null $service
  * @property object|null $widget
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_xZkTfO
  * @property Model|null $testModel
  * @property object|null $extraClass
  * @property Model|null $baseModel
@@ -66,6 +76,7 @@ use PHPUnit\Framework\MockObject\Rule\InvokedCount;
  * @property string|null $workDir
  * @property mixed $saved
  * @property mixed $extra_attributes
+<<<<<<< .merge_file_RIi0YP
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -80,6 +91,8 @@ use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xZkTfO
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
@@ -116,6 +129,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     public mixed $extra_attributes = null;
 
     /**
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $data
@@ -125,6 +139,9 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
      * @param array<string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_xZkTfO
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -132,6 +149,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $data
@@ -141,6 +159,9 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
      * @param array<string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_xZkTfO
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
     {
@@ -155,6 +176,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<T>  $class
@@ -166,6 +188,9 @@ abstract class XotBaseTestCase extends BaseTestCase
      * @param class-string<T> $class
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<T>  $class
+>>>>>>> .merge_file_xZkTfO
      * @return MockObject&T
      */
     public function createUnitMock(string $class): MockObject
@@ -176,6 +201,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<T>  $abstract
@@ -190,6 +216,10 @@ abstract class XotBaseTestCase extends BaseTestCase
      * @param (\Closure(MockInterface&T): void)|null $callback
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(MockInterface&T): void)|null  $callback
+>>>>>>> .merge_file_xZkTfO
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -200,6 +230,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $mock;
     }
 
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -233,12 +264,15 @@ abstract class XotBaseTestCase extends BaseTestCase
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xZkTfO
     public function skipTest(string $message = ''): never
     {
         $this->markTestSkipped($message);
     }
 
     /**
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<\Throwable>  $exceptionClass
@@ -248,16 +282,19 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
      * @param class-string<\Throwable> $exceptionClass
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<\Throwable>  $exceptionClass
+>>>>>>> .merge_file_xZkTfO
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
-        if ($message !== null) {
 =======
-        if (null !== $message) {
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_xZkTfO
+        if ($message !== null) {
             $this->expectExceptionMessageIsOrContains($message);
 =======
         if (null !== $message) {
@@ -288,8 +325,8 @@ abstract class XotBaseTestCase extends BaseTestCase
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
-<<<<<<< HEAD
                     new ArrayLoader,
+<<<<<<< .merge_file_RIi0YP
 =======
                     new ArrayLoader(),
 >>>>>>> laraxot/dev
@@ -299,6 +336,8 @@ abstract class XotBaseTestCase extends BaseTestCase
                 return new Translator(
                     new ArrayLoader(),
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xZkTfO
                     'en'
                 );
             });
@@ -342,6 +381,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
@@ -351,12 +391,16 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
      * @param array<string, mixed> $attributes
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $attributes
+>>>>>>> .merge_file_xZkTfO
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
         /** @var Factory<Model&UserContract> $factory */
         $factory = UserFactory::new();
         /** @var UserContract $user */
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
         $user = $factory->create($attributes);
@@ -366,11 +410,15 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
         $user = $factory->createOne($attributes);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $user = $factory->create($attributes);
+>>>>>>> .merge_file_xZkTfO
 
         return $user;
     }
 
     /**
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
@@ -380,6 +428,9 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
      * @param array<string, mixed> $attributes
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $attributes
+>>>>>>> .merge_file_xZkTfO
      */
     protected static function createTestTenant(array $attributes = []): Tenant
     {
@@ -390,6 +441,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
@@ -399,6 +451,9 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
      * @param array<string, mixed> $attributes
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $attributes
+>>>>>>> .merge_file_xZkTfO
      */
     protected static function createTestModule(array $attributes = []): Module
     {
@@ -425,11 +480,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         $configured = config('xot.testing.sqlite_file');
 
-<<<<<<< HEAD
         if (is_string($configured) && $configured !== '') {
-=======
-        if (is_string($configured) && '' !== $configured) {
->>>>>>> laraxot/dev
             return database_path($configured);
         }
 
@@ -440,11 +491,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             $found = [];
         }
 
-<<<<<<< HEAD
         if (count($found) === 1) {
-=======
-        if (1 === count($found)) {
->>>>>>> laraxot/dev
             return $found[0];
         }
 
@@ -466,11 +513,7 @@ abstract class XotBaseTestCase extends BaseTestCase
 <<<<<<< HEAD
     protected function prepareSharedSqliteForTesting(): void
     {
-<<<<<<< HEAD
         if ($this->app === null) {
-=======
-        if (null === $this->app) {
->>>>>>> laraxot/dev
             $this->refreshApplication();
         }
 
@@ -481,11 +524,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         // XotBaseMigration::resolveConnectionName(), altrimenti ogni insert su users
         // fallisce con "No database selected" sulle macchine senza il DB dedicato.
         $userDatabase = config('database.connections.user.database');
-<<<<<<< HEAD
         if (! is_string($userDatabase) || $userDatabase === '') {
-=======
-        if (! is_string($userDatabase) || '' === $userDatabase) {
->>>>>>> laraxot/dev
             $this->app['config']->set('database.connections.user', [
                 'driver' => 'sqlite',
                 'database' => $database,
@@ -510,6 +549,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (config("database.connections.{$connection}.driver") !== 'sqlite') {
@@ -519,6 +559,9 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
             if ('sqlite' !== config("database.connections.{$connection}.driver")) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+>>>>>>> .merge_file_xZkTfO
                 continue;
             }
 
@@ -531,6 +574,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             DB::purge($connection);
         }
 
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($sqliteConnections === []) {
@@ -540,6 +584,9 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
         if ([] === $sqliteConnections) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($sqliteConnections === []) {
+>>>>>>> .merge_file_xZkTfO
             return;
         }
 
@@ -565,6 +612,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $connectionsProperty->setValue($database, $resolved);
     }
 
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -581,6 +629,8 @@ abstract class XotBaseTestCase extends BaseTestCase
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xZkTfO
     public function bindInstance(string $abstract, object $instance): void
     {
         $this->instance($abstract, $instance);
@@ -597,6 +647,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< .merge_file_RIi0YP
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<\Throwable>  $exception
@@ -606,6 +657,9 @@ abstract class XotBaseTestCase extends BaseTestCase
 =======
      * @param class-string<\Throwable> $exception
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<\Throwable>  $exception
+>>>>>>> .merge_file_xZkTfO
      */
     public function expectThrowable(string $exception): void
     {

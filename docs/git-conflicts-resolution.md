@@ -1,5 +1,6 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
+<<<<<<< .merge_file_ePP7Js
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,6 +24,9 @@
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## Data: 2025-01-06
+>>>>>>> .merge_file_w1lWmA
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -118,6 +122,7 @@ $res=Locality::query()
 ```bash
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
+<<<<<<< .merge_file_ePP7Js
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -141,6 +146,9 @@ $res=Locality::query()
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## Data: 2025-01-06
+>>>>>>> .merge_file_w1lWmA
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -265,6 +273,7 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
+<<<<<<< .merge_file_ePP7Js
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -307,6 +316,8 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> .merge_file_w1lWmA
 - [Conflict Resolution](laravel/Modules/Geo/docs/conflict-resolution.md)
 
 ### Modulo User
@@ -314,11 +325,14 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution-2025-01-06.md)
+<<<<<<< .merge_file_ePP7Js
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_w1lWmA
 
 ## Best Practices Applicate
 
@@ -373,6 +387,7 @@ php artisan lang:check
 ## Collegamenti Correlati
 
 ### Documentazione Moduli
+<<<<<<< .merge_file_ePP7Js
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -427,6 +442,8 @@ php artisan lang:check
 **Stato**: ✅ Completato
 <<<<<<< .merge_file_onZeDm
 =======
+=======
+>>>>>>> .merge_file_w1lWmA
 - [Geo Conflict Resolution](laravel/Modules/Geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/docs/theme-translation-conflicts-resolution.md)
 
@@ -440,6 +457,7 @@ php artisan lang:check
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
+<<<<<<< .merge_file_ePP7Js
 =======
 >>>>>>> .merge_file_XsJlfn
 >>>>>>> laraxot/dev
@@ -449,3 +467,5 @@ php artisan lang:check
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_w1lWmA

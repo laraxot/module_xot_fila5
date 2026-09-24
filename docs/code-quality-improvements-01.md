@@ -87,6 +87,7 @@ use TransTrait {
 ## Collegamenti
 
 - [README Modulo Xot](./README.md)
+<<<<<<< .merge_file_qoNB4M
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Code Quality Rules](./code-quality.md)
@@ -106,3 +107,7 @@ use TransTrait {
 - [Code Quality Rules](./code-quality.md)
 - [Best Practices](./best-practices.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Code Quality Rules](./code-quality.md)
+- [Best Practices](./best-practices.md)
+>>>>>>> .merge_file_av7hjU

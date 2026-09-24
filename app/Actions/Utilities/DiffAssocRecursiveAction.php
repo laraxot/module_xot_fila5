@@ -13,6 +13,7 @@ class DiffAssocRecursiveAction
     /**
      * Recursively compute difference of arrays with additional index check.
      *
+<<<<<<< .merge_file_LkW9oy
      * <<<<<<< HEAD
      *
      * @param array<int|string, mixed> $array1
@@ -82,6 +83,10 @@ class DiffAssocRecursiveAction
      *
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int|string, mixed>  $array1
+     * @param  array<int|string, mixed>  $array2
+>>>>>>> .merge_file_MVe08q
      * @return array<int|string, mixed>
      */
     public function execute(array $array1, array $array2): array

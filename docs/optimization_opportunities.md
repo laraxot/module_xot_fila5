@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_nAV9d7
 ---
 module: theme
 topic: optimization_opportunities
@@ -388,3 +389,5 @@ return array_merge(
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RelHWo

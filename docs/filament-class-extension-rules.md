@@ -66,6 +66,7 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 | ❌ SBAGLIATO | ✅ CORRETTO |
 |-------------|------------|
 | `Filament\Actions\ActionGroup` | `Modules\Xot\Filament\Actions\XotBaseActionGroup` |
+<<<<<<< .merge_file_oumBO1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -81,6 +82,9 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+>>>>>>> .merge_file_IRBNzj
 
 ### Resources
 
@@ -637,15 +641,19 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_oumBO1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IRBNzj
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_oumBO1
 <<<<<<< HEAD
 =======
 =======
@@ -655,6 +663,8 @@ class UserResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IRBNzj
     {
         return [
             TextInput::make('name')->required(),
@@ -914,6 +924,7 @@ Quando finisci una modifica devi sempre controllare con:
 
 ---
 
+<<<<<<< .merge_file_oumBO1
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
@@ -927,3 +938,6 @@ Quando finisci una modifica devi sempre controllare con:
 =======
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+>>>>>>> .merge_file_IRBNzj

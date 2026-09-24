@@ -243,15 +243,19 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_sMwENH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Lms2xw
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_sMwENH
 <<<<<<< HEAD
 =======
 =======
@@ -261,6 +265,8 @@ class MioModelloResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Lms2xw
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -784,6 +790,7 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< .merge_file_sMwENH
 <<<<<<< HEAD
 <<<<<<< HEAD
 ```
@@ -797,3 +804,6 @@ public function process(\Modules\User\Models\User $user) {
 =======
 ```
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+```
+>>>>>>> .merge_file_Lms2xw

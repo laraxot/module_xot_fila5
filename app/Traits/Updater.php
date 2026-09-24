@@ -14,6 +14,7 @@ use Webmozart\Assert\Assert;
  * Trait Updater.
  * https://dev.to/hasanmn/automatically-update-createdby-and-updatedby-in-laravel-using-bootable-traits-28g9.
  *
+<<<<<<< .merge_file_8Cc2tB
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
@@ -30,6 +31,11 @@ use Webmozart\Assert\Assert;
  * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
  * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property int|null $created_by ID dell'utente che ha creato il record
+ * @property int|null $updated_by ID dell'utente che ha aggiornato il record
+ * @property int|null $deleted_by ID dell'utente che ha eliminato il record
+>>>>>>> .merge_file_mCO4Vb
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property ProfileContract|null $deleter

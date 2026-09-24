@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,8 @@ https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a
 =======
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_s23jQH
 ---
 title: 'Content selection and highlighting'
 module: Xot
@@ -33,36 +36,21 @@ converted_from: content_selection_and_highlighting.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
-<<<<<<< HEAD
 
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
-
->>>>>>> laraxot/dev
-=======
-=======
-# content_selection_and_highlighting
-
-<!-- Contenuto migrato da _docs/content_selection_and_highlighting.txt -->
->>>>>>> laraxot/dev
-
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
-
+<<<<<<< .merge_file_oLw5Qg
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_s23jQH
 https://github.com/codeshifu/react-highlight-pop
 
 https://stackoverflow.com/questions/18543676/display-popup-above-highlighted-text-in-contenteditable-div
 
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,10 +65,13 @@ https://stackoverflow.com/questions/18543676/display-popup-above-highlighted-tex
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_s23jQH
 https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-highlight-js-9d9ab2797b8
 
 https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highlight-function
 
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -105,11 +96,14 @@ https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_s23jQH
 http://720kb.github.io/butler/
 https://720kb.github.io/highlighter.js/
 
 https://github.com/anonyco/Highlighter-JS
 
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,13 +131,13 @@ https://devpost.com/software/highlighter-js
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_9qv76y
-https://jobjects.com/docs/highlighter/jquery //deprecated
 =======
-https://jobjects.com/project_docs/highlighter/jquery //deprecated
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_s23jQH
+https://jobjects.com/docs/highlighter/jquery //deprecated
 
 https://devpost.com/software/highlighter-js
 
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< .merge_file_MvSC0G
 <<<<<<< HEAD
 
@@ -155,12 +149,15 @@ https://devpost.com/software/highlighter-js
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_s23jQH
 ------------------------------------------------------------
 https://mxb.dev/blog/medium-share-highlight-eleventy/
 https://github.com/maxboeck/eleventy-plugin-share-highlight
 
 ---------------------------------------------------------------
 
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -180,6 +177,8 @@ https://github.com/maxboeck/eleventy-plugin-share-highlight
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_s23jQH
 https://css-tricks.com/how-to-create-actions-for-selected-text-with-the-selection-api/    !!!
 
 -----------------------------------------------------------------
@@ -188,6 +187,7 @@ https://github.com/anythingcodes/highlight-share
 -------------------------------------------------------------------------------
 https://estevanmaito.github.io/sharect/
 
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -223,6 +223,11 @@ https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-
 https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---------------------------------------------------------------
+https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
+
+>>>>>>> .merge_file_s23jQH
 --------------------------------------------------------------
 
 https://codecanyon.net/item/highlighter-pro-a-mediumcominspired-text-highlighting-and-inline-commenting-tool-for-wordpress/20743682
@@ -259,6 +264,7 @@ https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a
 --------------------------------------------------------------
 --------------------------------------------------------------
 
+<<<<<<< .merge_file_oLw5Qg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -289,6 +295,10 @@ tvb.bibliotechetrevigiane.it
 tvb.bibliotechetrevigiane.it
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+tvb.bibliotechetrevigiane.it
+
+>>>>>>> .merge_file_s23jQH
 -------------------
 <div class="dd ew od xf" data-popper-reference-hidden="false" data-popper-escaped="false"
 data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px;

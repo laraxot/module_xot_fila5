@@ -6,8 +6,8 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
-<<<<<<< HEAD
 final class XotAbsSelect3 extends XotBaseSelect {}
+<<<<<<< .merge_file_V1lRzO
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_mYAADq
@@ -29,3 +29,5 @@ final class XotAbsSelect3 extends XotBaseSelect
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_iBqmpA

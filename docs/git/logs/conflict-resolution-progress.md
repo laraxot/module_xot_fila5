@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---
+title: "Stato Avanzamento Risoluzione Conflitti Git"
+module: "Xot"
+type: concept
+tags: [conflict, resolution, progress]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution progress"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 # Stato Avanzamento Risoluzione Conflitti Git
 
 ## Panoramica

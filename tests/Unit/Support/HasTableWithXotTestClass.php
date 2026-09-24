@@ -174,6 +174,7 @@ class HasTableWithXotTestClass
     /** @return Collection<int, mixed> */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
+<<<<<<< .merge_file_vHJdjU
 <<<<<<< HEAD
 <<<<<<< HEAD
         return new Collection;
@@ -183,6 +184,9 @@ class HasTableWithXotTestClass
 =======
         return new Collection();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return new Collection;
+>>>>>>> .merge_file_uUM5du
     }
 
     public function getAllTableRecordsCount(): int
@@ -342,13 +346,17 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< .merge_file_vHJdjU
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_uUM5du
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
 
     public function mountTableBulkAction(): void {}
+<<<<<<< .merge_file_vHJdjU
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -365,6 +373,8 @@ class HasTableWithXotTestClass
     }
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uUM5du
 
     public function mountedTableActionRecord(): ?Model
 =======
@@ -375,8 +385,11 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< .merge_file_vHJdjU
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_uUM5du
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -386,6 +399,7 @@ class HasTableWithXotTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+<<<<<<< .merge_file_vHJdjU
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -412,6 +426,8 @@ class HasTableWithXotTestClass
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uUM5du
 
     public function parseTableFilterName(): string
     {

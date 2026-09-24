@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_khKn97
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nh5UJG
 # Issue GH #01 — Rimuovere TransTrait ridondante da XotBaseResourceTable
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

@@ -3,21 +3,70 @@
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
-## Misura 2026-09-21 (comando che certifica)
+## Misura 2026-09-24 (sera) — GeoTrait generics + re-zero
+
+`analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
+**0** `file_errors`. Canon:
+[geo-trait.md](../Geo/docs/traits/geo-trait.md) ·
+[phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
+
+## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
+
+Dopo cache clear, `cd laravel && ./vendor/bin/phpstan analyse Modules` ha riportato
+**571** poi **394** `file_errors` (non più lo zero certificato del 2026-09-23).
+
+### Perché (religione vs Symplify)
+
+Laraxot usa `*Contract` (non `*Interface`), basi `BaseModel` / `XotBase*` / `TestCase`
+(non `Abstract*`), trait `Has*` (non suffisso `*Trait`). Symplify
+`ExplicitClassPrefixSuffixRule` (via `naming-rules.neon`, `symplify.naming=true`)
+impone esattamente il contrario. Memoria:
+[contract-suffix-no-interfaces-folder.md](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md).
+
+### Cosa è successo
+
+`Modules/CloudStorage/composer.json` (require-dev aggiunto 2026-09-24) ha tirato
+`symplify/phpstan-rules ^14.10`. `phpstan/extension-installer` auto-carica
+`config/naming-rules.neon` → ~393 errori di naming sul tree. In parallelo,
+helper Xot coverage eliminati (`git D`) producevano ~148 `class.notFound`:
+`FilamentSchemaCoverage.php`, `ModuleBusinessCoverage.php`,
+`ModuleDeepCoverage.php`, `ModuleExecuteCoverage.php`,
+`ModuleRemainingCoverage.php` in `Modules/Xot/tests/`.
+
+`phpstan.neon` resta **immutabile** (niente ignore/baseline per spegnere Symplify).
+
+### Remediation
+
+1. Rimuovere `symplify/phpstan-rules` da `CloudStorage` `require-dev` (e
+   `composer update` / dump autoload extension-installer).
+2. Ripristinare i cinque helper coverage in `Modules/Xot/tests/` se assenti.
+3. Non rinominare il codebase verso le convenzioni Symplify.
+
+### Verifica
 
 ```bash
 cd laravel
-php -d memory_limit=-1 ./vendor/bin/phpstan analyse --no-progress --memory-limit=-1
-# EXIT 0
-# totals.file_errors: 0
-# stderr: solo "Note: Using configuration file .../phpstan.neon"
-# nessun "Result is incomplete because of severe errors"
+rm -rf /tmp/phpstan && mkdir -p /tmp/phpstan
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G
 ```
 
-`analyse Modules` nello stesso momento è anch'esso a 0. I due conteggi coincidono:
-non resta residuo `typeCoverage` visibile sul full-tree.
+## Misura 2026-09-23 (story 5.224 — comando utente)
 
-Stesso giorno, dopo la verifica 18.59: un `analyse` su file Media caricava Setting e
+```bash
+cd laravel
+rm -rf /tmp/phpstan && mkdir -p /tmp/phpstan
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G
+# EXIT 0 — [OK] No errors — 9421 file
+# phpstan.neon immutato (level max, ignoreErrors vuoto)
+```
+
+Pest **non** eseguito: host `10.100.200.15` (personale2022).
+
+Misura precedente 2026-09-21: `analyse` senza path e `analyse Modules` entrambi a 0
+(story 18.59). Path CLI spegne `type-coverage`; il certify «siamo a zero» resta
+il comando senza argomenti. Oggi l'utente ha chiesto esplicitamente `analyse Modules`.
+
+Il 2026-09-21, dopo la verifica 18.59: un `analyse` su file Media caricava Setting e
 il bootstrap Filament andava in fatal (`Cannot override final method
 XotBaseResource::getFormSchema()`), poi 25 errori Setting, poi marker `<<<<<<<`
 in `Activity/LogViewer.php` (mute-gate). Tutto chiuso. Rilancio certifying: ancora 0.
@@ -54,6 +103,7 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
+<<<<<<< .merge_file_9CIdMu
 - [phpstan-journey.md](../../../../docs/wiki/second-brain/phpstan-journey.md) — second brain
 =======
 # PHPStan Status - Xot Module
@@ -139,3 +189,8 @@ The Xot module serves as the foundation for:
 *Last Updated: 2025-11-17*
 *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
+- [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
+- [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
+>>>>>>> .merge_file_yBlZom

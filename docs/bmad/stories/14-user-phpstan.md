@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_nn3HQs
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PUWMup
 # BMAD Story 14 — User: 12 errori PHPStan (test)
 
 **Modulo:** `User`

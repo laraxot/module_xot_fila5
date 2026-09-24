@@ -1,4 +1,5 @@
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
+<<<<<<< .merge_file_iMSWUw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -10,6 +11,8 @@
 =======
 # Risoluzione Merge Conflicts Massivi - [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_5GLfyO
 
 ## 🔥 Problema Iniziale
 
@@ -287,6 +290,7 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
 - [Code Quality Standards](./code-quality-standards.md)
+<<<<<<< .merge_file_iMSWUw
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
@@ -300,3 +304,6 @@ Questi possono essere corretti in un secondo momento se necessario.
 =======
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+>>>>>>> .merge_file_5GLfyO

@@ -1,5 +1,6 @@
 # Gestione delle Eccezioni
 
+<<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ba9tzW
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
 
 ## HandlerDecorator
@@ -43,6 +46,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 4. Supporto per PHPStan livello 9
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
+<<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -97,13 +101,15 @@ Core module for the FixCity Platform.
 =======
 =======
 >>>>>>> .merge_file_ytmLNH
+=======
+>>>>>>> .merge_file_Ba9tzW
 ## Collegamenti
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
-<<<<<<< HEAD
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+<<<<<<< .merge_file_HdQbLZ
 =======
 >>>>>>> laraxot/dev
 =======
@@ -132,6 +138,8 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ba9tzW
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -162,6 +170,7 @@ Core module for the FixCity Platform.
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -343,6 +352,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 <<<<<<< HEAD
 >>>>>>> .merge_file_ytmLNH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Ba9tzW
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -387,6 +398,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VNV2jy
@@ -602,3 +614,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ba9tzW

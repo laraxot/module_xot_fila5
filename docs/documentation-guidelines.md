@@ -214,6 +214,7 @@ Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collega
 
 ```markdown
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/project_docs/README.md).
+<<<<<<< .merge_file_L1wrwX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -225,6 +226,8 @@ Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/p
 =======
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/project_docs/readme.md).
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wmoyXU
 ```
 
 ### 2. Documentazione Centralizzata
@@ -233,6 +236,7 @@ Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo X
 
 ```markdown
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/project_docs/best-practices.md).
+<<<<<<< .merge_file_L1wrwX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -244,6 +248,8 @@ Per le best practices generali sul framework, consultare la [guida principale](.
 =======
 Per le best practices generali sul framework, consultare la [guida principale](../xot/project_docs/best-practices.md).
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wmoyXU
 ```
 
 ## Esempi di Eccellenza
@@ -300,6 +306,7 @@ Per implementare queste linee guida:
 
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Documentazione Laravel](https://laravel.com/docs)
+<<<<<<< .merge_file_L1wrwX
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
@@ -313,3 +320,6 @@ Per implementare queste linee guida:
 =======
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Documentazione PHPDoc](https://docs.phpdoc.org/)
+>>>>>>> .merge_file_wmoyXU

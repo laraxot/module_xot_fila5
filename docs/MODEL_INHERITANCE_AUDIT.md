@@ -27,6 +27,7 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 #### User
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
+<<<<<<< .merge_file_y5rT0F
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
@@ -40,6 +41,9 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 =======
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
+>>>>>>> .merge_file_5eYEm0
 
 ---
 
@@ -322,6 +326,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
+<<<<<<< .merge_file_y5rT0F
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [User Module Fixes](../../User/docs/model_inheritance_fixes.md)
@@ -339,6 +344,10 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 - [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [User Module Fixes](../../User/docs/model_inheritance_fixes.md)
+- [User Module Analysis](../../User/docs/model_inheritance_analysis.md)
+>>>>>>> .merge_file_5eYEm0
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)

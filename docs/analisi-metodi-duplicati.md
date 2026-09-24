@@ -4,6 +4,7 @@
 
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-MASTER.md)
 📖 **Documento Originale:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
+<<<<<<< .merge_file_BNaECS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -17,6 +18,8 @@
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../../docs/analisi-metodi-duplicati-MASTER.md](../../../../docs/analisi-metodi-duplicati-master.md)
 📖 **Documento Originale:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_y9DP3X
 
 > ⚠️ **IMPORTANTE:** Questo documento è specifico per il modulo Xot. Per l'analisi completa con dati reali, ROI, implementazioni concrete e migration guide, consultare il DOCUMENTO MASTER.
 
@@ -263,15 +266,19 @@ class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< .merge_file_BNaECS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_y9DP3X
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_BNaECS
 <<<<<<< HEAD
 =======
 =======
@@ -281,6 +288,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_y9DP3X
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),
@@ -348,6 +357,7 @@ Se l'unificazione viene implementata correttamente:
 
 ## Link Utili
 
+<<<<<<< .merge_file_BNaECS
 <<<<<<< HEAD
 <<<<<<< HEAD
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
@@ -361,6 +371,9 @@ Se l'unificazione viene implementata correttamente:
 =======
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> .merge_file_y9DP3X
 - 📖 [Regole Service Provider](./service-provider.md)
 - 📖 [Regole BaseModel](./model-inheritance-rules.md)
 - 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
@@ -370,6 +383,7 @@ Se l'unificazione viene implementata correttamente:
 | Data | Versione | Modifiche |
 |------|----------|-----------|
 | 2025-10-15 | 1.0 | Creazione documento iniziale |
+<<<<<<< .merge_file_BNaECS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -381,10 +395,13 @@ Se l'unificazione viene implementata correttamente:
 =======
 | [DATE] | 1.0 | Creazione documento iniziale |
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_y9DP3X
 
 ---
 
 **Stato:** 📋 Draft per Review
+<<<<<<< .merge_file_BNaECS
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Responsabile:** Team Xot Core
@@ -398,3 +415,6 @@ Se l'unificazione viene implementata correttamente:
 =======
 **Responsabile:** Team Xot Core
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Responsabile:** Team Xot Core
+>>>>>>> .merge_file_y9DP3X

@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Mockery;
+<<<<<<< .merge_file_IGmFNc
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_aykYk5
@@ -24,10 +24,13 @@ use Mockery;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_N5FSxm
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
 use ReflectionMethod;
 =======
@@ -42,10 +45,14 @@ use ReflectionMethod;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+use ReflectionMethod;
+>>>>>>> .merge_file_N5FSxm
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
     Mockery::close();
 =======
@@ -64,6 +71,9 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    Mockery::close();
+>>>>>>> .merge_file_N5FSxm
 });
 
 describe('Xot migration getModelClass and uuid paths', function (): void {
@@ -84,6 +94,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 
         // Force getModelClass() discovery path (model_class null until resolved)
         try {
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
             new class extends XotBaseMigration
             {
@@ -112,6 +123,11 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+            new class extends XotBaseMigration
+            {
+                public function up(): void {}
+>>>>>>> .merge_file_N5FSxm
             };
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
@@ -131,6 +147,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             'value' => 'v',
         ]);
 
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -139,6 +156,8 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_N5FSxm
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
@@ -147,6 +166,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
         };
 
         $isUuid = new ReflectionMethod($migration, 'isUuidColumnType');
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -173,10 +193,13 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_N5FSxm
         $isUuid->setAccessible(true);
         Assert::assertTrue($isUuid->invoke($migration, 'char'));
 
         // Force convert when id is uuid-like
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
         $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
 =======
@@ -195,6 +218,9 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
         $convert = new \ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
+>>>>>>> .merge_file_N5FSxm
         $convert->setAccessible(true);
         try {
             $convert->invoke(
@@ -209,8 +235,8 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                 [
                     'pivot_table' => 'cache_locks',
                     'pivot_fk' => 'key',
-<<<<<<< HEAD
                     'pivot_post_update' => static function (): void {},
+<<<<<<< .merge_file_IGmFNc
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_aykYk5
@@ -230,6 +256,8 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                     },
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_N5FSxm
                 ],
             );
         } catch (\Throwable $e) {
@@ -246,6 +274,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
         DB::table('cache')->insert(['id' => 1, 'uuid' => null, 'key' => 'a', 'value' => 'b']);
         DB::table('cache')->insert(['id' => 2, 'uuid' => (string) Str::uuid(), 'key' => 'c', 'value' => 'd']);
 
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
         $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
 =======
@@ -264,6 +293,9 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
         $backfill = new \ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
+>>>>>>> .merge_file_N5FSxm
         $backfill->setAccessible(true);
         try {
             $backfill->invoke($migration);
@@ -276,6 +308,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             if (! method_exists($migration, $name)) {
                 continue;
             }
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
             $rm = new ReflectionMethod($migration, $name);
 =======
@@ -294,6 +327,9 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             $rm = new \ReflectionMethod($migration, $name);
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            $rm = new ReflectionMethod($migration, $name);
+>>>>>>> .merge_file_N5FSxm
             $rm->setAccessible(true);
             $args = [];
             foreach ($rm->getParameters() as $param) {
@@ -305,6 +341,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                 $tn = $param->getType() instanceof \ReflectionNamedType ? $param->getType()->getName() : '';
                 $pn = $param->getName();
                 $args[] = match (true) {
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -313,6 +350,8 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_N5FSxm
                     $tn === Blueprint::class => new Blueprint(DB::connection(), 'cache'),
                     $tn === \Closure::class || $tn === 'callable' => static function (Blueprint $t): void {
                         $t->id();
@@ -325,6 +364,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                     $pn === 'class' => CacheModel::class,
                     $tn === 'string' => 'cache',
                     $tn === 'bool' => true,
+<<<<<<< .merge_file_IGmFNc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -354,6 +394,8 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_N5FSxm
                     default => null,
                 };
             }

@@ -56,6 +56,7 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,10 +65,13 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dSJnCZ
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -80,6 +84,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dSJnCZ
     {
         return [
             // Schema del form
@@ -112,6 +118,7 @@ class MyResource extends XotBaseResource
 
 2. **IMPLEMENTARE nella Resource**
    - ✅ `protected static ?string $model`
+<<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -135,6 +142,9 @@ class MyResource extends XotBaseResource
 =======
    - ✅ `public static function getFormSchema(): array`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+   - ✅ `public function getFormSchema(): array`
+>>>>>>> .merge_file_dSJnCZ
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -247,6 +257,7 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -255,10 +266,13 @@ class ListRecords extends XotBaseListRecords
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dSJnCZ
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -271,6 +285,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dSJnCZ
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -600,6 +616,7 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -608,10 +625,13 @@ public function getTableColumns(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dSJnCZ
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7uoB0s
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_v0df22
@@ -624,6 +644,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dSJnCZ
 {
     return [
         'nome' => TextInput::make('nome'),

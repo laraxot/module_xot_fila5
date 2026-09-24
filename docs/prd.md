@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_4gHeQq
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,6 +47,8 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 =======
 >>>>>>> .merge_file_bsTbqy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Avuum7
 # Product Requirements Document (PRD) - Xot Module
 
 **Module**: Xot
@@ -469,6 +472,7 @@ Xot/
 | Engineering Lead | | | |
 | Tech Lead | | | |
 | Stakeholder | | | |
+<<<<<<< .merge_file_4gHeQq
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hKc5Vz
@@ -512,3 +516,5 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Avuum7

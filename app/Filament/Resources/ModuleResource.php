@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< .merge_file_7quil0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -16,6 +17,8 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_3nvtUD
 use Filament\Resources\Pages\Page;
 use Illuminate\Support\Str;
 use Modules\Xot\Models\Module;
@@ -24,6 +27,7 @@ class ModuleResource extends XotBaseResource
 {
     protected static ?string $model = Module::class;
 
+<<<<<<< .merge_file_7quil0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -46,6 +50,8 @@ class ModuleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_3nvtUD
     #[\Override]
     public static function getRelations(): array
     {

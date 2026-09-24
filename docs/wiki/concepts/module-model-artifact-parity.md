@@ -1,6 +1,7 @@
 ---
 type: concept
 module: Xot
+<<<<<<< .merge_file_hbc55p
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -17,11 +18,14 @@ module: Xot
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YpF5Cm
 updated: 2026-06-30
 qmd: "xot module model migration factory seeder parity audit N equals N"
 related:
   - ../../../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md
   - ../../module-directory-structure-rule.md
+<<<<<<< .merge_file_hbc55p
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -41,10 +45,13 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YpF5Cm
 ---
 
 # Module model artifact parity
 
+<<<<<<< .merge_file_hbc55p
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -57,6 +64,8 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YpF5Cm
 ## Regola N = N = N
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
@@ -94,6 +103,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 ## Collegamenti
 
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+<<<<<<< .merge_file_hbc55p
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -111,6 +121,8 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YpF5Cm
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
 
@@ -146,6 +158,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 
 ## Collegamenti
 
+<<<<<<< .merge_file_hbc55p
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -162,15 +175,19 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+>>>>>>> .merge_file_YpF5Cm
 - [module-directory-structure-rule.md](../../module-directory-structure-rule.md)
 - [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
 - [data-sacred](../../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md)
->>>>>>> 64619e34 (.)
-=======
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+<<<<<<< .merge_file_hbc55p
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YpF5Cm

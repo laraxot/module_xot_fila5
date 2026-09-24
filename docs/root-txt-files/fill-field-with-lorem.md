@@ -3,9 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
-=======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 =======
 =======
@@ -99,11 +99,9 @@ http://enneagon.org/phrases
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
->>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
@@ -195,10 +193,15 @@ updated: 2026-08-24
 - <http://enneagon.org/phrases>
 - <https://www.fakenamegenerator.com/gen-male-fr-fr.php>
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dgxZoa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MZflI1
 >>>>>>> laraxot/dev

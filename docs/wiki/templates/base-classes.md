@@ -108,6 +108,7 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_42GSa5
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -132,6 +133,9 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_a87Yeu
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_xpwx04
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -354,8 +358,8 @@ class Create{ModelName}Action
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
-<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
+<<<<<<< .merge_file_42GSa5
 =======
 <<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
@@ -387,3 +391,5 @@ class Create{ModelName}Action
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xpwx04

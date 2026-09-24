@@ -759,6 +759,7 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
+<<<<<<< .merge_file_0qioCL
 <<<<<<< HEAD
 <<<<<<< HEAD
             'Quaeris' => 'quaeris',
@@ -774,6 +775,9 @@ class ConnectionManagerService
             'healthcare_app' => 'healthcare_app',
             'ExternalProject' => '<nome progetto>',
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            'Quaeris' => 'quaeris',
+>>>>>>> .merge_file_vZsyRb
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -856,6 +860,7 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
+<<<<<<< .merge_file_0qioCL
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/Contracts/ChartRendererContract.php
@@ -871,12 +876,16 @@ class ContactValidationService
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
 // Modules/ExternalProject/Contracts/ChartRendererContract.php
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// Modules/Quaeris/Contracts/ChartRendererContract.php
+>>>>>>> .merge_file_vZsyRb
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
+<<<<<<< .merge_file_0qioCL
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
@@ -892,6 +901,9 @@ interface ChartRendererContract
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
 // Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> .merge_file_vZsyRb
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1057,6 +1069,7 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
+<<<<<<< .merge_file_0qioCL
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/Services/BulkProcessingService.php
@@ -1072,6 +1085,9 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 // Modules/healthcare_app/Services/BulkProcessingService.php
 // Modules/ExternalProject/Services/BulkProcessingService.php
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// Modules/Quaeris/Services/BulkProcessingService.php
+>>>>>>> .merge_file_vZsyRb
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void
@@ -1463,6 +1479,7 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
+<<<<<<< .merge_file_0qioCL
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
@@ -1476,3 +1493,6 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> .merge_file_vZsyRb

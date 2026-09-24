@@ -14,6 +14,7 @@ namespace Modules\Xot\Filament\Resources;
 class XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_zBo94r
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,10 +23,13 @@ class XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_lnwnQg
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NylvUm
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_zBo94r
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ATwocH
@@ -38,6 +42,8 @@ class XotBaseResource
 =======
     public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NylvUm
     public static function getListTableColumns(): array;
 }
 ```

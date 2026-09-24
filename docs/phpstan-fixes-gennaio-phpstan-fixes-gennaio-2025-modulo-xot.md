@@ -1,15 +1,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_X3YEhL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> .merge_file_n5l3kH
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_X3YEhL
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_n5l3kH
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -21,23 +28,22 @@ metadata:
 ---
 
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_X3YEhL
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_n5l3kH
 >>>>>>> laraxot/dev
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
@@ -212,7 +218,13 @@ public function getAllColors(): array
 
 *Ultimo aggiornamento: Gennaio 2025*
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 ---
 ## Variant 2
 

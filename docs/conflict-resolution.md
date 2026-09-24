@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_VatHzx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dge7RB
 ---
 title: "Report Conflitti Git - Modulo Xot"
 module: "Xot"
@@ -14,6 +17,7 @@ qmd: "conflict resolution"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_VatHzx
 <<<<<<< HEAD
 =======
 =======
@@ -24,16 +28,21 @@ related:
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dge7RB
 # Report Conflitti Git - Modulo Xot
 
 ## Data
 - 2025-01-06
 
+<<<<<<< .merge_file_VatHzx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dge7RB
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto SaluteOra, coinvolgendo moduli Geo, User e tema Two.
 
@@ -239,6 +248,7 @@ php artisan lang:check
 ## Data
 - 2025-01-06
 
+<<<<<<< .merge_file_VatHzx
 <<<<<<< HEAD
 =======
 =======
@@ -246,6 +256,8 @@ php artisan lang:check
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dge7RB
 ## File Risolti in Questa Sessione
 
 | File | Stato | Note |
@@ -267,6 +279,7 @@ php artisan lang:check
 - `php -l` su file PHP aggiornati → ✅
 - `./vendor/bin/phpstan analyse Modules/Xot Modules/UI` → ❌ blocchi esistenti (warning storici riportati nel log)
 
+<<<<<<< .merge_file_VatHzx
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## Backlinks
@@ -348,3 +361,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## Backlinks
+- [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+>>>>>>> .merge_file_dge7RB

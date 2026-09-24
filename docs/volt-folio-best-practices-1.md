@@ -264,6 +264,7 @@ Seguendo queste best practices per l'utilizzo di Volt e Folio, garantirai che il
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
+<<<<<<< .merge_file_2WWoRK
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Filament](https://filamentphp.com/docs)
@@ -277,3 +278,6 @@ Seguendo queste best practices per l'utilizzo di Volt e Folio, garantirai che il
 =======
 - [Documentazione Filament](https://filamentphp.com/docs)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Documentazione Filament](https://filamentphp.com/docs)
+>>>>>>> .merge_file_bqYY1a

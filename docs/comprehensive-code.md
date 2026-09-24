@@ -177,15 +177,19 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mKpopP
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 =======
 =======
@@ -195,6 +199,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mKpopP
 {
     return [
         TextInput::make('first_name'),
@@ -204,15 +210,19 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mKpopP
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 =======
 =======
@@ -222,6 +232,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mKpopP
 {
     return [
         TextInput::make('name')->required(),
@@ -318,15 +330,19 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mKpopP
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 =======
 =======
@@ -336,6 +352,8 @@ class ContactResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mKpopP
     {
         return [
             TextInput::make('first_name'),
@@ -686,15 +704,19 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mKpopP
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 =======
 =======
@@ -704,6 +726,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mKpopP
 {
     return [
         TextInput::make('first_name'),
@@ -713,15 +737,19 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mKpopP
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 =======
 =======
@@ -731,6 +759,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mKpopP
 {
     return [
         TextInput::make('name')->required(),
@@ -830,15 +860,19 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mKpopP
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 =======
 =======
@@ -848,6 +882,8 @@ class ContactResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mKpopP
     {
         return [
             TextInput::make('first_name'),
@@ -1006,6 +1042,7 @@ return [
 **Data Analisi**: [DATE]
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
+<<<<<<< .merge_file_V3OZdO
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Stima Effort**: 40-60 ore di refactoring
@@ -1019,3 +1056,6 @@ return [
 =======
 **Stima Effort**: 40-60 ore di refactoring
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Stima Effort**: 40-60 ore di refactoring
+>>>>>>> .merge_file_mKpopP

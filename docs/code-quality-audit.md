@@ -1,6 +1,7 @@
 # Code Quality Audit Completo - Gennaio 2025
 
 **Data**: 2025-01-22
+<<<<<<< .merge_file_XNK6Ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@
 # Code Quality Audit Completo
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_SAGPri
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -38,6 +41,7 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 
 ### ✅ Completati
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
+<<<<<<< .merge_file_XNK6Ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,6 +53,8 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 =======
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_SAGPri
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%
@@ -116,6 +122,7 @@ Ogni modulo dovrebbe avere:
 - La documentazione viene aggiornata costantemente durante l'analisi
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
+<<<<<<< .merge_file_XNK6Ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-22*
@@ -129,3 +136,6 @@ Ogni modulo dovrebbe avere:
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> .merge_file_SAGPri

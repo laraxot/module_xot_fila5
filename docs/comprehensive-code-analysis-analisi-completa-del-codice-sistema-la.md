@@ -165,6 +165,7 @@ try {
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_107kof
 <<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
@@ -192,6 +193,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hZ3YJs
 {
     return [
         TextInput::make('first_name'),
@@ -203,10 +208,10 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_107kof
 =======
 <<<<<<< HEAD
 public function getFormSchema(): array
@@ -230,6 +235,8 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_hZ3YJs
 {
     return [
         TextInput::make('name')->required(),
@@ -325,6 +332,7 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_107kof
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -349,6 +357,9 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_hZ3YJs
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -689,6 +700,7 @@ try {
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_107kof
 <<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
@@ -716,6 +728,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hZ3YJs
 {
     return [
         TextInput::make('first_name'),
@@ -727,10 +743,10 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_107kof
 =======
 <<<<<<< HEAD
 public function getFormSchema(): array
@@ -754,6 +770,8 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_hZ3YJs
 {
     return [
         TextInput::make('name')->required(),
@@ -852,6 +870,7 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_107kof
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -876,6 +895,9 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JcuszA
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_hZ3YJs
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

@@ -1,11 +1,14 @@
 ---
 title: "NO git restore — studia vecchia versione"
 type: rule
+<<<<<<< .merge_file_5R4jpf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_hC5REj
 tags: [git, recovery, study, refactoring, forward-only]
 created: 2026-01-21
 updated: 2026-07-27
@@ -16,6 +19,7 @@ discussions:
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
 related:
   - ../../../../../../docs/wiki/concepts/git-forward-only-discipline.md
+<<<<<<< .merge_file_5R4jpf
 <<<<<<< HEAD
 =======
 =======
@@ -33,15 +37,20 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_hC5REj
   - ../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md
   - ../../../../../../docs/wiki/memories/no-git-restore-study-improve.md
 ---
 
+<<<<<<< .merge_file_5R4jpf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_hC5REj
 # NO git restore — studia vecchia versione (Xot)
 
 ## Regola assoluta
@@ -58,6 +67,7 @@ Git solo avanti. File perso o rotto:
 
 - Hub: [git-forward-only-discipline](../../../../../../docs/wiki/concepts/git-forward-only-discipline.md)
 - Cursor: `.cursor/rules/git-forward-only.mdc` + `no-git-restore-forward-only.mdc` (**alwaysApply**)
+<<<<<<< .merge_file_5R4jpf
 <<<<<<< HEAD
 =======
 =======
@@ -119,3 +129,5 @@ git checkout -- Modules/<Modulo>/composer.json
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_hC5REj

@@ -78,6 +78,7 @@ it('casts arrays', function (): void {
 });
 
 it('casts objects', function (): void {
+<<<<<<< .merge_file_J6Vj2G
 <<<<<<< HEAD
 <<<<<<< HEAD
     $result = app(SafeFloatCastAction::class)->execute(new stdClass);
@@ -87,6 +88,9 @@ it('casts objects', function (): void {
 =======
     $result = app(SafeFloatCastAction::class)->execute(new stdClass());
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $result = app(SafeFloatCastAction::class)->execute(new stdClass);
+>>>>>>> .merge_file_ezN0SN
     Assert::assertSame(0.0, $result);
 });
 

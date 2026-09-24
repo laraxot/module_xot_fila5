@@ -36,6 +36,7 @@
 - Multi-tenant aware models
 - Social authentication integration
 
+<<<<<<< .merge_file_1reY29
 <<<<<<< HEAD
 <<<<<<< HEAD
 #### 3. **Quaeris Module - Business Core**
@@ -51,6 +52,9 @@
 #### 3. **healthcare_app Module - Business Core**
 #### 3. **ExternalProject Module - Business Core**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+#### 3. **Quaeris Module - Business Core**
+>>>>>>> .merge_file_UKlL9W
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -242,6 +246,7 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
+<<<<<<< .merge_file_1reY29
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Dependencies**: Xot, Quaeris
@@ -257,6 +262,9 @@
 **Dependencies**: Xot, healthcare_app
 **Dependencies**: Xot, ExternalProject
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Dependencies**: Xot, Quaeris
+>>>>>>> .merge_file_UKlL9W
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -304,6 +312,7 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
+<<<<<<< .merge_file_1reY29
 <<<<<<< HEAD
 <<<<<<< HEAD
 ├── Quaeris (Business Core)
@@ -319,6 +328,9 @@ Xot (Foundation)
 ├── healthcare_app (Business Core)
 ├── ExternalProject (Business Core)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+├── Quaeris (Business Core)
+>>>>>>> .merge_file_UKlL9W
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -427,6 +439,7 @@ public function register(): void
 #### ⚠️ Needs Attention
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
+<<<<<<< .merge_file_1reY29
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Quaeris**: Missing module.json description
@@ -442,6 +455,9 @@ public function register(): void
 - **healthcare_app**: Missing module.json description
 - **ExternalProject**: Missing module.json description
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Quaeris**: Missing module.json description
+>>>>>>> .merge_file_UKlL9W
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -452,6 +468,7 @@ public function register(): void
 
 #### High-Usage Modules
 - **User**: Authentication checks on every request
+<<<<<<< .merge_file_1reY29
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Quaeris**: Survey processing and reporting
@@ -467,6 +484,9 @@ public function register(): void
 - **healthcare_app**: Survey processing and reporting
 - **ExternalProject**: Survey processing and reporting
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Quaeris**: Survey processing and reporting
+>>>>>>> .merge_file_UKlL9W
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 
@@ -498,6 +518,7 @@ public function register(): void
 ---
 
 **Analysis Date**: 2025-11-17
+<<<<<<< .merge_file_1reY29
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Architecture Health**: Good with some technical debt
@@ -517,3 +538,7 @@ public function register(): void
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Architecture Health**: Good with some technical debt
+**Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
+>>>>>>> .merge_file_UKlL9W

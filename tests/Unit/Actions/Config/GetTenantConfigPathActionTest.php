@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
+<<<<<<< .merge_file_BuzuFk
 <<<<<<< HEAD
 <<<<<<< HEAD
-use Mockery;
 =======
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_VfNnDz
+use Mockery;
 use Mockery\MockInterface;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -23,11 +24,7 @@ describe('Get Tenant Config Path Action', function (): void {
     test('delegates to tenant file path action with php filename', function (): void {
 <<<<<<< HEAD
         /** @var GetTenantFilePathAction&MockInterface $tenantPathAction */
-<<<<<<< HEAD
         $tenantPathAction = Mockery::mock(GetTenantFilePathAction::class);
-=======
-        $tenantPathAction = \Mockery::mock(GetTenantFilePathAction::class);
->>>>>>> laraxot/dev
         $tenantPathAction->shouldReceive('execute')
             ->with('mail.php')
             ->andReturn('/tmp/tenant/mail.php');

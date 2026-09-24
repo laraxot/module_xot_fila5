@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_HGzKOu
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Wmh2h8
 ---
 title: "Type hinting"
 type: reference
@@ -24,6 +27,7 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/type_hinting.txt -->
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_yPoW4E
@@ -36,6 +40,8 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 https://mlocati.github.io/articles/php-type-hinting.html
 https://howto.webarea.it/php/type-hinting-php-e-controllo-wake-strict-mode_170
 https://wiki.php.net/rfc/scalar_type_hints
@@ -43,6 +49,7 @@ https://wiki.php.net/rfc/return_types
 
 https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,6 +70,8 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 /** @var $post Post */
 
 /** @var $posts Post[] */
@@ -71,6 +80,7 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      * @Route("/types")
      */
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,10 +95,13 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 
 declare(strict_types = 1);
 
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -108,6 +121,8 @@ declare(strict_types = 1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 protected ClassName $classType;
 
  // Types are also legal on static properties
@@ -147,6 +162,7 @@ function iterable_map(iterable $list, callable $operation) : iterable
   }
 }
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -167,6 +183,8 @@ function iterable_map(iterable $list, callable $operation) : iterable
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 public static function byArray(iterable $data)
     {
         $results = [];
@@ -186,6 +204,7 @@ public static function byArray(iterable $data)
         return $slug;
     }
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -210,6 +229,8 @@ public static function byArray(iterable $data)
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
  private static $instance = null;
@@ -222,6 +243,7 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
         return self::$instance;
     }
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -246,6 +268,8 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 class ClassName
 {
     public function foo(): self
@@ -257,6 +281,7 @@ class ClassName
 $instance = new ClassName();
 $instance->foo();
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -277,6 +302,8 @@ $instance->foo();
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 ublic function foo(): ?stdClass
     {
         return new stdClass();
@@ -287,6 +314,7 @@ ublic function foo(): ?stdClass
         return null;
     }
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -307,11 +335,14 @@ ublic function foo(): ?stdClass
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 function foo(): object
 {
     return new stdClass();
 }
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -333,6 +364,8 @@ function foo(): object
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8
 Relazioni
 https://github.com/larastan/larastan/issues/689
 
@@ -345,13 +378,17 @@ public function articles(): HasMany {
     return $this->hasMany(Article::class);
 }
 
+<<<<<<< .merge_file_R0M1Ut
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Wmh2h8
 
 
 
 https://github.com/oucil/Code-Hint-Aggregator
+<<<<<<< .merge_file_R0M1Ut
 =======
 https://github.com/oucil/Code-Hint-Aggregator
 >>>>>>> laraxot/dev
@@ -381,3 +418,5 @@ https://github.com/oucil/Code-Hint-Aggregator
 
 https://github.com/oucil/Code-Hint-Aggregator
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Wmh2h8

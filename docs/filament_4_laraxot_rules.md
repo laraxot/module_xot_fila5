@@ -148,6 +148,7 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
+<<<<<<< .merge_file_p7Hhpu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -171,6 +172,9 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_GMr06M
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -299,6 +303,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 
 
+<<<<<<< .merge_file_p7Hhpu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -614,3 +619,5 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GMr06M

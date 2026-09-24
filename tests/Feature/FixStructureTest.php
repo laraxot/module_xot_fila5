@@ -35,11 +35,7 @@ $rrmdir = function (string $dir) use (&$rrmdir): void {
     $files = scandir($dir);
 
     foreach ($files as $file) {
-<<<<<<< HEAD
         if ($file === '.' || $file === '..') {
-=======
-        if ('.' === $file || '..' === $file) {
->>>>>>> laraxot/dev
             continue;
         }
 
@@ -65,11 +61,7 @@ beforeEach(function () use (&$testDir): void {
 
 afterEach(function () use (&$testDir, $rrmdir): void {
     // Puliamo la directory di test
-<<<<<<< HEAD
     if ($testDir !== '') {
-=======
-    if ('' !== $testDir) {
->>>>>>> laraxot/dev
         $rrmdir($testDir);
     }
 });

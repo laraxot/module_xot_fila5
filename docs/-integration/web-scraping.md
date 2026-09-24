@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_nL7RZG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +17,8 @@
 =======
 >>>>>>> .merge_file_vOYF0U
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_sQzO1F
 ---
 title: 'Web scraping'
 module: Xot
@@ -27,6 +30,7 @@ converted_from: web_scraping.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< .merge_file_nL7RZG
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_jSDhtz
@@ -46,10 +50,13 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/web_scraping.txt -->
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_sQzO1F
 
 Introduction to Web Scraping With Laravel
 https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a217e1444f7c
 
+<<<<<<< .merge_file_nL7RZG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -69,4 +76,6 @@ https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a2
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_sQzO1F
 https://sergeyzhuk.me/2018/02/12/fast-webscraping-with-reactphp/

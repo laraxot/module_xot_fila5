@@ -2,16 +2,20 @@
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
 
+<<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AyivA6
 **NON è stato modificato** `phpstan.neon`
 
 ## Analisi Completa
 
 **Totale Errori**: 776
 **Livello PHPStan**: 9
+<<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 =======
 **NON è stato modificato** `/var/www/html/_bases/<directory progetto>/laravel/phpstan.neon`
@@ -23,6 +27,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AyivA6
 **Data Analisi**: 18 Agosto 2025
 
 ## Categorizzazione Errori
@@ -37,6 +43,7 @@ array $data
 Collection $items
 public function method(array $params): array
 
+<<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
 // ✅ CORRETTO
@@ -46,6 +53,9 @@ public function method(array $params): array
 =======
 // ✅ CORRETTO
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// ✅ CORRETTO
+>>>>>>> .merge_file_AyivA6
 array<string, mixed> $data
 Collection<int, Model> $items
 public function method(array<string, mixed> $params): array<int, string>
@@ -203,6 +213,7 @@ class MyModel extends BaseModel
 ## Timeline Stimata
 
 - **Fase 1 (Xot)**: 2-3 ore
+<<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Fase 2 (User)**: 1-2 ore
@@ -212,6 +223,9 @@ class MyModel extends BaseModel
 =======
 - **Fase 2 (User)**: 1-2 ore
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Fase 2 (User)**: 1-2 ore
+>>>>>>> .merge_file_AyivA6
 - **Fase 3 (Applicazione)**: 3-4 ore
 - **Fase 4 (Verifica)**: 1 ora
 
@@ -219,6 +233,7 @@ class MyModel extends BaseModel
 
 ---
 
+<<<<<<< .merge_file_J2QogR
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
@@ -231,4 +246,8 @@ class MyModel extends BaseModel
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Stato**: 🔄 Analisi Completata - Correzioni in Corso
+**phpstan.neon**: ✅ INTOCCATO
+>>>>>>> .merge_file_AyivA6
 **Approccio**: DRY + KISS + Type Safety

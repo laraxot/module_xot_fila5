@@ -81,6 +81,7 @@ final class PestAssert
     }
 
     /**
+<<<<<<< .merge_file_2Xjuqc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string  $expectedClass
@@ -90,6 +91,9 @@ final class PestAssert
 =======
      * @param class-string $expectedClass
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string  $expectedClass
+>>>>>>> .merge_file_D0vtGz
      */
     public static function instanceOf(string $expectedClass, mixed $actual): void
     {
@@ -201,6 +205,7 @@ final class PestAssert
     }
 
     /**
+<<<<<<< .merge_file_2Xjuqc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  iterable<array-key>  $keys
@@ -210,6 +215,9 @@ final class PestAssert
 =======
      * @param iterable<array-key> $keys
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  iterable<array-key>  $keys
+>>>>>>> .merge_file_D0vtGz
      */
     public static function hasKeys(iterable $keys, mixed $actual): void
     {
@@ -226,6 +234,7 @@ final class PestAssert
     }
 
     /**
+<<<<<<< .merge_file_2Xjuqc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  iterable<string>  $properties
@@ -235,6 +244,9 @@ final class PestAssert
 =======
      * @param iterable<string> $properties
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  iterable<string>  $properties
+>>>>>>> .merge_file_D0vtGz
      */
     public static function hasProperties(iterable $properties, mixed $actual): void
     {
@@ -294,6 +306,7 @@ final class PestAssert
     {
         Assert::assertIsString($prefix);
 
+<<<<<<< .merge_file_2Xjuqc
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($prefix === '') {
@@ -303,6 +316,9 @@ final class PestAssert
 =======
         if ('' === $prefix) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($prefix === '') {
+>>>>>>> .merge_file_D0vtGz
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -313,6 +329,7 @@ final class PestAssert
     {
         Assert::assertIsString($suffix);
 
+<<<<<<< .merge_file_2Xjuqc
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($suffix === '') {
@@ -322,6 +339,9 @@ final class PestAssert
 =======
         if ('' === $suffix) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($suffix === '') {
+>>>>>>> .merge_file_D0vtGz
             Assert::fail('Expected a non-empty suffix.');
         }
 
@@ -364,6 +384,7 @@ final class PestAssert
     }
 
     /**
+<<<<<<< .merge_file_2Xjuqc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $constraints
@@ -373,6 +394,9 @@ final class PestAssert
 =======
      * @param array<array-key, mixed> $constraints
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<array-key, mixed>  $constraints
+>>>>>>> .merge_file_D0vtGz
      */
     private static function assertThrownExceptionMatches(\Throwable $exception, array $constraints): void
     {
@@ -383,6 +407,7 @@ final class PestAssert
                 continue;
             }
 
+<<<<<<< .merge_file_2Xjuqc
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (is_string($constraint) && $constraint !== '') {
@@ -392,6 +417,9 @@ final class PestAssert
 =======
             if (is_string($constraint) && '' !== $constraint) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if (is_string($constraint) && $constraint !== '') {
+>>>>>>> .merge_file_D0vtGz
                 Assert::assertStringContainsString($constraint, $exception->getMessage());
             }
         }

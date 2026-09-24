@@ -1,5 +1,6 @@
 # Risoluzione dei Loghi
 
+<<<<<<< .merge_file_FR4NwT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -8,6 +9,8 @@
 =======
 =======
 >>>>>>> .merge_file_MJXvAn
+=======
+>>>>>>> .merge_file_O5OKBa
 Il login Filament (`/admin/login`) prende il logo da `MetatagData::getBrandLogo()`,
 che chiama `AssetAction` sulla chiave `logo_header` (es. `ptv::img/icon.png`).
 
@@ -29,6 +32,7 @@ Story: `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
 
 ## Processo di Risoluzione
 
+<<<<<<< .merge_file_FR4NwT
 <<<<<<< .merge_file_7Z26zp
 =======
 =======
@@ -37,6 +41,8 @@ Story: `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_O5OKBa
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
 
 ## Processo di Risoluzione
@@ -139,17 +145,21 @@ Per la versione dark:
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
+<<<<<<< .merge_file_FR4NwT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_O5OKBa
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
+<<<<<<< .merge_file_FR4NwT
 <<<<<<< HEAD
 =======
 =======
@@ -172,6 +182,8 @@ Per la versione dark:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_O5OKBa
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -179,6 +191,7 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../docs/architettura-folio-volt.md)
+<<<<<<< .merge_file_FR4NwT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -198,10 +211,13 @@ Per la versione dark:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_O5OKBa
 
 ---
 
 ### Nota Importante
+<<<<<<< .merge_file_FR4NwT
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
@@ -215,3 +231,6 @@ Questo documento è parte della documentazione generale del modulo Xot e descriv
 =======
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
+>>>>>>> .merge_file_O5OKBa

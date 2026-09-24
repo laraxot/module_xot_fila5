@@ -14,6 +14,7 @@ it('verifies svg existence', function (): void {
     $action = app(SvgExistsAction::class);
 
     Assert::assertFalse($action->execute(''));
+<<<<<<< .merge_file_mHkoFI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -24,5 +25,7 @@ it('verifies svg existence', function (): void {
     // We can't easily ensure a real icon exists without registering one,
     // but the try/catch block will return false if it's missing.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_1U4oaz
     Assert::assertFalse($action->execute('non-existent-icon-123456'));
 });

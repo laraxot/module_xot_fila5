@@ -7,6 +7,7 @@ description: 'Elenco di 1 riferimenti esterni raccolti per to integrate, dedupli
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_CN8MES
 <<<<<<< HEAD
 =======
 converted_from: ___to_integrate.txt
@@ -18,16 +19,27 @@ converted_from: ___to_integrate.txt
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+converted_from: ___to_integrate.txt
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_OxmYdK
 converted_from: to-integrate.txt
 =======
 converted_from: ___to_integrate.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_CN8MES
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+=======
+converted_from: ___to_integrate.txt
+>>>>>>> .merge_file_OxmYdK
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

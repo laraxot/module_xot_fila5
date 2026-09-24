@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_AWszqW
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_hu0dc0
 # GitHub Discussion — Architettura: composizione trait vs ereditarietà statica
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

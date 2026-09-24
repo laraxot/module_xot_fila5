@@ -187,6 +187,7 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
@@ -196,6 +197,9 @@ class FilterBuilder
 =======
      * @param class-string<Model> $modelClass
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> .merge_file_KELF8O
      */
     public static function selectFromModel(
         string $name,
@@ -210,6 +214,7 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($relationshipName !== null) {
@@ -219,6 +224,9 @@ class FilterBuilder
 =======
         if (null !== $relationshipName) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($relationshipName !== null) {
+>>>>>>> .merge_file_KELF8O
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -228,6 +236,7 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, string>  $customStatuses
@@ -237,6 +246,9 @@ class FilterBuilder
 =======
      * @param array<string, string> $customStatuses
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, string>  $customStatuses
+>>>>>>> .merge_file_KELF8O
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -254,6 +266,7 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, string>  $customPriorities
@@ -263,6 +276,9 @@ class FilterBuilder
 =======
      * @param array<string, string> $customPriorities
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, string>  $customPriorities
+>>>>>>> .merge_file_KELF8O
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -280,6 +296,7 @@ class FilterBuilder
     /**
      * Type select filter.
      *
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, string>  $types
@@ -289,6 +306,9 @@ class FilterBuilder
 =======
      * @param array<string, string> $types
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, string>  $types
+>>>>>>> .merge_file_KELF8O
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -299,6 +319,7 @@ class FilterBuilder
     /**
      * Category select filter.
      *
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<Model>  $categoryModel
@@ -308,6 +329,9 @@ class FilterBuilder
 =======
      * @param class-string<Model> $categoryModel
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $categoryModel
+>>>>>>> .merge_file_KELF8O
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -317,6 +341,7 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<Model>  $userModel
@@ -326,6 +351,9 @@ class FilterBuilder
 =======
      * @param class-string<Model> $userModel
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $userModel
+>>>>>>> .merge_file_KELF8O
      */
     public static function userSelect(
         string $name = 'user',
@@ -353,6 +381,7 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<Model>  $query
@@ -362,6 +391,9 @@ class FilterBuilder
 =======
      * @param Builder<Model> $query
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Builder<Model>  $query
+>>>>>>> .merge_file_KELF8O
      */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
@@ -369,6 +401,7 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< .merge_file_ZXkzTj
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<Model>  $query
@@ -380,6 +413,9 @@ class FilterBuilder
      * @param Builder<Model> $query
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Builder<Model>  $query
+>>>>>>> .merge_file_KELF8O
      * @return Builder<Model>
      */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder

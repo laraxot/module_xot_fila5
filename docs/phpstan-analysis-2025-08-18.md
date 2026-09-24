@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_32BMnc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,11 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> .merge_file_VjpCWY
 ---
 name: phpstan-analysis-2025-08-18
 description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
@@ -20,6 +26,7 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_32BMnc
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -27,18 +34,25 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> .merge_file_VjpCWY
+=======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_32BMnc
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_VjpCWY
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_32BMnc
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_VjpCWY
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

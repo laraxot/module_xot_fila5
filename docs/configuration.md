@@ -63,6 +63,7 @@ return [
    - Mantenere aggiornata la documentazione
 
 ## Collegamenti
+<<<<<<< .merge_file_ntuLMd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -82,12 +83,15 @@ return [
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zSC37q
 - [Gestione Domini](DOMAIN_CONFIGURATION.md)
 - [Struttura del Progetto](PROJECT_STRUCTURE.md)
 - [Documentazione Principale](../README.md)
 ## Collegamenti tra versioni di configuration.md
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../Xot/docs/configuration.md)
+<<<<<<< .merge_file_ntuLMd
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [configuration.md](../../../Cms/docs/configuration.md)
@@ -101,3 +105,6 @@ return [
 =======
 * [configuration.md](../../../Cms/docs/configuration.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+* [configuration.md](../../../Cms/docs/configuration.md)
+>>>>>>> .merge_file_zSC37q

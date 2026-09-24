@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 interface MorphToOneRelationContract
 {
     /**
+<<<<<<< .merge_file_zYMUw8
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -44,6 +45,9 @@ interface MorphToOneRelationContract
 =======
      * @param array<string, mixed> $attributes
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $attributes
+>>>>>>> .merge_file_gHiVok
      */
     public function create(array $attributes): Model;
 }

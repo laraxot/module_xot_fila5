@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_T26IEH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_q34s58
 ---
 title: IDE Helper e property_exists — summary storico
 type: historical
@@ -21,6 +24,7 @@ Il contenuto operativo è stato consolidato per evitare copie divergenti.
 - Guida alle sostituzioni: [property-exists-replacement-guide.md](./property-exists-replacement-guide.md)
 
 Non usare procedure archiviate per determinare lo stato corrente: rigenerare gli artefatti in modalità `--nowrite` ed eseguire il comando PHPStan canonico.
+<<<<<<< .merge_file_T26IEH
 <<<<<<< HEAD
 =======
 =======
@@ -245,3 +249,5 @@ La filosofia è chiara: rispettare l'architettura Eloquent e fidarsi delle annot
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_q34s58

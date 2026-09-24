@@ -9,6 +9,7 @@ use Illuminate\Contracts\Filesystem\Filesystem;
 use League\Csv\Bom;
 use League\Csv\Writer;
 use Modules\Xot\Exports\XotBaseExporter;
+use SplTempFileObject;
 
 /**
  * `PrepareCsvExport` con il CSV intermedio in escape `XotBaseExporter::CSV_ESCAPE`.
@@ -26,7 +27,7 @@ class XotPrepareCsvExport extends PrepareCsvExport
     {
         parent::handle();
 
-        $csv = Writer::from(new \SplTempFileObject());
+        $csv = Writer::from(new SplTempFileObject);
         $csv->setOutputBOM(Bom::Utf8);
         $csv->setDelimiter($this->exporter::getCsvDelimiter());
         $csv->setEscape(XotBaseExporter::CSV_ESCAPE);

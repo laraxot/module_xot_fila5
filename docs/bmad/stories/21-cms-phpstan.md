@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ImuEAP
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6M6tWt
 # BMAD Story 21 — Cms: 7 errori PHPStan (test)
 
 **Modulo:** `Cms`

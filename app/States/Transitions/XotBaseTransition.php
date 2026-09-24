@@ -19,6 +19,7 @@ abstract class XotBaseTransition
     public function __construct(
         public Model $record,
         public ?string $message = '',
+<<<<<<< .merge_file_lAYORR
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -30,6 +31,9 @@ abstract class XotBaseTransition
     ) {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_23S4eK
 
     public function handle(): Model
     {
@@ -101,6 +105,7 @@ abstract class XotBaseTransition
     }
 
     /**
+<<<<<<< .merge_file_lAYORR
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $data
@@ -110,6 +115,9 @@ abstract class XotBaseTransition
 =======
      * @param array<string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_23S4eK
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {

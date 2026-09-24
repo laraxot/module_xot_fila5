@@ -14,14 +14,18 @@ use Spatie\LaravelData\Data;
 class RouteData extends Data
 {
     /**
+<<<<<<< .merge_file_hOyaqt
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_DXS5Fn
      * @param  string  $prefix  Prefisso per tutte le rotte
      * @param  array<int, string>  $middleware  Middleware applicati a tutte le rotte
      * @param  string  $namespace  Namespace per i controller
      * @param  bool  $use_passport  Se utilizzare Passport per l'autenticazione API
      * @param  array<int, string>  $except_verify  Rotte eccettuate dalla verifica
      * @param  bool  $enable  Se le rotte sono abilitate
+<<<<<<< .merge_file_hOyaqt
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -35,6 +39,8 @@ class RouteData extends Data
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_DXS5Fn
      */
     public function __construct(
         public readonly string $prefix = '',
@@ -43,6 +49,7 @@ class RouteData extends Data
         public readonly bool $use_passport = false,
         public readonly array $except_verify = [],
         public readonly bool $enable = true,
+<<<<<<< .merge_file_hOyaqt
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -54,12 +61,16 @@ class RouteData extends Data
     ) {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_DXS5Fn
 
     /**
      * Create a new instance of RouteData with default values.
      */
     public static function make(): self
     {
+<<<<<<< .merge_file_hOyaqt
 <<<<<<< HEAD
 <<<<<<< HEAD
         return new self;
@@ -69,5 +80,8 @@ class RouteData extends Data
 =======
         return new self();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return new self;
+>>>>>>> .merge_file_DXS5Fn
     }
 }

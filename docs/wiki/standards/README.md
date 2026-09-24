@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_jm0euv
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,6 +43,8 @@
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_G7aIVN
 ---
 title: "Readme"
 type: reference
@@ -49,6 +52,7 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< .merge_file_jm0euv
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,6 +84,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_G7aIVN
 
 # Standard di Codice
 
@@ -96,6 +102,7 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< .merge_file_jm0euv
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -351,6 +358,10 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
+>>>>>>> .merge_file_G7aIVN
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -398,6 +409,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../Dental/docs/README.md)
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
+<<<<<<< .merge_file_jm0euv
 <<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
@@ -431,6 +443,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_G7aIVN
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -494,6 +508,7 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+<<<<<<< .merge_file_jm0euv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -597,3 +612,7 @@ class Doctor extends User
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+- [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
+// Aggiungere qui altri moduli se necessario
+>>>>>>> .merge_file_G7aIVN

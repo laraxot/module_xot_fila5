@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @method static static make(?string $name = null) Create a new instance of the action
  */
+<<<<<<< .merge_file_FPG46U
 <<<<<<< HEAD
 <<<<<<< HEAD
 abstract class XotBaseAction extends FilamentAction {}
@@ -27,3 +28,6 @@ abstract class XotBaseAction extends FilamentAction
 {
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+abstract class XotBaseAction extends FilamentAction {}
+>>>>>>> .merge_file_4RluHD

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\CacheLockResource\Pages;
 
+<<<<<<< .merge_file_IBrTc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,12 +13,15 @@ use Filament\Tables\Columns\TextColumn;
 =======
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_UBiXtR
 use Modules\Xot\Filament\Resources\CacheLockResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListCacheLocks extends XotBaseListRecords
 {
     protected static string $resource = CacheLockResource::class;
+<<<<<<< .merge_file_IBrTc4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,4 +47,6 @@ class ListCacheLocks extends XotBaseListRecords
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_UBiXtR
 }

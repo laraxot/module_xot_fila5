@@ -2,6 +2,7 @@
 
 ## Panoramica
 
+<<<<<<< .merge_file_6NKTzx
 <<<<<<< HEAD
 <<<<<<< HEAD
 iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
@@ -15,6 +16,9 @@ iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come c
 =======
 iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono con iFlow.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
+>>>>>>> .merge_file_5bpEXz
 
 ## Prerequisiti
 
@@ -252,15 +256,19 @@ Aggiungere al file `~/.cursor/mcp.json`:
         "MINIMAX_API_KEY": "${MINIMAX_API_KEY}"
       }
     },
+<<<<<<< .merge_file_6NKTzx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5bpEXz
     "phpstan-quaeris": {
       "url": "http://localhost:8003/sse"
     },
     "artisan-quaeris": {
+<<<<<<< .merge_file_6NKTzx
 <<<<<<< HEAD
 =======
 =======
@@ -275,6 +283,8 @@ Aggiungere al file `~/.cursor/mcp.json`:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_5bpEXz
       "url": "http://localhost:8004/sse"
     }
   }
@@ -363,6 +373,7 @@ Aggiungere al file `~/.codeium/windsurf/mcp_config.json`:
 
 - [MCP Editors Configuration](./mcp-editors-configuration.md) - Configurazione generale editor
 - [MCP Claude Code Configuration](./mcp-claude-code-configuration.md) - Configurazione Claude Code
+<<<<<<< .merge_file_6NKTzx
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
@@ -376,3 +387,6 @@ Aggiungere al file `~/.codeium/windsurf/mcp_config.json`:
 =======
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
+>>>>>>> .merge_file_5bpEXz

@@ -18,6 +18,7 @@ use Webmozart\Assert\Assert;
  */
 final class PanelModuleAdapter
 {
+<<<<<<< .merge_file_fgudXx
 <<<<<<< HEAD
 <<<<<<< HEAD
     private function __construct() {}
@@ -31,6 +32,9 @@ final class PanelModuleAdapter
     {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    private function __construct() {}
+>>>>>>> .merge_file_xYMYmA
 
     public static function moduleName(Panel $panel): string
     {

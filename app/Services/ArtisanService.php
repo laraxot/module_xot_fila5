@@ -43,8 +43,8 @@ class ArtisanService
             case 'migrate':
                 DB::purge('mysql');
                 DB::reconnect('mysql');
-<<<<<<< HEAD
                 if ($module_name !== '') {
+<<<<<<< .merge_file_rSSwAx
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
@@ -61,6 +61,8 @@ class ArtisanService
                 if ('' !== $module_name) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zuf9Rr
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -154,6 +156,7 @@ class ArtisanService
             $log = '';
         }
         $content = '';
+<<<<<<< .merge_file_rSSwAx
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
@@ -172,6 +175,9 @@ class ArtisanService
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> .merge_file_zuf9Rr
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -232,8 +238,8 @@ class ArtisanService
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+<<<<<<< .merge_file_rSSwAx
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
@@ -250,6 +256,8 @@ class ArtisanService
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zuf9Rr
                 // Parameter #1 $paths of static method Illuminate\Filesystem\Filesystem::delete() expects array|string, Symfony\Component\Finder\SplFileInfo given.
                 echo '<br/>'.$file->getRealPath();
 
@@ -265,6 +273,7 @@ class ArtisanService
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_rSSwAx
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
@@ -283,6 +292,9 @@ class ArtisanService
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+>>>>>>> .merge_file_zuf9Rr
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -298,8 +310,8 @@ class ArtisanService
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+<<<<<<< .merge_file_rSSwAx
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
@@ -316,6 +328,8 @@ class ArtisanService
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zuf9Rr
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -328,6 +342,7 @@ class ArtisanService
     }
 
     /**
+<<<<<<< .merge_file_rSSwAx
 <<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
 =======
@@ -346,6 +361,9 @@ class ArtisanService
      * @param array<string, mixed> $arguments
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $arguments
+>>>>>>> .merge_file_zuf9Rr
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -355,6 +373,7 @@ class ArtisanService
             Artisan::call($command, $arguments);
 
             return $output.'[<pre>'.Artisan::output().'</pre>]'; // dato che mi carico solo le route minime menufull.delete non esiste.. impostare delle route comuni.
+<<<<<<< .merge_file_rSSwAx
 <<<<<<< HEAD
         } catch (Exception $exception) {
 =======
@@ -373,6 +392,9 @@ class ArtisanService
         } catch (\Exception $exception) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        } catch (Exception $exception) {
+>>>>>>> .merge_file_zuf9Rr
             // throw new Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
             return '[<pre>'.$exception->getMessage().'</pre>]';
 
