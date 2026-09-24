@@ -19,8 +19,6 @@ use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
 use Pest\PendingCalls\AfterEachCall;
 use Pest\PendingCalls\BeforeEachCall;
-use Pest\PendingCalls\DescribeCall;
-use Pest\PendingCalls\TestCall;
 use Pest\PendingCalls\UsesCall;
 
 /**
@@ -203,8 +201,10 @@ function followingRedirects(int $number = 5): TestResponse
 
 /**
  * Define a test case.
+ *
+ * Return void: TestCall è `@internal` → `return.internalClass` se tipizzato.
  */
-function test(string $description, ?\Closure $closure = null): TestCall
+function test(string $description, ?\Closure $closure = null): void
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -212,7 +212,7 @@ function test(string $description, ?\Closure $closure = null): TestCall
 /**
  * Define a test case.
  */
-function it(string $description, ?\Closure $closure = null): TestCall
+function it(string $description, ?\Closure $closure = null): void
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -220,7 +220,7 @@ function it(string $description, ?\Closure $closure = null): TestCall
 /**
  * Define a test group.
  */
-function describe(string $description, \Closure $closure): DescribeCall
+function describe(string $description, \Closure $closure): void
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
