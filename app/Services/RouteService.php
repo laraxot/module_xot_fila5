@@ -47,12 +47,6 @@ class RouteService
 
     /**
      * @param  array<string,string>  $params
-            && 'livewire' === $segments[0]
-            && true === session('in_admin', false);
-    }
-
-    /**
-     * @param array<string,string> $params
      */
     public static function urlAct(array $params): string
     {
