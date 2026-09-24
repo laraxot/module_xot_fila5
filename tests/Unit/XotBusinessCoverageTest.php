@@ -4,71 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
-<<<<<<< HEAD
 use Mockery;
-<<<<<<< .merge_file_FEz9rr
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_hANHCq
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_EPx84w
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Oi6WJB
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_FEz9rr
-<<<<<<< HEAD
     Mockery::close();
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_hANHCq
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-    Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-    \Mockery::close();
->>>>>>> .merge_file_EPx84w
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    \Mockery::close();
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    Mockery::close();
->>>>>>> .merge_file_Oi6WJB
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 });
 
 /** @return array{string, string} */

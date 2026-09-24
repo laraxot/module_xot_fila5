@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_qc2v3T
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Qs0R3T
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_qc2v3T
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_Qs0R3T
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
 ---
 name: testing-fixes-progress-sessione-2025-0
 description: "Data: 2025-01-22"
@@ -27,24 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_qc2v3T
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Qs0R3T
->>>>>>> laraxot/dev
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22

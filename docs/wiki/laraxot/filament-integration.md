@@ -20,44 +20,8 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_K34gWk
-<<<<<<< HEAD
-public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_lWInLe
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_505tCX
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> .merge_file_PWYckZ
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         // Campi base

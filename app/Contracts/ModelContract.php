@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -30,34 +14,14 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
-<<<<<<< .merge_file_id6kFY
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property int $id
  * @property int|null $user_id
-=======
- * @property int         $id
- * @property int|null    $user_id
->>>>>>> laraxot/dev
-=======
- * @property int         $id
- * @property int|null    $user_id
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @property int $id
- * @property int|null $user_id
->>>>>>> .merge_file_dr2T0O
  * @property string|null $post_type
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $title
-<<<<<<< .merge_file_id6kFY
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_dr2T0O
  * @property bool $is_reclamed
  * @property bool $table_enable
  * @property Pivot|null $pivot
@@ -79,75 +43,9 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed> toArray()
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  * @method mixed getAttributeValue(string $key)
-<<<<<<< .merge_file_id6kFY
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property bool        $is_reclamed
- * @property bool        $table_enable
- * @property Pivot|null  $pivot
- * @property string      $tennant_name
- *
- * @method string                                                          getRouteKey()
- * @method string                                                          getRouteKeyName()
- * @method string                                                          getTable()
-<<<<<<< HEAD
- * @method \Illuminate\Database\Eloquent\Builder<Model>                    with(array<int, string> $array)
- * @method list<string>                                                    getFillable()
- * @method static                                                          fill(array<string, mixed> $array)
- * @method \Illuminate\Database\Connection                                 getConnection()
- * @method bool                                                            update(array<string, mixed> $params)
- * @method bool|null                                                       delete()
- * @method int                                                             detach(mixed $params)
- * @method void                                                            attach(mixed $params)
-=======
-<<<<<<< HEAD
- * @method mixed                                                           with(array<string, mixed> $array)
-=======
- * @method mixed                                                           with(array<int, string> $array)
->>>>>>> da9ae01a0 (.)
- * @method list<string>                                                    getFillable()
- * @method mixed                                                           fill(array<string, mixed> $array)
- * @method mixed                                                           getConnection()
- * @method mixed                                                           update(array<string, mixed> $params)
- * @method mixed                                                           delete()
- * @method mixed                                                           detach(mixed $params)
- * @method mixed                                                           attach(mixed $params)
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
- * @method array<string, mixed>                                            treeLabel()
- * @method array<string, mixed>                                            treeSons()
- * @method array<string, mixed>                                            toArray()
- * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
- * @method mixed                                                           getAttributeValue(string $key)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_dr2T0O
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
-<<<<<<< .merge_file_id6kFY
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface ModelContract {}
-=======
-interface ModelContract
-{
-}
->>>>>>> laraxot/dev
-=======
-interface ModelContract
-{
-}
->>>>>>> 3792da0d (Check & fix styling)
-=======
-interface ModelContract {}
->>>>>>> .merge_file_dr2T0O

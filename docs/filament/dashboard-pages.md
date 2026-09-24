@@ -191,30 +191,7 @@ Il modulo Xot è il modulo core e potrebbe non necessitare di una dashboard trad
 
 - [XotBasePanelProvider](./xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](./filament_integration.md) - Integrazione generale Filament
-<<<<<<< .merge_file_unJNyW
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Best Practices](best-practices.md) - Best practices generali
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Best Practices](best-practices.md) - Best practices generali
-=======
-- [Best Practices](./BEST-PRACTICES.md) - Best practices generali
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Best Practices](./BEST-PRACTICES.md) - Best practices generali
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Best Practices](best-practices.md) - Best practices generali
->>>>>>> .merge_file_aIITRC
-=======
-=======
-- [Best Practices](./BEST-PRACTICES.md) - Best practices generali
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices](./best-practices.md) - Best practices generali
 
 ## Collegamenti

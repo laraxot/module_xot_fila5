@@ -169,11 +169,7 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1
 
 ### 4. Helpers nella Root
 
-<<<<<<< HEAD
 **Violazione**: `Modules/Xot/Helpers/Helper.php` o `Modules/Xot/helpers/Helper.php`
-=======
-**Violazione**: `Modules/Xot/helpers/Helper.php` o `Modules/Xot/helpers/Helper.php`
->>>>>>> 930f8146 (Check & fix styling)
 
 **Fix**: Se sono helper moderni, spostare in `Modules/Xot/app/Helpers/`. Se sono legacy, rimuovere.
 
@@ -350,17 +346,6 @@ Questi file devono essere:
 
 ---
 
-<<<<<<< .merge_file_m3bMXa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_syA7e9
-=======
->>>>>>> da9ae01a0 (.)
 ## Regressione e ri-bonifica 2026-07-06
 
 Le cartelle root PascalCase erano tornate (probabile merge/copy incidentale
@@ -398,21 +383,3 @@ esserci solo README.md". `CHANGELOG.md` esiste ancora alla root di
 dell'utente, per non perdere contenuto storico senza conferma.
 
 *Ultimo aggiornamento: 2026-07-06*
-<<<<<<< .merge_file_m3bMXa
-<<<<<<< HEAD
-=======
-=======
-*Ultimo aggiornamento: 2026-06-18*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 2026-06-18*
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_syA7e9
-=======
-=======
-*Ultimo aggiornamento: 2026-06-18*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

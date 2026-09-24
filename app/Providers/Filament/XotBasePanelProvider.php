@@ -4,49 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers\Filament;
 
-<<<<<<< HEAD
 use Filament\Auth\Pages\Login;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;
 use Filament\PanelProvider;
-<<<<<<< HEAD
 use Filament\View\PanelsRenderHook;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
-=======
-use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
-use Illuminate\Cookie\Middleware\EncryptCookies;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-<<<<<<< HEAD
 // Remove if not used elsewhere implicitly
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
-=======
-use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
-// Remove if not used elsewhere implicitly
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -60,7 +34,6 @@ abstract class XotBasePanelProvider extends PanelProvider
 
     protected bool $navigation = true;
 
-<<<<<<< HEAD
     /**
      * Id/path del panel. Di default derivano dal modulo ({modulo}::admin,
      * {modulo}/admin); i panel trasversali (operator, customer, supplier)
@@ -81,12 +54,6 @@ abstract class XotBasePanelProvider extends PanelProvider
      */
     protected bool $discoverModuleComponents = true;
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function panel(Panel $panel): Panel
     {
         $moduleNamespace = $this->getModuleNamespace();
@@ -113,56 +80,21 @@ abstract class XotBasePanelProvider extends PanelProvider
             // ->tenant($teamClass)
             // ->tenant($teamClass,ownershipRelationship:'users')
             // ->tenant($teamClass)
-<<<<<<< HEAD
             ->id($this->panelId ?? $moduleLow.'::admin')
             ->path($this->panelPath ?? $moduleLow.'/admin')
-=======
-            ->id($moduleLow.'::admin')
-            ->path($moduleLow.'/admin')
-            // Configure Filament discovery for module components (unconditional; dirs are expected to exist)
-            ->discoverResources(
-                base_path('Modules/'.$this->module.'/app/Filament/Resources'),
-                sprintf('%s\\Filament\\Resources', $moduleNamespace),
-            )
-            ->discoverPages(
-                base_path('Modules/'.$this->module.'/app/Filament/Pages'),
-                sprintf('%s\\Filament\\Pages', $moduleNamespace),
-            )
-            ->discoverWidgets(
-                base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
-                sprintf('%s\\Filament\\Widgets', $moduleNamespace),
-            )
-            ->discoverClusters(
-                base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
-                sprintf('%s\\Filament\\Clusters', $moduleNamespace),
-            )
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
                 StartSession::class,
                 AuthenticateSession::class,
                 ShareErrorsFromSession::class,
-<<<<<<< HEAD
                 PreventRequestForgery::class,
-=======
-                VerifyCsrfToken::class,
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
             ->authMiddleware([
                 Authenticate::class,
-<<<<<<< HEAD
             ])
             // Fix "This page has expired" (Livewire) sulla pagina di login:
             // riprodotto con evidenza che e' un vero 419 quando il browser
@@ -209,13 +141,6 @@ abstract class XotBasePanelProvider extends PanelProvider
                     sprintf('%s\\Filament\\Clusters', $moduleNamespace),
                 );
         }
-=======
-            ]);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
         return $panel;
     }

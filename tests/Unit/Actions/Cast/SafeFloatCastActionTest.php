@@ -1,32 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-<<<<<<< HEAD
-use Modules\Xot\Actions\Cast\SafeFloatCastAction;
-use PHPUnit\Framework\Assert;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-use Modules\Xot\Actions\Cast\SafeFloatCastAction;
-use PHPUnit\Framework\Assert;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 it('casts float values', function (): void {
     $result = app(SafeFloatCastAction::class)->execute(123.45);
@@ -92,19 +71,7 @@ it('casts arrays', function (): void {
 });
 
 it('casts objects', function (): void {
-<<<<<<< .merge_file_J6Vj2G
-<<<<<<< HEAD
-<<<<<<< HEAD
     $result = app(SafeFloatCastAction::class)->execute(new stdClass);
-=======
-    $result = app(SafeFloatCastAction::class)->execute(new stdClass());
->>>>>>> laraxot/dev
-=======
-    $result = app(SafeFloatCastAction::class)->execute(new stdClass());
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $result = app(SafeFloatCastAction::class)->execute(new stdClass);
->>>>>>> .merge_file_ezN0SN
     Assert::assertSame(0.0, $result);
 });
 

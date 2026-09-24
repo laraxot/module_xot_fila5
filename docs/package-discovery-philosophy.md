@@ -339,32 +339,7 @@ The command discovered these categories:
 **Module Packages**:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
-<<<<<<< .merge_file_d9Sw1O
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
-=======
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
->>>>>>> .merge_file_TH5gzQ
-=======
-=======
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -375,30 +350,7 @@ Each module uses this pattern:
 
 ```json
 {
-<<<<<<< .merge_file_d9Sw1O
-<<<<<<< HEAD
-<<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "name": "laraxot/module_user_fila3",
-=======
-    "name": "laraxot/module_user_fila5",
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    "name": "laraxot/module_user_fila5",
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    "name": "laraxot/module_user_fila3",
->>>>>>> .merge_file_TH5gzQ
-=======
-=======
-    "name": "laraxot/module_user_fila3",
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     "extra": {
         "laravel": {
             "providers": [
@@ -592,53 +544,10 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 
 **Document Version**: 1.0
 **Last Updated**: 2026-01-12
-<<<<<<< .merge_file_d9Sw1O
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_TH5gzQ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Status**: Living document - update as understanding deepens
 **Philosophy**: Super Mucca methodology applied
 
 **Related Documentation**:
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Module System](./packages.md)
-<<<<<<< .merge_file_d9Sw1O
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
-=======
-- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
->>>>>>> .merge_file_TH5gzQ
-=======
-=======
-- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

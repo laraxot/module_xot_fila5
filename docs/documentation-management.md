@@ -5,30 +5,7 @@
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
-<<<<<<< .merge_file_32bp2G
-<<<<<<< HEAD
-<<<<<<< HEAD
 base_predict_fila3_mono/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-base_predict_fila3_mono/
-=======
-base_<nome progetto>_fila5_mono/
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-base_<nome progetto>_fila5_mono/
->>>>>>> 3792da0d (Check & fix styling)
-=======
-base_predict_fila3_mono/
->>>>>>> .merge_file_DviZRY
-=======
-=======
-base_predict_fila3_mono/
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli
@@ -166,27 +143,4 @@ Quando si identifica una nuova regola o pattern importante:
 4. **Windsurf**
    - [ ] Aggiornare .windsurfrules
    - [ ] Verificare coerenza
-<<<<<<< .merge_file_32bp2G
-<<<<<<< HEAD
-<<<<<<< HEAD
    - [ ] Testare applicabilità
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - [ ] Testare applicabilità
-=======
-   - [ ] Testare applicabilità
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   - [ ] Testare applicabilità
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   - [ ] Testare applicabilità
->>>>>>> .merge_file_DviZRY
-=======
-=======
-   - [ ] Testare applicabilità
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

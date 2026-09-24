@@ -1,41 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_tCOdye
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_ulHCY1
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-
->>>>>>> .merge_file_2ehpvv
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4ON9cL
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 
 use function Safe\file_get_contents;
@@ -72,33 +37,7 @@ it('every list page declares its table columns', function (): void {
 
         $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_tCOdye
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_ulHCY1
-            if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
-=======
-            if (! $file instanceof SplFileInfo || 'php' !== $file->getExtension()) {
->>>>>>> .merge_file_2ehpvv
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
->>>>>>> .merge_file_4ON9cL
-=======
-=======
-            if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 continue;
             }
 

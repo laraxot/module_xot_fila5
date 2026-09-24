@@ -128,39 +128,10 @@ return [
 ```php
 // ✅ CORRECT
 <<<<<<< HEAD
-<<<<<<< .merge_file_diQv2L
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_cYNPPJ
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_diQv2L
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_cYNPPJ
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         'name' => TextInput::make('name'),
@@ -170,39 +141,10 @@ public static function getFormSchema(): array
 
 // ❌ WRONG
 <<<<<<< HEAD
-<<<<<<< .merge_file_diQv2L
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_cYNPPJ
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_diQv2L
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_cYNPPJ
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->label('Nome'),
@@ -403,84 +345,13 @@ This document outlines the best practices for maintaining high code quality with
 - Update this document if new tools or standards for code quality are introduced.
 
 ## Links to Related Documentation
-<<<<<<< .merge_file_diQv2L
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Xot Base Classes](../xot/project_docs/xot_base_classes.md)
-- [Filament Extension Pattern](../../notify/project_docs/filament_extension_pattern.md)
-- [Filament Extension Pattern Analysis](../../notify/project_docs/filament_extension_pattern_analysis.md)
-- [Patient Module - Namespace Conventions](../../patient/project_docs/namespace_conventions.md)
-- [Patient Module - Validation Errors](../../patient/project_docs/validation_errors.md)
-- [PHP Strict Types](./php-strict-types.md)
-- [PHPStan Implementation Guide](./phpstan-implementation-guide.md)
-- [Naming Conventions](./naming-conventions.md)
-- [Service Provider Best Practices](./service-provider-best-practices.md)
-- [Filament Best Practices](./filament-best-practices.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_cYNPPJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Xot Base Classes](../Xot/project_docs/XOT_BASE_CLASSES.md)
 - [Filament Extension Pattern](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN.md)
 - [Filament Extension Pattern Analysis](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Namespace Conventions](../../Patient/project_docs/NAMESPACE_CONVENTIONS.md)
 - [Patient Module - Validation Errors](../../Patient/project_docs/VALIDATION_ERRORS.md)
-<<<<<<< .merge_file_diQv2L
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_cYNPPJ
-=======
->>>>>>> da9ae01a0 (.)
 - [PHP Strict Types](php-strict-types.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
-<<<<<<< .merge_file_diQv2L
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-- [PHP Strict Types](./PHP-STRICT-TYPES.md)
-- [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
-- [Naming Conventions](./NAMING-CONVENTIONS.md)
-- [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
-<<<<<<< HEAD
-- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_cYNPPJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

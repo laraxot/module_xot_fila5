@@ -18,38 +18,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
-<<<<<<< .merge_file_6f10Gz
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
       public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-      public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-      public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-      public function getFormSchema(): array
->>>>>>> .merge_file_0VUmH4
-=======
-=======
-      public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -86,48 +55,8 @@ The Xot base classes provide a centralized way to customize and extend functiona
 - Update this document if new Xot base classes are introduced.
 
 ## Links to Related Documentation
-<<<<<<< .merge_file_6f10Gz
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_0VUmH4
-=======
->>>>>>> da9ae01a0 (.)
 - [Code Quality](../Xot/docs/CODE_QUALITY.md)
 - [Filament Extension Pattern](filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](filament_extension_pattern_analysis.md)
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
-<<<<<<< .merge_file_6f10Gz
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Code Quality](../xot/docs/code_quality.md)
-- [Filament Extension Pattern](../../notify/docs/filament_extension_pattern.md)
-- [Filament Extension Pattern Analysis](../../notify/docs/filament_extension_pattern_analysis.md)
-- [Patient Module - Filament Customization](../../patient/docs/filament_customization.md)
-<<<<<<< HEAD
-- [Patient Module - Namespace Conventions](../../patient/docs/namespace_conventions.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Patient Module - Namespace Conventions](../../patient/docs/namespace_conventions.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0VUmH4
-=======
-=======
-- [Code Quality](../Xot/docs/CODE_QUALITY.md)
-- [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
-- [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
-- [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
-- [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

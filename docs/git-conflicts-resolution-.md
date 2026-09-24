@@ -114,41 +114,6 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 - Risolto conflitto nella gestione del campo postal_code
 
 **Modifiche Applicate**:
-<<<<<<< HEAD
-<<<<<<< .merge_file_EMP6b7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_ZgagAS
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-```
-
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_3F2BnY
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_kVLL6N
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```php
 // VERSIONE CORRETTA
 $res=Locality::query()
@@ -263,52 +228,6 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
-<<<<<<< .merge_file_EMP6b7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZgagAS
-=======
-=======
->>>>>>> .merge_file_3F2BnY
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-- [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
-
-### Modulo User
-- [Theme Translation Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
-
-### Modulo Xot
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_ZgagAS
-=======
-=======
->>>>>>> .merge_file_3F2BnY
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_kVLL6N
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Best Practices Applicate
 
@@ -363,38 +282,6 @@ php artisan lang:check
 ## Collegamenti Correlati
 
 ### Documentazione Moduli
-<<<<<<< .merge_file_EMP6b7
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZgagAS
-- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
-=======
-=======
-=======
-- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
->>>>>>> .merge_file_3F2BnY
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_kVLL6N
-=======
-=======
-- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 
@@ -405,60 +292,6 @@ php artisan lang:check
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_EMP6b7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_ZgagAS
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-**Ultimo aggiornamento**: 2025-01-06
-**Autore**: Sistema di correzione automatica
-<<<<<<< HEAD
-**Stato**: ✅ Completato
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Stato**: ✅ Completato
-=======
-**Stato**: ✅ Completato
->>>>>>> 7f6cf6be (.)
-=======
-=======
->>>>>>> .merge_file_3F2BnY
-<<<<<<< HEAD
 **
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
-=======
-**Ultimo aggiornamento**: 2025-01-06
-**Autore**: Sistema di correzione automatica
-**Stato**: ✅ Completato
->>>>>>> laraxot/dev
-=======
-**
-**Autore**: Sistema di correzione automatica
-**Stato**: ✅ Completato
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
-=======
-**Ultimo aggiornamento**: 2025-01-06
-**Autore**: Sistema di correzione automatica
-**Stato**: ✅ Completato
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**
-**Autore**: Sistema di correzione automatica
-**Stato**: ✅ Completato
->>>>>>> .merge_file_kVLL6N
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -49,31 +49,15 @@ trait TransFuncTrait
             /** @var array<string, mixed>|Translator|string $trans */
             $trans = trans($key);
         } catch (\TypeError $e) {
-<<<<<<< HEAD
             /*
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             dddx([
                 'e' => $e,
                 'key' => $key,
             ]);
-<<<<<<< HEAD
             */
             return 'fix:'.$key;
 
             // return null;
-=======
-
-            return null;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         }
 
         if ($key !== $trans) {
@@ -101,19 +85,7 @@ trait TransFuncTrait
     }
 
     /**
-<<<<<<< .merge_file_AVrAIt
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  string|array<int|string, mixed>|Translator|null  $trans
-=======
-     * @param string|array<int|string, mixed>|Translator|null $trans
->>>>>>> laraxot/dev
-=======
-     * @param string|array<int|string, mixed>|Translator|null $trans
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  string|array<int|string, mixed>|Translator|null  $trans
->>>>>>> .merge_file_aXLC9A
      */
     protected static function formatTransFuncResult(string $key, string|array|Translator|null $trans): string
     {
@@ -136,19 +108,7 @@ trait TransFuncTrait
             return $trans;
         }
 
-<<<<<<< .merge_file_AVrAIt
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($trans === null) {
-=======
-        if (null === $trans) {
->>>>>>> laraxot/dev
-=======
-        if (null === $trans) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($trans === null) {
->>>>>>> .merge_file_aXLC9A
             return static::persistGeneratedTransFuncLabel($key);
         }
 

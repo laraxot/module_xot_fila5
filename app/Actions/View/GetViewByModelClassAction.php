@@ -22,31 +22,12 @@ class GetViewByModelClassAction
         $model_name = class_basename($model_class);
         $model_name = Str::of($model_name)->snake()->toString();
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_G2pbzG
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_lPBCZY
-        $view=$module_low.'::'.$model_name.$suffix;
-        
-        if(!view()->exists($view)){
-=======
-<<<<<<< HEAD
         $view = $module_low.'::'.$model_name.$suffix;
 
         if (! view()->exists($view)) {
->>>>>>> da9ae01a0 (.)
             throw new \Exception('view ['.$view.'] not Exists');
         }
-        
+
         return $view;
-=======
-        return $module_low.'::'.$model_name.$suffix;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 }

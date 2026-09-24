@@ -43,37 +43,7 @@ class ArtisanService
             case 'migrate':
                 DB::purge('mysql');
                 DB::reconnect('mysql');
-<<<<<<< HEAD
                 if ($module_name !== '') {
-<<<<<<< .merge_file_rSSwAx
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_1uWCo3
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-                if ($module_name !== '') {
-=======
-                if ('' !== $module_name) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-                if ('' !== $module_name) {
->>>>>>> .merge_file_05xIrP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                if ('' !== $module_name) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zuf9Rr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -167,39 +137,7 @@ class ArtisanService
             $log = '';
         }
         $content = '';
-<<<<<<< HEAD
-<<<<<<< .merge_file_rSSwAx
-<<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_1uWCo3
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
-=======
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
->>>>>>> .merge_file_05xIrP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
->>>>>>> .merge_file_zuf9Rr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -260,37 +198,7 @@ class ArtisanService
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
-<<<<<<< .merge_file_rSSwAx
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_1uWCo3
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
-=======
-            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> .merge_file_05xIrP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zuf9Rr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 // Parameter #1 $paths of static method Illuminate\Filesystem\Filesystem::delete() expects array|string, Symfony\Component\Finder\SplFileInfo given.
                 echo '<br/>'.$file->getRealPath();
 
@@ -306,39 +214,7 @@ class ArtisanService
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_rSSwAx
-<<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_1uWCo3
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
-=======
-            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> .merge_file_05xIrP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
->>>>>>> .merge_file_zuf9Rr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -354,37 +230,7 @@ class ArtisanService
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
-<<<<<<< .merge_file_rSSwAx
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_1uWCo3
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
-=======
-            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> .merge_file_05xIrP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zuf9Rr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -397,39 +243,7 @@ class ArtisanService
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_rSSwAx
-<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_1uWCo3
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $arguments
-=======
-     * @param array<string, mixed> $arguments
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-     * @param array<string, mixed> $arguments
->>>>>>> .merge_file_05xIrP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $arguments
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $arguments
->>>>>>> .merge_file_zuf9Rr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -439,39 +253,7 @@ class ArtisanService
             Artisan::call($command, $arguments);
 
             return $output.'[<pre>'.Artisan::output().'</pre>]'; // dato che mi carico solo le route minime menufull.delete non esiste.. impostare delle route comuni.
-<<<<<<< HEAD
-<<<<<<< .merge_file_rSSwAx
-<<<<<<< HEAD
         } catch (Exception $exception) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_1uWCo3
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        } catch (Exception $exception) {
-=======
-        } catch (\Exception $exception) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        } catch (\Exception $exception) {
->>>>>>> .merge_file_05xIrP
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        } catch (\Exception $exception) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        } catch (Exception $exception) {
->>>>>>> .merge_file_zuf9Rr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             // throw new Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
             return '[<pre>'.$exception->getMessage().'</pre>]';
 

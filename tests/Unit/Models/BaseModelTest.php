@@ -1,14 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
@@ -16,21 +8,8 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_K7qi2w
-<<<<<<< HEAD
-<<<<<<< HEAD
 $baseModel = new class extends BaseModel
 {
-=======
-$baseModel = new class extends BaseModel {
->>>>>>> laraxot/dev
-=======
-$baseModel = new class extends BaseModel {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-$baseModel = new class extends BaseModel
-{
->>>>>>> .merge_file_bVvm6D
     protected $table = 'test_table';
 };
 

@@ -1,22 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\Array\DiffAssocRecursiveAction;
-use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 test('diff assoc recursive action works correctly', function () {
     $arr1 = [

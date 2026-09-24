@@ -214,52 +214,10 @@ class YourResource extends XotBaseResource
     // Pages auto-discovered following pattern
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_ke2lB9
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_440yi7
-    public function getFormSchema(): array
-=======
-=======
->>>>>>> .merge_file_Lp1RMZ
-=======
-    public function getFormSchema(): array
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_u0Nqn2
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_ke2lB9
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_440yi7
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_Lp1RMZ
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_u0Nqn2
     {
         return [
             // Form components - NO hardcoded labels
@@ -267,52 +225,10 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_ke2lB9
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_440yi7
-    public function getInfolistSchema(): array
-=======
-=======
->>>>>>> .merge_file_Lp1RMZ
-=======
-    public function getInfolistSchema(): array
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_u0Nqn2
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_ke2lB9
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_440yi7
-=======
-=======
-    public static function getInfolistSchema(): array
->>>>>>> .merge_file_Lp1RMZ
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getInfolistSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_u0Nqn2
     {
         return [
             // Infolist components

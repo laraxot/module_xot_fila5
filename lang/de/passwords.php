@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/de/passwords.php
->>>>>>> 930f8146 (Check & fix styling)
 return [
     'password' => 'Passwörter müssen mind. 6 Zeichen haben und gleich der Wiederholung sein.',
     'reset' => 'Dein Passwort wurde zurückgesetzt!',

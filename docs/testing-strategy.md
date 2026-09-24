@@ -19,43 +19,8 @@ This document outlines our testing strategy that uses MySQL as the test database
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-<<<<<<< .merge_file_WuV5BH
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=test_database
-=======
-<<<<<<< HEAD
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE=test_database
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-<<<<<<< HEAD
-DB_DATABASE=test_database
-=======
-DB_DATABASE=<nome progetto>_data_test
->>>>>>> a01602c7 (.)
-=======
-DB_DATABASE=test_database
->>>>>>> 64619e34 (.)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-DB_DATABASE=<nome progetto>_data_test
-DB_DATABASE=test_database
->>>>>>> .merge_file_68Ru62
-=======
-=======
-DB_DATABASE=test_database
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 DB_USERNAME=root
 DB_PASSWORD=
 ```

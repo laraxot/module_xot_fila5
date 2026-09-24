@@ -176,49 +176,11 @@ create Folders :
  inside folder laravel/modules
 
 ~~~ bash
-<<<<<<< .merge_file_4e8HHV
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ubtwZe
-=======
->>>>>>> da9ae01a0 (.)
  git submodule add https://github.com/laraxot/module_xot_fila3.git Xot
  git submodule add https://github.com/laraxot/module_tenant_fila3.git Tenant
  git submodule add https://github.com/laraxot/module_user_fila3.git User
  git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
-<<<<<<< .merge_file_4e8HHV
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
- git submodule add https://github.com/laraxot/module_xot_fila5.git Xot
- git submodule add https://github.com/laraxot/module_tenant_fila5.git Tenant
- git submodule add https://github.com/laraxot/module_user_fila5.git User
- git submodule add https://github.com/laraxot/module_notify_fila5.git Notify
- git submodule add https://github.com/laraxot/module_ui_fila5.git UI
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ubtwZe
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ~~~
 
 from folder laravel
@@ -226,27 +188,4 @@ from folder laravel
 git submodule add  https://github.com/laraxot/filament-modules.git  packages/savannabits/filament-modules
 
 composer update -W (--with-all-dependencies)
-<<<<<<< .merge_file_4e8HHV
-<<<<<<< HEAD
-<<<<<<< HEAD
 ~~~
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-~~~
-=======
-~~~
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-~~~
->>>>>>> 3792da0d (Check & fix styling)
-=======
-~~~
->>>>>>> .merge_file_ubtwZe
-=======
-=======
-~~~
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

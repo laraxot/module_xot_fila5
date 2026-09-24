@@ -80,51 +80,10 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 14. **EditProfile.php**
     - Marker di merge conflict GIT non risolti:
       ```
-<<<<<<< .merge_file_0EgJDg
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_YXK4HS
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Q2RME2
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_EFPwzp
       =======
       >>>>>>> 041533e (.)
       =======
       >>>>>>> 00a34d0 (.)
-<<<<<<< .merge_file_0EgJDg
-<<<<<<< HEAD
-=======
->>>>>>> 7f6cf6be (.)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_EFPwzp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
       ```
 
 15. **PasswordResetConfirmWidget.php**
@@ -320,36 +279,4 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
 - [Code Quality Standards](./code-quality-standards.md)
-<<<<<<< .merge_file_0EgJDg
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-<<<<<<< HEAD
->>>>>>> 7f6cf6be (.)
-=======
->>>>>>> laraxot/dev
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> .merge_file_EFPwzp
-=======
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

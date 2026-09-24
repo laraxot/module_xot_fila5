@@ -14,39 +14,10 @@ namespace Modules\Xot\Filament\Resources;
 class XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_5WBwoS
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_LVEjbb
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_5WBwoS
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_LVEjbb
-=======
-=======
-    public static function getFormSchema(): array;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public static function getListTableColumns(): array;
 }
 ```
@@ -135,26 +106,6 @@ class XotBaseEditRecord
 
 ## Collegamenti Bidirezionali
 - [README](README.md)
-<<<<<<< .merge_file_5WBwoS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [README](readme.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [README](readme.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_LVEjbb
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 
@@ -342,54 +293,9 @@ class PolizzaConvenzioneController extends XotBaseController
 ## Collegamenti tra versioni di base-classes.md
 * [base-classes.md](../../../Xot/docs/base-classes.md)
 * [base-classes.md](../../../Xot/docs/roadmap/base-classes.md)
-<<<<<<< .merge_file_5WBwoS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-* [base-classes.md](../../../xot/docs/base-classes.md)
-* [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [base-classes.md](../../../xot/docs/base-classes.md)
-* [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_LVEjbb
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### Versione Incoming
 
    - Documentare le modifiche significative
 
-<<<<<<< .merge_file_5WBwoS
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 3792da0d (Check & fix styling)
-=======
----
->>>>>>> .merge_file_LVEjbb
-=======
-=======
----
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

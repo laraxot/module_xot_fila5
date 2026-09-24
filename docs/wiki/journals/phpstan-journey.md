@@ -295,44 +295,8 @@ Level 0  → 🏕️  Campo Base
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_cVd4SI
-<<<<<<< HEAD
-public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_OuzHx1
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_hW28XA
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> .merge_file_r8Kweg
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         'field_name' => ComponentType::make('field_name')

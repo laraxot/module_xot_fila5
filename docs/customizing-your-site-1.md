@@ -76,18 +76,6 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
-<<<<<<< .merge_file_yOTid6
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_zhxoaN
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 * [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
@@ -97,34 +85,3 @@ class Foo extends bar
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-<<<<<<< .merge_file_yOTid6
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-* [customizing-your-site.md](../../../gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
-
-### Versione Incoming
-
-<<<<<<< HEAD
----
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zhxoaN
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

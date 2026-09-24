@@ -1,81 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_7nfUMG
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_e5CE6n
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> .merge_file_JmA3pJ
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-declare(strict_types=1);
->>>>>>> .merge_file_yK1zQp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * @see https://medium.com/technology-hits/how-to-import-a-csv-excel-file-in-laravel-d50f93b98aa4
  */
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_7nfUMG
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_e5CE6n
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-declare(strict_types=1);
-
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_JmA3pJ
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_yK1zQp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Services;
 
 /**
@@ -96,39 +25,8 @@ class ConfigService
      */
     public static function getInstance(): self
     {
-<<<<<<< HEAD
-<<<<<<< .merge_file_7nfUMG
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! (self::$instance instanceof self)) {
             self::$instance = new self;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_e5CE6n
-        if (! (self::$instance instanceof self)) {
-            self::$instance = new self;
-=======
-        if (! self::$instance instanceof self) {
-            self::$instance = new self();
->>>>>>> .merge_file_JmA3pJ
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if (! (self::$instance instanceof self)) {
-            self::$instance = new self;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (! (self::$instance instanceof self)) {
-            self::$instance = new self;
->>>>>>> .merge_file_yK1zQp
-=======
-=======
-        if (! (self::$instance instanceof self)) {
-            self::$instance = new self;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         }
 
         return self::$instance;

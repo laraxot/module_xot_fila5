@@ -34,64 +34,16 @@ ModuleName/
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< .merge_file_roOrbh
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_wgCYpp
-=======
->>>>>>> da9ae01a0 (.)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
 - [Namespace Rules](namespace-rules.md) - Regole per i namespace
-=======
-- [README](../README.md) - Panoramica del modulo Xot
-- [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
-- [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
-- [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
->>>>>>> 930f8146 (Check & fix styling)
 
 ### Moduli Collegati
 - [UI](../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../Lang/docs/README.md) - Traduzioni
 - [User](../User/docs/README.md) - Gestione utenti
-<<<<<<< HEAD
-<<<<<<< .merge_file_roOrbh
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [README](../readme.md) - Panoramica del modulo Xot
-- [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
-- [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
-- [Namespace Rules](./namespace-rules.md) - Regole per i namespace
-
-### Moduli Collegati
-- [UI](../ui/docs/readme.md) - Componenti di interfaccia
-- [Cms](../cms/docs/readme.md) - Gestione contenuti
-- [Lang](../lang/docs/readme.md) - Traduzioni
-- [User](../user/docs/readme.md) - Gestione utenti
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wgCYpp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Struttura Dettagliata
 
@@ -249,18 +201,6 @@ User/
 ## Collegamenti Moduli
 
 ### Modulo UI
-<<<<<<< .merge_file_roOrbh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_wgCYpp
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -326,92 +266,6 @@ User/
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
 - [Visualizzazione](../Chart/docs/visualization.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_roOrbh
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Componenti Volt](../ui/docs/components/volt.md)
-- [Layout](../ui/docs/layouts.md)
-- [Temi](../ui/docs/themes.md)
-- [Best Practices](../ui/docs/best-practices.md)
-
-### Modulo Cms
-- [Frontend](../cms/docs/frontend.md)
-- [Temi](../cms/docs/themes.md)
-- [Contenuti](../cms/docs/content.md)
-- [Convenzioni Filament](../cms/docs/convenzioni-namespace-filament.md)
-
-### Modulo Lang
-- [Traduzioni](../lang/docs/translations.md)
-- [Localizzazione](../lang/docs/localization.md)
-- [API Traduzioni](../lang/docs/api.md)
-
-### Modulo User
-- [Autenticazione](../user/docs/auth.md)
-- [Permessi](../user/docs/permissions.md)
-- [Profilo](../user/docs/profile.md)
-
-### Modulo Patient
-- [Gestione Pazienti](../patient/docs/patients.md)
-- [Cartelle Cliniche](../patient/docs/records.md)
-- [Appuntamenti](../patient/docs/appointments.md)
-
-### Modulo Dental
-- [Trattamenti](../dental/docs/treatments.md)
-- [Pianificazione](../dental/docs/planning.md)
-- [Documenti](../dental/docs/documents.md)
-
-### Modulo Tenant
-- [Multi-tenant](../tenant/docs/multi-tenant.md)
-- [Configurazione](../tenant/docs/configuration.md)
-- [Migrazione](../tenant/docs/migration.md)
-
-### Modulo Media
-- [Gestione File](../media/docs/files.md)
-- [Upload](../media/docs/upload.md)
-- [Storage](../media/docs/storage.md)
-
-### Modulo Notify
-- [Notifiche](../notify/docs/notifications.md)
-- [Email](../notify/docs/email.md)
-- [SMS](../notify/docs/sms.md)
-
-### Modulo Reporting
-- [Report](../reporting/docs/reports.md)
-- [Esportazione](../reporting/docs/export.md)
-- [Analytics](../reporting/docs/analytics.md)
-
-### Modulo Gdpr
-- [Privacy](../gdpr/docs/privacy.md)
-- [Consensi](../gdpr/docs/consents.md)
-- [Sicurezza](../gdpr/docs/security.md)
-
-### Modulo Job
-- [Jobs](../job/docs/jobs.md)
-- [Queue](../job/docs/queue.md)
-- [Scheduling](../job/docs/scheduling.md)
-
-### Modulo Chart
-- [Grafici](../chart/docs/charts.md)
-- [Dashboard](../chart/docs/dashboard.md)
-- [Visualizzazione](../chart/docs/visualization.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wgCYpp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 # Struttura dei Moduli Laravel
 
@@ -554,27 +408,4 @@ Se trovi una directory con case errato:
 6. Committa le modifiche
 
 ## Collegamenti tra versioni di module_structure.md
-<<<<<<< .merge_file_roOrbh
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [module_structure.md](../../../../docs/error_analysis/module_structure.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [module_structure.md](../../../../docs/error_analysis/module_structure.md)
-=======
-* [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-* [module_structure.md](../../../../docs/error_analysis/module_structure.md)
->>>>>>> .merge_file_wgCYpp
-=======
-=======
-* [module_structure.md](../../../../docs/error_analysis/module_structure.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

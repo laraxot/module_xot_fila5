@@ -289,39 +289,10 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_rWVNbC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_pygc65
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_rWVNbC
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_pygc65
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -797,33 +768,6 @@ public function createModel(array $data): MioModello
 ---
 
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-<<<<<<< .merge_file_rWVNbC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [**README.md**](readme.md) - Documentazione principale del modulo
-- [**Architettura**](architecture.md) - Architettura del modulo Xot
-- [**Best Practices Globali**](../../docs/best-practices.md) - Best practices globali
-
----
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_pygc65
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -891,27 +835,4 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
-<<<<<<< .merge_file_rWVNbC
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-```
->>>>>>> 3792da0d (Check & fix styling)
-=======
-```
->>>>>>> .merge_file_pygc65
-=======
-=======
-```
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

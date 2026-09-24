@@ -1,41 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_PgsilQ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_Ssy17G
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-
->>>>>>> .merge_file_TU22tM
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_O7XOCQ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\Route\GetRouteMethodAction;
 use PHPUnit\Framework\Assert;
 

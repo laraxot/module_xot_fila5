@@ -1,34 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< .merge_file_Gf8HsO
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_78IjtG
-title: "Redundancy Audit"
-type: concept
-status: deprecated
-module: "Xot"
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "deprecated redundancy-audit"
-related:
-  - "./redundancy-audit.md"
----
-# Redundancy Audit
-
-> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
-
-Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uOfu4A
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 title: "audit ridondanza monorepo 2026-05-26"
 module: Xot
 type: audit
@@ -106,17 +76,3 @@ related:
 ## Storico audit
 
 - [2026-05-21](redundancy-audit-2026-05-21.md) — scan precedente (Fixcity tracker)
-<<<<<<< HEAD
-<<<<<<< .merge_file_Gf8HsO
-<<<<<<< HEAD
->>>>>>> .merge_file_qWj4Pb
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uOfu4A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_qWj4Pb
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

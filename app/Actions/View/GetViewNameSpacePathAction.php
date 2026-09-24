@@ -16,19 +16,7 @@ class GetViewNameSpacePathAction
      */
     public function execute(?string $module_name = null): string
     {
-<<<<<<< .merge_file_KtaYbD
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($module_name !== null && $module_name !== '') {
-=======
-        if (null !== $module_name && '' !== $module_name) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $module_name && '' !== $module_name) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($module_name !== null && $module_name !== '') {
->>>>>>> .merge_file_5Mf9xz
             $module_path = Module::getModulePath($module_name);
             /** @var non-falsy-string $namespace_path */
             $namespace_path = $module_path.'resources/views';

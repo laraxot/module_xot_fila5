@@ -809,30 +809,7 @@ else {
 - [eloquent-models-critical-rules.md](./eloquent-models-critical-rules.md) - Regole critiche
 - [property-exists-elimination-philosophy.md](./property-exists-elimination-philosophy.md) - Filosofia
 - [phpstan/](./phpstan/) - PHPStan guides
-<<<<<<< .merge_file_vpzmpD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [../../../docs/quality/](../../../docs/quality/) - Root quality docs
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
-=======
-- [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
->>>>>>> .merge_file_zRA1Rm
-=======
-=======
-- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -862,27 +839,4 @@ else {
 **Status**: 📘 Master Reference Document
 **Revision**: 1.0
 
-<<<<<<< .merge_file_vpzmpD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> .merge_file_zRA1Rm
-=======
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

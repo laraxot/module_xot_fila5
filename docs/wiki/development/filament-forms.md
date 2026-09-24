@@ -26,44 +26,8 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_g3ABMs
-<<<<<<< HEAD
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_pcAwg0
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cvYoFY
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> .merge_file_Qs4VbE
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\Card::make()
@@ -283,44 +247,8 @@ Forms\Components\Grid::make()
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_g3ABMs
-<<<<<<< HEAD
-public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_pcAwg0
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cvYoFY
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> .merge_file_Qs4VbE
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\TextInput::make('codice')

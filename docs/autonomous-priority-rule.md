@@ -1,26 +1,6 @@
 # Autonomous Priority Rule
 
 **Date**: 2025-12-18
-<<<<<<< .merge_file_vvrJ8C
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Date**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Date**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_6nu2g4
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Context**: "Super Mucca" Mode
 
 ## The Rule
@@ -50,27 +30,4 @@ This rule connects directly with the project's core principles:
 ## Commandment
 "Ordine e priorita le scegli sempre te." (Order and priority are always chosen by you.)
 
-<<<<<<< .merge_file_vvrJ8C
-<<<<<<< HEAD
-<<<<<<< HEAD
 This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
-=======
-This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
->>>>>>> .merge_file_6nu2g4
-=======
-=======
-This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -1,36 +1,3 @@
-<<<<<<< .merge_file_a4rxiR
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_fwCtB7
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< .merge_file_fwCtB7
-<<<<<<< HEAD
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-da tenere d'occhio .. comprati
-https://livewiredemos.com/components
-
-
-<<<<<<< HEAD
-https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_6IFZTq
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kxnRZo
 ---
 title: 'livewire_components'
 module: Xot
@@ -51,31 +18,3 @@ da tenere d'occhio .. comprati
 https://livewiredemos.com/components
 
 https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
-<<<<<<< .merge_file_a4rxiR
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_fwCtB7
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-da tenere d'occhio .. comprati
-https://livewiredemos.com/components
-
-
-https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
->>>>>>> .merge_file_6IFZTq
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_kxnRZo
-=======
-=======
-https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

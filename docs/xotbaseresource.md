@@ -26,39 +26,10 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_JTRynX
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_AJCL1k
-=======
->>>>>>> da9ae01a0 (.)
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_JTRynX
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_AJCL1k
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -93,39 +64,10 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_JTRynX
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_AJCL1k
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_JTRynX
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_AJCL1k
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -142,18 +84,6 @@ class NotificationResource extends XotBaseResource
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-<<<<<<< .merge_file_JTRynX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_AJCL1k
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Architettura Filament](../../../docs/architecture/filament.md)
 - [Gestione Risorse](../../../docs/architecture/resources.md)
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
@@ -161,36 +91,6 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)
 - [User Resource](../../User/docs/filament-resources.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_JTRynX
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Notify Resource](../../Notify/docs/filament-resources.md)
-- [User Resource](../../User/docs/filament-resources.md)
-- [Architettura Filament](../../../../docs/architecture/filament.md)
-- [Gestione Risorse](../../../../docs/architecture/resources.md)
-- [Regole XotBaseResource](../../../../docs/regole/xotbaseresource-rules.md)
-
-### Collegamenti ai Moduli
-- [Notify Resource](../../notify/docs/filament-resources.md)
-- [User Resource](../../user/docs/filament-resources.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_AJCL1k
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Note Importanti
 
@@ -198,27 +98,4 @@ class NotificationResource extends XotBaseResource
 2. Implementare sempre i metodi astratti richiesti
 3. Utilizzare i file di traduzione per le label
 4. Evitare override non necessari di metodi
-<<<<<<< .merge_file_JTRynX
-<<<<<<< HEAD
-<<<<<<< HEAD
 5. Seguire le convenzioni di Filament
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-5. Seguire le convenzioni di Filament
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> 3792da0d (Check & fix styling)
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> .merge_file_AJCL1k
-=======
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

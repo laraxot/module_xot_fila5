@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 930f8146 (Check & fix styling)
 # Filosofia dei Metodi Getter in Xot
 
 ## Principi Fondamentali

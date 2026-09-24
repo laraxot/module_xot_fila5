@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 930f8146 (Check & fix styling)
 # Export XLS - File di traduzione
 
 Il file `export_xls.php` contiene tutte le etichette e i testi utilizzati per l'esportazione in formato XLS nel modulo Xot.

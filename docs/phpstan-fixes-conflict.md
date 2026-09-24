@@ -98,12 +98,4 @@
 - [Array Types Fixes](./phpstan-array-types-fixes.md)
 - [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
-*Ultimo aggiornamento: 6 Gennaio 2025*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: 6 Gennaio 2025*
->>>>>>> da9ae01a0 (.)

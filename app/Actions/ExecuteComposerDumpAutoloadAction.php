@@ -4,50 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Process;
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-=======
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Process;
-
-=======
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Process;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Process;
->>>>>>> .merge_file_2EEPTa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -75,39 +33,6 @@ class ExecuteComposerDumpAutoloadAction
         /** @var list<string> $output */
         $output = [];
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-<<<<<<< HEAD
-        Event::dispatch('artisan-command.started', ['composer dump-autoload']);
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_2EEPTa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         try {
             /*
              * Laravel's Process, quando non riceve `->env(...)`, passa un
@@ -143,112 +68,18 @@ class ExecuteComposerDumpAutoloadAction
              */
             while ($process->running()) {
                 $data = $process->latestOutput();
-<<<<<<< HEAD
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GcEyAu
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 if ($data !== '') {
                     $formatted = trim($data);
                     if ($formatted !== '') {
                         $output[] = $formatted;
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-                        Event::dispatch('artisan-command.output', ['composer dump-autoload', $formatted]);
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-                if ('' !== $data) {
-                    $formatted = trim($data);
-                    if ('' !== $formatted) {
-                        $output[] = $formatted;
->>>>>>> .merge_file_2EEPTa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     }
                 }
 
                 $errorData = $process->latestErrorOutput();
-<<<<<<< HEAD
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GcEyAu
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 if ($errorData !== '') {
                     $formattedError = trim($errorData);
                     if ($formattedError !== '') {
                         $output[] = $formattedError;
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-                        Event::dispatch('artisan-command.output', ['composer dump-autoload', $formattedError]);
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-                if ('' !== $errorData) {
-                    $formattedError = trim($errorData);
-                    if ('' !== $formattedError) {
-                        $output[] = $formattedError;
->>>>>>> .merge_file_2EEPTa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     }
                 }
 
@@ -258,178 +89,27 @@ class ExecuteComposerDumpAutoloadAction
             $result = $process->wait();
 
             $finalOutput = trim($result->output());
-<<<<<<< HEAD
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($finalOutput !== '') {
                 $output[] = $finalOutput;
-=======
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-            if ($finalOutput !== '') {
-                $output[] = $finalOutput;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                Event::dispatch('artisan-command.output', ['composer dump-autoload', $finalOutput]);
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($finalOutput !== '') {
-                $output[] = $finalOutput;
->>>>>>> .merge_file_o9lNxz
             }
 
             $finalErrorOutput = trim($result->errorOutput());
             if ($finalErrorOutput !== '') {
                 $output[] = $finalErrorOutput;
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-                Event::dispatch('artisan-command.output', ['composer dump-autoload', $finalErrorOutput]);
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if ('' !== $finalOutput) {
-                $output[] = $finalOutput;
-            }
-
-            $finalErrorOutput = trim($result->errorOutput());
-            if ('' !== $finalErrorOutput) {
-                $output[] = $finalErrorOutput;
->>>>>>> .merge_file_2EEPTa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             }
 
             $status = $result->successful() ? 'completed' : 'failed';
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_o9lNxz
             if ($status === 'failed') {
                 $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
             }
 
-<<<<<<< .merge_file_1VUDkl
-=======
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-            if ($status === 'failed') {
-<<<<<<< HEAD
-                $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
-            }
-
-=======
-<<<<<<< HEAD
-                $failureNotice = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
-                $output[] = $failureNotice;
-                Event::dispatch('artisan-command.output', ['composer dump-autoload', $failureNotice]);
-            }
-
-            Event::dispatch('artisan-command.'.$status, ['composer dump-autoload', $finalErrorOutput]);
-
-=======
-                $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
-            }
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if ('failed' === $status) {
-                $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
-            }
-
->>>>>>> .merge_file_2EEPTa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return [
                 'output' => $output,
                 'status' => $status,
                 'exitCode' => $result->exitCode() ?? 0,
             ];
         } catch (\Throwable $e) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_1VUDkl
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_GcEyAu
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-<<<<<<< HEAD
-            Event::dispatch('artisan-command.error', ['composer dump-autoload', $e->getMessage()]);
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_2EEPTa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o9lNxz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             throw new \RuntimeException("Errore durante l'esecuzione di composer dump-autoload: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }

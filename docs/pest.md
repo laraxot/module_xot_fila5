@@ -1,24 +1,3 @@
-<<<<<<< .merge_file_jL06Ym
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e
-=======
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_gqYyZ6
-<<<<<<< HEAD
-https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_faAd33
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_nOPbYn
 ---
 title: 'Pest — risorse esterne'
 module: Xot
@@ -39,27 +18,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e>
-<<<<<<< .merge_file_jL06Ym
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_gqYyZ6
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e
->>>>>>> .merge_file_faAd33
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_nOPbYn
-=======
-=======
-https://medium.com/innovies-club/generate-unit-tests-in-a-snap-with-openais-api-3c72fcae6e4e
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

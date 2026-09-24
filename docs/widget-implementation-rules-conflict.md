@@ -71,30 +71,7 @@ class MyTableWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_0mKXZn
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Widgets;
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> .merge_file_FZBJ1x
-=======
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -150,30 +127,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_0mKXZn
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Widgets;
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> .merge_file_FZBJ1x
-=======
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -250,30 +204,7 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_0mKXZn
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Quaeris\Filament\Widgets;
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-namespace Modules\healthcare_app\Filament\Widgets;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> .merge_file_FZBJ1x
-=======
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -483,35 +414,5 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
-<<<<<<< .merge_file_0mKXZn
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
-=======
-- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
-
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
-
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> .merge_file_FZBJ1x
-=======
-=======
-
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

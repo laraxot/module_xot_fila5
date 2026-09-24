@@ -32,16 +32,9 @@ class StateOverviewWidget extends XotBaseSchemaWidget
     /**
      * Vista del widget.
      */
-<<<<<<< HEAD
     /** @var view-string */
-=======
-<<<<<<< HEAD
-    /** @phpstan-ignore property.defaultValue */
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    protected string $view = 'xot::filament.widgets.state-overview';
+    /** @var view-string */
+    protected string $view;
 
     /**
      * Occupa tutta la larghezza disponibile.
@@ -85,19 +78,7 @@ class StateOverviewWidget extends XotBaseSchemaWidget
 
             return $cacheKey;
         } catch (\Error $e) {
-<<<<<<< .merge_file_WRsv6U
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($this->cacheKey === '') {
-=======
-            if ('' === $this->cacheKey) {
->>>>>>> laraxot/dev
-=======
-            if ('' === $this->cacheKey) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($this->cacheKey === '') {
->>>>>>> .merge_file_ZMLPg4
                 $this->cacheKey = Str::uuid()->toString();
             }
 

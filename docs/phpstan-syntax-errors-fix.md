@@ -89,10 +89,3 @@ File di traduzione incompleti spesso derivano da:
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)

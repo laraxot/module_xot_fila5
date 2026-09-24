@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_tQOVsj
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> .merge_file_8sXU8F
 ---
 name: phpstan-fixes-summary-2025-08-18
 description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
@@ -26,33 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< .merge_file_tQOVsj
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_8sXU8F
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_tQOVsj
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_8sXU8F
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_tQOVsj
-=======
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_8sXU8F
 # PHPStan Fixes Summary - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

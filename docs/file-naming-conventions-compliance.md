@@ -1,28 +1,6 @@
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
-<<<<<<< .merge_file_sUvz2Y
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# File Naming Conventions Compliance - [DATE]
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-# File Naming Conventions Compliance - [DATE]
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MuPV0M
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -56,26 +34,6 @@
 ### Pattern di Rinomina
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
-<<<<<<< .merge_file_sUvz2Y
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-❌ PRIMA: nome-file-[DATE].md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-❌ PRIMA: nome-file-[DATE].md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MuPV0M
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ✅ DOPO: nome-file.md
 ```
 
@@ -122,23 +80,3 @@
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
-<<<<<<< .merge_file_sUvz2Y
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MuPV0M
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

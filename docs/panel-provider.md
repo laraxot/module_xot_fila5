@@ -87,53 +87,8 @@ public function panel(Panel $panel): Panel
 
 ### Collegamenti
 
-<<<<<<< .merge_file_F9xBTM
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
->>>>>>> .merge_file_RFH8qG
-=======
-=======
-- [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Architettura Filament](../../../docs/FILAMENT_BEST_PRACTICES.md)
 - [Configurazione Moduli](../../../docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< .merge_file_F9xBTM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Documentazione Root](../../../../docs/filament_panel_provider_rules.md)
-- [Architettura Filament](../../../../docs/filament_best_practices.md)
-- [Configurazione Moduli](../../../../docs/module_architecture.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione Root](../../../../docs/filament_panel_provider_rules.md)
-- [Architettura Filament](../../../../docs/filament_best_practices.md)
-- [Configurazione Moduli](../../../../docs/module_architecture.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_RFH8qG
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

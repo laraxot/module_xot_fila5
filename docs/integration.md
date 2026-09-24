@@ -73,27 +73,4 @@
 
 ### Versione Incoming
 
-<<<<<<< .merge_file_GjCD24
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 3792da0d (Check & fix styling)
-=======
----
->>>>>>> .merge_file_BaIbp7
-=======
-=======
----
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -6,15 +6,8 @@ namespace Modules\Xot\Filament\Widgets;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 class StatesChartWidget extends XotBaseChartWidget
 {
@@ -41,19 +34,7 @@ class StatesChartWidget extends XotBaseChartWidget
         try {
             /** @var class-string<Model> $modelClass */
             $modelClass = $this->model;
-<<<<<<< .merge_file_MJMAxl
-<<<<<<< HEAD
-<<<<<<< HEAD
             $instance = new $modelClass;
-=======
-            $instance = new $modelClass();
->>>>>>> laraxot/dev
-=======
-            $instance = new $modelClass();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $instance = new $modelClass;
->>>>>>> .merge_file_EzRZWG
 
             /** @var array<string, string> $colors */
             $colors = [
@@ -70,17 +51,8 @@ class StatesChartWidget extends XotBaseChartWidget
                 ->groupBy('state')
                 ->get();
             foreach ($rows as $row) {
-<<<<<<< HEAD
                 $state = SafeStringCastAction::cast($row->state ?? '');
                 $states[$state] = SafeIntCastAction::cast($row->count ?? 0);
-=======
-                $state = (string) ($row->state ?? '');
-                $states[$state] = (int) ($row->count ?? 0);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             }
 
             $data = [];

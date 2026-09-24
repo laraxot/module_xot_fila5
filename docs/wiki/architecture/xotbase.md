@@ -22,50 +22,7 @@ XotBase funge da wrapper per tutti i componenti Filament nel progetto Laraxot. C
 | Componente Filament | Classe XotBase |
 | :--- | :--- |
 | `Filament\Actions\Action` | `Modules\Xot\Filament\Actions\XotBaseAction` |
-<<<<<<< .merge_file_aKW2ZT
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_w2Apc8
-=======
-<<<<<<< .merge_file_cs2A2n
-=======
 | `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> laraxot/dev
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_YofIXc
-=======
->>>>>>> 930f8146 (Check & fix styling)
-=======
-<<<<<<< HEAD
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_w2Apc8
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_g1eER4
->>>>>>> .merge_file_YofIXc
-=======
-<<<<<<< HEAD
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> .merge_file_hv2t4j
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 | `Filament\Resources\Resource` | `Modules\Xot\Filament\Resources\XotBaseResource` |
 | `Filament\Pages\Page` | `Modules\Xot\Filament\Pages\XotBasePage` |
 | `Filament\Widgets\Widget` | `Modules\Xot\Filament\Widgets\XotBaseWidget` |
@@ -81,67 +38,7 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 ### 2. Metodi Obbligatori
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
-<<<<<<< .merge_file_aKW2ZT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_w2Apc8
-=======
-<<<<<<< HEAD
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_YofIXc
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_w2Apc8
-=======
->>>>>>> laraxot/dev
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
->>>>>>> .merge_file_YofIXc
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> .merge_file_hv2t4j
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### 3. Namespace Standard
 Assicurati di usare i namespace corretti. Mai includere `App` nel percorso se sei all'interno di un modulo (es. `Modules\Xot\Filament\...` non `Modules\Xot\App\Filament\...`).

@@ -221,26 +221,6 @@ find Modules/*/docs -type f | sort -f | uniq -di
 ```bash
 # Sposta file vecchi in _archive con data
 mv old-file.md _archive/2024-01-15-old-file.md
-<<<<<<< .merge_file_njcE2p
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-mv old-file.md _archive/[DATE]-old-file.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-mv old-file.md _archive/[DATE]-old-file.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vqy70p
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 **Quando archiviare**:
@@ -260,26 +240,6 @@ mv old-file.md _archive/[DATE]-old-file.md
 [Link](./same-folder/file.md)
 [Link](../parent-folder/file.md)
 [Link](../../Modules/Other/docs/file.md)
-<<<<<<< .merge_file_njcE2p
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-[Link](../../modules/other/docs/file.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-[Link](../../modules/other/docs/file.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vqy70p
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ❌ SBAGLIATO:
 [Link](/absolute/path/file.md)
@@ -606,40 +566,6 @@ Per migliorare questa guida:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_njcE2p
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versione**: 1.0
 **Status**: ✅ Active
 **Maintainer**: Team Laraxot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
-=======
-**Ultimo aggiornamento**: [DATE]
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
-<<<<<<< HEAD
->>>>>>> .merge_file_vqy70p
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

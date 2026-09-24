@@ -200,30 +200,7 @@ find laravel/Themes -name "docs" -type d
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)
-<<<<<<< .merge_file_XL7Ps7
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Struttura Progetto](PROJECT-STRUCTURE.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Struttura Progetto](PROJECT-STRUCTURE.md)
-=======
-- [Struttura Progetto](project-structure.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Struttura Progetto](project-structure.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Struttura Progetto](PROJECT-STRUCTURE.md)
->>>>>>> .merge_file_MlEjVH
-=======
-=======
-- [Struttura Progetto](project-structure.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---

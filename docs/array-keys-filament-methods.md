@@ -63,39 +63,10 @@ public function getTableBulkActions(): array
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_OF9YBL
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_OF9YBL
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -133,39 +104,10 @@ public function getTableActions(): array
  * @return array<mixed, Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_OF9YBL
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_OF9YBL
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     // ...
 }
@@ -213,39 +155,10 @@ public function getTableBulkActions(): array
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_OF9YBL
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_OF9YBL
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         'template_slug' => Select::make('template_slug')
@@ -369,56 +282,10 @@ grep -r "array<mixed" Modules/ --include="*.php"
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole generali estensione classi
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - Guide PHPStan
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
-=======
-- [Filament Form Schema Structure](../../../../docs/filament_form_schema_structure.md) - Struttura form schema
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Filament Form Schema Structure](../../../../docs/filament_form_schema_structure.md) - Struttura form schema
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
->>>>>>> .merge_file_OF9YBL
-=======
-=======
-- [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
 **Filosofia**: Type Safety, Coerenza, Manutenibilità
 **Pattern**: `array<string, T>` sempre, mai `array<int, T>` o `array<mixed, T>`
-<<<<<<< .merge_file_9kNfj6
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Priorità**: CRITICA - PHPStan Level 10 compliance
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Priorità**: CRITICA - PHPStan Level 10 compliance
-=======
-**Priorità**: CRITICA - PHPStan Level 10 compliance
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Priorità**: CRITICA - PHPStan Level 10 compliance
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Priorità**: CRITICA - PHPStan Level 10 compliance
->>>>>>> .merge_file_OF9YBL
-=======
-=======
-**Priorità**: CRITICA - PHPStan Level 10 compliance
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

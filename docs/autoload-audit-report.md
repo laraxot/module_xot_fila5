@@ -24,30 +24,7 @@ Each module's composer.json should have:
 
 ### Modules with CORRECT configuration:
 - User ✓
-<<<<<<< .merge_file_3JbJn2
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Quaeris ✓
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Quaeris ✓
-=======
-- healthcare_app ✓
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- healthcare_app ✓
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Quaeris ✓
->>>>>>> .merge_file_uuiXc2
-=======
-=======
-- Quaeris ✓
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - UI ✓
 - Tenant ✓
 - Limesurvey ✓
@@ -73,27 +50,4 @@ All modules now follow the correct autoload configuration standard. The main dev
 
 ## Recommendations
 - Continue to validate that all new modules follow the standard configuration
-<<<<<<< .merge_file_3JbJn2
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Implement automated checks to prevent this type of configuration issue
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Implement automated checks to prevent this type of configuration issue
-=======
-- Implement automated checks to prevent this type of configuration issue
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Implement automated checks to prevent this type of configuration issue
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Implement automated checks to prevent this type of configuration issue
->>>>>>> .merge_file_uuiXc2
-=======
-=======
-- Implement automated checks to prevent this type of configuration issue
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

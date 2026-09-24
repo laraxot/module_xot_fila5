@@ -26,52 +26,7 @@ class ViewExport implements FromView
     /**
      * Summary of __construct.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_ft7cQA
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_BM1WiU
->>>>>>> da9ae01a0 (.)
-     *
-     * @param array<string> $fields
-     *                              =======
-     *                              <<<<<<< .merge_file_BM1WiU
-     * @param array<string> $fields
-     *                              =======
-     *                              <<<<<<< HEAD
-     *                              <<<<<<< .merge_file_SWEpSM
-     * @param array<string> $fields
-     *                              =======
-     *                              <<<<<<< .merge_file_iIkpeV
-     * @param array<string> $fields
-     *                              =======
-     *                              <<<<<<< HEAD
-     * @param array<string> $fields
-     *                              =======
-     * @param array<string> $fields
-     *                              >>>>>>> laraxot/dev
-     *                              >>>>>>> .merge_file_NEgiQb
-     *                              >>>>>>> .merge_file_imkc7W
-     *                              =======
-     * @param array<string> $fields
-     *                              >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                              >>>>>>> .merge_file_ogFscl
-     *                              >>>>>>> laraxot/dev
-=======
-     * @param array<string> $fields
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  array<string>  $fields
->>>>>>> .merge_file_lhyLFl
-=======
->>>>>>> .merge_file_ogFscl
-=======
-     * @param array<string> $fields
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function __construct(View $view, ?string $transKey = null, ?array $fields = null)
     {

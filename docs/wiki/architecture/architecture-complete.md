@@ -153,47 +153,8 @@ All Filament resources extend this base class:
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
-<<<<<<< .merge_file_396keo
-<<<<<<< HEAD
-abstract public function getFormSchema(): array;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-abstract public function getFormSchema(): array;
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_gIYnxU
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-abstract public function getFormSchema(): array;
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_nTLeny
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> .merge_file_udHawY
-=======
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -635,43 +596,7 @@ class MyResource extends XotBaseResource
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
-<<<<<<< HEAD
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_396keo
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_gIYnxU
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_nTLeny
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_udHawY
-=======
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('field1')->required(),
@@ -751,44 +676,8 @@ class ArticleResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_396keo
-<<<<<<< HEAD
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_gIYnxU
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_nTLeny
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> .merge_file_udHawY
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('title')

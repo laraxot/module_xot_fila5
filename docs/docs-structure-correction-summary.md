@@ -1,15 +1,3 @@
-<<<<<<< .merge_file_bQl9QE
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_FRoqxi
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -212,11 +200,7 @@ find laravel/Themes -name "docs" -type d
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)
-<<<<<<< HEAD
 - [Struttura Progetto](PROJECT-STRUCTURE.md)
-=======
-- [Struttura Progetto](project-structure.md)
->>>>>>> 930f8146 (Check & fix styling)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---
@@ -227,32 +211,3 @@ find laravel/Themes -name "docs" -type d
 **Stato**: Violazione corretta, regole implementate, struttura conforme
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
-<<<<<<< HEAD
-<<<<<<< .merge_file_bQl9QE
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
----
-module: theme
-topic: docs-structure-correction-summary
-canonical: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_FRoqxi
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

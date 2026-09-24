@@ -145,54 +145,10 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_VYbB6C
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_QHL09M
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_64jcT2
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Pru0uX
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_VYbB6C
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_QHL09M
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_64jcT2
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Pru0uX
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         'details' => Section::make('Details')

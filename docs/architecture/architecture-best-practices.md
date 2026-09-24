@@ -8,27 +8,6 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 
 **Collegamento bidirezionale:**
 - [Motivazione e applicazione nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md)
-<<<<<<< .merge_file_Q72WjP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_WU4QKn
-=======
-=======
-- [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 
@@ -68,27 +47,4 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
   - [Documentazione generale e convenzioni di progetto](../../../../project_docs/coding-standards.md)
   - [Esempio e memo nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
 
-<<<<<<< .merge_file_Q72WjP
-<<<<<<< HEAD
-<<<<<<< HEAD
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
-=======
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> .merge_file_WU4QKn
-=======
-=======
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -236,54 +236,9 @@ return [
 ## Collegamenti tra versioni di services.md
 * [services.md](../../../Xot/docs/services.md)
 * [services.md](../../../Tenant/docs/it/config/services.md)
-<<<<<<< .merge_file_lcBDy2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-* [services.md](../../../xot/docs/services.md)
-* [services.md](../../../tenant/docs/it/config/services.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [services.md](../../../xot/docs/services.md)
-* [services.md](../../../tenant/docs/it/config/services.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_czTBAa
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### Versione Incoming
 
    - Testare i casi limite
 
-<<<<<<< .merge_file_lcBDy2
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 3792da0d (Check & fix styling)
-=======
----
->>>>>>> .merge_file_czTBAa
-=======
-=======
----
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -11,69 +11,16 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-<<<<<<< .merge_file_Qt1Kav
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-=======
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-use Modules\Xot\Datas\XotData;
-use Nwidart\Modules\Facades\Module;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 use function Safe\json_decode;
 use function Safe\realpath;
 use function Safe\scandir;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-=======
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * Classe wrapper che raccoglie i metodi legacy di FileService in un'unica
  * QueueableAction. I metodi più usati sono stati estratti in action dedicate
@@ -88,103 +35,17 @@ class FileAction
     {
         try {
             $module_path = Module::getModulePath($moduleName);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
         } catch (Exception) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-        } catch (Exception) {
-=======
-        } catch (\Exception) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        } catch (\Exception) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        } catch (Exception) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-        } catch (Exception) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             $modulesPath = base_path('Modules');
             if (! File::exists($modulesPath)) {
                 return __DIR__.'/../../..';
             }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-            $files = scandir($modulesPath);
-            $module_path = collect($files)
-                ->filter(
-                    fn (mixed $item): bool => is_string($item) && Str::lower($item) === Str::lower($moduleName)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             /** @var array<int, string> $files */
             $files = scandir($modulesPath);
             $module_path = collect($files)
                 ->filter(
                     fn (string $item): bool => Str::lower($item) === Str::lower($moduleName)
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 )->first();
             $module_path = base_path('Modules/'.(is_string($module_path) ? $module_path : ''));
         }
@@ -254,39 +115,8 @@ class FileAction
 
                 try {
                     File::copy($filename_from, $filename_to);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
                 } catch (Exception $e) {
                     throw new Exception('message:['.$e->getMessage().']
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-                } catch (Exception $e) {
-                    throw new Exception('message:['.$e->getMessage().']
-=======
-                } catch (\Exception $e) {
-                    throw new \Exception('message:['.$e->getMessage().']
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                } catch (\Exception $e) {
-                    throw new \Exception('message:['.$e->getMessage().']
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                } catch (Exception $e) {
-                    throw new Exception('message:['.$e->getMessage().']
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-                } catch (Exception $e) {
-                    throw new Exception('message:['.$e->getMessage().']
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                         path :['.$path.']
                         file from ['.$filename_from.']
                         file to ['.$filename_to.']', $e->getCode(), $e);
@@ -312,52 +142,11 @@ class FileAction
             if (isRunningTestBench()) {
                 return $path;
             }
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_jnVYIW
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_jnVYIW
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             throw new Exception('file ['.$filename_from.'] not Exists , path ['.$path.']');
         }
 
         // dddx(app()->environment());// local
         if (! File::exists($filename_to) || app()->environment() !== 'production') {
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$path.']');
-        }
-
-        // dddx(app()->environment());// local
-        if (! File::exists($filename_to) || 'production' !== app()->environment()) {
-<<<<<<< HEAD
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             if (! File::exists(\dirname($filename_to))) {
                 File::makeDirectory(\dirname($filename_to), 0755, true, true);
             }
@@ -475,33 +264,7 @@ class FileAction
         if (! File::exists(\dirname($filename_pub))) {
             try {
                 File::makeDirectory(\dirname($filename_pub), 0755, true, true);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
@@ -510,24 +273,7 @@ class FileAction
             try {
                 // echo '<hr>'.$filename.' >>>>  '.$filename_pub; //4 debug
                 File::copy($filename, $filename_pub);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_qwUN7q
             } catch (Exception $e) {
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
@@ -541,20 +287,6 @@ class FileAction
         // sorgente locale — causa diretta del rumore nell'output della
         // suite Pest completa del modulo Xot, vedi story
         // xotbasemanagerelatedrecords-post-saga-cleanup.story.md.
-=======
-            } catch (\Exception $e) {
-                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
-            }
-        } else {
-            $msg = [
-                'ns' => $ns,
-                'path1' => $path1,
-                'filename' => $filename,
-                'msg' => 'Filename not Exists',
-            ];
-            dddx($msg); // 4 debug
-        }
->>>>>>> 3792da0d (Check & fix styling)
 
         // $url=str_replace(url('/'),'',$url);
         // dddx(url($url));
@@ -583,33 +315,7 @@ class FileAction
         if (! File::exists(\dirname($filename_pub))) {
             try {
                 File::makeDirectory(\dirname($filename_pub), 0755, true, true);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
@@ -618,33 +324,7 @@ class FileAction
             try {
                 // echo '<hr>'.$filename.' >>>>  '.$filename_pub; //4 debug
                 File::copy($filename, $filename_pub);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         } else {
@@ -662,31 +342,10 @@ class FileAction
                 'filename' => $filename,
                 'msg' => 'Filename not Exists',
             ];
-<<<<<<< HEAD
             // Debug context: heterogeneous payload for dddx() Laravel debug helper
             // (raw array with mixed values). The @var below silences the type
             // check since dddx() accepts any PHP type.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_jnVYIW
->>>>>>> da9ae01a0 (.)
             /** @var array<string, mixed> $msg */
-<<<<<<< .merge_file_Qt1Kav
-=======
-            /* @var array<string, mixed> $msg */
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            /** @var array<string, mixed> $msg */
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             dddx($msg);
             // dddx('non esiste '.); //4 debug
         }
@@ -711,33 +370,7 @@ class FileAction
         if (! File::exists(\dirname($filename_pub))) {
             try {
                 File::makeDirectory(\dirname($filename_pub), 0755, true, true);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
@@ -746,33 +379,7 @@ class FileAction
             try {
                 // echo '<hr>'.$filename.' >>>>  '.$filename_pub; //4 debug
                 File::copy($filename, $filename_pub);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
@@ -788,11 +395,7 @@ class FileAction
         $ns_name = Str::before($key, '::');
         // $ns_dir = View::getFinder()->getHints()[$ns_name][0];
         $ns_dir = self::getViewNameSpacePath($ns_name);
-<<<<<<< HEAD
         $ns_name = SafeStringCastAction::cast($xot->{$ns_name});
-=======
-        $ns_name = (string) $xot->{$ns_name};
->>>>>>> 3792da0d (Check & fix styling)
         $tmp = Str::after($key, '::');
         $tmp0 = Str::before($tmp, '/');
         $tmp1 = Str::after($tmp, '/');
@@ -814,33 +417,7 @@ class FileAction
         if (! File::exists($dir_to)) {
             try {
                 File::makeDirectory($dir_to, 0755, true, true);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dddx(['Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']']);
             }
         }
@@ -854,33 +431,7 @@ class FileAction
         if (! File::exists($filename_to)) {
             try {
                 File::copy($filename_from, $filename_to);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dddx(['Caught exception: '.$e->getMessage()]);
             }
         }
@@ -899,33 +450,7 @@ class FileAction
         })->collapse()->first();
         */
         $ns_dir = self::getViewNameSpacePath($ns_name);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($ns_dir === null) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-        if ($ns_dir === null) {
-=======
-        if (null === $ns_dir) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if (null === $ns_dir) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($ns_dir === null) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-        if ($ns_dir === null) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return '#['.$key.']['.__LINE__.']['.class_basename(static::class).']';
         }
 
@@ -972,33 +497,7 @@ class FileAction
         if (! File::exists($dir_to)) {
             try {
                 File::makeDirectory($dir_to, 0755, true, true);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
@@ -1023,33 +522,7 @@ class FileAction
         }
         try {
             File::copy($filename_from, $filename_to);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
         } catch (Exception $exception) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-        } catch (Exception $exception) {
-=======
-        } catch (\Exception $exception) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        } catch (\Exception $exception) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        } catch (Exception $exception) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-        } catch (Exception $exception) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             dddx(
                 [
                     'message' => $exception->getMessage(),
@@ -1131,35 +604,7 @@ class FileAction
     // *
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string>  $files
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-     * @param  array<string>  $files
-=======
-     * @param array<string> $files
-     *
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<string> $files
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string>  $files
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-     * @param  array<string>  $files
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return array<string>
      */
     public static function viewNamespaceToUrl(array $files): array
@@ -1179,54 +624,12 @@ class FileAction
                     $viewNamespace = '---';
                 }
                 */
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_jnVYIW
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_jnVYIW
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 if ($hints === 'pub_theme') {
                     $tmp = str_replace(public_path(''), '', $viewNamespace);
                     $tmp = str_replace(\DIRECTORY_SEPARATOR, '/', $tmp);
                     $pos = mb_strpos($filename, '/');
                     if ($pos === false) {
                         throw new Exception('not found / on filename');
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-                if ('pub_theme' === $hints) {
-                    $tmp = str_replace(public_path(''), '', $viewNamespace);
-                    $tmp = str_replace(\DIRECTORY_SEPARATOR, '/', $tmp);
-                    $pos = mb_strpos($filename, '/');
-                    if (false === $pos) {
-                        throw new \Exception('not found / on filename');
-<<<<<<< HEAD
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     }
 
                     $filename0 = mb_substr($filename, 0, $pos);
@@ -1243,33 +646,7 @@ class FileAction
                     if (! File::exists(\dirname($new_path))) {
                         try {
                             File::makeDirectory(\dirname($new_path), 0755, true, true);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
                         } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-                        } catch (Exception $e) {
-=======
-                        } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                        } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                        } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-                        } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                             dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
                         }
                     }
@@ -1277,33 +654,7 @@ class FileAction
                     if (File::exists($old_path)) {
                         try {
                             File::copy($old_path, $new_path);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
                         } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-                        } catch (Exception $e) {
-=======
-                        } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                        } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                        } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-                        } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                             dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
                         }
                     }
@@ -1381,35 +732,7 @@ class FileAction
     */
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int, string>  $except
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-     * @param  array<int, string>  $except
-=======
-     * @param array<int, string> $except
-     *
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<int, string> $except
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<int, string>  $except
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-     * @param  array<int, string>  $except
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return array<int, string>
      */
     public static function allDirectories(string $path, array $except = [], string $dir = ''): array
@@ -1417,49 +740,13 @@ class FileAction
         $dirs = File::directories($path);
         $data = [];
         foreach ($dirs as $v) {
-<<<<<<< HEAD
             $v = SafeStringCastAction::cast($v);
             $name = Str::after($v, $path.\DIRECTORY_SEPARATOR);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_jnVYIW
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             $value = $dir === '' ? $name : $dir.\DIRECTORY_SEPARATOR.$name;
             if (! \in_array($name, $except, false)) {
                 $data[] = $value;
                 $sub = self::allDirectories($v, $except, $value);
                 if ($sub !== []) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
-            $v = (string) $v;
-            $name = Str::after($v, $path.\DIRECTORY_SEPARATOR);
->>>>>>> 3792da0d (Check & fix styling)
-            $value = '' === $dir ? $name : $dir.\DIRECTORY_SEPARATOR.$name;
-            if (! \in_array($name, $except, false)) {
-                $data[] = $value;
-                $sub = self::allDirectories($v, $except, $value);
-                if ([] !== $sub) {
-<<<<<<< HEAD
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     $data = array_merge($data, $sub);
                 }
             }
@@ -1491,33 +778,7 @@ class FileAction
 
         $data = File::getRequire($path);
         if (! \is_array($data)) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
-=======
-            throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         }
 
         $value = Arr::get($data, $item);
@@ -1538,52 +799,11 @@ class FileAction
             return $value;
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_jnVYIW
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_jnVYIW
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         if ($value === null) {
             return $value;
         }
 
         throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-        if (null === $value) {
-            return $value;
-        }
-
-        throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
-<<<<<<< HEAD
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qwUN7q
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     public static function viewPath(string $key): string
@@ -1616,33 +836,7 @@ class FileAction
         if (! File::exists(\dirname($to))) {
             try {
                 File::makeDirectory(\dirname($to), 0755, true, true);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             } catch (Exception $e) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            } catch (Exception $e) {
-=======
-            } catch (\Exception $e) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            } catch (Exception $e) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            } catch (Exception $e) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
@@ -1658,39 +852,8 @@ class FileAction
         // not rewite
         try {
             File::copy($from, $to);
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
         } catch (Exception $exception) {
             throw new Exception('Unable to copy
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-        } catch (Exception $exception) {
-            throw new Exception('Unable to copy
-=======
-        } catch (\Exception $exception) {
-            throw new \Exception('Unable to copy
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        } catch (\Exception $exception) {
-            throw new \Exception('Unable to copy
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        } catch (Exception $exception) {
-            throw new Exception('Unable to copy
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-        } catch (Exception $exception) {
-            throw new Exception('Unable to copy
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     from ['.$from.']
                     to ['.$to.']
                     message ['.$exception->getMessage().']', $exception->getCode(), $exception);
@@ -1733,33 +896,7 @@ class FileAction
         $from_value = self::config($from);
         $to_value = self::config($to);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($to_value !== null) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-        if ($to_value !== null) {
-=======
-        if (null !== $to_value) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if (null !== $to_value) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($to_value !== null) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-        if ($to_value !== null) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return;
         }
 
@@ -1827,33 +964,7 @@ class FileAction
 
         $comps = [];
         foreach ($files as $file) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() === 'php') {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            if ($file->getExtension() === 'php') {
-=======
-            if ('php' === $file->getExtension()) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('php' === $file->getExtension()) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($file->getExtension() === 'php') {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            if ($file->getExtension() === 'php') {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 $tmp = (object) [];
                 $class_name = $file->getFilenameWithoutExtension();
 
@@ -1866,38 +977,11 @@ class FileAction
                 $relative_path = $file->getRelativePath();
                 Assert::string($relative_path = Str::replace('/', '\\', $relative_path), '['.__LINE__.']['.class_basename(static::class).']');
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
                 if ($relative_path !== '') {
-=======
-<<<<<<< .merge_file_jnVYIW
-=======
->>>>>>> .merge_file_qwUN7q
-                if ($relative_path !== '') {
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_jnVYIW
-                if ($relative_path !== '') {
-=======
-                if ('' !== $relative_path) {
->>>>>>> .merge_file_IxScEs
-=======
-                if ($relative_path !== '') {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     $tmp->comp_name = '';
                     $piece = collect(explode('\\', $relative_path))
                         ->map(
                             static fn (string $item) => Str::slug(Str::snake($item))
-=======
-                if ('' !== $relative_path) {
-                    $tmp->comp_name = '';
-                    $piece = collect(explode('\\', $relative_path))
-                        ->map(
-                            static fn ($item) => Str::slug(Str::snake($item))
->>>>>>> 3792da0d (Check & fix styling)
                         )
                         ->implode('.');
                     $tmp->comp_name .= $piece;
@@ -1935,33 +1019,7 @@ class FileAction
     {
         if ($binaryPrefix) {
             $unit = ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB'];
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($bytes === 0) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-            if ($bytes === 0) {
-=======
-            if (0 === $bytes) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if (0 === $bytes) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($bytes === 0) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-            if ($bytes === 0) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 return '0 '.$unit[0];
             }
 
@@ -1969,33 +1027,7 @@ class FileAction
         }
 
         $unit = ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($bytes === 0) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-        if ($bytes === 0) {
-=======
-        if (0 === $bytes) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if (0 === $bytes) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($bytes === 0) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-        if ($bytes === 0) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return '0 '.$unit[0];
         }
 
@@ -2005,33 +1037,7 @@ class FileAction
     /**
      * Undocumented function.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string  $class_name
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-     * @param  class-string  $class_name
-=======
-     * @param class-string $class_name
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param class-string $class_name
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string  $class_name
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-     * @param  class-string  $class_name
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public static function getFileNameByClassName(string $class_name): ?string
     {
@@ -2046,33 +1052,7 @@ class FileAction
         // } catch (\Exception $e) {
         //    return null;
         // }
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qt1Kav
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($reflectionClass->getFileName() === false) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_jnVYIW
-        if ($reflectionClass->getFileName() === false) {
-=======
-        if (false === $reflectionClass->getFileName()) {
->>>>>>> .merge_file_IxScEs
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if (false === $reflectionClass->getFileName()) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($reflectionClass->getFileName() === false) {
->>>>>>> .merge_file_qwUN7q
-=======
-=======
-        if ($reflectionClass->getFileName() === false) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return null;
         }
 

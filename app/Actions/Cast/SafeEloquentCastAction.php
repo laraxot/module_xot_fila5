@@ -29,25 +29,8 @@ class SafeEloquentCastAction
     /**
      * Verifica se un attributo esiste su un modello Eloquent.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
-=======
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     *
->>>>>>> laraxot/dev
-=======
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
->>>>>>> .merge_file_VKXDZz
      * @return bool True se l'attributo esiste
      */
     public function hasAttribute(Model $model, string $attribute): bool
@@ -55,43 +38,14 @@ class SafeEloquentCastAction
         Assert::stringNotEmpty($attribute);
 
         // Usa getAttribute invece di property_exists per evitare falsi positivi
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $model->getAttribute($attribute) !== null;
-=======
-        return null !== $model->getAttribute($attribute);
->>>>>>> laraxot/dev
-=======
-        return null !== $model->getAttribute($attribute);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        return $model->getAttribute($attribute) !== null;
->>>>>>> .merge_file_VKXDZz
     }
 
     /**
      * Verifica se un attributo esiste e ha un valore non vuoto.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
-=======
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     *
->>>>>>> laraxot/dev
-=======
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
->>>>>>> .merge_file_VKXDZz
      * @return bool True se l'attributo esiste e ha un valore non vuoto
      */
     public function hasNonEmptyAttribute(Model $model, string $attribute): bool
@@ -100,46 +54,15 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $value !== null && $value !== '';
-=======
-        return null !== $value && '' !== $value;
->>>>>>> laraxot/dev
-=======
-        return null !== $value && '' !== $value;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        return $value !== null && $value !== '';
->>>>>>> .merge_file_VKXDZz
     }
 
     /**
      * Ottiene un attributo con cast sicuro a string.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  string|null  $default  Valore di default se l'attributo non esiste o è null
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model       $model     Il modello Eloquent
-     * @param string      $attribute Il nome dell'attributo
-     * @param string|null $default   Valore di default se l'attributo non esiste o è null
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  string|null  $default  Valore di default se l'attributo non esiste o è null
->>>>>>> .merge_file_VKXDZz
      * @return string Il valore dell'attributo convertito in string
      */
     public function getStringAttribute(Model $model, string $attribute, ?string $default = ''): string
@@ -148,19 +71,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($value === null) {
-=======
-        if (null === $value) {
->>>>>>> laraxot/dev
-=======
-        if (null === $value) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($value === null) {
->>>>>>> .merge_file_VKXDZz
             return $default ?? '';
         }
 
@@ -170,28 +81,9 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a int.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  int|null  $default  Valore di default se l'attributo non esiste o è null
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model    $model     Il modello Eloquent
-     * @param string   $attribute Il nome dell'attributo
-     * @param int|null $default   Valore di default se l'attributo non esiste o è null
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  int|null  $default  Valore di default se l'attributo non esiste o è null
->>>>>>> .merge_file_VKXDZz
      * @return int Il valore dell'attributo convertito in int
      */
     public function getIntAttribute(Model $model, string $attribute, ?int $default = 0): int
@@ -200,19 +92,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($value === null) {
-=======
-        if (null === $value) {
->>>>>>> laraxot/dev
-=======
-        if (null === $value) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($value === null) {
->>>>>>> .merge_file_VKXDZz
             return $default ?? 0;
         }
 
@@ -222,28 +102,9 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a float.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  float|null  $default  Valore di default se l'attributo non esiste o è null
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model      $model     Il modello Eloquent
-     * @param string     $attribute Il nome dell'attributo
-     * @param float|null $default   Valore di default se l'attributo non esiste o è null
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  float|null  $default  Valore di default se l'attributo non esiste o è null
->>>>>>> .merge_file_VKXDZz
      * @return float Il valore dell'attributo convertito in float
      */
     public function getFloatAttribute(Model $model, string $attribute, ?float $default = 0.0): float
@@ -252,19 +113,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($value === null) {
-=======
-        if (null === $value) {
->>>>>>> laraxot/dev
-=======
-        if (null === $value) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($value === null) {
->>>>>>> .merge_file_VKXDZz
             return $default ?? 0.0;
         }
 
@@ -274,28 +123,9 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a boolean.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  bool|null  $default  Valore di default se l'attributo non esiste o è null
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model     $model     Il modello Eloquent
-     * @param string    $attribute Il nome dell'attributo
-     * @param bool|null $default   Valore di default se l'attributo non esiste o è null
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  bool|null  $default  Valore di default se l'attributo non esiste o è null
->>>>>>> .merge_file_VKXDZz
      * @return bool Il valore dell'attributo convertito in boolean
      */
     public function getBooleanAttribute(Model $model, string $attribute, ?bool $default = false): bool
@@ -304,19 +134,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($value === null) {
-=======
-        if (null === $value) {
->>>>>>> laraxot/dev
-=======
-        if (null === $value) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($value === null) {
->>>>>>> .merge_file_VKXDZz
             return $default ?? false;
         }
 
@@ -326,28 +144,9 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a array.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  array<int|string, mixed>|null  $default  Valore di default se l'attributo non esiste o è null
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model                         $model     Il modello Eloquent
-     * @param string                        $attribute Il nome dell'attributo
-     * @param array<int|string, mixed>|null $default   Valore di default se l'attributo non esiste o è null
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  array<int|string, mixed>|null  $default  Valore di default se l'attributo non esiste o è null
->>>>>>> .merge_file_VKXDZz
      * @return array<int|string, mixed> Il valore dell'attributo convertito in array
      */
     public function getArrayAttribute(Model $model, string $attribute, ?array $default = []): array
@@ -356,19 +155,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($value === null) {
-=======
-        if (null === $value) {
->>>>>>> laraxot/dev
-=======
-        if (null === $value) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($value === null) {
->>>>>>> .merge_file_VKXDZz
             return app(SafeArrayCastAction::class)->execute([], $default);
         }
 
@@ -378,30 +165,10 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a un tipo specifico.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_VKXDZz
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
      * @param  mixed  $default  Valore di default se l'attributo non esiste o è null
-<<<<<<< .merge_file_ZzkfMz
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     * @param string $type      Il tipo di cast desiderato (string, int, float, bool, array)
-     * @param mixed  $default   Valore di default se l'attributo non esiste o è null
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_VKXDZz
      * @return mixed Il valore dell'attributo convertito nel tipo specificato
      */
     public function getTypedAttribute(Model $model, string $attribute, string $type, mixed $default = null): mixed
@@ -426,28 +193,9 @@ class SafeEloquentCastAction
     /**
      * Verifica se un attributo esiste e ha un valore specifico.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  mixed  $expectedValue  Il valore atteso
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model  $model         Il modello Eloquent
-     * @param string $attribute     Il nome dell'attributo
-     * @param mixed  $expectedValue Il valore atteso
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  mixed  $expectedValue  Il valore atteso
->>>>>>> .merge_file_VKXDZz
      * @return bool True se l'attributo esiste e ha il valore atteso
      */
     public function hasAttributeValue(Model $model, string $attribute, mixed $expectedValue): bool
@@ -462,32 +210,11 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con validazione di tipo e valore.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_VKXDZz
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  string  $type  Il tipo di cast desiderato
      * @param  callable|null  $validator  Funzione di validazione opzionale
      * @param  mixed  $default  Valore di default se la validazione fallisce
-<<<<<<< .merge_file_ZzkfMz
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model         $model     Il modello Eloquent
-     * @param string        $attribute Il nome dell'attributo
-     * @param string        $type      Il tipo di cast desiderato
-     * @param callable|null $validator Funzione di validazione opzionale
-     * @param mixed         $default   Valore di default se la validazione fallisce
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_VKXDZz
      * @return mixed Il valore dell'attributo validato e convertito
      */
     public function getValidatedAttribute(
@@ -502,19 +229,7 @@ class SafeEloquentCastAction
 
         $value = $this->getTypedAttribute($model, $attribute, $type, $default);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($validator !== null && ! $validator($value)) {
-=======
-        if (null !== $validator && ! $validator($value)) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $validator && ! $validator($value)) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($validator !== null && ! $validator($value)) {
->>>>>>> .merge_file_VKXDZz
             return $default;
         }
 
@@ -524,28 +239,9 @@ class SafeEloquentCastAction
     /**
      * Verifica se un attributo esiste e soddisfa una condizione.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  callable  $condition  La condizione da verificare
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model    $model     Il modello Eloquent
-     * @param string   $attribute Il nome dell'attributo
-     * @param callable $condition La condizione da verificare
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
-     * @param  callable  $condition  La condizione da verificare
->>>>>>> .merge_file_VKXDZz
      * @return bool True se l'attributo esiste e soddisfa la condizione
      */
     public function hasAttributeCondition(Model $model, string $attribute, callable $condition): bool
@@ -554,19 +250,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($value === null) {
-=======
-        if (null === $value) {
->>>>>>> laraxot/dev
-=======
-        if (null === $value) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($value === null) {
->>>>>>> .merge_file_VKXDZz
             return false;
         }
 
@@ -576,32 +260,11 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con fallback a un altro attributo se il primo è null.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_VKXDZz
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $primaryAttribute  L'attributo primario
      * @param  string  $fallbackAttribute  L'attributo di fallback
      * @param  string  $type  Il tipo di cast desiderato
      * @param  mixed  $default  Valore di default se entrambi gli attributi sono null
-<<<<<<< .merge_file_ZzkfMz
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model  $model             Il modello Eloquent
-     * @param string $primaryAttribute  L'attributo primario
-     * @param string $fallbackAttribute L'attributo di fallback
-     * @param string $type              Il tipo di cast desiderato
-     * @param mixed  $default           Valore di default se entrambi gli attributi sono null
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_VKXDZz
      * @return mixed Il valore dell'attributo primario o di fallback
      */
     public function getAttributeWithFallback(
@@ -617,19 +280,7 @@ class SafeEloquentCastAction
 
         $primaryValue = $model->getAttribute($primaryAttribute);
 
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($primaryValue !== null) {
-=======
-        if (null !== $primaryValue) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $primaryValue) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($primaryValue !== null) {
->>>>>>> .merge_file_VKXDZz
             return $this->getTypedAttribute($model, $primaryAttribute, $type, $default);
         }
 
@@ -639,30 +290,10 @@ class SafeEloquentCastAction
     /**
      * Metodo di convenienza per ottenere attributi con cast sicuro.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_VKXDZz
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  string  $type  Il tipo di cast desiderato
      * @param  mixed  $default  Valore di default
-<<<<<<< .merge_file_ZzkfMz
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     * @param string $type      Il tipo di cast desiderato
-     * @param mixed  $default   Valore di default
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_VKXDZz
      * @return mixed Il valore dell'attributo convertito
      */
     public static function get(Model $model, string $attribute, string $type, mixed $default = null): mixed
@@ -673,25 +304,8 @@ class SafeEloquentCastAction
     /**
      * Metodo di convenienza per verificare l'esistenza di attributi.
      *
-<<<<<<< .merge_file_ZzkfMz
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
-=======
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     *
->>>>>>> laraxot/dev
-=======
-     * @param Model  $model     Il modello Eloquent
-     * @param string $attribute Il nome dell'attributo
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Model  $model  Il modello Eloquent
-     * @param  string  $attribute  Il nome dell'attributo
->>>>>>> .merge_file_VKXDZz
      * @return bool True se l'attributo esiste
      */
     public static function has(Model $model, string $attribute): bool

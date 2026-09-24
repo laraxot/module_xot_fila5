@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 930f8146 (Check & fix styling)
 # Il Tao del Codice
 
 ## Il Principio Fondamentale

@@ -8,26 +8,6 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Filament**: 4.x
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
-<<<<<<< .merge_file_BpXcR4
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Data Creazione**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data Creazione**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_AMhkCf
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## 🎯 Obiettivo
 
@@ -547,26 +527,6 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Filament**: 4.x
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
-<<<<<<< .merge_file_BpXcR4
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Data Creazione**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data Creazione**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_AMhkCf
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## 🎯 Obiettivo
 
@@ -943,30 +903,7 @@ foreach ($properties as $property) {
 
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
-<<<<<<< .merge_file_BpXcR4
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-**File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> .merge_file_AMhkCf
-=======
-=======
-**File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -1098,27 +1035,4 @@ class MyPage extends XotBaseViewRecord
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
-<<<<<<< .merge_file_BpXcR4
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-- `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> .merge_file_AMhkCf
-=======
-=======
-- `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

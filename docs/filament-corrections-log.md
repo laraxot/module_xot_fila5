@@ -1,26 +1,6 @@
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19
-<<<<<<< .merge_file_KYazRV
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## Data: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_PyEr6e
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**
 
@@ -75,47 +55,10 @@
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Categorie multilingua
 
-<<<<<<< .merge_file_KYazRV
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_PyEr6e
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 4. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
    - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Coerenza nel modulo Predict
-<<<<<<< HEAD
-<<<<<<< .merge_file_KYazRV
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-4. **`laravel/Modules/<nome progetto>/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
-   - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
-   - **Dopo**: `extends LangBaseCreateRecord`
-   - **Impatto**: Coerenza nel modulo <nome progetto>
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_PyEr6e
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 5. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/EditPageContent.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
@@ -132,47 +75,10 @@
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Modifica categorie multilingua
 
-<<<<<<< .merge_file_KYazRV
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_PyEr6e
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 8. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Coerenza nel modulo Predict
-<<<<<<< HEAD
-<<<<<<< .merge_file_KYazRV
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-8. **`laravel/Modules/<nome progetto>/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
-   - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
-   - **Dopo**: `extends LangBaseEditRecord`
-   - **Impatto**: Coerenza nel modulo <nome progetto>
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_PyEr6e
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 9. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/ViewPageContent.php`**
    - **Prima**: `extends ViewRecord` + `use ViewRecord\Concerns\Translatable`
@@ -348,27 +254,4 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 
 ## Correzioni Implementate (Data: 2024)
 
-<<<<<<< .merge_file_KYazRV
-<<<<<<< HEAD
-<<<<<<< HEAD
 // ... existing code ...
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// ... existing code ...
-=======
-// ... existing code ...
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-// ... existing code ...
->>>>>>> 3792da0d (Check & fix styling)
-=======
-// ... existing code ...
->>>>>>> .merge_file_PyEr6e
-=======
-=======
-// ... existing code ...
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

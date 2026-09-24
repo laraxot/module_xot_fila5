@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -38,27 +22,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<Model> query()
  * @method static Builder<Model> withExtraAttributes()
  *
-<<<<<<< .merge_file_OfPecS
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property int $id
  * @property string $model_type
  * @property string $model_id
-=======
- * @property int         $id
- * @property string      $model_type
- * @property string      $model_id
->>>>>>> laraxot/dev
-=======
- * @property int         $id
- * @property string      $model_type
- * @property string      $model_id
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @property int $id
- * @property string $model_type
- * @property string $model_id
->>>>>>> .merge_file_TxKPAj
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -81,20 +47,4 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @mixin \Eloquent
  */
-<<<<<<< .merge_file_OfPecS
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface ExtraContract {}
-=======
-interface ExtraContract
-{
-}
->>>>>>> laraxot/dev
-=======
-interface ExtraContract
-{
-}
->>>>>>> 3792da0d (Check & fix styling)
-=======
-interface ExtraContract {}
->>>>>>> .merge_file_TxKPAj

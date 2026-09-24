@@ -56,52 +56,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 1. **SEMPRE** utilizzare `getFormSchema()` invece di `form()`:
    ```php
    // CORRETTO ✅
-<<<<<<< .merge_file_4PgEnx
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_U5tmnL
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_yEiMv4
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_Wods4N
-=======
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    {
        return [
            TextInput::make('nome'),
@@ -236,43 +191,4 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [filament_best_practices.md](../../../../../../docs/rules/filament_best_practices.md)
 * [filament_best_practices.md](../filament_best_practices.md)
 * [filament_best_practices.md](../../../user/docs/filament_best_practices.md)
-<<<<<<< .merge_file_4PgEnx
-<<<<<<< HEAD
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_U5tmnL
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_W9loh1
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
-=======
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_pOT3Dc
->>>>>>> .merge_file_yEiMv4
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
->>>>>>> .merge_file_Wods4N
-=======
-=======
-* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

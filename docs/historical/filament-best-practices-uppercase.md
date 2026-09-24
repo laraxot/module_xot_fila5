@@ -39,54 +39,10 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('nome')->required(),
@@ -224,54 +180,10 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('cognome')
@@ -452,54 +364,10 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -747,54 +615,10 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('nome')->required(),
@@ -865,54 +689,10 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('nome')->required(),
@@ -1050,54 +830,10 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('cognome')
@@ -1278,54 +1014,10 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1573,54 +1265,10 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eoCcSL
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_GFMS9A
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TIyMq5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JaoEa5
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('nome')->required(),

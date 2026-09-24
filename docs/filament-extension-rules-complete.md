@@ -3,26 +3,6 @@
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
 **Ultimo aggiornamento**: 2025-12-22
-<<<<<<< .merge_file_CValnJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GW8OYX
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -310,39 +290,10 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
  * @return array<int, Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_CValnJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GW8OYX
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_CValnJ
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GW8OYX
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -527,39 +478,10 @@ class UserResource extends XotBaseResource
      * @return array<int, Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_CValnJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GW8OYX
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_CValnJ
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GW8OYX
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name')->required(),
@@ -664,27 +586,4 @@ Prima di creare una nuova classe Filament:
 
 ---
 
-<<<<<<< .merge_file_CValnJ
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> .merge_file_GW8OYX
-=======
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

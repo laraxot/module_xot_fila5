@@ -15,23 +15,8 @@ use Spatie\LaravelData\Data;
 final class MailData extends Data
 {
     /**
-<<<<<<< .merge_file_O7orYp
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, int|string>  $smtpConfig
      * @param  array<string, string>  $fromConfig
-=======
-     * @param array<string, int|string> $smtpConfig
-     * @param array<string, string>     $fromConfig
->>>>>>> laraxot/dev
-=======
-     * @param array<string, int|string> $smtpConfig
-     * @param array<string, string>     $fromConfig
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, int|string>  $smtpConfig
-     * @param  array<string, string>  $fromConfig
->>>>>>> .merge_file_YpZ992
      */
     public function __construct(
         public readonly string $driver = 'smtp',
@@ -48,39 +33,13 @@ final class MailData extends Data
         ],
         public readonly ?string $replyTo = null,
         public readonly bool $verifyPeer = true,
-<<<<<<< .merge_file_O7orYp
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    ) {}
->>>>>>> .merge_file_YpZ992
 
     /**
      * Create a new instance of MailData with default values.
      */
     public static function make(): self
     {
-<<<<<<< .merge_file_O7orYp
-<<<<<<< HEAD
-<<<<<<< HEAD
         return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
-=======
-        return new self();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        return new self;
->>>>>>> .merge_file_YpZ992
     }
 }

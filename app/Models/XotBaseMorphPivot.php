@@ -17,11 +17,6 @@ use function Safe\preg_match;
  * Centralizes common MorphPivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
-<<<<<<< .merge_file_draXte
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_nB1j0y
  * @property string|int $id
  * @property string $morph_type
  * @property string|int $morph_id
@@ -30,49 +25,12 @@ use function Safe\preg_match;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
-<<<<<<< .merge_file_draXte
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property string|int      $id
- * @property string          $morph_type
- * @property string|int      $morph_id
- * @property string|null     $related_type
- * @property string|int|null $related_id
- * @property Carbon|null     $created_at
- * @property Carbon|null     $updated_at
- * @property Carbon|null     $deleted_at
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_nB1j0y
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
  * @property string|int|null $deleted_by
  */
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_draXte
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> laraxot/dev
-=======
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_nB1j0y
-=======
-<<<<<<< HEAD
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
-=======
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     use HasXotFactory;
     use Updater;
 
@@ -132,19 +90,7 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         // Extract module name from namespace: Modules\Rating\... → rating
         $namespace = static::class;
         $matches = [];
-<<<<<<< .merge_file_draXte
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
-=======
-        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
->>>>>>> laraxot/dev
-=======
-        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
->>>>>>> .merge_file_nB1j0y
             return strtolower($matches[1]);
         }
 

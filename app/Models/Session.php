@@ -12,29 +12,6 @@ use Modules\Xot\Database\Factories\SessionFactory;
 /**
  * Modules\Xot\Models\Session.
  *
-<<<<<<< HEAD
-<<<<<<< .merge_file_IKEtJU
-<<<<<<< HEAD
- * <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
- *
-=======
->>>>>>> 930f8146 (Check & fix styling)
- * @property string               $id
- * @property string|null          $user_id
- * @property string|null          $ip_address
- * @property string|null          $user_agent
- * @property string               $payload
- * @property int                  $last_activity
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property Carbon|null          $deleted_at
- * @property string|null          $deleted_by
-=======
  * @property string $id
  * @property string|null $user_id
  * @property string|null $ip_address
@@ -47,46 +24,10 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
->>>>>>> .merge_file_pCpx6A
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static SessionFactory factory($count = null, $state = [])
-<<<<<<< .merge_file_IKEtJU
- *                                                                   =======
- *
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property string               $id
- * @property string|null          $user_id
- * @property string|null          $ip_address
- * @property string|null          $user_agent
- * @property string               $payload
- * @property int                  $last_activity
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property Carbon|null          $deleted_at
- * @property string|null          $deleted_by
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
-<<<<<<< HEAD
- * @method static SessionFactory          factory($count = null, $state = [])
-<<<<<<< HEAD
- *                                                                            >>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_pCpx6A
-=======
-<<<<<<< HEAD
- * @method static SessionFactory factory($count = null, $state = [])
-=======
- * @method static SessionFactory          factory($count = null, $state = [])
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  * @method static Builder<static>|Session newModelQuery()
  * @method static Builder<static>|Session newQuery()
  * @method static Builder<static>|Session query()

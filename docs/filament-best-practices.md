@@ -17,38 +17,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-   public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_Hb3owY
-=======
-=======
-   public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    {
        return [
            TextInput::make('nome')->required(),
@@ -241,38 +210,7 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_Hb3owY
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('nome')->required(),
@@ -433,35 +371,7 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> da9ae01a0 (.)
-    public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> .merge_file_Hb3owY
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -505,38 +415,7 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> .merge_file_Hb3owY
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('cognome')
@@ -778,38 +657,7 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_Hb3owY
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1063,35 +911,7 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> da9ae01a0 (.)
-    public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> .merge_file_Hb3owY
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('nome')->required(),
@@ -1119,28 +939,6 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
-- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
-- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Hb3owY
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -1211,31 +1009,5 @@ Appointment::where('doctor_id', $doctorId)
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
-<<<<<<< .merge_file_MzBcCT
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Refactoring sicuro, massima estendibilità
-
-=======
-- Refactoring sicuro, massima estendibilità
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Refactoring sicuro, massima estendibilità
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Refactoring sicuro, massima estendibilità
-
->>>>>>> .merge_file_Hb3owY
-=======
-=======
-- Refactoring sicuro, massima estendibilità
-
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

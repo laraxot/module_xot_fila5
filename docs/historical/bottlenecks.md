@@ -683,26 +683,6 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_mQtGRP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_0p0CmV
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_7Hccwm
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qUsOkr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices Performance](best-practices.md#performance)
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
@@ -710,36 +690,4 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](bottlenecks.md)
 * [BOTTLENECKS.md](bottlenecks.md)
 * [BOTTLENECKS.md](bottlenecks.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_mQtGRP
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_0p0CmV
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Best Practices Performance](./BEST-PRACTICES.md#performance)
-- [Struttura Moduli](./MODULE_STRUCTURE.md)
-
-## Collegamenti tra versioni di BOTTLENECKS.md
-* [BOTTLENECKS.md](../../../Xot/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_7Hccwm
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qUsOkr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)

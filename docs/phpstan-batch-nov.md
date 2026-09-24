@@ -140,16 +140,7 @@ return $schema->components($formSchema);
 6. **Geo** - 0 errori
 7. **Job** - 207 file analizzati, 0 errori (4 errori corretti)
 8. **Media** - 0 errori ✨
-<<<<<<< HEAD
-<<<<<<< HEAD
 9. **Quaeris** - 0 errori ✨ (USER fix applicati)
-=======
-9. **healthcare_app** - 0 errori ✨ (USER fix applicati)
-9. **ExternalProject** - 0 errori ✨ (USER fix applicati)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-9. **Quaeris** - 0 errori ✨ (USER fix applicati)
->>>>>>> da9ae01a0 (.)
 10. **Tenant** - 57 file analizzati, 0 errori (1 errore corretto)
 
 ### Pattern di Correzione Applicati
@@ -251,16 +242,7 @@ return $schema->components($formSchema);
 1. Lang (40+ errori)
 2. Media (20+ errori)
 3. Notify (60+ errori)
-<<<<<<< HEAD
-<<<<<<< HEAD
 4. Quaeris (30+ errori)
-=======
-4. healthcare_app (30+ errori)
-4. ExternalProject (30+ errori)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-4. Quaeris (30+ errori)
->>>>>>> da9ae01a0 (.)
 5. Tenant (10+ errori)
 6. UI (50+ errori)
 7. User (20+ errori)
@@ -271,12 +253,4 @@ return $schema->components($formSchema);
 - **NO baseline**: Tutti gli errori corretti manualmente
 - **NO config changes**: phpstan.neon immutato
 - **YES forward only**: Git history preservata
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **YES docs update**: Documentazione costante
-=======
-- **YES docs update**: Documentazione costante
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **YES docs update**: Documentazione costante
->>>>>>> da9ae01a0 (.)

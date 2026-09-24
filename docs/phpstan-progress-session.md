@@ -125,10 +125,3 @@ return $result;
 ---
 
 **Ultimo aggiornamento**: 2026-01-09 - Sessione in corso
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE] - Sessione in corso
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)

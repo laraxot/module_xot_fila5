@@ -1,14 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.
@@ -31,19 +23,7 @@ class GetFakerAction
 
     public function execute(string $name, ?string $type = null, ?string $_table = null): string
     {
-<<<<<<< .merge_file_G9Td3b
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($type !== null && Str::startsWith($type, 'factory(')) {
-=======
-        if (null !== $type && Str::startsWith($type, 'factory(')) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $type && Str::startsWith($type, 'factory(')) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($type !== null && Str::startsWith($type, 'factory(')) {
->>>>>>> .merge_file_9kSY2b
             return $type;
         }
 

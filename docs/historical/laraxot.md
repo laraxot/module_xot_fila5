@@ -1200,59 +1200,7 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 
 3. **Form Schema**
    ```php
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-   public function getFormSchema(): array
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    {
        return [
            // Form fields
@@ -4491,59 +4439,7 @@ protected function getListTableBulkActions(): array
 protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 2. Implementazione Corretta
@@ -4553,59 +4449,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('title')->required(),
@@ -4626,111 +4470,13 @@ protected function getFormSchema(): array
 public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 2. Accesso a Proprietà
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
 public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_hDM65s
-=======
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
 {
     return [
         TextInput::make('name')
@@ -4739,59 +4485,7 @@ public function getFormSchema(): array
 }
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')
@@ -4809,53 +4503,7 @@ public function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
    {
        return [
            // schema components
@@ -4887,59 +4535,7 @@ public function getFormSchema(): array
 2. **Type Safety**:
    ```php
    // Usa sempre return type declarations
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-   public function getFormSchema(): array
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    ```
 
 3. **Documentazione**:
@@ -4947,53 +4543,7 @@ public function getFormSchema(): array
    /**
     * @return array<int, \Filament\Forms\Components\Component>
     */
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
    ```
 
 4. **Contesto Statico**:
@@ -6146,59 +5696,7 @@ class TicketResource extends XotBaseResource
 {
     protected static ?string $model = Ticket::class;
 
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [...];
     }
@@ -7645,59 +7143,7 @@ protected function getListTableBulkActions(): array
 protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 2. Implementazione Corretta
@@ -7707,59 +7153,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('title')->required(),
@@ -7780,111 +7174,13 @@ protected function getFormSchema(): array
 public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 2. Accesso a Proprietà
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
 public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_hDM65s
-=======
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
 {
     return [
         TextInput::make('name')
@@ -7893,59 +7189,7 @@ public function getFormSchema(): array
 }
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')
@@ -7963,53 +7207,7 @@ public function getFormSchema(): array
     *
     * @return array<int, \Filament\Forms\Components\Component>
     */
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
    {
        return [
            // schema components
@@ -8041,59 +7239,7 @@ public function getFormSchema(): array
 2. **Type Safety**:
    ```php
    // Usa sempre return type declarations
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
-=======
->>>>>>> 930f8146 (Check & fix styling)
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-   public function getFormSchema(): array
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hDM65s
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    ```
 
 3. **Documentazione**:
@@ -8101,53 +7247,7 @@ public function getFormSchema(): array
    /**
     * @return array<int, \Filament\Forms\Components\Component>
     */
-<<<<<<< .merge_file_Ck8url
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_q7Av8T
    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7Av8T
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_hDM65s
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_kyMGDd
    ```
 
 4. **Contesto Statico**:

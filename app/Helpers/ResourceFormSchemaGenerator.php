@@ -6,17 +6,7 @@ namespace Modules\Xot\Helpers;
 
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< .merge_file_wQ7fhU
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-use Webmozart\Assert\Assert;
->>>>>>> .merge_file_6ShDBY
 
 use function Safe\error_log;
 use function Safe\file_get_contents;
@@ -25,31 +15,10 @@ use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
-<<<<<<< .merge_file_wQ7fhU
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_6ShDBY
 class ResourceFormSchemaGenerator
 {
     /**
      * @param  class-string  $resourceClass
-<<<<<<< .merge_file_wQ7fhU
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-use Webmozart\Assert\Assert;
-
-class ResourceFormSchemaGenerator
-{
-    /**
-     * @param class-string $resourceClass
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_6ShDBY
      */
     public static function generateFormSchema(string $resourceClass): bool
     {
@@ -61,19 +30,7 @@ class ResourceFormSchemaGenerator
             $reflection = new \ReflectionClass($resourceClass);
             $filename = $reflection->getFileName();
 
-<<<<<<< .merge_file_wQ7fhU
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($filename === false) {
-=======
-            if (false === $filename) {
->>>>>>> laraxot/dev
-=======
-            if (false === $filename) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($filename === false) {
->>>>>>> .merge_file_6ShDBY
                 throw new \RuntimeException("Failed to get filename for class: {$resourceClass}");
             }
 

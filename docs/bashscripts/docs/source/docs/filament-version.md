@@ -1,39 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_VRyMl3
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_ngVSTH
-=======
-<<<<<<< .merge_file_6pnsax
->>>>>>> .merge_file_rUQSkJ
-=======
->>>>>>> 930f8146 (Check & fix styling)
----
-title: "Filament Version Declaration — {ModuleOrThemeName}"
-module: "Xot"
-type: concept
-tags: [filament, version]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament version"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
-<<<<<<< HEAD
-<<<<<<< .merge_file_ngVSTH
-=======
-=======
->>>>>>> .merge_file_H8hdKb
->>>>>>> .merge_file_rUQSkJ
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MJKm0i
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

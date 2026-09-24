@@ -6,23 +6,11 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
-<<<<<<< HEAD
 use Illuminate\Support\Carbon;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
-<<<<<<< .merge_file_MUj2qQ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GVKgCt
 use Sushi\Sushi;
 
 use function Safe\json_encode;
@@ -39,31 +27,6 @@ use function Safe\json_encode;
  * @property int|null $priority
  * @property string|null $path
  * @property string|null $icon
-<<<<<<< .merge_file_MUj2qQ
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-use function Safe\json_encode;
-
-use Sushi\Sushi;
-
-/**
-<<<<<<< HEAD
- * @property int                          $id
- * @property string|null                  $name
- * @property string|null                  $slug
- * @property string|null                  $version
- * @property string|null                  $description
- * @property bool|null                    $status
- * @property bool|null                    $enabled
- * @property bool|null                    $is_active
- * @property int|null                     $priority
- * @property string|null                  $path
- * @property string|null                  $icon
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GVKgCt
  * @property array<array-key, mixed>|null $colors
  * @property array<array-key, mixed>|null $dependencies
  * @property array<array-key, mixed>|null $config
@@ -72,31 +35,6 @@ use Sushi\Sushi;
  * @property Carbon|null $deactivation_date
  * @property Carbon|null $installation_date
  * @property array<array-key, mixed>|null $update_history
-=======
- * @property int                             $id
- * @property string|null                     $name
- * @property string|null                     $slug
- * @property string|null                     $version
- * @property string|null                     $description
- * @property bool|null                       $status
- * @property bool|null                       $enabled
- * @property bool|null                       $is_active
- * @property int|null                        $priority
- * @property string|null                     $path
- * @property string|null                     $icon
- * @property array<array-key, mixed>|null    $colors
- * @property array<array-key, mixed>|null    $dependencies
- * @property array<array-key, mixed>|null    $config
- * @property array<array-key, mixed>|null    $metadata
- * @property \Illuminate\Support\Carbon|null $activation_date
- * @property \Illuminate\Support\Carbon|null $deactivation_date
- * @property \Illuminate\Support\Carbon|null $installation_date
- * @property array<array-key, mixed>|null    $update_history
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
@@ -195,31 +133,11 @@ final class Module extends BaseModel
 
     public function isEnabled(): bool
     {
-<<<<<<< .merge_file_MUj2qQ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GVKgCt
         if ($this->enabled !== null) {
             return (bool) $this->enabled;
         }
 
         if ($this->status !== null) {
-<<<<<<< .merge_file_MUj2qQ
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-        if (null !== $this->enabled) {
-            return (bool) $this->enabled;
-        }
-
-        if (null !== $this->status) {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GVKgCt
             return (bool) $this->status;
         }
 

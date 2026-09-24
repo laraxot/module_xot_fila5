@@ -57,30 +57,7 @@ Aggiornamento massivo documentazione progetto con:
 12. `helper-functions-dependency.md` - Dipendenze helper
 
 **Modulo Sigma** (aggiornato):
-<<<<<<< .merge_file_WqvlJu
-<<<<<<< HEAD
-<<<<<<< HEAD
 13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
-=======
-13. `phpstan-fixes-archive-1.md` - Aggiornato con fix novembre
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-13. `phpstan-fixes-archive-1.md` - Aggiornato con fix novembre
->>>>>>> 3792da0d (Check & fix styling)
-=======
-13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
->>>>>>> .merge_file_tCwlbn
-=======
-=======
-13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **bashscripts** (3 file):
 14. `docs/mcp-configuration.md`
@@ -239,36 +216,6 @@ Aggiornamento massivo documentazione progetto con:
 
 ### Documentazione Moduli
 
-<<<<<<< .merge_file_WqvlJu
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Xot Module](./readme.md) - Questo file
-- [Tenant Module](../../tenant/docs/readme.md)
-- [IndennitaResponsabilita Module](../../indennitaresponsabilita/docs/readme.md)
-- [Sigma Module](../../sigma/docs/readme.md)
-- [Rating Module](../../rating/docs/readme.md)
-
-### bashscripts
-
-- [bashscripts README](../../../bashscripts/readme.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_tCwlbn
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Xot Module](./README.md) - Questo file
 - [Tenant Module](../../Tenant/docs/README.md)
 - [IndennitaResponsabilita Module](../../IndennitaResponsabilita/docs/README.md)
@@ -297,27 +244,4 @@ Aggiornamento massivo documentazione progetto con:
 *"La documentazione è la memoria permanente del progetto. Aggiornala sempre."*
 EOF
 
-<<<<<<< .merge_file_WqvlJu
-<<<<<<< HEAD
-<<<<<<< HEAD
 echo "✅ Documento aggiornamento creato"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-echo "✅ Documento aggiornamento creato"
-=======
-echo "✅ Documento aggiornamento creato"
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-echo "✅ Documento aggiornamento creato"
->>>>>>> 3792da0d (Check & fix styling)
-=======
-echo "✅ Documento aggiornamento creato"
->>>>>>> .merge_file_tCwlbn
-=======
-=======
-echo "✅ Documento aggiornamento creato"
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -81,44 +81,8 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_pCI9Mk
-<<<<<<< HEAD
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_X6u7DV
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GdZKOa
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> .merge_file_NTxiY6
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Radio::make('format')
@@ -191,45 +155,3 @@ class MediaConvertResource extends XotBaseResource
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
 - [Documentazione modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-<<<<<<< .merge_file_pCI9Mk
-=======
-<<<<<<< HEAD
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_X6u7DV
-=======
-<<<<<<< .merge_file_lYl1eN
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
-<<<<<<< HEAD
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
->>>>>>> .merge_file_GdZKOa
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_X6u7DV
-=======
->>>>>>> .merge_file_1fr9a4
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GdZKOa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_NTxiY6
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

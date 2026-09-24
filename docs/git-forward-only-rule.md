@@ -25,28 +25,6 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 - Storia preservata SEMPRE
 - Tracciabilità totale
 - Documentare correzioni con commit message chiari
-<<<<<<< .merge_file_38qjyW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- Studiare lo storico con `git show` senza ripristinare file completi
-- Reintrodurre solo compatibilita' minima nel codice corrente quando serve
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Studiare lo storico con `git show` senza ripristinare file completi
-- Reintrodurre solo compatibilita' minima nel codice corrente quando serve
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_9FTILD
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Il Perché
 
@@ -73,40 +51,6 @@ Gli errori sono maestri. Non si nascondono, si documentano e si correggono andan
 
 ## Workflow Corretto
 
-<<<<<<< .merge_file_38qjyW
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-### Scenario 0: Un file attuale e' sbagliato
-
-```bash
-# ❌ SBAGLIATO
-git checkout -- Modules/Foo/app/Bar.php
-git restore Modules/Foo/app/Bar.php
-
-# ✅ CORRETTO
-git show HEAD~3:Modules/Foo/app/Bar.php
-# studio il contratto utile
-# poi modifico il file attuale con una fix forward-only
-```
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_9FTILD
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ### Scenario 1: Ho committato un bug
 
 ```bash
@@ -148,18 +92,6 @@ git push
 git reset --hard HEAD~1
 
 # ✅ CORRETTO
-<<<<<<< .merge_file_38qjyW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9FTILD
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Sposta il commit sul branch giusto
 git checkout correct-branch
 git cherry-pick wrong-branch
@@ -169,34 +101,6 @@ git push
 git checkout wrong-branch
 git revert HEAD
 git push
-<<<<<<< HEAD
-<<<<<<< .merge_file_38qjyW
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-# Ricrea la modifica corretta sul branch giusto
-git checkout correct-branch
-# studia il delta utile e reimplementalo nel presente
-git push
-
-# Sul branch sbagliato fai un nuovo commit di riallineamento
-# senza usare revert automatici
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_9FTILD
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### Scenario 4: Voglio "annullare" modifiche
@@ -206,59 +110,11 @@ git push
 git reset --hard abc123
 
 # ✅ CORRETTO
-<<<<<<< .merge_file_38qjyW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9FTILD
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Usa revert per creare un nuovo commit che annulla
 git revert HEAD~2..HEAD
 git push
 ```
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_38qjyW
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-# Studia la differenza e applica una correzione forward-only
-git diff abc123..HEAD -- path/to/file
-# poi fai un nuovo commit con la forma corretta del codice
-git push
-```
-
-### Scenario 5: Mi serve un metodo rimosso in un refactor
-
-```bash
-# ✅ CORRETTO
-git show <old-sha>:Modules/Xot/app/Datas/XotData.php
-# identifico la firma storica
-# implemento un wrapper compatibile minimo nel file corrente
-```
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_9FTILD
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## Eccezioni Rarissime
 
 Le UNICHE 3 eccezioni accettabili:
@@ -285,30 +141,7 @@ Le UNICHE 3 eccezioni accettabili:
 3. **Team Trust**: Tutti si fidano della storia condivisa
 4. **Compliance**: Soddisfa audit e requisiti legali
 5. **Learning Culture**: Gli errori diventano lezioni documentate
-<<<<<<< .merge_file_38qjyW
-<<<<<<< HEAD
-<<<<<<< HEAD
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
-=======
-6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
->>>>>>> 3792da0d (Check & fix styling)
-=======
-6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
->>>>>>> .merge_file_9FTILD
-=======
-=======
-6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Commit Message Format
 
@@ -351,27 +184,4 @@ Non è una best practice, è **l'unica pratica**.
 ---
 
 **Ultima revisione**: Novembre 2025
-<<<<<<< .merge_file_38qjyW
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: Regola Assoluta e Immutabile
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status**: Regola Assoluta e Immutabile
-=======
-**Status**: Regola Assoluta e Immutabile
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Status**: Regola Assoluta e Immutabile
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status**: Regola Assoluta e Immutabile
->>>>>>> .merge_file_9FTILD
-=======
-=======
-**Status**: Regola Assoluta e Immutabile
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

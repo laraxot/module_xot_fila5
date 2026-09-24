@@ -27,30 +27,7 @@ laravel/Modules/Xot/docs/wiki/
     └── xotbase-provider-pattern.md        # ≤200 righe
 ```
 
-<<<<<<< .merge_file_ULOLYJ
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Regola:** Nessun file > 200 righe. Split atomico per idea. Token LLM: [token-efficiency-local.md](./token-efficiency-local.md).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Regola:** Nessun file > 200 righe. Split atomico per idea. Token LLM: [token-efficiency-local.md](./token-efficiency-local.md).
-=======
-**Regola:** Nessun file > 200 righe. Split atomico per idea.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Regola:** Nessun file > 200 righe. Split atomico per idea.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Regola:** Nessun file > 200 righe. Split atomico per idea. Token LLM: [token-efficiency-local.md](./token-efficiency-local.md).
->>>>>>> .merge_file_nKbR2H
-=======
-=======
-**Regola:** Nessun file > 200 righe. Split atomico per idea.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 

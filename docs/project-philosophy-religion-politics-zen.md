@@ -2,51 +2,8 @@
 
 ## 🧠 Logica del Progetto
 
-<<<<<<< .merge_file_LFrvpb
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
 
-=======
-<<<<<<< HEAD
-Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
-
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-Il progetto Laravel Pizza è una conversione e miglioramento di https://<nome progetto>.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
-
-- **Conversione e Miglioramento**: Non è una semplice copia, ma un'evoluzione del sito originale.
-- **Architettura Modulare**: Moduli indipendenti (`Modules/*`) e temi separati (`Themes/*`).
-- **Frontoffice con Folio + Volt**: Nessun controller tradizionale, solo routing file-based.
-- **Qualità Maniacale**: PHPStan livello 10 obbligatorio, PHPMD e PHPInsights per la pulizia del codice.
-- **Super Mucca Methodology**: Analisi profonda prima dell'azione, massima confidenza.
-
-## 🧘‍♂️ Filosofia (Philosophy)
-
-- **DRY + KISS estremi**: Niente complicazioni inutili, niente ridondanza. "If it's already there, don't write it again."
-- **Una tabella = una migrazione**: Ogni tabella deve avere una sola migrazione responsabile della sua creazione.
-- **Frontoffice = Folio + Volt**: Pattern: `Request → Folio → Blade Page → Volt Component → Action → Service/Model`.
-- **Docs prima del codice**: Prima si aggiorna/legge `docs/`, poi si scrive codice. Se manca, crealo seguendo lo Zen.
-- **Zero compromessi**: Approccio "fix, don't ignore" - tutti gli errori vanno corretti, nessuno ignorato.
-- **Strict Typing**: Ogni file deve avere `declare(strict_types=1);` e tipi espliciti ovunque.
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
-
->>>>>>> .merge_file_U3KCYI
-=======
-=======
-Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
-
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **Conversione e Miglioramento**: Non è una semplice copia, ma un'evoluzione del sito originale
 - **Architettura Modulare**: Moduli indipendenti (`Modules/*`) e temi separati (`Themes/*`)
 - **Frontoffice con Folio + Volt**: Nessun controller tradizionale, solo routing file-based
@@ -94,30 +51,7 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelp
 
 ## 🎯 Business Logic Principale
 
-<<<<<<< .merge_file_LFrvpb
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
-=======
-- **Meetup Theme**: Tema principale basato su <nome progetto>.com, con Folio + Volt
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Meetup Theme**: Tema principale basato su <nome progetto>.com, con Folio + Volt
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
->>>>>>> .merge_file_U3KCYI
-=======
-=======
-- **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **Folio + Volt**: Architettura obbligatoria per il frontoffice
 - **Filament**: Solo per il backoffice
 - **Laraxot Framework**: "Framework nel framework" con regole rigide
@@ -160,27 +94,4 @@ This rule empowers the AI Assistant to determine the order and priority of actio
 
 **"Filosofia Zen: Non avrai altro path all'infuori del relativo"**
 
-<<<<<<< .merge_file_LFrvpb
-<<<<<<< HEAD
-<<<<<<< HEAD
 **"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
-=======
-**"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
->>>>>>> .merge_file_U3KCYI
-=======
-=======
-**"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

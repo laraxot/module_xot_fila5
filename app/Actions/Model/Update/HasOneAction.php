@@ -24,86 +24,11 @@ class HasOneAction
     /**
      * Execute the update operation for a HasOne relationship.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_WLZCrI
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_nJ1IDE
-=======
->>>>>>> da9ae01a0 (.)
-     * <<<<<<< HEAD
-     *
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-=======
->>>>>>> 930f8146 (Check & fix styling)
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     *
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException         When relationship data is invalid
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *                                   =======
-     *                                   <<<<<<< .merge_file_nJ1IDE
-     *                                   =======
-     *                                   <<<<<<< HEAD
-     *                                   <<<<<<< .merge_file_T31w2M
-     *                                   >>>>>>> .merge_file_rWwxNa
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException         When relationship data is invalid
-     *                                   <<<<<<< .merge_file_nJ1IDE
-     *                                   =======
-=======
-<<<<<<< .merge_file_nJ1IDE
-=======
->>>>>>> da9ae01a0 (.)
-     *                                   =======
-     *                                   <<<<<<< .merge_file_3gk7Nx
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException         When relationship data is invalid
-     *                                   =======
-     *                                   <<<<<<< HEAD
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException         When relationship data is invalid
-     *                                   =======
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException         When relationship data is invalid
-     *                                   >>>>>>> laraxot/dev
-     *                                   >>>>>>> .merge_file_SqQcWu
-     *                                   >>>>>>> .merge_file_tFlRWf
-     *                                   =======
-     * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException         When relationship data is invalid
-     *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                                   >>>>>>> .merge_file_rWwxNa
-     *                                   >>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  Model  $model  The parent model instance
      * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
      *
      * @throws \InvalidArgumentException When relationship type is invalid
      * @throws \RuntimeException When relationship data is invalid
->>>>>>> .merge_file_NWmh8F
-=======
->>>>>>> .merge_file_rWwxNa
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {

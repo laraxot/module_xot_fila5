@@ -268,12 +268,4 @@ Assert::notNull($value);
 ---
 
 **Ultimo aggiornamento**: 11 Novembre 2025
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Progresso**: 9/406 errori risolti (2.2%)
-=======
-**Progresso**: 9/406 errori risolti (2.2%)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Progresso**: 9/406 errori risolti (2.2%)
->>>>>>> da9ae01a0 (.)

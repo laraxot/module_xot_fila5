@@ -21,50 +21,19 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Filament\GetResourceClassNameByModelClassAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-=======
-use Modules\Xot\Actions\GetTransKeyAction;
-use Modules\Xot\Actions\ModelClass\CountAction;
->>>>>>> 930f8146 (Check & fix styling)
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Webmozart\Assert\Assert;
 
 use function Safe\glob;
 
-<<<<<<< .merge_file_d5JZtf
-=======
-=======
-use Modules\Xot\Actions\GetTransKeyAction;
-use Modules\Xot\Actions\ModelClass\CountAction;
-use Modules\Xot\Filament\Traits\NavigationLabelTrait;
->>>>>>> 3792da0d (Check & fix styling)
-
-use function Safe\glob;
-
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_lxPDX6
 /**
-<<<<<<< HEAD
  * @method static string getUrl(?string $name = null, array<string, mixed> $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?\Illuminate\Database\Eloquent\Model $tenant = null, bool $shouldGuessMissingParameters = false, ?string $configuration = null)
-=======
-<<<<<<< HEAD
-/**
- * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  */
 abstract class XotBaseResource extends FilamentResource
 {
@@ -75,19 +44,7 @@ abstract class XotBaseResource extends FilamentResource
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
-<<<<<<< .merge_file_d5JZtf
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $params
-=======
-     * @param array<string, bool|float|int|string|null> $params
->>>>>>> laraxot/dev
-=======
-     * @param array<string, bool|float|int|string|null> $params
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, bool|float|int|string|null>  $params
->>>>>>> .merge_file_lxPDX6
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -123,7 +80,6 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-<<<<<<< HEAD
      * Modelli derivati dal nome della Resource, memoizzati per classe.
      *
      * La property `$model` di Filament e' dichiarata sul parent: una Resource che non la
@@ -136,29 +92,11 @@ abstract class XotBaseResource extends FilamentResource
     private static array $resolvedModels = [];
 
     /**
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return class-string<Model>
      */
     public static function getModel(): string
     {
-<<<<<<< .merge_file_d5JZtf
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (static::$model !== null) {
-=======
-        if (null !== static::$model) {
->>>>>>> laraxot/dev
-=======
-        if (null !== static::$model) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (static::$model !== null) {
->>>>>>> .merge_file_lxPDX6
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -168,17 +106,10 @@ abstract class XotBaseResource extends FilamentResource
 
             return $res;
         }
-<<<<<<< HEAD
         if (isset(self::$resolvedModels[static::class])) {
             return self::$resolvedModels[static::class];
         }
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $moduleName = static::getModuleName();
         $modelName = Str::before(class_basename(static::class), 'Resource');
         $res = 'Modules\\'.$moduleName.'\Models\\'.$modelName;
@@ -188,15 +119,7 @@ abstract class XotBaseResource extends FilamentResource
             Model::class,
             \sprintf('Class %s must extend Eloquent Model', $res),
         );
-<<<<<<< HEAD
         self::$resolvedModels[static::class] = $res;
-=======
-        static::$model = $res;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
         return $res;
     }
@@ -204,7 +127,6 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
     final public function getFormSchema(): array
     {
         return static::getFormSchemaOld();
@@ -275,37 +197,10 @@ abstract class XotBaseResource extends FilamentResource
         Assert::subclassOf($class1, XotBaseResourceTable::class);
 
         return $class1;
-=======
-    abstract public static function getFormSchema(): array;
-
-    final public static function form(Schema $schema): Schema
-    {
-        // return AuthorForm::configure($schema);
-        $name = class_basename(static::getModel());
-        $form_class = static::class.'\Schemas\\'.$name.'Form';
-        if (class_exists($form_class)) {
-            $configured = $form_class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
-        }
-
-        /** @var array<Htmlable|string> $components */
-        $components = static::getFormSchema();
-
-        return $schema
-            ->components($components)
-            ->columns(static::getFormSchemaColumns());
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     public static function table(Table $table): Table
     {
-<<<<<<< HEAD
         $class = static::getTableClass();
         $configured = $class::configure($table);
         Assert::isInstanceOf($configured, Table::class);
@@ -314,26 +209,6 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     public static function getFormColumns(): int
-=======
-        $name = class_basename(static::getModel());
-        $name_plural = Str::plural($name);
-        $class = static::class.'\Tables\\'.$name_plural.'Table';
-        if (class_exists($class)) {
-            $configured = $class::configure($table);
-            Assert::isInstanceOf($configured, Table::class);
-
-            return $configured;
-        }
-
-        return $table;
-    }
-
-    public static function getFormSchemaColumns(): int
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return 1;
     }
@@ -343,21 +218,12 @@ abstract class XotBaseResource extends FilamentResource
      *
      * @return array<string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    public static function getInfolistSchema(): array
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [];
     }
 
     /**
-<<<<<<< HEAD
      * @return class-string<XotBaseResourceInfolist>
      */
     public static function getInfolistClass(): string
@@ -379,37 +245,15 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * Metodo finale: obbliga l'uso di getInfolistSchema().
      */
     final public static function infolist(Schema $schema): Schema
     {
-<<<<<<< HEAD
         $class = static::getInfolistClass();
         $configured = $class::configure($schema);
         Assert::isInstanceOf($configured, Schema::class);
 
         return $configured;
-=======
-        $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
-        if (class_exists($class)) {
-            $configured = $class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
-        }
-
-        return $schema->components(static::getInfolistSchema());
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -493,19 +337,7 @@ abstract class XotBaseResource extends FilamentResource
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
-<<<<<<< .merge_file_d5JZtf
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($filesResult === []) {
-=======
-        if ([] === $filesResult) {
->>>>>>> laraxot/dev
-=======
-        if ([] === $filesResult) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($filesResult === []) {
->>>>>>> .merge_file_lxPDX6
             return [];
         }
 
@@ -532,14 +364,7 @@ abstract class XotBaseResource extends FilamentResource
 
     public static function getWizardSubmitAction(): Htmlable
     {
-<<<<<<< HEAD
         /** @var view-string $submit_view */
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $submit_view = 'pub_theme::filament.wizard.submit-button';
         if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");

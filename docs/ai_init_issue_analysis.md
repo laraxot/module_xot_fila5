@@ -1,26 +1,5 @@
 # Aggiornamento Documentazione - Problema con ai_init.sh
 
-<<<<<<< .merge_file_VHW8Qs
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_oyxbK7
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_mcL7Dk
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WhyeKN
 ## Analisi corretta
 
 Il problema non e' "manca la cartella `bashscripts/ai/.gemini`".
@@ -59,31 +38,7 @@ Non:
 
 - Source: `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/.gemini`
 - Target symlink: `/var/www/_bases/base_quaeris_fila4_mono/.gemini`
-<<<<<<< .merge_file_VHW8Qs
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_oyxbK7
-<<<<<<< HEAD
-=======
 
->>>>>>> .merge_file_mcL7Dk
-=======
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-
->>>>>>> .merge_file_WhyeKN
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## Problema Identificato
 
 Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
@@ -116,36 +71,4 @@ Lo script deve essere corretto per invertire la logica:
 ## Cartelle Coinvolte
 
 - Source: `./bashscripts/ai/.gemini`
-<<<<<<< .merge_file_VHW8Qs
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Target symlink: `./.gemini`
-=======
-- Target symlink: `./.gemini`
->>>>>>> 7f6cf6be (.)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> da9ae01a0 (.)
-- Target symlink: `./.gemini`
-=======
-- Target symlink: `./.gemini`
->>>>>>> laraxot/dev
-=======
-- Target symlink: `./.gemini`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Target symlink: `./.gemini`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Target symlink: `./.gemini`
->>>>>>> .merge_file_WhyeKN
-=======
-=======
-- Target symlink: `./.gemini`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

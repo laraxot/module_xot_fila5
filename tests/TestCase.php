@@ -25,51 +25,18 @@ use function Safe\unlink;
  * DatabaseTransactions handles rollback between tests.
  *
  * @property object|null $action
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property Model|null $model
-=======
- * @property Model|null  $model
->>>>>>> laraxot/dev
-=======
- * @property Model|null  $model
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @property Model|null $model
->>>>>>> .merge_file_esL0Ch
  * @property object|null $service
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_esL0Ch
  * @property Model|null $testModel
  * @property object|null $extraClass
  * @property Model|null $baseModel
  * @property string|null $testDir
  * @property mixed $saved
  * @property mixed $extra_attributes
-<<<<<<< .merge_file_jYedXr
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property Model|null  $testModel
- * @property object|null $extraClass
- * @property Model|null  $baseModel
- * @property string|null $testDir
- * @property mixed       $saved
- * @property mixed       $extra_attributes
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_esL0Ch
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -78,44 +45,6 @@ abstract class TestCase extends XotBaseTestCase
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite', 'user', 'tenant', 'xot'];
 
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-    public mixed $action = null;
-
-    public mixed $model = null;
-
-    public mixed $service = null;
-
-    public mixed $tempDir = null;
-
-    public mixed $record = null;
-
-    public mixed $transition = null;
-
-    public mixed $resource = null;
-
-    public mixed $testModel = null;
-
-    public mixed $extraClass = null;
-
-    public mixed $baseModel = null;
-
-    public ?string $testDir = null;
-
-    public mixed $saved = null;
-
-    public mixed $extra_attributes = null;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_esL0Ch
     /**
      * @return array<int, class-string<ServiceProvider>>
      */
@@ -128,33 +57,13 @@ abstract class TestCase extends XotBaseTestCase
     {
         parent::setUp();
 
-<<<<<<< HEAD
         $database = self::sharedSqlitePath();
-=======
-        $database = database_path('fixcity_data.sqlite');
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (config("database.connections.{$connection}.driver") !== 'sqlite') {
-=======
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
->>>>>>> laraxot/dev
-=======
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
->>>>>>> .merge_file_esL0Ch
                 continue;
             }
 
@@ -166,21 +75,7 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<T>  $class
-=======
-     * @param class-string<T> $class
-     *
->>>>>>> laraxot/dev
-=======
-     * @param class-string<T> $class
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<T>  $class
->>>>>>> .merge_file_esL0Ch
      * @return T
      */
     public function getAction(string $class): object
@@ -196,25 +91,8 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<T>  $abstract
      * @param  (\Closure(MockInterface&T): void)|null  $callback
-=======
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
->>>>>>> laraxot/dev
-=======
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<T>  $abstract
-     * @param  (\Closure(MockInterface&T): void)|null  $callback
->>>>>>> .merge_file_esL0Ch
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -226,19 +104,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<\Throwable>  $exception
-=======
-     * @param class-string<\Throwable> $exception
->>>>>>> laraxot/dev
-=======
-     * @param class-string<\Throwable> $exception
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<\Throwable>  $exception
->>>>>>> .merge_file_esL0Ch
      */
     public function expectThrowable(string $exception): void
     {
@@ -247,15 +113,7 @@ abstract class TestCase extends XotBaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-<<<<<<< HEAD
         $this->expectExceptionMessageIsOrContains($message);
-=======
-        $this->expectExceptionMessage($message);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     public function expectThrowableMessageMatches(string $pattern): void
@@ -281,33 +139,14 @@ abstract class TestCase extends XotBaseTestCase
         $files = scandir($dir);
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_jYedXr
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file === '.' || $file === '..') {
-=======
-            if ('.' === $file || '..' === $file) {
->>>>>>> laraxot/dev
-=======
-            if ('.' === $file || '..' === $file) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($file === '.' || $file === '..') {
->>>>>>> .merge_file_esL0Ch
                 continue;
             }
 
             $path = $dir.'/'.$file;
             if (is_dir($path) && ! is_link($path)) {
                 $this->rrmdir($path);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 continue;
             }
 

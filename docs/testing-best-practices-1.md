@@ -204,68 +204,13 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
-<<<<<<< .merge_file_R2o1Vi
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](XOTDATA_TESTING.md)
-=======
-- [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](xotdata_testing.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](xotdata_testing.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](XOTDATA_TESTING.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_n7qtz0
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
-<<<<<<< .merge_file_R2o1Vi
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Update**: Dicembre 2024
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Last Update**: Dicembre 2024
-=======
-**Last Update**: Dicembre 2024
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Last Update**: Dicembre 2024
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Last Update**: Dicembre 2024
->>>>>>> .merge_file_n7qtz0
-=======
-=======
-**Last Update**: Dicembre 2024
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

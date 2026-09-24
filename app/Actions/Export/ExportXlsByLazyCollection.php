@@ -17,40 +17,9 @@ class ExportXlsByLazyCollection
     /**
      * Esporta una lazy collection in Excel.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_OXIxkK
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param LazyCollection<int, mixed> $collection La lazy collection da esportare
-     * @param string                     $filename   Nome del file Excel
-     * @param array<int, string>         $fields     Campi da includere nell'export
-     *                                               =======
-     * @param LazyCollection<int, mixed> $collection La lazy collection da esportare
-     * @param string                     $filename   Nome del file Excel
-     * @param array<int, string>         $fields     Campi da includere nell'export
-     *                                               >>>>>>> laraxot/dev
-=======
-     * @param LazyCollection<int, mixed> $collection La lazy collection da esportare
-     * @param string                     $filename   Nome del file Excel
-     * @param array<int, string>         $fields     Campi da includere nell'export
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  LazyCollection<int, mixed>  $collection  La lazy collection da esportare
      * @param  string  $filename  Nome del file Excel
      * @param  array<int, string>  $fields  Campi da includere nell'export
->>>>>>> .merge_file_mOqleh
-=======
-<<<<<<< HEAD
-     * @param  LazyCollection<int, mixed>  $collection  La lazy collection da esportare
-     * @param  string  $filename  Nome del file Excel
-     * @param  array<int, string>  $fields  Campi da includere nell'export
-=======
-     * @param LazyCollection<int, mixed> $collection La lazy collection da esportare
-     * @param string                     $filename   Nome del file Excel
-     * @param array<int, string>         $fields     Campi da includere nell'export
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function execute(
         LazyCollection $collection,

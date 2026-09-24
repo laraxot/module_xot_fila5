@@ -1,38 +1,4 @@
 ---
-<<<<<<< .merge_file_gjF77V
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TIj5kz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< .merge_file_TIj5kz
-<<<<<<< HEAD
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-module: theme
-topic: uuid
-canonical: ../../../Themes/docs/shared-components/UUID.txt
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4hNrlA
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_p23x9k
 title: 'Uuid'
 module: Xot
 type: reference
@@ -47,32 +13,3 @@ updated: 2026-08-24
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
-<<<<<<< .merge_file_gjF77V
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TIj5kz
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-module: theme
-topic: uuid
-canonical: ../../../Themes/docs/shared-components/UUID.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
->>>>>>> .merge_file_4hNrlA
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_p23x9k
-=======
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

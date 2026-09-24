@@ -11,21 +11,7 @@ final class PdfBuilderAdapter implements PdfBuilderContract
 {
     public function __construct(
         private object $builder,
-<<<<<<< .merge_file_qtkjE1
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    ) {}
->>>>>>> .merge_file_Ev1kAV
 
     public function format(string $format): PdfBuilderContract
     {
@@ -64,19 +50,7 @@ final class PdfBuilderAdapter implements PdfBuilderContract
     }
 
     /**
-<<<<<<< .merge_file_qtkjE1
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  list<mixed>  $arguments
-=======
-     * @param list<mixed> $arguments
->>>>>>> laraxot/dev
-=======
-     * @param list<mixed> $arguments
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  list<mixed>  $arguments
->>>>>>> .merge_file_Ev1kAV
      */
     private function callBuilderMethod(string $method, array $arguments = []): object
     {

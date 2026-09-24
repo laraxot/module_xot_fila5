@@ -21,27 +21,9 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * This class provides common functionality for custom pages,
  * following the architectural pattern of never extending Filament classes directly.
  *
-<<<<<<< .merge_file_V23J6G
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property ?string $model
  * @property array<string, mixed> $data
  * @property Schema $form
-=======
- * @property ?string              $model
- * @property array<string, mixed> $data
- * @property Schema               $form
->>>>>>> laraxot/dev
-=======
- * @property ?string              $model
- * @property array<string, mixed> $data
- * @property Schema               $form
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @property ?string $model
- * @property array<string, mixed> $data
- * @property Schema $form
->>>>>>> .merge_file_lx7Fp3
  */
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
@@ -68,19 +50,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
-<<<<<<< .merge_file_V23J6G
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->view !== 'filament-panels::pages.page') {
-=======
-        if ('filament-panels::pages.page' !== $this->view) {
->>>>>>> laraxot/dev
-=======
-        if ('filament-panels::pages.page' !== $this->view) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($this->view !== 'filament-panels::pages.page') {
->>>>>>> .merge_file_lx7Fp3
             return $this->view;
         }
 
@@ -108,15 +78,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         $after[1] = Str::before($after[1], 'Resource');
         $after[3] = Str::before($after[3], $after[1]);
 
-<<<<<<< HEAD
         $after = collect($after)->map(function (string $item) {
-=======
-        $after = collect($after)->map(function ($item) {
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return Str::kebab($item);
             // return Str::snake($item);
         })->implode('.');
@@ -188,19 +150,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getModel(): string
     {
-<<<<<<< .merge_file_V23J6G
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (static::$model === null) {
-=======
-        if (null === static::$model) {
->>>>>>> laraxot/dev
-=======
-        if (null === static::$model) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (static::$model === null) {
->>>>>>> .merge_file_lx7Fp3
             throw new \LogicException('Model class not set for page: '.static::class);
         }
 

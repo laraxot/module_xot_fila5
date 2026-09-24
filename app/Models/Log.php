@@ -17,27 +17,9 @@ use Sushi\Sushi;
  *
  * @property string|null $id
  * @property string|null $name
-<<<<<<< .merge_file_3UMUVB
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property int|null $size
  *
  * @method static LogFactory factory($count = null, $state = [])
-=======
- * @property int|null    $size
- *
- * @method static LogFactory          factory($count = null, $state = [])
->>>>>>> laraxot/dev
-=======
- * @property int|null    $size
- *
- * @method static LogFactory          factory($count = null, $state = [])
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @property int|null $size
- *
- * @method static LogFactory factory($count = null, $state = [])
->>>>>>> .merge_file_Vgy6Iz
  * @method static Builder<static>|Log newModelQuery()
  * @method static Builder<static>|Log newQuery()
  * @method static Builder<static>|Log query()
@@ -47,19 +29,7 @@ use Sushi\Sushi;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
-<<<<<<< .merge_file_3UMUVB
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property string|null $file_content
-=======
- * @property string|null          $file_content
->>>>>>> laraxot/dev
-=======
- * @property string|null          $file_content
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @property string|null $file_content
->>>>>>> .merge_file_Vgy6Iz
  * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent
@@ -79,19 +49,7 @@ class Log extends BaseModel
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_3UMUVB
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() === 'log') {
-=======
-            if ('log' === $file->getExtension()) {
->>>>>>> laraxot/dev
-=======
-            if ('log' === $file->getExtension()) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($file->getExtension() === 'log') {
->>>>>>> .merge_file_Vgy6Iz
                 $rows[] = [
                     'id' => $file->getFilenameWithoutExtension(),
                     'name' => $file->getFilenameWithoutExtension(),

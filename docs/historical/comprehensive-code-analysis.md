@@ -177,54 +177,10 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -234,54 +190,10 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -378,54 +290,10 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),
@@ -558,37 +426,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_4TwWCA
-=======
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -792,54 +630,10 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -849,54 +643,10 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -993,54 +743,10 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4TwWCA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),
@@ -1173,37 +879,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_OCUJpx
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_T2gRyH
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_4TwWCA
-=======
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

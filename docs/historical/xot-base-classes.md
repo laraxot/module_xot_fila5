@@ -18,61 +18,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
-<<<<<<< .merge_file_JXP2vD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_9PnOj3
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
       public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_KBBmvv
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-      public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      public function getFormSchema(): array
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-      public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_9PnOj3
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_KBBmvv
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-      public function getFormSchema(): array
->>>>>>> .merge_file_w06VUO
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),

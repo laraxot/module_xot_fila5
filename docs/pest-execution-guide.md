@@ -383,27 +383,4 @@ cd laravel
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
 **Versione Pest**: 3.8.4  
-<<<<<<< .merge_file_t7xkT6
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: ✅ Documentazione Completa
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status**: ✅ Documentazione Completa
-=======
-**Status**: ✅ Documentazione Completa
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Status**: ✅ Documentazione Completa
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status**: ✅ Documentazione Completa
->>>>>>> .merge_file_Bc4zZV
-=======
-=======
-**Status**: ✅ Documentazione Completa
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -88,39 +88,10 @@ protected function generateFormSchema(string $file, string $content, string $cla
 declare(strict_types=1);
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_0cwRiF
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_TL0FVo
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_0cwRiF
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_TL0FVo
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         'field_name' => [
@@ -181,30 +152,7 @@ public static function getFormSchema(): array
 ### Composer.json
 ```json
 {
-<<<<<<< .merge_file_0cwRiF
-<<<<<<< HEAD
-<<<<<<< HEAD
     "name": "laraxot/module_xot_fila3",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "name": "laraxot/module_xot_fila3",
-=======
-    "name": "laraxot/module_xot_fila5",
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    "name": "laraxot/module_xot_fila5",
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    "name": "laraxot/module_xot_fila3",
->>>>>>> .merge_file_TL0FVo
-=======
-=======
-    "name": "laraxot/module_xot_fila3",
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",
@@ -849,27 +797,4 @@ $count = CountAction::execute(User::class);
 - [ ] Implementare cache opzionale
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
-<<<<<<< .merge_file_0cwRiF
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [ ] Aggiungere test di performance
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [ ] Aggiungere test di performance
-=======
-- [ ] Aggiungere test di performance
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [ ] Aggiungere test di performance
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [ ] Aggiungere test di performance
->>>>>>> .merge_file_TL0FVo
-=======
-=======
-- [ ] Aggiungere test di performance
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

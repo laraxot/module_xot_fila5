@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_aDl40D
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_a5SzNh
-=======
->>>>>>> da9ae01a0 (.)
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -136,7 +128,6 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
-<<<<<<< HEAD
 
 
 ---
@@ -328,18 +319,3 @@ Questa correzione è l'**unico errore** rilevato da PHPStan livello 10 su 1028 f
 **Data**: 2026-01-05
 **Versione Modulo**: Xot (Laraxot Framework Base)
 **PHPStan**: v2.1+ (Level 10)
-<<<<<<< .merge_file_aDl40D
->>>>>>> laraxot/dev
-=======
----
-module: theme
-topic: phpstan-session
-canonical: ../../../Themes/docs/shared-components/phpstan-session-nov2025.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-session-nov2025.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_a5SzNh
-=======
->>>>>>> da9ae01a0 (.)

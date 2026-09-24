@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * -WIP.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Actions\Filament;
 
 use Filament\Forms\Components\Field;
@@ -41,22 +25,7 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
-<<<<<<< .merge_file_9dLZDC
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
-     *                                   =======
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
->>>>>>> .merge_file_AfPYyC
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -113,15 +82,7 @@ class AutoLabelAction
                 $saveTransAction = app(SaveTransAction::class);
                 Assert::isCallable([$saveTransAction, 'execute'], 'SaveTransAction::execute deve essere chiamabile');
 
-<<<<<<< HEAD
                 $saveTransAction->execute($label_key, (string) $label_value);
-=======
-                $saveTransAction->execute($label_key, $label_value);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             }
 
             // Applichiamo l'etichetta al componente
@@ -135,22 +96,7 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
-<<<<<<< .merge_file_9dLZDC
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param Field|Component $component Il componente di cui ottenere il nome
-     *                                   =======
-     * @param Field|Component $component Il componente di cui ottenere il nome
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param Field|Component $component Il componente di cui ottenere il nome
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  Field|Component  $component  Il componente di cui ottenere il nome
->>>>>>> .merge_file_AfPYyC
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string

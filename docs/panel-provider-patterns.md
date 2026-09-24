@@ -106,56 +106,10 @@ Prima di considerare completo un Panel Provider, verificare:
 ## Riferimenti
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
-<<<<<<< .merge_file_h7wKyY
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
-=======
-- [Panel Provider Rules](../../../docs/filament/filament_panel_provider_rules.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Panel Provider Rules](../../../docs/filament/filament_panel_provider_rules.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
->>>>>>> .merge_file_nbaOlP
-=======
-=======
-- [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [XotBasePanelProvider Source](../app/Providers/Filament/XotBasePanelProvider.php)
 - [XotBaseMainPanelProvider Source](../app/Providers/Filament/XotBaseMainPanelProvider.php)
 
 ---
 
-<<<<<<< .merge_file_h7wKyY
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: Dicembre 2024*
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> .merge_file_nbaOlP
-=======
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -65,26 +65,6 @@
 2. **Da root a modulo**: La documentazione root deve linkare ai documenti specifici dei moduli:
    ```markdown
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/docs/nome_documento.md)
-<<<<<<< .merge_file_3DINhZ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-   Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-   Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wsBsbA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    ```
 
 ## Manutenzione della documentazione
@@ -120,59 +100,9 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 ## Collegamenti a documentazione correlata
 
-<<<<<<< .merge_file_3DINhZ
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione generale](../../../docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione generale](../../../docs/documentation_rules.md)
-- [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Documentazione generale](../../../docs/documentation_rules.md)
-- [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
->>>>>>> .merge_file_wsBsbA
-=======
-=======
-- [Documentazione generale](../../../docs/documentation_rules.md)
-- [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Regole per ServiceProvider](../../IndennitaCondizioniLavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
 *Ultimo aggiornamento: Giugno 2025*
-<<<<<<< .merge_file_3DINhZ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Documentazione generale](../../../../docs/documentation_rules.md)
-- [Convenzioni di naming in generale](../../../../docs/naming_conventions.md)
-- [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
-- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione generale](../../../../docs/documentation_rules.md)
-- [Convenzioni di naming in generale](../../../../docs/naming_conventions.md)
-- [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
-- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wsBsbA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

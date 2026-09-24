@@ -1,24 +1,4 @@
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
-<<<<<<< .merge_file_iMSWUw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# Risoluzione Merge Conflicts Massivi - [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-# Risoluzione Merge Conflicts Massivi - [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_5GLfyO
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## 🔥 Problema Iniziale
 
@@ -296,27 +276,4 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
 - [Code Quality Standards](./code-quality-standards.md)
-<<<<<<< .merge_file_iMSWUw
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> .merge_file_5GLfyO
-=======
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

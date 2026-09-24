@@ -4,15 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
-<<<<<<< HEAD
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
-=======
-use Modules\Xot\Actions\Array\SaveJsonArrayAction;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

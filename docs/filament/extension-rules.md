@@ -289,39 +289,10 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_v50CCm
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_0fxT15
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_v50CCm
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0fxT15
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name')->required(),
@@ -333,27 +304,4 @@ class UserResource extends XotBaseResource
     // getPages() NON necessario se standard
     // getTableActions() NON necessario se standard
 }
-<<<<<<< .merge_file_v50CCm
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-```
->>>>>>> 3792da0d (Check & fix styling)
-=======
-```
->>>>>>> .merge_file_0fxT15
-=======
-=======
-```
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

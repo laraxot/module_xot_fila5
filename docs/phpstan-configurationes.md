@@ -104,11 +104,7 @@ parameters:
         - ./vendor/amenadiel/jpgraph/src/config.inc.php
 
     scanFiles:
-<<<<<<< HEAD
         - ./Modules/Xot/Helpers/Helper.php
-=======
-        - ./Modules/Xot/helpers/Helper.php
->>>>>>> da9ae01a0 (.)
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
     tmpDir: /tmp/phpstan

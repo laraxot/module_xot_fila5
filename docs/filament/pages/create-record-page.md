@@ -68,30 +68,7 @@ Riferimenti: [extension-rules.md](../extension-rules.md), [filament.md](../filam
 |----------|------------------|
 | Pannello admin, resource CRUD | `CreateRecord` + trait **`HasWizard`** → `getSteps()` / `hasSkippableSteps()` ([doc](https://filamentphp.com/docs/5.x/resources/creating-records#using-a-wizard)) |
 | Pannello (senza wizard nel trait) | `CreateRecord` → **`XotBaseCreateRecord`** |
-<<<<<<< .merge_file_WHuyCU
-<<<<<<< HEAD
-<<<<<<< HEAD
 | Frontoffice CMS, wizard multi-step | `XotBaseWizardWidget` + widget dominio (es. `CreateTicketWizardWidget`) — `getWizardSteps()` / `hasSkippableWizardSteps()` |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Frontoffice CMS, wizard multi-step | `XotBaseWizardWidget` + widget dominio (es. `CreateTicketWizardWidget`) — `getWizardSteps()` / `hasSkippableWizardSteps()` |
-=======
-| Frontoffice CMS, wizard multi-step | `XotBaseWizardWidget` + widget dominio (es. `CreateTicketWizardWidget`) — `getSteps()` / `hasSkippableWizardSteps()` |
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-| Frontoffice CMS, wizard multi-step | `XotBaseWizardWidget` + widget dominio (es. `CreateTicketWizardWidget`) — `getSteps()` / `hasSkippableWizardSteps()` |
->>>>>>> 3792da0d (Check & fix styling)
-=======
-| Frontoffice CMS, wizard multi-step | `XotBaseWizardWidget` + widget dominio (es. `CreateTicketWizardWidget`) — `getWizardSteps()` / `hasSkippableWizardSteps()` |
->>>>>>> .merge_file_hLROhg
-=======
-=======
-| Frontoffice CMS, wizard multi-step | `XotBaseWizardWidget` + widget dominio (es. `CreateTicketWizardWidget`) — `getSteps()` / `hasSkippableWizardSteps()` |
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 Il flusso pubblico **non** passa da `CreateRecord::create()`; usa Livewire + form schema del widget e redirect gestito in `submit()`. La filosofia DRY è parallela (stesso `Wizard` Filament, step e skippable) ma **contesto e entrypoint** diversi.
 

@@ -1,41 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_eZO2Xf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_oACnyz
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-
->>>>>>> .merge_file_n6cc0K
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Vp2N4j
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
@@ -44,33 +9,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_eZO2Xf
-<<<<<<< HEAD
-<<<<<<< HEAD
 /**
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_oACnyz
-/**
-=======
-/*
->>>>>>> .merge_file_n6cc0K
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-/**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-/**
->>>>>>> .merge_file_Vp2N4j
-=======
-=======
-/**
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  * Guardia meccanica contro due regressioni avvenute nello stesso giorno
  * (2026-09-11):
  *

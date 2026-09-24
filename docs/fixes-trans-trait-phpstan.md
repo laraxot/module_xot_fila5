@@ -1,26 +1,6 @@
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27
-<<<<<<< .merge_file_hCiz7h
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## Data: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_BOBMep
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Problema Identificato
 
@@ -135,27 +115,4 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 
 - Utilizzare sempre tipizzazione completa per array nei PHPDoc
 - Verificare che i metodi di traduzione restituiscano sempre string
-<<<<<<< .merge_file_hCiz7h
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> .merge_file_BOBMep
-=======
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

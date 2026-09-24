@@ -1,82 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_BuPiUQ
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_nvHytc
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_07UzYu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-declare(strict_types=1);
->>>>>>> .merge_file_zqWzsa
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * Xot Seeder Helper — canonical seed-once logic (coverage perimeter under app/).
  */
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_BuPiUQ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_nvHytc
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-declare(strict_types=1);
-
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_07UzYu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zqWzsa
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Helpers;
 
 use Illuminate\Database\Eloquent\Model;
@@ -88,33 +16,7 @@ final class XotSeedHelper
     /**
      * Seed a model once per application lifetime.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_BuPiUQ
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string  $modelClass
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_nvHytc
-     * @param  class-string  $modelClass
-=======
-     * @param class-string $modelClass
->>>>>>> .merge_file_07UzYu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param  class-string  $modelClass
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string  $modelClass
->>>>>>> .merge_file_zqWzsa
-=======
-=======
-     * @param  class-string  $modelClass
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public static function seedModelOnce(string $modelClass): void
     {
@@ -138,33 +40,7 @@ final class XotSeedHelper
 
         try {
             if (class_exists($seederClass)) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_BuPiUQ
-<<<<<<< HEAD
-<<<<<<< HEAD
                 $seeder = new $seederClass;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_nvHytc
-                $seeder = new $seederClass;
-=======
-                $seeder = new $seederClass();
->>>>>>> .merge_file_07UzYu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                $seeder = new $seederClass;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                $seeder = new $seederClass;
->>>>>>> .merge_file_zqWzsa
-=======
-=======
-                $seeder = new $seederClass;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
                 if ($seeder instanceof Seeder && is_callable([$seeder, 'run'])) {
                     $seeder->{'run'}();

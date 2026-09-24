@@ -167,39 +167,10 @@ use Filament\Forms\Components\TextInput;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_mdJviy
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_EJCL5f
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_mdJviy
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_EJCL5f
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name')->required(),
@@ -229,27 +200,4 @@ class ExampleResource extends XotBaseResource
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Filament*
-<<<<<<< .merge_file_mdJviy
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Status: ✅ Correzioni Implementate*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Status: ✅ Correzioni Implementate*
-=======
-*Status: ✅ Correzioni Implementate*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Status: ✅ Correzioni Implementate*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Status: ✅ Correzioni Implementate*
->>>>>>> .merge_file_EJCL5f
-=======
-=======
-*Status: ✅ Correzioni Implementate*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

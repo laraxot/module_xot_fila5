@@ -146,35 +146,5 @@ Prima di ogni commit, verificare:
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
-<<<<<<< .merge_file_i7GeKW
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
-=======
-**Ultimo aggiornamento**: [DATE]
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> .merge_file_Maod7R
-=======
-=======
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

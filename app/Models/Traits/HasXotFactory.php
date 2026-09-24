@@ -5,18 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< .merge_file_ivaMYc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kytRgC
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 
@@ -40,11 +28,6 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  *
  * @mixin Model
  */
-=======
-use Modules\Xot\Actions\Factory\GetFactoryAction;
-
-/** @template TFactory of Factory */
->>>>>>> 930f8146 (Check & fix styling)
 trait HasXotFactory
 {
     /**
@@ -53,39 +36,6 @@ trait HasXotFactory
     protected static function factory(): Factory
     {
         /** @var Factory<static> $factory */
-<<<<<<< .merge_file_ivaMYc
-=======
-=======
-use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Actions\Factory\GetFactoryAction;
-
-/** @template-covariant TFactory of Factory */
-trait HasXotFactory
-{
->>>>>>> 3792da0d (Check & fix styling)
-    /** @use EloquentHasFactory<TFactory> */
-    use EloquentHasFactory {
-        newFactory as parentNewFactory;
-    }
-
-    /**
-     * Create a new factory instance for the model.
-     *
-     * @return TFactory
-     */
-<<<<<<< HEAD
-    protected static function newFactory(): Factory
-    {
-        /** @var TFactory $factory */
->>>>>>> laraxot/dev
-=======
-    protected static function newFactory()
-    {
-        /** @var TFactory $factory */
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_kytRgC
         $factory = app(GetFactoryAction::class)->execute(static::class);
 
         return $factory;

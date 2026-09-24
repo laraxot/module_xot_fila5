@@ -10,11 +10,6 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelWithAuthorContract.
  *
-<<<<<<< .merge_file_hZdx19
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_9pbj12
  * @property int $id
  * @property int|null $user_id
  * @property string|null $post_type
@@ -45,97 +40,10 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed> treeLabel()
  * @method array<string, mixed> treeSons()
  * @method array<string, mixed> toArray()
-<<<<<<< .merge_file_hZdx19
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property int                $id
- * @property int|null           $user_id
- * @property string|null        $post_type
- * @property Carbon|null        $created_at
- * @property Carbon|null        $updated_at
- * @property string|null        $created_by
- * @property string|null        $updated_by
- * @property string|null        $title
- * @property PivotContract|null $pivot
- * @property string             $tennant_name
- * @property int|null           $author_id
- * @property UserContract|null  $user
- * @property UserContract|null  $author
- *
-<<<<<<< HEAD
- * @method int|string|null                                                 getKey()
- * @method string                                                          getRouteKey()
- * @method string                                                          getRouteKeyName()
- * @method string                                                          getTable()
- * @method \Illuminate\Database\Eloquent\Builder<Model>                    with($array)
- * @method list<string>                                                    getFillable()
- * @method static                                                          fill($array)
- * @method \Illuminate\Database\Connection                                 getConnection()
- * @method bool                                                            update($params)
- * @method bool|null                                                       delete()
- * @method int                                                             detach($params)
- * @method void                                                            attach($params)
- * @method bool                                                            save($params)
-=======
- * @method mixed                                                           getKey()
- * @method string                                                          getRouteKey()
- * @method string                                                          getRouteKeyName()
- * @method string                                                          getTable()
- * @method mixed                                                           with($array)
- * @method array<string, mixed>                                            getFillable()
- * @method mixed                                                           fill($array)
- * @method mixed                                                           getConnection()
- * @method mixed                                                           update($params)
- * @method mixed                                                           delete()
- * @method mixed                                                           detach($params)
- * @method mixed                                                           attach($params)
- * @method mixed                                                           save($params)
->>>>>>> 930f8146 (Check & fix styling)
- * @method array<string, mixed>                                            treeLabel()
- * @method array<string, mixed>                                            treeSons()
- * @method array<string, mixed>                                            toArray()
->>>>>>> laraxot/dev
-=======
- * @method mixed                                                           getKey()
- * @method string                                                          getRouteKey()
- * @method string                                                          getRouteKeyName()
- * @method string                                                          getTable()
- * @method mixed                                                           with($array)
- * @method array<string, mixed>                                            getFillable()
- * @method mixed                                                           fill($array)
- * @method mixed                                                           getConnection()
- * @method mixed                                                           update($params)
- * @method mixed                                                           delete()
- * @method mixed                                                           detach($params)
- * @method mixed                                                           attach($params)
- * @method mixed                                                           save($params)
- * @method array<string, mixed>                                            treeLabel()
- * @method array<string, mixed>                                            treeSons()
- * @method array<string, mixed>                                            toArray()
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_9pbj12
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
-<<<<<<< .merge_file_hZdx19
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface ModelWithAuthorContract {}
-=======
-interface ModelWithAuthorContract
-{
-}
->>>>>>> laraxot/dev
-=======
-interface ModelWithAuthorContract
-{
-}
->>>>>>> 3792da0d (Check & fix styling)
-=======
-interface ModelWithAuthorContract {}
->>>>>>> .merge_file_9pbj12

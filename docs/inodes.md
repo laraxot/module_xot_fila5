@@ -1,44 +1,3 @@
-<<<<<<< .merge_file_LLAeXf
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TA86Rw
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< .merge_file_TA86Rw
-<<<<<<< HEAD
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-# _inodes
-
-<!-- Contenuto migrato da _docs/_inodes.txt -->
-
---------------------------------------------------------------
-$ df -i /
-Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
-/dev/xvda1      7692288 652294 7039994    9%      /
-
---------------------------------------------------------------
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> da9ae01a0 (.)
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_T5cVUW
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_z8I8Pv
 ---
 title: 'Inodes'
 module: Xot
@@ -57,21 +16,6 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 /dev/xvda1      7692288 652294 7039994    9%      /
 
 --------------------------------------------------------------
-<<<<<<< .merge_file_LLAeXf
-<<<<<<< .merge_file_TA86Rw
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_T5cVUW
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_z8I8Pv
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------
@@ -102,35 +46,4 @@ Se il comando sopra non fosse disponibile, per ridurre le dimensioni del file di
 $ journalctl --vacuum-size=100M
 dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno scartiti tutti i log più vecchi finchè non si raggiunge uno spazio di disco usato da Jorunal di 100M (o meno).
 
-<<<<<<< .merge_file_LLAeXf
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
 --------------------------------------------------------------
-=======
---------------------------------------------------------------
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
---------------------------------------------------------------
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
---------------------------------------------------------------
->>>>>>> 3792da0d (Check & fix styling)
-=======
---------------------------------------------------------------
->>>>>>> .merge_file_z8I8Pv
-=======
-=======
---------------------------------------------------------------
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

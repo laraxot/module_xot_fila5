@@ -1,41 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_t7jOGC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_fPql5m
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-
->>>>>>> .merge_file_rWqH1L
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_O5Fds4
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\TestCase;
@@ -63,33 +28,7 @@ $rrmdir = function (string $dir) use (&$rrmdir): void {
     $files = scandir($dir);
 
     foreach ($files as $file) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_t7jOGC
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($file === '.' || $file === '..') {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_fPql5m
-        if ($file === '.' || $file === '..') {
-=======
-        if ('.' === $file || '..' === $file) {
->>>>>>> .merge_file_rWqH1L
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if ($file === '.' || $file === '..') {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($file === '.' || $file === '..') {
->>>>>>> .merge_file_O5Fds4
-=======
-=======
-        if ($file === '.' || $file === '..') {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             continue;
         }
 

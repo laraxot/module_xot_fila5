@@ -5,30 +5,7 @@
 The system utilizes three main database connections:
 
 ### 1. Limesurvey Database (`limesurvey` connection)
-<<<<<<< .merge_file_8aAK5K
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Schema**: `txaesfry_quaeris_survey` 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Schema**: `txaesfry_quaeris_survey` 
-=======
-- **Schema**: `txaesfry_healthcare_app_survey` 
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Schema**: `txaesfry_healthcare_app_survey` 
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **Schema**: `txaesfry_quaeris_survey` 
->>>>>>> .merge_file_5SL3RJ
-=======
-=======
-- **Schema**: `txaesfry_quaeris_survey` 
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **Purpose**: Main Limesurvey installation with surveys, questions, and responses
 - **Key tables**: 
   - `lime_questions` - Question structure and metadata
@@ -38,47 +15,10 @@ The system utilizes three main database connections:
   - `lime_answers` - Possible answer options
   - `lime_answer_l10ns` - Answer translations
 
-<<<<<<< .merge_file_8aAK5K
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_5SL3RJ
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ### 2. Quaeris Database (`quaeris` connection) 
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to Quaeris functionality
-<<<<<<< HEAD
-<<<<<<< .merge_file_8aAK5K
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-### 2. healthcare_app Database (`healthcare_app` connection) 
-- **Purpose**: Application-specific data including survey mappings
-- **Key tables**:
-  - `survey_pdfs` - Links Limesurvey surveys to healthcare_app functionality
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_5SL3RJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
   - `question_charts` - Custom chart configurations for survey data
   - `charts` - Chart visualization settings
   - `contacts` - Participant contact and communication tracking
@@ -154,30 +94,7 @@ The system utilizes three main database connections:
 
 ## Integration Points
 
-<<<<<<< .merge_file_8aAK5K
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### Quaeris-Specific Features
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Quaeris-Specific Features
-=======
-### healthcare_app-Specific Features
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-### healthcare_app-Specific Features
->>>>>>> 3792da0d (Check & fix styling)
-=======
-### Quaeris-Specific Features
->>>>>>> .merge_file_5SL3RJ
-=======
-=======
-### Quaeris-Specific Features
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Links Limesurvey data to `survey_pdfs` table via survey_id mapping
 - Custom chart configurations in `question_charts` table
 - Participant tracking through `contacts` table

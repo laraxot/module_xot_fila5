@@ -48,17 +48,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
-<<<<<<< .merge_file_jvQYOW
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uH42oJ
-=======
->>>>>>> da9ae01a0 (.)
 
 ```bash
 # ✅ additivo, mai distruttivo (dati sacri)
@@ -72,37 +61,6 @@ cd laravel && php artisan migrate
 
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
-<<<<<<< .merge_file_jvQYOW
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-```bash
-
-# Ripristinare le migrazioni
-php artisan migrate:fresh
-
-# Eseguire i seed
-php artisan db:seed
-```
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uH42oJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
 # Verificare che il modulo sia presente
@@ -479,17 +437,6 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
-<<<<<<< .merge_file_jvQYOW
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uH42oJ
-=======
->>>>>>> da9ae01a0 (.)
 **Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
 
 ```php
@@ -498,94 +445,16 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class MioModelloTest extends XotBaseTestCase
 {
     use DatabaseTransactions;
-<<<<<<< .merge_file_jvQYOW
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-**Utilizzare RefreshDatabase**
-```php
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-class MioModelloTest extends XotBaseTestCase
-{
-    use RefreshDatabase;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uH42oJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< .merge_file_jvQYOW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-        // Setup database per i test
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
-        // Setup database per i test
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
-
-        // Setup database per i test
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    }
-}
-```
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
-
-=======
-<<<<<<< HEAD
-=======
->>>>>>> da9ae01a0 (.)
-Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
-
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
     }
 }
 ```
 
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
 
->>>>>>> .merge_file_uH42oJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test
@@ -805,53 +674,10 @@ dd(DB::getQueryLog());
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
-<<<<<<< .merge_file_jvQYOW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uH42oJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale
 
 ---
 
-<<<<<<< .merge_file_jvQYOW
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> .merge_file_uH42oJ
-=======
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

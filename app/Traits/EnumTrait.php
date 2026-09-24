@@ -48,15 +48,7 @@ trait EnumTrait
      */
     public static function getSearchable(): array
     {
-<<<<<<< HEAD
         return array_map(static fn (\BackedEnum $item): string => (string) $item->value, static::cases());
-=======
-        return array_map(fn ($item) => (string) $item->value, static::cases());
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -118,23 +110,8 @@ trait EnumTrait
      * ```
      */
     /**
-<<<<<<< .merge_file_X7OD9V
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Blueprint  $table  The table blueprint
      * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
-=======
-     * @param Blueprint             $table     The table blueprint
-     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
->>>>>>> laraxot/dev
-=======
-     * @param Blueprint             $table     The table blueprint
-     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Blueprint  $table  The table blueprint
-     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
->>>>>>> .merge_file_uuK0xV
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -143,19 +120,7 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-<<<<<<< .merge_file_X7OD9V
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($migration === null || ! $migration->hasColumn($name)) {
-=======
-            if (null === $migration || ! $migration->hasColumn($name)) {
->>>>>>> laraxot/dev
-=======
-            if (null === $migration || ! $migration->hasColumn($name)) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($migration === null || ! $migration->hasColumn($name)) {
->>>>>>> .merge_file_uuK0xV
                 $definition($table); // @phpstan-ignore callable.nonCallable
             }
         }
@@ -184,15 +149,7 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
-<<<<<<< HEAD
         return array_values(array_map(static fn (\BackedEnum $case): string => (string) $case->value, static::cases()));
-=======
-        return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     /**

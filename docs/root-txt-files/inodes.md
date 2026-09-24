@@ -1,17 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
 title: 'Inodes'
 module: Xot
 type: reference
@@ -23,22 +10,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
------------------------------------------------------------
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-title: "Inodes"
-type: reference
-status: active
-created: 2026-08-27
-updated: 2026-08-27
-note: "Convertito da _inodes.txt (documento) da convert-docs-txt-to-md.py."
----
-
 # Inodes
 
 --------------------------------------------------------------
@@ -47,19 +18,6 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 /dev/xvda1      7692288 652294 7039994    9%      /
 
 --------------------------------------------------------------
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3zKid6
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_S1UEla
->>>>>>> laraxot/dev
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------

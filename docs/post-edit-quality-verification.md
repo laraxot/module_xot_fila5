@@ -281,46 +281,7 @@ quality-check:
 ---
 
 **Creato**: 2025-01-29
-<<<<<<< .merge_file_9WrnfW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_BdBdSX
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA
 **Memoria AI**: ID 10479003
-<<<<<<< HEAD
-<<<<<<< .merge_file_9WrnfW
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-**Creato**: [DATE]
-**Tipo**: Regola Quality Gate Obbligatoria
-**Applicazione**: Ogni modifica file
-**Severità**: 🔴 CRITICA
-<<<<<<< HEAD
-**Memoria AI**: ID 10479003
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Memoria AI**: ID 10479003
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_BdBdSX
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

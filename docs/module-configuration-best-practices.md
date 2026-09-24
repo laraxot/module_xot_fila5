@@ -242,33 +242,5 @@ Before committing a config file, verify:
 ---
 
 *Last Updated: 2025-08-27*
-<<<<<<< .merge_file_Jaho0F
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Configuration Standards Version: 2.0*
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Configuration Standards Version: 2.0*
-
-=======
-*
-*Configuration Standards Version: 2.0*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*
-*Configuration Standards Version: 2.0*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Configuration Standards Version: 2.0*
-
->>>>>>> .merge_file_Y3Buiu
-=======
-=======
-*Configuration Standards Version: 2.0*
-
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

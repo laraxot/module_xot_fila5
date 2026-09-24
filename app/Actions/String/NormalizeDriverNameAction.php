@@ -4,29 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
-<<<<<<< .merge_file_pO2K4r
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_wAkWLL
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
-<<<<<<< .merge_file_pO2K4r
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-use function Safe\preg_replace;
-
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_wAkWLL
 /**
  * Action per normalizzare i nomi dei driver.
  *

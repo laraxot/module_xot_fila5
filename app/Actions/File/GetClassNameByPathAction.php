@@ -4,31 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-<<<<<<< .merge_file_wcKAZn
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_RcMYW7
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 
-<<<<<<< .merge_file_wcKAZn
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-use function Safe\file_get_contents;
-use function Safe\preg_match;
-
-use Spatie\QueueableAction\QueueableAction;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_RcMYW7
 class GetClassNameByPathAction
 {
     use QueueableAction;

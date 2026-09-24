@@ -2,26 +2,6 @@
 
 > **Versione**: 1.0
 > **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
-<<<<<<< .merge_file_OOnLdp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_W37THE
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Stato**: ✅ COMPLETATO
 **Causa Radice**: Conflitti Git risolti automaticamente con duplicazioni non rilevate
@@ -289,23 +269,3 @@ done < /tmp/broken_files.txt
 **Status**: ✅ COMPLETATO
 **Filosofia**: "Ogni bug è un maestro. Ogni fix è una lezione."
 **Cronologia**: Vedi [CHANGELOG.md](./CHANGELOG.md)
-<<<<<<< .merge_file_OOnLdp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Cronologia**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Cronologia**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_W37THE
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

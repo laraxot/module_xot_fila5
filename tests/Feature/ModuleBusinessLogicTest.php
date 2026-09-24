@@ -11,39 +11,12 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-<<<<<<< HEAD
 
 beforeEach(function (): void {
-<<<<<<< HEAD
     // markTestSkipped() e' public static su PHPUnit\Framework\Assert: chiamarla via la
     // classe evita di dipendere dal $this tipizzato da Pest come TestCall, che espone
     // solo i metodi custom di XotBaseTestCase come assertDatabaseHasRow() tramite mixin.
     Assert::markTestSkipped('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
-=======
-<<<<<<< HEAD
-    /* @var TestCase $this */
-    $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
->>>>>>> 3792da0d (Check & fix styling)
-=======
-// Laraxot — see module docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-
-beforeEach(function (): void {
-    /* @var TestCase $this */
-    $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 });
 
 describe('Module Business Logic', function (): void {
@@ -58,15 +31,7 @@ describe('Module Business Logic', function (): void {
 
         $module = Module::create($moduleData);
 
-<<<<<<< HEAD
         \Pest\Laravel\assertDatabaseHas('modules', [
-=======
-        $this->assertDatabaseHasRow('modules', [
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             'id' => $module->id,
             'name' => 'TestModule',
             'slug' => 'test-module',
@@ -102,15 +67,7 @@ describe('Module Business Logic', function (): void {
         $freshModule = $module->fresh();
         Assert::assertNotNull($freshModule);
         Assert::assertEquals('2.0.0', $freshModule->version);
-<<<<<<< HEAD
         \Pest\Laravel\assertDatabaseHas('modules', [
-=======
-        $this->assertDatabaseHasRow('modules', [
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             'id' => $module->id,
             'version' => '2.0.0',
         ], 'sushi');
@@ -171,23 +128,8 @@ describe('Module Business Logic', function (): void {
 
         Assert::assertTrue((bool) $enabledModule->enabled);
         Assert::assertFalse((bool) $disabledModule->enabled);
-<<<<<<< .merge_file_rOcozx
-<<<<<<< HEAD
-<<<<<<< HEAD
         Assert::assertTrue($enabledModule->enabled === true);
         Assert::assertTrue($disabledModule->enabled === false);
-=======
-        Assert::assertTrue(true === $enabledModule->enabled);
-        Assert::assertTrue(false === $disabledModule->enabled);
->>>>>>> laraxot/dev
-=======
-        Assert::assertTrue(true === $enabledModule->enabled);
-        Assert::assertTrue(false === $disabledModule->enabled);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        Assert::assertTrue($enabledModule->enabled === true);
-        Assert::assertTrue($disabledModule->enabled === false);
->>>>>>> .merge_file_WwQ0t2
     });
 
     test('can manage module metadata', function (): void {
@@ -218,15 +160,7 @@ describe('Module Business Logic', function (): void {
             $module = ModuleFactory::new()->createOne(['version' => $version]);
 
             Assert::assertEquals($version, $module->version);
-<<<<<<< HEAD
             \Pest\Laravel\assertDatabaseHas('modules', [
-=======
-            $this->assertDatabaseHasRow('modules', [
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 'id' => $module->id,
                 'version' => $version,
             ], 'sushi');
@@ -242,15 +176,7 @@ describe('Module Business Logic', function (): void {
         $moduleInstalledAt = $module->installation_date;
 
         Assert::assertEquals($installationDate, $moduleInstalledAt);
-<<<<<<< HEAD
         \Pest\Laravel\assertDatabaseHas('modules', [
-=======
-        $this->assertDatabaseHasRow('modules', [
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             'id' => $module->id,
             'installation_date' => $installationDate,
         ], 'sushi');
