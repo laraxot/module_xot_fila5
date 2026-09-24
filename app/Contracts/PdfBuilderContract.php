@@ -13,11 +13,11 @@ interface PdfBuilderContract
     public function download(): self;
 
     /**
-<<<<<<< HEAD
-     * @param  \Closure(object): void  $callback
-=======
-     * <<<<<<< .merge_file_3IrfSn.
+     * <<<<<<< HEAD.
      *
+     * @param \Closure(object): void $callback
+     *                                         =======
+     *                                         <<<<<<< .merge_file_3IrfSn.
      * @param \Closure(object): void $callback
      *                                         =======
      *                                         <<<<<<< HEAD
@@ -38,7 +38,7 @@ interface PdfBuilderContract
      * @param \Closure(object): void $callback
      *                                         >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                         >>>>>>> .merge_file_h9wiY0
->>>>>>> laraxot/dev
+     *                                         >>>>>>> laraxot/dev
      */
     public function withBrowsershot(\Closure $callback): self;
 

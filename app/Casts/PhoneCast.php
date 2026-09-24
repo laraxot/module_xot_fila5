@@ -16,17 +16,18 @@ class PhoneCast implements CastsAttributes
     /**
      * Cast the given value.
      *
-<<<<<<< HEAD
-     * @param  Model  $_model  The Eloquent model instance
-     * @param  string  $_key  The attribute key
-     * @param  mixed  $value  The raw value from database
-     * @param  array<string, mixed>  $_attributes  All model attributes
-=======
+     * <<<<<<< HEAD
+     *
      * @param Model                $_model      The Eloquent model instance
      * @param string               $_key        The attribute key
      * @param mixed                $value       The raw value from database
      * @param array<string, mixed> $_attributes All model attributes
->>>>>>> laraxot/dev
+     *                                          =======
+     * @param Model                $_model      The Eloquent model instance
+     * @param string               $_key        The attribute key
+     * @param mixed                $value       The raw value from database
+     * @param array<string, mixed> $_attributes All model attributes
+     *                                          >>>>>>> laraxot/dev
      */
     public function get(Model $_model, string $_key, mixed $value, array $_attributes): PhoneValueObject
     {
@@ -40,17 +41,18 @@ class PhoneCast implements CastsAttributes
     /**
      * Prepare the given value for storage.
      *
-<<<<<<< HEAD
-     * @param  Model  $_model  The Eloquent model instance
-     * @param  string  $_key  The attribute key
-     * @param  mixed  $value  The value to be stored
-     * @param  array<string, mixed>  $_attributes  All model attributes
-=======
+     * <<<<<<< HEAD
+     *
      * @param Model                $_model      The Eloquent model instance
      * @param string               $_key        The attribute key
      * @param mixed                $value       The value to be stored
      * @param array<string, mixed> $_attributes All model attributes
->>>>>>> laraxot/dev
+     *                                          =======
+     * @param Model                $_model      The Eloquent model instance
+     * @param string               $_key        The attribute key
+     * @param mixed                $value       The value to be stored
+     * @param array<string, mixed> $_attributes All model attributes
+     *                                          >>>>>>> laraxot/dev
      */
     public function set(Model $_model, string $_key, mixed $value, array $_attributes): string
     {

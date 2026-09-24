@@ -20,12 +20,14 @@ class BuildTrendCollectionAction
     /**
      * @template TModel of Model
      *
-<<<<<<< HEAD
-     * @param  Builder<TModel>  $query
-=======
+     * <<<<<<< HEAD
+     *
+     * @param Builder<TModel> $query
+     *                               =======
      * @param Builder<TModel> $query
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return Collection<int, TrendData>
      */
     public function execute(

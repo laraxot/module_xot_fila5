@@ -25,12 +25,14 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
-<<<<<<< HEAD
-     * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
-=======
+     * <<<<<<< HEAD
+     *
+     * @param Field|Component $component Il componente a cui applicare l'etichetta
+     *                                   =======
      * @param Field|Component $component Il componente a cui applicare l'etichetta
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -101,12 +103,14 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
-<<<<<<< HEAD
-     * @param  Field|Component  $component  Il componente di cui ottenere il nome
-=======
+     * <<<<<<< HEAD
+     *
+     * @param Field|Component $component Il componente di cui ottenere il nome
+     *                                   =======
      * @param Field|Component $component Il componente di cui ottenere il nome
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string

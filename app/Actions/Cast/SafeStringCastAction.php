@@ -16,15 +16,15 @@ class SafeStringCastAction
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
-<<<<<<< HEAD
-     * @param  mixed  $value  Il valore da convertire
-=======
-     * <<<<<<< .merge_file_wEm3Js
-     * =======
      * <<<<<<< HEAD
-     * <<<<<<< .merge_file_O8nWNS
-     * >>>>>>> .merge_file_dmjXLI
      *
+     * @param mixed $value Il valore da convertire
+     *                     =======
+     *                     <<<<<<< .merge_file_wEm3Js
+     *                     =======
+     *                     <<<<<<< HEAD
+     *                     <<<<<<< .merge_file_O8nWNS
+     *                     >>>>>>> .merge_file_dmjXLI
      * @param mixed $value Il valore da convertire
      *
      * <<<<<<< .merge_file_wEm3Js
@@ -35,7 +35,8 @@ class SafeStringCastAction
      *
      * >>>>>>> .merge_file_dmjXLI
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return string Il valore convertito in string
      */
     public function execute(mixed $value): string
@@ -68,15 +69,15 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
-<<<<<<< HEAD
-     * @param  mixed  $value  Il valore da convertire
-=======
-     * <<<<<<< .merge_file_wEm3Js
-     * =======
      * <<<<<<< HEAD
-     * <<<<<<< .merge_file_O8nWNS
-     * >>>>>>> .merge_file_dmjXLI
      *
+     * @param mixed $value Il valore da convertire
+     *                     =======
+     *                     <<<<<<< .merge_file_wEm3Js
+     *                     =======
+     *                     <<<<<<< HEAD
+     *                     <<<<<<< .merge_file_O8nWNS
+     *                     >>>>>>> .merge_file_dmjXLI
      * @param mixed $value Il valore da convertire
      *
      * <<<<<<< .merge_file_wEm3Js
@@ -87,7 +88,8 @@ class SafeStringCastAction
      *
      * >>>>>>> .merge_file_dmjXLI
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return string Il valore convertito in string
      */
     public static function cast(mixed $value): string
