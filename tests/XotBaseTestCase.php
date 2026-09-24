@@ -23,8 +23,6 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
-use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 use Safe\Exceptions\FilesystemException;
 
 /**
@@ -34,20 +32,13 @@ use Safe\Exceptions\FilesystemException;
  * DatabaseTransactions belongs in each module TestCase when that module needs transactional isolation.
  *
  * @property object|null $action
- * @property Model|null  $model
+ * @property Model|null $model
  * @property object|null $service
  * @property object|null $widget
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
- * @property Model|null  $testModel
- * @property object|null $extraClass
- * @property Model|null  $baseModel
- * @property string|null $testDir
- * @property string|null $workDir
- * @property mixed       $saved
- * @property mixed       $extra_attributes
  * @property Model|null $testModel
  * @property object|null $extraClass
  * @property Model|null $baseModel
@@ -114,8 +105,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-     * @param class-string<T> $class
-     *
+     * @param  class-string<T>  $class
      * @return MockObject&T
      */
     public function createUnitMock(string $class): MockObject
@@ -126,9 +116,8 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(MockInterface&T): void)|null  $callback
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -137,30 +126,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         $mock = $this->mock($abstract, $callback);
 
         return $mock;
-    }
-
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsOnce(): InvokedCount
-    {
-        return $this->once();
-    }
-
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsExactly(int $count): InvokedCount
-    {
-        return $this->exactly($count);
-    }
-
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsAtLeastOnce(): InvokedAtLeastOnce
-    {
-        return $this->atLeastOnce();
     }
 
     public function skipTest(string $message = ''): never
@@ -174,7 +139,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if (null !== $message) {
+        if ($message !== null) {
             $this->expectExceptionMessageIsOrContains($message);
         }
     }
@@ -200,7 +165,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
-                    new ArrayLoader(),
+                    new ArrayLoader,
                     'en'
                 );
             });
@@ -251,7 +216,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         /** @var Factory<Model&UserContract> $factory */
         $factory = UserFactory::new();
         /** @var UserContract $user */
-        $user = $factory->createOne($attributes);
+        $user = $factory->create($attributes);
 
         return $user;
     }
@@ -294,7 +259,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         $configured = config('xot.testing.sqlite_file');
 
-        if (is_string($configured) && '' !== $configured) {
+        if (is_string($configured) && $configured !== '') {
             return database_path($configured);
         }
 
@@ -302,12 +267,6 @@ abstract class XotBaseTestCase extends BaseTestCase
             /** @var list<string> $found */
             $found = \Safe\glob(database_path('*.sqlite'));
         } catch (FilesystemException) {
-            $found = [];
-        }
-
-        if (count($found) === 1) {
-        if (1 === count($found)) {
-        } catch (\Safe\Exceptions\FilesystemException) {
             $found = [];
         }
 
@@ -329,7 +288,7 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     protected function prepareSharedSqliteForTesting(): void
     {
-        if (null === $this->app) {
+        if ($this->app === null) {
             $this->refreshApplication();
         }
 
@@ -340,7 +299,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         // XotBaseMigration::resolveConnectionName(), altrimenti ogni insert su users
         // fallisce con "No database selected" sulle macchine senza il DB dedicato.
         $userDatabase = config('database.connections.user.database');
-        if (! is_string($userDatabase) || '' === $userDatabase) {
+        if (! is_string($userDatabase) || $userDatabase === '') {
             $this->app['config']->set('database.connections.user', [
                 'driver' => 'sqlite',
                 'database' => $database,
@@ -356,7 +315,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -369,7 +328,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             DB::purge($connection);
         }
 
-        if ([] === $sqliteConnections) {
+        if ($sqliteConnections === []) {
             return;
         }
 
@@ -393,16 +352,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         }
 
         $connectionsProperty->setValue($database, $resolved);
-    }
-
-    /**
-     * Legacy alias kept for module TestCases that still call the old name.
-     *
-     * @deprecated use {@see prepareSharedSqliteForTesting()}
-     */
-    protected function prepareSharedFixcitySqliteForTesting(): void
-    {
-        $this->prepareSharedSqliteForTesting();
     }
 
     public function bindInstance(string $abstract, object $instance): void

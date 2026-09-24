@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
@@ -46,13 +44,11 @@ class LogResource extends XotBaseResource
         ];
     }
 
-    #[\Override]
     public static function getRelations(): array
     {
         return [];
     }
 
-    #[\Override]
     public static function getPages(): array
     {
         return [

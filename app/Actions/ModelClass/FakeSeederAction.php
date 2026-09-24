@@ -22,9 +22,6 @@ class FakeSeederAction
     /**
      * Execute the fake data seeding process.
      *
-     *
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
      * @param  class-string<Model>  $modelClass  The fully qualified model class name
      * @param  int<1, max>  $qty  Number of records to generate
      *
@@ -64,13 +61,6 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-     *
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     *
-     * @throws \RuntimeException
      * @param  class-string<Model>  $modelClass
      * @return Factory<Model>
      * @return Factory<Model>
@@ -92,9 +82,6 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $count
      */
@@ -110,9 +97,6 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $qty
      */
