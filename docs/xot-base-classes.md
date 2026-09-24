@@ -22,9 +22,12 @@ The Xot base classes provide a centralized way to customize and extend functiona
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
       public function getFormSchema(): array
 =======
       public function getFormSchema(): array
@@ -34,6 +37,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
       public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
       public static function getFormSchema(): array
@@ -41,6 +45,11 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
       public function getFormSchema(): array
 >>>>>>> .merge_file_euxhPq
+=======
+=======
+      public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -81,6 +90,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
 <<<<<<< .merge_file_ux3q1l
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Extension Pattern](filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](filament_extension_pattern_analysis.md)
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
@@ -101,6 +111,16 @@ The Xot base classes provide a centralized way to customize and extend functiona
 - [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_euxhPq
+=======
+>>>>>>> laraxot/dev
+=======
+- [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
+- [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
+- [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
+- [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

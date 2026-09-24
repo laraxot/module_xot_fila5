@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_poY8in
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_9esu89
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,11 +14,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FObzOu
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZxjAIu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview
@@ -267,10 +276,14 @@ try {
     Log::error('Service failure', [
         'service' => get_class($service),
         'error' => $e->getMessage(),
+<<<<<<< HEAD
 <<<<<<< .merge_file_poY8in
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_9esu89
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -521,21 +534,30 @@ try {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FObzOu
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZxjAIu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ]);
     throw $e;
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_poY8in
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_9esu89
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -543,11 +565,16 @@ try {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FObzOu
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ZxjAIu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### Step 4: Implement Audit Trail
 ```php
 // Create audit records for important events
@@ -838,6 +865,7 @@ Excessive logging is a performance killer that provides little value. By followi
 **Estimated Impact**: 10-15% performance improvement
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Remember**: If everything is working correctly, there should be NO log output.
 <<<<<<< HEAD
 =======
@@ -845,6 +873,7 @@ Excessive logging is a performance killer that provides little value. By followi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Remember**: If everything is working correctly, there should be NO log output.
@@ -852,3 +881,8 @@ Excessive logging is a performance killer that provides little value. By followi
 =======
 **Remember**: If everything is working correctly, there should be NO log output.
 >>>>>>> .merge_file_ZxjAIu
+=======
+=======
+**Remember**: If everything is working correctly, there should be NO log output.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

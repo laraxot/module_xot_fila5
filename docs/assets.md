@@ -257,10 +257,12 @@ document.addEventListener('alpine:init', () => {
 * [assets.md](../../../../Themes/One/docs/assets.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [assets.md](../../../../Themes/One/docs/assets.md)
 =======
 * [assets.md](../../../../Themes/One/docs/assets.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [assets.md](../../../../Themes/One/docs/assets.md)
@@ -268,3 +270,8 @@ document.addEventListener('alpine:init', () => {
 =======
 * [assets.md](../../../../Themes/One/docs/assets.md)
 >>>>>>> .merge_file_MYYQ5c
+=======
+=======
+* [assets.md](../../../../Themes/One/docs/assets.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

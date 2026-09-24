@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_I7bHjD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_QJ6jXB
+=======
+>>>>>>> da9ae01a0 (.)
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.
@@ -23,11 +26,16 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_QJ6jXB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
@@ -174,11 +182,14 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< .merge_file_I7bHjD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_QJ6jXB
+=======
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -332,8 +343,13 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_QJ6jXB
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

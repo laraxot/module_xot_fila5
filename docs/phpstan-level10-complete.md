@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Xot Module - PHPStan Level 10 Analysis
 
@@ -6,6 +7,8 @@
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 # Xot Module - PHPStan Level 10 Analysis (January 2026)
 
 ## 📊 Current Status
@@ -45,9 +48,12 @@ bootstrapFiles:
 **Files Modified**:
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [phpstan.neon](../../../phpstan.neon)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -70,9 +76,12 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 **Files Modified**:
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [PassportHasApiTokensContract.php](../../../app/Contracts/PassportHasApiTokensContract.php)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 **Rationale**: Both `Token` and `TransientToken` implement `ScopeAuthorizable`, so using the interface provides better compatibility and follows Liskov Substitution Principle.
 
@@ -95,9 +104,12 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 **Files Modified**:
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [BaseUser.php](../../../User/app/Models/BaseUser.php)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -110,9 +122,12 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 **Files Modified**:
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [phpstan.neon](../../../phpstan.neon)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -120,9 +135,12 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 ### Previous State (January 2025 Roadmap)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### Previous State
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 - **242 errors** in 63 files
 - Major issues with:
   - `argument.type`: 127 errors (52.5%)
@@ -131,9 +149,12 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 ### Current State (January 2026)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### Current State
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 - **0 errors** ✅
 - All type safety issues resolved
 - Full Passport 13.4+ compatibility
@@ -163,20 +184,26 @@ These fixes impact **ALL modules** that depend on Xot:
 - [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
 - [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Passport Integration Guide](../../../user/docs/passport.md)
 - [Passport Configuration](../../../tenant/docs/it/config/passport.md)
 - [Previous PHPStan Roadmap](./phpstan-errors-resolution-roadmap.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## ✅ Verification
 
 ```bash
 cd /var/www/_bases/base_ptvx_fila4_mono/laravel
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 cd ../../..
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 ./vendor/bin/phpstan analyse Modules/Xot --level=10
 
 # Output:
@@ -195,6 +222,7 @@ cd ../../..
 **Status**: ✅ **COMPLETE - 0 ERRORS**  
 **Last Updated**: 2026-01-13  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan Level**: 10  
 **Compliance**: 100%
 =======
@@ -202,3 +230,7 @@ cd ../../..
 **PHPStan Level**: 10  
 **Compliance**: 100%
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**PHPStan Level**: 10  
+**Compliance**: 100%
+>>>>>>> da9ae01a0 (.)

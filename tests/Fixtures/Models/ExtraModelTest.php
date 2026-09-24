@@ -16,7 +16,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
  * @property mixed $extra_attributes
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  */
 class ExtraModelTest extends Model implements ExtraContract
 {
@@ -35,7 +39,11 @@ class ExtraModelTest extends Model implements ExtraContract
             'extra_attributes' => SchemalessAttributes::class,
 =======
             'extra_attributes' => 'collection',
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ];
     }
 

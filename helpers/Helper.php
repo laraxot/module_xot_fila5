@@ -4,7 +4,11 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -59,7 +63,11 @@ if (! function_exists('dddx')) {
 <<<<<<< HEAD
     /** @param mixed $params Qualunque valore da dumpare (debug helper) */
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
@@ -315,6 +323,7 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_voglaK
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -326,12 +335,26 @@ if (! function_exists('post')) {
      */
     function post(string $uri, array $data = [], array $options = []): TestResponse
 =======
+=======
+<<<<<<< HEAD
+     * @param array<string, mixed> $data
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @param array<string, mixed> $options
      *
      * @return TestResponse<Response>
      */
+<<<<<<< HEAD
     function post(string $uri, mixed $data = [], array $options = []): TestResponse
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+    function post(string $uri, array $data = [], array $options = []): TestResponse
+=======
+    function post(string $uri, mixed $data = [], array $options = []): TestResponse
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -339,12 +362,18 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_voglaK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_MFrMwp
      * @param  array<string, mixed>  $data
+=======
+<<<<<<< HEAD
+     * @param array<string, mixed> $data
+     *
+>>>>>>> da9ae01a0 (.)
      * @return TestResponse<Response>
      */
     function put(string $uri, array $data = []): TestResponse
@@ -352,7 +381,11 @@ if (! function_exists('put')) {
      * @return TestResponse<Response>
      */
     function put(string $uri, mixed $data = []): TestResponse
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -360,12 +393,18 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_voglaK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_MFrMwp
      * @param  array<string, mixed>  $data
+=======
+<<<<<<< HEAD
+     * @param array<string, mixed> $data
+     *
+>>>>>>> da9ae01a0 (.)
      * @return TestResponse<Response>
      */
     function patch(string $uri, array $data = []): TestResponse
@@ -373,7 +412,11 @@ if (! function_exists('patch')) {
      * @return TestResponse<Response>
      */
     function patch(string $uri, mixed $data = []): TestResponse
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -487,6 +530,7 @@ if (! function_exists('xotSeedModelOnce')) {
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 
+<<<<<<< HEAD
 if (! function_exists('merge_translation_files')) {
     /**
      * Merge multiple PHP translation files into a single array.
@@ -506,6 +550,38 @@ if (! function_exists('merge_translation_files')) {
 
         /* @phpstan-ignore return.type */
         return $result;
+=======
+if (! function_exists('require_translation_file')) {
+    /**
+     * @return array<string, mixed>
+     */
+    function require_translation_file(string $path): array
+    {
+        $loaded = require $path;
+        if (! is_array($loaded)) {
+            throw new InvalidArgumentException("Translation file [{$path}] must return array.");
+        }
+
+        /* @var array<string, mixed> $loaded */
+        return $loaded;
+    }
+}
+
+if (! function_exists('merge_translation_files')) {
+    /**
+     * @param non-empty-string ...$paths
+     *
+     * @return array<string, mixed>
+     */
+    function merge_translation_files(string ...$paths): array
+    {
+        $merged = [];
+        foreach ($paths as $path) {
+            $merged = array_merge($merged, require_translation_file($path));
+        }
+
+        return $merged;
+>>>>>>> 930f8146 (Check & fix styling)
     }
 }
 <<<<<<< HEAD

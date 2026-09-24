@@ -1,11 +1,17 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_nppvUl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VreSMc
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -20,11 +26,16 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_SrNGZf
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_avb2Lm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * Guardia a cricchetto sulle collisioni case-insensitive.
  *
@@ -40,17 +51,22 @@ declare(strict_types=1);
  * Bonifica: python3 bashscripts/tools/audit/audit-case-collisions.py --fix-identical
  */
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_nppvUl
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Symfony\Component\Process\Process;
 
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VreSMc
 use Symfony\Component\Process\Process;
 
 =======
 >>>>>>> .merge_file_SrNGZf
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 use Symfony\Component\Process\Process;
@@ -60,24 +76,39 @@ use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Process;
 
 >>>>>>> .merge_file_avb2Lm
+=======
+=======
+use Symfony\Component\Process\Process;
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_nppvUl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VreSMc
 =======
 use Symfony\Component\Process\Process;
 
 >>>>>>> .merge_file_SrNGZf
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_avb2Lm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 function repoRoot(): string
 {
     return \dirname(__DIR__, 5);
@@ -98,12 +129,18 @@ function collisionGroups(): int
     try {
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
+<<<<<<< HEAD
 <<<<<<< .merge_file_nppvUl
 <<<<<<< HEAD
 <<<<<<< HEAD
     } catch (Throwable) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VreSMc
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -119,12 +156,17 @@ function collisionGroups(): int
 =======
     } catch (Throwable) {
 >>>>>>> .merge_file_SrNGZf
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
     } catch (Throwable) {
 >>>>>>> .merge_file_avb2Lm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return -1;
     }
 

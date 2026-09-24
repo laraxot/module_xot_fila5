@@ -32,7 +32,11 @@ TenantService.php
   → usa inAdmin()
   → usa getModuleModels()
     ↓
+<<<<<<< HEAD
 Xot/Helpers/Helper.php
+=======
+Xot/helpers/Helper.php
+>>>>>>> 930f8146 (Check & fix styling)
   → DOVREBBE definire queste funzioni
   → MA erano mancanti!
 ```
@@ -48,7 +52,11 @@ Xot/Helpers/Helper.php
 5. **TenantService** usa `inAdmin()` nel metodo `config()`
 6. **CRASH**: Funzione non esiste
 
+<<<<<<< HEAD
 **Causa Root**: Le funzioni helper `inAdmin()` e `getModuleModels()` non erano definite in `Xot/Helpers/Helper.php`.
+=======
+**Causa Root**: Le funzioni helper `inAdmin()` e `getModuleModels()` non erano definite in `Xot/helpers/Helper.php`.
+>>>>>>> 930f8146 (Check & fix styling)
 
 ## 🎯 Business Logic delle Funzioni
 
@@ -119,7 +127,11 @@ function getModuleModels(string $moduleName): array
 
 ### 1. Aggiunte Funzioni Helper
 
+<<<<<<< HEAD
 **File**: `Modules/Xot/Helpers/Helper.php`
+=======
+**File**: `Modules/Xot/helpers/Helper.php`
+>>>>>>> 930f8146 (Check & fix styling)
 
 ```php
 /**
@@ -342,7 +354,11 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 
 ### File Aggiornati
 
+<<<<<<< HEAD
 1. ✅ `Modules/Xot/Helpers/Helper.php`
+=======
+1. ✅ `Modules/Xot/helpers/Helper.php`
+>>>>>>> 930f8146 (Check & fix styling)
    - Aggiunte funzioni `inAdmin()` e `getModuleModels()`
    - Type hints completi per PHPStan Level 10
    - PHPDoc dettagliato
@@ -363,15 +379,21 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_MkyO0L
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 
@@ -381,7 +403,11 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [x] Studiato wikimedia/composer-merge-plugin
 - [x] Compreso business logic di inAdmin()
 - [x] Compreso business logic di getModuleModels()
+<<<<<<< HEAD
 - [x] Implementate funzioni in Xot/Helpers/Helper.php
+=======
+- [x] Implementate funzioni in Xot/helpers/Helper.php
+>>>>>>> 930f8146 (Check & fix styling)
 - [x] Creato file traduzione metatag.php EN
 - [x] Documentato architettura in Xot/docs/
 - [x] Documentato dipendenze in Tenant/docs/
@@ -444,7 +470,11 @@ Questo fix segue la regola **"Git - Mai Tornare Indietro"**:
 fix: aggiunte helper functions inAdmin() e getModuleModels()
 
 Problema: composer dump-autoload falliva con "undefined function inAdmin()"
+<<<<<<< HEAD
 Causa: funzioni helper mancanti in Xot/Helpers/Helper.php
+=======
+Causa: funzioni helper mancanti in Xot/helpers/Helper.php
+>>>>>>> 930f8146 (Check & fix styling)
 Fix: aggiunte entrambe le funzioni come wrapper per Services/Actions
 Test: composer dump-autoload completa con successo
 Docs: aggiornata documentazione Xot e Tenant
@@ -495,10 +525,12 @@ $models = $action->execute($moduleName);
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 =======
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
@@ -506,3 +538,8 @@ $models = $action->execute($moduleName);
 =======
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 >>>>>>> .merge_file_MkyO0L
+=======
+=======
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

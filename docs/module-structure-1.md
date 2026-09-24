@@ -37,22 +37,34 @@ ModuleName/
 <<<<<<< .merge_file_roOrbh
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_wgCYpp
+=======
+>>>>>>> da9ae01a0 (.)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
 - [Namespace Rules](namespace-rules.md) - Regole per i namespace
+=======
+- [README](../README.md) - Panoramica del modulo Xot
+- [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
+- [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
+- [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
+>>>>>>> 930f8146 (Check & fix styling)
 
 ### Moduli Collegati
 - [UI](../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../Lang/docs/README.md) - Traduzioni
 - [User](../User/docs/README.md) - Gestione utenti
+<<<<<<< HEAD
 <<<<<<< .merge_file_roOrbh
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -70,11 +82,16 @@ ModuleName/
 - [User](../user/docs/readme.md) - Gestione utenti
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wgCYpp
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Struttura Dettagliata
 
@@ -237,9 +254,13 @@ User/
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_wgCYpp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -305,7 +326,10 @@ User/
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
 - [Visualizzazione](../Chart/docs/visualization.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_roOrbh
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -378,11 +402,16 @@ User/
 - [Visualizzazione](../chart/docs/visualization.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_wgCYpp
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 # Struttura dei Moduli Laravel
 
@@ -531,10 +560,12 @@ Se trovi una directory con case errato:
 * [module_structure.md](../../../../docs/error_analysis/module_structure.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [module_structure.md](../../../../docs/error_analysis/module_structure.md)
 =======
 * [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
@@ -542,3 +573,8 @@ Se trovi una directory con case errato:
 =======
 * [module_structure.md](../../../../docs/error_analysis/module_structure.md)
 >>>>>>> .merge_file_wgCYpp
+=======
+=======
+* [module_structure.md](../../../../docs/error_analysis/module_structure.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

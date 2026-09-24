@@ -7,6 +7,7 @@
 <<<<<<< .merge_file_iZ2NTY
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -19,11 +20,16 @@
 2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-[DATE].md`**
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8JrMb3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
@@ -40,15 +46,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8JrMb3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -106,12 +118,14 @@
 - `translation-errors-correction-2025.md` (verificare duplicati)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction-2025.md` (verificare duplicati)
 =======
 - `riepilogo-correzioni-traduzioni.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction.md` (verificare duplicati)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - `riepilogo-correzioni-traduzioni.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
@@ -121,6 +135,12 @@
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction-2025.md` (verificare duplicati)
 >>>>>>> .merge_file_8JrMb3
+=======
+=======
+- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
+- `translation-errors-correction-2025.md` (verificare duplicati)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Modulo Xot
 - File in cartella `archive/` (valutare se mantenere date per storico)
@@ -166,6 +186,7 @@
 <<<<<<< .merge_file_iZ2NTY
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 =======
@@ -188,9 +209,16 @@
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 <<<<<<< .merge_file_iZ2NTY
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_8JrMb3
+=======
+=======
+**Stato**: In corso
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

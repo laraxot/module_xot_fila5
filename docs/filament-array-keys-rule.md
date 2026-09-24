@@ -40,11 +40,14 @@ public function getTableActions(): array
 <<<<<<< .merge_file_tCqyeQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_vZyeHf
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -55,12 +58,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vZyeHf
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -91,11 +100,14 @@ public function getTableActions(): array
 <<<<<<< .merge_file_tCqyeQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_vZyeHf
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -106,12 +118,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vZyeHf
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -172,11 +190,14 @@ class UserResource extends XotBaseResource
 <<<<<<< .merge_file_tCqyeQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_vZyeHf
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -187,12 +208,18 @@ class UserResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vZyeHf
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             'name_field' => TextInput::make('name'),
@@ -307,10 +334,12 @@ Prima di commit:
 *Ultimo aggiornamento: 2025-01-10*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
 =======
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 2025-01-10*
@@ -318,3 +347,8 @@ Prima di commit:
 =======
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> .merge_file_vZyeHf
+=======
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

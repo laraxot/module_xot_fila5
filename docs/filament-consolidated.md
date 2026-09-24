@@ -51,11 +51,14 @@ class PatientResource extends XotBaseResource
 <<<<<<< .merge_file_PjTSWR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Vsp0sX
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -66,12 +69,18 @@ class PatientResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Vsp0sX
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name')

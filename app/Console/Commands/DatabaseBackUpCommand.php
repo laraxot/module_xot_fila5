@@ -4,7 +4,11 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/paulvl/backup/blob/master/src/Console/Commands/MysqlDump.php
  */
@@ -55,22 +59,31 @@ class DatabaseBackUpCommand extends Command
     protected $description = 'Dump your Mysql database to a file';
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_MaaXY2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
      * Create a new command instance.
      */
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_oiVjn4
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * Execute the console command.
      */
     public function handle(): void

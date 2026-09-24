@@ -34,12 +34,14 @@ Matrice operativa per decidere la base policy per modulo, mantenendo DRY + KISS.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -48,6 +50,10 @@ Matrice operativa per decidere la base policy per modulo, mantenendo DRY + KISS.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_iGyBkU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Inventario quantitativo (2026-06-30)
 
 Comando: `bash bashscripts/tools/audit-policy-inventory.sh`
@@ -66,6 +72,7 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -73,6 +80,7 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 64619e34 (.)
@@ -81,6 +89,10 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_iGyBkU
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Note pratiche
 
 - i base policy locali di modulo sono utili, ma dovrebbero derivare da una linea guida esplicita (Xot-first o User-first)
@@ -89,6 +101,7 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 <<<<<<< .merge_file_C89Urc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
@@ -110,6 +123,7 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -118,6 +132,11 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 >>>>>>> .merge_file_iGyBkU
+=======
+=======
+- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Miglioramenti consigliati
 

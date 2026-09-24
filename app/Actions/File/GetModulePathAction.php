@@ -80,7 +80,11 @@ class GetModulePathAction
                     return false;
                 }
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 return Str::lower($item) === $moduleNameLower;
             })->first();
 
@@ -89,7 +93,11 @@ class GetModulePathAction
             if (! is_string($foundModule)) {
 =======
             if (null === $foundModule || ! is_string($foundModule)) {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 return base_path('Modules/'.$moduleName);
             }
 

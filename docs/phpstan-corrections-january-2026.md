@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Corrections"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-corrections.md](./phpstan-corrections.md)
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Corrections - Gennaio 2026
 
 **Data**: 2026-01-22  
@@ -152,4 +155,7 @@ Vedi il file canonico: [phpstan-corrections.md](./phpstan-corrections.md)
 - [Filament Class Extension Rules](../filament-class-extension-rules.md)
 
 *Ultimo aggiornamento: 2026-01-22*
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)

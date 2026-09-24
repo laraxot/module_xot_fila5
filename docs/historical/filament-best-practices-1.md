@@ -17,7 +17,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
+<<<<<<< HEAD
 <<<<<<< .merge_file_rr88mc
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_nipalq
    public function getFormSchema(): array
@@ -29,11 +32,16 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> .merge_file_ykwmgc
 >>>>>>> .merge_file_lGAGRT
 =======
+<<<<<<< HEAD
    public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
    public static function getFormSchema(): array
 >>>>>>> .merge_file_TxkIUD
+=======
+   public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    {
        return [
            TextInput::make('nome')->required(),
@@ -435,7 +443,10 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
 <<<<<<< .merge_file_rr88mc
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_nipalq
     public function getFormSchema(): array
@@ -447,11 +458,16 @@ class ReportResource extends XotBaseResource
 >>>>>>> .merge_file_ykwmgc
 >>>>>>> .merge_file_lGAGRT
 =======
+<<<<<<< HEAD
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_TxkIUD
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider

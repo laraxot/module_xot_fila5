@@ -818,14 +818,21 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_9X786p
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_gwayEj
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -844,11 +851,16 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9X786p
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
@@ -864,6 +876,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 <<<<<<< .merge_file_gwayEj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 =======
 >>>>>>> .merge_file_9X786p
@@ -875,6 +888,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
@@ -882,6 +896,12 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9X786p
+=======
+=======
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
@@ -889,10 +909,22 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 <<<<<<< .merge_file_gwayEj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 >>>>>>> .merge_file_9X786p
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
@@ -919,6 +951,9 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9X786p
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
@@ -930,6 +965,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 <<<<<<< .merge_file_gwayEj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -945,11 +981,16 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9X786p
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
@@ -965,6 +1006,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 <<<<<<< .merge_file_gwayEj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -979,11 +1021,16 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9X786p
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Stato**: ✅ Pattern Documentato e Implementato
 **Responsabile**: Team Architettura Laraxot
 **Responsabile**: Team Architettura Laraxot
@@ -1379,10 +1426,12 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
@@ -1390,6 +1439,10 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_9X786p
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 
 ---
@@ -1402,10 +1455,12 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 **Responsabile**: Team Architettura Laraxot
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Responsabile**: Team Architettura Laraxot
 =======
 **Responsabile**: Team Architettura Laraxot
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Responsabile**: Team Architettura Laraxot
@@ -1413,3 +1468,8 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 =======
 **Responsabile**: Team Architettura Laraxot
 >>>>>>> .merge_file_9X786p
+=======
+=======
+**Responsabile**: Team Architettura Laraxot
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

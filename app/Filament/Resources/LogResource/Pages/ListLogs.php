@@ -32,6 +32,12 @@ class ListLogs extends XotBaseListRecords
 {
     protected static string $resource = LogResource::class;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
+>>>>>>> 930f8146 (Check & fix styling)
     #[\Override]
 <<<<<<< .merge_file_7S17op
 <<<<<<< HEAD
@@ -66,6 +72,12 @@ class ListLogs extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, \Filament\Tables\Filters\BaseFilter>
+     */
+>>>>>>> 930f8146 (Check & fix styling)
     #[\Override]
 <<<<<<< HEAD
 >>>>>>> laraxot/dev

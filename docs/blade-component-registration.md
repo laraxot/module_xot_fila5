@@ -122,6 +122,7 @@ class MyComponent extends Component
 - [filament-best-practices.md](filament-best-practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseServiceProvider](xotbaseserviceprovider.md)
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
@@ -130,14 +131,21 @@ class MyComponent extends Component
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [XotBaseServiceProvider](XotBaseServiceProvider.md)
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [XotBaseServiceProvider](xotbaseserviceprovider.md)
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
 >>>>>>> .merge_file_wj5Y8E
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

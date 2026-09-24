@@ -15,10 +15,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
@@ -26,6 +28,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> .merge_file_iWMOPX
+=======
+=======
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Validazione dei Collegamenti
 
@@ -112,10 +119,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
@@ -123,6 +132,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> .merge_file_iWMOPX
+=======
+=======
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Validazione dei Collegamenti
 
@@ -210,10 +224,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
@@ -221,6 +237,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> .merge_file_iWMOPX
+=======
+=======
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Validazione dei Collegamenti
 

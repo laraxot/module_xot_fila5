@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3I75kJ
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Gestione Best Practice per File di Configurazione PHP basati su Array
 
 I file di configurazione e traduzione in PHP che restituiscono array sono comuni in Laravel e nei moduli PTVX. Per garantire stabilità e manutenibilità, è cruciale seguire alcune best practice.
@@ -15,6 +19,7 @@ I file di configurazione e traduzione in PHP che restituiscono array sono comuni
 1.  **Correttezza Sintattica**:
     -   Assicurarsi che tutte le parentesi `()` e `[]` siano correttamente bilanciate.
     -   Verificare che le virgole `,` siano usate correttamente per separare gli elementi degli array.
+<<<<<<< HEAD
 <<<<<<< .merge_file_ocCgTF
 <<<<<<< HEAD
 =======
@@ -25,6 +30,13 @@ I file di configurazione e traduzione in PHP che restituiscono array sono comuni
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3I75kJ
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     -   Le "trailing commas" (virgole dopo l'ultimo elemento) sono permesse in PHP >= 7.3 e possono migliorare la manutenibilità (facilitano l'aggiunta di nuovi elementi e riducono i diff). Tuttavia, in caso di errori di parsing inspiegabili, la loro rimozione temporanea può aiutare nella diagnosi. Vedi [Caso Specifico di Errore di Parsing in File di Lingua](../../Lang/docs/translation_file_syntax.md).
 
 2.  **Validazione**:
@@ -69,6 +81,7 @@ I file di configurazione e traduzione in PHP che restituiscono array sono comuni
 <<<<<<< .merge_file_ocCgTF
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -83,9 +96,14 @@ canonical: ../../../Themes/docs/shared-components/php-array-configuration-best-p
 <<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/php-array-configuration-best-practices.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/php-array-configuration-best-practices.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_3I75kJ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

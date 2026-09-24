@@ -117,14 +117,21 @@ Modules/UI/
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ST74Qh
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### 1. **Autoloader Predictability**
 - PHP autoloader expects consistent namespace-to-directory mapping
 - Mixed structures create ambiguous class resolution
 - "First found" approach leads to unpredictable test execution
+<<<<<<< HEAD
 <<<<<<< .merge_file_O5HdKS
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -136,11 +143,16 @@ Modules/UI/
 - "First found" approach leads to un<nome progetto>able test execution
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ST74Qh
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### 2. **Test Discovery**
 - Pest and PHPUnit rely on consistent directory structures
@@ -156,10 +168,12 @@ Modules/UI/
 - Code generation tools work predictably
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Code generation tools work predictably
 =======
 - Code generation tools work <nome progetto>ably
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Code generation tools work <nome progetto>ably
@@ -167,6 +181,11 @@ Modules/UI/
 =======
 - Code generation tools work predictably
 >>>>>>> .merge_file_ST74Qh
+=======
+=======
+- Code generation tools work predictably
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### 4. **Module System Compatibility**
 - nwidart/laravel-modules expects traditional structure
@@ -247,10 +266,12 @@ Modules/
 └── Quaeris/
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 └── Quaeris/
 =======
 └── healthcare_app/
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 └── healthcare_app/
@@ -258,6 +279,11 @@ Modules/
 =======
 └── Quaeris/
 >>>>>>> .merge_file_ST74Qh
+=======
+=======
+└── Quaeris/
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ├── tests/
     │   ├── Feature/
     │   └── Unit/
@@ -325,10 +351,12 @@ Modules/UI/tests/Unit/Widgets/
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
 =======
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and <nome progetto>able development workflow. Choose one pattern and apply it consistently across all modules.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and <nome progetto>able development workflow. Choose one pattern and apply it consistently across all modules.
@@ -336,3 +364,8 @@ Modules/UI/tests/Unit/Widgets/
 =======
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
 >>>>>>> .merge_file_ST74Qh
+=======
+=======
+**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

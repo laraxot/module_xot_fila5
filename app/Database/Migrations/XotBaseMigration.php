@@ -13,11 +13,16 @@ use Illuminate\Database\Schema\ForeignIdColumnDefinition;
 <<<<<<< HEAD
 use Illuminate\Support\Collection;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
@@ -37,6 +42,10 @@ use function Safe\copy;
 
 use function Safe\copy;
 
+=======
+use Modules\Xot\Datas\XotData;
+use Nwidart\Modules\Facades\Module;
+>>>>>>> 930f8146 (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
@@ -50,6 +59,10 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseMigration extends LaravelMigration
 {
+<<<<<<< HEAD
+=======
+    use Concerns\XotBaseMigrationUuidConversion;
+>>>>>>> 930f8146 (Check & fix styling)
     protected Model $model;
 
     /** @var class-string<Model>|null */
@@ -176,7 +189,11 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         return Schema::connection($connectionName);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -407,7 +424,11 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function tableUpdate(\Closure $next, ?string $table = null): void
     {
         $tableName = $table ?? $this->getTable();
@@ -426,7 +447,11 @@ abstract class XotBaseMigration extends LaravelMigration
      * @param  mixed  $result  Risultato di Connection::selectOne() (atteso array{count?: mixed}|object|null)
      */
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     protected function extractPrimaryKeyCount(mixed $result): int
     {
         if (is_array($result)) {
@@ -573,6 +598,7 @@ abstract class XotBaseMigration extends LaravelMigration
 =======
      * Get the migration connection name.
      */
+<<<<<<< HEAD
     /**
      * Get the migration connection name.
      */
@@ -580,6 +606,12 @@ abstract class XotBaseMigration extends LaravelMigration
     {
         return $this->model->getConnectionName();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function getConnection(): ?string
+    {
+        return $this->model->getConnectionName();
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -614,6 +646,7 @@ abstract class XotBaseMigration extends LaravelMigration
     {
         return true;
     }
+<<<<<<< HEAD
 
     /**
      * Convert table id from UUID to bigint, adding uuid column.
@@ -887,3 +920,6 @@ abstract class XotBaseMigration extends LaravelMigration
 }
 
 // end XotBaseMigration
+=======
+}
+>>>>>>> 930f8146 (Check & fix styling)

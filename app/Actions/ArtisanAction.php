@@ -13,20 +13,28 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -34,27 +42,39 @@ use Webmozart\Assert\Assert;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 use Spatie\QueueableAction\QueueableAction;
@@ -63,6 +83,10 @@ use Webmozart\Assert\Assert;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 if (! defined('STDIN')) {
     define('STDIN', fopen('php://stdin', 'r'));
 }
@@ -86,11 +110,17 @@ class ArtisanAction
         switch ($act) {
             case 'migrate':
                 $defaultConn = Config::get('database.default');
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -103,10 +133,15 @@ class ArtisanAction
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_boS4oM
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
@@ -116,9 +151,15 @@ class ArtisanAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -203,20 +244,28 @@ class ArtisanAction
             $log = '';
         }
         $content = '';
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
@@ -224,6 +273,10 @@ class ArtisanAction
 =======
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -236,20 +289,28 @@ class ArtisanAction
         /** @var array<int, string> $urls */
         $urls = [];
         $urlsRaw = $matches[1];
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($urlsRaw !== []) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if ($urlsRaw !== []) {
 =======
         if ([] !== $urlsRaw) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if ([] !== $urlsRaw) {
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if ([] !== $urlsRaw) {
@@ -257,6 +318,10 @@ class ArtisanAction
 =======
         if ($urlsRaw !== []) {
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -303,20 +368,28 @@ class ArtisanAction
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
 =======
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
@@ -324,6 +397,10 @@ class ArtisanAction
 =======
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -338,20 +415,28 @@ class ArtisanAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
@@ -359,6 +444,10 @@ class ArtisanAction
 =======
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 File::delete($file->getRealPath());
             }
         }
@@ -370,20 +459,28 @@ class ArtisanAction
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
 =======
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
@@ -391,6 +488,10 @@ class ArtisanAction
 =======
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 File::delete($file->getRealPath());
             }
         }
@@ -399,20 +500,28 @@ class ArtisanAction
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
 =======
      * @param array<string, mixed> $arguments
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param array<string, mixed> $arguments
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param array<string, mixed> $arguments
@@ -420,6 +529,10 @@ class ArtisanAction
 =======
      * @param  array<string, mixed>  $arguments
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -434,12 +547,18 @@ class ArtisanAction
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_aTN9J8
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GlRtSo
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
     public function execute(): void {}
 =======
@@ -447,11 +566,13 @@ class ArtisanAction
     {
     }
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     public function execute(): void
     {
     }
 >>>>>>> .merge_file_boS4oM
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public function execute(): void
@@ -461,4 +582,8 @@ class ArtisanAction
 =======
     public function execute(): void {}
 >>>>>>> .merge_file_k9XNZm
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 }

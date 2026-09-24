@@ -17,6 +17,7 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 ### ✅ healthcare_app Module
+<<<<<<< HEAD
 <<<<<<< .merge_file_9xMavo
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28,6 +29,9 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 =======
 >>>>>>> 7f6cf6be (.)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_AMCMU6
 <<<<<<< HEAD
 ### ✅ ExternalProject Module
@@ -41,12 +45,18 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### ✅ ExternalProject Module
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_pqMDSQ
+=======
+=======
+### ✅ ExternalProject Module
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module
@@ -95,6 +105,7 @@ Files generally have good scores with minor style issues:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 =======
 =======
@@ -110,6 +121,7 @@ Files generally have good scores with minor style issues:
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
@@ -117,3 +129,8 @@ Files generally have good scores with minor style issues:
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> .merge_file_pqMDSQ
+=======
+=======
+**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

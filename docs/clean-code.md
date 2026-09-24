@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_q6HON0
 <<<<<<< HEAD
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
@@ -48,9 +51,15 @@ updated: 2026-08-24
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
 >>>>>>> .merge_file_uBRQ89
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_OgwbTL
+=======
+=======
+https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

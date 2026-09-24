@@ -75,6 +75,7 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 <<<<<<< .merge_file_YyfEHo
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -87,11 +88,16 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 * [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_7Wy0pg
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Xot/docs/algolia-docsearch.md)
@@ -106,10 +112,12 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -117,3 +125,8 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 =======
 ---
 >>>>>>> .merge_file_7Wy0pg
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

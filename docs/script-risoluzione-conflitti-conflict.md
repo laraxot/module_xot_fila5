@@ -1285,10 +1285,12 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 # Verifica conflitti rimanenti
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Verifica conflitti rimanenti
 =======
 # Verifica conflitti rimanenti
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Verifica conflitti rimanenti
@@ -1296,3 +1298,8 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 =======
 # Verifica conflitti rimanenti
 >>>>>>> .merge_file_rDZ6JX
+=======
+=======
+# Verifica conflitti rimanenti
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

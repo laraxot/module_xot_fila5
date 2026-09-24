@@ -85,8 +85,11 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_n8IdV3
 <<<<<<< HEAD
 =======
@@ -103,10 +106,17 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_o2uG5c
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Ripristino 2026-09-17
 
 Scoperto lo stesso giorno del ripristino del bottone Passport "Nuove
@@ -129,9 +139,12 @@ traduzione mancanti. Verificato via reflection su `getHeaderActions()`:
 raggiungibile via `asset()`. PHPStan pulito. Committato questa volta
 nel repository reale del modulo.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_6WkqbT
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
@@ -140,15 +153,19 @@ nel repository reale del modulo.
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_LJlZTI
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LJlZTI
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -156,6 +173,10 @@ nel repository reale del modulo.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o2uG5c
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Tasks/Subtasks
 
 - [x] Task 1: nuova `ExecuteComposerDumpAutoloadAction` (comando fisso,
@@ -166,6 +187,7 @@ nel repository reale del modulo.
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
 <<<<<<< HEAD
@@ -179,7 +201,13 @@ nel repository reale del modulo.
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       `ArtisanCommandsManager.php`, con `requiresConfirmation()`
 - [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
       per il wrap dei pulsanti, registrato in `AdminPanelProvider.php`
@@ -200,10 +228,15 @@ nel repository reale del modulo.
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_o2uG5c
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
       `ArtisanCommandsManager.php`, con `requiresConfirmation()` —
       **ripristinato 2026-09-17**, vedi sopra
 - [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
@@ -236,9 +269,12 @@ svuotata `mail_templates` (40→0 righe, dati sorgente intatti in
 (`survey-pdf-48-invito`) e Vivaservizi (`survey-pdf-44-invito`) tornano
 completi con lo stesso contenuto reale di prima. PHPStan pulito.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_6WkqbT
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
@@ -247,15 +283,19 @@ completi con lo stesso contenuto reale di prima. PHPStan pulito.
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_LJlZTI
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LJlZTI
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -263,6 +303,10 @@ completi con lo stesso contenuto reale di prima. PHPStan pulito.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o2uG5c
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Dev Notes
 
 - Scoperto in questa story: l'account admin non aveva il ruolo

@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_9E9dmI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_FXq9ZD
+=======
+>>>>>>> da9ae01a0 (.)
 title: "Redundancy Audit"
 type: concept
 status: deprecated
@@ -26,8 +29,12 @@ Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: "Xot redundancy audit 2026-05-21"
 type: audit
 module: Xot
@@ -66,8 +73,13 @@ Evidence commands:
 - Case-only path scan using lowercase path map.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_FXq9ZD
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

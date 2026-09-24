@@ -148,10 +148,12 @@ Il comando `GenerateFilamentResources` genera automaticamente resources per tutt
 - [Architettura Laraxot](README.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Architettura Laraxot](README.md)
 =======
 - [Architettura Laraxot](../readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Architettura Laraxot](../readme.md)
@@ -159,6 +161,11 @@ Il comando `GenerateFilamentResources` genera automaticamente resources per tutt
 =======
 - [Architettura Laraxot](README.md)
 >>>>>>> .merge_file_dOV7US
+=======
+=======
+- [Architettura Laraxot](../readme.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Comando GenerateFilamentResources](../../app/Console/Commands/GenerateFilamentResources.php)
 - [Documentazione Filament](https://filamentphp.com/docs)
 
@@ -182,10 +189,12 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 *Ultimo aggiornamento: giugno 2025*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: giugno 2025*
@@ -193,3 +202,8 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> .merge_file_dOV7US
+=======
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

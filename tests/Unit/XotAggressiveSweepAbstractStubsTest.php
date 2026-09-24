@@ -6,22 +6,32 @@ namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
+<<<<<<< HEAD
 use Mockery;
 <<<<<<< .merge_file_bPZTXE
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use Mockery;
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_ceDRBA
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Dj4PFF
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsCheckbox3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsGroup3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsRadio3;
@@ -32,44 +42,61 @@ use Modules\Xot\Tests\Fixtures\Stubs\XotAbsViewColumn3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsWizard3;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 <<<<<<< .merge_file_bPZTXE
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_ceDRBA
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 use ReflectionClass;
 use ReflectionMethod;
 >>>>>>> .merge_file_Dj4PFF
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
 <<<<<<< .merge_file_bPZTXE
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
     Mockery::close();
 =======
     \Mockery::close();
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     \Mockery::close();
 >>>>>>> .merge_file_ceDRBA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     \Mockery::close();
@@ -77,6 +104,10 @@ afterEach(function (): void {
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Dj4PFF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 });
 
 describe('Xot abstract Filament stubs', function (): void {
@@ -97,11 +128,17 @@ describe('Xot abstract Filament stubs', function (): void {
             try {
                 $inst = method_exists($class, 'make')
                     ? $class::make('field')
+<<<<<<< HEAD
 <<<<<<< .merge_file_bPZTXE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_4bNXUU
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -119,11 +156,16 @@ describe('Xot abstract Filament stubs', function (): void {
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_ceDRBA
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     : (new \ReflectionClass($class))->newInstanceWithoutConstructor();
                 Assert::assertIsObject($inst);
                 ++$n;
@@ -136,10 +178,15 @@ describe('Xot abstract Filament stubs', function (): void {
 =======
 >>>>>>> .merge_file_ceDRBA
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Dj4PFF
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                         if ($method->getDeclaringClass()->getName() !== $parent->getName()) {
                             continue;
                         }
@@ -160,13 +207,18 @@ describe('Xot abstract Filament stubs', function (): void {
                             } else {
                                 $method->invoke($inst, ...$args);
                             }
+<<<<<<< HEAD
                             $n++;
                         } catch (\Throwable) {
                             $n++;
 <<<<<<< .merge_file_bPZTXE
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                             $n++;
                         } catch (\Throwable) {
@@ -184,30 +236,42 @@ describe('Xot abstract Filament stubs', function (): void {
                         } catch (\Throwable) {
                             ++$n;
 >>>>>>> .merge_file_ceDRBA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Dj4PFF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                         }
                     }
                 }
             } catch (\Throwable $e) {
                 Assert::assertNotEmpty($e->getMessage());
+<<<<<<< HEAD
 <<<<<<< .merge_file_bPZTXE
 <<<<<<< HEAD
                 $n++;
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                 $n++;
 =======
                 ++$n;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 ++$n;
 >>>>>>> .merge_file_ceDRBA
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 ++$n;
@@ -216,6 +280,10 @@ describe('Xot abstract Filament stubs', function (): void {
 =======
                 $n++;
 >>>>>>> .merge_file_Dj4PFF
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
         Assert::assertGreaterThan(5, $n);

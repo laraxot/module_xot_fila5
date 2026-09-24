@@ -13,6 +13,7 @@ class ProbeResource extends XotBaseResource
 
     protected static ?string $model = null;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_QDBK16
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,13 @@ class ProbeResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+    public function getFormSchemaOld(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [];
     }

@@ -148,10 +148,14 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
+<<<<<<< HEAD
 <<<<<<< .merge_file_p7Hhpu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_oAiY4C
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -168,6 +172,7 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> .merge_file_lfebTH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
@@ -175,6 +180,11 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> .merge_file_GMr06M
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -303,10 +313,14 @@ class QuestionChartFilterWidget extends XotBaseWidget
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_p7Hhpu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_oAiY4C
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -616,8 +630,13 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_lfebTH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_GMr06M
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

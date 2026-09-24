@@ -29,7 +29,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_E8r6Fz
 =======
 <<<<<<< HEAD
@@ -44,7 +47,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
 >>>>>>> .merge_file_S7nq7J
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
@@ -62,12 +69,17 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
    public function getFormSchema(): array
 >>>>>>> .merge_file_X4RiPT
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    {
        return [
            TextInput::make('nome')->required(),
@@ -274,6 +286,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_E8r6Fz
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -290,6 +303,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -297,6 +311,13 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_X4RiPT
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('nome')->required(),
@@ -468,6 +489,7 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_E8r6Fz
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -484,11 +506,19 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_X4RiPT
+=======
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -543,6 +573,7 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_E8r6Fz
     public function getFormSchema(): array
 =======
@@ -552,6 +583,9 @@ class SocioResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -813,6 +847,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_E8r6Fz
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -829,11 +864,19 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_X4RiPT
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1099,6 +1142,7 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_E8r6Fz
     public function getFormSchema(): array
 =======
@@ -1108,6 +1152,9 @@ class SocioResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array

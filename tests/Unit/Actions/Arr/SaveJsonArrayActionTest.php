@@ -66,7 +66,11 @@ describe('Save Json Array Action', function (): void {
     test('saves array to json file', function (): void {
         $data = ['key' => 'value', 'nested' => ['a' => 1]];
         $path = $this->tempDir.'/data.json';
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         $result = app(SaveJsonArrayAction::class)->execute($data, $path);
         Assert::assertSame($data, $result);
@@ -80,7 +84,11 @@ describe('Save Json Array Action', function (): void {
 =======
     test('saves empty array', function (): void {
         $path = $this->tempDir.'/empty.json';
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         $result = app(SaveJsonArrayAction::class)->execute([], $path);
 
         Assert::assertSame([], $result);

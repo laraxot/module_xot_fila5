@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gsBktN
 <<<<<<< HEAD
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
@@ -45,9 +48,15 @@ https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-tw
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
 >>>>>>> .merge_file_wgtkWm
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_yoHwvQ
+=======
+=======
+https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

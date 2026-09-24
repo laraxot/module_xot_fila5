@@ -4,9 +4,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gN2FWI
 <<<<<<< HEAD
 =======
@@ -45,11 +48,16 @@ Tutti gli adapter di root devono puntare a un solo backend condiviso:
 ```
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_sdSx1L
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Problema Risolto
 Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 
@@ -80,10 +88,14 @@ Lo script `ai_init.sh` ha una logica di sicurezza che non sovrascrive directory 
 Per verificare che tutto funzioni correttamente:
 ```bash
 file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
+<<<<<<< HEAD
 <<<<<<< .merge_file_US5vC5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gN2FWI
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -97,11 +109,16 @@ file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_3h8tO2
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_sdSx1L
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."

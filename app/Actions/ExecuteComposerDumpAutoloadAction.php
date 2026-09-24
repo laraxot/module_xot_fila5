@@ -4,12 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
 <<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GcEyAu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
@@ -32,11 +38,16 @@ use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
 >>>>>>> .merge_file_2EEPTa
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -64,11 +75,16 @@ class ExecuteComposerDumpAutoloadAction
         /** @var list<string> $output */
         $output = [];
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_GcEyAu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
@@ -82,11 +98,16 @@ class ExecuteComposerDumpAutoloadAction
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_2EEPTa
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         try {
             /*
              * Laravel's Process, quando non riceve `->env(...)`, passa un
@@ -122,6 +143,7 @@ class ExecuteComposerDumpAutoloadAction
              */
             while ($process->running()) {
                 $data = $process->latestOutput();
+<<<<<<< HEAD
 <<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -132,6 +154,12 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_GcEyAu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 if ($data !== '') {
                     $formatted = trim($data);
                     if ($formatted !== '') {
@@ -156,15 +184,21 @@ class ExecuteComposerDumpAutoloadAction
                     if ('' !== $formatted) {
                         $output[] = $formatted;
 >>>>>>> .merge_file_2EEPTa
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     }
                 }
 
                 $errorData = $process->latestErrorOutput();
+<<<<<<< HEAD
 <<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,6 +209,12 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_GcEyAu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 if ($errorData !== '') {
                     $formattedError = trim($errorData);
                     if ($formattedError !== '') {
@@ -199,11 +239,16 @@ class ExecuteComposerDumpAutoloadAction
                     if ('' !== $formattedError) {
                         $output[] = $formattedError;
 >>>>>>> .merge_file_2EEPTa
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                     }
                 }
 
@@ -213,6 +258,7 @@ class ExecuteComposerDumpAutoloadAction
             $result = $process->wait();
 
             $finalOutput = trim($result->output());
+<<<<<<< HEAD
 <<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -222,6 +268,12 @@ class ExecuteComposerDumpAutoloadAction
 <<<<<<< .merge_file_GcEyAu
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_GcEyAu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if ($finalOutput !== '') {
                 $output[] = $finalOutput;
 <<<<<<< HEAD
@@ -267,15 +319,21 @@ class ExecuteComposerDumpAutoloadAction
             if ('' !== $finalErrorOutput) {
                 $output[] = $finalErrorOutput;
 >>>>>>> .merge_file_2EEPTa
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
 
             $status = $result->successful() ? 'completed' : 'failed';
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -290,6 +348,12 @@ class ExecuteComposerDumpAutoloadAction
 <<<<<<< .merge_file_GcEyAu
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_GcEyAu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             if ($status === 'failed') {
 <<<<<<< HEAD
                 $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
@@ -317,22 +381,32 @@ class ExecuteComposerDumpAutoloadAction
             }
 
 >>>>>>> .merge_file_2EEPTa
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             return [
                 'output' => $output,
                 'status' => $status,
                 'exitCode' => $result->exitCode() ?? 0,
             ];
         } catch (\Throwable $e) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_GcEyAu
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
@@ -346,11 +420,16 @@ class ExecuteComposerDumpAutoloadAction
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_2EEPTa
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_o9lNxz
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             throw new \RuntimeException("Errore durante l'esecuzione di composer dump-autoload: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }

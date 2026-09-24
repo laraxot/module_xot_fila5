@@ -136,11 +136,13 @@ This document summarizes the successful implementation of:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Filament Class Extension Rules](modules/xot/docs/filament-class-extension-rules.md)
 - [PHPStan Return Type Error Guide](modules/geo/docs/phpstan-return-type-errors.md)
 - [Filament Extension Violations Report](modules/xot/docs/filament_extension_violations.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Filament Class Extension Rules](modules/xot/docs/filament-class-extension-rules.md)
@@ -149,6 +151,10 @@ This document summarizes the successful implementation of:
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_FOTLqo
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -160,10 +166,12 @@ This document summarizes the successful implementation of:
 **Compliance**: 100% architecture compliance achieved
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Compliance**: 100% architecture compliance achieved
 =======
 **Compliance**: 100% architecture compliance achieved
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Compliance**: 100% architecture compliance achieved
@@ -171,3 +179,8 @@ This document summarizes the successful implementation of:
 =======
 **Compliance**: 100% architecture compliance achieved
 >>>>>>> .merge_file_FOTLqo
+=======
+=======
+**Compliance**: 100% architecture compliance achieved
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -513,14 +513,21 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_aQ36wP
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Module**: Xot (Core Engine)
 **Maintainer**: Laraxot Team
 
 *This guide is part of the Laraxot PTVX Framework documentation standard.*
+<<<<<<< HEAD
 <<<<<<< .merge_file_tnajgc
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -533,9 +540,14 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 <<<<<<< HEAD
 *This guide is part of the Laraxot PTVX Framework documentation standard.*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *This guide is part of the Laraxot PTVX Framework documentation standard.*
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_aQ36wP
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

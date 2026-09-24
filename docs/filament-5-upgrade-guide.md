@@ -32,11 +32,14 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 <<<<<<< .merge_file_sKLqbU
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_JH9fZE
+=======
+>>>>>>> da9ae01a0 (.)
 - **Table**: `Filament\Tables\Table` esiste ancora, nessun cambiamento
 - **Resources**: Tutti i pattern esistenti rimangono validi
 
@@ -73,14 +76,21 @@ nessun'altra occorrenza nel resto del progetto.
 - **Resources**: Tutti i pattern esistenti rimangono validi
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - **Schemas**: Form, Table, Infolist continuano a funzionare
 - **Resources**: Tutti i pattern esistenti rimangono validi
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_JH9fZE
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### Cosa Cambia (Livewire 4)
 
 Tutti i cambiamenti sono legati alla migrazione a Livewire 4:
@@ -149,10 +159,12 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 ## Stato upgrade (base_workorder_fila5)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Stato upgrade (base_workorder_fila5)
 =======
 ## Stato upgrade (base_<nome progetto>)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Stato upgrade (base_<nome progetto>)
@@ -160,6 +172,11 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 =======
 ## Stato upgrade (base_workorder_fila5)
 >>>>>>> .merge_file_JH9fZE
+=======
+=======
+## Stato upgrade (base_<nome progetto>)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 - [x] Documentazione creata (filament-5-upgrade-guide.md)
 - [x] Script `vendor/bin/filament-v5` eseguito con directory `app,Modules` – modifiche applicate
@@ -169,11 +186,14 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 <<<<<<< .merge_file_sKLqbU
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_JH9fZE
+=======
+>>>>>>> da9ae01a0 (.)
 - [x] **Composer update completato** (verificato 2026-07-27): `filament/filament` installato v5.7.3, `laravel/framework` v13.22.0, `livewire/livewire` v4.3.3 (`composer show <pkg>`)
 - [x] `composer remove filament/upgrade --dev` completato (assente da `composer.json`, verificato 2026-07-27)
 - [ ] **Config Livewire 4 NON ancora rinominata**: `config/livewire.php` usa ancora le chiavi legacy `'layout' => 'components.layouts.app'` e `'lazy_placeholder' => null` invece di `component_layout`/`component_placeholder` (verificato 2026-07-27). L'app funziona comunque (probabile compat legacy in Livewire 4.3), ma va allineato quando si tocca quel file.
@@ -186,14 +206,21 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - [ ] Dopo update: `composer remove filament/upgrade --dev`
 - [ ] Config Livewire 4: verificare `config/livewire.php` (layout → component_layout, lazy_placeholder → component_placeholder) se pubblicato
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
 =======
 - [ ] **Composer update**: completare `composer update -W` (può fallire per errore filesystem su vendor, es. "Could not delete .../sebastianbergmann-phpunit-..."). **Soluzione**: chiudere IDE e processi che usano `vendor/`; dalla root laravel: `rm -rf vendor composer.lock` poi `composer install -W`. In alternativa riprovare `composer update -W` dopo aver chiuso tutto.
 - [ ] Dopo update: `composer remove filament/upgrade --dev`
 - [ ] Config Livewire 4: verificare `config/livewire.php` (layout → component_layout, lazy_placeholder → component_placeholder) se pubblicato
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_JH9fZE
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [ ] PHPStan livello 10 su moduli Filament
 - [ ] Verificare pannello admin Filament (login, risorse, widget)
 

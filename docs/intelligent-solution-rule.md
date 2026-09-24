@@ -281,6 +281,7 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 **Status**: ✅ Regola Critica OBBLIGATORIA
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 =======
@@ -288,6 +289,7 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
@@ -298,3 +300,9 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> .merge_file_PSHKuw
+=======
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

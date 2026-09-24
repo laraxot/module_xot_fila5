@@ -2,7 +2,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_SoxooX
 =======
 <<<<<<< HEAD
@@ -15,6 +18,10 @@
 <<<<<<< HEAD
 >>>>>>> .merge_file_5f05n5
 >>>>>>> .merge_file_M2jP9l
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -52,6 +59,7 @@ https://phpmd.org/
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_SoxooX
 >>>>>>> laraxot/dev
 =======
@@ -62,12 +70,17 @@ https://phpmd.org/
 >>>>>>> .merge_file_5f05n5
 >>>>>>> .merge_file_M2jP9l
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_yacmYb
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
@@ -107,6 +120,7 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_SoxooX
 =======
 <<<<<<< .merge_file_flisOV
@@ -117,7 +131,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_M2jP9l
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -130,8 +148,13 @@ updated: 2026-08-24
 >>>>>>> .merge_file_5f05n5
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_M2jP9l
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_yacmYb
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

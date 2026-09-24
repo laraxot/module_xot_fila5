@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_7EOTge
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_tpPjkw
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "Docs Improvements Nov"
 type: concept
@@ -26,8 +29,12 @@ Vedi il file canonico: [docs-improvements-nov.md](./docs-improvements-nov.md)
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Miglioramenti Documentazione - Novembre 2025
 
 ## 🎯 Obiettivo
@@ -137,7 +144,11 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
+<<<<<<< HEAD
 public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
+=======
+public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
+>>>>>>> 930f8146 (Check & fix styling)
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -180,12 +191,20 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
+<<<<<<< HEAD
 [guida principale](../../../../docs/guide.md)
+=======
+[guida principale](../../../docs/guide.md)
+>>>>>>> 930f8146 (Check & fix styling)
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
+=======
+[user docs](../../User/docs/user-guide.md)
+>>>>>>> 930f8146 (Check & fix styling)
 ```
 
 ### All'interno dello stesso modulo
@@ -293,8 +312,13 @@ find . -name "readme.md" -o -name "Readme.md"
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_tpPjkw
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

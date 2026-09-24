@@ -21,7 +21,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 name: 03-refactor-resource-form
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -47,7 +51,11 @@ metadata:
 >>>>>>> .merge_file_Cf2v0n
 >>>>>>> .merge_file_fiS1Ha
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_p1bN0U

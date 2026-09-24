@@ -306,6 +306,7 @@ Moduli con logica inline complessa:
 <<<<<<< .merge_file_UfV3hU
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -319,11 +320,16 @@ Moduli con logica inline complessa:
 - [Progress Tracker](../../sigma/docs/refactoring-progress-tracker.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_rOgBCS
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Accessor Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
 - [Philosophy Guide PTVX](../../../docs/philosophy-guide.md)
 
@@ -340,6 +346,7 @@ Moduli con logica inline complessa:
 <<<<<<< .merge_file_UfV3hU
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -353,11 +360,16 @@ Moduli con logica inline complessa:
 **Creato**: [DATE]
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_rOgBCS
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Sigma - SchedaTrait](../../Sigma/docs/session-complete-summary.md)
 - [IndennitaCondizioniLavoro - Audit](../../IndennitaCondizioniLavoro/docs/accessor-guard-audit.md)
 
@@ -372,10 +384,12 @@ Moduli con logica inline complessa:
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 =======
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
@@ -383,3 +397,8 @@ Moduli con logica inline complessa:
 =======
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 >>>>>>> .merge_file_rOgBCS
+=======
+=======
+**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

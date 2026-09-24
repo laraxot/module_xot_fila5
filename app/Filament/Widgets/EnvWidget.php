@@ -22,6 +22,18 @@ use Modules\Xot\Datas\EnvData;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 use Filament\Schemas\Schema;
+=======
+use Filament\Actions\Concerns\InteractsWithActions;
+use Filament\Actions\Contracts\HasActions;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
+use Filament\Widgets\Widget;
+>>>>>>> 930f8146 (Check & fix styling)
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
@@ -29,13 +41,23 @@ use Modules\Xot\Datas\EnvData;
  * @property Schema $form
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_AH5uo3
+=======
+>>>>>>> da9ae01a0 (.)
 class EnvWidget extends XotBaseSchemaWidget
 {
+=======
+class EnvWidget extends Widget implements HasActions, HasForms
+{
+    use InteractsWithActions;
+    use InteractsWithForms;
+
+>>>>>>> 930f8146 (Check & fix styling)
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
@@ -61,10 +83,16 @@ class EnvWidget extends XotBaseSchemaWidget
     ];
 
 =======
+<<<<<<< HEAD
     /** @phpstan-ignore property.defaultValue */
     protected string $view = 'xot::filament.widgets.env';
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    protected string $view = 'xot::filament.widgets.env';
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     public function mount(): void
     {
         /** @var array<string, mixed> */
@@ -209,7 +237,11 @@ class EnvWidget extends XotBaseSchemaWidget
 
         /** @var array<Component> $components */
         $components = array_values($selected);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         return $components;
     }

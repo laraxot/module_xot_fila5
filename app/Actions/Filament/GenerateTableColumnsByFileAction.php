@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * -WIP.
  */
@@ -12,7 +16,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Actions\Filament;
 
 // use Filament\Forms\Commands\Concerns\CanGenerateForms; // Non disponibile in Filament v4

@@ -58,10 +58,12 @@ Themes/[ThemeName]/
 ├── _quaeris_fila4_mono.code-workspace
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── _quaeris_fila4_mono.code-workspace
 =======
 ├── _healthcare_app_fila5_mono.code-workspace
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ├── _healthcare_app_fila5_mono.code-workspace
@@ -69,6 +71,11 @@ Themes/[ThemeName]/
 =======
 ├── _quaeris_fila4_mono.code-workspace
 >>>>>>> .merge_file_OMG2l1
+=======
+=======
+├── _quaeris_fila4_mono.code-workspace
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
@@ -315,10 +322,12 @@ Themes implement accessibility features while maintaining module functionality:
 - Predictable view resolution
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Predictable view resolution
 =======
 - <nome progetto>able view resolution
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - <nome progetto>able view resolution
@@ -326,6 +335,11 @@ Themes implement accessibility features while maintaining module functionality:
 =======
 - Predictable view resolution
 >>>>>>> .merge_file_OMG2l1
+=======
+=======
+- Predictable view resolution
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - Clear separation of concerns
 - Minimal configuration needed
 
@@ -379,10 +393,12 @@ The "Vestito" philosophy embodies several core values:
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
 =======
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
@@ -390,3 +406,8 @@ This architecture ensures that themes can be changed, updated, or replaced witho
 =======
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
 >>>>>>> .merge_file_OMG2l1
+=======
+=======
+This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

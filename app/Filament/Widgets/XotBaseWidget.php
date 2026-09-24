@@ -25,11 +25,17 @@ use Webmozart\Assert\Assert;
  * Classe base astratta per tutti i widget Filament.
  * Fornisce funzionalità comuni e standardizzate per la gestione dei widget.
  *
+<<<<<<< HEAD
 <<<<<<< .merge_file_h1TP54
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -43,10 +49,15 @@ use Webmozart\Assert\Assert;
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_g5hQMb
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
  * @property string                    $title        Titolo del widget
  * @property string                    $icon         Icona del widget
@@ -57,11 +68,17 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  */
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
@@ -114,20 +131,28 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     /**
      * Configura il form del widget.
      *
+<<<<<<< HEAD
      * @param  Schema  $schema  Il form da configurare
 <<<<<<< .merge_file_h1TP54
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
      * @param  Schema  $schema  Il form da configurare
 =======
      * @param Schema $schema Il form da configurare
      *
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param Schema $schema Il form da configurare
      *
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * Configura il form del widget.
@@ -137,6 +162,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @return Schema Il form configurato
      */
     public function form(Schema $schema): Schema
@@ -145,20 +174,28 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $schema->statePath('data');
 
         $model = $this->getFormModel();
+<<<<<<< HEAD
 <<<<<<< .merge_file_h1TP54
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($model !== null) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if ($model !== null) {
 =======
         if (null !== $model) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (null !== $model) {
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (null !== $model) {
@@ -166,6 +203,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 =======
         if ($model !== null) {
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             // Ensure model is compatible with Schema::model()
             if (\is_string($model)) {
                 if (class_exists($model) && is_subclass_of($model, Model::class)) {
@@ -185,20 +226,28 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
+<<<<<<< HEAD
 <<<<<<< .merge_file_h1TP54
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($model === null) {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         if ($model === null) {
 =======
         if (null === $model) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         if (null === $model) {
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (null === $model) {
@@ -206,6 +255,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 =======
         if ($model === null) {
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             return [];
         }
         if (\is_string($model)) {
@@ -223,18 +276,26 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                     $merge1 = array_merge($defaults, $res);
 <<<<<<< HEAD
                     $merge1 = Arr::map($merge1, static function (mixed $value, string|int $key) use ($defaults) {
+<<<<<<< HEAD
                         if ($value === null) {
 <<<<<<< .merge_file_h1TP54
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
                         if ($value === null) {
 =======
                         if (null === $value) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                         if (null === $value) {
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                     $merge1 = Arr::map($merge1, static function ($value, string|int $key) use ($defaults) {
@@ -242,6 +303,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                             $value = Arr::get($defaults, $key, null);
                         }
 
@@ -301,20 +366,29 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         }
 
         return Action::make('submit')
+<<<<<<< HEAD
 <<<<<<< .merge_file_h1TP54
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
 =======
             ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->submit('save')
             ->view((string) $submit_view);
     }
@@ -328,20 +402,29 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         return [
             Action::make('save')
+<<<<<<< HEAD
 <<<<<<< .merge_file_h1TP54
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
 =======
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 ->submit('save'),
         ];
     }
@@ -391,22 +474,30 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_h1TP54
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gBRTOX
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
 =======
      * @param array<int|string, mixed> $data
      *
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param array<int|string, mixed> $data
      *
 >>>>>>> .merge_file_g5hQMb
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param array<int|string, mixed> $data
@@ -415,6 +506,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 =======
      * @param  array<int|string, mixed>  $data
 >>>>>>> .merge_file_2Q0sLu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * @return array<string, mixed>
      */
     protected static function normalizeFormFill(array $data): array

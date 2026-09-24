@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://statamic.com/
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7q5227
 <<<<<<< HEAD
 https://statamic.com/
@@ -48,9 +51,15 @@ updated: 2026-08-24
 https://statamic.com/
 >>>>>>> .merge_file_LoHDJU
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://statamic.com/
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_doh1ch
+=======
+=======
+https://statamic.com/
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

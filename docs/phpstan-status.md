@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
@@ -106,13 +107,18 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 <<<<<<< .merge_file_9CIdMu
 - [phpstan-journey.md](../../../../docs/wiki/second-brain/phpstan-journey.md) — second brain
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Status - Xot Module
 
 ## Current Status: ✅ PASSED
 - **PHPStan Level**: 10
 - **Errors**: 0
 - **Last Checked**: 2025-11-17
+<<<<<<< HEAD
 - **Last Checked**: [DATE]
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## Module Overview
 The Xot module provides core functionality and base classes for the entire application framework.
@@ -187,6 +193,7 @@ The Xot module serves as the foundation for:
 
 *Status: ✅ PHPStan Level 10 Compliant*
 *Last Updated: 2025-11-17*
+<<<<<<< HEAD
 *
 >>>>>>> 3792da0d (Check & fix styling)
 =======
@@ -194,3 +201,5 @@ The Xot module serves as the foundation for:
 - [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
 - [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
 >>>>>>> .merge_file_yBlZom
+=======
+>>>>>>> da9ae01a0 (.)

@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_vUuiVY
+=======
+>>>>>>> da9ae01a0 (.)
 title: "Module root cleanup rules"
 type: rule
 tags: [module, theme, structure, cleanup, naming, root-hygiene]
@@ -73,8 +76,12 @@ Tutto il resto → `docs/raw/root-import/` o `docs/wiki/`. Duplicati `changelog.
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: "Module Root Cleanup Rules"
 type: rule
 tags: [module, structure, cleanup, naming]
@@ -94,7 +101,13 @@ related:
 
 ### File .txt
 - **VIETATO**: Nessun file `.txt` nella root del modulo
+<<<<<<< HEAD
 - Tutti i file `.txt` devono essere rimossi o convertiti in `.md` e spostati in `docs/`
+=======
+- Path canonico dopo spostamento: `docs/raw/root-import/<nome-normalizzato>.txt`
+- Remediation: `bash bashscripts/tools/fix-module-root-hygiene.sh` (non cancellare: **spostare** in `docs/raw/root-import/`)
+- Verifica: `find . -maxdepth 1 -name '*.txt' -type f` → output vuoto
+>>>>>>> 930f8146 (Check & fix styling)
 
 ### File .md
 - **OBBLIGATORIO**: Solo `README.md` nella root del modulo
@@ -109,11 +122,16 @@ related:
 - Cartelle con maiuscole devono essere eliminate o rinominate in lowercase
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vUuiVY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Mai toccare (nwidart)
 
@@ -122,11 +140,14 @@ related:
 <<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_vUuiVY
+=======
+>>>>>>> da9ae01a0 (.)
 ## Comandi
 
 ```bash
@@ -142,8 +163,12 @@ Moduli: `laravel/Modules/<Modulo>/` · Temi: `laravel/Themes/<Tema>/` — **solo
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```bash
 bash bashscripts/tools/guard-nwidart-module-skeleton.sh
 bash bashscripts/tools/audit-module-sacred-artifacts.sh
@@ -152,11 +177,16 @@ bash bashscripts/tools/audit-module-sacred-artifacts.sh
 ## Azione di cleanup
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_vUuiVY
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 Per ogni modulo:
 
@@ -176,11 +206,14 @@ find . -maxdepth 1 -type d | grep -E "[A-Z]"
 <<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_vUuiVY
+=======
+>>>>>>> da9ae01a0 (.)
 ## Stato Xot 2026-07-06
 
 Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Providers/` non esistono nella root di `Modules/Xot`. La root Xot contiene solo `README.md` come markdown e nessun `.txt`.
@@ -199,3 +232,10 @@ Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Provid
 
 - Questa regola deve essere applicata a tutti i moduli
 - Check periodico prima di commit
+=======
+## Canon
+
+- Questa regola deve essere applicata a tutti i moduli
+- Check periodico **prima di commit nel repo modulo** (`cd laravel/Modules/<Nome>`)
+- Dopo cleanup: commit + push nel repo owner — vedi `docs/wiki/rules/multi-repo-modules-themes-map.md`
+>>>>>>> 930f8146 (Check & fix styling)

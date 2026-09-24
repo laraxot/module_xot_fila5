@@ -92,6 +92,7 @@ public function processValue(?string $value): string
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
 - [Code Standards](code-standards.md)
 - [Risoluzione Conflitti](conflitti_merge_risolti.md)
@@ -103,6 +104,11 @@ public function processValue(?string $value): string
 - [Code Standards](./code-standards.md)
 - [Risoluzione Conflitti](./conflitti_merge_risolti.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Best Practices](./BEST-PRACTICES.md)
+- [Code Standards](./CODE-STANDARDS.md)
+- [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
+>>>>>>> da9ae01a0 (.)
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
@@ -650,7 +656,11 @@ namespace Modules\Xot\Console\Commands;
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
 =======
 Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+>>>>>>> da9ae01a0 (.)

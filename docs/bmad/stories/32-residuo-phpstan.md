@@ -21,7 +21,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 name: 32-residuo-phpstan
 description: "Status: IN PROGRESS — sub-agent attivo (swarm-phpstan-301)"
@@ -47,7 +51,11 @@ metadata:
 >>>>>>> .merge_file_sTc7Ss
 >>>>>>> .merge_file_eYdJLR
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_AT1d5x

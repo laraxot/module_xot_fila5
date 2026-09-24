@@ -323,11 +323,15 @@ public function panel(Panel $panel): Panel
 
 ```php
 // ❌ ERRATO - NON registrare asset chart in altri moduli
+<<<<<<< HEAD
 <<<<<<< .merge_file_153ZWZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nNBS7c
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
 =======
@@ -338,6 +342,7 @@ public function panel(Panel $panel): Panel
 // Modules/ModuloEsempio/app/Providers/Filament/AdminPanelProvider.php
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // Modules/healthcare_app/app/Providers/Filament/AdminPanelProvider.php
@@ -346,6 +351,11 @@ public function panel(Panel $panel): Panel
 =======
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
 >>>>>>> .merge_file_ZJCCtN
+=======
+=======
+// Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 // Modules/UI/app/Providers/Filament/AdminPanelProvider.php
 // Themes/Zero/app/Providers/Filament/AdminPanelProvider.php
 
@@ -355,11 +365,15 @@ public function panel(Panel $panel): Panel
     
     // ❌ NON fare questo - causa duplicazioni e conflitti
     // FilamentAsset::register([
+<<<<<<< HEAD
 <<<<<<< .merge_file_153ZWZ
 <<<<<<< HEAD
 <<<<<<< HEAD
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nNBS7c
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
 =======
@@ -369,6 +383,7 @@ public function panel(Panel $panel): Panel
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/healthcare_app'))->module(),
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/healthcare_app'))->module(),
@@ -376,6 +391,11 @@ public function panel(Panel $panel): Panel
 =======
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
 >>>>>>> .merge_file_ZJCCtN
+=======
+=======
+    //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     // ]);
     
     return $panel;
@@ -387,11 +407,15 @@ public function panel(Panel $panel): Panel
 - **KISS**: Configurazione semplice e centralizzata
 - **Coerenza**: Tutti i moduli ereditano automaticamente gli asset chart
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_153ZWZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nNBS7c
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
 =======
@@ -401,6 +425,7 @@ Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../chart/docs/chart-assets-centralization-rule.md).
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../chart/docs/chart-assets-centralization-rule.md).
@@ -408,6 +433,11 @@ Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../chart/
 =======
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
 >>>>>>> .merge_file_ZJCCtN
+=======
+=======
+Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Configuration Files
 
@@ -506,11 +536,15 @@ The project uses a modular architecture where:
 ## Documentazione Completa
 
 Per guide dettagliate, consultare:
+<<<<<<< HEAD
 <<<<<<< .merge_file_153ZWZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nNBS7c
 - [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
 =======
@@ -520,6 +554,7 @@ Per guide dettagliate, consultare:
 - [Chart Module Installation Guide](../../chart/docs/filament-5-installation-guide.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GtEmU8
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Chart Module Installation Guide](../../chart/docs/filament-5-installation-guide.md)
@@ -527,5 +562,10 @@ Per guide dettagliate, consultare:
 =======
 - [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
 >>>>>>> .merge_file_ZJCCtN
+=======
+=======
+- [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Filament 5.x Requirements](./filament-5-requirements.md)
 - [Filament 5.x Official Docs](https://filamentphp.com/docs/5.x/introduction/installation)

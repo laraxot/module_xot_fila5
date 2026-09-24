@@ -16,7 +16,11 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 <<<<<<< HEAD
 use Illuminate\Support\Carbon;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\PersonalAccessTokenResult;
 use Laravel\Passport\Token;
@@ -32,15 +36,23 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 <<<<<<< HEAD
 use Spatie\Permission\Traits\HasRoles;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * Modules\Xot\Contracts\UserContract.
  *
+<<<<<<< HEAD
 <<<<<<< .merge_file_T9MNWV
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
  * @property string|null               $id
  * @property string|null               $email
  * @property Carbon|null               $email_verified_at
@@ -57,6 +69,7 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Team>     $membershipTeams
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
+<<<<<<< HEAD
  *                                                        =======
  * @property string|null               $id
  * @property string|null               $email
@@ -76,6 +89,8 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Tenant>   $tenants
  *                                                        >>>>>>> laraxot/dev
 =======
+>>>>>>> da9ae01a0 (.)
+=======
  * @property string|null                     $id
  * @property string|null                     $email
  * @property \Illuminate\Support\Carbon|null $email_verified_at
@@ -90,6 +105,7 @@ use Spatie\Permission\Traits\HasRoles;
  * @property ProfileContract|null            $profile
  * @property Collection<int, UserRole>       $roles
  * @property Collection<int, Team>           $membershipTeams
+<<<<<<< HEAD
  * @property Collection<int, Team>           $teams
  * @property Collection<int, Tenant>         $tenants
 >>>>>>> 3792da0d (Check & fix styling)
@@ -111,6 +127,11 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Team> $teams
  * @property Collection<int, Tenant> $tenants
 >>>>>>> .merge_file_tKyMwK
+=======
+ * @property Collection<int, Model>          $teams
+ * @property Collection<int, Tenant>         $tenants
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  *
  * @phpstan-require-extends Model
  *
@@ -131,7 +152,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @return HasOne<Model&ProfileContract, $this>
      *
      * @phpstan-ignore generics.notSubtype
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function profile(): HasOne;
 
@@ -254,7 +279,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
 
     /**
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * Check if the user can access Socialite.
      */
     public function canAccessSocialite(): bool;
@@ -276,7 +305,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @return BelongsToMany<Model, $this>
      *
      * @phpstan-ignore generics.notSubtype
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function teams(): BelongsToMany;
 
@@ -289,7 +322,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @return BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>
      *
      * @phpstan-ignore generics.notSubtype
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function membershipTeams(): BelongsToMany;
 
@@ -302,7 +339,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @return BelongsToMany<Model, $this>
      *
      * @phpstan-ignore generics.notSubtype
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function tenants(): BelongsToMany;
 

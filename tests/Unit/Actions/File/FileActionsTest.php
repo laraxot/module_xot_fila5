@@ -6,7 +6,9 @@ declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 uses(TestCase::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 
@@ -14,6 +16,11 @@ uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_xr3sA4
+=======
+=======
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
@@ -30,7 +37,11 @@ uses(TestCase::class);
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 test('fix path action works', function (): void {
     $action = app(FixPathAction::class);
     $path = 'some/path/with/mixed/slashes';
@@ -39,6 +50,7 @@ test('fix path action works', function (): void {
 });
 
 test('view path action works', function (): void {
+<<<<<<< HEAD
     // Replace GetViewNameSpacePathAction with a spy that returns test path
 <<<<<<< .merge_file_YZ3TEV
 <<<<<<< HEAD
@@ -68,6 +80,13 @@ test('view path action works', function (): void {
     };
 
     app()->instance(GetViewNameSpacePathAction::class, $getViewNameSpacePathAction);
+=======
+    $mock = Mockery::mock(GetViewNameSpacePathAction::class);
+    /* @phpstan-ignore-next-line Mockery expectation chain not resolvable without extension */
+    $mock->shouldReceive('execute')->with('test_ns')->andReturn('/view/path');
+
+    app()->instance(GetViewNameSpacePathAction::class, $mock);
+>>>>>>> 930f8146 (Check & fix styling)
 
     $action = app(ViewPathAction::class);
     $result = $action->execute('test_ns::folder.view');
@@ -79,6 +98,7 @@ test('view path action works', function (): void {
 });
 
 test('asset path action works', function (): void {
+<<<<<<< HEAD
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
@@ -97,6 +117,11 @@ test('asset path action works', function (): void {
 >>>>>>> .merge_file_xr3sA4
         },
     ]);
+=======
+    Module::shouldReceive('getModulePath')
+        ->with('test_module')
+        ->andReturn('/module/path/');
+>>>>>>> 930f8146 (Check & fix styling)
 
     $action = app(AssetPathAction::class);
     Assert::assertSame('/module/path/resources/css/style.css', $action->execute('test_module::css/style.css'));

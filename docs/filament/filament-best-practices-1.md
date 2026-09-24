@@ -60,9 +60,12 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
@@ -72,6 +75,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
    public static function getFormSchema(): array
@@ -79,6 +83,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
    public function getFormSchema(): array
 >>>>>>> .merge_file_VhPbz5
+=======
+=======
+   public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    {
        return [
            TextInput::make('nome'),
@@ -219,10 +228,12 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 =======
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
@@ -230,3 +241,8 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 >>>>>>> .merge_file_VhPbz5
+=======
+=======
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

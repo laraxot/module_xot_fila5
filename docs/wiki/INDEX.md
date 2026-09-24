@@ -62,6 +62,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_xoWcN5
 =======
 <<<<<<< .merge_file_YRQClO
@@ -75,7 +76,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 <<<<<<< HEAD
 >>>>>>> .merge_file_FEgV6P
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
 =======
 <<<<<<< HEAD
@@ -90,12 +95,17 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_EyOY49
 >>>>>>> .merge_file_FEgV6P
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
 >>>>>>> .merge_file_a8Vtxq
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Compiled Pages
 
@@ -108,6 +118,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_xoWcN5
 | [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 =======
@@ -126,8 +137,12 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 =======
 | [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 =======
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
@@ -143,11 +158,16 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 >>>>>>> .merge_file_EyOY49
 >>>>>>> .merge_file_FEgV6P
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 =======
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 >>>>>>> .merge_file_a8Vtxq
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |

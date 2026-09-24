@@ -1,10 +1,14 @@
 # Gestione delle Eccezioni
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VNV2jy
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,11 +16,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ytmLNH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Ba9tzW
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
 
 ## HandlerDecorator
@@ -46,10 +55,14 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 4. Supporto per PHPStan livello 9
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VNV2jy
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -128,6 +141,8 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 ## Collegamenti
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
@@ -135,11 +150,16 @@ Core module for the FixCity Platform.
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Ba9tzW
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -170,10 +190,14 @@ Core module for the FixCity Platform.
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VNV2jy
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -351,9 +375,14 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_ytmLNH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Ba9tzW
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -398,9 +427,13 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_HdQbLZ
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_VNV2jy
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -445,6 +478,10 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md) 
+=======
+- [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
+- [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+>>>>>>> 930f8146 (Check & fix styling)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -521,6 +558,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Cms/docs/frontoffice/README.md)
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
@@ -611,8 +649,14 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Ba9tzW
+=======
+=======
+* [README.md](../../../../Themes/One/docs/README.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

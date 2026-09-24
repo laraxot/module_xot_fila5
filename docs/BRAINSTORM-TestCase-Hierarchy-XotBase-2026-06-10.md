@@ -2,11 +2,14 @@
 <<<<<<< .merge_file_hQUDMr
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_GS6xEL
+=======
+>>>>>>> da9ae01a0 (.)
 title: "Brainstorm Testcase Hierarchy Xotbase"
 type: concept
 status: deprecated
@@ -26,8 +29,12 @@ Vedi il file canonico: [BRAINSTORM-TestCase-Hierarchy-XotBase.md](./brainstorm-t
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 title: "Brainstorm: TestCase hierarchy with XotBaseTestCase"
 type: brainstorm
 module: Xot
@@ -191,8 +198,13 @@ abstract class TestCase extends XotBaseTestCase
 - Total: **0** (excluding test files)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_GS6xEL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

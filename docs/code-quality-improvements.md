@@ -68,12 +68,18 @@ This document summarizes the code quality improvements made to the Xot module, w
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Al71Lu
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

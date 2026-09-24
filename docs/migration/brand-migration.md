@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 # Migrazione al Nuovo Sistema Brand
 
 ## Panoramica

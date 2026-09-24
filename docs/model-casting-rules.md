@@ -124,15 +124,21 @@ protected function casts(): array
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Audit Risultati ([DATE])
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Audit Risultati ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_hr8Flp
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### File con Errori Trovati: 20
 
@@ -263,10 +269,12 @@ class User extends BaseModel
 agosto 2025
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 agosto 2025
 =======
 agosto 2025
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 agosto 2025
@@ -274,3 +282,8 @@ agosto 2025
 =======
 agosto 2025
 >>>>>>> .merge_file_hr8Flp
+=======
+=======
+agosto 2025
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

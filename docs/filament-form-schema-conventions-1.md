@@ -12,11 +12,14 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 <<<<<<< .merge_file_ql5ElR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -27,12 +30,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -53,11 +62,14 @@ public static function getFormSchema(): array
 <<<<<<< .merge_file_ql5ElR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -68,12 +80,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -149,11 +167,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_ql5ElR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -164,12 +185,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -188,11 +215,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_ql5ElR
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -203,12 +233,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_A2Xtww
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),
@@ -227,6 +263,7 @@ class MyResource extends XotBaseResource
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
 - [XotBaseResource](./xot_base_resource.md)
 - [Form Components](./form_components.md)
 - [Form Validation](./form_validation.md)
@@ -240,6 +277,7 @@ class MyResource extends XotBaseResource
 =======
 - [Filament Best Practices](../../../docs/rules/filament_best_practices.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Filament Best Practices](../../../docs/rules/filament_best_practices.md)
@@ -247,3 +285,11 @@ class MyResource extends XotBaseResource
 =======
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)
 >>>>>>> .merge_file_A2Xtww
+=======
+=======
+- [XotBaseResource](./XOT_BASE_RESOURCE.md)
+- [Form Components](./FORM_COMPONENTS.md)
+- [Form Validation](./FORM_VALIDATION.md)
+- [Filament Best Practices](../../docs/rules/filament_best_practices.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

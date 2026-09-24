@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_0Tgqx5
 <<<<<<< HEAD
 =======
@@ -35,11 +38,16 @@ related:
 >>>>>>> .merge_file_POTMkK
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_HqUMQM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
 ## Regola
@@ -70,8 +78,11 @@ public function getTableColumns(): array
 <<<<<<< .merge_file_utiLtB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_HqUMQM
+=======
+>>>>>>> da9ae01a0 (.)
 **Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
 
 ## Collegamenti
@@ -95,20 +106,28 @@ public function getTableColumns(): array
 
 ## Collegamenti
 - [Esempio e Applicazione - Modulo User](../../../user/docs/filament/filament_table_columns.md)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 **Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
 
 ## Collegamenti
 - [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
+<<<<<<< HEAD
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 >>>>>>> .merge_file_HqUMQM
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Nota storica: correzione XotBaseManageRelatedRecords
 
@@ -130,10 +149,12 @@ public function getTableColumns(): array
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 =======
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
@@ -141,3 +162,8 @@ public function getTableColumns(): array
 =======
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> .merge_file_HqUMQM
+=======
+=======
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

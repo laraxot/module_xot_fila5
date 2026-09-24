@@ -81,11 +81,15 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 - [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_xUsqTo
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Principale](README.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_fATdHN
 - [Documentazione Principale](README.md)
 =======
@@ -95,6 +99,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Documentazione Principale](../../../../docs/readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4WEJt4
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Documentazione Principale](../../../../docs/readme.md)
@@ -102,6 +107,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 =======
 - [Documentazione Principale](README.md)
 >>>>>>> .merge_file_F8Oj27
+=======
+=======
+- [Documentazione Principale](README.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Standard di Progetto](../../../../docs/standards/readme.md)
 - [Gestione Media](../../media/docs/readme.md)
 - [Gestione UI](../../ui/docs/readme.md)

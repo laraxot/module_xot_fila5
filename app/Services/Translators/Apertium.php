@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Translators;
 
+<<<<<<< HEAD
 class Apertium extends BaseTranslator {}
 <<<<<<< .merge_file_78Vors
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_vmLEzK
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 class Apertium extends BaseTranslator {}
 =======
@@ -24,8 +29,13 @@ class Apertium extends BaseTranslator
 {
 }
 >>>>>>> .merge_file_TfOb1d
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_j6X36h
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

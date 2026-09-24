@@ -267,15 +267,23 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_IrZTlM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_exjbDY
     public function getFormSchema(): array
 =======
 =======
 >>>>>>> .merge_file_SQfWq3
+=======
+    public function getFormSchema(): array
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -284,14 +292,20 @@ class MyResource extends XotBaseResource
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_IrZTlM
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_exjbDY
 =======
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_SQfWq3
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======

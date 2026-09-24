@@ -34,6 +34,7 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
 - bugfix-icons-missing-2025.md (anno nel nome)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - bugfix_icons_missing.md (underscore invece di trattini)
 - bugfix-icons-missing-2025.md (anno nel nome)
 =======
@@ -41,6 +42,7 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
 - bugfix_icons_missing.md (underscore invece di trattini)
 - bugfix-icons-missing.md (anno nel nome)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - bugfix-icons-missing-[DATE].md (data nel nome)
@@ -51,6 +53,12 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
 - bugfix_icons_missing.md (underscore invece di trattini)
 - bugfix-icons-missing-2025.md (anno nel nome)
 >>>>>>> .merge_file_H8G332
+=======
+=======
+- bugfix_icons_missing.md (underscore invece di trattini)
+- bugfix-icons-missing-2025.md (anno nel nome)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ## Processo di Normalizzazione
@@ -103,11 +111,13 @@ rm bugfix-icons-missing-2025-01-27.md
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Esempio: bugfix-icons-missing-[DATE].md è identico a bugfix-icons-missing.md
 # Azione: Eliminare file con data
 rm bugfix-icons-missing-[DATE].md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Esempio: bugfix-icons-missing-[DATE].md è identico a bugfix-icons-missing.md
@@ -116,6 +126,10 @@ rm bugfix-icons-missing-[DATE].md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H8G332
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 #### Caso 2: File con Data (nessun duplicato)
@@ -129,11 +143,13 @@ mv translation-refactor-complete-summary-2025-08-08.md translation-refactor-comp
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Esempio: translation-refactor-complete-summary-[DATE].md
 # Azione: Rinominare rimuovendo data
 mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete-summary.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Esempio: translation-refactor-complete-summary-[DATE].md
@@ -142,6 +158,10 @@ mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H8G332
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 #### Caso 3: File con Maiuscole
@@ -191,15 +211,21 @@ Dopo ogni rinomina:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `bugfix-icons-missing-[DATE].md` (100 righe)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - `bugfix-icons-missing-[DATE].md` (100 righe)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H8G332
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - `bugfix-icons-missing.md` (100 righe, identico)
 
 **Azione**:
@@ -213,11 +239,13 @@ rm bugfix-icons-missing-2025-01-27.md
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 diff bugfix-icons-missing-[DATE].md bugfix-icons-missing.md
 # Se identici, eliminare file con data
 rm bugfix-icons-missing-[DATE].md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 diff bugfix-icons-missing-[DATE].md bugfix-icons-missing.md
@@ -226,6 +254,10 @@ rm bugfix-icons-missing-[DATE].md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H8G332
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### Esempio 2: File con Data (versione unica)
@@ -237,15 +269,21 @@ rm bugfix-icons-missing-[DATE].md
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `translation-refactor-complete-summary-[DATE].md` (contenuto completo)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - `translation-refactor-complete-summary-[DATE].md` (contenuto completo)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H8G332
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - `translation-refactor-complete-summary.md` (vuoto o non esiste)
 
 **Azione**:
@@ -257,15 +295,21 @@ mv translation-refactor-complete-summary-2025-08-08.md translation-refactor-comp
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete-summary.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete-summary.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H8G332
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # Se il file contiene data nel corpo, mantenerla ma non nel nome
 ```
 
@@ -327,12 +371,14 @@ Per processi futuri, considerare script di automazione:
 - [Filosofia DRY + KISS](../../../../docs/philosophy-guide.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Piano Consolidamento Documentazione](../../../../docs/consolidamento-documentazione-2025.md)
 - [Filosofia DRY + KISS](../../../../docs/philosophy-guide.md)
 =======
 - [Piano Consolidamento Documentazione](../../../../../docs/consolidamento-documentazione.md)
 - [Filosofia DRY + KISS](../../../../../docs/philosophy-guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Piano Consolidamento Documentazione](../../../../../docs/consolidamento-documentazione.md)
@@ -342,6 +388,12 @@ Per processi futuri, considerare script di automazione:
 - [Piano Consolidamento Documentazione](../../../../docs/consolidamento-documentazione-2025.md)
 - [Filosofia DRY + KISS](../../../../docs/philosophy-guide.md)
 >>>>>>> .merge_file_H8G332
+=======
+=======
+- [Piano Consolidamento Documentazione](../../../../docs/consolidamento-documentazione-2025.md)
+- [Filosofia DRY + KISS](../../../../docs/philosophy-guide.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -353,10 +405,12 @@ Per processi futuri, considerare script di automazione:
 **Priorità**: Alta (conformità regole progetto)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità**: Alta (conformità regole progetto)
 =======
 **Priorità**: Alta (conformità regole progetto)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Priorità**: Alta (conformità regole progetto)
@@ -364,3 +418,8 @@ Per processi futuri, considerare script di automazione:
 =======
 **Priorità**: Alta (conformità regole progetto)
 >>>>>>> .merge_file_H8G332
+=======
+=======
+**Priorità**: Alta (conformità regole progetto)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

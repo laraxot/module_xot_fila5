@@ -287,10 +287,12 @@ php artisan config:cache
 *Ultimo aggiornamento: 2025-01-06*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: 2025-01-06*
@@ -298,3 +300,8 @@ php artisan config:cache
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> .merge_file_irTXVE
+=======
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

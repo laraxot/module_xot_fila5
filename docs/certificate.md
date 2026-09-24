@@ -2,7 +2,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_Mhwxry
 <<<<<<< HEAD
 =======
@@ -59,9 +62,14 @@ updated: 2026-08-24
 <<<<<<< .merge_file_Ha7Txa
 =======
 >>>>>>> .merge_file_jrBy5s
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # _certificate
 
 <!-- Contenuto migrato da _docs/_certificate.txt -->
@@ -199,9 +207,15 @@ updated: 2026-08-24
 =======
 >>>>>>> .merge_file_jrBy5s
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_4P3umY
+=======
+=======
+https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

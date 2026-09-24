@@ -51,16 +51,22 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 
 ## Collegamenti alla documentazione correlata
 - [Qualità del codice](./CODE_QUALITY.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_Na6Hhi
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_Rcd0cL
 =======
 <<<<<<< .merge_file_f6kzdo
 >>>>>>> .merge_file_nLAgCO
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 - [Tipi rigorosi PHP](php-strict-types.md)
 - [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](service-provider-best-practices.md)
 - [Best practice per Filament](filament-best-practices.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_Rcd0cL
 =======
 =======
@@ -77,6 +83,10 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 >>>>>>> .merge_file_BlwwIq
 >>>>>>> .merge_file_nLAgCO
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5GsneU
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -201,6 +201,7 @@ EOF
   - Established rules and conventions
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
 =======
@@ -208,6 +209,7 @@ EOF
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **[DATE]**: Initial documentation and cleanup
@@ -218,3 +220,9 @@ EOF
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
 >>>>>>> .merge_file_DcNsbS
+=======
+=======
+  - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
+  - Established rules and conventions
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

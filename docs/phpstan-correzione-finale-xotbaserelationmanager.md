@@ -92,7 +92,11 @@ Il file passa PHPStan livello max senza errori, mantenendo:
 - ✅ Funzionalità esistente
 - ✅ Pattern consistency con XotBaseResource
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Type safety migliorata
 =======
 - ✅ Type safety migliorata
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- ✅ Type safety migliorata
+>>>>>>> da9ae01a0 (.)

@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Vyc0Pt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
@@ -347,12 +353,14 @@ protected function getStats(): array
                 ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
             Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
 =======
             Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
@@ -362,6 +370,12 @@ protected function getStats(): array
             Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
 >>>>>>> .merge_file_Vyc0Pt
+=======
+=======
+            Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
+                ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 ->color('gray'),
         ];
     }
@@ -743,14 +757,21 @@ private function createTotalResponsesStat(int $count): Stat
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Vyc0Pt
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         __('quaeris::question_chart_stats_overview.stats.total_responses.label'),
         number_format((float) $count)
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
+<<<<<<< HEAD
 <<<<<<< .merge_file_xh7S2a
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -762,11 +783,16 @@ private function createTotalResponsesStat(int $count): Stat
         ->description(__('healthcare_app::question_chart_stats_overview.stats.total_responses.description'))
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Vyc0Pt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -779,14 +805,21 @@ private function createCompletionRateStat(float $rate): Stat
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_Vyc0Pt
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         __('quaeris::question_chart_stats_overview.stats.completion_rate.label'),
         $rate.'%'
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
+<<<<<<< HEAD
 <<<<<<< .merge_file_xh7S2a
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 =======
 =======
@@ -798,11 +831,16 @@ private function createCompletionRateStat(float $rate): Stat
         ->description(__('healthcare_app::question_chart_stats_overview.stats.completion_rate.description'))
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Vyc0Pt
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1197,10 +1235,12 @@ Dopo ogni modifica file:
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 =======
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
@@ -1208,3 +1248,8 @@ Dopo ogni modifica file:
 =======
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 >>>>>>> .merge_file_Vyc0Pt
+=======
+=======
+**Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

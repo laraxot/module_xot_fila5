@@ -26,6 +26,7 @@ class XotComposer
     /**
      * Undocumented function.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_RgQAiq
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,6 +40,13 @@ class XotComposer
 =======
      * @param  array<int, mixed>  $arguments
 >>>>>>> .merge_file_dweKjb
+=======
+<<<<<<< HEAD
+     * @param array<int, mixed> $arguments
+=======
+     * @param array<mixed|void> $arguments
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function __call(string $name, array $arguments): mixed
     {
@@ -48,7 +56,11 @@ class XotComposer
         $module = Arr::first($modules, static function (mixed $module) use ($name): bool {
 =======
         $module = Arr::first($modules, static function ($module) use ($name): bool {
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             // Ensure the module is an instance of LaravelModule
             if (! $module instanceof LaravelModule) {
                 return false;

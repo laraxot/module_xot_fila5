@@ -35,11 +35,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_tLybMj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
@@ -50,12 +53,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array { /* ... */ }
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -158,11 +167,14 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< .merge_file_tLybMj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -173,12 +185,18 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             Section::make(__('filament.section.general'))
@@ -345,11 +363,14 @@ class YourResource extends XotBaseResource
 <<<<<<< .merge_file_tLybMj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -360,12 +381,18 @@ class YourResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             ...parent::getFormSchema(),
@@ -438,11 +465,14 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 <<<<<<< .merge_file_tLybMj
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -453,12 +483,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cBFGnk
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array
@@ -525,12 +561,14 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 - [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
 - [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
 =======
 - [Filament 4.x Upgrade Guide](../../../docs/filament-4-upgrade.md)
 - [Module Upgrade Guide](../../../docs/upgrade-modules-to-filament-4.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Filament 4.x Upgrade Guide](../../../docs/filament-4-upgrade.md)
@@ -540,6 +578,12 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 - [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
 - [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
 >>>>>>> .merge_file_cBFGnk
+=======
+=======
+- [Filament 4.x Upgrade Guide](../../../docs/filament-4-upgrade.md)
+- [Module Upgrade Guide](../../../docs/upgrade-modules-to-filament-4.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Breaking Changes Reference](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 ## 📊 Architecture Benefits
@@ -552,10 +596,12 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 - **Predictable Behavior**: Comportamento consistente across modules
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Predictable Behavior**: Comportamento consistente across modules
 =======
 - **<nome progetto>able Behavior**: Comportamento consistente across modules
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - **<nome progetto>able Behavior**: Comportamento consistente across modules
@@ -563,6 +609,11 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 =======
 - **Predictable Behavior**: Comportamento consistente across modules
 >>>>>>> .merge_file_cBFGnk
+=======
+=======
+- **<nome progetto>able Behavior**: Comportamento consistente across modules
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **Standard Conventions**: Naming e structure conventions
 
 ### Maintainability
@@ -650,10 +701,12 @@ class MyModel extends XotBaseModel
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
 =======
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
@@ -661,3 +714,8 @@ class MyModel extends XotBaseModel
 =======
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
 >>>>>>> .merge_file_cBFGnk
+=======
+=======
+**See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

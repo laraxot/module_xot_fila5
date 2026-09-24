@@ -14,11 +14,14 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 <<<<<<< .merge_file_2kyYrK
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_03ApTC
+=======
+>>>>>>> da9ae01a0 (.)
 ### Note operative (2026-08-31)
 
 - Spatie ResponseCache v8: in `config/responsecache.php` usare `JsonSerializer::class` (non più `DefaultSerializer`).
@@ -34,11 +37,16 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_03ApTC
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 
 ## Configurazione Progetto

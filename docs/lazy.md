@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_SSeQZ8
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_SSeQZ8
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 https://github.com/verlok/vanilla-lazyload   
 https://github.com/ApoorvSaxena/lozad.js
 https://github.com/malchata/yall.js
@@ -69,9 +76,15 @@ https://github.com/aFarkas/lazysizes
 https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 >>>>>>> .merge_file_HzSzlD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cXE9Wz
+=======
+=======
+https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

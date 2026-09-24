@@ -193,10 +193,12 @@ Aggiungere al workflow GitHub Actions:
 **Categoria**: Regole di Codice
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Categoria**: Regole di Codice
 =======
 **Categoria**: Regole di Codice
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Categoria**: Regole di Codice
@@ -204,3 +206,8 @@ Aggiungere al workflow GitHub Actions:
 =======
 **Categoria**: Regole di Codice
 >>>>>>> .merge_file_AqndDy
+=======
+=======
+**Categoria**: Regole di Codice
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

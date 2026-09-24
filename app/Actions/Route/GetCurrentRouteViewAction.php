@@ -40,11 +40,17 @@ class GetCurrentRouteViewAction
 
         return collect(explode('\\', $controller))
             ->reject(static fn (string $part): bool => in_array($part, ['Module', 'Item'], true))
+<<<<<<< HEAD
 <<<<<<< .merge_file_9kYBDo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gjPP1P
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -59,29 +65,46 @@ class GetCurrentRouteViewAction
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_jykUJQ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ptcZSa
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             ->map(static function (string $part) use ($params): string {
                 $part = Str::snake($part);
                 $value = $params[$part] ?? $part;
 
                 return is_scalar($value) || $value instanceof \Stringable ? (string) $value : $part;
+<<<<<<< HEAD
 <<<<<<< .merge_file_9kYBDo
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_gjPP1P
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jykUJQ
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ptcZSa
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             })
             ->implode('.');
     }

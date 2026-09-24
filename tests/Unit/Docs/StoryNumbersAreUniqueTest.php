@@ -56,19 +56,26 @@ function storyNumberCollisions(): array
 
             $matches = [];
 
+<<<<<<< HEAD
             if (preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches) !== 1) {
 <<<<<<< .merge_file_ruBTor
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_0M4fun
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             if (preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches) !== 1) {
 =======
             if (1 !== preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches)) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if (1 !== preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches)) {
 >>>>>>> .merge_file_BmdfwH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if (1 !== preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches)) {
@@ -76,25 +83,36 @@ function storyNumberCollisions(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Ruc4P3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 continue; // le story senza numero sono legittime: si indirizzano per nome
             }
 
             $number = (string) ($matches[1] ?? '');
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_ruBTor
 <<<<<<< HEAD
             if ($number === '') {
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_0M4fun
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
             if ($number === '') {
 =======
             if ('' === $number) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if ('' === $number) {
 >>>>>>> .merge_file_BmdfwH
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if ('' === $number) {
@@ -103,6 +121,10 @@ function storyNumberCollisions(): array
 =======
             if ($number === '') {
 >>>>>>> .merge_file_Ruc4P3
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                 continue;
             }
 

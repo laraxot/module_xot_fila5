@@ -18,10 +18,12 @@
 - phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
 =======
 - phpstan_fixes.md + phpstan-fixes-archive-1.md + phpstan-fixes-archive-1.md
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - phpstan_fixes.md + phpstan-fixes-archive-1.md + phpstan-fixes-archive-1.md
@@ -29,6 +31,11 @@
 =======
 - phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
 >>>>>>> .merge_file_Vb8rQM
+=======
+=======
+- phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - migration_guidelines.md + migration-guidelines.md + migration-standards.md
 
 ✅ DOPO (consolidato):
@@ -50,10 +57,12 @@
 phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
 =======
 phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
@@ -61,6 +70,11 @@ phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
 =======
 phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
 >>>>>>> .merge_file_Vb8rQM
+=======
+=======
+phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 phpstan_level9_guide.md, phpstan_workflow.md, phpstan_usage_guide.md, etc.
 
 ✅ DOPO (struttura consolidata):
@@ -164,6 +178,7 @@ Codice pratico.
 *Ultimo aggiornamento: [data]*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root docs](../../../docs/correlata.md)
 
 *Ultimo aggiornamento: [data]*
@@ -172,6 +187,7 @@ Codice pratico.
 - [Root docs](../../../../docs/correlata.md)
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: [data]*
@@ -179,10 +195,16 @@ Codice pratico.
 
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 - [Root docs](../../../docs/correlata.md)
 
 *Ultimo aggiornamento: [data]*
+<<<<<<< HEAD
 >>>>>>> .merge_file_Vb8rQM
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -258,10 +280,12 @@ DOPO:
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
 =======
 - [Root Ottimizzazioni](../../../../docs/ottimizzazioni-modulari.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Root Ottimizzazioni](../../../../docs/ottimizzazioni-modulari.md)
@@ -269,6 +293,11 @@ DOPO:
 =======
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
 >>>>>>> .merge_file_Vb8rQM
+=======
+=======
+- [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🏷️ **Tag Ottimizzazione**
 
@@ -281,10 +310,12 @@ DOPO:
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 =======
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
@@ -292,3 +323,8 @@ DOPO:
 =======
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 >>>>>>> .merge_file_Vb8rQM
+=======
+=======
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -65,7 +65,10 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 // ✅ DICHIARARE SOLO QUESTE PROPRIETÀ/METODI
 protected static ?string $model = YourModel::class;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_bu9s0W
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_jadpwY
 public function getFormSchema(): array
@@ -77,11 +80,16 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_9yI28Z
 >>>>>>> .merge_file_GGIhTX
 =======
+<<<<<<< HEAD
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 public static function getFormSchema(): array
 >>>>>>> .merge_file_J4Q8b0
+=======
+public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -176,7 +184,10 @@ class DoctorResource extends XotBaseResource
 {
     protected static ?string $model = Doctor::class;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_bu9s0W
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< .merge_file_jadpwY
     public function getFormSchema(): array
@@ -188,11 +199,16 @@ class DoctorResource extends XotBaseResource
 >>>>>>> .merge_file_9yI28Z
 >>>>>>> .merge_file_GGIhTX
 =======
+<<<<<<< HEAD
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
     public static function getFormSchema(): array
 >>>>>>> .merge_file_J4Q8b0
+=======
+    public function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

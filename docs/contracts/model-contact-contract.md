@@ -48,11 +48,14 @@ interface ModelContactContract extends ModelContract
 <<<<<<< .merge_file_DPkO2P
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_UvY0Ck
+=======
+>>>>>>> da9ae01a0 (.)
 - [Model Guidelines](../models/README.md)
 - [Contact Management](../features/CONTACT-MANAGEMENT.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
@@ -61,8 +64,12 @@ interface ModelContactContract extends ModelContract
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Model Guidelines](../models/readme.md)
 - [Contact Management](../features/contact-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -73,9 +80,15 @@ interface ModelContactContract extends ModelContract
 <<<<<<< HEAD
 - [Contracts Overview](./README.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Contracts Overview](./README.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_UvY0Ck
+=======
+=======
+- [Contracts Overview](./README.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

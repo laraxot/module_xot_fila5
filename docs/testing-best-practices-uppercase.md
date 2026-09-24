@@ -43,13 +43,19 @@ function mockXotData(): void
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6T1Gu5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -60,11 +66,14 @@ function mockXotData(): void
 <<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_6T1Gu5
+=======
+>>>>>>> da9ae01a0 (.)
 =======
     
     $mockXotData->shouldReceive('getUserClass')
@@ -79,11 +88,16 @@ function mockXotData(): void
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6T1Gu5
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -167,10 +181,14 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
    - Content presence
    - Layout structure
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DssTs6
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -187,6 +205,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 2. **Middleware** (Raccomandato)
 >>>>>>> .merge_file_PDp0OC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 2. **Middleware** (Raccomandato)
@@ -194,6 +213,11 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 2. **Middleware** (Raccomandato)
 >>>>>>> .merge_file_6T1Gu5
+=======
+=======
+2. **Middleware** (Raccomandato)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    - Authentication flow
    - Authorization checks
    - Redirect behavior
@@ -228,10 +252,14 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - ✅ **Performance**: < 5 secondi per test suite
 - ✅ **Architecture**: Separazione rispettata
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DssTs6
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -248,6 +276,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 ### Gold Standard Criteria
 >>>>>>> .merge_file_PDp0OC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ### Gold Standard Criteria
@@ -255,6 +284,11 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 ### Gold Standard Criteria
 >>>>>>> .merge_file_6T1Gu5
+=======
+=======
+### Gold Standard Criteria
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - ✅ **Success Rate**: > 90% test passati
 - ✅ **Zero Warnings**: Nessun warning PHP/Pest
 - ✅ **Performance**: < 3 secondi per test suite
@@ -277,11 +311,14 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 <<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_6T1Gu5
+=======
+>>>>>>> da9ae01a0 (.)
 # Success rate calculation
 =======
 # Success rate calculation  
@@ -292,12 +329,18 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 # Success rate calculation
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 # Success rate calculation
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6T1Gu5
+=======
+=======
+# Success rate calculation
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ./vendor/bin/pest {TestFile} --compact
 
 # Memory usage monitoring
@@ -343,6 +386,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Last Update**: Dicembre 2024 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Widget Test Patterns](../cms/project_docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../cms/project_docs/tests/architecture-separation-rules.md)
@@ -369,11 +413,15 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Widget Test Patterns](../cms/project_docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../cms/project_docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](xotdata_testing.md)
+=======
+=======
+>>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -381,6 +429,10 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6T1Gu5
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

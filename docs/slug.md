@@ -2,10 +2,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/cviebrock/eloquent-sluggable     W:96    F:438   S:3.5k  25/01/2022
 https://github.com/spatie/laravel-sluggable         W:18    F:162   S:1.1k  28/03/2022
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_PTrVb9
 <<<<<<< HEAD
 https://github.com/cviebrock/eloquent-sluggable     W:96    F:438   S:3.5k  25/01/2022
@@ -52,6 +55,7 @@ https://github.com/cviebrock/eloquent-sluggable     W:96    F:438   S:3.5k  25/0
 https://github.com/spatie/laravel-sluggable         W:18    F:162   S:1.1k  28/03/2022
 >>>>>>> .merge_file_FKdOre
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://github.com/cviebrock/eloquent-sluggable     W:96    F:438   S:3.5k  25/01/2022
@@ -59,3 +63,9 @@ https://github.com/spatie/laravel-sluggable         W:18    F:162   S:1.1k  28/0
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_6vRU2H
+=======
+=======
+https://github.com/cviebrock/eloquent-sluggable     W:96    F:438   S:3.5k  25/01/2022
+https://github.com/spatie/laravel-sluggable         W:18    F:162   S:1.1k  28/03/2022
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

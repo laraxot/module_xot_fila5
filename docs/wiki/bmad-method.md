@@ -30,11 +30,14 @@ BMAD non e' un generatore casuale di codice: e' il processo di delivery. Prima s
 <<<<<<< .merge_file_ETfyXA
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KDfCv6
+=======
+>>>>>>> da9ae01a0 (.)
 ## Locazione artefatti BMAD (obbligatoria)
 
 Story, architecture, brainstorming ed epic vanno in:
@@ -50,11 +53,16 @@ SSoT: `bashscripts/ai/wiki/memories/bmad-artifacts-live-in-module-docs.md` · al
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KDfCv6
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## LLM Wiki locale
 
 - Raw ufficiale BMAD: `docs/raw/bmad/llms-full.txt`.

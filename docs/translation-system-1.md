@@ -229,12 +229,14 @@ php artisan view:clear
 - [Schema Conventions](../docs/schema-conventions.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Filament](../docs/filament-best-practices.md)
 - [Schema Conventions](../docs/schema-conventions.md)
 =======
 - [Best Practices Filament](../../docs/filament-best-practices.md)
 - [Schema Conventions](../../docs/schema-conventions.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Best Practices Filament](../../docs/filament-best-practices.md)
@@ -244,3 +246,9 @@ php artisan view:clear
 - [Best Practices Filament](../docs/filament-best-practices.md)
 - [Schema Conventions](../docs/schema-conventions.md)
 >>>>>>> .merge_file_2cBYeF
+=======
+=======
+- [Best Practices Filament](../docs/filament-best-practices.md)
+- [Schema Conventions](../docs/schema-conventions.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

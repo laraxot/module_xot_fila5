@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_Q2qD4m
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Fixes Progress Report - March 18, 2025
 
 ## Progress Summary
@@ -55,6 +58,7 @@ This document tracks the progress of fixing PHPStan level 10 issues across vario
 - Focus on completing the Setting module first to ensure it's error-free
 - Then continue with the Xot module which has more complex issues
 - Consider grouping fixes by error type (type annotations, null checks, method access) for efficiency
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -409,3 +413,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-prog
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_HEoBej
+=======
+>>>>>>> da9ae01a0 (.)

@@ -13,6 +13,9 @@ uses(TestCase::class);
 describe('Base Morph Pivot Business Logic', function (): void {
 <<<<<<< HEAD
     test('it can manage tags attributes', function (): void {
+=======
+    describe('Base Morph Pivot Business Logic (attributes continued)', function (): void {
+>>>>>>> 930f8146 (Check & fix styling)
         // Arrange
         $tags = ['tag1', 'tag2', 'important'];
 

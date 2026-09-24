@@ -30,7 +30,10 @@ Every concrete resource must implement:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_eEoKJY
 =======
 <<<<<<< HEAD
@@ -45,7 +48,11 @@ Every concrete resource must implement:
 <<<<<<< HEAD
 >>>>>>> .merge_file_SwypVV
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - `public function getFormSchema(): array`
 =======
 <<<<<<< HEAD
@@ -63,12 +70,17 @@ Every concrete resource must implement:
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_SwypVV
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 - `public function getFormSchema(): array`
 >>>>>>> .merge_file_3Av2jy
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - `public static function getPages(): array`
 
 ### 3. Separation of Concerns

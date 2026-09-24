@@ -101,6 +101,7 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
 =======
@@ -108,6 +109,7 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Script Creato**: [DATE]
@@ -118,3 +120,9 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
 >>>>>>> .merge_file_rxKe64
+=======
+=======
+**Autore**: Super Mucca AI Assistant
+**Potenze**: 🚀 SUPERPOWERS ACTIVATED
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

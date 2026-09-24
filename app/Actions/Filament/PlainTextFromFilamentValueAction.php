@@ -23,7 +23,11 @@ class PlainTextFromFilamentValueAction
     public function execute(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
 =======
     public function execute(mixed $value, mixed $fallback = ''): string
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         if ($value instanceof Htmlable) {
             return strip_tags($value->toHtml());
@@ -56,7 +60,11 @@ class PlainTextFromFilamentValueAction
     public static function cast(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
 =======
     public static function cast(mixed $value, mixed $fallback = ''): string
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return app(self::class)->execute($value, $fallback);
     }

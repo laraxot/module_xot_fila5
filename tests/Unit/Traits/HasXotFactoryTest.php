@@ -1,11 +1,17 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_QYuibX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DxB8oq
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -20,11 +26,16 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_WXc23r
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Q4bN9T
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
@@ -32,16 +43,21 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_QYuibX
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_DxB8oq
 /**
 =======
 /*
 >>>>>>> .merge_file_WXc23r
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 /**
@@ -49,6 +65,11 @@ uses(TestCase::class);
 =======
 /**
 >>>>>>> .merge_file_Q4bN9T
+=======
+=======
+/**
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * Regression guard: HasXotFactory::factory() has been accidentally deleted and
  * restored 3 times in one session (2026-09-06/07) by different concurrent agents,
  * each time breaking Model::factory() across nearly every module in the monorepo

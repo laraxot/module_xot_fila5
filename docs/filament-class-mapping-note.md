@@ -57,10 +57,12 @@ Se in futuro si volesse creare queste classi base:
 Per ora, il mapping riflette la realtà del codice.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per ora, il mapping riflette la realtà del codice.
 =======
 Per ora, il mapping riflette la realtà del codice.
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Per ora, il mapping riflette la realtà del codice.
@@ -68,3 +70,8 @@ Per ora, il mapping riflette la realtà del codice.
 =======
 Per ora, il mapping riflette la realtà del codice.
 >>>>>>> .merge_file_Dh3inF
+=======
+=======
+Per ora, il mapping riflette la realtà del codice.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

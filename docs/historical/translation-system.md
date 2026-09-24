@@ -225,6 +225,7 @@ php artisan view:clear
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_RF4oTP
 =======
 <<<<<<< HEAD
@@ -235,9 +236,17 @@ php artisan view:clear
 =======
 >>>>>>> .merge_file_vp5fcB
 >>>>>>> .merge_file_WbrhYC
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
@@ -249,14 +258,20 @@ php artisan view:clear
 - [Schema Conventions](../project_docs/schema-conventions.md) 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_RF4oTP
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 =
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Rzdqm7
 =
@@ -265,6 +280,8 @@ php artisan view:clear
 ========
 >>>>>>> .merge_file_vp5fcB
 >>>>>>> .merge_file_WbrhYC
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======

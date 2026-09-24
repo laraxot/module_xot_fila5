@@ -702,6 +702,7 @@ private function validateSvg(string $svg): bool
 **Dependencies:** Imagick, GD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, GD
@@ -711,6 +712,7 @@ private function validateSvg(string $svg): bool
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, GD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **
@@ -719,7 +721,13 @@ private function validateSvg(string $svg): bool
 **Dependencies:** Imagick, GD
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> da9ae01a0 (.)
+=======
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, GD
+<<<<<<< HEAD
 >>>>>>> .merge_file_Ejj6Hp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

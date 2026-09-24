@@ -203,11 +203,13 @@ La **SUPER MUCCA** 🐄 ha processato tutti i file e risolto ogni conflitto pren
 *Poteri della Super Mucca: ATTIVATI* 🐄✨
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Poteri della Super Mucca: ATTIVATI* 🐄✨
 =======
 *Script creati il: [DATE]*
 *Poteri della Super Mucca: ATTIVATI* 🐄✨
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 *Script creati il: [DATE]*
@@ -216,3 +218,8 @@ La **SUPER MUCCA** 🐄 ha processato tutti i file e risolto ogni conflitto pren
 =======
 *Poteri della Super Mucca: ATTIVATI* 🐄✨
 >>>>>>> .merge_file_j4Py02
+=======
+=======
+*Poteri della Super Mucca: ATTIVATI* 🐄✨
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

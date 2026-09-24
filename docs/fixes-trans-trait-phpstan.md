@@ -6,15 +6,21 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_BOBMep
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Problema Identificato
 
@@ -135,10 +141,12 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
 =======
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
@@ -146,3 +154,8 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 =======
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
 >>>>>>> .merge_file_BOBMep
+=======
+=======
+- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

@@ -8,7 +8,11 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 <<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
@@ -19,7 +23,15 @@ use function Safe\preg_match;
 uses(TestCase::class);
 =======
 uses(\Modules\Xot\Tests\TestCase::class);
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 /**
  * @return list<array{0: string, 1: string}>

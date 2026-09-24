@@ -18,7 +18,11 @@ use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 test('xot base model extends eloquent model', function (): void {
     $reflection = new ReflectionClass(XotBaseModel::class);
 

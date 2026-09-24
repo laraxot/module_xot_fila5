@@ -4,10 +4,14 @@
 The Xot module serves as the core infrastructure module for the Laraxot framework. It contains critical base classes that other modules depend on, making PHPStan compliance essential for overall project stability.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Current Status (as of 2026-01-21)
 =======
 ## Current Status (as of [DATE])
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## Current Status (as of [DATE])
+>>>>>>> da9ae01a0 (.)
 - **PHPStan Errors**: Multiple errors across core files
 - **Error Categories**:
   - Unsafe function usage: define, preg_match, glob, file_get_contents, file_put_contents, error_log
@@ -20,10 +24,14 @@ The Xot module serves as the core infrastructure module for the Laraxot framewor
 ## Error Analysis by File
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 1. Modules/Xot/helpers/Helper.php
 =======
 ### 1. Modules/Xot/Helpers/Helper.php
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+### 1. Modules/Xot/helpers/Helper.php
+>>>>>>> da9ae01a0 (.)
 - **Issues**:
   - Line 179: `define` function unsafe usage
   - Line 407: `preg_match` function unsafe usage

@@ -3,10 +3,14 @@
 ## Panoramica
 In Laraxot è fondamentale comprendere la differenza tra le configurazioni di ambiente di sviluppo e di test, specialmente riguardo all'uso dei database.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_auNB9c
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7aud6t
 =======
 <<<<<<< HEAD
@@ -91,11 +95,16 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_lN8b8U
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ## Configurazione per Sviluppo (.env.development)
 
 ### Database
@@ -116,11 +125,15 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 
 ### Database
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
+<<<<<<< HEAD
 <<<<<<< .merge_file_auNB9c
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7aud6t
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
 =======
@@ -130,6 +143,7 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 - Database con suffisso "_test" (es. `healthcare_app_data_test`, `healthcare_app_user_test`)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Database con suffisso "_test" (es. `healthcare_app_data_test`, `healthcare_app_user_test`)
@@ -137,6 +151,11 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 =======
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
 >>>>>>> .merge_file_lN8b8U
+=======
+=======
+- Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione
@@ -166,11 +185,15 @@ Questa differenziazione rispetta i principi fondamentali:
 - **DRY**: Configurazioni separate per scopi diversi
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
+<<<<<<< HEAD
 <<<<<<< .merge_file_auNB9c
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_7aud6t
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 =======
@@ -267,6 +290,7 @@ Il `setUp()` deve essere usato SOLO per:
 - Non MAI per configurare connessioni database!
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - Non MAI per configurare connessioni database!
@@ -274,3 +298,8 @@ Il `setUp()` deve essere usato SOLO per:
 =======
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 >>>>>>> .merge_file_lN8b8U
+=======
+=======
+- **Multi-tenancy**: Supporto completo per architettura multi-database
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

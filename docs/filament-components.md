@@ -88,15 +88,21 @@ DatePicker::make('field_name')
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     ->minDate('[DATE]')
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     ->minDate('[DATE]')
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KjEuSH
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     ->maxDate('today')
 ```
 
@@ -113,10 +119,12 @@ DatePicker::make('field_name')
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 * [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
 * [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
@@ -124,6 +132,10 @@ DatePicker::make('field_name')
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KjEuSH
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## Correzione e regole per XotBaseManageRelatedRecords
 
@@ -139,12 +151,18 @@ DatePicker::make('field_name')
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_KjEuSH
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

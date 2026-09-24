@@ -18,7 +18,9 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *                              <<<<<<< HEAD
  * @property int    $expiration
  *
+<<<<<<< HEAD
  * @method static CacheLockFactory factory($count = null, $state = [])
+<<<<<<< HEAD
  *                                                                     =======
  *
  * @property int $expiration
@@ -35,6 +37,11 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *
  * @method static CacheLockFactory factory($count = null, $state = [])
 >>>>>>> .merge_file_NI2E06
+=======
+=======
+ * @method static CacheLockFactory          factory($count = null, $state = [])
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @method static Builder<static>|CacheLock newModelQuery()
  * @method static Builder<static>|CacheLock newQuery()
  * @method static Builder<static>|CacheLock query()

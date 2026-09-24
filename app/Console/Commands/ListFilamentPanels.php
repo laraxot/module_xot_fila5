@@ -40,7 +40,11 @@ class ListFilamentPanels extends Command
 <<<<<<< .merge_file_RJwV0W
 =======
             $providers = collect(scandir($providersPath))
+<<<<<<< HEAD
                 ->filter(static function (mixed $file): bool {
+=======
+                ->filter(function ($file): bool {
+>>>>>>> 930f8146 (Check & fix styling)
                     return is_string($file) && str_ends_with($file, 'ServiceProvider.php');
 >>>>>>> laraxot/dev
 =======

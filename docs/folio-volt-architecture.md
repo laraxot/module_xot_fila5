@@ -15,6 +15,7 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 <<<<<<< .merge_file_EdfIlV
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -32,11 +33,16 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 - [Patient](../../patient/docs/readme.md) - Gestione pazienti
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Z3sb07
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [UI](../../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/docs/README.md) - Traduzioni
@@ -246,6 +252,7 @@ new class extends Component {
 <<<<<<< .merge_file_EdfIlV
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -318,11 +325,16 @@ new class extends Component {
 - [Visualizzazione](../chart/docs/visualization.md)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_Z3sb07
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -393,10 +405,12 @@ new class extends Component {
 - [Visualizzazione](../Chart/docs/visualization.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Visualizzazione](../Chart/docs/visualization.md)
 =======
 - [Visualizzazione](../Chart/docs/visualization.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Visualizzazione](../Chart/docs/visualization.md)
@@ -404,3 +418,8 @@ new class extends Component {
 =======
 - [Visualizzazione](../Chart/docs/visualization.md)
 >>>>>>> .merge_file_Z3sb07
+=======
+=======
+- [Visualizzazione](../Chart/docs/visualization.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

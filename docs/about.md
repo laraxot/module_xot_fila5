@@ -22,11 +22,13 @@ E' la libreria di estensione di tutte le altre librerie.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 * [about.md](../../../xot/docs/about.md)
 * [about.md](../../../tenant/docs/en/about.md)
 * [about.md](../../../tenant/docs/it/about.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [about.md](../../../xot/docs/about.md)
@@ -35,6 +37,10 @@ E' la libreria di estensione di tutte le altre librerie.
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_y2Ih4j
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Versione Incoming
 
@@ -46,10 +52,12 @@ E' la libreria di estensione di tutte le altre librerie.
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -57,3 +65,8 @@ E' la libreria di estensione di tutte le altre librerie.
 =======
 ---
 >>>>>>> .merge_file_y2Ih4j
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

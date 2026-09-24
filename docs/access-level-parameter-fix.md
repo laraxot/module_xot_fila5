@@ -9,10 +9,12 @@
 Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
 =======
 Error: "Access level to Modules\healthcare_app\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 Error: "Access level to Modules\healthcare_app\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
@@ -20,6 +22,11 @@ Error: "Access level to Modules\healthcare_app\Filament\Widgets\BaseTableWidget:
 =======
 Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
 >>>>>>> .merge_file_7dPLCq
+=======
+=======
+Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Root Cause
 When extending classes or using traits that define methods with specific access levels, child classes must maintain the same or broader access level. In this case, the parent class/trait expects `getTableHeaderActions()` to be public.
@@ -34,10 +41,12 @@ Ensure the method is declared as public in the BaseTableWidget class:
 // In Modules/Quaeris/Filament/Widgets/BaseTableWidget.php
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In Modules/Quaeris/Filament/Widgets/BaseTableWidget.php
 =======
 // In Modules/healthcare_app/Filament/Widgets/BaseTableWidget.php
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // In Modules/healthcare_app/Filament/Widgets/BaseTableWidget.php
@@ -45,6 +54,11 @@ Ensure the method is declared as public in the BaseTableWidget class:
 =======
 // In Modules/Quaeris/Filament/Widgets/BaseTableWidget.php
 >>>>>>> .merge_file_7dPLCq
+=======
+=======
+// In Modules/Quaeris/Filament/Widgets/BaseTableWidget.php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 class BaseTableWidget extends XotBaseTableWidget // or uses HasXotTable trait
 {
     // This method MUST be public to match parent expectations
@@ -79,10 +93,12 @@ In `QuestionChartAnswersWidget.php`, declare the `group` parameter as a public p
 // In Modules/Quaeris/Filament/Widgets/QuestionChartAnswersWidget.php
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In Modules/Quaeris/Filament/Widgets/QuestionChartAnswersWidget.php
 =======
 // In Modules/healthcare_app/Filament/Widgets/QuestionChartAnswersWidget.php
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 // In Modules/healthcare_app/Filament/Widgets/QuestionChartAnswersWidget.php
@@ -90,6 +106,11 @@ In `QuestionChartAnswersWidget.php`, declare the `group` parameter as a public p
 =======
 // In Modules/Quaeris/Filament/Widgets/QuestionChartAnswersWidget.php
 >>>>>>> .merge_file_7dPLCq
+=======
+=======
+// In Modules/Quaeris/Filament/Widgets/QuestionChartAnswersWidget.php
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 class QuestionChartAnswersWidget extends XotBaseTableWidget
 {
     // Declare the parameter that will be passed from parent
@@ -144,10 +165,12 @@ declare(strict_types=1);
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 namespace Modules\healthcare_app\Filament\Widgets;
@@ -155,6 +178,11 @@ namespace Modules\healthcare_app\Filament\Widgets;
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> .merge_file_7dPLCq
+=======
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Modules\Xot\Filament\Traits\TransTrait;
@@ -185,10 +213,12 @@ declare(strict_types=1);
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 namespace Modules\healthcare_app\Filament\Widgets;
@@ -196,6 +226,11 @@ namespace Modules\healthcare_app\Filament\Widgets;
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> .merge_file_7dPLCq
+=======
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Modules\Xot\Filament\Traits\TransTrait;

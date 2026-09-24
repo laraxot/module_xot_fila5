@@ -3,7 +3,11 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
@@ -12,7 +16,11 @@ declare(strict_types=1);
 =======
 declare(strict_types=1);
 
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -93,7 +101,11 @@ use Illuminate\Support\Carbon;
  * @method int                                                             detach(mixed $params)
  * @method void                                                            attach(mixed $params)
 =======
+<<<<<<< HEAD
  * @method mixed                                                           with(array<string, mixed> $array)
+=======
+ * @method mixed                                                           with(array<int, string> $array)
+>>>>>>> da9ae01a0 (.)
  * @method list<string>                                                    getFillable()
  * @method mixed                                                           fill(array<string, mixed> $array)
  * @method mixed                                                           getConnection()
@@ -101,7 +113,11 @@ use Illuminate\Support\Carbon;
  * @method mixed                                                           delete()
  * @method mixed                                                           detach(mixed $params)
  * @method mixed                                                           attach(mixed $params)
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()

@@ -1,13 +1,17 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_XEJbTe
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 # PHPStan Duplicate Imports Fix - [DATE]
 
 ## Analisi Errori PHPStan Modulo Xot
 
 Data analisi: [DATE]
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -23,6 +27,8 @@ Data analisi: 2026-01-05
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ioFrpI
+=======
+>>>>>>> da9ae01a0 (.)
 PHPStan Level: max
 Comando eseguito: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`
 

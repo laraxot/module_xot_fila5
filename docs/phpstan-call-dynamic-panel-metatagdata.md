@@ -43,10 +43,13 @@ Questo pattern consente:
 **Ultima modifica:** 2025-04-16
 **Collegamento indice:** [../../../../docs/index.md](../../../../docs/index.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Ultima modifica:** [DATE]
 **Collegamento indice:** [../../../../../docs/index.md](../../../../../docs/index.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> da9ae01a0 (.)
 
 ## Metodi Validati
 - `getBrandName()`: Restituisce il nome del brand (titolo della pagina)
@@ -67,7 +70,11 @@ Questo pattern consente:
 6. Le eccezioni sono gestite e documentate
 7. I valori null sono esplicitamente dichiarati
 <<<<<<< HEAD
+<<<<<<< HEAD
 8. Le strutture dati complesse sono tipizzate con array shapes
 =======
 8. Le strutture dati complesse sono tipizzate con array shapes
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+8. Le strutture dati complesse sono tipizzate con array shapes
+>>>>>>> da9ae01a0 (.)

@@ -1,11 +1,14 @@
 <<<<<<< .merge_file_Ljfe6A
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_N7GSFL
+=======
+>>>>>>> da9ae01a0 (.)
 ---
 title: "_continuous_integration_tools"
 module: "Xot"
@@ -22,11 +25,16 @@ related:
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_N7GSFL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->

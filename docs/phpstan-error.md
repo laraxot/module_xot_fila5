@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_kBe3Fs
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,8 @@ updated: 2026-08-24
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ytOkhz
+=======
+>>>>>>> da9ae01a0 (.)
 modulo Geo
 
   Line   \Actions\GetLatitudeLongitudeAction.php
@@ -42,6 +45,7 @@ modulo Xot
  ------ -----------------------------------------------------------------------
   28     Method Illuminate\Support\Collection<int,mixed>::get() invoked with 0
          parameters, 1-2 required.
+<<<<<<< HEAD
 <<<<<<< .merge_file_kBe3Fs
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,3 +57,6 @@ modulo Xot
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_ytOkhz
+=======
+
+>>>>>>> da9ae01a0 (.)

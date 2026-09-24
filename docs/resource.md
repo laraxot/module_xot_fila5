@@ -59,11 +59,14 @@ class MyResource extends XotBaseResource
 <<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_NLkSef
+=======
+>>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
@@ -74,12 +77,18 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_NLkSef
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     {
         return [
             // Schema del form
@@ -116,9 +125,12 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> da9ae01a0 (.)
    - ✅ `public function getFormSchema(): array`
 =======
    - ✅ `public function getFormSchema(): array`
@@ -128,6 +140,7 @@ class MyResource extends XotBaseResource
 =======
    - ✅ `public static function getFormSchema(): array`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
    - ✅ `public static function getFormSchema(): array`
@@ -135,6 +148,11 @@ class MyResource extends XotBaseResource
 =======
    - ✅ `public function getFormSchema(): array`
 >>>>>>> .merge_file_NLkSef
+=======
+=======
+   - ✅ `public static function getFormSchema(): array`
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -250,11 +268,14 @@ class ListRecords extends XotBaseListRecords
 <<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_NLkSef
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -265,12 +286,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_NLkSef
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -603,11 +630,14 @@ public function getTableColumns(): array
 <<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_NLkSef
+=======
+>>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
@@ -618,12 +648,18 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_NLkSef
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 {
     return [
         'nome' => TextInput::make('nome'),
@@ -706,10 +742,12 @@ public function getTableBulkActions(): array
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 * [resource.md](../../../xot/docs/filament/resource.md)
 * [resource.md](../../../xot/docs/resource.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 * [resource.md](../../../xot/docs/filament/resource.md)
@@ -717,6 +755,10 @@ public function getTableBulkActions(): array
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_NLkSef
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ### Versione Incoming
 
@@ -728,10 +770,12 @@ public function getTableBulkActions(): array
 ---
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 ---
@@ -739,3 +783,8 @@ public function getTableBulkActions(): array
 =======
 ---
 >>>>>>> .merge_file_NLkSef
+=======
+=======
+---
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

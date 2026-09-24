@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/HichemTab-tech/LaravelFS
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_5QFPsB
 <<<<<<< HEAD
 https://github.com/HichemTab-tech/LaravelFS
@@ -77,9 +80,15 @@ https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5bxFdG
+=======
+=======
+https://github.com/HichemTab-tech/LaravelFS
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

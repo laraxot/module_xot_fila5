@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 =======
 =======
+=======
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_nbRc6Z
 <<<<<<< HEAD
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
@@ -48,9 +51,15 @@ updated: 2026-08-24
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 >>>>>>> .merge_file_LAU83r
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_H4iYTa
+=======
+=======
+https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

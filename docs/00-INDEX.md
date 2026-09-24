@@ -21,10 +21,14 @@
 
 ## 🧹 Manutenzione
 - 🗑️ [Cleanup Plan](./cleanup-action-plan.md) - Strategia per consolidare documenti accumulati.
+<<<<<<< HEAD
 <<<<<<< .merge_file_71blxw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_T8QccE
 =======
 <<<<<<< HEAD
@@ -59,17 +63,25 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IMX3dS
+=======
+=======
+- 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
+- 🔁 [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - UrlService/ThemeService/HtmlService migrati ad Actions; ConfigService/XotService/ArrayService/ProfileTest archiviati in .bak (codice morto); ArtisanService/RouteService/ModuleService/Translators/Trend lasciati intatti per sessione dedicata.
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 ## 🔗 Moduli Dipendenti
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< HEAD
 <<<<<<< .merge_file_71blxw
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +89,9 @@
 # Xot Module Documentation Index
 
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_T8QccE
 
 # Xot Module Documentation Index
@@ -154,6 +169,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -162,6 +178,12 @@
 # Xot Module Documentation Index
 
 >>>>>>> .merge_file_IMX3dS
+=======
+=======
+# Xot Module Documentation Index
+
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 > **Core Framework Module** - Provides base classes and shared functionality for all modules
 
 ## Roadmap
@@ -170,11 +192,15 @@
 
 ## 📚 Documentation Sections
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_71blxw
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### Composer / dipendenze
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_T8QccE
 ### Composer / dipendenze
 =======
@@ -182,7 +208,11 @@
 ### Composer / dipendenze
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ### Core Architecture
 - [XotBase Classes & Inheritance Patterns](./xotbase-extension.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
@@ -190,21 +220,30 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 ### Composer / dipendenze
 >>>>>>> .merge_file_IMX3dS
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 - [composer-root-skeleton-modular](./wiki/concepts/composer-root-skeleton-modular.md) — root skeleton + merge solo moduli
 - [theme-psr4-autoload-without-merge](./wiki/concepts/theme-psr4-autoload-without-merge.md) — autoload temi senza merge root
 - [Module Dependency Management](./composer-module-dependency-management.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_71blxw
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_T8QccE
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
 =======
@@ -215,6 +254,7 @@
 - [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 - [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
@@ -223,6 +263,12 @@
 =======
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
 >>>>>>> .merge_file_IMX3dS
+=======
+=======
+- [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
+- [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 - [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study.md)
 - [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog.md) - Studio completo package-by-package da `composer show`
 - [Database Connection Configuration](./database-configuration-critical-rules.md)
@@ -282,6 +328,7 @@
 
 ## Dependency Intelligence
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_71blxw
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -289,6 +336,9 @@
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](dependency-intelligence.md)
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_T8QccE
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](dependency-intelligence.md)
@@ -313,8 +363,14 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_IMX3dS
+=======
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)

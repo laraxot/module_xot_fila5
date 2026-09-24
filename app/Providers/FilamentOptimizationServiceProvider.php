@@ -8,7 +8,15 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+<<<<<<< HEAD
 <<<<<<< .merge_file_cldoLI
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_GNpg2u
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+use Nwidart\Modules\Module;
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,14 +30,19 @@ use function Safe\preg_match;
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
 >>>>>>> .merge_file_D0wWUc
 =======
+<<<<<<< HEAD
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
 use function Safe\preg_match;
 
@@ -40,11 +53,17 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_D0wWUc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uSdLuQ
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -78,10 +97,14 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             $this->configureQueryLogging();
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_cldoLI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GNpg2u
 =======
 =======
@@ -93,11 +116,16 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 
 <<<<<<< HEAD
 >>>>>>> .merge_file_D0wWUc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uSdLuQ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -168,10 +196,14 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< .merge_file_cldoLI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_GNpg2u
 =======
 =======
@@ -187,11 +219,16 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     /**
 <<<<<<< HEAD
 >>>>>>> .merge_file_D0wWUc
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_uSdLuQ
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

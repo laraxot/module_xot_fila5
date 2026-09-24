@@ -18,11 +18,17 @@ use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
 use Filament\Tables;
 =======
@@ -31,14 +37,20 @@ use Filament\Tables;
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 use Filament\Tables;
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
@@ -47,7 +59,14 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Filament\Tables\Filters\BaseFilter;
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +74,19 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\TernaryFilter;
+use Filament\Tables\Table;
+>>>>>>> .merge_file_x7eehp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -74,21 +106,31 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
 use RuntimeException;
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
 use RuntimeException;
 =======
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 use RuntimeException;
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+use RuntimeException;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -97,22 +139,32 @@ use Webmozart\Assert\Assert;
  * Provides enhanced table functionality with translations and optimized structure.
  *
  * @property TableLayoutEnum $layoutView
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property string|null $tableSearch
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
  * @property string|null $tableSearch
 =======
  * @property string|null     $tableSearch
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
  * @property string|null $tableSearch
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+ * @property string|null $tableSearch
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CyclomaticComplexity")
@@ -218,16 +270,21 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
                         if ($state === null || $state === '') {
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
                         if ($state === null || $state === '') {
 =======
                         if (null === $state || '' === $state) {
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                         if (null === $state || '' === $state) {
@@ -235,6 +292,11 @@ trait HasXotTable
 =======
                         if ($state === null || $state === '') {
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+                        if ($state === null || $state === '') {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
                             return $labelText.': —';
                         }
 
@@ -365,14 +427,19 @@ trait HasXotTable
         $sortColumn = $this->getDefaultTableSortColumn();
         // @phpstan-ignore method.deprecated
         $sortDirection = $this->getDefaultTableSortDirection();
+<<<<<<< HEAD
         if ($sortColumn !== null && $sortDirection !== null) {
 <<<<<<< .merge_file_Z494A9
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
         if ($sortColumn !== null && $sortDirection !== null) {
 =======
         if (null !== $sortColumn && null !== $sortDirection) {
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         $table = $table
@@ -399,10 +466,16 @@ trait HasXotTable
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+        if ($sortColumn !== null && $sortDirection !== null) {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -412,6 +485,17 @@ trait HasXotTable
 =======
 >>>>>>> .merge_file_5jVuPL
         if ($pollInterval !== null) {
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+        if ($pollInterval !== null) {
+=======
+        if (null !== $pollInterval) {
+>>>>>>> .merge_file_x7eehp
+=======
+        if ($pollInterval !== null) {
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             $table = $table->poll($pollInterval);
         }
 
@@ -433,12 +517,18 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string|int, Filter|TernaryFilter|BaseFilter>
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
      * @return array<string|int, \Filament\Tables\Filters\Filter|TernaryFilter|BaseFilter>
 =======
@@ -448,9 +538,11 @@ trait HasXotTable
      * @return array<string|int, Filter|TernaryFilter|BaseFilter>
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @return array<string|int, Filter|TernaryFilter|BaseFilter>
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
@@ -458,6 +550,10 @@ trait HasXotTable
 =======
      * @return array<string|int, Filter|TernaryFilter|BaseFilter>
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function getTableFilters(): array
     {
@@ -515,11 +611,17 @@ trait HasXotTable
         }
         // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
 <<<<<<< HEAD
         
 =======
@@ -528,13 +630,19 @@ trait HasXotTable
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
@@ -620,6 +728,7 @@ trait HasXotTable
     /**
      * Get model class.
      *
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -627,12 +736,39 @@ trait HasXotTable
 <<<<<<< .merge_file_mhFang
 =======
 >>>>>>> .merge_file_5jVuPL
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+     *
+     * @return class-string<Model>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+     * @phpstan-return class-string<Model>
+     *
+     * @throws \Exception Se non viene trovata una classe modello valida
+<<<<<<< HEAD
+=======
+     * @throws \Exception Se non viene trovata una classe modello valida
+>>>>>>> da9ae01a0 (.)
      *
      * @return class-string<Model>
      *
      * @phpstan-return class-string<Model>
+<<<<<<< HEAD
      *
      * @throws \Exception Se non viene trovata una classe modello valida
+=======
+>>>>>>> .merge_file_x7eehp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
      */
     public function getModelClass(): string
     {
@@ -645,9 +781,39 @@ trait HasXotTable
             $related = $relationship instanceof Builder ? $relationship->getModel() : $relationship->getRelated();
             if ($related instanceof Model) {
                 /** @var class-string<Model> $relatedClass */
+<<<<<<< HEAD
                 $relatedClass = get_class($related);
 
                 return $relatedClass;
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+<<<<<<< HEAD
+            $relatedClass = get_class($related);
+
+            return $relatedClass;
+=======
+<<<<<<< HEAD
+            $relatedClass = get_class($related);
+
+            return $relatedClass;
+=======
+                $relatedClass = get_class($related);
+
+                return $relatedClass;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+                $relatedClass = get_class($related);
+
+                return $relatedClass;
+>>>>>>> .merge_file_x7eehp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
         }
 
@@ -665,7 +831,19 @@ trait HasXotTable
             Assert::string($model);
 <<<<<<< HEAD
             if (! is_a($model, Model::class, true)) {
+<<<<<<< HEAD
                 throw new RuntimeException('Invalid model class '.$model);
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+                throw new RuntimeException('Invalid model class '.$model);
+=======
+                throw new \RuntimeException('Invalid model class '.$model);
+>>>>>>> .merge_file_x7eehp
+=======
+                throw new RuntimeException('Invalid model class '.$model);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             }
 =======
             Assert::classExists($model);
@@ -675,16 +853,21 @@ trait HasXotTable
             return $model;
         }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z494A9
 <<<<<<< HEAD
 <<<<<<< HEAD
         throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> da9ae01a0 (.)
 <<<<<<< .merge_file_mhFang
         throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
 =======
         throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
@@ -692,6 +875,11 @@ trait HasXotTable
 =======
         throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+        throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -714,11 +902,17 @@ trait HasXotTable
 
         $trimmed = Str::trim(SafeStringCastAction::cast($tableSearch));
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+>>>>>>> da9ae01a0 (.)
         return $trimmed !== '' ? $trimmed : null;
 <<<<<<< .merge_file_Z494A9
 =======
         return '' !== $trimmed ? $trimmed : null;
 >>>>>>> .merge_file_x7eehp
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         $search = $this->tableSearch ?? null;
@@ -727,6 +921,11 @@ trait HasXotTable
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_5jVuPL
+=======
+=======
+        return $trimmed !== '' ? $trimmed : null;
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
     }
 
     /**
@@ -984,7 +1183,29 @@ trait HasXotTable
         if ($this->hasColumn('order_column')) {
             return 'order_column';
         }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+
+>>>>>>> .merge_file_x7eehp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
         return null;
     }
 
@@ -994,8 +1215,32 @@ trait HasXotTable
     protected function applyReorderable(Table $table): Table
     {
         $orderColumn = $this->getOrderColumn();
+<<<<<<< HEAD
 
         if ($orderColumn !== null) {
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mhFang
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+<<<<<<< HEAD
+       
+=======
+<<<<<<< HEAD
+       
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+
+        if ($orderColumn !== null) {
+<<<<<<< HEAD
+=======
+
+        if (null !== $orderColumn) {
+>>>>>>> .merge_file_x7eehp
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
             return $table->reorderable($orderColumn);
         }
 

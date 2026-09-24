@@ -2,12 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_iukr9J
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+<<<<<<< .merge_file_iukr9J
+<<<<<<< HEAD
+=======
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: relationx
@@ -174,9 +181,15 @@ See canonical documentation: ../../../../Themes/docs/shared-components/RelationX
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
 >>>>>>> 3792da0d (Check & fix styling)
 =======
 >>>>>>> .merge_file_cBymq2
+=======
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
+>>>>>>> 930f8146 (Check & fix styling)
+>>>>>>> da9ae01a0 (.)
