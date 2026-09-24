@@ -12,11 +12,12 @@ class SaveArrayAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-     * @param  array<int|string, mixed>  $data
-=======
+     * <<<<<<< HEAD.
+     *
      * @param array<int|string, mixed> $data
->>>>>>> laraxot/dev
+     *                                       =======
+     * @param array<int|string, mixed> $data
+     *                                       >>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool
     {
