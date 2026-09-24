@@ -16,6 +16,7 @@ class GetViewAction
      * Summary of execute.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return view-string
      *
@@ -25,6 +26,8 @@ class GetViewAction
     {
         if ($file0 === '') {
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @throws \Exception
      *
      * @return view-string
@@ -32,7 +35,10 @@ class GetViewAction
     public function execute(string $tpl = '', string $file0 = ''): string
     {
         if ('' === $file0) {
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             $backtrace = debug_backtrace();
             $file0 = app(FixPathAction::class)->execute($backtrace[0]['file'] ?? '');
         }
@@ -40,10 +46,14 @@ class GetViewAction
         $file0 = Str::after($file0, base_path());
         $arr = explode(DIRECTORY_SEPARATOR, $file0);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($arr[0] === '') {
 =======
         if ('' === $arr[0]) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $arr[0]) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $arr = array_slice($arr, 1);
             $arr = array_values($arr);
         }
@@ -53,7 +63,11 @@ class GetViewAction
         $tmp = array_slice($arr, 4); // con "app"
 
         $tmp = collect($tmp)
+<<<<<<< HEAD
             ->map(static function (string $item) {
+=======
+            ->map(static function ($item) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 $item = str_replace('.php', '', $item);
 
                 return Str::slug(Str::snake($item));
@@ -64,10 +78,14 @@ class GetViewAction
         // $pub_view è sempre stringa perché costruita da stringhe
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($tpl !== '') {
 =======
         if ('' !== $tpl) {
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $tpl) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $pub_view .= '.'.$tpl;
         }
         // PHPStan: $pub_view è sempre non-falsy-string, Assert ridondante rimosso
@@ -78,10 +96,14 @@ class GetViewAction
         $view = Str::lower($mod).'::'.$tmp;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($tpl !== '') {
 =======
         if ('' !== $tpl) {
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $tpl) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $view .= '.'.$tpl;
         }
 

@@ -31,6 +31,7 @@ Alcune classi `XotBase` impongono pattern specifici per garantire la conformità
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -44,6 +45,9 @@ Alcune classi `XotBase` impongono pattern specifici per garantire la conformità
 - **XotBaseResource**: Deve implementare `public static function getFormSchema(): array` (centralizzato).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **XotBaseResource**: Deve implementare `public static function getFormSchema(): array` (centralizzato).
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### 3. Namespace Standard
 Assicurati di usare i namespace corretti. Mai includere `App` nel percorso se sei all'interno di un modulo (es. `Modules\Xot\Filament\...` non `Modules\Xot\App\Filament\...`).

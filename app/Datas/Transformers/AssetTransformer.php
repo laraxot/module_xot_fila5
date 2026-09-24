@@ -20,6 +20,7 @@ class AssetTransformer implements Transformer
     /**
      * Trasforma un riferimento di file in un percorso completo.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param DataProperty          $_property La proprietà di dati (non utilizzata)
@@ -31,6 +32,11 @@ class AssetTransformer implements Transformer
      * @param TransformationContext $_context  Il contesto di trasformazione (non utilizzato)
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param DataProperty          $_property La proprietà di dati (non utilizzata)
+     * @param mixed                 $value     Il valore da trasformare (es. "user::image.png")
+     * @param TransformationContext $_context  Il contesto di trasformazione (non utilizzato)
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return string Il percorso completo (es. "/modules/user/resources/image.png")
      */

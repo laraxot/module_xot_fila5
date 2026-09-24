@@ -197,6 +197,7 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 
 *Last Updated: 2025-08-27*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Architecture Version: XotBase 2.0*
 =======
 <<<<<<< HEAD
@@ -206,3 +207,6 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 *Architecture Version: XotBase 2.0*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Architecture Version: XotBase 2.0*
+>>>>>>> 8d801bbe (Check & fix styling)

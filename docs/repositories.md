@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Gestione dei Repository
 
 ## Repository Pattern
@@ -143,6 +146,7 @@ https://github.com/antonioribeiro/tracker
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 
@@ -158,3 +162,5 @@ http://andersonandra.de/l5-repository/
 https://www.programmersought.com/article/8489242324/
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -12,6 +13,8 @@ https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # _nwidart
 
 <!-- Contenuto migrato da _docs/_nwidart.txt -->

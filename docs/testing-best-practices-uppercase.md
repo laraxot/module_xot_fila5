@@ -39,11 +39,14 @@ function mockXotData(): void
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -51,6 +54,7 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -69,6 +73,8 @@ function mockXotData(): void
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -153,6 +159,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
    - Layout structure
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_DssTs6
 <<<<<<< HEAD
@@ -171,6 +178,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 2. **Middleware** (Raccomandato)
 >>>>>>> .merge_file_PDp0OC
 >>>>>>> laraxot/dev
+=======
+2. **Middleware** (Raccomandato)
+>>>>>>> 8d801bbe (Check & fix styling)
    - Authentication flow
    - Authorization checks
    - Redirect behavior
@@ -206,6 +216,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - ✅ **Architecture**: Separazione rispettata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_DssTs6
 <<<<<<< HEAD
@@ -224,6 +235,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ### Gold Standard Criteria
 >>>>>>> .merge_file_PDp0OC
 >>>>>>> laraxot/dev
+=======
+### Gold Standard Criteria
+>>>>>>> 8d801bbe (Check & fix styling)
 - ✅ **Success Rate**: > 90% test passati
 - ✅ **Zero Warnings**: Nessun warning PHP/Pest
 - ✅ **Performance**: < 3 secondi per test suite
@@ -244,6 +258,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -257,6 +272,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 # Success rate calculation
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Success rate calculation
+>>>>>>> 8d801bbe (Check & fix styling)
 ./vendor/bin/pest {TestFile} --compact
 
 # Memory usage monitoring
@@ -283,14 +301,21 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [Architecture Separation Rules](../Cms/project_docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ---
 
 <<<<<<< HEAD
+=======
+
+---
+
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
+<<<<<<< HEAD
 =======
 **Status**: ✅ Best Practices Validate  
 **Enforcement**: Obbligatorio per tutti i test  
@@ -325,3 +350,5 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

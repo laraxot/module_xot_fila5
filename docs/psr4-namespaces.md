@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Regola PSR-4 Namespace per Moduli Laravel
 
 ## Quando
@@ -32,6 +35,7 @@ namespace Modules\Patient\app\States;
 - [ ] Tutti gli use statement sono coerenti con la struttura delle cartelle
 - [ ] Dopo ogni modifica, esegui `composer dump-autoload`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -43,3 +47,5 @@ canonical: ../../../Themes/docs/shared-components/psr4-namespaces.md
 See canonical documentation: ../../../Themes/docs/shared-components/psr4-namespaces.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

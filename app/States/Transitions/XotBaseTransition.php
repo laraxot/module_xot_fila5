@@ -20,11 +20,16 @@ abstract class XotBaseTransition
         public Model $record,
         public ?string $message = '',
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
 
     public function handle(): Model
     {
@@ -68,7 +73,11 @@ abstract class XotBaseTransition
     /**
      * Get notification attachments.
      *
+<<<<<<< HEAD
      * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
+=======
+     * @return array<int, array<string, string>>
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function getNotificationAttachments(): array
     {
@@ -93,10 +102,14 @@ abstract class XotBaseTransition
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
 =======
      * @param array<string, mixed> $data
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {

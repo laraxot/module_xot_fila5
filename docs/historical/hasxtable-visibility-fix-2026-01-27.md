@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_h9Y78O
 =======
 <<<<<<< .merge_file_vjwYnY
 >>>>>>> .merge_file_ZGgWnK
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 title: "Hasxtable Visibility Fix"
 type: concept
@@ -18,6 +21,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [hasxtable-visibility-fix.md](./hasxtable-visibility-fix.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_h9Y78O
 =======
 =======
@@ -162,3 +166,5 @@ curl http://quaeris.local/quaeris/admin/ats/survey-pdfs/16/question-charts/226
 *Ultimo aggiornamento: 2026-01-27*
 >>>>>>> .merge_file_hDcpUG
 >>>>>>> .merge_file_ZGgWnK
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

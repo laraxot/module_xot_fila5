@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Export;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // use Modules\Xot\Services\ArrayService;
 
 >>>>>>> laraxot/dev
+=======
+// use Modules\Xot\Services\ArrayService;
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\ViewExport;
@@ -26,16 +31,22 @@ class ExportXlsByView
      * Esporta una vista in Excel.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  View  $view  La vista da esportare
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  string  $filename  Nome del file Excel
      * @param  string|null  $transKey  Chiave di traduzione per i campi
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param View               $view     La vista da esportare
      * @param array<int, string> $fields   Campi da includere nell'export
      * @param string             $filename Nome del file Excel
      * @param string|null        $transKey Chiave di traduzione per i campi
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(
         View $view,

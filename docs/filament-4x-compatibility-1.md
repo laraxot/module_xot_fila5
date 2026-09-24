@@ -206,13 +206,17 @@ $rows = $query->get();
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -222,3 +226,5 @@ $rows = $query->get();
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

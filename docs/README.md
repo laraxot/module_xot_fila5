@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
@@ -153,6 +154,8 @@ Documentation should be:
 
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -173,10 +176,28 @@ Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modula
 - **Estensibilità**: Progettato per facilitare l'aggiunta di nuovi moduli e l'espansione delle funzionalità esistenti.
 - **Manutenibilità**: Codice pulito, ben documentato e supportato da strumenti di analisi statica.
 
+<<<<<<< HEAD
+=======
+### 🏗️ **Module Directory Structure Standard**
+To ensure consistent autoloading and architectural integrity, all modules must follow this structure:
+- **app/**: Contains all PHP code (Actions, Models, etc.). Mapped to `Modules\{Module}\` in `composer.json`.
+- **database/**: strictly lowercase.
+- **Forbidden**: Capitalized directories at the root level (e.g., `Actions/`, `Database/`) are forbidden.
+
+## 📚 **Quick Navigation**
+
+- **[Architecture Patterns](./architecture-patterns.md)** — Complete design patterns, class hierarchies, traits ecosystem
+- **[Documentation Index](./INDEX.md)** — Full table of contents and component reference
+- **[XOTBASE_ARCHITECTURE_PHILOSOPHY.md](./XOTBASE_ARCHITECTURE_PHILOSOPHY.md)** — Core design philosophy
+
+---
+
+>>>>>>> 8d801bbe (Check & fix styling)
 ## ⚡ **Architettura Core**
 
 ### 🏗️ **Base Classes Pattern**
 Tutti i componenti principali dei moduli devono estendere le classi base fornite da Xot per ereditare funzionalità comuni e garantire coerenza.
+<<<<<<< HEAD
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 
 **Implementazione**:
@@ -208,11 +229,17 @@ class MyAction
 =======
 // Esempio di una Resource Filament
 >>>>>>> laraxot/dev
+=======
+
+```php
+// Esempio di una Resource Filament
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
     // table() and form() inherited from base
 }
@@ -257,6 +284,9 @@ Un pattern standardizzato per incapsulare la business logic in classi riutilizza
 
 =======
     
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
     // Il metodo table() e form() NON devono essere sovrascritti
     // se non per aggiungere logica specifica, ma la base
     // è già fornita da XotBaseResource.
@@ -282,7 +312,10 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```php
 use Modules\Xot\Actions\XotBaseAction;
 
@@ -291,6 +324,7 @@ class CreateUserAction extends XotBaseAction
     public function execute(array $data): User
     {
         $user = User::create($data);
+<<<<<<< HEAD
 <<<<<<< HEAD
         event(new UserCreated($user));
         return $user;
@@ -372,10 +406,16 @@ class MyAction
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+=======
+        $this->logActivity('user.created', $user); // Logging automatico
+        event(new UserCreated($user)); // Dispatching eventi
+        return $user;
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### Enums System
 
@@ -508,6 +548,10 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
 >>>>>>> laraxot/dev
+=======
+### 🏷️ **Enums System**
+Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
+>>>>>>> 8d801bbe (Check & fix styling)
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
 
@@ -519,14 +563,19 @@ enum UserStatus: string implements XotBaseEnum
     public function getLabel(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Traduzione gestita centralmente
 >>>>>>> laraxot/dev
+=======
+        // Traduzione gestita centralmente
+>>>>>>> 8d801bbe (Check & fix styling)
         return __('xot::enums.user_status.'.$this->value);
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### Filament Integration
 
@@ -660,6 +709,16 @@ All modules depend on **Xot**. Never have circular dependencies.
 =======
 ## 🛠️ **Sviluppo e Qualità**
 
+=======
+### 🛠️ **Sviluppo e Qualità**
+
+### Analisi Statica (PHPStan)
+Per garantire la stabilità di tutto l'ecosistema, l'analisi deve essere eseguita con memoria illimitata per evitare crash dei parallel workers:
+```bash
+php -d memory_limit=-1 ./vendor/bin/phpstan analyse Modules/
+```
+
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Convenzioni
 - **Namespace**: I namespace dei moduli **NON** devono includere il segmento `app`.
 - **Tipizzazione Forte**: Utilizzo di `declare(strict_types=1);` e type hints rigorosi in tutto il codice.
@@ -701,6 +760,7 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 
 ## 🔗 **Link Utili**
 - [CHANGELOG](./CHANGELOG.md)
+<<<<<<< HEAD
 - [CHANGELOG](./changelog.md)
 - [Guida alla Risoluzione dei Conflitti Git](../../../bashscripts/docs/git-conflict-resolution-guide.md)
 - [Convenzioni sui Namespace](./namespace_conventions.md)
@@ -899,3 +959,74 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+=======
+- [Guida alla Risoluzione dei Conflitti Git](../../../bashscripts/docs/git-conflict-resolution-guide.md)
+- [Convenzioni sui Namespace](./namespace_conventions.md)
+- [Linee Guida per il Testing](./testing.md)
+---
+title: "Xot Module Documentation"
+type: documentation
+tags: [module, documentation]
+created: 2026-06-05
+updated: 2026-06-05
+---
+
+# Modulo Xot - Documentazione
+
+## Overview
+
+Il modulo **Xot** è il nucleo fondativo dell'intero progetto [PROJECT_NAME] platform. Fornisce classi base, trait, servizi e configurazioni condivise da tutti gli altri moduli.
+
+## Architettura
+
+### Classi Base Principali
+
+| Classe | Scopo | Estende |
+|--------|-------|---------|
+| `XotBaseModel` | Modello base per tutti i moduli | `Illuminate\Database\Eloquent\Model` |
+| `XotBaseMigration` | Migrazioni anonime standardizzate | `Illuminate\Database\Migrations\Migration` |
+| `XotBaseResource` | Risorse Filament base | `Filament\Resources\Resource` |
+| `XotBaseServiceProvider` | ServiceProvider modulare | `Illuminate\Support\ServiceProvider` |
+| `XotBaseWidget` | Widget Filament base | `Filament\Widgets\Widget` |
+| `XotBaseWizardWidget` | Widget con form wizard multi-step (Filament `Wizard` / `Step`) | `XotBaseWidget` |
+
+### Trait Fondamentali
+
+- `HasXotTable`: Gestione tabelle Filament centralizzata
+- `InteractsWithForms`: Gestione form nei widget
+- `RelationX`: Relazioni many-to-many estese
+
+## Collegamenti
+- [Installazione stack LAMP / PHP 8.4 (Debian, repo Sury)](./lamp/install.txt)
+- [Vite Configuration](./vite-configuration.md)
+- [Theme Assets Workflow](./theme-assets-workflow.md)
+- [BMAD Method (progetto)](../../../docs/bmad/setup-guide.md) — processo AI/agile e artefatti `_bmad-output/`
+
+- [Documentazione Root](../../../docs/XOT_MODULE.md)
+- [Regole Architettura](./architecture/)
+- [PHPStan Configuration](./phpstan/)
+
+## Regole Critiche
+
+1. **MAI estendere direttamente classi Laravel/Filament** - Usare sempre wrapper Xot
+2. **Configurazione PHPStan solo in `laravel/phpstan.neon`**
+3. **Tutte le migrazioni devono usare classi anonime**
+
+## Backlinks
+
+- [User Module](../User/docs/)
+- [UI Module](../UI/docs/)
+- [Tenant Module](../Tenant/docs/)
+
+## LLM Wiki Workflow
+
+- Canonical wiki layer: [../../../../docs/wiki/README.md](../../../../docs/wiki/README.md)
+- Governance page: [../../../../docs/wiki/concepts/llm-wiki-governance.md](../../../../docs/wiki/concepts/llm-wiki-governance.md)
+
+
+## Standard Rules & Workflow
+
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+>>>>>>> 8d801bbe (Check & fix styling)

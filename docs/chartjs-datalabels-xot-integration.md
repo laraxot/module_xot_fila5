@@ -922,6 +922,7 @@ class ExampleChartWidget extends XotBaseChartWidget
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
 =======
 <<<<<<< .merge_file_8I2bBr
@@ -935,6 +936,9 @@ For a minimal, production-ready example showing 2 labels per bar using `RawJs::m
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4gLdAO
 >>>>>>> laraxot/dev
+=======
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+>>>>>>> 8d801bbe (Check & fix styling)
 
 Key pattern:
 ```php
@@ -966,6 +970,7 @@ JS);
 5. **Maintainability**: Keep the base implementation clean and well-documented
 6. **Scalability**: Design configuration options that can be extended without breaking existing functionality
 <<<<<<< HEAD
+<<<<<<< HEAD
 7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
 =======
 <<<<<<< .merge_file_8I2bBr
@@ -978,3 +983,6 @@ JS);
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4gLdAO
 >>>>>>> laraxot/dev
+=======
+7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+>>>>>>> 8d801bbe (Check & fix styling)

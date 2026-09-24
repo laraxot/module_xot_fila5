@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview
@@ -93,6 +96,7 @@ $content = Safe\file_get_contents('file.txt');
 - [Code Quality Audit](./code-quality-audit.md)
 - [CI Quality Pipeline](./ci-quality-pipeline.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -104,3 +108,5 @@ canonical: ../../../Themes/docs/shared-components/code-quality-1-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/code-quality-1-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

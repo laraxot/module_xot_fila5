@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_Kvxj6Z
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GobJu2
 >>>>>>> .merge_file_RBwxuT
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: architectural-rule-resource-vs-form
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_Kvxj6Z
 =======
 <<<<<<< .merge_file_bPG3mE
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_GobJu2
 >>>>>>> .merge_file_RBwxuT
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # BMAD Story 25 — Regola architetturale: XotBaseResource vs XotBaseResourceForm
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

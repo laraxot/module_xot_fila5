@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 use Modules\Xot\Filament\Tables\Columns\XotBaseViewColumn;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 final class XotAbsViewColumn3 extends XotBaseViewColumn {}
 =======
 <<<<<<< .merge_file_glPcYz
@@ -23,3 +24,8 @@ final class XotAbsViewColumn3 extends XotBaseViewColumn
 }
 >>>>>>> .merge_file_U2mXWY
 >>>>>>> laraxot/dev
+=======
+final class XotAbsViewColumn3 extends XotBaseViewColumn
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

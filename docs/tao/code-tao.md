@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Il Tao del Codice
 
 ## Il Principio Fondamentale

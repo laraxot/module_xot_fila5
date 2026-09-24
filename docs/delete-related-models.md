@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GHEm9x
 <<<<<<< HEAD
@@ -51,3 +52,9 @@ https://andy-carter.com/blog/using-laravel-s-eloquent-traits
 >>>>>>> .merge_file_Car7gV
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+con un trait 
+https://tighten.co/blog/laravel-tip-bootable-model-traits/
+
+https://andy-carter.com/blog/using-laravel-s-eloquent-traits
+>>>>>>> 8d801bbe (Check & fix styling)

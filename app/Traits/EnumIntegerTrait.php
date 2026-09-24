@@ -88,6 +88,7 @@ trait EnumIntegerTrait
     /**
      * Get enum case by integer value.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param int $value Integer value to find
@@ -111,6 +112,9 @@ trait EnumIntegerTrait
      * >>>>>>> .merge_file_cEwT4Z
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param int $value Integer value to find
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return static|null Matching case or null
      */
@@ -128,6 +132,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is greater than another.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param int $value Value to compare against
@@ -148,6 +153,9 @@ trait EnumIntegerTrait
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_cEwT4Z
      *                   >>>>>>> laraxot/dev
+=======
+     * @param int $value Value to compare against
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function isGreaterThan(int $value): bool
     {
@@ -157,6 +165,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is less than another.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param int $value Value to compare against
@@ -177,6 +186,9 @@ trait EnumIntegerTrait
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_cEwT4Z
      *                   >>>>>>> laraxot/dev
+=======
+     * @param int $value Value to compare against
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function isLessThan(int $value): bool
     {
@@ -186,6 +198,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value equals another.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param int $value Value to compare against
@@ -206,6 +219,9 @@ trait EnumIntegerTrait
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_cEwT4Z
      *                   >>>>>>> laraxot/dev
+=======
+     * @param int $value Value to compare against
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function equals(int $value): bool
     {

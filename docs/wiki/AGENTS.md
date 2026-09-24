@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -30,6 +31,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

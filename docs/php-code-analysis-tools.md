@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_SoxooX
 =======
@@ -15,6 +16,8 @@
 >>>>>>> .merge_file_M2jP9l
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->
@@ -41,6 +44,7 @@ https://phpmd.org/
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
@@ -53,6 +57,9 @@ https://phpmd.org/
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_5f05n5
 >>>>>>> .merge_file_M2jP9l
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 ---
 title: 'Php code analysis tools — risorse esterne'
@@ -91,6 +98,7 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_SoxooX
 =======
 <<<<<<< .merge_file_flisOV
@@ -111,4 +119,6 @@ updated: 2026-08-24
 >>>>>>> .merge_file_5f05n5
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_M2jP9l
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev

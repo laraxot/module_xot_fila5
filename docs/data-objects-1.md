@@ -77,6 +77,7 @@
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Data Objects Patient](../patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
 <<<<<<< HEAD
@@ -88,3 +89,8 @@
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Data Objects Patient](../Patient/docs/data-objects.md)
+- [Best Practices](./best-practices.md)
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 8d801bbe (Check & fix styling)

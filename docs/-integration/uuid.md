@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_DeqDdU
 <<<<<<< HEAD
@@ -40,10 +41,16 @@ updated: 2026-08-24
 >>>>>>> .merge_file_4xkjsU
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# uuid
+
+<!-- Contenuto migrato da _docs/uuid.txt -->
+>>>>>>> 8d801bbe (Check & fix styling)
 
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 Universally Unique Identifiers
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +62,8 @@ Universally Unique Identifiers
 =======
 >>>>>>> .merge_file_4xkjsU
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # _uuid
 
 <!-- Contenuto migrato da _docs/_uuid.txt -->
@@ -63,6 +72,7 @@ Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
@@ -75,3 +85,5 @@ https://www.larashout.com/using-uuids-in-laravel-models
 =======
 >>>>>>> .merge_file_4xkjsU
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

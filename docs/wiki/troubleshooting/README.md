@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_RYtcQU
 =======
@@ -94,6 +95,8 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -129,17 +132,23 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -158,6 +167,7 @@ updated: 2026-08-24
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -183,6 +193,27 @@ updated: 2026-08-24
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 
 ### Translation Problems
@@ -217,8 +248,11 @@ updated: 2026-08-24
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 # Xot
 
@@ -258,6 +292,7 @@ Core module for the FixCity Platform.
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
@@ -271,3 +306,7 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_W8gVlC
 >>>>>>> .merge_file_MXE3H5
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)

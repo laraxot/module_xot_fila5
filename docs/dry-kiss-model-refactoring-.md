@@ -10,6 +10,7 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Linee di codice eliminate**: ~200+
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
 <<<<<<< HEAD
 =======
@@ -32,6 +33,9 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
@@ -43,6 +47,7 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\healthcare_app\Models;
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
 
@@ -80,11 +85,14 @@ namespace Modules\ModuloEsempio\Models;
 >>>>>>> .merge_file_YepvRv
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\ModuloEsempio\Models;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_D7sbhA
 =======
@@ -94,6 +102,9 @@ namespace Modules\ModuloEsempio\Models;
 
 >>>>>>> .merge_file_YepvRv
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Database\Eloquent\Model;
 
 abstract class BaseModel extends Model
@@ -107,6 +118,7 @@ abstract class BaseModel extends Model
     public $incrementing = true;
     public $timestamps = true;
     protected $connection = 'healthcare_app';
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_D7sbhA
@@ -126,6 +138,8 @@ abstract class BaseModel extends Model
 =======
 >>>>>>> .merge_file_YepvRv
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -140,6 +154,7 @@ abstract class BaseModel extends Model
 **Dopo** (✅ DRY & KISS):
 ```php
 namespace Modules\healthcare_app\Models;
+<<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
 <<<<<<< HEAD
@@ -163,6 +178,9 @@ namespace Modules\ModuloEsempio\Models;
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\ModuloEsempio\Models;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -173,6 +191,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
     protected $connection = 'healthcare_app';
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_D7sbhA
@@ -192,6 +211,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 =======
 >>>>>>> .merge_file_YepvRv
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     protected $with = ['extra'];
 }
 ```
@@ -478,6 +499,7 @@ BaseModel → BaseModelLang → Post
 |--------|--------|-------------|------------|-----------|
 | healthcare_app | BaseModel | 66 | 20 | -70% |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
 <<<<<<< HEAD
 =======
@@ -500,6 +522,9 @@ BaseModel → BaseModelLang → Post
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+| ModuloEsempio | BaseModel | 66 | 20 | -70% |
+>>>>>>> 8d801bbe (Check & fix styling)
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |
@@ -640,6 +665,7 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 ## Link Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
@@ -658,6 +684,11 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 >>>>>>> .merge_file_YepvRv
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
+- [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
+- [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
@@ -682,6 +713,7 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 *Analizzato da: Claude Code*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 9 passed*
 =======
 =======
@@ -698,3 +730,6 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 *Validato: ✅ Test passed, PHPStan level 9 passed*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Validato: ✅ Test passed, PHPStan level 9 passed*
+>>>>>>> 8d801bbe (Check & fix styling)

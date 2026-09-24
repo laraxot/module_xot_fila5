@@ -2,12 +2,15 @@
 
 ## Data: 2025-01-06
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -194,6 +197,7 @@ php artisan lang:check
 
 ### Modulo Geo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -206,6 +210,8 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -270,6 +276,7 @@ php artisan lang:check
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -277,6 +284,8 @@ php artisan lang:check
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
@@ -287,12 +296,15 @@ php artisan lang:check
 
 **Ultimo aggiornamento**: 2025-01-06
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
@@ -331,6 +343,7 @@ php artisan lang:check
 **Stato**: ✅ Completato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stato**: ✅ Completato
 =======
 <<<<<<< HEAD
@@ -339,3 +352,6 @@ php artisan lang:check
 **Stato**: ✅ Completato
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Stato**: ✅ Completato
+>>>>>>> 8d801bbe (Check & fix styling)

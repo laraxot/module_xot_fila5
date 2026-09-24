@@ -1,12 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
@@ -15,10 +18,11 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
->>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
@@ -26,7 +30,12 @@ metadata:
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary

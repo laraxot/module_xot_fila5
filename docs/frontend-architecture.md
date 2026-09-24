@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Architettura Frontend
 
 ## Tecnologie Principali
@@ -107,6 +110,7 @@ $post = Post::findOrFail($id);
 - [Standard del Codice](code-standards.md)
 - [Regole di Documentazione](documentation-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -118,3 +122,5 @@ canonical: ../../../Themes/docs/shared-components/frontend-architecture.md
 See canonical documentation: ../../../Themes/docs/shared-components/frontend-architecture.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

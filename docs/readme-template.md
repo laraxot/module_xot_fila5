@@ -271,6 +271,7 @@ Questo modulo è rilasciato sotto la [MIT License](LICENSE.md).
 
 - [Nome Libreria/Framework] per [funzionalità specifica]
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Nome Persona/Organizzazione] per [contributo specifico]
 =======
 <<<<<<< HEAD
@@ -279,3 +280,6 @@ Questo modulo è rilasciato sotto la [MIT License](LICENSE.md).
 - [Nome Persona/Organizzazione] per [contributo specifico]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Nome Persona/Organizzazione] per [contributo specifico]
+>>>>>>> 8d801bbe (Check & fix styling)

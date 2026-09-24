@@ -46,6 +46,7 @@ class MyResource
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Guidelines](translations-best-practices.md)
 - [PHPStan Level 9 Guide](phpstan-level9-guide.md)
 =======
@@ -57,5 +58,9 @@ class MyResource
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
+- [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Translation Guidelines](../translations-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)

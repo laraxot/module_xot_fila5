@@ -237,6 +237,7 @@ return [
 * [services.md](../../../Xot/docs/services.md)
 * [services.md](../../../Tenant/docs/it/config/services.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -244,12 +245,15 @@ return [
 * [services.md](../../../tenant/docs/it/config/services.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Versione Incoming
 
    - Testare i casi limite
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -258,3 +262,6 @@ return [
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 8d801bbe (Check & fix styling)

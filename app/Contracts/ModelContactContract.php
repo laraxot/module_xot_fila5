@@ -10,8 +10,11 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @property int                $id
  * @property int|null           $user_id
  * @property string|null        $post_type
@@ -31,6 +34,7 @@ use Illuminate\Support\Carbon;
  * @property string             $sms_body
  * @property string             $sms_count
  *
+<<<<<<< HEAD
  * @method int|string|null                              getKey()
  * @method string                                       getRouteKey()
  * @method string                                       getRouteKeyName()
@@ -178,6 +182,8 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
  *                                                                                           =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @method mixed                                                           getKey()
  * @method string                                                          getRouteKey()
  * @method string                                                          getRouteKeyName()
@@ -194,6 +200,7 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
+<<<<<<< HEAD
  *                                                                                           >>>>>>> laraxot/dev
  *                                                                                           >>>>>>> .merge_file_S8c4Jr
  *                                                                                           >>>>>>> .merge_file_nhFIXv
@@ -217,6 +224,8 @@ use Illuminate\Support\Carbon;
  *                                                                                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
  *                                                                                           >>>>>>> .merge_file_Mi4DdT
  *                                                                                           >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
@@ -233,6 +242,7 @@ interface ModelContactContract
     public function sendEmailCallback(): void;
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $data
@@ -259,6 +269,9 @@ interface ModelContactContract
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_Mi4DdT
      *                                   >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function increase(string $what, array $data): void;
 }

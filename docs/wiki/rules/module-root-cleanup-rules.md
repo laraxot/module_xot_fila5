@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -68,6 +69,8 @@ Tutto il resto → `docs/raw/root-import/` o `docs/wiki/`. Duplicati `changelog.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "Module Root Cleanup Rules"
 type: rule
 tags: [module, structure, cleanup, naming]
@@ -87,7 +90,13 @@ related:
 
 ### File .txt
 - **VIETATO**: Nessun file `.txt` nella root del modulo
+<<<<<<< HEAD
 - Tutti i file `.txt` devono essere rimossi o convertiti in `.md` e spostati in `docs/`
+=======
+- Path canonico dopo spostamento: `docs/raw/root-import/<nome-normalizzato>.txt`
+- Remediation: `bash bashscripts/tools/fix-module-root-hygiene.sh` (non cancellare: **spostare** in `docs/raw/root-import/`)
+- Verifica: `find . -maxdepth 1 -name '*.txt' -type f` → output vuoto
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### File .md
 - **OBBLIGATORIO**: Solo `README.md` nella root del modulo
@@ -100,13 +109,17 @@ related:
 - **VIETATO**: Nessuna cartella con caratteri maiuscoli nella root del modulo
 - Tutte le cartelle devono essere lowercase con underscore o dash (es. `app/`, `database/`, `config/`)
 - Cartelle con maiuscole devono essere eliminate o rinominate in lowercase
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Mai toccare (nwidart)
 
 `composer.json`, `module.json`, `package.json`, `vite.config.js`, `.github/` — vedi [nwidart-module-skeleton-contract.md](../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md).
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -125,14 +138,19 @@ Moduli: `laravel/Modules/<Modulo>/` · Temi: `laravel/Themes/<Tema>/` — **solo
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```bash
 bash bashscripts/tools/guard-nwidart-module-skeleton.sh
 bash bashscripts/tools/audit-module-sacred-artifacts.sh
 ```
 
 ## Azione di cleanup
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 Per ogni modulo:
 
@@ -150,6 +168,7 @@ find . -maxdepth 1 -type d | grep -E "[A-Z]"
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -166,3 +185,10 @@ Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Provid
 
 - Questa regola deve essere applicata a tutti i moduli
 - Check periodico prima di commit
+=======
+## Canon
+
+- Questa regola deve essere applicata a tutti i moduli
+- Check periodico **prima di commit nel repo modulo** (`cd laravel/Modules/<Nome>`)
+- Dopo cleanup: commit + push nel repo owner — vedi `docs/wiki/rules/multi-repo-modules-themes-map.md`
+>>>>>>> 8d801bbe (Check & fix styling)

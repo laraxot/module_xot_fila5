@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -830,12 +831,18 @@ class SpecialPivot extends XotBasePivot
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 module: theme
 topic: xotbasepivot-analysis
 canonical: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
+>>>>>>> 8d801bbe (Check & fix styling)

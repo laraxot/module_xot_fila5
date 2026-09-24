@@ -2,12 +2,15 @@
 
 **Data Creazione**: 2025-01-18
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -322,11 +325,19 @@ TextInput::make('name')
     ->placeholder('Inserisci nome'); // Hardcoded!
 ```
 
+<<<<<<< HEAD
 #### 5. Mai Creare Services / Support — Solo QueueableActions
 
 **Comandamento**: Mai creare file in `app/Services/` o `app/Support/`. Usare sempre `app/Actions/` con Spatie QueueableAction. Multi-metodo su contratti/framework → `app/Adapters/`.
 
 **Violazione**: Creare Services o Support è eresia architetturale.
+=======
+#### 5. Mai Creare Services
+
+**Comandamento**: Mai creare Services. Sempre QueueableActions.
+
+**Violazione**: Creare Services è eresia.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Manifestazione**:
 ```php
@@ -349,6 +360,7 @@ class UserService
         // Services sono deprecati!
     }
 }
+<<<<<<< HEAD
 
 // ❌ ERESIA: Support helper statico
 class UserSupport
@@ -370,6 +382,10 @@ class UserSupport
 - **No `app/Support/`**: helper statici di dominio violano il pattern Action
 - **Migrazione 2026-07-12/13**: tutti i moduli e Sixteen hanno eliminato Services/Support
 
+=======
+```
+
+>>>>>>> 8d801bbe (Check & fix styling)
 #### 6. Mai Usare `property_exists()` nei Modelli
 
 **Comandamento**: Mai usare `property_exists()` per magic attributes Eloquent. Sempre `isset()`.
@@ -508,24 +524,38 @@ Modules/MyModule/database/MyModel.php // SBAGLIATO!
 - File traduzioni strutturati
 - Auto-discovery traduzioni
 
+<<<<<<< HEAD
 #### 6. Actions Over Services / Support
 
 **Decisione**: QueueableActions invece di Services o Support.
+=======
+#### 6. Actions Over Services
+
+**Decisione**: QueueableActions invece di Services.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Motivazione**:
 - Actions sono single-purpose
 - Actions sono queueable
 - Actions sono testabili
 - Actions seguono SOLID
+<<<<<<< HEAD
 - `app/Support/` incoraggia helper statici che violano SRP
 - `app/Services/` diventa facade multi-metodo non referenziabili
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Manifestazione**:
 - Tutte le operazioni business sono Actions
 - Actions usano Spatie QueueableActions
+<<<<<<< HEAD
 - `app/Services/` e `app/Support/` sono eliminati monorepo (2026-07-13)
 - Migrazione da Services/Support a Actions completata in tutti i moduli
 - `app(ClasseAction::class)->execute()` è l'unico modo per chiamare logica di dominio
+=======
+- Services sono deprecati
+- Migrazione da Services a Actions
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Governance
 
@@ -756,6 +786,7 @@ TextInput::make('name')
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
 =======
 <<<<<<< HEAD
@@ -764,3 +795,6 @@ TextInput::make('name')
 **Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
+>>>>>>> 8d801bbe (Check & fix styling)

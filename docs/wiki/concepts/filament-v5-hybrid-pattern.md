@@ -30,6 +30,7 @@ class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -43,6 +44,9 @@ class TicketForm extends XotBaseResourceForm
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [...]; // Array of components
     }
@@ -109,6 +113,7 @@ class ArticleForm extends XotBaseResourceForm
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -122,6 +127,9 @@ class ArticleForm extends XotBaseResourceForm
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         // Delegate to configure() to avoid duplication
         $schema = app(Schema::class);
@@ -197,6 +205,7 @@ class ArticleForm extends XotBaseResourceForm
     // LEGACY: Array style (backward compatibility)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -210,6 +219,9 @@ class ArticleForm extends XotBaseResourceForm
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -249,6 +261,7 @@ abstract class XotBaseResourceForm
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -262,6 +275,9 @@ abstract class XotBaseResourceForm
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -321,6 +337,7 @@ abstract class XotBaseResourceInfolist
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -334,6 +351,9 @@ abstract class XotBaseResourceInfolist
     public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();

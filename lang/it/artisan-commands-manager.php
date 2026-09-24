@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/artisan-commands-manager.php
+>>>>>>> 8d801bbe (Check & fix styling)
 return [
     'navigation' => [
         'icon' => 'heroicon-o-command-line',
@@ -34,6 +40,7 @@ return [
         'queue_restart' => [
             'label' => 'Riavvia Code',
         ],
+<<<<<<< HEAD
         'composer_dump_autoload' => [
             'label' => 'Composer Dump Autoload',
         ],
@@ -41,6 +48,8 @@ return [
             'label' => 'Importa Vecchi Template Email/SMS',
             'modal_description' => 'Copia i contenuti email/SMS dalla vecchia tabella notify_themes verso mail_templates (il nuovo sistema di invio inviti). Operazione idempotente: rilanciarla aggiorna i template già migrati invece di duplicarli, sovrascrivendo eventuali modifiche fatte a mano dopo l\'ultima esecuzione.',
         ],
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'status' => [
         'completed' => 'Completato',

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Services\Translators;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class MyMemory extends BaseTranslator {}
 =======
 <<<<<<< .merge_file_QPlwWA
@@ -21,3 +22,8 @@ class MyMemory extends BaseTranslator
 }
 >>>>>>> .merge_file_slzGCN
 >>>>>>> laraxot/dev
+=======
+class MyMemory extends BaseTranslator
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

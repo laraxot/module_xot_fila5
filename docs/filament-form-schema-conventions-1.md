@@ -10,6 +10,7 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 // ✅ CORRETTO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -23,6 +24,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -41,6 +45,7 @@ public static function getFormSchema(): array
 // ❌ ERRATO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -54,6 +59,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -127,6 +135,7 @@ class MyResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -140,6 +149,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -156,6 +168,7 @@ class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -169,6 +182,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),
@@ -187,6 +203,7 @@ class MyResource extends XotBaseResource
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
 - [XotBaseResource](./xot_base_resource.md)
 - [Form Components](./form_components.md)
 - [Form Validation](./form_validation.md)
@@ -199,3 +216,9 @@ class MyResource extends XotBaseResource
 - [Filament Best Practices](../../../docs/rules/filament_best_practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [XotBaseResource](./XOT_BASE_RESOURCE.md)
+- [Form Components](./FORM_COMPONENTS.md)
+- [Form Validation](./FORM_VALIDATION.md)
+- [Filament Best Practices](../../docs/rules/filament_best_practices.md)
+>>>>>>> 8d801bbe (Check & fix styling)

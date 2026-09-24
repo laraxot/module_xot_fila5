@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()
@@ -229,6 +232,7 @@ php artisan view:clear
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -240,3 +244,5 @@ canonical: ../../../Themes/docs/shared-components/translation-system-1-Modules.m
 See canonical documentation: ../../../Themes/docs/shared-components/translation-system-1-Modules.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

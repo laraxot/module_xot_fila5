@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_CVaAyz
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Jycpjo
 >>>>>>> .merge_file_KAq7ZT
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 25b-blog-rm-getformschema
 description: "Modulo: Blog"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_CVaAyz
 =======
 <<<<<<< .merge_file_dgzH76
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_Jycpjo
 >>>>>>> .merge_file_KAq7ZT
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # 25b-blog — Rimuovere getFormSchema da BannerResource, CategoryResource, TextWidgetResource
 
 **Modulo:** Blog

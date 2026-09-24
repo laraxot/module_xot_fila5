@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.
@@ -15,20 +19,29 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\file;
 use function Safe\preg_replace;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 >>>>>>> laraxot/dev
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
  *
@@ -42,11 +55,16 @@ class GetPropertiesFromMethodsByModelAction
      * Estrae le proprietà dai metodi di relazione del modello.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Model  $model  Il modello da analizzare
 =======
      * @param Model $model Il modello da analizzare
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Model $model Il modello da analizzare
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return array<string, string> Dati estratti dalle relazioni
      */
     public function execute(Model $model): array
@@ -66,10 +84,14 @@ class GetPropertiesFromMethodsByModelAction
                 $filename = $reflection->getFileName();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($filename === false) {
 =======
                 if (false === $filename) {
 >>>>>>> laraxot/dev
+=======
+                if (false === $filename) {
+>>>>>>> 8d801bbe (Check & fix styling)
                     continue; // Saltiamo i metodi senza file (es. metodi interni)
                 }
 
@@ -108,16 +130,22 @@ class GetPropertiesFromMethodsByModelAction
                 // Estrazione del corpo della funzione
                 $begin = mb_strpos($codeStr, 'function(');
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $begin = $begin !== false ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
                 $end = $end !== false ? $end : mb_strlen($codeStr);
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 $begin = false !== $begin ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
                 $end = false !== $end ? $end : mb_strlen($codeStr);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
                 $length = $end - $begin + 1;
                 Assert::greaterThan($length, 0, 'La lunghezza del corpo della funzione deve essere positiva');
@@ -140,16 +168,22 @@ class GetPropertiesFromMethodsByModelAction
      * Estrae le relazioni belongsTo dal codice.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $codeStr  Il codice da analizzare
      * @param  Model  $model  Il modello
      * @param  string  $method  Il nome del metodo
      * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param string                $codeStr Il codice da analizzare
      * @param Model                 $model   Il modello
      * @param string                $method  Il nome del metodo
      * @param array<string, string> &$data   L'array in cui salvare i dati estratti
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
     {
@@ -157,10 +191,14 @@ class GetPropertiesFromMethodsByModelAction
         $pos = mb_stripos($codeStr, $search);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($pos === false) {
 =======
         if (false === $pos) {
 >>>>>>> laraxot/dev
+=======
+        if (false === $pos) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return; // Il metodo non contiene una relazione belongsTo
         }
 

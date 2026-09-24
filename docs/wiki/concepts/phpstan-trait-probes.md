@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -166,12 +167,18 @@ trait HasExample
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "PHPStan trait probes"
 type: concept
 module: Xot
 tags: [phpstan, trait, probe, xot, second-brain]
 created: 2026-06-30
+<<<<<<< HEAD
 updated: 2026-07-13
+=======
+updated: 2026-06-30
+>>>>>>> 8d801bbe (Check & fix styling)
 qmd: "phpstan trait probe unused trait xotPhpstanTraitProbeClasses Helper scanFiles"
 related:
   - ./phpstan-fixes-log.md
@@ -224,6 +231,7 @@ function xotPhpstanTraitProbeClasses(): array
 | Trait su modello produzione causa fatal/collision | **Non** wire su modello — solo probe |
 | Trait già su modello base (es. `RelationX`) | Nessun probe |
 
+<<<<<<< HEAD
 ## Attributi Eloquent nei trait riusabili
 
 Un trait non deve presumere che ogni host dichiari in PHPDoc le sue proprietà
@@ -238,14 +246,19 @@ $publishedAt = $this->getAttribute('published_at');
 return $publishedAt instanceof Carbon && $publishedAt->isPast();
 ```
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Anti-pattern (revertiti in sessione 2026-06)
 
 - `HasCommonScopes` su `XotBaseModel` → conflitto con scope Blog
 - `TypedHasRecursiveRelationships` — trait rimosso (STORY-346); **mai** probe
 - Probe Rating legacy (`HasRatingsTrait`, `RatingTrait`) → ~54 errori; SSoT = `HasRating` + `RatingPhpstanTraitProbe`
 - Probe Notify notification traits (`HasTenantNotifications`, …) → `$tenant_id` / contesto tenant mancante; usare `@phpstan-ignore trait.unused`
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Guard script
 
@@ -253,6 +266,7 @@ return $publishedAt instanceof Carbon && $publishedAt->isPast();
 bash bashscripts/tools/archive-invalid-phpstan-probes.sh
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Archivia in-place (`.bak`) probe invalidi noti. Non sostituisce l'audit manuale:
 la lista al suo interno è storica, non esaustiva.
@@ -264,10 +278,14 @@ la lista al suo interno è storica, non esaustiva.
 Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Verifica
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -296,12 +314,17 @@ return $publishedAt instanceof Carbon && $publishedAt->isPast();
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 cd laravel
 ./vendor/bin/phpstan clear-result-cache
 ./vendor/bin/phpstan analyse Modules --no-progress
 # atteso: [OK] No errors (app + database + tests, 2026-06-30)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### Fix correlati (2026-06-30)
@@ -315,6 +338,7 @@ cd laravel
 
 ## Collegamenti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -332,3 +356,8 @@ cd laravel
 - [User trait alias conflict](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [phpstan-fixes-log](./phpstan-fixes-log.md)
+- [phpstan-remediation-swarm](../memories/phpstan-remediation-swarm.md)
+- [User trait alias conflict](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
+>>>>>>> 8d801bbe (Check & fix styling)

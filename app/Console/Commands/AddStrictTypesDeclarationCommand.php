@@ -53,6 +53,7 @@ class AddStrictTypesDeclarationCommand extends Command
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ZviOfK
 <<<<<<< HEAD
@@ -61,27 +62,36 @@ class AddStrictTypesDeclarationCommand extends Command
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_D40KR9
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     if (false === $fileName) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     ++$count;
+<<<<<<< HEAD
 <<<<<<< .merge_file_ZviOfK
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     if ($fileName === false) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     $count++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_D40KR9
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 
                     continue;
@@ -89,6 +99,7 @@ class AddStrictTypesDeclarationCommand extends Command
 
                 $path = $file->getRealPath();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($path === false) {
 =======
 <<<<<<< .merge_file_ZviOfK
@@ -96,15 +107,20 @@ class AddStrictTypesDeclarationCommand extends Command
                 if (false === $path) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 if (false === $path) {
 =======
                 if ($path === false) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 if (false === $path) {
 >>>>>>> .merge_file_D40KR9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     continue;
                 }
 
@@ -115,6 +131,7 @@ class AddStrictTypesDeclarationCommand extends Command
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");
 <<<<<<< HEAD
+<<<<<<< HEAD
                     $count++;
 =======
 <<<<<<< .merge_file_ZviOfK
@@ -122,15 +139,20 @@ class AddStrictTypesDeclarationCommand extends Command
                     ++$count;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     ++$count;
 =======
                     $count++;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                     ++$count;
 >>>>>>> .merge_file_D40KR9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 } catch (\Exception $e) {
                     $this->error("Errore nel processare {$path}: ".$e->getMessage());
                 }
@@ -160,6 +182,7 @@ class AddStrictTypesDeclarationCommand extends Command
 
         $path = $file->getRealPath();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($path === false) {
 =======
 <<<<<<< .merge_file_ZviOfK
@@ -167,15 +190,20 @@ class AddStrictTypesDeclarationCommand extends Command
         if (false === $path) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         if (false === $path) {
 =======
         if ($path === false) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (false === $path) {
 >>>>>>> .merge_file_D40KR9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             return false;
         }
 

@@ -1,11 +1,14 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "fill_field_with_lorem"
 module: "Xot"
 type: concept
@@ -93,10 +96,13 @@ http://enneagon.org/phrases
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 title: 'Fill field with lorem — risorse esterne'
 module: Xot
@@ -187,6 +193,9 @@ updated: 2026-08-24
 - <https://www.fakenamegenerator.com/gen-male-fr-fr.php>
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

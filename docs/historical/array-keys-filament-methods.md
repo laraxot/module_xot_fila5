@@ -64,16 +64,20 @@ public function getTableBulkActions(): array
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
@@ -83,6 +87,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -121,16 +127,20 @@ public function getTableActions(): array
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
@@ -140,6 +150,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     // ...
 }
@@ -188,16 +200,20 @@ public function getTableBulkActions(): array
 // ✅ CORRETTO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
@@ -207,6 +223,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'template_slug' => Select::make('template_slug')

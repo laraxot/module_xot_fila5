@@ -2,8 +2,13 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+=======
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 ?>
 <div

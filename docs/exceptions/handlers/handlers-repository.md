@@ -84,6 +84,7 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -94,6 +95,8 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Exception Handling Guide](../exception-handling-guide.md)
 - [Error Formatters](../formatters/readme.md)
 - [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
@@ -101,6 +104,10 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 - [Exception Handling Guide](../EXCEPTION-HANDLING-GUIDE.md)
 - [Error Formatters](../formatters/README.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< HEAD
 - [Handlers Overview](./README.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Handlers Overview](./README.md)
+>>>>>>> 8d801bbe (Check & fix styling)

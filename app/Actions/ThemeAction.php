@@ -54,6 +54,7 @@ class ThemeAction
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(): void {}
 =======
 <<<<<<< .merge_file_uj7qR3
@@ -63,12 +64,15 @@ class ThemeAction
     }
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function execute(): void
     {
     }
 =======
     public function execute(): void {}
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     public function execute(): void
@@ -76,4 +80,6 @@ class ThemeAction
     }
 >>>>>>> .merge_file_iaoQ85
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }

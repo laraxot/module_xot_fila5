@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_wYsqpO
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_bSvHHh
 >>>>>>> .merge_file_d45rXd
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 21-cms-phpstan
 description: "Modulo: Cms"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_wYsqpO
 =======
 <<<<<<< .merge_file_ZiJiYl
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_bSvHHh
 >>>>>>> .merge_file_d45rXd
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # BMAD Story 21 — Cms: 7 errori PHPStan (test)
 
 **Modulo:** `Cms`

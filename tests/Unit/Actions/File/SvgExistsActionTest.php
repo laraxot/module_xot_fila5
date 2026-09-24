@@ -15,9 +15,12 @@ it('verifies svg existence', function (): void {
 
     Assert::assertFalse($action->execute(''));
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // We can't easily ensure a real icon exists without registering one,
     // but the try/catch block will return false if it's missing.
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     Assert::assertFalse($action->execute('non-existent-icon-123456'));
 });

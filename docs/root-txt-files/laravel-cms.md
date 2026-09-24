@@ -9,6 +9,7 @@ tags: [migrato-da-txt, xot]
 converted_from: laravel-cms.txt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 converted_from: laravel_cms.txt
 >>>>>>> laraxot/dev
 =======
@@ -19,6 +20,10 @@ converted_from: laravel_cms.txt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+converted_from: laravel_cms.txt
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 created: 2026-08-24
 updated: 2026-08-24
 ---

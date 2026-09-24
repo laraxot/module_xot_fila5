@@ -11,10 +11,14 @@ class HasManyUpdateData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int|string>  $ids
 =======
      * @param array<int|string> $ids
 >>>>>>> laraxot/dev
+=======
+     * @param array<int|string> $ids
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function __construct(
         public string $foreignKey,
@@ -22,9 +26,14 @@ class HasManyUpdateData extends Data
         #[ArrayType]
         public array $ids = [],
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
 }

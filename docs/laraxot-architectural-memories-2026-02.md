@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [laraxot-architectural-memories-02.md](./laraxot-architec
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Laraxot Architectural Memories - February 2026
 
 Critical architectural discoveries and best practices compiled during the Footer Refinement and Theme Integration phase.
@@ -74,5 +77,8 @@ If CDP connection fails, use `curl -s http://127.0.0.1:8000/{path} | grep -A 100
 ## 5. Documentation Standards
 - **Naming**: All `.md` files must be lowercase, no dates in filenames (except `CHANGELOG.md`/`README.md`).
 - **Organization**: No `_docs` folders allowed. All sub-documentation must reside directly in the `docs/` folder of the respective module/theme.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VreSMc
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_SrNGZf
+=======
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 /**
  * Guardia a cricchetto sulle collisioni case-insensitive.
@@ -32,6 +37,7 @@ declare(strict_types=1);
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\Process\Process;
 
 =======
@@ -41,10 +47,15 @@ use Symfony\Component\Process\Process;
 =======
 >>>>>>> .merge_file_SrNGZf
 >>>>>>> laraxot/dev
+=======
+use Symfony\Component\Process\Process;
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VreSMc
@@ -53,6 +64,8 @@ use Symfony\Component\Process\Process;
 
 >>>>>>> .merge_file_SrNGZf
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 function repoRoot(): string
 {
     return \dirname(__DIR__, 5);
@@ -74,6 +87,7 @@ function collisionGroups(): int
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
 <<<<<<< HEAD
+<<<<<<< HEAD
     } catch (Throwable) {
 =======
 <<<<<<< .merge_file_VreSMc
@@ -81,15 +95,20 @@ function collisionGroups(): int
     } catch (\Throwable) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     } catch (\Throwable) {
 =======
     } catch (Throwable) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     } catch (Throwable) {
 >>>>>>> .merge_file_SrNGZf
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         return -1;
     }
 

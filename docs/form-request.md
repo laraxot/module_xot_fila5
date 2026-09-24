@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 =======
 =======
@@ -44,3 +45,6 @@ https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 >>>>>>> .merge_file_LAU83r
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
+>>>>>>> 8d801bbe (Check & fix styling)

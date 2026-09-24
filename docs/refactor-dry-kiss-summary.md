@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali
@@ -219,6 +222,7 @@
 **Durata refactor**: 15 minuti
 **Impatto**: TRASFORMATIVO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -230,3 +234,5 @@ canonical: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
 See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

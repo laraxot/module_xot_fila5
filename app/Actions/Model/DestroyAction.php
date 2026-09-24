@@ -13,14 +13,18 @@ class DestroyAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      */
     /**
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
+<<<<<<< HEAD
      *                                     =======
      *                                     <<<<<<< .merge_file_lqWfgU
      *                                     =======
@@ -59,6 +63,8 @@ class DestroyAction
      *                                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                     >>>>>>> .merge_file_wHn1MB
      *                                     >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(Model $model, array $_data, array $_rules): Model
     {

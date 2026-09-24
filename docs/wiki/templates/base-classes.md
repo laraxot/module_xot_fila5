@@ -109,6 +109,7 @@ class {ModelName}Resource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -129,6 +130,10 @@ class {ModelName}Resource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_a87Yeu
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('name')
@@ -352,6 +357,7 @@ class Create{ModelName}Action
 **Versione:** 2.0 - Consolidata DRY + KISS
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
 =======
 <<<<<<< .merge_file_NDor5m
@@ -375,3 +381,7 @@ class Create{ModelName}Action
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_a87Yeu
 >>>>>>> laraxot/dev
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)

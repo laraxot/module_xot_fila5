@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -20,11 +21,14 @@ related:
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Report Conflitti Git - Modulo Xot
 
 ## Data
 - 2025-01-06
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -291,6 +295,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 ## Data
 - 2025-01-06
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## File Risolti in Questa Sessione
 
 | File | Stato | Note |
@@ -313,11 +319,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 - `./vendor/bin/phpstan analyse Modules/Xot Modules/UI` → ❌ blocchi esistenti (warning storici riportati nel log)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> .merge_file_roAXTf
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
 >>>>>>> a01602c7 (.)
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Azioni Successive
 1. Pulire marker nelle documentazioni storiche o spostarle in `archive/`
 2. Valutare pulizia script legacy con marker (non usati in produzione)
@@ -325,6 +334,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 
 ---
 Ultimo aggiornamento: 2025-01-06
+<<<<<<< HEAD
 ---
 module: theme
 topic: conflict-resolution
@@ -335,3 +345,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

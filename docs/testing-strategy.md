@@ -20,6 +20,7 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 <<<<<<< HEAD
+<<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=test_database
 =======
@@ -38,6 +39,9 @@ DB_DATABASE=test_database
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+DB_DATABASE=test_database
+>>>>>>> 8d801bbe (Check & fix styling)
 DB_USERNAME=root
 DB_PASSWORD=
 ```

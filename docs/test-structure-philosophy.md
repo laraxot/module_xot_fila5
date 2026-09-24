@@ -113,13 +113,17 @@ Modules/UI/
 ## Why This Matters
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### 1. **Autoloader Predictability**
 - PHP autoloader expects consistent namespace-to-directory mapping
 - Mixed structures create ambiguous class resolution
 - "First found" approach leads to unpredictable test execution
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -129,6 +133,8 @@ Modules/UI/
 - "First found" approach leads to un<nome progetto>able test execution
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### 2. **Test Discovery**
 - Pest and PHPUnit rely on consistent directory structures
@@ -139,6 +145,7 @@ Modules/UI/
 - Developers expect consistent test locations
 - IDE autocomplete and navigation work better with consistent structures
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Code generation tools work predictably
 =======
 <<<<<<< HEAD
@@ -147,6 +154,9 @@ Modules/UI/
 - Code generation tools work <nome progetto>ably
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Code generation tools work predictably
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### 4. **Module System Compatibility**
 - nwidart/laravel-modules expects traditional structure
@@ -222,6 +232,7 @@ Modules/
 │   │   └── Unit/
 │   └── app/
 <<<<<<< HEAD
+<<<<<<< HEAD
 └── Quaeris/
 =======
 <<<<<<< HEAD
@@ -230,6 +241,9 @@ Modules/
 └── healthcare_app/
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+└── Quaeris/
+>>>>>>> 8d801bbe (Check & fix styling)
     ├── tests/
     │   ├── Feature/
     │   └── Unit/
@@ -292,6 +306,7 @@ Modules/UI/tests/Unit/Widgets/
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
 =======
 <<<<<<< HEAD
@@ -300,3 +315,6 @@ Modules/UI/tests/Unit/Widgets/
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and <nome progetto>able development workflow. Choose one pattern and apply it consistently across all modules.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
+>>>>>>> 8d801bbe (Check & fix styling)

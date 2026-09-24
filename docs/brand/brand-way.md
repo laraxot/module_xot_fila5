@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # La Via del Brand
 
 ## L'Essenza del Brand

@@ -5,17 +5,23 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
 use Illuminate\Database\Eloquent\Model;
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Tables\Table;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -23,11 +29,21 @@ use Modules\Xot\Filament\Traits\TransTrait;
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
 {
+<<<<<<< HEAD
     use HasXotTable;
+=======
+    use HasXotTable {
+        getGridTableColumns as private xotGetGridTableColumns;
+        getTablePaginated as private xotGetTablePaginated;
+        getSearchableColumns as private xotSearchableColumns;
+        getHeaderActions as private xotGetHeaderActions;
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
     use InteractsWithPageFilters;
     use TransTrait;
 
     /**
+<<<<<<< HEAD
      * Ascolta evento di aggiornamento filtri.
      *
 <<<<<<< HEAD
@@ -35,6 +51,58 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 =======
      * @param array<string, mixed> $filters
 >>>>>>> laraxot/dev
+=======
+     * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getGridTableColumns(): array
+    {
+        return $this->xotGetGridTableColumns();
+    }
+
+    /**
+     * @return bool|array<int|string>
+     */
+    protected function getTablePaginated(): bool|array
+    {
+        $paginated = $this->xotGetTablePaginated();
+
+        if (is_bool($paginated)) {
+            return $paginated;
+        }
+
+        /** @var array<int|string> $options */
+        $options = $paginated;
+
+        return $options;
+    }
+
+    /**
+     * @return array<string>
+     */
+    protected function getSearchableColumns(): array
+    {
+        /** @var array<string> $columns */
+        $columns = $this->xotSearchableColumns();
+
+        return $columns;
+    }
+
+    /**
+     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     */
+    protected function getHeaderActions(): array
+    {
+        /** @var array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup> $actions */
+        $actions = $this->xotGetHeaderActions();
+
+        return $actions;
+    }
+
+    /**
+     * Ascolta evento di aggiornamento filtri.
+     *
+     * @param array<string, mixed> $filters
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
@@ -45,7 +113,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * Configura la tabella con le risposte.
      */
     public function tableOLD(Table $table): Table
@@ -65,7 +136,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     }
 
     /**
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * Restituisce una chiave univoca per ogni record.
      * Usa _id che è l'alias della primary key creato da withAnswersLabel().
      *
@@ -81,7 +155,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
         return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
     public function getTableSearch(): ?string
     {
@@ -95,5 +172,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         return '' !== $search ? $search : null;
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }

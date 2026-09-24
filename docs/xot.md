@@ -6,16 +6,20 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 ## Struttura
 - [Documentazione Completa](../../Modules/Xot/docs/module_xot.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Documentazione Completa](../../modules/xot/docs/module_xot.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Componenti Principali
 
 ### Datas
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -40,6 +44,8 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Integrazione](../../modules/xot/docs/integration.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [MetatagData](../../Modules/Xot/docs/datas/MetatagData.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -58,6 +64,7 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Roadmap](../../Modules/Xot/docs/roadmap.md)
 - [Implementazione](../../Modules/Xot/docs/implementation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 =======
 <<<<<<< HEAD
@@ -66,3 +73,6 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Integrazione](../../Modules/Xot/docs/integration.md)
+>>>>>>> 8d801bbe (Check & fix styling)

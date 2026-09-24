@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/cache.php
+>>>>>>> 8d801bbe (Check & fix styling)
 return [
     'navigation' => [
         'name' => 'cache',
@@ -9,9 +15,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'cache.navigation',
         'icon' => 'cache.navigation',
         'sort' => 90,
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +58,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -67,10 +77,13 @@ return [
             'helper_text' => 'expiration',
             'description' => 'expiration',
         ],
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -118,6 +131,14 @@ return [
             'label' => 'filament:clear-cached-components',
             'icon' => 'filament:clear-cached-components',
             'tooltip' => 'filament:clear-cached-components',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Cache',
+        ],
+        'delete' => [
+            'label' => 'Elimina Cache',
+>>>>>>> 8d801bbe (Check & fix styling)
         ],
     ],
 ];

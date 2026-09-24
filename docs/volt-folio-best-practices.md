@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati
@@ -10,6 +11,11 @@
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Best Practices per Volt e Folio
+
+## Collegamenti correlati
+>>>>>>> 8d801bbe (Check & fix styling)
 - [README modulo Xot](./README.md)
 - [Struttura dei moduli](./MODULE_STRUCTURE.md)
 - [Convenzioni di Path](../User/docs/PATH_CONVENTIONS.md)
@@ -275,6 +281,7 @@ Seguendo queste best practices per l'utilizzo di Volt e Folio, garantirai che il
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 - [Documentazione Filament](https://filamentphp.com/docs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -287,3 +294,5 @@ canonical: ../../../Themes/docs/shared-components/volt-folio-best-practices-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-best-practices-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Filament Extension Rules Implementation Report
 
 **Date**: 18 Dicembre 2025
@@ -92,6 +95,7 @@ Created comprehensive documentation file:
 
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -103,3 +107,5 @@ canonical: ../../../Themes/docs/shared-components/filament-extension-implementat
 See canonical documentation: ../../../Themes/docs/shared-components/filament-extension-implementation.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

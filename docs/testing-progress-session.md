@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -133,6 +134,8 @@ Tutti i test corretti seguono questo principio:
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22
@@ -250,6 +253,7 @@ Tutti i test corretti seguono questo principio:
 
 - [Testing Rules](../testing-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -260,6 +264,8 @@ Tutti i test corretti seguono questo principio:
 - [User Command Integration Fix](../../user/docs/testing-user-command-integration-fix.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
@@ -270,6 +276,7 @@ Tutti i test corretti seguono questo principio:
 
 **Status**: In Progress
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 =======
 <<<<<<< HEAD
@@ -278,3 +285,6 @@ Tutti i test corretti seguono questo principio:
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
+>>>>>>> 8d801bbe (Check & fix styling)

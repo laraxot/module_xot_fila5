@@ -41,6 +41,7 @@ class SafeBooleanCastAction
      * Converte in modo sicuro un valore mixed in boolean.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  bool|null  $default  Valore di default se la conversione fallisce (default: false)
 =======
@@ -48,6 +49,11 @@ class SafeBooleanCastAction
      * @param bool|null $default Valore di default se la conversione fallisce (default: false)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed     $value   Il valore da convertire
+     * @param bool|null $default Valore di default se la conversione fallisce (default: false)
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool Il valore convertito
      */
     public function execute(mixed $value, ?bool $default = false): bool
@@ -65,19 +71,27 @@ class SafeBooleanCastAction
         // Se è un intero, convertilo (0 = false, altri = true)
         if (is_int($value)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $value !== 0;
 =======
             return 0 !== $value;
 >>>>>>> laraxot/dev
+=======
+            return 0 !== $value;
+>>>>>>> 8d801bbe (Check & fix styling)
         }
 
         // Se è un float, convertilo (0.0 = false, altri = true)
         if (is_float($value)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $value !== 0.0 && is_finite($value);
 =======
             return 0.0 !== $value && is_finite($value);
 >>>>>>> laraxot/dev
+=======
+            return 0.0 !== $value && is_finite($value);
+>>>>>>> 8d801bbe (Check & fix styling)
         }
 
         // Se è una stringa, convertila
@@ -103,17 +117,23 @@ class SafeBooleanCastAction
      * Converte un valore in boolean con validazione di valori specifici.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  array<mixed>  $trueValues  Array di valori che rappresentano true
      * @param  array<mixed>  $falseValues  Array di valori che rappresentano false
      * @param  bool|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param mixed        $value       Il valore da convertire
      * @param array<mixed> $trueValues  Array di valori che rappresentano true
      * @param array<mixed> $falseValues Array di valori che rappresentano false
      * @param bool|null    $default     Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool Il valore convertito
      */
     public function executeWithCustomValues(
@@ -128,7 +148,11 @@ class SafeBooleanCastAction
             if (
                 in_array(
                     $trimmed,
+<<<<<<< HEAD
                     array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $trueValues),
+=======
+                    array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $trueValues),
+>>>>>>> 8d801bbe (Check & fix styling)
                     true,
                 )
             ) {
@@ -138,7 +162,11 @@ class SafeBooleanCastAction
             if (
                 in_array(
                     $trimmed,
+<<<<<<< HEAD
                     array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $falseValues),
+=======
+                    array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $falseValues),
+>>>>>>> 8d801bbe (Check & fix styling)
                     true,
                 )
             ) {
@@ -154,17 +182,23 @@ class SafeBooleanCastAction
      * Converte un valore in boolean con validazione di range numerico.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float  $threshold  Soglia per determinare true/false
      * @param  bool  $greaterThanTrue  True se valori > threshold sono true, false altrimenti
      * @param  bool|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param mixed     $value           Il valore da convertire
      * @param float     $threshold       Soglia per determinare true/false
      * @param bool      $greaterThanTrue True se valori > threshold sono true, false altrimenti
      * @param bool|null $default         Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool Il valore convertito
      */
     public function executeWithThreshold(
@@ -191,11 +225,16 @@ class SafeBooleanCastAction
      * Verifica se un valore può essere convertito in boolean.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da verificare
 =======
      * @param mixed $value Il valore da verificare
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed $value Il valore da verificare
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool True se il valore può essere convertito in boolean
      */
     public function canCast(mixed $value): bool
@@ -207,6 +246,7 @@ class SafeBooleanCastAction
      * Metodo statico di convenienza per chiamate dirette.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  bool|null  $default  Valore di default se la conversione fallisce (default: false)
 =======
@@ -214,6 +254,11 @@ class SafeBooleanCastAction
      * @param bool|null $default Valore di default se la conversione fallisce (default: false)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed     $value   Il valore da convertire
+     * @param bool|null $default Valore di default se la conversione fallisce (default: false)
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool Il valore convertito in boolean
      */
     public static function cast(mixed $value, ?bool $default = false): bool
@@ -225,17 +270,23 @@ class SafeBooleanCastAction
      * Metodo statico per cast con valori personalizzati.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  array<mixed>  $trueValues  Array di valori che rappresentano true
      * @param  array<mixed>  $falseValues  Array di valori che rappresentano false
      * @param  bool|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param mixed        $value       Il valore da convertire
      * @param array<mixed> $trueValues  Array di valori che rappresentano true
      * @param array<mixed> $falseValues Array di valori che rappresentano false
      * @param bool|null    $default     Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool Il valore convertito
      */
     public static function castWithCustomValues(
@@ -251,17 +302,23 @@ class SafeBooleanCastAction
      * Metodo statico per cast con soglia numerica.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float  $threshold  Soglia per determinare true/false
      * @param  bool  $greaterThanTrue  True se valori > threshold sono true, false altrimenti
      * @param  bool|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param mixed     $value           Il valore da convertire
      * @param float     $threshold       Soglia per determinare true/false
      * @param bool      $greaterThanTrue True se valori > threshold sono true, false altrimenti
      * @param bool|null $default         Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool Il valore convertito
      */
     public static function castWithThreshold(
@@ -277,6 +334,7 @@ class SafeBooleanCastAction
      * Converte una stringa in boolean con gestione avanzata.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $value  La stringa da convertire
      * @param  bool|null  $default  Valore di default
 =======
@@ -284,6 +342,11 @@ class SafeBooleanCastAction
      * @param bool|null $default Valore di default
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string    $value   La stringa da convertire
+     * @param bool|null $default Valore di default
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool Il valore convertito
      */
     private function parseStringToBool(string $value, ?bool $default = false): bool

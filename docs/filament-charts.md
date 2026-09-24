@@ -922,6 +922,7 @@ class BlogPostsChartTest extends TestCase
 
 ### Documentazione PTVX
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
 =======
 <<<<<<< HEAD
@@ -930,6 +931,9 @@ class BlogPostsChartTest extends TestCase
 - [Widget Implementation Rules](./widget_implementation_rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Widget Implementation Rules](./widget_implementation_rules.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 

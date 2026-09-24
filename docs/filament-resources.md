@@ -25,6 +25,7 @@ class SessionResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -38,6 +39,9 @@ class SessionResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione
@@ -111,6 +115,7 @@ return [
 * [filament-resources.md](../../../Xot/docs/filament-resources.md)
 * [filament-resources.md](../../../Cms/docs/filament-resources.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -119,12 +124,15 @@ return [
 * [filament-resources.md](../../../cms/docs/filament-resources.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Versione Incoming
 
 - Mantenute le validazioni e la struttura del form
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -133,3 +141,6 @@ return [
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_zwbWDg
@@ -36,6 +37,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 //----------------------------------------------------------
 phpstan
 install:
@@ -43,6 +46,7 @@ install:
 cmd:
 ./vendor/bin/phpstan analyse ./Modules/Xot
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -59,6 +63,9 @@ cmd:
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 //----------------------------------------------------------
 https://github.com/phan/phan/wiki/Getting-Started
 
@@ -76,6 +83,7 @@ php ./vendor/bin/phpmetrics --report-html=../_phpmetrics_report Modules
 https://github.com/squizlabs/PHP_CodeSniffer
 install:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zwbWDg
 <<<<<<< HEAD
@@ -91,6 +99,8 @@ install:
 =======
 >>>>>>> .merge_file_CWEOzo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Download using curl
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
@@ -108,6 +118,7 @@ $ wget https://phar.phpunit.de/phpcpd.phar
 
 $ php phpcpd.phar --version
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zwbWDg
@@ -134,6 +145,11 @@ https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
 https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
 >>>>>>> .merge_file_CWEOzo
 >>>>>>> laraxot/dev
+=======
+
+//---------------------
+https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
+>>>>>>> 8d801bbe (Check & fix styling)
 
 //--------------------
 https://github.com/Qafoo/QualityAnalyzer
@@ -147,6 +163,7 @@ cmd:
 bin/analyze analyze /path/to/source
 //-------------------------------------------------------------
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zwbWDg
@@ -166,6 +183,9 @@ https://psalm.dev/docs/running_psalm/installation/
 https://psalm.dev/docs/running_psalm/installation/
 >>>>>>> .merge_file_CWEOzo
 >>>>>>> laraxot/dev
+=======
+https://psalm.dev/docs/running_psalm/installation/
+>>>>>>> 8d801bbe (Check & fix styling)
 
 //--------------------------------------------------------------------
 https://github.com/scrutinizer-ci/php-analyzer
@@ -179,6 +199,7 @@ https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zwbWDg
 <<<<<<< HEAD
@@ -186,16 +207,21 @@ https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 =======
 >>>>>>> .merge_file_CWEOzo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://github.com/enlightn/enlightn
 
  "edgedesign/phpqa": "^1.23",
@@ -204,6 +230,7 @@ https://github.com/enlightn/enlightn
         "phpmetrics/phpmetrics": "^2.7",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -217,3 +244,6 @@ https://github.com/enlightn/enlightn
         "phpunit/php-code-coverage": "^9.2",
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        "phpunit/php-code-coverage": "^9.2",
+>>>>>>> 8d801bbe (Check & fix styling)

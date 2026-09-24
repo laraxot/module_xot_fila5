@@ -258,6 +258,7 @@ class CacheTest extends TestCase {
 5. Mantenere compatibilità con le versioni precedenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -266,3 +267,6 @@ class CacheTest extends TestCase {
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -22,6 +22,7 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * following the architectural pattern of never extending Filament classes directly.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ?string $model
  * @property array<string, mixed> $data
  * @property Schema $form
@@ -30,6 +31,11 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * @property array<string, mixed> $data
  * @property Schema               $form
 >>>>>>> laraxot/dev
+=======
+ * @property ?string              $model
+ * @property array<string, mixed> $data
+ * @property Schema               $form
+>>>>>>> 8d801bbe (Check & fix styling)
  */
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
@@ -57,10 +63,14 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     public function getView(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->view !== 'filament-panels::pages.page') {
 =======
         if ('filament-panels::pages.page' !== $this->view) {
 >>>>>>> laraxot/dev
+=======
+        if ('filament-panels::pages.page' !== $this->view) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return $this->view;
         }
 
@@ -88,7 +98,11 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         $after[1] = Str::before($after[1], 'Resource');
         $after[3] = Str::before($after[3], $after[1]);
 
+<<<<<<< HEAD
         $after = collect($after)->map(function (string $item) {
+=======
+        $after = collect($after)->map(function ($item) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return Str::kebab($item);
             // return Str::snake($item);
         })->implode('.');
@@ -161,10 +175,14 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     public function getModel(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (static::$model === null) {
 =======
         if (null === static::$model) {
 >>>>>>> laraxot/dev
+=======
+        if (null === static::$model) {
+>>>>>>> 8d801bbe (Check & fix styling)
             throw new \LogicException('Model class not set for page: '.static::class);
         }
 

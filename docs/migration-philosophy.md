@@ -1,6 +1,7 @@
 # Laraxot Migration Architecture Philosophy
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -19,6 +20,8 @@
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Core Migration Principles
 
 ### The Single Source of Truth Principle
@@ -28,6 +31,7 @@
 ### Why This Architecture Matters
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Predictable Schema Evolution**: Clear, linear progression of database changes
 =======
 <<<<<<< HEAD
@@ -36,6 +40,9 @@
 1. **<nome progetto>able Schema Evolution**: Clear, linear progression of database changes
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+1. **Predictable Schema Evolution**: Clear, linear progression of database changes
+>>>>>>> 8d801bbe (Check & fix styling)
 2. **Environment Consistency**: Same migration order across all environments
 3. **Maintainability**: Single file to modify for each table's base schema
 4. **DRY Compliance**: Eliminates redundant schema definitions
@@ -77,17 +84,21 @@ $this->tableUpdate(function (Blueprint $table) {
 
 #### 1. Table Creation Migrations
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 #### 1. Table Creation Migrations (UNICA per tabella)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Pattern**: `{timestamp}_create_{table}_table.php`
 - **Purpose**: Define the base table schema
 - **Rule**: Exactly ONE per table per module
 - **Example**: `2024_01_01_000011_create_roles_table.php`
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -103,6 +114,8 @@ $this->tableUpdate(function (Blueprint $table) {
 - **Purpose**: Transform or seed data (NON modifiche schema)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 #### 2. Schema Evolution Migrations
 - **Pattern**: `{timestamp}_{action}_{table}.php`
 - **Purpose**: Modify existing table schema
@@ -147,6 +160,7 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -157,6 +171,8 @@ Modules/User/database/migrations/
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
@@ -165,6 +181,7 @@ Modules/User/database/migrations/
 When you need to modify a table:
 
 1. **NEVER** create a new `create_table` migration
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -175,6 +192,8 @@ When you need to modify a table:
 5. **USE** `XotBaseMigration::tableUpdate()` per aggiunte sicure
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 2. **ALWAYS** create a schema evolution migration
 3. **USE** `XotBaseMigration::tableUpdate()` for safe modifications
 
@@ -240,6 +259,7 @@ Each module should:
 3. Document migration dependencies in module README
 4. Follow consistent naming conventions
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -466,6 +486,8 @@ protected function registerLivewireAuthWidgets(): void
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:
@@ -477,6 +499,7 @@ protected function registerLivewireAuthWidgets(): void
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
 =======
 <<<<<<< HEAD
@@ -485,3 +508,6 @@ protected function registerLivewireAuthWidgets(): void
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
+>>>>>>> 8d801bbe (Check & fix styling)

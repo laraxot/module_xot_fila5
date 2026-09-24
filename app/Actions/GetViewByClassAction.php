@@ -20,6 +20,7 @@ class GetViewByClassAction
      * Ottiene una vista basata su una classe.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $class  Nome della classe
      * @param  array<string, mixed>  $params  Parametri da passare alla vista
      * @param  string|null  $viewName  Nome personalizzato della vista
@@ -28,15 +29,24 @@ class GetViewByClassAction
      * @param array<string, mixed> $params   Parametri da passare alla vista
      * @param string|null          $viewName Nome personalizzato della vista
 >>>>>>> laraxot/dev
+=======
+     * @param string               $class    Nome della classe
+     * @param array<string, mixed> $params   Parametri da passare alla vista
+     * @param string|null          $viewName Nome personalizzato della vista
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var view-string $viewName */
 =======
         /* @var view-string $viewName */
 >>>>>>> laraxot/dev
+=======
+        /* @var view-string $viewName */
+>>>>>>> 8d801bbe (Check & fix styling)
 
         return ViewFacade::make($viewName, $params);
     }
@@ -45,11 +55,16 @@ class GetViewByClassAction
      * Risolve il percorso della view basato sul namespace della classe.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $class  Il nome completo della classe
 =======
      * @param string $class Il nome completo della classe
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string $class Il nome completo della classe
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return string Il percorso della view
      */
     public function executeOld(string $class): string
@@ -59,10 +74,14 @@ class GetViewByClassAction
 
         // Verifica che la classe sia nel namespace Modules
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($arr[0] !== 'Modules') {
 =======
         if ('Modules' !== $arr[0]) {
 >>>>>>> laraxot/dev
+=======
+        if ('Modules' !== $arr[0]) {
+>>>>>>> 8d801bbe (Check & fix styling)
             throw new \InvalidArgumentException('Class must be in Modules namespace');
         }
 
@@ -80,10 +99,14 @@ class GetViewByClassAction
      * Ottiene il nome della vista dal nome della classe.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $class  Nome della classe
 =======
      * @param string $class Nome della classe
 >>>>>>> laraxot/dev
+=======
+     * @param string $class Nome della classe
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     protected function getViewNameFromClass(string $class): string
     {

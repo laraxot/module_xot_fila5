@@ -2,22 +2,33 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 /** @var \ReflectionClass $reflection */
 /** @var array<string, string> $properties */
 >>>>>>> laraxot/dev
+=======
+
+/** @var \ReflectionClass $reflection */
+/** @var array<string, string> $properties */
+>>>>>>> 8d801bbe (Check & fix styling)
 ?>
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 @isset($properties['remember_token'])
+<<<<<<< HEAD
     use Illuminate\Support\Str;
+=======
+use Illuminate\Support\Str;
+>>>>>>> 8d801bbe (Check & fix styling)
 @endisset
 use {{ $reflection->getName() }};
 
 class {{ $reflection->getShortName() }}Factory extends Factory
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 /**
 * The name of the factory's corresponding model.
@@ -40,6 +51,8 @@ return [
 ];
 }
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     /**
      * The name of the factory's corresponding model.
      *
@@ -60,5 +73,8 @@ return [
 @endforeach
         ];
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }

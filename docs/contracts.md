@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Contratti del Modulo Xot
 
 ## Descrizione
@@ -16,10 +19,13 @@ Il modulo Xot definisce vari contratti (interfacce) che standardizzano il compor
 Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenticazione, autorizzazione, ruoli, permessi e media.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Problema Critico Identificato (2025-01-06)
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
@@ -102,6 +108,7 @@ Contratto per modelli che hanno profili.
 
 *Ultimo aggiornamento: 2025-01-06*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -121,3 +128,5 @@ public function whereHas($relation, Closure $callback = null, $operator = '>=', 
  public function getModel()
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

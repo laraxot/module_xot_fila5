@@ -116,12 +116,15 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 
 - [Audit Completo](./MODEL_INHERITANCE_AUDIT.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Audit Completo](./model_inheritance_audit.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
@@ -243,6 +246,7 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 
 - [Audit Completo](./MODEL_INHERITANCE_AUDIT.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
@@ -258,3 +262,8 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [XotBaseModel](../app/Models/XotBaseModel.php)
+- [XotBasePivot](../app/Models/XotBasePivot.php)
+- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
+>>>>>>> 8d801bbe (Check & fix styling)

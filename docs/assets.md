@@ -252,6 +252,7 @@ document.addEventListener('alpine:init', () => {
 * [assets.md](../../../Xot/docs/assets.md)
 * [assets.md](../../../Cms/docs/themes/assets.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [assets.md](../../../../Themes/One/docs/assets.md)
 =======
 <<<<<<< HEAD
@@ -260,3 +261,6 @@ document.addEventListener('alpine:init', () => {
 * [assets.md](../../../../Themes/One/docs/assets.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [assets.md](../../../../Themes/One/docs/assets.md)
+>>>>>>> 8d801bbe (Check & fix styling)

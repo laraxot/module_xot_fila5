@@ -11,6 +11,7 @@ namespace Modules\Xot\Tests\Unit\Exports;
 class ResourceWithXlsFieldsStub
 {
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
      * @param array<array-key, mixed> $data
@@ -43,6 +44,9 @@ class ResourceWithXlsFieldsStub
      * >>>>>>> .merge_file_KSvTHm
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param array<array-key, mixed> $data
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return array<int|string, string>
      */

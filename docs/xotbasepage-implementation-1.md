@@ -172,12 +172,17 @@ class DashboardSettingsPolicy
 - wizard personalizzati
 
 ## collegamento ad altre documentazioni
+<<<<<<< HEAD
 - [pattern di estensione filament](../xot/docs/filament_extension_pattern.md)
+=======
+- [pattern di estensione filament](../Xot/docs/filament_extension_pattern.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [best practices filament](../<nome progetto>/docs/filament-best-practices.md)
 
 ## ATTENZIONE: errori critici da evitare
 - NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 =======
 <<<<<<< HEAD
@@ -186,3 +191,6 @@ class DashboardSettingsPolicy
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
+>>>>>>> 8d801bbe (Check & fix styling)

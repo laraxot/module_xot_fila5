@@ -38,16 +38,20 @@ public function getTableActions(): array
 // ❌ SBAGLIATO - Array numerico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -57,6 +61,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -85,16 +91,20 @@ public function getTableActions(): array
 /** @return array<string, Component> */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -104,6 +114,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -162,16 +174,20 @@ class UserResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tr1oZ0
@@ -181,6 +197,8 @@ class UserResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_n6HFhY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'name_field' => TextInput::make('name'),

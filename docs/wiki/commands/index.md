@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_PiD4kM
 =======
 <<<<<<< HEAD
@@ -10,16 +11,21 @@
 >>>>>>> .merge_file_IGTrVd
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_PiD4kM
 =======
 >>>>>>> .merge_file_7dtaMf
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_IGTrVd
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 title: "Index"
 type: reference
@@ -29,6 +35,7 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_PiD4kM
 =======
 <<<<<<< .merge_file_flbgG0
@@ -49,6 +56,11 @@ updated: 2026-08-24
 >>>>>>> .merge_file_7dtaMf
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_IGTrVd
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot Module - commands Index
 
 ## Purpose

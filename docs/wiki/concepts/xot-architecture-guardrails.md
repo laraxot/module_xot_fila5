@@ -25,6 +25,7 @@ The raw docs consistently point to one central idea: Xot base classes are the co
 - Do not extend Laravel or Filament base classes directly when an Xot base wrapper exists.
 - Treat Xot base classes as architectural contracts, not convenience helpers.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -50,6 +51,10 @@ The raw docs consistently point to one central idea: Xot base classes are the co
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Never delete** `app/Models/Policies/*Policy.php` — even empty `extends XotBasePolicy {}` bodies are Laravel/Gate contracts. Hub: [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md).
+- Prefer actions over services for business logic execution ([queueable-actions-not-services-jobs.md](../../../../../../docs/wiki/concepts/queueable-actions-not-services-jobs.md)).
+>>>>>>> 8d801bbe (Check & fix styling)
 - Keep directory layouts DRY and avoid duplicated nested structures such as `lang/lang/`.
 - Keep translation behavior convention-driven instead of hardcoding labels and placeholders in components.
 

@@ -36,6 +36,7 @@ class DepartmentForm {
 class TicketForm extends XotBaseResourceForm {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -49,6 +50,9 @@ class TicketForm extends XotBaseResourceForm {
     public static function getFormSchema(): array {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array {
+>>>>>>> 8d801bbe (Check & fix styling)
         return [
             TextInput::make('name'), // ✅ No label - LangServiceProvider owns it
             // Wizard integration built-in

@@ -6,6 +6,7 @@
 - [Laravel Framework](laravel-framework.md) - Documentazione completa del framework Laravel
 - [Convenzioni Laraxot](conventions.md) - Regole e convenzioni per lo sviluppo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -19,6 +20,8 @@
 - [Modulo Lang](../lang/docs/readme.md) - Gestione multilingua e traduzioni
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Piano Consolidamento Docs](DOCS_CONSOLIDATION_PLAN.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -63,6 +66,7 @@
 ### Sicurezza e Performance
 - [Security Guidelines](security-guidelines.md) - Linee guida per la sicurezza
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
 =======
 <<<<<<< HEAD
@@ -71,6 +75,9 @@
 - [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 
@@ -199,6 +206,7 @@
 - [Standard di Codice](./standards/CODE-STANDARDS.md)
 - [Convenzioni di Nomenclatura](./conventions/NAMING-CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -212,11 +220,14 @@
 - [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
 
 ## Collegamenti ai Moduli
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -257,6 +268,8 @@
 * [links.md](../../../themes/one/docs/links.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Cms](../Cms/docs/README.md) - Frontend
 - [UI](../UI/docs/README.md) - Componenti
 - [User](../User/docs/README.md) - Utenti e Permessi
@@ -291,6 +304,7 @@
 * [links.md](../../Tenant/docs/it/links/links.md)
 * [links.md](../../Cms/docs/links.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [links.md](../../../Themes/One/docs/links.md)
 =======
 <<<<<<< HEAD
@@ -299,3 +313,6 @@
 * [links.md](../../../Themes/One/docs/links.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [links.md](../../../Themes/One/docs/links.md)
+>>>>>>> 8d801bbe (Check & fix styling)

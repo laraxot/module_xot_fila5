@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 =======
 =======
@@ -41,3 +42,6 @@ https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 >>>>>>> .merge_file_1H7KiC
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+>>>>>>> 8d801bbe (Check & fix styling)

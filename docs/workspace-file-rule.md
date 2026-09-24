@@ -5,6 +5,7 @@
 **Every module MUST have exactly ONE `.code-workspace` file.**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_rqQVYV
@@ -37,6 +38,8 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 =======
 =======
 >>>>>>> .merge_file_Lx9qIP
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 The file MUST be named: `_<module_name_in_snake_case>.code-workspace`
 
 ## Examples
@@ -47,6 +50,7 @@ The file MUST be named: `_<module_name_in_snake_case>.code-workspace`
 | `Activity` | `_activity.code-workspace` | `_xot.code-workspace`, `_activity_base.code-workspace` |
 | `CertFisc` | `_cert_fisc.code-workspace` | `_cert.code-workspace`, `_fisc.code-workspace` |
 | `IndennitaCondizioniLavoro` | `_indennita_condizioni_lavoro.code-workspace` | `_indennita.code-workspace`, `_icl.code-workspace` |
+<<<<<<< HEAD
 <<<<<<< .merge_file_rqQVYV
 =======
 The filename is derived from the **Git remote** of the nested repo, not from
@@ -76,6 +80,8 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Rationale
 
@@ -84,6 +90,7 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 3. **IDE Configuration**: Each module's VSCode workspace settings are contained in a single, clearly-identified file
 4. **Version Control**: Prevents confusion about which workspace file is authoritative
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. **Il nome deriva dal remote**: il suffisso `_fila<number>` dipende dal deployment e non deve comparire nel nome del workspace
 =======
 <<<<<<< HEAD
@@ -96,6 +103,8 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Common Mistakes
 
@@ -104,6 +113,7 @@ So `module_xot_fila5.git` → `_module_xot.code-workspace`.
 ```
 Modules/Xot/
 <<<<<<< HEAD
+<<<<<<< HEAD
   _module_xot.code-workspace  # ✓ Correct
   _activity.code-workspace    # ✗ Wrong - belongs to Activity module
 =======
@@ -123,6 +133,10 @@ Modules/Xot/
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  _xot.code-workspace       # ✓ Correct
+  _activity.code-workspace  # ✗ Wrong - belongs to Activity module
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### ❌ Wrong: Workspace file with wrong name
@@ -130,6 +144,7 @@ Modules/Xot/
 ```
 Modules/Job/
 <<<<<<< HEAD
+<<<<<<< HEAD
   _module_job_fila5.code-workspace  # ✗ Wrong - keeps the _fila suffix
   _job_workspace.code-workspace     # ✗ Wrong - not derived from remote
 =======
@@ -149,6 +164,10 @@ Modules/Job/
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  _job_base.code-workspace  # ✗ Wrong
+  _job_workspace.code-workspace  # ✗ Wrong
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### ✅ Correct
@@ -156,6 +175,7 @@ Modules/Job/
 ```
 Modules/Job/
 <<<<<<< HEAD
+<<<<<<< HEAD
   _module_job.code-workspace  # ✓ Correct (remote: module_job_fila5)
 =======
 <<<<<<< HEAD
@@ -170,6 +190,9 @@ Modules/Job/
 >>>>>>> .merge_file_Lx9qIP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  _job.code-workspace  # ✓ Correct
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ## Cross-Module Dependencies

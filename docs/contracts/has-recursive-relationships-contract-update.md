@@ -224,6 +224,7 @@ public function getLocalKeyName(): string
 **Data**: 2025-01-18
 **Autore**: AI Assistant
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Completato e verificato
 =======
 <<<<<<< HEAD
@@ -232,3 +233,6 @@ public function getLocalKeyName(): string
 **Status**: ✅ Completato e verificato
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: ✅ Completato e verificato
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -500,6 +500,7 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 
 **Aggiornato**: 2025-08-07
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Categoria**: database
 **Priorità**: CRITICA
 =======
@@ -512,3 +513,7 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **Priorità**: CRITICA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Categoria**: database
+**Priorità**: CRITICA
+>>>>>>> 8d801bbe (Check & fix styling)

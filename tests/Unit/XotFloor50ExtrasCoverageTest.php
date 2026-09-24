@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Mockery;
 =======
 <<<<<<< .merge_file_8AmCPR
@@ -20,6 +21,8 @@ use Mockery;
 =======
 >>>>>>> .merge_file_ue0Q9W
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
@@ -29,6 +32,7 @@ uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     Mockery::close();
 =======
 <<<<<<< .merge_file_8AmCPR
@@ -41,6 +45,9 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_ue0Q9W
 >>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> 8d801bbe (Check & fix styling)
 });
 
 describe('Xot floor50 extras non-public', function (): void {

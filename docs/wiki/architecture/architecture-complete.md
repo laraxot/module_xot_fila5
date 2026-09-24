@@ -154,6 +154,7 @@ All Filament resources extend this base class:
 abstract public function getFormSchema(): array;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
 =======
@@ -174,6 +175,10 @@ abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nTLeny
 >>>>>>> laraxot/dev
+=======
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -615,6 +620,7 @@ class MyResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -635,6 +641,10 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nTLeny
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('field1')->required(),
@@ -715,6 +725,7 @@ class ArticleResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -735,6 +746,10 @@ class ArticleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nTLeny
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('title')

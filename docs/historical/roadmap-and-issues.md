@@ -1,11 +1,14 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 module: Xot
 topic: legacy-roadmap-and-issues
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
@@ -17,6 +20,7 @@ updated: 2026-07-15
 Documentazione canonica spostata:
 
 See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
@@ -43,6 +47,8 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -359,6 +365,7 @@ function xot_config(string $key): mixed
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
 =======
@@ -370,3 +377,5 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/legacy
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

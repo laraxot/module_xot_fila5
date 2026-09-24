@@ -291,16 +291,20 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tfpHcz
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_Qjtf2J
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tfpHcz
@@ -310,6 +314,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Qjtf2J
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -495,16 +501,20 @@ class UserResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tfpHcz
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_Qjtf2J
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tfpHcz
@@ -514,6 +524,8 @@ class UserResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Qjtf2J
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('name')->required(),

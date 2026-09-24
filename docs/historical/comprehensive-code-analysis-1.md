@@ -162,6 +162,7 @@ try {
 
 ```php
 // ContactResource.php
+<<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
 public function getFormSchema(): array
 =======
@@ -171,6 +172,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+=======
+public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('first_name'),
@@ -179,6 +183,7 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
 public function getFormSchema(): array
 =======
@@ -188,6 +193,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+=======
+public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('name')->required(),
@@ -280,6 +288,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
     public function getFormSchema(): array
 =======
@@ -289,6 +298,9 @@ class ContactResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+=======
+    public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('first_name'),
@@ -415,6 +427,7 @@ try {
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
 - [Architettura Moduli](architecture.md)
 =======
@@ -424,6 +437,9 @@ try {
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

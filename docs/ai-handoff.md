@@ -7,6 +7,7 @@
 - phpstan: usare solo la config `phpstan.neon` (non modificare il file, non passare `--level`)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -26,6 +27,8 @@
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## configurazione ambiente test
 - file: `../../.env.testing`
 - il bootstrap carica `.env.testing` tramite `Modules/Xot/tests/CreatesApplication.php` (usa `$app->loadEnvironmentFrom('.env.testing')` se presente)
@@ -51,6 +54,7 @@
   - `./vendor/bin/phpstan analyse Modules --configuration=phpstan.neon --memory-limit=2G`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## note importanti per chi riprende
 - evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
 =======
@@ -73,3 +77,7 @@
 - per bug dashboard/livewire/query: usare URL, payload Livewire e SQL dello stack trace come specifica minima del test di regressione
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## note importanti per chi riprende
+- evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
+>>>>>>> 8d801bbe (Check & fix styling)

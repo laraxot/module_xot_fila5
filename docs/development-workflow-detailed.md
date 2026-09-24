@@ -176,6 +176,7 @@ class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -189,6 +190,9 @@ class ProductResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -199,6 +203,7 @@ class ProductResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -214,6 +219,9 @@ class ProductResource extends XotBaseResource
     public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Infolists\Components\TextEntry::make('name'),
@@ -547,6 +555,7 @@ echo "5. Run quality checks"
 **Workflow Version**: 1.0
 **Last Updated**: 2025-11-17
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maintained by**: Xot Module Development Team
 =======
 <<<<<<< HEAD
@@ -556,3 +565,6 @@ echo "5. Run quality checks"
 **Maintained by**: Xot Module Development Team
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Maintained by**: Xot Module Development Team
+>>>>>>> 8d801bbe (Check & fix styling)

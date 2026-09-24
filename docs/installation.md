@@ -129,6 +129,7 @@ php artisan serve
 
 ## Collegamenti tra versioni di installation.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -141,6 +142,8 @@ php artisan serve
 * [installation.md](../../../../themes/one/docs/installation.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [installation.md](../../../Xot/docs/filament/installation.md)
 * [installation.md](../../../Xot/docs/installation.md)
 * [installation.md](../../../Xot/docs/base/installation.md)
@@ -148,6 +151,7 @@ php artisan serve
 * [installation.md](../../../Lang/docs/installation.md)
 * [installation.md](../../../Cms/docs/installation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [installation.md](../../../../Themes/One/docs/installation.md)
 =======
 <<<<<<< HEAD
@@ -156,3 +160,6 @@ php artisan serve
 * [installation.md](../../../../Themes/One/docs/installation.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [installation.md](../../../../Themes/One/docs/installation.md)
+>>>>>>> 8d801bbe (Check & fix styling)

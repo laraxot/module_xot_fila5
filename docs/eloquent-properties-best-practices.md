@@ -2,12 +2,15 @@
 
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
 
@@ -216,12 +219,15 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 - [Memoria Cursor](../../.cursor/memories)
 - [Linee Guida AI](../../.ai/guidelines/CORE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Linee Guida AI](../../.ai/guidelines/core.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Esempio Corretto](../../Notify/app/Notifications/GenericNotification.php)
 
 ## Esempi di Correzione
@@ -259,6 +265,7 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 
 *Ultimo aggiornamento: Giugno 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Regola applicabile a tutti i moduli*
 =======
 <<<<<<< HEAD
@@ -267,3 +274,6 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 *Regola applicabile a tutti i moduli*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Regola applicabile a tutti i moduli*
+>>>>>>> 8d801bbe (Check & fix styling)

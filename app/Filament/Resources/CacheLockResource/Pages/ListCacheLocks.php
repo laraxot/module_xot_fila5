@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\CacheLockResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Filament\Resources\CacheLockResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -15,9 +19,20 @@ class ListCacheLocks extends XotBaseListRecords
 {
     protected static string $resource = CacheLockResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     #[\Override]
+=======
+
+    /**
+     * @return array<string, TextColumn>
+     */
+    #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getTableColumns(): array
     {
         return [
@@ -32,5 +47,8 @@ class ListCacheLocks extends XotBaseListRecords
             'expiration' => TextColumn::make('expiration')->numeric()->sortable(),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }

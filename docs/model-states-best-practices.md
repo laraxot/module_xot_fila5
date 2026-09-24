@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom
@@ -16,6 +19,7 @@
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
   - [README.md centrale](../../../docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
   - [README.md centrale](../../../docs/README.md)
@@ -28,3 +32,5 @@ canonical: ../../../Themes/docs/shared-components/model-states-best-practices-1.
 See canonical documentation: ../../../Themes/docs/shared-components/model-states-best-practices-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Spatie\Health\Enums\Status;
 use Spatie\Health\ResultStores\ResultStore;
 
+<<<<<<< HEAD
 class HealthOverviewWidget extends XotBaseStatsOverviewWidget
+=======
+class HealthOverviewWidget extends BaseWidget
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     public function iconColor(string $status): string
     {
@@ -27,10 +35,14 @@ class HealthOverviewWidget extends XotBaseStatsOverviewWidget
 
         $checkResults = app(ResultStore::class)->latestResults();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($checkResults === null) {
 =======
         if (null === $checkResults) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $checkResults) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return $stats;
         }
         foreach ($checkResults->storedCheckResults as $result) {

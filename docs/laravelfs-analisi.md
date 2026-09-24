@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Analisi di LaravelFS
 
 ## Introduzione
@@ -39,6 +42,7 @@ Il progetto ha una struttura ben organizzata:
 
 ## Aspetti interessanti per il nostro progetto
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -50,3 +54,5 @@ canonical: ../../../Themes/docs/shared-components/laravelfs-analisi.md
 See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

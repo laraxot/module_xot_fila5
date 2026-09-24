@@ -586,6 +586,7 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
 =======
 <<<<<<< HEAD
@@ -594,3 +595,6 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **< 50%**: Richiede analisi dettagliata
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **< 50%**: Richiede analisi dettagliata
+>>>>>>> 8d801bbe (Check & fix styling)

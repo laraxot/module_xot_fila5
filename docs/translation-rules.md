@@ -141,6 +141,7 @@ return [
 ## Link alla documentazione correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -150,11 +151,14 @@ return [
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/project_docs/errori_comuni_traduzione.md)
 - [Convenzioni di documentazione](/laravel/Modules/Xot/project_docs/documentation_conventions.md)
 - [Documentazione principale sulle traduzioni](/project_docs/translation_rules.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
 =======
 <<<<<<< HEAD
@@ -163,3 +167,6 @@ return [
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 3 Giugno 2025*
+>>>>>>> 8d801bbe (Check & fix styling)

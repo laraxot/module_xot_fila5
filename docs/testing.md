@@ -693,6 +693,7 @@ test('no memory leaks in repeated operations', function (): void {
 **Framework**: Pest v2.x
 **Coverage Target**: 90%+ per core framework
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -705,3 +706,5 @@ canonical: ../../../Themes/docs/shared-components/testing-guide.md
 See canonical documentation: ../../../Themes/docs/shared-components/testing-guide.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

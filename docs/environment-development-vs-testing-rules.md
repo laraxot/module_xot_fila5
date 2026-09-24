@@ -4,6 +4,7 @@
 In Laraxot è fondamentale comprendere la differenza tra le configurazioni di ambiente di sviluppo e di test, specialmente riguardo all'uso dei database.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7aud6t
 =======
@@ -87,6 +88,8 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Configurazione per Sviluppo (.env.development)
 
 ### Database
@@ -108,6 +111,7 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 ### Database
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
 =======
 <<<<<<< .merge_file_7aud6t
@@ -120,6 +124,9 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+=======
+- Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
+>>>>>>> 8d801bbe (Check & fix styling)
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione
@@ -149,6 +156,7 @@ Questa differenziazione rispetta i principi fondamentali:
 - **DRY**: Configurazioni separate per scopi diversi
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
+<<<<<<< HEAD
 <<<<<<< HEAD
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 =======
@@ -246,3 +254,6 @@ Il `setUp()` deve essere usato SOLO per:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+=======
+- **Multi-tenancy**: Supporto completo per architettura multi-database
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -52,16 +52,20 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 ## Collegamenti alla documentazione correlata
 - [Qualità del codice](./CODE_QUALITY.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xLHygg
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_aXDaAR
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Tipi rigorosi PHP](php-strict-types.md)
 - [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](service-provider-best-practices.md)
 - [Best practice per Filament](filament-best-practices.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xLHygg
@@ -74,3 +78,5 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_aXDaAR
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

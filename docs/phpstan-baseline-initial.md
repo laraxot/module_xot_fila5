@@ -5,6 +5,7 @@ status: active
 created: 2026-08-27
 updated: 2026-08-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 note: "Convertito da phpstan-baseline-initial.txt (documento) da convert-docs-txt-to-md.py."
 =======
 <<<<<<< HEAD
@@ -12,6 +13,8 @@ note: "Convertito da phpstan_baseline_initial.txt (documento) da convert-docs-tx
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 <<<<<<< HEAD
 note: "Convertito da phpstan-baseline-initial.txt (documento) da convert-docs-txt-to-md.py."
 =======
@@ -20,8 +23,11 @@ note: "Convertito da phpstan_baseline_initial.txt (documento) da convert-docs-tx
 =======
 note: "Convertito da phpstan-baseline-initial.txt (documento) da convert-docs-txt-to-md.py."
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 
 # Phpstan baseline initial
@@ -29,6 +35,7 @@ note: "Convertito da phpstan-baseline-initial.txt (documento) da convert-docs-tx
 ---
 module: theme
 <<<<<<< HEAD
+<<<<<<< HEAD
 topic: phpstan-baseline-initial
 =======
 <<<<<<< HEAD
@@ -36,6 +43,8 @@ topic: phpstan_baseline_initial
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 <<<<<<< HEAD
 topic: phpstan-baseline-initial
 =======
@@ -44,8 +53,11 @@ topic: phpstan_baseline_initial
 =======
 topic: phpstan-baseline-initial
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
 ---
 

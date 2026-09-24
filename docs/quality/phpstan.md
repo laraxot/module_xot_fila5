@@ -99,6 +99,7 @@ abstract class XotBaseResource extends Resource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -112,6 +113,9 @@ abstract class XotBaseResource extends Resource
     abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    abstract public static function getFormSchema(): array;
+>>>>>>> 8d801bbe (Check & fix styling)
 
     /**
      * Get pages with proper typing.
@@ -448,6 +452,7 @@ function processUserData(array $data): array
 **Type Coverage**: 98%+
 **Performance**: Optimized
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Documentation**: Complete PHPDoc coverage
 =======
 <<<<<<< HEAD
@@ -456,3 +461,6 @@ function processUserData(array $data): array
 **Documentation**: Complete PHPDoc coverage
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Documentation**: Complete PHPDoc coverage
+>>>>>>> 8d801bbe (Check & fix styling)

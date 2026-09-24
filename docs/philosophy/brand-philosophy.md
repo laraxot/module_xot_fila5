@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Filosofia del Brand nel Sistema
 
 ## Principi Fondamentali

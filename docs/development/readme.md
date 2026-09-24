@@ -13,6 +13,7 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nP6A1u
 <<<<<<< HEAD
@@ -22,6 +23,8 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 =======
 >>>>>>> .merge_file_nVd0ww
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto. 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -101,6 +104,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nP6A1u
@@ -193,3 +197,5 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 >>>>>>> .merge_file_nVd0ww
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

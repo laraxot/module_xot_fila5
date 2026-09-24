@@ -3,6 +3,7 @@
 ## Core Principle: Consistency Above All
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **In Laraxot architecture, consistency and predictability are more valuable than flexibility and options.**
 =======
 <<<<<<< HEAD
@@ -11,6 +12,9 @@
 **In Laraxot architecture, consistency and <nome progetto>ability are more valuable than flexibility and options.**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**In Laraxot architecture, consistency and predictability are more valuable than flexibility and options.**
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## The Three Pillars of Laraxot Consistency
 
@@ -43,6 +47,7 @@
 ### Technical Benefits
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Predictable Autoloading**: No ambiguous class resolution
 =======
 <<<<<<< HEAD
@@ -51,6 +56,9 @@
 1. **<nome progetto>able Autoloading**: No ambiguous class resolution
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+1. **Predictable Autoloading**: No ambiguous class resolution
+>>>>>>> 8d801bbe (Check & fix styling)
 2. **Reliable Test Execution**: Consistent test discovery and coverage
 3. **Easy Maintenance**: Clear, unambiguous code structure
 4. **Fast Debugging**: Obvious source of truth for each entity
@@ -60,6 +68,7 @@
 1. **Reduced Cognitive Load**: Developers know exactly where to find things
 2. **Faster Onboarding**: Clear patterns for new team members
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Reliable Code Generation**: Tools work predictably
 =======
 <<<<<<< HEAD
@@ -68,6 +77,9 @@
 3. **Reliable Code Generation**: Tools work <nome progetto>ably
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+3. **Reliable Code Generation**: Tools work predictably
+>>>>>>> 8d801bbe (Check & fix styling)
 4. **Scalable Architecture**: Consistent patterns scale well
 
 ### Business Benefits
@@ -187,6 +199,7 @@ composer dump-autoload
 
 1. **Simplicity**: Clear, unambiguous patterns
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Predictability**: Consistent behavior across environments
 =======
 <<<<<<< HEAD
@@ -195,6 +208,9 @@ composer dump-autoload
 2. **<nome progetto>ability**: Consistent behavior across environments
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+2. **Predictability**: Consistent behavior across environments
+>>>>>>> 8d801bbe (Check & fix styling)
 3. **Maintainability**: Easy to understand and modify
 4. **Scalability**: Patterns that grow with the application
 
@@ -223,6 +239,7 @@ composer dump-autoload
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
 =======
 <<<<<<< HEAD
@@ -231,3 +248,6 @@ composer dump-autoload
 **Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
+>>>>>>> 8d801bbe (Check & fix styling)

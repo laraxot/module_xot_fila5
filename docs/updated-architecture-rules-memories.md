@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles
@@ -125,6 +128,7 @@ Remember to always:
 - Document decisions and patterns
 - Learn from external packages and integrate best practices
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -136,3 +140,5 @@ canonical: ../../../Themes/docs/shared-components/updated-architecture-memories.
 See canonical documentation: ../../../Themes/docs/shared-components/updated-architecture-memories.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

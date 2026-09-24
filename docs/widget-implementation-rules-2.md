@@ -73,6 +73,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 >>>>>>> laraxot/dev
@@ -85,6 +86,9 @@ namespace Modules\<nome progetto>\Filament\Widgets;
 namespace Modules\<nome progetto>\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\<nome progetto>\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -108,16 +112,20 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
             DatePicker::make('dateTo')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -134,6 +142,8 @@ class QuestionChartFilterWidget extends XotBaseWidget
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             Select::make('answerFilter')
                 ->options([
                     'all' => 'All Answers',
@@ -165,6 +175,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 >>>>>>> laraxot/dev
@@ -177,6 +188,9 @@ namespace Modules\<nome progetto>\Filament\Widgets;
 namespace Modules\<nome progetto>\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\<nome progetto>\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -199,6 +213,7 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->searchable(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -212,6 +227,9 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
                 TextColumn::make('answert')
                     ->limit(50)
                     ->tooltip(function (TextColumn $column): ?string {
@@ -221,6 +239,7 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->searchable(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -234,6 +253,9 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
                 TextColumn::make('answer_lang')
                     ->badge()
                     ->color(fn (string $state): string => match ($state) {
@@ -255,16 +277,20 @@ class QuestionChartDataWidget extends XotBaseTableWidget
         $record = $this->getRecord();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
         if (!$record) {
             return $record->answers()->whereRaw('1 = 0');
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -281,6 +307,8 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         return $record->answers()
             ->select(['submitdate', 'answert', 'answer_lang'])
             ->when($record->date_from, function ($query, $dateFrom) {
@@ -306,6 +334,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 >>>>>>> laraxot/dev
@@ -318,6 +347,9 @@ namespace Modules\<nome progetto>\Filament\Widgets;
 namespace Modules\<nome progetto>\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\<nome progetto>\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -338,6 +370,7 @@ class QuestionChartWidget extends XotBaseWidget
         $record = $this->getRecord();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -351,6 +384,9 @@ class QuestionChartWidget extends XotBaseWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
         if (!$record) {
             return [
                 'datasets' => [],
@@ -359,6 +395,7 @@ class QuestionChartWidget extends XotBaseWidget
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -378,6 +415,11 @@ class QuestionChartWidget extends XotBaseWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+        $chartData = $this->getChartData($record);
+
+>>>>>>> 8d801bbe (Check & fix styling)
         return [
             'datasets' => [
                 [
@@ -397,16 +439,20 @@ class QuestionChartWidget extends XotBaseWidget
         $record = $this->getRecord();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
         if (!$record) {
             return 'bar';
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -423,6 +469,8 @@ class QuestionChartWidget extends XotBaseWidget
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         return match ($record->chart_type) {
             'pie' => 'pie',
             'doughnut' => 'doughnut',
@@ -445,11 +493,14 @@ class QuestionChartWidget extends XotBaseWidget
             ->get();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
         $grouped = $answers->groupBy('answer_lang');
 
@@ -457,6 +508,7 @@ class QuestionChartWidget extends XotBaseWidget
         $values = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -473,12 +525,15 @@ class QuestionChartWidget extends XotBaseWidget
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         foreach ($grouped as $lang => $langAnswers) {
             $labels[] = $lang ?: 'Unknown';
             $values[] = $langAnswers->count();
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -492,6 +547,9 @@ class QuestionChartWidget extends XotBaseWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
         return [
             'labels' => $labels,
             'values' => $values,
@@ -512,6 +570,7 @@ class QuestionChartWidget extends XotBaseWidget
         ];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -525,12 +584,16 @@ class QuestionChartWidget extends XotBaseWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
         $colors = [];
         for ($i = 0; $i < $count; $i++) {
             $colors[] = $baseColors[$i % count($baseColors)];
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -544,6 +607,9 @@ class QuestionChartWidget extends XotBaseWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
         return $colors;
     }
 }
@@ -601,6 +667,7 @@ class MyWidget extends XotBaseWidget
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -614,6 +681,9 @@ class MyWidget extends XotBaseWidget
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
     public function table(Table $table): Table
     {
         // Tabella in widget di form
@@ -663,6 +733,7 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
@@ -684,3 +755,7 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 >>>>>>> laraxot/dev
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 >>>>>>> laraxot/dev
+=======
+
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+>>>>>>> 8d801bbe (Check & fix styling)

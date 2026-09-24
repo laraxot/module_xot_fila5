@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Trend\Adapters;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ILgzJF
 <<<<<<< HEAD
@@ -28,6 +29,11 @@ class MySqlAdapter extends AbstractAdapter
     #[\Override]
 >>>>>>> .merge_file_Zqq18d
 >>>>>>> laraxot/dev
+=======
+class MySqlAdapter extends AbstractAdapter
+{
+    #[\Override]
+>>>>>>> 8d801bbe (Check & fix styling)
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {
@@ -36,6 +42,7 @@ class MySqlAdapter extends AbstractAdapter
             'day' => '%Y-%m-%d',
             'month' => '%Y-%m',
             'year' => '%Y',
+<<<<<<< HEAD
 <<<<<<< HEAD
             default => throw new Error('Invalid interval.'),
 =======
@@ -49,6 +56,9 @@ class MySqlAdapter extends AbstractAdapter
             default => throw new \Error('Invalid interval.'),
 >>>>>>> .merge_file_Zqq18d
 >>>>>>> laraxot/dev
+=======
+            default => throw new \Error('Invalid interval.'),
+>>>>>>> 8d801bbe (Check & fix styling)
         };
 
         return sprintf("date_format(%s, '%s')", $column, $format);

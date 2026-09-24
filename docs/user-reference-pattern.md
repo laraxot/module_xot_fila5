@@ -224,6 +224,7 @@ if ($user instanceof UserContract) {
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
 =======
 <<<<<<< HEAD
@@ -232,3 +233,6 @@ if ($user instanceof UserContract) {
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 8d801bbe (Check & fix styling)

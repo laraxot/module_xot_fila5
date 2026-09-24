@@ -87,6 +87,7 @@ class Foo extends bar
 
 ## Collegamenti tra versioni di customizing-your-site.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -102,6 +103,8 @@ class Foo extends bar
 * [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -195,6 +198,7 @@ class Foo extends bar
 
 ## Collegamenti tra versioni di customizing-your-site.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -205,6 +209,8 @@ class Foo extends bar
 * [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -214,6 +220,7 @@ class Foo extends bar
 ### Versione Incoming
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -222,3 +229,6 @@ class Foo extends bar
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 8d801bbe (Check & fix styling)

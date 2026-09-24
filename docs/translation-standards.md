@@ -141,12 +141,15 @@ return array(
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 #### File Completati
 1. `progressioni.php` - Traduzioni principali
@@ -264,6 +267,7 @@ return [
 - [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/Modules/Xot/docs/translations-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -271,6 +275,8 @@ return [
 - [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Laraxot Conventions](laraxot-conventions.md)
 
 ## Note Tecniche
@@ -288,6 +294,7 @@ return [
 4. **Naming**: Convenzioni standardizzate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
 =======
 <<<<<<< HEAD
@@ -296,3 +303,6 @@ return [
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 8d801bbe (Check & fix styling)

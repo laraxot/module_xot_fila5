@@ -948,6 +948,7 @@ GeneratePngChartAction::dispatch($type, $data)
 
 **Last Updated:** 2025-12-09
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, Spatie QueueableAction
@@ -963,3 +964,8 @@ GeneratePngChartAction::dispatch($type, $data)
 **Dependencies:** Imagick, Spatie QueueableAction
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Version:** 1.0.0
+**PHPStan Level:** 10 ✅
+**Dependencies:** Imagick, Spatie QueueableAction
+>>>>>>> 8d801bbe (Check & fix styling)

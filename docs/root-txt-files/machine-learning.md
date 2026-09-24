@@ -1,10 +1,13 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: 'Machine learning'
 module: Xot
 type: reference
@@ -19,9 +22,12 @@ updated: 2026-08-24
 -------------------------------------
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "Machine learning"
 type: reference
 status: active
@@ -37,11 +43,14 @@ https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!
 
 ----------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 rephrasing
 https://cloudmersive.com/nlp-api  !!!!!!!!!!!!!!!
@@ -86,6 +95,7 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 >>>>>>> laraxot/dev
 =======
@@ -95,6 +105,10 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP

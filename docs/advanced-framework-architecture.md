@@ -3,6 +3,7 @@
 ## Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto LaravelPizza.
 =======
 <<<<<<< HEAD
@@ -11,6 +12,9 @@ Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-l
 Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto <nome progetto>.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto LaravelPizza.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Sistema di Plugin Centralizzato
 
@@ -548,6 +552,7 @@ Applicando i principi architetturali osservati nel pacchetto `filament-spatie-la
 7. **Esperienza di sviluppo coerente** grazie ai principi architetturali standardizzati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
 =======
 <<<<<<< HEAD
@@ -556,3 +561,6 @@ Questa architettura permette al modulo Xot di fungere da base solida e flessibil
 Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
+>>>>>>> 8d801bbe (Check & fix styling)

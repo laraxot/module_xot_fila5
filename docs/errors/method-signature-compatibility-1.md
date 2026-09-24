@@ -17,6 +17,10 @@ Cannot make non static method Filament\Pages\BasePage::getView() static in class
 
 ```
 Access level to Modules\<nome progetto>\Filament\Resources\AppointmentWorkflowResource\Pages\WorkflowAppointment::getFormActionsAlignment() must be public (as in class Filament\Pages\BasePage)
+<<<<<<< HEAD
+=======
+Access level to Modules\<nome progetto>\Filament\Resources\AppointmentWorkflowResource\Pages\WorkflowAppointment::getFormActionsAlignment() must be public (as in class Filament\Pages\BasePage)
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 esempio di errore:
@@ -124,4 +128,9 @@ $returnType = $parentMethod->getReturnType();
 ## collegamento ad altre risorse
 
 - [regole di ereditarietà in php](docs/standards/php-inheritance-rules.md)
+<<<<<<< HEAD
 - [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
+=======
+- [regole di ereditarietà in php](docs/standards/php-inheritance-rules.md)
+- [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
+>>>>>>> 8d801bbe (Check & fix styling)

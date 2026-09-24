@@ -1,8 +1,11 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: Navigation
 description: Building a navigation menu for your site
 extends: _layouts.documentation
@@ -40,10 +43,13 @@ $page->navigation
 
 ## Collegamenti tra versioni di navigation.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [navigation.md](../../../Gdpr/docs/navigation.md)
 * [navigation.md](../../../Xot/docs/navigation.md)
 * [navigation.md](../../../UI/docs/navigation.md)
@@ -54,6 +60,7 @@ $page->navigation
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -66,3 +73,5 @@ canonical: ../../../Themes/docs/shared-components/navigation.md
 See canonical documentation: ../../../Themes/docs/shared-components/navigation.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

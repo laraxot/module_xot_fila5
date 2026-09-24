@@ -31,8 +31,52 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     use HasRelationshipModelClass;
     use HasXotTable {
         HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+<<<<<<< HEAD
     }
     use InteractsWithForms;
+=======
+        getGridTableColumns as private xotGetGridTableColumns;
+        getTablePaginated as private xotGetTablePaginated;
+        getSearchableColumns as private xotSearchableColumns;
+    }
+    use InteractsWithForms;
+
+    /**
+     * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getGridTableColumns(): array
+    {
+        return $this->xotGetGridTableColumns();
+    }
+
+    /**
+     * @return bool|array<int|string>
+     */
+    protected function getTablePaginated(): bool|array
+    {
+        $paginated = $this->xotGetTablePaginated();
+
+        if (is_bool($paginated)) {
+            return $paginated;
+        }
+
+        /** @var array<int|string> $options */
+        $options = $paginated;
+
+        return $options;
+    }
+
+    /**
+     * @return array<string>
+     */
+    protected function getSearchableColumns(): array
+    {
+        /** @var array<string> $columns */
+        $columns = $this->xotSearchableColumns();
+
+        return $columns;
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
     // protected static string $resource;
 
     /**
@@ -78,9 +122,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * @return array<string, TextColumn>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> laraxot/dev
+=======
+    #[\Override]
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getTableColumns(): array
     {
         return [
@@ -132,10 +180,14 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($url === '') {
 =======
                     if ('' === $url) {
 >>>>>>> laraxot/dev
+=======
+                    if ('' === $url) {
+>>>>>>> 8d801bbe (Check & fix styling)
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
@@ -149,10 +201,14 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($url === '') {
 =======
                     if ('' === $url) {
 >>>>>>> laraxot/dev
+=======
+                    if ('' === $url) {
+>>>>>>> 8d801bbe (Check & fix styling)
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 

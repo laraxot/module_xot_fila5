@@ -244,6 +244,7 @@ class MioModelloResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -257,6 +258,9 @@ class MioModelloResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -781,6 +785,7 @@ public function process(\Modules\User\Models\User $user) {
     // Codice
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 <<<<<<< HEAD
@@ -789,3 +794,6 @@ public function process(\Modules\User\Models\User $user) {
 ```
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+```
+>>>>>>> 8d801bbe (Check & fix styling)

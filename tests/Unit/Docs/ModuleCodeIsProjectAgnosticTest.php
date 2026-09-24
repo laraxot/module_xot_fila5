@@ -12,6 +12,7 @@ use function Safe\preg_match;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
 =======
 <<<<<<< .merge_file_fO27lg
@@ -24,6 +25,9 @@ uses(TestCase::class);
 /*
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+/*
+>>>>>>> 8d801bbe (Check & fix styling)
  * Il **codice** dei moduli non nomina il progetto ospite.
  *
  * I moduli vivono in piu' progetti: un nome di progetto nel codice li rende portabili
@@ -57,6 +61,7 @@ test('nessun file php dei moduli nomina un progetto ospite', function (): void {
 
         foreach ($forbidden as $name) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
 =======
 <<<<<<< .merge_file_fO27lg
@@ -69,6 +74,9 @@ test('nessun file php dei moduli nomina un progetto ospite', function (): void {
             if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+            if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 $offenders[] = str_replace(base_path().'/', '', $file).' → '.$name;
 
                 break;
@@ -92,6 +100,7 @@ test('il nome del file sqlite di test non e cablato', function (): void {
         $source = file_get_contents($file);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
 =======
 <<<<<<< .merge_file_fO27lg
@@ -104,6 +113,9 @@ test('il nome del file sqlite di test non e cablato', function (): void {
         if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $offenders[] = str_replace(base_path().'/', '', $file);
         }
     }
@@ -135,6 +147,7 @@ function modulePhpFiles(): array
 
     foreach ($iterator as $entry) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
 =======
 <<<<<<< .merge_file_fO27lg
@@ -147,6 +160,9 @@ function modulePhpFiles(): array
         if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+        if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
+>>>>>>> 8d801bbe (Check & fix styling)
             continue;
         }
 

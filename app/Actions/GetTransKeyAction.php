@@ -22,10 +22,14 @@ class GetTransKeyAction
         $class0 = $class;
         // If no class is provided, try to get it from the backtrace
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($class === '') {
 =======
         if ('' === $class) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $class) {
+>>>>>>> 8d801bbe (Check & fix styling)
             /** @var list<array{function: string, line?: int, file?: string, class?: class-string, type?: '->'|'::', args?: list<mixed>, object?: object}> $backtrace PHPStan knows this is always array */
             $backtrace = debug_backtrace();
             $class = Arr::get($backtrace, '1.class');
@@ -36,6 +40,7 @@ class GetTransKeyAction
 
         // Handle cases where the provided class is not in the "Modules" namespace
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($arr[0] !== 'Modules') {
             $backtrace = array_slice(debug_backtrace(), 2);
             $res = Arr::first(
@@ -45,6 +50,8 @@ class GetTransKeyAction
 
             if ($res === null || ! isset($res['object'])) {
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         if ('Modules' !== $arr[0]) {
             $backtrace = array_slice(debug_backtrace(), 2);
             $res = Arr::first(
@@ -53,7 +60,10 @@ class GetTransKeyAction
             );
 
             if (null === $res || ! isset($res['object'])) {
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 $page = Arr::get(debug_backtrace(), '0.args.0');
                 Assert::string($page, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
                 $main_module = XotData::make()->main_module;

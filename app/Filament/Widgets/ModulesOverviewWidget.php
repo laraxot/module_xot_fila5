@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Widgets\Widget;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
@@ -12,9 +16,14 @@ use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
  * Widget per mostrare una panoramica dei moduli disponibili.
  * Utilizza l'action GetModulesNavigationItems per caricare dinamicamente i moduli.
  */
+<<<<<<< HEAD
 class ModulesOverviewWidget extends XotBaseWidget
 {
     /** @var view-string */
+=======
+class ModulesOverviewWidget extends Widget
+{
+>>>>>>> 8d801bbe (Check & fix styling)
     protected string $view = 'xot::filament.widgets.modules-overview';
 
     protected int|string|array $columnSpan = 'full';
@@ -34,7 +43,11 @@ class ModulesOverviewWidget extends XotBaseWidget
             $configs = app(GetModulesNavigationItems::class)->getCachedModuleConfigs();
 
             // Ordina per sort
+<<<<<<< HEAD
             usort($configs, static fn (array $a, array $b) => ($a['sort'] <=> $b['sort']));
+=======
+            usort($configs, static fn ($a, $b) => ($a['sort'] <=> $b['sort']));
+>>>>>>> 8d801bbe (Check & fix styling)
 
             $user = Auth::user();
             $hasRoleFn = static function (string $role) use ($user): bool {
@@ -113,6 +126,7 @@ class ModulesOverviewWidget extends XotBaseWidget
     /**
      * Ottiene la descrizione per un modulo.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string $module Nome del modulo
@@ -120,6 +134,9 @@ class ModulesOverviewWidget extends XotBaseWidget
      * @param string $module Nome del modulo
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param string $module Nome del modulo
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return string Descrizione del modulo
      */

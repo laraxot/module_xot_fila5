@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -75,6 +76,8 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - **Tipo di ritorno `class-string`**: Usare asserzioni o casting appropriati quando si restituiscono stringhe che rappresentano classi.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Data Objects
 
 ## Principi Fondamentali
@@ -157,6 +160,7 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - [Data Objects Patient](../Patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
 =======
 <<<<<<< HEAD
@@ -165,3 +169,6 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 8d801bbe (Check & fix styling)

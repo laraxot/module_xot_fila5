@@ -360,12 +360,15 @@ nano Modules/{ModuleName}/docs/{pattern-name}.md
 - [Doc correlata 1](./related-doc.md)
 - [Doc correlata 2](../../OtherModule/docs/related.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Doc correlata 2](../../othermodule/docs/related.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -411,12 +414,15 @@ CHANGELOG.md
 Business-Logic-Analysis.md           # Maiuscole
 phpstan-fixes-2025-12-02.md         # Date
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 phpstan-fixes-[DATE].md         # Date
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 GUIDE.md                             # Maiuscolo (non README/CHANGELOG)
 ```
 
@@ -722,6 +728,7 @@ Mai tornare indietro. Sempre avanti. Fix forward.
 **Risultato Garantito**: Eccellenza
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
 =======
 <<<<<<< HEAD
@@ -730,3 +737,6 @@ Mai tornare indietro. Sempre avanti. Fix forward.
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
+>>>>>>> 8d801bbe (Check & fix styling)

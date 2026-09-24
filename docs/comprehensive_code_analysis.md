@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -523,10 +524,13 @@ return [
 **Stima Effort**: 40-60 ore di refactoring
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 module: theme
 topic: comprehensive_code_analysis
 canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 28b0298a (fix: phpstan issues)
 ---
@@ -1465,3 +1469,8 @@ return [
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+>>>>>>> 8d801bbe (Check & fix styling)

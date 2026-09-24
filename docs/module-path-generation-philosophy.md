@@ -2,12 +2,15 @@
 
 **Data Creazione**: 2026-01-02
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: 📚 Foundation Document
 **Versione**: 1.0.0
 
@@ -97,6 +100,7 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 =======
 <<<<<<< HEAD
@@ -105,3 +109,6 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
+>>>>>>> 8d801bbe (Check & fix styling)

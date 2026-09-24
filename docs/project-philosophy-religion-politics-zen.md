@@ -3,6 +3,7 @@
 ## 🧠 Logica del Progetto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
 
 =======
@@ -28,6 +29,10 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://<nome pr
 - **Strict Typing**: Ogni file deve avere `declare(strict_types=1);` e tipi espliciti ovunque.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
+
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Conversione e Miglioramento**: Non è una semplice copia, ma un'evoluzione del sito originale
 - **Architettura Modulare**: Moduli indipendenti (`Modules/*`) e temi separati (`Themes/*`)
 - **Frontoffice con Folio + Volt**: Nessun controller tradizionale, solo routing file-based
@@ -76,6 +81,7 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://<nome pr
 ## 🎯 Business Logic Principale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
 =======
 <<<<<<< HEAD
@@ -84,6 +90,9 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://<nome pr
 - **Meetup Theme**: Tema principale basato su <nome progetto>.com, con Folio + Volt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Folio + Volt**: Architettura obbligatoria per il frontoffice
 - **Filament**: Solo per il backoffice
 - **Laraxot Framework**: "Framework nel framework" con regole rigide
@@ -127,6 +136,7 @@ This rule empowers the AI Assistant to determine the order and priority of actio
 **"Filosofia Zen: Non avrai altro path all'infuori del relativo"**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
 =======
 <<<<<<< HEAD
@@ -135,3 +145,6 @@ This rule empowers the AI Assistant to determine the order and priority of actio
 **"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -17,6 +17,7 @@ class DiffAssocRecursiveAction
      *
      * @param array<int|string, mixed> $array1
      * @param array<int|string, mixed> $array2
+<<<<<<< HEAD
      *                                         =======
      *                                         <<<<<<< .merge_file_2uBLQj
      * @param array<int|string, mixed> $array1
@@ -49,12 +50,15 @@ class DiffAssocRecursiveAction
      * <<<<<<< HEAD
      * @param array<int|string, mixed> $array1
      * @param array<int|string, mixed> $array2
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * =======
      * @param array<int|string, mixed> $array1
      * @param array<int|string, mixed> $array2
      *                                         >>>>>>> laraxot/dev
      *
+<<<<<<< HEAD
      * >>>>>>> laraxot/dev
      *
      * <<<<<<< .merge_file_QKxFME
@@ -76,6 +80,8 @@ class DiffAssocRecursiveAction
      *
      * >>>>>>> laraxot/dev
      *
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return array<int|string, mixed>
      */
     public function execute(array $array1, array $array2): array

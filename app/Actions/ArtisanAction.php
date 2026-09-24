@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 =======
@@ -26,12 +27,15 @@ use Webmozart\Assert\Assert;
 =======
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GlRtSo
 <<<<<<< HEAD
@@ -46,6 +50,11 @@ use Webmozart\Assert\Assert;
 
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+>>>>>>> 8d801bbe (Check & fix styling)
 if (! defined('STDIN')) {
     define('STDIN', fopen('php://stdin', 'r'));
 }
@@ -70,6 +79,7 @@ class ArtisanAction
             case 'migrate':
                 $defaultConn = Config::get('database.default');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GlRtSo
 <<<<<<< HEAD
@@ -83,15 +93,20 @@ class ArtisanAction
 =======
 =======
 >>>>>>> .merge_file_boS4oM
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
                 if ('' !== $module_name) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_GlRtSo
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -169,6 +184,7 @@ class ArtisanAction
         }
         $content = '';
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
 <<<<<<< .merge_file_GlRtSo
@@ -181,6 +197,9 @@ class ArtisanAction
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -194,6 +213,7 @@ class ArtisanAction
         $urls = [];
         $urlsRaw = $matches[1];
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($urlsRaw !== []) {
 =======
 <<<<<<< .merge_file_GlRtSo
@@ -206,6 +226,9 @@ class ArtisanAction
         if ([] !== $urlsRaw) {
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+        if ([] !== $urlsRaw) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -249,6 +272,7 @@ class ArtisanAction
 
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
 =======
 <<<<<<< .merge_file_GlRtSo
@@ -261,6 +285,9 @@ class ArtisanAction
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -276,6 +303,7 @@ class ArtisanAction
 
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
 <<<<<<< .merge_file_GlRtSo
@@ -288,6 +316,9 @@ class ArtisanAction
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 File::delete($file->getRealPath());
             }
         }
@@ -300,6 +331,7 @@ class ArtisanAction
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
 =======
 <<<<<<< .merge_file_GlRtSo
@@ -312,6 +344,9 @@ class ArtisanAction
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 File::delete($file->getRealPath());
             }
         }
@@ -321,6 +356,7 @@ class ArtisanAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
 =======
 <<<<<<< .merge_file_GlRtSo
@@ -333,6 +369,9 @@ class ArtisanAction
      * @param array<string, mixed> $arguments
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -348,6 +387,7 @@ class ArtisanAction
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(): void {}
 =======
 <<<<<<< .merge_file_GlRtSo
@@ -364,4 +404,9 @@ class ArtisanAction
     }
 >>>>>>> .merge_file_boS4oM
 >>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
 }

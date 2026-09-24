@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Arr\SaveArrayAction;
+=======
+use Modules\Xot\Actions\Array\SaveArrayAction;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

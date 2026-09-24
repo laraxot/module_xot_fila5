@@ -32,6 +32,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 ## Collegamenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 =======
@@ -53,6 +54,10 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> .merge_file_NjHrpb
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
+- [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -131,6 +136,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_pcsLlI
@@ -225,3 +231,5 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 >>>>>>> .merge_file_NjHrpb
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

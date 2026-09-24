@@ -7,19 +7,25 @@ description: 'Using Laravel and Symfony/panther To Scrape Javascript Websites ht
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 converted_from: _scraping.txt
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 converted_from: scraping.txt
 =======
 converted_from: _scraping.txt
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 created: 2026-08-24
 updated: 2026-08-24
 ---

@@ -10,6 +10,7 @@ Every entity has exactly ONE authoritative definition:
 
 ### 2. **Consistency Over Flexibility**
 <<<<<<< HEAD
+<<<<<<< HEAD
 Predictable behavior is more valuable than unlimited options:
 =======
 <<<<<<< HEAD
@@ -18,6 +19,9 @@ Predictable behavior is more valuable than unlimited options:
 <nome progetto>able behavior is more valuable than unlimited options:
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Predictable behavior is more valuable than unlimited options:
+>>>>>>> 8d801bbe (Check & fix styling)
 - Same file structure across all modules
 - Same inheritance patterns for all models
 - Same migration philosophy for all tables
@@ -164,6 +168,7 @@ composer dump-autoload
 
 ### Technical Benefits
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Predictable Autoloading**: No ambiguous class resolution
 =======
 <<<<<<< HEAD
@@ -172,6 +177,9 @@ composer dump-autoload
 - **<nome progetto>able Autoloading**: No ambiguous class resolution
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Predictable Autoloading**: No ambiguous class resolution
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Reliable Test Execution**: Consistent test discovery
 - **Easy Maintenance**: Clear, unambiguous code structure
 - **Fast Debugging**: Obvious source of truth for each entity
@@ -220,6 +228,7 @@ class Permission extends BaseModel  // ❌ Should extend SpatiePermission
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 =======
 <<<<<<< HEAD
@@ -228,3 +237,6 @@ class Permission extends BaseModel  // ❌ Should extend SpatiePermission
 **Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
+>>>>>>> 8d801bbe (Check & fix styling)

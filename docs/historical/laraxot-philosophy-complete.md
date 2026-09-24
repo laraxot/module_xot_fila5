@@ -215,6 +215,7 @@ class YourResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
     public function getFormSchema(): array
@@ -223,10 +224,13 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
@@ -236,12 +240,15 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // Form components - NO hardcoded labels
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -252,10 +259,13 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
@@ -265,6 +275,8 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // Infolist components

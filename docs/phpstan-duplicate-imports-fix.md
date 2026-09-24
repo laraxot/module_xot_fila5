@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # PHPStan Duplicate Imports Fix - [DATE]
 
 ## Analisi Errori PHPStan Modulo Xot
 
 Data analisi: [DATE]
+<<<<<<< HEAD
 =======
 # PHPStan Duplicate Imports Fix - 2026-01-05
 
@@ -11,6 +15,8 @@ Data analisi: [DATE]
 
 Data analisi: 2026-01-05
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 PHPStan Level: max
 Comando eseguito: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`
 

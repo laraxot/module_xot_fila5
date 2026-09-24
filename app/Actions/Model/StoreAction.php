@@ -14,6 +14,7 @@ class StoreAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $data
@@ -47,6 +48,10 @@ class StoreAction
      *                                    >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                    >>>>>>> .merge_file_DoCQvn
      *                                    >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+     * @param array<string, mixed> $rules
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(Model $model, array $data, array $rules): Model
     {

@@ -173,6 +173,7 @@ Per ulteriori dettagli sulle soluzioni ai problemi di PHPStan, consulta:
 - [Modulo Xot - Documentazione PHPStan](../laravel/Modules/Xot/docs/PHPStan/PHPSTAN-SOLUTIONS.md)
 - [Modulo Xot - Correzioni PDO](../laravel/Modules/Xot/docs/PHPStan/PDO_CONSTANTS_FIXES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -180,3 +181,7 @@ Per ulteriori dettagli sulle soluzioni ai problemi di PHPStan, consulta:
 - [Modulo Xot - Correzioni PDO](../laravel/modules/xot/docs/phpstan/pdo_constants_fixes.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Modulo Xot - Documentazione PHPStan](../laravel/modules/xot/docs/phpstan/phpstan-solutions.md)
+- [Modulo Xot - Correzioni PDO](../laravel/modules/xot/docs/phpstan/pdo_constants_fixes.md)
+>>>>>>> 8d801bbe (Check & fix styling)

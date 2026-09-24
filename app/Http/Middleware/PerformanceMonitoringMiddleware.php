@@ -8,19 +8,25 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
 use function Safe\sys_getloadavg;
 
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\sys_getloadavg;
 
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Middleware per il monitoring delle performance.
  *
@@ -30,12 +36,18 @@ use Webmozart\Assert\Assert;
 class PerformanceMonitoringMiddleware
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct() {}
 =======
     public function __construct()
     {
     }
 >>>>>>> laraxot/dev
+=======
+    public function __construct()
+    {
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
 
     /**
      * Handle an incoming request.

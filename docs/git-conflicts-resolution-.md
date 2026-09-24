@@ -115,6 +115,7 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 
 **Modifiche Applicate**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ZgagAS
 <<<<<<< HEAD
@@ -134,6 +135,8 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 =======
 >>>>>>> .merge_file_3F2BnY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```php
 // VERSIONE CORRETTA
 $res=Locality::query()
@@ -249,6 +252,7 @@ php artisan lang:check
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_ZgagAS
@@ -256,6 +260,8 @@ php artisan lang:check
 =======
 >>>>>>> .merge_file_3F2BnY
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -264,6 +270,7 @@ php artisan lang:check
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ZgagAS
 =======
@@ -271,6 +278,8 @@ php artisan lang:check
 >>>>>>> .merge_file_3F2BnY
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Best Practices Applicate
 
@@ -326,6 +335,7 @@ php artisan lang:check
 
 ### Documentazione Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 =======
@@ -341,6 +351,10 @@ php artisan lang:check
 >>>>>>> .merge_file_3F2BnY
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 
@@ -351,6 +365,7 @@ php artisan lang:check
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ZgagAS
@@ -385,3 +400,8 @@ php artisan lang:check
 **Stato**: ✅ Completato
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: 2025-01-06
+**Autore**: Sistema di correzione automatica
+**Stato**: ✅ Completato
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -16,6 +16,7 @@ class PwaData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  bool  $enable  Se il PWA è abilitato
      * @param  string  $name  Nome dell'applicazione
      * @param  string  $short_name  Nome breve dell'applicazione
@@ -25,6 +26,8 @@ class PwaData extends Data
      * @param  string  $icon_path  Percorso dell'icona
      * @param  array<string, string>  $splash  Configurazione splash screen
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param bool                  $enable           Se il PWA è abilitato
      * @param string                $name             Nome dell'applicazione
      * @param string                $short_name       Nome breve dell'applicazione
@@ -33,7 +36,10 @@ class PwaData extends Data
      * @param string                $theme_color      Colore del tema
      * @param string                $icon_path        Percorso dell'icona
      * @param array<string, string> $splash           Configurazione splash screen
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function __construct(
         public readonly bool $enable = false,
@@ -50,11 +56,16 @@ class PwaData extends Data
             '1125x2436' => 'img/splash/splash-1125x2436.png',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
 
     /**
      * Create a new instance of PwaData with default values.
@@ -62,9 +73,13 @@ class PwaData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
 >>>>>>> laraxot/dev
+=======
+        return new self();
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }

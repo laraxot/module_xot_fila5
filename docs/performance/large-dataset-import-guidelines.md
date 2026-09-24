@@ -65,6 +65,7 @@ try {
 ## Module-Specific Considerations
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Quaeris Module
 =======
 <<<<<<< HEAD
@@ -74,6 +75,10 @@ try {
 ### ExternalProject Module
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### healthcare_app Module
+### ExternalProject Module
+>>>>>>> 8d801bbe (Check & fix styling)
 - Optimize survey contact imports
 - Implement JSON payload persistence
 - Use queue-based processing for contact operations

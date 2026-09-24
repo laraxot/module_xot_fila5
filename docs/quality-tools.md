@@ -96,6 +96,7 @@ actionlint -color
 - Each module/theme must have `quality-tools` page linking back here.
 - Record deviations and suppressions with rationale and next review date.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -108,3 +109,5 @@ canonical: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

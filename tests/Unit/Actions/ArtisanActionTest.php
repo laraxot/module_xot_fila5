@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_HJVv8V
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_rXnulU
+=======
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;

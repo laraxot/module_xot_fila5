@@ -2,12 +2,15 @@
 
 **Ultimo aggiornamento**: 2025-01-10
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Principio**: DRY + KISS - Struttura minima necessaria, niente di più
 
 ## 🚨 Regola Fondamentale
@@ -300,6 +303,7 @@ Prima di creare un ServiceProvider:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 =======
 <<<<<<< HEAD
@@ -308,3 +312,6 @@ Prima di creare un ServiceProvider:
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
+>>>>>>> 8d801bbe (Check & fix styling)

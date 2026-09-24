@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # La Filosofia Zen dei Getter Semantici
 
 ## Il Principio Fondamentale

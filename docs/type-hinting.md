@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_yPoW4E
@@ -33,6 +34,8 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://mlocati.github.io/articles/php-type-hinting.html
 https://howto.webarea.it/php/type-hinting-php-e-controllo-wake-strict-mode_170
 https://wiki.php.net/rfc/scalar_type_hints
@@ -40,6 +43,7 @@ https://wiki.php.net/rfc/return_types
 
 https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -56,6 +60,9 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 /** @var $post Post */
 
 /** @var $posts Post[] */
@@ -66,6 +73,7 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
@@ -75,10 +83,13 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
 =======
 >>>>>>> .merge_file_HGzKOu
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 declare(strict_types = 1);
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_yPoW4E
@@ -95,6 +106,8 @@ declare(strict_types = 1);
 =======
 >>>>>>> .merge_file_HGzKOu
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 protected ClassName $classType;
 
  // Types are also legal on static properties
@@ -136,6 +149,7 @@ function iterable_map(iterable $list, callable $operation) : iterable
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -150,6 +164,9 @@ function iterable_map(iterable $list, callable $operation) : iterable
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 public static function byArray(iterable $data)
     {
         $results = [];
@@ -171,6 +188,7 @@ public static function byArray(iterable $data)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -187,6 +205,11 @@ public static function byArray(iterable $data)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+
+
+
+>>>>>>> 8d801bbe (Check & fix styling)
 https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
  private static $instance = null;
@@ -201,6 +224,7 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -217,6 +241,11 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+
+
+
+>>>>>>> 8d801bbe (Check & fix styling)
 class ClassName
 {
     public function foo(): self
@@ -230,6 +259,7 @@ $instance->foo();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -244,6 +274,9 @@ $instance->foo();
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 ublic function foo(): ?stdClass
     {
         return new stdClass();
@@ -256,6 +289,7 @@ ublic function foo(): ?stdClass
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -270,6 +304,9 @@ ublic function foo(): ?stdClass
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 function foo(): object
 {
     return new stdClass();
@@ -277,6 +314,7 @@ function foo(): object
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -291,6 +329,10 @@ function foo(): object
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+
+
+>>>>>>> 8d801bbe (Check & fix styling)
 Relazioni
 https://github.com/larastan/larastan/issues/689
 
@@ -305,6 +347,7 @@ public function articles(): HasMany {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -332,3 +375,9 @@ https://github.com/oucil/Code-Hint-Aggregator
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+
+
+https://github.com/oucil/Code-Hint-Aggregator
+>>>>>>> 8d801bbe (Check & fix styling)

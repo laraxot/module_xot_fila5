@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * moved from fileservice.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Actions\File;
 
 use Spatie\QueueableAction\QueueableAction;

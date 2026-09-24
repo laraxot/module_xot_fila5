@@ -2,6 +2,7 @@
 
 > **Versione**: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
 =======
 <<<<<<< .merge_file_wH2Thh
@@ -14,6 +15,9 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_DOxBBI
 >>>>>>> laraxot/dev
+=======
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -176,6 +180,7 @@ done
 **Autore Fix**: AI Assistant
 **Review**: Pending
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: Vedi [CHANGELOG.md](changelog.md)
 =======
 <<<<<<< .merge_file_wH2Thh
@@ -188,3 +193,6 @@ done
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_DOxBBI
 >>>>>>> laraxot/dev
+=======
+**Data**: Vedi [CHANGELOG.md](changelog.md)
+>>>>>>> 8d801bbe (Check & fix styling)

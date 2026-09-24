@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -23,6 +24,8 @@ Consultare:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Summary: laravel-ide-helper e Eliminazione property_exists()
 
 ## Lavoro Completato
@@ -237,5 +240,8 @@ La filosofia è chiara: rispettare l'architettura Eloquent e fidarsi delle annot
 **La religione:** Trust the Magic (Methods)
 **La politica:** No property_exists() on Eloquent Models
 **Lo Zen:** Semplicità attraverso la comprensione
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

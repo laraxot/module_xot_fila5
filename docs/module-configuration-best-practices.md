@@ -243,6 +243,7 @@ Before committing a config file, verify:
 
 *Last Updated: 2025-08-27*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Configuration Standards Version: 2.0*
 
 =======
@@ -254,3 +255,7 @@ Before committing a config file, verify:
 *Configuration Standards Version: 2.0*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Configuration Standards Version: 2.0*
+
+>>>>>>> 8d801bbe (Check & fix styling)

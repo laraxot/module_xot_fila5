@@ -13,6 +13,7 @@
 - directory_structure_guide.md + directory-structure-guide.md
 - naming_conventions.md + naming-conventions.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 - phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
 =======
 <<<<<<< HEAD
@@ -21,6 +22,9 @@
 - phpstan_fixes.md + phpstan-fixes-archive-1.md + phpstan-fixes-archive-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
+>>>>>>> 8d801bbe (Check & fix styling)
 - migration_guidelines.md + migration-guidelines.md + migration-standards.md
 
 ✅ DOPO (consolidato):
@@ -37,6 +41,7 @@
 ```
 ❌ PRIMA (16 file separati):
 <<<<<<< HEAD
+<<<<<<< HEAD
 phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
 =======
 <<<<<<< HEAD
@@ -45,6 +50,9 @@ phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
 phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
+>>>>>>> 8d801bbe (Check & fix styling)
 phpstan_level9_guide.md, phpstan_workflow.md, phpstan_usage_guide.md, etc.
 
 ✅ DOPO (struttura consolidata):
@@ -141,6 +149,7 @@ Codice pratico.
 ## Collegamenti
 - [Doc correlata](./relativa.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root docs](../../../docs/correlata.md)
 
 *Ultimo aggiornamento: [data]*
@@ -155,6 +164,11 @@ Codice pratico.
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Root docs](../../../docs/correlata.md)
+
+*Ultimo aggiornamento: [data]*
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -225,6 +239,7 @@ DOPO:
 - [Template Standardizzato](./template-docs.md)
 - [Guida Refactoring](./refactoring-guide.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
 =======
 <<<<<<< HEAD
@@ -233,6 +248,9 @@ DOPO:
 - [Root Ottimizzazioni](../../../../docs/ottimizzazioni-modulari.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 🏷️ **Tag Ottimizzazione**
 
@@ -240,6 +258,7 @@ DOPO:
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 =======
 <<<<<<< HEAD
@@ -248,3 +267,6 @@ DOPO:
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
+>>>>>>> 8d801bbe (Check & fix styling)

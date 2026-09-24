@@ -47,16 +47,20 @@ Each resource must implement the abstract method:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
@@ -66,6 +70,8 @@ abstract public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 This enforces consistent form schema definition across all resources.
@@ -93,16 +99,20 @@ Resources define forms through `getFormSchema()`:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
@@ -112,6 +122,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -214,16 +226,20 @@ Consistent form setup with standardized columns:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchemaColumns(): int
 =======
 public function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
@@ -233,6 +249,8 @@ public static function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return 1; // Standard single column layout
 }
@@ -409,16 +427,20 @@ Always implement `getFormSchema()` for consistency:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_15cnyp
@@ -428,6 +450,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lktZau
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     // Return array of form components
 }

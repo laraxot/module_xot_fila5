@@ -165,16 +165,20 @@ class ResourceName extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_EpVrmg
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_h5uV2q
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_EpVrmg
@@ -184,6 +188,8 @@ class ResourceName extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_h5uV2q
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // Form components

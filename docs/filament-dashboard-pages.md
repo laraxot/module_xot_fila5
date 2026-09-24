@@ -252,6 +252,7 @@ class DashboardTest extends TestCase
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -264,6 +265,8 @@ class DashboardTest extends TestCase
 - [Documentazione Modulo Xot](../laravel/modules/xot/docs/filament/dashboard-pages.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [XotBasePanelProvider](../laravel/Modules/Xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](../laravel/Modules/Xot/docs/filament/filament_integration.md) - Integrazione generale Filament
 - [Best Practices](../laravel/Modules/Xot/docs/BEST-PRACTICES.md) - Best practices generali
@@ -279,6 +282,7 @@ class DashboardTest extends TestCase
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Moduli da implementare**: 13 moduli identificati
 =======
 <<<<<<< HEAD
@@ -287,3 +291,6 @@ class DashboardTest extends TestCase
 **Moduli da implementare**: 13 moduli identificati
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Moduli da implementare**: 13 moduli identificati
+>>>>>>> 8d801bbe (Check & fix styling)

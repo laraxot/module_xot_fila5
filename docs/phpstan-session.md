@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -129,6 +132,7 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 **Status**: In Progress
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
+<<<<<<< HEAD
 =======
 # Sessione PHPStan - 2026-01-05
 
@@ -318,3 +322,5 @@ Questa correzione è l'**unico errore** rilevato da PHPStan livello 10 su 1028 f
 **Versione Modulo**: Xot (Laraxot Framework Base)
 **PHPStan**: v2.1+ (Level 10)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

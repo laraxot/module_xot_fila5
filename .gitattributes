@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sLH485
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_Ar6BGt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: docs/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
@@ -12,6 +15,7 @@
 # Git LFS VIETATO. Binari = blob git normali.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sLH485
 =======
@@ -19,18 +23,23 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Ar6BGt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sLH485
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_Ar6BGt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Binary files (regular git blobs — NO git-lfs)
 # `binary` + `!filter` azzera eventuali filtri LFS ereditati
 *.png binary !filter
@@ -58,6 +67,7 @@ CHANGELOG.md export-ignore
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sLH485
 =======
@@ -65,3 +75,5 @@ CHANGELOG.md export-ignore
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Ar6BGt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

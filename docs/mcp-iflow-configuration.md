@@ -3,6 +3,7 @@
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
 =======
 <<<<<<< HEAD
@@ -11,6 +12,9 @@ iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come c
 iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono con iFlow.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Prerequisiti
 
@@ -249,13 +253,17 @@ Aggiungere al file `~/.cursor/mcp.json`:
       }
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     "phpstan-quaeris": {
       "url": "http://localhost:8003/sse"
     },
     "artisan-quaeris": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -265,6 +273,8 @@ Aggiungere al file `~/.cursor/mcp.json`:
     "artisan-healthcare_app": {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
       "url": "http://localhost:8004/sse"
     }
   }
@@ -354,6 +364,7 @@ Aggiungere al file `~/.codeium/windsurf/mcp_config.json`:
 - [MCP Editors Configuration](./mcp-editors-configuration.md) - Configurazione generale editor
 - [MCP Claude Code Configuration](./mcp-claude-code-configuration.md) - Configurazione Claude Code
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
 =======
 <<<<<<< HEAD
@@ -362,3 +373,6 @@ Aggiungere al file `~/.codeium/windsurf/mcp_config.json`:
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
+>>>>>>> 8d801bbe (Check & fix styling)

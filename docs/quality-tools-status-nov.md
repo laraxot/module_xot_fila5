@@ -30,6 +30,7 @@ cd laravel
 
 ### Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 <<<<<<< HEAD
@@ -38,6 +39,9 @@ cd laravel
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -181,13 +185,17 @@ php -l path/to/modified/file.php
 ## 📚 Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -197,6 +205,8 @@ php -l path/to/modified/file.php
 - [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 🚀 Next Steps
 
@@ -262,6 +272,7 @@ cd laravel
 
 ### Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 <<<<<<< HEAD
@@ -270,6 +281,9 @@ cd laravel
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -413,13 +427,17 @@ php -l path/to/modified/file.php
 ## 📚 Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -429,6 +447,8 @@ php -l path/to/modified/file.php
 - [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 🚀 Next Steps
 

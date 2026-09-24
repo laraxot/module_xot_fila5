@@ -2,13 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
 <<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/export_xls.php
+return [
+>>>>>>> 8d801bbe (Check & fix styling)
     'actions' => [
         'export_xls' => [
             'label' => 'Esporta Excel',
             'icon' => 'heroicon-o-arrow-down-tray',
             'tooltip' => 'Esporta i dati in formato Excel (.xlsx]',
+<<<<<<< HEAD
 =======
     'label' => 'Esporta Excel',
     'plural_label' => 'Esporta Excel',
@@ -20,6 +28,8 @@ return [
             'icon' => 'xot-files.xls',
             'tooltip' => 'Esporta i dati in formato Excel (.xlsx)',
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             'placeholder' => 'Esporta in Excel',
             'help' => 'Scarica i dati correnti in formato Excel per analisi offline',
             'description' => 'Azione per esportare i dati in formato Excel',
@@ -39,6 +49,7 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Export Xls',
     'plural_label' => 'Export Xls (Plurale)',
     'navigation' => [
@@ -46,12 +57,18 @@ return [
     'navigation' => [
         'label' => 'Export Xls',
 >>>>>>> laraxot/dev
+=======
+    'label' => 'Export Xls',
+    'plural_label' => 'Export Xls (Plurale)',
+    'navigation' => [
+>>>>>>> 8d801bbe (Check & fix styling)
         'name' => 'Export Xls',
         'plural' => 'Export Xls',
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
         ],
+<<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Export Xls',
         'sort' => 1,
@@ -60,6 +77,11 @@ return [
         'sort' => 1,
         'icon' => 'xot-files.xls',
 >>>>>>> laraxot/dev
+=======
+        'label' => 'Export Xls',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'fields' => [
         'id' => [

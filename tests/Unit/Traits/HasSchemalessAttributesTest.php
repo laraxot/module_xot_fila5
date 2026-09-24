@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Database\Eloquent\Builder;
 use Mockery\MockInterface;
 use Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel;
@@ -15,10 +19,14 @@ it('handles extra attributes scope', function (): void {
     $builder = Mockery::mock(Builder::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
 =======
     $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 8d801bbe (Check & fix styling)
     $model->extra_attributes = SchemalessAttributes::createForModel($model, 'extra_attributes');
 
     $result = $model->scopeWithExtraAttributes($builder);
@@ -32,10 +40,14 @@ it('handles where extra attribute scope', function (): void {
     $builder->allows(['where' => $builder]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
 =======
     $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 8d801bbe (Check & fix styling)
 
     $result = $model->scopeWhereExtraAttribute($builder, 'key', 'value');
     Assert::assertSame($builder, $result);
@@ -44,10 +56,14 @@ it('handles where extra attribute scope', function (): void {
 
 it('gets and sets extra attributes', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
 =======
     $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 8d801bbe (Check & fix styling)
     $model->setExtraAttribute('foo', 'bar');
 
     Assert::assertSame('bar', $model->getExtraAttribute('foo'));
@@ -57,10 +73,14 @@ it('gets and sets extra attributes', function (): void {
 
 it('returns all extra attributes as array', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
 =======
     $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 8d801bbe (Check & fix styling)
     $model->setExtraAttribute('a', 1);
 
     Assert::assertSame(['a' => 1], $model->getExtraAttributes());
@@ -68,10 +88,14 @@ it('returns all extra attributes as array', function (): void {
 
 it('removes extra attribute', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
 =======
     $model = new SchemalessTestModel();
 >>>>>>> laraxot/dev
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 8d801bbe (Check & fix styling)
     $model->setExtraAttribute('temp', 'val');
 
     Assert::assertTrue($model->hasExtraAttribute('temp'));

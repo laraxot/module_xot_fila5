@@ -44,6 +44,7 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -57,6 +58,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('nome')->required(),
@@ -144,6 +148,7 @@ class SocioResource extends XotBaseResource
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -157,6 +162,9 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('cognome')
@@ -338,6 +346,7 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -351,6 +360,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -606,6 +618,7 @@ class SocioResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -619,6 +632,9 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('nome')->required(),
@@ -740,6 +756,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -753,6 +770,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
    {
        return [
            TextInput::make('nome')->required(),
@@ -1009,6 +1029,7 @@ class ReportResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -1022,6 +1043,9 @@ class ReportResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -1101,6 +1125,7 @@ Prima di considerare completa una risorsa Filament, verificare:
 - `EditAppointment.php` - Estende `XotBaseEditRecord`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
 =======
 <<<<<<< HEAD
@@ -1109,3 +1134,6 @@ Prima di considerare completa una risorsa Filament, verificare:
 *Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
+>>>>>>> 8d801bbe (Check & fix styling)

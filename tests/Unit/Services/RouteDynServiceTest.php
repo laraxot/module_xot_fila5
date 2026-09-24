@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ubp6ek
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_F7ADYj
+=======
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 use Modules\Xot\Services\RouteDynService;
 use PHPUnit\Framework\Assert;

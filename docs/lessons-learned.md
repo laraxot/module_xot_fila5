@@ -1,11 +1,14 @@
 # Lessons Learned – Consolidated Rules (2025-08-25)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 # Lessons Learned – Consolidated Rules ([DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).
 
@@ -73,6 +76,7 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 =======
 <<<<<<< HEAD
@@ -81,3 +85,6 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
+>>>>>>> 8d801bbe (Check & fix styling)

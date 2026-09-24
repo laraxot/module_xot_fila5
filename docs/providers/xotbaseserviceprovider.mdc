@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -10,11 +11,17 @@ alwaysApply: false
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 module: theme
 topic: xotbaseserviceprovider
 canonical: ../../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaseserviceprovider.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/xotbaseserviceprovider.md
+>>>>>>> 8d801bbe (Check & fix styling)

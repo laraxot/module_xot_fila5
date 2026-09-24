@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5yARdV
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_wHCI6O
+=======
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Tests\TestCase;

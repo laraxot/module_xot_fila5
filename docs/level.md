@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -22,11 +23,14 @@ related:
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 module: theme
 topic: level
 canonical: ../../../Themes/docs/shared-components/level-9.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -191,3 +195,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
+>>>>>>> 8d801bbe (Check & fix styling)

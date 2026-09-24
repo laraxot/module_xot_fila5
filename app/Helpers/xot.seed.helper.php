@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Xot Seeder Helper Functions.
  *
@@ -8,9 +11,15 @@ declare(strict_types=1);
  * The functions ensure that models are only seeded once
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+=======
+
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
@@ -19,10 +28,14 @@ use Illuminate\Support\Facades\Cache;
  * Seed a model once per application lifetime.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @param  string  $modelClass  The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
 =======
  * @param string $modelClass The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
 >>>>>>> laraxot/dev
+=======
+ * @param string $modelClass The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
+>>>>>>> 8d801bbe (Check & fix styling)
  */
 function xotSeedModelOnce(string $modelClass): void
 {
@@ -56,10 +69,14 @@ function xotSeedModelOnce(string $modelClass): void
         if (class_exists($seederClass)) {
             // Create seeder instance and run its seed method
 <<<<<<< HEAD
+<<<<<<< HEAD
             $seeder = new $seederClass;
 =======
             $seeder = new $seederClass();
 >>>>>>> laraxot/dev
+=======
+            $seeder = new $seederClass();
+>>>>>>> 8d801bbe (Check & fix styling)
 
             if ($seeder instanceof Seeder && is_callable([$seeder, 'run'])) {
                 $seeder->{'run'}();

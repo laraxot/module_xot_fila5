@@ -40,6 +40,7 @@ function chatFilesWithDateInName(): array
 
         // Qualunque posizione: prefisso, mezzo o coda. La regola le vieta tutte.
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
 =======
 <<<<<<< .merge_file_X467sT
@@ -52,6 +53,9 @@ function chatFilesWithDateInName(): array
         if (1 === preg_match('/\d{4}-\d{2}-\d{2}/', $name)) {
 >>>>>>> .merge_file_oBj08m
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/\d{4}-\d{2}-\d{2}/', $name)) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $offenders[] = $name;
         }
     }

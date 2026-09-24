@@ -12,10 +12,14 @@ use Tests\TestCase;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
 =======
 /*
 >>>>>>> laraxot/dev
+=======
+/*
+>>>>>>> 8d801bbe (Check & fix styling)
  * Usa Tests\TestCase (root, minimale) invece di Modules\Xot\Tests\TestCase:
  * questo widget non tocca mai il database, e la seconda richiede un file
  * sqlite condiviso (Modules\Xot\Tests\XotBaseTestCase::sharedSqlitePath())
@@ -43,10 +47,14 @@ it('persists a changed field to the real .env file when the form is submitted', 
     $marker = 'pest-test-'.uniqid('', true);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $widget = new EnvWidget;
 =======
     $widget = new EnvWidget();
 >>>>>>> laraxot/dev
+=======
+    $widget = new EnvWidget();
+>>>>>>> 8d801bbe (Check & fix styling)
     $widget->mount();
     $widget->data['telegram_bot_token'] = $marker;
     $widget->submit();
@@ -64,10 +72,14 @@ it('does not rewrite a field that was not changed in the form', function (): voi
         ->first(fn (string $line): bool => str_starts_with($line, 'APP_URL='));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $widget = new EnvWidget;
 =======
     $widget = new EnvWidget();
 >>>>>>> laraxot/dev
+=======
+    $widget = new EnvWidget();
+>>>>>>> 8d801bbe (Check & fix styling)
     $widget->mount();
     $widget->data['telegram_bot_token'] = 'pest-test-'.uniqid('', true);
     $widget->submit();
@@ -80,10 +92,14 @@ it('does not rewrite a field that was not changed in the form', function (): voi
 
 it('mounts with the mail and sms fields pre-filled from the current .env, not empty', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $widget = new EnvWidget;
 =======
     $widget = new EnvWidget();
 >>>>>>> laraxot/dev
+=======
+    $widget = new EnvWidget();
+>>>>>>> 8d801bbe (Check & fix styling)
     $widget->mount();
 
     expect($widget->data)->not->toBeNull();
@@ -102,10 +118,14 @@ it('persists mail_from_address and mail_from_name to the real .env file when cha
     $marker = uniqid('', true);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $widget = new EnvWidget;
 =======
     $widget = new EnvWidget();
 >>>>>>> laraxot/dev
+=======
+    $widget = new EnvWidget();
+>>>>>>> 8d801bbe (Check & fix styling)
     $widget->mount();
     $widget->data['mail_from_address'] = 'pest-'.$marker.'@example.test';
     $widget->data['mail_from_name'] = 'Pest '.$marker;
@@ -122,10 +142,14 @@ it('does not rewrite MAIL_FROM_NAME when the form leaves it unchanged, so a ${AP
         ->first(fn (string $line): bool => str_starts_with($line, 'MAIL_FROM_NAME='));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $widget = new EnvWidget;
 =======
     $widget = new EnvWidget();
 >>>>>>> laraxot/dev
+=======
+    $widget = new EnvWidget();
+>>>>>>> 8d801bbe (Check & fix styling)
     $widget->mount();
     $widget->data['telegram_bot_token'] = 'pest-test-'.uniqid('', true);
     $widget->submit();
@@ -138,10 +162,14 @@ it('does not rewrite MAIL_FROM_NAME when the form leaves it unchanged, so a ${AP
 
 it('groups fields into General/SMS/Mail sections and keeps every selected field visible', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $widget = new EnvWidget;
 =======
     $widget = new EnvWidget();
 >>>>>>> laraxot/dev
+=======
+    $widget = new EnvWidget();
+>>>>>>> 8d801bbe (Check & fix styling)
     $widget->only = [
         'debugbar_enabled', 'telegram_bot_token',
         'sms_driver', 'netfun_token',
@@ -159,10 +187,14 @@ it('groups fields into General/SMS/Mail sections and keeps every selected field 
 
 it('does not drop a field that is selected but missing from the GROUPS map', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $widget = new EnvWidget;
 =======
     $widget = new EnvWidget();
 >>>>>>> laraxot/dev
+=======
+    $widget = new EnvWidget();
+>>>>>>> 8d801bbe (Check & fix styling)
     $widget->only = ['app_url'];
 
     $schema = $widget->getFormSchema();

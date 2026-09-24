@@ -21,6 +21,7 @@ trait RelationX
      * @template TRelatedModel of Model
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string<TRelatedModel>  $related  Related model class
      * @param  class-string<Model>|string|null  $_table  Pivot table name
      * @param  string|null  $foreignPivotKey  Foreign pivot key
@@ -29,6 +30,8 @@ trait RelationX
      * @param  string|null  $relatedKey  Related key
      * @param  string|null  $relation  Relation name
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param class-string<TRelatedModel>     $related         Related model class
      * @param class-string<Model>|string|null $_table          Pivot table name
      * @param string|null                     $foreignPivotKey Foreign pivot key
@@ -37,7 +40,10 @@ trait RelationX
      * @param string|null                     $relatedKey      Related key
      * @param string|null                     $relation        Relation name
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'>
      */
     public function belongsToManyX(
@@ -68,10 +74,14 @@ trait RelationX
             // Only add database prefix for non-SQLite drivers
             // SQLite doesn't support database.table syntax
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($pivotDriver !== 'sqlite') {
 =======
             if ('sqlite' !== $pivotDriver) {
 >>>>>>> laraxot/dev
+=======
+            if ('sqlite' !== $pivotDriver) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 $table = $pivotDbName.'.'.$table;
             }
         }
@@ -97,11 +107,16 @@ trait RelationX
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string<TRelatedModel>  $related
 =======
      * @param class-string<TRelatedModel> $related
      *
 >>>>>>> laraxot/dev
+=======
+     * @param class-string<TRelatedModel> $related
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return MorphToMany<TRelatedModel, $this>
      */
     public function morphToManyX(
@@ -123,10 +138,14 @@ trait RelationX
         $dbName = $this->getConnection()->getDatabaseName();
         // $relatedDbName = $related_model->getConnection()->getDatabaseName();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($table === null) {
 =======
         if (null === $table) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $table) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $table = $pivot->getTable();
         }
 
@@ -162,12 +181,17 @@ trait RelationX
      * Guess the pivot class for a many-to-many relationship.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $related  The related model class name
      * @param  string|class-string|null  $class  The class to use for parent class lookup (used internally)
 =======
      * @param string                   $related The related model class name
      * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
 >>>>>>> laraxot/dev
+=======
+     * @param string                   $related The related model class name
+     * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function guessPivot(string $related, ?string $class = null): Pivot
     {
@@ -219,10 +243,14 @@ trait RelationX
     {
         $parent_class = get_parent_class($class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($parent_class === false) {
 =======
         if (false === $parent_class) {
 >>>>>>> laraxot/dev
+=======
+        if (false === $parent_class) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return $this->buildPivotClassName($class, $pivot_name);
         }
 
