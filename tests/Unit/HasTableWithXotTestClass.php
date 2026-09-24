@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
+
 // Xot Pest/PHPUnit — claude-audit documentation ratio.
 // Xot Pest/PHPUnit — claude-audit documentation ratio.
 

@@ -8,28 +8,28 @@ use Modules\Xot\Tests\XotBaseTestCase;
 
 class TestCaseTest extends XotBaseTestCase
 {
-    public function test_base_test_case_initializes(): void
+    public function testBaseTestCaseInitializes(): void
     {
         $this->assertInstanceOf(XotBaseTestCase::class, $this);
     }
 
-    public function test_app_is_available_in_test(): void
+    public function testAppIsAvailableInTest(): void
     {
         $this->assertNotNull($this->app);
     }
 
-    public function test_database_assertions_available(): void
+    public function testDatabaseAssertionsAvailable(): void
     {
         $this->assertTrue(method_exists($this, 'assertDatabaseHasRow'));
         $this->assertTrue(method_exists($this, 'assertDatabaseMissingRow'));
     }
 
-    public function test_mock_service_available(): void
+    public function testMockServiceAvailable(): void
     {
         $this->assertTrue(method_exists($this, 'mockService'));
     }
 
-    public function test_generate_unique_email(): void
+    public function testGenerateUniqueEmail(): void
     {
         $email1 = self::generateUniqueEmail();
         $email2 = self::generateUniqueEmail();

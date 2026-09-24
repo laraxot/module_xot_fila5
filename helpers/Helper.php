@@ -311,7 +311,7 @@ if (! function_exists('require_translation_file')) {
             throw new InvalidArgumentException("Translation file [{$path}] must return array.");
         }
 
-        /** @var array<string, mixed> $loaded */
+        /* @var array<string, mixed> $loaded */
         return $loaded;
     }
 }
