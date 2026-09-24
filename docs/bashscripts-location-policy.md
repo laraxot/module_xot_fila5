@@ -145,6 +145,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 ## 📚 Collegamenti
 
 - [Laraxot Architecture](./architecture.md)
+<<<<<<< .merge_file_b57fgc
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Project Structure Guidelines](PROJECT-STRUCTURE.md)
@@ -158,6 +159,9 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 =======
 - [Project Structure Guidelines](./project-structure.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Project Structure Guidelines](PROJECT-STRUCTURE.md)
+>>>>>>> .merge_file_fHqqNN
 - [Deploy Best Practices](./deploy-best-practices.md)
 
 ---
@@ -165,6 +169,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 **Ultimo aggiornamento**: Gennaio 2025
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
+<<<<<<< .merge_file_b57fgc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -193,3 +198,5 @@ Motivo:
 =======
 - riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fHqqNN

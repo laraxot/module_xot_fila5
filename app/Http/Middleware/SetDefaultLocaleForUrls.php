@@ -20,6 +20,7 @@ class SetDefaultLocaleForUrls
     /**
      * Handle an incoming request.
      *
+<<<<<<< .merge_file_eDy2AJ
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  \Closure(Request):Response  $next
@@ -29,11 +30,15 @@ class SetDefaultLocaleForUrls
 =======
      * @param \Closure(Request):Response $next
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  \Closure(Request):Response  $next
+>>>>>>> .merge_file_SfJJTK
      */
     public function handle(Request $request, \Closure $next): Response
     {
         $user = $request->user();
         $lang = app()->getLocale();
+<<<<<<< .merge_file_eDy2AJ
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($user !== null) {
@@ -43,6 +48,9 @@ class SetDefaultLocaleForUrls
 =======
         if (null !== $user) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($user !== null) {
+>>>>>>> .merge_file_SfJJTK
             $lang = $user->lang ?? app()->getLocale();
         }
 

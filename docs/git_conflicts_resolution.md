@@ -132,6 +132,7 @@ php artisan lang:check
 - [Theme Translation Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 
 ### Modulo Xot
+<<<<<<< .merge_file_hq9fJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
@@ -157,6 +158,10 @@ php artisan lang:check
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
+- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
+>>>>>>> .merge_file_H8kscO
 
 ## Best Practices Applicate
 

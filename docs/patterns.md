@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_MEUpF0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -61,3 +62,6 @@ class CreateMyTable extends XotBaseMigration {
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_xaiVbK

@@ -1,6 +1,7 @@
 # Documentation Cleanup & Reorganization - Action Plan
 
 **Date**: 2025-10-17
+<<<<<<< .merge_file_673p46
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 **Date**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kyEp5p
 **Status**: 🐮 SUPER MUCCA MODE ACTIVATED
 **Scope**: Complete documentation overhaul across all modules and themes
 
@@ -22,6 +25,7 @@
 - Multiple duplicate files with variations (file.md, file_backup.md, file-duplicate.md)
 - Inconsistent naming (kebab-case, snake_case, PascalCase mixed)
 - Date-suffixed files (dry-kiss-analysis-2025-10-15.md)
+<<<<<<< .merge_file_673p46
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -33,6 +37,8 @@
 =======
 - Date-suffixed files (dry-kiss-analysis-[DATE].md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kyEp5p
 - Outdated/obsolete documentation
 - Missing documentation for core features
 
@@ -44,6 +50,7 @@
 2. ❌ **snake_case**: `model_architecture.md`
 3. ❌ **PascalCase**: `ModelArchitecture.md`
 4. ❌ **Dates**: `analysis-2025-10-15.md`
+<<<<<<< .merge_file_673p46
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +62,8 @@
 =======
 4. ❌ **Dates**: `analysis-[DATE].md`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kyEp5p
 5. ❌ **Duplicates**: `file-duplicate.md`, `file-backup.md`
 
 ## 🎯 Phased Approach
@@ -87,6 +96,7 @@ For each module, create/update:
 2. **Rename files** - Apply kebab-case consistently
 3. **Remove dates** - Update content, remove date from filename
 4. **Consolidate** - Merge similar/overlapping docs
+<<<<<<< .merge_file_673p46
 <<<<<<< HEAD
 <<<<<<< HEAD
 5. **Archive obsolete** - Move to `docs/archive/` if needed
@@ -100,6 +110,9 @@ For each module, create/update:
 =======
 5. **Archive obsolete** - Move to `docs/archived/` if needed
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+5. **Archive obsolete** - Move to `docs/archive/` if needed
+>>>>>>> .merge_file_kyEp5p
 
 ### Phase 5: Quality Assurance
 1. PHPStan level 10 on all modified code
@@ -118,6 +131,7 @@ Based on importance and interdependencies:
 3. **Tenant** - Multi-tenancy
 
 ### Tier 2 - Major Business Logic
+<<<<<<< .merge_file_673p46
 <<<<<<< HEAD
 <<<<<<< HEAD
 4. **Quaeris** - Survey management (main application)
@@ -131,6 +145,9 @@ Based on importance and interdependencies:
 =======
 4. **healthcare_app** - Survey management (main application)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+4. **Quaeris** - Survey management (main application)
+>>>>>>> .merge_file_kyEp5p
 5. **Limesurvey** - Survey integration
 6. **Cms** - Content management
 7. **Notify** - Notifications (email/SMS)
@@ -203,6 +220,7 @@ done
 
 ## 📝 Notes
 
+<<<<<<< .merge_file_673p46
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Keep `docs/archive/` for historical documentation
@@ -216,6 +234,9 @@ done
 =======
 - Keep `docs/archived/` for historical documentation
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Keep `docs/archive/` for historical documentation
+>>>>>>> .merge_file_kyEp5p
 - Document reasons for major architectural decisions
 - Include practical examples in all guides
 - Link related documentation between modules
@@ -223,6 +244,7 @@ done
 
 ---
 
+<<<<<<< .merge_file_673p46
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Next Step**: Begin Phase 2 - Module Code Analysis (starting with Xot)
@@ -236,3 +258,6 @@ done
 =======
 **Next Step**: Begin Phase 2 - Module Code Analysis (starting with Xot)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Next Step**: Begin Phase 2 - Module Code Analysis (starting with Xot)
+>>>>>>> .merge_file_kyEp5p

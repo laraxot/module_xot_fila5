@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Hv0zdW
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,8 @@ https://github.com/spatie/laravel-health
 =======
 >>>>>>> .merge_file_U0aTiH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uilYjB
 ---
 title: "Todo"
 type: reference
@@ -40,6 +43,7 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
+<<<<<<< .merge_file_Hv0zdW
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_M4wDet
@@ -60,3 +64,5 @@ https://github.com/spatie/laravel-health
 =======
 https://github.com/spatie/laravel-health
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uilYjB

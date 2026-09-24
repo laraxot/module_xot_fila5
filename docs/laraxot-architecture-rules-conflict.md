@@ -48,15 +48,19 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ErvFxs
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 =======
 =======
@@ -66,6 +70,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ErvFxs
     {
         return [
             // Form components
@@ -168,6 +174,7 @@ class MyAction
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
@@ -181,10 +188,14 @@ namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\
 =======
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> .merge_file_ErvFxs
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
@@ -198,6 +209,9 @@ use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\Questi
 =======
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+>>>>>>> .merge_file_ErvFxs
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -239,6 +253,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
@@ -252,6 +267,9 @@ namespace Modules\healthcare_app\Filament\Widgets;
 =======
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_ErvFxs
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -307,15 +325,19 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ErvFxs
 namespace Modules\Quaeris\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Quaeris\Models\QuestionChart;
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 =======
 =======
@@ -330,21 +352,27 @@ use Modules\healthcare_app\Models\QuestionChart;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ErvFxs
 
 class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ErvFxs
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 =======
 =======
@@ -354,6 +382,8 @@ class QuestionChartResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ErvFxs
     {
         return [
             // Form components
@@ -451,6 +481,7 @@ BadgeColumn::make('status')
 - [Translation System](./translation_system.md)
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
+<<<<<<< .merge_file_k4kHDj
 <<<<<<< HEAD
 <<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
@@ -464,3 +495,6 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 =======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> .merge_file_ErvFxs

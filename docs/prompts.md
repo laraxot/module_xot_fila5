@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_VZtU0v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -33,6 +34,8 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kJ3dEE
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:
@@ -97,6 +100,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/docs/prompts.md)
+<<<<<<< .merge_file_VZtU0v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -108,6 +112,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 =======
 * [prompts.md](../../../xot/project_docs/prompts.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kJ3dEE
 
 ## Modifiche al Prompt docs.txt
 
@@ -126,6 +132,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ### Collegamenti Correlati
 - [Regole Universali](./PROMPT_RULES.md)
 - [Gestione Documentazione](./DOCUMENTATION_MANAGEMENT.md)
+<<<<<<< .merge_file_VZtU0v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -139,6 +146,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 - [Regole Universali](./prompt_rules.md)
 - [Gestione Documentazione](./documentation_management.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kJ3dEE
 - [Struttura Moduli](./module-structure.md)
 
 ## Errori Comuni da Evitare
@@ -146,6 +155,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ### Percorsi Assoluti
 ⚠️ **Problema Identificato**: Uso di percorsi assoluti nei collegamenti
 ❌ Esempio errato: `../Xot/docs/file.md`
+<<<<<<< .merge_file_VZtU0v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -157,6 +167,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 =======
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kJ3dEE
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore
@@ -243,6 +255,7 @@ Il prompt `docs.txt` serve come:
 3. **Collegamenti Standardizzati**:
    ```markdown
    [Documento](./path/relativo) #tag-correlati
+<<<<<<< .merge_file_VZtU0v
 <<<<<<< HEAD
 <<<<<<< HEAD
    ```
@@ -256,3 +269,6 @@ Il prompt `docs.txt` serve come:
 =======
    ```
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+   ```
+>>>>>>> .merge_file_kJ3dEE

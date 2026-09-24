@@ -13,6 +13,7 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @property string $key
  * @property string $value
+<<<<<<< .merge_file_j8PYjy
 <<<<<<< HEAD
  *                              <<<<<<< HEAD
  * @property int    $expiration
@@ -29,6 +30,11 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @method static CacheFactory          factory($count = null, $state = [])
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property int $expiration
+ *
+ * @method static CacheFactory factory($count = null, $state = [])
+>>>>>>> .merge_file_yfs1Mx
  * @method static Builder<static>|Cache newModelQuery()
  * @method static Builder<static>|Cache newQuery()
  * @method static Builder<static>|Cache query()

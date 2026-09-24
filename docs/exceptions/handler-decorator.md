@@ -37,15 +37,19 @@ class HandlerDecorator implements ExceptionHandlerContract
 - `renderForConsole`: Renderizza l'eccezione per l'output console
 
 ## Collegamenti
+<<<<<<< .merge_file_1OyO21
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Q3ceqa
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Error Formatters](./formatters/README.md)
+<<<<<<< .merge_file_1OyO21
 <<<<<<< HEAD
 =======
 =======
@@ -65,3 +69,5 @@ class HandlerDecorator implements ExceptionHandlerContract
 =======
 - [Error Formatters](./formatters/README.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Q3ceqa

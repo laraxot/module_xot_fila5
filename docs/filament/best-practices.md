@@ -59,15 +59,19 @@ abstract class XotBaseRelationManager extends RelationManager
 class UserResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_NUOqKp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_M8H37J
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NUOqKp
 <<<<<<< HEAD
 =======
 =======
@@ -77,6 +81,8 @@ class UserResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_M8H37J
     {
         return [
             // Schema del form
@@ -158,15 +164,19 @@ class UserResource extends XotBaseResource
 ### **2. Schema Form Standardizzato**
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_NUOqKp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_M8H37J
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NUOqKp
 <<<<<<< HEAD
 =======
 =======
@@ -176,6 +186,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_M8H37J
 {
     return [
         Forms\Components\TextInput::make('name')
@@ -305,6 +317,7 @@ return [
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
+<<<<<<< .merge_file_NUOqKp
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
@@ -318,3 +331,6 @@ return [
 =======
 **Versione:** 2.0 - Consolidata DRY + KISS
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> .merge_file_M8H37J

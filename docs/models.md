@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_BdNPIB
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_g5G0hD
 # Modelli
 
 ## Configurazione Base
@@ -316,6 +319,7 @@ class Comment extends Model
     }
 }
 ```
+<<<<<<< .merge_file_BdNPIB
 <<<<<<< HEAD
 =======
 =======
@@ -327,3 +331,5 @@ https://github.com/topclaudy/compoships
 multi key, fixing lazy loading
 https://github.com/topclaudy/compoships
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_g5G0hD

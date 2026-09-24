@@ -1,6 +1,7 @@
 # Module Path Generation - Philosophy and Business Logic
 
 **Data Creazione**: 2026-01-02
+<<<<<<< .merge_file_hZFFz8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zWWkti
 **Status**: 📚 Foundation Document
 **Versione**: 1.0.0
 
@@ -100,6 +103,7 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 
 ---
 
+<<<<<<< .merge_file_hZFFz8
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
@@ -113,3 +117,6 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 =======
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
+>>>>>>> .merge_file_zWWkti

@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_X5uaQe
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Pksput
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -147,6 +150,7 @@ Descrizione dettagliata se necessaria
 ```
 
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+<<<<<<< .merge_file_X5uaQe
 <<<<<<< HEAD
 =======
 =======
@@ -165,3 +169,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/naming-conve
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions-uppercase-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Pksput

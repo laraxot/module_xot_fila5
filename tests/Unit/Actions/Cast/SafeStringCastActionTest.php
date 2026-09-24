@@ -25,6 +25,7 @@ it('casts various values to string correctly', function (): void {
     Assert::assertSame('1.23', $action->execute(1.23));
     // Non-scalar
     Assert::assertSame('', $action->execute(['a']));
+<<<<<<< .merge_file_AKtZ2L
 <<<<<<< HEAD
 <<<<<<< HEAD
     Assert::assertSame('', $action->execute(new stdClass));
@@ -34,6 +35,9 @@ it('casts various values to string correctly', function (): void {
 =======
     Assert::assertSame('', $action->execute(new stdClass()));
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    Assert::assertSame('', $action->execute(new stdClass));
+>>>>>>> .merge_file_Yq2Yr7
 });
 
 it('uses static string cast method correctly', function (): void {

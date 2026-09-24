@@ -1,5 +1,8 @@
+<<<<<<< .merge_file_26dIJG
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_tkVJZi
 ---
 title: "Testing Progress Session"
 type: concept
@@ -16,6 +19,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [testing-progress-session.md](./testing-progress-session.md)
+<<<<<<< .merge_file_26dIJG
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -149,3 +153,5 @@ Tutti i test corretti seguono questo principio:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_tkVJZi

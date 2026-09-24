@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Q2qD4m
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -56,6 +57,8 @@ This document tracks the progress of fixing PHPStan level 10 issues across vario
 - Consider grouping fixes by error type (type annotations, null checks, method access) for efficiency
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_HEoBej
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary
@@ -393,6 +396,7 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 *Session Duration: ~2 hours*
 *Errors Fixed: 861*
 *Progress: 17.8% complete*
+<<<<<<< .merge_file_Q2qD4m
 >>>>>>> laraxot/dev
 =======
 ---
@@ -403,3 +407,5 @@ canonical: ../../../Themes/docs/shared-components/phpstan-progress-report-Module
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report-Modules.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_HEoBej

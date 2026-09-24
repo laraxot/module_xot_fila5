@@ -1,6 +1,7 @@
 # 🔧 CODE QUALITY TOOLS GUIDE - Strumenti di Analisi Codice PHP
 
 **Data Creazione**: 2025-01-27
+<<<<<<< .merge_file_TDVQ8L
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_7P4hXa
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -818,6 +821,7 @@ jobs:
 
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
+<<<<<<< .merge_file_TDVQ8L
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -829,11 +833,14 @@ jobs:
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_7P4hXa
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 95%
 
 ---
 
+<<<<<<< .merge_file_TDVQ8L
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
@@ -847,3 +854,6 @@ jobs:
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
+>>>>>>> .merge_file_7P4hXa

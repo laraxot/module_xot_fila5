@@ -12,6 +12,7 @@ use Filament\Forms\Components\Repeater as FilamentRepeater;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's Repeater to provide a XotBase layer.
  */
+<<<<<<< .merge_file_Q8uHBs
 <<<<<<< HEAD
 <<<<<<< HEAD
 abstract class XotBaseRepeater extends FilamentRepeater {}
@@ -41,3 +42,6 @@ abstract class XotBaseRepeater extends FilamentRepeater
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+abstract class XotBaseRepeater extends FilamentRepeater {}
+>>>>>>> .merge_file_jCT6E7

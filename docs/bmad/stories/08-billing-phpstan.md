@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_s3A94O
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_L3XMyO
 # BMAD Story 08 — Billing: 12 errori PHPStan
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

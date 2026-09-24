@@ -26,6 +26,7 @@ protected static ?string $navigationIcon = 'heroicon-o-user';
 ### 2. Mandatory Implementation
 Every concrete resource must implement:
 - `protected static ?string $model`
+<<<<<<< .merge_file_xBMt2c
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,6 +46,9 @@ Every concrete resource must implement:
 =======
 - `public static function getFormSchema(): array`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- `public function getFormSchema(): array`
+>>>>>>> .merge_file_DATZBI
 - `public static function getPages(): array`
 
 ### 3. Separation of Concerns

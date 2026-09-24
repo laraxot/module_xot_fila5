@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_hQUDMr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GS6xEL
 title: "Brainstorm Testcase Hierarchy Xotbase"
 type: concept
 status: deprecated
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [BRAINSTORM-TestCase-Hierarchy-XotBase.md](./brainstorm-testcase-hierarchy-xotbase.md)
+<<<<<<< .merge_file_hQUDMr
 <<<<<<< HEAD
 =======
 =======
@@ -190,3 +194,5 @@ abstract class TestCase extends XotBaseTestCase
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GS6xEL

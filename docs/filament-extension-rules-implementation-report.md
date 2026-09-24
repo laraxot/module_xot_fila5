@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_gqfr6z
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_R27fQX
 # Filament Extension Rules Implementation Report
 
 **Date**: 18 Dicembre 2025
@@ -92,6 +95,7 @@ Created comprehensive documentation file:
 ---
 
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< .merge_file_gqfr6z
 <<<<<<< HEAD
 =======
 =======
@@ -110,3 +114,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/filament-ext
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-extension-implementation.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_R27fQX

@@ -29,6 +29,7 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà specifica.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da verificare
@@ -43,6 +44,10 @@ class SafeObjectCastAction
      * @param string $property Il nome della proprietà
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+>>>>>>> .merge_file_XcFQHW
      * @return bool True se l'oggetto ha la proprietà
      */
     public function hasProperty(object $object, string $property): bool
@@ -55,6 +60,7 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà con valore non null.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da verificare
@@ -69,6 +75,10 @@ class SafeObjectCastAction
      * @param string $property Il nome della proprietà
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+>>>>>>> .merge_file_XcFQHW
      * @return bool True se l'oggetto ha la proprietà con valore non null
      */
     public function hasNonNullProperty(object $object, string $property): bool
@@ -76,6 +86,7 @@ class SafeObjectCastAction
         Assert::stringNotEmpty($property);
 
         $hasProperty = isset($object->{$property});
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $isNotNull = $hasProperty && $object->{$property} !== null;
@@ -85,6 +96,9 @@ class SafeObjectCastAction
 =======
         $isNotNull = $hasProperty && null !== $object->{$property};
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $isNotNull = $hasProperty && $object->{$property} !== null;
+>>>>>>> .merge_file_XcFQHW
 
         Assert::true(
             ! $hasProperty || $isNotNull,
@@ -97,6 +111,7 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà con valore non vuoto.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da verificare
@@ -111,6 +126,10 @@ class SafeObjectCastAction
      * @param string $property Il nome della proprietà
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+>>>>>>> .merge_file_XcFQHW
      * @return bool True se l'oggetto ha la proprietà con valore non vuoto
      */
     public function hasNonEmptyProperty(object $object, string $property): bool
@@ -123,6 +142,7 @@ class SafeObjectCastAction
 
         $value = $object->{$property};
 
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $value !== '';
@@ -132,11 +152,15 @@ class SafeObjectCastAction
 =======
         return '' !== $value;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return $value !== '';
+>>>>>>> .merge_file_XcFQHW
     }
 
     /**
      * Ottiene una proprietà con cast sicuro a string.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
@@ -153,6 +177,11 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  string|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> .merge_file_XcFQHW
      * @return string Il valore della proprietà convertito in string
      */
     public function getStringProperty(object $object, string $property, ?string $default = ''): string
@@ -171,6 +200,7 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a int.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
@@ -187,6 +217,11 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  int|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> .merge_file_XcFQHW
      * @return int Il valore della proprietà convertito in int
      */
     public function getIntProperty(object $object, string $property, ?int $default = 0): int
@@ -205,6 +240,7 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a float.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
@@ -221,6 +257,11 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  float|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> .merge_file_XcFQHW
      * @return float Il valore della proprietà convertito in float
      */
     public function getFloatProperty(object $object, string $property, ?float $default = 0.0): float
@@ -239,6 +280,7 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a boolean.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
@@ -255,6 +297,11 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  bool|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> .merge_file_XcFQHW
      * @return bool Il valore della proprietà convertito in boolean
      */
     public function getBooleanProperty(object $object, string $property, ?bool $default = false): bool
@@ -273,6 +320,7 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a array.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
@@ -289,6 +337,11 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> .merge_file_XcFQHW
      * @return array<int|string, mixed> Il valore della proprietà convertito in array
      */
     public function getArrayProperty(object $object, string $property, ?array $default = []): array
@@ -307,12 +360,16 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a un tipo specifico.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_XcFQHW
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
      * @param  string  $property  Il nome della proprietà
      * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
      * @param  mixed  $default  Valore di default se la proprietà non esiste o è null
+<<<<<<< .merge_file_rG2ZRD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -325,6 +382,8 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_XcFQHW
      * @return mixed Il valore della proprietà convertito nel tipo specificato
      */
     public function getTypedProperty(object $object, string $property, string $type, mixed $default = null): mixed
@@ -349,6 +408,7 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà con valore specifico.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da verificare
@@ -365,6 +425,11 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+     * @param  mixed  $expectedValue  Il valore atteso
+>>>>>>> .merge_file_XcFQHW
      * @return bool True se l'oggetto ha la proprietà con il valore atteso
      */
     public function hasPropertyValue(object $object, string $property, mixed $expectedValue): bool
@@ -383,13 +448,17 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con validazione di tipo e valore.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_XcFQHW
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
      * @param  string  $property  Il nome della proprietà
      * @param  string  $type  Il tipo di cast desiderato
      * @param  callable|null  $validator  Funzione di validazione opzionale
      * @param  mixed  $default  Valore di default se la validazione fallisce
+<<<<<<< .merge_file_rG2ZRD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -403,6 +472,8 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_XcFQHW
      * @return mixed Il valore della proprietà validato e convertito
      */
     public function getValidatedProperty(
@@ -417,6 +488,7 @@ class SafeObjectCastAction
 
         $value = $this->getTypedProperty($object, $property, $type, $default);
 
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($validator !== null && ! $validator($value)) {
@@ -426,6 +498,9 @@ class SafeObjectCastAction
 =======
         if (null !== $validator && ! $validator($value)) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($validator !== null && ! $validator($value)) {
+>>>>>>> .merge_file_XcFQHW
             return $default;
         }
 
@@ -435,6 +510,7 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha un metodo specifico.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  object  $object  L'oggetto da verificare
@@ -449,6 +525,10 @@ class SafeObjectCastAction
      * @param string $method Il nome del metodo
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $method  Il nome del metodo
+>>>>>>> .merge_file_XcFQHW
      * @return bool True se l'oggetto ha il metodo
      */
     public function hasMethod(object $object, string $method): bool
@@ -461,12 +541,16 @@ class SafeObjectCastAction
     /**
      * Esegue un metodo su un oggetto in modo sicuro.
      *
+<<<<<<< .merge_file_rG2ZRD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_XcFQHW
      * @param  object  $object  L'oggetto su cui eseguire il metodo
      * @param  string  $method  Il nome del metodo
      * @param  array<mixed>  $parameters  I parametri del metodo
      * @param  mixed  $default  Valore di default se il metodo non esiste o fallisce
+<<<<<<< .merge_file_rG2ZRD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -479,6 +563,8 @@ class SafeObjectCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_XcFQHW
      * @return mixed Il risultato del metodo o il valore di default
      */
     public function callMethodSafely(

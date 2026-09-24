@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_BU6IWJ
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lzMEBt
 # Issue GH #05 — PHPStan 272 errors: piano di risoluzione modulo-per-modulo
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

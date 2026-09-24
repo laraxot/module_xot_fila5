@@ -50,15 +50,19 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_xJgdr0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bQNhQ4
 - [Sistema di Collegamenti della Documentazione](../../../../docs/collegamenti-documentazione.md)
 - [Linee Guida per la Documentazione in Xot](./documentation-guidelines.md)
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/percorsi_relativi_documentazione.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/prompts_documentation_system.md)
+<<<<<<< .merge_file_xJgdr0
 <<<<<<< HEAD
 =======
 =======
@@ -74,3 +78,5 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/percorsi_relativi_documentazione.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/prompts_documentation_system.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bQNhQ4

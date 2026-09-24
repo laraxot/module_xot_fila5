@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GcEyAu
@@ -35,6 +35,8 @@ use Illuminate\Support\Facades\Process;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -62,6 +64,7 @@ class ExecuteComposerDumpAutoloadAction
         /** @var list<string> $output */
         $output = [];
 
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -82,6 +85,8 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
         try {
             /*
              * Laravel's Process, quando non riceve `->env(...)`, passa un
@@ -117,6 +122,7 @@ class ExecuteComposerDumpAutoloadAction
              */
             while ($process->running()) {
                 $data = $process->latestOutput();
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -124,10 +130,13 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
                 if ($data !== '') {
                     $formatted = trim($data);
                     if ($formatted !== '') {
                         $output[] = $formatted;
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -150,10 +159,13 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
                     }
                 }
 
                 $errorData = $process->latestErrorOutput();
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -161,10 +173,13 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
                 if ($errorData !== '') {
                     $formattedError = trim($errorData);
                     if ($formattedError !== '') {
                         $output[] = $formattedError;
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -187,6 +202,8 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
                     }
                 }
 
@@ -196,6 +213,7 @@ class ExecuteComposerDumpAutoloadAction
             $result = $process->wait();
 
             $finalOutput = trim($result->output());
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($finalOutput !== '') {
@@ -217,11 +235,16 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($finalOutput !== '') {
+                $output[] = $finalOutput;
+>>>>>>> .merge_file_o9lNxz
             }
 
             $finalErrorOutput = trim($result->errorOutput());
             if ($finalErrorOutput !== '') {
                 $output[] = $finalErrorOutput;
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -247,16 +270,22 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
             }
 
             $status = $result->successful() ? 'completed' : 'failed';
 
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_o9lNxz
             if ($status === 'failed') {
                 $output[] = '[ERRORE] Il comando è fallito (exit code '.($result->exitCode() ?? 0).').';
             }
 
+<<<<<<< .merge_file_1VUDkl
 =======
 <<<<<<< .merge_file_GcEyAu
 =======
@@ -291,12 +320,15 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
             return [
                 'output' => $output,
                 'status' => $status,
                 'exitCode' => $result->exitCode() ?? 0,
             ];
         } catch (\Throwable $e) {
+<<<<<<< .merge_file_1VUDkl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -317,6 +349,8 @@ class ExecuteComposerDumpAutoloadAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9lNxz
             throw new \RuntimeException("Errore durante l'esecuzione di composer dump-autoload: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }

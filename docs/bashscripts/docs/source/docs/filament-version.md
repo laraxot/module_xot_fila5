@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_VRyMl3
 <<<<<<< HEAD
 <<<<<<< .merge_file_ngVSTH
 =======
@@ -21,6 +22,8 @@ related:
 >>>>>>> .merge_file_rUQSkJ
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MJKm0i
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

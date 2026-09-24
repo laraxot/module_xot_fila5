@@ -37,6 +37,7 @@ class StatesChartWidget extends XotBaseChartWidget
         try {
             /** @var class-string<Model> $modelClass */
             $modelClass = $this->model;
+<<<<<<< .merge_file_MJMAxl
 <<<<<<< HEAD
 <<<<<<< HEAD
             $instance = new $modelClass;
@@ -46,6 +47,9 @@ class StatesChartWidget extends XotBaseChartWidget
 =======
             $instance = new $modelClass();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            $instance = new $modelClass;
+>>>>>>> .merge_file_EzRZWG
 
             /** @var array<string, string> $colors */
             $colors = [

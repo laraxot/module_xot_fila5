@@ -6,12 +6,16 @@ namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+<<<<<<< .merge_file_JaMQsT
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_tiO72B
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
+<<<<<<< .merge_file_JaMQsT
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -24,6 +28,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_tiO72B
 class ExecuteSqlFileCommand extends Command
 {
     /**

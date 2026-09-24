@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 use Mockery;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
+<<<<<<< .merge_file_kkYHN4
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
@@ -24,6 +24,8 @@ use ReflectionMethod;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MueA4G
 
 /**
  * Coverage business: policies, models, actions — esecuzione reale, non class_exists.
@@ -58,8 +60,8 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
-<<<<<<< HEAD
             $ref = new ReflectionClass($class);
+<<<<<<< .merge_file_kkYHN4
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
@@ -76,6 +78,8 @@ final class ModuleBusinessCoverage
             $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MueA4G
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                 continue;
             }
@@ -94,6 +98,7 @@ final class ModuleBusinessCoverage
     public static function mockUser(): UserContract
     {
         /** @var Mockery\MockInterface&UserContract $user */
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
 =======
@@ -112,6 +117,9 @@ final class ModuleBusinessCoverage
         $user = \Mockery::mock(UserContract::class);
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $user = Mockery::mock(UserContract::class);
+>>>>>>> .merge_file_MueA4G
         $user->shouldIgnoreMissing();
         $user->shouldReceive('can')->andReturn(true);
         $user->shouldReceive('hasRole')->andReturn(false);
@@ -127,8 +135,8 @@ final class ModuleBusinessCoverage
     {
         $executed = 0;
         $user = self::mockUser();
-<<<<<<< HEAD
         $record = Mockery::mock(Model::class);
+<<<<<<< .merge_file_kkYHN4
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
@@ -145,10 +153,13 @@ final class ModuleBusinessCoverage
         $record = \Mockery::mock(Model::class);
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MueA4G
         $record->shouldIgnoreMissing();
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -157,6 +168,8 @@ final class ModuleBusinessCoverage
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MueA4G
                 $policy = new $class;
                 $executed++;
 
@@ -165,6 +178,7 @@ final class ModuleBusinessCoverage
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
                     $name = $method->getName();
                     if ($name === '__construct') {
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -190,6 +204,8 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MueA4G
                         continue;
                     }
 
@@ -200,6 +216,7 @@ final class ModuleBusinessCoverage
                             $type = $param->getType();
                             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                                 $typeName = $type->getName();
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
                                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
 =======
@@ -218,12 +235,15 @@ final class ModuleBusinessCoverage
                                 if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                                if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
+>>>>>>> .merge_file_MueA4G
                                     $args[] = $user;
 
                                     continue;
                                 }
-<<<<<<< HEAD
                                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
+<<<<<<< .merge_file_kkYHN4
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_cppp08
@@ -240,6 +260,8 @@ final class ModuleBusinessCoverage
                                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MueA4G
                                     $args[] = $record;
 
                                     continue;
@@ -252,6 +274,7 @@ final class ModuleBusinessCoverage
                     }
                 }
             } catch (\Throwable) {
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
                 $executed++;
 =======
@@ -270,6 +293,9 @@ final class ModuleBusinessCoverage
                 ++$executed;
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                $executed++;
+>>>>>>> .merge_file_MueA4G
             }
         }
 
@@ -290,6 +316,7 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -298,6 +325,8 @@ final class ModuleBusinessCoverage
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MueA4G
             $discovered++;
 
             try {
@@ -311,6 +340,7 @@ final class ModuleBusinessCoverage
         }
 
         if ($discovered === 0) {
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -341,6 +371,8 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MueA4G
             Assert::assertSame(0, $executed);
 
             return;
@@ -355,6 +387,7 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
             try {
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
@@ -373,6 +406,9 @@ final class ModuleBusinessCoverage
                 $ref = new \ReflectionClass($class);
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                $ref = new ReflectionClass($class);
+>>>>>>> .merge_file_MueA4G
                 if (! $ref->hasMethod('execute') && ! $ref->hasMethod('handle')) {
                     continue;
                 }
@@ -386,6 +422,7 @@ final class ModuleBusinessCoverage
                     }
                 }
 
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -394,6 +431,8 @@ final class ModuleBusinessCoverage
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MueA4G
                 if ($instance === null) {
                     continue;
                 }
@@ -401,6 +440,7 @@ final class ModuleBusinessCoverage
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -425,6 +465,8 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MueA4G
             }
         }
 
@@ -437,6 +479,7 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Datas') as $class) {
             try {
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -445,12 +488,15 @@ final class ModuleBusinessCoverage
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MueA4G
                 $executed++;
                 if (method_exists($class, 'from')) {
                     Assert::assertTrue((new ReflectionClass($class))->hasMethod('from'));
                 }
             } catch (\Throwable) {
                 $executed++;
+<<<<<<< .merge_file_kkYHN4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -474,6 +520,8 @@ final class ModuleBusinessCoverage
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MueA4G
             }
         }
 

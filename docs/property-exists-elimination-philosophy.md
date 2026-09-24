@@ -271,6 +271,7 @@ if (isset($record->email)) {
 - User/Filament/Resources/BaseProfileResource
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
+<<<<<<< .merge_file_URSIBy
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Quaeris/Filament (2 file)
@@ -286,6 +287,9 @@ if (isset($record->email)) {
 - healthcare_app/Filament (2 file)
 - ExternalProject/Filament (2 file)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> .merge_file_K3RTBa
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -413,6 +417,7 @@ if (method_exists($record, 'getUrl')) {
 | Xot | 12 | High | Alta |
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
+<<<<<<< .merge_file_URSIBy
 <<<<<<< HEAD
 <<<<<<< HEAD
 | Quaeris | 2 | Medium | Bassa |
@@ -428,6 +433,9 @@ if (method_exists($record, 'getUrl')) {
 | healthcare_app | 2 | Medium | Bassa |
 | ExternalProject | 2 | Medium | Bassa |
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> .merge_file_K3RTBa
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort
@@ -495,6 +503,7 @@ if (method_exists($record, 'getUrl')) {
 **Status**: 📜 Manifesto Filosofico
 **Revision**: 1.0
 
+<<<<<<< .merge_file_URSIBy
 <<<<<<< HEAD
 <<<<<<< HEAD
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
@@ -508,3 +517,6 @@ Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 =======
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+>>>>>>> .merge_file_K3RTBa

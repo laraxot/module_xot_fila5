@@ -20,6 +20,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_K34gWk
 <<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
@@ -44,6 +45,9 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_505tCX
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_PWYckZ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

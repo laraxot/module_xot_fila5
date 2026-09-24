@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -31,6 +32,8 @@ uses(PHPUnit\Framework\TestCase::class);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wXxexd
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
@@ -39,6 +42,7 @@ use PHPUnit\Framework\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -52,6 +56,8 @@ uses(TestCase::class);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wXxexd
 function invokeProtectedSortHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -60,6 +66,7 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 }
 
 test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): void {
+<<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 <<<<<<< HEAD
     $table = new class extends XotBaseResourceTable
@@ -88,6 +95,11 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $table = new class extends XotBaseResourceTable
+    {
+        /** @return array<string, Column> */
+>>>>>>> .merge_file_wXxexd
         public function getTableColumns(): array
         {
             return [];
@@ -106,6 +118,7 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
 });
 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
+<<<<<<< .merge_file_NanyB1
 <<<<<<< HEAD
 <<<<<<< HEAD
     $table = new class extends XotBaseResourceTable
@@ -134,6 +147,11 @@ test('getTableSortColumn override su XotBaseResourceTable', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $table = new class extends XotBaseResourceTable
+    {
+        /** @return array<string, Column> */
+>>>>>>> .merge_file_wXxexd
         public function getTableColumns(): array
         {
             return [];

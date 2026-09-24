@@ -67,6 +67,7 @@ class ThemeAction
         return resource_path('themes/'.self::$currentTheme);
     }
 
+<<<<<<< .merge_file_QLzixU
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
@@ -96,4 +97,7 @@ class ThemeAction
     {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function execute(): void {}
+>>>>>>> .merge_file_SHiaS8
 }

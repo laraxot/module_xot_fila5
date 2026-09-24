@@ -12,6 +12,7 @@ use Modules\Xot\Database\Factories\FeedFactory;
 /**
  * Modules\Xot\Models\Feed.
  *
+<<<<<<< .merge_file_OmgX4Z
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
@@ -22,11 +23,15 @@ use Modules\Xot\Database\Factories\FeedFactory;
 =======
  * @property string      $id
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property string $id
+>>>>>>> .merge_file_EFnsmX
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
+<<<<<<< .merge_file_OmgX4Z
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
@@ -37,6 +42,9 @@ use Modules\Xot\Database\Factories\FeedFactory;
 =======
  * @method static FeedFactory          factory($count = null, $state = [])
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @method static FeedFactory factory($count = null, $state = [])
+>>>>>>> .merge_file_EFnsmX
  * @method static Builder<static>|Feed newModelQuery()
  * @method static Builder<static>|Feed newQuery()
  * @method static Builder<static>|Feed query()

@@ -289,15 +289,19 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_rWVNbC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_pygc65
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rWVNbC
 <<<<<<< HEAD
 =======
 =======
@@ -307,6 +311,8 @@ class MioModelloResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_pygc65
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -782,6 +788,7 @@ public function createModel(array $data): MioModello
 ---
 
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+<<<<<<< .merge_file_rWVNbC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -800,6 +807,8 @@ public function createModel(array $data): MioModello
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_pygc65
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -867,6 +876,7 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< .merge_file_rWVNbC
 <<<<<<< HEAD
 <<<<<<< HEAD
 ```
@@ -880,3 +890,6 @@ public function process(\Modules\User\Models\User $user) {
 =======
 ```
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+```
+>>>>>>> .merge_file_pygc65

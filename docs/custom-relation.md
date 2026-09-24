@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_Zgj3nA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kgIUmE
 title: Custom Relation
 description: Custom Relation
 extends: _layouts.documentation
@@ -313,6 +316,7 @@ class Person
     }
 }
 ```
+<<<<<<< .merge_file_Zgj3nA
 <<<<<<< HEAD
 =======
 =======
@@ -330,3 +334,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/custom-relat
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/custom-relation.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kgIUmE

@@ -177,6 +177,7 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< .merge_file_6pqh8s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -185,10 +186,13 @@ try {
 <<<<<<< HEAD
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Rs4Kiu
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_6pqh8s
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
@@ -201,6 +205,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Rs4Kiu
 {
     return [
         TextInput::make('first_name'),
@@ -210,6 +216,7 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< .merge_file_6pqh8s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -218,10 +225,13 @@ public static function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Rs4Kiu
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_6pqh8s
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
@@ -234,6 +244,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Rs4Kiu
 {
     return [
         TextInput::make('name')->required(),
@@ -330,6 +342,7 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_6pqh8s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -338,10 +351,13 @@ class ContactResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Rs4Kiu
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_6pqh8s
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
@@ -354,6 +370,8 @@ class ContactResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Rs4Kiu
     {
         return [
             TextInput::make('first_name'),
@@ -486,6 +504,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_6pqh8s
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
@@ -503,6 +522,9 @@ return [
 =======
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_Rs4Kiu
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

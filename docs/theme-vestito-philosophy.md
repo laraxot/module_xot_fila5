@@ -52,6 +52,7 @@ Themes/[ThemeName]/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   └── pages/
+<<<<<<< .merge_file_x5ctMr
 <<<<<<< HEAD
 <<<<<<< HEAD
 ├── _quaeris_fila4_mono.code-workspace
@@ -65,6 +66,9 @@ Themes/[ThemeName]/
 =======
 ├── _healthcare_app_fila5_mono.code-workspace
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+├── _quaeris_fila4_mono.code-workspace
+>>>>>>> .merge_file_OMG2l1
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
@@ -305,6 +309,7 @@ Themes implement accessibility features while maintaining module functionality:
 
 ### KISS (Keep It Simple, Stupid)
 - Simple theme switching
+<<<<<<< .merge_file_x5ctMr
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Predictable view resolution
@@ -318,6 +323,9 @@ Themes implement accessibility features while maintaining module functionality:
 =======
 - <nome progetto>able view resolution
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Predictable view resolution
+>>>>>>> .merge_file_OMG2l1
 - Clear separation of concerns
 - Minimal configuration needed
 
@@ -365,6 +373,7 @@ The "Vestito" philosophy embodies several core values:
 - Implement asset caching
 - Minimize theme-specific logic
 
+<<<<<<< .merge_file_x5ctMr
 <<<<<<< HEAD
 <<<<<<< HEAD
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
@@ -378,3 +387,6 @@ This architecture ensures that themes can be changed, updated, or replaced witho
 =======
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
+>>>>>>> .merge_file_OMG2l1

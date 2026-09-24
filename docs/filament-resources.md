@@ -24,15 +24,19 @@ class SessionResource extends XotBaseResource
     protected static ?string $model = Session::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_mcV4Uu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yODV4j
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_mcV4Uu
 <<<<<<< HEAD
 =======
 =======
@@ -42,6 +46,8 @@ class SessionResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yODV4j
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione
@@ -114,6 +120,7 @@ return [
 * [filament-resources.md](../../../Gdpr/docs/filament-resources.md)
 * [filament-resources.md](../../../Xot/docs/filament-resources.md)
 * [filament-resources.md](../../../Cms/docs/filament-resources.md)
+<<<<<<< .merge_file_mcV4Uu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -129,11 +136,14 @@ return [
 * [filament-resources.md](../../../xot/docs/filament-resources.md)
 * [filament-resources.md](../../../cms/docs/filament-resources.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yODV4j
 
 ### Versione Incoming
 
 - Mantenute le validazioni e la struttura del form
 
+<<<<<<< .merge_file_mcV4Uu
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -147,3 +157,6 @@ return [
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_yODV4j

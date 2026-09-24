@@ -81,6 +81,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 - [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
+<<<<<<< .merge_file_xUsqTo
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Principale](README.md)
@@ -98,6 +99,9 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 =======
 - [Documentazione Principale](../../../../docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Documentazione Principale](README.md)
+>>>>>>> .merge_file_F8Oj27
 - [Standard di Progetto](../../../../docs/standards/readme.md)
 - [Gestione Media](../../media/docs/readme.md)
 - [Gestione UI](../../ui/docs/readme.md)

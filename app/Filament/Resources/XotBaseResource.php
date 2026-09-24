@@ -29,11 +29,11 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\glob;
 
+<<<<<<< .merge_file_d5JZtf
 =======
 =======
 use Modules\Xot\Actions\GetTransKeyAction;
@@ -47,6 +47,8 @@ use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lxPDX6
 /**
  * @method static string getUrl(?string $name = null, array<string, mixed> $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?\Illuminate\Database\Eloquent\Model $tenant = null, bool $shouldGuessMissingParameters = false, ?string $configuration = null)
 =======
@@ -63,6 +65,7 @@ abstract class XotBaseResource extends FilamentResource
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
+<<<<<<< .merge_file_d5JZtf
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $params
@@ -72,6 +75,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
      * @param array<string, bool|float|int|string|null> $params
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, bool|float|int|string|null>  $params
+>>>>>>> .merge_file_lxPDX6
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -126,6 +132,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getModel(): string
     {
+<<<<<<< .merge_file_d5JZtf
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (static::$model !== null) {
@@ -135,6 +142,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
         if (null !== static::$model) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (static::$model !== null) {
+>>>>>>> .merge_file_lxPDX6
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -213,10 +223,7 @@ abstract class XotBaseResource extends FilamentResource
         Assert::subclassOf($class1, XotBaseResourceForm::class);
 
         return $class1;
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     }
 
     final public static function form(Schema $schema): Schema
@@ -334,10 +341,7 @@ abstract class XotBaseResource extends FilamentResource
         Assert::subclassOf($class1, XotBaseResourceInfolist::class);
 
         return $class1;
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     }
 
     /**
@@ -447,6 +451,7 @@ abstract class XotBaseResource extends FilamentResource
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
+<<<<<<< .merge_file_d5JZtf
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($filesResult === []) {
@@ -456,6 +461,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
         if ([] === $filesResult) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($filesResult === []) {
+>>>>>>> .merge_file_lxPDX6
             return [];
         }
 

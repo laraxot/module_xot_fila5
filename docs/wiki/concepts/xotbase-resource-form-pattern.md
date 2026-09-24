@@ -61,15 +61,19 @@ class XotBaseResourceForm
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_KCDjsA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2kdbZr
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KCDjsA
 <<<<<<< HEAD
 =======
 =======
@@ -79,6 +83,8 @@ class XotBaseResourceForm
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2kdbZr
     {
         return [];
     }
@@ -104,15 +110,19 @@ class XotBaseResourceForm
 class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_KCDjsA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2kdbZr
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KCDjsA
 <<<<<<< HEAD
 =======
 =======
@@ -122,6 +132,8 @@ class TicketForm extends XotBaseResourceForm
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2kdbZr
     {
         $steps = static::getSteps();
         $wizard = Wizard::make($steps)->skippable()->persistStepInQueryString();

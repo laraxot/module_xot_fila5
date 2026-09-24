@@ -22,6 +22,7 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
+<<<<<<< .merge_file_id6kFY
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int $id
@@ -34,14 +35,21 @@ use Illuminate\Support\Carbon;
  * @property int         $id
  * @property int|null    $user_id
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property int $id
+ * @property int|null $user_id
+>>>>>>> .merge_file_dr2T0O
  * @property string|null $post_type
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $title
+<<<<<<< .merge_file_id6kFY
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_dr2T0O
  * @property bool $is_reclamed
  * @property bool $table_enable
  * @property Pivot|null $pivot
@@ -63,6 +71,7 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed> toArray()
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  * @method mixed getAttributeValue(string $key)
+<<<<<<< .merge_file_id6kFY
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -102,11 +111,14 @@ use Illuminate\Support\Carbon;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dr2T0O
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_id6kFY
 <<<<<<< HEAD
 <<<<<<< HEAD
 interface ModelContract {}
@@ -120,3 +132,6 @@ interface ModelContract
 {
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+interface ModelContract {}
+>>>>>>> .merge_file_dr2T0O

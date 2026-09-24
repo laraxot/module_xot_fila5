@@ -112,15 +112,19 @@ Modules/UI/
 
 ## Why This Matters
 
+<<<<<<< .merge_file_O5HdKS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ST74Qh
 ### 1. **Autoloader Predictability**
 - PHP autoloader expects consistent namespace-to-directory mapping
 - Mixed structures create ambiguous class resolution
 - "First found" approach leads to unpredictable test execution
+<<<<<<< .merge_file_O5HdKS
 <<<<<<< HEAD
 =======
 =======
@@ -135,6 +139,8 @@ Modules/UI/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ST74Qh
 
 ### 2. **Test Discovery**
 - Pest and PHPUnit rely on consistent directory structures
@@ -144,6 +150,7 @@ Modules/UI/
 ### 3. **Development Workflow**
 - Developers expect consistent test locations
 - IDE autocomplete and navigation work better with consistent structures
+<<<<<<< .merge_file_O5HdKS
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Code generation tools work predictably
@@ -157,6 +164,9 @@ Modules/UI/
 =======
 - Code generation tools work <nome progetto>ably
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Code generation tools work predictably
+>>>>>>> .merge_file_ST74Qh
 
 ### 4. **Module System Compatibility**
 - nwidart/laravel-modules expects traditional structure
@@ -231,6 +241,7 @@ Modules/
 │   │   ├── Feature/
 │   │   └── Unit/
 │   └── app/
+<<<<<<< .merge_file_O5HdKS
 <<<<<<< HEAD
 <<<<<<< HEAD
 └── Quaeris/
@@ -244,6 +255,9 @@ Modules/
 =======
 └── healthcare_app/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+└── Quaeris/
+>>>>>>> .merge_file_ST74Qh
     ├── tests/
     │   ├── Feature/
     │   └── Unit/
@@ -305,6 +319,7 @@ Modules/UI/tests/Unit/Widgets/
 
 ---
 
+<<<<<<< .merge_file_O5HdKS
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
@@ -318,3 +333,6 @@ Modules/UI/tests/Unit/Widgets/
 =======
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and <nome progetto>able development workflow. Choose one pattern and apply it consistently across all modules.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
+>>>>>>> .merge_file_ST74Qh

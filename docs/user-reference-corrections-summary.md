@@ -80,6 +80,7 @@ public static function getPluralModelLabel(): string
 ## 📚 Documentazione Creata
 
 - **[User Reference Pattern](./user-reference-pattern.md)** - Guida completa pattern corretti
+<<<<<<< .merge_file_VXTlCt
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **[PHPStan Corrections January 2025](./phpstan-corrections-january-2025.md)** - Aggiornato con riferimenti User
@@ -93,6 +94,9 @@ public static function getPluralModelLabel(): string
 =======
 - **[PHPStan Corrections January 2025](./phpstan-corrections-january.md)** - Aggiornato con riferimenti User
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **[PHPStan Corrections January 2025](./phpstan-corrections-january-2025.md)** - Aggiornato con riferimenti User
+>>>>>>> .merge_file_Xs6bx2
 
 ---
 
@@ -159,6 +163,7 @@ $userClass = XotData::make()->getUserClass();
 
 ---
 
+<<<<<<< .merge_file_VXTlCt
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
@@ -172,3 +177,6 @@ $userClass = XotData::make()->getUserClass();
 =======
 *Ultimo aggiornamento: 2025-01-10*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> .merge_file_Xs6bx2

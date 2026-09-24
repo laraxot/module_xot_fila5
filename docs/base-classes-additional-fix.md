@@ -126,22 +126,20 @@ XotBaseModel (Xot) - Base standard
 
 - [Model Inheritance Complete Fix](../../docs/MODEL_INHERITANCE_COMPLETE_FIX.md)
 - [DRY/KISS Analysis](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+<<<<<<< .merge_file_Jzjc9C
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_SQqaEx
 - [Model Inheritance Complete Fix](../../../docs/model_inheritance_complete_fix.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_Qc7Efk
-<<<<<<< HEAD
-=======
 - [DRY/KISS Analysis](../../../docs/dry_kiss_analysis_2025-10-15.md)
->>>>>>> .merge_file_y8Ykan
->>>>>>> laraxot/dev
 
 ---
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+<<<<<<< .merge_file_Jzjc9C
 =======
 <<<<<<< HEAD
 - [Model Inheritance Complete Fix](../../../docs/model_inheritance_complete_fix.md)
@@ -175,3 +173,5 @@ XotBaseModel (Xot) - Base standard
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_SQqaEx

@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @phpstan-require-extends Model
  */
+<<<<<<< .merge_file_H2shkB
 <<<<<<< HEAD
 <<<<<<< HEAD
 interface WithStateStatusContract {}
@@ -24,3 +25,6 @@ interface WithStateStatusContract
 {
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+interface WithStateStatusContract {}
+>>>>>>> .merge_file_q3lbGP

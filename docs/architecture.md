@@ -98,15 +98,19 @@ abstract class XotBaseResource extends Resource
     use HasXotTable;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_URRxXT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_EkChVU
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_URRxXT
 <<<<<<< HEAD
 =======
 =======
@@ -116,6 +120,8 @@ abstract class XotBaseResource extends Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_EkChVU
     {
         return static::getFormSchemaImplementation();
     }
@@ -153,6 +159,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 - Registrazione automatica di componenti
 - Gestione centralizzata degli asset
 
+<<<<<<< .merge_file_URRxXT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -184,6 +191,8 @@ Il file `composer.json` del modulo Xot è fondamentale per definire le sue dipen
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_EkChVU
 ## 🔄 **Flusso di Esecuzione**
 
 ### **1. Bootstrap Applicazione**
@@ -437,6 +446,7 @@ test('all models extend base model', function () {
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+<<<<<<< .merge_file_URRxXT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -448,11 +458,14 @@ test('all models extend base model', function () {
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_EkChVU
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
 
+<<<<<<< .merge_file_URRxXT
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
@@ -466,3 +479,6 @@ test('all models extend base model', function () {
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> .merge_file_EkChVU

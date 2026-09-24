@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_O859JF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_BPFosU
 ---
 title: "continuous_integration_tools"
 module: "Xot"
@@ -14,6 +17,7 @@ qmd: "continuous integration tools 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_O859JF
 <<<<<<< HEAD
 =======
 =======
@@ -21,6 +25,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_BPFosU
 # continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/continuous_integration_tools.txt -->

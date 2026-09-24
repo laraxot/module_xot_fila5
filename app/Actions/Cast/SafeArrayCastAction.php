@@ -40,6 +40,7 @@ class SafeArrayCastAction
     /**
      * Converte in modo sicuro un valore mixed in array.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -54,6 +55,10 @@ class SafeArrayCastAction
      * @param array<int|string, mixed>|null $default Valore di default se la conversione fallisce (default: [])
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce (default: [])
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito
      */
     public function execute(mixed $value, ?array $default = []): array
@@ -76,6 +81,7 @@ class SafeArrayCastAction
         }
 
         // Se è un oggetto stdClass, convertilo in array
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (is_object($value) && $value::class === 'stdClass') {
@@ -85,6 +91,9 @@ class SafeArrayCastAction
 =======
         if (is_object($value) && 'stdClass' === $value::class) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (is_object($value) && $value::class === 'stdClass') {
+>>>>>>> .merge_file_H95UkM
             return $this->normalizeArray((array) $value);
         }
 
@@ -110,6 +119,7 @@ class SafeArrayCastAction
     }
 
     /**
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int|string, mixed>  $array
@@ -121,6 +131,9 @@ class SafeArrayCastAction
      * @param array<mixed, mixed> $array
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int|string, mixed>  $array
+>>>>>>> .merge_file_H95UkM
      * @return array<string, mixed>
      */
     private function normalizeArray(array $array): array
@@ -137,6 +150,7 @@ class SafeArrayCastAction
     /**
      * Converte un valore in array con validazione di chiavi richieste.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -154,6 +168,11 @@ class SafeArrayCastAction
      * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  array<int|string>  $requiredKeys  Chiavi che devono essere presenti
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
      */
     public function executeWithKeys(mixed $value, array $requiredKeys, ?array $default = []): array
@@ -173,6 +192,7 @@ class SafeArrayCastAction
     /**
      * Converte un valore in array con filtro di chiavi.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -190,6 +210,11 @@ class SafeArrayCastAction
      * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  array<int|string>  $allowedKeys  Solo queste chiavi saranno mantenute
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse
      */
     public function executeWithFilter(mixed $value, array $allowedKeys, ?array $default = []): array
@@ -209,6 +234,7 @@ class SafeArrayCastAction
     /**
      * Converte un valore in array con validazione di tipo per i valori.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -225,6 +251,11 @@ class SafeArrayCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  string  $valueType  Tipo richiesto per i valori ('string', 'int', 'float', 'bool')
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito con valori del tipo richiesto
      */
     public function executeWithValueType(mixed $value, string $valueType, ?array $default = []): array
@@ -249,6 +280,7 @@ class SafeArrayCastAction
     /**
      * Verifica se un valore può essere convertito in array.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da verificare
@@ -260,6 +292,9 @@ class SafeArrayCastAction
      * @param mixed $value Il valore da verificare
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da verificare
+>>>>>>> .merge_file_H95UkM
      * @return bool True se il valore può essere convertito in array
      */
     public function canCast(mixed $value): bool
@@ -270,6 +305,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -284,6 +320,10 @@ class SafeArrayCastAction
      * @param array<int|string, mixed>|null $default Valore di default se la conversione fallisce (default: [])
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce (default: [])
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito in array
      */
     public static function cast(mixed $value, ?array $default = []): array
@@ -294,6 +334,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico per cast con chiavi richieste.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -311,6 +352,11 @@ class SafeArrayCastAction
      * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  array<int|string>  $requiredKeys  Chiavi che devono essere presenti
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
      */
     public static function castWithKeys(mixed $value, array $requiredKeys, ?array $default = []): array
@@ -321,6 +367,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico per cast con filtro di chiavi.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -338,6 +385,11 @@ class SafeArrayCastAction
      * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  array<int|string>  $allowedKeys  Solo queste chiavi saranno mantenute
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse
      */
     public static function castWithFilter(mixed $value, array $allowedKeys, ?array $default = []): array
@@ -348,6 +400,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico per cast con tipo di valore specifico.
      *
+<<<<<<< .merge_file_IbKeHc
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
@@ -364,6 +417,11 @@ class SafeArrayCastAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  string  $valueType  Tipo richiesto per i valori
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
+>>>>>>> .merge_file_H95UkM
      * @return array<int|string, mixed> Il valore convertito con valori del tipo richiesto
      */
     public static function castWithValueType(mixed $value, string $valueType, ?array $default = []): array

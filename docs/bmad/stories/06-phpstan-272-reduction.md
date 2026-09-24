@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_kxCTFc
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_8aWt7Z
 # BMAD — 272 PHPStan errori: piano di risoluzione
 
 **Repo coordinatore:** `git@github.com:laraxot/module_xot_fila5.git`

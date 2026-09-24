@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_PBenM4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,6 +23,8 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_c7yDWe
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\Theme\GetThemeAction;
 use Modules\Xot\Actions\Theme\GetThemePathAction;

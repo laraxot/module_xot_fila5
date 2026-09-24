@@ -63,6 +63,7 @@ public function getTableBulkActions(): array
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_ugXbK5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -71,10 +72,13 @@ public function getTableBulkActions(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_jU3uFu
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ugXbK5
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
@@ -87,6 +91,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_jU3uFu
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -124,6 +130,7 @@ public function getTableActions(): array
  * @return array<mixed, Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_ugXbK5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -132,10 +139,13 @@ public function getTableActions(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_jU3uFu
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ugXbK5
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
@@ -148,6 +158,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_jU3uFu
 {
     // ...
 }
@@ -195,6 +207,7 @@ public function getTableBulkActions(): array
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< .merge_file_ugXbK5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -203,10 +216,13 @@ public function getTableBulkActions(): array
 <<<<<<< HEAD
 >>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_jU3uFu
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ugXbK5
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ncpdAD
@@ -219,6 +235,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_jU3uFu
 {
     return [
         'template_slug' => Select::make('template_slug')

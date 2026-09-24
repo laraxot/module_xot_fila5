@@ -251,6 +251,7 @@ document.addEventListener('alpine:init', () => {
 ## Collegamenti tra versioni di assets.md
 * [assets.md](../../../Xot/docs/assets.md)
 * [assets.md](../../../Cms/docs/themes/assets.md)
+<<<<<<< .merge_file_jizwtt
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [assets.md](../../../../Themes/One/docs/assets.md)
@@ -264,3 +265,6 @@ document.addEventListener('alpine:init', () => {
 =======
 * [assets.md](../../../../Themes/One/docs/assets.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+* [assets.md](../../../../Themes/One/docs/assets.md)
+>>>>>>> .merge_file_MYYQ5c

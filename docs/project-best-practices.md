@@ -113,6 +113,7 @@ architecture-overview.md
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
+<<<<<<< .merge_file_mJ5UOh
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -124,6 +125,8 @@ analysis-[DATE].md      # date in name (use CHANGELOG.md)
 =======
 analysis-[DATE].md      # date in name (use CHANGELOG.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MfUg3A
 ```
 
 ### 8. DRY Principle
@@ -278,15 +281,19 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_mJ5UOh
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MfUg3A
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_mJ5UOh
 <<<<<<< HEAD
 =======
 =======
@@ -296,6 +303,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MfUg3A
     {
         return [
             TextInput::make('name'),  // No ->label()!
@@ -427,6 +436,7 @@ git push origin feature-branch
 ---
 
 **Creato:** 2025-11-04
+<<<<<<< .merge_file_mJ5UOh
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Versione:** 1.0
@@ -450,3 +460,8 @@ git push origin feature-branch
 **Autori:** Team Laraxot + AI Claude Process Filosofico
 **Prossimo Review:** Trimestrale o dopo major changes
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Versione:** 1.0
+**Autori:** Team Laraxot + AI Claude Process Filosofico
+**Prossimo Review:** Trimestrale o dopo major changes
+>>>>>>> .merge_file_MfUg3A

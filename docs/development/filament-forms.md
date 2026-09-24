@@ -16,15 +16,19 @@ class PerformanceResource extends XotBaseResource
     protected static ?string $model = Performance::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_HchxDR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mqc0TD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_HchxDR
 <<<<<<< HEAD
 =======
 =======
@@ -34,6 +38,8 @@ class PerformanceResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mqc0TD
     {
         return [
             Forms\Components\Card::make()
@@ -251,15 +257,19 @@ Forms\Components\Grid::make()
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_HchxDR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mqc0TD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_HchxDR
 <<<<<<< HEAD
 =======
 =======
@@ -269,6 +279,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mqc0TD
 {
     return [
         Forms\Components\TextInput::make('codice')

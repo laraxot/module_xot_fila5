@@ -1,5 +1,6 @@
 # Troubleshooting Guide
 
+<<<<<<< .merge_file_6uKt2W
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,10 +44,15 @@
 ## Common Issues
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## Common Issues
+
+>>>>>>> .merge_file_euRcG7
 ### PHPStan Errors
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_6uKt2W
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -104,6 +110,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_euRcG7
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -129,6 +137,7 @@
 
 ## Getting Help
 
+<<<<<<< .merge_file_6uKt2W
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -176,10 +185,13 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_euRcG7
 - Check module-specific documentation
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< .merge_file_6uKt2W
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -233,3 +245,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_euRcG7

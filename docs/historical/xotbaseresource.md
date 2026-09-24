@@ -26,6 +26,7 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -34,10 +35,13 @@ Questo significa che:
 <<<<<<< HEAD
 >>>>>>> .merge_file_wPaPKR
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_VApqnJ
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xxTppR
@@ -50,6 +54,8 @@ abstract public static function getFormSchema(): array;
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_VApqnJ
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -84,6 +90,7 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -92,10 +99,13 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_wPaPKR
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_VApqnJ
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_V5CnaJ
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xxTppR
@@ -108,6 +118,8 @@ class NotificationResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_VApqnJ
     {
         return [
             Forms\Components\TextInput::make('title')

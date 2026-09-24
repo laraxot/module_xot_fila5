@@ -921,6 +921,7 @@ class BlogPostsChartTest extends TestCase
 - [Awesome Chart.js](https://github.com/chartjs/awesome)
 
 ### Documentazione PTVX
+<<<<<<< .merge_file_JKLcrP
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
@@ -934,6 +935,9 @@ class BlogPostsChartTest extends TestCase
 =======
 - [Widget Implementation Rules](./widget_implementation_rules.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
+>>>>>>> .merge_file_6wQceK
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
@@ -949,15 +953,19 @@ class BlogPostsChartTest extends TestCase
 
 ## 🎯 Standard 2026: Professional Charts & PDF
 
+<<<<<<< .merge_file_JKLcrP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6wQceK
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Quaeris/PTVX:
 
 ### 1. Configurazione Professionale
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)**.
+<<<<<<< .merge_file_JKLcrP
 <<<<<<< HEAD
 =======
 =======
@@ -973,6 +981,8 @@ Consultare la guida **[LimeSurvey Professional Charts Guide](../../../limesurvey
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6wQceK
 - Font unificati (Inter/Roboto).
 - Legende posizionate correttamente.
 - Gridline minimali.
@@ -985,6 +995,7 @@ Pattern:
 3.  Impostare `animation: false` nelle opzioni Chart.js per la stampa.
 
 Vedi: **[Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)**.
+<<<<<<< .merge_file_JKLcrP
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -998,3 +1009,6 @@ Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-pract
 =======
 Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)**.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_6wQceK

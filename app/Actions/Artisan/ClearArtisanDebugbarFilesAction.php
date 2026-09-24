@@ -19,8 +19,8 @@ class ClearArtisanDebugbarFilesAction
         $files = File::files(storage_path('debugbar'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+<<<<<<< .merge_file_hCaaws
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_ZbyAkI
@@ -37,6 +37,8 @@ class ClearArtisanDebugbarFilesAction
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2NQ0Ix
                 File::delete($file->getRealPath());
             }
         }

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_IqSaJ9
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_59DijG
 # BMAD Story 09 — Intervention: 21 errori PHPStan
 
 **Modulo:** `Intervention`

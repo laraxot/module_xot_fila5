@@ -12,6 +12,7 @@ discussions:
 related:
   - ../../../../../../bashscripts/ai/rules/composer-root-skeleton-modular.md
   - ../../../../../../docs/stories/STORY-282-composer-root-require-skeleton-modular.md
+<<<<<<< .merge_file_wNeBOZ
 <<<<<<< HEAD
 <<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
@@ -34,6 +35,9 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+  - ./composer-merge-plugin-modules-only.md
+>>>>>>> .merge_file_qUDkS8
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
   - ./theme-psr4-autoload-without-merge.md
 ---
@@ -94,11 +98,14 @@ Questa e' la boundary corretta:
 
 Confronto 2026-06-30:
 
+<<<<<<< .merge_file_wNeBOZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qUDkS8
 
 Il root mantiene solo:
 
@@ -150,6 +157,7 @@ Questa e' la boundary corretta:
 
 Confronto 2026-06-30:
 
+<<<<<<< .merge_file_wNeBOZ
 <<<<<<< HEAD
 =======
 =======
@@ -179,13 +187,18 @@ Confronto 2026-06-30:
 `cd laravel && composer update -W`
 >>>>>>> 64619e34 (.)
 =======
+=======
+>>>>>>> .merge_file_qUDkS8
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 
 `cd laravel && composer validate && composer show --direct`
+<<<<<<< .merge_file_wNeBOZ
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qUDkS8

@@ -6,8 +6,8 @@ namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
-<<<<<<< HEAD
 use Mockery;
+<<<<<<< .merge_file_bPZTXE
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
@@ -20,6 +20,8 @@ use Mockery;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Dj4PFF
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsCheckbox3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsGroup3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsRadio3;
@@ -30,6 +32,7 @@ use Modules\Xot\Tests\Fixtures\Stubs\XotAbsViewColumn3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsWizard3;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_bPZTXE
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
@@ -46,12 +49,16 @@ use ReflectionMethod;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+use ReflectionClass;
+use ReflectionMethod;
+>>>>>>> .merge_file_Dj4PFF
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< HEAD
     Mockery::close();
+<<<<<<< .merge_file_bPZTXE
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
@@ -68,6 +75,8 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Dj4PFF
 });
 
 describe('Xot abstract Filament stubs', function (): void {
@@ -88,6 +97,7 @@ describe('Xot abstract Filament stubs', function (): void {
             try {
                 $inst = method_exists($class, 'make')
                     ? $class::make('field')
+<<<<<<< .merge_file_bPZTXE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -96,12 +106,15 @@ describe('Xot abstract Filament stubs', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Dj4PFF
                     : (new ReflectionClass($class))->newInstanceWithoutConstructor();
                 Assert::assertIsObject($inst);
                 $n++;
                 $parent = (new ReflectionClass($class))->getParentClass();
                 if ($parent) {
                     foreach ($parent->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
+<<<<<<< .merge_file_bPZTXE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -125,6 +138,8 @@ describe('Xot abstract Filament stubs', function (): void {
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Dj4PFF
                         if ($method->getDeclaringClass()->getName() !== $parent->getName()) {
                             continue;
                         }
@@ -145,10 +160,10 @@ describe('Xot abstract Filament stubs', function (): void {
                             } else {
                                 $method->invoke($inst, ...$args);
                             }
-<<<<<<< HEAD
                             $n++;
                         } catch (\Throwable) {
                             $n++;
+<<<<<<< .merge_file_bPZTXE
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
@@ -172,11 +187,14 @@ describe('Xot abstract Filament stubs', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Dj4PFF
                         }
                     }
                 }
             } catch (\Throwable $e) {
                 Assert::assertNotEmpty($e->getMessage());
+<<<<<<< .merge_file_bPZTXE
 <<<<<<< HEAD
                 $n++;
 =======
@@ -195,6 +213,9 @@ describe('Xot abstract Filament stubs', function (): void {
                 ++$n;
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                $n++;
+>>>>>>> .merge_file_Dj4PFF
             }
         }
         Assert::assertGreaterThan(5, $n);

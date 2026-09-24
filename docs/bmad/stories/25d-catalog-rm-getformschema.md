@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_du6D1C
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4nkM2T
 # 25d-catalog — Rimuovere getFormSchema da 6 Resource Catalog
 
 **Modulo:** Catalog

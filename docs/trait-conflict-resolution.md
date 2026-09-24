@@ -89,6 +89,7 @@ Dopo la modifica, verifica con:
 ---
 
 *Risolto: 2025-01-10*
+<<<<<<< .merge_file_Ol9LB0
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Architecture Version: XotBase 2.1*
@@ -104,3 +105,6 @@ Dopo la modifica, verifica con:
 *Risolto: [DATE]*
 *Architecture Version: XotBase 2.1*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Architecture Version: XotBase 2.1*
+>>>>>>> .merge_file_xlmvPE

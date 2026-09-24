@@ -251,6 +251,7 @@ class DashboardTest extends TestCase
 
 ## Documentazione Correlata
 
+<<<<<<< .merge_file_mZEass
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -270,6 +271,8 @@ class DashboardTest extends TestCase
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_0ZsOYt
 - [XotBasePanelProvider](../laravel/Modules/Xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](../laravel/Modules/Xot/docs/filament/filament_integration.md) - Integrazione generale Filament
 - [Best Practices](../laravel/Modules/Xot/docs/BEST-PRACTICES.md) - Best practices generali
@@ -284,6 +287,7 @@ class DashboardTest extends TestCase
 
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
+<<<<<<< .merge_file_mZEass
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Moduli da implementare**: 13 moduli identificati
@@ -297,3 +301,6 @@ class DashboardTest extends TestCase
 =======
 **Moduli da implementare**: 13 moduli identificati
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Moduli da implementare**: 13 moduli identificati
+>>>>>>> .merge_file_0ZsOYt

@@ -22,6 +22,7 @@ XotBase funge da wrapper per tutti i componenti Filament nel progetto Laraxot. C
 | Componente Filament | Classe XotBase |
 | :--- | :--- |
 | `Filament\Actions\Action` | `Modules\Xot\Filament\Actions\XotBaseAction` |
+<<<<<<< .merge_file_aKW2ZT
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -54,6 +55,9 @@ XotBase funge da wrapper per tutti i componenti Filament nel progetto Laraxot. C
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+>>>>>>> .merge_file_hv2t4j
 | `Filament\Resources\Resource` | `Modules\Xot\Filament\Resources\XotBaseResource` |
 | `Filament\Pages\Page` | `Modules\Xot\Filament\Pages\XotBasePage` |
 | `Filament\Widgets\Widget` | `Modules\Xot\Filament\Widgets\XotBaseWidget` |
@@ -69,6 +73,7 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 ### 2. Metodi Obbligatori
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
+<<<<<<< .merge_file_aKW2ZT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -114,6 +119,9 @@ Alcune classi `XotBase` impongono pattern specifici per garantire la conformità
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+>>>>>>> .merge_file_hv2t4j
 
 ### 3. Namespace Standard
 Assicurati di usare i namespace corretti. Mai includere `App` nel percorso se sei all'interno di un modulo (es. `Modules\Xot\Filament\...` non `Modules\Xot\App\Filament\...`).

@@ -71,6 +71,7 @@ This document outlines the best practices for maintaining high code quality with
 - [PHP Strict Types](./PHP-STRICT-TYPES.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
+<<<<<<< .merge_file_Thojb2
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Service Provider Best Practices](service-provider-best-practices.md)
@@ -88,3 +89,7 @@ This document outlines the best practices for maintaining high code quality with
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Service Provider Best Practices](service-provider-best-practices.md)
+- [Filament Best Practices](filament-best-practices.md)
+>>>>>>> .merge_file_3Iebv5

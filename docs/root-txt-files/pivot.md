@@ -7,6 +7,7 @@ description: 'https://github.com/larastan/larastan/issues/515'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_lOWNV9
 <<<<<<< HEAD
 =======
 converted_from: _pivot.txt
@@ -18,16 +19,27 @@ converted_from: _pivot.txt
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+converted_from: _pivot.txt
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_8M2Vf3
 converted_from: pivot.txt
 =======
 converted_from: _pivot.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_lOWNV9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+=======
+converted_from: _pivot.txt
+>>>>>>> .merge_file_8M2Vf3
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

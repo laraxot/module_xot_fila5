@@ -6,10 +6,7 @@ namespace Modules\Xot\Tests\Unit\Traits;
 
 <<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
-<<<<<<< HEAD
 use Mockery;
-=======
->>>>>>> laraxot/dev
 use Mockery\MockInterface;
 =======
 use Filament\Forms\Components\TextInput;
@@ -68,28 +65,16 @@ it('adds columns to blueprint in create context', function (): void {
 it('adds columns to blueprint in update context with hasColumn check', function (): void {
 <<<<<<< HEAD
     /** @var XotBaseMigration&MockInterface $migration */
-<<<<<<< HEAD
     $migration = Mockery::mock(XotBaseMigration::class);
-=======
-    $migration = \Mockery::mock(XotBaseMigration::class);
->>>>>>> laraxot/dev
     $migration->shouldReceive('hasColumn')->with('alpha')->andReturn(true);
     $migration->shouldReceive('hasColumn')->with('beta')->andReturn(false);
 
     /** @var Blueprint&MockInterface $columnBeta */
-<<<<<<< HEAD
     $columnBeta = Mockery::mock(Blueprint::class);
     $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
 
     /** @var Blueprint&MockInterface $table */
     $table = Mockery::mock(Blueprint::class);
-=======
-    $columnBeta = \Mockery::mock(Blueprint::class);
-    $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
-
-    /** @var Blueprint&MockInterface $table */
-    $table = \Mockery::mock(Blueprint::class);
->>>>>>> laraxot/dev
     $table->shouldReceive('string')->with('beta')->andReturn($columnBeta);
 =======
     $migration = $this->createUnitMock(XotBaseMigration::class);
@@ -114,7 +99,6 @@ it('adds columns to blueprint in update context with hasColumn check', function 
 it('updates columns calls columns', function (): void {
 <<<<<<< HEAD
     /** @var Blueprint&MockInterface $column */
-<<<<<<< HEAD
     $column = Mockery::mock(Blueprint::class);
     $column->shouldReceive('nullable')->andReturn($column);
 
@@ -124,17 +108,6 @@ it('updates columns calls columns', function (): void {
 
     /** @var XotBaseMigration&MockInterface $migration */
     $migration = Mockery::mock(XotBaseMigration::class);
-=======
-    $column = \Mockery::mock(Blueprint::class);
-    $column->shouldReceive('nullable')->andReturn($column);
-
-    /** @var Blueprint&MockInterface $table */
-    $table = \Mockery::mock(Blueprint::class);
-    $table->shouldReceive('string')->andReturn($column);
-
-    /** @var XotBaseMigration&MockInterface $migration */
-    $migration = \Mockery::mock(XotBaseMigration::class);
->>>>>>> laraxot/dev
     $migration->shouldReceive('hasColumn')->andReturn(false);
 =======
     $column = $this->createUnitMock(Blueprint::class);
@@ -153,11 +126,7 @@ it('updates columns calls columns', function (): void {
 it('drops columns', function (): void {
 <<<<<<< HEAD
     /** @var Blueprint&MockInterface $table */
-<<<<<<< HEAD
     $table = Mockery::mock(Blueprint::class);
-=======
-    $table = \Mockery::mock(Blueprint::class);
->>>>>>> laraxot/dev
     $table->shouldReceive('dropColumn')->with(['alpha', 'beta']);
 =======
     $table = $this->createUnitMock(Blueprint::class);

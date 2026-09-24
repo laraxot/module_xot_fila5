@@ -10,6 +10,7 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 ## Note
 
+<<<<<<< .merge_file_dtntyl
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +25,8 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yr4LBT
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -103,6 +106,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< .merge_file_dtntyl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -198,3 +202,5 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yr4LBT

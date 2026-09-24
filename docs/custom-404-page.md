@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_FOqHJg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_EcsNIb
 title: Custom 404 Page
 description: Custom 404 pages with Jigsaw docs starter template
 extends: _layouts.documentation
@@ -36,6 +39,7 @@ Depending on where your site is hosted, you may need to configure your server to
 ### Versione HEAD
 
 ## Collegamenti tra versioni di custom-404-page.md
+<<<<<<< .merge_file_FOqHJg
 <<<<<<< HEAD
 =======
 =======
@@ -43,6 +47,8 @@ Depending on where your site is hosted, you may need to configure your server to
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_EcsNIb
 * [custom-404-page.md](../../../Gdpr/docs/custom-404-page.md)
 * [custom-404-page.md](../../../Xot/docs/custom-404-page.md)
 * [custom-404-page.md](../../../UI/docs/custom-404-page.md)
@@ -52,6 +58,7 @@ Depending on where your site is hosted, you may need to configure your server to
 ### Versione Incoming
 
 ---
+<<<<<<< .merge_file_FOqHJg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -71,3 +78,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/custom-404-p
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/custom-404-page-Modules.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_EcsNIb

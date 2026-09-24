@@ -1,6 +1,7 @@
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
+<<<<<<< .merge_file_ELYpDX
 <<<<<<< HEAD
 <<<<<<< HEAD
 > - [README.md documentazione generale](../../../../docs/readme.md)
@@ -14,6 +15,9 @@
 =======
 > - [README.md documentazione generale](../../../../../docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+> - [README.md documentazione generale](../../../../docs/readme.md)
+>>>>>>> .merge_file_67frZk
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
@@ -41,6 +45,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 ### Da un file in un modulo verso la root
 
 ```markdown
+<<<<<<< .merge_file_ELYpDX
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Documentazione Root](../../../../docs/readme.md)
@@ -54,6 +59,9 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 =======
 [Documentazione Root](../../../../../docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+[Documentazione Root](../../../../docs/readme.md)
+>>>>>>> .merge_file_67frZk
 ```
 
 ## Errori Comuni da Evitare
@@ -88,6 +96,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | Posizione File Sorgente | Posizione File Destinazione | Percorso Relativo Corretto |
 |-------------------------|------------------------------|----------------------------|
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
+<<<<<<< .merge_file_ELYpDX
 <<<<<<< HEAD
 <<<<<<< HEAD
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
@@ -101,6 +110,9 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 =======
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+>>>>>>> .merge_file_67frZk
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 
@@ -123,6 +135,7 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 ## Riferimenti
 
 - [Markdown Link Syntax](https://www.markdownguide.org/basic-syntax/#links)
+<<<<<<< .merge_file_ELYpDX
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
@@ -136,3 +149,6 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 =======
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+>>>>>>> .merge_file_67frZk

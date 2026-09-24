@@ -81,6 +81,7 @@ class StateOverviewWidget extends XotBaseSchemaWidget
 
             return $cacheKey;
         } catch (\Error $e) {
+<<<<<<< .merge_file_WRsv6U
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($this->cacheKey === '') {
@@ -90,6 +91,9 @@ class StateOverviewWidget extends XotBaseSchemaWidget
 =======
             if ('' === $this->cacheKey) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($this->cacheKey === '') {
+>>>>>>> .merge_file_ZMLPg4
                 $this->cacheKey = Str::uuid()->toString();
             }
 

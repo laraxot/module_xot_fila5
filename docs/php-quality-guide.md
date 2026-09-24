@@ -1,6 +1,7 @@
 # PHPStan Code Quality Guide - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10
+<<<<<<< .merge_file_xh7S2a
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Vyc0Pt
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
@@ -337,6 +340,7 @@ protected function getStats(): array
 {
     if ($this->record === null) {
         return [
+<<<<<<< .merge_file_xh7S2a
 <<<<<<< HEAD
 <<<<<<< HEAD
             Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
@@ -354,6 +358,10 @@ protected function getStats(): array
             Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
+                ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
+>>>>>>> .merge_file_Vyc0Pt
                 ->color('gray'),
         ];
     }
@@ -730,15 +738,19 @@ public function getTableRecordKey(\Illuminate\Database\Eloquent\Model|array $rec
 private function createTotalResponsesStat(int $count): Stat
 {
     return Stat::make(
+<<<<<<< .merge_file_xh7S2a
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Vyc0Pt
         __('quaeris::question_chart_stats_overview.stats.total_responses.label'),
         number_format((float) $count)
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
+<<<<<<< .merge_file_xh7S2a
 <<<<<<< HEAD
 =======
 =======
@@ -753,6 +765,8 @@ private function createTotalResponsesStat(int $count): Stat
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Vyc0Pt
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -760,15 +774,19 @@ private function createTotalResponsesStat(int $count): Stat
 private function createCompletionRateStat(float $rate): Stat
 {
     return Stat::make(
+<<<<<<< .merge_file_xh7S2a
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Vyc0Pt
         __('quaeris::question_chart_stats_overview.stats.completion_rate.label'),
         $rate.'%'
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
+<<<<<<< .merge_file_xh7S2a
 <<<<<<< HEAD
 =======
 =======
@@ -783,6 +801,8 @@ private function createCompletionRateStat(float $rate): Stat
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Vyc0Pt
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1171,6 +1191,7 @@ Dopo ogni modifica file:
 
 ---
 
+<<<<<<< .merge_file_xh7S2a
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
@@ -1184,3 +1205,6 @@ Dopo ogni modifica file:
 =======
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
+>>>>>>> .merge_file_Vyc0Pt

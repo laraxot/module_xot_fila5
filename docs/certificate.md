@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Ha7Txa
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5,6 +6,8 @@
 <<<<<<< .merge_file_Mhwxry
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_4P3umY
 ---
 title: 'Certificate — risorse esterne'
 module: Xot
@@ -53,6 +56,7 @@ updated: 2026-08-24
 - <https://www.learnvern.com/laravel-tutorial>
 - <https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!>
 - <https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!>
+<<<<<<< .merge_file_Ha7Txa
 =======
 >>>>>>> .merge_file_jrBy5s
 >>>>>>> laraxot/dev
@@ -199,3 +203,5 @@ updated: 2026-08-24
 =======
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4P3umY

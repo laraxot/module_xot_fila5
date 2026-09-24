@@ -11,6 +11,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
+<<<<<<< .merge_file_4Uuym2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,6 +23,8 @@ related:
 =======
   - ./phpstan-trait-probes.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o3j5Pv
   - ../log.md
 ---
 

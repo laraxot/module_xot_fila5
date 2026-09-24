@@ -6,8 +6,8 @@ namespace Modules\Xot\Actions\Filament;
 
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use LogicException;
+<<<<<<< .merge_file_mcHag9
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_SJi0u7
@@ -20,6 +20,8 @@ use LogicException;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GI13qr
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -40,6 +42,7 @@ class GetResourceClassNameByModelClassAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_mcHag9
 <<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
 =======
@@ -61,6 +64,9 @@ class GetResourceClassNameByModelClassAction
      *
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> .merge_file_GI13qr
      * @return class-string<XotBaseResource>
      */
     public function execute(string $modelClass): string
@@ -69,6 +75,7 @@ class GetResourceClassNameByModelClassAction
 
         $resourceClass = Filament::getModelResource($modelClass);
 
+<<<<<<< .merge_file_mcHag9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -77,6 +84,8 @@ class GetResourceClassNameByModelClassAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GI13qr
         if ($resourceClass === null) {
             throw new LogicException(
                 sprintf(
@@ -85,6 +94,7 @@ class GetResourceClassNameByModelClassAction
                     $modelClass
                 )
             );
+<<<<<<< .merge_file_mcHag9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -102,6 +112,8 @@ class GetResourceClassNameByModelClassAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GI13qr
         }
 
         Assert::subclassOf($resourceClass, XotBaseResource::class);

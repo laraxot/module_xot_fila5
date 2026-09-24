@@ -25,6 +25,7 @@ use function Safe\unlink;
  * DatabaseTransactions handles rollback between tests.
  *
  * @property object|null $action
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property Model|null $model
@@ -34,19 +35,26 @@ use function Safe\unlink;
 =======
  * @property Model|null  $model
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property Model|null $model
+>>>>>>> .merge_file_esL0Ch
  * @property object|null $service
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_esL0Ch
  * @property Model|null $testModel
  * @property object|null $extraClass
  * @property Model|null $baseModel
  * @property string|null $testDir
  * @property mixed $saved
  * @property mixed $extra_attributes
+<<<<<<< .merge_file_jYedXr
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -60,6 +68,8 @@ use function Safe\unlink;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_esL0Ch
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -68,6 +78,7 @@ abstract class TestCase extends XotBaseTestCase
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite', 'user', 'tenant', 'xot'];
 
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -103,6 +114,8 @@ abstract class TestCase extends XotBaseTestCase
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_esL0Ch
     /**
      * @return array<int, class-string<ServiceProvider>>
      */
@@ -125,6 +138,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (config("database.connections.{$connection}.driver") !== 'sqlite') {
@@ -134,6 +148,9 @@ abstract class TestCase extends XotBaseTestCase
 =======
             if ('sqlite' !== config("database.connections.{$connection}.driver")) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+>>>>>>> .merge_file_esL0Ch
                 continue;
             }
 
@@ -145,6 +162,7 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<T>  $class
@@ -156,6 +174,9 @@ abstract class TestCase extends XotBaseTestCase
      * @param class-string<T> $class
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<T>  $class
+>>>>>>> .merge_file_esL0Ch
      * @return T
      */
     public function getAction(string $class): object
@@ -171,6 +192,7 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<T>  $abstract
@@ -185,6 +207,10 @@ abstract class TestCase extends XotBaseTestCase
      * @param (\Closure(MockInterface&T): void)|null $callback
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(MockInterface&T): void)|null  $callback
+>>>>>>> .merge_file_esL0Ch
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -196,6 +222,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<\Throwable>  $exception
@@ -205,6 +232,9 @@ abstract class TestCase extends XotBaseTestCase
 =======
      * @param class-string<\Throwable> $exception
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<\Throwable>  $exception
+>>>>>>> .merge_file_esL0Ch
      */
     public function expectThrowable(string $exception): void
     {
@@ -243,6 +273,7 @@ abstract class TestCase extends XotBaseTestCase
         $files = scandir($dir);
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_jYedXr
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file === '.' || $file === '..') {
@@ -252,6 +283,9 @@ abstract class TestCase extends XotBaseTestCase
 =======
             if ('.' === $file || '..' === $file) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($file === '.' || $file === '..') {
+>>>>>>> .merge_file_esL0Ch
                 continue;
             }
 

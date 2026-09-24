@@ -46,15 +46,19 @@ Each resource must implement the abstract method:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iHhmL7
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 =======
 =======
@@ -64,6 +68,8 @@ abstract public static function getFormSchema(): array
 =======
 abstract public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_iHhmL7
 ```
 
 This enforces consistent form schema definition across all resources.
@@ -90,15 +96,19 @@ Resources define forms through `getFormSchema()`:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iHhmL7
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 =======
 =======
@@ -108,6 +118,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_iHhmL7
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -209,15 +221,19 @@ Consistent form setup with standardized columns:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iHhmL7
 public function getFormSchemaColumns(): int
 =======
 public function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 =======
 =======
@@ -227,6 +243,8 @@ public static function getFormSchemaColumns(): int
 =======
 public static function getFormSchemaColumns(): int
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_iHhmL7
 {
     return 1; // Standard single column layout
 }
@@ -377,6 +395,7 @@ Filament resources integrate with Laraxot's multi-tenancy system:
 - Standardized patterns across all modules
 
 ### KISS (Keep It Simple, Stupid)
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Clear, predictable inheritance
@@ -390,6 +409,9 @@ Filament resources integrate with Laraxot's multi-tenancy system:
 =======
 - Clear, <nome progetto>able inheritance
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Clear, predictable inheritance
+>>>>>>> .merge_file_iHhmL7
 - Minimal configuration required
 - Consistent API across resources
 
@@ -414,15 +436,19 @@ public static function getModel(): string
 Always implement `getFormSchema()` for consistency:
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iHhmL7
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 =======
 =======
@@ -432,6 +458,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_iHhmL7
 {
     // Return array of form components
 }
@@ -447,6 +475,7 @@ The Filament integration in Laraxot embodies the project's core values:
 - **Type Safety**: Contract-based development
 - **User Experience**: Modern, intuitive admin interfaces
 
+<<<<<<< .merge_file_Zu10ck
 <<<<<<< HEAD
 <<<<<<< HEAD
 This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
@@ -460,3 +489,6 @@ This integration ensures that every admin interface in the system follows the sa
 =======
 This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
+>>>>>>> .merge_file_iHhmL7

@@ -1,5 +1,6 @@
 # Risoluzione Problema con ai_init.sh
 
+<<<<<<< .merge_file_CVx3Nd
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,8 @@
 =======
 >>>>>>> .merge_file_HCZbKX
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_zqmjz5
 ## Stato attuale
 
 Questa nota descrive un modello ormai superato.
@@ -57,6 +60,7 @@ bash bashscripts/tools/sync-ide-junctions.sh
 
 `bashscripts/ai/ai_init.sh` va considerato legacy rispetto al modello SSoT
 `.agents`.
+<<<<<<< .merge_file_CVx3Nd
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
@@ -74,6 +78,9 @@ bash bashscripts/tools/sync-ide-junctions.sh
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_zqmjz5
 ## Problema Risolto
 
 Lo script `./bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
@@ -103,6 +110,7 @@ lrwxrwxrwx 1 zorin zorin 22 Dec 22 16:17 ./.gemini -> bashscripts/ai/.gemini
 La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla root del progetto tramite il symlink `.gemini`, come richiesto.
 
 ## Documentazione Aggiornata
+<<<<<<< .merge_file_CVx3Nd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -122,5 +130,7 @@ La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla roo
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zqmjz5
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.

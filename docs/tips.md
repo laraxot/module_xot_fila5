@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_5dz9AG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_6oqMgb
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JyDSfl
 ---
 title: 'Tips'
 module: Xot
@@ -23,6 +26,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_5dz9AG
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_582Ftc
@@ -35,6 +39,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JyDSfl
 https://github.com/phpstan/phpstan/issues/1242
 
 
@@ -63,6 +69,7 @@ protected function callAction(array $match)
     }
 
     throw new \Exception("Method not found: {$controllerClass}@{$method}");
+<<<<<<< .merge_file_5dz9AG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -82,3 +89,6 @@ protected function callAction(array $match)
 =======
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+}
+>>>>>>> .merge_file_JyDSfl

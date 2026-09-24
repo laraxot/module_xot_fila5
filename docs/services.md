@@ -236,6 +236,7 @@ return [
 ## Collegamenti tra versioni di services.md
 * [services.md](../../../Xot/docs/services.md)
 * [services.md](../../../Tenant/docs/it/config/services.md)
+<<<<<<< .merge_file_lcBDy2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -249,11 +250,14 @@ return [
 * [services.md](../../../xot/docs/services.md)
 * [services.md](../../../tenant/docs/it/config/services.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_czTBAa
 
 ### Versione Incoming
 
    - Testare i casi limite
 
+<<<<<<< .merge_file_lcBDy2
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -267,3 +271,6 @@ return [
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_czTBAa

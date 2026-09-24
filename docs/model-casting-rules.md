@@ -119,6 +119,7 @@ protected function casts(): array
 ```
 
 ## Audit Risultati (2025-08-01)
+<<<<<<< .merge_file_K3PNwT
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -130,6 +131,8 @@ protected function casts(): array
 =======
 ## Audit Risultati ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_hr8Flp
 
 ### File con Errori Trovati: 20
 
@@ -254,6 +257,7 @@ class User extends BaseModel
 
 ## Ultimo aggiornamento
 
+<<<<<<< .merge_file_K3PNwT
 <<<<<<< HEAD
 <<<<<<< HEAD
 agosto 2025
@@ -267,3 +271,6 @@ agosto 2025
 =======
 agosto 2025
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+agosto 2025
+>>>>>>> .merge_file_hr8Flp

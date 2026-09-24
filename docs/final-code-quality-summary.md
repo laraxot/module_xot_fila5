@@ -64,6 +64,7 @@ if (property_exists($stateObject, 'name')) {
 - **Xot**: Base engine with 50+ base classes, 20+ service providers, 15+ traits
 - **User**: Authentication with advanced features
 - **Cms**: Content management system
+<<<<<<< .merge_file_XQG4zH
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Quaeris**: Main application module
@@ -79,6 +80,9 @@ if (property_exists($stateObject, 'name')) {
 - **healthcare_app**: Main application module
 - **ExternalProject**: Main application module
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Quaeris**: Main application module
+>>>>>>> .merge_file_eg9Xty
 - **UI**: Shared UI components
 - **Activity**: Activity tracking and logging
 - **Tenant**: Multi-tenancy support
@@ -173,6 +177,7 @@ if (property_exists($stateObject, 'name')) {
 ---
 
 *Last Updated: November 17, 2025*
+<<<<<<< .merge_file_XQG4zH
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Status: ✅ COMPLETE - All quality improvements implemented*
@@ -186,3 +191,6 @@ if (property_exists($stateObject, 'name')) {
 =======
 *Status: ✅ COMPLETE - All quality improvements implemented*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Status: ✅ COMPLETE - All quality improvements implemented*
+>>>>>>> .merge_file_eg9Xty

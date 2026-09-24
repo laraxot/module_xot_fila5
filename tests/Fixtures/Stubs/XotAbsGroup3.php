@@ -6,8 +6,8 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Schemas\Components\XotBaseGroup;
 
-<<<<<<< HEAD
 final class XotAbsGroup3 extends XotBaseGroup {}
+<<<<<<< .merge_file_fyC6jH
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_XPLNWR
@@ -29,3 +29,5 @@ final class XotAbsGroup3 extends XotBaseGroup
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_c2P0tx

@@ -321,6 +321,7 @@ Quando scrivi codice con Eloquent:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+<<<<<<< .merge_file_oWPVBF
 <<<<<<< HEAD
 <<<<<<< HEAD
 **PHPStan Level**: 10
@@ -340,3 +341,7 @@ Quando scrivi codice con Eloquent:
 **PHPStan Level**: 10
 **Status**: ✅ 0 Errors
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**PHPStan Level**: 10
+**Status**: ✅ 0 Errors
+>>>>>>> .merge_file_8PiIEM

@@ -3,6 +3,7 @@
 ## context
 
 in laraxot, xot is the central abstraction layer that enforces conventions and prevents drift across modules.
+<<<<<<< .merge_file_xoYB22
 <<<<<<< HEAD
 <<<<<<< HEAD
 translation is not just a feature: it is part of governance (no hardcoded labels, consistent keys, predictable ui).
@@ -16,6 +17,9 @@ translation is not just a feature: it is part of governance (no hardcoded labels
 =======
 translation is not just a feature: it is part of governance (no hardcoded labels, consistent keys, <nome progetto>able ui).
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+translation is not just a feature: it is part of governance (no hardcoded labels, consistent keys, predictable ui).
+>>>>>>> .merge_file_fQ3wzu
 
 this debate emerged because php/filament frequently mixes static helpers, traits, and inheritance, which can easily lead to **method signature collisions** (especially with `trans()`).
 
@@ -23,6 +27,7 @@ related docs:
 
 - [trait conflict resolution](./trait-conflict-resolution.md)
 - [filosofia modulo xot](./FILOSOFIA_MODULO_XOT.md)
+<<<<<<< .merge_file_xoYB22
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -34,6 +39,8 @@ related docs:
 =======
 - [filosofia modulo xot](./filosofia_modulo_xot.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fQ3wzu
 - [quality tools zen](./quality-tools-zen.md)
 
 ## the furious internal debate
@@ -44,6 +51,7 @@ related docs:
 - **reason**:
   - `trans()` is a foundational primitive.
   - if every trait ships its own `trans()` signature, php will accept it until it doesn’t (collision), and then failures are catastrophic.
+<<<<<<< .merge_file_xoYB22
 <<<<<<< HEAD
 <<<<<<< HEAD
   - a single contract enables type-safety, predictable behavior, and prevents “magic divergence”.
@@ -57,6 +65,9 @@ related docs:
 =======
   - a single contract enables type-safety, <nome progetto>able behavior, and prevents “magic divergence”.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+  - a single contract enables type-safety, predictable behavior, and prevents “magic divergence”.
+>>>>>>> .merge_file_fQ3wzu
 
 ### position b (local freedom): every trait can define its own trans
 
@@ -90,6 +101,7 @@ related docs:
 
 - fewer fatal collisions.
 - translation conventions remain centralized.
+<<<<<<< .merge_file_xoYB22
 <<<<<<< HEAD
 <<<<<<< HEAD
 - future filament upgrades are handled by adjusting xot once, not in every module.
@@ -103,3 +115,6 @@ related docs:
 =======
 - future filament upgrades are handled by adjusting xot once, not in every module.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- future filament upgrades are handled by adjusting xot once, not in every module.
+>>>>>>> .merge_file_fQ3wzu

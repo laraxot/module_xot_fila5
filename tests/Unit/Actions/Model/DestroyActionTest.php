@@ -13,6 +13,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('deletes model and returns it', function (): void {
+<<<<<<< .merge_file_pgfDFf
 <<<<<<< HEAD
 <<<<<<< HEAD
     $mockModel = new class extends BaseModel
@@ -23,6 +24,10 @@ it('deletes model and returns it', function (): void {
 =======
     $mockModel = new class extends BaseModel {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $mockModel = new class extends BaseModel
+    {
+>>>>>>> .merge_file_tzV00s
         public bool $deleted = false;
 
         public function delete(): bool
@@ -40,6 +45,7 @@ it('deletes model and returns it', function (): void {
 });
 
 it('flashes status message on successful delete', function (): void {
+<<<<<<< .merge_file_pgfDFf
 <<<<<<< HEAD
 <<<<<<< HEAD
     $mockModel = new class extends BaseModel
@@ -50,6 +56,10 @@ it('flashes status message on successful delete', function (): void {
 =======
     $mockModel = new class extends BaseModel {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $mockModel = new class extends BaseModel
+    {
+>>>>>>> .merge_file_tzV00s
         public function delete(): bool
         {
             return true;
@@ -62,6 +72,7 @@ it('flashes status message on successful delete', function (): void {
 });
 
 it('flashes failure message when delete returns false', function (): void {
+<<<<<<< .merge_file_pgfDFf
 <<<<<<< HEAD
 <<<<<<< HEAD
     $mockModel = new class extends BaseModel
@@ -72,6 +83,10 @@ it('flashes failure message when delete returns false', function (): void {
 =======
     $mockModel = new class extends BaseModel {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $mockModel = new class extends BaseModel
+    {
+>>>>>>> .merge_file_tzV00s
         public function delete(): bool
         {
             return false;

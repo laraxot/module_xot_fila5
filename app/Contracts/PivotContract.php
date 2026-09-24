@@ -11,12 +11,12 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property string|null $title
  * @property string|null $subtitle
+<<<<<<< .merge_file_GRtA3f
 <<<<<<< HEAD
 <<<<<<< HEAD
- * @property int|null $status
 =======
- * @property int|null    $status
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_WTqF6z
+ * @property int|null $status
  *
  * @method bool update($params)
 =======
@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_GRtA3f
 <<<<<<< HEAD
 <<<<<<< HEAD
 interface PivotContract {}
@@ -42,3 +43,6 @@ interface PivotContract
 {
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+interface PivotContract {}
+>>>>>>> .merge_file_WTqF6z

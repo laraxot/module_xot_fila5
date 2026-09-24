@@ -150,6 +150,7 @@ Model structure requirements:
 ## 📚 Riferimenti Aggiuntivi
 
 ### Documentazione Principale
+<<<<<<< .merge_file_E8EZmq
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [AGENTS.md](AGENTS.md) - Guida completa sviluppatori AI
@@ -163,6 +164,9 @@ Model structure requirements:
 =======
 - [AGENTS.md](../../../../agents.md) - Guida completa sviluppatori AI
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [AGENTS.md](AGENTS.md) - Guida completa sviluppatori AI
+>>>>>>> .merge_file_o0NLpY
 - [Database Testing Rules](../../../../../docs/database-testing-rules.md) - Regole MySQL testing
 - [AI Coding Memory](../../../../ai_coding_memory.md) - Memoria completa regole
 - [Critical Rules Index](../../../../../docs/critical-rules-index.md) - Indice regole critiche

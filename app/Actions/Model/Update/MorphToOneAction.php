@@ -31,6 +31,7 @@ class MorphToOneAction
     /**
      * Execute the action to create a MorphToOne relationship.
      *
+<<<<<<< .merge_file_ZhG5qz
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Model  $model  The parent model
@@ -43,6 +44,10 @@ class MorphToOneAction
      * @param Model       $model       The parent model
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Model  $model  The parent model
+     * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
+>>>>>>> .merge_file_WlzXe7
      *
      * @throws \InvalidArgumentException When relation type is invalid
      */
@@ -61,6 +66,7 @@ class MorphToOneAction
     /**
      * Prepare the data array for creation.
      *
+<<<<<<< .merge_file_ZhG5qz
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $data  The input data array
@@ -72,6 +78,9 @@ class MorphToOneAction
      * @param array<string, mixed> $data The input data array
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data  The input data array
+>>>>>>> .merge_file_WlzXe7
      * @return array<string, mixed> The prepared data array
      */
     private function prepareData(array $data): array
@@ -82,6 +91,7 @@ class MorphToOneAction
         }
 
         // Return the prepared data
+<<<<<<< .merge_file_ZhG5qz
 <<<<<<< HEAD
 <<<<<<< HEAD
         return array_filter($data, static fn (mixed $value) => $value !== null);
@@ -91,5 +101,8 @@ class MorphToOneAction
 =======
         return array_filter($data, static fn ($value) => null !== $value);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return array_filter($data, static fn (mixed $value) => $value !== null);
+>>>>>>> .merge_file_WlzXe7
     }
 }

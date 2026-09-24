@@ -274,6 +274,7 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< .merge_file_tUR7h3
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Versione**: 1.0.0
@@ -293,3 +294,7 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> .merge_file_PSHKuw

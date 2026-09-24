@@ -175,15 +175,19 @@ namespace Modules\NewModule\Filament\Resources;
 class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_jNZLJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5lTUHz
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_jNZLJI
 <<<<<<< HEAD
 =======
 =======
@@ -193,6 +197,8 @@ class ProductResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_5lTUHz
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -204,15 +210,19 @@ class ProductResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_jNZLJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5lTUHz
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_jNZLJI
 <<<<<<< HEAD
 =======
 =======
@@ -222,6 +232,8 @@ class ProductResource extends XotBaseResource
 =======
     public static function getInfolistSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_5lTUHz
     {
         return [
             Infolists\Components\TextEntry::make('name'),
@@ -554,6 +566,7 @@ echo "5. Run quality checks"
 
 **Workflow Version**: 1.0
 **Last Updated**: 2025-11-17
+<<<<<<< .merge_file_jNZLJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Maintained by**: Xot Module Development Team
@@ -569,3 +582,6 @@ echo "5. Run quality checks"
 
 **Maintained by**: Xot Module Development Team
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Maintained by**: Xot Module Development Team
+>>>>>>> .merge_file_5lTUHz

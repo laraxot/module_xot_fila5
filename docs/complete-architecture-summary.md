@@ -15,6 +15,7 @@
 Laraxot is built on the **DRY (Don't Repeat Yourself)** and **KISS (Keep It Simple, Stupid)** principles with a strong emphasis on:
 
 - **Modularity**: Everything is organized into independent modules
+<<<<<<< .merge_file_IAqpkL
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Inheritance Chain**: Clear, predictable inheritance patterns
@@ -28,6 +29,9 @@ Laraxot is built on the **DRY (Don't Repeat Yourself)** and **KISS (Keep It Simp
 =======
 - **Inheritance Chain**: Clear, <nome progetto>able inheritance patterns
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Inheritance Chain**: Clear, predictable inheritance patterns
+>>>>>>> .merge_file_kubA8m
 - **Convention over Configuration**: Predefined patterns that reduce decision-making
 - **Separation of Concerns**: Clear boundaries between different system components
 
@@ -137,15 +141,19 @@ Filament Resource → XotBaseResource → FilamentResource
 ### Required Implementation
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_IAqpkL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kubA8m
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IAqpkL
 <<<<<<< HEAD
 =======
 =======
@@ -155,6 +163,8 @@ abstract public static function getFormSchema(): array
 =======
 abstract public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kubA8m
 ```
 
 ### Page Generation
@@ -213,6 +223,7 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Inheritance over Composition**: Clear inheritance chains for maintainability
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
+<<<<<<< .merge_file_IAqpkL
 <<<<<<< HEAD
 <<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
@@ -226,3 +237,6 @@ This architecture creates a harmonious system where all components work together
 =======
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+This architecture creates a harmonious system where all components work together in a predictable, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
+>>>>>>> .merge_file_kubA8m

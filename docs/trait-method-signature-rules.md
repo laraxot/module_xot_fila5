@@ -135,6 +135,7 @@ If you encounter this error:
 ---
 
 *Last Updated: 2025-08-27*
+<<<<<<< .merge_file_GL2Q21
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Trait Standards Version: 2.0*
@@ -152,3 +153,7 @@ If you encounter this error:
 *
 *Trait Standards Version: 2.0*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Trait Standards Version: 2.0*
+
+>>>>>>> .merge_file_NFFIGE

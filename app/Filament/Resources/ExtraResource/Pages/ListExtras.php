@@ -9,6 +9,7 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+<<<<<<< .merge_file_Ts3FYv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -17,6 +18,8 @@ use Filament\Tables\Columns\TextColumn;
 =======
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bl7EX3
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Xot\Filament\Resources\ExtraResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -28,6 +31,7 @@ class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
 
+<<<<<<< .merge_file_Ts3FYv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -48,6 +52,8 @@ class ListExtras extends XotBaseListRecords
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bl7EX3
     /**
      * @return array<BaseFilter>
      */

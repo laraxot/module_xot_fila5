@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_s0PVTm
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_D0eins
 # BMAD Story 31 — Residuo PHPStan (swarm sub-agent)
 **Status:** IN PROGRESS — sub-agent attivo (swarm-phpstan-301)
 **Regola:** XotBaseResource NON ha getFormSchema(); solo Schema Form; no GatedXotBasePage

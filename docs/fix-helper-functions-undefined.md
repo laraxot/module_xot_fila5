@@ -358,6 +358,7 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [wikimedia/composer-merge-plugin GitHub](https://github.com/wikimedia/composer-merge-plugin)
 - [Xot Helpers Documentation](./helpers.md)
 - [Tenant Helper Dependency](../../Tenant/docs/helper-functions-dependency.md)
+<<<<<<< .merge_file_lIzkAH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -369,6 +370,8 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 =======
 - [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MkyO0L
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 
@@ -486,6 +489,7 @@ $models = $action->execute($moduleName);
 
 ---
 
+<<<<<<< .merge_file_lIzkAH
 <<<<<<< HEAD
 <<<<<<< HEAD
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
@@ -499,3 +503,6 @@ $models = $action->execute($moduleName);
 =======
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+>>>>>>> .merge_file_MkyO0L

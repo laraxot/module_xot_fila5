@@ -332,13 +332,17 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< .merge_file_gJvzPo
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_MuTF3C
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
 
     public function mountTableBulkAction(): void {}
+<<<<<<< .merge_file_gJvzPo
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -355,6 +359,8 @@ class HasTableWithoutOptionalMethodsTestClass
     }
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MuTF3C
 
     public function mountedTableActionRecord(): ?Model
 =======
@@ -365,8 +371,11 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< .merge_file_gJvzPo
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_MuTF3C
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -376,6 +385,7 @@ class HasTableWithoutOptionalMethodsTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+<<<<<<< .merge_file_gJvzPo
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -402,6 +412,8 @@ class HasTableWithoutOptionalMethodsTestClass
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MuTF3C
 
     public function parseTableFilterName(): string
     {

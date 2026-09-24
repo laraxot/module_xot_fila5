@@ -10,6 +10,7 @@ use Spatie\LaravelData\Data;
 class HasManyUpdateData extends Data
 {
     /**
+<<<<<<< .merge_file_TF9RNm
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int|string>  $ids
@@ -19,12 +20,16 @@ class HasManyUpdateData extends Data
 =======
      * @param array<int|string> $ids
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int|string>  $ids
+>>>>>>> .merge_file_vCF4kD
      */
     public function __construct(
         public string $foreignKey,
         public mixed $parentKey,
         #[ArrayType]
         public array $ids = [],
+<<<<<<< .merge_file_TF9RNm
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -36,4 +41,7 @@ class HasManyUpdateData extends Data
     ) {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_vCF4kD
 }

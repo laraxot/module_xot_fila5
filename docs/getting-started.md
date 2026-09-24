@@ -365,6 +365,7 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
+<<<<<<< .merge_file_AoVCQJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -387,6 +388,8 @@ npm run dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8hF7x3
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
 * [getting-started.md](../../../UI/project_docs/getting-started.md)
@@ -481,6 +484,7 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
+<<<<<<< .merge_file_AoVCQJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -498,6 +502,8 @@ npm run dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8hF7x3
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
 * [getting-started.md](../../../UI/project_docs/getting-started.md)
@@ -506,6 +512,7 @@ npm run dev
 
 ### Versione Incoming
 
+<<<<<<< .merge_file_AoVCQJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -519,3 +526,6 @@ npm run dev
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_8hF7x3

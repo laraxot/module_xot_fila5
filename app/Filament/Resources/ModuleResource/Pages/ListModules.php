@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\ModuleResource\Pages;
 
+<<<<<<< .merge_file_sQoY8T
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -24,6 +25,8 @@ use Filament\Tables\Filters\BaseFilter;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_1Sx99u
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Resources\ModuleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -33,6 +36,7 @@ class ListModules extends XotBaseListRecords
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = ModuleResource::class;
+<<<<<<< .merge_file_sQoY8T
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -109,4 +113,6 @@ class ListModules extends XotBaseListRecords
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_1Sx99u
 }

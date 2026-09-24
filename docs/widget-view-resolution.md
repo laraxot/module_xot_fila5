@@ -69,6 +69,7 @@ public function __construct()
 
 ---
 
+<<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## 📋 Pattern di Utilizzo
@@ -111,6 +112,11 @@ class SimpleWidget extends XotBaseWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## 📋 Pattern di Utilizzo
+
+### Pattern 1: View Manuale (Raccomandato per nomi complessi)
+>>>>>>> .merge_file_2bRltm
 
 ```php
 class TimeClockWidget extends XotBaseWidget
@@ -125,11 +131,14 @@ class TimeClockWidget extends XotBaseWidget
 ```
 
 **Quando usare**:
+<<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2bRltm
 - Nome widget complesso con trattini
 - View con nome diverso dal pattern automatico
 - Controllo esplicito sulla view utilizzata
@@ -153,6 +162,7 @@ class SimpleWidget extends XotBaseWidget
 **Quando usare**:
 - Nome widget semplice che segue il pattern automatico
 - Convenzione naming standard
+<<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 =======
 =======
@@ -166,6 +176,8 @@ class SimpleWidget extends XotBaseWidget
 - Il motivo dell'override è documentato
 - Si accetta consapevolmente che l'override blocchi la precedenza `pub_theme::...`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2bRltm
 
 ---
 
@@ -221,15 +233,19 @@ class MyWidget extends XotBaseWidget
 
 ## 📝 Best Practices
 
+<<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2bRltm
 1. **Definire sempre la view manualmente** se il nome widget è complesso o contiene trattini
 2. **Verificare che la view esista** prima di definirla manualmente
 3. **Usare naming consistente**: se possibile, seguire il pattern automatico
 4. **Documentare view custom** nel widget se il nome non è ovvio
+<<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 =======
 =======
@@ -245,6 +261,8 @@ class MyWidget extends XotBaseWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2bRltm
 
 ---
 
@@ -257,6 +275,7 @@ class MyWidget extends XotBaseWidget
 ---
 
 *Documento creato il 2025-01-27 durante la risoluzione del bug "View not found: timeclock"*
+<<<<<<< .merge_file_WTedcW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -268,3 +287,5 @@ class MyWidget extends XotBaseWidget
 =======
 *Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2bRltm

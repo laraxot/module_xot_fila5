@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_NJzmtJ
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_49To5U
 # BMAD Story 17 — Media: 10 errori PHPStan (test)
 
 **Modulo:** `Media`

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ZI8nHq
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_u2ikyB
 # 25f — Correggere test con static call getFormSchema() su Resource
 
 **Modulo:** multi (Activity, Cms, Job, Lang, Media, Notify, Tenant, User)

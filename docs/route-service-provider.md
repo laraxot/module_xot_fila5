@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_9Sss6b
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_X8w0yG
 # RouteServiceProvider nei Moduli <nome progetto>
 
 Questo documento descrive le linee guida per l'implementazione corretta del RouteServiceProvider nei moduli <nome progetto>.
@@ -102,6 +105,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
     public string $name = 'Blog';
 }
 ```
+<<<<<<< .merge_file_9Sss6b
 <<<<<<< HEAD
 =======
 =======
@@ -120,3 +124,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/route-servic
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/route-service-provider.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_X8w0yG

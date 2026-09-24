@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_DhXsDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_hL6MAq
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom
@@ -16,6 +19,7 @@
 - **Collegamenti**:
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
   - [README.md centrale](../../../docs/README.md)
+<<<<<<< .merge_file_DhXsDB
 <<<<<<< HEAD
 =======
 =======
@@ -35,3 +39,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-states
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/model-states-best-practices-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_hL6MAq

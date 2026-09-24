@@ -154,6 +154,7 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 * [conventions.md](../../../../docs/conventions.md)
 * [conventions.md](../../Dental/docs/conventions.md)
 * [conventions.md](../../Patient/docs/conventions.md)
+<<<<<<< .merge_file_A2HmWJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -176,3 +177,5 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 =======
 * [conventions.md](../../patient/docs/conventions.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_o8kpmU

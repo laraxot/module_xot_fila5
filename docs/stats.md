@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Vo8U7B
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,6 +38,8 @@ https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
 =======
 >>>>>>> .merge_file_qjKMF8
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZzQ9r5
 ---
 title: 'Stats — risorse esterne'
 module: Xot
@@ -64,6 +67,7 @@ updated: 2026-08-24
 - <https://github.com/codemastersolucoes/laravel-visitor-tracker>
 - <https://beyondco.de/docs/laravel-websockets/debugging/dashboard   !!>
 - <https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/>
+<<<<<<< .merge_file_Vo8U7B
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JfLEy0
@@ -99,3 +103,5 @@ https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
 =======
 https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZzQ9r5

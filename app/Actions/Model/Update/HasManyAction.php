@@ -40,6 +40,7 @@ class HasManyAction
     /**
      * Determine if the update is a direct update.
      *
+<<<<<<< .merge_file_cfvIGn
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -50,6 +51,9 @@ class HasManyAction
 =======
      * @param array<string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_UHk4aZ
      */
     private function isDirectUpdate(array $data): bool
     {
@@ -103,6 +107,7 @@ class HasManyAction
     /**
      * Clean up orphaned records after batch update.
      *
+<<<<<<< .merge_file_cfvIGn
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -113,6 +118,9 @@ class HasManyAction
 =======
      * @param array<int|string> $updatedIds
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int, int|string>  $updatedIds
+>>>>>>> .merge_file_UHk4aZ
      */
     private function cleanupOrphanedRecords(
         RelationData $relationDTO,

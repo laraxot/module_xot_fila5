@@ -13,6 +13,7 @@ use Nwidart\Modules\Module as NwidartModule;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< .merge_file_V27SrG
 <<<<<<< HEAD
  * <<<<<<< HEAD.
  *
@@ -39,6 +40,16 @@ use Webmozart\Assert\Assert;
  *                                                   >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @method string getId()
+ * @method string getName()
+ * @method NwidartModule getModule()
+ * @method array<string, mixed> getConfig()
+ * @method array<string, mixed> getModuleConfig()
+ * @method string getNavigationLabel()
+ * @method string getNavigationIcon()
+ * @method int getNavigationSort()
+>>>>>>> .merge_file_n6g418
  */
 class PanelMixin
 {

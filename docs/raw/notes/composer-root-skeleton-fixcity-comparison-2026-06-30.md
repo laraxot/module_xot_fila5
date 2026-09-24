@@ -1,6 +1,9 @@
 ---
+<<<<<<< .merge_file_QsCAh9
 <<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
+=======
+>>>>>>> .merge_file_JvZ26k
 title: "Composer Root Skeleton Fixcity Comparison"
 type: concept
 status: deprecated
@@ -15,6 +18,7 @@ related:
 
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
+<<<<<<< .merge_file_QsCAh9
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -36,6 +40,8 @@ source:
 >>>>>>> .merge_file_iNeHny
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JvZ26k
 ## Osservazione FixCity
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
@@ -58,6 +64,7 @@ Root allineato e piu' stretto di FixCity:
 - autoload solo `App\\` e `Tests\\`
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
+<<<<<<< .merge_file_QsCAh9
 <<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 =======
@@ -72,6 +79,8 @@ Root allineato e piu' stretto di FixCity:
 >>>>>>> .merge_file_iNeHny
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JvZ26k
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
 
@@ -81,6 +90,7 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Debito FixCity (non replicare in Predict)
 
+<<<<<<< .merge_file_QsCAh9
 <<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 =======
@@ -89,10 +99,13 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JvZ26k
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`);
 - `Modules\\` nell'autoload root;
 - merge di `Themes/*/composer.json`;
 - configurazione merge-plugin piu' ampia del necessario.
+<<<<<<< .merge_file_QsCAh9
 <<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 =======
@@ -117,6 +130,8 @@ Root allineato e piu' stretto di FixCity:
 >>>>>>> .merge_file_iNeHny
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JvZ26k
 
 ## Regola dedotta
 

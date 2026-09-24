@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_0hRunx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_SVLxNr
 title: "Refactor Panelmixin"
 type: concept
 status: deprecated
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [REFACTOR-panelmixin.md](./refactor-panelmixin.md)
+<<<<<<< .merge_file_0hRunx
 <<<<<<< HEAD
 =======
 =======
@@ -43,3 +47,5 @@ This file is deprecated due to dated filename convention violation.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_SVLxNr

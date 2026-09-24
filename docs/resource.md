@@ -56,15 +56,19 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NLkSef
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 =======
 =======
@@ -74,6 +78,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NLkSef
     {
         return [
             // Schema del form
@@ -106,6 +112,7 @@ class MyResource extends XotBaseResource
 
 2. **IMPLEMENTARE nella Resource**
    - ✅ `protected static ?string $model`
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -125,6 +132,9 @@ class MyResource extends XotBaseResource
 =======
    - ✅ `public static function getFormSchema(): array`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+   - ✅ `public function getFormSchema(): array`
+>>>>>>> .merge_file_NLkSef
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -237,15 +247,19 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NLkSef
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 =======
 =======
@@ -255,6 +269,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NLkSef
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -584,15 +600,19 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NLkSef
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 =======
 =======
@@ -602,6 +622,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NLkSef
 {
     return [
         'nome' => TextInput::make('nome'),
@@ -679,6 +701,7 @@ public function getTableBulkActions(): array
 ## Collegamenti tra versioni di resource.md
 * [resource.md](../../../Xot/docs/filament/resource.md)
 * [resource.md](../../../Xot/docs/resource.md)
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -692,11 +715,14 @@ public function getTableBulkActions(): array
 * [resource.md](../../../xot/docs/filament/resource.md)
 * [resource.md](../../../xot/docs/resource.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NLkSef
 
 ### Versione Incoming
 
 // ... existing code ...
 
+<<<<<<< .merge_file_UDDBPF
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -710,3 +736,6 @@ public function getTableBulkActions(): array
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_NLkSef

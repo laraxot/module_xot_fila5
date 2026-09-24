@@ -30,6 +30,7 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< .merge_file_mw2IuI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -110,3 +111,5 @@ https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ubx86B

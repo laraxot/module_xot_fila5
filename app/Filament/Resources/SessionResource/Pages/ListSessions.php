@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\SessionResource\Pages;
 
+<<<<<<< .merge_file_pkC10T
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6ldPkF
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\SessionResource;
 
@@ -23,6 +26,7 @@ use Modules\Xot\Filament\Resources\SessionResource;
 class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
+<<<<<<< .merge_file_pkC10T
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -66,4 +70,6 @@ class ListSessions extends XotBaseListRecords
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6ldPkF
 }

@@ -2,6 +2,7 @@
 
 ## Data Aggiornamento
 2025-01-27
+<<<<<<< .merge_file_6GZt6F
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@
 =======
 [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_0G0VOt
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`
@@ -99,6 +102,7 @@ return [
 
 - [Regole Traduzioni Xot](translation_rules.md)
 - [Best Practices Traduzioni](translations-best-practices.md)
+<<<<<<< .merge_file_6GZt6F
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
@@ -118,3 +122,8 @@ return [
 *Ultimo aggiornamento: 27 Gennaio 2025*
 - [Documentazione Principale Traduzioni](../../../../docs/project/translation_rules.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
+
+*Ultimo aggiornamento: 27 Gennaio 2025*
+>>>>>>> .merge_file_0G0VOt

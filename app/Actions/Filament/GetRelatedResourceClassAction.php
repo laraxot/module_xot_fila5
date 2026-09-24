@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
+<<<<<<< .merge_file_0HJ8FS
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
@@ -25,6 +26,9 @@ use Illuminate\Database\Eloquent\Model;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> .merge_file_mHhsp1
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
@@ -62,6 +66,7 @@ class GetRelatedResourceClassAction
         if (method_exists($page, 'getRelatedResource')) {
             /** @var class-string<XotBaseResource>|null $relatedResource */
             $relatedResource = $page::getRelatedResource();
+<<<<<<< .merge_file_0HJ8FS
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($relatedResource !== null) {
@@ -75,6 +80,9 @@ class GetRelatedResourceClassAction
 =======
             if ($relatedResource !== null) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($relatedResource !== null) {
+>>>>>>> .merge_file_mHhsp1
                 return $relatedResource;
             }
         }
@@ -83,6 +91,7 @@ class GetRelatedResourceClassAction
             return null;
         }
 
+<<<<<<< .merge_file_0HJ8FS
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var class-string<Model> $modelClass */
@@ -106,12 +115,16 @@ class GetRelatedResourceClassAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        /** @var class-string<Model> $modelClass */
+>>>>>>> .merge_file_mHhsp1
         $modelClass = $page->getModelClass();
         $moduleName = Str::between($modelClass, 'Modules\\', '\Models\\');
         $modelName = class_basename($modelClass);
         $guess = 'Modules\\'.$moduleName.'\Filament\Resources\\'.$modelName.'Resource';
 
         if (class_exists($guess) && is_subclass_of($guess, XotBaseResource::class)) {
+<<<<<<< .merge_file_0HJ8FS
 <<<<<<< HEAD
 <<<<<<< HEAD
             /** @var class-string<XotBaseResource> $guess */
@@ -125,6 +138,9 @@ class GetRelatedResourceClassAction
 =======
             /** @var class-string<XotBaseResource> $guess */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            /** @var class-string<XotBaseResource> $guess */
+>>>>>>> .merge_file_mHhsp1
             return $guess;
         }
 

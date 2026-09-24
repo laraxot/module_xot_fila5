@@ -49,18 +49,15 @@ class ExportTreeXlsAction extends Action
     {
         parent::setUp();
         $this->translateLabel()
+<<<<<<< .merge_file_nuO1fK
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_A43ujK
             //->tooltip(__('xot::actions.export_xls'))
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
-            ->icon('heroicon-o-arrow-down-tray')
-=======
-            // ->tooltip(__('xot::actions.export_xls'))
-            // ->icon('heroicon-o-cloud-arrow-down')
-            // ->icon('fas-file-excel')
             ->icon('xot-files.xls')
->>>>>>> laraxot/dev
             ->action(static function (Page $livewire, Model $record, array $_data) {
 =======
             ->tooltip(__('xot::actions.export_xls'))

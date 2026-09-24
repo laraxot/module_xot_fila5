@@ -276,6 +276,7 @@ Eccezioni rare:
 - [git-conflicts-mal-risolti.md](./git-conflicts-mal-risolti.md)
 - [../../bashscripts/docs/file-locking-pattern.md](../../../bashscripts/docs/file-locking-pattern.md)
 - [../../User/docs/syntax-errors-to-fix.md](../../User/docs/syntax-errors-to-fix.md)
+<<<<<<< .merge_file_gxXjmd
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -295,3 +296,6 @@ Eccezioni rare:
 =======
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
+>>>>>>> .merge_file_XOQPDz

@@ -2,6 +2,7 @@
 
 ## Problema Risolto
 
+<<<<<<< .merge_file_EBCfdc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -25,6 +26,9 @@ Lo script `./bashscripts/ai/ai_init.sh` non creava la junction richiesta per la 
 =======
 Lo script `bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Lo script `./bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
+>>>>>>> .merge_file_xlWl4c
 
 ## Analisi e Soluzione
 
@@ -36,6 +40,7 @@ Dopo l'analisi dello script e verifica del suo comportamento, è stato identific
 
 È stato creato manualmente il symlink richiesto:
 ```
+<<<<<<< .merge_file_EBCfdc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -59,12 +64,16 @@ Dopo l'analisi dello script e verifica del suo comportamento, è stato identific
 =======
 .gemini -> bashscripts/ai/.gemini
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+./.gemini -> ./bashscripts/ai/.gemini
+>>>>>>> .merge_file_xlWl4c
 ```
 
 ## Verifica
 
 Il symlink ora esiste correttamente:
 ```
+<<<<<<< .merge_file_EBCfdc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -88,10 +97,14 @@ lrwxrwxrwx 1 zorin zorin 22 Dec 22 16:17 .gemini -> bashscripts/ai/.gemini
 =======
 lrwxrwxrwx 1 zorin zorin 22 Dec 22 16:17 .gemini -> bashscripts/ai/.gemini
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+lrwxrwxrwx 1 zorin zorin 22 Dec 22 16:17 .gemini -> bashscripts/ai/.gemini
+>>>>>>> .merge_file_xlWl4c
 ```
 
 ## Impatto
 
+<<<<<<< .merge_file_EBCfdc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,15 +128,14 @@ La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla roo
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_We7LT0
-La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla root del progetto tramite il symlink `.gemini`, come richiesto.
 =======
-La cartella `bashscripts/ai/.gemini` ora è accessibile direttamente dalla root del progetto tramite il symlink `.gemini`, come richiesto.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_xlWl4c
+La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla root del progetto tramite il symlink `.gemini`, come richiesto.
 
 ## Documentazione Aggiornata
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.
+<<<<<<< .merge_file_EBCfdc
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -137,3 +149,5 @@ La documentazione del progetto è stata aggiornata per riflettere questo cambiam
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xlWl4c

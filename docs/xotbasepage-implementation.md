@@ -173,6 +173,7 @@ class DashboardSettingsPolicy
 
 ## collegamento ad altre documentazioni
 - [pattern di estensione filament](../Xot/docs/filament_extension_pattern.md)
+<<<<<<< .merge_file_uyUhMz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -184,10 +185,13 @@ class DashboardSettingsPolicy
 =======
 - [pattern di estensione filament](../xot/docs/filament_extension_pattern.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_P4aA2u
 - [best practices filament](../<nome progetto>/docs/filament-best-practices.md)
 
 ## ATTENZIONE: errori critici da evitare
 - NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).
+<<<<<<< .merge_file_uyUhMz
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
@@ -201,3 +205,6 @@ class DashboardSettingsPolicy
 =======
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
+>>>>>>> .merge_file_P4aA2u

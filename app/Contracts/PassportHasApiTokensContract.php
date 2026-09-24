@@ -55,6 +55,7 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
+<<<<<<< .merge_file_kAn0iR
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -67,6 +68,9 @@ interface PassportHasApiTokensContract
      * @param array<int, string> $scopes
 >>>>>>> 3792da0d (Check & fix styling)
      *
+=======
+     * @param  array<int, string>  $scopes
+>>>>>>> .merge_file_4gx2Mg
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;

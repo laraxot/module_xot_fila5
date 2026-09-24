@@ -149,6 +149,7 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_2OqJBo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -157,10 +158,13 @@ class MyPage extends XotBasePage
 <<<<<<< HEAD
 >>>>>>> .merge_file_OKWI8S
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Mm4dIM
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_2OqJBo
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_f1UDM0
@@ -173,6 +177,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Mm4dIM
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -450,6 +456,7 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_2OqJBo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -458,10 +465,13 @@ class MyPage extends XotBasePage
 <<<<<<< HEAD
 >>>>>>> .merge_file_OKWI8S
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Mm4dIM
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_2OqJBo
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_f1UDM0
@@ -474,6 +484,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Mm4dIM
 
 // ✅ CORRETTO
 public function getFormSchema(): array

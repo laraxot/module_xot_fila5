@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_qnysxo
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_x2o4t2
 # Gestione dei Repository
 
 ## Repository Pattern
@@ -143,6 +146,7 @@ Tracker gathers a lot of information from your requests to identify and store:
 https://github.com/antonioribeiro/tracker
 
 ---
+<<<<<<< .merge_file_qnysxo
 <<<<<<< HEAD
 =======
 =======
@@ -165,3 +169,5 @@ https://www.programmersought.com/article/8489242324/
 =======
 https://www.programmersought.com/article/8489242324/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_x2o4t2

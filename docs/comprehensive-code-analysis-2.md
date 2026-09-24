@@ -177,15 +177,19 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< .merge_file_m6K14J
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_cYDVVs
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_m6K14J
 <<<<<<< HEAD
 =======
 =======
@@ -195,6 +199,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_cYDVVs
 {
     return [
         TextInput::make('first_name'),
@@ -204,15 +210,19 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< .merge_file_m6K14J
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_cYDVVs
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_m6K14J
 <<<<<<< HEAD
 =======
 =======
@@ -222,6 +232,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_cYDVVs
 {
     return [
         TextInput::make('name')->required(),
@@ -318,15 +330,19 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_m6K14J
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_cYDVVs
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_m6K14J
 <<<<<<< HEAD
 =======
 =======
@@ -336,6 +352,8 @@ class ContactResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_cYDVVs
     {
         return [
             TextInput::make('first_name'),
@@ -468,6 +486,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_m6K14J
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
@@ -481,6 +500,9 @@ return [
 =======
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_cYDVVs
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

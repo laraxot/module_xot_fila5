@@ -44,15 +44,19 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
+<<<<<<< .merge_file_5BkwsP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NUzGj2
 - [Error Handling Guidelines](../../EXCEPTION-HANDLING-GUIDE.md)
 - [Webhook Integration](../../integrations/WEBHOOK-GUIDE.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
 - [Error Formatters Overview](../README.md)
+<<<<<<< .merge_file_5BkwsP
 <<<<<<< HEAD
 =======
 =======
@@ -72,3 +76,5 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 =======
 - [Error Formatters Overview](../README.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NUzGj2

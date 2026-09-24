@@ -2,6 +2,7 @@
 
 ## Panoramica
 
+<<<<<<< .merge_file_MZfPyc
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
@@ -15,6 +16,9 @@ Questo documento descrive la configurazione dei server MCP (Model Context Protoc
 =======
 Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto healthcare_app Fila4 Mono.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
+>>>>>>> .merge_file_LCJxjB
 
 ## Cos'è MCP?
 
@@ -402,6 +406,7 @@ cp Modules/Xot/docs/windsurf-mcp-config.json ~/.codeium/windsurf/mcp_config.json
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
 - [MCP Server Recommended](./mcp-server-recommended.md) - Server consigliati per moduli
 - [Model Context Protocol](./model-context-protocol.md) - Panoramica generale MCP
+<<<<<<< .merge_file_MZfPyc
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
@@ -415,3 +420,6 @@ cp Modules/Xot/docs/windsurf-mcp-config.json ~/.codeium/windsurf/mcp_config.json
 =======
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
+>>>>>>> .merge_file_LCJxjB

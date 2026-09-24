@@ -17,6 +17,7 @@ class RegisterBladeComponentsAction
     {
         $comps = app(GetComponentsAction::class)->execute($path, $namespace.'\View\Components', $prefix);
 
+<<<<<<< .merge_file_uN868i
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($comps->count() === 0) {
@@ -26,6 +27,9 @@ class RegisterBladeComponentsAction
 =======
         if (0 === $comps->count()) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($comps->count() === 0) {
+>>>>>>> .merge_file_vLgV0p
             return;
         }
 

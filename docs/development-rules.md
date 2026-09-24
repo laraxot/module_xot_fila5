@@ -2,6 +2,7 @@
 
 ## Collegamenti
 - [Documentazione generale progetto](/docs/README.md)
+<<<<<<< .merge_file_9HFspv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@
 =======
 - [Documentazione generale progetto](/docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_5BqaJF
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -435,6 +438,7 @@ TextInput::make('name')
 
 ---
 
+<<<<<<< .merge_file_9HFspv
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
@@ -448,3 +452,6 @@ TextInput::make('name')
 =======
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+>>>>>>> .merge_file_5BqaJF

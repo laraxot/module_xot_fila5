@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
 declare(strict_types=1);
@@ -18,10 +19,14 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_DwfLcr
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +48,8 @@ declare(strict_types=1);
 declare(strict_types=1);
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_DwfLcr
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
@@ -96,6 +103,7 @@ class SanitizeFieldsHeaderAction extends Action
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
+<<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
                             $c++;
@@ -117,6 +125,9 @@ class SanitizeFieldsHeaderAction extends Action
 =======
                             ++$c;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                            $c++;
+>>>>>>> .merge_file_DwfLcr
                         }
                     }
                     if ($save) {
@@ -131,6 +142,7 @@ class SanitizeFieldsHeaderAction extends Action
     }
 
     /**
+<<<<<<< .merge_file_k0KWPy
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  list<string>  $fields
@@ -152,6 +164,9 @@ class SanitizeFieldsHeaderAction extends Action
 =======
      * @param list<string> $fields
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  list<string>  $fields
+>>>>>>> .merge_file_DwfLcr
      */
     public function setFields(array $fields): self
     {

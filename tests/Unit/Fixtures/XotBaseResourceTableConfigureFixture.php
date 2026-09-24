@@ -10,6 +10,7 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 {
+<<<<<<< .merge_file_KCxBuQ
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_QLXzFv
     /**
      * @return array<string, TextColumn>
      */
@@ -67,6 +70,7 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
             'fixture_filter' => Filter::make('fixture_filter'),
         ];
     }
+<<<<<<< .merge_file_KCxBuQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -80,4 +84,6 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_QLXzFv
 }

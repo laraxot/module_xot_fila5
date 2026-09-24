@@ -61,6 +61,7 @@ Modules/Xot/
 ### Versione HEAD
 
 ## Collegamenti tra versioni di analysis.md
+<<<<<<< .merge_file_sgKeLl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,6 +87,8 @@ Modules/Xot/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mggdAJ
 * [analysis.md](../../../Notify/docs/analysis.md)
 * [analysis.md](../../../Notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../Xot/docs/analysis.md)
@@ -102,6 +105,7 @@ Modules/Xot/
 
 ### Versione Incoming
 
+<<<<<<< .merge_file_sgKeLl
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -115,3 +119,6 @@ Modules/Xot/
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_mggdAJ

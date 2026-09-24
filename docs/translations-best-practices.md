@@ -488,6 +488,7 @@ Per aggiornare le traduzioni esistenti da una struttura semplice a una espansa:
 
 - [Documentazione Ufficiale Laravel Localization](https://laravel.com/docs/localization)
 - [Documentazione di Filament sulla Localizzazione](https://filamentphp.com/docs/3.x/support/localization)
+<<<<<<< .merge_file_ruQqJQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [LangServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/LangServiceProvider.php)
@@ -507,3 +508,7 @@ Per aggiornare le traduzioni esistenti da una struttura semplice a una espansa:
 - [LangServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/LangServiceProvider.php)
 - [TRANSLATIONS.md](base_orisbroker_fila5/laravel/modules/brain/docs/translations.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [LangServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/LangServiceProvider.php)
+- [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
+>>>>>>> .merge_file_ApXBVy

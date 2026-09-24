@@ -33,6 +33,7 @@ class GetViewBlocksOptionsByTypeAction
     /**
      * Ottiene le opzioni dei blocchi di vista per un determinato tipo.
      *
+<<<<<<< .merge_file_iyovLL
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $type  Il tipo di blocco da cercare
@@ -47,6 +48,10 @@ class GetViewBlocksOptionsByTypeAction
      * @param bool   $img  Se includere i percorsi delle immagini invece dei nomi
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  string  $type  Il tipo di blocco da cercare
+     * @param  bool  $img  Se includere i percorsi delle immagini invece dei nomi
+>>>>>>> .merge_file_p2b7i7
      * @return array<string, string> Array di opzioni con chiave = vista e valore = nome o percorso immagine
      */
     public function execute(string $type, bool $img = false): array
@@ -59,6 +64,7 @@ class GetViewBlocksOptionsByTypeAction
         $globPattern = $basePath.'/*/resources/views/components/blocks/'.$type.'/*.blade.php';
         $files = File::glob($globPattern);
 
+<<<<<<< .merge_file_iyovLL
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($files === false) {
@@ -68,6 +74,9 @@ class GetViewBlocksOptionsByTypeAction
 =======
         if (false === $files) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($files === false) {
+>>>>>>> .merge_file_p2b7i7
             return []; // Ritorna un array vuoto se non ci sono file
         }
 
@@ -78,8 +87,8 @@ class GetViewBlocksOptionsByTypeAction
         Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
 
         $opts = Arr::mapWithKeys($files, function (string $path) use ($img, $type, $fixPathAction): array {
-<<<<<<< HEAD
 
+<<<<<<< .merge_file_iyovLL
 =======
 >>>>>>> laraxot/dev
 =======
@@ -92,6 +101,8 @@ class GetViewBlocksOptionsByTypeAction
             Assert::string($path, 'Il percorso del file deve essere una stringa');
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_p2b7i7
             // Normalizziamo il percorso
             $pathStr = $fixPathAction->execute($path);
             Assert::stringNotEmpty($pathStr, 'Il percorso normalizzato non può essere vuoto');

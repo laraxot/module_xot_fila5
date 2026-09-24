@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,6 +44,8 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 =======
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IGI8lq
 ---
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
@@ -129,6 +132,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 
 **Example**: Resource Filament
 ```php
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
@@ -169,11 +173,14 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IGI8lq
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -218,6 +225,8 @@ Un pattern standardizzato per incapsulare la business logic in classi riutilizza
 =======
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IGI8lq
     // table() and form() inherited from base
 }
 ```
@@ -259,6 +268,7 @@ class MyModuleServiceProvider extends XotBaseServiceProvider
 
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
@@ -298,6 +308,8 @@ Un pattern standardizzato per incapsulare la business logic in classi riutilizza
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IGI8lq
 ```php
 use Modules\Xot\Actions\XotBaseAction;
 
@@ -306,6 +318,7 @@ class CreateUserAction extends XotBaseAction
     public function execute(array $data): User
     {
         $user = User::create($data);
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -329,11 +342,15 @@ class CreateUserAction extends XotBaseAction
         $this->logActivity('user.created', $user); // Logging automatico
         event(new UserCreated($user)); // Dispatching eventi
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        event(new UserCreated($user));
+>>>>>>> .merge_file_IGI8lq
         return $user;
     }
 }
 ```
 
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -351,10 +368,13 @@ Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e
 =======
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IGI8lq
 ### Enums System
 
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
 
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
@@ -372,6 +392,8 @@ Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IGI8lq
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
 
@@ -382,6 +404,7 @@ enum UserStatus: string implements XotBaseEnum
 
     public function getLabel(): string
     {
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -402,11 +425,14 @@ enum UserStatus: string implements XotBaseEnum
 =======
         // Traduzione gestita centralmente
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IGI8lq
         return __('xot::enums.user_status.'.$this->value);
     }
 }
 ```
 
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -471,6 +497,8 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 =======
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IGI8lq
 ### Filament Integration
 
 Xot fornisce wrapper base per tutti i componenti Filament:
@@ -600,6 +628,7 @@ All modules depend on **Xot**. Never have circular dependencies.
 **Last Updated**: 2026-07-14  
 **Maintained by**: Laraxot Core Team  
 **PHPStan Level**: 10 (Compliant)
+<<<<<<< .merge_file_zjSty0
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
@@ -660,3 +689,5 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 =======
 - [Linee Guida per il Testing](./testing.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IGI8lq

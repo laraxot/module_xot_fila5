@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_UXBl42
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ https://statamic.com/
 =======
 >>>>>>> .merge_file_LoHDJU
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_doh1ch
 ---
 title: 'Laravel cms — risorse esterne'
 module: Xot
@@ -33,6 +36,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://statamic.com/>
+<<<<<<< .merge_file_UXBl42
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7q5227
@@ -48,3 +52,5 @@ https://statamic.com/
 =======
 https://statamic.com/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_doh1ch

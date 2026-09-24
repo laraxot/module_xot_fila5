@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_utiLtB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_POTMkK
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HqUMQM
 ---
 title: "Regola Generale: Metodo getTableColumns per Filament Table (Xot)"
 module: "Xot"
@@ -22,6 +25,7 @@ qmd: "filament table columns"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_utiLtB
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_0Tgqx5
@@ -34,6 +38,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_HqUMQM
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
 ## Regola
@@ -61,23 +67,16 @@ public function getTableColumns(): array
 - Ogni modulo deve documentare l'adozione nella sua docs/
 - Aggiornare override, chiamate e test
 
+<<<<<<< .merge_file_utiLtB
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_HqUMQM
 **Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
 
 ## Collegamenti
-=======
-<<<<<<< HEAD
-**Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
-
-## Collegamenti
-<<<<<<< .merge_file_0Tgqx5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-- [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
-=======
 - [Esempio e Applicazione - Modulo User](filament_table_columns.md)
+<<<<<<< .merge_file_utiLtB
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
@@ -107,6 +106,9 @@ public function getTableColumns(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
+>>>>>>> .merge_file_HqUMQM
 
 ## Nota storica: correzione XotBaseManageRelatedRecords
 
@@ -122,6 +124,7 @@ public function getTableColumns(): array
 
 **Ultimo aggiornamento:** 2025-05-13
 
+<<<<<<< .merge_file_utiLtB
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
@@ -135,3 +138,6 @@ public function getTableColumns(): array
 =======
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> .merge_file_HqUMQM

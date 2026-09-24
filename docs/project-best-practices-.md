@@ -114,11 +114,14 @@ MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis.md      # date in name (use CHANGELOG.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_2oOFQR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KP9oUK
 =======
 <<<<<<< HEAD
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
@@ -127,6 +130,7 @@ analysis.md      # date in name (use CHANGELOG.md)
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_2oOFQR
 <<<<<<< HEAD
 =======
 =======
@@ -134,6 +138,8 @@ analysis.md      # date in name (use CHANGELOG.md)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KP9oUK
 ```
 
 ### 8. DRY Principle
@@ -289,15 +295,19 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_2oOFQR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KP9oUK
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_2oOFQR
 <<<<<<< HEAD
 =======
 =======
@@ -307,6 +317,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KP9oUK
     {
         return [
             TextInput::make('name'),  // No ->label()!

@@ -165,6 +165,7 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 ### Documentazione Moduli Correlati
 - [Geo Module Translations](/Modules/Geo/docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/docs/translation-guidelines.md)
+<<<<<<< .merge_file_XruSCt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -178,12 +179,15 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [Geo Module Translations](/modules/geo/docs/translation-structure-expanded.md)
 - [User Module Translations](/modules/user/docs/translation-guidelines.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AO0QBe
 - [Struttura Traduzioni Espansa](/project_docs/translation-structure-expanded.md)
 - [Principi DRY/KISS](/project_docs/dry-kiss-principles.md)
 
 ### Documentazione Moduli Correlati
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
+<<<<<<< .merge_file_XruSCt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -197,6 +201,8 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AO0QBe
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole
@@ -225,6 +231,7 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS
+<<<<<<< .merge_file_XruSCt
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Data**: 2025-08-08
@@ -238,3 +245,6 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 =======
 **Data**: 2025-08-08
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Data**: 2025-08-08
+>>>>>>> .merge_file_AO0QBe

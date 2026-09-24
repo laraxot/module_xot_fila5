@@ -1,6 +1,7 @@
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview
+<<<<<<< .merge_file_BLsKmm
 <<<<<<< HEAD
 <<<<<<< HEAD
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
@@ -16,6 +17,9 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the healthcare_app_survey database used in the Limesurvey integration.
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the survey database used in the Limesurvey integration.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
+>>>>>>> .merge_file_CFRfEo
 
 ## Available MCP Tools for Database Work
 
@@ -26,6 +30,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 {
   "command": "node",
   "args": [
+<<<<<<< .merge_file_BLsKmm
 <<<<<<< HEAD
 <<<<<<< HEAD
     "/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js"
@@ -58,6 +63,14 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 **Use Cases for healthcare_app_survey Database**:
 **Use Cases for survey Database**:
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    "/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js"
+  ]
+}
+```
+
+**Use Cases for quaeris_survey Database**:
+>>>>>>> .merge_file_CFRfEo
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`
@@ -91,6 +104,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 
 ### Direct Database Queries (using MySQL MCP)
 ```sql
+<<<<<<< .merge_file_BLsKmm
 <<<<<<< HEAD
 <<<<<<< HEAD
 -- List all survey tables in quaeris_survey database
@@ -104,6 +118,9 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 =======
 -- List all survey tables in healthcare_app_survey database
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+-- List all survey tables in quaeris_survey database
+>>>>>>> .merge_file_CFRfEo
 SHOW TABLES LIKE 'lime_survey_%';
 
 -- Analyze question structure
@@ -145,6 +162,7 @@ Ensure database connections are properly configured in:
 ## MCP Configuration File
 Location: `~/.cursor/mcp.json`
 
+<<<<<<< .merge_file_BLsKmm
 <<<<<<< HEAD
 <<<<<<< HEAD
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
@@ -158,10 +176,14 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 =======
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the healthcare_app_survey database without additional configuration.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
+>>>>>>> .merge_file_CFRfEo
 
 ## Best Practices for Database Analysis
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
+<<<<<<< .merge_file_BLsKmm
 <<<<<<< HEAD
 <<<<<<< HEAD
 2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
@@ -175,6 +197,9 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 =======
 2. **Use proper connection** (`limesurvey` connection for healthcare_app_survey database)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
+>>>>>>> .merge_file_CFRfEo
 3. **Limit result sets** when exploring large survey response tables
 4. **Check table existence** before querying survey-specific tables
 5. **Respect data privacy** when handling survey responses

@@ -14,12 +14,16 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+<<<<<<< .merge_file_MaaXY2
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_oiVjn4
 use Webmozart\Assert\Assert;
 
 use function Safe\exec;
 
+<<<<<<< .merge_file_MaaXY2
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -32,6 +36,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_oiVjn4
 class DatabaseBackUpCommand extends Command
 {
     /**
@@ -49,6 +55,7 @@ class DatabaseBackUpCommand extends Command
     protected $description = 'Dump your Mysql database to a file';
 
     /**
+<<<<<<< .merge_file_MaaXY2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -62,6 +69,8 @@ class DatabaseBackUpCommand extends Command
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_oiVjn4
      * Execute the console command.
      */
     public function handle(): void

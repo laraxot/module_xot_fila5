@@ -4,18 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
+<<<<<<< .merge_file_97BbYa
 <<<<<<< HEAD
 <<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-
-use function Safe\file_put_contents;
-
 =======
-use function Safe\file_put_contents;
-
+>>>>>>> .merge_file_wVghEZ
 use Spatie\QueueableAction\QueueableAction;
 
->>>>>>> laraxot/dev
+use function Safe\file_put_contents;
+
 /**
  * Persiste un array PHP con **una chiave per riga** (mai array annidati inline).
  *
@@ -36,12 +33,12 @@ class SavePhpArrayAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_97BbYa
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  array<int|string, mixed>  $data
 =======
-     * @param array<int|string, mixed> $data
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_wVghEZ
+     * @param  array<int|string, mixed>  $data
      */
     public function execute(array $data, string $filename): bool
     {
@@ -61,19 +58,11 @@ class SavePhpArrayAction
 <<<<<<< HEAD
 
     /**
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
      */
     private function exportArray(array $data, int $depth): string
     {
         if ($data === []) {
-=======
-     * @param array<int|string, mixed> $data
-     */
-    private function exportArray(array $data, int $depth): string
-    {
-        if ([] === $data) {
->>>>>>> laraxot/dev
             return '[]';
         }
 
@@ -94,11 +83,7 @@ class SavePhpArrayAction
     private function exportValue(mixed $value, int $depth): string
     {
         if (is_array($value)) {
-<<<<<<< HEAD
             /** @var array<int|string, mixed> $value */
-=======
-            /* @var array<int|string, mixed> $value */
->>>>>>> laraxot/dev
             return $this->exportArray($value, $depth);
         }
 

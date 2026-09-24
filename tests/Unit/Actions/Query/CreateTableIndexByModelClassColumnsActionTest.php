@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_nWV8lI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bVeUA0
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
@@ -35,6 +38,7 @@ it('creates table index correctly', function (): void {
         $table->string('test_col');
     });
 
+<<<<<<< .merge_file_nWV8lI
 <<<<<<< HEAD
 <<<<<<< HEAD
     $modelClass = new class extends XotBaseModel
@@ -45,6 +49,10 @@ it('creates table index correctly', function (): void {
 =======
     $modelClass = new class extends XotBaseModel {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $modelClass = new class extends XotBaseModel
+    {
+>>>>>>> .merge_file_bVeUA0
         protected $table = 'test_index_table';
     };
     $modelClassName = get_class($modelClass);
@@ -65,6 +73,7 @@ it('throws exception for invalid model class', function (): void {
 });
 
 it('throws exception for missing table', function (): void {
+<<<<<<< .merge_file_nWV8lI
 <<<<<<< HEAD
 <<<<<<< HEAD
     $modelClass = new class extends XotBaseModel
@@ -75,6 +84,10 @@ it('throws exception for missing table', function (): void {
 =======
     $modelClass = new class extends XotBaseModel {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $modelClass = new class extends XotBaseModel
+    {
+>>>>>>> .merge_file_bVeUA0
         protected $table = 'missing_table';
     };
     $modelClassName = get_class($modelClass);

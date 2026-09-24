@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_CG03R2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zvgjaj
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
@@ -71,6 +74,7 @@ it('instantiates model by type when id is null', function (): void {
 
 it('loads model by id when record exists', function (): void {
     config()->set('morph_map', ['demo' => FakeQueryableModel::class]);
+<<<<<<< .merge_file_CG03R2
 <<<<<<< HEAD
 <<<<<<< HEAD
     FakeQueryableModel::$findResult = new DemoModel;
@@ -80,6 +84,9 @@ it('loads model by id when record exists', function (): void {
 =======
     FakeQueryableModel::$findResult = new DemoModel();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    FakeQueryableModel::$findResult = new DemoModel;
+>>>>>>> .merge_file_zvgjaj
     FakeQueryableModel::$findResult->setAttribute('id', 123);
 
     $result = app(GetModelByModelTypeAction::class)->execute('demo', '123');
@@ -101,6 +108,7 @@ it('throws when model id is provided but record is missing', function (): void {
 });
 
 it('returns snake model type from model contract instance', function (): void {
+<<<<<<< .merge_file_CG03R2
 <<<<<<< HEAD
 <<<<<<< HEAD
     $model = new class extends Model implements ModelContract {};
@@ -112,6 +120,9 @@ it('returns snake model type from model contract instance', function (): void {
     $model = new class extends Model implements ModelContract {
     };
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $model = new class extends Model implements ModelContract {};
+>>>>>>> .merge_file_zvgjaj
 
     $result = app(GetModelTypeByModelAction::class)->execute($model);
 

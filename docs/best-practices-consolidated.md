@@ -253,15 +253,19 @@ use Filament\Forms\Components\TextInput;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_p2ri0o
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nj3bNz
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_p2ri0o
 <<<<<<< HEAD
 =======
 =======
@@ -271,6 +275,8 @@ class ExampleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_nj3bNz
     {
         return [
             TextInput::make('name')->required(),
@@ -311,15 +317,19 @@ class UserModerationResource extends XotBaseResource
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_p2ri0o
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nj3bNz
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_p2ri0o
 <<<<<<< HEAD
 =======
 =======
@@ -329,6 +339,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_nj3bNz
 {
     return [
         // Schema del form
@@ -935,6 +947,7 @@ php artisan view:clear
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< .merge_file_p2ri0o
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Categoria: Best Practices*
@@ -948,3 +961,6 @@ php artisan view:clear
 =======
 *Categoria: Best Practices*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Categoria: Best Practices*
+>>>>>>> .merge_file_nj3bNz

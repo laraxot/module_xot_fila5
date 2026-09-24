@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_dUhCW4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PGwqxh
 # Sprint Planning: Xot Infrastructure
 
 ## 🏁 Sprint Goal
@@ -34,6 +37,7 @@ Finalize the core documentation and perform a final PHPStan Level 10 audit.
 ## ✅ Definition of Done
 - All 6 files exist and are verified.
 - No PHPStan errors in the module.
+<<<<<<< .merge_file_dUhCW4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -121,3 +125,5 @@ Implement core extension framework with API, hooks, and event bus.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PGwqxh

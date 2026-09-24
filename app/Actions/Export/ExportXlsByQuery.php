@@ -19,12 +19,16 @@ class ExportXlsByQuery
     /**
      * Esporta i risultati di una query in Excel.
      *
+<<<<<<< .merge_file_SR35Pn
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_5FbkiH
      * @param  Builder<Model>  $query  Query da esportare
      * @param  string  $filename  Nome del file Excel
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  int|null  $limit  Limite di righe da esportare
+<<<<<<< .merge_file_SR35Pn
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -36,6 +40,8 @@ class ExportXlsByQuery
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_5FbkiH
      */
     public function execute(
         Builder $query,
@@ -53,6 +59,7 @@ class ExportXlsByQuery
         );
         // Note: QueryExport doesn't accept a limit parameter directly
         // If limit is needed, apply it to the query before passing to the exporter
+<<<<<<< .merge_file_SR35Pn
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($limit !== null) {
@@ -62,6 +69,9 @@ class ExportXlsByQuery
 =======
         if (null !== $limit) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($limit !== null) {
+>>>>>>> .merge_file_5FbkiH
             $query->limit($limit);
         }
 

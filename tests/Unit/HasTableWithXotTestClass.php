@@ -15,10 +15,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
 use Mockery;
-=======
->>>>>>> laraxot/dev
 use Mockery\MockInterface;
 =======
 // Xot Pest/PHPUnit — claude-audit documentation ratio.
@@ -39,11 +36,7 @@ class HasTableWithXotTestClass
 <<<<<<< HEAD
     public function getLayoutView(): object
     {
-<<<<<<< HEAD
         $mock = Mockery::mock();
-=======
-        $mock = \Mockery::mock();
->>>>>>> laraxot/dev
         $mock->shouldReceive('getTableColumns')->andReturn([]);
         $mock->shouldReceive('getTableContentGrid')->andReturn([]);
 =======
@@ -66,13 +59,15 @@ class HasTableWithXotTestClass
     /**
      * @return array<string, Column|ColumnGroup|Component>
      */
-<<<<<<< HEAD
     /** @return array<string, Column> */
+<<<<<<< .merge_file_w6P829
 =======
 >>>>>>> laraxot/dev
 =======
     #[\Override]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AWVvM2
     public function getTableColumns(): array
     {
         return [];
@@ -82,11 +77,7 @@ class HasTableWithXotTestClass
     {
 <<<<<<< HEAD
         /** @var Table&MockInterface $table */
-<<<<<<< HEAD
         $table = Mockery::mock(Table::class);
-=======
-        $table = \Mockery::mock(Table::class);
->>>>>>> laraxot/dev
 
         return $table;
 =======
@@ -220,8 +211,8 @@ class HasTableWithXotTestClass
      */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
-<<<<<<< HEAD
         return new Collection;
+<<<<<<< .merge_file_w6P829
 =======
         return new Collection();
 >>>>>>> laraxot/dev
@@ -231,6 +222,8 @@ class HasTableWithXotTestClass
     {
         return new Collection();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AWVvM2
     }
 
     public function getAllTableRecordsCount(): int
@@ -396,13 +389,17 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< .merge_file_w6P829
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_AWVvM2
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
 
     public function mountTableBulkAction(): void {}
+<<<<<<< .merge_file_w6P829
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -419,6 +416,8 @@ class HasTableWithXotTestClass
     }
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AWVvM2
 
     public function mountedTableActionRecord(): ?Model
 =======
@@ -429,8 +428,11 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< .merge_file_w6P829
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_AWVvM2
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -440,6 +442,7 @@ class HasTableWithXotTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+<<<<<<< .merge_file_w6P829
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -466,6 +469,8 @@ class HasTableWithXotTestClass
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AWVvM2
 
     public function parseTableFilterName(): string
     {

@@ -38,6 +38,7 @@ interface ErrorFormatterContract
 - [Error Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Error Formatters](../exceptions/formatters/README.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< .merge_file_obFyl2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -53,3 +54,5 @@ interface ErrorFormatterContract
 - [Error Formatters](../exceptions/formatters/readme.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_liYRkJ

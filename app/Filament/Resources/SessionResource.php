@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< .merge_file_674C8d
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -16,11 +17,14 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Components\Component;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_t7GykT
 use Modules\Xot\Models\Session;
 
 class SessionResource extends XotBaseResource
 {
     protected static ?string $model = Session::class;
+<<<<<<< .merge_file_674C8d
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,4 +54,6 @@ class SessionResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_t7GykT
 }

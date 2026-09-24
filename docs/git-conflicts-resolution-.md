@@ -114,6 +114,7 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 - Risolto conflitto nella gestione del campo postal_code
 
 **Modifiche Applicate**:
+<<<<<<< .merge_file_EMP6b7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -137,6 +138,8 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kVLL6N
 ```php
 // VERSIONE CORRETTA
 $res=Locality::query()
@@ -251,6 +254,7 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
+<<<<<<< .merge_file_EMP6b7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -280,6 +284,8 @@ php artisan lang:check
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kVLL6N
 
 ## Best Practices Applicate
 
@@ -334,6 +340,7 @@ php artisan lang:check
 ## Collegamenti Correlati
 
 ### Documentazione Moduli
+<<<<<<< .merge_file_EMP6b7
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
@@ -355,6 +362,8 @@ php artisan lang:check
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kVLL6N
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 
@@ -365,6 +374,7 @@ php artisan lang:check
 
 ---
 
+<<<<<<< .merge_file_EMP6b7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -405,3 +415,8 @@ php artisan lang:check
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**
+**Autore**: Sistema di correzione automatica
+**Stato**: ✅ Completato
+>>>>>>> .merge_file_kVLL6N

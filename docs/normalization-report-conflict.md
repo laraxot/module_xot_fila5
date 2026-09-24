@@ -4,6 +4,7 @@
 
 ### File Eliminati (Duplicati con Date)
 
+<<<<<<< .merge_file_iZ2NTY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8JrMb3
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
@@ -32,6 +35,7 @@
 ### File Rinominati (Rimozione Date)
 
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
+<<<<<<< .merge_file_iZ2NTY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +47,8 @@
 =======
 1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8JrMb3
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -93,6 +99,7 @@
 - Altri file con pattern `bugfix-*-2025-*.md`
 
 ### Modulo Lang
+<<<<<<< .merge_file_iZ2NTY
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
@@ -110,6 +117,10 @@
 - `riepilogo-correzioni-traduzioni.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction.md` (verificare duplicati)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
+- `translation-errors-correction-2025.md` (verificare duplicati)
+>>>>>>> .merge_file_8JrMb3
 
 ### Modulo Xot
 - File in cartella `archive/` (valutare se mantenere date per storico)
@@ -152,6 +163,7 @@
 ---
 
 **Data**: Gennaio 2025
+<<<<<<< .merge_file_iZ2NTY
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Stato**: In corso
@@ -169,11 +181,16 @@
 
 ---
 
+=======
+>>>>>>> .merge_file_8JrMb3
 **Stato**: In corso
 <<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
+<<<<<<< .merge_file_iZ2NTY
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8JrMb3

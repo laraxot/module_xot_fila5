@@ -11,6 +11,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Undocumented class.
  */
+<<<<<<< .merge_file_W4LonI
 <<<<<<< HEAD
 <<<<<<< HEAD
 return new class extends XotBaseMigration
@@ -21,6 +22,10 @@ return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> .merge_file_RwIiHD
     /**
      * Run the migrations.
      */

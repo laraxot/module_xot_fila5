@@ -2,6 +2,7 @@
 
 ## Panoramica
 
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono.
@@ -17,6 +18,9 @@ Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida desc
 Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono.
 Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono.
+>>>>>>> .merge_file_WWh04e
 
 ## Prerequisiti
 
@@ -31,6 +35,7 @@ Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida desc
 Permette l'accesso ai file del progetto.
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add --transport http filesystem-quaeris http://localhost:8000/mcp/filesystem
@@ -46,6 +51,9 @@ claude mcp add --transport http filesystem http://localhost:8000/mcp/filesystem
 claude mcp add --transport http filesystem-healthcare_app http://localhost:8000/mcp/filesystem
 claude mcp add --transport http filesystem http://localhost:8000/mcp/filesystem
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add --transport http filesystem-quaeris http://localhost:8000/mcp/filesystem
+>>>>>>> .merge_file_WWh04e
 ```
 
 **Nota**: Richiede un server MCP HTTP in esecuzione. Per sviluppo locale, utilizzare server STDIO invece.
@@ -55,6 +63,7 @@ claude mcp add --transport http filesystem http://localhost:8000/mcp/filesystem
 Permette chiamate HTTP e API.
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add --transport http fetch-quaeris http://localhost:8000/mcp/fetch
@@ -68,6 +77,9 @@ claude mcp add --transport http fetch-healthcare_app http://localhost:8000/mcp/f
 =======
 claude mcp add --transport http fetch-healthcare_app http://localhost:8000/mcp/fetch
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add --transport http fetch-quaeris http://localhost:8000/mcp/fetch
+>>>>>>> .merge_file_WWh04e
 ```
 
 ### 3. Memory Server
@@ -75,6 +87,7 @@ claude mcp add --transport http fetch-healthcare_app http://localhost:8000/mcp/f
 Memoria temporanea per contesto tra richieste.
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add --transport http memory-quaeris http://localhost:8000/mcp/memory
@@ -88,6 +101,9 @@ claude mcp add --transport http memory-healthcare_app http://localhost:8000/mcp/
 =======
 claude mcp add --transport http memory-healthcare_app http://localhost:8000/mcp/memory
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add --transport http memory-quaeris http://localhost:8000/mcp/memory
+>>>>>>> .merge_file_WWh04e
 ```
 
 ### 4. MySQL Server
@@ -95,6 +111,7 @@ claude mcp add --transport http memory-healthcare_app http://localhost:8000/mcp/
 Interazione con database MySQL.
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add --transport http mysql-quaeris http://localhost:8000/mcp/mysql
@@ -108,6 +125,9 @@ claude mcp add --transport http mysql-healthcare_app http://localhost:8000/mcp/m
 =======
 claude mcp add --transport http mysql-healthcare_app http://localhost:8000/mcp/mysql
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add --transport http mysql-quaeris http://localhost:8000/mcp/mysql
+>>>>>>> .merge_file_WWh04e
 ```
 
 **Variabili d'ambiente richieste**:
@@ -122,6 +142,7 @@ claude mcp add --transport http mysql-healthcare_app http://localhost:8000/mcp/m
 Analisi codice e ottimizzazione.
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add --transport http sequential-thinking-quaeris http://localhost:8000/mcp/sequential-thinking
@@ -135,6 +156,9 @@ claude mcp add --transport http sequential-thinking-healthcare_app http://localh
 =======
 claude mcp add --transport http sequential-thinking-healthcare_app http://localhost:8000/mcp/sequential-thinking
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add --transport http sequential-thinking-quaeris http://localhost:8000/mcp/sequential-thinking
+>>>>>>> .merge_file_WWh04e
 ```
 
 ## Configurazione con Server STDIO (Raccomandato)
@@ -144,6 +168,7 @@ Per sviluppo locale, è preferibile utilizzare server STDIO invece di HTTP:
 ### Filesystem con STDIO
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add filesystem-quaeris npx -y @modelcontextprotocol/server-filesystem server-memory
@@ -157,11 +182,15 @@ claude mcp add filesystem-healthcare_app npx -y @modelcontextprotocol/server-fil
 =======
 claude mcp add filesystem-healthcare_app npx -y @modelcontextprotocol/server-filesystem server-memory
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add filesystem-quaeris npx -y @modelcontextprotocol/server-filesystem server-memory
+>>>>>>> .merge_file_WWh04e
 ```
 
 ### MySQL con STDIO
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
@@ -175,6 +204,9 @@ claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
 =======
 claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
+>>>>>>> .merge_file_WWh04e
 ```
 
 **Con variabili d'ambiente**:
@@ -185,6 +217,7 @@ export DB_USERNAME=your_username
 export DB_PASSWORD=your_password
 export DB_DATABASE=your_database
 
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
@@ -198,6 +231,9 @@ claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
 =======
 claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
+>>>>>>> .merge_file_WWh04e
 ```
 
 ## Gestione Server
@@ -211,6 +247,7 @@ claude mcp list
 ### Rimozione Server
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp remove filesystem-quaeris
@@ -224,11 +261,15 @@ claude mcp remove filesystem-healthcare_app
 =======
 claude mcp remove filesystem-healthcare_app
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp remove filesystem-quaeris
+>>>>>>> .merge_file_WWh04e
 ```
 
 ### Test Connessione
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp test filesystem-quaeris
@@ -242,6 +283,9 @@ claude mcp test filesystem-healthcare_app
 =======
 claude mcp test filesystem-healthcare_app
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+claude mcp test filesystem-quaeris
+>>>>>>> .merge_file_WWh04e
 ```
 
 ## Configurazione Avanzata
@@ -252,6 +296,7 @@ Per server MCP personalizzati, creare uno script wrapper:
 
 ```bash
 #!/bin/bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 # ~/bin/mcp-mysql-quaeris.sh
@@ -265,6 +310,9 @@ Per server MCP personalizzati, creare uno script wrapper:
 =======
 # ~/bin/mcp-mysql-healthcare_app.sh
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+# ~/bin/mcp-mysql-quaeris.sh
+>>>>>>> .merge_file_WWh04e
 
 export MYSQL_HOST="${DB_HOST:-localhost}"
 export MYSQL_PORT="${DB_PORT:-3306}"
@@ -278,6 +326,7 @@ exec npx -y @modelcontextprotocol/server-mysql
 Poi aggiungere il server:
 
 ```bash
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 chmod +x ~/bin/mcp-mysql-quaeris.sh
@@ -295,6 +344,10 @@ claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
 chmod +x ~/bin/mcp-mysql-healthcare_app.sh
 claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+chmod +x ~/bin/mcp-mysql-quaeris.sh
+claude mcp add mysql-quaeris ~/bin/mcp-mysql-quaeris.sh
+>>>>>>> .merge_file_WWh04e
 ```
 
 ## Troubleshooting
@@ -310,6 +363,7 @@ claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
    ```bash
    ls -la /docs.anthropic.com/claude/docs/mcp)
 - [Model Context Protocol Specification](https://modelcontextprotocol.io)
+<<<<<<< .merge_file_DmU0qS
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [MCP Editors Configuration](../mcp-editors-configuration.md)
@@ -323,3 +377,6 @@ claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
 =======
 - [MCP Editors Configuration](../mcp-editors-configuration.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [MCP Editors Configuration](../mcp-editors-configuration.md)
+>>>>>>> .merge_file_WWh04e

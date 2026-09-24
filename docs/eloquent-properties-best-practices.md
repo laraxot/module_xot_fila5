@@ -1,6 +1,7 @@
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)
+<<<<<<< .merge_file_0hVK6Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_e5Pumr
 
 **Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
 
@@ -219,6 +222,7 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 - [Regola Cursor](../../.cursor/rules/eloquent-properties.md)
 - [Memoria Cursor](../../.cursor/memories)
 - [Linee Guida AI](../../.ai/guidelines/CORE.md)
+<<<<<<< .merge_file_0hVK6Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -230,6 +234,8 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 =======
 - [Linee Guida AI](../../.ai/guidelines/core.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_e5Pumr
 - [Esempio Corretto](../../Notify/app/Notifications/GenericNotification.php)
 
 ## Esempi di Correzione
@@ -266,6 +272,7 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 - [PHPStan Eloquent Analysis](https://phpstan.org/user-guide/rule-levels)
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< .merge_file_0hVK6Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Regola applicabile a tutti i moduli*
@@ -279,3 +286,6 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 =======
 *Regola applicabile a tutti i moduli*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Regola applicabile a tutti i moduli*
+>>>>>>> .merge_file_e5Pumr

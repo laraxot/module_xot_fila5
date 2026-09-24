@@ -228,6 +228,7 @@ public function getTableActions(): array
 
 ## Collegamenti alla Documentazione Specifica
 
+<<<<<<< .merge_file_FrHx3H
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
@@ -241,3 +242,6 @@ public function getTableActions(): array
 =======
 - [Standard di Codice nel Progetto](../../../../../docs/standard-codice.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Standard di Codice nel Progetto](../../../../docs/standard-codice.md)
+>>>>>>> .merge_file_wjAY9p

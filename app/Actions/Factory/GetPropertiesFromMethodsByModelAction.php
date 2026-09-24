@@ -18,6 +18,7 @@ namespace Modules\Xot\Actions\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
+<<<<<<< .merge_file_aCQ3v8
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
@@ -26,10 +27,15 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+>>>>>>> .merge_file_zWy2Kt
 
 use function Safe\file;
 use function Safe\preg_replace;
 
+<<<<<<< .merge_file_aCQ3v8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,6 +48,8 @@ use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zWy2Kt
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
  *
@@ -54,6 +62,7 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le proprietà dai metodi di relazione del modello.
      *
+<<<<<<< .merge_file_aCQ3v8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Model  $model  Il modello da analizzare
@@ -65,6 +74,9 @@ class GetPropertiesFromMethodsByModelAction
      * @param Model $model Il modello da analizzare
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Model  $model  Il modello da analizzare
+>>>>>>> .merge_file_zWy2Kt
      * @return array<string, string> Dati estratti dalle relazioni
      */
     public function execute(Model $model): array
@@ -83,6 +95,7 @@ class GetPropertiesFromMethodsByModelAction
                 $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
+<<<<<<< .merge_file_aCQ3v8
 <<<<<<< HEAD
 <<<<<<< HEAD
                 if ($filename === false) {
@@ -92,6 +105,9 @@ class GetPropertiesFromMethodsByModelAction
 =======
                 if (false === $filename) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                if ($filename === false) {
+>>>>>>> .merge_file_zWy2Kt
                     continue; // Saltiamo i metodi senza file (es. metodi interni)
                 }
 
@@ -129,12 +145,16 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Estrazione del corpo della funzione
                 $begin = mb_strpos($codeStr, 'function(');
+<<<<<<< .merge_file_aCQ3v8
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_zWy2Kt
                 $begin = $begin !== false ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
                 $end = $end !== false ? $end : mb_strlen($codeStr);
+<<<<<<< .merge_file_aCQ3v8
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -146,6 +166,8 @@ class GetPropertiesFromMethodsByModelAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zWy2Kt
 
                 $length = $end - $begin + 1;
                 Assert::greaterThan($length, 0, 'La lunghezza del corpo della funzione deve essere positiva');
@@ -167,12 +189,16 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le relazioni belongsTo dal codice.
      *
+<<<<<<< .merge_file_aCQ3v8
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_zWy2Kt
      * @param  string  $codeStr  Il codice da analizzare
      * @param  Model  $model  Il modello
      * @param  string  $method  Il nome del metodo
      * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
+<<<<<<< .merge_file_aCQ3v8
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -184,12 +210,15 @@ class GetPropertiesFromMethodsByModelAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zWy2Kt
      */
     private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
+<<<<<<< .merge_file_aCQ3v8
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($pos === false) {
@@ -199,6 +228,9 @@ class GetPropertiesFromMethodsByModelAction
 =======
         if (false === $pos) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($pos === false) {
+>>>>>>> .merge_file_zWy2Kt
             return; // Il metodo non contiene una relazione belongsTo
         }
 

@@ -253,6 +253,7 @@ use Filament\Forms\Components\TextInput;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_YediDg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -261,10 +262,13 @@ class ExampleResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_rGeWqd
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qFDWZy
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YediDg
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MKUDrf
@@ -277,6 +281,8 @@ class ExampleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qFDWZy
     {
         return [
             TextInput::make('name')->required(),
@@ -317,6 +323,7 @@ class UserModerationResource extends XotBaseResource
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_YediDg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -325,10 +332,13 @@ class UserModerationResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_rGeWqd
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qFDWZy
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YediDg
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MKUDrf
@@ -341,6 +351,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qFDWZy
 {
     return [
         // Schema del form

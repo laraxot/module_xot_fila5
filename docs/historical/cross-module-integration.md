@@ -42,6 +42,7 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_fPwDfd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,10 +51,13 @@ class IntegparamResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_8ooCOz
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_h4fDIK
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_fPwDfd
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_bB3oCr
@@ -66,6 +70,8 @@ class IntegparamResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_h4fDIK
     {
         return [
             // Schema del form
@@ -143,6 +149,7 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_fPwDfd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -151,10 +158,13 @@ class IntegparamResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_8ooCOz
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_h4fDIK
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_fPwDfd
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_bB3oCr
@@ -167,6 +177,8 @@ class IntegparamResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_h4fDIK
     {
         return [
             Section::make('Dati Anagrafici')

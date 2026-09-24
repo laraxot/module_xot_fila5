@@ -286,6 +286,7 @@ trait HasXotOptimizations
 * [bottlenecks_detailed.md](../../../Xot/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](../../../Job/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](../../../Media/docs/bottlenecks_detailed.md)
+<<<<<<< .merge_file_2AtaTg
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -301,11 +302,14 @@ trait HasXotOptimizations
 * [bottlenecks_detailed.md](../../../job/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](../../../media/docs/bottlenecks_detailed.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YEPVh0
 
 ### Versione Incoming
 
 ```
 
+<<<<<<< .merge_file_2AtaTg
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -319,3 +323,6 @@ trait HasXotOptimizations
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_YEPVh0

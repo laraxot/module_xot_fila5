@@ -15,8 +15,11 @@ class GetViewAction
     /**
      * Summary of execute.
      *
+<<<<<<< .merge_file_CUFQqU
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_NblTAH
      *
      * @return view-string
      *
@@ -25,6 +28,7 @@ class GetViewAction
     public function execute(string $tpl = '', string $file0 = ''): string
     {
         if ($file0 === '') {
+<<<<<<< .merge_file_CUFQqU
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -39,12 +43,15 @@ class GetViewAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NblTAH
             $backtrace = debug_backtrace();
             $file0 = app(FixPathAction::class)->execute($backtrace[0]['file'] ?? '');
         }
 
         $file0 = Str::after($file0, base_path());
         $arr = explode(DIRECTORY_SEPARATOR, $file0);
+<<<<<<< .merge_file_CUFQqU
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($arr[0] === '') {
@@ -54,6 +61,9 @@ class GetViewAction
 =======
         if ('' === $arr[0]) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($arr[0] === '') {
+>>>>>>> .merge_file_NblTAH
             $arr = array_slice($arr, 1);
             $arr = array_values($arr);
         }
@@ -77,6 +87,7 @@ class GetViewAction
         $pub_view = 'pub_theme::'.$tmp;
         // $pub_view è sempre stringa perché costruita da stringhe
 
+<<<<<<< .merge_file_CUFQqU
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($tpl !== '') {
@@ -86,6 +97,9 @@ class GetViewAction
 =======
         if ('' !== $tpl) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($tpl !== '') {
+>>>>>>> .merge_file_NblTAH
             $pub_view .= '.'.$tpl;
         }
         // PHPStan: $pub_view è sempre non-falsy-string, Assert ridondante rimosso
@@ -95,6 +109,7 @@ class GetViewAction
 
         $view = Str::lower($mod).'::'.$tmp;
 
+<<<<<<< .merge_file_CUFQqU
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($tpl !== '') {
@@ -104,6 +119,9 @@ class GetViewAction
 =======
         if ('' !== $tpl) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($tpl !== '') {
+>>>>>>> .merge_file_NblTAH
             $view .= '.'.$tpl;
         }
 

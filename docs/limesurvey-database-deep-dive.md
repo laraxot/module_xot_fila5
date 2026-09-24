@@ -5,6 +5,7 @@
 The system utilizes three main database connections:
 
 ### 1. Limesurvey Database (`limesurvey` connection)
+<<<<<<< .merge_file_8aAK5K
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Schema**: `txaesfry_quaeris_survey` 
@@ -18,6 +19,9 @@ The system utilizes three main database connections:
 =======
 - **Schema**: `txaesfry_healthcare_app_survey` 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Schema**: `txaesfry_quaeris_survey` 
+>>>>>>> .merge_file_5SL3RJ
 - **Purpose**: Main Limesurvey installation with surveys, questions, and responses
 - **Key tables**: 
   - `lime_questions` - Question structure and metadata
@@ -27,15 +31,19 @@ The system utilizes three main database connections:
   - `lime_answers` - Possible answer options
   - `lime_answer_l10ns` - Answer translations
 
+<<<<<<< .merge_file_8aAK5K
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_5SL3RJ
 ### 2. Quaeris Database (`quaeris` connection) 
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to Quaeris functionality
+<<<<<<< .merge_file_8aAK5K
 <<<<<<< HEAD
 =======
 =======
@@ -50,6 +58,8 @@ The system utilizes three main database connections:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_5SL3RJ
   - `question_charts` - Custom chart configurations for survey data
   - `charts` - Chart visualization settings
   - `contacts` - Participant contact and communication tracking
@@ -125,6 +135,7 @@ The system utilizes three main database connections:
 
 ## Integration Points
 
+<<<<<<< .merge_file_8aAK5K
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### Quaeris-Specific Features
@@ -138,6 +149,9 @@ The system utilizes three main database connections:
 =======
 ### healthcare_app-Specific Features
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+### Quaeris-Specific Features
+>>>>>>> .merge_file_5SL3RJ
 - Links Limesurvey data to `survey_pdfs` table via survey_id mapping
 - Custom chart configurations in `question_charts` table
 - Participant tracking through `contacts` table

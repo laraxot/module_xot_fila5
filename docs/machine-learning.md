@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_wGZyuy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fErBji
 ---
 title: 'machine_learning'
 module: Xot
@@ -27,6 +30,7 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/machine_learning.txt -->
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Qtxqk9
@@ -39,6 +43,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 ----------------------------------------
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
@@ -56,6 +62,7 @@ https://pii-tools.com/detect-person-names-in-text/
 
 https://github.com/angeloskath/php-nlp-tools
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,6 +83,8 @@ https://github.com/angeloskath/php-nlp-tools
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 http://php-nlp-tools.com/documentation/
 
 ----------- PER RICERCA -------
@@ -84,6 +93,7 @@ https://www.php.net/manual/en/function.metaphone.php
 
 https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-name-in-Latin-text.html
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -104,6 +114,8 @@ https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-nam
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 https://www.we-rc.com/blog/2021/04/04/named-entity-recognition-in-php
 
 https://rubixml.com/
@@ -112,6 +124,7 @@ https://github.com/wamania/php-stemmer#languages
 
 https://www.youtube.com/watch?v=06-AZXmwHjo
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -132,6 +145,8 @@ https://www.youtube.com/watch?v=06-AZXmwHjo
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 https://stackoverflow.com/questions/4304938/how-to-recognize-names-from-a-text-using-php +++
 http://www.complexityintelligence.com/en/knowledgebase/api/nlp_ner_v1/snippet_php
 http://www.alchemyapi.com/tools/
@@ -139,6 +154,7 @@ http://www.opencalais.com/applications/opencalais-and-php-code
 https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -160,6 +176,8 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP
@@ -193,6 +211,7 @@ https://cloudmersive.medium.com/perform-named-entity-recognition-using-nlp-in-ph
 LUCENE
 https://github.com/nqxcode/laravel-lucene-search
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,12 +232,15 @@ https://github.com/nqxcode/laravel-lucene-search
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 -----------------------------------------------------------------------------------------------------------------------
 
 https://www.textrazor.com/demo
 
 --------------------------------------------------------------------------------------------------------------------------
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -239,6 +261,8 @@ https://www.textrazor.com/demo
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 TIPO PERSON OF INTEREST
 https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606
 
@@ -246,6 +270,7 @@ https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f6
 CON LIBRERIA Stanford
 https://github.com/yooper/php-text-analysis  !!!!!
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -266,6 +291,8 @@ https://github.com/yooper/php-text-analysis  !!!!!
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 -----------------------------------------
 https://github.com/DaveChild/Text-Statistics
 
@@ -274,6 +301,7 @@ https://github.com/DaveChild/Best-websites-a-programmer-should-visit  !!
 
 https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Namespaces/IndicesNamespace.php   ????
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -294,10 +322,13 @@ https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Names
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 ------------------------------------------------
 
 https://github.com/patrickschur/language-detection
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -318,12 +349,15 @@ https://github.com/patrickschur/language-detection
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 ----------------------------------------------------
 https://www.sitepoint.com/how-to-analyze-tweet-sentiments-with-php-machine-learning/   !!!!!!!!!!!!!!!!!!!!!
 https://github.com/php-ai/php-ml
 
 ---------------------------------------------------
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -338,12 +372,15 @@ https://github.com/php-ai/php-ml
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fErBji
 https://cloud.google.com/natural-language/docs/analyzing-sentiment
 
 https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ----------------------------------------------------------
 
+<<<<<<< .merge_file_qVwRDU
 <<<<<<< HEAD
 <<<<<<< HEAD
 https://accidentalfactors.com/part-of-speech-tagging/
@@ -369,3 +406,6 @@ https://accidentalfactors.com/part-of-speech-tagging/
 =======
 https://accidentalfactors.com/part-of-speech-tagging/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+https://accidentalfactors.com/part-of-speech-tagging/
+>>>>>>> .merge_file_fErBji

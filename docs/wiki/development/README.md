@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_1grkXS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,6 +43,8 @@
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AmTfBI
 ---
 title: "Readme"
 type: reference
@@ -49,6 +52,7 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< .merge_file_1grkXS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,6 +84,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AmTfBI
 
 # Sviluppo
 
@@ -95,6 +101,7 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 ## Note
 
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
+<<<<<<< .merge_file_1grkXS
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -306,6 +313,9 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_AmTfBI
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -356,6 +366,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../Dental/docs/README.md)
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
+<<<<<<< .merge_file_1grkXS
 <<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
 =======
@@ -389,6 +400,8 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AmTfBI
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -415,6 +428,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< .merge_file_1grkXS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -512,3 +526,5 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AmTfBI

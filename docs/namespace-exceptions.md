@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_Xf0Afj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_dCWSPc
 # Exception Namespace Structure
 
 ## Directory Structure
@@ -48,6 +51,7 @@ This is often caused by namespace mismatches between the exception handler class
 ### Namespace Mismatch
 
 Ensure that the namespace in the file matches the actual directory structure. For example, a file in `Modules/Xot/app/Exceptions/Handlers/` should have the namespace `Modules\Xot\App\Exceptions\Handlers`.
+<<<<<<< .merge_file_Xf0Afj
 <<<<<<< HEAD
 =======
 =======
@@ -66,3 +70,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/namespace-ex
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/namespace-exceptions.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dCWSPc

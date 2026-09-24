@@ -82,6 +82,7 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 **Status**: ✅ **VERIFICA COMPLETATA**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_fZAlmv
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,3 +94,5 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4ml5qh

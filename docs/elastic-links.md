@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_tT6qlW
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ http://127.0.0.1:9200/_cat/health?v=true
 =======
 >>>>>>> .merge_file_e51nKA
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Vyn3K2
 ---
 title: 'Elastic links — risorse esterne'
 module: Xot
@@ -33,6 +36,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <http://127.0.0.1:9200/_cat/health?v=true>
+<<<<<<< .merge_file_tT6qlW
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_i9oQOR
@@ -48,3 +52,5 @@ http://127.0.0.1:9200/_cat/health?v=true
 =======
 http://127.0.0.1:9200/_cat/health?v=true
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Vyn3K2

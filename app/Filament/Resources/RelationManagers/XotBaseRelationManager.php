@@ -42,12 +42,12 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     }
 
     /**
+<<<<<<< .merge_file_n4lOR3
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  array<string, bool|float|int|string|null>  $params
 =======
-     * @param array<string, bool|float|int|string|null> $params
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_Gs168C
+     * @param  array<string, bool|float|int|string|null>  $params
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -90,14 +90,16 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     protected static function getResourceClass(): string
     {
-<<<<<<< HEAD
         if (isset(static::$resource) && static::$resource !== '') {
+<<<<<<< .merge_file_n4lOR3
 =======
         if (isset(static::$resource) && '' !== static::$resource) {
 >>>>>>> laraxot/dev
 =======
         if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Gs168C
             return static::$resource;
         }
 
@@ -116,6 +118,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         Assert::true(class_exists($resource), 'Resource class does not exist: '.$resource);
         Assert::true(is_subclass_of($resource, XotBaseResource::class), 'Resource must extend XotBaseResource: '.$resource);
 
+<<<<<<< .merge_file_n4lOR3
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var class-string<XotBaseResource> $resource */
@@ -125,6 +128,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 =======
         /* @var class-string<XotBaseResource> $resource */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        /** @var class-string<XotBaseResource> $resource */
+>>>>>>> .merge_file_Gs168C
         static::$resource = $resource;
 
         return static::$resource;
@@ -159,11 +165,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $instance = app($class);
         Assert::isInstanceOf($instance, XotBaseResourceForm::class);
 
-<<<<<<< HEAD
         /** @var XotBaseResourceForm $instance */
-=======
-        /* @var XotBaseResourceForm $instance */
->>>>>>> laraxot/dev
         return $instance->getFormSchema();
 =======
         return $this->getResource()::getFormSchema();
@@ -248,6 +250,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
+<<<<<<< .merge_file_n4lOR3
 <<<<<<< HEAD
 <<<<<<< HEAD
                 if ($record === null) {
@@ -257,6 +260,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 =======
                 if (null === $record) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                if ($record === null) {
+>>>>>>> .merge_file_Gs168C
                     return false;
                 }
 
@@ -266,6 +272,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
+<<<<<<< .merge_file_n4lOR3
 <<<<<<< HEAD
 <<<<<<< HEAD
                 if ($record === null) {
@@ -275,6 +282,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 =======
                 if (null === $record) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                if ($record === null) {
+>>>>>>> .merge_file_Gs168C
                     return false;
                 }
 
@@ -344,6 +354,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
+<<<<<<< .merge_file_n4lOR3
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function canDeleteBulk(Model|stdClass|null $record): bool
@@ -359,6 +370,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         if ($record instanceof \stdClass) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function canDeleteBulk(Model|stdClass|null $record): bool
+    {
+        if ($record instanceof stdClass) {
+>>>>>>> .merge_file_Gs168C
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -369,6 +385,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
+<<<<<<< .merge_file_n4lOR3
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function canDetachBulk(Model|stdClass|null $record): bool
@@ -384,6 +401,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         if ($record instanceof \stdClass) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function canDetachBulk(Model|stdClass|null $record): bool
+    {
+        if ($record instanceof stdClass) {
+>>>>>>> .merge_file_Gs168C
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }

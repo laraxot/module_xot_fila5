@@ -18,6 +18,7 @@ namespace Modules\Xot\Actions\Filament;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_QzuIA5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -30,10 +31,13 @@ use function Safe\file;
 use function Safe\file;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YqZJ1N
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_QzuIA5
 <<<<<<< HEAD
 <<<<<<< HEAD
 use function Safe\file;
@@ -42,6 +46,10 @@ use function Safe\file;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use function Safe\file;
+
+>>>>>>> .merge_file_YqZJ1N
 class GenerateFormByFileAction
 {
     use QueueableAction;
@@ -49,6 +57,7 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
+<<<<<<< .merge_file_QzuIA5
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  File  $file  Il file della risorsa Filament
@@ -60,6 +69,9 @@ class GenerateFormByFileAction
      * @param File $file Il file della risorsa Filament
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  File  $file  Il file della risorsa Filament
+>>>>>>> .merge_file_YqZJ1N
      * @return int Numero di input aggiunti
      */
     public function execute(File $file): int
@@ -133,6 +145,7 @@ class GenerateFormByFileAction
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
+<<<<<<< .merge_file_QzuIA5
 <<<<<<< HEAD
 <<<<<<< HEAD
                 $inputCount++;
@@ -142,6 +155,9 @@ class GenerateFormByFileAction
 =======
                 ++$inputCount;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                $inputCount++;
+>>>>>>> .merge_file_YqZJ1N
             }
         }
 
@@ -151,6 +167,7 @@ class GenerateFormByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
+<<<<<<< .merge_file_QzuIA5
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  File  $file  Il file da analizzare
@@ -160,6 +177,9 @@ class GenerateFormByFileAction
 =======
      * @param File $file Il file da analizzare
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  File  $file  Il file da analizzare
+>>>>>>> .merge_file_YqZJ1N
      */
     public function ddFile(File $file): void
     {

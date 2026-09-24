@@ -1,9 +1,12 @@
+<<<<<<< .merge_file_cYFklE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_SwYNIw
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_lUHncy
 ---
 title: "Skill: Troubleshooting Filament Edit Forms in XotBaseManageRelatedRecords"
 module: "Xot"
@@ -15,6 +18,7 @@ qmd: "troubleshooting filament edit forms"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_cYFklE
 <<<<<<< HEAD
 =======
 =======
@@ -24,6 +28,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lUHncy
 # Skill: Troubleshooting Filament Edit Forms in XotBaseManageRelatedRecords
 
 ## Contesto del Problema

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_7QeGdo
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1086,18 +1087,14 @@ public function getTableFilters(): array
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> .merge_file_OOY5pG
 ---
 module: Xot
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-<<<<<<< HEAD
-canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
----
-=======
 canonical: ../../../Themes/One/docs/shared-components/metodi-duplicati-analisi.md
 ---
->>>>>>> .merge_file_1oX7DR
->>>>>>> laraxot/dev
 
 # Metodi Duplicati — Analisi Xot
 
@@ -1564,28 +1561,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Xot
 
-<<<<<<< HEAD
 **File in Xot:**
-=======
-<<<<<<< .merge_file_TUJTQH
-**Domande?** Chiedi alla Super Mucca! 🐄⚡
-=======
-=======
->>>>>>> laraxot/dev
----
-module: Xot
-topic: METODI_DUPLICATI_ANALISI
-tags: [metodi-duplicati, refactoring]
-<<<<<<< HEAD
-canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-=======
-canonical: ../../../Themes/One/docs/shared-components/metodi-duplicati-analisi.md
->>>>>>> laraxot/dev
----
-=======
-**File in Xot:**
->>>>>>> .merge_file_1oX7DR
->>>>>>> laraxot/dev
 
 - `./laravel/Modules/Xot/app/Filament/Pages/XotBasePage.php`
 - `./laravel/Modules/Xot/app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
@@ -4394,6 +4370,7 @@ canonical: ../../../Themes/One/docs/shared-components/metodi-duplicati-analisi.m
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+<<<<<<< .merge_file_7QeGdo
 <<<<<<< HEAD
 =======
 =======
@@ -5486,3 +5463,5 @@ _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report
 =======
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_OOY5pG

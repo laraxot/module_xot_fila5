@@ -1,6 +1,7 @@
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19
+<<<<<<< .merge_file_KYazRV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PyEr6e
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**
 
@@ -66,15 +69,19 @@
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Categorie multilingua
 
+<<<<<<< .merge_file_KYazRV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PyEr6e
 4. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
    - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< .merge_file_KYazRV
 <<<<<<< HEAD
 =======
 =======
@@ -89,6 +96,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PyEr6e
 
 5. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/EditPageContent.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
@@ -105,15 +114,19 @@
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Modifica categorie multilingua
 
+<<<<<<< .merge_file_KYazRV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PyEr6e
 8. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< .merge_file_KYazRV
 <<<<<<< HEAD
 =======
 =======
@@ -128,6 +141,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PyEr6e
 
 9. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/ViewPageContent.php`**
    - **Prima**: `extends ViewRecord` + `use ViewRecord\Concerns\Translatable`
@@ -303,6 +318,7 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 
 ## Correzioni Implementate (Data: 2024)
 
+<<<<<<< .merge_file_KYazRV
 <<<<<<< HEAD
 <<<<<<< HEAD
 // ... existing code ...
@@ -316,3 +332,6 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 =======
 // ... existing code ...
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// ... existing code ...
+>>>>>>> .merge_file_PyEr6e

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_g4AAWI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@ declare(strict_types=1);
 /** @var \ReflectionClass $reflection */
 /** @var array<string, string> $properties */
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8A9h3v
 ?>
 namespace Database\Factories;
 
@@ -28,8 +31,11 @@ use {{ $reflection->getName() }};
 
 class {{ $reflection->getShortName() }}Factory extends Factory
 {
+<<<<<<< .merge_file_g4AAWI
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_8A9h3v
 /**
 * The name of the factory's corresponding model.
 *
@@ -50,6 +56,7 @@ return [
 @endforeach
 ];
 }
+<<<<<<< .merge_file_g4AAWI
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -77,4 +84,6 @@ return [
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8A9h3v
 }

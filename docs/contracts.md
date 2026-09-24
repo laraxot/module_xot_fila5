@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_L6EzmZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_x0G0Ey
 # Contratti del Modulo Xot
 
 ## Descrizione
@@ -16,6 +19,7 @@ Il modulo Xot definisce vari contratti (interfacce) che standardizzano il compor
 ### Scopo
 Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenticazione, autorizzazione, ruoli, permessi e media.
 
+<<<<<<< .merge_file_L6EzmZ
 <<<<<<< HEAD
 =======
 =======
@@ -23,6 +27,8 @@ Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenti
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_x0G0Ey
 ### Problema Critico Identificato (2025-01-06)
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
@@ -104,6 +110,7 @@ Contratto per modelli che hanno profili.
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< .merge_file_L6EzmZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -131,3 +138,5 @@ public function whereHas($relation, Closure $callback = null, $operator = '>=', 
 =======
  public function getModel()
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_x0G0Ey

@@ -16,8 +16,8 @@ final class XotCovRelationHost extends CacheModel
 
     public function guessPivot(string $related, ?string $class = null): Pivot
     {
-<<<<<<< HEAD
         return new XotCovPivot;
+<<<<<<< .merge_file_WiR6be
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_geJ3BZ
@@ -34,10 +34,13 @@ final class XotCovRelationHost extends CacheModel
         return new XotCovPivot();
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KTKH4o
     }
 
     public function guessMorphPivot(string $related, ?string $_class = null): MorphPivot
     {
+<<<<<<< .merge_file_WiR6be
 <<<<<<< HEAD
         return new XotCovMorphPivot;
 =======
@@ -56,5 +59,8 @@ final class XotCovRelationHost extends CacheModel
         return new XotCovMorphPivot();
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return new XotCovMorphPivot;
+>>>>>>> .merge_file_KTKH4o
     }
 }

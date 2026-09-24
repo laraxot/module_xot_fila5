@@ -129,6 +129,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Gestione errori e logging**: loggare i casi di fallback e le eccezioni non bloccanti.
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
+<<<<<<< .merge_file_Mx92nu
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
@@ -146,6 +147,9 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 =======
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
+>>>>>>> .merge_file_eBGG7t
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -177,6 +181,7 @@ public function boot(): void
 
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
+<<<<<<< .merge_file_Mx92nu
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Registrazione icone Blade](registerbladeicons.md)
@@ -194,6 +199,9 @@ public function boot(): void
 =======
 - [Registrazione icone Blade](./registerBladeIcons.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Registrazione icone Blade](registerbladeicons.md)
+>>>>>>> .merge_file_eBGG7t
 
 ## Gestione dei Path delle Traduzioni
 
@@ -227,6 +235,7 @@ $this->loadTranslationsFrom($langPath, $this->nameLower);
 Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
+<<<<<<< .merge_file_Mx92nu
 <<<<<<< HEAD
 <<<<<<< HEAD
 Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
@@ -244,6 +253,9 @@ Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione cent
 =======
 Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
+>>>>>>> .merge_file_eBGG7t
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 

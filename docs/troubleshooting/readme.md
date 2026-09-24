@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_Q18dKW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_q6n68T
 # Troubleshooting Guide
 
 ## Common Issues
@@ -63,6 +66,7 @@
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< .merge_file_Q18dKW
 <<<<<<< HEAD
 =======
 =======
@@ -80,3 +84,5 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README.md
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_q6n68T

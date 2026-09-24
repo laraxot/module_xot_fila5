@@ -11,6 +11,7 @@ class ColumnData extends Data
     public function __construct(
         public string $name,
         public string $type,
+<<<<<<< .merge_file_qCJe4g
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -22,4 +23,7 @@ class ColumnData extends Data
     ) {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_cznsDX
 }

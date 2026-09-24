@@ -38,6 +38,7 @@ In caso di errore durante l'applicazione dei metatag:
 - L'applicazione continua a funzionare
 
 ## Collegamenti
+<<<<<<< .merge_file_GYbdNv
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [MetatagData](metatagdata.md)
@@ -51,6 +52,9 @@ In caso di errore durante l'applicazione dei metatag:
 =======
 - [MetatagData](../datas/MetatagData.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [MetatagData](metatagdata.md)
+>>>>>>> .merge_file_kuNZTJ
 - [MetatagData](../datas/metatagdata.md)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
 

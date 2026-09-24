@@ -1,6 +1,7 @@
 # Creazione Classi Base Forms Components - 2025-12-23
 
 **Data**: 2025-12-23
+<<<<<<< .merge_file_JXawn5
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@
 # Creazione Classi Base Forms Components - [DATE]
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_VaZ2If
 **Obiettivo**: Creare classi base XotBase per Forms Components core seguendo la regola fondamentale
 
 ## ⚠️ Problema Identificato
@@ -177,6 +180,7 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 
 **Stato**: ✅ Classi base create e componenti refactorizzati
 **Data Creazione**: 2025-12-23
+<<<<<<< .merge_file_JXawn5
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Conformità**: ✅ Regola fondamentale rispettata
@@ -192,3 +196,6 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 **Data Creazione**: [DATE]
 **Conformità**: ✅ Regola fondamentale rispettata
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Conformità**: ✅ Regola fondamentale rispettata
+>>>>>>> .merge_file_VaZ2If

@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_pheaCn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wXYpCK
 ---
 title: "Laraxot Architectural Memories 02"
 type: concept
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [laraxot-architectural-memories-02.md](./laraxot-architectural-memories-02.md)
+<<<<<<< .merge_file_pheaCn
 <<<<<<< HEAD
 =======
 =======
@@ -82,3 +86,5 @@ If CDP connection fails, use `curl -s http://127.0.0.1:8000/{path} | grep -A 100
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wXYpCK

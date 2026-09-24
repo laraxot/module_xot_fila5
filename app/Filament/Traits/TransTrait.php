@@ -19,6 +19,7 @@ trait TransTrait
     /**
      * Get translation for a given key.
      *
+<<<<<<< .merge_file_R5rj76
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $params
@@ -28,6 +29,9 @@ trait TransTrait
 =======
      * @param array<string, bool|float|int|string|null> $params
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, bool|float|int|string|null>  $params
+>>>>>>> .merge_file_c2BxCA
      *
      * @throws \Exception Se exceptionIfNotExist è true e la traduzione non esiste
      */
@@ -109,12 +113,16 @@ trait TransTrait
      * Ottiene la chiave di traduzione per un dato key.
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
+<<<<<<< .merge_file_R5rj76
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_c2BxCA
      * @param  string  $key  La chiave di traduzione specifica
      * @param  array<string, bool|float|int|string|null>  $replace  Parametri di sostituzione per la traduzione
      * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
      * @param  bool  $useFallback  Se true, utilizza la chiave come fallback se la traduzione non esiste
+<<<<<<< .merge_file_R5rj76
 =======
      * @param string                                    $key         La chiave di traduzione specifica
      * @param array<string, bool|float|int|string|null> $replace     Parametri di sostituzione per la traduzione
@@ -129,6 +137,8 @@ trait TransTrait
      * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_c2BxCA
      * @return string La stringa tradotta o la chiave originale se non trovata
      */
     public static function getTranslatedString(
@@ -164,12 +174,16 @@ trait TransTrait
      * Ottiene la chiave di traduzione per un dato key (alias per getTranslatedString).
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
+<<<<<<< .merge_file_R5rj76
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_c2BxCA
      * @param  string  $key  La chiave di traduzione specifica
      * @param  array<string, bool|float|int|string|null>  $replace  Parametri di sostituzione per la traduzione
      * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
      * @param  bool  $useFallback  Se true, utilizza la chiave come fallback se la traduzione non esiste
+<<<<<<< .merge_file_R5rj76
 =======
      * @param string                                    $key         La chiave di traduzione specifica
      * @param array<string, bool|float|int|string|null> $replace     Parametri di sostituzione per la traduzione
@@ -184,6 +198,8 @@ trait TransTrait
      * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_c2BxCA
      * @return string La stringa tradotta o la chiave originale se non trovata
      */
     public static function transOLD(
@@ -206,6 +222,7 @@ trait TransTrait
         $namespace = static::class;
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
+<<<<<<< .merge_file_R5rj76
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($moduleName === '') {
@@ -215,6 +232,9 @@ trait TransTrait
 =======
         if ('' === $moduleName) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($moduleName === '') {
+>>>>>>> .merge_file_c2BxCA
             throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 
@@ -224,6 +244,7 @@ trait TransTrait
     /**
      * Get a translation according to an integer value.
      *
+<<<<<<< .merge_file_R5rj76
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $replace
@@ -233,6 +254,9 @@ trait TransTrait
 =======
      * @param array<string, bool|float|int|string|null> $replace
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, bool|float|int|string|null>  $replace
+>>>>>>> .merge_file_c2BxCA
      */
     protected function transChoice(string $key, int $number, array $replace = []): string
     {

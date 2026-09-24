@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_2yljTS
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OSkYYO
 # 25e-cms — Rimuovere getFormSchema da MenuResource
 
 **Modulo:** Cms

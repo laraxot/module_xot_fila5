@@ -270,6 +270,7 @@ Per migrare le rotte esistenti:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< .merge_file_8BYeal
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -288,6 +289,8 @@ Per migrare le rotte esistenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vhlu90
 - [Architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md)
 - [Documentazione Generale](./documentation.md)
@@ -298,6 +301,7 @@ Per migrare le rotte esistenti:
 ## Collegamenti tra versioni di routing.md
 * [routing.md](../../../../docs/routing.md)
 * [routing.md](../../Cms/docs/frontoffice/routing.md)
+<<<<<<< .merge_file_8BYeal
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -315,3 +319,5 @@ Per migrare le rotte esistenti:
 * [routing.md](../../../../../docs/routing.md)
 * [routing.md](../../cms/docs/frontoffice/routing.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vhlu90

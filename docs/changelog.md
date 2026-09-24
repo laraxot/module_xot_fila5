@@ -1,5 +1,6 @@
 # Changelog - Modulo Xot
 
+<<<<<<< .merge_file_7EyLkr
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## [2025-06-04] - Sessione Fix Critica
@@ -23,6 +24,9 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+## [2025-06-04] - Sessione Fix Critica
+>>>>>>> .merge_file_flfMlB
 
 All notable changes to `:package_name` will be documented in this file.
 
@@ -82,6 +86,7 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## [1.1.0] - 2025-10-29
 
+<<<<<<< .merge_file_7EyLkr
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -102,6 +107,8 @@ All notable changes to `:package_name` will be documented in this file.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_flfMlB
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -165,6 +172,7 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## [1.1.0] - 2025-10-29
 
+<<<<<<< .merge_file_7EyLkr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -176,6 +184,8 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 >>>>>>> 64619e34 (.)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_flfMlB
 ### Fixed
 - **HasXotTable.php** - Risolti if statement duplicati (3x)
 - **XotBaseChartWidget.php** - Rimossi metodi getHeading() duplicati
@@ -238,6 +248,7 @@ All notable changes to `:package_name` will be documented in this file.
 ## 🔗 Collegamenti
 
 ### Documenti Correlati
+<<<<<<< .merge_file_7EyLkr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -250,10 +261,13 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_flfMlB
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+<<<<<<< .merge_file_7EyLkr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -273,10 +287,13 @@ All notable changes to `:package_name` will be documented in this file.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_flfMlB
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+<<<<<<< .merge_file_7EyLkr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -288,6 +305,8 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_flfMlB
 
 ### Repository
 - **Branch:** develop
@@ -299,6 +318,7 @@ All notable changes to `:package_name` will be documented in this file.
 
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
+<<<<<<< .merge_file_7EyLkr
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
@@ -314,13 +334,16 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
 =======
-**Versioning:** [Semantic Versioning](https://semver.org/)
->>>>>>> 64619e34 (.)
 =======
+>>>>>>> .merge_file_flfMlB
 **Versioning:** [Semantic Versioning](https://semver.org/)
+**Versioning:** [Semantic Versioning](https://semver.org/)
+<<<<<<< .merge_file_7EyLkr
 >>>>>>> 61938ca4 (delete .claude-audit/)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_flfMlB

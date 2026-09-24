@@ -63,6 +63,4 @@ describe('ExportXlsxAction — export nativo generico su getXlsFields', function
     });
 });
 
-class ExporterStub extends XotBaseExporter
-{
-}
+class ExporterStub extends XotBaseExporter {}

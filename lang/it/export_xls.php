@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_YP8XmC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@ return [
             'tooltip' => 'Esporta i dati in formato Excel (.xlsx]',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_znL9b7
     'label' => 'Esporta Excel',
     'plural_label' => 'Esporta Excel',
     'icon' => 'xot-files.xls',
@@ -23,9 +26,12 @@ return [
             'label' => 'Esporta Excel',
             'icon' => 'xot-files.xls',
             'tooltip' => 'Esporta i dati in formato Excel (.xlsx)',
+<<<<<<< .merge_file_YP8XmC
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_znL9b7
             'placeholder' => 'Esporta in Excel',
             'help' => 'Scarica i dati correnti in formato Excel per analisi offline',
             'description' => 'Azione per esportare i dati in formato Excel',
@@ -44,6 +50,7 @@ return [
             ],
         ],
     ],
+<<<<<<< .merge_file_YP8XmC
 <<<<<<< HEAD
 <<<<<<< HEAD
     'label' => 'Export Xls',
@@ -58,12 +65,17 @@ return [
     'plural_label' => 'Export Xls (Plurale)',
     'navigation' => [
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    'navigation' => [
+        'label' => 'Export Xls',
+>>>>>>> .merge_file_znL9b7
         'name' => 'Export Xls',
         'plural' => 'Export Xls',
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
         ],
+<<<<<<< .merge_file_YP8XmC
 <<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Export Xls',
@@ -78,6 +90,10 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        'sort' => 1,
+        'icon' => 'xot-files.xls',
+>>>>>>> .merge_file_znL9b7
     ],
     'fields' => [
         'id' => [

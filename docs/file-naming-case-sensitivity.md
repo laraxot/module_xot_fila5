@@ -51,6 +51,7 @@ userfactory.php              → ELIMINA
 - `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md` - Uppercase per visibilità
 
 ## 🗑️ Cleanup Effettuato (2025-11-04)
+<<<<<<< .merge_file_rvp0QA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -62,6 +63,8 @@ userfactory.php              → ELIMINA
 =======
 ## 🗑️ Cleanup Effettuato ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lxgmIZ
 
 ### Modulo Xot (6 file)
 ```bash
@@ -81,6 +84,7 @@ userfactory.php              → ELIMINA
 ✗ database/Migrations/
 ```
 
+<<<<<<< .merge_file_rvp0QA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -98,6 +102,8 @@ userfactory.php              → ELIMINA
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lxgmIZ
 ### Modulo Media (1 file)
 ```bash
 ✗ tests/Filament/Resources/mediaconvertresourcetest.php
@@ -274,6 +280,7 @@ EOF
 Ogni modulo interessato ha documentazione dettagliata:
 
 - [Xot Module](./case-sensitivity-rules.md)
+<<<<<<< .merge_file_rvp0QA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -293,6 +300,8 @@ Ogni modulo interessato ha documentazione dettagliata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lxgmIZ
 - [Gdpr Module](../../Gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../Lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../Media/docs/case-sensitivity-rules.md)
@@ -358,6 +367,7 @@ python3 /path/to/check_duplicates.py
 - [Modulo Xot Architecture](./architecture.md)
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
+<<<<<<< .merge_file_rvp0QA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -369,6 +379,8 @@ python3 /path/to/check_duplicates.py
 =======
 - [CLAUDE.md - Project Guidelines](claude.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_lxgmIZ
 
 ## 🎯 Conclusioni
 
@@ -395,6 +407,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 ---
 
 **Ultimo aggiornamento**: 2025-11-04
+<<<<<<< .merge_file_rvp0QA
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status**: ✅ Cleanup completato, enforcement attivo
@@ -414,3 +427,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Status**: ✅ Cleanup completato, enforcement attivo
+**Revisione**: Trimestrale (ogni 3 mesi)
+>>>>>>> .merge_file_lxgmIZ

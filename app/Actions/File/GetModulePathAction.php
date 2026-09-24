@@ -7,12 +7,16 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
+<<<<<<< .merge_file_B4KzA8
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_n1IzXT
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\scandir;
 
+<<<<<<< .merge_file_B4KzA8
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -25,6 +29,8 @@ use Spatie\QueueableAction\QueueableAction;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_n1IzXT
 class GetModulePathAction
 {
     use QueueableAction;
@@ -32,6 +38,7 @@ class GetModulePathAction
     /**
      * Ottiene il percorso di un modulo.
      *
+<<<<<<< .merge_file_B4KzA8
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $moduleName  Il nome del modulo
@@ -43,6 +50,9 @@ class GetModulePathAction
      * @param string $moduleName Il nome del modulo
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  string  $moduleName  Il nome del modulo
+>>>>>>> .merge_file_n1IzXT
      * @return string Il percorso completo del modulo
      */
     public function execute(string $moduleName): string

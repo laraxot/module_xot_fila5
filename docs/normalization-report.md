@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_yJfVkY
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,11 +25,15 @@
 
 ## Data: Gennaio 2025
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+# Report Normalizzazione Documentazione - Gennaio 2025
+>>>>>>> .merge_file_ChonCG
 
 ## Azioni Completate
 
 ### File Eliminati (Duplicati con Date)
 
+<<<<<<< .merge_file_yJfVkY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -46,6 +51,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ChonCG
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
@@ -57,6 +64,7 @@
 ### File Rinominati (Rimozione Date)
 
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
+<<<<<<< .merge_file_yJfVkY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -68,6 +76,8 @@
 =======
 1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ChonCG
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -118,6 +128,7 @@
 - Altri file con pattern `bugfix-*-2025-*.md`
 
 ### Modulo Lang
+<<<<<<< .merge_file_yJfVkY
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
@@ -135,6 +146,10 @@
 - `riepilogo-correzioni-traduzioni.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction.md` (verificare duplicati)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
+- `translation-errors-correction-2025.md` (verificare duplicati)
+>>>>>>> .merge_file_ChonCG
 
 ### Modulo Xot
 - File in cartella `archive/` (valutare se mantenere date per storico)
@@ -173,6 +188,7 @@
 - [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
+<<<<<<< .merge_file_yJfVkY
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -204,31 +220,27 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ChonCG
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
 
 ---
 
+<<<<<<< .merge_file_yJfVkY
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_ChonCG
 **Data**: Gennaio 2025
 **Stato**: In corso
-<<<<<<< .merge_file_cWKM6I
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_jsmDVA
 **Prossima Revisione**: Dopo normalizzazione batch successivo
-=======
-**Stato**: In corso
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-**Prossima Revisione**: Dopo normalizzazione batch successivo
+<<<<<<< .merge_file_yJfVkY
 >>>>>>> laraxot/dev
 =======
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ChonCG

@@ -8,18 +8,17 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+<<<<<<< .merge_file_cldoLI
 <<<<<<< HEAD
 <<<<<<< HEAD
-use Nwidart\Modules\Module;
 =======
-<<<<<<< .merge_file_GNpg2u
+>>>>>>> .merge_file_uSdLuQ
 use Nwidart\Modules\Module;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_cldoLI
 <<<<<<< HEAD
 =======
 =======
@@ -44,6 +43,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uSdLuQ
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -77,6 +78,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             $this->configureQueryLogging();
         }
 
+<<<<<<< .merge_file_cldoLI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -94,6 +96,8 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uSdLuQ
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -164,6 +168,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
+<<<<<<< .merge_file_cldoLI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -185,6 +190,8 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uSdLuQ
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

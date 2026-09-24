@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Translators;
 
-<<<<<<< HEAD
 class DeepL extends BaseTranslator {}
+<<<<<<< .merge_file_syQD7a
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_FQ6KXy
@@ -27,3 +27,5 @@ class DeepL extends BaseTranslator
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6gt3P9

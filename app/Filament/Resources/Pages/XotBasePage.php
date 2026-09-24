@@ -21,6 +21,7 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * This class provides common functionality for custom pages,
  * following the architectural pattern of never extending Filament classes directly.
  *
+<<<<<<< .merge_file_V23J6G
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property ?string $model
@@ -36,6 +37,11 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * @property array<string, mixed> $data
  * @property Schema               $form
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property ?string $model
+ * @property array<string, mixed> $data
+ * @property Schema $form
+>>>>>>> .merge_file_lx7Fp3
  */
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
@@ -62,6 +68,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
+<<<<<<< .merge_file_V23J6G
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($this->view !== 'filament-panels::pages.page') {
@@ -71,6 +78,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
         if ('filament-panels::pages.page' !== $this->view) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($this->view !== 'filament-panels::pages.page') {
+>>>>>>> .merge_file_lx7Fp3
             return $this->view;
         }
 
@@ -174,6 +184,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getModel(): string
     {
+<<<<<<< .merge_file_V23J6G
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (static::$model === null) {
@@ -183,6 +194,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
         if (null === static::$model) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (static::$model === null) {
+>>>>>>> .merge_file_lx7Fp3
             throw new \LogicException('Model class not set for page: '.static::class);
         }
 

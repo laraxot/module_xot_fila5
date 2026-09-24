@@ -7,24 +7,19 @@ This document outlines best practices for writing and maintaining Pest tests und
 When using Mockery to mock dependencies in Pest tests, PHPStan might fail to resolve methods like `with()`, `andReturn()`, `andThrow()`, or `andReturnUsing()` called on `shouldReceive()`. This happens because Mockery returns a union type `ExpectationInterface|HigherOrderMessage` where these methods are not defined on all union members.
 
 ### Recommended Solution
+<<<<<<< .merge_file_nGkvZQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bUV18H
 
 Assign the result of `shouldReceive()` to a variable annotated with `/** @var \Mockery\Expectation $expectation */`.
 
 #### Example
 
-<<<<<<< HEAD
-=======
-=======
-Assign the result of `shouldReceive()` to a variable annotated with `/** @var \Mockery\Expectation $expectation */`.
-
-#### Example
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```php
 /** @var \Mockery\MockInterface&MyAction $mock */
 $mock = \Mockery::mock(MyAction::class);
@@ -33,10 +28,6 @@ $mock = \Mockery::mock(MyAction::class);
 $expectation = $mock->shouldReceive('execute');
 $expectation->with($param)->andReturn($result);
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 
 This pattern ensures PHPStan successfully validates the chain at Level 10.
 
@@ -75,6 +66,7 @@ $expectation->with($param)->andReturn($result);
 ```
 <<<<<<< HEAD
 This pattern ensures PHPStan successfully validates the chain at Level 10.
+<<<<<<< .merge_file_nGkvZQ
 <<<<<<< HEAD
 =======
 =======
@@ -84,3 +76,5 @@ This pattern ensures PHPStan successfully validates the chain at Level 10.
 =======
 This pattern ensures PHPStan successfully validates the chain at Level 10.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bUV18H

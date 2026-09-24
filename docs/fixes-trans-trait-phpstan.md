@@ -1,6 +1,7 @@
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27
+<<<<<<< .merge_file_hCiz7h
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_BOBMep
 
 ## Problema Identificato
 
@@ -126,6 +129,7 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 
 - Utilizzare sempre tipizzazione completa per array nei PHPDoc
 - Verificare che i metodi di traduzione restituiscano sempre string
+<<<<<<< .merge_file_hCiz7h
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
@@ -139,3 +143,6 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 =======
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
+>>>>>>> .merge_file_BOBMep

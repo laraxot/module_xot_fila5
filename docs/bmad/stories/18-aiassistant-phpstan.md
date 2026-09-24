@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_LCOhqj
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_w4tN8A
 # BMAD Story 18 — AiAssistant: 10 errori PHPStan
 
 **Modulo:** `AiAssistant`

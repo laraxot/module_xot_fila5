@@ -612,6 +612,7 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
@@ -637,6 +638,10 @@ class AlertWidget extends BaseTableWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_FqsCWe
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -716,6 +721,7 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
+<<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
 // QuaerisService.php
@@ -736,6 +742,10 @@ class ModuloEsempioService
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> .merge_file_FqsCWe
 {
     use SingletonTrait;
 
@@ -1208,6 +1218,7 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
+<<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
 // QuaerisService.php
@@ -1228,6 +1239,10 @@ class ModuloEsempioService
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> .merge_file_FqsCWe
 {
     use SingletonTrait;
 
@@ -1295,6 +1310,7 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
@@ -1320,6 +1336,10 @@ class AlertWidget extends BaseTableWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_FqsCWe
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1327,6 +1347,7 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
+<<<<<<< .merge_file_T6ZylB
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Benefici**: ALTI
@@ -1340,3 +1361,6 @@ class AlertWidget extends BaseTableWidget
 =======
 **Benefici**: ALTI
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Benefici**: ALTI
+>>>>>>> .merge_file_FqsCWe

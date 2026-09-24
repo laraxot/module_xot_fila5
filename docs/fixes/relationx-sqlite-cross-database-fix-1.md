@@ -74,6 +74,7 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
+<<<<<<< .merge_file_0YV6w0
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
@@ -87,6 +88,9 @@ echo $tenants->count(); // ✅ Output: 1
 =======
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+>>>>>>> .merge_file_ldicWV
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -98,6 +102,7 @@ echo $tenants->count(); // ✅ Output: 1
 
 ---
 
+<<<<<<< .merge_file_0YV6w0
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
@@ -111,3 +116,6 @@ echo $tenants->count(); // ✅ Output: 1
 =======
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+>>>>>>> .merge_file_ldicWV

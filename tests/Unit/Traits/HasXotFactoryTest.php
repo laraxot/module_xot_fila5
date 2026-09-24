@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_QYuibX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,6 +23,8 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Q4bN9T
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
@@ -29,6 +32,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_QYuibX
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
@@ -42,6 +46,9 @@ uses(TestCase::class);
 =======
 /**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+/**
+>>>>>>> .merge_file_Q4bN9T
  * Regression guard: HasXotFactory::factory() has been accidentally deleted and
  * restored 3 times in one session (2026-09-06/07) by different concurrent agents,
  * each time breaking Model::factory() across nearly every module in the monorepo

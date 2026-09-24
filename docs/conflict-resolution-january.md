@@ -9,16 +9,20 @@
 - **Issue**: Presence of multiple `.backup` files polluting the codebase.
 - **Resolution**: Deleted the following files:
     - `Modules/Chart/app/Actions/JpGraph/V1/LineSubQuestionAction.php.backup`
+<<<<<<< .merge_file_1aGeod
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bY44Xj
     - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
     - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`
     - `Modules/Quaeris/app/Datas/DashboardFilterData.php.backup`
     - `Modules/Xot/tests/Unit/metatagdatatest.php.backup`
     - `Modules/Xot/tests/pest.php.backup`
+<<<<<<< .merge_file_1aGeod
 <<<<<<< HEAD
 =======
 =======
@@ -35,3 +39,5 @@
 =======
     - `Modules/Xot/tests/pest.php.backup`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bY44Xj

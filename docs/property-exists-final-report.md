@@ -1,6 +1,7 @@
 # REPORT FINALE: Eliminazione property_exists() da Eloquent Models
 
 ## Data: 2025-11-05
+<<<<<<< .merge_file_DfADXd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 ## Data: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vceQHh
 ## Durata: ~3 ore
 ## Status: ✅ COMPLETATO
 
@@ -409,6 +412,7 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 
 **Firma:** Claude Code
 **Data:** 2025-11-05
+<<<<<<< .merge_file_DfADXd
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status:** COMPLETATO CON SUCCESSO ✅
@@ -424,3 +428,6 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 **Data:** [DATE]
 **Status:** COMPLETATO CON SUCCESSO ✅
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Status:** COMPLETATO CON SUCCESSO ✅
+>>>>>>> .merge_file_vceQHh

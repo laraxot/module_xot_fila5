@@ -449,6 +449,7 @@ php artisan insights
 
 *"Nel codice perfetto, i tipi sono evidenti, gli errori sono impossibili, e la complessità è un ricordo del passato."*
 
+<<<<<<< .merge_file_ZZLSNE
 <<<<<<< HEAD
 <<<<<<< HEAD
 **ZEN ACHIEVED** 🧘‍♂️
@@ -462,3 +463,6 @@ php artisan insights
 =======
 **ZEN ACHIEVED** 🧘‍♂️
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**ZEN ACHIEVED** 🧘‍♂️
+>>>>>>> .merge_file_Fgj9L5

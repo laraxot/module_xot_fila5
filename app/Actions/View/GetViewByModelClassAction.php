@@ -22,22 +22,17 @@ class GetViewByModelClassAction
         $model_name = class_basename($model_class);
         $model_name = Str::of($model_name)->snake()->toString();
 
+<<<<<<< .merge_file_G2pbzG
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_lPBCZY
         $view=$module_low.'::'.$model_name.$suffix;
         
         if(!view()->exists($view)){
             throw new \Exception('view ['.$view.'] not Exists');
         }
         
-=======
-        $view = $module_low.'::'.$model_name.$suffix;
-
-        if (! view()->exists($view)) {
-            throw new \Exception('view ['.$view.'] not Exists');
-        }
-
->>>>>>> laraxot/dev
         return $view;
 =======
         return $module_low.'::'.$model_name.$suffix;

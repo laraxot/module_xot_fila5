@@ -9,6 +9,7 @@ Every entity has exactly ONE authoritative definition:
 - **Models**: One inheritance chain per model type
 
 ### 2. **Consistency Over Flexibility**
+<<<<<<< .merge_file_yBsxQr
 <<<<<<< HEAD
 <<<<<<< HEAD
 Predictable behavior is more valuable than unlimited options:
@@ -22,6 +23,9 @@ Predictable behavior is more valuable than unlimited options:
 =======
 <nome progetto>able behavior is more valuable than unlimited options:
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Predictable behavior is more valuable than unlimited options:
+>>>>>>> .merge_file_GbxjWI
 - Same file structure across all modules
 - Same inheritance patterns for all models
 - Same migration philosophy for all tables
@@ -167,6 +171,7 @@ composer dump-autoload
 ## 🎯 Why These Principles Matter
 
 ### Technical Benefits
+<<<<<<< .merge_file_yBsxQr
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Predictable Autoloading**: No ambiguous class resolution
@@ -180,6 +185,9 @@ composer dump-autoload
 =======
 - **<nome progetto>able Autoloading**: No ambiguous class resolution
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Predictable Autoloading**: No ambiguous class resolution
+>>>>>>> .merge_file_GbxjWI
 - **Reliable Test Execution**: Consistent test discovery
 - **Easy Maintenance**: Clear, unambiguous code structure
 - **Fast Debugging**: Obvious source of truth for each entity
@@ -227,6 +235,7 @@ class Permission extends BaseModel  // ❌ Should extend SpatiePermission
 
 ---
 
+<<<<<<< .merge_file_yBsxQr
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
@@ -240,3 +249,6 @@ class Permission extends BaseModel  // ❌ Should extend SpatiePermission
 =======
 **Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
+>>>>>>> .merge_file_GbxjWI

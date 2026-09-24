@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
+<<<<<<< .merge_file_upzcfU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -19,23 +20,34 @@ use Modules\Xot\Actions\File\AssetPathAction;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Modules\Xot\Actions\File\AssetAction;
+use Modules\Xot\Actions\File\AssetPathAction;
+>>>>>>> .merge_file_i7BNg6
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
+<<<<<<< .merge_file_upzcfU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_i7BNg6
 use function Safe\chmod;
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 use function Safe\unlink;
 
+<<<<<<< .merge_file_upzcfU
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_i7BNg6
 uses(TestCase::class);
 
 it('handles absolute urls in AssetAction', function (): void {
@@ -45,6 +57,7 @@ it('handles absolute urls in AssetAction', function (): void {
 });
 
 it('returns path if asset already exists in public folder', function (): void {
+<<<<<<< .merge_file_upzcfU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -72,6 +85,8 @@ it('resolves module assets correctly in AssetAction', function (): void {
     {
         public function __construct(private string $modulePath) {}
 =======
+=======
+>>>>>>> .merge_file_i7BNg6
     $relative = 'assets/xot-test-exists-'.uniqid('', true).'.txt';
     $absolute = public_path($relative);
     if (! is_dir(\dirname($absolute))) {
@@ -100,6 +115,7 @@ it('publishes module asset to public assets path', function (): void {
         unlink($dest);
     }
 
+<<<<<<< .merge_file_upzcfU
     app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction {
         public function __construct(private string $modulePath)
         {
@@ -111,11 +127,17 @@ it('publishes module asset to public assets path', function (): void {
         {
         }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction
+    {
+        public function __construct(private string $modulePath) {}
+>>>>>>> .merge_file_i7BNg6
 
         public function execute(string $module): string
         {
             return $this->modulePath;
         }
+<<<<<<< .merge_file_upzcfU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -167,6 +189,8 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
         },
     ]);
 =======
+=======
+>>>>>>> .merge_file_i7BNg6
     });
 
     try {
@@ -192,7 +216,7 @@ it('keeps published dest when force-copy fails (best-effort via copyAsset)', fun
 
     try {
         $action = app(AssetAction::class);
-        $method = new \ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
         $method->invoke($action, $from, $to, 'assets/demo/icon.png', true);
 
         Assert::assertFileExists($to);
@@ -217,7 +241,7 @@ it('skips force-copy when destination exists but is not writable', function (): 
 
     try {
         $action = app(AssetAction::class);
-        $method = new \ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
         $method->invoke($action, $from, $to, 'assets/demo/icon.png', true);
 
         Assert::assertSame('keep-me', file_get_contents($to));
@@ -237,12 +261,15 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
         ->shouldReceive('getModulePath')
         ->with('User')
         ->andReturn('/path/to/User/');
+<<<<<<< .merge_file_upzcfU
 >>>>>>> laraxot/dev
 =======
             return 'User' === $module ? '/path/to/User/' : '';
         },
     ]);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_i7BNg6
 
     $action = app(AssetPathAction::class);
     $result = $action->execute('User::js/app.js');

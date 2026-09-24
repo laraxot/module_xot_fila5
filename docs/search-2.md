@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_uc0UVb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wExeGS
 title: "_search"
 module: "Xot"
 type: concept
@@ -21,6 +24,7 @@ related:
 <!-- Contenuto migrato da _docs/_search.txt -->
 
 https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#adding-support-for-relations
+<<<<<<< .merge_file_uc0UVb
 <<<<<<< HEAD
 =======
 =======
@@ -38,3 +42,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/search-1.md
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/search-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wExeGS

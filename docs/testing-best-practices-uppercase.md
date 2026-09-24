@@ -38,6 +38,7 @@ function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 <<<<<<< HEAD
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -47,6 +48,8 @@ function mockXotData(): void
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6T1Gu5
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -54,11 +57,14 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6T1Gu5
 =======
     
     $mockXotData->shouldReceive('getUserClass')
@@ -68,6 +74,7 @@ function mockXotData(): void
         ->andReturn($mockXotData);
     
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 =======
 =======
@@ -75,6 +82,8 @@ function mockXotData(): void
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6T1Gu5
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -158,6 +167,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
    - Content presence
    - Layout structure
 
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -181,6 +191,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 2. **Middleware** (Raccomandato)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+2. **Middleware** (Raccomandato)
+>>>>>>> .merge_file_6T1Gu5
    - Authentication flow
    - Authorization checks
    - Redirect behavior
@@ -215,6 +228,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - ✅ **Performance**: < 5 secondi per test suite
 - ✅ **Architecture**: Separazione rispettata
 
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -238,6 +252,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 ### Gold Standard Criteria
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+### Gold Standard Criteria
+>>>>>>> .merge_file_6T1Gu5
 - ✅ **Success Rate**: > 90% test passati
 - ✅ **Zero Warnings**: Nessun warning PHP/Pest
 - ✅ **Performance**: < 3 secondi per test suite
@@ -257,15 +274,19 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ./vendor/bin/pest -v {TestFile} | grep -E "(seconds|ms)"
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6T1Gu5
 # Success rate calculation
 =======
 # Success rate calculation  
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 =======
 =======
@@ -275,6 +296,8 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 =======
 # Success rate calculation
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6T1Gu5
 ./vendor/bin/pest {TestFile} --compact
 
 # Memory usage monitoring
@@ -300,16 +323,19 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [Widget Test Patterns](../Cms/project_docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/project_docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
+<<<<<<< .merge_file_8f5bnM
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_6T1Gu5
 
 ---
 
-<<<<<<< HEAD
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
+<<<<<<< .merge_file_8f5bnM
 =======
 **Status**: ✅ Best Practices Validate  
 **Enforcement**: Obbligatorio per tutti i test  
@@ -356,3 +382,5 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6T1Gu5

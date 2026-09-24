@@ -98,15 +98,19 @@ abstract class XotBaseResource extends Resource
     use HasXotTable;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cWfcDq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_X6rgSh
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cWfcDq
 <<<<<<< HEAD
 =======
 =======
@@ -116,6 +120,8 @@ abstract class XotBaseResource extends Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_X6rgSh
     {
         return static::getFormSchemaImplementation();
     }
@@ -406,6 +412,7 @@ test('all models extend base model', function () {
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+<<<<<<< .merge_file_cWfcDq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -417,11 +424,14 @@ test('all models extend base model', function () {
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_X6rgSh
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
 
+<<<<<<< .merge_file_cWfcDq
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
@@ -435,3 +445,6 @@ test('all models extend base model', function () {
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> .merge_file_X6rgSh

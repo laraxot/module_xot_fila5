@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_KiEoPq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wrbMem
 ---
 title: "Ponytail Audit"
 type: concept
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [ponytail-audit.md](./ponytail-audit.md)
+<<<<<<< .merge_file_KiEoPq
 <<<<<<< HEAD
 =======
 =======
@@ -55,3 +59,5 @@ This mirrors the same principle already applied to `Modules/Quaeris/app/Contract
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wrbMem
