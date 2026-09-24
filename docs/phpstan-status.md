@@ -2,6 +2,46 @@
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
+
+Dopo cache clear, `cd laravel && ./vendor/bin/phpstan analyse Modules` ha riportato
+**571** poi **394** `file_errors` (non più lo zero certificato del 2026-09-23).
+
+### Perché (religione vs Symplify)
+
+Laraxot usa `*Contract` (non `*Interface`), basi `BaseModel` / `XotBase*` / `TestCase`
+(non `Abstract*`), trait `Has*` (non suffisso `*Trait`). Symplify
+`ExplicitClassPrefixSuffixRule` (via `naming-rules.neon`, `symplify.naming=true`)
+impone esattamente il contrario. Memoria:
+[contract-suffix-no-interfaces-folder.md](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md).
+
+### Cosa è successo
+
+`Modules/CloudStorage/composer.json` (require-dev aggiunto 2026-09-24) ha tirato
+`symplify/phpstan-rules ^14.10`. `phpstan/extension-installer` auto-carica
+`config/naming-rules.neon` → ~393 errori di naming sul tree. In parallelo,
+helper Xot coverage eliminati (`git D`) producevano ~148 `class.notFound`:
+`FilamentSchemaCoverage.php`, `ModuleBusinessCoverage.php`,
+`ModuleDeepCoverage.php`, `ModuleExecuteCoverage.php`,
+`ModuleRemainingCoverage.php` in `Modules/Xot/tests/`.
+
+`phpstan.neon` resta **immutabile** (niente ignore/baseline per spegnere Symplify).
+
+### Remediation
+
+1. Rimuovere `symplify/phpstan-rules` da `CloudStorage` `require-dev` (e
+   `composer update` / dump autoload extension-installer).
+2. Ripristinare i cinque helper coverage in `Modules/Xot/tests/` se assenti.
+3. Non rinominare il codebase verso le convenzioni Symplify.
+
+### Verifica
+
+```bash
+cd laravel
+rm -rf /tmp/phpstan && mkdir -p /tmp/phpstan
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G
+```
+
 ## Misura 2026-09-23 (story 5.224 — comando utente)
 
 ```bash
@@ -55,4 +95,6 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
-- [phpstan-journey.md](../../../../docs/wiki/second-brain/phpstan-journey.md) — second brain
+- [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
+- [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
+- [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
