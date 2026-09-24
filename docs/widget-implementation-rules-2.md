@@ -72,29 +72,9 @@ class MyTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
->>>>>>> laraxot/dev
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_DmPadP
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -117,31 +97,11 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
 
             DatePicker::make('dateTo')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 =======
             
             DatePicker::make('dateTo')
@@ -149,16 +109,6 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->afterStateUpdated(fn () => $this->updateFilters()),
             
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
             Select::make('answerFilter')
                 ->options([
                     'all' => 'All Answers',
@@ -189,29 +139,9 @@ class QuestionChartFilterWidget extends XotBaseWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
->>>>>>> laraxot/dev
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_DmPadP
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -233,30 +163,10 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->sortable()
                     ->searchable(),
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
 =======
                 
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
                 TextColumn::make('answert')
                     ->limit(50)
                     ->tooltip(function (TextColumn $column): ?string {
@@ -265,30 +175,10 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     })
                     ->searchable(),
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
 =======
                 
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
                 TextColumn::make('answer_lang')
                     ->badge()
                     ->color(fn (string $state): string => match ($state) {
@@ -309,31 +199,11 @@ class QuestionChartDataWidget extends XotBaseTableWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
 
         if (!$record) {
             return $record->answers()->whereRaw('1 = 0');
         }
 
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 =======
         
         if (!$record) {
@@ -341,16 +211,6 @@ class QuestionChartDataWidget extends XotBaseTableWidget
         }
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         return $record->answers()
             ->select(['submitdate', 'answert', 'answer_lang'])
             ->when($record->date_from, function ($query, $dateFrom) {
@@ -375,29 +235,9 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
->>>>>>> laraxot/dev
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_DmPadP
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -417,30 +257,10 @@ class QuestionChartWidget extends XotBaseWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
 =======
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         if (!$record) {
             return [
                 'datasets' => [],
@@ -448,14 +268,6 @@ class QuestionChartWidget extends XotBaseWidget
             ];
         }
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
         $chartData = $this->getChartData($record);
 
@@ -464,22 +276,6 @@ class QuestionChartWidget extends XotBaseWidget
         $chartData = $this->getChartData($record);
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
-        $chartData = $this->getChartData($record);
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
-        $chartData = $this->getChartData($record);
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         return [
             'datasets' => [
                 [
@@ -498,31 +294,11 @@ class QuestionChartWidget extends XotBaseWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
 
         if (!$record) {
             return 'bar';
         }
 
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 =======
         
         if (!$record) {
@@ -530,16 +306,6 @@ class QuestionChartWidget extends XotBaseWidget
         }
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         return match ($record->chart_type) {
             'pie' => 'pie',
             'doughnut' => 'doughnut',
@@ -561,32 +327,12 @@ class QuestionChartWidget extends XotBaseWidget
             })
             ->get();
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
 
         $grouped = $answers->groupBy('answer_lang');
 
         $labels = [];
         $values = [];
 
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 =======
         
         $grouped = $answers->groupBy('answer_lang');
@@ -595,45 +341,15 @@ class QuestionChartWidget extends XotBaseWidget
         $values = [];
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         foreach ($grouped as $lang => $langAnswers) {
             $labels[] = $lang ?: 'Unknown';
             $values[] = $langAnswers->count();
         }
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
 =======
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         return [
             'labels' => $labels,
             'values' => $values,
@@ -653,59 +369,19 @@ class QuestionChartWidget extends XotBaseWidget
             'rgba(83, 102, 255, ' . $alpha . ')',
         ];
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
 =======
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         $colors = [];
         for ($i = 0; $i < $count; $i++) {
             $colors[] = $baseColors[$i % count($baseColors)];
         }
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
 =======
         
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
         return $colors;
     }
 }
@@ -762,30 +438,10 @@ class MyWidget extends XotBaseWidget
         return []; // Form vuoto
     }
 <<<<<<< HEAD
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_DmPadP
 
 =======
     
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP
     public function table(Table $table): Table
     {
         // Tabella in widget di form
@@ -834,35 +490,5 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
-<<<<<<< .merge_file_dMfMcM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_DmPadP
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
-<<<<<<< .merge_file_dMfMcM
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_F7TLz3
-<<<<<<< HEAD
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
-=======
-=======
-
->>>>>>> .merge_file_eBUNek
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> laraxot/dev
-=======
-- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
-
->>>>>>> laraxot/dev
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> laraxot/dev
-=======
-
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DmPadP

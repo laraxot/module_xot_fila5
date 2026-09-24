@@ -22,18 +22,6 @@ class GetViewByModelClassAction
         $model_name = class_basename($model_class);
         $model_name = Str::of($model_name)->snake()->toString();
 
-<<<<<<< .merge_file_feYJ3k
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $view=$module_low.'::'.$model_name.$suffix;
-        
-        if(!view()->exists($view)){
-            throw new \Exception('view ['.$view.'] not Exists');
-        }
-        
-=======
-=======
->>>>>>> .merge_file_G03fcX
         $view = $module_low.'::'.$model_name.$suffix;
 
         if (! view()->exists($view)) {
@@ -41,8 +29,5 @@ class GetViewByModelClassAction
         }
 
         return $view;
-=======
-        return $module_low.'::'.$model_name.$suffix;
->>>>>>> 8d801bbe (Check & fix styling)
     }
 }

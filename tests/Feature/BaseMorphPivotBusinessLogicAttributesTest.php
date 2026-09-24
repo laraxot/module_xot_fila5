@@ -11,25 +11,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
-<<<<<<< HEAD
     test('it can manage tags attributes', function (): void {
         // Arrange
         $tags = ['tag1', 'tag2', 'important'];
 
         $pivot = new TestConcreteMorphPivot;
-<<<<<<< .merge_file_jOfHVj
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-    describe('Base Morph Pivot Business Logic (attributes continued)', function (): void {
-        // Arrange
-        $tags = ['tag1', 'tag2', 'important'];
-
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('tags', $tags);
 
         // Act
@@ -48,19 +34,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $categories = ['category1', 'category2'];
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('categories', $categories);
 
         // Act
@@ -82,19 +56,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
             'delete' => false,
         ];
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('permissions', $permissions);
 
         // Act
@@ -116,19 +78,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
             'timeout' => 30,
         ];
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('settings', $settings);
 
         // Act
@@ -146,19 +96,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $notes = 'This is a test note for the pivot relationship';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('notes', $notes);
 
         // Act
@@ -172,19 +110,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $description = 'Test description for pivot relationship';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('description', $description);
 
         // Act
@@ -198,19 +124,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $url = 'https://example.com/pivot/123';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('url', $url);
 
         // Act
@@ -224,19 +138,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $imageUrl = 'https://example.com/images/pivot.jpg';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('image_url', $imageUrl);
 
         // Act
@@ -250,19 +152,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $externalId = 'ext_12345';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('external_id', $externalId);
 
         // Act
@@ -276,19 +166,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $source = 'api_import';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('source', $source);
 
         // Act
@@ -302,19 +180,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $version = '1.2.3';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('version', $version);
 
         // Act
@@ -328,19 +194,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $hash = 'abc123def456';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('hash', $hash);
 
         // Act
@@ -354,19 +208,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $checksum = 'sha256:abc123def456';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('checksum', $checksum);
 
         // Act
@@ -380,19 +222,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $size = 1024;
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('size', $size);
 
         // Act
@@ -407,19 +237,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $mimeType = 'application/json';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('mime_type', $mimeType);
 
         // Act
@@ -433,19 +251,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $encoding = 'UTF-8';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('encoding', $encoding);
 
         // Act
@@ -459,19 +265,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $language = 'en';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('language', $language);
 
         // Act
@@ -485,19 +279,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $locale = 'en_US';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('locale', $locale);
 
         // Act
@@ -511,19 +293,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $timezone = 'Europe/Rome';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('timezone', $timezone);
 
         // Act
@@ -537,19 +307,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $currency = 'EUR';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('currency', $currency);
 
         // Act
@@ -563,19 +321,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $decimalPlaces = 2;
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('decimal_places', $decimalPlaces);
 
         // Act
@@ -590,19 +336,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Arrange
         $roundingMode = 'half_up';
 
-<<<<<<< .merge_file_jOfHVj
-<<<<<<< HEAD
-<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> laraxot/dev
-=======
-        $pivot = new TestConcreteMorphPivot();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $pivot = new TestConcreteMorphPivot;
->>>>>>> .merge_file_Wgr078
         $pivot->setAttribute('rounding_mode', $roundingMode);
 
         // Act

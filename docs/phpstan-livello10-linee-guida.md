@@ -91,15 +91,9 @@ public function processValue(?string $value): string
 ## Collegamenti Correlati
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
-<<<<<<< HEAD
 - [Best Practices](best-practices.md)
 - [Code Standards](code-standards.md)
 - [Risoluzione Conflitti](conflitti_merge_risolti.md)
-=======
-- [Best Practices](./BEST-PRACTICES.md)
-- [Code Standards](./CODE-STANDARDS.md)
-- [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
->>>>>>> 8d801bbe (Check & fix styling)
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 

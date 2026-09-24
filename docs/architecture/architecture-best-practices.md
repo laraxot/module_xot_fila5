@@ -8,20 +8,6 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 
 **Collegamento bidirezionale:**
 - [Motivazione e applicazione nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md)
-<<<<<<< .merge_file_9Nyzio
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_yEJfyq
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 
@@ -61,20 +47,4 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
   - [Documentazione generale e convenzioni di progetto](../../../../project_docs/coding-standards.md)
   - [Esempio e memo nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
 
-<<<<<<< .merge_file_9Nyzio
-<<<<<<< HEAD
-<<<<<<< HEAD
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
-=======
-<<<<<<< HEAD
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
-=======
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
->>>>>>> .merge_file_yEJfyq

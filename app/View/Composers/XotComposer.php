@@ -26,29 +26,13 @@ class XotComposer
     /**
      * Undocumented function.
      *
-<<<<<<< .merge_file_mV1mis
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int, mixed>  $arguments
-=======
-     * @param array<int, mixed> $arguments
->>>>>>> laraxot/dev
-=======
-     * @param array<mixed|void> $arguments
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<int, mixed>  $arguments
->>>>>>> .merge_file_MHYw3y
      */
     public function __call(string $name, array $arguments): mixed
     {
         $modules = Module::getOrdered();
 
-<<<<<<< HEAD
         $module = Arr::first($modules, static function (mixed $module) use ($name): bool {
-=======
-        $module = Arr::first($modules, static function ($module) use ($name): bool {
->>>>>>> 8d801bbe (Check & fix styling)
             // Ensure the module is an instance of LaravelModule
             if (! $module instanceof LaravelModule) {
                 return false;
@@ -84,19 +68,7 @@ class XotComposer
         $view->with('_theme', $this);
 
         if (class_exists('\Jenssegers\Agent\Agent')) {
-<<<<<<< .merge_file_mV1mis
-<<<<<<< HEAD
-<<<<<<< HEAD
             $agent = new Agent;
-=======
-            $agent = new Agent();
->>>>>>> laraxot/dev
-=======
-            $agent = new Agent();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            $agent = new Agent;
->>>>>>> .merge_file_MHYw3y
             $view->with('isMobile', $agent->isMobile());
             $view->with('isTablet', $agent->isTablet());
             $view->with('isDesktop', $agent->isDesktop());

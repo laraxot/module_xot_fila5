@@ -36,20 +36,9 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di metatag.md
-<<<<<<< HEAD
 * [metatag.md](../../../xot/project_docs/install/metatag.md)
 * [metatag.md](../../../tenant/project_docs/it/config/metatag.md)
 
 ### Versione Incoming
 
 ---
-=======
-* [metatag.md](../../../Xot/docs/install/metatag.md)
-* [metatag.md](../../../Tenant/docs/it/config/metatag.md)
-* [metatag.md](../../../xot/docs/install/metatag.md)
-* [metatag.md](../../../tenant/docs/it/config/metatag.md)
-
-### Versione Incoming
-
----
->>>>>>> 8d801bbe (Check & fix styling)

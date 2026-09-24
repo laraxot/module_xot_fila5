@@ -20,21 +20,8 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_DtOmLs
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_vCNSI5
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         // Campi base

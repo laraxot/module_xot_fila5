@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
@@ -17,21 +16,6 @@ it('gets module path from facade correctly', function (): void {
             return $module === 'Xot' ? '/path/to/Xot/' : '';
         },
     ]);
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\File\GetModulePathAction;
-use Nwidart\Modules\Facades\Module;
-use PHPUnit\Framework\Assert;
-
-it('gets module path from facade correctly', function (): void {
-    /* @var \Modules\Xot\Tests\TestCase $this */
-    Module::shouldReceive('getModulePath')
-        ->once()
-        ->with('Xot')
-        ->andReturn('/path/to/Xot/');
->>>>>>> 8d801bbe (Check & fix styling)
 
     $action = app(GetModulePathAction::class);
     $result = $action->execute('Xot');
@@ -40,14 +24,6 @@ it('gets module path from facade correctly', function (): void {
 });
 
 it('gets module path from fallback correctly', function (): void {
-<<<<<<< HEAD
-=======
-    /* @var \Modules\Xot\Tests\TestCase $this */
-    Module::shouldReceive('getModulePath')
-        ->once()
-        ->andThrow(new Exception('Module not found'));
-
->>>>>>> 8d801bbe (Check & fix styling)
     // We assume Modules directory exists in base_path
     $modulesPath = base_path('Modules');
     if (! File::exists($modulesPath)) {
@@ -60,7 +36,6 @@ it('gets module path from fallback correctly', function (): void {
         File::makeDirectory($dummyModule);
     }
 
-<<<<<<< HEAD
     // Spy on Module facade to throw exception, forcing fallback
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
@@ -68,8 +43,6 @@ it('gets module path from fallback correctly', function (): void {
         },
     ]);
 
-=======
->>>>>>> 8d801bbe (Check & fix styling)
     $action = app(GetModulePathAction::class);
     // Case-insensitive search
     $result = $action->execute('testmodule');

@@ -2,23 +2,7 @@
 
 ## Panoramica
 
-<<<<<<< .merge_file_9jSNzs
-<<<<<<< HEAD
-<<<<<<< HEAD
 iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
-=======
-<<<<<<< HEAD
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
-=======
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono con iFlow.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
->>>>>>> .merge_file_rnIIWZ
 
 ## Prerequisiti
 
@@ -256,35 +240,10 @@ Aggiungere al file `~/.cursor/mcp.json`:
         "MINIMAX_API_KEY": "${MINIMAX_API_KEY}"
       }
     },
-<<<<<<< .merge_file_9jSNzs
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rnIIWZ
     "phpstan-quaeris": {
       "url": "http://localhost:8003/sse"
     },
     "artisan-quaeris": {
-<<<<<<< .merge_file_9jSNzs
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    "phpstan-healthcare_app": {
-      "url": "http://localhost:8003/sse"
-    },
-    "artisan-healthcare_app": {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rnIIWZ
       "url": "http://localhost:8004/sse"
     }
   }
@@ -373,20 +332,4 @@ Aggiungere al file `~/.codeium/windsurf/mcp_config.json`:
 
 - [MCP Editors Configuration](./mcp-editors-configuration.md) - Configurazione generale editor
 - [MCP Claude Code Configuration](./mcp-claude-code-configuration.md) - Configurazione Claude Code
-<<<<<<< .merge_file_9jSNzs
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
-=======
-<<<<<<< HEAD
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
-=======
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
->>>>>>> .merge_file_rnIIWZ

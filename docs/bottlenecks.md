@@ -683,43 +683,11 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
-<<<<<<< .merge_file_1udn0z
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Best Practices Performance](best-practices.md#performance)
-=======
-<<<<<<< HEAD
-- [Best Practices Performance](best-practices.md#performance)
-=======
-- [Best Practices Performance](./BEST-PRACTICES.md#performance)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Best Practices Performance](./BEST-PRACTICES.md#performance)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Best Practices Performance](best-practices.md#performance)
->>>>>>> .merge_file_HfnnKM
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../Xot/docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
-<<<<<<< .merge_file_1udn0z
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
-=======
-<<<<<<< HEAD
-* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
-=======
-* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
->>>>>>> .merge_file_HfnnKM

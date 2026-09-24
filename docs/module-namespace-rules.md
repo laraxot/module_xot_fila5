@@ -19,33 +19,7 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
-<<<<<<< .merge_file_91vLYL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rnn70d
 - [docs root](../../../../docs/actions.md)
 - [docs Lang](../../Lang/docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
-<<<<<<< .merge_file_91vLYL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-- [docs Lang](../../Lang/docs/filament-label.md)
-
-Ultimo aggiornamento: maggio 2025.
-- [docs root](../../../../../docs/actions.md)
-- [docs Lang](../../lang/docs/filament-label.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rnn70d

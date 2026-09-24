@@ -1,19 +1,6 @@
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27
-<<<<<<< .merge_file_RIxPEr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_qkxLMH
 
 ## Problema Identificato
 
@@ -128,20 +115,4 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 
 - Utilizzare sempre tipizzazione completa per array nei PHPDoc
 - Verificare che i metodi di traduzione restituiscano sempre string
-<<<<<<< .merge_file_RIxPEr
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
-=======
-<<<<<<< HEAD
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> .merge_file_qkxLMH

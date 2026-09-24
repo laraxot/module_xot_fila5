@@ -1065,20 +1065,4 @@ b6f667c (.)
 - La registrazione dei comandi nel ServiceProvider del modulo deve usare il namespace e path corretti.
 - Aggiornare la documentazione del modulo con esempi e riferimenti.
 
-<<<<<<< .merge_file_d9rQG7
-<<<<<<< HEAD
-<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
-=======
-<<<<<<< HEAD
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
->>>>>>> .merge_file_wgRUXz

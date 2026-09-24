@@ -1,21 +1,3 @@
-<<<<<<< .merge_file_qUTt30
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_yVaPa5
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_OBwsRZ
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_BFTsYG
 ---
 title: "Agent instructions"
 type: reference
@@ -29,21 +11,6 @@ related:
   - ./coding-agent-manifests.md
 ---
 
-<<<<<<< .merge_file_qUTt30
-<<<<<<< HEAD
-=======
->>>>>>> 7f6cf6be (.)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_BFTsYG
 # Xot Module LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

@@ -26,30 +26,10 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_k7egqz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Yi0DNH
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_k7egqz
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Yi0DNH
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -84,30 +64,10 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_k7egqz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Yi0DNH
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_k7egqz
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Yi0DNH
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -124,16 +84,6 @@ class NotificationResource extends XotBaseResource
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-<<<<<<< .merge_file_k7egqz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Yi0DNH
 - [Architettura Filament](../../../docs/architecture/filament.md)
 - [Gestione Risorse](../../../docs/architecture/resources.md)
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
@@ -141,26 +91,6 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)
 - [User Resource](../../User/docs/filament-resources.md)
-<<<<<<< .merge_file_k7egqz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-- [Notify Resource](../../Notify/docs/filament-resources.md)
-- [User Resource](../../User/docs/filament-resources.md)
-- [Architettura Filament](../../../../docs/architecture/filament.md)
-- [Gestione Risorse](../../../../docs/architecture/resources.md)
-- [Regole XotBaseResource](../../../../docs/regole/xotbaseresource-rules.md)
-
-### Collegamenti ai Moduli
-- [Notify Resource](../../notify/docs/filament-resources.md)
-- [User Resource](../../user/docs/filament-resources.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Yi0DNH
 
 ## Note Importanti
 
@@ -168,20 +98,4 @@ class NotificationResource extends XotBaseResource
 2. Implementare sempre i metodi astratti richiesti
 3. Utilizzare i file di traduzione per le label
 4. Evitare override non necessari di metodi
-<<<<<<< .merge_file_k7egqz
-<<<<<<< HEAD
-<<<<<<< HEAD
 5. Seguire le convenzioni di Filament
-=======
-<<<<<<< HEAD
-5. Seguire le convenzioni di Filament
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> .merge_file_Yi0DNH

@@ -168,20 +168,4 @@ Laravel Framework 12.28.1
 ✅ **TESTATO**: Tutti i comandi artisan operativi
 ✅ **DOCUMENTATO**: Soluzione centralizzata implementata
 
-<<<<<<< .merge_file_zN9GoV
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 19 Settembre 2025*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 19 Settembre 2025*
-=======
-*Ultimo aggiornamento: 19 Settembre 2025*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 19 Settembre 2025*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: 19 Settembre 2025*
->>>>>>> .merge_file_ricCar

@@ -6,23 +6,7 @@ Le Blade Icons sono un componente fondamentale del sistema di interfaccia utente
 ## Componenti Principali
 
 ### Registrazione delle Icons
-<<<<<<< .merge_file_ochYbq
-<<<<<<< HEAD
-<<<<<<< HEAD
 Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerbladeicons.md).
-=======
-<<<<<<< HEAD
-Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerbladeicons.md).
-=======
-Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerBladeIcons.md).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerBladeIcons.md).
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerbladeicons.md).
->>>>>>> .merge_file_TaXz01
 
 ### Struttura delle Directory
 ```
@@ -44,25 +28,5 @@ Modules/
 ```
 
 ## Risorse Aggiuntive
-<<<<<<< .merge_file_ochYbq
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
 - [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
-=======
-<<<<<<< HEAD
-- [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
-- [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
-=======
-- [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
-- [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
-- [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
-- [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
->>>>>>> .merge_file_TaXz01

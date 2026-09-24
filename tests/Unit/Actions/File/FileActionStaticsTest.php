@@ -1,29 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_dtMjSw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_fPql5m
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_rWqH1L
-=======
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2cjzI2
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\TestCase;
@@ -51,23 +28,7 @@ $rrmdir = function (string $dir) use (&$rrmdir): void {
     $files = scandir($dir);
 
     foreach ($files as $file) {
-<<<<<<< .merge_file_dtMjSw
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($file === '.' || $file === '..') {
-=======
-<<<<<<< .merge_file_fPql5m
-        if ($file === '.' || $file === '..') {
-=======
-        if ('.' === $file || '..' === $file) {
->>>>>>> .merge_file_rWqH1L
->>>>>>> laraxot/dev
-=======
-        if ($file === '.' || $file === '..') {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($file === '.' || $file === '..') {
->>>>>>> .merge_file_2cjzI2
             continue;
         }
 

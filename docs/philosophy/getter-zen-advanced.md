@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 # La Filosofia Zen Avanzata dei Getter Semantici
 
 ## Il Tao del Codice Pulito

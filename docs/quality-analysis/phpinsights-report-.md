@@ -1,25 +1,5 @@
 # PHP Insights Analysis Report - Xot Module
 
-<<<<<<< .merge_file_7ECtyo
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date:** 2025-11-12
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_17tmr3
-**Date:** 2025-11-12
-=======
-=======
-=======
-**Date:** 2025-11-12
->>>>>>> .merge_file_iyk5vW
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Date:** 2025-11-12
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_yWxAbi
 **Module:** Xot (Core Module)
 **Tools:** phpmd 2.x, phpinsights 2.x, phpstan level 10
 
@@ -107,39 +87,7 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
-<<<<<<< .merge_file_7ECtyo
-<<<<<<< HEAD
-<<<<<<< HEAD
-protected $fillable;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 protected array $fillable;
-=======
->>>>>>> 7f6cf6be (.)
-=======
-<<<<<<< .merge_file_17tmr3
-<<<<<<< HEAD
-protected $fillable;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_iyk5vW
-<<<<<<< HEAD
-protected array $fillable;
-=======
-protected $fillable;
->>>>>>> laraxot/dev
-=======
-protected array $fillable;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-protected $fillable;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-protected array $fillable;
->>>>>>> .merge_file_yWxAbi
 ```
 
 ### 🟢 Medium Priority
@@ -253,35 +201,4 @@ protected array $fillable;
 ---
 
 **Next Review:** After Phase 1 completion
-<<<<<<< .merge_file_7ECtyo
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_17tmr3
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-**Last Updated:** 2025-11-12 08:15 UTC
-=======
-<<<<<<< HEAD
-**Last Updated:** 2025-11-12 08:15 UTC
-=======
-<<<<<<< HEAD
-**Last Updated:** 2025-11-12 08:15 UTC
->>>>>>> 7f6cf6be (.)
-=======
 **
->>>>>>> .merge_file_iyk5vW
-=======
-**Last Updated:** 2025-11-12 08:15 UTC
->>>>>>> laraxot/dev
-=======
-**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Last Updated:** 2025-11-12 08:15 UTC
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**
->>>>>>> .merge_file_yWxAbi

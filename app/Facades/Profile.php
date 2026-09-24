@@ -1,20 +1,12 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * per vedere come registra la facade.
  *
  * @see https://github.com/spatie/laravel-menu/tree/main/src
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Facades;
 
 use Illuminate\Support\Facades\Facade;

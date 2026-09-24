@@ -34,30 +34,10 @@ class CoeffResource extends XotBaseResource
    * @return array<string, \Filament\Schemas\Components\Component>
    */
 <<<<<<< HEAD
-<<<<<<< .merge_file_JMzZ9G
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WNxnAt
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_JMzZ9G
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WNxnAt
     {
         return [ /* ... */ ];
     }
@@ -98,30 +78,10 @@ class ExampleResource extends XotBaseResource
      * @return array<string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_JMzZ9G
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WNxnAt
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_JMzZ9G
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WNxnAt
     {
         return [
             // campi con chiavi stringa

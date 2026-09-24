@@ -7,41 +7,13 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ComponentFileData;
-<<<<<<< .merge_file_jSY5Ct
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-use Spatie\LaravelData\DataCollection;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
->>>>>>> .merge_file_IsTZEP
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-<<<<<<< .merge_file_jSY5Ct
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-use Spatie\LaravelData\DataCollection;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_IsTZEP
 class GetComponentsAction
 {
     use QueueableAction;
@@ -83,7 +55,6 @@ class GetComponentsAction
             /** @var array<int, array<string, mixed>> $comps */
             $comps = is_array($decoded) ? array_values($decoded) : [];
 
-<<<<<<< HEAD
             if ($this->hasCurrentSchema($comps)) {
                 return ComponentFileData::collection($comps);
             }
@@ -92,28 +63,13 @@ class GetComponentsAction
             // mancanti): rigenerare invece di far fallire il boot dell'app con
             // "Typed property ...::$name must not be accessed before
             // initialization" alla prima lettura di un DTO incompleto.
-=======
-            return ComponentFileData::collection($comps);
->>>>>>> 8d801bbe (Check & fix styling)
         }
 
         $files = File::allFiles($path);
         $comps = [];
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_jSY5Ct
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> laraxot/dev
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($file->getExtension() !== 'php') {
->>>>>>> .merge_file_IsTZEP
                 continue;
             }
 
@@ -128,21 +84,10 @@ class GetComponentsAction
             $comp_name = $prefix.$comp_name;
             $comp_ns = $namespace.'\\'.$class_name;
 
-<<<<<<< .merge_file_jSY5Ct
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_IsTZEP
             if ($relative_path !== '') {
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
                     ->map(fn (string $item) => Str::slug(Str::snake($item)))
-=======
-            if ('' !== $relative_path) {
-                $comp_name = '';
-                $piece = collect(explode('\\', $relative_path))
-                    ->map(fn ($item) => Str::slug(Str::snake($item)))
->>>>>>> 8d801bbe (Check & fix styling)
                     ->implode('.');
 
                 $comp_name = $prefix.$piece.'.'.Str::slug(Str::snake(Str::replace('\\', ' ', $class_name)));
@@ -191,7 +136,6 @@ class GetComponentsAction
 
         return ComponentFileData::collection($comps);
     }
-<<<<<<< HEAD
 
     /**
      * @param  array<int, array<string, mixed>>  $comps
@@ -211,6 +155,4 @@ class GetComponentsAction
 
         return true;
     }
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 }

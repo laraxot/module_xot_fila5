@@ -1,18 +1,3 @@
-<<<<<<< .merge_file_4kzHPx
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_4dewkl
 ---
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
@@ -20,28 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< .merge_file_4kzHPx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_4dewkl
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary

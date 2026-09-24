@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_0y4kbk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_hNZ93j
 # Modelli
 
 ## Configurazione Base
@@ -321,16 +311,3 @@ class Comment extends Model
     }
 }
 ```
-<<<<<<< .merge_file_0y4kbk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-multi key, fixing lazy loading
-https://github.com/topclaudy/compoships
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_hNZ93j

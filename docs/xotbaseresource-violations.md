@@ -129,30 +129,10 @@ class {ModelName}Resource extends XotBaseResource
 
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
-<<<<<<< .merge_file_UKKkDm
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_RjO79m
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_UKKkDm
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_RjO79m
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente
@@ -324,21 +304,6 @@ return [
 - [Progressioni: XotBaseResource Violations](../laravel/Modules/Progressioni/docs/xotbaseresource-violations-critical.md)
 - [Xot: XotBaseResource Rules](../laravel/Modules/Xot/docs/filament/resources/xot-base-resource.md)
 - [Xot: Filament Resource Guidelines](../laravel/Modules/Xot/docs/rules/filament-resource-guidelines.md)
-<<<<<<< .merge_file_UKKkDm
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Progressioni: XotBaseResource Violations](../laravel/modules/progressioni/docs/xotbaseresource-violations-critical.md)
-- [Xot: XotBaseResource Rules](../laravel/modules/xot/docs/filament/resources/xot-base-resource.md)
-- [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_RjO79m
 
 ### Regole Correlate
 - [Sistema Traduzioni](translation-system.md)
@@ -346,20 +311,4 @@ return [
 - [Architettura Modulare](modular-architecture.md)
 
 *Documento creato: agosto 2025*
-<<<<<<< .merge_file_UKKkDm
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: agosto 2025*
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> .merge_file_RjO79m

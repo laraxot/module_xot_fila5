@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_U26Xzm
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_n0Ioyp
 ---
 title: "_todo"
 module: "Xot"
@@ -19,16 +11,6 @@ related:
 ---
 
 
-<<<<<<< .merge_file_U26Xzm
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_n0Ioyp
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

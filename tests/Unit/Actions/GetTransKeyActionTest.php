@@ -1,18 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\GetTransKeyAction;
-use PHPUnit\Framework\Assert;
->>>>>>> 8d801bbe (Check & fix styling)
 
 it('generates translation keys correctly', function (): void {
     $action = app(GetTransKeyAction::class);

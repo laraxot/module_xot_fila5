@@ -24,19 +24,7 @@ trait HasDynamicFillable
         $dynamicFillableEnums = $this->getDynamicFillableEnums();
 
         foreach ($dynamicFillableEnums as $enumClass) {
-<<<<<<< .merge_file_GrG0qI
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (! is_string($enumClass) || $enumClass === '') {
-=======
-            if (! is_string($enumClass) || '' === $enumClass) {
->>>>>>> laraxot/dev
-=======
-            if (! is_string($enumClass) || '' === $enumClass) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if (! is_string($enumClass) || $enumClass === '') {
->>>>>>> .merge_file_GRX5dE
                 continue;
             }
 
@@ -64,7 +52,6 @@ trait HasDynamicFillable
         // Ensure unique values and reset keys for cleanliness
         return array_values(array_unique($fillable));
     }
-<<<<<<< HEAD
 
     /**
      * Models using this trait may override this to list Enum classes whose
@@ -76,6 +63,4 @@ trait HasDynamicFillable
     {
         return [];
     }
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 }

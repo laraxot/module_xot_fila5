@@ -25,21 +25,5 @@ class EventServiceProvider extends BaseEventServiceProvider
     /**
      * Configure the proper event listeners for email verification.
      */
-<<<<<<< .merge_file_UIE2Fv
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected function configureEmailVerification(): void {}
-=======
-    protected function configureEmailVerification(): void
-    {
-    }
->>>>>>> laraxot/dev
-=======
-    protected function configureEmailVerification(): void
-    {
-    }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    protected function configureEmailVerification(): void {}
->>>>>>> .merge_file_2T3Rn0
 }

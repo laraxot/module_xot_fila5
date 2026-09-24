@@ -108,21 +108,8 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_hpNaw8
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_L2ezt5
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
     {
         return static::getFormSchemaImplementation();
     }

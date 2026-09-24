@@ -253,30 +253,10 @@ use Filament\Forms\Components\TextInput;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_o56d2O
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_iTXtN2
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_o56d2O
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_iTXtN2
     {
         return [
             TextInput::make('name')->required(),
@@ -317,30 +297,10 @@ class UserModerationResource extends XotBaseResource
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_o56d2O
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_iTXtN2
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_o56d2O
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_iTXtN2
 {
     return [
         // Schema del form
@@ -947,20 +907,4 @@ php artisan view:clear
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
-<<<<<<< .merge_file_o56d2O
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Categoria: Best Practices*
-=======
-<<<<<<< HEAD
-*Categoria: Best Practices*
-=======
-*Categoria: Best Practices*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Categoria: Best Practices*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Categoria: Best Practices*
->>>>>>> .merge_file_iTXtN2

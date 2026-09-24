@@ -1,19 +1,3 @@
-<<<<<<< .merge_file_APASF2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_WIADpN
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kVdc4x
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_aKVHQi
 ---
 title: "Install module"
 type: reference
@@ -25,21 +9,6 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
 # Install module
 
-<<<<<<< .merge_file_APASF2
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_WIADpN
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kVdc4x
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_aKVHQi
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -72,26 +41,4 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
         $new_dir=$module_json->name;
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
-<<<<<<< .merge_file_APASF2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     }
-=======
-    }
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    }
->>>>>>> .merge_file_aKVHQi

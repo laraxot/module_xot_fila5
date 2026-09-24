@@ -15,29 +15,10 @@ use Spatie\LaravelData\Data;
 final class ArticleData extends Data
 {
     /**
-<<<<<<< .merge_file_DrINT7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_7rlrWn
      * @param  array<int, string>  $types
      * @param  array<int, string>  $categories
      * @param  array<string, string>  $defaultMeta
      * @param  array<string, bool>  $features
-<<<<<<< .merge_file_DrINT7
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param array<int, string>    $types
-     * @param array<int, string>    $categories
-     * @param array<string, string> $defaultMeta
-     * @param array<string, bool>   $features
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7rlrWn
      */
     public function __construct(
         public readonly array $types = ['post', 'page', 'news'],
@@ -56,39 +37,13 @@ final class ArticleData extends Data
             'show_date' => true,
             'show_reading_time' => true,
         ],
-<<<<<<< .merge_file_DrINT7
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {
-    }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    ) {}
->>>>>>> .merge_file_7rlrWn
 
     /**
      * Create a new instance of ArticleData with default values.
      */
     public static function make(): self
     {
-<<<<<<< .merge_file_DrINT7
-<<<<<<< HEAD
-<<<<<<< HEAD
         return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
-=======
-        return new self();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        return new self;
->>>>>>> .merge_file_7rlrWn
     }
 }

@@ -135,25 +135,5 @@ If you encounter this error:
 ---
 
 *Last Updated: 2025-08-27*
-<<<<<<< .merge_file_8BK6XD
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Trait Standards Version: 2.0*
 
-=======
-<<<<<<< HEAD
-*Trait Standards Version: 2.0*
-
-=======
-*
-*Trait Standards Version: 2.0*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Trait Standards Version: 2.0*
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Trait Standards Version: 2.0*
-
->>>>>>> .merge_file_X526y1

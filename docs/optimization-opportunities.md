@@ -348,33 +348,9 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-<<<<<<< .merge_file_fT5QID
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-=======
-<<<<<<< HEAD
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-=======
-- `Modules/healthcare_app/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/healthcare_app/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
->>>>>>> .merge_file_7Zb1CD
 
 **Soluzione DRY + KISS**:
 ```php
@@ -639,20 +615,4 @@ return array_merge(
 ---
 
 *Ultimo aggiornamento: Giugno 2025*
-<<<<<<< .merge_file_fT5QID
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Autore: Analisi Automatica del Progetto*
-=======
-<<<<<<< HEAD
-*Autore: Analisi Automatica del Progetto*
-=======
-*Autore: Analisi Automatica del Progetto*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Autore: Analisi Automatica del Progetto*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Autore: Analisi Automatica del Progetto*
->>>>>>> .merge_file_7Zb1CD

@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_du2j9O
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_uFnz8r
 # Gestione dei Repository
 
 ## Repository Pattern
@@ -148,25 +138,3 @@ Tracker gathers a lot of information from your requests to identify and store:
 https://github.com/antonioribeiro/tracker
 
 ---
-<<<<<<< .merge_file_du2j9O
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-
-//-- cosa vecchia ma spiega i criteria
-https://bosnadev.com/2015/03/07/using-repository-pattern-in-laravel-5/
-
-//--- repository torann, torann ha sempre buoni spunti
-https://lyften.com/projects/laravel-repository/
-
-
-//-- prettus -- la piu' completa
-http://andersonandra.de/l5-repository/
-https://www.programmersought.com/article/8489242324/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_uFnz8r

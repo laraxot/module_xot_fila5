@@ -72,23 +72,6 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione HEAD
 
 ## Collegamenti tra versioni di algolia-docsearch.md
-<<<<<<< .merge_file_0LfvmH
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [algolia-docsearch.md](../../../chart/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../gdpr/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../xot/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../ui/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_wi6ueu
 * [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Xot/docs/algolia-docsearch.md)
@@ -97,20 +80,4 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ### Versione Incoming
 
-<<<<<<< .merge_file_0LfvmH
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 8d801bbe (Check & fix styling)
-=======
----
->>>>>>> .merge_file_wi6ueu

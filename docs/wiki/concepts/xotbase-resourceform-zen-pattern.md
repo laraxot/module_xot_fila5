@@ -56,30 +56,10 @@ class ActivityForm extends XotBaseResourceForm
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_GGzWF4
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_NSyWs4
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_GGzWF4
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_NSyWs4
     {
         return [
             TextInput::make('name')->required(),

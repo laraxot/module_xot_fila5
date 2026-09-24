@@ -21,19 +21,7 @@ class GetTransKeyAction
     {
         $class0 = $class;
         // If no class is provided, try to get it from the backtrace
-<<<<<<< .merge_file_gLpqJk
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($class === '') {
-=======
-        if ('' === $class) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $class) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($class === '') {
->>>>>>> .merge_file_gbTlhk
             /** @var list<array{function: string, line?: int, file?: string, class?: class-string, type?: '->'|'::', args?: list<mixed>, object?: object}> $backtrace PHPStan knows this is always array */
             $backtrace = debug_backtrace();
             $class = Arr::get($backtrace, '1.class');
@@ -43,11 +31,6 @@ class GetTransKeyAction
         $arr = explode('\\', $class);
 
         // Handle cases where the provided class is not in the "Modules" namespace
-<<<<<<< .merge_file_gLpqJk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_gbTlhk
         if ($arr[0] !== 'Modules') {
             $backtrace = array_slice(debug_backtrace(), 2);
             $res = Arr::first(
@@ -56,24 +39,6 @@ class GetTransKeyAction
             );
 
             if ($res === null || ! isset($res['object'])) {
-<<<<<<< .merge_file_gLpqJk
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-        if ('Modules' !== $arr[0]) {
-            $backtrace = array_slice(debug_backtrace(), 2);
-            $res = Arr::first(
-                $backtrace,
-                fn (array $item): bool => isset($item['object']) && 'Modules' === explode('\\', get_class($item['object']))[0],
-            );
-
-            if (null === $res || ! isset($res['object'])) {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_gbTlhk
                 $page = Arr::get(debug_backtrace(), '0.args.0');
                 Assert::string($page, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
                 $main_module = XotData::make()->main_module;

@@ -5,33 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Models;
 
 use Modules\Xot\Tests\TestCase;
-<<<<<<< .merge_file_kYvh5h
-<<<<<<< HEAD
-<<<<<<< HEAD
 use ReflectionClass;
-=======
-<<<<<<< .merge_file_lpuvPc
-<<<<<<< HEAD
-use PHPUnit\Framework\Assert;
-=======
-<<<<<<< HEAD
-use PHPUnit\Framework\Assert;
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-use ReflectionClass;
-=======
->>>>>>> .merge_file_TPktOC
->>>>>>> laraxot/dev
-=======
-use PHPUnit\Framework\Assert;
-=======
->>>>>>> laraxot/dev
-use ReflectionClass;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-use ReflectionClass;
->>>>>>> .merge_file_OYRyk3
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
@@ -95,23 +69,7 @@ function methodsShadowingTraits(): array
     );
 
     foreach ($iterator as $fileInfo) {
-<<<<<<< .merge_file_kYvh5h
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
-=======
-<<<<<<< .merge_file_lpuvPc
-        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
-=======
-        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
->>>>>>> .merge_file_TPktOC
->>>>>>> laraxot/dev
-=======
-        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
->>>>>>> .merge_file_OYRyk3
             continue;
         }
 
@@ -125,35 +83,10 @@ function methodsShadowingTraits(): array
         $ns = [];
         $cls = [];
 
-<<<<<<< .merge_file_kYvh5h
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_lpuvPc
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_OYRyk3
         if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
             continue;
         }
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls) !== 1) {
-<<<<<<< .merge_file_kYvh5h
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-        if (1 !== preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns)) {
-            continue;
-        }
-        if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls)) {
->>>>>>> .merge_file_TPktOC
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_OYRyk3
             continue;
         }
 
@@ -163,23 +96,7 @@ function methodsShadowingTraits(): array
             continue;
         }
 
-<<<<<<< .merge_file_kYvh5h
-<<<<<<< HEAD
-<<<<<<< HEAD
         $reflection = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_lpuvPc
-        $reflection = new ReflectionClass($class);
-=======
-        $reflection = new \ReflectionClass($class);
->>>>>>> .merge_file_TPktOC
->>>>>>> laraxot/dev
-=======
-        $reflection = new ReflectionClass($class);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $reflection = new ReflectionClass($class);
->>>>>>> .merge_file_OYRyk3
         $traitMethods = [];
 
         foreach ($reflection->getTraits() as $trait) {
@@ -188,23 +105,7 @@ function methodsShadowingTraits(): array
             }
         }
 
-<<<<<<< .merge_file_kYvh5h
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($traitMethods === []) {
-=======
-<<<<<<< .merge_file_lpuvPc
-        if ($traitMethods === []) {
-=======
-        if ([] === $traitMethods) {
->>>>>>> .merge_file_TPktOC
->>>>>>> laraxot/dev
-=======
-        if ($traitMethods === []) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($traitMethods === []) {
->>>>>>> .merge_file_OYRyk3
             continue;
         }
 
@@ -226,23 +127,7 @@ function methodsShadowingTraits(): array
             $shadowed[] = $name.'() — oscura '.class_basename($traitMethods[$name]);
         }
 
-<<<<<<< .merge_file_kYvh5h
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($shadowed !== []) {
-=======
-<<<<<<< .merge_file_lpuvPc
-        if ($shadowed !== []) {
-=======
-        if ([] !== $shadowed) {
->>>>>>> .merge_file_TPktOC
->>>>>>> laraxot/dev
-=======
-        if ($shadowed !== []) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($shadowed !== []) {
->>>>>>> .merge_file_OYRyk3
             $offenders[str_replace(base_path().'/', '', $path)] = $shadowed;
         }
     }

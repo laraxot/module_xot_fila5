@@ -1,14 +1,4 @@
 ---
-<<<<<<< .merge_file_KtV3Bi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_b1OflF
 title: Navigation
 description: Building a navigation menu for your site
 extends: _layouts.documentation
@@ -45,17 +35,6 @@ $page->navigation
 ### Versione HEAD
 
 ## Collegamenti tra versioni di navigation.md
-<<<<<<< .merge_file_KtV3Bi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_b1OflF
 * [navigation.md](../../../Gdpr/docs/navigation.md)
 * [navigation.md](../../../Xot/docs/navigation.md)
 * [navigation.md](../../../UI/docs/navigation.md)
@@ -66,21 +45,3 @@ $page->navigation
 ### Versione Incoming
 
 ---
-<<<<<<< .merge_file_KtV3Bi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-module: theme
-topic: navigation
-canonical: ../../../Themes/docs/shared-components/navigation.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/navigation.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_b1OflF

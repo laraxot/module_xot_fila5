@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_rwjUL5
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -45,60 +37,6 @@ docs/phpstan/
 packages/cache/
 packages/temp/
 # --- Cache & temporary ---
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-# ==============================================
-# LARAXOT MODULE XOT - .GITIGNORE
-# ==============================================
-# Modulo base Laraxot - Template standardizzato
-# Ultimo aggiornamento: 2025-01-06
-# ==============================================
-
-# ==============================================
-# DEPENDENCIES & PACKAGES
-# ==============================================
-vendor/
-node_modules/
-package-lock.json
-yarn.lock
-composer.lock
-docs/vendor/
-
-# ==============================================
-# BUILD & COMPILED FILES
-# ==============================================
-build/
-dist/
-cache/
-
-# ==============================================
-# LARAVEL SPECIFIC
-# ==============================================
-bootstrap/compiled.php
-app/storage/
-public/storage
-public/hot
-public_html/storage
-public_html/hot
-storage/*.key
-.env
-.env.*
-!.env.example
-
-# ==============================================
-# CACHE & TEMPORARY FILES
-# ==============================================
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rwjUL5
 *.cache
 *.lock
 *.phar
@@ -111,41 +49,12 @@ storage/*.key
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-<<<<<<< HEAD
 # --- Logs ---
-=======
-<<<<<<< HEAD
-# --- Logs ---
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-# ==============================================
-# LOG FILES
-# ==============================================
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-# --- Logs ---
->>>>>>> .merge_file_rwjUL5
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_rwjUL5
 # --- Laravel runtime ---
 app/storage/
 public/storage
@@ -157,37 +66,12 @@ storage/*.key
 .env.*
 !.env.example
 # --- Environment & IDE ---
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-# ==============================================
-# ENVIRONMENT & CONFIGURATION
-# ==============================================
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rwjUL5
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 .phpstorm.meta.php
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_rwjUL5
 .windsurf/
 .cursor/
 .vscode/
@@ -203,29 +87,6 @@ Homestead.json
 *.orig
 *.rej
 # --- System files ---
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-# ==============================================
-# GIT SPECIFIC
-# ==============================================
-.git-rewrite/
-.git-blame-ignore-revs
-
-# ==============================================
-# SYSTEM FILES
-# ==============================================
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rwjUL5
 .DS_Store
 .DS_Store?
 ._*
@@ -234,43 +95,12 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 *.exe
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_rwjUL5
 agentdb.rvf
 # --- Copy / backup / old files ---
 * copy
 * copy.*
 * copy/
 *.copy
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-# Copy files (duplicati temporanei)
-* copy
-* copy.*
-*.copy
-*~
-
-# ==============================================
-# BACKUP FILES
-# ==============================================
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rwjUL5
 *.old
 *.old1
 *.old2
@@ -281,57 +111,11 @@ agentdb.rvf
 *.bak
 *.bakcup
 *.new
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-<<<<<<< HEAD
 # --- Legacy directories (historic cleanup) ---
-=======
-<<<<<<< HEAD
-# --- Legacy directories (historic cleanup) ---
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-* copy.*
-* copy/
-*.copy
-
-# ==============================================
-# DEVELOPMENT TOOLS
-# ==============================================
-.windsurf/
-.cursor/
-
-# ==============================================
-# DOCUMENTATION CACHE
-# ==============================================
-docs/phpstan/
-docs/cache/
-docs/archive/
-docs/archive/**
-
-# ==============================================
-# OLD DIRECTORIES (LEGACY CLEANUP)
-# ==============================================
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-# --- Legacy directories (historic cleanup) ---
->>>>>>> .merge_file_rwjUL5
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_rwjUL5
 database/Factories_
 database_old/
 lang/lang/
@@ -386,99 +170,3 @@ docs/coverage-*.md
 .windsurf~*
 graphify-out/
 tests/coverage-xot.xml
-<<<<<<< .merge_file_qDfnma
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_dIJquH
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-database_old/
-database/Factories_
-
-# ==============================================
-# MODULE SPECIFIC - XOT
-# ==============================================
-# File di test temporanei
-test.txt
-testbench.yaml
-
-# File di configurazione locale
-config/local.php
-config/development.php
-
-# Cache specifiche del modulo
-packages/cache/
-packages/temp/
-
-# ==============================================
-# PROJECT SPECIFIC
-# ==============================================
-*.fila2
-
-# ==============================================
-# END OF XOT .GITIGNORE
-# ==============================================
-lang/lang/
-_docs/
-_docs/
-*.pest.php
-
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-*~HEAD
-*~BASE
-*~LOCAL
-*~REMOTE
-*.orig
-*.rej
-<<<<<<< HEAD
-*~headagentdb.rvf
-audit-coverage/
-.vscode/
-.devcontainer/
-.vscode/
-.claude-audit/
-docs/assets/
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0u77wb
->>>>>>> laraxot/dev
-=======
-*~head
-agentdb.rvf
-
-# Legacy PHPUnit (solo cartella maiuscola Tests/ — non confondere con Pest tests/)
-/Tests/
-
-# Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
-!tests/
-!tests/**
-# claude-audit static — dev MCP scripts (not production runtime)
-docs/mcp-laravel-artisan-server.js
-# Dev-only artisan commands (audit nesting in maintenance tooling)
-app/Console/Commands/AddStrictTypesDeclarationCommand.php
-app/Console/Commands/OptimizeFilamentMemoryCommand.php
-app/Console/Commands/SearchTextInDbCommand.php
-# Export/header actions — legacy Excel stack (audit-only exclusion; refactor tracked separately)
-app/Actions/Export/ExportXlsStreamByLazyCollection.php
-app/Actions/File/DownloadZipByPathsDiskAction.php
-app/Actions/Model/GetAllModelsByModuleNameAction.php
-app/Filament/Actions/Header/ExportXlsAction.php
-app/Filament/Actions/Header/ExportXlsLazyAction.php
-app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php
-app/Filament/Actions/Table/ExportXlsTableAction.php
-app/Providers/FilamentOptimizationServiceProvider.php
-app/Filament/Widgets/XotBaseWidget.php
-app/Datas/MetatagData.php
-app/Filament/Traits/HasXotTable.php
-
-# Legacy Services/ root (violates no-services — canon app/Actions + app/Services only via manifest)
-Services/
-docs/legacy
-
-# claude-audit bridge (non committare)
-audit-coverage/
-tests/AuditCoverage/*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rwjUL5

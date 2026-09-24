@@ -142,20 +142,4 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Inheritance over Composition**: Clear inheritance chains for maintainability
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
-<<<<<<< .merge_file_lKNhsl
-<<<<<<< HEAD
-<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
-=======
-<<<<<<< HEAD
-This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
-=======
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
->>>>>>> .merge_file_ACz73P

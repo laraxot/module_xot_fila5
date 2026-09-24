@@ -111,20 +111,4 @@ Mentre la regola della directory `app` è importante per la coerenza e l'autoloa
 1. **Compatibilità con Laravel**: Il framework si aspetta certi file in posizioni specifiche
 2. **Convenzioni di Modularità**: Alcuni file devono seguire convenzioni specifiche per il loading modulare
 3. **Funzionalità degli Strumenti**: Certi strumenti di sviluppo richiedono file di configurazione in posizioni specifiche
-<<<<<<< .merge_file_k2nIsB
-<<<<<<< HEAD
-<<<<<<< HEAD
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
-=======
-<<<<<<< HEAD
-4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
-=======
-4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
->>>>>>> .merge_file_yd6eF7

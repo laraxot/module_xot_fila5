@@ -1,25 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
-<<<<<<< .merge_file_uDVOan
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
-=======
-
-use Illuminate\Database\Schema\Blueprint;
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class extends XotBaseMigration {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_pxpwa8
     /**
      * Run the migrations.
      */

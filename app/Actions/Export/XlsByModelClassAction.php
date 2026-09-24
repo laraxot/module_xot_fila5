@@ -10,17 +10,6 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Actions\Model\GetTransKeyByModelClassAction;
-<<<<<<< .merge_file_B928mp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// use Modules\Xot\Services\ArrayService;
->>>>>>> laraxot/dev
-=======
-// use Modules\Xot\Services\ArrayService;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_mAUkCk
 use Modules\Xot\Exports\CollectionExport;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -33,31 +22,11 @@ class XlsByModelClassAction
     /**
      * Esporta i dati di un modello in Excel.
      *
-<<<<<<< .merge_file_B928mp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_mAUkCk
      * @param  class-string<Model>  $modelClass  Classe del modello da esportare
      * @param  array<string, mixed>  $where  Condizioni where per la query
      * @param  array<int, string>  $includes  Relazioni o campi da includere
      * @param  array<int, string>  $excludes  Campi da escludere
      * @param  callable(array<string, mixed>|Model, int): mixed|null  $callback  Callback per manipolare i dati
-<<<<<<< .merge_file_B928mp
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param class-string<Model>                                   $modelClass Classe del modello da esportare
-     * @param array<string, mixed>                                  $where      Condizioni where per la query
-     * @param array<int, string>                                    $includes   Relazioni o campi da includere
-     * @param array<int, string>                                    $excludes   Campi da escludere
-     * @param callable(array<string, mixed>|Model, int): mixed|null $callback   Callback per manipolare i dati
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_mAUkCk
      */
     public function execute(
         string $modelClass,
@@ -87,17 +56,8 @@ class XlsByModelClassAction
         $rows = $query->get();
 
         // Filtriamo i campi se sono specificati gli includes
-<<<<<<< .merge_file_B928mp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_mAUkCk
         if ($includes !== []) {
             $rows = $rows->map(static function (Model $item) use ($includes) {
-=======
-        if ([] !== $includes) {
-            $rows = $rows->map(static function ($item) use ($includes) {
->>>>>>> 8d801bbe (Check & fix styling)
                 $data = [];
                 foreach ($includes as $include) {
                     $data[$include] = data_get($item, $include);
@@ -107,71 +67,18 @@ class XlsByModelClassAction
             });
         }
 
-<<<<<<< .merge_file_B928mp
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($excludes !== []) {
-            $rows = $rows->map(function (Model|array $item) use ($excludes): Model|array {
-=======
-        if ([] !== $excludes) {
-            $rows = $rows->map(function ($item) use ($excludes) {
->>>>>>> 8d801bbe (Check & fix styling)
-                if ($item instanceof Model) {
-                    return $item->makeHidden($excludes);
-                }
-
-                return $item;
-            });
-        }
-
-        // Applichiamo il callback se fornito
-<<<<<<< HEAD
-        if ($callback !== null) {
-            /** @var \Closure(Model|array<array-key, mixed>, int): mixed $mapCallback */
-            $mapCallback = static function (Model|array $item, int $key) use ($callback): mixed {
-                if ($item instanceof Model) {
-                    return $callback($item, $key);
-                }
-
-                /** @var array<string, mixed> $data */
-                $data = [];
-                foreach ($item as $itemKey => $itemValue) {
-                    if (is_string($itemKey)) {
-                        $data[$itemKey] = $itemValue;
-                    }
-                }
-
-                return $callback($data, $key);
-            };
-            $rows = $rows->map($mapCallback);
-=======
-        if ([] !== $excludes) {
-=======
-        if ($excludes !== []) {
->>>>>>> .merge_file_mAUkCk
             $rows = $rows->map(static fn (Model|array $item): Model|array => $item instanceof Model ? $item->makeHidden($excludes) : $item);
         }
 
         // Applichiamo il callback se fornito
         if ($callback !== null) {
             $rows = $rows->map($this->rowCallback($callback));
-<<<<<<< .merge_file_B928mp
->>>>>>> laraxot/dev
-=======
-        if (null !== $callback) {
-            $rows = $rows->map($callback);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_mAUkCk
         }
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
-<<<<<<< HEAD
         /** @var Collection<int|string, mixed> $exportRows */
-=======
-        /** @var Collection<int, mixed> $exportRows */
->>>>>>> 8d801bbe (Check & fix styling)
         $exportRows = $rows;
         $collectionExport = new CollectionExport($exportRows, $transKey);
         $filename = $this->getExportName($modelClass);
@@ -180,18 +87,7 @@ class XlsByModelClassAction
     }
 
     /**
-<<<<<<< .merge_file_B928mp
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * Ottiene le relazioni da caricare in base ai campi inclusi.
-     *
-     * @param  array<int, string>  $includes  Campi da includere
-=======
-     * @param callable(array<string, mixed>|Model, int): mixed $callback
-     *
-=======
      * @param  callable(array<string, mixed>|Model, int): mixed  $callback
->>>>>>> .merge_file_mAUkCk
      * @return \Closure(Model|array<array-key, mixed>, int): mixed
      */
     private function rowCallback(callable $callback): \Closure
@@ -214,20 +110,9 @@ class XlsByModelClassAction
     }
 
     /**
-=======
->>>>>>> 8d801bbe (Check & fix styling)
      * Ottiene le relazioni da caricare in base ai campi inclusi.
      *
-<<<<<<< .merge_file_B928mp
-     * @param array<int, string> $includes Campi da includere
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  array<int, string>  $includes  Campi da includere
->>>>>>> .merge_file_mAUkCk
      * @return array<int, string>
      */
     private function getWithByIncludes(array $includes): array
@@ -255,19 +140,7 @@ class XlsByModelClassAction
     /**
      * Genera il nome del file di export.
      *
-<<<<<<< .merge_file_B928mp
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  string  $modelClass  Classe del modello
-=======
-     * @param string $modelClass Classe del modello
->>>>>>> laraxot/dev
-=======
-     * @param string $modelClass Classe del modello
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  string  $modelClass  Classe del modello
->>>>>>> .merge_file_mAUkCk
      */
     private function getExportName(string $modelClass): string
     {

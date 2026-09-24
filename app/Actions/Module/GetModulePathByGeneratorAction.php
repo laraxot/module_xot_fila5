@@ -6,36 +6,15 @@ namespace Modules\Xot\Actions\Module;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
-<<<<<<< HEAD
 
 class GetModulePathByGeneratorAction
 {
-=======
-use Spatie\QueueableAction\QueueableAction;
-
-class GetModulePathByGeneratorAction
-{
-    use QueueableAction;
-
->>>>>>> 8d801bbe (Check & fix styling)
     public function execute(string $moduleName, string $generatorPath): string
     {
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');
         try {
             $res = module_path($moduleName, $relativePath);
-<<<<<<< .merge_file_ICzGxP
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($res !== '') {
-=======
-            if ('' !== $res) {
->>>>>>> laraxot/dev
-=======
-            if ('' !== $res) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($res !== '') {
->>>>>>> .merge_file_FBMiPe
                 return $res;
             }
         } catch (\Exception|\Error $e) {
