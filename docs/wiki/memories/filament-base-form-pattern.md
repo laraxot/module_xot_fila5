@@ -43,47 +43,7 @@ Modules/IndennitaResponsabilita/app/Filament/Resources/MessageResource/Schemas/
 // Modules/Ptv/.../Schemas/BaseMessageForm.php
 abstract class BaseMessageForm extends XotBaseResourceForm
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_R4WTv7
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_HX3DCo
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_2KNDwX
-<<<<<<< .merge_file_2Lz1Im
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_yUoYcN
-<<<<<<< .merge_file_R4WTv7
-=======
->>>>>>> .merge_file_HubYRA
->>>>>>> .merge_file_2KNDwX
->>>>>>> laraxot/dev
     {
         return [
             'type' => Select::make('type')

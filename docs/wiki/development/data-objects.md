@@ -111,47 +111,7 @@ use Filament\Forms;
 
 class PerformanceResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_DaOkyT
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_qlIRXt
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_eexB4m
-<<<<<<< .merge_file_GD0hmk
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0zKIQB
-<<<<<<< .merge_file_DaOkyT
-=======
->>>>>>> .merge_file_0OdOXi
->>>>>>> .merge_file_eexB4m
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')
