@@ -8,6 +8,7 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+<<<<<<< .merge_file_GNpg2u
 use Nwidart\Modules\Module;
 <<<<<<< HEAD
 use Webmozart\Assert\Assert;
@@ -15,12 +16,19 @@ use Webmozart\Assert\Assert;
 use function Safe\preg_match;
 
 =======
+=======
+use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
+use Nwidart\Modules\Module;
+>>>>>>> .merge_file_D0wWUc
 
 use function Safe\preg_match;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_GNpg2u
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_D0wWUc
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -54,6 +62,14 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             $this->configureQueryLogging();
         }
 
+<<<<<<< .merge_file_GNpg2u
+=======
+        // Registra middleware di monitoraggio
+        if (config('filament_optimization.monitoring.memory_profiling', false)) {
+            $this->registerMemoryMonitoring();
+        }
+
+>>>>>>> .merge_file_D0wWUc
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -124,6 +140,18 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
+<<<<<<< .merge_file_GNpg2u
+=======
+     * Registra il middleware di monitoraggio memoria.
+     */
+    private function registerMemoryMonitoring(): void
+    {
+        // Il middleware verrà registrato nel kernel HTTP
+        app('router')->pushMiddlewareToGroup('web', FilamentMemoryMonitorMiddleware::class);
+    }
+
+    /**
+>>>>>>> .merge_file_D0wWUc
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

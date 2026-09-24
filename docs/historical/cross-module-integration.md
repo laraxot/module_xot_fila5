@@ -42,10 +42,20 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_bB3oCr
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_8ooCOz
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bB3oCr
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_8ooCOz
     {
         return [
             // Schema del form
@@ -123,10 +133,20 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_bB3oCr
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_8ooCOz
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bB3oCr
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_8ooCOz
     {
         return [
             Section::make('Dati Anagrafici')

@@ -1,10 +1,11 @@
 <?php
 
 declare(strict_types=1);
-
-uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('casts various values to integer correctly', function (): void {
     $action = app(SafeIntCastAction::class);
@@ -19,8 +20,7 @@ it('casts various values to integer correctly', function (): void {
     // Strings
     Assert::assertSame(123, $action->execute('123'));
     Assert::assertSame(1234, $action->execute('1.234')); // Thousands separator
-    $signedWhitespaceInput = ' '.chr(43).'123 ';
-    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
+    Assert::assertSame(123, $action->execute(' +123 '));
     Assert::assertSame(7, $action->execute('invalid', 7));
     Assert::assertSame(0, $action->execute(''));
     // Booleans

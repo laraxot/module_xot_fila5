@@ -66,6 +66,15 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 | ❌ SBAGLIATO | ✅ CORRETTO |
 |-------------|------------|
 | `Filament\Actions\ActionGroup` | `Modules\Xot\Filament\Actions\XotBaseActionGroup` |
+<<<<<<< HEAD
+<<<<<<< .merge_file_exAuHL
+=======
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+=======
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+=======
+>>>>>>> .merge_file_4RIqcP
+>>>>>>> laraxot/dev
 
 ### Resources
 
@@ -621,7 +630,15 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -881,4 +898,8 @@ Quando finisci una modifica devi sempre controllare con:
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+=======
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+>>>>>>> laraxot/dev

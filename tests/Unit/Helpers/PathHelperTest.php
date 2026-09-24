@@ -1,137 +1,106 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\Xot\Tests\Unit\Helpers;
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-
 use Modules\Xot\Helpers\PathHelper;
 use Modules\Xot\Tests\XotBaseTestCase;
 
-class PathHelperTest extends XotBaseTestCase
-{
-    public function test_module_path_construction(): void
-    {
-        $basePath = PathHelper::$modulesBasePath;
-        $moduleName = 'User';
+uses(XotBaseTestCase::class);
 
-        $result = PathHelper::modulePath($moduleName);
+it('constructs the module path', function (): void {
+    $basePath = PathHelper::$modulesBasePath;
+    $moduleName = 'User';
 
-        $this->assertStringContainsString('User', $result);
-        $this->assertStringContainsString('Modules', $result);
-        $this->assertEquals($basePath.'/User', $result);
-    }
+    $result = PathHelper::modulePath($moduleName);
 
-    public function test_models_path_construction(): void
-    {
-        $result = PathHelper::modelsPath('User');
+    expect($result)->toContain('User');
+    expect($result)->toContain('Modules');
+    expect($result)->toBe($basePath.'/User');
+});
 
-        $this->assertStringContainsString('User', $result);
-        $this->assertStringContainsString('Models', $result);
-        $this->assertStringEndsWith('/Models', $result);
-    }
+it('constructs the models path', function (): void {
+    $result = PathHelper::modelsPath('User');
 
-    public function test_migrations_path_construction(): void
-    {
-        $result = PathHelper::migrationsPath('User');
+    expect($result)->toContain('User');
+    expect($result)->toContain('Models');
+    expect($result)->toEndWith('/Models');
+});
 
-        $this->assertStringContainsString('database/migrations', $result);
-    }
+it('constructs the migrations path', function (): void {
+    $result = PathHelper::migrationsPath('User');
 
-    public function test_controllers_path_construction(): void
-    {
-        $result = PathHelper::controllersPath('User');
+    expect($result)->toContain('database/migrations');
+});
 
-        $this->assertStringContainsString('Controllers', $result);
-        $this->assertStringContainsString('Http', $result);
-    }
+it('constructs the controllers path', function (): void {
+    $result = PathHelper::controllersPath('User');
 
-    public function test_seeders_path_construction(): void
-    {
-        $result = PathHelper::seedersPath('Media');
+    expect($result)->toContain('Controllers');
+    expect($result)->toContain('Http');
+});
 
-        $this->assertStringContainsString('seeders', $result);
-    }
+it('constructs the seeders path', function (): void {
+    $result = PathHelper::seedersPath('Media');
 
-    public function test_providers_path_construction(): void
-    {
-        $result = PathHelper::providersPath('Xot');
+    expect($result)->toContain('seeders');
+});
 
-        $this->assertStringContainsString('Providers', $result);
-    }
+it('constructs the providers path', function (): void {
+    $result = PathHelper::providersPath('Xot');
 
-    public function test_views_path_construction(): void
-    {
-        $result = PathHelper::viewsPath('UI');
+    expect($result)->toContain('Providers');
+});
 
-        $this->assertStringContainsString('views', $result);
-        $this->assertStringContainsString('resources', $result);
-    }
+it('constructs the views path', function (): void {
+    $result = PathHelper::viewsPath('UI');
 
-    public function test_filament_resources_path_construction(): void
-    {
-        $result = PathHelper::filamentResourcesPath('Fixcity');
+    expect($result)->toContain('views');
+    expect($result)->toContain('resources');
+});
 
-        $this->assertStringContainsString('Filament', $result);
-        $this->assertStringContainsString('Resources', $result);
-    }
+it('constructs the filament resources path', function (): void {
+    $result = PathHelper::filamentResourcesPath('Demo');
 
-    public function test_is_valid_path_with_proper_format(): void
-    {
-        $validPath = '/var/www/html/project/laravel/Modules/User/app/Models';
+    expect($result)->toContain('Filament');
+    expect($result)->toContain('Resources');
+});
 
-        $this->assertTrue(PathHelper::isValidPath($validPath));
-    }
+it('validates a path with proper format', function (): void {
+    $validPath = '/var/www/html/project/laravel/Modules/User/app/Models';
 
-    public function test_is_valid_path_rejects_missing_laravel(): void
-    {
-        $invalidPath = '/var/www/html/project/Modules/User/app/Models';
+    expect(PathHelper::isValidPath($validPath))->toBeTrue();
+});
 
-        $this->assertFalse(PathHelper::isValidPath($invalidPath));
-    }
+it('rejects a path missing the laravel segment', function (): void {
+    $invalidPath = '/var/www/html/project/Modules/User/app/Models';
 
-    public function test_is_valid_path_generic(): void
-    {
-        $this->assertTrue(PathHelper::isValidPath('/var/www/generic/path'));
-    }
+    expect(PathHelper::isValidPath($invalidPath))->toBeFalse();
+});
 
-    public function test_correct_path_fixes_wrong_prefix(): void
-    {
-        $wrongPath = '/var/www/html/Modules/User/Models';
+it('validates a generic path', function (): void {
+    expect(PathHelper::isValidPath('/var/www/generic/path'))->toBeTrue();
+});
 
-        $corrected = PathHelper::correctPath($wrongPath);
+it('fixes a path with wrong prefix', function (): void {
+    $wrongPath = '/var/www/html/Modules/User/Models';
 
-        $this->assertStringContainsString(PathHelper::$modulesBasePath, $corrected);
-        $this->assertStringNotContainsString('/var/www/html/Modules/', $corrected);
-    }
+    $corrected = PathHelper::correctPath($wrongPath);
 
-    public function test_correct_path_leaves_valid_unchanged(): void
-    {
-        $validPath = '/var/www/html/project/laravel/Modules/User';
+    expect($corrected)->toContain(PathHelper::$modulesBasePath);
+    expect($corrected)->not->toContain('/var/www/html/Modules/');
+});
 
-        $corrected = PathHelper::correctPath($validPath);
+it('leaves a valid path unchanged', function (): void {
+    $validPath = '/var/www/html/project/laravel/Modules/User';
 
-        $this->assertEquals($validPath, $corrected);
-    }
+    $corrected = PathHelper::correctPath($validPath);
 
-    public function test_module_exists_returns_bool(): void
-    {
-        // Xot module should exist
-        $exists = PathHelper::moduleExists('Xot');
+    expect($corrected)->toBe($validPath);
+});
 
-        $this->assertIsBool($exists);
-    }
+it('rejects a missing module', function (): void {
+    expect(PathHelper::moduleExists('__missing_module__'))->toBeFalse();
+});
 
-    public function test_get_modules_returns_array(): void
-    {
-        $modules = PathHelper::getModules();
-
-        $this->assertIsArray($modules);
-    }
-}
+it('returns an empty array for a missing base path', function (): void {
+    expect(PathHelper::getModules())->toBe([]);
+});

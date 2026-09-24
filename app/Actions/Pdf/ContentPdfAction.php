@@ -74,14 +74,11 @@ class ContentPdfAction
      *
      * Metodo di convenienza per generare PDF da viste Blade.
      *
-     * @param string $view     Nome della vista Blade
-     * @param array  $data     Dati da passare alla vista
-     * @param string $filename Nome del file PDF (per riferimento)
+     * @param string               $view     Nome della vista Blade
+     * @param array<string, mixed> $data     Dati da passare alla vista
+     * @param string               $filename Nome del file PDF (per riferimento)
      *
      * @return string Contenuto binario del PDF
-     */
-    /**
-     * @param array<string, mixed> $data
      */
     public function fromView(string $view, array $data = [], string $filename = 'document.pdf'): string
     {

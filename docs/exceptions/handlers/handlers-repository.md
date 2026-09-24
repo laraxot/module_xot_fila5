@@ -83,6 +83,12 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 - Gestire correttamente le eccezioni annidate
 
 ## Collegamenti
+<<<<<<< HEAD
+- [Exception Handling Guide](../EXCEPTION-HANDLING-GUIDE.md)
+- [Error Formatters](../formatters/README.md)
+- [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
+- [Handlers Overview](./README.md)
+=======
 - [Exception Handling Guide](../exception-handling-guide.md)
 - [Error Formatters](../formatters/readme.md)
 - [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
@@ -91,3 +97,4 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 - [Error Formatters](../formatters/README.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
 - [Handlers Overview](./README.md)
+>>>>>>> laraxot/dev

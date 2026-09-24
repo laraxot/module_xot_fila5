@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_SmVuUD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_x3GGMi
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,7 +16,15 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SmVuUD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_rK4MHl
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi
 ---
 title: "Readme"
 type: reference
@@ -19,12 +33,27 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_SmVuUD
+=======
+<<<<<<< .merge_file_rK4MHl
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_x3GGMi
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SmVuUD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi
 
 # Convenzioni
 
@@ -40,9 +69,21 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 <<<<<<< HEAD
+<<<<<<< .merge_file_SmVuUD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_rK4MHl
+=======
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -183,12 +224,25 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
+<<<<<<< .merge_file_SmVuUD
+=======
+<<<<<<< .merge_file_rK4MHl
+=======
+
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_x3GGMi
 <<<<<<< HEAD
 =======
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SmVuUD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -240,6 +294,16 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_SmVuUD
+=======
+<<<<<<< .merge_file_rK4MHl
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_x3GGMi
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -247,6 +311,11 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SmVuUD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -274,9 +343,20 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_SmVuUD
 
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_rK4MHl
+=======
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi
 
 <<<<<<< HEAD
 =======
@@ -323,4 +403,12 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_SmVuUD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_rK4MHl
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vi7pr0
+>>>>>>> .merge_file_x3GGMi

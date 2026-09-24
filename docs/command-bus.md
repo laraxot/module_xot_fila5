@@ -1,17 +1,72 @@
+<<<<<<< HEAD
+<<<<<<< .merge_file_dMzySF
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NHaYFD
+---
+title: "Command bus"
+type: reference
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da command_bus.txt (documento) da convert-docs-txt-to-md.py."
+---
+
+# command_bus
+
+<!-- Contenuto migrato da _docs/command_bus.txt -->
+
+<<<<<<< .merge_file_dMzySF
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NHaYFD
+=======
+>>>>>>> laraxot/dev
 Command Bus in Laravel Published 21 Mar 2019
 https://martinbean.dev/blog/2019/03/21/command-bus-in-laravel/
 
 What is a command bus and why should you use it?
 https://barryvanveen.nl/blog/49-what-is-a-command-bus-and-why-should-you-use-it
 
+<<<<<<< .merge_file_dMzySF
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NHaYFD
 https://laracasts.com/discuss/channels/laravel/the-future-of-the-command-bus. 
 And yes it has been renamed as jobs to differ from artisan command.
 https://twitter.com/taylorotwell/status/569941495127547904
 
 
+<<<<<<< .merge_file_dMzySF
+<<<<<<< HEAD
+=======
+https://laracasts.com/discuss/channels/laravel/the-future-of-the-command-bus.
+And yes it has been renamed as jobs to differ from artisan command.
+https://twitter.com/taylorotwell/status/569941495127547904
+
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NHaYFD
 Implementare un Command Bus con Laravel-Tactician
 https://laravel-italia.it/articoli/implementare-un-command-bus-con-laravel-tactician/
 
 https://github.com/jildertmiedema/laravel-tactician  on 11 Sep 2020
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/broadway/broadway 
+=======
+https://github.com/broadway/broadway 
+>>>>>>> laraxot/dev
+=======
+https://github.com/broadway/broadway 
+>>>>>>> laraxot/dev

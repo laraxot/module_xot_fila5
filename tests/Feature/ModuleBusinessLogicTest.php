@@ -11,23 +11,12 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-// Laraxot — see module docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 
 beforeEach(function (): void {
-    /* @var TestCase $this */
-    $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
+    // markTestSkipped() e' public static su PHPUnit\Framework\Assert: chiamarla via la
+    // classe evita di dipendere dal $this tipizzato da Pest come TestCall, che espone
+    // solo i metodi custom di XotBaseTestCase come assertDatabaseHasRow() tramite mixin.
+    Assert::markTestSkipped('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
 });
 
 describe('Module Business Logic', function (): void {
@@ -42,7 +31,7 @@ describe('Module Business Logic', function (): void {
 
         $module = Module::create($moduleData);
 
-        $this->assertDatabaseHasRow('modules', [
+        \Pest\Laravel\assertDatabaseHas('modules', [
             'id' => $module->id,
             'name' => 'TestModule',
             'slug' => 'test-module',
@@ -78,7 +67,7 @@ describe('Module Business Logic', function (): void {
         $freshModule = $module->fresh();
         Assert::assertNotNull($freshModule);
         Assert::assertEquals('2.0.0', $freshModule->version);
-        $this->assertDatabaseHasRow('modules', [
+        \Pest\Laravel\assertDatabaseHas('modules', [
             'id' => $module->id,
             'version' => '2.0.0',
         ], 'sushi');
@@ -171,7 +160,7 @@ describe('Module Business Logic', function (): void {
             $module = ModuleFactory::new()->createOne(['version' => $version]);
 
             Assert::assertEquals($version, $module->version);
-            $this->assertDatabaseHasRow('modules', [
+            \Pest\Laravel\assertDatabaseHas('modules', [
                 'id' => $module->id,
                 'version' => $version,
             ], 'sushi');
@@ -187,7 +176,7 @@ describe('Module Business Logic', function (): void {
         $moduleInstalledAt = $module->installation_date;
 
         Assert::assertEquals($installationDate, $moduleInstalledAt);
-        $this->assertDatabaseHasRow('modules', [
+        \Pest\Laravel\assertDatabaseHas('modules', [
             'id' => $module->id,
             'installation_date' => $installationDate,
         ], 'sushi');

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_i2OK2y
 <<<<<<< HEAD
 
 =======
@@ -10,11 +11,15 @@ declare(strict_types=1);
 use Filament\Tables\Columns\Column;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Column;
+>>>>>>> .merge_file_bnMTYc
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_i2OK2y
 <<<<<<< HEAD
 /**
  * @param object $instance
@@ -27,6 +32,8 @@ use PHPUnit\Framework\Assert;
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bnMTYc
 function invokeProtectedTableHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -35,12 +42,17 @@ function invokeProtectedTableHook(object $instance, string $method): mixed
 }
 
 test('getTableFiltersLayout default e override', function (): void {
+<<<<<<< .merge_file_i2OK2y
     $default = new class
     {
+=======
+    $default = new class {
+>>>>>>> .merge_file_bnMTYc
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_i2OK2y
 <<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
@@ -56,6 +68,10 @@ test('getTableFiltersLayout default e override', function (): void {
         public function getTableColumns(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_bnMTYc
         {
             return [];
         }
@@ -63,12 +79,17 @@ test('getTableFiltersLayout default e override', function (): void {
 
     Assert::assertSame(FiltersLayout::AboveContent, invokeProtectedTableHook($default, 'getTableFiltersLayout'));
 
+<<<<<<< .merge_file_i2OK2y
     $custom = new class
     {
+=======
+    $custom = new class {
+>>>>>>> .merge_file_bnMTYc
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_i2OK2y
 <<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
@@ -84,6 +105,10 @@ test('getTableFiltersLayout default e override', function (): void {
         public function getTableColumns(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_bnMTYc
         {
             return [];
         }
@@ -98,12 +123,17 @@ test('getTableFiltersLayout default e override', function (): void {
 });
 
 test('getTableRecordActionsPosition default e override', function (): void {
+<<<<<<< .merge_file_i2OK2y
     $default = new class
     {
+=======
+    $default = new class {
+>>>>>>> .merge_file_bnMTYc
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_i2OK2y
 <<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
@@ -119,6 +149,10 @@ test('getTableRecordActionsPosition default e override', function (): void {
         public function getTableColumns(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_bnMTYc
         {
             return [];
         }
@@ -126,12 +160,17 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
     Assert::assertSame(RecordActionsPosition::BeforeColumns, invokeProtectedTableHook($default, 'getTableRecordActionsPosition'));
 
+<<<<<<< .merge_file_i2OK2y
     $custom = new class
     {
+=======
+    $custom = new class {
+>>>>>>> .merge_file_bnMTYc
         use HasXotTable;
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_i2OK2y
 <<<<<<< HEAD
         /** @return array<string, \Filament\Tables\Columns\Column> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
@@ -147,6 +186,10 @@ test('getTableRecordActionsPosition default e override', function (): void {
         public function getTableColumns(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> .merge_file_bnMTYc
         {
             return [];
         }

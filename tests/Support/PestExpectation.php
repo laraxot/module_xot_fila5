@@ -37,41 +37,41 @@ final class PestExpectation
         return new self($value);
     }
 
-    public function toBe(mixed $expected): self
+    public function toBe(mixed $expected, string $message = ''): self
     {
         $this->negated
-            ? Assert::assertNotSame($expected, $this->value)
-            : Assert::assertSame($expected, $this->value);
+            ? Assert::assertNotSame($expected, $this->value, $message)
+            : Assert::assertSame($expected, $this->value, $message);
 
         return $this;
     }
 
-    public function toEqual(mixed $expected): self
+    public function toEqual(mixed $expected, string $message = ''): self
     {
         $this->negated
-            ? Assert::assertNotEquals($expected, $this->value)
-            : Assert::assertEquals($expected, $this->value);
+            ? Assert::assertNotEquals($expected, $this->value, $message)
+            : Assert::assertEquals($expected, $this->value, $message);
 
         return $this;
     }
 
-    public function toBeTrue(): self
+    public function toBeTrue(string $message = ''): self
     {
-        $this->negated ? Assert::assertNotTrue($this->value) : Assert::assertTrue($this->value);
+        $this->negated ? Assert::assertNotTrue($this->value, $message) : Assert::assertTrue($this->value, $message);
 
         return $this;
     }
 
-    public function toBeFalse(): self
+    public function toBeFalse(string $message = ''): self
     {
-        $this->negated ? Assert::assertNotFalse($this->value) : Assert::assertFalse($this->value);
+        $this->negated ? Assert::assertNotFalse($this->value, $message) : Assert::assertFalse($this->value, $message);
 
         return $this;
     }
 
-    public function toBeNull(): self
+    public function toBeNull(string $message = ''): self
     {
-        $this->negated ? Assert::assertNotNull($this->value) : Assert::assertNull($this->value);
+        $this->negated ? Assert::assertNotNull($this->value, $message) : Assert::assertNull($this->value, $message);
 
         return $this;
     }
@@ -132,24 +132,24 @@ final class PestExpectation
     /**
      * @param class-string $expectedClass
      */
-    public function toBeInstanceOf(string $expectedClass): self
+    public function toBeInstanceOf(string $expectedClass, string $message = ''): self
     {
         $this->negated
-            ? Assert::assertNotInstanceOf($expectedClass, $this->value)
-            : Assert::assertInstanceOf($expectedClass, $this->value);
+            ? Assert::assertNotInstanceOf($expectedClass, $this->value, $message)
+            : Assert::assertInstanceOf($expectedClass, $this->value, $message);
 
         return $this;
     }
 
-    public function toHaveCount(int $count): self
+    public function toHaveCount(int $count, string $message = ''): self
     {
         if ($this->negated) {
-            Assert::assertNotCount($count, $this->normaliseCountable($this->value));
+            Assert::assertNotCount($count, $this->normaliseCountable($this->value), $message);
 
             return $this;
         }
 
-        Assert::assertCount($count, $this->normaliseCountable($this->value));
+        Assert::assertCount($count, $this->normaliseCountable($this->value), $message);
 
         return $this;
     }
@@ -174,7 +174,7 @@ final class PestExpectation
         return $this;
     }
 
-    public function toHaveKey(mixed $key): self
+    public function toHaveKey(mixed $key, mixed $value = null, string $message = ''): self
     {
         if (! is_int($key) && ! is_string($key)) {
             Assert::fail('Expected key must be an integer or string.');
@@ -182,15 +182,20 @@ final class PestExpectation
 
         if ($this->value instanceof \ArrayAccess) {
             $exists = $this->value->offsetExists($key);
-            $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
+            $this->negated ? Assert::assertFalse($exists, $message) : Assert::assertTrue($exists, $message);
 
             return $this;
         }
 
         Assert::assertIsArray($this->value);
         $this->negated
-            ? Assert::assertArrayNotHasKey($key, $this->value)
-            : Assert::assertArrayHasKey($key, $this->value);
+            ? Assert::assertArrayNotHasKey($key, $this->value, $message)
+            : Assert::assertArrayHasKey($key, $this->value, $message);
+
+        if (2 === func_num_args() || (3 === func_num_args() && ! $this->negated)) {
+            Assert::assertArrayHasKey($key, (array) $this->value);
+            Assert::assertEquals($value, ((array) $this->value)[$key], $message);
+        }
 
         return $this;
     }

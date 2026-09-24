@@ -33,19 +33,16 @@ class GetModulePathAction
                 return __DIR__.'/../';
             }
 
+            /** @var array<int, string> $files */
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
 
-            $foundModule = collect($files)->filter(static function ($item) use ($moduleNameLower): bool {
-                if (! is_string($item)) {
-                    return false;
-                }
-
+            $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
                 return Str::lower($item) === $moduleNameLower;
             })->first();
 
             // Se non troviamo il modulo, restituiamo un percorso di fallback
-            if (null === $foundModule || ! is_string($foundModule)) {
+            if (! is_string($foundModule)) {
                 return base_path('Modules/'.$moduleName);
             }
 

@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+---
+title: "Quality Tools Status Nov"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated quality-tools-status-nov"
+related:
+  - "./quality-tools-status-nov.md"
+---
+# Quality Tools Status Nov
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [quality-tools-status-nov.md](./quality-tools-status-nov.md)
+=======
 # Status Quality Tools - Novembre 2025
 
 ## 🎯 Obiettivo
@@ -210,3 +228,4 @@ php -l path/to/modified/file.php
 - PHPMD eseguito sui file aggiornati (`GetAllIconsAction`, `InlineDatePicker`, `Extra`, `XotBasePivot`, `XotBaseUuidModel`): nessuna nuova violazione rilevata.
 - PHPInsights eseguito sugli stessi file: esito positivo (complessità segnalata da soglie legacy, documentata nelle relative sezioni di modulo).
 - Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
+>>>>>>> laraxot/dev

@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /*
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Datas;
 

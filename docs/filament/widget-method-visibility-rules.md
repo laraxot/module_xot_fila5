@@ -1,9 +1,35 @@
 # Regole Visibilità Metodi Widget - HasXotTable
 
+<<<<<<< HEAD
+<<<<<<< .merge_file_WDdGMm
+<<<<<<< HEAD
 **Data Creazione**: 2025-01-27  
 **Ultimo Aggiornamento**: 2026-01-27  
 **Ultimo Aggiornamento**: 2026-01-27  
 **Status**: ✅ Critico
+=======
+**Status**: Critico
+**Ultimo aggiornamento**: 2026-09-03
+>>>>>>> .merge_file_K6IqQn
+
+## Regola Fondamentale
+
+Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perché vengono chiamati da Filament/Livewire dall'esterno della classe. I widget che sovrascrivono questi metodi **DEVONO** mantenere la stessa visibilità `public`.
+
+In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTableActions`, `getTableBulkActions` devono essere migrati verso `table(Table $table): Table`. La regola `resolve*` non esiste come metodo: usare sempre `get*`.
+
+=======
+<<<<<<< .merge_file_WDdGMm
+=======
+>>>>>>> laraxot/dev
+**Status**: Critico
+**Ultimo aggiornamento**: 2026-09-03
+=======
+**Data Creazione**: 2025-01-27  
+**Ultimo Aggiornamento**: 2026-01-27  
+**Ultimo Aggiornamento**: 2026-01-27  
+**Status**: ✅ Critico
+>>>>>>> .merge_file_K6IqQn
 
 ## Regola Fondamentale
 
@@ -11,6 +37,15 @@ Tutti i metodi `getTable*()` nel trait `HasXotTable` sono dichiarati come `prote
 Tutti i metodi `getTable*()` nel trait `HasXotTable` sono dichiarati come `protected` per allinearsi a Filament 5 ed evitare conflitti di visibilità con il trait `InteractsWithTable`. Le classi (pagine/widget) che sovrascrivono questi metodi possono continuare a usare `public` per permettere l'accesso cross-component (widening), ma nel trait devono rimanere `protected`.
 Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perché vengono chiamati da Filament/Livewire dall'esterno della classe. I widget che sovrascrivono questi metodi **DEVONO** mantenere la stessa visibilità `public`.
 
+<<<<<<< .merge_file_WDdGMm
+In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTableActions`, `getTableBulkActions` devono essere migrati verso `table(Table $table): Table`. La regola `resolve*` non esiste come metodo: usare sempre `get*`.
+
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_K6IqQn
+>>>>>>> laraxot/dev
 ## Metodi che Devono Essere Public
 
 | Metodo | Visibilità Richiesta | Motivo |
@@ -38,7 +73,20 @@ Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perc
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+<<<<<<< .merge_file_WDdGMm
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
+=======
+=======
+>>>>>>> .merge_file_K6IqQn
+namespace Modules\Quaeris\Filament\Widgets;
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> laraxot/dev
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
@@ -83,7 +131,20 @@ class MyWidget extends XotBaseTableWidget
 ### Errore: Access level must be public
 
 ```
+<<<<<<< HEAD
+<<<<<<< .merge_file_WDdGMm
+<<<<<<< HEAD
 PHP Fatal error: Access level to Widget::getTableHeaderActions() 
+=======
+=======
+>>>>>>> .merge_file_K6IqQn
+PHP Fatal error: Access level to Widget::getTableHeaderActions()
+=======
+PHP Fatal error: Access level to Widget::getTableHeaderActions() 
+>>>>>>> laraxot/dev
+=======
+PHP Fatal error: Access level to Widget::getTableHeaderActions()
+>>>>>>> laraxot/dev
 must be public (as in class HasXotTable)
 ```
 
@@ -91,6 +152,9 @@ must be public (as in class HasXotTable)
 
 **Soluzione**: Cambiare visibilità a `public`
 
+<<<<<<< HEAD
+<<<<<<< .merge_file_WDdGMm
+<<<<<<< HEAD
 ## Riferimenti
 
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
@@ -98,3 +162,33 @@ must be public (as in class HasXotTable)
 
 *Ultimo aggiornamento: 2025-01-27*
 - [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_K6IqQn
+## Convenzioni di Naming
+
+- `get*()` (mai `resolve*`, `getXot*`): convention Filament/Livewire standard
+- Prefisso `Xot` solo per classi/trait (mai per metodi) - es. `XotBaseTableWidget`, `HasXotTable`
+- `getTable*()` per hook tabella Filament, `getHeaderActions()` per azioni header pagina
+
+## Riferimenti
+
+- [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
+- [Filament 5 Migration Guide](https://filamentphp.com/docs/5.x/tables/upgrade-guide)
+<<<<<<< .merge_file_WDdGMm
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+## Riferimenti
+
+- [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
+- [Widget Table Configuration](../../../Modules/Xot/docs/filament/widget-table-configuration.md)
+
+*Ultimo aggiornamento: 2025-01-27*
+- [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+>>>>>>> .merge_file_K6IqQn
+>>>>>>> laraxot/dev

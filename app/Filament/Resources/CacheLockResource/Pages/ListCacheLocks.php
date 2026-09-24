@@ -12,13 +12,7 @@ class ListCacheLocks extends XotBaseListRecords
 {
     protected static string $resource = CacheLockResource::class;
 
-    /**
-     * @return array<string, TextColumn>
-     */
     #[\Override]
-    /**
-     * @return array<string, mixed>
-     */
     public function getTableColumns(): array
     {
         return [

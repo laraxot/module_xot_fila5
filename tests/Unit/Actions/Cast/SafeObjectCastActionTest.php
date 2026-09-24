@@ -1,11 +1,11 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('manages object properties safely', function (): void {
     $obj = new stdClass();
@@ -46,15 +46,15 @@ it('manages object properties safely', function (): void {
     Assert::assertTrue($action->hasPropertyValue($obj, 'id', 123));
     Assert::assertFalse($action->hasPropertyValue($obj, 'id', '123'));
     // getValidatedProperty
-    Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
+    Assert::assertSame(123, $action->getValidatedProperty($obj, 'id', 'int', function (int $v): bool {
         return $v > 100;
     }));
-    Assert::assertSame(0, $action->getValidatedProperty($obj, 'id', 'int', function (mixed $v): bool {
+    Assert::assertSame(0, $action->getValidatedProperty($obj, 'id', 'int', function (int $v): bool {
         return $v > 200;
     }, 0));
     // Methods
     $complexObj = new class {
-        public function test(mixed $p): mixed
+        public function test(string $p): string
         {
             return $p;
         }

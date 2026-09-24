@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_BoIYPv
 <<<<<<< HEAD
 
 =======
@@ -9,6 +10,9 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_ThZOWw
 ?>
 namespace Database\Factories;
 

@@ -25,6 +25,7 @@ use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
+use Safe\Exceptions\FilesystemException;
 
 /**
  * Class XotBaseTestCase.
@@ -167,7 +168,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         $this->expectException($exceptionClass);
         if (null !== $message) {
-            $this->expectExceptionMessage($message);
+            $this->expectExceptionMessageIsOrContains($message);
         }
     }
 
@@ -185,8 +186,12 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         parent::setUp();
 
+        // Nei test non esiste una build Vite (public_html/build/manifest.json):
+        // i blade con @vite renderizzano senza asset invece di lanciare ViewException.
+        $this->withoutVite();
+
         if (! $this->app->bound('translator')) {
-            $this->app->singleton('translator', function ($app) {
+            $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
                     new ArrayLoader(),
                     'en'
@@ -264,7 +269,44 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
+     * Path of the shared SQLite database used by module tests.
+     *
+     * I moduli sono condivisi fra piu' progetti: il nome del file non puo' essere
+     * cablato qui, altrimenti il framework porta con se' il nome del progetto in cui e'
+     * nato. Si risolve in tre passi, dal piu' esplicito al piu' neutro:
+     *
+     * 1. `config('xot.testing.sqlite_file')` — il progetto dichiara il proprio file;
+     * 2. l'unico `*.sqlite` presente in `database/` — il caso normale, funziona senza
+     *    configurare niente e qualunque sia il nome scelto dal progetto;
+     * 3. `test_data.sqlite` — default neutro quando la cartella e' vuota o ambigua.
+     *
+     * Single source of truth per `prepareSharedSqliteForTesting()` e per
+     * `xot:build-test-sqlite`, che ha bisogno dello stesso path per costruire il file.
+     */
+    public static function sharedSqlitePath(): string
+    {
+        $configured = config('xot.testing.sqlite_file');
+
+        if (is_string($configured) && '' !== $configured) {
+            return database_path($configured);
+        }
+
+        try {
+            /** @var list<string> $found */
+            $found = \Safe\glob(database_path('*.sqlite'));
+        } catch (FilesystemException) {
+            $found = [];
+        }
+
+        if (1 === count($found)) {
+            return $found[0];
+        }
+
+        return database_path('test_data.sqlite');
+    }
+
+    /**
+     * Punta ogni connessione sqlite al file condiviso e condivide un solo PDO.
      *
      * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
      * each opening their own transaction causes "database is locked". Sharing the
@@ -272,13 +314,27 @@ abstract class XotBaseTestCase extends BaseTestCase
      *
      * Call before parent::setUp() when the test case uses DatabaseTransactions.
      */
-    protected function prepareSharedFixcitySqliteForTesting(): void
+    protected function prepareSharedSqliteForTesting(): void
     {
         if (null === $this->app) {
             $this->refreshApplication();
         }
 
-        $database = database_path('fixcity_data.sqlite');
+        $database = self::sharedSqlitePath();
+
+        // La connessione opzionale 'user' (driver mysql) senza database configurato
+        // (DB_DATABASE_USER vuoto) ripiega su sqlite condiviso: stesso fallback di
+        // XotBaseMigration::resolveConnectionName(), altrimenti ogni insert su users
+        // fallisce con "No database selected" sulle macchine senza il DB dedicato.
+        $userDatabase = config('database.connections.user.database');
+        if (! is_string($userDatabase) || '' === $userDatabase) {
+            $this->app['config']->set('database.connections.user', [
+                'driver' => 'sqlite',
+                'database' => $database,
+                'prefix' => '',
+                'foreign_key_constraints' => true,
+            ]);
+        }
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -326,6 +382,16 @@ abstract class XotBaseTestCase extends BaseTestCase
         $connectionsProperty->setValue($database, $resolved);
     }
 
+    /**
+     * Legacy alias kept for module TestCases that still call the old name.
+     *
+     * @deprecated use {@see prepareSharedSqliteForTesting()}
+     */
+    protected function prepareSharedFixcitySqliteForTesting(): void
+    {
+        $this->prepareSharedSqliteForTesting();
+    }
+
     public function bindInstance(string $abstract, object $instance): void
     {
         $this->instance($abstract, $instance);
@@ -351,7 +417,7 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-        $this->expectExceptionMessage($message);
+        $this->expectExceptionMessageIsOrContains($message);
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_SwYNIw
 <<<<<<< HEAD
 ---
 title: "Skill: Troubleshooting Filament Edit Forms in XotBaseManageRelatedRecords"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Vri3TC
 # Skill: Troubleshooting Filament Edit Forms in XotBaseManageRelatedRecords
 
 ## Contesto del Problema

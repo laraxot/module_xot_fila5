@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_idBfza
 <<<<<<< HEAD
 ---
 title: "Skill: Troubleshooting Nested Resources in Filament 5.x"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_BZ2BsZ
 # Skill: Troubleshooting Nested Resources in Filament 5.x
 
 ## Contesto Critico: Filament 5.x NON Supporta Nested Resources

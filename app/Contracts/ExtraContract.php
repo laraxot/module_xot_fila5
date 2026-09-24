@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 

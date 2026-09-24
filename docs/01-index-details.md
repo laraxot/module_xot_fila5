@@ -1,7 +1,11 @@
 # Xot Module Documentation Index
 
 ## Core Architecture
+<<<<<<< HEAD
 - [Architecture Complete Guide](./architecture-complete-2025.md)
+=======
+- [Architecture Complete Guide](./architecture-complete.md)
+>>>>>>> laraxot/dev
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Project Philosophy, Religion, Politics, Zen](./project-philosophy-religion-politics-zen.md)
@@ -17,6 +21,16 @@
 - [GitHub Workflows Standard](./github-workflows-standard.md)
 
 ## PHPStan Analysis Reports
+<<<<<<< HEAD
+=======
+- [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
+- [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
+- [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
+- [PHPStan Specific Patterns](./phpstan-specific-patterns.md)
+
+## Quality & Improvement
+- [Quality Improvements Summary [DATE]](./quality-improvements-summary-[DATE].md)
+>>>>>>> laraxot/dev
 - [PHPStan Analysis 2025-01-27](./phpstan-analysis-2025-01-27.md)
 - [PHPStan Analysis 2025-12-17](./phpstan-analysis-2025-12-17.md)
 - [PHPStan Analysis 2025-12-18](./phpstan-analysis-2025-12-18.md)
@@ -40,3 +54,7 @@
 
 ---
 *Last updated: 2025-12-18*
+<<<<<<< HEAD
+=======
+*
+>>>>>>> laraxot/dev

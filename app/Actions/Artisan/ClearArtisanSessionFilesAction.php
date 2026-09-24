@@ -19,11 +19,15 @@ class ClearArtisanSessionFilesAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_EYQlCp
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> laraxot/dev
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> .merge_file_7u3lBJ
                 File::delete($file->getRealPath());
             }
         }

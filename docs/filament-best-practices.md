@@ -17,7 +17,15 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+   public function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome')->required(),
@@ -210,7 +218,15 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
 public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('nome')->required(),
@@ -371,7 +387,15 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -415,7 +439,15 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('cognome')
@@ -657,7 +689,15 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
 public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -911,7 +951,15 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),
@@ -939,6 +987,11 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+<<<<<<< HEAD
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
+>>>>>>> laraxot/dev
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -1009,5 +1062,9 @@ Appointment::where('doctor_id', $doctorId)
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
+<<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
 
+=======
+- Refactoring sicuro, massima estendibilità
+>>>>>>> laraxot/dev

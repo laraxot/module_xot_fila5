@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.

@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/en/artisan-commands-manager.php
 return [
     'navigation' => [
         'icon' => 'heroicon-o-command-line',
@@ -37,6 +33,13 @@ return [
         ],
         'queue_restart' => [
             'label' => 'Riavvia Code',
+        ],
+        'composer_dump_autoload' => [
+            'label' => 'Composer Dump Autoload',
+        ],
+        'notify_migrate_themes_to_mail_templates' => [
+            'label' => 'Import Legacy Email/SMS Templates',
+            'modal_description' => 'Copies email/SMS content from the legacy notify_themes table into mail_templates (the new invite sending system). Idempotent: re-running it updates already-migrated templates instead of duplicating them, overwriting any manual edits made after the last run.',
         ],
     ],
     'status' => [

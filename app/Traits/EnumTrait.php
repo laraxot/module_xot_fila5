@@ -48,7 +48,7 @@ trait EnumTrait
      */
     public static function getSearchable(): array
     {
-        return array_map(fn ($item) => (string) $item->value, static::cases());
+        return array_map(static fn (\BackedEnum $item): string => (string) $item->value, static::cases());
     }
 
     /**
@@ -149,7 +149,7 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
-        return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
+        return array_values(array_map(static fn (\BackedEnum $case): string => (string) $case->value, static::cases()));
     }
 
     /**

@@ -26,10 +26,20 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_xxTppR
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_wPaPKR
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xxTppR
+=======
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wPaPKR
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -64,10 +74,20 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_xxTppR
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_wPaPKR
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xxTppR
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wPaPKR
     {
         return [
             Forms\Components\TextInput::make('title')

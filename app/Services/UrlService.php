@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_ragDcZ
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -7,11 +8,15 @@
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_uUcMgF
 /**
  * @see https://www.webslesson.info/2019/02/import-excel-file-in-laravel.html
  * @see https://sweetcode.io/import-and-export-excel-files-data-using-in-laravel/
  */
 
+<<<<<<< .merge_file_ragDcZ
 <<<<<<< HEAD
 declare(strict_types=1);
 
@@ -22,6 +27,8 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uUcMgF
 namespace Modules\Xot\Services;
 
 /**
@@ -31,6 +38,7 @@ class UrlService
 {
     private static ?self $instance = null;
 
+<<<<<<< .merge_file_ragDcZ
     public function __construct() {}
 
     public static function getInstance(): self
@@ -45,6 +53,16 @@ class UrlService
             self::$instance = new self;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public function __construct()
+    {
+    }
+
+    public static function getInstance(): self
+    {
+        if (! self::$instance instanceof self) {
+            self::$instance = new self();
+>>>>>>> .merge_file_uUcMgF
         }
 
         return self::$instance;
@@ -60,6 +78,10 @@ class UrlService
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< .merge_file_ragDcZ
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
+=======
+        return false !== filter_var($url, FILTER_VALIDATE_URL);
+>>>>>>> .merge_file_uUcMgF
     }
 }

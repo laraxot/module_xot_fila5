@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-use Carbon\CarbonInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 
@@ -29,16 +28,14 @@ use Illuminate\Support\Carbon;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
- *
- * @property bool|null   $is_active
- * @property Carbon|null $published_at
  */
+/** @phpstan-ignore trait.unused */
 trait HasCommonScopes
 {
     /**
      * Scope query to only active records.
      *
-     * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
+     * Trovato identico in piu' moduli che condividono questo scope.
      *
      * @param Builder<static> $query
      *
@@ -72,10 +69,8 @@ trait HasCommonScopes
      */
     public function scopePublished(Builder $query): Builder
     {
-        $query->whereNotNull('published_at');
-        $query->where('published_at', '<=', now());
-
-        return $query;
+        return $query->whereNotNull('published_at')
+            ->where('published_at', '<=', now());
     }
 
     /**
@@ -89,7 +84,7 @@ trait HasCommonScopes
      */
     public function scopeDraft(Builder $query): Builder
     {
-        return $query->where(function ($q): void {
+        return $query->where(function (Builder $q): void {
             $q->whereNull('published_at')
                 ->orWhere('published_at', '>', now());
         });
@@ -102,7 +97,7 @@ trait HasCommonScopes
      *
      * @return Builder<static>
      */
-    public function scopeCreatedAfter(Builder $query, mixed $date): Builder
+    public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
     {
         return $query->where('created_at', '>=', $date);
     }
@@ -114,7 +109,7 @@ trait HasCommonScopes
      *
      * @return Builder<static>
      */
-    public function scopeCreatedBefore(Builder $query, mixed $date): Builder
+    public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
     {
         return $query->where('created_at', '<=', $date);
     }
@@ -126,7 +121,7 @@ trait HasCommonScopes
      *
      * @return Builder<static>
      */
-    public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
+    public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
     {
         return $query->where('updated_at', '>=', $date);
     }
@@ -148,11 +143,13 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
-        if (! $this->published_at instanceof CarbonInterface) {
+        $publishedAt = $this->getAttribute('published_at');
+
+        if (! $publishedAt instanceof Carbon) {
             return false;
         }
 
-        return $this->published_at->isPast();
+        return $publishedAt->isPast();
     }
 
     /**
@@ -168,6 +165,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-        return isset($this->is_active) && true === $this->is_active;
+        return true === $this->getAttribute('is_active');
     }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RouteServiceProvider nei Moduli <nome progetto>
 
 Questo documento descrive le linee guida per l'implementazione corretta del RouteServiceProvider nei moduli <nome progetto>.
@@ -97,3 +98,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider {
     public string $name = 'Blog';
 }
 ```
+=======
+---
+module: theme
+topic: route-service-provider
+canonical: ../../../Themes/docs/shared-components/route-service-provider.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/route-service-provider.md
+>>>>>>> laraxot/dev

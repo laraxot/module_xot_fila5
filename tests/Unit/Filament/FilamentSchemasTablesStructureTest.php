@@ -5,17 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-uses(\Modules\Xot\Tests\TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
+uses(TestCase::class);
 
 /**
  * @return list<array{0: string, 1: string}>

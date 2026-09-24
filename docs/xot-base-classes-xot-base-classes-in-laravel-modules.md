@@ -25,8 +25,21 @@ The Xot base classes provide a centralized way to customize and extend functiona
       public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_G02ymk
       public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_chbN8w
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),

@@ -60,7 +60,11 @@ Edita i file di configurazione e inserisci le tue keys.
 ### Debugging con Context
 
 ```text
+<<<<<<< HEAD
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
+=======
+Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/rules/
+>>>>>>> laraxot/dev
 ```
 
 ### Refactoring Guidato
@@ -81,4 +85,8 @@ Crea PR per branch feature/mcp-integration con descrizione delle modifiche
 
 ## Supporto
 
+<<<<<<< HEAD
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
+=======
+Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
+>>>>>>> laraxot/dev
