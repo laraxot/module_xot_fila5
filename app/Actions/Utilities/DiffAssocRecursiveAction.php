@@ -13,46 +13,10 @@ class DiffAssocRecursiveAction
     /**
      * Recursively compute difference of arrays with additional index check.
      *
-<<<<<<< HEAD
-     * <<<<<<< .merge_file_8bjCZD
      *
      * @param array<int|string, mixed> $array1
      * @param array<int|string, mixed> $array2
-     *                                         =======
-     *                                         <<<<<<< .merge_file_wMHloO
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *                                         =======
-     *                                         <<<<<<< HEAD
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *                                         =======
-     *                                         <<<<<<< HEAD
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
      *
-     * =======
-     * <<<<<<< HEAD
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
-     * =======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *                                         >>>>>>> laraxot/dev
-     *
-     * >>>>>>> laraxot/dev
-     *
-     * >>>>>>> laraxot/dev
-     *
-     * >>>>>>> .merge_file_Sl21n3
-     *
-     * >>>>>>> .merge_file_wqAv12
-     *
-=======
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
->>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      * @return array<int|string, mixed>
      */
     public function execute(array $array1, array $array2): array

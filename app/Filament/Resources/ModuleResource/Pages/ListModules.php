@@ -25,7 +25,6 @@ class ListModules extends XotBaseListRecords
 
     protected static string $resource = ModuleResource::class;
 
-    #[\Override]
     public function getGridTableColumns(): array
     {
         return [

@@ -49,7 +49,6 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
-    #[\Override]
     public function getGridTableColumns(): array
     {
         return [
