@@ -6,6 +6,8 @@ declare(strict_types=1);
  * @see https://github.com/johnnyfreeman/laravel-custom-relation
  */
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Model;

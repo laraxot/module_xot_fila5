@@ -22,6 +22,10 @@ class StreamDownloadPdfAction
      * @param  string|null  $view  Nome della view da renderizzare
      * @param  array<string, mixed>|null  $data  Dati da passare alla view
      * @param  string  $filename  Nome del file PDF
+     * @param string|null               $html     Contenuto HTML da convertire
+     * @param string|null               $view     Nome della view da renderizzare
+     * @param array<string, mixed>|null $data     Dati da passare alla view
+     * @param string                    $filename Nome del file PDF
      */
     public function execute(
         ?string $html = null,

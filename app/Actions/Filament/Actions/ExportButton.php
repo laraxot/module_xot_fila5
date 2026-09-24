@@ -15,7 +15,7 @@ class ExportButton
     {
         return Action::make('export')
             ->tooltip('export XLS')
-            ->icon('xot-files.xls')
+            ->icon('heroicon-o-inbox-arrow-down')
             // ->visible(null != $year)
             ->action(static fn () => dddx('WIP'));
     }

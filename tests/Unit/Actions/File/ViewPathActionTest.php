@@ -12,6 +12,8 @@ use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class)->group('xot');
+it('resolves view path correctly', function (): void {
 uses(TestCase::class);
 
 it('calculates view path correctly', function (): void {

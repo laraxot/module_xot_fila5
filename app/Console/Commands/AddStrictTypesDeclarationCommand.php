@@ -52,6 +52,11 @@ class AddStrictTypesDeclarationCommand extends Command
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
+                    if (false === $fileName) {
+                        $fileName = $file->getPathname();
+                    }
+                    $this->info("Verrebbe processato: {$fileName}");
+                    ++$count;
                     if ($fileName === false) {
                         $fileName = $file->getPathname();
                     }

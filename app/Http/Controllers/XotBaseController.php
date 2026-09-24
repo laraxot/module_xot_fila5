@@ -5,6 +5,8 @@ declare(strict_types=1);
  * ---.
  */
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;

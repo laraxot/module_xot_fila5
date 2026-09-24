@@ -27,7 +27,7 @@ class XotPrepareCsvExport extends PrepareCsvExport
     {
         parent::handle();
 
-        $csv = Writer::from(new SplTempFileObject);
+        $csv = Writer::from(new \SplTempFileObject());
         $csv->setOutputBOM(Bom::Utf8);
         $csv->setDelimiter($this->exporter::getCsvDelimiter());
         $csv->setEscape(XotBaseExporter::CSV_ESCAPE);

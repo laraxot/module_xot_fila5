@@ -85,6 +85,10 @@ use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasCsrfToken;
 use PHPUnit\Framework\Assert;
+
+use function Safe\ob_get_clean;
+use function Safe\ob_start;
+
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -92,8 +96,6 @@ use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-use function Safe\ob_get_clean;
-use function Safe\ob_start;
 
 uses(TestCase::class)->group('no-xot-db');
 
@@ -335,12 +337,12 @@ describe('Xot execute coverage floor 50', function (): void {
 
             $exitCode = $command->run(
                 new ArrayInput(['--analyze' => true, '--verbose' => true]),
-                new NullOutput
+                new NullOutput()
             );
             Assert::assertSame(0, $exitCode);
         } finally {
             File::swap($original);
-            Mockery::close();
+            \Mockery::close();
         }
     });
 
@@ -742,7 +744,7 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             $search->run(
                 new ArrayInput(['search' => 'xot-coverage-needle-impossible', '--tables' => ['cache']]),
-                new NullOutput
+                new NullOutput()
             );
         } catch (\Throwable) {
         }
@@ -1007,7 +1009,7 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             Assert::assertSame(0, $cmd->run(
                 new ArrayInput(['--module' => 'Xot', '--dry-run' => true]),
-                new NullOutput
+                new NullOutput()
             ));
         } catch (\Throwable) {
         }

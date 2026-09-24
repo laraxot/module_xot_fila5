@@ -79,8 +79,9 @@ final class XotBasePest
      *
      * @template T of Model
      *
-     * @param  T  $model
-     * @param  class-string<T>  $class
+     * @param T               $model
+     * @param class-string<T> $class
+     *
      * @return T
      */
     public static function assertFreshModel(Model $model, string $class)
@@ -94,8 +95,9 @@ final class XotBasePest
     /**
      * @template T of Model
      *
-     * @param  EloquentCollection<int, T>|Collection<int, T>  $collection
-     * @param  class-string<T>  $class
+     * @param EloquentCollection<int, T>|Collection<int, T> $collection
+     * @param class-string<T>                               $class
+     *
      * @return T
      */
     public static function assertFirstModel(EloquentCollection|Collection $collection, string $class)
@@ -125,6 +127,19 @@ final class XotBasePest
      */
     public static function assertArray(mixed $value): array
     {
+        if (! \is_array($value)) {
+            Assert::fail('Expected array, got '.get_debug_type($value).'.');
+        }
+
+        $result = [];
+        foreach ($value as $key => $item) {
+            if (! \is_string($key)) {
+                Assert::fail('Expected string array keys, got '.get_debug_type($key).'.');
+            }
+            $result[$key] = $item;
+        }
+
+        return $result;
         Assert::assertNotEmpty($value);
 
         /** @var array<string, mixed> $value */
@@ -143,7 +158,7 @@ final class XotBasePest
     public static function assertString(mixed $value, string $message = ''): string
     {
         if (! \is_string($value)) {
-            Assert::fail($message !== '' ? $message : 'Expected string, got '.get_debug_type($value).'.');
+            Assert::fail('' !== $message ? $message : 'Expected string, got '.get_debug_type($value).'.');
         }
 
         return $value;
@@ -158,7 +173,7 @@ final class XotBasePest
     public static function assertModelKey(mixed $value, string $message = ''): int|string
     {
         if (! \is_int($value) && ! \is_string($value)) {
-            Assert::fail($message !== '' ? $message : 'Expected model key (int|string), got '.get_debug_type($value).'.');
+            Assert::fail('' !== $message ? $message : 'Expected model key (int|string), got '.get_debug_type($value).'.');
         }
 
         return $value;

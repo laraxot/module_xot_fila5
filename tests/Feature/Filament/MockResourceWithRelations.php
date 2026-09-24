@@ -10,4 +10,9 @@ use Modules\Xot\Models\Cache;
 class MockResourceWithRelations extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
+
+    public function getFormSchemaOld(): array
+    {
+        return [];
+    }
 }

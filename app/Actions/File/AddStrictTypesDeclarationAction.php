@@ -45,6 +45,11 @@ class AddStrictTypesDeclarationAction
             }
             $trimmedLine = trim($line);
             if ($trimmedLine !== '') {
+            if (0 === $i) {
+                continue; // Salta la prima riga che contiene <?php
+            }
+            $trimmedLine = trim($line);
+            if ('' !== $trimmedLine) {
                 $firstNonEmptyLine = $i;
                 break;
             }

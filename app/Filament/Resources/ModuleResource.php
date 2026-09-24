@@ -12,6 +12,17 @@ class ModuleResource extends XotBaseResource
 {
     protected static ?string $model = Module::class;
 
+    public function getFormSchemaOld(): array
+    {
+        return [
+            'name' => TextInput::make('name')->required(),
+            'description' => TextInput::make('description'),
+            'icon' => Select::make('icon')->options([]),
+            'priority' => TextInput::make('priority'),
+            'status' => Toggle::make('status'),
+        ];
+    }
+
     #[\Override]
     public static function getRelations(): array
     {
