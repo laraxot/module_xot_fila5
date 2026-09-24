@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'failed' => 'Toegangsgegevens niet gevonden',
     'general_error' => 'Je hebt niet de rechten om dat te doen.',

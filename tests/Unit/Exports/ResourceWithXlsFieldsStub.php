@@ -11,11 +11,11 @@ namespace Modules\Xot\Tests\Unit\Exports;
 class ResourceWithXlsFieldsStub
 {
     /**
-<<<<<<< .merge_file_JCJjsQ
-     * @param  array<array-key, mixed>  $data
-=======
-     * <<<<<<< .merge_file_ARVwq6.
+     * <<<<<<< .merge_file_JCJjsQ.
      *
+     * @param array<array-key, mixed> $data
+     *                                      =======
+     *                                      <<<<<<< .merge_file_ARVwq6.
      * @param array<array-key, mixed> $data
      *                                      =======
      *                                      <<<<<<< HEAD
@@ -27,7 +27,8 @@ class ResourceWithXlsFieldsStub
      *
      * >>>>>>> .merge_file_VDF7Hc
      *
->>>>>>> .merge_file_kG4HSa
+     * >>>>>>> .merge_file_kG4HSa
+     *
      * @return array<int|string, string>
      */
     public static function getXlsFields(array $data): array

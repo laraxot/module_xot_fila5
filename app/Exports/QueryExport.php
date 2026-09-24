@@ -37,8 +37,8 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public QueryBuilder|EloquentBuilder $query;
 
     /**
-     * @param  QueryBuilder|EloquentBuilder<Model>  $query
-     * @param  array<int, int|string>  $fields
+     * @param QueryBuilder|EloquentBuilder<Model> $query
+     * @param array<int, int|string>              $fields
      */
     public function __construct(QueryBuilder|EloquentBuilder $query, ?string $transKey = null, array $fields = [])
     {
@@ -60,7 +60,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         }
 
         $first = $this->query->first();
-        if ($first === null) {
+        if (null === $first) {
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
 
@@ -143,7 +143,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     private function normalizeRow(mixed $row): array
     {
-        if ($row === null) {
+        if (null === $row) {
             return [];
         }
 

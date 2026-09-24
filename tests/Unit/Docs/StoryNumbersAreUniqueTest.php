@@ -56,13 +56,13 @@ function storyNumberCollisions(): array
 
             $matches = [];
 
-            if (preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches) !== 1) {
+            if (1 !== preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches)) {
                 continue; // le story senza numero sono legittime: si indirizzano per nome
             }
 
             $number = (string) ($matches[1] ?? '');
 
-            if ($number === '') {
+            if ('' === $number) {
                 continue;
             }
 

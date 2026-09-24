@@ -85,7 +85,7 @@ trait TransFuncTrait
     }
 
     /**
-     * @param  string|array<int|string, mixed>|Translator|null  $trans
+     * @param string|array<int|string, mixed>|Translator|null $trans
      */
     protected static function formatTransFuncResult(string $key, string|array|Translator|null $trans): string
     {
@@ -108,7 +108,7 @@ trait TransFuncTrait
             return $trans;
         }
 
-        if ($trans === null) {
+        if (null === $trans) {
             return static::persistGeneratedTransFuncLabel($key);
         }
 

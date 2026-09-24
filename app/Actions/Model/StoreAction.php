@@ -14,12 +14,12 @@ class StoreAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_EBFvzt
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $rules
-=======
-     * <<<<<<< .merge_file_AXPigS.
+     * <<<<<<< .merge_file_EBFvzt.
      *
+     * @param array<string, mixed> $data
+     * @param array<string, mixed> $rules
+     *                                    =======
+     *                                    <<<<<<< .merge_file_AXPigS.
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
      *                                    =======
@@ -31,7 +31,7 @@ class StoreAction
      * @param array<string, mixed> $rules
      *                                    >>>>>>> laraxot/dev
      *                                    >>>>>>> .merge_file_0Whyk8
->>>>>>> .merge_file_zPKMkq
+     *                                    >>>>>>> .merge_file_zPKMkq
      */
     public function execute(Model $model, array $data, array $rules): Model
     {

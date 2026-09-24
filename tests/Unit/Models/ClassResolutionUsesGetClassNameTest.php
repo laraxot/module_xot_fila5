@@ -58,7 +58,7 @@ function modelSourceFiles(): array
         }
         $it = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
-            if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
+            if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
                 continue;
             }
             $out[] = $file->getPathname();
@@ -87,7 +87,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
             continue;
         }
         $src = file_get_contents($file);
-        if (preg_match($handRolled, $src) === 1) {
+        if (1 === preg_match($handRolled, $src)) {
             $offenders[] = $rel;
         }
     }
@@ -110,7 +110,7 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
     $offenders = [];
     foreach (modelSourceFiles() as $file) {
         $src = file_get_contents($file);
-        if (preg_match($silentFallback, $src) === 1) {
+        if (1 === preg_match($silentFallback, $src)) {
             $offenders[] = str_replace(\dirname(__DIR__, 5).'/', '', $file);
         }
     }

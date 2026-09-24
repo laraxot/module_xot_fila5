@@ -13,7 +13,6 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
@@ -26,7 +25,7 @@ class HasTableWithoutOptionalMethodsTestClass
 
     public function getLayoutView(): object
     {
-        $mock = Mockery::mock();
+        $mock = \Mockery::mock();
         $mock->shouldReceive('getTableColumns')->andReturn([]);
         $mock->shouldReceive('getTableContentGrid')->andReturn([]);
 
@@ -44,7 +43,7 @@ class HasTableWithoutOptionalMethodsTestClass
     public function getTable(): Table
     {
         /** @var Table&MockInterface $table */
-        $table = Mockery::mock(Table::class);
+        $table = \Mockery::mock(Table::class);
 
         return $table;
     }
@@ -265,26 +264,42 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
-    public function deselectAllTableRecords(): void {}
+    public function deselectAllTableRecords(): void
+    {
+    }
 
-    public function mountTableAction(): void {}
+    public function mountTableAction(): void
+    {
+    }
 
-    public function mountTableBulkAction(): void {}
+    public function mountTableBulkAction(): void
+    {
+    }
 
     public function mountedTableActionRecord(): ?Model
     {
         return null;
     }
 
-    public function replaceMountedTableAction(): void {}
+    public function replaceMountedTableAction(): void
+    {
+    }
 
-    public function replaceMountedTableBulkAction(): void {}
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
 
-    public function resetTableSearch(): void {}
+    public function resetTableSearch(): void
+    {
+    }
 
-    public function resetTableColumnSearch(): void {}
+    public function resetTableColumnSearch(): void
+    {
+    }
 
-    public function toggleTableReordering(): void {}
+    public function toggleTableReordering(): void
+    {
+    }
 
     public function parseTableFilterName(): string
     {

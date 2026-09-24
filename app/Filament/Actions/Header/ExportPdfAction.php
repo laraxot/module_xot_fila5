@@ -36,7 +36,7 @@ class ExportPdfAction extends XotBaseAction
                 $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_pdf.tooltip';
                 $translated = __($key);
 
-                if (\is_string($translated) && $translated !== $key && $translated !== 'export_pdf') {
+                if (\is_string($translated) && $translated !== $key && 'export_pdf' !== $translated) {
                     return $translated;
                 }
 
@@ -49,7 +49,7 @@ class ExportPdfAction extends XotBaseAction
                     collect($livewire->tableFilters)->flatten()->implode('-').
                     '.pdf';
                 $query = $livewire->getFilteredTableQuery();
-                if ($query === null) {
+                if (null === $query) {
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();

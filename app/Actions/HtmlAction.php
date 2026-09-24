@@ -23,7 +23,7 @@ class HtmlAction
         string $pdforientation = 'L',
         string $filename = '',
     ): string {
-        if ($filename === '') {
+        if ('' === $filename) {
             $filename = Storage::disk('local')->path('test.pdf');
         }
 
@@ -35,11 +35,11 @@ class HtmlAction
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
-            if ($out === 'content_PDF') {
+            if ('content_PDF' === $out) {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
-            if ($out === 'file') {
+            if ('file' === $out) {
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

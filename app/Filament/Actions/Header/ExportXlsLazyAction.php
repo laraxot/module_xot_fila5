@@ -7,7 +7,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Header;
 
-use Exception;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
@@ -46,8 +45,8 @@ class ExportXlsLazyAction extends XotBaseAction
                 $pathFields = self::resolvePathFields($livewire);
 
                 $lazy = $livewire->getFilteredTableQuery();
-                if ($lazy === null) {
-                    throw new Exception('Query is null');
+                if (null === $lazy) {
+                    throw new \Exception('Query is null');
                 }
 
                 if ($lazy->count() < 7) {

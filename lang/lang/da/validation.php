@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'accepted' => ':attribute skal accepteres.',
     'active_url' => ':attribute er ikke en gyldig adresse.',

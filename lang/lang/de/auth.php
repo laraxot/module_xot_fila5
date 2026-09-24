@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'failed' => 'Zugangsdaten nicht gefunden.',
     'general_error' => 'Du hast keine Berechtigung um dies zu machen.',

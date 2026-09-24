@@ -53,5 +53,7 @@ class ThemeAction
         return resource_path('themes/'.self::$currentTheme);
     }
 
-    public function execute(): void {}
+    public function execute(): void
+    {
+    }
 }

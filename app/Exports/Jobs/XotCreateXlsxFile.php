@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exports\Jobs;
 
-use Closure;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Http\File;
@@ -14,10 +13,11 @@ use Modules\Xot\Exports\XotBaseExporter;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Common\Entity\Style\Style;
 use OpenSpout\Writer\XLSX\Writer;
-use Webmozart\Assert\Assert;
 
 use function Safe\tempnam;
 use function Safe\unlink;
+
+use Webmozart\Assert\Assert;
 
 /**
  * `CreateXlsxFile` che legge il CSV intermedio con l'escape con cui e' stato
@@ -50,14 +50,14 @@ class XotCreateXlsxFile extends CreateXlsxFile
 
         $csvDelimiter = $this->exporter::getCsvDelimiter();
 
-        $writeRowsFromFile = function (string $file, ?Style $style, Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
+        $writeRowsFromFile = function (string $file, ?Style $style, \Closure $makeRow) use ($csvDelimiter, $disk, $writer): void {
             $stream = $disk->readStream($file);
             Assert::resource($stream);
             $csvReader = CsvReader::from($stream);
             $csvReader->setDelimiter($csvDelimiter);
             $csvReader->setEscape(XotBaseExporter::CSV_ESCAPE);
             $csvReader->includeEmptyRecords();
-            $csvResults = (new Statement)->process($csvReader);
+            $csvResults = (new Statement())->process($csvReader);
 
             foreach ($csvResults->getRecords() as $values) {
                 $row = $makeRow($values, $style);

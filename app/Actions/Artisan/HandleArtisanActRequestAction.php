@@ -59,7 +59,7 @@ class HandleArtisanActRequestAction
         DB::purge('mysql');
         DB::reconnect('mysql');
 
-        if ($moduleName !== '') {
+        if ('' !== $moduleName) {
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)
