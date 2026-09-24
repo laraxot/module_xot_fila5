@@ -1,18 +1,12 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Services\ModuleService;
-=======
-
-use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
->>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
 function xotModuleServiceTestInstance(): ModuleService
 {
     return (new ModuleService)->setName('TestModule');
@@ -149,27 +143,5 @@ describe('ModuleService', function () {
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
 
-<<<<<<< .merge_file_YjMbxt
-=======
->>>>>>> laraxot/dev
-=======
-describe('GetAllModelsByModuleNameAction', function (): void {
-    it('returns array of model classes for existing module', function (): void {
-        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
-
-        Assert::assertIsArray($models);
-        foreach ($models as $key => $class) {
-            Assert::assertIsString($key);
-            Assert::assertIsString($class);
-        }
-    });
-
-    it('returns empty array for unknown module', function (): void {
-        $models = app(GetAllModelsByModuleNameAction::class)->execute('NonExistentModuleXYZ');
-
-        Assert::assertSame([], $models);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ob8RP5
     });
 });

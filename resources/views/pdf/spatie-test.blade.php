@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 <!DOCTYPE html>
 <html lang="it">
 <head>

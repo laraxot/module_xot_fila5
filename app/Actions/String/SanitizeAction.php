@@ -6,17 +6,8 @@ namespace Modules\Xot\Actions\String;
 
 use function Safe\preg_replace;
 
-<<<<<<< HEAD
 class SanitizeAction
 {
-=======
-use Spatie\QueueableAction\QueueableAction;
-
-class SanitizeAction
-{
-    use QueueableAction;
-
->>>>>>> 8d801bbe (Check & fix styling)
     public function execute(string $str): string
     {
         $str = strip_tags($str);

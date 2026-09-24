@@ -1,32 +1,3 @@
-<<<<<<< .merge_file_P8j4DN
-<<<<<<< HEAD
-<<<<<<< .merge_file_FWXja8
-=======
-<<<<<<< .merge_file_yAgVOy
->>>>>>> .merge_file_ebu3m1
-=======
->>>>>>> 8d801bbe (Check & fix styling)
----
-title: "Massimizzare il livello di confidenza"
-module: "Xot"
-type: how-to
-tags: [confidence, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "confidence guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
-<<<<<<< HEAD
-<<<<<<< .merge_file_FWXja8
-=======
-=======
->>>>>>> .merge_file_zDpYBk
->>>>>>> .merge_file_ebu3m1
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_6e0z2H
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

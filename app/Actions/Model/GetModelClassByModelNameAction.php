@@ -1,22 +1,9 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
-<<<<<<< .merge_file_SWw8q8
-=======
->>>>>>> laraxot/dev
-=======
-/**
- * @see https://github.com/protonemedia/laravel-ffmpeg
- */
-
-declare(strict_types=1);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_W9Heq7
 
 namespace Modules\Xot\Actions\Model;
 
@@ -34,19 +21,7 @@ class GetModelClassByModelNameAction
     {
         Assert::isArray($morph_map = config('morph_map'));
         $modelClass = collect($morph_map)->get($modelName);
-<<<<<<< .merge_file_SWw8q8
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($modelClass === null) {
-=======
-        if (null === $modelClass) {
->>>>>>> laraxot/dev
-=======
-        if (null === $modelClass) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($modelClass === null) {
->>>>>>> .merge_file_W9Heq7
             return app(GetFirstModelClassByModelNameAction::class)->execute($modelName);
         }
         Assert::string($modelClass, __FILE__.':'.__LINE__.' - '.class_basename(self::class));

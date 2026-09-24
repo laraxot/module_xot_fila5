@@ -1,31 +1,3 @@
-<<<<<<< .merge_file_WOP331
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_RGgq5V
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
----
-module: theme
-topic: duplicate-methods
-canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_AfUqi8
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JLQGsr
 # Metodi duplicati — Xot
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.
@@ -68,27 +40,3 @@ Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambi
 - Per i metodi di tipo accessor/mutator, la duplicazione è spesso legata a pattern Eloquent ricorrenti.
 
 > Documento generato il 2026-06-15 da Claude Code.
-<<<<<<< .merge_file_WOP331
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_RGgq5V
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
----
-module: theme
-topic: duplicate-methods
-canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
->>>>>>> .merge_file_AfUqi8
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_JLQGsr

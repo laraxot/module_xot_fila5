@@ -5,31 +5,7 @@ type: reference
 slug: elastic-links
 description: 'Elenco di 1 riferimenti esterni raccolti per elastic links, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
-<<<<<<< .merge_file_23HTEW
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-converted_from: _elastic_links.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 converted_from: elastic-links.txt
-=======
-converted_from: _elastic_links.txt
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-converted_from: elastic-links.txt
->>>>>>> .merge_file_4VRbOG
 created: 2026-08-24
 updated: 2026-08-24
 ---

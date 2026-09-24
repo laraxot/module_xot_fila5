@@ -138,23 +138,7 @@ cd init
 
 ```
 # In Cursor/Windsurf/Cline
-<<<<<<< .merge_file_4avU7I
-<<<<<<< HEAD
-<<<<<<< HEAD
 Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
-=======
-<<<<<<< HEAD
-Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
-=======
-Analizza gli errori PHPStan in Modules/healthcare_app e suggerisci correzioni seguendo le regole in .windsurf/rules/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
->>>>>>> .merge_file_49Zd4Z
 ```
 
 ### 2. Refactoring Modulo
@@ -190,23 +174,7 @@ iflow
 
 ```
 # Con memory + sequential-thinking
-<<<<<<< .merge_file_4avU7I
-<<<<<<< HEAD
-<<<<<<< HEAD
 Analizza l'architettura del modulo Quaeris:
-=======
-<<<<<<< HEAD
-Analizza l'architettura del modulo Quaeris:
-=======
-Analizza l'architettura del modulo healthcare_app:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Analizza l'architettura del modulo Quaeris:
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Analizza l'architettura del modulo Quaeris:
->>>>>>> .merge_file_49Zd4Z
 1. Identifica pattern utilizzati
 2. Documenta dipendenze
 3. Suggerisci miglioramenti
@@ -288,16 +256,3 @@ Per problemi o domande:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_4avU7I
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_49Zd4Z

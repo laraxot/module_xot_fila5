@@ -12,30 +12,7 @@ discussions:
 related:
   - ../../../../../../bashscripts/ai/rules/composer-root-skeleton-modular.md
   - ../../../../../../docs/stories/STORY-282-composer-root-require-skeleton-modular.md
-<<<<<<< .merge_file_Zl1Z99
-<<<<<<< HEAD
-<<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
-=======
-<<<<<<< HEAD
-  - ./composer-merge-plugin-modules-only.md
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - ./composer-merge-plugin-modules-only.md
-=======
->>>>>>> 64619e34 (.)
-=======
-  - ./composer-merge-plugin-modules-only.md
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-  - ./composer-merge-plugin-modules-only.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-  - ./composer-merge-plugin-modules-only.md
->>>>>>> .merge_file_Fmt8BN
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
   - ./theme-psr4-autoload-without-merge.md
 ---
@@ -96,14 +73,6 @@ Questa e' la boundary corretta:
 
 Confronto 2026-06-30:
 
-<<<<<<< .merge_file_Zl1Z99
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Fmt8BN
 
 Il root mantiene solo:
 
@@ -155,44 +124,7 @@ Questa e' la boundary corretta:
 
 Confronto 2026-06-30:
 
-<<<<<<< .merge_file_Zl1Z99
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 
 `cd laravel && composer validate && composer show --direct`
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-- FixCity: root minimo con `php`, `laravel/framework`, `nwidart/laravel-modules`, merge solo `Modules/*/composer.json`.
-- Predict prima della correzione: root con dipendenze funzionali, `Modules\\`, `Database\\Seeders\\` e temi in autoload, merge anche dei temi.
-- Predict dopo la correzione: root riallineato allo skeleton modulare; autoload temi/seeders legacy via `RegisterRuntimePsr4NamespacesAction`.
-
-`cd laravel && composer update -W`
->>>>>>> 64619e34 (.)
-=======
-=======
->>>>>>> .merge_file_Fmt8BN
-- **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
-- **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
-
-`cd laravel && composer validate && composer show --direct`
-<<<<<<< .merge_file_Zl1Z99
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Fmt8BN

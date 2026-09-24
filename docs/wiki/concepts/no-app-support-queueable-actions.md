@@ -28,17 +28,6 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 | `PanelModuleResolver` | `Adapters/Filament/PanelModuleAdapter` |
 | `PanelModuleSupport` | Eliminato (duplicato morto) |
 | `PdfBuilderAdapter` | `Adapters/PdfBuilderAdapter` |
-<<<<<<< .merge_file_hCwqH6
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_4yvlhx
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_AUewK4
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_dzdTa8
 | `PaDesignColors` | `Actions/PaDesignColorsAction` (`filamentPalette()` + `execute()`) |
 | `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
 
@@ -49,26 +38,6 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 - Il solo chiamante runtime storico di `RouteService::inAdmin()` usa ora l'helper globale canonico.
 - Nessuna facade multi-metodo e nessuna injection Action→Action: il bordo pubblico resta
   `app(Action::class)->execute(...)`.
-<<<<<<< .merge_file_hCwqH6
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_4yvlhx
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-| `PaDesignColors` | `Actions/Design/GetPaFilamentPaletteAction` |
-| `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
-
-**Nota (2026-07-13):** nessun duplicato `ResolvePanelModuleAction` — panel multi-metodo resta solo su `PanelModuleAdapter`.
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_AUewK4
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_dzdTa8
 
 ## Perché
 

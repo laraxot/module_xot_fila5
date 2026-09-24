@@ -5,11 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers\Filament;
 
 use Filament\Panel;
-<<<<<<< HEAD
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Filament\Pages\MainDashboard;
 
 class AdminPanelProvider extends XotBasePanelProvider
@@ -24,7 +21,6 @@ class AdminPanelProvider extends XotBasePanelProvider
         $panel = parent::panel($panel);
 
         // Ensure a dashboard page exists for this panel so the topbar home link works.
-<<<<<<< HEAD
         $panel = $panel->pages([
             MainDashboard::class,
         ]);
@@ -42,10 +38,5 @@ class AdminPanelProvider extends XotBasePanelProvider
         );
 
         return $panel;
-=======
-        return $panel->pages([
-            MainDashboard::class,
-        ]);
->>>>>>> 8d801bbe (Check & fix styling)
     }
 }

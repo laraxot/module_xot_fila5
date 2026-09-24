@@ -80,23 +80,7 @@ composer dump-autoload
 ## 🎯 Why This Matters
 
 ### Benefits
-<<<<<<< .merge_file_mTcDJn
-<<<<<<< HEAD
-<<<<<<< HEAD
 - ✅ Predictable autoloading
-=======
-<<<<<<< HEAD
-- ✅ Predictable autoloading
-=======
-- ✅ <nome progetto>able autoloading
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- ✅ Predictable autoloading
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- ✅ Predictable autoloading
->>>>>>> .merge_file_Y7vrsb
 - ✅ Reliable test execution
 - ✅ Easy maintenance
 - ✅ Fast debugging
@@ -125,20 +109,4 @@ composer dump-autoload
 
 ---
 
-<<<<<<< .merge_file_mTcDJn
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
-=======
-<<<<<<< HEAD
-**Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
-=======
-**Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
->>>>>>> .merge_file_Y7vrsb

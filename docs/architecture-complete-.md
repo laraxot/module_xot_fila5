@@ -143,30 +143,10 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_fyqA0X
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_mx7XnF
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_fyqA0X
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_mx7XnF
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -359,11 +339,7 @@ Defines contracts for modular extensibility:
 
 ### 9. Helper Functions (200+)
 
-<<<<<<< HEAD
 **File:** `Modules/Xot/Helpers/Helper.php`
-=======
-**File:** `Modules/Xot/helpers/Helper.php`
->>>>>>> 8d801bbe (Check & fix styling)
 
 **Categories:**
 
@@ -608,30 +584,10 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_fyqA0X
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_mx7XnF
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_fyqA0X
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_mx7XnF
     {
         return [
             TextInput::make('field1')->required(),
@@ -709,30 +665,10 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_fyqA0X
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_mx7XnF
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_fyqA0X
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_mx7XnF
     {
         return [
             TextInput::make('title')
@@ -906,11 +842,7 @@ $value = $model->getExtra('custom_field');
 - Filament Resource Base: `Modules/Xot/app/Filament/Resources/XotBaseResource.php`
 - Provider Base: `Modules/Xot/app/Providers/XotBaseServiceProvider.php`
 - Central Config: `Modules/Xot/app/Datas/XotData.php`
-<<<<<<< HEAD
 - Global Helpers: `Modules/Xot/Helpers/Helper.php`
-=======
-- Global Helpers: `Modules/Xot/helpers/Helper.php`
->>>>>>> 8d801bbe (Check & fix styling)
 - Actions: `Modules/Xot/app/Actions/` (150+ classes)
 - Test Base: `Modules/Xot/tests/TestCase.php`
 

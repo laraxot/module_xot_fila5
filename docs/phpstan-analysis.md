@@ -1,23 +1,3 @@
-<<<<<<< .merge_file_4uTL5M
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-## stato analisi phpstan
-
-- **data**: 2025-11-12
-- **ambito**: `Modules/Xot`
-- **comando**: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`
-- **risultato**: ✅ nessun errore (livello massimo configurato)
-
-### osservazioni operative
-- mantenere le classi base allineate ai pattern Laraxot (`XotBase*`, trait condivisi);
-- proseguire con la normalizzazione dei file in `docs/` (evitare duplicati e nomi non conformi);
-- verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_xtMCZr
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -1075,9 +1055,3 @@ class MyModel extends BaseModel
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety
-<<<<<<< .merge_file_4uTL5M
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_xtMCZr

@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_5my0cv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_eCewZQ
 # MCP Server Consigliati per il Modulo Xot
 
 ## Scopo del Modulo
@@ -34,20 +20,4 @@ Modulo base/framework: fornisce servizi trasversali, integrazione tra componenti
 ```
 
 ## Note
-<<<<<<< .merge_file_5my0cv
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Xot non richiede MCP custom, ma può essere esteso da altri moduli.
-=======
-<<<<<<< HEAD
-- Xot non richiede MCP custom, ma può essere esteso da altri moduli.
-=======
-- Xot non richiede MCP custom, ma può essere esteso da altri moduli.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Xot non richiede MCP custom, ma può essere esteso da altri moduli.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Xot non richiede MCP custom, ma può essere esteso da altri moduli.
->>>>>>> .merge_file_eCewZQ

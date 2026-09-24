@@ -13,11 +13,7 @@ class CacheLockForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'key' => TextInput::make('key')->required()->maxLength(255),

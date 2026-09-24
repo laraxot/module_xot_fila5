@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_5a3b59
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_gbWQQP
 # Convenzioni di Routing
 
 ## Struttura Base
@@ -95,21 +85,3 @@ Route::get('/auth/login', [AuthController::class, 'login']);
 - Usare namespace per i componenti Volt
 - Documentare eccezioni
 - Aggiornare moduli esistenti
-<<<<<<< .merge_file_5a3b59
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: routing-conventions
-canonical: ../../../Themes/docs/shared-components/routing-conventions.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/routing-conventions.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_gbWQQP

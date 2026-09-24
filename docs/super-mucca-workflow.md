@@ -359,19 +359,6 @@ nano Modules/{ModuleName}/docs/{pattern-name}.md
 
 - [Doc correlata 1](./related-doc.md)
 - [Doc correlata 2](../../OtherModule/docs/related.md)
-<<<<<<< .merge_file_0IVWwL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Doc correlata 2](../../othermodule/docs/related.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MsUYsm
 
 ---
 
@@ -416,19 +403,6 @@ CHANGELOG.md
 # ❌ SBAGLIATO
 Business-Logic-Analysis.md           # Maiuscole
 phpstan-fixes-2025-12-02.md         # Date
-<<<<<<< .merge_file_0IVWwL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-phpstan-fixes-[DATE].md         # Date
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MsUYsm
 GUIDE.md                             # Maiuscolo (non README/CHANGELOG)
 ```
 
@@ -733,20 +707,4 @@ Mai tornare indietro. Sempre avanti. Fix forward.
 **Approccio**: Sistematico e Completo
 **Risultato Garantito**: Eccellenza
 
-<<<<<<< .merge_file_0IVWwL
-<<<<<<< HEAD
-<<<<<<< HEAD
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
-=======
-<<<<<<< HEAD
-🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
-=======
-🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
->>>>>>> .merge_file_MsUYsm

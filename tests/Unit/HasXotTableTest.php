@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Tables\Table;
 use Mockery\MockInterface;
 use Modules\Xot\Tests\TestCase;
@@ -16,22 +12,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< .merge_file_YbFZgS
-<<<<<<< HEAD
- * <<<<<<< HEAD.
- *
- * @param MockInterface&Table $tableMock
- *                                       =======
- * @param MockInterface&Table $tableMock
- *
- * >>>>>>> laraxot/dev
-=======
- * @param MockInterface&Table $tableMock
->>>>>>> 8d801bbe (Check & fix styling)
- *
-=======
  * @param  MockInterface&Table  $tableMock
->>>>>>> .merge_file_Yn4Keh
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface
@@ -44,10 +25,7 @@ function stubTableChain(MockInterface $tableMock): MockInterface
         'filters',
         'filtersLayout',
         'filtersFormColumns',
-<<<<<<< HEAD
         'deferFilters',
-=======
->>>>>>> 8d801bbe (Check & fix styling)
         'persistFiltersInSession',
         'headerActions',
         'actions',
@@ -84,12 +62,7 @@ it('tests table method with all methods implemented', function (): void {
     /** @var HasTableWithXotTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithXotTestClass::class)
         ->makePartial()
-<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
-=======
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
->>>>>>> 8d801bbe (Check & fix styling)
     $mock->allows([
         'getTableHeaderActions' => [],
         'getTableActions' => [],
@@ -121,12 +94,7 @@ it('tests table method with no optional methods implemented', function (): void 
     /** @var HasTableWithoutOptionalMethodsTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)
         ->makePartial()
-<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
-=======
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
->>>>>>> 8d801bbe (Check & fix styling)
     $mock->allows([
         'getModelClass' => DummyTestModel::class,
         'getTableRecordTitleAttribute' => 'name',

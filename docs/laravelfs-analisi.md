@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_Ak9hPB
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rNniIx
 # Analisi di LaravelFS
 
 ## Introduzione
@@ -44,21 +34,3 @@ Il progetto ha una struttura ben organizzata:
 - **tests/**: Test automatizzati
 
 ## Aspetti interessanti per il nostro progetto
-<<<<<<< .merge_file_Ak9hPB
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: laravelfs-analisi
-canonical: ../../../Themes/docs/shared-components/laravelfs-analisi.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rNniIx

@@ -51,20 +51,4 @@ Se in futuro si volesse creare queste classi base:
 3. Creare `UIBaseRadio` estendendo `Filament\Forms\Components\Radio`
 4. Refactorare tutti i componenti per estendere le classi base
 
-<<<<<<< .merge_file_YJXLIF
-<<<<<<< HEAD
-<<<<<<< HEAD
 Per ora, il mapping riflette la realtà del codice.
-=======
-<<<<<<< HEAD
-Per ora, il mapping riflette la realtà del codice.
-=======
-Per ora, il mapping riflette la realtà del codice.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Per ora, il mapping riflette la realtà del codice.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Per ora, il mapping riflette la realtà del codice.
->>>>>>> .merge_file_WD2xou

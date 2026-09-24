@@ -1,18 +1,6 @@
 # PHPStan Errors - TransTrait.php
 
-<<<<<<< .merge_file_94FgOz
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2025-12-16
->>>>>>> laraxot/dev
-=======
-**Date**: [DATE]
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Date**: 2025-12-16
->>>>>>> .merge_file_rzYDnD
 **File**: `Modules/Xot/app/Filament/Traits/TransTrait.php`
 **PHPStan Level**: 10
 **Total Errors**: ~10 (across multiple contexts)
@@ -400,19 +388,7 @@ This fix may also resolve related errors in:
 
 ## Related Documentation
 
-<<<<<<< .merge_file_94FgOz
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [PHPStan Analysis Summary](phpstan-analysis-[date].md)
-=======
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
->>>>>>> laraxot/dev
-=======
-- [PHPStan Analysis Summary](phpstan-analysis-[date].md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
->>>>>>> .merge_file_rzYDnD
 - [XotBase Extension Rules](xotbase-extension-rules.md)
 - [Filament Integration](filament-integration.md)
 
@@ -420,16 +396,4 @@ This fix may also resolve related errors in:
 
 **Status**: 🟡 Documented - Awaiting Fix
 **Assigned To**: Module Owner
-<<<<<<< .merge_file_94FgOz
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 **Last Updated**: 2025-12-16
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Last Updated**: 2025-12-16
->>>>>>> .merge_file_rzYDnD

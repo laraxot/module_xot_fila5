@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_NQOjpY
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_F2tdBg
 ---
 title: "Error Curl"
 module: "Xot"
@@ -17,30 +9,11 @@ qmd: "error curl"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< .merge_file_NQOjpY
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_F2tdBg
 ---
 module: theme
 topic: error-curl
 canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 ---
-<<<<<<< .merge_file_NQOjpY
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_F2tdBg
 
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
@@ -86,13 +59,3 @@ composer config --global cafile PATH/TO/cacert.pem
 composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
 
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
-<<<<<<< .merge_file_NQOjpY
->>>>>>> 64619e34 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_F2tdBg

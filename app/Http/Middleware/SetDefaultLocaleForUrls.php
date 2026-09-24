@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://laravel.com/docs/11.x/urls#default-values
  */
@@ -20,37 +16,13 @@ class SetDefaultLocaleForUrls
     /**
      * Handle an incoming request.
      *
-<<<<<<< .merge_file_LmUiEb
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  \Closure(Request):Response  $next
-=======
-     * @param \Closure(Request):Response $next
->>>>>>> laraxot/dev
-=======
-     * @param \Closure(Request):Response $next
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  \Closure(Request):Response  $next
->>>>>>> .merge_file_IfjyEQ
      */
     public function handle(Request $request, \Closure $next): Response
     {
         $user = $request->user();
         $lang = app()->getLocale();
-<<<<<<< .merge_file_LmUiEb
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($user !== null) {
-=======
-        if (null !== $user) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $user) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($user !== null) {
->>>>>>> .merge_file_IfjyEQ
             $lang = $user->lang ?? app()->getLocale();
         }
 

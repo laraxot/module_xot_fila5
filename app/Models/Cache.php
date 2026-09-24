@@ -13,28 +13,9 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @property string $key
  * @property string $value
-<<<<<<< .merge_file_TKfu4p
-<<<<<<< HEAD
- *                              <<<<<<< HEAD
- * @property int    $expiration
- *
- * @method static CacheFactory factory($count = null, $state = [])
- *                                                                 =======
- *
- * @property int $expiration
- *
- * @method static CacheFactory          factory($count = null, $state = [])
- *                                                                          >>>>>>> laraxot/dev
-=======
- * @property int    $expiration
- *
- * @method static CacheFactory          factory($count = null, $state = [])
->>>>>>> 8d801bbe (Check & fix styling)
-=======
  * @property int $expiration
  *
  * @method static CacheFactory factory($count = null, $state = [])
->>>>>>> .merge_file_NG6RH2
  * @method static Builder<static>|Cache newModelQuery()
  * @method static Builder<static>|Cache newQuery()
  * @method static Builder<static>|Cache query()

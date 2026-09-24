@@ -165,40 +165,12 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 ### Documentazione Moduli Correlati
 - [Geo Module Translations](/Modules/Geo/docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/docs/translation-guidelines.md)
-<<<<<<< .merge_file_BkZR0G
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Geo Module Translations](/modules/geo/docs/translation-structure-expanded.md)
-- [User Module Translations](/modules/user/docs/translation-guidelines.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_z1vNVO
 - [Struttura Traduzioni Espansa](/project_docs/translation-structure-expanded.md)
 - [Principi DRY/KISS](/project_docs/dry-kiss-principles.md)
 
 ### Documentazione Moduli Correlati
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
-<<<<<<< .merge_file_BkZR0G
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
-- [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_z1vNVO
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole
@@ -227,20 +199,4 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS
-<<<<<<< .merge_file_BkZR0G
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Data**: 2025-08-08
-=======
-<<<<<<< HEAD
-**Data**: 2025-08-08
-=======
-**Data**: 2025-08-08
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Data**: 2025-08-08
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Data**: 2025-08-08
->>>>>>> .merge_file_z1vNVO

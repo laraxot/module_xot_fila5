@@ -5,32 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\ModelClass;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< .merge_file_CnImb1
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_L0ydVq
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\file;
 
-<<<<<<< .merge_file_CnImb1
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-use function Safe\file;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_L0ydVq
 class GetMethodBodyAction
 {
     use QueueableAction;

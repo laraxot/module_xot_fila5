@@ -1,19 +1,3 @@
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_HGzKOu
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_7UVgaw
 ---
 title: "Type hinting"
 type: reference
@@ -27,21 +11,6 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/type_hinting.txt -->
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_HGzKOu
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 https://mlocati.github.io/articles/php-type-hinting.html
 https://howto.webarea.it/php/type-hinting-php-e-controllo-wake-strict-mode_170
 https://wiki.php.net/rfc/scalar_type_hints
@@ -49,29 +18,6 @@ https://wiki.php.net/rfc/return_types
 
 https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_HGzKOu
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 /** @var $post Post */
 
 /** @var $posts Post[] */
@@ -80,49 +26,10 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      * @Route("/types")
      */
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_HGzKOu
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 
 declare(strict_types = 1);
 
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-declare(strict_types = 1);
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_HGzKOu
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 protected ClassName $classType;
 
  // Types are also legal on static properties
@@ -162,29 +69,6 @@ function iterable_map(iterable $list, callable $operation) : iterable
   }
 }
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_HGzKOu
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 public static function byArray(iterable $data)
     {
         $results = [];
@@ -204,33 +88,6 @@ public static function byArray(iterable $data)
         return $slug;
     }
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_HGzKOu
-
-
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-
-
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
  private static $instance = null;
@@ -243,33 +100,6 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
         return self::$instance;
     }
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_HGzKOu
-
-
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-
-
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 class ClassName
 {
     public function foo(): self
@@ -281,29 +111,6 @@ class ClassName
 $instance = new ClassName();
 $instance->foo();
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_HGzKOu
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 ublic function foo(): ?stdClass
     {
         return new stdClass();
@@ -314,58 +121,11 @@ ublic function foo(): ?stdClass
         return null;
     }
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_HGzKOu
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 function foo(): object
 {
     return new stdClass();
 }
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_HGzKOu
-
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw
 Relazioni
 https://github.com/larastan/larastan/issues/689
 
@@ -378,45 +138,7 @@ public function articles(): HasMany {
     return $this->hasMany(Article::class);
 }
 
-<<<<<<< .merge_file_h2Mudw
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_7UVgaw
 
 
 
 https://github.com/oucil/Code-Hint-Aggregator
-<<<<<<< .merge_file_h2Mudw
-=======
-https://github.com/oucil/Code-Hint-Aggregator
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_yPoW4E
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_HGzKOu
-
-
-
-<<<<<<< HEAD
-https://github.com/oucil/Code-Hint-Aggregator
-<<<<<<< HEAD
-=======
-https://github.com/oucil/Code-Hint-Aggregator
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
-
-
-https://github.com/oucil/Code-Hint-Aggregator
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7UVgaw

@@ -482,23 +482,7 @@ public function user(): BelongsTo
 
 - [Filament Best Practices](./filament-best-practices.md)
 - [Testing Guidelines](./testing-guidelines.md)
-<<<<<<< .merge_file_V6WlXe
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
-=======
-<<<<<<< HEAD
-- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
-=======
-- [Performance Optimization](./performance-optimization.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Performance Optimization](./performance-optimization.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
->>>>>>> .merge_file_yc8C8b
 - [Security Guidelines](./security-guidelines.md)
 
 This document provides the foundation for maintaining high code quality standards across the Xot module and serves as a reference for other modules that extend Xot functionality.
@@ -986,23 +970,7 @@ public function user(): BelongsTo
 
 - [Filament Best Practices](./filament-best-practices.md)
 - [Testing Guidelines](./testing-guidelines.md)
-<<<<<<< .merge_file_V6WlXe
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
-=======
-<<<<<<< HEAD
-- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
-=======
-- [Performance Optimization](./performance-optimization.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Performance Optimization](./performance-optimization.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
->>>>>>> .merge_file_yc8C8b
 - [Security Guidelines](./security-guidelines.md)
 
 This document provides the foundation for maintaining high code quality standards across the Xot module and serves as a reference for other modules that extend Xot functionality.

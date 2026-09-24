@@ -376,34 +376,10 @@ Test non isolati o dipendenze condivise.
 
 **Soluzione**
 ```php
-<<<<<<< .merge_file_AXsftW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Y9T4zf
 // ✅ DatabaseTransactions — mai RefreshDatabase (dati sacri)
 class ExampleTest extends TestCase
 {
     use Illuminate\Foundation\Testing\DatabaseTransactions;
-<<<<<<< .merge_file_AXsftW
-<<<<<<< HEAD
-=======
-=======
-class ExampleTest extends TestCase
-{
-    use RefreshDatabase; // Garantisce database pulito
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-class ExampleTest extends TestCase
-{
-    use RefreshDatabase; // Garantisce database pulito
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Y9T4zf
 
     protected function setUp(): void
     {
@@ -413,24 +389,8 @@ class ExampleTest extends TestCase
 }
 ```
 
-<<<<<<< .merge_file_AXsftW
-<<<<<<< HEAD
-<<<<<<< HEAD
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
-=======
-<<<<<<< HEAD
-Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
-
->>>>>>> .merge_file_Y9T4zf
 ### Errore: Test Lenti
 
 **Causa**

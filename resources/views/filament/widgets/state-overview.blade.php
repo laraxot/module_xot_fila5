@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 ?>
 {{-- Vista per il widget AppointmentOverviewWidget --}}
 <x-filament-widgets::widget>

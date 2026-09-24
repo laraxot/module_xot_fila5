@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_d2bkVA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_zvypUl
 # Convenzioni per Data Objects e QueueableActions
 
 Questo documento definisce le convenzioni per l'utilizzo dei Data Objects e QueueableActions nel framework Laraxot <nome progetto>, con una chiara preferenza per le librerie Spatie rispetto agli approcci tradizionali.
@@ -277,21 +267,3 @@ class UpdateRatingAction
 5. **Scalabilità**: Facile aggiunta di nuove funzionalità
 6. **Manutenibilità**: Codice più leggibile e facile da mantenere
 7. **Compatibilità con PHPStan**: Struttura adatta per analisi PHPStan di livello 9
-<<<<<<< .merge_file_d2bkVA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: data-queableactions
-canonical: ../../../Themes/docs/shared-components/data-queableactions.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/data-queableactions.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_zvypUl

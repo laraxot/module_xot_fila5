@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_73Q3hg
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WAlMW7
 # Modulo Xot
 
 ## Informazioni Generali
@@ -116,21 +106,3 @@ composer format        # Formatta il codice
 
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub.
-<<<<<<< .merge_file_73Q3hg
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: module-xot
-canonical: ../../../Themes/docs/shared-components/module-xot.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/module-xot.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WAlMW7

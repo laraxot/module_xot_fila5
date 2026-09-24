@@ -194,42 +194,11 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - Aggiornare questo documento se vengono introdotti nuovi schemi di denominazione o convenzioni.
 
 ## Collegamenti alla documentazione correlata
-<<<<<<< .merge_file_8FQ1AE
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_nOAPLr
 - [Qualità del codice](code_quality.md)
 - [Tipi rigorosi PHP](php-strict-types.md)
 - [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](service-provider-best-practices.md)
 - [Best practice per Filament](filament-best-practices.md)
-<<<<<<< .merge_file_8FQ1AE
-<<<<<<< HEAD
-=======
-=======
-- [Qualità del codice](./code_quality.md)
-- [Tipi rigorosi PHP](./php-strict-types.md)
-- [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
-- [Best practice per i provider di servizi](./service-provider-best-practices.md)
-- [Best practice per Filament](./filament-best-practices.md)
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-- [Qualità del codice](./CODE_QUALITY.md)
-- [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
-- [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
-- [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
-- [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nOAPLr
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -373,20 +342,4 @@ type(scope): descrizione breve
 Descrizione dettagliata se necessaria
 ```
 
-<<<<<<< .merge_file_8FQ1AE
-<<<<<<< HEAD
-<<<<<<< HEAD
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-=======
-<<<<<<< HEAD
-Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-=======
-Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
->>>>>>> .merge_file_nOAPLr

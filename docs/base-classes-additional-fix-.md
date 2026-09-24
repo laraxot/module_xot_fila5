@@ -124,67 +124,9 @@ XotBaseModel (Xot) - Base standard
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_U9wk6O
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_w7dI85
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-- [Model Inheritance Complete Fix](../../docs/MODEL_INHERITANCE_COMPLETE_FIX.md)
-- [DRY/KISS Analysis](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
-- [Model Inheritance Complete Fix](../../../docs/model_inheritance_complete_fix.md)
-- [DRY/KISS Analysis](../../../docs/dry_kiss_analysis_2025-10-15.md)
-
----
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
-=======
-<<<<<<< HEAD
-**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_ifhpJJ
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kwi4ov
 - [Model Inheritance Complete Fix](../../docs/model_inheritance_complete_fix.md)
 - [DRY/KISS Analysis](../../docs/dry_kiss_analysis_2025-10-15.md)
 
 ---
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
-<<<<<<< .merge_file_U9wk6O
-<<<<<<< HEAD
-=======
-**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
->>>>>>> 7f6cf6be (.)
-=======
-<<<<<<< HEAD
-=======
-- [Model Inheritance Complete Fix](../../docs/MODEL_INHERITANCE_COMPLETE_FIX.md)
-- [DRY/KISS Analysis](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
-- [Model Inheritance Complete Fix](../../../docs/model_inheritance_complete_fix.md)
-- [DRY/KISS Analysis](../../../docs/dry_kiss_analysis_2025-10-15.md)
-
----
-
-**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_kwi4ov

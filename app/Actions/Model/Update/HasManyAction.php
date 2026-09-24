@@ -40,20 +40,7 @@ class HasManyAction
     /**
      * Determine if the update is a direct update.
      *
-<<<<<<< .merge_file_pNtFcP
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<string, mixed> $data
-     *                                   =======
-     * @param array<string, mixed> $data
-     *                                   >>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  array<string, mixed>  $data
->>>>>>> .merge_file_7aq4D9
      */
     private function isDirectUpdate(array $data): bool
     {
@@ -107,20 +94,7 @@ class HasManyAction
     /**
      * Clean up orphaned records after batch update.
      *
-<<<<<<< .merge_file_pNtFcP
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<int, int|string> $updatedIds
-     *                                           =======
-     * @param array<int, int|string> $updatedIds
-     *                                           >>>>>>> laraxot/dev
-=======
-     * @param array<int, int|string> $updatedIds
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  array<int, int|string>  $updatedIds
->>>>>>> .merge_file_7aq4D9
      */
     private function cleanupOrphanedRecords(
         RelationData $relationDTO,

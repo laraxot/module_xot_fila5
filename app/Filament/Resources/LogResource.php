@@ -4,21 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
-<<<<<<< .merge_file_wVAdSb
-=======
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
-=======
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
-use Filament\Infolists\Components\TextEntry;
-use Filament\Support\Components\Component;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_PHJENY
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
@@ -35,21 +22,7 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'name' => TextInput::make('name')->required()->maxLength(255),
-            'path' => TextInput::make('path')->required()->maxLength(255),
-            'content' => Textarea::make('content')->columnSpanFull(),
-        ];
-    }
-
-    public static function getInfolistSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'name' => TextEntry::make('name')->columnSpanFull(),
@@ -71,33 +44,11 @@ class LogResource extends XotBaseResource
         ];
     }
 
-<<<<<<< .merge_file_wVAdSb
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    #[\Override]
->>>>>>> laraxot/dev
-=======
-    #[\Override]
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_PHJENY
     public static function getRelations(): array
     {
         return [];
     }
 
-<<<<<<< .merge_file_wVAdSb
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    #[\Override]
->>>>>>> laraxot/dev
-=======
-    #[\Override]
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_PHJENY
     public static function getPages(): array
     {
         return [

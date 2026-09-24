@@ -2,12 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/sv/http.php
->>>>>>> 8d801bbe (Check & fix styling)
 return [
     404 => [
         'title' => 'Sidan kunde inte visas.',

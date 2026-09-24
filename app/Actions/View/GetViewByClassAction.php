@@ -20,32 +20,11 @@ class GetViewByClassAction
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group".
      *
-<<<<<<< .merge_file_zskErt
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_3uyBAL
      * @param  string  $class  Il nome della classe da convertire
      * @param  string  $suffix  Suffisso opzionale da aggiungere al nome della vista
      * @return view-string
      *
      * @throws \Exception Se la vista non esiste
-<<<<<<< .merge_file_zskErt
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param string $class  Il nome della classe da convertire
-     * @param string $suffix Suffisso opzionale da aggiungere al nome della vista
-     *
-     * @throws \Exception Se la vista non esiste
-     *
-     * @return view-string
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_3uyBAL
      */
     public function execute(string $class, string $suffix = ''): string
     {
@@ -79,19 +58,7 @@ class GetViewByClassAction
             $module_low.'::'.$implode.$suffix,
         ];
         $view = Arr::first($views, view()->exists(...));
-<<<<<<< .merge_file_zskErt
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($view === null) {
-=======
-        if (null === $view) {
->>>>>>> laraxot/dev
-=======
-        if (null === $view) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($view === null) {
->>>>>>> .merge_file_3uyBAL
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 

@@ -196,39 +196,9 @@
 - [Chart](../Chart/docs/README.md) - Grafici
 
 ## Collegamenti tra versioni di LINKS.md
-<<<<<<< .merge_file_dAiSzL
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [LINKS.md](links.md)
 * [LINKS.md](links.md)
 * [LINKS.md](links.md)
-=======
-<<<<<<< .merge_file_dSUctB
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-=======
-<<<<<<< HEAD
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-=======
-* [LINKS.md](../../../Xot/docs/LINKS.md)
-* [LINKS.md](../../../User/docs/LINKS.md)
-* [LINKS.md](../../../UI/docs/LINKS.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_t85IPO
->>>>>>> laraxot/dev
-=======
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
->>>>>>> .merge_file_Dv24ft
 * [LINKS.md](../../../Cms/docs/LINKS.md)
 * [LINKS.md](../../../../Themes/One/docs/LINKS.md)
 

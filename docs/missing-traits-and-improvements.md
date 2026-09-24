@@ -612,35 +612,8 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_O2htYe
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
-=======
-- [Analisi Completa Codice](./comprehensive_code_analysis.md)
-- [Architettura Moduli](./architecture.md)
-- [Performance Guide](./performance_guide.md)
-
----
-
-**Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_X81ZdS
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -720,30 +693,8 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
-<<<<<<< .merge_file_O2htYe
-<<<<<<< HEAD
-<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
-=======
-<<<<<<< HEAD
-// QuaerisService.php
-class QuaerisService
-=======
-// healthcare_appService.php
-class healthcare_appService
-// ModuloEsempioService.php
-class ModuloEsempioService
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> .merge_file_X81ZdS
 {
     use SingletonTrait;
 
@@ -1216,30 +1167,8 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
-<<<<<<< .merge_file_O2htYe
-<<<<<<< HEAD
-<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
-=======
-<<<<<<< HEAD
-// QuaerisService.php
-class QuaerisService
-=======
-// healthcare_appService.php
-class healthcare_appService
-// ModuloEsempioService.php
-class ModuloEsempioService
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> .merge_file_X81ZdS
 {
     use SingletonTrait;
 
@@ -1307,35 +1236,8 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_O2htYe
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
-=======
-- [Analisi Completa Codice](./comprehensive_code_analysis.md)
-- [Architettura Moduli](./architecture.md)
-- [Performance Guide](./performance_guide.md)
-
----
-
-**Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_X81ZdS
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1343,20 +1245,4 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
-<<<<<<< .merge_file_O2htYe
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Benefici**: ALTI
-=======
-<<<<<<< HEAD
-**Benefici**: ALTI
-=======
-**Benefici**: ALTI
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Benefici**: ALTI
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Benefici**: ALTI
->>>>>>> .merge_file_X81ZdS

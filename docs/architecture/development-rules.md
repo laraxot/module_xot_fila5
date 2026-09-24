@@ -2,20 +2,6 @@
 
 ## Collegamenti
 - [Documentazione generale progetto](/project_docs/README.md)
-<<<<<<< .merge_file_NiLjpz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Documentazione generale progetto](/project_docs/readme.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Documentazione generale progetto](/project_docs/readme.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_xu7dLA
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -438,20 +424,4 @@ TextInput::make('name')
 
 ---
 
-<<<<<<< .merge_file_NiLjpz
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
-=======
-<<<<<<< HEAD
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
-=======
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
->>>>>>> .merge_file_xu7dLA

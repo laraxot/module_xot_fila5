@@ -286,17 +286,3 @@ return [
 ## Collegamenti tra versioni di config.md
 * [config.md](../../../Xot/docs/config.md)
 * [config.md](../../../../Themes/One/docs/config.md)
-<<<<<<< .merge_file_eDoV0g
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [config.md](../../../xot/docs/config.md)
-* [config.md](../../../../themes/one/docs/config.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_zhKVqi

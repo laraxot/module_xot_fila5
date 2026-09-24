@@ -1,19 +1,3 @@
-<<<<<<< .merge_file_vgE1WF
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_0Tgqx5
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_POTMkK
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_BFrpF2
 ---
 title: "Regola Generale: Metodo getTableColumns per Filament Table (Xot)"
 module: "Xot"
@@ -25,21 +9,6 @@ qmd: "filament table columns"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< .merge_file_vgE1WF
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_0Tgqx5
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_POTMkK
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_BFrpF2
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
 ## Regola
@@ -67,48 +36,11 @@ public function getTableColumns(): array
 - Ogni modulo deve documentare l'adozione nella sua docs/
 - Aggiornare override, chiamate e test
 
-<<<<<<< .merge_file_vgE1WF
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_BFrpF2
 **Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
 
 ## Collegamenti
 - [Esempio e Applicazione - Modulo User](filament_table_columns.md)
-<<<<<<< .merge_file_vgE1WF
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
-=======
-=======
-- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
->>>>>>> laraxot/dev
-=======
-- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
->>>>>>> .merge_file_POTMkK
-- [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
-=======
-**Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../performance/docs/filament-resources.md).
-
-## Collegamenti
-- [Esempio e Applicazione - Modulo User](../../../user/docs/filament/filament_table_columns.md)
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-**Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
-
-## Collegamenti
-- [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
-- [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
-<<<<<<< HEAD
-- [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
->>>>>>> .merge_file_BFrpF2
 
 ## Nota storica: correzione XotBaseManageRelatedRecords
 
@@ -124,20 +56,4 @@ public function getTableColumns(): array
 
 **Ultimo aggiornamento:** 2025-05-13
 
-<<<<<<< .merge_file_vgE1WF
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
-=======
-<<<<<<< HEAD
-**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
-=======
-**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
->>>>>>> .merge_file_BFrpF2

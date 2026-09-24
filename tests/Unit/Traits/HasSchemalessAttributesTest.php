@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Database\Eloquent\Builder;
 use Mockery\MockInterface;
 use Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel;
@@ -18,19 +14,7 @@ it('handles extra attributes scope', function (): void {
     /** @var MockInterface&Builder<SchemalessTestModel> $builder */
     $builder = Mockery::mock(Builder::class);
 
-<<<<<<< .merge_file_KiJVpk
-<<<<<<< HEAD
-<<<<<<< HEAD
     $model = new SchemalessTestModel;
-=======
-    $model = new SchemalessTestModel();
->>>>>>> laraxot/dev
-=======
-    $model = new SchemalessTestModel();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $model = new SchemalessTestModel;
->>>>>>> .merge_file_kDRQzD
     $model->extra_attributes = SchemalessAttributes::createForModel($model, 'extra_attributes');
 
     $result = $model->scopeWithExtraAttributes($builder);
@@ -43,19 +27,7 @@ it('handles where extra attribute scope', function (): void {
     $builder = Mockery::mock(Builder::class);
     $builder->allows(['where' => $builder]);
 
-<<<<<<< .merge_file_KiJVpk
-<<<<<<< HEAD
-<<<<<<< HEAD
     $model = new SchemalessTestModel;
-=======
-    $model = new SchemalessTestModel();
->>>>>>> laraxot/dev
-=======
-    $model = new SchemalessTestModel();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $model = new SchemalessTestModel;
->>>>>>> .merge_file_kDRQzD
 
     $result = $model->scopeWhereExtraAttribute($builder, 'key', 'value');
     Assert::assertSame($builder, $result);
@@ -63,19 +35,7 @@ it('handles where extra attribute scope', function (): void {
 });
 
 it('gets and sets extra attributes', function (): void {
-<<<<<<< .merge_file_KiJVpk
-<<<<<<< HEAD
-<<<<<<< HEAD
     $model = new SchemalessTestModel;
-=======
-    $model = new SchemalessTestModel();
->>>>>>> laraxot/dev
-=======
-    $model = new SchemalessTestModel();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $model = new SchemalessTestModel;
->>>>>>> .merge_file_kDRQzD
     $model->setExtraAttribute('foo', 'bar');
 
     Assert::assertSame('bar', $model->getExtraAttribute('foo'));
@@ -84,38 +44,14 @@ it('gets and sets extra attributes', function (): void {
 });
 
 it('returns all extra attributes as array', function (): void {
-<<<<<<< .merge_file_KiJVpk
-<<<<<<< HEAD
-<<<<<<< HEAD
     $model = new SchemalessTestModel;
-=======
-    $model = new SchemalessTestModel();
->>>>>>> laraxot/dev
-=======
-    $model = new SchemalessTestModel();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $model = new SchemalessTestModel;
->>>>>>> .merge_file_kDRQzD
     $model->setExtraAttribute('a', 1);
 
     Assert::assertSame(['a' => 1], $model->getExtraAttributes());
 });
 
 it('removes extra attribute', function (): void {
-<<<<<<< .merge_file_KiJVpk
-<<<<<<< HEAD
-<<<<<<< HEAD
     $model = new SchemalessTestModel;
-=======
-    $model = new SchemalessTestModel();
->>>>>>> laraxot/dev
-=======
-    $model = new SchemalessTestModel();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $model = new SchemalessTestModel;
->>>>>>> .merge_file_kDRQzD
     $model->setExtraAttribute('temp', 'val');
 
     Assert::assertTrue($model->hasExtraAttribute('temp'));

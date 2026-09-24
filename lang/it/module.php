@@ -2,34 +2,16 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/module.php
-return [
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
->>>>>>> 8d801bbe (Check & fix styling)
     'navigation' => [
         'name' => 'Modulo',
         'plural' => 'Moduli',
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
         'label' => 'module.navigation',
         'icon' => 'module.navigation',
         'sort' => 65,
-=======
->>>>>>> 8d801bbe (Check & fix styling)
     ],
     'fields' => [
         'name' => [
@@ -126,15 +108,12 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'path' => [
             'label' => 'path',
         ],
         'enabled' => [
             'label' => 'enabled',
         ],
-=======
->>>>>>> 8d801bbe (Check & fix styling)
     ],
     'pages' => [
         'health_check_results' => [
@@ -156,7 +135,6 @@ return [
     'actions' => [
         'create' => [
             'label' => 'Crea Module',
-<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -184,14 +162,6 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
-=======
-        ],
-        'edit' => [
-            'label' => 'Modifica Module',
-        ],
-        'delete' => [
-            'label' => 'Elimina Module',
->>>>>>> 8d801bbe (Check & fix styling)
         ],
     ],
 ];

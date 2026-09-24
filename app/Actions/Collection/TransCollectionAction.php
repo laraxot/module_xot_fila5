@@ -4,19 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Collection;
 
-<<<<<<< .merge_file_ssZ2iW
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// use Modules\Xot\Services\ArrayService;
-
->>>>>>> laraxot/dev
-=======
-// use Modules\Xot\Services\ArrayService;
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_lHa6Ce
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -33,38 +20,12 @@ class TransCollectionAction
     /**
      * Esegue la traduzione di una collezione.
      *
-<<<<<<< .merge_file_ssZ2iW
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Collection<int|string, mixed>  $collection
-=======
-     * @param Collection<int|string, mixed> $collection
-     *
->>>>>>> laraxot/dev
-=======
-     * @param Collection<int|string, mixed> $collection
-     *
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  Collection<int|string, mixed>  $collection
->>>>>>> .merge_file_lHa6Ce
      * @return Collection<int|string, string>
      */
     public function execute(Collection $collection, ?string $transKey): Collection
     {
-<<<<<<< .merge_file_ssZ2iW
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($transKey === null) {
-=======
-        if (null === $transKey) {
->>>>>>> laraxot/dev
-=======
-        if (null === $transKey) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($transKey === null) {
->>>>>>> .merge_file_lHa6Ce
             return $collection->map(SafeStringCastAction::cast(...));
         }
 
@@ -76,21 +37,7 @@ class TransCollectionAction
     /**
      * Traduce un singolo elemento.
      *
-<<<<<<< .merge_file_ssZ2iW
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  mixed  $item  L'elemento da tradurre
-=======
-     * @param mixed $item L'elemento da tradurre
-     *
->>>>>>> laraxot/dev
-=======
-     * @param mixed $item L'elemento da tradurre
-     *
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  mixed  $item  L'elemento da tradurre
->>>>>>> .merge_file_lHa6Ce
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
     public function trans(mixed $item): string
@@ -100,19 +47,7 @@ class TransCollectionAction
             $item = SafeStringCastAction::cast($item);
         }
 
-<<<<<<< .merge_file_ssZ2iW
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (empty($item) || $this->transKey === null) {
-=======
-        if (empty($item) || null === $this->transKey) {
->>>>>>> laraxot/dev
-=======
-        if (empty($item) || null === $this->transKey) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if (empty($item) || $this->transKey === null) {
->>>>>>> .merge_file_lHa6Ce
             return $item;
         }
 

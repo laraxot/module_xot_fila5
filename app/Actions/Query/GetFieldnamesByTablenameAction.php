@@ -16,70 +16,11 @@ final class GetFieldnamesByTablenameAction
     /**
      * Get column names from a table with specific database connection.
      *
-<<<<<<< .merge_file_cbJDBR
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param string      $table          Table name to get columns from
-     * @param string|null $connectionName Database connection name (optional)
-     *
-     * @throws \InvalidArgumentException
-<<<<<<< HEAD
-     *                                   =======
-     *                                   <<<<<<< .merge_file_9lJc4S
-     *                                   =======
-     *                                   <<<<<<< HEAD
-     *                                   <<<<<<< .merge_file_Jfzn7Q
-     *                                   >>>>>>> .merge_file_G3Zryu
-     * @throws \InvalidArgumentException
-     *                                   <<<<<<< .merge_file_9lJc4S
-     *                                   =======
-     *                                   =======
-     *                                   <<<<<<< .merge_file_AaGd7c
-     * @throws \InvalidArgumentException
-     *                                   =======
-     *                                   <<<<<<< HEAD
-     * @throws \InvalidArgumentException
-     *                                   =======
-     * @throws \InvalidArgumentException
-     * @throws \InvalidArgumentException
-     *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-     * @return list<string>
-     * @return list<string>
-     * @return list<string>
-     * @return list<string>
-     * @return list<string>
-     *                      >>>>>>> laraxot/dev
-     *                      >>>>>>> .merge_file_46hKcJ
-     *                      >>>>>>> .merge_file_hUuUgC
-     *                      =======
-     * @return list<string>
-     *                      >>>>>>> .merge_file_G3Zryu
-     *                      >>>>>>> laraxot/dev
-=======
-     *
-     * @return list<string>
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  string  $table  Table name to get columns from
      * @param  string|null  $connectionName  Database connection name (optional)
      * @return list<string>
      *
      * @throws \InvalidArgumentException
->>>>>>> .merge_file_A8rDal
      */
     public function execute(string $table, ?string $connectionName = null): array
     {

@@ -221,19 +221,6 @@ find Modules/*/docs -type f | sort -f | uniq -di
 ```bash
 # Sposta file vecchi in _archive con data
 mv old-file.md _archive/2024-01-15-old-file.md
-<<<<<<< .merge_file_NLx8Jx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-mv old-file.md _archive/[DATE]-old-file.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_AfSKaw
 ```
 
 **Quando archiviare**:
@@ -253,19 +240,6 @@ mv old-file.md _archive/[DATE]-old-file.md
 [Link](./same-folder/file.md)
 [Link](../parent-folder/file.md)
 [Link](../../Modules/Other/docs/file.md)
-<<<<<<< .merge_file_NLx8Jx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-[Link](../../modules/other/docs/file.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_AfSKaw
 
 ❌ SBAGLIATO:
 [Link](/absolute/path/file.md)
@@ -592,31 +566,6 @@ Per migliorare questa guida:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_NLx8Jx
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versione**: 1.0
 **Status**: ✅ Active
 **Maintainer**: Team Laraxot
-=======
-<<<<<<< HEAD
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
-=======
-**Ultimo aggiornamento**: [DATE]
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Versione**: 1.0
-**Status**: ✅ Active
-**Maintainer**: Team Laraxot
->>>>>>> .merge_file_AfSKaw

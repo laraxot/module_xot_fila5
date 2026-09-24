@@ -1,19 +1,6 @@
 # Analisi Approfondita del Modulo Xot
 
 > **Generato**: 2025-12-24
-<<<<<<< .merge_file_TlFzfN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-> **Generato**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WYKyP6
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo Xot
 
 ---
@@ -36,30 +23,10 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
 <<<<<<< HEAD
-<<<<<<< .merge_file_TlFzfN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WYKyP6
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_TlFzfN
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WYKyP6
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -364,30 +331,10 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
-<<<<<<< .merge_file_TlFzfN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WYKyP6
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_TlFzfN
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WYKyP6
         return [TextInput::make('name')];
     }
 }
@@ -444,17 +391,3 @@ Il modulo Xot rappresenta **l'incarnazione perfetta dei principi DRY+KISS applic
 - [Base Classes Documentation](./consolidated/base-classes.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 - [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
-<<<<<<< .merge_file_TlFzfN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
-- [Filament 4 Laraxot Rules](./filament_4_laraxot_rules.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_WYKyP6

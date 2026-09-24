@@ -1,19 +1,6 @@
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27
-<<<<<<< .merge_file_cwGQ4z
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_kvspIr
 
 ## Problema Identificato
 
@@ -170,20 +157,4 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 - Utilizzare sempre template generics per modelli che estendono BaseModel
 - Tipizzare sempre proprietà array come `list<string>` o `array<string, mixed>`
 - Testare sempre con PHPStan dopo modifiche ai modelli base
-<<<<<<< .merge_file_cwGQ4z
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Implementare test di regressione per validare le correzioni
-=======
-<<<<<<< HEAD
-- Implementare test di regressione per validare le correzioni
-=======
-- Implementare test di regressione per validare le correzioni
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Implementare test di regressione per validare le correzioni
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Implementare test di regressione per validare le correzioni
->>>>>>> .merge_file_kvspIr

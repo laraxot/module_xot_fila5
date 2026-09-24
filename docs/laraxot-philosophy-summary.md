@@ -1,20 +1,3 @@
-<<<<<<< .merge_file_ZTHo2V
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_8giRhQ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_7QExDF
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Bay0V0
 # Laraxot Philosophy - Complete Summary
 
 ## Core Principles
@@ -30,23 +13,7 @@
 
 ### 2. **Consistency Over Flexibility**
 
-<<<<<<< .merge_file_ZTHo2V
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Predictable behavior is more valuable than unlimited options:**
-=======
-<<<<<<< HEAD
-**Predictable behavior is more valuable than unlimited options:**
-=======
-**<nome progetto>able behavior is more valuable than unlimited options:**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Predictable behavior is more valuable than unlimited options:**
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Predictable behavior is more valuable than unlimited options:**
->>>>>>> .merge_file_Bay0V0
 
 - Same file structure across all modules
 - Same inheritance patterns for all models
@@ -104,23 +71,7 @@
 
 ### Technical Benefits
 
-<<<<<<< .merge_file_ZTHo2V
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. **Predictable Autoloading**: No ambiguous class resolution
-=======
-<<<<<<< HEAD
-1. **Predictable Autoloading**: No ambiguous class resolution
-=======
-1. **<nome progetto>able Autoloading**: No ambiguous class resolution
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-1. **Predictable Autoloading**: No ambiguous class resolution
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-1. **Predictable Autoloading**: No ambiguous class resolution
->>>>>>> .merge_file_Bay0V0
 2. **Consistent Behavior**: Same results in all environments
 3. **Easy Maintenance**: Clear, unambiguous code structure
 4. **Fast Debugging**: Obvious source of truth for each entity
@@ -207,15 +158,6 @@ composer dump-autoload
 
 ---
 
-<<<<<<< .merge_file_ZTHo2V
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Bay0V0
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 
 ---
@@ -411,21 +353,3 @@ Questo documento rappresenta la sintesi delle conoscenze acquisite attraverso:
 **Ultimo Aggiornamento**: 8 Gennaio 2026
 **Stato**: Documento Vivo - Aggiornare con nuove scoperte
 **Principio**: La documentazione è la memoria viva del sistema
-<<<<<<< .merge_file_ZTHo2V
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_8giRhQ
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-**Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
->>>>>>> .merge_file_7QExDF
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Bay0V0

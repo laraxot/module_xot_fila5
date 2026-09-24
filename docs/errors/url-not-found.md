@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: Url Not Found
 description: Url Not Found
 extends: _layouts.documentation
@@ -40,22 +39,9 @@ define ROOT "C:/var/www/nome_giunzione/public_html"
 ## Collegamenti tra versioni di url-not-found.md
 * [url-not-found.md](../../../xot/project_docs/base/url-not-found.md)
 * [url-not-found.md](../../../xot/project_docs/errors/url-not-found.md)
-=======
-* [url-not-found.md](../../../Xot/docs/base/url-not-found.md)
-* [url-not-found.md](../../../Xot/docs/errors/url-not-found.md)
->>>>>>> 8d801bbe (Check & fix styling)
 
 ### Versione Incoming
 
 **NB**: dopo aver fatto questa modifica, riavviare laragon
 
 ---
-<<<<<<< HEAD
-=======
-module: theme
-topic: url-not-found
-canonical: ../../../../Themes/docs/shared-components/url-not-found.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/url-not-found.md
->>>>>>> 8d801bbe (Check & fix styling)

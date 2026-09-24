@@ -87,26 +87,5 @@ use TransTrait {
 ## Collegamenti
 
 - [README Modulo Xot](./README.md)
-<<<<<<< .merge_file_Uf7Tt1
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Code Quality Rules](./code-quality.md)
 - [Best Practices](./best-practices.md)
-=======
-<<<<<<< HEAD
-- [Code Quality Rules](./code-quality.md)
-- [Best Practices](./best-practices.md)
-=======
-- [README Modulo Xot](./readme.md)
-- [Code Quality Rules](./code-quality.md)
-- [Best Practices](./best-practices.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Code Quality Rules](./code-quality.md)
-- [Best Practices](./best-practices.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Code Quality Rules](./code-quality.md)
-- [Best Practices](./best-practices.md)
->>>>>>> .merge_file_DsxYRT

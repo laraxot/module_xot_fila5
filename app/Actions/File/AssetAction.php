@@ -8,54 +8,22 @@ use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
 use Webmozart\Assert\Assert;
 
 class AssetAction
 {
     use QueueableActionTrait;
-=======
-
-use function Safe\copy;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-class AssetAction
-{
-    use QueueableAction;
->>>>>>> 8d801bbe (Check & fix styling)
 
     private XotData $xot;
 
     /**
      * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
      *
-<<<<<<< .merge_file_2p68KX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_8SKPJA
      * @param  string  $path  Il percorso dell'asset
      * @return string Il percorso pubblico dell'asset
      *
      * @throws Exception Se il file sorgente non esiste o non può essere copiato
-<<<<<<< .merge_file_2p68KX
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param string $path Il percorso dell'asset
-     *
-     * @throws \Exception Se il file sorgente non esiste o non può essere copiato
-     *
-     * @return string Il percorso pubblico dell'asset
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_8SKPJA
      */
     public function execute(string $path): string
     {
@@ -140,37 +108,13 @@ class AssetAction
             if (isRunningTestBench()) {
                 return $originalPath;
             }
-<<<<<<< .merge_file_2p68KX
-<<<<<<< HEAD
-<<<<<<< HEAD
             throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
-=======
-            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
->>>>>>> laraxot/dev
-=======
-            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
->>>>>>> .merge_file_8SKPJA
         }
 
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
-<<<<<<< .merge_file_2p68KX
-<<<<<<< HEAD
-<<<<<<< HEAD
         $forceCopy = app()->environment() !== 'production';
-=======
-        $forceCopy = 'production' !== app()->environment();
->>>>>>> laraxot/dev
-=======
-        $forceCopy = 'production' !== app()->environment();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $forceCopy = app()->environment() !== 'production';
->>>>>>> .merge_file_8SKPJA
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
@@ -181,27 +125,6 @@ class AssetAction
 
     /**
      * Copies an asset file if it doesn't exist or if forced.
-<<<<<<< .merge_file_2p68KX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     */
-    private function copyAsset(string $from, string $to, string $path, bool $force = false): void
-    {
-        if (! File::exists($to) || $force) {
-            $this->ensureDirectoryExists(\dirname($to));
-
-            try {
-                File::copy($from, $to);
-<<<<<<< HEAD
-            } catch (Exception $e) {
-                $this->throwCopyException($e, $path, $from, $to);
-            }
-        }
-=======
-=======
->>>>>>> .merge_file_8SKPJA
      *
      * In APP_ENV=local the caller forces a copy on every request so assets
      * refresh without a rebuild. PHP-FPM runs as www-data: if the dest was
@@ -258,16 +181,6 @@ class AssetAction
             : new Exception($e->getMessage(), (int) $e->getCode(), $e);
 
         $this->throwCopyException($exception, $path, $from, $to);
-<<<<<<< .merge_file_2p68KX
->>>>>>> laraxot/dev
-=======
-            } catch (\Exception $e) {
-                $this->throwCopyException($e, $path, $from, $to);
-            }
-        }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_8SKPJA
     }
 
     /**
@@ -283,27 +196,9 @@ class AssetAction
     /**
      * Throws a formatted exception for a file copy error.
      */
-<<<<<<< .merge_file_2p68KX
-<<<<<<< HEAD
-<<<<<<< HEAD
     private function throwCopyException(Exception $e, string $path, string $from, string $to): void
     {
         throw new Exception('message:['.$e->getMessage().']
-=======
-    private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
-    {
-        throw new \Exception('message:['.$e->getMessage().']
->>>>>>> laraxot/dev
-=======
-    private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
-    {
-        throw new \Exception('message:['.$e->getMessage().']
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    private function throwCopyException(Exception $e, string $path, string $from, string $to): void
-    {
-        throw new Exception('message:['.$e->getMessage().']
->>>>>>> .merge_file_8SKPJA
             public_path ['.public_path().']
             path ['.$path.']
             file from ['.$from.']

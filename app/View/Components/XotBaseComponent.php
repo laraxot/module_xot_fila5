@@ -16,11 +16,7 @@ abstract class XotBaseComponent extends IlluminateComponent
     /**
      * Undocumented variable.
      *
-<<<<<<< HEAD
      * @var array<string, mixed>
-=======
-     * @var array<mixed>
->>>>>>> 8d801bbe (Check & fix styling)
      */
     public array $attrs = [];
 
@@ -60,19 +56,7 @@ abstract class XotBaseComponent extends IlluminateComponent
         }
 
         $module_name = Str::between($class, 'Modules\\', '\\Views\\');
-<<<<<<< .merge_file_dQqrn6
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($module_name === '') {
-=======
-        if ('' === $module_name) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $module_name) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($module_name === '') {
->>>>>>> .merge_file_tYOJtq
             throw new \InvalidArgumentException("Unable to determine module name from class [{$class}].");
         }
 

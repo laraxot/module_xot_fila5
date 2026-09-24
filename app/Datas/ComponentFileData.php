@@ -14,15 +14,9 @@ use Spatie\LaravelData\DataCollection;
  */
 class ComponentFileData extends Data
 {
-<<<<<<< HEAD
     public string $name = '';
 
     public string $class = '';
-=======
-    public string $name;
-
-    public string $class;
->>>>>>> 8d801bbe (Check & fix styling)
 
     public ?string $module = null;
 
@@ -31,22 +25,7 @@ class ComponentFileData extends Data
     public ?string $ns = null;
 
     /**
-<<<<<<< .merge_file_aE7V0n
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-     *
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
-     *                                                                                                          =======
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
->>>>>>> 8d801bbe (Check & fix styling)
-     *
-=======
      * @param  EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>>  $data
->>>>>>> .merge_file_uvswOi
      * @return DataCollection<int, static>
      */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection

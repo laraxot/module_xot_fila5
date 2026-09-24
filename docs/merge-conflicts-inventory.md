@@ -1,19 +1,6 @@
 # Merge Conflicts Inventory
 
 **Date**: 2025-11-12
-<<<<<<< .merge_file_5rECFr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Date**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_bKeCEB
 **Total Files with Conflicts**: 77
 **Status**: In Progress
 
@@ -206,20 +193,4 @@ This document catalogs all files containing merge conflict markers found through
 5. Finalize with non-critical files
 
 ---
-<<<<<<< .merge_file_5rECFr
-<<<<<<< HEAD
-<<<<<<< HEAD
 *This inventory will be updated as conflicts are resolved.*
-=======
-<<<<<<< HEAD
-*This inventory will be updated as conflicts are resolved.*
-=======
-*This inventory will be updated as conflicts are resolved.*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*This inventory will be updated as conflicts are resolved.*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*This inventory will be updated as conflicts are resolved.*
->>>>>>> .merge_file_bKeCEB

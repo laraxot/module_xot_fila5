@@ -809,23 +809,7 @@ else {
 - [eloquent-models-critical-rules.md](./eloquent-models-critical-rules.md) - Regole critiche
 - [property-exists-elimination-philosophy.md](./property-exists-elimination-philosophy.md) - Filosofia
 - [phpstan/](./phpstan/) - PHPStan guides
-<<<<<<< .merge_file_xadkoi
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [../../../docs/quality/](../../../docs/quality/) - Root quality docs
-=======
-<<<<<<< HEAD
-- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
-=======
-- [../../../../docs/quality/](../../../../docs/quality/) - Root quality docs
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [../../../docs/quality/](../../../docs/quality/) - Root quality docs
->>>>>>> .merge_file_UZ4fKq
 
 ---
 
@@ -855,20 +839,4 @@ else {
 **Status**: 📘 Master Reference Document
 **Revision**: 1.0
 
-<<<<<<< .merge_file_xadkoi
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Ora posso procedere con l'eliminazione sistematica! ⚔️**
-=======
-<<<<<<< HEAD
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Ora posso procedere con l'eliminazione sistematica! ⚔️**
->>>>>>> .merge_file_UZ4fKq

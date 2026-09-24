@@ -1,21 +1,3 @@
-<<<<<<< .merge_file_nNFfkC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
-=======
-=======
-<<<<<<< .merge_file_0t3PEm
-<<<<<<< HEAD
-https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ly6cBk
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qLLCSS
 ---
 title: 'bad_practices'
 module: Xot
@@ -33,21 +15,3 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/bad_practices.txt -->
 
 https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
-<<<<<<< .merge_file_nNFfkC
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_0t3PEm
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
->>>>>>> .merge_file_ly6cBk
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_qLLCSS

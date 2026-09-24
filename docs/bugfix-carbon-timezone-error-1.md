@@ -73,32 +73,7 @@ public function registerTimezone(): void
 - [Carbon Documentation](https://carbon.nesbot.com/docs/)
 - [Laravel Timezone Configuration](https://laravel.com/docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
-<<<<<<< .merge_file_JiA3Rj
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nH0qn0
 - [Root Bugfix Guidelines](../../../docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
-<<<<<<< .merge_file_JiA3Rj
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-- [Root Bugfix Guidelines](../../../../docs/bugfix-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
-*Risolto da: Windsurf AI Assistant*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nH0qn0

@@ -140,40 +140,8 @@ return [
 
 ## Link alla documentazione correlata
 
-<<<<<<< .merge_file_G6pK0A
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Errori comuni nei file di traduzione](/laravel/modules/lang/project_docs/errori_comuni_traduzione.md)
-- [Convenzioni di documentazione](/laravel/modules/xot/project_docs/documentation_conventions.md)
-- [Documentazione principale sulle traduzioni](/project_docs/translation_rules.md)
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1Q3LfN
 - [Errori comuni nei file di traduzione](/laravel/Modules/Lang/project_docs/errori_comuni_traduzione.md)
 - [Convenzioni di documentazione](/laravel/Modules/Xot/project_docs/documentation_conventions.md)
 - [Documentazione principale sulle traduzioni](/project_docs/translation_rules.md)
 
-<<<<<<< .merge_file_G6pK0A
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 3 Giugno 2025*
-=======
-*Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> .merge_file_1Q3LfN

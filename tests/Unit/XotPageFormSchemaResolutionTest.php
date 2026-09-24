@@ -1,81 +1,17 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_mBpK3M
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_I9UKM4
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_fvYDWm
-=======
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Um18WC
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\FormSchemaPageFixture;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_mBpK3M
-<<<<<<< HEAD
-<<<<<<< HEAD
 use ReflectionMethod;
-=======
-<<<<<<< .merge_file_I9UKM4
-use ReflectionMethod;
-=======
->>>>>>> .merge_file_fvYDWm
->>>>>>> laraxot/dev
-=======
-use ReflectionMethod;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-use ReflectionMethod;
->>>>>>> .merge_file_Um18WC
 
 uses(TestCase::class);
 
 test('un override di getFormSchema viene onorato su XotBasePage', function (): void {
-<<<<<<< .merge_file_mBpK3M
-<<<<<<< HEAD
-<<<<<<< HEAD
     $fixture = new FormSchemaPageFixture;
-=======
-<<<<<<< .merge_file_I9UKM4
-<<<<<<< HEAD
-    $fixture = new FormSchemaPageFixture();
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-    $fixture = new FormSchemaPageFixture();
-=======
-    $fixture = new FormSchemaPageFixture;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    $fixture = new FormSchemaPageFixture();
->>>>>>> .merge_file_fvYDWm
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $fixture = new FormSchemaPageFixture;
->>>>>>> .merge_file_Um18WC
     $method = new ReflectionMethod($fixture, 'resolveFormSchemaForXotPage');
     $method->setAccessible(true);
 
@@ -87,27 +23,8 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
 });
 
 test('senza override getFormSchema restituisce schema vuoto', function (): void {
-<<<<<<< .merge_file_mBpK3M
-<<<<<<< HEAD
-<<<<<<< HEAD
     $fixture = new class extends XotBasePage
     {
-=======
-<<<<<<< .merge_file_I9UKM4
-    $fixture = new class extends XotBasePage
-    {
-=======
-    $fixture = new class extends XotBasePage {
->>>>>>> .merge_file_fvYDWm
->>>>>>> laraxot/dev
-=======
-    $fixture = new class extends XotBasePage
-    {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $fixture = new class extends XotBasePage
-    {
->>>>>>> .merge_file_Um18WC
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
         protected string $view = 'xot::filament.pages.base';

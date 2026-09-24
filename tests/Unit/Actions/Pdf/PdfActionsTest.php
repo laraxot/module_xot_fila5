@@ -1,20 +1,12 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Pdf\PdfByHtmlAction;
 use Modules\Xot\Actions\Pdf\PdfEngineEnum;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\Pdf\PdfByHtmlAction;
-use Modules\Xot\Enums\PdfEngineEnum;
-use PHPUnit\Framework\Assert;
->>>>>>> 8d801bbe (Check & fix styling)
 
 it('executes pdf by html action correctly', function (): void {
     $action = app(PdfByHtmlAction::class);

@@ -6,19 +6,6 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-<<<<<<< .merge_file_3c0WwF
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Filament\Tables\Columns\Layout\Stack;
-use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
-=======
-use Filament\Tables\Columns\Layout\Stack;
-use Filament\Tables\Columns\TextColumn;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_hCtooK
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
@@ -40,55 +27,6 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
-<<<<<<< .merge_file_3c0WwF
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
-     */
->>>>>>> 8d801bbe (Check & fix styling)
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'key' => TextColumn::make('key')
-                ->searchable()
-                ->sortable()
-                ->wrap()
-                ->label('Key'),
-            'value' => TextColumn::make('value')
-                ->searchable()
-                ->wrap()
-                ->label('Value'),
-            'expiration' => TextColumn::make('expiration')
-                ->dateTime()
-                ->sortable()
-                ->label('Expiration'),
-        ];
-    }
-
-<<<<<<< HEAD
-=======
-    /**
-     * @return array<int, Stack>
-     */
-    #[\Override]
->>>>>>> 8d801bbe (Check & fix styling)
-    public function getGridTableColumns(): array
-    {
-        return [
-            Stack::make($this->getTableColumns()),
-        ];
-    }
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_hCtooK
     /**
      * @return array<string, Action>
      */

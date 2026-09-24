@@ -1,19 +1,6 @@
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23
-<<<<<<< .merge_file_hqXDya
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rSQWDP
 **Status**: ✅ Complete Contract Documentation
 
 ## 🎯 Overview
@@ -82,24 +69,7 @@ interface UserContract extends
 > - `@property \Illuminate\Database\Eloquent\Collection<int, UserRole> $roles`
 > - `@property \Illuminate\Database\Eloquent\Collection<int, TeamContract> $teams`
 >
-<<<<<<< .merge_file_hqXDya
-<<<<<<< HEAD
-<<<<<<< HEAD
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
-=======
-<<<<<<< HEAD
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
-=======
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, healthcare_app) lavorano solo contro il contratto Xot.
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, ExternalProject) lavorano solo contro il contratto Xot.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
->>>>>>> .merge_file_rSQWDP
 
 ### 2. ProfileContract
 **File**: `app/Contracts/ProfileContract.php`
@@ -563,20 +533,4 @@ class AppointmentService
 
 ---
 
-<<<<<<< .merge_file_hqXDya
-<<<<<<< HEAD
-<<<<<<< HEAD
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
-=======
-<<<<<<< HEAD
-*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
-=======
-*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
->>>>>>> .merge_file_rSQWDP

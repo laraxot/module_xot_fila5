@@ -9,16 +9,6 @@ This document provides guidelines for using strict typing in PHP within a Larave
 
 ## Implementation Guidelines
 ### 1. Declare Strict Types
-<<<<<<< .merge_file_haJP0g
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_TFBmVf
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_tXwTnd
 - `declare(strict_types=1);` è la **prima istruzione** dopo `<?php` (riga vuota in mezzo). **Mai** prima del tag di apertura: PHP fatale `strict_types declaration must be the very first statement`.
 - Vale per ogni `.php` (app, lang, routes, config, test) e per ogni `.blade.php`.
 - Blade senza PHP in testa: **prepend** il blocco, non sostituire i primi byte (un replace cieco ha già mangiato `@extends` → `nds` e `<!DOCTYPE` → `TYPE html>`).
@@ -31,40 +21,6 @@ This document provides guidelines for using strict typing in PHP within a Larave
   ```
 - `mixed` solo ultima spiaggia: JSON / metadata / config bag vendor / firma vendor (Filament `formatStateUsing`, `ValidationRule::validate`). Preferire union, shape `array{…}`, `Assert::isInstanceOf`. Niente `@var mixed` per zittire PHPStan.
 - Collegato: [coverage Theme Zero](../../../Themes/Zero/docs/php-quality-gates-rule.md), campagna [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed-campaign.md).
-<<<<<<< .merge_file_haJP0g
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_trqcjj
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-- Always declare strict types at the top of every PHP file to enable strict type checking.
-  ```php
-  declare(strict_types=1);
-  ```
-<<<<<<< HEAD
-<<<<<<< .merge_file_TFBmVf
-=======
-- `declare(strict_types=1);` è la **prima istruzione** dopo `<?php` (riga vuota in mezzo). **Mai** prima del tag di apertura: PHP fatale `strict_types declaration must be the very first statement`.
-- Vale per ogni `.php` (app, lang, routes, config, test) e per ogni `.blade.php`.
-- Blade senza PHP in testa: **prepend** il blocco, non sostituire i primi byte (un replace cieco ha già mangiato `@extends` → `nds` e `<!DOCTYPE` → `TYPE html>`).
-  ```php
-  <?php
-
-  declare(strict_types=1);
-
-  ?>
-  ```
-- `mixed` solo ultima spiaggia: JSON / metadata / config bag vendor / firma vendor (Filament `formatStateUsing`, `ValidationRule::validate`). Preferire union, shape `array{…}`, `Assert::isInstanceOf`. Niente `@var mixed` per zittire PHPStan.
-- Collegato: [coverage Theme Zero](../../../Themes/Zero/docs/php-quality-gates-rule.md), campagna [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed-campaign.md).
-=======
->>>>>>> .merge_file_trqcjj
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_tXwTnd
 
 ### 2. Function and Method Signatures
 - Use type hints for parameters and return types in all function and method declarations.
@@ -99,14 +55,6 @@ This document provides guidelines for using strict typing in PHP within a Larave
 - Update this document if new strict typing features or practices are introduced in PHP.
 
 ## Links to Related Documentation
-<<<<<<< .merge_file_haJP0g
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_tXwTnd
 - [Code Quality](code_quality.md)
 - [PHPStan Implementation Guide](phpstan-implementation-guide.md)
 - [Naming Conventions](naming-conventions.md)
@@ -124,29 +72,3 @@ coerciti dal template. `XotBaseComponent` non si converte: solo la vista.
 - `resources/views/pdf/spatie-test.blade.php`
 
 Campagna: [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed-campaign.md).
-<<<<<<< .merge_file_haJP0g
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TFBmVf
-=======
-=======
-- [Code Quality](./code_quality.md)
-- [PHPStan Implementation Guide](./phpstan-implementation-guide.md)
-- [Naming Conventions](./naming-conventions.md)
-- [Service Provider Best Practices](./service-provider-best-practices.md)
-- [Filament Best Practices](./filament-best-practices.md)
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-- [Code Quality](./CODE_QUALITY.md)
-- [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
-- [Naming Conventions](./NAMING-CONVENTIONS.md)
-- [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
-- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_trqcjj
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_tXwTnd

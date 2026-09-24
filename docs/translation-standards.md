@@ -140,19 +140,6 @@ return array(
 - **Problemi risolti**: Riferimenti circolari, sintassi obsoleta
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
-<<<<<<< .merge_file_hcTtwJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_aZSCYM
 
 #### File Completati
 1. `progressioni.php` - Traduzioni principali
@@ -269,20 +256,6 @@ return [
 
 - [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/Modules/Xot/docs/translations-best-practices.md)
-<<<<<<< .merge_file_hcTtwJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
-- [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_aZSCYM
 - [Laraxot Conventions](laraxot-conventions.md)
 
 ## Note Tecniche
@@ -299,20 +272,4 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
-<<<<<<< .merge_file_hcTtwJ
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: Giugno 2025*
-=======
-*Ultimo aggiornamento: Giugno 2025*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: Giugno 2025*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: Giugno 2025*
->>>>>>> .merge_file_aZSCYM

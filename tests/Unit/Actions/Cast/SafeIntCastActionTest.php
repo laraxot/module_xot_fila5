@@ -1,18 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
-use PHPUnit\Framework\Assert;
->>>>>>> 8d801bbe (Check & fix styling)
 
 it('casts various values to integer correctly', function (): void {
     $action = app(SafeIntCastAction::class);
@@ -27,12 +20,7 @@ it('casts various values to integer correctly', function (): void {
     // Strings
     Assert::assertSame(123, $action->execute('123'));
     Assert::assertSame(1234, $action->execute('1.234')); // Thousands separator
-<<<<<<< HEAD
     Assert::assertSame(123, $action->execute(' +123 '));
-=======
-    $signedWhitespaceInput = ' '.chr(43).'123 ';
-    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
->>>>>>> 8d801bbe (Check & fix styling)
     Assert::assertSame(7, $action->execute('invalid', 7));
     Assert::assertSame(0, $action->execute(''));
     // Booleans
@@ -42,21 +30,8 @@ it('casts various values to integer correctly', function (): void {
     Assert::assertSame(15, $action->execute(['15']));
     Assert::assertSame(2, $action->execute(['a', 'b'], 2));
     // Objects with toString
-<<<<<<< .merge_file_IRoMKQ
-<<<<<<< HEAD
-<<<<<<< HEAD
     $obj = new class
     {
-=======
-    $obj = new class {
->>>>>>> laraxot/dev
-=======
-    $obj = new class {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $obj = new class
-    {
->>>>>>> .merge_file_P5D8sS
         public function __toString()
         {
             return '20';

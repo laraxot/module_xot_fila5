@@ -57,23 +57,7 @@ function moduleDocsWithHostProjectName(): array
         );
 
         foreach ($iterator as $fileInfo) {
-<<<<<<< .merge_file_chiVEF
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
-=======
-<<<<<<< .merge_file_Ou8sr1
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
-=======
-            if (! $fileInfo instanceof \SplFileInfo || 'md' !== $fileInfo->getExtension()) {
->>>>>>> .merge_file_VilMNh
->>>>>>> laraxot/dev
-=======
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
->>>>>>> .merge_file_6w3nwI
                 continue;
             }
 
@@ -106,33 +90,7 @@ test('nessun documento nuovo di modulo nomina il progetto ospite', function (): 
     expect(count($hits))->toBeLessThanOrEqual(
         MODULE_DOCS_HOST_NAME_FILE_BASELINE,
         "Un documento di modulo nomina un'installazione specifica. Un modulo gira in "
-<<<<<<< .merge_file_chiVEF
-<<<<<<< HEAD
-<<<<<<< HEAD
         .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
-=======
-<<<<<<< .merge_file_Ou8sr1
-<<<<<<< HEAD
-        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
-=======
-        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
->>>>>>> .merge_file_VilMNh
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
->>>>>>> .merge_file_6w3nwI
         .'Vedi docs/wiki/rules/project-agnostic.md'
     );
 });

@@ -15,11 +15,6 @@ use Spatie\LaravelData\Data;
 class PwaData extends Data
 {
     /**
-<<<<<<< .merge_file_r4F5Xv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_I5d5cd
      * @param  bool  $enable  Se il PWA è abilitato
      * @param  string  $name  Nome dell'applicazione
      * @param  string  $short_name  Nome breve dell'applicazione
@@ -28,24 +23,6 @@ class PwaData extends Data
      * @param  string  $theme_color  Colore del tema
      * @param  string  $icon_path  Percorso dell'icona
      * @param  array<string, string>  $splash  Configurazione splash screen
-<<<<<<< .merge_file_r4F5Xv
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param bool                  $enable           Se il PWA è abilitato
-     * @param string                $name             Nome dell'applicazione
-     * @param string                $short_name       Nome breve dell'applicazione
-     * @param string                $description      Descrizione dell'applicazione
-     * @param string                $background_color Colore di sfondo
-     * @param string                $theme_color      Colore del tema
-     * @param string                $icon_path        Percorso dell'icona
-     * @param array<string, string> $splash           Configurazione splash screen
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_I5d5cd
      */
     public function __construct(
         public readonly bool $enable = false,
@@ -61,39 +38,13 @@ class PwaData extends Data
             '1242x2208' => 'img/splash/splash-1242x2208.png',
             '1125x2436' => 'img/splash/splash-1125x2436.png',
         ],
-<<<<<<< .merge_file_r4F5Xv
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {
-    }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    ) {}
->>>>>>> .merge_file_I5d5cd
 
     /**
      * Create a new instance of PwaData with default values.
      */
     public static function make(): self
     {
-<<<<<<< .merge_file_r4F5Xv
-<<<<<<< HEAD
-<<<<<<< HEAD
         return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
-=======
-        return new self();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        return new self;
->>>>>>> .merge_file_I5d5cd
     }
 }

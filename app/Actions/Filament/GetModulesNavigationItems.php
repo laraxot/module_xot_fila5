@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -20,25 +19,6 @@ use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 
-<<<<<<< .merge_file_hIjXKF
-=======
-=======
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
->>>>>>> 8d801bbe (Check & fix styling)
-
-use function Safe\json_encode;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vIA23u
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
@@ -56,19 +36,7 @@ class GetModulesNavigationItems
     {
         $navs = [];
 
-<<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
-<<<<<<< .merge_file_hIjXKF
-<<<<<<< HEAD
-=======
-        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
->>>>>>> laraxot/dev
-=======
-        $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
-        // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vIA23u
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -145,19 +113,7 @@ class GetModulesNavigationItems
                      * @var Authenticatable|null $user
                      */
                     $user = Auth::user();
-<<<<<<< .merge_file_hIjXKF
-<<<<<<< HEAD
-<<<<<<< HEAD
                     if ($user === null) {
-=======
-                    if (null === $user) {
->>>>>>> laraxot/dev
-=======
-                    if (null === $user) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-                    if ($user === null) {
->>>>>>> .merge_file_vIA23u
                         return false;
                     }
 
@@ -183,19 +139,7 @@ class GetModulesNavigationItems
      */
     public function getCachedModuleConfigs(): array
     {
-<<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
-<<<<<<< .merge_file_hIjXKF
-<<<<<<< HEAD
-=======
-        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
->>>>>>> laraxot/dev
-=======
-        $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
-        // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vIA23u
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 

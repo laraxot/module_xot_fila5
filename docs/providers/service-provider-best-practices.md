@@ -27,7 +27,6 @@ Il provider `XotBaseServiceProvider` rappresenta la base architetturale per tutt
 - Chiarire la logica dei fallback e dei path di default
 
 ## Backlink
-<<<<<<< HEAD
 - [Torna a README.md del modulo Xot](../readme.md)
 - [Collegamento a docs/links.md della root](../../../../project_docs/links.md)
 
@@ -195,10 +194,6 @@ Il provider `XotBaseServiceProvider` rappresenta la base architetturale per tutt
 - Chiarire la logica dei fallback e dei path di default
 
 ## Backlink
-=======
-- [Torna a README.md del modulo Xot](../README.md)
-- [Collegamento a docs/links.md della root](../../../../docs/links.md)
->>>>>>> 8d801bbe (Check & fix styling)
 - [Torna a README.md del modulo Xot](../readme.md)
 - [Collegamento a docs/links.md della root](../../../../../docs/links.md)
 
@@ -336,8 +331,4 @@ Questa implementazione:
 
 L'utilizzo di `GetModulePathByGeneratorAction` anziché chiamate dirette a `module_path` rappresenta una best practice importante nel progetto il progetto. Questo approccio migliora la robustezza, la leggibilità e la manutenibilità del codice nei service provider.
 
-<<<<<<< HEAD
 Si raccomanda di seguire questo pattern in tutti i service provider personalizzati per garantire coerenza e affidabilità nell'accesso ai percorsi dei moduli.
-=======
-Si raccomanda di seguire questo pattern in tutti i service provider personalizzati per garantire coerenza e affidabilità nell'accesso ai percorsi dei moduli.
->>>>>>> 8d801bbe (Check & fix styling)

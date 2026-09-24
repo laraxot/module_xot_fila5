@@ -1,14 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Header;
 
 use Filament\Resources\Pages\ListRecords;
@@ -23,35 +19,10 @@ use Webmozart\Assert\Assert;
  * `{modulo}::{model}.index.pdf` con RichEditor via `{!! $rating->getTxtHtml() !!}`.
  */
 class ExportPdfAction extends XotBaseAction
-=======
-declare(strict_types=1);
-
-namespace Modules\Xot\Filament\Actions\Header;
-
-// Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
-// use Filament\Actions\Action;
-use Filament\Actions\Action;
-use Filament\Resources\Pages\ListRecords;
-use Modules\Xot\Actions\Pdf\DownloadPdfByViewAction;
-use Modules\Xot\Actions\View\GetViewByModelClassAction;
-use Webmozart\Assert\Assert;
-
-class ExportPdfAction extends Action
->>>>>>> 8d801bbe (Check & fix styling)
 {
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< .merge_file_qEp0kS
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->translateLabel()
-            ->label('')
-            //->tooltip(__('xot::actions.export_pdf.tooltip'))
-            ->icon('ui-files.pdf')
-=======
-=======
->>>>>>> .merge_file_BPIyLu
         $this
             ->label('')
             ->iconButton()
@@ -71,16 +42,6 @@ class ExportPdfAction extends Action
 
                 return (string) __('xot::export_pdf.tooltip');
             })
-<<<<<<< .merge_file_qEp0kS
->>>>>>> laraxot/dev
-=======
-        $this->translateLabel()
-            ->label('')
-            ->tooltip(__('xot::actions.export_pdf.tooltip'))
-            ->icon('ui-files.pdf')
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_BPIyLu
             ->action(static function (ListRecords $livewire) {
                 $filename =
                     class_basename($livewire).
@@ -88,19 +49,7 @@ class ExportPdfAction extends Action
                     collect($livewire->tableFilters)->flatten()->implode('-').
                     '.pdf';
                 $query = $livewire->getFilteredTableQuery();
-<<<<<<< .merge_file_qEp0kS
-<<<<<<< HEAD
-<<<<<<< HEAD
                 if ($query === null) {
-=======
-                if (null === $query) {
->>>>>>> laraxot/dev
-=======
-                if (null === $query) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-                if ($query === null) {
->>>>>>> .merge_file_BPIyLu
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();

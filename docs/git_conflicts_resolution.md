@@ -132,34 +132,8 @@ php artisan lang:check
 - [Theme Translation Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 
 ### Modulo Xot
-<<<<<<< .merge_file_XNzf2h
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
-=======
-<<<<<<< HEAD
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
-=======
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
->>>>>>> a01602c7 (.)
-=======
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
->>>>>>> 64619e34 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
->>>>>>> .merge_file_57q4Qq
 
 ## Best Practices Applicate
 

@@ -6,37 +6,14 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
-<<<<<<< .merge_file_745qzD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_CDqb06
 
 use function Safe\json_encode;
 use function Safe\preg_match;
 
-<<<<<<< .merge_file_745qzD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
-=======
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_CDqb06
 /**
  * Middleware di sicurezza avanzato.
  *
@@ -56,16 +33,7 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-<<<<<<< HEAD
         $this->addSecurityHeaders($response);
-=======
-
-        // Skip security headers for Debugbar routes in local environment
-        // to allow Debugbar to function properly
-        if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
-            $this->addSecurityHeaders($response);
-        }
->>>>>>> 8d801bbe (Check & fix styling)
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -80,34 +48,6 @@ class SecurityMiddleware
     }
 
     /**
-<<<<<<< .merge_file_745qzD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * Check if the request is for Debugbar routes.
-     */
-    private function isDebugbarRoute(Request $request): bool
-    {
-<<<<<<< HEAD
-        $debugbarPrefix = SafeStringCastAction::cast(config('debugbar.route_prefix', '_debugbar'));
-=======
-        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
->>>>>>> 8d801bbe (Check & fix styling)
-
-        return str_starts_with($request->path(), $debugbarPrefix)
-            || str_starts_with($request->path(), 'vendor/debugbar')
-            || str_contains($request->path(), '_debugbar');
-    }
-
-    /**
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_CDqb06
      * Applica rate limiting avanzato.
      */
     private function applyAdvancedRateLimiting(Request $request): void
@@ -134,11 +74,7 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
-=======
-        $current = (int) cache()->get($key, 0);
->>>>>>> 8d801bbe (Check & fix styling)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for IP', [
@@ -162,11 +98,7 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
-=======
-        $current = (int) cache()->get($key, 0);
->>>>>>> 8d801bbe (Check & fix styling)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for User Agent', [
@@ -190,11 +122,7 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
-=======
-        $current = (int) cache()->get($key, 0);
->>>>>>> 8d801bbe (Check & fix styling)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for endpoint', [
@@ -351,19 +279,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
-<<<<<<< .merge_file_745qzD
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
-=======
-        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
->>>>>>> laraxot/dev
-=======
-        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
->>>>>>> .merge_file_CDqb06
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -416,19 +332,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
-<<<<<<< .merge_file_745qzD
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
-=======
-            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
->>>>>>> laraxot/dev
-=======
-            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
->>>>>>> .merge_file_CDqb06
                 return true;
             }
         }
@@ -444,19 +348,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
-<<<<<<< .merge_file_745qzD
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($value !== null && is_string($value)) {
-=======
-            if (null !== $value && is_string($value)) {
->>>>>>> laraxot/dev
-=======
-            if (null !== $value && is_string($value)) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($value !== null && is_string($value)) {
->>>>>>> .merge_file_CDqb06
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -497,19 +389,7 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
-<<<<<<< .merge_file_745qzD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<array-key, mixed>  $value
-=======
-     * @param array<array-key, mixed> $value
->>>>>>> laraxot/dev
-=======
-     * @param array<mixed> $value
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<array-key, mixed>  $value
->>>>>>> .merge_file_CDqb06
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -535,19 +415,7 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
-<<<<<<< .merge_file_745qzD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<array-key, mixed>  $array
-=======
-     * @param array<array-key, mixed> $array
->>>>>>> laraxot/dev
-=======
-     * @param array<mixed> $array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<array-key, mixed>  $array
->>>>>>> .merge_file_CDqb06
      */
     private function getArrayDepth(array $array): int
     {
@@ -574,11 +442,7 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
-<<<<<<< HEAD
             if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
-=======
-            if (! $token || ! hash_equals(session()->token(), (string) $token)) {
->>>>>>> 8d801bbe (Check & fix styling)
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

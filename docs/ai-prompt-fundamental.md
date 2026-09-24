@@ -150,23 +150,7 @@ Model structure requirements:
 ## 📚 Riferimenti Aggiuntivi
 
 ### Documentazione Principale
-<<<<<<< .merge_file_ti8OVN
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [AGENTS.md](AGENTS.md) - Guida completa sviluppatori AI
-=======
-<<<<<<< HEAD
-- [AGENTS.md](AGENTS.md) - Guida completa sviluppatori AI
-=======
-- [AGENTS.md](../../../../agents.md) - Guida completa sviluppatori AI
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [AGENTS.md](../../../../agents.md) - Guida completa sviluppatori AI
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [AGENTS.md](AGENTS.md) - Guida completa sviluppatori AI
->>>>>>> .merge_file_rpl96U
 - [Database Testing Rules](../../../../../docs/database-testing-rules.md) - Regole MySQL testing
 - [AI Coding Memory](../../../../ai_coding_memory.md) - Memoria completa regole
 - [Critical Rules Index](../../../../../docs/critical-rules-index.md) - Indice regole critiche

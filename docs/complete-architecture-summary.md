@@ -15,23 +15,7 @@
 Laraxot is built on the **DRY (Don't Repeat Yourself)** and **KISS (Keep It Simple, Stupid)** principles with a strong emphasis on:
 
 - **Modularity**: Everything is organized into independent modules
-<<<<<<< .merge_file_H2yduj
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Inheritance Chain**: Clear, predictable inheritance patterns
-=======
-<<<<<<< HEAD
-- **Inheritance Chain**: Clear, predictable inheritance patterns
-=======
-- **Inheritance Chain**: Clear, <nome progetto>able inheritance patterns
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- **Inheritance Chain**: Clear, predictable inheritance patterns
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- **Inheritance Chain**: Clear, predictable inheritance patterns
->>>>>>> .merge_file_l4n13k
 - **Convention over Configuration**: Predefined patterns that reduce decision-making
 - **Separation of Concerns**: Clear boundaries between different system components
 
@@ -141,30 +125,10 @@ Filament Resource → XotBaseResource → FilamentResource
 ### Required Implementation
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_H2yduj
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_l4n13k
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_H2yduj
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_l4n13k
 ```
 
 ### Page Generation
@@ -223,20 +187,4 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Inheritance over Composition**: Clear inheritance chains for maintainability
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
-<<<<<<< .merge_file_H2yduj
-<<<<<<< HEAD
-<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
-=======
-<<<<<<< HEAD
-This architecture creates a harmonious system where all components work together in a predictable, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
-=======
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-This architecture creates a harmonious system where all components work together in a predictable, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-This architecture creates a harmonious system where all components work together in a predictable, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
->>>>>>> .merge_file_l4n13k

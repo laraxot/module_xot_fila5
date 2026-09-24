@@ -1,25 +1,6 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
-=======
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
-<?php
-
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 ?>
 <div>
     <div class="row justify-content-between">
@@ -36,15 +17,6 @@ declare(strict_types=1);
                 @include($header_view)
             </div>
         @endif
-<<<<<<< HEAD
-=======
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
->>>>>>> 8d801bbe (Check & fix styling)
     </div>
 
     <div class="card mb-3">

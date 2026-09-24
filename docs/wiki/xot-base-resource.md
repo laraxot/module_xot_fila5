@@ -26,29 +26,7 @@ protected static ?string $navigationIcon = 'heroicon-o-user';
 ### 2. Mandatory Implementation
 Every concrete resource must implement:
 - `protected static ?string $model`
-<<<<<<< .merge_file_vGhWjB
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 - `public function getFormSchema(): array`
-=======
-- `public function getFormSchema(): array`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-- `public static function getFormSchema(): array`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- `public static function getFormSchema(): array`
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- `public function getFormSchema(): array`
->>>>>>> .merge_file_XS12fA
 - `public static function getPages(): array`
 
 ### 3. Separation of Concerns

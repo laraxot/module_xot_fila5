@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_ejbBW1
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_YwzO8R
 # HandlerDecorator
 
 ## Descrizione
@@ -49,24 +41,3 @@ class HandlerDecorator implements ExceptionHandlerContract
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Error Formatters](./formatters/readme.md)
-<<<<<<< .merge_file_ejbBW1
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
----
-module: theme
-topic: handler-orator
-canonical: ../../../../Themes/docs/shared-components/handler-decorator.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_YwzO8R

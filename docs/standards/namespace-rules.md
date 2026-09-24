@@ -19,7 +19,6 @@ Nonostante le classi possano risiedere fisicamente nella sottodirectory `app/` d
 namespace Modules\Patient\Models;
 
 // File in: Modules/Dental/app/Services/AppointmentService.php
-<<<<<<< HEAD
 // File in: Modules/Patient/app/Models/Patient.php
 namespace Modules\Patient\Models;
 
@@ -71,8 +70,6 @@ namespace Modules\Patient\Models;
 
 // File in: Modules/Dental/app/Services/AppointmentService.php
 // File in: Modules/Dental/app/Services/AppointmentService.php
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Dental\Services;
 ```
 
@@ -136,18 +133,9 @@ Se si verificano errori "Class not found" o problemi di autoloading:
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
-=======
-- [Documentazione Xot](../CODE-STANDARDS.md)
-- [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
->>>>>>> 8d801bbe (Check & fix styling)
 - [Convenzioni](../../../../docs/conventions.md)
 - [Naming Conventions](../../../../docs/naming-conventions.md)
 - [Documentazione Xot](../code-standards.md)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
-<<<<<<< HEAD
 Ultima modifica: 31/03/2025
-=======
-Ultima modifica: 31/03/2025
->>>>>>> 8d801bbe (Check & fix styling)

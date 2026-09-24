@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_varCvR
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DTzv8c
 # Contratti del Modulo Xot
 
 ## Descrizione
@@ -21,17 +11,6 @@ Il modulo Xot definisce vari contratti (interfacce) che standardizzano il compor
 ### Scopo
 Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenticazione, autorizzazione, ruoli, permessi e media.
 
-<<<<<<< .merge_file_varCvR
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DTzv8c
 ### Problema Critico Identificato (2025-01-06)
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
@@ -113,29 +92,3 @@ Contratto per modelli che hanno profili.
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< .merge_file_varCvR
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-//--- Illuminate\Database\Eloquent\Relations\relation (abstract class Relation)
-->getRelated()
-
-//--- Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable (trait InteractsWithPivotTable) - BelongsToMany
-->detach()
-->attach()
-
-
-//---- Illuminate\Database\Eloquent\Concerns\QueriesRelationships (trait QueriesRelationships)
-public function whereHas($relation, Closure $callback = null, $operator = '>=', $count = 1)
-
-//---- Illuminate\Database\Eloquent\Builder  (class Builder)
- public function getModel()
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DTzv8c

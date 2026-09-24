@@ -3,19 +3,6 @@
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
 **Ultimo aggiornamento**: 2025-12-22
-<<<<<<< .merge_file_2k5bjM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_aBVudP
 
 ---
 
@@ -303,30 +290,10 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
  * @return array<int, Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_2k5bjM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_aBVudP
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_2k5bjM
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_aBVudP
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -511,30 +478,10 @@ class UserResource extends XotBaseResource
      * @return array<int, Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_2k5bjM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_aBVudP
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_2k5bjM
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_aBVudP
     {
         return [
             TextInput::make('name')->required(),
@@ -639,20 +586,4 @@ Prima di creare una nuova classe Filament:
 
 ---
 
-<<<<<<< .merge_file_2k5bjM
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
-=======
-<<<<<<< HEAD
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> .merge_file_aBVudP

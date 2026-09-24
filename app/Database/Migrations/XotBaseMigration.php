@@ -10,15 +10,11 @@ use Illuminate\Database\Migrations\Migration as LaravelMigration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Database\Schema\ForeignIdColumnDefinition;
-<<<<<<< HEAD
 use Illuminate\Support\Collection;
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
@@ -26,31 +22,11 @@ use Webmozart\Assert\Assert;
 
 use function Safe\copy;
 
-<<<<<<< .merge_file_zj20jy
-=======
-
-use function Safe\copy;
-
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
-=======
-use Modules\Xot\Datas\XotData;
-use Nwidart\Modules\Facades\Module;
-use Webmozart\Assert\Assert;
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sXnOrO
 /**
  * Class XotBaseMigration.
  */
 abstract class XotBaseMigration extends LaravelMigration
 {
-<<<<<<< HEAD
-=======
-    use Concerns\XotBaseMigrationUuidConversion;
->>>>>>> 8d801bbe (Check & fix styling)
     protected Model $model;
 
     /** @var class-string<Model>|null */
@@ -70,19 +46,7 @@ abstract class XotBaseMigration extends LaravelMigration
      */
     public function getModelClass(): string
     {
-<<<<<<< .merge_file_zj20jy
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->model_class !== null) {
-=======
-        if (null !== $this->model_class) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $this->model_class) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($this->model_class !== null) {
->>>>>>> .merge_file_sXnOrO
             return $this->model_class;
         }
 
@@ -103,19 +67,7 @@ abstract class XotBaseMigration extends LaravelMigration
         $mod_path = Module::getPath();
 
         // Controllo che $filename sia valido prima di passarlo a Str::of()
-<<<<<<< .merge_file_zj20jy
-<<<<<<< HEAD
-<<<<<<< HEAD
         $mod_name = $filename !== false ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
-=======
-        $mod_name = false !== $filename ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
->>>>>>> laraxot/dev
-=======
-        $mod_name = false !== $filename ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $mod_name = $filename !== false ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
->>>>>>> .merge_file_sXnOrO
 
         $modelClass = Str::of('\Modules\\'.$mod_name.'\Models\\'.$name)
             ->replace('/', \DIRECTORY_SEPARATOR)
@@ -138,7 +90,6 @@ abstract class XotBaseMigration extends LaravelMigration
 
     public function getConn(): Builder
     {
-<<<<<<< HEAD
         return Schema::connection($this->resolveConnectionName());
     }
 
@@ -168,16 +119,6 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         return $connectionName;
-=======
-        $connectionName = $this->model->getConnectionName();
-        // 如果连接名是 'user' 但数据库不存在，使用默认连接
-        if ('user' === $connectionName && ! DB::connection($connectionName)->getDatabaseName()) {
-            $default = config('database.default');
-            $connectionName = is_string($default) ? $default : 'mariadb';
-        }
-
-        return Schema::connection($connectionName);
->>>>>>> 8d801bbe (Check & fix styling)
     }
 
     /**
@@ -202,28 +143,10 @@ abstract class XotBaseMigration extends LaravelMigration
     /**
      * Get the table indexes using Doctrine's schema manager.
      *
-<<<<<<< .merge_file_zj20jy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_sXnOrO
      *
      * @return array<Index>
      *
      * @throws \Doctrine\DBAL\Exception
-<<<<<<< .merge_file_zj20jy
-=======
-     * @throws \Doctrine\DBAL\Exception
-     *
-     * @return array<Index>
->>>>>>> laraxot/dev
-=======
-     * @throws \Doctrine\DBAL\Exception
-     *
-     * @return array<Index>
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sXnOrO
      */
     // public function getTableIndexes(): array
     // {
@@ -233,19 +156,7 @@ abstract class XotBaseMigration extends LaravelMigration
     /**
      * Add common fields to the table.
      *
-<<<<<<< .merge_file_zj20jy
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Blueprint  $table  The table blueprint
-=======
-     * @param Blueprint $table The table blueprint
->>>>>>> laraxot/dev
-=======
-     * @param Blueprint $table The table blueprint
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  Blueprint  $table  The table blueprint
->>>>>>> .merge_file_sXnOrO
      */
     public function addCommonFields(Blueprint $table): void
     {
@@ -334,19 +245,7 @@ abstract class XotBaseMigration extends LaravelMigration
      */
     public function dropPrimaryKey(): void
     {
-<<<<<<< .merge_file_zj20jy
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->driver() === 'sqlite') {
-=======
-        if ('sqlite' === $this->driver()) {
->>>>>>> laraxot/dev
-=======
-        if ('sqlite' === $this->driver()) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($this->driver() === 'sqlite') {
->>>>>>> .merge_file_sXnOrO
             return;
         }
         $sql = 'ALTER TABLE '.$this->getTable().' DROP PRIMARY KEY;';
@@ -388,7 +287,6 @@ abstract class XotBaseMigration extends LaravelMigration
         }
     }
 
-<<<<<<< HEAD
     /**
      * Se la tabella da config (getTable()) non esiste ma esiste il plurale Laravel
      * dello stesso nome (legacy Spatie default), rinomina legacy → config.
@@ -407,8 +305,6 @@ abstract class XotBaseMigration extends LaravelMigration
         }
     }
 
-=======
->>>>>>> 8d801bbe (Check & fix styling)
     public function tableUpdate(\Closure $next, ?string $table = null): void
     {
         $tableName = $table ?? $this->getTable();
@@ -422,12 +318,9 @@ abstract class XotBaseMigration extends LaravelMigration
         $this->getConn()->table($tableName, $next);
     }
 
-<<<<<<< HEAD
     /**
      * @param  mixed  $result  Risultato di Connection::selectOne() (atteso array{count?: mixed}|object|null)
      */
-=======
->>>>>>> 8d801bbe (Check & fix styling)
     protected function extractPrimaryKeyCount(mixed $result): int
     {
         if (is_array($result)) {
@@ -487,31 +380,11 @@ abstract class XotBaseMigration extends LaravelMigration
         $methodName = 'updateUserKey'.Str::studly($this->model->getKeyType());
         $this->{$methodName}($table);
 
-<<<<<<< .merge_file_zj20jy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_sXnOrO
         if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
             $table->string('model_id', 36)->index()->change();
         }
 
         if ($this->hasColumn('team_id') && $this->getColumnType('team_id') === 'bigint') {
-<<<<<<< .merge_file_zj20jy
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-        if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
-            $table->string('model_id', 36)->index()->change();
-        }
-
-        if ($this->hasColumn('team_id') && 'bigint' === $this->getColumnType('team_id')) {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sXnOrO
             $table->uuid('team_id')->nullable()->change();
         }
     }
@@ -522,31 +395,11 @@ abstract class XotBaseMigration extends LaravelMigration
             $table->uuid('id')->primary()->first();
         }
 
-<<<<<<< .merge_file_zj20jy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_sXnOrO
         if ($this->hasColumn('id') && $this->getColumnType('id') === 'bigint') {
             $table->uuid('id')->change();
         }
 
         if ($this->hasColumn('user_id') && $this->getColumnType('user_id') === 'bigint') {
-<<<<<<< .merge_file_zj20jy
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-        if ($this->hasColumn('id') && 'bigint' === $this->getColumnType('id')) {
-            $table->uuid('id')->change();
-        }
-
-        if ($this->hasColumn('user_id') && 'bigint' === $this->getColumnType('user_id')) {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sXnOrO
             $table->uuid('user_id')->change();
         }
     }
@@ -563,7 +416,6 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
     /**
-<<<<<<< HEAD
      * Get the migration connection name. Laravel's Migrator calls this
      * directly to decide transaction wrapping, so it must apply the same
      * 'user'-connection fallback as getConn() — see resolveConnectionName().
@@ -571,13 +423,6 @@ abstract class XotBaseMigration extends LaravelMigration
     public function getConnection(): ?string
     {
         return $this->resolveConnectionName();
-=======
-     * Get the migration connection name.
-     */
-    public function getConnection(): ?string
-    {
-        return $this->model->getConnectionName();
->>>>>>> 8d801bbe (Check & fix styling)
     }
 
     /**
@@ -612,7 +457,6 @@ abstract class XotBaseMigration extends LaravelMigration
     {
         return true;
     }
-<<<<<<< HEAD
 
     /**
      * Convert table id from UUID to bigint, adding uuid column.
@@ -771,6 +615,3 @@ abstract class XotBaseMigration extends LaravelMigration
 }
 
 // end XotBaseMigration
-=======
-}
->>>>>>> 8d801bbe (Check & fix styling)

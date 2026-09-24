@@ -44,37 +44,7 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
-<<<<<<< .merge_file_4boz1m
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Z0UaNC
 - [Error Handling Guidelines](../../EXCEPTION-HANDLING-GUIDE.md)
 - [Webhook Integration](../../integrations/WEBHOOK-GUIDE.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
 - [Error Formatters Overview](../README.md)
-<<<<<<< .merge_file_4boz1m
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-- [Error Handling Guidelines](../../exception-handling-guide.md)
-- [Webhook Integration](../../integrations/webhook-guide.md)
-- [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
-- [Error Formatters Overview](../readme.md)
-- [Error Handling Guidelines](../../EXCEPTION-HANDLING-GUIDE.md)
-- [Webhook Integration](../../integrations/WEBHOOK-GUIDE.md)
-- [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
-<<<<<<< HEAD
-- [Error Formatters Overview](../README.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Error Formatters Overview](../README.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Z0UaNC

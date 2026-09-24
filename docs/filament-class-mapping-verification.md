@@ -80,20 +80,4 @@ La regola "mai estendere Filament direttamente" sembra essere più stringente pe
 - Resources, Pages, Widgets, Actions (sempre XotBase)
 - Forms Components specifici (alcuni hanno base, altri no)
 
-<<<<<<< .merge_file_KkfkVq
-<<<<<<< HEAD
-<<<<<<< HEAD
 Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
-=======
-<<<<<<< HEAD
-Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
-=======
-Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
->>>>>>> .merge_file_xeG4jo

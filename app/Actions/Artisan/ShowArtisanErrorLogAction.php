@@ -7,44 +7,11 @@ namespace Modules\Xot\Actions\Artisan;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\File;
-<<<<<<< .merge_file_EjZQDH
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_apVbWZ
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_iWdyUC
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match_all;
 
-<<<<<<< .merge_file_EjZQDH
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_6SIgjt
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-use function Safe\preg_match_all;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
-<<<<<<< .merge_file_apVbWZ
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_6SIgjt
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_iWdyUC
 /**
  * Replaces Modules\Xot\Services\ArtisanService::errorShow().
  */
@@ -62,27 +29,7 @@ class ShowArtisanErrorLogAction
             $log = '';
         }
         $content = '';
-<<<<<<< .merge_file_EjZQDH
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
-=======
-<<<<<<< .merge_file_apVbWZ
-<<<<<<< HEAD
-        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
-=======
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
->>>>>>> laraxot/dev
-=======
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
->>>>>>> .merge_file_6SIgjt
->>>>>>> laraxot/dev
-=======
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
->>>>>>> .merge_file_iWdyUC
             $content = File::get(storage_path('logs/'.$log));
         }
 
