@@ -15,8 +15,12 @@ use function Safe\tempnam;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
 it('saves array as php file', function (): void {
     $data = ['foo' => 'bar', 'baz' => 123];

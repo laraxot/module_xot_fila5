@@ -12,9 +12,13 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 =======
 use Filament\Tables;
+>>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Column;
 >>>>>>> laraxot/dev
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
@@ -30,6 +34,9 @@ class ListModules extends XotBaseListRecords
     protected static string $resource = ModuleResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Column>
      */
@@ -93,9 +100,12 @@ class ListModules extends XotBaseListRecords
             'delete' => DeleteBulkAction::make(),
         ];
     }
+<<<<<<< HEAD
 =======
     
 
    
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 }

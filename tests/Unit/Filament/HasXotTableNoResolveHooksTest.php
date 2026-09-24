@@ -11,10 +11,16 @@ use function Safe\file_get_contents;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\file_get_contents;
 
 /*
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  * Guardia della regola docs/wiki/rules/xot-table-method-names.md:

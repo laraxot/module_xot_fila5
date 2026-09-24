@@ -3,9 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 =======
+>>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Column;
+use Modules\Xot\Filament\Traits\HasXotTable;
 >>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture;
@@ -21,6 +26,9 @@ test('un override di getTableFilters viene onorato', function (): void {
 
 test('senza override si ricade sul default vuoto', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $fixture = new class {
         use HasXotTable;
 
@@ -28,6 +36,7 @@ test('senza override si ricade sul default vuoto', function (): void {
 
         /** @return array<string, Column> */
         public function getTableColumns(): array
+<<<<<<< HEAD
 =======
     $fixture = new class
     {
@@ -38,6 +47,8 @@ test('senza override si ricade sul default vuoto', function (): void {
         /** @return array<string, mixed> */
         /** @return array<string, \Filament\Tables\Columns\Column> */
     public function getTableColumns(): array
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         {
             return [];

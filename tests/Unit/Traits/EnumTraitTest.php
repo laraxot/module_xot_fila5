@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
 =======
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Schema\Blueprint;
 use Mockery;
+>>>>>>> laraxot/dev
+=======
+use Illuminate\Database\Schema\Blueprint;
 >>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -19,10 +23,14 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 it('gets label via translation', function (): void {
     $label = TestEnum::ALPHA->getLabel();
@@ -51,9 +59,13 @@ it('gets searchable values', function (): void {
 it('gets form schema', function (): void {
     $schema = TestEnum::ALPHA->getFormSchema();
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Assert::assertIsArray($schema);
 =======
     //Assert::assertIsArray($schema);
+>>>>>>> laraxot/dev
+=======
+    // Assert::assertIsArray($schema);
 >>>>>>> laraxot/dev
     Assert::assertCount(2, $schema);
 });
@@ -68,26 +80,36 @@ it('adds columns to blueprint in create context', function (): void {
 it('adds columns to blueprint in update context with hasColumn check', function (): void {
     /** @var XotBaseMigration&MockInterface $migration */
 <<<<<<< HEAD
+<<<<<<< HEAD
     $migration = \Mockery::mock(XotBaseMigration::class);
 =======
     $migration = Mockery::mock(XotBaseMigration::class);
+>>>>>>> laraxot/dev
+=======
+    $migration = \Mockery::mock(XotBaseMigration::class);
 >>>>>>> laraxot/dev
     $migration->shouldReceive('hasColumn')->with('alpha')->andReturn(true);
     $migration->shouldReceive('hasColumn')->with('beta')->andReturn(false);
 
     /** @var Blueprint&MockInterface $columnBeta */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $columnBeta = \Mockery::mock(Blueprint::class);
     $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
 
     /** @var Blueprint&MockInterface $table */
     $table = \Mockery::mock(Blueprint::class);
+<<<<<<< HEAD
 =======
     $columnBeta = Mockery::mock(Blueprint::class);
     $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
 
     /** @var Blueprint&MockInterface $table */
     $table = Mockery::mock(Blueprint::class);
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     $table->shouldReceive('string')->with('beta')->andReturn($columnBeta);
 
@@ -97,6 +119,9 @@ it('adds columns to blueprint in update context with hasColumn check', function 
 it('updates columns calls columns', function (): void {
     /** @var Blueprint&MockInterface $column */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $column = \Mockery::mock(Blueprint::class);
     $column->shouldReceive('nullable')->andReturn($column);
 
@@ -106,6 +131,7 @@ it('updates columns calls columns', function (): void {
 
     /** @var XotBaseMigration&MockInterface $migration */
     $migration = \Mockery::mock(XotBaseMigration::class);
+<<<<<<< HEAD
 =======
     $column = Mockery::mock(Blueprint::class);
     $column->shouldReceive('nullable')->andReturn($column);
@@ -117,6 +143,8 @@ it('updates columns calls columns', function (): void {
     /** @var XotBaseMigration&MockInterface $migration */
     $migration = Mockery::mock(XotBaseMigration::class);
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     $migration->shouldReceive('hasColumn')->andReturn(false);
 
     TestEnum::updateColumns($table, $migration);
@@ -125,9 +153,13 @@ it('updates columns calls columns', function (): void {
 it('drops columns', function (): void {
     /** @var Blueprint&MockInterface $table */
 <<<<<<< HEAD
+<<<<<<< HEAD
     $table = \Mockery::mock(Blueprint::class);
 =======
     $table = Mockery::mock(Blueprint::class);
+>>>>>>> laraxot/dev
+=======
+    $table = \Mockery::mock(Blueprint::class);
 >>>>>>> laraxot/dev
     $table->shouldReceive('dropColumn')->with(['alpha', 'beta']);
 

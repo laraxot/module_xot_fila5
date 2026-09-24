@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 title: 'Machine learning'
@@ -14,6 +15,8 @@ updated: 2026-08-24
 ---
 
 -------------------------------------
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 title: "Machine learning"
@@ -31,8 +34,11 @@ https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!
 
 ----------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 rephrasing
 https://cloudmersive.com/nlp-api  !!!!!!!!!!!!!!!
@@ -75,11 +81,14 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.

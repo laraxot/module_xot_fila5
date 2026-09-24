@@ -15,6 +15,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * Model Extra.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD
  *
  * @property int                                               $id
@@ -22,6 +25,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property string|null                                       $model_type
  *                                                                               =======
  *                                                                               <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  * @property int                                               $id
@@ -37,6 +43,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
  * @method static Builder|Extra     withExtraAttributes()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *                                                                                 =======
  *
  * @property int                                               $id
@@ -52,6 +61,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
  * @method static Builder|Extra     withExtraAttributes()
  *                                                                                 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  *

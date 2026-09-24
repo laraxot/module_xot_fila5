@@ -10,10 +10,16 @@ return [
             'name' => 'Admin',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'label' => 'module.navigation',
         'icon' => 'module.navigation',
         'sort' => 65,
 =======
+>>>>>>> laraxot/dev
+=======
+        'label' => 'module.navigation',
+        'icon' => 'module.navigation',
+        'sort' => 65,
 >>>>>>> laraxot/dev
     ],
     'fields' => [
@@ -112,15 +118,21 @@ return [
             'description' => '',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'path' => [
             'label' => 'path',
         ],
         'enabled' => [
             'label' => 'enabled',
         ],
+<<<<<<< HEAD
 =======
         'path' => ['label' => 'path'],
         'enabled' => ['label' => 'enabled'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
     'pages' => [
@@ -142,6 +154,9 @@ return [
     'plural_label' => 'Module (Plurale)',
     'actions' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'create' => [
             'label' => 'Crea Module',
             'icon' => 'create',
@@ -172,6 +187,7 @@ return [
             'icon' => 'view',
             'tooltip' => 'view',
         ],
+<<<<<<< HEAD
 =======
         'create' => ['label' => 'Crea Module', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Module', 'icon' => 'edit', 'tooltip' => 'edit'],
@@ -179,6 +195,8 @@ return [
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
 ];

@@ -16,8 +16,12 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
 test('get module name by class action works', function (): void {
     $action = app(GetModuleNameByClassAction::class);

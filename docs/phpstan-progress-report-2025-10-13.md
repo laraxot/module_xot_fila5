@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 name: phpstan-progress-report-2025-10-13
@@ -11,11 +14,14 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # PHPStan Progress Report - 2025-10-13
 
@@ -356,8 +362,11 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 *Progress: 17.8% complete*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 ## Merged from phpstan-progress_2.md
@@ -371,9 +380,12 @@ canonical: ../../../Themes/docs/shared-components/phpstan-progress-2-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-2-1.md
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 ## Variant 10

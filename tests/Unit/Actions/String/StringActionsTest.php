@@ -12,8 +12,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
 test('get pronounceable password action works', function () {
     $action = app(GetPronounceablePasswordAction::class);

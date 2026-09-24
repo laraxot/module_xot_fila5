@@ -20,9 +20,13 @@ use Illuminate\Support\Carbon;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 interface UpdaterContract {}
 =======
 interface UpdaterContract
 {
 }
+>>>>>>> laraxot/dev
+=======
+interface UpdaterContract {}
 >>>>>>> laraxot/dev

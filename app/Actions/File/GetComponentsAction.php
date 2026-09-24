@@ -146,6 +146,7 @@ class GetComponentsAction
             if (
                 ! isset($comp['name'], $comp['class'], $comp['ns'])
 <<<<<<< HEAD
+<<<<<<< HEAD
                 || ! is_string($comp['name']) || $comp['name'] === ''
                 || ! is_string($comp['class']) || $comp['class'] === ''
                 || ! is_string($comp['ns']) || $comp['ns'] === ''
@@ -153,6 +154,11 @@ class GetComponentsAction
                 || ! is_string($comp['name']) || '' === $comp['name']
                 || ! is_string($comp['class']) || '' === $comp['class']
                 || ! is_string($comp['ns']) || '' === $comp['ns']
+>>>>>>> laraxot/dev
+=======
+                || ! is_string($comp['name']) || $comp['name'] === ''
+                || ! is_string($comp['class']) || $comp['class'] === ''
+                || ! is_string($comp['ns']) || $comp['ns'] === ''
 >>>>>>> laraxot/dev
             ) {
                 return false;

@@ -8,16 +8,22 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\preg_replace;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 =======
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 /**
  * Class RouteDynService.
@@ -31,10 +37,15 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
 >>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
@@ -49,9 +60,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function getPrefix(array $v, ?string $namespace): string
@@ -66,9 +81,13 @@ class RouteDynService
         $prefix = mb_strtolower($name);
         $param_name = self::getParamName($v, $namespace);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ('' !== $param_name) {
 =======
         if ($param_name !== '') {
+>>>>>>> laraxot/dev
+=======
+        if ('' !== $param_name) {
 >>>>>>> laraxot/dev
             return $prefix.'/{'.$param_name.'}';
         }
@@ -78,9 +97,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function getAs(array $v, ?string $_namespace): string
@@ -109,9 +132,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function getNamespace(array $v, ?string $namespace): ?string
@@ -125,9 +152,13 @@ class RouteDynService
         Assert::string($namespace = $v['name'], __FILE__.':'.__LINE__.' - '.class_basename(__CLASS__));
         $namespace = str_replace(['{', '}'], '', $namespace);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ('' === $namespace) {
 =======
         if ($namespace === '') {
+>>>>>>> laraxot/dev
+=======
+        if ('' === $namespace) {
 >>>>>>> laraxot/dev
             return null;
         }
@@ -137,9 +168,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function getAct(array $v, ?string $_namespace): string
@@ -170,9 +205,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function getParamName(array $v, ?string $_namespace): string
@@ -192,10 +231,15 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
 >>>>>>> laraxot/dev
      * @return array<int, string>
      */
@@ -208,10 +252,15 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
 >>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
@@ -233,9 +282,13 @@ class RouteDynService
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ('' === $param_name && ! isset($opts['only'])) {
 =======
         if ($param_name === '' && ! isset($opts['only'])) {
+>>>>>>> laraxot/dev
+=======
+        if ('' === $param_name && ! isset($opts['only'])) {
 >>>>>>> laraxot/dev
             $opts['only'] = ['index'];
         }
@@ -247,9 +300,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function getController(array $v, ?string $_namespace): string
@@ -270,9 +327,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function getUri(array $v, ?string $_namespace): string
@@ -285,16 +346,24 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
 >>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public static function getMethod(array $v, ?string $_namespace): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! isset($v['method'])) {
             return ['get', 'post'];
         }
@@ -310,6 +379,7 @@ class RouteDynService
 
     /**
      * @param array<string, mixed> $v
+<<<<<<< HEAD
 =======
         if (isset($v['method'])) {
             /** @var array<int, string> */
@@ -322,6 +392,8 @@ class RouteDynService
     /**
      * @param  array<string, mixed>  $v
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
      */
     public static function getUses(array $v, ?string $namespace): string
     {
@@ -333,10 +405,15 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
 >>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
@@ -346,9 +423,13 @@ class RouteDynService
         $as = Str::slug($name);
         $uses = self::getUses($v, $namespace);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $curr) {
 =======
         if ($curr !== null) {
+>>>>>>> laraxot/dev
+=======
+        if (null !== $curr) {
 >>>>>>> laraxot/dev
             $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
         } else {
@@ -360,9 +441,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<int, array<string, mixed>> $array
 =======
      * @param  array<int, array<string, mixed>>  $array
+>>>>>>> laraxot/dev
+=======
+     * @param array<int, array<string, mixed>> $array
 >>>>>>> laraxot/dev
      */
     public static function dynamic_route(
@@ -375,9 +460,13 @@ class RouteDynService
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $namespace_start) {
 =======
         if ($namespace_start !== null) {
+>>>>>>> laraxot/dev
+=======
+        if (null !== $namespace_start) {
 >>>>>>> laraxot/dev
             self::$namespace_start = $namespace_start;
         }
@@ -398,17 +487,23 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param array<string, mixed> $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
         if (null === $v['name']) {
+<<<<<<< HEAD
 =======
      * @param  array<string, mixed>  $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
         if ($v['name'] === null) {
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             return;
         }
@@ -421,9 +516,13 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
 >>>>>>> laraxot/dev
      */
     public static function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
@@ -434,6 +533,9 @@ class RouteDynService
 
         $sub_namespace = self::getNamespace($v, $namespace);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $curr = null === $curr ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
         $typedSubs = [];
@@ -451,6 +553,7 @@ class RouteDynService
 
     /**
      * @param array<string, mixed> $v
+<<<<<<< HEAD
 =======
         $curr = $curr === null ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
@@ -460,6 +563,8 @@ class RouteDynService
 
     /**
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public static function createRouteActs(array $v, ?string $namespace, ?string $curr): void
@@ -472,6 +577,9 @@ class RouteDynService
         foreach ($v['acts'] as $v1) {
             Assert::isArray($v1);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $act = [];
             foreach ($v1 as $key => $value) {
                 Assert::string($key);
@@ -482,6 +590,7 @@ class RouteDynService
             $method = self::getMethod($act, $namespace);
             $uri = self::getUri($act, $namespace);
             $callback = self::getCallback($act, $namespace, $curr);
+<<<<<<< HEAD
 =======
             /** @var array<string, mixed> $v1 */
             $v1['controller'] = $controller;
@@ -489,6 +598,8 @@ class RouteDynService
             $method = self::getMethod($v1, $namespace);
             $uri = self::getUri($v1, $namespace);
             $callback = self::getCallback($v1, $namespace, $curr);
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             Route::match($method, $uri, $callback);
         }
@@ -500,9 +611,13 @@ class RouteDynService
     public static function prefixedResourceNames(string $prefix): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ('.' === mb_substr($prefix, -1)) {
 =======
         if (mb_substr($prefix, -1) === '.') {
+>>>>>>> laraxot/dev
+=======
+        if ('.' === mb_substr($prefix, -1)) {
 >>>>>>> laraxot/dev
             $prefix = mb_substr($prefix, 0, -1);
         }

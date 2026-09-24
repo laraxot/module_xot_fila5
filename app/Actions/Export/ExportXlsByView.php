@@ -21,15 +21,21 @@ class ExportXlsByView
      * Esporta una vista in Excel.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  View  $view  La vista da esportare
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  string  $filename  Nome del file Excel
      * @param  string|null  $transKey  Chiave di traduzione per i campi
+<<<<<<< HEAD
 =======
      * @param View               $view     La vista da esportare
      * @param array<int, string> $fields   Campi da includere nell'export
      * @param string             $filename Nome del file Excel
      * @param string|null        $transKey Chiave di traduzione per i campi
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function execute(

@@ -106,6 +106,9 @@ class ModuleService
                     }
                 } catch (Exception) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     try {
                         $reflection_class = new \ReflectionClass($tmp->class);
                         if (! $reflection_class->isAbstract()) {
@@ -114,8 +117,11 @@ class ModuleService
                     } catch (\Throwable) {
                         // Ignore reflection errors
                     }
+<<<<<<< HEAD
 =======
                     // Ignore reflection errors
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
                 }
             }

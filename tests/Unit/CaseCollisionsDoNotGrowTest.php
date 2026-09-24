@@ -24,8 +24,12 @@ use function Safe\file_put_contents;
 use function Safe\json_decode;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
 function repoRoot(): string
 {

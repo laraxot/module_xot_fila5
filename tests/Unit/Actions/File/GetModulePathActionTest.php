@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
@@ -18,9 +21,13 @@ it('gets module path from facade correctly', function (): void {
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return 'Xot' === $module ? '/path/to/Xot/' : '';
 =======
             return $module === 'Xot' ? '/path/to/Xot/' : '';
+>>>>>>> laraxot/dev
+=======
+            return 'Xot' === $module ? '/path/to/Xot/' : '';
 >>>>>>> laraxot/dev
         },
     ]);

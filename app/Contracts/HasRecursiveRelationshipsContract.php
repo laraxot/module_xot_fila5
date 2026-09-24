@@ -21,6 +21,9 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD
  *
  * @property int                    $id
@@ -63,6 +66,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * @property Collection<int, Model> $parentAndSelf              The model's direct parent and itself.
  * @property int|null               $parent_and_self_count
  *                                                              >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
  * @property int $id
  * @property string $name
@@ -83,6 +87,8 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * @property int|null $descendants_and_self_count
  * @property Collection<int, Model> $parentAndSelf The model's direct parent and itself.
  * @property int|null $parent_and_self_count
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  *
  * @phpstan-require-extends Model
@@ -221,8 +227,11 @@ interface HasRecursiveRelationshipsContract
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * @param  Builder  $query
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return AdjacencyBuilder<Model>
      */
@@ -230,6 +239,9 @@ interface HasRecursiveRelationshipsContract
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD.
      *
      * @param list<Model> $models
@@ -247,8 +259,11 @@ interface HasRecursiveRelationshipsContract
      *
      * >>>>>>> .merge_file_g1dVt5
      *
+<<<<<<< HEAD
 =======
      * @param  list<Model>  $models
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return Collection<int, Model>
      */

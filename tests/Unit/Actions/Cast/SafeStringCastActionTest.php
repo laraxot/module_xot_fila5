@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Tests\TestCase;
@@ -23,9 +26,13 @@ it('casts various values to string correctly', function (): void {
     // Non-scalar
     Assert::assertSame('', $action->execute(['a']));
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertSame('', $action->execute(new stdClass()));
 =======
     Assert::assertSame('', $action->execute(new stdClass));
+>>>>>>> laraxot/dev
+=======
+    Assert::assertSame('', $action->execute(new stdClass()));
 >>>>>>> laraxot/dev
 });
 

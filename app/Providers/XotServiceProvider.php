@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers;
 
 use Composer\Autoload\ClassLoader;
+<<<<<<< HEAD
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -26,7 +29,10 @@ use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
@@ -68,6 +74,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandlersRepository();
         // $this->extendExceptionHandler();
         $this->registerCommands();
+<<<<<<< HEAD
         $this->registerExportJobs();
     }
 
@@ -80,6 +87,8 @@ class XotServiceProvider extends XotBaseServiceProvider
     private function registerExportJobs(): void
     {
         $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
+=======
+>>>>>>> laraxot/dev
     }
 
     public function registerProviders(): void

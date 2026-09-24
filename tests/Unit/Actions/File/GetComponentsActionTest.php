@@ -11,10 +11,14 @@ use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 it('gets and caches components correctly', function (): void {
     $tempDir = sys_get_temp_dir().'/test_comps_'.uniqid();

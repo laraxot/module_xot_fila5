@@ -8,11 +8,15 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
+<<<<<<< HEAD
 =======
 
 use function Safe\preg_replace;
@@ -20,6 +24,8 @@ use function Safe\preg_replace;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 /**
  * Class RouteDynAction.
@@ -311,9 +317,13 @@ class RouteDynAction
     public static function createRouteResource(array $v, ?string $namespace): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! array_key_exists('name', $v) || $v['name'] === null) {
 =======
         if (! array_key_exists('name', $v) || null === $v['name']) {
+>>>>>>> laraxot/dev
+=======
+        if (! array_key_exists('name', $v) || $v['name'] === null) {
 >>>>>>> laraxot/dev
             return;
         }

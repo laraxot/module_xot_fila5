@@ -40,7 +40,11 @@ class XlsxCellFactory
 
         $value = StringHelper::sanitizeUTF8($value);
 
+<<<<<<< HEAD
         if ($value === '') {
+=======
+        if ('' === $value) {
+>>>>>>> laraxot/dev
             return new EmptyCell($value, $style);
         }
 

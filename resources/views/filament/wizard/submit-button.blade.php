@@ -1,8 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 <?php
 
 declare(strict_types=1);
 ?>
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 @if (\Illuminate\Support\Facades\View::exists('pub_theme::filament.wizard.submit-button'))

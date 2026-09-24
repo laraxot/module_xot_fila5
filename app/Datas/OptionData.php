@@ -16,17 +16,23 @@ class OptionData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  string  $cache_driver  Driver per la cache delle opzioni
      * @param  bool  $enable_cache  Se abilitare la cache delle opzioni
      * @param  int  $cache_ttl  TTL cache in secondi
      * @param  string  $prefix  Prefisso per le chiavi delle opzioni
      * @param  list<string>  $autoload  Opzioni da caricare automaticamente
+<<<<<<< HEAD
 =======
      * @param string       $cache_driver Driver per la cache delle opzioni
      * @param bool         $enable_cache Se abilitare la cache delle opzioni
      * @param int          $cache_ttl    TTL cache in secondi
      * @param string       $prefix       Prefisso per le chiavi delle opzioni
      * @param list<string> $autoload     Opzioni da caricare automaticamente
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function __construct(
@@ -36,10 +42,14 @@ class OptionData extends Data
         public readonly string $prefix = 'options_',
         public readonly array $autoload = ['site_name', 'site_description', 'site_logo'],
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
+>>>>>>> laraxot/dev
+=======
+    ) {}
 >>>>>>> laraxot/dev
 
     /**
@@ -48,9 +58,13 @@ class OptionData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
+>>>>>>> laraxot/dev
+=======
+        return new self;
 >>>>>>> laraxot/dev
     }
 }

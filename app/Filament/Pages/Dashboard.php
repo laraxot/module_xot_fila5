@@ -1,17 +1,24 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
 >>>>>>> laraxot/dev
 /**
  * @see https://medium.com/@laravelprotips/filament-streamline-multiple-widgets-with-one-dynamic-livewire-filter-ed05c978a97f
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Pages;
 

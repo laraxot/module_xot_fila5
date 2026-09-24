@@ -13,6 +13,9 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * Modules\Xot\Models\Session.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD
  *
  * @property string               $id
@@ -27,6 +30,7 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property string|null          $created_by
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
+<<<<<<< HEAD
 =======
  * @property string $id
  * @property string|null $user_id
@@ -41,11 +45,16 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static SessionFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *                                                                   =======
  *
  * @property string               $id
@@ -65,6 +74,9 @@ use Modules\Xot\Database\Factories\SessionFactory;
  *
  * @method static SessionFactory          factory($count = null, $state = [])
  *                                                                            >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  * @method static Builder<static>|Session newModelQuery()

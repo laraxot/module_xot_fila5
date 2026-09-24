@@ -8,11 +8,16 @@ use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Support\Enums\IconPosition;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Actions\ExecuteComposerDumpAutoloadAction;
 =======
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
+>>>>>>> laraxot/dev
+=======
+use Modules\Xot\Actions\ExecuteArtisanCommandAction;
+use Modules\Xot\Actions\ExecuteComposerDumpAutoloadAction;
 >>>>>>> laraxot/dev
 
 /**
@@ -39,6 +44,9 @@ class ArtisanCommandsManager extends XotBasePage
     protected $listeners = [
         'refresh-component' => '$refresh',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     ];
 
     /**
@@ -53,6 +61,7 @@ class ArtisanCommandsManager extends XotBasePage
      * mai un output popolato, a prescindere da quanto il comando reale fosse
      * andato a buon fine). Fix: leggere direttamente il valore di ritorno.
      */
+<<<<<<< HEAD
 =======
         'artisan-command.started' => 'handleCommandStarted',
         'artisan-command.output' => 'handleCommandOutput',
@@ -62,6 +71,8 @@ class ArtisanCommandsManager extends XotBasePage
     ];
 
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -70,6 +81,9 @@ class ArtisanCommandsManager extends XotBasePage
 
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $result = app(ExecuteArtisanCommandAction::class)->execute($command);
 
             $this->output = $result['output'];
@@ -141,6 +155,7 @@ class ArtisanCommandsManager extends XotBasePage
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.messages.command_failed'))
             ->body((string) __('xot::artisan-commands-manager.messages.command_failed_desc', ['command' => $command]))
+<<<<<<< HEAD
 =======
             app(ExecuteArtisanCommandAction::class)->execute($command);
         } catch (\Exception $e) {
@@ -203,6 +218,8 @@ class ArtisanCommandsManager extends XotBasePage
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.notifications.error'))
             ->body($error)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             ->danger()
             ->send();
@@ -276,6 +293,9 @@ class ArtisanCommandsManager extends XotBasePage
                 ->disabled(fn () => $this->isRunning)
                 ->action(fn () => $this->executeCommand('queue:restart')),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             Action::make('composer_dump_autoload')
                 ->label((string) __('xot::artisan-commands-manager.commands.composer_dump_autoload.label'))
                 ->icon('heroicon-o-cube')
@@ -295,6 +315,9 @@ class ArtisanCommandsManager extends XotBasePage
                 ->requiresConfirmation()
                 ->modalDescription((string) __('xot::artisan-commands-manager.commands.notify_migrate_themes_to_mail_templates.modal_description'))
                 ->action(fn () => $this->executeCommand('notify:migrate-themes-to-mail-templates')),
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
         ];

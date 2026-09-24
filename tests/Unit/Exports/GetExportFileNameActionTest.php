@@ -12,7 +12,11 @@ uses(TestCase::class);
 
 describe('GetExportFileNameAction — stesso nome file per export_xls e export_xlsx', function (): void {
     test('class_basename della pagina + filtri appiattiti, come il custom storico', function (): void {
+<<<<<<< HEAD
         $page = new ListRecordsStub;
+=======
+        $page = new ListRecordsStub();
+>>>>>>> laraxot/dev
         $page->tableFilters = [
             'anno_valutatore' => [
                 'anno' => 2026,
@@ -27,7 +31,11 @@ describe('GetExportFileNameAction — stesso nome file per export_xls e export_x
     });
 
     test('filtri assenti o nulli non rompono il nome', function (): void {
+<<<<<<< HEAD
         $page = new ListRecordsStub;
+=======
+        $page = new ListRecordsStub();
+>>>>>>> laraxot/dev
         $page->tableFilters = [
             'anno_valutatore' => [
                 'anno' => null,

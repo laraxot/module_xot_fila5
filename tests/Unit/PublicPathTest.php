@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Application;
 =======
 
+>>>>>>> laraxot/dev
+=======
+use App\Application;
 >>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;

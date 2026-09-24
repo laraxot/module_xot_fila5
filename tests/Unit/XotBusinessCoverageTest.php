@@ -12,9 +12,13 @@ uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     \Mockery::close();
 =======
     Mockery::close();
+>>>>>>> laraxot/dev
+=======
+    \Mockery::close();
 >>>>>>> laraxot/dev
 });
 

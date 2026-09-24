@@ -70,8 +70,12 @@ trait HasSchemalessAttributes
      *
      * @param  Builder<static>  $query
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
 =======
+>>>>>>> laraxot/dev
+=======
+     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
 >>>>>>> laraxot/dev
      * @return Builder<static>
      */
@@ -104,10 +108,16 @@ trait HasSchemalessAttributes
     /**
      * Get un valore da extra_attributes.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
 =======
+>>>>>>> laraxot/dev
+=======
+     *
+     * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
+     * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
 >>>>>>> laraxot/dev
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
@@ -118,9 +128,14 @@ trait HasSchemalessAttributes
     /**
      * Set un valore in extra_attributes.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
 =======
+>>>>>>> laraxot/dev
+=======
+     *
+     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
 >>>>>>> laraxot/dev
      */
     public function setExtraAttribute(string $key, mixed $value): void

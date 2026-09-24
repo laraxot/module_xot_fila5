@@ -12,8 +12,12 @@ class SaveArrayAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<int|string, mixed> $data
      */

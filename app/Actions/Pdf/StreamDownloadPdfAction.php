@@ -19,15 +19,21 @@ class StreamDownloadPdfAction
      * Genera un PDF dall'HTML fornito.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  string|null  $html  Contenuto HTML da convertire
      * @param  string|null  $view  Nome della view da renderizzare
      * @param  array<string, mixed>|null  $data  Dati da passare alla view
      * @param  string  $filename  Nome del file PDF
+<<<<<<< HEAD
 =======
      * @param string|null               $html     Contenuto HTML da convertire
      * @param string|null               $view     Nome della view da renderizzare
      * @param array<string, mixed>|null $data     Dati da passare alla view
      * @param string                    $filename Nome del file PDF
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function execute(
@@ -37,9 +43,13 @@ class StreamDownloadPdfAction
         string $filename = 'my_doc.pdf',
     ): StreamedResponse {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($html === null && $view !== null) {
 =======
         if (null === $html && null !== $view) {
+>>>>>>> laraxot/dev
+=======
+        if ($html === null && $view !== null) {
 >>>>>>> laraxot/dev
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');

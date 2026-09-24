@@ -9,9 +9,16 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
+<<<<<<< HEAD
 use Throwable;
 use Webmozart\Assert\Assert;
 
+=======
+use Webmozart\Assert\Assert;
+
+use function Safe\copy;
+
+>>>>>>> laraxot/dev
 class AssetAction
 {
     use QueueableActionTrait;
@@ -126,6 +133,7 @@ class AssetAction
 
     /**
      * Copies an asset file if it doesn't exist or if forced.
+<<<<<<< HEAD
      *
      * In APP_ENV=local the caller forces a copy on every request so assets
      * refresh without a rebuild. PHP-FPM runs as www-data: if the dest was
@@ -182,6 +190,20 @@ class AssetAction
             : new Exception($e->getMessage(), (int) $e->getCode(), $e);
 
         $this->throwCopyException($exception, $path, $from, $to);
+=======
+     */
+    private function copyAsset(string $from, string $to, string $path, bool $force = false): void
+    {
+        if (! File::exists($to) || $force) {
+            $this->ensureDirectoryExists(\dirname($to));
+
+            try {
+                File::copy($from, $to);
+            } catch (Exception $e) {
+                $this->throwCopyException($e, $path, $from, $to);
+            }
+        }
+>>>>>>> laraxot/dev
     }
 
     /**

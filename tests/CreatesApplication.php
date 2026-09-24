@@ -31,9 +31,13 @@ trait CreatesApplication
 
         $appEnv = $_ENV['APP_ENV'] ?? getenv('APP_ENV') ?: 'local';
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ('testing' === $appEnv && ! is_readable($testingEnvPath)) {
 =======
         if ($appEnv === 'testing' && ! is_readable($testingEnvPath)) {
+>>>>>>> laraxot/dev
+=======
+        if ('testing' === $appEnv && ! is_readable($testingEnvPath)) {
 >>>>>>> laraxot/dev
             throw new \RuntimeException('laravel/.env.testing mancante. Rigenerare da .env: ./bashscripts/tools/sync-env-testing.sh');
         }
@@ -41,9 +45,13 @@ trait CreatesApplication
         $app = $this->loadLaravelApplication($basePath.'/bootstrap/app.php');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ('testing' === $appEnv && is_readable($testingEnvPath)) {
 =======
         if ($appEnv === 'testing' && is_readable($testingEnvPath)) {
+>>>>>>> laraxot/dev
+=======
+        if ('testing' === $appEnv && is_readable($testingEnvPath)) {
 >>>>>>> laraxot/dev
             $app->loadEnvironmentFrom('.env.testing');
         }

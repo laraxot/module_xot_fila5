@@ -75,13 +75,19 @@ class EditModule extends XotBaseEditRecord
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param array<array-key, mixed> $config
      *
      *
+<<<<<<< HEAD
 =======
      * @param array<array-key, mixed> $config
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return array<string, mixed>
      */

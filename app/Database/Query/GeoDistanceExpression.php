@@ -14,10 +14,15 @@ final class GeoDistanceExpression implements Expression
         private readonly float $longitude,
         private readonly ?string $alias = null,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
     ) {}
+>>>>>>> laraxot/dev
+=======
+    ) {
+    }
 >>>>>>> laraxot/dev
 
     public function getValue(Grammar $grammar): string
@@ -30,9 +35,13 @@ final class GeoDistanceExpression implements Expression
         );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $this->alias) {
 =======
         if ($this->alias !== null) {
+>>>>>>> laraxot/dev
+=======
+        if (null !== $this->alias) {
 >>>>>>> laraxot/dev
             $sql .= ' AS '.$this->alias;
         }

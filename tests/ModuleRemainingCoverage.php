@@ -1091,9 +1091,13 @@ final class ModuleRemainingCoverage
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, int|string>
 =======
      * @return array<string, mixed>
+>>>>>>> laraxot/dev
+=======
+     * @return array<string, int|string>
 >>>>>>> laraxot/dev
      */
     private static function defaultModelAttributes(): array

@@ -1,17 +1,24 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
 >>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Header;
 
@@ -31,9 +38,13 @@ class ExportPdfAction extends XotBaseAction
         $this->translateLabel()
             ->label('')
 <<<<<<< HEAD
+<<<<<<< HEAD
             //->tooltip(__('xot::actions.export_pdf.tooltip'))
 =======
             ->tooltip(__('xot::actions.export_pdf.tooltip'))
+>>>>>>> laraxot/dev
+=======
+            //->tooltip(__('xot::actions.export_pdf.tooltip'))
 >>>>>>> laraxot/dev
             ->icon('ui-files.pdf')
             ->action(static function (ListRecords $livewire) {
@@ -44,9 +55,13 @@ class ExportPdfAction extends XotBaseAction
                     '.pdf';
                 $query = $livewire->getFilteredTableQuery();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($query === null) {
 =======
                 if (null === $query) {
+>>>>>>> laraxot/dev
+=======
+                if ($query === null) {
 >>>>>>> laraxot/dev
                     throw new \Exception('Query is null');
                 }

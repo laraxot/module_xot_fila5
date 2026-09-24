@@ -8,11 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
 
+<<<<<<< HEAD
 =======
 
 use function Safe\json_decode;
@@ -20,6 +24,8 @@ use function Safe\json_decode;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 class MorphOneAction
 {

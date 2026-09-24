@@ -14,6 +14,9 @@ use Spatie\ModelStatus\Status;
  * Modules\Xot\Contracts\ModelWithStatusContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *
  * @property int                     $id
  * @property int|null                $user_id
@@ -27,6 +30,9 @@ use Spatie\ModelStatus\Status;
  * @property string                  $tennant_name
  * @property UserContract|null       $user
  * @property string                  $status
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  * @property int                     $id
@@ -45,6 +51,9 @@ use Spatie\ModelStatus\Status;
  * @property int|null                $statuses_count
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *
  * @method int|string|null                              getKey()
  * @method string                                       getRouteKey()
@@ -79,6 +88,7 @@ use Spatie\ModelStatus\Status;
  * @method int                                                             detach($params)
  * @method void                                                            attach($params)
  * @method bool                                                            save($params)
+<<<<<<< HEAD
 =======
  * @method mixed                                                           getKey()
  * @method string                                                          getRouteKey()
@@ -93,6 +103,8 @@ use Spatie\ModelStatus\Status;
  * @method mixed                                                           detach($params)
  * @method mixed                                                           attach($params)
  * @method mixed                                                           save($params)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
