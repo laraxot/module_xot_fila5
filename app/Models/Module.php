@@ -6,22 +6,11 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Support\Carbon;
-=======
->>>>>>> laraxot/dev
-=======
-use Illuminate\Support\Carbon;
->>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 use Sushi\Sushi;
 
 use function Safe\json_encode;
@@ -46,36 +35,6 @@ use function Safe\json_encode;
  * @property Carbon|null $deactivation_date
  * @property Carbon|null $installation_date
  * @property array<array-key, mixed>|null $update_history
-<<<<<<< HEAD
-=======
-
-use function Safe\json_encode;
-
-use Sushi\Sushi;
-
-/**
- * @property int                             $id
- * @property string|null                     $name
- * @property string|null                     $slug
- * @property string|null                     $version
- * @property string|null                     $description
- * @property bool|null                       $status
- * @property bool|null                       $enabled
- * @property bool|null                       $is_active
- * @property int|null                        $priority
- * @property string|null                     $path
- * @property string|null                     $icon
- * @property array<array-key, mixed>|null    $colors
- * @property array<array-key, mixed>|null    $dependencies
- * @property array<array-key, mixed>|null    $config
- * @property array<array-key, mixed>|null    $metadata
- * @property \Illuminate\Support\Carbon|null $activation_date
- * @property \Illuminate\Support\Carbon|null $deactivation_date
- * @property \Illuminate\Support\Carbon|null $installation_date
- * @property array<array-key, mixed>|null    $update_history
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
  *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
@@ -174,25 +133,11 @@ final class Module extends BaseModel
 
     public function isEnabled(): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         if ($this->enabled !== null) {
             return (bool) $this->enabled;
         }
 
         if ($this->status !== null) {
-<<<<<<< HEAD
-=======
-        if (null !== $this->enabled) {
-            return (bool) $this->enabled;
-        }
-
-        if (null !== $this->status) {
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
             return (bool) $this->status;
         }
 

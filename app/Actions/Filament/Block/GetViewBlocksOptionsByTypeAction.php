@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * -WIP.
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Actions\Filament\Block;
 
 use Illuminate\Support\Arr;
@@ -59,27 +44,11 @@ class GetViewBlocksOptionsByTypeAction
         }
 
         Assert::isArray($files, 'Il risultato di File::glob() deve essere un array');
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         /** @var array<int, string> $files */
         $fixPathAction = app(FixPathAction::class);
         Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
 
         $opts = Arr::mapWithKeys($files, function (string $path) use ($img, $type, $fixPathAction): array {
-<<<<<<< HEAD
-=======
-
-        $fixPathAction = app(FixPathAction::class);
-        Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
-
-        $opts = Arr::mapWithKeys($files, function (mixed $path) use ($img, $type, $fixPathAction): array {
-            // Verifichiamo che il percorso sia una stringa
-            Assert::string($path, 'Il percorso del file deve essere una stringa');
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
             // Normalizziamo il percorso
             $pathStr = $fixPathAction->execute($path);

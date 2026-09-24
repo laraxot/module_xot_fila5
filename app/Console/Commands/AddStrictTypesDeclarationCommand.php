@@ -52,31 +52,17 @@ class AddStrictTypesDeclarationCommand extends Command
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
-                    if (false === $fileName) {
-                        $fileName = $file->getPathname();
-                    }
-                    $this->info("Verrebbe processato: {$fileName}");
-                    ++$count;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
                     if ($fileName === false) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     $count++;
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
                     continue;
                 }
 
                 $path = $file->getRealPath();
-                if (false === $path) {
+                if ($path === false) {
                     continue;
                 }
 
@@ -86,7 +72,7 @@ class AddStrictTypesDeclarationCommand extends Command
                 try {
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");
-                    ++$count;
+                    $count++;
                 } catch (\Exception $e) {
                     $this->error("Errore nel processare {$path}: ".$e->getMessage());
                 }
@@ -115,7 +101,7 @@ class AddStrictTypesDeclarationCommand extends Command
         }
 
         $path = $file->getRealPath();
-        if (false === $path) {
+        if ($path === false) {
             return false;
         }
 

@@ -11,24 +11,6 @@ use Modules\Xot\Tests\Fixtures\Models\ExtraModelTest;
 use Modules\Xot\Tests\Fixtures\Models\TestModelHasExtra;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-
-use function Safe\class_uses;
-
-use Spatie\SchemalessAttributes\SchemalessAttributes;
-
-uses(TestCase::class)->group('xot');
-/**
- * @param array<string, mixed> $values
- */
-function makeExtraWithValues(array $values): ExtraModelTest
-{
-    $extra = new ExtraModelTest();
-<<<<<<< HEAD
-=======
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\class_uses;
@@ -41,9 +23,6 @@ uses(TestCase::class);
 function makeExtraWithValues(array $values): ExtraModelTest
 {
     $extra = new ExtraModelTest;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     $attributes = SchemalessAttributes::createForModel($extra, 'extra_attributes');
 
     foreach ($values as $key => $value) {
@@ -56,18 +35,8 @@ function makeExtraWithValues(array $values): ExtraModelTest
 }
 
 describe('HasExtraTrait', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $testModel = new TestModelHasExtra();
-    $extraClass = new ExtraModelTest();
-=======
     $testModel = new TestModelHasExtra;
     $extraClass = new ExtraModelTest;
->>>>>>> laraxot/dev
-=======
-    $testModel = new TestModelHasExtra();
-    $extraClass = new ExtraModelTest();
->>>>>>> laraxot/dev
 
     it('uses the trait correctly', function () use ($testModel): void {
         $traits = class_uses($testModel);
@@ -113,15 +82,7 @@ describe('HasExtraTrait', function (): void {
 
     it('returns null for unsupported stored types', function () use ($testModel): void {
         $testModel->setRelation('extra', makeExtraWithValues([
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'invalid_value' => new \stdClass(),
-=======
             'invalid_value' => new \stdClass,
->>>>>>> laraxot/dev
-=======
-            'invalid_value' => new \stdClass(),
->>>>>>> laraxot/dev
         ]));
 
         Assert::assertNull($testModel->getExtra('invalid_value'));

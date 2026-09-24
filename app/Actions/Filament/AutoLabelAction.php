@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * -WIP.
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Actions\Filament;
 
 use Filament\Forms\Components\Field;
@@ -40,23 +25,7 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * <<<<<<< HEAD
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
-     *                                   =======
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
-     *
-     * >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-     *
+     * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -127,23 +96,7 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * <<<<<<< HEAD
-     * @param Field|Component $component Il componente di cui ottenere il nome
-     *                                   =======
-     * @param Field|Component $component Il componente di cui ottenere il nome
-     *
-     * >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-     * @param Field|Component $component Il componente di cui ottenere il nome
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-     *
+     * @param  Field|Component  $component  Il componente di cui ottenere il nome
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string

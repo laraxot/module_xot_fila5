@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
@@ -14,14 +13,6 @@ use function Safe\tempnam;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev
 it('saves array as php file', function (): void {
     $data = ['foo' => 'bar', 'baz' => 123];
     $filename = tempnam(sys_get_temp_dir(), 'test_save_').'.php';

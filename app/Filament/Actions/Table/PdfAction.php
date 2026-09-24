@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Table;
 
 use Illuminate\Database\Eloquent\Model;
@@ -32,11 +17,12 @@ class PdfAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
-            ->tooltip('pdf')
+            ->label('')
+            ->iconButton()
+            ->color('danger')
+            ->tooltip((string) __('xot::export_pdf.tooltip'))
             ->openUrlInNewTab()
-            // ->icon('heroicon-o-cloud-arrow-down')
-            // ->icon('fas-file-excel')
-            ->icon('heroicon-o-document-arrow-down')
+            ->icon('xot-files.pdf')
             ->action(fn (Model $record) => app(PdfByModelAction::class)->execute(model: $record));
     }
 }

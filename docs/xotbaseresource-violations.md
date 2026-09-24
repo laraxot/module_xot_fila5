@@ -129,13 +129,9 @@ class {ModelName}Resource extends XotBaseResource
 
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -308,12 +304,6 @@ return [
 - [Progressioni: XotBaseResource Violations](../laravel/Modules/Progressioni/docs/xotbaseresource-violations-critical.md)
 - [Xot: XotBaseResource Rules](../laravel/Modules/Xot/docs/filament/resources/xot-base-resource.md)
 - [Xot: Filament Resource Guidelines](../laravel/Modules/Xot/docs/rules/filament-resource-guidelines.md)
-<<<<<<< HEAD
-=======
-- [Progressioni: XotBaseResource Violations](../laravel/modules/progressioni/docs/xotbaseresource-violations-critical.md)
-- [Xot: XotBaseResource Rules](../laravel/modules/xot/docs/filament/resources/xot-base-resource.md)
-- [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
->>>>>>> laraxot/dev
 
 ### Regole Correlate
 - [Sistema Traduzioni](translation-system.md)
@@ -321,8 +311,4 @@ return [
 - [Architettura Modulare](modular-architecture.md)
 
 *Documento creato: agosto 2025*
-<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025*
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> laraxot/dev

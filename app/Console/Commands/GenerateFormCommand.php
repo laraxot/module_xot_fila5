@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/paulvl/backup/blob/master/src/Console/Commands/MysqlDump.php
  */

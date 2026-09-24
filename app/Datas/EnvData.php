@@ -24,10 +24,6 @@ class EnvData extends Data implements Wireable
 
     public string $telegram_bot_token = '';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     public string $sms_driver = '';
 
     public string $netfun_token = '';
@@ -48,11 +44,6 @@ class EnvData extends Data implements Wireable
 
     public string $mail_from_name = '';
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     private static ?self $instance = null;
 
     public static function make(): self
@@ -62,23 +53,10 @@ class EnvData extends Data implements Wireable
 
             foreach ($_ENV as $k => $v) {
                 $k = mb_strtolower($k);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
                 if ($v === 'false') {
                     $v = false;
                 }
                 if ($v === 'true') {
-<<<<<<< HEAD
-=======
-                if ('false' === $v) {
-                    $v = false;
-                }
-                if ('true' === $v) {
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
                     $v = true;
                 }
                 $data[$k] = $v;
@@ -91,15 +69,7 @@ class EnvData extends Data implements Wireable
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
-=======
-     * @param  array<string, mixed>  $data
->>>>>>> laraxot/dev
      */
     public function update(array $data): void
     {
@@ -107,15 +77,7 @@ class EnvData extends Data implements Wireable
         $env_content = File::get($env_path);
 
         foreach ($data as $k => $v) {
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($v !== $this->$k && (is_bool($v) || is_int($v) || is_string($v))) {
-=======
-            if ($this->$k !== $v && (is_bool($v) || is_int($v) || is_string($v))) {
->>>>>>> laraxot/dev
-=======
-            if ($v !== $this->$k && (is_bool($v) || is_int($v) || is_string($v))) {
->>>>>>> laraxot/dev
                 $env_content = $this->updateVar($k, $v, $env_content);
             }
         }
@@ -128,28 +90,12 @@ class EnvData extends Data implements Wireable
         $key = str($key)->upper()->toString();
         $replace = $this->getLine($key, $value);
         $pos_start = mb_strpos($env_content, $key.'=');
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($pos_start === false) {
-=======
-        if (false === $pos_start) {
->>>>>>> laraxot/dev
-=======
-        if ($pos_start === false) {
->>>>>>> laraxot/dev
             // throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             return $env_content."\n".$replace;
         }
         $pos_end = mb_strpos($env_content, "\n", $pos_start);
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($pos_end === false) {
-=======
-        if (false === $pos_end) {
->>>>>>> laraxot/dev
-=======
-        if ($pos_end === false) {
->>>>>>> laraxot/dev
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 

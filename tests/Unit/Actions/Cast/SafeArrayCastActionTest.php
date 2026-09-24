@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Tests\TestCase;
@@ -27,26 +20,12 @@ it('casts various values to array correctly', function (): void {
     // Collection
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     // stdClass
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-    $obj = new stdClass();
-    $obj->c = 3;
-    Assert::assertSame(['c' => 3], $action->execute($obj));
-    // Object with toArray
-    $objToArray = new class {
-<<<<<<< HEAD
-=======
     $obj = new stdClass;
     $obj->c = 3;
     Assert::assertSame(['c' => 3], $action->execute($obj));
     // Object with toArray
     $objToArray = new class
     {
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
         /** @return array<string, int> */
         public function toArray(): array
         {
@@ -55,16 +34,8 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['d' => 4], $action->execute($objToArray));
     // Object with __toArray
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $objUnderscoreToArray = new class {
-=======
     $objUnderscoreToArray = new class
     {
->>>>>>> laraxot/dev
-=======
-    $objUnderscoreToArray = new class {
->>>>>>> laraxot/dev
         /** @return array<string, int> */
         public function __toArray(): array
         {
@@ -73,16 +44,8 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['e' => 5], $action->execute($objUnderscoreToArray));
     // Regular object (public properties)
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $regObj = new class {
-=======
     $regObj = new class
     {
->>>>>>> laraxot/dev
-=======
-    $regObj = new class {
->>>>>>> laraxot/dev
         public int $f = 6;
     };
     Assert::assertSame(['f' => 6], $action->execute($regObj));
@@ -124,15 +87,7 @@ it('checks if value can be cast', function (): void {
     Assert::assertTrue($action->canCast([]));
     Assert::assertTrue($action->canCast(null));
     Assert::assertTrue($action->canCast('str'));
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Assert::assertTrue($action->canCast(new stdClass()));
-=======
     Assert::assertTrue($action->canCast(new stdClass));
->>>>>>> laraxot/dev
-=======
-    Assert::assertTrue($action->canCast(new stdClass()));
->>>>>>> laraxot/dev
 });
 
 it('uses static cast method correctly', function (): void {

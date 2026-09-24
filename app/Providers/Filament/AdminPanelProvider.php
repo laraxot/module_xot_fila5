@@ -5,16 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers\Filament;
 
 use Filament\Panel;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
-=======
->>>>>>> laraxot/dev
-=======
-use Filament\Support\Assets\Css;
-use Filament\Support\Facades\FilamentAsset;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Pages\MainDashboard;
 
 class AdminPanelProvider extends XotBasePanelProvider
@@ -29,10 +21,6 @@ class AdminPanelProvider extends XotBasePanelProvider
         $panel = parent::panel($panel);
 
         // Ensure a dashboard page exists for this panel so the topbar home link works.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         $panel = $panel->pages([
             MainDashboard::class,
         ]);
@@ -50,13 +38,5 @@ class AdminPanelProvider extends XotBasePanelProvider
         );
 
         return $panel;
-<<<<<<< HEAD
-=======
-        return $panel->pages([
-            MainDashboard::class,
-        ]);
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     }
 }

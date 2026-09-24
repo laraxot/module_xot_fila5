@@ -1,52 +1,47 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Header;
 
-// Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
-// use Filament\Actions\Action;
 use Filament\Resources\Pages\ListRecords;
+use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\Pdf\DownloadPdfByViewAction;
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * Export PDF da lista: icona `xot-files.pdf`, solo icona (tooltip), view
+ * `{modulo}::{model}.index.pdf` con RichEditor via `{!! $rating->getTxtHtml() !!}`.
+ */
 class ExportPdfAction extends XotBaseAction
 {
     protected function setUp(): void
     {
         parent::setUp();
-        $this->translateLabel()
+        $this
             ->label('')
-<<<<<<< HEAD
-<<<<<<< HEAD
-            //->tooltip(__('xot::actions.export_pdf.tooltip'))
-=======
-            ->tooltip(__('xot::actions.export_pdf.tooltip'))
->>>>>>> laraxot/dev
-=======
-            //->tooltip(__('xot::actions.export_pdf.tooltip'))
->>>>>>> laraxot/dev
-            ->icon('ui-files.pdf')
+            ->iconButton()
+            ->color('danger')
+            ->icon('xot-files.pdf')
+            ->tooltip(function (): string {
+                $livewire = $this->getLivewire();
+                if (! $livewire instanceof ListRecords) {
+                    return (string) __('xot::export_pdf.tooltip');
+                }
+                $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_pdf.tooltip';
+                $translated = __($key);
+
+                if (\is_string($translated) && $translated !== $key && $translated !== 'export_pdf') {
+                    return $translated;
+                }
+
+                return (string) __('xot::export_pdf.tooltip');
+            })
             ->action(static function (ListRecords $livewire) {
                 $filename =
                     class_basename($livewire).
@@ -54,15 +49,7 @@ class ExportPdfAction extends XotBaseAction
                     collect($livewire->tableFilters)->flatten()->implode('-').
                     '.pdf';
                 $query = $livewire->getFilteredTableQuery();
-<<<<<<< HEAD
-<<<<<<< HEAD
                 if ($query === null) {
-=======
-                if (null === $query) {
->>>>>>> laraxot/dev
-=======
-                if ($query === null) {
->>>>>>> laraxot/dev
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();

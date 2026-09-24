@@ -1,26 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://stackoverflow.com/questions/39213022/custom-laravel-relations
  * @see https://github.com/johnnyfreeman/laravel-custom-relation
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Model;

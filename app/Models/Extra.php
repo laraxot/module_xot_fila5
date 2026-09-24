@@ -13,10 +13,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * Model Extra.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
  * @property string $id
  * @property string $model_type
  * @property string $model_id
@@ -29,23 +25,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null $deleted_by
  *
  * @method static ExtraFactory factory($count = null, $state = [])
-<<<<<<< HEAD
-=======
- * @property string                    $id
- * @property string                    $model_type
- * @property string                    $model_id
- * @property SchemalessAttributes|null $extra_attributes
- * @property Carbon|null               $created_at
- * @property Carbon|null               $updated_at
- * @property string|null               $updated_by
- * @property string|null               $created_by
- * @property Carbon|null               $deleted_at
- * @property string|null               $deleted_by
- *
- * @method static ExtraFactory          factory($count = null, $state = [])
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
  * @method static Builder<static>|Extra newModelQuery()
  * @method static Builder<static>|Extra newQuery()
  * @method static Builder<static>|Extra query()
@@ -67,14 +46,4 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 final class Extra extends BaseExtra {}
-=======
-final class Extra extends BaseExtra
-{
-}
->>>>>>> laraxot/dev
-=======
-final class Extra extends BaseExtra {}
->>>>>>> laraxot/dev

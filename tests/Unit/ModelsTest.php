@@ -12,16 +12,8 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-uses(TestCase::class)->group('xot');
-=======
 uses(TestCase::class);
 
->>>>>>> laraxot/dev
-=======
-uses(TestCase::class)->group('xot');
->>>>>>> laraxot/dev
 it('can create a test user', function () {
     $email = 'test-'.uniqid('', true).'@example.com';
     $user = UserFactory::new()->createOne([
@@ -48,15 +40,7 @@ it('can create a test tenant', function () {
 it('can resolve a sushi module row', function () {
     $module = Module::query()->first();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    if (null === $module) {
-=======
     if ($module === null) {
->>>>>>> laraxot/dev
-=======
-    if (null === $module) {
->>>>>>> laraxot/dev
         Assert::markTestSkipped('No nwidart modules registered in test runtime.');
     }
 

@@ -1,36 +1,14 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-
 use Exception;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
@@ -41,15 +19,6 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Exports\XlsFieldsExporter;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use RuntimeException;
-<<<<<<< HEAD
-=======
-use Filament\Resources\Pages\ListRecords;
-use Modules\Xot\Actions\Export\ExportXlsByCollection;
-use Modules\Xot\Actions\GetTransKeyAction;
-use Modules\Xot\Filament\Actions\XotBaseAction;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 class ExportXlsAction extends XotBaseAction
@@ -59,10 +28,6 @@ class ExportXlsAction extends XotBaseAction
         parent::setUp();
         $this->translateLabel()
             ->label('')
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
             ->iconButton()
             ->color('success')
             ->tooltip(function (): string {
@@ -107,60 +72,6 @@ class ExportXlsAction extends XotBaseAction
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);
-<<<<<<< HEAD
-=======
-            ->tooltip(__('xot::actions.export_xls'))
-            ->icon('heroicon-o-arrow-down-tray')
-            ->action(static function (ListRecords $livewire) {
-                $filename =
-                    class_basename($livewire).
-                    '-'.
-                    collect($livewire->tableFilters)->flatten()->implode('-').
-                    '.xlsx';
-                $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
-                $transKey .= '.fields';
-                $query = $livewire->getFilteredTableQuery();
-                if ($query === null) {
-                    throw new \Exception('Query is null');
-                }
-                $rows = $query->get();
-
-                $resource = $livewire->getResource();
-
-                /** @var array<int, string> $fields */
-                $fields = [];
-                if (method_exists($resource, 'getXlsFields')) {
-                    $rawFields = $resource::getXlsFields($livewire->tableFilters);
-                    if (is_array($rawFields)) {
-                        $fields = array_map(
-                            static function (mixed $field): string {
-                                // Handle objects with __toString method
-                                if (is_object($field) && method_exists($field, '__toString')) {
-                                    $stringValue = $field->__toString();
-
-                                    // Type narrowing for PHPStan Level 10
-                                    return is_string($stringValue) ? $stringValue : '';
-                                }
-
-                                // Handle scalar values
-                                if (is_scalar($field)) {
-                                    return (string) $field;
-                                }
-
-                                return '';
-                            },
-                            $rawFields
-                        );
-                    }
-                    Assert::isArray($fields);
-                } else {
-                    dddx('method xotFields does not exist in '.$resource);
-                }
-
-                return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, array_values($fields));
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
             });
     }
 
@@ -168,10 +79,6 @@ class ExportXlsAction extends XotBaseAction
     {
         return 'export_xls';
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
     /**
      * Chiave stringa = percorso data_get, valore = intestazione esplicita
@@ -203,9 +110,4 @@ class ExportXlsAction extends XotBaseAction
             ->danger()
             ->send();
     }
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 }

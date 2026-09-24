@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
@@ -12,20 +11,8 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-it('gets table columns', function (): void {
-    $probe = new HasTableFunctionsTraitProbe();
-=======
 it('gets table columns', function (): void {
     $probe = new HasTableFunctionsTraitProbe;
->>>>>>> laraxot/dev
-=======
-
-it('gets table columns', function (): void {
-    $probe = new HasTableFunctionsTraitProbe();
->>>>>>> laraxot/dev
 
     $columns = $probe->getTableColumns();
     Assert::assertInstanceOf(TextColumn::class, $columns['name']);
@@ -33,15 +20,7 @@ it('gets table columns', function (): void {
 });
 
 it('gets table actions', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $probe = new HasTableFunctionsCustomSlugProbe();
-=======
     $probe = new HasTableFunctionsCustomSlugProbe;
->>>>>>> laraxot/dev
-=======
-    $probe = new HasTableFunctionsCustomSlugProbe();
->>>>>>> laraxot/dev
 
     $actions = $probe->getTableActions();
     Assert::assertInstanceOf(Action::class, $actions['delete']);
@@ -49,30 +28,14 @@ it('gets table actions', function (): void {
 });
 
 it('gets table bulk actions', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $probe = new HasTableFunctionsTraitProbe();
-=======
     $probe = new HasTableFunctionsTraitProbe;
->>>>>>> laraxot/dev
-=======
-    $probe = new HasTableFunctionsTraitProbe();
->>>>>>> laraxot/dev
 
     $bulkActions = $probe->getTableBulkActions();
     Assert::assertInstanceOf(BulkAction::class, $bulkActions['delete']);
 });
 
 it('has default resource slug', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $probe = new HasTableFunctionsTraitProbe();
-=======
     $probe = new HasTableFunctionsTraitProbe;
->>>>>>> laraxot/dev
-=======
-    $probe = new HasTableFunctionsTraitProbe();
->>>>>>> laraxot/dev
 
     Assert::assertSame('default', $probe->exposeResourceSlug());
 });

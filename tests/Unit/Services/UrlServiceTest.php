@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Url\IsValidUrlAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

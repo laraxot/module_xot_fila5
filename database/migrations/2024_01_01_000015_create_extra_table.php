@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -15,17 +8,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateExtraTable.
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
-=======
-return new class extends XotBaseMigration
-{
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -52,15 +36,7 @@ return new class extends XotBaseMigration
             //    $table->unique(['model_id', 'model_type'], 'morph_unique');
             // }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
-=======
-            if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
->>>>>>> laraxot/dev
-=======
-            if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
->>>>>>> laraxot/dev
                 $table->string('model_id', 36)->index()->change();
             }
         });

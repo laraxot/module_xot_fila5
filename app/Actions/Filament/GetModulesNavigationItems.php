@@ -14,26 +14,11 @@ use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 
-<<<<<<< HEAD
-=======
-
-use function Safe\json_encode;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
@@ -128,15 +113,7 @@ class GetModulesNavigationItems
                      * @var Authenticatable|null $user
                      */
                     $user = Auth::user();
-<<<<<<< HEAD
-<<<<<<< HEAD
                     if ($user === null) {
-=======
-                    if (null === $user) {
->>>>>>> laraxot/dev
-=======
-                    if ($user === null) {
->>>>>>> laraxot/dev
                         return false;
                     }
 

@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Tests\TestCase;
@@ -16,28 +9,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('MetatagData puo essere istanziata', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $metatagData = new MetatagData();
-=======
     $metatagData = new MetatagData;
->>>>>>> laraxot/dev
-=======
-    $metatagData = new MetatagData();
->>>>>>> laraxot/dev
     Assert::assertInstanceOf(MetatagData::class, $metatagData);
 });
 
 test('getFilamentColors restituisce i colori Filament corretti', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $metatagData = new MetatagData();
-=======
     $metatagData = new MetatagData;
->>>>>>> laraxot/dev
-=======
-    $metatagData = new MetatagData();
->>>>>>> laraxot/dev
     $colors = $metatagData->getFilamentColors();
 
     Assert::assertArrayHasKey('danger', $colors);
@@ -51,15 +28,7 @@ test('getFilamentColors restituisce i colori Filament corretti', function (): vo
 });
 
 test('getColors gestisce correttamente i colori personalizzati', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $metatagData = new MetatagData();
-=======
     $metatagData = new MetatagData;
->>>>>>> laraxot/dev
-=======
-    $metatagData = new MetatagData();
->>>>>>> laraxot/dev
     $metatagData->colors = [
         'custom_color' => [
             'key' => 'custom_color',
@@ -79,30 +48,14 @@ test('getColors gestisce correttamente i colori personalizzati', function () {
 });
 
 test('getLogoHeight restituisce il valore corretto', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $metatagData = new MetatagData();
-=======
     $metatagData = new MetatagData;
->>>>>>> laraxot/dev
-=======
-    $metatagData = new MetatagData();
->>>>>>> laraxot/dev
     $metatagData->logo_height = '3em';
 
     Assert::assertSame('3em', $metatagData->getBrandLogoHeight());
 });
 
 test('Le proprieta hanno i valori di default corretti', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $metatagData = new MetatagData();
-=======
     $metatagData = new MetatagData;
->>>>>>> laraxot/dev
-=======
-    $metatagData = new MetatagData();
->>>>>>> laraxot/dev
 
     Assert::assertSame('xot', $metatagData->generator);
     Assert::assertSame('UTF-8', $metatagData->charset);

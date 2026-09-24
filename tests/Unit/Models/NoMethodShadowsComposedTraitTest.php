@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Models;
 
 use Modules\Xot\Tests\TestCase;
-<<<<<<< HEAD
-=======
-use PHPUnit\Framework\Assert;
->>>>>>> laraxot/dev
 use ReflectionClass;
 
 use function Safe\file_get_contents;

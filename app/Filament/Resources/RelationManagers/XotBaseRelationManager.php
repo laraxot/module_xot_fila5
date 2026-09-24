@@ -39,15 +39,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, bool|float|int|string|null> $params
-=======
      * @param  array<string, bool|float|int|string|null>  $params
->>>>>>> laraxot/dev
-=======
-     * @param array<string, bool|float|int|string|null> $params
->>>>>>> laraxot/dev
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -82,7 +74,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     protected static function getResourceClass(): string
     {
-        if (isset(static::$resource) && '' !== static::$resource) {
+        if (isset(static::$resource) && static::$resource !== '') {
             return static::$resource;
         }
 
@@ -101,15 +93,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         Assert::true(class_exists($resource), 'Resource class does not exist: '.$resource);
         Assert::true(is_subclass_of($resource, XotBaseResource::class), 'Resource must extend XotBaseResource: '.$resource);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        /* @var class-string<XotBaseResource> $resource */
-=======
         /** @var class-string<XotBaseResource> $resource */
->>>>>>> laraxot/dev
-=======
-        /* @var class-string<XotBaseResource> $resource */
->>>>>>> laraxot/dev
         static::$resource = $resource;
 
         return static::$resource;
@@ -143,15 +127,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $instance = app($class);
         Assert::isInstanceOf($instance, XotBaseResourceForm::class);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        /* @var XotBaseResourceForm $instance */
-=======
         /** @var XotBaseResourceForm $instance */
->>>>>>> laraxot/dev
-=======
-        /* @var XotBaseResourceForm $instance */
->>>>>>> laraxot/dev
         return $instance->getFormSchema();
     }
 
@@ -233,15 +209,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                if (null === $record) {
-=======
                 if ($record === null) {
->>>>>>> laraxot/dev
-=======
-                if (null === $record) {
->>>>>>> laraxot/dev
                     return false;
                 }
 
@@ -251,15 +219,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                if (null === $record) {
-=======
                 if ($record === null) {
->>>>>>> laraxot/dev
-=======
-                if (null === $record) {
->>>>>>> laraxot/dev
                     return false;
                 }
 
@@ -329,21 +289,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function canDeleteBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
-=======
     public function canDeleteBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
->>>>>>> laraxot/dev
-=======
-    public function canDeleteBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
->>>>>>> laraxot/dev
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -354,21 +302,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function canDetachBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
-=======
     public function canDetachBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
->>>>>>> laraxot/dev
-=======
-    public function canDetachBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
->>>>>>> laraxot/dev
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }

@@ -88,23 +88,7 @@ trait EnumIntegerTrait
     /**
      * Get enum case by integer value.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     *
-     * @param int $value Integer value to find
-     *                   =======
-     * @param int $value Integer value to find
-     *
-     * >>>>>>> laraxot/dev
-     *
-<<<<<<< HEAD
-=======
      * @param  int  $value  Integer value to find
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      * @return static|null Matching case or null
      */
     public static function fromInt(int $value): ?static
@@ -121,21 +105,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is greater than another.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     *
-     * @param int $value Value to compare against
-     *                   =======
-     * @param int $value Value to compare against
-     *                   >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
      * @param  int  $value  Value to compare against
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      */
     public function isGreaterThan(int $value): bool
     {
@@ -145,21 +115,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is less than another.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     *
-     * @param int $value Value to compare against
-     *                   =======
-     * @param int $value Value to compare against
-     *                   >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
      * @param  int  $value  Value to compare against
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      */
     public function isLessThan(int $value): bool
     {
@@ -169,21 +125,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value equals another.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     *
-     * @param int $value Value to compare against
-     *                   =======
-     * @param int $value Value to compare against
-     *                   >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
      * @param  int  $value  Value to compare against
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      */
     public function equals(int $value): bool
     {

@@ -9,39 +9,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseAggregateFactory;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
- * <<<<<<< HEAD.
- *
- * @property string      $id
- * @property int         $bucket
- * @property int         $period
- * @property string      $type
- * @property string      $key
- * @property string|null $key_hash
- * @property string      $aggregate
- * @property string      $value
- * @property int|null    $count
- *
- * @method static PulseAggregateFactory factory($count = null, $state = [])
- *                                                                          =======
- *
- * @property string      $id
- * @property int         $bucket
- * @property int         $period
- * @property string      $type
- * @property string      $key
- * @property string|null $key_hash
- * @property string      $aggregate
- * @property string      $value
- * @property int|null    $count
- *
- * @method static PulseAggregateFactory          factory($count = null, $state = [])
- *                                                                                   >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
  * @property string $id
  * @property int $bucket
  * @property int $period
@@ -53,9 +20,6 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @property int|null $count
  *
  * @method static PulseAggregateFactory factory($count = null, $state = [])
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
  * @method static Builder<static>|PulseAggregate newModelQuery()
  * @method static Builder<static>|PulseAggregate newQuery()
  * @method static Builder<static>|PulseAggregate query()

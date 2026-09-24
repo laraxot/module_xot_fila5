@@ -30,20 +30,6 @@ use Webmozart\Assert\Assert;
  * @property string $icon Icona del widget
  * @property array<string, mixed>|null $data Dati del form
  * @property Schema $form
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
- * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
- * @property string                    $title        Titolo del widget
- * @property string                    $icon         Icona del widget
- * @property array<string, mixed>|null $data         Dati del form
- * @property Schema                    $form
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
  */
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
@@ -195,14 +181,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         }
 
         return Action::make('submit')
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
-=======
->>>>>>> laraxot/dev
-=======
-            ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
->>>>>>> laraxot/dev
             ->submit('save')
             ->view((string) $submit_view);
     }
@@ -216,14 +194,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         return [
             Action::make('save')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
-=======
->>>>>>> laraxot/dev
-=======
-                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
->>>>>>> laraxot/dev
                 ->submit('save'),
         ];
     }

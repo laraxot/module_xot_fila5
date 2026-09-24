@@ -11,16 +11,7 @@ final class PdfBuilderAdapter implements PdfBuilderContract
 {
     public function __construct(
         private object $builder,
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {}
->>>>>>> laraxot/dev
 
     public function format(string $format): PdfBuilderContract
     {
@@ -59,15 +50,7 @@ final class PdfBuilderAdapter implements PdfBuilderContract
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  list<mixed>  $arguments
-=======
-     * @param list<mixed> $arguments
->>>>>>> laraxot/dev
-=======
-     * @param  list<mixed>  $arguments
->>>>>>> laraxot/dev
      */
     private function callBuilderMethod(string $method, array $arguments = []): object
     {

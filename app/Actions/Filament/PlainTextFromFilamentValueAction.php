@@ -15,35 +15,11 @@ class PlainTextFromFilamentValueAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     /**
-     * <<<<<<< HEAD.
-     *
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback Valore di riserva se $value non è testo
-     *                                                         =======
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback valore di riserva se $value non è testo
-     *                                                         >>>>>>> laraxot/dev
-     *                                                         =======
-     *                                                         <<<<<<< HEAD
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback Valore di riserva se $value non è testo
-     *                                                         =======
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback Valore di riserva se $value non è testo
-     *                                                         >>>>>>> laraxot/dev
+     * @param  mixed  $value  Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
+     * @param  string|int|float|bool|\Stringable|null  $fallback  Valore di riserva se $value non è testo
      */
     public function execute(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
-<<<<<<< HEAD
-=======
-    public function execute(mixed $value, mixed $fallback = ''): string
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     {
         if ($value instanceof Htmlable) {
             return strip_tags($value->toHtml());
@@ -68,35 +44,11 @@ class PlainTextFromFilamentValueAction
         return '';
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     /**
-     * <<<<<<< HEAD.
-     *
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback Valore di riserva se $value non è testo
-     *                                                         =======
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback valore di riserva se $value non è testo
-     *                                                         >>>>>>> laraxot/dev
-     *                                                         =======
-     *                                                         <<<<<<< HEAD
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback Valore di riserva se $value non è testo
-     *                                                         =======
-     * @param mixed                                  $value    Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
-     * @param string|int|float|bool|\Stringable|null $fallback Valore di riserva se $value non è testo
-     *                                                         >>>>>>> laraxot/dev
+     * @param  mixed  $value  Valore Filament eterogeneo (Htmlable|string|scalar|\Stringable|HasLabel|null)
+     * @param  string|int|float|bool|\Stringable|null  $fallback  Valore di riserva se $value non è testo
      */
     public static function cast(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
-<<<<<<< HEAD
-=======
-    public static function cast(mixed $value, mixed $fallback = ''): string
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     {
         return app(self::class)->execute($value, $fallback);
     }

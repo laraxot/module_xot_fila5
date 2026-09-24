@@ -15,10 +15,6 @@ use Spatie\LaravelData\Data;
 class NotificationData extends Data
 {
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
      * @param  array<int, string>  $channels  Canali di notifica disponibili
      * @param  string  $default_channel  Canale predefinito
      * @param  bool  $queue  Se accodare le notifiche
@@ -26,18 +22,6 @@ class NotificationData extends Data
      * @param  array<string, mixed>  $broadcast  Configurazione broadcast
      * @param  array<string, mixed>  $slack  Configurazione Slack
      * @param  array<string, mixed>  $telegram  Configurazione Telegram
-<<<<<<< HEAD
-=======
-     * @param array<mixed> $channels        Canali di notifica disponibili
-     * @param string       $default_channel Canale predefinito
-     * @param bool         $queue           Se accodare le notifiche
-     * @param array<mixed> $mail            Configurazione email di notifica
-     * @param array<mixed> $broadcast       Configurazione broadcast
-     * @param array<mixed> $slack           Configurazione Slack
-     * @param array<mixed> $telegram        Configurazione Telegram
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly array $channels = ['mail', 'database'],
@@ -67,30 +51,13 @@ class NotificationData extends Data
             'bot_token' => '',
             'chat_id' => '',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {}
->>>>>>> laraxot/dev
 
     /**
      * Create a new instance of NotificationData with default values.
      */
     public static function make(): self
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
-=======
-        return new self;
->>>>>>> laraxot/dev
     }
 }

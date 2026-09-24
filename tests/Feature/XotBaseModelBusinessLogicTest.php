@@ -15,25 +15,11 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_encode;
 use function Safe\unserialize;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-uses(TestCase::class)->group('xot');
-function createXotBaseModelFixture(): BaseModel
-{
-    return new class extends BaseModel {
-    };
-<<<<<<< HEAD
-=======
 uses(TestCase::class);
 
 function createXotBaseModelFixture(): BaseModel
 {
     return new class extends BaseModel {};
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 }
 
 describe('Xot Base Model Business Logic', function (): void {
@@ -99,15 +85,7 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it can be used as base for other models', function (): void {
         // Arrange
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $module = new Module();
-=======
         $module = new Module;
->>>>>>> laraxot/dev
-=======
-        $module = new Module();
->>>>>>> laraxot/dev
 
         // Act & Assert
         Assert::assertInstanceOf(XotBaseModel::class, $module);

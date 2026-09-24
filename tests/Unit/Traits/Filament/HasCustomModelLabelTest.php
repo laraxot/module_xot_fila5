@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Xot\Tests\Fixtures\Traits\BreadcrumbProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromModelNameProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromPropertyProbe;
@@ -14,14 +13,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev
 it('gets model label from property', function (): void {
     Assert::assertSame('Custom Label', ModelLabelFromPropertyProbe::getModelLabel());
 });

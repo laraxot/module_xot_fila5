@@ -30,18 +30,8 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param LazyCollection<int, mixed> $collection
-     * @param array<int, string>         $fields
-=======
      * @param  LazyCollection<int, mixed>  $collection
      * @param  array<int, string>  $fields
->>>>>>> laraxot/dev
-=======
-     * @param LazyCollection<int, mixed> $collection
-     * @param array<int, string>         $fields
->>>>>>> laraxot/dev
      */
     public function __construct(
         public LazyCollection $collection,
@@ -134,15 +124,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     private function normalizeRow(mixed $row): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (null === $row) {
-=======
         if ($row === null) {
->>>>>>> laraxot/dev
-=======
-        if (null === $row) {
->>>>>>> laraxot/dev
             return [];
         }
 

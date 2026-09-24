@@ -6,26 +6,11 @@ namespace Modules\Xot\Actions\Route;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-
-use function Safe\preg_replace;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
-=======
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 /**
  * Replaces Modules\Xot\Services\RouteDynService::dynamic_route() and its
  * private helpers.
@@ -47,15 +32,7 @@ class RegisterDynamicRoutesAction
     private string $namespaceStart = '';
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<int, array<string, mixed>> $array
-=======
      * @param  array<int, array<string, mixed>>  $array
->>>>>>> laraxot/dev
-=======
-     * @param array<int, array<string, mixed>> $array
->>>>>>> laraxot/dev
      */
     public function execute(
         array $array,
@@ -65,15 +42,7 @@ class RegisterDynamicRoutesAction
     ): void {
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (null !== $namespaceStart) {
-=======
         if ($namespaceStart !== null) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $namespaceStart) {
->>>>>>> laraxot/dev
             $this->namespaceStart = $namespaceStart;
         }
 
@@ -92,17 +61,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-     *
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
-     *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function getGroupOpts(array $v, ?string $namespace): array
@@ -115,15 +74,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getPrefix(array $v, ?string $namespace): string
     {
@@ -136,15 +87,7 @@ class RegisterDynamicRoutesAction
         Assert::string($name = $v['name']);
         $prefix = mb_strtolower($name);
         $paramName = $this->getParamName($v, $namespace);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ('' !== $paramName) {
-=======
         if ($paramName !== '') {
->>>>>>> laraxot/dev
-=======
-        if ('' !== $paramName) {
->>>>>>> laraxot/dev
             return $prefix.'/{'.$paramName.'}';
         }
 
@@ -152,15 +95,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getAs(array $v, ?string $_namespace): string
     {
@@ -182,15 +117,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getNamespace(array $v, ?string $namespace): ?string
     {
@@ -202,15 +129,7 @@ class RegisterDynamicRoutesAction
 
         Assert::string($namespace = $v['name']);
         $namespace = str_replace(['{', '}'], '', $namespace);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ('' === $namespace) {
-=======
         if ($namespace === '') {
->>>>>>> laraxot/dev
-=======
-        if ('' === $namespace) {
->>>>>>> laraxot/dev
             return null;
         }
 
@@ -218,15 +137,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getAct(array $v, ?string $_namespace): string
     {
@@ -252,15 +163,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getParamName(array $v, ?string $_namespace): string
     {
@@ -278,17 +181,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-     *
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
-     *
->>>>>>> laraxot/dev
      * @return array<int, string>
      */
     private function getParamsName(array $v, ?string $namespace): array
@@ -299,17 +192,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-     *
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
-     *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function getResourceOpts(array $v, ?string $namespace): array
@@ -328,15 +211,7 @@ class RegisterDynamicRoutesAction
             $opts['only'] = $v['only'];
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ('' === $paramName && ! isset($opts['only'])) {
-=======
         if ($paramName === '' && ! isset($opts['only'])) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $paramName && ! isset($opts['only'])) {
->>>>>>> laraxot/dev
             $opts['only'] = ['index'];
         }
 
@@ -346,15 +221,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getController(array $v, ?string $_namespace): string
     {
@@ -373,15 +240,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getUri(array $v, ?string $_namespace): string
     {
@@ -391,15 +250,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function getUses(array $v, ?string $namespace): string
     {
@@ -410,17 +261,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-     *
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
-     *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function getCallback(array $v, ?string $namespace, ?string $curr): array
@@ -428,15 +269,7 @@ class RegisterDynamicRoutesAction
         Assert::string($name = $v['name']);
         $as = Str::slug($name);
         $uses = $this->getUses($v, $namespace);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $uses = null !== $curr
-=======
         $uses = $curr !== null
->>>>>>> laraxot/dev
-=======
-        $uses = null !== $curr
->>>>>>> laraxot/dev
             ? '\\'.$this->namespaceStart.'\\'.$curr.'\\'.$uses
             : '\\'.$this->namespaceStart.'\\'.$uses;
 
@@ -444,25 +277,11 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * @param array<string, mixed> $v
-     */
-    private function createRouteResource(array $v, ?string $namespace): void
-    {
-        if (null === $v['name']) {
-<<<<<<< HEAD
-=======
      * @param  array<string, mixed>  $v
      */
     private function createRouteResource(array $v, ?string $namespace): void
     {
         if ($v['name'] === null) {
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
             return;
         }
         Assert::string($name = $v['name']);
@@ -473,15 +292,7 @@ class RegisterDynamicRoutesAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $v
-=======
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $v
->>>>>>> laraxot/dev
      */
     private function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -492,31 +303,12 @@ class RegisterDynamicRoutesAction
         $subNamespace = $this->getNamespace($v, $namespace);
         $curr = $curr ?? $subNamespace;
         Assert::isArray($subs = $v['subs']);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $typedSubs = [];
-        foreach ($subs as $sub) {
-            Assert::isArray($sub);
-            $typedSubs[] = $this->toStringKeyed($sub);
-        }
-        $this->execute($typedSubs, $subNamespace, null, $curr);
-    }
-
-    /**
-     * @param array<string, mixed> $v
-<<<<<<< HEAD
-=======
         /** @var array<int, array<string, mixed>> $subs */
         $this->execute($subs, $subNamespace, null, $curr);
     }
 
     /**
      * @param  array<string, mixed>  $v
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      */
     private function createRouteActs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -527,70 +319,22 @@ class RegisterDynamicRoutesAction
         $controller = $this->getController($v, $namespace);
         foreach ($v['acts'] as $v1) {
             Assert::isArray($v1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            $act = $this->toStringKeyed($v1);
-            $act['controller'] = $controller;
-
-            $method = app(GetRouteMethodAction::class)->execute($act, $namespace);
-            $uri = $this->getUri($act, $namespace);
-            $callback = $this->getCallback($act, $namespace, $curr);
-<<<<<<< HEAD
-=======
             /** @var array<string, mixed> $v1 */
             $v1['controller'] = $controller;
 
             $method = app(GetRouteMethodAction::class)->execute($v1, $namespace);
             $uri = $this->getUri($v1, $namespace);
             $callback = $this->getCallback($v1, $namespace, $curr);
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
             Route::match($method, $uri, $callback);
         }
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * @param array<array-key, mixed> $data
-     *
-     * @return array<string, mixed>
-     */
-    private function toStringKeyed(array $data): array
-    {
-        $typed = [];
-        foreach ($data as $key => $value) {
-            Assert::string($key);
-            $typed[$key] = $value;
-        }
-
-        return $typed;
-    }
-
-    /**
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      * @return array<string, string>
      */
     private function prefixedResourceNames(string $prefix): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ('.' === mb_substr($prefix, -1)) {
-=======
         if (mb_substr($prefix, -1) === '.') {
->>>>>>> laraxot/dev
-=======
-        if ('.' === mb_substr($prefix, -1)) {
->>>>>>> laraxot/dev
             $prefix = mb_substr($prefix, 0, -1);
         }
 

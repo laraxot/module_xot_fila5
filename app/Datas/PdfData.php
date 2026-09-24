@@ -1,25 +1,10 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /*
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 namespace Modules\Xot\Datas;
 
 use Illuminate\Database\Eloquent\Model;
@@ -163,22 +148,7 @@ class PdfData extends Data
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * <<<<<<< HEAD.
-     *
-     * @param array<string, mixed> $params
-     *                                     =======
-     * @param array<string, mixed> $params
-     *                                     >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-     * @param array<string, mixed> $params
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
+     * @param  array<string, mixed>  $params
      */
     public function view(string $view, array $params = []): self
     {

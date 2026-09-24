@@ -14,15 +14,7 @@ class GetModulePathByGeneratorAction
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');
         try {
             $res = module_path($moduleName, $relativePath);
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($res !== '') {
-=======
-            if ('' !== $res) {
->>>>>>> laraxot/dev
-=======
-            if ($res !== '') {
->>>>>>> laraxot/dev
                 return $res;
             }
         } catch (\Exception|\Error $e) {

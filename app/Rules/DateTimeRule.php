@@ -18,24 +18,8 @@ class DateTimeRule implements ValidationRule
     /**
      * Run the validation rule.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * <<<<<<< HEAD
-     *
-     * @param mixed                                                       $value Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
-     * @param \Closure(string, string|null=): PotentiallyTranslatedString $fail
-     *                                                                           =======
-     * @param mixed                                                       $value Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
-     * @param \Closure(string, string|null=): PotentiallyTranslatedString $fail
-     *                                                                           >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
+     * @param  mixed  $value  Valore sotto validazione (atteso stringa nel formato 'd/m/Y H:i')
      * @param  \Closure(string, string|null=): PotentiallyTranslatedString  $fail
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      */
     public function validate(string $attribute, mixed $value, \Closure $fail): void
     {

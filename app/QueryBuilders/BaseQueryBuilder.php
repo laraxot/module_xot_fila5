@@ -36,7 +36,7 @@ abstract class BaseQueryBuilder
     /**
      * Create a new query builder instance.
      *
-     * @param Builder<T>|null $query
+     * @param  Builder<T>|null  $query
      */
     public function __construct(?Builder $query = null)
     {
@@ -77,16 +77,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition to the query.
-<<<<<<< HEAD
-<<<<<<< HEAD
      *
-     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
-=======
->>>>>>> laraxot/dev
-=======
-     *
-     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
->>>>>>> laraxot/dev
+     * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
      */
     public function where(string $column, mixed $value): static
     {
@@ -97,16 +89,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition with operator to the query.
-<<<<<<< HEAD
-<<<<<<< HEAD
      *
-     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
-=======
->>>>>>> laraxot/dev
-=======
-     *
-     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
->>>>>>> laraxot/dev
+     * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
      */
     public function whereOperator(string $column, string $operator, mixed $value): static
     {
@@ -118,7 +102,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where in condition to the query.
      *
-     * @param array<mixed> $values
+     * @param  array<mixed>  $values
      */
     public function whereIn(string $column, array $values): static
     {
@@ -130,7 +114,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where not in condition to the query.
      *
-     * @param array<mixed> $values
+     * @param  array<mixed>  $values
      */
     public function whereNotIn(string $column, array $values): static
     {
@@ -162,7 +146,7 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where between condition to the query.
      *
-     * @param array<int, mixed> $values
+     * @param  array<int, mixed>  $values
      */
     public function whereBetween(string $column, array $values): static
     {
@@ -176,7 +160,7 @@ abstract class BaseQueryBuilder
      */
     public function orderBy(string $column, string $direction = 'asc'): static
     {
-        if ('asc' !== $direction && 'desc' !== $direction) {
+        if ($direction !== 'asc' && $direction !== 'desc') {
             $direction = 'asc';
         }
 
@@ -216,7 +200,7 @@ abstract class BaseQueryBuilder
     /**
      * Get eager loading relations.
      *
-     * @param array<string> $relations
+     * @param  array<string>  $relations
      */
     public function with(array $relations): static
     {

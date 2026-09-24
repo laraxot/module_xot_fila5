@@ -14,10 +14,4 @@ use Filament\Tables\Columns\TextColumn as FilamentTextColumn;
  *
  * @method static static make(string $name) Create a new instance of the column
  */
-<<<<<<< HEAD
 abstract class XotBaseTextColumn extends FilamentTextColumn {}
-=======
-abstract class XotBaseTextColumn extends FilamentTextColumn
-{
-}
->>>>>>> laraxot/dev

@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
@@ -25,41 +18,20 @@ test('safe array cast action works', function (): void {
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     Assert::assertSame(['c' => 3], $action->execute((object) ['c' => 3]));
     Assert::assertSame(['scalar'], $action->execute('scalar'));
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-    Assert::assertSame(['d' => 4], $action->execute(new class {
-        public int $d = 4;
-    }));
-    Assert::assertSame(['e' => 5], $action->execute(new class {
-<<<<<<< HEAD
-=======
     Assert::assertSame(['d' => 4], $action->execute(new class
     {
         public int $d = 4;
     }));
     Assert::assertSame(['e' => 5], $action->execute(new class
     {
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
         /** @return array<string, int> */
         public function toArray(): array
         {
             return ['e' => 5];
         }
     }));
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Assert::assertSame(['f' => 6], $action->execute(new class {
-=======
     Assert::assertSame(['f' => 6], $action->execute(new class
     {
->>>>>>> laraxot/dev
-=======
-    Assert::assertSame(['f' => 6], $action->execute(new class {
->>>>>>> laraxot/dev
         /** @return array<string, int> */
         public function __toArray(): array
         {
@@ -99,16 +71,8 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(123, $action->execute(' +123 '));
     Assert::assertSame(1, $action->execute(true));
     Assert::assertSame(789, $action->execute(['789']));
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Assert::assertSame(1011, $action->execute(new class {
-=======
     Assert::assertSame(1011, $action->execute(new class
     {
->>>>>>> laraxot/dev
-=======
-    Assert::assertSame(1011, $action->execute(new class {
->>>>>>> laraxot/dev
         public function __toString(): string
         {
             return '1011';

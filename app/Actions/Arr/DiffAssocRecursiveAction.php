@@ -14,33 +14,7 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * <<<<<<< HEAD.
-     *
-     * @param array<int|string, mixed> $data
-     *                                       =======
-     * @param array<int|string, mixed> $data
-     *
-     * >>>>>>> laraxot/dev
-     * =======
-     * <<<<<<< HEAD
-     * @param array<int|string, mixed> $data
-     *                                       =======
-     * @param array<int|string, mixed> $data
-     *
-     * >>>>>>> laraxot/dev
-     *
-     * >>>>>>> .merge_file_5Dfugq
-     *
-<<<<<<< HEAD
-=======
      * @param  array<int|string, mixed>  $data
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -63,27 +37,8 @@ class DiffAssocRecursiveAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-     * <<<<<<< HEAD.
-     *
-     * @param array<int|string, mixed> $arr_1
-     * @param array<int|string, mixed> $arr_2
-     *                                        =======
-     * @param array<int|string, mixed> $arr_1
-     * @param array<int|string, mixed> $arr_2
-     *
-     * >>>>>>> laraxot/dev
-     *
-<<<<<<< HEAD
-=======
      * @param  array<int|string, mixed>  $arr_1
      * @param  array<int|string, mixed>  $arr_2
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      * @return array<int|string, array<int|string, mixed>>
      */
     public function execute(array $arr_1, array $arr_2): array
@@ -91,15 +46,7 @@ class DiffAssocRecursiveAction
         $coll_1 = collect(self::fixType($arr_1));
         $arr_2 = self::fixType($arr_2);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
-=======
-        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
->>>>>>> laraxot/dev
-=======
-        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
->>>>>>> laraxot/dev
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {

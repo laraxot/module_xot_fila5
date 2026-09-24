@@ -16,15 +16,7 @@ class RelationAction
     /**
      * Undocumented function.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-=======
->>>>>>> laraxot/dev
-=======
-     *
->>>>>>> laraxot/dev
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function execute(Model $model, array $data): void
     {

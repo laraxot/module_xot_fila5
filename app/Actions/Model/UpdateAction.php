@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 /**
  * --- usata ricorsivamente.
  */
@@ -24,18 +17,8 @@ class UpdateAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $rules
-=======
-     * @param array<string, mixed> $data
-     * @param array<string, mixed> $rules
->>>>>>> laraxot/dev
-=======
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $rules
->>>>>>> laraxot/dev
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -44,15 +27,7 @@ class UpdateAction
 
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($model->getKey() === null) {
-=======
-        if (null === $model->getKey()) {
->>>>>>> laraxot/dev
-=======
-        if ($model->getKey() === null) {
->>>>>>> laraxot/dev
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();

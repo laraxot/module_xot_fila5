@@ -105,24 +105,7 @@ class ModuleService
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (Exception) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-                    try {
-                        $reflection_class = new \ReflectionClass($tmp->class);
-                        if (! $reflection_class->isAbstract()) {
-                            $data[$tmp->name] = $tmp->class;
-                        }
-                    } catch (\Throwable) {
-                        // Ignore reflection errors
-                    }
-<<<<<<< HEAD
-=======
                     // Ignore reflection errors
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
                 }
             }
         }

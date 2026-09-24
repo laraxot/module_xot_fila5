@@ -23,14 +23,7 @@ use Modules\Xot\Actions\Factory\GetPropertiesFromMethodsByModelAction;
 use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 use Modules\Xot\Actions\File\FileAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
-=======
->>>>>>> laraxot/dev
-=======
-use Modules\Xot\Actions\Route\IsAdminRouteAction;
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Console\Commands\AddStrictTypesDeclarationCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
@@ -84,13 +77,6 @@ use Modules\Xot\Models\XotBaseMorphPivot;
 use Modules\Xot\Models\XotBasePivot;
 use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Providers\FilamentOptimizationServiceProvider;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\Xot\Actions\Route\IsAdminRouteAction;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\QueryBuilders\BaseQueryBuilder;
 use Modules\Xot\States\XotBaseState;
 use Modules\Xot\Tests\FilamentSchemaCoverage;
@@ -99,36 +85,15 @@ use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasCsrfToken;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-
-use function Safe\ob_get_clean;
-use function Safe\ob_start;
-
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
-<<<<<<< HEAD
-=======
-use Symfony\Component\Console\Input\ArrayInput;
-use Symfony\Component\Console\Output\NullOutput;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-xot-db');
 
@@ -370,28 +335,12 @@ describe('Xot execute coverage floor 50', function (): void {
 
             $exitCode = $command->run(
                 new ArrayInput(['--analyze' => true, '--verbose' => true]),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                new NullOutput()
-=======
                 new NullOutput
->>>>>>> laraxot/dev
-=======
-                new NullOutput()
->>>>>>> laraxot/dev
             );
             Assert::assertSame(0, $exitCode);
         } finally {
             File::swap($original);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            \Mockery::close();
-=======
             Mockery::close();
->>>>>>> laraxot/dev
-=======
-            \Mockery::close();
->>>>>>> laraxot/dev
         }
     });
 
@@ -586,7 +535,7 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertNotEmpty($resource::getModuleName());
             Assert::assertNotEmpty($resource::getPages());
             Assert::assertNotEmpty($resource::getRelations());
-            
+
             try {
                 Assert::assertNotEmpty($resource::getInfolistSchema());
             } catch (\Throwable) {
@@ -793,15 +742,7 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             $search->run(
                 new ArrayInput(['search' => 'xot-coverage-needle-impossible', '--tables' => ['cache']]),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                new NullOutput()
-=======
                 new NullOutput
->>>>>>> laraxot/dev
-=======
-                new NullOutput()
->>>>>>> laraxot/dev
             );
         } catch (\Throwable) {
         }
@@ -1033,7 +974,7 @@ describe('Xot execute coverage floor 50', function (): void {
         $decorator->renderer(static function (\Throwable $e, Request $request): Response {
             return response('handled', 200);
         });
-        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
+        $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
         $decorator->report(new \RuntimeException('cov'));
         Assert::assertTrue($reported);
         Assert::assertSame(200, $decorator->render(Request::create('/'), new \RuntimeException('r'))->getStatusCode());
@@ -1066,15 +1007,7 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             Assert::assertSame(0, $cmd->run(
                 new ArrayInput(['--module' => 'Xot', '--dry-run' => true]),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                new NullOutput()
-=======
                 new NullOutput
->>>>>>> laraxot/dev
-=======
-                new NullOutput()
->>>>>>> laraxot/dev
             ));
         } catch (\Throwable) {
         }

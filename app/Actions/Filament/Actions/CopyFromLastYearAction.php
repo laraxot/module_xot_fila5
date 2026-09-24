@@ -37,16 +37,7 @@ class CopyFromLastYearAction extends XotBaseAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<array-key, mixed>  $input
-=======
-     * @param array<array-key, mixed> $input
-     *
->>>>>>> laraxot/dev
-=======
-     * @param  array<array-key, mixed>  $input
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private static function normalizeStringKeyArray(array $input): array
@@ -66,18 +57,8 @@ class CopyFromLastYearAction extends XotBaseAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $arguments
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
-=======
-     * @param  array<string, mixed>  $arguments
-     * @param  array<string, mixed>  $data
->>>>>>> laraxot/dev
      */
     public function execute(array $arguments, array $data): void
     {
@@ -89,15 +70,7 @@ class CopyFromLastYearAction extends XotBaseAction
             return;
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! is_string($year) && $year !== null) {
-=======
-        if (! is_string($year) && null !== $year) {
->>>>>>> laraxot/dev
-=======
-        if (! is_string($year) && $year !== null) {
->>>>>>> laraxot/dev
             return;
         }
 

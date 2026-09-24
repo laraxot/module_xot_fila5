@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Factories\Factory;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\MorphPivot as EloquentMorphPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -24,20 +17,6 @@ use function Safe\preg_match;
  * Centralizes common MorphPivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
- * @property string|int      $id
- * @property string          $morph_type
- * @property string|int      $morph_id
- * @property string|null     $related_type
- * @property string|int|null $related_id
- * @property Carbon|null     $created_at
- * @property Carbon|null     $updated_at
- * @property Carbon|null     $deleted_at
-<<<<<<< HEAD
-=======
  * @property string|int $id
  * @property string $morph_type
  * @property string|int $morph_id
@@ -46,9 +25,6 @@ use function Safe\preg_match;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
  * @property string|int|null $deleted_by
@@ -56,13 +32,6 @@ use function Safe\preg_match;
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
     use HasXotFactory;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     use Updater;
 
     /** @var bool */
@@ -121,15 +90,7 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         // Extract module name from namespace: Modules\Rating\... → rating
         $namespace = static::class;
         $matches = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
-=======
         if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
->>>>>>> laraxot/dev
-=======
-        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
->>>>>>> laraxot/dev
             return strtolower($matches[1]);
         }
 

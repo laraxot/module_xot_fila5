@@ -40,24 +40,11 @@ class GetCurrentRouteViewAction
 
         return collect(explode('\\', $controller))
             ->reject(static fn (string $part): bool => in_array($part, ['Module', 'Item'], true))
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
             ->map(static function (string $part) use ($params): string {
                 $part = Str::snake($part);
                 $value = $params[$part] ?? $part;
 
                 return is_scalar($value) || $value instanceof \Stringable ? (string) $value : $part;
-<<<<<<< HEAD
-=======
-            ->map(static function (string $part) use ($params): mixed {
-                $part = Str::snake($part);
-
-                return $params[$part] ?? $part;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
             })
             ->implode('.');
     }

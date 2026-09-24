@@ -16,13 +16,9 @@
 ### Implementazione
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -73,11 +69,7 @@ return [
 ## XotBaseResource
 
 ### Regole di Estensione
-<<<<<<< HEAD
 1. Implementare `public function getFormSchema(): array`
-=======
-1. Implementare `public static function getFormSchema(): array`
->>>>>>> laraxot/dev
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -89,13 +81,9 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [

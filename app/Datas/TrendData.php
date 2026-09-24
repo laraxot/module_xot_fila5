@@ -13,13 +13,6 @@ class TrendData extends Data
 {
     public string $date;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     /** @var int|float|string|null Vendor TrendValue::$aggregate is mixed; DB aggregates resolve to scalar|null */
-=======
->>>>>>> laraxot/dev
-=======
-    /** @var int|float|string|null Vendor TrendValue::$aggregate is mixed; DB aggregates resolve to scalar|null */
->>>>>>> laraxot/dev
     public mixed $aggregate;
 }

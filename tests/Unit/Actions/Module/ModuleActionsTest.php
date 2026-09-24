@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
@@ -15,14 +14,6 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev
 test('get module name by class action works', function (): void {
     $action = app(GetModuleNameByClassAction::class);
     Assert::assertSame('User', $action->execute('Modules\User\Models\User'));

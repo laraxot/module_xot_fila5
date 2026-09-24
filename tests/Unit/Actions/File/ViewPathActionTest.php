@@ -4,25 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-uses(TestCase::class)->group('xot');
-it('resolves view path correctly', function (): void {
-=======
 uses(TestCase::class);
 
 it('calculates view path correctly', function (): void {
@@ -40,11 +29,6 @@ it('calculates view path correctly', function (): void {
         ->andReturnUsing(fn (string $path): string => $path);
 
     app()->instance(FixPathAction::class, $fixMock);
->>>>>>> laraxot/dev
-=======
-uses(TestCase::class)->group('xot');
-it('resolves view path correctly', function (): void {
->>>>>>> laraxot/dev
     $action = app(ViewPathAction::class);
 
     $result = $action->execute('Xot::dashboard.index');

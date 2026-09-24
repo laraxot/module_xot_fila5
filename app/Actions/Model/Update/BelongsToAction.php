@@ -32,21 +32,9 @@ class BelongsToAction
          * }
          */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
             $related_id = reset($relationDTO->data);
             if ($related_id === null) {
-=======
-        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
-            $related_id = reset($relationDTO->data);
-            if (null === $related_id) {
->>>>>>> laraxot/dev
-=======
-        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
-            $related_id = reset($relationDTO->data);
-            if ($related_id === null) {
->>>>>>> laraxot/dev
                 return;
             }
 
@@ -68,15 +56,7 @@ class BelongsToAction
         if (Arr::isAssoc($relationDTO->data)) {
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($sub === null) {
-=======
-            if (null === $sub) {
->>>>>>> laraxot/dev
-=======
-            if ($sub === null) {
->>>>>>> laraxot/dev
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 

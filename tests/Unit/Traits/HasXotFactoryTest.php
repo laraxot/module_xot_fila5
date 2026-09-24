@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;

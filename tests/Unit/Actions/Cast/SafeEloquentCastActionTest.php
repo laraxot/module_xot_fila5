@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Tests\TestCase;
@@ -50,18 +43,8 @@ it('casts generic typed getter and validation helpers', function (): void {
     Assert::assertSame('Mario', $action->getTypedAttribute($model, 'name', 'string'));
     Assert::assertSame(42, $action->getTypedAttribute($model, 'age', 'int'));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 42 === $v, 0);
-    $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 0 === $v, 0);
-=======
     $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => $v === 42, 0);
     $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => $v === 0, 0);
->>>>>>> laraxot/dev
-=======
-    $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 42 === $v, 0);
-    $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 0 === $v, 0);
->>>>>>> laraxot/dev
 
     Assert::assertSame(42, $ok);
     Assert::assertSame(0, $ko);
@@ -71,15 +54,7 @@ it('checks condition and fallback helpers', function (): void {
     [$action, $model] = safeEloquentCastFixture();
     $model->setAttribute('nickname', 'SuperMario');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (mixed $v): bool => '42' === SafeStringCastAction::cast($v)));
-=======
-    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (mixed $v): bool => SafeStringCastAction::cast($v) === '42'));
->>>>>>> laraxot/dev
-=======
-    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (mixed $v): bool => '42' === SafeStringCastAction::cast($v)));
->>>>>>> laraxot/dev
+    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (int $v): bool => SafeStringCastAction::cast($v) === '42'));
     Assert::assertSame('Mario', $action->getAttributeWithFallback($model, 'name', 'missing', 'string'));
     Assert::assertSame('SuperMario', $action->getAttributeWithFallback($model, 'missing', 'nickname', 'string'));
 });

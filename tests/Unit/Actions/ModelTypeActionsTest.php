@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
 use Modules\Xot\Actions\GetModelTypeByModelAction;
@@ -12,14 +11,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev
 it('resolves model types correctly', function (): void {
     Config::set('morph_map', ['log' => Log::class]);
 
@@ -27,16 +18,6 @@ it('resolves model types correctly', function (): void {
     Assert::assertSame(Log::class, $classAction->execute('log'));
 
     $typeAction = app(GetModelTypeByModelAction::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $result = $typeAction->execute(new class extends Log implements ModelContract {
-    });
-=======
     $result = $typeAction->execute(new class extends Log implements ModelContract {});
->>>>>>> laraxot/dev
-=======
-    $result = $typeAction->execute(new class extends Log implements ModelContract {
-    });
->>>>>>> laraxot/dev
     Assert::assertIsString($result);
 });

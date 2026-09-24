@@ -22,15 +22,7 @@ return [
         ],
         'label' => 'Pdf',
         'sort' => 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
         'icon' => 'xot-files.pdf',
-=======
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
-=======
-        'icon' => 'xot-files.pdf',
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [

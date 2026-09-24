@@ -5,26 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\ModelClass;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\file;
 
-<<<<<<< HEAD
-=======
-
-use function Safe\file;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 class GetMethodBodyAction
 {
     use QueueableAction;

@@ -6,20 +6,10 @@ return [
     'navigation' => [
         'name' => 'Comandi Artisan',
         'plural' => 'Comandi Artisan',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'group' => [
             'name' => 'Sistema',
             'description' => 'Gestione dei comandi Artisan',
         ],
-<<<<<<< HEAD
-=======
-        'group' => ['name' => 'Sistema', 'description' => 'Gestione dei comandi Artisan'],
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
         'sort' => 28,
         'label' => 'Comandi Artisan',
         'icon' => 'heroicon-o-command-line',
@@ -29,10 +19,6 @@ return [
             'title' => 'Gestione Comandi Artisan',
             'description' => 'Esegui e gestisci i comandi Artisan',
             'commands' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
                 'migrate' => [
                     'label' => 'Migrazione Database',
                     'description' => 'Esegue le migrazioni del database',
@@ -128,37 +114,11 @@ return [
             'icon' => 'cancel',
             'tooltip' => 'cancel',
         ],
-<<<<<<< HEAD
-=======
-                'migrate' => ['label' => 'Migrazione Database', 'description' => 'Esegue le migrazioni del database'],
-                'optimize' => ['label' => 'Ottimizzazione', 'description' => 'Ottimizza le prestazioni dell\'applicazione'],
-                'cache' => ['label' => 'Gestione Cache', 'description' => 'Comandi per la gestione della cache'],
-            ],
-            'notifications' => ['success' => 'Comando eseguito con successo', 'error' => 'Errore nell\'esecuzione del comando'],
-        ],
-    ],
-    'actions' => [
-        'queue_restart' => ['label' => 'queue_restart', 'icon' => 'queue_restart', 'tooltip' => 'queue_restart'],
-        'event_cache' => ['label' => 'event_cache', 'icon' => 'event_cache', 'tooltip' => 'event_cache'],
-        'route_cache' => ['label' => 'route_cache', 'icon' => 'route_cache', 'tooltip' => 'route_cache'],
-        'config_cache' => ['label' => 'config_cache', 'icon' => 'config_cache', 'tooltip' => 'config_cache'],
-        'view_cache' => ['label' => 'view_cache', 'icon' => 'view_cache', 'tooltip' => 'view_cache'],
-        'filament_optimize' => ['label' => 'filament_optimize', 'icon' => 'filament_optimize', 'tooltip' => 'filament_optimize'],
-        'filament_upgrade' => ['label' => 'filament_upgrade', 'icon' => 'filament_upgrade', 'tooltip' => 'filament_upgrade'],
-        'migrate' => ['label' => 'migrate', 'icon' => 'migrate', 'tooltip' => 'migrate'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     ],
     'title' => 'artisan commands manager',
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -177,13 +137,5 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-=======
-        'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
-        'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     ],
 ];

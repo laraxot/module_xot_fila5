@@ -9,7 +9,6 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Xot\Filament\Resources\ExtraResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -20,28 +19,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->sortable()->label('ID'),
-            'model_type' => TextColumn::make('model_type')->searchable()->label('Model Type'),
-            'model_id' => TextColumn::make('model_id')->sortable()->label('Model ID'),
-            'extra_attributes' => TextColumn::make('extra_attributes')->searchable()->label('Extra Attributes'),
-        ];
-    }
-
-<<<<<<< HEAD
-=======
-   
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<BaseFilter>
      */

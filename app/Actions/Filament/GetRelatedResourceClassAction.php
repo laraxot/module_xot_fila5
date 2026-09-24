@@ -4,14 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
-=======
->>>>>>> laraxot/dev
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
@@ -58,7 +51,7 @@ class GetRelatedResourceClassAction
             return null;
         }
 
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
+        /** @var class-string<Model> $modelClass */
         $modelClass = $page->getModelClass();
         $moduleName = Str::between($modelClass, 'Modules\\', '\Models\\');
         $modelName = class_basename($modelClass);

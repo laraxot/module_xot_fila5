@@ -12,16 +12,8 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-uses(TestCase::class)->group('xot');
-=======
 uses(TestCase::class);
 
->>>>>>> laraxot/dev
-=======
-uses(TestCase::class)->group('xot');
->>>>>>> laraxot/dev
 /**
  * @return list<array{0: string, 1: string}>
  */
@@ -99,15 +91,7 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
 
     $body = trim($m[1]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
-=======
     return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
->>>>>>> laraxot/dev
-=======
-    return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
->>>>>>> laraxot/dev
 }
 
 test('every concrete filament resource has populated schemas and table classes', function (): void {

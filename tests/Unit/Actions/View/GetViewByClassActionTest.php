@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Tests\TestCase;

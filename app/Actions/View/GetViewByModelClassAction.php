@@ -22,10 +22,6 @@ class GetViewByModelClassAction
         $model_name = class_basename($model_class);
         $model_name = Str::of($model_name)->snake()->toString();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         $view=$module_low.'::'.$model_name.$suffix;
         
         if(!view()->exists($view)){
@@ -33,11 +29,5 @@ class GetViewByModelClassAction
         }
         
         return $view;
-<<<<<<< HEAD
-=======
-        return $module_low.'::'.$model_name.$suffix;
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     }
 }

@@ -63,10 +63,4 @@ describe('ExportXlsxAction — export nativo generico su getXlsFields', function
     });
 });
 
-<<<<<<< HEAD
 class ExporterStub extends XotBaseExporter {}
-=======
-class ExporterStub extends XotBaseExporter
-{
-}
->>>>>>> laraxot/dev

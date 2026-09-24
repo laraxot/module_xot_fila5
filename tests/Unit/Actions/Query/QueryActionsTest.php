@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\Xot\Actions\Query\StartQueryLogAction;
 use Modules\Xot\Tests\TestCase;

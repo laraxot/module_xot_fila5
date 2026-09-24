@@ -15,23 +15,10 @@ use Spatie\LaravelData\Data;
 final class AuthData extends Data
 {
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
      * @param  array<string>  $guards
      * @param  array<string, array<string, string>>  $providers
      * @param  array<string, bool|int|string>  $throttle
      * @param  array<string, bool>  $social
-<<<<<<< HEAD
-=======
-     * @param array<string>                        $guards
-     * @param array<string, array<string, string>> $providers
-     * @param array<string, bool|int|string>       $throttle
-     * @param array<string, bool>                  $social
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly string $guard = 'web',
@@ -52,30 +39,13 @@ final class AuthData extends Data
             'twitter' => false,
             'github' => false,
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {}
->>>>>>> laraxot/dev
 
     /**
      * Create a new instance of AuthData with default values.
      */
     public static function make(): self
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
-=======
-        return new self;
->>>>>>> laraxot/dev
     }
 }

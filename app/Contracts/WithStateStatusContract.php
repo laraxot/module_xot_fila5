@@ -11,14 +11,4 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @phpstan-require-extends Model
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface WithStateStatusContract {}
-=======
-interface WithStateStatusContract
-{
-}
->>>>>>> laraxot/dev
-=======
-interface WithStateStatusContract {}
->>>>>>> laraxot/dev

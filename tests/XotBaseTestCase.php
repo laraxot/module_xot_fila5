@@ -23,18 +23,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
-use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 use Safe\Exceptions\FilesystemException;
-=======
->>>>>>> laraxot/dev
-=======
-use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
-use PHPUnit\Framework\MockObject\Rule\InvokedCount;
-use Safe\Exceptions\FilesystemException;
->>>>>>> laraxot/dev
 
 /**
  * Class XotBaseTestCase.
@@ -43,34 +32,13 @@ use Safe\Exceptions\FilesystemException;
  * DatabaseTransactions belongs in each module TestCase when that module needs transactional isolation.
  *
  * @property object|null $action
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property Model|null  $model
-=======
  * @property Model|null $model
->>>>>>> laraxot/dev
-=======
- * @property Model|null  $model
->>>>>>> laraxot/dev
  * @property object|null $service
  * @property object|null $widget
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
- * @property Model|null  $testModel
- * @property object|null $extraClass
- * @property Model|null  $baseModel
- * @property string|null $testDir
- * @property string|null $workDir
- * @property mixed       $saved
- * @property mixed       $extra_attributes
-<<<<<<< HEAD
-=======
  * @property Model|null $testModel
  * @property object|null $extraClass
  * @property Model|null $baseModel
@@ -78,9 +46,6 @@ use Safe\Exceptions\FilesystemException;
  * @property string|null $workDir
  * @property mixed $saved
  * @property mixed $extra_attributes
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
@@ -117,15 +82,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     public mixed $extra_attributes = null;
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-=======
      * @param  array<string, mixed>  $data
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -133,15 +90,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-=======
      * @param  array<string, mixed>  $data
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
     {
@@ -156,17 +105,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param class-string<T> $class
-     *
-=======
      * @param  class-string<T>  $class
->>>>>>> laraxot/dev
-=======
-     * @param class-string<T> $class
-     *
->>>>>>> laraxot/dev
      * @return MockObject&T
      */
     public function createUnitMock(string $class): MockObject
@@ -177,20 +116,8 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
-=======
      * @param  class-string<T>  $abstract
      * @param  (\Closure(MockInterface&T): void)|null  $callback
->>>>>>> laraxot/dev
-=======
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
->>>>>>> laraxot/dev
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -201,67 +128,18 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $mock;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsOnce(): InvokedCount
-    {
-        return $this->once();
-    }
-
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsExactly(int $count): InvokedCount
-    {
-        return $this->exactly($count);
-    }
-
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsAtLeastOnce(): InvokedAtLeastOnce
-    {
-        return $this->atLeastOnce();
-    }
-
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function skipTest(string $message = ''): never
     {
         $this->markTestSkipped($message);
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param class-string<\Throwable> $exceptionClass
-=======
      * @param  class-string<\Throwable>  $exceptionClass
->>>>>>> laraxot/dev
-=======
-     * @param class-string<\Throwable> $exceptionClass
->>>>>>> laraxot/dev
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (null !== $message) {
-=======
         if ($message !== null) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $message) {
->>>>>>> laraxot/dev
             $this->expectExceptionMessageIsOrContains($message);
         }
     }
@@ -287,15 +165,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    new ArrayLoader(),
-=======
                     new ArrayLoader,
->>>>>>> laraxot/dev
-=======
-                    new ArrayLoader(),
->>>>>>> laraxot/dev
                     'en'
                 );
             });
@@ -339,44 +209,20 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $attributes
-=======
      * @param  array<string, mixed>  $attributes
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
         /** @var Factory<Model&UserContract> $factory */
         $factory = UserFactory::new();
         /** @var UserContract $user */
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $user = $factory->createOne($attributes);
-=======
         $user = $factory->create($attributes);
->>>>>>> laraxot/dev
-=======
-        $user = $factory->createOne($attributes);
->>>>>>> laraxot/dev
 
         return $user;
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $attributes
-=======
      * @param  array<string, mixed>  $attributes
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
      */
     protected static function createTestTenant(array $attributes = []): Tenant
     {
@@ -387,15 +233,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param array<string, mixed> $attributes
-=======
      * @param  array<string, mixed>  $attributes
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
      */
     protected static function createTestModule(array $attributes = []): Module
     {
@@ -421,40 +259,18 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         $configured = config('xot.testing.sqlite_file');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (is_string($configured) && '' !== $configured) {
-=======
         if (is_string($configured) && $configured !== '') {
->>>>>>> laraxot/dev
-=======
-        if (is_string($configured) && '' !== $configured) {
->>>>>>> laraxot/dev
             return database_path($configured);
         }
 
         try {
             /** @var list<string> $found */
             $found = \Safe\glob(database_path('*.sqlite'));
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         } catch (FilesystemException) {
             $found = [];
         }
 
-        if (1 === count($found)) {
-<<<<<<< HEAD
-=======
-        } catch (\Safe\Exceptions\FilesystemException) {
-            $found = [];
-        }
-
         if (count($found) === 1) {
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
             return $found[0];
         }
 
@@ -472,15 +288,7 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     protected function prepareSharedSqliteForTesting(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (null === $this->app) {
-=======
         if ($this->app === null) {
->>>>>>> laraxot/dev
-=======
-        if (null === $this->app) {
->>>>>>> laraxot/dev
             $this->refreshApplication();
         }
 
@@ -491,15 +299,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         // XotBaseMigration::resolveConnectionName(), altrimenti ogni insert su users
         // fallisce con "No database selected" sulle macchine senza il DB dedicato.
         $userDatabase = config('database.connections.user.database');
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (! is_string($userDatabase) || '' === $userDatabase) {
-=======
         if (! is_string($userDatabase) || $userDatabase === '') {
->>>>>>> laraxot/dev
-=======
-        if (! is_string($userDatabase) || '' === $userDatabase) {
->>>>>>> laraxot/dev
             $this->app['config']->set('database.connections.user', [
                 'driver' => 'sqlite',
                 'database' => $database,
@@ -515,15 +315,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
-=======
             if (config("database.connections.{$connection}.driver") !== 'sqlite') {
->>>>>>> laraxot/dev
-=======
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
->>>>>>> laraxot/dev
                 continue;
             }
 
@@ -536,15 +328,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             DB::purge($connection);
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ([] === $sqliteConnections) {
-=======
         if ($sqliteConnections === []) {
->>>>>>> laraxot/dev
-=======
-        if ([] === $sqliteConnections) {
->>>>>>> laraxot/dev
             return;
         }
 
@@ -570,25 +354,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         $connectionsProperty->setValue($database, $resolved);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-    /**
-     * Legacy alias kept for module TestCases that still call the old name.
-     *
-     * @deprecated use {@see prepareSharedSqliteForTesting()}
-     */
-    protected function prepareSharedFixcitySqliteForTesting(): void
-    {
-        $this->prepareSharedSqliteForTesting();
-    }
-
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function bindInstance(string $abstract, object $instance): void
     {
         $this->instance($abstract, $instance);
@@ -605,15 +370,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param class-string<\Throwable> $exception
-=======
      * @param  class-string<\Throwable>  $exception
->>>>>>> laraxot/dev
-=======
-     * @param class-string<\Throwable> $exception
->>>>>>> laraxot/dev
      */
     public function expectThrowable(string $exception): void
     {

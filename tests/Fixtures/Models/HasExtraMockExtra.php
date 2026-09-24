@@ -26,15 +26,7 @@ class HasExtraMockExtra extends Model implements ExtraContract
      */
     public static function withAttributes(array $attributes): self
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $extra = new self();
-=======
         $extra = new self;
->>>>>>> laraxot/dev
-=======
-        $extra = new self();
->>>>>>> laraxot/dev
         $extra->extra_attributes = collect($attributes);
 
         return $extra;
