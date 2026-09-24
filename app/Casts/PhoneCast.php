@@ -16,31 +16,32 @@ class PhoneCast implements CastsAttributes
     /**
      * Cast the given value.
      *
-<<<<<<< .merge_file_7tsdzP
-<<<<<<< HEAD
-     * @param  Model  $_model  The Eloquent model instance
-     * @param  string  $_key  The attribute key
-     * @param  mixed  $value  The raw value from database
-     * @param  array<string, mixed>  $_attributes  All model attributes
-=======
-=======
+     * <<<<<<< .merge_file_7tsdzP
      * <<<<<<< HEAD
      *
->>>>>>> .merge_file_67rMYS
      * @param Model                $_model      The Eloquent model instance
      * @param string               $_key        The attribute key
      * @param mixed                $value       The raw value from database
      * @param array<string, mixed> $_attributes All model attributes
-<<<<<<< .merge_file_7tsdzP
->>>>>>> laraxot/dev
-=======
+     *                                          =======
+     *                                          =======
+     *                                          <<<<<<< HEAD
+     *
+     * >>>>>>> .merge_file_67rMYS
+     * @param Model                $_model      The Eloquent model instance
+     * @param string               $_key        The attribute key
+     * @param mixed                $value       The raw value from database
+     * @param array<string, mixed> $_attributes All model attributes
+     *                                          <<<<<<< .merge_file_7tsdzP
+     *                                          >>>>>>> laraxot/dev
+     *                                          =======
      *                                          =======
      * @param Model                $_model      The Eloquent model instance
      * @param string               $_key        The attribute key
      * @param mixed                $value       The raw value from database
      * @param array<string, mixed> $_attributes All model attributes
      *                                          >>>>>>> laraxot/dev
->>>>>>> .merge_file_67rMYS
+     *                                          >>>>>>> .merge_file_67rMYS
      */
     public function get(Model $_model, string $_key, mixed $value, array $_attributes): PhoneValueObject
     {
@@ -54,31 +55,32 @@ class PhoneCast implements CastsAttributes
     /**
      * Prepare the given value for storage.
      *
-<<<<<<< .merge_file_7tsdzP
-<<<<<<< HEAD
-     * @param  Model  $_model  The Eloquent model instance
-     * @param  string  $_key  The attribute key
-     * @param  mixed  $value  The value to be stored
-     * @param  array<string, mixed>  $_attributes  All model attributes
-=======
-=======
+     * <<<<<<< .merge_file_7tsdzP
      * <<<<<<< HEAD
      *
->>>>>>> .merge_file_67rMYS
      * @param Model                $_model      The Eloquent model instance
      * @param string               $_key        The attribute key
      * @param mixed                $value       The value to be stored
      * @param array<string, mixed> $_attributes All model attributes
-<<<<<<< .merge_file_7tsdzP
->>>>>>> laraxot/dev
-=======
+     *                                          =======
+     *                                          =======
+     *                                          <<<<<<< HEAD
+     *
+     * >>>>>>> .merge_file_67rMYS
+     * @param Model                $_model      The Eloquent model instance
+     * @param string               $_key        The attribute key
+     * @param mixed                $value       The value to be stored
+     * @param array<string, mixed> $_attributes All model attributes
+     *                                          <<<<<<< .merge_file_7tsdzP
+     *                                          >>>>>>> laraxot/dev
+     *                                          =======
      *                                          =======
      * @param Model                $_model      The Eloquent model instance
      * @param string               $_key        The attribute key
      * @param mixed                $value       The value to be stored
      * @param array<string, mixed> $_attributes All model attributes
      *                                          >>>>>>> laraxot/dev
->>>>>>> .merge_file_67rMYS
+     *                                          >>>>>>> .merge_file_67rMYS
      */
     public function set(Model $_model, string $_key, mixed $value, array $_attributes): string
     {

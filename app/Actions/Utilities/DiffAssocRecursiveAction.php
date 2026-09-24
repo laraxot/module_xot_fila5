@@ -13,17 +13,17 @@ class DiffAssocRecursiveAction
     /**
      * Recursively compute difference of arrays with additional index check.
      *
-<<<<<<< .merge_file_fd9Uqt
-<<<<<<< HEAD
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
-=======
-     * <<<<<<< .merge_file_2uBLQj
-     *
-=======
-     * <<<<<<< .merge_file_zjdkGf
+     * <<<<<<< .merge_file_fd9Uqt
      * <<<<<<< HEAD
      *
+     * @param array<int|string, mixed> $array1
+     * @param array<int|string, mixed> $array2
+     *                                         =======
+     *                                         <<<<<<< .merge_file_2uBLQj
+     *
+     * =======
+     * <<<<<<< .merge_file_zjdkGf
+     * <<<<<<< HEAD
      * @param array<int|string, mixed> $array1
      * @param array<int|string, mixed> $array2
      *
@@ -37,7 +37,7 @@ class DiffAssocRecursiveAction
      * @param array<int|string, mixed> $array2
      *                                         =======
      *                                         <<<<<<< .merge_file_2uBLQj
->>>>>>> .merge_file_6d9fU9
+     *                                         >>>>>>> .merge_file_6d9fU9
      * @param array<int|string, mixed> $array1
      * @param array<int|string, mixed> $array2
      *
@@ -93,14 +93,15 @@ class DiffAssocRecursiveAction
      *
      * >>>>>>> .merge_file_MjYIQ6
      *
-<<<<<<< .merge_file_fd9Uqt
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_fd9Uqt
+     * >>>>>>> laraxot/dev
+     * =======
      * >>>>>>> laraxot/dev
      *
      * >>>>>>> .merge_file_25rdgz
      *
->>>>>>> .merge_file_6d9fU9
+     * >>>>>>> .merge_file_6d9fU9
+     *
      * @return array<int|string, mixed>
      */
     public function execute(array $array1, array $array2): array

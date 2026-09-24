@@ -13,21 +13,7 @@ class DestroyAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_UjIJ89
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $_data
-     * @param  array<string, mixed>  $_rules
-     */
-    /**
-     * @param  array<string, mixed>  $_data
-     * @param  array<string, mixed>  $_rules
-=======
-     * <<<<<<< .merge_file_lqWfgU
-     * =======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_dGbAu9.
-     *
-=======
+     * <<<<<<< .merge_file_UjIJ89
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $_data
@@ -41,7 +27,21 @@ class DestroyAction
      *                                     =======
      *                                     <<<<<<< HEAD
      *                                     <<<<<<< .merge_file_dGbAu9.
->>>>>>> .merge_file_t9SnFE
+     *
+     * =======
+     * <<<<<<< HEAD.
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     */
+    /**
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     *                                     =======
+     *                                     <<<<<<< .merge_file_lqWfgU
+     *                                     =======
+     *                                     <<<<<<< HEAD
+     *                                     <<<<<<< .merge_file_dGbAu9.
+     *                                     >>>>>>> .merge_file_t9SnFE
      * @param array<string, mixed> $_data
      * @param array<string, mixed> $_rules
      *                                     =======
@@ -74,11 +74,11 @@ class DestroyAction
      * @param array<string, mixed> $_rules
      *                                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                     >>>>>>> .merge_file_wHn1MB
-<<<<<<< .merge_file_UjIJ89
->>>>>>> laraxot/dev
-=======
+     *                                     <<<<<<< .merge_file_UjIJ89
      *                                     >>>>>>> laraxot/dev
->>>>>>> .merge_file_t9SnFE
+     *                                     =======
+     *                                     >>>>>>> laraxot/dev
+     *                                     >>>>>>> .merge_file_t9SnFE
      */
     public function execute(Model $model, array $_data, array $_rules): Model
     {

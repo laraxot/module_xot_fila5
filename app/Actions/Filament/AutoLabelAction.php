@@ -25,14 +25,7 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
-<<<<<<< .merge_file_DKC8GV
-<<<<<<< HEAD
-     * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
-=======
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_DKC8GV
      * <<<<<<< HEAD
      *
      * @param Field|Component $component Il componente a cui applicare l'etichetta
@@ -40,8 +33,16 @@ class AutoLabelAction
      * @param Field|Component $component Il componente a cui applicare l'etichetta
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param Field|Component $component Il componente a cui applicare l'etichetta
+     *                                   =======
+     * @param Field|Component $component Il componente a cui applicare l'etichetta
      *
->>>>>>> .merge_file_M8Feoj
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_M8Feoj
+     *
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -112,14 +113,7 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
-<<<<<<< .merge_file_DKC8GV
-<<<<<<< HEAD
-     * @param  Field|Component  $component  Il componente di cui ottenere il nome
-=======
-     * @param Field|Component $component Il componente di cui ottenere il nome
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_DKC8GV
      * <<<<<<< HEAD
      *
      * @param Field|Component $component Il componente di cui ottenere il nome
@@ -127,8 +121,16 @@ class AutoLabelAction
      * @param Field|Component $component Il componente di cui ottenere il nome
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param Field|Component $component Il componente di cui ottenere il nome
+     *                                   =======
+     * @param Field|Component $component Il componente di cui ottenere il nome
      *
->>>>>>> .merge_file_M8Feoj
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_M8Feoj
+     *
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string

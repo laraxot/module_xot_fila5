@@ -12,29 +12,29 @@ class SaveArrayAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_kbbDlO
-<<<<<<< HEAD
-     * @param  array<int|string, mixed>  $data
-=======
-     * <<<<<<< .merge_file_OY9ono.
-=======
-     * <<<<<<< .merge_file_tT1x9s.
->>>>>>> .merge_file_uHgLYN
+     * <<<<<<< .merge_file_kbbDlO
+     * <<<<<<< HEAD.
      *
+     * @param array<int|string, mixed> $data
+     *                                       =======
+     *                                       <<<<<<< .merge_file_OY9ono.
+     *                                       =======
+     *                                       <<<<<<< .merge_file_tT1x9s.
+     *                                       >>>>>>> .merge_file_uHgLYN
      * @param array<int|string, mixed> $data
      *                                       =======
      *                                       <<<<<<< HEAD
      * @param array<int|string, mixed> $data
      *                                       =======
-<<<<<<< .merge_file_kbbDlO
-=======
+     *                                       <<<<<<< .merge_file_kbbDlO
+     *                                       =======
      *                                       <<<<<<< .merge_file_OY9ono.
      * @param array<int|string, mixed> $data
      *                                       =======
      *                                       <<<<<<< HEAD
      * @param array<int|string, mixed> $data
      *                                       =======
->>>>>>> .merge_file_uHgLYN
+     *                                       >>>>>>> .merge_file_uHgLYN
      *                                       <<<<<<< .merge_file_l0wgfw
      * @param array<int|string, mixed> $data
      *                                       =======
@@ -46,12 +46,12 @@ class SaveArrayAction
      *                                       >>>>>>> .merge_file_dp2bPs
      *                                       >>>>>>> laraxot/dev
      *                                       >>>>>>> .merge_file_6IHdiT
-<<<<<<< .merge_file_kbbDlO
->>>>>>> laraxot/dev
-=======
+     *                                       <<<<<<< .merge_file_kbbDlO
+     *                                       >>>>>>> laraxot/dev
+     *                                       =======
      *                                       >>>>>>> laraxot/dev
      *                                       >>>>>>> .merge_file_meTjmv
->>>>>>> .merge_file_uHgLYN
+     *                                       >>>>>>> .merge_file_uHgLYN
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool
     {

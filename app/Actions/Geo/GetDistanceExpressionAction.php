@@ -21,18 +21,7 @@ class GetDistanceExpressionAction
     /**
      * Genera l'espressione SQL per calcolare la distanza tra due punti.
      *
-<<<<<<< .merge_file_ILhePY
-<<<<<<< HEAD
-     * @param  float  $latitude  Latitudine del punto di riferimento
-     * @param  float  $longitude  Longitudine del punto di riferimento
-     * @param  string|null  $alias  Alias per l'espressione (opzionale)
-=======
-     * @param float       $latitude  Latitudine del punto di riferimento
-     * @param float       $longitude Longitudine del punto di riferimento
-     * @param string|null $alias     Alias per l'espressione (opzionale)
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_ILhePY
      * <<<<<<< HEAD
      *
      * @param float       $latitude  Latitudine del punto di riferimento
@@ -44,8 +33,20 @@ class GetDistanceExpressionAction
      * @param string|null $alias     Alias per l'espressione (opzionale)
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param float       $latitude  Latitudine del punto di riferimento
+     * @param float       $longitude Longitudine del punto di riferimento
+     * @param string|null $alias     Alias per l'espressione (opzionale)
+     *                               =======
+     * @param float       $latitude  Latitudine del punto di riferimento
+     * @param float       $longitude Longitudine del punto di riferimento
+     * @param string|null $alias     Alias per l'espressione (opzionale)
      *
->>>>>>> .merge_file_mh2XO5
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_mh2XO5
+     *
      * @return Expression Espressione SQL per il calcolo della distanza
      */
     public function execute(

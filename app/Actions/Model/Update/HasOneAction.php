@@ -24,14 +24,24 @@ class HasOneAction
     /**
      * Execute the update operation for a HasOne relationship.
      *
-<<<<<<< .merge_file_ivBQd3
-<<<<<<< HEAD
-     * @param  Model  $model  The parent model instance
-     * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
-=======
+     * <<<<<<< .merge_file_ivBQd3
      * <<<<<<< HEAD
->>>>>>> .merge_file_FszRUp
      *
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     *                                 =======
+     *                                 <<<<<<< HEAD
+     *                                 >>>>>>> .merge_file_FszRUp
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
+     * @param Model       $model       The parent model instance
+     * @param RelationDTO $relationDTO Data transfer object containing relationship information
      * @param Model       $model       The parent model instance
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
      * @param Model       $model       The parent model instance
@@ -73,26 +83,14 @@ class HasOneAction
      *                                   >>>>>>> .merge_file_tFlRWf
      *                                   =======
      * @throws \InvalidArgumentException When relationship type is invalid
-<<<<<<< .merge_file_ivBQd3
-     * @throws \RuntimeException When relationship data is invalid
-=======
-     * <<<<<<< .merge_file_nJ1IDE
-     * =======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_T31w2M
-     * >>>>>>> .merge_file_rWwxNa
-     *
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     * @param Model       $model       The parent model instance
-     * @param RelationDTO $relationDTO Data transfer object containing relationship information
-     *
+     *                                   <<<<<<< .merge_file_ivBQd3
+     * @throws \RuntimeException         When relationship data is invalid
+     *                                   =======
+     *                                   <<<<<<< .merge_file_nJ1IDE
+     *                                   =======
+     *                                   <<<<<<< HEAD
+     *                                   <<<<<<< .merge_file_T31w2M
+     *                                   >>>>>>> .merge_file_rWwxNa
      * @throws \InvalidArgumentException When relationship type is invalid
      * @throws \RuntimeException         When relationship data is invalid
      *                                   <<<<<<< .merge_file_nJ1IDE
@@ -116,13 +114,13 @@ class HasOneAction
      * @throws \RuntimeException         When relationship data is invalid
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_rWwxNa
->>>>>>> laraxot/dev
-=======
+     *                                   >>>>>>> laraxot/dev
+     *                                   =======
      * @throws \RuntimeException         When relationship data is invalid
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_rWwxNa
      *                                   >>>>>>> laraxot/dev
->>>>>>> .merge_file_FszRUp
+     *                                   >>>>>>> .merge_file_FszRUp
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
