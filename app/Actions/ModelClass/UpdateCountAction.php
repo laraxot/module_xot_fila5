@@ -18,15 +18,7 @@ class UpdateCountAction
     /**
      * Execute the count action for the given model class.
      *
-<<<<<<< .merge_file_HqaMEN
-<<<<<<< HEAD
-     * @param  class-string<Model>  $modelClass  The fully qualified model class name
-=======
-     * <<<<<<< .merge_file_1H7f7r
-     *
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     *                                        =======
-=======
+     * <<<<<<< .merge_file_HqaMEN
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass The fully qualified model class name
@@ -34,7 +26,14 @@ class UpdateCountAction
      *                                        <<<<<<< .merge_file_1H7f7r
      * @param class-string<Model> $modelClass The fully qualified model class name
      *                                        =======
->>>>>>> .merge_file_qGmetQ
+     *                                        =======
+     *                                        <<<<<<< HEAD
+     * @param class-string<Model> $modelClass The fully qualified model class name
+     *                                        =======
+     *                                        <<<<<<< .merge_file_1H7f7r
+     * @param class-string<Model> $modelClass The fully qualified model class name
+     *                                        =======
+     *                                        >>>>>>> .merge_file_qGmetQ
      *                                        <<<<<<< HEAD
      *                                        <<<<<<< .merge_file_bHhNUl
      * @param class-string<Model> $modelClass The fully qualified model class name
@@ -53,11 +52,11 @@ class UpdateCountAction
      * @param class-string<Model> $modelClass The fully qualified model class name
      *                                        >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                        >>>>>>> .merge_file_NENwf0
-<<<<<<< .merge_file_HqaMEN
->>>>>>> laraxot/dev
-=======
+     *                                        <<<<<<< .merge_file_HqaMEN
      *                                        >>>>>>> laraxot/dev
->>>>>>> .merge_file_qGmetQ
+     *                                        =======
+     *                                        >>>>>>> laraxot/dev
+     *                                        >>>>>>> .merge_file_qGmetQ
      */
     public function execute(string $modelClass, int $total): void
     {

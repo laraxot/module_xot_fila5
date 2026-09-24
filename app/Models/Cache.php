@@ -13,17 +13,7 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @property string $key
  * @property string $value
-<<<<<<< .merge_file_OS6Kxi
-<<<<<<< HEAD
- * @property int $expiration
- *
- * @method static CacheFactory factory($count = null, $state = [])
-=======
- * @property int    $expiration
- *
- * @method static CacheFactory          factory($count = null, $state = [])
->>>>>>> laraxot/dev
-=======
+ *                              <<<<<<< .merge_file_OS6Kxi
  *                              <<<<<<< HEAD
  * @property int    $expiration
  *
@@ -32,9 +22,21 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @property int $expiration
  *
+ * @method static CacheFactory factory($count = null, $state = [])
+ *                                                                 >>>>>>> laraxot/dev
+ *                                                                 =======
+ *                                                                 <<<<<<< HEAD
+ *
+ * @property int $expiration
+ *
+ * @method static CacheFactory factory($count = null, $state = [])
+ *                                                                 =======
+ *
+ * @property int $expiration
+ *
  * @method static CacheFactory          factory($count = null, $state = [])
  *                                                                          >>>>>>> laraxot/dev
->>>>>>> .merge_file_jdwZ1p
+ *                                                                          >>>>>>> .merge_file_jdwZ1p
  * @method static Builder<static>|Cache newModelQuery()
  * @method static Builder<static>|Cache newQuery()
  * @method static Builder<static>|Cache query()

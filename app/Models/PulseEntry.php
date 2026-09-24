@@ -9,15 +9,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseEntryFactory;
 
 /**
-<<<<<<< .merge_file_asdOeY
-<<<<<<< HEAD
- * @property string $id
- * @property int $timestamp
- * @property string $type
- * @property string $key
- * @property string|null $key_hash
- * @property int|null $value
-=======
+ * <<<<<<< .merge_file_asdOeY
  * <<<<<<< HEAD.
  *
  * @property string               $id
@@ -26,17 +18,26 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @property string               $key
  * @property string|null          $key_hash
  * @property int|null             $value
->>>>>>> .merge_file_Gxr1hm
+ *                                           =======
+ *                                           <<<<<<< HEAD.
+ * @property string               $id
+ * @property int                  $timestamp
+ * @property string               $type
+ * @property string               $key
+ * @property string|null          $key_hash
+ * @property int|null             $value
+ *                                           >>>>>>> .merge_file_Gxr1hm
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static PulseEntryFactory factory($count = null, $state = [])
-<<<<<<< .merge_file_asdOeY
-=======
-=======
+ *                                                                      <<<<<<< .merge_file_asdOeY
+ *                                                                      =======
+ *                                                                      =======
  *                                                                      =======
  *
->>>>>>> .merge_file_Gxr1hm
+ * >>>>>>> .merge_file_Gxr1hm
+ *
  * @property string               $id
  * @property int                  $timestamp
  * @property string               $type
@@ -47,11 +48,11 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @property ProfileContract|null $updater
  *
  * @method static PulseEntryFactory          factory($count = null, $state = [])
-<<<<<<< .merge_file_asdOeY
->>>>>>> laraxot/dev
-=======
+ *                                                                               <<<<<<< .merge_file_asdOeY
  *                                                                               >>>>>>> laraxot/dev
->>>>>>> .merge_file_Gxr1hm
+ *                                                                               =======
+ *                                                                               >>>>>>> laraxot/dev
+ *                                                                               >>>>>>> .merge_file_Gxr1hm
  * @method static Builder<static>|PulseEntry newModelQuery()
  * @method static Builder<static>|PulseEntry newQuery()
  * @method static Builder<static>|PulseEntry query()

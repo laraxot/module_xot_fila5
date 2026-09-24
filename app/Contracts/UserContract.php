@@ -31,43 +31,7 @@ use Spatie\Permission\Traits\HasRoles;
 /**
  * Modules\Xot\Contracts\UserContract.
  *
-<<<<<<< .merge_file_sMq6I2
-<<<<<<< HEAD
- * @property string|null $id
- * @property string|null $email
- * @property Carbon|null $email_verified_at
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string|null $full_name
- * @property string|null $name
- * @property string|null $phone
- * @property string|null $type
- * @property string|null $current_team_id
- * @property TeamContract $currentTeam
- * @property ProfileContract|null $profile
- * @property Collection<int, UserRole> $roles
- * @property Collection<int, Team> $membershipTeams
- * @property Collection<int, Team> $teams
- * @property Collection<int, Tenant> $tenants
-=======
- * @property string|null               $id
- * @property string|null               $email
- * @property Carbon|null               $email_verified_at
- * @property string|null               $first_name
- * @property string|null               $last_name
- * @property string|null               $full_name
- * @property string|null               $name
- * @property string|null               $phone
- * @property string|null               $type
- * @property string|null               $current_team_id
- * @property TeamContract              $currentTeam
- * @property ProfileContract|null      $profile
- * @property Collection<int, UserRole> $roles
- * @property Collection<int, Team>     $membershipTeams
- * @property Collection<int, Team>     $teams
- * @property Collection<int, Tenant>   $tenants
->>>>>>> laraxot/dev
-=======
+ * <<<<<<< .merge_file_sMq6I2
  * <<<<<<< HEAD
  *
  * @property string|null               $id
@@ -104,7 +68,43 @@ use Spatie\Permission\Traits\HasRoles;
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
  *                                                        >>>>>>> laraxot/dev
->>>>>>> .merge_file_xUTsLp
+ *                                                        =======
+ *                                                        <<<<<<< HEAD
+ * @property string|null               $id
+ * @property string|null               $email
+ * @property Carbon|null               $email_verified_at
+ * @property string|null               $first_name
+ * @property string|null               $last_name
+ * @property string|null               $full_name
+ * @property string|null               $name
+ * @property string|null               $phone
+ * @property string|null               $type
+ * @property string|null               $current_team_id
+ * @property TeamContract              $currentTeam
+ * @property ProfileContract|null      $profile
+ * @property Collection<int, UserRole> $roles
+ * @property Collection<int, Team>     $membershipTeams
+ * @property Collection<int, Team>     $teams
+ * @property Collection<int, Tenant>   $tenants
+ *                                                        =======
+ * @property string|null               $id
+ * @property string|null               $email
+ * @property Carbon|null               $email_verified_at
+ * @property string|null               $first_name
+ * @property string|null               $last_name
+ * @property string|null               $full_name
+ * @property string|null               $name
+ * @property string|null               $phone
+ * @property string|null               $type
+ * @property string|null               $current_team_id
+ * @property TeamContract              $currentTeam
+ * @property ProfileContract|null      $profile
+ * @property Collection<int, UserRole> $roles
+ * @property Collection<int, Team>     $membershipTeams
+ * @property Collection<int, Team>     $teams
+ * @property Collection<int, Tenant>   $tenants
+ *                                                        >>>>>>> laraxot/dev
+ *                                                        >>>>>>> .merge_file_xUTsLp
  *
  * @phpstan-require-extends Model
  *
@@ -133,14 +133,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Create a new personal access token for the user.
      *
-<<<<<<< .merge_file_sMq6I2
-<<<<<<< HEAD
-     * @param  array<int, string>  $scopes
-=======
-     * @param array<int, string> $scopes
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_sMq6I2
      * <<<<<<< HEAD
      *
      * @param array<int, string> $scopes
@@ -148,8 +141,16 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @param array<int, string> $scopes
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param array<int, string> $scopes
+     *                                   =======
+     * @param array<int, string> $scopes
      *
->>>>>>> .merge_file_xUTsLp
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_xUTsLp
+     *
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
@@ -161,20 +162,20 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Determine if the model has (one of) the given role(s).
      */
     /**
-<<<<<<< .merge_file_sMq6I2
-<<<<<<< HEAD
-     * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>  $roles
-=======
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_sMq6I2
      * <<<<<<< HEAD.
      *
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
      *                                                                               =======
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
      *                                                                               >>>>>>> laraxot/dev
->>>>>>> .merge_file_xUTsLp
+     *                                                                               =======
+     *                                                                               <<<<<<< HEAD
+     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
+     *                                                                               =======
+     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
+     *                                                                               >>>>>>> laraxot/dev
+     *                                                                               >>>>>>> .merge_file_xUTsLp
      */
     public function hasRole(
         string|int|array|UserRole|Collection $roles,
@@ -184,14 +185,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Assign the given role to the model.
      *
-<<<<<<< .merge_file_sMq6I2
-<<<<<<< HEAD
-     * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
-=======
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_sMq6I2
      * <<<<<<< HEAD
      *
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
@@ -199,8 +193,16 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
+     *                                                                               =======
+     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *
->>>>>>> .merge_file_xUTsLp
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_xUTsLp
+     *
      * @return $this
      */
     public function assignRole(array|string|int|UserRole|Collection $roles = []): static;
@@ -208,14 +210,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Remove all current roles and set the given ones.
      *
-<<<<<<< .merge_file_sMq6I2
-<<<<<<< HEAD
-     * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
-=======
-     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_sMq6I2
      * <<<<<<< HEAD
      *
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
@@ -223,8 +218,16 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
+     *                                                                               =======
+     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
      *
->>>>>>> .merge_file_xUTsLp
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_xUTsLp
+     *
      * @return $this
      */
     public function syncRoles(array|string|int|UserRole|Collection $roles = []): static;
@@ -277,14 +280,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Revoke the given role from the model.
      *
-<<<<<<< .merge_file_sMq6I2
-<<<<<<< HEAD
-     * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum  ...$role
-=======
-     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
-     *
->>>>>>> laraxot/dev
-=======
+     * <<<<<<< .merge_file_sMq6I2
      * <<<<<<< HEAD
      *
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
@@ -292,8 +288,16 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
      *
      * >>>>>>> laraxot/dev
+     * =======
+     * <<<<<<< HEAD
+     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
+     *                                                                                             =======
+     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
      *
->>>>>>> .merge_file_xUTsLp
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_xUTsLp
+     *
      * @return $this
      */
     public function removeRole(...$role);
