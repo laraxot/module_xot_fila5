@@ -8,7 +8,7 @@ use Modules\Xot\Tests\XotBaseTestCase;
 
 class ConfigTest extends XotBaseTestCase
 {
-    public function test_xot_config_loads_correctly(): void
+    public function testXotConfigLoadsCorrectly(): void
     {
         $config = config('xot');
 
@@ -16,7 +16,7 @@ class ConfigTest extends XotBaseTestCase
         $this->assertNotEmpty($config);
     }
 
-    public function test_xot_config_has_expected_keys(): void
+    public function testXotConfigHasExpectedKeys(): void
     {
         $config = config('xot');
 
@@ -24,7 +24,7 @@ class ConfigTest extends XotBaseTestCase
         $this->assertIsArray($config);
     }
 
-    public function test_database_config_loads(): void
+    public function testDatabaseConfigLoads(): void
     {
         $config = config('database');
 
