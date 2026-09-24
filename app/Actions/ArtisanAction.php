@@ -20,9 +20,6 @@ use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
 if (! defined('STDIN')) {
     define('STDIN', fopen('php://stdin', 'r'));
 }
