@@ -16,12 +16,12 @@ class GuessPivotAction
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
-<<<<<<< HEAD
-     * @param  string|class-string<Model>  $related  The related model class name
-     * @param  string|class-string<Model>  $class  The class
-=======
-     * <<<<<<< .merge_file_BlfdUz
+     * <<<<<<< HEAD
      *
+     * @param string|class-string<Model> $related The related model class name
+     * @param string|class-string<Model> $class   The class
+     *                                            =======
+     *                                            <<<<<<< .merge_file_BlfdUz
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
      *                                            =======
@@ -43,7 +43,7 @@ class GuessPivotAction
      *                                            >>>>>>> .merge_file_NzfLh9
      *                                            >>>>>>> laraxot/dev
      *                                            >>>>>>> .merge_file_yA4jnq
->>>>>>> laraxot/dev
+     *                                            >>>>>>> laraxot/dev
      */
     public function execute(string $related, string $class): Pivot
     {

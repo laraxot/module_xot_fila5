@@ -26,11 +26,11 @@ class ViewExport implements FromView
     /**
      * Summary of __construct.
      *
-<<<<<<< HEAD
-     * @param  array<string>  $fields
-=======
-     * <<<<<<< .merge_file_BM1WiU
+     * <<<<<<< HEAD
      *
+     * @param array<string> $fields
+     *                              =======
+     *                              <<<<<<< .merge_file_BM1WiU
      * @param array<string> $fields
      *                              =======
      *                              <<<<<<< HEAD
@@ -51,7 +51,7 @@ class ViewExport implements FromView
      * @param array<string> $fields
      *                              >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                              >>>>>>> .merge_file_ogFscl
->>>>>>> laraxot/dev
+     *                              >>>>>>> laraxot/dev
      */
     public function __construct(View $view, ?string $transKey = null, ?array $fields = null)
     {
