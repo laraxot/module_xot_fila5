@@ -5,18 +5,24 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\File;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 class GetClassNameByPathAction
 {
     use QueueableAction;

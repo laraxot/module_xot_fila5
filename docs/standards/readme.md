@@ -12,6 +12,7 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hmmILT
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 =======
 >>>>>>> .merge_file_77BCgl
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
 ## Collegamenti tra versioni di README.md
@@ -98,6 +101,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hmmILT
@@ -191,6 +195,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 >>>>>>> .merge_file_77BCgl
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 # Standard Xot: Ereditarietà dei Modelli
 
@@ -204,6 +210,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 ## Collegamenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hmmILT
 <<<<<<< HEAD
@@ -213,11 +220,14 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 >>>>>>> .merge_file_77BCgl
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hmmILT
@@ -237,6 +247,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 >>>>>>> .merge_file_77BCgl
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Regola generale
 
@@ -260,6 +272,7 @@ class Doctor extends User
 ## Moduli che applicano questa regola
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Aggiungere qui altri moduli se necessario
 
 =======
@@ -279,3 +292,7 @@ class Doctor extends User
 >>>>>>> laraxot/dev
 // Aggiungere qui altri moduli se necessario
 >>>>>>> laraxot/dev
+=======
+// Aggiungere qui altri moduli se necessario
+
+>>>>>>> 8d801bbe (Check & fix styling)

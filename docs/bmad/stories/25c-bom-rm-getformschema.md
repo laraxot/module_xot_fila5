@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_xyr9GW
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_mto4up
 >>>>>>> .merge_file_yQHWXy
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 25c-bom-rm-getformschema
 description: "Modulo: Bom"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_xyr9GW
 =======
 <<<<<<< .merge_file_2FCcXO
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_mto4up
 >>>>>>> .merge_file_yQHWXy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # 25c-bom — Rimuovere getFormSchema da BomResource
 
 **Modulo:** Bom

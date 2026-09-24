@@ -162,6 +162,7 @@ Before committing any model:
 
 **Last Updated**: 2026-01-13  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code
 =======
@@ -174,3 +175,7 @@ Before committing any model:
 **Status**: MANDATORY for all new code
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Laravel Version**: 11+  
+**Status**: MANDATORY for all new code
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -38,6 +38,7 @@ class HandlerDecorator implements ExceptionHandlerContract
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -48,6 +49,8 @@ class HandlerDecorator implements ExceptionHandlerContract
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -55,6 +58,10 @@ class HandlerDecorator implements ExceptionHandlerContract
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< HEAD
 - [Error Formatters](./formatters/README.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Error Formatters](./formatters/README.md)
+>>>>>>> 8d801bbe (Check & fix styling)

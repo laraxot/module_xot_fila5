@@ -2,12 +2,15 @@
 
 **Last Update**: 2025-12-05
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Last Update**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: ✅ Production Ready
 **PHPStan Level**: 10
 **Maintainers**: Laraxot Team
@@ -642,12 +645,15 @@ Located in `bashscripts/`:
 - [Code Quality Tools](./code-quality-tools.md) - PHPStan, Pint, PHPInsights
 - [Automation Scripts](./bashscripts/README.md) - Available automation scripts
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
 
 ### Migration & Upgrade
@@ -667,12 +673,15 @@ Located in `bashscripts/`:
 
 ### v3.0.0 - 2025-12-05
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ### v3.0.0 - [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
 - **Added**: PHP 8.3 support
@@ -682,12 +691,15 @@ Located in `bashscripts/`:
 
 ### v2.9.0 - 2025-11-18
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ### v2.9.0 - [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Added**: New XotBaseChartWidget
 - **Fixed**: HasXotTable duplicate if statements
 - **Fixed**: Mass syntax errors across modules
@@ -695,12 +707,15 @@ Located in `bashscripts/`:
 
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 See [CHANGELOG.md](./changelog.md) for full history.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -718,6 +733,7 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Advanced caching strategies
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See [ROADMAP.md](roadmap.md) for details.
 =======
 <<<<<<< HEAD
@@ -727,12 +743,16 @@ See [ROADMAP.md](./ROADMAP.md) for details.
 See [ROADMAP.md](./roadmap.md) for details.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See [ROADMAP.md](./ROADMAP.md) for details.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
 ## 📖 Related Documentation
 
 ### Internal Modules
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -748,6 +768,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 - [Project README](../../../readme.md) - Main project documentation
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [User Module](../User/docs/README.md) - User management and authentication
 - [UI Module](../UI/docs/README.md) - UI components and design system
 - [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy support
@@ -779,12 +801,15 @@ Contributions to the Xot module should follow strict guidelines as it's the foun
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -799,6 +824,7 @@ Part of the Laraxot PTVX ecosystem.
 **Framework**: Laravel 12 + Filament 4 + PHP 8.3
 **PHPStan**: Level 10 ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Test Coverage**: 85%+ ✅
 =======
 <<<<<<< HEAD
@@ -807,3 +833,6 @@ Part of the Laraxot PTVX ecosystem.
 **Test Coverage**: 85%+ ✅
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Test Coverage**: 85%+ ✅
+>>>>>>> 8d801bbe (Check & fix styling)

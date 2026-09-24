@@ -1,13 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IPiVU3
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 
 
+<<<<<<< HEAD
 https://readme.so/it/editor
 =======
 <<<<<<< HEAD
@@ -52,3 +56,6 @@ https://readme.so/it/editor
 >>>>>>> .merge_file_IquJ29
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://readme.so/it/editor
+>>>>>>> 8d801bbe (Check & fix styling)

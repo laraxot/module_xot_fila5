@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 final class HasCustomModelLabelProbeWithoutLabels extends HasCustomModelLabelProbeBase {}
 =======
 <<<<<<< .merge_file_D8eJ6A
@@ -21,3 +22,8 @@ final class HasCustomModelLabelProbeWithoutLabels extends HasCustomModelLabelPro
 }
 >>>>>>> .merge_file_s2uZfW
 >>>>>>> laraxot/dev
+=======
+final class HasCustomModelLabelProbeWithoutLabels extends HasCustomModelLabelProbeBase
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

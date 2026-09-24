@@ -13,11 +13,16 @@ class WebhookErrorFormatter
     public function __construct(
         private \Throwable $exception,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
 
     /**
      * @return array<string, mixed>

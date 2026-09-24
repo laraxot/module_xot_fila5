@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Convenzioni di Routing
 
 ## Struttura Base
@@ -90,6 +93,7 @@ Route::get('/auth/login', [AuthController::class, 'login']);
 - Documentare eccezioni
 - Aggiornare moduli esistenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -101,3 +105,5 @@ canonical: ../../../Themes/docs/shared-components/routing-conventions.md
 See canonical documentation: ../../../Themes/docs/shared-components/routing-conventions.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

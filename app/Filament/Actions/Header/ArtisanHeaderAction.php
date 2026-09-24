@@ -1,20 +1,37 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Artisan;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 class ArtisanHeaderAction extends XotBaseAction
+=======
+use Filament\Actions\Action;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Artisan;
+use Webmozart\Assert\Assert;
+
+class ArtisanHeaderAction extends Action
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     protected function setUp(): void
     {

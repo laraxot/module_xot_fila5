@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -71,6 +72,8 @@ bash bashscripts/tools/sync-ide-junctions.sh
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Problema Risolto
 
 Lo script `./bashscripts/ai/ai_init.sh` non creava la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
@@ -101,6 +104,7 @@ La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla roo
 
 ## Documentazione Aggiornata
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_K6pdVb
 <<<<<<< HEAD
@@ -116,5 +120,7 @@ La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla roo
 =======
 >>>>>>> .merge_file_HCZbKX
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.

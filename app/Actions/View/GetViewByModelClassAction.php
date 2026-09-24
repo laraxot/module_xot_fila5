@@ -23,6 +23,7 @@ class GetViewByModelClassAction
         $model_name = Str::of($model_name)->snake()->toString();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $view=$module_low.'::'.$model_name.$suffix;
         
         if(!view()->exists($view)){
@@ -38,5 +39,8 @@ class GetViewByModelClassAction
 
 >>>>>>> laraxot/dev
         return $view;
+=======
+        return $module_low.'::'.$model_name.$suffix;
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }

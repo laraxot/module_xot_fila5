@@ -15,6 +15,7 @@ class SelectAction
     /**
      * Execute a select query.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass
@@ -35,6 +36,9 @@ class SelectAction
      * >>>>>>> .merge_file_4eMRLe
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model> $modelClass
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return array<mixed>
      */

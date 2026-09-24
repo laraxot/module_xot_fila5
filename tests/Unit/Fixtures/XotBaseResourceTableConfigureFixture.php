@@ -11,12 +11,15 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_NlBMYd
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
   /**
    * @return array<string, TextColumn>
    */
@@ -37,11 +40,15 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
     ];
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_h9ahnh
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     /**
      * @return array<string, TextColumn>
      */
@@ -62,11 +69,14 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_NlBMYd
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_h9ahnh
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 }

@@ -13,9 +13,20 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di app.md
+<<<<<<< HEAD
 * [app.md](../../../xot/project_docs/install/app.md)
 * [app.md](../../../tenant/project_docs/it/config/app.md)
 
 ### Versione Incoming
 
 ---
+=======
+* [app.md](../../../Xot/docs/install/app.md)
+* [app.md](../../../Tenant/docs/it/config/app.md)
+* [app.md](../../../xot/docs/install/app.md)
+* [app.md](../../../tenant/docs/it/config/app.md)
+
+### Versione Incoming
+
+---
+>>>>>>> 8d801bbe (Check & fix styling)

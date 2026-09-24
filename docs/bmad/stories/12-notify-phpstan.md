@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_I4QSbF
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_IzOEd2
 >>>>>>> .merge_file_fnviRc
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 12-notify-phpstan
 description: "Modulo: Notify"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_I4QSbF
 =======
 <<<<<<< .merge_file_MkiDd9
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_IzOEd2
 >>>>>>> .merge_file_fnviRc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # BMAD Story 12 — Notify: 14 errori PHPStan (test)
 
 **Modulo:** `Notify`

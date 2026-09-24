@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -47,6 +48,8 @@ Tutti gli adapter di root devono puntare a un solo backend condiviso:
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Problema Risolto
 Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 
@@ -78,6 +81,7 @@ Per verificare che tutto funzioni correttamente:
 ```bash
 file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gN2FWI
 <<<<<<< HEAD
@@ -93,6 +97,8 @@ file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 =======
 >>>>>>> .merge_file_3h8tO2
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."

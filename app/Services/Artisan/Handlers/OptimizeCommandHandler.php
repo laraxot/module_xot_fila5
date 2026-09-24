@@ -20,6 +20,7 @@ class OptimizeCommandHandler implements CommandHandlerInterface
     public function supports(string $command): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $command === 'optimize';
 =======
 <<<<<<< .merge_file_kaXSCZ
@@ -32,5 +33,8 @@ class OptimizeCommandHandler implements CommandHandlerInterface
         return 'optimize' === $command;
 >>>>>>> .merge_file_ZjfKZ7
 >>>>>>> laraxot/dev
+=======
+        return 'optimize' === $command;
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }

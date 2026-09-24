@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Regole Generali sulle State Machine
 
 ## Transizioni
@@ -17,6 +20,7 @@
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -28,3 +32,5 @@ canonical: ../../../Themes/docs/shared-components/state-machine-1.md
 See canonical documentation: ../../../Themes/docs/shared-components/state-machine-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

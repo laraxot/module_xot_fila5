@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Nwidart\Modules\Module;
 =======
 <<<<<<< .merge_file_GNpg2u
@@ -26,16 +27,22 @@ use function Safe\preg_match;
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
 >>>>>>> .merge_file_D0wWUc
+=======
+use Nwidart\Modules\Module;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\preg_match;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_GNpg2u
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_D0wWUc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -70,6 +77,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GNpg2u
 =======
@@ -80,6 +88,8 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 
 >>>>>>> .merge_file_D0wWUc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -151,6 +161,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GNpg2u
 =======
@@ -165,6 +176,8 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     /**
 >>>>>>> .merge_file_D0wWUc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

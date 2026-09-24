@@ -613,6 +613,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
@@ -631,6 +632,10 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -711,6 +716,7 @@ class LimeJsonService
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
 =======
@@ -724,6 +730,10 @@ class healthcare_appService
 class ModuloEsempioService
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     use SingletonTrait;
 
@@ -1197,6 +1207,7 @@ class LimeJsonService
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
 =======
@@ -1210,6 +1221,10 @@ class healthcare_appService
 class ModuloEsempioService
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     use SingletonTrait;
 
@@ -1278,6 +1293,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
@@ -1296,6 +1312,10 @@ class AlertWidget extends BaseTableWidget
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1304,6 +1324,7 @@ class AlertWidget extends BaseTableWidget
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Benefici**: ALTI
 =======
 <<<<<<< HEAD
@@ -1312,3 +1333,6 @@ class AlertWidget extends BaseTableWidget
 **Benefici**: ALTI
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Benefici**: ALTI
+>>>>>>> 8d801bbe (Check & fix styling)

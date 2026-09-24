@@ -18,6 +18,10 @@ final class PestAssert
     public static function same(mixed $expected, mixed $actual): void
     {
         Assert::assertSame($expected, $actual);
+<<<<<<< HEAD
+=======
+        // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 
     public static function notSame(mixed $expected, mixed $actual): void
@@ -82,10 +86,14 @@ final class PestAssert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string  $expectedClass
 =======
      * @param class-string $expectedClass
 >>>>>>> laraxot/dev
+=======
+     * @param class-string $expectedClass
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function instanceOf(string $expectedClass, mixed $actual): void
     {
@@ -198,10 +206,14 @@ final class PestAssert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  iterable<array-key>  $keys
 =======
      * @param iterable<array-key> $keys
 >>>>>>> laraxot/dev
+=======
+     * @param iterable<array-key> $keys
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function hasKeys(iterable $keys, mixed $actual): void
     {
@@ -219,10 +231,14 @@ final class PestAssert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  iterable<string>  $properties
 =======
      * @param iterable<string> $properties
 >>>>>>> laraxot/dev
+=======
+     * @param iterable<string> $properties
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function hasProperties(iterable $properties, mixed $actual): void
     {
@@ -283,10 +299,14 @@ final class PestAssert
         Assert::assertIsString($prefix);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($prefix === '') {
 =======
         if ('' === $prefix) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $prefix) {
+>>>>>>> 8d801bbe (Check & fix styling)
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -298,10 +318,14 @@ final class PestAssert
         Assert::assertIsString($suffix);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($suffix === '') {
 =======
         if ('' === $suffix) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $suffix) {
+>>>>>>> 8d801bbe (Check & fix styling)
             Assert::fail('Expected a non-empty suffix.');
         }
 
@@ -345,10 +369,14 @@ final class PestAssert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $constraints
 =======
      * @param array<array-key, mixed> $constraints
 >>>>>>> laraxot/dev
+=======
+     * @param array<array-key, mixed> $constraints
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     private static function assertThrownExceptionMatches(\Throwable $exception, array $constraints): void
     {
@@ -360,10 +388,14 @@ final class PestAssert
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (is_string($constraint) && $constraint !== '') {
 =======
             if (is_string($constraint) && '' !== $constraint) {
 >>>>>>> laraxot/dev
+=======
+            if (is_string($constraint) && '' !== $constraint) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 Assert::assertStringContainsString($constraint, $exception->getMessage());
             }
         }

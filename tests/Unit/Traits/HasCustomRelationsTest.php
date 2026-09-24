@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
@@ -20,17 +21,31 @@ it('creates custom relation', function (): void {
     $parentModel = new class extends Model
     {
 =======
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Relations\CustomRelation;
+use Modules\Xot\Traits\HasCustomRelations;
+use PHPUnit\Framework\Assert;
+
+it('creates custom relation', function (): void {
+>>>>>>> 8d801bbe (Check & fix styling)
     $relatedModel = new class extends Model {
         protected $table = 'related';
     };
 
     $parentModel = new class extends Model {
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         use HasCustomRelations;
 
         protected $table = 'parent';
     };
 
+<<<<<<< HEAD
     $baseConstraints = fn (CustomRelation $relation) => null;
     /** @param array<int, Model> $models */
     $eagerConstraints = fn (CustomRelation $relation, array $models) => null;
@@ -44,6 +59,11 @@ it('creates custom relation', function (): void {
 >>>>>>> laraxot/dev
      */
     $eagerMatcher = fn (array $models, Collection $results, mixed $relation) => [];
+=======
+    $baseConstraints = fn ($relation) => null;
+    $eagerConstraints = fn ($relation, $models) => null;
+    $eagerMatcher = fn ($models, $results, $relation) => [];
+>>>>>>> 8d801bbe (Check & fix styling)
 
     $relation = $parentModel->customRelation(
         get_class($relatedModel),

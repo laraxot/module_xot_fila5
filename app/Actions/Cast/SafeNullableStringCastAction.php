@@ -4,17 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
+<<<<<<< HEAD
 final class SafeNullableStringCastAction
 {
+=======
+use Spatie\QueueableAction\QueueableAction;
+
+final class SafeNullableStringCastAction
+{
+    use QueueableAction;
+
+>>>>>>> 8d801bbe (Check & fix styling)
     public function execute(mixed $value): ?string
     {
         $stringValue = SafeStringCastAction::cast($value);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $stringValue !== '' ? $stringValue : null;
 =======
         return '' !== $stringValue ? $stringValue : null;
 >>>>>>> laraxot/dev
+=======
+        return '' !== $stringValue ? $stringValue : null;
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 
     public static function cast(mixed $value): ?string

@@ -49,6 +49,7 @@ interface ModelInputContract extends ModelContract
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -59,6 +60,8 @@ interface ModelInputContract extends ModelContract
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Form Guidelines](../forms/readme.md)
 - [Input Components](../components/form-components.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -66,6 +69,10 @@ interface ModelInputContract extends ModelContract
 - [Form Guidelines](../forms/README.md)
 - [Input Components](../components/FORM-COMPONENTS.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< HEAD
 - [Contracts Overview](./README.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Contracts Overview](./README.md)
+>>>>>>> 8d801bbe (Check & fix styling)

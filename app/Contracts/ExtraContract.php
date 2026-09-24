@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -23,6 +31,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<Model> withExtraAttributes()
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int $id
  * @property string $model_type
  * @property string $model_id
@@ -31,6 +40,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string      $model_type
  * @property string      $model_id
 >>>>>>> laraxot/dev
+=======
+ * @property int         $id
+ * @property string      $model_type
+ * @property string      $model_id
+>>>>>>> 8d801bbe (Check & fix styling)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -54,9 +68,15 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 interface ExtraContract {}
 =======
 interface ExtraContract
 {
 }
 >>>>>>> laraxot/dev
+=======
+interface ExtraContract
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

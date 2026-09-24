@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * -WIP.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Actions\Filament;
 
 // use Filament\Forms\Commands\Concerns\CanGenerateForms; // Non disponibile in Filament v4
@@ -31,12 +39,16 @@ class GenerateTableColumnsByFileAction
     /**
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param File $file Il file della risorsa Filament
      *                   =======
      * @param File $file Il file della risorsa Filament
      *                   >>>>>>> laraxot/dev
+=======
+     * @param File $file Il file della risorsa Filament
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(File $file): void
     {
@@ -115,12 +127,16 @@ class GenerateTableColumnsByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param File $file Il file da analizzare
      *                   =======
      * @param File $file Il file da analizzare
      *                   >>>>>>> laraxot/dev
+=======
+     * @param File $file Il file da analizzare
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function ddFile(File $file): void
     {

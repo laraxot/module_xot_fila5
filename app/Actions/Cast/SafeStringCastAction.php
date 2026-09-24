@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Action per convertire in modo sicuro un valore mixed in string.
  *
@@ -12,10 +17,16 @@ namespace Modules\Xot\Actions\Cast;
  */
 class SafeStringCastAction
 {
+<<<<<<< HEAD
+=======
+    use QueueableAction;
+
+>>>>>>> 8d801bbe (Check & fix styling)
     /**
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param mixed $value Il valore da convertire
@@ -36,6 +47,9 @@ class SafeStringCastAction
      * >>>>>>> .merge_file_dmjXLI
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param mixed $value Il valore da convertire
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return string Il valore convertito in string
      */
@@ -69,6 +83,7 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param mixed $value Il valore da convertire
@@ -89,6 +104,9 @@ class SafeStringCastAction
      * >>>>>>> .merge_file_dmjXLI
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param mixed $value Il valore da convertire
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return string Il valore convertito in string
      */

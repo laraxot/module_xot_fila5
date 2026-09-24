@@ -1,15 +1,19 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ZUeZ7R
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 module: theme
 topic: content-selection-and-highlighting
 canonical: ../../../Themes/docs/shared-components/content_selection_and_highlighting.txt
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/content_selection_and_highlighting.txt
 =======
 <<<<<<< HEAD
@@ -136,3 +140,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/content_sele
 >>>>>>> .merge_file_gSw9bW
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/content_selection_and_highlighting.txt
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_om1mNa
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I5DMEC
 >>>>>>> .merge_file_LLekZv
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: issue-05-phpstan-272
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_om1mNa
 =======
 <<<<<<< .merge_file_nsyd9C
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_I5DMEC
 >>>>>>> .merge_file_LLekZv
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Issue GH #05 — PHPStan 272 errors: piano di risoluzione modulo-per-modulo
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

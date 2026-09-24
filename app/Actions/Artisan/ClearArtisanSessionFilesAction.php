@@ -20,6 +20,7 @@ class ClearArtisanSessionFilesAction
 
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
 <<<<<<< .merge_file_EYQlCp
@@ -32,6 +33,9 @@ class ClearArtisanSessionFilesAction
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_7u3lBJ
 >>>>>>> laraxot/dev
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 File::delete($file->getRealPath());
             }
         }

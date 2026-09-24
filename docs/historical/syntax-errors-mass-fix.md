@@ -2,6 +2,7 @@
 
 > **Versione**: 1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
 =======
 <<<<<<< .merge_file_SwY9HF
@@ -14,6 +15,9 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_95WQCz
 >>>>>>> laraxot/dev
+=======
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Stato**: ✅ COMPLETATO
 **Causa Radice**: Conflitti Git risolti automaticamente con duplicazioni non rilevate
@@ -281,6 +285,7 @@ done < /tmp/broken_files.txt
 **Status**: ✅ COMPLETATO
 **Filosofia**: "Ogni bug è un maestro. Ogni fix è una lezione."
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Cronologia**: Vedi [CHANGELOG.md](changelog.md)
 =======
 <<<<<<< .merge_file_SwY9HF
@@ -293,3 +298,6 @@ done < /tmp/broken_files.txt
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_95WQCz
 >>>>>>> laraxot/dev
+=======
+**Cronologia**: Vedi [CHANGELOG.md](changelog.md)
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -13,8 +13,11 @@ use Spatie\ModelStatus\Status;
 /**
  * Modules\Xot\Contracts\ModelWithStatusContract.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @property int                     $id
  * @property int|null                $user_id
  * @property string|null             $post_type
@@ -30,6 +33,7 @@ use Spatie\ModelStatus\Status;
  * @property Collection<int, Status> $statuses
  * @property int|null                $statuses_count
  *
+<<<<<<< HEAD
  * @method int|string|null                              getKey()
  * @method string                                       getRouteKey()
  * @method string                                       getRouteKeyName()
@@ -172,6 +176,8 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
  *                                                                                           =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @method mixed                                                           getKey()
  * @method string                                                          getRouteKey()
  * @method string                                                          getRouteKeyName()
@@ -188,6 +194,7 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
+<<<<<<< HEAD
  *                                                                                           >>>>>>> laraxot/dev
  *                                                                                           >>>>>>> .merge_file_rpt3WK
  *                                                                                           >>>>>>> .merge_file_wDA4Ri
@@ -211,6 +218,8 @@ use Spatie\ModelStatus\Status;
  *                                                                                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
  *                                                                                           >>>>>>> .merge_file_WmDkAR
  *                                                                                           >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model

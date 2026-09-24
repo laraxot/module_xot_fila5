@@ -194,6 +194,7 @@ Ogni nuovo modello deve essere documentato in:
 - [Regole Migrazioni](migrations.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
 =======
 <<<<<<< HEAD
@@ -202,3 +203,6 @@ Ogni nuovo modello deve essere documentato in:
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,14 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Table;
 
 use Illuminate\Database\Eloquent\Model;
@@ -16,17 +20,32 @@ use Modules\Xot\Actions\Export\PdfByModelAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 
 class PdfAction extends XotBaseAction
+=======
+declare(strict_types=1);
+
+namespace Modules\Xot\Filament\Actions\Table;
+
+use Filament\Actions\Action;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Export\PdfByModelAction;
+
+class PdfAction extends Action
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     protected function setUp(): void
     {
         parent::setUp();
         $this->translateLabel()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             ->tooltip('pdf')
             ->openUrlInNewTab()
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('heroicon-o-document-arrow-down')
+<<<<<<< HEAD
 =======
             ->label('')
             ->iconButton()
@@ -35,6 +54,8 @@ class PdfAction extends XotBaseAction
             ->openUrlInNewTab()
             ->icon('xot-files.pdf')
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             ->action(fn (Model $record) => app(PdfByModelAction::class)->execute(model: $record));
     }
 }

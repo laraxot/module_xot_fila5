@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
 =======
@@ -45,3 +46,7 @@ https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directi
 >>>>>>> .merge_file_GTrFXC
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Simplify Validation Messaging with Blade Directives
+https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -13,6 +13,7 @@ related:
   - ../../../../../../bashscripts/ai/rules/composer-root-skeleton-modular.md
   - ../../../../../../docs/stories/STORY-282-composer-root-require-skeleton-modular.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
 =======
 <<<<<<< HEAD
@@ -28,6 +29,9 @@ related:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  - ./composer-merge-plugin-modules-only.md
+>>>>>>> 8d801bbe (Check & fix styling)
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
   - ./theme-psr4-autoload-without-merge.md
 ---
@@ -89,6 +93,7 @@ Questa e' la boundary corretta:
 Confronto 2026-06-30:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -150,10 +155,13 @@ Confronto 2026-06-30:
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 
 `cd laravel && composer validate && composer show --direct`
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -173,3 +181,5 @@ Confronto 2026-06-30:
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

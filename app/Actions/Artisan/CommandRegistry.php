@@ -64,6 +64,7 @@ class CommandRegistry
     private function registerDefaultHandlers(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_h1HbWt
 <<<<<<< HEAD
@@ -72,6 +73,8 @@ class CommandRegistry
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_VvrbGp
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         $this->register(new MigrationCommandHandler())
             ->register(new CacheCommandHandler())
             ->register(new RouteCommandHandler())
@@ -81,11 +84,15 @@ class CommandRegistry
             ->register(new OptimizeCommandHandler())
             ->register(new QueueCommandHandler())
             ->register(new DebugbarCommandHandler());
+<<<<<<< HEAD
 <<<<<<< .merge_file_h1HbWt
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         $this->register(new MigrationCommandHandler)
             ->register(new CacheCommandHandler)
             ->register(new RouteCommandHandler)
@@ -96,11 +103,14 @@ class CommandRegistry
             ->register(new QueueCommandHandler)
             ->register(new DebugbarCommandHandler);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_VvrbGp
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
     }
 }

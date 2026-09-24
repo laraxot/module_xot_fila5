@@ -5,14 +5,18 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Tables\Filters;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zj90Sv
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
  * Ternary 
 =======
@@ -20,12 +24,15 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * Ternary sì/no/tutti con ToggleButtons raggruppati (non Select full-width).
  *
  * Filament TernaryFilter estende SelectFilter: semanticamente ok, UI pesante per 3 stati.
  * Qui si sostituisce il field con ToggleButtons grouped; le query boolean del parent restano.
  *
  * Deselezionare = stato blank («tutti»), come il placeholder del Select precedente.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -43,12 +50,18 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  * parent restano invariate.
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+=======
+=======
+ * Ternary 
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 <<<<<<< HEAD
         /*
         $this->schema(function (): array {
@@ -60,10 +73,13 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 =======
         /*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
         $this->schema(function (): array {
             return [
@@ -75,6 +91,11 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                 \Filament\Forms\Components\ToggleButtons::make('value')
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+=======
+        $this->schema(function (): array {
+            return [
+                ToggleButtons::make('value')
+>>>>>>> 8d801bbe (Check & fix styling)
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -86,17 +107,21 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         0 => 'danger',
                     ])
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
         */
 =======
 <<<<<<< .merge_file_zj90Sv
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         */
@@ -109,5 +134,9 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         */
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+=======
+        */
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }

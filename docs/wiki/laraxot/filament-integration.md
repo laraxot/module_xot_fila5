@@ -21,6 +21,7 @@ updated: 2026-08-24
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -41,6 +42,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_505tCX
 >>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         // Campi base

@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [QA-VERIFICATION.md](./qa-verification.md)
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: QA Verification Report - 2026-06-30
 date: 2026-06-30
 scope: Capitalized folders refactor + Critical bug discovery
@@ -183,5 +186,8 @@ git log --oneline -1
 **CRITICAL NOTE FOR FUTURE COMMITS**:  
 Read `ERROR-ANALYSIS-HELPERS-CAPITALIZATION.md` and `ERROR-ANALYSIS-FOLDER-RENAME-GOLDEN-RULE.md` before making any similar refactors.
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -4,6 +4,7 @@
 
 1. **Laraxot Migration Philosophy**: In a module, for each table there must be only ONE migration responsible for its creation. Multiple migrations for the same table in the same module is a violation of Laraxot philosophy. Subsequent migrations should extend existing tables using tableUpdate() rather than recreating them with tableCreate(). Always use hasColumn(), hasTable(), hasIndex() for safe checks.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@
 4. **GitHub Language and Metrics Rule**: Le GitHub Issue e le GitHub Discussion del progetto vanno scritte in italiano. Quando possibile, usare percentuali per esprimere avanzamento, rischio, copertura, priorita' o confidenza.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 2. **NO property_exists() on Eloquent models**: Use hasAttribute(), isFillable() or Schema::hasColumn() instead, because model attributes are magical properties.
 
@@ -57,6 +60,7 @@
 2. **Code Quality Tools**: Run PHPStan, PHPMD, and PHPInsights after every change
 3. **Documentation Updates**: Always update docs folders when making changes to the codebase
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -65,3 +69,5 @@
 6. **Action-First Architecture**: Do not introduce generic `Services` for business logic. The preferred pattern is explicit Action classes, and for reusable/async work the standard is `spatie/laravel-queueable-action` with `execute()` as project convention.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

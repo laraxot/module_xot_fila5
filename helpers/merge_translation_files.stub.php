@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IpxFJs
 <<<<<<< HEAD
@@ -14,6 +15,10 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_wgQVYe
+=======
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 /**
  * Stub file for PHPStan static analysis of merge_translation_files function.
@@ -25,6 +30,7 @@ if (! function_exists('merge_translation_files')) {
      * Merge multiple PHP translation files into a single array.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $first  First translation file path
      * @param  string  ...$rest  Additional translation file paths
 =======
@@ -35,6 +41,8 @@ if (! function_exists('merge_translation_files')) {
      *
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param string $first   First translation file path
      * @param string ...$rest Additional translation file paths
      *
@@ -42,6 +50,7 @@ if (! function_exists('merge_translation_files')) {
      * @param  string  $first  First translation file path
      * @param  string  ...$rest  Additional translation file paths
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
      * @param string $first   First translation file path
@@ -49,6 +58,8 @@ if (! function_exists('merge_translation_files')) {
      *
 >>>>>>> .merge_file_wgQVYe
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array

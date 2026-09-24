@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\LogResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -12,6 +13,8 @@ class ViewLog extends XotBaseViewRecord
 {
     protected static string $resource = LogResource::class;
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
@@ -27,6 +30,11 @@ class ViewLog extends XotBaseViewRecord
     #[\Override]
     protected function getInfolistSchema(): array
     {
+<<<<<<< HEAD
+=======
+        $log = $this->getRecord()->getModel();
+
+>>>>>>> 8d801bbe (Check & fix styling)
         return [
             'log_info' => Section::make('Informazioni Log')->schema([
                 'log_grid' => Grid::make(['default' => 3])->schema([
@@ -46,5 +54,8 @@ class ViewLog extends XotBaseViewRecord
             ]),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }

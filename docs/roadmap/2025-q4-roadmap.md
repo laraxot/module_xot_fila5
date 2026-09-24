@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [q4-roadmap.md](./q4-roadmap.md)
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot Module Roadmap (2025 Q4)
 
 ## Vision & Scope
@@ -37,5 +40,8 @@ Vedi il file canonico: [q4-roadmap.md](./q4-roadmap.md)
 
 ## Acceptance Criteria
 - All modules compile against Xot contracts without overrides
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // use Modules\Xot\Services\ArrayService;
 >>>>>>> laraxot/dev
+=======
+// use Modules\Xot\Services\ArrayService;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Spatie\QueueableAction\QueueableAction;
 
 class GetFilenameByClassnameAction

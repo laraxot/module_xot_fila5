@@ -65,6 +65,7 @@ if (property_exists($stateObject, 'name')) {
 - **User**: Authentication with advanced features
 - **Cms**: Content management system
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris**: Main application module
 =======
 <<<<<<< HEAD
@@ -74,6 +75,9 @@ if (property_exists($stateObject, 'name')) {
 - **ExternalProject**: Main application module
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Quaeris**: Main application module
+>>>>>>> 8d801bbe (Check & fix styling)
 - **UI**: Shared UI components
 - **Activity**: Activity tracking and logging
 - **Tenant**: Multi-tenancy support
@@ -169,6 +173,7 @@ if (property_exists($stateObject, 'name')) {
 
 *Last Updated: November 17, 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Status: ✅ COMPLETE - All quality improvements implemented*
 =======
 <<<<<<< HEAD
@@ -177,3 +182,6 @@ if (property_exists($stateObject, 'name')) {
 *Status: ✅ COMPLETE - All quality improvements implemented*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Status: ✅ COMPLETE - All quality improvements implemented*
+>>>>>>> 8d801bbe (Check & fix styling)

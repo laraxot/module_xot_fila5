@@ -18,6 +18,7 @@ use Sushi\Sushi;
  * @property string|null $id
  * @property string|null $name
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int|null $size
  *
  * @method static LogFactory factory($count = null, $state = [])
@@ -26,6 +27,11 @@ use Sushi\Sushi;
  *
  * @method static LogFactory          factory($count = null, $state = [])
 >>>>>>> laraxot/dev
+=======
+ * @property int|null    $size
+ *
+ * @method static LogFactory          factory($count = null, $state = [])
+>>>>>>> 8d801bbe (Check & fix styling)
  * @method static Builder<static>|Log newModelQuery()
  * @method static Builder<static>|Log newQuery()
  * @method static Builder<static>|Log query()
@@ -36,10 +42,14 @@ use Sushi\Sushi;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $file_content
 =======
  * @property string|null          $file_content
 >>>>>>> laraxot/dev
+=======
+ * @property string|null          $file_content
+>>>>>>> 8d801bbe (Check & fix styling)
  * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent
@@ -60,10 +70,14 @@ class Log extends BaseModel
 
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() === 'log') {
 =======
             if ('log' === $file->getExtension()) {
 >>>>>>> laraxot/dev
+=======
+            if ('log' === $file->getExtension()) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 $rows[] = [
                     'id' => $file->getFilenameWithoutExtension(),
                     'name' => $file->getFilenameWithoutExtension(),

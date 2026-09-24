@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_Iqy4Xz
@@ -33,6 +34,8 @@ note: "Convertito da laravel_mix.txt (documento) da convert-docs-txt-to-md.py."
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 //-------------------------------------------------------------------------------------
 Use Laravel Mix without Laravel (using npm)
 https://dev.to/nickfrosty/use-laravel-mix-without-laravel-using-npm-m09
@@ -90,6 +93,7 @@ https://frostbutter.com/articles/use-laravel-mix-without-laravel-using-npm/
 //-------------------------------------------------------------------------------------
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -103,3 +107,6 @@ https://frostbutter.com/articles/use-laravel-mix-without-laravel-using-npm/
 //-------------------------------------------------------------------------------------
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+//-------------------------------------------------------------------------------------
+>>>>>>> 8d801bbe (Check & fix styling)

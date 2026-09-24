@@ -7,17 +7,23 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\file_get_contents;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 class ExecuteSqlFileCommand extends Command
 {
     /**

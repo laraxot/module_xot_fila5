@@ -115,6 +115,7 @@ class PerformanceResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -135,6 +136,10 @@ class PerformanceResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0zKIQB
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('nome')

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [docs-improvements-nov.md](./docs-improvements-nov.md)
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Miglioramenti Documentazione - Novembre 2025
 
 ## 🎯 Obiettivo
@@ -130,7 +133,11 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
+<<<<<<< HEAD
 public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
+=======
+public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -173,12 +180,20 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
+<<<<<<< HEAD
 [guida principale](../../../../docs/guide.md)
+=======
+[guida principale](../../../docs/guide.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
+=======
+[user docs](../../User/docs/user-guide.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### All'interno dello stesso modulo
@@ -284,5 +299,8 @@ find . -name "readme.md" -o -name "Readme.md"
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -29,12 +29,15 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -316,6 +319,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -325,6 +329,8 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
@@ -333,6 +339,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
 =======
 <<<<<<< HEAD
@@ -341,3 +348,6 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
+>>>>>>> 8d801bbe (Check & fix styling)

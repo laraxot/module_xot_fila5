@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/HichemTab-tech/LaravelFS
 =======
 =======
@@ -73,3 +74,6 @@ https://github.com/HichemTab-tech/LaravelFS
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/HichemTab-tech/LaravelFS
+>>>>>>> 8d801bbe (Check & fix styling)

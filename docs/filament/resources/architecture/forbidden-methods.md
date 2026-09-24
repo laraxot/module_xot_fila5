@@ -14,9 +14,32 @@ Le classi che estendono `XotBaseResource` **NON DEVONO MAI** implementare i segu
 ### Metodi di form e navigazione
 - ❌ `form(Form $form): Form`
 - ❌ `table(Table $table): Table`
+<<<<<<< HEAD
 - ❌ `getPages()` (se contiene solo route standard)
 - ❌ `getRelations()` (se restituisce un array vuoto)
 
+=======
+- ❌ `getPages()` (se contiene **solo** `index`, `create`, `edit` e le Page rispettano la convenzione naming — vedi sotto)
+- ❌ `getRelations()` (se restituisce un array vuoto)
+
+### `getPages()` — prerequisito naming
+
+`XotBaseResource::getPages()` risolve automaticamente:
+
+- `List{Str::plural($name)}`, `Create{$name}`, `Edit{$name}` nel namespace `{Resource}\Pages\`
+- `View{$name}` solo se la classe esiste
+
+Rimuovere l'override **solo** se le classi Page reali hanno **esattamente** quei nomi. Se la Resource è `AssenzeResource` ma le Page sono `ListAssenza`, l'override resta obbligatorio.
+
+Guida completa: [getpages-redundancy-rule.md](../../getpages-redundancy-rule.md)
+
+Verifica:
+
+```bash
+cd laravel && php ../bashscripts/filament/analyze-redundant-getpages.php
+```
+
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Motivazione architetturale
 
 Questi metodi sono già implementati in `XotBaseResource` e forniscono funzionalità standard ottimizzate per il progetto. Sovrascriverli:
@@ -36,6 +59,7 @@ class ProductResource extends XotBaseResource
     // UNICI metodi che dovrebbero essere implementati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -49,6 +73,9 @@ class ProductResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

@@ -304,6 +304,7 @@ Moduli con logica inline complessa:
 
 ### Guide Filosofiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -315,6 +316,8 @@ Moduli con logica inline complessa:
 - [Progress Tracker](../../sigma/docs/refactoring-progress-tracker.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Accessor Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
 - [Philosophy Guide PTVX](../../../docs/philosophy-guide.md)
 
@@ -329,6 +332,7 @@ Moduli con logica inline complessa:
 
 ### Implementazioni Modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -340,6 +344,8 @@ Moduli con logica inline complessa:
 **Creato**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Sigma - SchedaTrait](../../Sigma/docs/session-complete-summary.md)
 - [IndennitaCondizioniLavoro - Audit](../../IndennitaCondizioniLavoro/docs/accessor-guard-audit.md)
 
@@ -349,6 +355,7 @@ Moduli con logica inline complessa:
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 =======
 <<<<<<< HEAD
@@ -357,3 +364,6 @@ Moduli con logica inline complessa:
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
+>>>>>>> 8d801bbe (Check & fix styling)

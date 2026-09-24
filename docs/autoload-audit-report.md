@@ -25,6 +25,7 @@ Each module's composer.json should have:
 ### Modules with CORRECT configuration:
 - User ✓
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Quaeris ✓
 =======
 <<<<<<< HEAD
@@ -33,6 +34,9 @@ Each module's composer.json should have:
 - healthcare_app ✓
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Quaeris ✓
+>>>>>>> 8d801bbe (Check & fix styling)
 - UI ✓
 - Tenant ✓
 - Limesurvey ✓
@@ -59,6 +63,7 @@ All modules now follow the correct autoload configuration standard. The main dev
 ## Recommendations
 - Continue to validate that all new modules follow the standard configuration
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Implement automated checks to prevent this type of configuration issue
 =======
 <<<<<<< HEAD
@@ -67,3 +72,6 @@ All modules now follow the correct autoload configuration standard. The main dev
 - Implement automated checks to prevent this type of configuration issue
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Implement automated checks to prevent this type of configuration issue
+>>>>>>> 8d801bbe (Check & fix styling)

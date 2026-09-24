@@ -23,6 +23,7 @@ class HasExtraMockExtra extends Model implements ExtraContract
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_eWqfDm
 <<<<<<< HEAD
@@ -37,16 +38,21 @@ class HasExtraMockExtra extends Model implements ExtraContract
 =======
 =======
 >>>>>>> .merge_file_EDcINl
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param array<string, mixed> $attributes
      */
     public static function withAttributes(array $attributes): self
     {
         $extra = new self();
+<<<<<<< HEAD
 <<<<<<< .merge_file_eWqfDm
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_EDcINl
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         $extra->extra_attributes = collect($attributes);
 
         return $extra;

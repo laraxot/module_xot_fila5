@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)
@@ -47,6 +50,7 @@
 - Evaluate if all these models are actually used in business logic
 - Consider that many Xot models may be framework infrastructure rather than business entities
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -58,3 +62,5 @@ canonical: ../../../Themes/docs/shared-components/model-classification.md
 See canonical documentation: ../../../Themes/docs/shared-components/model-classification.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,11 +1,14 @@
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 # Risoluzione Merge Conflicts Massivi - [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 🔥 Problema Iniziale
 
@@ -284,6 +287,7 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
 - [Code Quality Standards](./code-quality-standards.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 =======
 <<<<<<< HEAD
@@ -292,3 +296,6 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+>>>>>>> 8d801bbe (Check & fix styling)

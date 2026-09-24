@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Arrays;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_FK8Wsu
 <<<<<<< HEAD
@@ -19,22 +20,28 @@ use function Safe\json_encode;
 =======
 =======
 >>>>>>> .merge_file_9dJ2hL
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use function Safe\file_put_contents;
 use function Safe\json_encode;
 
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_FK8Wsu
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_9dJ2hL
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 class SaveJsonArrayAction
 {
     use QueueableAction;
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
 =======
 <<<<<<< .merge_file_FK8Wsu
@@ -47,6 +54,9 @@ class SaveJsonArrayAction
      * @param array<int|string, mixed> $data
 >>>>>>> .merge_file_9dJ2hL
 >>>>>>> laraxot/dev
+=======
+     * @param array<int|string, mixed> $data
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(array $data, string $filename): bool
     {

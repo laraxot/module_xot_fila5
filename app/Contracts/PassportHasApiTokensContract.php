@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * ---.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -47,6 +55,7 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<int, string> $scopes
@@ -54,6 +63,9 @@ interface PassportHasApiTokensContract
      * @param array<int, string> $scopes
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param array<int, string> $scopes
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return PersonalAccessTokenResult<Token>
      */

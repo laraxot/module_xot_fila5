@@ -3,12 +3,15 @@
 ## Collegamenti
 - [Documentazione generale progetto](/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Documentazione generale progetto](/docs/readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -432,6 +435,7 @@ TextInput::make('name')
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
 =======
 <<<<<<< HEAD
@@ -440,3 +444,6 @@ TextInput::make('name')
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+>>>>>>> 8d801bbe (Check & fix styling)

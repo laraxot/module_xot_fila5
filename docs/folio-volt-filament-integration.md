@@ -5,6 +5,7 @@
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -205,6 +206,8 @@ $submit = function() {
 - [Lang](../lang/docs/readme.md) - Traduzioni
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Documentazione completa sull'architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Struttura dei moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
@@ -321,6 +324,7 @@ $submit = function() {
 
 ### Modulo UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -391,6 +395,8 @@ $submit = function() {
 - [Visualizzazione](../chart/docs/visualization.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -456,6 +462,7 @@ $submit = function() {
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Visualizzazione](../Chart/docs/visualization.md)
 =======
 <<<<<<< HEAD
@@ -464,3 +471,6 @@ $submit = function() {
 - [Visualizzazione](../Chart/docs/visualization.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Visualizzazione](../Chart/docs/visualization.md)
+>>>>>>> 8d801bbe (Check & fix styling)

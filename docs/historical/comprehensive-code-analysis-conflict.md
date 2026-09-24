@@ -178,16 +178,20 @@ try {
 // ContactResource.php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
@@ -197,6 +201,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('first_name'),
@@ -207,16 +213,20 @@ public static function getFormSchema(): array
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
@@ -226,6 +236,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('name')->required(),
@@ -323,16 +335,20 @@ class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TwsEEs
@@ -342,6 +358,8 @@ class ContactResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('first_name'),
@@ -475,6 +493,7 @@ return [
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
 =======
 <<<<<<< .merge_file_TwsEEs
@@ -487,6 +506,9 @@ return [
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GEuFia
 >>>>>>> laraxot/dev
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

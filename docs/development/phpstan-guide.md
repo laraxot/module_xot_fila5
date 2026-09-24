@@ -155,6 +155,7 @@ use Modules\User\Models\User; // Namespace corretto
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -167,11 +168,17 @@ use Modules\User\Models\User; // Namespace corretto
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Ultimo aggiornamento:** Gennaio 2025
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 
 ---
 
+<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> 8d801bbe (Check & fix styling)

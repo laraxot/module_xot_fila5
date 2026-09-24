@@ -764,6 +764,7 @@ protected function getData(): array
 ```bash
 # ✅ Zero errori dopo refactoring
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 =======
 <<<<<<< .merge_file_KRtkJe
@@ -776,11 +777,15 @@ protected function getData(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TkhYUu
 >>>>>>> laraxot/dev
+=======
+./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
+<<<<<<< HEAD
 <<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
 =======
@@ -794,6 +799,9 @@ protected function getData(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TkhYUu
 >>>>>>> laraxot/dev
+=======
+./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### Performance Metrics

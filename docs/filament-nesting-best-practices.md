@@ -3,6 +3,7 @@
 ## 📋 Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
 =======
 <<<<<<< .merge_file_Y6bClQ
@@ -16,6 +17,9 @@ Questo documento fornisce best practices per implementare Filament Nesting in pr
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_aOT69s
 >>>>>>> laraxot/dev
+=======
+Questo documento fornisce best practices per implementare Filament Nesting in progetti Laraxot, basandosi sulla documentazione ufficiale di Filament 5.x e sulla strategia di implementazione nel modulo Quaeris.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -426,6 +430,7 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 - **Filament Relation Managers**: https://filamentphp.com/docs/5.x/resources/managing-relationships
 - **XotBaseResource**: `/Modules/Xot/docs/filament/resources.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
 =======
 <<<<<<< .merge_file_Y6bClQ
@@ -439,11 +444,15 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_aOT69s
 >>>>>>> laraxot/dev
+=======
+- **Quaeris Nesting Strategy**: `/Modules/Quaeris/docs/filament-nesting-strategy.md`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
 **Ultimo aggiornamento**: 23 Gennaio 2026  
 **Stato**: Documentazione Best Practices  
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Applicabile a**: Tutti i moduli Laraxot
 =======
@@ -457,3 +466,6 @@ protected static bool $shouldRegisterNavigation = false; // ✅
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_aOT69s
 >>>>>>> laraxot/dev
+=======
+**Applicabile a**: Tutti i moduli Laraxot
+>>>>>>> 8d801bbe (Check & fix styling)

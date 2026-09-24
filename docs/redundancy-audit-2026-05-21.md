@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "Xot redundancy audit 2026-05-21"
 type: audit
 module: Xot
@@ -57,5 +60,8 @@ Evidence commands:
 - Duplicate FQCN scan with PHP `RecursiveDirectoryIterator`.
 - Byte-identical file scan with `sha256sum`.
 - Case-only path scan using lowercase path map.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

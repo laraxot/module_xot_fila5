@@ -8,6 +8,7 @@ use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use ReflectionClass;
 =======
 <<<<<<< .merge_file_ENGPaN
@@ -18,6 +19,8 @@ use ReflectionClass;
 =======
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\glob;
 
@@ -63,6 +66,7 @@ describe('Xot coverage boost', function (): void {
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             $seen++;
 =======
 <<<<<<< .merge_file_ENGPaN
@@ -75,6 +79,9 @@ describe('Xot coverage boost', function (): void {
             ++$seen;
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+=======
+            ++$seen;
+>>>>>>> 8d801bbe (Check & fix styling)
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un enum concreto');
     });
@@ -82,6 +89,7 @@ describe('Xot coverage boost', function (): void {
     test('cast and string actions resolve from container', function (): void {
         foreach (array_merge(xotBoostClasses('Actions/Cast/*.php'), xotBoostClasses('Actions/String/*.php')) as $class) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
 <<<<<<< .merge_file_ENGPaN
@@ -94,6 +102,9 @@ describe('Xot coverage boost', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> 8d801bbe (Check & fix styling)
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -105,6 +116,7 @@ describe('Xot coverage boost', function (): void {
     test('value objects and datas are constructible', function (): void {
         foreach (array_merge(xotBoostClasses('ValueObjects/*.php'), xotBoostClasses('Datas/*.php')) as $class) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
 <<<<<<< .merge_file_ENGPaN
@@ -117,6 +129,9 @@ describe('Xot coverage boost', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> 8d801bbe (Check & fix styling)
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }

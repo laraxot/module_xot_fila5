@@ -5,6 +5,7 @@ sources: []
 confidence: high
 created: 2026-05-07
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -18,6 +19,9 @@ discussions: ["https://github.com/laraxot/base_techplanner_fila5/discussions/12"
 updated: 2026-05-07
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+updated: 2026-05-07
+>>>>>>> 8d801bbe (Check & fix styling)
 tags: [xotbase, filament, tables, enforcement]
 related:
   - xotbase-resource-form-pattern.md
@@ -39,6 +43,7 @@ Resources: CacheLock, Cache, Extra, Log, Module, Session
 
 Note: XotBaseResourceTable.php itself is the abstract base class (not counted above).
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -48,3 +53,5 @@ Note: XotBaseResourceTable.php itself is the abstract base class (not counted ab
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

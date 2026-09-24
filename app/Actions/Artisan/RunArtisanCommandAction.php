@@ -20,6 +20,7 @@ class RunArtisanCommandAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
 =======
 <<<<<<< .merge_file_KJTBr5
@@ -32,6 +33,9 @@ class RunArtisanCommandAction
      * @param array<string, mixed> $arguments
 >>>>>>> .merge_file_hPYTqt
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(string $command, array $arguments = []): string
     {
@@ -40,6 +44,7 @@ class RunArtisanCommandAction
 
             return '[<pre>'.Artisan::output().'</pre>]';
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (Exception $exception) {
 =======
 <<<<<<< .merge_file_KJTBr5
@@ -52,6 +57,9 @@ class RunArtisanCommandAction
         } catch (\Exception $exception) {
 >>>>>>> .merge_file_hPYTqt
 >>>>>>> laraxot/dev
+=======
+        } catch (\Exception $exception) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return '[<pre>'.$exception->getMessage().'</pre>]';
         }
     }

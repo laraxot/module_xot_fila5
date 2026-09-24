@@ -228,14 +228,18 @@ grep -r "extends.*Resource" app/Filament/Resources/
 ## 🔗 Collegamenti Sistema
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [**Documentazione Core Sistema**](../../docs/core/)
 - [**PHPStan Guide**](../../docs/core/phpstan-guide.md)
 - [**Filament Best Practices**](../../docs/core/filament-best-practices.md)
 - [**Convenzioni Sistema**](../../docs/core/conventions.md)
 - [**Template Moduli**](../../docs/templates/)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -246,6 +250,8 @@ grep -r "extends.*Resource" app/Filament/Resources/
 - [**Template Moduli**](../../../docs/templates/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -254,6 +260,7 @@ grep -r "extends.*Resource" app/Filament/Resources/
 **Stato:** In attesa implementazione
 **Responsabile:** Team Core
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data:** 2025-01-XX
 =======
 <<<<<<< HEAD
@@ -262,3 +269,6 @@ grep -r "extends.*Resource" app/Filament/Resources/
 **Data:** 2025-01-XX
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data:** 2025-01-XX
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -10,9 +10,13 @@ use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Xot\Filament\Resources\ExtraResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -25,7 +29,13 @@ class ListExtras extends XotBaseListRecords
     protected static string $resource = ExtraResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+    /**
+     * @return array<string, TextColumn>
+     */
+>>>>>>> 8d801bbe (Check & fix styling)
     #[\Override]
     public function getTableColumns(): array
     {
@@ -37,7 +47,10 @@ class ListExtras extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     /**
      * @return array<BaseFilter>
      */

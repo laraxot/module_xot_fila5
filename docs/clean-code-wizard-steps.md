@@ -28,17 +28,21 @@ protected static function getPersonalStep(): Forms\Components\Wizard\Step
 ## Collegamenti
 - [Applicazione e nota nel modulo Patient](../../Patient/docs/clean-code-wizard-steps.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Applicazione e nota nel modulo Patient](../../patient/docs/clean-code-wizard-steps.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Questa regola è trasversale e vincolante per tutti i moduli.**
 
 ## Collegamenti tra versioni di clean-code-wizard-steps.md
 * [clean-code-wizard-steps.md](../../Patient/docs/clean-code-wizard-steps.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -46,3 +50,5 @@ protected static function getPersonalStep(): Forms\Components\Wizard\Step
 * [clean-code-wizard-steps.md](../../patient/docs/clean-code-wizard-steps.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

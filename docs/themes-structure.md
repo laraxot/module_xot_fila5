@@ -230,9 +230,12 @@ resources/views/
 * [themes-structure.md](docs/tecnico/themes-structure.md)
 * [themes-structure.md](../../../Xot/docs/themes-structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 * [themes-structure.md](../../../xot/docs/themes-structure.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

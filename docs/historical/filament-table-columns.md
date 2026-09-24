@@ -29,6 +29,7 @@ public function getTableColumns(): array
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Esempio e Applicazione - Modulo User](filament_table_columns.md)
 =======
 <<<<<<< .merge_file_qJB51K
@@ -41,6 +42,9 @@ public function getTableColumns(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_OntG7E
 >>>>>>> laraxot/dev
+=======
+- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 
 ## Nota storica: correzione XotBaseManageRelatedRecords

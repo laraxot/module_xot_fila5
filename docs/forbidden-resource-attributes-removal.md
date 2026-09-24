@@ -3,12 +3,15 @@
 **Data**: 2026-01-09  
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-2026-01-09.md`)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-[DATE].md`)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -183,6 +186,7 @@ return [
 
 **Report Completo**: Vedi `forbidden-resource-attributes-verification-2026-01-09.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -191,3 +195,5 @@ return [
 **Report Completo**: Vedi `forbidden-resource-attributes-verification-[DATE].md`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

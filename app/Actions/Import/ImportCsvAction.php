@@ -12,19 +12,25 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ColumnData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\ini_set;
 
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\ini_set;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 class ImportCsvAction
 {
     use QueueableAction;
@@ -33,16 +39,22 @@ class ImportCsvAction
      * Import a CSV file into a database table.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $disk  the storage disk where the file is located
      * @param  string  $filename  the name of the file to import
      * @param  string  $db  the database connection name
      * @param  string  $tbl  the table name where data will be imported
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param string $disk     the storage disk where the file is located
      * @param string $filename the name of the file to import
      * @param string $db       the database connection name
      * @param string $tbl      the table name where data will be imported
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @throws \Exception
      */
@@ -95,7 +107,12 @@ class ImportCsvAction
         $excludedColumns = ['id'];
 
         return array_map(
+<<<<<<< HEAD
             function (string $column) use ($conn, $tbl) {
+=======
+            function ($column) use ($conn, $tbl) {
+                /** @var string $column */
+>>>>>>> 8d801bbe (Check & fix styling)
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(
@@ -111,21 +128,30 @@ class ImportCsvAction
      * Prepare fields for the SQL query.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, ColumnData>  $columns
 =======
      * @param array<int, ColumnData> $columns
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, ColumnData> $columns
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return array<string>
      */
     private function prepareFields(array $columns): array
     {
         return array_map(
 <<<<<<< HEAD
+<<<<<<< HEAD
             fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
 =======
             fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
 >>>>>>> laraxot/dev
+=======
+            fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
+>>>>>>> 8d801bbe (Check & fix styling)
             $columns,
         );
     }
@@ -134,10 +160,14 @@ class ImportCsvAction
      * Build the SQL query for importing data.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, ColumnData>  $columns
 =======
      * @param array<int, ColumnData> $columns
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, ColumnData> $columns
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -155,10 +185,14 @@ class ImportCsvAction
         $sqlReplace = [];
         foreach ($columns as $column) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($column->type === 'decimal') {
 =======
             if ('decimal' === $column->type) {
 >>>>>>> laraxot/dev
+=======
+            if ('decimal' === $column->type) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
@@ -170,12 +204,19 @@ class ImportCsvAction
         return $sql;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
     /**
      * Transform columns into ColumnData objects.
      *
+<<<<<<< HEAD
      * @param array<string> $columns
+=======
+     * @param array<int, string> $columns
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return array<ColumnData>
      *
@@ -195,5 +236,8 @@ class ImportCsvAction
             $columns,
         );
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }

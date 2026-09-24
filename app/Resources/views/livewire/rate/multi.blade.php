@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 ?>
 <div>
     @component('ui::components.modal.simple', ['guid' => $modal_guid, 'title' => $modal_title])

@@ -72,6 +72,7 @@ class MyTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -80,6 +81,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -136,6 +140,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -144,6 +149,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -221,6 +229,7 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -229,6 +238,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -439,6 +451,7 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 =======
@@ -451,3 +464,7 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+>>>>>>> 8d801bbe (Check & fix styling)

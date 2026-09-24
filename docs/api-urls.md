@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm_campaign=Beta&utm_term=%2Bapis_b&gclid=CjwKCAiAz--OBhBIEiwAG1rIOuHsNpwRqTkgMOTBMlWMqZ_eiLkaTIsgjT1px4eQnzn_Cj62ny9ONhoClisQAvD_BwE
 =======
 =======
@@ -41,3 +42,6 @@ https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm
 >>>>>>> .merge_file_jrBVMA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://rapidapi.com/blog/most-popular-api/?utm_source=google&utm_medium=cpc&utm_campaign=Beta&utm_term=%2Bapis_b&gclid=CjwKCAiAz--OBhBIEiwAG1rIOuHsNpwRqTkgMOTBMlWMqZ_eiLkaTIsgjT1px4eQnzn_Cj62ny9ONhoClisQAvD_BwE
+>>>>>>> 8d801bbe (Check & fix styling)

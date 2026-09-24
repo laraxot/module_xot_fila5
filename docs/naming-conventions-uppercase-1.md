@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -147,6 +150,7 @@ Descrizione dettagliata se necessaria
 
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -158,3 +162,5 @@ canonical: ../../../Themes/docs/shared-components/naming-conventions-uppercase-1
 See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions-uppercase-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

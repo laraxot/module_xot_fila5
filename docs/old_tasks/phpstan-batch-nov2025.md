@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Uvn27A
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_TX5e3v
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 title: "Phpstan Batch Nov"
 type: concept
@@ -21,6 +24,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-batch-nov.md](./phpstan-batch-nov.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Uvn27A
@@ -157,3 +161,5 @@ return $schema->components($formSchema);
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TX5e3v
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

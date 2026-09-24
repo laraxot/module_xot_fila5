@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/env.php
+>>>>>>> 8d801bbe (Check & fix styling)
 return [
     'navigation' => [
         'name' => 'Env',
@@ -9,9 +15,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'env.navigation',
         'icon' => 'env.navigation',
         'sort' => 94,
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +58,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'app_url' => [
             'label' => 'URL applicazione',
             'placeholder' => 'http://localhost',
@@ -133,6 +143,8 @@ return [
             'helper_text' => 'Valore corrente di MAIL_FROM_NAME nel .env — nome che compare accanto all\'indirizzo mittente. Se nel .env vale ${APP_NAME} qui vedi il nome già risolto: lasciandolo invariato la riga non viene riscritta.',
             'description' => '',
         ],
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'actions' => [
         'create' => [
@@ -144,6 +156,7 @@ return [
         'delete' => [
             'label' => 'Elimina Env',
         ],
+<<<<<<< HEAD
         'save' => [
             'label' => 'save',
             'icon' => 'save',
@@ -164,5 +177,7 @@ return [
             'label' => 'Mail',
             'heading' => 'Mail',
         ],
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
 ];

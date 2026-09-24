@@ -251,16 +251,20 @@ class MyResource extends XotBaseResource
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_i3GbOx
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_AZQDSj
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_i3GbOx
@@ -270,6 +274,8 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AZQDSj
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),

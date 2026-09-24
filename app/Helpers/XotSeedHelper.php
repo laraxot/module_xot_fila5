@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
 <<<<<<< .merge_file_nvHytc
@@ -16,11 +17,17 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_07UzYu
 >>>>>>> laraxot/dev
+=======
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Xot Seeder Helper — canonical seed-once logic (coverage perimeter under app/).
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nvHytc
 <<<<<<< HEAD
@@ -35,6 +42,11 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_07UzYu
+=======
+declare(strict_types=1);
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Helpers;
 
@@ -48,6 +60,7 @@ final class XotSeedHelper
      * Seed a model once per application lifetime.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string  $modelClass
 =======
 <<<<<<< .merge_file_nvHytc
@@ -56,6 +69,9 @@ final class XotSeedHelper
      * @param class-string $modelClass
 >>>>>>> .merge_file_07UzYu
 >>>>>>> laraxot/dev
+=======
+     * @param  class-string  $modelClass
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function seedModelOnce(string $modelClass): void
     {
@@ -80,6 +96,7 @@ final class XotSeedHelper
         try {
             if (class_exists($seederClass)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $seeder = new $seederClass;
 =======
 <<<<<<< .merge_file_nvHytc
@@ -88,6 +105,9 @@ final class XotSeedHelper
                 $seeder = new $seederClass();
 >>>>>>> .merge_file_07UzYu
 >>>>>>> laraxot/dev
+=======
+                $seeder = new $seederClass;
+>>>>>>> 8d801bbe (Check & fix styling)
 
                 if ($seeder instanceof Seeder && is_callable([$seeder, 'run'])) {
                     $seeder->{'run'}();

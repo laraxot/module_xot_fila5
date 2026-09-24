@@ -168,9 +168,20 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di permission.md
+<<<<<<< HEAD
 * [permission.md](../../../xot/project_docs/install/permission.md)
 * [permission.md](../../../tenant/project_docs/it/config/permission.md)
 
 ### Versione Incoming
 
 ---
+=======
+* [permission.md](../../../Xot/docs/install/permission.md)
+* [permission.md](../../../Tenant/docs/it/config/permission.md)
+* [permission.md](../../../xot/docs/install/permission.md)
+* [permission.md](../../../tenant/docs/it/config/permission.md)
+
+### Versione Incoming
+
+---
+>>>>>>> 8d801bbe (Check & fix styling)

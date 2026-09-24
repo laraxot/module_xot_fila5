@@ -1,15 +1,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_iukr9J
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 module: theme
 topic: relationx
 canonical: ../../../../Themes/docs/shared-components/RelationX.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
 =======
 <<<<<<< HEAD
@@ -167,3 +171,6 @@ See canonical documentation: ../../../../Themes/docs/shared-components/RelationX
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Services\Translators;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class BaseTranslator {}
 =======
 <<<<<<< .merge_file_gDGj9K
@@ -21,3 +22,8 @@ abstract class BaseTranslator
 }
 >>>>>>> .merge_file_0RqmCQ
 >>>>>>> laraxot/dev
+=======
+abstract class BaseTranslator
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

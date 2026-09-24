@@ -26,6 +26,7 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 - Tracciabilità totale
 - Documentare correzioni con commit message chiari
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -33,6 +34,8 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 - Reintrodurre solo compatibilita' minima nel codice corrente quando serve
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Il Perché
 
@@ -60,6 +63,7 @@ Gli errori sono maestri. Non si nascondono, si documentano e si correggono andan
 ## Workflow Corretto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -78,6 +82,8 @@ git show HEAD~3:Modules/Foo/app/Bar.php
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Scenario 1: Ho committato un bug
 
 ```bash
@@ -120,9 +126,12 @@ git reset --hard HEAD~1
 
 # ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Sposta il commit sul branch giusto
 git checkout correct-branch
 git cherry-pick wrong-branch
@@ -132,6 +141,7 @@ git push
 git checkout wrong-branch
 git revert HEAD
 git push
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -144,6 +154,8 @@ git push
 # senza usare revert automatici
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### Scenario 4: Voglio "annullare" modifiche
@@ -154,14 +166,18 @@ git reset --hard abc123
 
 # ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Usa revert per creare un nuovo commit che annulla
 git revert HEAD~2..HEAD
 git push
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -182,6 +198,8 @@ git show <old-sha>:Modules/Xot/app/Datas/XotData.php
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Eccezioni Rarissime
 
 Le UNICHE 3 eccezioni accettabili:
@@ -209,6 +227,7 @@ Le UNICHE 3 eccezioni accettabili:
 4. **Compliance**: Soddisfa audit e requisiti legali
 5. **Learning Culture**: Gli errori diventano lezioni documentate
 <<<<<<< HEAD
+<<<<<<< HEAD
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
 =======
 <<<<<<< HEAD
@@ -217,6 +236,9 @@ Le UNICHE 3 eccezioni accettabili:
 6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Commit Message Format
 
@@ -260,6 +282,7 @@ Non è una best practice, è **l'unica pratica**.
 
 **Ultima revisione**: Novembre 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: Regola Assoluta e Immutabile
 =======
 <<<<<<< HEAD
@@ -268,3 +291,6 @@ Non è una best practice, è **l'unica pratica**.
 **Status**: Regola Assoluta e Immutabile
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: Regola Assoluta e Immutabile
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -20,6 +20,7 @@ class ClearArtisanErrorLogAction
 
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
 =======
 <<<<<<< .merge_file_zgEKOS
@@ -32,6 +33,9 @@ class ClearArtisanErrorLogAction
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_a13PWE
 >>>>>>> laraxot/dev
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 File::delete($file->getRealPath());
             }
         }

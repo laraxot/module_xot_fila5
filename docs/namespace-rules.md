@@ -28,6 +28,7 @@
 
 **Ultimo aggiornamento:** 2025-05-13
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 =======
@@ -47,3 +48,7 @@
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> 8d801bbe (Check & fix styling)

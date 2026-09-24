@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_rGYoHQ
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_U9a3e1
 >>>>>>> .merge_file_0GzWWa
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 25e-cms-rm-getformschema
 description: "Modulo: Cms"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_rGYoHQ
 =======
 <<<<<<< .merge_file_WSYXjv
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_U9a3e1
 >>>>>>> .merge_file_0GzWWa
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # 25e-cms — Rimuovere getFormSchema da MenuResource
 
 **Modulo:** Cms

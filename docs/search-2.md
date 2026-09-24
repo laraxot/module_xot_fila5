@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -23,11 +24,17 @@ https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#addi
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 module: theme
 topic: search-2
 canonical: ../../../Themes/docs/shared-components/search-1.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/search-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/search-1.md
+>>>>>>> 8d801bbe (Check & fix styling)

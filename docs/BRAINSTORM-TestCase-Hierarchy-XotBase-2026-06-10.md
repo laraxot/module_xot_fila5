@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [BRAINSTORM-TestCase-Hierarchy-XotBase.md](./brainstorm-t
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "Brainstorm: TestCase hierarchy with XotBaseTestCase"
 type: brainstorm
 module: Xot
@@ -182,5 +185,8 @@ abstract class TestCase extends XotBaseTestCase
 - Parse errors: **0**
 - Pure prod errors: **0**
 - Total: **0** (excluding test files)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

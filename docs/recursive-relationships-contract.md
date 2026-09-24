@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@ related:
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # HasRecursiveRelationshipsContract - Documentazione Completa
 
 ## 📋 Panoramica
@@ -30,9 +33,12 @@ Il contratto `HasRecursiveRelationshipsContract` definisce l'interfaccia per mod
 ## 🏛️ Filosofia Laraxot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Principio: Wrapper Type-Safe per Vendor Packages
 
 Laraxot non estende direttamente i trait vendor, ma crea:
@@ -45,6 +51,7 @@ Laraxot non estende direttamente i trait vendor, ma crea:
 - **Type Safety**: PHPStan livello 10 garantisce che tutti i tipi siano corretti
 - **Manutenibilità**: Se il vendor cambia, aggiorniamo solo il wrapper
 - **Testabilità**: Possiamo mockare il contratto invece del trait vendor
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -64,6 +71,8 @@ Il contratto `HasRecursiveRelationshipsContract` resta il confine di dominio per
 Vedi anche [recursive-relationships-vendor-direct.md](recursive-relationships-vendor-direct.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 📚 Struttura del Pacchetto Vendor
 
@@ -98,9 +107,12 @@ trait HasRecursiveRelationships
 Definisce tutti i metodi pubblici esposti dal trait vendor con tipi espliciti.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### 2. Trait Wrapper (`TypedHasRecursiveRelationships`)
 
 **File**: `Modules/Xot/app/Models/Traits/TypedHasRecursiveRelationships.php`
@@ -109,6 +121,7 @@ Wrapper che:
 - Usa il trait vendor con alias `protected`
 - Re-espone i metodi come `public` con tipi espliciti
 - Garantisce type safety per PHPStan
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -121,6 +134,8 @@ Regola STORY-346:
 - il contratto conserva tipi e contesto in PHPDoc.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### 3. Uso nei Modelli
 
@@ -131,6 +146,7 @@ namespace Modules\Limesurvey\Models;
 
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
 =======
 <<<<<<< HEAD
@@ -139,6 +155,9 @@ use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 class LimeQuestion extends BaseModel implements HasRecursiveRelationshipsContract
 {
@@ -407,9 +426,12 @@ $hasChildren = $question->hasChildren();
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## 🧘 Filosofia Laraxot: Wrapper Pattern
 
 ### Perché Non Usare Direttamente il Trait Vendor?
@@ -418,6 +440,7 @@ $hasChildren = $question->hasChildren();
 2. **Manutenibilità**: Se il vendor cambia, aggiorniamo solo il wrapper
 3. **Testabilità**: Possiamo mockare il contratto invece del trait
 4. **Documentazione**: Il contratto documenta esplicitamente cosa è disponibile
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -431,14 +454,19 @@ $hasChildren = $question->hasChildren();
 4. **Documentazione**: la regola canonica e [recursive-relationships-vendor-direct.md](recursive-relationships-vendor-direct.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Pattern di Implementazione
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 // ❌ SBAGLIATO - Usare direttamente il trait vendor
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
@@ -455,6 +483,7 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 {
     use \Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;  // Type safe
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
@@ -465,12 +494,15 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
     use HasRecursiveRelationships;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }
 ```
 
 ## 📚 Riferimenti
 
 - [Vendor Package](https://github.com/staudenmeir/laravel-adjacency-list)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [TypedHasRecursiveRelationships Trait](../app/Models/Traits/TypedHasRecursiveRelationships.php)
 =======
@@ -480,6 +512,9 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 - [Recursive relationships vendor direct](recursive-relationships-vendor-direct.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [TypedHasRecursiveRelationships Trait](../app/Models/Traits/TypedHasRecursiveRelationships.php)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Contracts and Interfaces](contracts-and-interfaces.md)
 - [PHPStan Contract Conflicts Resolution](phpstan-contract-conflicts-resolution.md)
 
@@ -487,12 +522,15 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 
 ### 2025-01-18 - Aggiornamento Completo del Contratto
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ### [DATE] - Aggiornamento Completo del Contratto
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 - ✅ Aggiunti metodi mancanti al contratto:
   - `getQualifiedParentKeyName(): string` - Nome qualificato della colonna parent
@@ -503,6 +541,7 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 - ✅ Corretto tipo di ritorno di `getCustomPaths()`: da `array<string>` a `array<int|string, string>`
 - ✅ Allineato contratto con trait vendor `HasAdjacencyList` da `staudenmeir/laravel-adjacency-list`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Aggiornato `BaseTreeModel` in Limesurvey per usare `TypedHasRecursiveRelationships` invece del trait vendor diretto
 =======
 <<<<<<< HEAD
@@ -511,12 +550,16 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 - ✅ Nota storica superata: STORY-346 ha rimosso `TypedHasRecursiveRelationships`; usare il trait vendor diretto
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- ✅ Aggiornato `BaseTreeModel` in Limesurvey per usare `TypedHasRecursiveRelationships` invece del trait vendor diretto
+>>>>>>> 8d801bbe (Check & fix styling)
 - ✅ Corretto `getLocalKeyName()` in `LimeQuestion` con return type `string`
 - ✅ Documentazione completa aggiunta con esempi e best practices
 - ✅ Verificato PHPStan livello 10: nessun errore
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.
 =======
@@ -526,3 +569,6 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 **Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo contratti PHPDoc e trait vendor diretto per garantire qualità del codice senza duplicare API upstream.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.
+>>>>>>> 8d801bbe (Check & fix styling)

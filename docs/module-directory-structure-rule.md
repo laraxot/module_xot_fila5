@@ -169,7 +169,11 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1
 
 ### 4. Helpers nella Root
 
+<<<<<<< HEAD
 **Violazione**: `Modules/Xot/Helpers/Helper.php` o `Modules/Xot/helpers/Helper.php`
+=======
+**Violazione**: `Modules/Xot/helpers/Helper.php` o `Modules/Xot/helpers/Helper.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Fix**: Se sono helper moderni, spostare in `Modules/Xot/app/Helpers/`. Se sono legacy, rimuovere.
 
@@ -347,6 +351,7 @@ Questi file devono essere:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -393,3 +398,6 @@ dell'utente, per non perdere contenuto storico senza conferma.
 *Ultimo aggiornamento: 2026-06-18*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2026-06-18*
+>>>>>>> 8d801bbe (Check & fix styling)

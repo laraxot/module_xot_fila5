@@ -19,13 +19,17 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -35,6 +39,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
+=======
+=======
+   public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
    {
        return [
@@ -230,13 +238,17 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -246,6 +258,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 {
     return [
@@ -411,6 +427,7 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -423,6 +440,11 @@ class ReportResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
@@ -470,13 +492,17 @@ class SocioResource extends XotBaseResource
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -486,6 +512,10 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
+=======
+=======
+    public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
     {
         return [
@@ -730,13 +760,17 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -746,6 +780,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_S2wXQI
 >>>>>>> laraxot/dev
+=======
+=======
+public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 {
     return [
@@ -1004,6 +1042,7 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -1016,6 +1055,11 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
     {

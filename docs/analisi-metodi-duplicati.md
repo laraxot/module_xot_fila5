@@ -5,6 +5,7 @@
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-MASTER.md)
 📖 **Documento Originale:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 📖 **Documento Originale:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 > ⚠️ **IMPORTANTE:** Questo documento è specifico per il modulo Xot. Per l'analisi completa con dati reali, ROI, implementazioni concrete e migration guide, consultare il DOCUMENTO MASTER.
 
@@ -259,6 +262,7 @@ class MyResource extends XotBaseResource
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -272,6 +276,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),
@@ -340,6 +347,7 @@ Se l'unificazione viene implementata correttamente:
 ## Link Utili
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
 =======
 <<<<<<< HEAD
@@ -348,6 +356,9 @@ Se l'unificazione viene implementata correttamente:
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - 📖 [Regole Service Provider](./service-provider.md)
 - 📖 [Regole BaseModel](./model-inheritance-rules.md)
 - 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
@@ -358,17 +369,21 @@ Se l'unificazione viene implementata correttamente:
 |------|----------|-----------|
 | 2025-10-15 | 1.0 | Creazione documento iniziale |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 | [DATE] | 1.0 | Creazione documento iniziale |
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
 **Stato:** 📋 Draft per Review
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Responsabile:** Team Xot Core
 =======
 <<<<<<< HEAD
@@ -377,3 +392,6 @@ Se l'unificazione viene implementata correttamente:
 **Responsabile:** Team Xot Core
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Responsabile:** Team Xot Core
+>>>>>>> 8d801bbe (Check & fix styling)

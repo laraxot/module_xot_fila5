@@ -234,6 +234,7 @@ abstract class XotBaseResource extends Resource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -247,6 +248,9 @@ abstract class XotBaseResource extends Resource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // Schema base automatico
@@ -284,6 +288,7 @@ abstract class XotBaseResource extends Resource
 // Ogni modulo DEVE avere il proprio BaseModel
 abstract class BaseModel extends XotBaseModel {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'quaeris';  // Connection specifica
 =======
 <<<<<<< HEAD
@@ -292,6 +297,9 @@ abstract class BaseModel extends XotBaseModel {
     protected $connection = 'healthcare_app';  // Connection specifica
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    protected $connection = 'quaeris';  // Connection specifica
+>>>>>>> 8d801bbe (Check & fix styling)
 
     // Solo funzionalità SPECIFICHE del modulo
     // MAI duplicare ciò che XotBaseModel già fornisce
@@ -526,6 +534,7 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 *Documentazione Xot v1.0*
 *Creato: 2025-11-17*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Autore: AI Assistant con analisi approfondita*
 =======
 <<<<<<< HEAD
@@ -535,3 +544,6 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 *Autore: AI Assistant con analisi approfondita*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Autore: AI Assistant con analisi approfondita*
+>>>>>>> 8d801bbe (Check & fix styling)

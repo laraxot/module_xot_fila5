@@ -27,6 +27,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_E8r6Fz
 =======
@@ -45,6 +46,8 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
@@ -52,12 +55,15 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_E8r6Fz
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
    {
        return [
            TextInput::make('nome')->required(),
@@ -256,6 +262,7 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -276,6 +283,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
 >>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('nome')->required(),
@@ -440,6 +451,7 @@ class ReportResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -460,6 +472,10 @@ class ReportResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -507,6 +523,7 @@ class SocioResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
@@ -523,6 +540,9 @@ class SocioResource extends XotBaseResource
 >>>>>>> .merge_file_S7nq7J
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
     {
         return [
@@ -769,6 +789,7 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -789,6 +810,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_S7nq7J
 >>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1047,6 +1072,7 @@ class SocioResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
@@ -1063,6 +1089,9 @@ class SocioResource extends XotBaseResource
 >>>>>>> .merge_file_S7nq7J
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
     {
         return [

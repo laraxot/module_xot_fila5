@@ -282,13 +282,17 @@ quality-check:
 
 **Creato**: 2025-01-29
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA
 **Memoria AI**: ID 10479003
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -299,3 +303,5 @@ quality-check:
 **Memoria AI**: ID 10479003
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

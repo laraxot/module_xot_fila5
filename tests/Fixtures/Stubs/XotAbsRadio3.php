@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 use Modules\Xot\Filament\Forms\Components\XotBaseRadio;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 final class XotAbsRadio3 extends XotBaseRadio {}
 =======
 <<<<<<< .merge_file_MZR7J0
@@ -23,3 +24,8 @@ final class XotAbsRadio3 extends XotBaseRadio
 }
 >>>>>>> .merge_file_LDtu1K
 >>>>>>> laraxot/dev
+=======
+final class XotAbsRadio3 extends XotBaseRadio
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

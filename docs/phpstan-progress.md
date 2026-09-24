@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # PHPStan Fixes Progress Report - March 18, 2025
 
 ## Progress Summary
@@ -51,6 +54,7 @@ This document tracks the progress of fixing PHPStan level 10 issues across vario
 - Focus on completing the Setting module first to ensure it's error-free
 - Then continue with the Xot module which has more complex issues
 - Consider grouping fixes by error type (type annotations, null checks, method access) for efficiency
+<<<<<<< HEAD
 =======
 # PHPStan Progress Report - 2025-10-13
 
@@ -390,3 +394,5 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 *Errors Fixed: 861*
 *Progress: 17.8% complete*
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

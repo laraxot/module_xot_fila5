@@ -70,6 +70,7 @@ public function __construct()
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 📋 Pattern di Utilizzo
 
 ### Pattern 1: View Manuale (Raccomandato per nomi complessi)
@@ -105,6 +106,11 @@ class SimpleWidget extends XotBaseWidget
 ### Pattern 2: View Manuale (solo eccezione documentata)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## 📋 Pattern di Utilizzo
+
+### Pattern 1: View Manuale (Raccomandato per nomi complessi)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 class TimeClockWidget extends XotBaseWidget
@@ -120,9 +126,12 @@ class TimeClockWidget extends XotBaseWidget
 
 **Quando usare**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - Nome widget complesso con trattini
 - View con nome diverso dal pattern automatico
 - Controllo esplicito sulla view utilizzata
@@ -147,6 +156,7 @@ class SimpleWidget extends XotBaseWidget
 - Nome widget semplice che segue il pattern automatico
 - Convenzione naming standard
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 - La view ha un nome realmente fuori convenzione
@@ -154,6 +164,8 @@ class SimpleWidget extends XotBaseWidget
 - Si accetta consapevolmente che l'override blocchi la precedenza `pub_theme::...`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -210,13 +222,17 @@ class MyWidget extends XotBaseWidget
 ## 📝 Best Practices
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 1. **Definire sempre la view manualmente** se il nome widget è complesso o contiene trattini
 2. **Verificare che la view esista** prima di definirla manualmente
 3. **Usare naming consistente**: se possibile, seguire il pattern automatico
 4. **Documentare view custom** nel widget se il nome non è ovvio
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -227,6 +243,8 @@ class MyWidget extends XotBaseWidget
 5. **Usare naming consistente** per evitare override non necessari
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -240,9 +258,12 @@ class MyWidget extends XotBaseWidget
 
 *Documento creato il 2025-01-27 durante la risoluzione del bug "View not found: timeclock"*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 *Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

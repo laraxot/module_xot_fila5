@@ -18,10 +18,14 @@ class RegisterBladeComponentsAction
         $comps = app(GetComponentsAction::class)->execute($path, $namespace.'\View\Components', $prefix);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($comps->count() === 0) {
 =======
         if (0 === $comps->count()) {
 >>>>>>> laraxot/dev
+=======
+        if (0 === $comps->count()) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return;
         }
 

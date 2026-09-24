@@ -33,12 +33,15 @@ La documentazione generica deve essere sempre inserita nella cartella `docs` del
 ### Collocazione della documentazione dei componenti UI
 La documentazione dei componenti UI deve essere sempre inserita nella cartella `docs` del modulo `UI`. Vedi [ui-link.md](../UI/project_docs/README.md) per i dettagli.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 La documentazione dei componenti UI deve essere sempre inserita nella cartella `docs` del modulo `UI`. Vedi [ui-link.md](../ui/project_docs/readme.md) per i dettagli.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Collegamenti Bidirezionali
 - [Documentazione Generale](./documentation.md)
@@ -46,9 +49,12 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 - [Struttura dei Prompt](./prompts.md)
 - [Collegamenti al Modulo Cms](./cms-link.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Collegamenti alla Root](../../../project_docs/prompts.md)
 
 ## Collegamenti tra versioni di PROMPT_RULES.md
@@ -57,6 +63,7 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 
 ## Collegamenti tra versioni di prompt_rules.md
 * [prompt_rules.md](rules/prompt_rules.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -72,3 +79,5 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 * [prompt_rules.md](rules/prompt_rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

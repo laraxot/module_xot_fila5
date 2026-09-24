@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sQZZVp
 <<<<<<< HEAD
@@ -9,6 +10,8 @@
 =======
 >>>>>>> .merge_file_obkM5e
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # User Research: Xot Framework
 
 ## 🔬 Research Goals
@@ -28,6 +31,7 @@ Identify bottlenecks in developer productivity when working with XotBase classes
 ## ✅ Actionable Insights / Next Steps
 - Simplify the `XotBaseServiceProvider` boot process.
 - Improve documentation for the `HasXotTable` trait.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_sQZZVp
@@ -130,3 +134,5 @@ Users expect vetted extensions.
 =======
 >>>>>>> .merge_file_obkM5e
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

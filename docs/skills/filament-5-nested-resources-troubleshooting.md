@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_idBfza
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ related:
 =======
 >>>>>>> .merge_file_BZ2BsZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Skill: Troubleshooting Nested Resources in Filament 5.x
 
 ## Contesto Critico: Filament 5.x NON Supporta Nested Resources

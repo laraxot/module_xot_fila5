@@ -15,16 +15,20 @@ class XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ATwocH
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_lnwnQg
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ATwocH
@@ -34,6 +38,8 @@ class XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lnwnQg
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public static function getListTableColumns(): array;
 }
 ```

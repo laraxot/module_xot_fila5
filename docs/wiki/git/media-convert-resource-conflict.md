@@ -82,6 +82,7 @@ class MediaConvertResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -102,6 +103,10 @@ class MediaConvertResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GdZKOa
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Radio::make('format')
@@ -177,6 +182,7 @@ class MediaConvertResource extends XotBaseResource
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
 <<<<<<< .merge_file_X6u7DV
@@ -200,3 +206,7 @@ class MediaConvertResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GdZKOa
 >>>>>>> laraxot/dev
+=======
+- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)

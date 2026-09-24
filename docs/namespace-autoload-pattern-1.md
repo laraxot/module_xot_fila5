@@ -82,6 +82,7 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
 <<<<<<< HEAD
 - [Struttura Moduli](../xot/docs/module_structure.md)
@@ -92,3 +93,7 @@ namespace Modules\ModuleName\App\Console\Commands;
 - [Struttura Moduli](../xot/docs/module_structure.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Convenzioni di Namespace](../Xot/docs/namespace_conventions.md)
+- [Struttura Moduli](../Xot/docs/module_structure.md)
+>>>>>>> 8d801bbe (Check & fix styling)

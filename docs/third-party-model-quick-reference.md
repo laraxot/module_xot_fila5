@@ -91,6 +91,7 @@ class {Model} extends {Package}{Model}
 
 ### Module-Specific Patterns
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -101,6 +102,8 @@ class {Model} extends {Package}{Model}
 - **[Model Architecture](models/model_architecture.md)** - Laraxot model patterns
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - **[User Module](../User/docs/third-party-model-patterns.md)** - Permission & Role integration
 - **[Activity Module](../Activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
 
@@ -165,6 +168,7 @@ class Feature extends PackageFeature
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
 =======
 <<<<<<< HEAD
@@ -173,3 +177,6 @@ class Feature extends PackageFeature
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
+>>>>>>> 8d801bbe (Check & fix styling)

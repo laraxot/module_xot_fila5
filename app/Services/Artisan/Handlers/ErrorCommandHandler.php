@@ -21,6 +21,7 @@ class ErrorCommandHandler implements CommandHandlerInterface
         $command = $this->getCurrentCommand();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($command === 'error-clear') {
 =======
 <<<<<<< .merge_file_bSE5KC
@@ -33,6 +34,9 @@ class ErrorCommandHandler implements CommandHandlerInterface
         if ('error-clear' === $command) {
 >>>>>>> .merge_file_KBd27C
 >>>>>>> laraxot/dev
+=======
+        if ('error-clear' === $command) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return ArtisanService::errorClear();
         }
 

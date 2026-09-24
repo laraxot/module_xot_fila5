@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -67,6 +68,8 @@ Maintain `declare(strict_types=1);` in PHP, adhere to project PHPStan config, an
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 > **Version**: 3.0 - DRY + KISS Documentation Refactor
 > **Status**: ✅ Core Framework Module
 > **Last Updated**: December 2025
@@ -574,6 +577,10 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
+<<<<<<< HEAD
 **Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+>>>>>>> 8d801bbe (Check & fix styling)

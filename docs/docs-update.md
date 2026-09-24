@@ -58,6 +58,7 @@ Aggiornamento massivo documentazione progetto con:
 
 **Modulo Sigma** (aggiornato):
 <<<<<<< HEAD
+<<<<<<< HEAD
 13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
 =======
 <<<<<<< HEAD
@@ -66,6 +67,9 @@ Aggiornamento massivo documentazione progetto con:
 13. `phpstan-fixes-archive-1.md` - Aggiornato con fix novembre
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **bashscripts** (3 file):
 14. `docs/mcp-configuration.md`
@@ -225,6 +229,7 @@ Aggiornamento massivo documentazione progetto con:
 ### Documentazione Moduli
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -239,6 +244,8 @@ Aggiornamento massivo documentazione progetto con:
 - [bashscripts README](../../../bashscripts/readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Xot Module](./README.md) - Questo file
 - [Tenant Module](../../Tenant/docs/README.md)
 - [IndennitaResponsabilita Module](../../IndennitaResponsabilita/docs/README.md)
@@ -268,6 +275,7 @@ Aggiornamento massivo documentazione progetto con:
 EOF
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 echo "✅ Documento aggiornamento creato"
 =======
 <<<<<<< HEAD
@@ -276,3 +284,6 @@ echo "✅ Documento aggiornamento creato"
 echo "✅ Documento aggiornamento creato"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+echo "✅ Documento aggiornamento creato"
+>>>>>>> 8d801bbe (Check & fix styling)

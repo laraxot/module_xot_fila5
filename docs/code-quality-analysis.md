@@ -18,12 +18,15 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 - **Coverage**: 100% code analysis
 - **Last Check**: 2025-11-12
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - **Last Check**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis
@@ -221,12 +224,15 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 5. **`BEST_PRACTICES.md`** - Usage guidelines and patterns
 **Last Updated**: 2025-12-05
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: Analysis Complete
 
 ## 📊 Overview
@@ -288,6 +294,7 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 ### 3. Structural Integrity (LOW)
 - **Issue**: The PHPMD warning regarding a trait collision.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
 =======
 <<<<<<< HEAD
@@ -296,6 +303,9 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 - **Impact**: Could lead to un<nome progetto>able behavior or fatal errors if not addressed.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Action**: Requires manual investigation and resolution.
 
 ---
@@ -321,12 +331,15 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 
 *Last Updated: 2025-11-12*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 *
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
 1.  **Immediate**: Address the security vulnerability.
@@ -353,12 +366,15 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 - **Coverage**: 100% code analysis
 - **Last Check**: 2025-11-12
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - **Last Check**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis
@@ -578,6 +594,7 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 
 *Last Updated: 2025-11-12*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
 =======
@@ -590,3 +607,7 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 *Priority: HIGH (Foundation Module)*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Status: Ready for PHPMD Analysis*
+*Priority: HIGH (Foundation Module)*
+>>>>>>> 8d801bbe (Check & fix styling)

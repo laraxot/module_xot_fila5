@@ -13,6 +13,7 @@ use Filament\Infolists\Components\Entry as FilamentEntry;
  * This class wraps Filament's Entry to provide a XotBase layer.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseEntry extends FilamentEntry {}
 =======
 <<<<<<< .merge_file_bhj2Mn
@@ -22,12 +23,15 @@ abstract class XotBaseEntry extends FilamentEntry
 }
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 abstract class XotBaseEntry extends FilamentEntry
 {
 }
 =======
 abstract class XotBaseEntry extends FilamentEntry {}
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 abstract class XotBaseEntry extends FilamentEntry
@@ -35,3 +39,5 @@ abstract class XotBaseEntry extends FilamentEntry
 }
 >>>>>>> .merge_file_bcoSPf
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

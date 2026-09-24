@@ -296,6 +296,7 @@ Level 0  → 🏕️  Campo Base
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -316,6 +317,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hW28XA
 >>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'field_name' => ComponentType::make('field_name')

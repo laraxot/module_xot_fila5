@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< HEAD
@@ -12,11 +13,14 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +34,9 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -41,6 +48,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< .merge_file_ykkpgJ
@@ -62,6 +70,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 
 # Standard di Codice
@@ -79,6 +89,7 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -99,6 +110,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -218,6 +231,7 @@ class Doctor extends User
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
 =======
@@ -227,6 +241,10 @@ class Doctor extends User
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -263,12 +281,15 @@ class Doctor extends User
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -288,6 +309,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_PK9HhS
 <<<<<<< HEAD
@@ -299,10 +321,13 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 >>>>>>> laraxot/dev
 =======
@@ -313,6 +338,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -364,6 +391,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< .merge_file_ykkpgJ
@@ -386,6 +414,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
@@ -451,6 +481,7 @@ class Doctor extends User
 
 ## Moduli che applicano questa regola
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
@@ -471,15 +502,20 @@ class Doctor extends User
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 // Aggiungere qui altri moduli se necessario
 
 <<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -515,12 +551,15 @@ class Doctor extends User
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
@@ -528,6 +567,7 @@ class Doctor extends User
 - [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
 // Aggiungere qui altri moduli se necessario
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_PK9HhS
 >>>>>>> laraxot/dev
 =======
@@ -538,3 +578,5 @@ class Doctor extends User
 >>>>>>> .merge_file_tAHaAr
 >>>>>>> .merge_file_XuyG1u
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -93,9 +93,13 @@ L'architettura proposta dovrà evolvere attraverso iterazioni successive, valida
 * [analisi-architettura-sistema.md](docs/analisi/architettura/analisi-architettura-sistema.md)
 * [analisi-architettura-sistema.md](../../../Xot/docs/architecture/analisi-architettura-sistema.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 * [analisi-architettura-sistema.md](../../../xot/docs/architecture/analisi-architettura-sistema.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [analisi-architettura-sistema.md](../../../xot/docs/architecture/analisi-architettura-sistema.md)
+>>>>>>> 8d801bbe (Check & fix styling)

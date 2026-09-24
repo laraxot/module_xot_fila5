@@ -1,15 +1,19 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TIj5kz
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 module: theme
 topic: uuid
 canonical: ../../../Themes/docs/shared-components/UUID.txt
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
 =======
 <<<<<<< HEAD
@@ -62,3 +66,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
 >>>>>>> .merge_file_4hNrlA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -33,19 +33,25 @@ class HandlerDecorator implements ExceptionHandler
     public function __construct(
         protected ExceptionHandler $defaultHandler,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 
     /**
      * @param  array<int, mixed>  $parameters
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ) {
     }
 
     /**
      * @param array<int, mixed> $parameters
+<<<<<<< HEAD
      *
 >>>>>>> laraxot/dev
      * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function __call(string $name, array $parameters): mixed
     {
@@ -187,6 +193,7 @@ class HandlerDecorator implements ExceptionHandler
             return false;
         }
 
+<<<<<<< HEAD
         $type = $params[0]->getType();
 
         if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
@@ -197,5 +204,8 @@ class HandlerDecorator implements ExceptionHandler
 
         return (class_exists($className) || interface_exists($className))
             && (new \ReflectionClass($className))->isInstance($e);
+=======
+        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }

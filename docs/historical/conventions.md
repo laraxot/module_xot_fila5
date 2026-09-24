@@ -146,6 +146,7 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 - Le pagine Folio devono seguire la struttura `resources/views/pages/`
 ## Collegamenti tra versioni di CONVENTIONS.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [CONVENTIONS.md](conventions.md)
 =======
 <<<<<<< .merge_file_fI2mi9
@@ -158,6 +159,9 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MWC420
 >>>>>>> laraxot/dev
+=======
+* [CONVENTIONS.md](conventions.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 * [CONVENTIONS.md](../../../Dental/docs/CONVENTIONS.md)
 * [CONVENTIONS.md](../../../Patient/docs/CONVENTIONS.md)
 

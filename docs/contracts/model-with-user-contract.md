@@ -72,6 +72,7 @@ class Article extends Model implements ModelWithUserContract
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -80,3 +81,8 @@ class Article extends Model implements ModelWithUserContract
 - [Contracts Overview](./readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [User Management](../features/user-management.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [Contracts Overview](./readme.md)
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -15,10 +15,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it extends pivot class', function (): void {
         // Arrange & Act
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
 
         // Assert
         Assert::assertInstanceOf(Pivot::class, $pivot);
@@ -27,10 +31,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage morph type', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('morph_type', 'App\Models\User');
 
         // Act
@@ -43,10 +51,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage morph id', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('morph_id', 123);
 
         // Act
@@ -59,10 +71,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage related type', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('related_type', 'App\Models\Post');
 
         // Act
@@ -75,10 +91,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage related id', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('related_id', 456);
 
         // Act
@@ -91,10 +111,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage pivot attributes', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('custom_field', 'custom_value');
         $pivot->setAttribute('numeric_field', 42);
 
@@ -112,10 +136,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage timestamps', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $now = now();
         $pivot->setAttribute('created_at', $now);
         $pivot->setAttribute('updated_at', $now);
@@ -132,10 +160,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage soft deletes', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $deletedAt = now();
         $pivot->setAttribute('deleted_at', $deletedAt);
 
@@ -149,10 +181,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage tenant id', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('tenant_id', 789);
 
         // Act
@@ -165,10 +201,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage user id', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('user_id', 101);
 
         // Act
@@ -188,10 +228,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('metadata', $metadata);
 
         // Act
@@ -217,10 +261,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('extra_data', $extraData);
 
         // Act
@@ -239,10 +287,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage status', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('status', 'active');
 
         // Act
@@ -256,10 +308,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage priority', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('priority', 5);
 
         // Act
@@ -273,10 +329,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage sort order', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('sort_order', 10);
 
         // Act
@@ -290,10 +350,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage expires at', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $expiresAt = now()->addDays(30);
         $pivot->setAttribute('expires_at', $expiresAt);
 
@@ -307,10 +371,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage starts at', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $startsAt = now()->addHours(2);
         $pivot->setAttribute('starts_at', $startsAt);
 
@@ -324,10 +392,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage ends at', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $endsAt = now()->addDays(7);
         $pivot->setAttribute('ends_at', $endsAt);
 
@@ -341,10 +413,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage is active', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('is_active', true);
 
         // Act
@@ -363,10 +439,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage is public', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('is_public', false);
 
         // Act
@@ -385,10 +465,14 @@ describe('Base Morph Pivot Business Logic', function (): void {
     test('it can manage is featured', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pivot = new TestConcreteMorphPivot;
 =======
         $pivot = new TestConcreteMorphPivot();
 >>>>>>> laraxot/dev
+=======
+        $pivot = new TestConcreteMorphPivot();
+>>>>>>> 8d801bbe (Check & fix styling)
         $pivot->setAttribute('is_featured', false);
 
         // Act
@@ -403,6 +487,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
     });
+<<<<<<< HEAD
 
     test('it can manage tags', function (): void {
         // Arrange
@@ -826,4 +911,6 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Assert
         Assert::assertEquals($roundingMode, $pivotRoundingMode);
     });
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 });

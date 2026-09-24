@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * --- usata ricorsivamente.
  */
@@ -18,12 +22,17 @@ class UpdateAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $rules
 =======
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+     * @param array<string, mixed> $rules
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -33,10 +42,14 @@ class UpdateAction
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($model->getKey() === null) {
 =======
         if (null === $model->getKey()) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $model->getKey()) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();

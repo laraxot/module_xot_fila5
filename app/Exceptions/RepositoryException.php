@@ -8,9 +8,15 @@ namespace Modules\Xot\Exceptions;
  * Class RepositoryException.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class RepositoryException extends \Exception {}
 =======
 class RepositoryException extends \Exception
 {
 }
 >>>>>>> laraxot/dev
+=======
+class RepositoryException extends \Exception
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

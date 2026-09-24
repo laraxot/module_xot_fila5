@@ -195,6 +195,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 
 ## Collegamenti alla documentazione correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -211,13 +212,18 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](./service-provider-best-practices.md)
 - [Best practice per Filament](./filament-best-practices.md)
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Qualità del codice](./CODE_QUALITY.md)
 - [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
 - [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -362,6 +368,7 @@ Descrizione dettagliata se necessaria
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 =======
 <<<<<<< HEAD
@@ -370,3 +377,6 @@ Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+>>>>>>> 8d801bbe (Check & fix styling)

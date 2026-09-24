@@ -171,6 +171,7 @@ Xot Module (Core Framework)
 #### 📋 Features
 - [ ] **Smart Caching** (Priority: MEDIUM)
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [ ] ML-based cache <nome progetto>ion
 =======
 <<<<<<< HEAD
@@ -189,10 +190,14 @@ Xot Module (Core Framework)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
 >>>>>>> laraxot/dev
+=======
+  - [ ] ML-based cache <nome progetto>ion
+>>>>>>> 8d801bbe (Check & fix styling)
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
   - [ ] Performance optimization
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
   - [ ] Load <nome progetto>ion
@@ -216,6 +221,10 @@ Xot Module (Core Framework)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
 >>>>>>> laraxot/dev
+=======
+- [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
+  - [ ] Load <nome progetto>ion
+>>>>>>> 8d801bbe (Check & fix styling)
   - [ ] Resource optimization
   - [ ] Performance forecasting
   - [ ] Anomaly detection
@@ -228,6 +237,7 @@ Xot Module (Core Framework)
 
 #### 🎯 Success Criteria
 - [ ] AI caching working
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [ ] <nome progetto>ive services active
 =======
@@ -247,6 +257,9 @@ Xot Module (Core Framework)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
 >>>>>>> laraxot/dev
+=======
+- [ ] <nome progetto>ive services active
+>>>>>>> 8d801bbe (Check & fix styling)
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
 
@@ -399,6 +412,7 @@ Xot Module (Core Framework)
 - [ ] ML model development
 - [ ] Smart caching implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] <nome progetto>ive services
 =======
 <<<<<<< HEAD
@@ -417,6 +431,9 @@ Xot Module (Core Framework)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VUktxr
 >>>>>>> laraxot/dev
+=======
+- [ ] <nome progetto>ive services
+>>>>>>> 8d801bbe (Check & fix styling)
 
 #### May 2025
 - [ ] AI integration testing

@@ -99,6 +99,7 @@ class {ModelName}Resource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -112,6 +113,9 @@ class {ModelName}Resource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('name')
@@ -332,6 +336,7 @@ class Create{ModelName}Action
 
 **Ultimo aggiornamento:** Gennaio 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
 =======
 <<<<<<< HEAD
@@ -340,3 +345,6 @@ class Create{ModelName}Action
 **Versione:** 2.0 - Consolidata DRY + KISS
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> 8d801bbe (Check & fix styling)

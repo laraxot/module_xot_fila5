@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - Filament Class Extension Rules
 
 ## Data Risoluzione
@@ -10,6 +11,11 @@
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Risoluzione Conflitti Git - Filament Class Extension Rules
+
+## Data Risoluzione
+>>>>>>> 8d801bbe (Check & fix styling)
 2026-01-02
 
 ## Problema Identificato
@@ -82,6 +88,7 @@ Il file `filament-class-extension-rules.md` conteneva conflitti Git multipli:
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Base Classes Documentation](./consolidated/base-classes.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -94,3 +101,5 @@ canonical: ../../../Themes/docs/shared-components/filament-class-extension-resol
 See canonical documentation: ../../../Themes/docs/shared-components/filament-class-extension-resolution.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

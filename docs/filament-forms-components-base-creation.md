@@ -2,6 +2,7 @@
 
 **Data**: 2025-12-23
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -9,6 +10,8 @@
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Obiettivo**: Creare classi base XotBase per Forms Components core seguendo la regola fondamentale
 
 ## ⚠️ Problema Identificato
@@ -173,6 +176,7 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 **Stato**: ✅ Classi base create e componenti refactorizzati
 **Data Creazione**: 2025-12-23
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Conformità**: ✅ Regola fondamentale rispettata
 =======
 <<<<<<< HEAD
@@ -182,3 +186,6 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 **Conformità**: ✅ Regola fondamentale rispettata
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Conformità**: ✅ Regola fondamentale rispettata
+>>>>>>> 8d801bbe (Check & fix styling)

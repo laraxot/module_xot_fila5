@@ -144,6 +144,7 @@ All Filament resources extend this base class:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -157,6 +158,9 @@ abstract public function getFormSchema(): array;
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> 8d801bbe (Check & fix styling)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -349,7 +353,11 @@ Defines contracts for modular extensibility:
 
 ### 9. Helper Functions (200+)
 
+<<<<<<< HEAD
 **File:** `Modules/Xot/Helpers/Helper.php`
+=======
+**File:** `Modules/Xot/helpers/Helper.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Categories:**
 
@@ -595,6 +603,7 @@ class MyResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -608,6 +617,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('field1')->required(),
@@ -686,6 +698,7 @@ class ArticleResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -699,6 +712,9 @@ class ArticleResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('title')
@@ -872,7 +888,11 @@ $value = $model->getExtra('custom_field');
 - Filament Resource Base: `Modules/Xot/app/Filament/Resources/XotBaseResource.php`
 - Provider Base: `Modules/Xot/app/Providers/XotBaseServiceProvider.php`
 - Central Config: `Modules/Xot/app/Datas/XotData.php`
+<<<<<<< HEAD
 - Global Helpers: `Modules/Xot/Helpers/Helper.php`
+=======
+- Global Helpers: `Modules/Xot/helpers/Helper.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 - Actions: `Modules/Xot/app/Actions/` (150+ classes)
 - Test Base: `Modules/Xot/tests/TestCase.php`
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -15,6 +16,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot Module - concepts Index
 
 ## Purpose
@@ -28,6 +31,7 @@ qmd search "Xot concepts" --limit 5
 
 ## See Also
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [env-widget-no-ssh-env-editor](./env-widget-no-ssh-env-editor.md) — EnvWidget: modificare il `.env` di produzione dal pannello admin senza SSH/FTP, + config:cache via ArtisanCommandsManager
 =======
 <<<<<<< HEAD
@@ -40,10 +44,13 @@ qmd search "Xot concepts" --limit 5
 >>>>>>> .merge_file_VD8Pyy
 >>>>>>> laraxot/dev
 - [field-refresh-action](./field-refresh-action.md) — ricalcolo campo form dal record tramite getter studly
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [composer-merge-plugin-modules-only](./composer-merge-plugin-modules-only.md) — merge solo moduli, mai temi
 - [composer-root-skeleton-modular](./composer-root-skeleton-modular.md) — Root Composer minimo: skeleton Laravel + `nwidart/laravel-modules`; moduli owner delle dipendenze.
 - [module-testcase-xotbase-hierarchy](./module-testcase-xotbase-hierarchy.md) — TestCase moduli -> XotBaseTestCase; Nwidart v13 non fornisce BaseTestCase.
 - [Ridondanze cross-cutting (hub)](./ridondanze-cross-cutting-codebase.md)
+<<<<<<< HEAD
 
 ## Composer
 
@@ -72,12 +79,15 @@ qmd search "Xot concepts" --limit 5
 - [composer-root-skeleton-modular](./composer-root-skeleton-modular.md) — Root Composer minimo: skeleton Laravel + `nwidart/laravel-modules`; moduli owner delle dipendenze.
 - [module-testcase-xotbase-hierarchy](./module-testcase-xotbase-hierarchy.md) — TestCase moduli -> XotBaseTestCase; Nwidart v13 non fornisce BaseTestCase.
 - [Ridondanze cross-cutting (hub)](./ridondanze-cross-cutting-codebase.md)
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki](../../../docs/wiki/)
 
 ---
 *Updated: 2026-05-11*
 - [xotbase-filament-widget-hierarchy](./xotbase-filament-widget-hierarchy.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [phpstan-trait-probes](./phpstan-trait-probes.md) — trait `unused` → probe host + registry Helper
@@ -92,3 +102,5 @@ qmd search "Xot concepts" --limit 5
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

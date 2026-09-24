@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_PN5jEm
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jCz6Cq
 >>>>>>> .merge_file_0Auckf
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 01-traits-composition
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_PN5jEm
 =======
 <<<<<<< .merge_file_LqtBOW
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_jCz6Cq
 >>>>>>> .merge_file_0Auckf
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # GitHub Discussion — Architettura: composizione trait vs ereditarietà statica
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

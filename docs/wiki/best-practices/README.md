@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< HEAD
@@ -12,11 +13,14 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +34,9 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -41,6 +48,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 =======
 <<<<<<< .merge_file_kkjBRW
@@ -62,6 +70,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 
 # Best Practices
@@ -95,6 +105,7 @@ updated: 2026-08-24
 ## Code Quality
 - PHPStan level 9+ for all new code
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
@@ -153,6 +164,32 @@ updated: 2026-08-24
 >>>>>>> .merge_file_jogm6S
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9BbkJZ
+=======
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
@@ -164,6 +201,7 @@ updated: 2026-08-24
 - Update both module and root documentation
 - Include practical examples in all guides
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
@@ -183,15 +221,20 @@ updated: 2026-08-24
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -228,12 +271,15 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -247,6 +293,7 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -254,6 +301,9 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -289,17 +339,21 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_55fVAe
 >>>>>>> laraxot/dev
 =======
@@ -310,3 +364,5 @@ Core module for the FixCity Platform.
 >>>>>>> .merge_file_jogm6S
 >>>>>>> .merge_file_9BbkJZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

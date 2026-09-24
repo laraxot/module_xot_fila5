@@ -21,13 +21,17 @@ class MyPage extends XotBaseViewRecord
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
 namespace Modules\Quaeris\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -37,6 +41,8 @@ namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\
 namespace Modules\healthcare_app\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
@@ -87,6 +93,7 @@ class MyWidget extends Widget implements HasForms
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 =======
 <<<<<<< HEAD
@@ -95,6 +102,9 @@ namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\Questio
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
@@ -119,6 +129,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -127,6 +138,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\<nome progetto>\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -185,6 +199,7 @@ class MyPage extends XotBasePage
 // ❌ SBAGLIATO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -198,6 +213,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -207,13 +225,17 @@ public function getFormSchema(): array
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Quaeris\App\Filament\Widgets;
 
 // ✅ CORRETTO
 namespace Modules\Quaeris\Filament\Widgets;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -223,6 +245,8 @@ namespace Modules\healthcare_app\App\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\<nome progetto>\App\Filament\Widgets;
 
 // ✅ CORRETTO
@@ -238,6 +262,7 @@ namespace Modules\<nome progetto>\Filament\Widgets;
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 =======
 <<<<<<< HEAD
@@ -246,11 +271,15 @@ namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\Questio
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 =======
@@ -260,6 +289,9 @@ use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionChart
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 
 class ViewQuestionChart extends XotBaseViewRecord
@@ -305,6 +337,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -313,6 +346,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\<nome progetto>\Filament\Widgets;
 
 use Filament\Forms\Components\DatePicker;
@@ -368,6 +404,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 - [Filament 4 Migration Guide](./filament4_migration.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 =======
 <<<<<<< HEAD
@@ -376,3 +413,6 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> 8d801bbe (Check & fix styling)

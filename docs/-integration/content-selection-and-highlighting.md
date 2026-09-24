@@ -1,15 +1,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MvSC0G
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # content_selection_and_highlighting
 
 <!-- Contenuto migrato da _docs/content_selection_and_highlighting.txt -->
 
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -53,12 +57,15 @@ https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a
 
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://github.com/codeshifu/react-highlight-pop
 
 https://stackoverflow.com/questions/18543676/display-popup-above-highlighted-text-in-contenteditable-div
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MvSC0G
 <<<<<<< HEAD
@@ -68,10 +75,13 @@ https://stackoverflow.com/questions/18543676/display-popup-above-highlighted-tex
 =======
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-highlight-js-9d9ab2797b8
 
 https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highlight-function
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MvSC0G
@@ -93,6 +103,8 @@ https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highl
 =======
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 http://720kb.github.io/butler/
 https://720kb.github.io/highlighter.js/
 
@@ -100,14 +112,18 @@ https://github.com/anonyco/Highlighter-JS
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MvSC0G
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://jobjects.com/project_docs/highlighter/jquery //deprecated
 
 https://devpost.com/software/highlighter-js
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 https://jobjects.com/docs/highlighter/jquery //deprecated
@@ -137,6 +153,8 @@ https://devpost.com/software/highlighter-js
 =======
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ------------------------------------------------------------
 https://mxb.dev/blog/medium-share-highlight-eleventy/
 https://github.com/maxboeck/eleventy-plugin-share-highlight
@@ -144,6 +162,7 @@ https://github.com/maxboeck/eleventy-plugin-share-highlight
 ---------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MvSC0G
 <<<<<<< HEAD
@@ -159,6 +178,8 @@ https://github.com/maxboeck/eleventy-plugin-share-highlight
 =======
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://css-tricks.com/how-to-create-actions-for-selected-text-with-the-selection-api/    !!!
 
 -----------------------------------------------------------------
@@ -168,6 +189,7 @@ https://github.com/anythingcodes/highlight-share
 https://estevanmaito.github.io/sharect/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MvSC0G
 <<<<<<< HEAD
@@ -196,6 +218,11 @@ https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-
 
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+---------------------------------------------------------------
+https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
+
+>>>>>>> 8d801bbe (Check & fix styling)
 --------------------------------------------------------------
 
 https://codecanyon.net/item/highlighter-pro-a-mediumcominspired-text-highlighting-and-inline-commenting-tool-for-wordpress/20743682
@@ -233,6 +260,7 @@ https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a
 --------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MvSC0G
 <<<<<<< HEAD
@@ -257,6 +285,10 @@ tvb.bibliotechetrevigiane.it
 
 >>>>>>> .merge_file_9qv76y
 >>>>>>> laraxot/dev
+=======
+tvb.bibliotechetrevigiane.it
+
+>>>>>>> 8d801bbe (Check & fix styling)
 -------------------
 <div class="dd ew od xf" data-popper-reference-hidden="false" data-popper-escaped="false"
 data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px;

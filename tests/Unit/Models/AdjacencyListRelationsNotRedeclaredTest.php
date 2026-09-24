@@ -13,6 +13,7 @@ use function Safe\preg_match;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
 =======
 <<<<<<< .merge_file_jH9lAZ
@@ -25,6 +26,9 @@ uses(TestCase::class);
 /*
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+=======
+/*
+>>>>>>> 8d801bbe (Check & fix styling)
  * Un model che compone l'adjacency list non riscrive le relazioni che il trait gli da'.
  *
  * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` fornisce
@@ -62,6 +66,7 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
 
         // Solo i model che compongono davvero il trait: gli altri sono liberi.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_jH9lAZ
 <<<<<<< HEAD
@@ -76,16 +81,21 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
 =======
 =======
 >>>>>>> .merge_file_2NiukP
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         if (1 !== preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
             continue;
         }
 
         if (1 !== preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class)) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_jH9lAZ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             continue;
         }
 
@@ -93,6 +103,7 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
 
         foreach ($relations as $relation) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
 =======
 <<<<<<< .merge_file_jH9lAZ
@@ -105,6 +116,9 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
             if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+=======
+            if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 $offenders[] = $className.'::'.$relation.'()';
             }
         }
@@ -125,6 +139,7 @@ test('i model ad albero del progetto compongono davvero il trait', function (): 
         $source = file_get_contents($file);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) === 1) {
 =======
 <<<<<<< .merge_file_jH9lAZ
@@ -137,6 +152,9 @@ test('i model ad albero del progetto compongono davvero il trait', function (): 
         if (1 === preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
 >>>>>>> .merge_file_2NiukP
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $composers[] = basename($file, '.php');
         }
     }

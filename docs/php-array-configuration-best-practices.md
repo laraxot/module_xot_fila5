@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Gestione Best Practice per File di Configurazione PHP basati su Array
 
 I file di configurazione e traduzione in PHP che restituiscono array sono comuni in Laravel e nei moduli PTVX. Per garantire stabilità e manutenibilità, è cruciale seguire alcune best practice.
@@ -12,10 +15,13 @@ I file di configurazione e traduzione in PHP che restituiscono array sono comuni
     -   Assicurarsi che tutte le parentesi `()` e `[]` siano correttamente bilanciate.
     -   Verificare che le virgole `,` siano usate correttamente per separare gli elementi degli array.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     -   Le "trailing commas" (virgole dopo l'ultimo elemento) sono permesse in PHP >= 7.3 e possono migliorare la manutenibilità (facilitano l'aggiunta di nuovi elementi e riducono i diff). Tuttavia, in caso di errori di parsing inspiegabili, la loro rimozione temporanea può aiutare nella diagnosi. Vedi [Caso Specifico di Errore di Parsing in File di Lingua](../../Lang/docs/translation_file_syntax.md).
 
 2.  **Validazione**:
@@ -58,6 +64,7 @@ I file di configurazione e traduzione in PHP che restituiscono array sono comuni
 -   Errori come `unexpected token ";", expecting ")"` alla fine di un file `return array(...);` spesso indicano una parentesi `(` non chiusa all'interno dell'array.
 -   Commentare sezioni dell'array (approccio divide et impera) può aiutare a isolare la riga o la sezione che causa l'errore.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -70,3 +77,5 @@ canonical: ../../../Themes/docs/shared-components/php-array-configuration-best-p
 See canonical documentation: ../../../Themes/docs/shared-components/php-array-configuration-best-practices.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -204,7 +207,11 @@ find laravel/Themes -name "docs" -type d
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)
+<<<<<<< HEAD
 - [Struttura Progetto](PROJECT-STRUCTURE.md)
+=======
+- [Struttura Progetto](project-structure.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---
@@ -215,6 +222,7 @@ find laravel/Themes -name "docs" -type d
 **Stato**: Violazione corretta, regole implementate, struttura conforme
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -227,3 +235,5 @@ canonical: ../../../Themes/docs/shared-components/docs-structure-correction-summ
 See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

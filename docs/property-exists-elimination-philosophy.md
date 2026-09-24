@@ -272,6 +272,7 @@ if (isset($record->email)) {
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Quaeris/Filament (2 file)
 =======
 <<<<<<< HEAD
@@ -281,6 +282,9 @@ if (isset($record->email)) {
 - ExternalProject/Filament (2 file)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -409,6 +413,7 @@ if (method_exists($record, 'getUrl')) {
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Quaeris | 2 | Medium | Bassa |
 =======
 <<<<<<< HEAD
@@ -418,6 +423,9 @@ if (method_exists($record, 'getUrl')) {
 | ExternalProject | 2 | Medium | Bassa |
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> 8d801bbe (Check & fix styling)
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort
@@ -486,6 +494,7 @@ if (method_exists($record, 'getUrl')) {
 **Revision**: 1.0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 =======
 <<<<<<< HEAD
@@ -494,3 +503,6 @@ Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+>>>>>>> 8d801bbe (Check & fix styling)

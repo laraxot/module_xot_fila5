@@ -11,6 +11,7 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamenti Principali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -29,6 +30,8 @@ Secondo le regole di organizzazione della documentazione:
 Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs/xot-link.md) nel modulo Cms.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Documentazione Frontend](../../Cms/docs/frontoffice.md) - Documentazione completa sul frontend
 - [Gestione dei Temi](../../Cms/docs/theme_compilation.md) - Compilazione e pubblicazione dei temi
 - [Componenti Blade](../../Cms/docs/components.md) - Documentazione sui componenti Blade
@@ -47,13 +50,17 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 
 ## Collegamenti tra versioni di cms-link.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [cms-link.md](../../../Xot/docs/cms-link.md)
 * [cms-link.md](../../../User/docs/cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
 * [cms-link.md](../../../Lang/docs/cms-link.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -67,3 +74,5 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 * [cms-link.md](../../../Lang/docs/cms-link.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

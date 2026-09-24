@@ -31,6 +31,7 @@ test('Filament generators leave unsupported files unchanged', function (): void 
     $file = new SplFileInfo($path, '', 'resource.txt');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     expect((new GenerateFormByFileAction)->execute($file))->toBe(0);
     (new GenerateTableColumnsByFileAction)->execute($file);
 =======
@@ -47,6 +48,10 @@ test('Filament generators leave unsupported files unchanged', function (): void 
     (new GenerateTableColumnsByFileAction())->execute($file);
 >>>>>>> .merge_file_2cEYKU
 >>>>>>> laraxot/dev
+=======
+    expect((new GenerateFormByFileAction())->execute($file))->toBe(0);
+    (new GenerateTableColumnsByFileAction())->execute($file);
+>>>>>>> 8d801bbe (Check & fix styling)
 
     expect(File::get($path))->toBe('unchanged');
 

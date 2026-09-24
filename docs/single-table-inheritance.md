@@ -78,6 +78,7 @@
 
 - [Modelli Patient](../Patient/docs/models.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)
 =======
@@ -90,3 +91,7 @@
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Best Practices Modelli](./models.md)
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 8d801bbe (Check & fix styling)

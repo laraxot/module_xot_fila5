@@ -7,19 +7,25 @@ namespace Modules\Xot\Actions\Pdf;
 use Modules\Xot\Adapters\PdfBuilderAdapter;
 use Modules\Xot\Contracts\PdfBuilderContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 use function Safe\base64_decode;
 
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\base64_decode;
 
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 class MakePdfSpatieTestAction
 {
     use QueueableAction;
@@ -28,10 +34,14 @@ class MakePdfSpatieTestAction
      * Build a minimal Spatie PDF download response from a generic test view.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
 =======
      * @param array<string, mixed> $data
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(
         array $data = [],
@@ -54,10 +64,14 @@ class MakePdfSpatieTestAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
 =======
      * @param array<string, mixed> $data
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     private function makePdfBuilder(string $view, array $data, string $filename): PdfBuilderContract
     {
@@ -89,28 +103,40 @@ class MakePdfSpatieTestAction
 
                 $nodeBinary = config('laravel-pdf.browsershot.node_binary');
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (is_string($nodeBinary) && $nodeBinary !== '' && method_exists($browsershot, 'setNodeBinary')) {
 =======
                 if (is_string($nodeBinary) && '' !== $nodeBinary && method_exists($browsershot, 'setNodeBinary')) {
 >>>>>>> laraxot/dev
+=======
+                if (is_string($nodeBinary) && '' !== $nodeBinary && method_exists($browsershot, 'setNodeBinary')) {
+>>>>>>> 8d801bbe (Check & fix styling)
                     $browsershot->setNodeBinary($nodeBinary);
                 }
 
                 $npmBinary = config('laravel-pdf.browsershot.npm_binary');
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (is_string($npmBinary) && $npmBinary !== '' && method_exists($browsershot, 'setNpmBinary')) {
 =======
                 if (is_string($npmBinary) && '' !== $npmBinary && method_exists($browsershot, 'setNpmBinary')) {
 >>>>>>> laraxot/dev
+=======
+                if (is_string($npmBinary) && '' !== $npmBinary && method_exists($browsershot, 'setNpmBinary')) {
+>>>>>>> 8d801bbe (Check & fix styling)
                     $browsershot->setNpmBinary($npmBinary);
                 }
 
                 $chromePath = config('laravel-pdf.browsershot.chrome_path');
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (is_string($chromePath) && $chromePath !== '' && method_exists($browsershot, 'setChromePath')) {
 =======
                 if (is_string($chromePath) && '' !== $chromePath && method_exists($browsershot, 'setChromePath')) {
 >>>>>>> laraxot/dev
+=======
+                if (is_string($chromePath) && '' !== $chromePath && method_exists($browsershot, 'setChromePath')) {
+>>>>>>> 8d801bbe (Check & fix styling)
                     $browsershot->setChromePath($chromePath);
                 }
             });

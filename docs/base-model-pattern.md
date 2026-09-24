@@ -78,6 +78,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'quaeris'; // Module-specific connection
 =======
 <<<<<<< HEAD
@@ -86,6 +87,9 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     protected $connection = 'module_name'; // Module-specific connection
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    protected $connection = 'quaeris'; // Module-specific connection
+>>>>>>> 8d801bbe (Check & fix styling)
 
     protected $with = [
         'extra', // Always load extra fields
@@ -134,6 +138,7 @@ The module BaseModel is where you add:
 - Module-specific configurations
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -152,6 +157,8 @@ class Event extends BaseModel { ... }
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -221,6 +228,7 @@ class SurveyPdf extends BaseModel
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Predictable patterns
 =======
 <<<<<<< HEAD
@@ -229,6 +237,9 @@ class SurveyPdf extends BaseModel
 - <nome progetto>able patterns
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Predictable patterns
+>>>>>>> 8d801bbe (Check & fix styling)
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -280,6 +291,7 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 - **DRY Compliance**: No duplicated base functionality
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 =======
 <<<<<<< HEAD
@@ -288,3 +300,6 @@ This pattern ensures that every model in the system follows the same foundationa
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -205,6 +205,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ## 🔗 **Related Documentation**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
@@ -219,6 +220,11 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [XotData Testing Strategy](xotdata_testing.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](XOTDATA_TESTING.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
@@ -226,6 +232,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Update**: Dicembre 2024
 =======
 <<<<<<< HEAD
@@ -234,3 +241,6 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Last Update**: Dicembre 2024
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Last Update**: Dicembre 2024
+>>>>>>> 8d801bbe (Check & fix styling)

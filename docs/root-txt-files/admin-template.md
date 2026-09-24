@@ -9,6 +9,7 @@ tags: [migrato-da-txt, xot]
 converted_from: admin-template.txt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 converted_from: admin_template.txt
 >>>>>>> laraxot/dev
 =======
@@ -19,6 +20,10 @@ converted_from: admin_template.txt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+converted_from: admin_template.txt
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 created: 2026-08-24
 updated: 2026-08-24
 ---

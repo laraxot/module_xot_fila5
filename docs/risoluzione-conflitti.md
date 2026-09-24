@@ -7,6 +7,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 ### 1. Namespace e Convenzioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -14,6 +15,9 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Convenzioni Namespace](namespace-conventions.md)
+=======
+- [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 
@@ -32,6 +36,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 - [Componenti Filament](../../Themes/One/project_docs/FILAMENT_COMPONENTS.md)
 - [Registrazione Utenti](../../Themes/One/project_docs/AUTH.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -39,6 +44,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 - [Registrazione Utenti](../../themes/one/docs/auth.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
   - Implementazione completa sistema registrazione
   - Gestione tipi utente dinamica
   - UI moderna con Filament
@@ -123,6 +130,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 - [Documentazione generale sulla risoluzione dei conflitti git](../../../project_docs/risoluzione_conflitti_git.md)
 - [Report completo di intervento](../../../project_docs/logs/conflict_resolution_report.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -130,6 +138,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 - [Report completo di intervento](../../../../docs/logs/conflict_resolution_report.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Dettagli risoluzione ModelWithPosContract](./conflicts/model_with_pos_contract_resolution.md)
 
 ## XotBaseMainPanelProvider.php
@@ -224,12 +234,15 @@ Le modifiche sono state applicate seguendo le best practice documentate in `CONF
 ### Modulo Activity
 - Diversi file di documentazione in `Activity/project_docs/phpstan/` (level_1.md fino a level_10.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - Diversi file di documentazione in `Activity/docs/phpstan/` (level_1.md fino a level_10.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - File README.md del modulo Activity
 
 ### Modulo Xot
@@ -256,6 +269,7 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 * [risoluzione_conflitti.md](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../Tenant/project_docs/risoluzione_conflitti.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -263,6 +277,8 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 * [risoluzione_conflitti.md](../../../tenant/docs/risoluzione_conflitti.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 aurmich/dev
 5693302 (.)
@@ -270,6 +286,7 @@ b6f667c (.)
 * [Risoluzione Conflitti Xot](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../Tenant/project_docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../project_docs/conflict_resolution.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 fc83074 (.)
 =======
@@ -282,3 +299,6 @@ fc83074 (.)
 fc83074 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+fc83074 (.)
+>>>>>>> 8d801bbe (Check & fix styling)

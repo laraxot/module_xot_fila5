@@ -760,6 +760,7 @@ class ConnectionManagerService
     {
         return match($module) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             'Quaeris' => 'quaeris',
 =======
 <<<<<<< HEAD
@@ -769,6 +770,9 @@ class ConnectionManagerService
             'ExternalProject' => '<nome progetto>',
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+            'Quaeris' => 'quaeris',
+>>>>>>> 8d801bbe (Check & fix styling)
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -852,6 +856,7 @@ class ContactValidationService
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/Quaeris/Contracts/ChartRendererContract.php
 =======
 <<<<<<< HEAD
@@ -861,12 +866,16 @@ class ContactValidationService
 // Modules/ExternalProject/Contracts/ChartRendererContract.php
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// Modules/Quaeris/Contracts/ChartRendererContract.php
+>>>>>>> 8d801bbe (Check & fix styling)
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
 =======
@@ -877,6 +886,9 @@ interface ChartRendererContract
 // Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> 8d801bbe (Check & fix styling)
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1043,6 +1055,7 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/Quaeris/Services/BulkProcessingService.php
 =======
 <<<<<<< HEAD
@@ -1052,6 +1065,9 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 // Modules/ExternalProject/Services/BulkProcessingService.php
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// Modules/Quaeris/Services/BulkProcessingService.php
+>>>>>>> 8d801bbe (Check & fix styling)
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void
@@ -1444,6 +1460,7 @@ class ContactNotificationService
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 =======
 <<<<<<< HEAD
@@ -1452,3 +1469,6 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> 8d801bbe (Check & fix styling)

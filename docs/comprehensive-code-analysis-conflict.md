@@ -9,6 +9,7 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 
 #### Singleton Pattern Duplicato
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
 =======
 <<<<<<< HEAD
@@ -17,12 +18,16 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 **File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 // DUPLICATO in LimeJsonService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
 =======
@@ -32,20 +37,27 @@ public static function getInstance(): self
     if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
+>>>>>>> 8d801bbe (Check & fix styling)
         self::$instance = new self();
     }
     return self::$instance;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 // DUPLICATO in QuaerisService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\Quaeris\Services\QuaerisService) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -56,6 +68,8 @@ public static function getInstance(): self
     if (! self::$instance instanceof \Modules\healthcare_app\Services\healthcare_appService) {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         self::$instance = new self();
     }
     return self::$instance;
@@ -66,6 +80,7 @@ public static function getInstance(): self
 
 #### Connection Hardcoded Duplicata
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
 =======
 <<<<<<< HEAD
@@ -74,11 +89,15 @@ public static function getInstance(): self
 **Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
+>>>>>>> 8d801bbe (Check & fix styling)
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
 
 #### Single Responsibility Principle Violato
+<<<<<<< HEAD
 <<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
 =======
@@ -88,6 +107,9 @@ public static function getInstance(): self
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -136,6 +158,7 @@ abstract class BaseUser extends Authenticatable implements
 
 #### Customer Model - Lazy Loading
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Customer.php`
 =======
 <<<<<<< HEAD
@@ -144,6 +167,9 @@ abstract class BaseUser extends Authenticatable implements
 **File**: `Modules/healthcare_app/app/Models/Customer.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/Customer.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 public function surveyPdfsActive()
@@ -157,6 +183,7 @@ public function surveyPdfsActive()
 
 #### AlertWidget - Query Complessa
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
 =======
 <<<<<<< HEAD
@@ -165,6 +192,9 @@ public function surveyPdfsActive()
 **File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -188,6 +218,7 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 
 #### QuestionChart Model - Metodi Complessi
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
 =======
 <<<<<<< HEAD
@@ -196,6 +227,9 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 public function participants(): CustomRelation
@@ -223,6 +257,7 @@ public function participants(): CustomRelation
 
 #### SendInviteAction - Catch Vuoti
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
 =======
 <<<<<<< HEAD
@@ -231,6 +266,9 @@ public function participants(): CustomRelation
 **File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 try {
@@ -251,13 +289,17 @@ try {
 
 #### Schema Duplicato
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 
 ```php
 // ContactResource.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
@@ -273,6 +315,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('first_name'),
@@ -281,6 +326,7 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -296,6 +342,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('name')->required(),
@@ -332,6 +381,7 @@ public function customer(): HasOneThrough
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 class QuaerisServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Quaeris';
@@ -346,6 +396,11 @@ class healthcare_appServiceProvider extends XotBaseServiceProvider
     public string $name = 'healthcare_app';
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+class QuaerisServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = 'Quaeris';
+>>>>>>> 8d801bbe (Check & fix styling)
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -405,6 +460,7 @@ class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -418,6 +474,9 @@ class ContactResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('first_name'),
@@ -460,6 +519,7 @@ trait SingletonTrait
 
 #### B. Separare BaseModel Responsibilities
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
 =======
 <<<<<<< HEAD
@@ -468,6 +528,9 @@ trait SingletonTrait
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -481,6 +544,7 @@ abstract class BaseModel extends Model implements ModelContract
 
 #### C. Implementare Repository Pattern
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
 =======
 <<<<<<< HEAD
@@ -489,6 +553,9 @@ abstract class BaseModel extends Model implements ModelContract
 **File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 ```php
 class SurveyFlipResponseRepository
 {
@@ -550,13 +617,17 @@ try {
 #### B. Configuration Centralization
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 // config/quaeris.php
 return [
     'database' => [
         'connection' => env('QUAERIS_DB_CONNECTION', 'quaeris'),
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -566,6 +637,8 @@ return [
         'connection' => env('healthcare_app_DB_CONNECTION', 'healthcare_app'),
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'limesurvey' => [
         'api' => [
@@ -580,6 +653,7 @@ return [
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
 =======
 <<<<<<< HEAD
@@ -592,6 +666,9 @@ return [
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -614,6 +691,7 @@ return [
 
 **Data Analisi**: 2025-01-06
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring
@@ -629,3 +707,8 @@ return [
 **Stima Effort**: 40-60 ore di refactoring
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Analista**: AI Code Review System
+**Priorità**: CRITICA - Richiede intervento immediato
+**Stima Effort**: 40-60 ore di refactoring
+>>>>>>> 8d801bbe (Check & fix styling)

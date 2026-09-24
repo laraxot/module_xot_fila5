@@ -76,6 +76,7 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
 - [Namespace Rules](namespace-rules.md) - Regole per i namespace
 =======
@@ -92,6 +93,10 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_TrHOd5
 >>>>>>> laraxot/dev
+=======
+- [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
+- [Namespace Rules](namespace-rules.md) - Regole per i namespace
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Moduli Collegati
 - [UI](../UI/project_docs/README.md) - Componenti di interfaccia

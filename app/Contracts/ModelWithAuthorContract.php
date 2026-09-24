@@ -11,6 +11,7 @@ use Illuminate\Support\Carbon;
  * Modules\Xot\Contracts\ModelWithAuthorContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int $id
  * @property int|null $user_id
  * @property string|null $post_type
@@ -42,6 +43,8 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed> treeSons()
  * @method array<string, mixed> toArray()
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @property int                $id
  * @property int|null           $user_id
  * @property string|null        $post_type
@@ -56,6 +59,7 @@ use Illuminate\Support\Carbon;
  * @property UserContract|null  $user
  * @property UserContract|null  $author
  *
+<<<<<<< HEAD
  * @method int|string|null                                                 getKey()
  * @method string                                                          getRouteKey()
  * @method string                                                          getRouteKeyName()
@@ -73,6 +77,24 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
 >>>>>>> laraxot/dev
+=======
+ * @method mixed                                                           getKey()
+ * @method string                                                          getRouteKey()
+ * @method string                                                          getRouteKeyName()
+ * @method string                                                          getTable()
+ * @method mixed                                                           with($array)
+ * @method array<string, mixed>                                            getFillable()
+ * @method mixed                                                           fill($array)
+ * @method mixed                                                           getConnection()
+ * @method mixed                                                           update($params)
+ * @method mixed                                                           delete()
+ * @method mixed                                                           detach($params)
+ * @method mixed                                                           attach($params)
+ * @method mixed                                                           save($params)
+ * @method array<string, mixed>                                            treeLabel()
+ * @method array<string, mixed>                                            treeSons()
+ * @method array<string, mixed>                                            toArray()
+>>>>>>> 8d801bbe (Check & fix styling)
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
@@ -80,9 +102,15 @@ use Illuminate\Support\Carbon;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 interface ModelWithAuthorContract {}
 =======
 interface ModelWithAuthorContract
 {
 }
 >>>>>>> laraxot/dev
+=======
+interface ModelWithAuthorContract
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

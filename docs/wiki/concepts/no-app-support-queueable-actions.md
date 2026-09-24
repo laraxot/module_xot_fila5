@@ -29,6 +29,7 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 | `PanelModuleSupport` | Eliminato (duplicato morto) |
 | `PdfBuilderAdapter` | `Adapters/PdfBuilderAdapter` |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_4yvlhx
 <<<<<<< HEAD
@@ -49,14 +50,19 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 =======
 <<<<<<< .merge_file_4yvlhx
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 | `PaDesignColors` | `Actions/Design/GetPaFilamentPaletteAction` |
 | `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
 
 **Nota (2026-07-13):** nessun duplicato `ResolvePanelModuleAction` — panel multi-metodo resta solo su `PanelModuleAdapter`.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_AUewK4
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Perché
 

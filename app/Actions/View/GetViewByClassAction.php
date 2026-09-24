@@ -21,19 +21,25 @@ class GetViewByClassAction
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group".
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $class  Il nome della classe da convertire
      * @param  string  $suffix  Suffisso opzionale da aggiungere al nome della vista
      * @return view-string
      *
      * @throws \Exception Se la vista non esiste
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param string $class  Il nome della classe da convertire
      * @param string $suffix Suffisso opzionale da aggiungere al nome della vista
      *
      * @throws \Exception Se la vista non esiste
      *
      * @return view-string
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function execute(string $class, string $suffix = ''): string
     {
@@ -68,10 +74,14 @@ class GetViewByClassAction
         ];
         $view = Arr::first($views, view()->exists(...));
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($view === null) {
 =======
         if (null === $view) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $view) {
+>>>>>>> 8d801bbe (Check & fix styling)
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 

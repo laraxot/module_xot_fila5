@@ -7,19 +7,25 @@ description: 'Elenco di 1 riferimenti esterni raccolti per nwidart, deduplicati 
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 converted_from: _nwidart.txt
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 converted_from: nwidart.txt
 =======
 converted_from: _nwidart.txt
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 created: 2026-08-24
 updated: 2026-08-24
 ---
@@ -35,6 +41,7 @@ updated: 2026-08-24
 - <https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927>
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
 >>>>>>> laraxot/dev
 =======
@@ -45,3 +52,7 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)

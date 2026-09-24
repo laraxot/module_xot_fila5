@@ -7,6 +7,7 @@ canonical: ../../../Themes/docs/shared-components/optimization-opportunities-2.m
 See canonical documentation: ../../../Themes/docs/shared-components/optimization-opportunities-2.md
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -385,3 +386,5 @@ return array_merge(
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

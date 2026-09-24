@@ -39,6 +39,7 @@ In caso di errore durante l'applicazione dei metatag:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [MetatagData](metatagdata.md)
 =======
 <<<<<<< HEAD
@@ -47,6 +48,9 @@ In caso di errore durante l'applicazione dei metatag:
 - [MetatagData](../datas/MetatagData.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [MetatagData](../datas/MetatagData.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [MetatagData](../datas/metatagdata.md)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
 

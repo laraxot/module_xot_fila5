@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_a3xbDV
 =======
 <<<<<<< .merge_file_kMrV1b
 >>>>>>> .merge_file_IHbUDn
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 title: "Filament Version Declaration — {ModuleOrThemeName}"
 module: "Xot"
@@ -13,11 +16,14 @@ qmd: "filament version"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_a3xbDV
 =======
 =======
 >>>>>>> .merge_file_BDS4R9
 >>>>>>> .merge_file_IHbUDn
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

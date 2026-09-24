@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Services;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_vm6MQl
 <<<<<<< HEAD
@@ -27,6 +28,11 @@ use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+use Nwidart\Modules\Facades\Module;
+>>>>>>> 8d801bbe (Check & fix styling)
 use stdClass;
 
 // ----------- Requests ----------
@@ -48,6 +54,7 @@ class ModuleService
     public static function getInstance(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! (self::$_instance instanceof self)) {
             self::$_instance = new self;
 =======
@@ -64,6 +71,10 @@ class ModuleService
             self::$_instance = new self();
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+        if (! self::$_instance instanceof self) {
+            self::$_instance = new self();
+>>>>>>> 8d801bbe (Check & fix styling)
         }
 
         return self::$_instance;
@@ -101,6 +112,7 @@ class ModuleService
          */
         $mod = Module::find($this->name);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! ($mod instanceof \Nwidart\Modules\Module)) {
 =======
 <<<<<<< .merge_file_vm6MQl
@@ -113,6 +125,9 @@ class ModuleService
         if (! $mod instanceof \Nwidart\Modules\Module) {
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+        if (! $mod instanceof \Nwidart\Modules\Module) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return [];
         }
 
@@ -128,6 +143,7 @@ class ModuleService
             // dddx(['ext' => $file->getExtension(), get_class_methods($file)]);
             if (Str::endsWith($filename, $ext)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $tmp = new stdClass;
 =======
 <<<<<<< .merge_file_vm6MQl
@@ -140,6 +156,9 @@ class ModuleService
                 $tmp = new \stdClass();
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+                $tmp = new \stdClass();
+>>>>>>> 8d801bbe (Check & fix styling)
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -158,6 +177,7 @@ class ModuleService
 
                 try {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_vm6MQl
 <<<<<<< HEAD
@@ -172,16 +192,21 @@ class ModuleService
 =======
 =======
 >>>>>>> .merge_file_4KP26r
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     $reflection_class = new \ReflectionClass($tmp->class);
                     if (! $reflection_class->isAbstract()) {
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_vm6MQl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_4KP26r
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                     // Ignore reflection errors
                 }
             }
