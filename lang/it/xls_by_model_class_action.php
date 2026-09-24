@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/xls_by_model_class_action.php
 return [
     'id' => 'id',
     'level' => 'level',
@@ -27,7 +24,11 @@ return [
         ],
         'label' => 'Xls By Model Class Action',
         'sort' => 1,
+<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
+=======
+        'icon' => 'xot-files.xls',
+>>>>>>> laraxot/dev
     ],
     'fields' => [
         'id' => [

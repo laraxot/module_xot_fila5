@@ -20,7 +20,30 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_LeqAeX
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_lWInLe
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_505tCX
+>>>>>>> .merge_file_s7RpwM
 >>>>>>> laraxot/dev
 {
     return [

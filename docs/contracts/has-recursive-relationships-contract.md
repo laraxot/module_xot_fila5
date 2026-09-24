@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 ---
 title: "HasRecursiveRelationshipsContract Documentation"
 type: documentation
@@ -15,6 +19,8 @@ related:
   - ../recursive-relationships-vendor-direct.md
 ---
 
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # HasRecursiveRelationshipsContract Documentation
 
 ## Overview
@@ -25,7 +31,15 @@ The `HasRecursiveRelationshipsContract` defines the interface for models that su
 
 This contract ensures type safety and consistency across all tree-structured models in the Laraxot ecosystem, providing:
 
+<<<<<<< HEAD
+- **Type Safety**: All methods have proper return types
+=======
+<<<<<<< HEAD
+- **Type Safety**: All methods have proper return types
+=======
 - **Type Safety**: Relationship methods keep precise PHPDoc return types
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Consistency**: Standardized interface across modules
 - **PHPStan Compatibility**: Level 10 static analysis compliance
 
@@ -39,11 +53,25 @@ abstract class BaseTreeModel extends BaseModel implements HasRecursiveRelationsh
 }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+### TypedHasRecursiveRelationships Trait
+The trait acts as a wrapper around the vendor package, providing:
+- **Return Type Safety**: All methods return properly typed objects
+- **PHPStan Compliance**: Type annotations for static analysis
+- **Method Aliasing**: Vendor methods are aliased and re-exposed with types
+<<<<<<< HEAD
+=======
+=======
 ### Vendor HasRecursiveRelationships trait
 
 STORY-346 removed the local `TypedHasRecursiveRelationships` wrapper. Tree models use `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` directly.
 
 The contract keeps the domain boundary and PHPDoc relationship types; runtime signatures follow the vendor package.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Key Methods
 
@@ -147,7 +175,15 @@ class MyModel extends BaseTreeModel {
 1. Check model extends `BaseTreeModel`
 2. Verify overridden methods have correct return types
 3. Run PHPStan level 10 analysis
+<<<<<<< HEAD
+4. Check trait aliasing in `TypedHasRecursiveRelationships`
+=======
+<<<<<<< HEAD
+4. Check trait aliasing in `TypedHasRecursiveRelationships`
+=======
 4. Check that models import the vendor `HasRecursiveRelationships` trait directly
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Best Practices
 
@@ -160,5 +196,13 @@ class MyModel extends BaseTreeModel {
 ## Related Documentation
 
 - [BaseTreeModel](models/base-tree-model.md)
+<<<<<<< HEAD
+- [TypedHasRecursiveRelationships](traits/typed-has-recursive-relationships.md)
+=======
+<<<<<<< HEAD
+- [TypedHasRecursiveRelationships](traits/typed-has-recursive-relationships.md)
+=======
 - [Recursive relationships vendor direct](../recursive-relationships-vendor-direct.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Laravel Adjacency List](https://github.com/staudenmeir/laravel-adjacency-list)

@@ -6,10 +6,26 @@ slug: slug
 description: 'Elenco di 2 riferimenti esterni raccolti per slug, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< .merge_file_yn1uEu
+=======
+<<<<<<< HEAD
+=======
+converted_from: _slug.txt
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1YAaVC
 converted_from: slug.txt
 =======
 converted_from: _slug.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_yn1uEu
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1YAaVC
 created: 2026-08-24
 updated: 2026-08-24
 ---

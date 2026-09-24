@@ -8,7 +8,13 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 
 **Collegamento bidirezionale:**
 - [Motivazione e applicazione nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 - [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 
@@ -48,4 +54,12 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
   - [Documentazione generale e convenzioni di progetto](../../../../project_docs/coding-standards.md)
   - [Esempio e memo nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
 
+<<<<<<< HEAD
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
+=======
+<<<<<<< HEAD
+> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
+=======
+> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

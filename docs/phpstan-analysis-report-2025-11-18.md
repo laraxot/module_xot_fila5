@@ -1,5 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_3jGV4j
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_gIxsSn
 ---
 name: phpstan-analysis-report-2025-11-18
 description: " Executive Summary"
@@ -7,10 +17,25 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_3jGV4j
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_gIxsSn
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_3jGV4j
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_gIxsSn
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary

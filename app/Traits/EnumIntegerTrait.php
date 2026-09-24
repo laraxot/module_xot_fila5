@@ -88,7 +88,34 @@ trait EnumIntegerTrait
     /**
      * Get enum case by integer value.
      *
+<<<<<<< .merge_file_tYlISH
      * @param  int  $value  Integer value to find
+=======
+     * <<<<<<< HEAD
+     *
+     * @param int $value Integer value to find
+     *                   =======
+     * @param int $value Integer value to find
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
+     *                   =======
+     *                   <<<<<<< .merge_file_VA3lej
+     * @param int $value Integer value to find
+     *                   =======
+     *                   <<<<<<< HEAD
+     * @param int $value Integer value to find
+     *                   =======
+     * @param int $value Integer value to find
+     *
+     * >>>>>>> laraxot/dev
+     * >>>>>>> .merge_file_kRf6cQ
+     *
+     * >>>>>>> laraxot/dev
+     * >>>>>>> .merge_file_cEwT4Z
+     *
+     * >>>>>>> laraxot/dev
+     *
+>>>>>>> .merge_file_BjMWVg
      * @return static|null Matching case or null
      */
     public static function fromInt(int $value): ?static
@@ -105,7 +132,30 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is greater than another.
      *
+<<<<<<< .merge_file_tYlISH
      * @param  int  $value  Value to compare against
+=======
+     * <<<<<<< HEAD
+     *
+     * @param int $value Value to compare against
+     *                   =======
+     * @param int $value Value to compare against
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
+     *                   =======
+     *                   <<<<<<< .merge_file_VA3lej
+     * @param int $value Value to compare against
+     *                   =======
+     *                   <<<<<<< HEAD
+     * @param int $value Value to compare against
+     *                   =======
+     * @param int $value Value to compare against
+     *                   >>>>>>> laraxot/dev
+     *                   >>>>>>> .merge_file_kRf6cQ
+     *                   >>>>>>> laraxot/dev
+     *                   >>>>>>> .merge_file_cEwT4Z
+     *                   >>>>>>> laraxot/dev
+>>>>>>> .merge_file_BjMWVg
      */
     public function isGreaterThan(int $value): bool
     {
@@ -115,7 +165,30 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is less than another.
      *
+<<<<<<< .merge_file_tYlISH
      * @param  int  $value  Value to compare against
+=======
+     * <<<<<<< HEAD
+     *
+     * @param int $value Value to compare against
+     *                   =======
+     * @param int $value Value to compare against
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
+     *                   =======
+     *                   <<<<<<< .merge_file_VA3lej
+     * @param int $value Value to compare against
+     *                   =======
+     *                   <<<<<<< HEAD
+     * @param int $value Value to compare against
+     *                   =======
+     * @param int $value Value to compare against
+     *                   >>>>>>> laraxot/dev
+     *                   >>>>>>> .merge_file_kRf6cQ
+     *                   >>>>>>> laraxot/dev
+     *                   >>>>>>> .merge_file_cEwT4Z
+     *                   >>>>>>> laraxot/dev
+>>>>>>> .merge_file_BjMWVg
      */
     public function isLessThan(int $value): bool
     {
@@ -125,7 +198,30 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value equals another.
      *
+<<<<<<< .merge_file_tYlISH
      * @param  int  $value  Value to compare against
+=======
+     * <<<<<<< HEAD
+     *
+     * @param int $value Value to compare against
+     *                   =======
+     * @param int $value Value to compare against
+     *                   <<<<<<< .merge_file_1jcXwV
+     *                   =======
+     *                   =======
+     *                   <<<<<<< .merge_file_VA3lej
+     * @param int $value Value to compare against
+     *                   =======
+     *                   <<<<<<< HEAD
+     * @param int $value Value to compare against
+     *                   =======
+     * @param int $value Value to compare against
+     *                   >>>>>>> laraxot/dev
+     *                   >>>>>>> .merge_file_kRf6cQ
+     *                   >>>>>>> laraxot/dev
+     *                   >>>>>>> .merge_file_cEwT4Z
+     *                   >>>>>>> laraxot/dev
+>>>>>>> .merge_file_BjMWVg
      */
     public function equals(int $value): bool
     {

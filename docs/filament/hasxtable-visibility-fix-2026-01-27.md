@@ -1,3 +1,21 @@
+<<<<<<< .merge_file_pjfKv8
+---
+title: "Hasxtable Visibility Fix"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated hasxtable-visibility-fix"
+related:
+  - "./hasxtable-visibility-fix.md"
+---
+# Hasxtable Visibility Fix
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [hasxtable-visibility-fix.md](./hasxtable-visibility-fix.md)
+=======
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
 **Data**: 2026-01-27  
@@ -137,3 +155,4 @@ curl http://quaeris.local/quaeris/admin/ats/survey-pdfs/16/question-charts/226
 3. **Documentazione**: La documentazione esistente (`widget-method-visibility-rules.md`) era corretta ma non era stata applicata al trait base
 
 *Ultimo aggiornamento: 2026-01-27*
+>>>>>>> .merge_file_e3Ncgw

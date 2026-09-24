@@ -14,7 +14,20 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_0pT56f
      * @param  array<int|string, mixed>  $data
+=======
+<<<<<<< HEAD
+     * @param  array<int|string, mixed>  $data
+=======
+<<<<<<< .merge_file_fveJ0C
+     * @param  array<int|string, mixed>  $data
+=======
+     * @param array<int|string, mixed> $data
+     *
+>>>>>>> .merge_file_Swjp0m
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4earxY
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -37,8 +50,24 @@ class DiffAssocRecursiveAction
     }
 
     /**
+<<<<<<< .merge_file_0pT56f
      * @param  array<int|string, mixed>  $arr_1
      * @param  array<int|string, mixed>  $arr_2
+=======
+<<<<<<< HEAD
+     * @param  array<int|string, mixed>  $arr_1
+     * @param  array<int|string, mixed>  $arr_2
+=======
+<<<<<<< .merge_file_fveJ0C
+     * @param  array<int|string, mixed>  $arr_1
+     * @param  array<int|string, mixed>  $arr_2
+=======
+     * @param array<int|string, mixed> $arr_1
+     * @param array<int|string, mixed> $arr_2
+     *
+>>>>>>> .merge_file_Swjp0m
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4earxY
      * @return array<int|string, array<int|string, mixed>>
      */
     public function execute(array $arr_1, array $arr_2): array
@@ -47,10 +76,28 @@ class DiffAssocRecursiveAction
         $arr_2 = self::fixType($arr_2);
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_0pT56f
+=======
+        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
+=======
+<<<<<<< .merge_file_fveJ0C
+<<<<<<< HEAD
+        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_4earxY
         $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
 =======
         $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_0pT56f
+=======
+>>>>>>> laraxot/dev
+=======
+        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
+>>>>>>> .merge_file_Swjp0m
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4earxY
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {

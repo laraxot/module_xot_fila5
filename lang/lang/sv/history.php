@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Mwbq3r
+=======
+
+>>>>>>> .merge_file_szaEmY
 return [
     'backend' => [
         'none' => 'Det finns ingen historik för förändringar.',

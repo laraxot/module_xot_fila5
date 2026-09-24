@@ -274,5 +274,16 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
+=======
+<<<<<<< HEAD
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+=======
+**Ultimo aggiornamento**: [DATE]
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

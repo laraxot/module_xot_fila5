@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_oluWYz
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Msa9mA
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_N7No2T
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_IxYfUn
+>>>>>>> .merge_file_gD26w4
+>>>>>>> .merge_file_vPGSaH
 ---
 name: 04-refactor-infolist
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_oluWYz
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vPGSaH
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_oluWYz
 =======
+=======
+<<<<<<< .merge_file_Msa9mA
+=======
+<<<<<<< .merge_file_N7No2T
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_IxYfUn
+>>>>>>> .merge_file_gD26w4
+>>>>>>> .merge_file_vPGSaH
 >>>>>>> laraxot/dev
 # BMAD Story 04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 

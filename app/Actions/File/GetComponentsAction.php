@@ -7,14 +7,23 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ComponentFileData;
+<<<<<<< HEAD
+use Spatie\LaravelData\DataCollection;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
+<<<<<<< HEAD
+=======
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+>>>>>>> laraxot/dev
 class GetComponentsAction
 {
     use QueueableAction;
@@ -56,14 +65,25 @@ class GetComponentsAction
             /** @var array<int, array<string, mixed>> $comps */
             $comps = is_array($decoded) ? array_values($decoded) : [];
 
-            return ComponentFileData::collection($comps);
+            if ($this->hasCurrentSchema($comps)) {
+                return ComponentFileData::collection($comps);
+            }
+
+            // Cache scritta da uno schema precedente (name/class/ns rinominati o
+            // mancanti): rigenerare invece di far fallire il boot dell'app con
+            // "Typed property ...::$name must not be accessed before
+            // initialization" alla prima lettura di un DTO incompleto.
         }
 
         $files = File::allFiles($path);
         $comps = [];
 
         foreach ($files as $file) {
+<<<<<<< HEAD
+            if ($file->getExtension() !== 'php') {
+=======
             if ('php' !== $file->getExtension()) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
@@ -78,10 +98,14 @@ class GetComponentsAction
             $comp_name = $prefix.$comp_name;
             $comp_ns = $namespace.'\\'.$class_name;
 
+<<<<<<< HEAD
+            if ($relative_path !== '') {
+=======
             if ('' !== $relative_path) {
+>>>>>>> laraxot/dev
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
-                    ->map(fn ($item) => Str::slug(Str::snake($item)))
+                    ->map(fn (string $item) => Str::slug(Str::snake($item)))
                     ->implode('.');
 
                 $comp_name = $prefix.$piece.'.'.Str::slug(Str::snake(Str::replace('\\', ' ', $class_name)));
@@ -129,5 +153,34 @@ class GetComponentsAction
         }
 
         return ComponentFileData::collection($comps);
+    }
+
+    /**
+<<<<<<< HEAD
+     * @param  array<int, array<string, mixed>>  $comps
+=======
+     * @param array<int, array<string, mixed>> $comps
+>>>>>>> laraxot/dev
+     */
+    private function hasCurrentSchema(array $comps): bool
+    {
+        foreach ($comps as $comp) {
+            if (
+                ! isset($comp['name'], $comp['class'], $comp['ns'])
+<<<<<<< HEAD
+                || ! is_string($comp['name']) || $comp['name'] === ''
+                || ! is_string($comp['class']) || $comp['class'] === ''
+                || ! is_string($comp['ns']) || $comp['ns'] === ''
+=======
+                || ! is_string($comp['name']) || '' === $comp['name']
+                || ! is_string($comp['class']) || '' === $comp['class']
+                || ! is_string($comp['ns']) || '' === $comp['ns']
+>>>>>>> laraxot/dev
+            ) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

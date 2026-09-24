@@ -1,18 +1,17 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Filament\Actions\Form;
 
-use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Utilities\Set;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 
-class FieldRefreshAction extends Action
+class FieldRefreshAction extends XotBaseAction
 {
     protected function setUp(): void
     {
@@ -22,9 +21,13 @@ class FieldRefreshAction extends Action
         $this->icon('heroicon-o-arrow-path')
             ->label('')
             ->tooltip('Ricalcola valore')
-            ->action(function ($record, Set $set): void {
+            ->action(function (mixed $record, Set $set): void {
                 $name = $this->getName();
+<<<<<<< HEAD
+                if ($name === null) {
+=======
                 if (null === $name) {
+>>>>>>> laraxot/dev
                     return;
                 }
 

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_PbIPso
+=======
+
+>>>>>>> .merge_file_8gcv7e
 return [
     'failed' => 'Toegangsgegevens niet gevonden',
     'general_error' => 'Je hebt niet de rechten om dat te doen.',

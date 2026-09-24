@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_uTxbck
+=======
+
+>>>>>>> .merge_file_SE0Jbs
 return [
     'title' => 'Laravel Installer',
     'next' => 'Volgende stap',

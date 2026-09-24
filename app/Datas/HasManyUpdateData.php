@@ -10,13 +10,21 @@ use Spatie\LaravelData\Data;
 class HasManyUpdateData extends Data
 {
     /**
+<<<<<<< HEAD
+     * @param  array<int|string>  $ids
+=======
      * @param array<int|string> $ids
+>>>>>>> laraxot/dev
      */
     public function __construct(
         public string $foreignKey,
         public mixed $parentKey,
         #[ArrayType]
         public array $ids = [],
+<<<<<<< HEAD
+    ) {}
+=======
     ) {
     }
+>>>>>>> laraxot/dev
 }

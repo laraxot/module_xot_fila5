@@ -8,8 +8,22 @@ tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: payment-gateway.txt
 =======
+<<<<<<< .merge_file_DvF1ku
 converted_from: payment_gateway.txt
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: payment_gateway.txt
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: payment-gateway.txt
+=======
+converted_from: payment_gateway.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xZBctW
 created: 2026-08-24
 updated: 2026-08-24
 ---

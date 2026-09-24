@@ -6,10 +6,26 @@ slug: soketi
 description: 'Elenco di 2 riferimenti esterni raccolti per soketi, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< .merge_file_LylsKn
+=======
+<<<<<<< HEAD
+=======
+converted_from: _soketi.txt
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_alZH6k
 converted_from: soketi.txt
 =======
 converted_from: _soketi.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LylsKn
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_alZH6k
 created: 2026-08-24
 updated: 2026-08-24
 ---

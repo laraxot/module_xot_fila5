@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_PTfaif
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_H6SJfm
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_254861
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Cf2v0n
+>>>>>>> .merge_file_fiS1Ha
+>>>>>>> .merge_file_LAEfuI
 ---
 name: 03-refactor-resource-form
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_PTfaif
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LAEfuI
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PTfaif
 =======
+=======
+<<<<<<< .merge_file_H6SJfm
+=======
+<<<<<<< .merge_file_254861
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Cf2v0n
+>>>>>>> .merge_file_fiS1Ha
+>>>>>>> .merge_file_LAEfuI
 >>>>>>> laraxot/dev
 # BMAD Story 03 — XotBaseResourceForm: `use HasXotForm`
 

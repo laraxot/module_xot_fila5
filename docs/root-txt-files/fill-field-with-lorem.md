@@ -1,5 +1,14 @@
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_0LNx6c
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_0T53Oj
 title: "fill_field_with_lorem"
 module: "Xot"
 type: concept
@@ -86,6 +95,14 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+<<<<<<< .merge_file_0LNx6c
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_0T53Oj
 =======
 title: 'Fill field with lorem — risorse esterne'
 module: Xot
@@ -175,3 +192,10 @@ updated: 2026-08-24
 - <http://enneagon.org/phrases>
 - <https://www.fakenamegenerator.com/gen-male-fr-fr.php>
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_0LNx6c
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_0T53Oj

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Convenzioni per Data Objects e QueueableActions
 
 Questo documento definisce le convenzioni per l'utilizzo dei Data Objects e QueueableActions nel framework Laraxot <nome progetto>, con una chiara preferenza per le librerie Spatie rispetto agli approcci tradizionali.
@@ -267,3 +271,15 @@ class UpdateRatingAction
 5. **Scalabilità**: Facile aggiunta di nuove funzionalità
 6. **Manutenibilità**: Codice più leggibile e facile da mantenere
 7. **Compatibilità con PHPStan**: Struttura adatta per analisi PHPStan di livello 9
+<<<<<<< HEAD
+=======
+=======
+---
+module: theme
+topic: data-queableactions
+canonical: ../../../Themes/docs/shared-components/data-queableactions.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/data-queableactions.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

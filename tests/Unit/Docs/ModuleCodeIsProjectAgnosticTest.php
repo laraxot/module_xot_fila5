@@ -11,7 +11,23 @@ use function Safe\preg_match;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_yNG8O3
 /**
+=======
+<<<<<<< HEAD
+/**
+=======
+<<<<<<< .merge_file_fO27lg
+<<<<<<< HEAD
+/**
+=======
+/*
+>>>>>>> laraxot/dev
+=======
+/*
+>>>>>>> .merge_file_HUDeIn
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_y4hO3s
  * Il **codice** dei moduli non nomina il progetto ospite.
  *
  * I moduli vivono in piu' progetti: un nome di progetto nel codice li rende portabili
@@ -44,7 +60,23 @@ test('nessun file php dei moduli nomina un progetto ospite', function (): void {
         $source = file_get_contents($file);
 
         foreach ($forbidden as $name) {
+<<<<<<< .merge_file_yNG8O3
             if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
+=======
+<<<<<<< HEAD
+            if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
+=======
+<<<<<<< .merge_file_fO27lg
+<<<<<<< HEAD
+            if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
+=======
+            if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
+>>>>>>> laraxot/dev
+=======
+            if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
+>>>>>>> .merge_file_HUDeIn
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_y4hO3s
                 $offenders[] = str_replace(base_path().'/', '', $file).' → '.$name;
 
                 break;
@@ -67,7 +99,23 @@ test('il nome del file sqlite di test non e cablato', function (): void {
 
         $source = file_get_contents($file);
 
+<<<<<<< .merge_file_yNG8O3
         if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
+=======
+<<<<<<< HEAD
+        if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
+=======
+<<<<<<< .merge_file_fO27lg
+<<<<<<< HEAD
+        if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
+=======
+        if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
+>>>>>>> laraxot/dev
+=======
+        if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
+>>>>>>> .merge_file_HUDeIn
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_y4hO3s
             $offenders[] = str_replace(base_path().'/', '', $file);
         }
     }
@@ -98,7 +146,23 @@ function modulePhpFiles(): array
     );
 
     foreach ($iterator as $entry) {
+<<<<<<< .merge_file_yNG8O3
         if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
+=======
+<<<<<<< HEAD
+        if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
+=======
+<<<<<<< .merge_file_fO27lg
+<<<<<<< HEAD
+        if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
+=======
+        if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
+>>>>>>> laraxot/dev
+=======
+        if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
+>>>>>>> .merge_file_HUDeIn
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_y4hO3s
             continue;
         }
 

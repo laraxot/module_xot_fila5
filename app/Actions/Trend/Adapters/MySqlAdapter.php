@@ -4,12 +4,36 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trend\Adapters;
 
+<<<<<<< .merge_file_UYGQIK
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ILgzJF
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_IDTTvz
 use Error;
 use Override;
 
 class MySqlAdapter extends AbstractAdapter
 {
     #[Override]
+<<<<<<< .merge_file_UYGQIK
+=======
+<<<<<<< HEAD
+=======
+=======
+class MySqlAdapter extends AbstractAdapter
+{
+    #[\Override]
+>>>>>>> laraxot/dev
+=======
+class MySqlAdapter extends AbstractAdapter
+{
+    #[\Override]
+>>>>>>> .merge_file_Zqq18d
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_IDTTvz
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {
@@ -18,7 +42,23 @@ class MySqlAdapter extends AbstractAdapter
             'day' => '%Y-%m-%d',
             'month' => '%Y-%m',
             'year' => '%Y',
+<<<<<<< .merge_file_UYGQIK
             default => throw new Error('Invalid interval.'),
+=======
+<<<<<<< HEAD
+            default => throw new Error('Invalid interval.'),
+=======
+<<<<<<< .merge_file_ILgzJF
+<<<<<<< HEAD
+            default => throw new Error('Invalid interval.'),
+=======
+            default => throw new \Error('Invalid interval.'),
+>>>>>>> laraxot/dev
+=======
+            default => throw new \Error('Invalid interval.'),
+>>>>>>> .merge_file_Zqq18d
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_IDTTvz
         };
 
         return sprintf("date_format(%s, '%s')", $column, $format);

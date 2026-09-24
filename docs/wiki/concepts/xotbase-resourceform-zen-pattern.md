@@ -55,7 +55,21 @@ class ActivityForm extends XotBaseResourceForm
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_lBHKPm
+=======
+
+>>>>>>> .merge_file_NGzrgi
 return [
     /*
     |--------------------------------------------------------------------------

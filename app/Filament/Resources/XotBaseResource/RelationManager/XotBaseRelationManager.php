@@ -4,73 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\XotBaseResource\RelationManager;
 
-use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManager;
 use Filament\Support\Components\Component;
 use Filament\Tables;
 use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Webmozart\Assert\Assert;
 
 /**
  * @property class-string<XotBaseResource> $resource
  */
-abstract class XotBaseRelationManager extends RelationManager
+abstract class XotBaseRelationManager extends FilamentRelationManager
 {
     use HasRelationshipModelClass;
     use HasXotTable {
         HasRelationshipModelClass::getModelClass insteadof HasXotTable;
-        getGridTableColumns as private xotGetGridTableColumns;
-        getTablePaginated as private xotGetTablePaginated;
-        getSearchableColumns as private xotSearchableColumns;
-        getHeaderActions as private xotGetHeaderActions;
-    }
-
-    /**
-     * @return array<int, Tables\Columns\Column|Tables\Columns\ColumnGroup|Tables\Columns\Layout\Component>
-     */
-    public function getGridTableColumns(): array
-    {
-        return $this->xotGetGridTableColumns();
-    }
-
-    /**
-     * @return bool|array<int|string>
-     */
-    protected function getTablePaginated(): bool|array
-    {
-        $paginated = $this->xotGetTablePaginated();
-
-        if (is_bool($paginated)) {
-            return $paginated;
-        }
-
-        /** @var array<int|string> $options */
-        $options = $paginated;
-
-        return $options;
-    }
-
-    /**
-     * @return array<string>
-     */
-    protected function getSearchableColumns(): array
-    {
-        /** @var array<string> $columns */
-        $columns = $this->xotSearchableColumns();
-
-        return $columns;
-    }
-
-    /**
-     * @return array<string, \Filament\Actions\Action>
-     */
-    protected function getHeaderActions(): array
-    {
-        /** @var array<string, \Filament\Actions\Action> $actions */
-        $actions = $this->xotGetHeaderActions();
-
-        return $actions;
     }
 
     protected static string $relationship = '';
@@ -106,7 +57,11 @@ abstract class XotBaseRelationManager extends RelationManager
      */
     final public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchema();
+        $class = $this->getResource()::getFormClass();
+        $instance = app($class);
+        Assert::isInstanceOf($instance, XotBaseResourceForm::class);
+
+        return $instance->getFormSchema();
     }
 
     /**

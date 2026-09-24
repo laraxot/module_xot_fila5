@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_Vv3INt
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_GFVe6J
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_42wjIc
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fTYlyD
+>>>>>>> .merge_file_ELETlN
+>>>>>>> .merge_file_iYsnhB
 ---
 name: issue-04-infolist
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_Vv3INt
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_iYsnhB
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Vv3INt
 =======
+=======
+<<<<<<< .merge_file_GFVe6J
+=======
+<<<<<<< .merge_file_42wjIc
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fTYlyD
+>>>>>>> .merge_file_ELETlN
+>>>>>>> .merge_file_iYsnhB
 >>>>>>> laraxot/dev
 # Issue GH #04 — XotBaseResourceInfolist: istanza + HasXotInfolist
 

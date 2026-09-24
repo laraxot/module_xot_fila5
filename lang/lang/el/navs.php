@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_6RAjJl
+=======
+
+>>>>>>> .merge_file_3Dwfix
 return [
     'general' => [
         'home' => 'Αρχική',

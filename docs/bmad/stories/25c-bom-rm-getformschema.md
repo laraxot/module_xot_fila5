@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_7fX9sd
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_xyr9GW
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_2FCcXO
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mto4up
+>>>>>>> .merge_file_yQHWXy
+>>>>>>> .merge_file_RPx2Vx
 ---
 name: 25c-bom-rm-getformschema
 description: "Modulo: Bom"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_7fX9sd
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_RPx2Vx
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7fX9sd
 =======
+=======
+<<<<<<< .merge_file_xyr9GW
+=======
+<<<<<<< .merge_file_2FCcXO
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mto4up
+>>>>>>> .merge_file_yQHWXy
+>>>>>>> .merge_file_RPx2Vx
 >>>>>>> laraxot/dev
 # 25c-bom — Rimuovere getFormSchema da BomResource
 

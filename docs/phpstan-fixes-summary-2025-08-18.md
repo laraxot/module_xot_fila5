@@ -1,5 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_NFg2bY
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wvv7fO
 ---
 name: phpstan-fixes-summary-2025-08-18
 description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
@@ -7,10 +17,25 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_NFg2bY
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wvv7fO
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_NFg2bY
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wvv7fO
 # PHPStan Fixes Summary - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

@@ -35,4 +35,8 @@ Correggiamo solo variabili che:
 - **Warning totali PHPMD**: (da calcolare)
 - **Warning critici corretti**: 1
 - **Warning da ignorare**: (da categorizzare)
+<<<<<<< .merge_file_u2dF4L
 - **PHPStan**: 0 errori (mantenuto)
+=======
+- **PHPStan**: 0 errori (mantenuto)
+>>>>>>> .merge_file_hQnr9q

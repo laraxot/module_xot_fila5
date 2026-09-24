@@ -2,30 +2,7 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/metatag.php
 return [
-    // Laraxot — see module docs/wiki for domain contract.
-    // Laraxot — see module docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
     'resources' => 'Risorse',
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
@@ -35,6 +12,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'metatag.navigation',
+        'icon' => 'metatag.navigation',
+        'sort' => 95,
     ],
     'fields' => [
         'name' => [
@@ -244,18 +224,21 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'key',
         ],
         'color' => [
             'label' => 'color',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'color',
         ],
         'hex' => [
             'label' => 'hex',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'hex',
         ],
         'timezone' => [
             'label' => 'Fuso orario',
@@ -344,7 +327,13 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
     ],
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',
+    'title' => 'metatag',
 ];

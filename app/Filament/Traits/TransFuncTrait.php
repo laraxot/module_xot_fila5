@@ -49,12 +49,15 @@ trait TransFuncTrait
             /** @var array<string, mixed>|Translator|string $trans */
             $trans = trans($key);
         } catch (\TypeError $e) {
+            /*
             dddx([
                 'e' => $e,
                 'key' => $key,
             ]);
+            */
+            return 'fix:'.$key;
 
-            return null;
+            // return null;
         }
 
         if ($key !== $trans) {
@@ -82,7 +85,11 @@ trait TransFuncTrait
     }
 
     /**
+<<<<<<< HEAD
+     * @param  string|array<int|string, mixed>|Translator|null  $trans
+=======
      * @param string|array<int|string, mixed>|Translator|null $trans
+>>>>>>> laraxot/dev
      */
     protected static function formatTransFuncResult(string $key, string|array|Translator|null $trans): string
     {
@@ -105,7 +112,11 @@ trait TransFuncTrait
             return $trans;
         }
 
+<<<<<<< HEAD
+        if ($trans === null) {
+=======
         if (null === $trans) {
+>>>>>>> laraxot/dev
             return static::persistGeneratedTransFuncLabel($key);
         }
 

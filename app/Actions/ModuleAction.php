@@ -29,10 +29,28 @@ class ModuleAction
     {
         if (! self::$_instance instanceof self) {
 <<<<<<< HEAD
+<<<<<<< .merge_file_tvKiX0
+=======
+            self::$_instance = new self;
+=======
+<<<<<<< .merge_file_6TJIo6
+<<<<<<< HEAD
+            self::$_instance = new self();
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_uuDZfa
             self::$_instance = new self();
 =======
             self::$_instance = new self;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tvKiX0
+=======
+>>>>>>> laraxot/dev
+=======
+            self::$_instance = new self();
+>>>>>>> .merge_file_cPuAL8
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_uuDZfa
         }
 
         return self::$_instance;
@@ -71,10 +89,28 @@ class ModuleAction
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
 <<<<<<< HEAD
+<<<<<<< .merge_file_tvKiX0
+=======
+                $tmp = new \stdClass;
+=======
+<<<<<<< .merge_file_6TJIo6
+<<<<<<< HEAD
+                $tmp = new \stdClass();
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_uuDZfa
                 $tmp = new \stdClass();
 =======
                 $tmp = new \stdClass;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tvKiX0
+=======
+>>>>>>> laraxot/dev
+=======
+                $tmp = new \stdClass();
+>>>>>>> .merge_file_cPuAL8
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_uuDZfa
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -100,5 +136,19 @@ class ModuleAction
         return $data;
     }
 
+<<<<<<< .merge_file_tvKiX0
     public function execute(): void {}
+=======
+<<<<<<< HEAD
+    public function execute(): void {}
+=======
+<<<<<<< .merge_file_6TJIo6
+    public function execute(): void {}
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> .merge_file_cPuAL8
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_uuDZfa
 }

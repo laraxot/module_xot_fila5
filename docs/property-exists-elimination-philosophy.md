@@ -271,7 +271,16 @@ if (isset($record->email)) {
 - User/Filament/Resources/BaseProfileResource
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
+<<<<<<< HEAD
 - Quaeris/Filament (2 file)
+=======
+<<<<<<< HEAD
+- Quaeris/Filament (2 file)
+=======
+- healthcare_app/Filament (2 file)
+- ExternalProject/Filament (2 file)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -399,7 +408,16 @@ if (method_exists($record, 'getUrl')) {
 | Xot | 12 | High | Alta |
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
+<<<<<<< HEAD
 | Quaeris | 2 | Medium | Bassa |
+=======
+<<<<<<< HEAD
+| Quaeris | 2 | Medium | Bassa |
+=======
+| healthcare_app | 2 | Medium | Bassa |
+| ExternalProject | 2 | Medium | Bassa |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort
@@ -467,4 +485,12 @@ if (method_exists($record, 'getUrl')) {
 **Status**: 📜 Manifesto Filosofico
 **Revision**: 1.0
 
+<<<<<<< HEAD
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+=======
+<<<<<<< HEAD
+Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+=======
+Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

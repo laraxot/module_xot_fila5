@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_YjiPUD
+=======
+
+>>>>>>> .merge_file_BLeD8l
 return [
     'title' => 'Laravel安裝程序',
     'next' => '下一步',

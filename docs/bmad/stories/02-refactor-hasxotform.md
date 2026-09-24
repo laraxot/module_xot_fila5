@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_aVEYhD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_mBHjxC
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_t3xbsY
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_nk4jji
+>>>>>>> .merge_file_zO1xxK
+>>>>>>> .merge_file_5G1HAu
 ---
 name: 02-refactor-hasxotform
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_aVEYhD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5G1HAu
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_aVEYhD
 =======
+=======
+<<<<<<< .merge_file_mBHjxC
+=======
+<<<<<<< .merge_file_t3xbsY
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_nk4jji
+>>>>>>> .merge_file_zO1xxK
+>>>>>>> .merge_file_5G1HAu
 >>>>>>> laraxot/dev
 # BMAD Story 02 — HasXotForm: istanza + colonne dinamiche
 

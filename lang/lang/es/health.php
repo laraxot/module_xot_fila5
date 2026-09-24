@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_BuTFtG
+=======
+
+>>>>>>> .merge_file_B5L9F7
 return [
     'pages' => [
         'health_check_results' => [

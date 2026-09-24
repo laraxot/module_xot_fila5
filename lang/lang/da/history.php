@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_kN25uf
+=======
+
+>>>>>>> .merge_file_R9wl5P
 return [
     'backend' => [
         'none' => 'Der er ingen historik.',

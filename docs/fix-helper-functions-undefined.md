@@ -32,7 +32,7 @@ TenantService.php
   → usa inAdmin()
   → usa getModuleModels()
     ↓
-Xot/helpers/Helper.php
+Xot/Helpers/Helper.php
   → DOVREBBE definire queste funzioni
   → MA erano mancanti!
 ```
@@ -48,7 +48,7 @@ Xot/helpers/Helper.php
 5. **TenantService** usa `inAdmin()` nel metodo `config()`
 6. **CRASH**: Funzione non esiste
 
-**Causa Root**: Le funzioni helper `inAdmin()` e `getModuleModels()` non erano definite in `Xot/helpers/Helper.php`.
+**Causa Root**: Le funzioni helper `inAdmin()` e `getModuleModels()` non erano definite in `Xot/Helpers/Helper.php`.
 
 ## 🎯 Business Logic delle Funzioni
 
@@ -119,7 +119,7 @@ function getModuleModels(string $moduleName): array
 
 ### 1. Aggiunte Funzioni Helper
 
-**File**: `Modules/Xot/helpers/Helper.php`
+**File**: `Modules/Xot/Helpers/Helper.php`
 
 ```php
 /**
@@ -342,7 +342,7 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 
 ### File Aggiornati
 
-1. ✅ `Modules/Xot/helpers/Helper.php`
+1. ✅ `Modules/Xot/Helpers/Helper.php`
    - Aggiunte funzioni `inAdmin()` e `getModuleModels()`
    - Type hints completi per PHPStan Level 10
    - PHPDoc dettagliato
@@ -358,6 +358,13 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [wikimedia/composer-merge-plugin GitHub](https://github.com/wikimedia/composer-merge-plugin)
 - [Xot Helpers Documentation](./helpers.md)
 - [Tenant Helper Dependency](../../Tenant/docs/helper-functions-dependency.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 
@@ -367,7 +374,7 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [x] Studiato wikimedia/composer-merge-plugin
 - [x] Compreso business logic di inAdmin()
 - [x] Compreso business logic di getModuleModels()
-- [x] Implementate funzioni in Xot/helpers/Helper.php
+- [x] Implementate funzioni in Xot/Helpers/Helper.php
 - [x] Creato file traduzione metatag.php EN
 - [x] Documentato architettura in Xot/docs/
 - [x] Documentato dipendenze in Tenant/docs/
@@ -430,7 +437,7 @@ Questo fix segue la regola **"Git - Mai Tornare Indietro"**:
 fix: aggiunte helper functions inAdmin() e getModuleModels()
 
 Problema: composer dump-autoload falliva con "undefined function inAdmin()"
-Causa: funzioni helper mancanti in Xot/helpers/Helper.php
+Causa: funzioni helper mancanti in Xot/Helpers/Helper.php
 Fix: aggiunte entrambe le funzioni come wrapper per Services/Actions
 Test: composer dump-autoload completa con successo
 Docs: aggiornata documentazione Xot e Tenant
@@ -475,4 +482,12 @@ $models = $action->execute($moduleName);
 
 ---
 
+<<<<<<< HEAD
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+=======
+<<<<<<< HEAD
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+=======
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

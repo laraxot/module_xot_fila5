@@ -8,8 +8,22 @@ tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: laravel-cms.txt
 =======
+<<<<<<< .merge_file_hGhAPe
 converted_from: laravel_cms.txt
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: laravel_cms.txt
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: laravel-cms.txt
+=======
+converted_from: laravel_cms.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BuLJBB
 created: 2026-08-24
 updated: 2026-08-24
 ---

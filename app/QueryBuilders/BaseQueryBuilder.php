@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\QueryBuilders;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
  * Base query builder providing chainable query abstractions for models.
@@ -34,7 +36,11 @@ abstract class BaseQueryBuilder
     /**
      * Create a new query builder instance.
      *
+<<<<<<< HEAD
+     * @param  Builder<T>|null  $query
+=======
      * @param Builder<T>|null $query
+>>>>>>> laraxot/dev
      */
     public function __construct(?Builder $query = null)
     {
@@ -75,6 +81,12 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition to the query.
+     *
+<<<<<<< HEAD
+     * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+=======
+     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+>>>>>>> laraxot/dev
      */
     public function where(string $column, mixed $value): static
     {
@@ -85,6 +97,12 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition with operator to the query.
+     *
+<<<<<<< HEAD
+     * @param  scalar|array<array-key, mixed>|object|null  $value  Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+=======
+     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
+>>>>>>> laraxot/dev
      */
     public function whereOperator(string $column, string $operator, mixed $value): static
     {
@@ -96,7 +114,11 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where in condition to the query.
      *
+<<<<<<< HEAD
+     * @param  array<mixed>  $values
+=======
      * @param array<mixed> $values
+>>>>>>> laraxot/dev
      */
     public function whereIn(string $column, array $values): static
     {
@@ -108,7 +130,11 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where not in condition to the query.
      *
+<<<<<<< HEAD
+     * @param  array<mixed>  $values
+=======
      * @param array<mixed> $values
+>>>>>>> laraxot/dev
      */
     public function whereNotIn(string $column, array $values): static
     {
@@ -140,7 +166,11 @@ abstract class BaseQueryBuilder
     /**
      * Apply a where between condition to the query.
      *
+<<<<<<< HEAD
+     * @param  array<int, mixed>  $values
+=======
      * @param array<int, mixed> $values
+>>>>>>> laraxot/dev
      */
     public function whereBetween(string $column, array $values): static
     {
@@ -154,7 +184,11 @@ abstract class BaseQueryBuilder
      */
     public function orderBy(string $column, string $direction = 'asc'): static
     {
+<<<<<<< HEAD
+        if ($direction !== 'asc' && $direction !== 'desc') {
+=======
         if ('asc' !== $direction && 'desc' !== $direction) {
+>>>>>>> laraxot/dev
             $direction = 'asc';
         }
 
@@ -194,7 +228,11 @@ abstract class BaseQueryBuilder
     /**
      * Get eager loading relations.
      *
+<<<<<<< HEAD
+     * @param  array<string>  $relations
+=======
      * @param array<string> $relations
+>>>>>>> laraxot/dev
      */
     public function with(array $relations): static
     {
@@ -214,11 +252,11 @@ abstract class BaseQueryBuilder
     /**
      * Get all results from the query.
      *
-     * @return \Illuminate\Database\Eloquent\Collection<int, T>
+     * @return Collection<int, T>
      */
-    public function get(): \Illuminate\Database\Eloquent\Collection
+    public function get(): Collection
     {
-        /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
+        /** @var Collection<int, T> $results */
         $results = $this->query->get();
 
         return $results;
@@ -238,9 +276,9 @@ abstract class BaseQueryBuilder
     /**
      * Get results with pagination.
      *
-     * @return \Illuminate\Pagination\LengthAwarePaginator<int, T>
+     * @return LengthAwarePaginator<int, T>
      */
-    public function paginate(int $perPage = 15): \Illuminate\Pagination\LengthAwarePaginator
+    public function paginate(int $perPage = 15): LengthAwarePaginator
     {
         /* @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
         return $this->query->paginate($perPage);

@@ -63,10 +63,32 @@ public function getTableBulkActions(): array
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_Hb8jz0
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_g2nD4b
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Hb8jz0
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_g2nD4b
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -104,10 +126,32 @@ public function getTableActions(): array
  * @return array<mixed, Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_Hb8jz0
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_g2nD4b
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Hb8jz0
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_g2nD4b
 {
     // ...
 }
@@ -155,10 +199,32 @@ public function getTableBulkActions(): array
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< .merge_file_Hb8jz0
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_g2nD4b
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Hb8jz0
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_g2nD4b
 {
     return [
         'template_slug' => Select::make('template_slug')

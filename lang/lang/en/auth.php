@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_biEcko
+=======
+
+>>>>>>> .merge_file_cmFDSg
 return [
     'failed' => 'These credentials do not match our records!',
     'general_error' => 'You do not have access to do that.',

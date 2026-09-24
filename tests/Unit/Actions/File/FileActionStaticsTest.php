@@ -2,8 +2,24 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_9Jgnki
 
 =======
+=======
+=======
+<<<<<<< .merge_file_fPql5m
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_rWqH1L
+>>>>>>> .merge_file_8r4Ubz
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Datas\XotData;
@@ -32,7 +48,19 @@ $rrmdir = function (string $dir) use (&$rrmdir): void {
     $files = scandir($dir);
 
     foreach ($files as $file) {
+<<<<<<< .merge_file_9Jgnki
         if ($file === '.' || $file === '..') {
+=======
+<<<<<<< HEAD
+        if ($file === '.' || $file === '..') {
+=======
+<<<<<<< .merge_file_fPql5m
+        if ($file === '.' || $file === '..') {
+=======
+        if ('.' === $file || '..' === $file) {
+>>>>>>> .merge_file_rWqH1L
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_8r4Ubz
             continue;
         }
 

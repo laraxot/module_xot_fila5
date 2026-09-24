@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 
-**File**: `Modules/Xot/helpers/Helper.php`
+**File**: `Modules/Xot/Helpers/Helper.php`
 **Autoload**: Via `"files": ["Helpers/Helper.php"]` in `Xot/composer.json`
 **Disponibilità**: Globale in tutto il framework Laraxot
 
@@ -65,7 +65,15 @@ $json = dddx(['key' => 'value']);
 ```
 
 **Caratteristiche**:
+<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
+=======
+<<<<<<< HEAD
+- Logga sempre via `Log::debug()`
+=======
+- Solo sviluppo: non usare in produzione (policy no-log-debug)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Usa `Safe\json_encode()` per type safety
 - Ritorna string (non void)
 
@@ -300,7 +308,7 @@ if (! function_exists('helperName')) {
    ↓
 2. Autoload PSR-4 + files
    ↓
-3. Xot/helpers/Helper.php loaded (via "files")
+3. Xot/Helpers/Helper.php loaded (via "files")
    ↓
 4. Helper functions disponibili globalmente
    ↓
@@ -363,10 +371,25 @@ composer dump-autoload
 ---
 
 **Last Updated**: 2 Dicembre 2025
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
 
 ---
 
+<<<<<<< HEAD
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+=======
+<<<<<<< HEAD
+*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+=======
+*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_db8UTD
+=======
+
+>>>>>>> .merge_file_w45JA3
 return [
     'backend' => [
         'voucher' => [

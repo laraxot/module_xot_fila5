@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+---
+title: "Testing Progress Session"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated testing-progress-session"
+related:
+  - "./testing-progress-session.md"
+---
+# Testing Progress Session
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [testing-progress-session.md](./testing-progress-session.md)
+=======
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22
@@ -124,3 +142,4 @@ Tutti i test corretti seguono questo principio:
 
 **Status**: In Progress
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
+>>>>>>> laraxot/dev

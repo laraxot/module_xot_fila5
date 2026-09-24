@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_f9NiOP
+=======
+
+>>>>>>> .merge_file_PkjvyH
 return [
     'fields' => [
         'matr' => [

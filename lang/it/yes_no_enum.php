@@ -2,10 +2,21 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/yes_no_enum.php
 return [
+    'values' => [
+        'yes' => [
+            'label' => 'Sì',
+            'icon' => 'heroicon-o-check-circle',
+            'color' => 'success',
+            'description' => 'Valore affermativo',
+        ],
+        'no' => [
+            'label' => 'No',
+            'icon' => 'heroicon-o-x-circle',
+            'color' => 'danger',
+            'description' => 'Valore negativo',
+        ],
+    ],
     'label' => 'Sì/No',
     'options' => [
         'yes' => 'Sì',

@@ -8,8 +8,22 @@ tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: form-request.txt
 =======
+<<<<<<< .merge_file_lKtvpd
 converted_from: form_request.txt
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: form_request.txt
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: form-request.txt
+=======
+converted_from: form_request.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5fEU3n
 created: 2026-08-24
 updated: 2026-08-24
 ---

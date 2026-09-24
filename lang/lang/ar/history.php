@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_zgKEeA
+=======
+
+>>>>>>> .merge_file_dCAXXK
 return [
     'backend' => [
         'none' => 'لا يوجد ماضي حديث.',

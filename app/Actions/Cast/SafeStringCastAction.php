@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
-use Spatie\QueueableAction\QueueableAction;
-
 /**
  * Action per convertire in modo sicuro un valore mixed in string.
  *
@@ -14,13 +12,30 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class SafeStringCastAction
 {
-    use QueueableAction;
-
     /**
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
+     * <<<<<<< HEAD
+     *
      * @param mixed $value Il valore da convertire
+     *                     =======
+     *                     <<<<<<< .merge_file_wEm3Js
+     *                     =======
+     *                     <<<<<<< HEAD
+     *                     <<<<<<< .merge_file_O8nWNS
+     *                     >>>>>>> .merge_file_dmjXLI
+     * @param mixed $value Il valore da convertire
+     *
+     * <<<<<<< .merge_file_wEm3Js
+     * =======
+     * =======
+     * @param mixed $value Il valore da convertire
+     *                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_dmjXLI
+     *
+     * >>>>>>> laraxot/dev
      *
      * @return string Il valore convertito in string
      */
@@ -54,7 +69,26 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+     * <<<<<<< HEAD
+     *
      * @param mixed $value Il valore da convertire
+     *                     =======
+     *                     <<<<<<< .merge_file_wEm3Js
+     *                     =======
+     *                     <<<<<<< HEAD
+     *                     <<<<<<< .merge_file_O8nWNS
+     *                     >>>>>>> .merge_file_dmjXLI
+     * @param mixed $value Il valore da convertire
+     *
+     * <<<<<<< .merge_file_wEm3Js
+     * =======
+     * =======
+     * @param mixed $value Il valore da convertire
+     *                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_dmjXLI
+     *
+     * >>>>>>> laraxot/dev
      *
      * @return string Il valore convertito in string
      */

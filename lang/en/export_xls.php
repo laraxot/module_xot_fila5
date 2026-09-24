@@ -2,14 +2,22 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/en/export_xls.php
 return [
+<<<<<<< HEAD
     'actions' => [
         'export_xls' => [
             'label' => 'Export Excel',
             'icon' => 'heroicon-o-arrow-down-tray',
+=======
+    'label' => 'Export Xls',
+    'plural_label' => 'Export Xls',
+    'icon' => 'xot-files.xls',
+    'tooltip' => 'Export Excel (XLS)',
+    'actions' => [
+        'export_xls' => [
+            'label' => 'Export Excel',
+            'icon' => 'xot-files.xls',
+>>>>>>> laraxot/dev
             'tooltip' => 'Export data in Excel format (.xlsx)',
             'placeholder' => 'Export to Excel',
             'help' => 'Download current data in Excel format for offline analysis',
@@ -30,6 +38,7 @@ return [
         ],
     ],
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
@@ -38,6 +47,14 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        'label' => 'Export Xls',
+        'plural_label' => 'Export Xls',
+        'group' => 'General',
+        'icon' => 'xot-files.xls',
+        'sort' => 100,
+    ],
+>>>>>>> laraxot/dev
     'fields' => [
     ],
 ];

@@ -6,10 +6,26 @@ slug: pivot
 description: 'https://github.com/larastan/larastan/issues/515'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< .merge_file_nxu3qr
+=======
+<<<<<<< HEAD
+=======
+converted_from: _pivot.txt
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zQOnhC
 converted_from: pivot.txt
 =======
 converted_from: _pivot.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_nxu3qr
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zQOnhC
 created: 2026-08-24
 updated: 2026-08-24
 ---

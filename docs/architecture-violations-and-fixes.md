@@ -813,10 +813,30 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
+=======
+=======
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+- [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../user/docs/traits_complete_guide.md)
+- [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
+- [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
+- [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../user/project_docs/traits_complete_guide.md)
+- [User Module Traits](../../user/project_docs/traits_complete_guide.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
@@ -829,16 +849,43 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+=======
+<<<<<<< HEAD
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+=======
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
+=======
+=======
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
+- [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../user/docs/traits_complete_guide.md)
+- [User Module Traits](../../user/docs/traits_complete_guide.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
@@ -847,6 +894,20 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
+- [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../user/docs/traits_complete_guide.md)
+- [User Module Traits](../../user/docs/traits_complete_guide.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
@@ -859,6 +920,19 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ---
 
 **Ultimo Aggiornamento**: Gennaio 2025
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+- [Testing Strategy](../../../../docs/testing/real-data-testing-strategy.md)
+
+---
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Stato**: ✅ Pattern Documentato e Implementato
 **Responsabile**: Team Architettura Laraxot
 **Responsabile**: Team Architettura Laraxot
@@ -1249,10 +1323,26 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ### **Documentazione Moduli**
 - [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/project_docs/traits_complete_guide.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../user/project_docs/traits_complete_guide.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 
 ---
 
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
+<<<<<<< HEAD
 **Responsabile**: Team Architettura Laraxot
+=======
+<<<<<<< HEAD
+**Responsabile**: Team Architettura Laraxot
+=======
+**Responsabile**: Team Architettura Laraxot
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -18,7 +18,6 @@ final class PestAssert
     public static function same(mixed $expected, mixed $actual): void
     {
         Assert::assertSame($expected, $actual);
-        // Laraxot module file — see docs/wiki for domain contract.
     }
 
     public static function notSame(mixed $expected, mixed $actual): void
@@ -82,7 +81,11 @@ final class PestAssert
     }
 
     /**
+<<<<<<< HEAD
+     * @param  class-string  $expectedClass
+=======
      * @param class-string $expectedClass
+>>>>>>> laraxot/dev
      */
     public static function instanceOf(string $expectedClass, mixed $actual): void
     {
@@ -194,7 +197,11 @@ final class PestAssert
     }
 
     /**
+<<<<<<< HEAD
+     * @param  iterable<array-key>  $keys
+=======
      * @param iterable<array-key> $keys
+>>>>>>> laraxot/dev
      */
     public static function hasKeys(iterable $keys, mixed $actual): void
     {
@@ -211,7 +218,11 @@ final class PestAssert
     }
 
     /**
+<<<<<<< HEAD
+     * @param  iterable<string>  $properties
+=======
      * @param iterable<string> $properties
+>>>>>>> laraxot/dev
      */
     public static function hasProperties(iterable $properties, mixed $actual): void
     {
@@ -271,7 +282,11 @@ final class PestAssert
     {
         Assert::assertIsString($prefix);
 
+<<<<<<< HEAD
+        if ($prefix === '') {
+=======
         if ('' === $prefix) {
+>>>>>>> laraxot/dev
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -282,7 +297,11 @@ final class PestAssert
     {
         Assert::assertIsString($suffix);
 
+<<<<<<< HEAD
+        if ($suffix === '') {
+=======
         if ('' === $suffix) {
+>>>>>>> laraxot/dev
             Assert::fail('Expected a non-empty suffix.');
         }
 
@@ -325,7 +344,11 @@ final class PestAssert
     }
 
     /**
+<<<<<<< HEAD
+     * @param  array<array-key, mixed>  $constraints
+=======
      * @param array<array-key, mixed> $constraints
+>>>>>>> laraxot/dev
      */
     private static function assertThrownExceptionMatches(\Throwable $exception, array $constraints): void
     {
@@ -336,7 +359,11 @@ final class PestAssert
                 continue;
             }
 
+<<<<<<< HEAD
+            if (is_string($constraint) && $constraint !== '') {
+=======
             if (is_string($constraint) && '' !== $constraint) {
+>>>>>>> laraxot/dev
                 Assert::assertStringContainsString($constraint, $exception->getMessage());
             }
         }
