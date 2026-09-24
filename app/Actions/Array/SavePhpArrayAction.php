@@ -15,8 +15,6 @@ class SavePhpArrayAction
     use QueueableAction;
 
     /**
-     *
-     * @param array<int|string, mixed> $data
      * @param  array<int|string, mixed>  $data
      */
     public function execute(array $data, string $filename): bool

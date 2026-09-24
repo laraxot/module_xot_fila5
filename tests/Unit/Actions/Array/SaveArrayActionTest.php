@@ -13,7 +13,8 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-uses(TestCase::class)->group('xot');
+uses(TestCase::class);
+
 /** @var string|null $arrayTestTempDir */
 $arrayTestTempDir = null;
 

@@ -27,7 +27,7 @@ class ExportXlsTableAction extends XotBaseAction
             // ->icon('fas-file-excel')
             ->icon('xot-files.xls')
             ->action(static function (RelationManager $livewire) {
-                $livewire_class = $livewire::class;
+                $livewireClass = $livewire::class;
                 $filterParts = array_map(
                     static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
                     Arr::flatten($livewire->tableFilters ?? []),
@@ -42,32 +42,12 @@ class ExportXlsTableAction extends XotBaseAction
                 $query = $livewire->getFilteredTableQuery();
                 if ($query === null) {
                     throw new Exception('Query is null');
-                $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
-                $transKey .= '.fields';
-                $query = $livewire->getFilteredTableQuery();
-                if ($query === null) {
-                    throw new \Exception('Query is null');
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 /** @var Builder<Model> $eloquentQuery */
                 $eloquentQuery = $query;
                 $rows = $eloquentQuery->get();
-                /** @var array<int, string> $fields */
-                $fields = [];
-                if (method_exists($livewire_class, 'getXlsFields')) {
-                    $rawFields = $livewire_class::getXlsFields($livewire->tableFilters);
-                    Assert::isArray($rawFields);
-
-                    // Ensure fields are properly formatted as array
-                    $fields = [];
-                    foreach ($rawFields as $key => $field) {
-                        if (is_string($field)) {
-                            $fields[] = $field;
-                        } elseif (is_array($field) && isset($field['name']) && is_string($field['name'])) {
-                            $fields[] = $field['name'];
-                        }
-                    }
-                }
+                $fields = self::resolveXlsFields($livewireClass, $livewire->tableFilters);
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });

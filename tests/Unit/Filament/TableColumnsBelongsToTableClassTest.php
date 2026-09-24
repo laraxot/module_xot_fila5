@@ -12,7 +12,6 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-
 uses(TestCase::class)->group('no-db');
 
 /**
@@ -216,7 +215,7 @@ test('nessuna List page dichiara getTableColumns()', function (): void {
 });
 
 test('XotBaseListRecords::getTableColumns() e\' final', function (): void {
-    $method = new \ReflectionMethod(\Modules\Xot\Filament\Resources\Pages\XotBaseListRecords::class, 'getTableColumns');
+    $method = new \ReflectionMethod(XotBaseListRecords::class, 'getTableColumns');
 
     expect($method->isFinal())->toBeTrue();
 });

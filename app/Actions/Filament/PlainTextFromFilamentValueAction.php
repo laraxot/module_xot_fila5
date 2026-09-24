@@ -20,7 +20,6 @@ class PlainTextFromFilamentValueAction
      * @param  string|int|float|bool|\Stringable|null  $fallback  Valore di riserva se $value non è testo
      */
     public function execute(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
-    public function execute(mixed $value, mixed $fallback = ''): string
     {
         if ($value instanceof Htmlable) {
             return strip_tags($value->toHtml());
@@ -50,7 +49,6 @@ class PlainTextFromFilamentValueAction
      * @param  string|int|float|bool|\Stringable|null  $fallback  Valore di riserva se $value non è testo
      */
     public static function cast(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
-    public static function cast(mixed $value, mixed $fallback = ''): string
     {
         return app(self::class)->execute($value, $fallback);
     }

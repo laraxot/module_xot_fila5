@@ -5,8 +5,6 @@ declare(strict_types=1);
  * @see https://medium.com/technology-hits/how-to-import-a-csv-excel-file-in-laravel-d50f93b98aa4
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Services;
 
 /**

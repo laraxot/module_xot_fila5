@@ -15,12 +15,11 @@ final class PestExpectation
     public function __construct(
         private readonly mixed $value,
         private readonly bool $negated = false,
-    ) {
-    }
+    ) {}
 
     public function __get(string $name): self
     {
-        if ('not' === $name) {
+        if ($name === 'not') {
             return $this->not();
         }
 
@@ -192,7 +191,7 @@ final class PestExpectation
             ? Assert::assertArrayNotHasKey($key, $this->value, $message)
             : Assert::assertArrayHasKey($key, $this->value, $message);
 
-        if (2 === func_num_args() || (3 === func_num_args() && ! $this->negated)) {
+        if (func_num_args() === 2 || (func_num_args() === 3 && ! $this->negated)) {
             Assert::assertArrayHasKey($key, (array) $this->value);
             Assert::assertEquals($value, ((array) $this->value)[$key], $message);
         }
@@ -218,7 +217,7 @@ final class PestExpectation
         $exists = property_exists($this->value, $property) || isset($this->value->{$property});
         $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
 
-        if (2 === func_num_args() && ! $this->negated) {
+        if (func_num_args() === 2 && ! $this->negated) {
             Assert::assertEquals($expectedValue, $this->value->{$property});
         }
 
@@ -329,7 +328,7 @@ final class PestExpectation
 
     public function toStartWith(string $prefix): self
     {
-        if ('' === $prefix) {
+        if ($prefix === '') {
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -342,7 +341,7 @@ final class PestExpectation
 
     public function toEndWith(string $suffix): self
     {
-        if ('' === $suffix) {
+        if ($suffix === '') {
             Assert::fail('Expected a non-empty suffix.');
         }
 

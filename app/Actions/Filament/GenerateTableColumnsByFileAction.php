@@ -5,8 +5,6 @@ declare(strict_types=1);
  * -WIP.
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Actions\Filament;
 
 // use Filament\Forms\Commands\Concerns\CanGenerateForms; // Non disponibile in Filament v4
@@ -33,8 +31,6 @@ class GenerateTableColumnsByFileAction
     /**
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
-     *
-     * @param File $file Il file della risorsa Filament
      * @param  File  $file  Il file della risorsa Filament
      */
     public function execute(File $file): void
@@ -114,8 +110,6 @@ class GenerateTableColumnsByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-     *
-     * @param File $file Il file da analizzare
      * @param  File  $file  Il file da analizzare
      */
     public function ddFile(File $file): void

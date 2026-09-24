@@ -6,8 +6,6 @@ declare(strict_types=1);
  * @see https://github.com/laracademy/generators
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Actions\Model;
 
 use Spatie\QueueableAction\QueueableAction;

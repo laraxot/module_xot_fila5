@@ -12,9 +12,6 @@ use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
 
-
-
-
 class MorphOneAction
 {
     use QueueableAction;

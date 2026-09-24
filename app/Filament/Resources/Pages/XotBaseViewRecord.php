@@ -22,8 +22,7 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
 
     /**
      * Restituisce lo schema dell'infolist per la visualizzazione dei dettagli del record.
-     * Default vuoto: le View concrete dovrebbero override-are (spesso via `*Infolist`).
-     * Non astratto: i merge sync possono togliere gli override e un abstract blocca tutto il bootstrap.
+     * Questo metodo deve sempre restituire un array con chiavi di tipo stringa.
      *
      * @return array<string, Component>
      */

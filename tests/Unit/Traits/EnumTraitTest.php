@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Traits;
 
-use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Schema\Blueprint;
 use Mockery;
 use Mockery\MockInterface;
@@ -14,7 +13,8 @@ use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('xot');
+uses(TestCase::class);
+
 it('gets label via translation', function (): void {
     $label = TestEnum::ALPHA->getLabel();
     Assert::assertSame('string', gettype($label));
@@ -54,16 +54,11 @@ it('adds columns to blueprint in create context', function (): void {
 
 it('adds columns to blueprint in update context with hasColumn check', function (): void {
     /** @var XotBaseMigration&MockInterface $migration */
-    $migration = \Mockery::mock(XotBaseMigration::class);
+    $migration = Mockery::mock(XotBaseMigration::class);
     $migration->shouldReceive('hasColumn')->with('alpha')->andReturn(true);
     $migration->shouldReceive('hasColumn')->with('beta')->andReturn(false);
 
     /** @var Blueprint&MockInterface $columnBeta */
-    $columnBeta = \Mockery::mock(Blueprint::class);
-    $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
-
-    /** @var Blueprint&MockInterface $table */
-    $table = \Mockery::mock(Blueprint::class);
     $columnBeta = Mockery::mock(Blueprint::class);
     $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
 
@@ -76,15 +71,6 @@ it('adds columns to blueprint in update context with hasColumn check', function 
 
 it('updates columns calls columns', function (): void {
     /** @var Blueprint&MockInterface $column */
-    $column = \Mockery::mock(Blueprint::class);
-    $column->shouldReceive('nullable')->andReturn($column);
-
-    /** @var Blueprint&MockInterface $table */
-    $table = \Mockery::mock(Blueprint::class);
-    $table->shouldReceive('string')->andReturn($column);
-
-    /** @var XotBaseMigration&MockInterface $migration */
-    $migration = \Mockery::mock(XotBaseMigration::class);
     $column = Mockery::mock(Blueprint::class);
     $column->shouldReceive('nullable')->andReturn($column);
 
@@ -101,7 +87,7 @@ it('updates columns calls columns', function (): void {
 
 it('drops columns', function (): void {
     /** @var Blueprint&MockInterface $table */
-    $table = \Mockery::mock(Blueprint::class);
+    $table = Mockery::mock(Blueprint::class);
     $table->shouldReceive('dropColumn')->with(['alpha', 'beta']);
 
     TestEnum::dropColumns($table);

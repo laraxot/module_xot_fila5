@@ -119,7 +119,7 @@ abstract class XotBasePanelProvider extends PanelProvider
                         });
                     </script>
                     HTML,
-                scopes: \Filament\Auth\Pages\Login::class,
+                scopes: Login::class,
             );
 
         if ($this->discoverModuleComponents) {
