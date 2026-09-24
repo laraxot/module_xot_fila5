@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architettura Frontend
 
 ## Tecnologie Principali
@@ -102,3 +103,12 @@ $post = Post::findOrFail($id);
 - [Struttura dei Temi](themes-structure.md)
 - [Standard del Codice](code-standards.md)
 - [Regole di Documentazione](documentation-rules.md)
+=======
+---
+module: theme
+topic: frontend-architecture
+canonical: ../../../Themes/docs/shared-components/frontend-architecture.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/frontend-architecture.md
+>>>>>>> laraxot/dev

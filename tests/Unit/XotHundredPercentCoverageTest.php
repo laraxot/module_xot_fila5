@@ -8,7 +8,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
+<<<<<<< HEAD
 use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\MetatagData;
@@ -24,15 +31,37 @@ use Modules\Xot\Tests\ModuleRemainingCoverage;
 use Modules\Xot\Tests\TestCase;
 use PhpCsFixer\Config;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
+=======
+<<<<<<< HEAD
+use Symfony\Component\HttpFoundation\Response;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
     Mockery::close();
+<<<<<<< HEAD
+=======
+=======
+use Symfony\Component\HttpFoundation\Response;
+
+uses(TestCase::class)->group('no-xot-db');
+
+afterEach(function (): void {
+    \Mockery::close();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 });
 
 function xot100Invoke(object $target, string $method, mixed ...$args): mixed
@@ -97,11 +126,39 @@ namespace PhpCsFixer\Runner\Parallel {
 }
 namespace PhpCsFixer {
     final class Config {
+<<<<<<< .merge_file_dn1A7C
         public function setParallelConfig(object $c): self { return $this; }
         public function setRiskyAllowed(bool $v): self { return $this; }
         /** @param array<string, mixed> $rules */
         public function setRules(array $rules): self { return $this; }
         public function setFinder(object $f): self { return $this; }
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+        public function setParallelConfig(mixed $c): self { return $this; }
+        public function setRiskyAllowed(bool $v): self { return $this; }
+        /** @param array<string, mixed> $rules */
+        public function setRules(array $rules): self { return $this; }
+        public function setFinder(mixed $f): self { return $this; }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+        public function setParallelConfig(object $c): self { return $this; }
+        public function setRiskyAllowed(bool $v): self { return $this; }
+        /** @param array<string, mixed> $rules */
+        public function setRules(array $rules): self { return $this; }
+        public function setFinder(object $f): self { return $this; }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zUudWd
     }
     final class Finder {
         public function in(string $dir): self { return $this; }
@@ -270,7 +327,15 @@ PHP);
             FileAction::getFileNameByClassName(XotData::class)
         );
 
+<<<<<<< HEAD
         $action = new FileAction;
+=======
+<<<<<<< HEAD
+        $action = new FileAction;
+=======
+        $action = new FileAction();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         try {
             $action->execute();
         } catch (\Throwable) {
@@ -278,7 +343,15 @@ PHP);
     });
 
     test('XotData rami SSL tenant profile team child e update', function (): void {
+<<<<<<< HEAD
         $xot = new XotData;
+=======
+<<<<<<< HEAD
+        $xot = new XotData;
+=======
+        $xot = new XotData();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->adm_theme = 'One';
@@ -317,7 +390,15 @@ PHP);
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
+<<<<<<< HEAD
         $meta = new MetatagData;
+=======
+<<<<<<< HEAD
+        $meta = new MetatagData;
+=======
+        $meta = new MetatagData();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Desc';
@@ -353,7 +434,15 @@ PHP);
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
+<<<<<<< HEAD
         $mw = new SecurityMiddleware;
+=======
+<<<<<<< HEAD
+        $mw = new SecurityMiddleware;
+=======
+        $mw = new SecurityMiddleware();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         // GET ok
         $ok = Request::create('/dashboard', 'GET', [], [], [], [
@@ -413,11 +502,26 @@ PHP);
     });
 
     test('XotBaseMigration reflection helper schema e blueprint', function (): void {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
+<<<<<<< HEAD
+=======
+=======
+        $migration = new class extends XotBaseMigration {
+            protected ?string $model_class = CacheModel::class;
+
+            public function up(): void
+            {
+            }
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         };
 
         Assert::assertSame(CacheModel::class, $migration->getModelClass());
@@ -426,7 +530,15 @@ PHP);
 
         $ref = new \ReflectionClass($migration);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+<<<<<<< HEAD
             if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
+=======
+<<<<<<< HEAD
+            if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
+=======
+            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

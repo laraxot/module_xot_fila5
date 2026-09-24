@@ -1,5 +1,8 @@
 ---
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 title: "fill_field_with_lorem"
 module: "Xot"
 type: concept
@@ -86,6 +89,8 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+<<<<<<< HEAD
+=======
 =======
 title: 'Fill field with lorem — risorse esterne'
 module: Xot
@@ -174,4 +179,5 @@ updated: 2026-08-24
 - <https://vole.wtf/text-generator/>
 - <http://enneagon.org/phrases>
 - <https://www.fakenamegenerator.com/gen-male-fr-fr.php>
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Error Curl"
 module: "Xot"
@@ -9,12 +10,25 @@ qmd: "error curl"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: error-curl
 canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 ---
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
+=======
+>>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 
@@ -57,5 +71,13 @@ composer clearcache
 
 composer config --global cafile PATH/TO/cacert.pem
 composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
+<<<<<<< HEAD
 
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
+=======
+>>>>>>> a01602c7 (.)
+=======
+
+See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
+>>>>>>> 64619e34 (.)
+>>>>>>> laraxot/dev

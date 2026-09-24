@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_vbC6tg
+=======
+
+>>>>>>> .merge_file_repCGt
 return [
     404 => [
         'title' => 'Pagina Non Trovata',

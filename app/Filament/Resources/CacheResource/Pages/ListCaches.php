@@ -6,8 +6,11 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
+<<<<<<< HEAD
+=======
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
+>>>>>>> laraxot/dev
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
@@ -29,8 +32,37 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
-    
-   
+<<<<<<< HEAD
+=======
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'key' => TextColumn::make('key')
+                ->searchable()
+                ->sortable()
+                ->wrap()
+                ->label('Key'),
+            'value' => TextColumn::make('value')
+                ->searchable()
+                ->wrap()
+                ->label('Value'),
+            'expiration' => TextColumn::make('expiration')
+                ->dateTime()
+                ->sortable()
+                ->label('Expiration'),
+        ];
+    }
+
+    #[\Override]
+    public function getGridTableColumns(): array
+    {
+        return [
+            Stack::make($this->getTableColumns()),
+        ];
+    }
+
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Action>
      */

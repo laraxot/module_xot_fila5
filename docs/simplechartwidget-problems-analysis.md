@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica
@@ -467,3 +468,12 @@ L'analisi del `SimpleChartWidget` ha identificato diversi problemi che impattano
 3. **Migliorano la manutenibilità** (separazione logica, refactoring)
 
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
+=======
+---
+module: theme
+topic: simplechartwidget-problems-analysis
+canonical: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
+>>>>>>> laraxot/dev

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\ExtraResource\Tables;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -33,6 +34,22 @@ class ExtrasTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable()->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->placeholder('—')->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->placeholder('—')->sortable()->toggleable(isToggledHiddenByDefault: true),
+=======
+use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+
+class ExtrasTable extends XotBaseResourceTable
+{
+    public function getTableColumns(): array
+    {
+        /*
+         * @return array<int|string, \Filament\Tables\Columns\Column>
+         */
+        return [
+            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'created_at' => TextColumn::make('created_at')->dateTime(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime(),
+>>>>>>> laraxot/dev
         ];
     }
 }

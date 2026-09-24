@@ -19,7 +19,16 @@ abstract class XotBaseTransition
     public function __construct(
         public Model $record,
         public ?string $message = '',
+<<<<<<< .merge_file_bMhC3e
     ) {}
+=======
+<<<<<<< HEAD
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CXreWP
 
     public function handle(): Model
     {
@@ -63,7 +72,11 @@ abstract class XotBaseTransition
     /**
      * Get notification attachments.
      *
+<<<<<<< HEAD
      * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
+=======
+     * @return array<int, array<string, string>>
+>>>>>>> laraxot/dev
      */
     public function getNotificationAttachments(): array
     {
@@ -87,7 +100,15 @@ abstract class XotBaseTransition
     }
 
     /**
+<<<<<<< .merge_file_bMhC3e
      * @param  array<string, mixed>  $data
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CXreWP
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {

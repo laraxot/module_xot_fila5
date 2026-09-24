@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_hXWFk9
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JbN6D6
 ---
 title: "Auto routes"
 type: reference
@@ -16,8 +19,11 @@ note: "Convertito da auto_routes.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/auto_routes.txt -->
 
+<<<<<<< .merge_file_hXWFk9
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JbN6D6
 =======
 >>>>>>> laraxot/dev
 /it/tests

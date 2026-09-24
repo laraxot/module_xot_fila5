@@ -4,7 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
+<<<<<<< .merge_file_UZadqN
 use Illuminate\Database\Eloquent\Model;
+=======
+<<<<<<< HEAD
+use Illuminate\Database\Eloquent\Model;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_rTyIY7
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
@@ -51,7 +65,23 @@ class GetRelatedResourceClassAction
             return null;
         }
 
+<<<<<<< .merge_file_UZadqN
         /** @var class-string<Model> $modelClass */
+=======
+<<<<<<< HEAD
+        /** @var class-string<Model> $modelClass */
+=======
+<<<<<<< HEAD
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
+=======
+<<<<<<< HEAD
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
+=======
+        /** @var class-string<Model> $modelClass */
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_rTyIY7
         $modelClass = $page->getModelClass();
         $moduleName = Str::between($modelClass, 'Modules\\', '\Models\\');
         $modelName = class_basename($modelClass);

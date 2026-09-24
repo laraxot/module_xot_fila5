@@ -31,6 +31,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< .merge_file_pcsLlI
 <<<<<<< HEAD
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
@@ -38,6 +39,14 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+=======
+- [Exception Handling Guidelines](../exception-handling-guide.md)
+- [Logging Best Practices](../logging-best-practices.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+=======
+- [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
+- [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+>>>>>>> .merge_file_NjHrpb
 >>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -117,6 +126,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< .merge_file_pcsLlI
 <<<<<<< HEAD
 =======
 - [Exception Handling Guidelines](../exception-handling-guide.md)
@@ -202,3 +212,5 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NjHrpb

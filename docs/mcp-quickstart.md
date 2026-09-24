@@ -138,7 +138,11 @@ cd init
 
 ```
 # In Cursor/Windsurf/Cline
+<<<<<<< HEAD
 Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
+=======
+Analizza gli errori PHPStan in Modules/healthcare_app e suggerisci correzioni seguendo le regole in .windsurf/rules/
+>>>>>>> laraxot/dev
 ```
 
 ### 2. Refactoring Modulo
@@ -174,7 +178,11 @@ iflow
 
 ```
 # Con memory + sequential-thinking
+<<<<<<< HEAD
 Analizza l'architettura del modulo Quaeris:
+=======
+Analizza l'architettura del modulo healthcare_app:
+>>>>>>> laraxot/dev
 1. Identifica pattern utilizzati
 2. Documenta dipendenze
 3. Suggerisci miglioramenti
@@ -256,3 +264,7 @@ Per problemi o domande:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev

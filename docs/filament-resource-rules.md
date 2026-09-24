@@ -75,9 +75,13 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -129,6 +133,7 @@ public static function getRelations(): array
 // Non dichiarare il metodo se restituisce un array vuoto
 ```
 
+<<<<<<< HEAD
 ## Pagine
 
 Se il metodo `getPages()` contiene solo le route standard (index, create, edit), **NON** dichiararlo:
@@ -148,6 +153,36 @@ public static function getPages(): array
 // Non dichiarare il metodo se contiene solo le route standard
 ```
 
+=======
+## Pagine (`getPages()`)
+
+**Non dichiarare** `getPages()` quando:
+
+1. Servono solo le route CRUD `index`, `create`, `edit` (nessuna `view` né pagina custom).
+2. Le classi Page seguono la convenzione auto-discovery di `XotBaseResource`:
+   - `List{plural}` dove `plural = Str::plural(nomeResourceSenzaSuffissoResource)`
+   - `Create{nome}`, `Edit{nome}`
+
+```php
+// ❌ ERRATO — ridondante se le Page sono ListCoeffs, CreateCoeff, EditCoeff
+public static function getPages(): array
+{
+    return [
+        'index' => Pages\ListCoeffs::route('/'),
+        'create' => Pages\CreateCoeff::route('/create'),
+        'edit' => Pages\EditCoeff::route('/{record}/edit'),
+    ];
+}
+
+// ✅ CORRETTO — delega alla base
+// (nessun metodo getPages() nella Resource)
+```
+
+**Mantenere** `getPages()` se le Page hanno nomi diversi (es. `ListAssenza` per `AssenzeResource`), se c'è `view` esplicita, o pagine custom.
+
+Documentazione: [filament/getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md) · Script: `bashscripts/filament/analyze-redundant-getpages.php`
+
+>>>>>>> laraxot/dev
 ## Motivazioni
 
 1. **Centralizzazione della Configurazione**: Le configurazioni comuni sono centralizzate nella classe base
@@ -174,9 +209,13 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -199,9 +238,16 @@ class DoctorResource extends XotBaseResource
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
+=======
+- [getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md)
+- [xotbaseresource.md](./filament/xotbaseresource.md)
+- [forbidden-methods.md](./filament/resources/architecture/forbidden-methods.md)
+- [consolidated/filament/resources/xot-base-resource.md](./consolidated/filament/resources/xot-base-resource.md)
+>>>>>>> laraxot/dev

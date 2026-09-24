@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_gLotr8
 <<<<<<< HEAD
 # __to_study
 
@@ -8,6 +9,8 @@ https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_G2oLlP
 ---
 title: 'To study — risorse esterne'
 module: Xot
@@ -28,7 +31,16 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs>
+<<<<<<< .merge_file_gLotr8
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+# __to_study
+
+<!-- Contenuto migrato da _docs/__to_study.txt -->
+
+https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
+>>>>>>> .merge_file_G2oLlP
 >>>>>>> laraxot/dev

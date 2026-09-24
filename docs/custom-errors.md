@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
@@ -7,6 +8,8 @@ https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
 ---
 title: "Custom errors"
 type: reference
@@ -22,9 +25,17 @@ note: "Convertito da custom_errors.txt (documento) da convert-docs-txt-to-md.py.
 
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
+<<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+https://tutsforweb.com/how-to-create-custom-404-page-laravel/
+
+
+
+>>>>>>> .merge_file_ZZJKsV
 >>>>>>> laraxot/dev
 public function render($request, Exception $exception)
 {
@@ -33,15 +44,19 @@ public function render($request, Exception $exception)
             return response()->view('errors.' . $exception->getStatusCode(), [], $exception->getStatusCode());
         }
     }
+<<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 =======
 
@@ -51,6 +66,8 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
 public function render($request, Exception $exception)
 {
     if ($this->isHttpException($exception)) {
@@ -58,10 +75,13 @@ public function render($request, Exception $exception)
             return response()->view('errors.' . '404', [], 404);
         }
 <<<<<<< HEAD
+<<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
          
 =======
-
+>>>>>>> .merge_file_ZZJKsV
+=======
+         
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -69,15 +89,19 @@ public function render($request, Exception $exception)
             return response()->view('errors.' . '500', [], 500);
         }
     }
+<<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< .merge_file_DAzZsy
 <<<<<<< HEAD
 =======
 
@@ -87,6 +111,8 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
 public function render($request, Exception $exception)
 {
     if ($exception instanceof TestingHttpException) {

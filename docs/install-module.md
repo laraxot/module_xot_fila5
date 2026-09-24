@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_WIADpN
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kVdc4x
 ---
 title: "Install module"
 type: reference
@@ -14,8 +17,11 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
 # Install module
 
+<<<<<<< .merge_file_WIADpN
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kVdc4x
 =======
 >>>>>>> laraxot/dev
  public function test(){

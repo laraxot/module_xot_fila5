@@ -26,7 +26,15 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -84,7 +92,19 @@ return [
 1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
 1. Implementare `public function getFormSchema(): array`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+1. Implementare `public function getFormSchema(): array`
+=======
+1. Implementare `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+=======
+1. Implementare `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
@@ -99,7 +119,15 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

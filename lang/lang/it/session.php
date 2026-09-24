@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_9azdmp
+=======
+
+>>>>>>> .merge_file_7yqe5O
 return [
     'navigation' => [
         'name' => 'sessione',

@@ -13,7 +13,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\strtotime;
 
@@ -98,11 +101,19 @@ class FilterBuilder
                 return $query
                     ->when(
                         $data['from'] ?? null,
+<<<<<<< HEAD
                         fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
                     )
                     ->when(
                         $data['until'] ?? null,
                         fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
+=======
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', is_string($date) ? $date : (string) $date),
+                    )
+                    ->when(
+                        $data['until'] ?? null,
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
+>>>>>>> laraxot/dev
                     );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
@@ -114,20 +125,33 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
+<<<<<<< HEAD
                     $fromStr = SafeStringCastAction::cast($from);
                     $untilStr = SafeStringCastAction::cast($until);
+=======
+                    $fromStr = is_string($from) ? $from : (string) $from;
+                    $untilStr = is_string($until) ? $until : (string) $until;
+>>>>>>> laraxot/dev
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
+<<<<<<< HEAD
                     $fromStr = SafeStringCastAction::cast($from);
+=======
+                    $fromStr = is_string($from) ? $from : (string) $from;
+>>>>>>> laraxot/dev
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
+<<<<<<< HEAD
                     $untilStr = SafeStringCastAction::cast($until);
+=======
+                    $untilStr = is_string($until) ? $until : (string) $until;
+>>>>>>> laraxot/dev
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }
@@ -163,7 +187,11 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
+=======
+     * @param class-string<Model> $modelClass
+>>>>>>> laraxot/dev
      */
     public static function selectFromModel(
         string $name,
@@ -178,7 +206,11 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
+<<<<<<< HEAD
         if ($relationshipName !== null) {
+=======
+        if (null !== $relationshipName) {
+>>>>>>> laraxot/dev
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -188,7 +220,11 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customStatuses
+=======
+     * @param array<string, string> $customStatuses
+>>>>>>> laraxot/dev
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -206,7 +242,11 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customPriorities
+=======
+     * @param array<string, string> $customPriorities
+>>>>>>> laraxot/dev
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -224,7 +264,11 @@ class FilterBuilder
     /**
      * Type select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $types
+=======
+     * @param array<string, string> $types
+>>>>>>> laraxot/dev
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -235,7 +279,11 @@ class FilterBuilder
     /**
      * Category select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $categoryModel
+=======
+     * @param class-string<Model> $categoryModel
+>>>>>>> laraxot/dev
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -245,7 +293,11 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $userModel
+=======
+     * @param class-string<Model> $userModel
+>>>>>>> laraxot/dev
      */
     public static function userSelect(
         string $name = 'user',
@@ -273,7 +325,11 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< HEAD
      * @param  Builder<Model>  $query
+=======
+     * @param Builder<Model> $query
+>>>>>>> laraxot/dev
      */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
@@ -281,7 +337,12 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< HEAD
      * @param  Builder<Model>  $query
+=======
+     * @param Builder<Model> $query
+     *
+>>>>>>> laraxot/dev
      * @return Builder<Model>
      */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder

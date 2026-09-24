@@ -1,6 +1,12 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -10,6 +16,29 @@ use PHPUnit\Framework\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_DzzfWE
+=======
+/**
+ * @param object $instance
+ */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+use Filament\Tables\Columns\Column;
+use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+use Modules\Xot\Tests\Unit\Support\DummyTestModel;
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\TestCase;
+
+uses(TestCase::class);
+
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_B9K8sA
 function invokeProtectedSortHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -20,7 +49,23 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): void {
     $table = new class extends XotBaseResourceTable
     {
+<<<<<<< .merge_file_DzzfWE
         /** @return array<string, Column> */
+=======
+<<<<<<< HEAD
+        /** @return array<string, Column> */
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+=======
+        /** @return array<string, Column> */
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_B9K8sA
         public function getTableColumns(): array
         {
             return [];
@@ -41,7 +86,23 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
     $table = new class extends XotBaseResourceTable
     {
+<<<<<<< .merge_file_DzzfWE
         /** @return array<string, Column> */
+=======
+<<<<<<< HEAD
+        /** @return array<string, Column> */
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+=======
+        /** @return array<string, Column> */
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_B9K8sA
         public function getTableColumns(): array
         {
             return [];

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_7EWui7
+=======
+
+>>>>>>> .merge_file_8XorRF
 return [
     404 => [
         'title' => 'Seite nicht gefunden',

@@ -6,7 +6,11 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ## Casi Risolti Recentemente
 
 ### 1. Namespace e Convenzioni
+<<<<<<< HEAD
 - [Convenzioni Namespace](namespace-conventions.md)
+=======
+- [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
+>>>>>>> laraxot/dev
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 

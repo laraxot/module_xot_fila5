@@ -47,7 +47,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< .merge_file_pnHLc6
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_q4TOZs
     {
         return [
             // Form components
@@ -252,7 +256,11 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
+<<<<<<< .merge_file_pnHLc6
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_q4TOZs
     {
         return [
             // Form components

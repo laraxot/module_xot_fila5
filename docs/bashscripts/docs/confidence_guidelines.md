@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_yAgVOy
 ---
 title: "Massimizzare il livello di confidenza"
 module: "Xot"
@@ -9,6 +10,8 @@ qmd: "confidence guidelines"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+=======
+>>>>>>> .merge_file_zDpYBk
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

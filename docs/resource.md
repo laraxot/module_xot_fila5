@@ -56,9 +56,13 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -99,7 +103,7 @@ class MyResource extends XotBaseResource
    - ✅ `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
 =======
-   - ✅ `public function getFormSchema(): array`
+   - ✅ `public static function getFormSchema(): array`
 >>>>>>> laraxot/dev
    - ✅ `public static function getPages(): array`
 
@@ -213,9 +217,13 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -546,9 +554,13 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -627,9 +639,18 @@ public function getTableBulkActions(): array
 ## Collegamenti tra versioni di resource.md
 * [resource.md](../../../Xot/docs/filament/resource.md)
 * [resource.md](../../../Xot/docs/resource.md)
+<<<<<<< HEAD
+=======
+* [resource.md](../../../xot/docs/filament/resource.md)
+* [resource.md](../../../xot/docs/resource.md)
+>>>>>>> laraxot/dev
 
 ### Versione Incoming
 
 // ... existing code ...
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

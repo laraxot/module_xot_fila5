@@ -29,7 +29,11 @@ class HtmlToPdfAction
         string $pdforientation = 'L',
         string $filename = '',
     ): string {
+<<<<<<< HEAD
         if ($filename === '') {
+=======
+        if ('' === $filename) {
+>>>>>>> laraxot/dev
             $filename = Storage::disk('local')->path('test.pdf');
         }
 
@@ -41,11 +45,19 @@ class HtmlToPdfAction
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
+<<<<<<< HEAD
             if ($out === 'content_PDF') {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ($out === 'file') {
+=======
+            if ('content_PDF' === $out) {
+                return $html2pdf->Output($filename.'.pdf', 'S');
+            }
+
+            if ('file' === $out) {
+>>>>>>> laraxot/dev
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

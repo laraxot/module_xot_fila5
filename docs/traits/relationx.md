@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_iukr9J
 <<<<<<< HEAD
 ---
 module: theme
@@ -10,6 +11,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/RelationX
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mudXnH
 # RelationX Trait
 
 ## Scopo Business
@@ -44,6 +47,7 @@ Versione estesa di `morphToMany` con le stesse funzionalità di `belongsToManyX`
 
 ## Utilizzo nei Moduli
 Questo trait è utilizzato nei modelli base di tutti i moduli per standardizzare le relazioni complesse e garantire coerenza nell'accesso ai dati.
+<<<<<<< .merge_file_iukr9J
 <<<<<<< HEAD
 # RelationX Trait
 
@@ -76,9 +80,16 @@ Versione estesa di `morphToMany` con le stesse funzionalità di `belongsToManyX`
 2. **Cross-database support**: Supporta architetture multi-database
 3. **Type safety**: Utilizza strict types e validazione con Assert
 4. **Flessibilità**: Supporta sia relazioni standard che polimorfiche
+=======
+=======
+---
+module: theme
+topic: relationx
+canonical: ../../../../Themes/docs/shared-components/RelationX.md
+---
+>>>>>>> .merge_file_mudXnH
 
-## Utilizzo nei Moduli
-Questo trait è utilizzato nei modelli base di tutti i moduli per standardizzare le relazioni complesse e garantire coerenza nell'accesso ai dati.
+See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

@@ -14,9 +14,21 @@ use Webmozart\Assert\Assert;
  * Trait Updater.
  * https://dev.to/hasanmn/automatically-update-createdby-and-updatedby-in-laravel-using-bootable-traits-28g9.
  *
+<<<<<<< .merge_file_vXzjPU
  * @property int|null $created_by ID dell'utente che ha creato il record
  * @property int|null $updated_by ID dell'utente che ha aggiornato il record
  * @property int|null $deleted_by ID dell'utente che ha eliminato il record
+=======
+<<<<<<< HEAD
+ * @property int|null $created_by ID dell'utente che ha creato il record
+ * @property int|null $updated_by ID dell'utente che ha aggiornato il record
+ * @property int|null $deleted_by ID dell'utente che ha eliminato il record
+=======
+ * @property int|null             $created_by ID dell'utente che ha creato il record
+ * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
+ * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pWqrUS
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property ProfileContract|null $deleter
@@ -25,11 +37,16 @@ trait Updater
 {
     /**
      * Get the user who created the model.
+<<<<<<< HEAD
      *
      * @return BelongsTo<Model&ProfileContract, $this>
      *
      * @phpstan-return BelongsTo<Model&ProfileContract, $this>
      */
+=======
+     */
+    /** @return BelongsTo<Model&ProfileContract, $this> */
+>>>>>>> laraxot/dev
     public function creator(): BelongsTo
     {
         /** @var class-string<ProfileContract&Model> $profileClass */
@@ -40,11 +57,16 @@ trait Updater
 
     /**
      * Get the last user who updated the model.
+<<<<<<< HEAD
      *
      * @return BelongsTo<Model&ProfileContract, $this>
      *
      * @phpstan-return BelongsTo<Model&ProfileContract, $this>
      */
+=======
+     */
+    /** @return BelongsTo<Model&ProfileContract, $this> */
+>>>>>>> laraxot/dev
     public function updater(): BelongsTo
     {
         /** @var class-string<ProfileContract&Model> $profileClass */
@@ -55,11 +77,16 @@ trait Updater
 
     /**
      * Get the user who deleted the model.
+<<<<<<< HEAD
      *
      * @return BelongsTo<Model&ProfileContract, $this>
      *
      * @phpstan-return BelongsTo<Model&ProfileContract, $this>
      */
+=======
+     */
+    /** @return BelongsTo<Model&ProfileContract, $this> */
+>>>>>>> laraxot/dev
     public function deleter(): BelongsTo
     {
         /** @var class-string<ProfileContract&Model> $profileClass */

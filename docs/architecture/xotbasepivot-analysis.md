@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBasePivot - Analisi Architettuale Completa
 
 ## 🎯 Executive Summary
@@ -823,3 +824,12 @@ class SpecialPivot extends XotBasePivot
 *Analisi completata il: 2025-10-15*
 *Versione: 1.0*
 *Status: READY FOR IMPLEMENTATION*
+=======
+---
+module: theme
+topic: xotbasepivot-analysis
+canonical: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-analysis.md
+>>>>>>> laraxot/dev

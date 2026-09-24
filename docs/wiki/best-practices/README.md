@@ -2,12 +2,22 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kkjBRW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
 ---
 title: "Readme"
 type: reference
@@ -16,9 +26,21 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_kkjBRW
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
 
 # Best Practices
 
@@ -51,30 +73,46 @@ updated: 2026-08-24
 ## Code Quality
 - PHPStan level 9+ for all new code
 <<<<<<< HEAD
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
+<<<<<<< .merge_file_kkjBRW
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+<<<<<<< .merge_file_kkjBRW
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
 >>>>>>> laraxot/dev
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
@@ -86,11 +124,22 @@ updated: 2026-08-24
 - Update both module and root documentation
 - Include practical examples in all guides
 <<<<<<< HEAD
+<<<<<<< .merge_file_kkjBRW
+=======
+=======
+<<<<<<< HEAD
+
+---
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_jogm6S
 
 ---
 
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -126,6 +175,10 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -138,7 +191,10 @@ canonical: ../../../../Themes/docs/shared-components/README-Modules.md
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -173,8 +229,15 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< HEAD
+=======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kkjBRW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S

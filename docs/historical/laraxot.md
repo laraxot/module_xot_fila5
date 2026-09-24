@@ -1204,7 +1204,7 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 <<<<<<< HEAD
    public function getFormSchema(): array
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
    public function getFormSchema(): array
@@ -4451,7 +4451,7 @@ protected function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -4469,7 +4469,7 @@ class TicketResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -4498,7 +4498,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -4515,7 +4515,7 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -4529,7 +4529,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -4558,7 +4558,7 @@ public function getFormSchema(): array
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    {
        return [
@@ -4595,7 +4595,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public function getFormSchema(): array
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
    public function getFormSchema(): array
@@ -4614,7 +4614,7 @@ public function getFormSchema(): array
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    ```
 
@@ -5772,7 +5772,7 @@ class TicketResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -7227,7 +7227,7 @@ protected function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -7245,7 +7245,7 @@ class TicketResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -7274,7 +7274,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -7291,7 +7291,7 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -7305,7 +7305,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -7334,7 +7334,7 @@ public function getFormSchema(): array
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    {
        return [
@@ -7371,7 +7371,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public function getFormSchema(): array
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
    public function getFormSchema(): array
@@ -7390,7 +7390,7 @@ public function getFormSchema(): array
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    ```
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_M4wDet
 <<<<<<< HEAD
 questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
 https://github.com/limewell/laravel-make-extender
@@ -9,6 +10,8 @@ https://github.com/spatie/laravel-health
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_U0aTiH
 ---
 title: "Todo"
 type: reference
@@ -27,7 +30,17 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
+<<<<<<< .merge_file_M4wDet
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
+https://github.com/limewell/laravel-make-extender
+
+
+mostrare in una blade uso disco etc 
+https://github.com/spatie/laravel-health
+>>>>>>> .merge_file_U0aTiH
 >>>>>>> laraxot/dev

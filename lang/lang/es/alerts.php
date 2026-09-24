@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Jp4reT
+=======
+
+>>>>>>> .merge_file_rc8mPF
 return [
     'backend' => [
         'roles' => [

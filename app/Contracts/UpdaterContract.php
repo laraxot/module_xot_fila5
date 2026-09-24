@@ -19,4 +19,14 @@ use Illuminate\Support\Carbon;
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_XSbetA
 interface UpdaterContract {}
+=======
+<<<<<<< HEAD
+interface UpdaterContract {}
+=======
+interface UpdaterContract
+{
+}
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_EzHfJ2

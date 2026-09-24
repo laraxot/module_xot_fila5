@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_3oksyx
+=======
+
+>>>>>>> .merge_file_SV2vNl
 return [
     'general' => [
         'home' => 'Home',

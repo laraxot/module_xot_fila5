@@ -185,6 +185,10 @@ NomeModulo/
 ## Link Utili
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [blade-component-registration.md](blade-component-registration.md)
+<<<<<<< HEAD
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
+=======
+- [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
+>>>>>>> laraxot/dev
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)

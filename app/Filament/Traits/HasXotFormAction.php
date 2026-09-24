@@ -37,11 +37,27 @@ trait HasXotFormAction
     }
 
     /**
+<<<<<<< .merge_file_5SHla8
      * @param  array<string, mixed>  $parameters
      */
     public function getResourceUrl(?string $name = null, array $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?Model $tenant = null, bool $shouldGuessMissingParameters = true): string
     {
         if (filled($name) && ($name !== 'index') && method_exists($this, 'getRecord')) {
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $parameters
+     */
+    public function getResourceUrl(?string $name = null, array $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?Model $tenant = null, bool $shouldGuessMissingParameters = true): string
+    {
+        if (filled($name) && ($name !== 'index') && method_exists($this, 'getRecord')) {
+=======
+     * @param array<string, mixed> $parameters
+     */
+    public function getResourceUrl(?string $name = null, array $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?Model $tenant = null, bool $shouldGuessMissingParameters = true): string
+    {
+        if (filled($name) && ('index' !== $name) && method_exists($this, 'getRecord')) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cJkF5z
             $parameters['record'] ??= $this->getRecord();
         }
 

@@ -1,7 +1,16 @@
+<<<<<<< .merge_file_qmJrRn
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_pStQT6
 <?php
 
 declare(strict_types=1);
 ?>
+<<<<<<< .merge_file_qmJrRn
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pStQT6
 <!DOCTYPE html>
 <html lang="it">
 <head>

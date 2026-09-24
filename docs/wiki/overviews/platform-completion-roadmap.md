@@ -17,9 +17,15 @@ related:
   - ../../../../Themes/Sixteen/docs/wiki/overviews/completion-roadmap.md
   - ../concepts/phpstan-pest-bridge-discipline.md
 <<<<<<< HEAD
+<<<<<<< .merge_file_HqWqL2
   - ../PHPSTAN-BEST-PRACTICES.md
 =======
   - ../phpstan-best-practices.md
+=======
+  - ../phpstan-best-practices.md
+=======
+  - ../PHPSTAN-BEST-PRACTICES.md
+>>>>>>> .merge_file_YXPZ37
 >>>>>>> laraxot/dev
   - ../../../../../docs/wiki/PHPSTAN-INDEX.md
 ---

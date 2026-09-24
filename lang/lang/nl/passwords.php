@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_wHhQop
+=======
+
+>>>>>>> .merge_file_S9usOt
 return [
     'password' => 'Wachtwoorden moeten uit ten minste zes karakters bestaan en overeen komen met de herhaling.',
     'reset' => 'Uw wachtwoord is gereset!',

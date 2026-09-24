@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_iyF6VX
+=======
+
+>>>>>>> .merge_file_Cpf0C7
 return [
     'title' => 'نصب کننده لاراول',
     'next' => 'قدم بعدی',

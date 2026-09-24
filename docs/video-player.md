@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_5ACPjK
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NNqFnH
 ---
 title: 'video_player'
 module: Xot
@@ -19,8 +22,11 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/video_player.txt -->
 
+<<<<<<< .merge_file_5ACPjK
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NNqFnH
 =======
 >>>>>>> laraxot/dev
 1. Plyr.io:
@@ -112,6 +118,7 @@ https://gist.github.com/jcamp/24d9d4882d81a83db598dac281056960
 ---------------------------------------------------------------------------------------------------------------
 https://www.codester.com/items/11695/vdrive-unlimited-video-convertor-tools-php
 ---------------------------------------------------------------------------------------------------------------
+<<<<<<< .merge_file_5ACPjK
 <<<<<<< HEAD
 <<<<<<< HEAD
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
@@ -121,6 +128,9 @@ https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_deliv
 =======
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
 >>>>>>> laraxot/dev
+=======
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+>>>>>>> .merge_file_NNqFnH
 ---------------------------------------------------------------------------------------------------------------
 https://spark.adobe.com/it-IT/sp/design/video/urn:aaid:sc:EU:d543a756-deaf-4b23-b79b-940d30c06ade
 ---------------------------------------------------------------------------------------------------------------

@@ -8,13 +8,25 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+=======
+use Illuminate\Contracts\Pagination\Paginator;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Modules\UI\Enums\TableLayoutEnum;
+use Modules\Xot\Actions\ModelClass\UpdateCountAction;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasXotTable;
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
  * Base class for list records pages.
  *
+<<<<<<< HEAD
  * La tabella NON si configura qui: la costruisce `XotBaseResource::table()` attraverso
  * `getTableClass()`, cioe' la `*Table` class della Resource. Per questo la pagina non usa
  * `HasXotTable` — un hook `getTableColumns()` scritto su una list page risolverebbe allo
@@ -32,6 +44,19 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     /**
      * @param  array<string, bool|float|int|string|null>  $params
+=======
+ * @property ?string         $model
+ * @property ?string         $resource
+ * @property ?string         $slug
+ * @property TableLayoutEnum $layoutView
+ */
+abstract class XotBaseListRecords extends FilamentListRecords
+{
+    use HasXotTable;
+
+    /**
+     * @param array<string, bool|float|int|string|null> $params
+>>>>>>> laraxot/dev
      */
     public static function trans(string $key, array $params = []): string
     {
@@ -54,11 +79,31 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $resource;
     }
 
+<<<<<<< HEAD
     public static function getModelClass(): string
     {
         $resource = static::getResource();
         $model = $resource::getModel();
+
         return $model;
+=======
+    /*
+     * Get the table columns.
+     *
+     * @return array<string, Tables\Columns\Column>
+     *
+     * abstract public function getTableColumns(): array;
+     */
+
+    /**
+     * Get the default sort column and direction.
+     *
+     * @return array{id: 'desc'|'asc'}
+     */
+    protected function getDefaultSort(): array
+    {
+        return ['id' => 'desc'];
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -73,8 +118,38 @@ abstract class XotBaseListRecords extends FilamentListRecords
         ];
     }
 
+<<<<<<< HEAD
     public function getTableColumns(): array
     {
         return [];
+=======
+    /**
+     * Paginate the table query.
+     *
+     * @param Builder<Model> $query
+     *
+     * @return Paginator<int, Model>
+     */
+    protected function paginateTableQueryOLD(Builder $query): Paginator
+    {
+        $perPage = $this->getTableRecordsPerPage();
+        $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
+
+        $paginator = $query->paginate($perPageValue);
+
+        Assert::isInstanceOf($paginator, Paginator::class);
+
+        if (! method_exists($paginator, 'total')) {
+            return $paginator;
+        }
+
+        $totalResult = $paginator->total();
+        $count = is_int($totalResult) ? $totalResult : (is_numeric($totalResult) ? (int) $totalResult : 0);
+        $modelClass = $this->getModel();
+        // dddx($modelClass);
+        app(UpdateCountAction::class)->execute($modelClass, $count);
+
+        return $paginator;
+>>>>>>> laraxot/dev
     }
 }

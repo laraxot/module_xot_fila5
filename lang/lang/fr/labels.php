@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_smE8yh
+=======
+
+>>>>>>> .merge_file_OPPWYf
 return [
     'general' => [
         'all' => 'Tout',

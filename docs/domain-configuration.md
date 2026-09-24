@@ -77,6 +77,30 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti
 - [Configurazione Generale](configuration.md)
+<<<<<<< HEAD
+=======
+- [Risoluzione dei Loghi](logo_resolution.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
+- [Gestione Asset](assets.md)
+- [Struttura Temi](themes.md)
+- [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
+- [Documentazione Principale](../../../../docs/readme.md)
+- [Standard di Progetto](../../../../docs/standards/readme.md)
+- [Gestione Media](../../media/docs/readme.md)
+- [Gestione UI](../../ui/docs/readme.md)
+- [Gestione Temi](../../cms/docs/themes.md)
+
+## Collegamenti Correlati
+- [Configurazione Moduli](module_configuration.md)
+- [Gestione Risorse](assets.md)
+- [Linee Guida Sviluppo](development_guidelines.md)
+- [Troubleshooting](troubleshooting.md)
+
+## Vedi Anche
+- [Documentazione UI](../../ui/docs/configuration.md)
+- [Documentazione Media](../../media/docs/assets.md)
+- [Documentazione Temi](../../cms/docs/theming.md)
+- [Configurazione Generale](CONFIGURATION.md)
+>>>>>>> laraxot/dev
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -89,9 +113,15 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti Correlati
 - [Configurazione Moduli](MODULE_CONFIGURATION.md)
+<<<<<<< HEAD
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](troubleshooting.md)
+=======
+- [Gestione Risorse](ASSETS.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](TROUBLESHOOTING.md)
+>>>>>>> laraxot/dev
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -99,6 +129,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Documentazione Temi](../../Cms/docs/theming.md)
 - [Standard Interfaccia](../../../docs/standards/interface_guidelines.md)
 - [Best Practices](../../../docs/standards/best_practices.md)
+<<<<<<< HEAD
+=======
+- [Standard Interfaccia](../../../../docs/standards/interface_guidelines.md)
+- [Best Practices](../../../../docs/standards/best_practices.md)
+>>>>>>> laraxot/dev
 
 # Configurazione Basata sul Dominio
 
@@ -169,6 +204,13 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
    - Assicurarsi che tutte le versioni necessarie del logo siano presenti
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
+=======
+- [Configurazione Generale](CONFIGURATION.md)
+- [Configurazione Generale](configuration.md)
+- [Gestione Asset](assets.md)
+- [Struttura Temi](themes.md)
+>>>>>>> laraxot/dev

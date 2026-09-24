@@ -253,7 +253,15 @@ class MioModelloResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -744,16 +752,38 @@ public function handle($user) {
 ### Motivi per utilizzare UserContract
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_WPz13U
+=======
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
+=======
+<<<<<<< HEAD
+1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_f9rc18
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione.
 =======
 1. **Configurabilità**: Il modello User effettivo può cambiare in base alla configurazione (`XotData::make()->getUserClass()`).
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WPz13U
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f9rc18
 2. **Disaccoppiamento**: Riduce le dipendenze verso implementazioni specifiche.
 3. **Testabilità**: Facilita il testing con implementazioni mock dell'interfaccia.
 4. **Flessibilità**: Consente di estendere o cambiare l'implementazione senza impattare il codice esistente.
 
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_WPz13U
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f9rc18
 **Anti-pattern**: `Assert::isInstanceOf($user, User::class)` (o `BaseUser::class`) accoppia il codice al leaf. Canon:
 
 ```php
@@ -762,6 +792,13 @@ Assert::isInstanceOf($user, UserContract::class);
 
 `UserContract` è `Modules\Xot\Contracts\UserContract`. `getUserClass()` serve per factory/relazioni Eloquent, non per narrowing di `auth()->user()`.
 
+<<<<<<< .merge_file_WPz13U
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f9rc18
 >>>>>>> laraxot/dev
 ### Come ottenere la classe User corretta
 
@@ -796,5 +833,17 @@ public function process(\Modules\User\Models\User $user) {
 <<<<<<< HEAD
 ```
 =======
+<<<<<<< .merge_file_WPz13U
 ```
+=======
+<<<<<<< HEAD
+```
+=======
+<<<<<<< HEAD
+```
+=======
+```
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f9rc18
 >>>>>>> laraxot/dev

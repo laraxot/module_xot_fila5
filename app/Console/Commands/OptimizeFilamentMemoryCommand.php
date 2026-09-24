@@ -9,10 +9,25 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_AYLanW
 use Symfony\Component\Process\Process;
 
 use function Safe\preg_match;
 
+=======
+<<<<<<< HEAD
+use Symfony\Component\Process\Process;
+
+use function Safe\preg_match;
+
+=======
+
+use function Safe\preg_match;
+
+use Symfony\Component\Process\Process;
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
 /**
  * Comando per ottimizzare la memory usage di Filament.
  * SuperMucca Memory Optimizer Command 🐄.
@@ -101,7 +116,11 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Analizza i problemi di memoria.
      *
+<<<<<<< HEAD
      * @return array<string, array<int, string>>
+=======
+     * @return array<string, mixed>
+>>>>>>> laraxot/dev
      */
     private function analyzeMemoryIssues(bool $verbose = false): array
     {
@@ -125,7 +144,11 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova modelli con eager loading eccessivo.
      *
+<<<<<<< HEAD
      * @return array<int, string>
+=======
+     * @return array<string>
+>>>>>>> laraxot/dev
      */
     private function findModelsWithEagerLoading(): array
     {
@@ -133,10 +156,24 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_AYLanW
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Models/')) {
                 $content = File::get($file->getPathname());
 
                 if (preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches) === 1) {
+=======
+<<<<<<< HEAD
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Models/')) {
+                $content = File::get($file->getPathname());
+
+                if (preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches) === 1) {
+=======
+            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Models/')) {
+                $content = File::get($file->getPathname());
+
+                if (1 === preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches)) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
                     $withContent = $matches[1] ?? '';
                     // Controlla se ha relazioni pesanti
                     if (str_contains($withContent, 'roles')
@@ -155,7 +192,11 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova widget pesanti.
      *
+<<<<<<< HEAD
      * @return array<int, string>
+=======
+     * @return array<string>
+>>>>>>> laraxot/dev
      */
     private function findHeavyWidgets(): array
     {
@@ -163,7 +204,15 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_AYLanW
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
+=======
+<<<<<<< HEAD
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
+=======
+            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Widgets/')) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
                 $content = File::get($file->getPathname());
 
                 // Cerca query senza limitazioni
@@ -181,7 +230,11 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova risorse non ottimizzate.
      *
+<<<<<<< HEAD
      * @return array<int, string>
+=======
+     * @return array<string>
+>>>>>>> laraxot/dev
      */
     private function findUnoptimizedResources(): array
     {
@@ -189,7 +242,15 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_AYLanW
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
+=======
+<<<<<<< HEAD
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
+=======
+            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
                 $content = File::get($file->getPathname());
 
                 // Cerca eager loading eccessivo
@@ -205,7 +266,11 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova codice di migrazione nei form.
      *
+<<<<<<< HEAD
      * @return array<int, string>
+=======
+     * @return array<string>
+>>>>>>> laraxot/dev
      */
     private function findMigrationCodeInForms(): array
     {
@@ -213,7 +278,15 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_AYLanW
             if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
+=======
+<<<<<<< HEAD
+            if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
+=======
+            if ('php' === $file->getExtension() && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
                 $content = File::get($file->getPathname());
 
                 // Cerca query di migrazione nei form
@@ -231,7 +304,11 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova risorse senza paginazione.
      *
+<<<<<<< HEAD
      * @return array<int, string>
+=======
+     * @return array<string>
+>>>>>>> laraxot/dev
      */
     private function findMissingPagination(): array
     {
@@ -239,7 +316,15 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_AYLanW
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
+=======
+<<<<<<< HEAD
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
+=======
+            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Pages/List')) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
                 $content = File::get($file->getPathname());
 
                 // Cerca liste senza paginazione
@@ -255,7 +340,15 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra i risultati dell'analisi.
      *
+<<<<<<< .merge_file_AYLanW
      * @param  array<string, array<int, string>>  $issues
+=======
+<<<<<<< HEAD
+     * @param  array<string, array<int, string>>  $issues
+=======
+     * @param array<string, mixed> $issues
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
      */
     private function displayAnalysisResults(array $issues): void
     {
@@ -297,7 +390,15 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra dettagli sui problemi trovati.
      *
+<<<<<<< .merge_file_AYLanW
      * @param  array<string, array<int, string>>  $issues
+=======
+<<<<<<< HEAD
+     * @param  array<string, array<int, string>>  $issues
+=======
+     * @param array<string, mixed> $issues
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
      */
     private function displayDetailedIssues(array $issues): void
     {
@@ -316,7 +417,15 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Applica le ottimizzazioni.
      *
+<<<<<<< .merge_file_AYLanW
      * @param  array<string, array<int, string>>  $issues
+=======
+<<<<<<< HEAD
+     * @param  array<string, array<int, string>>  $issues
+=======
+     * @param array<string, mixed> $issues
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
      */
     private function applyOptimizations(array $issues, bool $verbose = false): void
     {
@@ -355,7 +464,15 @@ class OptimizeFilamentMemoryCommand extends Command
 
         // Ottimizza le tabelle MySQL se possibile
         try {
+<<<<<<< .merge_file_AYLanW
             if (config('database.default') === 'mysql') {
+=======
+<<<<<<< HEAD
+            if (config('database.default') === 'mysql') {
+=======
+            if ('mysql' === config('database.default')) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Q40T2
                 DB::statement('OPTIMIZE TABLE users');
                 // Aggiungi altre tabelle critiche se necessario
             }

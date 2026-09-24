@@ -24,7 +24,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    {
        return [
@@ -225,7 +225,7 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -391,7 +391,7 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -443,7 +443,7 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -693,7 +693,7 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -956,7 +956,7 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array

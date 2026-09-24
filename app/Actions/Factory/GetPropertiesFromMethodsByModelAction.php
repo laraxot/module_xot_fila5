@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.
@@ -15,12 +18,29 @@ namespace Modules\Xot\Actions\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
+<<<<<<< .merge_file_X7qApA
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+=======
+<<<<<<< HEAD
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_luiVlD
 
 use function Safe\file;
 use function Safe\preg_replace;
 
+<<<<<<< .merge_file_X7qApA
+=======
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_luiVlD
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
  *
@@ -33,7 +53,16 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le proprietà dai metodi di relazione del modello.
      *
+<<<<<<< .merge_file_X7qApA
      * @param  Model  $model  Il modello da analizzare
+=======
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello da analizzare
+=======
+     * @param Model $model Il modello da analizzare
+     *
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_luiVlD
      * @return array<string, string> Dati estratti dalle relazioni
      */
     public function execute(Model $model): array
@@ -52,7 +81,15 @@ class GetPropertiesFromMethodsByModelAction
                 $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
+<<<<<<< .merge_file_X7qApA
                 if ($filename === false) {
+=======
+<<<<<<< HEAD
+                if ($filename === false) {
+=======
+                if (false === $filename) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_luiVlD
                     continue; // Saltiamo i metodi senza file (es. metodi interni)
                 }
 
@@ -90,10 +127,24 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Estrazione del corpo della funzione
                 $begin = mb_strpos($codeStr, 'function(');
+<<<<<<< .merge_file_X7qApA
                 $begin = $begin !== false ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
                 $end = $end !== false ? $end : mb_strlen($codeStr);
+=======
+<<<<<<< HEAD
+                $begin = $begin !== false ? $begin : 0;
+
+                $end = mb_strrpos($codeStr, '}');
+                $end = $end !== false ? $end : mb_strlen($codeStr);
+=======
+                $begin = false !== $begin ? $begin : 0;
+
+                $end = mb_strrpos($codeStr, '}');
+                $end = false !== $end ? $end : mb_strlen($codeStr);
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_luiVlD
 
                 $length = $end - $begin + 1;
                 Assert::greaterThan($length, 0, 'La lunghezza del corpo della funzione deve essere positiva');
@@ -115,17 +166,38 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le relazioni belongsTo dal codice.
      *
+<<<<<<< .merge_file_X7qApA
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_luiVlD
      * @param  string  $codeStr  Il codice da analizzare
      * @param  Model  $model  Il modello
      * @param  string  $method  Il nome del metodo
      * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
+<<<<<<< .merge_file_X7qApA
+=======
+=======
+     * @param string                $codeStr Il codice da analizzare
+     * @param Model                 $model   Il modello
+     * @param string                $method  Il nome del metodo
+     * @param array<string, string> &$data   L'array in cui salvare i dati estratti
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_luiVlD
      */
     private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
+<<<<<<< .merge_file_X7qApA
         if ($pos === false) {
+=======
+<<<<<<< HEAD
+        if ($pos === false) {
+=======
+        if (false === $pos) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_luiVlD
             return; // Il metodo non contiene una relazione belongsTo
         }
 

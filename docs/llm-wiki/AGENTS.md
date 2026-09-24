@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_yVaPa5
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OBwsRZ
 ---
 title: "Agent instructions"
 type: reference
@@ -19,7 +22,6 @@ related:
 
 <<<<<<< HEAD
 =======
->>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

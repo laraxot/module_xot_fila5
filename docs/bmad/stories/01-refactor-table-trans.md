@@ -1,6 +1,14 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_byfRWx
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Vkj6JN
 ---
 name: 01-refactor-table-trans
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +16,19 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_byfRWx
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Vkj6JN
 >>>>>>> laraxot/dev
 # BMAD Story 01 — Rimuovere TransTrait ridondante
 

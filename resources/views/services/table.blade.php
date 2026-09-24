@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
 ?>
 <table border="1" class="table table-bordered">
 @foreach ($rows as $row)

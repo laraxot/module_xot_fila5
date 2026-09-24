@@ -15,7 +15,18 @@ class GetViewNameSpacePathAction
     /**
      * Ottiene il percorso di un namespace di vista.
      *
+<<<<<<< .merge_file_VWWH0a
      * @param  string  $ns  Il namespace della vista
+=======
+     * <<<<<<< HEAD
+     *
+     * @param string $ns Il namespace della vista
+     *                   =======
+     * @param string $ns Il namespace della vista
+     *
+     * >>>>>>> laraxot/dev
+     *
+>>>>>>> .merge_file_PeG9JM
      * @return string|null Il percorso del namespace o null se non trovato
      */
     public function execute(string $ns): ?string

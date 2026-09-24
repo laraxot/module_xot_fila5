@@ -32,11 +32,22 @@ class HandlerDecorator implements ExceptionHandler
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
+<<<<<<< HEAD
     ) {}
 
     /**
      * @param  array<int, mixed>  $parameters
      * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
+<<<<<<< .merge_file_Ehhb8O
+=======
+=======
+    ) {
+    }
+
+    /**
+     * @param array<int, mixed> $parameters
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FGVkcm
      */
     public function __call(string $name, array $parameters): mixed
     {
@@ -130,7 +141,11 @@ class HandlerDecorator implements ExceptionHandler
     {
         return array_filter(
             $this->reporters,
+<<<<<<< HEAD
             fn (callable $handler): bool => $this->handlesException($handler, $e),
+=======
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+>>>>>>> laraxot/dev
         );
     }
 
@@ -143,7 +158,11 @@ class HandlerDecorator implements ExceptionHandler
     {
         return array_filter(
             $this->renderers,
+<<<<<<< HEAD
             fn (callable $handler): bool => $this->handlesException($handler, $e),
+=======
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+>>>>>>> laraxot/dev
         );
     }
 
@@ -156,7 +175,11 @@ class HandlerDecorator implements ExceptionHandler
     {
         return array_filter(
             $this->consoleRenderers,
+<<<<<<< HEAD
             fn (callable $handler): bool => $this->handlesException($handler, $e),
+=======
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+>>>>>>> laraxot/dev
         );
     }
 
@@ -178,6 +201,7 @@ class HandlerDecorator implements ExceptionHandler
             return false;
         }
 
+<<<<<<< HEAD
         $type = $params[0]->getType();
 
         if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
@@ -188,5 +212,8 @@ class HandlerDecorator implements ExceptionHandler
 
         return (class_exists($className) || interface_exists($className))
             && (new \ReflectionClass($className))->isInstance($e);
+=======
+        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
+>>>>>>> laraxot/dev
     }
 }
