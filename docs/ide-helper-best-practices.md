@@ -11,6 +11,10 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 ### Pacchetto Utilizzato
 - **barryvdh/laravel-ide-helper** - Genera helper per IDE con supporto PHPStan
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ### Note operative (2026-08-31)
 
 - Spatie ResponseCache v8: in `config/responsecache.php` usare `JsonSerializer::class` (non più `DefaultSerializer`).
@@ -21,6 +25,11 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 - Suite completa: generate + meta + models `--nowrite` (+ eloquent opzionale su vendor).
 - Evidence: `docs/chat/ide-helper-refresh.md` · `docs/chat/composer-update-phpstan-ide-helper.md`
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 
 ## Configurazione Progetto

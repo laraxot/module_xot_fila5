@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelAction;
@@ -27,8 +32,12 @@ it('returns extracted fragment for non-module class signatures', function (): vo
 });
 
 it('delegates model instance class to model class action', function (): void {
+<<<<<<< HEAD
     $model = new class extends Model
     {
+=======
+    $model = new class extends Model {
+>>>>>>> laraxot/dev
         protected $table = 'test';
     };
     $delegate = Mockery::mock(GetModuleNameByModelClassAction::class);

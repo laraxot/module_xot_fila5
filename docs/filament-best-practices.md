@@ -18,9 +18,19 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+   public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    {
        return [
@@ -215,9 +225,19 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -380,8 +400,17 @@ class ReportResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
@@ -428,9 +457,19 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -674,9 +713,19 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -932,8 +981,17 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
@@ -963,6 +1021,14 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -1033,5 +1099,14 @@ Appointment::where('doctor_id', $doctorId)
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
+<<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
 
+=======
+<<<<<<< HEAD
+- Refactoring sicuro, massima estendibilità
+
+=======
+- Refactoring sicuro, massima estendibilità
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

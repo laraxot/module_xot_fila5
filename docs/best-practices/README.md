@@ -1,6 +1,16 @@
 # Best Practices
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_p95rt1
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FfdCBr
+>>>>>>> laraxot/dev
 ## Laraxot Framework Standards
 
 ### Models
@@ -29,6 +39,14 @@
 
 ## Code Quality
 - PHPStan level 9+ for all new code
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_p95rt1
+=======
+=======
+>>>>>>> .merge_file_FfdCBr
+>>>>>>> laraxot/dev
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
@@ -52,10 +70,23 @@
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_p95rt1
+=======
+=======
+>>>>>>> .merge_file_FfdCBr
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_p95rt1
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 [![Module](https://img.shields.io/badge/Module-Best Practices-8B0000.svg)]()
@@ -97,11 +128,23 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FfdCBr
+>>>>>>> laraxot/dev
 ## Documentation
 - All files in docs/ must be lowercase (except README.md)
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_p95rt1
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 
@@ -154,4 +197,11 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FfdCBr
 >>>>>>> laraxot/dev

@@ -175,9 +175,25 @@ namespace Modules\NewModule\Filament\Resources;
 class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_4Na5eZ
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
     {
         return [
@@ -190,9 +206,25 @@ class ProductResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_4Na5eZ
+>>>>>>> laraxot/dev
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WmuOtb
+=======
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
     {
         return [

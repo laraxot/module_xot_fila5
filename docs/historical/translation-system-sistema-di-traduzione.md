@@ -224,6 +224,24 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/docs/forms)
 - [Best Practices Filament](../docs/filament-best-practices.md)
 - [Schema Conventions](../docs/schema-conventions.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_v9jz5a
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_FhByQL
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OqT12T
+>>>>>>> .merge_file_XJwjD9
+>>>>>>> laraxot/dev
 |||||||| parent of 4e84d6e (.):docs/consolidated/translation_system.md
 - [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
@@ -234,3 +252,22 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_v9jz5a
+=======
+<<<<<<< .merge_file_FhByQL
+=======
+=======
+>>>>>>> .merge_file_XJwjD9
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_v9jz5a
+=======
+>>>>>>> .merge_file_OqT12T
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XJwjD9
+>>>>>>> laraxot/dev

@@ -13,13 +13,39 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
 
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
 if (! defined('STDIN')) {
     define('STDIN', fopen('php://stdin', 'r'));
 }
@@ -43,10 +69,29 @@ class ArtisanAction
         switch ($act) {
             case 'migrate':
                 $defaultConn = Config::get('database.default');
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
                 $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
                 if ($module_name !== '') {
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_boS4oM
+                $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
+                DB::purge($purgeConn);
+                DB::reconnect($purgeConn);
+                if ('' !== $module_name) {
+<<<<<<< .merge_file_GlRtSo
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -123,7 +168,19 @@ class ArtisanAction
             $log = '';
         }
         $content = '';
+<<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+=======
+        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> laraxot/dev
+=======
+        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -136,7 +193,19 @@ class ArtisanAction
         /** @var array<int, string> $urls */
         $urls = [];
         $urlsRaw = $matches[1];
+<<<<<<< HEAD
         if ($urlsRaw !== []) {
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+        if ($urlsRaw !== []) {
+=======
+        if ([] !== $urlsRaw) {
+>>>>>>> laraxot/dev
+=======
+        if ([] !== $urlsRaw) {
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -179,7 +248,19 @@ class ArtisanAction
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
                 echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -194,7 +275,19 @@ class ArtisanAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
                 File::delete($file->getRealPath());
             }
         }
@@ -206,7 +299,19 @@ class ArtisanAction
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+=======
+            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+=======
+            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
                 File::delete($file->getRealPath());
             }
         }
@@ -215,7 +320,19 @@ class ArtisanAction
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $arguments
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -230,5 +347,21 @@ class ArtisanAction
         }
     }
 
+<<<<<<< HEAD
     public function execute(): void {}
+=======
+<<<<<<< .merge_file_GlRtSo
+<<<<<<< HEAD
+    public function execute(): void {}
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> .merge_file_boS4oM
+>>>>>>> laraxot/dev
 }

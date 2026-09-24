@@ -8,7 +8,16 @@ tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: payment-gateway.txt
 =======
+<<<<<<< HEAD
 converted_from: payment_gateway.txt
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+converted_from: payment-gateway.txt
+=======
+converted_from: payment_gateway.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

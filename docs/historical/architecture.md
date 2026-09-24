@@ -98,9 +98,25 @@ abstract class XotBaseResource extends Resource
     use HasXotTable;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_m6raoP
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_AwPKDe
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_m6raoP
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AwPKDe
 >>>>>>> laraxot/dev
     {
         return static::getFormSchemaImplementation();

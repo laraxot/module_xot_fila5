@@ -270,4 +270,12 @@ Questo modulo è rilasciato sotto la [MIT License](LICENSE.md).
 ## Ringraziamenti
 
 - [Nome Libreria/Framework] per [funzionalità specifica]
+<<<<<<< HEAD
 - [Nome Persona/Organizzazione] per [contributo specifico]
+=======
+<<<<<<< HEAD
+- [Nome Persona/Organizzazione] per [contributo specifico]
+=======
+- [Nome Persona/Organizzazione] per [contributo specifico]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

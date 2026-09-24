@@ -74,7 +74,15 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
+<<<<<<< HEAD
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+=======
+<<<<<<< HEAD
+- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+=======
+- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -86,4 +94,12 @@ echo $tenants->count(); // ✅ Output: 1
 
 ---
 
+<<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+=======
+<<<<<<< HEAD
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+=======
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

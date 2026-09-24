@@ -26,7 +26,11 @@ class XotComposer
     /**
      * Undocumented function.
      *
+<<<<<<< HEAD
      * @param  array<int, mixed>  $arguments
+=======
+     * @param array<int, mixed> $arguments
+>>>>>>> laraxot/dev
      */
     public function __call(string $name, array $arguments): mixed
     {
@@ -68,7 +72,11 @@ class XotComposer
         $view->with('_theme', $this);
 
         if (class_exists('\Jenssegers\Agent\Agent')) {
+<<<<<<< HEAD
             $agent = new Agent;
+=======
+            $agent = new Agent();
+>>>>>>> laraxot/dev
             $view->with('isMobile', $agent->isMobile());
             $view->with('isTablet', $agent->isTablet());
             $view->with('isDesktop', $agent->isDesktop());

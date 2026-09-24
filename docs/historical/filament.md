@@ -35,9 +35,25 @@ use Filament\Forms\Components\DatePicker;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_QrJa0K
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QrJa0K
 >>>>>>> laraxot/dev
     {
         return [
@@ -121,9 +137,25 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_QrJa0K
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QrJa0K
 >>>>>>> laraxot/dev
 {
     return [

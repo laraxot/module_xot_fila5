@@ -8,7 +8,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('manages object properties safely', function (): void {
+<<<<<<< HEAD
     $obj = new stdClass;
+=======
+    $obj = new stdClass();
+>>>>>>> laraxot/dev
     $obj->name = 'Test Object';
     $obj->id = 123;
     $obj->active = true;
@@ -53,8 +57,12 @@ it('manages object properties safely', function (): void {
         return $v > 200;
     }, 0));
     // Methods
+<<<<<<< HEAD
     $complexObj = new class
     {
+=======
+    $complexObj = new class {
+>>>>>>> laraxot/dev
         public function test(string $p): string
         {
             return $p;

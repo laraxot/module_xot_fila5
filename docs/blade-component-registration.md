@@ -114,6 +114,18 @@ class MyComponent extends Component
 - Verificare che le proprietà `$name` e `$nameLower` siano definite correttamente
 
 ## Link Utili
+<<<<<<< HEAD
 - [XotBaseServiceProvider](xotbaseserviceprovider.md)
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
+=======
+<<<<<<< HEAD
+- [XotBaseServiceProvider](xotbaseserviceprovider.md)
+- [service-provider-best-practices.md](service-provider-best-practices.md)
+- [filament-best-practices.md](filament-best-practices.md)
+=======
+- [XotBaseServiceProvider](XotBaseServiceProvider.md)
+- [service-provider-best-practices.md](service-provider-best-practices.md)
+- [filament-best-practices.md](filament-best-practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

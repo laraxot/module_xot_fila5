@@ -346,6 +346,10 @@ Questi file devono essere:
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## Regressione e ri-bonifica 2026-07-06
 
 Le cartelle root PascalCase erano tornate (probabile merge/copy incidentale
@@ -383,3 +387,9 @@ esserci solo README.md". `CHANGELOG.md` esiste ancora alla root di
 dell'utente, per non perdere contenuto storico senza conferma.
 
 *Ultimo aggiornamento: 2026-07-06*
+<<<<<<< HEAD
+=======
+=======
+*Ultimo aggiornamento: 2026-06-18*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

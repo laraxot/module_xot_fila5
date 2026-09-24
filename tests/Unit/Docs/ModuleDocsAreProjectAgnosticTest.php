@@ -57,7 +57,15 @@ function moduleDocsWithHostProjectName(): array
         );
 
         foreach ($iterator as $fileInfo) {
+<<<<<<< HEAD
             if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
+=======
+<<<<<<< .merge_file_Ou8sr1
+            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
+=======
+            if (! $fileInfo instanceof \SplFileInfo || 'md' !== $fileInfo->getExtension()) {
+>>>>>>> .merge_file_VilMNh
+>>>>>>> laraxot/dev
                 continue;
             }
 
@@ -90,7 +98,23 @@ test('nessun documento nuovo di modulo nomina il progetto ospite', function (): 
     expect(count($hits))->toBeLessThanOrEqual(
         MODULE_DOCS_HOST_NAME_FILE_BASELINE,
         "Un documento di modulo nomina un'installazione specifica. Un modulo gira in "
+<<<<<<< HEAD
         .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
+=======
+<<<<<<< .merge_file_Ou8sr1
+<<<<<<< HEAD
+        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
+=======
+<<<<<<< HEAD
+        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
+=======
+        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
+>>>>>>> .merge_file_VilMNh
+>>>>>>> laraxot/dev
         .'Vedi docs/wiki/rules/project-agnostic.md'
     );
 });

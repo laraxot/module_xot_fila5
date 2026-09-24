@@ -358,6 +358,13 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [wikimedia/composer-merge-plugin GitHub](https://github.com/wikimedia/composer-merge-plugin)
 - [Xot Helpers Documentation](./helpers.md)
 - [Tenant Helper Dependency](../../Tenant/docs/helper-functions-dependency.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 
@@ -475,4 +482,12 @@ $models = $action->execute($moduleName);
 
 ---
 
+<<<<<<< HEAD
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+=======
+<<<<<<< HEAD
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+=======
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

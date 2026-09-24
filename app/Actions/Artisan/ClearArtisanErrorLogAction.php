@@ -19,7 +19,19 @@ class ClearArtisanErrorLogAction
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+=======
+<<<<<<< .merge_file_zgEKOS
+<<<<<<< HEAD
+            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> .merge_file_a13PWE
+>>>>>>> laraxot/dev
                 File::delete($file->getRealPath());
             }
         }
