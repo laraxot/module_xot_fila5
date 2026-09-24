@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Traits\HasXotTable;
-use ReflectionClass;
 
 use function Safe\file_get_contents;
 
-/**
+/*
  * Guardia della regola docs/wiki/rules/xot-table-method-names.md:
  * `table()` non decide, chiede — e lo chiede direttamente all'hook.
  *
@@ -20,7 +19,7 @@ use function Safe\file_get_contents;
 test('HasXotTable non dichiara metodi resolve*', function (): void {
     $methods = array_map(
         static fn (\ReflectionMethod $m): string => $m->getName(),
-        (new ReflectionClass(HasXotTable::class))->getMethods(),
+        (new \ReflectionClass(HasXotTable::class))->getMethods(),
     );
 
     $offenders = array_values(array_filter(
@@ -34,7 +33,7 @@ test('HasXotTable non dichiara metodi resolve*', function (): void {
 
 test('table() non contiene valori hardcoded fra i setter', function (): void {
     $source = file_get_contents(
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
+        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
     );
 
     $start = strpos($source, 'public function table(');
@@ -50,7 +49,7 @@ test('table() non contiene valori hardcoded fra i setter', function (): void {
 
 test('gli hook di azione non sono avvolti in array_values()', function (): void {
     $source = file_get_contents(
-        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
+        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
     );
 
     foreach ([

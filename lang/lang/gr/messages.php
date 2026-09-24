@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'title' => 'Εγκατάσταση Laravel',
     'next' => 'Επόμενο',

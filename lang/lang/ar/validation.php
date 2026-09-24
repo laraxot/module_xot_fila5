@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'accepted' => 'يجب قبول الحقل :attribute',
     'active_url' => 'الحقل :attribute لا يُمثّل رابطًا صحيحًا',

@@ -9,7 +9,7 @@ uses(TestCase::class);
 
 function xotModuleServiceTestInstance(): ModuleService
 {
-    return (new ModuleService)->setName('TestModule');
+    return (new ModuleService())->setName('TestModule');
 }
 
 describe('ModuleService', function () {
@@ -26,8 +26,8 @@ describe('ModuleService', function () {
     });
 
     it('can be instantiated with different module names', function () {
-        $service1 = (new ModuleService)->setName('Chart');
-        $service2 = (new ModuleService)->setName('User');
+        $service1 = (new ModuleService())->setName('Chart');
+        $service2 = (new ModuleService())->setName('User');
 
         Assert::assertInstanceOf(ModuleService::class, $service1);
         Assert::assertInstanceOf(ModuleService::class, $service2);
@@ -39,7 +39,6 @@ describe('ModuleService', function () {
 
     it('returns array from getModels method', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-
     });
 
     it('getModels returns correct array structure', function () {
@@ -59,7 +58,6 @@ describe('ModuleService', function () {
 
     it('handles reflection exceptions gracefully', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-
     });
 
     it('processes model names correctly', function () {
@@ -87,7 +85,7 @@ describe('ModuleService', function () {
     });
 
     it('handles empty module gracefully', function () {
-        $emptyService = (new ModuleService)->setName('NonExistentModule');
+        $emptyService = (new ModuleService())->setName('NonExistentModule');
         $result = $emptyService->getModels();
 
         Assert::assertSame([], $result);
@@ -129,7 +127,6 @@ describe('ModuleService', function () {
 
     it('processes file extensions correctly', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-
     });
 
     it('validates string utilities usage', function () {
@@ -142,6 +139,5 @@ describe('ModuleService', function () {
 
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-
     });
 });

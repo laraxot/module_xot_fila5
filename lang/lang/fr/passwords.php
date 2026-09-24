@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'password' => 'Les mots de passe doivent avoir au moins 6 caractères et la confirmation doit correspondre.',
     'reset' => 'Votre mot de passe a été modifié !',

@@ -40,7 +40,7 @@ class XlsxCellFactory
 
         $value = StringHelper::sanitizeUTF8($value);
 
-        if ($value === '') {
+        if ('' === $value) {
             return new EmptyCell($value, $style);
         }
 

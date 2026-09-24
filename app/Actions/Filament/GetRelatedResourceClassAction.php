@@ -42,7 +42,7 @@ class GetRelatedResourceClassAction
         if (method_exists($page, 'getRelatedResource')) {
             /** @var class-string<XotBaseResource>|null $relatedResource */
             $relatedResource = $page::getRelatedResource();
-            if ($relatedResource !== null) {
+            if (null !== $relatedResource) {
                 return $relatedResource;
             }
         }
@@ -58,7 +58,7 @@ class GetRelatedResourceClassAction
         $guess = 'Modules\\'.$moduleName.'\Filament\Resources\\'.$modelName.'Resource';
 
         if (class_exists($guess) && is_subclass_of($guess, XotBaseResource::class)) {
-            /** @var class-string<XotBaseResource> $guess */
+            /* @var class-string<XotBaseResource> $guess */
             return $guess;
         }
 

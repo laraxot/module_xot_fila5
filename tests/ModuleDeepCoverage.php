@@ -5,11 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
-use Mockery;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
-use ReflectionMethod;
-use ReflectionNamedType;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
@@ -25,7 +21,7 @@ final class ModuleDeepCoverage
         $executed = 0;
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
-            $ref = new ReflectionClass($class);
+            $ref = new \ReflectionClass($class);
             if (! $ref->hasMethod('execute')) {
                 continue;
             }
@@ -44,8 +40,8 @@ final class ModuleDeepCoverage
             $sourceFile = $ref->getFileName();
             if (is_string($sourceFile) && is_file($sourceFile)) {
                 $source = file_get_contents($sourceFile);
-                if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
-                    $executed++;
+                if (1 === preg_match('/^\s*dddx\s*\(/m', $source)) {
+                    ++$executed;
 
                     continue;
                 }
@@ -59,9 +55,9 @@ final class ModuleDeepCoverage
 
             try {
                 $method->invoke($instance, ...$args);
-                $executed++;
+                ++$executed;
             } catch (\Throwable) {
-                $executed++;
+                ++$executed;
             }
         }
 
@@ -71,7 +67,7 @@ final class ModuleDeepCoverage
     /**
      * @return list<mixed>
      */
-    private static function defaultArgsForMethod(ReflectionMethod $method): array
+    private static function defaultArgsForMethod(\ReflectionMethod $method): array
     {
         $args = [];
 
@@ -85,16 +81,16 @@ final class ModuleDeepCoverage
                 continue;
             }
 
-            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
+            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
-                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-                    $modelRef = new ReflectionClass($typeName);
+                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+                    $modelRef = new \ReflectionClass($typeName);
                     if ($modelRef->isAbstract()) {
-                        $args[] = Mockery::mock($typeName);
+                        $args[] = \Mockery::mock($typeName);
 
                         continue;
                     }
-                    $args[] = new $typeName;
+                    $args[] = new $typeName();
 
                     continue;
                 }
@@ -106,7 +102,7 @@ final class ModuleDeepCoverage
                 continue;
             }
 
-            if ($type instanceof ReflectionNamedType) {
+            if ($type instanceof \ReflectionNamedType) {
                 $args[] = match ($type->getName()) {
                     'array' => [],
                     'string' => '',
@@ -131,14 +127,14 @@ final class ModuleDeepCoverage
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Events') as $class) {
             try {
-                $ref = new ReflectionClass($class);
+                $ref = new \ReflectionClass($class);
                 $ctor = $ref->getConstructor();
-                if ($ctor === null || $ctor->getNumberOfRequiredParameters() === 0) {
-                    new $class;
+                if (null === $ctor || 0 === $ctor->getNumberOfRequiredParameters()) {
+                    new $class();
                 }
-                $executed++;
+                ++$executed;
             } catch (\Throwable) {
-                $executed++;
+                ++$executed;
             }
         }
 
@@ -156,18 +152,18 @@ final class ModuleDeepCoverage
 
             try {
                 $class::from([]);
-                $executed++;
+                ++$executed;
             } catch (\Throwable) {
                 try {
-                    $ref = new ReflectionClass($class);
+                    $ref = new \ReflectionClass($class);
                     $ctor = $ref->getConstructor();
-                    if ($ctor !== null) {
+                    if (null !== $ctor) {
                         $args = self::defaultArgsForMethod($ctor);
                         $ref->newInstanceArgs($args);
                     }
-                    $executed++;
+                    ++$executed;
                 } catch (\Throwable) {
-                    $executed++;
+                    ++$executed;
                 }
             }
         }
@@ -188,7 +184,7 @@ final class ModuleDeepCoverage
                 continue;
             }
 
-            $ref = new ReflectionClass($class);
+            $ref = new \ReflectionClass($class);
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -198,9 +194,9 @@ final class ModuleDeepCoverage
                 if (method_exists($provider, 'register')) {
                     $provider->register();
                 }
-                $executed++;
+                ++$executed;
             } catch (\Throwable) {
-                $executed++;
+                ++$executed;
             }
         }
 
@@ -217,18 +213,18 @@ final class ModuleDeepCoverage
             }
 
             try {
-                $ref = new ReflectionClass($class);
+                $ref = new \ReflectionClass($class);
                 if ($ref->isAbstract()) {
                     continue;
                 }
                 $ref->newInstanceWithoutConstructor();
-                $executed++;
+                ++$executed;
             } catch (\Throwable) {
                 try {
-                    new $class;
-                    $executed++;
+                    new $class();
+                    ++$executed;
                 } catch (\Throwable) {
-                    $executed++;
+                    ++$executed;
                 }
             }
         }

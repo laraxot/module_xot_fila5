@@ -37,7 +37,7 @@ function xotPhpFilesUnderFilament(): array
     );
 
     foreach ($iterator as $fileInfo) {
-        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
             continue;
         }
 

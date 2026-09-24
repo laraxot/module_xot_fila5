@@ -14,11 +14,11 @@ use Illuminate\Database\Eloquent\Model;
 interface MorphToOneRelationContract
 {
     /**
-<<<<<<< .merge_file_2E1dgH
-     * @param  array<string, mixed>  $attributes
-=======
-     * <<<<<<< .merge_file_uy89WO.
+     * <<<<<<< .merge_file_2E1dgH.
      *
+     * @param array<string, mixed> $attributes
+     *                                         =======
+     *                                         <<<<<<< .merge_file_uy89WO.
      * @param array<string, mixed> $attributes
      *                                         =======
      *                                         <<<<<<< HEAD
@@ -27,7 +27,7 @@ interface MorphToOneRelationContract
      * @param array<string, mixed> $attributes
      *                                         >>>>>>> laraxot/dev
      *                                         >>>>>>> .merge_file_bDJ3Gs
->>>>>>> .merge_file_JwvZ1t
+     *                                         >>>>>>> .merge_file_JwvZ1t
      */
     public function create(array $attributes): Model;
 }

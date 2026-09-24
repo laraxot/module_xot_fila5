@@ -6,7 +6,6 @@ namespace Modules\Xot\Helpers;
 
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Webmozart\Assert\Assert;
 
 use function Safe\error_log;
 use function Safe\file_get_contents;
@@ -15,10 +14,12 @@ use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
+use Webmozart\Assert\Assert;
+
 class ResourceFormSchemaGenerator
 {
     /**
-     * @param  class-string  $resourceClass
+     * @param class-string $resourceClass
      */
     public static function generateFormSchema(string $resourceClass): bool
     {
@@ -30,7 +31,7 @@ class ResourceFormSchemaGenerator
             $reflection = new \ReflectionClass($resourceClass);
             $filename = $reflection->getFileName();
 
-            if ($filename === false) {
+            if (false === $filename) {
                 throw new \RuntimeException("Failed to get filename for class: {$resourceClass}");
             }
 

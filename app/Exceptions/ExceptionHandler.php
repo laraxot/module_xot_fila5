@@ -17,7 +17,7 @@ class ExceptionHandler
     /**
      * Configura la gestione delle eccezioni.
      *
-     * @param  Exceptions  $exceptions  Configuratore eccezioni Laravel
+     * @param Exceptions $exceptions Configuratore eccezioni Laravel
      */
     public static function handles(Exceptions $exceptions): void
     {

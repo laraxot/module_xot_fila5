@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'password' => 'Lösenordet måste vara minst sex tecken långt och stämma med bekräftelsen av lösenordet.',
     'reset' => 'Ditt lösenord har återställts!',

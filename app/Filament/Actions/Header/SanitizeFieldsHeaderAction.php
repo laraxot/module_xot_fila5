@@ -9,7 +9,6 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
-use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Model;
@@ -49,7 +48,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
-                            $c++;
+                            ++$c;
                         }
                     }
                     if ($save) {
@@ -64,7 +63,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
     }
 
     /**
-     * @param  list<string>  $fields
+     * @param list<string> $fields
      */
     public function setFields(array $fields): self
     {

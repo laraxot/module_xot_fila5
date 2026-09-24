@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;

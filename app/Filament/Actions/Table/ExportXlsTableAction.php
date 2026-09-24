@@ -7,7 +7,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Table;
 
-use Exception;
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -40,8 +39,8 @@ class ExportXlsTableAction extends XotBaseAction
                 $transKey = app(GetTransKeyAction::class)->execute($livewireClass);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
-                if ($query === null) {
-                    throw new Exception('Query is null');
+                if (null === $query) {
+                    throw new \Exception('Query is null');
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 /** @var Builder<Model> $eloquentQuery */
@@ -62,8 +61,9 @@ class ExportXlsTableAction extends XotBaseAction
      * Chiave stringa = percorso data_get con intestazione esplicita
      * (title rating); chiave intera = percorso tradotto via transKey.
      *
-     * @param  class-string  $livewireClass
-     * @param  array<string, mixed>|null  $tableFilters
+     * @param class-string              $livewireClass
+     * @param array<string, mixed>|null $tableFilters
+     *
      * @return array<int|string, string>
      */
     private static function resolveXlsFields(string $livewireClass, ?array $tableFilters): array

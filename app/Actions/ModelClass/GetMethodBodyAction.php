@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\ModelClass;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 use function Safe\file;
+
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 class GetMethodBodyAction
 {

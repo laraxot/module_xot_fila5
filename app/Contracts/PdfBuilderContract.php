@@ -13,11 +13,11 @@ interface PdfBuilderContract
     public function download(): self;
 
     /**
-<<<<<<< .merge_file_cbfm32
-     * @param  \Closure(object): void  $callback
-=======
-     * <<<<<<< .merge_file_BKEGs0.
+     * <<<<<<< .merge_file_cbfm32.
      *
+     * @param \Closure(object): void $callback
+     *                                         =======
+     *                                         <<<<<<< .merge_file_BKEGs0.
      * @param \Closure(object): void $callback
      *                                         =======
      *                                         <<<<<<< HEAD
@@ -26,7 +26,7 @@ interface PdfBuilderContract
      * @param \Closure(object): void $callback
      *                                         >>>>>>> laraxot/dev
      *                                         >>>>>>> .merge_file_kMmTVQ
->>>>>>> .merge_file_ZG1xGl
+     *                                         >>>>>>> .merge_file_ZG1xGl
      */
     public function withBrowsershot(\Closure $callback): self;
 

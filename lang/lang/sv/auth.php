@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'failed' => 'Dessa uppgifter stämmer inte överens med vårt register.',
     'general_error' => 'Du har inte tillstånd att göra det där.',

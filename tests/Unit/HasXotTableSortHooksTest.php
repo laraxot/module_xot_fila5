@@ -18,8 +18,7 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 }
 
 test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): void {
-    $table = new class extends XotBaseResourceTable
-    {
+    $table = new class extends XotBaseResourceTable {
         /** @return array<string, Column> */
         public function getTableColumns(): array
         {
@@ -39,8 +38,7 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
 });
 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
-    $table = new class extends XotBaseResourceTable
-    {
+    $table = new class extends XotBaseResourceTable {
         /** @return array<string, Column> */
         public function getTableColumns(): array
         {
