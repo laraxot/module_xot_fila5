@@ -19,7 +19,7 @@ abstract class XotBaseResourceForm
 
     public static function configure(Schema $schema): Schema
     {
-        if (self::class === static::class) {
+        if (static::class === self::class) {
             throw new \LogicException('XotBaseResourceForm::configure() must be called on a concrete form class.');
         }
 
@@ -76,7 +76,7 @@ abstract class XotBaseResourceForm
         return static function (Model $record) use ($titleAttribute): string {
             $title = $record->getAttribute($titleAttribute);
 
-            if (\is_string($title) && '' !== $title) {
+            if (\is_string($title) && $title !== '') {
                 return $title;
             }
 

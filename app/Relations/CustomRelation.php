@@ -7,8 +7,6 @@ declare(strict_types=1);
  * @see https://github.com/johnnyfreeman/laravel-custom-relation/blob/master/src/Relations/Custom.php
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Relations;
 
 use Closure;
@@ -49,15 +47,6 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected ?Closure $eagerMatcher,
-        protected \Closure $baseConstraints,
-        /**
-         * The eagerConstraints callback.
-         */
-        protected ?\Closure $eagerConstraints,
-        /**
-         * The eager constraints model matcher.
-         */
-        protected ?\Closure $eagerMatcher,
     ) {
         parent::__construct($query, $model);
     }
@@ -96,10 +85,6 @@ class CustomRelation extends Relation
      */
     public function initRelation(array $models, mixed $relation): array
     {
-        if (! \is_string($relation)) {
-            throw new \Exception('relation is not a string');
-        }
-
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -149,8 +134,7 @@ class CustomRelation extends Relation
      * Execute the query as a "select" statement.
      */
     /**
-     * @param array<int, string>|string $columns
-     *
+     * @param  array<int, string>|string  $columns
      * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection

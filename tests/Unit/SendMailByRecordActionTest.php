@@ -9,9 +9,6 @@ use Modules\Xot\Actions\Mail\SendMailByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('xot');
-it('throws if record has no email', function (): void {
-    $record = new class extends Model {
 uses(TestCase::class);
 
 it('throws if record has no email', function (): void {
@@ -24,11 +21,6 @@ it('throws if record has no email', function (): void {
 
         public function myLogs(): object
         {
-            return new class {
-                /** @param array<string, mixed> $data */
-                public function create(array $data): void
-                {
-                }
             return new class
             {
                 /** @param array<string, mixed> $data */

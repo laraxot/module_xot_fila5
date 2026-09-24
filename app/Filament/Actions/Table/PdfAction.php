@@ -5,8 +5,6 @@ declare(strict_types=1);
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Filament\Actions\Table;
 
 use Illuminate\Database\Eloquent\Model;

@@ -8,7 +8,8 @@ use Modules\Xot\Datas\ArticleData;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('xot');
+uses(TestCase::class);
+
 describe('Article Data', function (): void {
     test('can create article data with defaults', function (): void {
         $data = ArticleData::make();

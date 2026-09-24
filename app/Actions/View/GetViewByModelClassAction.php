@@ -29,6 +29,5 @@ class GetViewByModelClassAction
         }
         
         return $view;
-        return $module_low.'::'.$model_name.$suffix;
     }
 }

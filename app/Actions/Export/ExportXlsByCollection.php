@@ -43,16 +43,6 @@ class ExportXlsByCollection
         $stringFields = $fields;
         $export = new CollectionExport(
             collection: $collection,
-        // Assicuriamo che $fields sia un array di stringhe
-        $stringFields = array_map(fn (mixed $field): string => (string) $field, array_values($fields));
-
-        /** @var Collection<int, mixed> $supportCollection */
-        $supportCollection = $collection instanceof EloquentCollection
-            ? Collection::make($collection->values()->all())
-            : Collection::make($collection->values()->all());
-
-        $export = new CollectionExport(
-            collection: $supportCollection,
             transKey: $transKey,
             fields: $stringFields,
         );
@@ -96,11 +86,6 @@ class ExportXlsByCollection
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach (array_values($fields) as $col => $field) {
-     * @param  array<int, string>  $fields  I campi da utilizzare come intestazioni
-     */
-    protected function writeHeader(Worksheet $sheet, array $fields): void
-    {
-        foreach ($fields as $col => $field) {
             $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
         }
     }
@@ -122,9 +107,6 @@ class ExportXlsByCollection
                 $value = $this->extractValue($data, $path);
                 $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
                 $col++;
-            foreach ($fields as $col => $field) {
-                $value = $this->extractValue($data, $field);
-                $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
             }
             $row++;
         }

@@ -10,7 +10,8 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('xot');
+uses(TestCase::class);
+
 beforeEach(function (): void {
     // markTestSkipped() e' public static su PHPUnit\Framework\Assert: chiamarla via la
     // classe evita di dipendere dal $this tipizzato da Pest come TestCall, che espone
@@ -127,8 +128,8 @@ describe('Module Business Logic', function (): void {
 
         Assert::assertTrue((bool) $enabledModule->enabled);
         Assert::assertFalse((bool) $disabledModule->enabled);
-        Assert::assertTrue(true === $enabledModule->enabled);
-        Assert::assertTrue(false === $disabledModule->enabled);
+        Assert::assertTrue($enabledModule->enabled === true);
+        Assert::assertTrue($disabledModule->enabled === false);
     });
 
     test('can manage module metadata', function (): void {

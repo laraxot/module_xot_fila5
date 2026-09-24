@@ -10,7 +10,8 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 use function Safe\preg_match_all;
 
-uses(TestCase::class)->group('xot');
+uses(TestCase::class);
+
 /**
  * In Filament 5 `->options()` accetta la **classe** dell'enum.
  *

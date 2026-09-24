@@ -198,12 +198,6 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
-        } catch (\Throwable) {
-            return $this->fallbackPublicAssetUrl($this->logo_header_dark);
-        }
-    }
-
-    /**
      * Never turn `module::img/x.png` into an HTTP path: browsers 404 on it.
      * If AssetAction already copied the file, reuse the public relative path.
      */
@@ -294,10 +288,6 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
-     * Get the theme colors.
-     * This method reflects the semantic purpose of getting theme colors,
-     * rather than exposing the raw color data structure.
-     *
      * @return array<string, string>
      */
     public function getThemeColors(): array

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Tests\TestCase;
@@ -19,21 +18,12 @@ test('un override di getTableFilters viene onorato', function (): void {
 test('senza override si ricade sul default vuoto', function (): void {
     $fixture = new class
     {
-    $fixture = new class {
         use HasXotTable;
 
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
         public function getTableColumns(): array
-    $fixture = new class
-    {
-
-        public string $tableSearch = '';
-
-        /** @return array<string, mixed> */
-        /** @return array<string, \Filament\Tables\Columns\Column> */
-    public function getTableColumns(): array
         {
             return [];
         }

@@ -332,7 +332,6 @@ return [
             'icon' => 'save',
             'tooltip' => 'save',
         ],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',

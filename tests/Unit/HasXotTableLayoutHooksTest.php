@@ -33,6 +33,7 @@ test('getTableFiltersLayout default e override', function (): void {
 
     $custom = new class
     {
+        use HasXotTable;
 
         public string $tableSearch = '';
 
@@ -55,6 +56,7 @@ test('getTableFiltersLayout default e override', function (): void {
 test('getTableRecordActionsPosition default e override', function (): void {
     $default = new class
     {
+        use HasXotTable;
 
         public string $tableSearch = '';
 
@@ -70,6 +72,7 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
     $custom = new class
     {
+        use HasXotTable;
 
         public string $tableSearch = '';
 

@@ -10,9 +10,6 @@ use ReflectionClass;
 use function Safe\file_get_contents;
 
 /**
-
-
-/*
  * Guardia della regola docs/wiki/rules/xot-table-method-names.md:
  * `table()` non decide, chiede — e lo chiede direttamente all'hook.
  *
