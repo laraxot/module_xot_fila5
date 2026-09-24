@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_IRIpto
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: underscore-docs-rule
@@ -7,6 +12,13 @@ canonical: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_noMCHo
+>>>>>>> laraxot/dev
 # Underscore Directories Rule - No _docs/
 
 ## Regola Fondamentale
@@ -105,4 +117,21 @@ find laravel/Modules -name ".gitignore" -exec grep "_docs/" {} \;
 - Git Convention: Underscore prefix = temporary
 - Laravel Convention: Use `docs/`, not `_docs/`
 - Clean Code: No temporary files in repository
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_IRIpto
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+---
+module: theme
+topic: underscore-docs-rule
+canonical: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
+>>>>>>> .merge_file_noMCHo
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

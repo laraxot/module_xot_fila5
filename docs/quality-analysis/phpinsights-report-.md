@@ -1,6 +1,18 @@
 # PHP Insights Analysis Report - Xot Module
 
+<<<<<<< HEAD
 **Date:** 2025-11-12
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_17tmr3
+**Date:** 2025-11-12
+=======
+=======
+=======
+**Date:** 2025-11-12
+>>>>>>> .merge_file_iyk5vW
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Module:** Xot (Core Module)
 **Tools:** phpmd 2.x, phpinsights 2.x, phpstan level 10
 
@@ -88,6 +100,7 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
+<<<<<<< HEAD
 protected $fillable;
 <<<<<<< HEAD
 =======
@@ -95,6 +108,22 @@ protected $fillable;
 protected array $fillable;
 =======
 >>>>>>> 7f6cf6be (.)
+=======
+<<<<<<< .merge_file_17tmr3
+<<<<<<< HEAD
+protected $fillable;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_iyk5vW
+<<<<<<< HEAD
+protected array $fillable;
+=======
+protected $fillable;
+>>>>>>> laraxot/dev
+=======
+protected array $fillable;
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -210,11 +239,26 @@ protected array $fillable;
 
 **Next Review:** After Phase 1 completion
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_17tmr3
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 **Last Updated:** 2025-11-12 08:15 UTC
 =======
 <<<<<<< HEAD
 **Last Updated:** 2025-11-12 08:15 UTC
 =======
+<<<<<<< HEAD
 **Last Updated:** 2025-11-12 08:15 UTC
 >>>>>>> 7f6cf6be (.)
+=======
+**
+>>>>>>> .merge_file_iyk5vW
+=======
+**Last Updated:** 2025-11-12 08:15 UTC
+>>>>>>> laraxot/dev
+=======
+**
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

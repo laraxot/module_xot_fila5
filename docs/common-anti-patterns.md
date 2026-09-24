@@ -329,9 +329,19 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         // Filament methods should not be static
@@ -860,9 +870,19 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         // Filament methods should not be static

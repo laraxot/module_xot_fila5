@@ -64,7 +64,19 @@ function classesExtendingFilamentDirectly(): array
     );
 
     foreach ($iterator as $fileInfo) {
+<<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+<<<<<<< .merge_file_BWtZ9P
+<<<<<<< HEAD
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+>>>>>>> laraxot/dev
+=======
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+>>>>>>> .merge_file_ICsjQK
+>>>>>>> laraxot/dev
             continue;
         }
 
@@ -82,7 +94,19 @@ function classesExtendingFilamentDirectly(): array
         $source = file_get_contents($path);
         $match = [];
 
+<<<<<<< HEAD
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
+=======
+<<<<<<< .merge_file_BWtZ9P
+<<<<<<< HEAD
+        if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
+=======
+        if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
+>>>>>>> laraxot/dev
+=======
+        if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
+>>>>>>> .merge_file_ICsjQK
+>>>>>>> laraxot/dev
             continue;
         }
 
@@ -94,7 +118,19 @@ function classesExtendingFilamentDirectly(): array
 
         // `extends TextColumn` dove TextColumn è un alias di import di una XotBase
         // non è una violazione: conta cosa importa, non come lo chiama.
+<<<<<<< HEAD
         if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
+=======
+<<<<<<< .merge_file_BWtZ9P
+<<<<<<< HEAD
+        if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
+=======
+        if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
+>>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
+>>>>>>> .merge_file_ICsjQK
+>>>>>>> laraxot/dev
             continue;
         }
 

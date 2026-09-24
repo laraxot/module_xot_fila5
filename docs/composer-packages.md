@@ -1,8 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_uvlSxy
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 //---- pacchetto per gli stati, si possono utilizzare piu' campi per lo stato
 https://github.com/asantibanez/laravel-eloquent-state-machines
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fGZxd1
+>>>>>>> laraxot/dev
 ---
 title: 'composer_packages'
 module: Xot
@@ -21,4 +33,17 @@ updated: 2026-08-24
 
 //---- pacchetto per gli stati, si possono utilizzare piu' campi per lo stato
 https://github.com/asantibanez/laravel-eloquent-state-machines
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_uvlSxy
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+
+//---- pacchetto per gli stati, si possono utilizzare piu' campi per lo stato
+https://github.com/asantibanez/laravel-eloquent-state-machines
+>>>>>>> .merge_file_fGZxd1
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

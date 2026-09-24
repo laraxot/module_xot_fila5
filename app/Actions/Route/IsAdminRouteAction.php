@@ -17,12 +17,36 @@ class IsAdminRouteAction
             return (bool) $params['in_admin'];
         }
 
+<<<<<<< HEAD
         if (request()->segment(1) === 'admin') {
+=======
+<<<<<<< .merge_file_qqeQNf
+<<<<<<< HEAD
+        if (request()->segment(1) === 'admin') {
+=======
+        if ('admin' === request()->segment(1)) {
+>>>>>>> laraxot/dev
+=======
+        if ('admin' === request()->segment(1)) {
+>>>>>>> .merge_file_LXWvod
+>>>>>>> laraxot/dev
             return true;
         }
 
         $segments = request()->segments();
 
+<<<<<<< HEAD
         return $segments !== [] && $segments[0] === 'livewire' && session('in_admin', false) === true;
+=======
+<<<<<<< .merge_file_qqeQNf
+<<<<<<< HEAD
+        return $segments !== [] && $segments[0] === 'livewire' && session('in_admin', false) === true;
+=======
+        return [] !== $segments && 'livewire' === $segments[0] && true === session('in_admin', false);
+>>>>>>> laraxot/dev
+=======
+        return [] !== $segments && 'livewire' === $segments[0] && true === session('in_admin', false);
+>>>>>>> .merge_file_LXWvod
+>>>>>>> laraxot/dev
     }
 }

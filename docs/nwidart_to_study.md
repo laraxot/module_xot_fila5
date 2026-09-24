@@ -30,6 +30,27 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_iL4tUU
+=======
+<<<<<<< .merge_file_epPRhw
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_XiSHqv
+
+
+## Contenuto originale (txt)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_iL4tUU
+=======
+>>>>>>> .merge_file_J2Mz7N
+>>>>>>> .merge_file_XiSHqv
+>>>>>>> laraxot/dev
 
 
 ## Contenuto originale (txt)
@@ -41,6 +62,10 @@ https://github.com/HichemTab-tech/LaravelFS
 =======
 
 >>>>>>> .merge_file_bMOZuq
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 ---
@@ -51,3 +76,22 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_iL4tUU
+=======
+<<<<<<< .merge_file_epPRhw
+=======
+=======
+>>>>>>> .merge_file_XiSHqv
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_iL4tUU
+=======
+>>>>>>> .merge_file_J2Mz7N
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XiSHqv
+>>>>>>> laraxot/dev

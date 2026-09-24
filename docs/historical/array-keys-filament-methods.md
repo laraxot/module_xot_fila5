@@ -63,9 +63,25 @@ public function getTableBulkActions(): array
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
 {
     return [
@@ -104,9 +120,25 @@ public function getTableActions(): array
  * @return array<mixed, Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
 {
     // ...
@@ -155,9 +187,25 @@ public function getTableBulkActions(): array
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ePWBMi
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ncpdAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ePWBMi
 >>>>>>> laraxot/dev
 {
     return [

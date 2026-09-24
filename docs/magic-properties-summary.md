@@ -17,10 +17,24 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_fS5TvL
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 ### ✅ <nome progetto> Module
 =======
 ### ✅ healthcare_app Module
 ### ✅ ExternalProject Module
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+### ✅ <nome progetto> Module
+>>>>>>> laraxot/dev
+=======
+### ✅ <nome progetto> Module
+>>>>>>> .merge_file_Mbrif3
 >>>>>>> laraxot/dev
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
@@ -67,7 +81,21 @@ Files generally have good scores with minor style issues:
 **✅ COMPLETED**: All `property_exists()` usage in Eloquent models has been eliminated and replaced with proper magic property checks.
 
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_fS5TvL
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> laraxot/dev
+=======
+**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> .merge_file_Mbrif3
 >>>>>>> laraxot/dev

@@ -615,12 +615,23 @@ jobs:
         with:
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_8xy9zP
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
           php-version: 8.3
 =======
 <<<<<<< HEAD
           php-
 >>>>>>> 28b0298a (fix: phpstan issues)
+<<<<<<< HEAD
+=======
+=======
+          php-
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
       - name: Install dependencies
         run: composer install
       - name: Run PHPStan
@@ -710,6 +721,10 @@ class ContactNotificationService
 ```
 
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 ---
 
@@ -2049,6 +2064,12 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.3
+<<<<<<< HEAD
+=======
+=======
+          php-
+>>>>>>> .merge_file_cY3QVS
+>>>>>>> laraxot/dev
       - name: Install dependencies
         run: composer install
       - name: Run PHPStan
@@ -2137,8 +2158,17 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
+<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> 7f6cf6be (.)
+=======
+<<<<<<< HEAD
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

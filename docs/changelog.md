@@ -1,6 +1,22 @@
 # Changelog - Modulo Xot
 
+<<<<<<< HEAD
 ## [2025-06-04] - Sessione Fix Critica
+=======
+<<<<<<< HEAD
+## [2025-06-04] - Sessione Fix Critica
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Tutte le modifiche significative al modulo Xot sono documentate in questo file.
+
+Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+=======
+## [2025-06-04] - Sessione Fix Critica
+>>>>>>> 64619e34 (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 All notable changes to `:package_name` will be documented in this file.
 
@@ -60,6 +76,20 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## [1.1.0] - 2025-10-29
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- Date in formato `[YYYY-MM-DD]`
+- Categorie: Added, Changed, Deprecated, Removed, Fixed, Security
+- Link relativi ai documenti di dettaglio
+- Focus su COSA è cambiato e PERCHÉ
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -123,6 +153,13 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## [1.1.0] - 2025-10-29
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### Fixed
 - **HasXotTable.php** - Risolti if statement duplicati (3x)
 - **XotBaseChartWidget.php** - Rimossi metodi getHeading() duplicati
@@ -185,14 +222,42 @@ All notable changes to `:package_name` will be documented in this file.
 ## 🔗 Collegamenti
 
 ### Documenti Correlati
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+- [README.md](./docs/readme.md) - Entry point
+- [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
+- [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
+- [Merge Conflict Resolution](./docs/merge-conflict-resolution.md) - Latest fix
+>>>>>>> 64619e34 (.)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Repository
 - **Branch:** develop
@@ -204,5 +269,22 @@ All notable changes to `:package_name` will be documented in this file.
 
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
+<<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
+=======
+<<<<<<< HEAD
+**Versioning:** [Semantic Versioning](https://semver.org/)
+**Versioning:** [Semantic Versioning](https://semver.org/)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Versioning:** [Semantic Versioning](https://semver.org/)
+=======
+**Versioning:** [Semantic Versioning](https://semver.org/)
+>>>>>>> 64619e34 (.)
+=======
+**Versioning:** [Semantic Versioning](https://semver.org/)
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

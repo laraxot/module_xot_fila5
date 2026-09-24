@@ -1,6 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_j17dva
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_1S7iHZ
 >>>>>>> laraxot/dev
 # Analisi Completa del Codice - Sistema Laraxot
 
@@ -181,9 +193,23 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j17dva
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_1S7iHZ
 >>>>>>> laraxot/dev
 {
     return [
@@ -194,9 +220,23 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j17dva
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_1S7iHZ
 >>>>>>> laraxot/dev
 {
     return [
@@ -294,9 +334,23 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_j17dva
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_1S7iHZ
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),
@@ -429,7 +483,16 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
+=======
+<<<<<<< .merge_file_j17dva
+<<<<<<< HEAD
+- [Architettura Moduli](architecture.md)
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> .merge_file_1S7iHZ
+>>>>>>> laraxot/dev
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -448,18 +511,35 @@ return [
 - **N+1 Queries**: 0 problemi
 - **Complexity**: Tutti i metodi <8
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+---
+
+**Data Analisi**: 2025-01-06  
+**Analista**: AI Code Review System  
+**Priorità**: CRITICA - Richiede intervento immediato  
+**Stima Effort**: 40-60 ore di refactoring
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: comprehensive_code_analysis
 canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+<<<<<<< HEAD
 >>>>>>> 28b0298a (fix: phpstan issues)
 ---
 
 <<<<<<< HEAD
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+=======
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+<<<<<<< .merge_file_j17dva
+>>>>>>> laraxot/dev
 
 ---
 
@@ -1334,6 +1414,11 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
@@ -1355,11 +1440,28 @@ return [
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
+<<<<<<< HEAD
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Data Analisi**: 2025-01-06  
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+=======
+>>>>>>> .merge_file_1S7iHZ
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

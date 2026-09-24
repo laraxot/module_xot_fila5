@@ -1,10 +1,22 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_OsuWnA
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # _macro
 
 <!-- Contenuto migrato da _docs/_macro.txt -->
 
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iP95kB
+>>>>>>> laraxot/dev
 ---
 title: 'Macro — risorse esterne'
 module: Xot
@@ -25,4 +37,19 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://www.larashout.com/laravel-macros-extending-laravels-core-classes>
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_OsuWnA
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+# _macro
+
+<!-- Contenuto migrato da _docs/_macro.txt -->
+
+https://www.larashout.com/laravel-macros-extending-laravels-core-classes
+>>>>>>> .merge_file_iP95kB
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

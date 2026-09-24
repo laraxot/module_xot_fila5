@@ -2,6 +2,11 @@
 
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_NfRsvc
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 ## [2025-06-04] - Sessione Fix Critica
 
@@ -65,6 +70,13 @@ All notable changes to `:package_name` will be documented in this file.
 
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kUYz4X
 >>>>>>> laraxot/dev
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
@@ -197,6 +209,11 @@ All notable changes to `:package_name` will be documented in this file.
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_NfRsvc
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
@@ -204,6 +221,13 @@ All notable changes to `:package_name` will be documented in this file.
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kUYz4X
 >>>>>>> laraxot/dev
 
 ### Repository
@@ -217,6 +241,11 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_NfRsvc
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -312,4 +341,11 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 - Focus su COSA è cambiato e PERCHÉ
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kUYz4X
 >>>>>>> laraxot/dev

@@ -12,7 +12,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  MockInterface&Table  $tableMock
+=======
+ * @param MockInterface&Table $tableMock
+ *
+>>>>>>> laraxot/dev
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface

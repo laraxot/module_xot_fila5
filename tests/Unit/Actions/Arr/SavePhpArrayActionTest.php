@@ -29,7 +29,11 @@ beforeEach(function () use (&$tempDir): void {
 });
 
 afterEach(function () use (&$tempDir): void {
+<<<<<<< HEAD
     if ($tempDir !== '' && file_exists($tempDir)) {
+=======
+    if ('' !== $tempDir && file_exists($tempDir)) {
+>>>>>>> laraxot/dev
         $files = glob($tempDir.'/*');
         foreach ($files as $file) {
             Assert::assertIsString($file);

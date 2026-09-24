@@ -17,7 +17,19 @@ class BuildNestedRouteNameAction
         $action = is_string($params['act'] ?? null) ? $params['act'] : 'show';
         $parts = inAdmin($params) ? ['admin'] : [];
 
+<<<<<<< HEAD
         for ($i = 0; $i <= $depth; $i++) {
+=======
+<<<<<<< .merge_file_wxWbGQ
+<<<<<<< HEAD
+        for ($i = 0; $i <= $depth; $i++) {
+=======
+        for ($i = 0; $i <= $depth; ++$i) {
+>>>>>>> laraxot/dev
+=======
+        for ($i = 0; $i <= $depth; ++$i) {
+>>>>>>> .merge_file_ZbC2mV
+>>>>>>> laraxot/dev
             $parts[] = 'container'.$i;
         }
 

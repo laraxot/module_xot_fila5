@@ -4,12 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Trend\Adapters;
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_zjCaEy
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 use Error;
 use Override;
 
 class PgsqlAdapter extends AbstractAdapter
 {
     #[Override]
+<<<<<<< HEAD
+=======
+=======
+class PgsqlAdapter extends AbstractAdapter
+{
+    #[\Override]
+>>>>>>> laraxot/dev
+=======
+class PgsqlAdapter extends AbstractAdapter
+{
+    #[\Override]
+>>>>>>> .merge_file_1JdeD1
+>>>>>>> laraxot/dev
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {
@@ -18,7 +36,19 @@ class PgsqlAdapter extends AbstractAdapter
             'day' => 'YYYY-MM-DD',
             'month' => 'YYYY-MM',
             'year' => 'YYYY',
+<<<<<<< HEAD
             default => throw new Error('Invalid interval.'),
+=======
+<<<<<<< .merge_file_zjCaEy
+<<<<<<< HEAD
+            default => throw new Error('Invalid interval.'),
+=======
+            default => throw new \Error('Invalid interval.'),
+>>>>>>> laraxot/dev
+=======
+            default => throw new \Error('Invalid interval.'),
+>>>>>>> .merge_file_1JdeD1
+>>>>>>> laraxot/dev
         };
 
         return sprintf("to_char(%s, '%s')", $column, $format);

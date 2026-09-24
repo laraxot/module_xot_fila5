@@ -1,5 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MQuCSv
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 module: theme
 topic: web-scraping
 canonical: ../../../Themes/docs/shared-components/web_scraping.txt
@@ -7,6 +12,13 @@ canonical: ../../../Themes/docs/shared-components/web_scraping.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/web_scraping.txt
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fPjaMt
+>>>>>>> laraxot/dev
 title: 'web_scraping'
 module: Xot
 type: reference
@@ -26,4 +38,20 @@ Introduction to Web Scraping With Laravel
 https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a217e1444f7c
 
 https://sergeyzhuk.me/2018/02/12/fast-webscraping-with-reactphp/
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MQuCSv
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+module: theme
+topic: web-scraping
+canonical: ../../../Themes/docs/shared-components/web_scraping.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/web_scraping.txt
+>>>>>>> .merge_file_fPjaMt
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

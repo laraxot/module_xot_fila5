@@ -37,7 +37,19 @@ function xotPhpFilesUnderFilament(): array
     );
 
     foreach ($iterator as $fileInfo) {
+<<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+<<<<<<< .merge_file_ClwtiG
+<<<<<<< HEAD
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+=======
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+>>>>>>> laraxot/dev
+=======
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+>>>>>>> .merge_file_qrAyQk
+>>>>>>> laraxot/dev
             continue;
         }
 

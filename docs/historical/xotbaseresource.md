@@ -26,9 +26,25 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xxTppR
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_wPaPKR
+>>>>>>> laraxot/dev
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xxTppR
+=======
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wPaPKR
 >>>>>>> laraxot/dev
 ```
 
@@ -64,9 +80,25 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xxTppR
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_wPaPKR
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xxTppR
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wPaPKR
 >>>>>>> laraxot/dev
     {
         return [

@@ -4,6 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
+<<<<<<< HEAD
+=======
+// Xot — domain PHP (claude-audit documentation ratio).
+// Xot — domain PHP (claude-audit documentation ratio).
+// Xot — domain PHP (claude-audit documentation ratio).
+// Xot — domain PHP (claude-audit documentation ratio).
+// Xot — domain PHP (claude-audit documentation ratio).
+// Xot — domain PHP (claude-audit documentation ratio).
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships as VendorHasRecursiveRelationships;
@@ -13,6 +23,10 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Descendants;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\RootAncestor;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\RootAncestorOrSelf;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
+<<<<<<< HEAD
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> laraxot/dev
 
 /**
  * Wrapper trait that re-exposes the vendor recursive relationship helpers
@@ -39,6 +53,10 @@ trait TypedHasRecursiveRelationships
         childrenAndSelf as protected vendorChildrenAndSelf;
         descendants as protected vendorDescendants;
         descendantsAndSelf as protected vendorDescendantsAndSelf;
+<<<<<<< HEAD
+=======
+        parent as protected vendorParent;
+>>>>>>> laraxot/dev
         parentAndSelf as protected vendorParentAndSelf;
         rootAncestor as protected vendorRootAncestor;
         rootAncestorOrSelf as protected vendorRootAncestorOrSelf;
@@ -51,44 +69,93 @@ trait TypedHasRecursiveRelationships
 
     public function getParentKeyName(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetParentKeyName();
+=======
+        $value = $this->vendorGetParentKeyName();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function getQualifiedParentKeyName(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetQualifiedParentKeyName();
+=======
+        $value = $this->vendorGetQualifiedParentKeyName();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function getLocalKeyName(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetLocalKeyName();
+=======
+        $value = $this->vendorGetLocalKeyName();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function getQualifiedLocalKeyName(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetQualifiedLocalKeyName();
+=======
+        $value = $this->vendorGetQualifiedLocalKeyName();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function getDepthName(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetDepthName();
+=======
+        $value = $this->vendorGetDepthName();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function getPathName(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetPathName();
+=======
+        $value = $this->vendorGetPathName();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function getPathSeparator(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetPathSeparator();
+=======
+        $value = $this->vendorGetPathSeparator();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -96,109 +163,235 @@ trait TypedHasRecursiveRelationships
      */
     public function getCustomPaths(): array
     {
+<<<<<<< HEAD
         /** @var array<int|string, string> $paths */
         return $this->vendorGetCustomPaths();
+=======
+        $paths = $this->vendorGetCustomPaths();
+        Assert::isArray($paths);
+
+        return $paths;
+>>>>>>> laraxot/dev
     }
 
     public function getExpressionName(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetExpressionName();
+=======
+        $value = $this->vendorGetExpressionName();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function ancestors(): Ancestors
     {
+<<<<<<< HEAD
         /** @var Ancestors $relation */
         return $this->vendorAncestors();
+=======
+        $relation = $this->vendorAncestors();
+        Assert::isInstanceOf($relation, Ancestors::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function ancestorsAndSelf(): Ancestors
     {
+<<<<<<< HEAD
         /** @var Ancestors $relation */
         return $this->vendorAncestorsAndSelf();
+=======
+        $relation = $this->vendorAncestorsAndSelf();
+        Assert::isInstanceOf($relation, Ancestors::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function bloodline(): Bloodline
     {
+<<<<<<< HEAD
         /** @var Bloodline $relation */
         return $this->vendorBloodline();
+=======
+        $relation = $this->vendorBloodline();
+        Assert::isInstanceOf($relation, Bloodline::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function children(): HasMany
     {
+<<<<<<< HEAD
         /** @var HasMany $relation */
         return $this->vendorChildren();
+=======
+        $relation = $this->vendorChildren();
+        Assert::isInstanceOf($relation, HasMany::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function childrenAndSelf(): Descendants
     {
+<<<<<<< HEAD
         /** @var Descendants $relation */
         return $this->vendorChildrenAndSelf();
+=======
+        $relation = $this->vendorChildrenAndSelf();
+        Assert::isInstanceOf($relation, Descendants::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function descendants(): Descendants
     {
+<<<<<<< HEAD
         /** @var Descendants $relation */
         return $this->vendorDescendants();
+=======
+        $relation = $this->vendorDescendants();
+        Assert::isInstanceOf($relation, Descendants::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function descendantsAndSelf(): Descendants
     {
+<<<<<<< HEAD
         /** @var Descendants $relation */
         return $this->vendorDescendantsAndSelf();
+=======
+        $relation = $this->vendorDescendantsAndSelf();
+        Assert::isInstanceOf($relation, Descendants::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function parent(): BelongsTo
     {
+<<<<<<< HEAD
         /** @var BelongsTo $relation */
         return $this->VendorHasRecursiveRelationships::parent();
+=======
+        $relation = $this->vendorParent();
+        Assert::isInstanceOf($relation, BelongsTo::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function parentAndSelf(): Ancestors
     {
+<<<<<<< HEAD
         /** @var Ancestors $relation */
         return $this->vendorParentAndSelf();
+=======
+        $relation = $this->vendorParentAndSelf();
+        Assert::isInstanceOf($relation, Ancestors::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function rootAncestor(): RootAncestor
     {
+<<<<<<< HEAD
         /** @var RootAncestor $relation */
         return $this->vendorRootAncestor();
+=======
+        $relation = $this->vendorRootAncestor();
+        Assert::isInstanceOf($relation, RootAncestor::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function rootAncestorOrSelf(): RootAncestorOrSelf
     {
+<<<<<<< HEAD
         /** @var RootAncestorOrSelf $relation */
         return $this->vendorRootAncestorOrSelf();
+=======
+        $relation = $this->vendorRootAncestorOrSelf();
+        Assert::isInstanceOf($relation, RootAncestorOrSelf::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function siblings(): Siblings
     {
+<<<<<<< HEAD
         /** @var Siblings $relation */
         return $this->vendorSiblings();
+=======
+        $relation = $this->vendorSiblings();
+        Assert::isInstanceOf($relation, Siblings::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function siblingsAndSelf(): Siblings
     {
+<<<<<<< HEAD
         /** @var Siblings $relation */
         return $this->vendorSiblingsAndSelf();
+=======
+        $relation = $this->vendorSiblingsAndSelf();
+        Assert::isInstanceOf($relation, Siblings::class);
+
+        return $relation;
+>>>>>>> laraxot/dev
     }
 
     public function getFirstPathSegment(): string
     {
+<<<<<<< HEAD
         /** @var string $value */
         return $this->vendorGetFirstPathSegment();
+=======
+        $value = $this->vendorGetFirstPathSegment();
+        Assert::string($value);
+
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     public function hasNestedPath(): bool
     {
+<<<<<<< HEAD
         /** @var bool $result */
         return $this->vendorHasNestedPath();
+=======
+        $result = $this->vendorHasNestedPath();
+        Assert::boolean($result);
+
+        return $result;
+>>>>>>> laraxot/dev
     }
 
     public function isIntegerAttribute(string $attribute): bool
     {
+<<<<<<< HEAD
         /** @var bool $result */
         return $this->vendorIsIntegerAttribute($attribute);
+=======
+        $result = $this->vendorIsIntegerAttribute($attribute);
+        Assert::boolean($result);
+
+        return $result;
+>>>>>>> laraxot/dev
     }
 }

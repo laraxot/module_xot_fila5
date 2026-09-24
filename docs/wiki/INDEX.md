@@ -56,14 +56,75 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Completamento piattaforma
 
 - [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md) — **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
+<<<<<<< HEAD
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_xoWcN5
+=======
+<<<<<<< .merge_file_YRQClO
+- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
+=======
+- [phpstan-best-practices.md](./phpstan-best-practices.md)
+>>>>>>> laraxot/dev
+=======
+- [phpstan-best-practices.md](./phpstan-best-practices.md)
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FEgV6P
+- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
+=======
+<<<<<<< HEAD
+- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
+=======
+- [phpstan-best-practices.md](./phpstan-best-practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_xoWcN5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_EyOY49
+>>>>>>> .merge_file_FEgV6P
+>>>>>>> laraxot/dev
 
 ## Compiled Pages
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+<<<<<<< HEAD
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_xoWcN5
+| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_YRQClO
+=======
+| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+<<<<<<< HEAD
+| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_EyOY49
+>>>>>>> .merge_file_FEgV6P
+| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_xoWcN5
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_YRQClO
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_EyOY49
+>>>>>>> .merge_file_FEgV6P
+>>>>>>> laraxot/dev
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |

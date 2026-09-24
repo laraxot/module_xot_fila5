@@ -1,6 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_CDBGXC
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_QfUtb3
+>>>>>>> laraxot/dev
 ---
 title: "Agents"
 type: reference
@@ -9,8 +20,15 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 

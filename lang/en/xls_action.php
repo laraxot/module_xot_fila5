@@ -18,7 +18,11 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
+<<<<<<< HEAD
         'icon' => 'heroicon-o-puzzle-piece',
+=======
+        'icon' => 'xot-files.xls',
+>>>>>>> laraxot/dev
         'sort' => 100,
     ],
     'label' => 'Missing Label',

@@ -1,6 +1,13 @@
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+## Data: [DATE]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Problema Identificato
 
@@ -157,4 +164,12 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 - Utilizzare sempre template generics per modelli che estendono BaseModel
 - Tipizzare sempre proprietà array come `list<string>` o `array<string, mixed>`
 - Testare sempre con PHPStan dopo modifiche ai modelli base
+<<<<<<< HEAD
 - Implementare test di regressione per validare le correzioni
+=======
+<<<<<<< HEAD
+- Implementare test di regressione per validare le correzioni
+=======
+- Implementare test di regressione per validare le correzioni
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

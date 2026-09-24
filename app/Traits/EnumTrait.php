@@ -110,8 +110,13 @@ trait EnumTrait
      * ```
      */
     /**
+<<<<<<< HEAD
      * @param  Blueprint  $table  The table blueprint
      * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
+=======
+     * @param Blueprint             $table     The table blueprint
+     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
+>>>>>>> laraxot/dev
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -120,7 +125,11 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
+<<<<<<< HEAD
             if ($migration === null || ! $migration->hasColumn($name)) {
+=======
+            if (null === $migration || ! $migration->hasColumn($name)) {
+>>>>>>> laraxot/dev
                 $definition($table); // @phpstan-ignore callable.nonCallable
             }
         }
