@@ -2,6 +2,13 @@
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
+## Misura 2026-09-24 (sera) — analyse Modules zero (restaurant_fila5)
+
+`cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` →
+**`[OK] No errors`** (cold cache). Bootstrap sbloccato da marker + path Windows
+backslash; errori app/test risolti senza ignore. Write-back root:
+[phpstan-modules-swarm-session](../../../../docs/wiki/memories/phpstan-modules-swarm-session.md).
+
 ## Misura 2026-09-24 (notte) — certify no-path + harness worktree
 
 `./vendor/bin/phpstan analyse` (no path CLI): **`[OK] No errors` EXIT 0**.
