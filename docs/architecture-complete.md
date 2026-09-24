@@ -144,13 +144,9 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
@@ -589,13 +585,9 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -674,13 +666,9 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -886,8 +874,4 @@ The Xot module is a comprehensive foundation providing:
 
 **Document Version:** 1.0
 **Generated:** 2025-11-19
-<<<<<<< HEAD
 **Author:** Claude Code Analysis
-=======
-**Author:** Claude Code Analysis
->>>>>>> laraxot/dev
