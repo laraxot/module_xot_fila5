@@ -95,6 +95,7 @@ class ColumnBuilder
     /**
      * Status badge column with standard colors.
      *
+<<<<<<< HEAD
      * <<<<<<< .merge_file_EWEHSW
      *
      * @param array<string, string> $customColors Custom color mappings
@@ -109,6 +110,9 @@ class ColumnBuilder
      *                                            >>>>>>> laraxot/dev
      *                                            >>>>>>> .merge_file_aPYjex
      *                                            >>>>>>> .merge_file_Kk5VfB
+=======
+     * @param  array<string, string>  $customColors  Custom color mappings
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      */
     public static function statusBadge(array $customColors = []): TextColumn
     {
@@ -127,6 +131,7 @@ class ColumnBuilder
     /**
      * Priority badge column.
      *
+<<<<<<< HEAD
      * <<<<<<< .merge_file_EWEHSW
      *
      * @param array<string, string> $customColors Custom color mappings
@@ -141,6 +146,9 @@ class ColumnBuilder
      *                                            >>>>>>> laraxot/dev
      *                                            >>>>>>> .merge_file_aPYjex
      *                                            >>>>>>> .merge_file_Kk5VfB
+=======
+     * @param  array<string, string>  $customColors  Custom color mappings
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      */
     public static function priorityBadge(array $customColors = []): TextColumn
     {

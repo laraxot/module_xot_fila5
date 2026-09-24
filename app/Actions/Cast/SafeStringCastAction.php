@@ -16,6 +16,7 @@ class SafeStringCastAction
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
+<<<<<<< HEAD
      * <<<<<<< .merge_file_O8nWNS
      *
      * @param mixed $value Il valore da convertire
@@ -34,6 +35,9 @@ class SafeStringCastAction
      *
      * >>>>>>> .merge_file_DUu2RG
      *
+=======
+     * @param  mixed  $value  Il valore da convertire
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      * @return string Il valore convertito in string
      */
     public function execute(mixed $value): string
@@ -66,6 +70,7 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< HEAD
      * <<<<<<< .merge_file_O8nWNS
      *
      * @param mixed $value Il valore da convertire
@@ -84,6 +89,9 @@ class SafeStringCastAction
      *
      * >>>>>>> .merge_file_DUu2RG
      *
+=======
+     * @param  mixed  $value  Il valore da convertire
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      * @return string Il valore convertito in string
      */
     public static function cast(mixed $value): string

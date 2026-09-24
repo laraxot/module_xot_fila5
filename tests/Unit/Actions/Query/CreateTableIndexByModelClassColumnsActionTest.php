@@ -8,16 +8,11 @@ use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Query\CreateTableIndexByModelClassColumnsAction;
 use Modules\Xot\Models\XotBaseModel;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
 it('creates table index correctly', function (): void {
     // We use User model for testing as it surely has 'id' and 'email'
     // but we might want to avoid touching production tables.

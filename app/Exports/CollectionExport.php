@@ -114,39 +114,24 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     }
 
     /**
-     * @return array<int|string, mixed>
+     * @return list<string>
      */
     public function map(mixed $row): array
     {
-        if ($this->fields === null || empty($this->fields)) {
+        if ($this->fields === null || $this->fields === []) {
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
             return array_values(Arr::map($res, fn (mixed $value): string => self::castCell($value)));
         }
+
+        $data = [];
+        foreach ($this->fields as $key => $value) {
+            $path = \is_string($key) ? $key : $value;
+            $data[] = self::castCell(data_get($row, $path));
         }
 
         return $data;
-    }
-
-    /**
-     * Stessa cella per CollectionExport e XotBaseExporter (export_xls = export_xlsx).
-     */
-    public static function castCell(mixed $value): string
-    {
-        if ($value instanceof \BackedEnum) {
-            if (method_exists($value, 'getLabel')) {
-                return SafeStringCastAction::cast($value->getLabel());
-            }
-
-            return SafeStringCastAction::cast($value->value);
-        }
-
-        if (\is_object($value) && enum_exists($value::class) && method_exists($value, 'getLabel')) {
-            $value = $value->getLabel();
-        }
-
-        return SafeStringCastAction::cast($value);
     }
 
     /**

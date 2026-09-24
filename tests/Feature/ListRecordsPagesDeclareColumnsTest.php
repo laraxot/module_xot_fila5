@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 
 use function Safe\file_get_contents;

@@ -34,7 +34,6 @@ return [
         'queue_restart' => [
             'label' => 'Riavvia Code',
         ],
-<<<<<<< HEAD
         'composer_dump_autoload' => [
             'label' => 'Composer Dump Autoload',
         ],
@@ -42,8 +41,6 @@ return [
             'label' => 'Importa Vecchi Template Email/SMS',
             'modal_description' => 'Copia i contenuti email/SMS dalla vecchia tabella notify_themes verso mail_templates (il nuovo sistema di invio inviti). Operazione idempotente: rilanciarla aggiorna i template già migrati invece di duplicarli, sovrascrivendo eventuali modifiche fatte a mano dopo l\'ultima esecuzione.',
         ],
-=======
->>>>>>> .merge_file_9LLeNr
     ],
     'status' => [
         'completed' => 'Completato',
