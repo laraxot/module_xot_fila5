@@ -38,18 +38,24 @@ trait HasXotFormAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $parameters
      */
     public function getResourceUrl(?string $name = null, array $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?Model $tenant = null, bool $shouldGuessMissingParameters = true): string
     {
         if (filled($name) && ($name !== 'index') && method_exists($this, 'getRecord')) {
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * @param array<string, mixed> $parameters
      */
     public function getResourceUrl(?string $name = null, array $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?Model $tenant = null, bool $shouldGuessMissingParameters = true): string
     {
         if (filled($name) && ('index' !== $name) && method_exists($this, 'getRecord')) {
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             $parameters['record'] ??= $this->getRecord();
         }
 

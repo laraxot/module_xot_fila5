@@ -13,6 +13,7 @@ use Filament\Forms\Components\TextInput as FilamentTextInput;
  * This class wraps Filament's TextInput to provide a XotBase layer.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseTextInput extends FilamentTextInput {}
 =======
 <<<<<<< .merge_file_BaFbNs
@@ -22,12 +23,15 @@ abstract class XotBaseTextInput extends FilamentTextInput
 }
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 abstract class XotBaseTextInput extends FilamentTextInput
 {
 }
 =======
 abstract class XotBaseTextInput extends FilamentTextInput {}
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 abstract class XotBaseTextInput extends FilamentTextInput
@@ -35,3 +39,5 @@ abstract class XotBaseTextInput extends FilamentTextInput
 }
 >>>>>>> .merge_file_9CFC79
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

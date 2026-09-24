@@ -143,6 +143,7 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a predictable, maintainable way.
 =======
 <<<<<<< HEAD
@@ -151,3 +152,6 @@ This architecture creates a harmonious system where all components work together
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way.
+>>>>>>> 8d801bbe (Check & fix styling)

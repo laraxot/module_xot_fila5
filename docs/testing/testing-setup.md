@@ -137,6 +137,7 @@ abstract class TestCase extends BaseTestCase
 ## Important Rules
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -171,6 +172,8 @@ Then never repeat it again in the suite.
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Never Use RefreshDatabase
 
 The project uses `DatabaseTransactions` instead of `RefreshDatabase` because:

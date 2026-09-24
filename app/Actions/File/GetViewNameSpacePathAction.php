@@ -15,6 +15,7 @@ class GetViewNameSpacePathAction
     /**
      * Ottiene il percorso di un namespace di vista.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string $ns Il namespace della vista
@@ -35,6 +36,9 @@ class GetViewNameSpacePathAction
      * >>>>>>> .merge_file_e535D9
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param string $ns Il namespace della vista
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return string|null Il percorso del namespace o null se non trovato
      */

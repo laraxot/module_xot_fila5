@@ -5,30 +5,41 @@ declare(strict_types=1);
 namespace Modules\Xot\Datas;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+=======
+use Illuminate\Support\Str;
+use Livewire\Wireable;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 use function Safe\realpath;
 
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\realpath;
 
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Class Modules\Xot\Datas\XotData.
  * ----.
@@ -36,6 +47,10 @@ use function Safe\realpath;
 class XotData extends Data implements Wireable
 {
     use WireableData;
+<<<<<<< HEAD
+=======
+    use Concerns\XotDataProfileThemeAccessors;
+>>>>>>> 8d801bbe (Check & fix styling)
 
     public string $main_module = '';
 
@@ -94,7 +109,11 @@ class XotData extends Data implements Wireable
     public static function make(): self
     {
         if (! self::$instance) {
+<<<<<<< HEAD
             $data = app(GetTenantConfigArrayAction::class)->execute('xra');
+=======
+            $data = app(\Modules\Tenant\Actions\Config\GetTenantConfigArrayAction::class)->execute('xra');
+>>>>>>> 8d801bbe (Check & fix styling)
 
             self::$instance = self::from($data);
         }
@@ -135,10 +154,14 @@ class XotData extends Data implements Wireable
     {
         $user_class = $this->getUserClass();
 <<<<<<< HEAD
+<<<<<<< HEAD
         $userInstance = new $user_class;
 =======
         $userInstance = new $user_class();
 >>>>>>> laraxot/dev
+=======
+        $userInstance = new $user_class();
+>>>>>>> 8d801bbe (Check & fix styling)
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
@@ -147,10 +170,14 @@ class XotData extends Data implements Wireable
         $user = $user_class::query()->where('email', $email)->first();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($user === null) {
 =======
         if (null === $user) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $user) {
+>>>>>>> 8d801bbe (Check & fix styling)
             throw new \Exception('user not found for email '.$email);
         }
 
@@ -272,6 +299,7 @@ class XotData extends Data implements Wireable
         /* @var class-string<Model&ProfileContract> $class */
         return $class;
     }
+<<<<<<< HEAD
 
     public function getHomeController(): string
     {
@@ -558,4 +586,6 @@ class XotData extends Data implements Wireable
         // }
         return true;
     }
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 }

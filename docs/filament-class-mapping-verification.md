@@ -81,6 +81,7 @@ La regola "mai estendere Filament direttamente" sembra essere più stringente pe
 - Forms Components specifici (alcuni hanno base, altri no)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
 =======
 <<<<<<< HEAD
@@ -89,3 +90,6 @@ Potrebbe essere che Forms Components più "specializzati" siano accettabili este
 Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Potrebbe essere che Forms Components più "specializzati" siano accettabili estendendo direttamente Filament, mentre quelli "core" (Select, CheckboxList, Radio) dovrebbero avere base.
+>>>>>>> 8d801bbe (Check & fix styling)

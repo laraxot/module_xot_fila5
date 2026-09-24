@@ -2,20 +2,27 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -23,6 +30,14 @@ use function Safe\file_get_contents;
 use function Safe\mkdir;
 
 uses(TestCase::class);
+<<<<<<< HEAD
+=======
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 it('normalizes nested numeric strings in diff fixType', function (): void {
     $input = ['items' => [
@@ -49,10 +64,14 @@ it('throws when fixType receives a non-array item', function (): void {
 
 it('returns recursive diff', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new DiffAssocRecursiveAction;
 =======
     $action = new DiffAssocRecursiveAction();
 >>>>>>> laraxot/dev
+=======
+    $action = new DiffAssocRecursiveAction();
+>>>>>>> 8d801bbe (Check & fix styling)
     $left = ['items' => [
         ['id' => '1', 'name' => 'a'],
         ['id' => '2', 'name' => 'b'],
@@ -68,10 +87,14 @@ it('returns recursive diff', function (): void {
 
 it('covers all branches of range intersect', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new RangeIntersectAction;
 =======
     $action = new RangeIntersectAction();
 >>>>>>> laraxot/dev
+=======
+    $action = new RangeIntersectAction();
+>>>>>>> 8d801bbe (Check & fix styling)
 
     Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
     Assert::assertSame([2, 5], $action->execute(1, 7, 2, 5));
@@ -82,6 +105,7 @@ it('covers all branches of range intersect', function (): void {
     Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 it('writes JSON and PHP arrays', function (): void {
 =======
@@ -99,6 +123,9 @@ it('covers all branches of range intersect in Array namespace', function (): voi
 
 it('writes JSON and PHP arrays via Arr actions', function (): void {
 >>>>>>> laraxot/dev
+=======
+it('writes JSON and PHP arrays', function (): void {
+>>>>>>> 8d801bbe (Check & fix styling)
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
@@ -106,12 +133,17 @@ it('writes JSON and PHP arrays via Arr actions', function (): void {
     $phpFile = $tmpDir.'/data.php';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $jsonAction = new SaveJsonArrayAction;
     $phpAction = new SavePhpArrayAction;
 =======
     $jsonAction = new SaveJsonArrayAction();
     $phpAction = new SavePhpArrayAction();
 >>>>>>> laraxot/dev
+=======
+    $jsonAction = new SaveJsonArrayAction();
+    $phpAction = new SavePhpArrayAction();
+>>>>>>> 8d801bbe (Check & fix styling)
 
     Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
     Assert::assertFileExists($phpFile);
@@ -126,10 +158,14 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
     mkdir($tmpDir, 0777, true);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new SaveArrayAction;
 =======
     $action = new SaveArrayAction();
 >>>>>>> laraxot/dev
+=======
+    $action = new SaveArrayAction();
+>>>>>>> 8d801bbe (Check & fix styling)
     $jsonFile = $tmpDir.'/one.json';
     $phpFile = $tmpDir.'/one.php';
 
@@ -140,16 +176,21 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
 it('throws on unsupported save format in SaveArrayAction', function (): void {
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $action = new SaveArrayAction;
 =======
         $action = new SaveArrayAction();
 >>>>>>> laraxot/dev
+=======
+        $action = new SaveArrayAction();
+>>>>>>> 8d801bbe (Check & fix styling)
         $action->execute(['x' => 1], '/tmp/unused', 'xml');
         Assert::fail('Expected exception not thrown');
     } catch (InvalidArgumentException) {
         // Expected
     }
 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -176,3 +217,5 @@ it('converts mixed PHP arrays to RawJs correctly', function (): void {
     Assert::assertStringContainsString('formatter: value => value * 2', $js);
 });
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Exception Namespace Structure
 
 ## Directory Structure
@@ -48,6 +51,7 @@ This is often caused by namespace mismatches between the exception handler class
 
 Ensure that the namespace in the file matches the actual directory structure. For example, a file in `Modules/Xot/app/Exceptions/Handlers/` should have the namespace `Modules\Xot\App\Exceptions\Handlers`.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -59,3 +63,5 @@ canonical: ../../../Themes/docs/shared-components/namespace-exceptions.md
 See canonical documentation: ../../../Themes/docs/shared-components/namespace-exceptions.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

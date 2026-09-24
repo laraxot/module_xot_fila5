@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_uvlSxy
 <<<<<<< HEAD
@@ -47,3 +48,8 @@ https://github.com/asantibanez/laravel-eloquent-state-machines
 >>>>>>> .merge_file_fGZxd1
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+//---- pacchetto per gli stati, si possono utilizzare piu' campi per lo stato
+https://github.com/asantibanez/laravel-eloquent-state-machines
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
 =======
 =======
@@ -44,3 +45,6 @@ https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-varia
 >>>>>>> .merge_file_uBRQ89
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
+>>>>>>> 8d801bbe (Check & fix styling)

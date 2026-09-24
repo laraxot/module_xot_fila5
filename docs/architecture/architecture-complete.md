@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Xot Module - Complete Architecture Guide (2025)
 
 =======
@@ -8,6 +9,8 @@
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 > **Last Updated:** 2025-11-19
 > **PHPStan Level:** 10
 > **Status:** Core Foundation Module
@@ -152,6 +155,7 @@ All Filament resources extend this base class:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -165,6 +169,9 @@ abstract public function getFormSchema(): array;
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> 8d801bbe (Check & fix styling)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -603,6 +610,7 @@ class MyResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -616,6 +624,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('field1')->required(),
@@ -694,6 +705,7 @@ class ArticleResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -707,6 +719,9 @@ class ArticleResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('title')
@@ -913,15 +928,22 @@ The Xot module is a comprehensive foundation providing:
 **Generated:** 2025-11-19
 **Author:** Claude Code Analysis
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 module: theme
 topic: architecture-complete
 canonical: ../../../../Themes/docs/shared-components/architecture-complete.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/architecture-complete.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/architecture-complete.md
+>>>>>>> 8d801bbe (Check & fix styling)

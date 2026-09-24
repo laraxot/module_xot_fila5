@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_pCnhQt
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://sbsharma.com/laravel-jquery-ui-sortable-database-update-livewire/
 
 
@@ -15,6 +18,7 @@ https://github.com/asantibanez/laravel-blade-sortable
 https://opensourcelibs.com/lib/livewire-sortablejs
 
 
+<<<<<<< HEAD
 https://github.com/livewire/sortable
 =======
 <<<<<<< HEAD
@@ -64,3 +68,6 @@ https://github.com/livewire/sortable
 >>>>>>> .merge_file_x68V4d
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/livewire/sortable
+>>>>>>> 8d801bbe (Check & fix styling)

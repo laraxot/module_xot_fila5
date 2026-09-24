@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/log.php
+>>>>>>> 8d801bbe (Check & fix styling)
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',
@@ -12,9 +18,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'log.navigation',
         'icon' => 'log.navigation',
         'sort' => 61,
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'fields' => [
         'name' => [
@@ -22,7 +31,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'name',
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -62,6 +74,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'id' => [
             'label' => 'id',
         ],
@@ -95,6 +108,8 @@ return [
         'file-content' => [
             'label' => 'file-content',
         ],
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'actions' => [
         'import' => [
@@ -109,6 +124,7 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
+<<<<<<< HEAD
         'create' => [
             'label' => 'create',
             'icon' => 'create',
@@ -143,4 +159,9 @@ return [
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
     'title' => 'log',
+=======
+    ],
+    'label' => 'Log',
+    'plural_label' => 'Log (Plurale)',
+>>>>>>> 8d801bbe (Check & fix styling)
 ];

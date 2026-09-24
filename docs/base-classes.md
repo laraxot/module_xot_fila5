@@ -15,6 +15,7 @@ class XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -28,6 +29,9 @@ class XotBaseResource
     public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array;
+>>>>>>> 8d801bbe (Check & fix styling)
     public static function getListTableColumns(): array;
 }
 ```
@@ -117,12 +121,15 @@ class XotBaseEditRecord
 ## Collegamenti Bidirezionali
 - [README](README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [README](readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 
@@ -311,6 +318,7 @@ class PolizzaConvenzioneController extends XotBaseController
 * [base-classes.md](../../../Xot/docs/base-classes.md)
 * [base-classes.md](../../../Xot/docs/roadmap/base-classes.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -318,12 +326,15 @@ class PolizzaConvenzioneController extends XotBaseController
 * [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Versione Incoming
 
    - Documentare le modifiche significative
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -332,3 +343,6 @@ class PolizzaConvenzioneController extends XotBaseController
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 8d801bbe (Check & fix styling)

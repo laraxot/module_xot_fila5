@@ -32,6 +32,7 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -40,3 +41,8 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Database Guidelines](../database-guidelines.md)
+- [Performance Guidelines](../performance/database-queries.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> 8d801bbe (Check & fix styling)

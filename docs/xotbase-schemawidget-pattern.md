@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -48,11 +49,17 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "XotBaseSchemaWidget — pattern dichiarativo Filament 4"
 type: concept
 tags: [xot, filament, widget, religion-r1, code, architecture, opencode-minimax-m3]
 created: 2026-06-05
+<<<<<<< HEAD
 updated: 2026-06-05
+=======
+updated: 2026-07-13
+>>>>>>> 8d801bbe (Check & fix styling)
 qmd: "xotbase schemawidget filament widget religion r1 form fields self validate opencode minimax"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/264"
@@ -139,12 +146,16 @@ abstract class XotBaseSchemaWidget extends Widget implements HasSchemas
             return $this->view;
         }
         return app(GetViewByClassAction::class)->execute(static::class);
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -175,6 +186,8 @@ cd laravel && php artisan view:cache
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Simmetria con `XotBaseInfolistWidget`
 
 `XotBaseSchemaWidget` (write) ↔ `XotBaseInfolistWidget` (read) condividono il pattern:
@@ -187,12 +200,21 @@ cd laravel && php artisan view:cache
 ```php
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+=======
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 class LoginWidget extends XotBaseSchemaWidget
 {
+<<<<<<< HEAD
     protected static string $baseSchemaClass = UserForm::class;
+=======
+    protected static function formClass(): string { return UserForm::class; }
+    protected static function schemaMethod(): string { return 'getLoginFormSchema'; }
+>>>>>>> 8d801bbe (Check & fix styling)
 
     public function login(): void
     {
@@ -205,6 +227,7 @@ class LoginWidget extends XotBaseSchemaWidget
 }
 ```
 
+<<<<<<< HEAD
 E `Modules/User/Filament/Widgets/Auth/Schemas/UserForm.php`:
 
 ```php
@@ -234,6 +257,56 @@ Vedi discussion #265 per dibattito su:
 2. **Widget-level Form class vs backoffice Form class** — DRY trade-off.
 3. **RegisterWidget submit()** — `Model::create()` diretto vs `RegistrationService`.
 4. **R8 Gdpr vs User RegisterWidget** — quale usare in produzione.
+=======
+SSoT unico: `Modules/User/Filament/Resources/UserResource/Schemas/UserForm.php` (metodi `getLoginFormSchema`, `getRegisterFormSchema`, … + `getFormSchema` BO):
+
+```php
+public static function getLoginFormSchema(): array
+{
+    return [
+        'email' => TextInput::make('email')
+            ->required()
+            ->email()
+            ->autofocus()
+            ->autocomplete('username')
+            ->extraInputAttributes(['class' => 'fo-auth-input']),
+        'password' => TextInput::make('password')
+            ->password()
+            ->revealable()
+            ->required()
+            ->autocomplete('current-password')
+            ->extraInputAttributes(['class' => 'fo-auth-input']),
+        'remember' => Checkbox::make('remember'),
+    ];
+}
+```
+
+## Decisioni chiuse
+
+1. **Un solo `UserForm` in Resource** — FO e BO condividono `Resources/UserResource/Schemas/UserForm.php`.
+2. **Tutti i widget auth FO** — `XotBaseSchemaWidget` + `formClass()`/`schemaMethod()` (eccezione: `PasswordResetConfirmWidget` override `form()` per `disabled` legato a `currentState`).
+3. **`Password::reset`** — password in chiaro in `getState()`; `Hash::make` solo nel callback broker (non in `dehydrateStateUsing` degli schemi reset).
+
+## Decisioni aperte
+
+Vedi discussion #265 per:
+1. **Pattern dichiarativo vs imperativo** — reflection vs interface marker.
+2. **RegisterWidget submit()** — `Model::create()` diretto vs orchestrazione GDPR.
+3. **R8 Gdpr vs User RegisterWidget** — quale usare in produzione.
+
+## Lezione: docblock orfani post-refactor
+
+Quando `XotBaseWidget::$data` è stato reso non-nullable, uno script ha rimosso le
+ridichiarazioni `public ?array $data` nei widget figli (11 file). Lo script
+rimuoveva la proprietà ma non il `/** @var ... */` che la precedeva, lasciando
+un docblock "orfano" attaccato al metodo successivo (`varTag.misplaced` in
+PHPStan). Trovati e corretti in `Seo/SocialShareWidget.php` e
+`User/RegistrationWidget.php`. Stesso refactor ha reso `$this->data ?? []`
+inutile (`nullCoalesce.property`): la proprietà non è più nullable, va acceduta
+direttamente. Verificare sempre `phpstan analyse Modules` dopo un refactor
+cross-file di massa: gli effetti collaterali si vedono in file mai toccati
+direttamente dallo script.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Riferimenti
 
@@ -244,5 +317,8 @@ Vedi discussion #265 per dibattito su:
 
 ---
 *opencode (MiniMax-M3) · 2026-06-05*
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

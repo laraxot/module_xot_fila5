@@ -143,6 +143,7 @@ Il comando `GenerateFilamentResources` genera automaticamente resources per tutt
 
 - [XotBasePage getModel() Fix](./xotbasepage-getmodel-fix.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Architettura Laraxot](README.md)
 =======
 <<<<<<< HEAD
@@ -151,6 +152,9 @@ Il comando `GenerateFilamentResources` genera automaticamente resources per tutt
 - [Architettura Laraxot](../readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Architettura Laraxot](../readme.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Comando GenerateFilamentResources](../../app/Console/Commands/GenerateFilamentResources.php)
 - [Documentazione Filament](https://filamentphp.com/docs)
 
@@ -169,6 +173,7 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 3. Testare in ambiente di sviluppo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
 =======
 <<<<<<< HEAD
@@ -177,3 +182,6 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 8d801bbe (Check & fix styling)

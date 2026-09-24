@@ -23,6 +23,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Grant the given permission(s) to a role.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
@@ -43,6 +44,9 @@ interface ModelProfileContract extends ModelContract
      * >>>>>>> .merge_file_55oZz4
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return $this
      */
@@ -51,6 +55,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Assign the given role to the model.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
@@ -71,6 +76,9 @@ interface ModelProfileContract extends ModelContract
      * >>>>>>> .merge_file_55oZz4
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return $this
      */
@@ -80,6 +88,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Determine if the model has (one of) the given role(s).
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
@@ -106,6 +115,9 @@ interface ModelProfileContract extends ModelContract
      *                                                                                 >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                                                                 >>>>>>> .merge_file_55oZz4
      *                                                                                 >>>>>>> laraxot/dev
+=======
+     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function hasRole(
         string|int|array|Role|Collection $roles,
@@ -117,6 +129,7 @@ interface ModelProfileContract extends ModelContract
      *
      * Alias to hasRole() but without Guard controls
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
@@ -143,6 +156,9 @@ interface ModelProfileContract extends ModelContract
      *                                                                                 >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                                                                 >>>>>>> .merge_file_55oZz4
      *                                                                                 >>>>>>> laraxot/dev
+=======
+     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function hasAnyRole(string|int|array|Role|Collection $roles = [
     ]): bool;
@@ -157,6 +173,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Create a new Eloquent query builder for the model.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param Builder<Model> $query
@@ -177,6 +194,9 @@ interface ModelProfileContract extends ModelContract
      * >>>>>>> .merge_file_55oZz4
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param Builder<Model> $query
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return Builder<Model>
      */

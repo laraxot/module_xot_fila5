@@ -46,6 +46,7 @@ interface ModelContactContract extends ModelContract
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -56,6 +57,8 @@ interface ModelContactContract extends ModelContract
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Model Guidelines](../models/readme.md)
 - [Contact Management](../features/contact-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -63,6 +66,10 @@ interface ModelContactContract extends ModelContract
 - [Model Guidelines](../models/README.md)
 - [Contact Management](../features/CONTACT-MANAGEMENT.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< HEAD
 - [Contracts Overview](./README.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Contracts Overview](./README.md)
+>>>>>>> 8d801bbe (Check & fix styling)

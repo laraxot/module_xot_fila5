@@ -2,19 +2,29 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 uses(TestCase::class);
 >>>>>>> laraxot/dev
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
 use Modules\Xot\Actions\String\SanitizeAction;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+use PHPUnit\Framework\Assert;
+
+>>>>>>> 8d801bbe (Check & fix styling)
 test('get pronounceable password action works', function () {
     $action = app(GetPronounceablePasswordAction::class);
     $password = $action->execute(12);

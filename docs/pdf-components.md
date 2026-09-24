@@ -154,6 +154,7 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 - [Documentazione Componenti](../componenti_personalizzati.md)
 - [Best Practices Filament](../filament-best-practices.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Principale](README.md)
 =======
 <<<<<<< HEAD
@@ -162,6 +163,9 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 - [README Principale](../readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [README Principale](../readme.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Note di Sviluppo
 

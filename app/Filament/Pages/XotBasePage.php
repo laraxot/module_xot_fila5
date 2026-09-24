@@ -10,7 +10,10 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 // use Filament\Resources\Pages\Page;
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -32,12 +35,17 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * - Metodi helper comuni
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ?string $model Il modello associato alla pagina
  * @property array<string, mixed> $data I dati del form
 =======
  * @property ?string              $model Il modello associato alla pagina
  * @property array<string, mixed> $data  I dati del form
 >>>>>>> laraxot/dev
+=======
+ * @property ?string              $model Il modello associato alla pagina
+ * @property array<string, mixed> $data  I dati del form
+>>>>>>> 8d801bbe (Check & fix styling)
  *
  * @see \Modules\Xot\docs\xotbasepage_implementation.md Documentazione completa
  */
@@ -85,10 +93,14 @@ abstract class XotBasePage extends Page implements HasForms
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($moduleName === '') {
 =======
         if ('' === $moduleName) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $moduleName) {
+>>>>>>> 8d801bbe (Check & fix styling)
             throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 
@@ -124,10 +136,14 @@ abstract class XotBasePage extends Page implements HasForms
     public function getModel(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (static::$model !== null) {
 =======
         if (null !== static::$model) {
 >>>>>>> laraxot/dev
+=======
+        if (null !== static::$model) {
+>>>>>>> 8d801bbe (Check & fix styling)
             /** @var class-string<Model> $modelValue */
             $modelValue = static::$model;
 
@@ -147,10 +163,14 @@ abstract class XotBasePage extends Page implements HasForms
             ->toString();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($modelName === '') {
 =======
         if ('' === $modelName) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $modelName) {
+>>>>>>> 8d801bbe (Check & fix styling)
             throw new \LogicException(sprintf('Cannot determine model name from class %s', static::class));
         }
 
@@ -170,25 +190,38 @@ abstract class XotBasePage extends Page implements HasForms
      * Imposta lo schema e il percorso dello stato per il form.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Schema  $schema  Il form da configurare
 =======
      * @param Schema $schema Il form da configurare
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Schema $schema Il form da configurare
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return Schema Lo schema configurato
      */
     public function schema(Schema $schema): Schema
     {
+<<<<<<< HEAD
         $schema = $schema->components($this->resolveFormSchemaForXotPage());
+=======
+        $schema = $schema->components($this->getFormSchema());
+>>>>>>> 8d801bbe (Check & fix styling)
 
         $schema->statePath('data');
 
         $debounce = $this->getAutosaveDebounce();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($debounce !== null && method_exists($schema, 'autosaveDebounce')) {
 =======
         if (null !== $debounce && method_exists($schema, 'autosaveDebounce')) {
 >>>>>>> laraxot/dev
+=======
+        if (null !== $debounce && method_exists($schema, 'autosaveDebounce')) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $schema->autosaveDebounce($debounce);
         }
 
@@ -203,10 +236,14 @@ abstract class XotBasePage extends Page implements HasForms
     public function getView(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->view === '') {
 =======
         if ('' === $this->view) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $this->view) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $view = app(GetViewByClassAction::class)->execute(static::class);
             if (view()->exists($view)) {
                 return (string) $view;
@@ -220,6 +257,7 @@ abstract class XotBasePage extends Page implements HasForms
     }
 
     /**
+<<<<<<< HEAD
      * Resolve concrete page schema without invoking deprecated Filament hook directly.
      *
      * @return array<int|string, Component>
@@ -244,6 +282,8 @@ abstract class XotBasePage extends Page implements HasForms
     }
 
     /**
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      * Ottiene il tempo di debounce per l'autosave in millisecondi.
      * Sovrascrivere nelle classi figlie per modificare questo valore.
      *
@@ -259,6 +299,7 @@ abstract class XotBasePage extends Page implements HasForms
      * Verifica che l'utente sia un'istanza di Model per permettere aggiornamenti.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return Authenticatable&Model L'utente autenticato
      *
@@ -268,16 +309,25 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @return Authenticatable&Model L'utente autenticato
 >>>>>>> laraxot/dev
+=======
+     * @throws \RuntimeException Se l'utente non è autenticato o non è un'istanza di Model
+     *
+     * @return Authenticatable&Model L'utente autenticato
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($user === null) {
 =======
         if (null === $user) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $user) {
+>>>>>>> 8d801bbe (Check & fix styling)
             throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
 
@@ -305,11 +355,16 @@ abstract class XotBasePage extends Page implements HasForms
      * Utile per controlli granulari all'interno delle pagine.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $permission  Il permesso da verificare
 =======
      * @param string $permission Il permesso da verificare
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string $permission Il permesso da verificare
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return bool True se l'utente ha il permesso, false altrimenti
      */
     protected function hasPermissionTo(string $permission): bool
@@ -324,6 +379,7 @@ abstract class XotBasePage extends Page implements HasForms
      * Risolve il percorso della vista.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return string Il percorso della vista
      *
@@ -333,6 +389,11 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @return string Il percorso della vista
 >>>>>>> laraxot/dev
+=======
+     * @throws \RuntimeException Se la vista non esiste
+     *
+     * @return string Il percorso della vista
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     protected function resolveViewPath(): string
     {
@@ -348,6 +409,7 @@ abstract class XotBasePage extends Page implements HasForms
      * Ottiene una query builder per il modello associato alla pagina.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return Builder<Model>
      *
@@ -357,6 +419,11 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @return Builder<Model>
 >>>>>>> laraxot/dev
+=======
+     * @throws \LogicException Se il modello non è definito
+     *
+     * @return Builder<Model>
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     protected function getQuery(): Builder
     {
@@ -368,10 +435,14 @@ abstract class XotBasePage extends Page implements HasForms
 
         /** @var class-string<Model> $modelClass */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $instance = new $modelClass;
 =======
         $instance = new $modelClass();
 >>>>>>> laraxot/dev
+=======
+        $instance = new $modelClass();
+>>>>>>> 8d801bbe (Check & fix styling)
         if (! $instance instanceof Model) {
             throw new \LogicException("Class {$modelClass} must extend Eloquent Model");
         }
@@ -383,10 +454,14 @@ abstract class XotBasePage extends Page implements HasForms
      * Invalida la cache per il modello specificato.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string<Model>|null  $modelClass
 =======
      * @param class-string<Model>|null $modelClass
 >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model>|null $modelClass
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     protected function invalidateCache(?string $modelClass = null, int|string|null $id = null): void
     {
@@ -400,9 +475,13 @@ abstract class XotBasePage extends Page implements HasForms
         return [
             Action::make('save')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> laraxot/dev
+=======
+                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+>>>>>>> 8d801bbe (Check & fix styling)
                 ->submit('save'),
         ];
     }

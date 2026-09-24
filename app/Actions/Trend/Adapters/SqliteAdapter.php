@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Trend\Adapters;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_54vAe8
 <<<<<<< HEAD
@@ -28,6 +29,11 @@ class SqliteAdapter extends AbstractAdapter
     #[\Override]
 >>>>>>> .merge_file_PZ0cg5
 >>>>>>> laraxot/dev
+=======
+class SqliteAdapter extends AbstractAdapter
+{
+    #[\Override]
+>>>>>>> 8d801bbe (Check & fix styling)
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {
@@ -36,6 +42,7 @@ class SqliteAdapter extends AbstractAdapter
             'day' => '%Y-%m-%d',
             'month' => '%Y-%m',
             'year' => '%Y',
+<<<<<<< HEAD
 <<<<<<< HEAD
             default => throw new Error('Invalid interval.'),
 =======
@@ -49,6 +56,9 @@ class SqliteAdapter extends AbstractAdapter
             default => throw new \Error('Invalid interval.'),
 >>>>>>> .merge_file_PZ0cg5
 >>>>>>> laraxot/dev
+=======
+            default => throw new \Error('Invalid interval.'),
+>>>>>>> 8d801bbe (Check & fix styling)
         };
 
         return sprintf("strftime('%s', %s)", $format, $column);

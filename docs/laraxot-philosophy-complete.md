@@ -12,6 +12,7 @@
 
 #### 2. **Consistency Over Flexibility**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Predictable behavior > Unlimited options**
 =======
 <<<<<<< HEAD
@@ -20,6 +21,9 @@
 - **<nome progetto>able behavior > Unlimited options**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Predictable behavior > Unlimited options**
+>>>>>>> 8d801bbe (Check & fix styling)
 - Same patterns across all modules, same file structures
 - **Violation Example**: Different test structures across modules
 - **Zen Principle**: Harmony through uniformity
@@ -37,6 +41,7 @@
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── Quaeris (Core Business Logic - Surveys)
 =======
 <<<<<<< HEAD
@@ -45,6 +50,9 @@ Xot (Core Engine)
 ├── healthcare_app (Core Business Logic - Surveys)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+├── Quaeris (Core Business Logic - Surveys)
+>>>>>>> 8d801bbe (Check & fix styling)
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -125,6 +133,7 @@ TextInput::make('name');
 - **Responsibility**: Security and permissions
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 3. **Quaeris Module (The Economy)**
 =======
 <<<<<<< HEAD
@@ -133,6 +142,9 @@ TextInput::make('name');
 #### 3. **healthcare_app Module (The Economy)**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+#### 3. **Quaeris Module (The Economy)**
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -203,6 +215,7 @@ if (isset($model->email)) { ... }
 #### 3. **Test Structure Consistency**
 - **Rule**: Tests in traditional Laravel structure only
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Reason**: Predictable autoloader behavior
 =======
 <<<<<<< HEAD
@@ -211,6 +224,9 @@ if (isset($model->email)) { ... }
 - **Reason**: <nome progetto>able autoloader behavior
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Reason**: Predictable autoloader behavior
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Location**: `Modules/{Module}/tests/`
 
 ## 🎯 Implementation Guidelines
@@ -247,6 +263,7 @@ class YourResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -260,12 +277,16 @@ class YourResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // Form components - NO hardcoded labels
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -281,6 +302,9 @@ class YourResource extends XotBaseResource
     public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             // Infolist components
@@ -363,6 +387,7 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 
 **Maintained by**: Xot Module (The Laraxot Government)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy**: Consistency, Predictability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 **Last Updated**: 2025-11-17
@@ -377,3 +402,8 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy**: Consistency, Predictability, Simplicity
+**Goal**: Create a harmonious, maintainable, and scalable application architecture
+**Last Updated**: 2025-11-17
+>>>>>>> 8d801bbe (Check & fix styling)

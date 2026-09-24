@@ -115,6 +115,7 @@ my_document.md              # underscore
 analysis.md      # date in name (use CHANGELOG.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -131,6 +132,8 @@ analysis.md      # date in name (use CHANGELOG.md)
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### 8. DRY Principle
@@ -287,6 +290,7 @@ class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -300,6 +304,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('name'),  // No ->label()!

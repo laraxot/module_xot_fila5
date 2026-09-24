@@ -1,16 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * ---.
  *
  * @see https://github.com/johnnyfreeman/laravel-custom-relation/blob/master/src/Relations/Custom.php
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Relations;
 
 use Closure;
@@ -43,6 +51,7 @@ class CustomRelation extends Relation
          * The baseConstraints callback.
          */
 <<<<<<< HEAD
+<<<<<<< HEAD
         protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -53,6 +62,8 @@ class CustomRelation extends Relation
          */
         protected ?Closure $eagerMatcher,
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         protected \Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -62,7 +73,10 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected ?\Closure $eagerMatcher,
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ) {
         parent::__construct($query, $model);
     }
@@ -80,10 +94,14 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
 =======
      * @param array<int, Model> $models
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, Model> $models
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function addEagerConstraints(array $models): void
     {
@@ -100,6 +118,7 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  string  $relation  the relation name (parent signature is untyped)
 =======
@@ -107,10 +126,21 @@ class CustomRelation extends Relation
      * @param string            $relation the relation name (parent signature is untyped)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, Model> $models
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
     {
+<<<<<<< HEAD
+=======
+        if (! \is_string($relation)) {
+            throw new \Exception('relation is not a string');
+        }
+
+>>>>>>> 8d801bbe (Check & fix styling)
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -125,6 +155,7 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  Collection<int, Model>  $collection
      * @param  string  $relation  the relation name (parent signature is untyped)
@@ -134,6 +165,11 @@ class CustomRelation extends Relation
      * @param string                 $relation   the relation name (parent signature is untyped)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return array<int, Model>
      */
     public function match(array $models, Collection $collection, mixed $relation): array
@@ -168,11 +204,16 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, string>|string  $columns
 =======
      * @param array<int, string>|string $columns
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, string>|string $columns
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection

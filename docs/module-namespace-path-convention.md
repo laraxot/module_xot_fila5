@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso
@@ -67,6 +70,7 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 - [convenzioni di codice](docs/conventions.md)
@@ -80,3 +84,5 @@ canonical: ../../../Themes/docs/shared-components/module-namespace-path-conventi
 See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

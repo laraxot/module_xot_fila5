@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_HyCAco
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_D7xoZI
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 title: "Modulo Xot — Framework Base e Architettura"
 type: architecture
@@ -393,6 +396,7 @@ class CreateYourTable extends XotBaseMigration
 **Ultimo Aggiornamento**: 2026-01-23  
 **Versione**: v4.0.0-core  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stato**: Production Framework - Foundation of All Modules
 =======
 <<<<<<< .merge_file_HyCAco
@@ -475,3 +479,6 @@ Xot provides the foundational architecture that enables LimeSurvey integration t
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_D7xoZI
 >>>>>>> laraxot/dev
+=======
+**Stato**: Production Framework - Foundation of All Modules
+>>>>>>> 8d801bbe (Check & fix styling)

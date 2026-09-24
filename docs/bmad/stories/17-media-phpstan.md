@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_N7ljFD
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_3aLQ6f
 >>>>>>> .merge_file_UUgkSZ
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 17-media-phpstan
 description: "Modulo: Media"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_N7ljFD
 =======
 <<<<<<< .merge_file_hVdlH6
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_3aLQ6f
 >>>>>>> .merge_file_UUgkSZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # BMAD Story 17 — Media: 10 errori PHPStan (test)
 
 **Modulo:** `Media`

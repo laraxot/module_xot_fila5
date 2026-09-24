@@ -12,6 +12,7 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 - **barryvdh/laravel-ide-helper** - Genera helper per IDE con supporto PHPStan
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -30,6 +31,8 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 
 ## Configurazione Progetto

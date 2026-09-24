@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_dzHMTS
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LKsPjZ
 >>>>>>> .merge_file_9pLsjd
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 30-residuo-phpstan
 description: "Status: IN PROGRESS — sub-agent attivo (swarm)"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_dzHMTS
 =======
 <<<<<<< .merge_file_Q0kPxl
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_LKsPjZ
 >>>>>>> .merge_file_9pLsjd
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # BMAD Story 30 — Residuo PHPStan (sub-agent)
 **Status:** IN PROGRESS — sub-agent attivo (swarm)
 **File:** da correggere (staticCall/getFormSchema/getInfolistSchema su instance)

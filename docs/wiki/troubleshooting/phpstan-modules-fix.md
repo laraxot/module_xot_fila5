@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -7,10 +8,13 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
+<<<<<<< HEAD
 <<<<<<< HEAD
 updated: 2026-09-21
 =======
@@ -341,12 +345,17 @@ title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 updated: 2026-06-30
 tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
   - concepts/phpstan-level10.md
+<<<<<<< HEAD
   - concepts/phpstan-trait-probes.md
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
   - concepts/xot-seed-model-once.md
 qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ---
@@ -402,10 +411,13 @@ php bashscripts/tools/fix-pest-phpstan-test-patterns.php
 
 `newFactory()` annotato `@return TFactory` per risolvere la catena generica sui modelli Xot.
 
+<<<<<<< HEAD
 ### Trait probe Notify
 
 `Modules/Notify/app/Phpstan/HasContactPhpstanProbe.php` registrato in `xotPhpstanTraitProbeClasses()` (valori `::class`, non stringhe).
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Test mock User — `RelationX`
 
 `MockUserWithTeams` (test) deve `use RelationX` se usa `HasTeams` (metodo `belongsToManyX`).
@@ -457,6 +469,7 @@ php artisan about
 ## Related
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-cluster-map-and-false-friends](concepts/phpstan-cluster-map-and-false-friends.md)
 - [safe-functions-rule](../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [phpstan-level10](concepts/phpstan-level10.md)
@@ -468,3 +481,8 @@ php artisan about
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)
+- [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
+- [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
+>>>>>>> 8d801bbe (Check & fix styling)

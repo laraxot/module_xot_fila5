@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_RS5bGe
 <<<<<<< HEAD
@@ -40,12 +41,18 @@ updated: 2026-08-24
 >>>>>>> .merge_file_rIcbh0
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# _process
+
+<!-- Contenuto migrato da _docs/_process.txt -->
+>>>>>>> 8d801bbe (Check & fix styling)
 
 https://laravel-news.com/working-with-os-process-in-php
 https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCommands.php
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -59,3 +66,6 @@ https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCom
 ------------------------------------
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+------------------------------------
+>>>>>>> 8d801bbe (Check & fix styling)

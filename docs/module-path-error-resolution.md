@@ -2,12 +2,15 @@
 
 **Data Creazione**: 2026-01-02
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -139,13 +142,17 @@ try {
 - [Xot Philosophy](./philosophy.md)
 - [Activity Philosophy](../Activity/docs/philosophy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -156,3 +163,5 @@ try {
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

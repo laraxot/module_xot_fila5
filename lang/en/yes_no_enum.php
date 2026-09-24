@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'values' => [
         'yes' => [
@@ -17,6 +18,12 @@ return [
             'description' => 'Negative value',
         ],
     ],
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/en/yes_no_enum.php
+return [
+>>>>>>> 8d801bbe (Check & fix styling)
     'label' => 'Yes/No',
     'options' => [
         'yes' => 'Yes',

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 ?>
 <x-filament::page>
     <div class="space-y-6" wire:poll.visible="{{ $this->isRunning ? '100' : '1000' }}">

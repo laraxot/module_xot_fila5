@@ -195,6 +195,7 @@ EOF
 
 - **2025-11-04**: Initial documentation and cleanup
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
 =======
@@ -207,3 +208,7 @@ EOF
   - Established rules and conventions
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
+  - Established rules and conventions
+>>>>>>> 8d801bbe (Check & fix styling)

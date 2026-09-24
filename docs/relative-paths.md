@@ -5,6 +5,7 @@
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 > - [README.md toolkit bashscripts](README.md)
 =======
 <<<<<<< HEAD
@@ -13,6 +14,9 @@
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Regola Fondamentale
 

@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,6 +22,8 @@ Vedi il file canonico: [REFACTOR-panelmixin.md](./refactor-panelmixin.md)
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: "DEPRECATED: Refactor Panel Mixin (dated filename)"
 status: deprecated
 created: "2026-07-07"
@@ -35,5 +38,8 @@ This file is deprecated due to dated filename convention violation.
 ---
 
 **Note**: Do not add dates in `.md` filenames. Use `created`/`updated` in YAML frontmatter instead. See [Markdown Documentation Standard](../../docs/wiki/rules/markdown-documentation-standard.md).
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

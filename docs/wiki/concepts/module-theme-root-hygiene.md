@@ -53,6 +53,7 @@ fuori scope di questa singola pulizia root.
 ## 2. `.code-workspace` — esattamente uno
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_jbSKvV
@@ -69,11 +70,14 @@ fuori scope di questa singola pulizia root.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 Derivato da repo Git (`gitmodules.ini` o `git remote get-url origin`):
 
 ```
 theme_zero_fila5  →  _theme_zero.code-workspace
 module_activity_fila5  →  _module_activity.code-workspace
+<<<<<<< HEAD
 <<<<<<< .merge_file_jbSKvV
 <<<<<<< HEAD
 =======
@@ -89,6 +93,9 @@ module_activity_fila5  →  _module_activity.code-workspace
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 Nome = repo Git per intero (`gitmodules.ini` o `git remote get-url origin`), **senza
 togliere il suffisso** `_fila5`:
 
@@ -96,6 +103,7 @@ togliere il suffisso** `_fila5`:
 theme_zero_fila5  →  _theme_zero_fila5.code-workspace
 module_activity_fila5  →  _module_activity_fila5.code-workspace
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_jbSKvV
 >>>>>>> laraxot/dev
@@ -109,12 +117,15 @@ module_activity_fila5  →  _module_activity_fila5.code-workspace
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 ```
 
 Moduli solo monorepo (remote `base_*`): fallback `_module_{alias}` da `module.json`.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_jbSKvV
@@ -137,6 +148,10 @@ Fix: `bash bashscripts/tools/fix-module-theme-root-hygiene.sh` (completo) · `fi
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
 >>>>>>> laraxot/dev
+=======
+Fix: `bash bashscripts/tools/fix-module-theme-root-hygiene.sh` (completo) · `fix-module-theme-workspaces.sh` (solo workspace)
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 Correzione 2026-09-22: prima qui si diceva di togliere `_fila5` (`_theme_zero.code-workspace`).
 Sbagliato — l'utente ha corretto sul caso concreto di `Modules/Xot`
 (`module_xot_fila5.git` → `_module_xot_fila5.code-workspace`), confermato dalla storia
@@ -148,6 +163,7 @@ Fix: `bash bashscripts/tools/audit-module-workspaces.sh` (verifica; i riferiment
 `fix-module-theme-root-hygiene.sh`/`fix-module-theme-workspaces.sh` in questo file erano
 aspirazionali — quegli script non esistono su disco).
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_jbSKvV
 >>>>>>> laraxot/dev
@@ -161,6 +177,8 @@ aspirazionali — quegli script non esistono su disco).
 >>>>>>> .merge_file_VEXGT2
 >>>>>>> .merge_file_72e1DA
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 
 ## 3. IDE folders — vietate in root

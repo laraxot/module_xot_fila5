@@ -1,6 +1,7 @@
 # Filament 5.x Requirements & Configuration
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Analisi**: 2026-01-30
 =======
 <<<<<<< .merge_file_LorNKm
@@ -13,6 +14,9 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_WC7I9S
 >>>>>>> laraxot/dev
+=======
+**Data Analisi**: 2026-01-30
+>>>>>>> 8d801bbe (Check & fix styling)
 **Versione Filament**: 5.1.1
 **Documentazione Upstream**: https://filamentphp.com/docs/5.x/introduction/installation
 
@@ -78,17 +82,21 @@ Chart.register(ChartDataLabels);  // ❌ NON funziona
 
 - [Filament 5.x Installation](https://filamentphp.com/docs/5.x/introduction/installation)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_LorNKm
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_WC7I9S
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Chart Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
 
 ---
 
 **Ultimo Aggiornamento**: 2026-01-30
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_LorNKm
@@ -101,3 +109,5 @@ Chart.register(ChartDataLabels);  // ❌ NON funziona
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_WC7I9S
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

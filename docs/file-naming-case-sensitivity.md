@@ -52,12 +52,15 @@ userfactory.php              → ELIMINA
 
 ## 🗑️ Cleanup Effettuato (2025-11-04)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## 🗑️ Cleanup Effettuato ([DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Modulo Xot (6 file)
 ```bash
@@ -78,6 +81,7 @@ userfactory.php              → ELIMINA
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -88,6 +92,8 @@ userfactory.php              → ELIMINA
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Modulo Media (1 file)
 ```bash
 ✗ tests/Filament/Resources/mediaconvertresourcetest.php
@@ -265,6 +271,7 @@ Ogni modulo interessato ha documentazione dettagliata:
 
 - [Xot Module](./case-sensitivity-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -277,6 +284,8 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [User Module](../../user/docs/case-sensitivity-rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Gdpr Module](../../Gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../Lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../Media/docs/case-sensitivity-rules.md)
@@ -343,12 +352,15 @@ python3 /path/to/check_duplicates.py
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [CLAUDE.md - Project Guidelines](claude.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 🎯 Conclusioni
 
@@ -376,6 +388,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 
 **Ultimo aggiornamento**: 2025-11-04
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
 =======
@@ -388,3 +401,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 **Revisione**: Trimestrale (ogni 3 mesi)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: ✅ Cleanup completato, enforcement attivo
+**Revisione**: Trimestrale (ogni 3 mesi)
+>>>>>>> 8d801bbe (Check & fix styling)

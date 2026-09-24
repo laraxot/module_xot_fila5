@@ -95,6 +95,7 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 
 **Script Creato**: 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
 =======
@@ -107,3 +108,7 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Autore**: Super Mucca AI Assistant
+**Potenze**: 🚀 SUPERPOWERS ACTIVATED
+>>>>>>> 8d801bbe (Check & fix styling)

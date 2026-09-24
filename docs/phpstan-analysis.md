@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## stato analisi phpstan
 
 - **data**: 2025-11-12
@@ -10,6 +13,7 @@
 - mantenere le classi base allineate ai pattern Laraxot (`XotBase*`, trait condivisi);
 - proseguire con la normalizzazione dei file in `docs/` (evitare duplicati e nomi non conformi);
 - verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
+<<<<<<< HEAD
 =======
 # PHPStan Analysis Report - 2025-11-18
 
@@ -1076,3 +1080,5 @@ class MyModel extends BaseModel
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

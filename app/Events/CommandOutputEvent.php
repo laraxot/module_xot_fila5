@@ -21,11 +21,16 @@ class CommandOutputEvent implements ShouldBroadcast
         public string $output,
         public string $type = 'output',
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 8d801bbe (Check & fix styling)
 
     public function broadcastOn(): array
     {

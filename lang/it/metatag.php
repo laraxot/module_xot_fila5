@@ -2,7 +2,34 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/metatag.php
+return [
+    // Laraxot — see module docs/wiki for domain contract.
+    // Laraxot — see module docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 8d801bbe (Check & fix styling)
     'resources' => 'Risorse',
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
@@ -12,9 +39,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'metatag.navigation',
         'icon' => 'metatag.navigation',
         'sort' => 95,
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'fields' => [
         'name' => [
@@ -224,21 +254,30 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'key',
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         ],
         'color' => [
             'label' => 'color',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'color',
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         ],
         'hex' => [
             'label' => 'hex',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'hex',
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         ],
         'timezone' => [
             'label' => 'Fuso orario',
@@ -327,6 +366,7 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
+<<<<<<< HEAD
         'save' => [
             'label' => 'save',
             'icon' => 'save',
@@ -336,4 +376,9 @@ return [
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',
     'title' => 'metatag',
+=======
+    ],
+    'label' => 'Metatag',
+    'plural_label' => 'Metatag (Plurale)',
+>>>>>>> 8d801bbe (Check & fix styling)
 ];

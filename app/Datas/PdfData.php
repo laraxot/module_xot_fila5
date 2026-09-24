@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /*
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Datas;
 
 use Illuminate\Database\Eloquent\Model;
@@ -148,12 +156,16 @@ class PdfData extends Data
     }
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
      * @param array<string, mixed> $params
      *                                     =======
      * @param array<string, mixed> $params
      *                                     >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $params
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function view(string $view, array $params = []): self
     {

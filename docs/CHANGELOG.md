@@ -1,6 +1,7 @@
 # Changelog - Modulo Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_NfRsvc
 <<<<<<< HEAD
@@ -78,6 +79,8 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 >>>>>>> .merge_file_kUYz4X
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -208,6 +211,7 @@ All notable changes to `:package_name` will be documented in this file.
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_NfRsvc
 <<<<<<< HEAD
@@ -229,6 +233,8 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 >>>>>>> .merge_file_kUYz4X
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Repository
 - **Branch:** develop
@@ -241,6 +247,7 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_NfRsvc
@@ -349,3 +356,5 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 =======
 >>>>>>> .merge_file_kUYz4X
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

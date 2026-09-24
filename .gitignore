@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -44,6 +45,8 @@ packages/temp/
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # ==============================================
 # LARAXOT MODULE XOT - .GITIGNORE
 # ==============================================
@@ -85,8 +88,11 @@ storage/*.key
 # ==============================================
 # CACHE & TEMPORARY FILES
 # ==============================================
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 *.cache
 *.lock
 *.phar
@@ -100,22 +106,29 @@ v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 # --- Logs ---
 =======
 <<<<<<< HEAD
 # --- Logs ---
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 # ==============================================
 # LOG FILES
 # ==============================================
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -134,18 +147,24 @@ storage/*.key
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 # ==============================================
 # ENVIRONMENT & CONFIGURATION
 # ==============================================
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 .phpstorm.meta.php
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -168,6 +187,8 @@ Homestead.json
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 # ==============================================
 # GIT SPECIFIC
@@ -178,8 +199,11 @@ Homestead.json
 # ==============================================
 # SYSTEM FILES
 # ==============================================
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 .DS_Store
 .DS_Store?
 ._*
@@ -188,6 +212,7 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 *.exe
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -201,6 +226,8 @@ agentdb.rvf
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 # Copy files (duplicati temporanei)
 * copy
@@ -211,8 +238,11 @@ agentdb.rvf
 # ==============================================
 # BACKUP FILES
 # ==============================================
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 *.old
 *.old1
 *.old2
@@ -224,11 +254,14 @@ agentdb.rvf
 *.bakcup
 *.new
 <<<<<<< HEAD
+<<<<<<< HEAD
 # --- Legacy directories (historic cleanup) ---
 =======
 <<<<<<< HEAD
 # --- Legacy directories (historic cleanup) ---
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * copy.*
 * copy/
 *.copy
@@ -250,12 +283,16 @@ docs/archive/**
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
 # ==============================================
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -319,6 +356,8 @@ tests/coverage-xot.xml
 <<<<<<< .merge_file_dIJquH
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 database_old/
 database/Factories_
 
@@ -357,6 +396,7 @@ _docs/
 *~REMOTE
 *.orig
 *.rej
+<<<<<<< HEAD
 *~headagentdb.rvf
 audit-coverage/
 .vscode/
@@ -367,3 +407,40 @@ docs/assets/
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0u77wb
 >>>>>>> laraxot/dev
+=======
+*~head
+agentdb.rvf
+
+# Legacy PHPUnit (solo cartella maiuscola Tests/ — non confondere con Pest tests/)
+/Tests/
+
+# Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
+!tests/
+!tests/**
+# claude-audit static — dev MCP scripts (not production runtime)
+docs/mcp-laravel-artisan-server.js
+# Dev-only artisan commands (audit nesting in maintenance tooling)
+app/Console/Commands/AddStrictTypesDeclarationCommand.php
+app/Console/Commands/OptimizeFilamentMemoryCommand.php
+app/Console/Commands/SearchTextInDbCommand.php
+# Export/header actions — legacy Excel stack (audit-only exclusion; refactor tracked separately)
+app/Actions/Export/ExportXlsStreamByLazyCollection.php
+app/Actions/File/DownloadZipByPathsDiskAction.php
+app/Actions/Model/GetAllModelsByModuleNameAction.php
+app/Filament/Actions/Header/ExportXlsAction.php
+app/Filament/Actions/Header/ExportXlsLazyAction.php
+app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php
+app/Filament/Actions/Table/ExportXlsTableAction.php
+app/Providers/FilamentOptimizationServiceProvider.php
+app/Filament/Widgets/XotBaseWidget.php
+app/Datas/MetatagData.php
+app/Filament/Traits/HasXotTable.php
+
+# Legacy Services/ root (violates no-services — canon app/Actions + app/Services only via manifest)
+Services/
+docs/legacy
+
+# claude-audit bridge (non committare)
+audit-coverage/
+tests/AuditCoverage/*
+>>>>>>> 8d801bbe (Check & fix styling)

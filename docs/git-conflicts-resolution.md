@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 =======
@@ -19,6 +20,9 @@
 >>>>>>> laraxot/dev
 ## Data: 2025-01-06
 >>>>>>> laraxot/dev
+=======
+## Data: [DATE]
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -116,6 +120,7 @@ $res=Locality::query()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Data: [DATE]
 =======
 =======
@@ -133,6 +138,9 @@ $res=Locality::query()
 >>>>>>> laraxot/dev
 ## Data: 2025-01-06
 >>>>>>> laraxot/dev
+=======
+## Data: [DATE]
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -258,6 +266,7 @@ php artisan lang:check
 
 ### Modulo Geo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_onZeDm
@@ -273,12 +282,15 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution-2025-01-06.md)
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
 - [Theme Translation Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 
 ### Modulo Xot
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
@@ -304,6 +316,9 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution-2025-01-06.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Best Practices Applicate
 
@@ -360,6 +375,7 @@ php artisan lang:check
 ### Documentazione Moduli
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
@@ -384,6 +400,8 @@ php artisan lang:check
 >>>>>>> .merge_file_XsJlfn
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
 
@@ -394,6 +412,7 @@ php artisan lang:check
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
@@ -425,3 +444,8 @@ php artisan lang:check
 >>>>>>> .merge_file_XsJlfn
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+**Autore**: Sistema di correzione automatica
+**Stato**: ✅ Completato
+>>>>>>> 8d801bbe (Check & fix styling)

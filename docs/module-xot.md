@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Modulo Xot
 
 ## Informazioni Generali
@@ -111,6 +114,7 @@ composer format        # Formatta il codice
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ---
@@ -122,3 +126,5 @@ canonical: ../../../Themes/docs/shared-components/module-xot.md
 See canonical documentation: ../../../Themes/docs/shared-components/module-xot.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

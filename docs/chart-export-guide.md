@@ -1039,6 +1039,7 @@ $schedule->call(function () {
 **Filament:** 4.x
 **Chart.js:** 4.x
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan Level:** 10
 =======
 <<<<<<< HEAD
@@ -1047,3 +1048,6 @@ $schedule->call(function () {
 **PHPStan Level:** 10
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**PHPStan Level:** 10
+>>>>>>> 8d801bbe (Check & fix styling)

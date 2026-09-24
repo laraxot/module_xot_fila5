@@ -2,6 +2,7 @@
 
 **Data**: 2025-01-22
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -9,6 +10,8 @@
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -34,12 +37,15 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 ### ✅ Completati
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%
@@ -108,6 +114,7 @@ Ogni modulo dovrebbe avere:
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-22*
 =======
 <<<<<<< HEAD
@@ -116,3 +123,6 @@ Ogni modulo dovrebbe avere:
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
 
 <<<<<<< HEAD
@@ -18,6 +19,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget
@@ -434,6 +437,7 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 <<<<<<< HEAD
 =======
@@ -451,10 +455,14 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 =======
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 >>>>>>> laraxot/dev
+=======
+- [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -462,3 +470,5 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

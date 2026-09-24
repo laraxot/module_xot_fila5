@@ -120,6 +120,7 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 - [Modulo DbForge](../DbForge/docs/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Database](../../docs/database-best-practices.md)
 - [Architettura Moduli](../../docs/module-architecture.md)
 =======
@@ -131,6 +132,10 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 - [Architettura Moduli](../../../docs/module-architecture.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Best Practices Database](../../docs/database-best-practices.md)
+- [Architettura Moduli](../../docs/module-architecture.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Note per gli Sviluppatori
 
@@ -150,6 +155,7 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
 =======
 <<<<<<< HEAD
@@ -158,3 +164,6 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 8d801bbe (Check & fix styling)

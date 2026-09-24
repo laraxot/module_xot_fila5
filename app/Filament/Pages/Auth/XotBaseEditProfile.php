@@ -7,9 +7,15 @@ namespace Modules\Xot\Filament\Pages\Auth;
 use Filament\Auth\Pages\EditProfile;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseEditProfile extends EditProfile {}
 =======
 abstract class XotBaseEditProfile extends EditProfile
 {
 }
 >>>>>>> laraxot/dev
+=======
+abstract class XotBaseEditProfile extends EditProfile
+{
+}
+>>>>>>> 8d801bbe (Check & fix styling)

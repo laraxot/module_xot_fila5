@@ -46,12 +46,15 @@ Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensio
 Per dettagli implementativi e best practice vedi:
 - [Geo/docs/geo-json-model.md](../../Geo/docs/geo-json-model.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [<nome progetto>/docs/geo-integration.md](../../<nome progetto>/docs/geo-integration.md)
 - [Questa stessa doc (Xot/module-structure.md)](module-structure.md)
 
@@ -81,6 +84,7 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -101,12 +105,17 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 - [Cms](../cms/project_docs/readme.md) - Gestione contenuti
 - [Lang](../lang/project_docs/readme.md) - Traduzioni
 - [User](../user/project_docs/readme.md) - Gestione utenti
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
 - [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Moduli Collegati
 - [UI](../UI/project_docs/README.md) - Componenti di interfaccia
@@ -271,6 +280,7 @@ User/
 
 ### Modulo UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -341,6 +351,8 @@ User/
 - [Visualizzazione](../chart/project_docs/visualization.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Componenti Volt](../UI/project_docs/components/volt.md)
 - [Layout](../UI/project_docs/layouts.md)
 - [Temi](../UI/project_docs/themes.md)
@@ -549,6 +561,7 @@ Se trovi una directory con case errato:
 
 ## Collegamenti tra versioni di module_structure.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
 =======
 <<<<<<< HEAD
@@ -557,3 +570,6 @@ Se trovi una directory con case errato:
 * [module_structure.md](../../../../../docs/project/error_analysis/module_structure.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
+>>>>>>> 8d801bbe (Check & fix styling)

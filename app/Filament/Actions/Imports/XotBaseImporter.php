@@ -13,6 +13,7 @@ use Filament\Actions\Imports\Importer as FilamentImporter;
  * This class wraps Filament's Importer to provide a XotBase layer.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseImporter extends FilamentImporter {}
 =======
 <<<<<<< .merge_file_oT0AQJ
@@ -22,12 +23,15 @@ abstract class XotBaseImporter extends FilamentImporter
 }
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 abstract class XotBaseImporter extends FilamentImporter
 {
 }
 =======
 abstract class XotBaseImporter extends FilamentImporter {}
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 abstract class XotBaseImporter extends FilamentImporter
@@ -35,3 +39,5 @@ abstract class XotBaseImporter extends FilamentImporter
 }
 >>>>>>> .merge_file_Oh2QPl
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

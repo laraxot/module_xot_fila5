@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 =======
 =======
@@ -41,3 +42,6 @@ https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Drive
 >>>>>>> .merge_file_B5S3eV
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
+>>>>>>> 8d801bbe (Check & fix styling)

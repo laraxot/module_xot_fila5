@@ -1,10 +1,14 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Header;
 
 <<<<<<< HEAD
@@ -28,10 +32,26 @@ use Webmozart\Assert\Assert;
  */
 >>>>>>> laraxot/dev
 class ExportPdfAction extends XotBaseAction
+=======
+declare(strict_types=1);
+
+namespace Modules\Xot\Filament\Actions\Header;
+
+// Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
+// use Filament\Actions\Action;
+use Filament\Actions\Action;
+use Filament\Resources\Pages\ListRecords;
+use Modules\Xot\Actions\Pdf\DownloadPdfByViewAction;
+use Modules\Xot\Actions\View\GetViewByModelClassAction;
+use Webmozart\Assert\Assert;
+
+class ExportPdfAction extends Action
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->translateLabel()
             ->label('')
@@ -58,6 +78,12 @@ class ExportPdfAction extends XotBaseAction
                 return (string) __('xot::export_pdf.tooltip');
             })
 >>>>>>> laraxot/dev
+=======
+        $this->translateLabel()
+            ->label('')
+            ->tooltip(__('xot::actions.export_pdf.tooltip'))
+            ->icon('ui-files.pdf')
+>>>>>>> 8d801bbe (Check & fix styling)
             ->action(static function (ListRecords $livewire) {
                 $filename =
                     class_basename($livewire).
@@ -66,10 +92,14 @@ class ExportPdfAction extends XotBaseAction
                     '.pdf';
                 $query = $livewire->getFilteredTableQuery();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($query === null) {
 =======
                 if (null === $query) {
 >>>>>>> laraxot/dev
+=======
+                if (null === $query) {
+>>>>>>> 8d801bbe (Check & fix styling)
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();

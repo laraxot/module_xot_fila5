@@ -2,7 +2,11 @@
 
 ## 📋 Overview
 
+<<<<<<< HEAD
 **File**: `Modules/Xot/Helpers/Helper.php`
+=======
+**File**: `Modules/Xot/helpers/Helper.php`
+>>>>>>> 8d801bbe (Check & fix styling)
 **Autoload**: Via `"files": ["Helpers/Helper.php"]` in `Xot/composer.json`
 **Disponibilità**: Globale in tutto il framework Laraxot
 
@@ -66,6 +70,7 @@ $json = dddx(['key' => 'value']);
 
 **Caratteristiche**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
 =======
 <<<<<<< HEAD
@@ -74,6 +79,9 @@ $json = dddx(['key' => 'value']);
 - Solo sviluppo: non usare in produzione (policy no-log-debug)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Logga sempre via `Log::debug()`
+>>>>>>> 8d801bbe (Check & fix styling)
 - Usa `Safe\json_encode()` per type safety
 - Ritorna string (non void)
 
@@ -308,7 +316,11 @@ if (! function_exists('helperName')) {
    ↓
 2. Autoload PSR-4 + files
    ↓
+<<<<<<< HEAD
 3. Xot/Helpers/Helper.php loaded (via "files")
+=======
+3. Xot/helpers/Helper.php loaded (via "files")
+>>>>>>> 8d801bbe (Check & fix styling)
    ↓
 4. Helper functions disponibili globalmente
    ↓
@@ -372,12 +384,15 @@ composer dump-autoload
 
 **Last Updated**: 2 Dicembre 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
@@ -385,6 +400,7 @@ composer dump-autoload
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
 =======
 <<<<<<< HEAD
@@ -393,3 +409,6 @@ composer dump-autoload
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+>>>>>>> 8d801bbe (Check & fix styling)

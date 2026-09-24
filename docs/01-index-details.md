@@ -2,6 +2,7 @@
 
 ## Core Architecture
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Architecture Complete Guide](./architecture-complete-2025.md)
 =======
 <<<<<<< HEAD
@@ -10,6 +11,9 @@
 - [Architecture Complete Guide](./architecture-complete.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Architecture Complete Guide](./architecture-complete-2025.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Project Philosophy, Religion, Politics, Zen](./project-philosophy-religion-politics-zen.md)
@@ -26,6 +30,7 @@
 
 ## PHPStan Analysis Reports
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -38,6 +43,8 @@
 - [Quality Improvements Summary [DATE]](./quality-improvements-summary-[DATE].md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [PHPStan Analysis 2025-01-27](./phpstan-analysis-2025-01-27.md)
 - [PHPStan Analysis 2025-12-17](./phpstan-analysis-2025-12-17.md)
 - [PHPStan Analysis 2025-12-18](./phpstan-analysis-2025-12-18.md)
@@ -62,9 +69,12 @@
 ---
 *Last updated: 2025-12-18*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 *
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

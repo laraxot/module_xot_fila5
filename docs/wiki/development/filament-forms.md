@@ -27,6 +27,7 @@ class PerformanceResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -47,6 +48,10 @@ class PerformanceResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cvYoFY
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\Card::make()
@@ -267,6 +272,7 @@ Forms\Components\Grid::make()
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -287,6 +293,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cvYoFY
 >>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         Forms\Components\TextInput::make('codice')

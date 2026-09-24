@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Convenzioni per Form Schema in Filament
 
 ## Regola Fondamentale
@@ -12,7 +15,11 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -29,7 +36,11 @@ public function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -101,7 +112,11 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -116,7 +131,11 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),
@@ -133,6 +152,7 @@ class MyResource extends XotBaseResource
 3. **Chiarezza**: Rende esplicita l'associazione tra campi e componenti
 4. **Estensibilità**: Permette l'override parziale del form schema nelle classi derivate
 
+<<<<<<< HEAD
 ## `getFormSchema()`/`getInfolistSchema()` sono di ISTANZA — anche su enum
 
 `XotBaseResource::getFormSchema()` è `final public function` (istanza). La stessa
@@ -175,10 +195,15 @@ resta un gap aperto (18.41 AC, task "guardia").
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Documentazione Correlata
+
+>>>>>>> 8d801bbe (Check & fix styling)
 - [XotBaseResource](./XOT_BASE_RESOURCE.md)
 - [Form Components](./FORM_COMPONENTS.md)
 - [Form Validation](./FORM_VALIDATION.md)
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Story 18.41 — test che chiamano getFormSchema staticamente](./stories/18.41.test-chiamano-getformschema-staticamente.story.md)
 - [Epic 5.86 — forma canonica istanza](./stories/5.86.xotbaseresourceform-infolist-trait-based-instance-pattern-epic.story.md)
@@ -196,3 +221,5 @@ canonical: ../../../Themes/docs/shared-components/filament-form-schema-conventio
 See canonical documentation: ../../../Themes/docs/shared-components/filament-form-schema-conventions-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

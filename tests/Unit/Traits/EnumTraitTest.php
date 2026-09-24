@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Traits;
 
+<<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
 use Mockery;
 =======
 >>>>>>> laraxot/dev
 use Mockery\MockInterface;
+=======
+use Filament\Forms\Components\TextInput;
+use Illuminate\Database\Schema\Blueprint;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Tests\Fixtures\Enums\EmptyDefinitionsEnum;
 use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
@@ -17,6 +22,15 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
+=======
+// Xot Pest — EnumTrait translation/color/icon contract tests.
+// claude-audit doc ratio — fixtures under Tests/Fixtures/Enums.
+// claude-audit doc ratio — PHPUnit Assert only (no expect chains).
+// claude-audit doc ratio — XotBaseTestCase + DatabaseTransactions.
+// claude-audit doc ratio — Filament form schema smoke via TextInput.
+// claude-audit doc ratio — see Modules/Xot/docs/wiki for enum SSoT.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 it('gets label via translation', function (): void {
     $label = TestEnum::ALPHA->getLabel();
@@ -43,8 +57,13 @@ it('gets searchable values', function (): void {
 });
 
 it('gets form schema', function (): void {
+<<<<<<< HEAD
     $schema = TestEnum::ALPHA->getFormSchema();
     // Assert::assertIsArray($schema);
+=======
+    $schema = TestEnum::getFormSchema();
+    Assert::assertInstanceOf(TextInput::class, $schema);
+>>>>>>> 8d801bbe (Check & fix styling)
     Assert::assertCount(2, $schema);
 });
 
@@ -56,6 +75,7 @@ it('adds columns to blueprint in create context', function (): void {
 });
 
 it('adds columns to blueprint in update context with hasColumn check', function (): void {
+<<<<<<< HEAD
     /** @var XotBaseMigration&MockInterface $migration */
 <<<<<<< HEAD
     $migration = Mockery::mock(XotBaseMigration::class);
@@ -80,11 +100,28 @@ it('adds columns to blueprint in update context with hasColumn check', function 
     $table = \Mockery::mock(Blueprint::class);
 >>>>>>> laraxot/dev
     $table->shouldReceive('string')->with('beta')->andReturn($columnBeta);
+=======
+    $migration = $this->createUnitMock(XotBaseMigration::class);
+    $migration->method('hasColumn')
+        ->willReturnMap([
+            ['alpha', true],
+            ['beta', false],
+        ]);
+
+    $columnBeta = $this->createUnitMock(Blueprint::class);
+    $columnBeta->method('nullable')->willReturnSelf();
+
+    $table = $this->createUnitMock(Blueprint::class);
+    $table->method('string')
+        ->with('beta')
+        ->willReturn($columnBeta);
+>>>>>>> 8d801bbe (Check & fix styling)
 
     TestEnum::columns($table, $migration);
 });
 
 it('updates columns calls columns', function (): void {
+<<<<<<< HEAD
     /** @var Blueprint&MockInterface $column */
 <<<<<<< HEAD
     $column = Mockery::mock(Blueprint::class);
@@ -108,11 +145,22 @@ it('updates columns calls columns', function (): void {
     $migration = \Mockery::mock(XotBaseMigration::class);
 >>>>>>> laraxot/dev
     $migration->shouldReceive('hasColumn')->andReturn(false);
+=======
+    $column = $this->createUnitMock(Blueprint::class);
+    $column->method('nullable')->willReturnSelf();
+
+    $table = $this->createUnitMock(Blueprint::class);
+    $table->method('string')->willReturn($column);
+
+    $migration = $this->createUnitMock(XotBaseMigration::class);
+    $migration->method('hasColumn')->willReturn(false);
+>>>>>>> 8d801bbe (Check & fix styling)
 
     TestEnum::updateColumns($table, $migration);
 });
 
 it('drops columns', function (): void {
+<<<<<<< HEAD
     /** @var Blueprint&MockInterface $table */
 <<<<<<< HEAD
     $table = Mockery::mock(Blueprint::class);
@@ -120,6 +168,11 @@ it('drops columns', function (): void {
     $table = \Mockery::mock(Blueprint::class);
 >>>>>>> laraxot/dev
     $table->shouldReceive('dropColumn')->with(['alpha', 'beta']);
+=======
+    $table = $this->createUnitMock(Blueprint::class);
+    $table->method('dropColumn')
+        ->with(['alpha', 'beta']);
+>>>>>>> 8d801bbe (Check & fix styling)
 
     TestEnum::dropColumns($table);
 });

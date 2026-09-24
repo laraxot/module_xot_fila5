@@ -257,6 +257,7 @@ php artisan test --filter=[NomeModulo]
 ## Changelog
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
 =======
 <<<<<<< .merge_file_mdDLJS
@@ -269,6 +270,9 @@ Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ZmCxQh
 >>>>>>> laraxot/dev
+=======
+Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Licenza
 

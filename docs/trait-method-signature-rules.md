@@ -136,6 +136,7 @@ If you encounter this error:
 
 *Last Updated: 2025-08-27*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Trait Standards Version: 2.0*
 
 =======
@@ -147,3 +148,7 @@ If you encounter this error:
 *Trait Standards Version: 2.0*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Trait Standards Version: 2.0*
+
+>>>>>>> 8d801bbe (Check & fix styling)

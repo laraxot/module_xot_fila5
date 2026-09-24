@@ -90,6 +90,7 @@ Dopo la modifica, verifica con:
 
 *Risolto: 2025-01-10*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Architecture Version: XotBase 2.1*
 =======
 <<<<<<< HEAD
@@ -99,3 +100,6 @@ Dopo la modifica, verifica con:
 *Architecture Version: XotBase 2.1*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Architecture Version: XotBase 2.1*
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -48,12 +49,18 @@ class HandlerDecorator implements ExceptionHandlerContract
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 module: theme
 topic: handler-orator
 canonical: ../../../../Themes/docs/shared-components/handler-decorator.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
+>>>>>>> 8d801bbe (Check & fix styling)

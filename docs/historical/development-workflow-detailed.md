@@ -176,16 +176,20 @@ class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
@@ -195,6 +199,8 @@ class ProductResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -207,16 +213,20 @@ class ProductResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
@@ -226,6 +236,8 @@ class ProductResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Infolists\Components\TextEntry::make('name'),

@@ -60,6 +60,7 @@ Verificare **TUTTI i moduli** per accessor che chiamano `save()` senza guard `if
 
 **File Principali**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. `Models/Schede.php` - Da verificare
 =======
 <<<<<<< HEAD
@@ -68,6 +69,9 @@ Verificare **TUTTI i moduli** per accessor che chiamano `save()` senza guard `if
 1. `Models/Scheda.php` - Da verificare
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+1. `Models/Schede.php` - Da verificare
+>>>>>>> 8d801bbe (Check & fix styling)
 2. `Models/Pesi.php` - Da verificare
 3. `Models/MaxCatecoPosfunAnno.php` - Da verificare
 
@@ -158,12 +162,15 @@ Ogni modulo deve avere:
 
 - [Regola Globale](../../Xot/docs/accessor-save-guard-global-rule.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ## Metriche Target
@@ -189,6 +196,7 @@ Ogni modulo deve avere:
 
 - [Regola Globale](./accessor-save-guard-global-rule.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -200,6 +208,8 @@ Ogni modulo deve avere:
 **Creato**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Sigma Implementation](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Pattern Template](../../Sigma/docs/accessor-refactoring-philosophy.md)
 
@@ -209,6 +219,7 @@ Ogni modulo deve avere:
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Timeline**: 3 settimane per audit completo
 =======
 <<<<<<< HEAD
@@ -217,3 +228,6 @@ Ogni modulo deve avere:
 **Timeline**: 3 settimane per audit completo
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Timeline**: 3 settimane per audit completo
+>>>>>>> 8d801bbe (Check & fix styling)

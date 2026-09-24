@@ -1,15 +1,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_EQMZ7Y
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 https://themeselection.com/laravel-admin-panel-template/
 
 
 https://github.com/BRACKETS-by-TRIAD/craftable
 
 
+<<<<<<< HEAD
 https://github.com/InfyOmLabs/laravel-generator
 =======
 <<<<<<< HEAD
@@ -59,3 +63,6 @@ https://github.com/InfyOmLabs/laravel-generator
 >>>>>>> .merge_file_6WkEpE
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/InfyOmLabs/laravel-generator
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_a5S7V4
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_8UqWEH
 >>>>>>> .merge_file_f7pN70
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: 05-viewrecord-infolist-override
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_a5S7V4
 =======
 <<<<<<< .merge_file_zOKU8Y
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_8UqWEH
 >>>>>>> .merge_file_f7pN70
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # BMAD Story 05 — ViewRecord non ridefinisce getInfolistSchema
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

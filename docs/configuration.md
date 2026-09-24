@@ -64,6 +64,7 @@ return [
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -76,6 +77,8 @@ return [
 * [configuration.md](../../../cms/docs/configuration.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Gestione Domini](DOMAIN_CONFIGURATION.md)
 - [Struttura del Progetto](PROJECT_STRUCTURE.md)
 - [Documentazione Principale](../README.md)
@@ -83,6 +86,7 @@ return [
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../Xot/docs/configuration.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [configuration.md](../../../Cms/docs/configuration.md)
 =======
 <<<<<<< HEAD
@@ -91,3 +95,6 @@ return [
 * [configuration.md](../../../Cms/docs/configuration.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [configuration.md](../../../Cms/docs/configuration.md)
+>>>>>>> 8d801bbe (Check & fix styling)

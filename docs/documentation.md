@@ -42,6 +42,7 @@ Modules/[Nome]/
 ## Collegamenti
 - [Indice della Documentazione](../docs/INDEX.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole del Progetto](rules.md)
 - [Struttura dei Moduli](structure.md)
 =======
@@ -53,11 +54,16 @@ Modules/[Nome]/
 - [Struttura dei Moduli](../docs/STRUCTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Regole del Progetto](../docs/RULES.md)
+- [Struttura dei Moduli](../docs/STRUCTURE.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
 * [documentation.md](../../../Xot/docs/documentation.md)
 * [documentation.md](../../../Xot/docs/guidelines/documentation.md)
 * [documentation.md](../../../Cms/docs/roadmap/features/documentation.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -99,3 +105,5 @@ https://beyondco.de/docs/laravel-apidoc-generator/getting-started/documenting-yo
 https://flarum.org/
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -28,6 +28,7 @@ BMAD non e' un generatore casuale di codice: e' il processo di delivery. Prima s
 - Quality gate proporzionati al cambio; per PHP almeno `php -l`, PHPStan mirato e `git diff --check`.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -46,6 +47,8 @@ SSoT: `bashscripts/ai/wiki/memories/bmad-artifacts-live-in-module-docs.md` · al
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## LLM Wiki locale
 
 - Raw ufficiale BMAD: `docs/raw/bmad/llms-full.txt`.

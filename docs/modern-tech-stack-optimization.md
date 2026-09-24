@@ -1809,9 +1809,12 @@ class ContactDashboard extends Dashboard
             'overview' => [
                 'label' => 'Overview',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 'url' => route('filament.quaeris.dashboard'),
                 'isActive' => request()->routeIs('filament.quaeris.dashboard'),
             ],
@@ -1824,6 +1827,7 @@ class ContactDashboard extends Dashboard
                 'label' => 'Reports',
                 'url' => route('filament.quaeris.reports'),
                 'isActive' => request()->routeIs('filament.quaeris.reports'),
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1841,6 +1845,8 @@ class ContactDashboard extends Dashboard
                 'isActive' => request()->routeIs('filament.healthcare_app.reports'),
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             ],
         ];
     }
@@ -1939,6 +1945,7 @@ class PerformanceMonitoringMiddleware
 - [ ] Tests comprehensive (85%+ coverage)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
 =======
 <<<<<<< HEAD
@@ -1947,3 +1954,6 @@ Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfru
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
+>>>>>>> 8d801bbe (Check & fix styling)

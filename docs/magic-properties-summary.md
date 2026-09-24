@@ -17,6 +17,7 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_fS5TvL
 <<<<<<< HEAD
@@ -36,6 +37,9 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 ### ✅ <nome progetto> Module
 >>>>>>> .merge_file_Mbrif3
 >>>>>>> laraxot/dev
+=======
+### ✅ <nome progetto> Module
+>>>>>>> 8d801bbe (Check & fix styling)
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module
@@ -81,6 +85,7 @@ Files generally have good scores with minor style issues:
 **✅ COMPLETED**: All `property_exists()` usage in Eloquent models has been eliminated and replaced with proper magic property checks.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_fS5TvL
 <<<<<<< HEAD
@@ -99,3 +104,6 @@ Files generally have good scores with minor style issues:
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> .merge_file_Mbrif3
 >>>>>>> laraxot/dev
+=======
+**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> 8d801bbe (Check & fix styling)

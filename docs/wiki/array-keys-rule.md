@@ -81,6 +81,7 @@ public static function getTableColumns(): array
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -94,6 +95,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'title' => TextInput::make('title')->required()->maxLength(255),
@@ -105,6 +109,7 @@ public static function getFormSchema(): array
 
 ### Infolist
 ```php
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -120,6 +125,9 @@ public function getInfolistSchema(): array
 public static function getInfolistSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getInfolistSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'title' => TextEntry::make('title'),
@@ -136,6 +144,7 @@ public static function getInfolistSchema(): array
 ---
 **Creato**: 2026-05-07
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo**: Xot
 =======
 <<<<<<< HEAD
@@ -144,3 +153,6 @@ public static function getInfolistSchema(): array
 **Modulo**: Xot
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Modulo**: Xot
+>>>>>>> 8d801bbe (Check & fix styling)

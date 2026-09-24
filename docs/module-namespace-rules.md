@@ -20,13 +20,17 @@
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [docs root](../../../../docs/actions.md)
 - [docs Lang](../../Lang/docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -37,3 +41,5 @@ Ultimo aggiornamento: maggio 2025.
 - [docs Lang](../../lang/docs/filament-label.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

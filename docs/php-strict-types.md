@@ -10,6 +10,7 @@ This document provides guidelines for using strict typing in PHP within a Larave
 ## Implementation Guidelines
 ### 1. Declare Strict Types
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_TFBmVf
@@ -31,10 +32,13 @@ This document provides guidelines for using strict typing in PHP within a Larave
 =======
 =======
 >>>>>>> .merge_file_trqcjj
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - Always declare strict types at the top of every PHP file to enable strict type checking.
   ```php
   declare(strict_types=1);
   ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_TFBmVf
 =======
 - `declare(strict_types=1);` è la **prima istruzione** dopo `<?php` (riga vuota in mezzo). **Mai** prima del tag di apertura: PHP fatale `strict_types declaration must be the very first statement`.
@@ -53,6 +57,8 @@ This document provides guidelines for using strict typing in PHP within a Larave
 >>>>>>> .merge_file_trqcjj
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### 2. Function and Method Signatures
 - Use type hints for parameters and return types in all function and method declarations.
@@ -87,6 +93,7 @@ This document provides guidelines for using strict typing in PHP within a Larave
 - Update this document if new strict typing features or practices are introduced in PHP.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -126,11 +133,16 @@ Campagna: [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed
 - [Naming Conventions](./naming-conventions.md)
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Code Quality](./CODE_QUALITY.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+<<<<<<< HEAD
 >>>>>>> .merge_file_trqcjj
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

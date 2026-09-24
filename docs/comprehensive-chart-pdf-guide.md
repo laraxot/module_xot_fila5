@@ -16,6 +16,7 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 ### Key Components
 - **Chart Module**: Contains chart generation and styling logic
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris Module**: Handles survey data and PDF generation
 =======
 <<<<<<< HEAD
@@ -25,6 +26,9 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 - **ExternalProject Module**: Handles survey data and PDF generation
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Quaeris Module**: Handles survey data and PDF generation
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Xot Module**: Provides core services including HTML to PDF conversion
 - **JpGraph Library**: Server-side chart generation
 - **Chart.js**: Client-side chart visualization
@@ -438,12 +442,15 @@ class MakePdfAction
         $survey_date_to = $surveyPdf->date_to;
         if ($survey_date_to === null || $survey_date_to === '0000-00-00') {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
         if ($survey_date_to === null || $survey_date_to === '[DATE]') {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             $survey_date_to = date('W / o');
         } else {
             $survey_date_to = date('W / o', strtotime($survey_date_to));
@@ -526,6 +533,7 @@ PDFs support multi-page layouts with proper headers and footers:
 
 ```blade
 <<<<<<< HEAD
+<<<<<<< HEAD
 @include('quaeris::pdf.css')
 =======
 <<<<<<< HEAD
@@ -534,6 +542,9 @@ PDFs support multi-page layouts with proper headers and footers:
 @include('healthcare_app::pdf.css')
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+@include('quaeris::pdf.css')
+>>>>>>> 8d801bbe (Check & fix styling)
 
 <page backtop="{{ $pdf->backtop }}mm" backbottom="{{ $pdf->backbottom }}mm">
     <page_header>
@@ -608,6 +619,7 @@ PDFs support multi-page layouts with proper headers and footers:
 - **Error Tracking**: Track and fix common generation errors
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
 =======
 <<<<<<< HEAD
@@ -616,3 +628,6 @@ This comprehensive system allows for flexible, scalable chart generation and PDF
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
+>>>>>>> 8d801bbe (Check & fix styling)

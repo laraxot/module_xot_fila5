@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_TA86Rw
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # _inodes
 
 <!-- Contenuto migrato da _docs/_inodes.txt -->
@@ -14,6 +17,7 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 /dev/xvda1      7692288 652294 7039994    9%      /
 
 --------------------------------------------------------------
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -62,6 +66,8 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 =======
 >>>>>>> .merge_file_T5cVUW
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------
@@ -94,6 +100,7 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -107,3 +114,6 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 --------------------------------------------------------------
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+--------------------------------------------------------------
+>>>>>>> 8d801bbe (Check & fix styling)

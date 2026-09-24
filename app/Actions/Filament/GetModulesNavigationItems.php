@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -21,13 +22,21 @@ use Webmozart\Assert\Assert;
 use function Safe\json_encode;
 
 =======
+=======
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\json_encode;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
@@ -45,11 +54,16 @@ class GetModulesNavigationItems
     {
         $navs = [];
 
+<<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
 <<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> laraxot/dev
+=======
+        $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
+        // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
+>>>>>>> 8d801bbe (Check & fix styling)
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -127,10 +141,14 @@ class GetModulesNavigationItems
                      */
                     $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($user === null) {
 =======
                     if (null === $user) {
 >>>>>>> laraxot/dev
+=======
+                    if (null === $user) {
+>>>>>>> 8d801bbe (Check & fix styling)
                         return false;
                     }
 
@@ -156,11 +174,16 @@ class GetModulesNavigationItems
      */
     public function getCachedModuleConfigs(): array
     {
+<<<<<<< HEAD
         $modules = app(GetTenantModulesAction::class)->execute();
 <<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> laraxot/dev
+=======
+        $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
+        // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
+>>>>>>> 8d801bbe (Check & fix styling)
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 

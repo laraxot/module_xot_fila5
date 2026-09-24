@@ -6,8 +6,11 @@ namespace Modules\Xot\Filament\Widgets;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 class StatesChartWidget extends XotBaseChartWidget
 {
@@ -35,10 +38,14 @@ class StatesChartWidget extends XotBaseChartWidget
             /** @var class-string<Model> $modelClass */
             $modelClass = $this->model;
 <<<<<<< HEAD
+<<<<<<< HEAD
             $instance = new $modelClass;
 =======
             $instance = new $modelClass();
 >>>>>>> laraxot/dev
+=======
+            $instance = new $modelClass();
+>>>>>>> 8d801bbe (Check & fix styling)
 
             /** @var array<string, string> $colors */
             $colors = [
@@ -55,8 +62,13 @@ class StatesChartWidget extends XotBaseChartWidget
                 ->groupBy('state')
                 ->get();
             foreach ($rows as $row) {
+<<<<<<< HEAD
                 $state = SafeStringCastAction::cast($row->state ?? '');
                 $states[$state] = SafeIntCastAction::cast($row->count ?? 0);
+=======
+                $state = (string) ($row->state ?? '');
+                $states[$state] = (int) ($row->count ?? 0);
+>>>>>>> 8d801bbe (Check & fix styling)
             }
 
             $data = [];

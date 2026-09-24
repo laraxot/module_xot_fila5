@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Support\Facades\Route;
 
 $namespace = '\Modules\Xot\Http\Controllers';

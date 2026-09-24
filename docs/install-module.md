@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_WIADpN
@@ -31,6 +32,8 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -65,6 +68,7 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -78,3 +82,6 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
     }
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    }
+>>>>>>> 8d801bbe (Check & fix styling)

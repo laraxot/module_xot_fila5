@@ -821,6 +821,7 @@ class XotPerformanceMonitor
 
 - [Laravel Architecture Patterns](https://laravel.com/project_docs/architecture-concepts)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
 - [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
 - [Performance Best Practices](../../../project_docs/performance-best-practices.md)
@@ -835,12 +836,18 @@ class XotPerformanceMonitor
 - [Performance Best Practices](../../../../docs/project/performance-best-practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
+- [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
+- [Performance Best Practices](../../../project_docs/performance-best-practices.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 
 *Documento creato: Gennaio 2025*
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
 =======
 <<<<<<< HEAD
@@ -849,3 +856,6 @@ class XotPerformanceMonitor
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
+>>>>>>> 8d801bbe (Check & fix styling)

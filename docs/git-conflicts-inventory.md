@@ -57,6 +57,7 @@
 - ❌ Conflitti da risolvere
 - 📅 Data rilevamento: 2025-11-12
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 🔄 Priorità: ALTA - File critici del core framework
 =======
 <<<<<<< HEAD
@@ -66,3 +67,6 @@
 - 🔄 Priorità: ALTA - File critici del core framework
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- 🔄 Priorità: ALTA - File critici del core framework
+>>>>>>> 8d801bbe (Check & fix styling)

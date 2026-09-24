@@ -33,6 +33,7 @@ find translations.md)
 - [Traduzioni](../../Xot/docs/translations.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -40,6 +41,8 @@ find translations.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 #### C. Struttura Documentazione Corretta
@@ -172,13 +175,17 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 
 **DATA EFFETTIVA**: 2025-08-20
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **PRIORITÀ**: CRITICA
 **RESPONSABILE**: Tutto il team sviluppo
 
 *Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -189,3 +196,5 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 *Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

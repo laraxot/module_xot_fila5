@@ -2,12 +2,15 @@
 
 ## Data: 2024-12-19
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**
 
@@ -63,13 +66,17 @@
    - **Impatto**: Categorie multilingua
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 4. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
    - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -79,6 +86,8 @@
    - **Impatto**: Coerenza nel modulo <nome progetto>
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 5. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/EditPageContent.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
@@ -96,13 +105,17 @@
    - **Impatto**: Modifica categorie multilingua
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 8. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -112,6 +125,8 @@
    - **Impatto**: Coerenza nel modulo <nome progetto>
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 9. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/ViewPageContent.php`**
    - **Prima**: `extends ViewRecord` + `use ViewRecord\Concerns\Translatable`
@@ -288,6 +303,7 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 ## Correzioni Implementate (Data: 2024)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ... existing code ...
 =======
 <<<<<<< HEAD
@@ -296,3 +312,6 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 // ... existing code ...
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// ... existing code ...
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/extra.php
+>>>>>>> 8d801bbe (Check & fix styling)
 return [
     'navigation' => [
         'name' => 'extra',
@@ -9,9 +15,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'extra.navigation',
         'icon' => 'extra.navigation',
         'sort' => 38,
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'pages' => [
         'health_check_results' => [
@@ -36,7 +45,10 @@ return [
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
             'placeholder' => 'id',
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -50,6 +62,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'model_type' => [
             'label' => 'model_type',
         ],
@@ -77,10 +90,13 @@ return [
             'helper_text' => '',
             'description' => 'value',
         ],
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Extra',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -103,6 +119,14 @@ return [
             'label' => 'save',
             'icon' => 'save',
             'tooltip' => 'save',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Extra',
+        ],
+        'delete' => [
+            'label' => 'Elimina Extra',
+>>>>>>> 8d801bbe (Check & fix styling)
         ],
     ],
 ];

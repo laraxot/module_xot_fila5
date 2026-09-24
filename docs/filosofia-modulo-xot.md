@@ -2,12 +2,15 @@
 
 > **Generato**: 2025-12-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 > **Generato**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo Xot
 
 ---
@@ -31,6 +34,7 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 // XotBaseResource definisce il template
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -44,6 +48,9 @@ abstract public function getFormSchema(): array;
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 final public static function form(Schema $schema): Schema {
     return $schema->components(static::getFormSchema());
@@ -349,6 +356,7 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -362,6 +370,9 @@ class UserResource extends XotBaseResource {
     public static function getFormSchema(): array {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array {
+>>>>>>> 8d801bbe (Check & fix styling)
         return [TextInput::make('name')];
     }
 }
@@ -419,6 +430,7 @@ Il modulo Xot rappresenta **l'incarnazione perfetta dei principi DRY+KISS applic
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 - [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -426,3 +438,5 @@ Il modulo Xot rappresenta **l'incarnazione perfetta dei principi DRY+KISS applic
 - [Filament 4 Laraxot Rules](./filament_4_laraxot_rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

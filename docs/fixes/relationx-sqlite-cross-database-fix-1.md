@@ -75,6 +75,7 @@ echo $tenants->count(); // ✅ Output: 1
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 =======
 <<<<<<< HEAD
@@ -83,6 +84,9 @@ echo $tenants->count(); // ✅ Output: 1
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -95,6 +99,7 @@ echo $tenants->count(); // ✅ Output: 1
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
 =======
 <<<<<<< HEAD
@@ -103,3 +108,6 @@ echo $tenants->count(); // ✅ Output: 1
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+>>>>>>> 8d801bbe (Check & fix styling)

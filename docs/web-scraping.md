@@ -1,15 +1,19 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MQuCSv
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 module: theme
 topic: web-scraping
 canonical: ../../../Themes/docs/shared-components/web_scraping.txt
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/web_scraping.txt
 =======
 <<<<<<< HEAD
@@ -55,3 +59,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/web_scraping
 >>>>>>> .merge_file_fPjaMt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/web_scraping.txt
+>>>>>>> 8d801bbe (Check & fix styling)

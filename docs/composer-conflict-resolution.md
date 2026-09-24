@@ -10,6 +10,7 @@
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione dipendenze Composer](../../../../docs/composer.md)
 =======
 <<<<<<< HEAD
@@ -18,3 +19,6 @@
 - [Gestione dipendenze Composer](../../../../../docs/composer.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Gestione dipendenze Composer](../../../../docs/composer.md)
+>>>>>>> 8d801bbe (Check & fix styling)

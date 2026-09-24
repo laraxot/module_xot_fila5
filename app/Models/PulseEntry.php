@@ -9,6 +9,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseEntryFactory;
 
 /**
+<<<<<<< HEAD
  * <<<<<<< HEAD.
  *
  * @property string               $id
@@ -23,6 +24,8 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @method static PulseEntryFactory factory($count = null, $state = [])
  *                                                                      =======
  *
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @property string               $id
  * @property int                  $timestamp
  * @property string               $type
@@ -33,7 +36,10 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @property ProfileContract|null $updater
  *
  * @method static PulseEntryFactory          factory($count = null, $state = [])
+<<<<<<< HEAD
  *                                                                               >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @method static Builder<static>|PulseEntry newModelQuery()
  * @method static Builder<static>|PulseEntry newQuery()
  * @method static Builder<static>|PulseEntry query()

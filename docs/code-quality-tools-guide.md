@@ -2,12 +2,15 @@
 
 **Data Creazione**: 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -815,18 +818,22 @@ jobs:
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 95%
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 =======
 <<<<<<< HEAD
@@ -835,3 +842,6 @@ jobs:
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
+>>>>>>> 8d801bbe (Check & fix styling)

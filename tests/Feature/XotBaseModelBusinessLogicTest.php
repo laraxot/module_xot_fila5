@@ -20,11 +20,16 @@ uses(TestCase::class);
 function createXotBaseModelFixture(): BaseModel
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return new class extends BaseModel {};
 =======
     return new class extends BaseModel {
     };
 >>>>>>> laraxot/dev
+=======
+    return new class extends BaseModel {
+    };
+>>>>>>> 8d801bbe (Check & fix styling)
 }
 
 describe('Xot Base Model Business Logic', function (): void {
@@ -91,10 +96,14 @@ describe('Xot Base Model Business Logic', function (): void {
     test('it can be used as base for other models', function (): void {
         // Arrange
 <<<<<<< HEAD
+<<<<<<< HEAD
         $module = new Module;
 =======
         $module = new Module();
 >>>>>>> laraxot/dev
+=======
+        $module = new Module();
+>>>>>>> 8d801bbe (Check & fix styling)
 
         // Act & Assert
         Assert::assertInstanceOf(XotBaseModel::class, $module);

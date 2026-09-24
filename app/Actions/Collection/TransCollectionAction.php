@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Collection;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // use Modules\Xot\Services\ArrayService;
 
 >>>>>>> laraxot/dev
+=======
+// use Modules\Xot\Services\ArrayService;
+
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -26,20 +31,29 @@ class TransCollectionAction
      * Esegue la traduzione di una collezione.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Collection<int|string, mixed>  $collection
 =======
      * @param Collection<int|string, mixed> $collection
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Collection<int|string, mixed> $collection
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return Collection<int|string, string>
      */
     public function execute(Collection $collection, ?string $transKey): Collection
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($transKey === null) {
 =======
         if (null === $transKey) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $transKey) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return $collection->map(SafeStringCastAction::cast(...));
         }
 
@@ -52,11 +66,16 @@ class TransCollectionAction
      * Traduce un singolo elemento.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $item  L'elemento da tradurre
 =======
      * @param mixed $item L'elemento da tradurre
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed $item L'elemento da tradurre
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
     public function trans(mixed $item): string
@@ -67,10 +86,14 @@ class TransCollectionAction
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (empty($item) || $this->transKey === null) {
 =======
         if (empty($item) || null === $this->transKey) {
 >>>>>>> laraxot/dev
+=======
+        if (empty($item) || null === $this->transKey) {
+>>>>>>> 8d801bbe (Check & fix styling)
             return $item;
         }
 

@@ -22,6 +22,7 @@
 ## 🧹 Manutenzione
 - 🗑️ [Cleanup Plan](./cleanup-action-plan.md) - Strategia per consolidare documenti accumulati.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_T8QccE
 =======
@@ -52,12 +53,17 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+- 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
+- 🔁 [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - UrlService/ThemeService/HtmlService migrati ad Actions; ConfigService/XotService/ArrayService/ProfileTest archiviati in .bak (codice morto); ArtisanService/RouteService/ModuleService/Translators/Trend lasciati intatti per sessione dedicata.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 🔗 Moduli Dipendenti
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # Xot Module Documentation Index
@@ -138,6 +144,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+# Xot Module Documentation Index
+
+>>>>>>> 8d801bbe (Check & fix styling)
 > **Core Framework Module** - Provides base classes and shared functionality for all modules
 
 ## Roadmap
@@ -147,6 +157,7 @@
 ## 📚 Documentation Sections
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Composer / dipendenze
 =======
 <<<<<<< .merge_file_T8QccE
@@ -155,17 +166,23 @@
 <<<<<<< HEAD
 ### Composer / dipendenze
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ### Core Architecture
 - [XotBase Classes & Inheritance Patterns](./xotbase-extension.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 ## Composer / dipendenze
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 - [composer-root-skeleton-modular](./wiki/concepts/composer-root-skeleton-modular.md) — root skeleton + merge solo moduli
 - [theme-psr4-autoload-without-merge](./wiki/concepts/theme-psr4-autoload-without-merge.md) — autoload temi senza merge root
 - [Module Dependency Management](./composer-module-dependency-management.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
 =======
@@ -180,6 +197,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+- [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
+- [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study.md)
 - [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog.md) - Studio completo package-by-package da `composer show`
 - [Database Connection Configuration](./database-configuration-critical-rules.md)
@@ -240,6 +261,7 @@
 ## Dependency Intelligence
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](dependency-intelligence.md)
@@ -266,3 +288,6 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> 8d801bbe (Check & fix styling)

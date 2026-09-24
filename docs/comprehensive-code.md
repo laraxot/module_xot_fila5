@@ -178,6 +178,7 @@ try {
 // ContactResource.php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -191,6 +192,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('first_name'),
@@ -201,6 +205,7 @@ public static function getFormSchema(): array
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -214,6 +219,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('name')->required(),
@@ -311,6 +319,7 @@ class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -324,6 +333,9 @@ class ContactResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('first_name'),
@@ -675,6 +687,7 @@ try {
 // ContactResource.php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -688,6 +701,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('first_name'),
@@ -698,6 +714,7 @@ public static function getFormSchema(): array
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -711,6 +728,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('name')->required(),
@@ -811,6 +831,7 @@ class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -824,6 +845,9 @@ class ContactResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('first_name'),
@@ -983,6 +1007,7 @@ return [
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stima Effort**: 40-60 ore di refactoring
 =======
 <<<<<<< HEAD
@@ -991,3 +1016,6 @@ return [
 **Stima Effort**: 40-60 ore di refactoring
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Stima Effort**: 40-60 ore di refactoring
+>>>>>>> 8d801bbe (Check & fix styling)

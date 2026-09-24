@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_o27QAN
@@ -15,6 +16,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_NOfCjG
 >>>>>>> .merge_file_yuPAGJ
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 name: readme
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -23,13 +28,17 @@ metadata:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_o27QAN
 =======
 <<<<<<< .merge_file_VOP395
@@ -39,6 +48,8 @@ metadata:
 >>>>>>> .merge_file_NOfCjG
 >>>>>>> .merge_file_yuPAGJ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # BMAD — Indice workflow Xot
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

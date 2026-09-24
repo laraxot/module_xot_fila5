@@ -6,6 +6,7 @@ La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 base_predict_fila3_mono/
 =======
 <<<<<<< HEAD
@@ -14,6 +15,9 @@ base_predict_fila3_mono/
 base_<nome progetto>_fila5_mono/
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+base_predict_fila3_mono/
+>>>>>>> 8d801bbe (Check & fix styling)
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli
@@ -152,6 +156,7 @@ Quando si identifica una nuova regola o pattern importante:
    - [ ] Aggiornare .windsurfrules
    - [ ] Verificare coerenza
 <<<<<<< HEAD
+<<<<<<< HEAD
    - [ ] Testare applicabilità
 =======
 <<<<<<< HEAD
@@ -160,3 +165,6 @@ Quando si identifica una nuova regola o pattern importante:
    - [ ] Testare applicabilità
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   - [ ] Testare applicabilità
+>>>>>>> 8d801bbe (Check & fix styling)

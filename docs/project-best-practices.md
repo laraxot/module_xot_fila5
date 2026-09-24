@@ -114,12 +114,15 @@ MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 analysis-[DATE].md      # date in name (use CHANGELOG.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ```
 
 ### 8. DRY Principle
@@ -275,6 +278,7 @@ class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -288,6 +292,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('name'),  // No ->label()!
@@ -420,6 +427,7 @@ git push origin feature-branch
 
 **Creato:** 2025-11-04
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione:** 1.0
 **Autori:** Team Laraxot + AI Claude Process Filosofico
 **Prossimo Review:** Trimestrale o dopo major changes
@@ -435,3 +443,8 @@ git push origin feature-branch
 **Prossimo Review:** Trimestrale o dopo major changes
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Versione:** 1.0
+**Autori:** Team Laraxot + AI Claude Process Filosofico
+**Prossimo Review:** Trimestrale o dopo major changes
+>>>>>>> 8d801bbe (Check & fix styling)

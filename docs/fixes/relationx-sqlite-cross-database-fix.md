@@ -76,12 +76,16 @@ echo $tenants->count(); // ✅ Output: 1
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -105,9 +109,12 @@ echo $tenants->count(); // ✅ Output: 1
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: healthcare_app_data.customer_user`
 
 ## Causa Radice
@@ -118,8 +125,11 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`modulo_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Soluzione Implementata
 
@@ -158,6 +168,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 
 ### Moduli Affetti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris Module**: Customer-User relationships
 =======
 <<<<<<< HEAD
@@ -167,6 +178,10 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 - **Modulo con database separato**: Customer-User relationships
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **healthcare_app Module**: Customer-User relationships
+- **Modulo con database separato**: Customer-User relationships
+>>>>>>> 8d801bbe (Check & fix styling)
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 
@@ -197,6 +212,7 @@ echo $tenants->count(); // ✅ Output: 1
 - [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -204,6 +220,10 @@ echo $tenants->count(); // ✅ Output: 1
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Customer User Fix Summary](../../healthcare_app/docs/customer_user_fix_summary.md)
+- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -216,6 +236,7 @@ echo $tenants->count(); // ✅ Output: 1
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
 =======
 <<<<<<< HEAD
@@ -224,3 +245,6 @@ echo $tenants->count(); // ✅ Output: 1
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+>>>>>>> 8d801bbe (Check & fix styling)

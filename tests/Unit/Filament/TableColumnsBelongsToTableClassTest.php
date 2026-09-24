@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert as WebmozartAssert;
@@ -14,24 +15,30 @@ use Webmozart\Assert\Assert as WebmozartAssert;
 use Modules\Xot\Tests\TestCase;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 =======
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert as WebmozartAssert;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Tests\TestCase;
 >>>>>>> .merge_file_jM5dLx
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JEKCNE
 <<<<<<< HEAD
@@ -48,6 +55,11 @@ use Webmozart\Assert\Assert as WebmozartAssert;
 use Webmozart\Assert\Assert as WebmozartAssert;
 
 >>>>>>> .merge_file_jM5dLx
+=======
+use Webmozart\Assert\Assert as WebmozartAssert;
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 uses(TestCase::class)->group('no-db');
 
@@ -100,6 +112,7 @@ function filamentPageFiles(): array
 
             $path = $file->getPathname();
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
 =======
 <<<<<<< .merge_file_JEKCNE
@@ -107,15 +120,20 @@ function filamentPageFiles(): array
             if ('php' !== $file->getExtension()) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             if ('php' !== $file->getExtension()) {
 =======
             if ($file->getExtension() !== 'php') {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             if ('php' !== $file->getExtension()) {
 >>>>>>> .merge_file_jM5dLx
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 continue;
             }
             if (! str_contains($path, '/app/Filament/')) {
@@ -144,6 +162,7 @@ function declaredClassAndParent(string $file): ?array
     $src = file_get_contents($file);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JEKCNE
 <<<<<<< HEAD
@@ -152,25 +171,34 @@ function declaredClassAndParent(string $file): ?array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jM5dLx
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     if (1 !== preg_match('/^namespace\s+([^;]+);/m', $src, $ns)) {
         return null;
     }
     if (1 !== preg_match('/^(?:final\s+|abstract\s+)*class\s+(\w+)(?:\s+extends\s+([\w\\\\]+))?/m', $src, $cls)) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_JEKCNE
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     if (preg_match('/^namespace\s+([^;]+);/m', $src, $ns) !== 1) {
         return null;
     }
     if (preg_match('/^(?:final\s+|abstract\s+)*class\s+(\w+)(?:\s+extends\s+([\w\\\\]+))?/m', $src, $cls) !== 1) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jM5dLx
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
         return null;
     }
@@ -182,6 +210,7 @@ function declaredClassAndParent(string $file): ?array
     $parent = (string) ($cls[2] ?? '');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if ($namespace === '' || $name === '') {
 =======
 <<<<<<< .merge_file_JEKCNE
@@ -189,21 +218,27 @@ function declaredClassAndParent(string $file): ?array
     if ('' === $namespace || '' === $name) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     if ('' === $namespace || '' === $name) {
 =======
     if ($namespace === '' || $name === '') {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     if ('' === $namespace || '' === $name) {
 >>>>>>> .merge_file_jM5dLx
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         return null;
     }
 
     $class = $namespace.'\\'.$name;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if ($parent === '') {
 =======
 <<<<<<< .merge_file_JEKCNE
@@ -211,21 +246,27 @@ function declaredClassAndParent(string $file): ?array
     if ('' === $parent) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     if ('' === $parent) {
 =======
     if ($parent === '') {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     if ('' === $parent) {
 >>>>>>> .merge_file_jM5dLx
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         return ['class' => $class, 'parent' => null];
     }
     if (str_contains($parent, '\\')) {
         return ['class' => $class, 'parent' => ltrim($parent, '\\')];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JEKCNE
 <<<<<<< HEAD
@@ -234,25 +275,34 @@ function declaredClassAndParent(string $file): ?array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jM5dLx
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     if (1 === preg_match('/^use\s+([\w\\\\]*\\\\'.preg_quote($parent, '/').')\s*;/m', $src, $imp)) {
         $imported = (string) ($imp[1] ?? '');
 
         if ('' !== $imported) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_JEKCNE
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     if (preg_match('/^use\s+([\w\\\\]*\\\\'.preg_quote($parent, '/').')\s*;/m', $src, $imp) === 1) {
         $imported = (string) ($imp[1] ?? '');
 
         if ($imported !== '') {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jM5dLx
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
             return ['class' => $class, 'parent' => $imported];
         }
@@ -277,6 +327,7 @@ function listPageFiles(): array
     foreach (filamentPageFiles() as $file) {
         $info = declaredClassAndParent($file);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($info === null) {
 =======
 <<<<<<< .merge_file_JEKCNE
@@ -284,15 +335,20 @@ function listPageFiles(): array
         if (null === $info) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         if (null === $info) {
 =======
         if ($info === null) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         if (null === $info) {
 >>>>>>> .merge_file_jM5dLx
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             continue;
         }
         $parents[$info['class']] = $info['parent'];
@@ -306,6 +362,7 @@ function listPageFiles(): array
         $current = $parents[$class] ?? null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         for ($hop = 0; $hop < 10 && $current !== null; $hop++) {
 =======
 <<<<<<< .merge_file_JEKCNE
@@ -313,15 +370,20 @@ function listPageFiles(): array
         for ($hop = 0; $hop < 10 && null !== $current; ++$hop) {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         for ($hop = 0; $hop < 10 && null !== $current; ++$hop) {
 =======
         for ($hop = 0; $hop < 10 && $current !== null; $hop++) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
         for ($hop = 0; $hop < 10 && null !== $current; ++$hop) {
 >>>>>>> .merge_file_jM5dLx
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             if ($current === $base) {
                 $pages[$class] = $files[$class];
                 break;
@@ -348,6 +410,7 @@ function declaresMethod(string $file, string $method): bool
     $count = count($tokens);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JEKCNE
 <<<<<<< HEAD
@@ -356,6 +419,8 @@ function declaresMethod(string $file, string $method): bool
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jM5dLx
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     for ($i = 0; $i < $count; ++$i) {
         $token = $tokens[$i];
         if (! is_array($token) || T_FUNCTION !== $token[0]) {
@@ -369,11 +434,15 @@ function declaresMethod(string $file, string $method): bool
                 continue;
             }
             if (T_STRING === $tokens[$j][0] && $tokens[$j][1] === $method) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_JEKCNE
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     for ($i = 0; $i < $count; $i++) {
         $token = $tokens[$i];
         if (! is_array($token) || $token[0] !== T_FUNCTION) {
@@ -388,11 +457,14 @@ function declaresMethod(string $file, string $method): bool
             }
             if ($tokens[$j][0] === T_STRING && $tokens[$j][1] === $method) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_jM5dLx
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
                 return true;
             }
@@ -417,6 +489,7 @@ test('nessuna List page dichiara getTableColumns()', function (): void {
 
 test('XotBaseListRecords::getTableColumns() e\' final', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $method = new \ReflectionMethod(XotBaseListRecords::class, 'getTableColumns');
 =======
 <<<<<<< .merge_file_JEKCNE
@@ -424,15 +497,20 @@ test('XotBaseListRecords::getTableColumns() e\' final', function (): void {
     $method = new \ReflectionMethod(\Modules\Xot\Filament\Resources\Pages\XotBaseListRecords::class, 'getTableColumns');
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     $method = new \ReflectionMethod(\Modules\Xot\Filament\Resources\Pages\XotBaseListRecords::class, 'getTableColumns');
 =======
     $method = new \ReflectionMethod(XotBaseListRecords::class, 'getTableColumns');
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     $method = new \ReflectionMethod(XotBaseListRecords::class, 'getTableColumns');
 >>>>>>> .merge_file_jM5dLx
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
     expect($method->isFinal())->toBeTrue();
 });

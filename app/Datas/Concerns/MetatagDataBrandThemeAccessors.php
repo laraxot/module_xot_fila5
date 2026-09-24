@@ -8,10 +8,17 @@ use Filament\Support\Colors\Color;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
+<<<<<<< HEAD
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Support\PaDesignColors;
+=======
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
+use Modules\Xot\Actions\File\AssetAction;
+use Modules\Xot\Actions\File\AssetPathAction;
+use Modules\Xot\Datas\XotData;
+>>>>>>> 8d801bbe (Check & fix styling)
 
 trait MetatagDataBrandThemeAccessors
 {
@@ -264,7 +271,11 @@ trait MetatagDataBrandThemeAccessors
      */
     public function getFilamentColors(): array
     {
+<<<<<<< HEAD
         return PaDesignColors::filamentPalette();
+=======
+        return app(GetPaFilamentPaletteAction::class)->execute();
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 
     /**

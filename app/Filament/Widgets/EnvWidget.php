@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -16,10 +17,23 @@ use Modules\Xot\Datas\EnvData;
 
 =======
 use Filament\Schemas\Schema;
+=======
+use Filament\Actions\Concerns\InteractsWithActions;
+use Filament\Actions\Contracts\HasActions;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
+use Filament\Widgets\Widget;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
 /**
+<<<<<<< HEAD
  * @property Schema $form
  */
 >>>>>>> laraxot/dev
@@ -27,10 +41,20 @@ class EnvWidget extends XotBaseSchemaWidget
 {
     /** @var array<string, mixed>|null */
     public ?array $data = [];
+=======
+ * @property Schema                    $form
+ * @property array<string, mixed>|null $data
+ */
+class EnvWidget extends Widget implements HasActions, HasForms
+{
+    use InteractsWithActions;
+    use InteractsWithForms;
+>>>>>>> 8d801bbe (Check & fix styling)
 
     /** @var list<string> */
     public array $only = [];
 
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view = 'xot::filament.widgets.env';
 
@@ -51,6 +75,18 @@ class EnvWidget extends XotBaseSchemaWidget
     public function mount(): void
     {
         /** @var array<string, mixed> */
+=======
+    /**
+     * @var array<string, mixed>|null
+     */
+    public ?array $data = [];
+
+    protected string $view = 'xot::filament.widgets.env';
+
+    public function mount(): void
+    {
+        /** @var array<string, mixed> $data */
+>>>>>>> 8d801bbe (Check & fix styling)
         $data = EnvData::make()->toArray();
         $this->data = $data;
 
@@ -58,12 +94,16 @@ class EnvWidget extends XotBaseSchemaWidget
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema())->columns(1)->statePath('data');
     }
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
     public function submit(): void
     {
@@ -71,6 +111,13 @@ class EnvWidget extends XotBaseSchemaWidget
             return;
         }
         EnvData::make()->update($this->data);
+=======
+    public function submit(): void
+    {
+        if (null !== $this->data) {
+            EnvData::make()->update($this->data);
+        }
+>>>>>>> 8d801bbe (Check & fix styling)
         Notification::make()
             ->title('Saved successfully')
             ->success()
@@ -89,6 +136,7 @@ class EnvWidget extends XotBaseSchemaWidget
      */
     public function getFormSchema(): array
     {
+<<<<<<< HEAD
         // Nessun ->label()/->placeholder()/->helperText() qui: Modules\Lang
         // (LangServiceProvider::registerFilamentLabel(), Field::configureUsing())
         // li risolve automaticamente da Modules/Xot/lang/{locale}/env.php,
@@ -170,6 +218,27 @@ class EnvWidget extends XotBaseSchemaWidget
                 $components[] = $field;
             }
         }
+=======
+        $all = [
+            'app_url' => TextInput::make('app_url')
+                ->placeholder('http://localhost')
+                ->helperText('Required for file uploads and other internal configs')
+                ->required(),
+            'debugbar_enabled' => Toggle::make('debugbar_enabled')->helperText(
+                'Enable/Disable debug mode to help debug errors',
+            ),
+            'google_maps_api_key' => TextInput::make('google_maps_api_key')
+                ->placeholder('AIzaSyAuB_...')
+                ->helperText('google maps api key'),
+            'telegram_bot_token' => TextInput::make('telegram_bot_token')
+                ->placeholder('AIzaSyAuB_...')
+                ->helperText('telegram_bot_token'),
+        ];
+        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
+
+        /** @var array<Component> $components */
+        $components = array_values($selected);
+>>>>>>> 8d801bbe (Check & fix styling)
 
         return $components;
     }

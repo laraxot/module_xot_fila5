@@ -336,6 +336,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ### **Documentazione Moduli**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
 =======
@@ -347,6 +348,10 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Cms Architecture](../../Cms/docs/architecture-xotdata-pattern.md)
+- [User Module Traits](../../User/docs/traits_complete_guide.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 
 ---
@@ -354,6 +359,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Responsabile**: Team Architettura Laraxot
 =======
 <<<<<<< HEAD
@@ -362,3 +368,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 **Responsabile**: Team Architettura Laraxot
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Responsabile**: Team Architettura Laraxot
+>>>>>>> 8d801bbe (Check & fix styling)

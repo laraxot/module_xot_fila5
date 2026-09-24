@@ -33,6 +33,7 @@ class MyResource extends XotBaseResource
     // ✅ OK - Ha getFormSchema()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -46,6 +47,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> 8d801bbe (Check & fix styling)
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -146,6 +150,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -159,6 +164,9 @@ abstract class XotBaseResource extends Filament\Resources\Resource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Section::make(__('filament.section.general'))
@@ -323,6 +331,7 @@ class YourResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -336,6 +345,9 @@ class YourResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             ...parent::getFormSchema(),
@@ -406,6 +418,7 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 /** @return array<string, Component> */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -419,6 +432,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array
@@ -479,6 +495,7 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 ### Documentation Links
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
 - [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
 =======
@@ -490,12 +507,17 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 - [Module Upgrade Guide](../../../docs/upgrade-modules-to-filament-4.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Filament 4.x Upgrade Guide](../../../docs/filament-4-upgrade.md)
+- [Module Upgrade Guide](../../../docs/upgrade-modules-to-filament-4.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Breaking Changes Reference](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 ## 📊 Architecture Benefits
 
 ### Consistency
 - **Uniform Interface**: Tutte le classi seguono gli stessi pattern
+<<<<<<< HEAD
 <<<<<<< HEAD
 - **Predictable Behavior**: Comportamento consistente across modules
 =======
@@ -505,6 +527,9 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 - **<nome progetto>able Behavior**: Comportamento consistente across modules
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **<nome progetto>able Behavior**: Comportamento consistente across modules
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Standard Conventions**: Naming e structure conventions
 
 ### Maintainability
@@ -587,6 +612,7 @@ class MyModel extends XotBaseModel
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
 =======
 <<<<<<< HEAD
@@ -595,3 +621,6 @@ class MyModel extends XotBaseModel
 **See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**See Also**: [Extension Patterns](../development/extensions.md) | [Best Practices](../development/practices.md) | [Critical Filament Rules](../../../docs/AI-GUIDELINES.md#️-critical-laraxot-filament-rules)
+>>>>>>> 8d801bbe (Check & fix styling)

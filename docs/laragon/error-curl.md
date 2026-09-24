@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -22,11 +23,14 @@ related:
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 module: theme
 topic: error-curl
 canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -96,3 +100,7 @@ See canonical documentation: ../../../../Themes/docs/shared-components/error-cur
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
+>>>>>>> 8d801bbe (Check & fix styling)

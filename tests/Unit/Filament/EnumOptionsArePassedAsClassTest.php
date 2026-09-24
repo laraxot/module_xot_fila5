@@ -38,6 +38,7 @@ function xotPhpFilesUnderFilament(): array
 
     foreach ($iterator as $fileInfo) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
 <<<<<<< .merge_file_ClwtiG
@@ -50,6 +51,9 @@ function xotPhpFilesUnderFilament(): array
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_qrAyQk
 >>>>>>> laraxot/dev
+=======
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+>>>>>>> 8d801bbe (Check & fix styling)
             continue;
         }
 

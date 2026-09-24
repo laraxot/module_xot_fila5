@@ -18,6 +18,7 @@ E' la libreria di estensione di tutte le altre librerie.
 * [about.md](../../../Tenant/docs/en/about.md)
 * [about.md](../../../Tenant/docs/it/about.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -26,12 +27,15 @@ E' la libreria di estensione di tutte le altre librerie.
 * [about.md](../../../tenant/docs/it/about.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### Versione Incoming
 
 E' la libreria di estensione di tutte le altre librerie.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -40,3 +44,6 @@ E' la libreria di estensione di tutte le altre librerie.
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 8d801bbe (Check & fix styling)

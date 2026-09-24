@@ -40,6 +40,7 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -53,6 +54,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         TextInput::make('nome')->required(),
@@ -140,6 +144,7 @@ class SocioResource extends XotBaseResource
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -153,6 +158,9 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('cognome')
@@ -334,6 +342,7 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -347,6 +356,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -595,6 +607,7 @@ class SocioResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -608,6 +621,9 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('nome')->required(),
@@ -634,6 +650,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 =======
@@ -645,3 +662,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/docs/best-practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+>>>>>>> 8d801bbe (Check & fix styling)

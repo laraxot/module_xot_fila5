@@ -275,6 +275,7 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 
 **Ultimo aggiornamento**: 2025-01-22
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 =======
@@ -287,3 +288,7 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> 8d801bbe (Check & fix styling)

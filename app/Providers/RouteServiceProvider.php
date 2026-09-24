@@ -71,10 +71,14 @@ class RouteServiceProvider extends ServiceProvider
         if ($user instanceof Model) {
             $userLang = $user->getAttribute('lang');
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (is_string($userLang) && $userLang !== '') {
 =======
             if (is_string($userLang) && '' !== $userLang) {
 >>>>>>> laraxot/dev
+=======
+            if (is_string($userLang) && '' !== $userLang) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 $lang = $userLang;
             }
         }
@@ -91,10 +95,14 @@ class RouteServiceProvider extends ServiceProvider
         if (in_array(request()->segment(1), $langs, false)) {
             $lang = request()->segment(1);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($lang !== null) {
 =======
             if (null !== $lang) {
 >>>>>>> laraxot/dev
+=======
+            if (null !== $lang) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 app()->setLocale($lang);
             }
         }
@@ -127,7 +135,11 @@ class RouteServiceProvider extends ServiceProvider
 
         $models_collect = collect(array_keys($models));
         $models_collect->implode('|');
+<<<<<<< HEAD
         $models_collect->map(fn (int|string $item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
+=======
+        $models_collect->map(fn ($item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 
     /**

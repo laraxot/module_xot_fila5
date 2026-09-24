@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Arr;
@@ -16,14 +17,26 @@ use Webmozart\Assert\Assert;
 /**
  * @method static \Illuminate\Database\Eloquent\Factories\Factory<static> factory($count = null, $state = [])
  *
+=======
+use Illuminate\Database\Eloquent\Model as EloquentModel;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use Modules\Xot\Models\Traits\RelationX;
+use Modules\Xot\Traits\Updater;
+
+/**
+>>>>>>> 8d801bbe (Check & fix styling)
  * Class XotBaseModel.
  */
 abstract class XotBaseModel extends EloquentModel
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
 >>>>>>> laraxot/dev
+=======
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> 8d801bbe (Check & fix styling)
     use HasXotFactory;
     use RelationX;
     use Updater;
@@ -51,6 +64,7 @@ abstract class XotBaseModel extends EloquentModel
         // 'password'
     ];
 
+<<<<<<< HEAD
     /**
      * Risolve il concreto del **modulo chiamante** mantenendo il basename di `static`.
      *
@@ -92,6 +106,8 @@ abstract class XotBaseModel extends EloquentModel
         return $res;
     }
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     /** @return array<string, string> */
     protected function casts(): array
     {

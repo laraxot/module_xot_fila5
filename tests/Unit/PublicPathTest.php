@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Application;
 =======
 <<<<<<< .merge_file_S4odEp
@@ -9,20 +10,26 @@ use App\Application;
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 =======
 use App\Application;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 use App\Application;
 >>>>>>> .merge_file_iyK31b
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /**
 =======
@@ -32,6 +39,9 @@ uses(TestCase::class)->group('no-xot-db');
 /*
 >>>>>>> .merge_file_iyK31b
 >>>>>>> laraxot/dev
+=======
+/**
+>>>>>>> 8d801bbe (Check & fix styling)
  * Guardia sul document root.
  *
  * Il web server serve `public_html/`, non `laravel/public/`. `App\Application` sovrascrive
@@ -71,6 +81,7 @@ it('restituisce un percorso anche per segmenti non ancora creati', function (): 
 
 it('usa la Application con publicPath sovrascritto', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     expect(app())->toBeInstanceOf(Application::class)
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
@@ -82,6 +93,8 @@ it('usa la Application con publicPath sovrascritto', function (): void {
         ->toBe(App\Application::class);
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     expect(app())->toBeInstanceOf(App\Application::class)
         ->and((new ReflectionMethod(App\Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(App\Application::class);
@@ -90,6 +103,7 @@ it('usa la Application con publicPath sovrascritto', function (): void {
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
     expect(app())->toBeInstanceOf(Application::class)
@@ -97,6 +111,8 @@ it('usa la Application con publicPath sovrascritto', function (): void {
         ->toBe(Application::class);
 >>>>>>> .merge_file_iyK31b
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 });
 
 it('public_html esiste ed e fuori da laravel/', function (): void {

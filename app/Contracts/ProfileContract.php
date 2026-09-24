@@ -17,8 +17,11 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 /**
  * Modules\Xot\Contracts\ProfileContract.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  * @property string                $id
  * @property string                $email
  * @property string                $slug
@@ -27,6 +30,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property Collection<int, Role> $roles
  * @property int|null              $roles_count
  * @property UserContract          $user
+<<<<<<< HEAD
  *                                              =======
  *                                              <<<<<<< .merge_file_BwiCaM
  *                                              =======
@@ -87,6 +91,8 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *                                              >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
  *                                              >>>>>>> .merge_file_2826Tr
  *                                              >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
  *
  * @phpstan-require-extends Model
  *
@@ -97,6 +103,7 @@ interface ProfileContract extends HasMedia
     /**
      * Grant the given permission(s) to a role.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string|int|array<int|string>|Permission|SupportCollection<int, Permission> $permissions
@@ -123,6 +130,9 @@ interface ProfileContract extends HasMedia
      * >>>>>>> .merge_file_2826Tr
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param string|int|array<int|string>|Permission|SupportCollection<int, Permission> $permissions
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return $this
      */
@@ -131,6 +141,7 @@ interface ProfileContract extends HasMedia
     /**
      * Assign the given role to the model.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<int|string>|string|int|RoleContract|SupportCollection<int, RoleContract> $roles
@@ -153,6 +164,9 @@ interface ProfileContract extends HasMedia
      * >>>>>>> .merge_file_2826Tr
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param array<int|string>|string|int|RoleContract|SupportCollection<int, RoleContract> $roles
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * @return $this
      */
@@ -161,6 +175,7 @@ interface ProfileContract extends HasMedia
     /**
      * Determine if the model has (one of) the given role(s).
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
@@ -187,6 +202,9 @@ interface ProfileContract extends HasMedia
      *                                                                                              >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                                                                              >>>>>>> .merge_file_2826Tr
      *                                                                                              >>>>>>> laraxot/dev
+=======
+     * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function hasRole(
         string|int|array|RoleContract|SupportCollection $roles,
@@ -198,6 +216,7 @@ interface ProfileContract extends HasMedia
      *
      * Alias to hasRole() but without Guard controls
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
@@ -224,6 +243,9 @@ interface ProfileContract extends HasMedia
      *                                                                                              >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                                                                              >>>>>>> .merge_file_2826Tr
      *                                                                                              >>>>>>> laraxot/dev
+=======
+     * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public function hasAnyRole(string|int|array|RoleContract|SupportCollection $roles = []): bool;
 

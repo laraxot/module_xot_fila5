@@ -271,6 +271,7 @@ Per migrare le rotte esistenti:
 ## Collegamenti Bidirezionali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -282,6 +283,8 @@ Per migrare le rotte esistenti:
 - [Collegamenti al Modulo Lang](../../lang/docs/packages/localization.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md)
 - [Documentazione Generale](./documentation.md)
@@ -293,6 +296,7 @@ Per migrare le rotte esistenti:
 * [routing.md](../../../../docs/routing.md)
 * [routing.md](../../Cms/docs/frontoffice/routing.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -302,3 +306,5 @@ Per migrare le rotte esistenti:
 * [routing.md](../../cms/docs/frontoffice/routing.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

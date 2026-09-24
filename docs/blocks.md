@@ -102,6 +102,7 @@ Ogni blocco deve seguire questa struttura:
 
 ## Collegamenti tra versioni di blocks.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -113,12 +114,15 @@ Ogni blocco deve seguire questa struttura:
 * [blocks.md](../../../../themes/one/docs/components/blocks.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [blocks.md](../../../Xot/docs/blocks.md)
 * [blocks.md](../../../User/docs/blocks.md)
 * [blocks.md](../../../UI/docs/blocks.md)
 * [blocks.md](../../../Cms/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/blocks.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 =======
 <<<<<<< HEAD
@@ -127,3 +131,6 @@ Ogni blocco deve seguire questa struttura:
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [blocks.md](../../../../Themes/One/docs/components/blocks.md)
+>>>>>>> 8d801bbe (Check & fix styling)

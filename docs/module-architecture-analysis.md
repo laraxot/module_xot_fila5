@@ -37,6 +37,7 @@
 - Social authentication integration
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 3. **Quaeris Module - Business Core**
 =======
 <<<<<<< HEAD
@@ -46,6 +47,9 @@
 #### 3. **ExternalProject Module - Business Core**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+#### 3. **Quaeris Module - Business Core**
+>>>>>>> 8d801bbe (Check & fix styling)
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -238,6 +242,7 @@
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Dependencies**: Xot, Quaeris
 =======
 <<<<<<< HEAD
@@ -247,6 +252,9 @@
 **Dependencies**: Xot, ExternalProject
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Dependencies**: Xot, Quaeris
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -295,6 +303,7 @@ Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── Quaeris (Business Core)
 =======
 <<<<<<< HEAD
@@ -304,6 +313,9 @@ Xot (Foundation)
 ├── ExternalProject (Business Core)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+├── Quaeris (Business Core)
+>>>>>>> 8d801bbe (Check & fix styling)
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -413,6 +425,7 @@ public function register(): void
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris**: Missing module.json description
 =======
 <<<<<<< HEAD
@@ -422,6 +435,9 @@ public function register(): void
 - **ExternalProject**: Missing module.json description
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Quaeris**: Missing module.json description
+>>>>>>> 8d801bbe (Check & fix styling)
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -433,6 +449,7 @@ public function register(): void
 #### High-Usage Modules
 - **User**: Authentication checks on every request
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris**: Survey processing and reporting
 =======
 <<<<<<< HEAD
@@ -442,6 +459,9 @@ public function register(): void
 - **ExternalProject**: Survey processing and reporting
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Quaeris**: Survey processing and reporting
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 
@@ -474,6 +494,7 @@ public function register(): void
 
 **Analysis Date**: 2025-11-17
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
 =======
@@ -486,3 +507,7 @@ public function register(): void
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Architecture Health**: Good with some technical debt
+**Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -28,6 +28,7 @@ laravel/Modules/Xot/docs/wiki/
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Regola:** Nessun file > 200 righe. Split atomico per idea. Token LLM: [token-efficiency-local.md](./token-efficiency-local.md).
 =======
 <<<<<<< HEAD
@@ -36,6 +37,9 @@ laravel/Modules/Xot/docs/wiki/
 **Regola:** Nessun file > 200 righe. Split atomico per idea.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Regola:** Nessun file > 200 righe. Split atomico per idea.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 

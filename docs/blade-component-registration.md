@@ -115,6 +115,7 @@ class MyComponent extends Component
 
 ## Link Utili
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseServiceProvider](xotbaseserviceprovider.md)
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)
@@ -129,3 +130,8 @@ class MyComponent extends Component
 - [filament-best-practices.md](filament-best-practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [XotBaseServiceProvider](XotBaseServiceProvider.md)
+- [service-provider-best-practices.md](service-provider-best-practices.md)
+- [filament-best-practices.md](filament-best-practices.md)
+>>>>>>> 8d801bbe (Check & fix styling)

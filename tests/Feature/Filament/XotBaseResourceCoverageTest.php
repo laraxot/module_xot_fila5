@@ -2,10 +2,23 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 uses(TestCase::class);
 >>>>>>> laraxot/dev
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+>>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -16,14 +29,20 @@ use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
 use Modules\Xot\Tests\Fixtures\Models\Probe;
 use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
 use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 it('covers model resolution and model cache', function (): void {
     ProbeResource::resetModelCache();
 
@@ -45,11 +64,15 @@ it('covers default page discovery including optional view page', function (): vo
 
 it('covers translation helper key normalization', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
 =======
     app()->instance(GetTransKeyAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(GetTransKeyAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): string
         {
             return 'probe.cluster.pages.item_widget';
@@ -61,11 +84,15 @@ it('covers translation helper key normalization', function (): void {
 
 it('covers translation helper edit and widget normalization branches', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
 =======
     app()->instance(GetTransKeyAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(GetTransKeyAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): string
         {
             return 'edit_';
@@ -74,11 +101,15 @@ it('covers translation helper edit and widget normalization branches', function 
 
     Assert::assertSame('.name', ProbeResource::callGetKeyTrans('name'));
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
 =======
     app()->instance(GetTransKeyAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(GetTransKeyAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): string
         {
             return 'probe';
@@ -90,11 +121,15 @@ it('covers translation helper edit and widget normalization branches', function 
 
 it('covers translation helper string path and missing key fallback', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
 =======
     app()->instance(GetTransKeyAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(GetTransKeyAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): string
         {
             return 'probe.messages';
@@ -109,11 +144,15 @@ it('covers translation helper string path and missing key fallback', function ()
 
 it('covers translation helper array and fix fallback branches', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
 =======
     app()->instance(GetTransKeyAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(GetTransKeyAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): string
         {
             return 'probe.arr';
@@ -131,11 +170,15 @@ it('covers translation helper array and fix fallback branches', function (): voi
 
 it('covers translation helper exception branch', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(GetTransKeyAction::class, new class
     {
 =======
     app()->instance(GetTransKeyAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(GetTransKeyAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): string
         {
             return 'probe.exceptions';
@@ -153,11 +196,15 @@ it('covers translation helper exception branch', function (): void {
 
 it('covers navigation badge success and fallback', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(CountAction::class, new class
     {
 =======
     app()->instance(CountAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(CountAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): int
         {
             return 42;
@@ -166,11 +213,15 @@ it('covers navigation badge success and fallback', function (): void {
 
     Assert::assertSame('42', ProbeResource::getNavigationBadge());
 <<<<<<< HEAD
+<<<<<<< HEAD
     app()->instance(CountAction::class, new class
     {
 =======
     app()->instance(CountAction::class, new class {
 >>>>>>> laraxot/dev
+=======
+    app()->instance(CountAction::class, new class {
+>>>>>>> 8d801bbe (Check & fix styling)
         public function execute(string $class): int
         {
             throw new Exception('boom');
@@ -181,6 +232,7 @@ it('covers navigation badge success and fallback', function (): void {
 });
 
 it('covers get attachments schema branches', function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $resourceNoAttachments = new class extends XotBaseResource
     {
@@ -215,20 +267,51 @@ it('covers get attachments schema branches', function (): void {
         /**
          * @param  string[]  $attachments
 =======
+=======
+    $resourceNoAttachments = new class extends XotBaseResource {
+        protected static ?string $model = Probe::class;
+
+        public static function getFormSchema(): array
+        {
+            return [];
+        }
+    };
+
+    Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
+
+    $resourceBadAttachments = new class extends XotBaseResource {
+        protected static ?string $model = ProbeBadAttachments::class;
+
+        public static function getFormSchema(): array
+        {
+            return [];
+        }
+    };
+
+    Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
+
+>>>>>>> 8d801bbe (Check & fix styling)
     app()->instance(GetAttachmentsSchemaAction::class, new class {
         /**
          * @param string[] $attachments
          *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
          * @return string[]
          */
         public function execute(array $attachments, string $disk): array
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($attachments !== ['one', 'two'] || $disk !== 'attachments') {
 =======
             if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
 >>>>>>> laraxot/dev
+=======
+            if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
+>>>>>>> 8d801bbe (Check & fix styling)
                 throw new RuntimeException('unexpected attachments payload');
             }
 
@@ -237,12 +320,22 @@ it('covers get attachments schema branches', function (): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $resourceGoodAttachments = new class extends XotBaseResource
     {
 =======
     $resourceGoodAttachments = new class extends XotBaseResource {
 >>>>>>> laraxot/dev
         protected static ?string $model = ProbeGoodAttachments::class;
+=======
+    $resourceGoodAttachments = new class extends XotBaseResource {
+        protected static ?string $model = ProbeGoodAttachments::class;
+
+        public static function getFormSchema(): array
+        {
+            return [];
+        }
+>>>>>>> 8d801bbe (Check & fix styling)
     };
 
     Assert::assertSame(['schema'], $resourceGoodAttachments::getAttachmentsSchema());
@@ -268,15 +361,25 @@ it('covers step builder branches', function (): void {
 
 it('covers simple base helpers', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $resource = new ProbeResource;
 =======
     $resource = new ProbeResource();
 >>>>>>> laraxot/dev
 
     Assert::assertSame([], $resource->getInfolistSchema());
+=======
+    $resource = new ProbeResource();
+
+    Assert::assertSame([], ProbeResource::getInfolistSchema());
+>>>>>>> 8d801bbe (Check & fix styling)
     Assert::assertSame([], ProbeResource::extendTableCallback());
     Assert::assertSame([], ProbeResource::extendFormCallback());
     Assert::assertStringStartsWith('Xot', ProbeResource::getModuleName());
     Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
+<<<<<<< HEAD
     Assert::assertGreaterThan(0, ProbeResource::getFormColumns());
+=======
+    Assert::assertGreaterThan(0, ProbeResource::getFormSchemaColumns());
+>>>>>>> 8d801bbe (Check & fix styling)
 });

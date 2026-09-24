@@ -450,6 +450,7 @@ php artisan insights
 *"Nel codice perfetto, i tipi sono evidenti, gli errori sono impossibili, e la complessità è un ricordo del passato."*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **ZEN ACHIEVED** 🧘‍♂️
 =======
 <<<<<<< HEAD
@@ -458,3 +459,6 @@ php artisan insights
 **ZEN ACHIEVED** 🧘‍♂️
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**ZEN ACHIEVED** 🧘‍♂️
+>>>>>>> 8d801bbe (Check & fix styling)

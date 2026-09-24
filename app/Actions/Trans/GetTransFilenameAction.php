@@ -6,10 +6,19 @@ namespace Modules\Xot\Actions\Trans;
 
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 8d801bbe (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 class GetTransFilenameAction
 {
+<<<<<<< HEAD
+=======
+    use QueueableAction;
+
+>>>>>>> 8d801bbe (Check & fix styling)
     public function execute(string $filename): string
     {
         $lang = app()->getLocale();

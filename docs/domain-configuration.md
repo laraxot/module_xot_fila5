@@ -76,6 +76,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 <<<<<<< HEAD
 =======
@@ -104,6 +105,9 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Configurazione Generale](CONFIGURATION.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Configurazione Generale](CONFIGURATION.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -116,6 +120,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti Correlati
 - [Configurazione Moduli](MODULE_CONFIGURATION.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
@@ -131,6 +136,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Troubleshooting](TROUBLESHOOTING.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Gestione Risorse](ASSETS.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](TROUBLESHOOTING.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -139,6 +149,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Standard Interfaccia](../../../docs/standards/interface_guidelines.md)
 - [Best Practices](../../../docs/standards/best_practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -146,6 +157,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Best Practices](../../../../docs/standards/best_practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 # Configurazione Basata sul Dominio
 
@@ -217,6 +230,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -232,3 +246,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Struttura Temi](themes.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Configurazione Generale](CONFIGURATION.md)
+- [Gestione Asset](assets.md)
+- [Struttura Temi](themes.md)
+>>>>>>> 8d801bbe (Check & fix styling)

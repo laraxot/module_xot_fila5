@@ -56,6 +56,7 @@ $rows = $query->get();
 **Problema**: MainDashboard non mostra più i collegamenti ai moduli
 **Status**: ✅ RISOLTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Rilevamento**: 2025-01-27
 **Data Risoluzione**: 2025-01-27
 =======
@@ -67,6 +68,10 @@ $rows = $query->get();
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Rilevamento**: 2025-01-27
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Sintomi**:
 - Collegamenti ai moduli scomparsi dal dashboard principale
@@ -98,6 +103,7 @@ $rows = $query->get();
 **Problema**: SVG del Main Panel malformato nel CoolModulesServiceProvider
 **Status**: ✅ RISOLTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
@@ -106,6 +112,9 @@ $rows = $query->get();
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Sintomi**:
 - SVG del link "Main Panel" conteneva caratteri non validi
@@ -122,6 +131,7 @@ $rows = $query->get();
 **Problema**: Debugbar non appare nel dashboard
 **Status**: ✅ RISOLTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
@@ -130,6 +140,9 @@ $rows = $query->get();
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Soluzioni Implementate**:
 - ✅ Corretto problema di inizializzazione nel `XotBasePanelProvider`
@@ -141,6 +154,7 @@ $rows = $query->get();
 **Problema**: Conflitti nei widget Filament v4
 **Status**: ✅ RISOLTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
@@ -149,6 +163,9 @@ $rows = $query->get();
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Sintomi**:
 - Errore "Cannot redeclare non static Widget::$view as static"
@@ -167,6 +184,7 @@ $rows = $query->get();
 **Problema**: Target [Illuminate\Database\Eloquent\Model] is not instantiable
 **Status**: ✅ RISOLTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Risoluzione**: 2025-01-27
 =======
 <<<<<<< HEAD
@@ -175,6 +193,9 @@ $rows = $query->get();
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Sintomi**:
 - Errore "Target [Illuminate\Database\Eloquent\Model] is not instantiable"
@@ -197,6 +218,7 @@ $rows = $query->get();
 **Problema**: Implementazione completamente sbagliata di FILAMENT_OPTIMIZE_MEMORY
 **Status**: ✅ RISOLTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Rilevamento**: 2025-01-27
 **Data Risoluzione**: 2025-01-27
 =======
@@ -208,6 +230,10 @@ $rows = $query->get();
 **Data Risoluzione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Rilevamento**: 2025-01-27
+**Data Risoluzione**: 2025-01-27
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Problemi Critici**:
 - ❌ **DUPLICAZIONE**: Discovery duplicato sia sopra che dentro il `when()`
@@ -231,6 +257,7 @@ $rows = $query->get();
 
 **Status**: ✅ **MIGRAZIONE COMPLETATA CON SUCCESSO**
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Completamento**: 2025-01-27
 =======
 <<<<<<< HEAD
@@ -239,6 +266,9 @@ $rows = $query->get();
 **Data Completamento**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Completamento**: 2025-01-27
+>>>>>>> 8d801bbe (Check & fix styling)
 **Errori PHPStan**: 0/3520 (livello 9)
 **Compatibilità**: Filament 4.x ✅
 **Problemi Dashboard**: ✅ RISOLTI
@@ -266,13 +296,17 @@ $rows = $query->get();
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -282,3 +316,5 @@ $rows = $query->get();
 *Ultimo aggiornamento: [DATE]*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

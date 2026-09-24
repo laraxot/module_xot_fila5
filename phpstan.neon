@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 includes:
     - phpstan-baseline.neon
 
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 parameters:
     level: 10
     paths:

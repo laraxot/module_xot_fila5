@@ -293,6 +293,7 @@ Data: 2025-04-23 19:09:56
 Modules\\Xot\\Database\\Factories
 Modules\\Xot\\Database\\Seeders
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_xot_fila3
 =======
 <<<<<<< HEAD
@@ -301,6 +302,9 @@ Modules\\Xot\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_xot_fila5
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Pacchetto Composer**: laraxot/module_xot_fila5
+>>>>>>> 8d801bbe (Check & fix styling)
 marco sottana
 - **Dipendenze**: php ^8.2 calebporzio/sushi ^2.5 coolsam/panel-modules * doctrine/dbal * fidum/laravel-eloquent-morph-to-one * filament/filament ^3.3 filament/spatie-laravel-media-library-plugin ^3.2 filament/spatie-laravel-translatable-plugin ^3.2 aaronfrancis/fast-paginate * guzzlehttp/guzzle * laravel/folio ^1.1 laravel/framework * laravel/pennant ^1.11 laravel/pulse ^1.2 livewire/livewire * maatwebsite/excel ^3.1 nwidart/laravel-modules * predis/predis ^2.2 spatie/cpu-load-health-check ^1.0 spatie/laravel-data ^4.7
 - **Totale file PHP**: 968
@@ -855,6 +859,7 @@ lang/gr
 lang/it
 lang/ka
 <<<<<<< HEAD
+<<<<<<< HEAD
 lang/lang
 =======
 <<<<<<< HEAD
@@ -863,6 +868,9 @@ lang/lang
 lang/<locale>
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+lang/<locale>
+>>>>>>> 8d801bbe (Check & fix styling)
 lang/lang/ar
 lang/lang/da
 lang/lang/de
@@ -1047,9 +1055,12 @@ tests_old
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [structure.md](../../../gdpr/project_docs/structure.md)
 * [structure.md](../../../notify/project_docs/structure.md)
 * [structure.md](../../../xot/project_docs/structure.md)
@@ -1065,8 +1076,11 @@ tests_old
 * [structure.md](../../../cms/project_docs/structure.md)
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [structure.md](../../../Gdpr/project_docs/structure.md)
 * [structure.md](../../../Notify/project_docs/structure.md)
 * [structure.md](../../../Xot/project_docs/structure.md)
@@ -1103,6 +1117,7 @@ b6f667c (.)
 - Aggiornare la documentazione del modulo con esempi e riferimenti.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 =======
 <<<<<<< HEAD
@@ -1111,3 +1126,6 @@ Vedi anche la documentazione specifica del modulo per dettagli e casi particolar
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
+>>>>>>> 8d801bbe (Check & fix styling)

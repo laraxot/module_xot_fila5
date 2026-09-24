@@ -77,9 +77,12 @@ class Foo extends bar
 
 ## Collegamenti tra versioni di customizing-your-site.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 * [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
@@ -89,6 +92,7 @@ class Foo extends bar
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -103,3 +107,5 @@ class Foo extends bar
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

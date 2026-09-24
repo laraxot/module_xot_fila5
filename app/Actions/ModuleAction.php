@@ -29,6 +29,7 @@ class ModuleAction
     {
         if (! self::$_instance instanceof self) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             self::$_instance = new self;
 =======
 <<<<<<< .merge_file_6TJIo6
@@ -36,15 +37,20 @@ class ModuleAction
             self::$_instance = new self();
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             self::$_instance = new self();
 =======
             self::$_instance = new self;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
             self::$_instance = new self();
 >>>>>>> .merge_file_cPuAL8
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         }
 
         return self::$_instance;
@@ -83,6 +89,7 @@ class ModuleAction
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $tmp = new \stdClass;
 =======
 <<<<<<< .merge_file_6TJIo6
@@ -90,15 +97,20 @@ class ModuleAction
                 $tmp = new \stdClass();
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 $tmp = new \stdClass();
 =======
                 $tmp = new \stdClass;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
                 $tmp = new \stdClass();
 >>>>>>> .merge_file_cPuAL8
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -125,6 +137,7 @@ class ModuleAction
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(): void {}
 =======
 <<<<<<< .merge_file_6TJIo6
@@ -135,4 +148,7 @@ class ModuleAction
     }
 >>>>>>> .merge_file_cPuAL8
 >>>>>>> laraxot/dev
+=======
+    public function execute(): void {}
+>>>>>>> 8d801bbe (Check & fix styling)
 }

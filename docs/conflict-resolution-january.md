@@ -10,14 +10,18 @@
 - **Resolution**: Deleted the following files:
     - `Modules/Chart/app/Actions/JpGraph/V1/LineSubQuestionAction.php.backup`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
     - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`
     - `Modules/Quaeris/app/Datas/DashboardFilterData.php.backup`
     - `Modules/Xot/tests/Unit/metatagdatatest.php.backup`
     - `Modules/Xot/tests/pest.php.backup`
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -28,3 +32,5 @@
     - `Modules/Xot/tests/pest.php.backup`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

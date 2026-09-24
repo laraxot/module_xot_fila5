@@ -43,6 +43,7 @@ class MyResource extends XotBaseResource
     public function getFormSchema(): array { /* ... */ }
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
 =======
@@ -63,6 +64,10 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -165,6 +170,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -185,6 +191,10 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Section::make(__('filament.section.general'))
@@ -351,6 +361,7 @@ class YourResource extends XotBaseResource
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -371,6 +382,10 @@ class YourResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             ...parent::getFormSchema(),
@@ -443,6 +458,7 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
@@ -463,6 +479,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
 >>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> 8d801bbe (Check & fix styling)
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array

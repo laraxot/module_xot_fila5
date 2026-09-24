@@ -133,6 +133,7 @@ php artisan lang:check
 
 ### Modulo Xot
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 =======
@@ -151,6 +152,9 @@ php artisan lang:check
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## Best Practices Applicate
 

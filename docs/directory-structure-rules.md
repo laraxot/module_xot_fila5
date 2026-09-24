@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto
@@ -108,6 +111,7 @@ Prima di ogni commit, verificare:
 - [Best Practices](best-practices.md)
 - [PHPStan Configuration](phpstan/configuration.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 # Directory Structure Rules
@@ -124,3 +128,5 @@ Le vecchie cartelle duplicate individuate erano `Xot/lang/lang` e `Xot/_docs`.
 Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

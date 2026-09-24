@@ -1,8 +1,11 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 title: Custom Relation
 description: Custom Relation
 extends: _layouts.documentation
@@ -313,6 +316,7 @@ class Person
 }
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 module: theme
@@ -323,3 +327,5 @@ canonical: ../../../Themes/docs/shared-components/custom-relation.md
 See canonical documentation: ../../../Themes/docs/shared-components/custom-relation.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

@@ -99,6 +99,7 @@ abstract class XotBaseResource extends Resource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -112,6 +113,9 @@ abstract class XotBaseResource extends Resource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return static::getFormSchemaImplementation();
     }
@@ -403,18 +407,23 @@ test('all models extend base model', function () {
 
 - [**README.md**](README.md) - Documentazione principale del modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> 8d801bbe (Check & fix styling)
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 =======
 <<<<<<< HEAD
@@ -423,3 +432,6 @@ test('all models extend base model', function () {
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> 8d801bbe (Check & fix styling)

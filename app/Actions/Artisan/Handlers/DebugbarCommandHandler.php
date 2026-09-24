@@ -20,6 +20,7 @@ class DebugbarCommandHandler implements CommandHandlerInterface
     public function supports(string $command): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $command === 'debugbar:clear';
 =======
 <<<<<<< .merge_file_Anop3z
@@ -32,5 +33,8 @@ class DebugbarCommandHandler implements CommandHandlerInterface
         return 'debugbar:clear' === $command;
 >>>>>>> .merge_file_r5Obyv
 >>>>>>> laraxot/dev
+=======
+        return 'debugbar:clear' === $command;
+>>>>>>> 8d801bbe (Check & fix styling)
     }
 }

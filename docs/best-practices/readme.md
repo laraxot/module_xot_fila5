@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 ---
@@ -16,12 +17,16 @@ canonical: ./README.md
 See canonical documentation: [README.md](./README.md)
 =======
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 8d801bbe (Check & fix styling)
 module: theme
 topic: readme
 canonical: ../../../../Themes/docs/shared-components/README-Modules.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # Best Practices
@@ -98,3 +103,5 @@ canonical: ./README.md
 See canonical documentation: [README.md](./README.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

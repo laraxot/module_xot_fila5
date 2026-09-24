@@ -120,6 +120,7 @@ $currentTeam = $user->currentTeam;
 - [No RefreshDatabase Policy](../Activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../UI/docs/test-fix-philosophy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -128,6 +129,8 @@ $currentTeam = $user->currentTeam;
 - [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ## 🔄 Workflow per Ogni Test
 
@@ -143,6 +146,7 @@ $currentTeam = $user->currentTeam;
 
 **Ultimo aggiornamento**: 2025-01-22
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Prossimo step**: Correggere ArtisanServiceTest.php
 =======
 <<<<<<< HEAD
@@ -152,3 +156,6 @@ $currentTeam = $user->currentTeam;
 **Prossimo step**: Correggere ArtisanServiceTest.php
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Prossimo step**: Correggere ArtisanServiceTest.php
+>>>>>>> 8d801bbe (Check & fix styling)

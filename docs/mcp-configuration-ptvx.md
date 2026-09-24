@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila4_mono
 
 =======
@@ -8,6 +9,10 @@
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Configurazione MCP per base_ptvx_fila4_mono
+
+>>>>>>> 8d801bbe (Check & fix styling)
 **Data Creazione**: 2026-01-12  
 **Ultimo Aggiornamento**: 2026-01-12  
 **Status**: ✅ Configurazione Completa e Ottimizzata
@@ -25,6 +30,7 @@ Questo documento descrive la configurazione MCP ottimizzata per il progetto **ba
 ### Configurazione Completa
 
 File: `laravel/.mcp.json`
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -44,15 +50,20 @@ Questo documento descrive la configurazione MCP effettivamente usata nel reposit
 E' il file condiviso dal progetto Laravel e contiene la configurazione applicativa principale. Per `laravel-boost` la configurazione corretta e portabile e':
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ```json
 {
     "mcpServers": {
         "laravel-boost": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             "command": "php",
             "args": [
                 "./artisan",
@@ -120,6 +131,7 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
                 "/var/www/_bases/base_ptvx_fila4_mono"
             ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
             "command": "/usr/bin/php8.3",
@@ -129,15 +141,20 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
             ]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
         }
     }
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 
 ## 📋 Descrizione Server
@@ -211,6 +228,7 @@ Se alcuni file risultano bloccati o non accessibili con tool standard:
 
 **Filosofia**: MCP come strumento per superare limitazioni e migliorare produttività nello sviluppo Laraxot.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 ### `/.mcp.json`
@@ -262,3 +280,5 @@ Nel workspace `ptvx` risultano verificati:
 **Filosofia**: un solo comando reale, una sola configurazione coerente, nessun path morto.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

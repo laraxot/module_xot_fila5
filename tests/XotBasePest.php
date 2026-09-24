@@ -44,6 +44,7 @@ final class XotBasePest
      * Riga presente sulla connessione indicata.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $where
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -56,6 +57,9 @@ final class XotBasePest
      * @param array<string, mixed> $where
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $where
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function assertTableHas(string $connection, string $table, array $where): void
     {
@@ -66,6 +70,7 @@ final class XotBasePest
      * Riga assente sulla connessione indicata.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $where
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -78,6 +83,9 @@ final class XotBasePest
      * @param array<string, mixed> $where
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $where
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function assertTableMissing(string $connection, string $table, array $where): void
     {
@@ -86,6 +94,7 @@ final class XotBasePest
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $where
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -98,6 +107,9 @@ final class XotBasePest
      * @param array<string, mixed> $where
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $where
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function tableQueryExists(string $connection, string $table, array $where): bool
     {
@@ -116,6 +128,7 @@ final class XotBasePest
      * @template T of Model
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  T  $model
      * @param  class-string<T>  $class
 =======
@@ -134,6 +147,11 @@ final class XotBasePest
      *
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param T               $model
+     * @param class-string<T> $class
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return T
      */
     public static function assertFreshModel(Model $model, string $class)
@@ -148,6 +166,7 @@ final class XotBasePest
      * @template T of Model
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  EloquentCollection<int, T>|Collection<int, T>  $collection
      * @param  class-string<T>  $class
 =======
@@ -166,6 +185,11 @@ final class XotBasePest
      *
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param EloquentCollection<int, T>|Collection<int, T> $collection
+     * @param class-string<T>                               $class
+     *
+>>>>>>> 8d801bbe (Check & fix styling)
      * @return T
      */
     public static function assertFirstModel(EloquentCollection|Collection $collection, string $class)
@@ -180,6 +204,7 @@ final class XotBasePest
     /**
      * Narrowing di un `mixed` ad array tipizzato, senza cast ciechi.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -190,6 +215,8 @@ final class XotBasePest
 =======
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
      *
      * Stesso schema di `assertString()`: `Assert::fail()` è dichiarato `never`, quindi
      * PHPStan restringe davvero il tipo. `assertNotEmpty()` non restringe niente e in
@@ -208,6 +235,7 @@ final class XotBasePest
         Assert::assertNotEmpty($value);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var array<string, mixed> $value */
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -220,6 +248,9 @@ final class XotBasePest
         /* @var array<string, mixed> $value */
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+        /* @var array<string, mixed> $value */
+>>>>>>> 8d801bbe (Check & fix styling)
         return $value;
     }
 
@@ -236,6 +267,7 @@ final class XotBasePest
     {
         if (! \is_string($value)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Assert::fail($message !== '' ? $message : 'Expected string, got '.get_debug_type($value).'.');
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -248,6 +280,9 @@ final class XotBasePest
             Assert::fail('' !== $message ? $message : 'Expected string, got '.get_debug_type($value).'.');
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+            Assert::fail('' !== $message ? $message : 'Expected string, got '.get_debug_type($value).'.');
+>>>>>>> 8d801bbe (Check & fix styling)
         }
 
         return $value;
@@ -263,6 +298,7 @@ final class XotBasePest
     {
         if (! \is_int($value) && ! \is_string($value)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Assert::fail($message !== '' ? $message : 'Expected model key (int|string), got '.get_debug_type($value).'.');
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -275,6 +311,9 @@ final class XotBasePest
             Assert::fail('' !== $message ? $message : 'Expected model key (int|string), got '.get_debug_type($value).'.');
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+            Assert::fail('' !== $message ? $message : 'Expected model key (int|string), got '.get_debug_type($value).'.');
+>>>>>>> 8d801bbe (Check & fix styling)
         }
 
         return $value;
@@ -282,6 +321,7 @@ final class XotBasePest
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string<\Throwable>  $exceptionClass
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -294,6 +334,9 @@ final class XotBasePest
      * @param class-string<\Throwable> $exceptionClass
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param class-string<\Throwable> $exceptionClass
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function assertThrows(callable $callback, string $exceptionClass): void
     {
@@ -310,6 +353,7 @@ final class XotBasePest
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  list<string>|array<int, string>  $haystack
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -322,6 +366,9 @@ final class XotBasePest
      * @param list<string>|array<int, string> $haystack
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param list<string>|array<int, string> $haystack
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function assertListContains(string $needle, array $haystack): void
     {
@@ -346,6 +393,7 @@ final class XotBasePest
      * per le classi interne, quindi l'assert è parte del contratto.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string  $class
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -358,6 +406,9 @@ final class XotBasePest
      * @param class-string $class
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param class-string $class
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function reflectionFilename(string $class): string
     {
@@ -372,6 +423,7 @@ final class XotBasePest
      * Sorgente della classe, per gli assert "il codice non contiene X".
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string  $class
 =======
 <<<<<<< .merge_file_xB5Ino
@@ -384,6 +436,9 @@ final class XotBasePest
      * @param class-string $class
 >>>>>>> .merge_file_9oRXx9
 >>>>>>> laraxot/dev
+=======
+     * @param class-string $class
+>>>>>>> 8d801bbe (Check & fix styling)
      */
     public static function reflectionSource(string $class): string
     {

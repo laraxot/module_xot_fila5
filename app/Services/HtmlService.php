@@ -40,6 +40,7 @@ class HtmlService
         // $pdforientation = 'L'; // default;
         // $out = 'show';
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($filename === '') {
 =======
 <<<<<<< .merge_file_FBBB6T
@@ -52,6 +53,9 @@ class HtmlService
         if ('' === $filename) {
 >>>>>>> .merge_file_LYQQlq
 >>>>>>> laraxot/dev
+=======
+        if ('' === $filename) {
+>>>>>>> 8d801bbe (Check & fix styling)
             $filename = Storage::disk('local')->path('test.pdf');
         }
         /*
@@ -69,6 +73,7 @@ class HtmlService
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_FBBB6T
 <<<<<<< HEAD
@@ -83,16 +88,21 @@ class HtmlService
 =======
 =======
 >>>>>>> .merge_file_LYQQlq
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
             if ('content_PDF' === $out) {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ('file' === $out) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_FBBB6T
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_LYQQlq
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

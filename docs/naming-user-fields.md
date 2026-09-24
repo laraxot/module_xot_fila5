@@ -18,17 +18,21 @@ In tutto il progetto, **usare SEMPRE** i campi `first_name` e `last_name` per ra
 ## Collegamenti
 - [Errore e regola nel modulo Patient](../../Patient/docs/naming-user-fields.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Errore e regola nel modulo Patient](../../patient/docs/naming-user-fields.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 
 **Questa regola è trasversale e vincolante per tutti i moduli del progetto.**
 
 ## Collegamenti tra versioni di naming-user-fields.md
 * [naming-user-fields.md](../../Patient/docs/naming-user-fields.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -36,3 +40,5 @@ In tutto il progetto, **usare SEMPRE** i campi `first_name` e `last_name` per ra
 * [naming-user-fields.md](../../patient/docs/naming-user-fields.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

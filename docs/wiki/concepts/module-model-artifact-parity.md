@@ -2,6 +2,7 @@
 type: concept
 module: Xot
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -11,11 +12,14 @@ module: Xot
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 updated: 2026-06-30
 qmd: "xot module model migration factory seeder parity audit N equals N"
 related:
   - ../../../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md
   - ../../module-directory-structure-rule.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -29,11 +33,14 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ---
 
 # Module model artifact parity
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -41,6 +48,8 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Regola N = N = N
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
@@ -68,7 +77,11 @@ Gate sessione: `run-session-gate.sh` §1.1c.
 ## Esclusi dal conteggio
 
 - `abstract` / `Base*`
+<<<<<<< HEAD
 - `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
+=======
+- `TestModel`, `TestSushiModel`
+>>>>>>> 8d801bbe (Check & fix styling)
 - Wrapper cross-modulo (es. `Predict\Models\User`)
 
 ## Backlog migrazioni
@@ -78,6 +91,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 ## Collegamenti
 
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -146,3 +160,5 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

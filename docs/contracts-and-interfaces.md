@@ -2,12 +2,15 @@
 
 **Last Updated**: 2025-01-23
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 **Status**: ✅ Complete Contract Documentation
 
 ## 🎯 Overview
@@ -77,6 +80,7 @@ interface UserContract extends
 > - `@property \Illuminate\Database\Eloquent\Collection<int, TeamContract> $teams`
 >
 <<<<<<< HEAD
+<<<<<<< HEAD
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
 =======
 <<<<<<< HEAD
@@ -86,6 +90,9 @@ interface UserContract extends
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, ExternalProject) lavorano solo contro il contratto Xot.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ### 2. ProfileContract
 **File**: `app/Contracts/ProfileContract.php`
@@ -550,6 +557,7 @@ class AppointmentService
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
 =======
 <<<<<<< HEAD
@@ -558,3 +566,6 @@ class AppointmentService
 *This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*This documentation provides comprehensive guidance for implementing and using contracts within the Xot ecosystem, ensuring type safety and consistency across all modules.*
+>>>>>>> 8d801bbe (Check & fix styling)

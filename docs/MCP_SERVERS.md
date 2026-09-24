@@ -40,6 +40,7 @@ This document provides Xot-specific MCP usage guidelines only.
 
 ### supermemory
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Container Tag**: `ptv`
 =======
 <<<<<<< HEAD
@@ -48,6 +49,9 @@ This document provides Xot-specific MCP usage guidelines only.
 - **Container Tag**: `fixcity`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Container Tag**: `fixcity`
+>>>>>>> 8d801bbe (Check & fix styling)
 - **Use**: Store Xot architectural decisions, evolution history
 - **Example**: Store reasoning behind XotBaseModel design
 

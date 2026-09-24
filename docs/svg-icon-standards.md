@@ -217,6 +217,7 @@ Before committing any SVG icon, verify:
 
 *Last Updated: 2025-08-27*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *SVG Standards Version: 2.0*
 *Based on Heroicons Outline Style*
 
@@ -231,3 +232,8 @@ Before committing any SVG icon, verify:
 *Based on Heroicons Outline Style*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*SVG Standards Version: 2.0*
+*Based on Heroicons Outline Style*
+
+>>>>>>> 8d801bbe (Check & fix styling)

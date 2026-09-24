@@ -36,16 +36,20 @@ class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VjMC8N
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_QrJa0K
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VjMC8N
@@ -55,6 +59,8 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QrJa0K
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             TextInput::make('nome')->required(),
@@ -138,16 +144,20 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VjMC8N
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_QrJa0K
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VjMC8N
@@ -157,6 +167,8 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_QrJa0K
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         // Schema del form

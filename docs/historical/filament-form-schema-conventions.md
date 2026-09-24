@@ -10,6 +10,7 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 // ✅ CORRETTO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
 public function getFormSchema(): array
@@ -18,10 +19,13 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
@@ -31,6 +35,8 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -49,6 +55,7 @@ public static function getFormSchema(): array
 // ❌ ERRATO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
 public function getFormSchema(): array
@@ -57,10 +64,13 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
@@ -70,6 +80,8 @@ public static function getFormSchema(): array
 >>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -143,6 +155,7 @@ class MyResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
     public function getFormSchema(): array
@@ -151,10 +164,13 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
@@ -164,6 +180,8 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -180,6 +198,7 @@ class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
     public function getFormSchema(): array
@@ -188,10 +207,13 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_7rI4S2
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_cPt02z
@@ -201,6 +223,8 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_7rI4S2
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

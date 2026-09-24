@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_3tBfsk
 <<<<<<< HEAD
@@ -15,6 +16,10 @@ declare(strict_types=1);
 =======
 
 >>>>>>> .merge_file_UAdlr5
+=======
+
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
@@ -90,6 +95,7 @@ test('gli epic dichiarati nelle story esistono in docs/epics.md', function () us
     foreach ($storyFiles() as $path) {
         $name = basename($path);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
 =======
 <<<<<<< .merge_file_3tBfsk
@@ -98,6 +104,9 @@ test('gli epic dichiarati nelle story esistono in docs/epics.md', function () us
         if (1 !== preg_match('/^0*(\d+)\./', $name, $m)) {
 >>>>>>> .merge_file_UAdlr5
 >>>>>>> laraxot/dev
+=======
+        if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
+>>>>>>> 8d801bbe (Check & fix styling)
             continue; // story senza numero: fuori dal perimetro di questo test
         }
         if (! isset($m[1])) {

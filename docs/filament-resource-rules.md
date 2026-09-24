@@ -76,6 +76,7 @@ protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -89,6 +90,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -140,9 +144,12 @@ public static function getRelations(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Pagine
 
 Se il metodo `getPages()` contiene solo le route standard (index, create, edit), **NON** dichiararlo:
@@ -162,6 +169,7 @@ public static function getPages(): array
 // Non dichiarare il metodo se contiene solo le route standard
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -195,6 +203,8 @@ Documentazione: [filament/getpages-redundancy-rule.md](./filament/getpages-redun
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 ## Motivazioni
 
 1. **Centralizzazione della Configurazione**: Le configurazioni comuni sono centralizzate nella classe base
@@ -222,6 +232,7 @@ class DoctorResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -235,6 +246,9 @@ class DoctorResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')
@@ -257,15 +271,19 @@ class DoctorResource extends XotBaseResource
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -275,3 +293,5 @@ class DoctorResource extends XotBaseResource
 - [consolidated/filament/resources/xot-base-resource.md](./consolidated/filament/resources/xot-base-resource.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 8d801bbe (Check & fix styling)

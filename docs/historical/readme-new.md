@@ -666,6 +666,7 @@ Located in `bashscripts/`:
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See [CHANGELOG.md](changelog.md) for full history.
 =======
 <<<<<<< .merge_file_UF4scq
@@ -678,6 +679,9 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GyyFVR
 >>>>>>> laraxot/dev
+=======
+See [CHANGELOG.md](changelog.md) for full history.
+>>>>>>> 8d801bbe (Check & fix styling)
 
 ---
 

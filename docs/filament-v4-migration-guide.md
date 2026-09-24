@@ -155,6 +155,7 @@ abstract class XotBaseResource extends Resource
     // ✅ Metodi rimangono invariati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -168,6 +169,9 @@ abstract class XotBaseResource extends Resource
     public static function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> 8d801bbe (Check & fix styling)
     public static function getPages(): array { /* ... */ }
 
     // ❌ METODI VIETATI - Devono essere solo nelle pagine List
@@ -278,6 +282,7 @@ find laravel/Modules -name "*.php" -path "*/Filament/*" -exec grep -l "Radio::ma
 **Stato**: Ready for Implementation
 **Target**: Tutti i moduli PTVX
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Deadline**: 31 Dicembre 2025
 =======
 <<<<<<< HEAD
@@ -286,3 +291,6 @@ find laravel/Modules -name "*.php" -path "*/Filament/*" -exec grep -l "Radio::ma
 **Deadline**: 31 Dicembre 2025
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Deadline**: 31 Dicembre 2025
+>>>>>>> 8d801bbe (Check & fix styling)

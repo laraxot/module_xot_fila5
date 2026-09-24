@@ -18,10 +18,14 @@ class CopyFromLastYearButton
             ->tooltip('copy from last year')
             ->icon('heroicon-o-document-duplicate')
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->visible($year !== null)
 =======
             ->visible(null !== $year)
 >>>>>>> laraxot/dev
+=======
+            ->visible(null !== $year)
+>>>>>>> 8d801bbe (Check & fix styling)
             ->action(static fn () => app(CopyFromLastYearAction::class)->execute($modelClass, $fieldName, $year));
     }
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_bWGWoB
 <<<<<<< HEAD
@@ -107,3 +108,6 @@ execute(array $array1, array $array2): array
 
 >>>>>>> .merge_file_bxbBZs
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 8d801bbe (Check & fix styling)
