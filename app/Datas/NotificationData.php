@@ -16,6 +16,7 @@ class NotificationData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, string>  $channels  Canali di notifica disponibili
      * @param  string  $default_channel  Canale predefinito
      * @param  bool  $queue  Se accodare le notifiche
@@ -32,6 +33,15 @@ class NotificationData extends Data
      * @param array<string, mixed> $slack           Configurazione Slack
      * @param array<string, mixed> $telegram        Configurazione Telegram
 >>>>>>> laraxot/dev
+=======
+     * @param array<mixed> $channels        Canali di notifica disponibili
+     * @param string       $default_channel Canale predefinito
+     * @param bool         $queue           Se accodare le notifiche
+     * @param array<mixed> $mail            Configurazione email di notifica
+     * @param array<mixed> $broadcast       Configurazione broadcast
+     * @param array<mixed> $slack           Configurazione Slack
+     * @param array<mixed> $telegram        Configurazione Telegram
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(
         public readonly array $channels = ['mail', 'database'],
@@ -62,11 +72,16 @@ class NotificationData extends Data
             'chat_id' => '',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Create a new instance of NotificationData with default values.
@@ -74,9 +89,13 @@ class NotificationData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
 >>>>>>> laraxot/dev
+=======
+        return new self();
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

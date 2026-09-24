@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_UueXAs
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,11 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LL7JLb
 >>>>>>> .merge_file_Dg1dZE
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 name: replicate-infolist
 description: "replicate-infolist"
@@ -30,6 +36,7 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_UueXAs
 =======
 <<<<<<< .merge_file_TRlV36
@@ -38,5 +45,7 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LL7JLb
 >>>>>>> .merge_file_Dg1dZE
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 BMAD story: XotBaseResourceInfolist replica istanza non statica e schema come XotBaseResourceForm

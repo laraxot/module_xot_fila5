@@ -1,12 +1,16 @@
 # Code Quality Audit Completo - Gennaio 2025
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data**: 2025-01-22
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data**: 2025-01-22
+>>>>>>> 3792da0d (Check & fix styling)
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -31,12 +35,16 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 
 ### ✅ Completati
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
   - PHPStan: 0 errori
   - PHPDoc: Completo
@@ -106,6 +114,7 @@ Ogni modulo dovrebbe avere:
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
 =======
 <<<<<<< HEAD
@@ -114,3 +123,6 @@ Ogni modulo dovrebbe avere:
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> 3792da0d (Check & fix styling)

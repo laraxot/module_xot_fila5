@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 /*
  * Isolated unit tests for HasCommonScopes.
  *
@@ -19,10 +23,14 @@ use PHPUnit\Framework\Assert;
 
 beforeEach(function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $capsule = new Capsule;
 =======
     $capsule = new Capsule();
 >>>>>>> laraxot/dev
+=======
+    $capsule = new Capsule();
+>>>>>>> 3792da0d (Check & fix styling)
     $capsule->addConnection([
         'driver' => 'sqlite',
         'database' => ':memory:',
@@ -91,10 +99,14 @@ it('reports isActive correctly based on is_active flag', function (): void {
     $active = new HasCommonScopesProbe(['is_active' => true]);
     $inactive = new HasCommonScopesProbe(['is_active' => false]);
 <<<<<<< HEAD
+<<<<<<< HEAD
     $unset = new HasCommonScopesProbe;
 =======
     $unset = new HasCommonScopesProbe();
 >>>>>>> laraxot/dev
+=======
+    $unset = new HasCommonScopesProbe();
+>>>>>>> 3792da0d (Check & fix styling)
 
     Assert::assertTrue($active->isActive());
     Assert::assertFalse($inactive->isActive());

@@ -5,16 +5,22 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Cast;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match;
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use function Safe\preg_match;
 
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Action per convertire in modo sicuro un valore mixed in int.
  *
@@ -34,6 +40,7 @@ class SafeIntCastAction
      * Converte in modo sicuro un valore mixed in int.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 0)
 =======
@@ -41,6 +48,11 @@ class SafeIntCastAction
      * @param int|null $default Valore di default se la conversione fallisce (default: 0)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed    $value   Il valore da convertire
+     * @param int|null $default Valore di default se la conversione fallisce (default: 0)
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Il valore convertito in int
      */
     public function execute(mixed $value, ?int $default = 0): int
@@ -72,10 +84,14 @@ class SafeIntCastAction
 
         // Se è un array e ha un solo elemento numerico
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (is_array($value) && count($value) === 1) {
 =======
         if (is_array($value) && 1 === count($value)) {
 >>>>>>> laraxot/dev
+=======
+        if (is_array($value) && 1 === count($value)) {
+>>>>>>> 3792da0d (Check & fix styling)
             return $this->execute(reset($value), $default);
         }
 
@@ -92,6 +108,7 @@ class SafeIntCastAction
      * Metodo statico di convenienza per chiamate dirette.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 0)
 =======
@@ -99,6 +116,11 @@ class SafeIntCastAction
      * @param int|null $default Valore di default se la conversione fallisce (default: 0)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed    $value   Il valore da convertire
+     * @param int|null $default Valore di default se la conversione fallisce (default: 0)
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Il valore convertito in int
      */
     public static function cast(mixed $value, ?int $default = 0): int
@@ -110,17 +132,23 @@ class SafeIntCastAction
      * Converte un valore in int con validazione di range.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int  $min  Valore minimo consentito
      * @param  int  $max  Valore massimo consentito
      * @param  int|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param mixed    $value   Il valore da convertire
      * @param int      $min     Valore minimo consentito
      * @param int      $max     Valore massimo consentito
      * @param int|null $default Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Il valore convertito e validato
      */
     public function executeWithRange(mixed $value, int $min, int $max, ?int $default = null): int
@@ -135,17 +163,23 @@ class SafeIntCastAction
      * Metodo statico di convenienza per cast con range.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int  $min  Valore minimo consentito
      * @param  int  $max  Valore massimo consentito
      * @param  int|null  $default  Valore di default se la conversione fallisce
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param mixed    $value   Il valore da convertire
      * @param int      $min     Valore minimo consentito
      * @param int      $max     Valore massimo consentito
      * @param int|null $default Valore di default se la conversione fallisce
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Il valore convertito e validato
      */
     public static function castWithRange(mixed $value, int $min, int $max, ?int $default = null): int
@@ -157,6 +191,7 @@ class SafeIntCastAction
      * Converte un valore in ID positivo (sempre >= 1).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 1)
 =======
@@ -164,6 +199,11 @@ class SafeIntCastAction
      * @param int|null $default Valore di default se la conversione fallisce (default: 1)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed    $value   Il valore da convertire
+     * @param int|null $default Valore di default se la conversione fallisce (default: 1)
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Il valore convertito come ID positivo
      */
     public function executeAsId(mixed $value, ?int $default = 1): int
@@ -177,6 +217,7 @@ class SafeIntCastAction
      * Metodo statico per cast come ID positivo.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 1)
 =======
@@ -184,6 +225,11 @@ class SafeIntCastAction
      * @param int|null $default Valore di default se la conversione fallisce (default: 1)
      *
 >>>>>>> laraxot/dev
+=======
+     * @param mixed    $value   Il valore da convertire
+     * @param int|null $default Valore di default se la conversione fallisce (default: 1)
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Il valore convertito come ID positivo
      */
     public static function castAsId(mixed $value, ?int $default = 1): int
@@ -195,6 +241,7 @@ class SafeIntCastAction
      * Converte una stringa in int con gestione avanzata.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $value  La stringa da convertire
      * @param  int|null  $default  Valore di default
 =======
@@ -202,6 +249,11 @@ class SafeIntCastAction
      * @param int|null $default Valore di default
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string   $value   La stringa da convertire
+     * @param int|null $default Valore di default
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Il valore convertito
      */
     private function parseStringToInt(string $value, ?int $default = 0): int
@@ -224,10 +276,14 @@ class SafeIntCastAction
         // Prova a estrarre solo i numeri
         $matches = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (preg_match('/^[+-]?[0-9]+/', $normalized, $matches) === 1 && ! empty($matches[0])) {
 =======
         if (1 === preg_match('/^[+-]?[0-9]+/', $normalized, $matches) && ! empty($matches[0])) {
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/^[+-]?[0-9]+/', $normalized, $matches) && ! empty($matches[0])) {
+>>>>>>> 3792da0d (Check & fix styling)
             return (int) $matches[0];
         }
 

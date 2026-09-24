@@ -16,6 +16,7 @@ class SearchEngineData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $driver  Driver del motore di ricerca (algolia, meilisearch, ecc.)
      * @param  string  $algolia_app_id  Algolia App ID
      * @param  string  $algolia_secret  Chiave segreta Algolia
@@ -24,6 +25,8 @@ class SearchEngineData extends Data
      * @param  bool  $enable_local  Abilita la ricerca locale
      * @param  array<int, class-string>  $searchable  Modelli cercabili
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string                   $driver         Driver del motore di ricerca (algolia, meilisearch, ecc.)
      * @param string                   $algolia_app_id Algolia App ID
      * @param string                   $algolia_secret Chiave segreta Algolia
@@ -31,7 +34,10 @@ class SearchEngineData extends Data
      * @param string                   $meili_key      Chiave MeiliSearch
      * @param bool                     $enable_local   Abilita la ricerca locale
      * @param array<int, class-string> $searchable     Modelli cercabili
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(
         public readonly string $driver = 'local',
@@ -42,11 +48,16 @@ class SearchEngineData extends Data
         public readonly bool $enable_local = true,
         public readonly array $searchable = [],
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Create a new instance of SearchEngineData with default values.
@@ -54,9 +65,13 @@ class SearchEngineData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
 >>>>>>> laraxot/dev
+=======
+        return new self();
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

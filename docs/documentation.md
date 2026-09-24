@@ -42,6 +42,7 @@ Modules/[Nome]/
 ## Collegamenti
 - [Indice della Documentazione](../docs/INDEX.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole del Progetto](rules.md)
 - [Struttura dei Moduli](structure.md)
 =======
@@ -53,15 +54,22 @@ Modules/[Nome]/
 - [Struttura dei Moduli](../docs/STRUCTURE.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Regole del Progetto](../docs/RULES.md)
+- [Struttura dei Moduli](../docs/STRUCTURE.md)
+>>>>>>> 3792da0d (Check & fix styling)
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
 * [documentation.md](../../../Xot/docs/documentation.md)
 * [documentation.md](../../../Xot/docs/guidelines/documentation.md)
 * [documentation.md](../../../Cms/docs/roadmap/features/documentation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 https://github.com/mpociot/laravel-apidoc-generator
 
@@ -96,6 +104,10 @@ https://beyondco.de/docs/laravel-apidoc-generator/getting-started/documenting-yo
 
 
 //-- forum un po' diverso
+<<<<<<< HEAD
 https://flarum.org/
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://flarum.org/
+>>>>>>> 3792da0d (Check & fix styling)

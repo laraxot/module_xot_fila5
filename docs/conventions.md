@@ -155,9 +155,12 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 * [conventions.md](../../Dental/docs/conventions.md)
 * [conventions.md](../../Patient/docs/conventions.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [CONVENTIONS.md](../../../xot/docs/conventions.md)
 * [CONVENTIONS.md](../../../dental/docs/conventions.md)
 * [CONVENTIONS.md](../../../patient/docs/conventions.md)
@@ -166,6 +169,10 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 * [conventions.md](../../../../../docs/tecnico/filament/conventions.md)
 * [conventions.md](../../../../../docs/conventions.md)
 * [conventions.md](../../dental/docs/conventions.md)
+<<<<<<< HEAD
 * [conventions.md](../../patient/docs/conventions.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [conventions.md](../../patient/docs/conventions.md)
+>>>>>>> 3792da0d (Check & fix styling)

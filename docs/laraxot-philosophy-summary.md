@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8giRhQ
 <<<<<<< HEAD
@@ -9,6 +10,8 @@
 =======
 >>>>>>> .merge_file_7QExDF
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Laraxot Philosophy - Complete Summary
 
 ## Core Principles
@@ -25,6 +28,7 @@
 ### 2. **Consistency Over Flexibility**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Predictable behavior is more valuable than unlimited options:**
 =======
 <<<<<<< HEAD
@@ -33,6 +37,9 @@
 **<nome progetto>able behavior is more valuable than unlimited options:**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**<nome progetto>able behavior is more valuable than unlimited options:**
+>>>>>>> 3792da0d (Check & fix styling)
 
 - Same file structure across all modules
 - Same inheritance patterns for all models
@@ -91,6 +98,7 @@
 ### Technical Benefits
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Predictable Autoloading**: No ambiguous class resolution
 =======
 <<<<<<< HEAD
@@ -99,6 +107,9 @@
 1. **<nome progetto>able Autoloading**: No ambiguous class resolution
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+1. **<nome progetto>able Autoloading**: No ambiguous class resolution
+>>>>>>> 3792da0d (Check & fix styling)
 2. **Consistent Behavior**: Same results in all environments
 3. **Easy Maintenance**: Clear, unambiguous code structure
 4. **Fast Debugging**: Obvious source of truth for each entity
@@ -185,6 +196,7 @@ composer dump-autoload
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 =======
@@ -408,3 +420,6 @@ Questo documento rappresenta la sintesi delle conoscenze acquisite attraverso:
 >>>>>>> .merge_file_7QExDF
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
+>>>>>>> 3792da0d (Check & fix styling)

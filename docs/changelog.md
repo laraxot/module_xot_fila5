@@ -1,12 +1,15 @@
 # Changelog - Modulo Xot
 
 <<<<<<< HEAD
-## [2025-06-04] - Sessione Fix Critica
-=======
 <<<<<<< HEAD
 ## [2025-06-04] - Sessione Fix Critica
 =======
 <<<<<<< HEAD
+## [2025-06-04] - Sessione Fix Critica
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
@@ -15,8 +18,11 @@ e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.
 =======
 ## [2025-06-04] - Sessione Fix Critica
 >>>>>>> 64619e34 (.)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 All notable changes to `:package_name` will be documented in this file.
 
@@ -79,17 +85,23 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - Date in formato `[YYYY-MM-DD]`
 - Categorie: Added, Changed, Deprecated, Removed, Fixed, Security
 - Link relativi ai documenti di dettaglio
 - Focus su COSA è cambiato e PERCHÉ
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -154,12 +166,16 @@ All notable changes to `:package_name` will be documented in this file.
 ## [1.1.0] - 2025-10-29
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 64619e34 (.)
+>>>>>>> 3792da0d (Check & fix styling)
 ### Fixed
 - **HasXotTable.php** - Risolti if statement duplicati (3x)
 - **XotBaseChartWidget.php** - Rimossi metodi getHeading() duplicati
@@ -223,6 +239,7 @@ All notable changes to `:package_name` will be documented in this file.
 
 ### Documenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -230,14 +247,20 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 - [README.md](./docs/readme.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
@@ -245,12 +268,16 @@ All notable changes to `:package_name` will be documented in this file.
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution.md) - Latest fix
 >>>>>>> 64619e34 (.)
 =======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -258,6 +285,9 @@ All notable changes to `:package_name` will be documented in this file.
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Repository
 - **Branch:** develop
@@ -270,14 +300,17 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 <<<<<<< HEAD
-**Versioning:** [Semantic Versioning](https://semver.org/)
-**Versioning:** [Semantic Versioning](https://semver.org/)
-=======
 <<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
 =======
 <<<<<<< HEAD
+**Versioning:** [Semantic Versioning](https://semver.org/)
+**Versioning:** [Semantic Versioning](https://semver.org/)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
 =======
@@ -286,5 +319,8 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 **Versioning:** [Semantic Versioning](https://semver.org/)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

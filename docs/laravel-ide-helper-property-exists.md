@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -26,6 +27,8 @@ Owner operativo: [ide-helper-models-governance.md](./ide-helper-models-governanc
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Summary: laravel-ide-helper e Eliminazione property_exists()
 
 ## Lavoro Completato
@@ -240,5 +243,8 @@ La filosofia è chiara: rispettare l'architettura Eloquent e fidarsi delle annot
 **La religione:** Trust the Magic (Methods)
 **La politica:** No property_exists() on Eloquent Models
 **Lo Zen:** Semplicità attraverso la comprensione
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

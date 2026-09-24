@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -110,6 +111,8 @@ Prima di ogni commit, verificare:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Directory Structure Rules
 
 Per il modulo Xot valgono queste regole:
@@ -121,6 +124,10 @@ Per il modulo Xot valgono queste regole:
 
 Le vecchie cartelle duplicate individuate erano `Xot/lang/lang` e `Xot/_docs`.
 
+<<<<<<< HEAD
 Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
+>>>>>>> 3792da0d (Check & fix styling)

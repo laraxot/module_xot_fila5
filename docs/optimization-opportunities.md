@@ -349,6 +349,7 @@ abstract class BaseModel extends XotBaseModel
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
@@ -363,6 +364,11 @@ abstract class BaseModel extends XotBaseModel
 - `Modules/healthcare_app/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `Modules/healthcare_app/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/healthcare_app/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+>>>>>>> 3792da0d (Check & fix styling)
 
 **Soluzione DRY + KISS**:
 ```php
@@ -628,6 +634,7 @@ return array_merge(
 
 *Ultimo aggiornamento: Giugno 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Autore: Analisi Automatica del Progetto*
 =======
 <<<<<<< HEAD
@@ -636,3 +643,6 @@ return array_merge(
 *Autore: Analisi Automatica del Progetto*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Autore: Analisi Automatica del Progetto*
+>>>>>>> 3792da0d (Check & fix styling)

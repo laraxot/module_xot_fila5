@@ -8,6 +8,7 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 
 - [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
 =======
 <<<<<<< .merge_file_JfkhTL
@@ -20,6 +21,9 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ukLWaW
 >>>>>>> laraxot/dev
+=======
+- [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Cos'è il Sistema di Prompt
 
@@ -42,6 +46,7 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 ### Come Utilizzare Entrambi i Sistemi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
 =======
 <<<<<<< .merge_file_JfkhTL
@@ -54,6 +59,9 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ukLWaW
 >>>>>>> laraxot/dev
+=======
+1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
+>>>>>>> 3792da0d (Check & fix styling)
 2. Utilizzare il [Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md) per istruzioni dettagliate
 
 ## Miglioramenti Recenti
@@ -76,6 +84,7 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 
 - [Sistema di Collegamenti della Documentazione](../../../../docs/collegamenti-documentazione.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
 =======
 <<<<<<< .merge_file_JfkhTL
@@ -88,5 +97,8 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ukLWaW
 >>>>>>> laraxot/dev
+=======
+- [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)

@@ -330,6 +330,7 @@ class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_wUVVIp
 =======
@@ -349,6 +350,9 @@ class MyWidget extends XotBaseWidget
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JPZl1K
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         // Filament methods should not be static
     }

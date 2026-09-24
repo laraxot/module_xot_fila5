@@ -175,6 +175,7 @@ problema.
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_xaH8Jn
 <<<<<<< HEAD
 =======
@@ -188,11 +189,14 @@ problema.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_XxDkwM
 >>>>>>> .merge_file_XY74bt
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **23 settembre 2026 — login admin:** HTML con `src="…/ptv::img/icon.png"` (404).
 `Modules/Ptv/resources/img/icon.png` è PNG reale (`89 50 4E 47`). Causa:
 `AssetAction` force-copy sotto `www-data`, non LFS. Story
 `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_xaH8Jn
 >>>>>>> laraxot/dev
 =======
@@ -204,6 +208,8 @@ problema.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_XxDkwM
 >>>>>>> .merge_file_XY74bt
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Canone

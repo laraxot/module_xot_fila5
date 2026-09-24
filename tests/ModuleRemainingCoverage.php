@@ -20,10 +20,13 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
@@ -31,11 +34,15 @@ use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use SplFileInfo;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 use function Safe\file;
@@ -44,19 +51,25 @@ use function Safe\preg_replace;
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Sweep aggressivo verso coverage 100%: closure Filament, policy con matrice ruoli, metodi senza limite parametri.
  */
@@ -102,6 +115,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -112,6 +126,10 @@ final class ModuleRemainingCoverage
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                 continue;
             }
@@ -124,6 +142,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                     $instance = $argc === 0
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     $instance = $argc === 0
@@ -134,6 +153,10 @@ final class ModuleRemainingCoverage
                     $instance = 0 === $argc
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                    $instance = 0 === $argc
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                         ? $class::make()
                         : $class::make('coverage_field');
                 }
@@ -159,6 +182,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
@@ -169,6 +193,10 @@ final class ModuleRemainingCoverage
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($method->getDeclaringClass()->getName() !== $class) {
                     continue;
                 }
@@ -189,22 +217,28 @@ final class ModuleRemainingCoverage
                 } catch (\Throwable) {
                     $invoked++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     $invoked++;
                 } catch (\Throwable) {
                     $invoked++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     ++$invoked;
                 } catch (\Throwable) {
                     ++$invoked;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                     ++$invoked;
                 } catch (\Throwable) {
                     ++$invoked;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 }
             }
         }
@@ -221,6 +255,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         $model = Mockery::mock(Model::class)->makePartial();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         $model = Mockery::mock(Model::class)->makePartial();
@@ -231,6 +266,10 @@ final class ModuleRemainingCoverage
         $model = \Mockery::mock(Model::class)->makePartial();
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        $model = \Mockery::mock(Model::class)->makePartial();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         $model->shouldIgnoreMissing();
         $model->setRawAttributes([
             'id' => 1,
@@ -274,6 +313,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
@@ -284,6 +324,10 @@ final class ModuleRemainingCoverage
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                     continue;
                 }
@@ -299,29 +343,39 @@ final class ModuleRemainingCoverage
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($instance === null) {
                     continue;
                 }
 
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 if (null === $instance) {
                     continue;
                 }
 
                 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                     if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                         continue;
@@ -337,22 +391,28 @@ final class ModuleRemainingCoverage
                     } catch (\Throwable) {
                         $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                         $executed++;
                     } catch (\Throwable) {
                         $executed++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         ++$executed;
                     } catch (\Throwable) {
                         ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                         ++$executed;
                     } catch (\Throwable) {
                         ++$executed;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     }
                 }
             }
@@ -376,6 +436,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
@@ -386,6 +447,10 @@ final class ModuleRemainingCoverage
             if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
@@ -417,6 +482,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -427,6 +493,10 @@ final class ModuleRemainingCoverage
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                 continue;
             }
@@ -448,6 +518,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             if ($instance === null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             if ($instance === null) {
@@ -458,6 +529,10 @@ final class ModuleRemainingCoverage
             if (null === $instance) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            if (null === $instance) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
@@ -466,29 +541,39 @@ final class ModuleRemainingCoverage
                     $instance->setRawAttributes(self::defaultModelAttributes());
                 } catch (\Throwable) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     $executed++;
                 }
             }
 
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     ++$executed;
                 }
             }
 
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                 if ($method->getDeclaringClass()->getName() !== $class) {
                     continue;
@@ -532,22 +617,28 @@ final class ModuleRemainingCoverage
                 } catch (\Throwable) {
                     $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 }
             }
         }
@@ -567,6 +658,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                     $table = new $class;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     $table = new $class;
@@ -577,15 +669,22 @@ final class ModuleRemainingCoverage
                     $table = new $class();
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                    $table = new $class();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     self::invokeClosuresInValue($table->getTableColumns(), $record, $invoked);
                     try {
                         self::invokeClosuresInValue($table->getTableFilters(), $record, $invoked);
                     } catch (\Throwable) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         $invoked++;
                     }
                     if ((new ReflectionClass($table))->hasMethod('getTableActions')) {
@@ -595,10 +694,14 @@ final class ModuleRemainingCoverage
                         } catch (\Throwable) {
                             $invoked++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         ++$invoked;
                     }
                     if ((new \ReflectionClass($table))->hasMethod('getTableActions')) {
@@ -607,8 +710,11 @@ final class ModuleRemainingCoverage
                             self::invokeClosuresInValue($m->invoke($table), $record, $invoked);
                         } catch (\Throwable) {
                             ++$invoked;
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                         }
                     }
@@ -617,6 +723,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
@@ -630,6 +737,10 @@ final class ModuleRemainingCoverage
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                     continue;
                 }
@@ -642,6 +753,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                         $rm = new ReflectionMethod($class, $staticMethod);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                         $rm = new ReflectionMethod($class, $staticMethod);
@@ -652,6 +764,10 @@ final class ModuleRemainingCoverage
                         $rm = new \ReflectionMethod($class, $staticMethod);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                        $rm = new \ReflectionMethod($class, $staticMethod);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                         if (! $rm->isStatic()) {
                             continue;
                         }
@@ -663,6 +779,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                         $invoked++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                         $invoked++;
@@ -673,6 +790,10 @@ final class ModuleRemainingCoverage
                         ++$invoked;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                        ++$invoked;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     }
                 }
 
@@ -696,29 +817,39 @@ final class ModuleRemainingCoverage
                         self::invokeClosuresInValue($result, $record, $invoked);
                     } catch (\Throwable) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         $invoked++;
                     }
                 }
             } catch (\Throwable) {
                 $invoked++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         ++$invoked;
                     }
                 }
             } catch (\Throwable) {
                 ++$invoked;
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
             }
         }
@@ -743,6 +874,7 @@ final class ModuleRemainingCoverage
                 $policy = new $class;
                 $ref = new ReflectionClass($policy);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 $policy = new $class;
@@ -756,6 +888,11 @@ final class ModuleRemainingCoverage
                 $ref = new \ReflectionClass($policy);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                $policy = new $class();
+                $ref = new \ReflectionClass($policy);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
                 foreach ($roleSets as $roles) {
                     $user = self::mockUserWithRoles($roles);
@@ -764,6 +901,7 @@ final class ModuleRemainingCoverage
                     foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
                         if ($method->getName() === '__construct') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
@@ -777,6 +915,11 @@ final class ModuleRemainingCoverage
                         if ('__construct' === $method->getName()) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                    foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
+                        if ('__construct' === $method->getName()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                             continue;
                         }
 
@@ -788,22 +931,28 @@ final class ModuleRemainingCoverage
                         } catch (\Throwable) {
                             $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                             $executed++;
                         } catch (\Throwable) {
                             $executed++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                             ++$executed;
                         } catch (\Throwable) {
                             ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                             ++$executed;
                         } catch (\Throwable) {
                             ++$executed;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         }
                     }
                 }
@@ -811,6 +960,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 $executed++;
@@ -821,6 +971,10 @@ final class ModuleRemainingCoverage
                 ++$executed;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                ++$executed;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
 
@@ -841,6 +995,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
@@ -851,6 +1006,10 @@ final class ModuleRemainingCoverage
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                     continue;
                 }
@@ -868,6 +1027,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 if ($instance === null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 if ($instance === null) {
@@ -878,6 +1038,10 @@ final class ModuleRemainingCoverage
                 if (null === $instance) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                if (null === $instance) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     continue;
                 }
 
@@ -888,6 +1052,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
@@ -898,6 +1063,10 @@ final class ModuleRemainingCoverage
                 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     if ($method->getDeclaringClass()->getName() !== $class) {
                         continue;
                     }
@@ -930,22 +1099,28 @@ final class ModuleRemainingCoverage
                     } catch (\Throwable) {
                         $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                         $executed++;
                     } catch (\Throwable) {
                         $executed++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         ++$executed;
                     } catch (\Throwable) {
                         ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                         ++$executed;
                     } catch (\Throwable) {
                         ++$executed;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     }
                 }
             }
@@ -966,6 +1141,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                     $controller = (new ReflectionClass($class))->newInstanceWithoutConstructor();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     $controller = (new ReflectionClass($class))->newInstanceWithoutConstructor();
@@ -976,6 +1152,10 @@ final class ModuleRemainingCoverage
                     $controller = (new \ReflectionClass($class))->newInstanceWithoutConstructor();
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                    $controller = (new \ReflectionClass($class))->newInstanceWithoutConstructor();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 } catch (\Throwable) {
                     continue;
                 }
@@ -985,6 +1165,7 @@ final class ModuleRemainingCoverage
             $ref = new ReflectionClass($class);
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -998,6 +1179,11 @@ final class ModuleRemainingCoverage
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($method->isStatic() || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -1020,22 +1206,28 @@ final class ModuleRemainingCoverage
                 } catch (\Throwable) {
                     $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 }
             }
         }
@@ -1050,27 +1242,37 @@ final class ModuleRemainingCoverage
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Projectors') as $class) {
             try {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $projector = new $class;
                 $ref = new ReflectionClass($class);
 
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $projector = new $class();
                 $ref = new \ReflectionClass($class);
 
                 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                     $name = $method->getName();
                     if (str_starts_with($name, '__')) {
@@ -1079,6 +1281,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                     if (! str_starts_with($name, 'on') && $name !== 'handle') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                     if (! str_starts_with($name, 'on') && $name !== 'handle') {
@@ -1089,6 +1292,10 @@ final class ModuleRemainingCoverage
                     if (! str_starts_with($name, 'on') && 'handle' !== $name) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                    if (! str_starts_with($name, 'on') && 'handle' !== $name) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                         continue;
                     }
 
@@ -1099,10 +1306,13 @@ final class ModuleRemainingCoverage
                     try {
                         $args = self::defaultArgsForMethod($method);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         if ($args === [] && $method->getNumberOfRequiredParameters() > 0) {
                             continue;
                         }
@@ -1115,10 +1325,14 @@ final class ModuleRemainingCoverage
             } catch (\Throwable) {
                 $executed++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         if ([] === $args && $method->getNumberOfRequiredParameters() > 0) {
                             continue;
                         }
@@ -1130,10 +1344,13 @@ final class ModuleRemainingCoverage
                 }
             } catch (\Throwable) {
                 ++$executed;
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
             }
         }
@@ -1145,6 +1362,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
      * @param  list<string>  $roles
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
      * @param  list<string>  $roles
@@ -1157,6 +1375,11 @@ final class ModuleRemainingCoverage
      *
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+     * @param list<string> $roles
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Mockery\MockInterface&UserContract
      */
     private static function mockUserWithRoles(array $roles): UserContract
@@ -1165,6 +1388,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
@@ -1175,6 +1399,10 @@ final class ModuleRemainingCoverage
         $user = \Mockery::mock(UserContract::class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        $user = \Mockery::mock(UserContract::class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         $user->shouldReceive('hasRole')->andReturnUsing(
             static fn (array|string $r): bool => (bool) array_intersect(
                 is_array($r) ? array_values(array_filter($r, is_string(...))) : [$r],
@@ -1195,6 +1423,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
     private static function buildPolicyArgs(ReflectionMethod $method, UserContract $user): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
     private static function buildPolicyArgs(ReflectionMethod $method, UserContract $user): array
@@ -1205,6 +1434,10 @@ final class ModuleRemainingCoverage
     private static function buildPolicyArgs(\ReflectionMethod $method, UserContract $user): array
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+    private static function buildPolicyArgs(\ReflectionMethod $method, UserContract $user): array
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $args = [];
         foreach ($method->getParameters() as $param) {
@@ -1214,22 +1447,28 @@ final class ModuleRemainingCoverage
                 $typeName = $type->getName();
                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
                 if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
                 if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     $args[] = $user;
 
                     continue;
@@ -1237,6 +1476,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
@@ -1247,6 +1487,10 @@ final class ModuleRemainingCoverage
                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     $args[] = self::mockEloquentRecord($typeName);
 
                     continue;
@@ -1262,6 +1506,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
      * @param  class-string<Model>|null  $class
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
      * @param  class-string<Model>|null  $class
@@ -1274,6 +1519,11 @@ final class ModuleRemainingCoverage
      *
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model>|null $class
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Mockery\MockInterface&Model
      */
     private static function mockEloquentRecord(?string $class = null): Model
@@ -1283,6 +1533,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         $model = Mockery::mock($class)->makePartial();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         $model = Mockery::mock($class)->makePartial();
@@ -1293,6 +1544,10 @@ final class ModuleRemainingCoverage
         $model = \Mockery::mock($class)->makePartial();
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        $model = \Mockery::mock($class)->makePartial();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         $model->shouldIgnoreMissing();
         $model->shouldReceive('getKey')->andReturn(1);
         $model->shouldReceive('getAttribute')->andReturn(null);
@@ -1303,6 +1558,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         $builder = Mockery::mock(Builder::class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         $builder = Mockery::mock(Builder::class);
@@ -1313,6 +1569,10 @@ final class ModuleRemainingCoverage
         $builder = \Mockery::mock(Builder::class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        $builder = \Mockery::mock(Builder::class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         $builder->shouldReceive('where')->andReturnSelf();
         $builder->shouldReceive('whereHas')->andReturnSelf();
         $builder->shouldReceive('first')->andReturn(null);
@@ -1323,6 +1583,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         $relation = Mockery::mock(Relation::class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         $relation = Mockery::mock(Relation::class);
@@ -1333,6 +1594,10 @@ final class ModuleRemainingCoverage
         $relation = \Mockery::mock(Relation::class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        $relation = \Mockery::mock(Relation::class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         $relation->shouldReceive('where')->andReturnSelf();
         $relation->shouldReceive('whereHas')->andReturnSelf();
         $relation->shouldReceive('exists')->andReturn(false, true);
@@ -1359,6 +1624,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             $invoked++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             $invoked++;
@@ -1369,6 +1635,10 @@ final class ModuleRemainingCoverage
             ++$invoked;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            ++$invoked;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
             return;
         }
@@ -1394,6 +1664,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         $ref = new ReflectionClass($value);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         $ref = new ReflectionClass($value);
@@ -1404,6 +1675,10 @@ final class ModuleRemainingCoverage
         $ref = new \ReflectionClass($value);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        $ref = new \ReflectionClass($value);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         foreach ($ref->getProperties() as $property) {
             if ($property->isStatic()) {
                 continue;
@@ -1437,6 +1712,7 @@ final class ModuleRemainingCoverage
                 $rm = new ReflectionMethod($value, $methodName);
                 if ($rm->getNumberOfRequiredParameters() === 0) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 $rm = new ReflectionMethod($value, $methodName);
@@ -1450,6 +1726,11 @@ final class ModuleRemainingCoverage
                 if (0 === $rm->getNumberOfRequiredParameters()) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                $rm = new \ReflectionMethod($value, $methodName);
+                if (0 === $rm->getNumberOfRequiredParameters()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     $result = $rm->invoke($value);
                     self::invokeClosuresInValue($result, $context, $invoked);
                 }
@@ -1457,6 +1738,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 $invoked++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 $invoked++;
@@ -1467,6 +1749,10 @@ final class ModuleRemainingCoverage
                 ++$invoked;
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                ++$invoked;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
     }
@@ -1491,29 +1777,39 @@ final class ModuleRemainingCoverage
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $get = Mockery::mock(Get::class);
         $get->shouldReceive('__invoke')->andReturn('done', 'pending', null, 'grid', 'list');
         $get->shouldIgnoreMissing();
 
         $set = Mockery::mock(Set::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $get = \Mockery::mock(Get::class);
         $get->shouldReceive('__invoke')->andReturn('done', 'pending', null, 'grid', 'list');
         $get->shouldIgnoreMissing();
 
         $set = \Mockery::mock(Set::class);
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
         $set->shouldReceive('__invoke')->andReturnNull();
         $set->shouldIgnoreMissing();
@@ -1559,10 +1855,13 @@ final class ModuleRemainingCoverage
         // Spatie media upload closures (ImageSpatie/VideoSpatie)
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             $tmpUpload = Mockery::mock(TemporaryUploadedFile::class);
             $tmpUpload->shouldIgnoreMissing();
             $livewire = Mockery::mock(HasForms::class);
@@ -1572,10 +1871,14 @@ final class ModuleRemainingCoverage
             $media = Mockery::mock(HasMedia::class);
             $adder = Mockery::mock(FileAdder::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             $tmpUpload = \Mockery::mock(TemporaryUploadedFile::class);
             $tmpUpload->shouldIgnoreMissing();
             $livewire = \Mockery::mock(HasForms::class);
@@ -1584,10 +1887,13 @@ final class ModuleRemainingCoverage
             $component->shouldIgnoreMissing();
             $media = \Mockery::mock(HasMedia::class);
             $adder = \Mockery::mock(FileAdder::class);
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
             $adder->shouldReceive('withResponsiveImages')->andReturnSelf();
             $adder->shouldReceive('toMediaCollection')->andReturnNull();
@@ -1612,10 +1918,13 @@ final class ModuleRemainingCoverage
             foreach ($ref->getParameters() as $param) {
                 $type = $param->getType();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                     $typeName = $type->getName();
                     if ($typeName === Get::class) {
@@ -1624,10 +1933,14 @@ final class ModuleRemainingCoverage
                         $built[] = $set;
                     } elseif (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                     $typeName = $type->getName();
                     if (Get::class === $typeName) {
@@ -1635,10 +1948,13 @@ final class ModuleRemainingCoverage
                     } elseif (Set::class === $typeName) {
                         $built[] = $set;
                     } elseif (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_DO29zO
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                         $built[] = $context;
                     } elseif (class_exists($typeName)) {
@@ -1649,6 +1965,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 } elseif ($type instanceof ReflectionNamedType) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 } elseif ($type instanceof ReflectionNamedType) {
@@ -1659,6 +1976,10 @@ final class ModuleRemainingCoverage
                 } elseif ($type instanceof \ReflectionNamedType) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                } elseif ($type instanceof \ReflectionNamedType) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     $built[] = match ($type->getName()) {
                         'array' => ['state' => 'done', 'message' => 'm'],
                         'string' => 'done',
@@ -1682,6 +2003,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
     private static function defaultArgsForMethod(ReflectionMethod $method): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
     private static function defaultArgsForMethod(ReflectionMethod $method): array
@@ -1692,6 +2014,10 @@ final class ModuleRemainingCoverage
     private static function defaultArgsForMethod(\ReflectionMethod $method): array
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+    private static function defaultArgsForMethod(\ReflectionMethod $method): array
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $args = [];
 
@@ -1708,6 +2034,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
@@ -1718,6 +2045,10 @@ final class ModuleRemainingCoverage
             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 $typeName = $type->getName();
                 if (enum_exists($typeName)) {
                     $cases = $typeName::cases();
@@ -1728,6 +2059,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 if ($typeName === Request::class || is_subclass_of($typeName, Request::class)) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 if ($typeName === Request::class || is_subclass_of($typeName, Request::class)) {
@@ -1738,6 +2070,10 @@ final class ModuleRemainingCoverage
                 if (Request::class === $typeName || is_subclass_of($typeName, Request::class)) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                if (Request::class === $typeName || is_subclass_of($typeName, Request::class)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     $args[] = Request::create('/coverage/'.uniqid('', true), 'GET');
 
                     continue;
@@ -1745,6 +2081,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
@@ -1755,6 +2092,10 @@ final class ModuleRemainingCoverage
                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     $args[] = self::mockEloquentRecord($typeName);
 
                     continue;
@@ -1762,6 +2103,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
@@ -1772,6 +2114,10 @@ final class ModuleRemainingCoverage
                 if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+                if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     $args[] = self::mockUserWithRoles(['super-admin']);
 
                     continue;
@@ -1790,6 +2136,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
@@ -1800,6 +2147,10 @@ final class ModuleRemainingCoverage
             if ($type instanceof \ReflectionNamedType) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            if ($type instanceof \ReflectionNamedType) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 $args[] = match ($type->getName()) {
                     'array' => [],
                     'string' => 'test',
@@ -1822,6 +2173,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
      * @param  class-string  $class
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
      * @param  class-string  $class
@@ -1832,6 +2184,10 @@ final class ModuleRemainingCoverage
      * @param class-string $class
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+     * @param class-string $class
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private static function instantiate(string $class, int $depth = 0): ?object
     {
@@ -1842,6 +2198,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         $ref = new ReflectionClass($class);
@@ -1852,6 +2209,10 @@ final class ModuleRemainingCoverage
         $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
             return null;
         }
@@ -1860,6 +2221,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         if ($ctor === null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         if ($ctor === null) {
@@ -1870,6 +2232,10 @@ final class ModuleRemainingCoverage
         if (null === $ctor) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        if (null === $ctor) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             try {
                 return $ref->newInstance();
             } catch (\Throwable) {
@@ -1888,6 +2254,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
@@ -1898,6 +2265,10 @@ final class ModuleRemainingCoverage
             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 $dependencyClass = $type->getName();
                 $args[] = class_exists($dependencyClass) ? self::instantiate($dependencyClass, $depth + 1) : null;
 
@@ -1925,6 +2296,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
     private static function methodCallsDddx(ReflectionMethod $method): bool
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
     private static function methodCallsDddx(ReflectionMethod $method): bool
@@ -1935,6 +2307,10 @@ final class ModuleRemainingCoverage
     private static function methodCallsDddx(\ReflectionMethod $method): bool
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+    private static function methodCallsDddx(\ReflectionMethod $method): bool
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $cacheKey = $method->getDeclaringClass()->getName().'::'.$method->getName();
         if (isset(self::$dddxMethodCache[$cacheKey])) {
@@ -1945,6 +2321,7 @@ final class ModuleRemainingCoverage
 <<<<<<< HEAD
         if ($file === false || ! is_readable($file)) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
         if ($file === false || ! is_readable($file)) {
@@ -1955,6 +2332,10 @@ final class ModuleRemainingCoverage
         if (false === $file || ! is_readable($file)) {
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+        if (false === $file || ! is_readable($file)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return self::$dddxMethodCache[$cacheKey] = false;
         }
 
@@ -2006,10 +2387,13 @@ final class ModuleRemainingCoverage
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, int|string>
 =======
 <<<<<<< .merge_file_5su7Gl
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string, mixed>
 =======
      * <<<<<<< HEAD.
@@ -2019,10 +2403,13 @@ final class ModuleRemainingCoverage
      * @return array<string, int|string>
      *                                   >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @return array<string, int|string>
 >>>>>>> .merge_file_DO29zO
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private static function defaultModelAttributes(): array
     {

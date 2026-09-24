@@ -9,6 +9,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseAggregateFactory;
 
 /**
+<<<<<<< HEAD
  * <<<<<<< HEAD.
  *
  * @property string      $id
@@ -24,6 +25,8 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @method static PulseAggregateFactory factory($count = null, $state = [])
  *                                                                          =======
  *
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property string      $id
  * @property int         $bucket
  * @property int         $period
@@ -35,7 +38,10 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @property int|null    $count
  *
  * @method static PulseAggregateFactory          factory($count = null, $state = [])
+<<<<<<< HEAD
  *                                                                                   >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @method static Builder<static>|PulseAggregate newModelQuery()
  * @method static Builder<static>|PulseAggregate newQuery()
  * @method static Builder<static>|PulseAggregate query()

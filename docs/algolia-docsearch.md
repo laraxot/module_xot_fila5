@@ -73,16 +73,22 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ## Collegamenti tra versioni di algolia-docsearch.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [algolia-docsearch.md](../../../chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../xot/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../ui/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../Xot/docs/algolia-docsearch.md)
@@ -92,6 +98,7 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione Incoming
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -100,3 +107,6 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 3792da0d (Check & fix styling)

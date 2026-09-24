@@ -28,6 +28,7 @@ Every concrete resource must implement:
 - `protected static ?string $model`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -41,6 +42,9 @@ Every concrete resource must implement:
 - `public static function getFormSchema(): array`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `public static function getFormSchema(): array`
+>>>>>>> 3792da0d (Check & fix styling)
 - `public static function getPages(): array`
 
 ### 3. Separation of Concerns

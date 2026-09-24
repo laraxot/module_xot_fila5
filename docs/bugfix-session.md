@@ -278,6 +278,7 @@ Eccezioni rare:
 - [../../User/docs/syntax-errors-to-fix.md](../../User/docs/syntax-errors-to-fix.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_yxomsZ
 <<<<<<< HEAD
@@ -291,3 +292,6 @@ Eccezioni rare:
 =======
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
 >>>>>>> laraxot/dev
+=======
+- [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
+>>>>>>> 3792da0d (Check & fix styling)

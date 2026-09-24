@@ -26,6 +26,7 @@ use Webmozart\Assert\Assert;
  * Fornisce funzionalità comuni e standardizzate per la gestione dei widget.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gBRTOX
 <<<<<<< HEAD
@@ -40,16 +41,21 @@ use Webmozart\Assert\Assert;
 =======
 =======
 >>>>>>> .merge_file_g5hQMb
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
  * @property string                    $title        Titolo del widget
  * @property string                    $icon         Icona del widget
  * @property array<string, mixed>|null $data         Dati del form
  * @property Schema                    $form
+<<<<<<< HEAD
 <<<<<<< .merge_file_gBRTOX
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  */
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
@@ -72,7 +78,13 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
+<<<<<<< HEAD
     protected string $view = 'xot::filament.widgets.base';
+=======
+    /** @var view-string */
+    /** @phpstan-ignore property.defaultValue */
+    protected string $view = '_params_xot';
+>>>>>>> 3792da0d (Check & fix styling)
 
     protected int|string|array $columnSpan = 'full';
 
@@ -82,6 +94,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
+<<<<<<< HEAD
      * Schema del form del widget. Vuoto di default per i widget senza form
      * (es. widget di sola visualizzazione); i widget con form lo sovrascrivono.
      *
@@ -110,6 +123,12 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      *
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+     * Configura il form del widget.
+     *
+     * @param Schema $schema Il form da configurare
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Schema Il form configurato
      */
     public function form(Schema $schema): Schema
@@ -118,6 +137,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $schema->statePath('data');
 
         $model = $this->getFormModel();
+<<<<<<< HEAD
 <<<<<<< HEAD
         if ($model !== null) {
 =======
@@ -131,6 +151,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         if (null !== $model) {
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+        if (null !== $model) {
+>>>>>>> 3792da0d (Check & fix styling)
             // Ensure model is compatible with Schema::model()
             if (\is_string($model)) {
                 if (class_exists($model) && is_subclass_of($model, Model::class)) {
@@ -151,6 +174,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         $model = $this->getFormModel();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($model === null) {
 =======
 <<<<<<< .merge_file_gBRTOX
@@ -163,6 +187,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         if (null === $model) {
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+        if (null === $model) {
+>>>>>>> 3792da0d (Check & fix styling)
             return [];
         }
         if (\is_string($model)) {
@@ -178,6 +205,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                     /** @var array<string, mixed> $defaults */
                     $defaults = $model->getDataDefaults();
                     $merge1 = array_merge($defaults, $res);
+<<<<<<< HEAD
                     $merge1 = Arr::map($merge1, static function (mixed $value, string|int $key) use ($defaults) {
 <<<<<<< HEAD
                         if ($value === null) {
@@ -192,6 +220,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                         if (null === $value) {
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+                    $merge1 = Arr::map($merge1, static function ($value, string|int $key) use ($defaults) {
+                        if (null === $value) {
+>>>>>>> 3792da0d (Check & fix styling)
                             $value = Arr::get($defaults, $key, null);
                         }
 
@@ -252,12 +284,16 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
         return Action::make('submit')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gBRTOX
 =======
             ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+            ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+>>>>>>> 3792da0d (Check & fix styling)
             ->submit('save')
             ->view((string) $submit_view);
     }
@@ -272,12 +308,16 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return [
             Action::make('save')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gBRTOX
 =======
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+>>>>>>> 3792da0d (Check & fix styling)
                 ->submit('save'),
         ];
     }
@@ -328,6 +368,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
 =======
 <<<<<<< .merge_file_gBRTOX
@@ -342,6 +383,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      *
 >>>>>>> .merge_file_g5hQMb
 >>>>>>> laraxot/dev
+=======
+     * @param array<int|string, mixed> $data
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string, mixed>
      */
     protected static function normalizeFormFill(array $data): array

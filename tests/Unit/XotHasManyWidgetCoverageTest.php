@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Schema;
 <<<<<<< HEAD
 use Mockery;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
 use Mockery;
@@ -22,6 +23,8 @@ use Mockery;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_i0IExG
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\Model\Update\HasManyAction;
 use Modules\Xot\Datas\RelationData;
@@ -34,6 +37,7 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
 use ReflectionClass;
@@ -42,6 +46,8 @@ use ReflectionMethod;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_i0IExG
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-xot-db');
@@ -50,6 +56,7 @@ afterEach(function (): void {
 <<<<<<< HEAD
     Mockery::close();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
     Mockery::close();
@@ -60,6 +67,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_i0IExG
 >>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 });
 
 describe('Xot HasMany and Widget form coverage', function (): void {
@@ -90,10 +101,13 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $parent = new CacheModel;
         $parent->forceFill(['id' => 1, 'key' => 'p', 'value' => 'v']);
         $parent->exists = true;
@@ -103,10 +117,14 @@ describe('Xot HasMany and Widget form coverage', function (): void {
 
         $hasMany = Mockery::mock(HasMany::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_i0IExG
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $parent = new CacheModel();
         $parent->forceFill(['id' => 1, 'key' => 'p', 'value' => 'v']);
         $parent->exists = true;
@@ -115,10 +133,13 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         $related->forceFill(['id' => 2, 'key' => 'c', 'value' => 'v', 'parent_id' => null]);
 
         $hasMany = \Mockery::mock(HasMany::class);
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_i0IExG
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
         $hasMany->shouldReceive('getLocalKeyName')->andReturn('id');
         $hasMany->shouldReceive('getForeignKeyName')->andReturn('parent_id');
@@ -133,6 +154,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
 <<<<<<< HEAD
         $action = new HasManyAction;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
         $action = new HasManyAction;
@@ -143,6 +165,10 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         $action = new HasManyAction();
 >>>>>>> .merge_file_i0IExG
 >>>>>>> laraxot/dev
+=======
+        $action = new HasManyAction();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         try {
             $action->execute($parent, $dto);
         } catch (\Throwable $e) {
@@ -168,6 +194,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
 <<<<<<< HEAD
         $badParent = new CacheModel;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
         $badParent = new CacheModel;
@@ -178,6 +205,10 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         $badParent = new CacheModel();
 >>>>>>> .merge_file_i0IExG
 >>>>>>> laraxot/dev
+=======
+        $badParent = new CacheModel();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         $badParent->forceFill(['id' => null, 'key' => 'x']);
         try {
             $action->execute($badParent, $dto);
@@ -191,22 +222,28 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         foreach ($ref->getMethods(ReflectionMethod::IS_PRIVATE | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
             if ($method->getDeclaringClass()->getName() !== HasManyAction::class || str_starts_with($method->getName(), '__')) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
         $ref = new ReflectionClass(HasManyAction::class);
         foreach ($ref->getMethods(ReflectionMethod::IS_PRIVATE | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
             if ($method->getDeclaringClass()->getName() !== HasManyAction::class || str_starts_with($method->getName(), '__')) {
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $ref = new \ReflectionClass(HasManyAction::class);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PRIVATE | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
             if (HasManyAction::class !== $method->getDeclaringClass()->getName() || str_starts_with($method->getName(), '__')) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $ref = new \ReflectionClass(HasManyAction::class);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PRIVATE | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
             if (HasManyAction::class !== $method->getDeclaringClass()->getName() || str_starts_with($method->getName(), '__')) {
 >>>>>>> .merge_file_i0IExG
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
             try {
@@ -218,6 +255,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
 <<<<<<< HEAD
                     } elseif ($param->getName() === 'data' || ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'array')) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
                     } elseif ($param->getName() === 'data' || ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'array')) {
@@ -228,6 +266,10 @@ describe('Xot HasMany and Widget form coverage', function (): void {
                     } elseif ('data' === $param->getName() || ($param->getType() instanceof \ReflectionNamedType && 'array' === $param->getType()->getName())) {
 >>>>>>> .merge_file_i0IExG
 >>>>>>> laraxot/dev
+=======
+                    } elseif ('data' === $param->getName() || ($param->getType() instanceof \ReflectionNamedType && 'array' === $param->getType()->getName())) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                         $args[] = ['to' => [1], 'from' => [2]];
                     } else {
                         $args[] = null;
@@ -244,10 +286,13 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         Process::fake();
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             $w = new XotWidgetFormHost;
             Assert::assertNotEmpty($w->getFormSchema());
             Assert::assertNotEmpty($w->getFormFill());
@@ -255,20 +300,27 @@ describe('Xot HasMany and Widget form coverage', function (): void {
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
                 if ($method->getDeclaringClass()->getName() !== XotBaseWidget::class) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_i0IExG
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             $w = new XotWidgetFormHost();
             Assert::assertNotEmpty($w->getFormSchema());
             Assert::assertNotEmpty($w->getFormFill());
             $ref = new \ReflectionClass(XotBaseWidget::class);
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
                 if (XotBaseWidget::class !== $method->getDeclaringClass()->getName()) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_i0IExG
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                     continue;
                 }
@@ -287,6 +339,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
 <<<<<<< HEAD
                         } elseif ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_uIGE5P
 <<<<<<< HEAD
                         } elseif ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string') {
@@ -297,6 +350,10 @@ describe('Xot HasMany and Widget form coverage', function (): void {
                         } elseif ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName()) {
 >>>>>>> .merge_file_i0IExG
 >>>>>>> laraxot/dev
+=======
+                        } elseif ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                             $args[] = 'x';
                         } else {
                             $args[] = null;

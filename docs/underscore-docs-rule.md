@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IRIpto
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: underscore-docs-rule
@@ -11,6 +14,7 @@ canonical: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -135,3 +139,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_D
 >>>>>>> .merge_file_noMCHo
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

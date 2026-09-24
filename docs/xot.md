@@ -6,20 +6,27 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 ## Struttura
 - [Documentazione Completa](../../Modules/Xot/docs/module_xot.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Documentazione Completa](../../modules/xot/docs/module_xot.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Documentazione Completa](../../modules/xot/docs/module_xot.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Componenti Principali
 
 ### Datas
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [MetatagData](../../modules/xot/docs/datas/metatagdata.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -38,8 +45,11 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Roadmap](../../modules/xot/docs/roadmap.md)
 - [Implementazione](../../modules/xot/docs/implementation.md)
 - [Integrazione](../../modules/xot/docs/integration.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [MetatagData](../../Modules/Xot/docs/datas/MetatagData.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -58,6 +68,7 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Roadmap](../../Modules/Xot/docs/roadmap.md)
 - [Implementazione](../../Modules/Xot/docs/implementation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 =======
 <<<<<<< HEAD
@@ -66,3 +77,6 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Integrazione](../../Modules/Xot/docs/integration.md)
+>>>>>>> 3792da0d (Check & fix styling)

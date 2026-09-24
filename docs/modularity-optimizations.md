@@ -287,6 +287,7 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -297,13 +298,18 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Xot Best Practices](./best-practices/README.md)
 - [Root Docs: Modularity Hardcoded Names](../../../../docs/project/modularity-hardcoded-names.md)
 - [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
 - [Xot Architecture Overview](./architecture-overview.md)
 - [Xot Best Practices](./best-practices/readme.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Note di Implementazione
 
@@ -322,6 +328,7 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
 =======
 <<<<<<< HEAD
@@ -330,3 +337,6 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
+>>>>>>> 3792da0d (Check & fix styling)

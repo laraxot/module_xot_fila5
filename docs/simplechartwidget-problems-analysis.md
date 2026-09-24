@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ia9Mey
 =======
@@ -481,13 +482,19 @@ L'implementazione incrementale permette di validare ogni miglioramento prima di 
 =======
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: simplechartwidget-problems-analysis
 canonical: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_CKFyQT
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
+>>>>>>> 3792da0d (Check & fix styling)

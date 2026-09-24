@@ -186,6 +186,7 @@ NomeModulo/
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [blade-component-registration.md](blade-component-registration.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 =======
 <<<<<<< .merge_file_6tWZtT
@@ -198,5 +199,8 @@ NomeModulo/
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_sJSFjt
 >>>>>>> laraxot/dev
+=======
+- [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)

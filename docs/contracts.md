@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -20,6 +21,8 @@ Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenti
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Problema Critico Identificato (2025-01-06)
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
@@ -102,9 +105,12 @@ Contratto per modelli che hanno profili.
 
 *Ultimo aggiornamento: 2025-01-06*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 //--- Illuminate\Database\Eloquent\Relations\relation (abstract class Relation)
 ->getRelated()
@@ -118,6 +124,10 @@ Contratto per modelli che hanno profili.
 public function whereHas($relation, Closure $callback = null, $operator = '>=', $count = 1)
 
 //---- Illuminate\Database\Eloquent\Builder  (class Builder)
+<<<<<<< HEAD
  public function getModel()
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+ public function getModel()
+>>>>>>> 3792da0d (Check & fix styling)

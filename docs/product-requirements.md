@@ -284,6 +284,7 @@ interface XotBaseResourceContract
     public static function getRelations(): array;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -297,6 +298,9 @@ interface XotBaseResourceContract
     public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array;
+>>>>>>> 3792da0d (Check & fix styling)
     public static function getTableColumns(): array;
 }
 ```

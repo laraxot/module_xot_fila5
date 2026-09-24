@@ -20,6 +20,7 @@
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -36,3 +37,9 @@ Ultimo aggiornamento: maggio 2025.
 Ultimo aggiornamento: maggio 2025.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [docs root](../../../../../docs/actions.md)
+- [docs Lang](../../lang/docs/filament-label.md)
+
+Ultimo aggiornamento: maggio 2025.
+>>>>>>> 3792da0d (Check & fix styling)

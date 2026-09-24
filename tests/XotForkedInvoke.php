@@ -8,20 +8,27 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Cache;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use SplFileInfo;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KrOiI6
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 use function Safe\posix_kill;
@@ -36,6 +43,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
      * @param  list<string>  $denyMethodRegexes
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
      * @param  list<string>  $denyMethodRegexes
@@ -46,6 +54,10 @@ final class XotForkedInvoke
      * @param list<string> $denyMethodRegexes
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+     * @param list<string> $denyMethodRegexes
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function sweepClass(
         string $class,
@@ -60,6 +72,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
         $ref = new ReflectionClass($class);
@@ -70,6 +83,10 @@ final class XotForkedInvoke
         $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+        $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
         if ($ref->isInterface()) {
             return 0;
@@ -84,6 +101,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
         if ($instance === null && ! $ref->isAbstract() && ! $ref->isTrait()) {
@@ -94,6 +112,10 @@ final class XotForkedInvoke
         if (null === $instance && ! $ref->isAbstract() && ! $ref->isTrait()) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+        if (null === $instance && ! $ref->isAbstract() && ! $ref->isTrait()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             try {
                 $instance = $ref->newInstanceWithoutConstructor();
                 if ($instance instanceof Model) {
@@ -113,6 +135,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
@@ -123,6 +146,10 @@ final class XotForkedInvoke
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+        foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             if ($method->getDeclaringClass()->getName() !== $class) {
                 continue;
             }
@@ -158,6 +185,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
                     } elseif ($instance !== null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
                     } elseif ($instance !== null) {
@@ -168,6 +196,10 @@ final class XotForkedInvoke
                     } elseif (null !== $instance) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+                    } elseif (null !== $instance) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                         $method->invoke($instance, ...$args);
                     }
                 },
@@ -177,6 +209,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
                 $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
                 $executed++;
@@ -187,6 +220,10 @@ final class XotForkedInvoke
                 ++$executed;
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+                ++$executed;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
 
@@ -197,6 +234,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
      * @param  class-string  $enumClass
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
      * @param  class-string  $enumClass
@@ -207,6 +245,10 @@ final class XotForkedInvoke
      * @param class-string $enumClass
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+     * @param class-string $enumClass
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private static function sweepEnum(string $enumClass, int $timeoutSeconds): int
     {
@@ -224,6 +266,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
                         $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
                         $executed++;
@@ -234,6 +277,10 @@ final class XotForkedInvoke
                         ++$executed;
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+                        ++$executed;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     }
                 }
             }
@@ -242,10 +289,13 @@ final class XotForkedInvoke
                     continue;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $method = new ReflectionMethod($enumClass, $sm);
                 if (self::invokeWithTimeout(static fn () => $method->invoke(null), $timeoutSeconds)) {
                     $executed++;
@@ -254,10 +304,14 @@ final class XotForkedInvoke
         } catch (\Throwable) {
             $executed++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_KrOiI6
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $method = new \ReflectionMethod($enumClass, $sm);
                 if (self::invokeWithTimeout(static fn () => $method->invoke(null), $timeoutSeconds)) {
                     ++$executed;
@@ -265,10 +319,13 @@ final class XotForkedInvoke
             }
         } catch (\Throwable) {
             ++$executed;
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KrOiI6
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
         }
 
@@ -281,6 +338,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
     public static function defaultArgs(ReflectionMethod $method): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
     public static function defaultArgs(ReflectionMethod $method): array
@@ -291,6 +349,10 @@ final class XotForkedInvoke
     public static function defaultArgs(\ReflectionMethod $method): array
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+    public static function defaultArgs(\ReflectionMethod $method): array
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $args = [];
         foreach ($method->getParameters() as $param) {
@@ -302,10 +364,13 @@ final class XotForkedInvoke
             $type = $param->getType();
             $name = $param->getName();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($type instanceof ReflectionNamedType) {
                 $tn = $type->getName();
                 $args[] = match (true) {
@@ -322,10 +387,14 @@ final class XotForkedInvoke
                         } else {
                             $m = new $tn;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_KrOiI6
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($type instanceof \ReflectionNamedType) {
                 $tn = $type->getName();
                 $args[] = match (true) {
@@ -341,10 +410,13 @@ final class XotForkedInvoke
                             $m = new Cache();
                         } else {
                             $m = new $tn();
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_KrOiI6
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                         }
                         $m->setRawAttributes(['id' => 1, 'key' => 'k', 'value' => 'v']);
@@ -377,6 +449,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         if ($pid === -1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
         if ($pid === -1) {
@@ -387,6 +460,10 @@ final class XotForkedInvoke
         if (-1 === $pid) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+        if (-1 === $pid) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             try {
                 $fn();
 
@@ -399,6 +476,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
         if ($pid === 0) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
         if ($pid === 0) {
@@ -409,6 +487,10 @@ final class XotForkedInvoke
         if (0 === $pid) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+        if (0 === $pid) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             // child
             pcntl_alarm($timeoutSeconds);
             try {
@@ -425,17 +507,23 @@ final class XotForkedInvoke
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($res === -1 || $res > 0) {
                 return $res > 0 && is_int($status) && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
             }
             usleep(100_000);
             $waited++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
             if (-1 === $res || $res > 0) {
                 return $res > 0 && is_int($status) && pcntl_wifexited($status) && 0 === pcntl_wexitstatus($status);
@@ -443,6 +531,7 @@ final class XotForkedInvoke
             usleep(100_000);
             ++$waited;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             if (-1 === $res) {
                 return false;
@@ -458,6 +547,8 @@ final class XotForkedInvoke
             ++$waited;
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         }
         posix_kill($pid, SIGKILL);
         pcntl_waitpid($pid, $status);
@@ -470,6 +561,7 @@ final class XotForkedInvoke
      * @param  list<string>  $relativeDirs  relative to app/
      * @param  list<string>  $denyMethodRegexes
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
      * @param  list<string>  $relativeDirs  relative to app/
@@ -483,6 +575,11 @@ final class XotForkedInvoke
      * @param list<string> $denyMethodRegexes
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+     * @param list<string> $relativeDirs      relative to app/
+     * @param list<string> $denyMethodRegexes
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function sweepDirs(
         string $appRoot,
@@ -515,6 +612,7 @@ final class XotForkedInvoke
 <<<<<<< HEAD
                 if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_VtsjQZ
 <<<<<<< HEAD
                 if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
@@ -525,6 +623,10 @@ final class XotForkedInvoke
                 if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
 >>>>>>> .merge_file_KrOiI6
 >>>>>>> laraxot/dev
+=======
+                if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     continue;
                 }
                 if (str_contains($file->getFilename(), '.php-cs-fixer') || str_contains($file->getFilename(), '.blade.')) {

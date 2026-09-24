@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -68,6 +69,8 @@ Tutto il resto → `docs/raw/root-import/` o `docs/wiki/`. Duplicati `changelog.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 title: "Module Root Cleanup Rules"
 type: rule
 tags: [module, structure, cleanup, naming]
@@ -100,13 +103,17 @@ related:
 - **VIETATO**: Nessuna cartella con caratteri maiuscoli nella root del modulo
 - Tutte le cartelle devono essere lowercase con underscore o dash (es. `app/`, `database/`, `config/`)
 - Cartelle con maiuscole devono essere eliminate o rinominate in lowercase
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Mai toccare (nwidart)
 
 `composer.json`, `module.json`, `package.json`, `vite.config.js`, `.github/` — vedi [nwidart-module-skeleton-contract.md](../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md).
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -125,14 +132,19 @@ Moduli: `laravel/Modules/<Modulo>/` · Temi: `laravel/Themes/<Tema>/` — **solo
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```bash
 bash bashscripts/tools/guard-nwidart-module-skeleton.sh
 bash bashscripts/tools/audit-module-sacred-artifacts.sh
 ```
 
 ## Azione di cleanup
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 Per ogni modulo:
 
@@ -150,6 +162,7 @@ find . -maxdepth 1 -type d | grep -E "[A-Z]"
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -162,6 +175,8 @@ Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Provid
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Canon
 
 - Questa regola deve essere applicata a tutti i moduli

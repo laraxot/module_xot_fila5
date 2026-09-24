@@ -1,30 +1,47 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * -WIP.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 use function Safe\file;
 
 >>>>>>> laraxot/dev
+=======
+
+use function Safe\file;
+
+>>>>>>> 3792da0d (Check & fix styling)
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\file;
 
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 class GenerateFormByFileAction
 {
     use QueueableAction;
@@ -33,11 +50,16 @@ class GenerateFormByFileAction
      * Genera un form Filament basato su un file di risorsa.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  File  $file  Il file della risorsa Filament
 =======
      * @param File $file Il file della risorsa Filament
      *
 >>>>>>> laraxot/dev
+=======
+     * @param File $file Il file della risorsa Filament
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return int Numero di input aggiunti
      */
     public function execute(File $file): int
@@ -112,10 +134,14 @@ class GenerateFormByFileAction
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $inputCount++;
 =======
                 ++$inputCount;
 >>>>>>> laraxot/dev
+=======
+                ++$inputCount;
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
 
@@ -126,10 +152,14 @@ class GenerateFormByFileAction
      * Mostra informazioni di debug su un file.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  File  $file  Il file da analizzare
 =======
      * @param File $file Il file da analizzare
 >>>>>>> laraxot/dev
+=======
+     * @param File $file Il file da analizzare
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function ddFile(File $file): void
     {

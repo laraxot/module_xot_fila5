@@ -5,16 +5,22 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\String;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use function Safe\preg_replace;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Action per normalizzare i nomi dei driver.
  *

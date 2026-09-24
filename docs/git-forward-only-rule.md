@@ -26,6 +26,7 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 - Tracciabilità totale
 - Documentare correzioni con commit message chiari
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -33,6 +34,10 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 - Reintrodurre solo compatibilita' minima nel codice corrente quando serve
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Studiare lo storico con `git show` senza ripristinare file completi
+- Reintrodurre solo compatibilita' minima nel codice corrente quando serve
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Il Perché
 
@@ -60,9 +65,12 @@ Gli errori sono maestri. Non si nascondono, si documentano e si correggono andan
 ## Workflow Corretto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Scenario 0: Un file attuale e' sbagliato
 
 ```bash
@@ -76,8 +84,11 @@ git show HEAD~3:Modules/Foo/app/Bar.php
 # poi modifico il file attuale con una fix forward-only
 ```
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Scenario 1: Ho committato un bug
 
 ```bash
@@ -120,6 +131,7 @@ git reset --hard HEAD~1
 
 # ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -135,6 +147,8 @@ git push
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Ricrea la modifica corretta sul branch giusto
 git checkout correct-branch
 # studia il delta utile e reimplementalo nel presente
@@ -142,8 +156,11 @@ git push
 
 # Sul branch sbagliato fai un nuovo commit di riallineamento
 # senza usare revert automatici
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Scenario 4: Voglio "annullare" modifiche
@@ -153,6 +170,7 @@ git push
 git reset --hard abc123
 
 # ✅ CORRETTO
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -165,6 +183,8 @@ git push
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Studia la differenza e applica una correzione forward-only
 git diff abc123..HEAD -- path/to/file
 # poi fai un nuovo commit con la forma corretta del codice
@@ -180,8 +200,11 @@ git show <old-sha>:Modules/Xot/app/Datas/XotData.php
 # implemento un wrapper compatibile minimo nel file corrente
 ```
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Eccezioni Rarissime
 
 Le UNICHE 3 eccezioni accettabili:
@@ -209,6 +232,7 @@ Le UNICHE 3 eccezioni accettabili:
 4. **Compliance**: Soddisfa audit e requisiti legali
 5. **Learning Culture**: Gli errori diventano lezioni documentate
 <<<<<<< HEAD
+<<<<<<< HEAD
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
 =======
 <<<<<<< HEAD
@@ -217,6 +241,9 @@ Le UNICHE 3 eccezioni accettabili:
 6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Commit Message Format
 
@@ -260,6 +287,7 @@ Non è una best practice, è **l'unica pratica**.
 
 **Ultima revisione**: Novembre 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: Regola Assoluta e Immutabile
 =======
 <<<<<<< HEAD
@@ -268,3 +296,6 @@ Non è una best practice, è **l'unica pratica**.
 **Status**: Regola Assoluta e Immutabile
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: Regola Assoluta e Immutabile
+>>>>>>> 3792da0d (Check & fix styling)

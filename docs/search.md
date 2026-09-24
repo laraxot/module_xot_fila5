@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
 =======
 =======
@@ -46,3 +47,6 @@ https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-
 >>>>>>> .merge_file_EOkssh
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
+>>>>>>> 3792da0d (Check & fix styling)

@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_PcgmPA
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: translation-structure
@@ -11,6 +14,7 @@ canonical: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -65,3 +69,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_
 >>>>>>> .merge_file_VnEtbB
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

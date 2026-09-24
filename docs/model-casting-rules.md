@@ -120,12 +120,16 @@ protected function casts(): array
 
 ## Audit Risultati (2025-08-01)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## Audit Risultati ([DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Audit Risultati ([DATE])
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### File con Errori Trovati: 20
 
@@ -251,6 +255,7 @@ class User extends BaseModel
 ## Ultimo aggiornamento
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 agosto 2025
 =======
 <<<<<<< HEAD
@@ -259,3 +264,6 @@ agosto 2025
 agosto 2025
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+agosto 2025
+>>>>>>> 3792da0d (Check & fix styling)

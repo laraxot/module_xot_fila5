@@ -68,6 +68,7 @@ public function get<Nome>Attribute(?type $value): ?type
 
 **Nei sistemi PA (PTVX)**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Schede valutazione calcolano valori durante edit
 =======
 <<<<<<< HEAD
@@ -76,6 +77,9 @@ public function get<Nome>Attribute(?type $value): ?type
 - Scheda valutazione calcola valori durante edit
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Scheda valutazione calcola valori durante edit
+>>>>>>> 3792da0d (Check & fix styling)
 - Performance evaluation aggrega dati storici
 - Indennità calcola importi da timbrature
 
@@ -133,6 +137,7 @@ if (null == $this->getKey()) {
 6. ⏳ **Rating/Models/Traits/RatingTrait.php**
 7. ⏳ **Ptv/Models/BaseScheda.php**
 <<<<<<< HEAD
+<<<<<<< HEAD
 8. ⏳ **Progressioni/Models/Schede.php**
 =======
 <<<<<<< HEAD
@@ -141,6 +146,9 @@ if (null == $this->getKey()) {
 8. ⏳ **Progressioni/Models/Scheda.php**
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+8. ⏳ **Progressioni/Models/Scheda.php**
+>>>>>>> 3792da0d (Check & fix styling)
 9. ⏳ **Performance/Models/StabiDirigente.php**
 10. ⏳ **User/Models/BaseTenant.php**
 
@@ -236,6 +244,7 @@ public function getMediaAttribute(): float {
 - [ ] Rating/RatingTrait
 - [ ] Ptv/BaseScheda
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Progressioni/Schede
 =======
 <<<<<<< HEAD
@@ -244,6 +253,9 @@ public function getMediaAttribute(): float {
 - [ ] Progressioni/Scheda
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [ ] Progressioni/Scheda
+>>>>>>> 3792da0d (Check & fix styling)
 
 **Settimana 3**:
 - [ ] Altri moduli + cleanup finale
@@ -314,9 +326,12 @@ test('accessor salva se model ha PK', function () {
 
 ### Implementazioni Modulo-Specifiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Sigma - SchedaTrait Fix](../../sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../indennitacondizionilavoro/docs/accessor-guard.md) (da creare)
@@ -324,8 +339,11 @@ test('accessor salva se model ha PK', function () {
 ### Documentazione Pattern
 - [Accessor Pattern](../../sigma/docs/scheda-trait-accessor-pattern.md)
 - [Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Sigma - SchedaTrait Fix](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../Performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../IndennitaCondizioniLavoro/docs/accessor-guard.md) (da creare)
@@ -342,6 +360,7 @@ test('accessor salva se model ha PK', function () {
 
 **Creato**: 2025-01-29
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -352,10 +371,16 @@ test('accessor salva se model ha PK', function () {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Creato**: [DATE]
 **Tipo**: Regola Architettutale Globale
 **Applicazione**: Tutti i moduli
 **Severità**: 🔴 CRITICA
+<<<<<<< HEAD
 **Status**: 📖 Documentata, 🔄 Implementazione in corso
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Status**: 📖 Documentata, 🔄 Implementazione in corso
+>>>>>>> 3792da0d (Check & fix styling)

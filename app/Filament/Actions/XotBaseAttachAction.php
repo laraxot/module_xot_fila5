@@ -13,10 +13,13 @@ use Filament\Actions\AttachAction as FilamentAttachAction;
  * This class wraps Filament's AttachAction to provide a XotBase layer.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseAttachAction extends FilamentAttachAction {}
 =======
 <<<<<<< .merge_file_ZoWyf9
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 abstract class XotBaseAttachAction extends FilamentAttachAction
 {
 =======
@@ -28,9 +31,13 @@ abstract class XotBaseAttachAction extends FilamentAttachAction {
     //...
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 abstract class XotBaseAttachAction extends FilamentAttachAction
 {
 >>>>>>> .merge_file_TtOizB
 }
 >>>>>>> laraxot/dev
+=======
+}
+>>>>>>> 3792da0d (Check & fix styling)

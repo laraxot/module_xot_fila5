@@ -8,6 +8,7 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
+<<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
 public function getFormSchema(): array
 =======
@@ -17,6 +18,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -33,6 +37,7 @@ public static function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
 public function getFormSchema(): array
 =======
@@ -42,6 +47,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -113,6 +121,7 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
     public function getFormSchema(): array
 =======
@@ -122,6 +131,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -136,6 +148,7 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
     public function getFormSchema(): array
 =======
@@ -145,6 +158,9 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_QRobTs
 >>>>>>> .merge_file_pWvpF1
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila4_mono
 
 =======
@@ -8,6 +9,8 @@
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Data Creazione**: 2026-01-12  
 **Ultimo Aggiornamento**: 2026-01-12  
 **Status**: ✅ Configurazione Completa e Ottimizzata
@@ -26,9 +29,12 @@ Questo documento descrive la configurazione MCP ottimizzata per il progetto **ba
 
 File: `laravel/.mcp.json`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Configurazione MCP per ptvx
 
 **Stato**: configurazione verificata e riallineata al workspace corrente.
@@ -42,13 +48,17 @@ Questo documento descrive la configurazione MCP effettivamente usata nel reposit
 ### `laravel/.mcp.json`
 
 E' il file condiviso dal progetto Laravel e contiene la configurazione applicativa principale. Per `laravel-boost` la configurazione corretta e portabile e':
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ```json
 {
     "mcpServers": {
         "laravel-boost": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -122,18 +132,24 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             "command": "/usr/bin/php8.3",
             "args": [
                 "${PWD}/laravel/artisan",
                 "boost:mcp"
             ]
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         }
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -213,6 +229,8 @@ Se alcuni file risultano bloccati o non accessibili con tool standard:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### `/.mcp.json`
 
 Il file root del repository puo' esporre gli MCP condivisi anche fuori dal solo contesto Laravel. Per questo progetto deve includere almeno `laravel-boost` insieme agli altri server gia' usati nel repository.
@@ -259,6 +277,10 @@ Nel workspace `ptvx` risultano verificati:
 - [mcp-quickstart.md](./mcp-quickstart.md)
 - [../../../docs/ai/claude/configuration.md](../../../docs/ai/claude/configuration.md)
 
+<<<<<<< HEAD
 **Filosofia**: un solo comando reale, una sola configurazione coerente, nessun path morto.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia**: un solo comando reale, una sola configurazione coerente, nessun path morto.
+>>>>>>> 3792da0d (Check & fix styling)

@@ -14,6 +14,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * Model Extra.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string $id
  * @property string $model_type
  * @property string $model_id
@@ -27,6 +28,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @method static ExtraFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property string                    $id
  * @property string                    $model_type
  * @property string                    $model_id
@@ -39,7 +42,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null               $deleted_by
  *
  * @method static ExtraFactory          factory($count = null, $state = [])
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @method static Builder<static>|Extra newModelQuery()
  * @method static Builder<static>|Extra newQuery()
  * @method static Builder<static>|Extra query()
@@ -62,9 +68,15 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 final class Extra extends BaseExtra {}
 =======
 final class Extra extends BaseExtra
 {
 }
 >>>>>>> laraxot/dev
+=======
+final class Extra extends BaseExtra
+{
+}
+>>>>>>> 3792da0d (Check & fix styling)

@@ -2,12 +2,16 @@
 
 ## Data: 2025-11-05
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Data: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 ## Durata: ~3 ore
 ## Status: ✅ COMPLETATO
 
@@ -406,6 +410,7 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 **Firma:** Claude Code
 **Data:** 2025-11-05
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status:** COMPLETATO CON SUCCESSO ✅
 =======
 <<<<<<< HEAD
@@ -415,3 +420,7 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 **Status:** COMPLETATO CON SUCCESSO ✅
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data:** [DATE]
+**Status:** COMPLETATO CON SUCCESSO ✅
+>>>>>>> 3792da0d (Check & fix styling)

@@ -6,15 +6,19 @@ namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Mockery;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -24,6 +28,11 @@ use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Assert;
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+=======
+use PHPUnit\Framework\Assert;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\file_get_contents;
 use function Safe\glob;
@@ -42,6 +51,7 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -52,6 +62,10 @@ final class ModuleDeepCoverage
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             if (! $ref->hasMethod('execute')) {
                 continue;
             }
@@ -74,6 +88,7 @@ final class ModuleDeepCoverage
                 if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
                     $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
                 if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
@@ -87,6 +102,11 @@ final class ModuleDeepCoverage
                     ++$executed;
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+                if (1 === preg_match('/^\s*dddx\s*\(/m', $source)) {
+                    ++$executed;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 
                     continue;
                 }
@@ -105,22 +125,28 @@ final class ModuleDeepCoverage
             } catch (\Throwable) {
                 $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 ++$executed;
             } catch (\Throwable) {
                 ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 ++$executed;
             } catch (\Throwable) {
                 ++$executed;
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
 
@@ -133,6 +159,7 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
     private static function defaultArgsForMethod(ReflectionMethod $method): array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
     private static function defaultArgsForMethod(ReflectionMethod $method): array
@@ -143,6 +170,10 @@ final class ModuleDeepCoverage
     private static function defaultArgsForMethod(\ReflectionMethod $method): array
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+    private static function defaultArgsForMethod(\ReflectionMethod $method): array
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $args = [];
 
@@ -157,10 +188,13 @@ final class ModuleDeepCoverage
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
@@ -172,10 +206,14 @@ final class ModuleDeepCoverage
                     }
                     $args[] = new $typeName;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
                 if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
@@ -186,10 +224,13 @@ final class ModuleDeepCoverage
                         continue;
                     }
                     $args[] = new $typeName();
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
                     continue;
@@ -205,6 +246,7 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
@@ -215,6 +257,10 @@ final class ModuleDeepCoverage
             if ($type instanceof \ReflectionNamedType) {
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+            if ($type instanceof \ReflectionNamedType) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 $args[] = match ($type->getName()) {
                     'array' => [],
                     'string' => '',
@@ -240,10 +286,13 @@ final class ModuleDeepCoverage
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Events') as $class) {
             try {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $ref = new ReflectionClass($class);
                 $ctor = $ref->getConstructor();
                 if ($ctor === null || $ctor->getNumberOfRequiredParameters() === 0) {
@@ -253,10 +302,14 @@ final class ModuleDeepCoverage
             } catch (\Throwable) {
                 $executed++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $ref = new \ReflectionClass($class);
                 $ctor = $ref->getConstructor();
                 if (null === $ctor || 0 === $ctor->getNumberOfRequiredParameters()) {
@@ -265,10 +318,13 @@ final class ModuleDeepCoverage
                 ++$executed;
             } catch (\Throwable) {
                 ++$executed;
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
             }
         }
@@ -288,10 +344,13 @@ final class ModuleDeepCoverage
             try {
                 $class::from([]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $executed++;
             } catch (\Throwable) {
                 try {
@@ -305,10 +364,14 @@ final class ModuleDeepCoverage
                 } catch (\Throwable) {
                     $executed++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 ++$executed;
             } catch (\Throwable) {
                 try {
@@ -321,10 +384,13 @@ final class ModuleDeepCoverage
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                 }
             }
@@ -349,6 +415,7 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -359,6 +426,10 @@ final class ModuleDeepCoverage
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -373,22 +444,28 @@ final class ModuleDeepCoverage
             } catch (\Throwable) {
                 $executed++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 ++$executed;
             } catch (\Throwable) {
                 ++$executed;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                 ++$executed;
             } catch (\Throwable) {
                 ++$executed;
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
 
@@ -408,6 +485,7 @@ final class ModuleDeepCoverage
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
                 $ref = new ReflectionClass($class);
@@ -418,15 +496,22 @@ final class ModuleDeepCoverage
                 $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_8y0emR
 >>>>>>> laraxot/dev
+=======
+                $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($ref->isAbstract()) {
                     continue;
                 }
                 $ref->newInstanceWithoutConstructor();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ltDMsG
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 $executed++;
             } catch (\Throwable) {
                 try {
@@ -435,10 +520,14 @@ final class ModuleDeepCoverage
                 } catch (\Throwable) {
                     $executed++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 ++$executed;
             } catch (\Throwable) {
                 try {
@@ -446,10 +535,13 @@ final class ModuleDeepCoverage
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
+<<<<<<< HEAD
 <<<<<<< .merge_file_ltDMsG
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_8y0emR
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                 }
             }

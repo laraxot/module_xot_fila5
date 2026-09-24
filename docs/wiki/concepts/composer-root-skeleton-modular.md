@@ -13,12 +13,15 @@ related:
   - ../../../../../../bashscripts/ai/rules/composer-root-skeleton-modular.md
   - ../../../../../../docs/stories/STORY-282-composer-root-require-skeleton-modular.md
 <<<<<<< HEAD
-  - ./composer-merge-plugin-modules-only.md
-=======
 <<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
 =======
 <<<<<<< HEAD
+  - ./composer-merge-plugin-modules-only.md
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
 =======
@@ -26,8 +29,11 @@ related:
 =======
   - ./composer-merge-plugin-modules-only.md
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
   - ./theme-psr4-autoload-without-merge.md
 ---
@@ -89,6 +95,7 @@ Questa e' la boundary corretta:
 Confronto 2026-06-30:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -150,14 +157,20 @@ Confronto 2026-06-30:
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 
 `cd laravel && composer validate && composer show --direct`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 - FixCity: root minimo con `php`, `laravel/framework`, `nwidart/laravel-modules`, merge solo `Modules/*/composer.json`.
 - Predict prima della correzione: root con dipendenze funzionali, `Modules\\`, `Database\\Seeders\\` e temi in autoload, merge anche dei temi.
@@ -171,5 +184,8 @@ Confronto 2026-06-30:
 
 `cd laravel && composer validate && composer show --direct`
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

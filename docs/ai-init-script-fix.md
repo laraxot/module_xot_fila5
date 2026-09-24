@@ -3,6 +3,7 @@
 ## Problema Risolto
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 =======
 =======
@@ -20,10 +21,14 @@ Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegame
 >>>>>>> laraxot/dev
 Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 >>>>>>> laraxot/dev
+=======
+Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Situazione Prima della Correzione
 - `.ai` - ✅ Collegamento simbolico presente
 - `.cursor` - ❌ Cartella reale esistente, non collegamento simbolico
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_QQLPIl
@@ -43,6 +48,9 @@ Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collega
 - `.claude` - ❌ Cartella reale esistente, non collegamento simbolico
 >>>>>>> .merge_file_JGx2JG
 >>>>>>> laraxot/dev
+=======
+- `.claude` - ❌ Cartella reale esistente, non collegamento simbolico
+>>>>>>> 3792da0d (Check & fix styling)
 - `.gemini` - ✅ Collegamento simbolico presente
 - `.windsurf` - ❌ Cartella reale esistente, non collegamento simbolico
 
@@ -54,6 +62,7 @@ Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collega
 ## Risultato Attuale
 Tutti i collegamenti simbolici ora funzionano correttamente:
 - `.ai` → `bashscripts/ai/.ai`
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_QQLPIl
@@ -73,6 +82,9 @@ Tutti i collegamenti simbolici ora funzionano correttamente:
 - `.cursor` → `bashscripts/ai/.cursor`
 >>>>>>> .merge_file_JGx2JG
 >>>>>>> laraxot/dev
+=======
+- `.cursor` → `bashscripts/ai/.cursor`
+>>>>>>> 3792da0d (Check & fix styling)
 - `.claude` → `bashscripts/ai/.claude`
 - `.gemini` → `bashscripts/ai/.gemini`
 - `.windsurf` → `bashscripts/ai/.windsurf`
@@ -85,14 +97,18 @@ Per verificare che tutto funzioni correttamente:
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_QQLPIl
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 file .ai .cursor .claude .windsurf .gemini
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
@@ -120,3 +136,5 @@ Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
 =======
 >>>>>>> .merge_file_JGx2JG
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

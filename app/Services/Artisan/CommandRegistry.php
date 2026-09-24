@@ -61,6 +61,7 @@ class CommandRegistry
     {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_k6GuK7
 <<<<<<< HEAD
 =======
@@ -68,6 +69,10 @@ class CommandRegistry
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_XHzCYP
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         $this->register(new MigrationCommandHandler())
             ->register(new CacheCommandHandler())
             ->register(new RouteCommandHandler())
@@ -77,11 +82,17 @@ class CommandRegistry
             ->register(new OptimizeCommandHandler())
             ->register(new QueueCommandHandler())
             ->register(new DebugbarCommandHandler());
+<<<<<<< HEAD
 <<<<<<< .merge_file_k6GuK7
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $this->register(new MigrationCommandHandler)
             ->register(new CacheCommandHandler)
             ->register(new RouteCommandHandler)
@@ -92,6 +103,7 @@ class CommandRegistry
             ->register(new QueueCommandHandler)
             ->register(new DebugbarCommandHandler);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -107,5 +119,9 @@ class CommandRegistry
             ->register(new DebugbarCommandHandler());
 >>>>>>> .merge_file_XHzCYP
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

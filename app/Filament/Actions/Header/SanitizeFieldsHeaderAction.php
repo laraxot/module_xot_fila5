@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
 <<<<<<< .merge_file_x7bx60
@@ -15,11 +16,14 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> .merge_file_F8dg7R
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_x7bx60
 <<<<<<< HEAD
@@ -35,18 +39,32 @@ declare(strict_types=1);
 =======
 >>>>>>> .merge_file_F8dg7R
 >>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+>>>>>>> 3792da0d (Check & fix styling)
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\String\SanitizeAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 class SanitizeFieldsHeaderAction extends XotBaseAction
+=======
+use Webmozart\Assert\Assert;
+
+class SanitizeFieldsHeaderAction extends Action
+>>>>>>> 3792da0d (Check & fix styling)
 {
     /** @var list<string> */
     public array $fields = [];
@@ -79,6 +97,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                             $row->{$fieldName} = $string;
                             $save = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
                             $c++;
 =======
 <<<<<<< .merge_file_x7bx60
@@ -95,6 +114,9 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                             ++$c;
 >>>>>>> .merge_file_F8dg7R
 >>>>>>> laraxot/dev
+=======
+                            ++$c;
+>>>>>>> 3792da0d (Check & fix styling)
                         }
                     }
                     if ($save) {
@@ -110,6 +132,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  list<string>  $fields
 =======
 <<<<<<< .merge_file_x7bx60
@@ -126,6 +149,9 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
      * @param list<string> $fields
 >>>>>>> .merge_file_F8dg7R
 >>>>>>> laraxot/dev
+=======
+     * @param list<string> $fields
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function setFields(array $fields): self
     {

@@ -1,15 +1,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_RGgq5V
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: duplicate-methods
 canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
 =======
 <<<<<<< HEAD
@@ -79,3 +83,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/duplicate-me
 >>>>>>> .merge_file_AfUqi8
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
+>>>>>>> 3792da0d (Check & fix styling)

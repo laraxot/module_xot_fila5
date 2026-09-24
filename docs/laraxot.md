@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Laraxot Philosophy - Complete Analysis
 
 ## 🏛️ Architectural Religion
@@ -230,8 +233,11 @@ class YourResource extends XotBaseResource
     {
         return [
             // Infolist components
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Laravel XOT Architecture Documentation
 
 ## Overview
@@ -706,9 +712,12 @@ class ModuleResource extends XotBaseResource
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Translation Standards
 ```php
 // Modules/YourModule/lang/it/your_resource.php
@@ -782,8 +791,11 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 ---
 
 **Maintained by**: Xot Module (The Laraxot Government)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### 2. Custom Actions
 
 ```php
@@ -1515,6 +1527,7 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
 =======
 =======
@@ -1527,6 +1540,9 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 >>>>>>> laraxot/dev
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            // Form fields
@@ -4767,6 +4783,7 @@ protected function getFormSchema(): array
 // ✅ CORRETTO: getFormSchema deve essere statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 =======
@@ -4779,6 +4796,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Implementazione Corretta
@@ -4788,6 +4808,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -4802,6 +4823,9 @@ class TicketResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('title')->required(),
@@ -4824,6 +4848,7 @@ public function getFormSchema(): array
 // ✅ CORRETTO: public e statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 =======
@@ -4836,6 +4861,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Accesso a Proprietà
@@ -4843,6 +4871,7 @@ public function getFormSchema(): array
 // ❌ ERRATO: Accesso a $this in metodo statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -4856,6 +4885,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -4866,6 +4898,7 @@ public static function getFormSchema(): array
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 =======
@@ -4878,6 +4911,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -4897,6 +4933,7 @@ public function getFormSchema(): array
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -4910,6 +4947,9 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            // schema components
@@ -4943,6 +4983,7 @@ public function getFormSchema(): array
    // Usa sempre return type declarations
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
 =======
 =======
@@ -4955,6 +4996,9 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 3. **Documentazione**:
@@ -4964,6 +5008,7 @@ public function getFormSchema(): array
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -4977,6 +5022,9 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 4. **Contesto Statico**:
@@ -6131,6 +6179,7 @@ class TicketResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
 =======
@@ -6143,6 +6192,9 @@ class TicketResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [...];
     }
@@ -7591,6 +7643,7 @@ protected function getFormSchema(): array
 // ✅ CORRETTO: getFormSchema deve essere statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 =======
@@ -7603,6 +7656,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Implementazione Corretta
@@ -7612,6 +7668,7 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
     // ✅ CORRETTO: Metodo statico
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -7626,6 +7683,9 @@ class TicketResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('title')->required(),
@@ -7648,6 +7708,7 @@ public function getFormSchema(): array
 // ✅ CORRETTO: public e statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 =======
@@ -7660,6 +7721,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Accesso a Proprietà
@@ -7667,6 +7731,7 @@ public function getFormSchema(): array
 // ❌ ERRATO: Accesso a $this in metodo statico
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -7680,6 +7745,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -7690,6 +7758,7 @@ public static function getFormSchema(): array
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 =======
@@ -7702,6 +7771,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')
@@ -7721,6 +7793,7 @@ public function getFormSchema(): array
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -7734,6 +7807,9 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    {
        return [
            // schema components
@@ -7767,6 +7843,7 @@ public function getFormSchema(): array
    // Usa sempre return type declarations
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
 =======
 =======
@@ -7779,6 +7856,9 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 3. **Documentazione**:
@@ -7788,6 +7868,7 @@ public function getFormSchema(): array
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -7801,6 +7882,9 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 4. **Contesto Statico**:
@@ -9383,6 +9467,7 @@ class ClientMapWidget extends Widget
 5. La reattività funziona automaticamente con Livewire 3
   - Contact section
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -9390,3 +9475,7 @@ class ClientMapWidget extends Widget
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy**: Consistency, <nome progetto>ability, Simplicity
+**Goal**: Create a harmonious, maintainable, and scalable application architecture
+>>>>>>> 3792da0d (Check & fix styling)

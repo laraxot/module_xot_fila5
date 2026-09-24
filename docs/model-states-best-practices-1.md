@@ -11,6 +11,7 @@
 - **Collegamenti**:
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [README.md centrale](../../../docs/readme.md)
 =======
 <<<<<<< HEAD
@@ -19,3 +20,6 @@
   - [README.md centrale](../../../../docs/readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  - [README.md centrale](../../../../docs/readme.md)
+>>>>>>> 3792da0d (Check & fix styling)

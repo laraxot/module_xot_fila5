@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Mhwxry
 <<<<<<< HEAD
@@ -55,6 +56,8 @@ updated: 2026-08-24
 =======
 >>>>>>> .merge_file_jrBy5s
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # _certificate
 
 <!-- Contenuto migrato da _docs/_certificate.txt -->
@@ -126,6 +129,7 @@ https://www.learnvern.com/laravel-tutorial
 
 https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!
 
+<<<<<<< HEAD
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
 <<<<<<< HEAD
 =======
@@ -192,3 +196,6 @@ updated: 2026-08-24
 >>>>>>> .merge_file_jrBy5s
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
+>>>>>>> 3792da0d (Check & fix styling)

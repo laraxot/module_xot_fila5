@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_eacISK
 <<<<<<< HEAD
@@ -40,6 +41,11 @@ updated: 2026-08-24
 >>>>>>> .merge_file_wUnX1e
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# datatables
+
+<!-- Contenuto migrato da _docs/datatables.txt -->
+>>>>>>> 3792da0d (Check & fix styling)
 
 Server-Side Rendering of DataTables in Laravel
 https://dev.to/sharman/server-side-rendering-of-datatables-in-laravel-4c1i

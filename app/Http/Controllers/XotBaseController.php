@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * ---.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\Xot\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -22,12 +30,16 @@ class XotBaseController extends RoutingController
     /**
      * success response method.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $result
      *                                     =======
      * @param array<string, mixed> $result
      *                                     >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $result
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function sendResponse(string $message, array $result): JsonResponse
     {
@@ -43,12 +55,16 @@ class XotBaseController extends RoutingController
     /**
      * return error response.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array<string, mixed> $errorMessages
      *                                            =======
      * @param array<string, mixed> $errorMessages
      *                                            >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $errorMessages
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function sendError(string $error, array $errorMessages = [], int $code = 404): JsonResponse
     {

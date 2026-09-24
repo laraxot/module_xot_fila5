@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -15,6 +16,8 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Xot Module - concepts Index
 
 ## Purpose
@@ -27,6 +30,7 @@ qmd search "Xot concepts" --limit 5
 ```
 
 ## See Also
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [env-widget-no-ssh-env-editor](./env-widget-no-ssh-env-editor.md) — EnvWidget: modificare il `.env` di produzione dal pannello admin senza SSH/FTP, + config:cache via ArtisanCommandsManager
 =======
@@ -62,6 +66,8 @@ qmd search "Xot concepts" --limit 5
 *Updated: 2026-07-27*
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 - [composer-merge-plugin-modules-only](./composer-merge-plugin-modules-only.md) — merge solo moduli, mai temi
 =======
@@ -90,5 +96,8 @@ qmd search "Xot concepts" --limit 5
 - [no-app-support-queueable-actions](./no-app-support-queueable-actions.md) — Services/Support migrati a Action contestuali con `QueueableAction::execute()`.
 - [trend-action-delegation](./trend-action-delegation.md) — Action come confine; motore SQL/periodi delegato a `flowframe/laravel-trend`.
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

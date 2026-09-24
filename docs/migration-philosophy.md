@@ -1,9 +1,12 @@
 # Laraxot Migration Architecture Philosophy
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## 🚨 ABSOLUTE RULE: NEVER USE DESTRUCTIVE MIGRATION COMMANDS
 
 **FORBIDDEN - NEVER USE THESE COMMANDS:**
@@ -17,8 +20,11 @@
 
 **ALTERNATIVE**: Use proper migration updates following Laraxot philosophy - one migration per table, modify existing migrations with timestamp updates, never drop or recreate.
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Core Migration Principles
 
 ### The Single Source of Truth Principle
@@ -28,6 +34,7 @@
 ### Why This Architecture Matters
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Predictable Schema Evolution**: Clear, linear progression of database changes
 =======
 <<<<<<< HEAD
@@ -36,6 +43,9 @@
 1. **<nome progetto>able Schema Evolution**: Clear, linear progression of database changes
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+1. **<nome progetto>able Schema Evolution**: Clear, linear progression of database changes
+>>>>>>> 3792da0d (Check & fix styling)
 2. **Environment Consistency**: Same migration order across all environments
 3. **Maintainability**: Single file to modify for each table's base schema
 4. **DRY Compliance**: Eliminates redundant schema definitions
@@ -77,21 +87,28 @@ $this->tableUpdate(function (Blueprint $table) {
 
 #### 1. Table Creation Migrations
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 #### 1. Table Creation Migrations (UNICA per tabella)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+#### 1. Table Creation Migrations (UNICA per tabella)
+>>>>>>> 3792da0d (Check & fix styling)
 - **Pattern**: `{timestamp}_create_{table}_table.php`
 - **Purpose**: Define the base table schema
 - **Rule**: Exactly ONE per table per module
 - **Example**: `2024_01_01_000011_create_roles_table.php`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 #### 2. Modifiche allo schema: stessa migrazione
 - **Regola**: Per modificare campi o aggiungere colonne, **NON** creare nuove migrazioni separate
 - **Procedura**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome del file
@@ -101,8 +118,11 @@ $this->tableUpdate(function (Blueprint $table) {
 #### 3. Data Migration Migrations (solo per trasformazioni dati)
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
 - **Purpose**: Transform or seed data (NON modifiche schema)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 #### 2. Schema Evolution Migrations
 - **Pattern**: `{timestamp}_{action}_{table}.php`
 - **Purpose**: Modify existing table schema
@@ -147,16 +167,22 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 └── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
 
 **NON** creare `add_team_id_to_roles.php` separata: modificare `create_roles_table.php` e aggiornare il timestamp.
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
@@ -166,15 +192,21 @@ When you need to modify a table:
 
 1. **NEVER** create a new `create_table` migration
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 2. **NEVER** creare migrazioni separate tipo `add_column_to_table`
 3. **ALWAYS** modificare la **stessa** migrazione esistente
 4. **ALWAYS** aggiornare il timestamp nel nome del file
 5. **USE** `XotBaseMigration::tableUpdate()` per aggiunte sicure
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 2. **ALWAYS** create a schema evolution migration
 3. **USE** `XotBaseMigration::tableUpdate()` for safe modifications
 
@@ -241,9 +273,12 @@ Each module should:
 4. Follow consistent naming conventions
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Main-Module Dependency Rule
 
 **Modelli strettamente dipendenti dal main_module** (es. Profile): la migrazione deve stare nel modulo main (es. TechPlanner), NON in moduli generici (User). Profile è dominio del main_module.
@@ -464,8 +499,11 @@ protected function registerLivewireAuthWidgets(): void
 
 **REGOLA**: I form devono essere gestiti SEMPRE tramite Filament Widget, NON con form HTML tradizionali.
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:
@@ -477,6 +515,7 @@ protected function registerLivewireAuthWidgets(): void
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
 =======
 <<<<<<< HEAD
@@ -485,3 +524,6 @@ protected function registerLivewireAuthWidgets(): void
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
+>>>>>>> 3792da0d (Check & fix styling)

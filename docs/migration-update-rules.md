@@ -4,12 +4,16 @@
 - Questo file è collegato a casi specifici documentati nei moduli, ad esempio:
   [Modules/Performance/docs/organizzativa-migration-errors.md](../../Performance/docs/organizzativa-migration-errors.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
   [Modules/Performance/docs/organizzativa-migration-errors.md](../../performance/docs/organizzativa-migration-errors.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  [Modules/Performance/docs/organizzativa-migration-errors.md](../../performance/docs/organizzativa-migration-errors.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Caso pratico: Performance
 - Per l’errore su `valutatore_id` in `performance_organizzativa`, vedere la documentazione dettagliata nel modulo Performance.
@@ -28,6 +32,7 @@
 
 ## Note
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
 =======
 <<<<<<< HEAD
@@ -36,3 +41,6 @@
 - Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
+>>>>>>> 3792da0d (Check & fix styling)

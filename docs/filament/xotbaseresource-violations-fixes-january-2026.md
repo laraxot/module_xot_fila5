@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_AsJNuL
 ---
 title: "Xotbaseresource Violations Fixes"
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [xotbaseresource-violations-fixes.md](./xotbaseresource-violations-fixes.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Correzioni Violazioni XotBaseResource - Gennaio 2026
 
 ## Problema Identificato
@@ -166,4 +169,7 @@ Tutte le modifiche sono state verificate con successo utilizzando:
 **Data Intervento**: Gennaio 2026  
 **Conforme a**: DRY, KISS, Filosofia Laraxot  
 **PHPStan Level**: 10 ✅
+<<<<<<< HEAD
 >>>>>>> .merge_file_v8Gs3R
+=======
+>>>>>>> 3792da0d (Check & fix styling)

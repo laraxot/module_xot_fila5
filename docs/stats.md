@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JfLEy0
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://github.com/antonioribeiro/tracker
 https://github.com/antonioribeiro/tracker?ref=madewithlaravel.com
 
@@ -24,6 +27,7 @@ https://github.com/codemastersolucoes/laravel-visitor-tracker
 https://beyondco.de/docs/laravel-websockets/debugging/dashboard   !!
 
 
+<<<<<<< HEAD
 https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
 =======
 <<<<<<< HEAD
@@ -92,3 +96,6 @@ https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
 >>>>>>> .merge_file_qjKMF8
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
+>>>>>>> 3792da0d (Check & fix styling)

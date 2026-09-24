@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hKc5Vz
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # PRD: Xot Core Framework
 
 ## 📋 Overview
@@ -34,6 +37,7 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 ## 🚫 Out of Scope
 - Domain-specific logic (HR, Finance, etc.).
 - Direct UI components (handled by the UI module).
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -506,3 +510,5 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 >>>>>>> .merge_file_bsTbqy
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

@@ -15,20 +15,29 @@ use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 use function Safe\realpath;
 
 >>>>>>> laraxot/dev
+=======
+
+use function Safe\realpath;
+
+>>>>>>> 3792da0d (Check & fix styling)
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\realpath;
 
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Class Modules\Xot\Datas\XotData.
  * ----.
@@ -135,10 +144,14 @@ class XotData extends Data implements Wireable
     {
         $user_class = $this->getUserClass();
 <<<<<<< HEAD
+<<<<<<< HEAD
         $userInstance = new $user_class;
 =======
         $userInstance = new $user_class();
 >>>>>>> laraxot/dev
+=======
+        $userInstance = new $user_class();
+>>>>>>> 3792da0d (Check & fix styling)
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
@@ -147,10 +160,14 @@ class XotData extends Data implements Wireable
         $user = $user_class::query()->where('email', $email)->first();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($user === null) {
 =======
         if (null === $user) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $user) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \Exception('user not found for email '.$email);
         }
 
@@ -312,10 +329,14 @@ class XotData extends Data implements Wireable
     {
         $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($user === null) {
 =======
         if (null === $user) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $user) {
+>>>>>>> 3792da0d (Check & fix styling)
             return false;
         }
 
@@ -327,19 +348,27 @@ class XotData extends Data implements Wireable
         $result = $user->hasRole('super-admin');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $result === true;
 =======
         return true === $result;
 >>>>>>> laraxot/dev
+=======
+        return true === $result;
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     public function getProfileModel(): ProfileContract
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->profile !== null) {
 =======
         if (null !== $this->profile) {
 >>>>>>> laraxot/dev
+=======
+        if (null !== $this->profile) {
+>>>>>>> 3792da0d (Check & fix styling)
             return $this->profile;
         }
 
@@ -358,10 +387,14 @@ class XotData extends Data implements Wireable
      * Update the XotData instance.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
 =======
      * @param array<string, mixed> $data
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function update(array $data): self
     {
@@ -498,10 +531,14 @@ class XotData extends Data implements Wireable
         // $enum_class = Arr::get($user_class::casts(),'type',null);
         $enum_class = Arr::get($castsResult, 'type', null);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($enum_class === null) {
 =======
         if (null === $enum_class) {
 >>>>>>> laraxot/dev
+=======
+        if (null === $enum_class) {
+>>>>>>> 3792da0d (Check & fix styling)
             $enum_class = Str::of($user_class)
                 ->replace('\\Models\\', '\\Enums\\')
                 ->append('TypeEnum')
@@ -529,6 +566,7 @@ class XotData extends Data implements Wireable
             return false;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === 'localhost') {
             return false;
         }
@@ -538,6 +576,8 @@ class XotData extends Data implements Wireable
         // AWS ELB
         if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         if (isset($_SERVER['SERVER_NAME']) && 'localhost' === $_SERVER['SERVER_NAME']) {
             return false;
         }
@@ -546,7 +586,10 @@ class XotData extends Data implements Wireable
         }
         // AWS ELB
         if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO']) {
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             return true;
         }
 

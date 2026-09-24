@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Testing Progress Session"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [testing-progress-session.md](./testing-progress-session.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22
@@ -142,4 +145,7 @@ Tutti i test corretti seguono questo principio:
 
 **Status**: In Progress
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

@@ -5,17 +5,23 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
 use Illuminate\Database\Eloquent\Model;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Filament\Tables\Table;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -31,10 +37,14 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
      * Ascolta evento di aggiornamento filtri.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, mixed>  $filters
 =======
      * @param array<string, mixed> $filters
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $filters
+>>>>>>> 3792da0d (Check & fix styling)
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
@@ -45,7 +55,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Configura la tabella con le risposte.
      */
     public function tableOLD(Table $table): Table
@@ -65,7 +78,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     }
 
     /**
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Restituisce una chiave univoca per ogni record.
      * Usa _id che è l'alias della primary key creato da withAnswersLabel().
      *
@@ -81,7 +97,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
         return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
     public function getTableSearch(): ?string
     {
@@ -95,5 +114,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         return '' !== $search ? $search : null;
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 }

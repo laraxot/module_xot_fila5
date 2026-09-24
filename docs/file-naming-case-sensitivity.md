@@ -52,12 +52,16 @@ userfactory.php              → ELIMINA
 
 ## 🗑️ Cleanup Effettuato (2025-11-04)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## 🗑️ Cleanup Effettuato ([DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## 🗑️ Cleanup Effettuato ([DATE])
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Modulo Xot (6 file)
 ```bash
@@ -78,16 +82,22 @@ userfactory.php              → ELIMINA
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Modulo Tenant (1 directory)
 ```bash
 ✗ Tests/ → tests (eliminata, duplicato di tests/)
 ```
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Modulo Media (1 file)
 ```bash
 ✗ tests/Filament/Resources/mediaconvertresourcetest.php
@@ -265,9 +275,12 @@ Ogni modulo interessato ha documentazione dettagliata:
 
 - [Xot Module](./case-sensitivity-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Gdpr Module](../../gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../media/docs/case-sensitivity-rules.md)
@@ -275,8 +288,11 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [Rating Module](../../rating/docs/case-sensitivity-rules.md)
 - [Tenant Module](../../tenant/docs/case-sensitivity-rules.md)
 - [User Module](../../user/docs/case-sensitivity-rules.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Gdpr Module](../../Gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../Lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../Media/docs/case-sensitivity-rules.md)
@@ -343,12 +359,16 @@ python3 /path/to/check_duplicates.py
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [CLAUDE.md - Project Guidelines](claude.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [CLAUDE.md - Project Guidelines](claude.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🎯 Conclusioni
 
@@ -376,6 +396,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 
 **Ultimo aggiornamento**: 2025-11-04
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
 =======
@@ -388,3 +409,8 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 **Revisione**: Trimestrale (ogni 3 mesi)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+**Status**: ✅ Cleanup completato, enforcement attivo
+**Revisione**: Trimestrale (ogni 3 mesi)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -125,6 +125,7 @@
 - ✅ **PHPMD**: Warning critici corretti
 - ✅ **PHPInsights**: Score complessivi eccellenti (97.9% Code, 93.5% Complexity, 82.4% Architecture, 98.8% Style)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ **Pint**: Stile corretto
 =======
 <<<<<<< HEAD
@@ -133,3 +134,6 @@
 - ✅ **Pint**: Stile corretto
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- ✅ **Pint**: Stile corretto
+>>>>>>> 3792da0d (Check & fix styling)

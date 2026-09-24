@@ -115,6 +115,7 @@ class MyComponent extends Component
 
 ## Link Utili
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBaseServiceProvider](xotbaseserviceprovider.md)
 =======
 <<<<<<< .merge_file_clKRIk
@@ -127,5 +128,8 @@ class MyComponent extends Component
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_g2hoYN
 >>>>>>> laraxot/dev
+=======
+- [XotBaseServiceProvider](XotBaseServiceProvider.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [filament-best-practices.md](filament-best-practices.md)

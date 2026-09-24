@@ -41,16 +41,20 @@ class GetCurrentRouteViewAction
         return collect(explode('\\', $controller))
             ->reject(static fn (string $part): bool => in_array($part, ['Module', 'Item'], true))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gjPP1P
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             ->map(static function (string $part) use ($params): mixed {
                 $part = Str::snake($part);
 
                 return $params[$part] ?? $part;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -70,6 +74,8 @@ class GetCurrentRouteViewAction
 =======
 >>>>>>> .merge_file_jykUJQ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             })
             ->implode('.');
     }

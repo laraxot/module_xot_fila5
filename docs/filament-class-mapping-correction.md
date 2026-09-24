@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzione Mapping Classi Filament - [DATE]
 
 =======
@@ -32,6 +33,10 @@
 
 >>>>>>> .merge_file_Xcfpj8
 >>>>>>> laraxot/dev
+=======
+# Correzione Mapping Classi Filament - [DATE]
+
+>>>>>>> 3792da0d (Check & fix styling)
 **Obiettivo**: Correggere mapping classi inesistenti nel file `filament_class.txt`
 
 ## ⚠️ Problema Identificato
@@ -147,6 +152,7 @@ Se in futuro si volesse creare queste classi base:
 **Stato**: ✅ Mapping corretto per riflettere codice esistente
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data Correzione**: [DATE]
 =======
 =======
@@ -164,3 +170,6 @@ Se in futuro si volesse creare queste classi base:
 >>>>>>> laraxot/dev
 **Data Correzione**: 2025-12-23
 >>>>>>> laraxot/dev
+=======
+**Data Correzione**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)

@@ -9,6 +9,7 @@
 #
 # Git LFS VIETATO. Binari = blob git normali.
 
+>>>>>>> 3792da0d (Check & fix styling)
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored

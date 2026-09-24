@@ -116,6 +116,7 @@ Questa risoluzione garantisce:
 ## Collegamento con la Documentazione Principale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 =======
 <<<<<<< HEAD
@@ -124,3 +125,6 @@ Per una panoramica di tutti i conflitti risolti, vedere il documento principale 
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
+>>>>>>> 3792da0d (Check & fix styling)

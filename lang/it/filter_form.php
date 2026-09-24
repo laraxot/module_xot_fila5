@@ -48,6 +48,9 @@ return [
         'delete' => [
             'label' => 'Elimina Filter Form',
         ],
+<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ],
 ];

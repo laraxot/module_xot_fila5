@@ -9,20 +9,29 @@ use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\json_encode;
 use function Safe\preg_match;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
 >>>>>>> laraxot/dev
+=======
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
+
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Middleware di sicurezza avanzato.
  *
@@ -42,7 +51,16 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
+<<<<<<< HEAD
         $this->addSecurityHeaders($response);
+=======
+
+        // Skip security headers for Debugbar routes in local environment
+        // to allow Debugbar to function properly
+        if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
+            $this->addSecurityHeaders($response);
+        }
+>>>>>>> 3792da0d (Check & fix styling)
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -58,7 +76,10 @@ class SecurityMiddleware
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Check if the request is for Debugbar routes.
      */
     private function isDebugbarRoute(Request $request): bool
@@ -71,7 +92,10 @@ class SecurityMiddleware
     }
 
     /**
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Applica rate limiting avanzato.
      */
     private function applyAdvancedRateLimiting(Request $request): void
@@ -304,10 +328,14 @@ class SecurityMiddleware
 
         // Log tentativi di accesso falliti
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
 =======
         if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
 >>>>>>> laraxot/dev
+=======
+        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
+>>>>>>> 3792da0d (Check & fix styling)
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -361,10 +389,14 @@ class SecurityMiddleware
 
         foreach ($suspiciousUserAgents as $suspicious) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
 =======
             if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
 >>>>>>> laraxot/dev
+=======
+            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
+>>>>>>> 3792da0d (Check & fix styling)
                 return true;
             }
         }
@@ -381,10 +413,14 @@ class SecurityMiddleware
 
         foreach ($inputs as $key => $value) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($value !== null && is_string($value)) {
 =======
             if (null !== $value && is_string($value)) {
 >>>>>>> laraxot/dev
+=======
+            if (null !== $value && is_string($value)) {
+>>>>>>> 3792da0d (Check & fix styling)
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -426,10 +462,14 @@ class SecurityMiddleware
      * Valida input array.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $value
 =======
      * @param array<array-key, mixed> $value
 >>>>>>> laraxot/dev
+=======
+     * @param array<int|string, mixed> $value
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -456,10 +496,14 @@ class SecurityMiddleware
      * Ottieni profondità array.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $array
 =======
      * @param array<array-key, mixed> $array
 >>>>>>> laraxot/dev
+=======
+     * @param array<int|string, mixed> $array
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function getArrayDepth(array $array): int
     {

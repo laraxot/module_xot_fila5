@@ -130,6 +130,7 @@ class {ModelName}Resource extends XotBaseResource
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -143,6 +144,9 @@ class {ModelName}Resource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente
@@ -315,6 +319,7 @@ return [
 - [Xot: XotBaseResource Rules](../laravel/Modules/Xot/docs/filament/resources/xot-base-resource.md)
 - [Xot: Filament Resource Guidelines](../laravel/Modules/Xot/docs/rules/filament-resource-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -323,6 +328,11 @@ return [
 - [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Progressioni: XotBaseResource Violations](../laravel/modules/progressioni/docs/xotbaseresource-violations-critical.md)
+- [Xot: XotBaseResource Rules](../laravel/modules/xot/docs/filament/resources/xot-base-resource.md)
+- [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Regole Correlate
 - [Sistema Traduzioni](translation-system.md)
@@ -331,6 +341,7 @@ return [
 
 *Documento creato: agosto 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025*
 =======
 <<<<<<< HEAD
@@ -339,3 +350,6 @@ return [
 *Ultimo aggiornamento: agosto 2025*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: agosto 2025*
+>>>>>>> 3792da0d (Check & fix styling)

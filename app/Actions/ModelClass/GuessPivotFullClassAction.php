@@ -20,6 +20,7 @@ class GuessPivotFullClassAction
      * @param  string|class-string<Model>  $related  The related model class name
      * @param  string|class-string<Model>  $class  The class
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1HK41N
 <<<<<<< HEAD
      * @param  string|class-string<Model>  $related  The related model class name
@@ -33,6 +34,11 @@ class GuessPivotFullClassAction
      * @param string|class-string<Model> $class   The class
 >>>>>>> .merge_file_UGRXoE
 >>>>>>> laraxot/dev
+=======
+     * @param string|class-string<Model> $related The related model class name
+     * @param string|class-string<Model> $class   The class
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(string $pivot_name, string $related, string $class): string
     {
@@ -66,6 +72,7 @@ class GuessPivotFullClassAction
 <<<<<<< HEAD
         if ($parent_class === false) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1HK41N
 <<<<<<< HEAD
         if ($parent_class === false) {
@@ -76,6 +83,10 @@ class GuessPivotFullClassAction
         if (false === $parent_class) {
 >>>>>>> .merge_file_UGRXoE
 >>>>>>> laraxot/dev
+=======
+        if (false === $parent_class) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

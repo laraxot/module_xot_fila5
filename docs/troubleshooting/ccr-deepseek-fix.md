@@ -21,6 +21,7 @@ To activate the fix, update your CCR configuration (usually `~/.claude-code-rout
 ```json
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
 =======
 <<<<<<< HEAD
@@ -29,6 +30,9 @@ To activate the fix, update your CCR configuration (usually `~/.claude-code-rout
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila5_mono/bashscripts/ccr/custom-router.js"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila5_mono/bashscripts/ccr/custom-router.js"
+>>>>>>> 3792da0d (Check & fix styling)
 }
 ```
 
@@ -51,6 +55,7 @@ After applying the config, run a command that triggers a tool call:
 `cc "explain this code and use a tool to check the file"`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The error should no longer occur.
 =======
 <<<<<<< HEAD
@@ -59,3 +64,6 @@ The error should no longer occur.
 The error should no longer occur.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+The error should no longer occur.
+>>>>>>> 3792da0d (Check & fix styling)

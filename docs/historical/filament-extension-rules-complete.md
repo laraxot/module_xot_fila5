@@ -291,6 +291,7 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tfpHcz
 =======
@@ -310,6 +311,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Qjtf2J
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -495,6 +499,7 @@ class UserResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tfpHcz
 =======
@@ -514,6 +519,9 @@ class UserResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_Qjtf2J
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('name')->required(),

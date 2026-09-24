@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_hXWFk9
@@ -33,6 +34,8 @@ note: "Convertito da auto_routes.txt (documento) da convert-docs-txt-to-md.py."
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /it/tests
 va a prendere il modello "home" e vede se esiste la relazione "tests" se esiste usa quelle, altrimenti
 va a prendere il "singolar" di tests e va nel solito file xra.php
@@ -42,6 +45,7 @@ va a prendere la relazione "zibibbo" di "aaa" se non la trova "404" differenza d
 implica che nel pannello quando si va a prendere "parents" oltre a row, rows ci deve essere anche "name"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -55,3 +59,6 @@ che corrisponde al nome della relazione o della funzione
 che corrisponde al nome della relazione o della funzione
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+che corrisponde al nome della relazione o della funzione
+>>>>>>> 3792da0d (Check & fix styling)

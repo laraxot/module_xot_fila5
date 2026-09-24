@@ -4,6 +4,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Lo script `bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
 =======
 =======
@@ -21,6 +22,9 @@ Lo script `bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cart
 >>>>>>> laraxot/dev
 Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
 >>>>>>> laraxot/dev
+=======
+Lo script `bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Analisi
 
@@ -36,6 +40,7 @@ Dovrebbe creare un symlink nella root del progetto:
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .gemini -> bashscripts/ai/.gemini
 =======
 =======
@@ -53,6 +58,9 @@ Dovrebbe creare un symlink nella root del progetto:
 >>>>>>> laraxot/dev
 ./.gemini -> ./bashscripts/ai/.gemini
 >>>>>>> laraxot/dev
+=======
+.gemini -> bashscripts/ai/.gemini
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## Comportamento Attuale
@@ -62,6 +70,7 @@ Lo script cerca una cartella `.gemini` nella root del progetto e crea un symlink
 ## Soluzione
 
 Lo script deve essere corretto per invertire la logica:
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IRiGyl
@@ -81,10 +90,14 @@ Lo script deve essere corretto per invertire la logica:
 - Cercare le cartelle specifiche in `bashscripts/ai/`
 >>>>>>> .merge_file_6zqIeM
 >>>>>>> laraxot/dev
+=======
+- Cercare le cartelle specifiche in `bashscripts/ai/`
+>>>>>>> 3792da0d (Check & fix styling)
 - Creare symlink nella root del progetto che puntano a quelle cartelle
 
 ## Cartelle Coinvolte
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Source: `bashscripts/ai/.gemini`
@@ -109,3 +122,7 @@ Lo script deve essere corretto per invertire la logica:
 - Source: `./bashscripts/ai/.gemini`
 - Target symlink: `./.gemini`
 >>>>>>> laraxot/dev
+=======
+- Source: `bashscripts/ai/.gemini`
+- Target symlink: `.gemini`
+>>>>>>> 3792da0d (Check & fix styling)

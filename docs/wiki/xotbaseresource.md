@@ -28,6 +28,7 @@ Every concrete resource must implement:
 - `protected static ?string $model`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_eEoKJY
 =======
@@ -42,6 +43,8 @@ Every concrete resource must implement:
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_SwypVV
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - `public function getFormSchema(): array`
 =======
 <<<<<<< HEAD
@@ -54,11 +57,14 @@ Every concrete resource must implement:
 - `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_eEoKJY
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_SwypVV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - `public static function getPages(): array`
 
 ### 3. Separation of Concerns

@@ -17,6 +17,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "-y",
         "@modelcontextprotocol/server-mysql",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "marco:marco@localhost:3306/quaeris_survey"
 =======
 <<<<<<< HEAD
@@ -25,6 +26,9 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "marco:marco@localhost:3306/healthcare_app_survey"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        "marco:marco@localhost:3306/healthcare_app_survey"
+>>>>>>> 3792da0d (Check & fix styling)
       ]
     },
     "fetch": {
@@ -47,6 +51,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "-y",
         "@modelcontextprotocol/server-filesystem",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "/var/www/_bases/base_quaeris_fila4_mono/laravel"
 =======
 <<<<<<< HEAD
@@ -55,6 +60,9 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "/var/www/_bases/base_healthcare_app_fila5_mono/laravel"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        "/var/www/_bases/base_healthcare_app_fila5_mono/laravel"
+>>>>>>> 3792da0d (Check & fix styling)
       ]
     },
     "git": {

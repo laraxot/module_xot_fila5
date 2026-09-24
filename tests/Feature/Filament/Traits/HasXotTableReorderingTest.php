@@ -29,60 +29,84 @@ class HasXotTableReorderingTest extends TestCase
 {
     #[Test]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function it_returns_order_column_when_model_has_column(): void
 =======
     public function itReturnsOrderColumnWhenModelHasColumn(): void
 >>>>>>> laraxot/dev
+=======
+    public function itReturnsOrderColumnWhenModelHasColumn(): void
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function it_returns_null_when_model_missing_order_column(): void
 =======
     public function itReturnsNullWhenModelMissingOrderColumn(): void
 >>>>>>> laraxot/dev
+=======
+    public function itReturnsNullWhenModelMissingOrderColumn(): void
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function it_allows_override_in_subclass(): void
 =======
     public function itAllowsOverrideInSubclass(): void
 >>>>>>> laraxot/dev
+=======
+    public function itAllowsOverrideInSubclass(): void
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function it_checks_column_existence_via_schema(): void
 =======
     public function itChecksColumnExistenceViaSchema(): void
 >>>>>>> laraxot/dev
+=======
+    public function itChecksColumnExistenceViaSchema(): void
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::hasOrderableColumn() non esiste.');
     }
 
     #[Test]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function it_auto_enables_reorderable_when_column_exists(): void
 =======
     public function itAutoEnablesReorderableWhenColumnExists(): void
 >>>>>>> laraxot/dev
+=======
+    public function itAutoEnablesReorderableWhenColumnExists(): void
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }
 
     #[Test]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function it_skips_reorderable_when_column_missing(): void
 =======
     public function itSkipsReorderableWhenColumnMissing(): void
 >>>>>>> laraxot/dev
+=======
+    public function itSkipsReorderableWhenColumnMissing(): void
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }

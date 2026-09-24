@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
 =======
 =======
@@ -41,3 +42,6 @@ https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-tw
 >>>>>>> .merge_file_wgtkWm
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
+>>>>>>> 3792da0d (Check & fix styling)

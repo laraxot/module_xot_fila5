@@ -126,6 +126,7 @@ Filament Resource → XotBaseResource → FilamentResource
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Nwhvt7
 =======
@@ -145,6 +146,9 @@ abstract public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_PHami8
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Page Generation

@@ -16,16 +16,22 @@ final class AuthData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string>  $guards
      * @param  array<string, array<string, string>>  $providers
      * @param  array<string, bool|int|string>  $throttle
      * @param  array<string, bool>  $social
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param array<string>                        $guards
      * @param array<string, array<string, string>> $providers
      * @param array<string, bool|int|string>       $throttle
      * @param array<string, bool>                  $social
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(
         public readonly string $guard = 'web',
@@ -47,11 +53,16 @@ final class AuthData extends Data
             'github' => false,
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Create a new instance of AuthData with default values.
@@ -59,9 +70,13 @@ final class AuthData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
 >>>>>>> laraxot/dev
+=======
+        return new self();
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

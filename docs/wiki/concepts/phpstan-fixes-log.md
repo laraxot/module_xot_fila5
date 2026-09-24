@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -22,6 +23,8 @@
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # PHPStan Fixes Log - Story 8-121
 
 > **Story**: 8-121 - PHPStan Full Compliance (Zero Errors, No Ignoring)
@@ -146,16 +149,22 @@ Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `Enu
 
 Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Fix 2026-06-30: fatal trait collision + tail Modules/
 
 ### Problema 1 — PHPStan non partiva (fatal)
@@ -173,6 +182,7 @@ use HasSpatiePermission, HasTeams {
 
 Wiki: [User trait-alias-conflict-resolution](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -193,6 +203,11 @@ Issue #175 — niente `@phpstan-ignore` su queste relazioni.
 `static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### Problema 2 — `UserContract::teams()` generics
+
+`static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Problema 3 — `Article::scopePublishedUntilToday()`
 
@@ -209,6 +224,7 @@ Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -217,3 +233,8 @@ Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> 3792da0d (Check & fix styling)

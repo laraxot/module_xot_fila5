@@ -42,6 +42,7 @@ function chatFilesWithDateInName(): array
 <<<<<<< HEAD
         if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_X467sT
 <<<<<<< HEAD
         if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
@@ -52,6 +53,10 @@ function chatFilesWithDateInName(): array
         if (1 === preg_match('/\d{4}-\d{2}-\d{2}/', $name)) {
 >>>>>>> .merge_file_oBj08m
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/\d{4}-\d{2}-\d{2}/', $name)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $offenders[] = $name;
         }
     }

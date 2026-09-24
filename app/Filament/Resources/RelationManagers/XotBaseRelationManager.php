@@ -21,7 +21,10 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -40,6 +43,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $params
 =======
      * @param array<string, bool|float|int|string|null> $params
@@ -48,6 +52,13 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
         return static::getResourceClass()::trans($key, $exceptionIfNotExist, $params);
+=======
+     * @param array<string, bool|float|int|string|null> $params
+     */
+    public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
+    {
+        return static::$resource::trans($key, $exceptionIfNotExist, $params);
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     protected static string $relationship = '';
@@ -62,6 +73,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
+<<<<<<< HEAD
         return static::getResourceClass();
     }
 
@@ -83,6 +95,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 =======
         if (isset(static::$resource) && '' !== static::$resource) {
 >>>>>>> laraxot/dev
+=======
+        if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
+>>>>>>> 3792da0d (Check & fix styling)
             return static::$resource;
         }
 
@@ -102,10 +117,14 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         Assert::true(is_subclass_of($resource, XotBaseResource::class), 'Resource must extend XotBaseResource: '.$resource);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var class-string<XotBaseResource> $resource */
 =======
         /* @var class-string<XotBaseResource> $resource */
 >>>>>>> laraxot/dev
+=======
+        /* @var class-string<XotBaseResource> $resource */
+>>>>>>> 3792da0d (Check & fix styling)
         static::$resource = $resource;
 
         return static::$resource;
@@ -135,6 +154,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /** @return array<int|string, Component> */
     public function getFormSchema(): array
     {
+<<<<<<< HEAD
         $class = $this->getResource()::getFormClass();
         $instance = app($class);
         Assert::isInstanceOf($instance, XotBaseResourceForm::class);
@@ -145,6 +165,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         /* @var XotBaseResourceForm $instance */
 >>>>>>> laraxot/dev
         return $instance->getFormSchema();
+=======
+        return $this->getResource()::getFormSchema();
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     /**
@@ -226,10 +249,14 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($record === null) {
 =======
                 if (null === $record) {
 >>>>>>> laraxot/dev
+=======
+                if (null === $record) {
+>>>>>>> 3792da0d (Check & fix styling)
                     return false;
                 }
 
@@ -240,10 +267,14 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($record === null) {
 =======
                 if (null === $record) {
 >>>>>>> laraxot/dev
+=======
+                if (null === $record) {
+>>>>>>> 3792da0d (Check & fix styling)
                     return false;
                 }
 
@@ -314,6 +345,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * Determine if the bulk delete action can be performed on the given record.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function canDeleteBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
@@ -322,6 +354,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         if ($record instanceof \stdClass) {
 >>>>>>> laraxot/dev
+=======
+    public function canDeleteBulk(Model|\stdClass|null $record): bool
+    {
+        if ($record instanceof \stdClass) {
+>>>>>>> 3792da0d (Check & fix styling)
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -333,6 +370,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * Determine if the bulk detach action can be performed on the given record.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function canDetachBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
@@ -341,6 +379,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         if ($record instanceof \stdClass) {
 >>>>>>> laraxot/dev
+=======
+    public function canDetachBulk(Model|\stdClass|null $record): bool
+    {
+        if ($record instanceof \stdClass) {
+>>>>>>> 3792da0d (Check & fix styling)
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }

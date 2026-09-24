@@ -41,11 +41,16 @@ it('can resolve a sushi module row', function () {
     $module = Module::query()->first();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if ($module === null) {
 =======
     if (null === $module) {
 >>>>>>> laraxot/dev
         Assert::markTestSkipped('No nwidart modules registered in test runtime.');
+=======
+    if (null === $module) {
+        $this->markTestSkipped('No nwidart modules registered in test runtime.');
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     Assert::assertInstanceOf(Module::class, $module);

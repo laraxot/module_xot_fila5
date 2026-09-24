@@ -64,6 +64,7 @@ public function getTableBulkActions(): array
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -77,6 +78,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -115,6 +119,7 @@ public function getTableActions(): array
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -128,6 +133,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     // ...
 }
@@ -176,6 +184,7 @@ public function getTableBulkActions(): array
 // ✅ CORRETTO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -189,6 +198,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         'template_slug' => Select::make('template_slug')
@@ -313,6 +325,7 @@ grep -r "array<mixed" Modules/ --include="*.php"
 - [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole generali estensione classi
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - Guide PHPStan
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
 =======
 <<<<<<< HEAD
@@ -321,12 +334,16 @@ grep -r "array<mixed" Modules/ --include="*.php"
 - [Filament Form Schema Structure](../../../../docs/filament_form_schema_structure.md) - Struttura form schema
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Filament Form Schema Structure](../../../../docs/filament_form_schema_structure.md) - Struttura form schema
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
 **Filosofia**: Type Safety, Coerenza, Manutenibilità
 **Pattern**: `array<string, T>` sempre, mai `array<int, T>` o `array<mixed, T>`
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità**: CRITICA - PHPStan Level 10 compliance
 =======
 <<<<<<< HEAD
@@ -335,3 +352,6 @@ grep -r "array<mixed" Modules/ --include="*.php"
 **Priorità**: CRITICA - PHPStan Level 10 compliance
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Priorità**: CRITICA - PHPStan Level 10 compliance
+>>>>>>> 3792da0d (Check & fix styling)

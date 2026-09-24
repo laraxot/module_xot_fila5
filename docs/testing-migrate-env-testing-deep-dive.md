@@ -24,14 +24,17 @@ Esito:
 - `SQLSTATE[HY000] [2002] Unknown error while connecting`
 - connessione `mysql` su `127.0.0.1:3306`
 <<<<<<< HEAD
-- database target `<nome progetto>_data_test`
-- database target `<nome progetto>_data_test` (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- database target `<nome progetto>_data_test`
-=======
 <<<<<<< HEAD
 - database target `<nome progetto>_data_test`
 - database target `<nome progetto>_data_test` (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- database target `<nome progetto>_data_test`
 =======
 <<<<<<< HEAD
+- database target `<nome progetto>_data_test`
+- database target `<nome progetto>_data_test` (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- database target `<nome progetto>_data_test`
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 - database target `<nome progetto>_data_test` (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- database target `<nome progetto>_data_test`
 =======
@@ -40,8 +43,11 @@ Esito:
 =======
 - database target `<nome progetto>_data_test` (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- database target `<nome progetto>_data_test`
 >>>>>>> 64619e34 (.)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 Conclusione:
 - blocco infrastrutturale: MySQL testing non raggiungibile nell'ambiente attuale.
@@ -52,14 +58,17 @@ Comando:
 
 ```bash
 <<<<<<< HEAD
-DB_CONNECTION=sqlite DB_DATABASE=/var/www/_bases/base_<nome progetto>/laravel/database/testing.sqlite php artisan migrate --env=testing
-DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing
-=======
 <<<<<<< HEAD
 DB_CONNECTION=sqlite DB_DATABASE=/var/www/_bases/base_<nome progetto>/laravel/database/testing.sqlite php artisan migrate --env=testing
 DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing
 =======
 <<<<<<< HEAD
+DB_CONNECTION=sqlite DB_DATABASE=/var/www/_bases/base_<nome progetto>/laravel/database/testing.sqlite php artisan migrate --env=testing
+DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing
 =======
@@ -68,8 +77,11 @@ DB_CONNECTION=sqlite DB_DATABASE=/var/www/_bases/base_<nome progetto>/laravel/da
 =======
 DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)DB_CONNECTION=sqlite DB_DATABASE=../../../database/testing.sqlite php artisan migrate --env=testing
 >>>>>>> 64619e34 (.)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 Esito:
@@ -102,14 +114,17 @@ Conclusione:
 ## Riferimenti Tecnici
 
 <<<<<<< HEAD
-- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
-- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`) (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
-=======
 <<<<<<< HEAD
 - `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
 - `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`) (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
 =======
 <<<<<<< HEAD
+- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
+- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`) (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 - `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`) (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
 =======
@@ -118,8 +133,11 @@ Conclusione:
 =======
 - `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`) (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)- `config/local/<nome progetto>/database.php` (sqlite usa `database_path(env('DB_DATABASE', 'db_data').'.sqlite')`)
 >>>>>>> 64619e34 (.)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - `Modules/Xot/app/Database/Migrations/XotBaseMigration.php` (`timestamps()` aggiunge anche `user_id`, `updated_by`, `created_by`)
 - `Modules/Meetup/database/migrations/2025_01_01_000008_create_event_user_table.php` (definisce già `user_id` prima di `timestamps()`)
 

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -62,6 +63,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_2ClBP3
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->
@@ -69,6 +72,7 @@ updated: 2026-08-24
 questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
 https://github.com/limewell/laravel-make-extender
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -120,3 +124,8 @@ https://github.com/spatie/laravel-health
 =======
 >>>>>>> .merge_file_2ClBP3
 >>>>>>> laraxot/dev
+=======
+
+mostrare in una blade uso disco etc 
+https://github.com/spatie/laravel-health
+>>>>>>> 3792da0d (Check & fix styling)

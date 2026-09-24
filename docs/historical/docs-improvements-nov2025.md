@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_tUBpEY
 =======
@@ -26,6 +27,8 @@ Vedi il file canonico: [docs-improvements-nov.md](./docs-improvements-nov.md)
 <<<<<<< .merge_file_tUBpEY
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Miglioramenti Documentazione - Novembre 2025
 
 ## 🎯 Obiettivo
@@ -289,6 +292,9 @@ find . -name "readme.md" -o -name "Readme.md"
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_SuQ85l
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

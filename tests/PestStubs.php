@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Pest Laravel helper stubs for PHPStan.
  *
@@ -12,16 +15,24 @@ declare(strict_types=1);
  * - This file is only for static analysis and test helper convenience.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Pest\Laravel;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
+<<<<<<< HEAD
 use Pest\PendingCalls\AfterEachCall;
 use Pest\PendingCalls\BeforeEachCall;
 use Pest\PendingCalls\DescribeCall;
 use Pest\PendingCalls\TestCall;
 use Pest\PendingCalls\UsesCall;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 /**
  * Authenticate as a given model or ID.
@@ -36,6 +47,7 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
 /**
  * Perform a GET request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -45,6 +57,10 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
  * @param array<string, mixed>            $options
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $options
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -56,6 +72,7 @@ function get(string|array $uri = '', array $options = []): TestResponse
 /**
  * Perform a POST request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -67,6 +84,11 @@ function get(string|array $uri = '', array $options = []): TestResponse
  * @param array<string, mixed>            $options
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $options
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -78,6 +100,7 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
 /**
  * Perform a PUT request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -87,6 +110,10 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
  * @param array<string, mixed>            $data
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -98,6 +125,7 @@ function put(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a PATCH request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -107,6 +135,10 @@ function put(string|array $uri, array $data = []): TestResponse
  * @param array<string, mixed>            $data
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -118,6 +150,7 @@ function patch(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a DELETE request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -125,6 +158,9 @@ function patch(string|array $uri, array $data = []): TestResponse
  * @param string|array<int|string, mixed> $uri
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -136,6 +172,7 @@ function delete(string|array $uri): TestResponse
 /**
  * Perform a HEAD request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -143,6 +180,9 @@ function delete(string|array $uri): TestResponse
  * @param string|array<int|string, mixed> $uri
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -154,6 +194,7 @@ function head(string|array $uri): TestResponse
 /**
  * Perform an OPTIONS request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -161,6 +202,9 @@ function head(string|array $uri): TestResponse
  * @param string|array<int|string, mixed> $uri
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -172,6 +216,7 @@ function options(string|array $uri): TestResponse
 /**
  * Perform a JSON GET request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -181,6 +226,10 @@ function options(string|array $uri): TestResponse
  * @param array<string, mixed>            $headers
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $headers
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -192,6 +241,7 @@ function getJson(string|array $uri, array $headers = []): TestResponse
 /**
  * Perform a JSON POST request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -203,6 +253,11 @@ function getJson(string|array $uri, array $headers = []): TestResponse
  * @param array<string, mixed>            $headers
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -214,6 +269,7 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
 /**
  * Perform a JSON PUT request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -225,6 +281,11 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
  * @param array<string, mixed>            $headers
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -236,6 +297,7 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
 /**
  * Perform a JSON PATCH request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -247,6 +309,11 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
  * @param array<string, mixed>            $headers
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -258,6 +325,7 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
 /**
  * Perform a JSON DELETE request.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param string|array<int|string, mixed> $uri
@@ -269,6 +337,11 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
  * @param array<string, mixed>            $headers
  *
  * >>>>>>> laraxot/dev
+=======
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @return TestResponse<Response>
  */
@@ -290,7 +363,11 @@ function followingRedirects(int $number = 5): TestResponse
 /**
  * Define a test case.
  */
+<<<<<<< HEAD
 function test(string $description, ?\Closure $closure = null): TestCall
+=======
+function test(string $description, ?\Closure $closure = null): mixed
+>>>>>>> 3792da0d (Check & fix styling)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -298,7 +375,11 @@ function test(string $description, ?\Closure $closure = null): TestCall
 /**
  * Define a test case.
  */
+<<<<<<< HEAD
 function it(string $description, ?\Closure $closure = null): TestCall
+=======
+function it(string $description, ?\Closure $closure = null): mixed
+>>>>>>> 3792da0d (Check & fix styling)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -306,7 +387,11 @@ function it(string $description, ?\Closure $closure = null): TestCall
 /**
  * Define a test group.
  */
+<<<<<<< HEAD
 function describe(string $description, \Closure $closure): DescribeCall
+=======
+function describe(string $description, \Closure $closure): mixed
+>>>>>>> 3792da0d (Check & fix styling)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -314,7 +399,11 @@ function describe(string $description, \Closure $closure): DescribeCall
 /**
  * Define a before each hook.
  */
+<<<<<<< HEAD
 function beforeEach(\Closure $closure): BeforeEachCall
+=======
+function beforeEach(\Closure $closure): mixed
+>>>>>>> 3792da0d (Check & fix styling)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -322,7 +411,11 @@ function beforeEach(\Closure $closure): BeforeEachCall
 /**
  * Define an after each hook.
  */
+<<<<<<< HEAD
 function afterEach(\Closure $closure): AfterEachCall
+=======
+function afterEach(\Closure $closure): mixed
+>>>>>>> 3792da0d (Check & fix styling)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -330,6 +423,7 @@ function afterEach(\Closure $closure): AfterEachCall
 /**
  * Define a test class.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @param class-string ...$classes
@@ -338,6 +432,11 @@ function afterEach(\Closure $closure): AfterEachCall
  *                                 >>>>>>> laraxot/dev
  */
 function uses(string ...$classes): UsesCall
+=======
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): mixed
+>>>>>>> 3792da0d (Check & fix styling)
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }

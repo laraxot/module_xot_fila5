@@ -11,9 +11,12 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamenti Principali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Documentazione Frontend](../../cms/docs/frontoffice.md) - Documentazione completa sul frontend
 - [Gestione dei Temi](../../cms/docs/theme_compilation.md) - Compilazione e pubblicazione dei temi
 - [Componenti Blade](../../cms/docs/components.md) - Documentazione sui componenti Blade
@@ -27,8 +30,11 @@ Secondo le regole di organizzazione della documentazione:
 ## Collegamento Bidirezionale
 
 Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs/xot-link.md) nel modulo Cms.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Documentazione Frontend](../../Cms/docs/frontoffice.md) - Documentazione completa sul frontend
 - [Gestione dei Temi](../../Cms/docs/theme_compilation.md) - Compilazione e pubblicazione dei temi
 - [Componenti Blade](../../Cms/docs/components.md) - Documentazione sui componenti Blade
@@ -47,6 +53,7 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 
 ## Collegamenti tra versioni di cms-link.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -57,6 +64,8 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [cms-link.md](../../../xot/docs/cms-link.md)
 * [cms-link.md](../../../user/docs/cms-link.md)
 * [cms-link.md](../../../ui/docs/cms-link.md)
@@ -64,6 +73,10 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 * [cms-link.md](../../../Xot/docs/cms-link.md)
 * [cms-link.md](../../../User/docs/cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
+<<<<<<< HEAD
 * [cms-link.md](../../../Lang/docs/cms-link.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [cms-link.md](../../../Lang/docs/cms-link.md)
+>>>>>>> 3792da0d (Check & fix styling)

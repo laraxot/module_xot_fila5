@@ -14,6 +14,7 @@ uses(TestCase::class);
 <<<<<<< HEAD
 /**
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
 <<<<<<< HEAD
 /**
@@ -24,6 +25,10 @@ uses(TestCase::class);
 /*
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+/*
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
  * Il **codice** dei moduli non nomina il progetto ospite.
  *
  * I moduli vivono in piu' progetti: un nome di progetto nel codice li rende portabili
@@ -59,6 +64,7 @@ test('nessun file php dei moduli nomina un progetto ospite', function (): void {
 <<<<<<< HEAD
             if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
 <<<<<<< HEAD
             if (preg_match('/'.preg_quote($name, '/').'/i', $source) === 1) {
@@ -69,6 +75,10 @@ test('nessun file php dei moduli nomina un progetto ospite', function (): void {
             if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+            if (1 === preg_match('/'.preg_quote($name, '/').'/i', $source)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 $offenders[] = str_replace(base_path().'/', '', $file).' → '.$name;
 
                 break;
@@ -94,6 +104,7 @@ test('il nome del file sqlite di test non e cablato', function (): void {
 <<<<<<< HEAD
         if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
 <<<<<<< HEAD
         if (preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source) === 1) {
@@ -104,6 +115,10 @@ test('il nome del file sqlite di test non e cablato', function (): void {
         if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match("/database_path\(\s*'[a-z_]*\.sqlite'\s*\)/i", $source)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $offenders[] = str_replace(base_path().'/', '', $file);
         }
     }
@@ -137,6 +152,7 @@ function modulePhpFiles(): array
 <<<<<<< HEAD
         if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_fO27lg
 <<<<<<< HEAD
         if (! $entry instanceof \SplFileInfo || $entry->getExtension() !== 'php') {
@@ -147,6 +163,10 @@ function modulePhpFiles(): array
         if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
 >>>>>>> .merge_file_HUDeIn
 >>>>>>> laraxot/dev
+=======
+        if (! $entry instanceof \SplFileInfo || 'php' !== $entry->getExtension()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             continue;
         }
 

@@ -14,6 +14,7 @@ uses(TestCase::class);
 <<<<<<< HEAD
 /**
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_iLgn85
 <<<<<<< HEAD
 /**
@@ -24,6 +25,10 @@ uses(TestCase::class);
 /*
 >>>>>>> .merge_file_1ZkZjM
 >>>>>>> laraxot/dev
+=======
+/*
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
  * I file citati dai `CLAUDE.md` esistono.
  *
  * I `CLAUDE.md` sono istruzioni caricate a ogni sessione: un riferimento a un file che non

@@ -49,6 +49,7 @@ class MyResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Y3fby8
 =======
@@ -68,6 +69,9 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_09SMZ1
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Form components
@@ -284,6 +288,7 @@ class QuestionChartResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Y3fby8
 =======
@@ -303,6 +308,9 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_09SMZ1
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Form components

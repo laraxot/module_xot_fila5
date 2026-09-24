@@ -163,4 +163,8 @@ Ridurre errori reali da ~74 a 0 in ~1.5 ore.
 
 ---
 
+<<<<<<< HEAD
 **Prossimo Step**: Iniziare correzioni Fase 1
+=======
+**Prossimo Step**: Iniziare correzioni Fase 1
+>>>>>>> 3792da0d (Check & fix styling)

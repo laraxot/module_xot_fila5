@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 <<<<<<< HEAD
 use Filament\Support\Components\Component;
 =======
 use Filament\Schemas\Components\Component;
 >>>>>>> laraxot/dev
+=======
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Support\Components\Component;
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
@@ -26,7 +33,21 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'name' => TextInput::make('name')->required()->maxLength(255),
+            'path' => TextInput::make('path')->required()->maxLength(255),
+            'content' => Textarea::make('content')->columnSpanFull(),
+        ];
+    }
+
+    public static function getInfolistSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             'name' => TextEntry::make('name')->columnSpanFull(),
@@ -49,18 +70,26 @@ class LogResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> laraxot/dev
+=======
+    #[\Override]
+>>>>>>> 3792da0d (Check & fix styling)
     public static function getRelations(): array
     {
         return [];
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> laraxot/dev
+=======
+    #[\Override]
+>>>>>>> 3792da0d (Check & fix styling)
     public static function getPages(): array
     {
         return [

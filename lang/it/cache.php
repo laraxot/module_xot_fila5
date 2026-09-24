@@ -9,9 +9,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'cache.navigation',
         'icon' => 'cache.navigation',
         'sort' => 90,
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +52,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -67,10 +71,13 @@ return [
             'helper_text' => 'expiration',
             'description' => 'expiration',
         ],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -118,6 +125,14 @@ return [
             'label' => 'filament:clear-cached-components',
             'icon' => 'filament:clear-cached-components',
             'tooltip' => 'filament:clear-cached-components',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Cache',
+        ],
+        'delete' => [
+            'label' => 'Elimina Cache',
+>>>>>>> 3792da0d (Check & fix styling)
         ],
     ],
 ];

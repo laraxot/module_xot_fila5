@@ -93,6 +93,7 @@ trait EnumIntegerTrait
      * @param int $value Integer value to find
      *                   =======
      * @param int $value Integer value to find
+<<<<<<< HEAD
      *                   <<<<<<< .merge_file_1jcXwV
      *                   =======
      *                   =======
@@ -109,6 +110,8 @@ trait EnumIntegerTrait
      *
      * >>>>>>> laraxot/dev
      * >>>>>>> .merge_file_cEwT4Z
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * >>>>>>> laraxot/dev
      *
@@ -133,6 +136,7 @@ trait EnumIntegerTrait
      * @param int $value Value to compare against
      *                   =======
      * @param int $value Value to compare against
+<<<<<<< HEAD
      *                   <<<<<<< .merge_file_1jcXwV
      *                   =======
      *                   =======
@@ -147,6 +151,8 @@ trait EnumIntegerTrait
      *                   >>>>>>> .merge_file_kRf6cQ
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_cEwT4Z
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      *                   >>>>>>> laraxot/dev
      */
     public function isGreaterThan(int $value): bool
@@ -162,6 +168,7 @@ trait EnumIntegerTrait
      * @param int $value Value to compare against
      *                   =======
      * @param int $value Value to compare against
+<<<<<<< HEAD
      *                   <<<<<<< .merge_file_1jcXwV
      *                   =======
      *                   =======
@@ -176,6 +183,8 @@ trait EnumIntegerTrait
      *                   >>>>>>> .merge_file_kRf6cQ
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_cEwT4Z
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      *                   >>>>>>> laraxot/dev
      */
     public function isLessThan(int $value): bool
@@ -191,6 +200,7 @@ trait EnumIntegerTrait
      * @param int $value Value to compare against
      *                   =======
      * @param int $value Value to compare against
+<<<<<<< HEAD
      *                   <<<<<<< .merge_file_1jcXwV
      *                   =======
      *                   =======
@@ -205,6 +215,8 @@ trait EnumIntegerTrait
      *                   >>>>>>> .merge_file_kRf6cQ
      *                   >>>>>>> laraxot/dev
      *                   >>>>>>> .merge_file_cEwT4Z
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      *                   >>>>>>> laraxot/dev
      */
     public function equals(int $value): bool

@@ -14,10 +14,14 @@ class GetStrBetweenStartsWithAction
     {
         $pos = mb_strpos($body, $start);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($pos === false) {
 =======
         if (false === $pos) {
 >>>>>>> laraxot/dev
+=======
+        if (false === $pos) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \Exception("Cannot find {$start} in {$body} [".__LINE__.']['.__FILE__.']');
         }
         $pos1 = mb_strpos($body, $close, $pos);
@@ -28,10 +32,14 @@ class GetStrBetweenStartsWithAction
             $open_count = mb_substr_count($body1, $open);
             $close_count = mb_substr_count($body1, $close);
 <<<<<<< HEAD
+<<<<<<< HEAD
             $length++;
 =======
             ++$length;
 >>>>>>> laraxot/dev
+=======
+            ++$length;
+>>>>>>> 3792da0d (Check & fix styling)
         } while ($open_count !== $close_count);
 
         return $body1;

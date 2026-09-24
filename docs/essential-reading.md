@@ -6,12 +6,16 @@
 
 ### 1. [README.md](./README.md) ⭐⭐⭐
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ### 1. [README.md](./readme.md) ⭐⭐⭐
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### 1. [README.md](./readme.md) ⭐⭐⭐
+>>>>>>> 3792da0d (Check & fix styling)
 **Cosa:** Entry point, panoramica generale, correzioni recenti
 **Perché:** Primo documento da leggere sempre
 **Tempo:** 5 minuti
@@ -63,12 +67,16 @@
 **Tempo:** 8 minuti
 **Creato:** 2025-11-04
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Creato:** [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Creato:** [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ```bash
 # Regola fondamentale
@@ -78,16 +86,22 @@ rm file.php.lock     # Dopo modifica
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### 10. [merge-conflict-resolution-[DATE].md](./merge-conflict-resolution-[DATE].md) ⭐⭐ 🆕
 **Cosa:** Report tecnico risoluzione 18 file con merge conflicts
 **Perché:** Case study completo, pattern da evitare
 **Tempo:** 15 minuti
 **Creato:** [DATE]
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### 10. [merge-conflict-resolution-2025-11-04.md](./merge-conflict-resolution-2025-11-04.md) ⭐⭐ 🆕
 **Cosa:** Report tecnico risoluzione 18 file con merge conflicts
 **Perché:** Case study completo, pattern da evitare
@@ -114,12 +128,16 @@ rm file.php.lock     # Dopo modifica
 ### Lessons Learned
 - [lessons-learned-2025-11-04-merge-conflicts.md](./lessons-learned-2025-11-04-merge-conflicts.md) - Processo filosofico 10-step
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [lessons-learned-[DATE]-merge-conflicts.md](./lessons-learned-[DATE]-merge-conflicts.md) - Processo filosofico 10-step
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [lessons-learned-[DATE]-merge-conflicts.md](./lessons-learned-[DATE]-merge-conflicts.md) - Processo filosofico 10-step
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🗺️ Learning Path Consigliato
 
@@ -139,12 +157,16 @@ rm file.php.lock     # Dopo modifica
 1. README.md - Check "Correzioni Recenti"
 2. merge-conflict-resolution-2025-11-04.md - Pattern errori comuni
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 2. merge-conflict-resolution-[DATE].md - Pattern errori comuni
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+2. merge-conflict-resolution-[DATE].md - Pattern errori comuni
+>>>>>>> 3792da0d (Check & fix styling)
 3. troubleshooting.md (se esiste)
 4. File specifico al problema (cerca in index.md)
 
@@ -181,6 +203,7 @@ rm file.php.lock     # Dopo modifica
 10. merge-conflict-resolution-2025-11-04.md
 11. lessons-learned-2025-11-04-merge-conflicts.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -188,6 +211,10 @@ rm file.php.lock     # Dopo modifica
 11. lessons-learned-[DATE]-merge-conflicts.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+10. merge-conflict-resolution-[DATE].md
+11. lessons-learned-[DATE]-merge-conflicts.md
+>>>>>>> 3792da0d (Check & fix styling)
 12. service-providers.md
 
 ## 🎓 Quiz Auto-Valutazione
@@ -209,6 +236,7 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 
 **Creato:** 2025-11-04
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts
 =======
@@ -221,3 +249,8 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 **Aggiornato:** Dopo risoluzione massiva merge conflicts
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Creato:** [DATE]
+**Scopo:** Ridurre cognitive load navigando 2,560+ docs
+**Aggiornato:** Dopo risoluzione massiva merge conflicts
+>>>>>>> 3792da0d (Check & fix styling)

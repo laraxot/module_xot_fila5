@@ -437,6 +437,7 @@ public function processData(): void
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -444,6 +445,10 @@ public function processData(): void
 - [Common Anti-Patterns](./common_anti_patterns.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Code Quality Standards](./code_quality_standards.md)
+- [Common Anti-Patterns](./common_anti_patterns.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
@@ -886,6 +891,7 @@ public function processData(): void
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
@@ -895,10 +901,16 @@ This document provides comprehensive performance guidelines for maintaining opti
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Code Quality Standards](./code_quality_standards.md)
 - [Common Anti-Patterns](./common_anti_patterns.md)
 - [Testing Guidelines](./testing-guidelines.md)
 
+<<<<<<< HEAD
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
+>>>>>>> 3792da0d (Check & fix styling)

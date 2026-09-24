@@ -12,6 +12,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
 // l'action del test vive in una variabile locale condivisa per riferimento. Per lo
@@ -28,6 +29,13 @@ beforeEach(function () use (&$action): void {
 });
 
 describe('Get Pdf Content By Record Action', function () use (&$action): void {
+=======
+beforeEach(function (): void {
+    $this->action = new GetPdfContentByRecordAction();
+});
+
+describe('Get Pdf Content By Record Action', function (): void {
+>>>>>>> 3792da0d (Check & fix styling)
     test('it generates pdf content from record', function (): void {
         // Arrange
         $user = UserFactory::new()->createOne([
@@ -39,6 +47,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         view()->addNamespace('user', resource_path('views'));
 
         // Act & Assert
+<<<<<<< HEAD
         try {
             app(GetPdfContentByRecordAction::class)->execute($user);
             Assert::fail('Expected exception was not thrown.');
@@ -48,14 +57,27 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
     });
 
     test('it generates correct view name', function () use (&$action): void {
+=======
+        $this->expectThrowable(\Exception::class);
+        $this->expectThrowableMessage("View 'user::user.show.pdf' not found");
+
+        app(GetPdfContentByRecordAction::class)->execute($user);
+    });
+
+    test('it generates correct view name', function (): void {
+>>>>>>> 3792da0d (Check & fix styling)
         // Arrange
         $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         $action = $this->action;
 >>>>>>> laraxot/dev
+=======
+        $action = $this->action;
+>>>>>>> 3792da0d (Check & fix styling)
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateViewName');
@@ -68,15 +90,23 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         Assert::assertEquals('user::user.show.pdf', $viewName);
     });
 
+<<<<<<< HEAD
     test('it generates correct filename for basic model', function () use (&$action): void {
+=======
+    test('it generates correct filename for basic model', function (): void {
+>>>>>>> 3792da0d (Check & fix styling)
         // Arrange
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         $action = $this->action;
 >>>>>>> laraxot/dev
+=======
+        $action = $this->action;
+>>>>>>> 3792da0d (Check & fix styling)
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
@@ -89,6 +119,7 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         Assert::assertEquals('user_123_test-user.pdf', $filename);
     });
 
+<<<<<<< HEAD
     test('it generates enhanced filename for performance models', function () use (&$action): void {
         // Arrange - Create a mock model with performance fields
 <<<<<<< HEAD
@@ -97,6 +128,11 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 =======
         $record = new class extends Model {
 >>>>>>> laraxot/dev
+=======
+    test('it generates enhanced filename for performance models', function (): void {
+        // Arrange - Create a mock model with performance fields
+        $record = new class extends Model {
+>>>>>>> 3792da0d (Check & fix styling)
             protected $table = 'test_performance';
 
             protected $fillable = ['id', 'matr', 'cognome', 'nome'];
@@ -113,9 +149,13 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         $action = $this->action;
 >>>>>>> laraxot/dev
+=======
+        $action = $this->action;
+>>>>>>> 3792da0d (Check & fix styling)
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
@@ -128,15 +168,23 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         Assert::assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename);
     });
 
+<<<<<<< HEAD
     test('it prepares correct view parameters', function () use (&$action): void {
+=======
+    test('it prepares correct view parameters', function (): void {
+>>>>>>> 3792da0d (Check & fix styling)
         // Arrange
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         $action = $this->action;
 >>>>>>> laraxot/dev
+=======
+        $action = $this->action;
+>>>>>>> 3792da0d (Check & fix styling)
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('prepareViewParameters');
@@ -160,18 +208,29 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $user = UserFactory::new()->createOne();
 
         // Act & Assert
+<<<<<<< HEAD
         try {
             app(GetPdfContentByRecordAction::class)->execute($user);
             Assert::fail('Expected exception was not thrown.');
         } catch (\Exception $e) {
             Assert::assertMatchesRegularExpression("/View 'user::user\.show\.pdf' not found/", $e->getMessage());
         }
+=======
+        $this->expectThrowable(\Exception::class);
+        $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
+
+        app(GetPdfContentByRecordAction::class)->execute($user);
+>>>>>>> 3792da0d (Check & fix styling)
     });
 
     test('it throws exception for empty html content', function (): void {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
+<<<<<<< HEAD
         Assert::markTestSkipped('Requires view mocking infrastructure');
+=======
+        $this->skipTest('Requires view mocking infrastructure');
+>>>>>>> 3792da0d (Check & fix styling)
     });
 
     test('it uses custom filename when provided', function (): void {
@@ -180,12 +239,18 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $customFilename = 'custom-report.pdf';
 
         // Act & Assert - Should use custom filename in error message
+<<<<<<< HEAD
         try {
             app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
             Assert::fail('Expected exception was not thrown.');
         } catch (\Exception $e) {
             Assert::assertInstanceOf(\Exception::class, $e);
         }
+=======
+        $this->expectThrowable(\Exception::class);
+
+        app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
+>>>>>>> 3792da0d (Check & fix styling)
     });
 
     test('it handles from record convenience method', function (): void {
@@ -194,23 +259,38 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $filename = 'convenience-test.pdf';
 
         // Act & Assert
+<<<<<<< HEAD
         try {
             app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
             Assert::fail('Expected exception was not thrown.');
         } catch (\Exception $e) {
             Assert::assertMatchesRegularExpression("/View 'user::user\.show\.pdf' not found/", $e->getMessage());
         }
+=======
+        $this->expectThrowable(\Exception::class);
+        $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
+
+        app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
+>>>>>>> 3792da0d (Check & fix styling)
     });
 
     test('it logs errors when pdf generation fails', function (): void {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
+<<<<<<< HEAD
         Assert::markTestSkipped('Requires HTML2PDF mocking infrastructure');
+=======
+        $this->skipTest('Requires HTML2PDF mocking infrastructure');
+>>>>>>> 3792da0d (Check & fix styling)
     });
 
     test('it returns valid pdf content when view exists', function (): void {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
+<<<<<<< HEAD
         Assert::markTestSkipped('Requires test view infrastructure');
+=======
+        $this->skipTest('Requires test view infrastructure');
+>>>>>>> 3792da0d (Check & fix styling)
     });
 });

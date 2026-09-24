@@ -8,22 +8,31 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ComponentFileData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 class GetComponentsAction
 {
     use QueueableAction;
@@ -61,6 +70,7 @@ class GetComponentsAction
                 $content = File::get($components_json),
                 '['.__LINE__.']['.class_basename(static::class).']',
             );
+<<<<<<< HEAD
             $decoded = json_decode($content, true);
             /** @var array<int, array<string, mixed>> $comps */
             $comps = is_array($decoded) ? array_values($decoded) : [];
@@ -73,6 +83,13 @@ class GetComponentsAction
             // mancanti): rigenerare invece di far fallire il boot dell'app con
             // "Typed property ...::$name must not be accessed before
             // initialization" alla prima lettura di un DTO incompleto.
+=======
+            $decoded = json_decode($content, false);
+            /** @var array<int, mixed> $comps */
+            $comps = is_array($decoded) ? array_values($decoded) : [];
+
+            return ComponentFileData::collection($comps);
+>>>>>>> 3792da0d (Check & fix styling)
         }
 
         $files = File::allFiles($path);
@@ -80,10 +97,14 @@ class GetComponentsAction
 
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
 =======
             if ('php' !== $file->getExtension()) {
 >>>>>>> laraxot/dev
+=======
+            if ('php' !== $file->getExtension()) {
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
@@ -99,6 +120,7 @@ class GetComponentsAction
             $comp_ns = $namespace.'\\'.$class_name;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($relative_path !== '') {
 =======
             if ('' !== $relative_path) {
@@ -106,6 +128,12 @@ class GetComponentsAction
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
                     ->map(fn (string $item) => Str::slug(Str::snake($item)))
+=======
+            if ('' !== $relative_path) {
+                $comp_name = '';
+                $piece = collect(explode('\\', $relative_path))
+                    ->map(fn ($item) => Str::slug(Str::snake($item)))
+>>>>>>> 3792da0d (Check & fix styling)
                     ->implode('.');
 
                 $comp_name = $prefix.$piece.'.'.Str::slug(Str::snake(Str::replace('\\', ' ', $class_name)));
@@ -154,6 +182,7 @@ class GetComponentsAction
 
         return ComponentFileData::collection($comps);
     }
+<<<<<<< HEAD
 
     /**
 <<<<<<< HEAD
@@ -183,4 +212,6 @@ class GetComponentsAction
 
         return true;
     }
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 }

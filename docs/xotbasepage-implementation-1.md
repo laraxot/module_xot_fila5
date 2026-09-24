@@ -178,6 +178,7 @@ class DashboardSettingsPolicy
 ## ATTENZIONE: errori critici da evitare
 - NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 =======
 <<<<<<< HEAD
@@ -186,3 +187,6 @@ class DashboardSettingsPolicy
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
+>>>>>>> 3792da0d (Check & fix styling)

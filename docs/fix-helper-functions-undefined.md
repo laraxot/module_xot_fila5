@@ -359,12 +359,16 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [Xot Helpers Documentation](./helpers.md)
 - [Tenant Helper Dependency](../../Tenant/docs/helper-functions-dependency.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 
@@ -483,6 +487,7 @@ $models = $action->execute($moduleName);
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 =======
 <<<<<<< HEAD
@@ -491,3 +496,6 @@ $models = $action->execute($moduleName);
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+>>>>>>> 3792da0d (Check & fix styling)

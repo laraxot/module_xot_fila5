@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Unit;
 <<<<<<< HEAD
 use Mockery;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_hANHCq
 <<<<<<< HEAD
 use Mockery;
@@ -14,6 +15,8 @@ use Mockery;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_EPx84w
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\TestCase;
@@ -24,6 +27,7 @@ afterEach(function (): void {
 <<<<<<< HEAD
     Mockery::close();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_hANHCq
 <<<<<<< HEAD
     Mockery::close();
@@ -34,6 +38,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_EPx84w
 >>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 });
 
 /** @return array{string, string} */

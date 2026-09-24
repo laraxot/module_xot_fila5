@@ -78,6 +78,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'quaeris'; // Module-specific connection
 =======
 <<<<<<< HEAD
@@ -86,6 +87,9 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     protected $connection = 'module_name'; // Module-specific connection
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    protected $connection = 'module_name'; // Module-specific connection
+>>>>>>> 3792da0d (Check & fix styling)
 
     protected $with = [
         'extra', // Always load extra fields
@@ -134,9 +138,12 @@ The module BaseModel is where you add:
 - Module-specific configurations
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Rule 4: Use Contracts for Auditing PHPDocs (CRITICAL)
 Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties managed by the `Updater` trait (`creator`, `updater`, `deleter`). NEVER use the concrete `Profile` model of the module to avoid tight coupling and ensure modular decoupling.
 
@@ -150,8 +157,11 @@ Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties
 class Event extends BaseModel { ... }
 ```
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -221,6 +231,7 @@ class SurveyPdf extends BaseModel
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Predictable patterns
 =======
 <<<<<<< HEAD
@@ -229,6 +240,9 @@ class SurveyPdf extends BaseModel
 - <nome progetto>able patterns
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- <nome progetto>able patterns
+>>>>>>> 3792da0d (Check & fix styling)
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -280,6 +294,7 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 - **DRY Compliance**: No duplicated base functionality
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 =======
 <<<<<<< HEAD
@@ -288,3 +303,6 @@ This pattern ensures that every model in the system follows the same foundationa
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+>>>>>>> 3792da0d (Check & fix styling)

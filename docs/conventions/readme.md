@@ -12,6 +12,7 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_q94CD5
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 =======
 >>>>>>> .merge_file_osJoG9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -100,6 +103,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_q94CD5
@@ -192,3 +196,5 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 =======
 >>>>>>> .merge_file_osJoG9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

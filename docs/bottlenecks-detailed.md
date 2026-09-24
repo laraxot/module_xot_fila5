@@ -287,6 +287,7 @@ trait HasXotOptimizations
 * [bottlenecks_detailed.md](../../../Job/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](../../../Media/docs/bottlenecks_detailed.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -295,12 +296,18 @@ trait HasXotOptimizations
 * [bottlenecks_detailed.md](../../../media/docs/bottlenecks_detailed.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [bottlenecks_detailed.md](../../../xot/docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../job/docs/bottlenecks_detailed.md)
+* [bottlenecks_detailed.md](../../../media/docs/bottlenecks_detailed.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Versione Incoming
 
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -309,3 +316,6 @@ trait HasXotOptimizations
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 3792da0d (Check & fix styling)

@@ -102,23 +102,30 @@ Ogni blocco deve seguire questa struttura:
 
 ## Collegamenti tra versioni di blocks.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [blocks.md](../../../xot/docs/blocks.md)
 * [blocks.md](../../../user/docs/blocks.md)
 * [blocks.md](../../../ui/docs/blocks.md)
 * [blocks.md](../../../cms/docs/blocks.md)
 * [blocks.md](../../../../themes/one/docs/blocks.md)
 * [blocks.md](../../../../themes/one/docs/components/blocks.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [blocks.md](../../../Xot/docs/blocks.md)
 * [blocks.md](../../../User/docs/blocks.md)
 * [blocks.md](../../../UI/docs/blocks.md)
 * [blocks.md](../../../Cms/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/blocks.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 =======
 <<<<<<< HEAD
@@ -127,3 +134,6 @@ Ogni blocco deve seguire questa struttura:
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [blocks.md](../../../../Themes/One/docs/components/blocks.md)
+>>>>>>> 3792da0d (Check & fix styling)

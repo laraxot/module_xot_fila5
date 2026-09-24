@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'values' => [
         'yes' => [
             'label' => 'Sì',
@@ -17,6 +18,8 @@ return [
             'description' => 'Valore negativo',
         ],
     ],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     'label' => 'Sì/No',
     'options' => [
         'yes' => 'Sì',

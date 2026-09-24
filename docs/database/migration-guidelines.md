@@ -43,6 +43,7 @@ return new class extends XotBaseMigration
 - [User Module Database Errors](../../User/project_docs/DATABASE_ERRORS.md)
 - [Xot Base Classes](../XOT_BASE_CLASSES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Code Quality](code_quality.md)
 - [Root Documentation](../../../../project_docs/collegamenti-documentazione.md)
 - [Database Guidelines](database_guidelines.md)
@@ -57,3 +58,8 @@ return new class extends XotBaseMigration
 - [Database Guidelines](../DATABASE_GUIDELINES.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Code Quality](../CODE_QUALITY.md)
+- [Root Documentation](../../../../project_docs/collegamenti-documentazione.md)
+- [Database Guidelines](../DATABASE_GUIDELINES.md)
+>>>>>>> 3792da0d (Check & fix styling)

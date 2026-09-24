@@ -6,6 +6,10 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+>>>>>>> 3792da0d (Check & fix styling)
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -17,12 +21,16 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Handle an incoming request.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param \Closure(Request):Response $next
      *                                         =======
      * @param \Closure(Request):Response $next
      *                                         >>>>>>> laraxot/dev
+=======
+     * @param \Closure(Request):Response $next
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function handle(Request $request, \Closure $next): Response
     {
@@ -118,12 +126,16 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Logga l'uso della memoria.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
      *                                                                                                                                                                                                       =======
      * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
      *                                                                                                                                                                                                       >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $metrics
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
@@ -131,11 +143,19 @@ class FilamentMemoryMonitorMiddleware
 
         $message = sprintf(
             'Filament Memory Usage: %sMB used, %sMB peak, %sms execution time - %s %s',
+<<<<<<< HEAD
             (string) $metrics['memory_used_mb'],
             (string) $metrics['memory_peak_mb'],
             (string) $metrics['execution_time_ms'],
             (string) $metrics['method'],
             (string) $metrics['url']
+=======
+            SafeStringCastAction::cast($metrics['memory_used_mb']),
+            SafeStringCastAction::cast($metrics['memory_peak_mb']),
+            SafeStringCastAction::cast($metrics['execution_time_ms']),
+            SafeStringCastAction::cast($metrics['method']),
+            SafeStringCastAction::cast($metrics['url'])
+>>>>>>> 3792da0d (Check & fix styling)
         );
 
         // Aggiungi contesto aggiuntivo
@@ -157,12 +177,16 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Determina il livello di log basato sulle metriche.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
      *                                                                                                                                                                                                       =======
      * @param array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null} $metrics
      *                                                                                                                                                                                                       >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $metrics
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function determineLogLevel(array $metrics): string
     {

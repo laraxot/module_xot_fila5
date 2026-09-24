@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_eFPFNF
 <<<<<<< HEAD
@@ -40,11 +41,17 @@ updated: 2026-08-24
 >>>>>>> .merge_file_T4nYo9
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# _scraping
+
+<!-- Contenuto migrato da _docs/_scraping.txt -->
+>>>>>>> 3792da0d (Check & fix styling)
 
 Using Laravel and Symfony/panther To Scrape Javascript Websites
 https://webmobtuts.com/backend-development/using-laravel-and-symfony-panther-to-scrape-javascript-websites/
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -68,3 +75,7 @@ https://github.com/oscarotero/Embed  !!!
 https://github.com/oscarotero/Embed  !!!
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+https://github.com/oscarotero/Embed  !!!
+>>>>>>> 3792da0d (Check & fix styling)

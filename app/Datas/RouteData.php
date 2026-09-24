@@ -15,6 +15,7 @@ class RouteData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $prefix  Prefisso per tutte le rotte
      * @param  array<int, string>  $middleware  Middleware applicati a tutte le rotte
      * @param  string  $namespace  Namespace per i controller
@@ -22,13 +23,18 @@ class RouteData extends Data
      * @param  array<int, string>  $except_verify  Rotte eccettuate dalla verifica
      * @param  bool  $enable  Se le rotte sono abilitate
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string             $prefix        Prefisso per tutte le rotte
      * @param array<int, string> $middleware    Middleware applicati a tutte le rotte
      * @param string             $namespace     Namespace per i controller
      * @param bool               $use_passport  Se utilizzare Passport per l'autenticazione API
      * @param array<int, string> $except_verify Rotte eccettuate dalla verifica
      * @param bool               $enable        Se le rotte sono abilitate
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(
         public readonly string $prefix = '',
@@ -38,11 +44,16 @@ class RouteData extends Data
         public readonly array $except_verify = [],
         public readonly bool $enable = true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Create a new instance of RouteData with default values.
@@ -50,9 +61,13 @@ class RouteData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
 >>>>>>> laraxot/dev
+=======
+        return new self();
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

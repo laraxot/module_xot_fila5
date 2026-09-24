@@ -5,12 +5,16 @@ Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare i
 
 ## Prerequisiti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
+>>>>>>> 3792da0d (Check & fix styling)
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
 
 ## Processo di Implementazione
@@ -60,13 +64,20 @@ Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeI
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerBladeIcons.md).
 
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
+<<<<<<< HEAD
 - [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -13,10 +13,13 @@ use Filament\Tables\Filters\SelectFilter as FilamentSelectFilter;
  * This class wraps Filament's SelectFilter to provide a XotBase layer.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseSelectFilter extends FilamentSelectFilter {}
 =======
 <<<<<<< .merge_file_piNt5Q
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 abstract class XotBaseSelectFilter extends FilamentSelectFilter
 {
 }
@@ -29,9 +32,12 @@ abstract class XotBaseSelectFilter extends FilamentSelectFilter
 abstract class XotBaseSelectFilter extends FilamentSelectFilter {}
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 abstract class XotBaseSelectFilter extends FilamentSelectFilter
 {
 }
 >>>>>>> .merge_file_S9LrYE
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

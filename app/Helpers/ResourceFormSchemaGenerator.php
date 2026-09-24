@@ -7,9 +7,12 @@ namespace Modules\Xot\Helpers;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\error_log;
 use function Safe\file_get_contents;
@@ -19,18 +22,24 @@ use function Safe\preg_match;
 use function Safe\preg_replace;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class ResourceFormSchemaGenerator
 {
     /**
      * @param  class-string  $resourceClass
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 class ResourceFormSchemaGenerator
 {
     /**
      * @param class-string $resourceClass
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function generateFormSchema(string $resourceClass): bool
     {
@@ -43,10 +52,14 @@ class ResourceFormSchemaGenerator
             $filename = $reflection->getFileName();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($filename === false) {
 =======
             if (false === $filename) {
 >>>>>>> laraxot/dev
+=======
+            if (false === $filename) {
+>>>>>>> 3792da0d (Check & fix styling)
                 throw new \RuntimeException("Failed to get filename for class: {$resourceClass}");
             }
 

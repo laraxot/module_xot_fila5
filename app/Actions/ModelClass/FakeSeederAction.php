@@ -15,13 +15,20 @@ class FakeSeederAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     private const int MAX_RECORDS = 200;
 
     private const int CHUNK_SIZE = 50;
+=======
+    private const MAX_RECORDS = 200;
+
+    private const CHUNK_SIZE = 50;
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Execute the fake data seeding process.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass The fully qualified model class name
@@ -30,6 +37,10 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass The fully qualified model class name
      * @param int<1, max>         $qty        Number of records to generate
      *                                        >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model> $modelClass The fully qualified model class name
+     * @param int<1, max>         $qty        Number of records to generate
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @throws \InvalidArgumentException When model class is invalid
      */
@@ -53,7 +64,16 @@ class FakeSeederAction
         $chunks = $rows->chunk(self::CHUNK_SIZE);
 
         $chunks->each(function (Collection $chunk) use ($modelClass): void {
+<<<<<<< HEAD
             $data = $chunk->map(fn (Model $item) => $item->getAttributes())->all();
+=======
+            /** @var array<int, array<string, mixed>> $data */
+            $data = $chunk->map(function ($item) {
+                assert($item instanceof Model);
+
+                return $item->getAttributes();
+            })->all();
+>>>>>>> 3792da0d (Check & fix styling)
             $modelClass::insert($data);
         });
 
@@ -67,6 +87,7 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass
@@ -80,6 +101,14 @@ class FakeSeederAction
      * @return Factory<Model>
      * @return Factory<Model>
      *                        >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model> $modelClass
+     *
+     * @throws \RuntimeException
+     *
+     * @return Factory<Model>
+     * @return Factory<Model>
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function getModelFactory(string $modelClass): Factory
     {
@@ -96,6 +125,7 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass
@@ -104,6 +134,10 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass
      * @param int<1, max>         $count
      *                                        >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model> $modelClass
+     * @param int<1, max>         $count
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -117,6 +151,7 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param class-string<Model> $modelClass
@@ -125,6 +160,10 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass
      * @param int<1, max>         $qty
      *                                        >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model> $modelClass
+     * @param int<1, max>         $qty
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {

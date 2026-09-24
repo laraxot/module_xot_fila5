@@ -12,23 +12,31 @@ use Modules\Xot\Database\Factories\FeedFactory;
 /**
  * Modules\Xot\Models\Feed.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @property string      $id
  *                                   =======
  * @property string      $id
  *                                   >>>>>>> laraxot/dev
+=======
+ * @property string      $id
+>>>>>>> 3792da0d (Check & fix styling)
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @method static FeedFactory          factory($count = null, $state = [])
  *                                                                         =======
  * @method static FeedFactory          factory($count = null, $state = [])
  *                                                                         >>>>>>> laraxot/dev
+=======
+ * @method static FeedFactory          factory($count = null, $state = [])
+>>>>>>> 3792da0d (Check & fix styling)
  * @method static Builder<static>|Feed newModelQuery()
  * @method static Builder<static>|Feed newQuery()
  * @method static Builder<static>|Feed query()

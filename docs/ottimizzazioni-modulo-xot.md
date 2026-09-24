@@ -343,16 +343,21 @@ docs/
 ### Documentazione Correlata
 - [README](../README.md) - Panoramica modulo Xot
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [README](../readme.md) - Panoramica modulo Xot
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [README](../readme.md) - Panoramica modulo Xot
+>>>>>>> 3792da0d (Check & fix styling)
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 - [Best Practices](./core/best-practices.md) - Best practices consolidate
 
 ### Documentazione Root
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -368,6 +373,8 @@ docs/
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Ultimo aggiornamento:** 2025-01-06
 - [docs/ottimizzazioni-sistema.md](../../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
 - [docs/architettura-moduli.md](../../../../docs/architettura-moduli.md) - Architettura moduli
@@ -375,6 +382,10 @@ docs/
 ---
 
 **Stato:** In implementazione
+<<<<<<< HEAD
 **Responsabile:** Team Sviluppo Xot
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Responsabile:** Team Sviluppo Xot
+>>>>>>> 3792da0d (Check & fix styling)

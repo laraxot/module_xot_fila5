@@ -16,12 +16,17 @@ final class MailData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, int|string>  $smtpConfig
      * @param  array<string, string>  $fromConfig
 =======
      * @param array<string, int|string> $smtpConfig
      * @param array<string, string>     $fromConfig
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, int|string> $smtpConfig
+     * @param array<string, string>     $fromConfig
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function __construct(
         public readonly string $driver = 'smtp',
@@ -39,11 +44,16 @@ final class MailData extends Data
         public readonly ?string $replyTo = null,
         public readonly bool $verifyPeer = true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> laraxot/dev
+=======
+    ) {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Create a new instance of MailData with default values.
@@ -51,9 +61,13 @@ final class MailData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
 >>>>>>> laraxot/dev
+=======
+        return new self();
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

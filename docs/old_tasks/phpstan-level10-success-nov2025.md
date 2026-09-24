@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_qgRaEA
 =======
@@ -26,6 +27,8 @@ Vedi il file canonico: [phpstan-level10-success-nov.md](./phpstan-level10-succes
 <<<<<<< .merge_file_qgRaEA
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # PHPStan Level 10 - Successo Totale (Novembre 2025)
 
 ## 🎯 Obiettivo Raggiunto
@@ -178,6 +181,9 @@ Risultato ottenuto seguendo rigorosamente:
 
 **Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_16IGFh
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

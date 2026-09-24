@@ -46,6 +46,7 @@ class ArtisanService
 <<<<<<< HEAD
                 if ($module_name !== '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
 <<<<<<< HEAD
                 if ($module_name !== '') {
@@ -56,6 +57,10 @@ class ArtisanService
                 if ('' !== $module_name) {
 >>>>>>> .merge_file_05xIrP
 >>>>>>> laraxot/dev
+=======
+                if ('' !== $module_name) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
@@ -152,6 +157,7 @@ class ArtisanService
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
@@ -162,6 +168,10 @@ class ArtisanService
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> .merge_file_05xIrP
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -225,6 +235,7 @@ class ArtisanService
 <<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
 <<<<<<< HEAD
             if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
@@ -235,6 +246,10 @@ class ArtisanService
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_05xIrP
 >>>>>>> laraxot/dev
+=======
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 // Parameter #1 $paths of static method Illuminate\Filesystem\Filesystem::delete() expects array|string, Symfony\Component\Finder\SplFileInfo given.
                 echo '<br/>'.$file->getRealPath();
 
@@ -253,6 +268,7 @@ class ArtisanService
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
@@ -263,6 +279,10 @@ class ArtisanService
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_05xIrP
 >>>>>>> laraxot/dev
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -281,6 +301,7 @@ class ArtisanService
 <<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
 <<<<<<< HEAD
             if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
@@ -291,6 +312,10 @@ class ArtisanService
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_05xIrP
 >>>>>>> laraxot/dev
+=======
+            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -306,6 +331,7 @@ class ArtisanService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
 <<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
@@ -316,6 +342,10 @@ class ArtisanService
      * @param array<string, mixed> $arguments
 >>>>>>> .merge_file_05xIrP
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $arguments
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -328,6 +358,7 @@ class ArtisanService
 <<<<<<< HEAD
         } catch (Exception $exception) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_1uWCo3
 <<<<<<< HEAD
         } catch (Exception $exception) {
@@ -338,6 +369,10 @@ class ArtisanService
         } catch (\Exception $exception) {
 >>>>>>> .merge_file_05xIrP
 >>>>>>> laraxot/dev
+=======
+        } catch (\Exception $exception) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             // throw new Exception('['.__LINE__.']['.class_basename(__CLASS__).']');
             return '[<pre>'.$exception->getMessage().'</pre>]';
 

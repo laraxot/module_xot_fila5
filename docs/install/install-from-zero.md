@@ -177,6 +177,7 @@ create Folders :
 
 ~~~ bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -188,13 +189,18 @@ create Folders :
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  git submodule add https://github.com/laraxot/module_xot_fila5.git Xot
  git submodule add https://github.com/laraxot/module_tenant_fila5.git Tenant
  git submodule add https://github.com/laraxot/module_user_fila5.git User
  git submodule add https://github.com/laraxot/module_notify_fila5.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila5.git UI
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ~~~
 
 from folder laravel
@@ -203,6 +209,7 @@ git submodule add  https://github.com/laraxot/filament-modules.git  packages/sav
 
 composer update -W (--with-all-dependencies)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ~~~
 =======
 <<<<<<< HEAD
@@ -211,3 +218,6 @@ composer update -W (--with-all-dependencies)
 ~~~
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+~~~
+>>>>>>> 3792da0d (Check & fix styling)

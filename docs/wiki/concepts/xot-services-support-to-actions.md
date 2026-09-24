@@ -36,6 +36,7 @@ Deleted dead `app/Services/` and `app/Support/` files that had zero callers or w
 | `Modules/Notify/tests/Unit/Actions/NotifyTheme/Attachment/PdfTest.php` | assertion updated for `HtmlAction` import |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_yMoQNA
 =======
@@ -54,6 +55,8 @@ Deleted dead `app/Services/` and `app/Support/` files that had zero callers or w
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_eOwtVw
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Quality gates
 
 - **phpstan**: pre-existing 58 errors, none introduced by this change

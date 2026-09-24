@@ -8,30 +8,40 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\File;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_apVbWZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match_all;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_6SIgjt
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\preg_match_all;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_apVbWZ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_6SIgjt
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 /**
  * Replaces Modules\Xot\Services\ArtisanService::errorShow().
@@ -53,6 +63,7 @@ class ShowArtisanErrorLogAction
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_apVbWZ
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
@@ -63,6 +74,10 @@ class ShowArtisanErrorLogAction
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> .merge_file_6SIgjt
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $content = File::get(storage_path('logs/'.$log));
         }
 

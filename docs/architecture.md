@@ -99,6 +99,7 @@ abstract class XotBaseResource extends Resource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -112,6 +113,9 @@ abstract class XotBaseResource extends Resource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return static::getFormSchemaImplementation();
     }
@@ -150,9 +154,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 - Gestione centralizzata degli asset
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## 📦 **Gestione Dipendenze (composer.json)**
 
 Il file `composer.json` del modulo Xot è fondamentale per definire le sue dipendenze e configurazioni. Segue i principi di gestione delle dipendenze stabiliti per l'intero ecosistema Laraxot.
@@ -172,8 +179,11 @@ Il file `composer.json` del modulo Xot è fondamentale per definire le sue dipen
 - **Script di Qualità**: Include script standardizzati per `analyse`, `test`, `test-coverage` e `format`, promuovendo l'automazione del controllo qualità.
 - **Stabilità**: `minimum-stability: "dev"` e `prefer-stable: true` bilanciano la necessità di utilizzare versioni in sviluppo con la preferenza per versioni stabili.
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## 🔄 **Flusso di Esecuzione**
 
 ### **1. Bootstrap Applicazione**
@@ -428,18 +438,23 @@ test('all models extend base model', function () {
 
 - [**README.md**](README.md) - Documentazione principale del modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> 3792da0d (Check & fix styling)
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 =======
 <<<<<<< HEAD
@@ -448,3 +463,6 @@ test('all models extend base model', function () {
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> 3792da0d (Check & fix styling)

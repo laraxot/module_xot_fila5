@@ -1,6 +1,7 @@
 # Risoluzione dei Loghi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_7Z26zp
@@ -34,6 +35,8 @@ Story: `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
 >>>>>>> .merge_file_MJXvAn
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
 
 ## Processo di Risoluzione
@@ -137,6 +140,7 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -149,6 +153,8 @@ Per la versione dark:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Gestione Domini e Configurazioni](domain_configuration.md)
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](module_structure.md)
@@ -161,8 +167,11 @@ Per la versione dark:
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
 - [Regole per i Namespace](NAMESPACE-RULES.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -171,9 +180,12 @@ Per la versione dark:
 - [Struttura dei Moduli in il progetto](../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../docs/architettura-folio-volt.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -181,13 +193,17 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../../docs/architettura-folio-volt.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
 ### Nota Importante
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
 =======
 <<<<<<< HEAD
@@ -196,3 +212,6 @@ Questo documento è parte della documentazione generale del modulo Xot e descriv
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
+>>>>>>> 3792da0d (Check & fix styling)

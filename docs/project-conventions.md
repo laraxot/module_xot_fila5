@@ -14,12 +14,16 @@
    - ✅ CORRETTO: `phpstan-fixes.md`, `roadmap.md`
    - ❌ SBAGLIATO: `phpstan-fixes-2025-10-10.md`, `ROADMAP_2025.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
    - ❌ SBAGLIATO: `phpstan-fixes-[DATE].md`, `ROADMAP_2025.md`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   - ❌ SBAGLIATO: `phpstan-fixes-[DATE].md`, `ROADMAP_2025.md`
+>>>>>>> 3792da0d (Check & fix styling)
    - **Motivo**: Le date nei nomi file causano duplicazione, rendono difficile il refactoring e non riflettono lo stato corrente del documento
 
 3. **Usa trattini `-` per separare parole** (non underscore `_`)
@@ -65,6 +69,7 @@
    - ✅ CORRETTO: `[Esempio](./examples/example.md)`
    - ❌ SBAGLIATO: `[Doc](/var/www/laravel/Modules/Xot/docs/architecture.md)`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -73,6 +78,11 @@
    - ❌ SBAGLIATO: `[Doc](/var/www/laravel/modules/xot/docs/architecture.md)`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   - ✅ CORRETTO: `[Documentazione](../xot/docs/architecture.md)`
+   - ✅ CORRETTO: `[Esempio](./examples/example.md)`
+   - ❌ SBAGLIATO: `[Doc](/var/www/laravel/modules/xot/docs/architecture.md)`
+>>>>>>> 3792da0d (Check & fix styling)
 
 2. **Portabilità totale**
    - I link devono funzionare ovunque il progetto venga clonato
@@ -254,6 +264,7 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 
 **Last Updated**: 2025-10-11
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ ACTIVE STANDARD
 **Compliance**: MANDATORY for all modules and themes
 =======
@@ -266,3 +277,8 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 **Compliance**: MANDATORY for all modules and themes
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+**Status**: ✅ ACTIVE STANDARD
+**Compliance**: MANDATORY for all modules and themes
+>>>>>>> 3792da0d (Check & fix styling)

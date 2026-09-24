@@ -125,10 +125,13 @@ XotBaseModel (Xot) - Base standard
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_w7dI85
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Model Inheritance Complete Fix](../../docs/MODEL_INHERITANCE_COMPLETE_FIX.md)
 - [DRY/KISS Analysis](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 - [Model Inheritance Complete Fix](../../../docs/model_inheritance_complete_fix.md)
@@ -136,6 +139,7 @@ XotBaseModel (Xot) - Base standard
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 =======
@@ -175,3 +179,6 @@ XotBaseModel (Xot) - Base standard
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+>>>>>>> 3792da0d (Check & fix styling)

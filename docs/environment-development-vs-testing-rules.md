@@ -4,11 +4,14 @@
 In Laraxot è fondamentale comprendere la differenza tra le configurazioni di ambiente di sviluppo e di test, specialmente riguardo all'uso dei database.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7aud6t
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## REGOLA FONDAMENTALE: .env.testing è COPIA CARBONE del .env
 
 ### Principio
@@ -84,9 +87,12 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 - **Manutenibilità**: Cambiamenti al .env si riflettono automaticamente nei test
 - **TenantServiceProvider**: Gestisce automaticamente le connessioni modulo
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Configurazione per Sviluppo (.env.development)
 
 ### Database
@@ -108,6 +114,7 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 ### Database
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
 =======
 <<<<<<< .merge_file_7aud6t
@@ -120,6 +127,9 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+=======
+- Database con suffisso "_test" (es. `healthcare_app_data_test`, `healthcare_app_user_test`)
+>>>>>>> 3792da0d (Check & fix styling)
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione
@@ -150,6 +160,7 @@ Questa differenziazione rispetta i principi fondamentali:
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 =======
 <<<<<<< .merge_file_7aud6t
@@ -158,6 +169,8 @@ Questa differenziazione rispetta i principi fondamentali:
 <<<<<<< HEAD
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 
 ## REGOLA CRITICA: TestCase setUp()
@@ -242,7 +255,11 @@ Il `setUp()` deve essere usato SOLO per:
 - Configurare il tema (xra.pub_theme)
 - Configurare il modulo principale (xra.main_module)
 - Eseguire migrate:fresh e module:migrate (una sola volta)
+<<<<<<< HEAD
 - Non MAI per configurare connessioni database!
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I0KjwL
 >>>>>>> laraxot/dev
+=======
+- Non MAI per configurare connessioni database!
+>>>>>>> 3792da0d (Check & fix styling)

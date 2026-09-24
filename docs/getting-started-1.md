@@ -79,6 +79,7 @@ npm run dev
 
 ## Collegamenti tra versioni di getting-started.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -94,6 +95,8 @@ npm run dev
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 * [getting-started.md](../../../gdpr/docs/getting-started.md)
 * [getting-started.md](../../../xot/docs/getting-started.md)
 * [getting-started.md](../../../ui/docs/getting-started.md)
@@ -102,6 +105,10 @@ npm run dev
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 3792da0d (Check & fix styling)

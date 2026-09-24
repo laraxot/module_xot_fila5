@@ -59,6 +59,7 @@ public function registerTranslations(): void
 - Questa regola va rispettata anche da tutte le classi che estendono il provider
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
 =======
 <<<<<<< HEAD
@@ -68,6 +69,10 @@ public function registerTranslations(): void
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
+**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Esempio di Override Sicuro
 ```php
@@ -89,6 +94,7 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 
 ## Collegamenti e Backlink
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
 =======
@@ -96,6 +102,8 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [COMPONENTI_PERSONALIZZATI.md](./componenti_personalizzati.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
 - [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md) — Standardizzazione metodi colonne Filament
@@ -104,8 +112,11 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md) — Tracciamento conflitti risolti su ServiceProvider
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md) — Standardizzazione metodi colonne Filament
 
 ---
@@ -113,6 +124,7 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 **Ultimo aggiornamento:** 2025-05-13
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
 =======
 <<<<<<< HEAD
@@ -121,3 +133,6 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
+>>>>>>> 3792da0d (Check & fix styling)

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * @see https://github.com/paulvl/backup/blob/master/src/Console/Commands/MysqlDump.php
  */
@@ -11,17 +15,23 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\exec;
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\exec;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 class DatabaseBackUpCommand extends Command
 {
     /**
@@ -40,20 +50,32 @@ class DatabaseBackUpCommand extends Command
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Create a new command instance.
      */
 
     /**
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Execute the console command.
      */
     public function handle(): void
     {
         $filename = 'backup-'.Carbon::now()->format('Y-m-d').'.gz';
+<<<<<<< HEAD
         $backupPath = storage_path('app/backup/'.$filename);
         Assert::string(
             $backupPath = Str::replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $backupPath),
+=======
+        $backup_path = storage_path('app/backup/'.$filename);
+        Assert::string(
+            $backup_path = Str::replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $backup_path),
+>>>>>>> 3792da0d (Check & fix styling)
             'wip',
         );
         Assert::string($user = config('database.connections.mysql.username'));
@@ -70,7 +92,11 @@ class DatabaseBackUpCommand extends Command
             ' '.
             $database.
             '  | gzip > '.
+<<<<<<< HEAD
             $backupPath;
+=======
+            $backup_path;
+>>>>>>> 3792da0d (Check & fix styling)
 
         $returnVar = null;
         $output = null;

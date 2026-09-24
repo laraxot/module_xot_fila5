@@ -41,6 +41,7 @@ find var/www/html/_bases/base_<nome progetto>/docs$|^docs$)"
 ## DATA IMPLEMENTAZIONE:
 2025-08-08 - Regola implementata e verificata
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## RESPONSABILITÀ:
 Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
@@ -56,3 +57,9 @@ Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
 Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+[DATE] - Regola implementata e verificata
+
+## RESPONSABILITÀ:
+Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
+>>>>>>> 3792da0d (Check & fix styling)

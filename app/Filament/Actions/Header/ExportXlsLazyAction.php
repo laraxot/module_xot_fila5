@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 =======
 <<<<<<< .merge_file_zArYCl
@@ -15,10 +16,13 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> .merge_file_3PihIp
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Header;
 
@@ -28,10 +32,13 @@ namespace Modules\Xot\Filament\Actions\Header;
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Header;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -45,21 +52,31 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 >>>>>>> .merge_file_3PihIp
 >>>>>>> laraxot/dev
+=======
+use Filament\Actions\Action;
+>>>>>>> 3792da0d (Check & fix styling)
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByQuery;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 class ExportXlsLazyAction extends XotBaseAction
+=======
+use Webmozart\Assert\Assert;
+
+class ExportXlsLazyAction extends Action
+>>>>>>> 3792da0d (Check & fix styling)
 {
     protected function setUp(): void
     {
         parent::setUp();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zArYCl
@@ -68,6 +85,8 @@ class ExportXlsLazyAction extends XotBaseAction
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $this->label((string) __('xot::actions.export_xls.label'))
             ->tooltip((string) __('xot::actions.export_xls.tooltip'))
             ->icon((string) __('xot::actions.export_xls.icon'))
@@ -76,6 +95,7 @@ class ExportXlsLazyAction extends XotBaseAction
             ->modalSubmitActionLabel((string) __('xot::actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::actions.export_xls.success'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -99,6 +119,8 @@ class ExportXlsLazyAction extends XotBaseAction
 =======
 >>>>>>> .merge_file_3PihIp
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             ->requiresConfirmation()
             ->action(static function (ListRecords $livewire) {
                 $filename =
@@ -109,6 +131,7 @@ class ExportXlsLazyAction extends XotBaseAction
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $resource = $livewire->getResource();
                 /** @var array<int|string, string> $fields */
@@ -121,12 +144,20 @@ class ExportXlsLazyAction extends XotBaseAction
                 $resource = $livewire->getResource();
                 /** @var array<int, string> $fields */
 >>>>>>> laraxot/dev
+=======
+                $resource = $livewire->getResource();
+                /** @var array<int, string> $fields */
+>>>>>>> 3792da0d (Check & fix styling)
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
                     if (is_array($rawFields)) {
                         $fields = array_map(
+<<<<<<< HEAD
                             static function (mixed $field): string {
+=======
+                            static function ($field): string {
+>>>>>>> 3792da0d (Check & fix styling)
                                 // Handle objects with __toString method
                                 if (is_object($field) && method_exists($field, '__toString')) {
                                     $stringValue = $field->__toString();
@@ -149,6 +180,7 @@ class ExportXlsLazyAction extends XotBaseAction
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // Il canale lazy lavora sui soli percorsi data_get: le intestazioni
                 // esplicite (chiave stringa => label) non sono supportate da
                 // ExportXlsByQuery/ExportXlsByLazyCollection e degradano al path.
@@ -162,19 +194,27 @@ class ExportXlsLazyAction extends XotBaseAction
 >>>>>>> laraxot/dev
                 $lazy = $livewire->getFilteredTableQuery();
                 if ($lazy === null) {
+=======
+                $lazy = $livewire->getFilteredTableQuery();
+                if (null === $lazy) {
+>>>>>>> 3792da0d (Check & fix styling)
                     throw new \Exception('Query is null');
                 }
 
                 if ($lazy->count() < 7) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
                     return app(ExportXlsByQuery::class)->execute($lazy, $filename, $pathFields, null);
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     /** @var array<int, string> $stringFields */
                     $stringFields = array_values($fields);
 
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
                     return app(ExportXlsByQuery::class)->execute($lazy, $filename, $stringFields, null);
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -201,6 +241,8 @@ class ExportXlsLazyAction extends XotBaseAction
 =======
 >>>>>>> .merge_file_3PihIp
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 }
 
                 $lazyCursor = $lazy->cursor();
@@ -210,16 +252,20 @@ class ExportXlsLazyAction extends XotBaseAction
                 if ($lazyCursor->count() > 3000) {
                     return app(ExportXlsStreamByLazyCollection::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zArYCl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         ->execute($exportCollection, $filename, $transKey, array_values($fields));
                 }
 
                 return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, array_values($fields));
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -238,6 +284,8 @@ class ExportXlsLazyAction extends XotBaseAction
 =======
 >>>>>>> .merge_file_3PihIp
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             });
     }
 
@@ -245,6 +293,7 @@ class ExportXlsLazyAction extends XotBaseAction
     {
         return 'export_xls';
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zArYCl
@@ -305,4 +354,6 @@ class ExportXlsLazyAction extends XotBaseAction
 =======
 >>>>>>> .merge_file_3PihIp
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 }

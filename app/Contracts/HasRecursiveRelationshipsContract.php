@@ -20,8 +20,11 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property int                    $id
  * @property string                 $name
  * @property int                    $depth
@@ -41,6 +44,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * @property int|null               $descendants_and_self_count
  * @property Collection<int, Model> $parentAndSelf              The model's direct parent and itself.
  * @property int|null               $parent_and_self_count
+<<<<<<< HEAD
  *                                                              =======
  * @property int                    $id
  * @property string                 $name
@@ -62,6 +66,8 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * @property Collection<int, Model> $parentAndSelf              The model's direct parent and itself.
  * @property int|null               $parent_and_self_count
  *                                                              >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @phpstan-require-extends Model
  *
@@ -198,6 +204,7 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute(string $attribute);
 
     /**
+<<<<<<< HEAD
      * @return AdjacencyBuilder<Model>
      */
     public function newEloquentBuilder(Builder $query);
@@ -210,6 +217,16 @@ interface HasRecursiveRelationshipsContract
      * @param list<Model> $models
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param Builder $query
+     *
+     * @return AdjacencyBuilder<Model>
+     */
+    public function newEloquentBuilder($query);
+
+    /**
+     * @param list<Model> $models
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @return Collection<int, Model>
      */

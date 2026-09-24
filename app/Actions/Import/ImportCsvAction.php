@@ -12,19 +12,25 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ColumnData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\ini_set;
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\ini_set;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 class ImportCsvAction
 {
     use QueueableAction;
@@ -33,16 +39,22 @@ class ImportCsvAction
      * Import a CSV file into a database table.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $disk  the storage disk where the file is located
      * @param  string  $filename  the name of the file to import
      * @param  string  $db  the database connection name
      * @param  string  $tbl  the table name where data will be imported
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string $disk     the storage disk where the file is located
      * @param string $filename the name of the file to import
      * @param string $db       the database connection name
      * @param string $tbl      the table name where data will be imported
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @throws \Exception
      */
@@ -87,7 +99,11 @@ class ImportCsvAction
     /**
      * Get table columns excluding certain fields.
      *
+<<<<<<< HEAD
      * @return array<int, ColumnData>
+=======
+     * @return array<ColumnData>
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function getTableColumns(Builder $conn, string $tbl): array
     {
@@ -95,7 +111,12 @@ class ImportCsvAction
         $excludedColumns = ['id'];
 
         return array_map(
+<<<<<<< HEAD
             function (string $column) use ($conn, $tbl) {
+=======
+            function ($column) use ($conn, $tbl) {
+                /** @var string $column */
+>>>>>>> 3792da0d (Check & fix styling)
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(
@@ -111,21 +132,30 @@ class ImportCsvAction
      * Prepare fields for the SQL query.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, ColumnData>  $columns
 =======
      * @param array<int, ColumnData> $columns
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<ColumnData> $columns
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string>
      */
     private function prepareFields(array $columns): array
     {
         return array_map(
 <<<<<<< HEAD
+<<<<<<< HEAD
             fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
 =======
             fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
 >>>>>>> laraxot/dev
+=======
+            fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
+>>>>>>> 3792da0d (Check & fix styling)
             $columns,
         );
     }
@@ -134,10 +164,14 @@ class ImportCsvAction
      * Build the SQL query for importing data.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, ColumnData>  $columns
 =======
      * @param array<int, ColumnData> $columns
 >>>>>>> laraxot/dev
+=======
+     * @param array<ColumnData> $columns
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -155,10 +189,14 @@ class ImportCsvAction
         $sqlReplace = [];
         foreach ($columns as $column) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($column->type === 'decimal') {
 =======
             if ('decimal' === $column->type) {
 >>>>>>> laraxot/dev
+=======
+            if ('decimal' === $column->type) {
+>>>>>>> 3792da0d (Check & fix styling)
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
@@ -170,7 +208,10 @@ class ImportCsvAction
         return $sql;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Transform columns into ColumnData objects.
@@ -195,5 +236,8 @@ class ImportCsvAction
             $columns,
         );
     }
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 }

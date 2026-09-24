@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://statamic.com/
 =======
 =======
@@ -44,3 +45,6 @@ https://statamic.com/
 >>>>>>> .merge_file_LoHDJU
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://statamic.com/
+>>>>>>> 3792da0d (Check & fix styling)

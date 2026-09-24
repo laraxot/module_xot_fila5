@@ -3,12 +3,16 @@
 ## Data Aggiornamento
 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+[DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`
@@ -96,6 +100,7 @@ return [
 - [Regole Traduzioni Xot](translation_rules.md)
 - [Best Practices Traduzioni](translations-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
@@ -109,3 +114,7 @@ return [
 - [Documentazione Principale Traduzioni](../../../../docs/project/translation_rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 27 Gennaio 2025*
+- [Documentazione Principale Traduzioni](../../../../docs/project/translation_rules.md)
+>>>>>>> 3792da0d (Check & fix styling)

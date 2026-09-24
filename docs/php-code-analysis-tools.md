@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_SoxooX
 =======
@@ -15,6 +16,11 @@
 >>>>>>> .merge_file_M2jP9l
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->
@@ -41,6 +47,7 @@ https://phpmd.org/
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
@@ -53,6 +60,10 @@ https://phpmd.org/
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_5f05n5
 >>>>>>> .merge_file_M2jP9l
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 ---
 title: 'Php code analysis tools — risorse esterne'
@@ -88,6 +99,7 @@ updated: 2026-08-24
 - <https://github.com/overtrue/phplint>
 - <https://phpmd.org/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -101,14 +113,19 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> .merge_file_M2jP9l
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 <<<<<<< .merge_file_SoxooX
 =======
 >>>>>>> .merge_file_5f05n5
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_M2jP9l
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

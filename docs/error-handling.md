@@ -33,6 +33,7 @@
 - [Patient Workflow](../../Patient/docs/doctor-registration-workflow.md)
 - [README Xot](./README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -41,6 +42,11 @@
 - [README Xot](./readme.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Patient Errori e Soluzioni](../../patient/docs/models.md)
+- [Patient Workflow](../../patient/docs/doctor-registration-workflow.md)
+- [README Xot](./readme.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 # Errori di Validazione Custom (Laravel)
 
@@ -67,9 +73,13 @@ throw new \Illuminate\Validation\ValidationException(
 ## Approfondimenti
 - [Patient: errors/validation.md](../../Patient/docs/errors/validation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Patient: errors/validation.md](../../patient/docs/errors/validation.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Patient: errors/validation.md](../../patient/docs/errors/validation.md)
+>>>>>>> 3792da0d (Check & fix styling)

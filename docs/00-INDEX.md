@@ -22,6 +22,7 @@
 ## 🧹 Manutenzione
 - 🗑️ [Cleanup Plan](./cleanup-action-plan.md) - Strategia per consolidare documenti accumulati.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_T8QccE
 =======
@@ -40,6 +41,8 @@
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - ✅ [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - Include la chiusura di HtmlService e la scomposizione di RouteService in Action contestuali con ingresso unico `execute()`.
@@ -49,15 +52,19 @@
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - ✅ [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - Include la chiusura di HtmlService e la scomposizione di RouteService in Action contestuali con ingresso unico `execute()`.
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🔗 Moduli Dipendenti
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # Xot Module Documentation Index
@@ -73,6 +80,8 @@
 # Xot Module Documentation Index
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Xot Module Documentation Index
 
 <<<<<<< HEAD
@@ -135,9 +144,12 @@
 >>>>>>> 64619e34 (.)
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 > **Core Framework Module** - Provides base classes and shared functionality for all modules
 
 ## Roadmap
@@ -147,6 +159,7 @@
 ## 📚 Documentation Sections
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Composer / dipendenze
 =======
 <<<<<<< .merge_file_T8QccE
@@ -155,17 +168,23 @@
 <<<<<<< HEAD
 ### Composer / dipendenze
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Core Architecture
 - [XotBase Classes & Inheritance Patterns](./xotbase-extension.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 ## Composer / dipendenze
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 - [composer-root-skeleton-modular](./wiki/concepts/composer-root-skeleton-modular.md) — root skeleton + merge solo moduli
 - [theme-psr4-autoload-without-merge](./wiki/concepts/theme-psr4-autoload-without-merge.md) — autoload temi senza merge root
 - [Module Dependency Management](./composer-module-dependency-management.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Composer Packages Reference](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Mappatura pacchetti per modulo
 =======
@@ -180,6 +199,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+- [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
+- [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
+>>>>>>> 3792da0d (Check & fix styling)
 - [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study.md)
 - [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog.md) - Studio completo package-by-package da `composer show`
 - [Database Connection Configuration](./database-configuration-critical-rules.md)
@@ -240,6 +263,7 @@
 ## Dependency Intelligence
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](dependency-intelligence.md)
@@ -255,6 +279,8 @@
 - [Dependency intelligence](dependency-intelligence.md)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
 =======
@@ -263,6 +289,9 @@
 =======
 - [Dependency intelligence](dependency-intelligence.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W5rGUo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

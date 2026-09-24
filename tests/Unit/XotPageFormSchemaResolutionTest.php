@@ -2,9 +2,12 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_I9UKM4
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -12,16 +15,20 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\FormSchemaPageFixture;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use ReflectionMethod;
 =======
 <<<<<<< .merge_file_I9UKM4
@@ -29,15 +36,21 @@ use ReflectionMethod;
 =======
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+=======
+use ReflectionMethod;
+>>>>>>> 3792da0d (Check & fix styling)
 
 uses(TestCase::class);
 
 test('un override di getFormSchema viene onorato su XotBasePage', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $fixture = new FormSchemaPageFixture;
 =======
 <<<<<<< .merge_file_I9UKM4
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     $fixture = new FormSchemaPageFixture();
 =======
 <<<<<<< HEAD
@@ -46,10 +59,13 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
     $fixture = new FormSchemaPageFixture;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     $fixture = new FormSchemaPageFixture();
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     $method = new ReflectionMethod($fixture, 'resolveFormSchemaForXotPage');
     $method->setAccessible(true);
 
@@ -62,6 +78,7 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
 
 test('senza override getFormSchema restituisce schema vuoto', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $fixture = new class extends XotBasePage
     {
 =======
@@ -72,6 +89,10 @@ test('senza override getFormSchema restituisce schema vuoto', function (): void 
     $fixture = new class extends XotBasePage {
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+=======
+    $fixture = new class extends XotBasePage
+    {
+>>>>>>> 3792da0d (Check & fix styling)
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
         protected string $view = 'xot::filament.pages.base';

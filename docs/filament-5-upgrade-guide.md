@@ -30,6 +30,7 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 - **XotBaseWidgets**: Tutte le classi widget rimangono valide
 - **XotBaseActions**: Actions, TableActions, BulkActions non richiedono modifiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -69,6 +70,11 @@ nessun'altra occorrenza nel resto del progetto.
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **Schemas**: Form, Table, Infolist continuano a funzionare
+- **Resources**: Tutti i pattern esistenti rimangono validi
+
+>>>>>>> 3792da0d (Check & fix styling)
 ### Cosa Cambia (Livewire 4)
 
 Tutti i cambiamenti sono legati alla migrazione a Livewire 4:
@@ -132,6 +138,7 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - **Configurazioni globali**: se in XotServiceProvider o AdminPanelProvider ci sono `configureUsing()` per Section/Grid/Fieldset/Table (es. v4), confrontare con il comportamento v5 e adattare se necessario.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Stato upgrade (base_workorder_fila5)
 =======
 <<<<<<< HEAD
@@ -140,12 +147,16 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 ## Stato upgrade (base_<nome progetto>)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Stato upgrade (base_<nome progetto>)
+>>>>>>> 3792da0d (Check & fix styling)
 
 - [x] Documentazione creata (filament-5-upgrade-guide.md)
 - [x] Script `vendor/bin/filament-v5` eseguito con directory `app,Modules` – modifiche applicate
 - [x] Root `composer.json`: `filament/filament` aggiornato a `^5.0`
 - [x] Modulo Xot: `livewire/livewire` aggiornato a `^4.0`; Pest e plugin test aggiornati a v4 (pest ^4.3, pest-plugin-livewire ^4.1, pest-plugin-type-coverage ^4.0)
 - [x] Fix conflitto nome in `Modules/User/.../ListOauthClients.php`: import duplicato `Filament\Notifications\Notification` e `CreateClientAction` rimossi; uso `Notification as FilamentNotification` e `Action` da Filament\Actions
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -162,6 +173,11 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - [ ] Config Livewire 4: verificare `config/livewire.php` (layout → component_layout, lazy_placeholder → component_placeholder) se pubblicato
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [ ] **Composer update**: completare `composer update -W` (può fallire per errore filesystem su vendor, es. "Could not delete .../sebastianbergmann-phpunit-..."). **Soluzione**: chiudere IDE e processi che usano `vendor/`; dalla root laravel: `rm -rf vendor composer.lock` poi `composer install -W`. In alternativa riprovare `composer update -W` dopo aver chiuso tutto.
+- [ ] Dopo update: `composer remove filament/upgrade --dev`
+- [ ] Config Livewire 4: verificare `config/livewire.php` (layout → component_layout, lazy_placeholder → component_placeholder) se pubblicato
+>>>>>>> 3792da0d (Check & fix styling)
 - [ ] PHPStan livello 10 su moduli Filament
 - [ ] Verificare pannello admin Filament (login, risorse, widget)
 

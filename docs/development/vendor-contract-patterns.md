@@ -133,6 +133,7 @@ interface PassportHasApiTokensContract
 
 **Maintained by**: Claude Sonnet 4.5
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last updated**: 2025-12-12
 =======
 <<<<<<< HEAD
@@ -141,3 +142,6 @@ interface PassportHasApiTokensContract
 **Last updated**: 2025-12-12
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Last updated**: 2025-12-12
+>>>>>>> 3792da0d (Check & fix styling)

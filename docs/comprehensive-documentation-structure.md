@@ -348,6 +348,7 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 **Documentation Version**: 1.0
 **Last Updated**: 2025-11-17
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 =======
@@ -360,3 +361,8 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+**Maintenance**: Xot Module Documentation Team
+**Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
+>>>>>>> 3792da0d (Check & fix styling)

@@ -322,6 +322,7 @@ Quando scrivi codice con Eloquent:
 
 **Ultimo aggiornamento**: 2025-01-06
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan Level**: 10
 **Status**: ✅ 0 Errors
 =======
@@ -334,3 +335,8 @@ Quando scrivi codice con Eloquent:
 **Status**: ✅ 0 Errors
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+**PHPStan Level**: 10
+**Status**: ✅ 0 Errors
+>>>>>>> 3792da0d (Check & fix styling)

@@ -27,6 +27,7 @@ class MorphToManyAction
     /**
      * Execute the action to update morphToMany relationships.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param Model       $row         The model instance to update
@@ -60,6 +61,10 @@ class MorphToManyAction
      *                                 >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                 >>>>>>> .merge_file_o8Zv1E
      *                                 >>>>>>> laraxot/dev
+=======
+     * @param Model       $row         The model instance to update
+     * @param RelationDTO $relationDTO Data transfer object containing relation information
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @throws \Exception When data is not in correct format or relation is invalid
      */

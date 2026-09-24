@@ -10,6 +10,7 @@
 - **Resolution**: Deleted the following files:
     - `Modules/Chart/app/Actions/JpGraph/V1/LineSubQuestionAction.php.backup`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -21,10 +22,16 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     - `Modules/healthcare_app/app/Filament/Widgets/BaseTableWidget.php.backup`
     - `Modules/healthcare_app/app/Datas/AlertDashboardFilterData.php.backup`
     - `Modules/healthcare_app/app/Datas/DashboardFilterData.php.backup`
     - `Modules/Xot/tests/Unit/metatagdatatest.php.backup`
+<<<<<<< HEAD
     - `Modules/Xot/tests/pest.php.backup`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    - `Modules/Xot/tests/pest.php.backup`
+>>>>>>> 3792da0d (Check & fix styling)

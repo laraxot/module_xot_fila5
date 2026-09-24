@@ -28,6 +28,7 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
 - BugfixIconsMissing.md (maiuscole)
 - bugfix-icons-missing-2025-01-27.md (data nel nome)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - bugfix_icons_missing.md (underscore invece di trattini)
 - bugfix-icons-missing-2025.md (anno nel nome)
 =======
@@ -40,6 +41,11 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
 - bugfix-icons-missing.md (anno nel nome)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- bugfix-icons-missing-[DATE].md (data nel nome)
+- bugfix_icons_missing.md (underscore invece di trattini)
+- bugfix-icons-missing.md (anno nel nome)
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## Processo di Normalizzazione
@@ -88,6 +94,7 @@ Per ogni file identificato:
 # Azione: Eliminare file con data
 rm bugfix-icons-missing-2025-01-27.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -96,6 +103,11 @@ rm bugfix-icons-missing-2025-01-27.md
 rm bugfix-icons-missing-[DATE].md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Esempio: bugfix-icons-missing-[DATE].md è identico a bugfix-icons-missing.md
+# Azione: Eliminare file con data
+rm bugfix-icons-missing-[DATE].md
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 #### Caso 2: File con Data (nessun duplicato)
@@ -105,6 +117,7 @@ rm bugfix-icons-missing-[DATE].md
 # Azione: Rinominare rimuovendo data
 mv translation-refactor-complete-summary-2025-08-08.md translation-refactor-complete-summary.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -113,6 +126,11 @@ mv translation-refactor-complete-summary-2025-08-08.md translation-refactor-comp
 mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete-summary.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Esempio: translation-refactor-complete-summary-[DATE].md
+# Azione: Rinominare rimuovendo data
+mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete-summary.md
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 #### Caso 3: File con Maiuscole
@@ -158,12 +176,16 @@ Dopo ogni rinomina:
 **Situazione**:
 - `bugfix-icons-missing-2025-01-27.md` (100 righe)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - `bugfix-icons-missing-[DATE].md` (100 righe)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `bugfix-icons-missing-[DATE].md` (100 righe)
+>>>>>>> 3792da0d (Check & fix styling)
 - `bugfix-icons-missing.md` (100 righe, identico)
 
 **Azione**:
@@ -173,6 +195,7 @@ diff bugfix-icons-missing-2025-01-27.md bugfix-icons-missing.md
 # Se identici, eliminare file con data
 rm bugfix-icons-missing-2025-01-27.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -181,6 +204,11 @@ diff bugfix-icons-missing-[DATE].md bugfix-icons-missing.md
 rm bugfix-icons-missing-[DATE].md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+diff bugfix-icons-missing-[DATE].md bugfix-icons-missing.md
+# Se identici, eliminare file con data
+rm bugfix-icons-missing-[DATE].md
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Esempio 2: File con Data (versione unica)
@@ -188,12 +216,16 @@ rm bugfix-icons-missing-[DATE].md
 **Situazione**:
 - `translation-refactor-complete-summary-2025-08-08.md` (contenuto completo)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - `translation-refactor-complete-summary-[DATE].md` (contenuto completo)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `translation-refactor-complete-summary-[DATE].md` (contenuto completo)
+>>>>>>> 3792da0d (Check & fix styling)
 - `translation-refactor-complete-summary.md` (vuoto o non esiste)
 
 **Azione**:
@@ -201,12 +233,16 @@ rm bugfix-icons-missing-[DATE].md
 # Rinominare file rimuovendo data
 mv translation-refactor-complete-summary-2025-08-08.md translation-refactor-complete-summary.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete-summary.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+mv translation-refactor-complete-summary-[DATE].md translation-refactor-complete-summary.md
+>>>>>>> 3792da0d (Check & fix styling)
 # Se il file contiene data nel corpo, mantenerla ma non nel nome
 ```
 
@@ -262,6 +298,7 @@ Per processi futuri, considerare script di automazione:
 
 - [Regole Naming File](../file-naming-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Piano Consolidamento Documentazione](../../../../docs/consolidamento-documentazione-2025.md)
 - [Filosofia DRY + KISS](../../../../docs/philosophy-guide.md)
 =======
@@ -273,12 +310,17 @@ Per processi futuri, considerare script di automazione:
 - [Filosofia DRY + KISS](../../../../../docs/philosophy-guide.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Piano Consolidamento Documentazione](../../../../../docs/consolidamento-documentazione.md)
+- [Filosofia DRY + KISS](../../../../../docs/philosophy-guide.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Stato**: Processo attivo
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità**: Alta (conformità regole progetto)
 =======
 <<<<<<< HEAD
@@ -287,3 +329,6 @@ Per processi futuri, considerare script di automazione:
 **Priorità**: Alta (conformità regole progetto)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Priorità**: Alta (conformità regole progetto)
+>>>>>>> 3792da0d (Check & fix styling)

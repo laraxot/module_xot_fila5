@@ -13,9 +13,12 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 
 ### Moduli Collegati
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Convenzioni di Naming](../../../../docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
@@ -26,8 +29,11 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 - [Cms](../../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../../lang/docs/readme.md) - Traduzioni
 - [Patient](../../patient/docs/readme.md) - Gestione pazienti
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [UI](../../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/docs/README.md) - Traduzioni
@@ -235,9 +241,12 @@ new class extends Component {
 
 ### Modulo UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Componenti Volt](../ui/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
@@ -303,8 +312,11 @@ new class extends Component {
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -370,6 +382,7 @@ new class extends Component {
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Visualizzazione](../Chart/docs/visualization.md)
 =======
 <<<<<<< HEAD
@@ -378,3 +391,6 @@ new class extends Component {
 - [Visualizzazione](../Chart/docs/visualization.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Visualizzazione](../Chart/docs/visualization.md)
+>>>>>>> 3792da0d (Check & fix styling)

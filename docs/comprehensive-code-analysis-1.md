@@ -164,6 +164,7 @@ try {
 // ContactResource.php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -177,6 +178,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('first_name'),
@@ -187,6 +191,7 @@ public static function getFormSchema(): array
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -200,6 +205,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         TextInput::make('name')->required(),
@@ -294,6 +302,7 @@ class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -307,6 +316,9 @@ class ContactResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('first_name'),
@@ -434,6 +446,7 @@ try {
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -444,12 +457,17 @@ try {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Architettura Moduli](./architecture.md)
 - [Best Practices Laravel 12](./laravel_12_guide.md)
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 📊 Metriche di Qualità
 
@@ -471,6 +489,7 @@ try {
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stima Effort**: 40-60 ore di refactoring
 =======
 <<<<<<< HEAD
@@ -479,3 +498,6 @@ try {
 **Stima Effort**: 40-60 ore di refactoring
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Stima Effort**: 40-60 ore di refactoring
+>>>>>>> 3792da0d (Check & fix styling)

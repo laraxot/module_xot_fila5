@@ -2,12 +2,16 @@
 
 **Data Creazione**: 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Data Creazione**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data Creazione**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -466,18 +470,23 @@ chmod +x scripts/*.sh
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 98%
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 =======
 <<<<<<< HEAD
@@ -486,3 +495,6 @@ chmod +x scripts/*.sh
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+>>>>>>> 3792da0d (Check & fix styling)

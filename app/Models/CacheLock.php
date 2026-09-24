@@ -13,6 +13,7 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *
  * @property string $key
  * @property string $owner
+<<<<<<< HEAD
  *                              <<<<<<< HEAD
  * @property int    $expiration
  *
@@ -23,6 +24,11 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  *
  * @method static CacheLockFactory          factory($count = null, $state = [])
  *                                                                              >>>>>>> laraxot/dev
+=======
+ * @property int    $expiration
+ *
+ * @method static CacheLockFactory          factory($count = null, $state = [])
+>>>>>>> 3792da0d (Check & fix styling)
  * @method static Builder<static>|CacheLock newModelQuery()
  * @method static Builder<static>|CacheLock newQuery()
  * @method static Builder<static>|CacheLock query()

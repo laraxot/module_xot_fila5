@@ -352,6 +352,7 @@ public function getConnectionName(): ?string
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
 =======
 <<<<<<< HEAD
@@ -360,6 +361,9 @@ public function getConnectionName(): ?string
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -784,6 +788,7 @@ it('tracks who created the record', function () {
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 =======
 <<<<<<< HEAD
@@ -792,6 +797,9 @@ it('tracks who created the record', function () {
 - [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+>>>>>>> 3792da0d (Check & fix styling)
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 
 ---

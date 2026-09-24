@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -145,6 +146,8 @@ https://github.com/antonioribeiro/tracker
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 //-- cosa vecchia ma spiega i criteria
 https://bosnadev.com/2015/03/07/using-repository-pattern-in-laravel-5/
@@ -155,6 +158,10 @@ https://lyften.com/projects/laravel-repository/
 
 //-- prettus -- la piu' completa
 http://andersonandra.de/l5-repository/
+<<<<<<< HEAD
 https://www.programmersought.com/article/8489242324/
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://www.programmersought.com/article/8489242324/
+>>>>>>> 3792da0d (Check & fix styling)

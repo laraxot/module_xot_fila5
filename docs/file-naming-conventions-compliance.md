@@ -2,6 +2,7 @@
 
 **Data**: 2026-01-09  
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -9,6 +10,10 @@
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# File Naming Conventions Compliance - [DATE]
+
+>>>>>>> 3792da0d (Check & fix styling)
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -43,12 +48,16 @@
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ❌ PRIMA: nome-file-[DATE].md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+❌ PRIMA: nome-file-[DATE].md
+>>>>>>> 3792da0d (Check & fix styling)
 ✅ DOPO: nome-file.md
 ```
 
@@ -96,9 +105,13 @@
 
 **Ultimo aggiornamento**: 2026-01-09
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)

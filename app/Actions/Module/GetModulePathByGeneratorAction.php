@@ -15,10 +15,14 @@ class GetModulePathByGeneratorAction
         try {
             $res = module_path($moduleName, $relativePath);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($res !== '') {
 =======
             if ('' !== $res) {
 >>>>>>> laraxot/dev
+=======
+            if ('' !== $res) {
+>>>>>>> 3792da0d (Check & fix styling)
                 return $res;
             }
         } catch (\Exception|\Error $e) {

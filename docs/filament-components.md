@@ -84,12 +84,16 @@ DatePicker::make('field_name')
     ->displayFormat('d/m/Y')
     ->minDate('2020-01-01')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
     ->minDate('[DATE]')
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    ->minDate('[DATE]')
+>>>>>>> 3792da0d (Check & fix styling)
     ->maxDate('today')
 ```
 
@@ -102,6 +106,7 @@ DatePicker::make('field_name')
 * [FILAMENT_COMPONENTS.md](../../../Xot/docs/FILAMENT_COMPONENTS.md)
 * [FILAMENT_COMPONENTS.md](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -109,6 +114,10 @@ DatePicker::make('field_name')
 * [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
+* [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Correzione e regole per XotBaseManageRelatedRecords
 
@@ -120,9 +129,13 @@ DatePicker::make('field_name')
 
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
+>>>>>>> 3792da0d (Check & fix styling)

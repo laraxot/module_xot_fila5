@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -31,6 +34,7 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 
 ```php
 // Esempio di una Resource Filament
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -163,6 +167,8 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
@@ -170,10 +176,13 @@ class UserResource extends XotBaseResource
     protected static ?string $model = User::class;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     
     // Il metodo table() e form() NON devono essere sovrascritti
     // se non per aggiungere logica specifica, ma la base
@@ -200,6 +209,7 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -286,6 +296,8 @@ Un pattern standardizzato per incapsulare la business logic in classi riutilizza
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```php
 use Modules\Xot\Actions\XotBaseAction;
 
@@ -294,6 +306,7 @@ class CreateUserAction extends XotBaseAction
     public function execute(array $data): User
     {
         $user = User::create($data);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $this->logActivity('user.created', $user); // Logging automatico
@@ -312,11 +325,16 @@ class CreateUserAction extends XotBaseAction
 =======
         event(new UserCreated($user));
 >>>>>>> laraxot/dev
+=======
+        $this->logActivity('user.created', $user); // Logging automatico
+        event(new UserCreated($user)); // Dispatching eventi
+>>>>>>> 3792da0d (Check & fix styling)
         return $user;
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### 🏷️ **Enums System**
@@ -350,6 +368,10 @@ Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### 🏷️ **Enums System**
+Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
+>>>>>>> 3792da0d (Check & fix styling)
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
 
@@ -360,6 +382,7 @@ enum UserStatus: string implements XotBaseEnum
 
     public function getLabel(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         // Traduzione gestita centralmente
@@ -376,6 +399,9 @@ enum UserStatus: string implements XotBaseEnum
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+        // Traduzione gestita centralmente
+>>>>>>> 3792da0d (Check & fix styling)
         return __('xot::enums.user_status.'.$this->value);
     }
 }
@@ -383,10 +409,13 @@ enum UserStatus: string implements XotBaseEnum
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_nCWPZB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## 🛠️ **Sviluppo e Qualità**
 
 ### Convenzioni
@@ -432,6 +461,7 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 - [CHANGELOG](./CHANGELOG.md)
 - [Guida alla Risoluzione dei Conflitti Git](../../../bashscripts/docs/git-conflict-resolution-guide.md)
 - [Convenzioni sui Namespace](./namespace_conventions.md)
+<<<<<<< HEAD
 - [Linee Guida per il Testing](./testing.md)
 =======
 <<<<<<< HEAD
@@ -627,3 +657,6 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 >>>>>>> .merge_file_hkLK6x
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Linee Guida per il Testing](./testing.md)
+>>>>>>> 3792da0d (Check & fix styling)

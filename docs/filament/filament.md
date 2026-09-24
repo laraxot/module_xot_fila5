@@ -37,6 +37,7 @@ class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -50,6 +51,9 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('nome')->required(),
@@ -133,6 +137,7 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -146,6 +151,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         // Schema del form
@@ -502,6 +510,7 @@ class ExampleResource extends XotBaseResource
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Categoria: Filament*
 =======
 <<<<<<< HEAD
@@ -510,3 +519,6 @@ class ExampleResource extends XotBaseResource
 *Categoria: Filament*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Categoria: Filament*
+>>>>>>> 3792da0d (Check & fix styling)

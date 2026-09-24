@@ -30,6 +30,7 @@ cd laravel
 
 ### Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
 =======
 <<<<<<< HEAD
@@ -38,6 +39,9 @@ cd laravel
 - [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -181,6 +185,7 @@ php -l path/to/modified/file.php
 ## 📚 Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -191,12 +196,17 @@ php -l path/to/modified/file.php
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 🚀 Next Steps
 
@@ -227,6 +237,7 @@ php -l path/to/modified/file.php
 
 ## Aggiornamento Tooling 2025-11-08
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -237,10 +248,16 @@ php -l path/to/modified/file.php
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Aggiornamento Tooling [DATE]
 
 - PHPMD eseguito sui file aggiornati (`GetAllIconsAction`, `InlineDatePicker`, `Extra`, `XotBasePivot`, `XotBaseUuidModel`): nessuna nuova violazione rilevata.
 - PHPInsights eseguito sugli stessi file: esito positivo (complessità segnalata da soglie legacy, documentata nelle relative sezioni di modulo).
+<<<<<<< HEAD
 - Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
+>>>>>>> 3792da0d (Check & fix styling)

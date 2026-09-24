@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IpxFJs
 <<<<<<< HEAD
@@ -15,6 +16,9 @@ declare(strict_types=1);
 =======
 >>>>>>> .merge_file_wgQVYe
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Stub file for PHPStan static analysis of merge_translation_files function.
  * This file provides the function signature for static analysis.
@@ -25,6 +29,7 @@ if (! function_exists('merge_translation_files')) {
      * Merge multiple PHP translation files into a single array.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $first  First translation file path
      * @param  string  ...$rest  Additional translation file paths
 =======
@@ -49,10 +54,16 @@ if (! function_exists('merge_translation_files')) {
      *
 >>>>>>> .merge_file_wgQVYe
 >>>>>>> laraxot/dev
+=======
+     * @param string $first   First translation file path
+     * @param string ...$rest Additional translation file paths
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array
     {
+<<<<<<< HEAD
         $result = load_translation_array($first);
 
         foreach ($rest as $file) {
@@ -74,4 +85,15 @@ if (! function_exists('merge_translation_files')) {
 
         return is_array($content) ? array_filter($content, 'is_string', ARRAY_FILTER_USE_KEY) : [];
     }
+=======
+        $result = (array) require $first;
+
+        foreach ($rest as $file) {
+            $result = array_replace_recursive($result, (array) require $file);
+        }
+
+        /* @phpstan-ignore return.type */
+        return $result;
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 }

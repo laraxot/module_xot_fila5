@@ -17,6 +17,9 @@ return [
         'create' => ['label' => 'Crea Test'],
         'edit' => ['label' => 'Modifica Test'],
         'delete' => ['label' => 'Elimina Test'],
+<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ],
 ];

@@ -27,6 +27,7 @@ class ArrayAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $array1
      * @param  array<int|string, mixed>  $array2
 =======
@@ -34,6 +35,11 @@ class ArrayAction
      * @param array<int|string, mixed> $array2
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<int|string, mixed> $array1
+     * @param array<int|string, mixed> $array2
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<int|string, mixed>
      */
     public static function diff_assoc_recursive(array $array1, array $array2): array
@@ -64,10 +70,16 @@ class ArrayAction
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(): void {}
 =======
     public function execute(): void
     {
     }
 >>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 }

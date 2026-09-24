@@ -76,6 +76,7 @@ protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -89,6 +90,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -140,6 +144,7 @@ public static function getRelations(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -165,6 +170,8 @@ public static function getPages(): array
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Pagine (`getPages()`)
 
 **Non dichiarare** `getPages()` quando:
@@ -193,8 +200,11 @@ public static function getPages(): array
 
 Documentazione: [filament/getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md) · Script: `bashscripts/filament/analyze-redundant-getpages.php`
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Motivazioni
 
 1. **Centralizzazione della Configurazione**: Le configurazioni comuni sono centralizzate nella classe base
@@ -222,6 +232,7 @@ class DoctorResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -235,6 +246,9 @@ class DoctorResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')
@@ -257,6 +271,7 @@ class DoctorResource extends XotBaseResource
 ## Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -269,9 +284,14 @@ class DoctorResource extends XotBaseResource
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md)
 - [xotbaseresource.md](./filament/xotbaseresource.md)
 - [forbidden-methods.md](./filament/resources/architecture/forbidden-methods.md)
 - [consolidated/filament/resources/xot-base-resource.md](./consolidated/filament/resources/xot-base-resource.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

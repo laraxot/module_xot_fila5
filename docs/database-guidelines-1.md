@@ -267,6 +267,7 @@ return new class extends XotBaseMigration {
 
 **Collegamenti:**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regola Performance](../../Performance/docs/database_migrations.md)
 - [Regole globali root](../../../docs/database_migrations.md)
 =======
@@ -278,6 +279,10 @@ return new class extends XotBaseMigration {
 - [Regole globali root](../../../../docs/database_migrations.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Regola Performance](../../performance/docs/database_migrations.md)
+- [Regole globali root](../../../../docs/database_migrations.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
     /**
      * Ottiene la sezione associata al socio.
@@ -493,6 +498,7 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Verificare che ci siano indici appropriati
 - Controllare che i tipi di dati siano ottimali per l'uso previsto
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Utilizzare query builder o raw queries per query complesse
 =======
 <<<<<<< HEAD
@@ -501,3 +507,6 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Utilizzare query builder o raw queries per query complesse
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Utilizzare query builder o raw queries per query complesse
+>>>>>>> 3792da0d (Check & fix styling)

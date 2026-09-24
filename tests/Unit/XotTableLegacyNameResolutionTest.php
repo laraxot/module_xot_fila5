@@ -2,11 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 =======
 <<<<<<< .merge_file_YyLP1Q
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -16,11 +19,14 @@ use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Traits\HasXotTable;
 >>>>>>> .merge_file_UqdrtH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture;
 use PHPUnit\Framework\Assert;
@@ -29,10 +35,13 @@ uses(TestCase::class);
 
 test('un override di getTableFilters viene onorato', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $fixture = new LegacyTableNameFixture;
 =======
 <<<<<<< .merge_file_YyLP1Q
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     $fixture = new LegacyTableNameFixture();
 =======
 <<<<<<< HEAD
@@ -41,20 +50,26 @@ test('un override di getTableFilters viene onorato', function (): void {
     $fixture = new LegacyTableNameFixture;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     $fixture = new LegacyTableNameFixture();
 >>>>>>> .merge_file_UqdrtH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
     Assert::assertSame(['legacy_filter'], array_keys($fixture->getTableFilters()));
 });
 
 test('senza override si ricade sul default vuoto', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $fixture = new class
     {
 =======
 <<<<<<< .merge_file_YyLP1Q
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     $fixture = new class
     {
 <<<<<<< HEAD
@@ -71,16 +86,20 @@ test('senza override si ricade sul default vuoto', function (): void {
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
     $fixture = new class {
 >>>>>>> .merge_file_UqdrtH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         use HasXotTable;
 
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
         public function getTableColumns(): array
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_YyLP1Q
@@ -89,6 +108,10 @@ test('senza override si ricade sul default vuoto', function (): void {
 =======
 >>>>>>> .merge_file_UqdrtH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         {
             return [];
         }
@@ -97,9 +120,12 @@ test('senza override si ricade sul default vuoto', function (): void {
     Assert::assertSame([], $fixture->getTableFilters());
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_YyLP1Q
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -107,6 +133,9 @@ test('senza override si ricade sul default vuoto', function (): void {
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_UqdrtH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

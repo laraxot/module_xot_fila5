@@ -1,9 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gKNcjB
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 https://qiita.com/nunulk/items/4c491634ad843c7a138e
 
@@ -28,6 +31,7 @@ http://niceprogrammer.com/laravel-view-model/
 https://github.com/robclancy/presenter
 
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -148,12 +152,17 @@ https://gitee.com/gordensong/view-model
 https://github.com/robclancy/presenter
 
 
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://www.yuulinux.tokyo/13801/   pokemon :)
 
 view composers may function like "view models" or "presenters".
 
 
+<<<<<<< HEAD
 >>>>>>> .merge_file_OaK6ae
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
 
 
@@ -162,9 +171,13 @@ http://www.javaear.com/question/21542893.html
 
 
 
+<<<<<<< HEAD
 https://gitee.com/gordensong/view-model
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://gitee.com/gordensong/view-model
+>>>>>>> 3792da0d (Check & fix styling)

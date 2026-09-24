@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+<<<<<<< HEAD
 use Composer\Autoload\ClassLoader;
 <<<<<<< HEAD
 =======
@@ -12,6 +13,12 @@ use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
+=======
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Field;
+use Filament\Forms\Components\Placeholder;
+>>>>>>> 3792da0d (Check & fix styling)
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
@@ -30,6 +37,7 @@ use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
@@ -37,13 +45,18 @@ use function Safe\realpath;
 
 =======
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\View\Composers\XotComposer;
 
 use function Safe\realpath;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Class XotServiceProvider.
  */
@@ -81,6 +94,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->extendExceptionHandler();
         $this->registerCommands();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         $this->registerExportJobs();
     }
@@ -95,6 +109,8 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     public function registerProviders(): void
@@ -112,6 +128,7 @@ class XotServiceProvider extends XotBaseServiceProvider
 
         $loader = require $autoloadPath;
 
+<<<<<<< HEAD
         if (! $loader instanceof ClassLoader) {
             return;
         }
@@ -121,6 +138,13 @@ class XotServiceProvider extends XotBaseServiceProvider
 =======
         (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
 >>>>>>> laraxot/dev
+=======
+        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
+            return;
+        }
+
+        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     public function registerTimezone(): void
@@ -209,19 +233,27 @@ class XotServiceProvider extends XotBaseServiceProvider
         $files = File::files($path);
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
 =======
             if ('php' !== $file->getExtension()) {
 >>>>>>> laraxot/dev
+=======
+            if ('php' !== $file->getExtension()) {
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
             $realPath = $file->getRealPath();
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($realPath === false) {
 =======
             if (false === $realPath) {
 >>>>>>> laraxot/dev
+=======
+            if (false === $realPath) {
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
@@ -244,9 +276,13 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
+<<<<<<< HEAD
         // Placeholder è deprecato in favore di TextEntry (state()): Entry::class copre già
         // TextEntry e le altre entry infolist, quindi non serve registrarlo separatamente.
         $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
+=======
+        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
+>>>>>>> 3792da0d (Check & fix styling)
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {

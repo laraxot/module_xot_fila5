@@ -74,6 +74,7 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD.
      *
      * @param array<array-key, mixed> $config
@@ -94,6 +95,9 @@ class EditModule extends XotBaseEditRecord
      * >>>>>>> .merge_file_gDEies
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param array<mixed, mixed> $config
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @return array<string, mixed>
      */

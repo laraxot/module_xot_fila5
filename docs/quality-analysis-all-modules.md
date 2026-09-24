@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 =======
@@ -8,6 +9,8 @@
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Data**: 2025-12-23
 **Obiettivo**: Analisi sistematica completa della qualità del codice di tutti i moduli
 **Strumento**: PHPMD (PHP Mess Detector)
@@ -100,15 +103,22 @@
 - **Focus**: Qualità codice mantenuta, codice morto rimosso
 - **PHPStan**: Sempre priorità massima (0 errori mantenuto)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: quality-analysis-all-modules
 canonical: ../../../Themes/docs/shared-components/quality-all-modules.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/quality-all-modules.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/quality-all-modules.md
+>>>>>>> 3792da0d (Check & fix styling)

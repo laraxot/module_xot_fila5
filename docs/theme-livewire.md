@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_krh3XC
 <<<<<<< HEAD
@@ -47,3 +48,8 @@ https://github.com/christophrumpel/larastreamers/tree/main/resources/views
 >>>>>>> .merge_file_lHt7I9
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+componenti da prendere
+https://github.com/christophrumpel/larastreamers/tree/main/resources/views
+>>>>>>> 3792da0d (Check & fix styling)

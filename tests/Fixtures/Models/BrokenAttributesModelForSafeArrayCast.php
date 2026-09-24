@@ -24,6 +24,7 @@ final class BrokenAttributesModelForSafeArrayCast extends Model
 <<<<<<< HEAD
         throw new ValueError('Mock error');
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_0NYkOr
 <<<<<<< HEAD
         throw new ValueError('Mock error');
@@ -34,6 +35,10 @@ final class BrokenAttributesModelForSafeArrayCast extends Model
         throw new \ValueError('Mock error');
 >>>>>>> .merge_file_s2kNh3
 >>>>>>> laraxot/dev
+=======
+        throw new \ValueError('Mock error');
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     /**
@@ -49,6 +54,7 @@ final class BrokenAttributesModelForSafeArrayCast extends Model
 <<<<<<< HEAD
         return $key === 'name' ? 'Fallback' : null;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_0NYkOr
 <<<<<<< HEAD
         return $key === 'name' ? 'Fallback' : null;
@@ -59,5 +65,9 @@ final class BrokenAttributesModelForSafeArrayCast extends Model
         return 'name' === $key ? 'Fallback' : null;
 >>>>>>> .merge_file_s2kNh3
 >>>>>>> laraxot/dev
+=======
+        return 'name' === $key ? 'Fallback' : null;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

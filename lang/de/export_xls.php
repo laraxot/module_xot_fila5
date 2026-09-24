@@ -7,10 +7,14 @@ return [
         'export_xls' => [
             'label' => 'Excel exportieren',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'icon' => 'heroicon-o-arrow-down-tray',
 =======
             'icon' => 'xot-files.xls',
 >>>>>>> laraxot/dev
+=======
+            'icon' => 'heroicon-o-arrow-down-tray',
+>>>>>>> 3792da0d (Check & fix styling)
             'tooltip' => 'Daten im Excel-Format (.xlsx) exportieren',
             'placeholder' => 'Nach Excel exportieren',
             'help' => 'Aktuelle Daten im Excel-Format für Offline-Analyse herunterladen',
@@ -35,10 +39,14 @@ return [
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'icon' => 'heroicon-o-puzzle-piece',
 =======
         'icon' => 'xot-files.xls',
 >>>>>>> laraxot/dev
+=======
+        'icon' => 'heroicon-o-puzzle-piece',
+>>>>>>> 3792da0d (Check & fix styling)
         'sort' => 100,
     ],
     'label' => 'Missing Label',
