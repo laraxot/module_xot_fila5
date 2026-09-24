@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'accepted' => 'ข้อมูล :attribute ต้องผ่านการยอมรับก่อน',
     'active_url' => 'ข้อมูล :attribute ต้องเป็น URL เท่านั้น',

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'title' => 'Installateur de Laravel',
     'next' => 'Suivant',

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 return [
     'failed' => 'Las credenciales no se han encontrado.',
     'general_error' => 'No tiene suficientes permisos..',
