@@ -77,6 +77,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 =======
 <<<<<<< .merge_file_1ECr1D
@@ -89,6 +90,9 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guhsIk
 >>>>>>> laraxot/dev
+=======
+- [Configurazione Generale](CONFIGURATION.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -101,6 +105,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti Correlati
 - [Configurazione Moduli](MODULE_CONFIGURATION.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
@@ -122,6 +127,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guhsIk
 >>>>>>> laraxot/dev
+=======
+- [Gestione Risorse](ASSETS.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](TROUBLESHOOTING.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -200,6 +210,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 =======
 <<<<<<< .merge_file_1ECr1D
@@ -212,5 +223,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guhsIk
 >>>>>>> laraxot/dev
+=======
+- [Configurazione Generale](CONFIGURATION.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)

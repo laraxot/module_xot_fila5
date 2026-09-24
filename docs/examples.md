@@ -240,6 +240,7 @@ class ExampleResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -253,6 +254,9 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -529,6 +533,7 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -542,6 +547,9 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -1140,12 +1148,16 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 
 - [**README.md**](README.md) - Documentazione principale del modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> 3792da0d (Check & fix styling)
 - [**Best Practices**](best-practices.md) - Best practices per lo sviluppo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Troubleshooting**](troubleshooting.md) - Risoluzione problemi
@@ -1153,6 +1165,7 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 =======
 <<<<<<< HEAD
@@ -1161,3 +1174,6 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> 3792da0d (Check & fix styling)

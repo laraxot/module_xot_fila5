@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -41,12 +42,18 @@ Il progetto ha una struttura ben organizzata:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: laravelfs-analisi
 canonical: ../../../Themes/docs/shared-components/laravelfs-analisi.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
+>>>>>>> 3792da0d (Check & fix styling)

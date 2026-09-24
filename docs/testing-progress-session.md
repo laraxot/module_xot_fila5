@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Testing Fixes Progress - Sessione [DATE]
 
 **Status**: In Progress
@@ -131,8 +134,11 @@ Tutti i test corretti seguono questo principio:
 
 --- Merged from testing-progress-session-2025-01-22.md ---
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22
@@ -250,16 +256,22 @@ Tutti i test corretti seguono questo principio:
 
 - [Testing Rules](../testing-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Activity TestCase Fix](../../activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../media/docs/testing-testcase-database-connection-fix.md)
 - [Notify TestCase Fix](../../notify/docs/testing-testcase-database-connection-fix.md)
 - [User Command Integration Fix](../../user/docs/testing-user-command-integration-fix.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
@@ -270,6 +282,7 @@ Tutti i test corretti seguono questo principio:
 
 **Status**: In Progress
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 =======
 <<<<<<< HEAD
@@ -278,3 +291,6 @@ Tutti i test corretti seguono questo principio:
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
+>>>>>>> 3792da0d (Check & fix styling)

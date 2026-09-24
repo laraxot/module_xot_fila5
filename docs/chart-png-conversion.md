@@ -695,6 +695,7 @@ private function validateSvg(string $svg): bool
 
 **Last Updated:** 2025-12-09
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, GD
@@ -710,3 +711,9 @@ private function validateSvg(string $svg): bool
 **Dependencies:** Imagick, GD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**
+**Version:** 1.0.0
+**PHPStan Level:** 10 ✅
+**Dependencies:** Imagick, GD
+>>>>>>> 3792da0d (Check & fix styling)

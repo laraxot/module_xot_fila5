@@ -176,6 +176,7 @@ class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
 =======
@@ -195,6 +196,9 @@ class ProductResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -205,6 +209,7 @@ class ProductResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -226,6 +231,9 @@ class ProductResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Infolists\Components\TextEntry::make('name'),

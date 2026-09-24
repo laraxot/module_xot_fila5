@@ -64,9 +64,12 @@ return [
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Gestione Domini](domain_configuration.md)
 - [Struttura del Progetto](project_structure.md)
 - [Documentazione Principale](../readme.md)
@@ -74,8 +77,11 @@ return [
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../xot/docs/configuration.md)
 * [configuration.md](../../../cms/docs/configuration.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Gestione Domini](DOMAIN_CONFIGURATION.md)
 - [Struttura del Progetto](PROJECT_STRUCTURE.md)
 - [Documentazione Principale](../README.md)
@@ -83,6 +89,7 @@ return [
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../Xot/docs/configuration.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [configuration.md](../../../Cms/docs/configuration.md)
 =======
 <<<<<<< HEAD
@@ -91,3 +98,6 @@ return [
 * [configuration.md](../../../Cms/docs/configuration.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [configuration.md](../../../Cms/docs/configuration.md)
+>>>>>>> 3792da0d (Check & fix styling)

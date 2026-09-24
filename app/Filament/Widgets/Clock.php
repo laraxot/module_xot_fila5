@@ -5,15 +5,24 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // use Symfony\Component\Console\Output\BufferedOutput;
 
 >>>>>>> laraxot/dev
+=======
+// use Symfony\Component\Console\Output\BufferedOutput;
+
+>>>>>>> 3792da0d (Check & fix styling)
 class Clock extends XotBaseWidget
 {
     public string $start = '';
 
+<<<<<<< HEAD
     /** @var view-string */
+=======
+    /** @phpstan-ignore property.defaultValue */
+>>>>>>> 3792da0d (Check & fix styling)
     protected string $view = 'xot::filament.widgets.clock';
 
     public function begin(): void
@@ -35,10 +44,14 @@ class Clock extends XotBaseWidget
             // $this->start = $this->start - 1;
             $this->start = (string) now();
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($this->start === 'impossible') {
 =======
             if ('impossible' === $this->start) {
 >>>>>>> laraxot/dev
+=======
+            if ('impossible' === $this->start) {
+>>>>>>> 3792da0d (Check & fix styling)
                 $cond = false;
             }
         }

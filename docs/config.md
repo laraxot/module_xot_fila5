@@ -287,6 +287,7 @@ return [
 * [config.md](../../../Xot/docs/config.md)
 * [config.md](../../../../Themes/One/docs/config.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -294,3 +295,7 @@ return [
 * [config.md](../../../../themes/one/docs/config.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [config.md](../../../xot/docs/config.md)
+* [config.md](../../../../themes/one/docs/config.md)
+>>>>>>> 3792da0d (Check & fix styling)

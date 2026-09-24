@@ -14,7 +14,11 @@ use Filament\Forms\Components\Select as FilamentSelect;
  * This ensures consistency with the framework's architecture and provides
  * a foundation for common Select functionality across the application.
  *
+<<<<<<< HEAD
  * @method static static make(?string $name = null) Create a new instance of the component
+=======
+ * @method static static make(string $name) Create a new instance of the component
+>>>>>>> 3792da0d (Check & fix styling)
  */
 abstract class XotBaseSelect extends FilamentSelect
 {

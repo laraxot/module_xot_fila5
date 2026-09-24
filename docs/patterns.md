@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_LJVgHf
 <<<<<<< HEAD
@@ -57,3 +58,6 @@ class CreateMyTable extends XotBaseMigration {
 
 >>>>>>> .merge_file_Dg2owJ
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)

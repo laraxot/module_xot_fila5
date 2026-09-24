@@ -29,6 +29,7 @@ class ModuleAction
     {
         if (! self::$_instance instanceof self) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             self::$_instance = new self;
 =======
 <<<<<<< .merge_file_6TJIo6
@@ -45,6 +46,9 @@ class ModuleAction
             self::$_instance = new self();
 >>>>>>> .merge_file_cPuAL8
 >>>>>>> laraxot/dev
+=======
+            self::$_instance = new self();
+>>>>>>> 3792da0d (Check & fix styling)
         }
 
         return self::$_instance;
@@ -83,6 +87,7 @@ class ModuleAction
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $tmp = new \stdClass;
 =======
 <<<<<<< .merge_file_6TJIo6
@@ -99,6 +104,9 @@ class ModuleAction
                 $tmp = new \stdClass();
 >>>>>>> .merge_file_cPuAL8
 >>>>>>> laraxot/dev
+=======
+                $tmp = new \stdClass();
+>>>>>>> 3792da0d (Check & fix styling)
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -116,7 +124,10 @@ class ModuleAction
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
+<<<<<<< HEAD
                     // Skip files whose class name does not resolve to an existing/valid class.
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 }
             }
         }
@@ -124,6 +135,7 @@ class ModuleAction
         return $data;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
 =======
@@ -135,4 +147,9 @@ class ModuleAction
     }
 >>>>>>> .merge_file_cPuAL8
 >>>>>>> laraxot/dev
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 }

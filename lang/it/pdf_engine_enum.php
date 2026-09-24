@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'values' => [
         'spipu' => [
             'label' => 'Spipu',
@@ -17,6 +18,8 @@ return [
             'description' => 'Motore PDF basato su DomPDF per documenti HTML/CSS',
         ],
     ],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     'label' => 'Motore PDF',
     'options' => [
         'spipu' => 'Spipu',
@@ -53,7 +56,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'spipu' => ['label' => 'spipu', 'placeholder' => 'spipu', 'helper_text' => 'spipu', 'description' => 'spipu'],
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ],
     'actions' => [
         'create' => [
@@ -66,5 +72,8 @@ return [
             'label' => 'Elimina Pdf Engine Enum',
         ],
     ],
+<<<<<<< HEAD
     'test' => 'pdf engine enum',
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ];

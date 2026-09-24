@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Process;
 <<<<<<< HEAD
 use Mockery;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
 <<<<<<< HEAD
 use Mockery;
@@ -16,6 +17,8 @@ use Mockery;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ceDRBA
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsCheckbox3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsGroup3;
@@ -31,6 +34,7 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
 <<<<<<< HEAD
 use ReflectionClass;
@@ -39,6 +43,8 @@ use ReflectionMethod;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ceDRBA
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-xot-db');
@@ -47,6 +53,7 @@ afterEach(function (): void {
 <<<<<<< HEAD
     Mockery::close();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
 <<<<<<< HEAD
     Mockery::close();
@@ -57,6 +64,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_ceDRBA
 >>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 });
 
 describe('Xot abstract Filament stubs', function (): void {
@@ -78,10 +89,13 @@ describe('Xot abstract Filament stubs', function (): void {
                 $inst = method_exists($class, 'make')
                     ? $class::make('field')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_4bNXUU
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     : (new ReflectionClass($class))->newInstanceWithoutConstructor();
                 Assert::assertIsObject($inst);
                 $n++;
@@ -89,20 +103,27 @@ describe('Xot abstract Filament stubs', function (): void {
                 if ($parent) {
                     foreach ($parent->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_ceDRBA
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     : (new \ReflectionClass($class))->newInstanceWithoutConstructor();
                 Assert::assertIsObject($inst);
                 ++$n;
                 $parent = (new \ReflectionClass($class))->getParentClass();
                 if ($parent) {
                     foreach ($parent->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_ceDRBA
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                         if ($method->getDeclaringClass()->getName() !== $parent->getName()) {
                             continue;
@@ -129,22 +150,28 @@ describe('Xot abstract Filament stubs', function (): void {
                         } catch (\Throwable) {
                             $n++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
 <<<<<<< HEAD
                             $n++;
                         } catch (\Throwable) {
                             $n++;
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                             ++$n;
                         } catch (\Throwable) {
                             ++$n;
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                             ++$n;
                         } catch (\Throwable) {
                             ++$n;
 >>>>>>> .merge_file_ceDRBA
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                         }
                     }
                 }
@@ -153,6 +180,7 @@ describe('Xot abstract Filament stubs', function (): void {
 <<<<<<< HEAD
                 $n++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4bNXUU
 <<<<<<< HEAD
                 $n++;
@@ -163,6 +191,10 @@ describe('Xot abstract Filament stubs', function (): void {
                 ++$n;
 >>>>>>> .merge_file_ceDRBA
 >>>>>>> laraxot/dev
+=======
+                ++$n;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
         Assert::assertGreaterThan(5, $n);

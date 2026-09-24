@@ -227,6 +227,7 @@ php artisan view:clear
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_v9jz5a
 =======
 <<<<<<< HEAD
@@ -241,6 +242,8 @@ php artisan view:clear
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_OqT12T
 >>>>>>> .merge_file_XJwjD9
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 |||||||| parent of 4e84d6e (.):docs/consolidated/translation_system.md
 - [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
@@ -254,6 +257,7 @@ php artisan view:clear
 - [Schema Conventions](../project_docs/schema-conventions.md)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_v9jz5a
 =======
 <<<<<<< .merge_file_FhByQL
@@ -271,3 +275,8 @@ php artisan view:clear
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_XJwjD9
 >>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)

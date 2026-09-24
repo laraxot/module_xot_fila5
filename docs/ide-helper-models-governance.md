@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -64,6 +65,8 @@ Se `0`: **non** lanciare write; **non** migrate distruttivo. Handoff al owner.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # IDE Helper Models Governance
 
 ## Regola locale
@@ -99,5 +102,8 @@ Per relazioni audit/profile come `creator`, `updater`, `deleter`, il PHPDoc corr
 ```
 
 non un model concreto `Modules\*\Models\Profile`.
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

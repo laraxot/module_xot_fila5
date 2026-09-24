@@ -20,6 +20,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
       // Resource definition
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -33,6 +34,9 @@ The Xot base classes provide a centralized way to customize and extend functiona
       public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+      public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -70,6 +74,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -81,10 +86,16 @@ The Xot base classes provide a centralized way to customize and extend functiona
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Code Quality](../xot/docs/code_quality.md)
 - [Filament Extension Pattern](../../notify/docs/filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](../../notify/docs/filament_extension_pattern_analysis.md)
 - [Patient Module - Filament Customization](../../patient/docs/filament_customization.md)
+<<<<<<< HEAD
 - [Patient Module - Namespace Conventions](../../patient/docs/namespace_conventions.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Patient Module - Namespace Conventions](../../patient/docs/namespace_conventions.md)
+>>>>>>> 3792da0d (Check & fix styling)

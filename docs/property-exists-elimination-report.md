@@ -53,6 +53,7 @@ $user->hasAttribute('name');  // true
 | **Lang** | 1 | 2 | ~1 min |
 | **DbForge** | 1 | 1 | ~1 min |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **Quaeris** | 1 | 1 | ~2 min |
 =======
 <<<<<<< HEAD
@@ -62,6 +63,10 @@ $user->hasAttribute('name');  // true
 | **ModuloEsempio** | 1 | 1 | ~2 min |
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+| **healthcare_app** | 1 | 1 | ~2 min |
+| **ModuloEsempio** | 1 | 1 | ~2 min |
+>>>>>>> 3792da0d (Check & fix styling)
 | **Xot** | 0 | 0 (solo in commenti) | ~1 min |
 | **TOTALE** | **28** | **72** | **~36 min** |
 
@@ -77,6 +82,7 @@ $user->hasAttribute('name');  // true
 ✅ Lang:    0 errori
 ✅ DbForge: 0 errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 ✅ Quaeris: 0 errori su file modificato
 =======
 <<<<<<< HEAD
@@ -86,6 +92,10 @@ $user->hasAttribute('name');  // true
 ✅ ModuloEsempio: 0 errori su file modificato
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+✅ healthcare_app: 0 errori su file modificato
+✅ ModuloEsempio: 0 errori su file modificato
+>>>>>>> 3792da0d (Check & fix styling)
 ⚠️  Xot:     4 errori pre-esistenti (non property_exists)
 ```
 
@@ -253,6 +263,7 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 1. `Console/Commands/SearchTextInDbCommand.php` - dynamic table property ✅
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Quaeris (1 file)
 =======
 <<<<<<< HEAD
@@ -262,6 +273,10 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 ### ModuloEsempio (1 file)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### healthcare_app (1 file)
+### ModuloEsempio (1 file)
+>>>>>>> 3792da0d (Check & fix styling)
 1. `Filament/Resources/.../ViewQuestionChartVisualizationWidget.php` - livewire property ✅
 
 ---
@@ -330,6 +345,7 @@ if (isset($media->file_name)) {
 | **Lang** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **DbForge** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **Quaeris** | ⚠️ 64 errori* | - | - |
 =======
 <<<<<<< HEAD
@@ -339,6 +355,10 @@ if (isset($media->file_name)) {
 | **ModuloEsempio** | ⚠️ 64 errori* | - | - |
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+| **healthcare_app** | ⚠️ 64 errori* | - | - |
+| **ModuloEsempio** | ⚠️ 64 errori* | - | - |
+>>>>>>> 3792da0d (Check & fix styling)
 | **Xot** | ⚠️ 4 errori* | - | - |
 
 \* Errori pre-esistenti non correlati a property_exists
@@ -591,6 +611,7 @@ Ogni modulo ha ora:
 ### 1. Moduli Rimanenti con Errori
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Quaeris** (64 errori):
 =======
 <<<<<<< HEAD
@@ -600,6 +621,10 @@ Ogni modulo ha ora:
 **ModuloEsempio** (64 errori):
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**healthcare_app** (64 errori):
+**ModuloEsempio** (64 errori):
+>>>>>>> 3792da0d (Check & fix styling)
 - Errori pre-esistenti non correlati a property_exists
 - Richiedono intervento separato per type hints
 - Priorità media
@@ -630,6 +655,7 @@ Implementare:
 
 **Documentazione Root**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -643,6 +669,8 @@ Implementare:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [User/docs/phpstan-level10-fixes.md](../../User/docs/phpstan-level10-fixes.md)
 - [Tenant/docs/phpstan-level10-fixes.md](../../Tenant/docs/phpstan-level10-fixes.md)
 - [Notify/docs/eloquent-properties-best-practices.md](../../Notify/docs/eloquent-properties-best-practices.md)
@@ -653,8 +681,11 @@ Implementare:
 - [User/docs/phpstan-level10-fixes.md](../../user/docs/phpstan-level10-fixes.md)
 - [Tenant/docs/phpstan-level10-fixes.md](../../tenant/docs/phpstan-level10-fixes.md)
 - [Notify/docs/eloquent-properties-best-practices.md](../../notify/docs/eloquent-properties-best-practices.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 **References Esterne**:
 - [Laravel Eloquent Properties](https://laravel.com/docs/11.x/eloquent#accessing-attributes)
@@ -673,6 +704,7 @@ Implementare:
 
 > "L'attributo che non esiste, esiste. Usa isset() per vedere l'essenza, non il corpo."
 <<<<<<< HEAD
+<<<<<<< HEAD
 > — Zen degli Attributi Magici Eloquent 🙏
 =======
 <<<<<<< HEAD
@@ -681,3 +713,6 @@ Implementare:
 > — Zen degli Attributi Magici Eloquent 🙏
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+> — Zen degli Attributi Magici Eloquent 🙏
+>>>>>>> 3792da0d (Check & fix styling)

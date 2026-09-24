@@ -18,6 +18,7 @@ class IsAdminRouteAction
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (request()->segment(1) === 'admin') {
 =======
 <<<<<<< .merge_file_qqeQNf
@@ -30,12 +31,16 @@ class IsAdminRouteAction
         if ('admin' === request()->segment(1)) {
 >>>>>>> .merge_file_LXWvod
 >>>>>>> laraxot/dev
+=======
+        if ('admin' === request()->segment(1)) {
+>>>>>>> 3792da0d (Check & fix styling)
             return true;
         }
 
         $segments = request()->segments();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $segments !== [] && $segments[0] === 'livewire' && session('in_admin', false) === true;
 =======
 <<<<<<< .merge_file_qqeQNf
@@ -48,5 +53,8 @@ class IsAdminRouteAction
         return [] !== $segments && 'livewire' === $segments[0] && true === session('in_admin', false);
 >>>>>>> .merge_file_LXWvod
 >>>>>>> laraxot/dev
+=======
+        return [] !== $segments && 'livewire' === $segments[0] && true === session('in_admin', false);
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

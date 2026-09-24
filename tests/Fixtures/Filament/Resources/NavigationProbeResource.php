@@ -16,6 +16,7 @@ class NavigationProbeResource extends XotBaseResource
 
     protected static ?int $navigationSort = 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     public function getFormSchemaOld(): array
@@ -23,4 +24,11 @@ class NavigationProbeResource extends XotBaseResource
         return [];
     }
 >>>>>>> laraxot/dev
+=======
+
+    public static function getFormSchema(): array
+    {
+        return [];
+    }
+>>>>>>> 3792da0d (Check & fix styling)
 }

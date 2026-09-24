@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Actions\File\FixPathAction;
@@ -36,6 +37,12 @@ it('calculates view path correctly', function (): void {
 =======
 it('resolves view path correctly', function (): void {
 >>>>>>> laraxot/dev
+=======
+use Modules\Xot\Actions\File\ViewPathAction;
+use PHPUnit\Framework\Assert;
+
+it('resolves view path correctly', function (): void {
+>>>>>>> 3792da0d (Check & fix styling)
     $action = app(ViewPathAction::class);
 
     $result = $action->execute('Xot::dashboard.index');

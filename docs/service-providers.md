@@ -258,12 +258,16 @@ class ValidationServiceProvider extends ServiceProvider
 
 ## 🔧 Merge Conflicts Resolution - 2025-11-04
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## 🔧 Merge Conflicts Resolution - [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## 🔧 Merge Conflicts Resolution - [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Problema Risolto
 Il `RouteServiceProvider` e `XotBaseRouteServiceProvider` nel modulo Xot contenevano **merge conflicts massivi non risolti** che impedivano l'avvio del server Laravel.
@@ -343,6 +347,7 @@ vendor/bin/pint --dirty Modules/Xot/app
 ### References
 - [Merge Conflict Resolution 2025-11-04](./merge-conflict-resolution-2025-11-04.md) - Report completo
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) - Nuova regola fondamentale
 - [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
@@ -358,3 +363,9 @@ vendor/bin/pint --dirty Modules/Xot/app
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Merge Conflict Resolution [DATE]](./merge-conflict-resolution-[DATE].md) - Report completo
+- [File Locking Pattern](./file-locking-pattern.md) - Nuova regola fondamentale
+- [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti
+- [Laraxot Architecture Rules](./laraxot-architecture-rules.md) - Convenzioni namespace
+>>>>>>> 3792da0d (Check & fix styling)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -69,6 +70,8 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
 ---
@@ -77,6 +80,10 @@ topic: module-namespace-path-convention
 canonical: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
+>>>>>>> 3792da0d (Check & fix styling)

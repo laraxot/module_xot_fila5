@@ -340,6 +340,7 @@ The command discovered these categories:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
 =======
 <<<<<<< HEAD
@@ -349,6 +350,10 @@ The command discovered these categories:
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
+>>>>>>> 3792da0d (Check & fix styling)
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -360,6 +365,7 @@ Each module uses this pattern:
 ```json
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
 =======
 <<<<<<< HEAD
@@ -368,6 +374,9 @@ Each module uses this pattern:
     "name": "laraxot/module_user_fila5",
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    "name": "laraxot/module_user_fila5",
+>>>>>>> 3792da0d (Check & fix styling)
     "extra": {
         "laravel": {
             "providers": [
@@ -562,12 +571,16 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 **Document Version**: 1.0
 **Last Updated**: 2026-01-12
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 **Status**: Living document - update as understanding deepens
 **Philosophy**: Super Mucca methodology applied
 
@@ -575,6 +588,7 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Module System](./packages.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
 =======
 <<<<<<< HEAD
@@ -583,3 +597,6 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
+>>>>>>> 3792da0d (Check & fix styling)

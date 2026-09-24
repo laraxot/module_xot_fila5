@@ -8,28 +8,38 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_b3gExn
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\preg_replace;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_b3gExn
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 /**
  * Class RouteDynService.
@@ -45,6 +55,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -57,6 +68,11 @@ class RouteDynService
      *
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string, mixed>
      */
     public static function getGroupOpts(array $v, ?string $namespace): array
@@ -72,6 +88,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -82,6 +99,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getPrefix(array $v, ?string $namespace): string
     {
@@ -97,6 +118,7 @@ class RouteDynService
 <<<<<<< HEAD
         if ($param_name !== '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
         if ($param_name !== '') {
@@ -107,6 +129,10 @@ class RouteDynService
         if ('' !== $param_name) {
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $param_name) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return $prefix.'/{'.$param_name.'}';
         }
 
@@ -117,6 +143,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -127,6 +154,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getAs(array $v, ?string $_namespace): string
     {
@@ -156,6 +187,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -166,6 +198,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getNamespace(array $v, ?string $namespace): ?string
     {
@@ -180,6 +216,7 @@ class RouteDynService
 <<<<<<< HEAD
         if ($namespace === '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
         if ($namespace === '') {
@@ -190,6 +227,10 @@ class RouteDynService
         if ('' === $namespace) {
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+        if ('' === $namespace) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return null;
         }
 
@@ -200,6 +241,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -210,6 +252,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getAct(array $v, ?string $_namespace): string
     {
@@ -241,6 +287,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -251,6 +298,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getParamName(array $v, ?string $_namespace): string
     {
@@ -271,6 +322,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -283,6 +335,11 @@ class RouteDynService
      *
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<int, string>
      */
     public static function getParamsName(array $v, ?string $namespace): array
@@ -296,6 +353,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -308,6 +366,11 @@ class RouteDynService
      *
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string, mixed>
      */
     public static function getResourceOpts(array $v, ?string $namespace): array
@@ -330,6 +393,7 @@ class RouteDynService
 <<<<<<< HEAD
         if ($param_name === '' && ! isset($opts['only'])) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
         if ($param_name === '' && ! isset($opts['only'])) {
@@ -340,6 +404,10 @@ class RouteDynService
         if ('' === $param_name && ! isset($opts['only'])) {
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+        if ('' === $param_name && ! isset($opts['only'])) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $opts['only'] = ['index'];
         }
 
@@ -352,6 +420,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -362,6 +431,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getController(array $v, ?string $_namespace): string
     {
@@ -383,6 +456,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -393,6 +467,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getUri(array $v, ?string $_namespace): string
     {
@@ -406,6 +484,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -418,6 +497,11 @@ class RouteDynService
      *
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<int, string>
      */
     public static function getMethod(array $v, ?string $_namespace): array
@@ -426,6 +510,7 @@ class RouteDynService
 <<<<<<< HEAD
             /** @var array<int, string> */
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
             /** @var array<int, string> */
@@ -436,6 +521,10 @@ class RouteDynService
             /* @var array<int, string> */
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+            /* @var array<int, string> */
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return Arr::wrap($v['method']);
         }
 
@@ -446,6 +535,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -456,6 +546,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function getUses(array $v, ?string $namespace): string
     {
@@ -469,6 +563,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -481,6 +576,11 @@ class RouteDynService
      *
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<string, mixed>
      */
     public static function getCallback(array $v, ?string $namespace, ?string $curr): array
@@ -491,6 +591,7 @@ class RouteDynService
 <<<<<<< HEAD
         if ($curr !== null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
         if ($curr !== null) {
@@ -501,6 +602,10 @@ class RouteDynService
         if (null !== $curr) {
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+        if (null !== $curr) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
         } else {
             $uses = '\\'.self::$namespace_start.'\\'.$uses;
@@ -513,6 +618,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<int, array<string, mixed>>  $array
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<int, array<string, mixed>>  $array
@@ -523,6 +629,10 @@ class RouteDynService
      * @param array<int, array<string, mixed>> $array
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, array<string, mixed>> $array
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function dynamic_route(
         array $array,
@@ -536,6 +646,7 @@ class RouteDynService
 <<<<<<< HEAD
         if ($namespace_start !== null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
         if ($namespace_start !== null) {
@@ -546,6 +657,10 @@ class RouteDynService
         if (null !== $namespace_start) {
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+        if (null !== $namespace_start) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             self::$namespace_start = $namespace_start;
         }
 
@@ -565,29 +680,39 @@ class RouteDynService
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param  array<string, mixed>  $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
         if ($v['name'] === null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_b3gExn
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param array<string, mixed> $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
         if (null === $v['name']) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_b3gExn
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
             return;
         }
@@ -602,6 +727,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -612,6 +738,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -625,22 +755,28 @@ class RouteDynService
         Assert::isArray($subs = $v['subs']);
         /** @var array<int, array<string, mixed>> $subs */
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
         $curr = $curr === null ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
         /** @var array<int, array<string, mixed>> $subs */
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $curr = null === $curr ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
         /* @var array<int, array<string, mixed>> $subs */
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $curr = null === $curr ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
         /* @var array<int, array<string, mixed>> $subs */
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         self::dynamic_route($subs, $sub_namespace, null, $curr);
     }
 
@@ -648,6 +784,7 @@ class RouteDynService
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -658,6 +795,10 @@ class RouteDynService
      * @param array<string, mixed> $v
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function createRouteActs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -671,6 +812,7 @@ class RouteDynService
 <<<<<<< HEAD
             /** @var array<string, mixed> $v1 */
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
             /** @var array<string, mixed> $v1 */
@@ -681,6 +823,10 @@ class RouteDynService
             /* @var array<string, mixed> $v1 */
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+            /* @var array<string, mixed> $v1 */
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $v1['controller'] = $controller;
 
             $method = self::getMethod($v1, $namespace);
@@ -698,6 +844,7 @@ class RouteDynService
 <<<<<<< HEAD
         if (mb_substr($prefix, -1) === '.') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_4GRpgC
 <<<<<<< HEAD
         if (mb_substr($prefix, -1) === '.') {
@@ -708,6 +855,10 @@ class RouteDynService
         if ('.' === mb_substr($prefix, -1)) {
 >>>>>>> .merge_file_b3gExn
 >>>>>>> laraxot/dev
+=======
+        if ('.' === mb_substr($prefix, -1)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $prefix = mb_substr($prefix, 0, -1);
         }
 

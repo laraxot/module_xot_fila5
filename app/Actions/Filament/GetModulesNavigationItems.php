@@ -15,19 +15,25 @@ use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\json_encode;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
@@ -47,9 +53,13 @@ class GetModulesNavigationItems
 
         $modules = app(GetTenantModulesAction::class)->execute();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> laraxot/dev
+=======
+        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
+>>>>>>> 3792da0d (Check & fix styling)
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -127,10 +137,14 @@ class GetModulesNavigationItems
                      */
                     $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($user === null) {
 =======
                     if (null === $user) {
 >>>>>>> laraxot/dev
+=======
+                    if (null === $user) {
+>>>>>>> 3792da0d (Check & fix styling)
                         return false;
                     }
 
@@ -158,9 +172,13 @@ class GetModulesNavigationItems
     {
         $modules = app(GetTenantModulesAction::class)->execute();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // app(GetTenantModulesAction::class)->execute() restituisce sempre array
 >>>>>>> laraxot/dev
+=======
+        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
+>>>>>>> 3792da0d (Check & fix styling)
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 

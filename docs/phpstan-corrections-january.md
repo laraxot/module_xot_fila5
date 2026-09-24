@@ -138,10 +138,23 @@ return BlockData::collection([]);
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
+=======
+- [Activity Module Docs](../../activity/docs/readme.md)
+- [Cms Module Docs](../../cms/docs/readme.md)
+- [Geo Module Docs](../../geo/docs/readme.md)
+
+---
+
+>>>>>>> 3792da0d (Check & fix styling)
 - [Activity Module Docs](../../Activity/docs/README.md)
 - [Cms Module Docs](../../Cms/docs/README.md)
 - [Geo Module Docs](../../Geo/docs/README.md)
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 3792da0d (Check & fix styling)

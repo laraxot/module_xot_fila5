@@ -330,6 +330,7 @@ class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -343,6 +344,9 @@ class MyWidget extends XotBaseWidget
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         // Filament methods should not be static
     }

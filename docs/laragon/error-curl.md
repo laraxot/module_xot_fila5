@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -22,6 +23,11 @@ related:
 >>>>>>> 64619e34 (.)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: error-curl
@@ -29,6 +35,7 @@ canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 ---
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -39,6 +46,10 @@ See canonical documentation: ../../../../Themes/docs/shared-components/error-cur
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 
@@ -82,6 +93,7 @@ composer clearcache
 composer config --global cafile PATH/TO/cacert.pem
 composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 =======
@@ -89,10 +101,15 @@ See canonical documentation: ../../../../Themes/docs/shared-components/error-cur
 
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> a01602c7 (.)
 =======
 
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 >>>>>>> 64619e34 (.)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

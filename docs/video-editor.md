@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_oB0Iqn
@@ -32,12 +33,15 @@ note: "Convertito da video_editor.txt (documento) da convert-docs-txt-to-md.py."
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 https://github.com/kudlav/videoeditor
 https://github.com/kudlav/videoeditor-doc
 
 --------------------------------------------
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -61,3 +65,7 @@ composer require pbmedia/laravel-ffmpeg
 composer require pbmedia/laravel-ffmpeg
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+composer require pbmedia/laravel-ffmpeg
+>>>>>>> 3792da0d (Check & fix styling)

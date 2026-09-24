@@ -269,6 +269,7 @@ class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zakQSu
     public function getFormSchema(): array
@@ -290,6 +291,9 @@ class MyResource extends XotBaseResource
 >>>>>>> .merge_file_pyjiAs
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('name'),  // No ->label()!

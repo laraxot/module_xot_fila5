@@ -79,6 +79,7 @@ $json = dddx(['key' => 'value']);
 **Note**:
 - Usa `Safe\json_encode()` per type safety
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
 =======
 <<<<<<< HEAD
@@ -87,6 +88,9 @@ $json = dddx(['key' => 'value']);
 - **NON usare Log::debug()** (policy no-log-debug). Usare Log::info() per eventi significativi.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- **NON usare Log::debug()** (policy no-log-debug). Usare Log::info() per eventi significativi.
+>>>>>>> 3792da0d (Check & fix styling)
 - Ritorna sempre string (non void)
 
 ---
@@ -259,6 +263,7 @@ function isRunningTestBench(): bool
 1. **Sempre type hints**: Parametri e return types espliciti
 2. **Usa Safe functions**: `Safe\json_encode()`, `Safe\realpath()`, ecc.
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Logging appropriato**: Usa `Log::debug()` per debug, non `dd()` in produzione
 =======
 <<<<<<< HEAD
@@ -267,6 +272,9 @@ function isRunningTestBench(): bool
 3. **Logging appropriato**: NON usare Log::debug(). Usa Log::info/warning/error per eventi significativi. Per debug temporaneo usa dd() e rimuovi prima del commit.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+3. **Logging appropriato**: NON usare Log::debug(). Usa Log::info/warning/error per eventi significativi. Per debug temporaneo usa dd() e rimuovi prima del commit.
+>>>>>>> 3792da0d (Check & fix styling)
 4. **Null safety**: Usa nullsafe operator `?->` quando appropriato
 5. **Documentazione PHPDoc**: Ogni funzione ha docblock completo
 
@@ -323,6 +331,7 @@ function authId(): string|int|null {
 
 **Last Updated**: 2025-01-02
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan Level**: 10 compliant
 **Status**: ✅ Production Ready
 =======
@@ -335,3 +344,8 @@ function authId(): string|int|null {
 **Status**: ✅ Production Ready
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+**PHPStan Level**: 10 compliant
+**Status**: ✅ Production Ready
+>>>>>>> 3792da0d (Check & fix styling)

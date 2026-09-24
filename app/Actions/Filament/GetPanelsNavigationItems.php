@@ -36,10 +36,14 @@ class GetPanelsNavigationItems
                     /** @var FilamentUser|null $user */
                     $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($user === null) {
 =======
                     if (null === $user) {
 >>>>>>> laraxot/dev
+=======
+                    if (null === $user) {
+>>>>>>> 3792da0d (Check & fix styling)
                         return false;
                     }
 

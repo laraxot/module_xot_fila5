@@ -18,10 +18,14 @@ class GetYearFilter
     {
         $opts = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
         for ($curr = $from; $curr <= $to; $curr++) {
 =======
         for ($curr = $from; $curr <= $to; ++$curr) {
 >>>>>>> laraxot/dev
+=======
+        for ($curr = $from; $curr <= $to; ++$curr) {
+>>>>>>> 3792da0d (Check & fix styling)
             $currStr = (string) $curr;
             $opts[$currStr] = $currStr;
         }

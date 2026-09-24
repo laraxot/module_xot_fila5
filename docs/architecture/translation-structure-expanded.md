@@ -166,6 +166,7 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -173,6 +174,10 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
+- [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole
@@ -202,6 +207,7 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Data**: 2025-08-08
 =======
 <<<<<<< HEAD
@@ -210,3 +216,6 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 **Data**: 2025-08-08
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Data**: 2025-08-08
+>>>>>>> 3792da0d (Check & fix styling)

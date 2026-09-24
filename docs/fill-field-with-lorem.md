@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_7CBxT8
 <<<<<<< HEAD
@@ -122,3 +123,6 @@ https://www.fakenamegenerator.com/gen-male-fr-fr.php
 
 >>>>>>> .merge_file_IaLFTo
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)

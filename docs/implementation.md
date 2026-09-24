@@ -302,6 +302,7 @@ class XotPageTest extends TestCase
 ### Versione Incoming
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -310,3 +311,6 @@ class XotPageTest extends TestCase
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 3792da0d (Check & fix styling)

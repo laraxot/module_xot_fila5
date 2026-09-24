@@ -6,10 +6,13 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Mockery;
 =======
 >>>>>>> laraxot/dev
 use Mockery\MockInterface;
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 use PHPUnit\Framework\Assert;
@@ -17,10 +20,14 @@ use PHPUnit\Framework\Assert;
 describe('Safe Array By Model Cast Action', function (): void {
     test('converts model attributes to array correctly', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $model = new Activity;
 =======
         $model = new Activity();
 >>>>>>> laraxot/dev
+=======
+        $model = new Activity();
+>>>>>>> 3792da0d (Check & fix styling)
         $model->setRawAttributes(['name' => 'Test']);
 
         $action = app(SafeArrayByModelCastAction::class);
@@ -31,6 +38,7 @@ describe('Safe Array By Model Cast Action', function (): void {
     });
 
     test('falls back to safe execute on error', function (): void {
+<<<<<<< HEAD
         /** @var Model&MockInterface $model */
 <<<<<<< HEAD
         $model = Mockery::mock(Model::class);
@@ -40,6 +48,24 @@ describe('Safe Array By Model Cast Action', function (): void {
         $model->shouldReceive('attributesToArray')->andThrow(new \Exception('Mock error'));
         $model->shouldReceive('getAttributes')->andReturn(['name' => 'Fallback']);
         $model->shouldReceive('getAttribute')->andReturn('Fallback');
+=======
+        $model = new class extends Model {
+            public function attributesToArray(): array
+            {
+                throw new \Exception('Mock error');
+            }
+
+            public function getAttributes(): array
+            {
+                return ['name' => 'Fallback'];
+            }
+
+            public function getAttribute($key): mixed
+            {
+                return 'Fallback';
+            }
+        };
+>>>>>>> 3792da0d (Check & fix styling)
 
         $action = app(SafeArrayByModelCastAction::class);
         $result = $action->execute($model);

@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Nwidart\Modules\Module;
 =======
 <<<<<<< .merge_file_GNpg2u
@@ -26,16 +27,23 @@ use function Safe\preg_match;
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
 >>>>>>> .merge_file_D0wWUc
+=======
+use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
+use Nwidart\Modules\Module;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\preg_match;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_GNpg2u
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_D0wWUc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -70,16 +78,22 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GNpg2u
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         // Registra middleware di monitoraggio
         if (config('filament_optimization.monitoring.memory_profiling', false)) {
             $this->registerMemoryMonitoring();
         }
 
+<<<<<<< HEAD
 >>>>>>> .merge_file_D0wWUc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -151,9 +165,12 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_GNpg2u
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Registra il middleware di monitoraggio memoria.
      */
     private function registerMemoryMonitoring(): void
@@ -163,8 +180,11 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
+<<<<<<< HEAD
 >>>>>>> .merge_file_D0wWUc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

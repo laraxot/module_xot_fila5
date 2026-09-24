@@ -177,6 +177,7 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [MODULE_STRUCTURE.md](../../module_structure.md) - Struttura standard dei moduli
 - [README.md](../../README.md) - Indice principale della documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DIRECTORY-CASE-SENSITIVITY.md](directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 =======
@@ -188,6 +189,10 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [NAMESPACE-RULES.md](../../NAMESPACE-RULES.md) - Regole per i namespace nei moduli
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [DIRECTORY-CASE-SENSITIVITY.md](../../DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity delle directory
+- [NAMESPACE-RULES.md](../../NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+>>>>>>> 3792da0d (Check & fix styling)
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)

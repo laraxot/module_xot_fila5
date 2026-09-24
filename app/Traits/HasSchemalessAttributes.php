@@ -6,17 +6,23 @@ namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\json_encode;
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\json_encode;
 
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
  *
@@ -26,8 +32,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property SchemalessAttributes|null $extra_attributes
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
+<<<<<<< HEAD
  *
  * @phpstan-ignore trait.unused
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  */
 trait HasSchemalessAttributes
 {
@@ -62,11 +71,16 @@ trait HasSchemalessAttributes
      * Scope per filtrare per attributi schemaless.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<static>  $query
 =======
      * @param Builder<static> $query
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -82,6 +96,7 @@ trait HasSchemalessAttributes
      * Scope per query specifiche su extra_attributes.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Builder<static>  $query
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
 =======
@@ -89,6 +104,10 @@ trait HasSchemalessAttributes
      * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile da confrontare
      *
 >>>>>>> laraxot/dev
+=======
+     * @param Builder<static> $query
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
@@ -119,6 +138,7 @@ trait HasSchemalessAttributes
 
     /**
      * Get un valore da extra_attributes.
+<<<<<<< HEAD
      *
 <<<<<<< HEAD
      * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
@@ -127,6 +147,8 @@ trait HasSchemalessAttributes
      *
 >>>>>>> laraxot/dev
      * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {
@@ -135,12 +157,15 @@ trait HasSchemalessAttributes
 
     /**
      * Set un valore in extra_attributes.
+<<<<<<< HEAD
      *
 <<<<<<< HEAD
      * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
 =======
      * @param scalar|array<array-key, mixed>|null $value Valore JSON-serializzabile
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {

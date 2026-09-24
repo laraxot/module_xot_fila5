@@ -6,10 +6,13 @@ namespace Modules\Xot\Tests\Unit\Models;
 
 use Modules\Xot\Tests\TestCase;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use ReflectionClass;
 =======
 <<<<<<< .merge_file_lpuvPc
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use PHPUnit\Framework\Assert;
 =======
 <<<<<<< HEAD
@@ -18,9 +21,12 @@ use PHPUnit\Framework\Assert;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 use ReflectionClass;
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_TPktOC
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
@@ -85,6 +91,7 @@ function methodsShadowingTraits(): array
 
     foreach ($iterator as $fileInfo) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
 <<<<<<< .merge_file_lpuvPc
@@ -93,6 +100,9 @@ function methodsShadowingTraits(): array
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_TPktOC
 >>>>>>> laraxot/dev
+=======
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+>>>>>>> 3792da0d (Check & fix styling)
             continue;
         }
 
@@ -107,13 +117,17 @@ function methodsShadowingTraits(): array
         $cls = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_lpuvPc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
             continue;
         }
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls) !== 1) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -123,6 +137,8 @@ function methodsShadowingTraits(): array
         if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls)) {
 >>>>>>> .merge_file_TPktOC
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             continue;
         }
 
@@ -133,6 +149,7 @@ function methodsShadowingTraits(): array
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $reflection = new ReflectionClass($class);
 =======
 <<<<<<< .merge_file_lpuvPc
@@ -141,6 +158,9 @@ function methodsShadowingTraits(): array
         $reflection = new \ReflectionClass($class);
 >>>>>>> .merge_file_TPktOC
 >>>>>>> laraxot/dev
+=======
+        $reflection = new ReflectionClass($class);
+>>>>>>> 3792da0d (Check & fix styling)
         $traitMethods = [];
 
         foreach ($reflection->getTraits() as $trait) {
@@ -150,6 +170,7 @@ function methodsShadowingTraits(): array
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($traitMethods === []) {
 =======
 <<<<<<< .merge_file_lpuvPc
@@ -158,6 +179,9 @@ function methodsShadowingTraits(): array
         if ([] === $traitMethods) {
 >>>>>>> .merge_file_TPktOC
 >>>>>>> laraxot/dev
+=======
+        if ($traitMethods === []) {
+>>>>>>> 3792da0d (Check & fix styling)
             continue;
         }
 
@@ -180,6 +204,7 @@ function methodsShadowingTraits(): array
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($shadowed !== []) {
 =======
 <<<<<<< .merge_file_lpuvPc
@@ -188,6 +213,9 @@ function methodsShadowingTraits(): array
         if ([] !== $shadowed) {
 >>>>>>> .merge_file_TPktOC
 >>>>>>> laraxot/dev
+=======
+        if ($shadowed !== []) {
+>>>>>>> 3792da0d (Check & fix styling)
             $offenders[str_replace(base_path().'/', '', $path)] = $shadowed;
         }
     }

@@ -14,9 +14,12 @@ class FilterFormWidget extends XotBaseSchemaWidget
 
     // public array $form_schema = [];
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public function getFormSchema(): array
     {
         return [];

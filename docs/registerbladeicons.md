@@ -106,6 +106,7 @@ Config::set('blade-icons.sets.'.$this->nameLower.'.prefix', $this->nameLower);
 ## Nota sulla gestione centralizzata dei path
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -124,6 +125,8 @@ Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 La stessa filosofia di gestione centralizzata dei path tramite action (es. GetModulePathByGeneratorAction) si applica anche alle traduzioni. Vedi la sezione aggiornata in [XotBaseServiceProvider.md](./XotBaseServiceProvider.md#gestione-dei-path-delle-traduzioni).
 
 ## Nota sulla correzione e centralizzazione ([DATE])
@@ -142,6 +145,10 @@ La stessa filosofia di gestione centralizzata dei path tramite action (es. GetMo
 **Collegamento:** Vedi anche [XotBaseServiceProvider.md](./XotBaseServiceProvider.md)
 
 ## Conclusione
+<<<<<<< HEAD
 Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e i principi di design software possano convergere in una soluzione elegante ed efficace. La sua implementazione bilancia perfettamente la necessità di flessibilità con la robustezza del sistema, creando un ponte tra la modularità del codice e l'espressività dell'interfaccia utente.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e i principi di design software possano convergere in una soluzione elegante ed efficace. La sua implementazione bilancia perfettamente la necessità di flessibilità con la robustezza del sistema, creando un ponte tra la modularità del codice e l'espressività dell'interfaccia utente.
+>>>>>>> 3792da0d (Check & fix styling)

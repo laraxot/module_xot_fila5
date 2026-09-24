@@ -24,6 +24,7 @@
 - [Update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/MODULE_NAMESPACE_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -31,6 +32,10 @@
 - [Root MODULE_NAMESPACE_RULES.md](../../../../docs/project/module_namespace_rules.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
+- [Root MODULE_NAMESPACE_RULES.md](../../../../docs/project/module_namespace_rules.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -40,6 +45,7 @@
 
 Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -48,6 +54,11 @@ Ultimo aggiornamento: 2025-05-13
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
+- [Ripresa lavoro migrazioni in root](../../../../docs/project/module_namespace_rules.md)
+
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -56,17 +67,22 @@ Ultimo aggiornamento: 2025-05-13
 - Ogni Action custom Filament deve avere un nome univoco passato a `make()` o impostato come default.
 - Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#2025-05-14-regola-nome-univoco-per-headeraction-filament)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#[DATE]-regola-nome-univoco-per-headeraction-filament)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#[DATE]-regola-nome-univoco-per-headeraction-filament)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
 **Backlink modulo Performance:**
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -74,6 +90,9 @@ Ultimo aggiornamento: 2025-05-13
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -81,17 +100,22 @@ Ultimo aggiornamento: 2025-05-13
 
 - Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#2025-05-14-pattern-definitivo-headeraction-custom-filament-3]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#[DATE]-pattern-definitivo-headeraction-custom-filament-3]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#[DATE]-pattern-definitivo-headeraction-custom-filament-3]
+>>>>>>> 3792da0d (Check & fix styling)
 - Il pattern Filament 2 (override statico di make) è obsoleto e genera errori: non usarlo mai nei nuovi moduli o refactoring.
 
 ---
 
 ## Regola colonne tabellari Filament (2025-05-14)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -99,6 +123,9 @@ Ultimo aggiornamento: 2025-05-13
 ## Regola colonne tabellari Filament ([DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Regola colonne tabellari Filament ([DATE])
+>>>>>>> 3792da0d (Check & fix styling)
 
 - Le colonne delle tabelle Filament devono essere derivate solo dal modello e dalla migrazione.
 - La UI può mostrare solo un sottoinsieme delle colonne, secondo le regole documentate in Performance.
@@ -108,12 +135,16 @@ Ultimo aggiornamento: 2025-05-13
 
 ## Regola estensione modelli aggregati (2025-05-15)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## Regola estensione modelli aggregati ([DATE])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Regola estensione modelli aggregati ([DATE])
+>>>>>>> 3792da0d (Check & fix styling)
 
 - I modelli aggregati e di totali del modulo Performance (es. OrganizzativaTotValutatoreId) devono estendere il `BaseModel` locale (`Modules\Performance\Models\BaseModel`), **NON** `Modules\Xot\Models\BaseModel`.
 - **Motivazione**: isolamento, override locale, necessità di personalizzazione e compatibilità con logiche specifiche del modulo Performance.
@@ -124,6 +155,7 @@ Ultimo aggiornamento: 2025-05-13
 - Vedi dettaglio e memoria storica in [Modules/Performance/project_docs/organizzativa-models.md](../../Performance/project_docs/organizzativa-models.md#organizzativatotvalutatoreid-regola-di-estensione)
 - [docs/links.md root](../../../project_docs/links.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -134,6 +166,8 @@ Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - **Memoria storica**: rollback della regola il [DATE], documentato in Performance/project_docs/organizzativa-models.md e qui. Precedente regola ([DATE]) annullata per esigenze di override e compatibilità.
 - Ogni violazione va documentata e corretta anche nella root docs.
 - Vedi dettaglio e memoria storica in [Modules/Performance/project_docs/organizzativa-models.md](../../Performance/project_docs/organizzativa-models.md#organizzativatotvalutatoreid-regola-di-estensione)
@@ -141,6 +175,10 @@ Ultimo aggiornamento: 2025-05-13
 
 > ⚠️ **Warning**: Estendere Xot\BaseModel può causare override indesiderati, perdita di flessibilità e problemi di compatibilità con logiche locali. Seguire sempre la regola sopra per tutti i modelli di totali/aggregati in Performance.
 
+<<<<<<< HEAD
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 3792da0d (Check & fix styling)

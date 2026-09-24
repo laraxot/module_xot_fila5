@@ -21,6 +21,7 @@ class MyPage extends XotBaseViewRecord
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -31,6 +32,8 @@ namespace Modules\Quaeris\App\Filament\Resources\SurveyPdfResource\Resources\Que
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
@@ -39,8 +42,11 @@ namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources
 
 // ❌ SBAGLIATO
 namespace Modules\ExternalProject\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 3. **Uso di Schema invece di Form**
@@ -87,6 +93,7 @@ class MyWidget extends Widget implements HasForms
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 =======
 <<<<<<< HEAD
@@ -96,6 +103,10 @@ namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -119,6 +130,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -128,6 +140,10 @@ namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\ExternalProject\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\ExternalProject\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -185,6 +201,7 @@ class MyPage extends XotBasePage
 // ❌ SBAGLIATO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -198,6 +215,9 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -206,6 +226,7 @@ public function getFormSchema(): array
 ### 3. **Namespace Errati**
 ```php
 // ❌ SBAGLIATO
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -217,6 +238,8 @@ namespace Modules\Quaeris\Filament\Widgets;
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\healthcare_app\App\Filament\Widgets;
 
 // ✅ CORRETTO
@@ -225,8 +248,11 @@ namespace Modules\ExternalProject\App\Filament\Widgets;
 
 // ✅ CORRETTO
 namespace Modules\ExternalProject\Filament\Widgets;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## 🔧 Implementazione Corretta
@@ -238,6 +264,7 @@ namespace Modules\ExternalProject\Filament\Widgets;
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 =======
 <<<<<<< HEAD
@@ -247,10 +274,15 @@ namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 =======
@@ -261,6 +293,10 @@ use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\Questi
 use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+>>>>>>> 3792da0d (Check & fix styling)
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -305,6 +341,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -314,6 +351,10 @@ namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\ExternalProject\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\ExternalProject\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -368,6 +409,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 - [Filament 4 Migration Guide](./filament4_migration.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 =======
 <<<<<<< HEAD
@@ -376,3 +418,6 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> 3792da0d (Check & fix styling)

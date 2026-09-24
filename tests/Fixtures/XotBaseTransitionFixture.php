@@ -25,6 +25,7 @@ final class XotBaseTransitionFixture
         $record = new class extends Model
         {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_tUKVM8
 <<<<<<< HEAD
         $record = new class extends Model
@@ -36,6 +37,10 @@ final class XotBaseTransitionFixture
         $record = new class extends Model {
 >>>>>>> .merge_file_3BlN1b
 >>>>>>> laraxot/dev
+=======
+        $record = new class extends Model {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             /** @var string */
             protected $table = 'xot_transition_test';
         };
@@ -44,6 +49,7 @@ final class XotBaseTransitionFixture
         $transition = new class($record) extends XotBaseTransition
         {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_tUKVM8
 <<<<<<< HEAD
         $transition = new class($record) extends XotBaseTransition
@@ -55,6 +61,10 @@ final class XotBaseTransitionFixture
         $transition = new class($record) extends XotBaseTransition {
 >>>>>>> .merge_file_3BlN1b
 >>>>>>> laraxot/dev
+=======
+        $transition = new class($record) extends XotBaseTransition {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             public static string $name = 'test_transition';
         };
 

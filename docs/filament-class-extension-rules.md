@@ -67,6 +67,7 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 |-------------|------------|
 | `Filament\Actions\ActionGroup` | `Modules\Xot\Filament\Actions\XotBaseActionGroup` |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_exAuHL
@@ -78,6 +79,8 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 >>>>>>> .merge_file_4RIqcP
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Resources
 
@@ -635,6 +638,7 @@ class UserResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -648,6 +652,9 @@ class UserResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('name')->required(),
@@ -908,6 +915,7 @@ Quando finisci una modifica devi sempre controllare con:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
 =======
 <<<<<<< HEAD
@@ -916,3 +924,6 @@ Quando finisci una modifica devi sempre controllare con:
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+>>>>>>> 3792da0d (Check & fix styling)

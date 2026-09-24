@@ -66,6 +66,7 @@ $json = dddx(['key' => 'value']);
 
 **Caratteristiche**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
 =======
 <<<<<<< HEAD
@@ -74,6 +75,9 @@ $json = dddx(['key' => 'value']);
 - Solo sviluppo: non usare in produzione (policy no-log-debug)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Solo sviluppo: non usare in produzione (policy no-log-debug)
+>>>>>>> 3792da0d (Check & fix styling)
 - Usa `Safe\json_encode()` per type safety
 - Ritorna string (non void)
 
@@ -372,12 +376,16 @@ composer dump-autoload
 
 **Last Updated**: 2 Dicembre 2025
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
@@ -385,6 +393,7 @@ composer dump-autoload
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
 =======
 <<<<<<< HEAD
@@ -393,3 +402,6 @@ composer dump-autoload
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+>>>>>>> 3792da0d (Check & fix styling)

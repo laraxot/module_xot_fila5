@@ -61,6 +61,7 @@ Edita i file di configurazione e inserisci le tue keys.
 
 ```text
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
 =======
 <<<<<<< HEAD
@@ -69,6 +70,9 @@ Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
 Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/rules/
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Analizza errori PHPStan in Modules/healthcare_app seguendo pattern in .windsurf/rules/
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Refactoring Guidato
@@ -90,6 +94,7 @@ Crea PR per branch feature/mcp-integration con descrizione delle modifiche
 ## Supporto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
 =======
 <<<<<<< HEAD
@@ -98,3 +103,6 @@ Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshoot
 Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Per problemi, consulta [`mcp-servers.md`](./mcp-servers.md) sezione Troubleshooting.
+>>>>>>> 3792da0d (Check & fix styling)

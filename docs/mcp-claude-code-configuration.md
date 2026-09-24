@@ -3,6 +3,7 @@
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono.
 =======
 <<<<<<< HEAD
@@ -12,6 +13,10 @@ Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida desc
 Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono.
+Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto.
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Prerequisiti
 
@@ -27,6 +32,7 @@ Permette l'accesso ai file del progetto.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http filesystem-quaeris http://localhost:8000/mcp/filesystem
 =======
 <<<<<<< HEAD
@@ -36,6 +42,10 @@ claude mcp add --transport http filesystem-healthcare_app http://localhost:8000/
 claude mcp add --transport http filesystem http://localhost:8000/mcp/filesystem
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add --transport http filesystem-healthcare_app http://localhost:8000/mcp/filesystem
+claude mcp add --transport http filesystem http://localhost:8000/mcp/filesystem
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 **Nota**: Richiede un server MCP HTTP in esecuzione. Per sviluppo locale, utilizzare server STDIO invece.
@@ -46,6 +56,7 @@ Permette chiamate HTTP e API.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http fetch-quaeris http://localhost:8000/mcp/fetch
 =======
 <<<<<<< HEAD
@@ -54,6 +65,9 @@ claude mcp add --transport http fetch-quaeris http://localhost:8000/mcp/fetch
 claude mcp add --transport http fetch-healthcare_app http://localhost:8000/mcp/fetch
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add --transport http fetch-healthcare_app http://localhost:8000/mcp/fetch
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 3. Memory Server
@@ -61,6 +75,7 @@ claude mcp add --transport http fetch-healthcare_app http://localhost:8000/mcp/f
 Memoria temporanea per contesto tra richieste.
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add --transport http memory-quaeris http://localhost:8000/mcp/memory
 =======
@@ -70,6 +85,9 @@ claude mcp add --transport http memory-quaeris http://localhost:8000/mcp/memory
 claude mcp add --transport http memory-healthcare_app http://localhost:8000/mcp/memory
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add --transport http memory-healthcare_app http://localhost:8000/mcp/memory
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 4. MySQL Server
@@ -77,6 +95,7 @@ claude mcp add --transport http memory-healthcare_app http://localhost:8000/mcp/
 Interazione con database MySQL.
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add --transport http mysql-quaeris http://localhost:8000/mcp/mysql
 =======
@@ -86,6 +105,9 @@ claude mcp add --transport http mysql-quaeris http://localhost:8000/mcp/mysql
 claude mcp add --transport http mysql-healthcare_app http://localhost:8000/mcp/mysql
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add --transport http mysql-healthcare_app http://localhost:8000/mcp/mysql
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 **Variabili d'ambiente richieste**:
@@ -101,6 +123,7 @@ Analisi codice e ottimizzazione.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http sequential-thinking-quaeris http://localhost:8000/mcp/sequential-thinking
 =======
 <<<<<<< HEAD
@@ -109,6 +132,9 @@ claude mcp add --transport http sequential-thinking-quaeris http://localhost:800
 claude mcp add --transport http sequential-thinking-healthcare_app http://localhost:8000/mcp/sequential-thinking
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add --transport http sequential-thinking-healthcare_app http://localhost:8000/mcp/sequential-thinking
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## Configurazione con Server STDIO (Raccomandato)
@@ -119,6 +145,7 @@ Per sviluppo locale, è preferibile utilizzare server STDIO invece di HTTP:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add filesystem-quaeris npx -y @modelcontextprotocol/server-filesystem server-memory
 =======
 <<<<<<< HEAD
@@ -127,11 +154,15 @@ claude mcp add filesystem-quaeris npx -y @modelcontextprotocol/server-filesystem
 claude mcp add filesystem-healthcare_app npx -y @modelcontextprotocol/server-filesystem server-memory
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add filesystem-healthcare_app npx -y @modelcontextprotocol/server-filesystem server-memory
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### MySQL con STDIO
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
 =======
@@ -141,6 +172,9 @@ claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
 claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 **Con variabili d'ambiente**:
@@ -152,6 +186,7 @@ export DB_PASSWORD=your_password
 export DB_DATABASE=your_database
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
 =======
 <<<<<<< HEAD
@@ -160,6 +195,9 @@ claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
 claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp add mysql-healthcare_app npx -y @modelcontextprotocol/server-mysql
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## Gestione Server
@@ -174,6 +212,7 @@ claude mcp list
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp remove filesystem-quaeris
 =======
 <<<<<<< HEAD
@@ -182,11 +221,15 @@ claude mcp remove filesystem-quaeris
 claude mcp remove filesystem-healthcare_app
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp remove filesystem-healthcare_app
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Test Connessione
 
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 claude mcp test filesystem-quaeris
 =======
@@ -196,6 +239,9 @@ claude mcp test filesystem-quaeris
 claude mcp test filesystem-healthcare_app
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+claude mcp test filesystem-healthcare_app
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## Configurazione Avanzata
@@ -207,6 +253,7 @@ Per server MCP personalizzati, creare uno script wrapper:
 ```bash
 #!/bin/bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ~/bin/mcp-mysql-quaeris.sh
 =======
 <<<<<<< HEAD
@@ -215,6 +262,9 @@ Per server MCP personalizzati, creare uno script wrapper:
 # ~/bin/mcp-mysql-healthcare_app.sh
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# ~/bin/mcp-mysql-healthcare_app.sh
+>>>>>>> 3792da0d (Check & fix styling)
 
 export MYSQL_HOST="${DB_HOST:-localhost}"
 export MYSQL_PORT="${DB_PORT:-3306}"
@@ -229,6 +279,7 @@ Poi aggiungere il server:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 chmod +x ~/bin/mcp-mysql-quaeris.sh
 claude mcp add mysql-quaeris ~/bin/mcp-mysql-quaeris.sh
 =======
@@ -240,6 +291,10 @@ chmod +x ~/bin/mcp-mysql-healthcare_app.sh
 claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+chmod +x ~/bin/mcp-mysql-healthcare_app.sh
+claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ## Troubleshooting
@@ -256,6 +311,7 @@ claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
    ls -la /docs.anthropic.com/claude/docs/mcp)
 - [Model Context Protocol Specification](https://modelcontextprotocol.io)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [MCP Editors Configuration](../mcp-editors-configuration.md)
 =======
 <<<<<<< HEAD
@@ -264,3 +320,6 @@ claude mcp add mysql-healthcare_app ~/bin/mcp-mysql-healthcare_app.sh
 - [MCP Editors Configuration](../mcp-editors-configuration.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [MCP Editors Configuration](../mcp-editors-configuration.md)
+>>>>>>> 3792da0d (Check & fix styling)

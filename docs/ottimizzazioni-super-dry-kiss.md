@@ -59,6 +59,7 @@ Documento completo di ottimizzazioni per il modulo Xot seguendo i principi **SUP
 - `CHANGELOG.md.backup` (backup non necessario)
 - `phpstan-baseline.neon` (0 bytes, inutile)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
 =======
 <<<<<<< HEAD
@@ -67,6 +68,9 @@ Documento completo di ottimizzazioni per il modulo Xot seguendo i principi **SUP
 - `_activity.code-workspace` (duplicato errato — ogni modulo deve avere UN SOLO file `_<snake_case_module_name>.code-workspace`, ad es. `_xot.code-workspace`)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `_activity.code-workspace` (duplicato errato — ogni modulo deve avere UN SOLO file `_<snake_case_module_name>.code-workspace`, ad es. `_xot.code-workspace`)
+>>>>>>> 3792da0d (Check & fix styling)
 
 **Soluzione SUPER DRY + KISS:**
 1. **Eliminare** file vuoti e backup
@@ -300,6 +304,7 @@ class ExampleService implements ServiceInterface
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -310,12 +315,17 @@ class ExampleService implements ServiceInterface
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Documentazione Core](../../../../docs/core/)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -323,6 +333,7 @@ class ExampleService implements ServiceInterface
 **Data:** 2025-01-XX
 **Stato:** In Analisi
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità:** ALTA
 =======
 <<<<<<< HEAD
@@ -331,3 +342,6 @@ class ExampleService implements ServiceInterface
 **Priorità:** ALTA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Priorità:** ALTA
+>>>>>>> 3792da0d (Check & fix styling)

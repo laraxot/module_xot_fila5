@@ -46,12 +46,16 @@ Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensio
 Per dettagli implementativi e best practice vedi:
 - [Geo/docs/geo-json-model.md](../../Geo/docs/geo-json-model.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [<nome progetto>/docs/geo-integration.md](../../<nome progetto>/docs/geo-integration.md)
 - [Questa stessa doc (Xot/module-structure.md)](module-structure.md)
 
@@ -81,6 +85,7 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -91,6 +96,8 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -105,8 +112,11 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
 - [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Moduli Collegati
 - [UI](../UI/project_docs/README.md) - Componenti di interfaccia
@@ -271,9 +281,12 @@ User/
 
 ### Modulo UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Componenti Volt](../ui/project_docs/components/volt.md)
 - [Layout](../ui/project_docs/layouts.md)
 - [Temi](../ui/project_docs/themes.md)
@@ -339,8 +352,11 @@ User/
 - [Grafici](../chart/project_docs/charts.md)
 - [Dashboard](../chart/project_docs/dashboard.md)
 - [Visualizzazione](../chart/project_docs/visualization.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Componenti Volt](../UI/project_docs/components/volt.md)
 - [Layout](../UI/project_docs/layouts.md)
 - [Temi](../UI/project_docs/themes.md)
@@ -549,6 +565,7 @@ Se trovi una directory con case errato:
 
 ## Collegamenti tra versioni di module_structure.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
 =======
 <<<<<<< HEAD
@@ -557,3 +574,6 @@ Se trovi una directory con case errato:
 * [module_structure.md](../../../../../docs/project/error_analysis/module_structure.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [module_structure.md](../../../../../docs/project/error_analysis/module_structure.md)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -7,18 +7,27 @@ description: 'Elenco di 1 riferimenti esterni raccolti per to study, deduplicati
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 converted_from: __to_study.txt
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+converted_from: __to_study.txt
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 converted_from: to-study.txt
 =======
 converted_from: __to_study.txt
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

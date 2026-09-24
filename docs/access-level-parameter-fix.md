@@ -4,6 +4,7 @@
 
 ### Problem
 <<<<<<< HEAD
+<<<<<<< HEAD
 Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
 =======
 <<<<<<< HEAD
@@ -12,6 +13,9 @@ Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTab
 Error: "Access level to Modules\healthcare_app\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Error: "Access level to Modules\healthcare_app\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Root Cause
 When extending classes or using traits that define methods with specific access levels, child classes must maintain the same or broader access level. In this case, the parent class/trait expects `getTableHeaderActions()` to be public.
@@ -21,6 +25,7 @@ Ensure the method is declared as public in the BaseTableWidget class:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In Modules/Quaeris/Filament/Widgets/BaseTableWidget.php
 =======
 <<<<<<< HEAD
@@ -29,6 +34,9 @@ Ensure the method is declared as public in the BaseTableWidget class:
 // In Modules/healthcare_app/Filament/Widgets/BaseTableWidget.php
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// In Modules/healthcare_app/Filament/Widgets/BaseTableWidget.php
+>>>>>>> 3792da0d (Check & fix styling)
 class BaseTableWidget extends XotBaseTableWidget // or uses HasXotTable trait
 {
     // This method MUST be public to match parent expectations
@@ -58,6 +66,7 @@ In `QuestionChartAnswersWidget.php`, declare the `group` parameter as a public p
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In Modules/Quaeris/Filament/Widgets/QuestionChartAnswersWidget.php
 =======
 <<<<<<< HEAD
@@ -66,6 +75,9 @@ In `QuestionChartAnswersWidget.php`, declare the `group` parameter as a public p
 // In Modules/healthcare_app/Filament/Widgets/QuestionChartAnswersWidget.php
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// In Modules/healthcare_app/Filament/Widgets/QuestionChartAnswersWidget.php
+>>>>>>> 3792da0d (Check & fix styling)
 class QuestionChartAnswersWidget extends XotBaseTableWidget
 {
     // Declare the parameter that will be passed from parent
@@ -115,6 +127,7 @@ public function mount()
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -123,6 +136,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Modules\Xot\Filament\Traits\TransTrait;
@@ -148,6 +164,7 @@ class BaseTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
 =======
 <<<<<<< HEAD
@@ -156,6 +173,9 @@ namespace Modules\Quaeris\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Modules\Xot\Filament\Traits\TransTrait;

@@ -6,15 +6,21 @@
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [Regole per i Percorsi Relativi](./RELATIVE_PATHS_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 > - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [Regole per i Percorsi Relativi](./relative_paths_rules.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 > - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)
 > - [Analisi nel modulo bashscripts](../../../../bashscripts/docs/prompt_docs_analysis.md)
 
@@ -34,12 +40,16 @@ Per migliorare il prompt, propongo di applicare i seguenti principi:
 
 1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./PROMPT_RULES.md), il prompt deve rimanere una singola stringa continua senza formattazione.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./prompt_rules.md), il prompt deve rimanere una singola stringa continua senza formattazione.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+1. **Mantenere la natura di stringa continua**: Come richiesto dalla [Regola Universale per i Prompt](./prompt_rules.md), il prompt deve rimanere una singola stringa continua senza formattazione.
+>>>>>>> 3792da0d (Check & fix styling)
 2. **Migliorare l'organizzazione logica**: Raggruppare concetti correlati per migliorare la comprensione.
 3. **Eliminare ridondanze**: Rimuovere informazioni duplicate per rendere il prompt più conciso.
 4. **Garantire coerenza**: Assicurare che tutti gli esempi e le istruzioni siano coerenti con le regole stabilite.
@@ -95,6 +105,7 @@ Dal punto di vista tecnico, l'implementazione di questi miglioramenti richiede:
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
 =======
 <<<<<<< HEAD
@@ -103,3 +114,6 @@ Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qua
 Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qualità della documentazione nel progetto. I miglioramenti proposti mirano a renderlo più efficace e facile da seguire, mantenendo al contempo la sua natura di stringa continua come richiesto dalle regole del progetto.
+>>>>>>> 3792da0d (Check & fix styling)

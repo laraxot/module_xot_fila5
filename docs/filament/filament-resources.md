@@ -25,6 +25,7 @@ class SessionResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -38,6 +39,9 @@ class SessionResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione
@@ -119,6 +123,7 @@ return [
 - Mantenute le validazioni e la struttura del form
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -127,3 +132,6 @@ return [
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 3792da0d (Check & fix styling)

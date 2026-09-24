@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * @see https://dev.to/jackmiras/laravels-exceptions-part-2-custom-exceptions-1367
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\Xot\Exceptions;
 
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -17,12 +25,16 @@ class ExceptionHandler
     /**
      * Configura la gestione delle eccezioni.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param Exceptions $exceptions Configuratore eccezioni Laravel
      *                               =======
      * @param Exceptions $exceptions Configuratore eccezioni Laravel
      *                               >>>>>>> laraxot/dev
+=======
+     * @param Exceptions $exceptions Configuratore eccezioni Laravel
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function handles(Exceptions $exceptions): void
     {

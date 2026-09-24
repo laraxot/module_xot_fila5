@@ -16,9 +16,14 @@ class DeleteTableIndexByModelClassIndexNameAction
     {
         Assert::isInstanceOf($model = app($modelClass), EloquentModel::class);
         $table = $model->getTable();
+<<<<<<< HEAD
         Assert::stringNotEmpty($table);
         $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
         $doctrineTable = $formManager->introspectTableByUnquotedName($table);
+=======
+        $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
+        $doctrineTable = $formManager->introspectTable($table);
+>>>>>>> 3792da0d (Check & fix styling)
         // $doctrineTable=$formManager->listTableDetails($table);
         $doctrineTable->dropIndex($indexName);
 

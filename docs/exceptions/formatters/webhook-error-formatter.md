@@ -45,6 +45,7 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -55,6 +56,8 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Error Handling Guidelines](../../exception-handling-guide.md)
 - [Webhook Integration](../../integrations/webhook-guide.md)
 - [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
@@ -62,6 +65,10 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 - [Error Handling Guidelines](../../EXCEPTION-HANDLING-GUIDE.md)
 - [Webhook Integration](../../integrations/WEBHOOK-GUIDE.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< HEAD
 - [Error Formatters Overview](../README.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Error Formatters Overview](../README.md)
+>>>>>>> 3792da0d (Check & fix styling)

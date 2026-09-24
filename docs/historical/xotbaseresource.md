@@ -27,6 +27,7 @@ Questo significa che:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xxTppR
 =======
@@ -46,6 +47,9 @@ abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_wPaPKR
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -81,6 +85,7 @@ class NotificationResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xxTppR
 =======
@@ -100,6 +105,9 @@ class NotificationResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_wPaPKR
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('title')

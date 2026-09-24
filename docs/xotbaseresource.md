@@ -27,6 +27,7 @@ Questo significa che:
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -40,6 +41,9 @@ abstract public function getFormSchema(): array;
 abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+abstract public static function getFormSchema(): array;
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -75,6 +79,7 @@ class NotificationResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -88,6 +93,9 @@ class NotificationResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -105,6 +113,7 @@ class NotificationResource extends XotBaseResource
 
 ### Collegamenti nella Root
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -118,6 +127,8 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Notify Resource](../../Notify/docs/filament-resources.md)
 - [User Resource](../../User/docs/filament-resources.md)
 - [Architettura Filament](../../../../docs/architecture/filament.md)
@@ -127,8 +138,11 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti ai Moduli
 - [Notify Resource](../../notify/docs/filament-resources.md)
 - [User Resource](../../user/docs/filament-resources.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Note Importanti
 
@@ -137,6 +151,7 @@ class NotificationResource extends XotBaseResource
 3. Utilizzare i file di traduzione per le label
 4. Evitare override non necessari di metodi
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. Seguire le convenzioni di Filament
 =======
 <<<<<<< HEAD
@@ -145,3 +160,6 @@ class NotificationResource extends XotBaseResource
 5. Seguire le convenzioni di Filament
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+5. Seguire le convenzioni di Filament
+>>>>>>> 3792da0d (Check & fix styling)

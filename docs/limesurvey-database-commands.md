@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Database Analysis Commands and Tools for quaeris_survey
 =======
 <<<<<<< HEAD
@@ -7,6 +8,9 @@
 # Database Analysis Commands and Tools for healthcare_app_survey
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+# Database Analysis Commands and Tools for healthcare_app_survey
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Essential Database Queries
 
@@ -46,12 +50,16 @@ SELECT
 FROM lime_survey_[SURVEY_ID]
 WHERE submitdate BETWEEN '2023-01-01' AND '2023-12-31'
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 WHERE submitdate BETWEEN '[DATE]' AND '[DATE]'
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+WHERE submitdate BETWEEN '[DATE]' AND '[DATE]'
+>>>>>>> 3792da0d (Check & fix styling)
 GROUP BY DATE(submitdate)
 ORDER BY response_date;
 
@@ -85,6 +93,7 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 ```bash
 # Connect to specific database
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -95,12 +104,17 @@ mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 mcp mysql --database=txaesfry_healthcare_app_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_healthcare_app_survey' AND table_name LIKE 'lime_survey_%'"
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -119,12 +133,16 @@ $responses = DB::connection('limesurvey')
     ->whereNotNull('submitdate')
     ->whereBetween('submitdate', ['2023-01-01', '2023-12-31'])
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
     ->whereBetween('submitdate', ['[DATE]', '[DATE]'])
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    ->whereBetween('submitdate', ['[DATE]', '[DATE]'])
+>>>>>>> 3792da0d (Check & fix styling)
     ->count();
 
 // Get unique participants
@@ -145,6 +163,7 @@ php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
 =======
 <<<<<<< HEAD
@@ -153,6 +172,9 @@ php artisan tinker --execute="
     'healthcare_app' => DB::connection('healthcare_app')->getPdo() ? 'OK' : 'ERROR',
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    'healthcare_app' => DB::connection('healthcare_app')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> 3792da0d (Check & fix styling)
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -176,12 +198,16 @@ SHOW INDEX FROM lime_survey_[SURVEY_ID];
 -- Use EXPLAIN to analyze slow queries
 EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '2023-01-01';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '[DATE]';
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '[DATE]';
+>>>>>>> 3792da0d (Check & fix styling)
 
 -- Optimize large table queries
 SELECT SQL_CALC_FOUND_ROWS * FROM lime_survey_[SURVEY_ID] LIMIT 0, 1000;
@@ -220,6 +246,7 @@ WHERE q.qid IS NULL;
 ```bash
 # Backup specific survey data
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -230,12 +257,17 @@ mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_questions lime_question
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### 2. Data Validation Script
@@ -280,6 +312,7 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
 =======
 <<<<<<< HEAD
@@ -288,6 +321,9 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_healthcare_app_survey'
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    AND table_schema = 'txaesfry_healthcare_app_survey'
+>>>>>>> 3792da0d (Check & fix styling)
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -296,6 +332,7 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
 =======
 <<<<<<< HEAD
@@ -304,10 +341,14 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_healthcare_app_survey'
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    AND table_schema = 'txaesfry_healthcare_app_survey'
+>>>>>>> 3792da0d (Check & fix styling)
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
 =======
@@ -317,3 +358,6 @@ These commands and tools provide comprehensive access to analyze, maintain, and 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
+>>>>>>> 3792da0d (Check & fix styling)

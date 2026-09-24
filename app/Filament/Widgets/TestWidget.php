@@ -9,7 +9,11 @@ namespace Modules\Xot\Filament\Widgets;
  */
 class TestWidget extends XotBaseWidget
 {
+<<<<<<< HEAD
     /** @var view-string */
+=======
+    /** @phpstan-ignore property.defaultValue */
+>>>>>>> 3792da0d (Check & fix styling)
     protected string $view = 'xot::filament.widgets.test';
 
     protected int|string|array $columnSpan = 'full';

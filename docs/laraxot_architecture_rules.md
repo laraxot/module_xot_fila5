@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_i7Kbpa
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: laraxot_architecture_rules
@@ -10,6 +13,7 @@ canonical: ../../../Themes/docs/shared-components/LARAXOT_ARCHITECTURE_RULES.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCHITECTURE_RULES.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -802,3 +806,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCH
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

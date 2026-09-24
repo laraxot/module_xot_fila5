@@ -16,6 +16,7 @@ class SafeStringCastAction
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param mixed $value Il valore da convertire
@@ -36,6 +37,9 @@ class SafeStringCastAction
      * >>>>>>> .merge_file_dmjXLI
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param mixed $value Il valore da convertire
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @return string Il valore convertito in string
      */
@@ -69,6 +73,7 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param mixed $value Il valore da convertire
@@ -89,6 +94,9 @@ class SafeStringCastAction
      * >>>>>>> .merge_file_dmjXLI
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param mixed $value Il valore da convertire
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @return string Il valore convertito in string
      */

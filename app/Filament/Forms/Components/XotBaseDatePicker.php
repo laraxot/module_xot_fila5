@@ -12,9 +12,15 @@ use Filament\Forms\Components\DatePicker;
  * @method static static make(string $name) Create a new instance of the component
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseDatePicker extends DatePicker {}
 =======
 abstract class XotBaseDatePicker extends DatePicker
 {
 }
 >>>>>>> laraxot/dev
+=======
+abstract class XotBaseDatePicker extends DatePicker
+{
+}
+>>>>>>> 3792da0d (Check & fix styling)

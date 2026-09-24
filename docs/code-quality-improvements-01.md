@@ -88,6 +88,7 @@ use TransTrait {
 
 - [README Modulo Xot](./README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Code Quality Rules](./code-quality.md)
 - [Best Practices](./best-practices.md)
 =======
@@ -100,3 +101,8 @@ use TransTrait {
 - [Best Practices](./best-practices.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [README Modulo Xot](./readme.md)
+- [Code Quality Rules](./code-quality.md)
+- [Best Practices](./best-practices.md)
+>>>>>>> 3792da0d (Check & fix styling)

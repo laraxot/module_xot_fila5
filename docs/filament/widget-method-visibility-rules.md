@@ -2,15 +2,21 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WDdGMm
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Data Creazione**: 2025-01-27  
 **Ultimo Aggiornamento**: 2026-01-27  
 **Ultimo Aggiornamento**: 2026-01-27  
 **Status**: ✅ Critico
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Regola Fondamentale
 
@@ -18,6 +24,7 @@ Tutti i metodi `getTable*()` nel trait `HasXotTable` sono dichiarati come `prote
 Tutti i metodi `getTable*()` nel trait `HasXotTable` sono dichiarati come `protected` per allinearsi a Filament 5 ed evitare conflitti di visibilità con il trait `InteractsWithTable`. Le classi (pagine/widget) che sovrascrivono questi metodi possono continuare a usare `public` per permettere l'accesso cross-component (widening), ma nel trait devono rimanere `protected`.
 Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perché vengono chiamati da Filament/Livewire dall'esterno della classe. I widget che sovrascrivono questi metodi **DEVONO** mantenere la stessa visibilità `public`.
 
+<<<<<<< HEAD
 =======
 **Status**: Critico
 **Ultimo aggiornamento**: 2026-09-03
@@ -65,6 +72,8 @@ In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTabl
 >>>>>>> .merge_file_K6IqQn
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Metodi che Devono Essere Public
 
 | Metodo | Visibilità Richiesta | Motivo |
@@ -94,6 +103,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
 =======
 =======
@@ -111,6 +121,9 @@ namespace Modules\healthcare_app\Filament\Widgets;
 >>>>>>> laraxot/dev
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> 3792da0d (Check & fix styling)
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
@@ -157,6 +170,7 @@ class MyWidget extends XotBaseTableWidget
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHP Fatal error: Access level to Widget::getTableHeaderActions() 
 =======
 =======
@@ -174,6 +188,9 @@ PHP Fatal error: Access level to Widget::getTableHeaderActions()
 >>>>>>> laraxot/dev
 PHP Fatal error: Access level to Widget::getTableHeaderActions()
 >>>>>>> laraxot/dev
+=======
+PHP Fatal error: Access level to Widget::getTableHeaderActions() 
+>>>>>>> 3792da0d (Check & fix styling)
 must be public (as in class HasXotTable)
 ```
 
@@ -183,16 +200,20 @@ must be public (as in class HasXotTable)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WDdGMm
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Riferimenti
 
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
 - [Widget Table Configuration](../../../Modules/Xot/docs/filament/widget-table-configuration.md)
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< HEAD
 - [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
 =======
 <<<<<<< HEAD
@@ -230,3 +251,6 @@ must be public (as in class HasXotTable)
 >>>>>>> .merge_file_K6IqQn
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+>>>>>>> 3792da0d (Check & fix styling)

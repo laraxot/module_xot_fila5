@@ -22,6 +22,7 @@ class DebugbarCommandHandler implements CommandHandlerInterface
 <<<<<<< HEAD
         return $command === 'debugbar:clear';
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_Anop3z
 <<<<<<< HEAD
         return $command === 'debugbar:clear';
@@ -32,5 +33,9 @@ class DebugbarCommandHandler implements CommandHandlerInterface
         return 'debugbar:clear' === $command;
 >>>>>>> .merge_file_r5Obyv
 >>>>>>> laraxot/dev
+=======
+        return 'debugbar:clear' === $command;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

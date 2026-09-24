@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_t2xlhu
 <<<<<<< HEAD
@@ -67,6 +68,8 @@ updated: 2026-08-24
 =======
 >>>>>>> .merge_file_oH5CVy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 https://github.com/seikan/Cart/blob/master/class.Cart.php
 
@@ -138,6 +141,7 @@ https://meritocracy.is/blog/2021/06/08/laravel-implementing-a-shopping-cart-for-
 https://github.com/Tefoh/Cart
 
 
+<<<<<<< HEAD
 https://github.com/Codexshaper/laravel-woocommerce
 <<<<<<< HEAD
 =======
@@ -216,3 +220,6 @@ updated: 2026-08-24
 >>>>>>> .merge_file_oH5CVy
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://github.com/Codexshaper/laravel-woocommerce
+>>>>>>> 3792da0d (Check & fix styling)

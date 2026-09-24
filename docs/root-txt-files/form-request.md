@@ -9,16 +9,22 @@ tags: [migrato-da-txt, xot]
 converted_from: form-request.txt
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 converted_from: form_request.txt
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 converted_from: form-request.txt
 =======
 converted_from: form_request.txt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 created: 2026-08-24
 updated: 2026-08-24
 ---

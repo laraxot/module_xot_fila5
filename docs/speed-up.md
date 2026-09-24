@@ -1,13 +1,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_G3GSqR
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 https://laravelarticle.com/speed-up-laravel-website
 
 
 How To Check RAM And CPU Usage In Laravel
+<<<<<<< HEAD
 https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
 =======
 <<<<<<< HEAD
@@ -53,3 +57,6 @@ https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
 >>>>>>> .merge_file_p2o6t1
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
+>>>>>>> 3792da0d (Check & fix styling)

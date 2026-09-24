@@ -21,6 +21,7 @@ class MigrationCommandHandler implements CommandHandlerInterface
 <<<<<<< HEAD
         if ($moduleName !== '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GbknKG
 <<<<<<< HEAD
         if ($moduleName !== '') {
@@ -31,6 +32,10 @@ class MigrationCommandHandler implements CommandHandlerInterface
         if ('' !== $moduleName) {
 >>>>>>> .merge_file_eEtC5V
 >>>>>>> laraxot/dev
+=======
+        if ('' !== $moduleName) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)
@@ -45,6 +50,7 @@ class MigrationCommandHandler implements CommandHandlerInterface
 <<<<<<< HEAD
         return $command === 'migrate';
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_GbknKG
 <<<<<<< HEAD
         return $command === 'migrate';
@@ -55,5 +61,9 @@ class MigrationCommandHandler implements CommandHandlerInterface
         return 'migrate' === $command;
 >>>>>>> .merge_file_eEtC5V
 >>>>>>> laraxot/dev
+=======
+        return 'migrate' === $command;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

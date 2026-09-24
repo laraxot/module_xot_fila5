@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -1075,6 +1078,7 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
+<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 =======
 <<<<<<< .merge_file_TUJTQH
@@ -5479,3 +5483,6 @@ _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report
 >>>>>>> .merge_file_1oX7DR
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Domande?** Chiedi alla Super Mucca! 🐄⚡
+>>>>>>> 3792da0d (Check & fix styling)

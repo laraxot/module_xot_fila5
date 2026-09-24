@@ -21,6 +21,7 @@ class GuessPivotAction
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
      *                                            =======
+<<<<<<< HEAD
      *                                            <<<<<<< .merge_file_BlfdUz
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
@@ -43,6 +44,10 @@ class GuessPivotAction
      *                                            >>>>>>> .merge_file_NzfLh9
      *                                            >>>>>>> laraxot/dev
      *                                            >>>>>>> .merge_file_yA4jnq
+=======
+     * @param string|class-string<Model> $related The related model class name
+     * @param string|class-string<Model> $class   The class
+>>>>>>> 3792da0d (Check & fix styling)
      *                                            >>>>>>> laraxot/dev
      */
     public function execute(string $related, string $class): Pivot

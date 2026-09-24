@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\Xot\Actions;
 
 use Illuminate\Database\Eloquent\Model;
@@ -27,6 +35,7 @@ class GetModelByModelTypeAction
 
         /** @var class-string<Model> $model_class */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $model = $model_id !== null
             ? $model_class::query()->find($model_id)
             : new $model_class;
@@ -35,6 +44,11 @@ class GetModelByModelTypeAction
             ? $model_class::query()->find($model_id)
             : new $model_class();
 >>>>>>> laraxot/dev
+=======
+        $model = null !== $model_id
+            ? $model_class::query()->find($model_id)
+            : new $model_class();
+>>>>>>> 3792da0d (Check & fix styling)
 
         if (! $model instanceof Model) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');

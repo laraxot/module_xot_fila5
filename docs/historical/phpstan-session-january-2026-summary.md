@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_QOTeBF
 =======
@@ -26,6 +27,8 @@ Vedi il file canonico: [phpstan-session-summary.md](./phpstan-session-summary.md
 <<<<<<< .merge_file_QOTeBF
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # PHPStan Session - Gennaio 2026 - Riepilogo Completo
 
 **Data**: 2026-01-22  
@@ -310,6 +313,9 @@ Eseguire PHPStan su tutti i moduli, comprendere logica, politica, business logic
 ---
 
 *Ultimo aggiornamento: 2026-01-22*
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guHxSj
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

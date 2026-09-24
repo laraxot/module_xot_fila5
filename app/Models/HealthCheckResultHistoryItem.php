@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * @see https://github.com/shuvroroy/filament-spatie-laravel-health/tree/main
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -12,8 +20,11 @@ use Illuminate\Support\Carbon;
 use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
 
 /**
+<<<<<<< HEAD
  * <<<<<<< HEAD.
  *
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property int                     $id
  * @property string                  $check_name
  * @property string                  $check_label
@@ -27,6 +38,7 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property Carbon|null             $updated_at
  * @property string|null             $updated_by
  * @property string|null             $created_by
+<<<<<<< HEAD
  *                                                         =======
  * @property int                     $id
  * @property string                  $check_name
@@ -42,6 +54,8 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property string|null             $updated_by
  * @property string|null             $created_by
  *                                                         >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  *
  * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
  * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()

@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\Schemas;
 
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Traits\HasXotInfolist;
 use Webmozart\Assert\Assert;
 
@@ -27,10 +28,22 @@ abstract class XotBaseResourceInfolist
         Assert::isInstanceOf($instance, self::class);
 
         return $instance->infolist($schema);
+=======
+
+abstract class XotBaseResourceInfolist
+{
+    final public static function configure(Schema $schema): Schema
+    {
+        return $schema->components(static::getInfolistSchema());
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     abstract public function getInfolistSchema(): array;
+=======
+    abstract public static function getInfolistSchema(): array;
+>>>>>>> 3792da0d (Check & fix styling)
 }

@@ -1,6 +1,7 @@
 # Troubleshooting Guide
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
@@ -38,11 +39,18 @@
 
 >>>>>>> .merge_file_2HRm7i
 >>>>>>> laraxot/dev
+=======
+## Common Issues
+
+>>>>>>> 3792da0d (Check & fix styling)
 ### PHPStan Errors
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -61,6 +69,7 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -93,6 +102,8 @@
 >>>>>>> .merge_file_2HRm7i
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -118,6 +129,7 @@
 
 ## Getting Help
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_iJ18jI
@@ -162,10 +174,13 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> .merge_file_2HRm7i
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - Check module-specific documentation
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_iJ18jI
@@ -216,3 +231,5 @@ Core module for the FixCity Platform.
 =======
 >>>>>>> .merge_file_2HRm7i
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

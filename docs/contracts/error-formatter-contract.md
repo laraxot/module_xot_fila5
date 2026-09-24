@@ -39,6 +39,7 @@ interface ErrorFormatterContract
 - [Error Formatters](../exceptions/formatters/README.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -47,3 +48,8 @@ interface ErrorFormatterContract
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Error Handling Guidelines](../exception-handling-guide.md)
+- [Error Formatters](../exceptions/formatters/readme.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> 3792da0d (Check & fix styling)

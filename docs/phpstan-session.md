@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -318,3 +319,12 @@ Questa correzione è l'**unico errore** rilevato da PHPStan livello 10 su 1028 f
 **Versione Modulo**: Xot (Laraxot Framework Base)
 **PHPStan**: v2.1+ (Level 10)
 >>>>>>> laraxot/dev
+=======
+---
+module: theme
+topic: phpstan-session
+canonical: ../../../Themes/docs/shared-components/phpstan-session-nov2025.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-session-nov2025.md
+>>>>>>> 3792da0d (Check & fix styling)

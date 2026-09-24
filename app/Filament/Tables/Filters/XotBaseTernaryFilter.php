@@ -5,18 +5,24 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Tables\Filters;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zj90Sv
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Ternary 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -32,6 +38,7 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  * Ternary 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
@@ -43,12 +50,15 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  * parent restano invariate.
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 <<<<<<< HEAD
         /*
         $this->schema(function (): array {
@@ -57,6 +67,8 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 =======
 <<<<<<< .merge_file_zj90Sv
 <<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 =======
 <<<<<<< HEAD
@@ -68,6 +80,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         $this->schema(function (): array {
             return [
                 ToggleButtons::make('value')
+<<<<<<< HEAD
 =======
         /*
         $this->schema(function (): array {
@@ -75,6 +88,8 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                 \Filament\Forms\Components\ToggleButtons::make('value')
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -86,12 +101,15 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         0 => 'danger',
                     ])
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
         */
 =======
 <<<<<<< .merge_file_zj90Sv
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
@@ -102,6 +120,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         */
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
                     ->stateCast(app(\Filament\Schemas\Components\StateCasts\BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
@@ -109,5 +128,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         */
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     }
 }

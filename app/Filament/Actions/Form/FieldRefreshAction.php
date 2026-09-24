@@ -1,10 +1,14 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 namespace Modules\Xot\Filament\Actions\Form;
 
 use Filament\Notifications\Notification;
@@ -12,6 +16,17 @@ use Filament\Schemas\Components\Utilities\Set;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 
 class FieldRefreshAction extends XotBaseAction
+=======
+declare(strict_types=1);
+
+namespace Modules\Xot\Filament\Actions\Form;
+
+use Filament\Actions\Action;
+use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Utilities\Set;
+
+class FieldRefreshAction extends Action
+>>>>>>> 3792da0d (Check & fix styling)
 {
     protected function setUp(): void
     {
@@ -21,6 +36,7 @@ class FieldRefreshAction extends XotBaseAction
         $this->icon('heroicon-o-arrow-path')
             ->label('')
             ->tooltip('Ricalcola valore')
+<<<<<<< HEAD
             ->action(function (mixed $record, Set $set): void {
                 $name = $this->getName();
 <<<<<<< HEAD
@@ -28,6 +44,11 @@ class FieldRefreshAction extends XotBaseAction
 =======
                 if (null === $name) {
 >>>>>>> laraxot/dev
+=======
+            ->action(function ($record, Set $set): void {
+                $name = $this->getName();
+                if (null === $name) {
+>>>>>>> 3792da0d (Check & fix styling)
                     return;
                 }
 

@@ -1,11 +1,17 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 title: 'Todo'
 module: Xot
 type: reference
@@ -16,8 +22,11 @@ converted_from: todo.txt
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 title: '_todo'
 module: Xot
@@ -28,8 +37,11 @@ tags: [migrato-da-txt, xot]
 converted_from: _todo.txt
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
@@ -37,15 +49,21 @@ updated: 2026-08-24
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 usare userprovider che e' un contratto sulle policy
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 <<<<<<< HEAD
 usare userprovider che e' un contratto sulle policy
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->
@@ -58,7 +76,10 @@ https://github.com/spatie/laravel-health
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

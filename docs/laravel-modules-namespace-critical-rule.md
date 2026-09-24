@@ -147,6 +147,7 @@ Prima di ogni commit, verificare:
 
 **Ultimo aggiornamento**: 2025-01-22
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
 =======
@@ -159,3 +160,8 @@ Prima di ogni commit, verificare:
 **Status**: ✅ Regola Critica OBBLIGATORIA
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Ultimo aggiornamento**: [DATE]
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> 3792da0d (Check & fix styling)

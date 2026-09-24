@@ -10,6 +10,7 @@ use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
 use ReflectionClass;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ENGPaN
 <<<<<<< HEAD
 use ReflectionClass;
@@ -17,6 +18,8 @@ use ReflectionClass;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_92jDac
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 use function Safe\glob;
@@ -65,6 +68,7 @@ describe('Xot coverage boost', function (): void {
 <<<<<<< HEAD
             $seen++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ENGPaN
 <<<<<<< HEAD
             $seen++;
@@ -75,6 +79,10 @@ describe('Xot coverage boost', function (): void {
             ++$seen;
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+=======
+            ++$seen;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un enum concreto');
     });
@@ -84,6 +92,7 @@ describe('Xot coverage boost', function (): void {
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ENGPaN
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -94,6 +103,10 @@ describe('Xot coverage boost', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -107,6 +120,7 @@ describe('Xot coverage boost', function (): void {
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_ENGPaN
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -117,6 +131,10 @@ describe('Xot coverage boost', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_92jDac
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }

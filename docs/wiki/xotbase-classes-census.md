@@ -14,6 +14,7 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 ## Filament Widgets
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hvD7yA
 =======
@@ -34,6 +35,8 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 <<<<<<< .merge_file_hvD7yA
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 | Classe Base | Path | Estende | Quando usarla |
 |-------------|------|---------|---------------|
 | `XotBaseWidget` | `app/Filament/Widgets/XotBaseWidget.php` | `Filament\Widgets\Widget` | Widget base generico |
@@ -50,9 +53,12 @@ Censimento classi base in `Modules/Xot/app/` che devono essere estese invece del
 /** @phpstan-ignore property.defaultValue */
 protected string $view = 'module::path.to.view';
 ```
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_EBYmG9
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Filament Resources
 

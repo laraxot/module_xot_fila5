@@ -51,6 +51,7 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -67,3 +68,9 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/prompts_documentation_system.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Sistema di Collegamenti della Documentazione](../../../../../docs/collegamenti-documentazione.md)
+- [Linee Guida per la Documentazione in Xot](./documentation-guidelines.md)
+- [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/percorsi_relativi_documentazione.md)
+- [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/prompts_documentation_system.md)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -151,6 +151,7 @@ Model structure requirements:
 
 ### Documentazione Principale
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [AGENTS.md](AGENTS.md) - Guida completa sviluppatori AI
 =======
 <<<<<<< HEAD
@@ -159,6 +160,9 @@ Model structure requirements:
 - [AGENTS.md](../../../../agents.md) - Guida completa sviluppatori AI
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [AGENTS.md](../../../../agents.md) - Guida completa sviluppatori AI
+>>>>>>> 3792da0d (Check & fix styling)
 - [Database Testing Rules](../../../../../docs/database-testing-rules.md) - Regole MySQL testing
 - [AI Coding Memory](../../../../ai_coding_memory.md) - Memoria completa regole
 - [Critical Rules Index](../../../../../docs/critical-rules-index.md) - Indice regole critiche

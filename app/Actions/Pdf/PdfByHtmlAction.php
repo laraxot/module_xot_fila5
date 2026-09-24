@@ -17,14 +17,18 @@ class PdfByHtmlAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string        $html        Contenuto HTML da convertire
      * @param string        $filename    Nome del file PDF
      * @param string        $disk        Disco di storage
      * @param string        $out         Tipo di output (download, path, etc.)
      * @param string        $orientation Orientamento (P=Portrait, L=Landscape)
      * @param PdfEngineEnum $engine      Engine da utilizzare
+<<<<<<< HEAD
      *                                   =======
      *                                   <<<<<<< .merge_file_fiqDWW
      *                                   =======
@@ -75,6 +79,8 @@ class PdfByHtmlAction
      *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      *                                   >>>>>>> .merge_file_EziQIl
      *                                   >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(
         string $html,

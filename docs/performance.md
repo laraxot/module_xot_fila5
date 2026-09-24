@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_haZ5Or
 <<<<<<< HEAD
@@ -48,3 +49,9 @@ https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46
 >>>>>>> .merge_file_jHdQO9
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+//-----------------------------------------------------------
+4 tips to improve Laravel performance
+https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
+//-------------------------------------------------------------
+>>>>>>> 3792da0d (Check & fix styling)

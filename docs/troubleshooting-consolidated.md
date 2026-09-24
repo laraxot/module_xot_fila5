@@ -377,6 +377,7 @@ Test non isolati o dipendenze condivise.
 **Soluzione**
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -392,6 +393,11 @@ class ExampleTest extends TestCase
     use RefreshDatabase; // Garantisce database pulito
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+class ExampleTest extends TestCase
+{
+    use RefreshDatabase; // Garantisce database pulito
+>>>>>>> 3792da0d (Check & fix styling)
 
     protected function setUp(): void
     {
@@ -402,6 +408,7 @@ class ExampleTest extends TestCase
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
 =======
@@ -411,6 +418,8 @@ Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacre
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ### Errore: Test Lenti
 
 **Causa**

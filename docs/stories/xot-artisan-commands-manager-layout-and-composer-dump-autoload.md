@@ -85,6 +85,7 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 <<<<<<< HEAD
 =======
@@ -100,6 +101,8 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 ## Ripristino 2026-09-17
 
@@ -125,6 +128,7 @@ nel repository reale del modulo.
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
 <<<<<<< .merge_file_AlnPzA
@@ -142,6 +146,10 @@ nel repository reale del modulo.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LJlZTI
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 ## Tasks/Subtasks
 
 - [x] Task 1: nuova `ExecuteComposerDumpAutoloadAction` (comando fisso,
@@ -150,6 +158,7 @@ nel repository reale del modulo.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
 <<<<<<< HEAD
@@ -162,6 +171,8 @@ nel repository reale del modulo.
 <<<<<<< HEAD
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
+=======
+>>>>>>> 3792da0d (Check & fix styling)
       `ArtisanCommandsManager.php`, con `requiresConfirmation()`
 - [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
       per il wrap dei pulsanti, registrato in `AdminPanelProvider.php`
@@ -171,6 +182,7 @@ nel repository reale del modulo.
       incomplete class" dopo l'azione, deve completare con successo
 
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 >>>>>>> laraxot/dev
 =======
@@ -180,6 +192,8 @@ nel repository reale del modulo.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lGzV1k
 >>>>>>> .merge_file_LJlZTI
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
       `ArtisanCommandsManager.php`, con `requiresConfirmation()` —
       **ripristinato 2026-09-17**, vedi sopra
@@ -215,6 +229,7 @@ completi con lo stesso contenuto reale di prima. PHPStan pulito.
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_n8IdV3
 =======
 <<<<<<< .merge_file_AlnPzA
@@ -232,6 +247,10 @@ completi con lo stesso contenuto reale di prima. PHPStan pulito.
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LJlZTI
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 ## Dev Notes
 
 - Scoperto in questa story: l'account admin non aveva il ruolo

@@ -48,7 +48,11 @@ trait EnumTrait
      */
     public static function getSearchable(): array
     {
+<<<<<<< HEAD
         return array_map(static fn (\BackedEnum $item): string => (string) $item->value, static::cases());
+=======
+        return array_map(fn ($item) => (string) $item->value, static::cases());
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     /**
@@ -111,12 +115,17 @@ trait EnumTrait
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Blueprint  $table  The table blueprint
      * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
 =======
      * @param Blueprint             $table     The table blueprint
      * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
 >>>>>>> laraxot/dev
+=======
+     * @param Blueprint             $table     The table blueprint
+     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -126,10 +135,14 @@ trait EnumTrait
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($migration === null || ! $migration->hasColumn($name)) {
 =======
             if (null === $migration || ! $migration->hasColumn($name)) {
 >>>>>>> laraxot/dev
+=======
+            if (null === $migration || ! $migration->hasColumn($name)) {
+>>>>>>> 3792da0d (Check & fix styling)
                 $definition($table); // @phpstan-ignore callable.nonCallable
             }
         }
@@ -158,7 +171,11 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
+<<<<<<< HEAD
         return array_values(array_map(static fn (\BackedEnum $case): string => (string) $case->value, static::cases()));
+=======
+        return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
+>>>>>>> 3792da0d (Check & fix styling)
     }
 
     /**

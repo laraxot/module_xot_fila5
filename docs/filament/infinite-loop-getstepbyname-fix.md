@@ -42,12 +42,16 @@ return Forms\Components\Wizard\Step::make($name)
 $schema = Str::of($name)
     ->snake()      // 'studio_step' → 'studio_step'
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
     ->studly()     // 'studio_step' → 'StudioStep'
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    ->studly()     // 'studio_step' → 'StudioStep'
+>>>>>>> 3792da0d (Check & fix styling)
     ->studly()     // 'studio_step' → 'StudioStep'  
     ->prepend('get') // 'StudioStep' → 'getStudioStep'
     ->append('Schema') // 'getStudioStep' → 'getStudioStepSchema'
@@ -71,12 +75,16 @@ $attachments = $model::$attachments;
 
 ### **Correzione Applicata**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ```php
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+```php
+>>>>>>> 3792da0d (Check & fix styling)
 ```php  
 // ✅ CORRETTO - Check esistenza proprietà
 $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
@@ -99,12 +107,16 @@ $attachments = property_exists($model, 'attachments') ? $model::$attachments : [
 ### **Verifica Wizard Steps**
 - [ ] studio_step → Chiama `getStudioStepSchema()` ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅
+>>>>>>> 3792da0d (Check & fix styling)
 - [ ] availability_step → Chiama `getAvailabilityStepSchema()` ✅  
 - [ ] personal_info_step → Chiama `getPersonalInfoStepSchema()` ✅
 
@@ -128,12 +140,16 @@ $methodName = 'getMethodName';
 static::{$methodName}();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 // ✅ Property existence check
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+// ✅ Property existence check
+>>>>>>> 3792da0d (Check & fix styling)
 // ✅ Property existence check  
 $prop = property_exists($class, 'property') ? $class::$property : [];
 ```
@@ -145,6 +161,7 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -165,6 +182,10 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+- [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -175,16 +196,22 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 **Impatto**: Blocco completo sistema registrazione dottori  
 **Tempo risoluzione**: < 10 minuti dalla diagnosi  
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Priorità**: 🚨 **P0 - CRITICA**
 **Creato**: Gennaio 2025
 **Risolto**: Gennaio 2025
 **Impatto**: Blocco completo sistema registrazione dottori
 **Tempo risoluzione**: < 10 minuti dalla diagnosi
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## 💡 **Lesson Learned**
 
@@ -195,6 +222,7 @@ Questo fix dimostra l'importanza di:
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -210,6 +238,8 @@ Questo fix dimostra l'importanza di:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
@@ -350,6 +380,10 @@ Questo fix dimostra l'importanza di:
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
+<<<<<<< HEAD
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+>>>>>>> 3792da0d (Check & fix styling)

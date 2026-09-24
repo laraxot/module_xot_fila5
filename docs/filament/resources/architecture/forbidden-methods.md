@@ -36,6 +36,7 @@ class ProductResource extends XotBaseResource
     // UNICI metodi che dovrebbero essere implementati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -49,6 +50,9 @@ class ProductResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

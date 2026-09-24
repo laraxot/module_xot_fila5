@@ -99,6 +99,7 @@ final class TeamUserResource extends XotBaseResource
     // ✅ SOLO getFormSchema() e metodi table* se necessario
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -112,6 +113,9 @@ final class TeamUserResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             // Schema del form
@@ -192,6 +196,7 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 **Data Decisione**: Gennaio 2026  
 **Vincitore Dibattito**: Posizione B - Centralizzazione Totale  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Conforme a**: DRY, KISS, Filosofia Laraxot
 =======
 <<<<<<< HEAD
@@ -200,3 +205,6 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 **Conforme a**: DRY, KISS, Filosofia Laraxot
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Conforme a**: DRY, KISS, Filosofia Laraxot
+>>>>>>> 3792da0d (Check & fix styling)

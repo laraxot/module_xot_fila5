@@ -38,22 +38,28 @@ class CheckAccessorTwinsCommand extends Command
 
         if ($this->option('orphans') === true) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
         $pattern = base_path('Modules/'.(is_string($module) && $module !== '' ? $module : '*').'/app/Models/*.php');
 
         if ($this->option('orphans') === true) {
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         $pattern = base_path('Modules/'.(is_string($module) && '' !== $module ? $module : '*').'/app/Models/*.php');
 
         if (true === $this->option('orphans')) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $pattern = base_path('Modules/'.(is_string($module) && '' !== $module ? $module : '*').'/app/Models/*.php');
 
         if (true === $this->option('orphans')) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             return $this->reportOrphanTwins($pattern);
         }
 
@@ -71,6 +77,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
             if ($class === null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
             if ($class === null) {
@@ -81,6 +88,10 @@ class CheckAccessorTwinsCommand extends Command
             if (null === $class) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+            if (null === $class) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
@@ -91,10 +102,13 @@ class CheckAccessorTwinsCommand extends Command
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             $analyzed++;
 
             foreach ($reflection->getMethods() as $method) {
@@ -105,10 +119,14 @@ class CheckAccessorTwinsCommand extends Command
 
                 $accessors++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_dwyqcg
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             ++$analyzed;
 
             foreach ($reflection->getMethods() as $method) {
@@ -118,10 +136,13 @@ class CheckAccessorTwinsCommand extends Command
                 }
 
                 ++$accessors;
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dwyqcg
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
                 if (! $reflection->hasMethod($twin)) {
@@ -149,6 +170,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
         if ($missingCount > 0 && $this->option('fail-on-missing') === true) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
         if ($missingCount > 0 && $this->option('fail-on-missing') === true) {
@@ -159,6 +181,10 @@ class CheckAccessorTwinsCommand extends Command
         if ($missingCount > 0 && true === $this->option('fail-on-missing')) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+        if ($missingCount > 0 && true === $this->option('fail-on-missing')) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return self::FAILURE;
         }
 
@@ -188,6 +214,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
             if ($class === null) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
             if ($class === null) {
@@ -198,6 +225,10 @@ class CheckAccessorTwinsCommand extends Command
             if (null === $class) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+            if (null === $class) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
@@ -216,29 +247,39 @@ class CheckAccessorTwinsCommand extends Command
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($columns === []) {
                 continue;
             }
 
             $analyzed++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_dwyqcg
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ([] === $columns) {
                 continue;
             }
 
             ++$analyzed;
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_dwyqcg
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
             $found = [];
 
@@ -248,6 +289,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
                 if (preg_match('/^get([A-Z].*)$/', $name, $matches) !== 1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
                 if (preg_match('/^get([A-Z].*)$/', $name, $matches) !== 1) {
@@ -258,6 +300,10 @@ class CheckAccessorTwinsCommand extends Command
                 if (1 !== preg_match('/^get([A-Z].*)$/', $name, $matches)) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+                if (1 !== preg_match('/^get([A-Z].*)$/', $name, $matches)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     continue;
                 }
                 if (str_ends_with($name, 'Attribute') || $method->getNumberOfRequiredParameters() > 0) {
@@ -269,6 +315,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
                 if ($declaredIn === '' || str_contains($declaredIn, '/vendor/')) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
                 if ($declaredIn === '' || str_contains($declaredIn, '/vendor/')) {
@@ -279,6 +326,10 @@ class CheckAccessorTwinsCommand extends Command
                 if ('' === $declaredIn || str_contains($declaredIn, '/vendor/')) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+                if ('' === $declaredIn || str_contains($declaredIn, '/vendor/')) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     continue;
                 }
 
@@ -286,6 +337,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
                 if ($suffix === '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
                 if ($suffix === '') {
@@ -296,6 +348,10 @@ class CheckAccessorTwinsCommand extends Command
                 if ('' === $suffix) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+                if ('' === $suffix) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                     continue;
                 }
 
@@ -310,6 +366,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
             if ($found === []) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
             if ($found === []) {
@@ -320,6 +377,10 @@ class CheckAccessorTwinsCommand extends Command
             if ([] === $found) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+            if ([] === $found) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 continue;
             }
 
@@ -329,6 +390,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
                 $orphans++;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
                 $orphans++;
@@ -339,6 +401,10 @@ class CheckAccessorTwinsCommand extends Command
                 ++$orphans;
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+                ++$orphans;
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             }
         }
 
@@ -347,6 +413,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
         if ($orphans > 0 && $this->option('fail-on-missing') === true) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
         if ($orphans > 0 && $this->option('fail-on-missing') === true) {
@@ -357,6 +424,10 @@ class CheckAccessorTwinsCommand extends Command
         if ($orphans > 0 && true === $this->option('fail-on-missing')) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+        if ($orphans > 0 && true === $this->option('fail-on-missing')) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return self::FAILURE;
         }
 
@@ -371,6 +442,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
         if (preg_match('/^get(.+)Attribute$/', $method->getName(), $matches) !== 1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
         if (preg_match('/^get(.+)Attribute$/', $method->getName(), $matches) !== 1) {
@@ -381,6 +453,10 @@ class CheckAccessorTwinsCommand extends Command
         if (1 !== preg_match('/^get(.+)Attribute$/', $method->getName(), $matches)) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+        if (1 !== preg_match('/^get(.+)Attribute$/', $method->getName(), $matches)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return null;
         }
 
@@ -388,6 +464,7 @@ class CheckAccessorTwinsCommand extends Command
 <<<<<<< HEAD
         if ($name === '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_J5ASpA
 <<<<<<< HEAD
         if ($name === '') {
@@ -398,6 +475,10 @@ class CheckAccessorTwinsCommand extends Command
         if ('' === $name) {
 >>>>>>> .merge_file_dwyqcg
 >>>>>>> laraxot/dev
+=======
+        if ('' === $name) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return null;
         }
 

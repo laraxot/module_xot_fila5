@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Index"
 type: reference
@@ -9,6 +10,8 @@ updated: 2026-08-24
 
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Xot Module - commands Index
 
 ## Purpose

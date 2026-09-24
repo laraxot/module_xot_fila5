@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Tests\TestCase;
@@ -10,19 +14,27 @@ uses(TestCase::class);
 
 test('MetatagData puo essere istanziata', function () {
 <<<<<<< HEAD
-    $metatagData = new MetatagData;
-=======
-    $metatagData = new MetatagData();
->>>>>>> laraxot/dev
-    Assert::assertInstanceOf(MetatagData::class, $metatagData);
-});
-
-test('getFilamentColors restituisce i colori Filament corretti', function (): void {
 <<<<<<< HEAD
     $metatagData = new MetatagData;
 =======
     $metatagData = new MetatagData();
 >>>>>>> laraxot/dev
+=======
+    $metatagData = new MetatagData();
+>>>>>>> 3792da0d (Check & fix styling)
+    Assert::assertInstanceOf(MetatagData::class, $metatagData);
+});
+
+test('getFilamentColors restituisce i colori Filament corretti', function (): void {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $metatagData = new MetatagData;
+=======
+    $metatagData = new MetatagData();
+>>>>>>> laraxot/dev
+=======
+    $metatagData = new MetatagData();
+>>>>>>> 3792da0d (Check & fix styling)
     $colors = $metatagData->getFilamentColors();
 
     Assert::assertArrayHasKey('danger', $colors);
@@ -37,10 +49,14 @@ test('getFilamentColors restituisce i colori Filament corretti', function (): vo
 
 test('getColors gestisce correttamente i colori personalizzati', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $metatagData = new MetatagData;
 =======
     $metatagData = new MetatagData();
 >>>>>>> laraxot/dev
+=======
+    $metatagData = new MetatagData();
+>>>>>>> 3792da0d (Check & fix styling)
     $metatagData->colors = [
         'custom_color' => [
             'key' => 'custom_color',
@@ -53,13 +69,18 @@ test('getColors gestisce correttamente i colori personalizzati', function () {
         ],
     ];
 
+<<<<<<< HEAD
     $colors = $metatagData->colors;
+=======
+    $colors = $metatagData->getColors();
+>>>>>>> 3792da0d (Check & fix styling)
 
     Assert::assertArrayHasKey('custom_color', $colors);
     Assert::assertArrayHasKey('primary', $colors);
 });
 
 test('getLogoHeight restituisce il valore corretto', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $metatagData = new MetatagData;
 =======
@@ -76,6 +97,16 @@ test('Le proprieta hanno i valori di default corretti', function () {
 =======
     $metatagData = new MetatagData();
 >>>>>>> laraxot/dev
+=======
+    $metatagData = new MetatagData();
+    $metatagData->logo_height = '3em';
+
+    Assert::assertSame('3em', $metatagData->getLogoHeight());
+});
+
+test('Le proprieta hanno i valori di default corretti', function () {
+    $metatagData = new MetatagData();
+>>>>>>> 3792da0d (Check & fix styling)
 
     Assert::assertSame('xot', $metatagData->generator);
     Assert::assertSame('UTF-8', $metatagData->charset);

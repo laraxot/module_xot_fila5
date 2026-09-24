@@ -7,18 +7,27 @@ description: 'https://www.algolia.com/blog/engineering/implementing-faceted-sear
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 converted_from: _filters.txt
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+converted_from: _filters.txt
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 converted_from: filters.txt
 =======
 converted_from: _filters.txt
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

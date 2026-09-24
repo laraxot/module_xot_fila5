@@ -39,7 +39,11 @@
         "nwidart/laravel-modules": "^13.0",
         "predis/predis": "*",
         "spatie/cpu-load-health-check": "^1.0",
+<<<<<<< HEAD
         "spatie/laravel-data": "*",
+=======
+        "spatie/laravel-data": "^4.7",
+>>>>>>> 3792da0d (Check & fix styling)
         "spatie/laravel-health": "^1.29",
         "spatie/laravel-model-states": "*",
         "spatie/laravel-model-status": "*",
@@ -59,10 +63,14 @@
     },
     "require_comment": {
 <<<<<<< HEAD
+<<<<<<< HEAD
        
 =======
         "filament/spatie-laravel-translatable-plugin": "*"
 >>>>>>> laraxot/dev
+=======
+        "filament/spatie-laravel-translatable-plugin": "*"
+>>>>>>> 3792da0d (Check & fix styling)
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
@@ -77,6 +85,7 @@
         "nunomaduro/phpinsights": "*",
         "orchestra/testbench": "*",
         "pestphp/pest": "*",
+<<<<<<< HEAD
         "pestphp/pest-plugin": "*",
         "pestphp/pest-plugin-arch": "*",
         "pestphp/pest-plugin-faker": "*",
@@ -93,6 +102,15 @@
         "phpstan/phpstan-deprecation-rules": "*",
         "thecodingmachine/phpstan-safe-rule": "*"
     },
+=======
+        "pestphp/pest-plugin-type-coverage": "*",
+        "thecodingmachine/phpstan-safe-rule": "*"
+    },
+    "require-dev_comment": {
+        "pestphp/pest-plugin-laravel": "*",
+        "spatie/laravel-error-solutions": "*"
+    },
+>>>>>>> 3792da0d (Check & fix styling)
     "repositories_comment": "Local path packages (coolsam/panel-modules) moved to root composer.json for proper priority. DO NOT add Packagist here - it must remain non-canonical in root.",
     "repositories": [
         {
@@ -151,6 +169,7 @@
         }
     },
     "minimum-stability": "dev",
+<<<<<<< HEAD
     "prefer-stable": true,
     "require-dev_comment": {
         "spatie/laravel-error-solutions": "*"
@@ -160,3 +179,7 @@
 =======
 }
 >>>>>>> laraxot/dev
+=======
+    "prefer-stable": true
+}
+>>>>>>> 3792da0d (Check & fix styling)

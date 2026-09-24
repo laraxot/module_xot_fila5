@@ -18,6 +18,7 @@ use function Safe\preg_match;
  * The $connection is automatically set based on the child class namespace.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|int $id
  * @property string $morph_type
  * @property string|int $morph_id
@@ -27,6 +28,8 @@ use function Safe\preg_match;
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property string|int      $id
  * @property string          $morph_type
  * @property string|int      $morph_id
@@ -35,7 +38,10 @@ use function Safe\preg_match;
  * @property Carbon|null     $created_at
  * @property Carbon|null     $updated_at
  * @property Carbon|null     $deleted_at
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
  * @property string|int|null $deleted_by
@@ -43,9 +49,13 @@ use function Safe\preg_match;
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
 >>>>>>> laraxot/dev
+=======
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> 3792da0d (Check & fix styling)
     use HasXotFactory;
     use Updater;
 
@@ -106,10 +116,14 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         $namespace = static::class;
         $matches = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
 =======
         if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
+>>>>>>> 3792da0d (Check & fix styling)
             return strtolower($matches[1]);
         }
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -704,12 +705,18 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: comprehensive-improvement-recommendations-1
 canonical: ../../../Themes/docs/shared-components/comprehensive-improvement-recommendations-1-1.md
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-improvement-recommendations-1-1.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-improvement-recommendations-1-1.md
+>>>>>>> 3792da0d (Check & fix styling)

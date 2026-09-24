@@ -28,6 +28,7 @@
 
 **Ultimo aggiornamento:** 2025-05-13
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 =======
@@ -35,6 +36,8 @@
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
   - [Patient: Regole Modelli](../../patient/project_docs/models.md)
   - [Notify Namespace Rules](../../notify/project_docs/namespace_rules.md)
 
@@ -44,6 +47,10 @@
 ---
 
 
+<<<<<<< HEAD
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> 3792da0d (Check & fix styling)

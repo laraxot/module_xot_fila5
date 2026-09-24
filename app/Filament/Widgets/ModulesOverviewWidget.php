@@ -14,7 +14,11 @@ use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
  */
 class ModulesOverviewWidget extends XotBaseWidget
 {
+<<<<<<< HEAD
     /** @var view-string */
+=======
+    /** @phpstan-ignore property.defaultValue */
+>>>>>>> 3792da0d (Check & fix styling)
     protected string $view = 'xot::filament.widgets.modules-overview';
 
     protected int|string|array $columnSpan = 'full';
@@ -34,7 +38,11 @@ class ModulesOverviewWidget extends XotBaseWidget
             $configs = app(GetModulesNavigationItems::class)->getCachedModuleConfigs();
 
             // Ordina per sort
+<<<<<<< HEAD
             usort($configs, static fn (array $a, array $b) => ($a['sort'] <=> $b['sort']));
+=======
+            usort($configs, static fn ($a, $b) => ($a['sort'] <=> $b['sort']));
+>>>>>>> 3792da0d (Check & fix styling)
 
             $user = Auth::user();
             $hasRoleFn = static function (string $role) use ($user): bool {
@@ -113,6 +121,7 @@ class ModulesOverviewWidget extends XotBaseWidget
     /**
      * Ottiene la descrizione per un modulo.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string $module Nome del modulo
@@ -120,6 +129,9 @@ class ModulesOverviewWidget extends XotBaseWidget
      * @param string $module Nome del modulo
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param string $module Nome del modulo
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @return string Descrizione del modulo
      */

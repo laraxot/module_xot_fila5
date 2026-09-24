@@ -20,10 +20,14 @@ trait TransTrait
      * Get translation for a given key.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $params
 =======
      * @param array<string, bool|float|int|string|null> $params
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, bool|float|int|string|null> $params
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @throws \Exception Se exceptionIfNotExist è true e la traduzione non esiste
      */
@@ -106,6 +110,7 @@ trait TransTrait
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $key  La chiave di traduzione specifica
      * @param  array<string, bool|float|int|string|null>  $replace  Parametri di sostituzione per la traduzione
      * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
@@ -117,6 +122,13 @@ trait TransTrait
      * @param bool                                      $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string                               $key         La chiave di traduzione specifica
+     * @param array<string, bool|float|int|string> $replace     Parametri di sostituzione per la traduzione
+     * @param string|null                          $locale      Locale da utilizzare (null = locale corrente)
+     * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return string La stringa tradotta o la chiave originale se non trovata
      */
     public static function getTranslatedString(
@@ -153,6 +165,7 @@ trait TransTrait
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $key  La chiave di traduzione specifica
      * @param  array<string, bool|float|int|string|null>  $replace  Parametri di sostituzione per la traduzione
      * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
@@ -164,6 +177,13 @@ trait TransTrait
      * @param bool                                      $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
      *
 >>>>>>> laraxot/dev
+=======
+     * @param string                               $key         La chiave di traduzione specifica
+     * @param array<string, bool|float|int|string> $replace     Parametri di sostituzione per la traduzione
+     * @param string|null                          $locale      Locale da utilizzare (null = locale corrente)
+     * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return string La stringa tradotta o la chiave originale se non trovata
      */
     public static function transOLD(
@@ -187,10 +207,14 @@ trait TransTrait
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($moduleName === '') {
 =======
         if ('' === $moduleName) {
 >>>>>>> laraxot/dev
+=======
+        if ('' === $moduleName) {
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 
@@ -201,10 +225,14 @@ trait TransTrait
      * Get a translation according to an integer value.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $replace
 =======
      * @param array<string, bool|float|int|string|null> $replace
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, bool|float|int|string|null> $replace
+>>>>>>> 3792da0d (Check & fix styling)
      */
     protected function transChoice(string $key, int $number, array $replace = []): string
     {

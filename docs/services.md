@@ -237,6 +237,7 @@ return [
 * [services.md](../../../Xot/docs/services.md)
 * [services.md](../../../Tenant/docs/it/config/services.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -244,12 +245,17 @@ return [
 * [services.md](../../../tenant/docs/it/config/services.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+* [services.md](../../../xot/docs/services.md)
+* [services.md](../../../tenant/docs/it/config/services.md)
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### Versione Incoming
 
    - Testare i casi limite
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
 <<<<<<< HEAD
@@ -258,3 +264,6 @@ return [
 ---
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+---
+>>>>>>> 3792da0d (Check & fix styling)

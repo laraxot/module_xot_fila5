@@ -62,6 +62,7 @@ class XotBaseResourceForm
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -75,6 +76,9 @@ class XotBaseResourceForm
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [];
     }
@@ -101,6 +105,7 @@ class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -114,6 +119,9 @@ class TicketForm extends XotBaseResourceForm
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         $steps = static::getSteps();
         $wizard = Wizard::make($steps)->skippable()->persistStepInQueryString();

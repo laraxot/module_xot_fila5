@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_LJxcgs
 =======
 <<<<<<< .merge_file_w3RpVY
@@ -339,6 +340,8 @@ function xot_config(string $key): mixed
 **Effort**: ~2 ore → 100% CLEAN
 =======
 >>>>>>> .merge_file_7FUtwH
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 module: theme
 topic: legacy-roadmap-ands
@@ -346,7 +349,10 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
+<<<<<<< HEAD
 <<<<<<< .merge_file_LJxcgs
 =======
 >>>>>>> .merge_file_e59rpe
 >>>>>>> .merge_file_7FUtwH
+=======
+>>>>>>> 3792da0d (Check & fix styling)

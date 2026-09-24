@@ -150,6 +150,7 @@ class MyPage extends XotBasePage
 // ❌ SBAGLIATO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hjHAOZ
 =======
@@ -169,6 +170,9 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_i7why3
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
 
 // ✅ CORRETTO
 public function getFormSchema(): array

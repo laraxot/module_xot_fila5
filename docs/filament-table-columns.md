@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_0Tgqx5
@@ -31,6 +32,8 @@ related:
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
 ## Regola
@@ -59,6 +62,7 @@ public function getTableColumns(): array
 - Aggiornare override, chiamate e test
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
 
 ## Collegamenti
@@ -86,6 +90,8 @@ public function getTableColumns(): array
 >>>>>>> .merge_file_POTMkK
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 **Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../performance/docs/filament-resources.md).
 
 ## Collegamenti
@@ -96,8 +102,11 @@ public function getTableColumns(): array
 - [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Nota storica: correzione XotBaseManageRelatedRecords
 
@@ -114,6 +123,7 @@ public function getTableColumns(): array
 **Ultimo aggiornamento:** 2025-05-13
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 =======
 <<<<<<< HEAD
@@ -122,3 +132,6 @@ public function getTableColumns(): array
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> 3792da0d (Check & fix styling)

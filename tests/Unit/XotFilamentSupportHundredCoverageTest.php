@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Unit;
 <<<<<<< HEAD
 use Mockery;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
 use Mockery;
@@ -14,6 +15,8 @@ use Mockery;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_oL1cam
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 use Modules\Xot\Filament\Builders\ColumnBuilder;
 use Modules\Xot\Filament\Builders\FilterBuilder;
@@ -25,6 +28,7 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
 use ReflectionClass;
@@ -33,6 +37,8 @@ use ReflectionMethod;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_oL1cam
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-xot-db');
@@ -41,6 +47,7 @@ afterEach(function (): void {
 <<<<<<< HEAD
     Mockery::close();
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
     Mockery::close();
@@ -51,6 +58,10 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 });
 
 describe('Xot filament support hundred', function (): void {
@@ -63,6 +74,7 @@ describe('Xot filament support hundred', function (): void {
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
             $ref = new ReflectionClass($class);
@@ -73,6 +85,10 @@ describe('Xot filament support hundred', function (): void {
             $ref = new \ReflectionClass($class);
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $inst = null;
             if (! $ref->isAbstract()) {
                 try {
@@ -84,6 +100,7 @@ describe('Xot filament support hundred', function (): void {
 <<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
@@ -94,6 +111,10 @@ describe('Xot filament support hundred', function (): void {
             foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
 >>>>>>> .merge_file_oL1cam
 >>>>>>> laraxot/dev
+=======
+            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -118,10 +139,13 @@ describe('Xot filament support hundred', function (): void {
                     if ($method->isStatic()) {
                         $method->invoke(null, ...$args);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_t2L4B0
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     } elseif ($inst !== null) {
                         $method->invoke($inst, ...$args);
                     }
@@ -129,20 +153,27 @@ describe('Xot filament support hundred', function (): void {
                 } catch (\Throwable) {
                     $n++;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_oL1cam
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                     } elseif (null !== $inst) {
                         $method->invoke($inst, ...$args);
                     }
                     ++$n;
                 } catch (\Throwable) {
                     ++$n;
+<<<<<<< HEAD
 <<<<<<< .merge_file_t2L4B0
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_oL1cam
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                 }
             }

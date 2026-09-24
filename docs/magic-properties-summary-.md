@@ -18,6 +18,7 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 
 ### ✅ healthcare_app Module
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### ✅ ExternalProject Module
 <<<<<<< HEAD
 =======
@@ -40,6 +41,9 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+### ✅ ExternalProject Module
+>>>>>>> 3792da0d (Check & fix styling)
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module
@@ -86,6 +90,7 @@ Files generally have good scores with minor style issues:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 =======
 =======
@@ -102,3 +107,6 @@ Files generally have good scores with minor style issues:
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+>>>>>>> 3792da0d (Check & fix styling)

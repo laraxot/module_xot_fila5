@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 title: "Composer Root Skeleton Fixcity Comparison"
 type: concept
@@ -15,6 +16,8 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 title: "Confronto composer root FixCity vs Predict"
 type: raw-note
 module: Xot
@@ -29,7 +32,10 @@ source:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> .merge_file_iNeHny
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Osservazione FixCity
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
@@ -52,14 +58,20 @@ Root allineato e piu' stretto di FixCity:
 - autoload solo `App\\` e `Tests\\`
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
+<<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 =======
 ## Osservazione
 =======
 ## Osservazione FixCity
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> .merge_file_iNeHny
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
 
@@ -69,16 +81,23 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Debito FixCity (non replicare in Predict)
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_iNeHny
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`);
 - `Modules\\` nell'autoload root;
 - merge di `Themes/*/composer.json`;
 - configurazione merge-plugin piu' ampia del necessario.
+<<<<<<< HEAD
 <<<<<<< .merge_file_eHlvf2
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> 64619e34 (.)
 =======
 - `spatie/laravel-responsecache` nel root — gia' owner in `Modules/Xot`
@@ -94,7 +113,10 @@ Root allineato e piu' stretto di FixCity:
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> .merge_file_iNeHny
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Regola dedotta
 

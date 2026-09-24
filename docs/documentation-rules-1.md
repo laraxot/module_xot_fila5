@@ -7,6 +7,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -17,12 +18,17 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Validazione dei Collegamenti
 
@@ -31,6 +37,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
@@ -43,6 +50,10 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Formato Non Corretto
@@ -50,6 +61,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 # Collegamenti Non Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -71,6 +83,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
@@ -86,8 +100,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](modules/xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Checklist di Validazione
@@ -98,6 +115,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 <<<<<<< HEAD
@@ -106,6 +124,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Validazione dei Collegamenti
 
@@ -114,6 +135,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
@@ -126,6 +148,10 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Formato Non Corretto
@@ -133,6 +159,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 # Collegamenti Non Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -154,6 +181,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
@@ -169,8 +198,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](modules/xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Checklist di Validazione
@@ -181,6 +213,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 =======
 <<<<<<< HEAD
@@ -189,6 +222,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Validazione dei Collegamenti
 
@@ -197,6 +233,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
@@ -209,6 +246,10 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Formato Non Corretto
@@ -216,6 +257,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 # Collegamenti Non Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -237,6 +279,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
@@ -252,8 +296,11 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](modules/xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ```
 
 ### Checklist di Validazione
@@ -348,6 +395,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - Una buona documentazione riduce il tempo di onboarding
 - La documentazione deve evolversi insieme al codice
 <<<<<<< HEAD
+<<<<<<< HEAD
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 =======
 <<<<<<< HEAD
@@ -356,3 +404,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- I collegamenti bidirezionali sono essenziali per la navigabilità
+>>>>>>> 3792da0d (Check & fix styling)

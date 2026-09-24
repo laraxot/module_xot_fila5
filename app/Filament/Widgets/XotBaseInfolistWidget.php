@@ -4,11 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
+=======
+use Filament\Schemas\Concerns\InteractsWithSchemas;
+use Filament\Schemas\Contracts\HasSchemas;
+use Filament\Schemas\Schema;
+>>>>>>> 3792da0d (Check & fix styling)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 
@@ -22,7 +28,11 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
 {
     use InteractsWithSchemas;
 
+<<<<<<< HEAD
     /** @var view-string */
+=======
+    /** @phpstan-ignore property.defaultValue */
+>>>>>>> 3792da0d (Check & fix styling)
     protected string $view = 'xot::filament.widgets.infolist';
 
     protected int|string|array $columnSpan = 'full';
@@ -33,7 +43,11 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
+<<<<<<< HEAD
      * @return array<int|string, Component|Htmlable|string>
+=======
+     * @return array<int|string, \Filament\Schemas\Components\Component|\Illuminate\Contracts\Support\Htmlable|string>
+>>>>>>> 3792da0d (Check & fix styling)
      */
     abstract protected function getInfolistSchema(): array;
 
@@ -43,10 +57,14 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     {
         $record = $this->getInfolistRecord();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($record !== null) {
 =======
         if (null !== $record) {
 >>>>>>> laraxot/dev
+=======
+        if (null !== $record) {
+>>>>>>> 3792da0d (Check & fix styling)
             $schema->record($record);
         }
 

@@ -16,9 +16,12 @@ class ModuleFactory extends Factory
 {
     protected $model = Module::class;
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     public function definition(): array
     {
         return [

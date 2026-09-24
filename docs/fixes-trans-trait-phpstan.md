@@ -2,12 +2,16 @@
 
 ## Data: 2025-01-27
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 ## Data: [DATE]
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+## Data: [DATE]
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Problema Identificato
 
@@ -123,6 +127,7 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 - Utilizzare sempre tipizzazione completa per array nei PHPDoc
 - Verificare che i metodi di traduzione restituiscano sempre string
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
 =======
 <<<<<<< HEAD
@@ -131,3 +136,6 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
+>>>>>>> 3792da0d (Check & fix styling)

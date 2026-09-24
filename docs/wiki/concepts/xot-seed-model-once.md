@@ -9,12 +9,16 @@ qmd: "xotSeedModelOnce GetFactoryAction entity seeder phpstan factory"
 related:
   - ../troubleshooting/phpstan-modules-fix.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
   - ./phpstan-trait-probes.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  - ./phpstan-trait-probes.md
+>>>>>>> 3792da0d (Check & fix styling)
 ---
 
 # xotSeedModelOnce

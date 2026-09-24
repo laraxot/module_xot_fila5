@@ -1809,6 +1809,7 @@ class ContactDashboard extends Dashboard
             'overview' => [
                 'label' => 'Overview',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -1827,6 +1828,8 @@ class ContactDashboard extends Dashboard
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
                 'url' => route('filament.healthcare_app.dashboard'),
                 'isActive' => request()->routeIs('filament.healthcare_app.dashboard'),
             ],
@@ -1839,8 +1842,11 @@ class ContactDashboard extends Dashboard
                 'label' => 'Reports',
                 'url' => route('filament.healthcare_app.reports'),
                 'isActive' => request()->routeIs('filament.healthcare_app.reports'),
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             ],
         ];
     }
@@ -1939,6 +1945,7 @@ class PerformanceMonitoringMiddleware
 - [ ] Tests comprehensive (85%+ coverage)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
 =======
 <<<<<<< HEAD
@@ -1947,3 +1954,6 @@ Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfru
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
+>>>>>>> 3792da0d (Check & fix styling)

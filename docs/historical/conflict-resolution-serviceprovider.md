@@ -27,6 +27,7 @@ Questa scelta garantisce:
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Provider](best-practices.md)
 =======
 <<<<<<< .merge_file_clQPtA
@@ -39,11 +40,15 @@ Questa scelta garantisce:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_rL1hlY
 >>>>>>> laraxot/dev
+=======
+- [Best Practices Provider](./BEST-PRACTICES.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](best-practices.md)
 =======
@@ -57,3 +62,6 @@ Questa scelta garantisce:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_rL1hlY
 >>>>>>> laraxot/dev
+=======
+- [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
+>>>>>>> 3792da0d (Check & fix styling)

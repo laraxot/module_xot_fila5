@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3792da0d (Check & fix styling)
 ?>
 <x-filament-widgets::widget class="fi-wi-infolist">
     @if ($this->getInfolistRecord())

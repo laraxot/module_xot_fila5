@@ -70,6 +70,7 @@ public function __construct()
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 📋 Pattern di Utilizzo
 
 ### Pattern 1: View Manuale (Raccomandato per nomi complessi)
@@ -79,6 +80,8 @@ public function __construct()
 
 ### Pattern 1: View Manuale (Raccomandato per nomi complessi)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Pattern di Utilizzo
 
 ### Pattern 1: View Automatica (default Laraxot)
@@ -103,8 +106,11 @@ class SimpleWidget extends XotBaseWidget
 - Si vuole evitare duplicazione tra classe PHP e path Blade
 
 ### Pattern 2: View Manuale (solo eccezione documentata)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ```php
 class TimeClockWidget extends XotBaseWidget
@@ -119,6 +125,7 @@ class TimeClockWidget extends XotBaseWidget
 ```
 
 **Quando usare**:
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -154,6 +161,11 @@ class SimpleWidget extends XotBaseWidget
 - Si accetta consapevolmente che l'override blocchi la precedenza `pub_theme::...`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- La view ha un nome realmente fuori convenzione
+- Il motivo dell'override è documentato
+- Si accetta consapevolmente che l'override blocchi la precedenza `pub_theme::...`
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -210,6 +222,7 @@ class MyWidget extends XotBaseWidget
 ## 📝 Best Practices
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -220,13 +233,18 @@ class MyWidget extends XotBaseWidget
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 1. **Preferire sempre la view automatica** quando il nome widget segue la convenzione
 2. **Definire manualmente `$view` solo come eccezione documentata**
 3. **Verificare che la view esista** prima di definirla manualmente
 4. **Ricordare che `$view` manuale blocca la precedenza `pub_theme::...`**
 5. **Usare naming consistente** per evitare override non necessari
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -240,9 +258,13 @@ class MyWidget extends XotBaseWidget
 
 *Documento creato il 2025-01-27 durante la risoluzione del bug "View not found: timeclock"*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 *Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Documento creato il [DATE] durante la risoluzione del bug "View not found: timeclock"*
+>>>>>>> 3792da0d (Check & fix styling)

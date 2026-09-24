@@ -282,6 +282,7 @@ php artisan config:cache
 - [Documentazione Root](/project_docs/env-config-loading-issue.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 =======
 <<<<<<< HEAD
@@ -290,3 +291,6 @@ php artisan config:cache
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 3792da0d (Check & fix styling)

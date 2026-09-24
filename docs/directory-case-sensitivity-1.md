@@ -135,6 +135,7 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [NAMESPACE-RULES.md](./namespace-rules.md) - Regole per i namespace nei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./folio_volt_filament_integration.md) - Integrazione Folio, Volt e Filament
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
 =======
 <<<<<<< HEAD
@@ -143,3 +144,6 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
+>>>>>>> 3792da0d (Check & fix styling)

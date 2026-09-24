@@ -10,6 +10,7 @@ This document provides guidelines for using strict typing in PHP within a Larave
 ## Implementation Guidelines
 ### 1. Declare Strict Types
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_TFBmVf
@@ -31,10 +32,13 @@ This document provides guidelines for using strict typing in PHP within a Larave
 =======
 =======
 >>>>>>> .merge_file_trqcjj
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - Always declare strict types at the top of every PHP file to enable strict type checking.
   ```php
   declare(strict_types=1);
   ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_TFBmVf
 =======
 - `declare(strict_types=1);` è la **prima istruzione** dopo `<?php` (riga vuota in mezzo). **Mai** prima del tag di apertura: PHP fatale `strict_types declaration must be the very first statement`.
@@ -53,6 +57,8 @@ This document provides guidelines for using strict typing in PHP within a Larave
 >>>>>>> .merge_file_trqcjj
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ### 2. Function and Method Signatures
 - Use type hints for parameters and return types in all function and method declarations.
@@ -88,6 +94,7 @@ This document provides guidelines for using strict typing in PHP within a Larave
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -121,6 +128,8 @@ Campagna: [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed
 <<<<<<< .merge_file_TFBmVf
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Code Quality](./code_quality.md)
 - [PHPStan Implementation Guide](./phpstan-implementation-guide.md)
 - [Naming Conventions](./naming-conventions.md)
@@ -130,7 +139,11 @@ Campagna: [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
 >>>>>>> .merge_file_trqcjj
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 3792da0d (Check & fix styling)

@@ -12,9 +12,12 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 {
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_NlBMYd
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
   /**
@@ -39,9 +42,12 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> .merge_file_h9ahnh
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     /**
      * @return array<string, TextColumn>
      */
@@ -62,6 +68,7 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_NlBMYd
 >>>>>>> laraxot/dev
@@ -69,4 +76,8 @@ final class XotBaseResourceTableConfigureFixture extends XotBaseResourceTable
 =======
 >>>>>>> .merge_file_h9ahnh
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
 }

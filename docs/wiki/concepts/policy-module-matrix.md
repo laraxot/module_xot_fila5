@@ -30,6 +30,7 @@ Matrice operativa per decidere la base policy per modulo, mantenendo DRY + KISS.
 | Fixcity | presenti policy dirette senza base comune forte | `XotBasePolicy` per business core; `UserBasePolicy` solo dove identity-driven | revisione alta |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -39,6 +40,11 @@ Matrice operativa per decidere la base policy per modulo, mantenendo DRY + KISS.
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> 3792da0d (Check & fix styling)
 ## Inventario quantitativo (2026-06-30)
 
 Comando: `bash bashscripts/tools/audit-policy-inventory.sh`
@@ -55,6 +61,7 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -63,22 +70,30 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 >>>>>>> 61938ca4 (delete .claude-audit/)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
+>>>>>>> 3792da0d (Check & fix styling)
 ## Note pratiche
 
 - i base policy locali di modulo sono utili, ma dovrebbero derivare da una linea guida esplicita (Xot-first o User-first)
 - evitare policy nuove "isolated" senza estendere una base condivisa, salvo eccezioni documentate
 - in caso di dubbio, default su `XotBasePolicy`
 <<<<<<< HEAD
-- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-=======
 <<<<<<< HEAD
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 =======
 <<<<<<< HEAD
+- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 <<<<<<< HEAD
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 =======
@@ -86,8 +101,11 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 =======
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ## Miglioramenti consigliati
 

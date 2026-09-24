@@ -155,6 +155,7 @@ abstract public function getFormSchema(): array;
 =======
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -168,12 +169,17 @@ abstract public function getFormSchema(): array;
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nTLeny
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -616,6 +622,7 @@ class MyResource extends XotBaseResource
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -629,12 +636,17 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nTLeny
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('field1')->required(),
@@ -716,6 +728,7 @@ class ArticleResource extends XotBaseResource
 =======
 <<<<<<< HEAD
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -729,12 +742,17 @@ class ArticleResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+>>>>>>> 3792da0d (Check & fix styling)
+=======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nTLeny
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             TextInput::make('title')

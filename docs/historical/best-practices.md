@@ -290,6 +290,7 @@ class MioModelloResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_yvlwZM
 =======
@@ -309,6 +310,9 @@ class MioModelloResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_NLSaSx
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('nome')

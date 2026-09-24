@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_fel2sJ
 <<<<<<< HEAD
@@ -51,3 +52,9 @@ https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-la
 >>>>>>> .merge_file_9cm2Fm
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+How To Integrate Paypal Payment Gateway In Laravel 8
+https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel-8
+
+----------------------------------------------------------------------------------------------
+>>>>>>> 3792da0d (Check & fix styling)

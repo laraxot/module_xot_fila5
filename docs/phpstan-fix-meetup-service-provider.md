@@ -1,6 +1,11 @@
 # PHPStan Fix - MeetupServiceProvider - 2025-12-16
 
 **Data**: 2025-12-16
+<<<<<<< HEAD
+=======
+# PHPStan Fix - MeetupServiceProvider - [DATE]
+
+>>>>>>> 3792da0d (Check & fix styling)
 **Analista**: Super Mucca AI
 **Status**: ✅ COMPLETATO
 
@@ -160,4 +165,8 @@ $mappedPaths = array_map(function ($path): string {
 
 ---
 
+<<<<<<< HEAD
 **Target Raggiunto**: PHPStan Level 10 + piena compliance Laraxot 🎯
+=======
+**Target Raggiunto**: PHPStan Level 10 + piena compliance Laraxot 🎯
+>>>>>>> 3792da0d (Check & fix styling)

@@ -290,6 +290,7 @@ class MioModelloResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -303,6 +304,9 @@ class MioModelloResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -779,17 +783,23 @@ public function createModel(array $data): MioModello
 
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [**README.md**](readme.md) - Documentazione principale del modulo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Best Practices Globali**](../../docs/best-practices.md) - Best practices globali
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -858,6 +868,7 @@ public function process(\Modules\User\Models\User $user) {
     // Codice
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 <<<<<<< HEAD
@@ -866,3 +877,6 @@ public function process(\Modules\User\Models\User $user) {
 ```
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+```
+>>>>>>> 3792da0d (Check & fix styling)

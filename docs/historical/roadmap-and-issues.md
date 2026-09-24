@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
 =======
@@ -22,6 +23,8 @@ See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/
 <<<<<<< .merge_file_Ck4O3z
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 module: theme
 topic: legacy-roadmap-ands
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
@@ -40,9 +43,12 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 | Actions Framework | 90% | Completo, manca documentazione |
 | Contracts | 90% | Manca isSuperAdmin() in ProfileContract |
 | Type Safety | 98% | 9 errori PHPStan da risolvere |
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 
 ---
 
@@ -359,6 +365,7 @@ function xot_config(string $key): mixed
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_Ck4O3z
 =======
@@ -370,3 +377,8 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/legacy
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_AKTpHy
 >>>>>>> laraxot/dev
+=======
+=======
+See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
+>>>>>>> 64619e34 (.):docs/roadmap/legacy/legacy-roadmap-ands.md
+>>>>>>> 3792da0d (Check & fix styling)

@@ -12,12 +12,16 @@ discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
   - ./phpstan-trait-probes.md
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  - ./phpstan-trait-probes.md
+>>>>>>> 3792da0d (Check & fix styling)
   - ../log.md
 ---
 

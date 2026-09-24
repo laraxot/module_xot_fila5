@@ -613,6 +613,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
@@ -620,6 +621,8 @@ class AlertWidget extends BaseTableWidget
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](./architecture.md)
 - [Performance Guide](./performance_guide.md)
@@ -629,8 +632,11 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: [DATE]
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -711,6 +717,7 @@ class LimeJsonService
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
 =======
@@ -718,12 +725,17 @@ class QuaerisService
 // QuaerisService.php
 class QuaerisService
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 // healthcare_appService.php
 class healthcare_appService
 // ModuloEsempioService.php
 class ModuloEsempioService
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 {
     use SingletonTrait;
 
@@ -1197,6 +1209,7 @@ class LimeJsonService
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
 =======
@@ -1204,12 +1217,17 @@ class QuaerisService
 // QuaerisService.php
 class QuaerisService
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 // healthcare_appService.php
 class healthcare_appService
 // ModuloEsempioService.php
 class ModuloEsempioService
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 {
     use SingletonTrait;
 
@@ -1278,6 +1296,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
@@ -1285,6 +1304,8 @@ class AlertWidget extends BaseTableWidget
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](./architecture.md)
 - [Performance Guide](./performance_guide.md)
@@ -1294,8 +1315,11 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: [DATE]
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1304,6 +1328,7 @@ class AlertWidget extends BaseTableWidget
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Benefici**: ALTI
 =======
 <<<<<<< HEAD
@@ -1312,3 +1337,6 @@ class AlertWidget extends BaseTableWidget
 **Benefici**: ALTI
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+**Benefici**: ALTI
+>>>>>>> 3792da0d (Check & fix styling)

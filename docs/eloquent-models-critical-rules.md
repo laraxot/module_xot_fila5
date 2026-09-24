@@ -169,6 +169,7 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Docs: Eloquent Models Property Verification](../../../docs/eloquent-models-property-verification.md)
 =======
 <<<<<<< HEAD
@@ -177,6 +178,9 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 - [Root Docs: Eloquent Models Property Verification](../../../../docs/eloquent-models-property-verification.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Root Docs: Eloquent Models Property Verification](../../../../docs/eloquent-models-property-verification.md)
+>>>>>>> 3792da0d (Check & fix styling)
 - [.cursor/rules/property_exists_eloquent_models.mdc](../../../.cursor/rules/property_exists_eloquent_models.mdc)
 - [.windsurf/rules/property_exists_eloquent_models.mdc](../../../.windsurf/rules/property_exists_eloquent_models.mdc)
 - [Laravel AI Guidelines](../../.ai/guidelines/eloquent_models_property_verification.md)
@@ -189,6 +193,7 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 5. Aggiornamento documentazione moduli specifici
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
 =======
 <<<<<<< HEAD
@@ -197,3 +202,6 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 *Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
+>>>>>>> 3792da0d (Check & fix styling)

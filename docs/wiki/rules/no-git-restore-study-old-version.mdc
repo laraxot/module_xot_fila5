@@ -2,6 +2,7 @@
 title: "NO git restore — studia vecchia versione"
 type: rule
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -18,6 +19,8 @@ related:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 tags: [git, recovery, study, refactoring]
 created: 2026-01-21
 updated: 2026-07-01
@@ -25,12 +28,16 @@ qmd: never use git restore always study old version create better
 issues: []
 discussions: []
 related:
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
   - ../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md
   - ../../../../../../docs/wiki/memories/no-git-restore-study-improve.md
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -54,6 +61,8 @@ Git solo avanti. File perso o rotto:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 # NO git restore — studia vecchia versione
 
 ## Regola assoluta
@@ -105,5 +114,8 @@ git checkout -- Modules/<Modulo>/composer.json
 - Hub repo: [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
 - Cursor on-demand: `.cursor/rules/no-git-restore-forward-only.mdc`
 - Studia → Capisci → Migliora → Applica
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

@@ -12,6 +12,7 @@ discussions:
 related:
   - phpstan-pest-bridge-discipline.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../phpstan-best-practices.md
 =======
 <<<<<<< HEAD
@@ -26,6 +27,9 @@ related:
 >>>>>>> .merge_file_kpe4RL
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+  - ../PHPSTAN-BEST-PRACTICES.md
+>>>>>>> 3792da0d (Check & fix styling)
   - ../overviews/platform-completion-roadmap.md
   - module-testcase-xotbase-hierarchy.md
 ---
@@ -55,6 +59,7 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules
 - PHPStan piattaforma: ✅ (hub owner documentazione)
 - [platform-completion-roadmap](../overviews/platform-completion-roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan-best-practices](../phpstan-best-practices.md)
 =======
 <<<<<<< HEAD
@@ -69,3 +74,6 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules
 >>>>>>> .merge_file_kpe4RL
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [PHPSTAN-BEST-PRACTICES](../PHPSTAN-BEST-PRACTICES.md)
+>>>>>>> 3792da0d (Check & fix styling)

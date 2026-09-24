@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -20,11 +21,15 @@ related:
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> 3792da0d (Check & fix styling)
 # Report Conflitti Git - Modulo Xot
 
 ## Data
 - 2025-01-06
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -239,6 +244,8 @@ php artisan lang:check
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## File Risolti in Questa Sessione
 
 | File | Stato | Note |
@@ -261,6 +268,7 @@ php artisan lang:check
 - `./vendor/bin/phpstan analyse Modules/Xot Modules/UI` → ❌ blocchi esistenti (warning storici riportati nel log)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
 =======
@@ -268,6 +276,8 @@ php artisan lang:check
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 ## Azioni Successive
 1. Pulire marker nelle documentazioni storiche o spostarle in `archive/`
 2. Valutare pulizia script legacy con marker (non usati in produzione)
@@ -333,5 +343,8 @@ canonical: ../../../Themes/docs/shared-components/conflict-resolution-report.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-report.md
 >>>>>>> 64619e34 (.)
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)

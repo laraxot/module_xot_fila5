@@ -21,6 +21,7 @@ class GetRouteMethodAction
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_PLRs1y
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -33,6 +34,11 @@ class GetRouteMethodAction
      *
 >>>>>>> .merge_file_DylFiN
 >>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      * @return array<int, string>
      */
     public function execute(array $v, ?string $namespace = null): array
@@ -41,6 +47,7 @@ class GetRouteMethodAction
 <<<<<<< HEAD
             /** @var array<int, string> */
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_PLRs1y
 <<<<<<< HEAD
             /** @var array<int, string> */
@@ -51,6 +58,10 @@ class GetRouteMethodAction
             /* @var array<int, string> */
 >>>>>>> .merge_file_DylFiN
 >>>>>>> laraxot/dev
+=======
+            /* @var array<int, string> */
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return Arr::wrap($v['method']);
         }
 

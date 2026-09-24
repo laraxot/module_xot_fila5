@@ -80,6 +80,7 @@
 - [Data Objects Patient](../patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
 =======
 <<<<<<< HEAD
@@ -88,3 +89,6 @@
 - [Convenzioni di Codice](./coding-standards.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 3792da0d (Check & fix styling)

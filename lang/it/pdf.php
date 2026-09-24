@@ -23,10 +23,14 @@ return [
         'label' => 'Pdf',
         'sort' => 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
 =======
         'icon' => 'xot-files.pdf',
 >>>>>>> laraxot/dev
+=======
+        'icon' => 'heroicon-o-collection',
+>>>>>>> 3792da0d (Check & fix styling)
     ],
     'actions' => [
         'create' => [

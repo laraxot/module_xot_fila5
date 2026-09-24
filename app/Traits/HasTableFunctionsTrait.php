@@ -39,7 +39,11 @@ trait HasTableFunctionsTrait
         return [
             'edit' => Action::make('edit')
                 ->label('Modifica')
+<<<<<<< HEAD
                 ->url(fn (Model $record): string => route('filament.resources.'.$this->getResourceSlug().'.edit', [
+=======
+                ->url(fn ($record): string => route('filament.resources.'.$this->getResourceSlug().'.edit', [
+>>>>>>> 3792da0d (Check & fix styling)
                     'record' => $record,
                 ])),
             'delete' => Action::make('delete')

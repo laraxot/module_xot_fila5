@@ -22,6 +22,7 @@ class ClearArtisanSessionFilesAction
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_EYQlCp
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
@@ -32,6 +33,10 @@ class ClearArtisanSessionFilesAction
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> .merge_file_7u3lBJ
 >>>>>>> laraxot/dev
+=======
+            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 File::delete($file->getRealPath());
             }
         }

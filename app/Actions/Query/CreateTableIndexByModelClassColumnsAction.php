@@ -23,12 +23,17 @@ class CreateTableIndexByModelClassColumnsAction
      * Execute the action.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass  fully qualified model class name
      * @param  array<string>  $columns  array of column names to include in the index
 =======
      * @param class-string<Model> $modelClass fully qualified model class name
      * @param array<string>       $columns    array of column names to include in the index
 >>>>>>> laraxot/dev
+=======
+     * @param class-string<Model> $modelClass fully qualified model class name
+     * @param array<string>       $columns    array of column names to include in the index
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @throws \InvalidArgumentException|\RuntimeException
      */
@@ -41,10 +46,14 @@ class CreateTableIndexByModelClassColumnsAction
 
         /** @var Model $modelInstance */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $modelInstance = new $modelClass;
 =======
         $modelInstance = new $modelClass();
 >>>>>>> laraxot/dev
+=======
+        $modelInstance = new $modelClass();
+>>>>>>> 3792da0d (Check & fix styling)
 
         $tableName = $modelInstance->getTable();
         $connectionName = $modelInstance->getConnectionName() ?? config('database.default');
@@ -77,6 +86,7 @@ class CreateTableIndexByModelClassColumnsAction
      * Validate that all specified columns exist in the table.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $connectionName  database connection name
      * @param  string  $tableName  name of the table
      * @param  array<string>  $columns  columns to validate
@@ -85,6 +95,11 @@ class CreateTableIndexByModelClassColumnsAction
      * @param string        $tableName      name of the table
      * @param array<string> $columns        columns to validate
 >>>>>>> laraxot/dev
+=======
+     * @param string        $connectionName database connection name
+     * @param string        $tableName      name of the table
+     * @param array<string> $columns        columns to validate
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @throws \RuntimeException
      */
@@ -101,15 +116,21 @@ class CreateTableIndexByModelClassColumnsAction
      * Check if an index exists in the table.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $connectionName  database connection name
      * @param  string  $tableName  name of the table
      * @param  string  $indexName  name of the index
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string $connectionName database connection name
      * @param string $tableName      name of the table
      * @param string $indexName      name of the index
      *
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @return bool true if the index exists, false otherwise
      */
     private function indexExists(string $connectionName, string $tableName, string $indexName): bool
@@ -147,12 +168,17 @@ class CreateTableIndexByModelClassColumnsAction
      * Generate a unique index name based on the table and columns.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $tableName  name of the table
      * @param  array<string>  $columns  columns to include in the index
 =======
      * @param string        $tableName name of the table
      * @param array<string> $columns   columns to include in the index
 >>>>>>> laraxot/dev
+=======
+     * @param string        $tableName name of the table
+     * @param array<string> $columns   columns to include in the index
+>>>>>>> 3792da0d (Check & fix styling)
      */
     private function generateIndexName(string $tableName, array $columns): string
     {

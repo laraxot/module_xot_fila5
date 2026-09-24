@@ -102,6 +102,7 @@ function dddx(mixed $params): string
 - `Xot/docs/code-quality-audit-2025-01.md` - Audit generale
 - `Xot/docs/module-quality-status.md` - Status moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
 =======
 <<<<<<< HEAD
@@ -110,6 +111,9 @@ function dddx(mixed $params): string
 - `Xot/docs/code-quality-audit.md` - Questo documento
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- `Xot/docs/code-quality-audit.md` - Questo documento
+>>>>>>> 3792da0d (Check & fix styling)
 - `Rating/docs/code-quality-analysis.md` - Analisi Rating
 
 ## 🎯 Prossimi Passi

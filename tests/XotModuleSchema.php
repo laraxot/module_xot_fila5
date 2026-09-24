@@ -11,6 +11,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 <<<<<<< HEAD
 use Throwable;
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_bNIQvw
 <<<<<<< HEAD
 use Throwable;
@@ -18,6 +19,8 @@ use Throwable;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_SXv43M
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
 
 /**
@@ -73,6 +76,7 @@ final class XotModuleSchema
 <<<<<<< HEAD
      * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_bNIQvw
 <<<<<<< HEAD
      * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
@@ -83,6 +87,10 @@ final class XotModuleSchema
      * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+=======
+     * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public static function ensure(string $module): void
     {
@@ -211,6 +219,7 @@ final class XotModuleSchema
 <<<<<<< HEAD
             if ($table !== null && Schema::hasTable($table)) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_bNIQvw
 <<<<<<< HEAD
             if ($table !== null && Schema::hasTable($table)) {
@@ -221,6 +230,10 @@ final class XotModuleSchema
             if (null !== $table && Schema::hasTable($table)) {
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+=======
+            if (null !== $table && Schema::hasTable($table)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
                 return;
             }
 
@@ -236,6 +249,7 @@ final class XotModuleSchema
 <<<<<<< HEAD
         } catch (Throwable) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_bNIQvw
 <<<<<<< HEAD
         } catch (Throwable) {
@@ -246,6 +260,10 @@ final class XotModuleSchema
         } catch (\Throwable) {
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+=======
+        } catch (\Throwable) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             // Una migration che non gira lascia semplicemente la tabella assente: i test
             // che la richiedono si salteranno per precondizione. Vedi il docblock.
         }
@@ -269,6 +287,7 @@ final class XotModuleSchema
             return $table !== '' ? $table : null;
         } catch (Throwable) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_bNIQvw
 <<<<<<< HEAD
             return $table !== '' ? $table : null;
@@ -282,6 +301,11 @@ final class XotModuleSchema
         } catch (\Throwable) {
 >>>>>>> .merge_file_SXv43M
 >>>>>>> laraxot/dev
+=======
+            return '' !== $table ? $table : null;
+        } catch (\Throwable) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             return null;
         }
     }

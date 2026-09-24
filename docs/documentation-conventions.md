@@ -66,12 +66,16 @@
    ```markdown
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/docs/nome_documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+   Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
+>>>>>>> 3792da0d (Check & fix styling)
    ```
 
 ## Manutenzione della documentazione
@@ -108,6 +112,7 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 ## Collegamenti a documentazione correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione generale](../../../docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
 =======
@@ -117,10 +122,13 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 - [Regole per ServiceProvider](../../IndennitaCondizioniLavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -131,3 +139,9 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+- [Documentazione generale](../../../../docs/documentation_rules.md)
+- [Convenzioni di naming in generale](../../../../docs/naming_conventions.md)
+- [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
+- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
+>>>>>>> 3792da0d (Check & fix styling)

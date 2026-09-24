@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Event;
+>>>>>>> 3792da0d (Check & fix styling)
 use Illuminate\Support\Facades\Process;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -33,20 +37,27 @@ class ExecuteArtisanCommandAction
         'passport:keys',
         'passport:purge',
         'passport:hash',
+<<<<<<< HEAD
         'notify:migrate-themes-to-mail-templates',
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ];
 
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string $command Il comando Artisan da eseguire (senza "php artisan")
      *                        =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
      * @param string $command Il comando Artisan da eseguire (senza "php artisan")
      *
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      *
+<<<<<<< HEAD
      * >>>>>>> laraxot/dev
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      *                           =======
@@ -59,6 +70,14 @@ class ExecuteArtisanCommandAction
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
      * <<<<<<< HEAD
+=======
+     * @return array{
+     *     command: string,
+     *     output: array<int, string>,
+     *     status: 'completed'|'failed',
+     *     exitCode: int
+     * } Array con informazioni sull'esecuzione del comando
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function execute(string $command): array
     {
@@ -68,26 +87,43 @@ class ExecuteArtisanCommandAction
             throw new \RuntimeException("Comando non consentito: {$command}");
         }
 
+<<<<<<< HEAD
         /** @var list<string> $output */
         $output = [];
         $status = 'running';
 
+=======
+        /** @var array<int, string> $output */
+        $output = [];
+        $status = 'running';
+
+        Event::dispatch('artisan-command.started', [$command]);
+
+>>>>>>> 3792da0d (Check & fix styling)
         try {
             $process = Process::path(base_path())
                 ->command("php artisan {$command}")
                 ->timeout(300)
                 ->start();
 
+<<<<<<< HEAD
             // Cattura l'output man mano che il processo produce dati; non e'
             // "tempo reale" lato browser (questa chiamata resta bloccante
             // dentro un'unica richiesta Livewire sincrona), ma evita di
             // rileggere tutto solo alla fine se il processo e' lungo.
+=======
+            // Cattura l'output in tempo reale
+>>>>>>> 3792da0d (Check & fix styling)
             while ($process->running()) {
                 $data = $process->latestOutput();
                 if (! empty($data)) {
                     $formattedData = trim($data);
                     if (! empty($formattedData)) {
                         $output[] = $formattedData;
+<<<<<<< HEAD
+=======
+                        Event::dispatch('artisan-command.output', [$command, $formattedData]);
+>>>>>>> 3792da0d (Check & fix styling)
                     }
                 }
 
@@ -96,6 +132,10 @@ class ExecuteArtisanCommandAction
                     $formattedError = trim($errorData);
                     if (! empty($formattedError)) {
                         $output[] = '[ERROR] '.$formattedError;
+<<<<<<< HEAD
+=======
+                        Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$formattedError]);
+>>>>>>> 3792da0d (Check & fix styling)
                     }
                 }
 
@@ -108,14 +148,31 @@ class ExecuteArtisanCommandAction
             $finalOutput = trim($result->output());
             if (! empty($finalOutput)) {
                 $output[] = $finalOutput;
+<<<<<<< HEAD
+=======
+                Event::dispatch('artisan-command.output', [$command, $finalOutput]);
+>>>>>>> 3792da0d (Check & fix styling)
             }
 
             $finalErrorOutput = trim($result->errorOutput());
             if (! empty($finalErrorOutput)) {
                 $output[] = '[ERROR] '.$finalErrorOutput;
+<<<<<<< HEAD
             }
 
             $status = $result->successful() ? 'completed' : 'failed';
+=======
+                Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$finalErrorOutput]);
+            }
+
+            if ($result->successful()) {
+                $status = 'completed';
+                Event::dispatch('artisan-command.completed', [$command]);
+            } else {
+                $status = 'failed';
+                Event::dispatch('artisan-command.failed', [$command, $finalErrorOutput]);
+            }
+>>>>>>> 3792da0d (Check & fix styling)
 
             return [
                 'command' => $command,
@@ -124,6 +181,10 @@ class ExecuteArtisanCommandAction
                 'exitCode' => $result->exitCode() ?? 0,
             ];
         } catch (\Throwable $e) {
+<<<<<<< HEAD
+=======
+            Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
+>>>>>>> 3792da0d (Check & fix styling)
             throw new \RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }
@@ -131,6 +192,7 @@ class ExecuteArtisanCommandAction
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      *
      * @param string $command Il comando da verificare
@@ -138,6 +200,9 @@ class ExecuteArtisanCommandAction
      * @param string $command Il comando da verificare
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param string $command Il comando da verificare
+>>>>>>> 3792da0d (Check & fix styling)
      *
      * @return bool True se il comando è consentito, false altrimenti
      */

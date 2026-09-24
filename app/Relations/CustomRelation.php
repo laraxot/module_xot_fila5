@@ -1,16 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 /**
  * ---.
  *
  * @see https://github.com/johnnyfreeman/laravel-custom-relation/blob/master/src/Relations/Custom.php
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 3792da0d (Check & fix styling)
 namespace Modules\Xot\Relations;
 
 use Closure;
@@ -27,7 +35,11 @@ use Webmozart\Assert\Assert;
  *
  * @method Builder<Model> when(mixed $value = null, ?callable $callback = null, ?callable $default = null)
  * @method Builder<Model> whereBetween(string $column, iterable<int, mixed> $values, string $boolean = 'and', bool $not = false)
+<<<<<<< HEAD
  * @method Builder<Model> selectRaw(string $expression, array<int|string, mixed> $bindings = [])
+=======
+ * @method Builder<Model> selectRaw(string $expression, array<int, mixed> $bindings = [])
+>>>>>>> 3792da0d (Check & fix styling)
  * @method Builder<Model> where(string|\Closure|\Illuminate\Contracts\Database\Query\Expression $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  */
 class CustomRelation extends Relation
@@ -43,6 +55,7 @@ class CustomRelation extends Relation
          * The baseConstraints callback.
          */
 <<<<<<< HEAD
+<<<<<<< HEAD
         protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -53,6 +66,8 @@ class CustomRelation extends Relation
          */
         protected ?Closure $eagerMatcher,
 =======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
         protected \Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -62,7 +77,10 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected ?\Closure $eagerMatcher,
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
     ) {
         parent::__construct($query, $model);
     }
@@ -80,10 +98,14 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
 =======
      * @param array<int, Model> $models
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, Model> $models
+>>>>>>> 3792da0d (Check & fix styling)
      */
     public function addEagerConstraints(array $models): void
     {
@@ -100,6 +122,7 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  string  $relation  the relation name (parent signature is untyped)
 =======
@@ -110,6 +133,13 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
+=======
+     * @param array<int, Model> $models
+     *
+     * @return array<int, Model>
+     */
+    public function initRelation(array $models, $relation): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
@@ -125,6 +155,7 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  Collection<int, Model>  $collection
      * @param  string  $relation  the relation name (parent signature is untyped)
@@ -137,6 +168,14 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     public function match(array $models, Collection $collection, mixed $relation): array
+=======
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
+     *
+     * @return array<int, Model>
+     */
+    public function match(array $models, Collection $collection, $relation): array
+>>>>>>> 3792da0d (Check & fix styling)
     {
         // Trying to invoke Closure|null but it might not be a callable.
         if (! \is_callable($this->eagerMatcher)) {
@@ -168,11 +207,16 @@ class CustomRelation extends Relation
      */
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<int, string>|string  $columns
 =======
      * @param array<int, string>|string $columns
      *
 >>>>>>> laraxot/dev
+=======
+     * @param array<int, string>|string $columns
+     *
+>>>>>>> 3792da0d (Check & fix styling)
      * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection

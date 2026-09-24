@@ -67,6 +67,7 @@ function classesExtendingFilamentDirectly(): array
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_BWtZ9P
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
@@ -77,6 +78,10 @@ function classesExtendingFilamentDirectly(): array
         if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
 >>>>>>> .merge_file_ICsjQK
 >>>>>>> laraxot/dev
+=======
+        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             continue;
         }
 
@@ -97,6 +102,7 @@ function classesExtendingFilamentDirectly(): array
 <<<<<<< HEAD
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_BWtZ9P
 <<<<<<< HEAD
         if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
@@ -107,6 +113,10 @@ function classesExtendingFilamentDirectly(): array
         if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
 >>>>>>> .merge_file_ICsjQK
 >>>>>>> laraxot/dev
+=======
+        if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             continue;
         }
 
@@ -121,6 +131,7 @@ function classesExtendingFilamentDirectly(): array
 <<<<<<< HEAD
         if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_BWtZ9P
 <<<<<<< HEAD
         if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
@@ -131,6 +142,10 @@ function classesExtendingFilamentDirectly(): array
         if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
 >>>>>>> .merge_file_ICsjQK
 >>>>>>> laraxot/dev
+=======
+        if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             continue;
         }
 

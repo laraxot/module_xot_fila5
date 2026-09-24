@@ -42,6 +42,7 @@ class HtmlService
 <<<<<<< HEAD
         if ($filename === '') {
 =======
+<<<<<<< HEAD
 <<<<<<< .merge_file_FBBB6T
 <<<<<<< HEAD
         if ($filename === '') {
@@ -52,6 +53,10 @@ class HtmlService
         if ('' === $filename) {
 >>>>>>> .merge_file_LYQQlq
 >>>>>>> laraxot/dev
+=======
+        if ('' === $filename) {
+>>>>>>> laraxot/dev
+>>>>>>> 3792da0d (Check & fix styling)
             $filename = Storage::disk('local')->path('test.pdf');
         }
         /*
@@ -69,29 +74,39 @@ class HtmlService
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_FBBB6T
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ($out === 'content_PDF') {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ($out === 'file') {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_LYQQlq
+=======
+=======
+>>>>>>> 3792da0d (Check & fix styling)
             if ('content_PDF' === $out) {
                 return $html2pdf->Output($filename.'.pdf', 'S');
             }
 
             if ('file' === $out) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_FBBB6T
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_LYQQlq
+=======
+>>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
                 $html2pdf->Output($filename, 'F');
 
