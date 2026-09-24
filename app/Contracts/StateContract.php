@@ -44,8 +44,12 @@ interface StateContract
      * Execute modal action by record.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string, mixed> $data
      */

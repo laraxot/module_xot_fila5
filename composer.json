@@ -59,9 +59,13 @@
     },
     "require_comment": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/spatie-laravel-translatable-plugin": "*"
 =======
        
+>>>>>>> laraxot/dev
+=======
+        "filament/spatie-laravel-translatable-plugin": "*"
 >>>>>>> laraxot/dev
     },
     "require-dev": {
@@ -156,7 +160,11 @@
         "spatie/laravel-error-solutions": "*"
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> laraxot/dev
 =======
 }
 >>>>>>> laraxot/dev

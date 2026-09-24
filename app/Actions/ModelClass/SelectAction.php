@@ -16,13 +16,19 @@ class SelectAction
      * Execute a select query.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param class-string<Model> $modelClass
      *
      *
+<<<<<<< HEAD
 =======
      * @param class-string<Model> $modelClass
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return array<mixed>
      */

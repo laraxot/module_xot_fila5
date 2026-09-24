@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Modules\Xot\Services\ModuleService;
 use Modules\Xot\Tests\TestCase;
@@ -44,8 +47,11 @@ describe('ModuleService', function () {
     it('returns array from getModels method', function () {
         $result = xotModuleServiceTestInstance()->getModels();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     });
 
@@ -67,8 +73,11 @@ describe('ModuleService', function () {
     it('handles reflection exceptions gracefully', function () {
         $result = xotModuleServiceTestInstance()->getModels();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     });
 
@@ -140,8 +149,11 @@ describe('ModuleService', function () {
     it('processes file extensions correctly', function () {
         $result = xotModuleServiceTestInstance()->getModels();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     });
 
@@ -156,8 +168,11 @@ describe('ModuleService', function () {
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     });
 });

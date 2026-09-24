@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
@@ -11,6 +14,7 @@ use PHPUnit\Framework\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 =======
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
@@ -21,6 +25,8 @@ uses(PHPUnit\Framework\TestCase::class);
 /**
  * @param object $instance
  */
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 function invokeProtectedSortHook(object $instance, string $method): mixed
 {
@@ -33,9 +39,13 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
     $table = new class extends XotBaseResourceTable
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @return array<string, Column> */
 =======
         /** @return array<string, \Filament\Tables\Columns\Column> */
+>>>>>>> laraxot/dev
+=======
+        /** @return array<string, Column> */
 >>>>>>> laraxot/dev
         public function getTableColumns(): array
         {
@@ -58,9 +68,13 @@ test('getTableSortColumn override su XotBaseResourceTable', function (): void {
     $table = new class extends XotBaseResourceTable
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @return array<string, Column> */
 =======
         /** @return array<string, \Filament\Tables\Columns\Column> */
+>>>>>>> laraxot/dev
+=======
+        /** @return array<string, Column> */
 >>>>>>> laraxot/dev
         public function getTableColumns(): array
         {

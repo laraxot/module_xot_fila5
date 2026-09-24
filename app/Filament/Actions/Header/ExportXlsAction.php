@@ -1,24 +1,35 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+
 >>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use Exception;
 use Filament\Notifications\Notification;
@@ -30,11 +41,14 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Exports\XlsFieldsExporter;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use RuntimeException;
+<<<<<<< HEAD
 =======
 use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
@@ -46,6 +60,9 @@ class ExportXlsAction extends XotBaseAction
         $this->translateLabel()
             ->label('')
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             ->iconButton()
             ->color('success')
             ->tooltip(function (): string {
@@ -90,6 +107,7 @@ class ExportXlsAction extends XotBaseAction
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);
+<<<<<<< HEAD
 =======
             ->tooltip(__('xot::actions.export_xls'))
             ->icon('heroicon-o-arrow-down-tray')
@@ -141,6 +159,8 @@ class ExportXlsAction extends XotBaseAction
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, array_values($fields));
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
             });
     }
 
@@ -149,6 +169,9 @@ class ExportXlsAction extends XotBaseAction
         return 'export_xls';
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Chiave stringa = percorso data_get, valore = intestazione esplicita
@@ -180,6 +203,9 @@ class ExportXlsAction extends XotBaseAction
             ->danger()
             ->send();
     }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 }

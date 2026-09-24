@@ -3,7 +3,11 @@ title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
+<<<<<<< HEAD
 updated: 2026-09-23
+=======
+updated: 2026-09-21
+>>>>>>> laraxot/dev
 tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
@@ -32,11 +36,20 @@ e `totals.file_errors` nel JSON deve essere 0.
 
 Config: `laravel/phpstan.neon` livello **max**, baseline vuota. **Non passare mai `--level` da CLI** e **non modificare** `phpstan.neon` — fix solo su codice PHP/test.
 
+<<<<<<< HEAD
 ## Stato attuale (2026-09-23)
 
 - `php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G` (cache `/tmp/phpstan` svuotata) → **[OK] No errors**, 9421 file, exit 0. Story [5.224](../../bmad/stories/5.224-phpstan-analyse-modules.story.md).
 - `phpstan.neon` immutato. Pest skip su `10.100.200.15`.
 - Drift chiuso il 2026-09-21: story [18.59](../../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) (23 errori su 4 file → 0).
+=======
+## Stato attuale (2026-09-21)
+
+- `./vendor/bin/phpstan analyse` (senza path) → **0 errori**, exit 0, `totals.file_errors: 0`.
+- `./vendor/bin/phpstan analyse Modules` → **0**, stesso momento. I due conteggi coincidono.
+- Drift chiuso oggi: story [18.59](../../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) (23 errori su 4 file → 0).
+- Mute-gate Setting + marker PHP nello stesso giorno: chiusi; certify ancora 0.
+>>>>>>> laraxot/dev
 - SSoT modulo: [phpstan-status.md](../../phpstan-status.md).
 
 ## Storico (2026-07, bump framework)

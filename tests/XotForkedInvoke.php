@@ -229,6 +229,9 @@ final class XotForkedInvoke
         while ($waited < ($timeoutSeconds + 1) * 10) {
             $res = pcntl_waitpid($pid, $status, WNOHANG);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if ($res === -1) {
                 return false;
             }
@@ -238,9 +241,12 @@ final class XotForkedInvoke
                 $exitStatus = filter_var($status, FILTER_VALIDATE_INT);
 
                 return $exitStatus !== false && pcntl_wifexited($exitStatus) && pcntl_wexitstatus($exitStatus) === 0;
+<<<<<<< HEAD
 =======
             if ($res === -1 || $res > 0) {
                 return $res > 0 && is_int($status) && pcntl_wifexited($status) && pcntl_wexitstatus($status) === 0;
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             }
             usleep(100_000);

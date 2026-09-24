@@ -25,6 +25,9 @@ class HasOneAction
      * Execute the update operation for a HasOne relationship.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param Model       $model       The parent model instance
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
@@ -34,6 +37,9 @@ class HasOneAction
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
      * @param Model       $model       The parent model instance
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param Model       $model       The parent model instance

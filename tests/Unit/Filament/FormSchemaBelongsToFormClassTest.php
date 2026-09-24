@@ -17,11 +17,16 @@ use function Safe\preg_match;
 use function Safe\preg_replace;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 /**
  * Lo schema del form sta nella Form class, mai sulla Resource.

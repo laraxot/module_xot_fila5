@@ -90,8 +90,12 @@ class ImportMdbToMySQL extends Command
      * Importa le tabelle in MySQL.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<int, string> $tables
      */

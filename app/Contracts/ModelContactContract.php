@@ -11,6 +11,9 @@ use Illuminate\Support\Carbon;
  * Modules\Xot\Contracts\ModelContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *
  * @property int                $id
  * @property int|null           $user_id
@@ -22,6 +25,9 @@ use Illuminate\Support\Carbon;
  * @property string|null        $title
  * @property bool               $is_reclamed
  * @property bool               $table_enable
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
  * @property int                $id
@@ -44,6 +50,9 @@ use Illuminate\Support\Carbon;
  * @property string             $sms_count
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *
  * @method int|string|null                              getKey()
  * @method string                                       getRouteKey()
@@ -84,6 +93,7 @@ use Illuminate\Support\Carbon;
  * @method int                                                             detach($params)
  * @method void                                                            attach($params)
  * @method bool                                                            save($params)
+<<<<<<< HEAD
 =======
  * @method mixed                                                           getKey()
  * @method string                                                          getRouteKey()
@@ -98,6 +108,8 @@ use Illuminate\Support\Carbon;
  * @method mixed                                                           detach($params)
  * @method mixed                                                           attach($params)
  * @method mixed                                                           save($params)
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
@@ -119,8 +131,12 @@ interface ModelContactContract
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string, mixed> $data
      */

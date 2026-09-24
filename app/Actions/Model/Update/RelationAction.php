@@ -17,8 +17,12 @@ class RelationAction
      * Undocumented function.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string, mixed> $data
      */

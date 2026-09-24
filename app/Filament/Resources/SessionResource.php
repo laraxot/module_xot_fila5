@@ -14,6 +14,9 @@ class SessionResource extends XotBaseResource
     protected static ?string $model = Session::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<int, Component>
      */
@@ -28,8 +31,11 @@ class SessionResource extends XotBaseResource
             TextInput::make('last_activity')->required()->numeric(),
         ];
     }
+<<<<<<< HEAD
 =======
     
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 }

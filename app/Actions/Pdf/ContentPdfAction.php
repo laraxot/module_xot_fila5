@@ -24,6 +24,9 @@ class ContentPdfAction
      * Genera contenuto PDF dall'HTML fornito.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  string|null  $html  Contenuto HTML da convertire
      * @param  string|null  $view  Nome della vista Blade da renderizzare
      * @param  array<string, mixed>|null  $data  Dati da passare alla vista
@@ -31,6 +34,7 @@ class ContentPdfAction
      * @return string Contenuto binario del PDF
      *
      * @throws \Exception Se la vista non esiste
+<<<<<<< HEAD
 =======
      * @param string|null               $html      Contenuto HTML da convertire
      * @param string|null               $view      Nome della vista Blade da renderizzare
@@ -41,6 +45,8 @@ class ContentPdfAction
      *
      * @return string Contenuto binario del PDF
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
      */
     public function execute(
         ?string $html = null,
@@ -50,9 +56,13 @@ class ContentPdfAction
     ): string {
         // Generate HTML content if view is provided
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($html === null && $view !== null) {
 =======
         if (null === $html && null !== $view) {
+>>>>>>> laraxot/dev
+=======
+        if ($html === null && $view !== null) {
 >>>>>>> laraxot/dev
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');
@@ -89,6 +99,9 @@ class ContentPdfAction
      * Metodo di convenienza per generare PDF da viste Blade.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  string  $view  Nome della vista Blade
      * @param  array  $data  Dati da passare alla vista
      * @param  string  $filename  Nome del file PDF (per riferimento)
@@ -96,6 +109,7 @@ class ContentPdfAction
      */
     /**
      * @param  array<string, mixed>  $data
+<<<<<<< HEAD
 =======
      * @param string $view     Nome della vista Blade
      * @param array  $data     Dati da passare alla vista
@@ -105,6 +119,8 @@ class ContentPdfAction
      */
     /**
      * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function fromView(string $view, array $data = [], string $filename = 'document.pdf'): string
@@ -123,12 +139,17 @@ class ContentPdfAction
      * Metodo di convenienza per generare PDF da contenuto HTML.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $html  Contenuto HTML
      * @param  string  $filename  Nome del file PDF (per riferimento)
 =======
      * @param string $html     Contenuto HTML
      * @param string $filename Nome del file PDF (per riferimento)
      *
+>>>>>>> laraxot/dev
+=======
+     * @param  string  $html  Contenuto HTML
+     * @param  string  $filename  Nome del file PDF (per riferimento)
 >>>>>>> laraxot/dev
      * @return string Contenuto binario del PDF
      */

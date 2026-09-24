@@ -7,6 +7,9 @@ return [
         'name' => 'cache lock',
         'plural' => 'cache locks',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'group' => [
             'name' => 'Admin',
         ],
@@ -27,6 +30,7 @@ return [
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Admin'],
     ],
@@ -37,12 +41,17 @@ return [
             'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
             'notifications' => ['check_results' => 'Check results from'],
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'label' => 'Cache Lock',
     'plural_label' => 'Cache Lock (Plurale)',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -111,6 +120,7 @@ return [
             'icon' => 'view',
             'tooltip' => 'view',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -126,6 +136,8 @@ return [
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
 ];

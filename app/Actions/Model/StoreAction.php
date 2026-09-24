@@ -15,8 +15,12 @@ class StoreAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules

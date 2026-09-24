@@ -23,9 +23,13 @@ uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     \Mockery::close();
 =======
     Mockery::close();
+>>>>>>> laraxot/dev
+=======
+    \Mockery::close();
 >>>>>>> laraxot/dev
 });
 
@@ -80,6 +84,9 @@ describe('Xot security handlers deep', function (): void {
         });
         $repo->addConsoleRenderer(static function (string $e): void {}); // builtin type → true
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $repo = new HandlersRepository();
         $repo->addReporter(static function (\InvalidArgumentException $e): void {
         });
@@ -92,6 +99,9 @@ describe('Xot security handlers deep', function (): void {
         });
         $repo->addConsoleRenderer(static function (string $e): void {
         }); // builtin type → true
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 

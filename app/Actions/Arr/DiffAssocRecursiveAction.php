@@ -15,6 +15,9 @@ class DiffAssocRecursiveAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $data
@@ -32,8 +35,11 @@ class DiffAssocRecursiveAction
      *
      * >>>>>>> .merge_file_5Dfugq
      *
+<<<<<<< HEAD
 =======
      * @param  array<int|string, mixed>  $data
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return array<int|string, array<int|string, mixed>>
      */
@@ -58,6 +64,9 @@ class DiffAssocRecursiveAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $arr_1
@@ -68,9 +77,12 @@ class DiffAssocRecursiveAction
      *
      * >>>>>>> laraxot/dev
      *
+<<<<<<< HEAD
 =======
      * @param  array<int|string, mixed>  $arr_1
      * @param  array<int|string, mixed>  $arr_2
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return array<int|string, array<int|string, mixed>>
      */
@@ -80,9 +92,13 @@ class DiffAssocRecursiveAction
         $arr_2 = self::fixType($arr_2);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
 =======
         $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
+>>>>>>> laraxot/dev
+=======
+        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
 >>>>>>> laraxot/dev
             try {
                 return ! \in_array($value, $arr_2, false);

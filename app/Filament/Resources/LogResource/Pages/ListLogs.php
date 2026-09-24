@@ -22,6 +22,9 @@ class ListLogs extends XotBaseListRecords
 {
     protected static string $resource = LogResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     #[\Override]
     public function getTableColumns(): array
@@ -50,8 +53,11 @@ class ListLogs extends XotBaseListRecords
                 ->label('Created At'),
         ];
     }
+<<<<<<< HEAD
 =======
    
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
     #[\Override]

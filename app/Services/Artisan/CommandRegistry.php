@@ -69,6 +69,9 @@ class CommandRegistry
             ->register(new QueueCommandHandler())
             ->register(new DebugbarCommandHandler());
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $this->register(new MigrationCommandHandler)
             ->register(new CacheCommandHandler)
             ->register(new RouteCommandHandler)
@@ -78,6 +81,9 @@ class CommandRegistry
             ->register(new OptimizeCommandHandler)
             ->register(new QueueCommandHandler)
             ->register(new DebugbarCommandHandler);
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     }

@@ -32,9 +32,13 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, bool|float|int|string|null> $params
 =======
      * @param  array<string, bool|float|int|string|null>  $params
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, bool|float|int|string|null> $params
 >>>>>>> laraxot/dev
      */
     public static function trans(string $key, array $params = []): string
@@ -63,8 +67,12 @@ abstract class XotBaseListRecords extends FilamentListRecords
         $resource = static::getResource();
         $model = $resource::getModel();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
         return $model;
     }

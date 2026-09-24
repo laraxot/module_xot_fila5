@@ -11,10 +11,14 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
@@ -25,9 +29,13 @@ $action = null;
 
 beforeEach(function () use (&$action): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new GetPdfContentByRecordAction();
 =======
     $action = new GetPdfContentByRecordAction;
+>>>>>>> laraxot/dev
+=======
+    $action = new GetPdfContentByRecordAction();
 >>>>>>> laraxot/dev
 });
 
@@ -57,8 +65,12 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
         $action = $this->action;
 =======
+>>>>>>> laraxot/dev
+=======
+        $action = $this->action;
 >>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
@@ -78,8 +90,12 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
         $action = $this->action;
 =======
+>>>>>>> laraxot/dev
+=======
+        $action = $this->action;
 >>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
@@ -96,10 +112,14 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
     test('it generates enhanced filename for performance models', function () use (&$action): void {
         // Arrange - Create a mock model with performance fields
 <<<<<<< HEAD
+<<<<<<< HEAD
         $record = new class extends Model {
 =======
         $record = new class extends Model
         {
+>>>>>>> laraxot/dev
+=======
+        $record = new class extends Model {
 >>>>>>> laraxot/dev
             protected $table = 'test_performance';
 
@@ -117,8 +137,12 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
         $action = $this->action;
 =======
+>>>>>>> laraxot/dev
+=======
+        $action = $this->action;
 >>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
@@ -138,8 +162,12 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
         // Use reflection to test protected method
 <<<<<<< HEAD
+<<<<<<< HEAD
         $action = $this->action;
 =======
+>>>>>>> laraxot/dev
+=======
+        $action = $this->action;
 >>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);

@@ -6,19 +6,28 @@ namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 /**
  * Provides factory support for models using GetFactoryAction.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * Usage: just use the trait in your model.
  *
  * The public static `factory($count = null, $state = [])` comes from Eloquent's
@@ -30,6 +39,7 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  * `User::factory(5)` (Modules/Employee/database/seeders/WorkHourSeeder.php)
  * needs $count to reach ->count(5) or it silently creates 1 record instead of 5.
  * See `docs/chat/2026-09-07-URGENT-xotbasemodel-itself-lost-hasxotfactory.md`
+<<<<<<< HEAD
 =======
  * Usage: just use the trait in your model. No type parameters needed.
  *
@@ -45,6 +55,8 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  * memory `feedback_validate_generated_files_before_saving.md` and
  * `docs/chat/2026-09-07-URGENT-xotbasemodel-itself-lost-hasxotfactory.md`
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
  * before touching this file again.
  *
  * @mixin Model
@@ -52,6 +64,9 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
 trait HasXotFactory
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /** @use EloquentHasFactory<\Illuminate\Database\Eloquent\Factories\Factory<covariant \Illuminate\Database\Eloquent\Model>> */
     use EloquentHasFactory {
         newFactory as parentNewFactory;
@@ -66,6 +81,7 @@ trait HasXotFactory
     {
         $factory = app(GetFactoryAction::class)->execute(static::class);
         Assert::isInstanceOf($factory, Factory::class);
+<<<<<<< HEAD
 =======
     /**
      * @return Factory<static>
@@ -74,6 +90,8 @@ trait HasXotFactory
     {
         /** @var Factory<static> $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
         return $factory;

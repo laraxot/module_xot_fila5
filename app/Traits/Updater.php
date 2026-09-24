@@ -15,6 +15,9 @@ use Webmozart\Assert\Assert;
  * https://dev.to/hasanmn/automatically-update-createdby-and-updatedby-in-laravel-using-bootable-traits-28g9.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD
  *
  * @property int|null             $created_by ID dell'utente che ha creato il record
@@ -25,10 +28,13 @@ use Webmozart\Assert\Assert;
  * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
  * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
  *                                            >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
  * @property int|null             $created_by ID dell'utente che ha creato il record
  * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
  * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater

@@ -15,11 +15,15 @@ class UrlAction
     private static ?self $instance = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct() {}
 =======
     public function __construct()
     {
     }
+>>>>>>> laraxot/dev
+=======
+    public function __construct() {}
 >>>>>>> laraxot/dev
 
     public static function getInstance(): self
@@ -39,10 +43,14 @@ class UrlAction
     public function checkValidUrl(string $url): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
     }
 
     public function execute(): void {}
+<<<<<<< HEAD
 =======
         return false !== filter_var($url, FILTER_VALIDATE_URL);
     }
@@ -50,5 +58,7 @@ class UrlAction
     public function execute(): void
     {
     }
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 }
