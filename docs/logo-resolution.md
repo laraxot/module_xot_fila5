@@ -1,5 +1,36 @@
 # Risoluzione dei Loghi
 
+<<<<<<< HEAD
+<<<<<<< .merge_file_7Z26zp
+=======
+=======
+>>>>>>> .merge_file_MJXvAn
+Il login Filament (`/admin/login`) prende il logo da `MetatagData::getBrandLogo()`,
+che chiama `AssetAction` sulla chiave `logo_header` (es. `ptv::img/icon.png`).
+
+**Sintomo:** HTML con `src="…/ptv::img/icon.png"` → 404. Non è Git LFS.
+`AssetAction` in `APP_ENV=local` forza `File::copy` verso `public_html/assets/{modulo}/…`.
+PHP-FPM è `www-data`: se il dest è di un altro utente, la copy fallisce e
+`MetatagData` non deve chiamare `asset()` sulla notazione `module::`.
+
+Verifica:
+
+```bash
+curl -sS http://personale2022.prov.tv.local/admin/login | rg 'fi-logo|icon\.png'
+file laravel/Modules/Ptv/resources/img/icon.png
+# atteso: PNG image data, non "ASCII text" (puntatore LFS)
+```
+
+Canone path pubblici: `docs/wiki/memories/public-path-is-public-html.md`.
+Story: `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
+
+## Processo di Risoluzione
+
+<<<<<<< .merge_file_7Z26zp
+=======
+=======
+>>>>>>> .merge_file_MJXvAn
+>>>>>>> laraxot/dev
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
 
 ## Processo di Risoluzione
@@ -102,12 +133,27 @@ Per la versione dark:
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
+<<<<<<< HEAD
+- [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
+- [Configurazione Generale](configuration.md)
+- [Struttura dei Moduli](MODULE_STRUCTURE.md)
+- [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
+- [Regole per la Case Sensitivity](directory-case-sensitivity.md)
+- [Regole per i Namespace](namespace-rules.md)
+=======
+- [Gestione Domini e Configurazioni](domain_configuration.md)
+- [Configurazione Generale](configuration.md)
+- [Struttura dei Moduli](module_structure.md)
+- [Architettura Folio + Volt](folio_volt_architecture.md)
+- [Regole per la Case Sensitivity](directory-case-sensitivity.md)
+- [Regole per i Namespace](namespace-rules.md)
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
 - [Configurazione Generale](CONFIGURATION.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
 - [Regole per i Namespace](NAMESPACE-RULES.md)
+>>>>>>> laraxot/dev
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -115,8 +161,22 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../docs/architettura-folio-volt.md)
+<<<<<<< HEAD
+=======
+- [Convenzioni di Naming](naming-conventions.md)
+
+### Collegamenti alla Root del Progetto
+- [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
+- [Configurazione e Risoluzione dei Loghi](../../../../docs/configurazione-logo.md)
+- [Struttura dei Moduli in il progetto](../../../../docs/struttura-moduli.md)
+- [Architettura Folio + Volt in il progetto](../../../../docs/architettura-folio-volt.md)
+>>>>>>> laraxot/dev
 
 ---
 
 ### Nota Importante
+<<<<<<< HEAD
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
+=======
+Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
+>>>>>>> laraxot/dev

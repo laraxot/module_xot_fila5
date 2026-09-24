@@ -19,10 +19,14 @@ class QueueCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
+<<<<<<< .merge_file_erD48r
 <<<<<<< HEAD
         return $command === 'queue:flush';
 =======
         return 'queue:flush' === $command;
 >>>>>>> laraxot/dev
+=======
+        return 'queue:flush' === $command;
+>>>>>>> .merge_file_aKWUII
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_EKSg60
 <<<<<<< HEAD
 
 =======
@@ -9,6 +10,9 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_3EbYMp
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 use Modules\Xot\Tests\TestCase;

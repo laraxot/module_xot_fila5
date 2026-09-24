@@ -2,11 +2,14 @@
 
 declare(strict_types=1);
 
+use Filament\Support\RawJs;
+use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
+use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -14,11 +17,6 @@ use function Safe\file_get_contents;
 use function Safe\mkdir;
 
 uses(TestCase::class);
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
 
 it('normalizes nested numeric strings in diff fixType', function (): void {
     $input = ['items' => [
@@ -70,7 +68,19 @@ it('covers all branches of range intersect', function (): void {
     Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
-it('writes JSON and PHP arrays', function (): void {
+it('covers all branches of range intersect in Array namespace', function (): void {
+    $action = new ArrayRangeIntersectAction();
+
+    Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
+    Assert::assertSame([2, 5], $action->execute(1, 7, 2, 5));
+    Assert::assertFalse($action->execute(1, 2, 3, 4));
+    Assert::assertFalse($action->execute(10, 11, 1, 5));
+    Assert::assertFalse($action->execute(7, 6, 5, 8));
+    Assert::assertSame([4, 4], $action->execute(4, 10, 2, 4));
+    Assert::assertFalse($action->execute(1, 5, 2, 7));
+});
+
+it('writes JSON and PHP arrays via Arr actions', function (): void {
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
@@ -108,4 +118,27 @@ it('throws on unsupported save format in SaveArrayAction', function (): void {
     } catch (InvalidArgumentException) {
         // Expected
     }
+});
+
+it('converts mixed PHP arrays to RawJs correctly', function (): void {
+    $action = new ArrayToRawJsAction();
+
+    $raw = $action->execute([
+        'validKey' => true,
+        'string key' => "O'Reilly",
+        'number' => 12.5,
+        'none' => null,
+        'nested' => [
+            'inner' => 1,
+            'formatter' => RawJs::make('value => value * 2'),
+        ],
+    ]);
+
+    Assert::assertInstanceOf(RawJs::class, $raw);
+    $js = $raw->toHtml();
+    Assert::assertStringContainsString('validKey: true', $js);
+    Assert::assertStringContainsString("'string key': 'O\\'Reilly'", $js);
+    Assert::assertStringContainsString('number: 12.5', $js);
+    Assert::assertStringContainsString('none: null', $js);
+    Assert::assertStringContainsString('formatter: value => value * 2', $js);
 });

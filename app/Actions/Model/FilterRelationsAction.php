@@ -11,7 +11,13 @@ use Webmozart\Assert\Assert;
 class FilterRelationsAction
 {
     /**
+     * <<<<<<< HEAD.
+     *
      * @param array<string, mixed> $relations
+     *                                        =======
+     * @param array<string, mixed> $relations
+     *
+     * >>>>>>> laraxot/dev
      *
      * @return array<string, Relation<Model, Model, mixed>>
      */

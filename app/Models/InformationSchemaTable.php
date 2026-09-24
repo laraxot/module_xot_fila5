@@ -93,7 +93,10 @@ class InformationSchemaTable extends BaseModel
      */
     public function getRows(): array
     {
-        return $this->getSushiRows();
+        /** @var array<int, array<string, mixed>> $rows */
+        $rows = $this->getSushiRows();
+
+        return $rows;
     }
 
     /**

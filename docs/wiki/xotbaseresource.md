@@ -27,6 +27,16 @@ protected static ?string $navigationIcon = 'heroicon-o-user';
 Every concrete resource must implement:
 - `protected static ?string $model`
 <<<<<<< HEAD
+<<<<<<< .merge_file_eEoKJY
+=======
+<<<<<<< HEAD
+- `public function getFormSchema(): array`
+=======
+- `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SwypVV
 - `public function getFormSchema(): array`
 =======
 <<<<<<< HEAD
@@ -39,6 +49,10 @@ Every concrete resource must implement:
 - `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_eEoKJY
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SwypVV
 - `public static function getPages(): array`
 
 ### 3. Separation of Concerns

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Tables\Filters;
 
+<<<<<<< .merge_file_zj90Sv
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
@@ -25,12 +26,23 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  * Ternary 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
+
+/**
+ * Ternary sì/no/tutti.
+ *
+ * La variante con ToggleButtons raggruppati (al posto del Select full-width del parent)
+ * è al momento disattivata: vedi il blocco commentato in setUp(). Le query boolean del
+ * parent restano invariate.
+>>>>>>> .merge_file_UIWvtc
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< .merge_file_zj90Sv
 <<<<<<< HEAD
 
 =======
@@ -43,6 +55,12 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         $this->schema(function (): array {
             return [
                 ToggleButtons::make('value')
+=======
+        /*
+        $this->schema(function (): array {
+            return [
+                \Filament\Forms\Components\ToggleButtons::make('value')
+>>>>>>> .merge_file_UIWvtc
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -53,6 +71,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         1 => 'success',
                         0 => 'danger',
                     ])
+<<<<<<< .merge_file_zj90Sv
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
@@ -63,5 +82,11 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         */
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+                    ->stateCast(app(\Filament\Schemas\Components\StateCasts\BooleanStateCast::class, ['isStoredAsInt' => true])),
+            ];
+        });
+        */
+>>>>>>> .merge_file_UIWvtc
     }
 }

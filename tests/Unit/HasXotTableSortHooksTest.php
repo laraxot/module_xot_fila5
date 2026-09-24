@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_gp9MNg
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -18,6 +19,9 @@ uses(PHPUnit\Framework\TestCase::class);
 <<<<<<< HEAD
 =======
 =======
+=======
+
+>>>>>>> .merge_file_YmW2pL
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
@@ -26,8 +30,11 @@ use PHPUnit\Framework\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_gp9MNg
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_YmW2pL
 function invokeProtectedSortHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -36,6 +43,7 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 }
 
 test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): void {
+<<<<<<< .merge_file_gp9MNg
     $table = new class extends XotBaseResourceTable
     {
 <<<<<<< HEAD
@@ -47,6 +55,10 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
         /** @return array<string, Column> */
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    $table = new class extends XotBaseResourceTable {
+        /** @return array<string, Column> */
+>>>>>>> .merge_file_YmW2pL
         public function getTableColumns(): array
         {
             return [];
@@ -65,6 +77,7 @@ test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): 
 });
 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
+<<<<<<< .merge_file_gp9MNg
     $table = new class extends XotBaseResourceTable
     {
 <<<<<<< HEAD
@@ -76,6 +89,10 @@ test('getTableSortColumn override su XotBaseResourceTable', function (): void {
         /** @return array<string, Column> */
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+    $table = new class extends XotBaseResourceTable {
+        /** @return array<string, Column> */
+>>>>>>> .merge_file_YmW2pL
         public function getTableColumns(): array
         {
             return [];

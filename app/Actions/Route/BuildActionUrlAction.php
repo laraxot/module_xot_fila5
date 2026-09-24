@@ -20,11 +20,15 @@ class BuildActionUrlAction
         $row = $params['row'] ?? (object) [];
         $query = is_array($params['query'] ?? null) ? $params['query'] : [];
         $route = request()->route();
+<<<<<<< .merge_file_OWDbnc
 <<<<<<< HEAD
         if (! $route instanceof Route || $route->getName() === null) {
 =======
         if (! $route instanceof Route || null === $route->getName()) {
 >>>>>>> laraxot/dev
+=======
+        if (! $route instanceof Route || null === $route->getName()) {
+>>>>>>> .merge_file_c5Ciqy
             return '#'.$action;
         }
 

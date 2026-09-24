@@ -19,7 +19,15 @@ class SavePhpArrayAction
      *
      * @param array<int|string, mixed> $data
      *                                       =======
+<<<<<<< .merge_file_gemX0T
      * @param array<int|string, mixed> $data
+=======
+     *                                       <<<<<<< HEAD
+     * @param array<int|string, mixed> $data
+     *                                       =======
+     * @param array<int|string, mixed> $data
+     *                                       >>>>>>> laraxot/dev
+>>>>>>> .merge_file_z3uypR
      *                                       >>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename): bool

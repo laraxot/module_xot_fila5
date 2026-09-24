@@ -37,6 +37,8 @@ class HandlerDecorator implements ExceptionHandler
 
     /**
      * @param array<int, mixed> $parameters
+     *
+     * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
      */
     public function __call(string $name, array $parameters): mixed
     {
@@ -178,6 +180,15 @@ class HandlerDecorator implements ExceptionHandler
             return false;
         }
 
-        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
+        $type = $params[0]->getType();
+
+        if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
+            return true;
+        }
+
+        $className = $type->getName();
+
+        return (class_exists($className) || interface_exists($className))
+            && (new \ReflectionClass($className))->isInstance($e);
     }
 }

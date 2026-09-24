@@ -58,7 +58,7 @@ class XlsByModelClassAction
 
         // Filtriamo i campi se sono specificati gli includes
         if ([] !== $includes) {
-            $rows = $rows->map(static function ($item) use ($includes) {
+            $rows = $rows->map(static function (Model $item) use ($includes) {
                 $data = [];
                 foreach ($includes as $include) {
                     $data[$include] = data_get($item, $include);
@@ -69,28 +69,46 @@ class XlsByModelClassAction
         }
 
         if ([] !== $excludes) {
-            $rows = $rows->map(function ($item) use ($excludes) {
-                if ($item instanceof Model) {
-                    return $item->makeHidden($excludes);
-                }
-
-                return $item;
-            });
+            $rows = $rows->map(static fn (Model|array $item): Model|array => $item instanceof Model ? $item->makeHidden($excludes) : $item);
         }
 
         // Applichiamo il callback se fornito
         if (null !== $callback) {
-            $rows = $rows->map($callback);
+            $rows = $rows->map($this->rowCallback($callback));
         }
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
-        /** @var Collection<int, mixed> $exportRows */
+        /** @var Collection<int|string, mixed> $exportRows */
         $exportRows = $rows;
         $collectionExport = new CollectionExport($exportRows, $transKey);
         $filename = $this->getExportName($modelClass);
 
         return Excel::download($collectionExport, $filename);
+    }
+
+    /**
+     * @param callable(array<string, mixed>|Model, int): mixed $callback
+     *
+     * @return \Closure(Model|array<array-key, mixed>, int): mixed
+     */
+    private function rowCallback(callable $callback): \Closure
+    {
+        return static function (Model|array $item, int $key) use ($callback): mixed {
+            if ($item instanceof Model) {
+                return $callback($item, $key);
+            }
+
+            /** @var array<string, mixed> $data */
+            $data = [];
+            foreach ($item as $itemKey => $itemValue) {
+                if (is_string($itemKey)) {
+                    $data[$itemKey] = $itemValue;
+                }
+            }
+
+            return $callback($data, $key);
+        };
     }
 
     /**

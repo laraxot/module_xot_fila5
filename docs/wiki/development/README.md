@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_7aUYvN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_Z6AaiF
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,7 +16,15 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7aUYvN
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_gDspsU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF
 ---
 title: "Readme"
 type: reference
@@ -19,12 +33,27 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_7aUYvN
+=======
+<<<<<<< .merge_file_gDspsU
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_Z6AaiF
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7aUYvN
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF
 
 # Sviluppo
 
@@ -41,9 +70,21 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
 <<<<<<< HEAD
+<<<<<<< .merge_file_7aUYvN
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_gDspsU
+=======
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -185,12 +226,25 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 ## Note
 
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto. 
+<<<<<<< .merge_file_7aUYvN
+=======
+<<<<<<< .merge_file_gDspsU
+=======
+
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Z6AaiF
 <<<<<<< HEAD
 =======
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7aUYvN
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -242,6 +296,16 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_7aUYvN
+=======
+<<<<<<< .merge_file_gDspsU
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_Z6AaiF
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -249,6 +313,11 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7aUYvN
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -276,9 +345,20 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_7aUYvN
 
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gDspsU
+=======
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF
 
 <<<<<<< HEAD
 =======
@@ -325,4 +405,12 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7aUYvN
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_gDspsU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FUvMgp
+>>>>>>> .merge_file_Z6AaiF

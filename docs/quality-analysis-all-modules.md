@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
+=======
+>>>>>>> laraxot/dev
 **Data**: 2025-12-23
 **Obiettivo**: Analisi sistematica completa della qualità del codice di tutti i moduli
 **Strumento**: PHPMD (PHP Mess Detector)
@@ -91,3 +94,13 @@
 - **PHPInsights**: Strumento non installato nel progetto. Analisi limitata a PHPMD.
 - **Focus**: Qualità codice mantenuta, codice morto rimosso
 - **PHPStan**: Sempre priorità massima (0 errori mantenuto)
+<<<<<<< HEAD
+=======
+---
+module: theme
+topic: quality-analysis-all-modules
+canonical: ../../../Themes/docs/shared-components/quality-all-modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-all-modules.md
+>>>>>>> laraxot/dev

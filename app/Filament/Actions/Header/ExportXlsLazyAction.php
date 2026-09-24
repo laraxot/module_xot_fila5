@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_zArYCl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -7,10 +8,14 @@
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_3PihIp
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< .merge_file_zArYCl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -27,6 +32,10 @@ namespace Modules\Xot\Filament\Actions\Header;
 use Exception;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+namespace Modules\Xot\Filament\Actions\Header;
+
+>>>>>>> .merge_file_3PihIp
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
@@ -42,6 +51,7 @@ class ExportXlsLazyAction extends XotBaseAction
     {
         parent::setUp();
 
+<<<<<<< .merge_file_zArYCl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -57,6 +67,8 @@ class ExportXlsLazyAction extends XotBaseAction
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> .merge_file_3PihIp
         $this->label('')
             ->iconButton()
             ->color('success')
@@ -67,8 +79,11 @@ class ExportXlsLazyAction extends XotBaseAction
             ->modalSubmitActionLabel((string) __('xot::export_xls.actions.export_xls.modal.confirm'))
             ->modalCancelActionLabel((string) __('xot::export_xls.actions.export_xls.modal.cancel'))
             ->successNotificationTitle((string) __('xot::export_xls.actions.export_xls.success'))
+<<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3PihIp
             ->requiresConfirmation()
             ->action(static function (ListRecords $livewire) {
                 $filename =
@@ -79,6 +94,7 @@ class ExportXlsLazyAction extends XotBaseAction
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
 
+<<<<<<< .merge_file_zArYCl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -131,13 +147,23 @@ class ExportXlsLazyAction extends XotBaseAction
                 $lazy = $livewire->getFilteredTableQuery();
                 if ($lazy === null) {
                     throw new Exception('Query is null');
+=======
+                $pathFields = self::resolvePathFields($livewire);
+
+                $lazy = $livewire->getFilteredTableQuery();
+                if (null === $lazy) {
+                    throw new \Exception('Query is null');
+>>>>>>> .merge_file_3PihIp
                 }
 
                 if ($lazy->count() < 7) {
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
                     return app(ExportXlsByQuery::class)->execute($lazy, $filename, $pathFields, null);
+<<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3PihIp
                 }
 
                 $lazyCursor = $lazy->cursor();
@@ -146,6 +172,7 @@ class ExportXlsLazyAction extends XotBaseAction
 
                 if ($lazyCursor->count() > 3000) {
                     return app(ExportXlsStreamByLazyCollection::class)
+<<<<<<< .merge_file_zArYCl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -157,12 +184,17 @@ class ExportXlsLazyAction extends XotBaseAction
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> .merge_file_3PihIp
                         ->execute($exportCollection, $filename, $transKey, $pathFields);
                 }
 
                 return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, $pathFields);
+<<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3PihIp
             });
     }
 
@@ -170,10 +202,13 @@ class ExportXlsLazyAction extends XotBaseAction
     {
         return 'export_xls';
     }
+<<<<<<< .merge_file_zArYCl
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_3PihIp
 
     /**
      * Il canale lazy lavora sui soli percorsi data_get: le intestazioni
@@ -219,6 +254,9 @@ class ExportXlsLazyAction extends XotBaseAction
 
         return '';
     }
+<<<<<<< .merge_file_zArYCl
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3PihIp
 }

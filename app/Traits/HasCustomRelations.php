@@ -1,11 +1,10 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://stackoverflow.com/questions/39213022/custom-laravel-relations
  * @see https://github.com/johnnyfreeman/laravel-custom-relation
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Traits;
 
@@ -17,9 +16,8 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
- *
- * @phpstan-ignore trait.unused
  */
+// @phpstan-ignore trait.unused
 trait HasCustomRelations
 {
     public function customRelation(

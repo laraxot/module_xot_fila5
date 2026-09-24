@@ -16,12 +16,12 @@ use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManag
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -36,57 +36,6 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     use HasRelationshipModelClass;
     use HasXotTable {
         HasRelationshipModelClass::getModelClass insteadof HasXotTable;
-        getGridTableColumns as private xotGetGridTableColumns;
-        getTablePaginated as private xotGetTablePaginated;
-        getSearchableColumns as private xotSearchableColumns;
-        getHeaderActions as private xotGetHeaderActions;
-    }
-
-    /**
-     * @return array<int, Column|ColumnGroup|LayoutComponent>
-     */
-    public function getGridTableColumns(): array
-    {
-        return $this->xotGetGridTableColumns();
-    }
-
-    /**
-     * @return bool|array<int|string>
-     */
-    protected function getTablePaginated(): bool|array
-    {
-        $paginated = $this->xotGetTablePaginated();
-
-        if (is_bool($paginated)) {
-            return $paginated;
-        }
-
-        /** @var array<int|string> $options */
-        $options = $paginated;
-
-        return $options;
-    }
-
-    /**
-     * @return array<string>
-     */
-    protected function getSearchableColumns(): array
-    {
-        /** @var array<string> $columns */
-        $columns = $this->xotSearchableColumns();
-
-        return $columns;
-    }
-
-    /**
-     * @return array<string, Action>
-     */
-    protected function getHeaderActions(): array
-    {
-        /** @var array<string, Action> $actions */
-        $actions = $this->xotGetHeaderActions();
-
-        return $actions;
     }
 
     /**
@@ -94,7 +43,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
-        return static::$resource::trans($key, $exceptionIfNotExist, $params);
+        return static::getResourceClass()::trans($key, $exceptionIfNotExist, $params);
     }
 
     protected static string $relationship = '';
@@ -109,7 +58,23 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
-        if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
+        return static::getResourceClass();
+    }
+
+    /**
+     * La classe Resource genitrice, derivata dal namespace del RelationManager e
+     * memoizzata in `static::$resource`.
+     *
+     * Statica e non `getResource()` (di istanza) perché serve anche a `trans()`,
+     * chiamato durante la build delle azioni tabella in un ciclo Livewire in cui
+     * `static::$resource` non è ancora inizializzata — la proprietà tipata senza
+     * default lanciava «must not be accessed before initialization».
+     *
+     * @return class-string<XotBaseResource>
+     */
+    protected static function getResourceClass(): string
+    {
+        if (isset(static::$resource) && '' !== static::$resource) {
             return static::$resource;
         }
 
@@ -158,7 +123,12 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /** @return array<int|string, Component> */
     public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchema();
+        $class = $this->getResource()::getFormClass();
+        $instance = app($class);
+        Assert::isInstanceOf($instance, XotBaseResourceForm::class);
+
+        /* @var XotBaseResourceForm $instance */
+        return $instance->getFormSchema();
     }
 
     /**

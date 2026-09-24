@@ -2,25 +2,16 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/module.php
 return [
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
     'navigation' => [
         'name' => 'Modulo',
         'plural' => 'Moduli',
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'module.navigation',
+        'icon' => 'module.navigation',
+        'sort' => 65,
     ],
     'fields' => [
         'name' => [
@@ -117,6 +108,12 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'path' => [
+            'label' => 'path',
+        ],
+        'enabled' => [
+            'label' => 'enabled',
+        ],
     ],
     'pages' => [
         'health_check_results' => [
@@ -138,12 +135,33 @@ return [
     'actions' => [
         'create' => [
             'label' => 'Crea Module',
+            'icon' => 'create',
+            'tooltip' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Module',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Module',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
         ],
     ],
 ];

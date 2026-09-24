@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_x7bx60
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -7,10 +8,14 @@
 declare(strict_types=1);
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_F8dg7R
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< .merge_file_x7bx60
 <<<<<<< HEAD
 declare(strict_types=1);
 
@@ -21,6 +26,8 @@ declare(strict_types=1);
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_F8dg7R
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
@@ -64,6 +71,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
+<<<<<<< .merge_file_x7bx60
 <<<<<<< HEAD
                             ++$c;
 =======
@@ -73,6 +81,9 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                             $c++;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+                            ++$c;
+>>>>>>> .merge_file_F8dg7R
                         }
                     }
                     if ($save) {
@@ -87,6 +98,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
     }
 
     /**
+<<<<<<< .merge_file_x7bx60
 <<<<<<< HEAD
      * @param list<string> $fields
 =======
@@ -96,6 +108,9 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
      * @param  list<string>  $fields
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+     * @param list<string> $fields
+>>>>>>> .merge_file_F8dg7R
      */
     public function setFields(array $fields): self
     {

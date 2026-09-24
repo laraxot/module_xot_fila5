@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * -WIP.
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
@@ -84,7 +83,7 @@ class AutoLabelAction
                 $saveTransAction = app(SaveTransAction::class);
                 Assert::isCallable([$saveTransAction, 'execute'], 'SaveTransAction::execute deve essere chiamabile');
 
-                $saveTransAction->execute($label_key, $label_value);
+                $saveTransAction->execute($label_key, (string) $label_value);
             }
 
             // Applichiamo l'etichetta al componente

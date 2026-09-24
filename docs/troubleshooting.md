@@ -48,6 +48,21 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
+<<<<<<< HEAD
+
+```bash
+# ✅ additivo, mai distruttivo (dati sacri)
+cd laravel && php artisan migrate
+
+# ❌ VIETATO — distrugge i dati
+# php artisan migrate:fresh
+# php artisan migrate --force
+# php artisan db:wipe
+```
+
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
+
+=======
 ```bash
 
 # Ripristinare le migrazioni
@@ -57,6 +72,7 @@ php artisan migrate:fresh
 php artisan db:seed
 ```
 
+>>>>>>> laraxot/dev
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
 # Verificare che il modulo sia presente
@@ -433,6 +449,16 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
+<<<<<<< HEAD
+**Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
+
+```php
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+class MioModelloTest extends XotBaseTestCase
+{
+    use DatabaseTransactions;
+=======
 **Utilizzare RefreshDatabase**
 ```php
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -440,16 +466,25 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class MioModelloTest extends XotBaseTestCase
 {
     use RefreshDatabase;
+>>>>>>> laraxot/dev
 
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
+=======
 
         // Setup database per i test
+>>>>>>> laraxot/dev
     }
 }
 ```
 
+<<<<<<< HEAD
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
+
+=======
+>>>>>>> laraxot/dev
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test
@@ -669,10 +704,18 @@ dd(DB::getQueryLog());
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+<<<<<<< HEAD
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> laraxot/dev
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> laraxot/dev

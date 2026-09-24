@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Custom Relation
 description: Custom Relation
 extends: _layouts.documentation
@@ -308,3 +309,11 @@ class Person
     }
 }
 ```
+=======
+module: theme
+topic: custom-relation
+canonical: ../../../Themes/docs/shared-components/custom-relation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/custom-relation.md
+>>>>>>> laraxot/dev

@@ -119,8 +119,13 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 ## Collegamenti Correlati
 
 - [Modulo DbForge](../DbForge/docs/)
+<<<<<<< HEAD
 - [Best Practices Database](../../docs/database-best-practices.md)
 - [Architettura Moduli](../../docs/module-architecture.md)
+=======
+- [Best Practices Database](../../../docs/database-best-practices.md)
+- [Architettura Moduli](../../../docs/module-architecture.md)
+>>>>>>> laraxot/dev
 
 ## Note per gli Sviluppatori
 
@@ -139,4 +144,8 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> laraxot/dev

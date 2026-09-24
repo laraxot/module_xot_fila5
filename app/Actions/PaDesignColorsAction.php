@@ -19,6 +19,7 @@ final class PaDesignColorsAction
 {
     use QueueableAction;
 
+<<<<<<< .merge_file_mHKQTN
 <<<<<<< HEAD
     public const string PRIMARY_HEX = '#007A52';
 
@@ -28,6 +29,11 @@ final class PaDesignColorsAction
 
     public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
 >>>>>>> laraxot/dev
+=======
+    public const string PRIMARY_HEX = '#007A52';
+
+    public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
+>>>>>>> .merge_file_VCjyz3
 
     /**
      * @return array{primary: string, institutional_blue: string, danger: string, gray: string, info: string, success: string, warning: string}

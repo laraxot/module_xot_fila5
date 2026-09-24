@@ -253,10 +253,20 @@ use Filament\Forms\Components\TextInput;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_MKUDrf
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_rGeWqd
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_MKUDrf
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_rGeWqd
     {
         return [
             TextInput::make('name')->required(),
@@ -297,10 +307,20 @@ class UserModerationResource extends XotBaseResource
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_MKUDrf
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_rGeWqd
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_MKUDrf
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_rGeWqd
 {
     return [
         // Schema del form

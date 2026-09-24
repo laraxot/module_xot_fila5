@@ -124,4 +124,8 @@
 - ✅ **PHPStan**: 0 errori (livello max) - da verificare ancora
 - ✅ **PHPMD**: Warning critici corretti
 - ✅ **PHPInsights**: Score complessivi eccellenti (97.9% Code, 93.5% Complexity, 82.4% Architecture, 98.8% Style)
+<<<<<<< HEAD
 - ✅ **Pint**: Stile corretto
+=======
+- ✅ **Pint**: Stile corretto
+>>>>>>> laraxot/dev

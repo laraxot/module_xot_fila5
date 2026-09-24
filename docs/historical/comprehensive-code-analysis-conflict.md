@@ -177,10 +177,20 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< .merge_file_TwsEEs
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GEuFia
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TwsEEs
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GEuFia
 {
     return [
         TextInput::make('first_name'),
@@ -190,10 +200,20 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< .merge_file_TwsEEs
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GEuFia
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TwsEEs
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GEuFia
 {
     return [
         TextInput::make('name')->required(),
@@ -290,10 +310,20 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_TwsEEs
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GEuFia
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_TwsEEs
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GEuFia
     {
         return [
             TextInput::make('first_name'),
@@ -426,7 +456,15 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_TwsEEs
 - [Architettura Moduli](architecture.md)
+=======
+<<<<<<< HEAD
+- [Architettura Moduli](architecture.md)
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GEuFia
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

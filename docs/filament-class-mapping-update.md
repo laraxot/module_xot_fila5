@@ -1,5 +1,27 @@
+<<<<<<< HEAD
+<<<<<<< .merge_file_1qYXnD
+<<<<<<< HEAD
 # Aggiornamento Mapping Classi Filament - [DATE]
 
+=======
+=======
+>>>>>>> .merge_file_8riUWd
+# Aggiornamento Mapping Classi Filament - 2025-12-23
+
+**Data**: 2025-12-23
+=======
+# Aggiornamento Mapping Classi Filament - [DATE]
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_1qYXnD
+=======
+# Aggiornamento Mapping Classi Filament - 2025-12-23
+
+**Data**: 2025-12-23
+
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_8riUWd
 **Obiettivo**: Verificare e correggere mapping classi nel file `filament_class.txt`
 
 ## ⚠️ Classi Aggiunte al Mapping che NON Esistono

@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\QueryBuilders;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
  * Base query builder providing chainable query abstractions for models.
@@ -75,6 +77,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition to the query.
+     *
+     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
      */
     public function where(string $column, mixed $value): static
     {
@@ -85,6 +89,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition with operator to the query.
+     *
+     * @param scalar|array<array-key, mixed>|object|null $value Valore bindable (scalar|array|DateTime|Enum|Stringable|null)
      */
     public function whereOperator(string $column, string $operator, mixed $value): static
     {
@@ -214,11 +220,11 @@ abstract class BaseQueryBuilder
     /**
      * Get all results from the query.
      *
-     * @return \Illuminate\Database\Eloquent\Collection<int, T>
+     * @return Collection<int, T>
      */
-    public function get(): \Illuminate\Database\Eloquent\Collection
+    public function get(): Collection
     {
-        /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
+        /** @var Collection<int, T> $results */
         $results = $this->query->get();
 
         return $results;
@@ -238,9 +244,9 @@ abstract class BaseQueryBuilder
     /**
      * Get results with pagination.
      *
-     * @return \Illuminate\Pagination\LengthAwarePaginator<int, T>
+     * @return LengthAwarePaginator<int, T>
      */
-    public function paginate(int $perPage = 15): \Illuminate\Pagination\LengthAwarePaginator
+    public function paginate(int $perPage = 15): LengthAwarePaginator
     {
         /* @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
         return $this->query->paginate($perPage);

@@ -683,11 +683,19 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
+<<<<<<< HEAD
+- [Best Practices Performance](best-practices.md#performance)
+=======
 - [Best Practices Performance](./BEST-PRACTICES.md#performance)
+>>>>>>> laraxot/dev
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../Xot/docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
+<<<<<<< HEAD
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
+=======
+* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
+>>>>>>> laraxot/dev

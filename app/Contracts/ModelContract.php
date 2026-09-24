@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
@@ -31,14 +30,14 @@ use Illuminate\Support\Carbon;
  * @method string                                                          getRouteKey()
  * @method string                                                          getRouteKeyName()
  * @method string                                                          getTable()
- * @method mixed                                                           with(array<int, string> $array)
+ * @method \Illuminate\Database\Eloquent\Builder<Model>                    with(array<int, string> $array)
  * @method list<string>                                                    getFillable()
- * @method mixed                                                           fill(array<string, mixed> $array)
- * @method mixed                                                           getConnection()
- * @method mixed                                                           update(array<string, mixed> $params)
- * @method mixed                                                           delete()
- * @method mixed                                                           detach(mixed $params)
- * @method mixed                                                           attach(mixed $params)
+ * @method static                                                          fill(array<string, mixed> $array)
+ * @method \Illuminate\Database\Connection                                 getConnection()
+ * @method bool                                                            update(array<string, mixed> $params)
+ * @method bool|null                                                       delete()
+ * @method int                                                             detach(mixed $params)
+ * @method void                                                            attach(mixed $params)
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()

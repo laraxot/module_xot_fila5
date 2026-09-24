@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modelli
 
 ## Configurazione Base
@@ -311,3 +312,7 @@ class Comment extends Model
     }
 }
 ```
+=======
+multi key, fixing lazy loading
+https://github.com/topclaudy/compoships
+>>>>>>> laraxot/dev

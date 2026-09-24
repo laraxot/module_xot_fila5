@@ -1,12 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * ---.
  *
  * @see https://github.com/johnnyfreeman/laravel-custom-relation/blob/master/src/Relations/Custom.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Relations;
 
@@ -81,15 +81,12 @@ class CustomRelation extends Relation
      */
     /**
      * @param array<int, Model> $models
+     * @param string            $relation the relation name (parent signature is untyped)
      *
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
     {
-        if (! \is_string($relation)) {
-            throw new \Exception('relation is not a string');
-        }
-
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -105,6 +102,7 @@ class CustomRelation extends Relation
     /**
      * @param array<int, Model>      $models
      * @param Collection<int, Model> $collection
+     * @param string                 $relation   the relation name (parent signature is untyped)
      *
      * @return array<int, Model>
      */

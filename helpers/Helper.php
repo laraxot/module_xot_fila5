@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -31,6 +30,7 @@ if (! function_exists('isRunningTestBench')) {
 }
 
 if (! function_exists('dddx')) {
+    /** @param mixed $params Qualunque valore da dumpare (debug helper) */
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
@@ -200,11 +200,12 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
+     * @param array<string, mixed> $data
      * @param array<string, mixed> $options
      *
      * @return TestResponse<Response>
      */
-    function post(string $uri, mixed $data = [], array $options = []): TestResponse
+    function post(string $uri, array $data = [], array $options = []): TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -212,9 +213,11 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
+     * @param array<string, mixed> $data
+     *
      * @return TestResponse<Response>
      */
-    function put(string $uri, mixed $data = []): TestResponse
+    function put(string $uri, array $data = []): TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -222,9 +225,11 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
+     * @param array<string, mixed> $data
+     *
      * @return TestResponse<Response>
      */
-    function patch(string $uri, mixed $data = []): TestResponse
+    function patch(string $uri, array $data = []): TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -300,35 +305,24 @@ if (! function_exists('xotSeedModelOnce')) {
     }
 }
 
-if (! function_exists('require_translation_file')) {
-    /**
-     * @return array<string, mixed>
-     */
-    function require_translation_file(string $path): array
-    {
-        $loaded = require $path;
-        if (! is_array($loaded)) {
-            throw new InvalidArgumentException("Translation file [{$path}] must return array.");
-        }
-
-        /** @var array<string, mixed> $loaded */
-        return $loaded;
-    }
-}
-
 if (! function_exists('merge_translation_files')) {
     /**
-     * @param non-empty-string ...$paths
+     * Merge multiple PHP translation files into a single array.
+     *
+     * @param string $first   First translation file path
+     * @param string ...$rest Additional translation file paths
      *
      * @return array<string, mixed>
      */
-    function merge_translation_files(string ...$paths): array
+    function merge_translation_files(string $first, string ...$rest): array
     {
-        $merged = [];
-        foreach ($paths as $path) {
-            $merged = array_merge($merged, require_translation_file($path));
+        $result = (array) require $first;
+
+        foreach ($rest as $file) {
+            $result = array_replace_recursive($result, (array) require $file);
         }
 
-        return $merged;
+        /* @phpstan-ignore return.type */
+        return $result;
     }
 }

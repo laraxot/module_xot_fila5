@@ -19,13 +19,21 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 
 ```bash
 # Configurazione .env
+<<<<<<< HEAD
 APP_URL=http://quaeris.local
+=======
+APP_URL=http://healthcare_app.local
+>>>>>>> laraxot/dev
 
 # Browser accede a
 http://127.0.0.1:8000
 ```
 
+<<<<<<< HEAD
 **Risultato**: Livewire genera URL con `quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
+=======
+**Risultato**: Livewire genera URL con `healthcare_app.local` ma browser invia richieste a `127.0.0.1:8000` → 404
+>>>>>>> laraxot/dev
 
 ## ✅ Soluzioni
 
@@ -41,7 +49,11 @@ APP_URL=http://127.0.0.1:8000
 APP_URL=http://localhost:8000
 
 # Se accedi tramite dominio locale
+<<<<<<< HEAD
 APP_URL=http://quaeris.local
+=======
+APP_URL=http://healthcare_app.local
+>>>>>>> laraxot/dev
 ```
 
 **Dopo la modifica**:
@@ -53,19 +65,34 @@ php artisan optimize:clear
 
 ### Soluzione 2: Aggiungere Host al Sistema
 
+<<<<<<< HEAD
 Se vuoi usare `quaeris.local`, aggiungi al file hosts:
 
 **Linux/Mac**: `/etc/hosts`
 ```
 127.0.0.1 quaeris.local
+=======
+Se vuoi usare `healthcare_app.local`, aggiungi al file hosts:
+
+**Linux/Mac**: `/etc/hosts`
+```
+127.0.0.1 healthcare_app.local
+>>>>>>> laraxot/dev
 ```
 
 **Windows**: `C:\Windows\System32\drivers\etc\hosts`
 ```
+<<<<<<< HEAD
 127.0.0.1 quaeris.local
 ```
 
 Poi accedi tramite: `http://quaeris.local:8000`
+=======
+127.0.0.1 healthcare_app.local
+```
+
+Poi accedi tramite: `http://healthcare_app.local:8000`
+>>>>>>> laraxot/dev
 
 ### Soluzione 3: Trusted Proxies (Per Ambienti Complessi)
 
@@ -136,14 +163,22 @@ APP_URL=http://127.0.0.1:8000
 
 ```bash
 # .env per sviluppo con virtual host
+<<<<<<< HEAD
 APP_URL=http://quaeris.local
+=======
+APP_URL=http://healthcare_app.local
+>>>>>>> laraxot/dev
 ```
 
 ### Produzione
 
 ```bash
 # .env per produzione
+<<<<<<< HEAD
 APP_URL=https://quaeris.com
+=======
+APP_URL=https://healthcare_app.com
+>>>>>>> laraxot/dev
 ```
 
 ## 🔧 Comandi Rapidi Fix
@@ -175,4 +210,8 @@ php artisan tinker --execute="echo route('livewire.update');"
 
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
+<<<<<<< HEAD
 **Categoria**: Troubleshooting
+=======
+**Categoria**: Troubleshooting
+>>>>>>> laraxot/dev

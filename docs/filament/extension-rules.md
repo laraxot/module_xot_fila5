@@ -288,7 +288,15 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -300,4 +308,8 @@ class UserResource extends XotBaseResource
     // getPages() NON necessario se standard
     // getTableActions() NON necessario se standard
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> laraxot/dev

@@ -63,10 +63,24 @@ return [
    - Mantenere aggiornata la documentazione
 
 ## Collegamenti
+<<<<<<< HEAD
+=======
+- [Gestione Domini](domain_configuration.md)
+- [Struttura del Progetto](project_structure.md)
+- [Documentazione Principale](../readme.md)
+## Collegamenti tra versioni di configuration.md
+* [configuration.md](docs/configuration.md)
+* [configuration.md](../../../xot/docs/configuration.md)
+* [configuration.md](../../../cms/docs/configuration.md)
+>>>>>>> laraxot/dev
 - [Gestione Domini](DOMAIN_CONFIGURATION.md)
 - [Struttura del Progetto](PROJECT_STRUCTURE.md)
 - [Documentazione Principale](../README.md)
 ## Collegamenti tra versioni di configuration.md
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../Xot/docs/configuration.md)
+<<<<<<< HEAD
 * [configuration.md](../../../Cms/docs/configuration.md)
+=======
+* [configuration.md](../../../Cms/docs/configuration.md)
+>>>>>>> laraxot/dev

@@ -1,6 +1,10 @@
 # Merge Conflicts Inventory
 
 **Date**: 2025-11-12
+<<<<<<< HEAD
+=======
+**Date**: [DATE]
+>>>>>>> laraxot/dev
 **Total Files with Conflicts**: 77
 **Status**: In Progress
 
@@ -193,4 +197,8 @@ This document catalogs all files containing merge conflict markers found through
 5. Finalize with non-critical files
 
 ---
+<<<<<<< HEAD
 *This inventory will be updated as conflicts are resolved.*
+=======
+*This inventory will be updated as conflicts are resolved.*
+>>>>>>> laraxot/dev

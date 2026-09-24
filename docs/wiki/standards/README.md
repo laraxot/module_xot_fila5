@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_PK9HhS
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_XuyG1u
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,7 +16,15 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PK9HhS
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_ykkpgJ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u
 ---
 title: "Readme"
 type: reference
@@ -19,12 +33,27 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_PK9HhS
+=======
+<<<<<<< .merge_file_ykkpgJ
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_XuyG1u
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PK9HhS
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u
 
 # Standard di Codice
 
@@ -42,9 +71,22 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti tra versioni di README.md
 <<<<<<< HEAD
+<<<<<<< .merge_file_PK9HhS
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_ykkpgJ
+=======
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -225,13 +267,29 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< .merge_file_PK9HhS
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_ykkpgJ
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u
 =======
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PK9HhS
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_ykkpgJ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -280,6 +338,16 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_PK9HhS
+=======
+<<<<<<< .merge_file_ykkpgJ
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_XuyG1u
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -287,6 +355,11 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PK9HhS
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -351,10 +424,23 @@ class Doctor extends User
 
 ## Moduli che applicano questa regola
 <<<<<<< HEAD
+<<<<<<< .merge_file_PK9HhS
+=======
+<<<<<<< .merge_file_ykkpgJ
+=======
+- [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
+// Aggiungere qui altri moduli se necessario
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_XuyG1u
 // Aggiungere qui altri moduli se necessario
 
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_PK9HhS
+=======
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u
 // Aggiungere qui altri moduli se necessario
 
 <<<<<<< HEAD
@@ -404,4 +490,12 @@ class Doctor extends User
 - [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
 // Aggiungere qui altri moduli se necessario
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PK9HhS
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_ykkpgJ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tAHaAr
+>>>>>>> .merge_file_XuyG1u

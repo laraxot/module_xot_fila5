@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Traits\HasXotTable;
+<<<<<<< .merge_file_EEX3P6
 <<<<<<< HEAD
 use ReflectionClass;
 
@@ -12,11 +13,16 @@ use function Safe\file_get_contents;
 
 /**
 =======
+=======
+>>>>>>> .merge_file_Bxvh2s
 
 use function Safe\file_get_contents;
 
 /*
+<<<<<<< .merge_file_EEX3P6
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Bxvh2s
  * Guardia della regola docs/wiki/rules/xot-table-method-names.md:
  * `table()` non decide, chiede — e lo chiede direttamente all'hook.
  *
@@ -27,11 +33,15 @@ use function Safe\file_get_contents;
 test('HasXotTable non dichiara metodi resolve*', function (): void {
     $methods = array_map(
         static fn (\ReflectionMethod $m): string => $m->getName(),
+<<<<<<< .merge_file_EEX3P6
 <<<<<<< HEAD
         (new ReflectionClass(HasXotTable::class))->getMethods(),
 =======
         (new \ReflectionClass(HasXotTable::class))->getMethods(),
 >>>>>>> laraxot/dev
+=======
+        (new \ReflectionClass(HasXotTable::class))->getMethods(),
+>>>>>>> .merge_file_Bxvh2s
     );
 
     $offenders = array_values(array_filter(
@@ -45,11 +55,15 @@ test('HasXotTable non dichiara metodi resolve*', function (): void {
 
 test('table() non contiene valori hardcoded fra i setter', function (): void {
     $source = file_get_contents(
+<<<<<<< .merge_file_EEX3P6
 <<<<<<< HEAD
         (string) (new ReflectionClass(HasXotTable::class))->getFileName()
 =======
         (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
 >>>>>>> laraxot/dev
+=======
+        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
+>>>>>>> .merge_file_Bxvh2s
     );
 
     $start = strpos($source, 'public function table(');
@@ -65,11 +79,15 @@ test('table() non contiene valori hardcoded fra i setter', function (): void {
 
 test('gli hook di azione non sono avvolti in array_values()', function (): void {
     $source = file_get_contents(
+<<<<<<< .merge_file_EEX3P6
 <<<<<<< HEAD
         (string) (new ReflectionClass(HasXotTable::class))->getFileName()
 =======
         (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
 >>>>>>> laraxot/dev
+=======
+        (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
+>>>>>>> .merge_file_Bxvh2s
     );
 
     foreach ([

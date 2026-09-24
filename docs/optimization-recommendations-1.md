@@ -412,8 +412,16 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
+=======
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+- [PathHelper Current](../Helpers/PathHelper.php)
+- [XotData Current](../Datas/XotData.php)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> laraxot/dev

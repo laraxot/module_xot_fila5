@@ -9,10 +9,13 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
+<<<<<<< .merge_file_8AmCPR
 <<<<<<< HEAD
 use Mockery;
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ue0Q9W
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
@@ -21,11 +24,15 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_8AmCPR
 <<<<<<< HEAD
     Mockery::close();
 =======
     \Mockery::close();
 >>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> .merge_file_ue0Q9W
 });
 
 describe('Xot floor50 extras non-public', function (): void {

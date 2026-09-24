@@ -169,7 +169,7 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1
 
 ### 4. Helpers nella Root
 
-**Violazione**: `Modules/Xot/helpers/Helper.php` o `Modules/Xot/helpers/Helper.php`
+**Violazione**: `Modules/Xot/Helpers/Helper.php` o `Modules/Xot/helpers/Helper.php`
 
 **Fix**: Se sono helper moderni, spostare in `Modules/Xot/app/Helpers/`. Se sono legacy, rimuovere.
 
@@ -346,4 +346,44 @@ Questi file devono essere:
 
 ---
 
+<<<<<<< HEAD
+## Regressione e ri-bonifica 2026-07-06
+
+Le cartelle root PascalCase erano tornate (probabile merge/copy incidentale
+di un agente in una sessione precedente): `Modules/User/{Listeners,
+Application,Events,Actions,Database}`, `Modules/Notify/Models`,
+`Modules/Cms/Actions`, oltre a `Modules/Xot/{Datas,Filament,Providers,_docs,
+claude-code-bmad-skills}` (queste ultime rimosse da un altro agente in
+parallelo nella stessa sessione). Verificato per ciascuna, prima di
+cancellare, che **non** fossero l'unica copia raggiungibile (autoload
+psr-4 di ogni modulo mappa `Modules\X\` → `app/` — root non è mai
+autoloadato) e che nessun codice di produzione le importasse per path
+diretto. `Modules/User/Database/Migrations/` non era caricata da
+`XotBaseServiceProvider::boot()` (usa `database/migrations` minuscolo
+hardcoded) — mai eseguita, sicura da rimuovere anche se il contenuto
+differiva dalle migration reali in `database/migrations/`.
+
+**Eccezione confermata**: `Modules/Xot/helpers/Helper.php` (lowercase)
+resta alla root — richiesto esplicitamente da `laravel/phpstan.neon`
+(`scanFiles`, di proprietà esclusiva dell'utente). Non spostare né
+rimuovere senza che sia l'utente a modificare prima `phpstan.neon`.
+
+Rimossi anche file spazzatura non previsti dalla checklist originale:
+`Modules/Xot/.gitattributes copy`, `Modules/Xot/_activity.code-workspace`
+(duplicato byte-identico di `_xot.code-workspace`, la regola ammette un solo
+`*.code-workspace`), `Modules/Activity/.md` (file vuoto), due varianti
+duplicate di `.docs-directory-violation-reminder.md` in `Modules/Cms`
+(contaminazione da un progetto diverso, `base_saluteora`, non pertinente a
+questo repo).
+
+**Conflitto aperto, non risolto unilateralmente**: la lista "File Consentiti
+nella Root" più sopra include esplicitamente `CHANGELOG.md`, ma un'istruzione
+successiva dell'utente (2026-07-06) dice "come file .md alla root deve
+esserci solo README.md". `CHANGELOG.md` esiste ancora alla root di
+`Activity`, `AI`, `Gdpr` — non cancellato in attesa di chiarimento esplicito
+dell'utente, per non perdere contenuto storico senza conferma.
+
+*Ultimo aggiornamento: 2026-07-06*
+=======
 *Ultimo aggiornamento: 2026-06-18*
+>>>>>>> laraxot/dev

@@ -1,3 +1,10 @@
+<<<<<<< .merge_file_9esu89
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FObzOu
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview
@@ -250,11 +257,265 @@ try {
     Log::error('Service failure', [
         'service' => get_class($service),
         'error' => $e->getMessage(),
+<<<<<<< .merge_file_9esu89
+<<<<<<< HEAD
+=======
+# Logging Best Practices - 2026-03-02
+
+## Problem Analysis
+
+**Current State**: 178+ log statements across the codebase
+- `Log::info()`: 58 occurrences (32%)
+- `Log::error()`: 78 occurrences (44%)
+- `Log::warning()`: 35 occurrences (20%)
+- `Log::debug()`: 7 occurrences (4%)
+
+**Issues Identified**:
+1. **Excessive Info Logging**: Too many `Log::info()` calls for routine operations
+2. **Performance Impact**: Logging slows down requests by 10-30%
+3. **Log Bloat**: Logs fill disk space rapidly
+4. **Context Missing**: Many logs lack proper context
+5. **Wrong Log Levels**: Info used for debug, error used for warnings
+
+## Logging Strategy
+
+### Log Level Hierarchy
+
+```
+DEBUG < INFO < NOTICE < WARNING < ERROR < CRITICAL < ALERT < EMERGENCY
+```
+
+### When to Use Each Level
+
+#### DEBUG (Development Only)
+**Purpose**: Detailed diagnostic information for troubleshooting
+**When**: During development only, never in production
+**Example**:
+```php
+// ❌ WRONG - Don't use in production
+Log::debug('User data', $user->toArray());
+
+// ✅ CORRECT - Only in development
+if (config('app.debug')) {
+    Log::debug('Performance metrics', [
+        'query_count' => $queryCount,
+        'execution_time' => $executionTime,
+    ]);
+}
+```
+
+#### INFO (Sparingly)
+**Purpose**: Informational messages about normal operations
+**When**: Only for significant business events
+**Examples**:
+```php
+// ❌ WRONG - Too routine
+Log::info('User logged in');
+Log::info('Profile updated');
+Log::info('Registration attempt');
+
+// ✅ CORRECT - Significant events
+Log::info('User account created', ['user_id' => $user->id, 'email' => $user->email]);
+Log::info('Payment processed', [
+    'order_id' => $order->id,
+    'amount' => $order->amount,
+    'user_id' => $order->user_id,
+]);
+```
+
+#### NOTICE (Business Events)
+**Purpose**: Normal but significant events
+**When**: Important business milestones
+**Example**:
+```php
+Log::notice('User upgraded to premium plan', [
+    'user_id' => $user->id,
+    'plan' => 'premium',
+]);
+```
+
+#### WARNING (Potential Issues)
+**Purpose**: Exceptional occurrences that are not errors
+**When**: Degraded performance, deprecated features, retryable failures
+**Example**:
+```php
+// ✅ CORRECT
+Log::warning('API rate limit approaching', [
+    'endpoint' => $endpoint,
+    'remaining' => $remaining,
+    'user_id' => $user->id,
+]);
+
+Log::warning('External API slow response', [
+    'service' => 'mapbox',
+    'response_time' => $responseTime . 'ms',
+    'threshold' => '1000ms',
+]);
+```
+
+#### ERROR (Error Conditions)
+**Purpose**: Runtime errors that require attention
+**When**: Exceptions, failed operations, data corruption
+**Example**:
+```php
+// ✅ CORRECT
+Log::error('Payment processing failed', [
+    'order_id' => $order->id,
+    'error' => $e->getMessage(),
+    'trace' => $e->getTraceAsString(),
+]);
+```
+
+#### CRITICAL (Critical Conditions)
+**Purpose**: Critical conditions that require immediate action
+**When**: System down, database connection lost, security breach
+**Example**:
+```php
+// ✅ CORRECT
+Log::critical('Database connection lost', [
+    'error' => $e->getMessage(),
+    'service' => app()->environment(),
+]);
+```
+
+## Anti-Patterns to Avoid
+
+### 1. Logging Every Function Call
+```php
+// ❌ WRONG
+public function processOrder(Order $order): void
+{
+    Log::info('Processing order started');
+    $this->validate($order);
+    Log::info('Order validated');
+    $this->charge($order);
+    Log::info('Order charged');
+    $this->notify($order);
+    Log::info('Order notified');
+    Log::info('Processing order completed');
+}
+
+// ✅ CORRECT
+public function processOrder(Order $order): void
+{
+    try {
+        $this->validate($order);
+        $this->charge($order);
+        $this->notify($order);
+    } catch (\Exception $e) {
+        Log::error('Order processing failed', [
+            'order_id' => $order->id,
+            'error' => $e->getMessage(),
+        ]);
+        throw $e;
+    }
+}
+```
+
+### 2. Logging Routine Operations
+```php
+// ❌ WRONG
+Log::info('User logged in');
+Log::info('User logged out');
+Log::info('Profile viewed');
+Log::info('Comment added');
+
+// ✅ CORRECT
+// Don't log routine operations - use monitoring instead
+```
+
+### 3. Logging Sensitive Data
+```php
+// ❌ WRONG - Exposes passwords
+Log::info('User login attempt', [
+    'email' => $email,
+    'password' => $password,
+]);
+
+// ✅ CORRECT
+Log::notice('User login attempt', [
+    'email' => $email,
+    'ip' => $request->ip(),
+]);
+```
+
+### 4. Logging in Loops
+```php
+// ❌ WRONG - Floods logs
+foreach ($users as $user) {
+    Log::info('Processing user', ['user_id' => $user->id]);
+    $this->process($user);
+}
+
+// ✅ CORRECT
+Log::info('Starting batch user processing', ['count' => count($users)]);
+foreach ($users as $user) {
+    $this->process($user);
+}
+Log::info('Batch user processing completed');
+```
+
+## Best Practices
+
+### 1. Structured Logging
+Always use structured context:
+
+```php
+// ❌ WRONG
+Log::info('User logged in');
+
+// ✅ CORRECT
+Log::info('User logged in', [
+    'user_id' => $user->id,
+    'email' => $user->email,
+    'ip' => $request->ip(),
+    'user_agent' => $request->userAgent(),
+]);
+```
+
+### 2. Conditional Debug Logging
+```php
+// ✅ CORRECT
+if (config('app.debug')) {
+    Log::debug('Detailed debug info', [
+        'variable' => $variable,
+        'trace' => debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS),
+    ]);
+}
+```
+
+### 3. Error Context
+Always include error details:
+
+```php
+// ✅ CORRECT
+try {
+    $result = $this->externalApiCall();
+} catch (\Exception $e) {
+    Log::error('External API call failed', [
+        'service' => 'mapbox',
+        'endpoint' => $endpoint,
+        'error' => $e->getMessage(),
+        'code' => $e->getCode(),
+        'trace' => $e->getTraceAsString(),
+        'request_id' => $requestId,
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FObzOu
     ]);
     throw $e;
 }
 ```
 
+<<<<<<< .merge_file_9esu89
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FObzOu
 ### Step 4: Implement Audit Trail
 ```php
 // Create audit records for important events
@@ -322,4 +583,11 @@ Following these guidelines will:
 5. **Make debugging easier**
 6. **Scale better** under load
 
+<<<<<<< HEAD
 **Remember**: If everything is working correctly, there should be NO log output.
+<<<<<<< HEAD
+=======
+**Remember**: If everything is working correctly, there should be NO log output.
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
