@@ -4,14 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< HEAD
 use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+<<<<<<< HEAD
+    Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 });
 
 /** @return array{string, string} */

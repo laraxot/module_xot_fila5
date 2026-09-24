@@ -28,6 +28,32 @@
 
 ## Code Quality
 - PHPStan level 9+ for all new code
+<<<<<<< HEAD
+=======
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+>>>>>>> laraxot/dev
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards

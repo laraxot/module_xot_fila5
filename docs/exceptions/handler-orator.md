@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HandlerDecorator
 
 ## Descrizione
@@ -41,3 +42,12 @@ class HandlerDecorator implements ExceptionHandlerContract
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Error Formatters](./formatters/readme.md)
+=======
+---
+module: theme
+topic: handler-orator
+canonical: ../../../../Themes/docs/shared-components/handler-decorator.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/handler-decorator.md
+>>>>>>> laraxot/dev

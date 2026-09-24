@@ -15,7 +15,12 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 
 ### Key Components
 - **Chart Module**: Contains chart generation and styling logic
+<<<<<<< HEAD
 - **Quaeris Module**: Handles survey data and PDF generation
+=======
+- **healthcare_app Module**: Handles survey data and PDF generation
+- **ExternalProject Module**: Handles survey data and PDF generation
+>>>>>>> laraxot/dev
 - **Xot Module**: Provides core services including HTML to PDF conversion
 - **JpGraph Library**: Server-side chart generation
 - **Chart.js**: Client-side chart visualization
@@ -428,6 +433,10 @@ class MakePdfAction
         // Create filename
         $survey_date_to = $surveyPdf->date_to;
         if ($survey_date_to === null || $survey_date_to === '0000-00-00') {
+<<<<<<< HEAD
+=======
+        if ($survey_date_to === null || $survey_date_to === '[DATE]') {
+>>>>>>> laraxot/dev
             $survey_date_to = date('W / o');
         } else {
             $survey_date_to = date('W / o', strtotime($survey_date_to));
@@ -509,7 +518,11 @@ class HtmlService
 PDFs support multi-page layouts with proper headers and footers:
 
 ```blade
+<<<<<<< HEAD
 @include('quaeris::pdf.css')
+=======
+@include('healthcare_app::pdf.css')
+>>>>>>> laraxot/dev
 
 <page backtop="{{ $pdf->backtop }}mm" backbottom="{{ $pdf->backbottom }}mm">
     <page_header>
@@ -583,4 +596,8 @@ PDFs support multi-page layouts with proper headers and footers:
 - **Performance Monitoring**: Monitor generation times and memory usage
 - **Error Tracking**: Track and fix common generation errors
 
+<<<<<<< HEAD
 This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
+=======
+This comprehensive system allows for flexible, scalable chart generation and PDF integration while maintaining the architectural principles of the Laraxot framework. The modular design allows for easy extension and customization while providing robust error handling and performance optimization.
+>>>>>>> laraxot/dev

@@ -84,3 +84,8 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 - [Convenzioni di Namespace](../Xot/docs/namespace_conventions.md)
 - [Struttura Moduli](../Xot/docs/module_structure.md)
+<<<<<<< HEAD
+=======
+- [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
+- [Struttura Moduli](../xot/docs/module_structure.md)
+>>>>>>> laraxot/dev

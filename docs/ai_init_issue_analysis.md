@@ -1,5 +1,6 @@
 # Aggiornamento Documentazione - Problema con ai_init.sh
 
+<<<<<<< HEAD
 ## Analisi corretta
 
 Il problema non e' "manca la cartella `bashscripts/ai/.gemini`".
@@ -39,6 +40,8 @@ Non:
 - Source: `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/.gemini`
 - Target symlink: `/var/www/_bases/base_quaeris_fila4_mono/.gemini`
 
+=======
+>>>>>>> laraxot/dev
 ## Problema Identificato
 
 Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
@@ -71,4 +74,8 @@ Lo script deve essere corretto per invertire la logica:
 ## Cartelle Coinvolte
 
 - Source: `./bashscripts/ai/.gemini`
+<<<<<<< HEAD
 - Target symlink: `./.gemini`
+=======
+- Target symlink: `./.gemini`
+>>>>>>> laraxot/dev

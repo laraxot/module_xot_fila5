@@ -1,6 +1,10 @@
 # PHPStan Roadmap - Xot Module
 
 > **Date**: 2026-01-14
+<<<<<<< HEAD
+=======
+> **Date**: [DATE]
+>>>>>>> laraxot/dev
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 
@@ -14,4 +18,8 @@ The **Xot** module is fully compliant with PHPStan Level 10. No errors were repo
 
 ## Future Goals
 - Maintain 0 errors.
+<<<<<<< HEAD
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+=======
+- Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+>>>>>>> laraxot/dev

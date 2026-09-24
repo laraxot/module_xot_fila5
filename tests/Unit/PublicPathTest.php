@@ -1,7 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use App\Application;
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+use App\Application;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
@@ -46,9 +58,27 @@ it('restituisce un percorso anche per segmenti non ancora creati', function (): 
 });
 
 it('usa la Application con publicPath sovrascritto', function (): void {
+<<<<<<< HEAD
     expect(app())->toBeInstanceOf(Application::class)
         ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(Application::class);
+=======
+<<<<<<< HEAD
+    expect(app())->toBeInstanceOf(App\Application::class)
+        ->and((new ReflectionMethod(App\Application::class, 'publicPath'))->getDeclaringClass()->getName())
+        ->toBe(App\Application::class);
+=======
+<<<<<<< HEAD
+    expect(app())->toBeInstanceOf(App\Application::class)
+        ->and((new ReflectionMethod(App\Application::class, 'publicPath'))->getDeclaringClass()->getName())
+        ->toBe(App\Application::class);
+=======
+    expect(app())->toBeInstanceOf(Application::class)
+        ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
+        ->toBe(Application::class);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 });
 
 it('public_html esiste ed e fuori da laravel/', function (): void {

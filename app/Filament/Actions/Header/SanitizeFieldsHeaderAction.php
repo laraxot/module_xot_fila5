@@ -1,22 +1,40 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+>>>>>>> laraxot/dev
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\String\SanitizeAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 class SanitizeFieldsHeaderAction extends XotBaseAction
+=======
+use Webmozart\Assert\Assert;
+
+class SanitizeFieldsHeaderAction extends Action
+>>>>>>> laraxot/dev
 {
     /** @var list<string> */
     public array $fields = [];
@@ -48,7 +66,11 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
+<<<<<<< HEAD
                             $c++;
+=======
+                            ++$c;
+>>>>>>> laraxot/dev
                         }
                     }
                     if ($save) {
@@ -63,7 +85,11 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
     }
 
     /**
+<<<<<<< HEAD
      * @param  list<string>  $fields
+=======
+     * @param list<string> $fields
+>>>>>>> laraxot/dev
      */
     public function setFields(array $fields): self
     {

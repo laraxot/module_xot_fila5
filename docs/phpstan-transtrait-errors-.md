@@ -388,7 +388,11 @@ This fix may also resolve related errors in:
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+=======
+- [PHPStan Analysis Summary](phpstan-analysis.md)
+>>>>>>> laraxot/dev
 - [XotBase Extension Rules](xotbase-extension-rules.md)
 - [Filament Integration](filament-integration.md)
 

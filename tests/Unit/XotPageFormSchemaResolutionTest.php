@@ -1,6 +1,17 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Tests\TestCase;
@@ -11,7 +22,19 @@ use ReflectionMethod;
 uses(TestCase::class);
 
 test('un override di getFormSchema viene onorato su XotBasePage', function (): void {
+<<<<<<< HEAD
     $fixture = new FormSchemaPageFixture;
+=======
+<<<<<<< HEAD
+    $fixture = new FormSchemaPageFixture();
+=======
+<<<<<<< HEAD
+    $fixture = new FormSchemaPageFixture();
+=======
+    $fixture = new FormSchemaPageFixture;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     $method = new ReflectionMethod($fixture, 'resolveFormSchemaForXotPage');
     $method->setAccessible(true);
 

@@ -23,7 +23,14 @@ final class RegisterRuntimePsr4NamespacesAction
 
         return [
             'Themes\\TwentyOne\\' => $base.'/Themes/TwentyOne/app',
+<<<<<<< HEAD
             'Themes\\Sixteen\\' => $base.'/Themes/Sixteen/app',
+=======
+            'Themes\\Sixteen\\' => [
+                $base.'/Themes/Sixteen/app',
+                $base.'/Themes/Sixteen/src',
+            ],
+>>>>>>> laraxot/dev
             'Themes\\Sixteen\\Tests\\' => $base.'/Themes/Sixteen/tests',
             'Themes\\Two\\' => $base.'/Themes/Two/app',
             'Database\\Seeders\\' => $base.'/database/seeders',

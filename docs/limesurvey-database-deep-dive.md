@@ -5,7 +5,11 @@
 The system utilizes three main database connections:
 
 ### 1. Limesurvey Database (`limesurvey` connection)
+<<<<<<< HEAD
 - **Schema**: `txaesfry_quaeris_survey` 
+=======
+- **Schema**: `txaesfry_healthcare_app_survey` 
+>>>>>>> laraxot/dev
 - **Purpose**: Main Limesurvey installation with surveys, questions, and responses
 - **Key tables**: 
   - `lime_questions` - Question structure and metadata
@@ -15,10 +19,17 @@ The system utilizes three main database connections:
   - `lime_answers` - Possible answer options
   - `lime_answer_l10ns` - Answer translations
 
+<<<<<<< HEAD
 ### 2. Quaeris Database (`quaeris` connection) 
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to Quaeris functionality
+=======
+### 2. healthcare_app Database (`healthcare_app` connection) 
+- **Purpose**: Application-specific data including survey mappings
+- **Key tables**:
+  - `survey_pdfs` - Links Limesurvey surveys to healthcare_app functionality
+>>>>>>> laraxot/dev
   - `question_charts` - Custom chart configurations for survey data
   - `charts` - Chart visualization settings
   - `contacts` - Participant contact and communication tracking
@@ -94,7 +105,11 @@ The system utilizes three main database connections:
 
 ## Integration Points
 
+<<<<<<< HEAD
 ### Quaeris-Specific Features
+=======
+### healthcare_app-Specific Features
+>>>>>>> laraxot/dev
 - Links Limesurvey data to `survey_pdfs` table via survey_id mapping
 - Custom chart configurations in `question_charts` table
 - Participant tracking through `contacts` table

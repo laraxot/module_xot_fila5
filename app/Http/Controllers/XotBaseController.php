@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -22,7 +30,11 @@ class XotBaseController extends RoutingController
     /**
      * success response method.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $result
+=======
+     * @param array<string, mixed> $result
+>>>>>>> laraxot/dev
      */
     public function sendResponse(string $message, array $result): JsonResponse
     {
@@ -38,7 +50,11 @@ class XotBaseController extends RoutingController
     /**
      * return error response.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $errorMessages
+=======
+     * @param array<string, mixed> $errorMessages
+>>>>>>> laraxot/dev
      */
     public function sendError(string $error, array $errorMessages = [], int $code = 404): JsonResponse
     {

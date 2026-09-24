@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Support;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Support\Contracts\TranslatableContentDriver;
 use Filament\Tables\Columns\Column;
@@ -20,11 +21,21 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 /**
  * @property string|null $tableSearch
  */
+=======
+use Filament\Tables\Table;
+use Illuminate\Support\Collection;
+use Modules\Xot\Filament\Traits\HasXotTable;
+
+>>>>>>> laraxot/dev
 class HasTableWithXotTestClass
 {
     use HasXotTable;
 
+<<<<<<< HEAD
     public function getLayoutView(): object
+=======
+    public function getLayoutView(): mixed
+>>>>>>> laraxot/dev
     {
         $mock = \Mockery::mock();
         $mock->allows(['getTableColumns' => []]);
@@ -34,18 +45,30 @@ class HasTableWithXotTestClass
     }
 
     #[\Override]
+<<<<<<< HEAD
     /** @return array<int, Column|ColumnGroup|Component> */
+=======
+    /** @return array<int, mixed> */
+>>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [];
     }
 
     /**
+<<<<<<< HEAD
      * @return Table&MockInterface
      */
     public function getTable(): Table
     {
         /** @var Table&MockInterface $mock */
+=======
+     * @return Table&\Mockery\MockInterface
+     */
+    public function getTable(): Table
+    {
+        /** @var Table&\Mockery\MockInterface $mock */
+>>>>>>> laraxot/dev
         $mock = \Mockery::mock(Table::class);
 
         return $mock;
@@ -71,13 +94,21 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     /** @return array<string|int, BaseFilter> */
+=======
+    /** @return array<int, mixed> */
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     public function getTableFiltersForm(): ?Schema
+=======
+    public function getTableFiltersForm(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
@@ -104,7 +135,11 @@ class HasTableWithXotTestClass
         return [];
     }
 
+<<<<<<< HEAD
     public function getTableColumnToggleForm(): ?Schema
+=======
+    public function getTableColumnToggleForm(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
@@ -115,15 +150,23 @@ class HasTableWithXotTestClass
         return [];
     }
 
+<<<<<<< HEAD
     /**
      * @return Model|array<string, mixed>|null
      */
     public function getTableRecord(): Model|array|null
+=======
+    public function getTableRecord(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function getTableRecordKey(): ?string
+=======
+    public function getTableRecordKey(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
@@ -131,7 +174,11 @@ class HasTableWithXotTestClass
     /** @return Collection<int, mixed> */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
+<<<<<<< HEAD
         return new Collection;
+=======
+        return new Collection();
+>>>>>>> laraxot/dev
     }
 
     public function getAllTableRecordsCount(): int
@@ -150,42 +197,62 @@ class HasTableWithXotTestClass
         return [];
     }
 
+<<<<<<< HEAD
     /**
      * @return Builder<Model>|null
      */
     public function getTableQueryForExport(): ?Builder
+=======
+    public function getTableQueryForExport(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredTableQuery(): ?Builder
+=======
+    public function getFilteredTableQuery(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredSortedTableQuery(): ?Builder
+=======
+    public function getFilteredSortedTableQuery(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return Builder<Model>|null
      */
     public function getAllTableSummaryQuery(): ?Builder
+=======
+    public function getAllTableSummaryQuery(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return Builder<Model>|null
      */
     public function getPageTableSummaryQuery(): ?Builder
+=======
+    public function getPageTableSummaryQuery(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
@@ -195,17 +262,29 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function getMountedTableActionForm(): ?Schema
+=======
+    public function getMountedTableActionForm(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function getMountedTableActionRecord(): ?Model
+=======
+    public function getMountedTableActionRecord(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function getMountedTableActionRecordKey(): ?string
+=======
+    public function getMountedTableActionRecordKey(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
@@ -215,7 +294,11 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function getMountedTableBulkActionForm(): ?Schema
+=======
+    public function getMountedTableBulkActionForm(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
@@ -255,6 +338,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
@@ -262,10 +346,26 @@ class HasTableWithXotTestClass
     public function mountTableBulkAction(): void {}
 
     public function mountedTableActionRecord(): ?Model
+=======
+    public function deselectAllTableRecords(): void
+    {
+    }
+
+    public function mountTableAction(): void
+    {
+    }
+
+    public function mountTableBulkAction(): void
+    {
+    }
+
+    public function mountedTableActionRecord(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -275,13 +375,38 @@ class HasTableWithXotTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+=======
+    public function replaceMountedTableAction(): void
+    {
+    }
+
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
+
+    public function resetTableSearch(): void
+    {
+    }
+
+    public function resetTableColumnSearch(): void
+    {
+    }
+
+    public function toggleTableReordering(): void
+    {
+    }
+>>>>>>> laraxot/dev
 
     public function parseTableFilterName(): string
     {
         return '';
     }
 
+<<<<<<< HEAD
     public function makeFilamentTranslatableContentDriver(): ?TranslatableContentDriver
+=======
+    public function makeFilamentTranslatableContentDriver(): mixed
+>>>>>>> laraxot/dev
     {
         return null;
     }

@@ -12,7 +12,11 @@
 - actions-pattern.md + actions-standardization.md
 - directory_structure_guide.md + directory-structure-guide.md
 - naming_conventions.md + naming-conventions.md
+<<<<<<< HEAD
 - phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
+=======
+- phpstan_fixes.md + phpstan-fixes-archive-1.md + phpstan-fixes-archive-1.md
+>>>>>>> laraxot/dev
 - migration_guidelines.md + migration-guidelines.md + migration-standards.md
 
 ✅ DOPO (consolidato):
@@ -28,7 +32,11 @@
 #### 2. Documentazione PHPStan Frammentata
 ```
 ❌ PRIMA (16 file separati):
+<<<<<<< HEAD
 phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
+=======
+phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
+>>>>>>> laraxot/dev
 phpstan_level9_guide.md, phpstan_workflow.md, phpstan_usage_guide.md, etc.
 
 ✅ DOPO (struttura consolidata):
@@ -124,9 +132,15 @@ Codice pratico.
 
 ## Collegamenti
 - [Doc correlata](./relativa.md)
+<<<<<<< HEAD
 - [Root docs](../../../docs/correlata.md)
 
 *Ultimo aggiornamento: [data]*
+=======
+*Ultimo aggiornamento: [data]*
+- [Root docs](../../../../docs/correlata.md)
+
+>>>>>>> laraxot/dev
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -196,11 +210,19 @@ DOPO:
 
 - [Template Standardizzato](./template-docs.md)
 - [Guida Refactoring](./refactoring-guide.md)
+<<<<<<< HEAD
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
+=======
+- [Root Ottimizzazioni](../../../../docs/ottimizzazioni-modulari.md)
+>>>>>>> laraxot/dev
 
 ## 🏷️ **Tag Ottimizzazione**
 
 `#DRY` `#KISS` `#refactoring` `#documentation` `#xot-module` `#consolidation`
 
 ---
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
+=======
+*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
+>>>>>>> laraxot/dev

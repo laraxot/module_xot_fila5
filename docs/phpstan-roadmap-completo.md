@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Level 10 - Roadmap Completa per tutti i Moduli
 
 ## Stato Attuale
@@ -139,3 +140,12 @@ Per ogni modulo:
 4. Verificare con PHPStan Level 10
 5. Procedere con modulo User
 6. Continuare con altri moduli in ordine di priorità
+=======
+---
+module: theme
+topic: phpstan-roadmap-completo
+canonical: ../../../Themes/docs/shared-components/phpstan-completo.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-completo.md
+>>>>>>> laraxot/dev

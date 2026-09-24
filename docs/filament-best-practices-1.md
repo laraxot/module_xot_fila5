@@ -17,7 +17,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
+<<<<<<< HEAD
    public function getFormSchema(): array
+=======
+   public static function getFormSchema(): array
+>>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome')->required(),
@@ -420,9 +424,13 @@ class ReportResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [

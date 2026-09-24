@@ -216,6 +216,12 @@ Before committing any SVG icon, verify:
 ---
 
 *Last Updated: 2025-08-27*
+<<<<<<< HEAD
 *SVG Standards Version: 2.0*
 *Based on Heroicons Outline Style*
 
+=======
+*
+*SVG Standards Version: 2.0*
+*Based on Heroicons Outline Style*
+>>>>>>> laraxot/dev

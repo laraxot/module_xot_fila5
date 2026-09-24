@@ -23,7 +23,17 @@ use Modules\Xot\Actions\Factory\GetPropertiesFromMethodsByModelAction;
 use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 use Modules\Xot\Actions\File\FileAction;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Route\IsAdminRouteAction;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Console\Commands\AddStrictTypesDeclarationCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
@@ -77,6 +87,17 @@ use Modules\Xot\Models\XotBaseMorphPivot;
 use Modules\Xot\Models\XotBasePivot;
 use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Providers\FilamentOptimizationServiceProvider;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+use Modules\Xot\Actions\Route\IsAdminRouteAction;
+=======
+<<<<<<< HEAD
+use Modules\Xot\Actions\Route\IsAdminRouteAction;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Modules\Xot\QueryBuilders\BaseQueryBuilder;
 use Modules\Xot\States\XotBaseState;
 use Modules\Xot\Tests\FilamentSchemaCoverage;
@@ -87,7 +108,17 @@ use Modules\Xot\Traits\HasCsrfToken;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
+<<<<<<< HEAD
 use Symfony\Component\Console\Output\OutputInterface;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Output\OutputInterface;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\StreamedResponse;
@@ -535,7 +566,19 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertNotEmpty($resource::getModuleName());
             Assert::assertNotEmpty($resource::getPages());
             Assert::assertNotEmpty($resource::getRelations());
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+            
+=======
+<<<<<<< HEAD
+            
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             try {
                 Assert::assertNotEmpty($resource::getInfolistSchema());
             } catch (\Throwable) {
@@ -974,7 +1017,19 @@ describe('Xot execute coverage floor 50', function (): void {
         $decorator->renderer(static function (\Throwable $e, Request $request): Response {
             return response('handled', 200);
         });
+<<<<<<< HEAD
         $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
+=======
+<<<<<<< HEAD
+        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
+=======
+<<<<<<< HEAD
+        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
+=======
+        $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         $decorator->report(new \RuntimeException('cov'));
         Assert::assertTrue($reported);
         Assert::assertSame(200, $decorator->render(Request::create('/'), new \RuntimeException('r'))->getStatusCode());

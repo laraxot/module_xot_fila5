@@ -19,17 +19,25 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
  * Excel chiama `map()` su ogni riga della collection: Model **o** array
  * (export da `collect([[...]])` / ratings_by_id path). WithMapping non e'
  * ristretto a Model.
  *
  * @implements WithMapping<mixed>
+=======
+ * @implements WithMapping<Model>
+>>>>>>> laraxot/dev
  */
 class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, WithMapping
 {
     use Exportable;
 
+<<<<<<< HEAD
     /** @var SupportCollection<int|string, mixed>|EloquentCollection<int, Model> */
+=======
+    /** @var SupportCollection<int, mixed>|EloquentCollection<int, Model> */
+>>>>>>> laraxot/dev
     public SupportCollection|EloquentCollection $collection;
 
     /** @var array<int, string> */
@@ -37,6 +45,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     public ?string $transKey;
 
+<<<<<<< HEAD
     /**
      * Formato misto: chiave intera => percorso `data_get` (intestazione = percorso,
      * tradotto via `$transKey`); chiave stringa => percorso, valore => intestazione
@@ -49,6 +58,14 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     /**
      * @param  SupportCollection<int|string, mixed>|EloquentCollection<int, Model>  $collection
      * @param  array<int|string, string>  $fields
+=======
+    /** @var array<int, string>|null */
+    public ?array $fields = null;
+
+    /**
+     * @param SupportCollection<int, mixed>|EloquentCollection<int, Model> $collection
+     * @param array<int, string>                                           $fields
+>>>>>>> laraxot/dev
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -64,7 +81,11 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public function getHead(): array
     {
         if (\is_array($this->fields) && ! empty($this->fields)) {
+<<<<<<< HEAD
             return array_values($this->fields);
+=======
+            return $this->fields;
+>>>>>>> laraxot/dev
         }
 
         $head = $this->collection->first();
@@ -78,6 +99,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
      */
     public function headings(): array
     {
+<<<<<<< HEAD
         $fields = $this->fields;
         if ($fields === null || $fields === []) {
             return app(TransArrayAction::class)->execute($this->getHead(), $this->transKey);
@@ -107,6 +129,16 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     /**
      * @return SupportCollection<int|string, mixed>|EloquentCollection<int, Model>
+=======
+        $headings = $this->getHead();
+        $transKey = $this->transKey;
+
+        return app(TransArrayAction::class)->execute($headings, $transKey);
+    }
+
+    /**
+     * @return SupportCollection<int, mixed>|EloquentCollection<int, Model>
+>>>>>>> laraxot/dev
      */
     public function collection(): SupportCollection|EloquentCollection
     {
@@ -118,22 +150,52 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
      */
     public function map(mixed $row): array
     {
+<<<<<<< HEAD
         if ($this->fields === null || empty($this->fields)) {
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
             return array_values(Arr::map($res, fn (mixed $value): string => self::castCell($value)));
+=======
+        if (null === $this->fields || empty($this->fields)) {
+            Assert::isInstanceOf($row, Model::class);
+            $res = app(SafeArrayByModelCastAction::class)->execute($row);
+
+            return array_values(Arr::map($res, function ($value, $_key): string {
+                if ($value instanceof \BackedEnum) {
+                    if (method_exists($value, 'getLabel')) {
+                        return SafeStringCastAction::cast($value->getLabel());
+                    }
+
+                    return SafeStringCastAction::cast($value->value);
+                }
+
+                return SafeStringCastAction::cast($value);
+            }));
+>>>>>>> laraxot/dev
         }
 
         $data = [];
 
+<<<<<<< HEAD
         foreach ($this->fields as $key => $field) {
             $path = \is_string($key) ? $key : $field;
             $data[] = self::castCell(data_get($row, $path));
+=======
+        foreach ($this->fields as $field) {
+            $value = data_get($row, $field);
+            if (\is_object($value)) {
+                if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
+                    $value = $value->getLabel();
+                }
+            }
+            $data[] = SafeStringCastAction::cast($value);
+>>>>>>> laraxot/dev
         }
 
         return $data;
     }
+<<<<<<< HEAD
 
     /**
      * Stessa cella per CollectionExport e XotBaseExporter (export_xls = export_xlsx).
@@ -154,4 +216,6 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
         return SafeStringCastAction::cast($value);
     }
+=======
+>>>>>>> laraxot/dev
 }

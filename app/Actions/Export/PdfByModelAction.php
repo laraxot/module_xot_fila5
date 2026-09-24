@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< HEAD
+=======
+// use Modules\Xot\Services\ArrayService;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+<<<<<<< HEAD
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Modules\Xot\Actions\Trans\GetTransKeyByModelClassAction;
+=======
+>>>>>>> laraxot/dev
 
 class PdfByModelAction
 {
@@ -21,6 +28,7 @@ class PdfByModelAction
         string $disk = 'cache',
         string $out = 'download',
     ): string|BinaryFileResponse {
+<<<<<<< HEAD
         /**
          * @var non-falsy-string&view-string
          */
@@ -31,6 +39,22 @@ class PdfByModelAction
             'view' => $view_name,
             'row' => $model,
             'transKey' => app(GetTransKeyByModelClassAction::class)->execute($model::class,'.fields'),
+=======
+        $model_class = $model::class;
+        $model_name = class_basename($model_class);
+        $model_name_low = mb_strtolower($model_name);
+        $module = Str::between($model_class, 'Modules\\', '\Models');
+        $module_low = mb_strtolower($module);
+        /**
+         * @var non-falsy-string&view-string
+         */
+        $view_name = $module_low.'::'.Str::kebab($model_name).'.show.pdf';
+
+        $view_params = [
+            'view' => $view_name,
+            'row' => $model,
+            'transKey' => $module_low.'::'.Str::plural($model_name_low).'.fields',
+>>>>>>> laraxot/dev
         ];
 
         $view = view($view_name, $view_params);

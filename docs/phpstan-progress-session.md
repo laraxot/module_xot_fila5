@@ -125,3 +125,7 @@ return $result;
 ---
 
 **Ultimo aggiornamento**: 2026-01-09 - Sessione in corso
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: [DATE] - Sessione in corso
+>>>>>>> laraxot/dev

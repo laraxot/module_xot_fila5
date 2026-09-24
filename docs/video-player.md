@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 'video_player'
 module: Xot
@@ -14,6 +15,8 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/video_player.txt -->
 
+=======
+>>>>>>> laraxot/dev
 1. Plyr.io:
 Plyr is quite simple, customizable and highly accessible HTML5 video player that also extends its support to Video and YouTube media players. It is popular enough among professionals and beginners due to its lightweight design that allows smooth processing even for larger video files. Plyr can make things simple with collection of effective elements to get jobs done correctly.
 
@@ -112,4 +115,8 @@ https://gist.github.com/jcamp/24d9d4882d81a83db598dac281056960
 https://shotstack.io/product/sdk/php/
 ---------------------------------------------------------------------------------------------------------------
 https://github.com/shotstack/php-demos  a pagamento ..
+<<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------------------
+=======
+---------------------------------------------------------------------------------------------------------------
+>>>>>>> laraxot/dev

@@ -359,6 +359,10 @@ nano Modules/{ModuleName}/docs/{pattern-name}.md
 
 - [Doc correlata 1](./related-doc.md)
 - [Doc correlata 2](../../OtherModule/docs/related.md)
+<<<<<<< HEAD
+=======
+- [Doc correlata 2](../../othermodule/docs/related.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -403,6 +407,10 @@ CHANGELOG.md
 # ❌ SBAGLIATO
 Business-Logic-Analysis.md           # Maiuscole
 phpstan-fixes-2025-12-02.md         # Date
+<<<<<<< HEAD
+=======
+phpstan-fixes-[DATE].md         # Date
+>>>>>>> laraxot/dev
 GUIDE.md                             # Maiuscolo (non README/CHANGELOG)
 ```
 
@@ -707,4 +715,8 @@ Mai tornare indietro. Sempre avanti. Fix forward.
 **Approccio**: Sistematico e Completo
 **Risultato Garantito**: Eccellenza
 
+<<<<<<< HEAD
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
+=======
+🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
+>>>>>>> laraxot/dev
