@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_Jl6sVa
-=======
-<<<<<<< .merge_file_urthBT
-=======
->>>>>>> .merge_file_1RMvWq
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Jl6sVa
-=======
->>>>>>> .merge_file_hPuhg1
->>>>>>> .merge_file_1RMvWq
 ---
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
@@ -23,39 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< .merge_file_Jl6sVa
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_urthBT
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_1RMvWq
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_hPuhg1
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Jl6sVa
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_urthBT
-=======
->>>>>>> .merge_file_1RMvWq
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Jl6sVa
-=======
->>>>>>> .merge_file_hPuhg1
->>>>>>> .merge_file_1RMvWq
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary
@@ -394,7 +343,6 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 *Errors Fixed: 861*
 *Progress: 17.8% complete*
 
-
 ---
 ## Merged from phpstan-progress_2.md
 
@@ -405,8 +353,6 @@ canonical: ../../../Themes/docs/shared-components/phpstan-progress-2-1.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-2-1.md
-
-
 
 ---
 ## Variant 10

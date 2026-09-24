@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_GO5nvR
-=======
-<<<<<<< .merge_file_3jGV4j
-=======
->>>>>>> .merge_file_yBdGc2
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_GO5nvR
-=======
->>>>>>> .merge_file_gIxsSn
->>>>>>> .merge_file_yBdGc2
 ---
 name: phpstan-analysis-report-2025-11-18
 description: " Executive Summary"
@@ -23,39 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< .merge_file_GO5nvR
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_3jGV4j
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_yBdGc2
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_gIxsSn
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_GO5nvR
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3jGV4j
-=======
->>>>>>> .merge_file_yBdGc2
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_GO5nvR
-=======
->>>>>>> .merge_file_gIxsSn
->>>>>>> .merge_file_yBdGc2
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -1107,7 +1056,6 @@ class MyModel extends BaseModel
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety
-
 
 ---
 ## Variant 3
