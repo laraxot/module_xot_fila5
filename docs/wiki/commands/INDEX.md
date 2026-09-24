@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_umaN9x
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_MWvGJ8
-=======
->>>>>>> da9ae01a0 (.)
 ---
 title: "Index"
 type: reference
@@ -14,17 +6,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< .merge_file_umaN9x
-=======
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MWvGJ8
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Xot Module - commands Index
 
 ## Purpose

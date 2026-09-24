@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_OqYqSX
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_AsJNuL
----
-title: "Xotbaseresource Violations Fixes"
-type: concept
-status: deprecated
-module: "Xot"
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "deprecated xotbaseresource-violations-fixes"
-related:
-  - "./xotbaseresource-violations-fixes.md"
----
-# Xotbaseresource Violations Fixes
-
-> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
-
-Vedi il file canonico: [xotbaseresource-violations-fixes.md](./xotbaseresource-violations-fixes.md)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vDjUI5
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Correzioni Violazioni XotBaseResource - Gennaio 2026
 
 ## Problema Identificato
@@ -179,17 +148,3 @@ Tutte le modifiche sono state verificate con successo utilizzando:
 **Data Intervento**: Gennaio 2026  
 **Conforme a**: DRY, KISS, Filosofia Laraxot  
 **PHPStan Level**: 10 ✅
-<<<<<<< HEAD
-<<<<<<< .merge_file_OqYqSX
-<<<<<<< HEAD
->>>>>>> .merge_file_v8Gs3R
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vDjUI5
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_v8Gs3R
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

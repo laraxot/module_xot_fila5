@@ -98,39 +98,10 @@ abstract class XotBaseResource extends Resource
     use HasXotTable;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_URRxXT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_EkChVU
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_URRxXT
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_EkChVU
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return static::getFormSchemaImplementation();
     }
@@ -168,46 +139,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 - Registrazione automatica di componenti
 - Gestione centralizzata degli asset
 
-<<<<<<< .merge_file_URRxXT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-## 📦 **Gestione Dipendenze (composer.json)**
-
-Il file `composer.json` del modulo Xot è fondamentale per definire le sue dipendenze e configurazioni. Segue i principi di gestione delle dipendenze stabiliti per l'intero ecosistema Laraxot.
-
-### **1. Dipendenze Obbligatorie (`require`)**
-- **Vincoli di Versione**: Utilizzare sempre operatori di versione specifici (es. `^1.0` o `~1.2`) per garantire stabilità e prevedibilità negli aggiornamenti. Evitare l'uso di `"*"` per le dipendenze in produzione.
-- **Dipendenze Core**: Il modulo Xot elenca le dipendenze Laravel e Filament necessarie per il funzionamento base dell'intero framework.
-
-### **2. Dipendenze di Sviluppo (`require-dev`)**
-- Includono strumenti per testing (Pest), analisi statica (PHPStan) e formattazione del codice (PHP-CS-Fixer), essenziali per mantenere l'alta qualità del codice base.
-
-### **3. Repository di Percorso (`repositories`)**
-- **Monorepo**: Per facilitare lo sviluppo locale all'interno del monorepo Laraxot, il modulo Xot può definire `path` repositories che puntano ad altri moduli locali (es. `./../AnotherModule`). Questo permette a Composer di risolvere le dipendenze dei moduli localmente.
-- **Priorità**: Questi repository locali hanno la precedenza sui pacchetti Packagist, consentendo di testare le modifiche ai moduli dipendenti prima del rilascio.
-
-### **4. Script e Configurazione**
-- **Script di Qualità**: Include script standardizzati per `analyse`, `test`, `test-coverage` e `format`, promuovendo l'automazione del controllo qualità.
-- **Stabilità**: `minimum-stability: "dev"` e `prefer-stable: true` bilanciano la necessità di utilizzare versioni in sviluppo con la preferenza per versioni stabili.
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_EkChVU
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## 🔄 **Flusso di Esecuzione**
 
 ### **1. Bootstrap Applicazione**
@@ -461,52 +392,9 @@ test('all models extend base model', function () {
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
-<<<<<<< .merge_file_URRxXT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_EkChVU
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
 
-<<<<<<< .merge_file_URRxXT
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> .merge_file_EkChVU
-=======
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -153,30 +153,7 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 
 - [Documentazione Componenti](../componenti_personalizzati.md)
 - [Best Practices Filament](../filament-best-practices.mdc)
-<<<<<<< .merge_file_yGPotp
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README Principale](README.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [README Principale](README.md)
-=======
-- [README Principale](../readme.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [README Principale](../readme.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [README Principale](README.md)
->>>>>>> .merge_file_HSG2K9
-=======
-=======
-- [README Principale](../readme.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Note di Sviluppo
 

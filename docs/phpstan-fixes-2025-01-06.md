@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_sTnKjC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> .merge_file_TFI1nc
 ---
 name: phpstan-fixes-2025-01-06
 description: " Errori Risolti"
@@ -26,33 +5,6 @@ metadata:
   type: documentation
 ---
 
-<<<<<<< .merge_file_sTnKjC
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_TFI1nc
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_sTnKjC
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_TFI1nc
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_sTnKjC
-=======
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_TFI1nc
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

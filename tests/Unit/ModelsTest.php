@@ -40,26 +40,8 @@ it('can create a test tenant', function () {
 it('can resolve a sushi module row', function () {
     $module = Module::query()->first();
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_rC2sJp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_y2CM7n
     if ($module === null) {
         Assert::markTestSkipped('No nwidart modules registered in test runtime.');
-=======
-    if (null === $module) {
-        $this->markTestSkipped('No nwidart modules registered in test runtime.');
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    if (null === $module) {
-<<<<<<< HEAD
-        Assert::markTestSkipped('No nwidart modules registered in test runtime.');
-=======
-        $this->markTestSkipped('No nwidart modules registered in test runtime.');
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     Assert::assertInstanceOf(Module::class, $module);

@@ -1648,18 +1648,10 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public static function getFormSchema(): array
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name')->required(),
@@ -1978,8 +1970,4 @@ $model->update($filtered);
 **Riferimenti**: 
 - `laravel/Modules/Xot/docs/filament-extension-rules-complete.md` - Regole complete Filament
 - `laravel/Modules/Xot/docs/phpstan-code-quality-guide.md` - Guida completa PHPStan
-<<<<<<< HEAD
 - `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
-=======
-- `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
->>>>>>> da9ae01a0 (.)

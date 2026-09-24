@@ -233,39 +233,10 @@ abstract class XotBaseResource extends Resource
      * Get form schema con validation automatica
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_kxuD88
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uCD86k
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_kxuD88
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_uCD86k
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             // Schema base automatico
@@ -302,30 +273,7 @@ abstract class XotBaseResource extends Resource
 ```php
 // Ogni modulo DEVE avere il proprio BaseModel
 abstract class BaseModel extends XotBaseModel {
-<<<<<<< .merge_file_kxuD88
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected $connection = 'quaeris';  // Connection specifica
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected $connection = 'quaeris';  // Connection specifica
-=======
-    protected $connection = 'healthcare_app';  // Connection specifica
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    protected $connection = 'healthcare_app';  // Connection specifica
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    protected $connection = 'quaeris';  // Connection specifica
->>>>>>> .merge_file_uCD86k
-=======
-=======
-    protected $connection = 'quaeris';  // Connection specifica
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
     // Solo funzionalità SPECIFICHE del modulo
     // MAI duplicare ciò che XotBaseModel già fornisce
@@ -559,29 +507,4 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 
 *Documentazione Xot v1.0*
 *Creato: 2025-11-17*
-<<<<<<< .merge_file_kxuD88
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Autore: AI Assistant con analisi approfondita*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Autore: AI Assistant con analisi approfondita*
-=======
-*Creato: [DATE]*
-*Autore: AI Assistant con analisi approfondita*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Creato: [DATE]*
-*Autore: AI Assistant con analisi approfondita*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Autore: AI Assistant con analisi approfondita*
->>>>>>> .merge_file_uCD86k
-=======
-=======
-*Autore: AI Assistant con analisi approfondita*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

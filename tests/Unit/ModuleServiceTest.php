@@ -1,24 +1,12 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Services\ModuleService;
-=======
-
-use Modules\Xot\Actions\ModuleAction;
->>>>>>> 3792da0d (Check & fix styling)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
 function xotModuleServiceTestInstance(): ModuleService
 {
     return (new ModuleService)->setName('TestModule');
@@ -130,7 +118,7 @@ describe('ModuleService', function () {
         $reflection = new ReflectionClass(xotModuleServiceTestInstance());
         $methods = $reflection->getMethods();
 
-        $publicMethods = array_filter($methods, fn ($method) => $method->isPublic());
+        $publicMethods = array_filter($methods, fn (ReflectionMethod $method): bool => $method->isPublic());
 
         Assert::assertGreaterThan(0, count($publicMethods));
     });
@@ -154,41 +142,6 @@ describe('ModuleService', function () {
 
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
-<<<<<<< HEAD
 
-<<<<<<< .merge_file_cNYoYN
-=======
->>>>>>> laraxot/dev
-=======
-describe('ModuleAction', function (): void {
-    $service = new ModuleAction();
-
-    it('can be instantiated', function () use ($service): void {
-        Assert::assertInstanceOf(ModuleAction::class, $service);
-=======
-=======
-describe('ModuleService', function (): void {
-    $service = new ModuleService();
-
-    it('can be instantiated', function () use ($service): void {
-        Assert::assertInstanceOf(ModuleService::class, $service);
->>>>>>> da9ae01a0 (.)
-    });
-
-    it('has getModels method', function () use ($service): void {
-        $result = $service->getModels();
-        Assert::assertContains('string', array_map('gettype', $result ?: ['string']));
-    });
-
-    it('returns array from getModels method', function () use ($service): void {
-        $result = $service->getModels();
-        Assert::assertContains('string', array_map('gettype', $result ?: ['string']));
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_a7uSqn
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     });
 });

@@ -181,10 +181,3 @@ done
 
 **Mantenuto da**: Claude Sonnet 4.5
 **Ultimo aggiornamento**: 2025-12-12
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)

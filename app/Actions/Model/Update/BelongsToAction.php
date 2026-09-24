@@ -32,27 +32,9 @@ class BelongsToAction
          * }
          */
 
-<<<<<<< .merge_file_v2V2Oy
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
             $related_id = reset($relationDTO->data);
             if ($related_id === null) {
-=======
-        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
-            $related_id = reset($relationDTO->data);
-            if (null === $related_id) {
->>>>>>> laraxot/dev
-=======
-        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
-            $related_id = reset($relationDTO->data);
-            if (null === $related_id) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
-            $related_id = reset($relationDTO->data);
-            if ($related_id === null) {
->>>>>>> .merge_file_L8sFNC
                 return;
             }
 
@@ -74,19 +56,7 @@ class BelongsToAction
         if (Arr::isAssoc($relationDTO->data)) {
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
-<<<<<<< .merge_file_v2V2Oy
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($sub === null) {
-=======
-            if (null === $sub) {
->>>>>>> laraxot/dev
-=======
-            if (null === $sub) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($sub === null) {
->>>>>>> .merge_file_L8sFNC
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 

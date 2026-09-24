@@ -213,30 +213,7 @@ Prima di committare la documentazione:
 Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collegamenti relativi:
 
 ```markdown
-<<<<<<< .merge_file_xHM4XB
-<<<<<<< HEAD
-<<<<<<< HEAD
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
-=======
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/docs/readme.md).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/docs/readme.md).
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
->>>>>>> .merge_file_hOr4oU
-=======
-=======
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 2. Documentazione Centralizzata
@@ -244,30 +221,7 @@ Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/d
 Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo Xot e poi referenziati dagli altri moduli:
 
 ```markdown
-<<<<<<< .merge_file_xHM4XB
-<<<<<<< HEAD
-<<<<<<< HEAD
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
-=======
-Per le best practices generali sul framework, consultare la [guida principale](../xot/docs/best-practices.md).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Per le best practices generali sul framework, consultare la [guida principale](../xot/docs/best-practices.md).
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
->>>>>>> .merge_file_hOr4oU
-=======
-=======
-Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ## Esempi di Eccellenza
@@ -324,27 +278,4 @@ Per implementare queste linee guida:
 
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Documentazione Laravel](https://laravel.com/docs)
-<<<<<<< .merge_file_xHM4XB
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> .merge_file_hOr4oU
-=======
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

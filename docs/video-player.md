@@ -1,22 +1,3 @@
-<<<<<<< .merge_file_565lVC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_5ACPjK
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_NNqFnH
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_LDL59E
 ---
 title: 'video_player'
 module: Xot
@@ -33,26 +14,6 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/video_player.txt -->
 
-<<<<<<< .merge_file_565lVC
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_5ACPjK
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_NNqFnH
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_LDL59E
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 1. Plyr.io:
 Plyr is quite simple, customizable and highly accessible HTML5 video player that also extends its support to Video and YouTube media players. It is popular enough among professionals and beginners due to its lightweight design that allows smooth processing even for larger video files. Plyr can make things simple with collection of effective elements to get jobs done correctly.
 
@@ -142,43 +103,7 @@ https://gist.github.com/jcamp/24d9d4882d81a83db598dac281056960
 ---------------------------------------------------------------------------------------------------------------
 https://www.codester.com/items/11695/vdrive-unlimited-video-convertor-tools-php
 ---------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
-<<<<<<< .merge_file_565lVC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_5ACPjK
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
-=======
-https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> laraxot/dev
-=======
-https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> .merge_file_NNqFnH
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> 3792da0d (Check & fix styling)
-=======
-https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> .merge_file_LDL59E
-=======
-=======
-https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------------------------------------------------------
 https://spark.adobe.com/it-IT/sp/design/video/urn:aaid:sc:EU:d543a756-deaf-4b23-b79b-940d30c06ade
 ---------------------------------------------------------------------------------------------------------------
@@ -187,35 +112,4 @@ https://gist.github.com/jcamp/24d9d4882d81a83db598dac281056960
 https://shotstack.io/product/sdk/php/
 ---------------------------------------------------------------------------------------------------------------
 https://github.com/shotstack/php-demos  a pagamento ..
-<<<<<<< .merge_file_565lVC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
 ---------------------------------------------------------------------------------------------------------------
-=======
----------------------------------------------------------------------------------------------------------------
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
----------------------------------------------------------------------------------------------------------------
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
----------------------------------------------------------------------------------------------------------------
->>>>>>> 3792da0d (Check & fix styling)
-=======
----------------------------------------------------------------------------------------------------------------
->>>>>>> .merge_file_LDL59E
-=======
-=======
----------------------------------------------------------------------------------------------------------------
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

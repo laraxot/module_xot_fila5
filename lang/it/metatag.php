@@ -2,35 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/metatag.php
-return [
-    // Laraxot — see module docs/wiki for domain contract.
-    // Laraxot — see module docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
-    // Laraxot module file — see docs/wiki for domain contract.
->>>>>>> 930f8146 (Check & fix styling)
     'resources' => 'Risorse',
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
@@ -40,16 +12,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
         'label' => 'metatag.navigation',
         'icon' => 'metatag.navigation',
         'sort' => 95,
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
     'fields' => [
         'name' => [
@@ -259,42 +224,21 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'key',
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         ],
         'color' => [
             'label' => 'color',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'color',
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         ],
         'hex' => [
             'label' => 'hex',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'hex',
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         ],
         'timezone' => [
             'label' => 'Fuso orario',
@@ -383,7 +327,6 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-<<<<<<< HEAD
         'save' => [
             'label' => 'save',
             'icon' => 'save',
@@ -393,13 +336,4 @@ return [
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',
     'title' => 'metatag',
-=======
-    ],
-    'label' => 'Metatag',
-    'plural_label' => 'Metatag (Plurale)',
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ];

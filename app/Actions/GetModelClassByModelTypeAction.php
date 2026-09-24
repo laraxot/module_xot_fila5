@@ -1,30 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
-<<<<<<< .merge_file_iEd7RU
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_NcPdX8
 namespace Modules\Xot\Actions;
 
 use Spatie\QueueableAction\QueueableAction;

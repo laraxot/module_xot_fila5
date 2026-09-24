@@ -87,30 +87,7 @@ Modules/{ModuleName}/
 
 ### 1. **Autoloader Confusion**
 - PHP autoloader cannot determine which file to use
-<<<<<<< .merge_file_2xpiPB
-<<<<<<< HEAD
-<<<<<<< HEAD
 - "First found" approach leads to unpredictable behavior
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- "First found" approach leads to unpredictable behavior
-=======
-- "First found" approach leads to un<nome progetto>able behavior
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- "First found" approach leads to un<nome progetto>able behavior
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- "First found" approach leads to unpredictable behavior
->>>>>>> .merge_file_sJhMD7
-=======
-=======
-- "First found" approach leads to unpredictable behavior
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Different environments may load different files
 
 ### 2. **Maintenance Nightmare**
@@ -190,32 +167,7 @@ Modules/
 │   │   ├── migrations/
 │   │   └── seeders/
 │   └── app/
-<<<<<<< .merge_file_2xpiPB
-<<<<<<< HEAD
-<<<<<<< HEAD
 └── Quaeris/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-└── Quaeris/
-=======
-└── healthcare_app/
-└── ExternalProject/
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-└── healthcare_app/
-└── ExternalProject/
->>>>>>> 3792da0d (Check & fix styling)
-=======
-└── Quaeris/
->>>>>>> .merge_file_sJhMD7
-=======
-=======
-└── Quaeris/
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ├── database/
     │   ├── factories/
     │   ├── migrations/
@@ -251,27 +203,4 @@ find Modules -name "*.php" | grep -E "(factories|seeders)" | sort
 
 ---
 
-<<<<<<< .merge_file_2xpiPB
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
-=======
-**Philosophy Summary**: In Laraxot, consistency and <nome progetto>ability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, <nome progetto>able behavior.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Philosophy Summary**: In Laraxot, consistency and <nome progetto>ability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, <nome progetto>able behavior.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
->>>>>>> .merge_file_sJhMD7
-=======
-=======
-**Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

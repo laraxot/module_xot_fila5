@@ -4,78 +4,17 @@
 
 ### File Eliminati (Duplicati con Date)
 
-<<<<<<< .merge_file_aXNR8W
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ZTCUW2
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
 
 2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-2025-01-27.md`**
-<<<<<<< HEAD
-<<<<<<< .merge_file_aXNR8W
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-1. ✅ **`Modules/UI/docs/bugfix-icons-missing.md`**
-   - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
-   - **Stato**: Eliminato con successo
-
-2. ✅ **`Modules/UI/docs/bugfix-table-layout-action.md`**
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ZTCUW2
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    - **Motivo**: Duplicato identico di `bugfix-table-layout-action.md`
    - **Stato**: Eliminato con successo
 
 ### File Rinominati (Rimozione Date)
 
-<<<<<<< .merge_file_aXNR8W
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
-=======
-1. ✅ **`translation-refactor-complete-summary.md` → `translation-refactor-complete-summary.md`**
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-1. ✅ **`translation-refactor-complete-summary.md` → `translation-refactor-complete-summary.md`**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
->>>>>>> .merge_file_ZTCUW2
-=======
-=======
-1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -126,36 +65,8 @@
 - Altri file con pattern `bugfix-*-2025-*.md`
 
 ### Modulo Lang
-<<<<<<< .merge_file_aXNR8W
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction-2025.md` (verificare duplicati)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction-2025.md` (verificare duplicati)
-=======
-- `riepilogo-correzioni-traduzioni.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction.md` (verificare duplicati)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- `riepilogo-correzioni-traduzioni.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction.md` (verificare duplicati)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction-2025.md` (verificare duplicati)
->>>>>>> .merge_file_ZTCUW2
-=======
-=======
-- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction-2025.md` (verificare duplicati)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### Modulo Xot
 - File in cartella `archive/` (valutare se mantenere date per storico)
@@ -191,67 +102,12 @@
 
 ## Riferimenti
 
-<<<<<<< .merge_file_aXNR8W
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
-- [Regole Naming File](../Xot/docs/file-naming-rules.md)
-- [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
-=======
-- [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
-- [Regole Naming File](../xot/docs/file-naming-rules.md)
-- [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
-- [Regole Naming File](../xot/docs/file-naming-rules.md)
-- [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-- [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
-- [Regole Naming File](../Xot/docs/file-naming-rules.md)
-- [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_ZTCUW2
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
 **Data**: Gennaio 2025
 **Stato**: In corso
-<<<<<<< .merge_file_aXNR8W
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Prossima Revisione**: Dopo normalizzazione batch successivo
-=======
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> .merge_file_ZTCUW2
-=======
-=======
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

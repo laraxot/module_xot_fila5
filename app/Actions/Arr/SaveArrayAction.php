@@ -11,52 +11,7 @@ class SaveArrayAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_MnU5vH
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_k0xji4
->>>>>>> da9ae01a0 (.)
-     *
-     * @param array<int|string, mixed> $data
-     *                                       =======
-     *                                       <<<<<<< .merge_file_k0xji4.
-     * @param array<int|string, mixed> $data
-     *                                       =======
-     *                                       <<<<<<< HEAD
-     *                                       <<<<<<< .merge_file_Ksm01z.
-     * @param array<int|string, mixed> $data
-     *                                       =======
-     *                                       <<<<<<< .merge_file_Uwvfnx.
-     * @param array<int|string, mixed> $data
-     *                                       =======
-     *                                       <<<<<<< HEAD
-     * @param array<int|string, mixed> $data
-     *                                       =======
-     * @param array<string, mixed>     $data
-     *                                       >>>>>>> laraxot/dev
-     *                                       >>>>>>> .merge_file_A27cnh
-     *                                       >>>>>>> .merge_file_NzQM5y
-     *                                       =======
-     * @param array<int|string, mixed> $data
-     *                                       >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-<<<<<<< HEAD
-     *                                       >>>>>>> .merge_file_lb87ol
-     *                                       >>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  array<int|string, mixed>  $data
->>>>>>> .merge_file_nCBThA
-=======
->>>>>>> .merge_file_lb87ol
-=======
-     * @param array<int|string, mixed> $data
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool
     {

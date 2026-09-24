@@ -78,7 +78,6 @@ Prima di ogni commit che coinvolge `XotBaseWidget`, eseguire questo controllo:
 
 ```bash
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
-<<<<<<< HEAD
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
@@ -127,8 +126,6 @@ grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.ph
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
-=======
->>>>>>> 930f8146 (Check & fix styling)
 ```
 
 Se il comando non restituisce risultati, LA PROPRIETÀ È STATA RIMOSSA e deve essere ripristinata immediatamente.
@@ -145,7 +142,6 @@ Questa struttura deriva dall'architettura Livewire+Filament in cui:
 
 - [Livewire Properties Documentation](https://livewire.laravel.com/docs/properties)
 - [Filament Forms Documentation](https://filamentphp.com/docs/3.x/forms/installation)
-<<<<<<< HEAD
 - [RegistrationWidget Example](../../user/docs/filament/widgets/registration-widget.md)
 - [Livewire Properties Documentation](https://livewire.laravel.com/project_docs/properties)
 - [Livewire Properties Documentation](https://livewire.laravel.com/project_docs/properties)
@@ -153,7 +149,3 @@ Questa struttura deriva dall'architettura Livewire+Filament in cui:
 - [Filament Forms Documentation](https://filamentphp.com/project_docs/3.x/forms/installation)
 - [RegistrationWidget Example](../../user/project_docs/filament/widgets/registration-widget.md)
 - [RegistrationWidget Example](../../user/project_docs/filament/widgets/registration-widget.md)
-=======
-- [RegistrationWidget Example](../../User/docs/filament/widgets/registration-widget.md)
-- [RegistrationWidget Example](../../user/docs/filament/widgets/registration-widget.md)
->>>>>>> 930f8146 (Check & fix styling)

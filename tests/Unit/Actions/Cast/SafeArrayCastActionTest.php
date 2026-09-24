@@ -1,33 +1,15 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Tests\TestCase;
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Collection;
-use Modules\Xot\Actions\Cast\SafeArrayCastAction;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\fopen;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 it('casts various values to array correctly', function (): void {
     $action = app(SafeArrayCastAction::class);
 
@@ -38,32 +20,12 @@ it('casts various values to array correctly', function (): void {
     // Collection
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     // stdClass
-<<<<<<< .merge_file_elmU7k
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_2SQ0Zo
     $obj = new stdClass;
     $obj->c = 3;
     Assert::assertSame(['c' => 3], $action->execute($obj));
     // Object with toArray
     $objToArray = new class
     {
-<<<<<<< .merge_file_elmU7k
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-    $obj = new stdClass();
-    $obj->c = 3;
-    Assert::assertSame(['c' => 3], $action->execute($obj));
-    // Object with toArray
-    $objToArray = new class {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_2SQ0Zo
         /** @return array<string, int> */
         public function toArray(): array
         {
@@ -72,21 +34,8 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['d' => 4], $action->execute($objToArray));
     // Object with __toArray
-<<<<<<< .merge_file_elmU7k
-<<<<<<< HEAD
-<<<<<<< HEAD
     $objUnderscoreToArray = new class
     {
-=======
-    $objUnderscoreToArray = new class {
->>>>>>> laraxot/dev
-=======
-    $objUnderscoreToArray = new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $objUnderscoreToArray = new class
-    {
->>>>>>> .merge_file_2SQ0Zo
         /** @return array<string, int> */
         public function __toArray(): array
         {
@@ -95,21 +44,8 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['e' => 5], $action->execute($objUnderscoreToArray));
     // Regular object (public properties)
-<<<<<<< .merge_file_elmU7k
-<<<<<<< HEAD
-<<<<<<< HEAD
     $regObj = new class
     {
-=======
-    $regObj = new class {
->>>>>>> laraxot/dev
-=======
-    $regObj = new class {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $regObj = new class
-    {
->>>>>>> .merge_file_2SQ0Zo
         public int $f = 6;
     };
     Assert::assertSame(['f' => 6], $action->execute($regObj));
@@ -151,19 +87,7 @@ it('checks if value can be cast', function (): void {
     Assert::assertTrue($action->canCast([]));
     Assert::assertTrue($action->canCast(null));
     Assert::assertTrue($action->canCast('str'));
-<<<<<<< .merge_file_elmU7k
-<<<<<<< HEAD
-<<<<<<< HEAD
     Assert::assertTrue($action->canCast(new stdClass));
-=======
-    Assert::assertTrue($action->canCast(new stdClass()));
->>>>>>> laraxot/dev
-=======
-    Assert::assertTrue($action->canCast(new stdClass()));
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    Assert::assertTrue($action->canCast(new stdClass));
->>>>>>> .merge_file_2SQ0Zo
 });
 
 it('uses static cast method correctly', function (): void {

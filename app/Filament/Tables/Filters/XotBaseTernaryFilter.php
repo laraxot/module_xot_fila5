@@ -4,128 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Tables\Filters;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_eze6TV
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_zj90Sv
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_7rPOI3
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_zj90Sv
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
-<<<<<<< .merge_file_eze6TV
-<<<<<<< HEAD
-<<<<<<< HEAD
- * Ternary 
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
- * Ternary sì/no/tutti con ToggleButtons raggruppati (non Select full-width).
- *
- * Filament TernaryFilter estende SelectFilter: semanticamente ok, UI pesante per 3 stati.
- * Qui si sostituisce il field con ToggleButtons grouped; le query boolean del parent restano.
- *
- * Deselezionare = stato blank («tutti»), come il placeholder del Select precedente.
-<<<<<<< HEAD
-=======
-=======
- * Ternary 
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
-
-/**
- * Ternary sì/no/tutti.
- *
- * La variante con ToggleButtons raggruppati (al posto del Select full-width del parent)
- * è al momento disattivata: vedi il blocco commentato in setUp(). Le query boolean del
- * parent restano invariate.
->>>>>>> .merge_file_UIWvtc
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * Ternary 
->>>>>>> .merge_file_7rPOI3
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
+ * Ternary
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< HEAD
-<<<<<<< .merge_file_eze6TV
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_zj90Sv
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
         /*
         $this->schema(function (): array {
             return [
                 ToggleButtons::make('value')
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_zj90Sv
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-=======
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> .merge_file_7rPOI3
-        /*
-        $this->schema(function (): array {
-            return [
-                ToggleButtons::make('value')
-<<<<<<< .merge_file_eze6TV
-<<<<<<< HEAD
-=======
-        /*
-        $this->schema(function (): array {
-            return [
-                \Filament\Forms\Components\ToggleButtons::make('value')
->>>>>>> .merge_file_UIWvtc
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_7rPOI3
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -136,54 +30,9 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         1 => 'success',
                         0 => 'danger',
                     ])
-<<<<<<< HEAD
-<<<<<<< .merge_file_eze6TV
-<<<<<<< HEAD
-<<<<<<< HEAD
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
         */
-=======
-<<<<<<< .merge_file_zj90Sv
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_zj90Sv
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-                    ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
-            ];
-        });
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        */
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-                    ->stateCast(app(\Filament\Schemas\Components\StateCasts\BooleanStateCast::class, ['isStoredAsInt' => true])),
-            ];
-        });
-        */
->>>>>>> .merge_file_UIWvtc
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                    ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
-            ];
-        });
-        */
->>>>>>> .merge_file_7rPOI3
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 }

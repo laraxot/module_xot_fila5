@@ -187,27 +187,4 @@ Aggiungere al workflow GitHub Actions:
 
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Modulo**: Xot
-<<<<<<< .merge_file_qOEO9I
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Categoria**: Regole di Codice
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Categoria**: Regole di Codice
-=======
-**Categoria**: Regole di Codice
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Categoria**: Regole di Codice
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Categoria**: Regole di Codice
->>>>>>> .merge_file_AqndDy
-=======
-=======
-**Categoria**: Regole di Codice
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

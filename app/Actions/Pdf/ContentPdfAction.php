@@ -23,11 +23,6 @@ class ContentPdfAction
     /**
      * Genera contenuto PDF dall'HTML fornito.
      *
-<<<<<<< .merge_file_7mC5xs
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_jq1Wwq
      * @param  string|null  $html  Contenuto HTML da convertire
      * @param  string|null  $view  Nome della vista Blade da renderizzare
      * @param  array<string, mixed>|null  $data  Dati da passare alla vista
@@ -35,24 +30,6 @@ class ContentPdfAction
      * @return string Contenuto binario del PDF
      *
      * @throws \Exception Se la vista non esiste
-<<<<<<< .merge_file_7mC5xs
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param string|null               $html      Contenuto HTML da convertire
-     * @param string|null               $view      Nome della vista Blade da renderizzare
-     * @param array<string, mixed>|null $data      Dati da passare alla vista
-     * @param string                    $_filename Nome del file PDF (per riferimento, attualmente non utilizzato)
-     *
-     * @throws \Exception Se la vista non esiste
-     *
-     * @return string Contenuto binario del PDF
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_jq1Wwq
      */
     public function execute(
         ?string $html = null,
@@ -61,19 +38,7 @@ class ContentPdfAction
         string $_filename = 'my_doc.pdf',
     ): string {
         // Generate HTML content if view is provided
-<<<<<<< .merge_file_7mC5xs
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($html === null && $view !== null) {
-=======
-        if (null === $html && null !== $view) {
->>>>>>> laraxot/dev
-=======
-        if (null === $html && null !== $view) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($html === null && $view !== null) {
->>>>>>> .merge_file_jq1Wwq
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');
             }
@@ -108,12 +73,6 @@ class ContentPdfAction
      *
      * Metodo di convenienza per generare PDF da viste Blade.
      *
-<<<<<<< HEAD
-<<<<<<< .merge_file_7mC5xs
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_jq1Wwq
      * @param  string  $view  Nome della vista Blade
      * @param  array  $data  Dati da passare alla vista
      * @param  string  $filename  Nome del file PDF (per riferimento)
@@ -122,38 +81,6 @@ class ContentPdfAction
     /**
      * @param  array<string, mixed>  $data
      */
-<<<<<<< .merge_file_7mC5xs
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-     * @param string               $view     Nome della vista Blade
-     * @param array<string, mixed> $data     Dati da passare alla vista
-     * @param string               $filename Nome del file PDF (per riferimento)
-     *
-     * @return string Contenuto binario del PDF
-     */
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
-=======
-     * @param string $view     Nome della vista Blade
-     * @param array  $data     Dati da passare alla vista
-     * @param string $filename Nome del file PDF (per riferimento)
-     *
-     * @return string Contenuto binario del PDF
-     */
-    /**
-     * @param array<string, mixed> $data
-     */
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_jq1Wwq
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function fromView(string $view, array $data = [], string $filename = 'document.pdf'): string
     {
         return $this->execute(
@@ -169,25 +96,8 @@ class ContentPdfAction
      *
      * Metodo di convenienza per generare PDF da contenuto HTML.
      *
-<<<<<<< .merge_file_7mC5xs
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  string  $html  Contenuto HTML
      * @param  string  $filename  Nome del file PDF (per riferimento)
-=======
-     * @param string $html     Contenuto HTML
-     * @param string $filename Nome del file PDF (per riferimento)
-     *
->>>>>>> laraxot/dev
-=======
-     * @param string $html     Contenuto HTML
-     * @param string $filename Nome del file PDF (per riferimento)
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  string  $html  Contenuto HTML
-     * @param  string  $filename  Nome del file PDF (per riferimento)
->>>>>>> .merge_file_jq1Wwq
      * @return string Contenuto binario del PDF
      */
     public function fromHtml(string $html, string $filename = 'document.pdf'): string

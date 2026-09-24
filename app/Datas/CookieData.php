@@ -12,31 +12,11 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  *
-<<<<<<< .merge_file_H6jBqB
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Xqcgl8
  * @param  bool  $accept
  * @param  string  $type
  * @param  int  $durationDays
  * @param  string  $policyUrl
  * @param  string  $bannerStyle
-<<<<<<< .merge_file_H6jBqB
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @param bool   $accept
- * @param string $type
- * @param int    $durationDays
- * @param string $policyUrl
- * @param string $bannerStyle
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Xqcgl8
  */
 final class CookieData extends Data
 {
@@ -46,39 +26,13 @@ final class CookieData extends Data
         public readonly int $durationDays = 365,
         public readonly string $policyUrl = '/cookie-policy',
         public readonly string $bannerStyle = 'bottom',
-<<<<<<< .merge_file_H6jBqB
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    ) {}
->>>>>>> .merge_file_Xqcgl8
 
     /**
      * Create a new instance of CookieData with default values.
      */
     public static function make(): self
     {
-<<<<<<< .merge_file_H6jBqB
-<<<<<<< HEAD
-<<<<<<< HEAD
         return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
-=======
-        return new self();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        return new self;
->>>>>>> .merge_file_Xqcgl8
     }
 }

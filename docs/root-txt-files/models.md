@@ -5,42 +5,7 @@ type: reference
 slug: models
 description: 'multi key, fixing lazy loading https://github.com/topclaudy/compoships'
 tags: [migrato-da-txt, xot]
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_bveiuA
-<<<<<<< HEAD
-=======
 converted_from: _models.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-converted_from: _models.txt
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-converted_from: _models.txt
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_OTH4sL
-converted_from: models.txt
-=======
-converted_from: _models.txt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_bveiuA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
-=======
-converted_from: _models.txt
->>>>>>> .merge_file_OTH4sL
->>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
 ---

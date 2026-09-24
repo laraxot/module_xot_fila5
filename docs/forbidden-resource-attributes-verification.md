@@ -82,23 +82,3 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 **Status**: ✅ **VERIFICA COMPLETATA**
 
 **Ultimo aggiornamento**: 2026-01-09
-<<<<<<< .merge_file_fZAlmv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4ml5qh
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

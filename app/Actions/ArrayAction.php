@@ -26,48 +26,8 @@ class ArrayAction
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_9S2LnU
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $array1
      * @param  array<int|string, mixed>  $array2
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_BWNm5X
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
-=======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
->>>>>>> .merge_file_fqc4li
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
->>>>>>> .merge_file_zwxI7t
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return array<int|string, mixed>
      */
     public static function diff_assoc_recursive(array $array1, array $array2): array
@@ -97,43 +57,5 @@ class ArrayAction
         return $outputDiff;
     }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_9S2LnU
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function execute(): void {}
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_BWNm5X
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-    public function execute(): void {}
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_fqc4li
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function execute(): void {}
->>>>>>> .merge_file_zwxI7t
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 }

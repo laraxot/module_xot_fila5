@@ -201,27 +201,4 @@ test('user can be saved to database', function () {
 ---
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
-<<<<<<< .merge_file_otahJ2
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: 🔄 **IN CORREZIONE**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status**: 🔄 **IN CORREZIONE**
-=======
-**Status**: 🔄 **IN CORREZIONE**
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Status**: 🔄 **IN CORREZIONE**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status**: 🔄 **IN CORREZIONE**
->>>>>>> .merge_file_BS2CP9
-=======
-=======
-**Status**: 🔄 **IN CORREZIONE**
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

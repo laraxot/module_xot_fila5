@@ -15,41 +15,15 @@ class FakeSeederAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     private const int MAX_RECORDS = 200;
 
     private const int CHUNK_SIZE = 50;
-=======
-    private const MAX_RECORDS = 200;
-
-    private const CHUNK_SIZE = 50;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
     /**
      * Execute the fake data seeding process.
      *
-<<<<<<< .merge_file_xad97H
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
-     *                                        =======
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
-     *                                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass  The fully qualified model class name
      * @param  int<1, max>  $qty  Number of records to generate
->>>>>>> .merge_file_20i2n8
      *
      * @throws \InvalidArgumentException When model class is invalid
      */
@@ -73,16 +47,7 @@ class FakeSeederAction
         $chunks = $rows->chunk(self::CHUNK_SIZE);
 
         $chunks->each(function (Collection $chunk) use ($modelClass): void {
-<<<<<<< HEAD
             $data = $chunk->map(fn (Model $item) => $item->getAttributes())->all();
-=======
-            /** @var array<int, array<string, mixed>> $data */
-            $data = $chunk->map(function ($item) {
-                assert($item instanceof Model);
-
-                return $item->getAttributes();
-            })->all();
->>>>>>> 3792da0d (Check & fix styling)
             $modelClass::insert($data);
         });
 
@@ -96,43 +61,11 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-<<<<<<< .merge_file_xad97H
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     *
-     * @throws \RuntimeException
-     *                           =======
-     * @throws \RuntimeException
-     *
-     * @return Factory<Model>
-     * @return Factory<Model>
-     * @return Factory<Model>
-     *                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
-     *
-     * @throws \RuntimeException
-     *
-     * @return Factory<Model>
-<<<<<<< HEAD
-     * @return Factory<Model>
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass
      * @return Factory<Model>
      * @return Factory<Model>
      *
      * @throws \RuntimeException
->>>>>>> .merge_file_20i2n8
-=======
-<<<<<<< HEAD
-=======
-     * @return Factory<Model>
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     private function getModelFactory(string $modelClass): Factory
     {
@@ -149,24 +82,8 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
-<<<<<<< .merge_file_xad97H
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
-     *                                        =======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
-     *                                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $count
->>>>>>> .merge_file_20i2n8
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -180,24 +97,8 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-<<<<<<< .merge_file_xad97H
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
-     *                                        =======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
-     *                                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
->>>>>>> 3792da0d (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $qty
->>>>>>> .merge_file_20i2n8
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {

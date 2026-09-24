@@ -162,10 +162,3 @@ Tutti i moduli principali sono ora conformi a PHPStan Level 10.
 ---
 
 **Ultimo aggiornamento**: 2026-01-09 - Sessione completata
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE] - Sessione completata
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)

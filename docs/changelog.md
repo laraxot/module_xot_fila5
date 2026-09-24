@@ -1,33 +1,6 @@
 # Changelog - Modulo Xot
 
-<<<<<<< .merge_file_7EyLkr
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## [2025-06-04] - Sessione Fix Critica
-=======
-<<<<<<< HEAD
-## [2025-06-04] - Sessione Fix Critica
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-<<<<<<< HEAD
-Tutte le modifiche significative al modulo Xot sono documentate in questo file.
-
-Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-=======
-## [2025-06-04] - Sessione Fix Critica
->>>>>>> 64619e34 (.)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-## [2025-06-04] - Sessione Fix Critica
->>>>>>> .merge_file_flfMlB
 
 All notable changes to `:package_name` will be documented in this file.
 
@@ -87,67 +60,6 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## [1.1.0] - 2025-10-29
 
-<<<<<<< .merge_file_7EyLkr
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Tutte le modifiche significative al modulo Xot saranno documentate in questo file.
-
-## [2025-06-04] - Sessione Fix Critica
-
-### Fixed
-- **HasXotTable.php**: Risolti if duplicati (3x) e array malformati da merge conflict
-  - Dettagli: [bugfix-hasxottable-duplicate-if.md](./bugfix-hasxottable-duplicate-if.md)
-
-- **XotBaseChartWidget.php**: Rimossi metodi duplicati e chiusure classe multiple
-  - Causa: Conflitto Git risolto automaticamente con residui
-
-- **Script git conflicts v6.sh**: Corretti 3 bug critici (P0+P1)
-  - Cleanup file temporanei (P0)
-  - Ottimizzazione stat command (P1)
-  - Cattura exit code robusta (P1)
-  - Versione: 6.0 → 6.1
-
-### Added
-- Documentazione [syntax-errors-mass-fix.md](./syntax-errors-mass-fix.md)
-- Pattern identificato: "Triplice Mostro del Merge"
-- Analisi critica script bash con dialettica interna
-
-### Documentation
-- Aggiornato [git-conflict-resolution-guide.md](../../../bashscripts/docs/git-conflict-resolution-guide.md) v1.0 → v2.0
-  - +1400 righe analisi filosofica e tecnica
-  - Storia evolutiva script (4 generazioni)
-  - 7 bug identificati con priorità
-  - Processo decisionale consapevole
-
----
-
-## Convenzioni Changelog
-
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-- Date in formato `[YYYY-MM-DD]`
-- Categorie: Added, Changed, Deprecated, Removed, Fixed, Security
-- Link relativi ai documenti di dettaglio
-- Focus su COSA è cambiato e PERCHÉ
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_flfMlB
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -211,20 +123,6 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## [1.1.0] - 2025-10-29
 
-<<<<<<< .merge_file_7EyLkr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 64619e34 (.)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_flfMlB
 ### Fixed
 - **HasXotTable.php** - Risolti if statement duplicati (3x)
 - **XotBaseChartWidget.php** - Rimossi metodi getHeading() duplicati
@@ -287,65 +185,14 @@ All notable changes to `:package_name` will be documented in this file.
 ## 🔗 Collegamenti
 
 ### Documenti Correlati
-<<<<<<< .merge_file_7EyLkr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_flfMlB
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
-<<<<<<< .merge_file_7EyLkr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [README.md](./docs/readme.md) - Entry point
-- [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
-- [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
-- [Merge Conflict Resolution](./docs/merge-conflict-resolution.md) - Latest fix
->>>>>>> 64619e34 (.)
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_flfMlB
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
-<<<<<<< .merge_file_7EyLkr
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_flfMlB
 
 ### Repository
 - **Branch:** develop
@@ -357,37 +204,5 @@ All notable changes to `:package_name` will be documented in this file.
 
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
-<<<<<<< .merge_file_7EyLkr
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
-=======
-<<<<<<< HEAD
-**Versioning:** [Semantic Versioning](https://semver.org/)
-**Versioning:** [Semantic Versioning](https://semver.org/)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-<<<<<<< HEAD
-**Versioning:** [Semantic Versioning](https://semver.org/)
-=======
-=======
->>>>>>> .merge_file_flfMlB
-**Versioning:** [Semantic Versioning](https://semver.org/)
-**Versioning:** [Semantic Versioning](https://semver.org/)
-<<<<<<< .merge_file_7EyLkr
->>>>>>> 61938ca4 (delete .claude-audit/)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_flfMlB
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

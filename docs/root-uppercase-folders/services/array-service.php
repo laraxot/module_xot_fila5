@@ -26,25 +26,8 @@ class ArrayAction
     }
 
     /**
-<<<<<<< .merge_file_2JXLwu
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $array1
      * @param  array<int|string, mixed>  $array2
-=======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
->>>>>>> laraxot/dev
-=======
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<int|string, mixed>  $array1
-     * @param  array<int|string, mixed>  $array2
->>>>>>> .merge_file_8Y5x9Q
      * @return array<int|string, mixed>
      */
     public static function diff_assoc_recursive(array $array1, array $array2): array
@@ -74,23 +57,5 @@ class ArrayAction
         return $outputDiff;
     }
 
-<<<<<<< .merge_file_2JXLwu
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function execute(): void {}
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> laraxot/dev
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_8Y5x9Q
 }

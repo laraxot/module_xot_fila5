@@ -268,28 +268,6 @@ return new class extends XotBaseMigration {
 **Collegamenti:**
 - [Regola Performance](../../Performance/project_docs/database_migrations.md)
 - [Regole globali root](../../../project_docs/database_migrations.md)
-<<<<<<< .merge_file_vRvEAf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Regola Performance](../../performance/project_docs/database_migrations.md)
-- [Regole globali root](../../../../docs/project/database_migrations.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Regola Performance](../../performance/project_docs/database_migrations.md)
-- [Regole globali root](../../../../docs/project/database_migrations.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_86TPPb
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
     /**
      * Ottiene la sezione associata al socio.
@@ -504,27 +482,4 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Analizzare le query lente con EXPLAIN
 - Verificare che ci siano indici appropriati
 - Controllare che i tipi di dati siano ottimali per l'uso previsto
-<<<<<<< .merge_file_vRvEAf
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Utilizzare query builder o raw queries per query complesse
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Utilizzare query builder o raw queries per query complesse
-=======
-- Utilizzare query builder o raw queries per query complesse
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Utilizzare query builder o raw queries per query complesse
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Utilizzare query builder o raw queries per query complesse
->>>>>>> .merge_file_86TPPb
-=======
-=======
-- Utilizzare query builder o raw queries per query complesse
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

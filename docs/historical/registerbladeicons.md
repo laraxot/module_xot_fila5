@@ -105,26 +105,6 @@ Config::set('blade-icons.sets.'.$this->nameLower.'.prefix', $this->nameLower);
 
 ## Nota sulla gestione centralizzata dei path
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_7i3KzG
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_4Off84
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_pqVRsH
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ac2F12
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 La stessa filosofia di gestione centralizzata dei path tramite action (es. GetModulePathByGeneratorAction) si applica anche alle traduzioni. Vedi la sezione aggiornata in [XotBaseServiceProvider.md](xotbaseserviceprovider.md#gestione-dei-path-delle-traduzioni).
 
 ## Nota sulla correzione e centralizzazione (2025-05-13)
@@ -134,40 +114,6 @@ La stessa filosofia di gestione centralizzata dei path tramite action (es. GetMo
 - Documentare ogni estensione o personalizzazione.
 
 **Collegamento:** Vedi anche [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_7i3KzG
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_4Off84
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-La stessa filosofia di gestione centralizzata dei path tramite action (es. GetModulePathByGeneratorAction) si applica anche alle traduzioni. Vedi la sezione aggiornata in [XotBaseServiceProvider.md](./XotBaseServiceProvider.md#gestione-dei-path-delle-traduzioni).
-
-## Nota sulla correzione e centralizzazione (2025-05-13)
-
-- Seguire i pattern e le regole documentate in [XotBaseServiceProvider.md](./XotBaseServiceProvider.md) per la registrazione delle icone Blade.
-- Centralizzare la logica di fallback e logging per i path SVG e la configurazione delle icone.
-- Documentare ogni estensione o personalizzazione.
-
-**Collegamento:** Vedi anche [XotBaseServiceProvider.md](./XotBaseServiceProvider.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_pqVRsH
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ac2F12
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Conclusione
 Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e i principi di design software possano convergere in una soluzione elegante ed efficace. La sua implementazione bilancia perfettamente la necessità di flessibilità con la robustezza del sistema, creando un ponte tra la modularità del codice e l'espressività dell'interfaccia utente.

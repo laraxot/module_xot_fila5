@@ -177,39 +177,10 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -219,39 +190,10 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -348,39 +290,10 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),
@@ -513,36 +426,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Architettura Moduli](./architecture.md)
-- [Best Practices Laravel 12](./laravel_12_guide.md)
-- [Pattern Filament](./filament_patterns.md)
-- [Performance Optimization](./performance_guide.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -564,26 +448,6 @@ return [
 ---
 
 **Data Analisi**: 2025-01-06
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Data Analisi**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data Analisi**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring
@@ -597,108 +461,24 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 ### 1. Violazioni DRY - Duplicazioni di Codice
 
 #### Singleton Pattern Duplicato
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
-=======
-**File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ```php
 // DUPLICATO in LimeJsonService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
     if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
-=======
-    if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         self::$instance = new self();
     }
     return self::$instance;
 }
 
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 // DUPLICATO in QuaerisService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\Quaeris\Services\QuaerisService) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_b9EcLa
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-// DUPLICATO in healthcare_appService.php
-private static ?self $instance = null;
-public static function getInstance(): self
-{
-    if (! self::$instance instanceof \Modules\healthcare_app\Services\healthcare_appService) {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         self::$instance = new self();
     }
     return self::$instance;
@@ -708,59 +488,13 @@ public static function getInstance(): self
 **Soluzione**: Creare trait `SingletonTrait` in `Modules/Xot/app/Traits/SingletonTrait.php`
 
 #### Connection Hardcoded Duplicata
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
-=======
-**Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
 
 #### Single Responsibility Principle Violato
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
-=======
-**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -808,30 +542,7 @@ abstract class BaseUser extends Authenticatable implements
 ### 3. N+1 Query Problems
 
 #### Customer Model - Lazy Loading
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Customer.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Models/Customer.php`
-=======
-**File**: `Modules/healthcare_app/app/Models/Customer.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Models/Customer.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Models/Customer.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Models/Customer.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ```php
 public function surveyPdfsActive()
@@ -844,30 +555,7 @@ public function surveyPdfsActive()
 **Soluzione**: Usare query builder o eager loading
 
 #### AlertWidget - Query Complessa
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
-=======
-**File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -890,30 +578,7 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 ### 4. Violazioni KISS - Complessità Eccessiva
 
 #### QuestionChart Model - Metodi Complessi
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
-=======
-**File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ```php
 public function participants(): CustomRelation
@@ -940,30 +605,7 @@ public function participants(): CustomRelation
 ### 5. Gestione Errori Inadeguata
 
 #### SendInviteAction - Catch Vuoti
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
-=======
-**File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ```php
 try {
@@ -983,52 +625,15 @@ try {
 ### 1. Filament Resources - Pattern Duplicati
 
 #### Schema Duplicato
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 
 ```php
 // ContactResource.php
 <<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-**File**: `Modules/healthcare_app/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
-
-```php
-// ContactResource.php
-public static function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('first_name'),
@@ -1038,39 +643,10 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -1106,41 +682,9 @@ public function customer(): HasOneThrough
 **File**: Tutti i ServiceProvider dei moduli
 
 ```php
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 class QuaerisServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Quaeris';
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-class QuaerisServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'Quaeris';
-=======
-class healthcare_appServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'healthcare_app';
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-class healthcare_appServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'healthcare_app';
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-class QuaerisServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'Quaeris';
-<<<<<<< HEAD
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -1199,39 +743,10 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('first_name'),
@@ -1273,30 +788,7 @@ trait SingletonTrait
 ```
 
 #### B. Separare BaseModel Responsibilities
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
-=======
-**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Models/BaseModel.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -1309,30 +801,7 @@ abstract class BaseModel extends Model implements ModelContract
 ```
 
 #### C. Implementare Repository Pattern
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
-=======
-**File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```php
 class SurveyFlipResponseRepository
 {
@@ -1393,47 +862,10 @@ try {
 
 #### B. Configuration Centralization
 ```php
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 // config/quaeris.php
 return [
     'database' => [
         'connection' => env('QUAERIS_DB_CONNECTION', 'quaeris'),
-<<<<<<< HEAD
-<<<<<<< .merge_file_b9EcLa
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-// config/healthcare_app.php
-return [
-    'database' => [
-        'connection' => env('healthcare_app_DB_CONNECTION', 'healthcare_app'),
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_V9rcNT
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
     'limesurvey' => [
         'api' => [
@@ -1447,36 +879,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Architettura Moduli](./architecture.md)
-- [Best Practices Laravel 12](./laravel_12_guide.md)
-- [Pattern Filament](./filament_patterns.md)
-- [Performance Optimization](./performance_guide.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_V9rcNT
-=======
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -1498,40 +901,6 @@ return [
 ---
 
 **Data Analisi**: 2025-01-06
-<<<<<<< .merge_file_b9EcLa
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Analista**: AI Code Review System
-**Priorità**: CRITICA - Richiede intervento immediato
-**Stima Effort**: 40-60 ore di refactoring
-=======
-**Data Analisi**: [DATE]
-**Analista**: AI Code Review System
-**Priorità**: CRITICA - Richiede intervento immediato
-**Stima Effort**: 40-60 ore di refactoring
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data Analisi**: [DATE]
-**Analista**: AI Code Review System
-**Priorità**: CRITICA - Richiede intervento immediato
-**Stima Effort**: 40-60 ore di refactoring
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-**Analista**: AI Code Review System
-**Priorità**: CRITICA - Richiede intervento immediato
-**Stima Effort**: 40-60 ore di refactoring
-<<<<<<< HEAD
->>>>>>> .merge_file_V9rcNT
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

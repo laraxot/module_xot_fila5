@@ -196,29 +196,4 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 ---
 
 *Last Updated: 2025-08-27*
-<<<<<<< .merge_file_FttKBP
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Architecture Version: XotBase 2.0*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Architecture Version: XotBase 2.0*
-=======
-*
-*Architecture Version: XotBase 2.0*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*
-*Architecture Version: XotBase 2.0*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Architecture Version: XotBase 2.0*
->>>>>>> .merge_file_O3vDwM
-=======
-=======
-*Architecture Version: XotBase 2.0*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

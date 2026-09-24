@@ -17,54 +17,16 @@ use function Safe\preg_match;
  * Centralizes common Pivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
-<<<<<<< .merge_file_1YIai2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_0ItMp8
  * @property string|int $id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
-<<<<<<< .merge_file_1YIai2
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property string|int      $id
- * @property Carbon|null     $created_at
- * @property Carbon|null     $updated_at
- * @property Carbon|null     $deleted_at
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0ItMp8
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
  * @property string|int|null $deleted_by
  */
 abstract class XotBasePivot extends EloquentPivot
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_1YIai2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> laraxot/dev
-=======
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0ItMp8
-=======
-<<<<<<< HEAD
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
-=======
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     use HasXotFactory;
     use Updater;
 
@@ -107,19 +69,7 @@ abstract class XotBasePivot extends EloquentPivot
         // Extract module name from namespace: Modules\User\... → user
         $namespace = static::class;
         $matches = [];
-<<<<<<< .merge_file_1YIai2
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
-=======
-        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
->>>>>>> laraxot/dev
-=======
-        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
->>>>>>> .merge_file_0ItMp8
             return strtolower($matches[1]);
         }
 

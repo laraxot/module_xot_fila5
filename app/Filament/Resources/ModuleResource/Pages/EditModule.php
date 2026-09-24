@@ -74,52 +74,7 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_YYqwMa
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_R22bCP
-=======
-     * <<<<<<< HEAD
-     * <<<<<<< .merge_file_bxS1IY.
->>>>>>> .merge_file_gDEies
->>>>>>> da9ae01a0 (.)
-     *
-     * @param array<array-key, mixed> $config
-     *                                        =======
-     *                                        <<<<<<< .merge_file_R22bCP
-     *                                        =======
-     *                                        <<<<<<< HEAD
-     *                                        <<<<<<< .merge_file_bxS1IY.
-     *                                        >>>>>>> .merge_file_gDEies.
-     * @param array<array-key, mixed> $config
-     *
-     * <<<<<<< .merge_file_R22bCP
-     * =======
-     * =======
-     * @param array<array-key, mixed> $config
-     *                                        >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-<<<<<<< HEAD
-     * >>>>>>> .merge_file_gDEies
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<mixed, mixed> $config
->>>>>>> 3792da0d (Check & fix styling)
-     *
-=======
      * @param  array<array-key, mixed>  $config
->>>>>>> .merge_file_SbcjCF
-=======
->>>>>>> .merge_file_gDEies
-=======
-     * @param array<array-key, mixed> $config
-     *
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * @return array<string, mixed>
      */
     private function normalizeConfigArray(array $config): array

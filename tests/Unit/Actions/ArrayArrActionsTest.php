@@ -1,50 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-use Filament\Support\RawJs;
-use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
-use Filament\Support\RawJs;
-use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_neikVz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
-<<<<<<< HEAD
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
->>>>>>> laraxot/dev
-=======
-use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_neikVz
-=======
-<<<<<<< HEAD
-use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -52,14 +13,6 @@ use function Safe\file_get_contents;
 use function Safe\mkdir;
 
 uses(TestCase::class);
-<<<<<<< HEAD
-=======
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
->>>>>>> 930f8146 (Check & fix styling)
 
 it('normalizes nested numeric strings in diff fixType', function (): void {
     $input = ['items' => [
@@ -85,19 +38,7 @@ it('throws when fixType receives a non-array item', function (): void {
 });
 
 it('returns recursive diff', function (): void {
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
     $action = new DiffAssocRecursiveAction;
-=======
-    $action = new DiffAssocRecursiveAction();
->>>>>>> laraxot/dev
-=======
-    $action = new DiffAssocRecursiveAction();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $action = new DiffAssocRecursiveAction;
->>>>>>> .merge_file_neikVz
     $left = ['items' => [
         ['id' => '1', 'name' => 'a'],
         ['id' => '2', 'name' => 'b'],
@@ -112,19 +53,7 @@ it('returns recursive diff', function (): void {
 });
 
 it('covers all branches of range intersect', function (): void {
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
     $action = new RangeIntersectAction;
-=======
-    $action = new RangeIntersectAction();
->>>>>>> laraxot/dev
-=======
-    $action = new RangeIntersectAction();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $action = new RangeIntersectAction;
->>>>>>> .merge_file_neikVz
 
     Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
     Assert::assertSame([2, 5], $action->execute(1, 7, 2, 5));
@@ -135,73 +64,15 @@ it('covers all branches of range intersect', function (): void {
     Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
 it('writes JSON and PHP arrays', function (): void {
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-it('covers all branches of range intersect in Array namespace', function (): void {
-    $action = new ArrayRangeIntersectAction();
-
-    Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
-    Assert::assertSame([2, 5], $action->execute(1, 7, 2, 5));
-    Assert::assertFalse($action->execute(1, 2, 3, 4));
-    Assert::assertFalse($action->execute(10, 11, 1, 5));
-    Assert::assertFalse($action->execute(7, 6, 5, 8));
-    Assert::assertSame([4, 4], $action->execute(4, 10, 2, 4));
-    Assert::assertFalse($action->execute(1, 5, 2, 7));
-});
-
-it('writes JSON and PHP arrays via Arr actions', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-it('writes JSON and PHP arrays', function (): void {
->>>>>>> .merge_file_neikVz
-=======
-=======
-it('writes JSON and PHP arrays', function (): void {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
     $jsonFile = $tmpDir.'/data.json';
     $phpFile = $tmpDir.'/data.php';
 
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
     $jsonAction = new SaveJsonArrayAction;
     $phpAction = new SavePhpArrayAction;
-=======
-    $jsonAction = new SaveJsonArrayAction();
-    $phpAction = new SavePhpArrayAction();
->>>>>>> laraxot/dev
-=======
-    $jsonAction = new SaveJsonArrayAction();
-    $phpAction = new SavePhpArrayAction();
-
-    Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
-    Assert::assertFileExists($phpFile);
-    Assert::assertStringContainsString('return', file_get_contents($phpFile));
-    Assert::assertTrue($jsonAction->execute(['a' => 1], $jsonFile));
-    Assert::assertFileExists($jsonFile);
-    Assert::assertStringContainsString('"a"', file_get_contents($jsonFile));
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $jsonAction = new SaveJsonArrayAction;
-    $phpAction = new SavePhpArrayAction;
->>>>>>> .merge_file_neikVz
 
     Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
     Assert::assertFileExists($phpFile);
@@ -215,19 +86,7 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
     $tmpDir = sys_get_temp_dir().'/xot-save-array-action-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
     $action = new SaveArrayAction;
-=======
-    $action = new SaveArrayAction();
->>>>>>> laraxot/dev
-=======
-    $action = new SaveArrayAction();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $action = new SaveArrayAction;
->>>>>>> .merge_file_neikVz
     $jsonFile = $tmpDir.'/one.json';
     $phpFile = $tmpDir.'/one.php';
 
@@ -237,66 +96,10 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
 
 it('throws on unsupported save format in SaveArrayAction', function (): void {
     try {
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
         $action = new SaveArrayAction;
-=======
-        $action = new SaveArrayAction();
->>>>>>> laraxot/dev
-=======
-        $action = new SaveArrayAction();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $action = new SaveArrayAction;
->>>>>>> .merge_file_neikVz
         $action->execute(['x' => 1], '/tmp/unused', 'xml');
         Assert::fail('Expected exception not thrown');
     } catch (InvalidArgumentException) {
         // Expected
     }
 });
-<<<<<<< HEAD
-<<<<<<< .merge_file_DYYnzq
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-
-it('converts mixed PHP arrays to RawJs correctly', function (): void {
-    $action = new ArrayToRawJsAction();
-
-    $raw = $action->execute([
-        'validKey' => true,
-        'string key' => "O'Reilly",
-        'number' => 12.5,
-        'none' => null,
-        'nested' => [
-            'inner' => 1,
-            'formatter' => RawJs::make('value => value * 2'),
-        ],
-    ]);
-
-    Assert::assertInstanceOf(RawJs::class, $raw);
-    $js = $raw->toHtml();
-    Assert::assertStringContainsString('validKey: true', $js);
-    Assert::assertStringContainsString("'string key': 'O\\'Reilly'", $js);
-    Assert::assertStringContainsString('number: 12.5', $js);
-    Assert::assertStringContainsString('none: null', $js);
-    Assert::assertStringContainsString('formatter: value => value * 2', $js);
-});
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_neikVz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

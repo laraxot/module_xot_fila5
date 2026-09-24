@@ -25,28 +25,6 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 ### Moduli Corretti
 - [FormBuilder FieldOption Model](../FormBuilder/docs/phpstan-corrections.md)
 - [Lang Console Commands](../Lang/docs/phpstan-corrections.md)
-<<<<<<< .merge_file_vZFqR7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [FormBuilder FieldOption Model](../formbuilder/docs/phpstan-corrections.md)
-- [Lang Console Commands](../lang/docs/phpstan-corrections.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [FormBuilder FieldOption Model](../formbuilder/docs/phpstan-corrections.md)
-- [Lang Console Commands](../lang/docs/phpstan-corrections.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_fCpVes
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Principi di Correzione
 
@@ -69,28 +47,6 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 
 - [FormBuilder PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 - [Lang PHPStan Corrections](../Lang/docs/phpstan-corrections.md)
-<<<<<<< .merge_file_vZFqR7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [FormBuilder PHPStan Corrections](../formbuilder/docs/phpstan-corrections.md)
-- [Lang PHPStan Corrections](../lang/docs/phpstan-corrections.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [FormBuilder PHPStan Corrections](../formbuilder/docs/phpstan-corrections.md)
-- [Lang PHPStan Corrections](../lang/docs/phpstan-corrections.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_fCpVes
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Xot Architecture](./architecture.md)
 
 ## Note per Sviluppo Futuro
@@ -98,27 +54,4 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 1. **Type Safety**: Mantenere sempre type hints espliciti
 2. **Static Properties**: Evitare accesso statico a proprietà di istanza
 3. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting appropriato
-<<<<<<< .merge_file_vZFqR7
-<<<<<<< HEAD
-<<<<<<< HEAD
 4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
-=======
-4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
->>>>>>> 3792da0d (Check & fix styling)
-=======
-4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
->>>>>>> .merge_file_fCpVes
-=======
-=======
-4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

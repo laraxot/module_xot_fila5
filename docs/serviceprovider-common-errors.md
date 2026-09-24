@@ -202,27 +202,4 @@ Prima di creare un ServiceProvider:
 
 **Principio DRY**: Non duplicare logica già gestita dal parent.
 
-<<<<<<< .merge_file_ySO8Mc
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
-=======
-**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
->>>>>>> .merge_file_ZxctDs
-=======
-=======
-**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

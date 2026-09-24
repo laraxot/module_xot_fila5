@@ -8,32 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
-<<<<<<< HEAD
 use Mockery;
-<<<<<<< .merge_file_ebfeGa
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_JF3giD
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_eZwryw
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\MetatagData;
@@ -49,95 +24,15 @@ use Modules\Xot\Tests\ModuleRemainingCoverage;
 use Modules\Xot\Tests\TestCase;
 use PhpCsFixer\Config;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-use Symfony\Component\HttpFoundation\Response;
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_JF3giD
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
-use Symfony\Component\HttpFoundation\Response;
->>>>>>> .merge_file_eZwryw
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_eZwryw
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
     Mockery::close();
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_JF3giD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-use Symfony\Component\HttpFoundation\Response;
-
-uses(TestCase::class)->group('no-xot-db');
-
-afterEach(function (): void {
-    \Mockery::close();
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JF3giD
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_eZwryw
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 });
 
 function xot100Invoke(object $target, string $method, mixed ...$args): mixed
@@ -202,75 +97,11 @@ namespace PhpCsFixer\Runner\Parallel {
 }
 namespace PhpCsFixer {
     final class Config {
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-        public function setParallelConfig(mixed $c): self { return $this; }
-        public function setRiskyAllowed(bool $v): self { return $this; }
-        /** @param array<string, mixed> $rules */
-        public function setRules(array $rules): self { return $this; }
-        public function setFinder(mixed $f): self { return $this; }
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_JF3giD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_eZwryw
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         public function setParallelConfig(object $c): self { return $this; }
         public function setRiskyAllowed(bool $v): self { return $this; }
         /** @param array<string, mixed> $rules */
         public function setRules(array $rules): self { return $this; }
         public function setFinder(object $f): self { return $this; }
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_WOkH7B
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JF3giD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_eZwryw
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
     final class Finder {
         public function in(string $dir): self { return $this; }
@@ -439,39 +270,7 @@ PHP);
             FileAction::getFileNameByClassName(XotData::class)
         );
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
         $action = new FileAction;
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        $action = new FileAction;
-=======
-        $action = new FileAction();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $action = new FileAction();
->>>>>>> .merge_file_JF3giD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $action = new FileAction();
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $action = new FileAction;
->>>>>>> .merge_file_eZwryw
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         try {
             $action->execute();
         } catch (\Throwable) {
@@ -479,39 +278,7 @@ PHP);
     });
 
     test('XotData rami SSL tenant profile team child e update', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
         $xot = new XotData;
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        $xot = new XotData;
-=======
-        $xot = new XotData();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $xot = new XotData();
->>>>>>> .merge_file_JF3giD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $xot = new XotData();
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $xot = new XotData;
->>>>>>> .merge_file_eZwryw
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->adm_theme = 'One';
@@ -550,37 +317,7 @@ PHP);
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
-<<<<<<< HEAD
         $meta = new MetatagData;
-<<<<<<< .merge_file_ebfeGa
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        $meta = new MetatagData;
-=======
-        $meta = new MetatagData();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $meta = new MetatagData();
->>>>>>> .merge_file_JF3giD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $meta = new MetatagData();
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_eZwryw
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Desc';
@@ -616,39 +353,7 @@ PHP);
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
         $mw = new SecurityMiddleware;
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        $mw = new SecurityMiddleware;
-=======
-        $mw = new SecurityMiddleware();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $mw = new SecurityMiddleware();
->>>>>>> .merge_file_JF3giD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $mw = new SecurityMiddleware();
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $mw = new SecurityMiddleware;
->>>>>>> .merge_file_eZwryw
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
         // GET ok
         $ok = Request::create('/dashboard', 'GET', [], [], [], [
@@ -708,64 +413,11 @@ PHP);
     });
 
     test('XotBaseMigration reflection helper schema e blueprint', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_eZwryw
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_JF3giD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-        $migration = new class extends XotBaseMigration {
-            protected ?string $model_class = CacheModel::class;
-
-            public function up(): void
-            {
-            }
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_JF3giD
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_eZwryw
-=======
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         };
 
         Assert::assertSame(CacheModel::class, $migration->getModelClass());
@@ -774,39 +426,7 @@ PHP);
 
         $ref = new \ReflectionClass($migration);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_ebfeGa
-<<<<<<< HEAD
             if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_WOkH7B
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
-=======
-            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
->>>>>>> .merge_file_JF3giD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
->>>>>>> .merge_file_eZwryw
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

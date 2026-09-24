@@ -303,33 +303,6 @@ Moduli con logica inline complessa:
 ## Collegamenti Documentazione
 
 ### Guide Filosofiche
-<<<<<<< .merge_file_UfV3hU
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Accessor Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
-- [Philosophy Guide PTVX](../../../../docs/philosophy-guide.md)
-
-### Guide Operative
-- [Accessor Refactoring Roadmap](../../sigma/docs/accessor-refactoring-roadmap.md)
-- [Progress Tracker](../../sigma/docs/refactoring-progress-tracker.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_rOgBCS
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Accessor Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
 - [Philosophy Guide PTVX](../../../docs/philosophy-guide.md)
 
@@ -343,33 +316,6 @@ Moduli con logica inline complessa:
 - [Accessor Audit Cross-Modules](./accessor-audit-cross-modules.md)
 
 ### Implementazioni Modulo
-<<<<<<< .merge_file_UfV3hU
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Sigma - SchedaTrait](../../sigma/docs/session-complete-summary.md)
-- [IndennitaCondizioniLavoro - Audit](../../indennitacondizionilavoro/docs/accessor-guard-audit.md)
-
----
-
-**Creato**: [DATE]
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_rOgBCS
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Sigma - SchedaTrait](../../Sigma/docs/session-complete-summary.md)
 - [IndennitaCondizioniLavoro - Audit](../../IndennitaCondizioniLavoro/docs/accessor-guard-audit.md)
 
@@ -378,27 +324,4 @@ Moduli con logica inline complessa:
 **Creato**: 2025-01-29
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
-<<<<<<< .merge_file_UfV3hU
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
-=======
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
->>>>>>> .merge_file_rOgBCS
-=======
-=======
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

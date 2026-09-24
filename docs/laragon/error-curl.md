@@ -1,14 +1,3 @@
-<<<<<<< .merge_file_GeEiNh
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_gTpsWz
-=======
->>>>>>> da9ae01a0 (.)
 ---
 title: "Error Curl"
 module: "Xot"
@@ -20,53 +9,12 @@ qmd: "error curl"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< .merge_file_GeEiNh
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gTpsWz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ---
 module: theme
 topic: error-curl
 canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
 ---
 
-<<<<<<< .merge_file_GeEiNh
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_gTpsWz
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 
@@ -109,36 +57,5 @@ composer clearcache
 
 composer config --global cafile PATH/TO/cacert.pem
 composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
-<<<<<<< .merge_file_GeEiNh
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
-=======
-<<<<<<< HEAD
-
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> a01602c7 (.)
-=======
-
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
->>>>>>> 64619e34 (.)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
->>>>>>> .merge_file_gTpsWz
-=======
-=======
-
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

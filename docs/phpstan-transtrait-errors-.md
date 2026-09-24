@@ -388,15 +388,7 @@ This fix may also resolve related errors in:
 
 ## Related Documentation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
-=======
-- [PHPStan Analysis Summary](phpstan-analysis.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
->>>>>>> da9ae01a0 (.)
 - [XotBase Extension Rules](xotbase-extension-rules.md)
 - [Filament Integration](filament-integration.md)
 

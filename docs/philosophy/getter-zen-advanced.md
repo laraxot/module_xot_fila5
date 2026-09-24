@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 930f8146 (Check & fix styling)
 # La Filosofia Zen Avanzata dei Getter Semantici
 
 ## Il Tao del Codice Pulito

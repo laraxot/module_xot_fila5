@@ -1,22 +1,3 @@
-<<<<<<< .merge_file_X3qyGI
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_WIADpN
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kVdc4x
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GiurRH
 ---
 title: "Install module"
 type: reference
@@ -28,26 +9,6 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
 # Install module
 
-<<<<<<< .merge_file_X3qyGI
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_WIADpN
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kVdc4x
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GiurRH
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -80,35 +41,4 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
         $new_dir=$module_json->name;
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
-<<<<<<< .merge_file_X3qyGI
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
     }
-=======
-    }
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    }
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    }
->>>>>>> .merge_file_GiurRH
-=======
-=======
-    }
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

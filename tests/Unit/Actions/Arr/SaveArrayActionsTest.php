@@ -1,52 +1,18 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_bcfwjX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-uses(TestCase::class);
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_U5Z9AY
-=======
-=======
-uses(Modules\Xot\Tests\TestCase::class);
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 use function Safe\tempnam;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 it('saves array as php file', function (): void {
     $data = ['foo' => 'bar', 'baz' => 123];
     $filename = tempnam(sys_get_temp_dir(), 'test_save_').'.php';

@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/cache_lock.php
->>>>>>> 930f8146 (Check & fix styling)
 return [
     'navigation' => [
         'name' => 'cache lock',
@@ -16,16 +9,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
         'label' => 'cache lock.navigation',
         'icon' => 'cache lock.navigation',
         'sort' => 95,
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
     'pages' => [
         'health_check_results' => [
@@ -63,7 +49,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -82,17 +67,10 @@ return [
             'helper_text' => 'expiration',
             'description' => 'expiration',
         ],
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache Lock',
-<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -120,18 +98,6 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
-=======
-        ],
-        'edit' => [
-            'label' => 'Modifica Cache Lock',
-        ],
-        'delete' => [
-            'label' => 'Elimina Cache Lock',
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         ],
     ],
 ];

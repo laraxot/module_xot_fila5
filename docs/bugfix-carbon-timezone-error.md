@@ -73,41 +73,9 @@ public function registerTimezone(): void
 - [Carbon Documentation](https://carbon.nesbot.com/project_docs/)
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
-<<<<<<< .merge_file_CCGUhx
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
-=======
-*Ultimo aggiornamento: giugno 2025*
-- [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025*
-- [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-- [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
-<<<<<<< HEAD
->>>>>>> .merge_file_fQDvkF
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 *Risolto da: Windsurf AI Assistant*
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
@@ -184,46 +152,7 @@ public function registerTimezone(): void
 - [Carbon Documentation](https://carbon.nesbot.com/project_docs/)
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
-<<<<<<< .merge_file_CCGUhx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_fQDvkF
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
-<<<<<<< HEAD
-<<<<<<< .merge_file_CCGUhx
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-*Ultimo aggiornamento: giugno 2025*
-- [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
-
-*Risolto da: Windsurf AI Assistant*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025*
-- [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
-
-*Risolto da: Windsurf AI Assistant*
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_fQDvkF
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

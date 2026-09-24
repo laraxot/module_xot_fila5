@@ -239,39 +239,10 @@ class ExampleResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_FAQwHf
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GwbjGg
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_FAQwHf
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GwbjGg
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -547,39 +518,10 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_FAQwHf
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GwbjGg
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_FAQwHf
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GwbjGg
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -1177,53 +1119,10 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
-<<<<<<< .merge_file_FAQwHf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GwbjGg
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [**Best Practices**](best-practices.md) - Best practices per lo sviluppo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Troubleshooting**](troubleshooting.md) - Risoluzione problemi
 
 ---
 
-<<<<<<< .merge_file_FAQwHf
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> .merge_file_GwbjGg
-=======
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

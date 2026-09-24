@@ -8,11 +8,7 @@ use Filament\Facades\Filament;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Navigation\NavigationItem;
 use Illuminate\Support\Facades\Auth;
-<<<<<<< HEAD
 use Modules\Xot\Adapters\Filament\PanelModuleAdapter;
-=======
-use Modules\Xot\Support\PanelModuleResolver;
->>>>>>> 930f8146 (Check & fix styling)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -32,33 +28,14 @@ class GetPanelsNavigationItems
         foreach (Filament::getPanels() as $panel) {
             $navs[] = NavigationItem::make($panel->getId())
                 ->url('/'.$panel->getPath())
-<<<<<<< HEAD
                 ->icon(PanelModuleAdapter::navigationIcon($panel))
                 ->group('Modules')
                 ->label(PanelModuleAdapter::navigationLabel($panel))
                 ->sort(PanelModuleAdapter::navigationSort($panel))
-=======
-                ->icon(PanelModuleResolver::navigationIcon($panel))
-                ->group('Modules')
-                ->label(PanelModuleResolver::navigationLabel($panel))
-                ->sort(PanelModuleResolver::navigationSort($panel))
->>>>>>> 930f8146 (Check & fix styling)
                 ->visible(static function () use ($panel): bool {
                     /** @var FilamentUser|null $user */
                     $user = Auth::user();
-<<<<<<< .merge_file_96GPtx
-<<<<<<< HEAD
-<<<<<<< HEAD
                     if ($user === null) {
-=======
-                    if (null === $user) {
->>>>>>> laraxot/dev
-=======
-                    if (null === $user) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                    if ($user === null) {
->>>>>>> .merge_file_1PlWcJ
                         return false;
                     }
 

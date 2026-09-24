@@ -4,36 +4,8 @@ type: index
 module: Xot
 tags: [xot, wiki, index, xotbase, migrations, phpstan]
 created: 2026-04-28
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
 updated: 2026-07-24
 qmd: "xot module wiki index XotBase migrations phpstan filament actions pest domain ownership"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-updated: 2026-07-24
-qmd: "xot module wiki index XotBase migrations phpstan filament actions pest domain ownership"
-=======
-updated: 2026-06-13
-qmd: "xot module wiki index XotBase migrations phpstan filament actions pest ReflectionClass global imports"
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-updated: 2026-06-13
-qmd: "xot module wiki index XotBase migrations phpstan filament actions pest ReflectionClass global imports"
->>>>>>> 3792da0d (Check & fix styling)
-=======
-updated: 2026-07-24
-qmd: "xot module wiki index XotBase migrations phpstan filament actions pest domain ownership"
->>>>>>> .merge_file_4FjCFz
-=======
-=======
-updated: 2026-06-13
-qmd: "xot module wiki index XotBase migrations phpstan filament actions pest ReflectionClass global imports"
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
@@ -43,81 +15,21 @@ related:
   - ./concepts/module-model-artifact-parity.md
   - ./concepts/ai-harness-xot-discipline.md
   - ./concepts/second-brain-local-discipline.md
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4FjCFz
-=======
->>>>>>> da9ae01a0 (.)
   - ./concepts/no-domain-actions-in-xot.md
   - ./rules/module-testcase-xotbase-hierarchy.md
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../../../../docs/wiki/rules/domain-actions-belong-to-domain-module.md
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-=======
-=======
-  - ./rules/module-testcase-xotbase-hierarchy.md
-  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
-=======
-  - ./rules/module-testcase-xotbase-hierarchy.md
-  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4FjCFz
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ---
 
 # Xot Module LLM Wiki
 
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4FjCFz
-=======
->>>>>>> da9ae01a0 (.)
 ## Boundaries (2026-07-24)
 
 - [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) — niente `Actions/AI|Geo|…`
 - Raw: [no-domain-logic-in-xot.md](../no-domain-logic-in-xot.md)
 - AI owner: [ollama-actions-ownership](../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
 
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4FjCFz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 Indice operativo del wiki Xot (core framework).
 
 ## Struttura canonica (sacred)
@@ -152,72 +64,14 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Completamento piattaforma
 
 - [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md) — **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_qXkcuR
-- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
-=======
-- [phpstan-best-practices.md](./phpstan-best-practices.md)
-=======
-- [phpstan-best-practices.md](./phpstan-best-practices.md)
-=======
-- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
->>>>>>> .merge_file_KoGZwi
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [phpstan-best-practices.md](./phpstan-best-practices.md)
->>>>>>> .merge_file_4FjCFz
-=======
-=======
-- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Compiled Pages
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_qXkcuR
-| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
-=======
-| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
-=======
-| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
-=======
-| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
->>>>>>> .merge_file_KoGZwi
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
->>>>>>> 3792da0d (Check & fix styling)
-=======
-| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
->>>>>>> .merge_file_4FjCFz
-=======
-=======
-| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |
@@ -228,27 +82,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | Policy strategy | 2026-04-27 |
 | [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | Policy matrix | 2026-04-27 |
 | [laravel13-modular-package-compatibility-matrix](./concepts/laravel13-modular-package-compatibility-matrix.md) | Concept | Compatibilita' pacchetti modulo | 2026-04-28 |
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
 | [module-config-php-religion](./concepts/module-config-php-religion.md) | Concept | `config/config.php` obbligatorio per modulo | 2026-07-27 |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| [module-config-php-religion](./concepts/module-config-php-religion.md) | Concept | `config/config.php` obbligatorio per modulo | 2026-07-27 |
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-| [module-config-php-religion](./concepts/module-config-php-religion.md) | Concept | `config/config.php` obbligatorio per modulo | 2026-07-27 |
->>>>>>> .merge_file_4FjCFz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 | [module-model-artifact-parity](./concepts/module-model-artifact-parity.md) | Concept | N modelli owner = N migrate + factory + seeder; audit cross-modulo | 2026-06-05 |
 | [module-testcase-xotbase-hierarchy](./rules/module-testcase-xotbase-hierarchy.md) | Rule | TestCase modulo -> XotBaseTestCase -> Laravel; no nWidart dev-only base | 2026-06-10 |
 | [pest-global-class-imports](./rules/pest-global-class-imports.md) | Rule | Pest: niente import inutili di classi globali (`ReflectionClass`) nei file senza namespace | 2026-06-12 |
@@ -256,30 +90,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 ## Best Practices
 
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Ogni modulo Nwidart deve avere `config/config.php` (vedi [module-config-php-religion](./concepts/module-config-php-religion.md))
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Ogni modulo Nwidart deve avere `config/config.php` (vedi [module-config-php-religion](./concepts/module-config-php-religion.md))
-=======
-- Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Ogni modulo Nwidart deve avere `config/config.php` (vedi [module-config-php-religion](./concepts/module-config-php-religion.md))
->>>>>>> .merge_file_4FjCFz
-=======
-=======
-- Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
 - PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
@@ -302,17 +113,6 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 |--------|------|-----------|
 | [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField runtime |
 
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4FjCFz
-=======
->>>>>>> da9ae01a0 (.)
 Aggiornato: 2026-07-27
 
 ## Lezioni 2026-07-27 (hub)
@@ -339,21 +139,3 @@ in fondo al file sopra — `form()`/`table()` delegano per intero alla
 Resource correlata (mai bridge per singolo hook come nella quarta), unici
 override point per-pagina `getTableColumns()`/`getTableHeaderActions()`.
 Non implementata. Story: `Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md`.
-<<<<<<< .merge_file_2jxqLG
-<<<<<<< HEAD
-=======
-=======
-Aggiornato: 2026-04-28
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Aggiornato: 2026-04-28
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4FjCFz
-=======
-=======
-Aggiornato: 2026-04-28
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

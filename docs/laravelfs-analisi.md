@@ -1,15 +1,3 @@
-<<<<<<< .merge_file_ixSsl8
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_4qO73N
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Analisi di LaravelFS
 
 ## Introduzione
@@ -46,32 +34,3 @@ Il progetto ha una struttura ben organizzata:
 - **tests/**: Test automatizzati
 
 ## Aspetti interessanti per il nostro progetto
-<<<<<<< HEAD
-<<<<<<< .merge_file_ixSsl8
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
----
-module: theme
-topic: laravelfs-analisi
-canonical: ../../../Themes/docs/shared-components/laravelfs-analisi.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/laravelfs-analisi.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4qO73N
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

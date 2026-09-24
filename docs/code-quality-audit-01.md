@@ -1,26 +1,5 @@
 # Code Quality Audit Completo - Gennaio 2025
 
-<<<<<<< .merge_file_A9xiiG
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Data**: 2025-01-22
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data**: 2025-01-22
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_tOTAoU
-=======
-=======
-**Data**: 2025-01-22
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -44,25 +23,7 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 ## 📋 Moduli con Documentazione Qualità
 
 ### ✅ Completati
-<<<<<<< .merge_file_A9xiiG
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_tOTAoU
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
-=======
-- **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
->>>>>>> 930f8146 (Check & fix styling)
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%
@@ -130,27 +91,4 @@ Ogni modulo dovrebbe avere:
 - La documentazione viene aggiornata costantemente durante l'analisi
 - Le regole e best practices sono in `.cursor/rules/` e `.windsurf/rules/`
 
-<<<<<<< .merge_file_A9xiiG
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: [DATE]*
-=======
-*Ultimo aggiornamento: 2025-01-22*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 2025-01-22*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: [DATE]*
->>>>>>> .merge_file_tOTAoU
-=======
-=======
-*Ultimo aggiornamento: 2025-01-22*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -98,39 +98,10 @@ abstract class XotBaseResource extends Resource
      * @return array<int, Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_hU5oEs
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_M3KNtZ
-=======
->>>>>>> da9ae01a0 (.)
     abstract public function getFormSchema(): array;
 =======
     abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_hU5oEs
-<<<<<<< HEAD
-=======
-=======
-    abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    abstract public static function getFormSchema(): array;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_M3KNtZ
-=======
-=======
-    abstract public static function getFormSchema(): array;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
     /**
      * Get pages with proper typing.
@@ -466,27 +437,4 @@ function processUserData(array $data): array
 **Quality Standard**: PHPStan Level 10
 **Type Coverage**: 98%+
 **Performance**: Optimized
-<<<<<<< .merge_file_hU5oEs
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Documentation**: Complete PHPDoc coverage
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Documentation**: Complete PHPDoc coverage
-=======
-**Documentation**: Complete PHPDoc coverage
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Documentation**: Complete PHPDoc coverage
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Documentation**: Complete PHPDoc coverage
->>>>>>> .merge_file_M3KNtZ
-=======
-=======
-**Documentation**: Complete PHPDoc coverage
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

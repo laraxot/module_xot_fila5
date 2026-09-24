@@ -1,29 +1,6 @@
 # Xot Module - Filament v4 Upgrade Notes
 
-<<<<<<< .merge_file_aaRbSY
-<<<<<<< HEAD
-<<<<<<< HEAD
 This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_v4_upgrade.md).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_v4_upgrade.md).
-=======
-This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../../docs/filament_v4_upgrade.md).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../../docs/filament_v4_upgrade.md).
->>>>>>> 3792da0d (Check & fix styling)
-=======
-This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_v4_upgrade.md).
->>>>>>> .merge_file_OJexju
-=======
-=======
-This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_v4_upgrade.md).
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## **Key Changes and Action Items for `Xot` Module**
 
@@ -64,38 +41,6 @@ This document outlines specific considerations and changes for the `Xot` module,
 
 *   **Centralized `XotBaseSection`:** This class is a prime example of DRY, consolidating architectural decisions and compatibility layers in one place for all custom sections.
 *   **Compatibility Shim (KISS):** The `disableLiveUpdates()` shim is a simple, effective solution to a complex version compatibility problem, embodying the KISS principle by resolving the error with minimal code and impact.
-<<<<<<< .merge_file_aaRbSY
-<<<<<<< HEAD
-<<<<<<< HEAD
 *   **Explicit Configuration:** Encouraging explicit use of `columnSpanFull()` promotes clarity and reduces reliance on implicit framework behaviors, leading to more robust and predictable UI layouts.
 
 By maintaining and documenting `XotBaseSection`, the `Xot` module reinforces core architectural patterns and facilitates a smoother transition to Filament v4.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*   **Explicit Configuration:** Encouraging explicit use of `columnSpanFull()` promotes clarity and reduces reliance on implicit framework behaviors, leading to more robust and predictable UI layouts.
-
-By maintaining and documenting `XotBaseSection`, the `Xot` module reinforces core architectural patterns and facilitates a smoother transition to Filament v4.
-=======
-*   **Explicit Configuration:** Encouraging explicit use of `columnSpanFull()` promotes clarity and reduces reliance on implicit framework behaviors, leading to more robust and <nome progetto>able UI layouts.
-
-By maintaining and documenting `XotBaseSection`, the `Xot` module reinforces core architectural patterns and facilitates a smoother transition to Filament v4.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*   **Explicit Configuration:** Encouraging explicit use of `columnSpanFull()` promotes clarity and reduces reliance on implicit framework behaviors, leading to more robust and <nome progetto>able UI layouts.
-
-By maintaining and documenting `XotBaseSection`, the `Xot` module reinforces core architectural patterns and facilitates a smoother transition to Filament v4.
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-*   **Explicit Configuration:** Encouraging explicit use of `columnSpanFull()` promotes clarity and reduces reliance on implicit framework behaviors, leading to more robust and predictable UI layouts.
-
-By maintaining and documenting `XotBaseSection`, the `Xot` module reinforces core architectural patterns and facilitates a smoother transition to Filament v4.
-<<<<<<< HEAD
->>>>>>> .merge_file_OJexju
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

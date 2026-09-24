@@ -2,27 +2,6 @@
 
 ## Collegamenti
 - [Documentazione generale progetto](/project_docs/README.md)
-<<<<<<< .merge_file_r58l59
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Documentazione generale progetto](/project_docs/readme.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione generale progetto](/project_docs/readme.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_aV4B7k
-=======
-=======
-- [Documentazione generale progetto](/project_docs/readme.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -445,27 +424,4 @@ TextInput::make('name')
 
 ---
 
-<<<<<<< .merge_file_r58l59
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
-=======
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
->>>>>>> .merge_file_aV4B7k
-=======
-=======
-**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

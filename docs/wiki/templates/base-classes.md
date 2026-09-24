@@ -108,44 +108,8 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_42GSa5
-<<<<<<< HEAD
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_NDor5m
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_a87Yeu
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> .merge_file_xpwx04
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('name')
@@ -366,45 +330,3 @@ class Create{ModelName}Action
 
 **Ultimo aggiornamento:** Gennaio 2025
 **Versione:** 2.0 - Consolidata DRY + KISS
-<<<<<<< .merge_file_42GSa5
-=======
-<<<<<<< HEAD
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_NDor5m
-=======
-<<<<<<< .merge_file_sD15BC
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
-<<<<<<< HEAD
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
->>>>>>> .merge_file_a87Yeu
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_NDor5m
-=======
->>>>>>> .merge_file_4uEtF0
->>>>>>> laraxot/dev
->>>>>>> .merge_file_a87Yeu
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_xpwx04
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

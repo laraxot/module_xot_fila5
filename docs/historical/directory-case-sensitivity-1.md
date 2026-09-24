@@ -120,37 +120,8 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 
 ## Collegamenti ad Altri Documenti
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_RGZECo
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_w5Uax6
-- [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
-- [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
-=======
-<<<<<<< .merge_file_XSI93R
-- [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
-- [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
-=======
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
->>>>>>> .merge_file_f0msWj
->>>>>>> .merge_file_79cXZ9
-=======
-<<<<<<< HEAD
-- [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
-- [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
-- [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
->>>>>>> .merge_file_gs9goO
-=======
-- [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
-- [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -161,30 +132,6 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 
 - [README.md](./README.md) - Indice principale della documentazione
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
-<<<<<<< HEAD
-<<<<<<< .merge_file_RGZECo
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_w5Uax6
-- [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
-=======
-<<<<<<< .merge_file_XSI93R
-- [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
-=======
 - [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
->>>>>>> .merge_file_f0msWj
->>>>>>> .merge_file_79cXZ9
-=======
-<<<<<<< HEAD
-- [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
->>>>>>> .merge_file_gs9goO
-=======
-- [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget

@@ -17,46 +17,6 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 ### ✅ healthcare_app Module
-<<<<<<< HEAD
-<<<<<<< .merge_file_9xMavo
-<<<<<<< HEAD
-<<<<<<< HEAD
-### ✅ ExternalProject Module
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-### ✅ Quaeris Module
-=======
->>>>>>> 7f6cf6be (.)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_AMCMU6
-<<<<<<< HEAD
-### ✅ ExternalProject Module
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_TOLG16
-<<<<<<< HEAD
-=======
-### ✅ ExternalProject Module
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-### ✅ ExternalProject Module
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_pqMDSQ
-=======
-=======
-### ✅ ExternalProject Module
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module
@@ -101,36 +61,4 @@ Files generally have good scores with minor style issues:
 
 **✅ COMPLETED**: All `property_exists()` usage in Eloquent models has been eliminated and replaced with proper magic property checks.
 
-<<<<<<< .merge_file_9xMavo
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-=======
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-=======
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-<<<<<<< HEAD
->>>>>>> 7f6cf6be (.)
-=======
->>>>>>> laraxot/dev
-=======
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
->>>>>>> .merge_file_pqMDSQ
-=======
-=======
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -24,54 +24,10 @@ class ClienteResource extends XotBaseResource
     protected static ?string $cluster = ClienteCluster::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_T4LNlo
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_EMo0DD
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_gcAzR7
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_RrN2bM
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_T4LNlo
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_EMo0DD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_gcAzR7
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_RrN2bM
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             // Schema del form

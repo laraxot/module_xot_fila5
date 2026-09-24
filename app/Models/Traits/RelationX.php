@@ -20,11 +20,6 @@ trait RelationX
     /**
      * @template TRelatedModel of Model
      *
-<<<<<<< .merge_file_2T8WNI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_GIrfHE
      * @param  class-string<TRelatedModel>  $related  Related model class
      * @param  class-string<Model>|string|null  $_table  Pivot table name
      * @param  string|null  $foreignPivotKey  Foreign pivot key
@@ -32,24 +27,6 @@ trait RelationX
      * @param  string|null  $parentKey  Parent key
      * @param  string|null  $relatedKey  Related key
      * @param  string|null  $relation  Relation name
-<<<<<<< .merge_file_2T8WNI
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param class-string<TRelatedModel>     $related         Related model class
-     * @param class-string<Model>|string|null $_table          Pivot table name
-     * @param string|null                     $foreignPivotKey Foreign pivot key
-     * @param string|null                     $relatedPivotKey Related pivot key
-     * @param string|null                     $parentKey       Parent key
-     * @param string|null                     $relatedKey      Related key
-     * @param string|null                     $relation        Relation name
-     *
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_GIrfHE
      * @return BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'>
      */
     public function belongsToManyX(
@@ -79,19 +56,7 @@ trait RelationX
             $pivotDriver = $pivot->getConnection()->getDriverName();
             // Only add database prefix for non-SQLite drivers
             // SQLite doesn't support database.table syntax
-<<<<<<< .merge_file_2T8WNI
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($pivotDriver !== 'sqlite') {
-=======
-            if ('sqlite' !== $pivotDriver) {
->>>>>>> laraxot/dev
-=======
-            if ('sqlite' !== $pivotDriver) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($pivotDriver !== 'sqlite') {
->>>>>>> .merge_file_GIrfHE
                 $table = $pivotDbName.'.'.$table;
             }
         }
@@ -116,21 +81,7 @@ trait RelationX
      *
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
      *
-<<<<<<< .merge_file_2T8WNI
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<TRelatedModel>  $related
-=======
-     * @param class-string<TRelatedModel> $related
-     *
->>>>>>> laraxot/dev
-=======
-     * @param class-string<TRelatedModel> $related
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<TRelatedModel>  $related
->>>>>>> .merge_file_GIrfHE
      * @return MorphToMany<TRelatedModel, $this>
      */
     public function morphToManyX(
@@ -151,19 +102,7 @@ trait RelationX
         $pivotDbName = $pivot->getConnection()->getDatabaseName();
         $dbName = $this->getConnection()->getDatabaseName();
         // $relatedDbName = $related_model->getConnection()->getDatabaseName();
-<<<<<<< .merge_file_2T8WNI
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($table === null) {
-=======
-        if (null === $table) {
->>>>>>> laraxot/dev
-=======
-        if (null === $table) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($table === null) {
->>>>>>> .merge_file_GIrfHE
             $table = $pivot->getTable();
         }
 
@@ -198,23 +137,8 @@ trait RelationX
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
-<<<<<<< .merge_file_2T8WNI
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  string  $related  The related model class name
      * @param  string|class-string|null  $class  The class to use for parent class lookup (used internally)
-=======
-     * @param string                   $related The related model class name
-     * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
->>>>>>> laraxot/dev
-=======
-     * @param string                   $related The related model class name
-     * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  string  $related  The related model class name
-     * @param  string|class-string|null  $class  The class to use for parent class lookup (used internally)
->>>>>>> .merge_file_GIrfHE
      */
     public function guessPivot(string $related, ?string $class = null): Pivot
     {
@@ -265,19 +189,7 @@ trait RelationX
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
-<<<<<<< .merge_file_2T8WNI
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($parent_class === false) {
-=======
-        if (false === $parent_class) {
->>>>>>> laraxot/dev
-=======
-        if (false === $parent_class) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($parent_class === false) {
->>>>>>> .merge_file_GIrfHE
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

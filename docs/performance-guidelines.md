@@ -436,28 +436,6 @@ public function processData(): void
 
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
-<<<<<<< .merge_file_EPRImK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Code Quality Standards](./code_quality_standards.md)
-- [Common Anti-Patterns](./common_anti_patterns.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Code Quality Standards](./code_quality_standards.md)
-- [Common Anti-Patterns](./common_anti_patterns.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4cLv9T
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
@@ -899,41 +877,6 @@ public function processData(): void
 
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
-<<<<<<< .merge_file_EPRImK
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
-=======
-<<<<<<< HEAD
-- [Testing Guidelines](./testing-guidelines.md)
-
-This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Code Quality Standards](./code_quality_standards.md)
-- [Common Anti-Patterns](./common_anti_patterns.md)
-- [Testing Guidelines](./testing-guidelines.md)
-
-<<<<<<< HEAD
-This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-- [Testing Guidelines](./testing-guidelines.md)
-
-This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
-<<<<<<< HEAD
->>>>>>> .merge_file_4cLv9T
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

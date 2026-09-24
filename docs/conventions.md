@@ -154,34 +154,3 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 * [conventions.md](../../../../docs/conventions.md)
 * [conventions.md](../../Dental/docs/conventions.md)
 * [conventions.md](../../Patient/docs/conventions.md)
-<<<<<<< .merge_file_A2HmWJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-* [CONVENTIONS.md](../../../xot/docs/conventions.md)
-* [CONVENTIONS.md](../../../dental/docs/conventions.md)
-* [CONVENTIONS.md](../../../patient/docs/conventions.md)
-
-## Collegamenti tra versioni di conventions.md
-* [conventions.md](../../../../../docs/tecnico/filament/conventions.md)
-* [conventions.md](../../../../../docs/conventions.md)
-* [conventions.md](../../dental/docs/conventions.md)
-<<<<<<< HEAD
-* [conventions.md](../../patient/docs/conventions.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [conventions.md](../../patient/docs/conventions.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_o8kpmU
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

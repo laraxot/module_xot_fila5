@@ -1,14 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/paulvl/backup/blob/master/src/Console/Commands/MysqlDump.php
  */
@@ -18,30 +10,10 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-<<<<<<< .merge_file_MaaXY2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_oiVjn4
 use Webmozart\Assert\Assert;
 
 use function Safe\exec;
 
-<<<<<<< .merge_file_MaaXY2
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-use function Safe\exec;
-
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_oiVjn4
 class DatabaseBackUpCommand extends Command
 {
     /**
@@ -59,45 +31,14 @@ class DatabaseBackUpCommand extends Command
     protected $description = 'Dump your Mysql database to a file';
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_MaaXY2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-     * Create a new command instance.
-     */
-
-    /**
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_oiVjn4
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      * Execute the console command.
      */
     public function handle(): void
     {
         $filename = 'backup-'.Carbon::now()->format('Y-m-d').'.gz';
-<<<<<<< HEAD
         $backupPath = storage_path('app/backup/'.$filename);
         Assert::string(
             $backupPath = Str::replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $backupPath),
-=======
-        $backup_path = storage_path('app/backup/'.$filename);
-        Assert::string(
-            $backup_path = Str::replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $backup_path),
->>>>>>> 3792da0d (Check & fix styling)
             'wip',
         );
         Assert::string($user = config('database.connections.mysql.username'));
@@ -114,11 +55,7 @@ class DatabaseBackUpCommand extends Command
             ' '.
             $database.
             '  | gzip > '.
-<<<<<<< HEAD
             $backupPath;
-=======
-            $backup_path;
->>>>>>> 3792da0d (Check & fix styling)
 
         $returnVar = null;
         $output = null;

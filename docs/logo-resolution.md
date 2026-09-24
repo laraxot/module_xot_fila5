@@ -1,17 +1,5 @@
 # Risoluzione dei Loghi
 
-<<<<<<< .merge_file_FR4NwT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_7Z26zp
-=======
-=======
->>>>>>> .merge_file_MJXvAn
-=======
->>>>>>> .merge_file_O5OKBa
 Il login Filament (`/admin/login`) prende il logo da `MetatagData::getBrandLogo()`,
 che chiama `AssetAction` sulla chiave `logo_header` (es. `ptv::img/icon.png`).
 
@@ -33,22 +21,6 @@ Story: `docs/bmad/stories/5.223-admin-login-logo-asset-copy.story.md`.
 
 ## Processo di Risoluzione
 
-<<<<<<< .merge_file_FR4NwT
-<<<<<<< .merge_file_7Z26zp
-=======
-=======
->>>>>>> .merge_file_MJXvAn
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_O5OKBa
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
 
 ## Processo di Risoluzione
@@ -151,55 +123,12 @@ Per la versione dark:
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
-<<<<<<< .merge_file_FR4NwT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_O5OKBa
-=======
->>>>>>> da9ae01a0 (.)
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
-<<<<<<< .merge_file_FR4NwT
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Gestione Domini e Configurazioni](domain_configuration.md)
-- [Configurazione Generale](configuration.md)
-- [Struttura dei Moduli](module_structure.md)
-- [Architettura Folio + Volt](folio_volt_architecture.md)
-- [Regole per la Case Sensitivity](directory-case-sensitivity.md)
-- [Regole per i Namespace](namespace-rules.md)
-=======
->>>>>>> 930f8146 (Check & fix styling)
-- [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
-- [Configurazione Generale](CONFIGURATION.md)
-- [Struttura dei Moduli](MODULE_STRUCTURE.md)
-- [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
-- [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
-- [Regole per i Namespace](NAMESPACE-RULES.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_O5OKBa
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -207,59 +136,8 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../docs/architettura-folio-volt.md)
-<<<<<<< .merge_file_FR4NwT
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Convenzioni di Naming](naming-conventions.md)
-
-### Collegamenti alla Root del Progetto
-- [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
-- [Configurazione e Risoluzione dei Loghi](../../../../docs/configurazione-logo.md)
-- [Struttura dei Moduli in il progetto](../../../../docs/struttura-moduli.md)
-- [Architettura Folio + Volt in il progetto](../../../../docs/architettura-folio-volt.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_O5OKBa
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
 ### Nota Importante
-<<<<<<< .merge_file_FR4NwT
-<<<<<<< HEAD
-<<<<<<< HEAD
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
-=======
-Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
->>>>>>> .merge_file_O5OKBa
-=======
-=======
-Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

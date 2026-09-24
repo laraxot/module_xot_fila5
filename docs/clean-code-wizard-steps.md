@@ -27,48 +27,8 @@ protected static function getPersonalStep(): Forms\Components\Wizard\Step
 
 ## Collegamenti
 - [Applicazione e nota nel modulo Patient](../../Patient/docs/clean-code-wizard-steps.md)
-<<<<<<< .merge_file_JCPTCd
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Applicazione e nota nel modulo Patient](../../patient/docs/clean-code-wizard-steps.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Applicazione e nota nel modulo Patient](../../patient/docs/clean-code-wizard-steps.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_NKjlu7
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Questa regola è trasversale e vincolante per tutti i moduli.**
 
 ## Collegamenti tra versioni di clean-code-wizard-steps.md
 * [clean-code-wizard-steps.md](../../Patient/docs/clean-code-wizard-steps.md)
-<<<<<<< .merge_file_JCPTCd
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-* [clean-code-wizard-steps.md](../../patient/docs/clean-code-wizard-steps.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [clean-code-wizard-steps.md](../../patient/docs/clean-code-wizard-steps.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_NKjlu7
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

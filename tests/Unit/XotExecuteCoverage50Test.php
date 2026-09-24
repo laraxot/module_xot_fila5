@@ -16,74 +16,14 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\LazyCollection;
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Mockery;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-use Mockery;
-=======
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-use Mockery;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-use Mockery;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-use Mockery;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\ArtisanAction;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
 use Modules\Xot\Actions\Factory\GetPropertiesFromMethodsByModelAction;
 use Modules\Xot\Actions\Filament\GenerateTableColumnsByFileAction;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 use Modules\Xot\Actions\File\FileAction;
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-=======
-use Modules\Xot\Actions\Route\IsAdminRouteAction;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-use Modules\Xot\Actions\Route\IsAdminRouteAction;
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-use Modules\Xot\Actions\Route\IsAdminRouteAction;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Console\Commands\AddStrictTypesDeclarationCommand;
 use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
@@ -137,40 +77,6 @@ use Modules\Xot\Models\XotBaseMorphPivot;
 use Modules\Xot\Models\XotBasePivot;
 use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Providers\FilamentOptimizationServiceProvider;
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-use Modules\Xot\Actions\Route\IsAdminRouteAction;
-=======
-<<<<<<< HEAD
-use Modules\Xot\Actions\Route\IsAdminRouteAction;
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\QueryBuilders\BaseQueryBuilder;
 use Modules\Xot\States\XotBaseState;
 use Modules\Xot\Tests\FilamentSchemaCoverage;
@@ -179,76 +85,13 @@ use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasCsrfToken;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
-=======
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-use Symfony\Component\Console\Input\ArrayInput;
-use Symfony\Component\Console\Output\NullOutput;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-use Symfony\Component\Console\Output\OutputInterface;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-
-use function Safe\ob_get_clean;
-use function Safe\ob_start;
-
-use Symfony\Component\Console\Input\ArrayInput;
-use Symfony\Component\Console\Output\NullOutput;
-use Symfony\Component\Console\Output\OutputInterface;
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-use Symfony\Component\Console\Input\ArrayInput;
-use Symfony\Component\Console\Output\NullOutput;
-use Symfony\Component\Console\Output\OutputInterface;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_UAp5L6
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
@@ -256,30 +99,6 @@ uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
     Mockery::close();
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-uses(TestCase::class)->group('no-xot-db');
-
-afterEach(function (): void {
-    \Mockery::close();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 });
 
 /** @return array{string, string} */
@@ -298,34 +117,7 @@ function xotInvoke(object $target, string $method, mixed ...$args): mixed
 }
 
 /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @param  list<Model>  $models
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
- * @param  list<Model>  $models
-=======
- * @param list<Model> $models
- *
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
- * @param  list<Model>  $models
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @param  list<Model>  $models
->>>>>>> .merge_file_3h5vAp
-=======
-=======
- * @param  list<Model>  $models
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  * @return LazyCollection<int, mixed>
  */
 function xotModelRows(array $models): LazyCollection
@@ -406,33 +198,7 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('XotData e MetatagData eseguono getter semantici e rami puri', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xot = new XotData;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $xot = new XotData;
-=======
-        $xot = new XotData();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $xot = new XotData;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $xot = new XotData;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $xot = new XotData;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->force_ssl = true;
@@ -454,33 +220,7 @@ describe('Xot execute coverage floor 50', function (): void {
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $meta = new MetatagData;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $meta = new MetatagData;
-=======
-        $meta = new MetatagData();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $meta = new MetatagData;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $meta = new MetatagData;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $meta = new MetatagData;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Descrizione';
@@ -551,33 +291,7 @@ describe('Xot execute coverage floor 50', function (): void {
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $middleware = new SecurityMiddleware;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $middleware = new SecurityMiddleware;
-=======
-        $middleware = new SecurityMiddleware();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $middleware = new SecurityMiddleware;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $middleware = new SecurityMiddleware;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $middleware = new SecurityMiddleware;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $request = Request::create('/dashboard', 'GET', [], [], [], [
             'HTTP_USER_AGENT' => 'PHPUnit/SecurityMiddleware',
             'REMOTE_ADDR' => '127.0.0.'.random_int(10, 200),
@@ -606,44 +320,9 @@ describe('Xot execute coverage floor 50', function (): void {
         File::put($tmp.'/Resources/Form.php', "<?php\ngetFormSchema(); \$x->whereNull('x')->update([]);\n");
         File::put($tmp.'/Pages/ListItems.php', "<?php\nclass ListItems {}\n");
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $splFiles = (new Filesystem)->allFiles($tmp);
         $original = File::getFacadeRoot();
         $mockFs = Mockery::mock(Filesystem::class)->makePartial();
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $splFiles = (new Filesystem)->allFiles($tmp);
-        $original = File::getFacadeRoot();
-        $mockFs = Mockery::mock(Filesystem::class)->makePartial();
-=======
-        $splFiles = (new Filesystem())->allFiles($tmp);
-        $original = File::getFacadeRoot();
-        $mockFs = \Mockery::mock(Filesystem::class)->makePartial();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
-=======
-        $splFiles = (new Filesystem)->allFiles($tmp);
-        $original = File::getFacadeRoot();
-        $mockFs = Mockery::mock(Filesystem::class)->makePartial();
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $splFiles = (new Filesystem)->allFiles($tmp);
-        $original = File::getFacadeRoot();
-        $mockFs = Mockery::mock(Filesystem::class)->makePartial();
->>>>>>> .merge_file_3h5vAp
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $mockFs->shouldReceive('allFiles')->andReturn($splFiles);
         File::swap($mockFs);
 
@@ -656,116 +335,21 @@ describe('Xot execute coverage floor 50', function (): void {
 
             $exitCode = $command->run(
                 new ArrayInput(['--analyze' => true, '--verbose' => true]),
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
                 new NullOutput
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-                new NullOutput
-=======
-                new NullOutput()
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                new NullOutput
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                new NullOutput
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-                new NullOutput
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             );
             Assert::assertSame(0, $exitCode);
         } finally {
             File::swap($original);
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             Mockery::close();
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            Mockery::close();
-=======
-            \Mockery::close();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            Mockery::close();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            Mockery::close();
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            Mockery::close();
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         }
     });
 
     test('XotBaseMigration espone modello tabella e connessione', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_UAp5L6
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-        $migration = new class extends XotBaseMigration {
-            protected ?string $model_class = CacheModel::class;
-
-            public function up(): void
-            {
-            }
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         };
 
         Assert::assertSame(CacheModel::class, $migration->getModelClass());
@@ -798,33 +382,7 @@ describe('Xot execute coverage floor 50', function (): void {
 
     test('SecurityMiddleware copre path sospetti e rate limit endpoint', function (): void {
         config(['cache.default' => 'array']);
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $middleware = new SecurityMiddleware;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $middleware = new SecurityMiddleware;
-=======
-        $middleware = new SecurityMiddleware();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $middleware = new SecurityMiddleware;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $middleware = new SecurityMiddleware;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $middleware = new SecurityMiddleware;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
         $suspicious = Request::create('/search', 'GET', [
             'q' => 'safe-query',
@@ -900,33 +458,7 @@ describe('Xot execute coverage floor 50', function (): void {
                         continue;
                     }
                     $m = new \ReflectionMethod($instance, $method);
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
                     if ($m->getNumberOfRequiredParameters() === 0) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-                    if ($m->getNumberOfRequiredParameters() === 0) {
-=======
-                    if (0 === $m->getNumberOfRequiredParameters()) {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                    if ($m->getNumberOfRequiredParameters() === 0) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                    if ($m->getNumberOfRequiredParameters() === 0) {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-                    if ($m->getNumberOfRequiredParameters() === 0) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                         $m->invoke($instance);
                     }
                 }
@@ -936,54 +468,11 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('XotBaseMigration helper schema su blueprint in memoria', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_UAp5L6
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-        $migration = new class extends XotBaseMigration {
-            protected ?string $model_class = CacheModel::class;
-
-            public function up(): void
-            {
-            }
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         };
 
         try {
@@ -1046,44 +535,7 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertNotEmpty($resource::getModuleName());
             Assert::assertNotEmpty($resource::getPages());
             Assert::assertNotEmpty($resource::getRelations());
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-            
-=======
-<<<<<<< HEAD
-            
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             try {
                 Assert::assertNotEmpty($resource::getInfolistSchema());
             } catch (\Throwable) {
@@ -1168,54 +620,11 @@ describe('Xot execute coverage floor 50', function (): void {
     });
 
     test('XotBaseMigration blueprint helpers e schema methods', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_UAp5L6
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
             public function up(): void {}
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-        $migration = new class extends XotBaseMigration {
-            protected ?string $model_class = CacheModel::class;
-
-            public function up(): void
-            {
-            }
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         };
 
         try {
@@ -1227,33 +636,7 @@ describe('Xot execute coverage floor 50', function (): void {
             $blueprint = null;
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($blueprint !== null) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        if ($blueprint !== null) {
-=======
-        if (null !== $blueprint) {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        if ($blueprint !== null) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($blueprint !== null) {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        if ($blueprint !== null) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             try {
                 $migration->addCommonFields($blueprint);
                 $migration->updateTimestamps($blueprint, true);
@@ -1296,34 +679,7 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             $migration->tableUpdate(static function (Blueprint $table): void {});
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            $migration->tableUpdate(static function (Blueprint $table): void {});
-=======
-            $migration->tableUpdate(static function (Blueprint $table): void {
-            });
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            $migration->tableUpdate(static function (Blueprint $table): void {});
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $migration->tableUpdate(static function (Blueprint $table): void {});
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            $migration->tableUpdate(static function (Blueprint $table): void {});
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         } catch (\Throwable) {
         }
     });
@@ -1373,53 +729,11 @@ describe('Xot execute coverage floor 50', function (): void {
         $twins = app(CheckAccessorTwinsCommand::class);
         $twins->setLaravel(app());
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_UAp5L6
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             $twins->run(new ArrayInput(['--module' => 'Xot']), new NullOutput);
         } catch (\Throwable) {
         }
         try {
             $twins->run(new ArrayInput(['--module' => 'Xot', '--orphans' => true]), new NullOutput);
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-            $twins->run(new ArrayInput(['--module' => 'Xot']), new NullOutput());
-        } catch (\Throwable) {
-        }
-        try {
-            $twins->run(new ArrayInput(['--module' => 'Xot', '--orphans' => true]), new NullOutput());
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         } catch (\Throwable) {
         }
 
@@ -1428,33 +742,7 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             $search->run(
                 new ArrayInput(['search' => 'xot-coverage-needle-impossible', '--tables' => ['cache']]),
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
                 new NullOutput
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-                new NullOutput
-=======
-                new NullOutput()
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                new NullOutput
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                new NullOutput
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-                new NullOutput
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             );
         } catch (\Throwable) {
         }
@@ -1465,33 +753,7 @@ describe('Xot execute coverage floor 50', function (): void {
             'filament_optimization.monitoring.memory_threshold_mb' => 0.0001,
             'filament_optimization.monitoring.time_threshold_ms' => 0.0001,
         ]);
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $memMw = new FilamentMemoryMonitorMiddleware;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $memMw = new FilamentMemoryMonitorMiddleware;
-=======
-        $memMw = new FilamentMemoryMonitorMiddleware();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $memMw = new FilamentMemoryMonitorMiddleware;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $memMw = new FilamentMemoryMonitorMiddleware;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $memMw = new FilamentMemoryMonitorMiddleware;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $adminReq = Request::create('/admin/xot/resources', 'GET', [], [], [], [
             'HTTP_USER_AGENT' => 'PHPUnit',
             'REMOTE_ADDR' => '10.9.9.'.random_int(1, 200),
@@ -1559,33 +821,7 @@ describe('Xot execute coverage floor 50', function (): void {
         }
 
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
-=======
-            app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel());
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            app(GetPropertiesFromMethodsByModelAction::class)->execute(new CacheModel);
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         } catch (\Throwable) {
         }
 
@@ -1602,33 +838,7 @@ describe('Xot execute coverage floor 50', function (): void {
                         continue;
                     }
                     $method = new \ReflectionMethod($widget, $wm);
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
                     if ($method->getNumberOfRequiredParameters() === 0) {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-                    if ($method->getNumberOfRequiredParameters() === 0) {
-=======
-                    if (0 === $method->getNumberOfRequiredParameters()) {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                    if ($method->getNumberOfRequiredParameters() === 0) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                    if ($method->getNumberOfRequiredParameters() === 0) {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-                    if ($method->getNumberOfRequiredParameters() === 0) {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                         try {
                             $method->invoke($widget);
                         } catch (\Throwable) {
@@ -1708,38 +918,8 @@ describe('Xot execute coverage floor 50', function (): void {
         Assert::assertStringEndsWith('#record-7', RecordAnchor::appendTo('/list', 7));
         Assert::assertSame('/list#x', RecordAnchor::appendTo('/list#x', 7));
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $qb = new class extends BaseQueryBuilder
         {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $qb = new class extends BaseQueryBuilder
-        {
-=======
-        $qb = new class extends BaseQueryBuilder {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $qb = new class extends BaseQueryBuilder
-        {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $qb = new class extends BaseQueryBuilder
-        {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $qb = new class extends BaseQueryBuilder
-        {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             protected function getModel(): string
             {
                 return CacheModel::class;
@@ -1794,77 +974,13 @@ describe('Xot execute coverage floor 50', function (): void {
         $decorator->renderer(static function (\Throwable $e, Request $request): Response {
             return response('handled', 200);
         });
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
-=======
-<<<<<<< HEAD
-        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
-=======
-        $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {
-        });
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $decorator->consoleRenderer(static function (\Throwable $e, OutputInterface $output): void {});
->>>>>>> .merge_file_3h5vAp
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $decorator->report(new \RuntimeException('cov'));
         Assert::assertTrue($reported);
         Assert::assertSame(200, $decorator->render(Request::create('/'), new \RuntimeException('r'))->getStatusCode());
         Assert::assertTrue($decorator->shouldReport(new \RuntimeException('s')));
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             $decorator->renderForConsole(new NullOutput, new \RuntimeException('c'));
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            $decorator->renderForConsole(new NullOutput, new \RuntimeException('c'));
-=======
-            $decorator->renderForConsole(new NullOutput(), new \RuntimeException('c'));
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            $decorator->renderForConsole(new NullOutput, new \RuntimeException('c'));
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $decorator->renderForConsole(new NullOutput, new \RuntimeException('c'));
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            $decorator->renderForConsole(new NullOutput, new \RuntimeException('c'));
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         } catch (\Throwable) {
         }
         try {
@@ -1872,39 +988,8 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $export = new ExportXlsStreamByLazyCollection;
         $rowExport = new CacheModel;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $export = new ExportXlsStreamByLazyCollection;
-        $rowExport = new CacheModel;
-=======
-        $export = new ExportXlsStreamByLazyCollection();
-        $rowExport = new CacheModel();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $export = new ExportXlsStreamByLazyCollection;
-        $rowExport = new CacheModel;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $export = new ExportXlsStreamByLazyCollection;
-        $rowExport = new CacheModel;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $export = new ExportXlsStreamByLazyCollection;
-        $rowExport = new CacheModel;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $rowExport->setRawAttributes(['id' => 3, 'name' => 'B']);
         $lazy2 = xotModelRows([$rowExport]);
         Assert::assertSame([], $export->headings(LazyCollection::make([])));
@@ -1922,64 +1007,12 @@ describe('Xot execute coverage floor 50', function (): void {
         try {
             Assert::assertSame(0, $cmd->run(
                 new ArrayInput(['--module' => 'Xot', '--dry-run' => true]),
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
                 new NullOutput
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-                new NullOutput
-=======
-                new NullOutput()
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                new NullOutput
->>>>>>> 3792da0d (Check & fix styling)
-=======
-                new NullOutput
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-                new NullOutput
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             ));
         } catch (\Throwable) {
         }
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
-=======
-            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput());
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            $cmd->run(new ArrayInput(['--module' => 'MissingModuleXYZ', '--dry-run' => true]), new NullOutput);
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         } catch (\Throwable) {
         }
 
@@ -1988,34 +1021,7 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $chart = new class extends XotBaseChartWidget {};
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $chart = new class extends XotBaseChartWidget {};
-=======
-        $chart = new class extends XotBaseChartWidget {
-        };
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $chart = new class extends XotBaseChartWidget {};
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $chart = new class extends XotBaseChartWidget {};
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $chart = new class extends XotBaseChartWidget {};
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $cref = new \ReflectionClass($chart);
         foreach (['getHeading', 'getData', 'getType', 'getOptionsArray', 'getHeight'] as $method) {
             if (! $cref->hasMethod($method)) {
@@ -2029,38 +1035,8 @@ describe('Xot execute coverage floor 50', function (): void {
             }
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $state = new class extends XotBaseState
         {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $state = new class extends XotBaseState
-        {
-=======
-        $state = new class extends XotBaseState {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $state = new class extends XotBaseState
-        {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $state = new class extends XotBaseState
-        {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $state = new class extends XotBaseState
-        {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             public static string $name = 'cov_state';
         };
         Assert::assertSame('cov_state', $state::getName());
@@ -2075,76 +1051,15 @@ describe('Xot execute coverage floor 50', function (): void {
         }
         try {
             Assert::assertSame(['message' => 'x'], $state->modalFillForm([], ['message' => 'x']));
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
             $state->modalAction([], ['message' => 'x']);
             $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
-            $state->modalAction([], ['message' => 'x']);
-            $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
-=======
-            Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel()));
-            $state->modalAction([], ['message' => 'x']);
-            $state->modalActionByRecord(new CacheModel(), ['message' => 'x']);
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
-=======
-            Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
-            $state->modalAction([], ['message' => 'x']);
-            $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            Assert::assertSame([], $state->modalFillFormByRecord(new CacheModel));
-            $state->modalAction([], ['message' => 'x']);
-            $state->modalActionByRecord(new CacheModel, ['message' => 'x']);
->>>>>>> .merge_file_3h5vAp
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             Assert::assertSame([], $state::getOptions());
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $cache = new XotCovRelationHost;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $cache = new XotCovRelationHost;
-=======
-        $cache = new XotCovRelationHost();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $cache = new XotCovRelationHost;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $cache = new XotCovRelationHost;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $cache = new XotCovRelationHost;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         try {
             $cache->guessPivotFullClass('CacheSession', CacheModel::class);
         } catch (\Throwable) {
@@ -2158,33 +1073,7 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $gen = new GenerateTableColumnsByFileAction;
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $gen = new GenerateTableColumnsByFileAction;
-=======
-        $gen = new GenerateTableColumnsByFileAction();
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $gen = new GenerateTableColumnsByFileAction;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $gen = new GenerateTableColumnsByFileAction;
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $gen = new GenerateTableColumnsByFileAction;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $tmpTxt = sys_get_temp_dir().'/xot-not-php-'.uniqid('', true).'.txt';
         File::put($tmpTxt, 'nope');
         try {
@@ -2193,76 +1082,16 @@ describe('Xot execute coverage floor 50', function (): void {
         }
 
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             $pivot = new class extends XotBasePivot
             {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            $pivot = new class extends XotBasePivot
-            {
-=======
-            $pivot = new class extends XotBasePivot {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            $pivot = new class extends XotBasePivot
-            {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $pivot = new class extends XotBasePivot
-            {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            $pivot = new class extends XotBasePivot
-            {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 protected $table = 'cache';
             };
             Assert::assertInstanceOf(XotBasePivot::class, $pivot);
         } catch (\Throwable) {
         }
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             $morph = new class extends XotBaseMorphPivot
             {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            $morph = new class extends XotBaseMorphPivot
-            {
-=======
-            $morph = new class extends XotBaseMorphPivot {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            $morph = new class extends XotBaseMorphPivot
-            {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $morph = new class extends XotBaseMorphPivot
-            {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            $morph = new class extends XotBaseMorphPivot
-            {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 protected $table = 'cache';
             };
             Assert::assertInstanceOf(XotBaseMorphPivot::class, $morph);
@@ -2270,76 +1099,16 @@ describe('Xot execute coverage floor 50', function (): void {
         }
 
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
             $uuid = new class extends XotBaseUuidModel
             {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-            $uuid = new class extends XotBaseUuidModel
-            {
-=======
-            $uuid = new class extends XotBaseUuidModel {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            $uuid = new class extends XotBaseUuidModel
-            {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $uuid = new class extends XotBaseUuidModel
-            {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-            $uuid = new class extends XotBaseUuidModel
-            {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 protected $table = 'cache';
             };
             Assert::assertNotEmpty((string) $uuid->getKeyName());
         } catch (\Throwable) {
         }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_AMoRFN
-<<<<<<< HEAD
-<<<<<<< HEAD
         $csrf = new class
         {
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_UAp5L6
-        $csrf = new class
-        {
-=======
-        $csrf = new class {
->>>>>>> .merge_file_ayyJ5W
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $csrf = new class
-        {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $csrf = new class
-        {
->>>>>>> .merge_file_3h5vAp
-=======
-=======
-        $csrf = new class
-        {
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             use HasCsrfToken;
         };
         try {

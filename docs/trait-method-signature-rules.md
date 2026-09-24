@@ -135,33 +135,5 @@ If you encounter this error:
 ---
 
 *Last Updated: 2025-08-27*
-<<<<<<< .merge_file_GL2Q21
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Trait Standards Version: 2.0*
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Trait Standards Version: 2.0*
-
-=======
-*
-*Trait Standards Version: 2.0*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*
-*Trait Standards Version: 2.0*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Trait Standards Version: 2.0*
-
->>>>>>> .merge_file_NFFIGE
-=======
-=======
-*Trait Standards Version: 2.0*
-
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

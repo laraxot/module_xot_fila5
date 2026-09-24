@@ -20,29 +20,17 @@ it('gets and caches components correctly', function (): void {
     $compContent = "namespace My\Test\Comps;
 class TestComp {}";
     File::put($compPath, $compContent);
-<<<<<<< HEAD
 
     if (! class_exists('My\Test\Comps\TestComp')) {
         eval("namespace My\Test\Comps; class TestComp {}");
     }
-=======
-    require_once $compPath;
->>>>>>> 930f8146 (Check & fix styling)
 
     $action = app(GetComponentsAction::class);
     $result = $action->execute($tempDir, 'My/Test/Comps', 'prefix-');
 
     Assert::assertInstanceOf(DataCollection::class, $result);
     Assert::assertSame(1, $result->count());
-<<<<<<< HEAD
     $first = $result->toCollection()->first();
-=======
-    $first = $result->first();
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     Assert::assertNotNull($first);
     Assert::assertSame('prefix-test-comp', $first->name);
     $jsonCache = $tempDir.'/_components.json';
@@ -58,14 +46,10 @@ it('skips abstract classes', function (): void {
 
     $compPath = $tempDir.'/AbstractComp.php';
     File::put($compPath, "namespace My\Test\Comps; abstract class AbstractComp {}");
-<<<<<<< HEAD
 
     if (! class_exists('My\Test\Comps\AbstractComp')) {
         eval("namespace My\Test\Comps; abstract class AbstractComp {}");
     }
-=======
-    require_once $compPath;
->>>>>>> 930f8146 (Check & fix styling)
 
     $action = app(GetComponentsAction::class);
     $result = $action->execute($tempDir, 'My/Test/Comps', 'prefix-');

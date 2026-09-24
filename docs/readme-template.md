@@ -270,27 +270,4 @@ Questo modulo è rilasciato sotto la [MIT License](LICENSE.md).
 ## Ringraziamenti
 
 - [Nome Libreria/Framework] per [funzionalità specifica]
-<<<<<<< .merge_file_VdY6Co
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Nome Persona/Organizzazione] per [contributo specifico]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Nome Persona/Organizzazione] per [contributo specifico]
-=======
-- [Nome Persona/Organizzazione] per [contributo specifico]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Nome Persona/Organizzazione] per [contributo specifico]
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Nome Persona/Organizzazione] per [contributo specifico]
->>>>>>> .merge_file_HfoYG0
-=======
-=======
-- [Nome Persona/Organizzazione] per [contributo specifico]
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

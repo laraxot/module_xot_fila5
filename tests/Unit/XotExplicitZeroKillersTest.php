@@ -17,37 +17,7 @@ test('action URLs fall back to an explicit fragment outside a route', function (
     /** @var array<string, mixed> $paramsArray */
     $paramsArray = $params->toArray();
 
-<<<<<<< HEAD
     expect((new BuildActionUrlAction)->execute($paramsArray))->toBe('#edit');
-<<<<<<< .merge_file_1fdEVl
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_DqOtoL
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-    expect((new BuildActionUrlAction)->execute($paramsArray))->toBe('#edit');
-=======
-    expect((new BuildActionUrlAction())->execute($paramsArray))->toBe('#edit');
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-    expect((new BuildActionUrlAction())->execute($paramsArray))->toBe('#edit');
->>>>>>> .merge_file_39Ae58
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    expect((new BuildActionUrlAction())->execute($paramsArray))->toBe('#edit');
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Zj17qi
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 });
 
 test('component analyzer exposes its supported filters', function (): void {

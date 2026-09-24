@@ -312,49 +312,11 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
-<<<<<<< .merge_file_ZhB1uc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_TATJcq
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZhB1uc
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-*Ultimo aggiornamento: gennaio 2025*
-- [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
-- [PathHelper Current](../Helpers/PathHelper.php)
-- [XotData Current](../Datas/XotData.php)
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_TATJcq
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -669,47 +631,8 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
-<<<<<<< .merge_file_ZhB1uc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_TATJcq
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
-<<<<<<< HEAD
-<<<<<<< .merge_file_ZhB1uc
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-*Ultimo aggiornamento: gennaio 2025*
-- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
-- [PathHelper Current](../Helpers/PathHelper.php)
-- [XotData Current](../Datas/XotData.php)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: gennaio 2025*
-- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
-- [PathHelper Current](../Helpers/PathHelper.php)
-- [XotData Current](../Datas/XotData.php)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_TATJcq
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
