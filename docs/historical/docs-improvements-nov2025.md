@@ -1,4 +1,7 @@
+<<<<<<< .merge_file_tUBpEY
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_SuQ85l
 ---
 title: "Docs Improvements Nov"
 type: concept
@@ -15,6 +18,8 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [docs-improvements-nov.md](./docs-improvements-nov.md)
+<<<<<<< .merge_file_tUBpEY
+=======
 =======
 # Miglioramenti Documentazione - Novembre 2025
 
@@ -280,3 +285,4 @@ find . -name "readme.md" -o -name "Readme.md"
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
 
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_SuQ85l

@@ -10,7 +10,6 @@ use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
-use ReflectionMethod;
 
 use function Safe\chmod;
 use function Safe\file_get_contents;
@@ -55,9 +54,10 @@ it('publishes module asset to public assets path', function (): void {
         unlink($dest);
     }
 
-    app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction
-    {
-        public function __construct(private string $modulePath) {}
+    app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction {
+        public function __construct(private string $modulePath)
+        {
+        }
 
         public function execute(string $module): string
         {
@@ -88,7 +88,7 @@ it('keeps published dest when force-copy fails (best-effort via copyAsset)', fun
 
     try {
         $action = app(AssetAction::class);
-        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method = new \ReflectionMethod(AssetAction::class, 'copyAsset');
         $method->invoke($action, $from, $to, 'assets/demo/icon.png', true);
 
         Assert::assertFileExists($to);
@@ -113,7 +113,7 @@ it('skips force-copy when destination exists but is not writable', function (): 
 
     try {
         $action = app(AssetAction::class);
-        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method = new \ReflectionMethod(AssetAction::class, 'copyAsset');
         $method->invoke($action, $from, $to, 'assets/demo/icon.png', true);
 
         Assert::assertSame('keep-me', file_get_contents($to));

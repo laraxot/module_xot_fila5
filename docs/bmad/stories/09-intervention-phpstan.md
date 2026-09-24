@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_tz3meF
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +14,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ax8pSZ
+>>>>>>> .merge_file_zroUHY
 ---
 name: 09-intervention-phpstan
 description: "Modulo: Intervention"
@@ -24,11 +30,14 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tz3meF
+=======
 <<<<<<< .merge_file_OHq1SR
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ax8pSZ
+>>>>>>> .merge_file_zroUHY
 >>>>>>> laraxot/dev
 # BMAD Story 09 — Intervention: 21 errori PHPStan
 

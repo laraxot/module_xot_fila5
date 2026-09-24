@@ -156,6 +156,11 @@ abstract public function getFormSchema(): array;
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
+<<<<<<< .merge_file_gIYnxU
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
@@ -163,6 +168,7 @@ abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_nTLeny
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -606,6 +612,11 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_gIYnxU
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -613,6 +624,7 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_nTLeny
     {
         return [
             TextInput::make('field1')->required(),
@@ -695,6 +707,11 @@ class ArticleResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_gIYnxU
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -702,6 +719,7 @@ class ArticleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_nTLeny
     {
         return [
             TextInput::make('title')

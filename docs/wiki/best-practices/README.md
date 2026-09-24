@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> .merge_file_9BbkJZ
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,11 +16,15 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_kkjBRW
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
 ---
 title: "Readme"
 type: reference
@@ -26,6 +33,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
 <<<<<<< .merge_file_kkjBRW
 <<<<<<< HEAD
 =======
@@ -33,14 +42,18 @@ updated: 2026-08-24
 =======
 =======
 <<<<<<< HEAD
+>>>>>>> .merge_file_9BbkJZ
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+=======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
 
 # Best Practices
 
@@ -73,6 +86,11 @@ updated: 2026-08-24
 ## Code Quality
 - PHPStan level 9+ for all new code
 <<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_kkjBRW
 =======
 =======
@@ -81,6 +99,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
@@ -104,16 +123,22 @@ updated: 2026-08-24
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
+<<<<<<< .merge_file_55fVAe
+=======
 <<<<<<< .merge_file_kkjBRW
 =======
 =======
+>>>>>>> .merge_file_9BbkJZ
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+=======
 >>>>>>> .merge_file_jogm6S
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_9BbkJZ
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
@@ -124,16 +149,22 @@ updated: 2026-08-24
 - Update both module and root documentation
 - Include practical examples in all guides
 <<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
 <<<<<<< .merge_file_kkjBRW
 =======
 =======
 <<<<<<< HEAD
+>>>>>>> .merge_file_9BbkJZ
 
 ---
 
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
 >>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
 
 ---
 
@@ -236,8 +267,12 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_kkjBRW
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ

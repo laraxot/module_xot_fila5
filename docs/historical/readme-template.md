@@ -256,11 +256,15 @@ php artisan test --filter=[NomeModulo]
 
 ## Changelog
 
+<<<<<<< .merge_file_mdDLJS
+Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
+=======
 <<<<<<< HEAD
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
 =======
 Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti.
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_ZmCxQh
 
 ## Licenza
 

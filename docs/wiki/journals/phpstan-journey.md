@@ -298,6 +298,11 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_OuzHx1
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
@@ -305,6 +310,7 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_hW28XA
 {
     return [
         'field_name' => ComponentType::make('field_name')

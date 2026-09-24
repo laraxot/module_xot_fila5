@@ -11,13 +11,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('creates custom relation', function (): void {
-    $relatedModel = new class extends Model
-    {
+    $relatedModel = new class extends Model {
         protected $table = 'related';
     };
 
-    $parentModel = new class extends Model
-    {
+    $parentModel = new class extends Model {
         use HasCustomRelations;
 
         protected $table = 'parent';
@@ -27,8 +25,8 @@ it('creates custom relation', function (): void {
     /** @param array<int, Model> $models */
     $eagerConstraints = fn (CustomRelation $relation, array $models) => null;
     /**
-     * @param  array<int, Model>  $models
-     * @param  mixed  $relation  relation name/value forwarded by the relation contract
+     * @param array<int, Model> $models
+     * @param mixed             $relation relation name/value forwarded by the relation contract
      */
     $eagerMatcher = fn (array $models, Collection $results, mixed $relation) => [];
 

@@ -149,14 +149,20 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_f1UDM0
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_OKWI8S
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_f1UDM0
+=======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_OKWI8S
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -434,14 +440,20 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_f1UDM0
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_OKWI8S
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_f1UDM0
+=======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_OKWI8S
 
 // ✅ CORRETTO
 public function getFormSchema(): array

@@ -76,11 +76,15 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_1ECr1D
+- [Configurazione Generale](configuration.md)
+=======
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 =======
 - [Configurazione Generale](CONFIGURATION.md)
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_guhsIk
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -93,6 +97,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti Correlati
 - [Configurazione Moduli](MODULE_CONFIGURATION.md)
+<<<<<<< .merge_file_1ECr1D
+- [Gestione Risorse](assets.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](troubleshooting.md)
+=======
 <<<<<<< HEAD
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
@@ -102,6 +111,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_guhsIk
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -179,10 +189,14 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
    - Assicurarsi che tutte le versioni necessarie del logo siano presenti
 
 ## Collegamenti
+<<<<<<< .merge_file_1ECr1D
+- [Configurazione Generale](configuration.md)
+=======
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 =======
 - [Configurazione Generale](CONFIGURATION.md)
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_guhsIk
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)

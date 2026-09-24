@@ -1,12 +1,41 @@
 <?php
 
+<<<<<<< .merge_file_D03j1Y
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 declare(strict_types=1);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_MVGGlS
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< .merge_file_D03j1Y
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+declare(strict_types=1);
+
 namespace Modules\Xot\Filament\Actions\Table;
 
+<<<<<<< HEAD
+=======
+=======
+namespace Modules\Xot\Filament\Actions\Table;
+
+use Exception;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+namespace Modules\Xot\Filament\Actions\Table;
+
+>>>>>>> .merge_file_MVGGlS
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -24,9 +53,27 @@ class ExportXlsTableAction extends XotBaseAction
         $this->translateLabel()
             ->tooltip(__('xot::actions.export_xls'))
             // ->icon('fas-file-excel')
+<<<<<<< .merge_file_D03j1Y
+<<<<<<< HEAD
+            ->icon('heroicon-o-arrow-down-tray')
+            ->action(static function (RelationManager $livewire) {
+                $livewire_class = $livewire::class;
+=======
+<<<<<<< HEAD
+            ->icon('heroicon-o-arrow-down-tray')
+            ->action(static function (RelationManager $livewire) {
+                $livewire_class = $livewire::class;
+=======
             ->icon('xot-files.xls')
             ->action(static function (RelationManager $livewire) {
                 $livewireClass = $livewire::class;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+            ->icon('xot-files.xls')
+            ->action(static function (RelationManager $livewire) {
+                $livewireClass = $livewire::class;
+>>>>>>> .merge_file_MVGGlS
                 $filterParts = array_map(
                     static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
                     Arr::flatten($livewire->tableFilters ?? []),
@@ -36,17 +83,68 @@ class ExportXlsTableAction extends XotBaseAction
                     '-'.
                     implode('-', $filterParts).
                     '.xlsx';
+<<<<<<< .merge_file_D03j1Y
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+                $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
+                $transKey .= '.fields';
+                $query = $livewire->getFilteredTableQuery();
+                if ($query === null) {
+                    throw new \Exception('Query is null');
+<<<<<<< HEAD
+=======
+=======
+                $transKey = app(GetTransKeyAction::class)->execute($livewireClass);
+                $transKey .= '.fields';
+                $query = $livewire->getFilteredTableQuery();
+                if ($query === null) {
+                    throw new Exception('Query is null');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
                 $transKey = app(GetTransKeyAction::class)->execute($livewireClass);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
                 if (null === $query) {
                     throw new \Exception('Query is null');
+>>>>>>> .merge_file_MVGGlS
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 /** @var Builder<Model> $eloquentQuery */
                 $eloquentQuery = $query;
                 $rows = $eloquentQuery->get();
+<<<<<<< .merge_file_D03j1Y
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+                /** @var array<int, string> $fields */
+                $fields = [];
+                if (method_exists($livewire_class, 'getXlsFields')) {
+                    $rawFields = $livewire_class::getXlsFields($livewire->tableFilters);
+                    Assert::isArray($rawFields);
+
+                    // Ensure fields are properly formatted as array
+                    $fields = [];
+                    foreach ($rawFields as $key => $field) {
+                        if (is_string($field)) {
+                            $fields[] = $field;
+                        } elseif (is_array($field) && isset($field['name']) && is_string($field['name'])) {
+                            $fields[] = $field['name'];
+                        }
+                    }
+                }
+<<<<<<< HEAD
+=======
+=======
                 $fields = self::resolveXlsFields($livewireClass, $livewire->tableFilters);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+                $fields = self::resolveXlsFields($livewireClass, $livewire->tableFilters);
+>>>>>>> .merge_file_MVGGlS
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
@@ -56,14 +154,26 @@ class ExportXlsTableAction extends XotBaseAction
     {
         return 'export_xls';
     }
+<<<<<<< .merge_file_D03j1Y
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_MVGGlS
 
     /**
      * Chiave stringa = percorso data_get con intestazione esplicita
      * (title rating); chiave intera = percorso tradotto via transKey.
      *
+<<<<<<< .merge_file_D03j1Y
+     * @param  class-string  $livewireClass
+     * @param  array<string, mixed>|null  $tableFilters
+=======
      * @param class-string              $livewireClass
      * @param array<string, mixed>|null $tableFilters
      *
+>>>>>>> .merge_file_MVGGlS
      * @return array<int|string, string>
      */
     private static function resolveXlsFields(string $livewireClass, ?array $tableFilters): array
@@ -87,4 +197,9 @@ class ExportXlsTableAction extends XotBaseAction
 
         return $fields;
     }
+<<<<<<< .merge_file_D03j1Y
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MVGGlS
 }

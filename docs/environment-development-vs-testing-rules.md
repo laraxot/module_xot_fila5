@@ -3,6 +3,8 @@
 ## Panoramica
 In Laraxot è fondamentale comprendere la differenza tra le configurazioni di ambiente di sviluppo e di test, specialmente riguardo all'uso dei database.
 
+<<<<<<< .merge_file_7aud6t
+=======
 <<<<<<< HEAD
 =======
 ## REGOLA FONDAMENTALE: .env.testing è COPIA CARBONE del .env
@@ -81,6 +83,7 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 - **TenantServiceProvider**: Gestisce automaticamente le connessioni modulo
 
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_I0KjwL
 ## Configurazione per Sviluppo (.env.development)
 
 ### Database
@@ -101,11 +104,15 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 
 ### Database
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
+<<<<<<< .merge_file_7aud6t
+- Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
+=======
 <<<<<<< HEAD
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
 =======
 - Database con suffisso "_test" (es. `healthcare_app_data_test`, `healthcare_app_user_test`)
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_I0KjwL
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione
@@ -135,6 +142,9 @@ Questa differenziazione rispetta i principi fondamentali:
 - **DRY**: Configurazioni separate per scopi diversi
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
+<<<<<<< .merge_file_7aud6t
+- **Multi-tenancy**: Supporto completo per architettura multi-database
+=======
 <<<<<<< HEAD
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 =======
@@ -224,3 +234,4 @@ Il `setUp()` deve essere usato SOLO per:
 - Eseguire migrate:fresh e module:migrate (una sola volta)
 - Non MAI per configurare connessioni database!
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_I0KjwL

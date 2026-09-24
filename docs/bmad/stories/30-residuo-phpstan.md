@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_dzHMTS
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +14,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LKsPjZ
+>>>>>>> .merge_file_9pLsjd
 ---
 name: 30-residuo-phpstan
 description: "Status: IN PROGRESS — sub-agent attivo (swarm)"
@@ -24,11 +30,14 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_dzHMTS
+=======
 <<<<<<< .merge_file_Q0kPxl
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_LKsPjZ
+>>>>>>> .merge_file_9pLsjd
 >>>>>>> laraxot/dev
 # BMAD Story 30 — Residuo PHPStan (sub-agent)
 **Status:** IN PROGRESS — sub-agent attivo (swarm)

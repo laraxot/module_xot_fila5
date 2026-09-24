@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_RYtcQU
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_MXE3H5
 ---
 title: "Readme"
 type: reference
@@ -19,8 +22,11 @@ updated: 2026-08-24
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_RYtcQU
+=======
 <<<<<<< HEAD
 =======
+>>>>>>> .merge_file_MXE3H5
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -39,7 +45,10 @@ updated: 2026-08-24
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_RYtcQU
+=======
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_MXE3H5
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -69,8 +78,11 @@ updated: 2026-08-24
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< .merge_file_RYtcQU
+=======
 <<<<<<< HEAD
 =======
+>>>>>>> .merge_file_MXE3H5
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -227,8 +239,12 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RYtcQU
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_gaLMQh
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_W8gVlC
+>>>>>>> .merge_file_MXE3H5

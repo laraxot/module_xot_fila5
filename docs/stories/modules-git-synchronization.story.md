@@ -6,6 +6,11 @@ epic: null
 story_id: null
 slug: modules-git-synchronization
 <<<<<<< HEAD
+<<<<<<< .merge_file_9cZemc
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_oCwZrU
 =======
 =======
@@ -14,11 +19,17 @@ slug: modules-git-synchronization
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nb5jOU
+>>>>>>> .merge_file_sN9ODr
 status: ready-for-dev
 cold_gate: null
 created: '2026-09-11'
 updated: '2026-09-11'
 status_note: "Story creata per continuare domani la sincronizzazione git dei moduli. Ogni modulo ha la sua cartella .git separata e non usiamo git submodules, quindi ogni modifica richiede cd nel modulo e git status separato."
+<<<<<<< .merge_file_9cZemc
+<<<<<<< HEAD
+=======
+=======
+=======
 <<<<<<< .merge_file_oCwZrU
 =======
 =======
@@ -27,11 +38,15 @@ status_note: "Story creata per continuare domani la sincronizzazione git dei mod
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nb5jOU
+>>>>>>> .merge_file_sN9ODr
 status: done
 cold_gate: null
 created: '2026-09-11'
 updated: '2026-09-21'
 status_note: "2026-09-21: sync di tutti i path in gitmodules.ini con git -C (mai cd/working_directory). Merge forward-only, no rebase. Issue #115."
+<<<<<<< .merge_file_9cZemc
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_oCwZrU
 =======
 <<<<<<< HEAD
@@ -39,6 +54,7 @@ status_note: "2026-09-21: sync di tutti i path in gitmodules.ini con git -C (mai
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_nb5jOU
+>>>>>>> .merge_file_sN9ODr
 >>>>>>> laraxot/dev
 repository: "https://github.com/laraxot/module_xot_fila5.git"
 github_issue: "https://github.com/laraxot/module_xot_fila5/issues/115"

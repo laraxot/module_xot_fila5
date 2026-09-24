@@ -29,6 +29,11 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_pcAwg0
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -36,6 +41,7 @@ class PerformanceResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_cvYoFY
     {
         return [
             Forms\Components\Card::make()
@@ -258,6 +264,11 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_pcAwg0
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
@@ -265,6 +276,7 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_cvYoFY
 {
     return [
         Forms\Components\TextInput::make('codice')

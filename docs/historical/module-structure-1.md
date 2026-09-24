@@ -36,6 +36,10 @@ ModuleName/
 ### Documentazione Correlata
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
+<<<<<<< .merge_file_IjwiKZ
+- [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
+- [Namespace Rules](namespace-rules.md) - Regole per i namespace
+=======
 <<<<<<< .merge_file_moIbQK
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
 - [Namespace Rules](namespace-rules.md) - Regole per i namespace
@@ -43,6 +47,7 @@ ModuleName/
 - [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
 - [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
 >>>>>>> .merge_file_7h6nRv
+>>>>>>> .merge_file_DkqkYx
 
 ### Moduli Collegati
 - [UI](../UI/docs/README.md) - Componenti di interfaccia

@@ -84,6 +84,11 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_X6u7DV
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -91,6 +96,7 @@ class MediaConvertResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_GdZKOa
     {
         return [
             Radio::make('format')
@@ -165,17 +171,23 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
+<<<<<<< .merge_file_X6u7DV
+=======
 <<<<<<< .merge_file_lYl1eN
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
 <<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
+>>>>>>> .merge_file_GdZKOa
 <<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_X6u7DV
+=======
 >>>>>>> .merge_file_1fr9a4
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_GdZKOa

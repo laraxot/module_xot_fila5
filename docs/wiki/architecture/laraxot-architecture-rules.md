@@ -61,6 +61,11 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_rRHrAX
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -68,6 +73,7 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_0STLdl
     {
         return [
             // Form components
@@ -288,6 +294,11 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_rRHrAX
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -295,6 +306,7 @@ class QuestionChartResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_0STLdl
     {
         return [
             // Form components
