@@ -214,6 +214,11 @@ class YourResource extends XotBaseResource
     // Pages auto-discovered following pattern
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cxuJGw
+=======
+<<<<<<< .merge_file_VtehK0
+=======
+>>>>>>> .merge_file_iFjt0z
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
@@ -223,10 +228,19 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cxuJGw
+=======
+>>>>>>> .merge_file_daex6Z
+>>>>>>> .merge_file_iFjt0z
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cxuJGw
+=======
+<<<<<<< .merge_file_VtehK0
+=======
+>>>>>>> .merge_file_iFjt0z
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
@@ -236,6 +250,10 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cxuJGw
+=======
+>>>>>>> .merge_file_daex6Z
+>>>>>>> .merge_file_iFjt0z
     {
         return [
             // Form components - NO hardcoded labels
@@ -243,6 +261,11 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cxuJGw
+=======
+<<<<<<< .merge_file_VtehK0
+=======
+>>>>>>> .merge_file_iFjt0z
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
@@ -252,10 +275,19 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cxuJGw
+=======
+>>>>>>> .merge_file_daex6Z
+>>>>>>> .merge_file_iFjt0z
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cxuJGw
+=======
+<<<<<<< .merge_file_VtehK0
+=======
+>>>>>>> .merge_file_iFjt0z
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_440yi7
@@ -265,6 +297,10 @@ class YourResource extends XotBaseResource
 >>>>>>> .merge_file_Lp1RMZ
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cxuJGw
+=======
+>>>>>>> .merge_file_daex6Z
+>>>>>>> .merge_file_iFjt0z
     {
         return [
             // Infolist components

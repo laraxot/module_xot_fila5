@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_UYYopr
+=======
+<<<<<<< .merge_file_4PhfUN
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_sEcuqn
 =======
 <<<<<<< .merge_file_I9UKM4
 <<<<<<< HEAD
@@ -16,11 +24,21 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UYYopr
+=======
+>>>>>>> .merge_file_NmAnog
+>>>>>>> .merge_file_sEcuqn
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\FormSchemaPageFixture;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_UYYopr
+=======
+<<<<<<< .merge_file_4PhfUN
+use ReflectionMethod;
+=======
+>>>>>>> .merge_file_sEcuqn
 <<<<<<< HEAD
 use ReflectionMethod;
 =======
@@ -29,11 +47,20 @@ use ReflectionMethod;
 =======
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UYYopr
+=======
+>>>>>>> .merge_file_NmAnog
+>>>>>>> .merge_file_sEcuqn
 
 uses(TestCase::class);
 
 test('un override di getFormSchema viene onorato su XotBasePage', function (): void {
 <<<<<<< HEAD
+<<<<<<< .merge_file_UYYopr
+=======
+<<<<<<< .merge_file_4PhfUN
+=======
+>>>>>>> .merge_file_sEcuqn
     $fixture = new FormSchemaPageFixture;
 =======
 <<<<<<< .merge_file_I9UKM4
@@ -41,15 +68,28 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
     $fixture = new FormSchemaPageFixture();
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_UYYopr
+=======
+>>>>>>> .merge_file_NmAnog
+>>>>>>> .merge_file_sEcuqn
     $fixture = new FormSchemaPageFixture();
 =======
     $fixture = new FormSchemaPageFixture;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UYYopr
+=======
+<<<<<<< .merge_file_4PhfUN
+=======
+>>>>>>> .merge_file_sEcuqn
 >>>>>>> laraxot/dev
 =======
     $fixture = new FormSchemaPageFixture();
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UYYopr
+=======
+>>>>>>> .merge_file_NmAnog
+>>>>>>> .merge_file_sEcuqn
     $method = new ReflectionMethod($fixture, 'resolveFormSchemaForXotPage');
     $method->setAccessible(true);
 
@@ -61,6 +101,13 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
 });
 
 test('senza override getFormSchema restituisce schema vuoto', function (): void {
+<<<<<<< .merge_file_UYYopr
+=======
+<<<<<<< .merge_file_4PhfUN
+    $fixture = new class extends XotBasePage
+    {
+=======
+>>>>>>> .merge_file_sEcuqn
 <<<<<<< HEAD
     $fixture = new class extends XotBasePage
     {
@@ -72,6 +119,10 @@ test('senza override getFormSchema restituisce schema vuoto', function (): void 
     $fixture = new class extends XotBasePage {
 >>>>>>> .merge_file_fvYDWm
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UYYopr
+=======
+>>>>>>> .merge_file_NmAnog
+>>>>>>> .merge_file_sEcuqn
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
         protected string $view = 'xot::filament.pages.base';

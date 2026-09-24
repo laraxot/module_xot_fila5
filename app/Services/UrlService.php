@@ -1,7 +1,16 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_kKaQfv
 declare(strict_types=1);
+=======
+<<<<<<< .merge_file_aBjfpe
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
+=======
+declare(strict_types=1);
+>>>>>>> .merge_file_rm0vOO
 =======
 <<<<<<< .merge_file_ragDcZ
 <<<<<<< HEAD
@@ -15,12 +24,24 @@ declare(strict_types=1);
 declare(strict_types=1);
 >>>>>>> .merge_file_uUcMgF
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kKaQfv
+=======
+>>>>>>> .merge_file_EUHvDD
+>>>>>>> .merge_file_rm0vOO
 /**
  * @see https://www.webslesson.info/2019/02/import-excel-file-in-laravel.html
  * @see https://sweetcode.io/import-and-export-excel-files-data-using-in-laravel/
  */
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_kKaQfv
+=======
+<<<<<<< .merge_file_aBjfpe
+declare(strict_types=1);
+
+=======
+=======
+>>>>>>> .merge_file_rm0vOO
 =======
 <<<<<<< .merge_file_ragDcZ
 <<<<<<< HEAD
@@ -35,6 +56,10 @@ declare(strict_types=1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_uUcMgF
+<<<<<<< .merge_file_kKaQfv
+=======
+>>>>>>> .merge_file_EUHvDD
+>>>>>>> .merge_file_rm0vOO
 >>>>>>> laraxot/dev
 namespace Modules\Xot\Services;
 
@@ -45,16 +70,26 @@ class UrlService
 {
     private static ?self $instance = null;
 
+<<<<<<< .merge_file_kKaQfv
+=======
+<<<<<<< .merge_file_aBjfpe
+=======
+>>>>>>> .merge_file_rm0vOO
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_ragDcZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kKaQfv
+=======
+>>>>>>> .merge_file_EUHvDD
+>>>>>>> .merge_file_rm0vOO
     public function __construct() {}
 
     public static function getInstance(): self
     {
         if (! (self::$instance instanceof self)) {
 <<<<<<< HEAD
+<<<<<<< .merge_file_kKaQfv
             self::$instance = new self;
 =======
 <<<<<<< HEAD
@@ -65,6 +100,23 @@ class UrlService
 =======
             self::$instance = new self;
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_aBjfpe
+=======
+            self::$instance = new self;
+=======
+<<<<<<< HEAD
+            self::$instance = new self();
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_EUHvDD
+            self::$instance = new self();
+=======
+            self::$instance = new self;
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_aBjfpe
+=======
+>>>>>>> .merge_file_rm0vOO
 >>>>>>> laraxot/dev
 =======
     public function __construct()
@@ -77,6 +129,10 @@ class UrlService
             self::$instance = new self();
 >>>>>>> .merge_file_uUcMgF
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kKaQfv
+=======
+>>>>>>> .merge_file_EUHvDD
+>>>>>>> .merge_file_rm0vOO
         }
 
         return self::$instance;
@@ -92,6 +148,12 @@ class UrlService
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< .merge_file_kKaQfv
+=======
+<<<<<<< .merge_file_aBjfpe
+        return filter_var($url, FILTER_VALIDATE_URL) !== false;
+=======
+>>>>>>> .merge_file_rm0vOO
 <<<<<<< HEAD
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
 =======
@@ -101,5 +163,9 @@ class UrlService
         return false !== filter_var($url, FILTER_VALIDATE_URL);
 >>>>>>> .merge_file_uUcMgF
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kKaQfv
+=======
+>>>>>>> .merge_file_EUHvDD
+>>>>>>> .merge_file_rm0vOO
     }
 }

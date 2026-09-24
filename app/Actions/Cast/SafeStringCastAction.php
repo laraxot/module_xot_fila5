@@ -16,6 +16,7 @@ class SafeStringCastAction
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
+<<<<<<< .merge_file_4nT0MN
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
 =======
@@ -26,6 +27,18 @@ class SafeStringCastAction
      * >>>>>>> .merge_file_dmjXLI
      *
      * @param mixed $value Il valore da convertire
+=======
+     * <<<<<<< HEAD
+     *
+     * @param mixed $value Il valore da convertire
+     *                     =======
+     *                     <<<<<<< .merge_file_wEm3Js
+     *                     =======
+     *                     <<<<<<< HEAD
+     *                     <<<<<<< .merge_file_O8nWNS
+     *                     >>>>>>> .merge_file_dmjXLI
+     * @param mixed $value Il valore da convertire
+>>>>>>> .merge_file_TFE9nT
      *
      * <<<<<<< .merge_file_wEm3Js
      * =======
@@ -35,7 +48,12 @@ class SafeStringCastAction
      *
      * >>>>>>> .merge_file_dmjXLI
      *
+<<<<<<< .merge_file_4nT0MN
 >>>>>>> laraxot/dev
+=======
+     * >>>>>>> laraxot/dev
+     *
+>>>>>>> .merge_file_TFE9nT
      * @return string Il valore convertito in string
      */
     public function execute(mixed $value): string
@@ -68,6 +86,7 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< .merge_file_4nT0MN
 <<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
 =======
@@ -78,6 +97,18 @@ class SafeStringCastAction
      * >>>>>>> .merge_file_dmjXLI
      *
      * @param mixed $value Il valore da convertire
+=======
+     * <<<<<<< HEAD
+     *
+     * @param mixed $value Il valore da convertire
+     *                     =======
+     *                     <<<<<<< .merge_file_wEm3Js
+     *                     =======
+     *                     <<<<<<< HEAD
+     *                     <<<<<<< .merge_file_O8nWNS
+     *                     >>>>>>> .merge_file_dmjXLI
+     * @param mixed $value Il valore da convertire
+>>>>>>> .merge_file_TFE9nT
      *
      * <<<<<<< .merge_file_wEm3Js
      * =======
@@ -87,7 +118,12 @@ class SafeStringCastAction
      *
      * >>>>>>> .merge_file_dmjXLI
      *
+<<<<<<< .merge_file_4nT0MN
 >>>>>>> laraxot/dev
+=======
+     * >>>>>>> laraxot/dev
+     *
+>>>>>>> .merge_file_TFE9nT
      * @return string Il valore convertito in string
      */
     public static function cast(mixed $value): string

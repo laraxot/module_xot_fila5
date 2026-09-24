@@ -60,6 +60,11 @@ Per `getFormSchema()` nei **resource e pagine** (dove non viene usato `statePath
 ```php
 // ✅ CORRETTO per resource/pagine
 <<<<<<< HEAD
+<<<<<<< .merge_file_tR3D1E
+=======
+<<<<<<< .merge_file_o1DT4a
+=======
+>>>>>>> .merge_file_tAtzgl
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_oSsp77
@@ -67,10 +72,19 @@ Per `getFormSchema()` nei **resource e pagine** (dove non viene usato `statePath
 <<<<<<< HEAD
 >>>>>>> .merge_file_C2hVvI
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tR3D1E
+=======
+>>>>>>> .merge_file_504Xmi
+>>>>>>> .merge_file_tAtzgl
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tR3D1E
+=======
+<<<<<<< .merge_file_o1DT4a
+=======
+>>>>>>> .merge_file_tAtzgl
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_oSsp77
@@ -80,6 +94,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_C2hVvI
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tR3D1E
+=======
+>>>>>>> .merge_file_504Xmi
+>>>>>>> .merge_file_tAtzgl
 {
     return [
         TextInput::make('email')->email()->required(),

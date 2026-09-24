@@ -26,6 +26,7 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_hVHmIW
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -33,6 +34,18 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_epECxO
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_BnXcux
 <<<<<<< .merge_file_pcAwg0
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -46,6 +59,10 @@ class PerformanceResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cvYoFY
+<<<<<<< .merge_file_hVHmIW
+=======
+>>>>>>> .merge_file_gSKSHY
+>>>>>>> .merge_file_BnXcux
 >>>>>>> laraxot/dev
     {
         return [
@@ -266,6 +283,7 @@ Forms\Components\Grid::make()
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_hVHmIW
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -273,6 +291,18 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_epECxO
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_BnXcux
 <<<<<<< .merge_file_pcAwg0
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -286,6 +316,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cvYoFY
+<<<<<<< .merge_file_hVHmIW
+=======
+>>>>>>> .merge_file_gSKSHY
+>>>>>>> .merge_file_BnXcux
 >>>>>>> laraxot/dev
 {
     return [

@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_5S1Ay0
+=======
+<<<<<<< .merge_file_mHkpWn
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_2e0zsq
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_om1mNa
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I5DMEC
 >>>>>>> .merge_file_LLekZv
+<<<<<<< .merge_file_5S1Ay0
+=======
+>>>>>>> .merge_file_m22HTZ
+>>>>>>> .merge_file_2e0zsq
 ---
 name: issue-05-phpstan-272
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_5S1Ay0
+=======
+<<<<<<< .merge_file_mHkpWn
+=======
+>>>>>>> .merge_file_2e0zsq
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5S1Ay0
+=======
+>>>>>>> .merge_file_m22HTZ
+>>>>>>> .merge_file_2e0zsq
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5S1Ay0
+=======
+<<<<<<< .merge_file_mHkpWn
+=======
+=======
+>>>>>>> .merge_file_2e0zsq
 <<<<<<< .merge_file_om1mNa
 =======
 <<<<<<< .merge_file_nsyd9C
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I5DMEC
 >>>>>>> .merge_file_LLekZv
+<<<<<<< .merge_file_5S1Ay0
+=======
+>>>>>>> .merge_file_m22HTZ
+>>>>>>> .merge_file_2e0zsq
 >>>>>>> laraxot/dev
 # Issue GH #05 — PHPStan 272 errors: piano di risoluzione modulo-per-modulo
 

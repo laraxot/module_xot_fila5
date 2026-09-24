@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_YcDSwG
+=======
+<<<<<<< .merge_file_nxaG2O
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NPXDSj
 =======
 <<<<<<< .merge_file_Ssy17G
 <<<<<<< HEAD
@@ -16,6 +24,10 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_TU22tM
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YcDSwG
+=======
+>>>>>>> .merge_file_RauvhV
+>>>>>>> .merge_file_NPXDSj
 use Modules\Xot\Actions\Route\GetRouteMethodAction;
 use PHPUnit\Framework\Assert;
 

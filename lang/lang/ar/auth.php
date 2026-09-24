@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_bpsgHD
 
+=======
+<<<<<<< .merge_file_96uzWX
+=======
+
+>>>>>>> .merge_file_RTb3cR
+>>>>>>> .merge_file_ddy9XM
 return [
     'failed' => 'البيانات المدخلة لا تتطابق مع قاعدة بيناتنا.',
     'general_error' => 'ليس لديك صلاحية الوصول إلى هذا.',

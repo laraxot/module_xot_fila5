@@ -239,6 +239,11 @@ class ExampleResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_WHZdgu
+=======
+<<<<<<< .merge_file_T6jYyL
+=======
+>>>>>>> .merge_file_ZURlK8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_k5dnsY
@@ -246,10 +251,19 @@ class ExampleResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_yIl5DP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WHZdgu
+=======
+>>>>>>> .merge_file_2Xe0Jp
+>>>>>>> .merge_file_ZURlK8
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WHZdgu
+=======
+<<<<<<< .merge_file_T6jYyL
+=======
+>>>>>>> .merge_file_ZURlK8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_k5dnsY
@@ -259,6 +273,10 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_yIl5DP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WHZdgu
+=======
+>>>>>>> .merge_file_2Xe0Jp
+>>>>>>> .merge_file_ZURlK8
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -534,6 +552,11 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_WHZdgu
+=======
+<<<<<<< .merge_file_T6jYyL
+=======
+>>>>>>> .merge_file_ZURlK8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_k5dnsY
@@ -541,10 +564,19 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_yIl5DP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WHZdgu
+=======
+>>>>>>> .merge_file_2Xe0Jp
+>>>>>>> .merge_file_ZURlK8
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WHZdgu
+=======
+<<<<<<< .merge_file_T6jYyL
+=======
+>>>>>>> .merge_file_ZURlK8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_k5dnsY
@@ -554,6 +586,10 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_yIl5DP
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_WHZdgu
+=======
+>>>>>>> .merge_file_2Xe0Jp
+>>>>>>> .merge_file_ZURlK8
     {
         return [
             Forms\Components\TextInput::make('nome')

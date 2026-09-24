@@ -763,9 +763,18 @@ protected function getData(): array
 ### PHPStan Level 10 Compliance
 ```bash
 # ✅ Zero errori dopo refactoring
+<<<<<<< .merge_file_RtDBjP
 <<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 =======
+=======
+<<<<<<< .merge_file_A4k7zt
+./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+=======
+<<<<<<< HEAD
+./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+=======
+>>>>>>> .merge_file_B44kfZ
 <<<<<<< .merge_file_i1PHHN
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 =======
@@ -776,11 +785,21 @@ protected function getData(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ste3DZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RtDBjP
+=======
+>>>>>>> .merge_file_CXtEGY
+>>>>>>> .merge_file_B44kfZ
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
+<<<<<<< .merge_file_RtDBjP
+=======
+<<<<<<< .merge_file_A4k7zt
+./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
+=======
+>>>>>>> .merge_file_B44kfZ
 <<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
 =======
@@ -794,6 +813,10 @@ protected function getData(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ste3DZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RtDBjP
+=======
+>>>>>>> .merge_file_CXtEGY
+>>>>>>> .merge_file_B44kfZ
 ```
 
 ### Performance Metrics

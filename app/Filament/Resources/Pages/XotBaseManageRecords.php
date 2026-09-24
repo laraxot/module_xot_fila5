@@ -13,6 +13,11 @@ use Filament\Resources\Pages\ManageRecords as FilamentManageRecords;
  * This class wraps Filament's ManageRecords to provide a XotBase layer.
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_2DET6a
+=======
+<<<<<<< .merge_file_O2upF1
+=======
+>>>>>>> .merge_file_nXyjr2
 abstract class XotBaseManageRecords extends FilamentManageRecords {}
 =======
 <<<<<<< .merge_file_rc5lfK
@@ -22,12 +27,21 @@ abstract class XotBaseManageRecords extends FilamentManageRecords
 }
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_2DET6a
+=======
+>>>>>>> .merge_file_hzpzlv
+>>>>>>> .merge_file_nXyjr2
 abstract class XotBaseManageRecords extends FilamentManageRecords
 {
 }
 =======
 abstract class XotBaseManageRecords extends FilamentManageRecords {}
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_2DET6a
+=======
+<<<<<<< .merge_file_O2upF1
+=======
+>>>>>>> .merge_file_nXyjr2
 >>>>>>> laraxot/dev
 =======
 abstract class XotBaseManageRecords extends FilamentManageRecords
@@ -35,3 +49,7 @@ abstract class XotBaseManageRecords extends FilamentManageRecords
 }
 >>>>>>> .merge_file_fQc0L6
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_2DET6a
+=======
+>>>>>>> .merge_file_hzpzlv
+>>>>>>> .merge_file_nXyjr2

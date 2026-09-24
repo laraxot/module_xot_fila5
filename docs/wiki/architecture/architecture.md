@@ -108,6 +108,7 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_EsrHfn
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -115,6 +116,18 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_6dWp1P
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_bzGAcN
 <<<<<<< .merge_file_fOA5W5
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -128,6 +141,10 @@ abstract class XotBaseResource extends Resource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_3pfAUh
+<<<<<<< .merge_file_EsrHfn
+=======
+>>>>>>> .merge_file_l6EGOi
+>>>>>>> .merge_file_bzGAcN
 >>>>>>> laraxot/dev
     {
         return static::getFormSchemaImplementation();

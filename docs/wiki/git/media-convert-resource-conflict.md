@@ -81,6 +81,7 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_sovO9k
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -96,11 +97,35 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< .merge_file_T9gxaQ
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_X6u7DV
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_pRptBC
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GdZKOa
+<<<<<<< .merge_file_sovO9k
+=======
+>>>>>>> .merge_file_BfI5cu
+>>>>>>> .merge_file_pRptBC
 >>>>>>> laraxot/dev
     {
         return [
@@ -176,6 +201,13 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
+<<<<<<< .merge_file_sovO9k
+=======
+<<<<<<< .merge_file_T9gxaQ
+- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_pRptBC
 <<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
 =======
@@ -200,3 +232,7 @@ class MediaConvertResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GdZKOa
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_sovO9k
+=======
+>>>>>>> .merge_file_BfI5cu
+>>>>>>> .merge_file_pRptBC

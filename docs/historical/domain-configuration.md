@@ -76,9 +76,18 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_PTwTlZ
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 =======
+=======
+<<<<<<< .merge_file_Jq1X2e
+- [Configurazione Generale](configuration.md)
+=======
+<<<<<<< HEAD
+- [Configurazione Generale](configuration.md)
+=======
+>>>>>>> .merge_file_HalIdU
 <<<<<<< .merge_file_1ECr1D
 - [Configurazione Generale](configuration.md)
 =======
@@ -89,6 +98,10 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guhsIk
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PTwTlZ
+=======
+>>>>>>> .merge_file_HvhPXd
+>>>>>>> .merge_file_HalIdU
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -101,27 +114,50 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti Correlati
 - [Configurazione Moduli](MODULE_CONFIGURATION.md)
+<<<<<<< .merge_file_PTwTlZ
+=======
+<<<<<<< .merge_file_Jq1X2e
+- [Gestione Risorse](assets.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](troubleshooting.md)
+=======
+>>>>>>> .merge_file_HalIdU
 <<<<<<< HEAD
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](troubleshooting.md)
 =======
 <<<<<<< .merge_file_1ECr1D
+<<<<<<< .merge_file_PTwTlZ
+=======
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](troubleshooting.md)
 =======
 <<<<<<< HEAD
+>>>>>>> .merge_file_HalIdU
 - [Gestione Risorse](assets.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](troubleshooting.md)
 =======
+<<<<<<< .merge_file_PTwTlZ
+<<<<<<< HEAD
+- [Gestione Risorse](assets.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](troubleshooting.md)
+=======
+=======
+>>>>>>> .merge_file_HalIdU
 - [Gestione Risorse](ASSETS.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guhsIk
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PTwTlZ
+=======
+>>>>>>> .merge_file_HvhPXd
+>>>>>>> .merge_file_HalIdU
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -199,6 +235,12 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
    - Assicurarsi che tutte le versioni necessarie del logo siano presenti
 
 ## Collegamenti
+<<<<<<< .merge_file_PTwTlZ
+=======
+<<<<<<< .merge_file_Jq1X2e
+- [Configurazione Generale](configuration.md)
+=======
+>>>>>>> .merge_file_HalIdU
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 =======
@@ -212,5 +254,9 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_guhsIk
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PTwTlZ
+=======
+>>>>>>> .merge_file_HvhPXd
+>>>>>>> .merge_file_HalIdU
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)

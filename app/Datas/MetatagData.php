@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+use Illuminate\Support\Str;
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< .merge_file_esNyO5
 <<<<<<< HEAD
 =======
@@ -21,6 +28,10 @@ use Illuminate\Support\Str;
 =======
 >>>>>>> .merge_file_OeA2OJ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
 use Livewire\Wireable;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
@@ -29,13 +40,27 @@ use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
 <<<<<<< HEAD
+<<<<<<< .merge_file_bJNkBy
 =======
 <<<<<<< .merge_file_esNyO5
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+=======
+<<<<<<< .merge_file_esNyO5
+<<<<<<< HEAD
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
 
 use function Safe\file_get_contents;
 
 =======
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< HEAD
 
 use function Safe\file_get_contents;
@@ -48,12 +73,21 @@ use function Safe\file_get_contents;
 use function Safe\file_get_contents;
 
 >>>>>>> .merge_file_OeA2OJ
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
 >>>>>>> laraxot/dev
 use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 =======
 <<<<<<< .merge_file_esNyO5
 <<<<<<< HEAD
@@ -62,6 +96,10 @@ use Spatie\LaravelData\Data;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_OeA2OJ
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
 /**
  * Class MetatagData.
  *
@@ -95,11 +133,21 @@ use Spatie\LaravelData\Data;
  * @property string                                                          $color_hamburger
  * @property string                                                          $color_banner
  * @property string                                                          $favicon
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< .merge_file_esNyO5
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
 use function Safe\file_get_contents;
 
 /**
@@ -135,12 +183,21 @@ use function Safe\file_get_contents;
  * @property string $color_hamburger
  * @property string $color_banner
  * @property string $favicon
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_OeA2OJ
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
 >>>>>>> laraxot/dev
  * @property array<string, array{key?: string, color: string, hex?: string}> $colors
  *
@@ -262,6 +319,13 @@ class MetatagData extends Data implements Wireable
 <<<<<<< HEAD
             return asset($this->logo_header);
 =======
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+            return $this->fallbackPublicAssetUrl($this->logo_header);
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< .merge_file_esNyO5
 <<<<<<< HEAD
             return asset($this->logo_header);
@@ -276,6 +340,10 @@ class MetatagData extends Data implements Wireable
             return $this->fallbackPublicAssetUrl($this->logo_header);
 >>>>>>> .merge_file_OeA2OJ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
         }
     }
 
@@ -299,6 +367,13 @@ class MetatagData extends Data implements Wireable
 <<<<<<< HEAD
             return asset($this->logo_header_dark);
 =======
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+            return $this->fallbackPublicAssetUrl($this->logo_header_dark);
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< .merge_file_esNyO5
 <<<<<<< HEAD
             return asset($this->logo_header_dark);
@@ -310,12 +385,21 @@ class MetatagData extends Data implements Wireable
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
         }
     }
 
     /**
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -327,6 +411,10 @@ class MetatagData extends Data implements Wireable
 
     /**
 >>>>>>> .merge_file_OeA2OJ
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
      * Never turn `module::img/x.png` into an HTTP path: browsers 404 on it.
      * If AssetAction already copied the file, reuse the public relative path.
      */
@@ -337,11 +425,21 @@ class MetatagData extends Data implements Wireable
         }
 
         $parts = explode('::', $logoHeader, 2);
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+        if (! isset($parts[0], $parts[1]) || $parts[0] === '' || $parts[1] === '') {
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< .merge_file_esNyO5
         if (! isset($parts[0], $parts[1]) || $parts[0] === '' || $parts[1] === '') {
 =======
         if (! isset($parts[0], $parts[1]) || '' === $parts[0] || '' === $parts[1]) {
 >>>>>>> .merge_file_OeA2OJ
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
             return '';
         }
 
@@ -355,11 +453,20 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< .merge_file_esNyO5
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_OeA2OJ
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
 >>>>>>> laraxot/dev
      * Get the brand logo height.
      * This method reflects the semantic purpose of getting the brand logo height.
@@ -427,6 +534,11 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_esNyO5
@@ -437,6 +549,10 @@ class MetatagData extends Data implements Wireable
      *
 >>>>>>> .merge_file_OeA2OJ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
      * @return array<string, string>
      */
     public function getThemeColors(): array
@@ -833,6 +949,11 @@ class MetatagData extends Data implements Wireable
      * This method allows adding page-specific titles to the base site title.
      *
 <<<<<<< HEAD
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
      * @param  string|null  $title  The title to concatenate
 =======
 <<<<<<< .merge_file_esNyO5
@@ -840,15 +961,28 @@ class MetatagData extends Data implements Wireable
      * @param string|null $title The title to concatenate
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
      * @param string|null $title The title to concatenate
 =======
      * @param  string|null  $title  The title to concatenate
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 >>>>>>> laraxot/dev
 =======
      * @param string|null $title The title to concatenate
 >>>>>>> .merge_file_OeA2OJ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
      */
     public function concatTitle(?string $title): self
     {
@@ -871,6 +1005,11 @@ class MetatagData extends Data implements Wireable
      * This method allows adding page-specific descriptions to the base site description.
      *
 <<<<<<< HEAD
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
      * @param  string|null  $description  The description to concatenate
 =======
 <<<<<<< .merge_file_esNyO5
@@ -878,15 +1017,28 @@ class MetatagData extends Data implements Wireable
      * @param string|null $description The description to concatenate
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
      * @param string|null $description The description to concatenate
 =======
      * @param  string|null  $description  The description to concatenate
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+<<<<<<< .merge_file_3NOhll
+=======
+>>>>>>> .merge_file_1QfOXN
 >>>>>>> laraxot/dev
 =======
      * @param string|null $description The description to concatenate
 >>>>>>> .merge_file_OeA2OJ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_bJNkBy
+=======
+>>>>>>> .merge_file_UyL6Y1
+>>>>>>> .merge_file_1QfOXN
      */
     public function concatDescription(?string $description): self
     {

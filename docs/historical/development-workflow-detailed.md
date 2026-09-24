@@ -175,6 +175,11 @@ namespace Modules\NewModule\Filament\Resources;
 class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_9BXVtL
+=======
+<<<<<<< .merge_file_POli2Y
+=======
+>>>>>>> .merge_file_LToews
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
@@ -182,10 +187,19 @@ class ProductResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9BXVtL
+=======
+>>>>>>> .merge_file_psj0op
+>>>>>>> .merge_file_LToews
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9BXVtL
+=======
+<<<<<<< .merge_file_POli2Y
+=======
+>>>>>>> .merge_file_LToews
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
@@ -195,6 +209,10 @@ class ProductResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9BXVtL
+=======
+>>>>>>> .merge_file_psj0op
+>>>>>>> .merge_file_LToews
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -206,6 +224,11 @@ class ProductResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_9BXVtL
+=======
+<<<<<<< .merge_file_POli2Y
+=======
+>>>>>>> .merge_file_LToews
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
@@ -213,10 +236,19 @@ class ProductResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9BXVtL
+=======
+>>>>>>> .merge_file_psj0op
+>>>>>>> .merge_file_LToews
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9BXVtL
+=======
+<<<<<<< .merge_file_POli2Y
+=======
+>>>>>>> .merge_file_LToews
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_WmuOtb
@@ -226,6 +258,10 @@ class ProductResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_4Na5eZ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9BXVtL
+=======
+>>>>>>> .merge_file_psj0op
+>>>>>>> .merge_file_LToews
     {
         return [
             Infolists\Components\TextEntry::make('name'),

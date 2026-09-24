@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_8Rp6w7
 
+=======
+<<<<<<< .merge_file_kN25uf
+=======
+
+>>>>>>> .merge_file_R9wl5P
+>>>>>>> .merge_file_PiOJmO
 return [
     'backend' => [
         'none' => 'Der er ingen historik.',

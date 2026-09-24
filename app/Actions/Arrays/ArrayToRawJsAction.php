@@ -6,15 +6,29 @@ namespace Modules\Xot\Actions\Arrays;
 
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_sxRUG8
+=======
+<<<<<<< .merge_file_sUyXxb
+=======
+>>>>>>> .merge_file_fr3HNv
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_0YG7ku
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_sxRUG8
+=======
+>>>>>>> .merge_file_bgE2nn
+>>>>>>> .merge_file_fr3HNv
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_sxRUG8
+=======
+<<<<<<< .merge_file_sUyXxb
+=======
+>>>>>>> .merge_file_fr3HNv
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +44,10 @@ use Spatie\QueueableAction\QueueableAction;
 =======
 >>>>>>> .merge_file_LycDYE
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_sxRUG8
+=======
+>>>>>>> .merge_file_bgE2nn
+>>>>>>> .merge_file_fr3HNv
 /**
  * Converte un array PHP in RawJs (oggetto JavaScript) sicuro per attributi HTML.
  *
@@ -44,6 +62,12 @@ class ArrayToRawJsAction
     /**
      * Converte l'array in una stringa JavaScript (oggetto letterale) e restituisce RawJs.
      *
+<<<<<<< .merge_file_sxRUG8
+=======
+<<<<<<< .merge_file_sUyXxb
+     * @param  array<int|string, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
+=======
+>>>>>>> .merge_file_fr3HNv
 <<<<<<< HEAD
      * @param  array<int|string, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
 =======
@@ -57,6 +81,10 @@ class ArrayToRawJsAction
      * @param array<int|string, mixed> $array Array associativo (anche annidato); valori RawJs restano raw
 >>>>>>> .merge_file_LycDYE
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_sxRUG8
+=======
+>>>>>>> .merge_file_bgE2nn
+>>>>>>> .merge_file_fr3HNv
      */
     public function execute(array $array): RawJs
     {

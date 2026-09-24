@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_DtTZsH
 
+=======
+<<<<<<< .merge_file_zLiUaE
+=======
+
+>>>>>>> .merge_file_P23dsD
+>>>>>>> .merge_file_uWNXNy
 return [
     'accepted' => ':attribute måste accepteras.',
     'active_url' => ':attribute är inte en giltig webbadress.',

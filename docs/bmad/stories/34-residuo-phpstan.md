@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_drG6lD
+=======
+<<<<<<< .merge_file_B2KUra
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_tos7cg
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_bQDVQJ
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ig6pCB
 >>>>>>> .merge_file_HhZG20
+<<<<<<< .merge_file_drG6lD
+=======
+>>>>>>> .merge_file_TXZNLw
+>>>>>>> .merge_file_tos7cg
 ---
 name: 34-residuo-phpstan
 description: "Status: IN PROGRESS — sub-agent attivo (swarm-phpstan-301)"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_drG6lD
+=======
+<<<<<<< .merge_file_B2KUra
+=======
+>>>>>>> .merge_file_tos7cg
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_drG6lD
+=======
+>>>>>>> .merge_file_TXZNLw
+>>>>>>> .merge_file_tos7cg
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_drG6lD
+=======
+<<<<<<< .merge_file_B2KUra
+=======
+=======
+>>>>>>> .merge_file_tos7cg
 <<<<<<< .merge_file_bQDVQJ
 =======
 <<<<<<< .merge_file_RCCz9Q
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ig6pCB
 >>>>>>> .merge_file_HhZG20
+<<<<<<< .merge_file_drG6lD
+=======
+>>>>>>> .merge_file_TXZNLw
+>>>>>>> .merge_file_tos7cg
 >>>>>>> laraxot/dev
 # BMAD Story 34 — Residuo PHPStan (swarm sub-agent)
 **Status:** IN PROGRESS — sub-agent attivo (swarm-phpstan-301)

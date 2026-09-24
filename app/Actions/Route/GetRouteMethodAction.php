@@ -18,9 +18,18 @@ class GetRouteMethodAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_OXhApR
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
 =======
+=======
+<<<<<<< .merge_file_kYaq7r
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+>>>>>>> .merge_file_MwfUbP
 <<<<<<< .merge_file_PLRs1y
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -33,11 +42,21 @@ class GetRouteMethodAction
      *
 >>>>>>> .merge_file_DylFiN
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_OXhApR
+=======
+>>>>>>> .merge_file_vesQYr
+>>>>>>> .merge_file_MwfUbP
      * @return array<int, string>
      */
     public function execute(array $v, ?string $namespace = null): array
     {
         if (isset($v['method'])) {
+<<<<<<< .merge_file_OXhApR
+=======
+<<<<<<< .merge_file_kYaq7r
+            /** @var array<int, string> */
+=======
+>>>>>>> .merge_file_MwfUbP
 <<<<<<< HEAD
             /** @var array<int, string> */
 =======
@@ -51,6 +70,10 @@ class GetRouteMethodAction
             /* @var array<int, string> */
 >>>>>>> .merge_file_DylFiN
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_OXhApR
+=======
+>>>>>>> .merge_file_vesQYr
+>>>>>>> .merge_file_MwfUbP
             return Arr::wrap($v['method']);
         }
 

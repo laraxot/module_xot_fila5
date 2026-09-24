@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_ACc9hZ
+=======
+<<<<<<< .merge_file_ES3lV3
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_j60CDK
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_Fk764f
@@ -15,6 +22,10 @@
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jCPb56
 >>>>>>> .merge_file_9DJm53
+<<<<<<< .merge_file_ACc9hZ
+=======
+>>>>>>> .merge_file_ChqGoi
+>>>>>>> .merge_file_j60CDK
 ---
 name: 25d-catalog-rm-getformschema
 description: "Modulo: Catalog"
@@ -22,14 +33,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_ACc9hZ
+=======
+<<<<<<< .merge_file_ES3lV3
+=======
+>>>>>>> .merge_file_j60CDK
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ACc9hZ
+=======
+>>>>>>> .merge_file_ChqGoi
+>>>>>>> .merge_file_j60CDK
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ACc9hZ
+=======
+<<<<<<< .merge_file_ES3lV3
+=======
+=======
+>>>>>>> .merge_file_j60CDK
 <<<<<<< .merge_file_Fk764f
 =======
 <<<<<<< .merge_file_tZbQzl
@@ -38,6 +64,10 @@ metadata:
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_jCPb56
 >>>>>>> .merge_file_9DJm53
+<<<<<<< .merge_file_ACc9hZ
+=======
+>>>>>>> .merge_file_ChqGoi
+>>>>>>> .merge_file_j60CDK
 >>>>>>> laraxot/dev
 # 25d-catalog — Rimuovere getFormSchema da 6 Resource Catalog
 

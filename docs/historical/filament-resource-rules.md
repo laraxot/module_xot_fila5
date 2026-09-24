@@ -75,6 +75,11 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cgppbE
+=======
+<<<<<<< .merge_file_GKaFEB
+=======
+>>>>>>> .merge_file_0tojH8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xWuPuf
@@ -82,10 +87,19 @@ protected static ?string $model = YourModel::class;
 <<<<<<< HEAD
 >>>>>>> .merge_file_5wbCrT
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cgppbE
+=======
+>>>>>>> .merge_file_N1KbmT
+>>>>>>> .merge_file_0tojH8
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cgppbE
+=======
+<<<<<<< .merge_file_GKaFEB
+=======
+>>>>>>> .merge_file_0tojH8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xWuPuf
@@ -95,6 +109,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_5wbCrT
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cgppbE
+=======
+>>>>>>> .merge_file_N1KbmT
+>>>>>>> .merge_file_0tojH8
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -190,6 +208,11 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cgppbE
+=======
+<<<<<<< .merge_file_GKaFEB
+=======
+>>>>>>> .merge_file_0tojH8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xWuPuf
@@ -197,10 +220,19 @@ class DoctorResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_5wbCrT
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cgppbE
+=======
+>>>>>>> .merge_file_N1KbmT
+>>>>>>> .merge_file_0tojH8
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cgppbE
+=======
+<<<<<<< .merge_file_GKaFEB
+=======
+>>>>>>> .merge_file_0tojH8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_xWuPuf
@@ -210,6 +242,10 @@ class DoctorResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_5wbCrT
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cgppbE
+=======
+>>>>>>> .merge_file_N1KbmT
+>>>>>>> .merge_file_0tojH8
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

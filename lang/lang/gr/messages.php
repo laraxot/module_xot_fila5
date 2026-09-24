@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_F98IRO
 
+=======
+<<<<<<< .merge_file_Qa70fI
+=======
+
+>>>>>>> .merge_file_MeeVqR
+>>>>>>> .merge_file_QQbAll
 return [
     'title' => 'Εγκατάσταση Laravel',
     'next' => 'Επόμενο',

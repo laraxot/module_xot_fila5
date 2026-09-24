@@ -31,6 +31,11 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
 <<<<<<< HEAD
+<<<<<<< .merge_file_KFdNok
+=======
+<<<<<<< .merge_file_bCQAHn
+=======
+>>>>>>> .merge_file_lxAGqM
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_iL4tUU
@@ -51,6 +56,10 @@ https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> .merge_file_J2Mz7N
 >>>>>>> .merge_file_XiSHqv
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KFdNok
+=======
+>>>>>>> .merge_file_R2kHia
+>>>>>>> .merge_file_lxAGqM
 
 
 ## Contenuto originale (txt)
@@ -62,10 +71,19 @@ https://github.com/HichemTab-tech/LaravelFS
 =======
 
 >>>>>>> .merge_file_bMOZuq
+<<<<<<< .merge_file_KFdNok
+=======
+<<<<<<< .merge_file_bCQAHn
+=======
+>>>>>>> .merge_file_lxAGqM
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KFdNok
+=======
+>>>>>>> .merge_file_R2kHia
+>>>>>>> .merge_file_lxAGqM
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 ---
@@ -76,6 +94,12 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< .merge_file_KFdNok
+=======
+<<<<<<< .merge_file_bCQAHn
+=======
+=======
+>>>>>>> .merge_file_lxAGqM
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_iL4tUU
@@ -94,4 +118,8 @@ https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> .merge_file_J2Mz7N
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_XiSHqv
+<<<<<<< .merge_file_KFdNok
+=======
+>>>>>>> .merge_file_R2kHia
+>>>>>>> .merge_file_lxAGqM
 >>>>>>> laraxot/dev

@@ -26,6 +26,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_QSmI5y
 <<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -36,6 +37,22 @@ public function getFormSchema(): array
 <<<<<<< .merge_file_2C7kJn
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_oiFeW3
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_2C7kJn
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_uDdjV7
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
@@ -47,6 +64,10 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_d8Pdly
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QSmI5y
+=======
+>>>>>>> .merge_file_Aq0SLs
+>>>>>>> .merge_file_uDdjV7
 {
     return [
         // Campi modificabili dall'utente
@@ -98,6 +119,11 @@ return [
 ### Regole di Estensione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_QSmI5y
+=======
+<<<<<<< .merge_file_oiFeW3
+=======
+>>>>>>> .merge_file_uDdjV7
 =======
 <<<<<<< .merge_file_2C7kJn
 =======
@@ -116,19 +142,35 @@ return [
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_QSmI5y
 1. Implementare `public function getFormSchema(): array`
 =======
+=======
+>>>>>>> .merge_file_Aq0SLs
+>>>>>>> .merge_file_uDdjV7
 1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
 =======
 1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QSmI5y
+=======
+=======
+1. Implementare `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_oiFeW3
+=======
+>>>>>>> .merge_file_uDdjV7
 >>>>>>> laraxot/dev
 <<<<<<< .merge_file_2C7kJn
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_d8Pdly
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QSmI5y
+=======
+>>>>>>> .merge_file_Aq0SLs
+>>>>>>> .merge_file_uDdjV7
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -142,6 +184,13 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_QSmI5y
+=======
+<<<<<<< .merge_file_oiFeW3
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uDdjV7
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -163,6 +212,10 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_d8Pdly
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QSmI5y
+=======
+>>>>>>> .merge_file_Aq0SLs
+>>>>>>> .merge_file_uDdjV7
     {
         return [
             TextInput::make('name')->required(),

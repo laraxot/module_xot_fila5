@@ -162,6 +162,12 @@ try {
 
 ```php
 // ContactResource.php
+<<<<<<< .merge_file_77G93N
+=======
+<<<<<<< .merge_file_uYPTTm
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_1jS73K
 <<<<<<< .merge_file_9r4qzP
 public function getFormSchema(): array
 =======
@@ -171,6 +177,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+<<<<<<< .merge_file_77G93N
+=======
+>>>>>>> .merge_file_x4ep2e
+>>>>>>> .merge_file_1jS73K
 {
     return [
         TextInput::make('first_name'),
@@ -179,6 +189,12 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< .merge_file_77G93N
+=======
+<<<<<<< .merge_file_uYPTTm
+public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_1jS73K
 <<<<<<< .merge_file_9r4qzP
 public function getFormSchema(): array
 =======
@@ -188,6 +204,10 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+<<<<<<< .merge_file_77G93N
+=======
+>>>>>>> .merge_file_x4ep2e
+>>>>>>> .merge_file_1jS73K
 {
     return [
         TextInput::make('name')->required(),
@@ -280,6 +300,12 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
+<<<<<<< .merge_file_77G93N
+=======
+<<<<<<< .merge_file_uYPTTm
+    public function getFormSchema(): array
+=======
+>>>>>>> .merge_file_1jS73K
 <<<<<<< .merge_file_9r4qzP
     public function getFormSchema(): array
 =======
@@ -289,6 +315,10 @@ class ContactResource extends XotBaseResource
     public static function getFormSchema(): array
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+<<<<<<< .merge_file_77G93N
+=======
+>>>>>>> .merge_file_x4ep2e
+>>>>>>> .merge_file_1jS73K
     {
         return [
             TextInput::make('first_name'),
@@ -415,6 +445,12 @@ try {
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_77G93N
+=======
+<<<<<<< .merge_file_uYPTTm
+- [Architettura Moduli](architecture.md)
+=======
+>>>>>>> .merge_file_1jS73K
 <<<<<<< .merge_file_9r4qzP
 - [Architettura Moduli](architecture.md)
 =======
@@ -424,6 +460,10 @@ try {
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> .merge_file_ggMDkf
 >>>>>>> .merge_file_0ACMgE
+<<<<<<< .merge_file_77G93N
+=======
+>>>>>>> .merge_file_x4ep2e
+>>>>>>> .merge_file_1jS73K
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

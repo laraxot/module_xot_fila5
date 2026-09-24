@@ -4,28 +4,54 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Tables\Filters;
 
+<<<<<<< .merge_file_Z4KWwS
+=======
+<<<<<<< .merge_file_yOOsiU
+=======
+>>>>>>> .merge_file_MmT0YG
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zj90Sv
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z4KWwS
+=======
+>>>>>>> .merge_file_vK8qWo
+>>>>>>> .merge_file_MmT0YG
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
 <<<<<<< HEAD
+<<<<<<< .merge_file_Z4KWwS
+=======
+<<<<<<< .merge_file_yOOsiU
+=======
+>>>>>>> .merge_file_MmT0YG
  * Ternary 
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z4KWwS
+=======
+>>>>>>> .merge_file_vK8qWo
+>>>>>>> .merge_file_MmT0YG
  * Ternary sì/no/tutti con ToggleButtons raggruppati (non Select full-width).
  *
  * Filament TernaryFilter estende SelectFilter: semanticamente ok, UI pesante per 3 stati.
  * Qui si sostituisce il field con ToggleButtons grouped; le query boolean del parent restano.
  *
  * Deselezionare = stato blank («tutti»), come il placeholder del Select precedente.
+<<<<<<< .merge_file_Z4KWwS
+=======
+<<<<<<< .merge_file_yOOsiU
+=======
+ * Ternary 
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_MmT0YG
 <<<<<<< HEAD
 =======
 =======
@@ -43,6 +69,10 @@ use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
  * parent restano invariate.
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z4KWwS
+=======
+>>>>>>> .merge_file_vK8qWo
+>>>>>>> .merge_file_MmT0YG
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
@@ -50,6 +80,7 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
     {
         parent::setUp();
 <<<<<<< HEAD
+<<<<<<< .merge_file_Z4KWwS
         /*
         $this->schema(function (): array {
             return [
@@ -62,6 +93,9 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 <<<<<<< HEAD
 
 =======
+<<<<<<< .merge_file_yOOsiU
+>>>>>>> .merge_file_MmT0YG
+=======
         /*
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -69,12 +103,39 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
             return [
                 ToggleButtons::make('value')
 =======
+<<<<<<< .merge_file_Z4KWwS
+=======
+<<<<<<< .merge_file_zj90Sv
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_vK8qWo
+
+=======
+        /*
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_yOOsiU
+        $this->schema(function (): array {
+            return [
+                ToggleButtons::make('value')
+=======
+>>>>>>> laraxot/dev
+        $this->schema(function (): array {
+            return [
+                ToggleButtons::make('value')
+=======
+>>>>>>> .merge_file_MmT0YG
         /*
         $this->schema(function (): array {
             return [
                 \Filament\Forms\Components\ToggleButtons::make('value')
 >>>>>>> .merge_file_UIWvtc
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Z4KWwS
+=======
+>>>>>>> .merge_file_vK8qWo
+>>>>>>> .merge_file_MmT0YG
                     ->hiddenLabel()
                     ->grouped()
                     ->options([
@@ -85,6 +146,11 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                         1 => 'success',
                         0 => 'danger',
                     ])
+<<<<<<< .merge_file_Z4KWwS
+=======
+<<<<<<< .merge_file_yOOsiU
+=======
+>>>>>>> .merge_file_MmT0YG
 <<<<<<< HEAD
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
@@ -92,11 +158,21 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         */
 =======
 <<<<<<< .merge_file_zj90Sv
+<<<<<<< .merge_file_Z4KWwS
+=======
+>>>>>>> .merge_file_vK8qWo
+>>>>>>> .merge_file_MmT0YG
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_Z4KWwS
+=======
+<<<<<<< .merge_file_yOOsiU
+        */
+=======
+>>>>>>> .merge_file_MmT0YG
 <<<<<<< HEAD
 =======
         */
@@ -108,6 +184,10 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
         });
         */
 >>>>>>> .merge_file_UIWvtc
+<<<<<<< .merge_file_Z4KWwS
+=======
+>>>>>>> .merge_file_vK8qWo
+>>>>>>> .merge_file_MmT0YG
 >>>>>>> laraxot/dev
     }
 }

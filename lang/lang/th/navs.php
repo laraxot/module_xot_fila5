@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_CNgcEE
 
+=======
+<<<<<<< .merge_file_lmXEIe
+=======
+
+>>>>>>> .merge_file_Y1xdLE
+>>>>>>> .merge_file_D8APuB
 return [
     'general' => [
         'home' => 'หน้าแรก',

@@ -6,6 +6,17 @@ namespace Modules\Xot\Tests\Unit\Fixtures;
 
 use Filament\Support\Contracts\TranslatableContentDriver;
 <<<<<<< HEAD
+<<<<<<< .merge_file_nw9Pvn
+=======
+<<<<<<< .merge_file_JU0ZtX
+use Filament\Tables\Contracts\HasTable;
+use Filament\Tables\Concerns\InteractsWithTable;
+=======
+use Filament\Tables\Concerns\InteractsWithTable;
+use Filament\Tables\Contracts\HasTable;
+use Filament\Tables\Table;
+=======
+>>>>>>> .merge_file_ffV5xb
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
@@ -29,6 +40,10 @@ use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
 >>>>>>> .merge_file_XWiyWQ
+<<<<<<< .merge_file_nw9Pvn
+=======
+>>>>>>> .merge_file_a2KKHY
+>>>>>>> .merge_file_ffV5xb
 >>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -36,12 +51,21 @@ use Livewire\Component;
 
 /**
 <<<<<<< HEAD
+<<<<<<< .merge_file_nw9Pvn
+=======
+<<<<<<< .merge_file_JU0ZtX
+=======
+>>>>>>> .merge_file_ffV5xb
 =======
 <<<<<<< .merge_file_h3apgy
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_nw9Pvn
+=======
+>>>>>>> .merge_file_a2KKHY
+>>>>>>> .merge_file_ffV5xb
  * Harness minimo per istanziare {@see \Filament\Tables\Table::make()}.
  */
 final class XotTableConfigureLivewireHarness extends Component implements HasTable
@@ -65,12 +89,22 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
   {
     return Model::query();
   }
+<<<<<<< .merge_file_nw9Pvn
+=======
+<<<<<<< .merge_file_JU0ZtX
+=======
+=======
+>>>>>>> .merge_file_ffV5xb
 <<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> .merge_file_XWiyWQ
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_nw9Pvn
+=======
+>>>>>>> .merge_file_a2KKHY
+>>>>>>> .merge_file_ffV5xb
  * Harness minimo per istanziare {@see Table::make()}.
  */
 final class XotTableConfigureLivewireHarness extends Component implements HasTable
@@ -94,6 +128,11 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
     {
         return Model::query();
     }
+<<<<<<< .merge_file_nw9Pvn
+=======
+<<<<<<< .merge_file_JU0ZtX
+=======
+>>>>>>> .merge_file_ffV5xb
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_h3apgy
@@ -101,5 +140,9 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
 >>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_XWiyWQ
+<<<<<<< .merge_file_nw9Pvn
+=======
+>>>>>>> .merge_file_a2KKHY
+>>>>>>> .merge_file_ffV5xb
 >>>>>>> laraxot/dev
 }
