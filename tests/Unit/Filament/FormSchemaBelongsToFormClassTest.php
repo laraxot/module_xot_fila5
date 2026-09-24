@@ -17,6 +17,8 @@ use function Safe\preg_match;
 use function Safe\preg_replace;
 
 
+uses(TestCase::class);
+
 uses(TestCase::class)->group('xot');
 /**
  * Lo schema del form sta nella Form class, mai sulla Resource.

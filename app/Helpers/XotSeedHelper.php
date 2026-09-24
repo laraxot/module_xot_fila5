@@ -5,6 +5,8 @@ declare(strict_types=1);
  * Xot Seeder Helper — canonical seed-once logic (coverage perimeter under app/).
  */
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Helpers;
 
 use Illuminate\Database\Eloquent\Model;
