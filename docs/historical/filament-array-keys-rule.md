@@ -37,38 +37,10 @@ public function getTableActions(): array
 
 // ❌ SBAGLIATO - Array numerico
 <<<<<<< HEAD
-<<<<<<< .merge_file_1yV3Ao
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tr1oZ0
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_n6HFhY
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1okavu
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_1yV3Ao
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tr1oZ0
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_n6HFhY
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1okavu
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -96,38 +68,10 @@ public function getTableActions(): array
 // ✅ CORRETTO - Array associativo con chiavi string
 /** @return array<string, Component> */
 <<<<<<< HEAD
-<<<<<<< .merge_file_1yV3Ao
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tr1oZ0
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_n6HFhY
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1okavu
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_1yV3Ao
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tr1oZ0
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_n6HFhY
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1okavu
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -185,38 +129,10 @@ class UserResource extends XotBaseResource
      * @return array<string, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_1yV3Ao
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tr1oZ0
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_n6HFhY
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1okavu
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_1yV3Ao
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_tr1oZ0
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_n6HFhY
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1okavu
     {
         return [
             'name_field' => TextInput::make('name'),

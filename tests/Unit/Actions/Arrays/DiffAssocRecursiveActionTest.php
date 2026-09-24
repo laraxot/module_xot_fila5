@@ -1,29 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_SdTAcf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ROUutt
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_ayQJbl
-=======
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_CZofqJ
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

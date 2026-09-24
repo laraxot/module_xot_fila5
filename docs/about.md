@@ -17,40 +17,9 @@ E' la libreria di estensione di tutte le altre librerie.
 * [about.md](../../../Xot/docs/about.md)
 * [about.md](../../../Tenant/docs/en/about.md)
 * [about.md](../../../Tenant/docs/it/about.md)
-<<<<<<< .merge_file_enDEsy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [about.md](../../../xot/docs/about.md)
-* [about.md](../../../tenant/docs/en/about.md)
-* [about.md](../../../tenant/docs/it/about.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7ZufJp
 
 ### Versione Incoming
 
 E' la libreria di estensione di tutte le altre librerie.
 
-<<<<<<< .merge_file_enDEsy
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 8d801bbe (Check & fix styling)
-=======
----
->>>>>>> .merge_file_7ZufJp

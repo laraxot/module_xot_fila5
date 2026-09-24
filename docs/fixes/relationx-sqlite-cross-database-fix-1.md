@@ -74,23 +74,7 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
-<<<<<<< .merge_file_Ro7hvm
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
-=======
-<<<<<<< HEAD
-- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
-=======
-- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
->>>>>>> .merge_file_Z2wwS1
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -102,20 +86,4 @@ echo $tenants->count(); // ✅ Output: 1
 
 ---
 
-<<<<<<< .merge_file_Ro7hvm
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
-=======
-<<<<<<< HEAD
-*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
-=======
-*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
->>>>>>> .merge_file_Z2wwS1

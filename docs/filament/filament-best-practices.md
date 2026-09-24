@@ -43,30 +43,10 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_meY5in
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_meY5in
 {
     return [
         TextInput::make('nome')->required(),
@@ -153,30 +133,10 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_meY5in
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_meY5in
     {
         return [
             TextInput::make('cognome')
@@ -357,30 +317,10 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_meY5in
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_meY5in
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -635,30 +575,10 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_meY5in
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_meY5in
     {
         return [
             TextInput::make('nome')->required(),
@@ -778,29 +698,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-   public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-   public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_meY5in
    {
        return [
            TextInput::make('nome')->required(),
@@ -1056,30 +954,10 @@ class ReportResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_meY5in
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_meY5in
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -1158,20 +1036,4 @@ Prima di considerare completa una risorsa Filament, verificare:
 - `CreateAppointment.php` - Estende `XotBaseCreateRecord`
 - `EditAppointment.php` - Estende `XotBaseEditRecord`
 
-<<<<<<< .merge_file_XZFWdL
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
-=======
-*Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
->>>>>>> .merge_file_meY5in

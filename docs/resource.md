@@ -56,30 +56,10 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_t81zA9
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_t81zA9
     {
         return [
             // Schema del form
@@ -112,29 +92,7 @@ class MyResource extends XotBaseResource
 
 2. **IMPLEMENTARE nella Resource**
    - ✅ `protected static ?string $model`
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
    - ✅ `public function getFormSchema(): array`
-=======
-   - ✅ `public function getFormSchema(): array`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-   - ✅ `public static function getFormSchema(): array`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-   - ✅ `public static function getFormSchema(): array`
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-   - ✅ `public function getFormSchema(): array`
->>>>>>> .merge_file_t81zA9
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -247,30 +205,10 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_t81zA9
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_t81zA9
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -600,30 +538,10 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_t81zA9
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_t81zA9
 {
     return [
         'nome' => TextInput::make('nome'),
@@ -701,39 +619,9 @@ public function getTableBulkActions(): array
 ## Collegamenti tra versioni di resource.md
 * [resource.md](../../../Xot/docs/filament/resource.md)
 * [resource.md](../../../Xot/docs/resource.md)
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [resource.md](../../../xot/docs/filament/resource.md)
-* [resource.md](../../../xot/docs/resource.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_t81zA9
 
 ### Versione Incoming
 
 // ... existing code ...
 
-<<<<<<< .merge_file_xEpTR9
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 8d801bbe (Check & fix styling)
-=======
----
->>>>>>> .merge_file_t81zA9

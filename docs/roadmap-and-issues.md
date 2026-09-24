@@ -3,23 +3,7 @@
 **Modulo**: Xot (Core Framework Base)
 **Data Analisi**: 1 Ottobre 2025
 **Maintainer**: Laraxot Core Team
-<<<<<<< .merge_file_jG0LLm
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status PHPStan**: ⚠️ 9 errori (Level 9)
-=======
-<<<<<<< HEAD
-**Status PHPStan**: ⚠️ 9 errori (Level 9)
-=======
-**Status PHPStan**: ⚠️ 9 errori (Level 10)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Status PHPStan**: ⚠️ 9 errori (Level 9)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Status PHPStan**: ⚠️ 9 errori (Level 9)
->>>>>>> .merge_file_x7BACq
 
 ---
 
@@ -38,23 +22,7 @@
 
 ---
 
-<<<<<<< .merge_file_jG0LLm
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
-=======
-<<<<<<< HEAD
-## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
-=======
-## 🔴 COMPLETED PHPSTAN DA CORREGGERE (9)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
->>>>>>> .merge_file_x7BACq
 
 ### Priorità CRITICA - Blocca altri moduli
 
@@ -266,23 +234,7 @@ function xot_config(string $key): mixed
 - [ ] Rimuovere dead catch block (5 min)
 
 **Totale**: ~2 ore
-<<<<<<< .merge_file_jG0LLm
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 9
-=======
-<<<<<<< HEAD
-**Risultato**: ✅ 0 errori PHPStan Level 9
-=======
-**Risultato**: ✅ 0 errori PHPStan Level 10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Risultato**: ✅ 0 errori PHPStan Level 9
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Risultato**: ✅ 0 errori PHPStan Level 9
->>>>>>> .merge_file_x7BACq
 
 ---
 
@@ -327,23 +279,7 @@ function xot_config(string $key): mixed
 ## 📋 CHECKLIST QUALITÀ
 
 ### Code Quality ✅
-<<<<<<< .merge_file_jG0LLm
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [x] PHPStan Level 9 (83% - domani 100%)
-=======
-<<<<<<< HEAD
-- [x] PHPStan Level 9 (83% - domani 100%)
-=======
-- [x] PHPStan Level 10 (83% - domani 100%)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [x] PHPStan Level 9 (83% - domani 100%)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [x] PHPStan Level 9 (83% - domani 100%)
->>>>>>> .merge_file_x7BACq
 - [ ] PHPDoc 100% coverage
 - [ ] No dead code
 - [ ] No deprecated methods
@@ -387,19 +323,6 @@ function xot_config(string $key): mixed
 ## 🔗 Collegamenti
 
 - [← Xot Module README](./README.md)
-<<<<<<< .merge_file_jG0LLm
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [← Xot Module README](./readme.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_x7BACq
 - [← Best Practices](./best-practices.md)
 - [← Troubleshooting](./troubleshooting.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
@@ -407,32 +330,7 @@ function xot_config(string $key): mixed
 
 ---
 
-<<<<<<< .merge_file_jG0LLm
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_x7BACq
 **Status**: ⚠️ 9 ERRORI DA CORREGGERE
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
-<<<<<<< .merge_file_jG0LLm
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-**Status**: ⚠️ 9 COMPLETED DA CORREGGERE
-**Priorità**: 🔴 CRITICA (Core Framework)
-**Timeline**: 2 Ottobre 2025 (domani)
-**Effort**: ~2 ore → 100% CLEAN
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_x7BACq

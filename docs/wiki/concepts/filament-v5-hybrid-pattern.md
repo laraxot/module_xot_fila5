@@ -29,30 +29,10 @@ class DepartmentForm
 class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_3qVl4k
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_3qVl4k
     {
         return [...]; // Array of components
     }
@@ -118,30 +98,10 @@ class ArticleForm extends XotBaseResourceForm
      * @return array<int, Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_3qVl4k
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_3qVl4k
     {
         // Delegate to configure() to avoid duplication
         $schema = app(Schema::class);
@@ -216,30 +176,10 @@ class ArticleForm extends XotBaseResourceForm
     
     // LEGACY: Array style (backward compatibility)
 <<<<<<< HEAD
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_3qVl4k
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_3qVl4k
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -278,30 +218,10 @@ abstract class XotBaseResourceForm
      * Can be overridden, but default delegates to configure().
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_3qVl4k
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_3qVl4k
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();
@@ -360,30 +280,10 @@ abstract class XotBaseResourceInfolist
      * LEGACY: Array method with default implementation.
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_3qVl4k
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_XP0bja
-<<<<<<< HEAD
-=======
-=======
-    public static function getInfolistSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getInfolistSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_3qVl4k
     {
         $schema = app(Schema::class);
         return static::configure($schema)->getComponents();

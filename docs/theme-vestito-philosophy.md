@@ -52,23 +52,7 @@ Themes/[ThemeName]/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   └── pages/
-<<<<<<< .merge_file_Yq34u2
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── _quaeris_fila4_mono.code-workspace
-=======
-<<<<<<< HEAD
-├── _quaeris_fila4_mono.code-workspace
-=======
-├── _healthcare_app_fila5_mono.code-workspace
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-├── _quaeris_fila4_mono.code-workspace
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-├── _quaeris_fila4_mono.code-workspace
->>>>>>> .merge_file_574wMR
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
@@ -309,23 +293,7 @@ Themes implement accessibility features while maintaining module functionality:
 
 ### KISS (Keep It Simple, Stupid)
 - Simple theme switching
-<<<<<<< .merge_file_Yq34u2
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Predictable view resolution
-=======
-<<<<<<< HEAD
-- Predictable view resolution
-=======
-- <nome progetto>able view resolution
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Predictable view resolution
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Predictable view resolution
->>>>>>> .merge_file_574wMR
 - Clear separation of concerns
 - Minimal configuration needed
 
@@ -373,20 +341,4 @@ The "Vestito" philosophy embodies several core values:
 - Implement asset caching
 - Minimize theme-specific logic
 
-<<<<<<< .merge_file_Yq34u2
-<<<<<<< HEAD
-<<<<<<< HEAD
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
-=======
-<<<<<<< HEAD
-This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
-=======
-This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
->>>>>>> .merge_file_574wMR

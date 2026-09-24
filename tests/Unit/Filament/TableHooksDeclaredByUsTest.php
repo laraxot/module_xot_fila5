@@ -1,29 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_qyq5oX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_sBaBTr
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_BONITl
-=======
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_nUcUtP
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

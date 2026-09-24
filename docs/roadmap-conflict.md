@@ -3,23 +3,7 @@
 **Modulo**: Xot (Core Framework)
 **Status**: 95% COMPLETATO
 **Priority**: CRITICAL
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 **PHPStan**: ✅ Level 9 (0 errori)
-=======
-<<<<<<< HEAD
-**PHPStan**: ✅ Level 9 (0 errori)
-=======
-**PHPStan**: ✅ Level 10 (0 errori)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**PHPStan**: ✅ Level 9 (0 errori)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**PHPStan**: ✅ Level 9 (0 errori)
->>>>>>> .merge_file_SmY4LC
 **PHPStan**: ✅ level 10 (0 errori)
 **Filament**: ✅ 4.x Compatibile
 
@@ -108,23 +92,7 @@ Xot Module (Core Framework)
 - [x] **Events**: Eventi del sistema
 
 ### 🔧 Technical Excellence
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori
-=======
-<<<<<<< HEAD
-- [x] **PHPStan Level 9**: 0 errori
-=======
-- [x] **PHPStan Level 10**: 0 errori
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [x] **PHPStan Level 9**: 0 errori
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [x] **PHPStan Level 9**: 0 errori
->>>>>>> .merge_file_SmY4LC
 - [x] **PHPStan level 10**: 0 errori
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
@@ -204,49 +172,13 @@ Xot Module (Core Framework)
 
 #### 📋 Features
 - [ ] **Smart Caching** (Priority: MEDIUM)
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
   - [ ] ML-based cache prediction
-=======
-<<<<<<< HEAD
-  - [ ] ML-based cache prediction
-=======
-  - [ ] ML-based cache <nome progetto>ion
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-  - [ ] ML-based cache prediction
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-  - [ ] ML-based cache prediction
->>>>>>> .merge_file_SmY4LC
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
   - [ ] Performance optimization
 
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [ ] **Predictive Services** (Priority: MEDIUM)
   - [ ] Load prediction
-=======
-<<<<<<< HEAD
-- [ ] **Predictive Services** (Priority: MEDIUM)
-  - [ ] Load prediction
-=======
-- [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
-  - [ ] Load <nome progetto>ion
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [ ] **Predictive Services** (Priority: MEDIUM)
-  - [ ] Load prediction
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [ ] **Predictive Services** (Priority: MEDIUM)
-  - [ ] Load prediction
->>>>>>> .merge_file_SmY4LC
   - [ ] Resource optimization
   - [ ] Performance forecasting
   - [ ] Anomaly detection
@@ -259,23 +191,7 @@ Xot Module (Core Framework)
 
 #### 🎯 Success Criteria
 - [ ] AI caching working
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [ ] Predictive services active
-=======
-<<<<<<< HEAD
-- [ ] Predictive services active
-=======
-- [ ] <nome progetto>ive services active
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [ ] Predictive services active
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [ ] Predictive services active
->>>>>>> .merge_file_SmY4LC
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
 
@@ -315,23 +231,7 @@ Xot Module (Core Framework)
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [x] PHPStan Level 9 compliance
-=======
-<<<<<<< HEAD
-- [x] PHPStan Level 9 compliance
-=======
-- [x] PHPStan Level 10 compliance
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [x] PHPStan Level 9 compliance
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [x] PHPStan Level 9 compliance
->>>>>>> .merge_file_SmY4LC
 - [x] PHPStan level 10 compliance
 - [x] Type safety implementation
 - [x] Error handling improvement
@@ -391,23 +291,7 @@ Xot Module (Core Framework)
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori ✅
-=======
-<<<<<<< HEAD
-- [x] **PHPStan Level 9**: 0 errori ✅
-=======
-- [x] **PHPStan Level 10**: 0 errori ✅
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [x] **PHPStan Level 9**: 0 errori ✅
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [x] **PHPStan Level 9**: 0 errori ✅
->>>>>>> .merge_file_SmY4LC
 - [x] **PHPStan level 10**: 0 errori ✅
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 90% (target)
@@ -461,23 +345,7 @@ Xot Module (Core Framework)
 - [ ] AI research and planning
 - [ ] ML model development
 - [ ] Smart caching implementation
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [ ] Predictive services
-=======
-<<<<<<< HEAD
-- [ ] Predictive services
-=======
-- [ ] <nome progetto>ive services
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [ ] Predictive services
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [ ] Predictive services
->>>>>>> .merge_file_SmY4LC
 
 #### May 2025
 - [ ] AI integration testing
@@ -601,23 +469,7 @@ Xot Module (Core Framework)
 
 ### Development Tools
 - **Testing**: Pest/PHPUnit
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Code Quality**: PHPStan Level 9
-=======
-<<<<<<< HEAD
-- **Code Quality**: PHPStan Level 9
-=======
-- **Code Quality**: PHPStan Level 10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- **Code Quality**: PHPStan Level 9
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- **Code Quality**: PHPStan Level 9
->>>>>>> .merge_file_SmY4LC
 - **Code Quality**: PHPStan level 10
 - **Performance**: Blackfire, New Relic
 - **Monitoring**: Grafana, Prometheus
@@ -634,38 +486,9 @@ Xot Module (Core Framework)
 
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_SmY4LC
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 
 ---
 
-<<<<<<< .merge_file_39Foka
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-=======
-<<<<<<< HEAD
-*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-=======
-*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> .merge_file_SmY4LC

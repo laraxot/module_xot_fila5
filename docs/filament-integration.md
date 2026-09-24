@@ -46,30 +46,10 @@ Each resource must implement the abstract method:
 
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_7NbS7V
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7NbS7V
 ```
 
 This enforces consistent form schema definition across all resources.
@@ -96,30 +76,10 @@ Resources define forms through `getFormSchema()`:
 
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_7NbS7V
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7NbS7V
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -221,30 +181,10 @@ Consistent form setup with standardized columns:
 
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_7NbS7V
 public function getFormSchemaColumns(): int
 =======
 public function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchemaColumns(): int
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchemaColumns(): int
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7NbS7V
 {
     return 1; // Standard single column layout
 }
@@ -395,23 +335,7 @@ Filament resources integrate with Laraxot's multi-tenancy system:
 - Standardized patterns across all modules
 
 ### KISS (Keep It Simple, Stupid)
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Clear, predictable inheritance
-=======
-<<<<<<< HEAD
-- Clear, predictable inheritance
-=======
-- Clear, <nome progetto>able inheritance
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Clear, predictable inheritance
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Clear, predictable inheritance
->>>>>>> .merge_file_7NbS7V
 - Minimal configuration required
 - Consistent API across resources
 
@@ -436,30 +360,10 @@ public static function getModel(): string
 Always implement `getFormSchema()` for consistency:
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_7NbS7V
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_7NbS7V
 {
     // Return array of form components
 }
@@ -475,20 +379,4 @@ The Filament integration in Laraxot embodies the project's core values:
 - **Type Safety**: Contract-based development
 - **User Experience**: Modern, intuitive admin interfaces
 
-<<<<<<< .merge_file_4kMIOv
-<<<<<<< HEAD
-<<<<<<< HEAD
 This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
-=======
-<<<<<<< HEAD
-This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
-=======
-This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
->>>>>>> .merge_file_7NbS7V

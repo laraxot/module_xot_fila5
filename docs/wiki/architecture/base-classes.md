@@ -42,21 +42,8 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
-<<<<<<< .merge_file_sX0Rpw
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_KGwde4
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -158,21 +145,8 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_sX0Rpw
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_KGwde4
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             Section::make(__('filament.section.general'))
@@ -338,21 +312,8 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_sX0Rpw
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_KGwde4
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             ...parent::getFormSchema(),
@@ -424,21 +385,8 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_sX0Rpw
-<<<<<<< HEAD
-<<<<<<< HEAD
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_KGwde4
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array

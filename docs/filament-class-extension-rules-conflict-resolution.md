@@ -1,27 +1,6 @@
-<<<<<<< .merge_file_XbOA63
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Risoluzione Conflitti Git - Filament Class Extension Rules
 
 ## Data Risoluzione
-=======
-<<<<<<< HEAD
-# Risoluzione Conflitti Git - Filament Class Extension Rules
-
-## Data Risoluzione
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-# Risoluzione Conflitti Git - Filament Class Extension Rules
-
-## Data Risoluzione
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-# Risoluzione Conflitti Git - Filament Class Extension Rules
-
-## Data Risoluzione
->>>>>>> .merge_file_2bg5Yw
 2026-01-02
 
 ## Problema Identificato
@@ -93,22 +72,3 @@ Il file `filament-class-extension-rules.md` conteneva conflitti Git multipli:
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Base Classes Documentation](./consolidated/base-classes.md)
-<<<<<<< .merge_file_XbOA63
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
----
-module: theme
-topic: filament-class-extension-rules-conflict-resolution
-canonical: ../../../Themes/docs/shared-components/filament-class-extension-resolution.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-class-extension-resolution.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_2bg5Yw

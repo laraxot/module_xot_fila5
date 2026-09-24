@@ -1,19 +1,11 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://stackoverflow.com/questions/39213022/custom-laravel-relations
  * @see https://github.com/johnnyfreeman/laravel-custom-relation
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Model;
@@ -24,14 +16,8 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
-<<<<<<< HEAD
  */
 // @phpstan-ignore trait.unused
-=======
- *
- * @phpstan-ignore trait.unused
- */
->>>>>>> 8d801bbe (Check & fix styling)
 trait HasCustomRelations
 {
     public function customRelation(
@@ -40,19 +26,7 @@ trait HasCustomRelations
         ?\Closure $eagerConstraints = null,
         ?\Closure $eagerMatcher = null,
     ): CustomRelation {
-<<<<<<< .merge_file_9xHXoi
-<<<<<<< HEAD
-<<<<<<< HEAD
         $instance = new $related;
-=======
-        $instance = new $related();
->>>>>>> laraxot/dev
-=======
-        $instance = new $related();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $instance = new $related;
->>>>>>> .merge_file_7wJsO2
         // Call to an undefined method object::newQuery()
         Assert::isInstanceOf($instance, Model::class, '['.__LINE__.']['.class_basename($this).']');
         $query = $instance->newQuery();

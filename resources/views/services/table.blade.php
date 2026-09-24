@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 ?>
 <table border="1" class="table table-bordered">
 @foreach ($rows as $row)

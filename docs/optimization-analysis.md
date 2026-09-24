@@ -820,52 +820,12 @@ class XotPerformanceMonitor
 ## 🔗 Collegamenti
 
 - [Laravel Architecture Patterns](https://laravel.com/project_docs/architecture-concepts)
-<<<<<<< .merge_file_NtYFs8
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
 - [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
 - [Performance Best Practices](../../../project_docs/performance-best-practices.md)
-=======
-<<<<<<< HEAD
-- [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
-- [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
-- [Performance Best Practices](../../../project_docs/performance-best-practices.md)
-=======
-- [PHPStan Level 10 Guidelines](../../../../docs/project/phpstan-level-10.md)
-- [SOLID Principles in PHP](../../../../docs/project/solid-principles.md)
-- [Performance Best Practices](../../../../docs/project/performance-best-practices.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
-- [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
-- [Performance Best Practices](../../../project_docs/performance-best-practices.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [PHPStan Level 10 Guidelines](../../../project_docs/phpstan-level-10.md)
-- [SOLID Principles in PHP](../../../project_docs/solid-principles.md)
-- [Performance Best Practices](../../../project_docs/performance-best-practices.md)
->>>>>>> .merge_file_cyesBf
 
 ---
 
 *Documento creato: Gennaio 2025*
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*
-<<<<<<< .merge_file_NtYFs8
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
-=======
-<<<<<<< HEAD
-*Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
-=======
-*Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
->>>>>>> .merge_file_cyesBf

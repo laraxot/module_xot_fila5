@@ -1,18 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_NgaydE
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-=======
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Snk1Rj
 ?>
 <div
     x-data="{

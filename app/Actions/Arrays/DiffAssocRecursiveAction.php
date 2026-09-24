@@ -14,24 +14,7 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_8uXlxK
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
-=======
-<<<<<<< .merge_file_fveJ0C
-     * @param  array<int|string, mixed>  $data
-=======
-     * @param array<int|string, mixed> $data
-     *
->>>>>>> .merge_file_Swjp0m
->>>>>>> laraxot/dev
-=======
-     * @param  array<int|string, mixed>  $data
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<int|string, mixed>  $data
->>>>>>> .merge_file_HU0Yfz
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -54,29 +37,8 @@ class DiffAssocRecursiveAction
     }
 
     /**
-<<<<<<< .merge_file_8uXlxK
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $arr_1
      * @param  array<int|string, mixed>  $arr_2
-=======
-<<<<<<< .merge_file_fveJ0C
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
-=======
-     * @param array<int|string, mixed> $arr_1
-     * @param array<int|string, mixed> $arr_2
-     *
->>>>>>> .merge_file_Swjp0m
->>>>>>> laraxot/dev
-=======
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<int|string, mixed>  $arr_1
-     * @param  array<int|string, mixed>  $arr_2
->>>>>>> .merge_file_HU0Yfz
      * @return array<int|string, array<int|string, mixed>>
      */
     public function execute(array $arr_1, array $arr_2): array
@@ -84,33 +46,7 @@ class DiffAssocRecursiveAction
         $coll_1 = collect(self::fixType($arr_1));
         $arr_2 = self::fixType($arr_2);
 
-<<<<<<< .merge_file_8uXlxK
-<<<<<<< HEAD
-<<<<<<< HEAD
         $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
-=======
-<<<<<<< .merge_file_fveJ0C
-<<<<<<< HEAD
-        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
-=======
-        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
->>>>>>> .merge_file_Swjp0m
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $ris = $coll_1->filter(static function (array $value, int|string $key) use ($arr_2) {
->>>>>>> .merge_file_HU0Yfz
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {

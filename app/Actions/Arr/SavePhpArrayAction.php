@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
-<<<<<<< .merge_file_OgIIqC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_ELGF4j
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_put_contents;
@@ -21,41 +16,20 @@ use function Safe\file_put_contents;
  * (ordine utente 2026-09-16; SSoT `.codestyle-preferences.md` + memoria
  * `php-array-one-key-per-line.md`).
  */
-=======
-use function Safe\file_put_contents;
-
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\VarExporter\VarExporter;
-
->>>>>>> 8d801bbe (Check & fix styling)
 class SavePhpArrayAction
 {
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_OgIIqC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_ELGF4j
      * @param  array<int|string, mixed>  $data
      */
     public function execute(array $data, string $filename): bool
     {
         $exported = $this->exportArray($data, 0);
-=======
-     * @param array<int|string, mixed> $data
-     */
-    public function execute(array $data, string $filename): bool
-    {
-        $exported = VarExporter::export($data);
-        // $exported = var_export($data, true);
->>>>>>> 8d801bbe (Check & fix styling)
         $content = "<?php\n\ndeclare(strict_types=1);\n\nreturn ".$exported.";\n";
 
         return (bool) file_put_contents($filename, $content);
     }
-<<<<<<< HEAD
 
     /**
      * @param  array<int|string, mixed>  $data
@@ -89,6 +63,4 @@ class SavePhpArrayAction
 
         return var_export($value, true);
     }
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 }

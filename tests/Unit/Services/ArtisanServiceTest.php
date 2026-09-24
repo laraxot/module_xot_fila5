@@ -1,29 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_glzJG8
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MnkXWd
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_WFDxm0
-=======
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_dGgEW4
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;

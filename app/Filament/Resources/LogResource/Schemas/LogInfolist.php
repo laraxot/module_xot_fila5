@@ -14,11 +14,7 @@ class LogInfolist extends XotBaseResourceInfolist
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    public static function getInfolistSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
     {
         return [
             'name' => TextEntry::make('name')

@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_LE0vnC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_CGgCZh
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica
@@ -16,23 +6,8 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Completa del Sistema di Prompt](prompts_documentation_system.md)
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
-<<<<<<< .merge_file_LE0vnC
-<<<<<<< HEAD
-=======
-=======
-- [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
-- [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
-- [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_CGgCZh
 
 ## Cos'è il Sistema di Prompt
 
@@ -54,28 +29,8 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 
 ### Come Utilizzare Entrambi i Sistemi
 
-<<<<<<< .merge_file_LE0vnC
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
 2. Utilizzare il [Sistema di Prompt](prompts_documentation_system.md) per istruzioni dettagliate
-=======
-<<<<<<< HEAD
-1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
-2. Utilizzare il [Sistema di Prompt](prompts_documentation_system.md) per istruzioni dettagliate
-=======
-1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
-2. Utilizzare il [Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md) per istruzioni dettagliate
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
-2. Utilizzare il [Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md) per istruzioni dettagliate
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
-2. Utilizzare il [Sistema di Prompt](prompts_documentation_system.md) per istruzioni dettagliate
->>>>>>> .merge_file_CGgCZh
 
 ## Miglioramenti Recenti
 
@@ -96,37 +51,6 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 ## Collegamenti Correlati
 
 - [Sistema di Collegamenti della Documentazione](../../../../docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_LE0vnC
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
 - [Percorsi Relativi nella Documentazione](percorsi_relativi_documentazione.md)
 - [Documentazione del Sistema di Prompt](prompts_documentation_system.md)
-=======
-<<<<<<< HEAD
-- [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
-- [Percorsi Relativi nella Documentazione](percorsi_relativi_documentazione.md)
-- [Documentazione del Sistema di Prompt](prompts_documentation_system.md)
-=======
-- [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
-- [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
-- [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
----
-module: theme
-topic: documentation-prompt-system
-canonical: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
-- [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
-- [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
-- [Percorsi Relativi nella Documentazione](percorsi_relativi_documentazione.md)
-- [Documentazione del Sistema di Prompt](prompts_documentation_system.md)
->>>>>>> .merge_file_CGgCZh

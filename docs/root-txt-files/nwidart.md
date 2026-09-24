@@ -5,31 +5,7 @@ type: reference
 slug: nwidart
 description: 'Elenco di 1 riferimenti esterni raccolti per nwidart, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
-<<<<<<< .merge_file_TaaWPX
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-converted_from: _nwidart.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 converted_from: nwidart.txt
-=======
-converted_from: _nwidart.txt
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-converted_from: nwidart.txt
->>>>>>> .merge_file_y9SOGd
 created: 2026-08-24
 updated: 2026-08-24
 ---
@@ -42,23 +18,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927>
-<<<<<<< .merge_file_TaaWPX
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-- <https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927>
-=======
-- <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_y9SOGd

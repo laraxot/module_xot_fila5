@@ -98,30 +98,10 @@ abstract class XotBaseResource extends Resource
     use HasXotTable;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_YY6eBI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_v3bRBx
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_YY6eBI
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_v3bRBx
     {
         return static::getFormSchemaImplementation();
     }
@@ -159,37 +139,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 - Registrazione automatica di componenti
 - Gestione centralizzata degli asset
 
-<<<<<<< .merge_file_YY6eBI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-## 📦 **Gestione Dipendenze (composer.json)**
-
-Il file `composer.json` del modulo Xot è fondamentale per definire le sue dipendenze e configurazioni. Segue i principi di gestione delle dipendenze stabiliti per l'intero ecosistema Laraxot.
-
-### **1. Dipendenze Obbligatorie (`require`)**
-- **Vincoli di Versione**: Utilizzare sempre operatori di versione specifici (es. `^1.0` o `~1.2`) per garantire stabilità e prevedibilità negli aggiornamenti. Evitare l'uso di `"*"` per le dipendenze in produzione.
-- **Dipendenze Core**: Il modulo Xot elenca le dipendenze Laravel e Filament necessarie per il funzionamento base dell'intero framework.
-
-### **2. Dipendenze di Sviluppo (`require-dev`)**
-- Includono strumenti per testing (Pest), analisi statica (PHPStan) e formattazione del codice (PHP-CS-Fixer), essenziali per mantenere l'alta qualità del codice base.
-
-### **3. Repository di Percorso (`repositories`)**
-- **Monorepo**: Per facilitare lo sviluppo locale all'interno del monorepo Laraxot, il modulo Xot può definire `path` repositories che puntano ad altri moduli locali (es. `./../AnotherModule`). Questo permette a Composer di risolvere le dipendenze dei moduli localmente.
-- **Priorità**: Questi repository locali hanno la precedenza sui pacchetti Packagist, consentendo di testare le modifiche ai moduli dipendenti prima del rilascio.
-
-### **4. Script e Configurazione**
-- **Script di Qualità**: Include script standardizzati per `analyse`, `test`, `test-coverage` e `format`, promuovendo l'automazione del controllo qualità.
-- **Stabilità**: `minimum-stability: "dev"` e `prefer-stable: true` bilanciano la necessità di utilizzare versioni in sviluppo con la preferenza per versioni stabili.
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_v3bRBx
 ## 🔄 **Flusso di Esecuzione**
 
 ### **1. Bootstrap Applicazione**
@@ -443,38 +392,9 @@ test('all models extend base model', function () {
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
-<<<<<<< .merge_file_YY6eBI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_v3bRBx
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
 
-<<<<<<< .merge_file_YY6eBI
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> .merge_file_v3bRBx

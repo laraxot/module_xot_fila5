@@ -10,71 +10,17 @@ use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Mockery;
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-use Mockery;
->>>>>>> .merge_file_47YO8q
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
 use ReflectionMethod;
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-use ReflectionMethod;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-use ReflectionMethod;
->>>>>>> .merge_file_47YO8q
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
     Mockery::close();
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-    Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> laraxot/dev
-=======
-    \Mockery::close();
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
-    \Mockery::close();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    Mockery::close();
->>>>>>> .merge_file_47YO8q
 });
 
 describe('Xot migration deep branches', function (): void {
@@ -101,15 +47,6 @@ describe('Xot migration deep branches', function (): void {
         DB::table('cache')->insert(['id' => 1, 'uuid' => null, 'key' => 'k', 'value' => 'v']);
         DB::table('cache')->insert(['id' => 2, 'uuid' => (string) Str::uuid(), 'key' => 'k2', 'value' => 'v2']);
 
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_47YO8q
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
@@ -119,60 +56,12 @@ describe('Xot migration deep branches', function (): void {
 
         // isUuidColumnType + backfill
         $isUuid = new ReflectionMethod($migration, 'isUuidColumnType');
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_pIZOoI
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-        $migration = new class extends XotBaseMigration {
-            protected ?string $model_class = CacheModel::class;
-
-            public function up(): void
-            {
-            }
-        };
-
-        // isUuidColumnType + backfill
-        $isUuid = new \ReflectionMethod($migration, 'isUuidColumnType');
-<<<<<<< HEAD
-<<<<<<< .merge_file_yA9HGa
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_47YO8q
         $isUuid->setAccessible(true);
         Assert::assertTrue($isUuid->invoke($migration, 'char'));
         Assert::assertTrue($isUuid->invoke($migration, 'varchar'));
         Assert::assertFalse($isUuid->invoke($migration, 'bigint'));
 
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
         $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-        $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
-=======
-        $backfill = new \ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
->>>>>>> laraxot/dev
-=======
-        $backfill = new \ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
-        $backfill = new \ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
->>>>>>> .merge_file_47YO8q
         $backfill->setAccessible(true);
         try {
             $backfill->invoke($migration);
@@ -181,27 +70,7 @@ describe('Xot migration deep branches', function (): void {
         }
 
         // convertIdFromUuidToBigintIfNeeded when not uuid type
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
         $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-        $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
-=======
-        $convert = new \ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
->>>>>>> laraxot/dev
-=======
-        $convert = new \ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
-        $convert = new \ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
->>>>>>> .merge_file_47YO8q
         $convert->setAccessible(true);
         try {
             $convert->invoke(
@@ -219,27 +88,7 @@ describe('Xot migration deep branches', function (): void {
         }
 
         try {
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
             $perform = new ReflectionMethod($migration, 'performUuidToBigintConversion');
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-            $perform = new ReflectionMethod($migration, 'performUuidToBigintConversion');
-=======
-            $perform = new \ReflectionMethod($migration, 'performUuidToBigintConversion');
->>>>>>> laraxot/dev
-=======
-            $perform = new \ReflectionMethod($migration, 'performUuidToBigintConversion');
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
-            $perform = new \ReflectionMethod($migration, 'performUuidToBigintConversion');
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            $perform = new ReflectionMethod($migration, 'performUuidToBigintConversion');
->>>>>>> .merge_file_47YO8q
             $perform->setAccessible(true);
             $perform->invoke(
                 $migration,
@@ -258,52 +107,12 @@ describe('Xot migration deep branches', function (): void {
         }
 
         // Mock information_schema paths via connection selectOne
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
         $conn = Mockery::mock(Connection::class)->makePartial();
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-        $conn = Mockery::mock(Connection::class)->makePartial();
-=======
-        $conn = \Mockery::mock(Connection::class)->makePartial();
->>>>>>> laraxot/dev
-=======
-        $conn = \Mockery::mock(Connection::class)->makePartial();
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
-        $conn = \Mockery::mock(Connection::class)->makePartial();
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $conn = Mockery::mock(Connection::class)->makePartial();
->>>>>>> .merge_file_47YO8q
         $conn->shouldReceive('getDatabaseName')->andReturn('testdb');
         $conn->shouldReceive('selectOne')->andReturn((object) ['count' => 1]);
         $conn->shouldReceive('getDriverName')->andReturn('mysql');
 
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
         $builder = Mockery::mock(Builder::class);
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-        $builder = Mockery::mock(Builder::class);
-=======
-        $builder = \Mockery::mock(Builder::class);
->>>>>>> laraxot/dev
-=======
-        $builder = \Mockery::mock(Builder::class);
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
-        $builder = \Mockery::mock(Builder::class);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        $builder = Mockery::mock(Builder::class);
->>>>>>> .merge_file_47YO8q
         $builder->shouldReceive('getConnection')->andReturn($conn);
         $builder->shouldReceive('hasTable')->andReturn(true);
         $builder->shouldReceive('hasColumn')->andReturn(true);
@@ -324,27 +133,7 @@ describe('Xot migration deep branches', function (): void {
             if (! method_exists($migration, $m)) {
                 continue;
             }
-<<<<<<< .merge_file_vpEprn
-<<<<<<< HEAD
-<<<<<<< HEAD
             $rm = new ReflectionMethod($migration, $m);
-=======
-<<<<<<< .merge_file_yA9HGa
-<<<<<<< HEAD
-            $rm = new ReflectionMethod($migration, $m);
-=======
-            $rm = new \ReflectionMethod($migration, $m);
->>>>>>> laraxot/dev
-=======
-            $rm = new \ReflectionMethod($migration, $m);
->>>>>>> .merge_file_pIZOoI
->>>>>>> laraxot/dev
-=======
-            $rm = new \ReflectionMethod($migration, $m);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            $rm = new ReflectionMethod($migration, $m);
->>>>>>> .merge_file_47YO8q
             $rm->setAccessible(true);
             try {
                 $rm->invoke($migration, (object) ['count' => 2]);

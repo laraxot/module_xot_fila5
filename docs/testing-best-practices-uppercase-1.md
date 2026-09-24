@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_UtbEuC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_g9TTQQ
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -224,21 +214,3 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
-<<<<<<< .merge_file_UtbEuC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: testing-best-practices-uppercase-1
-canonical: ../../../Themes/docs/shared-components/testing-best-practices-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/testing-best-practices-1.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_g9TTQQ

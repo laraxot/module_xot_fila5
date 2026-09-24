@@ -53,37 +53,5 @@ class ThemeAction
         return resource_path('themes/'.self::$currentTheme);
     }
 
-<<<<<<< .merge_file_Vwb4tN
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function execute(): void {}
-=======
-<<<<<<< .merge_file_uj7qR3
-<<<<<<< HEAD
-    public function execute(): void
-    {
-    }
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-    public function execute(): void
-    {
-    }
-=======
-    public function execute(): void {}
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_iaoQ85
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    public function execute(): void {}
->>>>>>> .merge_file_YrMrtw
 }

@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -55,22 +47,7 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
-<<<<<<< .merge_file_xIrQ64
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<int, string> $scopes
-     *                                   =======
-     * @param array<int, string> $scopes
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<int, string> $scopes
->>>>>>> 8d801bbe (Check & fix styling)
-     *
-=======
      * @param  array<int, string>  $scopes
->>>>>>> .merge_file_nc9z3c
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;

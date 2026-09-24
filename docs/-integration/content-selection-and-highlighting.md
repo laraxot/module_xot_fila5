@@ -1,30 +1,3 @@
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-# content_selection_and_highlighting
-
-<!-- Contenuto migrato da _docs/content_selection_and_highlighting.txt -->
-
-https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_MWkKem
 ---
 title: 'Content selection and highlighting'
 module: Xot
@@ -39,146 +12,29 @@ updated: 2026-08-24
 
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
-<<<<<<< .merge_file_VAtHOC
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MWkKem
 https://github.com/codeshifu/react-highlight-pop
 
 https://stackoverflow.com/questions/18543676/display-popup-above-highlighted-text-in-contenteditable-div
 
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MWkKem
 https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-highlight-js-9d9ab2797b8
 
 https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highlight-function
 
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
-https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-highlight-js-9d9ab2797b8
-
-
-https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highlight-function
-
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MWkKem
 http://720kb.github.io/butler/
 https://720kb.github.io/highlighter.js/
 
 https://github.com/anonyco/Highlighter-JS
 
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-https://jobjects.com/project_docs/highlighter/jquery //deprecated
-
-https://devpost.com/software/highlighter-js
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 https://jobjects.com/docs/highlighter/jquery //deprecated
 
 https://devpost.com/software/highlighter-js
 
-
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9qv76y
-=======
->>>>>>> .merge_file_MWkKem
-https://jobjects.com/docs/highlighter/jquery //deprecated
-
-https://devpost.com/software/highlighter-js
-
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MWkKem
 ------------------------------------------------------------
 https://mxb.dev/blog/medium-share-highlight-eleventy/
 https://github.com/maxboeck/eleventy-plugin-share-highlight
 
 ---------------------------------------------------------------
 
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MWkKem
 https://css-tricks.com/how-to-create-actions-for-selected-text-with-the-selection-api/    !!!
 
 -----------------------------------------------------------------
@@ -187,47 +43,9 @@ https://github.com/anythingcodes/highlight-share
 -------------------------------------------------------------------------------
 https://estevanmaito.github.io/sharect/
 
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 ---------------------------------------------------------------
 https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
 
-=======
-
----------------------------------------------------------------
-https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
-
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
----------------------------------------------------------------
-https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
-
->>>>>>> laraxot/dev
-=======
----------------------------------------------------------------
-https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
-
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
----------------------------------------------------------------
-https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
----------------------------------------------------------------
-https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
-
->>>>>>> .merge_file_MWkKem
 --------------------------------------------------------------
 
 https://codecanyon.net/item/highlighter-pro-a-mediumcominspired-text-highlighting-and-inline-commenting-tool-for-wordpress/20743682
@@ -264,41 +82,8 @@ https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a
 --------------------------------------------------------------
 --------------------------------------------------------------
 
-<<<<<<< .merge_file_VAtHOC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_MvSC0G
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 tvb.bibliotechetrevigiane.it
 
-=======
-
-tvb.bibliotechetrevigiane.it
-
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-tvb.bibliotechetrevigiane.it
-
->>>>>>> laraxot/dev
-=======
-tvb.bibliotechetrevigiane.it
-
->>>>>>> .merge_file_9qv76y
->>>>>>> laraxot/dev
-=======
-tvb.bibliotechetrevigiane.it
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-tvb.bibliotechetrevigiane.it
-
->>>>>>> .merge_file_MWkKem
 -------------------
 <div class="dd ew od xf" data-popper-reference-hidden="false" data-popper-escaped="false"
 data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px;

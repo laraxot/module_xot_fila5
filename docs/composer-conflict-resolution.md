@@ -9,20 +9,4 @@
 - Rimozione di `pestphp/pest-plugin-livewire` se il progetto resta su PHP `^8.2`, perché le versioni 4.x richiedono PHP `^8.3` e Livewire `^4.0.1`.
 
 ## Collegamenti
-<<<<<<< .merge_file_8mvSGI
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Gestione dipendenze Composer](../../../../docs/composer.md)
-=======
-<<<<<<< HEAD
-- [Gestione dipendenze Composer](../../../../docs/composer.md)
-=======
-- [Gestione dipendenze Composer](../../../../../docs/composer.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Gestione dipendenze Composer](../../../../docs/composer.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Gestione dipendenze Composer](../../../../docs/composer.md)
->>>>>>> .merge_file_yzjIzD

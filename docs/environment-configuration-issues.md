@@ -281,20 +281,4 @@ php artisan config:cache
 - [xra.php](/laravel/config/localhost/xra.php)
 - [Documentazione Root](/project_docs/env-config-loading-issue.md)
 
-<<<<<<< .merge_file_tO86T6
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> .merge_file_czP82i

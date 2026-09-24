@@ -257,20 +257,4 @@ class CacheTest extends TestCase {
 
 5. Mantenere compatibilità con le versioni precedenti
 
-<<<<<<< .merge_file_VQtitR
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 8d801bbe (Check & fix styling)
-=======
----
->>>>>>> .merge_file_FXOgq8

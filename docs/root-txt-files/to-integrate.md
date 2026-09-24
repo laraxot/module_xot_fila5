@@ -5,31 +5,7 @@ type: reference
 slug: to-integrate
 description: 'Elenco di 1 riferimenti esterni raccolti per to integrate, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
-<<<<<<< .merge_file_wQ2N3O
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-converted_from: ___to_integrate.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 converted_from: to-integrate.txt
-=======
-converted_from: ___to_integrate.txt
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-converted_from: to-integrate.txt
->>>>>>> .merge_file_rteza7
 created: 2026-08-24
 updated: 2026-08-24
 ---

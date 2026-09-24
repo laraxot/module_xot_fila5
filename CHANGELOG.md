@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_gTwaSJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uWGWKa
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.
@@ -18,16 +10,6 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## Contenuto assorbito da `CHANGELOG.MD`
 
-<<<<<<< .merge_file_gTwaSJ
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_uWGWKa
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
@@ -171,14 +153,6 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
-<<<<<<< .merge_file_gTwaSJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_uWGWKa
 
 ---
 
@@ -327,13 +301,3 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
-<<<<<<< .merge_file_gTwaSJ
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_uWGWKa

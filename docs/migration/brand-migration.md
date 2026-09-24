@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 # Migrazione al Nuovo Sistema Brand
 
 ## Panoramica

@@ -236,39 +236,9 @@ return [
 ## Collegamenti tra versioni di services.md
 * [services.md](../../../Xot/docs/services.md)
 * [services.md](../../../Tenant/docs/it/config/services.md)
-<<<<<<< .merge_file_6Vq95y
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [services.md](../../../xot/docs/services.md)
-* [services.md](../../../tenant/docs/it/config/services.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_bp1Amg
 
 ### Versione Incoming
 
    - Testare i casi limite
 
-<<<<<<< .merge_file_6Vq95y
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 8d801bbe (Check & fix styling)
-=======
----
->>>>>>> .merge_file_bp1Amg

@@ -4,17 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Class;
 
-<<<<<<< .merge_file_vdMlTh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// use Modules\Xot\Services\ArrayService;
->>>>>>> laraxot/dev
-=======
-// use Modules\Xot\Services\ArrayService;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_8IjGHD
 use Spatie\QueueableAction\QueueableAction;
 
 class GetFilenameByClassnameAction

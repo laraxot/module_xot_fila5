@@ -48,30 +48,10 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_sHQsrL
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sHQsrL
     {
         return [
             // Form components
@@ -287,30 +267,10 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_sHQsrL
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sHQsrL
     {
         return [
             // Form components
@@ -459,30 +419,10 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_sHQsrL
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sHQsrL
     {
         return [
             // Form components
@@ -698,30 +638,10 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_sHQsrL
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_sHQsrL
     {
         return [
             // Form components
@@ -819,20 +739,4 @@ BadgeColumn::make('status')
 - [Translation System](./translation_system.md)
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
-<<<<<<< .merge_file_j3NyUy
-<<<<<<< HEAD
-<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
-=======
-<<<<<<< HEAD
-Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
-=======
-Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
->>>>>>> .merge_file_sHQsrL

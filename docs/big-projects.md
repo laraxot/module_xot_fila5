@@ -1,29 +1,3 @@
-<<<<<<< .merge_file_oF5aVv
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_IPiVU3
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
-
-
-
-<<<<<<< HEAD
-https://readme.so/it/editor
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_IquJ29
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Emlbrv
 ---
 title: 'big_projects'
 module: Xot
@@ -43,25 +17,3 @@ updated: 2026-08-24
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 https://readme.so/it/editor
-<<<<<<< .merge_file_oF5aVv
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_IPiVU3
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
-
-
-
-https://readme.so/it/editor
->>>>>>> .merge_file_IquJ29
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-https://readme.so/it/editor
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Emlbrv

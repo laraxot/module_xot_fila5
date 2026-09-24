@@ -2,12 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/de/xls_by_model_class_action.php
->>>>>>> 8d801bbe (Check & fix styling)
 return [
     'id' => 'id',
     'level' => 'level',
@@ -23,19 +17,7 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
-<<<<<<< .merge_file_9G3bfo
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'icon' => 'heroicon-o-puzzle-piece',
-=======
         'icon' => 'xot-files.xls',
->>>>>>> laraxot/dev
-=======
-        'icon' => 'heroicon-o-puzzle-piece',
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        'icon' => 'xot-files.xls',
->>>>>>> .merge_file_bHmYmz
         'sort' => 100,
     ],
     'label' => 'Missing Label',

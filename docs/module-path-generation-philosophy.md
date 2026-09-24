@@ -1,19 +1,6 @@
 # Module Path Generation - Philosophy and Business Logic
 
 **Data Creazione**: 2026-01-02
-<<<<<<< .merge_file_joOrMw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Data Creazione**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_KtkXP1
 **Status**: 📚 Foundation Document
 **Versione**: 1.0.0
 
@@ -102,20 +89,4 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 
 ---
 
-<<<<<<< .merge_file_joOrMw
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
-=======
-<<<<<<< HEAD
-**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
-=======
-**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Filosofia**: Il sistema si adatta ai moduli, non viceversa.
->>>>>>> .merge_file_KtkXP1

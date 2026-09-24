@@ -91,33 +91,8 @@ public function processValue(?string $value): string
 ## Collegamenti Correlati
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
-<<<<<<< .merge_file_N0lwXl
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Best Practices](best-practices.md)
 - [Code Standards](code-standards.md)
-=======
-<<<<<<< .merge_file_7A5cYR
-- [Best Practices](best-practices.md)
-- [Code Standards](code-standards.md)
-=======
-<<<<<<< HEAD
-- [Best Practices](best-practices.md)
-- [Code Standards](code-standards.md)
-=======
-- [Best Practices](./BEST-PRACTICES.md)
-- [Code Standards](./CODE-STANDARDS.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_RPDh8C
->>>>>>> laraxot/dev
-=======
-- [Best Practices](best-practices.md)
-- [Code Standards](code-standards.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Best Practices](best-practices.md)
-- [Code Standards](code-standards.md)
->>>>>>> .merge_file_lQjSQW
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni

@@ -1,20 +1,6 @@
 # Laraxot MeetupServiceProvider Refactor - 2025-12-16
 
 **Data**: 2025-12-16
-<<<<<<< .merge_file_BXvkZ5
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-# Laraxot MeetupServiceProvider Refactor - [DATE]
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_DvoKsw
 **Analista**: Super Mucca AI
 **Status**: ✅ COMPLETATO - Piena Compliance Laraxot
 
@@ -226,20 +212,4 @@ $this->publishes([$source => $target], 'migrations');
 - **Philosophy**: ✅ DRY + KISS
 - **Zen**: ✅ Semplicità efficace
 
-<<<<<<< .merge_file_BXvkZ5
-<<<<<<< HEAD
-<<<<<<< HEAD
 **MeetupServiceProvider è ora completamente Laraxot-compliant!** 🎯
-=======
-<<<<<<< HEAD
-**MeetupServiceProvider è ora completamente Laraxot-compliant!** 🎯
-=======
-**MeetupServiceProvider è ora completamente Laraxot-compliant!** 🎯
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**MeetupServiceProvider è ora completamente Laraxot-compliant!** 🎯
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**MeetupServiceProvider è ora completamente Laraxot-compliant!** 🎯
->>>>>>> .merge_file_DvoKsw

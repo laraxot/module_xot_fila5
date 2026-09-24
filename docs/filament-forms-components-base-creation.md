@@ -1,20 +1,6 @@
 # Creazione Classi Base Forms Components - 2025-12-23
 
 **Data**: 2025-12-23
-<<<<<<< .merge_file_9pXTLD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-# Creazione Classi Base Forms Components - [DATE]
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ykPGxQ
 **Obiettivo**: Creare classi base XotBase per Forms Components core seguendo la regola fondamentale
 
 ## ⚠️ Problema Identificato
@@ -178,21 +164,4 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 
 **Stato**: ✅ Classi base create e componenti refactorizzati
 **Data Creazione**: 2025-12-23
-<<<<<<< .merge_file_9pXTLD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Conformità**: ✅ Regola fondamentale rispettata
-=======
-<<<<<<< HEAD
-**Conformità**: ✅ Regola fondamentale rispettata
-=======
-**Data Creazione**: [DATE]
-**Conformità**: ✅ Regola fondamentale rispettata
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Conformità**: ✅ Regola fondamentale rispettata
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Conformità**: ✅ Regola fondamentale rispettata
->>>>>>> .merge_file_ykPGxQ

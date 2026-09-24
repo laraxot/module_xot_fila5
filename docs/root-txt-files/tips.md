@@ -5,31 +5,7 @@ type: reference
 slug: tips
 description: 'https://github.com/phpstan/phpstan/issues/1242'
 tags: [migrato-da-txt, xot]
-<<<<<<< .merge_file_NORXGi
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 converted_from: __tips.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-converted_from: tips.txt
-=======
-converted_from: __tips.txt
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-converted_from: __tips.txt
->>>>>>> .merge_file_pV0jM4
 created: 2026-08-24
 updated: 2026-08-24
 ---

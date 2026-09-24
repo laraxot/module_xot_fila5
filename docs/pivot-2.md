@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_gSulsh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_0Uao75
 ---
 title: "_pivot"
 module: "Xot"
@@ -17,16 +9,6 @@ qmd: "pivot 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< .merge_file_gSulsh
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_0Uao75
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

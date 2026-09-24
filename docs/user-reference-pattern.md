@@ -223,20 +223,4 @@ if ($user instanceof UserContract) {
 
 ---
 
-<<<<<<< .merge_file_6gqomY
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-10*
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: 2025-01-10*
->>>>>>> .merge_file_zFMCYl

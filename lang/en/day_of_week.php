@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
     'values' => [
         1 => [
@@ -48,12 +47,6 @@ return [
             'description' => 'Weekly rest day',
         ],
     ],
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/en/day_of_week.php
-return [
->>>>>>> 8d801bbe (Check & fix styling)
     'label' => 'Day of Week',
     'options' => [
         1 => 'Monday',

@@ -1,19 +1,6 @@
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: 2026-01-02
-<<<<<<< .merge_file_xqngkx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Data Creazione**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_87pIgV
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -144,33 +131,7 @@ try {
 - [Module Path Generation Philosophy](./module-path-generation-philosophy.md)
 - [Xot Philosophy](./philosophy.md)
 - [Activity Philosophy](../Activity/docs/philosophy.md)
-<<<<<<< .merge_file_xqngkx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_87pIgV
 
 ---
 
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
-<<<<<<< .merge_file_xqngkx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-- [Activity Philosophy](../activity/docs/philosophy.md)
-
----
-
-**Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_87pIgV

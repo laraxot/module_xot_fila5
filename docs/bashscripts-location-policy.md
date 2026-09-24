@@ -145,23 +145,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 ## 📚 Collegamenti
 
 - [Laraxot Architecture](./architecture.md)
-<<<<<<< .merge_file_V8aI1k
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Project Structure Guidelines](PROJECT-STRUCTURE.md)
-=======
-<<<<<<< HEAD
-- [Project Structure Guidelines](PROJECT-STRUCTURE.md)
-=======
-- [Project Structure Guidelines](./project-structure.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Project Structure Guidelines](./project-structure.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Project Structure Guidelines](PROJECT-STRUCTURE.md)
->>>>>>> .merge_file_p9bOYd
 - [Deploy Best Practices](./deploy-best-practices.md)
 
 ---
@@ -169,30 +153,3 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 **Ultimo aggiornamento**: Gennaio 2025
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
-<<<<<<< .merge_file_V8aI1k
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-## Regola Operativa Rafforzata
-
-Gli script standalone di progetto non devono vivere dentro `laravel/Modules/*/`.
-
-Percorso corretto:
-- `laravel/bashscripts/<area>/...`
-
-Esempio concreto validato:
-- errato: `laravel/Modules/Cms/generate_test_data.php`
-- corretto: `laravel/bashscripts/cms/generate_test_data.php`
-
-Motivo:
-- separa chiaramente codice applicativo da tooling operativo
-- evita che PHPStan/quality gates del modulo analizzino script non applicativi
-- riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_p9bOYd

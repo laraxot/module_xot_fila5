@@ -77,23 +77,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< .merge_file_8FrWwf
-<<<<<<< HEAD
-<<<<<<< HEAD
     protected $connection = 'quaeris'; // Module-specific connection
-=======
-<<<<<<< HEAD
-    protected $connection = 'quaeris'; // Module-specific connection
-=======
-    protected $connection = 'module_name'; // Module-specific connection
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    protected $connection = 'quaeris'; // Module-specific connection
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    protected $connection = 'quaeris'; // Module-specific connection
->>>>>>> .merge_file_uvQXo2
 
     protected $with = [
         'extra', // Always load extra fields
@@ -141,31 +125,6 @@ The module BaseModel is where you add:
 - Module-specific relationship loading
 - Module-specific configurations
 
-<<<<<<< .merge_file_8FrWwf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-### Rule 4: Use Contracts for Auditing PHPDocs (CRITICAL)
-Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties managed by the `Updater` trait (`creator`, `updater`, `deleter`). NEVER use the concrete `Profile` model of the module to avoid tight coupling and ensure modular decoupling.
-
-✅ **CORRECT:**
-```php
-/**
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
- * @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
- */
-class Event extends BaseModel { ... }
-```
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_uvQXo2
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -234,23 +193,7 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
-<<<<<<< .merge_file_8FrWwf
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Predictable patterns
-=======
-<<<<<<< HEAD
-- Predictable patterns
-=======
-- <nome progetto>able patterns
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Predictable patterns
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Predictable patterns
->>>>>>> .merge_file_uvQXo2
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -301,20 +244,4 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 - **Type Safety**: Contract-based development
 - **DRY Compliance**: No duplicated base functionality
 
-<<<<<<< .merge_file_8FrWwf
-<<<<<<< HEAD
-<<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
-=======
-<<<<<<< HEAD
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
-=======
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
->>>>>>> .merge_file_uvQXo2

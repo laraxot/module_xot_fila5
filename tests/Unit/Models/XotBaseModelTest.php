@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;
@@ -10,15 +9,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Models\XotBaseModel;
-use Modules\Xot\Traits\Updater;
-use PHPUnit\Framework\Assert;
-
->>>>>>> 8d801bbe (Check & fix styling)
 test('xot base model extends eloquent model', function (): void {
     $reflection = new ReflectionClass(XotBaseModel::class);
 
@@ -62,38 +52,14 @@ test('xot base model has correct property types', function (): void {
     $snakeType = $snakeAttributesProperty->getType();
     $perPageType = $perPageProperty->getType();
 
-<<<<<<< .merge_file_mS75ty
-<<<<<<< HEAD
-<<<<<<< HEAD
     if ($snakeType !== null) {
-=======
-    if (null !== $snakeType) {
->>>>>>> laraxot/dev
-=======
-    if (null !== $snakeType) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    if ($snakeType !== null) {
->>>>>>> .merge_file_aKFwyv
         Assert::assertInstanceOf(ReflectionNamedType::class, $snakeType);
         Assert::assertSame('bool', $snakeType->getName());
     } else {
         Assert::assertTrue(XotBaseModel::$snakeAttributes);
     }
 
-<<<<<<< .merge_file_mS75ty
-<<<<<<< HEAD
-<<<<<<< HEAD
     if ($perPageType !== null) {
-=======
-    if (null !== $perPageType) {
->>>>>>> laraxot/dev
-=======
-    if (null !== $perPageType) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    if ($perPageType !== null) {
->>>>>>> .merge_file_aKFwyv
         Assert::assertInstanceOf(ReflectionNamedType::class, $perPageType);
         Assert::assertSame('int', $perPageType->getName());
     } else {

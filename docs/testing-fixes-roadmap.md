@@ -119,21 +119,6 @@ $currentTeam = $user->currentTeam;
 - [Testing Priority Rule](../Geo/docs/testing-priority-rule.md)
 - [No RefreshDatabase Policy](../Activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../UI/docs/test-fix-philosophy.md)
-<<<<<<< .merge_file_SkdDWz
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Testing Priority Rule](../geo/docs/testing-priority-rule.md)
-- [No RefreshDatabase Policy](../activity/docs/testing/no-refresh-database-policy.md)
-- [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_RYbUd7
 
 ## 🔄 Workflow per Ogni Test
 
@@ -148,21 +133,4 @@ $currentTeam = $user->currentTeam;
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
-<<<<<<< .merge_file_SkdDWz
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Prossimo step**: Correggere ArtisanServiceTest.php
-=======
-<<<<<<< HEAD
-**Prossimo step**: Correggere ArtisanServiceTest.php
-=======
-**Ultimo aggiornamento**: [DATE]
-**Prossimo step**: Correggere ArtisanServiceTest.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Prossimo step**: Correggere ArtisanServiceTest.php
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Prossimo step**: Correggere ArtisanServiceTest.php
->>>>>>> .merge_file_RYbUd7

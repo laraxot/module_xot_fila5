@@ -63,38 +63,10 @@ public function getTableBulkActions(): array
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_SBP5rw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ncpdAD
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_ePWBMi
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_QVCYUb
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_SBP5rw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ncpdAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ePWBMi
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_QVCYUb
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -132,38 +104,10 @@ public function getTableActions(): array
  * @return array<mixed, Component>
  */
 <<<<<<< HEAD
-<<<<<<< .merge_file_SBP5rw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ncpdAD
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_ePWBMi
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_QVCYUb
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_SBP5rw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ncpdAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ePWBMi
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_QVCYUb
 {
     // ...
 }
@@ -211,38 +155,10 @@ public function getTableBulkActions(): array
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
-<<<<<<< .merge_file_SBP5rw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ncpdAD
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_ePWBMi
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_QVCYUb
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_SBP5rw
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ncpdAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ePWBMi
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_QVCYUb
 {
     return [
         'template_slug' => Select::make('template_slug')

@@ -239,30 +239,10 @@ class ExampleResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_sRZ53r
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ldezCW
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_sRZ53r
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ldezCW
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -538,30 +518,10 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_sRZ53r
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ldezCW
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_sRZ53r
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ldezCW
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -1159,39 +1119,10 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
-<<<<<<< .merge_file_sRZ53r
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ldezCW
 - [**Best Practices**](best-practices.md) - Best practices per lo sviluppo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Troubleshooting**](troubleshooting.md) - Risoluzione problemi
 
 ---
 
-<<<<<<< .merge_file_sRZ53r
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> .merge_file_ldezCW

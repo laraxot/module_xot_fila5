@@ -1,53 +1,12 @@
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_XLWNnb
 # Limesurvey Database Analysis - quaeris_survey
 
 ## Overview
 The `quaeris_survey` database (identified as `txaesfry_quaeris_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-# Limesurvey Database Analysis - healthcare_app_survey
-
-## Overview
-The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_XLWNnb
 
 ## Database Schema Analysis
 
 ### Connection Configuration
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Database: `txaesfry_quaeris_survey`
-=======
-<<<<<<< HEAD
-- Database: `txaesfry_quaeris_survey`
-=======
-- Database: `txaesfry_healthcare_app_survey`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Database: `txaesfry_quaeris_survey`
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Database: `txaesfry_quaeris_survey`
->>>>>>> .merge_file_XLWNnb
 - Connection name: `limesurvey` (configured in config files)
 - Access through: `DB::connection('limesurvey')`
 
@@ -85,60 +44,18 @@ The `healthcare_app_survey` database (identified as `txaesfry_healthcare_app_sur
 - Key fields: `aid`, `answer`
 - Links to lime_answers via aid
 
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_XLWNnb
 ### Integration with Quaeris
 - The system connects to the survey database to extract answers and generate reports
 - Uses LimeSurvey Remote Control API pattern (though direct DB access is also implemented)
 - Maps survey responses to question structures for analysis
 - Links survey data with Quaeris survey_pdf records
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-### Integration with healthcare_app
-- The system connects to the survey database to extract answers and generate reports
-- Uses LimeSurvey Remote Control API pattern (though direct DB access is also implemented)
-- Maps survey responses to question structures for analysis
-- Links survey data with healthcare_app survey_pdf records
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_XLWNnb
 
 ### Survey Data Flow
 1. Survey structure defined in `lime_questions` and `lime_question_l10ns`
 2. Participant responses stored in `lime_survey_{sid}`
 3. Token management in `lime_tokens_{sid}`
 4. Analysis performed by joining tables and aggregating responses
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
 5. Results integrated with Quaeris data for comprehensive reporting
-=======
-<<<<<<< HEAD
-5. Results integrated with Quaeris data for comprehensive reporting
-=======
-5. Results integrated with healthcare_app data for comprehensive reporting
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-5. Results integrated with Quaeris data for comprehensive reporting
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-5. Results integrated with Quaeris data for comprehensive reporting
->>>>>>> .merge_file_XLWNnb
 
 ### Key Methods in LimeSurveyKK
 - `get_all_answers()`: Retrieves all answers for a given survey
@@ -155,35 +72,9 @@ From the code, it's evident that Limesurvey follows the standard schema where:
 - Translation tables use `_l10ns` suffix (localization)
 
 ## Usage in Application
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_XLWNnb
 The quaeris_survey database is used primarily for:
 - Survey response analysis
 - Question/answer extraction
 - Response aggregation by time periods
 - Integration with Quaeris reporting features
-<<<<<<< .merge_file_YaPPQu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-The healthcare_app_survey database is used primarily for:
-- Survey response analysis
-- Question/answer extraction
-- Response aggregation by time periods
-- Integration with healthcare_app reporting features
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_XLWNnb
 - Participant management and tracking

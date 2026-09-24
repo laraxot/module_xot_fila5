@@ -281,33 +281,7 @@ quality-check:
 ---
 
 **Creato**: 2025-01-29
-<<<<<<< .merge_file_tVPOpA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_m6v7HT
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA
 **Memoria AI**: ID 10479003
-<<<<<<< .merge_file_tVPOpA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-**Creato**: [DATE]
-**Tipo**: Regola Quality Gate Obbligatoria
-**Applicazione**: Ogni modifica file
-**Severità**: 🔴 CRITICA
-**Memoria AI**: ID 10479003
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_m6v7HT

@@ -71,20 +71,6 @@ Modules/<NomeModulo>/
 
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../Xot/docs/translations.md) - Regole base
-<<<<<<< .merge_file_GLwDvM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
-- [Regole Generali](../../xot/docs/translations.md) - Regole base
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_OBbpFQ
 
 ## Struttura
 
@@ -381,35 +367,6 @@ Action::make('delete')
 - Test di performance
 
 ## Collegamenti tra versioni di translations.md
-<<<<<<< .merge_file_GLwDvM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [translations.md](../../../chart/docs/translations.md)
-* [translations.md](../../../reporting/docs/translations.md)
-* [translations.md](../../../gdpr/docs/translations.md)
-* [translations.md](../../../notify/docs/translations.md)
-* [translations.md](../../../xot/docs/roadmap/lang/translations.md)
-* [translations.md](../../../xot/docs/translations.md)
-* [translations.md](../../../dental/docs/translations.md)
-* [translations.md](../../../user/docs/translations.md)
-* [translations.md](../../../ui/docs/translations.md)
-* [translations.md](../../../lang/docs/packages/translations.md)
-* [translations.md](../../../lang/docs/translations.md)
-* [translations.md](../../../job/docs/translations.md)
-* [translations.md](../../../media/docs/translations.md)
-* [translations.md](../../../tenant/docs/translations.md)
-* [translations.md](../../../activity/docs/translations.md)
-* [translations.md](../../../patient/docs/translations.md)
-* [translations.md](../../../cms/docs/translations.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_OBbpFQ
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -432,20 +389,4 @@ Action::make('delete')
 
 ```
 
-<<<<<<< .merge_file_GLwDvM
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
----
->>>>>>> 8d801bbe (Check & fix styling)
-=======
----
->>>>>>> .merge_file_OBbpFQ

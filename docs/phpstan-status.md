@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
@@ -18,8 +17,22 @@ Pest: skip — `DB_HOST=10.100.200.53` DOWN (non host 15).
 
 `analyse Modules` dopo fix `@template TModel` / `@use GeoTrait<Address>`:
 **0** `file_errors`. Canon:
-[geo-trait.md](../Geo/docs/traits/geo-trait.md) ·
 [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md).
+
+Questa misura documenta lo stato storico prima della rimozione del trait.
+Nella verifica corrente il trait e i relativi probe sono stati rimossi dopo
+l'audit completo dei chiamanti: nessun consumer PHP resta nel repository.
+`GeographicalScopes`, `Address` e `HasAddress` coprono i comportamenti ancora
+utilizzati.
+
+## Misura 2026-09-24 (notte) — gate freddo dopo cache stale
+
+Un run intermedio ha segnalato `phpstan.path` verso il file GeoTrait non più
+presente. Dopo il controllo read-only dei chiamanti e l'arresto di tutte le run,
+`phpstan clear-result-cache` è uscito 0. Il successivo
+`phpstan analyse Modules --no-progress --memory-limit=-1 --error-format=json`
+ha chiuso con **EXIT 0**, `totals.errors=0`, `totals.file_errors=0`.
+Report: `build/phpstan-modules-final.json`.
 
 ## Misura 2026-09-24 — regressione naming (CloudStorage + Symplify)
 
@@ -114,92 +127,6 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-modules-fix.md](./wiki/troubleshooting/phpstan-modules-fix.md) — ricette
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
-<<<<<<< .merge_file_AziJmB
-- [phpstan-journey.md](../../../../docs/wiki/second-brain/phpstan-journey.md) — second brain
-=======
-# PHPStan Status - Xot Module
-
-## Current Status: ✅ PASSED
-- **PHPStan Level**: 10
-- **Errors**: 0
-- **Last Checked**: 2025-11-17
-
-## Module Overview
-The Xot module provides core functionality and base classes for the entire application framework.
-
-## Key Components
-
-### Base Classes
-- `XotBaseRouteServiceProvider` - Enhanced route service provider
-- `XotBaseResource` - Base resource class for Filament
-- `BaseModel` - Base model with common functionality
-
-### Service Providers
-- Core service providers with proper dependency injection
-- Type-safe service registration
-
-### Utilities
-- Common helper functions
-- Framework utilities
-
-## PHPStan Compliance
-
-All files in the Xot module pass PHPStan Level 10 analysis:
-
-```bash
-./vendor/bin/phpstan analyse Modules/Xot/ --level=10 --no-progress
-# Result: [OK] No errors
-```
-
-## Type Safety Features
-
-1. **Base Class Typing**
-   - All base classes have proper type hints
-   - Generic type parameters where applicable
-
-2. **Service Provider Safety**
-   - Dependency injection with proper types
-   - Interface contracts enforced
-
-3. **Helper Functions**
-   - All utility functions are typed
-   - Proper return type declarations
-
-## Framework Integration
-
-The Xot module serves as the foundation for:
-- All other modules in the system
-- Laravel framework enhancements
-- Common application patterns
-
-## Best Practices Applied
-
-1. **Strict Typing** - All code uses strict types declaration
-2. **Interface Contracts** - Proper interface implementation
-3. **Dependency Injection** - Type-safe DI throughout
-4. **Generic Programming** - Proper use of generics where needed
-
-## Custom Patterns
-
-1. **Enhanced Service Providers**
-   - Custom base classes for better type safety
-   - Consistent naming conventions
-
-2. **Model Base Classes**
-   - Common functionality centralized
-   - Type-safe property access
-
-3. **Resource Extensions**
-   - Filament resource enhancements
-   - Proper inheritance chains
-
----
-
-*Status: ✅ PHPStan Level 10 Compliant*
-*Last Updated: 2025-11-17*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
 - [phpstan-journey.md](../../../../bashscripts/ai/wiki/second-brain/phpstan-journey.md) — second brain
 - [CloudStorage coverage](../../CloudStorage/docs/coverage.md) — incidente require-dev Symplify
 - [contract-suffix memory](../../../../bashscripts/ai/wiki/memories/contract-suffix-no-interfaces-folder.md) — religione `*Contract`
->>>>>>> .merge_file_YpQV6V

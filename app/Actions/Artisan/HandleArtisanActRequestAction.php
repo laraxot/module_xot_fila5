@@ -59,27 +59,7 @@ class HandleArtisanActRequestAction
         DB::purge('mysql');
         DB::reconnect('mysql');
 
-<<<<<<< .merge_file_mFxcnr
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($moduleName !== '') {
-=======
-<<<<<<< .merge_file_mncXCG
-<<<<<<< HEAD
-        if ($moduleName !== '') {
-=======
-        if ('' !== $moduleName) {
->>>>>>> laraxot/dev
-=======
-        if ('' !== $moduleName) {
->>>>>>> .merge_file_rHh7g0
->>>>>>> laraxot/dev
-=======
-        if ('' !== $moduleName) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($moduleName !== '') {
->>>>>>> .merge_file_qK26oX
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)

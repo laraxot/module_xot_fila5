@@ -27,14 +27,6 @@ BMAD non e' un generatore casuale di codice: e' il processo di delivery. Prima s
 - Logica applicativa in Actions/Queueable Actions, non in Services.
 - Quality gate proporzionati al cambio; per PHP almeno `php -l`, PHPStan mirato e `git diff --check`.
 
-<<<<<<< .merge_file_QUFXE3
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_rg8zyc
 ## Locazione artefatti BMAD (obbligatoria)
 
 Story, architecture, brainstorming ed epic vanno in:
@@ -45,16 +37,6 @@ del/i modulo/i su cui si lavora. `docs/bmad/` alla root del repo è solo indice/
 
 SSoT: `bashscripts/ai/wiki/memories/bmad-artifacts-live-in-module-docs.md` · always-on `.cursor/rules/bmad-docs-in-module.mdc`.
 
-<<<<<<< .merge_file_QUFXE3
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rg8zyc
 ## LLM Wiki locale
 
 - Raw ufficiale BMAD: `docs/raw/bmad/llms-full.txt`.

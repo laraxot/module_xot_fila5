@@ -177,38 +177,10 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
-<<<<<<< .merge_file_sGIF22
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TwsEEs
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_GEuFia
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_HrV2t1
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_sGIF22
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TwsEEs
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GEuFia
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_HrV2t1
 {
     return [
         TextInput::make('first_name'),
@@ -218,38 +190,10 @@ public static function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
-<<<<<<< .merge_file_sGIF22
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TwsEEs
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_GEuFia
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_HrV2t1
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_sGIF22
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TwsEEs
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GEuFia
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_HrV2t1
 {
     return [
         TextInput::make('name')->required(),
@@ -346,38 +290,10 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_sGIF22
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TwsEEs
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_GEuFia
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_HrV2t1
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_sGIF22
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TwsEEs
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GEuFia
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_HrV2t1
     {
         return [
             TextInput::make('first_name'),
@@ -510,27 +426,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_sGIF22
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_TwsEEs
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GEuFia
->>>>>>> laraxot/dev
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_HrV2t1
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

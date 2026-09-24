@@ -29,23 +29,7 @@ cd laravel
 ```
 
 ### Documentazione
-<<<<<<< .merge_file_OtwfHe
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
-=======
-<<<<<<< HEAD
-- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
-=======
-- [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
->>>>>>> .merge_file_nrxNyk
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -188,35 +172,10 @@ php -l path/to/modified/file.php
 
 ## 📚 Documentazione Correlata
 
-<<<<<<< .merge_file_OtwfHe
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nrxNyk
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
-<<<<<<< .merge_file_OtwfHe
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Success story
-- [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
-- [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
-- [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nrxNyk
 
 ## 🚀 Next Steps
 
@@ -246,33 +205,7 @@ php -l path/to/modified/file.php
 **Filosofia**: "Il miglior tool è quello che funziona. Se non funziona, documentalo e vai avanti."
 
 ## Aggiornamento Tooling 2025-11-08
-<<<<<<< .merge_file_OtwfHe
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 
 - PHPMD eseguito sui file aggiornati (`GetAllIconsAction`, `InlineDatePicker`, `Extra`, `XotBasePivot`, `XotBaseUuidModel`): nessuna nuova violazione rilevata.
 - PHPInsights eseguito sugli stessi file: esito positivo (complessità segnalata da soglie legacy, documentata nelle relative sezioni di modulo).
 - Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-## Aggiornamento Tooling [DATE]
-=======
->>>>>>> .merge_file_nrxNyk
-
-- PHPMD eseguito sui file aggiornati (`GetAllIconsAction`, `InlineDatePicker`, `Extra`, `XotBasePivot`, `XotBaseUuidModel`): nessuna nuova violazione rilevata.
-- PHPInsights eseguito sugli stessi file: esito positivo (complessità segnalata da soglie legacy, documentata nelle relative sezioni di modulo).
-- Metriche archiviate nelle docs dei moduli UI, User e Xot per garantire tracciabilità futura.
-<<<<<<< .merge_file_OtwfHe
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nrxNyk

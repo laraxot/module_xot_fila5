@@ -1,25 +1,3 @@
-<<<<<<< .merge_file_x2aVhs
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GHEm9x
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-con un trait 
-https://tighten.co/blog/laravel-tip-bootable-model-traits/
-
-https://andy-carter.com/blog/using-laravel-s-eloquent-traits
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Car7gV
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_6rlFYc
 ---
 title: 'delete_related_models'
 module: Xot
@@ -40,27 +18,3 @@ con un trait
 https://tighten.co/blog/laravel-tip-bootable-model-traits/
 
 https://andy-carter.com/blog/using-laravel-s-eloquent-traits
-<<<<<<< .merge_file_x2aVhs
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GHEm9x
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-con un trait 
-https://tighten.co/blog/laravel-tip-bootable-model-traits/
-
-https://andy-carter.com/blog/using-laravel-s-eloquent-traits
->>>>>>> .merge_file_Car7gV
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-con un trait 
-https://tighten.co/blog/laravel-tip-bootable-model-traits/
-
-https://andy-carter.com/blog/using-laravel-s-eloquent-traits
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_6rlFYc

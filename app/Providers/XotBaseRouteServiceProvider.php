@@ -46,19 +46,7 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapWebRoutes(): void
     {
-<<<<<<< .merge_file_kW3WpV
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $this->name) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($this->name === '') {
->>>>>>> .merge_file_Wc9ZR8
             Notification::make()
                 ->title('Error')
                 ->danger()
@@ -76,19 +64,7 @@ abstract class XotBaseRouteServiceProvider extends RouteServiceProvider
      */
     protected function mapApiRoutes(): void
     {
-<<<<<<< .merge_file_kW3WpV
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> laraxot/dev
-=======
-        if ('' === $this->name) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($this->name === '') {
->>>>>>> .merge_file_Wc9ZR8
             throw new \Exception('name is empty on ['.static::class.']');
         }
         Route::prefix('api')

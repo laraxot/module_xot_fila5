@@ -2,33 +2,12 @@
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
 
-<<<<<<< .merge_file_zMS9Zc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_iCSduv
 **NON è stato modificato** `phpstan.neon`
 
 ## Analisi Completa
 
 **Totale Errori**: 776
 **Livello PHPStan**: 9
-<<<<<<< .merge_file_zMS9Zc
-<<<<<<< HEAD
-=======
-**NON è stato modificato** `/var/www/html/_bases/<directory progetto>/laravel/phpstan.neon`
-
-## Analisi Completa
-
-**Totale Errori**: 776  
-**Livello PHPStan**: 9  
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_iCSduv
 **Data Analisi**: 18 Agosto 2025
 
 ## Categorizzazione Errori
@@ -43,19 +22,7 @@ array $data
 Collection $items
 public function method(array $params): array
 
-<<<<<<< .merge_file_zMS9Zc
-<<<<<<< HEAD
-<<<<<<< HEAD
 // ✅ CORRETTO
-=======
-// ✅ CORRETTO  
->>>>>>> laraxot/dev
-=======
-// ✅ CORRETTO
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-// ✅ CORRETTO
->>>>>>> .merge_file_iCSduv
 array<string, mixed> $data
 Collection<int, Model> $items
 public function method(array<string, mixed> $params): array<int, string>
@@ -213,19 +180,7 @@ class MyModel extends BaseModel
 ## Timeline Stimata
 
 - **Fase 1 (Xot)**: 2-3 ore
-<<<<<<< .merge_file_zMS9Zc
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Fase 2 (User)**: 1-2 ore
-=======
-- **Fase 2 (User)**: 1-2 ore  
->>>>>>> laraxot/dev
-=======
-- **Fase 2 (User)**: 1-2 ore
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- **Fase 2 (User)**: 1-2 ore
->>>>>>> .merge_file_iCSduv
 - **Fase 3 (Applicazione)**: 3-4 ore
 - **Fase 4 (Verifica)**: 1 ora
 
@@ -233,21 +188,6 @@ class MyModel extends BaseModel
 
 ---
 
-<<<<<<< .merge_file_zMS9Zc
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
-=======
-**Stato**: 🔄 Analisi Completata - Correzioni in Corso  
-**phpstan.neon**: ✅ INTOCCATO  
->>>>>>> laraxot/dev
-=======
-**Stato**: 🔄 Analisi Completata - Correzioni in Corso
-**phpstan.neon**: ✅ INTOCCATO
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Stato**: 🔄 Analisi Completata - Correzioni in Corso
-**phpstan.neon**: ✅ INTOCCATO
->>>>>>> .merge_file_iCSduv
 **Approccio**: DRY + KISS + Type Safety

@@ -4,23 +4,6 @@
 
 ### File Eliminati (Duplicati con Date)
 
-<<<<<<< .merge_file_O1HS4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-1. ✅ **`Modules/UI/docs/bugfix-icons-missing-[DATE].md`**
-   - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
-   - **Stato**: Eliminato con successo
-
-2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-[DATE].md`**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_6SDotd
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
@@ -32,19 +15,6 @@
 ### File Rinominati (Rimozione Date)
 
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
-<<<<<<< .merge_file_O1HS4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_6SDotd
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -95,28 +65,8 @@
 - Altri file con pattern `bugfix-*-2025-*.md`
 
 ### Modulo Lang
-<<<<<<< .merge_file_O1HS4t
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
 - `translation-errors-correction-2025.md` (verificare duplicati)
-=======
-<<<<<<< HEAD
-- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction-2025.md` (verificare duplicati)
-=======
-- `riepilogo-correzioni-traduzioni.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction.md` (verificare duplicati)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction-2025.md` (verificare duplicati)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- `riepilogo-correzioni-traduzioni-2025.md` (verificare se esiste `riepilogo-correzioni-traduzioni.md`)
-- `translation-errors-correction-2025.md` (verificare duplicati)
->>>>>>> .merge_file_6SDotd
 
 ### Modulo Xot
 - File in cartella `archive/` (valutare se mantenere date per storico)
@@ -159,31 +109,5 @@
 ---
 
 **Data**: Gennaio 2025
-<<<<<<< .merge_file_O1HS4t
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo
-=======
-<<<<<<< HEAD
-**Stato**: In corso
-**Prossima Revisione**: Dopo normalizzazione batch successivo
-=======
-- [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
-- [Regole Naming File](../xot/docs/file-naming-rules.md)
-- [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
-
----
-
-**Stato**: In corso
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Stato**: In corso
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Stato**: In corso
-**Prossima Revisione**: Dopo normalizzazione batch successivo
->>>>>>> .merge_file_6SDotd

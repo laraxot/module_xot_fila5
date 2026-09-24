@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * --- usata ricorsivamente.
  */
@@ -21,23 +17,8 @@ class UpdateAction
     use QueueableAction;
 
     /**
-<<<<<<< .merge_file_cEY4X5
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $rules
-=======
-     * @param array<string, mixed> $data
-     * @param array<string, mixed> $rules
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
-     * @param array<string, mixed> $rules
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $rules
->>>>>>> .merge_file_sBpBWE
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -46,19 +27,7 @@ class UpdateAction
 
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
-<<<<<<< .merge_file_cEY4X5
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($model->getKey() === null) {
-=======
-        if (null === $model->getKey()) {
->>>>>>> laraxot/dev
-=======
-        if (null === $model->getKey()) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($model->getKey() === null) {
->>>>>>> .merge_file_sBpBWE
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();

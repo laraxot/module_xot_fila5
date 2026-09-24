@@ -102,23 +102,7 @@ public static function getModel(): null|string
 ## Collegamenti
 - [XotBasePage](../app/Filament/Resources/Pages/XotBasePage.php)
 - [Filament Page Documentation](https://filamentphp.com/docs/3.x/resources/pages)
-<<<<<<< .merge_file_JCON9y
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
-=======
-<<<<<<< HEAD
-- [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
-=======
-- [Laraxot Extension Rules](../../../../docs/laraxot-conventions.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
->>>>>>> .merge_file_8uqJoG
 
 ## Note di Manutenzione
 - **Data correzione**: Gennaio 2025
@@ -126,20 +110,4 @@ public static function getModel(): null|string
 - **PHP Version**: 8.3+
 - **Livello PHPStan**: 9+
 
-<<<<<<< .merge_file_JCON9y
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> .merge_file_8uqJoG

@@ -15,37 +15,15 @@ class FakeSeederAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     private const int MAX_RECORDS = 200;
 
     private const int CHUNK_SIZE = 50;
-=======
-    private const MAX_RECORDS = 200;
-
-    private const CHUNK_SIZE = 50;
->>>>>>> 8d801bbe (Check & fix styling)
 
     /**
      * Execute the fake data seeding process.
      *
-<<<<<<< .merge_file_JNr7x7
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
-     *                                        =======
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
-     *                                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass  The fully qualified model class name
      * @param  int<1, max>  $qty  Number of records to generate
->>>>>>> .merge_file_PrARTX
      *
      * @throws \InvalidArgumentException When model class is invalid
      */
@@ -83,36 +61,11 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-<<<<<<< .merge_file_JNr7x7
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     *
-     * @throws \RuntimeException
-     *                           =======
-     * @throws \RuntimeException
-     *
-     * @return Factory<Model>
-     * @return Factory<Model>
-     * @return Factory<Model>
-     *                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
-     *
-     * @throws \RuntimeException
-     *
-     * @return Factory<Model>
-     * @return Factory<Model>
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass
      * @return Factory<Model>
      * @return Factory<Model>
      *
      * @throws \RuntimeException
->>>>>>> .merge_file_PrARTX
      */
     private function getModelFactory(string $modelClass): Factory
     {
@@ -129,24 +82,8 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
-<<<<<<< .merge_file_JNr7x7
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
-     *                                        =======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
-     *                                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $count
->>>>>>> .merge_file_PrARTX
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -160,24 +97,8 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-<<<<<<< .merge_file_JNr7x7
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
-     *                                        =======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
-     *                                        >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $qty
->>>>>>> .merge_file_PrARTX
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {

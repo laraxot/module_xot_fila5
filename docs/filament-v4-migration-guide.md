@@ -154,30 +154,10 @@ abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
 <<<<<<< HEAD
-<<<<<<< .merge_file_1VcbYS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_gAdoYT
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_1VcbYS
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array { /* ... */ }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_gAdoYT
     public static function getPages(): array { /* ... */ }
 
     // ❌ METODI VIETATI - Devono essere solo nelle pagine List
@@ -287,20 +267,4 @@ find laravel/Modules -name "*.php" -path "*/Filament/*" -exec grep -l "Radio::ma
 **Versione**: 1.0
 **Stato**: Ready for Implementation
 **Target**: Tutti i moduli PTVX
-<<<<<<< .merge_file_1VcbYS
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Deadline**: 31 Dicembre 2025
-=======
-<<<<<<< HEAD
-**Deadline**: 31 Dicembre 2025
-=======
-**Deadline**: 31 Dicembre 2025
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Deadline**: 31 Dicembre 2025
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Deadline**: 31 Dicembre 2025
->>>>>>> .merge_file_gAdoYT

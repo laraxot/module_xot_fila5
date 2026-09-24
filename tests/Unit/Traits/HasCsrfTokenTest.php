@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Tests\TestCase;
@@ -19,21 +15,8 @@ it('sets csrf token on mount', function (): void {
     $session->allows(['token' => $token]);
     App::instance('session', $session);
 
-<<<<<<< .merge_file_W2YHrx
-<<<<<<< HEAD
-<<<<<<< HEAD
     $class = new class
     {
-=======
-    $class = new class {
->>>>>>> laraxot/dev
-=======
-    $class = new class {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $class = new class
-    {
->>>>>>> .merge_file_oDQ6LI
         public string $_token = '';
 
         public function mount(): void
@@ -56,21 +39,8 @@ it('sets csrf token on mount', function (): void {
 it('verifies csrf token', function (): void {
     $token = 'secret-token';
 
-<<<<<<< .merge_file_W2YHrx
-<<<<<<< HEAD
-<<<<<<< HEAD
     $class = new class
     {
-=======
-    $class = new class {
->>>>>>> laraxot/dev
-=======
-    $class = new class {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $class = new class
-    {
->>>>>>> .merge_file_oDQ6LI
         public string $_token = '';
 
         public function verifyCsrfToken(): bool

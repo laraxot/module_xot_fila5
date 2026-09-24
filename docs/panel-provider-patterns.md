@@ -106,42 +106,10 @@ Prima di considerare completo un Panel Provider, verificare:
 ## Riferimenti
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
-<<<<<<< .merge_file_5ZukPN
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
-=======
-<<<<<<< HEAD
-- [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
-=======
-- [Panel Provider Rules](../../../docs/filament/filament_panel_provider_rules.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Panel Provider Rules](../../docs/filament/filament_panel_provider_rules.md)
->>>>>>> .merge_file_Uiwi7j
 - [XotBasePanelProvider Source](../app/Providers/Filament/XotBasePanelProvider.php)
 - [XotBaseMainPanelProvider Source](../app/Providers/Filament/XotBaseMainPanelProvider.php)
 
 ---
 
-<<<<<<< .merge_file_5ZukPN
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: Dicembre 2024*
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> .merge_file_Uiwi7j

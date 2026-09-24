@@ -17,11 +17,7 @@ class Item extends Component
 {
     public function render(): View
     {
-<<<<<<< HEAD
         /** @var view-string $view */
-=======
-        /** @var string $view */
->>>>>>> 8d801bbe (Check & fix styling)
         $view = 'xot::components.dashboard.item';
         /** @var array<string, string> $view_params */
         $view_params = [

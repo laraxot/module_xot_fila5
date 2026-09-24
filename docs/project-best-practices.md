@@ -113,19 +113,6 @@ architecture-overview.md
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
-<<<<<<< .merge_file_9ljeeu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-analysis-[DATE].md      # date in name (use CHANGELOG.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_9V21q6
 ```
 
 ### 8. DRY Principle
@@ -280,30 +267,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_9ljeeu
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9V21q6
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_9ljeeu
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_9V21q6
     {
         return [
             TextInput::make('name'),  // No ->label()!
@@ -435,31 +402,6 @@ git push origin feature-branch
 ---
 
 **Creato:** 2025-11-04
-<<<<<<< .merge_file_9ljeeu
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versione:** 1.0
 **Autori:** Team Laraxot + AI Claude Process Filosofico
 **Prossimo Review:** Trimestrale o dopo major changes
-=======
-<<<<<<< HEAD
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
-=======
-**Creato:** [DATE]
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
->>>>>>> .merge_file_9V21q6

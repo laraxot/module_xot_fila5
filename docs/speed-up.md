@@ -1,29 +1,3 @@
-<<<<<<< .merge_file_cuF9Vo
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_G3GSqR
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-https://laravelarticle.com/speed-up-laravel-website
-
-
-How To Check RAM And CPU Usage In Laravel
-<<<<<<< HEAD
-https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_p2o6t1
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_fbPdvg
 ---
 title: 'speed_up'
 module: Xot
@@ -44,25 +18,3 @@ https://laravelarticle.com/speed-up-laravel-website
 
 How To Check RAM And CPU Usage In Laravel
 https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
-<<<<<<< .merge_file_cuF9Vo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_G3GSqR
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-https://laravelarticle.com/speed-up-laravel-website
-
-
-How To Check RAM And CPU Usage In Laravel
-https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
->>>>>>> .merge_file_p2o6t1
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_fbPdvg

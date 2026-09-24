@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
     'values' => [
         'f' => [
@@ -18,12 +17,6 @@ return [
             'description' => 'Male gender',
         ],
     ],
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/en/gender_enum.php
-return [
->>>>>>> 8d801bbe (Check & fix styling)
     'label' => 'Gender',
     'options' => [
         'f' => 'Female',

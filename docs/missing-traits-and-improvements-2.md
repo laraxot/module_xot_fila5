@@ -612,35 +612,8 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_aJfTLb
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
-=======
-- [Analisi Completa Codice](./comprehensive_code_analysis.md)
-- [Architettura Moduli](./architecture.md)
-- [Performance Guide](./performance_guide.md)
-
----
-
-**Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_kPwb4P
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -648,20 +621,4 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
-<<<<<<< .merge_file_aJfTLb
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Benefici**: ALTI
-=======
-<<<<<<< HEAD
-**Benefici**: ALTI
-=======
-**Benefici**: ALTI
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Benefici**: ALTI
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Benefici**: ALTI
->>>>>>> .merge_file_kPwb4P

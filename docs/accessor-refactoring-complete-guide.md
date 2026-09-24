@@ -303,24 +303,6 @@ Moduli con logica inline complessa:
 ## Collegamenti Documentazione
 
 ### Guide Filosofiche
-<<<<<<< .merge_file_pfPhBH
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Accessor Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
-- [Philosophy Guide PTVX](../../../../docs/philosophy-guide.md)
-
-### Guide Operative
-- [Accessor Refactoring Roadmap](../../sigma/docs/accessor-refactoring-roadmap.md)
-- [Progress Tracker](../../sigma/docs/refactoring-progress-tracker.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_EXHpAT
 - [Accessor Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
 - [Philosophy Guide PTVX](../../../docs/philosophy-guide.md)
 
@@ -334,24 +316,6 @@ Moduli con logica inline complessa:
 - [Accessor Audit Cross-Modules](./accessor-audit-cross-modules.md)
 
 ### Implementazioni Modulo
-<<<<<<< .merge_file_pfPhBH
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Sigma - SchedaTrait](../../sigma/docs/session-complete-summary.md)
-- [IndennitaCondizioniLavoro - Audit](../../indennitacondizionilavoro/docs/accessor-guard-audit.md)
-
----
-
-**Creato**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_EXHpAT
 - [Sigma - SchedaTrait](../../Sigma/docs/session-complete-summary.md)
 - [IndennitaCondizioniLavoro - Audit](../../IndennitaCondizioniLavoro/docs/accessor-guard-audit.md)
 
@@ -360,20 +324,4 @@ Moduli con logica inline complessa:
 **Creato**: 2025-01-29
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
-<<<<<<< .merge_file_pfPhBH
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
-=======
-<<<<<<< HEAD
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
-=======
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
->>>>>>> .merge_file_EXHpAT

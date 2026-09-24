@@ -1,59 +1,10 @@
 <?php
 
-<<<<<<< .merge_file_BVv3w2
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
->>>>>>> .merge_file_F8dg7R
->>>>>>> laraxot/dev
-=======
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-declare(strict_types=1);
->>>>>>> .merge_file_UI7STy
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< .merge_file_BVv3w2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_F8dg7R
-=======
-declare(strict_types=1);
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_UI7STy
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
@@ -97,33 +48,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
-<<<<<<< .merge_file_BVv3w2
-<<<<<<< HEAD
-<<<<<<< HEAD
                             $c++;
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
-                            ++$c;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-                            ++$c;
-=======
-                            $c++;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                            ++$c;
->>>>>>> .merge_file_F8dg7R
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-                            $c++;
->>>>>>> .merge_file_UI7STy
                         }
                     }
                     if ($save) {
@@ -138,33 +63,7 @@ class SanitizeFieldsHeaderAction extends XotBaseAction
     }
 
     /**
-<<<<<<< .merge_file_BVv3w2
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  list<string>  $fields
-=======
-<<<<<<< .merge_file_x7bx60
-<<<<<<< HEAD
-     * @param list<string> $fields
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param list<string> $fields
-=======
-     * @param  list<string>  $fields
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param list<string> $fields
->>>>>>> .merge_file_F8dg7R
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  list<string>  $fields
->>>>>>> .merge_file_UI7STy
      */
     public function setFields(array $fields): self
     {

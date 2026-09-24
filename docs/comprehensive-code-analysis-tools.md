@@ -1,19 +1,6 @@
 # 🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE
 
 **Data Creazione**: 2025-01-27
-<<<<<<< .merge_file_bIZvqh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Data Creazione**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_9qvHin
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -471,38 +458,9 @@ chmod +x scripts/*.sh
 
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
-<<<<<<< .merge_file_bIZvqh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_9qvHin
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 98%
 
 ---
 
-<<<<<<< .merge_file_bIZvqh
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
-=======
-<<<<<<< HEAD
-*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
-=======
-*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
->>>>>>> .merge_file_9qvHin

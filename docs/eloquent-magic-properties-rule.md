@@ -321,26 +321,5 @@ Quando scrivi codice con Eloquent:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< .merge_file_36vvNX
-<<<<<<< HEAD
-<<<<<<< HEAD
 **PHPStan Level**: 10
 **Status**: ✅ 0 Errors
-=======
-<<<<<<< HEAD
-**PHPStan Level**: 10
-**Status**: ✅ 0 Errors
-=======
-**Ultimo aggiornamento**: [DATE]
-**PHPStan Level**: 10
-**Status**: ✅ 0 Errors
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**PHPStan Level**: 10
-**Status**: ✅ 0 Errors
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**PHPStan Level**: 10
-**Status**: ✅ 0 Errors
->>>>>>> .merge_file_iUNrZF

@@ -6,23 +6,7 @@ namespace Modules\Xot\Tests\Support;
 
 final class PestTestCall
 {
-<<<<<<< .merge_file_KYH5RD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function __construct(private readonly ?object $call = null) {}
-=======
-    public function __construct(private readonly ?object $call = null)
-    {
-    }
->>>>>>> laraxot/dev
-=======
-    public function __construct(private readonly ?object $call = null)
-    {
-    }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    public function __construct(private readonly ?object $call = null) {}
->>>>>>> .merge_file_Autyg2
 
     public function group(string ...$groups): self
     {
@@ -70,23 +54,8 @@ final class PestTestCall
     }
 
     /**
-<<<<<<< .merge_file_KYH5RD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string|string  $abstract
      * @param  (callable(mixed): void)|null  $mock
-=======
-     * @param class-string|string          $abstract
-     * @param (callable(mixed): void)|null $mock
->>>>>>> laraxot/dev
-=======
-     * @param class-string|string          $abstract
-     * @param (callable(mixed): void)|null $mock
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  class-string|string  $abstract
-     * @param  (callable(mixed): void)|null  $mock
->>>>>>> .merge_file_Autyg2
      */
     public function mock(string $abstract, ?callable $mock = null): self
     {
@@ -94,19 +63,7 @@ final class PestTestCall
     }
 
     /**
-<<<<<<< .merge_file_KYH5RD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<array-key, mixed>  $arguments
-=======
-     * @param array<array-key, mixed> $arguments
->>>>>>> laraxot/dev
-=======
-     * @param array<array-key, mixed> $arguments
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<array-key, mixed>  $arguments
->>>>>>> .merge_file_Autyg2
      */
     private function forward(string $method, array $arguments): self
     {

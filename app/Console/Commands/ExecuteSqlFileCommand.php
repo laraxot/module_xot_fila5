@@ -6,30 +6,10 @@ namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
-<<<<<<< .merge_file_zxN0LC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_YQGeO1
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
-<<<<<<< .merge_file_zxN0LC
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-use function Safe\file_get_contents;
-
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_YQGeO1
 class ExecuteSqlFileCommand extends Command
 {
     /**

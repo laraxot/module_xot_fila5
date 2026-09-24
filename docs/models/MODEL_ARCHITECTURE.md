@@ -351,23 +351,7 @@ public function getConnectionName(): ?string
 - Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
-<<<<<<< .merge_file_f3Qo8d
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
-=======
-<<<<<<< HEAD
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
-=======
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
->>>>>>> .merge_file_xOm28m
 
 ---
 
@@ -791,23 +775,7 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
-<<<<<<< .merge_file_f3Qo8d
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
-=======
-<<<<<<< HEAD
-- [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
-=======
-- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> .merge_file_xOm28m
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 
 ---

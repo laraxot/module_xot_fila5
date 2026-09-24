@@ -15,35 +15,7 @@ class SelectAction
     /**
      * Execute a select query.
      *
-<<<<<<< .merge_file_GoETJf
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param class-string<Model> $modelClass
-     *                                        =======
-     *                                        <<<<<<< .merge_file_4PMnzD
-     *                                        =======
-     *                                        <<<<<<< HEAD
-     *                                        <<<<<<< .merge_file_3M00Bo
-     *                                        >>>>>>> .merge_file_4eMRLe
-     * @param class-string<Model> $modelClass
-     *
-     * <<<<<<< .merge_file_4PMnzD
-     * =======
-     * =======
-     * @param class-string<Model> $modelClass
-     *                                        >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-     * >>>>>>> .merge_file_4eMRLe
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
->>>>>>> 8d801bbe (Check & fix styling)
-     *
-=======
      * @param  class-string<Model>  $modelClass
->>>>>>> .merge_file_UWyEFA
      * @return array<mixed>
      */
     public function execute(string $modelClass, string $sql): array

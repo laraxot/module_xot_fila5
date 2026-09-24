@@ -48,14 +48,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
-<<<<<<< .merge_file_xilZIk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_vS3Y5K
 
 ```bash
 # ✅ additivo, mai distruttivo (dati sacri)
@@ -69,28 +61,6 @@ cd laravel && php artisan migrate
 
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
-<<<<<<< .merge_file_xilZIk
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-```bash
-
-# Ripristinare le migrazioni
-php artisan migrate:fresh
-
-# Eseguire i seed
-php artisan db:seed
-```
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vS3Y5K
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
 # Verificare che il modulo sia presente
@@ -467,14 +437,6 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
-<<<<<<< .merge_file_xilZIk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_vS3Y5K
 **Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
 
 ```php
@@ -483,69 +445,16 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class MioModelloTest extends XotBaseTestCase
 {
     use DatabaseTransactions;
-<<<<<<< .merge_file_xilZIk
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-**Utilizzare RefreshDatabase**
-```php
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-class MioModelloTest extends XotBaseTestCase
-{
-    use RefreshDatabase;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vS3Y5K
 
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< .merge_file_xilZIk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-        // Setup database per i test
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
-        // Setup database per i test
->>>>>>> 8d801bbe (Check & fix styling)
-    }
-}
-```
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
-
-=======
-<<<<<<< HEAD
-Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
     }
 }
 ```
 
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
 
->>>>>>> .merge_file_vS3Y5K
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test
@@ -765,39 +674,10 @@ dd(DB::getQueryLog());
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
-<<<<<<< .merge_file_xilZIk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vS3Y5K
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale
 
 ---
 
-<<<<<<< .merge_file_xilZIk
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> .merge_file_vS3Y5K

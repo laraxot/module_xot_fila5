@@ -204,53 +204,13 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
-<<<<<<< .merge_file_nlbpQZ
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
-=======
-<<<<<<< HEAD
-- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](XOTDATA_TESTING.md)
-=======
-- [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](xotdata_testing.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](XOTDATA_TESTING.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](XOTDATA_TESTING.md)
->>>>>>> .merge_file_mbbwyT
 
 ---
 
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
-<<<<<<< .merge_file_nlbpQZ
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Update**: Dicembre 2024
-=======
-<<<<<<< HEAD
-**Last Update**: Dicembre 2024
-=======
-**Last Update**: Dicembre 2024
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Last Update**: Dicembre 2024
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Last Update**: Dicembre 2024
->>>>>>> .merge_file_mbbwyT

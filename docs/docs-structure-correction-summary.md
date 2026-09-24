@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_Nkuqux
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_9jd2Bk
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -210,11 +200,7 @@ find laravel/Themes -name "docs" -type d
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)
-<<<<<<< HEAD
 - [Struttura Progetto](PROJECT-STRUCTURE.md)
-=======
-- [Struttura Progetto](project-structure.md)
->>>>>>> 8d801bbe (Check & fix styling)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---
@@ -225,21 +211,3 @@ find laravel/Themes -name "docs" -type d
 **Stato**: Violazione corretta, regole implementate, struttura conforme
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
-<<<<<<< .merge_file_Nkuqux
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: docs-structure-correction-summary
-canonical: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_9jd2Bk

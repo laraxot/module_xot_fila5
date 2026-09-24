@@ -8,42 +8,11 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
-<<<<<<< .merge_file_aib5im
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_wuYpI6
 use Nwidart\Modules\Module;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match;
 
-<<<<<<< .merge_file_aib5im
-<<<<<<< HEAD
-=======
-=======
-=======
-use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
-use Nwidart\Modules\Module;
->>>>>>> .merge_file_D0wWUc
-=======
-use Nwidart\Modules\Module;
->>>>>>> 8d801bbe (Check & fix styling)
-
-use function Safe\preg_match;
-
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
-<<<<<<< .merge_file_GNpg2u
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_D0wWUc
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_wuYpI6
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -77,23 +46,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             $this->configureQueryLogging();
         }
 
-<<<<<<< .merge_file_aib5im
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GNpg2u
-=======
-        // Registra middleware di monitoraggio
-        if (config('filament_optimization.monitoring.memory_profiling', false)) {
-            $this->registerMemoryMonitoring();
-        }
-
->>>>>>> .merge_file_D0wWUc
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_wuYpI6
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -164,27 +116,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
-<<<<<<< .merge_file_aib5im
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GNpg2u
-=======
-     * Registra il middleware di monitoraggio memoria.
-     */
-    private function registerMemoryMonitoring(): void
-    {
-        // Il middleware verrà registrato nel kernel HTTP
-        app('router')->pushMiddlewareToGroup('web', FilamentMemoryMonitorMiddleware::class);
-    }
-
-    /**
->>>>>>> .merge_file_D0wWUc
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_wuYpI6
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

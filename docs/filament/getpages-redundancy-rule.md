@@ -41,30 +41,10 @@ class CoeffResource extends XotBaseResource
     protected static ?string $model = Coeff::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_CmovwP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_MarXh5
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_CmovwP
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_MarXh5
     {
         return [ /* ... */ ];
     }

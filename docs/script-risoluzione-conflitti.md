@@ -197,21 +197,4 @@ La **SUPER MUCCA** 🐄 ha processato tutti i file e risolto ogni conflitto pren
 3. ✅ Committa con `git add . && git commit -m "Risolti conflitti merge"`
 
 *Script creati il: 2025-09-18*
-<<<<<<< .merge_file_xRzjlY
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Poteri della Super Mucca: ATTIVATI* 🐄✨
-=======
-<<<<<<< HEAD
-*Poteri della Super Mucca: ATTIVATI* 🐄✨
-=======
-*Script creati il: [DATE]*
-*Poteri della Super Mucca: ATTIVATI* 🐄✨
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Poteri della Super Mucca: ATTIVATI* 🐄✨
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Poteri della Super Mucca: ATTIVATI* 🐄✨
->>>>>>> .merge_file_uqyB5h

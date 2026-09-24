@@ -201,33 +201,7 @@ Questo è INUTILE perché:
 ---
 
 **Data:** 2026-01-09
-<<<<<<< .merge_file_VF6yPI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_zOrhyG
 **Stato:** Pronto per implementazione
 **Righe:** 126 → ~25 (-80%)
 **Complessità:** ESTREMA → MINIMALE
 **Filosofia:** MySQL Production = MySQL Tests ✅
-<<<<<<< .merge_file_VF6yPI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-**Data:** [DATE]
-**Stato:** Pronto per implementazione
-**Righe:** 126 → ~25 (-80%)
-**Complessità:** ESTREMA → MINIMALE
-**Filosofia:** MySQL Production = MySQL Tests ✅
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_zOrhyG

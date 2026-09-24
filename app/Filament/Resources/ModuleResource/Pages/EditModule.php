@@ -74,35 +74,7 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
-<<<<<<< .merge_file_K3eTc4
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-     *
-     * @param array<array-key, mixed> $config
-     *                                        =======
-     *                                        <<<<<<< .merge_file_R22bCP
-     *                                        =======
-     *                                        <<<<<<< HEAD
-     *                                        <<<<<<< .merge_file_bxS1IY.
-     *                                        >>>>>>> .merge_file_gDEies.
-     * @param array<array-key, mixed> $config
-     *
-     * <<<<<<< .merge_file_R22bCP
-     * =======
-     * =======
-     * @param array<array-key, mixed> $config
-     *                                        >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-     * >>>>>>> .merge_file_gDEies
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<array-key, mixed> $config
->>>>>>> 8d801bbe (Check & fix styling)
-     *
-=======
      * @param  array<array-key, mixed>  $config
->>>>>>> .merge_file_sUtEtI
      * @return array<string, mixed>
      */
     private function normalizeConfigArray(array $config): array

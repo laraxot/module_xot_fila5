@@ -16,29 +16,7 @@ related:
   - ../../../Fixcity/docs/wiki/overviews/completion-roadmap.md
   - ../../../../Themes/Sixteen/docs/wiki/overviews/completion-roadmap.md
   - ../concepts/phpstan-pest-bridge-discipline.md
-<<<<<<< .merge_file_tUKOYX
-<<<<<<< HEAD
-<<<<<<< HEAD
   - ../phpstan-best-practices.md
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_HqWqL2
-  - ../PHPSTAN-BEST-PRACTICES.md
-=======
-  - ../phpstan-best-practices.md
-=======
-  - ../phpstan-best-practices.md
-=======
-  - ../PHPSTAN-BEST-PRACTICES.md
->>>>>>> .merge_file_YXPZ37
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-  - ../PHPSTAN-BEST-PRACTICES.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-  - ../phpstan-best-practices.md
->>>>>>> .merge_file_ppntzT
   - ../../../../../docs/wiki/PHPSTAN-INDEX.md
 ---
 
@@ -143,11 +121,7 @@ Documento **hub** dopo gate ingresso chef (2026-06-13). Ogni modulo/tema ha dett
 
 1. PHPStan zero → 2. `docs/chat/INDEX.md` → 3. QMD search → 4. GitHub issue/discussion owner → 5. STORY → 6. codice.
 
-<<<<<<< HEAD
 Chat sessione: [docs/chat/2026-06-13-phpstan-modules-second-brain-docs.md](../../../../../docs/chat/2026-06-13-phpstan-modules-second-brain-docs.md).
-=======
-Chat sessione: [docs/chat/phpstan-modules-second-brain-docs.md](../../../../../docs/chat/phpstan-modules-second-brain-docs.md).
->>>>>>> 8d801bbe (Check & fix styling)
 
 ## Definition of Done piattaforma
 

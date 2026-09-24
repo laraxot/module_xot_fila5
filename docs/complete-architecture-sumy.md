@@ -125,30 +125,10 @@ Filament Resource → XotBaseResource → FilamentResource
 ### Required Implementation
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_vzNqXM
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_juCPcj
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_vzNqXM
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-abstract public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_juCPcj
 ```
 
 ### Page Generation
@@ -207,20 +187,4 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Inheritance over Composition**: Clear inheritance chains for maintainability
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
-<<<<<<< .merge_file_vzNqXM
-<<<<<<< HEAD
-<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
-=======
-<<<<<<< HEAD
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
-=======
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
->>>>>>> .merge_file_juCPcj

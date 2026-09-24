@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://medium.com/@laravelprotips/filament-streamline-multiple-widgets-with-one-dynamic-livewire-filter-ed05c978a97f
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Filament\Pages;
 
 use Filament\Widgets\Widget;

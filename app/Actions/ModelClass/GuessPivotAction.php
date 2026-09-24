@@ -16,44 +16,8 @@ class GuessPivotAction
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
-<<<<<<< .merge_file_uZlQcr
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< .merge_file_BlfdUz
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< .merge_file_syiSyF
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     *                                            <<<<<<< HEAD
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            =======
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
-     *                                            >>>>>>> laraxot/dev
-     *                                            >>>>>>> .merge_file_NzfLh9
-     *                                            >>>>>>> laraxot/dev
-     *                                            >>>>>>> .merge_file_yA4jnq
-     *                                            >>>>>>> laraxot/dev
-=======
-     * @param string|class-string<Model> $related The related model class name
-     * @param string|class-string<Model> $class   The class
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  string|class-string<Model>  $related  The related model class name
      * @param  string|class-string<Model>  $class  The class
->>>>>>> .merge_file_i3iqdx
      */
     public function execute(string $related, string $class): Pivot
     {

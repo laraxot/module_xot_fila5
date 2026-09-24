@@ -195,41 +195,10 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 
 ## Collegamenti alla documentazione correlata
 - [Qualità del codice](./CODE_QUALITY.md)
-<<<<<<< .merge_file_cC1mwj
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_fNL8Vj
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_Fro95M
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_jkR8NI
 - [Tipi rigorosi PHP](php-strict-types.md)
 - [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](service-provider-best-practices.md)
 - [Best practice per Filament](filament-best-practices.md)
-<<<<<<< .merge_file_cC1mwj
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_fNL8Vj
-=======
-=======
-- [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
-- [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
-- [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
-- [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Fro95M
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_jkR8NI
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.

@@ -1,13 +1,3 @@
-<<<<<<< .merge_file_06Atzc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_U19Q8g
 # Regole Generali sulle State Machine
 
 ## Transizioni
@@ -22,21 +12,3 @@
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)
-<<<<<<< .merge_file_06Atzc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
----
-module: theme
-topic: state-machine
-canonical: ../../../Themes/docs/shared-components/state-machine-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/state-machine-1.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_U19Q8g

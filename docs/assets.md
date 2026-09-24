@@ -251,20 +251,4 @@ document.addEventListener('alpine:init', () => {
 ## Collegamenti tra versioni di assets.md
 * [assets.md](../../../Xot/docs/assets.md)
 * [assets.md](../../../Cms/docs/themes/assets.md)
-<<<<<<< .merge_file_cio28i
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [assets.md](../../../../Themes/One/docs/assets.md)
-=======
-<<<<<<< HEAD
-* [assets.md](../../../../Themes/One/docs/assets.md)
-=======
-* [assets.md](../../../../Themes/One/docs/assets.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-* [assets.md](../../../../Themes/One/docs/assets.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-* [assets.md](../../../../Themes/One/docs/assets.md)
->>>>>>> .merge_file_xQ8k8p

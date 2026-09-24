@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
-<<<<<<< .merge_file_VlAVEc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_UYKGC4
 namespace Modules\Xot\Actions;
 
 use Spatie\QueueableAction\QueueableAction;

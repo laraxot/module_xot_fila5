@@ -42,60 +42,16 @@ README.md
 
 **Prima**:
 ```
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 phpstan-fixes-2025-01-06.md
 lessons-learned-2025-08-25.md
 git-conflicts-resolution-2025-01-06.md
-=======
-<<<<<<< HEAD
-phpstan-fixes-2025-01-06.md
-lessons-learned-2025-08-25.md
-git-conflicts-resolution-2025-01-06.md
-=======
-phpstan-fixes.md
-lessons-learned.md
-git-conflicts-resolution.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-phpstan-fixes-2025-01-06.md
-lessons-learned-2025-08-25.md
-git-conflicts-resolution-2025-01-06.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-phpstan-fixes-2025-01-06.md
-lessons-learned-2025-08-25.md
-git-conflicts-resolution-2025-01-06.md
->>>>>>> .merge_file_kuEfAt
 ```
 
 **Dopo**:
 ```
 archive/phpstan/phpstan-fixes-jan2025.md  (archiviato)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 archive/lessons-learned-aug2025.md         (archiviato)
 phpstan-level10-success-nov2025.md         (attuale)
-=======
-<<<<<<< HEAD
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
-=======
-archive/lessons-learned-aug-archive-1.md         (archiviato)
-phpstan-level10-success-nov-archive-1.md         (attuale)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
->>>>>>> .merge_file_kuEfAt
 ```
 
 ### 3. Consolidamento Duplicati (12 file eliminati)
@@ -122,23 +78,7 @@ phpstan-level10-success-nov2025.md         (attuale)
 **Struttura migliorata**:
 ```
 docs/
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-├── phpstan-level10-success-nov-archive-1.md  (attuale)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-├── phpstan-level10-success-nov2025.md  (attuale)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-├── phpstan-level10-success-nov2025.md  (attuale)
->>>>>>> .merge_file_kuEfAt
 ├── phpstan-workflow.md                  (procedura)
 └── archive/
     └── phpstan/
@@ -167,23 +107,7 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-<<<<<<< HEAD
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
->>>>>>> .merge_file_kuEfAt
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -198,23 +122,7 @@ public static string $projectBasePath = '../../docs/standards/php-inheritance-ru
 ```
 docs/
 ├── README.md                          (indice principale)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-├── phpstan-level10-success-nov-archive-1.md (ultimo successo)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-├── phpstan-level10-success-nov2025.md (ultimo successo)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-├── phpstan-level10-success-nov2025.md (ultimo successo)
->>>>>>> .merge_file_kuEfAt
 ├── phpstan-workflow.md                (procedura corrente)
 ├── eloquent-magic-properties-rule.md  (regole Eloquent)
 ├── git-forward-only-rule.md           (regola Git)
@@ -242,41 +150,12 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 [guida principale](../../../docs/guide.md)
-=======
-<<<<<<< HEAD
-[guida principale](../../../docs/guide.md)
-=======
-[guida principale](../../../../docs/guide.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-[guida principale](../../../docs/guide.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-[guida principale](../../../docs/guide.md)
->>>>>>> .merge_file_kuEfAt
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-[user docs](../../user/docs/user-guide.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_kuEfAt
 ```
 
 ### All'interno dello stesso modulo
@@ -315,23 +194,7 @@ Documentato in: `git-forward-only-rule.md`
 **Vietato**: `git checkout HEAD --`, `git reset`, `git revert` (senza discussione)
 
 ### File .lock Pattern
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-<<<<<<< HEAD
-Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-Documentato in: `phpstan-level10-success-nov-archive-1.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Documentato in: `phpstan-level10-success-nov2025.md`
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Documentato in: `phpstan-level10-success-nov2025.md`
->>>>>>> .merge_file_kuEfAt
 
 **Regola**: Creare `.lock` prima di modificare file
 
@@ -385,23 +248,7 @@ find . -name "readme.md" -o -name "Readme.md"
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-<<<<<<< HEAD
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Successo PHPStan
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
->>>>>>> .merge_file_kuEfAt
 - [Eloquent Magic Properties Rule](./eloquent-magic-properties-rule.md) - Regola property_exists
 - [Git Forward Only Rule](./git-forward-only-rule.md) - Regola Git
 - [Naming Conventions](./naming-conventions.md) - Convenzioni naming
@@ -457,60 +304,16 @@ README.md
 
 **Prima**:
 ```
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 phpstan-fixes-2025-01-06.md
 lessons-learned-2025-08-25.md
 git-conflicts-resolution-2025-01-06.md
-=======
-<<<<<<< HEAD
-phpstan-fixes-2025-01-06.md
-lessons-learned-2025-08-25.md
-git-conflicts-resolution-2025-01-06.md
-=======
-phpstan-fixes.md
-lessons-learned.md
-git-conflicts-resolution.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-phpstan-fixes-2025-01-06.md
-lessons-learned-2025-08-25.md
-git-conflicts-resolution-2025-01-06.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-phpstan-fixes-2025-01-06.md
-lessons-learned-2025-08-25.md
-git-conflicts-resolution-2025-01-06.md
->>>>>>> .merge_file_kuEfAt
 ```
 
 **Dopo**:
 ```
 archive/phpstan/phpstan-fixes-jan2025.md  (archiviato)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 archive/lessons-learned-aug2025.md         (archiviato)
 phpstan-level10-success-nov2025.md         (attuale)
-=======
-<<<<<<< HEAD
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
-=======
-archive/lessons-learned-aug-archive-1.md         (archiviato)
-phpstan-level10-success-nov-archive-1.md         (attuale)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
->>>>>>> .merge_file_kuEfAt
 ```
 
 ### 3. Consolidamento Duplicati (12 file eliminati)
@@ -537,23 +340,7 @@ phpstan-level10-success-nov2025.md         (attuale)
 **Struttura migliorata**:
 ```
 docs/
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-├── phpstan-level10-success-nov-archive-1.md  (attuale)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-├── phpstan-level10-success-nov2025.md  (attuale)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-├── phpstan-level10-success-nov2025.md  (attuale)
->>>>>>> .merge_file_kuEfAt
 ├── phpstan-workflow.md                  (procedura)
 └── archive/
     └── phpstan/
@@ -582,23 +369,7 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-<<<<<<< HEAD
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
->>>>>>> .merge_file_kuEfAt
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -613,23 +384,7 @@ public static string $projectBasePath = '../../docs/standards/php-inheritance-ru
 ```
 docs/
 ├── README.md                          (indice principale)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-├── phpstan-level10-success-nov-archive-1.md (ultimo successo)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-├── phpstan-level10-success-nov2025.md (ultimo successo)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-├── phpstan-level10-success-nov2025.md (ultimo successo)
->>>>>>> .merge_file_kuEfAt
 ├── phpstan-workflow.md                (procedura corrente)
 ├── eloquent-magic-properties-rule.md  (regole Eloquent)
 ├── git-forward-only-rule.md           (regola Git)
@@ -657,41 +412,12 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 [guida principale](../../../docs/guide.md)
-=======
-<<<<<<< HEAD
-[guida principale](../../../docs/guide.md)
-=======
-[guida principale](../../../../docs/guide.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-[guida principale](../../../docs/guide.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-[guida principale](../../../docs/guide.md)
->>>>>>> .merge_file_kuEfAt
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-[user docs](../../user/docs/user-guide.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_kuEfAt
 ```
 
 ### All'interno dello stesso modulo
@@ -730,23 +456,7 @@ Documentato in: `git-forward-only-rule.md`
 **Vietato**: `git checkout HEAD --`, `git reset`, `git revert` (senza discussione)
 
 ### File .lock Pattern
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-<<<<<<< HEAD
-Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-Documentato in: `phpstan-level10-success-nov-archive-1.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-Documentato in: `phpstan-level10-success-nov2025.md`
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-Documentato in: `phpstan-level10-success-nov2025.md`
->>>>>>> .merge_file_kuEfAt
 
 **Regola**: Creare `.lock` prima di modificare file
 
@@ -800,23 +510,7 @@ find . -name "readme.md" -o -name "Readme.md"
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-<<<<<<< HEAD
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Successo PHPStan
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
->>>>>>> .merge_file_kuEfAt
 - [Eloquent Magic Properties Rule](./eloquent-magic-properties-rule.md) - Regola property_exists
 - [Git Forward Only Rule](./git-forward-only-rule.md) - Regola Git
 - [Naming Conventions](./naming-conventions.md) - Convenzioni naming
@@ -827,20 +521,4 @@ find . -name "readme.md" -o -name "Readme.md"
 1. **Correzione link assoluti**: Eseguire script `fix-absolute-paths-in-docs.sh` (con supervisione)
 2. **Applicare a tutti i moduli**: Replicare miglioramenti in Modules/*/docs/
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
-<<<<<<< .merge_file_k2i6Pv
-<<<<<<< HEAD
-<<<<<<< HEAD
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
-=======
-<<<<<<< HEAD
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> .merge_file_kuEfAt

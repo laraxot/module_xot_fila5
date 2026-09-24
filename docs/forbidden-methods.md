@@ -35,30 +35,10 @@ class ProductResource extends XotBaseResource
 
     // UNICI metodi che dovrebbero essere implementati
 <<<<<<< HEAD
-<<<<<<< .merge_file_Lgldpd
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_fMDOeU
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_Lgldpd
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_fMDOeU
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

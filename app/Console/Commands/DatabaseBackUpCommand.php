@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://github.com/paulvl/backup/blob/master/src/Console/Commands/MysqlDump.php
  */
@@ -14,30 +10,10 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-<<<<<<< .merge_file_eU9T84
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_FQMEw0
 use Webmozart\Assert\Assert;
 
 use function Safe\exec;
 
-<<<<<<< .merge_file_eU9T84
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-use function Safe\exec;
-
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_FQMEw0
 class DatabaseBackUpCommand extends Command
 {
     /**
@@ -55,19 +31,6 @@ class DatabaseBackUpCommand extends Command
     protected $description = 'Dump your Mysql database to a file';
 
     /**
-<<<<<<< .merge_file_eU9T84
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * Create a new command instance.
-     */
-
-    /**
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_FQMEw0
      * Execute the console command.
      */
     public function handle(): void

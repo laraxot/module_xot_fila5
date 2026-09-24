@@ -89,21 +89,4 @@ Dopo la modifica, verifica con:
 ---
 
 *Risolto: 2025-01-10*
-<<<<<<< .merge_file_V4ANYY
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Architecture Version: XotBase 2.1*
-=======
-<<<<<<< HEAD
-*Architecture Version: XotBase 2.1*
-=======
-*Risolto: [DATE]*
-*Architecture Version: XotBase 2.1*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Architecture Version: XotBase 2.1*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Architecture Version: XotBase 2.1*
->>>>>>> .merge_file_ywLZ66

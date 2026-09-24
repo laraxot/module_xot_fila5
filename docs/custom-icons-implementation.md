@@ -4,21 +4,7 @@
 Questa guida fornisce istruzioni dettagliate su come implementare e utilizzare icone personalizzate nel sistema Xot.
 
 ## Prerequisiti
-<<<<<<< .merge_file_r7uYhJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_njBlfC
 Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerbladeicons.md).
-=======
-Prima di procedere, assicurarsi di aver compreso il [processo di registrazione delle icone](registerBladeIcons.md).
->>>>>>> 8d801bbe (Check & fix styling)
 
 ## Processo di Implementazione
 
@@ -61,28 +47,8 @@ public function register(): void
 ```
 
 ## Troubleshooting
-<<<<<<< HEAD
 Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerbladeicons.md).
 
 ## Risorse Aggiuntive
 - [Panoramica delle Blade Icons](blade-icons-overview.md)
 - [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
-<<<<<<< .merge_file_r7uYhJ
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-Per problemi comuni e soluzioni, consultare la [documentazione di registerBladeIcons](registerBladeIcons.md).
-
-## Risorse Aggiuntive
-- [Panoramica delle Blade Icons](blade-icons-overview.md)
-- [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_njBlfC

@@ -12,23 +12,7 @@
 - actions-pattern.md + actions-standardization.md
 - directory_structure_guide.md + directory-structure-guide.md
 - naming_conventions.md + naming-conventions.md
-<<<<<<< .merge_file_ThExwK
-<<<<<<< HEAD
-<<<<<<< HEAD
 - phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
-=======
-<<<<<<< HEAD
-- phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
-=======
-- phpstan_fixes.md + phpstan-fixes-archive-1.md + phpstan-fixes-archive-1.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- phpstan_fixes.md + phpstan-fixes-2025.md + phpstan-fixes-gennaio-2025.md
->>>>>>> .merge_file_HfAhGQ
 - migration_guidelines.md + migration-guidelines.md + migration-standards.md
 
 ✅ DOPO (consolidato):
@@ -44,23 +28,7 @@
 #### 2. Documentazione PHPStan Frammentata
 ```
 ❌ PRIMA (16 file separati):
-<<<<<<< .merge_file_ThExwK
-<<<<<<< HEAD
-<<<<<<< HEAD
 phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
-=======
-<<<<<<< HEAD
-phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
-=======
-phpstan_fixes.md, phpstan-fixes-archive-5.md, phpstan_level7_guide.md,
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-phpstan_fixes.md, phpstan_fixes_2025.md, phpstan_level7_guide.md,
->>>>>>> .merge_file_HfAhGQ
 phpstan_level9_guide.md, phpstan_workflow.md, phpstan_usage_guide.md, etc.
 
 ✅ DOPO (struttura consolidata):
@@ -156,33 +124,9 @@ Codice pratico.
 
 ## Collegamenti
 - [Doc correlata](./relativa.md)
-<<<<<<< .merge_file_ThExwK
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Root docs](../../../docs/correlata.md)
 
 *Ultimo aggiornamento: [data]*
-=======
-<<<<<<< HEAD
-- [Root docs](../../../docs/correlata.md)
-
-*Ultimo aggiornamento: [data]*
-=======
-*Ultimo aggiornamento: [data]*
-- [Root docs](../../../../docs/correlata.md)
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Root docs](../../../docs/correlata.md)
-
-*Ultimo aggiornamento: [data]*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Root docs](../../../docs/correlata.md)
-
-*Ultimo aggiornamento: [data]*
->>>>>>> .merge_file_HfAhGQ
 ```
 
 ### 4. **Sistema Navigazione Centralizzato**
@@ -252,43 +196,11 @@ DOPO:
 
 - [Template Standardizzato](./template-docs.md)
 - [Guida Refactoring](./refactoring-guide.md)
-<<<<<<< .merge_file_ThExwK
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
-=======
-<<<<<<< HEAD
-- [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
-=======
-- [Root Ottimizzazioni](../../../../docs/ottimizzazioni-modulari.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Root Ottimizzazioni](../../../docs/ottimizzazioni-modulari.md)
->>>>>>> .merge_file_HfAhGQ
 
 ## 🏷️ **Tag Ottimizzazione**
 
 `#DRY` `#KISS` `#refactoring` `#documentation` `#xot-module` `#consolidation`
 
 ---
-<<<<<<< .merge_file_ThExwK
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
-=======
-*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
->>>>>>> .merge_file_HfAhGQ

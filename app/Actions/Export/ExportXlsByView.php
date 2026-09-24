@@ -4,19 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
-<<<<<<< .merge_file_w5Ghiq
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// use Modules\Xot\Services\ArrayService;
-
->>>>>>> laraxot/dev
-=======
-// use Modules\Xot\Services\ArrayService;
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_qUEjwA
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\ViewExport;
@@ -33,29 +20,10 @@ class ExportXlsByView
     /**
      * Esporta una vista in Excel.
      *
-<<<<<<< .merge_file_w5Ghiq
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_qUEjwA
      * @param  View  $view  La vista da esportare
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  string  $filename  Nome del file Excel
      * @param  string|null  $transKey  Chiave di traduzione per i campi
-<<<<<<< .merge_file_w5Ghiq
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param View               $view     La vista da esportare
-     * @param array<int, string> $fields   Campi da includere nell'export
-     * @param string             $filename Nome del file Excel
-     * @param string|null        $transKey Chiave di traduzione per i campi
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_qUEjwA
      */
     public function execute(
         View $view,

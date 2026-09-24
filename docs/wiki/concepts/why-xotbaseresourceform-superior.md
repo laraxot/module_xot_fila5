@@ -35,30 +35,10 @@ class DepartmentForm {
 // TicketForm.php (Our Pattern)
 class TicketForm extends XotBaseResourceForm {
 <<<<<<< HEAD
-<<<<<<< .merge_file_qjzEyP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_SFREMJ
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_qjzEyP
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_SFREMJ
         return [
             TextInput::make('name'), // ✅ No label - LangServiceProvider owns it
             // Wizard integration built-in

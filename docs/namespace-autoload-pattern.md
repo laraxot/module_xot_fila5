@@ -84,17 +84,3 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 - [Convenzioni di Namespace](../Xot/docs/namespace_conventions.md)
 - [Struttura Moduli](../Xot/docs/module_structure.md)
-<<<<<<< .merge_file_ldyMot
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
-- [Struttura Moduli](../xot/docs/module_structure.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_x0refE

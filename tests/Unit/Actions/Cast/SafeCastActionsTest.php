@@ -1,30 +1,15 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-// Laraxot — see module docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
->>>>>>> 8d801bbe (Check & fix styling)
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-use PHPUnit\Framework\Assert;
-
->>>>>>> 8d801bbe (Check & fix styling)
 test('safe array cast action works', function (): void {
     $action = app(SafeArrayCastAction::class);
 
@@ -33,52 +18,20 @@ test('safe array cast action works', function (): void {
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     Assert::assertSame(['c' => 3], $action->execute((object) ['c' => 3]));
     Assert::assertSame(['scalar'], $action->execute('scalar'));
-<<<<<<< .merge_file_xxWw2G
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_kYzxgG
     Assert::assertSame(['d' => 4], $action->execute(new class
     {
         public int $d = 4;
     }));
     Assert::assertSame(['e' => 5], $action->execute(new class
     {
-<<<<<<< .merge_file_xxWw2G
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-    Assert::assertSame(['d' => 4], $action->execute(new class {
-        public int $d = 4;
-    }));
-    Assert::assertSame(['e' => 5], $action->execute(new class {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_kYzxgG
         /** @return array<string, int> */
         public function toArray(): array
         {
             return ['e' => 5];
         }
     }));
-<<<<<<< .merge_file_xxWw2G
-<<<<<<< HEAD
-<<<<<<< HEAD
     Assert::assertSame(['f' => 6], $action->execute(new class
     {
-=======
-    Assert::assertSame(['f' => 6], $action->execute(new class {
->>>>>>> laraxot/dev
-=======
-    Assert::assertSame(['f' => 6], $action->execute(new class {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    Assert::assertSame(['f' => 6], $action->execute(new class
-    {
->>>>>>> .merge_file_kYzxgG
         /** @return array<string, int> */
         public function __toArray(): array
         {
@@ -115,25 +68,11 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(123, $action->execute(123.9));
     Assert::assertSame(5, $action->execute(null, 5));
     Assert::assertSame(123456, $action->execute('1.234,56'));
-<<<<<<< HEAD
     Assert::assertSame(123, $action->execute(' +123 '));
     Assert::assertSame(1, $action->execute(true));
     Assert::assertSame(789, $action->execute(['789']));
     Assert::assertSame(1011, $action->execute(new class
     {
-<<<<<<< .merge_file_xxWw2G
-=======
-    Assert::assertSame(1011, $action->execute(new class {
->>>>>>> laraxot/dev
-=======
-    $signedWhitespaceInput = ' '.chr(43).'123 ';
-    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
-    Assert::assertSame(1, $action->execute(true));
-    Assert::assertSame(789, $action->execute(['789']));
-    Assert::assertSame(1011, $action->execute(new class {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_kYzxgG
         public function __toString(): string
         {
             return '1011';

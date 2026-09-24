@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -30,27 +22,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<Model> query()
  * @method static Builder<Model> withExtraAttributes()
  *
-<<<<<<< .merge_file_B8dP1U
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property int $id
  * @property string $model_type
  * @property string $model_id
-=======
- * @property int         $id
- * @property string      $model_type
- * @property string      $model_id
->>>>>>> laraxot/dev
-=======
- * @property int         $id
- * @property string      $model_type
- * @property string      $model_id
->>>>>>> 8d801bbe (Check & fix styling)
-=======
- * @property int $id
- * @property string $model_type
- * @property string $model_id
->>>>>>> .merge_file_TRmfNx
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -73,20 +47,4 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @mixin \Eloquent
  */
-<<<<<<< .merge_file_B8dP1U
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface ExtraContract {}
-=======
-interface ExtraContract
-{
-}
->>>>>>> laraxot/dev
-=======
-interface ExtraContract
-{
-}
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-interface ExtraContract {}
->>>>>>> .merge_file_TRmfNx

@@ -251,25 +251,6 @@ class DashboardTest extends TestCase
 
 ## Documentazione Correlata
 
-<<<<<<< .merge_file_zbIbZ1
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [XotBasePanelProvider](../laravel/modules/xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
-- [Filament Integration](../laravel/modules/xot/docs/filament/filament_integration.md) - Integrazione generale Filament
-- [Best Practices](../laravel/modules/xot/docs/best-practices.md) - Best practices generali
-
-## Collegamenti
-
-- [Documentazione Modulo Xot](../laravel/modules/xot/docs/filament/dashboard-pages.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_VVYCCL
 - [XotBasePanelProvider](../laravel/Modules/Xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](../laravel/Modules/Xot/docs/filament/filament_integration.md) - Integrazione generale Filament
 - [Best Practices](../laravel/Modules/Xot/docs/BEST-PRACTICES.md) - Best practices generali
@@ -284,20 +265,4 @@ class DashboardTest extends TestCase
 
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
-<<<<<<< .merge_file_zbIbZ1
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Moduli da implementare**: 13 moduli identificati
-=======
-<<<<<<< HEAD
-**Moduli da implementare**: 13 moduli identificati
-=======
-**Moduli da implementare**: 13 moduli identificati
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Moduli da implementare**: 13 moduli identificati
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Moduli da implementare**: 13 moduli identificati
->>>>>>> .merge_file_VVYCCL

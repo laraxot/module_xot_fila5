@@ -49,10 +49,6 @@ Do not make `XotBaseTestCase` extend `Nwidart\Modules\Tests\BaseTestCase` in the
 - translator fallback for Filament-oriented tests
 - shared helper methods
 - teardown connection cleanup
-<<<<<<< HEAD
-=======
-- `prepareSharedFixcitySqliteForTesting()` + `assertFixcitySqliteReadyForTesting()` — vedi [fixcity-data-sqlite-pest-bootstrap.md](./fixcity-data-sqlite-pest-bootstrap.md)
->>>>>>> 8d801bbe (Check & fix styling)
 
 The module `TestCase` owns module-specific behavior:
 

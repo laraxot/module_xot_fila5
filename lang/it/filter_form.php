@@ -2,12 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/filter_form.php
->>>>>>> 8d801bbe (Check & fix styling)
 return [
     'sections' => [
         'Filtri' => [
@@ -54,9 +48,6 @@ return [
         'delete' => [
             'label' => 'Elimina Filter Form',
         ],
-<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-=======
->>>>>>> 8d801bbe (Check & fix styling)
     ],
 ];

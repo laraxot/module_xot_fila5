@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 # Risoluzione Conflitto in ExportXlsByView
 
 ## Problema

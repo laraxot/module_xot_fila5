@@ -312,37 +312,11 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
-<<<<<<< .merge_file_IHP0cI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nItB07
 - [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
-<<<<<<< .merge_file_IHP0cI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-*Ultimo aggiornamento: gennaio 2025*
-- [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
-- [PathHelper Current](../Helpers/PathHelper.php)
-- [XotData Current](../Datas/XotData.php)
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nItB07
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -657,33 +631,8 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
-<<<<<<< .merge_file_IHP0cI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nItB07
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
-<<<<<<< .merge_file_IHP0cI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-*Ultimo aggiornamento: gennaio 2025*
-- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
-- [PathHelper Current](../Helpers/PathHelper.php)
-- [XotData Current](../Datas/XotData.php)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nItB07

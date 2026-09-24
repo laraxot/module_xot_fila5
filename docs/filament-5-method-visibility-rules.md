@@ -410,25 +410,5 @@ public function mount(): void
 
 ---
 
-<<<<<<< .merge_file_ZWUslk
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Last Updated:** 28 January 2026
-=======
-<<<<<<< .merge_file_5rB2l1
-**Last Updated:** 28 January 2026
-=======
-<<<<<<< HEAD
-**Last Updated:** 28 January 2026
-=======
-**
->>>>>>> laraxot/dev
->>>>>>> .merge_file_6GWDGd
->>>>>>> laraxot/dev
-=======
-**Last Updated:** 28 January 2026
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Last Updated:** 28 January 2026
->>>>>>> .merge_file_pMN9De
 **Maintainer:** Laraxot Team + Claude Opus 4.5

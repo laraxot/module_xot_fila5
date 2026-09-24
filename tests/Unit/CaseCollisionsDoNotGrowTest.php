@@ -1,29 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_nrNxW4
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_VreSMc
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_SrNGZf
-=======
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hCC61d
 /**
  * Guardia a cricchetto sulle collisioni case-insensitive.
  *
@@ -39,44 +16,12 @@ declare(strict_types=1);
  * Bonifica: python3 bashscripts/tools/audit/audit-case-collisions.py --fix-identical
  */
 
-<<<<<<< .merge_file_nrNxW4
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Symfony\Component\Process\Process;
 
-=======
-<<<<<<< .merge_file_VreSMc
-use Symfony\Component\Process\Process;
-
-=======
->>>>>>> .merge_file_SrNGZf
->>>>>>> laraxot/dev
-=======
-use Symfony\Component\Process\Process;
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-use Symfony\Component\Process\Process;
-
->>>>>>> .merge_file_hCC61d
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
 
-<<<<<<< .merge_file_nrNxW4
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_VreSMc
-=======
-use Symfony\Component\Process\Process;
-
->>>>>>> .merge_file_SrNGZf
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_hCC61d
 function repoRoot(): string
 {
     return \dirname(__DIR__, 5);
@@ -97,33 +42,7 @@ function collisionGroups(): int
     try {
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
-<<<<<<< .merge_file_nrNxW4
-<<<<<<< HEAD
-<<<<<<< HEAD
     } catch (Throwable) {
-=======
-<<<<<<< .merge_file_VreSMc
-<<<<<<< HEAD
-    } catch (\Throwable) {
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-    } catch (\Throwable) {
-=======
-    } catch (Throwable) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    } catch (Throwable) {
->>>>>>> .merge_file_SrNGZf
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    } catch (Throwable) {
->>>>>>> .merge_file_hCC61d
         return -1;
     }
 

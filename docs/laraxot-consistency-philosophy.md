@@ -2,23 +2,7 @@
 
 ## Core Principle: Consistency Above All
 
-<<<<<<< .merge_file_dtHNRL
-<<<<<<< HEAD
-<<<<<<< HEAD
 **In Laraxot architecture, consistency and predictability are more valuable than flexibility and options.**
-=======
-<<<<<<< HEAD
-**In Laraxot architecture, consistency and predictability are more valuable than flexibility and options.**
-=======
-**In Laraxot architecture, consistency and <nome progetto>ability are more valuable than flexibility and options.**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**In Laraxot architecture, consistency and predictability are more valuable than flexibility and options.**
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**In Laraxot architecture, consistency and predictability are more valuable than flexibility and options.**
->>>>>>> .merge_file_Yhq2sz
 
 ## The Three Pillars of Laraxot Consistency
 
@@ -50,23 +34,7 @@
 
 ### Technical Benefits
 
-<<<<<<< .merge_file_dtHNRL
-<<<<<<< HEAD
-<<<<<<< HEAD
 1. **Predictable Autoloading**: No ambiguous class resolution
-=======
-<<<<<<< HEAD
-1. **Predictable Autoloading**: No ambiguous class resolution
-=======
-1. **<nome progetto>able Autoloading**: No ambiguous class resolution
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-1. **Predictable Autoloading**: No ambiguous class resolution
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-1. **Predictable Autoloading**: No ambiguous class resolution
->>>>>>> .merge_file_Yhq2sz
 2. **Reliable Test Execution**: Consistent test discovery and coverage
 3. **Easy Maintenance**: Clear, unambiguous code structure
 4. **Fast Debugging**: Obvious source of truth for each entity
@@ -75,23 +43,7 @@
 
 1. **Reduced Cognitive Load**: Developers know exactly where to find things
 2. **Faster Onboarding**: Clear patterns for new team members
-<<<<<<< .merge_file_dtHNRL
-<<<<<<< HEAD
-<<<<<<< HEAD
 3. **Reliable Code Generation**: Tools work predictably
-=======
-<<<<<<< HEAD
-3. **Reliable Code Generation**: Tools work predictably
-=======
-3. **Reliable Code Generation**: Tools work <nome progetto>ably
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-3. **Reliable Code Generation**: Tools work predictably
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-3. **Reliable Code Generation**: Tools work predictably
->>>>>>> .merge_file_Yhq2sz
 4. **Scalable Architecture**: Consistent patterns scale well
 
 ### Business Benefits
@@ -210,23 +162,7 @@ composer dump-autoload
 ### Laraxot Core Values
 
 1. **Simplicity**: Clear, unambiguous patterns
-<<<<<<< .merge_file_dtHNRL
-<<<<<<< HEAD
-<<<<<<< HEAD
 2. **Predictability**: Consistent behavior across environments
-=======
-<<<<<<< HEAD
-2. **Predictability**: Consistent behavior across environments
-=======
-2. **<nome progetto>ability**: Consistent behavior across environments
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-2. **Predictability**: Consistent behavior across environments
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-2. **Predictability**: Consistent behavior across environments
->>>>>>> .merge_file_Yhq2sz
 3. **Maintainability**: Easy to understand and modify
 4. **Scalability**: Patterns that grow with the application
 
@@ -254,20 +190,4 @@ composer dump-autoload
 
 ---
 
-<<<<<<< .merge_file_dtHNRL
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
-=======
-<<<<<<< HEAD
-**Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
-=======
-**Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
->>>>>>> .merge_file_Yhq2sz
