@@ -74,6 +74,7 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
+<<<<<<< HEAD
      * <<<<<<< .merge_file_bxS1IY.
      *
      * @param array<array-key, mixed> $config
@@ -92,6 +93,9 @@ class EditModule extends XotBaseEditRecord
      *
      * >>>>>>> .merge_file_GjSVoo
      *
+=======
+     * @param  array<array-key, mixed>  $config
+>>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      * @return array<string, mixed>
      */
     private function normalizeConfigArray(array $config): array
