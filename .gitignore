@@ -151,14 +151,11 @@ phpinsights.php
 rector.php
 .php-cs*.*
 phpmd*.*
-<<<<<<< HEAD
-=======
 phpunit.xml
 phpunit.xml.dist
 phpstan_constants.php
 docs/coverage.md
 docs/coverage-*.md
->>>>>>> laraxot/dev
 
 # Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
 /rector.php
@@ -171,8 +168,5 @@ docs/coverage-*.md
 /.vscode/
 .cursor~*
 .windsurf~*
-<<<<<<< HEAD
-=======
 graphify-out/
 tests/coverage-xot.xml
->>>>>>> laraxot/dev
