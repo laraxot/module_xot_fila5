@@ -16,15 +16,21 @@ final class ArticleData extends Data
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  array<int, string>  $types
      * @param  array<int, string>  $categories
      * @param  array<string, string>  $defaultMeta
      * @param  array<string, bool>  $features
+<<<<<<< HEAD
 =======
      * @param array<int, string>    $types
      * @param array<int, string>    $categories
      * @param array<string, string> $defaultMeta
      * @param array<string, bool>   $features
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function __construct(
@@ -45,10 +51,14 @@ final class ArticleData extends Data
             'show_reading_time' => true,
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
+>>>>>>> laraxot/dev
+=======
+    ) {}
 >>>>>>> laraxot/dev
 
     /**
@@ -57,9 +67,13 @@ final class ArticleData extends Data
     public static function make(): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self;
 =======
         return new self();
+>>>>>>> laraxot/dev
+=======
+        return new self;
 >>>>>>> laraxot/dev
     }
 }

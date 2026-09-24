@@ -7,8 +7,12 @@ namespace Modules\Xot\Actions\Route;
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
+>>>>>>> laraxot/dev
+=======
+use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 
 /**
@@ -23,16 +27,24 @@ class GetRouteMethodAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $v
      *
 =======
      * @param  array<string, mixed>  $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
 >>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public function execute(array $v, ?string $namespace = null): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! isset($v['method'])) {
             return ['get', 'post'];
         }
@@ -44,6 +56,7 @@ class GetRouteMethodAction
         }
 
         return $methods;
+<<<<<<< HEAD
 =======
         if (isset($v['method'])) {
             /** @var array<int, string> */
@@ -51,6 +64,8 @@ class GetRouteMethodAction
         }
 
         return ['get', 'post'];
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     }
 }

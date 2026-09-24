@@ -78,8 +78,12 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * @return array<string, TextColumn>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
+>>>>>>> laraxot/dev
+=======
+    #[\Override]
 >>>>>>> laraxot/dev
     public function getTableColumns(): array
     {

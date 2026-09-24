@@ -57,7 +57,11 @@ class ArrayAction
         return $outputDiff;
     }
 
+<<<<<<< HEAD
     public function execute(): void
     {
     }
+=======
+    public function execute(): void {}
+>>>>>>> laraxot/dev
 }

@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Filament\Tables\Table;
 use Mockery\MockInterface;
@@ -17,10 +20,15 @@ uses(TestCase::class);
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @param MockInterface&Table $tableMock
  *
 =======
  * @param  MockInterface&Table  $tableMock
+>>>>>>> laraxot/dev
+=======
+ * @param MockInterface&Table $tableMock
+ *
 >>>>>>> laraxot/dev
  * @return MockInterface&Table
  */

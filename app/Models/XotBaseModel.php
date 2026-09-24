@@ -68,8 +68,11 @@ abstract class XotBaseModel extends EloquentModel
             && (Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\'));
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
         if (! isset($object['object'])) {

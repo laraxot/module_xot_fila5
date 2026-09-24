@@ -13,6 +13,9 @@ class ListCacheLocks extends XotBaseListRecords
     protected static string $resource = CacheLockResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public function getTableColumns(): array
     {
@@ -28,7 +31,10 @@ class ListCacheLocks extends XotBaseListRecords
             'expiration' => TextColumn::make('expiration')->numeric()->sortable(),
         ];
     }
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 }

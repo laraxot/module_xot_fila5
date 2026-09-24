@@ -15,9 +15,13 @@ use Filament\Tables\Columns\IconColumn as FilamentIconColumn;
  * @method static static make(string $name) Create a new instance of the column
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseIconColumn extends FilamentIconColumn {}
 =======
 abstract class XotBaseIconColumn extends FilamentIconColumn
 {
 }
+>>>>>>> laraxot/dev
+=======
+abstract class XotBaseIconColumn extends FilamentIconColumn {}
 >>>>>>> laraxot/dev

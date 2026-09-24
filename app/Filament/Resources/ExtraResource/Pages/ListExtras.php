@@ -21,6 +21,9 @@ class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     #[\Override]
     public function getTableColumns(): array
@@ -33,8 +36,11 @@ class ListExtras extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
 =======
    
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     /**
      * @return array<BaseFilter>

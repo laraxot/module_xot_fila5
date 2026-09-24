@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
@@ -33,16 +36,22 @@ class GetFactoryAction
      * Execute the function with the given model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param  string  $model_class  the class name of the model
      * @return Factory<covariant Model>
      *
      * @throws \Exception when the factory file cannot be loaded or generated
+<<<<<<< HEAD
 =======
      * @param string $model_class the class name of the model
      *
      * @throws \Exception when the factory file cannot be loaded or generated
      *
      * @return Factory<covariant Model>
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function execute(string $model_class): Factory
@@ -80,10 +89,14 @@ class GetFactoryAction
      * Get the factory class name for a model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $model_class  The model class name
 =======
      * @param string $model_class The model class name
      *
+>>>>>>> laraxot/dev
+=======
+     * @param  string  $model_class  The model class name
 >>>>>>> laraxot/dev
      * @return string The fully qualified factory class name
      */
@@ -110,9 +123,13 @@ class GetFactoryAction
      * Create a factory for the given model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $model_class  The class name of the model to create the factory for
 =======
      * @param string $model_class The class name of the model to create the factory for
+>>>>>>> laraxot/dev
+=======
+     * @param  string  $model_class  The class name of the model to create the factory for
 >>>>>>> laraxot/dev
      */
     public function createFactory(string $model_class): void
@@ -138,9 +155,13 @@ class GetFactoryAction
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($module_parts === '') {
 =======
         if ('' === $module_parts) {
+>>>>>>> laraxot/dev
+=======
+        if ($module_parts === '') {
 >>>>>>> laraxot/dev
             throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
@@ -164,9 +185,13 @@ class GetFactoryAction
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($module_parts === '') {
 =======
         if ('' === $module_parts) {
+>>>>>>> laraxot/dev
+=======
+        if ($module_parts === '') {
 >>>>>>> laraxot/dev
             throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
@@ -199,10 +224,14 @@ class GetFactoryAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string  $factory_class
 =======
      * @param class-string $factory_class
      *
+>>>>>>> laraxot/dev
+=======
+     * @param  class-string  $factory_class
 >>>>>>> laraxot/dev
      * @return Factory<covariant Model>
      */

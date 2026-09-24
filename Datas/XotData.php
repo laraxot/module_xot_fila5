@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\Datas;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
 =======
 /**
+>>>>>>> laraxot/dev
+=======
+/*
 >>>>>>> laraxot/dev
  * Legacy stub file for XotData.
  *

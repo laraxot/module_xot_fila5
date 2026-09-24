@@ -18,8 +18,12 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * Modules\Xot\Contracts\ProfileContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
+>>>>>>> laraxot/dev
+=======
+ *
 >>>>>>> laraxot/dev
  * @property string                $id
  * @property string                $email
@@ -40,12 +44,18 @@ interface ProfileContract extends HasMedia
      * Grant the given permission(s) to a role.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string|int|array<int|string>|Permission|SupportCollection<int, Permission> $permissions
      *
      *
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param string|int|array<int|string>|Permission|SupportCollection<int, Permission> $permissions
@@ -58,10 +68,16 @@ interface ProfileContract extends HasMedia
      * Assign the given role to the model.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param array<int|string>|string|int|RoleContract|SupportCollection<int, RoleContract> $roles
      *
      *
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * @param array<int|string>|string|int|RoleContract|SupportCollection<int, RoleContract> $roles
@@ -74,8 +90,12 @@ interface ProfileContract extends HasMedia
      * Determine if the model has (one of) the given role(s).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
      */
@@ -90,8 +110,12 @@ interface ProfileContract extends HasMedia
      * Alias to hasRole() but without Guard controls
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param string|int|array<int|string>|RoleContract|SupportCollection<int, RoleContract> $roles
      */

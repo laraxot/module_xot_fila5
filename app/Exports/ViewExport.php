@@ -27,8 +27,12 @@ class ViewExport implements FromView
      * Summary of __construct.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string> $fields
      */

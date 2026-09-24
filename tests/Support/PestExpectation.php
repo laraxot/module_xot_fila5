@@ -15,11 +15,20 @@ final class PestExpectation
     public function __construct(
         private readonly mixed $value,
         private readonly bool $negated = false,
+<<<<<<< HEAD
     ) {}
 
     public function __get(string $name): self
     {
         if ($name === 'not') {
+=======
+    ) {
+    }
+
+    public function __get(string $name): self
+    {
+        if ('not' === $name) {
+>>>>>>> laraxot/dev
             return $this->not();
         }
 
@@ -129,7 +138,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  class-string  $expectedClass
+=======
+     * @param class-string $expectedClass
+>>>>>>> laraxot/dev
      */
     public function toBeInstanceOf(string $expectedClass, string $message = ''): self
     {
@@ -191,7 +204,11 @@ final class PestExpectation
             ? Assert::assertArrayNotHasKey($key, $this->value, $message)
             : Assert::assertArrayHasKey($key, $this->value, $message);
 
+<<<<<<< HEAD
         if (func_num_args() === 2 || (func_num_args() === 3 && ! $this->negated)) {
+=======
+        if (2 === func_num_args() || (3 === func_num_args() && ! $this->negated)) {
+>>>>>>> laraxot/dev
             Assert::assertArrayHasKey($key, (array) $this->value);
             Assert::assertEquals($value, ((array) $this->value)[$key], $message);
         }
@@ -200,7 +217,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  iterable<array-key>  $keys
+=======
+     * @param iterable<array-key> $keys
+>>>>>>> laraxot/dev
      */
     public function toHaveKeys(iterable $keys): self
     {
@@ -217,7 +238,11 @@ final class PestExpectation
         $exists = property_exists($this->value, $property) || isset($this->value->{$property});
         $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
 
+<<<<<<< HEAD
         if (func_num_args() === 2 && ! $this->negated) {
+=======
+        if (2 === func_num_args() && ! $this->negated) {
+>>>>>>> laraxot/dev
             Assert::assertEquals($expectedValue, $this->value->{$property});
         }
 
@@ -225,7 +250,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  iterable<string>  $properties
+=======
+     * @param iterable<string> $properties
+>>>>>>> laraxot/dev
      */
     public function toHaveProperties(iterable $properties): self
     {
@@ -246,7 +275,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $expectedSubset
+=======
+     * @param array<array-key, mixed> $expectedSubset
+>>>>>>> laraxot/dev
      */
     public function toMatchArray(array $expectedSubset): self
     {
@@ -314,7 +347,11 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< HEAD
      * @param  iterable<mixed>  $expectedValues
+=======
+     * @param iterable<mixed> $expectedValues
+>>>>>>> laraxot/dev
      */
     public function toBeIn(iterable $expectedValues): self
     {
@@ -328,7 +365,11 @@ final class PestExpectation
 
     public function toStartWith(string $prefix): self
     {
+<<<<<<< HEAD
         if ($prefix === '') {
+=======
+        if ('' === $prefix) {
+>>>>>>> laraxot/dev
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -341,7 +382,11 @@ final class PestExpectation
 
     public function toEndWith(string $suffix): self
     {
+<<<<<<< HEAD
         if ($suffix === '') {
+=======
+        if ('' === $suffix) {
+>>>>>>> laraxot/dev
             Assert::fail('Expected a non-empty suffix.');
         }
 

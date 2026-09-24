@@ -3,9 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 =======
+>>>>>>> laraxot/dev
+=======
+use Filament\Support\RawJs;
+use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
@@ -13,8 +18,12 @@ use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 =======
+>>>>>>> laraxot/dev
+=======
+use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 >>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -49,9 +58,13 @@ it('throws when fixType receives a non-array item', function (): void {
 
 it('returns recursive diff', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new DiffAssocRecursiveAction();
 =======
     $action = new DiffAssocRecursiveAction;
+>>>>>>> laraxot/dev
+=======
+    $action = new DiffAssocRecursiveAction();
 >>>>>>> laraxot/dev
     $left = ['items' => [
         ['id' => '1', 'name' => 'a'],
@@ -68,9 +81,13 @@ it('returns recursive diff', function (): void {
 
 it('covers all branches of range intersect', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new RangeIntersectAction();
 =======
     $action = new RangeIntersectAction;
+>>>>>>> laraxot/dev
+=======
+    $action = new RangeIntersectAction();
 >>>>>>> laraxot/dev
 
     Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
@@ -83,6 +100,9 @@ it('covers all branches of range intersect', function (): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 it('covers all branches of range intersect in Array namespace', function (): void {
     $action = new ArrayRangeIntersectAction();
 
@@ -96,8 +116,11 @@ it('covers all branches of range intersect in Array namespace', function (): voi
 });
 
 it('writes JSON and PHP arrays via Arr actions', function (): void {
+<<<<<<< HEAD
 =======
 it('writes JSON and PHP arrays', function (): void {
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
@@ -106,11 +129,16 @@ it('writes JSON and PHP arrays', function (): void {
     $phpFile = $tmpDir.'/data.php';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $jsonAction = new SaveJsonArrayAction();
     $phpAction = new SavePhpArrayAction();
 =======
     $jsonAction = new SaveJsonArrayAction;
     $phpAction = new SavePhpArrayAction;
+>>>>>>> laraxot/dev
+=======
+    $jsonAction = new SaveJsonArrayAction();
+    $phpAction = new SavePhpArrayAction();
 >>>>>>> laraxot/dev
 
     Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
@@ -126,9 +154,13 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
     mkdir($tmpDir, 0777, true);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $action = new SaveArrayAction();
 =======
     $action = new SaveArrayAction;
+>>>>>>> laraxot/dev
+=======
+    $action = new SaveArrayAction();
 >>>>>>> laraxot/dev
     $jsonFile = $tmpDir.'/one.json';
     $phpFile = $tmpDir.'/one.php';
@@ -140,9 +172,13 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
 it('throws on unsupported save format in SaveArrayAction', function (): void {
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $action = new SaveArrayAction();
 =======
         $action = new SaveArrayAction;
+>>>>>>> laraxot/dev
+=======
+        $action = new SaveArrayAction();
 >>>>>>> laraxot/dev
         $action->execute(['x' => 1], '/tmp/unused', 'xml');
         Assert::fail('Expected exception not thrown');
@@ -151,6 +187,9 @@ it('throws on unsupported save format in SaveArrayAction', function (): void {
     }
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 it('converts mixed PHP arrays to RawJs correctly', function (): void {
     $action = new ArrayToRawJsAction();
@@ -174,5 +213,8 @@ it('converts mixed PHP arrays to RawJs correctly', function (): void {
     Assert::assertStringContainsString('none: null', $js);
     Assert::assertStringContainsString('formatter: value => value * 2', $js);
 });
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

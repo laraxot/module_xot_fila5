@@ -6,11 +6,16 @@ namespace Modules\Xot\Tests\Unit\Fixtures;
 
 use Filament\Support\Contracts\TranslatableContentDriver;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 =======
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Concerns\InteractsWithTable;
+>>>>>>> laraxot/dev
+=======
+use Filament\Tables\Concerns\InteractsWithTable;
+use Filament\Tables\Contracts\HasTable;
 >>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -22,6 +27,9 @@ use Livewire\Component;
 final class XotTableConfigureLivewireHarness extends Component implements HasTable
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     use InteractsWithTable;
 
     public function render(): string
@@ -41,6 +49,7 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
     {
         return Model::query();
     }
+<<<<<<< HEAD
 =======
   use InteractsWithTable;
 
@@ -61,5 +70,7 @@ final class XotTableConfigureLivewireHarness extends Component implements HasTab
   {
     return Model::query();
   }
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 }

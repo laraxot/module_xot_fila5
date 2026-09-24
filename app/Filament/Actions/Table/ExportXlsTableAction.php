@@ -9,8 +9,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Actions\Table;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 =======
+>>>>>>> laraxot/dev
+=======
+use Exception;
 >>>>>>> laraxot/dev
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Builder;
@@ -32,9 +36,13 @@ class ExportXlsTableAction extends XotBaseAction
             ->icon('heroicon-o-arrow-down-tray')
             ->action(static function (RelationManager $livewire) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $livewireClass = $livewire::class;
 =======
                 $livewire_class = $livewire::class;
+>>>>>>> laraxot/dev
+=======
+                $livewireClass = $livewire::class;
 >>>>>>> laraxot/dev
                 $filterParts = array_map(
                     static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
@@ -46,11 +54,15 @@ class ExportXlsTableAction extends XotBaseAction
                     implode('-', $filterParts).
                     '.xlsx';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 $transKey = app(GetTransKeyAction::class)->execute($livewireClass);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
                 if ($query === null) {
                     throw new Exception('Query is null');
+<<<<<<< HEAD
 =======
                 $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
                 $transKey .= '.fields';
@@ -58,11 +70,14 @@ class ExportXlsTableAction extends XotBaseAction
                 if ($query === null) {
                     throw new \Exception('Query is null');
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 /** @var Builder<Model> $eloquentQuery */
                 $eloquentQuery = $query;
                 $rows = $eloquentQuery->get();
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $fields = self::resolveXlsFields($livewireClass, $livewire->tableFilters);
 =======
@@ -83,6 +98,9 @@ class ExportXlsTableAction extends XotBaseAction
                     }
                 }
 >>>>>>> laraxot/dev
+=======
+                $fields = self::resolveXlsFields($livewireClass, $livewire->tableFilters);
+>>>>>>> laraxot/dev
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
@@ -93,6 +111,9 @@ class ExportXlsTableAction extends XotBaseAction
         return 'export_xls';
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Chiave stringa = percorso data_get con intestazione esplicita
@@ -123,6 +144,9 @@ class ExportXlsTableAction extends XotBaseAction
 
         return $fields;
     }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 }

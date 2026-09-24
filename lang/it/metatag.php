@@ -13,10 +13,16 @@ return [
             'name' => 'Admin',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'label' => 'metatag.navigation',
         'icon' => 'metatag.navigation',
         'sort' => 95,
 =======
+>>>>>>> laraxot/dev
+=======
+        'label' => 'metatag.navigation',
+        'icon' => 'metatag.navigation',
+        'sort' => 95,
 >>>>>>> laraxot/dev
     ],
     'fields' => [
@@ -331,13 +337,19 @@ return [
             ],
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'save' => [
             'label' => 'save',
             'icon' => 'save',
             'tooltip' => 'save',
         ],
+<<<<<<< HEAD
 =======
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
     'label' => 'Metatag',

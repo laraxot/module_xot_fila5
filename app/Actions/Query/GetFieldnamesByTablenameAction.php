@@ -26,13 +26,17 @@ final class GetFieldnamesByTablenameAction
     public function execute(string $table, ?string $connectionName = null): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Validate table name
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         if (empty(trim($table))) {
             throw new \InvalidArgumentException('Table name cannot be empty.');
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         Assert::string($connectionName ??= config('database.default'));
 
@@ -42,19 +46,29 @@ final class GetFieldnamesByTablenameAction
 
         // Validate database connection
 >>>>>>> laraxot/dev
+=======
+        Assert::string($connectionName ??= config('database.default'));
+
+>>>>>>> laraxot/dev
         if (! $this->isValidConnection($connectionName)) {
             throw new \InvalidArgumentException(sprintf('Invalid database connection: %s', $connectionName));
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Check if table exists in the database
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         if (! Schema::connection($connectionName)->hasTable($table)) {
             throw new \InvalidArgumentException(sprintf('Table "%s" does not exist in connection "%s".', $table, $connectionName));
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         try {
             $columns = Schema::connection($connectionName)->getColumnListing($table);
 
@@ -66,6 +80,7 @@ final class GetFieldnamesByTablenameAction
                 },
                 $columns,
             ));
+<<<<<<< HEAD
 =======
         // Get and return column listing
         try {
@@ -75,16 +90,21 @@ final class GetFieldnamesByTablenameAction
             // $columns = array_map('strval', $columns);
             // return array_values(array_map(static fn ($value): string => is_string($value) ? $value : (string) $value, $columns));
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
         } catch (\Throwable $e) {
             throw new \InvalidArgumentException(sprintf('Error fetching columns from table "%s": %s', $table, $e->getMessage()));
         }
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * Check if a given database connection is valid.
      */
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     private function isValidConnection(string $connectionName): bool
     {

@@ -21,9 +21,13 @@ uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     \Mockery::close();
 =======
     Mockery::close();
+>>>>>>> laraxot/dev
+=======
+    \Mockery::close();
 >>>>>>> laraxot/dev
 });
 
@@ -61,6 +65,9 @@ describe('Xot migration deep branches', function (): void {
         // isUuidColumnType + backfill
         $isUuid = new ReflectionMethod($migration, 'isUuidColumnType');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $migration = new class extends XotBaseMigration {
             protected ?string $model_class = CacheModel::class;
 
@@ -71,6 +78,9 @@ describe('Xot migration deep branches', function (): void {
 
         // isUuidColumnType + backfill
         $isUuid = new \ReflectionMethod($migration, 'isUuidColumnType');
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
         $isUuid->setAccessible(true);

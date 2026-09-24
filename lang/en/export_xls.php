@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'label' => 'Export Xls',
     'plural_label' => 'Export Xls',
     'icon' => 'xot-files.xls',
@@ -12,11 +15,14 @@ return [
         'export_xls' => [
             'label' => 'Export Excel',
             'icon' => 'xot-files.xls',
+<<<<<<< HEAD
 =======
     'actions' => [
         'export_xls' => [
             'label' => 'Export Excel',
             'icon' => 'heroicon-o-arrow-down-tray',
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             'tooltip' => 'Export data in Excel format (.xlsx)',
             'placeholder' => 'Export to Excel',
@@ -39,12 +45,16 @@ return [
     ],
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'label' => 'Export Xls',
         'plural_label' => 'Export Xls',
         'group' => 'General',
         'icon' => 'xot-files.xls',
         'sort' => 100,
     ],
+<<<<<<< HEAD
 =======
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -54,6 +64,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     'fields' => [
     ],

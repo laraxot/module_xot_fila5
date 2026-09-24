@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 =======
@@ -12,6 +13,10 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
+>>>>>>> laraxot/dev
+=======
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
 >>>>>>> laraxot/dev
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
@@ -30,8 +35,11 @@ class LogResource extends XotBaseResource
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     public function getInfolistSchema(): array
     {
@@ -56,8 +64,12 @@ class LogResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
+>>>>>>> laraxot/dev
+=======
+    #[\Override]
 >>>>>>> laraxot/dev
     public static function getRelations(): array
     {
@@ -65,8 +77,12 @@ class LogResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
+>>>>>>> laraxot/dev
+=======
+    #[\Override]
 >>>>>>> laraxot/dev
     public static function getPages(): array
     {

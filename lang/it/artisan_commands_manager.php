@@ -7,12 +7,18 @@ return [
         'name' => 'Comandi Artisan',
         'plural' => 'Comandi Artisan',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'group' => [
             'name' => 'Sistema',
             'description' => 'Gestione dei comandi Artisan',
         ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Sistema', 'description' => 'Gestione dei comandi Artisan'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         'sort' => 28,
         'label' => 'Comandi Artisan',
@@ -24,6 +30,9 @@ return [
             'description' => 'Esegui e gestisci i comandi Artisan',
             'commands' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 'migrate' => [
                     'label' => 'Migrazione Database',
                     'description' => 'Esegue le migrazioni del database',
@@ -119,6 +128,7 @@ return [
             'icon' => 'cancel',
             'tooltip' => 'cancel',
         ],
+<<<<<<< HEAD
 =======
                 'migrate' => ['label' => 'Migrazione Database', 'description' => 'Esegue le migrazioni del database'],
                 'optimize' => ['label' => 'Ottimizzazione', 'description' => 'Ottimizza le prestazioni dell\'applicazione'],
@@ -138,12 +148,17 @@ return [
         'migrate' => ['label' => 'migrate', 'icon' => 'migrate', 'tooltip' => 'migrate'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     ],
     'title' => 'artisan commands manager',
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -162,10 +177,13 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
 ];

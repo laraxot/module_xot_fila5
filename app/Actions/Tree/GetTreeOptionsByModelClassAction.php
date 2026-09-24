@@ -20,10 +20,14 @@ class GetTreeOptionsByModelClassAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  class-string<HasRecursiveRelationshipsContract>  $class
 =======
      * @param class-string<HasRecursiveRelationshipsContract> $class
      *
+>>>>>>> laraxot/dev
+=======
+     * @param  class-string<HasRecursiveRelationshipsContract>  $class
 >>>>>>> laraxot/dev
      * @return array<int|string, string>
      */
@@ -31,9 +35,13 @@ class GetTreeOptionsByModelClassAction
     {
         /** @var HasRecursiveRelationshipsContract $model */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $model = new $class;
 =======
         $model = new $class();
+>>>>>>> laraxot/dev
+=======
+        $model = new $class;
 >>>>>>> laraxot/dev
 
         /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract> $collection */

@@ -24,13 +24,19 @@ interface ModelProfileContract extends ModelContract
      * Grant the given permission(s) to a role.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
      *
      *
+<<<<<<< HEAD
 =======
      * @param string|int|array<int, string|int|Permission>|Permission|Collection<int, Permission> $permissions
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return $this
      */
@@ -40,13 +46,19 @@ interface ModelProfileContract extends ModelContract
      * Assign the given role to the model.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
      *
      *
+<<<<<<< HEAD
 =======
      * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return $this
      */
@@ -57,8 +69,12 @@ interface ModelProfileContract extends ModelContract
      * Determine if the model has (one of) the given role(s).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
      */
@@ -73,8 +89,12 @@ interface ModelProfileContract extends ModelContract
      * Alias to hasRole() but without Guard controls
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
      */
@@ -92,13 +112,19 @@ interface ModelProfileContract extends ModelContract
      * Create a new Eloquent query builder for the model.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param Builder<Model> $query
      *
      *
+<<<<<<< HEAD
 =======
      * @param Builder<Model> $query
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return Builder<Model>
      */

@@ -8,8 +8,11 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Arr;
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Illuminate\Support\Collection as SupportCollection;
 use Maatwebsite\Excel\Concerns\Exportable;
@@ -23,13 +26,19 @@ use Webmozart\Assert\Assert;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * Excel chiama `map()` su ogni riga della collection: Model **o** array
  * (export da `collect([[...]])` / ratings_by_id path). WithMapping non e'
  * ristretto a Model.
  *
  * @implements WithMapping<mixed>
+<<<<<<< HEAD
 =======
  * @implements WithMapping<Model>
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  */
 class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, WithMapping
@@ -37,9 +46,13 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     use Exportable;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var SupportCollection<int|string, mixed>|EloquentCollection<int, Model> */
 =======
     /** @var SupportCollection<int, mixed>|EloquentCollection<int, Model> */
+>>>>>>> laraxot/dev
+=======
+    /** @var SupportCollection<int|string, mixed>|EloquentCollection<int, Model> */
 >>>>>>> laraxot/dev
     public SupportCollection|EloquentCollection $collection;
 
@@ -49,6 +62,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public ?string $transKey;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * Formato misto: chiave intera => percorso `data_get` (intestazione = percorso,
      * tradotto via `$transKey`); chiave stringa => percorso, valore => intestazione
@@ -61,6 +77,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     /**
      * @param SupportCollection<int|string, mixed>|EloquentCollection<int, Model> $collection
      * @param array<int|string, string>                                           $fields
+<<<<<<< HEAD
 =======
     /** @var array<int, string>|null */
     public ?array $fields = null;
@@ -68,6 +85,8 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     /**
      * @param  SupportCollection<int, mixed>|EloquentCollection<int, Model>  $collection
      * @param  array<int, string>  $fields
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
@@ -85,9 +104,13 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     {
         if (\is_array($this->fields) && ! empty($this->fields)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return array_values($this->fields);
 =======
             return $this->fields;
+>>>>>>> laraxot/dev
+=======
+            return array_values($this->fields);
 >>>>>>> laraxot/dev
         }
 
@@ -103,6 +126,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public function headings(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $fields = $this->fields;
         if (null === $fields || [] === $fields) {
             return app(TransArrayAction::class)->execute($this->getHead(), $this->transKey);
@@ -132,6 +158,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     /**
      * @return SupportCollection<int|string, mixed>|EloquentCollection<int, Model>
+<<<<<<< HEAD
 =======
         $headings = $this->getHead();
         $transKey = $this->transKey;
@@ -142,6 +169,8 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     /**
      * @return SupportCollection<int, mixed>|EloquentCollection<int, Model>
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
      */
     public function collection(): SupportCollection|EloquentCollection
     {
@@ -150,6 +179,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return list<string>
      */
     public function map(mixed $row): array
@@ -169,6 +201,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             $path = \is_string($key) ? $key : $value;
             Assert::string($path);
             $data[] = self::castCell(data_get($row, $path));
+<<<<<<< HEAD
 =======
      * @return array<int|string, mixed>
      */
@@ -202,11 +235,16 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             }
             $data[] = SafeStringCastAction::cast($value);
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
         }
 
         return $data;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Stessa cella per CollectionExport e XotBaseExporter (export_xls = export_xlsx).
@@ -227,6 +265,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
         return SafeStringCastAction::cast($value);
     }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 }

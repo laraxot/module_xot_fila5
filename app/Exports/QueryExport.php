@@ -35,11 +35,15 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
 
     /** @var QueryBuilder|EloquentBuilder<Model> */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public QueryBuilder|EloquentBuilder $query;
 
     /**
      * @param QueryBuilder|EloquentBuilder<Model> $query
      * @param array<int, int|string>              $fields
+<<<<<<< HEAD
 =======
     /** @var QueryBuilder|EloquentBuilder<Model> */
     public QueryBuilder|EloquentBuilder $query;
@@ -47,6 +51,8 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     /**
      * @param  QueryBuilder|EloquentBuilder<Model>  $query
      * @param  array<int, int|string>  $fields
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function __construct(QueryBuilder|EloquentBuilder $query, ?string $transKey = null, array $fields = [])
@@ -65,18 +71,26 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
             return collect(array_values($this->fields))
                 ->map(
 <<<<<<< HEAD
+<<<<<<< HEAD
                     static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
 =======
                     static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+>>>>>>> laraxot/dev
+=======
+                    static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
 >>>>>>> laraxot/dev
                 );
         }
 
         $first = $this->query->first();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $first) {
 =======
         if ($first === null) {
+>>>>>>> laraxot/dev
+=======
+        if (null === $first) {
 >>>>>>> laraxot/dev
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
@@ -88,9 +102,13 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         $result = collect(array_keys($this->normalizeRow($first)))
             ->map(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
 =======
                 static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+>>>>>>> laraxot/dev
+=======
+                static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
 >>>>>>> laraxot/dev
             );
 
@@ -152,9 +170,13 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
 
         return collect($this->fields)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->mapWithKeys(static function (int|string $field, int|string $_key) use ($rowArray): array {
 =======
             ->mapWithKeys(static function (mixed $field, int|string $_key) use ($rowArray): array {
+>>>>>>> laraxot/dev
+=======
+            ->mapWithKeys(static function (int|string $field, int|string $_key) use ($rowArray): array {
 >>>>>>> laraxot/dev
                 $keyString = \is_string($field) ? $field : (string) $field;
 
@@ -169,9 +191,13 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     private function normalizeRow(mixed $row): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $row) {
 =======
         if ($row === null) {
+>>>>>>> laraxot/dev
+=======
+        if (null === $row) {
 >>>>>>> laraxot/dev
             return [];
         }

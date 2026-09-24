@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
@@ -20,10 +23,14 @@ it('sets csrf token on mount', function (): void {
     App::instance('session', $session);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $class = new class {
 =======
     $class = new class
     {
+>>>>>>> laraxot/dev
+=======
+    $class = new class {
 >>>>>>> laraxot/dev
         public string $_token = '';
 
@@ -48,10 +55,14 @@ it('verifies csrf token', function (): void {
     $token = 'secret-token';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $class = new class {
 =======
     $class = new class
     {
+>>>>>>> laraxot/dev
+=======
+    $class = new class {
 >>>>>>> laraxot/dev
         public string $_token = '';
 

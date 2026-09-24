@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ---
 title: "Stato Avanzamento Risoluzione Conflitti Git"
@@ -11,6 +12,8 @@ qmd: "conflict resolution progress"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Stato Avanzamento Risoluzione Conflitti Git
 

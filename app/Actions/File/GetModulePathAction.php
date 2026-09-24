@@ -32,11 +32,15 @@ class GetModulePathAction
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             /** @var array<int, string> $files */
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
 
             $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
+<<<<<<< HEAD
 =======
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
@@ -47,14 +51,20 @@ class GetModulePathAction
                 }
 
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
                 return Str::lower($item) === $moduleNameLower;
             })->first();
 
             // Se non troviamo il modulo, restituiamo un percorso di fallback
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! is_string($foundModule)) {
 =======
             if ($foundModule === null || ! is_string($foundModule)) {
+>>>>>>> laraxot/dev
+=======
+            if (! is_string($foundModule)) {
 >>>>>>> laraxot/dev
                 return base_path('Modules/'.$moduleName);
             }

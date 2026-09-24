@@ -13,14 +13,20 @@ class SaveArrayAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $data
      *                                       =======
      * @param array<int|string, mixed> $data
      *                                       >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
      * @param array<int|string, mixed> $data
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      */
     public function execute(array $data, string $filename, string $format = 'php'): bool

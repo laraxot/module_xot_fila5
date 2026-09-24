@@ -16,6 +16,9 @@ class PlainTextFromFilamentValueAction
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * <<<<<<< HEAD.
      *
@@ -35,8 +38,11 @@ class PlainTextFromFilamentValueAction
      *                                                         >>>>>>> laraxot/dev
      */
     public function execute(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
+<<<<<<< HEAD
 =======
     public function execute(mixed $value, mixed $fallback = ''): string
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     {
         if ($value instanceof Htmlable) {
@@ -63,6 +69,9 @@ class PlainTextFromFilamentValueAction
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * <<<<<<< HEAD.
      *
@@ -82,8 +91,11 @@ class PlainTextFromFilamentValueAction
      *                                                         >>>>>>> laraxot/dev
      */
     public static function cast(mixed $value, string|int|float|bool|\Stringable|null $fallback = ''): string
+<<<<<<< HEAD
 =======
     public static function cast(mixed $value, mixed $fallback = ''): string
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     {
         return app(self::class)->execute($value, $fallback);

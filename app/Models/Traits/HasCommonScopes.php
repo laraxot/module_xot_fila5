@@ -93,9 +93,13 @@ trait HasCommonScopes
      * @return Builder<static>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
 =======
     public function scopeCreatedAfter(Builder $query, mixed $date): Builder
+>>>>>>> laraxot/dev
+=======
+    public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
 >>>>>>> laraxot/dev
     {
         return $query->where('created_at', '>=', $date);
@@ -108,9 +112,13 @@ trait HasCommonScopes
      * @return Builder<static>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
 =======
     public function scopeCreatedBefore(Builder $query, mixed $date): Builder
+>>>>>>> laraxot/dev
+=======
+    public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
 >>>>>>> laraxot/dev
     {
         return $query->where('created_at', '<=', $date);
@@ -123,9 +131,13 @@ trait HasCommonScopes
      * @return Builder<static>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
 =======
     public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
+>>>>>>> laraxot/dev
+=======
+    public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
 >>>>>>> laraxot/dev
     {
         return $query->where('updated_at', '>=', $date);

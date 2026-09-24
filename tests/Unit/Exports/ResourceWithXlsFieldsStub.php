@@ -11,7 +11,14 @@ namespace Modules\Xot\Tests\Unit\Exports;
 class ResourceWithXlsFieldsStub
 {
     /**
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $data
+=======
+     *
+     * @param array<array-key, mixed> $data
+     *
+     *
+>>>>>>> laraxot/dev
      * @return array<int|string, string>
      */
     public static function getXlsFields(array $data): array

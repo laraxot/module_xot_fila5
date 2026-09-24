@@ -5,9 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // use Symfony\Component\Console\Output\BufferedOutput;
 
 =======
+>>>>>>> laraxot/dev
+=======
+// use Symfony\Component\Console\Output\BufferedOutput;
+
 >>>>>>> laraxot/dev
 class Clock extends XotBaseWidget
 {

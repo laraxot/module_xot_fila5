@@ -5,14 +5,21 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 =======
+>>>>>>> laraxot/dev
+=======
+use Filament\Forms\Components\Select;
 >>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Arr;
@@ -21,10 +28,13 @@ use Modules\Xot\Datas\EnvData;
 /**
  * @property Schema $form
  */
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 class EnvWidget extends XotBaseSchemaWidget
 {
@@ -38,6 +48,9 @@ class EnvWidget extends XotBaseSchemaWidget
     protected string $view = 'xot::filament.widgets.env';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * Raggruppamento visivo dei campi per Section, stile Laravel — un
      * campo non elencato qui compare comunque (fuori da qualunque Section,
@@ -52,6 +65,9 @@ class EnvWidget extends XotBaseSchemaWidget
         'Mail' => ['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password', 'mail_from_address', 'mail_from_name'],
     ];
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     public function mount(): void
@@ -64,11 +80,17 @@ class EnvWidget extends XotBaseSchemaWidget
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema())->columns(1)->statePath('data');
     }
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     public function submit(): void
@@ -96,6 +118,9 @@ class EnvWidget extends XotBaseSchemaWidget
     public function getFormSchema(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         // Nessun ->label()/->placeholder()/->helperText() qui: Modules\Lang
         // (LangServiceProvider::registerFilamentLabel(), Field::configureUsing())
         // li risolve automaticamente da Modules/Xot/lang/{locale}/env.php,
@@ -169,6 +194,7 @@ class EnvWidget extends XotBaseSchemaWidget
                 $components[] = $field;
             }
         }
+<<<<<<< HEAD
 =======
         $all = [
             'app_url' => TextInput::make('app_url')
@@ -189,6 +215,8 @@ class EnvWidget extends XotBaseSchemaWidget
 
         /** @var array<Component> $components */
         $components = array_values($selected);
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
         return $components;

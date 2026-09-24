@@ -15,8 +15,11 @@ class SafeStringCastAction
     /**
      * Converte in modo sicuro un valore mixed in string.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * impostare delle eccezzioni ?
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      *
      * @param mixed $value Il valore da convertire
@@ -29,12 +32,15 @@ class SafeStringCastAction
             return $value;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         /*
          * if ($value instanceof \BackedEnum) {
          * return $value->value;
          * }
          */
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
         if (is_null($value)) {

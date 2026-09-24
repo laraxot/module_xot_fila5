@@ -3,8 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\XotBaseResource;
 =======
+>>>>>>> laraxot/dev
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
 >>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -53,15 +57,21 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
 
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             /** @var class-string<XotBaseResource> $resourceClass */
             $resourceClass = $page::getResource();
             $resourceClass::getTableClass();
         } catch (Throwable $e) {
+<<<<<<< HEAD
 =======
             /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $resourceClass */
             $resourceClass = $page::getResource();
             $resourceClass::getTableClass();
         } catch (\Throwable $e) {
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             $senzaTable[] = $page.' — '.$e->getMessage();
         }

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'label' => 'Esporta Excel',
     'plural_label' => 'Esporta Excel',
     'icon' => 'xot-files.xls',
@@ -13,12 +16,15 @@ return [
             'label' => 'Esporta Excel',
             'icon' => 'xot-files.xls',
             'tooltip' => 'Esporta i dati in formato Excel (.xlsx)',
+<<<<<<< HEAD
 =======
     'actions' => [
         'export_xls' => [
             'label' => 'Esporta Excel',
             'icon' => 'heroicon-o-arrow-down-tray',
             'tooltip' => 'Esporta i dati in formato Excel (.xlsx]',
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             'placeholder' => 'Esporta in Excel',
             'help' => 'Scarica i dati correnti in formato Excel per analisi offline',
@@ -39,12 +45,17 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Export Xls',
 =======
     'label' => 'Export Xls',
     'plural_label' => 'Export Xls (Plurale)',
     'navigation' => [
+>>>>>>> laraxot/dev
+=======
+    'navigation' => [
+        'label' => 'Export Xls',
 >>>>>>> laraxot/dev
         'name' => 'Export Xls',
         'plural' => 'Export Xls',
@@ -53,12 +64,17 @@ return [
             'description' => 'General Settings',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'sort' => 1,
         'icon' => 'xot-files.xls',
 =======
         'label' => 'Export Xls',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
+=======
+        'sort' => 1,
+        'icon' => 'xot-files.xls',
 >>>>>>> laraxot/dev
     ],
     'fields' => [

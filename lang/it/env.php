@@ -7,6 +7,9 @@ return [
         'name' => 'Env',
         'plural' => 'Env',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'group' => [
             'name' => 'Admin',
         ],
@@ -27,6 +30,7 @@ return [
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Admin'],
         'label' => 'env.navigation',
@@ -38,12 +42,17 @@ return [
             'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
             'notifications' => ['check_results' => 'Check results from'],
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'label' => 'Env',
     'plural_label' => 'Env (Plurale)',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -178,6 +187,7 @@ return [
             'heading' => 'Mail',
         ],
     ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -194,5 +204,7 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'title' => 'env',
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ];

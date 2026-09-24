@@ -10,10 +10,16 @@ return [
             'name' => 'Admin',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'label' => 'extra.navigation',
         'icon' => 'extra.navigation',
         'sort' => 38,
 =======
+>>>>>>> laraxot/dev
+=======
+        'label' => 'extra.navigation',
+        'icon' => 'extra.navigation',
+        'sort' => 38,
 >>>>>>> laraxot/dev
     ],
     'pages' => [
@@ -35,6 +41,9 @@ return [
     'plural_label' => 'Extra (Plurale)',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -42,8 +51,11 @@ return [
             'description' => '',
             'placeholder' => 'id',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => '', 'placeholder' => 'id'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         'created_at' => [
             'label' => 'Data Creazione',
@@ -58,6 +70,9 @@ return [
             'description' => '',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'model_type' => [
             'label' => 'model_type',
         ],
@@ -112,6 +127,7 @@ return [
             'icon' => 'save',
             'tooltip' => 'save',
         ],
+<<<<<<< HEAD
 =======
         'model_type' => ['label' => 'model_type'],
         'model_id' => ['label' => 'model_id'],
@@ -126,6 +142,8 @@ return [
         'delete' => ['label' => 'Elimina Extra', 'icon' => 'delete', 'tooltip' => 'delete'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
 ];

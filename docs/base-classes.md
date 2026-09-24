@@ -14,9 +14,13 @@ namespace Modules\Xot\Filament\Resources;
 class XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
     public static function getListTableColumns(): array;
 }
@@ -106,6 +110,10 @@ class XotBaseEditRecord
 
 ## Collegamenti Bidirezionali
 - [README](README.md)
+<<<<<<< HEAD
+=======
+- [README](readme.md)
+>>>>>>> laraxot/dev
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 
@@ -293,9 +301,18 @@ class PolizzaConvenzioneController extends XotBaseController
 ## Collegamenti tra versioni di base-classes.md
 * [base-classes.md](../../../Xot/docs/base-classes.md)
 * [base-classes.md](../../../Xot/docs/roadmap/base-classes.md)
+<<<<<<< HEAD
+=======
+* [base-classes.md](../../../xot/docs/base-classes.md)
+* [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
+>>>>>>> laraxot/dev
 
 ### Versione Incoming
 
    - Documentare le modifiche significative
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

@@ -5,9 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Export;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // use Modules\Xot\Services\ArrayService;
 
 =======
+>>>>>>> laraxot/dev
+=======
+// use Modules\Xot\Services\ArrayService;
+
 >>>>>>> laraxot/dev
 use Illuminate\View\View;
 use Spatie\QueueableAction\QueueableAction;

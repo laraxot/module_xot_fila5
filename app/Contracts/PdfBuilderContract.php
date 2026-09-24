@@ -14,8 +14,12 @@ interface PdfBuilderContract
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param \Closure(object): void $callback
      */

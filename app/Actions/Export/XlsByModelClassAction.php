@@ -69,9 +69,13 @@ class XlsByModelClassAction
 
         if ($excludes !== []) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $rows = $rows->map(function (Model|array $item) use ($excludes): Model|array {
 =======
             $rows = $rows->map(function (mixed $item) use ($excludes) {
+>>>>>>> laraxot/dev
+=======
+            $rows = $rows->map(function (Model|array $item) use ($excludes): Model|array {
 >>>>>>> laraxot/dev
                 if ($item instanceof Model) {
                     return $item->makeHidden($excludes);
@@ -84,22 +88,30 @@ class XlsByModelClassAction
         // Applichiamo il callback se fornito
         if ($callback !== null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var \Closure(Model|array<array-key, mixed>, int): mixed $mapCallback */
             $mapCallback = static function (Model|array $item, int $key) use ($callback): mixed {
 =======
             /** @var \Closure(mixed, int): mixed $mapCallback */
             $mapCallback = static function (mixed $item, int $key) use ($callback): mixed {
 >>>>>>> laraxot/dev
+=======
+            /** @var \Closure(Model|array<array-key, mixed>, int): mixed $mapCallback */
+            $mapCallback = static function (Model|array $item, int $key) use ($callback): mixed {
+>>>>>>> laraxot/dev
                 if ($item instanceof Model) {
                     return $callback($item, $key);
                 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 if (! is_array($item)) {
                     return $item;
                 }
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
                 /** @var array<string, mixed> $data */
                 $data = [];
@@ -117,9 +129,13 @@ class XlsByModelClassAction
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var Collection<int|string, mixed> $exportRows */
 =======
         /** @var Collection<int, mixed> $exportRows */
+>>>>>>> laraxot/dev
+=======
+        /** @var Collection<int|string, mixed> $exportRows */
 >>>>>>> laraxot/dev
         $exportRows = $rows;
         $collectionExport = new CollectionExport($exportRows, $transKey);
