@@ -13,8 +13,8 @@ use Spatie\ModelStatus\Status;
 /**
  * Modules\Xot\Contracts\ModelWithStatusContract.
  *
-<<<<<<< .merge_file_Ak1OQV
-=======
+ * <<<<<<< .merge_file_Ak1OQV
+ * =======
  * <<<<<<< HEAD
  * <<<<<<< .merge_file_XXsVLF
  *
@@ -32,7 +32,7 @@ use Spatie\ModelStatus\Status;
  * @property string                  $status
  *                                                   =======
  *                                                   <<<<<<< .merge_file_RCHBHS
->>>>>>> .merge_file_WmDkAR
+ *                                                   >>>>>>> .merge_file_WmDkAR
  * @property int                     $id
  * @property int|null                $user_id
  * @property string|null             $post_type
@@ -45,8 +45,8 @@ use Spatie\ModelStatus\Status;
  * @property string                  $tennant_name
  * @property UserContract|null       $user
  * @property string                  $status
-<<<<<<< .merge_file_Ak1OQV
-=======
+ *                                                   <<<<<<< .merge_file_Ak1OQV
+ *                                                   =======
  *                                                   =======
  *                                                   <<<<<<< HEAD
  * @property int                     $id
@@ -75,7 +75,7 @@ use Spatie\ModelStatus\Status;
  * @property UserContract|null       $user
  * @property string                  $status
  *                                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_WmDkAR
+ *                                                   >>>>>>> .merge_file_WmDkAR
  * @property Collection<int, Status> $statuses
  * @property int|null                $statuses_count
  *
@@ -97,9 +97,9 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                         treeLabel()
  * @method array<string, mixed>                         treeSons()
  * @method array<string, mixed>                         toArray()
+ *
  * @property Collection<int, Status> $statuses
  * @property int|null                $statuses_count
- *
  *
  * @method int|string|null                                                 getKey()
  * @method string                                                          getRouteKey()
@@ -117,8 +117,8 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
-<<<<<<< .merge_file_Ak1OQV
-=======
+ *                                                                                           <<<<<<< .merge_file_Ak1OQV
+ *                                                                                           =======
  *                                                                                           =======
  *                                                                                           <<<<<<< .merge_file_RCHBHS
  * @method int|string|null                                                 getKey()
@@ -175,7 +175,7 @@ use Spatie\ModelStatus\Status;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
  *                                                                                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
->>>>>>> .merge_file_WmDkAR
+ *                                                                                           >>>>>>> .merge_file_WmDkAR
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model

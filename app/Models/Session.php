@@ -12,7 +12,6 @@ use Modules\Xot\Database\Factories\SessionFactory;
 /**
  * Modules\Xot\Models\Session.
  *
- *
  * @property string               $id
  * @property string|null          $user_id
  * @property string|null          $ip_address
@@ -28,7 +27,7 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
- * @method static SessionFactory factory($count = null, $state = [])
+ * @method static SessionFactory          factory($count = null, $state = [])
  * @method static Builder<static>|Session newModelQuery()
  * @method static Builder<static>|Session newQuery()
  * @method static Builder<static>|Session query()
