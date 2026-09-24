@@ -121,6 +121,7 @@ class ModulesOverviewWidget extends XotBaseWidget
     /**
      * Ottiene la descrizione per un modulo.
      *
+<<<<<<< .merge_file_eJw1DO
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -133,6 +134,9 @@ class ModulesOverviewWidget extends XotBaseWidget
      * @param string $module Nome del modulo
 >>>>>>> 3792da0d (Check & fix styling)
      *
+=======
+     * @param  string  $module  Nome del modulo
+>>>>>>> .merge_file_BMl82l
      * @return string Descrizione del modulo
      */
     private function getModuleDescription(string $module): string

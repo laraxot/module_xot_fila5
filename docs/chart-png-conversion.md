@@ -694,6 +694,7 @@ private function validateSvg(string $svg): bool
 ---
 
 **Last Updated:** 2025-12-09
+<<<<<<< .merge_file_enrKCM
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Version:** 1.0.0
@@ -717,3 +718,8 @@ private function validateSvg(string $svg): bool
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, GD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Version:** 1.0.0
+**PHPStan Level:** 10 ✅
+**Dependencies:** Imagick, GD
+>>>>>>> .merge_file_Ejj6Hp

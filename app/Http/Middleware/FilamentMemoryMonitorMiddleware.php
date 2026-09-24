@@ -21,6 +21,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Handle an incoming request.
      *
+<<<<<<< .merge_file_HTW4FW
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -31,6 +32,9 @@ class FilamentMemoryMonitorMiddleware
 =======
      * @param \Closure(Request):Response $next
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  \Closure(Request):Response  $next
+>>>>>>> .merge_file_NwYH1p
      */
     public function handle(Request $request, \Closure $next): Response
     {
@@ -126,6 +130,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Logga l'uso della memoria.
      *
+<<<<<<< .merge_file_HTW4FW
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -136,6 +141,9 @@ class FilamentMemoryMonitorMiddleware
 =======
      * @param array<string, mixed> $metrics
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
+>>>>>>> .merge_file_NwYH1p
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
@@ -177,6 +185,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Determina il livello di log basato sulle metriche.
      *
+<<<<<<< .merge_file_HTW4FW
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -187,6 +196,9 @@ class FilamentMemoryMonitorMiddleware
 =======
      * @param array<string, mixed> $metrics
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
+>>>>>>> .merge_file_NwYH1p
      */
     private function determineLogLevel(array $metrics): string
     {

@@ -508,15 +508,19 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 
 **Version**: 1.0
 **Last Updated**: December 23, 2025
+<<<<<<< .merge_file_tnajgc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_aQ36wP
 **Module**: Xot (Core Engine)
 **Maintainer**: Laraxot Team
 
 *This guide is part of the Laraxot PTVX Framework documentation standard.*
+<<<<<<< .merge_file_tnajgc
 <<<<<<< HEAD
 =======
 =======
@@ -533,3 +537,5 @@ grep -r "XotBase" .cursor/rules/ .windsurf/rules/ CLAUDE.md
 =======
 *This guide is part of the Laraxot PTVX Framework documentation standard.*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_aQ36wP

@@ -42,6 +42,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
+<<<<<<< .merge_file_NGfLdU
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 <<<<<<< HEAD
@@ -66,6 +67,9 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+=======
+    public function getFormSchema(): array { /* ... */ }
+>>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -170,6 +174,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_NGfLdU
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -194,6 +199,9 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -362,6 +370,7 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_NGfLdU
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -386,6 +395,9 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -460,6 +472,7 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_NGfLdU
 <<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
@@ -484,6 +497,9 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_9nmDCT
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_C8IkbP
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

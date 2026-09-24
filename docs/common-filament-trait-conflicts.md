@@ -8,6 +8,7 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Filament**: 4.x
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
+<<<<<<< .merge_file_BpXcR4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -19,6 +20,8 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AMhkCf
 
 ## 🎯 Obiettivo
 
@@ -538,6 +541,7 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Filament**: 4.x
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
+<<<<<<< .merge_file_BpXcR4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -549,6 +553,8 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 =======
 **Data Creazione**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AMhkCf
 
 ## 🎯 Obiettivo
 
@@ -925,6 +931,7 @@ foreach ($properties as $property) {
 
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
+<<<<<<< .merge_file_BpXcR4
 <<<<<<< HEAD
 <<<<<<< HEAD
 **File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
@@ -938,6 +945,9 @@ foreach ($properties as $property) {
 =======
 **File**: `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> .merge_file_AMhkCf
 
 ---
 
@@ -1069,6 +1079,7 @@ class MyPage extends XotBaseViewRecord
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
+<<<<<<< .merge_file_BpXcR4
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
@@ -1082,3 +1093,6 @@ class MyPage extends XotBaseViewRecord
 =======
 - `/Modules/healthcare_app/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> .merge_file_AMhkCf

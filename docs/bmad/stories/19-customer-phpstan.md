@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_eMeXTp
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FDLut1
 # BMAD Story 19 — Customer: 8 errori PHPStan
 
 **Modulo:** `Customer`

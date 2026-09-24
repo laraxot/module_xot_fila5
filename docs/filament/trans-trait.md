@@ -45,6 +45,7 @@ class MyResource
 
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
+<<<<<<< .merge_file_gRaQ6z
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Translation Guidelines](translations-best-practices.md)
@@ -62,5 +63,9 @@ class MyResource
 - [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Translation Guidelines](translations-best-practices.md)
+- [PHPStan Level 9 Guide](phpstan-level9-guide.md)
+>>>>>>> .merge_file_n3tgCw
 - [Translation Guidelines](../translations-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)

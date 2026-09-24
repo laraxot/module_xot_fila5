@@ -12,6 +12,7 @@ use Modules\Xot\Database\Factories\SessionFactory;
 /**
  * Modules\Xot\Models\Session.
  *
+<<<<<<< .merge_file_IKEtJU
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
@@ -27,10 +28,25 @@ use Modules\Xot\Database\Factories\SessionFactory;
  * @property string|null          $created_by
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
+=======
+ * @property string $id
+ * @property string|null $user_id
+ * @property string|null $ip_address
+ * @property string|null $user_agent
+ * @property string $payload
+ * @property int $last_activity
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+>>>>>>> .merge_file_pCpx6A
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static SessionFactory factory($count = null, $state = [])
+<<<<<<< .merge_file_IKEtJU
  *                                                                   =======
  *
 =======
@@ -55,6 +71,8 @@ use Modules\Xot\Database\Factories\SessionFactory;
  *                                                                            >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_pCpx6A
  * @method static Builder<static>|Session newModelQuery()
  * @method static Builder<static>|Session newQuery()
  * @method static Builder<static>|Session query()

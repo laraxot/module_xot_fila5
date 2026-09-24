@@ -81,6 +81,7 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_pCI9Mk
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -105,6 +106,9 @@ class MediaConvertResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_GdZKOa
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_NTxiY6
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -179,8 +183,8 @@ class MediaConvertResource extends XotBaseResource
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
 - [Documentazione modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
-<<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
+<<<<<<< .merge_file_pCI9Mk
 =======
 <<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
@@ -212,3 +216,5 @@ class MediaConvertResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NTxiY6

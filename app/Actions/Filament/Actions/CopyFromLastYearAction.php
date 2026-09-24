@@ -37,6 +37,7 @@ class CopyFromLastYearAction extends XotBaseAction
     }
 
     /**
+<<<<<<< .merge_file_0FPfhO
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $input
@@ -48,6 +49,9 @@ class CopyFromLastYearAction extends XotBaseAction
      * @param array<string|int, mixed> $input
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<array-key, mixed>  $input
+>>>>>>> .merge_file_ixnhPj
      * @return array<string, mixed>
      */
     private static function normalizeStringKeyArray(array $input): array
@@ -67,6 +71,7 @@ class CopyFromLastYearAction extends XotBaseAction
     }
 
     /**
+<<<<<<< .merge_file_0FPfhO
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
@@ -79,6 +84,10 @@ class CopyFromLastYearAction extends XotBaseAction
      * @param array<string, mixed> $arguments
      * @param array<string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $arguments
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_ixnhPj
      */
     public function execute(array $arguments, array $data): void
     {
@@ -90,6 +99,7 @@ class CopyFromLastYearAction extends XotBaseAction
             return;
         }
 
+<<<<<<< .merge_file_0FPfhO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! is_string($year) && $year !== null) {
@@ -99,6 +109,9 @@ class CopyFromLastYearAction extends XotBaseAction
 =======
         if (! is_string($year) && null !== $year) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (! is_string($year) && $year !== null) {
+>>>>>>> .merge_file_ixnhPj
             return;
         }
 

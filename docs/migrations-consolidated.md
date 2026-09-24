@@ -499,6 +499,7 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **🔗 Vedi anche**: [database-guidelines.md](database-guidelines.md) | [best-practices.md](best-practices.md)
 
 **Aggiornato**: 2025-08-07
+<<<<<<< .merge_file_m2rWiZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Categoria**: database
@@ -518,3 +519,7 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **Categoria**: database
 **Priorità**: CRITICA
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Categoria**: database
+**Priorità**: CRITICA
+>>>>>>> .merge_file_k9H3FK

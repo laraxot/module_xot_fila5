@@ -39,6 +39,7 @@ This document provides Xot-specific MCP usage guidelines only.
 - **Example**: Evaluating new base class patterns
 
 ### supermemory
+<<<<<<< .merge_file_ZriMxE
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Container Tag**: `ptv`
@@ -52,6 +53,9 @@ This document provides Xot-specific MCP usage guidelines only.
 =======
 - **Container Tag**: `fixcity`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Container Tag**: `ptv`
+>>>>>>> .merge_file_uFFnSQ
 - **Use**: Store Xot architectural decisions, evolution history
 - **Example**: Store reasoning behind XotBaseModel design
 

@@ -585,6 +585,7 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **90-100%**: Altamente raccomandato
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
+<<<<<<< .merge_file_JpA9qU
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
@@ -598,3 +599,6 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 =======
 - **< 50%**: Richiede analisi dettagliata
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **< 50%**: Richiede analisi dettagliata
+>>>>>>> .merge_file_EQ4VYT

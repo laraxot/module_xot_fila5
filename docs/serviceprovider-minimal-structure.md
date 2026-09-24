@@ -1,6 +1,7 @@
 # ServiceProvider Minimal Structure - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10
+<<<<<<< .merge_file_xAVECk
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_39R7u3
 **Principio**: DRY + KISS - Struttura minima necessaria, niente di più
 
 ## 🚨 Regola Fondamentale
@@ -303,6 +306,7 @@ Prima di creare un ServiceProvider:
 
 ---
 
+<<<<<<< .merge_file_xAVECk
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
@@ -316,3 +320,6 @@ Prima di creare un ServiceProvider:
 =======
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
+>>>>>>> .merge_file_39R7u3

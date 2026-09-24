@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_aMD5IC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9KbAyR
 # Xot - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -52,17 +55,20 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Xot**, che nel proge
 - focus: qualita', osservabilita', performance e governance
 - target completamento: 95%+
 
+<<<<<<< .merge_file_aMD5IC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9KbAyR
 ### M4 - Eccellenza Web 2026
 - focus: Immersività, Accessibilità WCAG 2.2, Kinetisches Design e Micro-interazioni.
 - target completamento: 100% (Best-in-Class)
-- Riferimento: `docs/project/WEBSITE_QUALITY_CHECKLIST_2026.md`
 
+<<<<<<< .merge_file_aMD5IC
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -92,11 +98,14 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Xot**, che nel proge
 =======
 >>>>>>> 64619e34 (.)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9KbAyR
 ## Dipendenze
 
 - [PRD](prd.md)
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
+<<<<<<< .merge_file_aMD5IC
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
@@ -219,3 +228,5 @@ To provide a **flexible extension framework** that enables rapid development, cu
 =======
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9KbAyR

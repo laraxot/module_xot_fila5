@@ -26,15 +26,19 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_JTRynX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AJCL1k
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_JTRynX
 <<<<<<< HEAD
 =======
 =======
@@ -44,6 +48,8 @@ abstract public static function getFormSchema(): array;
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AJCL1k
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -78,15 +84,19 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_JTRynX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AJCL1k
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_JTRynX
 <<<<<<< HEAD
 =======
 =======
@@ -96,6 +106,8 @@ class NotificationResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AJCL1k
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -112,11 +124,14 @@ class NotificationResource extends XotBaseResource
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
+<<<<<<< .merge_file_JTRynX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AJCL1k
 - [Architettura Filament](../../../docs/architecture/filament.md)
 - [Gestione Risorse](../../../docs/architecture/resources.md)
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
@@ -124,6 +139,7 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)
 - [User Resource](../../User/docs/filament-resources.md)
+<<<<<<< .merge_file_JTRynX
 <<<<<<< HEAD
 =======
 =======
@@ -143,6 +159,8 @@ class NotificationResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AJCL1k
 
 ## Note Importanti
 
@@ -150,6 +168,7 @@ class NotificationResource extends XotBaseResource
 2. Implementare sempre i metodi astratti richiesti
 3. Utilizzare i file di traduzione per le label
 4. Evitare override non necessari di metodi
+<<<<<<< .merge_file_JTRynX
 <<<<<<< HEAD
 <<<<<<< HEAD
 5. Seguire le convenzioni di Filament
@@ -163,3 +182,6 @@ class NotificationResource extends XotBaseResource
 =======
 5. Seguire le convenzioni di Filament
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+5. Seguire le convenzioni di Filament
+>>>>>>> .merge_file_AJCL1k

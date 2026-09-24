@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_h5c0mG
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila4_mono
@@ -11,6 +12,10 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+# Configurazione MCP per base_ptvx_fila4_mono
+
+>>>>>>> .merge_file_kQ9HyZ
 **Data Creazione**: 2026-01-12  
 **Ultimo Aggiornamento**: 2026-01-12  
 **Status**: ✅ Configurazione Completa e Ottimizzata
@@ -28,6 +33,7 @@ Questo documento descrive la configurazione MCP ottimizzata per il progetto **ba
 ### Configurazione Completa
 
 File: `laravel/.mcp.json`
+<<<<<<< .merge_file_h5c0mG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -53,16 +59,21 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kQ9HyZ
 
 ```json
 {
     "mcpServers": {
         "laravel-boost": {
+<<<<<<< .merge_file_h5c0mG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kQ9HyZ
             "command": "php",
             "args": [
                 "./artisan",
@@ -129,6 +140,7 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
                 "--repository",
                 "/var/www/_bases/base_ptvx_fila4_mono"
             ]
+<<<<<<< .merge_file_h5c0mG
 <<<<<<< HEAD
 =======
 =======
@@ -154,6 +166,13 @@ E' il file condiviso dal progetto Laravel e contiene la configurazione applicati
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+        }
+    }
+}
+```
+
+>>>>>>> .merge_file_kQ9HyZ
 ---
 
 ## 📋 Descrizione Server
@@ -226,6 +245,7 @@ Se alcuni file risultano bloccati o non accessibili con tool standard:
 ---
 
 **Filosofia**: MCP come strumento per superare limitazioni e migliorare produttività nello sviluppo Laraxot.
+<<<<<<< .merge_file_h5c0mG
 <<<<<<< HEAD
 =======
 =======
@@ -284,3 +304,5 @@ Nel workspace `ptvx` risultano verificati:
 =======
 **Filosofia**: un solo comando reale, una sola configurazione coerente, nessun path morto.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kQ9HyZ

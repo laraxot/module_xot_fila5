@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_h2xjXk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-sta
 =======
 >>>>>>> .merge_file_1LRUdu
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_c63Mdn
 ---
 title: 'To integrate — risorse esterne'
 module: Xot
@@ -41,6 +44,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15>
+<<<<<<< .merge_file_h2xjXk
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_It6J0y
@@ -60,3 +64,5 @@ https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-sta
 =======
 https://medium.com/@keljtanoski/modular-laravel-personal-boilerplate-project-starter-eedde8cb3d15
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_c63Mdn

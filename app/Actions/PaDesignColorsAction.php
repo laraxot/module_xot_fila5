@@ -19,6 +19,7 @@ final class PaDesignColorsAction
 {
     use QueueableAction;
 
+<<<<<<< .merge_file_wG9Y73
 <<<<<<< HEAD
 <<<<<<< HEAD
     public const string PRIMARY_HEX = '#007A52';
@@ -46,6 +47,11 @@ final class PaDesignColorsAction
 
     public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public const string PRIMARY_HEX = '#007A52';
+
+    public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
+>>>>>>> .merge_file_fxYeMA
 
     /**
      * @return array{primary: string, institutional_blue: string, danger: string, gray: string, info: string, success: string, warning: string}

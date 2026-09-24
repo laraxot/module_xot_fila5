@@ -45,6 +45,7 @@ Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensio
 
 Per dettagli implementativi e best practice vedi:
 - [Geo/docs/geo-json-model.md](../../Geo/docs/geo-json-model.md)
+<<<<<<< .merge_file_WXBKrN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -56,6 +57,8 @@ Per dettagli implementativi e best practice vedi:
 =======
 - [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_sg9vzS
 - [<nome progetto>/docs/geo-integration.md](../../<nome progetto>/docs/geo-integration.md)
 - [Questa stessa doc (Xot/module-structure.md)](module-structure.md)
 
@@ -84,15 +87,19 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< .merge_file_WXBKrN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_sg9vzS
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
 - [Namespace Rules](namespace-rules.md) - Regole per i namespace
+<<<<<<< .merge_file_WXBKrN
 <<<<<<< HEAD
 =======
 =======
@@ -117,6 +124,8 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_sg9vzS
 
 ### Moduli Collegati
 - [UI](../UI/project_docs/README.md) - Componenti di interfaccia
@@ -280,6 +289,7 @@ User/
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< .merge_file_WXBKrN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -357,6 +367,8 @@ User/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_sg9vzS
 - [Componenti Volt](../UI/project_docs/components/volt.md)
 - [Layout](../UI/project_docs/layouts.md)
 - [Temi](../UI/project_docs/themes.md)
@@ -564,6 +576,7 @@ Se trovi una directory con case errato:
 6. Committa le modifiche
 
 ## Collegamenti tra versioni di module_structure.md
+<<<<<<< .merge_file_WXBKrN
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
@@ -577,3 +590,6 @@ Se trovi una directory con case errato:
 =======
 * [module_structure.md](../../../../../docs/project/error_analysis/module_structure.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+* [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
+>>>>>>> .merge_file_sg9vzS

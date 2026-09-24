@@ -76,11 +76,14 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
+<<<<<<< .merge_file_yOTid6
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_zhxoaN
 * [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
@@ -90,6 +93,7 @@ class Foo extends bar
 ### Versione Incoming
 
 ---
+<<<<<<< .merge_file_yOTid6
 <<<<<<< HEAD
 =======
 =======
@@ -110,3 +114,5 @@ class Foo extends bar
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zhxoaN

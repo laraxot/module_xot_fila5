@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_MDK1Bj
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,6 +24,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_
 =======
 >>>>>>> .merge_file_VnEtbB
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_NDBPYd
 # Translation Directory Structure
 
 ## Rule: No `lang/lang/` Redundancy
@@ -51,6 +54,7 @@ Modules/ModuleName/lang/lang/{locale}/file.php  ← WRONG
 ### Reference
 
 See `project_docs/TRANSLATION_DIRECTORY_RULES.md` for full details.
+<<<<<<< .merge_file_MDK1Bj
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_PcgmPA
@@ -71,3 +75,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NDBPYd

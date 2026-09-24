@@ -230,6 +230,7 @@ return [
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_ZTcfy1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -241,3 +242,5 @@ return [
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_DpKLzm

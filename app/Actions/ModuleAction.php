@@ -28,6 +28,7 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
+<<<<<<< .merge_file_l6JogP
 <<<<<<< HEAD
 <<<<<<< HEAD
             self::$_instance = new self;
@@ -49,6 +50,9 @@ class ModuleAction
 =======
             self::$_instance = new self();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            self::$_instance = new self;
+>>>>>>> .merge_file_mdCtfb
         }
 
         return self::$_instance;
@@ -86,6 +90,7 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
+<<<<<<< .merge_file_l6JogP
 <<<<<<< HEAD
 <<<<<<< HEAD
                 $tmp = new \stdClass;
@@ -107,6 +112,9 @@ class ModuleAction
 =======
                 $tmp = new \stdClass();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                $tmp = new \stdClass;
+>>>>>>> .merge_file_mdCtfb
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -135,6 +143,7 @@ class ModuleAction
         return $data;
     }
 
+<<<<<<< .merge_file_l6JogP
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
@@ -152,4 +161,7 @@ class ModuleAction
     {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function execute(): void {}
+>>>>>>> .merge_file_mdCtfb
 }

@@ -50,6 +50,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_zVbyt6
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -74,6 +75,9 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_x0SWP2
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -284,6 +288,7 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_zVbyt6
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -308,6 +313,9 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_x0SWP2
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -466,6 +474,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_zVbyt6
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -490,6 +499,9 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_x0SWP2
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -710,6 +722,7 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_zVbyt6
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -734,6 +747,9 @@ class QuestionChartResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_x0SWP2
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_5Yga7S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

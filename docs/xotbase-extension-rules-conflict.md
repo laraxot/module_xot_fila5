@@ -196,6 +196,7 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 ---
 
 *Last Updated: 2025-08-27*
+<<<<<<< .merge_file_FttKBP
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Architecture Version: XotBase 2.0*
@@ -211,3 +212,6 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 *
 *Architecture Version: XotBase 2.0*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Architecture Version: XotBase 2.0*
+>>>>>>> .merge_file_O3vDwM

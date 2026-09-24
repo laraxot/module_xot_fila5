@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_l9WIp3
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,6 +24,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_D
 =======
 >>>>>>> .merge_file_noMCHo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_zAYyDW
 # Underscore Directories Rule - No _docs/
 
 ## Regola Fondamentale
@@ -121,6 +124,7 @@ find laravel/Modules -name ".gitignore" -exec grep "_docs/" {} \;
 - Git Convention: Underscore prefix = temporary
 - Laravel Convention: Use `docs/`, not `_docs/`
 - Clean Code: No temporary files in repository
+<<<<<<< .merge_file_l9WIp3
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IRIpto
@@ -141,3 +145,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_D
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_zAYyDW

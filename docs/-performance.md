@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_TrhxpM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,8 @@
 >>>>>>> .merge_file_98ujdm
 >>>>>>> .merge_file_QGn7N3
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Z3iEH8
 ---
 title: '_performance'
 module: Xot
@@ -34,6 +37,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_TrhxpM
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
@@ -57,6 +61,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z3iEH8
 # _performance
 
 <!-- Contenuto migrato da _docs/_performance.txt -->
@@ -65,6 +71,7 @@ updated: 2026-08-24
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
+<<<<<<< .merge_file_TrhxpM
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -105,3 +112,5 @@ https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Z3iEH8

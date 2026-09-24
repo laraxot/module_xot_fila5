@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_7IrgtD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iD5Vih
 # BMAD Story 24 — Geo: 5 errori PHPStan
 
 **Modulo:** `Geo`

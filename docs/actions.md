@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_TS5CNO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -111,3 +112,6 @@ execute(array $array1, array $array2): array
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_aOqRPk

@@ -83,6 +83,7 @@ DatePicker::make('field_name')
     ->format('Y-m-d')
     ->displayFormat('d/m/Y')
     ->minDate('2020-01-01')
+<<<<<<< .merge_file_aHGQvE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -94,6 +95,8 @@ DatePicker::make('field_name')
 =======
     ->minDate('[DATE]')
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KjEuSH
     ->maxDate('today')
 ```
 
@@ -105,6 +108,7 @@ DatePicker::make('field_name')
 ## Collegamenti tra versioni di FILAMENT_COMPONENTS.md
 * [FILAMENT_COMPONENTS.md](../../../Xot/docs/FILAMENT_COMPONENTS.md)
 * [FILAMENT_COMPONENTS.md](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
+<<<<<<< .merge_file_aHGQvE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -118,6 +122,8 @@ DatePicker::make('field_name')
 * [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
 * [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KjEuSH
 
 ## Correzione e regole per XotBaseManageRelatedRecords
 
@@ -128,6 +134,7 @@ DatePicker::make('field_name')
 - Ogni correzione deve essere documentata qui e in FILAMENT_TABLE_COLUMNS.md.
 
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
+<<<<<<< .merge_file_aHGQvE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -139,3 +146,5 @@ DatePicker::make('field_name')
 =======
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KjEuSH

@@ -30,6 +30,7 @@ class XotBaseController extends RoutingController
     /**
      * success response method.
      *
+<<<<<<< .merge_file_4WhZGY
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -40,6 +41,9 @@ class XotBaseController extends RoutingController
 =======
      * @param array<string, mixed> $result
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $result
+>>>>>>> .merge_file_J7wCYh
      */
     public function sendResponse(string $message, array $result): JsonResponse
     {
@@ -55,6 +59,7 @@ class XotBaseController extends RoutingController
     /**
      * return error response.
      *
+<<<<<<< .merge_file_4WhZGY
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -65,6 +70,9 @@ class XotBaseController extends RoutingController
 =======
      * @param array<string, mixed> $errorMessages
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $errorMessages
+>>>>>>> .merge_file_J7wCYh
      */
     public function sendError(string $error, array $errorMessages = [], int $code = 404): JsonResponse
     {

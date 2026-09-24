@@ -4,6 +4,7 @@
 > - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
+<<<<<<< .merge_file_kz2XZY
 <<<<<<< HEAD
 <<<<<<< HEAD
 > - [README.md toolkit bashscripts](README.md)
@@ -17,6 +18,9 @@
 =======
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+> - [README.md toolkit bashscripts](README.md)
+>>>>>>> .merge_file_xNevUV
 
 ## Regola Fondamentale
 

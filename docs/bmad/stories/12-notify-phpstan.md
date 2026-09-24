@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_1z5pN6
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_g8FwOh
 # BMAD Story 12 — Notify: 14 errori PHPStan (test)
 
 **Modulo:** `Notify`

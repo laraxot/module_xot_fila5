@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Bmm0c1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GKqUIX
 use Modules\Xot\Tests\Fixtures\Traits\BreadcrumbProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromModelNameProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromPropertyProbe;

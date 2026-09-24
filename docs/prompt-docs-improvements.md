@@ -5,6 +5,7 @@
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+<<<<<<< .merge_file_0PrOMe
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6kIlKx
 > - [Documentazione miglioramenti prompt docs.txt](../../../../bashscripts/docs/prompt_docs_improvements.md)
 
 ## Introduzione
@@ -81,6 +84,7 @@ Il prompt rimane conforme alla [Regola Universale](./prompt_rules.md) per i prom
 
 ## Utilizzo
 
+<<<<<<< .merge_file_0PrOMe
 <<<<<<< HEAD
 <<<<<<< HEAD
 Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
@@ -94,3 +98,6 @@ Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Larav
 =======
 Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
+>>>>>>> .merge_file_6kIlKx

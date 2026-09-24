@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< .merge_file_P6VgWm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 // use Modules\Xot\Services\ArrayService;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xWO5kF
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,6 +19,7 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 <<<<<<< HEAD
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Modules\Xot\Actions\Trans\GetTransKeyByModelClassAction;
+<<<<<<< .merge_file_P6VgWm
 =======
 // use Modules\Xot\Services\ArrayService;
 use Illuminate\Database\Eloquent\Model;
@@ -26,6 +30,8 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xWO5kF
 
 class PdfByModelAction
 {
@@ -41,7 +47,6 @@ class PdfByModelAction
         /**
          * @var non-falsy-string&view-string
          */
-<<<<<<< HEAD
         $view_name = app(GetViewByModelClassAction::class)->execute($model::class,'.show.pdf');
 
         
@@ -49,6 +54,7 @@ class PdfByModelAction
             'view' => $view_name,
             'row' => $model,
             'transKey' => app(GetTransKeyByModelClassAction::class)->execute($model::class,'.fields'),
+<<<<<<< .merge_file_P6VgWm
 =======
         $view_name = app(GetViewByModelClassAction::class)->execute($model::class, '.show.pdf');
 =======
@@ -72,6 +78,8 @@ class PdfByModelAction
 =======
             'transKey' => $module_low.'::'.Str::plural($model_name_low).'.fields',
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xWO5kF
         ];
 
         $view = view($view_name, $view_params);

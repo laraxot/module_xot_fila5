@@ -63,6 +63,7 @@ This document summarizes the code quality improvements made to the Xot module, w
 ---
 
 *Last Updated: November 17, 2025*
+<<<<<<< .merge_file_Tlzpun
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -74,3 +75,5 @@ This document summarizes the code quality improvements made to the Xot module, w
 =======
 *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Al71Lu

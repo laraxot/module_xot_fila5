@@ -277,6 +277,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_zpzdG9
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -301,6 +302,9 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_fjaSth
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_tSPqA1
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

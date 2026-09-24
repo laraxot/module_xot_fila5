@@ -43,6 +43,7 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseListRecords extends FilamentListRecords
 {
     /**
+<<<<<<< .merge_file_22SpzE
      * <<<<<<< HEAD.
      *
      * @param array<string, bool|float|int|string|null> $params
@@ -62,6 +63,9 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * @param array<string, bool|float|int|string|null> $params
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, bool|float|int|string|null>  $params
+>>>>>>> .merge_file_8AS7H8
      */
     public static function trans(string $key, array $params = []): string
     {

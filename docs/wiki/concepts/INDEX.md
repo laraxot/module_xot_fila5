@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_BqpZeR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_n0zrmS
 ---
 title: "Index"
 type: reference
@@ -11,6 +14,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_BqpZeR
 <<<<<<< HEAD
 =======
 =======
@@ -18,6 +22,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_n0zrmS
 # Xot Module - concepts Index
 
 ## Purpose
@@ -30,19 +36,12 @@ qmd search "Xot concepts" --limit 5
 ```
 
 ## See Also
+<<<<<<< .merge_file_BqpZeR
 <<<<<<< HEAD
 <<<<<<< HEAD
-- [env-widget-no-ssh-env-editor](./env-widget-no-ssh-env-editor.md) — EnvWidget: modificare il `.env` di produzione dal pannello admin senza SSH/FTP, + config:cache via ArtisanCommandsManager
 =======
-<<<<<<< HEAD
-<<<<<<< .merge_file_l0fUfk
-=======
+>>>>>>> .merge_file_n0zrmS
 - [env-widget-no-ssh-env-editor](./env-widget-no-ssh-env-editor.md) — EnvWidget: modificare il `.env` di produzione dal pannello admin senza SSH/FTP, + config:cache via ArtisanCommandsManager
->>>>>>> laraxot/dev
-=======
-- [env-widget-no-ssh-env-editor](./env-widget-no-ssh-env-editor.md) — EnvWidget: modificare il `.env` di produzione dal pannello admin senza SSH/FTP, + config:cache via ArtisanCommandsManager
->>>>>>> .merge_file_VD8Pyy
->>>>>>> laraxot/dev
 - [field-refresh-action](./field-refresh-action.md) — ricalcolo campo form dal record tramite getter studly
 - [composer-merge-plugin-modules-only](./composer-merge-plugin-modules-only.md) — merge solo moduli, mai temi
 - [composer-root-skeleton-modular](./composer-root-skeleton-modular.md) — Root Composer minimo: skeleton Laravel + `nwidart/laravel-modules`; moduli owner delle dipendenze.
@@ -60,6 +59,7 @@ qmd search "Xot concepts" --limit 5
 - Audit: `bash bashscripts/tools/audit-module-config-php.sh`
 
 ---
+<<<<<<< .merge_file_BqpZeR
 <<<<<<< HEAD
 *Updated: 2026-07-27*
 =======
@@ -101,3 +101,6 @@ qmd search "Xot concepts" --limit 5
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Updated: 2026-07-27*
+>>>>>>> .merge_file_n0zrmS

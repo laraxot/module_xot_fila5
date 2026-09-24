@@ -39,6 +39,7 @@ class GenerateTableColumnsByFileAction
     /**
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
+<<<<<<< .merge_file_O93Xxt
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -49,6 +50,9 @@ class GenerateTableColumnsByFileAction
 =======
      * @param File $file Il file della risorsa Filament
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  File  $file  Il file della risorsa Filament
+>>>>>>> .merge_file_d2G9NR
      */
     public function execute(File $file): void
     {
@@ -127,6 +131,7 @@ class GenerateTableColumnsByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
+<<<<<<< .merge_file_O93Xxt
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -137,6 +142,9 @@ class GenerateTableColumnsByFileAction
 =======
      * @param File $file Il file da analizzare
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  File  $file  Il file da analizzare
+>>>>>>> .merge_file_d2G9NR
      */
     public function ddFile(File $file): void
     {

@@ -19,8 +19,8 @@ class RunArtisanCommandAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
+<<<<<<< .merge_file_WGjb5l
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_KJTBr5
@@ -37,6 +37,8 @@ class RunArtisanCommandAction
      * @param array<string, mixed> $arguments
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AkpzR9
      */
     public function execute(string $command, array $arguments = []): string
     {
@@ -44,6 +46,7 @@ class RunArtisanCommandAction
             Artisan::call($command, $arguments);
 
             return '[<pre>'.Artisan::output().'</pre>]';
+<<<<<<< .merge_file_WGjb5l
 <<<<<<< HEAD
         } catch (Exception $exception) {
 =======
@@ -62,6 +65,9 @@ class RunArtisanCommandAction
         } catch (\Exception $exception) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        } catch (Exception $exception) {
+>>>>>>> .merge_file_AkpzR9
             return '[<pre>'.$exception->getMessage().'</pre>]';
         }
     }

@@ -48,11 +48,14 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
+<<<<<<< .merge_file_jvQYOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uH42oJ
 
 ```bash
 # ✅ additivo, mai distruttivo (dati sacri)
@@ -66,6 +69,7 @@ cd laravel && php artisan migrate
 
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
+<<<<<<< .merge_file_jvQYOW
 <<<<<<< HEAD
 =======
 =======
@@ -85,6 +89,8 @@ php artisan db:seed
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uH42oJ
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
 # Verificare che il modulo sia presente
@@ -461,11 +467,14 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
+<<<<<<< .merge_file_jvQYOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uH42oJ
 **Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
 
 ```php
@@ -474,6 +483,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class MioModelloTest extends XotBaseTestCase
 {
     use DatabaseTransactions;
+<<<<<<< .merge_file_jvQYOW
 <<<<<<< HEAD
 =======
 =======
@@ -491,10 +501,13 @@ class MioModelloTest extends XotBaseTestCase
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uH42oJ
 
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< .merge_file_jvQYOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -525,6 +538,14 @@ Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacre
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    }
+}
+```
+
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
+
+>>>>>>> .merge_file_uH42oJ
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test
@@ -744,6 +765,7 @@ dd(DB::getQueryLog());
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+<<<<<<< .merge_file_jvQYOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -755,12 +777,15 @@ dd(DB::getQueryLog());
 =======
 - [**README.md**](readme.md) - Documentazione principale del modulo
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_uH42oJ
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale
 
 ---
 
+<<<<<<< .merge_file_jvQYOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
@@ -774,3 +799,6 @@ dd(DB::getQueryLog());
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> .merge_file_uH42oJ

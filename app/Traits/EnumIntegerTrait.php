@@ -88,6 +88,7 @@ trait EnumIntegerTrait
     /**
      * Get enum case by integer value.
      *
+<<<<<<< .merge_file_JvmrKt
      * <<<<<<< HEAD
      *
      * @param int $value Integer value to find
@@ -115,6 +116,9 @@ trait EnumIntegerTrait
      *
      * >>>>>>> laraxot/dev
      *
+=======
+     * @param  int  $value  Integer value to find
+>>>>>>> .merge_file_le0LPw
      * @return static|null Matching case or null
      */
     public static function fromInt(int $value): ?static
@@ -131,6 +135,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is greater than another.
      *
+<<<<<<< .merge_file_JvmrKt
      * <<<<<<< HEAD
      *
      * @param int $value Value to compare against
@@ -154,6 +159,9 @@ trait EnumIntegerTrait
 =======
 >>>>>>> 3792da0d (Check & fix styling)
      *                   >>>>>>> laraxot/dev
+=======
+     * @param  int  $value  Value to compare against
+>>>>>>> .merge_file_le0LPw
      */
     public function isGreaterThan(int $value): bool
     {
@@ -163,6 +171,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is less than another.
      *
+<<<<<<< .merge_file_JvmrKt
      * <<<<<<< HEAD
      *
      * @param int $value Value to compare against
@@ -186,6 +195,9 @@ trait EnumIntegerTrait
 =======
 >>>>>>> 3792da0d (Check & fix styling)
      *                   >>>>>>> laraxot/dev
+=======
+     * @param  int  $value  Value to compare against
+>>>>>>> .merge_file_le0LPw
      */
     public function isLessThan(int $value): bool
     {
@@ -195,6 +207,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value equals another.
      *
+<<<<<<< .merge_file_JvmrKt
      * <<<<<<< HEAD
      *
      * @param int $value Value to compare against
@@ -218,6 +231,9 @@ trait EnumIntegerTrait
 =======
 >>>>>>> 3792da0d (Check & fix styling)
      *                   >>>>>>> laraxot/dev
+=======
+     * @param  int  $value  Value to compare against
+>>>>>>> .merge_file_le0LPw
      */
     public function equals(int $value): bool
     {

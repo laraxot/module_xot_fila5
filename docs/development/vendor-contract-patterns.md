@@ -132,6 +132,7 @@ interface PassportHasApiTokensContract
 ---
 
 **Maintained by**: Claude Sonnet 4.5
+<<<<<<< .merge_file_Co9OAx
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Last updated**: 2025-12-12
@@ -145,3 +146,6 @@ interface PassportHasApiTokensContract
 =======
 **Last updated**: 2025-12-12
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Last updated**: 2025-12-12
+>>>>>>> .merge_file_tZFo8q

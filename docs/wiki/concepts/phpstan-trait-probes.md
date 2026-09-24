@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fqrHji
 title: "PHPStan trait probes — perché sono vietati"
 type: concept
 module: Xot
@@ -164,6 +167,7 @@ trait HasExample
   consumati in produzione. `FormatSeconds` (Job) e `SushiToJsons`/`SushiToCsv`/
   `SushiToPhpArray` (Tenant) non necessitavano di alcuna azione sul trait: erano già
   usati in produzione o già annotati — il probe era pura zavorra.
+<<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 =======
 =======
@@ -252,6 +256,8 @@ return $publishedAt instanceof Carbon && $publishedAt->isPast();
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fqrHji
 
 ### Guard script
 
@@ -259,6 +265,7 @@ return $publishedAt instanceof Carbon && $publishedAt->isPast();
 bash bashscripts/tools/archive-invalid-phpstan-probes.sh
 ```
 
+<<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 Archivia in-place (`.bak`) probe invalidi noti. Non sostituisce l'audit manuale:
@@ -274,15 +281,22 @@ Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
 =======
 Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Archivia in-place (`.bak`) probe invalidi noti. Non sostituisce l'audit manuale:
+la lista al suo interno è storica, non esaustiva.
+>>>>>>> .merge_file_fqrHji
 
 ## Verifica
 
 ```bash
+<<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fqrHji
 # Audit: non deve restituire nulla
 grep -rl "PhpstanProbeModel\|PhpstanTraitProbe" laravel/Modules laravel/Themes --include="*.php"
 find laravel/Modules laravel/Themes -type d -iname "Phpstan"
@@ -304,6 +318,7 @@ nel punto sbagliato.
 $publishedAt = $this->getAttribute('published_at');
 
 return $publishedAt instanceof Carbon && $publishedAt->isPast();
+<<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 =======
 =======
@@ -318,6 +333,8 @@ cd laravel
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fqrHji
 ```
 
 ### Fix correlati (2026-06-30)
@@ -331,16 +348,20 @@ cd laravel
 
 ## Collegamenti
 
+<<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fqrHji
 - [Regola: no-phpstan-probe-models](../../../../../../bashscripts/ai/wiki/rules/no-phpstan-probe-models.md)
 - [phpstan-fixes-log](./phpstan-fixes-log.md)
 - [phpstan-remediation-swarm](../memories/phpstan-remediation-swarm.md)
 - [User trait alias conflict](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 - Policy per modulo: `Modules/Job/docs/no-phpstan-probe-policy.md`, `Modules/Lang/docs/no-phpstan-probe-policy.md`, `Modules/Geo/docs/no-phpstan-probe-policy.md`, `Modules/Tenant/docs/no-phpstan-probe-policy.md`, `Themes/Zero/docs/no-phpstan-probe-policy.md`
+<<<<<<< .merge_file_3zbFnM
 <<<<<<< HEAD
 =======
 =======
@@ -354,3 +375,5 @@ cd laravel
 - [phpstan-remediation-swarm](../memories/phpstan-remediation-swarm.md)
 - [User trait alias conflict](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_fqrHji

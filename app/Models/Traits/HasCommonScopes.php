@@ -44,8 +44,8 @@ trait HasCommonScopes
 <<<<<<< HEAD
      * Trovato identico in piu' moduli che condividono questo scope.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
+<<<<<<< .merge_file_XQJCRG
 =======
      * @param Builder<static> $query
      *
@@ -56,6 +56,8 @@ trait HasCommonScopes
      * @param Builder<static> $query
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_OjJp3a
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -66,6 +68,7 @@ trait HasCommonScopes
     /**
      * Scope query to only inactive records.
      *
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
@@ -77,6 +80,9 @@ trait HasCommonScopes
      * @param Builder<static> $query
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Builder<static>  $query
+>>>>>>> .merge_file_OjJp3a
      * @return Builder<static>
      */
     public function scopeInactive(Builder $query): Builder
@@ -89,6 +95,7 @@ trait HasCommonScopes
      *
      * Records with published_at <= now().
      *
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
@@ -100,6 +107,9 @@ trait HasCommonScopes
      * @param Builder<static> $query
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Builder<static>  $query
+>>>>>>> .merge_file_OjJp3a
      * @return Builder<static>
      */
     public function scopePublished(Builder $query): Builder
@@ -113,6 +123,7 @@ trait HasCommonScopes
      *
      * Records with published_at = null or > now().
      *
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
@@ -124,6 +135,9 @@ trait HasCommonScopes
      * @param Builder<static> $query
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Builder<static>  $query
+>>>>>>> .merge_file_OjJp3a
      * @return Builder<static>
      */
     public function scopeDraft(Builder $query): Builder
@@ -141,13 +155,12 @@ trait HasCommonScopes
     /**
      * Scope query to records created after a date.
      *
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  Builder<static>  $query
 =======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_OjJp3a
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -165,13 +178,12 @@ trait HasCommonScopes
     /**
      * Scope query to records created before a date.
      *
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  Builder<static>  $query
 =======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_OjJp3a
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -189,13 +201,12 @@ trait HasCommonScopes
     /**
      * Scope query to records updated after a date.
      *
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  Builder<static>  $query
 =======
-     * @param Builder<static> $query
-     *
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_OjJp3a
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
@@ -213,6 +224,7 @@ trait HasCommonScopes
     /**
      * Scope query to records created by a specific user.
      *
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Builder<static>  $query
@@ -224,6 +236,9 @@ trait HasCommonScopes
      * @param Builder<static> $query
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Builder<static>  $query
+>>>>>>> .merge_file_OjJp3a
      * @return Builder<static>
      */
     public function scopeCreatedBy(Builder $query, string|int $userId): Builder
@@ -262,6 +277,7 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
+<<<<<<< .merge_file_XQJCRG
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $this->getAttribute('is_active') === true;
@@ -271,5 +287,8 @@ trait HasCommonScopes
 =======
         return true === $this->getAttribute('is_active');
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return $this->getAttribute('is_active') === true;
+>>>>>>> .merge_file_OjJp3a
     }
 }

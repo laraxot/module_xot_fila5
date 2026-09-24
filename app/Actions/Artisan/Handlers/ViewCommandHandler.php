@@ -19,8 +19,8 @@ class ViewCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
-<<<<<<< HEAD
         return $command === 'viewclear';
+<<<<<<< .merge_file_bKgnBZ
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_8hTgE9
@@ -37,5 +37,7 @@ class ViewCommandHandler implements CommandHandlerInterface
         return 'viewclear' === $command;
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_t1Br8e
     }
 }

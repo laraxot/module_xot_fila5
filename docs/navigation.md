@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_wYl0dc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_cGg9sZ
 title: Navigation
 description: Building a navigation menu for your site
 extends: _layouts.documentation
@@ -40,6 +43,7 @@ $page->navigation
 ### Versione HEAD
 
 ## Collegamenti tra versioni di navigation.md
+<<<<<<< .merge_file_wYl0dc
 <<<<<<< HEAD
 =======
 =======
@@ -47,6 +51,8 @@ $page->navigation
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_cGg9sZ
 * [navigation.md](../../../Gdpr/docs/navigation.md)
 * [navigation.md](../../../Xot/docs/navigation.md)
 * [navigation.md](../../../UI/docs/navigation.md)
@@ -57,6 +63,7 @@ $page->navigation
 ### Versione Incoming
 
 ---
+<<<<<<< .merge_file_wYl0dc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -76,3 +83,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/navigation.m
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/navigation.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_cGg9sZ

@@ -98,15 +98,19 @@ abstract class XotBaseResource extends Resource
      * @return array<int, Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_hU5oEs
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_M3KNtZ
     abstract public function getFormSchema(): array;
 =======
     abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_hU5oEs
 <<<<<<< HEAD
 =======
 =======
@@ -116,6 +120,8 @@ abstract class XotBaseResource extends Resource
 =======
     abstract public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_M3KNtZ
 
     /**
      * Get pages with proper typing.
@@ -451,6 +457,7 @@ function processUserData(array $data): array
 **Quality Standard**: PHPStan Level 10
 **Type Coverage**: 98%+
 **Performance**: Optimized
+<<<<<<< .merge_file_hU5oEs
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Documentation**: Complete PHPDoc coverage
@@ -464,3 +471,6 @@ function processUserData(array $data): array
 =======
 **Documentation**: Complete PHPDoc coverage
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Documentation**: Complete PHPDoc coverage
+>>>>>>> .merge_file_M3KNtZ

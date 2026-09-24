@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_SOTwF4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_F4w84V
 # Xot Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)
@@ -47,6 +50,7 @@
 - Infrastructure models typically don't need factories as they're system-managed
 - Evaluate if all these models are actually used in business logic
 - Consider that many Xot models may be framework infrastructure rather than business entities
+<<<<<<< .merge_file_SOTwF4
 <<<<<<< HEAD
 =======
 =======
@@ -65,3 +69,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-classi
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/model-classification.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_F4w84V

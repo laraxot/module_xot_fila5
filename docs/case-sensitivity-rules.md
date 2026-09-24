@@ -194,6 +194,7 @@ EOF
 ## Update Log
 
 - **2025-11-04**: Initial documentation and cleanup
+<<<<<<< .merge_file_PI3cME
 <<<<<<< HEAD
 <<<<<<< HEAD
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
@@ -213,3 +214,7 @@ EOF
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+  - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
+  - Established rules and conventions
+>>>>>>> .merge_file_DcNsbS

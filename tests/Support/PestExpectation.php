@@ -15,13 +15,17 @@ final class PestExpectation
     public function __construct(
         private readonly mixed $value,
         private readonly bool $negated = false,
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_TlRRvZ
     ) {}
 
     public function __get(string $name): self
     {
         if ($name === 'not') {
+<<<<<<< .merge_file_pprJJz
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -35,6 +39,8 @@ final class PestExpectation
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_TlRRvZ
             return $this->not();
         }
 
@@ -178,12 +184,12 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * @param  class-string  $expectedClass
 =======
-     * @param class-string $expectedClass
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_TlRRvZ
+     * @param  class-string  $expectedClass
      */
     public function toBeInstanceOf(string $expectedClass, string $message = ''): self
     {
@@ -274,11 +280,7 @@ final class PestExpectation
             ? Assert::assertArrayNotHasKey($key, $this->value, $message)
             : Assert::assertArrayHasKey($key, $this->value, $message);
 
-<<<<<<< HEAD
         if (func_num_args() === 2 || (func_num_args() === 3 && ! $this->negated)) {
-=======
-        if (2 === func_num_args() || (3 === func_num_args() && ! $this->negated)) {
->>>>>>> laraxot/dev
             Assert::assertArrayHasKey($key, (array) $this->value);
             Assert::assertEquals($value, ((array) $this->value)[$key], $message);
         }
@@ -291,6 +293,7 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  iterable<array-key>  $keys
@@ -300,6 +303,9 @@ final class PestExpectation
 =======
      * @param iterable<array-key> $keys
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  iterable<array-key>  $keys
+>>>>>>> .merge_file_TlRRvZ
      */
     public function toHaveKeys(iterable $keys): self
     {
@@ -316,6 +322,7 @@ final class PestExpectation
         $exists = property_exists($this->value, $property) || isset($this->value->{$property});
         $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
 
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (func_num_args() === 2 && ! $this->negated) {
@@ -325,6 +332,9 @@ final class PestExpectation
 =======
         if (2 === func_num_args() && ! $this->negated) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (func_num_args() === 2 && ! $this->negated) {
+>>>>>>> .merge_file_TlRRvZ
             Assert::assertEquals($expectedValue, $this->value->{$property});
         }
 
@@ -332,6 +342,7 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  iterable<string>  $properties
@@ -341,6 +352,9 @@ final class PestExpectation
 =======
      * @param iterable<string> $properties
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  iterable<string>  $properties
+>>>>>>> .merge_file_TlRRvZ
      */
     public function toHaveProperties(iterable $properties): self
     {
@@ -361,6 +375,7 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $expectedSubset
@@ -370,6 +385,9 @@ final class PestExpectation
 =======
      * @param array<array-key, mixed> $expectedSubset
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<array-key, mixed>  $expectedSubset
+>>>>>>> .merge_file_TlRRvZ
      */
     public function toMatchArray(array $expectedSubset): self
     {
@@ -437,6 +455,7 @@ final class PestExpectation
     }
 
     /**
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  iterable<mixed>  $expectedValues
@@ -446,6 +465,9 @@ final class PestExpectation
 =======
      * @param iterable<mixed> $expectedValues
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  iterable<mixed>  $expectedValues
+>>>>>>> .merge_file_TlRRvZ
      */
     public function toBeIn(iterable $expectedValues): self
     {
@@ -459,6 +481,7 @@ final class PestExpectation
 
     public function toStartWith(string $prefix): self
     {
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($prefix === '') {
@@ -468,6 +491,9 @@ final class PestExpectation
 =======
         if ('' === $prefix) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($prefix === '') {
+>>>>>>> .merge_file_TlRRvZ
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -480,6 +506,7 @@ final class PestExpectation
 
     public function toEndWith(string $suffix): self
     {
+<<<<<<< .merge_file_pprJJz
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($suffix === '') {
@@ -489,6 +516,9 @@ final class PestExpectation
 =======
         if ('' === $suffix) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($suffix === '') {
+>>>>>>> .merge_file_TlRRvZ
             Assert::fail('Expected a non-empty suffix.');
         }
 

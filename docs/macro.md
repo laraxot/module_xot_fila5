@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_GzOpWY
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 =======
 >>>>>>> .merge_file_iP95kB
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_v17W3x
 ---
 title: 'Macro — risorse esterne'
 module: Xot
@@ -41,6 +44,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://www.larashout.com/laravel-macros-extending-laravels-core-classes>
+<<<<<<< .merge_file_GzOpWY
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_OsuWnA
@@ -60,3 +64,5 @@ https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 =======
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_v17W3x

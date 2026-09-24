@@ -20,15 +20,19 @@ class MyPage extends XotBaseViewRecord
 ### 2. **Struttura Namespace Corretta**
 ```php
 // ✅ CORRETTO
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2RmwJ3
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
 namespace Modules\Quaeris\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 =======
 =======
@@ -47,6 +51,8 @@ namespace Modules\ExternalProject\App\Filament\Resources\SurveyPdfResource\Resou
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2RmwJ3
 ```
 
 ### 3. **Uso di Schema invece di Form**
@@ -92,6 +98,7 @@ class MyWidget extends Widget implements HasForms
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
@@ -107,6 +114,9 @@ namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> .merge_file_2RmwJ3
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -129,6 +139,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
@@ -144,6 +155,9 @@ namespace Modules\ExternalProject\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\ExternalProject\Filament\Widgets;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_2RmwJ3
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -200,15 +214,19 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2RmwJ3
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 =======
 =======
@@ -218,6 +236,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2RmwJ3
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -226,15 +246,19 @@ public function getFormSchema(): array
 ### 3. **Namespace Errati**
 ```php
 // ❌ SBAGLIATO
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2RmwJ3
 namespace Modules\Quaeris\App\Filament\Widgets;
 
 // ✅ CORRETTO
 namespace Modules\Quaeris\Filament\Widgets;
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 =======
 =======
@@ -253,6 +277,8 @@ namespace Modules\ExternalProject\Filament\Widgets;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2RmwJ3
 ```
 
 ## 🔧 Implementazione Corretta
@@ -263,6 +289,7 @@ namespace Modules\ExternalProject\Filament\Widgets;
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
@@ -278,10 +305,14 @@ namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> .merge_file_2RmwJ3
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
@@ -297,6 +328,9 @@ use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\Quest
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+>>>>>>> .merge_file_2RmwJ3
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -340,6 +374,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
@@ -355,6 +390,9 @@ namespace Modules\ExternalProject\Filament\Widgets;
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\ExternalProject\Filament\Widgets;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_2RmwJ3
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -408,6 +446,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [Filament 4 Migration Guide](./filament4_migration.md)
 
+<<<<<<< .merge_file_4kbSkE
 <<<<<<< HEAD
 <<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
@@ -421,3 +460,6 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 =======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> .merge_file_2RmwJ3

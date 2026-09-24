@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers\Filament;
 
+<<<<<<< .merge_file_kGlbXe
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -37,6 +38,8 @@ use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_J2Z9j1
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Xot';

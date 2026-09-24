@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_bQl9QE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FRoqxi
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -216,6 +219,7 @@ find laravel/Themes -name "docs" -type d
 **Stato**: Violazione corretta, regole implementate, struttura conforme
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
+<<<<<<< .merge_file_bQl9QE
 <<<<<<< HEAD
 =======
 =======
@@ -234,3 +238,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/docs-structu
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_FRoqxi

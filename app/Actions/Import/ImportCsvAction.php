@@ -11,13 +11,17 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ColumnData;
+<<<<<<< .merge_file_zedzNt
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Ydff6S
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\ini_set;
 
+<<<<<<< .merge_file_zedzNt
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -31,6 +35,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ydff6S
 class ImportCsvAction
 {
     use QueueableAction;
@@ -38,12 +44,16 @@ class ImportCsvAction
     /**
      * Import a CSV file into a database table.
      *
+<<<<<<< .merge_file_zedzNt
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_Ydff6S
      * @param  string  $disk  the storage disk where the file is located
      * @param  string  $filename  the name of the file to import
      * @param  string  $db  the database connection name
      * @param  string  $tbl  the table name where data will be imported
+<<<<<<< .merge_file_zedzNt
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -55,6 +65,8 @@ class ImportCsvAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ydff6S
      *
      * @throws \Exception
      */
@@ -131,6 +143,7 @@ class ImportCsvAction
     /**
      * Prepare fields for the SQL query.
      *
+<<<<<<< .merge_file_zedzNt
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, ColumnData>  $columns
@@ -142,11 +155,15 @@ class ImportCsvAction
      * @param array<ColumnData> $columns
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int, ColumnData>  $columns
+>>>>>>> .merge_file_Ydff6S
      * @return array<string>
      */
     private function prepareFields(array $columns): array
     {
         return array_map(
+<<<<<<< .merge_file_zedzNt
 <<<<<<< HEAD
 <<<<<<< HEAD
             fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
@@ -156,6 +173,9 @@ class ImportCsvAction
 =======
             fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
+>>>>>>> .merge_file_Ydff6S
             $columns,
         );
     }
@@ -163,6 +183,7 @@ class ImportCsvAction
     /**
      * Build the SQL query for importing data.
      *
+<<<<<<< .merge_file_zedzNt
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, ColumnData>  $columns
@@ -172,6 +193,9 @@ class ImportCsvAction
 =======
      * @param array<ColumnData> $columns
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int, ColumnData>  $columns
+>>>>>>> .merge_file_Ydff6S
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -188,6 +212,7 @@ class ImportCsvAction
 
         $sqlReplace = [];
         foreach ($columns as $column) {
+<<<<<<< .merge_file_zedzNt
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($column->type === 'decimal') {
@@ -197,6 +222,9 @@ class ImportCsvAction
 =======
             if ('decimal' === $column->type) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            if ($column->type === 'decimal') {
+>>>>>>> .merge_file_Ydff6S
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
@@ -207,6 +235,7 @@ class ImportCsvAction
 
         return $sql;
     }
+<<<<<<< .merge_file_zedzNt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -240,4 +269,6 @@ class ImportCsvAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ydff6S
 }

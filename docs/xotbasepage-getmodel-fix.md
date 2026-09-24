@@ -102,6 +102,7 @@ public static function getModel(): null|string
 ## Collegamenti
 - [XotBasePage](../app/Filament/Resources/Pages/XotBasePage.php)
 - [Filament Page Documentation](https://filamentphp.com/docs/3.x/resources/pages)
+<<<<<<< .merge_file_u3wwSY
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
@@ -115,6 +116,9 @@ public static function getModel(): null|string
 =======
 - [Laraxot Extension Rules](../../../../docs/laraxot-conventions.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
+>>>>>>> .merge_file_L46KE0
 
 ## Note di Manutenzione
 - **Data correzione**: Gennaio 2025
@@ -122,6 +126,7 @@ public static function getModel(): null|string
 - **PHP Version**: 8.3+
 - **Livello PHPStan**: 9+
 
+<<<<<<< .merge_file_u3wwSY
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
@@ -135,3 +140,6 @@ public static function getModel(): null|string
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> .merge_file_L46KE0

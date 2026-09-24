@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_UqXBwF
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@
 >>>>>>> .merge_file_MXE3H5
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_acjegK
 ---
 title: "Readme"
 type: reference
@@ -29,6 +32,7 @@ updated: 2026-08-24
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_UqXBwF
 <<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 =======
@@ -62,6 +66,8 @@ updated: 2026-08-24
 >>>>>>> .merge_file_MXE3H5
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_acjegK
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -91,6 +97,7 @@ updated: 2026-08-24
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< .merge_file_UqXBwF
 <<<<<<< HEAD
 <<<<<<< .merge_file_RYtcQU
 =======
@@ -323,3 +330,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_acjegK

@@ -35,6 +35,7 @@ return new class extends XotBaseMigration
 ```
 
 ## Related Documentation
+<<<<<<< .merge_file_SCn1ko
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [User Module Database Errors](database_errors.md)
@@ -48,10 +49,14 @@ return new class extends XotBaseMigration
 =======
 - [User Module Database Errors](../../User/docs/DATABASE_ERRORS.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [User Module Database Errors](database_errors.md)
+>>>>>>> .merge_file_nUqWGm
 - [Xot Base Classes](../XOT_BASE_CLASSES.md)
 - [Code Quality](../CODE_QUALITY.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../DATABASE_GUIDELINES.md)
+<<<<<<< .merge_file_SCn1ko
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -70,3 +75,5 @@ return new class extends XotBaseMigration
 =======
 - [Database Guidelines](../database_guidelines.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_nUqWGm

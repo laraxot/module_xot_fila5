@@ -39,8 +39,8 @@ function chatFilesWithDateInName(): array
         $name = basename($file);
 
         // Qualunque posizione: prefisso, mezzo o coda. La regola le vieta tutte.
-<<<<<<< HEAD
         if (preg_match('/\d{4}-\d{2}-\d{2}/', $name) === 1) {
+<<<<<<< .merge_file_JolHWd
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_X467sT
@@ -57,6 +57,8 @@ function chatFilesWithDateInName(): array
         if (1 === preg_match('/\d{4}-\d{2}-\d{2}/', $name)) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_RRceYo
             $offenders[] = $name;
         }
     }

@@ -1,13 +1,17 @@
+<<<<<<< .merge_file_a5w11l
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PZQcet
 # nwidart
 
 <!-- Contenuto migrato da _docs/nwidart.txt -->
 
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
+<<<<<<< .merge_file_a5w11l
 <<<<<<< HEAD
 =======
 =======
@@ -15,6 +19,8 @@ https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PZQcet
 # _nwidart
 
 <!-- Contenuto migrato da _docs/_nwidart.txt -->

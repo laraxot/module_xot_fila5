@@ -7,6 +7,7 @@ description: 'Elenco di 1 riferimenti esterni raccolti per macro, deduplicati e 
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_IVJe95
 <<<<<<< HEAD
 =======
 converted_from: _macro.txt
@@ -18,16 +19,27 @@ converted_from: _macro.txt
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+converted_from: _macro.txt
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ToU8Ol
 converted_from: macro.txt
 =======
 converted_from: _macro.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_IVJe95
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+=======
+converted_from: _macro.txt
+>>>>>>> .merge_file_ToU8Ol
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

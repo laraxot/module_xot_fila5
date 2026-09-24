@@ -376,15 +376,19 @@ Test non isolati o dipendenze condivise.
 
 **Soluzione**
 ```php
+<<<<<<< .merge_file_5diWgm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wxof0q
 // ✅ DatabaseTransactions — mai RefreshDatabase (dati sacri)
 class ExampleTest extends TestCase
 {
     use Illuminate\Foundation\Testing\DatabaseTransactions;
+<<<<<<< .merge_file_5diWgm
 <<<<<<< HEAD
 =======
 =======
@@ -398,6 +402,8 @@ class ExampleTest extends TestCase
 {
     use RefreshDatabase; // Garantisce database pulito
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wxof0q
 
     protected function setUp(): void
     {
@@ -407,6 +413,7 @@ class ExampleTest extends TestCase
 }
 ```
 
+<<<<<<< .merge_file_5diWgm
 <<<<<<< HEAD
 <<<<<<< HEAD
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
@@ -420,6 +427,10 @@ Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacre
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
+
+>>>>>>> .merge_file_wxof0q
 ### Errore: Test Lenti
 
 **Causa**

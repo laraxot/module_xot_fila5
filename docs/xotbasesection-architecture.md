@@ -66,6 +66,7 @@ This architecture ensures:
 - Consistency across all Section components
 - Centralized configuration capability
 - Framework adherence to Laraxot principles
+<<<<<<< .merge_file_VECufu
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Maintainable and predictable code structure
@@ -79,3 +80,6 @@ This architecture ensures:
 =======
 - Maintainable and <nome progetto>able code structure
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Maintainable and predictable code structure
+>>>>>>> .merge_file_GcH1Sw

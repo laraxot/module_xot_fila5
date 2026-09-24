@@ -24,6 +24,7 @@ class SessionResource extends XotBaseResource
     protected static ?string $model = Session::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Fiqeis
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -32,10 +33,13 @@ class SessionResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> .merge_file_lwfRYw
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_56V0ZA
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Fiqeis
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_IgZZD6
@@ -48,6 +52,8 @@ class SessionResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_56V0ZA
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione

@@ -37,6 +37,7 @@ it('casts various values to integer correctly', function (): void {
     Assert::assertSame(15, $action->execute(['15']));
     Assert::assertSame(2, $action->execute(['a', 'b'], 2));
     // Objects with toString
+<<<<<<< .merge_file_D9B0xN
 <<<<<<< HEAD
 <<<<<<< HEAD
     $obj = new class
@@ -47,6 +48,10 @@ it('casts various values to integer correctly', function (): void {
 =======
     $obj = new class {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $obj = new class
+    {
+>>>>>>> .merge_file_9NRPZn
         public function __toString()
         {
             return '20';

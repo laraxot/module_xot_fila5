@@ -7,6 +7,7 @@ description: 'Elenco di 2 riferimenti esterni raccolti per soketi, deduplicati e
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_nfbCiC
 <<<<<<< HEAD
 =======
 converted_from: _soketi.txt
@@ -18,16 +19,27 @@ converted_from: _soketi.txt
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+converted_from: _soketi.txt
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_JC18JV
 converted_from: soketi.txt
 =======
 converted_from: _soketi.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_nfbCiC
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+=======
+converted_from: _soketi.txt
+>>>>>>> .merge_file_JC18JV
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

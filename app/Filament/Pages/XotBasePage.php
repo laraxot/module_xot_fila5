@@ -34,6 +34,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * - Rilevamento intelligente modello
  * - Metodi helper comuni
  *
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property ?string $model Il modello associato alla pagina
@@ -46,6 +47,10 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * @property ?string              $model Il modello associato alla pagina
  * @property array<string, mixed> $data  I dati del form
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @property ?string $model Il modello associato alla pagina
+ * @property array<string, mixed> $data I dati del form
+>>>>>>> .merge_file_4SlkTj
  *
  * @see \Modules\Xot\docs\xotbasepage_implementation.md Documentazione completa
  */
@@ -92,6 +97,7 @@ abstract class XotBasePage extends Page implements HasForms
         $namespace = static::class;
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($moduleName === '') {
@@ -101,6 +107,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
         if ('' === $moduleName) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($moduleName === '') {
+>>>>>>> .merge_file_4SlkTj
             throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 
@@ -135,6 +144,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function getModel(): string
     {
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (static::$model !== null) {
@@ -144,6 +154,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
         if (null !== static::$model) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (static::$model !== null) {
+>>>>>>> .merge_file_4SlkTj
             /** @var class-string<Model> $modelValue */
             $modelValue = static::$model;
 
@@ -162,6 +175,7 @@ abstract class XotBasePage extends Page implements HasForms
             ->trim()
             ->toString();
 
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($modelName === '') {
@@ -171,6 +185,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
         if ('' === $modelName) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($modelName === '') {
+>>>>>>> .merge_file_4SlkTj
             throw new \LogicException(sprintf('Cannot determine model name from class %s', static::class));
         }
 
@@ -189,6 +206,7 @@ abstract class XotBasePage extends Page implements HasForms
      * Configura il form della pagina.
      * Imposta lo schema e il percorso dello stato per il form.
      *
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  Schema  $schema  Il form da configurare
@@ -200,6 +218,9 @@ abstract class XotBasePage extends Page implements HasForms
      * @param Schema $schema Il form da configurare
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  Schema  $schema  Il form da configurare
+>>>>>>> .merge_file_4SlkTj
      * @return Schema Lo schema configurato
      */
     public function schema(Schema $schema): Schema
@@ -213,6 +234,7 @@ abstract class XotBasePage extends Page implements HasForms
         $schema->statePath('data');
 
         $debounce = $this->getAutosaveDebounce();
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($debounce !== null && method_exists($schema, 'autosaveDebounce')) {
@@ -222,6 +244,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
         if (null !== $debounce && method_exists($schema, 'autosaveDebounce')) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($debounce !== null && method_exists($schema, 'autosaveDebounce')) {
+>>>>>>> .merge_file_4SlkTj
             $schema->autosaveDebounce($debounce);
         }
 
@@ -235,6 +260,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function getView(): string
     {
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($this->view === '') {
@@ -244,6 +270,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
         if ('' === $this->view) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($this->view === '') {
+>>>>>>> .merge_file_4SlkTj
             $view = app(GetViewByClassAction::class)->execute(static::class);
             if (view()->exists($view)) {
                 return (string) $view;
@@ -267,11 +296,7 @@ abstract class XotBasePage extends Page implements HasForms
         $method = new \ReflectionMethod($this, 'getFormSchema');
         $declaringClass = $method->getDeclaringClass()->getName();
 
-<<<<<<< HEAD
         if ($declaringClass === self::class || str_starts_with($declaringClass, 'Filament\\')) {
-=======
-        if (self::class === $declaringClass || str_starts_with($declaringClass, 'Filament\\')) {
->>>>>>> laraxot/dev
             return [];
         }
 
@@ -298,12 +323,16 @@ abstract class XotBasePage extends Page implements HasForms
      * Ottiene l'utente autenticato.
      * Verifica che l'utente sia un'istanza di Model per permettere aggiornamenti.
      *
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4SlkTj
      *
      * @return Authenticatable&Model L'utente autenticato
      *
      * @throws \RuntimeException Se l'utente non è autenticato o non è un'istanza di Model
+<<<<<<< .merge_file_DerR7y
 =======
      * @throws \RuntimeException Se l'utente non è autenticato o non è un'istanza di Model
      *
@@ -314,11 +343,14 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @return Authenticatable&Model L'utente autenticato
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4SlkTj
      */
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();
 
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($user === null) {
@@ -328,6 +360,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
         if (null === $user) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($user === null) {
+>>>>>>> .merge_file_4SlkTj
             throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
 
@@ -354,6 +389,7 @@ abstract class XotBasePage extends Page implements HasForms
      * Verifica se l'utente ha un permesso specifico.
      * Utile per controlli granulari all'interno delle pagine.
      *
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string  $permission  Il permesso da verificare
@@ -365,6 +401,9 @@ abstract class XotBasePage extends Page implements HasForms
      * @param string $permission Il permesso da verificare
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  string  $permission  Il permesso da verificare
+>>>>>>> .merge_file_4SlkTj
      * @return bool True se l'utente ha il permesso, false altrimenti
      */
     protected function hasPermissionTo(string $permission): bool
@@ -386,12 +425,16 @@ abstract class XotBasePage extends Page implements HasForms
     /**
      * Risolve il percorso della vista.
      *
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4SlkTj
      *
      * @return string Il percorso della vista
      *
      * @throws \RuntimeException Se la vista non esiste
+<<<<<<< .merge_file_DerR7y
 =======
      * @throws \RuntimeException Se la vista non esiste
      *
@@ -402,6 +445,8 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @return string Il percorso della vista
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4SlkTj
      */
     protected function resolveViewPath(): string
     {
@@ -416,12 +461,16 @@ abstract class XotBasePage extends Page implements HasForms
     /**
      * Ottiene una query builder per il modello associato alla pagina.
      *
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4SlkTj
      *
      * @return Builder<Model>
      *
      * @throws \LogicException Se il modello non è definito
+<<<<<<< .merge_file_DerR7y
 =======
      * @throws \LogicException Se il modello non è definito
      *
@@ -432,6 +481,8 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @return Builder<Model>
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4SlkTj
      */
     protected function getQuery(): Builder
     {
@@ -442,6 +493,7 @@ abstract class XotBasePage extends Page implements HasForms
         }
 
         /** @var class-string<Model> $modelClass */
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
         $instance = new $modelClass;
@@ -451,6 +503,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
         $instance = new $modelClass();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $instance = new $modelClass;
+>>>>>>> .merge_file_4SlkTj
         if (! $instance instanceof Model) {
             throw new \LogicException("Class {$modelClass} must extend Eloquent Model");
         }
@@ -461,6 +516,7 @@ abstract class XotBasePage extends Page implements HasForms
     /**
      * Invalida la cache per il modello specificato.
      *
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<Model>|null  $modelClass
@@ -470,6 +526,9 @@ abstract class XotBasePage extends Page implements HasForms
 =======
      * @param class-string<Model>|null $modelClass
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  class-string<Model>|null  $modelClass
+>>>>>>> .merge_file_4SlkTj
      */
     protected function invalidateCache(?string $modelClass = null, int|string|null $id = null): void
     {
@@ -482,6 +541,7 @@ abstract class XotBasePage extends Page implements HasForms
     {
         return [
             Action::make('save')
+<<<<<<< .merge_file_DerR7y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -490,6 +550,8 @@ abstract class XotBasePage extends Page implements HasForms
 =======
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4SlkTj
                 ->submit('save'),
         ];
     }

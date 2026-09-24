@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_cHHHTL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yy7rFb
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso
@@ -67,6 +70,7 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
+<<<<<<< .merge_file_cHHHTL
 <<<<<<< HEAD
 =======
 =======
@@ -87,3 +91,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/module-names
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yy7rFb

@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_9E9dmI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FXq9ZD
 title: "Redundancy Audit"
 type: concept
 status: deprecated
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
+<<<<<<< .merge_file_9E9dmI
 <<<<<<< HEAD
 =======
 =======
@@ -65,3 +69,5 @@ Evidence commands:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_FXq9ZD

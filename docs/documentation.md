@@ -41,6 +41,7 @@ Modules/[Nome]/
 
 ## Collegamenti
 - [Indice della Documentazione](../docs/INDEX.md)
+<<<<<<< .merge_file_Uc9np8
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Regole del Progetto](rules.md)
@@ -58,11 +59,16 @@ Modules/[Nome]/
 - [Regole del Progetto](../docs/RULES.md)
 - [Struttura dei Moduli](../docs/STRUCTURE.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Regole del Progetto](rules.md)
+- [Struttura dei Moduli](structure.md)
+>>>>>>> .merge_file_joRkU1
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
 * [documentation.md](../../../Xot/docs/documentation.md)
 * [documentation.md](../../../Xot/docs/guidelines/documentation.md)
 * [documentation.md](../../../Cms/docs/roadmap/features/documentation.md)
+<<<<<<< .merge_file_Uc9np8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -111,3 +117,5 @@ https://flarum.org/
 =======
 https://flarum.org/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_joRkU1

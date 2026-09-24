@@ -3,6 +3,7 @@
 ## Critical Architectural Rules
 
 1. **Laraxot Migration Philosophy**: In a module, for each table there must be only ONE migration responsible for its creation. Multiple migrations for the same table in the same module is a violation of Laraxot philosophy. Subsequent migrations should extend existing tables using tableUpdate() rather than recreating them with tableCreate(). Always use hasColumn(), hasTable(), hasIndex() for safe checks.
+<<<<<<< .merge_file_9vCcJs
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -19,6 +20,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_HJSHMu
 
 2. **NO property_exists() on Eloquent models**: Use hasAttribute(), isFillable() or Schema::hasColumn() instead, because model attributes are magical properties.
 
@@ -62,6 +65,7 @@
 1. **Pest PHP**: All tests must be written in Pest PHP, not PHPUnit
 2. **Code Quality Tools**: Run PHPStan, PHPMD, and PHPInsights after every change
 3. **Documentation Updates**: Always update docs folders when making changes to the codebase
+<<<<<<< .merge_file_9vCcJs
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -77,3 +81,5 @@
 5. **Local AI Runtime Governance**: For Ollama/AMD/ROCm/WSL work, always distinguish guest Linux readiness from Windows host driver readiness. If `/dev/dxg` and ROCm libraries exist but `rocminfo` fails, treat it as WSL/runtime misalignment first, not as "Ollama missing".
 6. **Action-First Architecture**: Do not introduce generic `Services` for business logic. The preferred pattern is explicit Action classes, and for reusable/async work the standard is `spatie/laravel-queueable-action` with `execute()` as project convention.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_HJSHMu

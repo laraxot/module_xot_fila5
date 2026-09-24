@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_Ft7jkG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_B90x7L
 # Modulo Xot
 
 ## Informazioni Generali
@@ -111,6 +114,7 @@ composer format        # Formatta il codice
 
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub.
+<<<<<<< .merge_file_Ft7jkG
 <<<<<<< HEAD
 =======
 =======
@@ -129,3 +133,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/module-xot.m
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/module-xot.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_B90x7L

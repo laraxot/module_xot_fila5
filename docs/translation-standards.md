@@ -140,6 +140,7 @@ return array(
 - **Problemi risolti**: Riferimenti circolari, sintassi obsoleta
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
+<<<<<<< .merge_file_oDSlk4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -151,6 +152,8 @@ return array(
 =======
 - **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8T8qGL
 
 #### File Completati
 1. `progressioni.php` - Traduzioni principali
@@ -267,6 +270,7 @@ return [
 
 - [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/Modules/Xot/docs/translations-best-practices.md)
+<<<<<<< .merge_file_oDSlk4
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -280,6 +284,8 @@ return [
 - [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8T8qGL
 - [Laraxot Conventions](laraxot-conventions.md)
 
 ## Note Tecniche
@@ -296,6 +302,7 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
+<<<<<<< .merge_file_oDSlk4
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
@@ -309,3 +316,6 @@ return [
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> .merge_file_8T8qGL

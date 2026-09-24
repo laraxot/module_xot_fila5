@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_YZ3TEV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@ uses(TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xr3sA4
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
@@ -37,13 +40,17 @@ test('fix path action works', function (): void {
 
 test('view path action works', function (): void {
     // Replace GetViewNameSpacePathAction with a spy that returns test path
+<<<<<<< .merge_file_YZ3TEV
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_xr3sA4
     $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction
     {
         public function execute(string $namespace): string
         {
             return $namespace === 'test_ns' ? '/view/path' : '';
+<<<<<<< .merge_file_YZ3TEV
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -55,6 +62,8 @@ test('view path action works', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_xr3sA4
         }
     };
 
@@ -73,6 +82,7 @@ test('asset path action works', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
+<<<<<<< .merge_file_YZ3TEV
 <<<<<<< HEAD
 <<<<<<< HEAD
             return $module === 'test_module' ? '/module/path/' : '';
@@ -82,6 +92,9 @@ test('asset path action works', function (): void {
 =======
             return 'test_module' === $module ? '/module/path/' : '';
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            return $module === 'test_module' ? '/module/path/' : '';
+>>>>>>> .merge_file_xr3sA4
         },
     ]);
 

@@ -128,6 +128,7 @@ php artisan serve
 - [Regole di Documentazione](documentation-rules.md)
 
 ## Collegamenti tra versioni di installation.md
+<<<<<<< .merge_file_LfeIEU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -147,12 +148,15 @@ php artisan serve
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_YiAPDO
 * [installation.md](../../../Xot/docs/filament/installation.md)
 * [installation.md](../../../Xot/docs/installation.md)
 * [installation.md](../../../Xot/docs/base/installation.md)
 * [installation.md](../../../User/docs/installation.md)
 * [installation.md](../../../Lang/docs/installation.md)
 * [installation.md](../../../Cms/docs/installation.md)
+<<<<<<< .merge_file_LfeIEU
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [installation.md](../../../../Themes/One/docs/installation.md)
@@ -166,3 +170,6 @@ php artisan serve
 =======
 * [installation.md](../../../../Themes/One/docs/installation.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+* [installation.md](../../../../Themes/One/docs/installation.md)
+>>>>>>> .merge_file_YiAPDO

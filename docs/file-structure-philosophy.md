@@ -87,6 +87,7 @@ Modules/{ModuleName}/
 
 ### 1. **Autoloader Confusion**
 - PHP autoloader cannot determine which file to use
+<<<<<<< .merge_file_2xpiPB
 <<<<<<< HEAD
 <<<<<<< HEAD
 - "First found" approach leads to unpredictable behavior
@@ -100,6 +101,9 @@ Modules/{ModuleName}/
 =======
 - "First found" approach leads to un<nome progetto>able behavior
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- "First found" approach leads to unpredictable behavior
+>>>>>>> .merge_file_sJhMD7
 - Different environments may load different files
 
 ### 2. **Maintenance Nightmare**
@@ -179,6 +183,7 @@ Modules/
 │   │   ├── migrations/
 │   │   └── seeders/
 │   └── app/
+<<<<<<< .merge_file_2xpiPB
 <<<<<<< HEAD
 <<<<<<< HEAD
 └── Quaeris/
@@ -194,6 +199,9 @@ Modules/
 └── healthcare_app/
 └── ExternalProject/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+└── Quaeris/
+>>>>>>> .merge_file_sJhMD7
     ├── database/
     │   ├── factories/
     │   ├── migrations/
@@ -229,6 +237,7 @@ find Modules -name "*.php" | grep -E "(factories|seeders)" | sort
 
 ---
 
+<<<<<<< .merge_file_2xpiPB
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
@@ -242,3 +251,6 @@ find Modules -name "*.php" | grep -E "(factories|seeders)" | sort
 =======
 **Philosophy Summary**: In Laraxot, consistency and <nome progetto>ability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, <nome progetto>able behavior.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
+>>>>>>> .merge_file_sJhMD7

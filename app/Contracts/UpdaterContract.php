@@ -19,6 +19,7 @@ use Illuminate\Support\Carbon;
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_MplUdo
 <<<<<<< HEAD
 <<<<<<< HEAD
 interface UpdaterContract {}
@@ -32,3 +33,6 @@ interface UpdaterContract
 {
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+interface UpdaterContract {}
+>>>>>>> .merge_file_2FKtSf

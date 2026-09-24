@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_6NXIe5
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_tYuVig
 # BMAD Story: HasXotForm columns
 Fix: ->columns($this->getFormColumns()) invece di ->columns(2). Metodi getFormSchema/getFormColumns non statici.
 Repo: git@github.com:laraxot/module_xot_fila5.git

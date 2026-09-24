@@ -114,6 +114,7 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_3Decry
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -138,6 +139,9 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0zKIQB
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_q9cM0S
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

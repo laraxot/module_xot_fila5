@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_6t0Hnd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vJ8DU4
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles
@@ -125,6 +128,7 @@ Remember to always:
 - Optimize for performance from the beginning
 - Document decisions and patterns
 - Learn from external packages and integrate best practices
+<<<<<<< .merge_file_6t0Hnd
 <<<<<<< HEAD
 =======
 =======
@@ -143,3 +147,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/updated-arch
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/updated-architecture-memories.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vJ8DU4

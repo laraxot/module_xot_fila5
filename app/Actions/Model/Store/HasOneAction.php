@@ -19,6 +19,7 @@ class HasOneAction
     {
         Assert::isInstanceOf($rows = $relationDTO->rows, HasOne::class);
 
+<<<<<<< .merge_file_YJ8duf
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
@@ -28,6 +29,9 @@ class HasOneAction
 =======
         if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
+>>>>>>> .merge_file_ewl1rz
             $related_id = reset($relationDTO->data);
             $related = $relationDTO->related->find($related_id);
             if (! $related instanceof Model) {

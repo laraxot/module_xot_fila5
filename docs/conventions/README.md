@@ -1,5 +1,6 @@
 # Convenzioni
 
+<<<<<<< .merge_file_CpOrnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9uBN1N
 Questa cartella contiene le convenzioni di nomenclatura e le regole di stile utilizzate nel progetto.
 
 ## File Contenuti
@@ -24,6 +27,7 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 ## Note
 
+<<<<<<< .merge_file_CpOrnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -94,14 +98,18 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](bashscripts/project_docs/it/readme.md)
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> .merge_file_9uBN1N
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 ## Collegamenti tra versioni di README.md
->>>>>>> laraxot/dev
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+<<<<<<< .merge_file_CpOrnx
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9uBN1N
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -132,6 +140,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_CpOrnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -292,6 +301,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 <<<<<<< HEAD
 >>>>>>> .merge_file_HWEz4P
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_9uBN1N
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -336,6 +347,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_CpOrnx
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_FTUjAj
@@ -433,3 +445,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_9uBN1N

@@ -90,6 +90,7 @@ class {Model} extends {Package}{Model}
 - **[third-party-model-inheritance-philosophy.md](third-party-model-inheritance-philosophy.md)** - Complete philosophy guide
 
 ### Module-Specific Patterns
+<<<<<<< .merge_file_joIHcA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -107,6 +108,8 @@ class {Model} extends {Package}{Model}
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6jzuVe
 - **[User Module](../User/docs/third-party-model-patterns.md)** - Permission & Role integration
 - **[Activity Module](../Activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
 
@@ -170,6 +173,7 @@ class Feature extends PackageFeature
 
 ---
 
+<<<<<<< .merge_file_joIHcA
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
@@ -183,3 +187,6 @@ class Feature extends PackageFeature
 =======
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
+>>>>>>> .merge_file_6jzuVe

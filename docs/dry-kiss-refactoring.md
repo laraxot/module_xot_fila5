@@ -115,6 +115,7 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 ## Collegamenti
 
 - [Audit Completo](./MODEL_INHERITANCE_AUDIT.md)
+<<<<<<< .merge_file_CNCzbY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -126,6 +127,8 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 =======
 - [Audit Completo](./model_inheritance_audit.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_FvvB7R
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
@@ -246,6 +249,7 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 ## Collegamenti
 
 - [Audit Completo](./MODEL_INHERITANCE_AUDIT.md)
+<<<<<<< .merge_file_CNCzbY
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [XotBaseModel](../app/Models/XotBaseModel.php)
@@ -269,3 +273,8 @@ abstract class Base[Model|Pivot|MorphPivot] extends XotBase[Model|Pivot|MorphPiv
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [XotBaseModel](../app/Models/XotBaseModel.php)
+- [XotBasePivot](../app/Models/XotBasePivot.php)
+- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
+>>>>>>> .merge_file_FvvB7R

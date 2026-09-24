@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_6jDb3Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,6 +66,8 @@ https://phpmd.org/
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yacmYb
 ---
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
@@ -98,6 +101,7 @@ updated: 2026-08-24
 - <https://github.com/phan/phan>
 - <https://github.com/overtrue/phplint>
 - <https://phpmd.org/>
+<<<<<<< .merge_file_6jDb3Q
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
@@ -129,3 +133,5 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yacmYb

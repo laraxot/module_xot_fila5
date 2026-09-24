@@ -58,6 +58,7 @@ public function registerTranslations(): void
 - L’uso diretto di `module_path` può portare a divergenze, bug e difficoltà di manutenzione
 - Questa regola va rispettata anche da tutte le classi che estendono il provider
 
+<<<<<<< .merge_file_xzk6ba
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
@@ -73,6 +74,9 @@ public function registerTranslations(): void
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
+>>>>>>> .merge_file_KT16ri
 
 ## Esempio di Override Sicuro
 ```php
@@ -93,6 +97,7 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 - Evitare collisioni di prefissi tra moduli diversi.
 
 ## Collegamenti e Backlink
+<<<<<<< .merge_file_xzk6ba
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
@@ -117,12 +122,17 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
+- [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
+>>>>>>> .merge_file_KT16ri
 - [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md) — Standardizzazione metodi colonne Filament
 
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
 
+<<<<<<< .merge_file_xzk6ba
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
@@ -136,3 +146,6 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 =======
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
+>>>>>>> .merge_file_KT16ri

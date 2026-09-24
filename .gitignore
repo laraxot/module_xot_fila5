@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Uj6yOj
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -42,6 +45,7 @@ docs/phpstan/
 packages/cache/
 packages/temp/
 # --- Cache & temporary ---
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 =======
 =======
@@ -93,6 +97,8 @@ storage/*.key
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uj6yOj
 *.cache
 *.lock
 *.phar
@@ -105,6 +111,7 @@ storage/*.key
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 # --- Logs ---
@@ -123,16 +130,22 @@ v8-compile-cache-*
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+# --- Logs ---
+>>>>>>> .merge_file_Uj6yOj
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Uj6yOj
 # --- Laravel runtime ---
 app/storage/
 public/storage
@@ -144,6 +157,7 @@ storage/*.key
 .env.*
 !.env.example
 # --- Environment & IDE ---
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 =======
 =======
@@ -158,17 +172,22 @@ storage/*.key
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uj6yOj
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 .phpstorm.meta.php
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Uj6yOj
 .windsurf/
 .cursor/
 .vscode/
@@ -184,6 +203,7 @@ Homestead.json
 *.orig
 *.rej
 # --- System files ---
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 =======
 =======
@@ -204,6 +224,8 @@ Homestead.json
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uj6yOj
 .DS_Store
 .DS_Store?
 ._*
@@ -212,17 +234,21 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 *.exe
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Uj6yOj
 agentdb.rvf
 # --- Copy / backup / old files ---
 * copy
 * copy.*
 * copy/
 *.copy
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 =======
 =======
@@ -243,6 +269,8 @@ agentdb.rvf
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uj6yOj
 *.old
 *.old1
 *.old2
@@ -253,6 +281,7 @@ agentdb.rvf
 *.bak
 *.bakcup
 *.new
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 # --- Legacy directories (historic cleanup) ---
@@ -288,15 +317,21 @@ docs/archive/**
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+# --- Legacy directories (historic cleanup) ---
+>>>>>>> .merge_file_Uj6yOj
 resources/views/Components_old/
 database/Migrations_old/
 database/Seeders_old/
 database/Factories_old/
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Uj6yOj
 database/Factories_
 database_old/
 lang/lang/
@@ -351,6 +386,7 @@ docs/coverage-*.md
 .windsurf~*
 graphify-out/
 tests/coverage-xot.xml
+<<<<<<< .merge_file_KLfoCf
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_dIJquH
@@ -409,3 +445,5 @@ docs/assets/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Uj6yOj

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_CWEOzo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ppoSJQ
 ---
 title: 'code_analyse'
 module: Xot
@@ -27,6 +30,7 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/code_analyse.txt -->
 
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_zwbWDg
@@ -39,6 +43,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ppoSJQ
 //----------------------------------------------------------
 phpstan
 install:
@@ -46,6 +52,7 @@ install:
 cmd:
 ./vendor/bin/phpstan analyse ./Modules/Xot
 
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,6 +73,8 @@ cmd:
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ppoSJQ
 //----------------------------------------------------------
 https://github.com/phan/phan/wiki/Getting-Started
 
@@ -82,6 +91,7 @@ php ./vendor/bin/phpmetrics --report-html=../_phpmetrics_report Modules
 //----------------------------------------------------------
 https://github.com/squizlabs/PHP_CodeSniffer
 install:
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -101,6 +111,8 @@ install:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ppoSJQ
 # Download using curl
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
@@ -118,6 +130,7 @@ $ wget https://phar.phpunit.de/phpcpd.phar
 
 $ php phpcpd.phar --version
 
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -150,6 +163,11 @@ https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
 //---------------------
 https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+//---------------------
+https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
+>>>>>>> .merge_file_ppoSJQ
 
 //--------------------
 https://github.com/Qafoo/QualityAnalyzer
@@ -163,6 +181,7 @@ cmd:
 bin/analyze analyze /path/to/source
 //-------------------------------------------------------------
 
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -186,6 +205,9 @@ https://psalm.dev/docs/running_psalm/installation/
 =======
 https://psalm.dev/docs/running_psalm/installation/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+https://psalm.dev/docs/running_psalm/installation/
+>>>>>>> .merge_file_ppoSJQ
 
 //--------------------------------------------------------------------
 https://github.com/scrutinizer-ci/php-analyzer
@@ -197,6 +219,7 @@ https://geekflare.com/php-security-scanner/
 https://hub.docker.com/r/adamculp/php-code-quality
 https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -222,12 +245,15 @@ https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ppoSJQ
 https://github.com/enlightn/enlightn
 
  "edgedesign/phpqa": "^1.23",
 
  "phan/phan": "^4.0",
         "phpmetrics/phpmetrics": "^2.7",
+<<<<<<< .merge_file_Z9XSHD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,3 +273,6 @@ https://github.com/enlightn/enlightn
 =======
         "phpunit/php-code-coverage": "^9.2",
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        "phpunit/php-code-coverage": "^9.2",
+>>>>>>> .merge_file_ppoSJQ

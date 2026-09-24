@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Traits\HasXotTable;
+<<<<<<< .merge_file_YPAO06
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,11 +14,14 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_g1MI9F
 use ReflectionClass;
 
 use function Safe\file_get_contents;
 
 /**
+<<<<<<< .merge_file_YPAO06
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,6 +43,8 @@ use function Safe\file_get_contents;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_g1MI9F
  * Guardia della regola docs/wiki/rules/xot-table-method-names.md:
  * `table()` non decide, chiede — e lo chiede direttamente all'hook.
  *
@@ -49,8 +55,8 @@ use function Safe\file_get_contents;
 test('HasXotTable non dichiara metodi resolve*', function (): void {
     $methods = array_map(
         static fn (\ReflectionMethod $m): string => $m->getName(),
-<<<<<<< HEAD
         (new ReflectionClass(HasXotTable::class))->getMethods(),
+<<<<<<< .merge_file_YPAO06
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_EEX3P6
@@ -67,6 +73,8 @@ test('HasXotTable non dichiara metodi resolve*', function (): void {
         (new \ReflectionClass(HasXotTable::class))->getMethods(),
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_g1MI9F
     );
 
     $offenders = array_values(array_filter(
@@ -80,6 +88,7 @@ test('HasXotTable non dichiara metodi resolve*', function (): void {
 
 test('table() non contiene valori hardcoded fra i setter', function (): void {
     $source = file_get_contents(
+<<<<<<< .merge_file_YPAO06
 <<<<<<< HEAD
         (string) (new ReflectionClass(HasXotTable::class))->getFileName()
 =======
@@ -98,6 +107,9 @@ test('table() non contiene valori hardcoded fra i setter', function (): void {
         (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
+>>>>>>> .merge_file_g1MI9F
     );
 
     $start = strpos($source, 'public function table(');
@@ -113,6 +125,7 @@ test('table() non contiene valori hardcoded fra i setter', function (): void {
 
 test('gli hook di azione non sono avvolti in array_values()', function (): void {
     $source = file_get_contents(
+<<<<<<< .merge_file_YPAO06
 <<<<<<< HEAD
         (string) (new ReflectionClass(HasXotTable::class))->getFileName()
 =======
@@ -131,6 +144,9 @@ test('gli hook di azione non sono avvolti in array_values()', function (): void 
         (string) (new \ReflectionClass(HasXotTable::class))->getFileName()
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        (string) (new ReflectionClass(HasXotTable::class))->getFileName()
+>>>>>>> .merge_file_g1MI9F
     );
 
     foreach ([

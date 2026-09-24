@@ -1,15 +1,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_I5uGyG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> .merge_file_8Rcfga
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_I5uGyG
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_8Rcfga
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -21,23 +28,22 @@ metadata:
 ---
 
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_I5uGyG
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_8Rcfga
 >>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-11-18
 
@@ -1091,7 +1097,13 @@ class MyModel extends BaseModel
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 ---
 ## Variant 3
 

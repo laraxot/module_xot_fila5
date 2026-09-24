@@ -119,6 +119,7 @@ $currentTeam = $user->currentTeam;
 - [Testing Priority Rule](../Geo/docs/testing-priority-rule.md)
 - [No RefreshDatabase Policy](../Activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../UI/docs/test-fix-philosophy.md)
+<<<<<<< .merge_file_oYB9Ar
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -134,6 +135,8 @@ $currentTeam = $user->currentTeam;
 - [No RefreshDatabase Policy](../activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_boPhAF
 
 ## 🔄 Workflow per Ogni Test
 
@@ -148,6 +151,7 @@ $currentTeam = $user->currentTeam;
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< .merge_file_oYB9Ar
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Prossimo step**: Correggere ArtisanServiceTest.php
@@ -163,3 +167,6 @@ $currentTeam = $user->currentTeam;
 **Ultimo aggiornamento**: [DATE]
 **Prossimo step**: Correggere ArtisanServiceTest.php
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Prossimo step**: Correggere ArtisanServiceTest.php
+>>>>>>> .merge_file_boPhAF

@@ -84,6 +84,7 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 - [Convenzioni di Namespace](../Xot/docs/namespace_conventions.md)
 - [Struttura Moduli](../Xot/docs/module_structure.md)
+<<<<<<< .merge_file_EahsAd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -97,3 +98,5 @@ namespace Modules\ModuleName\App\Console\Commands;
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AmBssT

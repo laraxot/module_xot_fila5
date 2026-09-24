@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Oi4RW1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +17,8 @@ https://github.com/asantibanez/laravel-eloquent-state-machines
 =======
 >>>>>>> .merge_file_fGZxd1
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KcxCv5
 ---
 title: 'composer_packages'
 module: Xot
@@ -34,6 +37,7 @@ updated: 2026-08-24
 
 //---- pacchetto per gli stati, si possono utilizzare piu' campi per lo stato
 https://github.com/asantibanez/laravel-eloquent-state-machines
+<<<<<<< .merge_file_Oi4RW1
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_uvlSxy
@@ -53,3 +57,5 @@ https://github.com/asantibanez/laravel-eloquent-state-machines
 //---- pacchetto per gli stati, si possono utilizzare piu' campi per lo stato
 https://github.com/asantibanez/laravel-eloquent-state-machines
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KcxCv5

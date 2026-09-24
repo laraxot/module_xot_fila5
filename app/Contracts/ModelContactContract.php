@@ -10,6 +10,7 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
+<<<<<<< .merge_file_rF6z4n
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
@@ -108,22 +109,33 @@ use Illuminate\Support\Carbon;
  * @property bool               $table_enable
  *                                            >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
  *                                            >>>>>>> .merge_file_Mi4DdT
+=======
+ * @property int $id
+ * @property int|null $user_id
+ * @property string|null $post_type
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $title
+ * @property bool $is_reclamed
+ * @property bool $table_enable
+>>>>>>> .merge_file_o3Auoc
  * @property PivotContract|null $pivot
- * @property string             $tennant_name
- * @property string             $mail_subject
- * @property string             $mail_body
- * @property string             $sms_from
- * @property string             $mobile_phone
- * @property string             $sms_body
- * @property string             $sms_count
+ * @property string $tennant_name
+ * @property string $mail_subject
+ * @property string $mail_body
+ * @property string $sms_from
+ * @property string $mobile_phone
+ * @property string $sms_body
+ * @property string $sms_count
  *
- * <<<<<<< HEAD
- *
- * @method int|string|null                              getKey()
- * @method string                                       getRouteKey()
- * @method string                                       getRouteKeyName()
- * @method string                                       getTable()
+ * @method int|string|null getKey()
+ * @method string getRouteKey()
+ * @method string getRouteKeyName()
+ * @method string getTable()
  * @method \Illuminate\Database\Eloquent\Builder<Model> with($array)
+<<<<<<< .merge_file_rF6z4n
  * @method list<string>                                 getFillable()
  * @method static                                       fill($array)
  * @method \Illuminate\Database\Connection              getConnection()
@@ -226,6 +238,19 @@ use Illuminate\Support\Carbon;
  *                                                                                           >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+ * @method list<string> getFillable()
+ * @method static fill($array)
+ * @method \Illuminate\Database\Connection getConnection()
+ * @method bool update($params)
+ * @method bool|null delete()
+ * @method int detach($params)
+ * @method void attach($params)
+ * @method bool save($params)
+ * @method array<string, mixed> treeLabel()
+ * @method array<string, mixed> treeSons()
+ * @method array<string, mixed> toArray()
+>>>>>>> .merge_file_o3Auoc
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
@@ -242,6 +267,7 @@ interface ModelContactContract
     public function sendEmailCallback(): void;
 
     /**
+<<<<<<< .merge_file_rF6z4n
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -272,6 +298,9 @@ interface ModelContactContract
 =======
      * @param array<string, mixed> $data
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_o3Auoc
      */
     public function increase(string $what, array $data): void;
 }

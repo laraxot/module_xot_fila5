@@ -27,6 +27,7 @@ class GetFakerAction
 
     public function execute(string $name, ?string $type = null, ?string $_table = null): string
     {
+<<<<<<< .merge_file_G9Td3b
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($type !== null && Str::startsWith($type, 'factory(')) {
@@ -36,6 +37,9 @@ class GetFakerAction
 =======
         if (null !== $type && Str::startsWith($type, 'factory(')) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($type !== null && Str::startsWith($type, 'factory(')) {
+>>>>>>> .merge_file_9kSY2b
             return $type;
         }
 

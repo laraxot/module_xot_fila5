@@ -6,6 +6,7 @@ namespace Modules\Xot\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Exporter;
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Resources\Pages\ListRecords;
@@ -19,11 +20,17 @@ use Filament\Actions\Exports\Models\Export;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use Filament\Actions\Exports\Models\Export;
+use Filament\Resources\Pages\ListRecords;
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> .merge_file_bWepTd
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Lang\Actions\TransArrayAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +43,11 @@ use OpenSpout\Common\Entity\Cell;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Common\Entity\Style\Style;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Entity\Style\Style;
+>>>>>>> .merge_file_bWepTd
 
 /**
  * Exporter Filament 5 che riusa il contratto `getXlsFields()` dei Resource.
@@ -54,21 +66,24 @@ use OpenSpout\Common\Entity\Style\Style;
  * I nomi colonna non possono contenere `.` (romperebbe il `columnMap` via
  * `data_get` in `CanExportRecords`): i punti del percorso diventano `_` e lo
  * stato viene risolto con `data_get($record, $percorso)`.
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
  *
  * Tipo delle celle: il job nativo passa dal CSV (`ExportCsv` → `CreateXlsxFile`),
  * quindi OpenSpout riceve solo stringhe e `"57"` diventerebbe testo. `export_xls`
  * (PhpSpreadsheet, `DefaultValueBinder`) lo scrive come numero: `makeXlsxRow()`
  * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
  *
- * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
- * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
- * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
- * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+     * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
+     * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
+     * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
+     * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
  *
  * CSV intermedio: i job Filament usano League\Csv con escape `\` (default PHP):
  * un valore che finisce con `\` chiude il campo con `\"` e il reader lo legge
@@ -76,19 +91,25 @@ use OpenSpout\Common\Entity\Style\Style;
  * I job Xot (`Jobs\XotPrepareCsvExport`, `Jobs\XotExportCsv`, `Jobs\XotCreateXlsxFile`)
  * scrivono e leggono con `CSV_ESCAPE` (nessun escape, RFC 4180): round-trip
  * intatto anche per `a\` e `a\"b`.
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
  */
 abstract class XotBaseExporter extends Exporter
 {
     /**
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
      * Escape del CSV intermedio (writer e reader devono coincidere).
      */
     public const string CSV_ESCAPE = '';
@@ -98,8 +119,7 @@ abstract class XotBaseExporter extends Exporter
      *
      * @template TModel of Model
      *
-     * @param Builder<TModel> $query
-     *
+     * @param  Builder<TModel>  $query
      * @return Builder<TModel>
      */
     #[\Override]
@@ -115,7 +135,7 @@ abstract class XotBaseExporter extends Exporter
             $with[] = 'ratingMorphs';
         }
 
-        return [] === $with ? $query : $query->with($with);
+        return $with === [] ? $query : $query->with($with);
     }
 
     /**
@@ -143,7 +163,7 @@ abstract class XotBaseExporter extends Exporter
      * Righe (e intestazione: `makeXlsxHeaderRow` delega qui) con le celle
      * tipizzate come PhpSpreadsheet in `export_xls`. Story Ptv/5.165.
      *
-     * @param array<mixed> $values
+     * @param  array<mixed>  $values
      */
     #[\Override]
     public function makeXlsxRow(array $values, ?Style $style = null): Row
@@ -165,10 +185,13 @@ abstract class XotBaseExporter extends Exporter
     }
 
     /**
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
      * @return array<int, ExportColumn>
      */
     #[\Override]
@@ -183,6 +206,7 @@ abstract class XotBaseExporter extends Exporter
         return static::resolveColumns(
             $livewire->getResource(),
             $livewire->tableFilters ?? [],
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -191,6 +215,9 @@ abstract class XotBaseExporter extends Exporter
 =======
             $livewire::class,
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            $livewire::class,
+>>>>>>> .merge_file_bWepTd
         );
     }
 
@@ -206,6 +233,7 @@ abstract class XotBaseExporter extends Exporter
             $resource = Arr::get($this->options, 'resource');
             $resource = \is_string($resource) && class_exists($resource) ? $resource : null;
             $filters = Arr::get($this->options, 'tableFilters', []);
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
             /** @var array<string, mixed> $filters */
@@ -215,15 +243,20 @@ abstract class XotBaseExporter extends Exporter
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
             $transClass = Arr::get($this->options, 'livewireClass');
             $transClass = \is_string($transClass) && class_exists($transClass) ? $transClass : $resource;
-            /* @var array<string, mixed> $filters */
+            /** @var array<string, mixed> $filters */
             $this->cachedColumns = [];
             foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : [], $transClass) as $column) {
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
                 $this->cachedColumns[$column->getName()] = $column->exporter($this);
             }
         }
@@ -232,6 +265,7 @@ abstract class XotBaseExporter extends Exporter
     }
 
     /**
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string|null  $resource
@@ -248,21 +282,31 @@ abstract class XotBaseExporter extends Exporter
      * @param array<array-key, mixed> $filters
      * @param class-string|null       $transClass come ExportXlsAction: classe Livewire/page, non il Resource
      *
+=======
+     * @param  class-string|null  $resource
+     * @param  array<array-key, mixed>  $filters
+     * @param  class-string|null  $transClass  come ExportXlsAction: classe Livewire/page, non il Resource
+>>>>>>> .merge_file_bWepTd
      * @return array<int, ExportColumn>
      */
     protected static function resolveColumns(?string $resource, array $filters, ?string $transClass = null): array
     {
+<<<<<<< .merge_file_K5IypQ
         if (null === $resource || ! method_exists($resource, 'getXlsFields')) {
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($resource === null || ! method_exists($resource, 'getXlsFields')) {
+>>>>>>> .merge_file_bWepTd
             return [];
         }
 
         /** @var array<int|string, string> $fields */
         $fields = $resource::getXlsFields($filters);
 
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
         $transKey = app(GetTransKeyAction::class)->execute($resource).'.fields';
@@ -272,12 +316,16 @@ abstract class XotBaseExporter extends Exporter
 =======
         $transKey = app(GetTransKeyAction::class)->execute($transClass ?? $resource).'.fields';
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $transKey = app(GetTransKeyAction::class)->execute($transClass ?? $resource).'.fields';
+>>>>>>> .merge_file_bWepTd
 
         $columns = [];
         foreach ($fields as $key => $value) {
             $path = \is_string($key) ? $key : $value;
             $label = \is_string($key)
                 ? $value
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
                 : app(TransArrayAction::class)->execute([$path], $transKey)[0] ?? $path;
@@ -289,15 +337,20 @@ abstract class XotBaseExporter extends Exporter
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
                 : (array_values(app(TransArrayAction::class)->execute([$path], $transKey))[0] ?? $path);
 
             $columns[] = ExportColumn::make(static::columnName($path))
                 ->label($label)
                 ->state(static fn (Model $record): string => CollectionExport::castCell(data_get($record, $path)));
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
         }
 
         return $columns;
@@ -315,13 +368,17 @@ abstract class XotBaseExporter extends Exporter
         $livewire = app('livewire')->current();
 
         if ($livewire instanceof ListRecords) {
+<<<<<<< .merge_file_K5IypQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_bWepTd
             /** @var class-string<Model> */
             return $livewire->getResource()::getModel();
         }
 
         /** @var class-string<Model> */
+<<<<<<< .merge_file_K5IypQ
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -334,6 +391,8 @@ abstract class XotBaseExporter extends Exporter
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bWepTd
         return parent::getModel();
     }
 

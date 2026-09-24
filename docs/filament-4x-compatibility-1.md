@@ -205,15 +205,19 @@ $rows = $query->get();
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_GdeaCq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_s0GRFm
 - [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< .merge_file_GdeaCq
 <<<<<<< HEAD
 =======
 =======
@@ -229,3 +233,5 @@ $rows = $query->get();
 
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_s0GRFm

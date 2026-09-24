@@ -8,6 +8,7 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 
 **Collegamento bidirezionale:**
 - [Motivazione e applicazione nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md)
+<<<<<<< .merge_file_NaL2z1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -19,6 +20,8 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 =======
 - [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IYUe8H
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 
@@ -55,15 +58,19 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
 - **Le duplicazioni vanno eliminate**: ogni refactoring deve essere documentato con motivazione e percorso nella sezione dedicata.
 - **Tipizzazione rigorosa**: tutto il codice deve essere conforme a phpstan livello 10.
 - **Collegamenti rapidi**:
+<<<<<<< .merge_file_NaL2z1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IYUe8H
   - [Documentazione generale e convenzioni di progetto](../../../../project_docs/coding-standards.md)
   - [Esempio e memo nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
 
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
+<<<<<<< .merge_file_NaL2z1
 <<<<<<< HEAD
 =======
 =======
@@ -79,3 +86,5 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
 
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IYUe8H

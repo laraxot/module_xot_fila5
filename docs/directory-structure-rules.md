@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_GfSqpi
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IEfn7i
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto
@@ -108,6 +111,7 @@ Prima di ogni commit, verificare:
 - [Convenzioni Namespace](namespace-rules.md)
 - [Best Practices](best-practices.md)
 - [PHPStan Configuration](phpstan/configuration.md)
+<<<<<<< .merge_file_GfSqpi
 <<<<<<< HEAD
 =======
 =======
@@ -131,3 +135,5 @@ Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wik
 =======
 Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_IEfn7i

@@ -1,5 +1,6 @@
 # PHP Insights Analysis Report - Xot Module
 
+<<<<<<< .merge_file_uVLUh2
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Date:** 2025-11-12
@@ -17,6 +18,8 @@
 =======
 **Date:** 2025-11-12
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_gPUBLe
 **Module:** Xot (Core Module)
 **Tools:** phpmd 2.x, phpinsights 2.x, phpstan level 10
 
@@ -104,6 +107,7 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
+<<<<<<< .merge_file_uVLUh2
 <<<<<<< HEAD
 <<<<<<< HEAD
 protected $fillable;
@@ -133,6 +137,9 @@ protected array $fillable;
 =======
 protected $fillable;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+protected array $fillable;
+>>>>>>> .merge_file_gPUBLe
 ```
 
 ### 🟢 Medium Priority
@@ -246,6 +253,7 @@ protected $fillable;
 ---
 
 **Next Review:** After Phase 1 completion
+<<<<<<< .merge_file_uVLUh2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -274,3 +282,6 @@ protected $fillable;
 =======
 **Last Updated:** 2025-11-12 08:15 UTC
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**
+>>>>>>> .merge_file_gPUBLe

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Translators;
 
-<<<<<<< HEAD
 class Systran extends BaseTranslator {}
+<<<<<<< .merge_file_ijeIfQ
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_PnNvoz
@@ -27,3 +27,5 @@ class Systran extends BaseTranslator
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_UvRqIj

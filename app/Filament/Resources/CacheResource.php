@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< .merge_file_smRvwh
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MYDRKe
 use Modules\Xot\Filament\Resources\CacheResource\Pages\CreateCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\EditCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\ListCaches;
@@ -23,6 +26,7 @@ class CacheResource extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
 
+<<<<<<< .merge_file_smRvwh
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +47,8 @@ class CacheResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MYDRKe
     #[\Override]
     public static function getRelations(): array
     {

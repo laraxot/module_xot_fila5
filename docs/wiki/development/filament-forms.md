@@ -26,6 +26,7 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_g3ABMs
 <<<<<<< HEAD
     public function getFormSchema(): array
 <<<<<<< HEAD
@@ -50,6 +51,9 @@ class PerformanceResource extends XotBaseResource
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cvYoFY
+=======
+    public function getFormSchema(): array
+>>>>>>> .merge_file_Qs4VbE
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -272,6 +276,7 @@ Forms\Components\Grid::make()
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_g3ABMs
 <<<<<<< HEAD
 public function getFormSchema(): array
 <<<<<<< HEAD
@@ -296,6 +301,9 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_cvYoFY
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_Qs4VbE
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

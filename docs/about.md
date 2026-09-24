@@ -17,6 +17,7 @@ E' la libreria di estensione di tutte le altre librerie.
 * [about.md](../../../Xot/docs/about.md)
 * [about.md](../../../Tenant/docs/en/about.md)
 * [about.md](../../../Tenant/docs/it/about.md)
+<<<<<<< .merge_file_sWjZCu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -32,11 +33,14 @@ E' la libreria di estensione di tutte le altre librerie.
 * [about.md](../../../tenant/docs/en/about.md)
 * [about.md](../../../tenant/docs/it/about.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_y2Ih4j
 
 ### Versione Incoming
 
 E' la libreria di estensione di tutte le altre librerie.
 
+<<<<<<< .merge_file_sWjZCu
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -50,3 +54,6 @@ E' la libreria di estensione di tutte le altre librerie.
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_y2Ih4j

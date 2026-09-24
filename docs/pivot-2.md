@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_5CfA99
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_LaKoWH
 ---
 title: "_pivot"
 module: "Xot"
@@ -14,6 +17,7 @@ qmd: "pivot 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_5CfA99
 <<<<<<< HEAD
 =======
 =======
@@ -21,6 +25,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_LaKoWH
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

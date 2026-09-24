@@ -6,8 +6,8 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Tables\Actions\XotBaseTableAction;
 
-<<<<<<< HEAD
 final class XotAbsTableAction3 extends XotBaseTableAction {}
+<<<<<<< .merge_file_mmQkEr
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_PfEFzI
@@ -29,3 +29,5 @@ final class XotAbsTableAction3 extends XotBaseTableAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Jl0SDj

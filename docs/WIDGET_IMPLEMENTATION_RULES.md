@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_504Huu
 <<<<<<< HEAD
 <<<<<<< HEAD
 > **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
@@ -472,3 +473,5 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_aAbXu0

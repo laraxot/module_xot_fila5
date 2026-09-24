@@ -42,15 +42,19 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cyMWU0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qTxoCD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cyMWU0
 <<<<<<< HEAD
 =======
 =======
@@ -60,6 +64,8 @@ class IntegparamResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qTxoCD
     {
         return [
             // Schema del form
@@ -137,15 +143,19 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_cyMWU0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qTxoCD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_cyMWU0
 <<<<<<< HEAD
 =======
 =======
@@ -155,6 +165,8 @@ class IntegparamResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qTxoCD
     {
         return [
             Section::make('Dati Anagrafici')
@@ -231,6 +243,7 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 ## Collegamenti
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
+<<<<<<< .merge_file_cyMWU0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -244,6 +257,8 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
 - [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qTxoCD
 ```
 
 ## Checklist per Integrazioni Cross-Module
@@ -267,6 +282,7 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [ ] Implementare test automatizzati
 
 ## Collegamenti
+<<<<<<< .merge_file_cyMWU0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -284,11 +300,14 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qTxoCD
 - [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
 - [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
+<<<<<<< .merge_file_cyMWU0
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: 5 giugno 2025*
@@ -302,3 +321,6 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 =======
 *Ultimo aggiornamento: 5 giugno 2025*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: 5 giugno 2025*
+>>>>>>> .merge_file_qTxoCD

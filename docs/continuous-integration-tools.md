@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_gJ1v3l
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,6 +24,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/_continuous_
 =======
 >>>>>>> .merge_file_d8OTKc
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vQ8hbh
 title: 'Continuous integration tools'
 module: Xot
 type: reference
@@ -63,6 +66,7 @@ https://grafikart.fr/tutoriels/grumphp-836
 
 https://jakzal.github.io/toolbox/
 
+<<<<<<< .merge_file_gJ1v3l
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_D8BTfa
@@ -132,3 +136,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/_continuous_
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vQ8hbh

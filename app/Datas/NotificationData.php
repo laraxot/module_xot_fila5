@@ -15,8 +15,11 @@ use Spatie\LaravelData\Data;
 class NotificationData extends Data
 {
     /**
+<<<<<<< .merge_file_xp8TyW
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_sEQ6QE
      * @param  array<int, string>  $channels  Canali di notifica disponibili
      * @param  string  $default_channel  Canale predefinito
      * @param  bool  $queue  Se accodare le notifiche
@@ -24,6 +27,7 @@ class NotificationData extends Data
      * @param  array<string, mixed>  $broadcast  Configurazione broadcast
      * @param  array<string, mixed>  $slack  Configurazione Slack
      * @param  array<string, mixed>  $telegram  Configurazione Telegram
+<<<<<<< .merge_file_xp8TyW
 =======
      * @param array<int, string>   $channels        Canali di notifica disponibili
      * @param string               $default_channel Canale predefinito
@@ -42,6 +46,8 @@ class NotificationData extends Data
      * @param array<mixed> $slack           Configurazione Slack
      * @param array<mixed> $telegram        Configurazione Telegram
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_sEQ6QE
      */
     public function __construct(
         public readonly array $channels = ['mail', 'database'],
@@ -71,6 +77,7 @@ class NotificationData extends Data
             'bot_token' => '',
             'chat_id' => '',
         ],
+<<<<<<< .merge_file_xp8TyW
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -82,12 +89,16 @@ class NotificationData extends Data
     ) {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_sEQ6QE
 
     /**
      * Create a new instance of NotificationData with default values.
      */
     public static function make(): self
     {
+<<<<<<< .merge_file_xp8TyW
 <<<<<<< HEAD
 <<<<<<< HEAD
         return new self;
@@ -97,5 +108,8 @@ class NotificationData extends Data
 =======
         return new self();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        return new self;
+>>>>>>> .merge_file_sEQ6QE
     }
 }

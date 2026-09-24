@@ -92,6 +92,7 @@ L'architettura proposta dovrà evolvere attraverso iterazioni successive, valida
 ## Collegamenti tra versioni di analisi-architettura-sistema.md
 * [analisi-architettura-sistema.md](docs/analisi/architettura/analisi-architettura-sistema.md)
 * [analisi-architettura-sistema.md](../../../Xot/docs/architecture/analisi-architettura-sistema.md)
+<<<<<<< .merge_file_oyDFCc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -103,3 +104,5 @@ L'architettura proposta dovrà evolvere attraverso iterazioni successive, valida
 =======
 * [analisi-architettura-sistema.md](../../../xot/docs/architecture/analisi-architettura-sistema.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_nX6jDQ

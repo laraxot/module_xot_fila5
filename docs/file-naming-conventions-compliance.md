@@ -1,6 +1,7 @@
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
+<<<<<<< .merge_file_sUvz2Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@
 # File Naming Conventions Compliance - [DATE]
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MuPV0M
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -47,6 +50,7 @@
 ### Pattern di Rinomina
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
+<<<<<<< .merge_file_sUvz2Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -58,6 +62,8 @@
 =======
 ❌ PRIMA: nome-file-[DATE].md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MuPV0M
 ✅ DOPO: nome-file.md
 ```
 
@@ -104,6 +110,7 @@
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_sUvz2Y
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -115,3 +122,5 @@
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_MuPV0M

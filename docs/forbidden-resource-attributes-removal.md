@@ -2,6 +2,7 @@
 
 **Data**: 2026-01-09  
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-2026-01-09.md`)
+<<<<<<< .merge_file_OGCDJw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@
 =======
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-[DATE].md`)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yFIDtp
 
 ---
 
@@ -186,6 +189,7 @@ return [
 **Ultimo aggiornamento**: 2026-01-09
 
 **Report Completo**: Vedi `forbidden-resource-attributes-verification-2026-01-09.md`
+<<<<<<< .merge_file_OGCDJw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -201,3 +205,5 @@ return [
 
 **Report Completo**: Vedi `forbidden-resource-attributes-verification-[DATE].md`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yFIDtp

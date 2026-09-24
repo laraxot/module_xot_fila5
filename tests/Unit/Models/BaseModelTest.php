@@ -12,6 +12,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_K7qi2w
 <<<<<<< HEAD
 <<<<<<< HEAD
 $baseModel = new class extends BaseModel
@@ -22,6 +23,10 @@ $baseModel = new class extends BaseModel {
 =======
 $baseModel = new class extends BaseModel {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+$baseModel = new class extends BaseModel
+{
+>>>>>>> .merge_file_bVvm6D
     protected $table = 'test_table';
 };
 

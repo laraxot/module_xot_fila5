@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions\Artisan;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\File;
+<<<<<<< .merge_file_ZD4zfl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -15,11 +16,14 @@ use Illuminate\Support\Facades\File;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_tpKeSr
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match_all;
 
+<<<<<<< .merge_file_ZD4zfl
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +47,8 @@ use Webmozart\Assert\Assert;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_tpKeSr
 /**
  * Replaces Modules\Xot\Services\ArtisanService::errorShow().
  */
@@ -60,6 +66,7 @@ class ShowArtisanErrorLogAction
             $log = '';
         }
         $content = '';
+<<<<<<< .merge_file_ZD4zfl
 <<<<<<< HEAD
         if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
 =======
@@ -78,6 +85,9 @@ class ShowArtisanErrorLogAction
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> .merge_file_tpKeSr
             $content = File::get(storage_path('logs/'.$log));
         }
 

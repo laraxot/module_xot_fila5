@@ -8,6 +8,7 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
+<<<<<<< .merge_file_0XZW6P
 <<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
 public function getFormSchema(): array
@@ -21,6 +22,9 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_6X45Fs
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -37,6 +41,7 @@ public static function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< .merge_file_0XZW6P
 <<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
 public function getFormSchema(): array
@@ -50,6 +55,9 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_6X45Fs
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -121,6 +129,7 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< .merge_file_0XZW6P
 <<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
     public function getFormSchema(): array
@@ -134,6 +143,9 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_6X45Fs
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -148,6 +160,7 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< .merge_file_0XZW6P
 <<<<<<< HEAD
 <<<<<<< .merge_file_MNCtA1
     public function getFormSchema(): array
@@ -161,6 +174,9 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_6X45Fs
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

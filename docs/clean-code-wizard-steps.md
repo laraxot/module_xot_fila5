@@ -27,6 +27,7 @@ protected static function getPersonalStep(): Forms\Components\Wizard\Step
 
 ## Collegamenti
 - [Applicazione e nota nel modulo Patient](../../Patient/docs/clean-code-wizard-steps.md)
+<<<<<<< .merge_file_JCPTCd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -38,11 +39,14 @@ protected static function getPersonalStep(): Forms\Components\Wizard\Step
 =======
 - [Applicazione e nota nel modulo Patient](../../patient/docs/clean-code-wizard-steps.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NKjlu7
 
 **Questa regola è trasversale e vincolante per tutti i moduli.**
 
 ## Collegamenti tra versioni di clean-code-wizard-steps.md
 * [clean-code-wizard-steps.md](../../Patient/docs/clean-code-wizard-steps.md)
+<<<<<<< .merge_file_JCPTCd
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -54,3 +58,5 @@ protected static function getPersonalStep(): Forms\Components\Wizard\Step
 =======
 * [clean-code-wizard-steps.md](../../patient/docs/clean-code-wizard-steps.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_NKjlu7

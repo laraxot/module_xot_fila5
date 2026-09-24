@@ -220,6 +220,7 @@ php artisan view:clear
 
 ## Riferimenti
 
+<<<<<<< .merge_file_uztkQS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -269,6 +270,8 @@ php artisan view:clear
 =======
 ========
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_qog33J
 - [Documentazione Laravel Translations](https://laravel.com/docs/localization)
 - [Filament Form Components](https://filamentphp.com/docs/forms)
 - [Best Practices Filament](../docs/filament-best-practices.md)

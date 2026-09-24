@@ -15,6 +15,7 @@ class DownloadZipByPathsDiskAction
     /**
      * Crea un file ZIP dai percorsi forniti e lo restituisce come download.
      *
+<<<<<<< .merge_file_JvYM8A
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, string>  $attachments  Array di percorsi file
@@ -40,6 +41,10 @@ class DownloadZipByPathsDiskAction
      * @param string        $disk        Nome del disco di storage
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int, string>  $attachments  Array di percorsi file
+     * @param  string  $disk  Nome del disco di storage
+>>>>>>> .merge_file_SEmIfB
      * @return BinaryFileResponse|null Risposta di download o null se fallisce
      */
     public function execute(array $attachments, string $disk): ?BinaryFileResponse
@@ -48,6 +53,7 @@ class DownloadZipByPathsDiskAction
         $zipPath = 'temp/'.$zipFileName;
 
         // Crea un file temporaneo per lo ZIP usando Storage
+<<<<<<< .merge_file_JvYM8A
 <<<<<<< HEAD
 <<<<<<< HEAD
         $zip = new \ZipArchive;
@@ -65,11 +71,15 @@ class DownloadZipByPathsDiskAction
 =======
         $zip = new \ZipArchive();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $zip = new \ZipArchive;
+>>>>>>> .merge_file_SEmIfB
         $tempFilePath = storage_path('app/'.$zipPath);
 
         // Assicurati che la directory temp esista
         Storage::disk('local')->makeDirectory('temp');
 
+<<<<<<< .merge_file_JvYM8A
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($zip->open($tempFilePath, \ZipArchive::CREATE) === true) {
@@ -87,11 +97,15 @@ class DownloadZipByPathsDiskAction
 =======
         if (true === $zip->open($tempFilePath, \ZipArchive::CREATE)) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($zip->open($tempFilePath, \ZipArchive::CREATE) === true) {
+>>>>>>> .merge_file_SEmIfB
             foreach ($attachments as $attachment) {
                 $filePath = $attachment;
 
                 if (Storage::disk($disk)->exists($filePath)) {
                     $fileContent = Storage::disk($disk)->get($filePath);
+<<<<<<< .merge_file_JvYM8A
 <<<<<<< HEAD
 <<<<<<< HEAD
                     if ($fileContent !== null) {
@@ -109,6 +123,9 @@ class DownloadZipByPathsDiskAction
 =======
                     if (null !== $fileContent) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                    if ($fileContent !== null) {
+>>>>>>> .merge_file_SEmIfB
                         $zip->addFromString($attachment.'.pdf', $fileContent);
                     }
                 } else {

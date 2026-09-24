@@ -436,6 +436,7 @@ public function processData(): void
 
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
+<<<<<<< .merge_file_j1jUKs
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Testing Guidelines](./testing-guidelines.md)
@@ -460,3 +461,8 @@ This document provides comprehensive performance guidelines for maintaining opti
 =======
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Testing Guidelines](./testing-guidelines.md)
+
+This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
+>>>>>>> .merge_file_k7DwPs

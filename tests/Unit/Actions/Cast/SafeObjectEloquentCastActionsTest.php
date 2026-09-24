@@ -12,12 +12,8 @@ uses(TestCase::class);
 
 test('safe object cast action works', function (): void {
     $action = app(SafeObjectCastAction::class);
-<<<<<<< HEAD
     $obj = new class
     {
-=======
-    $obj = new class {
->>>>>>> laraxot/dev
         public string $str = 'test';
 
         public int $int = 123;
@@ -99,6 +95,7 @@ test('safe object cast action works', function (): void {
 
 test('safe eloquent cast action works', function (): void {
     $action = app(SafeEloquentCastAction::class);
+<<<<<<< .merge_file_uJQxGb
 <<<<<<< HEAD
 <<<<<<< HEAD
     $model = new class extends XotBaseModel
@@ -109,6 +106,10 @@ test('safe eloquent cast action works', function (): void {
 =======
     $model = new class extends XotBaseModel {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    $model = new class extends XotBaseModel
+    {
+>>>>>>> .merge_file_ldeSRu
         protected $attributes = [
             'str' => 'test',
             'int' => 123,
@@ -137,8 +138,8 @@ test('safe eloquent cast action works', function (): void {
         return $v > 100;
     }));
     Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (int $v): bool {
-<<<<<<< HEAD
         return $v === 123;
+<<<<<<< .merge_file_uJQxGb
 =======
         return 123 === $v;
 >>>>>>> laraxot/dev
@@ -149,6 +150,8 @@ test('safe eloquent cast action works', function (): void {
     Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (mixed $v): bool {
         return 123 === $v;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ldeSRu
     }));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'str', 'null_val', 'string'));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'null_val', 'str', 'string'));

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_7tnoDr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -24,6 +25,8 @@
 <<<<<<< HEAD
 >>>>>>> .merge_file_IaLFTo
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IUx4d6
 //------- IMMAGINI --------
 https://placeimg.com/640/480/arch
 https://picsum.photos/
@@ -107,6 +110,7 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+<<<<<<< .merge_file_7tnoDr
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
@@ -126,3 +130,6 @@ https://www.fakenamegenerator.com/gen-male-fr-fr.php
 =======
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+>>>>>>> .merge_file_IUx4d6

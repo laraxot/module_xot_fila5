@@ -63,15 +63,19 @@ public function getTableBulkActions(): array
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OF9YBL
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 =======
 =======
@@ -81,6 +85,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_OF9YBL
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -118,15 +124,19 @@ public function getTableActions(): array
  * @return array<mixed, Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OF9YBL
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 =======
 =======
@@ -136,6 +146,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_OF9YBL
 {
     // ...
 }
@@ -183,15 +195,19 @@ public function getTableBulkActions(): array
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OF9YBL
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 =======
 =======
@@ -201,6 +217,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_OF9YBL
 {
     return [
         'template_slug' => Select::make('template_slug')
@@ -324,6 +342,7 @@ grep -r "array<mixed" Modules/ --include="*.php"
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole generali estensione classi
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - Guide PHPStan
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
@@ -337,11 +356,15 @@ grep -r "array<mixed" Modules/ --include="*.php"
 =======
 - [Filament Form Schema Structure](../../../../docs/filament_form_schema_structure.md) - Struttura form schema
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
+>>>>>>> .merge_file_OF9YBL
 
 ---
 
 **Filosofia**: Type Safety, Coerenza, Manutenibilità
 **Pattern**: `array<string, T>` sempre, mai `array<int, T>` o `array<mixed, T>`
+<<<<<<< .merge_file_9kNfj6
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Priorità**: CRITICA - PHPStan Level 10 compliance
@@ -355,3 +378,6 @@ grep -r "array<mixed" Modules/ --include="*.php"
 =======
 **Priorità**: CRITICA - PHPStan Level 10 compliance
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Priorità**: CRITICA - PHPStan Level 10 compliance
+>>>>>>> .merge_file_OF9YBL

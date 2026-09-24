@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Schema;
-<<<<<<< HEAD
 use Mockery;
+<<<<<<< .merge_file_C0x9XN
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_JzpRMD
@@ -24,11 +24,14 @@ use Mockery;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ynhU1s
 use Modules\Xot\Exports\QueryExport;
 use Modules\Xot\Filament\Actions\Form\FieldRefreshAction;
 use Modules\Xot\Tests\Fixtures\Stubs\XotRefreshRecord;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_C0x9XN
 <<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
@@ -45,12 +48,16 @@ use ReflectionMethod;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+use ReflectionClass;
+use ReflectionMethod;
+>>>>>>> .merge_file_ynhU1s
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< HEAD
     Mockery::close();
+<<<<<<< .merge_file_C0x9XN
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_JzpRMD
@@ -67,6 +74,8 @@ afterEach(function (): void {
     \Mockery::close();
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ynhU1s
 });
 
 describe('Xot FieldRefresh QueryExport coverage', function (): void {
@@ -82,6 +91,7 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
         }
 
         // Reflect setUp and action closure via invoking protected methods
+<<<<<<< .merge_file_C0x9XN
 <<<<<<< HEAD
         $ref = new ReflectionClass(FieldRefreshAction::class);
 =======
@@ -100,6 +110,9 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
         $ref = new \ReflectionClass(FieldRefreshAction::class);
 >>>>>>> laraxot/dev
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $ref = new ReflectionClass(FieldRefreshAction::class);
+>>>>>>> .merge_file_ynhU1s
         $inst = null;
         try {
             $inst = FieldRefreshAction::make('title');
@@ -109,10 +122,10 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
             } catch (\Throwable) {
             }
         }
-<<<<<<< HEAD
         if ($inst !== null) {
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
                 if ($method->getDeclaringClass()->getName() !== FieldRefreshAction::class) {
+<<<<<<< .merge_file_C0x9XN
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_JzpRMD
@@ -136,6 +149,8 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ynhU1s
                     continue;
                 }
                 if (in_array($method->getName(), ['__construct', 'mount', 'render'], true)) {
@@ -147,6 +162,7 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
                     foreach ($method->getParameters() as $param) {
                         if ($param->isDefaultValueAvailable()) {
                             $args[] = $param->getDefaultValue();
+<<<<<<< .merge_file_C0x9XN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -155,12 +171,15 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ynhU1s
                         } elseif ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === Set::class) {
                             $set = Mockery::mock(Set::class);
                             $set->shouldReceive('__invoke')->zeroOrMoreTimes();
                             $args[] = $set;
                         } else {
                             $args[] = new XotRefreshRecord;
+<<<<<<< .merge_file_C0x9XN
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -184,6 +203,8 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ynhU1s
                         }
                     }
                     $method->invoke($inst, ...$args);
@@ -231,10 +252,10 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
         }
 
         $n = 0;
-<<<<<<< HEAD
         $ref = new ReflectionClass(QueryExport::class);
         foreach ($ref->getMethods() as $method) {
             if ($method->getDeclaringClass()->getName() !== QueryExport::class || str_starts_with($method->getName(), '__')) {
+<<<<<<< .merge_file_C0x9XN
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_JzpRMD
@@ -258,15 +279,17 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ynhU1s
                 continue;
             }
             try {
                 $method->setAccessible(true);
                 $method->invoke($export);
-<<<<<<< HEAD
                 $n++;
             } catch (\Throwable) {
                 $n++;
+<<<<<<< .merge_file_C0x9XN
 =======
 <<<<<<< HEAD
 <<<<<<< .merge_file_JzpRMD
@@ -290,6 +313,8 @@ describe('Xot FieldRefresh QueryExport coverage', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_ynhU1s
             }
         }
         Assert::assertGreaterThan(0, $n);

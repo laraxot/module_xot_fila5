@@ -7,6 +7,7 @@ description: 'Elenco di 1 riferimenti esterni raccolti per pest, deduplicati e c
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_caexRO
 <<<<<<< HEAD
 =======
 converted_from: _pest.txt
@@ -18,16 +19,27 @@ converted_from: _pest.txt
 =======
 <<<<<<< HEAD
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+converted_from: _pest.txt
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_KI2E2V
 converted_from: pest.txt
 =======
 converted_from: _pest.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_caexRO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> laraxot/dev
+=======
+converted_from: _pest.txt
+>>>>>>> .merge_file_KI2E2V
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

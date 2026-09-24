@@ -412,16 +412,20 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
+<<<<<<< .merge_file_Vvk6UX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FHXrhc
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< .merge_file_Vvk6UX
 <<<<<<< HEAD
 =======
 =======
@@ -438,3 +442,5 @@ php artisan xot:test-framework
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_FHXrhc

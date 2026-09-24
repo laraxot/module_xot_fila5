@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_HiHEwx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_P7LMij
 # Architettura Frontend
 
 ## Tecnologie Principali
@@ -107,6 +110,7 @@ $post = Post::findOrFail($id);
 - [Struttura dei Temi](themes-structure.md)
 - [Standard del Codice](code-standards.md)
 - [Regole di Documentazione](documentation-rules.md)
+<<<<<<< .merge_file_HiHEwx
 <<<<<<< HEAD
 =======
 =======
@@ -125,3 +129,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/frontend-arc
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/frontend-architecture.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_P7LMij

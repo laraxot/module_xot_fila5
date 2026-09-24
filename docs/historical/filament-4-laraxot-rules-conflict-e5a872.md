@@ -149,6 +149,7 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< .merge_file_UMNIe8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -157,10 +158,13 @@ class MyPage extends XotBasePage
 <<<<<<< HEAD
 >>>>>>> .merge_file_i7why3
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4Mxesp
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_UMNIe8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_hjHAOZ
@@ -173,6 +177,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_4Mxesp
 
 // ✅ CORRETTO
 public function getFormSchema(): array

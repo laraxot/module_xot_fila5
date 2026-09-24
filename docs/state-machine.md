@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_rsoYyt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mpvBSc
 # Regole Generali sulle State Machine
 
 ## Transizioni
@@ -17,6 +20,7 @@
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)
+<<<<<<< .merge_file_rsoYyt
 <<<<<<< HEAD
 =======
 =======
@@ -35,3 +39,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/state-machin
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/state-machine-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_mpvBSc

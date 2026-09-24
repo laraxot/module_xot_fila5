@@ -2,6 +2,7 @@
 
 ## Problema Identificato
 
+<<<<<<< .merge_file_rkN0V2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -25,6 +26,9 @@ Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la ca
 =======
 Lo script `bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
+>>>>>>> .merge_file_mwSvas
 
 ## Analisi
 
@@ -38,6 +42,7 @@ Dopo l'analisi dello script, è stato identificato un problema logico nell'imple
 
 Dovrebbe creare un symlink nella root del progetto:
 ```
+<<<<<<< .merge_file_rkN0V2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -61,6 +66,9 @@ Dovrebbe creare un symlink nella root del progetto:
 =======
 .gemini -> bashscripts/ai/.gemini
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+./.gemini -> ./bashscripts/ai/.gemini
+>>>>>>> .merge_file_mwSvas
 ```
 
 ## Comportamento Attuale
@@ -70,6 +78,7 @@ Lo script cerca una cartella `.gemini` nella root del progetto e crea un symlink
 ## Soluzione
 
 Lo script deve essere corretto per invertire la logica:
+<<<<<<< .merge_file_rkN0V2
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,10 +102,14 @@ Lo script deve essere corretto per invertire la logica:
 =======
 - Cercare le cartelle specifiche in `bashscripts/ai/`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Cercare le cartelle specifiche in `bashscripts/ai/`
+>>>>>>> .merge_file_mwSvas
 - Creare symlink nella root del progetto che puntano a quelle cartelle
 
 ## Cartelle Coinvolte
 
+<<<<<<< .merge_file_rkN0V2
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,3 +139,7 @@ Lo script deve essere corretto per invertire la logica:
 - Source: `bashscripts/ai/.gemini`
 - Target symlink: `.gemini`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Source: `./bashscripts/ai/.gemini`
+- Target symlink: `./.gemini`
+>>>>>>> .merge_file_mwSvas

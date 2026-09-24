@@ -181,6 +181,7 @@ class SafeFloatCastActionTest extends TestCase
 
 - [SafeStringCastAction](../actions/cast/safe-string-cast-action.md)
 - [Xot Actions Documentation](../actions/README.md)
+<<<<<<< .merge_file_F6sR2k
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -192,11 +193,14 @@ class SafeFloatCastActionTest extends TestCase
 =======
 - [Xot Actions Documentation](../actions/readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_eqxA4l
 - [DRY Principle](../../project_docs/dry-principle.md)
 - [KISS Principle](../../project_docs/kiss-principle.md)
 
 ---
 
+<<<<<<< .merge_file_F6sR2k
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
@@ -210,3 +214,6 @@ class SafeFloatCastActionTest extends TestCase
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> .merge_file_eqxA4l

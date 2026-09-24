@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_NEIiXG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_b2GkKm
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OsRxZT
 ---
 title: "Video editor"
 type: reference
@@ -23,6 +26,7 @@ note: "Convertito da video_editor.txt (documento) da convert-docs-txt-to-md.py."
 # video_editor
 
 <!-- Contenuto migrato da _docs/video_editor.txt -->
+<<<<<<< .merge_file_NEIiXG
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_oB0Iqn
@@ -35,12 +39,15 @@ note: "Convertito da video_editor.txt (documento) da convert-docs-txt-to-md.py."
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_OsRxZT
 
 https://github.com/kudlav/videoeditor
 https://github.com/kudlav/videoeditor-doc
 
 --------------------------------------------
 
+<<<<<<< .merge_file_NEIiXG
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,3 +76,7 @@ composer require pbmedia/laravel-ffmpeg
 
 composer require pbmedia/laravel-ffmpeg
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+
+composer require pbmedia/laravel-ffmpeg
+>>>>>>> .merge_file_OsRxZT

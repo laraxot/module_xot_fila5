@@ -10,8 +10,11 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
+<<<<<<< .merge_file_oNbkiQ
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_yZPt1J
  * @property int $id
  * @property int|null $user_id
  * @property string|null $name
@@ -49,6 +52,7 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed> treeLabel()
  * @method array<string, mixed> treeSons()
  * @method array<string, mixed> toArray()
+<<<<<<< .merge_file_oNbkiQ
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -109,12 +113,15 @@ use Illuminate\Support\Carbon;
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_yZPt1J
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_oNbkiQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 interface ModelInputContract {}
@@ -128,3 +135,6 @@ interface ModelInputContract
 {
 }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+interface ModelInputContract {}
+>>>>>>> .merge_file_yZPt1J

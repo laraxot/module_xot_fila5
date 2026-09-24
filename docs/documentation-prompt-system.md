@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_UvfT9c
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_peVyzy
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica
@@ -13,6 +16,7 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 
 - [Documentazione Completa del Sistema di Prompt](prompts_documentation_system.md)
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
+<<<<<<< .merge_file_UvfT9c
 <<<<<<< HEAD
 =======
 =======
@@ -24,6 +28,8 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 - [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_peVyzy
 
 ## Cos'è il Sistema di Prompt
 
@@ -45,6 +51,7 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 
 ### Come Utilizzare Entrambi i Sistemi
 
+<<<<<<< .merge_file_UvfT9c
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
@@ -62,6 +69,10 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
 2. Utilizzare il [Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md) per istruzioni dettagliate
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
+2. Utilizzare il [Sistema di Prompt](prompts_documentation_system.md) per istruzioni dettagliate
+>>>>>>> .merge_file_peVyzy
 
 ## Miglioramenti Recenti
 
@@ -82,6 +93,7 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 ## Collegamenti Correlati
 
 - [Sistema di Collegamenti della Documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_UvfT9c
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
@@ -111,3 +123,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/documentatio
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
+- [Percorsi Relativi nella Documentazione](percorsi_relativi_documentazione.md)
+- [Documentazione del Sistema di Prompt](prompts_documentation_system.md)
+>>>>>>> .merge_file_peVyzy

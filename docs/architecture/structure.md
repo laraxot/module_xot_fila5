@@ -292,6 +292,7 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\Xot
 Modules\\Xot\\Database\\Factories
 Modules\\Xot\\Database\\Seeders
+<<<<<<< .merge_file_DUsRtu
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_xot_fila3
@@ -305,6 +306,9 @@ Modules\\Xot\\Database\\Seeders
 =======
 - **Pacchetto Composer**: laraxot/module_xot_fila5
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Pacchetto Composer**: laraxot/module_xot_fila3
+>>>>>>> .merge_file_WBw9nb
 marco sottana
 - **Dipendenze**: php ^8.2 calebporzio/sushi ^2.5 coolsam/panel-modules * doctrine/dbal * fidum/laravel-eloquent-morph-to-one * filament/filament ^3.3 filament/spatie-laravel-media-library-plugin ^3.2 filament/spatie-laravel-translatable-plugin ^3.2 aaronfrancis/fast-paginate * guzzlehttp/guzzle * laravel/folio ^1.1 laravel/framework * laravel/pennant ^1.11 laravel/pulse ^1.2 livewire/livewire * maatwebsite/excel ^3.1 nwidart/laravel-modules * predis/predis ^2.2 spatie/cpu-load-health-check ^1.0 spatie/laravel-data ^4.7
 - **Totale file PHP**: 968
@@ -858,6 +862,7 @@ lang/fr
 lang/gr
 lang/it
 lang/ka
+<<<<<<< .merge_file_DUsRtu
 <<<<<<< HEAD
 <<<<<<< HEAD
 lang/lang
@@ -871,6 +876,9 @@ lang/<locale>
 =======
 lang/<locale>
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+lang/lang
+>>>>>>> .merge_file_WBw9nb
 lang/lang/ar
 lang/lang/da
 lang/lang/de
@@ -1054,6 +1062,7 @@ tests_old
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
+<<<<<<< .merge_file_DUsRtu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1081,6 +1090,8 @@ tests_old
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_WBw9nb
 * [structure.md](../../../Gdpr/project_docs/structure.md)
 * [structure.md](../../../Notify/project_docs/structure.md)
 * [structure.md](../../../Xot/project_docs/structure.md)
@@ -1116,6 +1127,7 @@ b6f667c (.)
 - La registrazione dei comandi nel ServiceProvider del modulo deve usare il namespace e path corretti.
 - Aggiornare la documentazione del modulo con esempi e riferimenti.
 
+<<<<<<< .merge_file_DUsRtu
 <<<<<<< HEAD
 <<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
@@ -1129,3 +1141,6 @@ Vedi anche la documentazione specifica del modulo per dettagli e casi particolar
 =======
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
+>>>>>>> .merge_file_WBw9nb

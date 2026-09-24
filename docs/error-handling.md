@@ -32,6 +32,7 @@
 - [Patient Errori e Soluzioni](../../Patient/docs/models.md)
 - [Patient Workflow](../../Patient/docs/doctor-registration-workflow.md)
 - [README Xot](./README.md)
+<<<<<<< .merge_file_vCrolU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -47,6 +48,8 @@
 - [Patient Workflow](../../patient/docs/doctor-registration-workflow.md)
 - [README Xot](./readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wCnT3X
 
 # Errori di Validazione Custom (Laravel)
 
@@ -72,6 +75,7 @@ throw new \Illuminate\Validation\ValidationException(
 
 ## Approfondimenti
 - [Patient: errors/validation.md](../../Patient/docs/errors/validation.md)
+<<<<<<< .merge_file_vCrolU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -83,3 +87,5 @@ throw new \Illuminate\Validation\ValidationException(
 =======
 - [Patient: errors/validation.md](../../patient/docs/errors/validation.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_wCnT3X

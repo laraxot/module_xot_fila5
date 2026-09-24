@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_dMCnGb
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,6 +24,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/web_scraping
 =======
 >>>>>>> .merge_file_fPjaMt
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kEsvU8
 title: 'web_scraping'
 module: Xot
 type: reference
@@ -42,6 +45,7 @@ Introduction to Web Scraping With Laravel
 https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a217e1444f7c
 
 https://sergeyzhuk.me/2018/02/12/fast-webscraping-with-reactphp/
+<<<<<<< .merge_file_dMCnGb
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_MQuCSv
@@ -62,3 +66,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/web_scraping
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/web_scraping.txt
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_kEsvU8

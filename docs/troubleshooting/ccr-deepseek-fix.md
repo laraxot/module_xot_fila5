@@ -20,6 +20,7 @@ To activate the fix, update your CCR configuration (usually `~/.claude-code-rout
 
 ```json
 {
+<<<<<<< .merge_file_451ZXP
 <<<<<<< HEAD
 <<<<<<< HEAD
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
@@ -33,6 +34,9 @@ To activate the fix, update your CCR configuration (usually `~/.claude-code-rout
 =======
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila5_mono/bashscripts/ccr/custom-router.js"
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+  "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
+>>>>>>> .merge_file_CquVxM
 }
 ```
 
@@ -54,6 +58,7 @@ Or, if you want it specifically for the `deepseek-reasoner` model configuration:
 After applying the config, run a command that triggers a tool call:
 `cc "explain this code and use a tool to check the file"`
 
+<<<<<<< .merge_file_451ZXP
 <<<<<<< HEAD
 <<<<<<< HEAD
 The error should no longer occur.
@@ -67,3 +72,6 @@ The error should no longer occur.
 =======
 The error should no longer occur.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+The error should no longer occur.
+>>>>>>> .merge_file_CquVxM

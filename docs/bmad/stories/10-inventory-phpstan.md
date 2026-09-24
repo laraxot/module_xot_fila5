@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_wOCr7y
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -48,6 +49,8 @@ metadata:
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Wla0ff
 # BMAD Story 10 — Inventory: 20 errori PHPStan
 
 **Modulo:** `Inventory`

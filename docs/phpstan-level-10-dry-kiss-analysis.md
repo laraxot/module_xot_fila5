@@ -72,6 +72,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/Contact.php` (809 righe!)
@@ -82,6 +83,9 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 =======
 **File**: `Modules/<nome progetto>/app/Models/Contact.php` (809 righe!)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**File**: `Modules/<nome progetto>/app/Models/Contact.php` (809 righe!)
+>>>>>>> .merge_file_vMJ4LT
 
 **Errori PHPStan Level 10**:
 ```
@@ -119,6 +123,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 | <nome progetto> | 21+ | 21 | ⚠️ Necessita refactoring Contact |
@@ -129,6 +134,9 @@ if ($body_html === null) { ... }
 =======
 | <nome progetto> | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+| <nome progetto> | 21+ | 21 | ⚠️ Necessita refactoring Contact |
+>>>>>>> .merge_file_vMJ4LT
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -171,6 +179,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 - <nome progetto> module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
@@ -181,6 +190,9 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 =======
 - <nome progetto> module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- <nome progetto> module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
+>>>>>>> .merge_file_vMJ4LT
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -320,6 +332,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/Contact.php`
@@ -330,6 +343,9 @@ protected function casts(): array
 =======
 **File**: `Modules/<nome progetto>/app/Models/Contact.php`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**File**: `Modules/<nome progetto>/app/Models/Contact.php`
+>>>>>>> .merge_file_vMJ4LT
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -390,6 +406,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
@@ -400,6 +417,9 @@ Contact.php (809 lines) →
 =======
 **File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
+>>>>>>> .merge_file_vMJ4LT
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -481,6 +501,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **<nome progetto>**: 5 modelli
@@ -491,11 +512,15 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 =======
 - **<nome progetto>**: 5 modelli
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **<nome progetto>**: 5 modelli
+>>>>>>> .merge_file_vMJ4LT
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 cd Modules/<nome progetto>/app/Models
@@ -506,6 +531,9 @@ cd Modules/ModuloEsempio/app/Models
 =======
 cd Modules/<nome progetto>/app/Models
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+cd Modules/<nome progetto>/app/Models
+>>>>>>> .merge_file_vMJ4LT
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -524,6 +552,7 @@ done
 
 **Comando**:
 ```bash
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/<nome progetto>/app/Models --quiet
@@ -534,6 +563,9 @@ vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
 =======
 vendor/bin/pint Modules/User/app/Models Modules/<nome progetto>/app/Models --quiet
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+vendor/bin/pint Modules/User/app/Models Modules/<nome progetto>/app/Models --quiet
+>>>>>>> .merge_file_vMJ4LT
 ```
 
 **Risultato**:
@@ -945,6 +977,7 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Models --level=10
@@ -955,11 +988,15 @@ $activeUsers = User::active()->get(); // ✅ Works!
 =======
 ./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Models --level=10
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Models --level=10
+>>>>>>> .merge_file_vMJ4LT
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 - <nome progetto>: ⚠️ 21 errors (Contact.php - needs refactoring)
@@ -970,6 +1007,9 @@ $activeUsers = User::active()->get(); // ✅ Works!
 =======
 - <nome progetto>: ⚠️ 21 errors (Contact.php - needs refactoring)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- <nome progetto>: ⚠️ 21 errors (Contact.php - needs refactoring)
+>>>>>>> .merge_file_vMJ4LT
 
 ### Manual Code Review
 
@@ -1032,6 +1072,7 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 - [DRY/KISS Model Refactoring (2025-10-15)](./dry-kiss-model-refactoring-2025-10-15.md)
 - [Model Inheritance Rules (User Module)](../../User/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../Themes/Zero/docs/model-usage-in-themes.md)
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1043,6 +1084,10 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
+- [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
+>>>>>>> .merge_file_vMJ4LT
 - [Duplicate Methods Analysis](./duplicate-methods-analysis.md)
 
 ---
@@ -1052,6 +1097,7 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 *PHP Version: 8.3.20*
 *Laravel Version: 12.x*
 *Analyzed by: Claude Code*
+<<<<<<< .merge_file_GVpn5s
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Validation: ✅ PHPStan Level 10, Manual Review*
@@ -1061,3 +1107,6 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 =======
 *Validation: ✅ PHPStan Level 10, Manual Review*
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+*Validation: ✅ PHPStan Level 10, Manual Review*
+>>>>>>> .merge_file_vMJ4LT

@@ -124,6 +124,7 @@ $returnType = $parentMethod->getReturnType();
 ## collegamento ad altre risorse
 
 - [regole di ereditarietà in php](docs/standards/php-inheritance-rules.md)
+<<<<<<< .merge_file_Q6DzId
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
@@ -139,3 +140,6 @@ $returnType = $parentMethod->getReturnType();
 - [estensione pattern filament](../Xot/docs/filament_extension_pattern.md)
 - [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
+>>>>>>> .merge_file_ybAicF

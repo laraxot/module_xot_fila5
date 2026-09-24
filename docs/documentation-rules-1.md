@@ -6,15 +6,19 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bzc4yq
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 =======
 =======
@@ -29,6 +33,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bzc4yq
 
 ## Validazione dei Collegamenti
 
@@ -37,6 +43,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
@@ -54,17 +61,24 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> .merge_file_bzc4yq
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bzc4yq
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -80,6 +94,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 =======
 =======
@@ -105,6 +120,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bzc4yq
 ```
 
 ### Checklist di Validazione
@@ -114,6 +131,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
@@ -127,6 +145,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> .merge_file_bzc4yq
 
 ## Validazione dei Collegamenti
 
@@ -135,6 +156,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
@@ -152,17 +174,24 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> .merge_file_bzc4yq
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bzc4yq
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -178,6 +207,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 =======
 =======
@@ -203,6 +233,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bzc4yq
 ```
 
 ### Checklist di Validazione
@@ -212,6 +244,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
@@ -225,6 +258,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> .merge_file_bzc4yq
 
 ## Validazione dei Collegamenti
 
@@ -233,6 +269,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
@@ -250,17 +287,24 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> .merge_file_bzc4yq
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bzc4yq
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -276,6 +320,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 =======
 =======
@@ -301,6 +346,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_bzc4yq
 ```
 
 ### Checklist di Validazione
@@ -394,6 +441,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - La documentazione è una parte fondamentale del progetto
 - Una buona documentazione riduce il tempo di onboarding
 - La documentazione deve evolversi insieme al codice
+<<<<<<< .merge_file_3ish5q
 <<<<<<< HEAD
 <<<<<<< HEAD
 - I collegamenti bidirezionali sono essenziali per la navigabilità
@@ -407,3 +455,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- I collegamenti bidirezionali sono essenziali per la navigabilità
+>>>>>>> .merge_file_bzc4yq

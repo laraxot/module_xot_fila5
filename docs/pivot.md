@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_1H6H4R
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +17,8 @@
 =======
 >>>>>>> .merge_file_OpyDQV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KEISep
 ---
 title: 'Pivot'
 module: Xot
@@ -31,6 +34,7 @@ updated: 2026-08-24
 https://github.com/larastan/larastan/issues/515
 
 **
+<<<<<<< .merge_file_1H6H4R
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_LmHx8n
@@ -50,6 +54,8 @@ https://github.com/larastan/larastan/issues/515
 
 /**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KEISep
  * @extends JsonResource<\App\User>
 */
 class UserResource extends JsonResource
@@ -67,6 +73,7 @@ class UserResource extends JsonResource
       }
 }
 
+<<<<<<< .merge_file_1H6H4R
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +110,8 @@ paginate - Builder
 =======
 >>>>>>> .merge_file_OpyDQV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KEISep
 ## Appendice — contenuto migrato
 
 ---
@@ -139,14 +148,6 @@ class UserResource extends JsonResource
          ];
       }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_LmHx8n
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_OpyDQV
 
 ### Note raw residue (dump originale)
 
@@ -158,32 +159,15 @@ getRelationValue("pivot")
 $dpia = request()->route('dpias');
 $dpia = app('request')->route('dpias');
 
-<<<<<<< .merge_file_LmHx8n
-=======
-=======
- //return $this->pivot->time_to_live;  // This is the line 45
-
-getRelationValue("pivot")
-
-
-
-$dpia = request()->route('dpias');
-$dpia = app('request')->route('dpias');
-///////////////////////
->>>>>>> laraxot/dev
->>>>>>> .merge_file_OpyDQV
 /**
  * @property int $id
  */
 class MyCustomModel extends Model {}
-<<<<<<< .merge_file_LmHx8n
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_OpyDQV
 ```
 
 - `getModel` - Builder
 - `paginate` - Builder
+<<<<<<< .merge_file_1H6H4R
 <<<<<<< .merge_file_LmHx8n
 =======
 =======
@@ -197,3 +181,5 @@ paginate - Builder
 =======
 paginate - Builder
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KEISep

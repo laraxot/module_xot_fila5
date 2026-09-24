@@ -1,6 +1,7 @@
 # Xot Module Documentation Index
 
 ## Core Architecture
+<<<<<<< .merge_file_F4OoDx
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architecture Complete Guide](./architecture-complete-2025.md)
@@ -14,6 +15,9 @@
 =======
 - [Architecture Complete Guide](./architecture-complete.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Architecture Complete Guide](./architecture-complete-2025.md)
+>>>>>>> .merge_file_6HJEBA
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Project Philosophy, Religion, Politics, Zen](./project-philosophy-religion-politics-zen.md)
@@ -29,6 +33,7 @@
 - [GitHub Workflows Standard](./github-workflows-standard.md)
 
 ## PHPStan Analysis Reports
+<<<<<<< .merge_file_F4OoDx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -48,6 +53,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6HJEBA
 - [PHPStan Analysis 2025-01-27](./phpstan-analysis-2025-01-27.md)
 - [PHPStan Analysis 2025-12-17](./phpstan-analysis-2025-12-17.md)
 - [PHPStan Analysis 2025-12-18](./phpstan-analysis-2025-12-18.md)
@@ -71,6 +78,7 @@
 
 ---
 *Last updated: 2025-12-18*
+<<<<<<< .merge_file_F4OoDx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -82,3 +90,5 @@
 =======
 *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6HJEBA

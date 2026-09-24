@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -31,11 +32,14 @@ use Webmozart\Assert\Assert;
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GsINwT
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
@@ -45,6 +49,8 @@ use function Safe\preg_replace;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GsINwT
 /**
  * Class RouteDynAction.
  */
@@ -55,6 +61,7 @@ class RouteDynAction
     private static string $namespace_start = '';
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -76,6 +83,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     private static function requireStringValue(array $v, string $key): string
     {
@@ -86,6 +96,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -111,6 +122,9 @@ class RouteDynAction
      * @param array<string, mixed> $v
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      * @return array<string, mixed>
      */
     public static function getGroupOpts(array $v, ?string $namespace): array
@@ -123,6 +137,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -144,6 +159,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getPrefix(array $v, ?string $namespace): string
     {
@@ -154,6 +172,7 @@ class RouteDynAction
         $name = self::requireStringValue($v, 'name');
         $prefix = mb_strtolower($name);
         $param_name = self::getParamName($v, $namespace);
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($param_name !== '') {
@@ -175,6 +194,9 @@ class RouteDynAction
 =======
         if ('' !== $param_name) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($param_name !== '') {
+>>>>>>> .merge_file_GsINwT
             return $prefix.'/{'.$param_name.'}';
         }
 
@@ -182,6 +204,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -203,6 +226,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getAs(array $v, ?string $_namespace): string
     {
@@ -226,6 +252,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -247,6 +274,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getNamespace(array $v, ?string $namespace): ?string
     {
@@ -256,6 +286,7 @@ class RouteDynAction
 
         $namespace = self::requireStringValue($v, 'name');
         $namespace = str_replace(['{', '}'], '', $namespace);
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($namespace === '') {
@@ -277,6 +308,9 @@ class RouteDynAction
 =======
         if ('' === $namespace) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($namespace === '') {
+>>>>>>> .merge_file_GsINwT
             return null;
         }
 
@@ -284,6 +318,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -305,6 +340,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getAct(array $v, ?string $_namespace): string
     {
@@ -330,6 +368,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -351,6 +390,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getParamName(array $v, ?string $_namespace): string
     {
@@ -366,6 +408,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -391,6 +434,9 @@ class RouteDynAction
      * @param array<string, mixed> $v
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      * @return array<int, string>
      */
     public static function getParamsName(array $v, ?string $namespace): array
@@ -401,6 +447,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -426,6 +473,9 @@ class RouteDynAction
      * @param array<string, mixed> $v
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      * @return array<string, mixed>
      */
     public static function getResourceOpts(array $v, ?string $namespace): array
@@ -443,6 +493,7 @@ class RouteDynAction
             $opts['only'] = $v['only'];
         }
 
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($param_name === '' && ! isset($opts['only'])) {
@@ -464,6 +515,9 @@ class RouteDynAction
 =======
         if ('' === $param_name && ! isset($opts['only'])) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($param_name === '' && ! isset($opts['only'])) {
+>>>>>>> .merge_file_GsINwT
             $opts['only'] = ['index'];
         }
 
@@ -473,6 +527,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -494,6 +549,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getController(array $v, ?string $_namespace): string
     {
@@ -510,6 +568,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -531,6 +590,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getUri(array $v, ?string $_namespace): string
     {
@@ -540,6 +602,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -565,6 +628,9 @@ class RouteDynAction
      * @param array<string, mixed> $v
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      * @return array<int, string>
      */
     public static function getMethod(array $v, ?string $_namespace): array
@@ -583,6 +649,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -604,6 +671,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function getUses(array $v, ?string $namespace): string
     {
@@ -614,6 +684,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -639,6 +710,9 @@ class RouteDynAction
      * @param array<string, mixed> $v
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      * @return array<string, mixed>
      */
     public static function getCallback(array $v, ?string $namespace, ?string $curr): array
@@ -646,6 +720,7 @@ class RouteDynAction
         $name = self::requireStringValue($v, 'name');
         $as = Str::slug($name);
         $uses = self::getUses($v, $namespace);
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($curr !== null) {
@@ -667,6 +742,9 @@ class RouteDynAction
 =======
         if (null !== $curr) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($curr !== null) {
+>>>>>>> .merge_file_GsINwT
             $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
         } else {
             $uses = '\\'.self::$namespace_start.'\\'.$uses;
@@ -676,6 +754,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, array<string, mixed>>  $array
@@ -697,6 +776,9 @@ class RouteDynAction
 =======
      * @param array<int, array<string, mixed>> $array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int, array<string, mixed>>  $array
+>>>>>>> .merge_file_GsINwT
      */
     public static function dynamic_route(
         array $array,
@@ -706,6 +788,7 @@ class RouteDynAction
     ): void {
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($namespace_start !== null) {
@@ -727,6 +810,9 @@ class RouteDynAction
 =======
         if (null !== $namespace_start) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($namespace_start !== null) {
+>>>>>>> .merge_file_GsINwT
             self::$namespace_start = $namespace_start;
         }
 
@@ -745,6 +831,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -768,11 +855,14 @@ class RouteDynAction
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GsINwT
      * @param  array<string, mixed>  $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
         if (! array_key_exists('name', $v) || $v['name'] === null) {
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
@@ -782,6 +872,8 @@ class RouteDynAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_GsINwT
             return;
         }
         $name = self::requireStringValue($v, 'name');
@@ -792,6 +884,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -813,6 +906,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -821,6 +917,7 @@ class RouteDynAction
         }
 
         $sub_namespace = self::getNamespace($v, $namespace);
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
         $curr = $curr === null ? $sub_namespace : $curr;
@@ -842,6 +939,9 @@ class RouteDynAction
 =======
         $curr = null === $curr ? $sub_namespace : $curr;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $curr = $curr === null ? $sub_namespace : $curr;
+>>>>>>> .merge_file_GsINwT
         Assert::isArray($subs = $v['subs']);
         /** @var array<int, array<string, mixed>> $subsList */
         $subsList = array_values($subs);
@@ -849,6 +949,7 @@ class RouteDynAction
     }
 
     /**
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string, mixed>  $v
@@ -870,6 +971,9 @@ class RouteDynAction
 =======
      * @param array<string, mixed> $v
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $v
+>>>>>>> .merge_file_GsINwT
      */
     public static function createRouteActs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -896,6 +1000,7 @@ class RouteDynAction
      */
     public static function prefixedResourceNames(string $prefix): array
     {
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (mb_substr($prefix, -1) === '.') {
@@ -917,6 +1022,9 @@ class RouteDynAction
 =======
         if ('.' === mb_substr($prefix, -1)) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if (mb_substr($prefix, -1) === '.') {
+>>>>>>> .merge_file_GsINwT
             $prefix = mb_substr($prefix, 0, -1);
         }
 
@@ -931,6 +1039,7 @@ class RouteDynAction
         ];
     }
 
+<<<<<<< .merge_file_F7PyHW
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
@@ -960,4 +1069,7 @@ class RouteDynAction
     {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    public function execute(): void {}
+>>>>>>> .merge_file_GsINwT
 }

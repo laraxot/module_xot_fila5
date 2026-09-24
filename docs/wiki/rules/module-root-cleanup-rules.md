@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vUuiVY
 title: "Module root cleanup rules"
 type: rule
 tags: [module, theme, structure, cleanup, naming, root-hygiene]
@@ -66,6 +69,7 @@ Tutto il resto → `docs/raw/root-import/` o `docs/wiki/`. Duplicati `changelog.
 - **OBBLIGATORIO**: esattamente 1 file `.code-workspace` per modulo/tema
 - Nome: `_<nome>.code-workspace` in minuscolo (es. `_geo.code-workspace`, `_ui.code-workspace`)
 - **VIETATO**: file `.code-workspace` di altri moduli/temi nella root (es. `_activity.code-workspace` in UI)
+<<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 =======
 =======
@@ -108,16 +112,21 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vUuiVY
 
 ## Mai toccare (nwidart)
 
 `composer.json`, `module.json`, `package.json`, `vite.config.js`, `.github/` — vedi [nwidart-module-skeleton-contract.md](../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md).
 
+<<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vUuiVY
 ## Comandi
 
 ```bash
@@ -129,6 +138,7 @@ bash bashscripts/tools/guard-nwidart-module-skeleton.sh
 ## Scope
 
 Moduli: `laravel/Modules/<Modulo>/` · Temi: `laravel/Themes/<Tema>/` — **solo root**, non sottocartelle.
+<<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 =======
 =======
@@ -145,6 +155,8 @@ bash bashscripts/tools/audit-module-sacred-artifacts.sh
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vUuiVY
 
 Per ogni modulo:
 
@@ -161,15 +173,19 @@ find . -maxdepth 1 -name "*.md" -type f | grep -v README.md
 find . -maxdepth 1 -type d | grep -E "[A-Z]"
 ```
 
+<<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_vUuiVY
 ## Stato Xot 2026-07-06
 
 Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Providers/` non esistono nella root di `Modules/Xot`. La root Xot contiene solo `README.md` come markdown e nessun `.txt`.
 
+<<<<<<< .merge_file_2bg1HW
 <<<<<<< HEAD
 =======
 =======
@@ -177,6 +193,8 @@ Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Provid
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_vUuiVY
 ## Canon
 
 - Questa regola deve essere applicata a tutti i moduli

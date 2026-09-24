@@ -2,12 +2,15 @@
 
 <<<<<<< HEAD
 declare(strict_types=1);
+<<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 =======
 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_L7dj0t
 /**
  * ---.
  *
@@ -54,8 +57,11 @@ class CustomRelation extends Relation
         /**
          * The baseConstraints callback.
          */
+<<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_L7dj0t
         protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -65,6 +71,7 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected ?Closure $eagerMatcher,
+<<<<<<< .merge_file_55gRMp
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -81,6 +88,8 @@ class CustomRelation extends Relation
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_L7dj0t
     ) {
         parent::__construct($query, $model);
     }
@@ -97,6 +106,7 @@ class CustomRelation extends Relation
      * Set the constraints for an eager load of the relation.
      */
     /**
+<<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, Model>  $models
@@ -106,6 +116,9 @@ class CustomRelation extends Relation
 =======
      * @param array<int, Model> $models
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int, Model>  $models
+>>>>>>> .merge_file_L7dj0t
      */
     public function addEagerConstraints(array $models): void
     {
@@ -121,15 +134,13 @@ class CustomRelation extends Relation
      * Initialize the relation on a set of models.
      */
     /**
+<<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_L7dj0t
      * @param  array<int, Model>  $models
      * @param  string  $relation  the relation name (parent signature is untyped)
-=======
-     * @param array<int, Model> $models
-     * @param string            $relation the relation name (parent signature is untyped)
-     *
->>>>>>> laraxot/dev
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
@@ -154,17 +165,14 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     /**
+<<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_L7dj0t
      * @param  array<int, Model>  $models
      * @param  Collection<int, Model>  $collection
      * @param  string  $relation  the relation name (parent signature is untyped)
-=======
-     * @param array<int, Model>      $models
-     * @param Collection<int, Model> $collection
-     * @param string                 $relation   the relation name (parent signature is untyped)
-     *
->>>>>>> laraxot/dev
      * @return array<int, Model>
      */
     public function match(array $models, Collection $collection, mixed $relation): array
@@ -206,6 +214,7 @@ class CustomRelation extends Relation
      * Execute the query as a "select" statement.
      */
     /**
+<<<<<<< .merge_file_55gRMp
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<int, string>|string  $columns
@@ -217,6 +226,9 @@ class CustomRelation extends Relation
      * @param array<int, string>|string $columns
      *
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+     * @param  array<int, string>|string  $columns
+>>>>>>> .merge_file_L7dj0t
      * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection

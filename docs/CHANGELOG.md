@@ -1,5 +1,6 @@
 # Changelog - Modulo Xot
 
+<<<<<<< .merge_file_oihGA7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -81,6 +82,8 @@ All notable changes to `:package_name` will be documented in this file.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_tyVeXT
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -210,6 +213,7 @@ All notable changes to `:package_name` will be documented in this file.
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+<<<<<<< .merge_file_oihGA7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -235,6 +239,8 @@ All notable changes to `:package_name` will be documented in this file.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_tyVeXT
 
 ### Repository
 - **Branch:** develop
@@ -247,6 +253,7 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
+<<<<<<< .merge_file_oihGA7
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -358,3 +365,5 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_tyVeXT

@@ -5,6 +5,7 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 
 ## Struttura
 - [Documentazione Completa](../../Modules/Xot/docs/module_xot.md)
+<<<<<<< .merge_file_bgeibc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -16,10 +17,13 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 =======
 - [Documentazione Completa](../../modules/xot/docs/module_xot.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_WjPosn
 
 ## Componenti Principali
 
 ### Datas
+<<<<<<< .merge_file_bgeibc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +54,8 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_WjPosn
 - [MetatagData](../../Modules/Xot/docs/datas/MetatagData.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -67,6 +73,7 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 ## Collegamenti
 - [Roadmap](../../Modules/Xot/docs/roadmap.md)
 - [Implementazione](../../Modules/Xot/docs/implementation.md)
+<<<<<<< .merge_file_bgeibc
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Integrazione](../../Modules/Xot/docs/integration.md)
@@ -80,3 +87,6 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 =======
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Integrazione](../../Modules/Xot/docs/integration.md)
+>>>>>>> .merge_file_WjPosn

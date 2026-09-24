@@ -229,6 +229,7 @@ public function processData(array $data): string
 **Status**: 🧘 **IN ANALISI**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_zwpfTY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -240,3 +241,5 @@ public function processData(array $data): string
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_XqX2UU

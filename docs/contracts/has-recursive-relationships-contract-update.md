@@ -223,6 +223,7 @@ public function getLocalKeyName(): string
 
 **Data**: 2025-01-18
 **Autore**: AI Assistant
+<<<<<<< .merge_file_9lQy01
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status**: ✅ Completato e verificato
@@ -236,3 +237,6 @@ public function getLocalKeyName(): string
 =======
 **Status**: ✅ Completato e verificato
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Status**: ✅ Completato e verificato
+>>>>>>> .merge_file_GiJZpR

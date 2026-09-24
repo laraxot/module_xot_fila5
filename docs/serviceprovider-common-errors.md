@@ -202,6 +202,7 @@ Prima di creare un ServiceProvider:
 
 **Principio DRY**: Non duplicare logica già gestita dal parent.
 
+<<<<<<< .merge_file_ySO8Mc
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
@@ -215,3 +216,6 @@ Prima di creare un ServiceProvider:
 =======
 **Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
+>>>>>>> .merge_file_ZxctDs

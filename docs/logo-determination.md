@@ -30,6 +30,7 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../docs/INDEX.md).
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../Cms/docs/convenzioni-namespace-filament.md).
+<<<<<<< .merge_file_cuJyxO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -45,3 +46,5 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../cms/docs/convenzioni-namespace-filament.md).
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6w8RU5

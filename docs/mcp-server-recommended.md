@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_JIZvm6
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6ejK1V
 # MCP Server Consigliati per il Modulo Xot
 
 ## Scopo del Modulo
@@ -33,6 +36,7 @@ Modulo base/framework: fornisce servizi trasversali, integrazione tra componenti
 ```
 
 ## Note
+<<<<<<< .merge_file_JIZvm6
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Xot non richiede MCP custom, ma può essere esteso da altri moduli.
@@ -46,3 +50,6 @@ Modulo base/framework: fornisce servizi trasversali, integrazione tra componenti
 =======
 - Xot non richiede MCP custom, ma può essere esteso da altri moduli.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Xot non richiede MCP custom, ma può essere esteso da altri moduli.
+>>>>>>> .merge_file_6ejK1V

@@ -23,6 +23,7 @@ class XDebug extends Component
         // public Post $article,
         // public bool $showAuthor = false,
         public string $tpl = 'v1',
+<<<<<<< .merge_file_frh5yS
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {}
@@ -34,6 +35,9 @@ class XDebug extends Component
     ) {
     }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    ) {}
+>>>>>>> .merge_file_vQgc6j
 
     public function render(): View
     {

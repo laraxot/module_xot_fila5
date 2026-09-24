@@ -12,6 +12,7 @@ use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_ZthsVI
 <<<<<<< HEAD
 use function Safe\copy;
 
@@ -25,6 +26,8 @@ use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
 use Webmozart\Assert\Assert;
 
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2X5dYJ
 class AssetAction
 {
     use QueueableActionTrait;
@@ -34,12 +37,16 @@ class AssetAction
     /**
      * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
      *
+<<<<<<< .merge_file_ZthsVI
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_2X5dYJ
      * @param  string  $path  Il percorso dell'asset
      * @return string Il percorso pubblico dell'asset
      *
      * @throws Exception Se il file sorgente non esiste o non può essere copiato
+<<<<<<< .merge_file_ZthsVI
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -52,6 +59,8 @@ class AssetAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2X5dYJ
      */
     public function execute(string $path): string
     {
@@ -136,6 +145,7 @@ class AssetAction
             if (isRunningTestBench()) {
                 return $originalPath;
             }
+<<<<<<< .merge_file_ZthsVI
 <<<<<<< HEAD
 <<<<<<< HEAD
             throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
@@ -145,11 +155,15 @@ class AssetAction
 =======
             throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+            throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+>>>>>>> .merge_file_2X5dYJ
         }
 
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
+<<<<<<< .merge_file_ZthsVI
 <<<<<<< HEAD
 <<<<<<< HEAD
         $forceCopy = app()->environment() !== 'production';
@@ -159,6 +173,9 @@ class AssetAction
 =======
         $forceCopy = 'production' !== app()->environment();
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        $forceCopy = app()->environment() !== 'production';
+>>>>>>> .merge_file_2X5dYJ
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
@@ -169,6 +186,7 @@ class AssetAction
 
     /**
      * Copies an asset file if it doesn't exist or if forced.
+<<<<<<< .merge_file_ZthsVI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -187,6 +205,8 @@ class AssetAction
             }
         }
 =======
+=======
+>>>>>>> .merge_file_2X5dYJ
      *
      * In APP_ENV=local the caller forces a copy on every request so assets
      * refresh without a rebuild. PHP-FPM runs as www-data: if the dest was
@@ -221,7 +241,7 @@ class AssetAction
         }
 
         $this->handleCopyFailure(
-            new \Exception('Unable to copy asset file'),
+            new Exception('Unable to copy asset file'),
             $path,
             $from,
             $to,
@@ -238,11 +258,12 @@ class AssetAction
             return;
         }
 
-        $exception = $e instanceof \Exception
+        $exception = $e instanceof Exception
             ? $e
-            : new \Exception($e->getMessage(), (int) $e->getCode(), $e);
+            : new Exception($e->getMessage(), (int) $e->getCode(), $e);
 
         $this->throwCopyException($exception, $path, $from, $to);
+<<<<<<< .merge_file_ZthsVI
 >>>>>>> laraxot/dev
 =======
             } catch (\Exception $e) {
@@ -250,6 +271,8 @@ class AssetAction
             }
         }
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_2X5dYJ
     }
 
     /**
@@ -265,6 +288,7 @@ class AssetAction
     /**
      * Throws a formatted exception for a file copy error.
      */
+<<<<<<< .merge_file_ZthsVI
 <<<<<<< HEAD
 <<<<<<< HEAD
     private function throwCopyException(Exception $e, string $path, string $from, string $to): void
@@ -280,6 +304,11 @@ class AssetAction
     {
         throw new \Exception('message:['.$e->getMessage().']
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+    private function throwCopyException(Exception $e, string $path, string $from, string $to): void
+    {
+        throw new Exception('message:['.$e->getMessage().']
+>>>>>>> .merge_file_2X5dYJ
             public_path ['.public_path().']
             path ['.$path.']
             file from ['.$from.']

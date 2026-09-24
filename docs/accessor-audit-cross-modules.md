@@ -59,6 +59,7 @@ Verificare **TUTTI i moduli** per accessor che chiamano `save()` senza guard `if
 ### ⏳ Progressioni - DA VERIFICARE
 
 **File Principali**:
+<<<<<<< .merge_file_4X1uKc
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. `Models/Schede.php` - Da verificare
@@ -72,6 +73,9 @@ Verificare **TUTTI i moduli** per accessor che chiamano `save()` senza guard `if
 =======
 1. `Models/Scheda.php` - Da verificare
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+1. `Models/Schede.php` - Da verificare
+>>>>>>> .merge_file_V35CaL
 2. `Models/Pesi.php` - Da verificare
 3. `Models/MaxCatecoPosfunAnno.php` - Da verificare
 
@@ -161,6 +165,7 @@ Ogni modulo deve avere:
 ## Collegamenti
 
 - [Regola Globale](../../Xot/docs/accessor-save-guard-global-rule.md)
+<<<<<<< .merge_file_4X1uKc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -172,6 +177,8 @@ Ogni modulo deve avere:
 =======
 - [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_V35CaL
 ```
 
 ## Metriche Target
@@ -196,6 +203,7 @@ Ogni modulo deve avere:
 ## Collegamenti
 
 - [Regola Globale](./accessor-save-guard-global-rule.md)
+<<<<<<< .merge_file_4X1uKc
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -214,6 +222,8 @@ Ogni modulo deve avere:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_V35CaL
 - [Sigma Implementation](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Pattern Template](../../Sigma/docs/accessor-refactoring-philosophy.md)
 
@@ -222,6 +232,7 @@ Ogni modulo deve avere:
 **Creato**: 2025-01-29
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
+<<<<<<< .merge_file_4X1uKc
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Timeline**: 3 settimane per audit completo
@@ -235,3 +246,6 @@ Ogni modulo deve avere:
 =======
 **Timeline**: 3 settimane per audit completo
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Timeline**: 3 settimane per audit completo
+>>>>>>> .merge_file_V35CaL

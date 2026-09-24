@@ -30,6 +30,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
+<<<<<<< .merge_file_pvmgFJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -58,6 +59,11 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Exception Handling Guidelines](../exception-handling-guide.md)
+- [Logging Best Practices](../logging-best-practices.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> .merge_file_20VonI
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -136,6 +142,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< .merge_file_pvmgFJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -233,3 +240,5 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_20VonI

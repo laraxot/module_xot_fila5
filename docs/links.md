@@ -5,6 +5,7 @@
 ### Framework e Architettura
 - [Laravel Framework](laravel-framework.md) - Documentazione completa del framework Laravel
 - [Convenzioni Laraxot](conventions.md) - Regole e convenzioni per lo sviluppo
+<<<<<<< .merge_file_eZplJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -25,6 +26,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PSRzTN
 - [Piano Consolidamento Docs](DOCS_CONSOLIDATION_PLAN.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -68,6 +71,7 @@
 
 ### Sicurezza e Performance
 - [Security Guidelines](security-guidelines.md) - Linee guida per la sicurezza
+<<<<<<< .merge_file_eZplJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
@@ -81,6 +85,9 @@
 =======
 - [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
+>>>>>>> .merge_file_PSRzTN
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 
@@ -208,6 +215,7 @@
 - [Regole di Progetto](./rules/PROMPT_RULES.md)
 - [Standard di Codice](./standards/CODE-STANDARDS.md)
 - [Convenzioni di Nomenclatura](./conventions/NAMING-CONVENTIONS.md)
+<<<<<<< .merge_file_eZplJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -228,11 +236,14 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PSRzTN
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
 
 ## Collegamenti ai Moduli
+<<<<<<< .merge_file_eZplJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -279,6 +290,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_PSRzTN
 - [Cms](../Cms/docs/README.md) - Frontend
 - [UI](../UI/docs/README.md) - Componenti
 - [User](../User/docs/README.md) - Utenti e Permessi
@@ -312,6 +325,7 @@
 * [links.md](../../Job/docs/links.md)
 * [links.md](../../Tenant/docs/it/links/links.md)
 * [links.md](../../Cms/docs/links.md)
+<<<<<<< .merge_file_eZplJI
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [links.md](../../../Themes/One/docs/links.md)
@@ -325,3 +339,6 @@
 =======
 * [links.md](../../../Themes/One/docs/links.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+* [links.md](../../../Themes/One/docs/links.md)
+>>>>>>> .merge_file_PSRzTN

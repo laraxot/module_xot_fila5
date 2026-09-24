@@ -342,6 +342,7 @@ docs/
 
 ### Documentazione Correlata
 - [README](../README.md) - Panoramica modulo Xot
+<<<<<<< .merge_file_hW8uTj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -353,15 +354,20 @@ docs/
 =======
 - [README](../readme.md) - Panoramica modulo Xot
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JLX0Pa
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 - [Best Practices](./core/best-practices.md) - Best practices consolidate
 
 ### Documentazione Root
+<<<<<<< .merge_file_hW8uTj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JLX0Pa
 - [docs/ottimizzazioni-sistema.md](../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
 - [docs/architettura-moduli.md](../../../docs/architettura-moduli.md) - Architettura moduli
 
@@ -370,6 +376,7 @@ docs/
 **Ultimo aggiornamento:** 2025-01-06
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo Xot
+<<<<<<< .merge_file_hW8uTj
 <<<<<<< HEAD
 =======
 =======
@@ -389,3 +396,5 @@ docs/
 =======
 **Responsabile:** Team Sviluppo Xot
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_JLX0Pa

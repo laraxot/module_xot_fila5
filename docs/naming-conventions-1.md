@@ -54,6 +54,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Tipi rigorosi PHP](./php-strict-types.md)
 - [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](./service-provider-best-practices.md)
+<<<<<<< .merge_file_QqIWSv
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Best practice per Filament](./filament-best-practices.md)
@@ -67,3 +68,6 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 =======
 - [Best practice per Filament](./filament-best-practices.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Best practice per Filament](./filament-best-practices.md)
+>>>>>>> .merge_file_PfzRCU

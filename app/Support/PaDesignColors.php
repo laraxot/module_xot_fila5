@@ -14,10 +14,10 @@ use Filament\Support\Colors\Color;
 final class PaDesignColors
 {
     /** Verde PA — azioni primarie, CTA istituzionali */
-    public const PRIMARY_HEX = '#007A52';
+    public const string PRIMARY_HEX = '#007A52';
 
     /** Blu istituzionale — info, link header */
-    public const INSTITUTIONAL_BLUE_HEX = '#0066CC';
+    public const string INSTITUTIONAL_BLUE_HEX = '#0066CC';
 
     /**
      * Colori Filament per tutti i panel che usano MetatagData / ApplyMetatagToPanelAction.

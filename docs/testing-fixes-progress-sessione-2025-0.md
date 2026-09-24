@@ -1,15 +1,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_qc2v3T
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
+>>>>>>> .merge_file_Qs0R3T
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_qc2v3T
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_Qs0R3T
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -21,23 +28,22 @@ metadata:
 ---
 
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3792da0d (Check & fix styling)
 =======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_qc2v3T
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Qs0R3T
 >>>>>>> laraxot/dev
 # Testing Fixes Progress - Sessione 2025-01-22
 

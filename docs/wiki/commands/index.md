@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_se5BMQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_PiD4kM
@@ -26,6 +27,8 @@
 >>>>>>> .merge_file_IGTrVd
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_CXU3lY
 ---
 title: "Index"
 type: reference
@@ -34,6 +37,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_se5BMQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_PiD4kM
@@ -61,6 +65,8 @@ updated: 2026-08-24
 >>>>>>> .merge_file_IGTrVd
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_CXU3lY
 # Xot Module - commands Index
 
 ## Purpose

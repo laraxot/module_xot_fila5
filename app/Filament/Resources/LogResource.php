@@ -6,8 +6,8 @@ namespace Modules\Xot\Filament\Resources;
 
 <<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
-<<<<<<< HEAD
 use Filament\Support\Components\Component;
+<<<<<<< .merge_file_3AzJ40
 =======
 use Filament\Schemas\Components\Component;
 >>>>>>> laraxot/dev
@@ -17,6 +17,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KuKQLt
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
@@ -69,6 +71,7 @@ class LogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< .merge_file_3AzJ40
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -77,11 +80,14 @@ class LogResource extends XotBaseResource
 =======
     #[\Override]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KuKQLt
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< .merge_file_3AzJ40
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -90,6 +96,8 @@ class LogResource extends XotBaseResource
 =======
     #[\Override]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_KuKQLt
     public static function getPages(): array
     {
         return [

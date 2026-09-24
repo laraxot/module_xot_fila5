@@ -6,12 +6,14 @@ slug: admin-template
 description: 'Elenco di 3 riferimenti esterni raccolti per admin template, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
-converted_from: admin-template.txt
-=======
 <<<<<<< HEAD
+<<<<<<< .merge_file_ROQt0G
 <<<<<<< HEAD
 converted_from: admin_template.txt
 >>>>>>> laraxot/dev
+=======
+converted_from: admin-template.txt
+>>>>>>> .merge_file_6MZA1J
 =======
 <<<<<<< HEAD
 =======
@@ -21,7 +23,12 @@ converted_from: admin-template.txt
 converted_from: admin_template.txt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ROQt0G
 <<<<<<< HEAD
+=======
+=======
+converted_from: admin-template.txt
+>>>>>>> .merge_file_6MZA1J
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)

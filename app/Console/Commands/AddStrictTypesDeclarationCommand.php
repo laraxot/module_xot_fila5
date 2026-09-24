@@ -52,6 +52,7 @@ class AddStrictTypesDeclarationCommand extends Command
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
+<<<<<<< .merge_file_RoNfrX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -75,11 +76,14 @@ class AddStrictTypesDeclarationCommand extends Command
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6oALyo
                     if ($fileName === false) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     $count++;
+<<<<<<< .merge_file_RoNfrX
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
@@ -89,11 +93,14 @@ class AddStrictTypesDeclarationCommand extends Command
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_6oALyo
 
                     continue;
                 }
 
                 $path = $file->getRealPath();
+<<<<<<< .merge_file_RoNfrX
 <<<<<<< HEAD
 <<<<<<< HEAD
                 if ($path === false) {
@@ -115,6 +122,9 @@ class AddStrictTypesDeclarationCommand extends Command
 =======
                 if (false === $path) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                if ($path === false) {
+>>>>>>> .merge_file_6oALyo
                     continue;
                 }
 
@@ -124,6 +134,7 @@ class AddStrictTypesDeclarationCommand extends Command
                 try {
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");
+<<<<<<< .merge_file_RoNfrX
 <<<<<<< HEAD
 <<<<<<< HEAD
                     $count++;
@@ -145,6 +156,9 @@ class AddStrictTypesDeclarationCommand extends Command
 =======
                     ++$count;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+                    $count++;
+>>>>>>> .merge_file_6oALyo
                 } catch (\Exception $e) {
                     $this->error("Errore nel processare {$path}: ".$e->getMessage());
                 }
@@ -173,6 +187,7 @@ class AddStrictTypesDeclarationCommand extends Command
         }
 
         $path = $file->getRealPath();
+<<<<<<< .merge_file_RoNfrX
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($path === false) {
@@ -194,6 +209,9 @@ class AddStrictTypesDeclarationCommand extends Command
 =======
         if (false === $path) {
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+        if ($path === false) {
+>>>>>>> .merge_file_6oALyo
             return false;
         }
 

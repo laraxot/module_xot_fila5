@@ -233,6 +233,7 @@ abstract class XotBaseResource extends Resource
      * Get form schema con validation automatica
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_pJ1EfZ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -241,10 +242,13 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
 >>>>>>> .merge_file_xf0vfX
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Ktn3eQ
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_pJ1EfZ
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_3GtQwM
@@ -257,6 +261,8 @@ abstract class XotBaseResource extends Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ktn3eQ
     {
         return [
             // Schema base automatico

@@ -14,10 +14,10 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 <<<<<<< HEAD
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
+<<<<<<< .merge_file_E6JVm8
 =======
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -32,6 +32,8 @@ use Modules\Xot\Datas\EnvData;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AH5uo3
 class EnvWidget extends XotBaseSchemaWidget
 {
     /** @var array<string, mixed>|null */
@@ -72,6 +74,7 @@ class EnvWidget extends XotBaseSchemaWidget
         $this->form->fill($this->data);
     }
 
+<<<<<<< .merge_file_E6JVm8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,6 +89,8 @@ class EnvWidget extends XotBaseSchemaWidget
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_AH5uo3
     public function submit(): void
     {
         if (! is_array($this->data)) {
@@ -157,11 +162,7 @@ class EnvWidget extends XotBaseSchemaWidget
             'mail_from_name' => TextInput::make('mail_from_name'),
         ];
         /** @var array<string, Component> $selected */
-<<<<<<< HEAD
         $selected = $this->only === [] ? $all : Arr::only($all, $this->only);
-=======
-        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
->>>>>>> laraxot/dev
 
         $grouped = [];
         $components = [];
@@ -174,11 +175,7 @@ class EnvWidget extends XotBaseSchemaWidget
                     $grouped[$key] = true;
                 }
             }
-<<<<<<< HEAD
             if ($fields === []) {
-=======
-            if ([] === $fields) {
->>>>>>> laraxot/dev
                 continue;
             }
             $components[] = Section::make($label)->schema($fields);

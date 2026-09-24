@@ -138,6 +138,7 @@ cd init
 
 ```
 # In Cursor/Windsurf/Cline
+<<<<<<< .merge_file_EVOBB3
 <<<<<<< HEAD
 <<<<<<< HEAD
 Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
@@ -151,6 +152,9 @@ Analizza gli errori PHPStan in Modules/healthcare_app e suggerisci correzioni se
 =======
 Analizza gli errori PHPStan in Modules/healthcare_app e suggerisci correzioni seguendo le regole in .windsurf/rules/
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
+>>>>>>> .merge_file_7vlSqY
 ```
 
 ### 2. Refactoring Modulo
@@ -186,6 +190,7 @@ iflow
 
 ```
 # Con memory + sequential-thinking
+<<<<<<< .merge_file_EVOBB3
 <<<<<<< HEAD
 <<<<<<< HEAD
 Analizza l'architettura del modulo Quaeris:
@@ -199,6 +204,9 @@ Analizza l'architettura del modulo healthcare_app:
 =======
 Analizza l'architettura del modulo healthcare_app:
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Analizza l'architettura del modulo Quaeris:
+>>>>>>> .merge_file_7vlSqY
 1. Identifica pattern utilizzati
 2. Documenta dipendenze
 3. Suggerisci miglioramenti
@@ -280,6 +288,7 @@ Per problemi o domande:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+<<<<<<< .merge_file_EVOBB3
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -291,3 +300,5 @@ Per problemi o domande:
 =======
 **Ultimo aggiornamento**: [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_7vlSqY

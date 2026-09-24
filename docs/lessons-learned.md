@@ -1,4 +1,5 @@
 # Lessons Learned – Consolidated Rules (2025-08-25)
+<<<<<<< .merge_file_vpETcm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -10,6 +11,8 @@
 =======
 # Lessons Learned – Consolidated Rules ([DATE])
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_dxj7Ft
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).
 
@@ -76,6 +79,7 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 - Add JS callbacks: `eventDidMount`, `eventClassNames`, `selectAllow`, `eventAllow`.
 
 ---
+<<<<<<< .merge_file_vpETcm
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
@@ -89,3 +93,6 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 =======
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
+>>>>>>> .merge_file_dxj7Ft

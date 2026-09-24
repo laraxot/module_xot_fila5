@@ -1,5 +1,6 @@
 # Filament
 
+<<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -116,6 +117,8 @@ $prefix = static::$translationPrefix;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_a84MZD
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
 ## File Contenuti
@@ -127,6 +130,7 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 
 ## Note
 
+<<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -139,12 +143,14 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 <<<<<<< HEAD
 =======
 >>>>>>> .merge_file_w52qsW
+=======
+>>>>>>> .merge_file_a84MZD
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
 ## Collegamenti tra versioni di README.md
-<<<<<<< HEAD
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
+<<<<<<< .merge_file_5Bh1su
 =======
 >>>>>>> laraxot/dev
 =======
@@ -279,6 +285,8 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_a84MZD
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
 * [README.md](docs/moduli/struttura/README.md)
@@ -309,6 +317,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](docs/implementazione/reporting/README.md)
 * [README.md](docs/implementazione/isee/README.md)
 * [README.md](docs/it/README.md)
+<<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -322,6 +331,8 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 =======
 >>>>>>> .merge_file_w52qsW
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_a84MZD
 * [README.md](laravel/vendor/mockery/mockery/docs/README.md)
 * [README.md](../../../Chart/docs/README.md)
 * [README.md](../../../Reporting/docs/README.md)
@@ -366,6 +377,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
@@ -433,6 +445,8 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_a84MZD
 
 ## Regola sulle closure void nelle azioni custom Filament
 
@@ -460,6 +474,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Aggiornare la documentazione ogni volta che si corregge questo errore.
 
 ### Collegamento
+<<<<<<< .merge_file_5Bh1su
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -720,6 +735,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 
 ### Collegamento
 - Vedi anche: [SaluteOra/docs/filament-best-practices.mdc](../../../SaluteOra/docs/filament-best-practices.mdc)
+=======
+- Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+>>>>>>> .merge_file_a84MZD
 
 ### Checklist
 - [ ] Nessuna closure void restituisce un valore
@@ -753,62 +771,9 @@ $prefix = static::$translationPrefix;
 ```
 
 ## Moduli che fanno riferimento a questa regola
-- [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
-// Aggiungere qui altri moduli se necessario
-<<<<<<< HEAD
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
-=======
-=======
-[![Module](https://img.shields.io/badge/Module-Filament-8B0000.svg)]()
-[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
-[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
-[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
-[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
-[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
-]()
-
-> **Core module for the FixCity Platform.**
-
-## Perché esiste
-
-Core module for the FixCity Platform.
-
-## Superpoteri
-
-- Modular component with XotBase patterns
-- Professional-grade implementation
-- Integrated with FixCity Platform
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> 7f6cf6be (.)
->>>>>>> 28b0298a (fix: phpstan issues)
-=======
-<<<<<<< .merge_file_Otv2VD
-<<<<<<< HEAD
-- [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
-=======
->>>>>>> .merge_file_w52qsW
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
-=======
-- [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
-- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
-// Aggiungere qui altri moduli se necessario
->>>>>>> laraxot/dev
-=======
-- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
-// Aggiungere qui altri moduli se necessario
+<<<<<<< .merge_file_5Bh1su
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
@@ -816,3 +781,5 @@ Core module for the FixCity Platform.
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_a84MZD

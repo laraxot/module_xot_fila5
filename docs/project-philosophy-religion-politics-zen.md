@@ -2,6 +2,7 @@
 
 ## 🧠 Logica del Progetto
 
+<<<<<<< .merge_file_LFrvpb
 <<<<<<< HEAD
 <<<<<<< HEAD
 Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
@@ -34,6 +35,10 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://<nome pr
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelpizza.com/, costruito sull'architettura Laraxot. È un ecosistema completo di meetup, community e tema frontend super curato con i seguenti principi:
+
+>>>>>>> .merge_file_U3KCYI
 - **Conversione e Miglioramento**: Non è una semplice copia, ma un'evoluzione del sito originale
 - **Architettura Modulare**: Moduli indipendenti (`Modules/*`) e temi separati (`Themes/*`)
 - **Frontoffice con Folio + Volt**: Nessun controller tradizionale, solo routing file-based
@@ -81,6 +86,7 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://<nome pr
 
 ## 🎯 Business Logic Principale
 
+<<<<<<< .merge_file_LFrvpb
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
@@ -94,6 +100,9 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://<nome pr
 =======
 - **Meetup Theme**: Tema principale basato su <nome progetto>.com, con Folio + Volt
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- **Meetup Theme**: Tema principale basato su laravelpizza.com, con Folio + Volt
+>>>>>>> .merge_file_U3KCYI
 - **Folio + Volt**: Architettura obbligatoria per il frontoffice
 - **Filament**: Solo per il backoffice
 - **Laraxot Framework**: "Framework nel framework" con regole rigide
@@ -136,6 +145,7 @@ This rule empowers the AI Assistant to determine the order and priority of actio
 
 **"Filosofia Zen: Non avrai altro path all'infuori del relativo"**
 
+<<<<<<< .merge_file_LFrvpb
 <<<<<<< HEAD
 <<<<<<< HEAD
 **"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
@@ -149,3 +159,6 @@ This rule empowers the AI Assistant to determine the order and priority of actio
 =======
 **"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**"Autonomous Decision-Making: Ordine e priorita le scegli sempre te."**
+>>>>>>> .merge_file_U3KCYI

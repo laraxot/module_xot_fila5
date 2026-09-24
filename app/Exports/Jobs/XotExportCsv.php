@@ -12,6 +12,8 @@ use Illuminate\Database\Query\Expression;
 use Illuminate\Support\Facades\DB;
 use League\Csv\Writer;
 use Modules\Xot\Exports\XotBaseExporter;
+use SplTempFileObject;
+use Throwable;
 
 /**
  * `ExportCsv` con il CSV intermedio in escape `XotBaseExporter::CSV_ESCAPE`.
@@ -38,7 +40,7 @@ class XotExportCsv extends ExportCsv
             $processedRows = 0;
             $successfulRows = 0;
 
-            $csv = Writer::from(new \SplTempFileObject());
+            $csv = Writer::from(new SplTempFileObject);
             $csv->setDelimiter($this->exporter::getCsvDelimiter());
             $csv->setEscape(XotBaseExporter::CSV_ESCAPE);
 
@@ -53,12 +55,12 @@ class XotExportCsv extends ExportCsv
                 try {
                     $csv->insertOne(($this->exporter)($record));
 
-                    ++$successfulRows;
-                } catch (\Throwable $exception) {
+                    $successfulRows++;
+                } catch (Throwable $exception) {
                     report($exception);
                 }
 
-                ++$processedRows;
+                $processedRows++;
             }
 
             $filePath = $this->export->getFileDirectory().DIRECTORY_SEPARATOR.str_pad((string) $this->page, 16, '0', STR_PAD_LEFT).'.csv';

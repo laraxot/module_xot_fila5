@@ -3,6 +3,7 @@
 ## Contesto
 
 **Data analisi:** 2025-01-27
+<<<<<<< .merge_file_VQ6i2i
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@
 =======
 **Data analisi:** [DATE]
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_eWSluJ
 **File con conflitti identificati:** 586 file PHP
 **Approccio:** Risoluzione manuale focalizzata su business logic
 
@@ -267,6 +270,7 @@ I conflitti sono stati causati da:
 
 ---
 
+<<<<<<< .merge_file_VQ6i2i
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
@@ -280,3 +284,6 @@ I conflitti sono stati causati da:
 =======
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+**Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
+>>>>>>> .merge_file_eWSluJ

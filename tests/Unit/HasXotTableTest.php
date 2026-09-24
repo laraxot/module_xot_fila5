@@ -16,6 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< .merge_file_DGxbam
 <<<<<<< HEAD
  * <<<<<<< HEAD.
  *
@@ -28,6 +29,9 @@ uses(TestCase::class);
  * @param MockInterface&Table $tableMock
 >>>>>>> 3792da0d (Check & fix styling)
  *
+=======
+ * @param  MockInterface&Table  $tableMock
+>>>>>>> .merge_file_jSUFZ7
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface

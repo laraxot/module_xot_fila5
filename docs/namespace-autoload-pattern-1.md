@@ -83,6 +83,7 @@ namespace Modules\ModuleName\App\Console\Commands;
 ## Collegamenti
 
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
+<<<<<<< .merge_file_EdbnOn
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Struttura Moduli](../xot/docs/module_structure.md)
@@ -96,3 +97,6 @@ namespace Modules\ModuleName\App\Console\Commands;
 =======
 - [Struttura Moduli](../xot/docs/module_structure.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+- [Struttura Moduli](../xot/docs/module_structure.md)
+>>>>>>> .merge_file_vGz2ay

@@ -14,15 +14,19 @@ namespace Modules\Xot\Filament\Resources;
 class XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_5WBwoS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_LVEjbb
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_5WBwoS
 <<<<<<< HEAD
 =======
 =======
@@ -32,6 +36,8 @@ class XotBaseResource
 =======
     public static function getFormSchema(): array;
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_LVEjbb
     public static function getListTableColumns(): array;
 }
 ```
@@ -120,6 +126,7 @@ class XotBaseEditRecord
 
 ## Collegamenti Bidirezionali
 - [README](README.md)
+<<<<<<< .merge_file_5WBwoS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -131,6 +138,8 @@ class XotBaseEditRecord
 =======
 - [README](readme.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_LVEjbb
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 
@@ -318,6 +327,7 @@ class PolizzaConvenzioneController extends XotBaseController
 ## Collegamenti tra versioni di base-classes.md
 * [base-classes.md](../../../Xot/docs/base-classes.md)
 * [base-classes.md](../../../Xot/docs/roadmap/base-classes.md)
+<<<<<<< .merge_file_5WBwoS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -331,11 +341,14 @@ class PolizzaConvenzioneController extends XotBaseController
 * [base-classes.md](../../../xot/docs/base-classes.md)
 * [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+>>>>>>> .merge_file_LVEjbb
 
 ### Versione Incoming
 
    - Documentare le modifiche significative
 
+<<<<<<< .merge_file_5WBwoS
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -349,3 +362,6 @@ class PolizzaConvenzioneController extends XotBaseController
 =======
 ---
 >>>>>>> 3792da0d (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_LVEjbb

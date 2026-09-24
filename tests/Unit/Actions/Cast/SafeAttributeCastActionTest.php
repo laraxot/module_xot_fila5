@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
+<<<<<<< .merge_file_sobVYl
 <<<<<<< HEAD
 <<<<<<< HEAD
-use Mockery;
 =======
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_3Lztzj
+use Mockery;
 use Mockery\MockInterface;
 =======
 >>>>>>> 3792da0d (Check & fix styling)
@@ -20,11 +21,7 @@ describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
 <<<<<<< HEAD
         /** @var Activity&MockInterface $model */
-<<<<<<< HEAD
         $model = Mockery::mock(Activity::class);
-=======
-        $model = \Mockery::mock(Activity::class);
->>>>>>> laraxot/dev
         $model->shouldReceive('getAttribute')->with('name')->andReturn('Test User');
         $model->shouldReceive('getAttribute')->with('email')->andReturn('');
         $model->shouldReceive('getAttribute')->with('id')->andReturn(123);
