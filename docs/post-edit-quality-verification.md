@@ -281,7 +281,15 @@ quality-check:
 ---
 
 **Creato**: 2025-01-29
+<<<<<<< HEAD
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA
 **Memoria AI**: ID 10479003
+=======
+**Creato**: [DATE]
+**Tipo**: Regola Quality Gate Obbligatoria
+**Applicazione**: Ogni modifica file
+**Severità**: 🔴 CRITICA
+**Memoria AI**: ID 10479003
+>>>>>>> laraxot/dev

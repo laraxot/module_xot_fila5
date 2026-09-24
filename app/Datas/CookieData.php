@@ -12,11 +12,19 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  *
+<<<<<<< HEAD
  * @param  bool  $accept
  * @param  string  $type
  * @param  int  $durationDays
  * @param  string  $policyUrl
  * @param  string  $bannerStyle
+=======
+ * @param bool   $accept
+ * @param string $type
+ * @param int    $durationDays
+ * @param string $policyUrl
+ * @param string $bannerStyle
+>>>>>>> laraxot/dev
  */
 final class CookieData extends Data
 {
@@ -26,13 +34,22 @@ final class CookieData extends Data
         public readonly int $durationDays = 365,
         public readonly string $policyUrl = '/cookie-policy',
         public readonly string $bannerStyle = 'bottom',
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Create a new instance of CookieData with default values.
      */
     public static function make(): self
     {
+<<<<<<< HEAD
         return new self;
+=======
+        return new self();
+>>>>>>> laraxot/dev
     }
 }

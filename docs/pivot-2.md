@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "_pivot"
 module: "Xot"
@@ -9,6 +10,8 @@ qmd: "pivot 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

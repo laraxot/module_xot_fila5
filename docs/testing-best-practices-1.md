@@ -204,13 +204,23 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
+<<<<<<< HEAD
 - [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](XOTDATA_TESTING.md)
+=======
+- [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](xotdata_testing.md)
+>>>>>>> laraxot/dev
 
 ---
 
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
+<<<<<<< HEAD
 **Last Update**: Dicembre 2024
+=======
+**Last Update**: Dicembre 2024
+>>>>>>> laraxot/dev

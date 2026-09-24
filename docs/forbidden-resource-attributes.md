@@ -59,6 +59,10 @@ Remove all forbidden attributes from XotBaseResource classes and ensure proper t
 ## Verification Status
 
 **Last Verification**: 2026-01-09  
+<<<<<<< HEAD
+=======
+**Last Verification**: [DATE]  
+>>>>>>> laraxot/dev
 **Status**: ✅ **ALL RESOURCES COMPLIANT - PROPERTIES REMOVED**
 
 All Resources extending `XotBaseResource` have been verified and cleaned. All forbidden properties (including commented ones) have been removed from:
@@ -67,6 +71,11 @@ All Resources extending `XotBaseResource` have been verified and cleaned. All fo
 
 **Verification Report**: See `forbidden-resource-attributes-verification-2026-01-09.md`  
 **Removal Report**: See `forbidden-properties-removal-complete-2026-01-09.md`
+<<<<<<< HEAD
+=======
+**Verification Report**: See `forbidden-resource-attributes-verification-[DATE].md`  
+**Removal Report**: See `forbidden-properties-removal-complete-[DATE].md`
+>>>>>>> laraxot/dev
 
 ### Key Findings
 

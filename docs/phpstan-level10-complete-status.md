@@ -90,7 +90,11 @@ Moduli che richiedono questa configurazione:
 
 ## 📖 Documentazione Correlata
 
+<<<<<<< HEAD
 - [PHPStan Audit Completo](../../../docs/phpstan-audit-complete-2026-01.md)
+=======
+- [PHPStan Audit Completo](../../../../docs/phpstan-audit-complete-2026-01.md)
+>>>>>>> laraxot/dev
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Model Casting Rules](./model-casting-rules.md)
 - [Property Exists vs Isset](./phpstan-code-quality-guide.md#5-property-access-su-mixed-eloquent---regola-critica)
@@ -108,4 +112,8 @@ Moduli che richiedono questa configurazione:
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2026*
+=======
+*Ultimo aggiornamento: gennaio 2026*
+>>>>>>> laraxot/dev

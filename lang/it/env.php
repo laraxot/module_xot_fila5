@@ -9,9 +9,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'env.navigation',
         'icon' => 'env.navigation',
         'sort' => 94,
+=======
+>>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +52,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'app_url' => [
             'label' => 'URL applicazione',
             'placeholder' => 'http://localhost',
@@ -133,6 +137,8 @@ return [
             'helper_text' => 'Valore corrente di MAIL_FROM_NAME nel .env — nome che compare accanto all\'indirizzo mittente. Se nel .env vale ${APP_NAME} qui vedi il nome già risolto: lasciandolo invariato la riga non viene riscritta.',
             'description' => '',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
@@ -144,6 +150,7 @@ return [
         'delete' => [
             'label' => 'Elimina Env',
         ],
+<<<<<<< HEAD
         'save' => [
             'label' => 'save',
             'icon' => 'save',
@@ -164,5 +171,7 @@ return [
             'label' => 'Mail',
             'heading' => 'Mail',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
 ];

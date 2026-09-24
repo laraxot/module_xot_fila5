@@ -30,9 +30,14 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+=======
+- [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
+- [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

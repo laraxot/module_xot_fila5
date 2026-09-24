@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 <div>
     <span class="card-fav-icon position-relative z-index-40 " @if ($fav)style="background-color:#d60021"@endif wire:click="update()">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -439,3 +440,12 @@ return [
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
+=======
+---
+module: theme
+topic: comprehensive_code_analysis
+canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+>>>>>>> laraxot/dev

@@ -1,4 +1,8 @@
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
+<<<<<<< HEAD
+=======
+# Risoluzione Merge Conflicts Massivi - [DATE]
+>>>>>>> laraxot/dev
 
 ## 🔥 Problema Iniziale
 
@@ -276,4 +280,8 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
 - [Code Quality Standards](./code-quality-standards.md)
+<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+=======
+- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+>>>>>>> laraxot/dev

@@ -2,6 +2,10 @@
 
 ## Data Audit
 2025-01-27
+<<<<<<< HEAD
+=======
+[DATE]
+>>>>>>> laraxot/dev
 
 ## Risultati Generali
 
@@ -60,6 +64,10 @@
 - **Errori**: 32 errori PHPStan livello 10
 - **Causa**: Classe `Modules\Geo\Models\Comune` non esiste
 - **Status**: Documentato in [phpstan-errors-locationselector.md](../UI/docs/phpstan-errors-locationselector.md)
+<<<<<<< HEAD
+=======
+- **Status**: Documentato in [phpstan-errors-locationselector.md](../ui/docs/phpstan-errors-locationselector.md)
+>>>>>>> laraxot/dev
 - **Soluzione Proposta**: Creare modulo Geo con modello Comune (refactoring architetturale)
 
 ## Correzioni Implementate Durante Audit
@@ -72,6 +80,10 @@
   - Sostituito `mapWithKeys()` con loop `foreach` per evitare problemi con `stdClass`
   - Aggiunta annotazione PHPDoc `@var array<string, int>`
 - **Documentazione**: [phpstan-errors-activitylogger.md](../Activity/docs/phpstan-errors-activitylogger.md)
+<<<<<<< HEAD
+=======
+- **Documentazione**: [phpstan-errors-activitylogger.md](../activity/docs/phpstan-errors-activitylogger.md)
+>>>>>>> laraxot/dev
 
 ### 2. Ptv Module
 - **File**: `ValutatoreField.php`
@@ -81,6 +93,10 @@
   - Usato `$this->options()` per configurare il componente
   - Rimosso codice debug e commentato
 - **Documentazione**: [phpstan-errors-valutatorefield.md](../Ptv/docs/phpstan-errors-valutatorefield.md)
+<<<<<<< HEAD
+=======
+- **Documentazione**: [phpstan-errors-valutatorefield.md](../ptv/docs/phpstan-errors-valutatorefield.md)
+>>>>>>> laraxot/dev
 
 ### 3. IndennitaResponsabilita Module
 - **File**: `CompilaIndennitaResponsabilita.php`
@@ -89,6 +105,10 @@
   - Sostituito `getRatingsWhere()` con query diretta `wherePivot()`
   - Aggiunta annotazione `@phpstan-ignore-next-line` per `withExtraAttributes()` (Spatie Schemaless)
 - **Documentazione**: [phpstan-errors-compilaindennita.md](../IndennitaResponsabilita/docs/phpstan-errors-compilaindennita.md)
+<<<<<<< HEAD
+=======
+- **Documentazione**: [phpstan-errors-compilaindennita.md](../indennitaresponsabilita/docs/phpstan-errors-compilaindennita.md)
+>>>>>>> laraxot/dev
 
 ### 4. Notify Module
 - **File**: `NotifyBasePolicy.php`
@@ -150,5 +170,9 @@
 - Qualità codice complessiva: **Eccellente** (97% conformità)
 - Tutte le correzioni seguono le regole Laraxot e metodologia "Super Mucca"
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> laraxot/dev

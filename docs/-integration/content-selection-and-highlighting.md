@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 'Content selection and highlighting'
 module: Xot
@@ -9,6 +10,11 @@ converted_from: content_selection_and_highlighting.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+=======
+# content_selection_and_highlighting
+
+<!-- Contenuto migrato da _docs/content_selection_and_highlighting.txt -->
+>>>>>>> laraxot/dev
 
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
@@ -25,7 +31,11 @@ https://720kb.github.io/highlighter.js/
 
 https://github.com/anonyco/Highlighter-JS
 
+<<<<<<< HEAD
 https://jobjects.com/docs/highlighter/jquery //deprecated
+=======
+https://jobjects.com/project_docs/highlighter/jquery //deprecated
+>>>>>>> laraxot/dev
 
 https://devpost.com/software/highlighter-js
 

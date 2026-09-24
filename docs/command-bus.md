@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Command bus"
 type: reference
@@ -11,6 +12,8 @@ note: "Convertito da command_bus.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/command_bus.txt -->
 
+=======
+>>>>>>> laraxot/dev
 Command Bus in Laravel Published 21 Mar 2019
 https://martinbean.dev/blog/2019/03/21/command-bus-in-laravel/
 
@@ -27,4 +30,8 @@ https://laravel-italia.it/articoli/implementare-un-command-bus-con-laravel-tacti
 
 https://github.com/jildertmiedema/laravel-tactician  on 11 Sep 2020
 
+<<<<<<< HEAD
 https://github.com/broadway/broadway 
+=======
+https://github.com/broadway/broadway 
+>>>>>>> laraxot/dev

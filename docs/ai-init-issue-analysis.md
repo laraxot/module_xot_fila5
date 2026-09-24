@@ -2,7 +2,11 @@
 
 ## Problema Identificato
 
+<<<<<<< HEAD
 Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
+=======
+Lo script `bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
+>>>>>>> laraxot/dev
 
 ## Analisi
 
@@ -16,7 +20,11 @@ Dopo l'analisi dello script, è stato identificato un problema logico nell'imple
 
 Dovrebbe creare un symlink nella root del progetto:
 ```
+<<<<<<< HEAD
 ./.gemini -> ./bashscripts/ai/.gemini
+=======
+.gemini -> bashscripts/ai/.gemini
+>>>>>>> laraxot/dev
 ```
 
 ## Comportamento Attuale
@@ -31,5 +39,10 @@ Lo script deve essere corretto per invertire la logica:
 
 ## Cartelle Coinvolte
 
+<<<<<<< HEAD
 - Source: `./bashscripts/ai/.gemini`
 - Target symlink: `./.gemini`
+=======
+- Source: `bashscripts/ai/.gemini`
+- Target symlink: `.gemini`
+>>>>>>> laraxot/dev

@@ -376,10 +376,16 @@ Test non isolati o dipendenze condivise.
 
 **Soluzione**
 ```php
+<<<<<<< HEAD
 // ✅ DatabaseTransactions — mai RefreshDatabase (dati sacri)
 class ExampleTest extends TestCase
 {
     use Illuminate\Foundation\Testing\DatabaseTransactions;
+=======
+class ExampleTest extends TestCase
+{
+    use RefreshDatabase; // Garantisce database pulito
+>>>>>>> laraxot/dev
 
     protected function setUp(): void
     {
@@ -389,8 +395,11 @@ class ExampleTest extends TestCase
 }
 ```
 
+<<<<<<< HEAD
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
+=======
+>>>>>>> laraxot/dev
 ### Errore: Test Lenti
 
 **Causa**

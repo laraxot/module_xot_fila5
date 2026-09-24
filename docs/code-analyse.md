@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 'code_analyse'
 module: Xot
@@ -14,6 +15,8 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/code_analyse.txt -->
 
+=======
+>>>>>>> laraxot/dev
 //----------------------------------------------------------
 phpstan
 install:
@@ -21,6 +24,10 @@ install:
 cmd:
 ./vendor/bin/phpstan analyse ./Modules/Xot
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 //----------------------------------------------------------
 https://github.com/phan/phan/wiki/Getting-Started
 
@@ -82,10 +89,21 @@ https://geekflare.com/php-security-scanner/
 https://hub.docker.com/r/adamculp/php-code-quality
 https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> laraxot/dev
 https://github.com/enlightn/enlightn
 
  "edgedesign/phpqa": "^1.23",
 
  "phan/phan": "^4.0",
         "phpmetrics/phpmetrics": "^2.7",
+<<<<<<< HEAD
         "phpunit/php-code-coverage": "^9.2",
+=======
+        "phpunit/php-code-coverage": "^9.2",
+>>>>>>> laraxot/dev

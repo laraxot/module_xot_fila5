@@ -91,7 +91,23 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
+<<<<<<< HEAD
       public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -159,7 +175,23 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
+<<<<<<< HEAD
       public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -824,7 +856,15 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -4221,7 +4261,15 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -4439,7 +4487,15 @@ Questo significa che:
 <<<<<<< HEAD
 abstract public function getFormSchemaOld(): array;
 =======
+<<<<<<< HEAD
 abstract public function getFormSchemaOld(): array;
+=======
+<<<<<<< HEAD
+abstract public function getFormSchemaOld(): array;
+=======
+abstract public function getFormSchemaOld(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -4477,7 +4533,15 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchemaOld(): array
 =======
+<<<<<<< HEAD
     public function getFormSchemaOld(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchemaOld(): array
+=======
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

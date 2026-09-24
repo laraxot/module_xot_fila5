@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RelationX Trait
 
 ## Scopo Business
@@ -32,3 +33,12 @@ Versione estesa di `morphToMany` con le stesse funzionalità di `belongsToManyX`
 
 ## Utilizzo nei Moduli
 Questo trait è utilizzato nei modelli base di tutti i moduli per standardizzare le relazioni complesse e garantire coerenza nell'accesso ai dati.
+=======
+---
+module: theme
+topic: relationx
+canonical: ../../../../Themes/docs/shared-components/RelationX.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
+>>>>>>> laraxot/dev

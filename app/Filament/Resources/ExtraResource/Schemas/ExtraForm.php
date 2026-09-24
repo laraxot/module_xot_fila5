@@ -14,7 +14,11 @@ class ExtraForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'id' => TextInput::make('id')->required()->maxLength(36),

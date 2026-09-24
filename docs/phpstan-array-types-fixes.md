@@ -125,4 +125,8 @@ public function processData(array $data): void
 
 **🎯 OBIETTIVO RAGGIUNTO**: 832 → 0 errori PHPStan (-832, -100%)
 **🏆 STATUS**: PERFETTO - PHPStan Level 9 CLEAN
+<<<<<<< HEAD
 **📊 QUALITÀ CODICE**: Maximum Type Safety Achieved
+=======
+**📊 QUALITÀ CODICE**: Maximum Type Safety Achieved
+>>>>>>> laraxot/dev

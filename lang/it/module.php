@@ -9,9 +9,12 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< HEAD
         'label' => 'module.navigation',
         'icon' => 'module.navigation',
         'sort' => 65,
+=======
+>>>>>>> laraxot/dev
     ],
     'fields' => [
         'name' => [
@@ -108,12 +111,15 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'path' => [
             'label' => 'path',
         ],
         'enabled' => [
             'label' => 'enabled',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [
@@ -135,6 +141,7 @@ return [
     'actions' => [
         'create' => [
             'label' => 'Crea Module',
+<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -162,6 +169,14 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Module',
+        ],
+        'delete' => [
+            'label' => 'Elimina Module',
+>>>>>>> laraxot/dev
         ],
     ],
 ];

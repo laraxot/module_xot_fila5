@@ -79,6 +79,10 @@ private function resolveView(): void
 
 - [Property Type Fixes](./consolidated/archive/property-type-fixes.md) - Documentazione esistente
 - [View-String Type Fixes (User Module)](../User/docs/type-safety-improvements.md) - Pattern simile risolto
+<<<<<<< HEAD
+=======
+- [View-String Type Fixes (User Module)](../user/docs/type-safety-improvements.md) - Pattern simile risolto
+>>>>>>> laraxot/dev
 - [Path Resolution Fixes](./consolidated/archive/path-resolution-fixes.md) - Soluzione simile
 
 ---
@@ -97,4 +101,9 @@ private function resolveView(): void
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< HEAD
 **Versione**: 1.0.0
+=======
+**Ultimo aggiornamento**: [DATE]
+**Versione**: 1.0.0
+>>>>>>> laraxot/dev

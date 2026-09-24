@@ -12,4 +12,20 @@ use Filament\Forms\Components\TextInput as FilamentTextInput;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's TextInput to provide a XotBase layer.
  */
+<<<<<<< HEAD
 abstract class XotBaseTextInput extends FilamentTextInput {}
+=======
+<<<<<<< HEAD
+abstract class XotBaseTextInput extends FilamentTextInput
+{
+}
+=======
+<<<<<<< HEAD
+abstract class XotBaseTextInput extends FilamentTextInput
+{
+}
+=======
+abstract class XotBaseTextInput extends FilamentTextInput {}
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

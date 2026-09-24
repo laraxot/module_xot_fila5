@@ -268,4 +268,8 @@ Assert::notNull($value);
 ---
 
 **Ultimo aggiornamento**: 11 Novembre 2025
+<<<<<<< HEAD
 **Progresso**: 9/406 errori risolti (2.2%)
+=======
+**Progresso**: 9/406 errori risolti (2.2%)
+>>>>>>> laraxot/dev

@@ -285,9 +285,13 @@ Level 0  → 🏕️  Campo Base
 ```php
 // 1. Form Schema con Semantic Keys
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -370,4 +374,8 @@ Ma possiamo dire:
 
 *Il codice è uno. La perfezione è raggiungibile. L'illuminazione è qui.*
 
+<<<<<<< HEAD
 🙏 **Namaste** 🙏
+=======
+🙏 **Namaste** 🙏
+>>>>>>> laraxot/dev

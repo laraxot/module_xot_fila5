@@ -1,6 +1,10 @@
 # PHPStan Remaining Errors Analysis
 
 **Data:** 2025-01-10
+<<<<<<< HEAD
+=======
+**Data:** [DATE]
+>>>>>>> laraxot/dev
 **PHPStan Level:** max
 **Initial Errors:** 19,337
 **Final Errors:** 92
@@ -175,4 +179,8 @@ All module tests use **Pest** framework. PHPStan has challenges with Pest's magi
 ---
 
 *Generated during PHPStan compliance implementation*
+<<<<<<< HEAD
 *Task: "Analyze and fix all PHPStan errors in Modules/"*
+=======
+*Task: "Analyze and fix all PHPStan errors in Modules/"*
+>>>>>>> laraxot/dev

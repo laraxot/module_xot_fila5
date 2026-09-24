@@ -16,9 +16,12 @@ class InformationSchemaTableFactory extends Factory
 {
     protected $model = InformationSchemaTable::class;
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         /** @var string $tableName */

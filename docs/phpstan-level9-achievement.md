@@ -116,4 +116,8 @@ public function getRules(array $config): array
 
 ---
 
+<<<<<<< HEAD
 **🎉 RISULTATO**: Il framework Xot è ora al **massimo livello di qualità** del codice PHP, pronto per supportare qualsiasi applicazione enterprise con la massima affidabilità e type safety.
+=======
+**🎉 RISULTATO**: Il framework Xot è ora al **massimo livello di qualità** del codice PHP, pronto per supportare qualsiasi applicazione enterprise con la massima affidabilità e type safety.
+>>>>>>> laraxot/dev

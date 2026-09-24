@@ -83,13 +83,20 @@ class MetatagPage extends XotBasePage
 
     public function save(): void
     {
+<<<<<<< HEAD
         /** @var array<string, mixed> $data */
+=======
+>>>>>>> laraxot/dev
         $data = $this->form->getState();
         app(SaveTenantConfigAction::class)->execute('metatag', $data);
 
         Notification::make()
             ->success()
+<<<<<<< HEAD
             ->title('Salvato con Successo !')
+=======
+            ->title(__('filament-panels::resources/edit-record.notifications.saved.title'))
+>>>>>>> laraxot/dev
             ->send();
     }
 

@@ -106,4 +106,8 @@ Il file passa PHPStan livello max senza errori, mantenendo:
 
 1. **Type Inference**: Rimozione PHPDoc su getFormSchema() permette a PHPStan di inferire correttamente il tipo dal metodo chiamato
 2. **Pattern Consistency**: Soluzione allineata con XotBaseResource::form()
+<<<<<<< HEAD
 3. **stdClass Handling**: Gestione appropriata per performance Filament bulk actions
+=======
+3. **stdClass Handling**: Gestione appropriata per performance Filament bulk actions
+>>>>>>> laraxot/dev

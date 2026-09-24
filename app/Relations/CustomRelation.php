@@ -1,12 +1,20 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  *
  * @see https://github.com/johnnyfreeman/laravel-custom-relation/blob/master/src/Relations/Custom.php
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Relations;
 
 use Closure;
@@ -23,7 +31,11 @@ use Webmozart\Assert\Assert;
  *
  * @method Builder<Model> when(mixed $value = null, ?callable $callback = null, ?callable $default = null)
  * @method Builder<Model> whereBetween(string $column, iterable<int, mixed> $values, string $boolean = 'and', bool $not = false)
+<<<<<<< HEAD
  * @method Builder<Model> selectRaw(string $expression, array<int|string, mixed> $bindings = [])
+=======
+ * @method Builder<Model> selectRaw(string $expression, array<int, mixed> $bindings = [])
+>>>>>>> laraxot/dev
  * @method Builder<Model> where(string|\Closure|\Illuminate\Contracts\Database\Query\Expression $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  */
 class CustomRelation extends Relation
@@ -38,6 +50,7 @@ class CustomRelation extends Relation
         /**
          * The baseConstraints callback.
          */
+<<<<<<< HEAD
         protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -47,6 +60,17 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected ?Closure $eagerMatcher,
+=======
+        protected \Closure $baseConstraints,
+        /**
+         * The eagerConstraints callback.
+         */
+        protected ?\Closure $eagerConstraints,
+        /**
+         * The eager constraints model matcher.
+         */
+        protected ?\Closure $eagerMatcher,
+>>>>>>> laraxot/dev
     ) {
         parent::__construct($query, $model);
     }
@@ -63,7 +87,11 @@ class CustomRelation extends Relation
      * Set the constraints for an eager load of the relation.
      */
     /**
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
+=======
+     * @param array<int, Model> $models
+>>>>>>> laraxot/dev
      */
     public function addEagerConstraints(array $models): void
     {
@@ -79,11 +107,19 @@ class CustomRelation extends Relation
      * Initialize the relation on a set of models.
      */
     /**
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  string  $relation  the relation name (parent signature is untyped)
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
+=======
+     * @param array<int, Model> $models
+     *
+     * @return array<int, Model>
+     */
+    public function initRelation(array $models, $relation): array
+>>>>>>> laraxot/dev
     {
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
@@ -98,12 +134,21 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     /**
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  Collection<int, Model>  $collection
      * @param  string  $relation  the relation name (parent signature is untyped)
      * @return array<int, Model>
      */
     public function match(array $models, Collection $collection, mixed $relation): array
+=======
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
+     *
+     * @return array<int, Model>
+     */
+    public function match(array $models, Collection $collection, $relation): array
+>>>>>>> laraxot/dev
     {
         // Trying to invoke Closure|null but it might not be a callable.
         if (! \is_callable($this->eagerMatcher)) {
@@ -134,7 +179,12 @@ class CustomRelation extends Relation
      * Execute the query as a "select" statement.
      */
     /**
+<<<<<<< HEAD
      * @param  array<int, string>|string  $columns
+=======
+     * @param array<int, string>|string $columns
+     *
+>>>>>>> laraxot/dev
      * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection

@@ -31,3 +31,9 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< HEAD
+=======
+- [Database Guidelines](../database-guidelines.md)
+- [Performance Guidelines](../performance/database-queries.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> laraxot/dev

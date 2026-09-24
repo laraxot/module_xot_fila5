@@ -105,7 +105,19 @@ final class FilamentSchemaCoverage
             }
 
             try {
+<<<<<<< HEAD
                 // @phpstan-ignore-next-line
+=======
+<<<<<<< HEAD
+                # @phpstan-ignore-next-line
+=======
+<<<<<<< HEAD
+                # @phpstan-ignore-next-line
+=======
+                // @phpstan-ignore-next-line
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                 $schema = $class::getFormSchema();
                 $executed++;
                 if ($schema === []) {

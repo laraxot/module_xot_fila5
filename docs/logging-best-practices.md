@@ -322,4 +322,8 @@ Following these guidelines will:
 5. **Make debugging easier**
 6. **Scale better** under load
 
+<<<<<<< HEAD
 **Remember**: If everything is working correctly, there should be NO log output.
+=======
+**Remember**: If everything is working correctly, there should be NO log output.
+>>>>>>> laraxot/dev

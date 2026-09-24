@@ -449,4 +449,8 @@ php artisan insights
 
 *"Nel codice perfetto, i tipi sono evidenti, gli errori sono impossibili, e la complessità è un ricordo del passato."*
 
+<<<<<<< HEAD
 **ZEN ACHIEVED** 🧘‍♂️
+=======
+**ZEN ACHIEVED** 🧘‍♂️
+>>>>>>> laraxot/dev

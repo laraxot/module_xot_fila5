@@ -13,7 +13,12 @@ final class GeoDistanceExpression implements Expression
         private readonly float $latitude,
         private readonly float $longitude,
         private readonly ?string $alias = null,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     public function getValue(Grammar $grammar): string
     {
@@ -24,7 +29,11 @@ final class GeoDistanceExpression implements Expression
             $this->latitude,
         );
 
+<<<<<<< HEAD
         if ($this->alias !== null) {
+=======
+        if (null !== $this->alias) {
+>>>>>>> laraxot/dev
             $sql .= ' AS '.$this->alias;
         }
 
