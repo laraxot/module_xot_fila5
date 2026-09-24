@@ -19,11 +19,11 @@ class OptionData extends Data
      * @param bool         $enable_cache Se abilitare la cache delle opzioni
      * @param int          $cache_ttl    TTL cache in secondi
      * @param string       $prefix       Prefisso per le chiavi delle opzioni
-<<<<<<< HEAD
+     *                                   <<<<<<< HEAD
      * @param list<string> $autoload     Opzioni da caricare automaticamente
-=======
+     *                                   =======
      * @param array<mixed> $autoload     Opzioni da caricare automaticamente
->>>>>>> laraxot/dev
+     *                                   >>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly string $cache_driver = 'file',
