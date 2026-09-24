@@ -16,7 +16,7 @@ class RelationAction
     /**
      * Undocumented function.
      *
-<<<<<<< HEAD
+     * <<<<<<< HEAD
      * <<<<<<< .merge_file_t0NMtp
      *
      * @param array<string, mixed> $data
@@ -31,9 +31,9 @@ class RelationAction
      *                                   >>>>>>> laraxot/dev
      *                                   >>>>>>> .merge_file_540y8u
      *                                   >>>>>>> .merge_file_qy9tGS
-=======
-     * @param  array<string, mixed>  $data
->>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *                                   =======
+     * @param array<string, mixed> $data
+     *                                   >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      */
     public function execute(Model $model, array $data): void
     {

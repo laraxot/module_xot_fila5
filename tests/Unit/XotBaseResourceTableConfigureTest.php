@@ -11,7 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('XotBaseResourceTable configure applica colonne e filtri dalla classe table', function (): void {
-    $livewire = new XotTableConfigureLivewireHarness;
+    $livewire = new XotTableConfigureLivewireHarness();
     $table = Table::make($livewire);
 
     $configured = XotBaseResourceTableConfigureFixture::configure($table);
@@ -20,7 +20,7 @@ test('XotBaseResourceTable configure applica colonne e filtri dalla classe table
 });
 
 test('XotBaseResourceTable configure su classe astratta solleva LogicException', function (): void {
-    $livewire = new XotTableConfigureLivewireHarness;
+    $livewire = new XotTableConfigureLivewireHarness();
     $table = Table::make($livewire);
 
     expect(fn (): Table => XotBaseResourceTable::configure($table))
