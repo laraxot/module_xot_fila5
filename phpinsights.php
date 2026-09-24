@@ -11,11 +11,7 @@ use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenPrivateMethods;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits;
 use NunoMaduro\PhpInsights\Domain\Insights\MethodCyclomaticComplexityIsHigh;
 use NunoMaduro\PhpInsights\Domain\Metrics\Architecture\Classes;
-use NunoMaduro\PhpInsights\Domain\Sniffs\ForbiddenPublicPropertySniff;
 use NunoMaduro\PhpInsights\Domain\Sniffs\ForbiddenSetterSniff;
-use PHP_CodeSniffer\Standards\Generic\Sniffs\CodeAnalysis\EmptyStatementSniff;
-use PHP_CodeSniffer\Standards\Generic\Sniffs\Files\LineLengthSniff;
-use PHP_CodeSniffer\Standards\PEAR\Sniffs\Functions\FunctionDeclarationSniff;
 use SlevomatCodingStandard\Sniffs\Classes\SuperfluousTraitNamingSniff;
 use SlevomatCodingStandard\Sniffs\Commenting\UselessFunctionDocCommentSniff;
 use SlevomatCodingStandard\Sniffs\ControlStructures\DisallowYodaComparisonSniff;
@@ -48,12 +44,9 @@ return [
         DisallowYodaComparisonSniff::class,
         ForbiddenDefineFunctions::class,
         ForbiddenNormalClasses::class,
-        ForbiddenPublicPropertySniff::class,
         ForbiddenSetterSniff::class,
         ForbiddenTraits::class,
-        FunctionDeclarationSniff::class,
         FunctionLengthSniff::class,
-        LineLengthSniff::class,
         MethodCyclomaticComplexityIsHigh::class,
         ParameterTypeHintSniff::class,
         PropertyTypeHintSniff::class,
@@ -61,7 +54,10 @@ return [
         StaticClosureSniff::class,
         SuperfluousTraitNamingSniff::class,
         UselessFunctionDocCommentSniff::class,
-        EmptyStatementSniff::class,
+        'NunoMaduro\PhpInsights\Domain\Sniffs\ForbiddenPublicPropertySniff',
+        'PHP_CodeSniffer\Standards\PEAR\Sniffs\Functions\FunctionDeclarationSniff',
+        'PHP_CodeSniffer\Standards\Generic\Sniffs\Files\LineLengthSniff',
+        'PHP_CodeSniffer\Standards\Generic\Sniffs\CodeAnalysis\EmptyStatementSniff',
     ],
     'config' => [
         ForbiddenPrivateMethods::class => [
