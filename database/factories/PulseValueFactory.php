@@ -22,12 +22,9 @@ class PulseValueFactory extends Factory
     /**
      * Define the model's default state.
      */
-<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
-=======
->>>>>>> 3792da0d (Check & fix styling)
     public function definition(): array
     {
         return [];

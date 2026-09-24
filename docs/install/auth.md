@@ -111,7 +111,6 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di auth.md
-<<<<<<< HEAD
 * [auth.md](../../../xot/project_docs/install/auth.md)
 * [auth.md](../../../user/project_docs/lang/en/auth.md)
 * [auth.md](../../../tenant/project_docs/it/config/auth.md)
@@ -119,15 +118,3 @@ return [
 ### Versione Incoming
 
 ---
-=======
-* [auth.md](../../../Xot/docs/install/auth.md)
-* [auth.md](../../../User/docs/lang/en/auth.md)
-* [auth.md](../../../Tenant/docs/it/config/auth.md)
-* [auth.md](../../../xot/docs/install/auth.md)
-* [auth.md](../../../user/docs/lang/en/auth.md)
-* [auth.md](../../../tenant/docs/it/config/auth.md)
-
-### Versione Incoming
-
----
->>>>>>> 930f8146 (Check & fix styling)

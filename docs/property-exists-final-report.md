@@ -1,26 +1,6 @@
 # REPORT FINALE: Eliminazione property_exists() da Eloquent Models
 
 ## Data: 2025-11-05
-<<<<<<< .merge_file_DfADXd
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## Data: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vceQHh
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## Durata: ~3 ore
 ## Status: ✅ COMPLETATO
 
@@ -418,29 +398,4 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 
 **Firma:** Claude Code
 **Data:** 2025-11-05
-<<<<<<< .merge_file_DfADXd
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status:** COMPLETATO CON SUCCESSO ✅
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status:** COMPLETATO CON SUCCESSO ✅
-=======
-**Data:** [DATE]
-**Status:** COMPLETATO CON SUCCESSO ✅
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data:** [DATE]
-**Status:** COMPLETATO CON SUCCESSO ✅
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status:** COMPLETATO CON SUCCESSO ✅
->>>>>>> .merge_file_vceQHh
-=======
-=======
-**Status:** COMPLETATO CON SUCCESSO ✅
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

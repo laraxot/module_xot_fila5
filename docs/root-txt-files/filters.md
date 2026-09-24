@@ -5,42 +5,7 @@ type: reference
 slug: filters
 description: 'https://www.algolia.com/blog/engineering/implementing-faceted-search-with-dynamic-faceting-with-code/ !!!'
 tags: [migrato-da-txt, xot]
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_Mby1bk
-<<<<<<< HEAD
-=======
-converted_from: _filters.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-converted_from: _filters.txt
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
-converted_from: _filters.txt
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_52FUtt
 converted_from: filters.txt
-=======
-converted_from: _filters.txt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_Mby1bk
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
-=======
-converted_from: _filters.txt
->>>>>>> .merge_file_52FUtt
->>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
 ---

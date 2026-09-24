@@ -51,26 +51,6 @@ userfactory.php              → ELIMINA
 - `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md` - Uppercase per visibilità
 
 ## 🗑️ Cleanup Effettuato (2025-11-04)
-<<<<<<< .merge_file_rvp0QA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## 🗑️ Cleanup Effettuato ([DATE])
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-## 🗑️ Cleanup Effettuato ([DATE])
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_lxgmIZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### Modulo Xot (6 file)
 ```bash
@@ -90,32 +70,6 @@ userfactory.php              → ELIMINA
 ✗ database/Migrations/
 ```
 
-<<<<<<< .merge_file_rvp0QA
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-### Modulo Tenant (1 directory)
-```bash
-✗ Tests/ → tests (eliminata, duplicato di tests/)
-```
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_lxgmIZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ### Modulo Media (1 file)
 ```bash
 ✗ tests/Filament/Resources/mediaconvertresourcetest.php
@@ -292,34 +246,6 @@ EOF
 Ogni modulo interessato ha documentazione dettagliata:
 
 - [Xot Module](./case-sensitivity-rules.md)
-<<<<<<< .merge_file_rvp0QA
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Gdpr Module](../../gdpr/docs/case-sensitivity-rules.md)
-- [Lang Module](../../lang/docs/case-sensitivity-rules.md)
-- [Media Module](../../media/docs/case-sensitivity-rules.md)
-- [Notify Module](../../notify/docs/case-sensitivity-rules.md)
-- [Rating Module](../../rating/docs/case-sensitivity-rules.md)
-- [Tenant Module](../../tenant/docs/case-sensitivity-rules.md)
-- [User Module](../../user/docs/case-sensitivity-rules.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_lxgmIZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Gdpr Module](../../Gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../Lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../Media/docs/case-sensitivity-rules.md)
@@ -385,26 +311,6 @@ python3 /path/to/check_duplicates.py
 - [Modulo Xot Architecture](./architecture.md)
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
-<<<<<<< .merge_file_rvp0QA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [CLAUDE.md - Project Guidelines](claude.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [CLAUDE.md - Project Guidelines](claude.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_lxgmIZ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## 🎯 Conclusioni
 
@@ -431,35 +337,5 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 ---
 
 **Ultimo aggiornamento**: 2025-11-04
-<<<<<<< .merge_file_rvp0QA
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Status**: ✅ Cleanup completato, enforcement attivo
-**Revisione**: Trimestrale (ogni 3 mesi)
-=======
-**Ultimo aggiornamento**: [DATE]
-**Status**: ✅ Cleanup completato, enforcement attivo
-**Revisione**: Trimestrale (ogni 3 mesi)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Ultimo aggiornamento**: [DATE]
-**Status**: ✅ Cleanup completato, enforcement attivo
-**Revisione**: Trimestrale (ogni 3 mesi)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Status**: ✅ Cleanup completato, enforcement attivo
-**Revisione**: Trimestrale (ogni 3 mesi)
->>>>>>> .merge_file_lxgmIZ
-=======
-=======
-**Status**: ✅ Cleanup completato, enforcement attivo
-**Revisione**: Trimestrale (ogni 3 mesi)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -1,30 +1,5 @@
 # Policy Inheritance Strategy in Laraxot
 
-<<<<<<< .merge_file_PbEJUn
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_eUuRtN
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## 🔴 REGOLA CRITICA: mai cancellare policy modello
 
 `app/Models/Policies/{Model}Policy.php` è **obbligatoria** per Laravel/Filament anche se il body è solo `class XPolicy extends *BasePolicy {}`.
@@ -37,32 +12,6 @@ Regola agenti: [bashscripts/ai/.agents/docs/rules/model-policy-never-delete.md](
 
 ---
 
-<<<<<<< .merge_file_PbEJUn
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_eUuRtN
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## REGOLA PERMANENTE: Gerarchia corretta delle Policy Base
 
 ### Panoramica
@@ -151,43 +100,6 @@ grep -r "extends.*XotBasePolicy" laravel/Modules/User/app/Models/Policies/
 
 - `Modules/Xot/docs/wiki/concepts/xotbasepolicy-architecture.md`
 - `Modules/User/docs/wiki/concepts/userpolicy-domain-specific.md`
-<<<<<<< .merge_file_PbEJUn
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-=======
-<<<<<<< HEAD
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-<<<<<<< HEAD
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-=======
-- Root wiki: `docs/wiki/concepts/laraxot-policy-inheritance.md`
->>>>>>> 64619e34 (.)
-=======
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
->>>>>>> 61938ca4 (delete .claude-audit/)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
->>>>>>> .merge_file_eUuRtN
-=======
-=======
-- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

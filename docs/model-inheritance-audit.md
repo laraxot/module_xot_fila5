@@ -28,26 +28,6 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -167,32 +147,7 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 
 ---
 
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 #### Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### Quaeris
-=======
-#### healthcare_app
-#### ModuloEsempio
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-#### healthcare_app
-#### ModuloEsempio
->>>>>>> 3792da0d (Check & fix styling)
-=======
-#### Quaeris
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-#### Quaeris
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
 **Modelli da correggere**:
@@ -249,32 +204,7 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Cms
 - ❌ Chart
 - ❌ Geo
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 - ❌ Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ❌ Quaeris
-=======
-- ❌ healthcare_app
-- ❌ ModuloEsempio
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- ❌ healthcare_app
-- ❌ ModuloEsempio
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- ❌ Quaeris
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-- ❌ Quaeris
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Totale**: 4/13 moduli (31%)
 
@@ -290,39 +220,8 @@ class TestSushiModel extends BaseModel  // ✅
 | Job | `TaskComment.php` | Estende `Model` invece di `BaseModel` |
 | Lang | `BaseModelLang.php` | Estende `Model` invece di `BaseModel` |
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 | Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-<<<<<<< HEAD
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-| healthcare_app | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| healthcare_app | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-| ModuloEsempio | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| ModuloEsempio | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
 
 **Totale**: 11 file da correggere
@@ -338,32 +237,7 @@ class TestSushiModel extends BaseModel  // ✅
 
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-2. **healthcare_app** - BaseModel e ContactSimple (modulo specifico del progetto)
-2. **ModuloEsempio** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-2. **healthcare_app** - BaseModel e ContactSimple (modulo specifico del progetto)
-2. **ModuloEsempio** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### 🟡 Media Priorità
 3. **Chart** - BaseModel
@@ -398,32 +272,7 @@ done
 
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-=======
-3. ⏳ **healthcare_app** - Da correggere (BaseModel + ContactSimple)
-3. ⏳ **ModuloEsempio** - Da correggere (BaseModel + ContactSimple)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-3. ⏳ **healthcare_app** - Da correggere (BaseModel + ContactSimple)
-3. ⏳ **ModuloEsempio** - Da correggere (BaseModel + ContactSimple)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
 6. ⏳ **Job** - Da correggere (TaskComment)
@@ -445,32 +294,7 @@ done
 Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `Quaeris/BaseModel.php` - Implementa `HasMedia`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
-=======
-- `healthcare_app/BaseModel.php` - Implementa `HasMedia`
-- `ModuloEsempio/BaseModel.php` - Implementa `HasMedia`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- `healthcare_app/BaseModel.php` - Implementa `HasMedia`
-- `ModuloEsempio/BaseModel.php` - Implementa `HasMedia`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 
 `XotBaseModel` è compatibile con `HasMedia` di Spatie.
@@ -484,31 +308,6 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 
 ## Collegamenti
 
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [DRY/KISS Analysis](../../../../dry_kiss_analysis.md) - **Analisi completa duplicazioni e piano refactoring**
-- [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
-- [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
-- [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
@@ -547,26 +346,6 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -686,32 +465,7 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 
 ---
 
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 #### Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### Quaeris
-=======
-#### healthcare_app
-#### ModuloEsempio
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-#### healthcare_app
-#### ModuloEsempio
->>>>>>> 3792da0d (Check & fix styling)
-=======
-#### Quaeris
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-#### Quaeris
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
 **Modelli da correggere**:
@@ -768,32 +522,7 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Cms
 - ❌ Chart
 - ❌ Geo
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 - ❌ Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ❌ Quaeris
-=======
-- ❌ healthcare_app
-- ❌ ModuloEsempio
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- ❌ healthcare_app
-- ❌ ModuloEsempio
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- ❌ Quaeris
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-- ❌ Quaeris
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Totale**: 4/13 moduli (31%)
 
@@ -809,39 +538,8 @@ class TestSushiModel extends BaseModel  // ✅
 | Job | `TaskComment.php` | Estende `Model` invece di `BaseModel` |
 | Lang | `BaseModelLang.php` | Estende `Model` invece di `BaseModel` |
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 | Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-<<<<<<< HEAD
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-| healthcare_app | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| healthcare_app | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-| ModuloEsempio | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| ModuloEsempio | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
 
 **Totale**: 11 file da correggere
@@ -857,32 +555,7 @@ class TestSushiModel extends BaseModel  // ✅
 
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-2. **healthcare_app** - BaseModel e ContactSimple (modulo specifico del progetto)
-2. **ModuloEsempio** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-2. **healthcare_app** - BaseModel e ContactSimple (modulo specifico del progetto)
-2. **ModuloEsempio** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### 🟡 Media Priorità
 3. **Chart** - BaseModel
@@ -917,32 +590,7 @@ done
 
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-=======
-3. ⏳ **healthcare_app** - Da correggere (BaseModel + ContactSimple)
-3. ⏳ **ModuloEsempio** - Da correggere (BaseModel + ContactSimple)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-3. ⏳ **healthcare_app** - Da correggere (BaseModel + ContactSimple)
-3. ⏳ **ModuloEsempio** - Da correggere (BaseModel + ContactSimple)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
 6. ⏳ **Job** - Da correggere (TaskComment)
@@ -964,32 +612,7 @@ done
 Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `Quaeris/BaseModel.php` - Implementa `HasMedia`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
-=======
-- `healthcare_app/BaseModel.php` - Implementa `HasMedia`
-- `ModuloEsempio/BaseModel.php` - Implementa `HasMedia`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- `healthcare_app/BaseModel.php` - Implementa `HasMedia`
-- `ModuloEsempio/BaseModel.php` - Implementa `HasMedia`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 
 `XotBaseModel` è compatibile con `HasMedia` di Spatie.
@@ -1003,31 +626,6 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 
 ## Collegamenti
 
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [DRY/KISS Analysis](../../../../dry_kiss_analysis.md) - **Analisi completa duplicazioni e piano refactoring**
-- [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
-- [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
-- [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
@@ -1035,27 +633,4 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
-<<<<<<< .merge_file_gO143f
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
-=======
-- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_Wp3G2W
-=======
-=======
-- [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

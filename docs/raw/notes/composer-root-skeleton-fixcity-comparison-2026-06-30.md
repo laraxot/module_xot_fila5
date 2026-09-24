@@ -1,12 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< .merge_file_QsCAh9
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_eHlvf2
-=======
->>>>>>> .merge_file_JvZ26k
 title: "Composer Root Skeleton Fixcity Comparison"
 type: concept
 status: deprecated
@@ -21,38 +13,6 @@ related:
 
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
-<<<<<<< .merge_file_QsCAh9
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-title: "Confronto composer root FixCity vs Predict"
-type: raw-note
-module: Xot
-created: 2026-06-30
-tags: [composer, nwidart, laravel-modules, fixcity, predict]
-source:
-  - /var/www/_bases/base_fixcity_fila5/laravel/composer.json
-  - /var/www/_bases/base_predict_fila5/laravel/composer.json
----
-
-# Confronto composer root FixCity vs Predict
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> .merge_file_iNeHny
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JvZ26k
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## Osservazione FixCity
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
@@ -75,26 +35,6 @@ Root allineato e piu' stretto di FixCity:
 - autoload solo `App\\` e `Tests\\`
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
-<<<<<<< HEAD
-<<<<<<< .merge_file_QsCAh9
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_eHlvf2
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-## Osservazione
-=======
-## Osservazione FixCity
->>>>>>> 61938ca4 (delete .claude-audit/)
-<<<<<<< HEAD
->>>>>>> .merge_file_iNeHny
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JvZ26k
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
 
@@ -104,52 +44,10 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Debito FixCity (non replicare in Predict)
 
-<<<<<<< .merge_file_QsCAh9
-<<<<<<< HEAD
-<<<<<<< .merge_file_eHlvf2
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_iNeHny
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JvZ26k
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`);
 - `Modules\\` nell'autoload root;
 - merge di `Themes/*/composer.json`;
 - configurazione merge-plugin piu' ampia del necessario.
-<<<<<<< .merge_file_QsCAh9
-<<<<<<< HEAD
-<<<<<<< .merge_file_eHlvf2
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> 64619e34 (.)
-=======
-- `spatie/laravel-responsecache` nel root — gia' owner in `Modules/Xot`
-- `phpmd/phpmd` in `require-dev` root — usare `.phar` standalone
-- `Database\\Seeders\\` in autoload root — in Predict via `RegisterRuntimePsr4NamespacesAction`
-
-## Stato Predict (canonico 2026-06-30)
-
-Root allineato e piu' stretto di FixCity:
-
-- `require` solo tre package skeleton
-- autoload solo `App\\` e `Tests\\`
-- nessun merge `Themes/*/composer.json`
-- temi/seeders: runtime PSR-4 Xot
->>>>>>> 61938ca4 (delete .claude-audit/)
-<<<<<<< HEAD
->>>>>>> .merge_file_iNeHny
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_JvZ26k
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Regola dedotta
 

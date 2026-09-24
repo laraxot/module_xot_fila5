@@ -1,22 +1,3 @@
-<<<<<<< .merge_file_T4Qh4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_OuypGH
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QIhZyC
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_zZj6kl
 ---
 title: 'google_drive'
 module: Xot
@@ -32,26 +13,6 @@ updated: 2026-08-24
 # google_drive
 
 <!-- Contenuto migrato da _docs/google_drive.txt -->
-<<<<<<< .merge_file_T4Qh4t
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_OuypGH
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QIhZyC
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zZj6kl
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 passo passo + screenshot di dove prendere le varie key
 https://gist.github.com/mehranhadidi/38e38b80e3d533650ed2b94a0f95f7f1
@@ -60,32 +21,6 @@ esempio app completa
 https://github.com/ivanvermeyen/laravel-google-drive-demo
 https://awesomeopensource.com/project/ivanvermeyen/laravel-google-drive-demo
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_T4Qh4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_OuypGH
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QIhZyC
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zZj6kl
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 https://www.myphpnotes.com/post/integrate-google-drive-as-laravel-filesystem
 
@@ -93,137 +28,15 @@ https://www.myphpnotes.com/post/integrate-google-drive-as-laravel-filesystem
 //-- dropbox, ma solo perche' e' di spatie e documentato nella doc ufficiale
 spatie/flysystem-dropbox
 https://laravel.com/docs/8.x/filesystem#custom-filesystems
-<<<<<<< HEAD
-<<<<<<< .merge_file_T4Qh4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_OuypGH
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-https://www.myphpnotes.com/post/integrate-google-drive-as-laravel-filesystem
-
-//-- dropbox, ma solo perche' e' di spatie e documentato nella doc ufficiale
-spatie/flysystem-dropbox
-https://laravel.com/project_docs/8.x/filesystem#custom-filesystems
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QIhZyC
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zZj6kl
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 FlySystem adapter for Google Drive (work with path)
 https://packagist.org/packages/private-it/flysystem-google-drive
 
-<<<<<<< .merge_file_T4Qh4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_OuypGH
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_QIhZyC
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zZj6kl
-=======
-=======
-
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 https://github.com/nao-pon/flysystem-google-drive
 https://stackoverflow.com/questions/49529585/laravel-filesystem-managing-folders-in-google-drive-api
 https://medium.com/@dennissmink/laravel-backup-database-to-your-google-drive-f4728a2b74bd
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_T4Qh4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_OuypGH
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QIhZyC
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zZj6kl
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 
 
 https://flysystem.thephpleague.com/v1/docs/adapter/google-cloud-storage/
-<<<<<<< HEAD
-<<<<<<< .merge_file_T4Qh4t
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-https://flysystem.thephpleague.com/v1/project_docs/adapter/google-cloud-storage/
->>>>>>> laraxot/dev
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_OuypGH
-<<<<<<< HEAD
-=======
-https://flysystem.thephpleague.com/v1/project_docs/adapter/google-cloud-storage/
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_QIhZyC
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zZj6kl
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

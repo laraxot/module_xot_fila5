@@ -1,39 +1,6 @@
-<<<<<<< .merge_file_3tCtDy
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # GitHub Workflows Standard - base_laravelpizza
 
 **Ultimo aggiornamento**: 2025-01-10
-=======
-<<<<<<< HEAD
-# GitHub Workflows Standard - base_laravelpizza
-
-**Ultimo aggiornamento**: 2025-01-10
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-**Ultimo aggiornamento**: 2025-01-10
-# GitHub Workflows Standard - base_<nome progetto>
-
-**Ultimo aggiornamento**: [DATE]
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-# GitHub Workflows Standard - base_laravelpizza
-
-**Ultimo aggiornamento**: 2025-01-10
-<<<<<<< HEAD
->>>>>>> .merge_file_bESDit
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 
@@ -147,60 +114,14 @@ Per ogni modulo/tema:
 Workflow per la sincronizzazione dei subtree e repository remoti.
 
 **Gestione Repository Privati (Bashscripts):**
-<<<<<<< .merge_file_3tCtDy
-<<<<<<< HEAD
-<<<<<<< HEAD
 Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
-=======
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila5`.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila5`.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
->>>>>>> .merge_file_bESDit
-=======
-=======
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 Questo ci permette di usare il `GITHUB_TOKEN` standard invece di dover gestire un PAT segreto (`BASHSCRIPTS_PAT`) per repository esterni.
 
 ```yaml
       - name: Checkout bashscripts
         uses: actions/checkout@v4
         with:
-<<<<<<< .merge_file_3tCtDy
-<<<<<<< HEAD
-<<<<<<< HEAD
           repository: provtv/bashscripts_fila4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-          repository: provtv/bashscripts_fila4
-=======
-          repository: provtv/bashscripts_fila5
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-          repository: provtv/bashscripts_fila5
->>>>>>> 3792da0d (Check & fix styling)
-=======
-          repository: provtv/bashscripts_fila4
->>>>>>> .merge_file_bESDit
-=======
-=======
-          repository: provtv/bashscripts_fila4
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
           token: ${{ secrets.GITHUB_TOKEN }} # Accessibile nativamente nell'organizzazione
           path: bashscripts
 ```
@@ -227,27 +148,4 @@ Il checkout principale deve disabilitare i submodule per evitare errori su indic
 
 ---
 
-<<<<<<< .merge_file_3tCtDy
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
-=======
-**Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
->>>>>>> .merge_file_bESDit
-=======
-=======
-**Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

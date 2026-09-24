@@ -229,23 +229,3 @@ resources/views/
 ## Collegamenti tra versioni di themes-structure.md
 * [themes-structure.md](docs/tecnico/themes-structure.md)
 * [themes-structure.md](../../../Xot/docs/themes-structure.md)
-<<<<<<< .merge_file_WNDw25
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-* [themes-structure.md](../../../xot/docs/themes-structure.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [themes-structure.md](../../../xot/docs/themes-structure.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_xreA2D
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

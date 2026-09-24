@@ -82,29 +82,5 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
-<<<<<<< .merge_file_EdbnOn
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Struttura Moduli](../xot/docs/module_structure.md)
-=======
-<<<<<<< HEAD
-- [Struttura Moduli](../xot/docs/module_structure.md)
-=======
-- [Struttura Moduli](../xot/docs/module_structure.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Struttura Moduli](../xot/docs/module_structure.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Struttura Moduli](../xot/docs/module_structure.md)
->>>>>>> .merge_file_vGz2ay
-=======
-=======
-- [Convenzioni di Namespace](../Xot/docs/namespace_conventions.md)
-- [Struttura Moduli](../Xot/docs/module_structure.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

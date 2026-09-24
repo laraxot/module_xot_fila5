@@ -164,30 +164,7 @@ find docs/ -name "*.md~*" -delete
 # consolidare tutte le cartelle archive
 mkdir -p docs/_archive_consolidated/
 find docs/ -path "*/archive/*" -name "*.md" -exec mv {} docs/_archive_consolidated/ \;
-<<<<<<< .merge_file_c5NFEc
-<<<<<<< HEAD
-<<<<<<< HEAD
 rmdir docs/archive/ docs/*/archive/ 2>/dev/null
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-rmdir docs/archive/ docs/*/archive/ 2>/dev/null
-=======
-rmdir docs/archived/ docs/*/archive/ 2>/dev/null
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-rmdir docs/archived/ docs/*/archive/ 2>/dev/null
->>>>>>> 3792da0d (Check & fix styling)
-=======
-rmdir docs/archive/ docs/*/archive/ 2>/dev/null
->>>>>>> .merge_file_nOgqki
-=======
-=======
-rmdir docs/archive/ docs/*/archive/ 2>/dev/null
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### fase 2: ristrutturazione strategica (3 giorni - alta priorità)
@@ -428,27 +405,4 @@ php artisan test --testsuite=Xot
 
 **ultimo aggiornamento**: 20 agosto 2025
 **analista**: claude code
-<<<<<<< .merge_file_c5NFEc
-<<<<<<< HEAD
-<<<<<<< HEAD
 **criticità**: massima - documentazione fuori controllo
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**criticità**: massima - documentazione fuori controllo
-=======
-**criticità**: massima - documentazione fuori controllo
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**criticità**: massima - documentazione fuori controllo
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**criticità**: massima - documentazione fuori controllo
->>>>>>> .merge_file_nOgqki
-=======
-=======
-**criticità**: massima - documentazione fuori controllo
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -70,19 +70,7 @@ class RouteServiceProvider extends ServiceProvider
         $lang = app()->getLocale();
         if ($user instanceof Model) {
             $userLang = $user->getAttribute('lang');
-<<<<<<< .merge_file_r8r7A1
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (is_string($userLang) && $userLang !== '') {
-=======
-            if (is_string($userLang) && '' !== $userLang) {
->>>>>>> laraxot/dev
-=======
-            if (is_string($userLang) && '' !== $userLang) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if (is_string($userLang) && $userLang !== '') {
->>>>>>> .merge_file_Y53Qzx
                 $lang = $userLang;
             }
         }
@@ -98,19 +86,7 @@ class RouteServiceProvider extends ServiceProvider
 
         if (in_array(request()->segment(1), $langs, false)) {
             $lang = request()->segment(1);
-<<<<<<< .merge_file_r8r7A1
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($lang !== null) {
-=======
-            if (null !== $lang) {
->>>>>>> laraxot/dev
-=======
-            if (null !== $lang) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($lang !== null) {
->>>>>>> .merge_file_Y53Qzx
                 app()->setLocale($lang);
             }
         }
@@ -143,15 +119,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $models_collect = collect(array_keys($models));
         $models_collect->implode('|');
-<<<<<<< HEAD
         $models_collect->map(fn (int|string $item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
-=======
-        $models_collect->map(fn ($item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     /**

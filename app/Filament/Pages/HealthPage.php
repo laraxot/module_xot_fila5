@@ -1,26 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 /**
  * @see https://github.com/shuvroroy/filament-spatie-laravel-health/tree/main
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
@@ -92,7 +76,6 @@ class HealthPage extends XotBasePage
             $checks[] = SmtpCheck::new();
         }
 
-<<<<<<< HEAD
         // CpuLoadCheck, SecurityAdvisoriesCheck, and SmtpCheck are optional packages;
         // filter to only actual Check instances so the array type is guaranteed.
         /** @var array<int, Check> $filteredChecks */
@@ -104,20 +87,6 @@ class HealthPage extends XotBasePage
         }
 
         Health::checks($filteredChecks);
-=======
-        /*
-         * PHPStan Level 10: CpuLoadCheck, SecurityAdvisoriesCheck, and SmtpCheck
-         * all extend Check, but their types are not recognized due to dynamic loading.
-         * We suppress this specific error as the runtime type is guaranteed to be correct.
-         *
-         * @phpstan-ignore-next-line argument.type
-         */
-        Health::checks($checks);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         Artisan::call(RunHealthChecksCommand::class);
         $this->dispatch('refresh-component');
         Notification::make()

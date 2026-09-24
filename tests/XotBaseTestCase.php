@@ -23,27 +23,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
-use PHPUnit\Framework\MockObject\Rule\InvokedCount;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_xZkTfO
 use Safe\Exceptions\FilesystemException;
-=======
-use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
-use PHPUnit\Framework\MockObject\Rule\InvokedCount;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-use Safe\Exceptions\FilesystemException;
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 /**
  * Class XotBaseTestCase.
@@ -52,30 +32,13 @@ use Safe\Exceptions\FilesystemException;
  * DatabaseTransactions belongs in each module TestCase when that module needs transactional isolation.
  *
  * @property object|null $action
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property Model|null $model
-=======
- * @property Model|null  $model
->>>>>>> laraxot/dev
-=======
- * @property Model|null  $model
->>>>>>> 3792da0d (Check & fix styling)
-=======
- * @property Model|null $model
->>>>>>> .merge_file_xZkTfO
  * @property object|null $service
  * @property object|null $widget
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_xZkTfO
  * @property Model|null $testModel
  * @property object|null $extraClass
  * @property Model|null $baseModel
@@ -83,23 +46,6 @@ use Safe\Exceptions\FilesystemException;
  * @property string|null $workDir
  * @property mixed $saved
  * @property mixed $extra_attributes
-<<<<<<< .merge_file_RIi0YP
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property Model|null  $testModel
- * @property object|null $extraClass
- * @property Model|null  $baseModel
- * @property string|null $testDir
- * @property string|null $workDir
- * @property mixed       $saved
- * @property mixed       $extra_attributes
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_xZkTfO
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
@@ -136,19 +82,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     public mixed $extra_attributes = null;
 
     /**
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $data
->>>>>>> .merge_file_xZkTfO
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -156,19 +90,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $data
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $data
->>>>>>> .merge_file_xZkTfO
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
     {
@@ -183,21 +105,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<T>  $class
-=======
-     * @param class-string<T> $class
-     *
->>>>>>> laraxot/dev
-=======
-     * @param class-string<T> $class
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<T>  $class
->>>>>>> .merge_file_xZkTfO
      * @return MockObject&T
      */
     public function createUnitMock(string $class): MockObject
@@ -208,25 +116,8 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<T>  $abstract
      * @param  (\Closure(MockInterface&T): void)|null  $callback
-=======
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
->>>>>>> laraxot/dev
-=======
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<T>  $abstract
-     * @param  (\Closure(MockInterface&T): void)|null  $callback
->>>>>>> .merge_file_xZkTfO
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -237,85 +128,19 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $mock;
     }
 
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsOnce(): InvokedCount
-    {
-        return $this->once();
-    }
-
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsExactly(int $count): InvokedCount
-    {
-        return $this->exactly($count);
-    }
-
-    /**
-     * @phpstan-ignore return.internalClass
-     */
-    public function expectsAtLeastOnce(): InvokedAtLeastOnce
-    {
-        return $this->atLeastOnce();
-    }
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_xZkTfO
     public function skipTest(string $message = ''): never
     {
         $this->markTestSkipped($message);
     }
 
     /**
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<\Throwable>  $exceptionClass
-=======
-     * @param class-string<\Throwable> $exceptionClass
->>>>>>> laraxot/dev
-=======
-     * @param class-string<\Throwable> $exceptionClass
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<\Throwable>  $exceptionClass
->>>>>>> .merge_file_xZkTfO
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-<<<<<<< HEAD
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_xZkTfO
         if ($message !== null) {
             $this->expectExceptionMessageIsOrContains($message);
-=======
-        if (null !== $message) {
-            $this->expectExceptionMessage($message);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (null !== $message) {
-<<<<<<< HEAD
-            $this->expectExceptionMessageIsOrContains($message);
-=======
-            $this->expectExceptionMessage($message);
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         }
     }
 
@@ -333,31 +158,14 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         parent::setUp();
 
-<<<<<<< HEAD
         // Nei test non esiste una build Vite (public_html/build/manifest.json):
         // i blade con @vite renderizzano senza asset invece di lanciare ViewException.
         $this->withoutVite();
 
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function (Application $app) {
-=======
-        if (! $this->app->bound('translator')) {
-            $this->app->singleton('translator', function ($app) {
->>>>>>> 930f8146 (Check & fix styling)
                 return new Translator(
                     new ArrayLoader,
-<<<<<<< .merge_file_RIi0YP
-=======
-                    new ArrayLoader(),
->>>>>>> laraxot/dev
-=======
-        if (! $this->app->bound('translator')) {
-            $this->app->singleton('translator', function ($app) {
-                return new Translator(
-                    new ArrayLoader(),
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_xZkTfO
                     'en'
                 );
             });
@@ -401,56 +209,20 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $attributes
->>>>>>> .merge_file_xZkTfO
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
         /** @var Factory<Model&UserContract> $factory */
         $factory = UserFactory::new();
         /** @var UserContract $user */
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
         $user = $factory->create($attributes);
-=======
-        $user = $factory->createOne($attributes);
->>>>>>> laraxot/dev
-=======
-        $user = $factory->createOne($attributes);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $user = $factory->create($attributes);
->>>>>>> .merge_file_xZkTfO
 
         return $user;
     }
 
     /**
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $attributes
->>>>>>> .merge_file_xZkTfO
      */
     protected static function createTestTenant(array $attributes = []): Tenant
     {
@@ -461,19 +233,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $attributes
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $attributes
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $attributes
->>>>>>> .merge_file_xZkTfO
      */
     protected static function createTestModule(array $attributes = []): Module
     {
@@ -481,7 +241,6 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< HEAD
      * Path of the shared SQLite database used by module tests.
      *
      * I moduli sono condivisi fra piu' progetti: il nome del file non puo' essere
@@ -520,13 +279,6 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     /**
      * Punta ogni connessione sqlite al file condiviso e condivide un solo PDO.
-=======
-     * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      *
      * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
      * each opening their own transaction causes "database is locked". Sharing the
@@ -534,17 +286,12 @@ abstract class XotBaseTestCase extends BaseTestCase
      *
      * Call before parent::setUp() when the test case uses DatabaseTransactions.
      */
-<<<<<<< HEAD
     protected function prepareSharedSqliteForTesting(): void
-=======
-    protected function prepareSharedFixcitySqliteForTesting(): void
->>>>>>> 930f8146 (Check & fix styling)
     {
         if ($this->app === null) {
             $this->refreshApplication();
         }
 
-<<<<<<< HEAD
         $database = self::sharedSqlitePath();
 
         // La connessione opzionale 'user' (driver mysql) senza database configurato
@@ -560,20 +307,6 @@ abstract class XotBaseTestCase extends BaseTestCase
                 'foreign_key_constraints' => true,
             ]);
         }
-=======
-<<<<<<< HEAD
-    protected function prepareSharedFixcitySqliteForTesting(): void
-    {
-        if (null === $this->app) {
-            $this->refreshApplication();
-        }
-
-        $database = database_path('fixcity_data.sqlite');
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        $database = database_path('fixcity_data.sqlite');
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -582,19 +315,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (config("database.connections.{$connection}.driver") !== 'sqlite') {
-=======
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
->>>>>>> laraxot/dev
-=======
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
->>>>>>> .merge_file_xZkTfO
                 continue;
             }
 
@@ -607,19 +328,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             DB::purge($connection);
         }
 
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($sqliteConnections === []) {
-=======
-        if ([] === $sqliteConnections) {
->>>>>>> laraxot/dev
-=======
-        if ([] === $sqliteConnections) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($sqliteConnections === []) {
->>>>>>> .merge_file_xZkTfO
             return;
         }
 
@@ -645,34 +354,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         $connectionsProperty->setValue($database, $resolved);
     }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-    /**
-     * Legacy alias kept for module TestCases that still call the old name.
-     *
-     * @deprecated use {@see prepareSharedSqliteForTesting()}
-     */
-    protected function prepareSharedFixcitySqliteForTesting(): void
-    {
-        $this->prepareSharedSqliteForTesting();
-    }
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_xZkTfO
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     public function bindInstance(string $abstract, object $instance): void
     {
         $this->instance($abstract, $instance);
@@ -689,19 +370,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_RIi0YP
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<\Throwable>  $exception
-=======
-     * @param class-string<\Throwable> $exception
->>>>>>> laraxot/dev
-=======
-     * @param class-string<\Throwable> $exception
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<\Throwable>  $exception
->>>>>>> .merge_file_xZkTfO
      */
     public function expectThrowable(string $exception): void
     {
@@ -710,15 +379,7 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-<<<<<<< HEAD
         $this->expectExceptionMessageIsOrContains($message);
-=======
-        $this->expectExceptionMessage($message);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

@@ -1,17 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
 title: 'Todo'
 module: Xot
 type: reference
@@ -19,62 +6,13 @@ slug: todo
 description: "usare userprovider che e' un contratto sulle policy"
 tags: [migrato-da-txt, xot]
 converted_from: todo.txt
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-title: '_todo'
-module: Xot
-type: reference
-slug: todo
-description: '<!-- Contenuto migrato da _docs/_todo.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: _todo.txt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_0JWfjv
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_S8WNXa
->>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_0JWfjv
-<<<<<<< HEAD
 usare userprovider che e' un contratto sulle policy
-=======
-=======
-=======
->>>>>>> .merge_file_S8WNXa
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-usare userprovider che e' un contratto sulle policy
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_0JWfjv
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_S8WNXa
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-# _todo
+
+## Da `_todo.txt`
 
 <!-- Contenuto migrato da _docs/_todo.txt -->
 
@@ -83,13 +21,3 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

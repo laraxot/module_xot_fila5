@@ -2,30 +2,7 @@
 
 ## Panoramica
 
-<<<<<<< .merge_file_6NKTzx
-<<<<<<< HEAD
-<<<<<<< HEAD
 iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
-=======
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono con iFlow.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono con iFlow.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
->>>>>>> .merge_file_5bpEXz
-=======
-=======
-iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Prerequisiti
 
@@ -263,47 +240,10 @@ Aggiungere al file `~/.cursor/mcp.json`:
         "MINIMAX_API_KEY": "${MINIMAX_API_KEY}"
       }
     },
-<<<<<<< .merge_file_6NKTzx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_5bpEXz
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     "phpstan-quaeris": {
       "url": "http://localhost:8003/sse"
     },
     "artisan-quaeris": {
-<<<<<<< HEAD
-<<<<<<< .merge_file_6NKTzx
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-    "phpstan-healthcare_app": {
-      "url": "http://localhost:8003/sse"
-    },
-    "artisan-healthcare_app": {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_5bpEXz
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
       "url": "http://localhost:8004/sse"
     }
   }
@@ -392,27 +332,4 @@ Aggiungere al file `~/.codeium/windsurf/mcp_config.json`:
 
 - [MCP Editors Configuration](./mcp-editors-configuration.md) - Configurazione generale editor
 - [MCP Claude Code Configuration](./mcp-claude-code-configuration.md) - Configurazione Claude Code
-<<<<<<< .merge_file_6NKTzx
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
-=======
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
->>>>>>> .merge_file_5bpEXz
-=======
-=======
-- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

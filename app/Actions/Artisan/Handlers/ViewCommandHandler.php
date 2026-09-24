@@ -19,36 +19,6 @@ class ViewCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
-<<<<<<< HEAD
         return $command === 'viewclear';
-<<<<<<< .merge_file_bKgnBZ
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_8hTgE9
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        return $command === 'viewclear';
-=======
-        return 'viewclear' === $command;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        return 'viewclear' === $command;
->>>>>>> .merge_file_zxJGTI
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        return 'viewclear' === $command;
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_t1Br8e
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 }

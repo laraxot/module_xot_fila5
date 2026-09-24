@@ -32,28 +32,6 @@ find translations.md)
 ```markdown
 - [Traduzioni](../../Xot/docs/translations.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
-<<<<<<< .merge_file_9H2aFG
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Traduzioni](../../xot/docs/translations.md)
-- [Standard Traduzioni](../../xot/docs/translation-standards.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Traduzioni](../../xot/docs/translations.md)
-- [Standard Traduzioni](../../xot/docs/translation-standards.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_iVK0Dd
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 #### C. Struttura Documentazione Corretta
@@ -185,46 +163,7 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 ---
 
 **DATA EFFETTIVA**: 2025-08-20
-<<<<<<< .merge_file_9H2aFG
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_iVK0Dd
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **PRIORITÀ**: CRITICA
 **RESPONSABILE**: Tutto il team sviluppo
 
 *Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
-<<<<<<< HEAD
-<<<<<<< .merge_file_9H2aFG
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-**DATA EFFETTIVA**: [DATE]
-**PRIORITÀ**: CRITICA
-**RESPONSABILE**: Tutto il team sviluppo
-
-<<<<<<< HEAD
-*Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_iVK0Dd
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

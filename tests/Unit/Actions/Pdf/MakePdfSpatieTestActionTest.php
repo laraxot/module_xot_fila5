@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use Modules\Xot\Tests\TestCase;
@@ -10,19 +9,6 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 uses(TestCase::class);
 
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Facades\Facade;
-use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
-use PHPUnit\Framework\Assert;
-use Symfony\Component\HttpFoundation\StreamedResponse;
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 it('builds a streamed pdf download response for the generic test view', function (): void {
     Facade::setFacadeApplication(app());
 

@@ -45,65 +45,13 @@ README.md
 phpstan-fixes-2025-01-06.md
 lessons-learned-2025-08-25.md
 git-conflicts-resolution-2025-01-06.md
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-phpstan-fixes-[DATE].md
-lessons-learned-[DATE].md
-git-conflicts-resolution-[DATE].md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-phpstan-fixes-[DATE].md
-lessons-learned-[DATE].md
-git-conflicts-resolution-[DATE].md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_pTG2CT
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 **Dopo**:
 ```
 archive/phpstan/phpstan-fixes-jan2025.md  (archiviato)
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 archive/lessons-learned-aug2025.md         (archiviato)
 phpstan-level10-success-nov2025.md         (attuale)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
-=======
-archive/lessons-learned-aug-archive-1.md         (archiviato)
-phpstan-level10-success-nov-archive-1.md         (attuale)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-archive/lessons-learned-aug-archive-1.md         (archiviato)
-phpstan-level10-success-nov-archive-1.md         (attuale)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 3. Consolidamento Duplicati (12 file eliminati)
@@ -130,30 +78,7 @@ phpstan-level10-success-nov2025.md         (attuale)
 **Struttura migliorata**:
 ```
 docs/
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-├── phpstan-level10-success-nov-archive-1.md  (attuale)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-├── phpstan-level10-success-nov-archive-1.md  (attuale)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-├── phpstan-level10-success-nov2025.md  (attuale)
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-├── phpstan-level10-success-nov2025.md  (attuale)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ├── phpstan-workflow.md                  (procedura)
 └── archive/
     └── phpstan/
@@ -182,30 +107,7 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -220,30 +122,7 @@ public static string $projectBasePath = '../../docs/standards/php-inheritance-ru
 ```
 docs/
 ├── README.md                          (indice principale)
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-├── phpstan-level10-success-nov-archive-1.md (ultimo successo)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-├── phpstan-level10-success-nov-archive-1.md (ultimo successo)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-├── phpstan-level10-success-nov2025.md (ultimo successo)
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-├── phpstan-level10-success-nov2025.md (ultimo successo)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ├── phpstan-workflow.md                (procedura corrente)
 ├── eloquent-magic-properties-rule.md  (regole Eloquent)
 ├── git-forward-only-rule.md           (regola Git)
@@ -271,55 +150,12 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 [guida principale](../../../docs/guide.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-[guida principale](../../../docs/guide.md)
-=======
-[guida principale](../../../../docs/guide.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-[guida principale](../../../../docs/guide.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-[guida principale](../../../docs/guide.md)
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-[guida principale](../../../docs/guide.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-[user docs](../../user/docs/user-guide.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-[user docs](../../user/docs/user-guide.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_pTG2CT
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### All'interno dello stesso modulo
@@ -358,30 +194,7 @@ Documentato in: `git-forward-only-rule.md`
 **Vietato**: `git checkout HEAD --`, `git reset`, `git revert` (senza discussione)
 
 ### File .lock Pattern
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-Documentato in: `phpstan-level10-success-nov-archive-1.md`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Documentato in: `phpstan-level10-success-nov-archive-1.md`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Documentato in: `phpstan-level10-success-nov2025.md`
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-Documentato in: `phpstan-level10-success-nov2025.md`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Regola**: Creare `.lock` prima di modificare file
 
@@ -435,30 +248,7 @@ find . -name "readme.md" -o -name "Readme.md"
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Successo PHPStan
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Successo PHPStan
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Eloquent Magic Properties Rule](./eloquent-magic-properties-rule.md) - Regola property_exists
 - [Git Forward Only Rule](./git-forward-only-rule.md) - Regola Git
 - [Naming Conventions](./naming-conventions.md) - Convenzioni naming
@@ -469,27 +259,4 @@ find . -name "readme.md" -o -name "Readme.md"
 1. **Correzione link assoluti**: Eseguire script `fix-absolute-paths-in-docs.sh` (con supervisione)
 2. **Applicare a tutti i moduli**: Replicare miglioramenti in Modules/*/docs/
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
-<<<<<<< .merge_file_PLAZD2
-<<<<<<< HEAD
-<<<<<<< HEAD
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> 3792da0d (Check & fix styling)
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> .merge_file_pTG2CT
-=======
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

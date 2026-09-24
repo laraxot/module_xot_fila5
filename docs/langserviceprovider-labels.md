@@ -33,48 +33,8 @@ TextInput::make('first_name') // la label viene risolta automaticamente
 
 ## Collegamenti
 - [Doc specifica Patient](../../Patient/docs/langserviceprovider-labels.md)
-<<<<<<< .merge_file_ncGqcf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Doc specifica Patient](../../patient/docs/langserviceprovider-labels.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Doc specifica Patient](../../patient/docs/langserviceprovider-labels.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_q340T3
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Questa regola è obbligatoria per tutti i moduli.**
 
 ## Collegamenti tra versioni di langserviceprovider-labels.md
 * [langserviceprovider-labels.md](../../Patient/docs/langserviceprovider-labels.md)
-<<<<<<< .merge_file_ncGqcf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-* [langserviceprovider-labels.md](../../patient/docs/langserviceprovider-labels.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [langserviceprovider-labels.md](../../patient/docs/langserviceprovider-labels.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_q340T3
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

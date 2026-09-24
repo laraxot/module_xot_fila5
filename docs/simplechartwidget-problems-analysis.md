@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_Glmf0R
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_Ia9Mey
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_CKFyQT
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_pRDPRY
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica
@@ -486,41 +466,4 @@ L'analisi del `SimpleChartWidget` ha identificato diversi problemi che impattano
 2. **Ottimizzano l'esperienza utente** (accessibilità, performance)
 3. **Migliorano la manutenibilità** (separazione logica, refactoring)
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Glmf0R
-<<<<<<< HEAD
 L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_Ia9Mey
-L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
-=======
-L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
----
-module: theme
-topic: simplechartwidget-problems-analysis
-canonical: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
->>>>>>> laraxot/dev
->>>>>>> .merge_file_CKFyQT
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/simplechartwidget-problems-analysis.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
-L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
->>>>>>> .merge_file_pRDPRY
-=======
-=======
-L'implementazione incrementale permette di validare ogni miglioramento prima di procedere con la fase successiva, garantendo un processo di refactoring sicuro e controllato.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

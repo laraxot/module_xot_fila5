@@ -4,19 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
-<<<<<<< .merge_file_mWiqfP
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// use Modules\Xot\Services\ArrayService;
-
->>>>>>> laraxot/dev
-=======
-// use Modules\Xot\Services\ArrayService;
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_rQI8ky
 use Illuminate\View\View;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;

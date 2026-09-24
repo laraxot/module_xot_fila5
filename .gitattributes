@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_cW8W3z
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_sLH485
->>>>>>> .merge_file_Ar6BGt
->>>>>>> laraxot/dev
->>>>>>> .merge_file_0c9anL
->>>>>>> 930f8146 (Check & fix styling)
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: docs/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
 #
 # Git LFS VIETATO. Binari = blob git normali.
 
->>>>>>> 3792da0d (Check & fix styling)
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored

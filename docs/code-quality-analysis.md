@@ -17,26 +17,6 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 - **Level**: Maximum (10/10)
 - **Coverage**: 100% code analysis
 - **Last Check**: 2025-11-12
-<<<<<<< .merge_file_x5wp4p
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- **Last Check**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Last Check**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_42nkMA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis
@@ -233,26 +213,6 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 4. **`API_REFERENCE.md`** - Complete API documentation
 5. **`BEST_PRACTICES.md`** - Usage guidelines and patterns
 **Last Updated**: 2025-12-05
-<<<<<<< .merge_file_x5wp4p
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_42nkMA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Status**: Analysis Complete
 
 ## 📊 Overview
@@ -313,30 +273,7 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 
 ### 3. Structural Integrity (LOW)
 - **Issue**: The PHPMD warning regarding a trait collision.
-<<<<<<< .merge_file_x5wp4p
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
-=======
-- **Impact**: Could lead to un<nome progetto>able behavior or fatal errors if not addressed.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Impact**: Could lead to un<nome progetto>able behavior or fatal errors if not addressed.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
->>>>>>> .merge_file_42nkMA
-=======
-=======
-- **Impact**: Could lead to unpredictable behavior or fatal errors if not addressed.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **Action**: Requires manual investigation and resolution.
 
 ---
@@ -361,26 +298,6 @@ An analysis of the `Xot` module was performed using PHPStan, PHPMD, and PHPInsig
 ---
 
 *Last Updated: 2025-11-12*
-<<<<<<< .merge_file_x5wp4p
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_42nkMA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
 1.  **Immediate**: Address the security vulnerability.
@@ -406,26 +323,6 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 - **Level**: Maximum (10/10)
 - **Coverage**: 100% code analysis
 - **Last Check**: 2025-11-12
-<<<<<<< .merge_file_x5wp4p
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- **Last Check**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **Last Check**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_42nkMA
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis
@@ -644,35 +541,5 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 ---
 
 *Last Updated: 2025-11-12*
-<<<<<<< .merge_file_x5wp4p
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Status: Ready for PHPMD Analysis*
 *Priority: HIGH (Foundation Module)*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Status: Ready for PHPMD Analysis*
-*Priority: HIGH (Foundation Module)*
-=======
-*
-*Status: Ready for PHPMD Analysis*
-*Priority: HIGH (Foundation Module)*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*
-*Status: Ready for PHPMD Analysis*
-*Priority: HIGH (Foundation Module)*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Status: Ready for PHPMD Analysis*
-*Priority: HIGH (Foundation Module)*
->>>>>>> .merge_file_42nkMA
-=======
-=======
-*Status: Ready for PHPMD Analysis*
-*Priority: HIGH (Foundation Module)*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

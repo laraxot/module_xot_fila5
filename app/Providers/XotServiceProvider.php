@@ -4,22 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-<<<<<<< HEAD
 use Composer\Autoload\ClassLoader;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
-=======
-use Filament\Forms\Components\DatePicker;
-use Filament\Forms\Components\DateTimePicker;
-use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
@@ -34,47 +23,15 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
-<<<<<<< HEAD
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-<<<<<<< .merge_file_rpFAK8
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
-=======
-use Modules\Xot\Console\Commands\GenerateFilamentResources;
-use Modules\Xot\Datas\XotData;
-use Modules\Xot\Support\PaDesignColors;
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
 
-=======
-=======
->>>>>>> .merge_file_0lfYeo
-use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
-=======
->>>>>>> 3792da0d (Check & fix styling)
-use Modules\Xot\View\Composers\XotComposer;
-use Webmozart\Assert\Assert;
-
-use function Safe\realpath;
-
-<<<<<<< .merge_file_rpFAK8
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0lfYeo
 /**
  * Class XotServiceProvider.
  */
@@ -111,16 +68,6 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandlersRepository();
         // $this->extendExceptionHandler();
         $this->registerCommands();
-<<<<<<< HEAD
-<<<<<<< .merge_file_rpFAK8
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_0lfYeo
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
         $this->registerExportJobs();
     }
 
@@ -133,17 +80,6 @@ class XotServiceProvider extends XotBaseServiceProvider
     private function registerExportJobs(): void
     {
         $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
-<<<<<<< HEAD
-<<<<<<< .merge_file_rpFAK8
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0lfYeo
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     }
 
     public function registerProviders(): void
@@ -161,28 +97,11 @@ class XotServiceProvider extends XotBaseServiceProvider
 
         $loader = require $autoloadPath;
 
-<<<<<<< HEAD
         if (! $loader instanceof ClassLoader) {
-=======
-        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
->>>>>>> 930f8146 (Check & fix styling)
             return;
         }
 
         (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
-<<<<<<< .merge_file_rpFAK8
-=======
-        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
->>>>>>> laraxot/dev
-=======
-        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
-            return;
-        }
-
-        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_0lfYeo
     }
 
     public function registerTimezone(): void
@@ -214,11 +133,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     public function registerPaFilamentColors(): void
     {
-<<<<<<< HEAD
         FilamentColor::register(app(PaDesignColorsAction::class)->filamentPalette());
-=======
-        FilamentColor::register(PaDesignColors::filamentPalette());
->>>>>>> 930f8146 (Check & fix styling)
     }
 
     public function registerFilamentMacros(): void
@@ -274,36 +189,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-<<<<<<< .merge_file_rpFAK8
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> laraxot/dev
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($file->getExtension() !== 'php') {
->>>>>>> .merge_file_0lfYeo
                 continue;
             }
 
             $realPath = $file->getRealPath();
-<<<<<<< .merge_file_rpFAK8
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($realPath === false) {
-=======
-            if (false === $realPath) {
->>>>>>> laraxot/dev
-=======
-            if (false === $realPath) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($realPath === false) {
->>>>>>> .merge_file_0lfYeo
                 continue;
             }
 
@@ -326,17 +217,9 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-<<<<<<< HEAD
         // Placeholder è deprecato in favore di TextEntry (state()): Entry::class copre già
         // TextEntry e le altre entry infolist, quindi non serve registrarlo separatamente.
         $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
-=======
-        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {

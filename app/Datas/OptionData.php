@@ -15,38 +15,11 @@ use Spatie\LaravelData\Data;
 class OptionData extends Data
 {
     /**
-<<<<<<< .merge_file_myj0YO
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_QMRz6I
      * @param  string  $cache_driver  Driver per la cache delle opzioni
      * @param  bool  $enable_cache  Se abilitare la cache delle opzioni
      * @param  int  $cache_ttl  TTL cache in secondi
      * @param  string  $prefix  Prefisso per le chiavi delle opzioni
      * @param  list<string>  $autoload  Opzioni da caricare automaticamente
-<<<<<<< .merge_file_myj0YO
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param string       $cache_driver Driver per la cache delle opzioni
-     * @param bool         $enable_cache Se abilitare la cache delle opzioni
-     * @param int          $cache_ttl    TTL cache in secondi
-     * @param string       $prefix       Prefisso per le chiavi delle opzioni
-<<<<<<< HEAD
-     * @param list<string> $autoload     Opzioni da caricare automaticamente
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<mixed> $autoload     Opzioni da caricare automaticamente
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_QMRz6I
-=======
-=======
-     * @param array<mixed> $autoload     Opzioni da caricare automaticamente
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public function __construct(
         public readonly string $cache_driver = 'file',
@@ -54,39 +27,13 @@ class OptionData extends Data
         public readonly int $cache_ttl = 86400,
         public readonly string $prefix = 'options_',
         public readonly array $autoload = ['site_name', 'site_description', 'site_logo'],
-<<<<<<< .merge_file_myj0YO
-<<<<<<< HEAD
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
-=======
-    ) {
-    }
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    ) {}
->>>>>>> .merge_file_QMRz6I
 
     /**
      * Create a new instance of OptionData with default values.
      */
     public static function make(): self
     {
-<<<<<<< .merge_file_myj0YO
-<<<<<<< HEAD
-<<<<<<< HEAD
         return new self;
-=======
-        return new self();
->>>>>>> laraxot/dev
-=======
-        return new self();
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        return new self;
->>>>>>> .merge_file_QMRz6I
     }
 }

@@ -1,26 +1,6 @@
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-01-18
-<<<<<<< .merge_file_BgKDQN
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Data Creazione**: [DATE]
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data Creazione**: [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_J8UevJ
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -335,19 +315,11 @@ TextInput::make('name')
     ->placeholder('Inserisci nome'); // Hardcoded!
 ```
 
-<<<<<<< HEAD
 #### 5. Mai Creare Services / Support — Solo QueueableActions
 
 **Comandamento**: Mai creare file in `app/Services/` o `app/Support/`. Usare sempre `app/Actions/` con Spatie QueueableAction. Multi-metodo su contratti/framework → `app/Adapters/`.
 
 **Violazione**: Creare Services o Support è eresia architetturale.
-=======
-#### 5. Mai Creare Services
-
-**Comandamento**: Mai creare Services. Sempre QueueableActions.
-
-**Violazione**: Creare Services è eresia.
->>>>>>> 930f8146 (Check & fix styling)
 
 **Manifestazione**:
 ```php
@@ -370,7 +342,6 @@ class UserService
         // Services sono deprecati!
     }
 }
-<<<<<<< HEAD
 
 // ❌ ERESIA: Support helper statico
 class UserSupport
@@ -392,10 +363,6 @@ class UserSupport
 - **No `app/Support/`**: helper statici di dominio violano il pattern Action
 - **Migrazione 2026-07-12/13**: tutti i moduli e Sixteen hanno eliminato Services/Support
 
-=======
-```
-
->>>>>>> 930f8146 (Check & fix styling)
 #### 6. Mai Usare `property_exists()` nei Modelli
 
 **Comandamento**: Mai usare `property_exists()` per magic attributes Eloquent. Sempre `isset()`.
@@ -534,38 +501,24 @@ Modules/MyModule/database/MyModel.php // SBAGLIATO!
 - File traduzioni strutturati
 - Auto-discovery traduzioni
 
-<<<<<<< HEAD
 #### 6. Actions Over Services / Support
 
 **Decisione**: QueueableActions invece di Services o Support.
-=======
-#### 6. Actions Over Services
-
-**Decisione**: QueueableActions invece di Services.
->>>>>>> 930f8146 (Check & fix styling)
 
 **Motivazione**:
 - Actions sono single-purpose
 - Actions sono queueable
 - Actions sono testabili
 - Actions seguono SOLID
-<<<<<<< HEAD
 - `app/Support/` incoraggia helper statici che violano SRP
 - `app/Services/` diventa facade multi-metodo non referenziabili
-=======
->>>>>>> 930f8146 (Check & fix styling)
 
 **Manifestazione**:
 - Tutte le operazioni business sono Actions
 - Actions usano Spatie QueueableActions
-<<<<<<< HEAD
 - `app/Services/` e `app/Support/` sono eliminati monorepo (2026-07-13)
 - Migrazione da Services/Support a Actions completata in tutti i moduli
 - `app(ClasseAction::class)->execute()` è l'unico modo per chiamare logica di dominio
-=======
-- Services sono deprecati
-- Migrazione da Services a Actions
->>>>>>> 930f8146 (Check & fix styling)
 
 ### Governance
 
@@ -795,27 +748,4 @@ TextInput::make('name')
 
 ---
 
-<<<<<<< .merge_file_BgKDQN
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
-=======
-**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
->>>>>>> .merge_file_J8UevJ
-=======
-=======
-**Filosofia**: Xot non è solo codice - è il fondamento filosofico su cui tutto Laraxot è costruito. Ogni decisione architetturale riflette principi profondi di semplicità, chiarezza, consistency e type safety.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

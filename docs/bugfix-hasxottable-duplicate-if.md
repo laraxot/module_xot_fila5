@@ -2,26 +2,6 @@
 
 > **Versione**: 1.0
 > **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
-<<<<<<< .merge_file_RyBqbT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-> **Ultima modifica**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_cmJuYT
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -184,23 +164,3 @@ done
 **Autore Fix**: AI Assistant
 **Review**: Pending
 **Data**: Vedi [CHANGELOG.md](./CHANGELOG.md)
-<<<<<<< .merge_file_RyBqbT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-**Data**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Data**: Vedi [CHANGELOG.md](./changelog.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_cmJuYT
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

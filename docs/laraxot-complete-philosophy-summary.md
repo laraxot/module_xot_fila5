@@ -9,30 +9,7 @@ Every entity has exactly ONE authoritative definition:
 - **Models**: One inheritance chain per model type
 
 ### 2. **Consistency Over Flexibility**
-<<<<<<< .merge_file_yBsxQr
-<<<<<<< HEAD
-<<<<<<< HEAD
 Predictable behavior is more valuable than unlimited options:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Predictable behavior is more valuable than unlimited options:
-=======
-<nome progetto>able behavior is more valuable than unlimited options:
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<nome progetto>able behavior is more valuable than unlimited options:
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Predictable behavior is more valuable than unlimited options:
->>>>>>> .merge_file_GbxjWI
-=======
-=======
-Predictable behavior is more valuable than unlimited options:
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - Same file structure across all modules
 - Same inheritance patterns for all models
 - Same migration philosophy for all tables
@@ -178,30 +155,7 @@ composer dump-autoload
 ## 🎯 Why These Principles Matter
 
 ### Technical Benefits
-<<<<<<< .merge_file_yBsxQr
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Predictable Autoloading**: No ambiguous class resolution
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Predictable Autoloading**: No ambiguous class resolution
-=======
-- **<nome progetto>able Autoloading**: No ambiguous class resolution
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- **<nome progetto>able Autoloading**: No ambiguous class resolution
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- **Predictable Autoloading**: No ambiguous class resolution
->>>>>>> .merge_file_GbxjWI
-=======
-=======
-- **Predictable Autoloading**: No ambiguous class resolution
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **Reliable Test Execution**: Consistent test discovery
 - **Easy Maintenance**: Clear, unambiguous code structure
 - **Fast Debugging**: Obvious source of truth for each entity
@@ -249,27 +203,4 @@ class Permission extends BaseModel  // ❌ Should extend SpatiePermission
 
 ---
 
-<<<<<<< .merge_file_yBsxQr
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
-=======
-**Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Philosophy Summary**: Laraxot values simplicity, consistency, and <nome progetto>ability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
->>>>>>> .merge_file_GbxjWI
-=======
-=======
-**Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

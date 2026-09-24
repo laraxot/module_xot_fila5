@@ -4,19 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-<<<<<<< .merge_file_smRvwh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\KeyValue;
-use Filament\Forms\Components\TextInput;
->>>>>>> laraxot/dev
-=======
-use Filament\Forms\Components\KeyValue;
-use Filament\Forms\Components\TextInput;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MYDRKe
 use Modules\Xot\Filament\Resources\CacheResource\Pages\CreateCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\EditCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\ListCaches;
@@ -26,37 +13,6 @@ class CacheResource extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_smRvwh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-    public function getFormSchemaOld(): array
-=======
-    #[\Override]
-    public static function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    {
-        return [
-            'key' => TextInput::make('key')->required()->maxLength(255),
-            'expiration' => TextInput::make('expiration')->required()->numeric(),
-            'value' => KeyValue::make('value')->columnSpanFull(),
-        ];
-    }
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MYDRKe
     #[\Override]
     public static function getRelations(): array
     {

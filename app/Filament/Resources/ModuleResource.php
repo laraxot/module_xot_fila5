@@ -4,21 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-<<<<<<< .merge_file_7quil0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
->>>>>>> laraxot/dev
-=======
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3nvtUD
 use Filament\Resources\Pages\Page;
 use Illuminate\Support\Str;
 use Modules\Xot\Models\Module;
@@ -27,39 +12,6 @@ class ModuleResource extends XotBaseResource
 {
     protected static ?string $model = Module::class;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_7quil0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-    public function getFormSchemaOld(): array
-=======
-    #[\Override]
-    public static function getFormSchema(): array
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    {
-        return [
-            'name' => TextInput::make('name')->required(),
-            'description' => TextInput::make('description'),
-            'icon' => Select::make('icon')->options([]),
-            'priority' => TextInput::make('priority'),
-            'status' => Toggle::make('status'),
-        ];
-    }
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_3nvtUD
     #[\Override]
     public static function getRelations(): array
     {

@@ -7,33 +7,13 @@ namespace Modules\Xot\Tests\Unit;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
 use Modules\Xot\Tests\TestCase;
-<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 uses(TestCase::class);
 
 it('throws if record has no email', function (): void {
-<<<<<<< .merge_file_PP1lRK
-<<<<<<< HEAD
-<<<<<<< HEAD
     $record = new class extends Model
     {
-=======
-    $record = new class extends Model {
->>>>>>> laraxot/dev
-=======
-    $record = new class extends Model {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-    $record = new class extends Model
-    {
->>>>>>> .merge_file_NWpM0E
         public function option(string $key): null
         {
             return null;
@@ -41,54 +21,18 @@ it('throws if record has no email', function (): void {
 
         public function myLogs(): object
         {
-<<<<<<< .merge_file_PP1lRK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_NWpM0E
             return new class
             {
                 /** @param array<string, mixed> $data */
                 public function create(array $data): void {}
-<<<<<<< .merge_file_PP1lRK
-=======
-            return new class {
-<<<<<<< HEAD
-                /** @param array<string, mixed> $data */
-=======
-                /** @param array<mixed> $data */
->>>>>>> 930f8146 (Check & fix styling)
-                public function create(array $data): void
-                {
-                }
->>>>>>> laraxot/dev
-=======
-            return new class {
-                /** @param array<mixed> $data */
-                public function create(array $data): void
-                {
-                }
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_NWpM0E
             };
         }
     };
 
-<<<<<<< HEAD
     try {
         app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
         Assert::fail('Expected exception was not thrown.');
     } catch (\InvalidArgumentException $e) {
         Assert::assertInstanceOf(\InvalidArgumentException::class, $e);
     }
-=======
-    $this->expectThrowable(\InvalidArgumentException::class);
-
-    app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 });

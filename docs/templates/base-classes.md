@@ -98,39 +98,10 @@ class {ModelName}Resource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_TUEJbC
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qzQ4ea
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_TUEJbC
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_qzQ4ea
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Forms\Components\TextInput::make('name')
@@ -350,27 +321,4 @@ class Create{ModelName}Action
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
-<<<<<<< .merge_file_TUEJbC
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> .merge_file_qzQ4ea
-=======
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

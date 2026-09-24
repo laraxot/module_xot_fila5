@@ -168,30 +168,7 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 ```
 
 ### Documentazione Correlata
-<<<<<<< .merge_file_ZxzPWC
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Root Docs: Eloquent Models Property Verification](../../../docs/eloquent-models-property-verification.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Root Docs: Eloquent Models Property Verification](../../../docs/eloquent-models-property-verification.md)
-=======
-- [Root Docs: Eloquent Models Property Verification](../../../../docs/eloquent-models-property-verification.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Root Docs: Eloquent Models Property Verification](../../../../docs/eloquent-models-property-verification.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Root Docs: Eloquent Models Property Verification](../../../docs/eloquent-models-property-verification.md)
->>>>>>> .merge_file_Sibink
-=======
-=======
-- [Root Docs: Eloquent Models Property Verification](../../../docs/eloquent-models-property-verification.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [.cursor/rules/property_exists_eloquent_models.mdc](../../../.cursor/rules/property_exists_eloquent_models.mdc)
 - [.windsurf/rules/property_exists_eloquent_models.mdc](../../../.windsurf/rules/property_exists_eloquent_models.mdc)
 - [Laravel AI Guidelines](../../.ai/guidelines/eloquent_models_property_verification.md)
@@ -203,27 +180,4 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 4. Verifica di logiche correlate nei trait e BaseModel
 5. Aggiornamento documentazione moduli specifici
 
-<<<<<<< .merge_file_ZxzPWC
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
-=======
-*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
->>>>>>> .merge_file_Sibink
-=======
-=======
-*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

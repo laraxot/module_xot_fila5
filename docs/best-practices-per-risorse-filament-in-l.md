@@ -17,52 +17,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
-<<<<<<< .merge_file_uUlU6U
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_dGD90F
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-   public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_duPPqX
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-   public function getFormSchema(): array
->>>>>>> .merge_file_XbZNei
-=======
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
    {
        return [
            TextInput::make('nome')->required(),

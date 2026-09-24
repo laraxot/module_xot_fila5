@@ -17,7 +17,6 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
 // la temp dir del test vive in una variabile locale condivisa per riferimento.
@@ -43,34 +42,6 @@ describe('Save Json Array Action', function () use (&$tempDir): void {
     test('saves array to json file', function () use (&$tempDir): void {
         $data = ['key' => 'value', 'nested' => ['a' => 1]];
         $path = $tempDir.'/data.json';
-=======
-beforeEach(function (): void {
-    $this->action = app(SaveJsonArrayAction::class);
-    $this->tempDir = sys_get_temp_dir().'/xot_arr_'.uniqid();
-    mkdir($this->tempDir, 0755, true);
-});
-
-afterEach(function (): void {
-    if (isset($this->tempDir) && is_dir($this->tempDir)) {
-        $dir = $this->tempDir;
-        $files = glob($dir.'/*');
-        foreach ($files as $file) {
-            $this->assertIsString($file);
-            unlink($file);
-        }
-        rmdir($dir);
-    }
-});
-
-describe('Save Json Array Action', function (): void {
-    test('saves array to json file', function (): void {
-        $data = ['key' => 'value', 'nested' => ['a' => 1]];
-        $path = $this->tempDir.'/data.json';
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
         $result = app(SaveJsonArrayAction::class)->execute($data, $path);
         Assert::assertSame($data, $result);
@@ -78,17 +49,8 @@ describe('Save Json Array Action', function (): void {
         Assert::assertTrue(file_exists($path));
     });
 
-<<<<<<< HEAD
     test('saves empty array', function () use (&$tempDir): void {
         $path = $tempDir.'/empty.json';
-=======
-    test('saves empty array', function (): void {
-        $path = $this->tempDir.'/empty.json';
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         $result = app(SaveJsonArrayAction::class)->execute([], $path);
 
         Assert::assertSame([], $result);

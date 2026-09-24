@@ -196,50 +196,9 @@
 - [Chart](../Chart/docs/README.md) - Grafici
 
 ## Collegamenti tra versioni di LINKS.md
-<<<<<<< HEAD
-<<<<<<< .merge_file_k18Dj7
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [LINKS.md](links.md)
 * [LINKS.md](links.md)
 * [LINKS.md](links.md)
-=======
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-<<<<<<< .merge_file_dSUctB
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-=======
-<<<<<<< HEAD
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-=======
-* [LINKS.md](../../../Xot/docs/LINKS.md)
-* [LINKS.md](../../../User/docs/LINKS.md)
-* [LINKS.md](../../../UI/docs/LINKS.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_t85IPO
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [LINKS.md](../../../Xot/docs/LINKS.md)
-* [LINKS.md](../../../User/docs/LINKS.md)
-* [LINKS.md](../../../UI/docs/LINKS.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-* [LINKS.md](links.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_YIWLTO
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 * [LINKS.md](../../../Cms/docs/LINKS.md)
 * [LINKS.md](../../../../Themes/One/docs/LINKS.md)
 

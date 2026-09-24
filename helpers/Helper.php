@@ -1,14 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -21,34 +13,11 @@ use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-use Webmozart\Assert\Assert;
->>>>>>> .merge_file_MFrMwp
 
 use function Safe\define;
 use function Safe\preg_match;
 
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
-=======
-use Webmozart\Assert\Assert;
-
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MFrMwp
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {
@@ -60,14 +29,7 @@ if (! function_exists('isRunningTestBench')) {
 }
 
 if (! function_exists('dddx')) {
-<<<<<<< HEAD
     /** @param mixed $params Qualunque valore da dumpare (debug helper) */
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
@@ -108,74 +70,24 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (Request::segment(2) === 'admin') {
-=======
-        if ('admin' === Request::segment(2)) {
->>>>>>> laraxot/dev
-=======
-        if ('admin' === Request::segment(2)) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if (Request::segment(2) === 'admin') {
->>>>>>> .merge_file_MFrMwp
             return true;
         }
 
         $segments = Request::segments();
 
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
         return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
-=======
-        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
->>>>>>> laraxot/dev
-=======
-        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
->>>>>>> .merge_file_MFrMwp
     }
 }
 
 if (! function_exists('params2ContainerItem')) {
     /**
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>|null  $params
-=======
-     * @param array<string, mixed>|null $params
-     *
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed>|null $params
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>|null  $params
->>>>>>> .merge_file_MFrMwp
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($params === null) {
-=======
-        if (null === $params) {
->>>>>>> laraxot/dev
-=======
-        if (null === $params) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($params === null) {
->>>>>>> .merge_file_MFrMwp
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -219,19 +131,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
             return $id === null ? null : (string) $id;
-=======
-            return null === $id ? null : (string) $id;
->>>>>>> laraxot/dev
-=======
-            return null === $id ? null : (string) $id;
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            return $id === null ? null : (string) $id;
->>>>>>> .merge_file_MFrMwp
         } catch (Throwable $e) {
             return null;
         }
@@ -248,19 +148,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
             $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
-=======
-            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
->>>>>>> laraxot/dev
-=======
-            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
->>>>>>> .merge_file_MFrMwp
         }
 
         $result = __($key, $safeReplace, $locale);
@@ -298,21 +186,7 @@ if (! function_exists('actingAs')) {
 
 if (! function_exists('get')) {
     /**
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, mixed>  $options
-=======
-     * @param array<string, mixed> $options
-     *
->>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $options
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, mixed>  $options
->>>>>>> .merge_file_MFrMwp
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
@@ -323,38 +197,11 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_MFrMwp
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $options
      * @return TestResponse<Response>
      */
     function post(string $uri, array $data = [], array $options = []): TestResponse
-=======
-=======
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-     * @param array<string, mixed> $options
-     *
-     * @return TestResponse<Response>
-     */
-<<<<<<< HEAD
-    function post(string $uri, mixed $data = [], array $options = []): TestResponse
->>>>>>> 3792da0d (Check & fix styling)
-=======
-<<<<<<< HEAD
-    function post(string $uri, array $data = [], array $options = []): TestResponse
-=======
-    function post(string $uri, mixed $data = [], array $options = []): TestResponse
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -362,30 +209,10 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_MFrMwp
      * @param  array<string, mixed>  $data
-=======
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-     *
->>>>>>> da9ae01a0 (.)
      * @return TestResponse<Response>
      */
     function put(string $uri, array $data = []): TestResponse
-=======
-     * @return TestResponse<Response>
-     */
-    function put(string $uri, mixed $data = []): TestResponse
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -393,30 +220,10 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_MFrMwp
      * @param  array<string, mixed>  $data
-=======
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-     *
->>>>>>> da9ae01a0 (.)
      * @return TestResponse<Response>
      */
     function patch(string $uri, array $data = []): TestResponse
-=======
-     * @return TestResponse<Response>
-     */
-    function patch(string $uri, mixed $data = []): TestResponse
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -462,131 +269,16 @@ if (! function_exists('followingRedirects')) {
     }
 }
 
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-if (! function_exists('test')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function test(string $title, Closure $callback): void
-    {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
-    }
-}
-
-if (! function_exists('describe')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function describe(string $title, Closure $callback): void
-    {
-        throw new RuntimeException('Stub: This function is meant for static analysis only.');
-    }
-}
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MFrMwp
 if (! function_exists('xotSeedModelOnce')) {
     /**
      * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
      *
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_MFrMwp
      * @param  class-string<Model>  $modelClass
      */
     function xotSeedModelOnce(string $modelClass): void
     {
         (new GetFactoryAction)
-<<<<<<< .merge_file_voglaK
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-     * @param class-string<Model> $modelClass
-     */
-    function xotSeedModelOnce(string $modelClass): void
-    {
-        (new GetFactoryAction())
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MFrMwp
             ->execute($modelClass)
             ->createOne();
     }
 }
-<<<<<<< .merge_file_voglaK
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-
-<<<<<<< HEAD
-if (! function_exists('merge_translation_files')) {
-    /**
-     * Merge multiple PHP translation files into a single array.
-     *
-     * @param string $first   First translation file path
-     * @param string ...$rest Additional translation file paths
-     *
-     * @return array<string, mixed>
-     */
-    function merge_translation_files(string $first, string ...$rest): array
-    {
-        $result = (array) require $first;
-
-        foreach ($rest as $file) {
-            $result = array_replace_recursive($result, (array) require $file);
-        }
-
-        /* @phpstan-ignore return.type */
-        return $result;
-=======
-if (! function_exists('require_translation_file')) {
-    /**
-     * @return array<string, mixed>
-     */
-    function require_translation_file(string $path): array
-    {
-        $loaded = require $path;
-        if (! is_array($loaded)) {
-            throw new InvalidArgumentException("Translation file [{$path}] must return array.");
-        }
-
-        /* @var array<string, mixed> $loaded */
-        return $loaded;
-    }
-}
-
-if (! function_exists('merge_translation_files')) {
-    /**
-     * @param non-empty-string ...$paths
-     *
-     * @return array<string, mixed>
-     */
-    function merge_translation_files(string ...$paths): array
-    {
-        $merged = [];
-        foreach ($paths as $path) {
-            $merged = array_merge($merged, require_translation_file($path));
-        }
-
-        return $merged;
->>>>>>> 930f8146 (Check & fix styling)
-    }
-}
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MFrMwp

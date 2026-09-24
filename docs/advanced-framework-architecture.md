@@ -2,30 +2,7 @@
 
 ## Introduzione
 
-<<<<<<< .merge_file_eCFzRb
-<<<<<<< HEAD
-<<<<<<< HEAD
 Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto LaravelPizza.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto LaravelPizza.
-=======
-Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto <nome progetto>.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto <nome progetto>.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto LaravelPizza.
->>>>>>> .merge_file_O2Qtas
-=======
-=======
-Basandoci sui principi architetturali osservati nel pacchetto `filament-spatie-laravel-database-mail-templates`, questo documento illustra come applicare questi concetti al modulo Xot, che funge da infrastruttura centrale per tutti gli altri moduli del progetto LaravelPizza.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Sistema di Plugin Centralizzato
 
@@ -562,27 +539,4 @@ Applicando i principi architetturali osservati nel pacchetto `filament-spatie-la
 6. **Framework estendibile** grazie al sistema di hook ed eventi
 7. **Esperienza di sviluppo coerente** grazie ai principi architetturali standardizzati
 
-<<<<<<< .merge_file_eCFzRb
-<<<<<<< HEAD
-<<<<<<< HEAD
 Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
-=======
-Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
->>>>>>> .merge_file_O2Qtas
-=======
-=======
-Questa architettura permette al modulo Xot di fungere da base solida e flessibile per tutti gli altri moduli del sistema, mantenendo al contempo un'elevata qualità del codice e una buona esperienza di sviluppo.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -8,32 +8,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
-<<<<<<< HEAD
 use Throwable;
-<<<<<<< .merge_file_rI8jxr
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_bNIQvw
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-use Throwable;
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_SXv43M
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_vIj5rK
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 /**
  * Crea sul database di test le tabelle che il modulo dichiara nelle proprie migration,
@@ -85,39 +60,7 @@ final class XotModuleSchema
     private static array $done = [];
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_rI8jxr
-<<<<<<< HEAD
      * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_bNIQvw
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-     * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
-=======
-     * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-     * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
->>>>>>> .merge_file_SXv43M
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
->>>>>>> .merge_file_vIj5rK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
      */
     public static function ensure(string $module): void
     {
@@ -243,39 +186,7 @@ final class XotModuleSchema
 
             $table = self::tableOf($migration);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_rI8jxr
-<<<<<<< HEAD
             if ($table !== null && Schema::hasTable($table)) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_bNIQvw
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            if ($table !== null && Schema::hasTable($table)) {
-=======
-            if (null !== $table && Schema::hasTable($table)) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            if (null !== $table && Schema::hasTable($table)) {
->>>>>>> .merge_file_SXv43M
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if (null !== $table && Schema::hasTable($table)) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            if ($table !== null && Schema::hasTable($table)) {
->>>>>>> .merge_file_vIj5rK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 return;
             }
 
@@ -288,37 +199,7 @@ final class XotModuleSchema
             /** @var callable(): void $up */
             $up = [$migration, 'up'];
             $up();
-<<<<<<< HEAD
         } catch (Throwable) {
-<<<<<<< .merge_file_rI8jxr
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_bNIQvw
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-        } catch (Throwable) {
-=======
-        } catch (\Throwable) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        } catch (\Throwable) {
->>>>>>> .merge_file_SXv43M
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-        } catch (\Throwable) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_vIj5rK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             // Una migration che non gira lascia semplicemente la tabella assente: i test
             // che la richiedono si salteranno per precondizione. Vedi il docblock.
         }
@@ -338,45 +219,8 @@ final class XotModuleSchema
         try {
             $table = $migration->getTable();
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_rI8jxr
-<<<<<<< HEAD
             return $table !== '' ? $table : null;
         } catch (Throwable) {
-=======
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-<<<<<<< .merge_file_bNIQvw
-=======
->>>>>>> 930f8146 (Check & fix styling)
-<<<<<<< HEAD
-            return $table !== '' ? $table : null;
-        } catch (Throwable) {
-=======
-            return '' !== $table ? $table : null;
-        } catch (\Throwable) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            return '' !== $table ? $table : null;
-        } catch (\Throwable) {
->>>>>>> .merge_file_SXv43M
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            return '' !== $table ? $table : null;
-        } catch (\Throwable) {
->>>>>>> laraxot/dev
->>>>>>> 3792da0d (Check & fix styling)
-=======
-            return $table !== '' ? $table : null;
-        } catch (Throwable) {
->>>>>>> .merge_file_vIj5rK
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             return null;
         }
     }

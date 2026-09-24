@@ -286,48 +286,10 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ## Documentazione Correlata
 
-<<<<<<< .merge_file_pLN19X
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_EM39oY
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Root Docs: Modularity Hardcoded Names](../../../project_docs/modularity-hardcoded-names.md)
 - [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
 - [Xot Architecture Overview](./architecture-overview.md)
 - [Xot Best Practices](./best-practices/README.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_pLN19X
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Xot Best Practices](./best-practices/README.md)
-- [Root Docs: Modularity Hardcoded Names](../../../../docs/project/modularity-hardcoded-names.md)
-- [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
-- [Xot Architecture Overview](./architecture-overview.md)
-- [Xot Best Practices](./best-practices/readme.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_EM39oY
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Note di Implementazione
 
@@ -345,27 +307,4 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ---
 
-<<<<<<< .merge_file_pLN19X
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
-=======
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
->>>>>>> .merge_file_EM39oY
-=======
-=======
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

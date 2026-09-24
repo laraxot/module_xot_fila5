@@ -10,45 +10,7 @@ updated: 2026-08-24
 
 ## **CRITICAL LARAXOT PRINCIPLE**
 
-<<<<<<< .merge_file_p3hxfk
-<<<<<<< HEAD
-<<<<<<< HEAD
 **NEVER use `property_exists()` directly on Eloquent model instances.** This rule is fundamental to maintaining a robust, type-safe, and <nome progetto>able codebase within the Laraxot architectural framework.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_eejAyP
-=======
-**NEVER use `property_exists()` directly on Eloquent model instances.** This rule is fundamental to maintaining a robust, type-safe, and <nome progetto>able codebase within the Laraxot architectural framework.
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_GSrfvt
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-**NEVER use `property_exists()` directly on Eloquent model instances.** This rule is fundamental to maintaining a robust, type-safe, and Predictable codebase within the Laraxot architectural framework.
-=======
-**NEVER use `property_exists()` directly on Eloquent model instances.** This rule is fundamental to maintaining a robust, type-safe, and <nome progetto>able codebase within the Laraxot architectural framework.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< .merge_file_eejAyP
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_GSrfvt
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**NEVER use `property_exists()` directly on Eloquent model instances.** This rule is fundamental to maintaining a robust, type-safe, and <nome progetto>able codebase within the Laraxot architectural framework.
->>>>>>> .merge_file_730D9Q
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### **Motivation**
 

@@ -71,39 +71,10 @@ class MediaConvertResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_Z6oJ6M
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WEK4cj
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_Z6oJ6M
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_WEK4cj
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Radio::make('format')
@@ -175,27 +146,4 @@ class MediaConvertResource extends XotBaseResource
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
 - [Documentazione modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
-<<<<<<< .merge_file_Z6oJ6M
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
->>>>>>> .merge_file_WEK4cj
-=======
-=======
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

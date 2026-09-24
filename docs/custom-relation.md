@@ -1,16 +1,4 @@
 ---
-<<<<<<< .merge_file_Zgj3nA
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_kgIUmE
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 title: Custom Relation
 description: Custom Relation
 extends: _layouts.documentation
@@ -320,31 +308,3 @@ class Person
     }
 }
 ```
-<<<<<<< HEAD
-<<<<<<< .merge_file_Zgj3nA
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-module: theme
-topic: custom-relation
-canonical: ../../../Themes/docs/shared-components/custom-relation.md
----
-
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/custom-relation.md
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/custom-relation.md
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_kgIUmE
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

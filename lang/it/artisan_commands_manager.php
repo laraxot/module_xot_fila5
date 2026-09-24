@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/artisan_commands_manager.php
->>>>>>> 930f8146 (Check & fix styling)
 return [
     'navigation' => [
         'name' => 'Comandi Artisan',
@@ -48,7 +41,6 @@ return [
     'actions' => [
         'queue_restart' => [
             'label' => 'queue_restart',
-<<<<<<< HEAD
             'icon' => 'queue_restart',
             'tooltip' => 'queue_restart',
         ],
@@ -121,33 +113,6 @@ return [
             'label' => 'cancel',
             'icon' => 'cancel',
             'tooltip' => 'cancel',
-=======
-        ],
-        'event_cache' => [
-            'label' => 'event_cache',
-        ],
-        'route_cache' => [
-            'label' => 'route_cache',
-        ],
-        'config_cache' => [
-            'label' => 'config_cache',
-        ],
-        'view_cache' => [
-            'label' => 'view_cache',
-        ],
-        'filament_optimize' => [
-            'label' => 'filament_optimize',
-        ],
-        'filament_upgrade' => [
-            'label' => 'filament_upgrade',
-        ],
-        'migrate' => [
-            'label' => 'migrate',
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         ],
     ],
     'title' => 'artisan commands manager',

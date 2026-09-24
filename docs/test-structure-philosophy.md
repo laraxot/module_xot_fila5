@@ -112,47 +112,10 @@ Modules/UI/
 
 ## Why This Matters
 
-<<<<<<< .merge_file_O5HdKS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ST74Qh
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ### 1. **Autoloader Predictability**
 - PHP autoloader expects consistent namespace-to-directory mapping
 - Mixed structures create ambiguous class resolution
 - "First found" approach leads to unpredictable test execution
-<<<<<<< HEAD
-<<<<<<< .merge_file_O5HdKS
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-### 1. **Autoloader <nome progetto>ability**
-- PHP autoloader expects consistent namespace-to-directory mapping
-- Mixed structures create ambiguous class resolution
-- "First found" approach leads to un<nome progetto>able test execution
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_ST74Qh
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### 2. **Test Discovery**
 - Pest and PHPUnit rely on consistent directory structures
@@ -162,30 +125,7 @@ Modules/UI/
 ### 3. **Development Workflow**
 - Developers expect consistent test locations
 - IDE autocomplete and navigation work better with consistent structures
-<<<<<<< .merge_file_O5HdKS
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Code generation tools work predictably
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Code generation tools work predictably
-=======
-- Code generation tools work <nome progetto>ably
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Code generation tools work <nome progetto>ably
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- Code generation tools work predictably
->>>>>>> .merge_file_ST74Qh
-=======
-=======
-- Code generation tools work predictably
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### 4. **Module System Compatibility**
 - nwidart/laravel-modules expects traditional structure
@@ -260,30 +200,7 @@ Modules/
 │   │   ├── Feature/
 │   │   └── Unit/
 │   └── app/
-<<<<<<< .merge_file_O5HdKS
-<<<<<<< HEAD
-<<<<<<< HEAD
 └── Quaeris/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-└── Quaeris/
-=======
-└── healthcare_app/
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-└── healthcare_app/
->>>>>>> 3792da0d (Check & fix styling)
-=======
-└── Quaeris/
->>>>>>> .merge_file_ST74Qh
-=======
-=======
-└── Quaeris/
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ├── tests/
     │   ├── Feature/
     │   └── Unit/
@@ -345,27 +262,4 @@ Modules/UI/tests/Unit/Widgets/
 
 ---
 
-<<<<<<< .merge_file_O5HdKS
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
-=======
-**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and <nome progetto>able development workflow. Choose one pattern and apply it consistently across all modules.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and <nome progetto>able development workflow. Choose one pattern and apply it consistently across all modules.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
->>>>>>> .merge_file_ST74Qh
-=======
-=======
-**Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

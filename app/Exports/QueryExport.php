@@ -34,41 +34,12 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public ?string $transKey = null;
 
     /** @var QueryBuilder|EloquentBuilder<Model> */
-<<<<<<< HEAD
-<<<<<<< .merge_file_5ImU5U
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_VvjknK
     /** @var QueryBuilder|EloquentBuilder<Model> */
     public QueryBuilder|EloquentBuilder $query;
 
     /**
-<<<<<<< HEAD
      * @param  QueryBuilder|EloquentBuilder<Model>  $query
      * @param  array<int, int|string>  $fields
-<<<<<<< .merge_file_5ImU5U
-=======
-=======
-<<<<<<< HEAD
-=======
-    /** @var QueryBuilder|EloquentBuilder<Model> */
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
-    public QueryBuilder|EloquentBuilder $query;
-
-    /**
-     * @param QueryBuilder|EloquentBuilder<Model> $query
-     * @param array<int, int|string>              $fields
->>>>>>> laraxot/dev
-=======
-     * @param QueryBuilder|EloquentBuilder<Model> $query
-     * @param array<int, int|string>              $fields
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_VvjknK
      */
     public function __construct(QueryBuilder|EloquentBuilder $query, ?string $transKey = null, array $fields = [])
     {
@@ -85,32 +56,12 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         if (! empty($this->fields)) {
             return collect(array_values($this->fields))
                 ->map(
-<<<<<<< HEAD
                     static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
-=======
-                    static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 );
         }
 
         $first = $this->query->first();
-<<<<<<< .merge_file_5ImU5U
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($first === null) {
-=======
-        if (null === $first) {
->>>>>>> laraxot/dev
-=======
-        if (null === $first) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($first === null) {
->>>>>>> .merge_file_VvjknK
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
 
@@ -120,15 +71,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         /** @var Collection<int, int|string> $result */
         $result = collect(array_keys($this->normalizeRow($first)))
             ->map(
-<<<<<<< HEAD
                 static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
-=======
-                static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
             );
 
         return $result;
@@ -188,15 +131,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         }
 
         return collect($this->fields)
-<<<<<<< HEAD
             ->mapWithKeys(static function (int|string $field, int|string $_key) use ($rowArray): array {
-=======
-            ->mapWithKeys(static function (mixed $field, int|string $_key) use ($rowArray): array {
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                 $keyString = \is_string($field) ? $field : (string) $field;
 
                 return [$keyString => $rowArray[$keyString] ?? null];
@@ -209,19 +144,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     private function normalizeRow(mixed $row): array
     {
-<<<<<<< .merge_file_5ImU5U
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($row === null) {
-=======
-        if (null === $row) {
->>>>>>> laraxot/dev
-=======
-        if (null === $row) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($row === null) {
->>>>>>> .merge_file_VvjknK
             return [];
         }
 

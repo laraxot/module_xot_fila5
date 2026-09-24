@@ -113,26 +113,6 @@ architecture-overview.md
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
-<<<<<<< .merge_file_mJ5UOh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-analysis-[DATE].md      # date in name (use CHANGELOG.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-analysis-[DATE].md      # date in name (use CHANGELOG.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MfUg3A
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### 8. DRY Principle
@@ -287,39 +267,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_mJ5UOh
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_MfUg3A
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_mJ5UOh
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_MfUg3A
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name'),  // No ->label()!
@@ -451,40 +402,6 @@ git push origin feature-branch
 ---
 
 **Creato:** 2025-11-04
-<<<<<<< .merge_file_mJ5UOh
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versione:** 1.0
 **Autori:** Team Laraxot + AI Claude Process Filosofico
 **Prossimo Review:** Trimestrale o dopo major changes
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
-=======
-**Creato:** [DATE]
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Creato:** [DATE]
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-**Versione:** 1.0
-**Autori:** Team Laraxot + AI Claude Process Filosofico
-**Prossimo Review:** Trimestrale o dopo major changes
-<<<<<<< HEAD
->>>>>>> .merge_file_MfUg3A
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

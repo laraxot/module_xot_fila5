@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 930f8146 (Check & fix styling)
 # Risoluzione Conflitto in GetViewByClassAction
 
 ## Problema

@@ -13,14 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\User\Models\User;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 use function Safe\strtotime;
 
@@ -105,23 +98,11 @@ class FilterBuilder
                 return $query
                     ->when(
                         $data['from'] ?? null,
-<<<<<<< HEAD
                         fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
                     )
                     ->when(
                         $data['until'] ?? null,
                         fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
-=======
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', is_string($date) ? $date : (string) $date),
-                    )
-                    ->when(
-                        $data['until'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
                     );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
@@ -133,45 +114,20 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
-<<<<<<< HEAD
                     $fromStr = SafeStringCastAction::cast($from);
                     $untilStr = SafeStringCastAction::cast($until);
-=======
-                    $fromStr = is_string($from) ? $from : (string) $from;
-                    $untilStr = is_string($until) ? $until : (string) $until;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
-<<<<<<< HEAD
                     $fromStr = SafeStringCastAction::cast($from);
-=======
-                    $fromStr = is_string($from) ? $from : (string) $from;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
-<<<<<<< HEAD
                     $untilStr = SafeStringCastAction::cast($until);
-=======
-                    $untilStr = is_string($until) ? $until : (string) $until;
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }
@@ -207,19 +163,7 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
-=======
-     * @param class-string<Model> $modelClass
->>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $modelClass
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<Model>  $modelClass
->>>>>>> .merge_file_KELF8O
      */
     public static function selectFromModel(
         string $name,
@@ -234,19 +178,7 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($relationshipName !== null) {
-=======
-        if (null !== $relationshipName) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $relationshipName) {
->>>>>>> 3792da0d (Check & fix styling)
-=======
-        if ($relationshipName !== null) {
->>>>>>> .merge_file_KELF8O
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -256,19 +188,7 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, string>  $customStatuses
-=======
-     * @param array<string, string> $customStatuses
->>>>>>> laraxot/dev
-=======
-     * @param array<string, string> $customStatuses
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, string>  $customStatuses
->>>>>>> .merge_file_KELF8O
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -286,19 +206,7 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, string>  $customPriorities
-=======
-     * @param array<string, string> $customPriorities
->>>>>>> laraxot/dev
-=======
-     * @param array<string, string> $customPriorities
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, string>  $customPriorities
->>>>>>> .merge_file_KELF8O
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -316,19 +224,7 @@ class FilterBuilder
     /**
      * Type select filter.
      *
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, string>  $types
-=======
-     * @param array<string, string> $types
->>>>>>> laraxot/dev
-=======
-     * @param array<string, string> $types
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  array<string, string>  $types
->>>>>>> .merge_file_KELF8O
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -339,19 +235,7 @@ class FilterBuilder
     /**
      * Category select filter.
      *
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<Model>  $categoryModel
-=======
-     * @param class-string<Model> $categoryModel
->>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $categoryModel
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<Model>  $categoryModel
->>>>>>> .merge_file_KELF8O
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -361,19 +245,7 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string<Model>  $userModel
-=======
-     * @param class-string<Model> $userModel
->>>>>>> laraxot/dev
-=======
-     * @param class-string<Model> $userModel
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  class-string<Model>  $userModel
->>>>>>> .merge_file_KELF8O
      */
     public static function userSelect(
         string $name = 'user',
@@ -401,19 +273,7 @@ class FilterBuilder
     }
 
     /**
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Builder<Model>  $query
-=======
-     * @param Builder<Model> $query
->>>>>>> laraxot/dev
-=======
-     * @param Builder<Model> $query
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Builder<Model>  $query
->>>>>>> .merge_file_KELF8O
      */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
@@ -421,21 +281,7 @@ class FilterBuilder
     }
 
     /**
-<<<<<<< .merge_file_ZXkzTj
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  Builder<Model>  $query
-=======
-     * @param Builder<Model> $query
-     *
->>>>>>> laraxot/dev
-=======
-     * @param Builder<Model> $query
-     *
->>>>>>> 3792da0d (Check & fix styling)
-=======
-     * @param  Builder<Model>  $query
->>>>>>> .merge_file_KELF8O
      * @return Builder<Model>
      */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder

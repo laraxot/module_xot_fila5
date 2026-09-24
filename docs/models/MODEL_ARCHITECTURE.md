@@ -351,30 +351,7 @@ public function getConnectionName(): ?string
 - Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
-<<<<<<< .merge_file_NBFcZC
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
-=======
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
->>>>>>> .merge_file_jw5st7
-=======
-=======
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ---
 
@@ -798,30 +775,7 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
-<<<<<<< .merge_file_NBFcZC
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
-=======
-- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> .merge_file_jw5st7
-=======
-=======
-- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 
 ---

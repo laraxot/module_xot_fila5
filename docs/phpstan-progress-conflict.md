@@ -1,11 +1,4 @@
 # PHPStan Progress Report - 2025-10-13
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# PHPStan Progress Report - [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
 
 ## Executive Summary
 
@@ -37,26 +30,12 @@
    - Fixed Pest.php configuration
    - Fixed BaseModelTest
    - **Status**: Documented in `Modules/Tenant/docs/phpstan-fixes-2025-10-13.md`
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-   - **Status**: Documented in `Modules/Tenant/docs/phpstan-fixes-[DATE].md`
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
 
 2. **Gdpr** - 57 → 18 errors (68% reduction, 39 fixed) 📊
    - Enhanced Consent model with missing properties
    - Added user() relationship
    - Fixed Pest.php expect extension
    - **Status**: Documented in `Modules/Gdpr/docs/phpstan-fixes-2025-10-13.md`
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-   - **Status**: Documented in `Modules/Gdpr/docs/phpstan-fixes-[DATE].md`
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
 
 ### ⏳ Pending Modules (by priority)
 1. Media - 140 errors
@@ -284,13 +263,6 @@ Based on current pace:
 **Total estimated time remaining**: 20-30 hours
 
 ## Session Summary - 2025-10-13
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-## Session Summary - [DATE]
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
 
 ### Work Completed
 1. **Xot Module**: Fixed all 149 errors (100% complete)
@@ -312,16 +284,6 @@ Based on current pace:
 
 ### Documentation Created
 1. `Modules/Xot/docs/documentation-conventions.md` - Naming conventions (PHP vs .md files)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-2. `Modules/Xot/docs/phpstan-progress-[DATE].md` - This comprehensive report
-3. `Modules/Tenant/docs/phpstan-fixes-[DATE].md` - Tenant-specific fixes
-4. `Modules/Tenant/tests/Feature/README.md` - Skipped test explanation
-5. `Modules/Gdpr/docs/phpstan-fixes-[DATE].md` - Gdpr-specific fixes
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
 2. `Modules/Xot/docs/phpstan-progress-2025-10-13.md` - This comprehensive report
 3. `Modules/Tenant/docs/phpstan-fixes-2025-10-13.md` - Tenant-specific fixes
 4. `Modules/Tenant/tests/Feature/README.md` - Skipped test explanation
@@ -372,12 +334,4 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 *Project: FixCity PTVX Laravel*
 *Session Duration: ~2 hours*
 *Errors Fixed: 861*
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Progress: 17.8% complete*
-=======
-*Progress: 17.8% complete*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Progress: 17.8% complete*
->>>>>>> da9ae01a0 (.)

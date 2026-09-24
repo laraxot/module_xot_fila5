@@ -612,44 +612,8 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_tzvcuc
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [Analisi Completa Codice](./comprehensive_code_analysis.md)
-- [Architettura Moduli](./architecture.md)
-- [Performance Guide](./performance_guide.md)
-
----
-
-**Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_Z3cM8U
-=======
-=======
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -657,27 +621,4 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
-<<<<<<< .merge_file_tzvcuc
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Benefici**: ALTI
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Benefici**: ALTI
-=======
-**Benefici**: ALTI
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Benefici**: ALTI
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Benefici**: ALTI
->>>>>>> .merge_file_Z3cM8U
-=======
-=======
-**Benefici**: ALTI
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

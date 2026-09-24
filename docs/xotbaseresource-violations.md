@@ -129,39 +129,10 @@ class {ModelName}Resource extends XotBaseResource
 
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
-<<<<<<< .merge_file_i9qs9z
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_SGS9xv
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_i9qs9z
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_SGS9xv
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente
@@ -333,30 +304,6 @@ return [
 - [Progressioni: XotBaseResource Violations](../laravel/Modules/Progressioni/docs/xotbaseresource-violations-critical.md)
 - [Xot: XotBaseResource Rules](../laravel/Modules/Xot/docs/filament/resources/xot-base-resource.md)
 - [Xot: Filament Resource Guidelines](../laravel/Modules/Xot/docs/rules/filament-resource-guidelines.md)
-<<<<<<< .merge_file_i9qs9z
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Progressioni: XotBaseResource Violations](../laravel/modules/progressioni/docs/xotbaseresource-violations-critical.md)
-- [Xot: XotBaseResource Rules](../laravel/modules/xot/docs/filament/resources/xot-base-resource.md)
-- [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Progressioni: XotBaseResource Violations](../laravel/modules/progressioni/docs/xotbaseresource-violations-critical.md)
-- [Xot: XotBaseResource Rules](../laravel/modules/xot/docs/filament/resources/xot-base-resource.md)
-- [Xot: Filament Resource Guidelines](../laravel/modules/xot/docs/rules/filament-resource-guidelines.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_SGS9xv
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ### Regole Correlate
 - [Sistema Traduzioni](translation-system.md)
@@ -364,27 +311,4 @@ return [
 - [Architettura Modulare](modular-architecture.md)
 
 *Documento creato: agosto 2025*
-<<<<<<< .merge_file_i9qs9z
-<<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: agosto 2025*
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> 3792da0d (Check & fix styling)
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> .merge_file_SGS9xv
-=======
-=======
-*Ultimo aggiornamento: agosto 2025*
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

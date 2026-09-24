@@ -1,72 +1,12 @@
-<<<<<<< .merge_file_QxGv82
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Quaeris Fila4 Mono - Filosofia Completa del Progetto
-=======
-# healthcare_app Fila4 Mono - Filosofia Completa del Progetto
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-# healthcare_app Fila4 Mono - Filosofia Completa del Progetto
->>>>>>> 3792da0d (Check & fix styling)
-=======
-# Quaeris Fila4 Mono - Filosofia Completa del Progetto
->>>>>>> .merge_file_hO7NIW
-=======
-=======
-# Quaeris Fila4 Mono - Filosofia Completa del Progetto
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 ## Logica (Logic)
 
 ### Architettura del Sistema
-<<<<<<< .merge_file_QxGv82
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_hO7NIW
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 Quaeris è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
 
 ```
 Xot (Motore) → Moduli Specifici (User, Quaeris, etc.) → Funzionalità
-<<<<<<< HEAD
-<<<<<<< .merge_file_QxGv82
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-healthcare_app è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
-
-```
-Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_hO7NIW
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ```
 
 ### Domain Model Principale
@@ -137,30 +77,7 @@ Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
 
 ## Business Logic
 
-<<<<<<< .merge_file_QxGv82
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### Modulo Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Modulo Quaeris
-=======
-### Modulo healthcare_app
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-### Modulo healthcare_app
->>>>>>> 3792da0d (Check & fix styling)
-=======
-### Modulo Quaeris
->>>>>>> .merge_file_hO7NIW
-=======
-=======
-### Modulo Quaeris
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 - **Customer Management**: Gestione clienti e organizzazioni
 - **Survey Management**: Creazione e gestione survey tramite LimeSurvey
 - **Contact Management**: Gestione contatti e inviti
@@ -204,38 +121,6 @@ Il sistema è configurato con Model Context Protocol (MCP) per potenziare IDE AI
 
 ## Conclusione
 
-<<<<<<< .merge_file_QxGv82
-<<<<<<< HEAD
-<<<<<<< HEAD
 Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
 
 La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
-
-La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
-=======
-healthcare_app rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
-
-La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-healthcare_app rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
-
-La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> da9ae01a0 (.)
-=======
-Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
-
-La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
-<<<<<<< HEAD
->>>>>>> .merge_file_hO7NIW
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

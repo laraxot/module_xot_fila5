@@ -17,48 +17,8 @@ In tutto il progetto, **usare SEMPRE** i campi `first_name` e `last_name` per ra
 
 ## Collegamenti
 - [Errore e regola nel modulo Patient](../../Patient/docs/naming-user-fields.md)
-<<<<<<< .merge_file_p5hNPS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Errore e regola nel modulo Patient](../../patient/docs/naming-user-fields.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- [Errore e regola nel modulo Patient](../../patient/docs/naming-user-fields.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zrnMBr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 
 **Questa regola è trasversale e vincolante per tutti i moduli del progetto.**
 
 ## Collegamenti tra versioni di naming-user-fields.md
 * [naming-user-fields.md](../../Patient/docs/naming-user-fields.md)
-<<<<<<< .merge_file_p5hNPS
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-* [naming-user-fields.md](../../patient/docs/naming-user-fields.md)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-* [naming-user-fields.md](../../patient/docs/naming-user-fields.md)
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_zrnMBr
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

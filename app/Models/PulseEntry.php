@@ -9,63 +9,16 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseEntryFactory;
 
 /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_HnSE7l
-<<<<<<< HEAD
- * <<<<<<< HEAD.
-=======
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
- *
-=======
->>>>>>> 930f8146 (Check & fix styling)
- * @property string               $id
- * @property int                  $timestamp
- * @property string               $type
- * @property string               $key
- * @property string|null          $key_hash
- * @property int|null             $value
-=======
  * @property string $id
  * @property int $timestamp
  * @property string $type
  * @property string $key
  * @property string|null $key_hash
  * @property int|null $value
->>>>>>> .merge_file_4mQTZy
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static PulseEntryFactory factory($count = null, $state = [])
-<<<<<<< .merge_file_HnSE7l
- *                                                                      =======
- *
-=======
->>>>>>> 3792da0d (Check & fix styling)
- * @property string               $id
- * @property int                  $timestamp
- * @property string               $type
- * @property string               $key
- * @property string|null          $key_hash
- * @property int|null             $value
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
-<<<<<<< HEAD
- * @method static PulseEntryFactory          factory($count = null, $state = [])
-<<<<<<< HEAD
- *                                                                               >>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_4mQTZy
-=======
-<<<<<<< HEAD
- * @method static PulseEntryFactory factory($count = null, $state = [])
-=======
- * @method static PulseEntryFactory          factory($count = null, $state = [])
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
  * @method static Builder<static>|PulseEntry newModelQuery()
  * @method static Builder<static>|PulseEntry newQuery()
  * @method static Builder<static>|PulseEntry query()

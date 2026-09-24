@@ -75,39 +75,10 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_WT7CjJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2qCnWM
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_WT7CjJ
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_2qCnWM
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -158,18 +129,6 @@ public static function getRelations(): array
 // Non dichiarare il metodo se restituisce un array vuoto
 ```
 
-<<<<<<< .merge_file_WT7CjJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2qCnWM
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## Pagine
 
 Se il metodo `getPages()` contiene solo le route standard (index, create, edit), **NON** dichiararlo:
@@ -189,55 +148,6 @@ public static function getPages(): array
 // Non dichiarare il metodo se contiene solo le route standard
 ```
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_WT7CjJ
-=======
->>>>>>> da9ae01a0 (.)
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-## Pagine (`getPages()`)
-
-**Non dichiarare** `getPages()` quando:
-
-1. Servono solo le route CRUD `index`, `create`, `edit` (nessuna `view` né pagina custom).
-2. Le classi Page seguono la convenzione auto-discovery di `XotBaseResource`:
-   - `List{plural}` dove `plural = Str::plural(nomeResourceSenzaSuffissoResource)`
-   - `Create{nome}`, `Edit{nome}`
-
-```php
-// ❌ ERRATO — ridondante se le Page sono ListCoeffs, CreateCoeff, EditCoeff
-public static function getPages(): array
-{
-    return [
-        'index' => Pages\ListCoeffs::route('/'),
-        'create' => Pages\CreateCoeff::route('/create'),
-        'edit' => Pages\EditCoeff::route('/{record}/edit'),
-    ];
-}
-
-// ✅ CORRETTO — delega alla base
-// (nessun metodo getPages() nella Resource)
-```
-
-**Mantenere** `getPages()` se le Page hanno nomi diversi (es. `ListAssenza` per `AssenzeResource`), se c'è `view` esplicita, o pagine custom.
-
-Documentazione: [filament/getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md) · Script: `bashscripts/filament/analyze-redundant-getpages.php`
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_2qCnWM
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ## Motivazioni
 
 1. **Centralizzazione della Configurazione**: Le configurazioni comuni sono centralizzate nella classe base
@@ -264,39 +174,10 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_WT7CjJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2qCnWM
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_WT7CjJ
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_2qCnWM
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')
@@ -318,52 +199,9 @@ class DoctorResource extends XotBaseResource
 
 ## Documentazione Correlata
 
-<<<<<<< .merge_file_WT7CjJ
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 930f8146 (Check & fix styling)
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
-<<<<<<< HEAD
->>>>>>> da9ae01a0 (.)
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2qCnWM
-- [Filament Form Builder](/docs/filament-form-builder.md)
-- [Gestione delle Traduzioni](/docs/translation-management.md)
-- [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
-- [Filament Form Builder](/docs/filament-form-builder.md)
-- [Gestione delle Traduzioni](/docs/translation-management.md)
-- [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
-<<<<<<< .merge_file_WT7CjJ
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3792da0d (Check & fix styling)
-- [getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md)
-- [xotbaseresource.md](./filament/xotbaseresource.md)
-- [forbidden-methods.md](./filament/resources/architecture/forbidden-methods.md)
-- [consolidated/filament/resources/xot-base-resource.md](./consolidated/filament/resources/xot-base-resource.md)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_2qCnWM
-=======
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -107,27 +107,4 @@ Sono stati migliorati tutti i prompt principali in `bashscripts/tools/prompts/` 
 
 ---
 
-<<<<<<< .merge_file_UEPJbN
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Prompt chiari, completi, coerenti con l'architettura Laraxot.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Filosofia**: DRY + KISS - Prompt chiari, completi, coerenti con l'architettura Laraxot.
-=======
-**Filosofia**: DRY + KISS - Prompt chiari, completi, coerenti con l'architettura Laraxot.
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Filosofia**: DRY + KISS - Prompt chiari, completi, coerenti con l'architettura Laraxot.
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Filosofia**: DRY + KISS - Prompt chiari, completi, coerenti con l'architettura Laraxot.
->>>>>>> .merge_file_QXAwBo
-=======
-=======
-**Filosofia**: DRY + KISS - Prompt chiari, completi, coerenti con l'architettura Laraxot.
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

@@ -499,35 +499,5 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **🔗 Vedi anche**: [database-guidelines.md](database-guidelines.md) | [best-practices.md](best-practices.md)
 
 **Aggiornato**: 2025-08-07
-<<<<<<< .merge_file_m2rWiZ
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Categoria**: database
 **Priorità**: CRITICA
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Categoria**: database
-**Priorità**: CRITICA
-=======
-**Aggiornato**: [DATE]
-**Categoria**: database
-**Priorità**: CRITICA
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-**Aggiornato**: [DATE]
-**Categoria**: database
-**Priorità**: CRITICA
->>>>>>> 3792da0d (Check & fix styling)
-=======
-**Categoria**: database
-**Priorità**: CRITICA
->>>>>>> .merge_file_k9H3FK
-=======
-=======
-**Categoria**: database
-**Priorità**: CRITICA
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)

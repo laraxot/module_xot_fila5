@@ -3,18 +3,8 @@ title: "PHPStan Best Practices - Xot Module"
 type: guideline
 tags: [phpstan, testing, quality, static-analysis, pest, xot]
 created: 2026-06-13
-<<<<<<< HEAD
-<<<<<<< HEAD
-updated: 2026-06-13
-qmd: "Xot PHPStan best practices Pest Assert closure mockService rrmdir"
-=======
 updated: 2026-07-22
 qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade"
->>>>>>> laraxot/dev
-=======
-updated: 2026-06-13
-qmd: "Xot PHPStan best practices Pest Assert closure mockService rrmdir"
->>>>>>> laraxot/dev
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/43"
 discussions:
@@ -118,9 +108,6 @@ if ($tempFile === false) {
 
 **Soluzione:** mettere `@var` solo nelle closure che chiamano `$this->rrmdir()`, `$this->mockService()`, ecc. Se il test usa solo variabili locali, **omettere** `@var`.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ### 7. `expect()->toBe*()` → `method.internalClass` (Pest mixins)
 
 **Problema:** in alcuni file Pest namespaced, PHPStan segnala `method.internalClass` su `Pest\Mixins\Expectation` (`toBe`, `toBeTrue`, `toThrow`, …) anche se altri test con `expect()` passano.
@@ -148,25 +135,14 @@ app()->instance(GetComponentsAction::class, $getComponents);
 
 `RegisterBladeComponentsAction::execute(string $path, string $namespace, string $prefix = '')` — mockare `Modules\Xot\Actions\File\GetComponentsAction` (non un fantasma `Actions\Blade\GetComponentsAction`).
 
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ## Checklist Pre-Commit
 
 - [ ] `php -d memory_limit=2048M vendor/bin/phpstan analyse Modules` passa (non solo Xot)
 - [ ] Test Pest eseguibili: `vendor/bin/pest Modules/Xot/tests/Unit`
 - [ ] Nessun `static::` in closure Pest (usare `Assert::`)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [ ] Mock con `@phpstan-ignore-next-line` se necessario
-=======
 - [ ] Preferire `Assert::` se `expect()->…` dà `method.internalClass`
 - [ ] Mockery: `allows(['method' => $value])` + `@var Class&MockInterface` (non catene `andReturn` fragili)
 - [ ] Mock con `@phpstan-ignore-next-line` solo se inevitabile
->>>>>>> laraxot/dev
-=======
-- [ ] Mock con `@phpstan-ignore-next-line` se necessario
->>>>>>> laraxot/dev
 
 ## Links
 

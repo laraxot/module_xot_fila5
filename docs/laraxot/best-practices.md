@@ -16,39 +16,10 @@
 ### Implementazione
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_pRBBtW
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_thdbqr
-=======
->>>>>>> da9ae01a0 (.)
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_pRBBtW
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_thdbqr
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 {
     return [
         // Campi modificabili dall'utente
@@ -98,38 +69,7 @@ return [
 ## XotBaseResource
 
 ### Regole di Estensione
-<<<<<<< .merge_file_pRBBtW
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> da9ae01a0 (.)
 1. Implementare `public function getFormSchema(): array`
-=======
-1. Implementare `public function getFormSchema(): array`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-1. Implementare `public static function getFormSchema(): array`
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-1. Implementare `public static function getFormSchema(): array`
->>>>>>> 3792da0d (Check & fix styling)
-=======
-1. Implementare `public function getFormSchema(): array`
->>>>>>> .merge_file_thdbqr
-=======
-=======
-1. Implementare `public static function getFormSchema(): array`
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -141,39 +81,10 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_pRBBtW
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_thdbqr
-=======
->>>>>>> da9ae01a0 (.)
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_pRBBtW
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> .merge_file_thdbqr
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     {
         return [
             TextInput::make('name')->required(),
@@ -203,7 +114,6 @@ class MyResource extends XotBaseResource
 
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](docs/tecnico/filament/best-practices.md)
-<<<<<<< HEAD
 * [best-practices.md](../../../xot/project_docs/laraxot/best-practices.md)
 * [best-practices.md](../../../ui/project_docs/best-practices.md)
 * [best-practices.md](../../../../themes/one/project_docs/best-practices.md)
@@ -211,15 +121,3 @@ class MyResource extends XotBaseResource
 ### Versione Incoming
 
 ---
-=======
-* [best-practices.md](../../../Xot/docs/laraxot/best-practices.md)
-* [best-practices.md](../../../UI/docs/best-practices.md)
-* [best-practices.md](../../../../Themes/One/docs/best-practices.md)
-* [best-practices.md](../../../xot/docs/laraxot/best-practices.md)
-* [best-practices.md](../../../ui/docs/best-practices.md)
-* [best-practices.md](../../../../themes/one/docs/best-practices.md)
-
-### Versione Incoming
-
----
->>>>>>> 930f8146 (Check & fix styling)

@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/log.php
->>>>>>> 930f8146 (Check & fix styling)
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',
@@ -19,16 +12,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
         'label' => 'log.navigation',
         'icon' => 'log.navigation',
         'sort' => 61,
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
     'fields' => [
         'name' => [
@@ -36,14 +22,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'name',
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -83,7 +62,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'id' => [
             'label' => 'id',
         ],
@@ -117,12 +95,6 @@ return [
         'file-content' => [
             'label' => 'file-content',
         ],
-=======
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
     ],
     'actions' => [
         'import' => [
@@ -137,7 +109,6 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-<<<<<<< HEAD
         'create' => [
             'label' => 'create',
             'icon' => 'create',
@@ -172,13 +143,4 @@ return [
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
     'title' => 'log',
-=======
-    ],
-    'label' => 'Log',
-    'plural_label' => 'Log (Plurale)',
-<<<<<<< HEAD
->>>>>>> 3792da0d (Check & fix styling)
-=======
->>>>>>> 930f8146 (Check & fix styling)
->>>>>>> da9ae01a0 (.)
 ];
