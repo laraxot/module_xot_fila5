@@ -29,6 +29,11 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_2C7kJn
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
@@ -36,6 +41,7 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_d8Pdly
 {
     return [
         // Campi modificabili dall'utente
@@ -86,26 +92,32 @@ return [
 
 ### Regole di Estensione
 <<<<<<< HEAD
+<<<<<<< .merge_file_2C7kJn
+=======
+<<<<<<< HEAD
+1. Implementare `public function getFormSchema(): array`
+=======
+1. Implementare `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_d8Pdly
+1. Implementare `public function getFormSchema(): array`
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 1. Implementare `public function getFormSchema(): array`
 =======
 1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
 =======
-<<<<<<< HEAD
 1. Implementare `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_2C7kJn
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. Implementare `public function getFormSchema(): array`
-=======
-1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
-=======
-1. Implementare `public function getFormSchema(): array`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+>>>>>>> .merge_file_d8Pdly
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -122,6 +134,11 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_2C7kJn
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -129,6 +146,7 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_d8Pdly
     {
         return [
             TextInput::make('name')->required(),

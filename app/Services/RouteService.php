@@ -4,12 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+use Exception;
+=======
 use function count;
 
+>>>>>>> laraxot/dev
+=======
+use function count;
+
+>>>>>>> .merge_file_4ZCbTA
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+use function count;
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4ZCbTA
 /**
  * Class RouteService.
  * Modules\Xot\Services\RouteService.
@@ -19,8 +36,17 @@ use Illuminate\Support\Str;
 class RouteService
 {
     /**
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $params
+=======
      * @param array<string, mixed> $params
      *
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $params
+     *
+>>>>>>> .merge_file_4ZCbTA
      * @return bool True se l'utente è in modalità amministrazione, false altrimenti
      */
     public static function inAdmin(array $params = []): bool
@@ -32,7 +58,15 @@ class RouteService
         }
 
         // Se il primo segmento dell'URL è 'admin', siamo in modalità amministrazione
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+        if (Request::segment(1) === 'admin') {
+=======
         if ('admin' === Request::segment(1)) {
+>>>>>>> laraxot/dev
+=======
+        if ('admin' === Request::segment(1)) {
+>>>>>>> .merge_file_4ZCbTA
             return true;
         }
 
@@ -41,12 +75,27 @@ class RouteService
 
         // Se abbiamo almeno un segmento, è 'livewire' e la sessione 'in_admin' è true
         return (is_countable($segments) ? \count($segments) : 0) > 0
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+            && $segments[0] === 'livewire'
+            && session('in_admin', false) === true;
+    }
+
+    /**
+     * @param  array<string,string>  $params
+=======
+=======
+>>>>>>> .merge_file_4ZCbTA
             && 'livewire' === $segments[0]
             && true === session('in_admin', false);
     }
 
     /**
      * @param array<string,string> $params
+<<<<<<< .merge_file_UwaLub
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4ZCbTA
      */
     public static function urlAct(array $params): string
     {
@@ -68,7 +117,15 @@ class RouteService
         $routename = ''; // Request::route()->getName();
         $old_act_route = last(explode('.', $routename));
         if (! \is_string($old_act_route)) {
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+            throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
+=======
             throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
+>>>>>>> laraxot/dev
+=======
+            throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
+>>>>>>> .merge_file_4ZCbTA
         }
 
         $routename_act = Str::before($routename, $old_act_route).''.$act;
@@ -99,7 +156,15 @@ class RouteService
     // se n=0 => 'container0'
     // se n=1 => 'containers.container1'
     /**
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+     * @param  array<string,string>  $params
+=======
      * @param array<string,string> $params
+>>>>>>> laraxot/dev
+=======
+     * @param array<string,string> $params
+>>>>>>> .merge_file_4ZCbTA
      */
     public static function getRoutenameN(array $params): string
     {
@@ -113,7 +178,15 @@ class RouteService
             $tmp[] = 'admin';
         }
 
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+        for ($i = 0; $i <= $n; $i++) {
+=======
         for ($i = 0; $i <= $n; ++$i) {
+>>>>>>> laraxot/dev
+=======
+        for ($i = 0; $i <= $n; ++$i) {
+>>>>>>> .merge_file_4ZCbTA
             $tmp[] = 'container'.$i;
         }
 
@@ -201,7 +274,15 @@ class RouteService
      * }
      */
     /**
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+     * @param  array<string,string>  $params
+=======
      * @param array<string,string> $params
+>>>>>>> laraxot/dev
+=======
+     * @param array<string,string> $params
+>>>>>>> .merge_file_4ZCbTA
      */
     public static function urlLang(array $params = []): string
     {
@@ -273,13 +354,31 @@ class RouteService
     /**
      * Function getAct.
      *
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+     * @throws Exception
+=======
      * @throws \Exception
+>>>>>>> laraxot/dev
+=======
+     * @throws \Exception
+>>>>>>> .merge_file_4ZCbTA
      */
     public static function getAct(): string
     {
         $route_action = Route::currentRouteAction();
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+        if ($route_action === null) {
+            throw new Exception('$route_action is null');
+=======
         if (null === $route_action) {
             throw new \Exception('$route_action is null');
+>>>>>>> laraxot/dev
+=======
+        if (null === $route_action) {
+            throw new \Exception('$route_action is null');
+>>>>>>> .merge_file_4ZCbTA
         }
 
         $act = Str::after($route_action, '@');
@@ -299,13 +398,31 @@ class RouteService
     /**
      * Function.
      *
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+     * @throws Exception
+=======
      * @throws \Exception
+>>>>>>> laraxot/dev
+=======
+     * @throws \Exception
+>>>>>>> .merge_file_4ZCbTA
      */
     public static function getModuleName(): string
     {
         $route_action = Route::currentRouteAction();
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+        if ($route_action === null) {
+            throw new Exception('$route_action is null');
+=======
         if (null === $route_action) {
             throw new \Exception('$route_action is null');
+>>>>>>> laraxot/dev
+=======
+        if (null === $route_action) {
+            throw new \Exception('$route_action is null');
+>>>>>>> .merge_file_4ZCbTA
         }
 
         return Str::between($route_action, 'Modules\\', '\Http');
@@ -314,13 +431,31 @@ class RouteService
     /**
      * Function.
      *
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+     * @throws Exception
+=======
      * @throws \Exception
+>>>>>>> laraxot/dev
+=======
+     * @throws \Exception
+>>>>>>> .merge_file_4ZCbTA
      */
     public static function getControllerName(): string
     {
         $route_action = Route::currentRouteAction();
+<<<<<<< .merge_file_UwaLub
+<<<<<<< HEAD
+        if ($route_action === null) {
+            throw new Exception('$route_action is null');
+=======
         if (null === $route_action) {
             throw new \Exception('$route_action is null');
+>>>>>>> laraxot/dev
+=======
+        if (null === $route_action) {
+            throw new \Exception('$route_action is null');
+>>>>>>> .merge_file_4ZCbTA
         }
 
         return Str::between($route_action, 'Http\Controllers\\', 'Controller');

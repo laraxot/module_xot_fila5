@@ -56,14 +56,20 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_v0df22
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_tSrxgV
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_v0df22
+=======
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_tSrxgV
     {
         return [
             // Schema del form
@@ -103,7 +109,11 @@ class MyResource extends XotBaseResource
    - ✅ `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_v0df22
+   - ✅ `public function getFormSchema(): array`
+=======
    - ✅ `public static function getFormSchema(): array`
+>>>>>>> .merge_file_tSrxgV
 >>>>>>> laraxot/dev
    - ✅ `public static function getPages(): array`
 
@@ -217,14 +227,20 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_v0df22
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_tSrxgV
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_v0df22
+=======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_tSrxgV
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -554,14 +570,20 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_v0df22
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_tSrxgV
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_v0df22
+=======
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_tSrxgV
 {
     return [
         'nome' => TextInput::make('nome'),

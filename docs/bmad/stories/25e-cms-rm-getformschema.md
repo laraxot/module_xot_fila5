@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_rGYoHQ
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +14,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_U9a3e1
+>>>>>>> .merge_file_0GzWWa
 ---
 name: 25e-cms-rm-getformschema
 description: "Modulo: Cms"
@@ -24,11 +30,14 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_rGYoHQ
+=======
 <<<<<<< .merge_file_WSYXjv
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_U9a3e1
+>>>>>>> .merge_file_0GzWWa
 >>>>>>> laraxot/dev
 # 25e-cms — Rimuovere getFormSchema da MenuResource
 

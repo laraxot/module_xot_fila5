@@ -103,12 +103,17 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
+<<<<<<< .merge_file_GgvncZ
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_f9PlBY
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
+<<<<<<< .merge_file_GgvncZ
+=======
 =======
 - [Configurazione Generale](CONFIGURATION.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
@@ -116,6 +121,7 @@ Per la versione dark:
 - [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
 - [Regole per i Namespace](NAMESPACE-RULES.md)
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_f9PlBY
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto

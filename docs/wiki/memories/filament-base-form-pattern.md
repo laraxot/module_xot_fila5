@@ -49,6 +49,11 @@ abstract class BaseMessageForm extends XotBaseResourceForm
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_2Lz1Im
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -56,6 +61,7 @@ abstract class BaseMessageForm extends XotBaseResourceForm
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_yUoYcN
     {
         return [
             'type' => Select::make('type')

@@ -1,5 +1,8 @@
 ---
+<<<<<<< .merge_file_Ck4O3z
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_AKTpHy
 module: Xot
 topic: legacy-roadmap-and-issues
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
@@ -11,6 +14,8 @@ updated: 2026-07-15
 Documentazione canonica spostata:
 
 See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md)
+<<<<<<< .merge_file_Ck4O3z
+=======
 =======
 module: theme
 topic: legacy-roadmap-ands
@@ -31,6 +36,7 @@ canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issue
 | Contracts | 90% | Manca isSuperAdmin() in ProfileContract |
 | Type Safety | 98% | 9 errori PHPStan da risolvere |
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_AKTpHy
 
 ---
 
@@ -346,9 +352,12 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+<<<<<<< .merge_file_Ck4O3z
+=======
 <<<<<<< HEAD
 =======
 =======
 See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
 >>>>>>> 64619e34 (.):docs/roadmap/legacy/legacy-roadmap-ands.md
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_AKTpHy

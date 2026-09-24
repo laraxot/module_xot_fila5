@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_o27QAN
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +14,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_NOfCjG
+>>>>>>> .merge_file_yuPAGJ
 ---
 name: readme
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -24,11 +30,14 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_o27QAN
+=======
 <<<<<<< .merge_file_VOP395
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_NOfCjG
+>>>>>>> .merge_file_yuPAGJ
 >>>>>>> laraxot/dev
 # BMAD — Indice workflow Xot
 

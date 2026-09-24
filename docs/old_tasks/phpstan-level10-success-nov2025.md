@@ -1,4 +1,7 @@
+<<<<<<< .merge_file_qgRaEA
+=======
 <<<<<<< HEAD
+>>>>>>> .merge_file_16IGFh
 ---
 title: "Phpstan Level10 Success Nov"
 type: concept
@@ -15,6 +18,8 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-level10-success-nov.md](./phpstan-level10-success-nov.md)
+<<<<<<< .merge_file_qgRaEA
+=======
 =======
 # PHPStan Level 10 - Successo Totale (Novembre 2025)
 
@@ -169,3 +174,4 @@ Risultato ottenuto seguendo rigorosamente:
 **Mantra**: "Un modulo alla volta, un errore alla volta, zero compromessi"
 
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_16IGFh

@@ -4,13 +4,28 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< .merge_file_hANHCq
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_EPx84w
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_hANHCq
+<<<<<<< HEAD
+    Mockery::close();
+=======
     \Mockery::close();
+>>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> .merge_file_EPx84w
 });
 
 /** @return array{string, string} */

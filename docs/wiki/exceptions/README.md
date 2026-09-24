@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> .merge_file_nwfsLv
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,11 +16,15 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_mfE3RR
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 ---
 title: "Readme"
 type: reference
@@ -26,6 +33,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+=======
 <<<<<<< .merge_file_mfE3RR
 <<<<<<< HEAD
 =======
@@ -33,14 +42,18 @@ updated: 2026-08-24
 =======
 =======
 <<<<<<< HEAD
+>>>>>>> .merge_file_nwfsLv
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+=======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 
 # Gestione delle Eccezioni
 
@@ -78,6 +91,11 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_mfE3RR
 =======
 
@@ -87,6 +105,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -248,19 +267,25 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 ## Collegamenti
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+<<<<<<< .merge_file_QXN9FT
+=======
 <<<<<<< .merge_file_mfE3RR
 =======
 
 >>>>>>> laraxot/dev
 =======
+>>>>>>> .merge_file_nwfsLv
 <<<<<<< HEAD
 =======
 =======
 
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+=======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -312,6 +337,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+=======
 <<<<<<< .merge_file_mfE3RR
 * [README.md](../../../User/docs/README.md)
 =======
@@ -319,6 +346,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 =======
 <<<<<<< HEAD
+>>>>>>> .merge_file_nwfsLv
 * [README.md](../../../User/docs/README.md)
 =======
 <<<<<<< HEAD
@@ -326,8 +354,11 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+=======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -355,6 +386,11 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< .merge_file_mfE3RR
 =======
 =======
@@ -363,6 +399,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 
 <<<<<<< HEAD
 =======
@@ -409,8 +446,12 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+>>>>>>> laraxot/dev
+=======
 <<<<<<< .merge_file_mfE3RR
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv

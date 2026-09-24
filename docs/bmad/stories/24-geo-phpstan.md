@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_LdVtx6
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +14,7 @@
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I2PZ9z
+>>>>>>> .merge_file_CjqcIC
 ---
 name: 24-geo-phpstan
 description: "Modulo: Geo"
@@ -24,11 +30,14 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LdVtx6
+=======
 <<<<<<< .merge_file_5SU0bg
 =======
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_I2PZ9z
+>>>>>>> .merge_file_CjqcIC
 >>>>>>> laraxot/dev
 # BMAD Story 24 — Geo: 5 errori PHPStan
 

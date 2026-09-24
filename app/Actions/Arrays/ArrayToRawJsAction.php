@@ -6,11 +6,24 @@ namespace Modules\Xot\Actions\Arrays;
 
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_0YG7ku
+<<<<<<< HEAD
+use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\preg_match;
+
+=======
+=======
+>>>>>>> .merge_file_LycDYE
 
 use function Safe\preg_match;
 
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< .merge_file_0YG7ku
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_LycDYE
 /**
  * Converte un array PHP in RawJs (oggetto JavaScript) sicuro per attributi HTML.
  *
@@ -25,7 +38,15 @@ class ArrayToRawJsAction
     /**
      * Converte l'array in una stringa JavaScript (oggetto letterale) e restituisce RawJs.
      *
+<<<<<<< .merge_file_0YG7ku
+<<<<<<< HEAD
+     * @param  array<int|string, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
+=======
      * @param array<int|string, mixed> $array Array associativo (anche annidato); valori RawJs restano raw
+>>>>>>> laraxot/dev
+=======
+     * @param array<int|string, mixed> $array Array associativo (anche annidato); valori RawJs restano raw
+>>>>>>> .merge_file_LycDYE
      */
     public function execute(array $array): RawJs
     {

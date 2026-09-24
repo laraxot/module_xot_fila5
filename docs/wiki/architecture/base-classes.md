@@ -45,6 +45,11 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
+<<<<<<< .merge_file_pb4y2z
+    public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
@@ -52,6 +57,7 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_9nmDCT
 
     // ❌ VIETATO - ERRORE GRAVE
     // public function getTableColumns(): array { /* ... */ }
@@ -156,6 +162,11 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_pb4y2z
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -163,6 +174,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_9nmDCT
     {
         return [
             Section::make(__('filament.section.general'))
@@ -331,6 +343,11 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_pb4y2z
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
@@ -338,6 +355,7 @@ class YourResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_9nmDCT
     {
         return [
             ...parent::getFormSchema(),
@@ -412,6 +430,11 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_pb4y2z
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
@@ -419,6 +442,7 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_9nmDCT
 
 /** @return array<string, PageRegistration> */
 public static function getPages(): array
