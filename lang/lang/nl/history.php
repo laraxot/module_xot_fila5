@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ifegL4
+=======
+
+>>>>>>> .merge_file_xdwC3y
 return [
     'backend' => [
         'none' => 'Er is geen recente geschiedenis.',

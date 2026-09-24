@@ -17,7 +17,11 @@ The `Xot` module serves as the foundational pillar of the application's architec
 The `Xot` module embodies several key philosophical and design principles:
 
 *   **DRY (Don't Repeat Yourself) & Centralization:** By abstracting common functionalities and centralizing configurations, `Xot` drastically reduces redundant code across the application. Developers in other modules can leverage `Xot`'s established patterns instead of reimplementing basic setup or Filament integrations.
+<<<<<<< HEAD
 *   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a predictable codebase, reducing cognitive load for developers.
+=======
+*   **Opinionated Defaults & Consistency:** `Xot` enforces a set of opinionated defaults (e.g., global timezone settings for UI components, consistent naming conventions through helper mechanisms) that guide the development of other modules. This ensures a cohesive user experience and a <nome progetto>able codebase, reducing cognitive load for developers.
+>>>>>>> laraxot/dev
 *   **Modularity & Extensibility (The "Xot" Layer):** The existence of `XotBase` prefixed classes is the cornerstone of `Xot`'s modular philosophy. It dictates that other modules must extend these base classes, promoting extensibility while strictly controlling the core architectural patterns. This layer serves as the primary gateway for interacting with underlying frameworks like Laravel and Filament.
 *   **Developer Experience (DX) Enhancement:** Through its development tooling (Artisan commands for resource generation, memory optimization) and structured base classes, `Xot` aims to streamline the development process, making it more efficient and less error-prone.
 *   **Robustness & Type Safety:** A commitment to robust code is evident through the use of `declare(strict_types=1);` and runtime assertions (`Webmozart\Assert\Assert`). This promotes type-safe coding practices, minimizing unexpected behaviors and improving code reliability.
@@ -36,10 +40,13 @@ While `Xot` does not contain specific business logic, it profoundly influences h
 `Xot` is, therefore, not just a utility module but the architectural consciousness of the entire project.
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_nEiNQU
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AlARRZ
 ## Filament Tables Pattern: XotBaseResourceTable
 
 **Critical Design**: Classes extending `XotBaseResourceTable` delegate table configuration through the `table()` method. This is **NOT** a method override — it is an implementation requirement.
@@ -104,8 +111,11 @@ All Table classes extending XotBaseResourceTable:
 
 ---
 
+<<<<<<< .merge_file_nEiNQU
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AlARRZ
 =======
 >>>>>>> laraxot/dev
 ## 🤖 Integration with Model Context Protocol (MCP)
@@ -127,4 +137,8 @@ The `Xot` module, being the architectural foundation, naturally serves as the ce
 4.  **Git (MCP)**: Provides structured access to Git history and repository status, crucial for `Xot`'s documentation, code analysis, and ensuring adherence to development standards.
 5.  **Sequential Thinking (MCP)**: Supports the analytical processes required to maintain and evolve `Xot`'s complex architectural components.
 
+<<<<<<< HEAD
 By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
+=======
+By actively utilizing these MCPs, `Xot` ensures that the entire development ecosystem operates with enhanced intelligence, efficiency, and adherence to its foundational principles.
+>>>>>>> laraxot/dev

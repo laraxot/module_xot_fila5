@@ -1,9 +1,12 @@
 # Best Practices
 
+<<<<<<< .merge_file_p95rt1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FfdCBr
 ## Laraxot Framework Standards
 
 ### Models
@@ -33,35 +36,43 @@
 ## Code Quality
 - PHPStan level 9+ for all new code
 <<<<<<< HEAD
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
-- PHPStan level 9+ for all new code
+<<<<<<< .merge_file_p95rt1
 =======
+=======
+>>>>>>> .merge_file_FfdCBr
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+<<<<<<< .merge_file_p95rt1
+=======
+=======
+>>>>>>> .merge_file_FfdCBr
 >>>>>>> laraxot/dev
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
 
+<<<<<<< .merge_file_p95rt1
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -106,11 +117,14 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FfdCBr
 ## Documentation
 - All files in docs/ must be lowercase (except README.md)
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
+<<<<<<< .merge_file_p95rt1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -167,3 +181,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FfdCBr

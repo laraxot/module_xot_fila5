@@ -8,7 +8,11 @@ tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: laravel-cms.txt
 =======
+<<<<<<< HEAD
+converted_from: laravel-cms.txt
+=======
 converted_from: laravel_cms.txt
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

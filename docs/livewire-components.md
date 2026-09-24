@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_fwCtB7
 <<<<<<< HEAD
 da tenere d'occhio .. comprati
 https://livewiredemos.com/components
@@ -8,6 +9,8 @@ https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Li
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6IFZTq
 ---
 title: 'livewire_components'
 module: Xot
@@ -28,7 +31,16 @@ da tenere d'occhio .. comprati
 https://livewiredemos.com/components
 
 https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
+<<<<<<< .merge_file_fwCtB7
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+da tenere d'occhio .. comprati
+https://livewiredemos.com/components
+
+
+https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
+>>>>>>> .merge_file_6IFZTq
 >>>>>>> laraxot/dev

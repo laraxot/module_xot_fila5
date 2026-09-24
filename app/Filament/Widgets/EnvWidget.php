@@ -4,15 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< .merge_file_1jJdib
 use Filament\Forms\Components\Select;
+=======
+<<<<<<< HEAD
+use Filament\Forms\Components\Select;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ivPHy5
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
+<<<<<<< .merge_file_1jJdib
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ivPHy5
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
+=======
+use Filament\Schemas\Schema;
+use Illuminate\Support\Arr;
+use Modules\Xot\Datas\EnvData;
+
+/**
+ * @property Schema $form
+ */
+>>>>>>> laraxot/dev
 class EnvWidget extends XotBaseSchemaWidget
 {
     /** @var array<string, mixed>|null */
@@ -21,6 +41,7 @@ class EnvWidget extends XotBaseSchemaWidget
     /** @var list<string> */
     public array $only = [];
 
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view = 'xot::filament.widgets.env';
 
@@ -38,6 +59,14 @@ class EnvWidget extends XotBaseSchemaWidget
         'Mail' => ['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password', 'mail_from_address', 'mail_from_name'],
     ];
 
+<<<<<<< .merge_file_1jJdib
+=======
+=======
+    /** @phpstan-ignore property.defaultValue */
+    protected string $view = 'xot::filament.widgets.env';
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ivPHy5
     public function mount(): void
     {
         /** @var array<string, mixed> */
@@ -47,6 +76,14 @@ class EnvWidget extends XotBaseSchemaWidget
         $this->form->fill($this->data);
     }
 
+<<<<<<< HEAD
+=======
+    public function schema(Schema $schema): Schema
+    {
+        return $schema->components($this->getFormSchema())->columns(1)->statePath('data');
+    }
+
+>>>>>>> laraxot/dev
     public function submit(): void
     {
         if (! is_array($this->data)) {
@@ -71,6 +108,10 @@ class EnvWidget extends XotBaseSchemaWidget
      */
     public function getFormSchema(): array
     {
+<<<<<<< .merge_file_1jJdib
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ivPHy5
         // Nessun ->label()/->placeholder()/->helperText() qui: Modules\Lang
         // (LangServiceProvider::registerFilamentLabel(), Field::configureUsing())
         // li risolve automaticamente da Modules/Xot/lang/{locale}/env.php,
@@ -78,6 +119,8 @@ class EnvWidget extends XotBaseSchemaWidget
         // dal vivo (non assunto): il primo caricamento di questa pagina scrive da
         // solo le voci mancanti in quel file. ->options() resta qui perché non è
         // gestito da quel meccanismo (sono valori di dominio, non testo UI).
+<<<<<<< .merge_file_1jJdib
+=======
         $all = [
             'app_url' => TextInput::make('app_url')->required(),
             'debugbar_enabled' => Toggle::make('debugbar_enabled'),
@@ -144,6 +187,80 @@ class EnvWidget extends XotBaseSchemaWidget
                 $components[] = $field;
             }
         }
+=======
+>>>>>>> .merge_file_ivPHy5
+        $all = [
+            'app_url' => TextInput::make('app_url')->required(),
+            'debugbar_enabled' => Toggle::make('debugbar_enabled'),
+            'google_maps_api_key' => TextInput::make('google_maps_api_key'),
+            'telegram_bot_token' => TextInput::make('telegram_bot_token'),
+            'sms_driver' => Select::make('sms_driver')
+                ->options([
+                    'smsfactor' => 'SMSFactor',
+                    'netfun' => 'Netfun',
+                    'twilio' => 'Twilio',
+                    'nexmo' => 'Nexmo (Vonage)',
+                    'plivo' => 'Plivo',
+                    'gammu' => 'Gammu',
+                    'agiletelecom' => 'Agile Telecom',
+                ]),
+            'netfun_token' => TextInput::make('netfun_token'),
+            'mail_mailer' => Select::make('mail_mailer')
+                ->options([
+                    'smtp' => 'SMTP',
+                    'ses' => 'Amazon SES',
+                    'postmark' => 'Postmark',
+                    'resend' => 'Resend',
+                    'sendmail' => 'Sendmail',
+                    'log' => 'Log (nessun invio reale)',
+                ]),
+            'mail_host' => TextInput::make('mail_host'),
+            'mail_port' => TextInput::make('mail_port'),
+            'mail_encryption' => Select::make('mail_encryption')
+                ->options([
+                    '' => 'Nessuna',
+                    'tls' => 'TLS',
+                    'ssl' => 'SSL',
+                ]),
+            'mail_username' => TextInput::make('mail_username'),
+            'mail_password' => TextInput::make('mail_password'),
+            'mail_from_address' => TextInput::make('mail_from_address'),
+            'mail_from_name' => TextInput::make('mail_from_name'),
+        ];
+        /** @var array<string, Component> $selected */
+        $selected = $this->only === [] ? $all : Arr::only($all, $this->only);
+
+<<<<<<< .merge_file_1jJdib
+        $grouped = [];
+        $components = [];
+        foreach (self::GROUPS as $label => $keys) {
+            /** @var list<Component> $fields */
+            $fields = [];
+            foreach ($keys as $key) {
+                if (isset($selected[$key])) {
+                    $fields[] = $selected[$key];
+                    $grouped[$key] = true;
+                }
+            }
+            if ($fields === []) {
+                continue;
+            }
+            $components[] = Section::make($label)->schema($fields);
+        }
+
+        // Campi selezionati ma non presenti in nessun gruppo di GROUPS
+        // (es. un nuovo campo aggiunto a $all senza aggiornare la mappa):
+        // restano visibili, fuori da qualunque Section, invece di sparire.
+        foreach ($selected as $key => $field) {
+            if (! isset($grouped[$key])) {
+                $components[] = $field;
+            }
+        }
+=======
+        /** @var array<Component> $components */
+        $components = array_values($selected);
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ivPHy5
 
         return $components;
     }

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'values' => [
         1 => [
             'label' => 'Monday',
@@ -47,6 +48,8 @@ return [
             'description' => 'Weekly rest day',
         ],
     ],
+=======
+>>>>>>> laraxot/dev
     'label' => 'Day of Week',
     'options' => [
         1 => 'Monday',

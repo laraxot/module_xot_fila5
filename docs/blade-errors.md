@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_CiOasO
 <<<<<<< HEAD
 Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_GTrFXC
 ---
 title: 'blade_errors'
 module: Xot
@@ -23,7 +26,13 @@ updated: 2026-08-24
 
 Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
+<<<<<<< .merge_file_CiOasO
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+Simplify Validation Messaging with Blade Directives
+https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
+>>>>>>> .merge_file_GTrFXC
 >>>>>>> laraxot/dev

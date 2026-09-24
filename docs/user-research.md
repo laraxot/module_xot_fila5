@@ -1,7 +1,10 @@
+<<<<<<< .merge_file_sQZZVp
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_obkM5e
 # User Research: Xot Framework
 
 ## 🔬 Research Goals
@@ -21,6 +24,7 @@ Identify bottlenecks in developer productivity when working with XotBase classes
 ## ✅ Actionable Insights / Next Steps
 - Simplify the `XotBaseServiceProvider` boot process.
 - Improve documentation for the `HasXotTable` trait.
+<<<<<<< .merge_file_sQZZVp
 <<<<<<< HEAD
 =======
 # Xot Module - User Research
@@ -114,3 +118,5 @@ Users expect vetted extensions.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_obkM5e

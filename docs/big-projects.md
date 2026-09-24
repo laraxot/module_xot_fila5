@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_IPiVU3
 <<<<<<< HEAD
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
@@ -8,6 +9,8 @@ https://readme.so/it/editor
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_IquJ29
 ---
 title: 'big_projects'
 module: Xot
@@ -27,7 +30,16 @@ updated: 2026-08-24
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 https://readme.so/it/editor
+<<<<<<< .merge_file_IPiVU3
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
+
+
+
+https://readme.so/it/editor
+>>>>>>> .merge_file_IquJ29
 >>>>>>> laraxot/dev

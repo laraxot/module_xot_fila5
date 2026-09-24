@@ -9,9 +9,18 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< .merge_file_zfriLx
         'label' => 'session.navigation',
         'icon' => 'session.navigation',
         'sort' => 21,
+=======
+<<<<<<< HEAD
+        'label' => 'session.navigation',
+        'icon' => 'session.navigation',
+        'sort' => 21,
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eMuTt9
     ],
     'pages' => [
         'health_check_results' => [
@@ -36,7 +45,14 @@ return [
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
             'description' => '',
+<<<<<<< .merge_file_zfriLx
             'placeholder' => 'id',
+=======
+<<<<<<< HEAD
+            'placeholder' => 'id',
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eMuTt9
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -50,6 +66,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< .merge_file_zfriLx
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_eMuTt9
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
@@ -80,10 +100,19 @@ return [
             'helper_text' => 'last_activity',
             'description' => 'last_activity',
         ],
+<<<<<<< .merge_file_zfriLx
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eMuTt9
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Session',
+<<<<<<< .merge_file_zfriLx
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_eMuTt9
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -111,6 +140,17 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
+<<<<<<< .merge_file_zfriLx
+=======
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Session',
+        ],
+        'delete' => [
+            'label' => 'Elimina Session',
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eMuTt9
         ],
     ],
 ];

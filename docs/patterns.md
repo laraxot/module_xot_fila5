@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_LJVgHf
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -47,3 +48,6 @@ class CreateMyTable extends XotBaseMigration {
 =======
 
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_Dg2owJ

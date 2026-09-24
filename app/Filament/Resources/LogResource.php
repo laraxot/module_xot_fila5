@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
+=======
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+>>>>>>> laraxot/dev
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
@@ -24,8 +27,21 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
-
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'name' => TextInput::make('name')->required()->maxLength(255),
+            'path' => TextInput::make('path')->required()->maxLength(255),
+            'content' => Textarea::make('content')->columnSpanFull(),
+        ];
+    }
+
+    public static function getInfolistSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => TextEntry::make('name')->columnSpanFull(),
@@ -47,11 +63,19 @@ class LogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [

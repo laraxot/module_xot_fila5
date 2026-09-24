@@ -301,4 +301,8 @@ class XotPageTest extends TestCase
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

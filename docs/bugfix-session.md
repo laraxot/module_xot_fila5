@@ -277,10 +277,14 @@ Eccezioni rare:
 - [../../bashscripts/docs/file-locking-pattern.md](../../../bashscripts/docs/file-locking-pattern.md)
 - [../../User/docs/syntax-errors-to-fix.md](../../User/docs/syntax-errors-to-fix.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_yxomsZ
 <<<<<<< HEAD
 =======
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
 >>>>>>> laraxot/dev
+=======
+- [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
+>>>>>>> .merge_file_G2rLbu
 =======
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
 >>>>>>> laraxot/dev

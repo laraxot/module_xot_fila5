@@ -1,6 +1,14 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_SJPDKB
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XgGAXF
 ---
 name: 18-aiassistant-phpstan
 description: "Modulo: AiAssistant"
@@ -8,11 +16,19 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_SJPDKB
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XgGAXF
 >>>>>>> laraxot/dev
 # BMAD Story 18 — AiAssistant: 10 errori PHPStan
 

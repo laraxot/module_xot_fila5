@@ -8,7 +8,11 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
+<<<<<<< .merge_file_xGPNBQ
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -25,7 +29,11 @@ public function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< .merge_file_xGPNBQ
 public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -97,7 +105,11 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< .merge_file_xGPNBQ
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -112,7 +124,11 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< .merge_file_xGPNBQ
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

@@ -24,9 +24,13 @@ class SessionResource extends XotBaseResource
     protected static ?string $model = Session::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -100,9 +104,19 @@ return [
 * [filament-resources.md](../../../Gdpr/docs/filament-resources.md)
 * [filament-resources.md](../../../Xot/docs/filament-resources.md)
 * [filament-resources.md](../../../Cms/docs/filament-resources.md)
+<<<<<<< HEAD
+=======
+* [filament-resources.md](../../../gdpr/docs/filament-resources.md)
+* [filament-resources.md](../../../xot/docs/filament-resources.md)
+* [filament-resources.md](../../../cms/docs/filament-resources.md)
+>>>>>>> laraxot/dev
 
 ### Versione Incoming
 
 - Mantenute le validazioni e la struttura del form
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

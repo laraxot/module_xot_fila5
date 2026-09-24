@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_v3icqD
+=======
+
+>>>>>>> .merge_file_1iU3nI
 return [
     'backend' => [
         'takeaway' => [

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_FmoPGY
+=======
+
+>>>>>>> .merge_file_zt7tTw
 return [
     'failed' => 'Toegangsgegevens niet gevonden',
     'general_error' => 'Je hebt niet de rechten om dat te doen.',

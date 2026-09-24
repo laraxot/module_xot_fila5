@@ -35,4 +35,8 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 3. **Localizzazione**: Assicurarsi che per ogni Resource esistano le traduzioni nelle 6 lingue target (IT, EN, ES, FR, ZH, AR).
 
 ---
+<<<<<<< HEAD
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
+=======
+*Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
+>>>>>>> laraxot/dev

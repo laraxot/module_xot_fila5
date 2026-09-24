@@ -1,10 +1,25 @@
 <?php
 
+<<<<<<< .merge_file_aGlgB4
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ok48PX
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
+<<<<<<< .merge_file_aGlgB4
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ok48PX
 namespace Modules\Xot\Actions;
 
 use Spatie\QueueableAction\QueueableAction;

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_Iqy4Xz
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PZv27e
 ---
 title: "Laravel mix"
 type: reference
@@ -16,8 +19,11 @@ note: "Convertito da laravel_mix.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/laravel_mix.txt -->
 
+<<<<<<< .merge_file_Iqy4Xz
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PZv27e
 =======
 >>>>>>> laraxot/dev
 //-------------------------------------------------------------------------------------

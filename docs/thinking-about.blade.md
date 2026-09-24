@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_EbRo0y
 <<<<<<< HEAD
 
 struttura con l5-repository
@@ -6,6 +7,8 @@ https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepos
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JC8zAQ
 ---
 title: 'thinking_about.blade'
 module: Xot
@@ -24,7 +27,14 @@ updated: 2026-08-24
 
 struttura con l5-repository
 https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepositoryEloquent.php
+<<<<<<< .merge_file_EbRo0y
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+
+struttura con l5-repository
+https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepositoryEloquent.php
+>>>>>>> .merge_file_JC8zAQ
 >>>>>>> laraxot/dev

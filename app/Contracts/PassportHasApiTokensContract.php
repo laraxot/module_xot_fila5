@@ -1,10 +1,26 @@
 <?php
 
+<<<<<<< .merge_file_q7n3mp
 declare(strict_types=1);
 /**
  * ---.
  */
 
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+/**
+ * ---.
+ */
+
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_WGp0oh
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -47,7 +63,16 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
+<<<<<<< .merge_file_q7n3mp
      * @param  array<int, string>  $scopes
+=======
+<<<<<<< HEAD
+     * @param  array<int, string>  $scopes
+=======
+     * @param array<int, string> $scopes
+     *
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_WGp0oh
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;

@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_flisOV
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_5f05n5
 <<<<<<< HEAD
 # __php-code-analysis-tools
 
@@ -27,6 +34,11 @@ https://phpmd.org/
 =======
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_flisOV
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5f05n5
 ---
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
@@ -61,6 +73,17 @@ updated: 2026-08-24
 - <https://github.com/overtrue/phplint>
 - <https://phpmd.org/>
 <<<<<<< HEAD
+<<<<<<< .merge_file_flisOV
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5f05n5
 >>>>>>> laraxot/dev

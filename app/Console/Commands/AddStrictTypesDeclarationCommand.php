@@ -52,17 +52,41 @@ class AddStrictTypesDeclarationCommand extends Command
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
+<<<<<<< .merge_file_JsAoN6
                     if ($fileName === false) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     $count++;
+=======
+<<<<<<< HEAD
+                    if ($fileName === false) {
+                        $fileName = $file->getPathname();
+                    }
+                    $this->info("Verrebbe processato: {$fileName}");
+                    $count++;
+=======
+                    if (false === $fileName) {
+                        $fileName = $file->getPathname();
+                    }
+                    $this->info("Verrebbe processato: {$fileName}");
+                    ++$count;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mj8Rsi
 
                     continue;
                 }
 
                 $path = $file->getRealPath();
+<<<<<<< .merge_file_JsAoN6
                 if ($path === false) {
+=======
+<<<<<<< HEAD
+                if ($path === false) {
+=======
+                if (false === $path) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mj8Rsi
                     continue;
                 }
 
@@ -72,7 +96,15 @@ class AddStrictTypesDeclarationCommand extends Command
                 try {
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");
+<<<<<<< .merge_file_JsAoN6
                     $count++;
+=======
+<<<<<<< HEAD
+                    $count++;
+=======
+                    ++$count;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mj8Rsi
                 } catch (\Exception $e) {
                     $this->error("Errore nel processare {$path}: ".$e->getMessage());
                 }
@@ -101,7 +133,15 @@ class AddStrictTypesDeclarationCommand extends Command
         }
 
         $path = $file->getRealPath();
+<<<<<<< .merge_file_JsAoN6
         if ($path === false) {
+=======
+<<<<<<< HEAD
+        if ($path === false) {
+=======
+        if (false === $path) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mj8Rsi
             return false;
         }
 

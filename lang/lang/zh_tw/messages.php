@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_osTPHM
+=======
+
+>>>>>>> .merge_file_CQOBpP
 return [
     'title' => 'Laravel安裝程序',
     'next' => '下一步',

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ccmtbi
+=======
+
+>>>>>>> .merge_file_AUhpnK
 return [
     'general' => [
         'home' => 'Inicio',

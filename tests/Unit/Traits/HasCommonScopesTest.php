@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
 /*
  * Isolated unit tests for HasCommonScopes.
  *
@@ -19,7 +22,11 @@ use Modules\Xot\Tests\Fixtures\Models\HasCommonScopesProbe;
 use PHPUnit\Framework\Assert;
 
 beforeEach(function (): void {
+<<<<<<< HEAD
     $capsule = new Capsule;
+=======
+    $capsule = new Capsule();
+>>>>>>> laraxot/dev
     $capsule->addConnection([
         'driver' => 'sqlite',
         'database' => ':memory:',
@@ -87,7 +94,11 @@ it('reports isPublished false when published_at is in the future', function (): 
 it('reports isActive correctly based on is_active flag', function (): void {
     $active = new HasCommonScopesProbe(['is_active' => true]);
     $inactive = new HasCommonScopesProbe(['is_active' => false]);
+<<<<<<< HEAD
     $unset = new HasCommonScopesProbe;
+=======
+    $unset = new HasCommonScopesProbe();
+>>>>>>> laraxot/dev
 
     Assert::assertTrue($active->isActive());
     Assert::assertFalse($inactive->isActive());

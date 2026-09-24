@@ -4,11 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+// use Symfony\Component\Console\Output\BufferedOutput;
+
+>>>>>>> laraxot/dev
 class Clock extends XotBaseWidget
 {
     public string $start = '';
 
+<<<<<<< HEAD
     /** @var view-string */
+=======
+    /** @phpstan-ignore property.defaultValue */
+>>>>>>> laraxot/dev
     protected string $view = 'xot::filament.widgets.clock';
 
     public function begin(): void
@@ -29,7 +38,15 @@ class Clock extends XotBaseWidget
             // Decrement the counter...
             // $this->start = $this->start - 1;
             $this->start = (string) now();
+<<<<<<< .merge_file_Jwxqoa
             if ($this->start === 'impossible') {
+=======
+<<<<<<< HEAD
+            if ($this->start === 'impossible') {
+=======
+            if ('impossible' === $this->start) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_rOPwXD
                 $cond = false;
             }
         }

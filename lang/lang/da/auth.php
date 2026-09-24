@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_DfGOC6
+=======
+
+>>>>>>> .merge_file_R581ZC
 return [
     'failed' => 'Disse legitimationsoplysninger passer ikke vores optegnelser.',
     'general_error' => 'Du har ikke adgang til at udføre denne handling.',

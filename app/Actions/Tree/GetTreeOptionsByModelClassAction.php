@@ -19,13 +19,30 @@ class GetTreeOptionsByModelClassAction
     public array $options = [];
 
     /**
+<<<<<<< .merge_file_RmcL8i
      * @param  class-string<HasRecursiveRelationshipsContract>  $class
+=======
+<<<<<<< HEAD
+     * @param  class-string<HasRecursiveRelationshipsContract>  $class
+=======
+     * @param class-string<HasRecursiveRelationshipsContract> $class
+     *
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_waul86
      * @return array<int|string, string>
      */
     public function execute(string $class, Model|callable|null $_where = null): array
     {
         /** @var HasRecursiveRelationshipsContract $model */
+<<<<<<< .merge_file_RmcL8i
         $model = new $class;
+=======
+<<<<<<< HEAD
+        $model = new $class;
+=======
+        $model = new $class();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_waul86
 
         /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract> $collection */
         $collection = $model->newQuery()->get();

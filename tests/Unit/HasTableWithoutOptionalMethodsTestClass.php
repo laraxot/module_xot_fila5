@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
 use Filament\Schemas\Schema;
 use Filament\Support\Contracts\TranslatableContentDriver;
 use Filament\Tables\Columns\Column;
@@ -15,6 +19,12 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Mockery;
 use Mockery\MockInterface;
+=======
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+
+use Filament\Tables\Table;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Traits\HasXotTable;
 
 /**
@@ -24,19 +34,42 @@ class HasTableWithoutOptionalMethodsTestClass
 {
     use HasXotTable;
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
     public function getLayoutView(): object
     {
         $mock = Mockery::mock();
         $mock->shouldReceive('getTableColumns')->andReturn([]);
         $mock->shouldReceive('getTableContentGrid')->andReturn([]);
+=======
+    public function getLayoutView(): mixed
+    {
+        /** @var \Mockery\MockInterface&\Mockery\LegacyMockInterface $mock */
+        $mock = \Mockery::mock();
+        /** @var \Mockery\Expectation $e1 */
+        $e1 = $mock->shouldReceive('getTableColumns');
+        $e1->andReturn([]);
+        /** @var \Mockery\Expectation $e2 */
+        $e2 = $mock->shouldReceive('getTableContentGrid');
+        $e2->andReturn([]);
+>>>>>>> laraxot/dev
 
         return $mock;
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Column|ColumnGroup|Component>
      */
     /** @return array<string, Column> */
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     public function getTableColumns(): array
     {
         return [];
@@ -44,10 +77,17 @@ class HasTableWithoutOptionalMethodsTestClass
 
     public function getTable(): Table
     {
+<<<<<<< HEAD
         /** @var Table&MockInterface $table */
         $table = Mockery::mock(Table::class);
 
         return $table;
+=======
+        /** @var Table $mock */
+        $mock = \Mockery::mock(Table::class);
+
+        return $mock;
+>>>>>>> laraxot/dev
     }
 
     public function getTablePage(): ?int
@@ -70,22 +110,38 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string|int, BaseFilter>
      */
+=======
+    /** @return array<mixed> */
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [];
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function getTableFiltersForm(): ?Schema
+=======
+<<<<<<< HEAD
+    public function getTableFiltersForm(): ?Schema
+=======
+    public function getTableFiltersForm(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>|null
      */
+=======
+    /** @return array<mixed>|null */
+>>>>>>> laraxot/dev
     public function getTableFilterState(string $_name): ?array
     {
         return [];
@@ -101,43 +157,81 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return array<int, mixed>
      */
+=======
+    /** @return array<mixed> */
+>>>>>>> laraxot/dev
     public function getTableColumnSearchIndicators(): array
     {
         return [];
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function getTableColumnToggleForm(): ?Schema
+=======
+<<<<<<< HEAD
+    public function getTableColumnToggleForm(): ?Schema
+=======
+    public function getTableColumnToggleForm(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return array<int, mixed>
      */
+=======
+    /** @return array<mixed> */
+>>>>>>> laraxot/dev
     public function getTableRecords(): array
     {
         return [];
     }
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
     /**
      * @return Model|array<string, mixed>|null
      */
     public function getTableRecord(): Model|array|null
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    public function getTableRecord(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function getTableRecordKey(): ?string
+=======
+<<<<<<< HEAD
+    public function getTableRecordKey(): ?string
+=======
+    public function getTableRecordKey(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< HEAD
     /**
      * @return array<int, mixed>
      */
+=======
+    /** @return array<mixed> */
+>>>>>>> laraxot/dev
     public function getSelectedTableRecords(): array
     {
         return [];
@@ -153,50 +247,104 @@ class HasTableWithoutOptionalMethodsTestClass
         return 0;
     }
 
+<<<<<<< HEAD
     /**
      * @return array<int, mixed>
      */
+=======
+    /** @return array<mixed> */
+>>>>>>> laraxot/dev
     public function getAllSelectableTableRecordKeys(): array
     {
         return [];
     }
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
     /**
      * @return Builder<Model>|null
      */
     public function getTableQueryForExport(): ?Builder
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    public function getTableQueryForExport(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredTableQuery(): ?Builder
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    public function getFilteredTableQuery(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
     /**
      * @return Builder<Model>|null
      */
     public function getFilteredSortedTableQuery(): ?Builder
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    public function getFilteredSortedTableQuery(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
     /**
      * @return Builder<Model>|null
      */
     public function getAllTableSummaryQuery(): ?Builder
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    public function getAllTableSummaryQuery(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PaK5ik
     /**
      * @return Builder<Model>|null
      */
     public function getPageTableSummaryQuery(): ?Builder
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    public function getPageTableSummaryQuery(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
@@ -206,17 +354,41 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function getMountedTableActionForm(): ?Schema
+=======
+<<<<<<< HEAD
+    public function getMountedTableActionForm(): ?Schema
+=======
+    public function getMountedTableActionForm(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function getMountedTableActionRecord(): ?Model
+=======
+<<<<<<< HEAD
+    public function getMountedTableActionRecord(): ?Model
+=======
+    public function getMountedTableActionRecord(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function getMountedTableActionRecordKey(): ?string
+=======
+<<<<<<< HEAD
+    public function getMountedTableActionRecordKey(): ?string
+=======
+    public function getMountedTableActionRecordKey(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
@@ -226,7 +398,15 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function getMountedTableBulkActionForm(): ?Schema
+=======
+<<<<<<< HEAD
+    public function getMountedTableBulkActionForm(): ?Schema
+=======
+    public function getMountedTableBulkActionForm(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
@@ -266,6 +446,7 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
@@ -273,10 +454,29 @@ class HasTableWithoutOptionalMethodsTestClass
     public function mountTableBulkAction(): void {}
 
     public function mountedTableActionRecord(): ?Model
+<<<<<<< .merge_file_hNAxOW
+=======
+=======
+    public function deselectAllTableRecords(): void
+    {
+    }
+
+    public function mountTableAction(): void
+    {
+    }
+
+    public function mountTableBulkAction(): void
+    {
+    }
+
+    public function mountedTableActionRecord(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -286,13 +486,42 @@ class HasTableWithoutOptionalMethodsTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+=======
+    public function replaceMountedTableAction(): void
+    {
+    }
+
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
+
+    public function resetTableSearch(): void
+    {
+    }
+
+    public function resetTableColumnSearch(): void
+    {
+    }
+
+    public function toggleTableReordering(): void
+    {
+    }
+>>>>>>> laraxot/dev
 
     public function parseTableFilterName(): string
     {
         return '';
     }
 
+<<<<<<< .merge_file_hNAxOW
     public function makeFilamentTranslatableContentDriver(): ?TranslatableContentDriver
+=======
+<<<<<<< HEAD
+    public function makeFilamentTranslatableContentDriver(): ?TranslatableContentDriver
+=======
+    public function makeFilamentTranslatableContentDriver(): mixed
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PaK5ik
     {
         return null;
     }

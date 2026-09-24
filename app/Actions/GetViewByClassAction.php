@@ -19,14 +19,30 @@ class GetViewByClassAction
     /**
      * Ottiene una vista basata su una classe.
      *
+<<<<<<< .merge_file_ys66NI
      * @param  string  $class  Nome della classe
      * @param  array<string, mixed>  $params  Parametri da passare alla vista
      * @param  string|null  $viewName  Nome personalizzato della vista
+=======
+<<<<<<< HEAD
+     * @param  string  $class  Nome della classe
+     * @param  array<string, mixed>  $params  Parametri da passare alla vista
+     * @param  string|null  $viewName  Nome personalizzato della vista
+=======
+     * @param string               $class    Nome della classe
+     * @param array<string, mixed> $params   Parametri da passare alla vista
+     * @param string|null          $viewName Nome personalizzato della vista
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_0vkR8A
      */
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
+<<<<<<< HEAD
         /** @var view-string $viewName */
+=======
+        /* @var view-string $viewName */
+>>>>>>> laraxot/dev
 
         return ViewFacade::make($viewName, $params);
     }
@@ -34,7 +50,16 @@ class GetViewByClassAction
     /**
      * Risolve il percorso della view basato sul namespace della classe.
      *
+<<<<<<< .merge_file_ys66NI
      * @param  string  $class  Il nome completo della classe
+=======
+<<<<<<< HEAD
+     * @param  string  $class  Il nome completo della classe
+=======
+     * @param string $class Il nome completo della classe
+     *
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_0vkR8A
      * @return string Il percorso della view
      */
     public function executeOld(string $class): string
@@ -43,7 +68,15 @@ class GetViewByClassAction
         $arr = explode('\\', $class);
 
         // Verifica che la classe sia nel namespace Modules
+<<<<<<< .merge_file_ys66NI
         if ($arr[0] !== 'Modules') {
+=======
+<<<<<<< HEAD
+        if ($arr[0] !== 'Modules') {
+=======
+        if ('Modules' !== $arr[0]) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_0vkR8A
             throw new \InvalidArgumentException('Class must be in Modules namespace');
         }
 
@@ -60,7 +93,15 @@ class GetViewByClassAction
     /**
      * Ottiene il nome della vista dal nome della classe.
      *
+<<<<<<< .merge_file_ys66NI
      * @param  string  $class  Nome della classe
+=======
+<<<<<<< HEAD
+     * @param  string  $class  Nome della classe
+=======
+     * @param string $class Nome della classe
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_0vkR8A
      */
     protected function getViewNameFromClass(string $class): string
     {

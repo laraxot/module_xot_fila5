@@ -1,11 +1,14 @@
 # Aggiornamento Importante: ai_init.sh Script
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_gN2FWI
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3h8tO2
 ## Nota di deprecazione
 
 Questo documento riflette il modello legacy "un path reale per ogni tool" ed e'
@@ -23,7 +26,12 @@ Tutti gli adapter di root devono puntare a un solo backend condiviso:
 .iflow    -> bashscripts/ai/.agents
 .windsurf -> bashscripts/ai/.agents
 .zai      -> bashscripts/ai/.agents
+<<<<<<< .merge_file_gN2FWI
 <<<<<<< HEAD
+=======
+```
+
+>>>>>>> .merge_file_3h8tO2
 =======
 >>>>>>> laraxot/dev
 =======
@@ -60,6 +68,7 @@ Lo script `ai_init.sh` ha una logica di sicurezza che non sovrascrive directory 
 Per verificare che tutto funzioni correttamente:
 ```bash
 file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
+<<<<<<< .merge_file_gN2FWI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -67,6 +76,8 @@ file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3h8tO2
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."

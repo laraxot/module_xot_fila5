@@ -36,7 +36,7 @@ Alcune classi `XotBase` impongono pattern specifici per garantire la conformità
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
 >>>>>>> laraxot/dev
 =======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+- **XotBaseResource**: Deve implementare `public static function getFormSchema(): array` (centralizzato).
 >>>>>>> laraxot/dev
 
 ### 3. Namespace Standard

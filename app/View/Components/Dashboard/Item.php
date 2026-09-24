@@ -17,7 +17,11 @@ class Item extends Component
 {
     public function render(): View
     {
+<<<<<<< HEAD
         /** @var view-string $view */
+=======
+        /** @var string $view */
+>>>>>>> laraxot/dev
         $view = 'xot::components.dashboard.item';
         /** @var array<string, string> $view_params */
         $view_params = [

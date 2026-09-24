@@ -2,6 +2,10 @@
 
 > **Versione**: 1.0
 > **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< HEAD
+=======
+> **Ultima modifica**: Vedi [CHANGELOG.md](./changelog.md)
+>>>>>>> laraxot/dev
 
 **Stato**: ✅ COMPLETATO
 **Causa Radice**: Conflitti Git risolti automaticamente con duplicazioni non rilevate
@@ -269,3 +273,7 @@ done < /tmp/broken_files.txt
 **Status**: ✅ COMPLETATO
 **Filosofia**: "Ogni bug è un maestro. Ogni fix è una lezione."
 **Cronologia**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< HEAD
+=======
+**Cronologia**: Vedi [CHANGELOG.md](./changelog.md)
+>>>>>>> laraxot/dev

@@ -16,5 +16,14 @@ class FieldFilterDTO extends Data
         public string $field_name,
         public ?string $where_method,
         public ?string $rules,
+<<<<<<< .merge_file_l5vCM3
     ) {}
+=======
+<<<<<<< HEAD
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QPlbtX
 }

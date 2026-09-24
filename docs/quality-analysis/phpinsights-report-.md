@@ -1,8 +1,13 @@
 # PHP Insights Analysis Report - Xot Module
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_17tmr3
 **Date:** 2025-11-12
 =======
+=======
+=======
+**Date:** 2025-11-12
+>>>>>>> .merge_file_iyk5vW
 >>>>>>> laraxot/dev
 **Module:** Xot (Core Module)
 **Tools:** phpmd 2.x, phpinsights 2.x, phpstan level 10
@@ -91,14 +96,17 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
+<<<<<<< .merge_file_17tmr3
 <<<<<<< HEAD
 protected $fillable;
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_iyk5vW
 <<<<<<< HEAD
 protected array $fillable;
 =======
->>>>>>> 7f6cf6be (.)
+protected $fillable;
 >>>>>>> laraxot/dev
 =======
 protected array $fillable;
@@ -217,14 +225,17 @@ protected array $fillable;
 
 **Next Review:** After Phase 1 completion
 <<<<<<< HEAD
+<<<<<<< .merge_file_17tmr3
 <<<<<<< HEAD
 **Last Updated:** 2025-11-12 08:15 UTC
 =======
 <<<<<<< HEAD
 **Last Updated:** 2025-11-12 08:15 UTC
 =======
+**
+>>>>>>> .merge_file_iyk5vW
+=======
 **Last Updated:** 2025-11-12 08:15 UTC
->>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
 **

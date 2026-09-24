@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_582Ftc
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6oqMgb
 ---
 title: 'Tips'
 module: Xot
@@ -15,8 +18,11 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_582Ftc
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_6oqMgb
 =======
 >>>>>>> laraxot/dev
 https://github.com/phpstan/phpstan/issues/1242

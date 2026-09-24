@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HGzKOu
 ---
 title: "Type hinting"
 type: reference
@@ -16,8 +19,11 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/type_hinting.txt -->
 
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HGzKOu
 =======
 >>>>>>> laraxot/dev
 https://mlocati.github.io/articles/php-type-hinting.html
@@ -28,9 +34,13 @@ https://wiki.php.net/rfc/return_types
 https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_HGzKOu
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -42,14 +52,18 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      * @Route("/types")
      */
 
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HGzKOu
 
 declare(strict_types = 1);
 
 
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 =======
 declare(strict_types = 1);
@@ -57,6 +71,8 @@ declare(strict_types = 1);
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HGzKOu
 protected ClassName $classType;
 
  // Types are also legal on static properties
@@ -97,9 +113,13 @@ function iterable_map(iterable $list, callable $operation) : iterable
 }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_HGzKOu
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -123,11 +143,14 @@ public static function byArray(iterable $data)
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
-
-
-
 =======
+=======
+>>>>>>> .merge_file_HGzKOu
+
+
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -144,11 +167,14 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
-
-
-
 =======
+=======
+>>>>>>> .merge_file_HGzKOu
+
+
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -164,9 +190,13 @@ $instance = new ClassName();
 $instance->foo();
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_HGzKOu
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -181,9 +211,13 @@ ublic function foo(): ?stdClass
     }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_HGzKOu
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -193,10 +227,13 @@ function foo(): object
 }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
-
-
 =======
+=======
+>>>>>>> .merge_file_HGzKOu
+
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -212,13 +249,17 @@ public function articles(): HasMany {
     return $this->hasMany(Article::class);
 }
 
+<<<<<<< .merge_file_yPoW4E
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HGzKOu
 
 
 
+<<<<<<< HEAD
 https://github.com/oucil/Code-Hint-Aggregator
 <<<<<<< HEAD
 =======

@@ -1,9 +1,12 @@
 # Convenzioni
 
+<<<<<<< .merge_file_FTUjAj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HWEz4P
 Questa cartella contiene le convenzioni di nomenclatura e le regole di stile utilizzate nel progetto.
 
 ## File Contenuti
@@ -14,6 +17,7 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 ## Note
 
+<<<<<<< .merge_file_FTUjAj
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -56,14 +60,16 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HWEz4P
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 ## Collegamenti tra versioni di README.md
-* [README.md](bashscripts/project_docs/readme.md)
-* [README.md](bashscripts/project_docs/it/readme.md)
 <<<<<<< HEAD
-=======
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+=======
+* [README.md](bashscripts/project_docs/readme.md)
+* [README.md](bashscripts/project_docs/it/readme.md)
 >>>>>>> laraxot/dev
 =======
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
@@ -101,6 +107,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_FTUjAj
 <<<<<<< HEAD
 * [README.md](laravel/vendor/mockery/mockery/project_docs/readme.md)
 * [README.md](../../../chart/project_docs/readme.md)
@@ -247,6 +254,9 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 
 =======
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_HWEz4P
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -291,45 +301,58 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_FTUjAj
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 =======
 =======
-[![Module](https://img.shields.io/badge/Module-Convenzioni-8B0000.svg)]()
-[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
-[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
-[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
-[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
-[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
-]()
-
-> **Core module for the FixCity Platform.**
-
-## Perché esiste
-
-Core module for the FixCity Platform.
-
-## Superpoteri
-
-- Modular component with XotBase patterns
-- Professional-grade implementation
-- Integrated with FixCity Platform
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> 7f6cf6be (.)
->>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> .merge_file_HWEz4P
+=======
+* [README.md](laravel/vendor/mockery/mockery/project_docs/readme.md)
+* [README.md](../../../chart/project_docs/readme.md)
+* [README.md](../../../reporting/project_docs/readme.md)
+* [README.md](../../../gdpr/project_docs/phpstan/readme.md)
+* [README.md](../../../gdpr/project_docs/readme.md)
+* [README.md](../../../notify/project_docs/phpstan/readme.md)
+* [README.md](../../../notify/project_docs/readme.md)
+* [README.md](../../../xot/project_docs/filament/readme.md)
+* [README.md](../../../xot/project_docs/phpstan/readme.md)
+* [README.md](../../../xot/project_docs/exceptions/readme.md)
+* [README.md](../../../xot/project_docs/readme.md)
+* [README.md](../../../xot/project_docs/standards/readme.md)
+* [README.md](../../../xot/project_docs/conventions/readme.md)
+* [README.md](../../../xot/project_docs/development/readme.md)
+* [README.md](../../../dental/project_docs/readme.md)
+* [README.md](../../../user/project_docs/phpstan/readme.md)
+* [README.md](../../../user/project_docs/readme.md)
+* [README.md](../../../user/project_docs/readme.md)
+* [README.md](../../../ui/project_docs/phpstan/readme.md)
+* [README.md](../../../ui/project_docs/readme.md)
+* [README.md](../../../ui/project_docs/standards/readme.md)
+* [README.md](../../../ui/project_docs/themes/readme.md)
+* [README.md](../../../ui/project_docs/components/readme.md)
+* [README.md](../../../lang/project_docs/phpstan/readme.md)
+* [README.md](../../../lang/project_docs/readme.md)
+* [README.md](../../../job/project_docs/phpstan/readme.md)
+* [README.md](../../../job/project_docs/readme.md)
+* [README.md](../../../media/project_docs/phpstan/readme.md)
+* [README.md](../../../media/project_docs/readme.md)
+* [README.md](../../../tenant/project_docs/phpstan/readme.md)
+* [README.md](../../../tenant/project_docs/readme.md)
+* [README.md](../../../activity/project_docs/phpstan/readme.md)
+* [README.md](../../../activity/project_docs/readme.md)
+* [README.md](../../../patient/project_docs/readme.md)
+* [README.md](../../../patient/project_docs/standards/readme.md)
+* [README.md](../../../patient/project_docs/value-objects/readme.md)
+* [README.md](../../../cms/project_docs/blocks/readme.md)
+* [README.md](../../../cms/project_docs/readme.md)
+* [README.md](../../../cms/project_docs/standards/readme.md)
+* [README.md](../../../cms/project_docs/content/readme.md)
+* [README.md](../../../cms/project_docs/frontoffice/readme.md)
+* [README.md](../../../cms/project_docs/components/readme.md)
+* [README.md](../../../../themes/two/project_docs/readme.md)
+* [README.md](../../../../themes/one/project_docs/readme.md)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'values' => [
         'yes' => [
             'label' => 'Yes',
@@ -17,6 +18,8 @@ return [
             'description' => 'Negative value',
         ],
     ],
+=======
+>>>>>>> laraxot/dev
     'label' => 'Yes/No',
     'options' => [
         'yes' => 'Yes',

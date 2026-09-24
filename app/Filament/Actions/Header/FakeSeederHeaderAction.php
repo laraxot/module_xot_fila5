@@ -1,23 +1,48 @@
 <?php
 
+<<<<<<< .merge_file_2u6RPC
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_j2iLQc
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< .merge_file_2u6RPC
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_j2iLQc
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\ModelClass\FakeSeederAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 class FakeSeederHeaderAction extends XotBaseAction
+=======
+use Webmozart\Assert\Assert;
+
+class FakeSeederHeaderAction extends Action
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {

@@ -14,4 +14,14 @@ namespace Modules\Xot\Exports;
  * fa `ExportXlsxAction::make('export_xlsx')->exporter(MioExporter::class)` con
  * `MioExporter extends XotBaseExporter`.
  */
+<<<<<<< .merge_file_3PhCWo
 class XlsFieldsExporter extends XotBaseExporter {}
+=======
+<<<<<<< HEAD
+class XlsFieldsExporter extends XotBaseExporter {}
+=======
+class XlsFieldsExporter extends XotBaseExporter
+{
+}
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_sLL0k4

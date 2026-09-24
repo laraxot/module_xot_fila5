@@ -256,7 +256,11 @@ php artisan test --filter=[NomeModulo]
 
 ## Changelog
 
+<<<<<<< HEAD
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
+=======
+Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti.
+>>>>>>> laraxot/dev
 
 ## Licenza
 

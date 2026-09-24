@@ -9,14 +9,16 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
+<<<<<<< .merge_file_D7sbhA
 <<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-- **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
 =======
->>>>>>> 7f6cf6be (.)
+>>>>>>> .merge_file_YepvRv
+<<<<<<< HEAD
+=======
+- **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -31,36 +33,28 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\healthcare_app\Models;
+<<<<<<< .merge_file_D7sbhA
 <<<<<<< HEAD
 ### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
-<<<<<<< HEAD
-```php
-namespace Modules\ModuloEsempio\Models;
-
 =======
+>>>>>>> .merge_file_YepvRv
 <<<<<<< HEAD
-```
-
-```php
-namespace Modules\ModuloEsempio\Models;
-
-### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel
+=======
+### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
-namespace Modules\Quaeris\Models;
-
-=======
-```php
 namespace Modules\ModuloEsempio\Models;
-
->>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_D7sbhA
 =======
 
 >>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_YepvRv
 use Illuminate\Database\Eloquent\Model;
 
 abstract class BaseModel extends Model
@@ -74,6 +68,7 @@ abstract class BaseModel extends Model
     public $incrementing = true;
     public $timestamps = true;
     protected $connection = 'healthcare_app';
+<<<<<<< .merge_file_D7sbhA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -84,6 +79,8 @@ abstract class BaseModel extends Model
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_YepvRv
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -98,14 +95,16 @@ abstract class BaseModel extends Model
 **Dopo** (✅ DRY & KISS):
 ```php
 namespace Modules\healthcare_app\Models;
+<<<<<<< .merge_file_D7sbhA
 <<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-namespace Modules\Quaeris\Models;
 =======
->>>>>>> 7f6cf6be (.)
+>>>>>>> .merge_file_YepvRv
+<<<<<<< HEAD
+=======
+namespace Modules\ModuloEsempio\Models;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -119,6 +118,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
     protected $connection = 'healthcare_app';
+<<<<<<< .merge_file_D7sbhA
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -129,6 +129,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_YepvRv
     protected $with = ['extra'];
 }
 ```
@@ -414,14 +416,16 @@ BaseModel → BaseModelLang → Post
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
 | healthcare_app | BaseModel | 66 | 20 | -70% |
+<<<<<<< .merge_file_D7sbhA
 <<<<<<< HEAD
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-| Quaeris | BaseModel | 66 | 20 | -70% |
 =======
->>>>>>> 7f6cf6be (.)
+>>>>>>> .merge_file_YepvRv
+<<<<<<< HEAD
+=======
+| ModuloEsempio | BaseModel | 66 | 20 | -70% |
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -565,10 +569,17 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 ## Link Correlati
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_D7sbhA
 - [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
 =======
+=======
+=======
+- [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
+- [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
+- [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
+>>>>>>> .merge_file_YepvRv
 >>>>>>> laraxot/dev
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
@@ -596,11 +607,7 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 <<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 9 passed*
 =======
-<<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 9 passed*
-=======
-*Validato: ✅ Test passed, PHPStan level 9 passed*
->>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
 *Validato: ✅ Test passed, PHPStan level 9 passed*
